@@ -93,7 +93,8 @@ public class BindQueryParametersHandlerTest
             new SqlElement<>(
                 "id", "dao", "name", "String", Cardinality.SINGLE, "all", true /* validation */, false, "description");
 
-        sql.setValue("select sysdate from dual where ? = ");
+        sql.setValue("select sysdate from dual where ? = 'A'");
+
         @NotNull final Parameter parameter =
             new ParameterElement("id", 1, "name", "String", "1");
 
