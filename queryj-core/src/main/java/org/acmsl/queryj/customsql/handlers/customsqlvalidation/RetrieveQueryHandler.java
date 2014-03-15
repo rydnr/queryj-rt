@@ -130,7 +130,7 @@ public class RetrieveQueryHandler
      */
     public Sql<String> retrieveCurrentSql(@NotNull final QueryJCommand command)
     {
-        return new QueryJCommandWrapper<Sql<String>>(command).setSetting(CURRENT_SQL, sql);
+        return new QueryJCommandWrapper<Sql<String>>(command).getSetting(CURRENT_SQL);
     }
 
     /**
