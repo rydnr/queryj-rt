@@ -48,6 +48,7 @@ import org.acmsl.queryj.customsql.ParameterElement;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.Sql.Cardinality;
 import org.acmsl.queryj.customsql.SqlElement;
+import org.acmsl.queryj.customsql.handlers.CustomSqlProviderRetrievalHandler;
 import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.SqlParameterDAO;
 import org.acmsl.queryj.metadata.TypeManager;
@@ -102,7 +103,7 @@ public class BindQueryParametersHandlerTest
         EasyMock.expect(t_CustomSqlProvider.getSqlParameterDAO()).andReturn(t_SqlParameterDAO);
         EasyMock.expect(t_SqlParameterDAO.findByPrimaryKey("" + parameter.getName())).andReturn(parameter);
 
-        new QueryJCommandWrapper<CustomSqlProvider>(parameters).setSetting();
+        new QueryJCommandWrapper<CustomSqlProvider>(parameters).setSetting(CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER);
 
         EasyMock.replay(t_CustomSqlProvider);
         EasyMock.replay(t_SqlParameterDAO);
