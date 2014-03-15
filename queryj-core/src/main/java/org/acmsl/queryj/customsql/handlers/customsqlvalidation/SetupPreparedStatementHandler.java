@@ -141,7 +141,8 @@ public class SetupPreparedStatementHandler
     @NotNull
     protected PreparedStatement getPreparedStatement(final QueryJCommand command)
     {
-        return new QueryJCommandWrapper<PreparedStatement >(command).getSetting(CURRENT_PREPARED_STATEMENT);
+        @Nullable final PreparedStatement result =
+            new QueryJCommandWrapper<PreparedStatement >(command).getSetting(CURRENT_PREPARED_STATEMENT);
     }
 
     /**
