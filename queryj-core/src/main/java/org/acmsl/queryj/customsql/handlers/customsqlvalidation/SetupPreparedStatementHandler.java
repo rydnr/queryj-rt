@@ -146,7 +146,8 @@ public class SetupPreparedStatementHandler
 
         if (result == null)
         {
-            throw new PreparedStatementNotAvailableForValidationException(new RetrieveQueryHandler().retrieveCurrentSql(command));
+            throw
+                new PreparedStatementNotAvailableForValidationException(new RetrieveQueryHandler().retrieveCurrentSql(command));
         }
     }
 
