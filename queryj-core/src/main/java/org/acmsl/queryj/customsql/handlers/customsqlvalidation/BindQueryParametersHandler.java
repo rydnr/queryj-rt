@@ -185,8 +185,10 @@ public class BindQueryParametersHandler
 
     protected void bindParameters(
         @NotNull final Sql<String> sql,
-        @NotNull final PreparedStatement t_preparedStatement, final
-    CustomSqlProvider customSqlProvider, final TypeManager typeManager, final ConversionUtils conversionUtils)
+        @NotNull final PreparedStatement preparedStatement,
+        @NotNull final CustomSqlProvider customSqlProvider,
+        @NotNull final TypeManager typeManager,
+        @NotNull final ConversionUtils conversionUtils)
     {
         //To change body of created methods use File | Settings | File Templates.
     }
