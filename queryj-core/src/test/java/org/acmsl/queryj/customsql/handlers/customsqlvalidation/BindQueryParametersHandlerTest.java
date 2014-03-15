@@ -111,5 +111,6 @@ public class BindQueryParametersHandlerTest
 
         Assert.assertTrue(instance.handle(parameters));
 
+
     }
 }
