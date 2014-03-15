@@ -128,7 +128,7 @@ public class RetrieveQueryHandler
      * @param sql the {@link Sql query}.
      * @param command the {@link QueryJCommand command}.
      */
-    public void setCurrentSql(@NotNull final Sql<String> sql, @NotNull final QueryJCommand command)
+    public Sql<String> retrieveCurrentSql(@NotNull final Sql<String> sql, @NotNull final QueryJCommand command)
     {
         new QueryJCommandWrapper<Sql<String>>(command).setSetting(CURRENT_SQL, sql);
     }
