@@ -183,6 +183,14 @@ public class BindQueryParametersHandler
         }
     }
 
+    /**
+     * Binds the query parameters to the
+     * @param sql
+     * @param preparedStatement
+     * @param customSqlProvider
+     * @param typeManager
+     * @param conversionUtils
+     */
     protected void bindParameters(
         @NotNull final Sql<String> sql,
         @NotNull final PreparedStatement preparedStatement,
