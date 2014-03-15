@@ -134,7 +134,8 @@ public class BindQueryParametersHandler
         throws QueryJBuildException
     {
         @NotNull final Sql<String> sql = new RetrieveQueryHandler().retrieveCurrentSql(command);
-        @NotNull final CustomSqlProvider
+        @NotNull final CustomSqlProvider provider = retrieveCustomSqlProvider(command);
+
         validate(sql);
         return false;
     }
