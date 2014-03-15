@@ -109,7 +109,7 @@ public class BindQueryParametersHandlerTest
         new QueryJCommandWrapper<CustomSqlProvider>(parameters).setSetting(
             CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, t_CustomSqlProvider);
         new QueryJCommandWrapper<Connection>(parameters).setSetting(
-            JdbcConnectionOpeningHandler.JDBC_CONNECTION, t_CustomSqlProvider);
+            JdbcConnectionOpeningHandler.JDBC_CONNECTION, t_Connection);
 
         EasyMock.replay(t_CustomSqlProvider);
         EasyMock.replay(t_SqlParameterDAO);
