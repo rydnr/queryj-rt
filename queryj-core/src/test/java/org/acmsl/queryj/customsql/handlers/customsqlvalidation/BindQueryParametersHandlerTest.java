@@ -111,6 +111,7 @@ public class BindQueryParametersHandlerTest
 
         Assert.assertTrue(instance.handle(parameters));
 
-
+        EasyMock.verify(t_CustomSqlProvider);
+        EasyMock.verify(t_SqlParameterDAO);
     }
 }
