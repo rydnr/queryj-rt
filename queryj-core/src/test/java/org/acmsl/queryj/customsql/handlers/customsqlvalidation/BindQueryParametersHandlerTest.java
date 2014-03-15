@@ -53,6 +53,7 @@ import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.SqlParameterDAO;
 import org.acmsl.queryj.metadata.TypeManager;
 import org.acmsl.queryj.metadata.engines.JdbcTypeManager;
+import org.acmsl.queryj.tools.handlers.JdbcConnectionOpeningHandler;
 import org.acmsl.queryj.tools.handlers.ParameterValidationHandler;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.easymock.EasyMock;
@@ -108,7 +109,7 @@ public class BindQueryParametersHandlerTest
         new QueryJCommandWrapper<CustomSqlProvider>(parameters).setSetting(
             CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, t_CustomSqlProvider);
         new QueryJCommandWrapper<Connection>(parameters).setSetting(
-            CustomSqlProviderRetrievalHandler.CONNECTION, t_CustomSqlProvider);
+            JdbcConnectionOpeningHandler.JDBC_CONNECTIONCustomSqlProviderRetrievalHandler.CONNECTION, t_CustomSqlProvider);
 
         EasyMock.replay(t_CustomSqlProvider);
         EasyMock.replay(t_SqlParameterDAO);
