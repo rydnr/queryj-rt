@@ -129,6 +129,7 @@ public class BindQueryParametersHandlerTest
         EasyMock.replay(t_Connection);
         EasyMock.replay(t_Statement);
 
+        new
         Assert.assertFalse(instance.handle(parameters));
 
         EasyMock.verify(t_CustomSqlProvider);
