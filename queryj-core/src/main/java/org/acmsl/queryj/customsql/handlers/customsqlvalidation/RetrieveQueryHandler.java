@@ -124,8 +124,9 @@ public class RetrieveQueryHandler
     }
 
     /**
-     * Annotates the current sql in the command.
+     * Retrieves the current sql in the command.
      * @param command the {@link QueryJCommand command}.
+     * @return such {@link Sql}.
      */
     public Sql<String> retrieveCurrentSql(@NotNull final QueryJCommand command)
     {
