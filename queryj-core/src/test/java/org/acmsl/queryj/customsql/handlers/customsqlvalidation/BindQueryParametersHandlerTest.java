@@ -42,10 +42,16 @@ import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.Sql.Cardinality;
 import org.acmsl.queryj.customsql.SqlElement;
+import org.acmsl.queryj.metadata.MetadataManager;
+import org.acmsl.queryj.metadata.SqlParameterDAO;
+import org.acmsl.queryj.metadata.TypeManager;
+import org.acmsl.queryj.metadata.engines.JdbcTypeManager;
 import org.apache.commons.configuration.PropertiesConfiguration;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -55,6 +61,11 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+import org.powermock.api.easymock.PowerMock;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 /**
  *
@@ -80,6 +91,24 @@ public class BindQueryParametersHandlerTest
         new QueryJCommandWrapper<Sql<String>>(parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, sql);
 
         // Add parameters to the command
+        @NotNull final CustomSqlProvider t_CustomSqlProvider = PowerMock.createNiceMock(CustomSqlProvider.class);
+        @NotNull final SqlParameterDAO t_SqlParameterDAO = PowerMock.createNiceMock(SqlParameterDAO.class);
+        @NotNull final MetadataManager t_MetadataManager = PowerMock.createNiceMock(MetadataManager.class);
+        @NotNull final TypeManager t_TypeManager = new JdbcTypeManager();
+        @NotNull final Connection t_Connection = PowerMock.createNiceMock(Connection.class);
+        @NotNull final PreparedStatement t_Statement = PowerMock.createNiceMock(PreparedStatement.class);
+        @NotNull final ResultSet t_ResultSet = PowerMock.createNiceMock(ResultSet.class);
+        EasyMock.expect(t_CustomSqlProvider.getSqlParameterDAO()).andReturn(t_SqlParameterDAO);
+        EasyMock.expect(t_Connection.getAutoCommit()).andReturn(true);
+        EasyMock.expect(t_Connection.prepareStatement(sql.getValue())).andReturn(t_Statement);
+        EasyMock.expect(t_SqlParameterDAO.findByPrimaryKey("" + parameter.getName())).andReturn(parameter);
+
+        EasyMock.replay(t_CustomSqlProvider);
+        EasyMock.replay(t_SqlParameterDAO);
+        EasyMock.replay(t_MetadataManager);
+        EasyMock.replay(t_Connection);
+        EasyMock.replay(t_Statement);
+        EasyMock.replay(t_ResultSet);
 
         Assert.assertTrue(instance.handle(parameters));
 
