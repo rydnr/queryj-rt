@@ -174,32 +174,6 @@ public class BindQueryParametersHandler
         @NotNull final TypeManager typeManager)
         throws  QueryJBuildException
     {
-        @Nullable final String t_strValue = sql.getValue();
-
-        @Nullable final Log t_Log = UniqueLogFactory.getLog(CustomSqlValidationHandler.class);
-
-        if (t_strValue != null)
-        {
-            @NotNull final String t_strSql = t_strValue.trim();
-
-            @Nullable QueryJBuildException t_ExceptionToThrow = null;
-            @Nullable SQLException t_ExceptionToWrap = null;
-
-            @Nullable PreparedStatement t_PreparedStatement = null;
-
-            try
-            {
-                t_PreparedStatement = connection.prepareStatement(t_strSql);
-            }
-            catch  (@NotNull final SQLException sqlException)
-            {
-                t_ExceptionToWrap = sqlException;
-            }
-
-            if  (t_PreparedStatement != null)
-            {
-                try
-                {
                     bindParameters(
                         sql,
                         t_PreparedStatement,
