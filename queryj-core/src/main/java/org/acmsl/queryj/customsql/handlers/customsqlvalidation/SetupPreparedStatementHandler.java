@@ -114,7 +114,7 @@ public class SetupPreparedStatementHandler
         {
             @Nullable final PreparedStatement t_Statement = setupStatement(sql, connection);
 
-            setPreparedStatement(t_Statement, command);
+            setCurrentPreparedStatement(t_Statement, command);
         }
         catch (@NotNull final SQLException invalidSql)
         {
@@ -129,7 +129,7 @@ public class SetupPreparedStatementHandler
      * @param statement the statement.
      * @param command the command.
      */
-    protected void setPreparedStatement(final PreparedStatement statement, final QueryJCommand command)
+    protected void setCurrentPreparedStatement(final PreparedStatement statement, final QueryJCommand command)
     {
         new QueryJCommandWrapper<PreparedStatement>(command).setSetting(CURRENT_PREPARED_STATEMENT, statement);
     }
