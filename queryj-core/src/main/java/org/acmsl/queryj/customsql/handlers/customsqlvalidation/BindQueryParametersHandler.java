@@ -133,8 +133,6 @@ public class BindQueryParametersHandler
     public boolean handle(@NotNull final QueryJCommand command)
         throws QueryJBuildException
     {
-        final boolean result;
-
         @NotNull final Sql<String> sql = new RetrieveQueryHandler().retrieveCurrentSql(command);
 
         validate( );
