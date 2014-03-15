@@ -150,6 +150,10 @@ public class SetupPreparedStatementHandler
                 new PreparedStatementNotAvailableForValidationException(
                     new RetrieveQueryHandler().retrieveCurrentSql(command));
         }
+        else
+        {
+            result =
+        }
     }
 
     /**
