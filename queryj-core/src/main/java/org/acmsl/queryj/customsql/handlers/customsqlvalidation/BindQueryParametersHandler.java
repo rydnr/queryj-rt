@@ -40,16 +40,21 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
  */
 import org.acmsl.commons.logging.UniqueLogFactory;
 import org.acmsl.commons.utils.ConversionUtils;
+import org.acmsl.commons.utils.StringUtils;
+import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.InvalidCustomSqlException;
 import org.acmsl.queryj.api.exceptions.InvalidCustomSqlParameterException;
+import org.acmsl.queryj.api.exceptions.NoValidationValueForCustomSqlDateParameterException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.api.exceptions.UnsupportedCustomSqlParameterTypeException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Parameter;
+import org.acmsl.queryj.customsql.ParameterRef;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandler;
 import org.acmsl.queryj.metadata.MetadataManager;
+import org.acmsl.queryj.metadata.SqlParameterDAO;
 import org.acmsl.queryj.metadata.TypeManager;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
 import org.apache.commons.logging.Log;
@@ -61,13 +66,22 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.Nullable;
 
+import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.sql.Timestamp;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Date;
+import java.util.List;
+import java.util.Locale;
 
 /**
  *
@@ -340,5 +354,390 @@ public class BindQueryParametersHandler
         {
             throw exceptionToThrow;
         }
+    }
+
+    /**
+     * Retrieves the type of the parameter.
+     * @param parameter the {@link Parameter}.
+     * @param typeManager the {@link org.acmsl.queryj.metadata.MetadataTypeManager}.
+     * @param <T> the type.
+     * @return the parameter type.
+     */
+    @SuppressWarnings("unchecked")
+    protected <T> Class<T> retrieveType(
+        @NotNull final Parameter<String, T> parameter, @NotNull final TypeManager typeManager)
+    {
+        return (Class<T>) typeManager.getClass(parameter.getType());
+    }
+
+    /**
+     * Retrieves the method to invoke on {@link PreparedStatement} class to bind the parameter value.
+     * @param parameter the {@link Parameter}.
+     * @param parameterIndex the index of the parameter.
+     * @param type the parameter type.
+     * @param sql the sql.
+     * @throws QueryJBuildException if some problem occurs.
+     */
+    @NotNull
+    protected Method retrievePreparedStatementMethod(
+        @NotNull final Parameter<String, ?> parameter,
+        final int parameterIndex,
+        @NotNull final Class<?> type,
+        @NotNull final Sql<String> sql,
+        @NotNull final Collection<Class<?>> parameterClasses)
+        throws  QueryJBuildException
+    {
+        @Nullable QueryJBuildException exceptionToThrow = null;
+
+        @Nullable Method result = null;
+
+        try
+        {
+            result =
+                retrieveMethod(
+                    PreparedStatement.class,
+                    getSetterMethod(type),
+                    parameterClasses.toArray(new Class<?>[parameterClasses.size()]));
+        }
+        catch  (@NotNull final NoSuchMethodException noSuchMethodException)
+        {
+            exceptionToThrow =
+                new UnsupportedCustomSqlParameterTypeException(
+                    type.getSimpleName(),
+                    parameterIndex + 1,
+                    parameter.getName(),
+                    sql,
+                    noSuchMethodException);
+        }
+
+        if  (exceptionToThrow != null)
+        {
+            throw exceptionToThrow;
+        }
+
+        return result;
+    }
+
+    /**
+     * Retrieves the validation value for given parameter.
+     * @param parameter the {@link Parameter}.
+     * @param parameterIndex the index of the parameter.
+     * @param type the parameter type.
+     * @param typeClass the class of the parameter type.
+     * @param sql the {@link Sql}.
+     * @param conversionUtils the {@link ConversionUtils} instance.
+     * @return the validation value.
+     * @throws QueryJBuildException if some problem occurs.
+     */
+    @SuppressWarnings("unchecked")
+    protected <T> T retrieveParameterValue(
+        @NotNull final Parameter<String, T> parameter,
+        final int parameterIndex,
+        @NotNull final String type,
+        @NotNull final Class<T> typeClass,
+        @NotNull final Sql<String> sql,
+        @NotNull final ConversionUtils conversionUtils)
+        throws  QueryJBuildException
+    {
+        @Nullable T result;
+
+        if  (   ("Date".equals(type))
+                && (parameter.getValidationValue() != null))
+        {
+            result = (T) new java.sql.Date(new Date().getTime());
+        }
+        else if (   (Literals.TIMESTAMP_U.equals(type.toUpperCase(new Locale("US"))))
+                    && (parameter.getValidationValue() != null))
+        {
+            result = (T) new Timestamp(new Date().getTime());
+        }
+        else
+        {
+            result =
+                retrieveParameterValue(
+                    parameter, type, conversionUtils, StringUtils.getInstance());
+        }
+
+        if (result == null)
+        {
+            result = (T) assumeIsADate(parameter, sql);
+        }
+
+        if (result == null)
+        {
+            // We have only once chance: constructor call.
+            result = createViaConstructor(parameter, parameterIndex, type, typeClass, sql);
+        }
+
+        return result;
+    }
+
+    /**
+     * Retrieves the validation value for given parameter.
+     * @param parameter the {@link Parameter}.
+     * @param type the parameter type.
+     * @param conversionUtils the {@link ConversionUtils} instance.
+     * @param stringUtils the {@link StringUtils} instance.
+     * @param <T> the type.
+     * @return the validation value.
+     * @throws QueryJBuildException if some problem occurs.
+     */
+    @SuppressWarnings("unchecked")
+    protected <T> T retrieveParameterValue(
+        @NotNull final Parameter<String, T> parameter,
+        @NotNull final String type,
+        @NotNull final ConversionUtils conversionUtils,
+        @NotNull final StringUtils stringUtils)
+        throws  QueryJBuildException
+    {
+        @Nullable T result = null;
+
+        try
+        {
+            @Nullable final Method t_ParameterMethod;
+
+            t_ParameterMethod =
+                conversionUtils.getClass().getMethod(
+                    "to" + stringUtils.capitalize(type),
+                    CLASS_ARRAY_OF_ONE_STRING);
+
+            if  (t_ParameterMethod != null)
+            {
+                result =
+                    (T) t_ParameterMethod.invoke(
+                        conversionUtils,
+                        parameter.getValidationValue());
+            }
+        }
+        catch  (@NotNull final NoSuchMethodException noSuchMethod)
+        {
+            // it's not a plain type.
+        }
+        catch  (@NotNull final SecurityException securityMethod)
+        {
+            // can do little
+        }
+        catch  (@NotNull final IllegalAccessException illegalAccessException)
+        {
+            // can do little
+        }
+        catch  (@NotNull final InvocationTargetException invocationTargetException)
+        {
+            // can do little
+        }
+
+        return result;
+    }
+
+    /**
+     * Tries to retrieve a Date value from given parameter.
+     * @param parameter the {@link Parameter}.
+     * @param sql the {@link Sql}.
+     * @return the {@link Date} value if it's a Date.
+     * @throws QueryJBuildException if some problem occurs.
+     */
+    protected Date assumeIsADate(
+        @NotNull final Parameter<String, ?> parameter,
+        @NotNull final Sql<String> sql)
+        throws  QueryJBuildException
+    {
+        @Nullable Date result = null;
+
+        @Nullable QueryJBuildException exceptionToThrow = null;
+
+        // let's try if it's a date.
+        try
+        {
+            boolean t_bInvalidValidationValue = false;
+
+            Object t_strValidationValue =
+                parameter.getValidationValue();
+
+            @NotNull final DateFormat formatter = new SimpleDateFormat(DATE_FORMAT);
+            if  (t_strValidationValue == null)
+            {
+                t_strValidationValue = formatter.format(new Date());
+                t_bInvalidValidationValue = true;
+            }
+
+            try
+            {
+                result = formatter.parse("" + t_strValidationValue);
+            }
+            catch (@NotNull final NumberFormatException invalidDate)
+            {
+                try
+                {
+                    result = new SimpleDateFormat(DATE_FORMAT_EN).parse("" + t_strValidationValue);
+                }
+                catch (@NotNull final NumberFormatException invalidEnglishDate)
+                {
+                    // It doesn't need to be a date.
+                }
+            }
+
+            if  (t_bInvalidValidationValue)
+            {
+                exceptionToThrow =
+                    new NoValidationValueForCustomSqlDateParameterException(
+                        parameter, sql);
+            }
+        }
+        catch  (@NotNull final ParseException parseException)
+        {
+            // It doesn't need to be a date.
+        }
+
+        if  (exceptionToThrow != null)
+        {
+            throw exceptionToThrow;
+        }
+
+        return result;
+    }
+
+    /**
+     * Creates the validation value via constructor.
+     * @param parameter the {@link Parameter}.
+     * @param parameterIndex the index of the parameter.
+     * @param type the parameter type.
+     * @param typeClass the class of the parameter type.
+     * @param sql the {@link Sql}.
+     * @param <T> the type.
+     * @return the parameter value.
+     * @throws QueryJBuildException if some problem occurs.
+     */
+    protected <T> T createViaConstructor(
+        @NotNull final Parameter<String, T> parameter,
+        final int parameterIndex,
+        @NotNull final String type,
+        @NotNull final Class<T> typeClass,
+        @NotNull final Sql<String> sql)
+        throws  QueryJBuildException
+    {
+        @Nullable T result = null;
+
+        @Nullable QueryJBuildException exceptionToThrow = null;
+
+        // We have only once chance: constructor call.
+        try
+        {
+            @Nullable final Constructor<T> t_Constructor =
+                typeClass.getConstructor(CLASS_ARRAY_OF_ONE_STRING);
+
+            if  (t_Constructor != null)
+            {
+                result =
+                    t_Constructor.newInstance(
+                        parameter.getValidationValue());
+            }
+        }
+        catch  (@NotNull final NoSuchMethodException noSuchMethod)
+        {
+            exceptionToThrow =
+                new UnsupportedCustomSqlParameterTypeException(
+                    type,
+                    parameterIndex + 1,
+                    parameter.getName(),
+                    sql,
+                    noSuchMethod);
+        }
+        catch  (@NotNull final SecurityException securityException)
+        {
+            exceptionToThrow =
+                new UnsupportedCustomSqlParameterTypeException(
+                    type,
+                    parameterIndex + 1,
+                    parameter.getName(),
+                    sql,
+                    securityException);
+        }
+        catch  (@NotNull final IllegalAccessException illegalAccessException)
+        {
+            exceptionToThrow =
+                new UnsupportedCustomSqlParameterTypeException(
+                    type,
+                    parameterIndex + 1,
+                    parameter.getName(),
+                    sql,
+                    illegalAccessException);
+        }
+        catch  (@NotNull final InstantiationException instantiationException)
+        {
+            exceptionToThrow =
+                new UnsupportedCustomSqlParameterTypeException(
+                    type,
+                    parameterIndex + 1,
+                    parameter.getName(),
+                    sql,
+                    instantiationException);
+        }
+        catch  (@NotNull final InvocationTargetException invocationTargetException)
+        {
+            exceptionToThrow =
+                new UnsupportedCustomSqlParameterTypeException(
+                    type,
+                    parameterIndex + 1,
+                    parameter.getName(),
+                    sql,
+                    invocationTargetException);
+        }
+
+        if  (exceptionToThrow != null)
+        {
+            throw exceptionToThrow;
+        }
+
+        return result;
+    }
+
+    /**
+     * Retrieves the parameters for given sql element.
+     * @param sql such element.
+     * @param parameterDAO the {@link org.acmsl.queryj.metadata.SqlParameterDAO} instance.
+     * @return the parameter elements.
+     */
+    protected List<Parameter<String, ?>> retrieveParameterElements(
+        @NotNull final Sql<String> sql, @NotNull final SqlParameterDAO parameterDAO)
+    {
+        @NotNull final List<Parameter<String, ?>> result = new ArrayList<>();
+
+        Parameter<String, ?> t_Parameter;
+
+        for (@Nullable final ParameterRef t_ParameterRef : sql.getParameterRefs())
+        {
+            if (t_ParameterRef != null)
+            {
+                t_Parameter = parameterDAO.findByPrimaryKey(t_ParameterRef.getId());
+
+                if (t_Parameter != null)
+                {
+                    result.add(t_Parameter);
+                }
+            }
+        }
+
+        return result;
+    }
+
+    /**
+     * Retrieves the setter method name.
+     * @param type the data type.
+     * @return the associated setter method.
+     */
+    protected String getSetterMethod(final Class<?> type)
+    {
+        return getAccessorMethod("set",  type, StringUtils.getInstance());
+    }
+
+    /**
+     * Retrieves the getter method name.
+     * @param type the data type.
+     * @return the associated getter method.
+     */
+    @NotNull
+    protected String getGetterMethod(@NotNull final Class<?> type)
+    {
+        return getAccessorMethod("get", type, StringUtils.getInstance());
     }
 }
