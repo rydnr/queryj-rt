@@ -93,9 +93,9 @@ public class BindQueryParametersHandlerTest
             new SqlElement<>(
                 "id", "dao", "name", "String", Cardinality.SINGLE, "all", true /* validation */, false, "description");
 
+        sql.setV
         @NotNull final Parameter parameter =
             new ParameterElement("id", 1, "name", "String", "1");
-
 
         new QueryJCommandWrapper<Sql<String>>(parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, sql);
 
