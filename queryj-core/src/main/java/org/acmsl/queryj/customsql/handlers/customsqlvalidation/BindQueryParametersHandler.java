@@ -184,13 +184,6 @@ public class BindQueryParametersHandler
                         typeManager,
                         ConversionUtils.getInstance());
                 }
-                catch  (@NotNull final SQLException sqlException)
-                {
-                    if (t_ExceptionToWrap == null)
-                    {
-                        t_ExceptionToWrap = sqlException;
-                    }
-                }
                 catch  (@NotNull final QueryJBuildException buildException)
                 {
                     t_ExceptionToThrow = buildException;
