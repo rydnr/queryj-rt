@@ -135,7 +135,8 @@ public class BindQueryParametersHandler
     {
         @NotNull final Sql<String> sql = new RetrieveQueryHandler().retrieveCurrentSql(command);
         @NotNull final CustomSqlProvider provider = retrieveCustomSqlProvider(command);
-
+        @NotNull final Connection connection = retrieveConnection(command);
+        @NotNull final TypeManager typeManager = retrieveMetadataManager(command);
         validate(sql);
         return false;
     }
