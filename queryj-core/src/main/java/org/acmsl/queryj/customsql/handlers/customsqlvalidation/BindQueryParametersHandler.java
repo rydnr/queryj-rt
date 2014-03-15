@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Binds the query
+ * Description: Binds the query parameters to the PreparedStatement.
  *
  * Date: 2014/03/15
  * Time: 08:06
