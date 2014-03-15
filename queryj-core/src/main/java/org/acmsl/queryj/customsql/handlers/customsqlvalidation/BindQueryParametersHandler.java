@@ -36,7 +36,7 @@
 package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 
 /*
- * Importing ACMSL Java Commons classes.
+ * Importing ACM-SL Java Commons classes.
  */
 import org.acmsl.commons.logging.UniqueLogFactory;
 import org.acmsl.commons.utils.ConversionUtils;
