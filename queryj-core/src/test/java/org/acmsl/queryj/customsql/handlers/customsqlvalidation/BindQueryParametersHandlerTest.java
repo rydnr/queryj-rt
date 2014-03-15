@@ -72,6 +72,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 import org.powermock.api.easymock.PowerMock;
+import org.easymock.EasyMock;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
