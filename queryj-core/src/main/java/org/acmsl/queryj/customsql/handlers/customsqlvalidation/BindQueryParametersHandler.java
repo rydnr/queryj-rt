@@ -42,8 +42,11 @@ import org.acmsl.commons.logging.UniqueLogFactory;
 import org.acmsl.commons.utils.ConversionUtils;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.InvalidCustomSqlException;
+import org.acmsl.queryj.api.exceptions.InvalidCustomSqlParameterException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.api.exceptions.UnsupportedCustomSqlParameterTypeException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
+import org.acmsl.queryj.customsql.Parameter;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandler;
 import org.acmsl.queryj.metadata.MetadataManager;
@@ -58,9 +61,13 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.Nullable;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.Arrays;
+import java.util.Collection;
 
 /**
  *
@@ -198,6 +205,143 @@ public class BindQueryParametersHandler
         @NotNull final TypeManager typeManager,
         @NotNull final ConversionUtils conversionUtils)
     {
+        throws  QueryJBuildException
+        {
+            @Nullable QueryJBuildException exceptionToThrow = null;
+
+            int t_iParameterIndex = 0;
+
+            for (@Nullable final Parameter<String, ?> t_Parameter :
+                retrieveParameterElements(sql, customSqlProvider.getSqlParameterDAO()))
+            {
+                if  (t_Parameter == null)
+                {
+                    exceptionToThrow = new InvalidCustomSqlParameterException(t_iParameterIndex, sql);
+
+                    break;
+                }
+                else
+                {
+                    bindParameter(
+                        t_Parameter,
+                        t_iParameterIndex,
+                        sql,
+                        statement,
+                        typeManager,
+                        conversionUtils);
+
+                    t_iParameterIndex++;
+                }
+            }
+
+            if  (exceptionToThrow != null)
+            {
+                throw exceptionToThrow;
+            }
+        }
+
+        /**
+         * Binds the parameters to given statement.
+         * @param parameter the {@link Parameter}.
+         * @param sql the sql.
+         * @param statement the prepared statement.
+         * @param typeManager the metadata type manager.
+         * @param conversionUtils the <code>ConversionUtils</code> instance.
+         * @param <T> the type.
+         * @throws QueryJBuildException if some problem occurs.
+         */
+        @SuppressWarnings("unchecked")
+        protected <T> void bindParameter(
+        @NotNull final Parameter<String, T> parameter,
+        final int parameterIndex,
+        @NotNull final Sql<String> sql,
+        @NotNull final PreparedStatement statement,
+        @NotNull final TypeManager typeManager,
+        @NotNull final ConversionUtils conversionUtils)
+        throws QueryJBuildException
+        {
+            @Nullable QueryJBuildException exceptionToThrow = null;
+
+            @Nullable final Log t_Log = UniqueLogFactory.getLog(CustomSqlValidationHandler.class);
+
+            @Nullable final Method t_Method;
+
+            @Nullable final Collection<Class<?>> t_cParameterClasses;
+
+            @Nullable final Class<T> t_Type = retrieveType(parameter, typeManager);
+
+            if  (t_Type != null)
+            {
+                if (typeManager.isPrimitiveWrapper(t_Type))
+                {
+                    t_cParameterClasses = Arrays.asList(Integer.TYPE, typeManager.toPrimitive(t_Type));
+                }
+                else
+                {
+                    t_cParameterClasses = Arrays.asList(Integer.TYPE, t_Type);
+                }
+
+                t_Method =
+                    retrievePreparedStatementMethod(
+                        parameter,
+                        parameterIndex,
+                        t_Type,
+                        sql,
+                        t_cParameterClasses);
+
+                @Nullable final Object t_ParameterValue =
+                    retrieveParameterValue(
+                        parameter, parameterIndex, t_Type.getSimpleName(), t_Type, sql, conversionUtils);
+
+                try
+                {
+                    t_Method.invoke(statement, parameterIndex + 1, t_ParameterValue);
+                }
+                catch  (@NotNull final IllegalAccessException illegalAccessException)
+                {
+                    if  (t_Log != null)
+                    {
+                        t_Log.warn(
+                            COULD_NOT_BIND_PARAMETER_VIA
+                            + PREPARED_STATEMENT_SET + t_Type.getSimpleName()
+                            + "(int, " + t_Type.getName() + ")",
+                            illegalAccessException);
+                    }
+
+                    exceptionToThrow =
+                        new UnsupportedCustomSqlParameterTypeException(
+                            t_Type.getSimpleName(),
+                            parameterIndex + 1,
+                            parameter.getName(),
+                            sql,
+                            illegalAccessException);
+                }
+                catch  (@NotNull final InvocationTargetException invocationTargetException)
+                {
+                    if  (t_Log != null)
+                    {
+                        t_Log.warn(
+                            COULD_NOT_BIND_PARAMETER_VIA
+                            + PREPARED_STATEMENT_SET + t_Type.getSimpleName()
+                            + "(int, " + t_Type.getName() + ")",
+                            invocationTargetException);
+                    }
+
+                    exceptionToThrow =
+                        new UnsupportedCustomSqlParameterTypeException(
+                            t_Type.getSimpleName(),
+                            parameterIndex + 1,
+                            parameter.getName(),
+                            sql,
+                            invocationTargetException);
+                }
+            }
+
+            if  (exceptionToThrow != null)
+            {
+                throw exceptionToThrow;
+            }
+        }
         //To change body of created methods use File | Settings | File Templates.
     }
 }
