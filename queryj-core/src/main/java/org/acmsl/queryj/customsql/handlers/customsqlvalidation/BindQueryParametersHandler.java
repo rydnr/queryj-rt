@@ -71,6 +71,7 @@ public class BindQueryParametersHandler
     @Override
     public boolean handle(@NotNull final QueryJCommand command) throws QueryJBuildException
     {
+        retrieveCustomSqlProvider()
         return true;
     }
 }
