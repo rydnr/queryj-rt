@@ -136,6 +136,8 @@ public class BindQueryParametersHandler
         final boolean result;
 
         @NotNull final Sql<String> sql = new RetrieveQueryHandler().retrieveCurrentSql(command);
+
+
         return result;
     }
 
