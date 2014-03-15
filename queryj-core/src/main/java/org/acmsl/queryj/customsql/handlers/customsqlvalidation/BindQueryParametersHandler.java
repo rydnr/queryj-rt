@@ -165,11 +165,11 @@ public class BindQueryParametersHandler
                 customSqlProvider,
                 typeManager,
                 ConversionUtils.getInstance());
-                }
-                catch  (@NotNull final QueryJBuildException buildException)
-                {
-                    t_ExceptionToThrow = buildException;
-                }
+            }
+            catch  (@NotNull final QueryJBuildException buildException)
+            {
+                t_ExceptionToThrow = buildException;
+            }
 
                 try
                 {
