@@ -63,7 +63,7 @@ import org.acmsl.queryj.metadata.engines.JdbcTypeManager;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
 
 /*
- * Importing
+ * Importing Apache Commons Logging classes.
  */
 import org.apache.commons.logging.Log;
 
