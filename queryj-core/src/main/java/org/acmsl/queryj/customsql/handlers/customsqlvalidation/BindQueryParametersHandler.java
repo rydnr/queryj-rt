@@ -161,10 +161,7 @@ public class BindQueryParametersHandler
                             anotherSqlException);
                     }
 
-                    if (t_ExceptionToWrap == null)
-                    {
-                        t_ExceptionToWrap = anotherSqlException;
-                    }
+                    t_ExceptionToWrap = anotherSqlException;
                 }
             }
 
