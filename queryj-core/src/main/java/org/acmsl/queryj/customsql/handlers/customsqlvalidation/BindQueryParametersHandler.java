@@ -168,7 +168,7 @@ public class BindQueryParametersHandler
         }
         catch  (@NotNull final QueryJBuildException buildException)
         {
-            t_ExceptionToThrow = buildException;
+            throw buildException;
         }
     }
 
