@@ -138,8 +138,6 @@ public class BindQueryParametersHandler
                         customSqlProvider,
                         typeManager,
                         ConversionUtils.getInstance());
-
-                    validateStatement(sql, t_PreparedStatement, customSqlProvider, metadataManager, typeManager);
                 }
                 catch  (@NotNull final SQLException sqlException)
                 {
