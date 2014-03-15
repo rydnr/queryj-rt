@@ -38,20 +38,13 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 /*
  * Importing JetBrains annotations.
  */
-import org.acmsl.commons.logging.UniqueLogFactory;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.exceptions.InvalidCustomSqlException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
-import org.acmsl.queryj.customsql.CustomSqlProvider;
-import org.acmsl.queryj.customsql.ResultRef;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.exceptions.ResultSetNotAvailableForValidationException;
-import org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandler;
-import org.acmsl.queryj.metadata.MetadataManager;
-import org.acmsl.queryj.metadata.TypeManager;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
-import org.apache.commons.logging.Log;
 import org.jetbrains.annotations.NotNull;
 
 /*
