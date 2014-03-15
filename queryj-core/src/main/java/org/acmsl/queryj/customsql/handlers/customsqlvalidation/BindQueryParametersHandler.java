@@ -111,7 +111,7 @@ public class BindQueryParametersHandler
         {
             @NotNull final String t_strSql = t_strValue.trim();
 
-            @Nullable t_ExceptionToThrow = null;
+            @Nullable QueryJBuildException t_ExceptionToThrow = null;
             @Nullable SQLException t_ExceptionToWrap = null;
 
             @Nullable PreparedStatement t_PreparedStatement = null;
