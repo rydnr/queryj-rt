@@ -169,25 +169,6 @@ public class BindQueryParametersHandler
                         t_ExceptionToWrap = anotherSqlException;
                     }
                 }
-
-                try
-                {
-                    tearDownConnection(connection, t_bLastAutoCommit);
-                }
-                catch  (@NotNull final SQLException anotherSqlException)
-                {
-                    if  (t_Log != null)
-                    {
-                        t_Log.warn(
-                            "Cannot restore the connection.",
-                            anotherSqlException);
-                    }
-
-                    if (t_ExceptionToWrap == null)
-                    {
-                        t_ExceptionToWrap = anotherSqlException;
-                    }
-                }
             }
 
             if  (t_ExceptionToWrap != null)
