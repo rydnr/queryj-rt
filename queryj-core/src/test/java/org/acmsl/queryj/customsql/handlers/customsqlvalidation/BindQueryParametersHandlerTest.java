@@ -90,7 +90,7 @@ public class BindQueryParametersHandlerTest
 
         @NotNull final Sql<String> sql =
             new SqlElement<>(
-                "id", "dao", "name", "String", Cardinality.SINGLE, "all", false /* validation */, false, "description");
+                "id", "dao", "name", "String", Cardinality.SINGLE, "all", true /* validation */, false, "description");
 
         @NotNull final Parameter parameter =
             new ParameterElement("id", 1, "name", "String", "1");
