@@ -91,7 +91,7 @@ public class QueryValidationEnabledHandlerTest
     }
 
     @Test
-    public void allows_the_validation_process_for_the_current_query_if_validation_flag_is_disabled()
+    public void allows_the_validation_process_for_the_current_query_if_validation_flag_is_enabled()
         throws QueryJBuildException
     {
         @NotNull final QueryValidationEnabledHandler instance = new QueryValidationEnabledHandler();
