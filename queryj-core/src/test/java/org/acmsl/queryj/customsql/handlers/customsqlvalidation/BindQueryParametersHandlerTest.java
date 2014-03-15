@@ -57,11 +57,11 @@ import org.acmsl.queryj.tools.handlers.JdbcConnectionOpeningHandler;
  * Importing Apache Commons Configuration classes.
  */
 import org.apache.commons.configuration.PropertiesConfiguration;
-import org.easymock.EasyMock;
 
 /*
  * Importing JetBrains annotations.
  */
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
