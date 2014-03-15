@@ -154,7 +154,8 @@ public class BindQueryParametersHandler
         @NotNull final Connection connection = retrieveConnection(command);
         @NotNull final TypeManager typeManager = new JdbcTypeManager();
 
-        @NotNull final PreparedStatement t_PreparedStatement = new SetupPreparedStatementHandler().getPreparedStatement(command);
+        @NotNull final PreparedStatement t_PreparedStatement =
+            new SetupPreparedStatementHandler().getPreparedStatement(command);
         bindParameters(
             sql,
             t_PreparedStatement,
