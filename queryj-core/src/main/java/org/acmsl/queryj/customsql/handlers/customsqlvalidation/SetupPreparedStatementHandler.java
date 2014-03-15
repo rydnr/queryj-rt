@@ -152,7 +152,7 @@ public class SetupPreparedStatementHandler
         }
         else
         {
-            result =
+
         }
     }
 
