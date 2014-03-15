@@ -132,7 +132,10 @@ public class BindQueryParametersHandler
     @Override
     public boolean handle(@NotNull final QueryJCommand command) throws QueryJBuildException
     {
-        return true;
+        final boolean result;
+
+        @NotNull final Sql<String> sql = retrieveCurrentSql()
+        return result;
     }
 
     /**
