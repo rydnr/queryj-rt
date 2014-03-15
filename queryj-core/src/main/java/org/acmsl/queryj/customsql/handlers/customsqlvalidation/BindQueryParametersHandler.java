@@ -119,16 +119,6 @@ public class BindQueryParametersHandler
 
             @Nullable PreparedStatement t_PreparedStatement = null;
 
-            boolean t_bLastAutoCommit = false;
-            try
-            {
-                t_bLastAutoCommit = setupConnection(connection);
-            }
-            catch  (@NotNull final SQLException sqlException)
-            {
-                t_ExceptionToWrap = sqlException;
-            }
-
             try
             {
                 t_PreparedStatement = connection.prepareStatement(t_strSql);
