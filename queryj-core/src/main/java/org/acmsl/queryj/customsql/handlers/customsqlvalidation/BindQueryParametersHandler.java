@@ -265,12 +265,12 @@ public class BindQueryParametersHandler
      */
     @SuppressWarnings("unchecked")
     protected <T> void bindParameter(
-    @NotNull final Parameter<String, T> parameter,
-    final int parameterIndex,
-    @NotNull final Sql<String> sql,
-    @NotNull final PreparedStatement statement,
-    @NotNull final TypeManager typeManager,
-    @NotNull final ConversionUtils conversionUtils)
+        @NotNull final Parameter<String, T> parameter,
+        final int parameterIndex,
+        @NotNull final Sql<String> sql,
+        @NotNull final PreparedStatement statement,
+        @NotNull final TypeManager typeManager,
+        @NotNull final ConversionUtils conversionUtils)
     throws QueryJBuildException
     {
         @Nullable QueryJBuildException exceptionToThrow = null;
