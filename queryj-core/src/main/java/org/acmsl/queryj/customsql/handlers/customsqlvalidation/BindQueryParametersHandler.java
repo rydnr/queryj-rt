@@ -134,7 +134,7 @@ public class BindQueryParametersHandler
     {
         final boolean result;
 
-        @NotNull final Sql<String> sql = retrieveCurrentSql()
+        @NotNull final Sql<String> sql = new retrieveCurrentSql()
         return result;
     }
 
