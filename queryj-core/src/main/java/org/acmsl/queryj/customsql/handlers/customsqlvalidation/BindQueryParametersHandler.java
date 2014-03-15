@@ -101,7 +101,6 @@ public class BindQueryParametersHandler
         @NotNull final Sql<String> sql,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final Connection connection,
-        @NotNull final MetadataManager metadataManager,
         @NotNull final TypeManager typeManager)
         throws  QueryJBuildException
     {
