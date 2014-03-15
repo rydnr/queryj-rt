@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for ExecuteQueryHandler.
  *
  * Date: 2014/03/15
  * Time: 11:28
