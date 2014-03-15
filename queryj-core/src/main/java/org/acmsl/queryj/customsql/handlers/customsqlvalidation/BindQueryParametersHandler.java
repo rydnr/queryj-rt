@@ -104,6 +104,13 @@ public class BindQueryParametersHandler
     protected static final String PREPARED_STATEMENT_SET = "PreparedStatement.set";
 
     /**
+     * A cached class array.
+     */
+    @SuppressWarnings("unchecked")
+    private static final Class<String>[] CLASS_ARRAY_OF_ONE_STRING =
+        (Class<String>[]) new Class<?>[] { String.class };
+
+    /**
      * Asks the handler to process the command. The idea is that each
      * command handler decides if such command is suitable of being
      * processed, and if so perform the concrete actions the command
