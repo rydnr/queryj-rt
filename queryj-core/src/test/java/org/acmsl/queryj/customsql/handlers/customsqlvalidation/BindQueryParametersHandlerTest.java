@@ -89,7 +89,7 @@ public class BindQueryParametersHandlerTest
 
         @NotNull final QueryJCommand parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
-        @NotNull final Sql<String> sql =
+        @NotNull final SqlElement<String> sql =
             new SqlElement<>(
                 "id", "dao", "name", "String", Cardinality.SINGLE, "all", true /* validation */, false, "description");
 
