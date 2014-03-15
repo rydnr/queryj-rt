@@ -52,6 +52,7 @@ import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.SqlParameterDAO;
 import org.acmsl.queryj.metadata.TypeManager;
 import org.acmsl.queryj.metadata.engines.JdbcTypeManager;
+import org.acmsl.queryj.tools.handlers.ParameterValidationHandler;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
