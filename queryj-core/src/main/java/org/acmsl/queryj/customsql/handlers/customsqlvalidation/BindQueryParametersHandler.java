@@ -171,39 +171,6 @@ public class BindQueryParametersHandler
                 t_ExceptionToThrow = buildException;
             }
 
-                try
-                {
-                    t_PreparedStatement.close();
-                }
-                catch  (@NotNull final SQLException anotherSqlException)
-                {
-                    if  (t_Log != null)
-                    {
-                        t_Log.warn(
-                            "Cannot close prepared statement.",
-                            anotherSqlException);
-                    }
-
-                    t_ExceptionToWrap = anotherSqlException;
-                }
-            }
-
-            if  (t_ExceptionToWrap != null)
-            {
-                throw new InvalidCustomSqlException(sql, t_ExceptionToWrap);
-            }
-            else if (t_ExceptionToThrow != null)
-            {
-                throw t_ExceptionToThrow;
-            }
-        }
-        else
-        {
-            if (t_Log != null)
-            {
-                t_Log.warn("Non-select query with validate=\"true\": " + sql.getId());
-            }
-        }
     }
 
     /**
