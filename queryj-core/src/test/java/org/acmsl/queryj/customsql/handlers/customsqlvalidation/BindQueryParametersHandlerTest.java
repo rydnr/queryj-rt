@@ -127,5 +127,7 @@ public class BindQueryParametersHandlerTest
 
         EasyMock.verify(t_CustomSqlProvider);
         EasyMock.verify(t_SqlParameterDAO);
+        EasyMock.verify(t_Connection);
+        EasyMock.verify(t_Statement);
     }
 }
