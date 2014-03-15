@@ -1,0 +1,192 @@
+//;-*- mode: antlr -*-
+//
+//                      QueryJ
+//
+//  Copyright (C) 2002-today  ACM-SL
+//                           chous@acm-sl.org
+//
+//  This library is free software; you can redistribute it and/or
+//  modify it under the terms of the GNU General Public
+//  License as published by the Free Software Foundation; either
+//  version 2 of the License, or any later version.
+//
+//  This library is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+//  General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public
+//  License along with this library; if not, write to the Free Software
+//  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//
+//  Thanks to ACM S.L. for distributing this library under the GPL license.
+//  Contact info: jose.sanleandro@acm-sl.com
+//  Postal Address: c/Playa de Lagoa, 1
+//                  Urb. Valdecabanas
+//                  Boadilla del monte
+//                  28660 Madrid
+//                  Spain
+//
+//***************************************************************************
+//
+// Filename: CustomRowMapper.stg
+//
+// Author: Jose San Leandro Armendariz
+//
+// Description: Defines the rules to generate RowMapper implementations
+//              for each custom implementations.
+//
+group CustomRowMapper;
+
+import "../queryj.stg"
+
+source(C) ::= <<
+<!
+  Generates a RowMapper implementation source file.
+!>
+<sourceImpl(result=C.result, C=C)>
+>>
+
+sourceImpl(result, C) ::= <<
+<!
+  Generates a RowMapper implementation source file.
+  @param result the result.
+  @param C the context.
+!>
+<if(C.header)>
+<C.header>
+<else>
+<java_header(
+  year=C.current_year,
+  fileName=C.fileName,
+  template=C.template,
+  description=
+  [
+    first_line_description(
+      result=result,
+      engineName=C.engine_name,
+      engineVersion=C.engine_version)
+  ],
+  timestamps_enabled=C.generation_timestamps_enabled,
+  timestamp=C.timestamp)><endif>
+<package_declaration(p=C.package)>
+
+<project_imports(
+  result=result,
+  basePackageName=C.project_package,
+  package=C.package,
+  voSubpackageName=typeInitMap.voSubpackageName,
+  voFactorySubpackageName=typeInitMap.voFactorySubpackageName)>
+<checkers_import()>
+/*
+ * Importing Spring classes.
+ */
+import org.springframework.jdbc.core.RowMapper;
+
+/*
+ * Importing some JDK classes.
+ */
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+<class(result=result, C=C)>
+>>
+
+first_line_description(result, engineName, engineVersion) ::= <<
+<!
+  Generates a description for the generated file.
+  @param result the custom result.
+  @param engineName the engine name.
+  @param engineVersion the engine version.
+!>
+<result.voName>-specific {@link RowMapper} implementation.
+>>
+
+project_imports(
+  result,
+  basePackageName,
+  package,
+  voSubpackageName,
+  voName,
+  voFactorySubpackageName) ::= <<
+<!
+  Generates the project imports.
+  @param result the custom result.
+  @param basePackageName the base package name.
+  @param package the package.
+  @param voSubpackageName the subpackage for the value
+  @param voName the class name of the value-object.
+  @param voFactorySubpackageName the subpackage of the value object factories.
+!>
+/*
+ * Importing project-specific classes.
+ */
+import <basePackageName>.<voSubpackageName>.<result.voName>;
+import <basePackageName>.<voFactorySubpackageName>.<result.voName>Factory;
+
+>>
+
+class(result, C) ::= <<
+<!
+ Generates the class body.
+ @param result the custom result.
+ @param C the context.
+!>
+/**
+ * <[
+      first_line_description(
+        result=result,
+        engineName=C.engine_name,
+        engineVersion=C.engine_version)
+    ]:{line |<line>}; separator="\n * ">
+<class_common_javadoc(
+    template="org/acmsl/queryj/dao/CustomRowMapper.stg",
+    generation_timestamps_enabled=C.generation_timestamps_enabled,
+    timestamp=C.timestamp)>
+ */
+public class <result.voName>RowMapper
+    implements RowMapper\<<result.voName>\>
+{
+    /**
+     * Creates a {@link <result.voName>} with information
+     * from the current row in given {@link ResultSet}.
+     * @param resultSet the result set.
+     * @param rowNum the index of the next row.
+     * @return the <result.voName> instance.
+     * @throws SQLException if the \<code>getXXX(String)\</code> operations on ResultSet fail.
+     */<notnull_method()>
+    public <result.voName> mapRow(<notnull_arg_single_line()>final ResultSet resultSet, final int rowNum)
+        throws SQLException
+    {
+        return mapRow(resultSet, rowNum, <result.voName>Factory.getInstance());
+    }
+
+    /**
+     * Creates a {@link <result.voName>} with information
+     * from the current row in given {@link ResultSet}.
+     * @param resultSet the result set.
+     * @param rowNum the index of the next row.
+     * @param factory the {@link <result.voName>Factory} instance.
+     * @return the <result.voName> instance.
+     * @throws SQLException if the \<code>getXXX(String)\</code> operations on ResultSet fail.
+     */<notnull_method()>
+    protected <result.voName> mapRow(
+       <notnull()>final ResultSet resultSet,
+        final int rowNum,
+       <notnull()>final <result.voName>Factory factory)
+        throws SQLException
+    {
+        return
+            factory.create(
+                <result.properties:{ property |<property_from_resultset(property=property)>}; separator=",\n">);
+    }
+}
+>>
+
+property_from_resultset(property) ::= <<
+<!
+  Generates the code to retrieve the property from the result set.
+  @param property the property.
+!>
+resultSet.get<property.objectType>("<property.columnName>")
+>>

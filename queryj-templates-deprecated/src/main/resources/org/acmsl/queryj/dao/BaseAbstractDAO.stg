@@ -1,0 +1,295 @@
+//;-*- mode: antlr -*-
+//
+//                      QueryJ
+//
+//  Copyright (C) 2002-today  ACM-SL
+//                            chous@acm-sl.org
+//
+//  This library is free software; you can redistribute it and/or
+//  modify it under the terms of the GNU General Public
+//  License as published by the Free Software Foundation; either
+//  version 2 of the License, or any later version.
+//
+//  This library is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+//  General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public
+//  License along with this library; if not, write to the Free Software
+//  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//
+//  Thanks to ACM S.L. for distributing this library under the GPL license.
+//  Contact info: jose.sanleandro@acm-sl.com
+//
+//***************************************************************************
+//
+// Filename: BaseAbstractDAO.stg
+//
+// Author: Jose San Leandro Armendariz
+//
+// Description: Defines the rules to generate base DAO
+//              implementations.
+//
+group BaseAbstractDAO;
+
+source() ::= <<
+<!
+  Generates an abstract DAO database implementation source file.
+!>
+<if(header)>
+<header>
+<else>
+<java_header(
+  year=current_year,
+  description=
+  [
+    first_line_description(tableName=table.name),
+    second_line_description(tableName=table.name)
+  ],
+  timestamp=timestamp)>
+<endif>
+<if(generation_timestamps_enabled)>
+// Generated using org/acmsl/queryj/dao/BaseAbstractDAO.stg at <timestamp>
+<endif>
+
+<package_declaration(package=package)>
+
+<project_imports(
+  basePackageName=project_package,
+  baseDAOSubpackageName=typeInitMap.baseDAOSubpackageName,
+  voSubpackageName=typeInitMap.voSubpackageName,
+  voName=table.voName)>
+
+<checkers_import()>
+/*
+ * Importing some JDK classes.
+ */
+<if(column_type_imports)>
+<column_type_imports:import(type=it)>
+<endif>
+
+import javax.sql.DataSource;
+
+<class()>
+>>
+
+first_line_description(tableName) ::= <<
+<!
+  Generates the first line of the generated file description.
+  @param tableName the table name.
+!>
+Abstract implementation of the <tableName> DAO
+>>
+
+second_line_description(tableName) ::= <<
+<!
+  Generates the second line of the generated file description.
+  @param tableName the table name.
+!>
+to support static values.
+>>
+
+project_imports(
+    basePackageName, baseDAOSubpackageName, voSubpackageName, voName) ::= <<
+<!
+ Generates the project imports.
+ @param basePackageName the base package name.
+ @param baseDAOSubpackageName the base DAO subpackage name.
+ @param voSubpackageName the base DAO subpackage name.
+ @param voName the value-object name.
+!>
+/*
+ * Importing project classes.
+ */
+import <basePackageName>.<baseDAOSubpackageName>.<voName>DAO;
+import <basePackageName>.<voSubpackageName>.<voName>;
+>>
+
+class() ::= <<
+<!
+ Generates the class body.
+!>
+/**
+ * <[
+      first_line_description(tableName=table.name),
+      second_line_description(tableName=table.name)
+    ]:{line |<line>}; separator="\n * ">
+<class_common_javadoc(template="org/acmsl/queryj/dao/BaseAbstractDAO.stg")>
+*/
+public abstract class Abstract<table.voName>DAO
+    extends  <repository.capitalized>JdbcTemplate
+    implements  <table.voName>DAO
+{
+    /**
+     * Builds a {@link Abstract<table.voName>DAO} instance
+     * with given data source.
+     * @param dataSource the required data source.
+     * @param daoListener the {@link <repository.capitalized>DAOListener}
+     * instance.
+     */
+    public Abstract<table.voName>DAO(
+        <notnull()>final DataSource dataSource,
+        <notnull()>final <repository.capitalized>DAOListener daoListener)
+    {
+        super(dataSource, daoListener);
+    }
+
+    /**
+     * Retrieves the static (pre-cached) values.
+     * @return such information.
+     */
+    public <table.voName>[] getStaticValues()
+    {
+        <table.voName>[] result =
+            new <table.voName>[FIXED_CONSTANTS.length];
+
+        copyArray(FIXED_CONSTANTS, result);
+
+        return result;
+    }
+
+    /**
+     * Copies given array of {@link <table.voName>} instances.
+     * @param source the source.
+     * @param target the target.
+     */
+    protected void copyArray(
+        <notnull()>final <table.voName>[] source,
+        <notnull()>final <table.voName>[] target)
+    {
+        System.arraycopy(source, 0, target, 0, source.length);
+    }
+
+  <if(table.static)>
+// <table.primaryKey>
+    <table.attributes:static_table(attribute=it, table=table)>
+
+  <endif>
+
+}
+>>
+
+static_table(attribute, table) ::= <<
+<!
+  Generates the method to operate directly on defined constants.
+  @param attribute the attribute.
+  @param table the table.
+!>
+/**
+ * Loads \<i><table.voName>\</i> information from the constant pool,
+ * filtering by <attribute.name>.
+ * @param <attribute.nameLowercased> the <attribute.name>
+ * to filter.
+ * @return the {@link <table.voName>} instance.
+ */
+<nullable()>
+public <table.voName> findConstantBy<attribute.nameCapitalized>(
+    <type_checker(attribute=attribute)>final <attribute.javaType> <attribute.nameLowercased>)
+{
+    <nullable()><table.voName> result = null;
+
+    for  (<nullable()> <table.voName> item : FIXED_CONSTANTS)
+    {
+        if  (   (item != null)
+             <find_constant_check_attribute(attribute=attribute)>)
+        {
+            result = item;
+            break;
+        }
+    }
+
+    return result;
+}
+
+>>
+
+static_attribute_check(attr) ::= <<
+<!
+ Generates the code to perform the static check on given attribute.
+ @param attr the attribute
+!>
+<if(attr.primitive)>
+<static_primitive_attribute_check(attr=attr)>
+<else>
+<static_object_attribute_check(attr=attr)>
+<endif>
+
+>>
+
+static_primitive_attribute_check(attr) ::= <<
+<!
+ Generates the code to perform the static check on given primitive attribute.
+ @param attr the attribute
+!>
+t_bFound =
+    (   (t_bFound)
+     && (t_CurrentItem.get<attr.nameCapitalized>() == <attr.nameLowercased>));
+>>
+
+static_object_attribute_check(attr) ::= <<
+<!
+ Generates the code to perform the static check on given primitive attribute.
+ @param attr the attribute
+!>
+if  (t_bFound)
+{
+    Object t_<attr.nameCapitalized> =
+        (t_CurrentItem.get<attr.nameCapitalized>();
+
+    if  (t_<attr.nameCapitalized> == null)
+    {
+        t_bFound = (<attr.name> == null);
+    }
+    else
+    {
+        t_bFound = t_<attr.nameCapitalized>.equals(<attr.name>);
+    }
+}
+>>
+
+find_by_primary_key(table) ::= <<
+/**
+ * Retrieves {@link <table.voName>} information
+ * filtering by its primary key.
+ <table.primaryKey:attribute_javadoc(name=it.nameLowercased); separator="\n">
+ * @return the {@link <table.voName>} matching given
+ * primary key.
+ * @throws DataAccessException if the operation fails.
+ */
+<if(table.voDecorated)>
+<table.voName>Decorator findByPrimaryKey(
+<else>
+<table.voName> findByPrimaryKey(
+<endif>
+
+    <table.primaryKey:attribute_declaration(attr=it); separator=",\n">);
+
+>>
+
+find_constant_by_pk(voName, primaryKeyAttributes) ::= <<
+/**
+ * Loads \<i><voName>\</i> information from the constant pool,
+ * filtering by the primary key.
+ <primaryKeyAttributes:attribute_javadoc(name=it.nameLowercased); separator="\n">
+ * @return the {@link <voName>} instance.
+ */
+<nullable()>
+public <voName> findConstantByPrimaryKey(
+  <primaryKeyAttributes:attribute_declaration(attr=it); separator=",\n">)
+{
+    <nullable()><voName> result = null;
+
+    for  (<nullable()><voName> item : FIXED_CONSTANTS)
+    {
+        if  (   (item != null)
+             <primaryKey:find_constant_check_attribute(attribute=it); separator="\n">)
+        {
+            result = item;
+            break;
+        }
+    }
+
+    return result;
+}
+>>

@@ -1,0 +1,238 @@
+//;-*- mode: antlr -*-
+//
+//                      QueryJ
+//
+//  Copyright (C) 2002-today  ACM-SL
+//                           chous@acm-sl.org
+//
+//  This library is free software; you can redistribute it and/or
+//  modify it under the terms of the GNU General Public
+//  License as published by the Free Software Foundation; either
+//  version 2 of the License, or any later version.
+//
+//  This library is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+//  General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public
+//  License along with this library; if not, write to the Free Software
+//  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//
+//  Thanks to ACM S.L. for distributing this library under the GPL license.
+//  Contact info: jose.sanleandro@acm-sl.com
+//  Postal Address: c/Playa de Lagoa, 1
+//                  Urb. Valdecabanas
+//                  Boadilla del monte
+//                  28660 Madrid
+//                  Spain
+//
+//***************************************************************************
+//
+// Filename: BaseDAOFactory.stg
+//
+// Author: Jose San Leandro Armendariz
+//
+// Description: Defines the rules to generate base DAO factories.
+//
+group BaseDAOFactory;
+
+source() ::= <<
+<!
+  Generates a BaseDAOFactory source file.
+!>
+<if(header)>
+<header>
+<else>
+<java_header(
+  year=current_year,
+  description=
+  [
+    first_line_description(voName=table.voName),
+    second_line_description(voName=table.voName)
+  ],
+  timestamp=timestamp)>
+<endif>
+<if(generation_timestamps_enabled)>
+// Generated using org/acmsl/queryj/dao/BaseDAOFactory.stg at <timestamp>
+<endif>
+
+<package_declaration(package=package)>
+
+<project_imports(
+  daoPackage=
+  [
+    project_package,
+    typeInitMap.baseDAOSubpackageName
+  ],
+  voName=table.voName,
+  daoChooserPackage=
+  [
+    project_package,
+    typeInitMap.baseDAOSubpackageName
+  ],
+  repository=repository.capitalized)>
+
+<class()>
+>>
+
+first_line_description(voName) ::= <<
+<!
+  Generates a description for the file.
+  @param voName the value-object name.
+!>
+Is able to create <voName>DAO instances,
+>>
+
+second_line_description(voName) ::= <<
+<!
+  Generates a description for the file.
+  @param voName the value-object name.
+!>
+following the Abstract Factory pattern.
+>>
+
+project_imports(daoPackage, voName, daoChooserPackage, repository) ::= <<
+<!
+  Generates the import statements for the project classes.
+  @param daoPackage the package parts of the DAO class.
+  @param voName the value-object name.
+  @param daoChooserPackage the DAOChooser package.
+  @param repository the repository, capitalized.
+!>
+<checkers_import()>
+/*
+ * Importing some JDK classes.
+ */
+import java.lang.IllegalAccessException;
+import java.lang.InstantiationException;
+
+/*
+ * Importing some commons-logging classes.
+ */
+import org.apache.commons.logging.LogFactory;
+>>
+
+class() ::= <<
+<!
+  Generates the class body.
+  @param engine_name the engine name.
+  @param timestamp the timestamp.
+  @param jndi_location the JNDI location.
+  @param table.name the table name.
+!>
+<class_impl(table=table)>
+>>
+
+class_impl(table) ::= <<
+<!
+  Generates the class body.
+  @param table the table.
+!>
+/**
+ * <[
+      first_line_description(voName=table.voName),
+      second_line_description(voName=table.voName)
+    ]:{ line |<line>}; separator="\n * ">
+<class_common_javadoc()>
+ */
+public abstract class <table.voName>DAOFactory
+{
+    /**
+     * Retrieves a <table.voName>DAOFactory instance.
+     * @return such instance.
+     */
+    <nullable()>
+    public static <table.voName>DAOFactory getInstance()
+    {
+        return getInstance(<repository.capitalized>DAOChooser.getInstance());
+    }
+
+    /**
+     * Retrieves a <table.voName>DAOFactory instance.
+     * @param daoChooser the DAOChooser instance.
+     * @return such instance.
+     */
+    <nullable()>
+    protected static <table.singularNameCapitalized>DAOFactory getInstance(
+        <notnull()>final <repository.capitalized>DAOChooser daoChooser)
+    {
+        <table.voName>DAOFactory result = null;
+
+        String t_str<table.voName>DAOFactoryClassName =
+            daoChooser.get<table.singularNameCapitalized>DAOFactoryClassName();
+
+        if  (t_str<table.voName>DAOFactoryClassName != null)
+        {
+            try
+            {
+                Class t_FactoryClass =
+                    Class.forName(
+                        t_str<table.voName>DAOFactoryClassName);
+
+                result =
+                    (<table.voName>DAOFactory) t_FactoryClass.newInstance();
+            }
+            catch  (final ClassNotFoundException classNotFoundException)
+            {
+                try
+                {
+                    LogFactory.getLog(<table.voName>DAOFactory.class).error(
+                        "Cannot find <table.voName>DAOFactory implementation class",
+                        classNotFoundException);
+                }
+                catch  (final Throwable throwable)
+                {
+                    // class-loading problem.
+                }
+            }
+            catch  (final InstantiationException instantiationException)
+            {
+                try
+                {
+                    LogFactory.getLog(<table.voName>DAOFactory.class).error(
+                        "Cannot instantiate <table.voName>DAOFactory implementation",
+                        instantiationException);
+                }
+                catch  (final Throwable throwable)
+                {
+                    // class-loading problem.
+                }
+            }
+            catch  (final IllegalAccessException illegalAccessException)
+            {
+                try
+                {
+                    LogFactory.getLog(<table.voName>DAOFactory.class).error(
+                        "Cannot access <table.voName>DAOFactory implementation",
+                        illegalAccessException);
+                }
+                catch  (final Throwable throwable)
+                {
+                    // class-loading problem.
+                }
+            }
+        }
+        else
+        {
+            try
+            {
+                LogFactory.getLog(<table.voName>DAOFactory.class).error(
+                    "<table.voName>DAOFactory implementation not specified");
+            }
+            catch  (final Throwable throwable)
+            {
+                // class-loading problem.
+            }
+        }
+
+        return result;
+    }
+
+    /**
+     * Creates a <table.name>-specific DAO instance.
+     * @return such DAO.
+     */
+    public abstract <table.voName>DAO create<table.voName>DAO();
+}
+>>

@@ -1,0 +1,237 @@
+//;-*- mode: antlr -*-
+//
+//                      QueryJ
+//
+//  Copyright (C) 2002-today  ACM-SL
+//                           chous@acm-sl.org
+//
+//  This library is free software; you can redistribute it and/or
+//  modify it under the terms of the GNU General Public
+//  License as published by the Free Software Foundation; either
+//  version 2 of the License, or any later version.
+//
+//  This library is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+//  General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public
+//  License along with this library; if not, write to the Free Software
+//  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//
+//  Thanks to ACM S.L. for distributing this library under the GPL license.
+//  Contact info: jose.sanleandro@acm-sl.com
+//  Postal Address: c/Playa de Lagoa, 1
+//                  Urb. Valdecabanas
+//                  Boadilla del monte
+//                  28660 Madrid
+//                  Spain
+//
+//***************************************************************************
+//
+// Filename: PkStatementSetter.stg
+//
+// Author: Jose San Leandro Armendariz
+//
+// Description: Defines the rules to generate PkStatementSetters.
+//
+group PkStatementSetter;
+
+source() ::= <<
+<!
+  Generates a PkStatementSetter source file.
+!>
+<if(header)>
+<header>
+<else>
+<java_header(
+  year=current_year,
+  description=
+  [
+      first_line_description(tableName=table.name),
+      second_line_description(tableName=table.name),
+      third_line_description(tableName=table.name)
+  ],
+  timestamp=timestamp)>
+<endif>
+<if(generation_timestamps_enabled)>
+// Generated using org/acmsl/queryj/dao/PkStatementSetter.stg at <timestamp>
+<endif>
+
+<package_declaration(package=package)>
+
+<checkers_import()>
+/*
+ * Importing Spring classes.
+ */
+import org.springframework.jdbc.core.PreparedStatementSetter;
+
+/*
+ * Importing some JDK classes.
+ */
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+<column_type_imports:import(type=it)>
+
+<class()>
+>>
+
+first_line_description(tableName) ::= <<
+<!
+  Generates the first line of the generated file description.
+  @param tableName the table name.
+!>
+Specifies the PreparedStatement values required
+>>
+
+second_line_description(tableName) ::= <<
+<!
+  Generates the second line of the generated file description.
+  @param tableName the table name.
+!>
+to perform any <tableName> operation expecting the
+>>
+
+third_line_description(tableName) ::= <<
+<!
+  Generates the third line of the generated file description.
+  @param tableName the table name.
+!>
+primary key attribute set.
+>>
+
+class() ::= <<
+<!
+ Generates the class body.
+!>
+/**
+ * <[
+      first_line_description(tableName=table_name),
+      second_line_description(tableName=table_name),
+      third_line_description(tableName=table_name)
+    ]:{line |<line>}; separator="\n * ">
+<class_common_javadoc(template="org/acmsl/queryj/dao/PkStatementSetter.stg")>
+ */
+<class_annotations()>
+public class <table.voName>PkStatementSetter
+    implements  PreparedStatementSetter
+{
+    <table.primaryKey:attribute_member_declaration(attr=it);
+      separator="\n\n">
+
+    /**
+     * Creates a {@link <table.voName>PkStatementSetter}
+     * instance.
+     <table.primaryKey:attribute_javadoc(name=it.nameLowercased);
+        separator="\n">
+     */
+    public <table.voName>PkStatementSetter(
+        <table.primaryKey:attribute_declaration(attr=it);
+          separator=",\n">)
+    {
+        <table.primaryKey:
+          { attr | immutableSet<attr.nameCapitalized>(<attr.nameLowercased>);};
+          separator="\n">
+    }
+
+    <table.primaryKey:attribute_accessor(attr=it); separator="\n\n">
+
+    /**
+     * Specifies the values on given {@link PreparedStatement}
+     * @param preparedStatement the prepared statement.
+     * @throws SQLException intercepted by \<i>Spring\</i>.
+     */
+    public void setValues(<notnull()>final PreparedStatement preparedStatement)
+        throws  SQLException
+    {
+        setValues(
+            preparedStatement,
+            <table.primaryKey:{attr | get<attr.nameCapitalized>()};
+              separator=",\n">);
+    }
+
+    /**
+     * Specifies the values on given {@link PreparedStatement}
+     * @param preparedStatement the prepared statement.
+     <table.primaryKey:attribute_javadoc(name=it.nameLowercased);
+        separator="\n">
+     * @throws SQLException intercepted by \<i>Spring\</i>.
+     */
+    protected void setValues(
+        <notnull()>final PreparedStatement preparedStatement,
+        <table.primaryKey:attribute_declaration(attr=it);
+          separator=",\n">)
+      throws  SQLException
+    {
+        <table.primaryKey:
+          attribute_preparedstatement_specification(attr=it);
+          separator="\n">
+    }
+}
+>>
+
+attribute_member_declaration(attr) ::= <<
+<!
+ Generates the member declaration for a concrete attribute.
+ @param attr the attribute.
+!>
+/**
+ * The \<i><attr.name>\</i> information.
+ */
+private <if(attr.clob)>String<else><attr.javaType><endif> <attr.nameLowercased>;
+>>
+
+attribute_accessor(attr) ::= <<
+<!
+ Generates the accessor for a concrete attribute.
+ @param attr the attribute.
+!>
+/**
+ * Specifies the \<i><attr.name>\</i> value.
+ <attribute_javadoc(name=attr.nameLowercased)>
+ */
+protected final void immutableSet<attr.nameCapitalized>(
+    <attribute_declaration(attr=attr)>)
+{
+    this.<attr.nameLowercased> = <attr.nameLowercased>;
+}
+
+/**
+ * Specifies the \<i><attr.name>\</i> value.
+ <attribute_javadoc(name=attr.nameLowercased)>
+ */
+@SuppressWarnings("unused")
+protected void set<attr.nameCapitalized>(
+    <attribute_declaration(attr=attr)>)
+{
+    immutableSet<attr.nameCapitalized>(<attr.nameLowercased>);
+}
+
+/**
+ * Retrieves the \<i><attr.name>\</i> value.
+ * @return such value.
+ */
+<type_checker()>
+protected <if(attr.clob)>String<else><attr.javaType><endif> get<attr.nameCapitalized>()
+{
+    return <attr.nameLowercased>;
+}
+>>
+
+attribute_query_specification(attr) ::= <<
+<!
+ Generates the code to specify the attribute into the query.
+ @param attr the attribute.
+!>
+preparedStatement.set<attr.objectType>(<attr.ordinalPosition>, <attr.nameLowercased>);
+>>
+
+attribute_preparedstatement_specification(attr) ::= <<
+<!
+ Generates the code to specify the attribute into the PreparedStatement.
+ @param attr the attribute.
+!>
+<if(!attr.clob)>
+preparedStatement.set<attr.objectType>(<attr.ordinalPosition>, <attr.nameLowercased>);
+<endif>
+>>

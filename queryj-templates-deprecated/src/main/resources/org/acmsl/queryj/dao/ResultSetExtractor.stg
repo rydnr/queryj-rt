@@ -1,0 +1,870 @@
+//;-*- mode: antlr -*-
+//
+//                      QueryJ
+//
+//  Copyright (C) 2002-today  ACM-SL
+//                           chous@acm-sl.org
+//
+//  This library is free software; you can redistribute it and/or
+//  modify it under the terms of the GNU General Public
+//  License as published by the Free Software Foundation; either
+//  version 2 of the License, or any later version.
+//
+//  This library is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+//  General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public
+//  License along with this library; if not, write to the Free Software
+//  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//
+//  Thanks to ACM S.L. for distributing this library under the GPL license.
+//  Contact info: jose.sanleandro@acm-sl.com
+//  Postal Address: c/Playa de Lagoa, 1
+//                  Urb. Valdecabanas
+//                  Boadilla del monte
+//                  28660 Madrid
+//                  Spain
+//
+//***************************************************************************
+//
+// Filename: ResultSetExtractor.stg
+//
+// Author: Jose San Leandro Armendariz
+//
+// Description: Defines the rules to generate ResultSetExtractors.
+//
+//
+group ResultSetExtractor;
+
+source() ::= <<
+<!
+  Generates a ResultSetExtractor source file.
+!>
+<if(header)>
+<header>
+<else>
+<java_header(
+  year=current_year,
+  description=
+  [
+    first_line_description(tableName=table_name)
+  ],
+  timestamp=timestamp)>
+<endif>
+<if(generation_timestamps_enabled)>
+// Generated using org/acmsl/queryj/dao/ResultSetExtractor.stg at <timestamp>
+<endif>
+
+<package_declaration(package=package)>
+
+<project_imports(
+  basePackageName=project_package,
+  voSubpackageName=typeInitMap.voSubpackageName,
+  voName=table.voName,
+  baseDAOSubpackageName=typeInitMap.baseDAOSubpackageName,
+  rdbSubpackageName=typeInitMap.rdbSubpackageName,
+  trName=repository.capitalized)>
+
+<checkers_import()>
+/*
+ * Importing Spring classes.
+ */
+import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.core.ResultSetExtractor;
+
+/*
+ * Importing some JDK classes.
+ */
+import java.sql.ResultSet;
+import java.sql.SQLException;
+<column_type_imports:import(type=it)>
+
+<class(table=table)>
+>>
+
+first_line_description(tableName) ::= <<
+<!
+  Generates the first line of the generated file description.
+  @param tableName the table name.
+!>
+Extracts <tableName> entities from ResultSets.
+>>
+
+project_imports(
+  basePackageName,
+  voSubpackageName,
+  voName,
+  baseDAOSubpackageName,
+  rdbSubpackageName,
+  trName) ::= <<
+<!
+ Generates the project imports.
+ @param basePackageName the base package name.
+ @param voSubpackageName the value-object subpackage name.
+ @param voName the value-object name.
+ @param baseDAOSubpackageName the base DAO subpackage name.
+ @param rdbSubpackageName the rdb subpackage name.
+ @param trName the table repository name.
+!>
+/*
+ * Importing project classes.
+ */
+import <basePackageName>.<voSubpackageName>.<voName>;
+import <basePackageName>.<voSubpackageName>.<voName>ValueObjectFactory;
+import <basePackageName>.<baseDAOSubpackageName>.<rdbSubpackageName>.<trName>DAOListener;
+import <basePackageName>.<baseDAOSubpackageName>.<rdbSubpackageName>.<trName>ResultSetExtractor;
+>>
+
+class(table) ::= <<
+<!
+ Generates the class body.
+ @param table the table.
+!>
+<classImpl(table=table, parent=table.parentTable)>
+>>
+
+classImpl(table, parent) ::= <<
+<!
+ Generates the class body.
+ @param table the table.
+ @param parent the parent table.
+!>
+/**
+ * <[
+      first_line_description(tableName=table_name)
+    ]:{line |<line>}; separator="\n * ">
+<class_common_javadoc(template="org/acmsl/queryj/dao/ResultSetExtractor.stg")>
+ */
+<class_annotations()>
+public class <table.voName>ResultSetExtractor
+    extends     <repository.capitalized>ResultSetExtractor
+    implements  ResultSetExtractor
+<!                <repository.capitalized>TableRepository !>
+{
+<if(lob_handling_required)>
+    <indirect_template(name=lob_handling_flavor+"Extractor", extra1=table, extra2=parent)>
+<else>
+    <defaultExtractorImpl(table=table, parent=parent)>
+<endif>
+
+}
+>>
+
+defaultExtractor(extra1, extra2) ::= <<
+<!
+ Generates the default logic for the extractor.
+ @param extra1 the table.
+ @param extra2 the parent.
+!>
+<defaultExtractorImpl(table=extra1, parent=extra2)>
+>>
+
+defaultExtractorImpl(table, parent) ::= <<
+<!
+ Generates the default logic for the extractor.
+ @param table the table.
+ @param parent the parent.
+!>
+/**
+ * Constructs a new {@link <table.voName>ResultSetExtractor}.
+ * @param sql the original SQL.
+ * @param daoListener the dao listener.
+ */
+public <table.voName>ResultSetExtractor(
+    <notnull()>final String sql,
+    <notnull()>final <repository.capitalized>DAOListener daoListener)
+{
+    super(sql, daoListener);
+}
+
+/**
+ * Extracts {@link <table.voName>} information from given result set.
+ * @param resultSet the result set.
+ * @param sql the original SQL.
+ * @param daoListener the {@link <repository.capitalized>DAOListener} instance.
+ * @return the {@link <table.voName>} or
+ * \<code>null\</code> if the operation returned no data.
+ * @throws SQLException intercepted by \<i>Spring\</i\>.
+ * @throws DataAccessException with information about any
+ * custom exception.
+ */
+@Override
+<notnull()>
+protected Object extractData(
+    <notnull()>final ResultSet resultSet,
+    <notnull()>final String sql,
+    <notnull()>final <repository.capitalized>DAOListener daoListener)
+  throws  SQLException,
+          DataAccessException
+{
+    return
+        extractData(
+            resultSet,
+            sql,
+            daoListener,
+            <table.voName>ValueObjectFactory.getInstance());
+}
+
+/**
+ * Extracts {@link <table.voName>} information from given result set.
+ * @param resultSet the result set.
+     * @param daoListener the {@link <repository.capitalized>DAOListener} instance.
+ * @return the {@link <table.voName>} or
+ * \<code>null\</code> if the operation returned no data.
+ * @throws SQLException intercepted by \<i>Spring\</i\>.
+ * @throws DataAccessException with information about any
+ * custom exception.
+ */
+<notnull()>
+protected Object extractData(
+    <notnull()>final ResultSet resultSet,
+    <notnull()>final String sql,
+    <notnull()>final <repository.capitalized>DAOListener daoListener,
+    <notnull()>final <table.voName>ValueObjectFactory factory)
+  throws  SQLException,
+          DataAccessException
+{
+    <table.voName> result = null;
+
+    int t_iRowCount = 0;
+
+    if  (resultSet.next())
+    {
+        t_iRowCount++;
+
+        daoListener.resultSetMovedForward(sql, t_iRowCount);
+
+<if(parent)>
+        <table.allParentAndNonParentAttributes:nullable_attribute_extraction(
+          value=it)>
+<else>
+        <table.attributes:nullable_attribute_extraction(
+          value=it)>
+<endif>
+
+
+        result =
+            factory.create(
+<if(parent)>
+                <table.allParentAndNonParentAttributes:attribute_extraction(value=it);
+                  separator=",\n">);
+<else>
+                <table.attributes:attribute_extraction(value=it);
+                  separator=",\n">);
+<endif>
+
+    }
+
+    daoListener.resultSetClosed(sql, t_iRowCount);
+
+    return result;
+}
+>>
+
+oracleExtractor(extra1, extra2) ::= <<
+<!
+ Generates the constructor needed by Oracle8 LOB management.
+ @param extra1 the table.
+ @param extra2 the parent.
+!>
+<oracleExtractorImpl(table=extra1, parent=extra2)>
+>>
+
+oracleExtractorImpl(table, parent) ::= <<
+<!
+ Generates the constructor needed by Oracle8 LOB management.
+ @param table the table.
+ @param parent the parent.
+!>
+<oracle8ExtractorImpl(table=table, parent=parent)>
+>>
+
+oracle8Extractor(extra1, extra2) ::= <<
+<!
+ Generates the constructor needed by Oracle8 LOB management.
+ @param extra1 the table.
+ @param extra2 the parent.
+!>
+<oracle8ExtractorImpl(table=extra1, parent=extra2)>
+>>
+
+oracle8ExtractorImpl(table, parent) ::= <<
+<!
+ Generates the constructor needed by Oracle8 LOB management.
+ @param table the table.
+ @param parent the parent.
+!>
+<lob_attributes:attribute_class_declaration(value=it);
+  separator="\n\n">
+
+/**
+ * The \<i>select for update\</i> mode.
+ */
+private boolean m__bSelectForUpdateMode;
+
+/**
+ * Creates a Oracle-based {@link ResultSetExtractor}
+ * to extract <table.voName> information, managing LOB stuff.
+ * @param sql the sql.
+ * @param selectForUpdateMode whether the result set is the result of
+ * the \<i>select for update} (required to perform some operations
+ * such as \<b>insert\</b>s), or not.
+ * @param daoListener the {@link <repository.capitalized>DAOListener} instance.
+ */
+public <table.voName>ResultSetExtractor(
+    <notnull()>final String sql,
+    final boolean selectForUpdateMode,
+    <notnull()>final <repository.capitalized>DAOListener daoListener)
+{
+    super(sql, daoListener);
+    immutableSetSelectForUpdateMode(selectForUpdateMode);
+}
+
+/**
+ * Creates a Oracle-based {@link ResultSetExtractor}
+ * to extract <table.voName> information, managing LOB stuff.
+ <lob_attributes:attribute_javadoc_method_declaration(value=it);
+   separator=",\n">
+ * @param selectForUpdateMode whether the result set is the result of
+ * the \<i>select for update} (required to perform some operations
+ * such as \<b>insert\</b>s), or not.
+ * @param daoListener the {@link <repository.capitalized>DAOListener} instance.
+ */
+public <table.voName>ResultSetExtractor(
+    <lob_attributes:attribute_method_declaration(value=it);
+      separator=",\n">,
+    final boolean selectForUpdateMode,
+    <notnull()>final <repository.capitalized>DAOListener daoListener)
+{
+    this(sql, selectForUpdateMode, daoListener);
+    <table.lobAttributes:attribute_setter_call(value=it); separator="\n">
+}
+
+/**
+ * Creates a Oracle-based {@link ResultSetExtractor}
+ * to extract <table.voName> information, managing LOB stuff.
+ * @param sql the sql.
+ * @param daoListener the {@link <repository.capitalized>DAOListener} instance.
+ */
+public <table.voName>ResultSetExtractor(
+    <notnull>final String sql,
+    <notnull>final <repository.capitalized>DAOListener daoListener)
+{
+    this(sql, false, daoListener);
+}
+
+<lob_attributes:attribute_accessors(value=it); separator="\n\n">
+
+/**
+ * Specifies whether the extractor is retrieving results of a
+ * \<i>select for update\</i> or not.
+ * @param selectForUpdate such behaviour.
+ */
+protected final void immutableSetSelectForUpdateMode(
+    final boolean selectForUpdateMode)
+{
+    this.selectForUpdateMode = selectForUpdateMode;
+}
+
+/**
+ * Specifies whether the extractor is retrieving results of a
+ * \<i>select for update\</i> or not.
+ * @param selectForUpdate such behaviour.
+ */
+@SuppressWarnings("unused")
+protected void setSelectForUpdateMode(final boolean selectForUpdateMode)
+{
+    immutableSetSelectForUpdateMode(selectForUpdateMode);
+}
+
+/**
+ * Retrieves whether the extractor is retrieving results of a
+ * \<i>select for update\</i> or not.
+ * @return such behaviour.
+ */
+public boolean getSelectForUpdateMode()
+{
+    return selectForUpdateMode;
+}
+
+/**
+ * Extracts \<i><table.voName>\</i> information from given result set.
+ * @param resultSet the result set.
+ * @param sql the original SQL.
+ * @param daoListener the {@link <repository.capitalized>DAOListener} instance.
+ * @return the {@link <table.voName>} or
+ * \<code>link\</code> if the operation returned no data.
+ * @throws SQLException intercepted by \<i>Spring\</i\>.
+ * @throws DataAccessException with information about any
+ * custom exception.
+ */
+@Override
+<notnull()>
+protected Object extractData(
+    <notnull()>final ResultSet resultSet,
+    <notnull()>final String sql,
+    <notnull()>final <repository.capitalized>DAOListener daoListener)
+  throws  SQLException,
+          DataAccessException
+{
+    return
+        extractData(
+            resultSet,
+            sql,
+            daoListener,
+            <table.lobAttributes:{get<it.nameCapitalized>()};
+              separator=",\n">,
+            getSelectForUpdateMode(),
+            <table.voName>ValueObjectFactory.getInstance());
+}
+
+/**
+ * Extracts \<i><table.voName>\</i> information from given result set.
+ * @param resultSet the result set.
+ * @param sql the original SQL.
+ * @param daoListener the {@link <repository.capitalized>DAOListener} instance.
+ <table.lobAttributes:attribute_javadoc_method_declaration(value=it);
+   separator="\n">
+ * @param selectForUpdate whether the operation is a
+ * \<i>select for update\</i>.
+ * @param factory the {@link <table.voName>ValueObjectFactory}
+ * instance.
+ * @return the {@link <table.voName>} or
+ * \<code>null\</code> if the operation returned no data.
+ * @throws SQLException intercepted by \<i>Spring\</i\>.
+ * @throws DataAccessException with information about any
+ * custom exception.
+ */
+<notnull()>
+protected Object extractData(
+    <notnull()>final ResultSet resultSet,
+    <notnull()>final String sql,
+    <notnull()>final <repository.capitalized>DAOListener daoListener,
+    <table.lobAttributes:attribute_method_declaration(value=it);
+      separator=",\n">,
+    final boolean selectForUpdateMode,
+    <notnull()>final <table.voName>ValueObjectFactory factory)
+  throws  SQLException,
+          DataAccessException
+{
+    <table.voName> result = null;
+
+    int t_iRowCount = 0;
+
+    if  (resultSet.next())
+    {
+        t_iRowCount++;
+
+        daoListener.resultSetMovedForward(sql, t_iRowCount);
+
+<if(parent)>
+        <table.allParentAndNonParentAttributes:nullable_attribute_extraction(
+          value=it)>
+<else>
+        <table.attributes:nullable_attribute_extraction(
+          value=it)>
+<endif>
+
+        <table.lobAttributes:special_attribute_extraction(
+          value=it)>
+
+        result =
+            factory.create<table.voName>ValueObject(
+<if(parent)>
+                <table.allParentAndNonParentAttributes:attribute_extraction(
+                  value=it); separator=",\n">);
+<else>
+                <table.attributes:attribute_extraction(
+                  value=it); separator=",\n">);
+<endif>
+
+    }
+
+    daoListener.resultSetClosed(sql, t_iRowCount);
+
+    return result;
+}
+
+>>
+
+attribute_class_declaration(value) ::= <<
+<!
+ Generates the attribute class declaration.
+ @param value the attribute.
+!>
+/**
+ * The <value.name> attribute.
+ */
+private <value.objectType> <value.nameUncapitalized>;
+>>
+
+attribute_javadoc_method_declaration(value) ::= <<
+<!
+ Generates the attribute Javadoc method declaration.
+ @param attr the attribute.
+!>
+* @param <value.nameLowercased> the \<i><value.name>\</i> information.
+>>
+
+attribute_method_declaration(value) ::= <<
+<!
+ Generates the attribute method declaration.
+ @param attr the attribute.
+!>
+final <value.objectType> <value.nameLowercased>
+>>
+
+attribute_setter_call(value) ::= <<
+<!
+ Generates the attribute setter call.
+ @param attr the attribute.
+!>
+immutableSet<value.nameCapitalized>(<value.nameLowercased>);
+>>
+
+attribute_accessors(value) ::= <<
+<!
+ Generates the attribute accessors.
+ @param attr the attribute.
+!>
+/**
+ * Specifies the \<i><value.name>\</i> information.
+ * @param <value.nameLowercased> such value.
+ */
+protected final void immutableSet<value.nameCapitalized>(
+    <type_checker(attribute=value)>final <value.objectType> <value.nameLowercased>)
+{
+    <value.nameUncapitalized> = <value.nameLowercased>;
+}
+
+/**
+ * Specifies the \<i><value.name>\</i> information.
+ * @param <value.nameLowercased> such value.
+ */
+protected void set<value.nameCapitalized>(
+    <type_checker(attribute=value)>final <value.objectType> <value.nameLowercased>)
+{
+    immutableSet<value.nameCapitalized>(<value.nameLowercased>);
+}
+
+/**
+ * Specifies the \<i><value.name>\</i> information.
+ * @param <value.nameLowercased> such value.
+ */
+<type_checker(attribute=value)>
+public <value.objectType> get<value.nameCapitalized>()
+{
+    return <value.nameUncapitalized>;
+}
+>>
+
+nullable_attribute_extraction(value) ::= <<
+<!
+ Generates the code to extract nullable attributes.
+ @param attr the attribute.
+!>
+<if(lob_handling_required)>
+<indirect_template(
+  name=clob_handling_flavor+"_nullable_attribute_extraction", extra1=value)>
+<else>
+<default_nullable_attribute_extraction(value=value)>
+<endif>
+>>
+
+default_nullable_attribute_extraction(value) ::= <<
+<!
+ Generates the code to extract nullable attributes.
+ @param attr the attribute.
+!>
+<if(value.nullable)>
+<if(value.timestamp)>
+Timestamp <value.nameUncapitalized>AsTimestamp =
+<else>
+<value.objectType> <value.nameUncapitalized>As<value.objectType> =
+<endif>
+
+<if(value.primitive)>
+<if(lob_handling_required)>
+    <object_nullable_clobhandling_attribute_extractor(value=value)>
+<else>
+    <primitive_nullable_attribute_extractor(value=value)>
+<endif>
+<else>
+<if(lob_handling_required)>
+    <indirect_template(name=value.objectType+"_nullable_clobhandling_attribute_extractor", extra1=value)>
+<else>
+    <indirect_template(name=value.objectType+"_nullable_attribute_extractor", extra1=value)>
+<endif>
+<endif>
+
+if  (resultSet.wasNull())
+{
+<if(value.timestamp)>
+    <value.nameUncapitalized>AsTimestamp = null;
+<else>
+    <value.nameUncapitalized>As<value.objectType> = null;
+<endif>
+
+}
+
+<endif>
+>>
+
+String_nullable_attribute_extractor(value) ::= <<
+<!
+  Generates the code to extract a String nullable attribute.
+!>
+<object_nullable_attribute_extractor(value=value)>
+>>
+
+String_nullable_clobhandling_attribute_extractor(value) ::= <<
+<!
+  Generates the code to extract a String nullable attribute.
+!>
+<object_nullable_clobhandling_attribute_extractor(value=value)>
+>>
+
+Date_nullable_attribute_extractor(value) ::= <<
+<!
+  Generates the code to extract a Date nullable attribute.
+!>
+<object_nullable_clobhandling_attribute_extractor(value=value)>
+>>
+
+Date_nullable_clobhandling_attribute_extractor(value) ::= <<
+<!
+  Generates the code to extract a Date nullable attribute.
+!>
+<object_nullable_clobhandling_attribute_extractor(value=value)>
+>>
+
+Timestamp_nullable_attribute_extractor(value) ::= <<
+<!
+  Generates the code to extract a Timestamp nullable attribute.
+!>
+<object_nullable_clobhandling_attribute_extractor(value=value)>
+>>
+
+Timestamp_nullable_clobhandling_attribute_extractor(value) ::= <<
+<!
+  Generates the code to extract a Timestamp nullable attribute.
+!>
+<object_nullable_clobhandling_attribute_extractor(value=value)>
+>>
+
+BigDecimal_nullable_attribute_extractor(value) ::= <<
+<!
+  Generates the code to extract a BigDecimal nullable attribute.
+!>
+<object_nullable_attribute_extractor(value=value)>
+>>
+
+BigDecimal_nullable_clobhandling_attribute_extractor(value) ::= <<
+<!
+  Generates the code to extract a BigDecimal nullable attribute.
+!>
+<object_nullable_clobhandling_attribute_extractor(value=value)>
+>>
+
+primitive_nullable_attribute_extractor(value) ::= <<
+<!
+  Generates the code to extract a primitive nullable attribute.
+!>
+new <value.objectType>(
+<if(value.numberSmallerThanInt)>
+    resultSet.getInt(
+<else>
+    resultSet.get<value.objectType>(
+<endif>
+
+        "<value.nameUppercased>"));
+>>
+
+primitive_nullable_clobhandling_attribute_extractor(value) ::= <<
+<!
+  Generates the code to extract a primitive nullable attribute.
+!>
+new <value.objectType>(
+<if(value.timestamp)>
+    resultSet.getTimestamp("<value.nameUppercased>"));
+<else>
+<if(value.numberSmallerThanInt)>
+    resultSet.getInt("<value.nameUppercased>"));
+<else>
+    resultSet.get<value.objectType>("<value.nameUppercased>"));
+<endif>
+<endif>
+
+>>
+
+object_nullable_attribute_extractor(value) ::= <<
+<!
+  Generates the code to extract a non-primitive nullable attribute.
+!>
+<if(value.timestamp)>
+resultSet.getTimestamp(
+<else>
+<if(value.numberSmallerThanInt)>
+resultSet.getInt(
+<else>
+resultSet.get<value.objectType>(
+<endif>
+<endif>
+
+    "<value.nameUppercased>");
+>>
+
+object_nullable_clobhandling_attribute_extractor(value) ::= <<
+<!
+  Generates the code to extract a non-primitive nullable attribute.
+!>
+<if(value.timestamp)>
+resultSet.getTimestamp("<value.nameUppercased>");
+<else>
+<if(value.numberSmallerThanInt)>
+resultSet.getInt("<value.nameUppercased>");
+<else>
+resultSet.get<value.objectType>("<value.nameUppercased>");
+<endif>
+<endif>
+
+>>
+
+attribute_extraction(value) ::= <<
+<!
+ Generates the code to extract attributes.
+ @param attr the attribute.
+!>
+<if(lob_handling_required)>
+<indirect_template(
+  name=lob_handling_flavor+"_attribute_extraction", extra1=value)>
+<else>
+<default_attribute_extraction(value)>
+<endif>
+>>
+
+default_attribute_extraction(value) ::= <<
+<!
+ Generates the member declaration for a concrete attribute.
+ @param attr the attribute.
+!>
+<if(value.nullable)>
+<if(value.timestamp)>
+<value.nameUncapitalized>AsTimestamp
+<else>
+<value.nameUncapitalized>As<value.objectType>
+<endif>
+<else>
+<if(value.numberSmallerThanInt)>
+resultSet.getInt(<value.tableNameUppercased>.<value.nameUppercased>)
+<else>
+<if(value.timestamp)>
+resultSet.getTimestamp("<value.nameUppercased>")
+<else>
+resultSet.get<value.objectType>("<value.nameUppercased>")
+<endif>
+<endif>
+<endif>
+
+>>
+
+default_clobhandling_attribute_extraction(value) ::= <<
+<!
+ Generates the member declaration for a concrete attribute.
+ @param attr the attribute.
+!>
+<if(value.timestamp)>
+resultSet.getTimestamp("<value.nameUppercased>")
+<else>
+<if(value.nullable)>
+<value.nameUncapitalized>As<value.objectType>
+<else>
+<if(value.numberSmallerThanInt)>
+resultSet.getInt("<value.nameUppercased>")
+<else>
+resultSet.get<value.objectType>("<value.nameUppercased>")
+<endif>
+<endif>
+<endif>
+
+>>
+
+special_attribute_extraction(value) ::= <<
+<!
+ Generates the code to extract special attributes.
+ @param attr the attribute.
+!>
+<if(lob_handling_required)>
+<indirect_template(
+  name=lob_handling_flavor+"_special_attribute_extraction", extra1=value)>
+<endif>
+>>
+
+oracle_nullable_attribute_extraction(value) ::= <<
+<!
+ Generates the code to extract nullable attributes for Oracle.
+!>
+<oracle8_nullable_attribute_extraction(value=value)>
+>>
+
+oracle8_nullable_attribute_extraction(value) ::= <<
+<!
+ Generates the code to extract nullable attributes for Oracle8.
+ @param input the attribute.
+!>
+<if(!lob_handling_required)>
+<default_nullable_attribute_extraction(value=value)>
+<endif>
+>>
+
+oracle_special_attribute_extraction(value) ::= <<
+<!
+ Generates the code to extract special attributes for Oracle.
+ @param input the attribute.
+!>
+<oracle8_special_attribute_extraction(value=value)>
+>>
+
+oracle8_special_attribute_extraction(value) ::= <<
+<!
+ Generates the code to extract special attributes for Oracle8.
+!>
+<if(lob_handling_required)>
+oracle.sql.CLOB <value.nameUncapitalized> =
+    (oracle.sql.CLOB) resultSet.getClob("<value.nameUppercased>");
+
+if  (selectForUpdateMode)
+{
+    <value.nameUncapitalized>.putString(<value.ordinalPosition>, <value.nameLowercased>);
+}
+<else>
+if  (resultSet.wasNull())
+{
+    <value.nameUncapitalized>As<value.objectType> = null;
+}
+<endif>
+>>
+
+oracle_attribute_extraction(value) ::= <<
+<!
+ Generates the code to extract the attributes for Oracle.
+ @param input the attribute.
+!>
+<oracle8_attribute_extraction(value=value)>
+>>
+
+oracle8_attribute_extraction(value) ::= <<
+<!
+ Generates the code to extract the attributes for Oracle8.
+ @param input the attribute.
+!>
+<if(lob_handling_required)>
+(selectForUpdateMode)
+?  <value.nameLowercased>
+:  <value.nameUncapitalized>.getSubString(<value.ordinalPosition>, (int) <value.nameUncapitalized>.length())
+<else>
+<default_clobhandling_attribute_extraction(value=value)>
+<endif>
+>>

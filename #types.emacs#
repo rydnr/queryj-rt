@@ -1,0 +1,68 @@
+static int 	BINARY
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type BINARY.
+static int 	BIT
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type BIT.
+static int 	BLOB
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type BLOB.
+static int 	BOOLEAN
+The constant in the Java programming language, somtimes referred to as a type code, that identifies the generic SQL type BOOLEAN.
+static int 	CHAR
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type CHAR.
+static int 	CLOB
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type CLOB.
+static int 	DATALINK
+The constant in the Java programming language, somtimes referred to as a type code, that identifies the generic SQL type DATALINK.
+static int 	DATE
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type DATE.
+static int 	DECIMAL
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type DECIMAL.
+static int 	DISTINCT
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type DISTINCT.
+static int 	DOUBLE
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type DOUBLE.
+static int 	FLOAT
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type FLOAT.
+static int 	INTEGER
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type INTEGER.
+static int 	JAVA_OBJECT
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type JAVA_OBJECT.
+static int 	LONGNVARCHAR
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type LONGNVARCHAR.
+static int 	LONGVARBINARY
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type LONGVARBINARY.
+static int 	LONGVARCHAR
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type LONGVARCHAR.
+static int 	NCHAR
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type NCHAR
+static int 	NCLOB
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type NCLOB.
+static int 	NULL
+The constant in the Java programming language that identifies the generic SQL value NULL.
+static int 	NUMERIC
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type NUMERIC.
+static int 	NVARCHAR
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type NVARCHAR.
+static int 	OTHER
+The constant in the Java programming language that indicates that the SQL type is database-specific and gets mapped to a Java object that can be accessed via the methods getObject and setObject.
+static int 	REAL
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type REAL.
+static int 	REF
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type REF.
+static int 	ROWID
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type ROWID
+static int 	SMALLINT
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type SMALLINT.
+static int 	SQLXML
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type XML.
+static int 	STRUCT
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type STRUCT.
+static int 	TIME
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type TIME.
+static int 	TIMESTAMP
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type TIMESTAMP.
+static int 	TINYINT
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type TINYINT.
+static int 	VARBINARY
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type VARBINARY.
+static int 	VARCHAR
+The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type VARCHAR.

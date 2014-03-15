@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<!--
+ @license
+                             QueryJ
+
+    Copyright (C) 2001-2006  Jose San Leandro Armend&aacute;riz
+                             chous@acm-sl.org
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU General Public
+    License as published by the Free Software Foundation; either
+    version 2 of the License, or any later version.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    General Public License for more details.
+
+    You should have received a copy of the GNU General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+    Thanks to ACM S.L. for distributing this library under the GPL license.
+    Contact info: jose.sanleandro@acm-sl.com
+    Postal Address: c/Playa de Lagoa, 1
+                    Urb. Valdecaba&ntilde;as
+                    Boadilla del monte
+                    28660 Madrid
+                    Spain
+
+ @header
+  
+   Filename: $RCSfile$
+
+   Author: Jose San Leandro Armendariz
+
+   Description: Maven project descriptor for QueryJ.
+
+-->
+<project>
+  <pomVersion>3</pomVersion>
+  <name>QueryJ</name>
+  <id>queryj</id>
+  <groupId>org.acmsl.queryj</groupId>
+  <currentVersion>0.7-SNAPSHOT</currentVersion>
+  <organization>
+    <name>ACM S.L.</name>
+    <url>http://www.acm-sl.org/</url>
+    <logo>http://www.acm-sl.org/images/logo.png</logo>
+  </organization>
+  <inceptionYear>2001-2005</inceptionYear>
+  <package>org.acmsl.queryj</package>
+
+  <shortDescription>
+    Error-free SQL query library.
+  </shortDescription>
+
+  <description>
+    QueryJ provides a way of ensuring error-free SQL statements,
+    maintaining SQL simplicity, and allowing statement customization
+    independent to the developer.
+  </description>
+
+  <url>http://maven.acm-sl.org/queryj/</url>
+  <logo>http://www.acm-sl.org/images/queryj.png</logo>
+  <issueTrackingUrl>http://bugzilla.acm-sl.org</issueTrackingUrl>
+  <siteAddress>bugzilla.acm-sl.org</siteAddress>
+  <siteDirectory>
+    /home/anoncvs/queryj
+  </siteDirectory>
+  <distributionDirectory>
+    /home/anoncvs/builds/queryj/
+  </distributionDirectory>
+
+  <repository>
+    <connection>
+      scm:cvs:pserver:anoncvs@cvs.acm-sl.org:/var/cvs:queryj
+    </connection>
+    <url>
+      http://cvs.acm-sl.org/viewcvs/viewcvs.cgi/queryj
+    </url>
+  </repository>
+
+  <versions>
+    <version>
+      <id>v24-1.4</id>
+      <name>v24-1.4</name>
+      <tag>br-0_6--ventura24-1_4</tag>
+    </version>
+    <version>
+      <id>0.6</id>
+      <name>0.6</name>
+      <tag>br-0_6--ventura24-1_0</tag>
+    </version>
+  </versions>
+
+  <mailingLists>
+    <mailingList>
+      <name>QueryJ User List</name>
+      <subscribe>
+        queryj-users-subscribe@dev.acm-sl.org
+      </subscribe>
+      <unsubscribe>
+        queryj-users-unsubscribe@dev.acm-sl.org
+      </unsubscribe>
+      <archive>
+        http://sourceforge.net/mailinglists/queryj-users@dev.acm-sl.org/
+      </archive>
+    </mailingList>
+    <mailingList>
+      <name>QueryJ Developer List</name>
+      <subscribe>
+        queryj-cvs-subscribe@dev.acm-sl.org
+      </subscribe>
+      <unsubscribe>
+        queryj-cvs-unsubscribe@dev.acm-sl.org
+      </unsubscribe>
+      <archive>
+        http://sourceforge.net/mailinglists/queryj-cvs@dev.acm-sl.org
+      </archive>
+    </mailingList>
+  </mailingLists>
+
+  <developers>
+
+    <developer>
+      <name>Jose San Leandro</name>
+      <id>chous</id>
+      <email>chous@acm-sl.org</email>
+      <organization>ACM-SL</organization>
+    </developer>
+  </developers>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>acmsl-commons</groupId>
+      <artifactId>acmsl-commons</artifactId>
+      <version>0.5.7b13-SNAPSHOT</version>
+      <url>http://www.acm-sl.org/commons</url>
+      <properties>
+        <required.to.compile>true</required.to.compile>
+        <required.to.run>true</required.to.run>
+        <required.to.test>true</required.to.test>
+        <required.to.build>true</required.to.build>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>undigester</groupId>
+      <artifactId>undigester</artifactId>
+      <version>0.6b3</version>
+      <url>http://maven.acm-sl.com/undigester</url>
+      <properties>
+        <required.to.compile>true</required.to.compile>
+        <required.to.run>true</required.to.run>
+        <required.to.test>true</required.to.test>
+        <required.to.build>false</required.to.build>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>antmake</groupId>
+      <artifactId>antmake</artifactId>
+      <version>0.1.9b1</version>
+      <url>http://www.acm-sl.org/antmake</url>
+      <properties>
+        <required.to.compile>false</required.to.compile>
+        <required.to.run>false</required.to.run>
+        <required.to.test>false</required.to.test>
+        <required.to.build>true</required.to.build>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>antlang</groupId>
+      <artifactId>antlang</artifactId>
+      <version>0.6b2</version>
+      <url>http://www.acm-sl.org/antlang</url>
+      <properties>
+        <required.to.compile>false</required.to.compile>
+        <required.to.run>false</required.to.run>
+        <required.to.test>false</required.to.test>
+        <required.to.build>true</required.to.build>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>qdox</groupId>
+      <artifactId>qdox</artifactId>
+      <version>1.5</version>
+      <url>http://qdox.codehaus.org</url>
+      <properties>
+        <required.to.compile>false</required.to.compile>
+        <required.to.run>false</required.to.run>
+        <required.to.test>false</required.to.test>
+        <required.to.build>true</required.to.build>
+        <injected.by>antlang</injected.by>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>commons-lang</groupId>
+      <artifactId>commons-lang</artifactId>
+      <version>2.0</version>
+      <url>http://jakarta.apache.org/commons/lang</url>
+      <properties>
+        <required.to.compile>true</required.to.compile>
+        <required.to.run>true</required.to.run>
+        <required.to.test>true</required.to.test>
+        <required.to.build>true</required.to.build>
+        <injected.by>antlang</injected.by>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>stringtemplate</groupId>
+      <artifactId>stringtemplate</artifactId>
+      <version>2.2</version>
+      <url>http://www.stringtemplate.org</url>
+      <properties>
+        <required.to.compile>true</required.to.compile>
+        <required.to.run>true</required.to.run>
+        <required.to.test>true</required.to.test>
+        <required.to.build>false</required.to.build>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>antlr</groupId>
+      <artifactId>antlr</artifactId>
+      <version>2.7.5</version>
+      <url>http://www.antlr.org</url>
+      <properties>
+        <required.to.compile>true</required.to.compile>
+        <required.to.run>true</required.to.run>
+        <required.to.test>true</required.to.test>
+        <required.to.build>false</required.to.build>
+        <injected.by>stringtemplate</injected.by>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>oracle-driver</groupId>
+      <artifactId>oracle-driver</artifactId>
+      <version>1.4</version>
+      <url>http://www.oracle.com/</url>
+      <properties>
+        <required.to.compile>false</required.to.compile>
+        <required.to.run>true</required.to.run>
+        <required.to.test>false</required.to.test>
+        <required.to.build>true</required.to.build>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>commons-logging</groupId>
+      <artifactId>commons-logging</artifactId>
+      <version>1.0.3</version>
+      <url>http://jakarta.apache.org/commons/</url>
+      <properties>
+        <required.to.compile>true</required.to.compile>
+        <required.to.run>true</required.to.run>
+        <required.to.test>true</required.to.test>
+        <required.to.build>true</required.to.build>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>ant</groupId>
+      <artifactId>ant</artifactId>
+      <version>1.6.1</version>
+      <url>http://ant.apache.org</url>
+      <properties>
+        <required.to.compile>true</required.to.compile>
+        <required.to.run>true</required.to.run>
+        <required.to.test>true</required.to.test>
+        <required.to.build>false</required.to.build>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <url>http://www.junit.org</url>
+      <properties>
+        <required.to.compile>false</required.to.compile>
+        <required.to.run>false</required.to.run>
+        <required.to.test>true</required.to.test>
+        <required.to.build>false</required.to.build>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>junitdoclet</groupId>
+      <artifactId>junitdoclet-acmsl</artifactId>
+      <version>1.0.2</version>
+      <url>http://junitdoclet.sourceforge.net</url>
+      <properties>
+        <required.to.compile>false</required.to.compile>
+        <required.to.run>false</required.to.run>
+        <required.to.test>false</required.to.test>
+        <required.to.build>true</required.to.build>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>mysql-driver</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>2.0.14-bin</version>
+      <url>http://www.mysql.com</url>
+      <properties>
+        <required.to.compile>false</required.to.compile>
+        <required.to.run>true</required.to.run>
+        <required.to.test>true</required.to.test>
+        <required.to.build>true</required.to.build>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>rmijdbc</groupId>
+      <artifactId>rmijdbc</artifactId>
+      <version>3.0.1</version>
+      <url>http://www.objectweb.org</url>
+      <properties>
+        <required.to.compile>false</required.to.compile>
+        <required.to.run>true</required.to.run>
+        <required.to.test>true</required.to.test>
+        <required.to.build>false</required.to.build>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>commons-digester</groupId>
+      <artifactId>commons-digester</artifactId>
+      <version>1.6</version>
+      <url>http://jakarta.apache.org/commons/digester</url>
+      <properties>
+        <required.to.compile>true</required.to.compile>
+        <required.to.run>true</required.to.run>
+        <required.to.test>true</required.to.test>
+        <required.to.build>false</required.to.build>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>commons-beanutils</groupId>
+      <artifactId>commons-beanutils</artifactId>
+      <version>1.7.0</version>
+      <url>http://jakarta.apache.org/commons/</url>
+      <properties>
+        <required.to.compile>false</required.to.compile>
+        <required.to.run>true</required.to.run>
+        <required.to.test>false</required.to.test>
+        <required.to.build>false</required.to.build>
+        <injected.by>commons-digester</injected.by>
+        <injected.by>acmsl-commons</injected.by>
+      </properties>
+    </dependency>
+
+    <!--dependency>
+      <groupId>commons-collections</groupId>
+      <artifactId>commons-collections</artifactId>
+      <version>3.1</version>
+      <url>http://jakarta.apache.org/commons/collections/</url>
+      <properties>
+        <required.to.compile>false</required.to.compile>
+        <required.to.run>true</required.to.run>
+        <required.to.test>true</required.to.test>
+        <required.to.build>true</required.to.build>
+        <injected.by>commons-beanutils</injected.by>
+        <injected.by>commons-digester</injected.by>
+      </properties>
+    </dependency-->
+
+    <!--dependency>
+      <groupId>jta</groupId>
+      <artifactId>jta</artifactId>
+      <version>1.0</version>
+      <url>http://java.sun.com</url>
+      <properties>
+        <required.to.compile>true</required.to.compile>
+        <required.to.run>true</required.to.run>
+        <required.to.test>true</required.to.test>
+        <required.to.build>false</required.to.build>
+      </properties>
+    </dependency-->
+
+    <dependency>
+      <groupId>oro</groupId>
+      <artifactId>oro</artifactId>
+      <version>2.0.8</version>
+      <url>http://jakarta.apache.org/oro</url>
+      <properties>
+        <required.to.compile>false</required.to.compile>
+        <required.to.run>true</required.to.run>
+        <required.to.test>true</required.to.test>
+        <required.to.build>true</required.to.build>
+        <injected.by>acmsl-commons/commons</injected.by>
+      </properties>
+    </dependency>
+
+    <!--dependency>
+      <groupId>commons-lang</groupId>
+      <artifactId>commons-lang</artifactId>
+      <version>2.0</version>
+      <url>http://jakarta.apache.org/commons</url>
+    </dependency-->
+
+    <dependency>
+      <groupId>spring</groupId>
+      <artifactId>spring-dao</artifactId>
+      <version>1.1.4</version>
+      <url>http://www.springframework.org</url>
+      <properties>
+        <required.to.compile>false</required.to.compile>
+        <required.to.run>true</required.to.run>
+        <required.to.test>true</required.to.test>
+        <required.to.build>true</required.to.build>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>spring</groupId>
+      <artifactId>spring</artifactId>
+      <version>1.1.4</version>
+      <url>http://www.springframework.org</url>
+      <properties>
+        <required.to.compile>false</required.to.compile>
+        <required.to.run>true</required.to.run>
+        <required.to.test>true</required.to.test>
+        <required.to.build>true</required.to.build>
+        <injected.by>spring/spring-dao</injected.by>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>spring</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>1.1.4</version>
+      <url>http://www.springframework.org</url>
+      <properties>
+        <required.to.compile>false</required.to.compile>
+        <required.to.run>true</required.to.run>
+        <required.to.test>true</required.to.test>
+        <required.to.build>true</required.to.build>
+        <injected.by>spring/spring-dao</injected.by>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>commons-cli</groupId>
+      <artifactId>commons-cli</artifactId>
+      <version>1.0</version>
+      <url>http://jakarta.apache.org/commons/cli</url>
+      <properties>
+        <required.to.compile>true</required.to.compile>
+        <required.to.run>true</required.to.run>
+        <required.to.test>true</required.to.test>
+        <required.to.build>false</required.to.build>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>antmake</groupId>
+      <artifactId>antmake</artifactId>
+      <version>0.1.9</version>
+      <url>http://www.acm-sl.org/antmake</url>
+      <properties>
+        <required.to.compile>false</required.to.compile>
+        <required.to.run>false</required.to.run>
+        <required.to.test>false</required.to.test>
+        <required.to.build>true</required.to.build>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>jrat</groupId>
+      <artifactId>jrat</artifactId>
+      <version>0.8</version>
+      <url>http://jrat.sourceforge.net</url>
+      <properties>
+        <required.to.compile>false</required.to.compile>
+        <required.to.run>false</required.to.run>
+        <required.to.test>false</required.to.test>
+        <required.to.build>true</required.to.build>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>bcel</groupId>
+      <artifactId>bcel</artifactId>
+      <version>5.1</version>
+      <url>http://jakarta.apache.org/bcel</url>
+      <properties>
+        <required.to.compile>false</required.to.compile>
+        <required.to.run>false</required.to.run>
+        <required.to.test>false</required.to.test>
+        <required.to.build>true</required.to.build>
+        <injected.by>jrat/jrat</injected.by>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>umlgraph</groupId>
+      <artifactId>umlgraph</artifactId>
+      <version>4.4</version>
+      <url>http://www.spinellis.gr/sw/umlgraph</url>
+      <properties>
+        <required.to.compile>false</required.to.compile>
+        <required.to.run>false</required.to.run>
+        <required.to.test>false</required.to.test>
+        <required.to.build>true</required.to.build>
+      </properties>
+    </dependency>
+
+    <!-- See ticket #14 -->
+    <dependency>
+      <groupId>xerces</groupId>
+      <artifactId>xerces</artifactId>
+      <version>2.4.0</version>
+      <url>http://xml.apache.org</url>
+      <properties>
+        <required.to.compile>false</required.to.compile>
+        <required.to.run>true</required.to.run>
+        <required.to.test>false</required.to.test>
+        <required.to.build>false</required.to.build>
+      </properties>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+
+    <nagEmailAddress>
+      chous@acm-sl.org
+    </nagEmailAddress>
+
+    <sourceDirectory>../../java/main</sourceDirectory>
+
+    <unitTestSourceDirectory>../../java/test</unitTestSourceDirectory>
+    <integrationUnitTestSourceDirectory/>
+
+    <aspectSourceDirectory/>
+
+    <!-- Unit test cases -->
+    <unitTest>
+      <includes>
+        <include>**/*Test.java</include>
+      </includes>
+      <excludes>
+        <exclude>**/RepositoryTest.java</exclude>
+      </excludes>
+    </unitTest>
+              
+    <!-- J A R  R E S O U R C E S -->
+    <!-- Resources that are packaged up inside the JAR file -->
+    <resources>
+      <includes>
+        <include>*.xsd</include>
+        <include>log4j.properties</include>
+      </includes>
+    </resources>
+
+    <!-- Integration unit test cases -->
+    <integrationUnitTest/>
+
+    <jars/>
+
+  </build>
+
+  <reports>
+    <report>maven-changelog-plugin</report>
+    <report>maven-changes-plugin</report>
+    <!-- We're getting out-of-memory
+    <report>maven-checkstyle-plugin</report>
+    -->
+    <!--
+      PMD makes the site generation crash if no errors are
+      found. It's better to do it manually.
+    <report>maven-pmd-plugin</report>
+    -->
+    <report>maven-developer-activity-plugin</report>
+    <report>maven-file-activity-plugin</report>
+    <report>maven-javadoc-plugin</report>
+    <report>maven-jdepend-plugin</report>
+    <report>maven-junit-report-plugin</report>
+    <report>maven-jxr-plugin</report>
+    <report>maven-license-plugin</report>
+    <!-- We're getting out-of-memory
+    <report>maven-linkcheck-plugin</report>
+    -->
+    <report>maven-tasklist-plugin</report>
+    <!--
+      JellyDoc makes the site generation crash if no errors are
+      found. It's better to do it manually.
+    <report>maven-jellydoc-plugin</report>
+    -->
+  </reports>
+</project>
