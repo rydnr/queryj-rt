@@ -94,6 +94,16 @@ public class BindQueryParametersHandler
     extends AbstractQueryJCommandHandler
 {
     /**
+     * String literal: "Could not bind parameter via "
+     */
+    protected static final String COULD_NOT_BIND_PARAMETER_VIA = "Could not bind parameter via ";
+
+    /**
+     * String literal: "PreparedStatement.set"
+     */
+    protected static final String PREPARED_STATEMENT_SET = "PreparedStatement.set";
+
+    /**
      * Asks the handler to process the command. The idea is that each
      * command handler decides if such command is suitable of being
      * processed, and if so perform the concrete actions the command
