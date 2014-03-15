@@ -125,10 +125,7 @@ public class BindQueryParametersHandler
             }
             catch  (@NotNull final SQLException sqlException)
             {
-                if (t_ExceptionToWrap == null)
-                {
-                    t_ExceptionToWrap = sqlException;
-                }
+                t_ExceptionToWrap = sqlException;
             }
 
             if  (t_PreparedStatement != null)
