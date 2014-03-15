@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Binds the query
  *
  * Date: 2014/03/15
  * Time: 08:06
