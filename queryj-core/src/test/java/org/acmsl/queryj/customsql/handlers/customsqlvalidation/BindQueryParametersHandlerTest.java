@@ -94,7 +94,6 @@ public class BindQueryParametersHandlerTest
         @NotNull final CustomSqlProvider t_CustomSqlProvider = PowerMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final SqlParameterDAO t_SqlParameterDAO = PowerMock.createNiceMock(SqlParameterDAO.class);
         @NotNull final MetadataManager t_MetadataManager = PowerMock.createNiceMock(MetadataManager.class);
-        @NotNull final TypeManager t_TypeManager = new JdbcTypeManager();
         @NotNull final Connection t_Connection = PowerMock.createNiceMock(Connection.class);
         @NotNull final PreparedStatement t_Statement = PowerMock.createNiceMock(PreparedStatement.class);
         @NotNull final ResultSet t_ResultSet = PowerMock.createNiceMock(ResultSet.class);
