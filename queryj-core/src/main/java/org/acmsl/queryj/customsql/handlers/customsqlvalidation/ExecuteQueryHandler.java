@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Executes the current PreparedStatement.
  *
  * Date: 2014/03/15
  * Time: 11:33
