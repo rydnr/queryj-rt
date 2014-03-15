@@ -107,7 +107,7 @@ public class BindQueryParametersHandlerTest
 
         EasyMock.expect(t_CustomSqlProvider.getSqlParameterDAO()).andReturn(t_SqlParameterDAO);
         EasyMock.expect(t_SqlParameterDAO.findByPrimaryKey("" + parameter.getName())).andReturn(parameter);
-        EasyMock.expect(t_Connection.prepareStatement())
+        EasyMock.expect(t_Connection.prepareStatement(sql.getValue()))
         new QueryJCommandWrapper<CustomSqlProvider>(parameters).setSetting(
             CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, t_CustomSqlProvider);
         new QueryJCommandWrapper<Connection>(parameters).setSetting(
