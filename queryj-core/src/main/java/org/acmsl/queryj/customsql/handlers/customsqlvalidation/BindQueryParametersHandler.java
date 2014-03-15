@@ -154,12 +154,12 @@ public class BindQueryParametersHandler
         @NotNull final Connection connection = retrieveConnection(command);
         @NotNull final TypeManager typeManager = new JdbcTypeManager();
 
-                    bindParameters(
-                        sql,
-                        t_PreparedStatement,
-                        customSqlProvider,
-                        typeManager,
-                        ConversionUtils.getInstance());
+        bindParameters(
+            sql,
+            t_PreparedStatement,
+            customSqlProvider,
+            typeManager,
+            ConversionUtils.getInstance());
                 }
                 catch  (@NotNull final QueryJBuildException buildException)
                 {
