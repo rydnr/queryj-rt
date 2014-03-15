@@ -1,6 +1,6 @@
 * 2014/03/15
 ** TODO #454 Refactor CustomSqlValidationHandler into its own chain: 6 -> X
-** TODO Setup RT for QueryJ again: 1 ->
+** DONE Setup RT for QueryJ again: 1 -> X 
 
 * Notes:
 ** TODO toString() in PropertyElement does not include the type
