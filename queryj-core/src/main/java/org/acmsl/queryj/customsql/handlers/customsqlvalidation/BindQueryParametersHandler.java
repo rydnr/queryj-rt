@@ -138,7 +138,9 @@ public class BindQueryParametersHandler
         @NotNull final CustomSqlProvider provider = retrieveCustomSqlProvider(command);
         @NotNull final Connection connection = retrieveConnection(command);
         @NotNull final TypeManager typeManager = new JdbcTypeManager();
-        validate(sql);
+
+        validate(sql, provider, connection, typeManager);
+
         return false;
     }
 
