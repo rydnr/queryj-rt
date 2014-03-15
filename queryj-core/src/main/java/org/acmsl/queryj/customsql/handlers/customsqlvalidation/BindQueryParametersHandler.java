@@ -93,7 +93,6 @@ public class BindQueryParametersHandler
      * @param sql such element.
      * @param customSqlProvider the custom sql provider.
      * @param connection the connection.
-     * @param metadataManager the metadata manager.
      * @param typeManager the type manager.
      * @throws QueryJBuildException if the sql is not valid.
      */
