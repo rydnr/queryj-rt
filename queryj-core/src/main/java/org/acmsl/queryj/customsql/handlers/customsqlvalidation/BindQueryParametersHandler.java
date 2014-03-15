@@ -53,7 +53,6 @@ import org.acmsl.queryj.customsql.Parameter;
 import org.acmsl.queryj.customsql.ParameterRef;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandler;
-import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.SqlParameterDAO;
 import org.acmsl.queryj.metadata.TypeManager;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
