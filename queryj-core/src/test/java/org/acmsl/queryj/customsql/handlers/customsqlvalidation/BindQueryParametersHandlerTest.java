@@ -71,6 +71,7 @@ import org.powermock.api.easymock.PowerMock;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 /**
  *
@@ -83,7 +84,7 @@ public class BindQueryParametersHandlerTest
 {
     @Test
     public void binds_the_parameters_to_the_query()
-        throws QueryJBuildException
+        throws QueryJBuildException, SQLException
     {
         @NotNull final BindQueryParametersHandler instance = new BindQueryParametersHandler();
 
