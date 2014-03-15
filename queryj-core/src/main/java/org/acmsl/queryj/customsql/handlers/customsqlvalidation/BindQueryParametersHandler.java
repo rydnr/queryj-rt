@@ -780,4 +780,21 @@ public class BindQueryParametersHandler
 
         return result.toString();
     }
+
+    /**
+     * Retrieves the method to call.
+     * @param instanceClass the instance class.
+     * @param methodName the method name.
+     * @return the <code>Method</code> instance.
+     * @throws NoSuchMethodException if the desired method is not available.
+     */
+    @NotNull
+    protected Method retrieveMethod(
+        @NotNull final Class<?> instanceClass,
+        @NotNull final String methodName,
+        @NotNull final Class[] parameterClasses)
+        throws  NoSuchMethodException
+    {
+        return instanceClass.getDeclaredMethod(methodName, parameterClasses);
+    }
 }
