@@ -239,7 +239,7 @@ public class BindQueryParametersHandler
                     t_Parameter,
                     t_iParameterIndex,
                     sql,
-                    statement,
+                    preparedStatement,
                     typeManager,
                     conversionUtils);
 
