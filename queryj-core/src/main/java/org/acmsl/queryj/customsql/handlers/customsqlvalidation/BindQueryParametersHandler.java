@@ -137,7 +137,7 @@ public class BindQueryParametersHandler
 
         @NotNull final Sql<String> sql = new RetrieveQueryHandler().retrieveCurrentSql(command);
 
-
+        try
         return result;
     }
 
