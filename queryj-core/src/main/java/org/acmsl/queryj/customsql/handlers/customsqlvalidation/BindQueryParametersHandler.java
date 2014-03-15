@@ -60,7 +60,7 @@ import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
 import org.apache.commons.logging.Log;
 
 /*
- * Importing
+ * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
