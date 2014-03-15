@@ -159,12 +159,12 @@ public class BindQueryParametersHandler
 
         try
         {
-        bindParameters(
-            sql,
-            t_PreparedStatement,
-            customSqlProvider,
-            typeManager,
-            ConversionUtils.getInstance());
+            bindParameters(
+                sql,
+                t_PreparedStatement,
+                customSqlProvider,
+                typeManager,
+                ConversionUtils.getInstance());
                 }
                 catch  (@NotNull final QueryJBuildException buildException)
                 {
