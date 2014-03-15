@@ -43,6 +43,8 @@ import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
+import org.acmsl.queryj.customsql.Parameter;
+import org.acmsl.queryj.customsql.ParameterElement;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.Sql.Cardinality;
 import org.acmsl.queryj.customsql.SqlElement;
@@ -88,6 +90,8 @@ public class BindQueryParametersHandlerTest
             new SqlElement<>(
                 "id", "dao", "name", "String", Cardinality.SINGLE, "all", false /* validation */, false, "description");
 
+        @NotNull final Parameter<String> parameter =
+            new ParameterElement()
         new QueryJCommandWrapper<Sql<String>>(parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, sql);
 
         // Add parameters to the command
