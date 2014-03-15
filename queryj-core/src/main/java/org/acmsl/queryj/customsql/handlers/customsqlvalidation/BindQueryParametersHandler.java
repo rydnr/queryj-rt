@@ -47,7 +47,6 @@ import org.acmsl.commons.utils.StringUtils;
  */
 import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.QueryJCommand;
-import org.acmsl.queryj.api.exceptions.InvalidCustomSqlException;
 import org.acmsl.queryj.api.exceptions.InvalidCustomSqlParameterException;
 import org.acmsl.queryj.api.exceptions.NoValidationValueForCustomSqlDateParameterException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
