@@ -169,6 +169,7 @@ public class BindQueryParametersHandler
             {
                 throw new InvalidCustomSqlException(sql, t_ExceptionToWrap);
             }
+            if (t_ExceptionToThrow != null)
         }
         else
         {
