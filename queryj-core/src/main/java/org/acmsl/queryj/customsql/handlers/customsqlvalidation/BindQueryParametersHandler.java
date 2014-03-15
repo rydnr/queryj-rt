@@ -740,4 +740,34 @@ public class BindQueryParametersHandler
     {
         return getAccessorMethod("get", type, StringUtils.getInstance());
     }
+
+    /**
+     * Retrieves the accessor method name.
+     * @param prefix the prefix (set/get).
+     * @param type the data type.
+     * @param stringUtils the {@link StringUtils} instance.
+     * @return the associated getter method.
+     */
+    protected String getAccessorMethod(
+        @NotNull final String prefix,
+        @NotNull final Class<?> type,
+        @NotNull final StringUtils stringUtils)
+    {
+        @NotNull final StringBuilder result = new StringBuilder(prefix);
+
+        @NotNull final String t_strSimpleName;
+
+        if (type.equals(Integer.class))
+        {
+            t_strSimpleName = "Int";
+        }
+        else
+        {
+            t_strSimpleName = stringUtils.capitalize(type.getSimpleName());
+        }
+
+        result.append(stringUtils.capitalize(t_strSimpleName));
+
+        return result.toString();
+    }
 }
