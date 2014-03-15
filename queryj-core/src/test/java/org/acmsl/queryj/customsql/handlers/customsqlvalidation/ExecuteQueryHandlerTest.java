@@ -72,7 +72,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
- *
+ * Tests for {@link ExecuteQueryHandler}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/15 11:28
