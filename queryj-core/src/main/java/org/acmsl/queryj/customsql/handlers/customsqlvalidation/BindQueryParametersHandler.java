@@ -55,6 +55,7 @@ import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandler;
 import org.acmsl.queryj.metadata.SqlParameterDAO;
 import org.acmsl.queryj.metadata.TypeManager;
+import org.acmsl.queryj.metadata.engines.JdbcTypeManager;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
 import org.apache.commons.logging.Log;
 import org.jetbrains.annotations.NotNull;
@@ -136,7 +137,7 @@ public class BindQueryParametersHandler
         @NotNull final Sql<String> sql = new RetrieveQueryHandler().retrieveCurrentSql(command);
         @NotNull final CustomSqlProvider provider = retrieveCustomSqlProvider(command);
         @NotNull final Connection connection = retrieveConnection(command);
-        @NotNull final TypeManager typeManager = retrieveMetadataManager(command);
+        @NotNull final TypeManager typeManager = vew JdbcTypeManager();
         validate(sql);
         return false;
     }
