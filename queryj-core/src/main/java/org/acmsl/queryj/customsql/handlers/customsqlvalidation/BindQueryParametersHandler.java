@@ -750,17 +750,6 @@ public class BindQueryParametersHandler
     }
 
     /**
-     * Retrieves the getter method name.
-     * @param type the data type.
-     * @return the associated getter method.
-     */
-    @NotNull
-    protected String getGetterMethod(@NotNull final Class<?> type)
-    {
-        return getAccessorMethod("get", type, StringUtils.getInstance());
-    }
-
-    /**
      * Retrieves the accessor method name.
      * @param prefix the prefix (set/get).
      * @param type the data type.
