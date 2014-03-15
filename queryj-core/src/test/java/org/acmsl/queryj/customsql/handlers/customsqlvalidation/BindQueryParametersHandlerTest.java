@@ -98,8 +98,6 @@ public class BindQueryParametersHandlerTest
         @NotNull final PreparedStatement t_Statement = PowerMock.createNiceMock(PreparedStatement.class);
         @NotNull final ResultSet t_ResultSet = PowerMock.createNiceMock(ResultSet.class);
         EasyMock.expect(t_CustomSqlProvider.getSqlParameterDAO()).andReturn(t_SqlParameterDAO);
-        EasyMock.expect(t_Connection.getAutoCommit()).andReturn(true);
-        EasyMock.expect(t_Connection.prepareStatement(sql.getValue())).andReturn(t_Statement);
         EasyMock.expect(t_SqlParameterDAO.findByPrimaryKey("" + parameter.getName())).andReturn(parameter);
 
         EasyMock.replay(t_CustomSqlProvider);
