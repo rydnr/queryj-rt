@@ -38,15 +38,28 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.commons.logging.UniqueLogFactory;
+import org.acmsl.commons.utils.ConversionUtils;
 import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.api.exceptions.InvalidCustomSqlException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.customsql.CustomSqlProvider;
+import org.acmsl.queryj.customsql.Sql;
+import org.acmsl.queryj.metadata.MetadataManager;
+import org.acmsl.queryj.metadata.TypeManager;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
+import org.apache.commons.logging.Log;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 /**
  *
@@ -72,5 +85,140 @@ public class BindQueryParametersHandler
     public boolean handle(@NotNull final QueryJCommand command) throws QueryJBuildException
     {
         return true;
+    }
+
+    /**
+     * Validates given sql element.
+     * @param sql such element.
+     * @param customSqlProvider the custom sql provider.
+     * @param connection the connection.
+     * @param metadataManager the metadata manager.
+     * @param typeManager the type manager.
+     * @throws QueryJBuildException if the sql is not valid.
+     */
+    public void validate(
+        @NotNull final Sql<String> sql,
+        @NotNull final CustomSqlProvider customSqlProvider,
+        @NotNull final Connection connection,
+        @NotNull final MetadataManager metadataManager,
+        @NotNull final TypeManager typeManager)
+        throws  QueryJBuildException
+    {
+        @Nullable final String t_strValue = sql.getValue();
+
+        @Nullable final Log t_Log = UniqueLogFactory.getLog(CustomSqlValidationHandler.class);
+
+        if (t_strValue != null)
+        {
+            @NotNull final String t_strSql = t_strValue.trim();
+
+            @Nullable SQLException t_ExceptionToWrap = null;
+
+            @Nullable QueryJBuildException t_ExceptionToThrow = null;
+
+            @Nullable PreparedStatement t_PreparedStatement = null;
+
+            boolean t_bLastAutoCommit = false;
+            try
+            {
+                t_bLastAutoCommit = setupConnection(connection);
+            }
+            catch  (@NotNull final SQLException sqlException)
+            {
+                t_ExceptionToWrap = sqlException;
+            }
+
+            try
+            {
+                t_PreparedStatement = connection.prepareStatement(t_strSql);
+            }
+            catch  (@NotNull final SQLException sqlException)
+            {
+                if (t_ExceptionToWrap == null)
+                {
+                    t_ExceptionToWrap = sqlException;
+                }
+            }
+
+            if  (t_PreparedStatement != null)
+            {
+                try
+                {
+                    bindParameters(
+                        sql,
+                        t_PreparedStatement,
+                        customSqlProvider,
+                        typeManager,
+                        ConversionUtils.getInstance());
+
+                    validateStatement(sql, t_PreparedStatement, customSqlProvider, metadataManager, typeManager);
+                }
+                catch  (@NotNull final SQLException sqlException)
+                {
+                    if (t_ExceptionToWrap == null)
+                    {
+                        t_ExceptionToWrap = sqlException;
+                    }
+                }
+                catch  (@NotNull final QueryJBuildException buildException)
+                {
+                    t_ExceptionToThrow = buildException;
+                }
+
+                try
+                {
+                    t_PreparedStatement.close();
+                }
+                catch  (@NotNull final SQLException anotherSqlException)
+                {
+                    if  (t_Log != null)
+                    {
+                        t_Log.warn(
+                            "Cannot close prepared statement.",
+                            anotherSqlException);
+                    }
+
+                    if (t_ExceptionToWrap == null)
+                    {
+                        t_ExceptionToWrap = anotherSqlException;
+                    }
+                }
+
+                try
+                {
+                    tearDownConnection(connection, t_bLastAutoCommit);
+                }
+                catch  (@NotNull final SQLException anotherSqlException)
+                {
+                    if  (t_Log != null)
+                    {
+                        t_Log.warn(
+                            "Cannot restore the connection.",
+                            anotherSqlException);
+                    }
+
+                    if (t_ExceptionToWrap == null)
+                    {
+                        t_ExceptionToWrap = anotherSqlException;
+                    }
+                }
+            }
+
+            if  (t_ExceptionToWrap != null)
+            {
+                throw new InvalidCustomSqlException(sql, t_ExceptionToWrap);
+            }
+            else if  (t_ExceptionToThrow != null)
+            {
+                throw t_ExceptionToThrow;
+            }
+        }
+        else
+        {
+            if (t_Log != null)
+            {
+                t_Log.warn("Non-select query with validate=\"true\": " + sql.getId());
+            }
+        }
     }
 }
