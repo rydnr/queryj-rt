@@ -54,6 +54,10 @@ import org.acmsl.queryj.metadata.SqlParameterDAO;
 import org.acmsl.queryj.tools.handlers.JdbcConnectionOpeningHandler;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.easymock.EasyMock;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
