@@ -154,26 +154,6 @@ public class BindQueryParametersHandler
         @NotNull final Connection connection = retrieveConnection(command);
         @NotNull final TypeManager typeManager = new JdbcTypeManager();
 
-        validate(sql, provider, connection, typeManager);
-
-        return false;
-    }
-
-    /**
-     * Validates given sql element.
-     * @param sql such element.
-     * @param customSqlProvider the custom sql provider.
-     * @param connection the connection.
-     * @param typeManager the type manager.
-     * @throws QueryJBuildException if the sql is not valid.
-     */
-    public void validate(
-        @NotNull final Sql<String> sql,
-        @NotNull final CustomSqlProvider customSqlProvider,
-        @NotNull final Connection connection,
-        @NotNull final TypeManager typeManager)
-        throws  QueryJBuildException
-    {
                     bindParameters(
                         sql,
                         t_PreparedStatement,
