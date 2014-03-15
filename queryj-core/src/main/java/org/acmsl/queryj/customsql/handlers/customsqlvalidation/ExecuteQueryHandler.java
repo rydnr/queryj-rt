@@ -45,6 +45,10 @@ import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.exceptions.ResultSetNotAvailableForValidationException;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
