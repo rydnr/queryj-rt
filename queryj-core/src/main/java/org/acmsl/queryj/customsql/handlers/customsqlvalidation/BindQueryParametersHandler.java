@@ -84,7 +84,7 @@ import java.util.List;
 import java.util.Locale;
 
 /**
- *
+ * Binds the query parameters to the PreparedStatement.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/15 08:06
