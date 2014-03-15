@@ -73,6 +73,9 @@ import org.junit.runners.JUnit4;
 import org.powermock.api.easymock.PowerMock;
 import org.easymock.EasyMock;
 
+/*
+ * Importing JDK classes.
+ */
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
