@@ -204,8 +204,7 @@ public class BindQueryParametersHandler
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final TypeManager typeManager,
         @NotNull final ConversionUtils conversionUtils)
-    {
-        throws  QueryJBuildException
+    throws  QueryJBuildException
         {
             @Nullable QueryJBuildException exceptionToThrow = null;
 
