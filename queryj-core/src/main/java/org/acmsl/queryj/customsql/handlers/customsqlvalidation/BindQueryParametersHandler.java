@@ -184,10 +184,10 @@ public class BindQueryParametersHandler
     }
 
     /**
-     * Binds the query parameters to the
-     * @param sql
-     * @param preparedStatement
-     * @param customSqlProvider
+     * Binds the query parameters to the {@link PreparedStatement}.
+     * @param sql the query.
+     * @param preparedStatement the PreparedStatement.
+     * @param customSqlProvider the {@link CustomSqlProvider}
      * @param typeManager
      * @param conversionUtils
      */
