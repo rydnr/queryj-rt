@@ -157,6 +157,7 @@ public class BindQueryParametersHandler
         @NotNull final PreparedStatement t_PreparedStatement =
             new SetupPreparedStatementHandler().getPreparedStatement(command);
 
+        try
         bindParameters(
             sql,
             t_PreparedStatement,
