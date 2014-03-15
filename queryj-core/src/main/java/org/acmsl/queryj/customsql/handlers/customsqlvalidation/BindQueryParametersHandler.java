@@ -115,8 +115,6 @@ public class BindQueryParametersHandler
 
             @Nullable SQLException t_ExceptionToWrap = null;
 
-            @Nullable QueryJBuildException t_ExceptionToThrow = null;
-
             @Nullable PreparedStatement t_PreparedStatement = null;
 
             try
