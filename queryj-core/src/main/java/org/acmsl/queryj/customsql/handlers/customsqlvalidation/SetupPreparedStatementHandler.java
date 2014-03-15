@@ -146,7 +146,7 @@ public class SetupPreparedStatementHandler
 
         if (result == null)
         {
-            throw new PreparedStatementNotAvailableFor
+            throw new PreparedStatementNotAvailableForValidation
         }
     }
 
