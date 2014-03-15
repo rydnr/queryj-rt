@@ -175,10 +175,6 @@ public class BindQueryParametersHandler
             {
                 throw new InvalidCustomSqlException(sql, t_ExceptionToWrap);
             }
-            else if  (t_ExceptionToThrow != null)
-            {
-                throw t_ExceptionToThrow;
-            }
         }
         else
         {
