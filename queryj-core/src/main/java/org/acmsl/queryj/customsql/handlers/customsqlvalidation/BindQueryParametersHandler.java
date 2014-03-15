@@ -111,6 +111,16 @@ public class BindQueryParametersHandler
         (Class<String>[]) new Class<?>[] { String.class };
 
     /**
+     * The date format.
+     */
+    public final String DATE_FORMAT = "MM/DD/yyyy";
+
+    /**
+     * The date format, in english notation.
+     */
+    public final String DATE_FORMAT_EN = "yyyy/DD/MM/DD";
+
+    /**
      * Asks the handler to process the command. The idea is that each
      * command handler decides if such command is suitable of being
      * processed, and if so perform the concrete actions the command
