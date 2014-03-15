@@ -52,6 +52,10 @@ import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.customsql.handlers.CustomSqlProviderRetrievalHandler;
 import org.acmsl.queryj.metadata.SqlParameterDAO;
 import org.acmsl.queryj.tools.handlers.JdbcConnectionOpeningHandler;
+
+/*
+ * Importing Apache Commons Configuration classes.
+ */
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.easymock.EasyMock;
 
