@@ -100,8 +100,6 @@ public class BindQueryParametersHandlerTest
 
         sql.setValue("select sysdate from dual where ? = 'A'");
 
-        @NotNull final List<ParameterRef> t_lParameterRefs = new ArrayList<>(1);
-        t_lParameterRefs.add(new ParameterRefElement("id"));
         sql.add(new ParameterRefElement("id"));
         @NotNull final Parameter parameter =
             new ParameterElement("id", 1, "name", "String", "1");
