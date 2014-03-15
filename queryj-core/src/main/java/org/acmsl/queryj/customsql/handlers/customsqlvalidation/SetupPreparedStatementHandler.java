@@ -49,6 +49,7 @@ import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.exceptions.InvalidCustomSqlException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.Sql;
+import org.acmsl.queryj.customsql.exceptions.PreparedStatementNotAvailableForValidationException;
 import org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandler;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
 
