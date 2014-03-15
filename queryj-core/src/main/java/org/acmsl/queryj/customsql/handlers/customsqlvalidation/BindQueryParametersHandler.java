@@ -187,9 +187,9 @@ public class BindQueryParametersHandler
      * Binds the query parameters to the {@link PreparedStatement}.
      * @param sql the query.
      * @param preparedStatement the PreparedStatement.
-     * @param customSqlProvider the {@link CustomSqlProvider}
-     * @param typeManager
-     * @param conversionUtils
+     * @param customSqlProvider the {@link CustomSqlProvider}.
+     * @param typeManager the {@link TypeManager}.
+     * @param conversionUtils the {@link ConversionUtils}.
      */
     protected void bindParameters(
         @NotNull final Sql<String> sql,
