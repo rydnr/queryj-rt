@@ -146,7 +146,7 @@ public class SetupPreparedStatementHandler
 
         if (result == null)
         {
-            throw new
+            throw new SQL_VALIDATION_
         }
     }
 
