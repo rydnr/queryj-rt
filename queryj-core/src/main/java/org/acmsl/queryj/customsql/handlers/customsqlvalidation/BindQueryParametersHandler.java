@@ -130,7 +130,8 @@ public class BindQueryParametersHandler
      *         or maybe because it's not desirable to continue the chain.
      */
     @Override
-    public boolean handle(@NotNull final QueryJCommand command) throws QueryJBuildException
+    public boolean handle(@NotNull final QueryJCommand command)
+        throws QueryJBuildException
     {
         final boolean result;
 
