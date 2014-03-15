@@ -150,8 +150,7 @@ public class BindQueryParametersHandler
         throws QueryJBuildException
     {
         @NotNull final Sql<String> sql = new RetrieveQueryHandler().retrieveCurrentSql(command);
-        @NotNull final CustomSqlProvider provider = retrieveCustomSqlProvider(command);
-        @NotNull final Connection connection = retrieveConnection(command);
+        @NotNull final CustomSqlProvider customSqlProvider = retrieveCustomSqlProvider(command);
         @NotNull final TypeManager typeManager = new JdbcTypeManager();
 
         @NotNull final PreparedStatement t_PreparedStatement =
