@@ -104,6 +104,6 @@ public class QueryValidationEnabledHandlerTest
 
         new QueryJCommandWrapper<Sql<String>>(parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, sql);
 
-        Assert.assertTrue(instance.handle(parameters));
+        Assert.assertFalse(instance.handle(parameters));
     }
 }
