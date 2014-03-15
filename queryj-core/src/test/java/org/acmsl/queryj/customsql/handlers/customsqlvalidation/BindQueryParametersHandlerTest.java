@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for BindQueryParametersHandler.
  *
  * Date: 2014/03/15
  * Time: 08:03
