@@ -484,7 +484,7 @@ public class RetrieveResultPropertiesHandler
      * Retrieves the properties for current SQL.
      * @param command the command.
      * @return the properties.
-     * @throws PropertiesNotAvailableForValidationException if
+     * @throws PropertiesNotAvailableForValidationException if this method is called before the
      */
     @NotNull
     public List<Property<String>> retrieveCurrentProperties(final QueryJCommand command)
