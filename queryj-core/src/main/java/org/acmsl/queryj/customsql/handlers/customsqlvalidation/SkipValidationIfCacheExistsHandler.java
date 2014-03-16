@@ -92,7 +92,7 @@ public class SkipValidationIfCacheExistsHandler
 
         @NotNull final File outputFolder = handler.retrieveOutputFolderForSqlHashes(command);
 
-        @NotNull final Charset charset = retrieveCharset(command);
+        @NotNull final CustomSqlProvider customSqlProvider = retrieveCustomSqlProvider(command);
 
         @NotNull final Charset charset = retrieveCharset(command);
 
