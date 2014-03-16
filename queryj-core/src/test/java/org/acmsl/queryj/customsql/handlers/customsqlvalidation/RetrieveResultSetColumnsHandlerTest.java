@@ -129,7 +129,8 @@ public class RetrieveResultSetColumnsHandlerTest
         EasyMock.replay(t_ResultSet);
         EasyMock.replay(t_ResultSetMetaData);
 
-        new QueryJCommandWrapper<ResultSet>(t_Parameters).setSetting(ExecuteQueryHandler.CURRENT_RESULTSET, t_ResultSet);
+        new QueryJCommandWrapper<ResultSet>(t_Parameters).setSetting(
+            ExecuteQueryHandler.CURRENT_RESULTSET, t_ResultSet);
         Assert.assertFalse(instance.handle(t_Parameters));
 
         EasyMock.verify(t_ResultSet);
