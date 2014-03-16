@@ -67,7 +67,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Retrieves the columns (as a list of {@link Property properties} from
+ * Retrieves the columns (as a list of {@link Property properties} from the {@link ResultSet}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/16 11:11
