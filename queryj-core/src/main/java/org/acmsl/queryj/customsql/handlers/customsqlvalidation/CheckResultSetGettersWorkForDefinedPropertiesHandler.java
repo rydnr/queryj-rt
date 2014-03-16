@@ -248,7 +248,8 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
         {
             outcomes = new HashMap<Sql, Boolean>();
             wrapper.setSetting(VALIDATION, outcomes);
-
         }
+
+        if (outcomes.containsKey())
     }
 }
