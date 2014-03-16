@@ -47,8 +47,6 @@ import org.acmsl.queryj.customsql.PropertyElement;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.Sql.Cardinality;
 import org.acmsl.queryj.customsql.SqlElement;
-import org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandler;
-import org.acmsl.queryj.tools.handlers.QueryJCommandHandler;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.apache.commons.logging.Log;
 import org.easymock.EasyMock;
