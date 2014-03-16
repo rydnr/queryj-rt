@@ -86,6 +86,8 @@ public class ReportMissingPropertiesHandlerTest
     public void detects_missing_properties()
         throws QueryJBuildException
     {
+        @NotNull final Log t_Log = EasyMock.createNiceMock(Log.class);
+
         @NotNull final ReportMissingPropertiesHandler instance =
             new ReportMissingPropertiesHandler()
             {
