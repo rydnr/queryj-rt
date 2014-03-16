@@ -91,7 +91,7 @@ public class CustomSqlValidationChainTest
         Assert.assertTrue(contains(BindQueryParametersHandler.class, t_Chain));
 
         Assert.assertTrue(contains(CacheValidationOutcomeHandler.class, t_Chain));
-        Assert.assertTrue(t_Chain.contains(CheckResultSetGettersWorkForDefinedPropertiesHandler.class));
+        Assert.assertTrue(t_Chain.contains(CheckResultSetGettersWorkForDefinedPropertiesHandler.class, t_Chain));
         Assert.assertTrue(t_Chain.contains(ExecuteQueryHandler.class));
         Assert.assertTrue(t_Chain.contains(GlobalValidationEnabledHandler.class));
         Assert.assertTrue(t_Chain.contains(QueryValidationEnabledHandler.class));
