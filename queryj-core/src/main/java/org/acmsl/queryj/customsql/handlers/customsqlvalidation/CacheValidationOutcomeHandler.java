@@ -71,7 +71,8 @@ public class CacheValidationOutcomeHandler
     @Override
     public boolean handle(@NotNull final QueryJCommand command) throws QueryJBuildException
     {
-        final boolean
+        final boolean t_bResultSetGettersCheck =
+            new
         return true;
     }
 }
