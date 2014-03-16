@@ -103,8 +103,6 @@ public class CacheValidationOutcomeHandler
 
         @NotNull final CustomSqlProvider customSqlProvider = retrieveCustomSqlProvider(command);
 
-        @NotNull final Sql<String> queries = retrieveSqlItems(customSqlProvider.getSqlDAO());
-
         @NotNull final Charset charset = retrieveCharset(command);
 
     }
