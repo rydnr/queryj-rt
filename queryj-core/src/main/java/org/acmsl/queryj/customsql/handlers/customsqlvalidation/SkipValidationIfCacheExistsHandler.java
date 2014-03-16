@@ -103,7 +103,7 @@ public class SkipValidationIfCacheExistsHandler
     {
         @NotNull final String path = hashPath(outputFolder.getAbsolutePath(), hash);
 
-        if (!existsAlready(path))
+        return if (!existsAlready(path))
         {
             new File(outputFolder.getAbsolutePath()).mkdirs();
             FileUtils.getInstance().writeFileIfPossible(path, "", charset);
