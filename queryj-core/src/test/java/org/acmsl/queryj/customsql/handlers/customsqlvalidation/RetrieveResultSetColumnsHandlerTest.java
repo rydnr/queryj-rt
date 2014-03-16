@@ -41,6 +41,7 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
+import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.ParameterRefElement;
 import org.acmsl.queryj.customsql.Property;
@@ -92,7 +93,8 @@ public class RetrieveResultSetColumnsHandlerTest
 {
     @Test
     public void builds_a_list_of_properties_from_the_ResultSetMetadata()
-        throws SQLException
+        throws QueryJBuildException,
+               SQLException
     {
         @NotNull final RetrieveResultSetColumnsHandler instance = new RetrieveResultSetColumnsHandler();
 
