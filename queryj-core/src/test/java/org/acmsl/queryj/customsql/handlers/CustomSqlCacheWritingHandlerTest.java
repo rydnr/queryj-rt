@@ -50,6 +50,7 @@ import org.acmsl.queryj.customsql.SqlConnectionFlagsDAO;
 import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.customsql.SqlResultSetFlagsDAO;
 import org.acmsl.queryj.customsql.SqlStatementFlagsDAO;
+import org.acmsl.queryj.customsql.handlers.customsqlvalidation.CacheValidationOutcomeHandler;
 import org.acmsl.queryj.metadata.SqlDAO;
 import org.acmsl.queryj.metadata.SqlParameterDAO;
 import org.acmsl.queryj.metadata.SqlPropertyDAO;
@@ -108,7 +109,7 @@ public class CustomSqlCacheWritingHandlerTest
     public void sql_hash_gets_written_correctly()
         throws QueryJBuildException
     {
-        @NotNull final CustomSqlCacheWritingHandler instance = new CustomSqlCacheWritingHandler();
+        @NotNull final CacheValidationOutcomeHandler instance = new CustomSqlCacheWritingHandler();
 
         @NotNull final Sql<String> t_Sql =
             new SqlElement<>("sql-id", "dao", "sql-name", "select", Cardinality.SINGLE, "all", true, false, "fake sql");
