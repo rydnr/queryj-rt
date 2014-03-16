@@ -87,6 +87,21 @@ public class RetrieveResultPropertiesHandler
     extends AbstractQueryJCommandHandler
 {
     /**
+     * String literal: "Validation failed for "
+     */
+    protected static final String VALIDATION_FAILED_FOR = "Validation failed for ";
+
+    /**
+     * String literal: "Could not retrieve result via "
+     */
+    protected static final String COULD_NOT_RETRIEVE_RESULT_VIA = "Could not retrieve result via ";
+
+    /**
+     * String literal: "ResultSet."
+     */
+    protected static final String RESULT_SET = "ResultSet.";
+
+    /**
      * Asks the handler to process the command. The idea is that each
      * command handler decides if such command is suitable of being
      * processed, and if so perform the concrete actions the command
