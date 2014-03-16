@@ -479,7 +479,9 @@ public class RetrieveResultPropertiesHandler
         return new BindQueryParametersHandler().getAccessorMethod("get", type, StringUtils.getInstance());
     }
 
+    @NotNull
     public List<Property<String>> retrieveCurrentProperties(final QueryJCommand command)
     {
+        return null;  //To change body of created methods use File | Settings | File Templates.
     }
 }
