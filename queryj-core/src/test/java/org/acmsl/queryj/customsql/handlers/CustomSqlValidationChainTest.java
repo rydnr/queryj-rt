@@ -39,6 +39,7 @@ package org.acmsl.queryj.customsql.handlers;
  * Importing JetBrains annotations.
  */
 import org.acmsl.commons.patterns.Chain;
+import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.BindQueryParametersHandler;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.CacheValidationOutcomeHandler;
@@ -53,6 +54,7 @@ import org.acmsl.queryj.customsql.handlers.customsqlvalidation.RetrieveResultPro
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.RetrieveResultSetColumnsHandler;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.SetupPreparedStatementHandler;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.SkipValidationIfCacheExistsHandler;
+import org.acmsl.queryj.tools.handlers.QueryJCommandHandler;
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
@@ -100,7 +102,7 @@ public class CustomSqlValidationChainTest
         Assert.assertTrue(t_Chain.contains(SkipValidationIfCacheExistsHandler.class));
     }
 
-    protected boolean contains(final BindQueryParametersHandler handler, final Chain chain)
+    protected boolean contains(final QueryJCommandHandler<QueryJCommand>,BindQueryParametersHandler handler, final Chain chain)
     {
         return false;  //To change body of created methods use File | Settings | File Templates.
     }
