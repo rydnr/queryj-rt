@@ -124,10 +124,6 @@ public class ReportMissingPropertiesHandlerTest
             .setSetting(RetrieveResultSetColumnsHandler.CURRENT_COLUMNS, t_lColumns);
         new QueryJCommandWrapper<Sql<String>>(t_Parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, t_Sql);
 
-        PowerMock.mockStatic(UniqueLogFactory.class);
-        PowerMock.(UniqueLogFactory.getLog(ReportMissingPropertiesHandler.class)).thenReturn(t_Log);
-
-
         t_Log.warn(EasyMock.anyObject());
         EasyMock.expectLastCall();
 
