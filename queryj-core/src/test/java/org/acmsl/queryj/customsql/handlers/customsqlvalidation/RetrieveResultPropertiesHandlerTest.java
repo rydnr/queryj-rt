@@ -121,7 +121,6 @@ public class RetrieveResultPropertiesHandlerTest
 
         t_Sql.add(new ParameterRefElement("id"));
         t_Sql.setResultRef(new ResultRefElement("r1"));
-        new QueryJCommandWrapper<Sql<String>>(t_Parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, t_Sql);
 
         @NotNull final CustomSqlProvider t_CustomSqlProvider = PowerMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final MetadataManager t_MetadataManager = PowerMock.createMock(MetadataManager.class);
