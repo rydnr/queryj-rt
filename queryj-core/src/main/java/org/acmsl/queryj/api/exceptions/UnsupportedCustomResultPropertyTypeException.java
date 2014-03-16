@@ -52,6 +52,7 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Represents the error when the type of a property in a custom result is invalid or not supported.
