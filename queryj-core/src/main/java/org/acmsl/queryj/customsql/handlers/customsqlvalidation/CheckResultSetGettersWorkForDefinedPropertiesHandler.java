@@ -96,8 +96,6 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
      * @param resultSet the result set to validate.
      * @param sql the sql.
      * @param sqlResult the custom sql result.
-     * @param customSqlProvider the <code>CustomSqlProvider</code> instance.
-     * @param metadataManager the <code>MetadataManager</code> instance.
      * @param typeManager the <code>MetadataTypeManager</code> instance.
      * @throws java.sql.SQLException if the SQL operation fails.
      * @throws QueryJBuildException if the expected result cannot be extracted.
