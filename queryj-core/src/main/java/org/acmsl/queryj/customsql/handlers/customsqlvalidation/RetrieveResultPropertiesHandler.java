@@ -168,7 +168,7 @@ public class RetrieveResultPropertiesHandler
     protected void setCurrentProperties(
         @NotNull final List<Property<String>> properties, @NotNull final QueryJCommand command)
     {
-        //To change body of created methods use File | Settings | File Templates.
+        new QueryJCommandWrapper<List<Property<String>>>(command).setSetting(CURRENT_PROPERTIES, properties);
     }
 
     /**
