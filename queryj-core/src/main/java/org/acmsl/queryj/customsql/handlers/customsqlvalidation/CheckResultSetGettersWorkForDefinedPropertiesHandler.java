@@ -228,7 +228,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
         }
     }
 
-    public boolean getValidationOutcome(final SqlElement<String> sql)
+    public boolean getValidationOutcome(@NotNull final SqlElement<String> sql)
     {
         return false;  //To change body of created methods use File | Settings | File Templates.
     }
