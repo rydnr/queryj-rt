@@ -488,7 +488,7 @@ public class RetrieveResultPropertiesHandler
 
         if (result == null)
         {
-            throw new
+            throw new PropertiesNotAvailableForVal
         }
     }
 }
