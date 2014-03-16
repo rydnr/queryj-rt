@@ -84,7 +84,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
+ * Tests for {@link CheckResultSetGettersWorkForDefinedPropertiesHandler}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/16 08:38
