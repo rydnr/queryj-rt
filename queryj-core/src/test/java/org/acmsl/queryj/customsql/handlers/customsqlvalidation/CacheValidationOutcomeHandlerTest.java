@@ -41,6 +41,8 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.customsql.Sql.Cardinality;
+import org.acmsl.queryj.customsql.SqlElement;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.jetbrains.annotations.NotNull;
 
@@ -70,6 +72,9 @@ public class CacheValidationOutcomeHandlerTest
 
         @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
+        @NotNull final SqlElement<String> t_Sql =
+            new SqlElement<>(
+                "id", "dao", "name", "String", Cardinality.SINGLE, "all", true /* validation */, false, "description");
         @NotNull final
         Assert.assertFalse(instance.handle(t_Parameters));
     }
