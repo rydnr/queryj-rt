@@ -75,6 +75,7 @@ public class SkipValidationIfCacheExistsHandler
         @NotNull final Sql<String> t_Sql = new RetrieveQueryHandler().retrieveCurrentSql(command);
 
         if (validationCacheFound(t_Sql, command))
+        {
         final boolean t_bResultSetGettersCheck =
             new CheckResultSetGettersWorkForDefinedPropertiesHandler().getValidationOutcome(t_Sql, command);
 
