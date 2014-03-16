@@ -106,7 +106,7 @@ public class CustomSqlValidationChainTest
     {
         boolean result = false;
 
-        for (@NotNull final )
+        for (@NotNull final Object )
         return result;
     }
 }
