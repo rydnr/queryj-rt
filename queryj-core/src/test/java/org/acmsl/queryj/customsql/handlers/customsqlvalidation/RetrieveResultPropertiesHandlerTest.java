@@ -100,7 +100,7 @@ public class RetrieveResultPropertiesHandlerTest
     {
         @NotNull final RetrieveResultPropertiesHandler instance = new RetrieveResultPropertiesHandler();
 
-        @NotNull final QueryJCommand parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+        @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
         @NotNull final SqlElement<String> t_Sql =
             new SqlElement<>(
@@ -119,32 +119,32 @@ public class RetrieveResultPropertiesHandlerTest
 
         t_Sql.add(new ParameterRefElement("id"));
         t_Sql.setResultRef(new ResultRefElement("r1"));
-        new QueryJCommandWrapper<Sql<String>>(parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, t_Sql);
+        new QueryJCommandWrapper<Sql<String>>(t_Parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, t_Sql);
 
         @NotNull final CustomSqlProvider t_CustomSqlProvider = PowerMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final MetadataManager t_MetadataManager = PowerMock.createMock(MetadataManager.class);
         @NotNull final SqlResultDAO t_ResultDAO = PowerMock.createNiceMock(SqlResultDAO.class);
         @NotNull final ResultSet t_ResultSet = PowerMock.createNiceMock(ResultSet.class);
         @NotNull final PreparedStatement t_Statement = PowerMock.createNiceMock(PreparedStatement.class);
-        new SetupPreparedStatementHandler().setCurrentPreparedStatement(t_Statement, parameters);
+        new SetupPreparedStatementHandler().setCurrentPreparedStatement(t_Statement, t_Parameters);
         EasyMock.expect(t_CustomSqlProvider.getSqlResultDAO()).andReturn(t_ResultDAO);
         EasyMock.expect(t_ResultDAO.findByPrimaryKey(t_Result.getId())).andReturn(t_Result);
         EasyMock.expect(t_Statement.executeQuery()).andReturn(t_ResultSet);
 
-        new QueryJCommandWrapper<MetadataManager>(parameters)
+        new QueryJCommandWrapper<MetadataManager>(t_Parameters)
             .setSetting(DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, t_MetadataManager);
-        new QueryJCommandWrapper<CustomSqlProvider>(parameters).setSetting(
+        new QueryJCommandWrapper<CustomSqlProvider>(t_Parameters).setSetting(
             CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, t_CustomSqlProvider);
-        new QueryJCommandWrapper<Sql>(parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, t_Sql);
+        new QueryJCommandWrapper<Sql>(t_Parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, t_Sql);
 
         EasyMock.replay(t_CustomSqlProvider);
         EasyMock.replay(t_ResultDAO);
         EasyMock.replay(t_ResultSet);
         EasyMock.replay(t_Statement);
 
-        new ExecuteQueryHandler().handle(parameters);
+        new ExecuteQueryHandler().handle(t_Parameters);
 
-        Assert.assertFalse(instance.handle(parameters));
+        Assert.assertFalse(instance.handle(t_Parameters));
 
         EasyMock.verify(t_CustomSqlProvider);
         EasyMock.verify(t_ResultDAO);
