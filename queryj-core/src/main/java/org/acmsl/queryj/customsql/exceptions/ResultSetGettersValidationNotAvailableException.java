@@ -49,9 +49,10 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
+ *
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
- *        Created: 2014/03/16 15:20
+ * Created: 2014/03/16 15:20
  */
 @ThreadSafe
 public class ResultSetGettersValidationNotAvailableException
