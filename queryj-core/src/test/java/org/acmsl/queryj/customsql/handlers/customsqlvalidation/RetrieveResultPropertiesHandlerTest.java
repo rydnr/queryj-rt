@@ -84,6 +84,7 @@ import org.powermock.api.easymock.PowerMock;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -132,7 +133,8 @@ public class RetrieveResultPropertiesHandlerTest
         @NotNull final ResultSet t_ResultSet = PowerMock.createNiceMock(ResultSet.class);
         @NotNull final PreparedStatement t_Statement = PowerMock.createNiceMock(PreparedStatement.class);
         @NotNull final TableDAO t_TableDAO = PowerMock.createNiceMock(TableDAO.class);
-        @NotNull final
+        @NotNull final ResultSetMetaData t_Metadata = PowerMock.createNiceMock(ResultSetMetaData.class);
+
         @SuppressWarnings("unchecked")
         @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> t_Table = PowerMock.createNiceMock(Table.class);
 
