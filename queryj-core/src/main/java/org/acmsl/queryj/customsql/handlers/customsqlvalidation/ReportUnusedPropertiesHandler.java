@@ -152,6 +152,6 @@ public class ReportUnusedPropertiesHandler
     protected List<Property<String>> detectExtraProperties(
         @NotNull final List<Property<String>> properties, @NotNull final List<Property<String>> resultSetProperties)
     {
-        return new ReportMissingPropertiesHandler(resultSetProperties, properties);
+        return new ReportMissingPropertiesHandler().detectMissingProperties(resultSetProperties, properties);
     }
 }
