@@ -44,6 +44,7 @@ import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.exceptions.CustomResultWithInvalidNumberOfColumnsException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.Property;
+import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
 import org.jetbrains.annotations.NotNull;
 
@@ -128,7 +129,9 @@ public class RetrieveResultSetColumnsHandler
 
         if (result == null)
         {
-            throw new ColumnsNotAvailableForValidationException()
+            @NotNull final Sql<String> t_Sql = new RetrieveQueryHandler().retrieveCurrentSql(command);
+
+            throw new ColumnsNotAvailableForValidationException(t_Sql);
         }
     }
 
