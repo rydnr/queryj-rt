@@ -158,7 +158,6 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandlerTest
             {
                 EasyMock.expect(t_ResultSet.getDate(t_Property.getColumnName())).andReturn(new Date(new java.util.Date().getTime()));
             }
-            t_iIndex++;
         }
 
         new QueryJCommandWrapper<Sql<String>>(t_Parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, t_Sql);
