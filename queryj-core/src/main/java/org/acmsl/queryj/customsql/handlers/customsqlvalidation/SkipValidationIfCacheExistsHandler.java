@@ -82,6 +82,14 @@ public class SkipValidationIfCacheExistsHandler
         return validationCacheFound(t_Sql, command, new CacheValidationOutcomeHandler());
     }
 
+    /**
+     * Checks whether the validation cache exists for given {@link Sql}.
+     * @param sql the {@link Sql}.
+     * @param command the command.
+     * @param handler the {@link CacheValidationOutcomeHandler}
+     * @return
+     * @throws QueryJBuildException
+     */
     protected boolean validationCacheFound(
         @NotNull final Sql<String> sql,
         @NotNull final QueryJCommand command,
