@@ -159,8 +159,6 @@ public class RetrieveResultSetColumnsHandler
     {
         @NotNull final List<Property<String>> result = new ArrayList<>();
 
-        @NotNull final ResultSetMetaData t_Metadata = resultSet.getMetaData();
-
         final int t_iColumnCount = t_Metadata.getColumnCount();
 
         for  (int t_iIndex = 1; t_iIndex <= t_iColumnCount; t_iIndex++)
