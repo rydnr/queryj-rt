@@ -96,12 +96,12 @@ public class ReportUnusedPropertiesHandlerTest
 
         @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
-        @NotNull final List<Property<String>> t_lProperties = new ArrayList<>(2);
+        @NotNull final List<Property<String>> t_lProperties = new ArrayList<>(3);
         t_lProperties.add(new PropertyElement<>("name", "name", 1, String.class.getSimpleName(), false));
         t_lProperties.add(new PropertyElement<>("tmst", "tmst", 2, "Date", false));
-        t_lColumns.add(new PropertyElement<>("flag", "flg", 3, int.class.getSimpleName(), false));
+        t_lProperties.add(new PropertyElement<>("flag", "flg", 3, int.class.getSimpleName(), false));
 
-        @NotNull final List<Property<String>> t_lColumns = new ArrayList<>(3);
+        @NotNull final List<Property<String>> t_lColumns = new ArrayList<>(2);
         t_lColumns.add(new PropertyElement<>("name", "name", 1, String.class.getSimpleName(), false));
         t_lColumns.add(new PropertyElement<>("tmst", "tmst", 2, "Date", false));
 
