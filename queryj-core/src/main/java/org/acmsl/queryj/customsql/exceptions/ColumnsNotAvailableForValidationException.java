@@ -66,6 +66,11 @@ public class ColumnsNotAvailableForValidationException
     extends QueryJNonCheckedException
 {
     /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = 5850876452607223594L;
+
+    /**
      * Creates an instance using given {@link Sql} as context.
      * @param sql the SQL.
      */
