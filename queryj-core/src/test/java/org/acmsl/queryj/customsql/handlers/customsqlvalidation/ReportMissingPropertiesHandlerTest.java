@@ -67,6 +67,7 @@ public class ReportMissingPropertiesHandlerTest
         @NotNull final ReportMissingPropertiesHandler instance = new ReportMissingPropertiesHandler();
 
         @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+
         Assert.assertFalse(instance.handle(t_Parameters));
     }
 }
