@@ -110,9 +110,9 @@ public class RetrieveResultPropertiesHandlerTest
             new PropertyElement<>("name", "name", 1, String.class.getSimpleName(), false);
         @NotNull final Property<String> t_Property2 =
             new PropertyElement<>("tmst", "tmst", 1, "Date", false);
-        @NotNull final List<Property<String>> properties = new ArrayList<>(2);
-        properties.add(t_Property1);
-        properties.add(t_Property2);
+        @NotNull final List<Property<String>> t_lProperties = new ArrayList<>(2);
+        t_lProperties.add(t_Property1);
+        t_lProperties.add(t_Property2);
         @NotNull final Result<String> t_Result = new ResultElement<>("r1", "Vo");
         t_Result.add(new PropertyRefElement("name"));
         t_Result.add(new PropertyRefElement("tmst"));
