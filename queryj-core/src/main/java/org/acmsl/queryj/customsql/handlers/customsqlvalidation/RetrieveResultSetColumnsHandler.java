@@ -91,7 +91,8 @@ public class RetrieveResultSetColumnsHandler
         {
 
         }
-        return true;
+
+        return false;
     }
 
     /**
