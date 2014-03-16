@@ -159,7 +159,7 @@ public class ExecuteQueryHandler
         @Nullable final ResultSet result;
 
         if  (   (Sql.INSERT.equals(sql.getType()))
-                || (Sql.DELETE.equals(sql.getType())))
+             || (Sql.DELETE.equals(sql.getType())))
         {
             preparedStatement.executeUpdate();
 
