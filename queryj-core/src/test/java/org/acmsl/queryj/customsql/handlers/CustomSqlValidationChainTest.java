@@ -39,6 +39,7 @@ package org.acmsl.queryj.customsql.handlers;
  * Importing JetBrains annotations.
  */
 import org.acmsl.commons.patterns.Chain;
+import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.BindQueryParametersHandler;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.CacheValidationOutcomeHandler;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.CheckResultSetGettersWorkForDefinedPropertiesHandler;
@@ -75,6 +76,7 @@ public class CustomSqlValidationChainTest
 {
     @Test
     public void includes_required_handlers()
+        throws QueryJBuildException
     {
         @NotNull final CustomSqlValidationChain instance = new CustomSqlValidationChain();
 
