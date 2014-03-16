@@ -192,7 +192,7 @@ public class CustomSqlValidationHandler
                 t_Charset.displayName());
         }
 
-        return result;
+        return false;
     }
 
     /**
