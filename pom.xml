@@ -365,6 +365,13 @@
         <optional>true</optional>
       </dependency>
 
+      <dependency>
+        <groupId>org.powermock</groupId>
+        <artifactId>powermock-api-mockito</artifactId>
+        <version>${version.powermock}</version>
+        <optional>true</optional>
+      </dependency>
+
     </dependencies>
   </dependencyManagement>
 
