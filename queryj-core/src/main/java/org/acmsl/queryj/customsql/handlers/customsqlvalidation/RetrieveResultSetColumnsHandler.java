@@ -67,7 +67,10 @@ import java.util.List;
 public class RetrieveResultSetColumnsHandler
     extends AbstractQueryJCommandHandler
 {
-    private static final String CURRENT_COLUMNS = "current-columns";
+    /**
+     * The key to store the current columns.
+     */
+    protected static final String CURRENT_COLUMNS = "current-columns";
 
     /**
      * Asks the handler to process the command. The idea is that each
