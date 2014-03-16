@@ -63,6 +63,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+import org.powermock.core.classloader.annotations.PrepareForTest;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -73,6 +74,7 @@ import java.util.List;
  * @since 3.0
  * Created: 2014/03/16 10:32
  */
+@PrepareForTest(UniqueLogFactory.class)
 @RunWith(JUnit4.class)
 public class ReportMissingPropertiesHandlerTest
 {
