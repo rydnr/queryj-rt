@@ -58,7 +58,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
+ * Detects and reports missing properties
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/16 10:34
