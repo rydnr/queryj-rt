@@ -56,6 +56,10 @@ import org.checkthread.annotations.ThreadSafe;
 public class CannotAnalyzeResultSetForValidationException
     extends QueryJNonCheckedException
 {
+    /**
+     * Creates a new instance with the
+     * @param sql
+     */
     public CannotAnalyzeResultSetForValidationException(@NotNull final Sql<String> sql)
     {
         super("cannot.analyze.ResultSet.for.validation", new String[] { sql.getId() });
