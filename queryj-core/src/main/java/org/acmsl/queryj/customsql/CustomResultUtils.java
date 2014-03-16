@@ -356,6 +356,61 @@ public class CustomResultUtils
     }
 
     /**
+     * Retrieves the table associated to the result.
+     * @param resultId the result id.
+     * @param customSqlProvider the <code>CustomSqlProvider</code> instance.
+     * @param metadataManager the database metadata manager.
+     * @return the table name.
+     */
+    @Nullable
+    public <T> String retrieveTable(
+        @NotNull final T resultId,
+        @NotNull final CustomSqlProvider customSqlProvider,
+        @NotNull final MetadataManager metadataManager)
+    {
+        @Nullable String result = retrieveCachedEntry("" + resultId);
+
+        if (result == null)
+        {
+            if (DebugUtils.getInstance().debugEnabledForResultId(resultId))
+            {
+                @SuppressWarnings("unused") final int a = 1;
+            }
+
+            String t_strDao;
+
+            for (@Nullable final Sql<String> t_Sql : retrieveSqlElementsByResultId(customSqlProvider, "" + resultId))
+            {
+                if (t_Sql != null)
+                {
+                    t_strDao = t_Sql.getDao();
+
+                    if (t_strDao != null)
+                    {
+                        @Nullable final Table<String, Attribute<String>, List<Attribute<String>>> t_Table =
+                            metadataManager.getTableDAO().findByDAO(t_strDao);
+
+                        if  (t_Table != null)
+                        {
+                            result = t_Table.getName();
+                            cacheEntry("" + resultId, result);
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+//        if (   (result == null)
+//            && (!t_bBreakLoop))
+//        {
+//            throw new IllegalArgumentException("Result " + resultElement.getId() + " does not match any table");
+//        }
+
+        return result;
+    }
+
+    /**
      * Checks whether given result element is suitable of being
      * included in the DAO layer associated to a concrete table.
      * @param resultElement the result.
