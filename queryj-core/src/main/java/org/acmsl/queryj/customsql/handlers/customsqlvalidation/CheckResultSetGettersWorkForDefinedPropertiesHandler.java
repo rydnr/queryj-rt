@@ -112,7 +112,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
 
             if (t_Result == null)
             {
-                throw new ReferencedResultNotFoundException()
+                throw new ReferencedResultNotFoundException(t_ResultRef, )
             }
             else
             {
