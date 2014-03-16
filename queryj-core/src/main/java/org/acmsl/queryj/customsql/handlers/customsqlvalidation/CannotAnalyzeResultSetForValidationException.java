@@ -63,6 +63,10 @@ import org.checkthread.annotations.ThreadSafe;
 public class CannotAnalyzeResultSetForValidationException
     extends QueryJNonCheckedException
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = 4342020210966103632L;
 
     /**
      * Creates a new instance associated to given {@link Sql}.
