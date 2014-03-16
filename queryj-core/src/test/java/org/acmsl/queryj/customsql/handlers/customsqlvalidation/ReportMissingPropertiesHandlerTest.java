@@ -38,6 +38,7 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.commons.logging.UniqueLogFactory;
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
@@ -47,6 +48,7 @@ import org.acmsl.queryj.customsql.PropertyElement;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.Sql.Cardinality;
 import org.acmsl.queryj.customsql.SqlElement;
+import org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandler;
 import org.acmsl.queryj.tools.handlers.QueryJCommandHandler;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.jetbrains.annotations.NotNull;
@@ -98,7 +100,7 @@ public class ReportMissingPropertiesHandlerTest
             .setSetting(RetrieveResultSetColumnsHandler.CURRENT_COLUMNS, t_lColumns);
         new QueryJCommandWrapper<Sql<String>>(t_Parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, t_Sql);
 
-
+        UniqueLogFactory.getLog(CustomSqlValidationHandler.class)
         Assert.assertFalse(instance.handle(t_Parameters));
     }
 }
