@@ -28,8 +28,7 @@
  * Author: Jose San Leandro Armendariz
  *
  * Description: Represents any problem dealing with ResultSetMetaData when
- *              validating what a SQL
- * actually returns.
+ *              validating what a SQL actually returns.
  *
  * Date: 2014/03/16
  * Time: 11:28
