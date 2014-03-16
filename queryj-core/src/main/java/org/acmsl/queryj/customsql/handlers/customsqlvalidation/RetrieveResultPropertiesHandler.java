@@ -155,7 +155,6 @@ public class RetrieveResultPropertiesHandler
             try
             {
                 retrieveProperties(
-                    t_ResultSet,
                     t_Sql,
                     t_CustomSqlProvider.getSqlResultDAO().findByPrimaryKey(t_ResultRef.getId()),
                     t_CustomSqlProvider,
