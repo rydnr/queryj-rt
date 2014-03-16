@@ -49,7 +49,6 @@ import org.acmsl.queryj.customsql.Sql.Cardinality;
 import org.acmsl.queryj.customsql.SqlElement;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.apache.commons.logging.Log;
-import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -60,6 +59,7 @@ import org.jetbrains.annotations.Nullable;
 /*
  * Importing JetBrains annotations.
  */
+import org.easymock.EasyMock;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
