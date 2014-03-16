@@ -51,6 +51,7 @@ import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandler;
 import org.acmsl.queryj.tools.handlers.QueryJCommandHandler;
 import org.apache.commons.configuration.PropertiesConfiguration;
+import org.apache.commons.logging.Log;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -100,7 +101,7 @@ public class ReportMissingPropertiesHandlerTest
             .setSetting(RetrieveResultSetColumnsHandler.CURRENT_COLUMNS, t_lColumns);
         new QueryJCommandWrapper<Sql<String>>(t_Parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, t_Sql);
 
-        @NotNull final
+        @NotNull final Log t_Log =
         UniqueLogFactory.getLog(CustomSqlValidationHandler.class)
         Assert.assertFalse(instance.handle(t_Parameters));
     }
