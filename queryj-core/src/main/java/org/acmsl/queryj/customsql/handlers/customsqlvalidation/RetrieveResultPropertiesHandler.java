@@ -356,16 +356,16 @@ public class RetrieveResultPropertiesHandler
     {
         @NotNull final List<Property<String>> result = new ArrayList<>();
 
-        @Nullable final String t_strTable =
+        @Nullable final String table =
             customResultUtils.retrieveTable(
                 sqlResult,
                 customSqlProvider,
                 metadataManager);
 
-        if  (t_strTable != null)
+        if  (table != null)
         {
             @Nullable final List<Attribute<String>> t_lColumns =
-                metadataManager.getColumnDAO().findAllColumns(t_strTable);
+                metadataManager.getColumnDAO().findAllColumns(table);
 
             final int t_iCount = t_lColumns.size();
 
@@ -379,7 +379,7 @@ public class RetrieveResultPropertiesHandler
 
                 if (t_Column != null)
                 {
-                    t_strId = t_strTable + "." + t_Column.getName() + ".property";
+                    t_strId = table + "." + t_Column.getName() + ".property";
 
                     t_Type = typeManager.getClass(t_Column.getType());
 
