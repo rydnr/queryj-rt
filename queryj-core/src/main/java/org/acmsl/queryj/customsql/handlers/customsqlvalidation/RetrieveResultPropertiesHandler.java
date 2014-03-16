@@ -183,7 +183,8 @@ public class RetrieveResultPropertiesHandler
                 customSqlProvider,
                 metadataManager);
 
-        if (sqlResult != null)
+        if (   (sqlResult != null)
+
         {
             t_lProperties.addAll(
                 retrieveExplicitProperties(
