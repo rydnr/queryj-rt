@@ -202,8 +202,12 @@ public class RetrieveResultPropertiesHandler
 
         if  (t_lProperties.size() == 0)
         {
-            if ()
-            throw new CustomResultWithNoPropertiesException(sqlResult, sql);
+            if (sqlResult != null)
+            {
+                throw new CustomResultWithNoPropertiesException(sqlResult, sql);
+            }
+            else
+
         }
         else
         {
