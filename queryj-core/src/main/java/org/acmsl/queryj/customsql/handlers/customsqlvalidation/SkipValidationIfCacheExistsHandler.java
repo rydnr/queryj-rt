@@ -112,6 +112,13 @@ public class SkipValidationIfCacheExistsHandler
         return result;
     }
 
+    /**
+     * Checks whether given hash is already cached or not.
+     * @param outputFolder the output folder.
+     * @param hash the hash.
+     * @param handler the {@link CacheValidationOutcomeHandler} instance.
+     * @return
+     */
     protected boolean hashExists(
         @NotNull final File outputFolder, @NotNull final String hash, @NotNull final CacheValidationOutcomeHandler handler)
     {
