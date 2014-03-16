@@ -77,6 +77,11 @@ public class CacheValidationOutcomeHandler
 
         final boolean t_bResultSetGettersCheck =
             new CheckResultSetGettersWorkForDefinedPropertiesHandler().getValidationOutcome(t_Sql, command);
+
+        if (t_bResultSetGettersCheck)
+        {
+
+        }
         return true;
     }
 }
