@@ -114,6 +114,16 @@ public class RetrieveResultSetColumnsHandler
     }
 
     /**
+     * Annotates the columns in the command.
+     * @param columns the {@link Property properties} to store.
+     * @param command the {@link QueryJCommand command}.
+     */
+    protected void setColumns(@NotNull final List<Property<String>> columns, @NotNull final QueryJCommand command)
+    {
+        new QueryJCommandWrapper<List<Property<String>>>(command).setSetting(CURRENT_COLUMNS, columns);
+    }
+
+    /**
      * Retrieves the columns from given {@link ResultSet}.
      * @param resultSet the ResultSet.
      * @return the list of {@link Property} columns.
