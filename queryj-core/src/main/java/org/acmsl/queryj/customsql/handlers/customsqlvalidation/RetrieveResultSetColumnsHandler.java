@@ -97,6 +97,11 @@ public class RetrieveResultSetColumnsHandler
         return false;
     }
 
+    private void setColumns(final List<Property<String>> columns, final QueryJCommand command)
+    {
+        //To change body of created methods use File | Settings | File Templates.
+    }
+
     /**
      * Retrieves the columns from given {@link ResultSet}.
      * @param resultSet the ResultSet.
