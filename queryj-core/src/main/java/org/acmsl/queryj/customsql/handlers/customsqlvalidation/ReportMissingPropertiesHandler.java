@@ -88,7 +88,9 @@ public class ReportMissingPropertiesHandler
 
         @NotNull final Sql<String> t_Sql = new RetrieveQueryHandler().retrieveCurrentSql(command);
 
-        diagnoseMissingProperties(t_lProperties, t_lColumns, t_Sql);
+        @Nullable final Log t_Log = UniqueLogFactory.getLog(ReportMissingPropertiesHandler.class);
+
+        diagnoseMissingProperties(t_lProperties, t_lColumns, t_Sql, t_Log);
 
         return false;
     }
