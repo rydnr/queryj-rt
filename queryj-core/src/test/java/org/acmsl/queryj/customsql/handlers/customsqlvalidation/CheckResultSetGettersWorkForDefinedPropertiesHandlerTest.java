@@ -162,7 +162,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandlerTest
             }
             else if (t_Property.getType().equals("Date"))
             {
-                EasyMock.expect(t_ResultSet.getDate(t_iIndex)).andReturn(new Date(new java.util.Date().getTime()));
+                EasyMock.expect(t_ResultSet.getDate(t_Property.getColumnName())).andReturn(new Date(new java.util.Date().getTime()));
             }
             t_iIndex++;
         }
