@@ -195,6 +195,7 @@ public class CacheValidationOutcomeHandlerTest
                 statementFlagsDAO,
                 resultSetFlagsDAO);
 
+
         @NotNull final QueryJCommand t_Command = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
         new QueryJCommandWrapper<File>(t_Command).setSetting(
             CustomSqlCacheWritingHandler.CUSTOM_SQL_OUTPUT_FOLDER_FOR_HASHES, tempFolder.getRoot());
