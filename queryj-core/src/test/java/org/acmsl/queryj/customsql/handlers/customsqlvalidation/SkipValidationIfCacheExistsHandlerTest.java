@@ -89,21 +89,21 @@ public class SkipValidationIfCacheExistsHandlerTest
         @NotNull final Sql<String> t_Sql =
             new SqlElement<>("sql-id", "dao", "sql-name", "select", Cardinality.SINGLE, "all", true, false, "fake sql");
 
-        @NotNull final QueryJCommand t_Command = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+        @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
-        new QueryJCommandWrapper<File>(t_Command).setSetting(
+        new QueryJCommandWrapper<File>(t_Parameters).setSetting(
             CustomSqlCacheWritingHandler.CUSTOM_SQL_OUTPUT_FOLDER_FOR_HASHES, tempFolder.getRoot());
-        new QueryJCommandWrapper<CustomSqlProvider>(t_Command).setSetting(
+        new QueryJCommandWrapper<CustomSqlProvider>(t_Parameters).setSetting(
             CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, t_CustomSqlProvider);
-        new RetrieveQueryHandler().setCurrentSql(t_Sql, t_Command);
-        new CheckResultSetGettersWorkForDefinedPropertiesHandler().setValidationOutcome(true, t_Sql, t_Command);
+        new RetrieveQueryHandler().setCurrentSql(t_Sql, t_Parameters);
+        new CheckResultSetGettersWorkForDefinedPropertiesHandler().setValidationOutcome(true, t_Sql, t_Parameters);
 
-        new QueryJCommandWrapper<File>(t_Command).setSetting(
+        new QueryJCommandWrapper<File>(t_Parameters).setSetting(
             CustomSqlCacheWritingHandler.CUSTOM_SQL_OUTPUT_FOLDER_FOR_HASHES, tempFolder.getRoot());
 
         @NotNull final String hash = "bzS4lagreKYbqR9tX8G2d5CCYGA%3D";
 
-        instance.handle(t_Command);
+        instance.handle(t_Parameters);
 
         Assert.assertTrue(new File(tempFolder.getRoot() + File.separator + hash).exists());
 
