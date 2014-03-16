@@ -141,7 +141,6 @@ public class RetrieveResultPropertiesHandler
             }
             catch (@NotNull final SQLException sqlException)
             {
-                throw new
             }
         }
 
