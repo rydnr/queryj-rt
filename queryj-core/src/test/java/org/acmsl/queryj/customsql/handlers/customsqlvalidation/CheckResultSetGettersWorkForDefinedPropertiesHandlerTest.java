@@ -150,7 +150,6 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandlerTest
         EasyMock.expect(t_ResultSet.next()).andReturn(true);
         EasyMock.expect(t_Metadata.getColumnCount()).andReturn(t_lProperties.size());
 
-        int t_iIndex = 1;
         for (@NotNull final Property<String> t_Property : t_lProperties)
         {
             EasyMock.expect(t_PropertyDAO.findByPrimaryKey(t_Property.getId())).andReturn(t_Property);
