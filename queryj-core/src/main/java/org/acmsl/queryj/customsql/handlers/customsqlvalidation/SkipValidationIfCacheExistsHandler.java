@@ -89,7 +89,7 @@ public class SkipValidationIfCacheExistsHandler
      * @param handler the {@link CacheValidationOutcomeHandler} instance (for using some of its
      * methods).
      * @return {@code true} in such case.
-     * @throws QueryJBuildException if
+     * @throws QueryJBuildException if the charset is not properly configured.
      */
     protected boolean validationCacheFound(
         @NotNull final Sql<String> sql,
