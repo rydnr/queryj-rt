@@ -328,7 +328,7 @@ public class CustomResultUtils
             {
                 if (t_Sql != null)
                 {
-
+                    result = retrieveTable(t_Sql, metadataManager);
                     t_strDao = t_Sql.getDao();
 
                     if (t_strDao != null)
