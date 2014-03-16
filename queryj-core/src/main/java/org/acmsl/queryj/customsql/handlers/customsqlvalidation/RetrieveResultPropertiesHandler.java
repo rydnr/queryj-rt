@@ -334,7 +334,6 @@ public class RetrieveResultPropertiesHandler
         return
             retrieveImplicitProperties(
                 table,
-                customSqlProvider,
                 metadataManager,
                 typeManager,
                 CustomResultUtils.getInstance());
