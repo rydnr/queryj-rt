@@ -89,13 +89,6 @@ public class RetrieveResultSetColumnsHandler
 
         final int t_iColumnCount = t_Metadata.getColumnCount();
 
-        if  (t_iColumnCount < t_lProperties.size())
-        {
-            throw
-                new CustomResultWithInvalidNumberOfColumnsException(
-                    t_iColumnCount, t_lProperties.size());
-        }
-
         @NotNull final List<Property<String>> t_lColumns = new ArrayList<>();
 
         for  (int t_iIndex = 1; t_iIndex <= t_iColumnCount; t_iIndex++)
