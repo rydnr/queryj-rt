@@ -185,7 +185,7 @@ public class RetrieveResultPropertiesHandler
             throw new NoTableMatchingSqlException(sql);
         }
 
-        if (sqlResult == null)
+        if (sqlResult != null)
         {
 
         }
