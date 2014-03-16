@@ -359,8 +359,6 @@ public class RetrieveResultPropertiesHandler
     {
         @NotNull final List<Property<String>> result = new ArrayList<>();
 
-        if  (table != null)
-        {
             @Nullable final List<Attribute<String>> t_lColumns =
                 metadataManager.getColumnDAO().findAllColumns(table);
 
