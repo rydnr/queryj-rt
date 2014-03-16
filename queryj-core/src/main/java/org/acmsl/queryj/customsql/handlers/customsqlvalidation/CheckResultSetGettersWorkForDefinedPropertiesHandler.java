@@ -141,6 +141,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
     protected Result<String> retrieveResult(final ResultRef resultRef, final CustomSqlProvider customSqlProvider)
     {
         @NotNull final SqlResultDAO t_ResultDAO = customSqlProvider.getSqlResultDAO();
+
         return .findByPrimaryKey(resultRef.getId());
     }
 
