@@ -144,5 +144,7 @@ public class SkipValidationIfCacheExistsHandlerTest
         Assert.assertTrue(hashFile.exists());
 
         Assert.assertTrue(instance.handle(t_Parameters));
+
+        EasyMock.replay(resultDAO);
     }
 }
