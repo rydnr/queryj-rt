@@ -131,5 +131,4 @@ public class RetrieveResultSetColumnsHandler
 
         return result;
     }
-
 }
