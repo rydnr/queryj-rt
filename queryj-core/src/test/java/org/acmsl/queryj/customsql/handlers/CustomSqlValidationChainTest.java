@@ -116,6 +116,7 @@ public class CustomSqlValidationChainTest
                 break;
             }
         }
+
         return result;
     }
 }
