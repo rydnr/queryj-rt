@@ -484,6 +484,6 @@ public class RetrieveResultPropertiesHandler
     public List<Property<String>> retrieveCurrentProperties(final QueryJCommand command)
     {
         @Nullable final List<Property<String>> result =
-            new QueryJCommandWrapper<>()
+            new QueryJCommandWrapper<Property<String>>()
     }
 }
