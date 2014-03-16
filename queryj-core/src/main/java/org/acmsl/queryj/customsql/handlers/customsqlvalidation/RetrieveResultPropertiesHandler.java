@@ -139,7 +139,7 @@ public class RetrieveResultPropertiesHandler
                     t_MetadataManager,
                     new JdbcTypeManager());
             }
-            catch (@NotNull final SQLException )
+            catch (@NotNull final SQLException errorDealingWithResultSetMetadata)
             {
             }
         }
