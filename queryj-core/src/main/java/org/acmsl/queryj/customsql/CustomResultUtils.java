@@ -364,7 +364,6 @@ public class CustomResultUtils
     @Nullable
     public <T> String retrieveTable(
         @NotNull final Sql<T> sql,
-        @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager)
     {
         @Nullable final String result;
