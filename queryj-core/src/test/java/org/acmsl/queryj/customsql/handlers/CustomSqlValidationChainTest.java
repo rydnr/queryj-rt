@@ -84,7 +84,7 @@ public class CustomSqlValidationChainTest
     {
         @NotNull final CustomSqlValidationChain instance = new CustomSqlValidationChain();
 
-        @NotNull final QueryJChain<QueryJCommandHandler<QueryJCommand>> t_Chain = new QueryJChain<>();
+        @NotNull final Chain<QueryJCommandHandler<QueryJCommand>> t_Chain = new QueryJChain<>();
 
         instance.buildChain((Chain<QueryJCommand, QueryJBuildException, QueryJCommandHandler< QueryJCommand>>) t_Chain);
 
