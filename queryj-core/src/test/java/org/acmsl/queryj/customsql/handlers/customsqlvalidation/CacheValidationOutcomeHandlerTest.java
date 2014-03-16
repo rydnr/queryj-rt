@@ -131,9 +131,6 @@ public class CacheValidationOutcomeHandlerTest
         new QueryJCommandWrapper<CustomSqlProvider>(t_Command).setSetting(
             CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, t_CustomSqlProvider);
 
-        EasyMock.expect(resultDAO.findBySqlId("sql-id")).andReturn(t_Result1).anyTimes();
-        EasyMock.replay(resultDAO);
-
         @NotNull final Charset t_Charset = Charset.defaultCharset();
 
         @NotNull final String hash = t_CustomSqlProvider.getHash(t_Sql, t_Charset.displayName());
