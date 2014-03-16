@@ -110,7 +110,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
 
             if (t_Result == null)
             {
-                // Throw exception
+                // TODO: throw exception
             }
             else
             {
