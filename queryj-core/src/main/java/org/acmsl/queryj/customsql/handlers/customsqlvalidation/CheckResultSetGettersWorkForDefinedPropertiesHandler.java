@@ -211,6 +211,8 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
 
                     handler.invokeResultSetGetter(
                         t_Method, resultSet, t_Property, sqlResult, sql);
+
+                    setValidationOutcome(true, sql, command);
                 }
             }
         }
