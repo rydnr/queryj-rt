@@ -51,7 +51,7 @@ import org.checkthread.annotations.ThreadSafe;
 import java.sql.SQLException;
 
 /**
- * Represents errors when operating with {@link ResultSet#getMetadata()}
+ * Represents errors when operating with {@link java.sql.ResultSet#getResultSetMetadata()}
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/16 06:48
