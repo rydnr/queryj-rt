@@ -86,7 +86,8 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
      *         or maybe because it's not desirable to continue the chain.
      */
     @Override
-    public boolean handle(@NotNull final QueryJCommand command) throws QueryJBuildException
+    public boolean handle(@NotNull final QueryJCommand command)
+        throws QueryJBuildException
     {
         @NotNull final ResultSet t_ResultSet = new ExecuteQueryHandler().retrieveCurrentResultSet(command);
         return false;
