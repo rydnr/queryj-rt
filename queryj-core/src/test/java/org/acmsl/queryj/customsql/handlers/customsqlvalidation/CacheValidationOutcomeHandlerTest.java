@@ -206,6 +206,7 @@ public class CacheValidationOutcomeHandlerTest
             CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, t_CustomSqlProvider);
         new RetrieveQueryHandler().setCurrentSql(t_Sql, t_Command);
         new CheckResultSetGettersWorkForDefinedPropertiesHandler().setValidationOutcome(true, t_Sql, t_Command);
+
         EasyMock.expect(sqlDAO.findAll()).andReturn(sqlList).anyTimes();
         EasyMock.expect(resultDAO.findBySqlId("sql-id")).andReturn(t_Result1).anyTimes();
         EasyMock.replay(resultDAO);
