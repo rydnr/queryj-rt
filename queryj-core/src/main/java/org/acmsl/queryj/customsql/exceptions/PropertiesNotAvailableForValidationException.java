@@ -49,6 +49,7 @@ import org.checkthread.annotations.ThreadSafe;
 
 /**
  * Represents the error when trying to use the {@link org.acmsl.queryj.customsql.Property properties}, when
+ * they are not yet available.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/16 09:11
