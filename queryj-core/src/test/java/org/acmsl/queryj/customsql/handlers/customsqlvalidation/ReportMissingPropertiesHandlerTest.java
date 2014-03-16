@@ -65,7 +65,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /*
- * Importing JUnit/PowerMock/EasyMock annotations.
+ * Importing JUnit/PowerMock/EasyMock classes.
  */
 import org.easymock.EasyMock;
 import org.junit.Assert;
