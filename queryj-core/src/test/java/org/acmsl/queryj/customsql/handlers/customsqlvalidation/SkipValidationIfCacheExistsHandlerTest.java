@@ -120,7 +120,7 @@ public class SkipValidationIfCacheExistsHandlerTest
 
         EasyMock.expect(resultDAO.findBySqlId(t_Sql.getId())).andReturn(t_Sql);
 
-        EasyMock.replay();
+        EasyMock.replay(resultDAO);
         @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
         new QueryJCommandWrapper<File>(t_Parameters).setSetting(
