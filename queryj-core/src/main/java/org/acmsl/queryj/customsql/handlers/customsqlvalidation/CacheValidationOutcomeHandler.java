@@ -71,6 +71,7 @@ public class CacheValidationOutcomeHandler
     @Override
     public boolean handle(@NotNull final QueryJCommand command) throws QueryJBuildException
     {
+        final boolean
         return true;
     }
 }
