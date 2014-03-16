@@ -136,6 +136,8 @@ public class RetrieveResultPropertiesHandler
                 t_CustomSqlProvider,
                 t_MetadataManager,
                 new JdbcTypeManager());
+        }
+
         return false;
     }
 
