@@ -252,7 +252,11 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
 
         if (outcomes.containsKey(sql))
         {
-            result =
+            result = outcomes.get(sql);
+        }
+        else
+        {
+            throw new
         }
     }
 }
