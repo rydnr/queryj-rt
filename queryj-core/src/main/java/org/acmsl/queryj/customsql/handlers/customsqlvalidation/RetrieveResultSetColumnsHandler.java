@@ -101,7 +101,7 @@ public class RetrieveResultSetColumnsHandler
         }
         catch (@NotNull final SQLException sqlException)
         {
-            throw new
+            throw new CannotAnalyzeResultSetForValidationException()
         }
 
         return false;
