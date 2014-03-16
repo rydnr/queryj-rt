@@ -111,7 +111,8 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
             if (t_Result == null)
             {
             }
-            }
+            else
+            {
             try
             {
                 validateProperties(t_ResultSet, t_lProperties, t_Sql, t_Result, new JdbcTypeManager(), t_Handler);
