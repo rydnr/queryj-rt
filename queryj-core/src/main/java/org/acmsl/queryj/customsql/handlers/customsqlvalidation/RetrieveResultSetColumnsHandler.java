@@ -38,10 +38,8 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 /*
  * Importing JetBrains annotations.
  */
-import javafx.beans.property.ListProperty;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
-import org.acmsl.queryj.api.exceptions.CustomResultWithInvalidNumberOfColumnsException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.Sql;
