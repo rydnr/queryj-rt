@@ -105,7 +105,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandlerTest
     @Test
     public void executes_resultset_getters_for_defined_properties()
         throws QueryJBuildException,
-        SQLException
+               SQLException
     {
         @NotNull final CheckResultSetGettersWorkForDefinedPropertiesHandler instance =
             new CheckResultSetGettersWorkForDefinedPropertiesHandler();
