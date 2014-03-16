@@ -133,6 +133,8 @@ public class RetrieveResultSetColumnsHandler
 
             throw new ColumnsNotAvailableForValidationException(t_Sql);
         }
+
+        return result;
     }
 
     /**
