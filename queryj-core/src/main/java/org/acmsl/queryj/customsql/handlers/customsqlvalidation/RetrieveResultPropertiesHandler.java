@@ -199,7 +199,7 @@ public class RetrieveResultPropertiesHandler
             int debug = 1;
         }
 
-        @NotNull List<Property<String>> t_lProperties = new ArrayList<>();
+        @NotNull List<Property<String>> result = new ArrayList<>();
 
         @Nullable final String t_strTable =
             CustomResultUtils.getInstance().retrieveTable(sql, metadataManager);
@@ -212,16 +212,16 @@ public class RetrieveResultPropertiesHandler
 
         if (sqlResult != null)
         {
-            t_lProperties.addAll(retrieveExplicitProperties(sqlResult, customSqlProvider.getSqlPropertyDAO()));
+            result.addAll(retrieveExplicitProperties(sqlResult, customSqlProvider.getSqlPropertyDAO()));
         }
 
-        if  (   (t_lProperties.size() == 0)
+        if  (   (result.size() == 0)
              && (t_strTable != null))
         {
-            t_lProperties = retrieveImplicitProperties(t_strTable, metadataManager, typeManager);
+            result = retrieveImplicitProperties(t_strTable, metadataManager, typeManager);
         }
 
-        if  (t_lProperties.size() == 0)
+        if  (result.size() == 0)
         {
             if (sqlResult != null)
             {
@@ -238,7 +238,7 @@ public class RetrieveResultPropertiesHandler
             {
                 @NotNull Method t_Method;
 
-                for (@Nullable final Property<String> t_Property : t_lProperties)
+                for (@Nullable final Property<String> t_Property : result)
                 {
                     if (t_Property != null)
                     {
@@ -271,11 +271,11 @@ public class RetrieveResultPropertiesHandler
 
                 final int t_iColumnCount = t_Metadata.getColumnCount();
 
-                if  (t_iColumnCount < t_lProperties.size())
+                if  (t_iColumnCount < result.size())
                 {
                     throw
                         new CustomResultWithInvalidNumberOfColumnsException(
-                            t_iColumnCount, t_lProperties.size());
+                            t_iColumnCount, result.size());
                 }
 
                 @NotNull final List<Property<String>> t_lColumns = new ArrayList<>();
