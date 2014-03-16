@@ -239,6 +239,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
      */
     public boolean getValidationOutcome(@NotNull final SqlElement<String> sql, @NotNull final QueryJCommand command)
     {
+        @NotNull final QueryJCommandWrapper<Map<Sql, Boolean>> wrapper =
         @Nullable Map<Sql, Boolean> outcomes =
             new QueryJCommandWrapper<Map<Sql, Boolean>>(command).getSetting(VALIDATION);
 
