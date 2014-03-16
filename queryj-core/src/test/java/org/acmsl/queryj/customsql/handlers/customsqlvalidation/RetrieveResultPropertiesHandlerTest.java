@@ -143,11 +143,9 @@ public class RetrieveResultPropertiesHandlerTest
         EasyMock.expect(t_ResultDAO.findByPrimaryKey(t_Result.getId())).andReturn(t_Result);
         EasyMock.expect(t_Statement.executeQuery()).andReturn(t_ResultSet);
 
-        int t_iIndex = 1;
         for (@NotNull final Property<String> t_Property : t_lProperties)
         {
             EasyMock.expect(t_PropertyDAO.findByPrimaryKey(t_Property.getId())).andReturn(t_Property);
-            t_iIndex++;
         }
 
         new QueryJCommandWrapper<Sql<String>>(t_Parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, t_Sql);
