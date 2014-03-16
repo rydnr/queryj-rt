@@ -163,7 +163,7 @@ public class RetrieveResultPropertiesHandler
     protected void validateResultSet(
         @NotNull final ResultSet resultSet,
         @NotNull final Sql<String> sql,
-        @NotNull final Result<String> sqlResult,
+        @Nullable final Result<String> sqlResult,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
         @NotNull final TypeManager typeManager)
