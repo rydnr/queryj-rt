@@ -89,7 +89,7 @@ public class SkipValidationIfCacheExistsHandlerTest
         @NotNull final Sql<String> t_Sql =
             new SqlElement<>("sql-id", "dao", "sql-name", "select", Cardinality.SINGLE, "all", true, false, "fake sql");
 
-        @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+        @NotNull final QueryJCommand t_Command = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
         new QueryJCommandWrapper<File>(t_Command).setSetting(
             CustomSqlCacheWritingHandler.CUSTOM_SQL_OUTPUT_FOLDER_FOR_HASHES, tempFolder.getRoot());
