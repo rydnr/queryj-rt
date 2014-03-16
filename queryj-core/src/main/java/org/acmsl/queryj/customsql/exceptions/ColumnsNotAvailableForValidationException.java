@@ -29,7 +29,7 @@
  *
  * Description: Represents the error when trying to access the list of columns
  *              (represented as properties extracted from the ResultSet, before
- * the handler flow has actually extracted them.
+ *              the handler flow has actually extracted them.
  *
  * Date: 2014/03/16
  * Time: 11:22
