@@ -82,7 +82,7 @@ public class CustomSqlValidationChainTest
 
         @NotNull final Chain t_Chain = EasyMock.createNiceMock(Chain.class);
 
-        t_Chain.buildChain(t_Chain);
+        instance.buildChain(t_Chain);
 
         Assert.assertTrue(t_Chain.contains(BindQueryParametersHandler.class));
         Assert.assertTrue(t_Chain.contains(CacheValidationOutcomeHandler.class));
