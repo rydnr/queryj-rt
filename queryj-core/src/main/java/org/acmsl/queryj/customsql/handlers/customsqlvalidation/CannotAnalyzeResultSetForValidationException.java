@@ -63,6 +63,7 @@ import org.checkthread.annotations.ThreadSafe;
 public class CannotAnalyzeResultSetForValidationException
     extends QueryJNonCheckedException
 {
+
     /**
      * Creates a new instance associated to given {@link Sql}.
      * @param sql the SQL.
