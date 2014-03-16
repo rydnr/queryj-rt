@@ -49,6 +49,8 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 
+import java.io.File;
+
 /**
  *
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
@@ -90,6 +92,7 @@ public class CacheValidationOutcomeHandler
      */
     protected void cacheOutcomeToDisk(final boolean outcome, @NotNull final QueryJCommand command)
     {
+        @NotNull final File outputFolder = retrieveOutputFolderForSqlHashes(command);
 
     }
 
