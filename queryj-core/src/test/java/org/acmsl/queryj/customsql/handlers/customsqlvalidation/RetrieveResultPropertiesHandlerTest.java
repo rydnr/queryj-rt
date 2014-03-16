@@ -70,11 +70,6 @@ import org.apache.commons.configuration.PropertiesConfiguration;
 /*
  * Importing JetBrains annotations.
  */
-import org.easymock.EasyMock;
-
-/*
- * Importing JetBrains annotations.
- */
 import org.jetbrains.annotations.NotNull;
 
 /*
