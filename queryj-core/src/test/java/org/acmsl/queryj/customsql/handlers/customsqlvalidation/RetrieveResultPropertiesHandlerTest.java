@@ -183,6 +183,5 @@ public class RetrieveResultPropertiesHandlerTest
         EasyMock.verify(t_PropertyDAO);
         EasyMock.verify(t_ResultDAO);
         EasyMock.verify(t_Statement);
-        EasyMock.verify(t_Metadata);
     }
 }
