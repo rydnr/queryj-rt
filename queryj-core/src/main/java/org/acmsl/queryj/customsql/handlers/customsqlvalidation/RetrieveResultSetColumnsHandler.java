@@ -125,6 +125,11 @@ public class RetrieveResultSetColumnsHandler
     {
         @Nullable final List<Property<String>> result =
             new QueryJCommandWrapper<Property<String>>(command).getListSetting(CURRENT_COLUMNS);
+
+        if (result == null)
+        {
+            throw new
+        }
     }
 
     /**
