@@ -57,7 +57,8 @@ import org.checkthread.annotations.ThreadSafe;
 public class ResultSetGettersValidationNotAvailableException
     extends QueryJNonCheckedException
 {
-    public ResultSetGettersValidationNotAvailableException(final Sql<String> sql)
+    public ResultSetGettersValidationNotAvailableException(@NotNull final Sql<String> sql)
     {
+        super("");
     }
 }
