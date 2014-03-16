@@ -58,5 +58,6 @@ public class PropertiesNotAvailableForValidationException
 {
     public PropertiesNotAvailableForValidationException(final Sql<String> sql)
     {
+        super("")
     }
 }
