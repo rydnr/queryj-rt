@@ -122,7 +122,7 @@ public class SkipValidationIfCacheExistsHandlerTest
                 statementFlagsDAO,
                 resultSetFlagsDAO);
 
-        EasyMock.expect(resultDAO.findBySqlId(t_Sql.getId())).andReturn(t_Result);
+        EasyMock.expect(resultDAO.findBySqlId(t_Sql.getId())).andReturn(t_Result).anyTimes();
 
         EasyMock.replay(resultDAO);
 
