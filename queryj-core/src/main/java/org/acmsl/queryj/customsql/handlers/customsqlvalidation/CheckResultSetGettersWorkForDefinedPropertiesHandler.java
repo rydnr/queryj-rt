@@ -139,6 +139,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
     @Nullable
     protected Result<String> retrieveResult(final ResultRef resultRef, final CustomSqlProvider customSqlProvider)
     {
+        @NotNull final
         return customSqlProvider.getSqlResultDAO().findByPrimaryKey(resultRef.getId());
     }
 
