@@ -58,6 +58,6 @@ public class PropertiesNotAvailableForValidationException
 {
     public PropertiesNotAvailableForValidationException(final Sql<String> sql)
     {
-        super("", new String[] { sql.getId(), sql.getResultRef() });
+        super("", new Object[][] { sql.getId(), sql.getResultRef() });
     }
 }
