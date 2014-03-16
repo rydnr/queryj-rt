@@ -86,7 +86,8 @@ public class UnsupportedCustomResultPropertyTypeException
             "unsupported.property.type.in.custom-result",
             new String[]
             {
-                property.getType(), property.getId(), (result != null) ? result.getId() : "(none)", sql.getId() },
+                property.getType(), property.getId(), (result != null) ? result.getId() : "(none)", sql.getId()
+            },
             cause);
     }
 
