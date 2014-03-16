@@ -158,7 +158,7 @@ public class CacheValidationOutcomeHandlerTest
     public void sql_hash_does_not_get_written_if_it_exists_already()
         throws QueryJBuildException
     {
-        @NotNull final CustomSqlCacheWritingHandler instance =
+        @NotNull final CacheValidationOutcomeHandler instance =
             new CustomSqlCacheWritingHandler()
             {
                 /**
