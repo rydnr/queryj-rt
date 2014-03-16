@@ -75,7 +75,12 @@ public class CacheValidationOutcomeHandlerTest
         @NotNull final SqlElement<String> t_Sql =
             new SqlElement<>(
                 "id",
-                "dao", "name", String.class.getSimpleName(), Cardinality.SINGLE, "all", true /* validation */, false, "description");
+                "dao",
+                "name",
+                String.class.getSimpleName(),
+                Cardinality.SINGLE,
+                "all",
+                true /* validation */, false, "description");
         @NotNull final
         Assert.assertFalse(instance.handle(t_Parameters));
     }
