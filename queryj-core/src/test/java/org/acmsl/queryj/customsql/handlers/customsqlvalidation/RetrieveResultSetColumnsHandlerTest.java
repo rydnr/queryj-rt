@@ -116,6 +116,7 @@ public class RetrieveResultSetColumnsHandlerTest
 
         int t_iIndex = 1;
 
+        EasyMock.expect(t_ResultSetMetaData.getColumnName(t_iIndex)).andReturn(t_Property.getColumnName());
         for (@NotNull final Property<String> t_Property : t_lProperties)
         {
             EasyMock.expect(t_ResultSetMetaData.getColumnName(t_iIndex)).andReturn(t_Property.getColumnName());
