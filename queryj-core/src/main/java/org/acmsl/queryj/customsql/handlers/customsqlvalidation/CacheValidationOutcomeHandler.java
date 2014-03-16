@@ -40,6 +40,7 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
  */
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
 import org.jetbrains.annotations.NotNull;
 
@@ -72,6 +73,8 @@ public class CacheValidationOutcomeHandler
     public boolean handle(@NotNull final QueryJCommand command)
         throws QueryJBuildException
     {
+        @NotNull final Sql<String> t_Sql = new RetrieveQueryHandler().retrieveCurrentSql(command);
+
         final boolean t_bResultSetGettersCheck =
             new CheckResultSetGettersWorkForDefinedPropertiesHandler().getValidationOutcome(t_Sql);
         return true;
