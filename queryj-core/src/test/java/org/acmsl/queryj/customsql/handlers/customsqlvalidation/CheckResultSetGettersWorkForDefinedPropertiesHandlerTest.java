@@ -91,7 +91,7 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public class CheckResultSetGettersWorkForDefinedPropertiesHandlerTest
 {
-
+    @Test
     public void executes_resultset_getters_for_defined_properties()
         throws QueryJBuildException,
         SQLException
