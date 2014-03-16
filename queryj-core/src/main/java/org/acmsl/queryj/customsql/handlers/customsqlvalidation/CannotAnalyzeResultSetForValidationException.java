@@ -48,7 +48,7 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
- * Represents any problem dealing with {@link java.sql.ResultSetMetaData} to
+ * Represents any problem dealing with {@link java.sql.ResultSetMetaData} when validating
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/16 11:28
