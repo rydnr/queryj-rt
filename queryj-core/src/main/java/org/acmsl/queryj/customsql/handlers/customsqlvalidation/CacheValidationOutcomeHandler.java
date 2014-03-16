@@ -40,6 +40,7 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
  */
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
 import org.jetbrains.annotations.NotNull;
@@ -50,6 +51,8 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 import java.io.File;
+import java.nio.charset.Charset;
+import java.util.List;
 
 /**
  *
@@ -93,6 +96,12 @@ public class CacheValidationOutcomeHandler
     protected void cacheOutcomeToDisk(final boolean outcome, @NotNull final QueryJCommand command)
     {
         @NotNull final File outputFolder = retrieveOutputFolderForSqlHashes(command);
+
+        @NotNull final CustomSqlProvider customSqlProvider = retrieveCustomSqlProvider(command);
+
+        @NotNull final List<Sql<String>> queries = retrieveSqlItems(customSqlProvider.getSqlDAO());
+
+        @NotNull final Charset charset = retrieveCharset(command);
 
     }
 
