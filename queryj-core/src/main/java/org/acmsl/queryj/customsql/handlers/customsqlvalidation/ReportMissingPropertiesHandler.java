@@ -104,7 +104,7 @@ public class ReportMissingPropertiesHandler
         @NotNull final List<Property<String>> columns,
         @NotNull final Sql<String> sql)
     {
-        @Nullable final Log t_Log = UniqueLogFactory.getLog(CustomSqlValidationHandler.class);
+        @Nullable final Log t_Log = UniqueLogFactory.getLog(ReportMissingPropertiesHandler.class);
 
         if (t_Log != null)
         {
