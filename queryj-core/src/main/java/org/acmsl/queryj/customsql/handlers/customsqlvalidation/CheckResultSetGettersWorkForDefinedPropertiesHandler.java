@@ -113,15 +113,16 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
             }
             else
             {
-            try
-            {
-                validateProperties(t_ResultSet, t_lProperties, t_Sql, t_Result, new JdbcTypeManager(), t_Handler);
-            }
-            catch (@NotNull final SQLException errorDealingWithResultSetMetadata)
-            {
-                throw
-                    new ResultSetMetadataOperationFailedException(
-                        t_Sql, t_ResultRef, errorDealingWithResultSetMetadata);
+                try
+                {
+                    validateProperties(t_ResultSet, t_lProperties, t_Sql, t_Result, new JdbcTypeManager(), t_Handler);
+                }
+                catch (@NotNull final SQLException errorDealingWithResultSetMetadata)
+                {
+                    throw
+                        new ResultSetMetadataOperationFailedException(
+                            t_Sql, t_ResultRef, errorDealingWithResultSetMetadata);
+                }
             }
         }
 
