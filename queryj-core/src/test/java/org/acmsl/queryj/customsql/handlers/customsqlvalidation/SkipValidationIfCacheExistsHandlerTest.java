@@ -140,7 +140,7 @@ public class SkipValidationIfCacheExistsHandlerTest
 
         @NotNull final Charset t_Charset = Charset.defaultCharset();
 
-        @NotNull final String hash = t_CustomSqlProvider.getHash(t_Sql, t_Charset);
+        @NotNull final String hash = t_CustomSqlProvider.getHash(t_Sql, t_Charset.displayName());
 
         @NotNull final File hashFile = new File(tempFolder.getRoot() + File.separator + hash);
         FileUtils.getInstance().writeFileIfPossible(hashFile, "", t_Charset);
