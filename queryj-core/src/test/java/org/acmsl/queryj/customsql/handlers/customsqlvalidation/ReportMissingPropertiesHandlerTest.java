@@ -41,6 +41,8 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.customsql.Property;
+import org.acmsl.queryj.customsql.PropertyElement;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.jetbrains.annotations.NotNull;
 
@@ -52,6 +54,9 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -69,6 +74,10 @@ public class ReportMissingPropertiesHandlerTest
         @NotNull final ReportMissingPropertiesHandler instance = new ReportMissingPropertiesHandler();
 
         @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+
+        @NotNull final List<Property<String>> t_lProperties = new ArrayList<>(2);
+        t_lProperties.add(new PropertyElement<>("name", "name", 1, String.class.getSimpleName(), false));
+        t_lProperties.add(new PropertyElement<>("tmst", "tmst", 1, "Date", false));
 
         Assert.assertFalse(instance.handle(t_Parameters));
     }
