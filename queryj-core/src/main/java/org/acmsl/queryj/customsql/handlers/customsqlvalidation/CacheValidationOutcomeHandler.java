@@ -72,7 +72,7 @@ public class CacheValidationOutcomeHandler
     public boolean handle(@NotNull final QueryJCommand command) throws QueryJBuildException
     {
         final boolean t_bResultSetGettersCheck =
-            new CheckResultSetGettersWorkForDefinedPropertiesHandler()
+            new CheckResultSetGettersWorkForDefinedPropertiesHandler().getValidationOutcome()
         return true;
     }
 }
