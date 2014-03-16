@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Retrieves the columns (as a list of {@link Property properties} from the current ResultSet.
  *
  * Date: 2014/03/16
  * Time: 11:11
