@@ -127,10 +127,6 @@ public class RetrieveResultSetColumnsHandlerTest
         EasyMock.replay(t_ResultSet);
         EasyMock.replay(t_ResultSetMetaData);
 
-        new SetupPreparedStatementHandler().setCurrentPreparedStatement(t_Statement, t_Parameters);
-        new ExecuteQueryHandler().handle(t_Parameters);
-        new RetrieveResultPropertiesHandler().handle(t_Parameters);
-
         Assert.assertFalse(instance.handle(t_Parameters));
 
         EasyMock.verify(t_CustomSqlProvider);
