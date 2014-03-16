@@ -57,4 +57,9 @@ import org.junit.runners.JUnit4;
 public class CacheValidationOutcomeHandlerTest
 {
     public void caches_validation_outcome_to_disk()
+    {
+        @NotNull final CacheValidationOutcomeHandler instance = new CacheValidationOutcomeHandler();
+
+        Assert.assertFalse(instance.handle(t_Parameters));
+    }
 }
