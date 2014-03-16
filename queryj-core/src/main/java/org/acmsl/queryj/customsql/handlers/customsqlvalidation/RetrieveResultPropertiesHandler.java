@@ -181,7 +181,7 @@ public class RetrieveResultPropertiesHandler
             CustomResultUtils.getInstance().retrieveTable(sql, metadataManager);
 
         if (   (t_strTable == null)
-            &&
+            && sqlResult == null))
         {
             throw new NoTableMatchingSqlException(sql);
         }
