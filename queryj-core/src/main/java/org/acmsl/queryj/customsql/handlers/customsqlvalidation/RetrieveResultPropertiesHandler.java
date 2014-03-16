@@ -177,7 +177,7 @@ public class RetrieveResultPropertiesHandler
 
         @NotNull List<Property<String>> t_lProperties = new ArrayList<>();
 
-        @NotNull final String t_strTable =
+        @Nullable final String t_strTable =
             CustomResultUtils.getInstance().retrieveTable(
                 sqlResult,
                 customSqlProvider,
