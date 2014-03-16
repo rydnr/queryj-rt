@@ -80,7 +80,9 @@ public class ReportMissingPropertiesHandler
     @Override
     public boolean handle(@NotNull final QueryJCommand command) throws QueryJBuildException
     {
-        return true;
+        @NotNull final List<Property<String>> t_lProperties =
+            new
+        return false;
     }
 
     /**
