@@ -106,6 +106,9 @@ public class CacheValidationOutcomeHandler
 
         @NotNull final Charset charset = retrieveCharset(command);
 
+        @NotNull final String hash = customSqlProvider.getHash(sql, charset.displayName());
+
+        writeHash(outputFolder, hash, charset);
     }
 
 
