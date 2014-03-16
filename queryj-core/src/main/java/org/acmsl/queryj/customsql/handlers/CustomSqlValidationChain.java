@@ -59,8 +59,11 @@ import org.acmsl.queryj.customsql.handlers.customsqlvalidation.RetrieveResultPro
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.RetrieveResultSetColumnsHandler;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.SetupPreparedStatementHandler;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.SkipValidationIfCacheExistsHandler;
-import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
 import org.acmsl.queryj.tools.handlers.QueryJCommandHandler;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
