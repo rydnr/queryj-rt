@@ -183,8 +183,7 @@ public class RetrieveResultPropertiesHandler
                 customSqlProvider,
                 metadataManager);
 
-        if (   (sqlResult == null)
-            && (t_strTable == null))
+        if (sqlResult == null)
         {
 
         }
