@@ -104,7 +104,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
      */
     protected void validateProperties(
         @NotNull final ResultSet resultSet,
-        @NotNull List<Property<String>> properties
+        @NotNull List<Property<String>> properties,
         @NotNull final Sql<String> sql,
         final Result<String> sqlResult,
         @NotNull final CustomSqlProvider customSqlProvider,
