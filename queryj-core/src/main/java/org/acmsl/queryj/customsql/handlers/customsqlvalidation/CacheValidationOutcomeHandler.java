@@ -45,7 +45,6 @@ import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.handlers.CustomSqlCacheWritingHandler;
-import org.acmsl.queryj.metadata.SqlDAO;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
 import org.jetbrains.annotations.NotNull;
 
