@@ -103,7 +103,6 @@ public class CacheValidationOutcomeHandler
      * @param command the command.
      */
     protected void cacheOutcomeToDisk(
-        final boolean outcome,
         @NotNull final Sql<String> sql,
         @NotNull final QueryJCommand command)
         throws QueryJBuildException
