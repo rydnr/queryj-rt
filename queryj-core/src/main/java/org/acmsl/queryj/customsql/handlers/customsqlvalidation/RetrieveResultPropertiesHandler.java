@@ -175,7 +175,7 @@ public class RetrieveResultPropertiesHandler
             int debug = 1;
         }
 
-        if (sqlResult == null)
+        if (sqlResult != null)
         {
 
         }
