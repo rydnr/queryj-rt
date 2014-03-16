@@ -82,7 +82,7 @@ public class ReportMissingPropertiesHandlerTest
         @NotNull final List<Property<String>> t_lColumns = new ArrayList<>(3);
         t_lProperties.add(new PropertyElement<>("name", "name", 1, String.class.getSimpleName(), false));
         t_lProperties.add(new PropertyElement<>("tmst", "tmst", 1, "Date", false));
-        t_lProperties.add(new PropertyElement<>("flag", "flg", 1, "int", false));
+        t_lProperties.add(new PropertyElement<>("flag", "flg", 1, "", false));
 
         Assert.assertFalse(instance.handle(t_Parameters));
     }
