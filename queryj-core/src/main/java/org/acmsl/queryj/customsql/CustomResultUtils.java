@@ -347,7 +347,7 @@ public class CustomResultUtils
     }
 
     /**
-     * Retrieves the table associated to the result.
+     * Retrieves the table associated to the {@link Sql}.
      * @param sql the {@link Sql}.
      * @param metadataManager the database metadata manager.
      * @return the table name.
