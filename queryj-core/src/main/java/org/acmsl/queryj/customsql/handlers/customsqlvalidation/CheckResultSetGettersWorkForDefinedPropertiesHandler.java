@@ -250,6 +250,9 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
             wrapper.setSetting(VALIDATION, outcomes);
         }
 
-        if (outcomes.containsKey())
+        if (outcomes.containsKey(sql))
+        {
+            result =
+        }
     }
 }
