@@ -79,6 +79,7 @@ public class RetrieveResultSetColumnsHandler
     @Override
     public boolean handle(@NotNull final QueryJCommand command) throws QueryJBuildException
     {
+        @NotNull final ResultSet t_ResultSet = new ExecuteQueryHandler().retrieveCurrentResultSet(command)
         return true;
     }
 
