@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for CustomSqlValidationChain.
  *
  * Date: 2014/03/16
  * Time: 18:26
