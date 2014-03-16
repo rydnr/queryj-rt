@@ -131,8 +131,6 @@ public class CacheValidationOutcomeHandlerTest
         new RetrieveQueryHandler().setCurrentSql(t_Sql, t_Command);
         new CheckResultSetGettersWorkForDefinedPropertiesHandler().setValidationOutcome(true, t_Sql, t_Command);
 
-        @NotNull final QueryJCommand t_Command = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
-
         new QueryJCommandWrapper<File>(t_Command).setSetting(
             CustomSqlCacheWritingHandler.CUSTOM_SQL_OUTPUT_FOLDER_FOR_HASHES, tempFolder.getRoot());
 
