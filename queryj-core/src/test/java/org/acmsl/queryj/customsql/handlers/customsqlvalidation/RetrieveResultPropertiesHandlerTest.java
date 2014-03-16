@@ -143,7 +143,7 @@ public class RetrieveResultPropertiesHandlerTest
         EasyMock.expect(t_CustomSqlProvider.getSqlPropertyDAO()).andReturn(t_PropertyDAO);
         EasyMock.expect(t_ResultDAO.findByPrimaryKey(t_Result.getId())).andReturn(t_Result);
         EasyMock.expect(t_PropertyDAO.findByPrimaryKey(t_Property1.getId())).andReturn(t_Property1);
-        EasyMock.expect(t_PropertyDAO.findByPrimaryKey(t_Property2.getId())).andReturn(t_Property1);
+        EasyMock.expect(t_PropertyDAO.findByPrimaryKey(t_Property2.getId())).andReturn(t_Property2);
         EasyMock.expect(t_Statement.executeQuery()).andReturn(t_ResultSet);
 
         new QueryJCommandWrapper<MetadataManager>(t_Parameters)
