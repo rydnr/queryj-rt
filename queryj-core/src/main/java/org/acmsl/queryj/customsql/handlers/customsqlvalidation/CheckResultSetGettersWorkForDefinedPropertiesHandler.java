@@ -47,6 +47,7 @@ import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.Sql;
+import org.acmsl.queryj.customsql.exceptions.ResultSetMetadataOperationFailedException;
 import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.TypeManager;
 import org.acmsl.queryj.metadata.engines.JdbcTypeManager;
@@ -102,7 +103,9 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
         }
         catch (@NotNull final SQLException sqlException)
         {
-            // TODO
+            throw
+                new ResultSetMetadataOperationFailedException(
+                    t_Sql, t_ResultRef, errorDealingWithResultSetMetadata);
         }
 
         return false;
