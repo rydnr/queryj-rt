@@ -485,7 +485,7 @@ public class RetrieveResultPropertiesHandler
      * @param command the command.
      * @return the properties.
      * @throws PropertiesNotAvailableForValidationException if this method is called before the
-     *
+     * required
      */
     @NotNull
     public List<Property<String>> retrieveCurrentProperties(final QueryJCommand command)
