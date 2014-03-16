@@ -103,7 +103,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
         {
             validateProperties(t_ResultSet, t_lProperties, t_Sql, t_Result, new JdbcTypeManager(), t_Handler);
         }
-        catch (@NotNull final SQLException sqlException)
+        catch (@NotNull final SQLException errorDealingWithResultSetMetadata)
         {
             throw
                 new ResultSetMetadataOperationFailedException(
