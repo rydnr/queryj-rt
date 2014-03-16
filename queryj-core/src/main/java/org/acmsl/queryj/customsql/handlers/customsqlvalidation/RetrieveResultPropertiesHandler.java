@@ -462,6 +462,4 @@ public class RetrieveResultPropertiesHandler
     {
         return new BindQueryParametersHandler().getAccessorMethod("get", type, StringUtils.getInstance());
     }
-
-
 }
