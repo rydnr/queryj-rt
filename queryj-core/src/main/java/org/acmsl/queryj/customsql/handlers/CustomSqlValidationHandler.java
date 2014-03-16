@@ -1262,7 +1262,7 @@ public class CustomSqlValidationHandler
                         {
                             throw
                                 new UnsupportedCustomResultPropertyTypeException(
-                                    t_Property, sqlResult, sql, noSuchMethod);
+                                    t_Property, sql, sqlResult, noSuchMethod);
                         }
 
                         invokeResultSetGetter(
