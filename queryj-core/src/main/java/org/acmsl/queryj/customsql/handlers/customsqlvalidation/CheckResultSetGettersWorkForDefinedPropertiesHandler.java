@@ -107,8 +107,6 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
         @NotNull List<Property<String>> properties,
         @NotNull final Sql<String> sql,
         final Result<String> sqlResult,
-        @NotNull final CustomSqlProvider customSqlProvider,
-        @NotNull final MetadataManager metadataManager,
         @NotNull final TypeManager typeManager)
         throws SQLException,
         QueryJBuildException
