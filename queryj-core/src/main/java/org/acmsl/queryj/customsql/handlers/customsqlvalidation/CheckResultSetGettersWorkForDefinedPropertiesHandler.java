@@ -124,7 +124,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
      */
     protected Result<String> retrieveResult(final ResultRef resultRef, final CustomSqlProvider customSqlProvider)
     {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        return customSqlProvider.getSqlResultDAO().findByPrimaryKey(resultRef.getId());
     }
 
     /**
