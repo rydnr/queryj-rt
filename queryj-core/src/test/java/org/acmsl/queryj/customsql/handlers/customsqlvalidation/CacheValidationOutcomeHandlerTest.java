@@ -40,6 +40,7 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
  */
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.jetbrains.annotations.NotNull;
 
@@ -63,6 +64,7 @@ public class CacheValidationOutcomeHandlerTest
 {
     @Test
     public void caches_validation_outcome_to_disk()
+        throws QueryJBuildException
     {
         @NotNull final CacheValidationOutcomeHandler instance = new CacheValidationOutcomeHandler();
 
