@@ -38,6 +38,9 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
+import org.acmsl.queryj.QueryJCommand;
+import org.apache.commons.configuration.PropertiesConfiguration;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -63,6 +66,7 @@ public class CacheValidationOutcomeHandlerTest
     {
         @NotNull final CacheValidationOutcomeHandler instance = new CacheValidationOutcomeHandler();
 
+        @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
         Assert.assertFalse(instance.handle(t_Parameters));
     }
 }
