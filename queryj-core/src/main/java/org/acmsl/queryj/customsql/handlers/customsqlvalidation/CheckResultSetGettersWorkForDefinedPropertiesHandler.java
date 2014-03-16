@@ -49,6 +49,7 @@ import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.ResultRef;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.exceptions.ResultSetMetadataOperationFailedException;
+import org.acmsl.queryj.metadata.SqlResultDAO;
 import org.acmsl.queryj.metadata.TypeManager;
 import org.acmsl.queryj.metadata.engines.JdbcTypeManager;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
@@ -139,7 +140,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
     @Nullable
     protected Result<String> retrieveResult(final ResultRef resultRef, final CustomSqlProvider customSqlProvider)
     {
-        @NotNull final
+        @NotNull final SqlResultDAO t_ResultDAO =
         return customSqlProvider.getSqlResultDAO().findByPrimaryKey(resultRef.getId());
     }
 
