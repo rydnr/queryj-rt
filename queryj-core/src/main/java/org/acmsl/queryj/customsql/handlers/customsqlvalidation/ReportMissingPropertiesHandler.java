@@ -83,6 +83,8 @@ public class ReportMissingPropertiesHandler
         @NotNull final List<Property<String>> t_lProperties =
             new RetrieveResultPropertiesHandler().retrieveCurrentProperties(command);
 
+        @NotNull final List<Property<String>> t_lColumns =
+            new RetrieveResultSetColumnsHandler().retrieveCurrentColumns()
         diagnoseMissingProperties(t_lProperties);
         return false;
     }
