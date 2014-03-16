@@ -27,7 +27,8 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Represents any problem dealing with {@link java.sql.ResultSetMetaData} when validating what a SQL
+ * actually returns.
  *
  * Date: 2014/03/16
  * Time: 11:28
