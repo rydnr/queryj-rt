@@ -286,6 +286,8 @@ public class RetrieveResultPropertiesHandler
                 }
             }
         }
+
+        return result;
     }
 
     /**
