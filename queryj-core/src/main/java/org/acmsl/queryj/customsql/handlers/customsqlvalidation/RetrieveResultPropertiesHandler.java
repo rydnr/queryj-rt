@@ -460,7 +460,7 @@ public class RetrieveResultPropertiesHandler
     @NotNull
     protected String getGetterMethod(@NotNull final Class<?> type)
     {
-        return getAccessorMethod("get", type, StringUtils.getInstance());
+        return new BindQueryParametersHandler().getAccessorMethod("get", type, StringUtils.getInstance());
     }
 
 
