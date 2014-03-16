@@ -72,7 +72,7 @@ import java.util.List;
 
 /**
  * Detects and reports any unused properties (declared but not available
- * int
+ * in the {@link java.sql.ResultSet}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/16 13:10
