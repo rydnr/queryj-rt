@@ -128,7 +128,7 @@ public class RetrieveResultPropertiesHandlerTest
         EasyMock.expect(t_ResultDAO.findByPrimaryKey(t_Result.getId())).andReturn(t_Result);
         EasyMock.expect(t_Statement.executeQuery()).andReturn(t_ResultSet);
 
-        new QueryJCommandWrapper<MetadataManager>()
+        new QueryJCommandWrapper<MetadataManager>(parameters).setSetting();
         new QueryJCommandWrapper<CustomSqlProvider>(parameters).setSetting(
             CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, t_CustomSqlProvider);
 
