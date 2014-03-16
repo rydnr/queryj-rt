@@ -43,6 +43,7 @@ import org.acmsl.commons.utils.StringUtils;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.CustomResultWithInvalidNumberOfColumnsException;
 import org.acmsl.queryj.api.exceptions.CustomResultWithNoPropertiesException;
+import org.acmsl.queryj.api.exceptions.CustomSqlWithNoPropertiesException;
 import org.acmsl.queryj.api.exceptions.NoTableMatchingCustomResultException;
 import org.acmsl.queryj.api.exceptions.NoTableMatchingSqlException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
