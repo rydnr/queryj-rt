@@ -48,7 +48,7 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
- * The {@link org.acmsl.queryj.customsql.Property properties} are not available
+ * Represents the error when trying to use the {@link org.acmsl.queryj.customsql.Property properties}, when
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/16 09:11
