@@ -117,7 +117,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
             int debug = 1;
         }
 
-        @NotNull List<Property<String>> t_lProperties =
+        @NotNull List<Property<String>> properties =
             retrieveExplicitProperties(
                 sql,
                 sqlResult,
@@ -125,13 +125,13 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
                 metadataManager,
                 typeManager);
 
-        if  (t_lProperties.size() == 0)
+        if  (properties.size() == 0)
         {
-            t_lProperties =
+            properties =
                 retrieveImplicitProperties(sqlResult, customSqlProvider, metadataManager, typeManager);
         }
 
-        if  (t_lProperties.size() == 0)
+        if  (properties.size() == 0)
         {
             throw new CustomResultWithNoPropertiesException(sqlResult, sql);
         }
@@ -141,7 +141,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
             {
                 @NotNull Method t_Method;
 
-                for (@Nullable final Property<String> t_Property : t_lProperties)
+                for (@Nullable final Property<String> t_Property : properties)
                 {
                     if (t_Property != null)
                     {
@@ -174,11 +174,11 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
 
                 final int t_iColumnCount = t_Metadata.getColumnCount();
 
-                if  (t_iColumnCount < t_lProperties.size())
+                if  (t_iColumnCount < properties.size())
                 {
                     throw
                         new CustomResultWithInvalidNumberOfColumnsException(
-                            t_iColumnCount, t_lProperties.size());
+                            t_iColumnCount, properties.size());
                 }
 
                 @NotNull final List<Property<String>> t_lColumns = new ArrayList<>();
@@ -188,8 +188,8 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
                     t_lColumns.add(createPropertyFrom(t_Metadata, t_iIndex));
                 }
 
-                diagnoseMissingProperties(t_lProperties, t_lColumns, sql);
-                diagnoseUnusedProperties(t_lProperties, t_lColumns, sql);
+                diagnoseMissingProperties(properties, t_lColumns, sql);
+                diagnoseUnusedProperties(properties, t_lColumns, sql);
             }
         }
     }
