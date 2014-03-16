@@ -488,7 +488,8 @@ public class RetrieveResultPropertiesHandler
 
         if (result == null)
         {
-            throw new PropertiesNotAvailableForValidationException
+            @NotNull final Sql<String> t_Sql =
+            throw new PropertiesNotAvailableForValidationException(retrieveCurre)
         }
     }
 }
