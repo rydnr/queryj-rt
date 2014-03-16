@@ -39,7 +39,16 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.api.exceptions.CustomResultWithInvalidNumberOfColumnsException;
+import org.acmsl.queryj.api.exceptions.CustomResultWithNoPropertiesException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.api.exceptions.UnsupportedCustomResultPropertyTypeException;
+import org.acmsl.queryj.customsql.CustomSqlProvider;
+import org.acmsl.queryj.customsql.Property;
+import org.acmsl.queryj.customsql.Result;
+import org.acmsl.queryj.customsql.Sql;
+import org.acmsl.queryj.metadata.MetadataManager;
+import org.acmsl.queryj.metadata.TypeManager;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
 import org.jetbrains.annotations.NotNull;
 
@@ -47,6 +56,14 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
+
+import java.lang.reflect.Method;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -73,4 +90,108 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
     {
         return true;
     }
+
+    /**
+     * Validates the result set.
+     * @param resultSet the result set to validate.
+     * @param sql the sql.
+     * @param sqlResult the custom sql result.
+     * @param customSqlProvider the <code>CustomSqlProvider</code> instance.
+     * @param metadataManager the <code>MetadataManager</code> instance.
+     * @param typeManager the <code>MetadataTypeManager</code> instance.
+     * @throws java.sql.SQLException if the SQL operation fails.
+     * @throws QueryJBuildException if the expected result cannot be extracted.
+     */
+    protected void validateResultSet(
+        @NotNull final ResultSet resultSet,
+        @NotNull final Sql<String> sql,
+        final Result<String> sqlResult,
+        @NotNull final CustomSqlProvider customSqlProvider,
+        @NotNull final MetadataManager metadataManager,
+        @NotNull final TypeManager typeManager)
+        throws SQLException,
+        QueryJBuildException
+    {
+        if (sql.getId().equalsIgnoreCase("find-product-types-by-draw-type-id"))
+        {
+            int debug = 1;
+        }
+
+        @NotNull List<Property<String>> t_lProperties =
+            retrieveExplicitProperties(
+                sql,
+                sqlResult,
+                customSqlProvider.getSqlPropertyDAO(),
+                metadataManager,
+                typeManager);
+
+        if  (t_lProperties.size() == 0)
+        {
+            t_lProperties =
+                retrieveImplicitProperties(sqlResult, customSqlProvider, metadataManager, typeManager);
+        }
+
+        if  (t_lProperties.size() == 0)
+        {
+            throw new CustomResultWithNoPropertiesException(sqlResult, sql);
+        }
+        else
+        {
+            if  (resultSet.next())
+            {
+                @NotNull Method t_Method;
+
+                for (@Nullable final Property<String> t_Property : t_lProperties)
+                {
+                    if (t_Property != null)
+                    {
+                        try
+                        {
+                            t_Method =
+                                retrieveMethod(
+                                    ResultSet.class,
+                                    getGetterMethod(typeManager.getClass(t_Property.getType())),
+                                    new Class<?>[]
+                                        {
+                                            String.class
+                                        });
+                        }
+                        catch  (@NotNull final NoSuchMethodException noSuchMethod)
+                        {
+                            throw
+                                new UnsupportedCustomResultPropertyTypeException(
+                                    t_Property, sql, sqlResult, noSuchMethod);
+                        }
+
+                        invokeResultSetGetter(
+                            t_Method, resultSet, t_Property, sqlResult, sql);
+                    }
+                }
+            }
+            else
+            {
+                @NotNull final ResultSetMetaData t_Metadata = resultSet.getMetaData();
+
+                final int t_iColumnCount = t_Metadata.getColumnCount();
+
+                if  (t_iColumnCount < t_lProperties.size())
+                {
+                    throw
+                        new CustomResultWithInvalidNumberOfColumnsException(
+                            t_iColumnCount, t_lProperties.size());
+                }
+
+                @NotNull final List<Property<String>> t_lColumns = new ArrayList<>();
+
+                for  (int t_iIndex = 1; t_iIndex <= t_iColumnCount; t_iIndex++)
+                {
+                    t_lColumns.add(createPropertyFrom(t_Metadata, t_iIndex));
+                }
+
+                diagnoseMissingProperties(t_lProperties, t_lColumns, sql);
+                diagnoseUnusedProperties(t_lProperties, t_lColumns, sql);
+            }
+        }
+    }
+
 }
