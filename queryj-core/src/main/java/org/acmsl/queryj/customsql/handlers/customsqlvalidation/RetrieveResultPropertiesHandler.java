@@ -278,7 +278,7 @@ public class RetrieveResultPropertiesHandler
         throws SQLException
     {
         @NotNull final String t_strColumnName = metadata.getColumnName(index);
-        final String t_strType = metadata.getColumnTypeName(index);
+        @NotNull final String t_strType = metadata.getColumnTypeName(index);
         final boolean t_bNullable = (metadata.isNullable(index) == ResultSetMetaData.columnNullable);
 
         return new PropertyElement<>(t_strColumnName, t_strColumnName, index, t_strType, t_bNullable);
