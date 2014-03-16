@@ -93,7 +93,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
     /**
      * The key to store the validation outcomes per SQL.
      */
-    private static final String VALIDATION = "resultset-getters-validation";
+    protected static final String VALIDATION = "resultset-getters-validation";
 
     /**
      * Asks the handler to process the command. The idea is that each
