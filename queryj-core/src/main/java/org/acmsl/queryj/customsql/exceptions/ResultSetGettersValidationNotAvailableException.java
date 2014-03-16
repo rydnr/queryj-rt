@@ -59,6 +59,6 @@ public class ResultSetGettersValidationNotAvailableException
 {
     public ResultSetGettersValidationNotAvailableException(@NotNull final Sql<String> sql)
     {
-        super("");
+        super("ResultSetGetters.validation.not.available", new String[] { sql.getId() });
     }
 }
