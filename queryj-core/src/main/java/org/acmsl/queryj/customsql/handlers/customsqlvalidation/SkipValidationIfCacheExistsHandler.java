@@ -88,8 +88,8 @@ public class SkipValidationIfCacheExistsHandler
      * @param command the command.
      * @param handler the {@link CacheValidationOutcomeHandler} instance (for using some of its
      * methods).
-     * @return
-     * @throws QueryJBuildException
+     * @return {@code true} in such case.
+     * @throws QueryJBuildException if
      */
     protected boolean validationCacheFound(
         @NotNull final Sql<String> sql,
