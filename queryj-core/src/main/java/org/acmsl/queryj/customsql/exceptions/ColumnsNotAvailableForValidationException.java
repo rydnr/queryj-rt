@@ -38,6 +38,7 @@ package org.acmsl.queryj.customsql.exceptions;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.api.exceptions.QueryJNonCheckedException;
 import org.acmsl.queryj.customsql.Sql;
 import org.jetbrains.annotations.NotNull;
 
@@ -52,7 +53,8 @@ import org.checkthread.annotations.ThreadSafe;
  *        Created: 2014/03/16 11:22
  */
 @ThreadSafe
-public class ColumnsNotAvailableForValidationException extends Throwable
+public class ColumnsNotAvailableForValidationException
+    extends QueryJNonCheckedException
 {
     public ColumnsNotAvailableForValidationException(final Sql<String> sql)
     {
