@@ -50,7 +50,7 @@ import org.checkthread.annotations.ThreadSafe;
 /**
  * Represents the error when trying to access the list of columns (represented as
  * {@link org.acmsl.queryj.customsql.Property properties}) extracted from the {@link java.sql.ResultSet}, before
- * the handler flow has extracted them.
+ * the handler flow has actually extracted them.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/16 11:22
