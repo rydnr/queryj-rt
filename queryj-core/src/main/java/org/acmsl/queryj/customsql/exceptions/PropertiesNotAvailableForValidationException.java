@@ -56,7 +56,11 @@ import org.checkthread.annotations.ThreadSafe;
 public class PropertiesNotAvailableForValidationException
     extends QueryJNonCheckedException
 {
-    public PropertiesNotAvailableForValidationException(final Sql<String> sql)
+    /**
+     * Creates an instance with the {@link Sql} context.
+     * @param sql the SQL.
+     */
+    public PropertiesNotAvailableForValidationException(@NotNull final Sql<String> sql)
     {
         super("Properties.not.available.for.validation", new Object[] { sql.getId(), sql.getResultRef() });
     }
