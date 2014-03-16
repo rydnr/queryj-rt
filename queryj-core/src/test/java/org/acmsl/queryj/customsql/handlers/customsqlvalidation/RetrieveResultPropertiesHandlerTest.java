@@ -59,6 +59,7 @@ import org.acmsl.queryj.customsql.handlers.CustomSqlProviderRetrievalHandler;
 import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.SqlParameterDAO;
 import org.acmsl.queryj.metadata.SqlResultDAO;
+import org.acmsl.queryj.metadata.TableDAO;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
 import org.acmsl.queryj.tools.handlers.DatabaseMetaDataLoggingHandler;
 import org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandler;
@@ -126,6 +127,7 @@ public class RetrieveResultPropertiesHandlerTest
         @NotNull final SqlResultDAO t_ResultDAO = PowerMock.createNiceMock(SqlResultDAO.class);
         @NotNull final ResultSet t_ResultSet = PowerMock.createNiceMock(ResultSet.class);
         @NotNull final PreparedStatement t_Statement = PowerMock.createNiceMock(PreparedStatement.class);
+        @NotNull final TableDAO t_TableDAO = PowerMock.createNiceMock(TableDAO.class);
 
         EasyMock.expect(t_MetadataManager.getTableDAO()).andReturn(t_TableDAO);
         EasyMock.expect(t_CustomSqlProvider.getSqlResultDAO()).andReturn(t_ResultDAO);
