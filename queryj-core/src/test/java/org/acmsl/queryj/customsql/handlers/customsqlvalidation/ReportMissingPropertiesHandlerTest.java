@@ -65,6 +65,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 import org.mockito.Mockito;
 import org.powermock.api.easymock.PowerMock;
+import org.powermock.api.mockito.PowerMockito;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 
 import java.util.ArrayList;
@@ -119,6 +120,6 @@ public class ReportMissingPropertiesHandlerTest
         Assert.assertFalse(instance.handle(t_Parameters));
 
         EasyMock.verify(t_Log);
-        PowerMockito.
+        PowerMockito.verifyStatic();
     }
 }
