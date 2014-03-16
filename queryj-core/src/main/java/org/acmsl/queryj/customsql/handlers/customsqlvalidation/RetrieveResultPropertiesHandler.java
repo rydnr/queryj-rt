@@ -280,7 +280,6 @@ public class RetrieveResultPropertiesHandler
 
     /**
      * Retrieves the properties declared for given result.
-     * @param sql the sql.
      * @param sqlResult the custom sql result.
      * @param propertyDAO the {@link org.acmsl.queryj.metadata.SqlPropertyDAO} instance.
      * @return such properties.
