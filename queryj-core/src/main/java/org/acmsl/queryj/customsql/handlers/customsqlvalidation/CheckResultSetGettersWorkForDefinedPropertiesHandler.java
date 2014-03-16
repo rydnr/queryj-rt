@@ -138,7 +138,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
      * @return the result.
      */
     @Nullable
-    protected Result<String> retrieveResult(@NotNull final ResultRef resultRef, final CustomSqlProvider customSqlProvider)
+    protected Result<String> retrieveResult(@NotNull final ResultRef resultRef, @NotNull final CustomSqlProvider customSqlProvider)
     {
         @NotNull final SqlResultDAO t_ResultDAO = customSqlProvider.getSqlResultDAO();
 
