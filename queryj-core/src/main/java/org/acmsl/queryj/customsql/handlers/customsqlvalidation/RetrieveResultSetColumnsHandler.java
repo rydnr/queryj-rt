@@ -122,7 +122,8 @@ public class RetrieveResultSetColumnsHandler
     @NotNull
     protected List<Property<String>> retrieveColumns(@NotNull final QueryJCommand command)
     {
-        new QueryJCommandWrapper<Property<String>>(command).getListSetting(CURRENT_COLUMNS, columns);
+        @Nullable final List<Property<String>> result =
+            new QueryJCommandWrapper<Property<String>>(command).getListSetting(CURRENT_COLUMNS);
     }
 
     /**
