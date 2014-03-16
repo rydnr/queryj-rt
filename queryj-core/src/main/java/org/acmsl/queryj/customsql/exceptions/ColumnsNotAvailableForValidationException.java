@@ -56,6 +56,10 @@ import org.checkthread.annotations.ThreadSafe;
 public class ColumnsNotAvailableForValidationException
     extends QueryJNonCheckedException
 {
+    /**
+     * Creates an instance using given {@link Sql} as context.
+     * @param sql
+     */
     public ColumnsNotAvailableForValidationException(final Sql<String> sql)
     {
         super("columns.not.available.for.validation", new String[] { sql.getId() });
