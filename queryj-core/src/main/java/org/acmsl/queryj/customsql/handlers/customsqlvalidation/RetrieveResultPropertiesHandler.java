@@ -333,7 +333,7 @@ public class RetrieveResultPropertiesHandler
     {
         return
             retrieveImplicitProperties(
-                sqlResult,
+                table,
                 customSqlProvider,
                 metadataManager,
                 typeManager,
