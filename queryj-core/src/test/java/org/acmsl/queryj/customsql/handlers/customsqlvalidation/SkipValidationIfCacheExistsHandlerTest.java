@@ -73,6 +73,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 import java.io.File;
+import java.nio.charset.Charset;
 
 /**
  *
@@ -132,7 +133,7 @@ public class SkipValidationIfCacheExistsHandlerTest
         @NotNull final String hash = "bzS4lagreKYbqR9tX8G2d5CCYGA%3D";
 
         @NotNull final File hashFile = new File(tempFolder.getRoot() + File.separator + hash);
-        FileUtils.getInstance().writeFileIfPossible(hashFile, "", t_Charset);
+        FileUtils.getInstance().writeFileIfPossible(hashFile, "", Charset.defaultCharset());
         instance.handle(t_Parameters);
 
         Assert.assertTrue(new File(tempFolder.getRoot() + File.separator + hash).exists());
