@@ -232,60 +232,6 @@ public class RetrieveResultPropertiesHandler
                 throw new CustomSqlWithNoPropertiesException(sql);
             }
         }
-        else
-        {
-            if  (resultSet.next())
-            {
-                @NotNull Method t_Method;
-
-                for (@Nullable final Property<String> t_Property : result)
-                {
-                    if (t_Property != null)
-                    {
-                        try
-                        {
-                            t_Method =
-                                retrieveMethod(
-                                    ResultSet.class,
-                                    getGetterMethod(typeManager.getClass(t_Property.getType())),
-                                    new Class<?>[]
-                                        {
-                                            String.class
-                                        });
-                        }
-                        catch  (@NotNull final NoSuchMethodException noSuchMethod)
-                        {
-                            throw
-                                new UnsupportedCustomResultPropertyTypeException(
-                                    t_Property, sql, sqlResult, noSuchMethod);
-                        }
-
-                        invokeResultSetGetter(
-                            t_Method, resultSet, t_Property, sqlResult, sql);
-                    }
-                }
-            }
-            else
-            {
-                @NotNull final ResultSetMetaData t_Metadata = resultSet.getMetaData();
-
-                final int t_iColumnCount = t_Metadata.getColumnCount();
-
-                if  (t_iColumnCount < result.size())
-                {
-                    throw
-                        new CustomResultWithInvalidNumberOfColumnsException(
-                            t_iColumnCount, result.size());
-                }
-
-                @NotNull final List<Property<String>> t_lColumns = new ArrayList<>();
-
-                for  (int t_iIndex = 1; t_iIndex <= t_iColumnCount; t_iIndex++)
-                {
-                    t_lColumns.add(createPropertyFrom(t_Metadata, t_iIndex));
-                }
-            }
-        }
 
         return result;
     }
