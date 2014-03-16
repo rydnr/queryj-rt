@@ -84,10 +84,9 @@ public class RetrieveResultSetColumnsHandler
 
         try
         {
-
+            @NotNull final List<Property<String>> t_lColumns =
+                retrieveColumns(t_ResultSet, new RetrieveResultPropertiesHandler());
         }
-        @NotNull final List<Property<String>> t_lColumns =
-            retrieveColumns(t_ResultSet, new RetrieveResultPropertiesHandler());
 
         return true;
     }
