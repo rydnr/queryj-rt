@@ -85,7 +85,7 @@ public class CustomSqlValidationChainTest
 
         @NotNull final Chain<QueryJCommand, QueryJBuildException, QueryJCommandHandler<QueryJCommand>> t_Chain =
             EasyMock.createNiceMock(Chain.class);
-
+        EasyMock.replay();
         instance.buildChain(t_Chain);
 
         Assert.assertTrue(contains(BindQueryParametersHandler.class, t_Chain));
