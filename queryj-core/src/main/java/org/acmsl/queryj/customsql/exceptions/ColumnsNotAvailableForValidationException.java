@@ -48,9 +48,10 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
+ * Represents the error when trying to access the list of columns (represented as {@link Property}
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
- *        Created: 2014/03/16 11:22
+ * Created: 2014/03/16 11:22
  */
 @ThreadSafe
 public class ColumnsNotAvailableForValidationException
