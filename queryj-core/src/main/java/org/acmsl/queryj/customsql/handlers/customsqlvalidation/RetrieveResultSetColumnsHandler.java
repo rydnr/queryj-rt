@@ -101,7 +101,7 @@ public class RetrieveResultSetColumnsHandler
         }
         catch (@NotNull final SQLException sqlException)
         {
-            // TODO wrap and throw exception
+            throw new
         }
 
         return false;
