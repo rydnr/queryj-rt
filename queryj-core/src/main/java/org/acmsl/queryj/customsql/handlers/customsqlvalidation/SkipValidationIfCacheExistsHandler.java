@@ -79,6 +79,8 @@ public class SkipValidationIfCacheExistsHandler
 
     protected boolean validationCacheFound(@NotNull final Sql<String> sql, @NotNull final QueryJCommand command)
     {
-        return false;  //To change body of created methods use File | Settings | File Templates.
+        final boolean result;
+
+        return result;
     }
 }
