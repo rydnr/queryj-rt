@@ -50,6 +50,7 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 
+import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.util.ArrayList;
 import java.util.List;
@@ -80,7 +81,7 @@ public class RetrieveResultSetColumnsHandler
         return true;
     }
 
-    protected List<Property<String>> retrieveColumns()
+    protected List<Property<String>> retrieveColumns(@NotNull final ResultSet resultSet)
     {
         @NotNull final ResultSetMetaData t_Metadata = resultSet.getMetaData();
 
