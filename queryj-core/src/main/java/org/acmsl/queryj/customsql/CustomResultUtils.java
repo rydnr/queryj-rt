@@ -368,6 +368,7 @@ public class CustomResultUtils
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager)
     {
+        @Nullable final String result;
         @Nullable final T t_strDao = sql.getDao();
 
         if (t_strDao != null)
@@ -380,12 +381,6 @@ public class CustomResultUtils
                 result = t_Table.getName();
             }
         }
-
-//        if (   (result == null)
-//            && (!t_bBreakLoop))
-//        {
-//            throw new IllegalArgumentException("Result " + resultElement.getId() + " does not match any table");
-//        }
 
         return result;
     }
