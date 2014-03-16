@@ -128,7 +128,6 @@ public class RetrieveResultPropertiesHandlerTest
 
         new QueryJCommandWrapper<CustomSqlProvider>(parameters).setSetting(
             CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, t_CustomSqlProvider);
-        new ExecuteQueryHandler().handle(parameters);
 
         EasyMock.replay(t_CustomSqlProvider);
         EasyMock.replay(t_ResultDAO);
