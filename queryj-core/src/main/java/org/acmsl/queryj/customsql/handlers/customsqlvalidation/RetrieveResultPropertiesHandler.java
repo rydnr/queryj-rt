@@ -117,7 +117,7 @@ public class RetrieveResultPropertiesHandler
         throws QueryJBuildException
     {
         @NotNull final ResultSet t_ResultSet = new ExecuteQueryHandler().retrieveCurrentResultSet(command);
-        @NotNull final Result<String> t_Result =
+        @NotNull final Result<String> t_Result;
         validateResultSet(t_ResultSet, t_Sql, t_Result, t_CustomSqlProvider, t_MetadataManager, new JdbcTypeManager());
         return false;
     }
