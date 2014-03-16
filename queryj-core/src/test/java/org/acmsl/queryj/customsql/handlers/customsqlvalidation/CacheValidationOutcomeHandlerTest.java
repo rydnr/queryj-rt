@@ -126,7 +126,7 @@ public class CacheValidationOutcomeHandlerTest
 
         @NotNull final Charset t_Charset = Charset.defaultCharset();
 
-        @NotNull final String hash = t_CustomSqlProvider.getHash(t_Sql, t_Charset.displayName());
+        @NotNull final String hash = "bzS4lagreKYbqR9tX8G2d5CCYGA%3D";
 
         instance.handle(t_Command);
 
