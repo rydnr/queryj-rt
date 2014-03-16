@@ -81,7 +81,7 @@ public class ReportUnusedPropertiesHandlerTest
         @NotNull final Log t_Log = EasyMock.createNiceMock(Log.class);
 
         @NotNull final ReportUnusedPropertiesHandler instance =
-            new ReportMissingPropertiesHandler()
+            new ReportUnusedPropertiesHandler()
             {
                 /**
                  * {@inheritDoc}
@@ -99,11 +99,11 @@ public class ReportUnusedPropertiesHandlerTest
         @NotNull final List<Property<String>> t_lProperties = new ArrayList<>(2);
         t_lProperties.add(new PropertyElement<>("name", "name", 1, String.class.getSimpleName(), false));
         t_lProperties.add(new PropertyElement<>("tmst", "tmst", 2, "Date", false));
+        t_lColumns.add(new PropertyElement<>("flag", "flg", 3, int.class.getSimpleName(), false));
 
         @NotNull final List<Property<String>> t_lColumns = new ArrayList<>(3);
         t_lColumns.add(new PropertyElement<>("name", "name", 1, String.class.getSimpleName(), false));
         t_lColumns.add(new PropertyElement<>("tmst", "tmst", 2, "Date", false));
-        t_lColumns.add(new PropertyElement<>("flag", "flg", 3, int.class.getSimpleName(), false));
 
         @NotNull final Sql<String> t_Sql =
             new SqlElement<>("id", "dao", "name", "String", Cardinality.SINGLE, "all", true, false, "description");
