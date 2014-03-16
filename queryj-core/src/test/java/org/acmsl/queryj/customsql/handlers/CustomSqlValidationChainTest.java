@@ -91,17 +91,17 @@ public class CustomSqlValidationChainTest
         Assert.assertTrue(contains(BindQueryParametersHandler.class, t_Chain));
 
         Assert.assertTrue(contains(CacheValidationOutcomeHandler.class, t_Chain));
-        Assert.assertTrue(t_Chain.contains(CheckResultSetGettersWorkForDefinedPropertiesHandler.class, t_Chain));
-        Assert.assertTrue(t_Chain.contains(ExecuteQueryHandler.class, t_Chain));
-        Assert.assertTrue(t_Chain.contains(GlobalValidationEnabledHandler.class, t_Chain));
-        Assert.assertTrue(t_Chain.contains(QueryValidationEnabledHandler.class, t_Chain));
-        Assert.assertTrue(t_Chain.contains(ReportMissingPropertiesHandler.class, t_Chain));
-        Assert.assertTrue(t_Chain.contains(ReportUnusedPropertiesHandler.class, t_Chain));
-        Assert.assertTrue(t_Chain.contains(RetrieveQueryHandler.class, t_Chain));
-        Assert.assertTrue(t_Chain.contains(RetrieveResultPropertiesHandler.class, t_Chain));
-        Assert.assertTrue(t_Chain.contains(RetrieveResultSetColumnsHandler.class, t_Chain));
-        Assert.assertTrue(t_Chain.contains(SetupPreparedStatementHandler.class, t_Chain));
-        Assert.assertTrue(t_Chain.contains(SkipValidationIfCacheExistsHandler.class, t_Chain));
+        Assert.assertTrue(contains(CheckResultSetGettersWorkForDefinedPropertiesHandler.class, t_Chain));
+        Assert.assertTrue(contains(ExecuteQueryHandler.class, t_Chain));
+        Assert.assertTrue(contains(GlobalValidationEnabledHandler.class, t_Chain));
+        Assert.assertTrue(contains(QueryValidationEnabledHandler.class, t_Chain));
+        Assert.assertTrue(contains(ReportMissingPropertiesHandler.class, t_Chain));
+        Assert.assertTrue(contains(ReportUnusedPropertiesHandler.class, t_Chain));
+        Assert.assertTrue(contains(RetrieveQueryHandler.class, t_Chain));
+        Assert.assertTrue(contains(RetrieveResultPropertiesHandler.class, t_Chain));
+        Assert.assertTrue(contains(RetrieveResultSetColumnsHandler.class, t_Chain));
+        Assert.assertTrue(contains(SetupPreparedStatementHandler.class, t_Chain));
+        Assert.assertTrue(contains(SkipValidationIfCacheExistsHandler.class, t_Chain));
     }
 
     protected boolean contains(
