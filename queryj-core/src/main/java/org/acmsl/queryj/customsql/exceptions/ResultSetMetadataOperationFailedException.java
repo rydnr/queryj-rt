@@ -36,7 +36,7 @@
 package org.acmsl.queryj.customsql.exceptions;
 
 /*
- * Importing JetBrains annotations.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.api.exceptions.QueryJNonCheckedException;
 import org.acmsl.queryj.customsql.ResultRef;
