@@ -178,8 +178,7 @@ public class RetrieveResultPropertiesHandler
         @NotNull List<Property<String>> t_lProperties = new ArrayList<>();
 
         @Nullable final String t_strTable =
-            CustomResultUtils.getInstance().retrieveTable(sql,
-                metadataManager);
+            CustomResultUtils.getInstance().retrieveTable(sql, metadataManager);
 
         if (sqlResult == null)
         {
