@@ -84,7 +84,7 @@ public class UnsupportedCustomResultPropertyTypeException
     {
         super(
             "unsupported.property.type.in.custom-result",
-            new Object[] { property.getType(), property.getId(), result.getId(), sql.getId() },
+            new Object[] { property.getType(), property.getId(), (result != null) ? result.getId(), sql.getId() },
             cause);
     }
 
