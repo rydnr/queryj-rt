@@ -287,8 +287,7 @@ public class RetrieveResultPropertiesHandler
      */
     @NotNull
     protected List<Property<String>> retrieveExplicitProperties(
-        @NotNull final Result<String> sqlResult,
-        @NotNull final SqlPropertyDAO propertyDAO)
+        @NotNull final Result<String> sqlResult, @NotNull final SqlPropertyDAO propertyDAO)
         throws  QueryJBuildException
     {
         @NotNull final List<Property<String>> result = new ArrayList<>();
