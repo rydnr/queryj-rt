@@ -114,6 +114,16 @@ public class CacheValidationOutcomeHandlerTest
         @NotNull final List<Sql<String>> sqlList = new ArrayList<>(1);
         sqlList.add(t_Sql);
 
+        @NotNull final CustomSqlProvider t_CustomSqlProvider =
+            new SemiMockedAbstractCustomSqlProvider(
+                sqlDAO,
+                parameterDAO,
+                propertyDAO,
+                resultDAO,
+                connectionFlagsDAO,
+                statementFlagsDAO,
+                resultSetFlagsDAO);
+
         @NotNull final QueryJCommand t_Command = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
         new QueryJCommandWrapper<File>(t_Command).setSetting(
