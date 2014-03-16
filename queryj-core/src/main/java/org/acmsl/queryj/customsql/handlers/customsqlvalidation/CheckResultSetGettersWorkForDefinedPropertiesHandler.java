@@ -96,7 +96,14 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
         @NotNull final Sql<String> t_Sql = new RetrieveQueryHandler().retrieveCurrentSql(command);
         @NotNull final Result<String> t_Result = retrieveResult(t_Sql.getResultRef());
 
-        validateProperties(t_ResultSet, t_lProperties, t_Sql, t_Result, new JdbcTypeManager(), t_Handler);
+        try
+        {
+            validateProperties(t_ResultSet, t_lProperties, t_Sql, t_Result, new JdbcTypeManager(), t_Handler);
+        }
+        catch (@NotNull final SQLException sqlException)
+        {
+            // TODO
+        }
 
         return false;
     }
