@@ -154,6 +154,7 @@ public class RetrieveResultPropertiesHandlerTest
         EasyMock.replay(t_MetadataManager);
         EasyMock.replay(t_TableDAO);
         EasyMock.replay(t_Table);
+        EasyMock.replay(t_PropertyDAO);
         EasyMock.replay(t_ResultDAO);
         EasyMock.replay(t_ResultSet);
         EasyMock.replay(t_Statement);
