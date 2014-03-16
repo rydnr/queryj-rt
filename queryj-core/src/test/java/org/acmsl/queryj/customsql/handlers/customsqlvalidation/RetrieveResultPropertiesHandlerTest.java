@@ -147,7 +147,7 @@ public class RetrieveResultPropertiesHandlerTest
         EasyMock.expect(t_PropertyDAO.findByPrimaryKey(t_Property2.getId())).andReturn(t_Property2);
         EasyMock.expect(t_Statement.executeQuery()).andReturn(t_ResultSet);
         EasyMock.expect(t_ResultSet.getMetaData()).andReturn(t_Metadata);
-
+        EasyMock.expect(t_Metadata.getColumnCount()).andReturn()
         new QueryJCommandWrapper<MetadataManager>(t_Parameters)
             .setSetting(DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, t_MetadataManager);
         new QueryJCommandWrapper<CustomSqlProvider>(t_Parameters).setSetting(
