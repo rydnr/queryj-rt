@@ -65,7 +65,7 @@ public class ColumnsNotAvailableForValidationException
      * Creates an instance using given {@link Sql} as context.
      * @param sql the SQL.
      */
-    public ColumnsNotAvailableForValidationException(final Sql<String> sql)
+    public ColumnsNotAvailableForValidationException(@NotNull final Sql<String> sql)
     {
         super("columns.not.available.for.validation", new String[] { sql.getId() });
     }
