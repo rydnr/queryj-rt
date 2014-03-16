@@ -368,21 +368,6 @@ public class CustomResultUtils
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager)
     {
-        @Nullable String result = retrieveCachedEntry("" + resultId);
-
-        if (result == null)
-        {
-            if (DebugUtils.getInstance().debugEnabledForResultId(resultId))
-            {
-                @SuppressWarnings("unused") final int a = 1;
-            }
-
-            String t_strDao;
-
-            for (@Nullable final Sql<String> t_Sql : retrieveSqlElementsByResultId(customSqlProvider, "" + resultId))
-            {
-                if (t_Sql != null)
-                {
                     t_strDao = t_Sql.getDao();
 
                     if (t_strDao != null)
