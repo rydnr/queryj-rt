@@ -107,7 +107,7 @@ public class ReportMissingPropertiesHandlerTest
 
         @NotNull final Log t_Log = EasyMock.createNiceMock(Log.class);
 
-        PowerMock.mockStatic(UniqueLogFactory.getLog(CustomSqlValidationHandler.class);
+        PowerMock.mockStatic(UniqueLogFactory.getLog(CustomSqlValidationHandler.class));
 
                              Assert.assertFalse(instance.handle(t_Parameters));
     }
