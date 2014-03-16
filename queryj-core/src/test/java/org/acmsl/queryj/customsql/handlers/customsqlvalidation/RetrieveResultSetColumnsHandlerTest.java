@@ -124,19 +124,6 @@ public class RetrieveResultSetColumnsHandlerTest
             t_iIndex++;
         }
 
-        new QueryJCommandWrapper<Sql<String>>(t_Parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, t_Sql);
-        new QueryJCommandWrapper<MetadataManager>(t_Parameters)
-            .setSetting(DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, t_MetadataManager);
-        new QueryJCommandWrapper<CustomSqlProvider>(t_Parameters).setSetting(
-            CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, t_CustomSqlProvider);
-        new QueryJCommandWrapper<Sql>(t_Parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, t_Sql);
-
-        EasyMock.replay(t_CustomSqlProvider);
-        EasyMock.replay(t_MetadataManager);
-        EasyMock.replay(t_TableDAO);
-        EasyMock.replay(t_Table);
-        EasyMock.replay(t_PropertyDAO);
-        EasyMock.replay(t_ResultDAO);
         EasyMock.replay(t_ResultSet);
         EasyMock.replay(t_Statement);
 
