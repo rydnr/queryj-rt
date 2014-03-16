@@ -212,7 +212,7 @@ public class ReportMissingPropertiesHandler
         for (@Nullable final Property<String> property : properties)
         {
             if (   (property != null)
-                   && (column.equalsIgnoreCase(property.getColumnName())))
+                && (column.equalsIgnoreCase(property.getColumnName())))
             {
                 result = true;
                 break;
