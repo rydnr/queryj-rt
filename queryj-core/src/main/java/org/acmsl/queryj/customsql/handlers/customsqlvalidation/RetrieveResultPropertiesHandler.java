@@ -179,13 +179,13 @@ public class RetrieveResultPropertiesHandler
 
         if (sqlResult != null)
         {
-            t_lProperties =
+            t_lProperties.addAll(
                 retrieveExplicitProperties(
                     sql,
                     sqlResult,
                     customSqlProvider.getSqlPropertyDAO(),
                     metadataManager,
-                    typeManager);
+                    typeManager));
         }
 
         if  (t_lProperties.size() == 0)
