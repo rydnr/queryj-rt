@@ -52,6 +52,9 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 
+/*
+ * Importing JetBrains annotations.
+ */
 import java.sql.SQLException;
 
 /**
