@@ -43,12 +43,21 @@ import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
+import org.acmsl.queryj.customsql.CustomSqlProviderTest.SemiMockedAbstractCustomSqlProvider;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.Sql.Cardinality;
+import org.acmsl.queryj.customsql.SqlConnectionFlagsDAO;
 import org.acmsl.queryj.customsql.SqlElement;
+import org.acmsl.queryj.customsql.SqlResultSetFlagsDAO;
+import org.acmsl.queryj.customsql.SqlStatementFlagsDAO;
 import org.acmsl.queryj.customsql.handlers.CustomSqlCacheWritingHandler;
 import org.acmsl.queryj.customsql.handlers.CustomSqlProviderRetrievalHandler;
+import org.acmsl.queryj.metadata.SqlDAO;
+import org.acmsl.queryj.metadata.SqlParameterDAO;
+import org.acmsl.queryj.metadata.SqlPropertyDAO;
+import org.acmsl.queryj.metadata.SqlResultDAO;
 import org.apache.commons.configuration.PropertiesConfiguration;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -88,6 +97,24 @@ public class SkipValidationIfCacheExistsHandlerTest
 
         @NotNull final Sql<String> t_Sql =
             new SqlElement<>("sql-id", "dao", "sql-name", "select", Cardinality.SINGLE, "all", true, false, "fake sql");
+
+        @NotNull final SqlDAO sqlDAO = EasyMock.createNiceMock(SqlDAO.class);
+        @NotNull final SqlParameterDAO parameterDAO = EasyMock.createNiceMock(SqlParameterDAO.class);
+        @NotNull final SqlPropertyDAO propertyDAO = EasyMock.createNiceMock(SqlPropertyDAO.class);
+        @NotNull final SqlResultDAO resultDAO = EasyMock.createNiceMock(SqlResultDAO.class);
+        @NotNull final SqlConnectionFlagsDAO connectionFlagsDAO = EasyMock.createNiceMock(SqlConnectionFlagsDAO.class);
+        @NotNull final SqlStatementFlagsDAO statementFlagsDAO = EasyMock.createNiceMock(SqlStatementFlagsDAO.class);
+        @NotNull final SqlResultSetFlagsDAO resultSetFlagsDAO = EasyMock.createNiceMock(SqlResultSetFlagsDAO.class);
+
+        @NotNull final CustomSqlProvider t_CustomSqlProvider =
+            new SemiMockedAbstractCustomSqlProvider(
+                sqlDAO,
+                parameterDAO,
+                propertyDAO,
+                resultDAO,
+                connectionFlagsDAO,
+                statementFlagsDAO,
+                resultSetFlagsDAO);
 
         @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
