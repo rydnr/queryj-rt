@@ -97,7 +97,7 @@ public class RetrieveResultSetColumnsHandler
         return false;
     }
 
-    protected void setColumns(@NotNull final List<Property<String>> columns, final QueryJCommand command)
+    protected void setColumns(@NotNull final List<Property<String>> columns, @NotNull final QueryJCommand command)
     {
         //To change body of created methods use File | Settings | File Templates.
     }
