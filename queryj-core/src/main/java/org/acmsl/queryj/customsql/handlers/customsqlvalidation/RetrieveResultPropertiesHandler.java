@@ -355,8 +355,7 @@ public class RetrieveResultPropertiesHandler
         @NotNull final Result<String> sqlResult,
         @Nullable final String table,
         @NotNull final MetadataManager metadataManager,
-        @NotNull final TypeManager typeManager,
-        @NotNull final CustomResultUtils customResultUtils)
+        @NotNull final TypeManager typeManager)
         throws  QueryJBuildException
     {
         @NotNull final List<Property<String>> result = new ArrayList<>();
