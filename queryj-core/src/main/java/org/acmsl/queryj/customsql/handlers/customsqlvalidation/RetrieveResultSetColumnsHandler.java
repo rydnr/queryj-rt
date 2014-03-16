@@ -73,4 +73,6 @@ public class RetrieveResultSetColumnsHandler
     {
         return true;
     }
+
+    protected List<Property<List>>
 }
