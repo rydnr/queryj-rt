@@ -38,14 +38,46 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
+import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.QueryJCommandWrapper;
+import org.acmsl.queryj.customsql.CustomSqlProvider;
+import org.acmsl.queryj.customsql.ParameterRefElement;
+import org.acmsl.queryj.customsql.Property;
+import org.acmsl.queryj.customsql.PropertyElement;
+import org.acmsl.queryj.customsql.PropertyRefElement;
+import org.acmsl.queryj.customsql.Result;
+import org.acmsl.queryj.customsql.ResultElement;
+import org.acmsl.queryj.customsql.ResultRefElement;
+import org.acmsl.queryj.customsql.Sql;
+import org.acmsl.queryj.customsql.Sql.Cardinality;
+import org.acmsl.queryj.customsql.SqlElement;
+import org.acmsl.queryj.customsql.handlers.CustomSqlProviderRetrievalHandler;
+import org.acmsl.queryj.metadata.MetadataManager;
+import org.acmsl.queryj.metadata.SqlPropertyDAO;
+import org.acmsl.queryj.metadata.SqlResultDAO;
+import org.acmsl.queryj.metadata.TableDAO;
+import org.acmsl.queryj.metadata.vo.Attribute;
+import org.acmsl.queryj.metadata.vo.Table;
+import org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandler;
+import org.apache.commons.configuration.PropertiesConfiguration;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Assert;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+import org.powermock.api.easymock.PowerMock;
+
+import java.sql.Date;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -58,6 +90,86 @@ public class RetrieveResultSetColumnsHandlerTest
 {
     public void builds_a_list_of_properties_from_the_ResultSetMetadata()
     {
+        @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+
+        @NotNull final SqlElement<String> t_Sql =
+            new SqlElement<>(
+                "id", "dao", "name", "String", Cardinality.SINGLE, "all", true /* validation */, false, "description");
+
+        @NotNull final List<Property<String>> t_lProperties = new ArrayList<>(2);
+        t_lProperties.add(new PropertyElement<>("name", "name", 1, String.class.getSimpleName(), false));
+        t_lProperties.add(new PropertyElement<>("tmst", "tmst", 1, "Date", false));
+
+        @NotNull final Result<String> t_Result = new ResultElement<>("r1", "Vo");
+        t_Result.add(new PropertyRefElement("name"));
+        t_Result.add(new PropertyRefElement("tmst"));
+
+        t_Sql.add(new ParameterRefElement("id"));
+        t_Sql.setResultRef(new ResultRefElement("r1"));
+
+        @NotNull final CustomSqlProvider t_CustomSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
+        @NotNull final MetadataManager t_MetadataManager = PowerMock.createNiceMock(MetadataManager.class);
+        @NotNull final SqlResultDAO t_ResultDAO = PowerMock.createNiceMock(SqlResultDAO.class);
+        @NotNull final SqlPropertyDAO t_PropertyDAO = PowerMock.createNiceMock(SqlPropertyDAO.class);
+        @NotNull final ResultSet t_ResultSet = PowerMock.createNiceMock(ResultSet.class);
+        @NotNull final PreparedStatement t_Statement = PowerMock.createNiceMock(PreparedStatement.class);
+        @NotNull final TableDAO t_TableDAO = PowerMock.createNiceMock(TableDAO.class);
+        @SuppressWarnings("unchecked")
+        @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> t_Table =
+            PowerMock.createNiceMock(Table.class);
+
+        EasyMock.expect(t_CustomSqlProvider.getSqlPropertyDAO()).andReturn(t_PropertyDAO);
+        EasyMock.expect(t_CustomSqlProvider.getSqlResultDAO()).andReturn(t_ResultDAO).anyTimes();
+        EasyMock.expect(t_MetadataManager.getTableDAO()).andReturn(t_TableDAO);
+        EasyMock.expect(t_TableDAO.findByDAO("dao")).andReturn(t_Table);
+        EasyMock.expect(t_Table.getName()).andReturn("dao");
+        EasyMock.expect(t_ResultDAO.findByPrimaryKey(t_Result.getId())).andReturn(t_Result).anyTimes();
+        EasyMock.expect(t_Statement.executeQuery()).andReturn(t_ResultSet);
+        EasyMock.expect(t_ResultSet.next()).andReturn(true);
+
+        for (@NotNull final Property<String> t_Property : t_lProperties)
+        {
+            EasyMock.expect(t_PropertyDAO.findByPrimaryKey(t_Property.getId())).andReturn(t_Property);
+            if (t_Property.getType().equals(String.class.getSimpleName()))
+            {
+                EasyMock.expect(t_ResultSet.getString(t_Property.getColumnName())).andReturn("1");
+            }
+            else if (t_Property.getType().equals("Date"))
+            {
+                EasyMock.expect(t_ResultSet.getDate(t_Property.getColumnName())).andReturn(new Date(new java.util.Date().getTime()));
+            }
+        }
+
+        new QueryJCommandWrapper<Sql<String>>(t_Parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, t_Sql);
+        new QueryJCommandWrapper<MetadataManager>(t_Parameters)
+            .setSetting(DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, t_MetadataManager);
+        new QueryJCommandWrapper<CustomSqlProvider>(t_Parameters).setSetting(
+            CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, t_CustomSqlProvider);
+        new QueryJCommandWrapper<Sql>(t_Parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, t_Sql);
+
+        EasyMock.replay(t_CustomSqlProvider);
+        EasyMock.replay(t_MetadataManager);
+        EasyMock.replay(t_TableDAO);
+        EasyMock.replay(t_Table);
+        EasyMock.replay(t_PropertyDAO);
+        EasyMock.replay(t_ResultDAO);
+        EasyMock.replay(t_ResultSet);
+        EasyMock.replay(t_Statement);
+
+        new SetupPreparedStatementHandler().setCurrentPreparedStatement(t_Statement, t_Parameters);
+        new ExecuteQueryHandler().handle(t_Parameters);
+        new RetrieveResultPropertiesHandler().handle(t_Parameters);
+
+        Assert.assertFalse(instance.handle(t_Parameters));
+
+        EasyMock.verify(t_CustomSqlProvider);
+        EasyMock.verify(t_MetadataManager);
+        EasyMock.verify(t_TableDAO);
+        EasyMock.verify(t_Table);
+        EasyMock.verify(t_PropertyDAO);
+        EasyMock.verify(t_ResultDAO);
+        EasyMock.verify(t_ResultSet);
+        EasyMock.verify(t_Statement);
 
     }
 }
