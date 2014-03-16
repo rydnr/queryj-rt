@@ -97,6 +97,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
         @NotNull final Result<String> t_Result = retrieveResult(t_Sql.getResultRef());
 
         validateProperties(t_ResultSet, t_lProperties, t_Sql, t_Result, new JdbcTypeManager(), t_Handler);
+
         return false;
     }
 
