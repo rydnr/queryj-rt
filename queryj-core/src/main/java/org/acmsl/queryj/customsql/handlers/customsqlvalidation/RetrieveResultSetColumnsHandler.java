@@ -154,7 +154,7 @@ public class RetrieveResultSetColumnsHandler
      * @throws SQLException if any operation on the {@link ResultSetMetaData} fails.
      */
     protected List<Property<String>> retrieveColumns(
-        @NotNull final ResultSet resultSet, @NotNull final RetrieveResultPropertiesHandler handler)
+        @NotNull final ResultSetMetaData resultSet, @NotNull final RetrieveResultPropertiesHandler handler)
         throws SQLException
     {
         @NotNull final List<Property<String>> result = new ArrayList<>();
