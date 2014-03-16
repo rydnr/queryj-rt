@@ -27,7 +27,9 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Represents the error when trying to retrieve the validation outcome (just the
+ * one involving using the getters on the {@link java.sql.ResultSet} for a
+ * {@link Sql} not validated yet.
  *
  * Date: 2014/03/16
  * Time: 15:20
