@@ -359,33 +359,32 @@ public class RetrieveResultPropertiesHandler
     {
         @NotNull final List<Property<String>> result = new ArrayList<>();
 
-            @Nullable final List<Attribute<String>> t_lColumns =
-                metadataManager.getColumnDAO().findAllColumns(table);
+        @Nullable final List<Attribute<String>> t_lColumns =
+            metadataManager.getColumnDAO().findAllColumns(table);
 
-            final int t_iCount = t_lColumns.size();
+        final int t_iCount = t_lColumns.size();
 
-            String t_strId;
-            Attribute<String> t_Column;
-            @Nullable Class<?> t_Type;
+        String t_strId;
+        Attribute<String> t_Column;
+        @Nullable Class<?> t_Type;
 
-            for  (int t_iIndex = 0; t_iIndex < t_iCount; t_iIndex++)
+        for  (int t_iIndex = 0; t_iIndex < t_iCount; t_iIndex++)
+        {
+            t_Column = t_lColumns.get(t_iIndex);
+
+            if (t_Column != null)
             {
-                t_Column = t_lColumns.get(t_iIndex);
+                t_strId = table + "." + t_Column.getName() + ".property";
 
-                if (t_Column != null)
-                {
-                    t_strId = table + "." + t_Column.getName() + ".property";
+                t_Type = typeManager.getClass(t_Column.getType());
 
-                    t_Type = typeManager.getClass(t_Column.getType());
-
-                    result.add(
-                        new PropertyElement<>(
-                            t_strId,
-                            t_Column.getName(),
-                            t_iIndex + 1,
-                            t_Type.getSimpleName(),
-                            t_Column.isNullable()));
-                }
+                result.add(
+                    new PropertyElement<>(
+                        t_strId,
+                        t_Column.getName(),
+                        t_iIndex + 1,
+                        t_Type.getSimpleName(),
+                        t_Column.isNullable()));
             }
         }
 
