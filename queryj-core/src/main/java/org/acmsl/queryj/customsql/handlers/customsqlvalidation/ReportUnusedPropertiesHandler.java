@@ -117,8 +117,6 @@ public class ReportUnusedPropertiesHandler
         @NotNull final Sql<String> sql,
         @Nullable final Log log)
     {
-        @Nullable final Log log = UniqueLogFactory.getLog(CustomSqlValidationHandler.class);
-
         if (log != null)
         {
             @NotNull final List<Property<String>> t_lExtraProperties =
