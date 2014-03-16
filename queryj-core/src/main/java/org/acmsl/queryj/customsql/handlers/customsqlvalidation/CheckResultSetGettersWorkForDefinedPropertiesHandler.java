@@ -142,7 +142,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
     {
         @NotNull final SqlResultDAO t_ResultDAO = customSqlProvider.getSqlResultDAO();
 
-        return .findByPrimaryKey(resultRef.getId());
+        return t_ResultDAO.findByPrimaryKey(resultRef.getId());
     }
 
     /**
