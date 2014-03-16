@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Retrieves the columns (as a list of properties from the
+ * Description: Retrieves the columns (as a list of properties) from the
  *              current ResultSet.
  *
  * Date: 2014/03/16
