@@ -110,6 +110,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
 
             if (t_Result == null)
             {
+                //
             }
             else
             {
