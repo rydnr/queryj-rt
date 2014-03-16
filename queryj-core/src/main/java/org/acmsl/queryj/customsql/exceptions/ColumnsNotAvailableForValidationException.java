@@ -58,6 +58,6 @@ public class ColumnsNotAvailableForValidationException
 {
     public ColumnsNotAvailableForValidationException(final Sql<String> sql)
     {
-        super("columns.not.available.for.validation", new String[] { sql.getId(), sql.getResultRef();
+        super("columns.not.available.for.validation", new String[] { sql.getId(), sql.getResultRef() };
     }
 }
