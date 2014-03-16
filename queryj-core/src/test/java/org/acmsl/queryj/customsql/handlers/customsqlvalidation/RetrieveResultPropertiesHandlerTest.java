@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for RetrieveResultPropertiesHandler.
  *
  * Date: 2014/03/15
  * Time: 16:34
