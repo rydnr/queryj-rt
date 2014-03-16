@@ -158,13 +158,6 @@ public class RetrieveResultPropertiesHandler
                 t_CustomSqlProvider,
                 t_MetadataManager,
                 new JdbcTypeManager());
-            }
-            catch (@NotNull final SQLException errorDealingWithResultSetMetadata)
-            {
-                throw
-                    new ResultSetMetadataOperationFailedException(
-                        t_Sql, t_ResultRef, errorDealingWithResultSetMetadata);
-            }
         }
 
         return false;
