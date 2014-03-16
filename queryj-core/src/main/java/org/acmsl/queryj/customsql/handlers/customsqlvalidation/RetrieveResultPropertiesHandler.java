@@ -177,6 +177,11 @@ public class RetrieveResultPropertiesHandler
 
         @NotNull List<Property<String>> t_lProperties = new ArrayList<>();
 
+        customResultUtils.retrieveTable(
+            sqlResult,
+            customSqlProvider,
+            metadataManager);
+
         if (sqlResult != null)
         {
             t_lProperties.addAll(
