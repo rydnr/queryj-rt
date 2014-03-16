@@ -488,7 +488,7 @@ public class RetrieveResultPropertiesHandler
 
         if (result == null)
         {
-            throw new PropertiesNotAvailableForVal
+            throw new PropertiesNotAvailableForValidationException
         }
     }
 }
