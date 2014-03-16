@@ -41,7 +41,7 @@ package org.acmsl.queryj.customsql.handlers;
 import org.acmsl.commons.patterns.Chain;
 
 /*
- * Importing JetBrains annotations.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.AbstractQueryJChain;
 import org.acmsl.queryj.QueryJCommand;
