@@ -124,6 +124,11 @@ public class RetrieveResultPropertiesHandler
     protected static final String RESULT_SET = "ResultSet.";
 
     /**
+     * The key to store the current properties.
+     */
+    protected static final String CURRENT_PROPERTIES = "current-properties";
+
+    /**
      * Asks the handler to process the command. The idea is that each
      * command handler decides if such command is suitable of being
      * processed, and if so perform the concrete actions the command
