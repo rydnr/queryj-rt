@@ -76,7 +76,7 @@ public class CacheValidationOutcomeHandler
         @NotNull final Sql<String> t_Sql = new RetrieveQueryHandler().retrieveCurrentSql(command);
 
         final boolean t_bResultSetGettersCheck =
-            new CheckResultSetGettersWorkForDefinedPropertiesHandler().getValidationOutcome(t_Sql);
+            new CheckResultSetGettersWorkForDefinedPropertiesHandler().getValidationOutcome(t_Sql, command);
         return true;
     }
 }
