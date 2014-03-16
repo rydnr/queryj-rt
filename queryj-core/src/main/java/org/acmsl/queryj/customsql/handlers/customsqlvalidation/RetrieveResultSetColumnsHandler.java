@@ -87,7 +87,7 @@ public class RetrieveResultSetColumnsHandler
             @NotNull final List<Property<String>> t_lColumns =
                 retrieveColumns(t_ResultSet, new RetrieveResultPropertiesHandler());
 
-            setColumns()
+            setColumns(t_lColumns, command);
         }
         catch (@NotNull final SQLException sqlException)
         {
