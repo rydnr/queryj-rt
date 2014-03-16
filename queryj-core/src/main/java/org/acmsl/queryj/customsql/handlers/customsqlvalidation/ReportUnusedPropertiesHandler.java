@@ -90,7 +90,7 @@ public class ReportUnusedPropertiesHandler
 
         @Nullable final Log t_Log = retrieveLog();
 
-        diagnoseMissingProperties(t_lProperties, t_lColumns, t_Sql, t_Log);
+        diagnoseUnusedProperties(t_lProperties, t_lColumns, t_Sql, t_Log);
 
         return false;
     }
