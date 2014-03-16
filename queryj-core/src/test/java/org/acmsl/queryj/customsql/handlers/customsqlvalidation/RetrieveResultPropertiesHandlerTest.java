@@ -133,6 +133,7 @@ public class RetrieveResultPropertiesHandlerTest
         EasyMock.replay(t_CustomSqlProvider);
         EasyMock.replay(t_ResultDAO);
         EasyMock.replay(t_ResultSet);
+        EasyMock.replay(t_Statement);
 
         new SetupPreparedStatementHandler().handle(parameters);
 
