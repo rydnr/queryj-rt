@@ -121,7 +121,6 @@ public class RetrieveResultPropertiesHandler
         @NotNull final ResultSet t_ResultSet = new ExecuteQueryHandler().retrieveCurrentResultSet(command);
         @NotNull final Sql<String> t_Sql = new RetrieveQueryHandler().retrieveCurrentSql(command);
 
-
         @NotNull final CustomSqlProvider t_CustomSqlProvider = retrieveCustomSqlProvider(command);
         @NotNull final MetadataManager t_MetadataManager = retrieveMetadataManager(command);
 
