@@ -85,7 +85,7 @@ public class CacheValidationOutcomeHandlerTest
                 true /* validation */,
                 false,
                 "description");
-        new QueryJCommandWrapper<Sql<String>>(t_Parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL);
+        new RetrieveQueryHandler().setCurrentSql().CURRENT_SQL);
         Assert.assertFalse(instance.handle(t_Parameters));
     }
 }
