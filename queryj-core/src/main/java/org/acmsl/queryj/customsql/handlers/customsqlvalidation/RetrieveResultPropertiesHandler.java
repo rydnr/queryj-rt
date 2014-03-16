@@ -129,6 +129,8 @@ public class RetrieveResultPropertiesHandler
 
         if  (t_ResultRef != null)
         {
+            try
+            {
             validateResultSet(
                 t_ResultSet,
                 t_Sql,
