@@ -152,14 +152,12 @@ public class RetrieveResultPropertiesHandler
 
         if  (t_ResultRef != null)
         {
-            try
-            {
-                retrieveProperties(
-                    t_Sql,
-                    t_CustomSqlProvider.getSqlResultDAO().findByPrimaryKey(t_ResultRef.getId()),
-                    t_CustomSqlProvider,
-                    t_MetadataManager,
-                    new JdbcTypeManager());
+            retrieveProperties(
+                t_Sql,
+                t_CustomSqlProvider.getSqlResultDAO().findByPrimaryKey(t_ResultRef.getId()),
+                t_CustomSqlProvider,
+                t_MetadataManager,
+                new JdbcTypeManager());
             }
             catch (@NotNull final SQLException errorDealingWithResultSetMetadata)
             {
