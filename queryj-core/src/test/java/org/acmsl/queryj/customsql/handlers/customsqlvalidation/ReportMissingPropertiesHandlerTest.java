@@ -78,7 +78,6 @@ import java.util.List;
  * @since 3.0
  * Created: 2014/03/16 10:32
  */
-@PrepareForTest(UniqueLogFactory.class)
 @RunWith(JUnit4.class)
 public class ReportMissingPropertiesHandlerTest
 {
