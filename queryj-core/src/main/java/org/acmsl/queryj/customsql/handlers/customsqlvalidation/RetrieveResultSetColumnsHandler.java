@@ -89,7 +89,7 @@ public class RetrieveResultSetColumnsHandler
         }
         catch (@NotNull final SQLException sqlException)
         {
-
+            // TODO throw
         }
 
         return false;
