@@ -127,7 +127,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandlerTest
         t_Sql.add(new ParameterRefElement("id"));
         t_Sql.setResultRef(new ResultRefElement("r1"));
 
-        @NotNull final CustomSqlProvider t_CustomSqlProvider = PowerMock.createNiceMock(CustomSqlProvider.class);
+        @NotNull final CustomSqlProvider t_CustomSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final MetadataManager t_MetadataManager = PowerMock.createNiceMock(MetadataManager.class);
         @NotNull final SqlResultDAO t_ResultDAO = PowerMock.createNiceMock(SqlResultDAO.class);
         @NotNull final SqlPropertyDAO t_PropertyDAO = PowerMock.createNiceMock(SqlPropertyDAO.class);
