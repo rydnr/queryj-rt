@@ -159,11 +159,11 @@ public class RetrieveResultSetColumnsHandler
     {
         @NotNull final List<Property<String>> result = new ArrayList<>();
 
-        final int t_iColumnCount = t_Metadata.getColumnCount();
+        final int t_iColumnCount = resultSetMetadata.getColumnCount();
 
         for  (int t_iIndex = 1; t_iIndex <= t_iColumnCount; t_iIndex++)
         {
-            result.add(handler.createPropertyFrom(t_Metadata, t_iIndex));
+            result.add(handler.createPropertyFrom(resultSetMetadata, t_iIndex));
         }
 
         return result;
