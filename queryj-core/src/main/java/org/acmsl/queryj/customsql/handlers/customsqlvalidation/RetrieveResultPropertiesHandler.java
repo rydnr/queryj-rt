@@ -125,7 +125,7 @@ public class RetrieveResultPropertiesHandler
         @NotNull final CustomSqlProvider t_CustomSqlProvider = retrieveCustomSqlProvider(command);
         @NotNull final MetadataManager t_MetadataManager = retrieveMetadataManager(command);
 
-        @Nullable final ResultRef t_ResultRef = sql.getResultRef();
+        @Nullable final ResultRef t_ResultRef = t_Sql.getResultRef();
 
 
         validateResultSet(t_ResultSet, t_Sql, t_Result, t_CustomSqlProvider, t_MetadataManager, new JdbcTypeManager());
