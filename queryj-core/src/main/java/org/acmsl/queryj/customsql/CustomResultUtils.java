@@ -377,7 +377,7 @@ public class CustomResultUtils
 
             if  (t_Table != null)
             {
-                            result = t_Table.getName();
+                result = t_Table.getName();
                             cacheEntry("" + resultId, result);
                             break;
                         }
