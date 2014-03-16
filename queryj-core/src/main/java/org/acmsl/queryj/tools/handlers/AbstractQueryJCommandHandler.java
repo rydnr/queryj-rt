@@ -177,8 +177,9 @@ public abstract class AbstractQueryJCommandHandler
     @NotNull
     protected MetadataManager retrieveMetadataManager(@NotNull final QueryJCommand parameters)
     {
-        @NotNull final MetadataManager result;
+        @Nullable final MetadataManager result =
 
+        if
             new QueryJCommandWrapper<MetadataManager>(parameters)
                 .getSetting(DatabaseMetaDataRetrievalHandler.METADATA_MANAGER);
     }
