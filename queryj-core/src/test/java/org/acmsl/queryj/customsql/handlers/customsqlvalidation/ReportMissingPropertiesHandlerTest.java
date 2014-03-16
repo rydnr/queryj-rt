@@ -44,6 +44,8 @@ import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.PropertyElement;
+import org.acmsl.queryj.customsql.Sql.Cardinality;
+import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.tools.handlers.QueryJCommandHandler;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.jetbrains.annotations.NotNull;
@@ -86,6 +88,8 @@ public class ReportMissingPropertiesHandlerTest
         t_lColumns.add(new PropertyElement<>("tmst", "tmst", 2, "Date", false));
         t_lColumns.add(new PropertyElement<>("flag", "flg", 3, int.class.getSimpleName(), false));
 
+        @NotNull final t_Sql =
+            new SqlElement<>("id", "dao", "name", "String", Cardinality.SINGLE, "all", true, false, "description"));
 
         new QueryJCommandWrapper<List<Property<String>>>(t_Parameters)
             .setSetting(RetrieveResultPropertiesHandler.CURRENT_PROPERTIES, t_lProperties);
