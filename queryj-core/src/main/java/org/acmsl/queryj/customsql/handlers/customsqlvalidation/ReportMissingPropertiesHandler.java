@@ -38,6 +38,7 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -53,5 +54,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class ReportMissingPropertiesHandler
+    extends AbstractQueryJCommandHandler
 {
+
 }
