@@ -104,7 +104,9 @@ public class CustomSqlValidationChainTest
 
     protected boolean contains(@NotNull final QueryJCommandHandler<QueryJCommand> handler, @NotNull final Chain chain)
     {
+        boolean result = false;
 
-        return false;  //To change body of created methods use File | Settings | File Templates.
+        for (@NotNull final )
+        return result;
     }
 }
