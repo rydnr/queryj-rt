@@ -90,6 +90,7 @@ public class CacheValidationOutcomeHandlerTest
      * A temporary folder for testing hash caches.
      */
     @Rule
+
     @Test
     public void caches_validation_outcome_to_disk()
         throws QueryJBuildException
