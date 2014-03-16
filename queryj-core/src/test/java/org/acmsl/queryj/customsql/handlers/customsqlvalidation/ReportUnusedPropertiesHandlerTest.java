@@ -120,7 +120,8 @@ public class ReportUnusedPropertiesHandlerTest
         t_lColumns.add(new PropertyElement<>("tmst", "tmst", 2, "Date", false));
 
         @NotNull final Sql<String> t_Sql =
-            new SqlElement<>("id", "dao", "name", String.class.getSimpleName(), Cardinality.SINGLE, "all", true, false, "description");
+            new SqlElement<>(
+                "id", "dao", "name", String.class.getSimpleName(), Cardinality.SINGLE, "all", true, false, "description");
 
         new QueryJCommandWrapper<List<Property<String>>>(t_Parameters)
             .setSetting(RetrieveResultPropertiesHandler.CURRENT_PROPERTIES, t_lProperties);
