@@ -97,4 +97,9 @@ public class SkipValidationIfCacheExistsHandler
 
         return result;
     }
+
+    private boolean hashExists(final File outputFolder, final Charset charset)
+    {
+        return false;  //To change body of created methods use File | Settings | File Templates.        return false;  //To change body of created methods use File | Settings | File Templates.
+    }
 }
