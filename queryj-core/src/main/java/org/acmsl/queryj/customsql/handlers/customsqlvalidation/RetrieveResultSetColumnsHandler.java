@@ -102,7 +102,7 @@ public class RetrieveResultSetColumnsHandler
         try
         {
             @NotNull final List<Property<String>> t_lColumns =
-                retrieveColumns(t_ResultSet, new RetrieveResultPropertiesHandler());
+                retrieveColumns(t_ResultSet.getMetaData(), new RetrieveResultPropertiesHandler());
 
             setColumns(t_lColumns, command);
         }
