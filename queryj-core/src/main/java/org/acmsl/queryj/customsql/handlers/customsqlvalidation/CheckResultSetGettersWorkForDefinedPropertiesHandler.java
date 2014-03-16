@@ -133,7 +133,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
                 }
                 catch (@NotNull final SQLException errorDealingWithResultSetMetadata)
                 {
-                    setValidationOutcome(true, t_Sql, command);
+                    setValidationOutcome(false, t_Sql, command);
 
                     throw
                         new ResultSetMetadataOperationFailedException(
