@@ -94,6 +94,10 @@ public class SkipValidationIfCacheExistsHandler
 
         @NotNull final Charset charset = retrieveCharset(command);
 
+        @NotNull final Charset charset = retrieveCharset(command);
+
+        @NotNull final String hash = customSqlProvider.getHash(sql, charset.displayName());
+
         result = hashExists(outputFolder, charset);
 
         return result;
