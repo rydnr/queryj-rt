@@ -58,8 +58,6 @@ import org.apache.commons.configuration.PropertiesConfiguration;
  */
 import org.apache.commons.logging.Log;
 
-import org.jetbrains.annotations.NotNull;
-
 /*
  * Importing checkthread.org annotations.
  */
