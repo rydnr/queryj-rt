@@ -64,6 +64,11 @@ public class PropertiesNotAvailableForValidationException
     extends QueryJNonCheckedException
 {
     /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = 5732051818610009602L;
+
+    /**
      * Creates an instance with the {@link Sql} context.
      * @param sql the SQL.
      */
