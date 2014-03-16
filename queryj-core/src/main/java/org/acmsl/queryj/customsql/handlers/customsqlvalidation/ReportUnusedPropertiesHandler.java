@@ -43,6 +43,7 @@ import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.Sql;
+import org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandler;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
 import org.apache.commons.logging.Log;
 import org.jetbrains.annotations.NotNull;
@@ -105,34 +106,34 @@ public class ReportUnusedPropertiesHandler
     }
 
     /**
-     * Reports any undeclared property.
+     * Reports any unused property.
      * @param properties the declared properties.
      * @param columns the properties from the result set.
      * @param sql the query itself.
-     * @param log the log.
      */
-    protected void diagnoseMissingProperties(
+    protected void diagnoseUnusedProperties(
         @NotNull final List<Property<String>> properties,
         @NotNull final List<Property<String>> columns,
-        @NotNull final Sql<String> sql,
-        @Nullable final Log log)
+        @NotNull final Sql<String> sql)
     {
-        if (log != null)
+        @Nullable final Log t_Log = UniqueLogFactory.getLog(CustomSqlValidationHandler.class);
+
+        if (t_Log != null)
         {
-            @NotNull final List<Property<String>> t_lMissingProperties =
-                detectMissingProperties(properties, columns);
+            @NotNull final List<Property<String>> t_lExtraProperties =
+                detectExtraProperties(properties, columns);
 
             int t_iIndex = 1;
 
-            for (@Nullable final Property<String> t_MissingProperty : t_lMissingProperties)
+            for (@Nullable final Property<String> t_ExtraProperty : t_lExtraProperties)
             {
-                if  (t_MissingProperty != null)
+                if  (t_ExtraProperty != null)
                 {
-                    log.warn(
-                        "Column not declared ("
+                    t_Log.warn(
+                        "Column declared but not used ("
                         + t_iIndex + ", "
-                        + t_MissingProperty.getColumnName() + ", "
-                        + t_MissingProperty.getType() + "), in sql "
+                        + t_ExtraProperty.getColumnName() + ", "
+                        + t_ExtraProperty.getType() + "), in sql "
                         + sql.getId());
                 }
 
@@ -140,69 +141,4 @@ public class ReportUnusedPropertiesHandler
             }
         }
     }
-
-    /**
-     * Tries to detect the name of any missing properties.
-     * @param properties the declared properties.
-     * @param columns the runtime columns (which potentially refer to undeclared properties)
-     * @return the list of columns not declared in the property list.
-     */
-    @NotNull
-    protected List<Property<String>> detectMissingProperties(
-        @NotNull final List<Property<String>> properties, @NotNull final List<Property<String>> columns)
-    {
-        @NotNull final List<Property<String>> result = new ArrayList<>();
-
-        for (int index = 0; index < columns.size(); index++)
-        {
-            @Nullable final Property<String> column = columns.get(index);
-
-            if (column != null)
-            {
-                if (index < properties.size())
-                {
-                    @Nullable final Property<String> property = properties.get(index);
-
-                    if (property != null)
-                    {
-                        if (   (!column.getColumnName().equalsIgnoreCase(property.getColumnName()))
-                               && (!isColumnIncluded(column.getColumnName(), properties)))
-                        {
-                            result.add(column);
-                        }
-                    }
-                }
-                else if (!isColumnIncluded(column.getColumnName(), properties))
-                {
-                    result.add(column);
-                }
-            }
-        }
-
-        return result;
-    }
-
-    /**
-     * Checks whether given column is included in the property list.
-     * @param column the column name.
-     * @param properties the properties.
-     * @return {@code true} in such case.
-     */
-    protected boolean isColumnIncluded(@NotNull final String column, @NotNull final List<Property<String>> properties)
-    {
-        boolean result = false;
-
-        for (@Nullable final Property<String> property : properties)
-        {
-            if (   (property != null)
-                   && (column.equalsIgnoreCase(property.getColumnName())))
-            {
-                result = true;
-                break;
-            }
-        }
-
-        return result;
-    }
-
 }
