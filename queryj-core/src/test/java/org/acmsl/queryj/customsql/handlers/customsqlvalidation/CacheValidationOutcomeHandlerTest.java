@@ -69,6 +69,7 @@ import org.checkthread.annotations.ThreadSafe;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.TemporaryFolder;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
@@ -90,6 +91,7 @@ public class CacheValidationOutcomeHandlerTest
      * A temporary folder for testing hash caches.
      */
     @Rule
+    public TemporaryFolder tempFolder = new TemporaryFolder();
 
     @Test
     public void caches_validation_outcome_to_disk()
