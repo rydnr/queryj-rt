@@ -94,6 +94,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
     /**
      * Validates the properties using given {@link ResultSet}.
      * @param resultSet the result set.
+     * @param properties the properties.
      * @param sql the sql.
      * @param sqlResult the custom sql result.
      * @param typeManager the {@link TypeManager} instance.
