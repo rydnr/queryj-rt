@@ -480,6 +480,11 @@ public class RetrieveResultPropertiesHandler
         return new BindQueryParametersHandler().getAccessorMethod("get", type, StringUtils.getInstance());
     }
 
+    /**
+     * Retrieves the properties for current SQL.
+     * @param command the command.
+     * @return the
+     */
     @NotNull
     public List<Property<String>> retrieveCurrentProperties(final QueryJCommand command)
     {
