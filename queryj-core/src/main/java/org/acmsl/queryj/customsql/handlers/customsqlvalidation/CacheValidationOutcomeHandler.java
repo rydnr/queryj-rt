@@ -79,9 +79,7 @@ public class CacheValidationOutcomeHandler
             new CheckResultSetGettersWorkForDefinedPropertiesHandler().getValidationOutcome(t_Sql, command);
 
         cacheOutcomeToDisk(t_bResultSetGettersCheck, command);
-        {
 
-        }
-        return true;
+        return false;
     }
 }
