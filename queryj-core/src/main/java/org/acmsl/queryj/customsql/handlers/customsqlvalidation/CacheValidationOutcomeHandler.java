@@ -91,9 +91,13 @@ public class CacheValidationOutcomeHandler
     /**
      * Writes the validation outcome to disk.
      * @param outcome the outcome.
+     * @param sql the {@link Sql}.
      * @param command the command.
      */
-    protected void cacheOutcomeToDisk(final boolean outcome, @NotNull final QueryJCommand command)
+    protected void cacheOutcomeToDisk(
+        final boolean outcome,
+        @NotNull final Sql<String> sql,
+        @NotNull final QueryJCommand command)
     {
         @NotNull final File outputFolder = retrieveOutputFolderForSqlHashes(command);
 
