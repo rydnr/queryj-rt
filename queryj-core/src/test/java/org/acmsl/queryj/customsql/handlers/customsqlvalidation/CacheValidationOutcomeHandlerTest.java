@@ -225,23 +225,5 @@ public class CacheValidationOutcomeHandlerTest
         EasyMock.verify(sqlDAO);
         EasyMock.verify(resultDAO);
     }
-        @NotNull final CacheValidationOutcomeHandler instance = new CacheValidationOutcomeHandler();
-
-        @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
-
-        @NotNull final SqlElement<String> t_Sql =
-            new SqlElement<>(
-                "id",
-                "dao",
-                "name",
-                String.class.getSimpleName(),
-                Cardinality.SINGLE,
-                "all",
-                true /* validation */,
-                false,
-                "description");
-        new RetrieveQueryHandler().setCurrentSql(t_Sql, t_Parameters);
-
-        Assert.assertFalse(instance.handle(t_Parameters));
     }
 }
