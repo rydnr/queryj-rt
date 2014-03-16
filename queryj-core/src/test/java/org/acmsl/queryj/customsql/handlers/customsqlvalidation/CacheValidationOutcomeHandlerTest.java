@@ -204,7 +204,7 @@ public class CacheValidationOutcomeHandlerTest
             CustomSqlCacheWritingHandler.CUSTOM_SQL_OUTPUT_FOLDER_FOR_HASHES, tempFolder.getRoot());
         new QueryJCommandWrapper<CustomSqlProvider>(t_Command).setSetting(
             CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, t_CustomSqlProvider);
-
+        new RetrieveQueryHandler()
         EasyMock.expect(sqlDAO.findAll()).andReturn(sqlList).anyTimes();
         EasyMock.expect(resultDAO.findBySqlId("sql-id")).andReturn(t_Result1).anyTimes();
         EasyMock.replay(resultDAO);
