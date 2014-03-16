@@ -192,7 +192,8 @@ public class RetrieveResultPropertiesHandler
             t_lProperties.addAll(retrieveExplicitProperties(sqlResult, customSqlProvider.getSqlPropertyDAO()));
         }
 
-        if  (t_lProperties.size() == 0)
+        if  (   (t_lProperties.size() == 0)
+             && (t_strTable != null))
         {
             t_lProperties = retrieveImplicitProperties(t_strTable, metadataManager, typeManager);
         }
