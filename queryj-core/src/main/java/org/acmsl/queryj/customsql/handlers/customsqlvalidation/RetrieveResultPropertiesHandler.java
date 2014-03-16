@@ -141,6 +141,7 @@ public class RetrieveResultPropertiesHandler
             }
             catch (@NotNull final SQLException errorDealingWithResultSetMetadata)
             {
+
             }
         }
 
