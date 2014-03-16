@@ -123,6 +123,7 @@ public class RetrieveResultPropertiesHandlerTest
         new SetupPreparedStatementHandler().setCurrentPreparedStatement(t_Statement, parameters);
         EasyMock.expect(t_CustomSqlProvider.getSqlResultDAO()).andReturn(t_ResultDAO);
         EasyMock.expect(t_ResultDAO.findByPrimaryKey(t_Result.getId())).andReturn(t_Result);
+        EasyMock.expect(t_Statement.executeQuery())
 
         new QueryJCommandWrapper<CustomSqlProvider>(parameters).setSetting(
             CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, t_CustomSqlProvider);
