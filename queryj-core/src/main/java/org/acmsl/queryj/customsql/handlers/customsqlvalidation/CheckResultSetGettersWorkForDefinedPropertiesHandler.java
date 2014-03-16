@@ -51,6 +51,7 @@ import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.ResultRef;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.SqlElement;
+import org.acmsl.queryj.customsql.exceptions.ResultSetGettersValidationNotAvailableException;
 import org.acmsl.queryj.customsql.exceptions.ResultSetMetadataOperationFailedException;
 import org.acmsl.queryj.metadata.SqlResultDAO;
 import org.acmsl.queryj.metadata.TypeManager;
