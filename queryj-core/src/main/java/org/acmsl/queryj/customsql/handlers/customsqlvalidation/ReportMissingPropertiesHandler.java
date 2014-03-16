@@ -104,7 +104,8 @@ public class ReportMissingPropertiesHandler
     protected void diagnoseMissingProperties(
         @NotNull final List<Property<String>> properties,
         @NotNull final List<Property<String>> columns,
-        @NotNull final Sql<String> sql)
+        @NotNull final Sql<String> sql,
+        @Nullable final Log log)
     {
         @Nullable final Log t_Log = UniqueLogFactory.getLog(ReportMissingPropertiesHandler.class);
 
