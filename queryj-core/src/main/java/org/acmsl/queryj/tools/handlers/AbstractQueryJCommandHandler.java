@@ -183,8 +183,10 @@ public abstract class AbstractQueryJCommandHandler
 
         if (result == null)
         {
-            throw new MetadataManagerNotAvailableException()
+            throw new MetadataManagerNotAvailableException();
         }
+
+        return result;
     }
 
     /**
