@@ -51,6 +51,7 @@ import org.acmsl.queryj.customsql.handlers.customsqlvalidation.RetrieveResultPro
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.RetrieveResultSetColumnsHandler;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.SetupPreparedStatementHandler;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.SkipValidationIfCacheExistsHandler;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -76,6 +77,7 @@ public class CustomSqlValidationChainTest
     {
         @NotNull final CustomSqlValidationChain instance = new CustomSqlValidationChain();
 
+        @NotNull final Chain t_Chain = EasyMock.createNiceMock
         Assert.assertTrue(instance.contains(BindQueryParametersHandler.class));
         Assert.assertTrue(instance.contains(CacheValidationOutcomeHandler.class));
         Assert.assertTrue(instance.contains(CheckResultSetGettersWorkForDefinedPropertiesHandler.class));
