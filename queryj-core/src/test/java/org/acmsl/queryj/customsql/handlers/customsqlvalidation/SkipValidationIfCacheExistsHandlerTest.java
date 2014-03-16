@@ -50,7 +50,9 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 import org.junit.Assert;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.TemporaryFolder;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
@@ -63,6 +65,12 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class SkipValidationIfCacheExistsHandlerTest
 {
+    /**
+     * A temporary folder for testing hash caches.
+     */
+    @Rule
+    public TemporaryFolder tempFolder = new TemporaryFolder();
+
     @Test
     public void skips_further_handlers_if_validation_cache_is_found()
         throws QueryJBuildException
