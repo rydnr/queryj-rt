@@ -141,4 +141,19 @@ public class ReportUnusedPropertiesHandler
             }
         }
     }
+
+    /**
+     * Detects any extra properties not declared in the query itself.
+     * @param properties the declared properties.
+     * @param resultSetProperties the properties actually exported by the query.
+     * @return any extra property.
+     */
+    @NotNull
+    protected List<Property<String>> detectExtraProperties(
+        @NotNull final List<Property<String>> properties, @NotNull final List<Property<String>> resultSetProperties)
+    {
+        return detectMissingProperties(resultSetProperties, properties);
+    }
+
+
 }
