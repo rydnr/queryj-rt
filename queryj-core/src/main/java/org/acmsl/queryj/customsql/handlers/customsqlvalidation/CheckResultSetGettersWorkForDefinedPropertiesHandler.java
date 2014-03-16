@@ -228,6 +228,11 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
         }
     }
 
+    /**
+     * Retrieves the validation outcome for given {@link Sql}.
+     * @param sql the SQL.
+     * @return the outcome of the validation.
+     */
     public boolean getValidationOutcome(@NotNull final SqlElement<String> sql)
     {
         return false;  //To change body of created methods use File | Settings | File Templates.
