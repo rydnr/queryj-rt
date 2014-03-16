@@ -51,7 +51,7 @@ import org.checkthread.annotations.ThreadSafe;
 /**
  * Represents the error when trying to retrieve the validation outcome (just the
  * one involving using the getters on the {@link java.sql.ResultSet} for a
- * {@link Sql}
+ * {@link Sql} not validated yet.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/16 15:20
