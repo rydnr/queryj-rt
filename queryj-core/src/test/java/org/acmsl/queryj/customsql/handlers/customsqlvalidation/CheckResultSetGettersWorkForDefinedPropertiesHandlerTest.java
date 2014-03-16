@@ -66,7 +66,6 @@ import org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandler;
  * Importing JetBrains annotations.
  */
 import org.apache.commons.configuration.PropertiesConfiguration;
-import org.easymock.EasyMock;
 
 /*
  * Importing JetBrains annotations.
