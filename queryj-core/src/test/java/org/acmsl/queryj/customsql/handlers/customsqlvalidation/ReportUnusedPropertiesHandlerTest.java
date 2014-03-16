@@ -54,7 +54,7 @@ import org.acmsl.queryj.customsql.SqlElement;
 import org.apache.commons.configuration.PropertiesConfiguration;
 
 /*
- * Importing JetBrains annotations.
+ * Importing Apache Commons Logging classes.
  */
 import org.apache.commons.logging.Log;
 
