@@ -197,7 +197,7 @@ public class RetrieveResultPropertiesHandler
         if  (t_lProperties.size() == 0)
         {
             t_lProperties =
-                retrieveImplicitProperties(sqlResult, customSqlProvider, metadataManager, typeManager);
+                retrieveImplicitProperties(t_strTable, customSqlProvider, metadataManager, typeManager);
         }
 
         if  (t_lProperties.size() == 0)
