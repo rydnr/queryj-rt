@@ -80,7 +80,9 @@ public class CacheValidationOutcomeHandlerTest
                 String.class.getSimpleName(),
                 Cardinality.SINGLE,
                 "all",
-                true /* validation */, false, "description");
+                true /* validation */,
+                false,
+                "description");
         @NotNull final
         Assert.assertFalse(instance.handle(t_Parameters));
     }
