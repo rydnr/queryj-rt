@@ -70,6 +70,7 @@ import java.util.concurrent.Future;
 /*
  * Importing some Apache Commons Logging classes.
  */
+import org.acmsl.queryj.tools.exceptions.MetadataManagerNotAvailableException;
 import org.acmsl.queryj.tools.exceptions.MissingConnectionAtRuntimeException;
 import org.acmsl.queryj.tools.exceptions.MissingCustomSqlProviderAtRuntimeException;
 import org.acmsl.queryj.tools.exceptions.MissingDataSourceJndiPathAtRuntimeException;
