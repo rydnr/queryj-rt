@@ -134,6 +134,6 @@ public class SkipValidationIfCacheExistsHandlerTest
 
         Assert.assertTrue(new File(tempFolder.getRoot() + File.separator + hash).exists());
 
-        Assert.assertFalse(instance.handle(t_Parameters));
+        Assert.assertTrue(instance.handle(t_Parameters));
     }
 }
