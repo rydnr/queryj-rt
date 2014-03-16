@@ -182,6 +182,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandlerTest
 
         Assert.assertFalse(instance.handle(t_Parameters));
 
+        Assert.assertTrue(instance.getValidation)
         EasyMock.verify(t_CustomSqlProvider);
         EasyMock.verify(t_MetadataManager);
         EasyMock.verify(t_TableDAO);
