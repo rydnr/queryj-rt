@@ -112,7 +112,8 @@ public class CustomSqlValidationChainTest
         {
             if (t_Handler.getClass() instanceof handler.getClass())
             {
-                result
+                result = true;
+                break;
             }
         }
         return result;
