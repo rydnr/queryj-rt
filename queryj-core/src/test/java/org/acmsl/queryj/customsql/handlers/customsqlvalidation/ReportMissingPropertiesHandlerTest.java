@@ -102,7 +102,7 @@ public class ReportMissingPropertiesHandlerTest
                 {
                     return t_Log;
                 }
-            }
+            };
 
         @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
