@@ -141,7 +141,8 @@ public class RetrieveResultPropertiesHandler
             }
             catch (@NotNull final SQLException errorDealingWithResultSetMetadata)
             {
-                throw new ResultSetMetadataOperationFailedException(t_Sql, t_ResultRef, errorDealingWithResultSetMetadata);
+                throw
+                    new ResultSetMetadataOperationFailedException(t_Sql, t_ResultRef, errorDealingWithResultSetMetadata);
             }
         }
 
