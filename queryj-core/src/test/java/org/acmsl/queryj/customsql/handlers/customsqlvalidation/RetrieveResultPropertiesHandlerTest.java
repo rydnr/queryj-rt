@@ -143,7 +143,6 @@ public class RetrieveResultPropertiesHandlerTest
         EasyMock.expect(t_CustomSqlProvider.getSqlPropertyDAO()).andReturn(t_PropertyDAO);
         EasyMock.expect(t_ResultDAO.findByPrimaryKey(t_Result.getId())).andReturn(t_Result);
         EasyMock.expect(t_Statement.executeQuery()).andReturn(t_ResultSet);
-        EasyMock.expect(t_ResultSet.getMetaData()).andReturn(t_Metadata);
         EasyMock.expect(t_Metadata.getColumnCount()).andReturn(t_lProperties.size());
 
         int t_iIndex = 1;
