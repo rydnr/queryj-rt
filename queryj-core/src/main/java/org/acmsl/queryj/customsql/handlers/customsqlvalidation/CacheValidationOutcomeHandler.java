@@ -38,10 +38,14 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.commons.utils.io.FileUtils;
 import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Sql;
+import org.acmsl.queryj.customsql.handlers.CustomSqlCacheWritingHandler;
+import org.acmsl.queryj.metadata.SqlDAO;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
 import org.jetbrains.annotations.NotNull;
 
@@ -49,6 +53,7 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
 
 import java.io.File;
 import java.nio.charset.Charset;
@@ -111,5 +116,81 @@ public class CacheValidationOutcomeHandler
         writeHash(outputFolder, hash, charset);
     }
 
+    /**
+     * Writes the hash to disk.
+     * @param outputFolder the output folder.
+     * @param hash the hash.
+     * @param charset the charset.
+     */
+    protected void writeHash(
+        @NotNull final File outputFolder,
+        @NotNull final String hash,
+        @NotNull final Charset charset)
+    {
+        @NotNull final String path = hashPath(outputFolder.getAbsolutePath(), hash);
 
+        if (!existsAlready(path))
+        {
+            new File(outputFolder.getAbsolutePath()).mkdirs();
+            FileUtils.getInstance().writeFileIfPossible(path, "", charset);
+        }
+    }
+
+    /**
+     * Retrieves all {@link Sql} queries.
+     * @param sqlDAO the {@link org.acmsl.queryj.metadata.SqlDAO} instance.
+     * @return such list.
+     */
+    protected List<Sql<String>> retrieveSqlItems(@NotNull final SqlDAO sqlDAO)
+    {
+        return sqlDAO.findAll();
+    }
+
+    /**
+     * Retrieves the folder where to store the hashes.
+     * @param command the command.
+     * @return such folder.
+     */
+    @NotNull
+    public File retrieveOutputFolderForSqlHashes(@NotNull final QueryJCommand command)
+    {
+        @NotNull final File result;
+
+        @Nullable final File aux =
+            new QueryJCommandWrapper<File>(command).getSetting(
+                CustomSqlCacheWritingHandler.CUSTOM_SQL_OUTPUT_FOLDER_FOR_HASHES);
+
+        if (aux == null)
+        {
+            @NotNull final File outputFolder = retrieveProjectOutputDir(command);
+            result = new File(outputFolder + File.separator + ".sql");
+        }
+        else
+        {
+            result = aux;
+        }
+
+        return result;
+    }
+
+    /**
+     * Retrieves the file name associated to given hash, under the given folder.
+     * @param folder the parent folder.
+     * @param hash the hash.
+     * @return the absolute file name.
+     */
+    public String hashPath(@NotNull final String folder, @NotNull final String hash)
+    {
+        return folder + File.separator + hash;
+    }
+
+    /**
+     * Checks whether the path exists already.
+     * @param path the path.
+     * @return {@code true} in such case.
+     */
+    public boolean existsAlready(@NotNull final String path)
+    {
+        return new File(path).exists();
+    }
 }
