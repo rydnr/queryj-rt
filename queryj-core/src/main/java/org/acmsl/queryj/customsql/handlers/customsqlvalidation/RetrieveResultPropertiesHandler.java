@@ -187,11 +187,7 @@ public class RetrieveResultPropertiesHandler
         else
         {
             t_lProperties.addAll(
-                retrieveExplicitProperties(
-                    sqlResult,
-                    customSqlProvider.getSqlPropertyDAO(),
-                    metadataManager,
-                    typeManager));
+                retrieveExplicitProperties(sqlResult, customSqlProvider.getSqlPropertyDAO());
         }
 
         if  (t_lProperties.size() == 0)
