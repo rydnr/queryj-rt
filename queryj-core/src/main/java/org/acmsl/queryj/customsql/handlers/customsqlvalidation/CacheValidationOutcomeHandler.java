@@ -83,5 +83,10 @@ public class CacheValidationOutcomeHandler
         return false;
     }
 
+    private void cacheOutcomeToDisk(final boolean outcome, final QueryJCommand command)
+    {
+        //To change body of created methods use File | Settings | File Templates.
+    }
+
 
 }
