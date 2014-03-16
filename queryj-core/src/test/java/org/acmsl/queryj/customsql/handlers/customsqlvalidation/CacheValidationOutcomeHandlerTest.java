@@ -128,8 +128,6 @@ public class CacheValidationOutcomeHandlerTest
 
         new QueryJCommandWrapper<File>(t_Command).setSetting(
             CustomSqlCacheWritingHandler.CUSTOM_SQL_OUTPUT_FOLDER_FOR_HASHES, tempFolder.getRoot());
-        new QueryJCommandWrapper<CustomSqlProvider>(t_Command).setSetting(
-            CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, t_CustomSqlProvider);
 
         @NotNull final Charset t_Charset = Charset.defaultCharset();
 
