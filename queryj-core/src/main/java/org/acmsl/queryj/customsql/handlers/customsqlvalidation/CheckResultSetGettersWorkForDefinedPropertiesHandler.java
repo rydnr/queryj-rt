@@ -168,10 +168,6 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
             {
                 t_lColumns.add(createPropertyFrom(t_Metadata, t_iIndex));
             }
-
-            diagnoseMissingProperties(properties, t_lColumns, sql);
-            diagnoseUnusedProperties(properties, t_lColumns, sql);
-        }
         }
     }
 
