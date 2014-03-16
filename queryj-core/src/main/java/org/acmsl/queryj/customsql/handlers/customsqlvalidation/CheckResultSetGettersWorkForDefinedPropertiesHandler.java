@@ -118,26 +118,6 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
             int debug = 1;
         }
 
-        @NotNull List<Property<String>> properties =
-            retrieveExplicitProperties(
-                sql,
-                sqlResult,
-                customSqlProvider.getSqlPropertyDAO(),
-                metadataManager,
-                typeManager);
-
-        if  (properties.size() == 0)
-        {
-            properties =
-                retrieveImplicitProperties(sqlResult, customSqlProvider, metadataManager, typeManager);
-        }
-
-        if  (properties.size() == 0)
-        {
-            throw new CustomResultWithNoPropertiesException(sqlResult, sql);
-        }
-        else
-        {
             if  (resultSet.next())
             {
                 @NotNull Method t_Method;
