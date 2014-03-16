@@ -141,6 +141,7 @@ public class RetrieveResultPropertiesHandlerTest
         EasyMock.replay(t_ResultSet);
         EasyMock.replay(t_Statement);
 
+        new SetupPreparedStatementHandler().setCurrentPreparedStatement(t_Statement, t_Parameters);
         new ExecuteQueryHandler().handle(t_Parameters);
 
         Assert.assertFalse(instance.handle(t_Parameters));
