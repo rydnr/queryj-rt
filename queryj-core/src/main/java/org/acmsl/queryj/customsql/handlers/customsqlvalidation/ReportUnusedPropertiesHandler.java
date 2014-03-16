@@ -28,7 +28,7 @@
  * Author: Jose San Leandro Armendariz
  *
  * Description: Detects and reports any unused properties (declared but not available
- * in the {@link java.sql.ResultSet.
+ * in the ResultSet.
  *
  * Date: 2014/03/16
  * Time: 13:10
