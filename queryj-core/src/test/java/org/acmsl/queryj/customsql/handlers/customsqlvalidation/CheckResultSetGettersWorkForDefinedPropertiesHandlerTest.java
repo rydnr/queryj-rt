@@ -84,7 +84,7 @@ import org.junit.runners.JUnit4;
 import org.powermock.api.easymock.PowerMock;
 
 /*
- * Importing JetBrains annotations.
+ * Importing JDK classes.
  */
 import java.sql.Date;
 import java.sql.PreparedStatement;
