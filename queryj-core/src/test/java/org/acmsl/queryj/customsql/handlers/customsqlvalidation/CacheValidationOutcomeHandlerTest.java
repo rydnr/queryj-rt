@@ -218,7 +218,7 @@ public class CacheValidationOutcomeHandlerTest
 
         Assert.assertFalse(new File(path).exists());
 
-        instance.handle(t_Command);
+        Assert.assertFalse(instance.handle(t_Command));
 
         Assert.assertFalse(new File(path).exists());
 
