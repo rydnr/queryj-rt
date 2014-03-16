@@ -40,6 +40,7 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
  * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.exceptions.CustomResultWithInvalidNumberOfColumnsException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.api.exceptions.ReferencedResultNotFoundException;
@@ -236,5 +237,6 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
     public boolean getValidationOutcome(@NotNull final SqlElement<String> sql)
     {
         @NotNull final Map<Sql, Boolean> outcomes =
+            new QueryJCommandWrapper<>()
     }
 }
