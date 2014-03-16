@@ -82,7 +82,6 @@ public class CustomSqlValidationChainTest
 
         @NotNull final Chain t_Chain = EasyMock.createNiceMock(Chain.class);
 
-        @SuppressWarnings("unchecked")
         instance.buildChain(t_Chain);
 
         Assert.assertTrue(instance.contains(BindQueryParametersHandler.class));
