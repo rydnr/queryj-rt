@@ -188,8 +188,7 @@ public class RetrieveResultPropertiesHandler
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
         @NotNull final TypeManager typeManager)
-        throws SQLException,
-               QueryJBuildException
+        throws QueryJBuildException
     {
         @NotNull List<Property<String>> result = new ArrayList<>();
 
