@@ -329,15 +329,9 @@ public class CustomResultUtils
                 if (t_Sql != null)
                 {
                     result = retrieveTable(t_Sql, metadataManager);
-                    t_strDao = t_Sql.getDao();
 
-                    if (t_strDao != null)
+                    if (result != null)
                     {
-                        @Nullable final Table<String, Attribute<String>, List<Attribute<String>>> t_Table =
-                            metadataManager.getTableDAO().findByDAO(t_strDao);
-
-                        if  (t_Table != null)
-                        {
                             result = t_Table.getName();
                             cacheEntry("" + resultId, result);
                             break;
