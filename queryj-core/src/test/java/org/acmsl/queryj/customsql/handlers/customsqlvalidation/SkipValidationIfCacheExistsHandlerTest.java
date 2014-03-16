@@ -38,7 +38,10 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
+import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
+import org.apache.commons.configuration.PropertiesConfiguration;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -65,7 +68,8 @@ public class SkipValidationIfCacheExistsHandlerTest
         @NotNull final SkipValidationIfCacheExistsHandler instance =
             new SkipValidationIfCacheExistsHandler();
 
-        @NotNull final QueryJCommandW
+        @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+
         Assert.assertFalse(instance.handle(t_Parameters));
     }
 }
