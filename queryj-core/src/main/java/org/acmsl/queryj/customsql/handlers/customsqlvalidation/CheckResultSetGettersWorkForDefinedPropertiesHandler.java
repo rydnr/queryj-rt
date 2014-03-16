@@ -290,14 +290,6 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
         }
 
         outcomes.put(sql, outcome);
-        if (outcomes.containsKey(sql))
-        {
-            result = outcomes.get(sql);
-        }
-        else
-        {
-            throw new ResultSetGettersValidationNotAvailableException(sql);
-        }
 
         return result;
     }
