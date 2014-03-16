@@ -43,6 +43,7 @@ import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.PropertyElement;
+import org.acmsl.queryj.tools.handlers.QueryJCommandHandler;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.jetbrains.annotations.NotNull;
 
@@ -84,7 +85,7 @@ public class ReportMissingPropertiesHandlerTest
         t_lColumns.add(new PropertyElement<>("tmst", "tmst", 2, "Date", false));
         t_lColumns.add(new PropertyElement<>("flag", "flg", 3, int.class.getSimpleName(), false));
 
-
+        new QueryJCommandHandler<>()
         Assert.assertFalse(instance.handle(t_Parameters));
     }
 }
