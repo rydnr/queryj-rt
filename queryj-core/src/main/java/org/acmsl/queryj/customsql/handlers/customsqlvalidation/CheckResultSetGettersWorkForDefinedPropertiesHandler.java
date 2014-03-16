@@ -278,7 +278,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
      * @param command the command.
      */
     protected void setValidationOutcome(
-        final boolean outcome, @NotNull final SqlElement<String> sql, @NotNull final QueryJCommand command)
+        final boolean outcome, @NotNull final Sql<String> sql, @NotNull final QueryJCommand command)
     {
         @NotNull final QueryJCommandWrapper<Map<Sql, Boolean>> wrapper =
             new QueryJCommandWrapper<>(command);
