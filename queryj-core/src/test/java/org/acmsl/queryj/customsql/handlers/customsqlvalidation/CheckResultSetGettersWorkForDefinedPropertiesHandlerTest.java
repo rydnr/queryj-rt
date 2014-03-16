@@ -128,7 +128,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandlerTest
         t_Sql.setResultRef(new ResultRefElement("r1"));
 
         @NotNull final CustomSqlProvider t_CustomSqlProvider = PowerMock.createNiceMock(CustomSqlProvider.class);
-        @NotNull final MetadataManager t_MetadataManager = PowerMock.createMock(MetadataManager.class);
+        @NotNull final MetadataManager t_MetadataManager = PowerMock.createNiceMock(MetadataManager.class);
         @NotNull final SqlResultDAO t_ResultDAO = PowerMock.createNiceMock(SqlResultDAO.class);
         @NotNull final SqlPropertyDAO t_PropertyDAO = PowerMock.createNiceMock(SqlPropertyDAO.class);
         @NotNull final ResultSet t_ResultSet = PowerMock.createNiceMock(ResultSet.class);
