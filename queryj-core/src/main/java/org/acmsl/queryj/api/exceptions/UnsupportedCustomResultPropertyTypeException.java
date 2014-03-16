@@ -63,6 +63,9 @@ import org.jetbrains.annotations.Nullable;
 public class UnsupportedCustomResultPropertyTypeException
     extends QueryJBuildException
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = -7066638500035915220L;
 
     /**
