@@ -38,6 +38,7 @@ package org.acmsl.queryj.customsql.handlers;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.commons.patterns.Chain;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.BindQueryParametersHandler;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.CacheValidationOutcomeHandler;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.CheckResultSetGettersWorkForDefinedPropertiesHandler;
