@@ -86,7 +86,7 @@ public class SkipValidationIfCacheExistsHandler
      * Checks whether the validation cache exists for given {@link Sql}.
      * @param sql the {@link Sql}.
      * @param command the command.
-     * @param handler the {@link CacheValidationOutcomeHandler}
+     * @param handler the {@link CacheValidationOutcomeHandler} instance (for
      * @return
      * @throws QueryJBuildException
      */
