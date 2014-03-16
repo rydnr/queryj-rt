@@ -196,6 +196,7 @@ public class CacheValidationOutcomeHandlerTest
                 resultSetFlagsDAO);
 
         EasyMock.expect(resultDAO.findBySqlId(t_Sql.getId())).andReturn(t_Result);
+        EasyMock.replay(resultDAO);
 
         @NotNull final QueryJCommand t_Command = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
         new QueryJCommandWrapper<File>(t_Command).setSetting(
