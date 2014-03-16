@@ -76,6 +76,7 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -238,11 +239,12 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
      */
     public boolean getValidationOutcome(@NotNull final SqlElement<String> sql, @NotNull final QueryJCommand command)
     {
-        @Nullable final Map<Sql, Boolean> outcomes =
+        @Nullable Map<Sql, Boolean> outcomes =
             new QueryJCommandWrapper<Map<Sql, Boolean>>(command).getSetting(VALIDATION);
 
         if (outcomes == null)
         {
+            outcomes = new HashMap<Sql, Boolean>();
 
         }
     }
