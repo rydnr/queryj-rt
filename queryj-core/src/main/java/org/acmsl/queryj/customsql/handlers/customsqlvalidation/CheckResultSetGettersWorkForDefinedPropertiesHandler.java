@@ -290,7 +290,5 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
         }
 
         outcomes.put(sql, outcome);
-
-        return result;
     }
 }
