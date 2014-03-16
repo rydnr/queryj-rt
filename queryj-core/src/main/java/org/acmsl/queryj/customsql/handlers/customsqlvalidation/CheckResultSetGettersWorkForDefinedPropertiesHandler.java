@@ -95,6 +95,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
         @NotNull final Sql<String> t_Sql = new RetrieveQueryHandler().retrieveCurrentSql(command);
         @NotNull final Result<String> t_Result = retrieveResult(t_Sql.getResultRef());
 
+        validateProperties();
         return false;
     }
 
