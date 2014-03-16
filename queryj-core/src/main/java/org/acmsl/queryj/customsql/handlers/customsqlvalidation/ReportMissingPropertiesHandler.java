@@ -100,6 +100,7 @@ public class ReportMissingPropertiesHandler
      * @param properties the declared properties.
      * @param columns the properties from the result set.
      * @param sql the query itself.
+     * @param log the log.
      */
     protected void diagnoseMissingProperties(
         @NotNull final List<Property<String>> properties,
