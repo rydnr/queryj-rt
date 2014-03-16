@@ -88,7 +88,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
     @Override
     public boolean handle(@NotNull final QueryJCommand command) throws QueryJBuildException
     {
-        @NotNull final ResultSet t_ResultSet =
+        @NotNull final ResultSet t_ResultSet = new RetrieveResultPropertiesHandler().retrieveR
         return false;
     }
 
