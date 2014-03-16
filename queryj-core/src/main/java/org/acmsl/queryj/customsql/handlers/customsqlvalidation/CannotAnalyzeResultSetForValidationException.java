@@ -57,8 +57,8 @@ public class CannotAnalyzeResultSetForValidationException
     extends QueryJNonCheckedException
 {
     /**
-     * Creates a new instance with the
-     * @param sql
+     * Creates a new instance associated to given {@link Sql}.
+     * @param sql the SQL.
      */
     public CannotAnalyzeResultSetForValidationException(@NotNull final Sql<String> sql)
     {
