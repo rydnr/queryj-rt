@@ -130,6 +130,7 @@ public class SkipValidationIfCacheExistsHandlerTest
 
         @NotNull final String hash = "bzS4lagreKYbqR9tX8G2d5CCYGA%3D";
 
+        @NotNull final File hashFile = new File()
         instance.handle(t_Parameters);
 
         Assert.assertTrue(new File(tempFolder.getRoot() + File.separator + hash).exists());
