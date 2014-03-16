@@ -49,7 +49,8 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
- * Represents the error when trying to retrieve the validation outcome (just the getters
+ * Represents the error when trying to retrieve the validation outcome (just the
+ * one involving using the getters
  * on the {@link ResultSet}
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
