@@ -47,7 +47,15 @@ import org.acmsl.queryj.customsql.PropertyElement;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.Sql.Cardinality;
 import org.acmsl.queryj.customsql.SqlElement;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.apache.commons.configuration.PropertiesConfiguration;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.apache.commons.logging.Log;
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
