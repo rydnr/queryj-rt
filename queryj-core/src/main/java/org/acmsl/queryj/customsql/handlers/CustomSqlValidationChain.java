@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Builds and processes the chain to validate the custom Sql.
  *
  * Date: 2014/03/16
  * Time: 18:31
