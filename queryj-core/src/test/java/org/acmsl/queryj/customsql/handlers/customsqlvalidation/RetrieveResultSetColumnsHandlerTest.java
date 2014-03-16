@@ -104,7 +104,7 @@ public class RetrieveResultSetColumnsHandlerTest
         @NotNull final ResultSet t_ResultSet = PowerMock.createNiceMock(ResultSet.class);
         @NotNull final ResultSetMetaData t_ResultSetMetaData = PowerMock.createNiceMock(ResultSetMetaData.class);
 
-        EasyMock.expect(t_ResultSet.next()).andReturn(true);
+        EasyMock.expect(t_ResultSet.getMetaData()).andReturn(true);
 
         for (@NotNull final Property<String> t_Property : t_lProperties)
         {
