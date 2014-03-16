@@ -102,7 +102,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
      * @throws java.sql.SQLException if the SQL operation fails.
      * @throws QueryJBuildException if the expected result cannot be extracted.
      */
-    protected void validateResultSet(
+    protected void validateProperties(
         @NotNull final ResultSet resultSet,
         @NotNull final Sql<String> sql,
         final Result<String> sqlResult,
