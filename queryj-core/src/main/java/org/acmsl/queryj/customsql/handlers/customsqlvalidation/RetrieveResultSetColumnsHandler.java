@@ -52,6 +52,7 @@ import org.checkthread.annotations.ThreadSafe;
 
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -82,6 +83,7 @@ public class RetrieveResultSetColumnsHandler
     }
 
     protected List<Property<String>> retrieveColumns(@NotNull final ResultSet resultSet)
+        throws SQLException
     {
         @NotNull final ResultSetMetaData t_Metadata = resultSet.getMetaData();
 
