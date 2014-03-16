@@ -61,6 +61,7 @@ import org.acmsl.queryj.metadata.SqlParameterDAO;
 import org.acmsl.queryj.metadata.SqlResultDAO;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
 import org.acmsl.queryj.tools.handlers.DatabaseMetaDataLoggingHandler;
+import org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandler;
 import org.acmsl.queryj.tools.handlers.JdbcConnectionOpeningHandler;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.easymock.EasyMock;
@@ -131,7 +132,7 @@ public class RetrieveResultPropertiesHandlerTest
         EasyMock.expect(t_Statement.executeQuery()).andReturn(t_ResultSet);
 
         new QueryJCommandWrapper<MetadataManager>(parameters)
-            .setSetting(t_MetadataManager);
+            .setSetting(DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, t_MetadataManager);
         new QueryJCommandWrapper<CustomSqlProvider>(parameters).setSetting(
             CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, t_CustomSqlProvider);
 
