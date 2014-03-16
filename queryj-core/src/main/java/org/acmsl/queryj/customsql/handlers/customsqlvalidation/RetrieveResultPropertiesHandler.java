@@ -289,7 +289,6 @@ public class RetrieveResultPropertiesHandler
      * @return such properties.
      * @throws QueryJBuildException if the properties cannot be retrieved..
      */
-    @SuppressWarnings("unused")
     @NotNull
     protected List<Property<String>> retrieveExplicitProperties(
         @NotNull final Sql<String> sql,
