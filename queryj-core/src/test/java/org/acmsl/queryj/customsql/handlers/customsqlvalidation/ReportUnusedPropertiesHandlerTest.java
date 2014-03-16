@@ -58,6 +58,7 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.Nullable;
 import org.junit.Assert;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
@@ -73,6 +74,7 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public class ReportUnusedPropertiesHandlerTest
 {
+    @Test
     public void detects_unused_properties()
         throws QueryJBuildException
     {
