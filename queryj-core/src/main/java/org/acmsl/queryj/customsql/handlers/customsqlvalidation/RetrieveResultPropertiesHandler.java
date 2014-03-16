@@ -27,7 +27,8 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Retrieves the {@link Property properties} from the {@link ResultSet} and injects
+ * them into the command.
  *
  * Date: 2014/03/15
  * Time: 16:52
