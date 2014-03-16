@@ -90,7 +90,7 @@ public class CacheValidationOutcomeHandler
 
         if (t_bResultSetGettersCheck)
         {
-            cacheOutcomeToDisk(t_bResultSetGettersCheck, t_Sql, command);
+            cacheOutcomeToDisk(t_Sql, command);
         }
 
         return false;
