@@ -38,15 +38,42 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.commons.logging.UniqueLogFactory;
 import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.api.exceptions.CustomResultWithInvalidNumberOfColumnsException;
+import org.acmsl.queryj.api.exceptions.CustomResultWithNoPropertiesException;
+import org.acmsl.queryj.api.exceptions.NoTableMatchingCustomResultException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.api.exceptions.UnsupportedCustomResultPropertyTypeException;
+import org.acmsl.queryj.customsql.CustomResultUtils;
+import org.acmsl.queryj.customsql.CustomSqlProvider;
+import org.acmsl.queryj.customsql.Property;
+import org.acmsl.queryj.customsql.PropertyElement;
+import org.acmsl.queryj.customsql.PropertyRef;
+import org.acmsl.queryj.customsql.Result;
+import org.acmsl.queryj.customsql.Sql;
+import org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandler;
+import org.acmsl.queryj.metadata.MetadataManager;
+import org.acmsl.queryj.metadata.SqlPropertyDAO;
+import org.acmsl.queryj.metadata.TypeManager;
+import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
+import org.apache.commons.logging.Log;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -74,4 +101,357 @@ public class RetrieveResultPropertiesHandler
     {
         return true;
     }
+
+    /**
+     * Validates the result set.
+     * @param resultSet the result set to validate.
+     * @param sql the sql.
+     * @param sqlResult the custom sql result.
+     * @param customSqlProvider the <code>CustomSqlProvider</code> instance.
+     * @param metadataManager the <code>MetadataManager</code> instance.
+     * @param typeManager the <code>MetadataTypeManager</code> instance.
+     * @throws java.sql.SQLException if the SQL operation fails.
+     * @throws QueryJBuildException if the expected result cannot be extracted.
+     */
+    protected void validateResultSet(
+        @NotNull final ResultSet resultSet,
+        @NotNull final Sql<String> sql,
+        final Result<String> sqlResult,
+        @NotNull final CustomSqlProvider customSqlProvider,
+        @NotNull final MetadataManager metadataManager,
+        @NotNull final TypeManager typeManager)
+        throws SQLException,
+        QueryJBuildException
+    {
+        if (sql.getId().equalsIgnoreCase("find-product-types-by-draw-type-id"))
+        {
+            int debug = 1;
+        }
+
+        @NotNull List<Property<String>> t_lProperties =
+            retrieveExplicitProperties(
+                sql,
+                sqlResult,
+                customSqlProvider.getSqlPropertyDAO(),
+                metadataManager,
+                typeManager);
+
+        if  (t_lProperties.size() == 0)
+        {
+            t_lProperties =
+                retrieveImplicitProperties(sqlResult, customSqlProvider, metadataManager, typeManager);
+        }
+
+        if  (t_lProperties.size() == 0)
+        {
+            throw new CustomResultWithNoPropertiesException(sqlResult, sql);
+        }
+        else
+        {
+            if  (resultSet.next())
+            {
+                @NotNull Method t_Method;
+
+                for (@Nullable final Property<String> t_Property : t_lProperties)
+                {
+                    if (t_Property != null)
+                    {
+                        try
+                        {
+                            t_Method =
+                                retrieveMethod(
+                                    ResultSet.class,
+                                    getGetterMethod(typeManager.getClass(t_Property.getType())),
+                                    new Class<?>[]
+                                        {
+                                            String.class
+                                        });
+                        }
+                        catch  (@NotNull final NoSuchMethodException noSuchMethod)
+                        {
+                            throw
+                                new UnsupportedCustomResultPropertyTypeException(
+                                    t_Property, sqlResult, sql, noSuchMethod);
+                        }
+
+                        invokeResultSetGetter(
+                            t_Method, resultSet, t_Property, sqlResult, sql);
+                    }
+                }
+            }
+            else
+            {
+                @NotNull final ResultSetMetaData t_Metadata = resultSet.getMetaData();
+
+                final int t_iColumnCount = t_Metadata.getColumnCount();
+
+                if  (t_iColumnCount < t_lProperties.size())
+                {
+                    throw
+                        new CustomResultWithInvalidNumberOfColumnsException(
+                            t_iColumnCount, t_lProperties.size());
+                }
+
+                @NotNull final List<Property<String>> t_lColumns = new ArrayList<>();
+
+                for  (int t_iIndex = 1; t_iIndex <= t_iColumnCount; t_iIndex++)
+                {
+                    t_lColumns.add(createPropertyFrom(t_Metadata, t_iIndex));
+                }
+
+                diagnoseMissingProperties(t_lProperties, t_lColumns, sql);
+                diagnoseUnusedProperties(t_lProperties, t_lColumns, sql);
+            }
+        }
+    }
+
+    /**
+     * Creates a property from given {@link ResultSetMetaData}.
+     * @param metadata the result set metadata.
+     * @param index the index.
+     * @return the associated {@link Property}.
+     * @throws SQLException if accessing the metadata instance fails.
+     */
+    @NotNull
+    protected Property<String> createPropertyFrom(@NotNull final ResultSetMetaData metadata, final int index)
+        throws SQLException
+    {
+        @NotNull final String t_strColumnName = metadata.getColumnName(index);
+        final String t_strType = metadata.getColumnTypeName(index);
+        final boolean t_bNullable = (metadata.isNullable(index) == ResultSetMetaData.columnNullable);
+
+        return new PropertyElement<>(t_strColumnName, t_strColumnName, index, t_strType, t_bNullable);
+    }
+
+    /**
+     * Retrieves the properties declared for given result.
+     * @param sql the sql.
+     * @param sqlResult the custom sql result.
+     * @param propertyDAO the {@link org.acmsl.queryj.metadata.SqlPropertyDAO} instance.
+     * @param metadataManager the <code>MetadataManager</code> instance.
+     * @param typeManager the <code>MetadataTypeManager</code> instance.
+     * @return such properties.
+     * @throws QueryJBuildException if the properties cannot be retrieved..
+     */
+    @SuppressWarnings("unused")
+    @NotNull
+    protected List<Property<String>> retrieveExplicitProperties(
+        @NotNull final Sql<String> sql,
+        @NotNull final Result<String> sqlResult,
+        @NotNull final SqlPropertyDAO propertyDAO,
+        @NotNull final MetadataManager metadataManager,
+        @NotNull final TypeManager typeManager)
+        throws  QueryJBuildException
+    {
+        @NotNull final List<Property<String>> result = new ArrayList<>();
+
+        Property<String> t_Property;
+
+        for (@Nullable final PropertyRef t_PropertyRef : sqlResult.getPropertyRefs())
+        {
+            if (t_PropertyRef != null)
+            {
+                t_Property = propertyDAO.findByPrimaryKey(t_PropertyRef.getId());
+
+                if  (t_Property != null)
+                {
+                    result.add(t_Property);
+                }
+            }
+        }
+
+        return result;
+    }
+
+    /**
+     * Retrieves the implicit properties declared for given result.
+     * @param sqlResult the custom sql result.
+     * @param customSqlProvider the <code>CustomSqlProvider</code> instance.
+     * @param metadataManager the <code>MetadataManager</code> instance.
+     * @param typeManager the <code>MetadataTypeManager</code> instance.
+     * @return such properties.
+     * @throws QueryJBuildException if the properties cannot be retrieved..
+     */
+    @SuppressWarnings("unused")
+    @NotNull
+    protected List<Property<String>> retrieveImplicitProperties(
+        @NotNull final Result<String> sqlResult,
+        @NotNull final CustomSqlProvider customSqlProvider,
+        @NotNull final MetadataManager metadataManager,
+        @NotNull final TypeManager typeManager)
+        throws  QueryJBuildException
+    {
+        return
+            retrieveImplicitProperties(
+                sqlResult,
+                customSqlProvider,
+                metadataManager,
+                typeManager,
+                CustomResultUtils.getInstance());
+    }
+
+    /**
+     * Retrieves the implicit properties declared for given result.
+     * @param sqlResult the custom sql result.
+     * @param customSqlProvider the <code>CustomSqlProvider</code> instance.
+     * @param metadataManager the <code>MetadataManager</code> instance.
+     * @param typeManager the <code>MetadataTypeManager</code> instance.
+     * @param customResultUtils the <code>CustomResultUtils</code> instance.
+     * @return such properties.
+     * @throws QueryJBuildException if the properties cannot be retrieved..
+     */
+    @NotNull
+    protected List<Property<String>> retrieveImplicitProperties(
+        @NotNull final Result<String> sqlResult,
+        @NotNull final CustomSqlProvider customSqlProvider,
+        @NotNull final MetadataManager metadataManager,
+        @NotNull final TypeManager typeManager,
+        @NotNull final CustomResultUtils customResultUtils)
+        throws  QueryJBuildException
+    {
+        @NotNull final List<Property<String>> result = new ArrayList<>();
+
+        @Nullable final String t_strTable =
+            customResultUtils.retrieveTable(
+                sqlResult,
+                customSqlProvider,
+                metadataManager);
+
+        if  (t_strTable != null)
+        {
+            @Nullable final List<Attribute<String>> t_lColumns =
+                metadataManager.getColumnDAO().findAllColumns(t_strTable);
+
+            final int t_iCount = t_lColumns.size();
+
+            String t_strId;
+            Attribute<String> t_Column;
+            @Nullable Class<?> t_Type;
+
+            for  (int t_iIndex = 0; t_iIndex < t_iCount; t_iIndex++)
+            {
+                t_Column = t_lColumns.get(t_iIndex);
+
+                if (t_Column != null)
+                {
+                    t_strId = t_strTable + "." + t_Column.getName() + ".property";
+
+                    t_Type = typeManager.getClass(t_Column.getType());
+
+                    result.add(
+                        new PropertyElement<>(
+                            t_strId,
+                            t_Column.getName(),
+                            t_iIndex + 1,
+                            t_Type.getSimpleName(),
+                            t_Column.isNullable()));
+                }
+            }
+        }
+        else
+        {
+            @NotNull final String t_strErrorMessage =
+                "Cannot retrieve table associated to SQL result " + sqlResult.getId();
+
+            @Nullable final Log t_Log =
+                UniqueLogFactory.getLog(CustomSqlValidationHandler.class);
+
+            if  (t_Log != null)
+            {
+                t_Log.warn(t_strErrorMessage);
+            }
+
+            throw new NoTableMatchingCustomResultException(sqlResult);
+        }
+
+        return result;
+    }
+
+    /**
+     * Executes the <code>ResultSet.getXXX</code> method.
+     * @param method the <code>ResultSet</code> getter method for given property.
+     * @param resultSet the {@link ResultSet} instance.
+     * @param property the property.
+     * @param sqlResult the {@link Result} instance.
+     * @param sql the SQL element.
+     * @throws QueryJBuildException if the validation fails.
+     */
+    protected void invokeResultSetGetter(
+        @NotNull final Method method,
+        @NotNull final ResultSet resultSet,
+        @NotNull final Property<String> property,
+        @NotNull final Result<String> sqlResult,
+        @NotNull final Sql<String> sql)
+        throws QueryJBuildException
+    {
+        @Nullable final Log t_Log = UniqueLogFactory.getLog(CustomSqlValidationHandler.class);
+
+        try
+        {
+            @NotNull final Object[] t_aParameters = new Object[1];
+
+            t_aParameters[0] = property.getColumnName();
+
+            method.invoke(resultSet, t_aParameters);
+        }
+        catch  (@NotNull final IllegalAccessException illegalAccessException)
+        {
+            if  (t_Log != null)
+            {
+                t_Log.warn(
+                    VALIDATION_FAILED_FOR + sql.getId() + ":\n"
+                    + COULD_NOT_RETRIEVE_RESULT_VIA
+                    + RESULT_SET + method.getName()
+                    + "("
+                    + (   (property.getIndex() > 0)
+                          ?  "" + property.getIndex()
+                          :  property.getColumnName())
+                    + ")",
+                    illegalAccessException);
+            }
+
+            throw
+                new UnsupportedCustomResultPropertyTypeException(
+                    property, sqlResult, sql, illegalAccessException);
+        }
+        catch  (@NotNull final InvocationTargetException invocationTargetException)
+        {
+            if  (t_Log != null)
+            {
+                t_Log.warn(
+                    VALIDATION_FAILED_FOR + sql.getId() + ":\n"
+                    + COULD_NOT_RETRIEVE_RESULT_VIA
+                    + RESULT_SET + method.getName()
+                    + "("
+                    + (   (property.getIndex() > 0)
+                          ?  "" + property.getIndex()
+                          :  property.getColumnName())
+                    + ")",
+                    invocationTargetException);
+            }
+
+            throw
+                new UnsupportedCustomResultPropertyTypeException(
+                    property, sqlResult, sql, invocationTargetException);
+        }
+    }
+
+    /**
+     * Retrieves the method to call.
+     * @param instanceClass the instance class.
+     * @param methodName the method name.
+     * @return the <code>Method</code> instance.
+     * @throws NoSuchMethodException if the desired method is not available.
+     */
+    @NotNull
+    protected Method retrieveMethod(
+        @NotNull final Class<?> instanceClass,
+        @NotNull final String methodName,
+        @NotNull final Class[] parameterClasses)
+        throws  NoSuchMethodException
+    {
+        return instanceClass.getDeclaredMethod(methodName, parameterClasses);
+    }
+
+
 }
