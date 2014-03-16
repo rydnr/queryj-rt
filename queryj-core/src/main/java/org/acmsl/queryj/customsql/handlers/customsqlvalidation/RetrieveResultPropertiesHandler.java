@@ -194,12 +194,12 @@ public class RetrieveResultPropertiesHandler
         throws SQLException,
                QueryJBuildException
     {
+        @NotNull List<Property<String>> result = new ArrayList<>();
+
         if (sql.getId().equalsIgnoreCase("find-product-types-by-draw-type-id"))
         {
             int debug = 1;
         }
-
-        @NotNull List<Property<String>> result = new ArrayList<>();
 
         @Nullable final String t_strTable =
             CustomResultUtils.getInstance().retrieveTable(sql, metadataManager);
