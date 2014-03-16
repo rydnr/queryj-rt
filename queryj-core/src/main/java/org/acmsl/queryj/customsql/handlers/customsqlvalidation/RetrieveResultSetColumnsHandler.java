@@ -128,7 +128,7 @@ public class RetrieveResultSetColumnsHandler
 
         if (result == null)
         {
-            throw new
+            throw new ColumnsNotAvailableForValidationException()
         }
     }
 
