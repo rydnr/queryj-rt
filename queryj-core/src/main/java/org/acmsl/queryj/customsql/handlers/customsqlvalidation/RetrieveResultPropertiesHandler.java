@@ -151,6 +151,7 @@ public class RetrieveResultPropertiesHandler
 
         if  (t_ResultRef != null)
         {
+            @NotNull final List<Property<String>> t_lProperties =
             retrieveProperties(
                 t_Sql,
                 t_CustomSqlProvider.getSqlResultDAO().findByPrimaryKey(t_ResultRef.getId()),
