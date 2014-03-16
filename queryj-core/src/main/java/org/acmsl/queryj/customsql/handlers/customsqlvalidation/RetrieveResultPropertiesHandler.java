@@ -132,7 +132,7 @@ public class RetrieveResultPropertiesHandler
             validateResultSet(
                 t_ResultSet,
                 t_Sql,
-                t_Result,
+                t_CustomSqlProvider.getSqlResultDAO().findByPrimaryKey(t_ResultRef.getId()),
                 t_CustomSqlProvider,
                 t_MetadataManager,
                 new JdbcTypeManager());
