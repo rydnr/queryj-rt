@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Represents the error when trying to use the {@link org.acmsl.queryj.customsql.Property properties}, when
+ * Description: Represents the error when trying to use the properties, when
  * they are not yet available.
  *
  * Date: 2014/03/16
