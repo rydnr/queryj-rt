@@ -70,6 +70,7 @@ public class CacheValidationOutcomeHandlerTest
 
         @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
+        @NotNull final
         Assert.assertFalse(instance.handle(t_Parameters));
     }
 }
