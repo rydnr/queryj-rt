@@ -99,4 +99,9 @@ public class CustomSqlValidationChainTest
         Assert.assertTrue(t_Chain.contains(SetupPreparedStatementHandler.class));
         Assert.assertTrue(t_Chain.contains(SkipValidationIfCacheExistsHandler.class));
     }
+
+    private boolean contains(final BindQueryParametersHandler handler, final Chain chain)
+    {
+        return false;  //To change body of created methods use File | Settings | File Templates.
+    }
 }
