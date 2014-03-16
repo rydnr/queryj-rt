@@ -352,8 +352,7 @@ public class RetrieveResultPropertiesHandler
      */
     @NotNull
     protected List<Property<String>> retrieveImplicitProperties(
-        @NotNull final Result<String> sqlResult,
-        @Nullable final String table,
+        @NotNull final String table,
         @NotNull final MetadataManager metadataManager,
         @NotNull final TypeManager typeManager)
         throws  QueryJBuildException
