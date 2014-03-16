@@ -100,7 +100,7 @@ public class ReportMissingPropertiesHandlerTest
                 @Override
                 protected Log retrieveLog()
                 {
-                    return super.retrieveLog();
+                    return t_Log;
                 }
             }
 
