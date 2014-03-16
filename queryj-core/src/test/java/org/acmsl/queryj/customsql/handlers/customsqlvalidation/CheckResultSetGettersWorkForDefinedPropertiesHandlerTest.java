@@ -142,8 +142,8 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandlerTest
         EasyMock.expect(t_MetadataManager.getTableDAO()).andReturn(t_TableDAO);
         EasyMock.expect(t_TableDAO.findByDAO("dao")).andReturn(t_Table);
         EasyMock.expect(t_Table.getName()).andReturn("dao");
-        EasyMock.expect(t_CustomSqlProvider.getSqlPropertyDAO()).andReturn(t_PropertyDAO);
         EasyMock.expect(t_CustomSqlProvider.getSqlResultDAO()).andReturn(t_ResultDAO);
+        EasyMock.expect(t_CustomSqlProvider.getSqlPropertyDAO()).andReturn(t_PropertyDAO);
         EasyMock.expect(t_ResultDAO.findByPrimaryKey(t_Result.getId())).andReturn(t_Result);
         EasyMock.expect(t_Statement.executeQuery()).andReturn(t_ResultSet);
         EasyMock.expect(t_ResultSet.getMetaData()).andReturn(t_Metadata);
