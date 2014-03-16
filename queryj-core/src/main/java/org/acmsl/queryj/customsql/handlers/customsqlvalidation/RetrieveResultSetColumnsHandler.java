@@ -39,6 +39,7 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.exceptions.CustomResultWithInvalidNumberOfColumnsException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.Property;
@@ -99,7 +100,7 @@ public class RetrieveResultSetColumnsHandler
 
     protected void setColumns(@NotNull final List<Property<String>> columns, @NotNull final QueryJCommand command)
     {
-        //To change body of created methods use File | Settings | File Templates.
+        new QueryJCommandWrapper<>()
     }
 
     /**
