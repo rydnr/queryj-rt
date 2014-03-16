@@ -159,7 +159,7 @@ public class CacheValidationOutcomeHandlerTest
         throws QueryJBuildException
     {
         @NotNull final CacheValidationOutcomeHandler instance =
-            new CustomSqlCacheWritingHandler()
+            new CacheValidationOutcomeHandler()
             {
                 /**
                  * {@inheritDoc}
