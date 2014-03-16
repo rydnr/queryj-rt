@@ -95,7 +95,7 @@ public class RetrieveResultSetColumnsHandler
 
         for  (int t_iIndex = 1; t_iIndex <= t_iColumnCount; t_iIndex++)
         {
-            result.add(createPropertyFrom(t_Metadata, t_iIndex));
+            result.add(t_Handler.createPropertyFrom(t_Metadata, t_iIndex));
         }
 
         return result;
