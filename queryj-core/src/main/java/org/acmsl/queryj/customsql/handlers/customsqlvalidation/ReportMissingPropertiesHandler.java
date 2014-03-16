@@ -120,7 +120,6 @@ public class ReportMissingPropertiesHandler
         }
     }
 
-
     /**
      * Tries to detect the name of any missing properties.
      * @param properties the declared properties.
