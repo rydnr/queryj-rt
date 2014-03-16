@@ -76,6 +76,7 @@ import org.powermock.api.easymock.PowerMock;
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -88,7 +89,9 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public class RetrieveResultSetColumnsHandlerTest
 {
+    @Test
     public void builds_a_list_of_properties_from_the_ResultSetMetadata()
+        throws SQLException
     {
         @NotNull final RetrieveResultSetColumnsHandler instance = new RetrieveResultSetColumnsHandler();
 
