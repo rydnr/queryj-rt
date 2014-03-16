@@ -100,10 +100,12 @@ public class ExecuteQueryHandler
 
         try
         {
-            @NotNull final ResultSet t_ResultSet = validateStatement(t_Sql, t_Statement);
+            @Nullable final ResultSet t_ResultSet = validateStatement(t_Sql, t_Statement);
 
-            if ()
-            setCurrentResultSet(t_ResultSet, command);
+            if (t_ResultSet != null)
+            {
+                setCurrentResultSet(t_ResultSet, command);
+            }
         }
         catch (@NotNull final SQLException invalidSql)
         {
