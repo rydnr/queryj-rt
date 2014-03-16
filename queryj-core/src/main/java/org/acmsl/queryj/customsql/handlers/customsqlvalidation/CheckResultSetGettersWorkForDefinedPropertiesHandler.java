@@ -111,7 +111,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
 
             if (t_Result == null)
             {
-                throw new CannotFindResultF
+                throw new CannotFindResultFr
             }
             else
             {
