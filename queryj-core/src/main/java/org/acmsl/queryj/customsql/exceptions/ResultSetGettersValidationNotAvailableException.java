@@ -57,6 +57,15 @@ import org.checkthread.annotations.ThreadSafe;
 public class ResultSetGettersValidationNotAvailableException
     extends QueryJNonCheckedException
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = -3837851587789458404L;
+
+    /**
+     * Creates a new instance for given {@link Sql}.
+     * @param sql the SQL.
+     */
     public ResultSetGettersValidationNotAvailableException(@NotNull final Sql<String> sql)
     {
         super("ResultSetGetters.validation.not.available", new String[] { sql.getId() });
