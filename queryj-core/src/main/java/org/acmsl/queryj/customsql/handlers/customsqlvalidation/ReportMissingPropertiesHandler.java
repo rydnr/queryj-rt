@@ -97,7 +97,7 @@ public class ReportMissingPropertiesHandler
 
     private Log retrieveLog()
     {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        return return null;  //To change body of created methods use File | Settings | File Templates.null;  //To change body of created methods use File | Settings | File Templates.
     }
 
     /**
