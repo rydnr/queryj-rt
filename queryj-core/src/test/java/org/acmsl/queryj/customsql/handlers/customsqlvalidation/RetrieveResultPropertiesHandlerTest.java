@@ -142,5 +142,6 @@ public class RetrieveResultPropertiesHandlerTest
         EasyMock.verify(t_CustomSqlProvider);
         EasyMock.verify(t_ResultDAO);
         EasyMock.verify(t_ResultSet);
+        EasyMock.verify(t_Statement);
     }
 }
