@@ -96,8 +96,8 @@ public class ReportMissingPropertiesHandlerTest
             .setSetting(RetrieveResultPropertiesHandler.CURRENT_PROPERTIES, t_lProperties);
         new QueryJCommandWrapper<List<Property<String>>>(t_Parameters)
             .setSetting(RetrieveResultSetColumnsHandler.CURRENT_COLUMNS, t_lColumns);
-        new QueryJCommandWrapper<Sql<String>>(t_Parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, t_Sl
-        );
+        new QueryJCommandWrapper<Sql<String>>(t_Parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, t_Sql);
+
         Assert.assertFalse(instance.handle(t_Parameters));
     }
 }
