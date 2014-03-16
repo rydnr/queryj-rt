@@ -175,7 +175,7 @@ public class RetrieveResultPropertiesHandler
             int debug = 1;
         }
 
-        @NotNull List<Property<String>> t_lProperties =;
+        @NotNull List<Property<String>> t_lProperties = new ArrayList<>();
 
         if (sqlResult != null)
         {
