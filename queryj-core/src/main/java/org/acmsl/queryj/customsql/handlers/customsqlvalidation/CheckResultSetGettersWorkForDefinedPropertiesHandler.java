@@ -40,7 +40,6 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
  */
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.CustomResultWithInvalidNumberOfColumnsException;
-import org.acmsl.queryj.api.exceptions.CustomResultWithNoPropertiesException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.api.exceptions.UnsupportedCustomResultPropertyTypeException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
