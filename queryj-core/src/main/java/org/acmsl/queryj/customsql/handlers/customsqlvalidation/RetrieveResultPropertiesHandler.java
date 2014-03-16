@@ -488,7 +488,8 @@ public class RetrieveResultPropertiesHandler
 
         if (result == null)
         {
-            @NotNull final Sql<String> t_Sql = new
+            @NotNull final Sql<String> t_Sql = new RetrieveQueryHandler().retrieveCurrentSql(command);
+
             throw new PropertiesNotAvailableForValidationException(retrieveCurre)
         }
     }
