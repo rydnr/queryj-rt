@@ -65,7 +65,7 @@ public class SkipValidationIfCacheExistsHandlerTest
         @NotNull final SkipValidationIfCacheExistsHandler instance =
             new SkipValidationIfCacheExistsHandler();
 
-        @NotNull final QueryJCommandWrapper
+        @NotNull final QueryJCommandW
         Assert.assertFalse(instance.handle(t_Parameters));
     }
 }
