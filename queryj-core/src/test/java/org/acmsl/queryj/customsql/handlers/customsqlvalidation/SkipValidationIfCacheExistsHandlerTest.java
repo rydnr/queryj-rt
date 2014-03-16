@@ -134,6 +134,7 @@ public class SkipValidationIfCacheExistsHandlerTest
 
         @NotNull final File hashFile = new File(tempFolder.getRoot() + File.separator + hash);
         FileUtils.getInstance().writeFileIfPossible(hashFile, "", Charset.defaultCharset());
+
         instance.handle(t_Parameters);
 
         Assert.assertTrue(new File(tempFolder.getRoot() + File.separator + hash).exists());
