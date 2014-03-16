@@ -47,8 +47,11 @@ import org.acmsl.queryj.customsql.PropertyElement;
 import org.acmsl.queryj.customsql.PropertyRefElement;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.ResultElement;
+
+/*
+ * Importing Apache Commons Configuration classes.
+ */
 import org.apache.commons.configuration.PropertiesConfiguration;
-import org.easymock.EasyMock;
 
 /*
  * Importing JetBrains annotations.
@@ -58,6 +61,7 @@ import org.jetbrains.annotations.NotNull;
 /*
  * Importing JUnit/PowerMock/EasyMock classes.
  */
+import org.easymock.EasyMock;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
