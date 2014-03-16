@@ -95,13 +95,13 @@ public class CustomSqlValidationChainTest
         Assert.assertTrue(t_Chain.contains(ExecuteQueryHandler.class, t_Chain));
         Assert.assertTrue(t_Chain.contains(GlobalValidationEnabledHandler.class, t_Chain));
         Assert.assertTrue(t_Chain.contains(QueryValidationEnabledHandler.class, t_Chain));
-        Assert.assertTrue(t_Chain.contains(ReportMissingPropertiesHandler.class));
-        Assert.assertTrue(t_Chain.contains(ReportUnusedPropertiesHandler.class));
-        Assert.assertTrue(t_Chain.contains(RetrieveQueryHandler.class));
-        Assert.assertTrue(t_Chain.contains(RetrieveResultPropertiesHandler.class));
-        Assert.assertTrue(t_Chain.contains(RetrieveResultSetColumnsHandler.class));
-        Assert.assertTrue(t_Chain.contains(SetupPreparedStatementHandler.class));
-        Assert.assertTrue(t_Chain.contains(SkipValidationIfCacheExistsHandler.class));
+        Assert.assertTrue(t_Chain.contains(ReportMissingPropertiesHandler.class, t_Chain));
+        Assert.assertTrue(t_Chain.contains(ReportUnusedPropertiesHandler.class, t_Chain));
+        Assert.assertTrue(t_Chain.contains(RetrieveQueryHandler.class, t_Chain));
+        Assert.assertTrue(t_Chain.contains(RetrieveResultPropertiesHandler.class, t_Chain));
+        Assert.assertTrue(t_Chain.contains(RetrieveResultSetColumnsHandler.class, t_Chain));
+        Assert.assertTrue(t_Chain.contains(SetupPreparedStatementHandler.class, t_Chain));
+        Assert.assertTrue(t_Chain.contains(SkipValidationIfCacheExistsHandler.class, t_Chain));
     }
 
     protected boolean contains(
