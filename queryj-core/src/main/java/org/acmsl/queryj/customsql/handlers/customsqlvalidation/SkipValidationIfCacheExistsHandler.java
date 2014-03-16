@@ -117,7 +117,7 @@ public class SkipValidationIfCacheExistsHandler
      * @param outputFolder the output folder.
      * @param hash the hash.
      * @param handler the {@link CacheValidationOutcomeHandler} instance.
-     * @return
+     * @return {@code true} in such case.
      */
     protected boolean hashExists(
         @NotNull final File outputFolder, @NotNull final String hash, @NotNull final CacheValidationOutcomeHandler handler)
