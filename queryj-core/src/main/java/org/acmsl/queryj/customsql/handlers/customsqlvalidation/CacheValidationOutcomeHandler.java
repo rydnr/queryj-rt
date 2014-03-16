@@ -1,5 +1,5 @@
 /*
-                        queryj
+                        QueryJ Core
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -29,7 +29,7 @@
  *
  * Description: If all validations succeed for the current Sql, the outcome
  *              is cached to avoid unnecessary validation in future
- * executions of QueryJ.
+ *              executions of QueryJ.
  *
  * Date: 2014/03/16
  * Time: 15:09
