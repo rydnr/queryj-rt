@@ -41,6 +41,7 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
+import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.jetbrains.annotations.NotNull;
 
@@ -64,6 +65,7 @@ public class SkipValidationIfCacheExistsHandlerTest
 {
     @Test
     public void skips_further_handlers_if_validation_cache_is_found()
+        throws QueryJBuildException
     {
         @NotNull final SkipValidationIfCacheExistsHandler instance =
             new SkipValidationIfCacheExistsHandler();
