@@ -123,8 +123,6 @@ public class CustomSqlCacheWritingHandlerTest
         @NotNull final SqlConnectionFlagsDAO connectionFlagsDAO = EasyMock.createNiceMock(SqlConnectionFlagsDAO.class);
         @NotNull final SqlStatementFlagsDAO statementFlagsDAO = EasyMock.createNiceMock(SqlStatementFlagsDAO.class);
         @NotNull final SqlResultSetFlagsDAO resultSetFlagsDAO = EasyMock.createNiceMock(SqlResultSetFlagsDAO.class);
-        @NotNull final List<Sql<String>> sqlList = new ArrayList<>(1);
-        sqlList.add(t_Sql);
 
         @NotNull final CustomSqlProvider t_CustomSqlProvider =
             new SemiMockedAbstractCustomSqlProvider(
