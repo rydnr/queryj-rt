@@ -90,6 +90,9 @@ import java.util.Map;
 public class CheckResultSetGettersWorkForDefinedPropertiesHandler
     extends AbstractQueryJCommandHandler
 {
+    /**
+     * The key to store the validation outcomes per SQL.
+     */
     private static final String VALIDATION = "resultset-getters-validation";
 
     /**
