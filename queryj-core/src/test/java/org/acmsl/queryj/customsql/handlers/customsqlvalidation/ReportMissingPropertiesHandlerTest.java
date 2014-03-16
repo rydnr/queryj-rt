@@ -109,6 +109,7 @@ public class ReportMissingPropertiesHandlerTest
 
         PowerMock.mockStatic(UniqueLogFactory.class);
         EasyMock.expect(UniqueLogFactory.getLog(ReportMissingPropertiesHandler.class)).andReturn(t_Log);
+
         t_Log.warn(EasyMock.anyObject());
         EasyMock.expectLastCall();
 
