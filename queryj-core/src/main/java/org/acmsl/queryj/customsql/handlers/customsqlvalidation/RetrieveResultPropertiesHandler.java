@@ -46,6 +46,7 @@ import org.acmsl.commons.utils.StringUtils;
  * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.exceptions.CustomResultWithInvalidNumberOfColumnsException;
 import org.acmsl.queryj.api.exceptions.CustomResultWithNoPropertiesException;
 import org.acmsl.queryj.api.exceptions.CustomSqlWithNoPropertiesException;
@@ -482,6 +483,7 @@ public class RetrieveResultPropertiesHandler
     @NotNull
     public List<Property<String>> retrieveCurrentProperties(final QueryJCommand command)
     {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        @Nullable final List<Property<String>> result =
+            new QueryJCommandWrapper<>()
     }
 }
