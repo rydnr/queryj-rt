@@ -122,7 +122,7 @@ public class RetrieveResultSetColumnsHandlerTest
 
             if (t_Property.getType().equals(String.class.getSimpleName()))
             {
-                EasyMock.expect(t_ResultSetMetaData.getColumnTypeName().getColumnName())).andReturn("1");
+                EasyMock.expect(t_ResultSetMetaData.getColumnTypeName()).andReturn("1");
             }
             else if (t_Property.getType().equals("Date"))
             {
