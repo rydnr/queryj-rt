@@ -138,6 +138,5 @@ public class ReportMissingPropertiesHandlerTest
         Assert.assertFalse(instance.handle(t_Parameters));
 
         EasyMock.verify(t_Log);
-//        PowerMockito.verifyStatic(UniqueLogFactory.class, Mockito.never());
     }
 }
