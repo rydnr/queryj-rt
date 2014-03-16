@@ -187,10 +187,6 @@ public class RetrieveResultPropertiesHandler
 
         if (sqlResult != null)
         {
-
-        }
-        else
-        {
             t_lProperties.addAll(retrieveExplicitProperties(sqlResult, customSqlProvider.getSqlPropertyDAO()));
         }
 
