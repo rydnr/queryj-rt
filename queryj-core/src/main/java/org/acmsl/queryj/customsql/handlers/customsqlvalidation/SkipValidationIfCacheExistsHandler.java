@@ -71,6 +71,6 @@ public class SkipValidationIfCacheExistsHandler
     @Override
     public boolean handle(@NotNull final QueryJCommand command) throws QueryJBuildException
     {
-        return true;
+        return false;
     }
 }
