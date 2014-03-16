@@ -492,5 +492,7 @@ public class RetrieveResultPropertiesHandler
 
             throw new PropertiesNotAvailableForValidationException(t_Sql);
         }
+
+        return result;
     }
 }
