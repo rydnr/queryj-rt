@@ -122,6 +122,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
      * @return the result.
      */
+    @Nullable
     protected Result<String> retrieveResult(final ResultRef resultRef, final CustomSqlProvider customSqlProvider)
     {
         return customSqlProvider.getSqlResultDAO().findByPrimaryKey(resultRef.getId());
