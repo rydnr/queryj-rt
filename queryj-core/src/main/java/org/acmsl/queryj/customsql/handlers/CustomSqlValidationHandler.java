@@ -1523,7 +1523,7 @@ public class CustomSqlValidationHandler
 
             throw
                 new UnsupportedCustomResultPropertyTypeException(
-                    property, sqlResult, sql, invocationTargetException);
+                    property, sql, sqlResult, invocationTargetException);
         }
     }
 
