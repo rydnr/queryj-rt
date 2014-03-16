@@ -57,6 +57,7 @@ import org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandler;
 import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.SqlPropertyDAO;
 import org.acmsl.queryj.metadata.TypeManager;
+import org.acmsl.queryj.metadata.engines.JdbcTypeManager;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
 import org.apache.commons.logging.Log;
@@ -115,7 +116,8 @@ public class RetrieveResultPropertiesHandler
     public boolean handle(@NotNull final QueryJCommand command)
         throws QueryJBuildException
     {
-        validateResultSet(t_ResultSet, t_Sql, t_Result, t_CustomSqlProvider, t_MetadataManager);
+        @NotNull final ResultSet t_Result
+        validateResultSet(t_ResultSet, t_Sql, t_Result, t_CustomSqlProvider, t_MetadataManager, new JdbcTypeManager());
         return false;
     }
 
