@@ -85,6 +85,7 @@ public class SkipValidationIfCacheExistsHandler
         @NotNull final Sql<String> sql,
         @NotNull final QueryJCommand command,
         @NotNull final CacheValidationOutcomeHandler handler)
+        throws QueryJBuildException
     {
         final boolean result;
 
