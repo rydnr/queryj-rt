@@ -165,6 +165,11 @@ public class RetrieveResultPropertiesHandler
         return false;
     }
 
+    /**
+     * Annotates the properties into the command.
+     * @param properties the {@link Property properties}.
+     * @param command the command.
+     */
     protected void setCurrentProperties(
         @NotNull final List<Property<String>> properties, @NotNull final QueryJCommand command)
     {
