@@ -36,7 +36,7 @@
 package org.acmsl.queryj.customsql.handlers;
 
 /*
- * Importing JetBrains annotations.
+ * Importing Apache Commons
  */
 import org.acmsl.commons.patterns.ArrayListChainAdapter;
 import org.acmsl.commons.patterns.Chain;
