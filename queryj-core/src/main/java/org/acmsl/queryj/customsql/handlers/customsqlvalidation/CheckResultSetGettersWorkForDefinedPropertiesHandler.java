@@ -289,7 +289,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
             wrapper.setSetting(VALIDATION, outcomes);
         }
 
-        outcomes.put()
+        outcomes.put(sql, outcome);
         if (outcomes.containsKey(sql))
         {
             result = outcomes.get(sql);
