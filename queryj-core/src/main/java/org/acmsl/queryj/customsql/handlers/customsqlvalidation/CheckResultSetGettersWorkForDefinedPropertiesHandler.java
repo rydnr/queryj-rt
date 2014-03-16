@@ -116,6 +116,11 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
         return false;
     }
 
+    private Result<String> retrieveResult(final ResultRef resultRef, final CustomSqlProvider customSqlProvider)
+    {
+        return null;  //To change body of created methods use File | Settings | File Templates.
+    }
+
     /**
      * Validates the properties using given {@link ResultSet}.
      * @param resultSet the result set.
