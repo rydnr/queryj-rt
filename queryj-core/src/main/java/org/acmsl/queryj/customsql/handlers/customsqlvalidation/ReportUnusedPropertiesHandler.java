@@ -114,11 +114,12 @@ public class ReportUnusedPropertiesHandler
     protected void diagnoseUnusedProperties(
         @NotNull final List<Property<String>> properties,
         @NotNull final List<Property<String>> columns,
-        @NotNull final Sql<String> sql)
+        @NotNull final Sql<String> sql,
+        @Nullable final Log log)
     {
-        @Nullable final Log t_Log = UniqueLogFactory.getLog(CustomSqlValidationHandler.class);
+        @Nullable final Log log = UniqueLogFactory.getLog(CustomSqlValidationHandler.class);
 
-        if (t_Log != null)
+        if (log != null)
         {
             @NotNull final List<Property<String>> t_lExtraProperties =
                 detectExtraProperties(properties, columns);
@@ -129,7 +130,7 @@ public class ReportUnusedPropertiesHandler
             {
                 if  (t_ExtraProperty != null)
                 {
-                    t_Log.warn(
+                    log.warn(
                         "Column declared but not used ("
                         + t_iIndex + ", "
                         + t_ExtraProperty.getColumnName() + ", "
