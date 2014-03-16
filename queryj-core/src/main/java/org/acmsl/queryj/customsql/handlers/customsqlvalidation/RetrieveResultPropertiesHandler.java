@@ -478,4 +478,8 @@ public class RetrieveResultPropertiesHandler
     {
         return new BindQueryParametersHandler().getAccessorMethod("get", type, StringUtils.getInstance());
     }
+
+    public List<Property<String>> retrieveCurrentProperties(final QueryJCommand command)
+    {
+    }
 }
