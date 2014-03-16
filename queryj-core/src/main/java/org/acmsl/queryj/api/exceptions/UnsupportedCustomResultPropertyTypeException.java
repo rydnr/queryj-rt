@@ -75,7 +75,7 @@ public class UnsupportedCustomResultPropertyTypeException
     public UnsupportedCustomResultPropertyTypeException(
         @NotNull final Property<?> property,
         @NotNull final Sql<?> sql,
-        @NotNull final Result<?> result,
+        @Nullable final Result<?> result,
         @NotNull final Throwable cause)
     {
         super(
