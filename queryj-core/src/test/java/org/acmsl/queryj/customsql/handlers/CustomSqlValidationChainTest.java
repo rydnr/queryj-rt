@@ -112,7 +112,8 @@ public class CustomSqlValidationChainTest
 
         for (@Nullable final QueryJCommandHandler<QueryJCommand> t_Handler : chain.getHandlers())
         {
-            if (t_Handler.getClass().isAssignableFrom(handlerClass))
+            if (   (t_Handler != null)
+                && (t_Handler.getClass().isAssignableFrom(handlerClass)))
             {
                 result = true;
                 break;
