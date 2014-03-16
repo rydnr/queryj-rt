@@ -175,6 +175,7 @@ public class RetrieveResultPropertiesHandler
             int debug = 1;
         }
 
+        if (sqlResult )
         @NotNull List<Property<String>> t_lProperties =
             retrieveExplicitProperties(
                 sql,
