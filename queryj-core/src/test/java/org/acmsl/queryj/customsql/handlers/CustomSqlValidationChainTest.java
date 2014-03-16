@@ -78,7 +78,7 @@ public class CustomSqlValidationChainTest
     public void includes_required_handlers()
         throws QueryJBuildException
     {
-        @NotNull final CustomSqlValidationChain t_Chain = new CustomSqlValidationChain();
+        @NotNull final CustomSqlValidationChain instance = new CustomSqlValidationChain();
 
         @NotNull final Chain t_Chain = EasyMock.createNiceMock(Chain.class);
 
