@@ -42,6 +42,7 @@ import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.Sql.Cardinality;
 import org.acmsl.queryj.customsql.SqlElement;
 import org.apache.commons.configuration.PropertiesConfiguration;
@@ -84,7 +85,7 @@ public class CacheValidationOutcomeHandlerTest
                 true /* validation */,
                 false,
                 "description");
-        new QueryJCommandWrapper<Sql<String>>()
+        new QueryJCommandWrapper<Sql<String>>(t_Parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL);
         Assert.assertFalse(instance.handle(t_Parameters));
     }
 }
