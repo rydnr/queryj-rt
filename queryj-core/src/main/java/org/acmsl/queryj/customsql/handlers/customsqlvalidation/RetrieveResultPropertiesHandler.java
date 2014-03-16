@@ -483,7 +483,8 @@ public class RetrieveResultPropertiesHandler
     /**
      * Retrieves the properties for current SQL.
      * @param command the command.
-     * @return the
+     * @return the properties.
+     * @throws
      */
     @NotNull
     public List<Property<String>> retrieveCurrentProperties(final QueryJCommand command)
