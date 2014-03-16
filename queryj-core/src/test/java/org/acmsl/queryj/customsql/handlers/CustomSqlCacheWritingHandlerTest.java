@@ -50,7 +50,6 @@ import org.acmsl.queryj.customsql.SqlConnectionFlagsDAO;
 import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.customsql.SqlResultSetFlagsDAO;
 import org.acmsl.queryj.customsql.SqlStatementFlagsDAO;
-import org.acmsl.queryj.customsql.handlers.customsqlvalidation.CacheValidationOutcomeHandler;
 import org.acmsl.queryj.metadata.SqlDAO;
 import org.acmsl.queryj.metadata.SqlParameterDAO;
 import org.acmsl.queryj.metadata.SqlPropertyDAO;
@@ -109,7 +108,7 @@ public class CustomSqlCacheWritingHandlerTest
     public void sql_hash_gets_written_correctly()
         throws QueryJBuildException
     {
-        @NotNull final CacheValidationOutcomeHandler instance = new CacheValidationOutcomeHandler();
+        @NotNull final CustomSqlCacheWritingHandler instance = new CustomSqlCacheWritingHandler();
 
         @NotNull final Sql<String> t_Sql =
             new SqlElement<>("sql-id", "dao", "sql-name", "select", Cardinality.SINGLE, "all", true, false, "fake sql");
@@ -123,6 +122,8 @@ public class CustomSqlCacheWritingHandlerTest
         @NotNull final SqlConnectionFlagsDAO connectionFlagsDAO = EasyMock.createNiceMock(SqlConnectionFlagsDAO.class);
         @NotNull final SqlStatementFlagsDAO statementFlagsDAO = EasyMock.createNiceMock(SqlStatementFlagsDAO.class);
         @NotNull final SqlResultSetFlagsDAO resultSetFlagsDAO = EasyMock.createNiceMock(SqlResultSetFlagsDAO.class);
+        @NotNull final List<Sql<String>> sqlList = new ArrayList<>(1);
+        sqlList.add(t_Sql);
 
         @NotNull final CustomSqlProvider t_CustomSqlProvider =
             new SemiMockedAbstractCustomSqlProvider(
