@@ -116,7 +116,13 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
         return false;
     }
 
-    private Result<String> retrieveResult(final ResultRef resultRef, final CustomSqlProvider customSqlProvider)
+    /**
+     * Retrieves the {@link Result}
+     * @param resultRef
+     * @param customSqlProvider
+     * @return
+     */
+    protected Result<String> retrieveResult(final ResultRef resultRef, final CustomSqlProvider customSqlProvider)
     {
         return null;  //To change body of created methods use File | Settings | File Templates.
     }
