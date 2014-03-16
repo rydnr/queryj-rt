@@ -82,7 +82,8 @@ public class RetrieveResultSetColumnsHandler
     {
         @NotNull final ResultSet t_ResultSet = new ExecuteQueryHandler().retrieveCurrentResultSet(command);
 
-        @NotNull final List<Property<String>> t_lColumns = retrieveColumns(t_ResultSet, )
+        @NotNull final List<Property<String>> t_lColumns =
+            retrieveColumns(t_ResultSet, new RetrieveResultPropertiesHandler())
         return true;
     }
 
