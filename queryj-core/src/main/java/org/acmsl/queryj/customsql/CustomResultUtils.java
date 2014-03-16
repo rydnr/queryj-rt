@@ -328,6 +328,7 @@ public class CustomResultUtils
             {
                 if (t_Sql != null)
                 {
+
                     t_strDao = t_Sql.getDao();
 
                     if (t_strDao != null)
