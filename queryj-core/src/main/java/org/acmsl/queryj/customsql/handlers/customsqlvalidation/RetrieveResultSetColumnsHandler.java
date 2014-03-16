@@ -38,6 +38,8 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
 import org.jetbrains.annotations.NotNull;
 
@@ -56,5 +58,19 @@ import org.checkthread.annotations.ThreadSafe;
 public class RetrieveResultSetColumnsHandler
     extends AbstractQueryJCommandHandler
 {
-
+    /**
+     * Asks the handler to process the command. The idea is that each
+     * command handler decides if such command is suitable of being
+     * processed, and if so perform the concrete actions the command
+     * represents.
+     *
+     * @param command the command to process (or not).
+     * @return <code>true</code> if the handler actually process the command,
+     *         or maybe because it's not desirable to continue the chain.
+     */
+    @Override
+    public boolean handle(@NotNull final QueryJCommand command) throws QueryJBuildException
+    {
+        return false;  //To change body of implemented methods use File | Settings | File Templates.
+    }
 }
