@@ -368,7 +368,7 @@ public class CustomResultUtils
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager)
     {
-                    t_strDao = t_Sql.getDao();
+        @NotNull final String t_strDao = sql.getDao();
 
                     if (t_strDao != null)
                     {
