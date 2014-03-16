@@ -59,6 +59,7 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -88,7 +89,17 @@ public class ReportMissingPropertiesHandlerTest
         @NotNull final ReportMissingPropertiesHandler instance =
             new ReportMissingPropertiesHandler()
             {
-
+                /**
+                 * Retrieves the log.
+                 *
+                 * @return such instance.
+                 */
+                @Nullable
+                @Override
+                protected Log retrieveLog()
+                {
+                    return super.retrieveLog();
+                }
             }
 
         @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
