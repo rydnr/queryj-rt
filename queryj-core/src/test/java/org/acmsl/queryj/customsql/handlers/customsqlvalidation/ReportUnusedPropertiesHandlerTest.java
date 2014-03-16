@@ -38,14 +38,30 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
+import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.QueryJCommandWrapper;
+import org.acmsl.queryj.customsql.Property;
+import org.acmsl.queryj.customsql.PropertyElement;
+import org.acmsl.queryj.customsql.Sql;
+import org.acmsl.queryj.customsql.Sql.Cardinality;
+import org.acmsl.queryj.customsql.SqlElement;
+import org.apache.commons.configuration.PropertiesConfiguration;
+import org.apache.commons.logging.Log;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
+import org.junit.Assert;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -58,6 +74,49 @@ public class ReportUnusedPropertiesHandlerTest
 {
     public void detects_unused_properties()
     {
+        @NotNull final Log t_Log = EasyMock.createNiceMock(Log.class);
 
+        @NotNull final ReportMissingPropertiesHandler instance =
+            new ReportMissingPropertiesHandler()
+            {
+                /**
+                 * {@inheritDoc}
+                 */
+                @Nullable
+                @Override
+                protected Log retrieveLog()
+                {
+                    return t_Log;
+                }
+            };
+
+        @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+
+        @NotNull final List<Property<String>> t_lProperties = new ArrayList<>(2);
+        t_lProperties.add(new PropertyElement<>("name", "name", 1, String.class.getSimpleName(), false));
+        t_lProperties.add(new PropertyElement<>("tmst", "tmst", 2, "Date", false));
+
+        @NotNull final List<Property<String>> t_lColumns = new ArrayList<>(3);
+        t_lColumns.add(new PropertyElement<>("name", "name", 1, String.class.getSimpleName(), false));
+        t_lColumns.add(new PropertyElement<>("tmst", "tmst", 2, "Date", false));
+        t_lColumns.add(new PropertyElement<>("flag", "flg", 3, int.class.getSimpleName(), false));
+
+        @NotNull final Sql<String> t_Sql =
+            new SqlElement<>("id", "dao", "name", "String", Cardinality.SINGLE, "all", true, false, "description");
+
+        new QueryJCommandWrapper<List<Property<String>>>(t_Parameters)
+            .setSetting(RetrieveResultPropertiesHandler.CURRENT_PROPERTIES, t_lProperties);
+        new QueryJCommandWrapper<List<Property<String>>>(t_Parameters)
+            .setSetting(RetrieveResultSetColumnsHandler.CURRENT_COLUMNS, t_lColumns);
+        new QueryJCommandWrapper<Sql<String>>(t_Parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, t_Sql);
+
+        t_Log.warn(EasyMock.anyObject());
+        EasyMock.expectLastCall();
+
+        EasyMock.replay(t_Log);
+
+        Assert.assertFalse(instance.handle(t_Parameters));
+
+        EasyMock.verify(t_Log);
     }
 }
