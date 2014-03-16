@@ -161,6 +161,25 @@ public class RetrieveResultPropertiesHandler
                     new JdbcTypeManager());
 
             setCurrentProperties(t_lProperties, command);
+
+            @NotNull final ResultSetMetaData t_Metadata = resultSet.getMetaData();
+
+            final int t_iColumnCount = t_Metadata.getColumnCount();
+
+            if  (t_iColumnCount < properties.size())
+            {
+                throw
+                    new CustomResultWithInvalidNumberOfColumnsException(
+                        t_iColumnCount, properties.size());
+            }
+
+            @NotNull final List<Property<String>> t_lColumns = new ArrayList<>();
+
+            for  (int t_iIndex = 1; t_iIndex <= t_iColumnCount; t_iIndex++)
+            {
+                t_lColumns.add(handler.createPropertyFrom(t_Metadata, t_iIndex));
+            }
+
         }
 
         return false;
