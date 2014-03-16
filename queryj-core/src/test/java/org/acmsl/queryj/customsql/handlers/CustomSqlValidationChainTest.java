@@ -102,7 +102,8 @@ public class CustomSqlValidationChainTest
         Assert.assertTrue(t_Chain.contains(SkipValidationIfCacheExistsHandler.class));
     }
 
-    protected boolean contains(@NotNull final QueryJCommandHandler<QueryJCommand> handler, @NotNull final Chain<QueryJCommandHandler<QueryJCommand>> chain)
+    protected boolean contains(
+        @NotNull final QueryJCommandHandler<QueryJCommand> handler, @NotNull final Chain<QueryJCommandHandler<QueryJCommand>> chain)
     {
         boolean result = false;
 
