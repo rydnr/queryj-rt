@@ -147,8 +147,6 @@ public class RetrieveResultPropertiesHandlerTest
         for (@NotNull final Property<String> t_Property : t_lProperties)
         {
             EasyMock.expect(t_PropertyDAO.findByPrimaryKey(t_Property.getId())).andReturn(t_Property);
-            EasyMock.expect(t_Metadata.getColumnName(t_iIndex)).andReturn(t_Property.getColumnName());
-            EasyMock.expect(t_Metadata.getColumnTypeName(t_iIndex)).andReturn(t_Property.getType());
             t_iIndex++;
         }
 
