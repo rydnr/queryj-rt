@@ -165,6 +165,11 @@ public class RetrieveResultPropertiesHandler
         return false;
     }
 
+    private void setCurrentProperties(final List<Property<String>> properties, final QueryJCommand command)
+    {
+        //To change body of created methods use File | Settings | File Templates.
+    }
+
     /**
      * Validates the result set.
      * @param sql the sql.
