@@ -58,9 +58,6 @@ import org.apache.commons.configuration.PropertiesConfiguration;
  */
 import org.apache.commons.logging.Log;
 
-import org.easymock.EasyMock;
-import org.jetbrains.annotations.NotNull;
-
 /*
  * Importing checkthread.org annotations.
  */
