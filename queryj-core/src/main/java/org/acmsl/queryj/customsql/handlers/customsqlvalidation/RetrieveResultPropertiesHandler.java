@@ -356,12 +356,6 @@ public class RetrieveResultPropertiesHandler
     {
         @NotNull final List<Property<String>> result = new ArrayList<>();
 
-        @Nullable final String table =
-            customResultUtils.retrieveTable(
-                sqlResult,
-                customSqlProvider,
-                metadataManager);
-
         if  (table != null)
         {
             @Nullable final List<Attribute<String>> t_lColumns =
