@@ -52,6 +52,7 @@ import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.PropertyElement;
 import org.acmsl.queryj.customsql.PropertyRef;
 import org.acmsl.queryj.customsql.Result;
+import org.acmsl.queryj.customsql.ResultRef;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandler;
 import org.acmsl.queryj.metadata.MetadataManager;
@@ -123,6 +124,9 @@ public class RetrieveResultPropertiesHandler
 
         @NotNull final CustomSqlProvider t_CustomSqlProvider = retrieveCustomSqlProvider(command);
         @NotNull final MetadataManager t_MetadataManager = retrieveMetadataManager(command);
+
+        @Nullable final ResultRef t_ResultRef = sql.getResultRef();
+
 
         validateResultSet(t_ResultSet, t_Sql, t_Result, t_CustomSqlProvider, t_MetadataManager, new JdbcTypeManager());
         return false;
