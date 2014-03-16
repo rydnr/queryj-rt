@@ -391,21 +391,6 @@ public class RetrieveResultPropertiesHandler
                 }
             }
         }
-        else
-        {
-            @NotNull final String t_strErrorMessage =
-                "Cannot retrieve table associated to SQL result " + sqlResult.getId();
-
-            @Nullable final Log t_Log =
-                UniqueLogFactory.getLog(CustomSqlValidationHandler.class);
-
-            if  (t_Log != null)
-            {
-                t_Log.warn(t_strErrorMessage);
-            }
-
-            throw new NoTableMatchingCustomResultException(sqlResult);
-        }
 
         return result;
     }
