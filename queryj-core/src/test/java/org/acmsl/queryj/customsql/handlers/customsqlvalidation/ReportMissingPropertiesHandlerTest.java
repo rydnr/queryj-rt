@@ -85,7 +85,11 @@ public class ReportMissingPropertiesHandlerTest
     public void detects_missing_properties()
         throws QueryJBuildException
     {
-        @NotNull final ReportMissingPropertiesHandler instance = new ReportMissingPropertiesHandler();
+        @NotNull final ReportMissingPropertiesHandler instance =
+            new ReportMissingPropertiesHandler()
+            {
+
+            }
 
         @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
