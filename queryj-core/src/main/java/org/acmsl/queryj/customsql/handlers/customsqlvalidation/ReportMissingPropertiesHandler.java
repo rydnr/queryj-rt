@@ -38,15 +38,23 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.commons.logging.UniqueLogFactory;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.customsql.Property;
+import org.acmsl.queryj.customsql.Sql;
+import org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandler;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
+import org.apache.commons.logging.Log;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 /**
  *
@@ -73,4 +81,42 @@ public class ReportMissingPropertiesHandler
     {
         return true;
     }
+
+    /**
+     * Reports any undeclared property.
+     * @param properties the declared properties.
+     * @param columns the properties from the result set.
+     * @param sql the query itself.
+     */
+    protected void diagnoseMissingProperties(
+        @NotNull final List<Property<String>> properties,
+        @NotNull final List<Property<String>> columns,
+        @NotNull final Sql<String> sql)
+    {
+        @Nullable final Log t_Log = UniqueLogFactory.getLog(CustomSqlValidationHandler.class);
+
+        if (t_Log != null)
+        {
+            @NotNull final List<Property<String>> t_lMissingProperties =
+                detectMissingProperties(properties, columns);
+
+            int t_iIndex = 1;
+
+            for (@Nullable final Property<String> t_MissingProperty : t_lMissingProperties)
+            {
+                if  (t_MissingProperty != null)
+                {
+                    t_Log.warn(
+                        "Column not declared ("
+                        + t_iIndex + ", "
+                        + t_MissingProperty.getColumnName() + ", "
+                        + t_MissingProperty.getType() + "), in sql "
+                        + sql.getId());
+                }
+
+                t_iIndex++;
+            }
+        }
+    }
+
 }
