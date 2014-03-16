@@ -430,7 +430,7 @@ public class RetrieveResultPropertiesHandler
 
             throw
                 new UnsupportedCustomResultPropertyTypeException(
-                    property, sqlResult, sql, invocationTargetException);
+                    property, sql, sqlResult, invocationTargetException);
         }
     }
 
