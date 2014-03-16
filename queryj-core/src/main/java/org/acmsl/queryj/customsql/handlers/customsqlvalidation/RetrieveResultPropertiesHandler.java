@@ -175,7 +175,6 @@ public class RetrieveResultPropertiesHandler
 
     /**
      * Validates the result set.
-     * @param resultSet the result set to validate.
      * @param sql the sql.
      * @param sqlResult the custom sql result.
      * @param customSqlProvider the <code>CustomSqlProvider</code> instance.
