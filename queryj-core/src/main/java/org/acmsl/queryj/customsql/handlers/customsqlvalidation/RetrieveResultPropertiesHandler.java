@@ -331,11 +331,7 @@ public class RetrieveResultPropertiesHandler
         @NotNull final TypeManager typeManager)
         throws  QueryJBuildException
     {
-        return
-            retrieveImplicitProperties(
-                table,
-                metadataManager,
-                typeManager);
+        return retrieveImplicitProperties(table, metadataManager, typeManager);
     }
 
     /**
