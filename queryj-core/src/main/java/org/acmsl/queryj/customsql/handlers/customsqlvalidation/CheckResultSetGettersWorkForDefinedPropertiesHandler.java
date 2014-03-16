@@ -97,7 +97,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
         @NotNull final List<Property<String>> t_lProperties = t_Handler.retrieveCurrentProperties(command);
         @NotNull final Sql<String> t_Sql = new RetrieveQueryHandler().retrieveCurrentSql(command);
         @Nullable final ResultRef t_ResultRef = t_Sql.getResultRef();
-        @NotNull final Result<String> t_Result = retrieveResult(t_ResultRef);
+        @NotNull final Result<String> t_Result = retrieveResult(t_ResultRef, retrieveCustomSqlProvider());
 
         try
         {
