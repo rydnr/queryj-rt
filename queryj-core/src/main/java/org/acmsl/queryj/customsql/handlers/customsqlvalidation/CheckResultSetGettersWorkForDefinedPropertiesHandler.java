@@ -107,7 +107,8 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
         @NotNull final List<Property<String>> properties,
         @NotNull final Sql<String> sql,
         @NotNull final Result<String> sqlResult,
-        @NotNull final TypeManager typeManager)
+        @NotNull final TypeManager typeManager,
+        @NotNull final RetrieveResultPropertiesHandler handler)
         throws SQLException,
         QueryJBuildException
     {
