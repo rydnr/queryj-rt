@@ -271,6 +271,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
 
     /**
      * Annotates the validation outcome for given {@link Sql}.
+     * @param outcome the outcome.
      * @param sql the SQL.
      * @param command the command.
      * @return the outcome of the validation.
