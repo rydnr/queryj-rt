@@ -115,7 +115,7 @@ public class RetrieveResultPropertiesHandler
     public boolean handle(@NotNull final QueryJCommand command)
         throws QueryJBuildException
     {
-        validateResultSet(t_ResultSet, t_Sql, );
+        validateResultSet(t_ResultSet, t_Sql, t_Result, t_CustomSqlProvider, t_MetadataManager);
         return false;
     }
 
