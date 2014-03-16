@@ -138,16 +138,6 @@ public class CacheValidationOutcomeHandler
     }
 
     /**
-     * Retrieves all {@link Sql} queries.
-     * @param sqlDAO the {@link org.acmsl.queryj.metadata.SqlDAO} instance.
-     * @return such list.
-     */
-    protected List<Sql<String>> retrieveSqlItems(@NotNull final SqlDAO sqlDAO)
-    {
-        return sqlDAO.findAll();
-    }
-
-    /**
      * Retrieves the folder where to store the hashes.
      * @param command the command.
      * @return such folder.
