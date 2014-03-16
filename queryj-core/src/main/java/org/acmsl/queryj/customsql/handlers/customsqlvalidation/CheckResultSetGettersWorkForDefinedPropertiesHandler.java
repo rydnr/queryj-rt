@@ -46,6 +46,7 @@ import org.acmsl.queryj.api.exceptions.UnsupportedCustomResultPropertyTypeExcept
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.Result;
+import org.acmsl.queryj.customsql.ResultRef;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.exceptions.ResultSetMetadataOperationFailedException;
 import org.acmsl.queryj.metadata.MetadataManager;
@@ -95,6 +96,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
         @NotNull final RetrieveResultPropertiesHandler t_Handler = new RetrieveResultPropertiesHandler();
         @NotNull final List<Property<String>> t_lProperties = t_Handler.retrieveCurrentProperties(command);
         @NotNull final Sql<String> t_Sql = new RetrieveQueryHandler().retrieveCurrentSql(command);
+        @NotNull final ResultRef t_ResultRef = t_Sql.getResultRef();
         @NotNull final Result<String> t_Result = retrieveResult(t_Sql.getResultRef());
 
         try
