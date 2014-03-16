@@ -57,6 +57,7 @@ import org.apache.commons.configuration.PropertiesConfiguration;
  * Importing JetBrains annotations.
  */
 import org.apache.commons.logging.Log;
+
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
