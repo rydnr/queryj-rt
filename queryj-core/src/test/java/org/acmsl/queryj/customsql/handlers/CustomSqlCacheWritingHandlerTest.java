@@ -109,7 +109,7 @@ public class CustomSqlCacheWritingHandlerTest
     public void sql_hash_gets_written_correctly()
         throws QueryJBuildException
     {
-        @NotNull final CacheValidationOutcomeHandler instance = new CustomSqlCacheWritingHandler();
+        @NotNull final CacheValidationOutcomeHandler instance = new CacheValidationOutcomeHandler();
 
         @NotNull final Sql<String> t_Sql =
             new SqlElement<>("sql-id", "dao", "sql-name", "select", Cardinality.SINGLE, "all", true, false, "fake sql");
