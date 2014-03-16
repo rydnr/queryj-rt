@@ -27,7 +27,8 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Detects and reports missing properties: the ones that are returned
+ * by the {@link java.sql.ResultSet}, but are not declared.
  *
  * Date: 2014/03/16
  * Time: 10:34
