@@ -138,7 +138,8 @@ public class SkipValidationIfCacheExistsHandlerTest
         new QueryJCommandWrapper<File>(t_Parameters).setSetting(
             CustomSqlCacheWritingHandler.CUSTOM_SQL_OUTPUT_FOLDER_FOR_HASHES, tempFolder.getRoot());
 
-        @NotNull final Charset t_Charset =
+        @NotNull final Charset t_Charset = Charset.defaultCharset();
+
         @NotNull final String hash = t_CustomSqlProvider.getHash(t_Sql, t_Charset);
 
         @NotNull final File hashFile = new File(tempFolder.getRoot() + File.separator + hash);
