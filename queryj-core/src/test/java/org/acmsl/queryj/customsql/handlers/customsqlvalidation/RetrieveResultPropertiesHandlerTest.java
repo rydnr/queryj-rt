@@ -91,8 +91,8 @@ public class RetrieveResultPropertiesHandlerTest
 {
     @Test
     public void publishes_explicit_properties()
-        throws QueryJBuildException,
-        SQLException
+        throws  QueryJBuildException,
+                SQLException
     {
         @NotNull final RetrieveResultPropertiesHandler instance = new RetrieveResultPropertiesHandler();
 
