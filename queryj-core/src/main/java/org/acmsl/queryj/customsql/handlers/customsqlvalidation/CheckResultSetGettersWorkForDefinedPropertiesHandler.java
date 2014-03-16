@@ -265,5 +265,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
         {
             throw new ResultSetGettersValidationNotAvailableException(sql);
         }
+
+        return result;
     }
 }
