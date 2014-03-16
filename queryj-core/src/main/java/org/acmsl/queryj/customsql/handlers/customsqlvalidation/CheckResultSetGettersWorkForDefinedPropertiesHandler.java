@@ -268,4 +268,37 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
 
         return result;
     }
+
+    /**
+     * Retrieves the validation outcome for given {@link Sql}.
+     * @param sql the SQL.
+     * @param command the command.
+     * @return the outcome of the validation.
+     */
+    public boolean getValidationOutcome(@NotNull final SqlElement<String> sql, @NotNull final QueryJCommand command)
+    {
+        final boolean result;
+
+        @NotNull final QueryJCommandWrapper<Map<Sql, Boolean>> wrapper =
+            new QueryJCommandWrapper<>(command);
+
+        @Nullable Map<Sql, Boolean> outcomes = wrapper.getSetting(VALIDATION);
+
+        if (outcomes == null)
+        {
+            outcomes = new HashMap<>();
+            wrapper.setSetting(VALIDATION, outcomes);
+        }
+
+        if (outcomes.containsKey(sql))
+        {
+            result = outcomes.get(sql);
+        }
+        else
+        {
+            throw new ResultSetGettersValidationNotAvailableException(sql);
+        }
+
+        return result;
+    }
 }
