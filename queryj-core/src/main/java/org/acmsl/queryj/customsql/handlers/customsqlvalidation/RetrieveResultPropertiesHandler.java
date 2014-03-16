@@ -180,6 +180,8 @@ public class RetrieveResultPropertiesHandler
         @Nullable final String t_strTable =
             CustomResultUtils.getInstance().retrieveTable(sql, metadataManager);
 
+        throw new NoTableMatchingCustomResultException(sqlResult);
+
         if (sqlResult == null)
         {
 
