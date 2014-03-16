@@ -70,6 +70,7 @@ import java.nio.charset.Charset;
 
 /**
  * If all validations succeed for the current {@link Sql}, the
+ * outcome is cached in
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/16 15:09
