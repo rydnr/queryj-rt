@@ -110,6 +110,7 @@ public class ReportUnusedPropertiesHandler
      * @param properties the declared properties.
      * @param columns the properties from the result set.
      * @param sql the query itself.
+     * @param log the {@link Log}.
      */
     protected void diagnoseUnusedProperties(
         @NotNull final List<Property<String>> properties,
