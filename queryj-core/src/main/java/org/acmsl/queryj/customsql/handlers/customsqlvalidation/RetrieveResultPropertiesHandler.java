@@ -181,13 +181,14 @@ public class RetrieveResultPropertiesHandler
         }
         else
         {
-        @NotNull List<Property<String>> t_lProperties =
-            retrieveExplicitProperties(
-                sql,
-                sqlResult,
-                customSqlProvider.getSqlPropertyDAO(),
-                metadataManager,
-                typeManager);
+            @NotNull List<Property<String>> t_lProperties =
+                retrieveExplicitProperties(
+                    sql,
+                    sqlResult,
+                    customSqlProvider.getSqlPropertyDAO(),
+                    metadataManager,
+                    typeManager);
+        }
 
         if  (t_lProperties.size() == 0)
         {
