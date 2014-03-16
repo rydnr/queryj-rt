@@ -101,6 +101,7 @@ public class RetrieveResultSetColumnsHandlerTest
         @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
         @NotNull final ResultSet t_ResultSet = PowerMock.createNiceMock(ResultSet.class);
+        @NotNull final ResultSet t_ResultSet = PowerMock.createNiceMock(ResultSet.class);
         EasyMock.expect(t_ResultSet.next()).andReturn(true);
 
         for (@NotNull final Property<String> t_Property : t_lProperties)
