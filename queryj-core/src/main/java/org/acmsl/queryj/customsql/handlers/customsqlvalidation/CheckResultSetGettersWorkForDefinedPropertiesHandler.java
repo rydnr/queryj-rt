@@ -63,6 +63,9 @@ import org.jetbrains.annotations.Nullable;
  */
 import org.checkthread.annotations.ThreadSafe;
 
+/*
+ * Importing JDK classes.
+ */
 import java.lang.reflect.Method;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
