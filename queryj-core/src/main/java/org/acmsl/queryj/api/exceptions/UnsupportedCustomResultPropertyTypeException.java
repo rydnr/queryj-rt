@@ -47,12 +47,12 @@ import org.acmsl.queryj.customsql.Sql;
  * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * Represents the error when the type of a property in a custom result is invalid or not supported.
