@@ -373,7 +373,7 @@ public class CustomResultUtils
         if (t_strDao != null)
         {
             @Nullable final Table<String, Attribute<String>, List<Attribute<String>>> t_Table =
-                metadataManager.getTableDAO().findByDAO(t_strDao);
+                metadataManager.getTableDAO().findByDAO("" + t_strDao);
 
             if  (t_Table != null)
             {
