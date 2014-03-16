@@ -97,7 +97,7 @@ public class SkipValidationIfCacheExistsHandler
 
         @NotNull final String hash = customSqlProvider.getHash(sql, charset.displayName());
 
-        writeHash(outputFolder, hash, charset);
+        @NotNull final String cacHash(outputFolder, hash, charset);
 
         return result;
     }
