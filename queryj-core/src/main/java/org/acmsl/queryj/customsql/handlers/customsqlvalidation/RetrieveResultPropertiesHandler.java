@@ -291,7 +291,6 @@ public class RetrieveResultPropertiesHandler
      */
     @NotNull
     protected List<Property<String>> retrieveExplicitProperties(
-        @NotNull final Sql<String> sql,
         @NotNull final Result<String> sqlResult,
         @NotNull final SqlPropertyDAO propertyDAO,
         @NotNull final MetadataManager metadataManager,
