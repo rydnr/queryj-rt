@@ -173,7 +173,7 @@ public class CustomSqlValidationHandler
     public boolean handle(@NotNull final QueryJCommand parameters)
       throws  QueryJBuildException
     {
-        boolean result = false;
+        final boolean result = false;
 
         @Nullable final MetadataManager t_MetadataManager =
             retrieveMetadataManager(parameters);
