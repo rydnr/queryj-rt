@@ -225,5 +225,4 @@ public class CacheValidationOutcomeHandlerTest
         EasyMock.verify(sqlDAO);
         EasyMock.verify(resultDAO);
     }
-    }
 }
