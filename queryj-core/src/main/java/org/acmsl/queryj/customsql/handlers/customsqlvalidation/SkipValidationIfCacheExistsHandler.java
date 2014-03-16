@@ -81,7 +81,8 @@ public class SkipValidationIfCacheExistsHandler
         return validationCacheFound(t_Sql, command, new CacheValidationOutcomeHandler());
     }
 
-    protected boolean validationCacheFound(@NotNull final Sql<String> sql, @NotNull final QueryJCommand command)
+    protected boolean validationCacheFound(
+        @NotNull final Sql<String> sql, @NotNull final QueryJCommand command)
     {
         final boolean result;
 
