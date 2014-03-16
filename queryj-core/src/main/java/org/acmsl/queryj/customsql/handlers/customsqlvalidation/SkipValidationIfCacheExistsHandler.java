@@ -77,7 +77,8 @@ public class SkipValidationIfCacheExistsHandler
         return validationCacheFound(t_Sql, command);
     }
 
-    private boolean validationCacheFound(final Sql<String> t_sql, final QueryJCommand command)
+    private boolean validationCacheFound(final Sql<String> sql, final QueryJCommand command)
     {
+        return false;  //To change body of created methods use File | Settings | File Templates.
     }
 }
