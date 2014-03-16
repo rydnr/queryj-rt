@@ -325,7 +325,7 @@ public class RetrieveResultPropertiesHandler
      */
     @NotNull
     protected List<Property<String>> retrieveImplicitProperties(
-        @NotNull final Result<String> sqlResult,
+        @NotNull final String table,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
         @NotNull final TypeManager typeManager)
