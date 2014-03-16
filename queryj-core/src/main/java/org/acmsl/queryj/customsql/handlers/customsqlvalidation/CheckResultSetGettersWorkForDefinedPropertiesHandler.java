@@ -103,10 +103,15 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
         @NotNull final List<Property<String>> t_lProperties = t_Handler.retrieveCurrentProperties(command);
         @NotNull final Sql<String> t_Sql = new RetrieveQueryHandler().retrieveCurrentSql(command);
         @Nullable final ResultRef t_ResultRef = t_Sql.getResultRef();
-        @Nullable final Result<String> t_Result = retrieveResult(t_ResultRef, retrieveCustomSqlProvider(command));
 
         if (t_ResultRef != null)
         {
+            @Nullable final Result<String> t_Result = retrieveResult(t_ResultRef, retrieveCustomSqlProvider(command));
+
+            if (t_Result == null)
+            {
+            }
+            }
             try
             {
                 validateProperties(t_ResultSet, t_lProperties, t_Sql, t_Result, new JdbcTypeManager(), t_Handler);
