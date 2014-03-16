@@ -82,6 +82,12 @@ public class RetrieveResultSetColumnsHandler
         return true;
     }
 
+    /**
+     * Retrieves the columns from given {@link ResultSet}.
+     * @param resultSet the ResultSet.
+     * @return the list of {@link Property} columns.
+     * @throws SQLException
+     */
     protected List<Property<String>> retrieveColumns(@NotNull final ResultSet resultSet)
         throws SQLException
     {
