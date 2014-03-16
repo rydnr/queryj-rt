@@ -56,5 +56,5 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class CacheValidationOutcomeHandlerTest
 {
-    public void
+    public void caches_validation_outcome_to_disk()
 }
