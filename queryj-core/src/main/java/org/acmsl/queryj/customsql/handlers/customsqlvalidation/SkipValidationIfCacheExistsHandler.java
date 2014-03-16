@@ -38,6 +38,7 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.commons.utils.io.FileUtils;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
@@ -100,5 +101,12 @@ public class SkipValidationIfCacheExistsHandler
 
     private boolean hashExists(final File outputFolder, final Charset charset)
     {
+        @NotNull final String path = hashPath(outputFolder.getAbsolutePath(), hash);
+
+        if (!existsAlready(path))
+        {
+            new File(outputFolder.getAbsolutePath()).mkdirs();
+            FileUtils.getInstance().writeFileIfPossible(path, "", charset);
+        }
     }
 }
