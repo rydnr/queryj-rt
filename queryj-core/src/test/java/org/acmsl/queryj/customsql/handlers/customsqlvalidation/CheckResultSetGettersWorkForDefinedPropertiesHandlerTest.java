@@ -192,6 +192,5 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandlerTest
         EasyMock.verify(t_ResultDAO);
         EasyMock.verify(t_ResultSet);
         EasyMock.verify(t_Statement);
-        EasyMock.verify(t_Metadata);
     }
 }
