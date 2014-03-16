@@ -184,8 +184,7 @@ public class RetrieveResultPropertiesHandler
      * @throws java.sql.SQLException if the SQL operation fails.
      * @throws QueryJBuildException if the expected result cannot be extracted.
      */
-    protected List<Property<String>> validateResultSet(
-        @NotNull final ResultSet resultSet,
+    protected List<Property<String>> retrieveProperties(
         @NotNull final Sql<String> sql,
         @Nullable final Result<String> sqlResult,
         @NotNull final CustomSqlProvider customSqlProvider,
