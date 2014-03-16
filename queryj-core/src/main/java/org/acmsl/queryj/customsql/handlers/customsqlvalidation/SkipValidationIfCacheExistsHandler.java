@@ -88,7 +88,7 @@ public class SkipValidationIfCacheExistsHandler
     {
         final boolean result;
 
-        @NotNull final File outputFolder = retrieveOutputFolderForSqlHashes(command);
+        @NotNull final File outputFolder = handler.retrieveOutputFolderForSqlHashes(command);
 
         @NotNull final CustomSqlProvider customSqlProvider = retrieveCustomSqlProvider(command);
 
