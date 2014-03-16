@@ -81,7 +81,7 @@ public class ReportMissingPropertiesHandler
     public boolean handle(@NotNull final QueryJCommand command) throws QueryJBuildException
     {
         @NotNull final List<Property<String>> t_lProperties =
-            new
+            new RetrieveResultPropertiesHandler().retrieveCurrentProperties(command);
         return false;
     }
 
