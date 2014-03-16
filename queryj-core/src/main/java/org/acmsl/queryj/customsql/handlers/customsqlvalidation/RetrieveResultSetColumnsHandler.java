@@ -95,6 +95,8 @@ public class RetrieveResultSetColumnsHandler
         {
             result.add(createPropertyFrom(t_Metadata, t_iIndex));
         }
+
+        return result;
     }
 
 }
