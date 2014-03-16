@@ -27,7 +27,9 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: If all validations succeed for the current {@link Sql}, the
+ * outcome is cached to avoid unnecessary validation in future
+ * executions of QueryJ.
  *
  * Date: 2014/03/16
  * Time: 15:09
