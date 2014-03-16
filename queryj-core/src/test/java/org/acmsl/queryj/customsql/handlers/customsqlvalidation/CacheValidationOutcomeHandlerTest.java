@@ -40,6 +40,7 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
  */
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.Sql.Cardinality;
 import org.acmsl.queryj.customsql.SqlElement;
@@ -83,7 +84,7 @@ public class CacheValidationOutcomeHandlerTest
                 true /* validation */,
                 false,
                 "description");
-        @NotNull final
+        new QueryJCommandWrapper<>()
         Assert.assertFalse(instance.handle(t_Parameters));
     }
 }
