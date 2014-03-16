@@ -83,9 +83,14 @@ public class CacheValidationOutcomeHandler
         return false;
     }
 
-    protected void cacheOutcomeToDisk(final boolean outcome, final QueryJCommand command)
+    /**
+     * Writes the validation outcome to disk.
+     * @param outcome the outcome.
+     * @param command the command.
+     */
+    protected void cacheOutcomeToDisk(final boolean outcome, @NotNull final QueryJCommand command)
     {
-        //To change body of created methods use File | Settings | File Templates.
+
     }
 
 
