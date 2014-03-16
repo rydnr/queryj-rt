@@ -76,6 +76,7 @@ import org.powermock.api.easymock.PowerMock;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -90,7 +91,8 @@ public class RetrieveResultPropertiesHandlerTest
 {
     @Test
     public void publishes_explicit_properties()
-        throws QueryJBuildException
+        throws QueryJBuildException,
+        SQLException
     {
         @NotNull final RetrieveResultPropertiesHandler instance = new RetrieveResultPropertiesHandler();
 
