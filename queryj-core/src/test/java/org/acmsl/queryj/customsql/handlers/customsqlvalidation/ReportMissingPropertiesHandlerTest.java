@@ -98,9 +98,7 @@ public class ReportMissingPropertiesHandlerTest
             new ReportMissingPropertiesHandler()
             {
                 /**
-                 * Retrieves the log.
-                 *
-                 * @return such instance.
+                 * {@inheritDoc}
                  */
                 @Nullable
                 @Override
