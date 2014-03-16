@@ -256,7 +256,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
         }
         else
         {
-            throw new ResultSetGettersValidation
+            throw new ResultSetGettersValidationNot
         }
     }
 }
