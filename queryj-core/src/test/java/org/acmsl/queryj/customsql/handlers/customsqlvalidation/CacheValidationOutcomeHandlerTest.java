@@ -218,7 +218,6 @@ public class CacheValidationOutcomeHandlerTest
 
         Assert.assertFalse(new File(path).exists());
 
-        EasyMock.verify(sqlDAO);
         EasyMock.verify(resultDAO);
     }
 }
