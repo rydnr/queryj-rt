@@ -85,7 +85,8 @@ public class CacheValidationOutcomeHandlerTest
                 true /* validation */,
                 false,
                 "description");
-        new RetrieveQueryHandler().setCurrentSql().CURRENT_SQL);
+        new RetrieveQueryHandler().setCurrentSql(t_Sql, t_Parameters);
+
         Assert.assertFalse(instance.handle(t_Parameters));
     }
 }
