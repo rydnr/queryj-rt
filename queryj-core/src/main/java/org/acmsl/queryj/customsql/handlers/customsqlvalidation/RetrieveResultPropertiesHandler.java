@@ -158,6 +158,8 @@ public class RetrieveResultPropertiesHandler
                     t_CustomSqlProvider,
                     t_MetadataManager,
                     new JdbcTypeManager());
+
+            setCurrentProperties(t_lProperties, command);
         }
 
         return false;
