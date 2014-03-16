@@ -98,6 +98,7 @@ public class CacheValidationOutcomeHandler
         final boolean outcome,
         @NotNull final Sql<String> sql,
         @NotNull final QueryJCommand command)
+        throws QueryJBuildException
     {
         @NotNull final File outputFolder = retrieveOutputFolderForSqlHashes(command);
 
