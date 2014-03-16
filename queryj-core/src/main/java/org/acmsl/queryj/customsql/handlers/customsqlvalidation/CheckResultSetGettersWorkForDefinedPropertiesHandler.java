@@ -117,9 +117,9 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
     }
 
     /**
-     * Retrieves the {@link Result}
-     * @param resultRef
-     * @param customSqlProvider
+     * Retrieves the {@link Result} associated to given {@link ResultRef}.
+     * @param resultRef the result reference.
+     * @param customSqlProvider the {@link CustomSqlProvider}
      * @return
      */
     protected Result<String> retrieveResult(final ResultRef resultRef, final CustomSqlProvider customSqlProvider)
