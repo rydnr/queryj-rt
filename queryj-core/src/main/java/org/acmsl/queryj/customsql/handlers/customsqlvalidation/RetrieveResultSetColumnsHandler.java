@@ -123,7 +123,7 @@ public class RetrieveResultSetColumnsHandler
      * @return the {@link Property columns}.
      */
     @NotNull
-    protected List<Property<String>> retrieveColumns(@NotNull final QueryJCommand command)
+    protected List<Property<String>> retrieveCurrentColumns(@NotNull final QueryJCommand command)
     {
         @Nullable final List<Property<String>> result =
             new QueryJCommandWrapper<Property<String>>(command).getListSetting(CURRENT_COLUMNS);
