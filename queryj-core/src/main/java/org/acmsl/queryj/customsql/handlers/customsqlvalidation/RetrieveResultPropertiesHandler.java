@@ -182,7 +182,7 @@ public class RetrieveResultPropertiesHandler
 
         if (t_strTable == null)
         {
-            throw new NoTableMatchingCustomResultException(t_Sql);
+            throw new NoTableMatchingCustomResultException(sql);
         }
 
         if (sqlResult == null)
