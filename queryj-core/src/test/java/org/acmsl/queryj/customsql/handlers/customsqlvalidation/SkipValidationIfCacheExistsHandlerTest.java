@@ -145,6 +145,6 @@ public class SkipValidationIfCacheExistsHandlerTest
 
         Assert.assertTrue(instance.handle(t_Parameters));
 
-        EasyMock.replay(resultDAO);
+        EasyMock.verify(resultDAO);
     }
 }
