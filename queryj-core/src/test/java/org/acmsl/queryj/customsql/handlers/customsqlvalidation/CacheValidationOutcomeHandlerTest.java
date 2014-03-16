@@ -70,7 +70,7 @@ import org.apache.commons.configuration.PropertiesConfiguration;
 import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing checkthread.org annotations.
+ * Importing JUnit/PowerMock/EasyMock classes.
  */
 import org.easymock.EasyMock;
 import org.junit.Assert;
