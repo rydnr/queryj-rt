@@ -129,7 +129,13 @@ public class RetrieveResultPropertiesHandler
 
         if  (t_ResultRef != null)
         {
-        validateResultSet(t_ResultSet, t_Sql, t_Result, t_CustomSqlProvider, t_MetadataManager, new JdbcTypeManager());
+            validateResultSet(
+                t_ResultSet,
+                t_Sql,
+                t_Result,
+                t_CustomSqlProvider,
+                t_MetadataManager,
+                new JdbcTypeManager());
         return false;
     }
 
