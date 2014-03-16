@@ -208,7 +208,7 @@ public class RetrieveResultPropertiesHandler
             }
             else
             {
-                throw new CustomSqlWithNoPropertiesException()
+                throw new CustomSqlWithNoPropertiesException(sql)
             }
 
         }
