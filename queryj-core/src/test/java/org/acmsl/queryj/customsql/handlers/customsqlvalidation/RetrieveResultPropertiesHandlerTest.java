@@ -150,6 +150,7 @@ public class RetrieveResultPropertiesHandlerTest
         EasyMock.expect(t_Statement.executeQuery()).andReturn(t_ResultSet);
         EasyMock.expect(t_ResultSet.getMetaData()).andReturn(t_Metadata);
         EasyMock.expect(t_Metadata.getColumnCount()).andReturn(t_lProperties.size());
+        int t_iIndex = 0;
 
         new QueryJCommandWrapper<MetadataManager>(t_Parameters)
             .setSetting(DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, t_MetadataManager);
