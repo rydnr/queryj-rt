@@ -80,7 +80,7 @@ public class ReportUnusedPropertiesHandlerTest
     {
         @NotNull final Log t_Log = EasyMock.createNiceMock(Log.class);
 
-        @NotNull final ReportMissingPropertiesHandler instance =
+        @NotNull final ReportUnusedPropertiesHandler instance =
             new ReportMissingPropertiesHandler()
             {
                 /**
