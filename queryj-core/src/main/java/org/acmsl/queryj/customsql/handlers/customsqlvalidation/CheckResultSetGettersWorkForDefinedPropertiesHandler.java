@@ -166,7 +166,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
 
             for  (int t_iIndex = 1; t_iIndex <= t_iColumnCount; t_iIndex++)
             {
-                t_lColumns.add(createPropertyFrom(t_Metadata, t_iIndex));
+                t_lColumns.add(handler.createPropertyFrom(t_Metadata, t_iIndex));
             }
         }
     }
