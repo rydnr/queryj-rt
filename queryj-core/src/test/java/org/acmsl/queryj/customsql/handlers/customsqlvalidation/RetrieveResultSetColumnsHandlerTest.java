@@ -116,7 +116,7 @@ public class RetrieveResultSetColumnsHandlerTest
 
         for (@NotNull final Property<String> t_Property : t_lProperties)
         {
-            EasyMock.expect(t_PropertyDAO.findByPrimaryKey(t_Property.getId())).andReturn(t_Property);
+            EasyMock.expect(t_ResultSetMetaData.getColumnCount()
             if (t_Property.getType().equals(String.class.getSimpleName()))
             {
                 EasyMock.expect(t_ResultSet.getString(t_Property.getColumnName())).andReturn("1");
