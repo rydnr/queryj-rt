@@ -39,6 +39,7 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
  * Importing JetBrains annotations.
  */
 import org.acmsl.commons.logging.UniqueLogFactory;
+import org.acmsl.commons.utils.StringUtils;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.CustomResultWithInvalidNumberOfColumnsException;
 import org.acmsl.queryj.api.exceptions.CustomResultWithNoPropertiesException;
@@ -448,6 +449,18 @@ public class RetrieveResultPropertiesHandler
         throws  NoSuchMethodException
     {
         return instanceClass.getDeclaredMethod(methodName, parameterClasses);
+    }
+
+
+    /**
+     * Retrieves the getter method name.
+     * @param type the data type.
+     * @return the associated getter method.
+     */
+    @NotNull
+    protected String getGetterMethod(@NotNull final Class<?> type)
+    {
+        return getAccessorMethod("get", type, StringUtils.getInstance());
     }
 
 
