@@ -85,11 +85,11 @@ public class RetrieveResultSetColumnsHandler
     protected List<Property<String>> retrieveColumns(@NotNull final ResultSet resultSet)
         throws SQLException
     {
+        @NotNull final List<Property<String>> result = new ArrayList<>();
+
         @NotNull final ResultSetMetaData t_Metadata = resultSet.getMetaData();
 
         final int t_iColumnCount = t_Metadata.getColumnCount();
-
-        @NotNull final List<Property<String>> result = new ArrayList<>();
 
         for  (int t_iIndex = 1; t_iIndex <= t_iColumnCount; t_iIndex++)
         {
