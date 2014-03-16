@@ -108,7 +108,7 @@ public class CustomSqlValidationChainTest
     {
         boolean result = false;
 
-        for (@NotNull final Object t_Handler : chain.getHandlers())
+        for (@NotNull final QueryJCommandHandler<QueryJCommand> t_Handler : chain.getHandlers())
         return result;
     }
 }
