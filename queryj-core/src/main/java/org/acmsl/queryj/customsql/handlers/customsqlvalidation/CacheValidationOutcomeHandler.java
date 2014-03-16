@@ -98,7 +98,6 @@ public class CacheValidationOutcomeHandler
 
     /**
      * Writes the validation outcome to disk.
-     * @param outcome the outcome.
      * @param sql the {@link Sql}.
      * @param command the command.
      */
