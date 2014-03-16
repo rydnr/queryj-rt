@@ -90,6 +90,7 @@ public class RetrieveResultSetColumnsHandlerTest
 {
     public void builds_a_list_of_properties_from_the_ResultSetMetadata()
     {
+        @NotNull final RetrieveResultSetColumnsHandler instance = new RetrieveResultSetColumnsHandlerTest()
         @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
         @NotNull final SqlElement<String> t_Sql =
