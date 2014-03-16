@@ -406,7 +406,7 @@ public class RetrieveResultPropertiesHandler
 
             throw
                 new UnsupportedCustomResultPropertyTypeException(
-                    property, sqlResult, sql, illegalAccessException);
+                    property, sql, sqlResult, illegalAccessException);
         }
         catch  (@NotNull final InvocationTargetException invocationTargetException)
         {
