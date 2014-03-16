@@ -207,8 +207,6 @@ public class CacheValidationOutcomeHandlerTest
         new RetrieveQueryHandler().setCurrentSql(t_Sql, t_Command);
         new CheckResultSetGettersWorkForDefinedPropertiesHandler().setValidationOutcome(true, t_Sql, t_Command);
 
-        @NotNull final Charset t_Charset = Charset.defaultCharset();
-
         @NotNull final String hash = "bzS4lagreKYbqR9tX8G2d5CCYGA%3D";
 
         @NotNull final String path = instance.hashPath(tempFolder.getRoot().getAbsolutePath(), hash);
