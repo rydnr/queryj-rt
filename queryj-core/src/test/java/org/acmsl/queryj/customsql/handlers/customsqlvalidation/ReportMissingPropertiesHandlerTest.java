@@ -56,11 +56,18 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.jetbrains.annotations.Nullable;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+/*
+ * Importing JetBrains annotations.
+ */
 import java.util.ArrayList;
 import java.util.List;
 
