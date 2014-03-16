@@ -90,6 +90,8 @@ import java.util.Map;
 public class CheckResultSetGettersWorkForDefinedPropertiesHandler
     extends AbstractQueryJCommandHandler
 {
+    private static final String VALIDATION = "resultset-getters-validation";
+
     /**
      * Asks the handler to process the command. The idea is that each
      * command handler decides if such command is suitable of being
