@@ -256,7 +256,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
         }
         else
         {
-            throw new ResultSetGettersValidationNot
+            throw new ResultSetGettersValidationNotAvailableException(sql);
         }
     }
 }
