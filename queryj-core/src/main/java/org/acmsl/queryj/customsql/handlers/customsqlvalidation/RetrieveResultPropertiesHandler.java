@@ -342,11 +342,9 @@ public class RetrieveResultPropertiesHandler
 
     /**
      * Retrieves the implicit properties declared for given result.
-     * @param sqlResult the custom sql result.
-     * @param customSqlProvider the <code>CustomSqlProvider</code> instance.
+     * @param table the table name.
      * @param metadataManager the <code>MetadataManager</code> instance.
      * @param typeManager the <code>MetadataTypeManager</code> instance.
-     * @param customResultUtils the <code>CustomResultUtils</code> instance.
      * @return such properties.
      * @throws QueryJBuildException if the properties cannot be retrieved..
      */
