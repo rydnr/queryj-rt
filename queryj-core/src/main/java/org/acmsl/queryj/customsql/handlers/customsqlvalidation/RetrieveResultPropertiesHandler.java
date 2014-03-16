@@ -198,9 +198,6 @@ public class RetrieveResultPropertiesHandler
                 {
                     t_lColumns.add(createPropertyFrom(t_Metadata, t_iIndex));
                 }
-
-                diagnoseMissingProperties(t_lProperties, t_lColumns, sql);
-                diagnoseUnusedProperties(t_lProperties, t_lColumns, sql);
             }
         }
     }
