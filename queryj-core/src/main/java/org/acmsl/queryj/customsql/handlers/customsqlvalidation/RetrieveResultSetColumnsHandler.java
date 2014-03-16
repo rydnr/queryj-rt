@@ -101,7 +101,9 @@ public class RetrieveResultSetColumnsHandler
         }
         catch (@NotNull final SQLException sqlException)
         {
-            throw new CannotAnalyzeResultSetForValidationException(new RetrieveQueryHandler().retrieveCurrentSql(command));
+            throw
+                new CannotAnalyzeResultSetForValidationException(
+                    new RetrieveQueryHandler().retrieveCurrentSql(command));
         }
 
         return false;
