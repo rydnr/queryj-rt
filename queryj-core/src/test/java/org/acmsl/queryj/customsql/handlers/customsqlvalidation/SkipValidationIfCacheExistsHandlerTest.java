@@ -38,6 +38,7 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.QueryJCommandWrapper;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -64,6 +65,7 @@ public class SkipValidationIfCacheExistsHandlerTest
         @NotNull final SkipValidationIfCacheExistsHandler instance =
             new SkipValidationIfCacheExistsHandler();
 
+        @NotNull final QueryJCommandWrapper
         Assert.assertFalse(instance.handle(t_Parameters));
     }
 }
