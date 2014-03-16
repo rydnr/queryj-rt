@@ -380,6 +380,14 @@ public class CustomResultUtils
             {
                 result = t_Table.getName();
             }
+            else
+            {
+                result = null;
+            }
+        }
+        else
+        {
+            result = null;
         }
 
         return result;
