@@ -56,5 +56,11 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class SkipValidationIfCacheExistsHandlerTest
 {
-    public void skips_further_
+    public void skips_further_handlers_if_validation_cache_is_found()
+    {
+        @NotNull final SkipValidationIfCacheExistsHandler instance =
+            new SkipValidationIfCacheExistsHandler();
+
+        Assert.assertFalse(instance.handle(t_Parameters));
+    }
 }
