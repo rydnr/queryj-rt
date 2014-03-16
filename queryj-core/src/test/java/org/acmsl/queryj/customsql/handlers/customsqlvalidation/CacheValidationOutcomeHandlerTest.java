@@ -142,7 +142,6 @@ public class CacheValidationOutcomeHandlerTest
 
         Assert.assertTrue(new File(tempFolder.getRoot() + File.separator + hash).exists());
 
-        EasyMock.verify(sqlDAO);
         EasyMock.verify(resultDAO);
     }
 
