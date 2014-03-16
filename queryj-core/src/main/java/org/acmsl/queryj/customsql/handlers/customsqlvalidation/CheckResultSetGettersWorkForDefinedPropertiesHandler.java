@@ -98,7 +98,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
      * @param sql the sql.
      * @param sqlResult the custom sql result.
      * @param typeManager the {@link TypeManager} instance.
-     * @param handler a {@link RetrieveResultPropertiesHandler} for its useful methods dealing
+     * @param handler a {@link RetrieveResultPropertiesHandler} for dealing with reflection.
      * @throws java.sql.SQLException if the SQL operation fails.
      * @throws QueryJBuildException if the expected result cannot be extracted.
      */
