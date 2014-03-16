@@ -27,7 +27,8 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Represents the error when trying to access the list of columns (represented as
+ * Description: Represents the error when trying to access the list of columns
+ *              (represented as
  * {@link org.acmsl.queryj.customsql.Property properties}) extracted from the {@link java.sql.ResultSet}, before
  * the handler flow has actually extracted them.
  *
