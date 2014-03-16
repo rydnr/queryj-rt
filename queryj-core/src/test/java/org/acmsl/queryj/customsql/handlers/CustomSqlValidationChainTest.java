@@ -84,7 +84,7 @@ public class CustomSqlValidationChainTest
     {
         @NotNull final CustomSqlValidationChain instance = new CustomSqlValidationChain();
 
-        @NotNull final Chain<QueryJCommand, QueryJBuildException, QueryJCommandHandler<QueryJCommand>> t_Chain =
+        @NotNull final QueryJChain<QueryJCommand, QueryJBuildException, QueryJCommandHandler<QueryJCommand>> t_Chain =
             new QueryJChain<QueryJCommandHandler<QueryJCommand>>();
 
         EasyMock.expect(t_Chain.add((QueryJCommandHandler<QueryJCommand>) EasyMock.anyObject())).a
