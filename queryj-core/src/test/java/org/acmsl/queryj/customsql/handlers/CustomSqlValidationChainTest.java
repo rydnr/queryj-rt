@@ -110,7 +110,7 @@ public class CustomSqlValidationChainTest
 
         for (@NotNull final QueryJCommandHandler<QueryJCommand> t_Handler : chain.getHandlers())
         {
-            if (t_Handler.getClass() instanceof handler.getClass())
+            if (t_Handler.getClass() instanceof handlerClass)
             {
                 result = true;
                 break;
