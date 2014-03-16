@@ -130,7 +130,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
                         t_Method =
                             handler.retrieveMethod(
                                 ResultSet.class,
-                                new RetrieveResultPropertiesHandler().getGetterMethod(
+                                handler.getGetterMethod(
                                     typeManager.getClass(t_Property.getType())),
                                 new Class<?>[]
                                     {
