@@ -183,11 +183,7 @@ public class CustomSqlValidationHandler
 
         @NotNull final Charset t_Charset = retrieveCharset(parameters);
 
-        if (t_MetadataManager == null)
-        {
-            result = true;
-        }
-        else if  (!retrieveDisableCustomSqlValidation(parameters))
+        if (!retrieveDisableCustomSqlValidation(parameters))
         {
             validate(
                 t_CustomSqlProvider,
