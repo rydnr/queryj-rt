@@ -274,7 +274,6 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
      * @param outcome the outcome.
      * @param sql the SQL.
      * @param command the command.
-     * @return the outcome of the validation.
      */
     protected void setValidationOutcome(
         final boolean outcome, @NotNull final SqlElement<String> sql, @NotNull final QueryJCommand command)
