@@ -179,7 +179,7 @@ public class RetrieveResultPropertiesHandler
 
         @Nullable final String t_strTable =
             CustomResultUtils.getInstance().retrieveTable(
-                sqlResult,
+                sql,
                 customSqlProvider,
                 metadataManager);
 
