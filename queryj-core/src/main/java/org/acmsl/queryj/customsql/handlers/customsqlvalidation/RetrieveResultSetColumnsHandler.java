@@ -38,6 +38,7 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 /*
  * Importing JetBrains annotations.
  */
+import javafx.beans.property.ListProperty;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.exceptions.CustomResultWithInvalidNumberOfColumnsException;
@@ -121,7 +122,7 @@ public class RetrieveResultSetColumnsHandler
     @NotNull
     protected List<Property<String>> retrieveColumns(@NotNull final QueryJCommand command)
     {
-        new QueryJCommandWrapper<List<Property<String>>>(command).setSetting(CURRENT_COLUMNS, columns);
+        new QueryJCommandWrapper<Property<String>>>(command).setSetting(CURRENT_COLUMNS, columns);
     }
 
     /**
