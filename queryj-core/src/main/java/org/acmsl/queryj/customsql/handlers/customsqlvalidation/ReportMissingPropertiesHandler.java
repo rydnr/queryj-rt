@@ -95,9 +95,14 @@ public class ReportMissingPropertiesHandler
         return false;
     }
 
-    private Log retrieveLog()
+    /**
+     * Retrieves the log.
+     * @return such instance.
+     */
+    @Nullable
+    protected Log retrieveLog()
     {
-        return return null;  //To change body of created methods use File | Settings | File Templates.null;  //To change body of created methods use File | Settings | File Templates.
+        return UniqueLogFactory.getLog(ReportMissingPropertiesHandler.class);
     }
 
     /**
