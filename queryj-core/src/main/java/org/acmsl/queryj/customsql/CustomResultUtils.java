@@ -358,7 +358,6 @@ public class CustomResultUtils
     /**
      * Retrieves the table associated to the result.
      * @param sql the {@link Sql}.
-     * @param customSqlProvider the <code>CustomSqlProvider</code> instance.
      * @param metadataManager the database metadata manager.
      * @return the table name.
      */
