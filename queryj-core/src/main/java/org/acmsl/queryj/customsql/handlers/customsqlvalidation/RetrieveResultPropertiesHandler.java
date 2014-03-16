@@ -168,7 +168,7 @@ public class RetrieveResultPropertiesHandler
         @NotNull final MetadataManager metadataManager,
         @NotNull final TypeManager typeManager)
         throws SQLException,
-        QueryJBuildException
+               QueryJBuildException
     {
         if (sql.getId().equalsIgnoreCase("find-product-types-by-draw-type-id"))
         {
