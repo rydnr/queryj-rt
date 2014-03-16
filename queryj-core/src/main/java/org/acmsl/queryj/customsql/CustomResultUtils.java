@@ -332,10 +332,8 @@ public class CustomResultUtils
 
                     if (result != null)
                     {
-                            result = t_Table.getName();
-                            cacheEntry("" + resultId, result);
-                            break;
-                        }
+                        cacheEntry("" + resultId, result);
+                        break;
                     }
                 }
             }
