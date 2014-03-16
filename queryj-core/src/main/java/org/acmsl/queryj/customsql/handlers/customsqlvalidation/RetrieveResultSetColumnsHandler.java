@@ -39,6 +39,7 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.api.exceptions.CustomResultWithInvalidNumberOfColumnsException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
@@ -49,6 +50,8 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 
+import java.sql.ResultSetMetaData;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -77,5 +80,25 @@ public class RetrieveResultSetColumnsHandler
         return true;
     }
 
-    protected List<Property<String>>
+    protected List<Property<String>> retrieveColumns()
+    {
+        @NotNull final ResultSetMetaData t_Metadata = resultSet.getMetaData();
+
+        final int t_iColumnCount = t_Metadata.getColumnCount();
+
+        if  (t_iColumnCount < t_lProperties.size())
+        {
+            throw
+                new CustomResultWithInvalidNumberOfColumnsException(
+                    t_iColumnCount, t_lProperties.size());
+        }
+
+        @NotNull final List<Property<String>> t_lColumns = new ArrayList<>();
+
+        for  (int t_iIndex = 1; t_iIndex <= t_iColumnCount; t_iIndex++)
+        {
+            t_lColumns.add(createPropertyFrom(t_Metadata, t_iIndex));
+        }
+    }
+
 }
