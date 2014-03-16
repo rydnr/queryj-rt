@@ -378,7 +378,7 @@ public class RetrieveResultPropertiesHandler
         @NotNull final Method method,
         @NotNull final ResultSet resultSet,
         @NotNull final Property<String> property,
-        @NotNull final Result<String> sqlResult,
+        @Nullable final Result<String> sqlResult,
         @NotNull final Sql<String> sql)
         throws QueryJBuildException
     {
