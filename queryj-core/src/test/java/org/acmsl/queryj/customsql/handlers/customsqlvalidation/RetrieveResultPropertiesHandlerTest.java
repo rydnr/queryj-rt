@@ -129,7 +129,8 @@ public class RetrieveResultPropertiesHandlerTest
         @NotNull final ResultSet t_ResultSet = PowerMock.createNiceMock(ResultSet.class);
         @NotNull final PreparedStatement t_Statement = PowerMock.createNiceMock(PreparedStatement.class);
         @NotNull final TableDAO t_TableDAO = PowerMock.createNiceMock(TableDAO.class);
-        @NotNull final Table t_Table = PowerMock.createNiceMock()
+        @NotNull final Table t_Table = PowerMock.createNiceMock(Table.class);
+
         EasyMock.expect(t_MetadataManager.getTableDAO()).andReturn(t_TableDAO);
         EasyMock.expect(t_TableDAO.findByDAO("dao")).andReturn(t_Table);
 
