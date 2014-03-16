@@ -139,6 +139,9 @@ public class RetrieveResultPropertiesHandlerTest
         EasyMock.expect(t_CustomSqlProvider.getSqlResultDAO()).andReturn(t_ResultDAO);
         EasyMock.expect(t_CustomSqlProvider.getSqlPropertyDAO()).andReturn(t_PropertyDAO);
         EasyMock.expect(t_ResultDAO.findByPrimaryKey(t_Result.getId())).andReturn(t_Result);
+        EasyMock.expect(t_Statement.executeQuery()).andReturn(t_ResultSet);
+        EasyMock.expect(t_ResultSet.getMetaData()).andReturn(t_Metadata);
+        EasyMock.expect(t_Metadata.getColumnCount()).andReturn(t_lProperties.size());
 
         int t_iIndex = 0;
         for (@NotNull final Property<String> t_Property : t_lProperties)
@@ -148,9 +151,6 @@ public class RetrieveResultPropertiesHandlerTest
             EasyMock.expect(t_Metadata.getColumnTypeName(t_iIndex)).andReturn(t_Property.getType());
             t_iIndex++;
         }
-        EasyMock.expect(t_Statement.executeQuery()).andReturn(t_ResultSet);
-        EasyMock.expect(t_ResultSet.getMetaData()).andReturn(t_Metadata);
-        EasyMock.expect(t_Metadata.getColumnCount()).andReturn(t_lProperties.size());
 
         new QueryJCommandWrapper<Sql<String>>(t_Parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, t_Sql);
         new QueryJCommandWrapper<MetadataManager>(t_Parameters)
