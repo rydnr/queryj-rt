@@ -150,6 +150,7 @@ public class ExecuteQueryHandler
      * @throws java.sql.SQLException if the ResultSet cannot be closed.
      * @throws QueryJBuildException if the validation fails.
      */
+    @Nullable
     protected ResultSet validateStatement(
         @NotNull final Sql<String> sql,
         @NotNull final PreparedStatement preparedStatement)
