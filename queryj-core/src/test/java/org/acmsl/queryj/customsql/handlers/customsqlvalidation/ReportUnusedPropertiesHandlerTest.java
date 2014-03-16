@@ -76,7 +76,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 /*
- * Importing checkthread.org annotations.
+ * Importing JDK classes.
  */
 import java.util.ArrayList;
 import java.util.List;
