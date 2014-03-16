@@ -120,7 +120,7 @@ public class RetrieveResultSetColumnsHandlerTest
         {
             EasyMock.expect(t_ResultSetMetaData.getColumnName(t_iIndex)).andReturn(t_Property.getColumnName());
             EasyMock.expect(t_ResultSetMetaData.getColumnTypeName(t_iIndex)).andReturn(t_Property.getType());
-            EasyMock.expect(t_ResultSetMetaData.getColumnTypeName(t_iIndex)).andReturn(t_Property.getType());
+            EasyMock.expect(t_ResultSetMetaData.isNullable(t_iIndex)).andReturn(t_Property.getType());
 
             t_iIndex++;
         }
