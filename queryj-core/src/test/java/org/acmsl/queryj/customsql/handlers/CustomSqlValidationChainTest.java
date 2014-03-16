@@ -103,7 +103,7 @@ public class CustomSqlValidationChainTest
     }
 
     protected boolean contains(
-        @NotNull final QueryJCommandHandler<QueryJCommand> handlerClass,
+        @NotNull final Class<QueryJCommandHandler<QueryJCommand>> handlerClass,
         @NotNull final Chain<QueryJCommand, QueryJBuildException, QueryJCommandHandler<QueryJCommand>> chain)
     {
         boolean result = false;
