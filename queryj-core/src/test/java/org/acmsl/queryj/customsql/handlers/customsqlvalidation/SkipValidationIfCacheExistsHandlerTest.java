@@ -42,9 +42,12 @@ import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.Sql.Cardinality;
 import org.acmsl.queryj.customsql.SqlElement;
+import org.acmsl.queryj.customsql.handlers.CustomSqlCacheWritingHandler;
+import org.acmsl.queryj.customsql.handlers.CustomSqlProviderRetrievalHandler;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.jetbrains.annotations.NotNull;
 
@@ -58,6 +61,8 @@ import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+
+import java.io.File;
 
 /**
  *
@@ -85,6 +90,22 @@ public class SkipValidationIfCacheExistsHandlerTest
             new SqlElement<>("sql-id", "dao", "sql-name", "select", Cardinality.SINGLE, "all", true, false, "fake sql");
 
         @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+
+        new QueryJCommandWrapper<File>(t_Command).setSetting(
+            CustomSqlCacheWritingHandler.CUSTOM_SQL_OUTPUT_FOLDER_FOR_HASHES, tempFolder.getRoot());
+        new QueryJCommandWrapper<CustomSqlProvider>(t_Command).setSetting(
+            CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, t_CustomSqlProvider);
+        new RetrieveQueryHandler().setCurrentSql(t_Sql, t_Command);
+        new CheckResultSetGettersWorkForDefinedPropertiesHandler().setValidationOutcome(true, t_Sql, t_Command);
+
+        new QueryJCommandWrapper<File>(t_Command).setSetting(
+            CustomSqlCacheWritingHandler.CUSTOM_SQL_OUTPUT_FOLDER_FOR_HASHES, tempFolder.getRoot());
+
+        @NotNull final String hash = "bzS4lagreKYbqR9tX8G2d5CCYGA%3D";
+
+        instance.handle(t_Command);
+
+        Assert.assertTrue(new File(tempFolder.getRoot() + File.separator + hash).exists());
 
         Assert.assertFalse(instance.handle(t_Parameters));
     }
