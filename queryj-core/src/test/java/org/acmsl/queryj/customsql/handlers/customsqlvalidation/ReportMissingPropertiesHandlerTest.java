@@ -84,6 +84,7 @@ public class ReportMissingPropertiesHandlerTest
         t_lColumns.add(new PropertyElement<>("tmst", "tmst", 2, "Date", false));
         t_lColumns.add(new PropertyElement<>("flag", "flg", 3, int.class.getSimpleName(), false));
 
+
         Assert.assertFalse(instance.handle(t_Parameters));
     }
 }
