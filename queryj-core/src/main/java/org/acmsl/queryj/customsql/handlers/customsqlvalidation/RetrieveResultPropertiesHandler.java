@@ -210,7 +210,6 @@ public class RetrieveResultPropertiesHandler
             {
                 throw new CustomSqlWithNoPropertiesException(sql);
             }
-
         }
         else
         {
