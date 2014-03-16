@@ -363,7 +363,7 @@ public class CustomResultUtils
      * @return the table name.
      */
     @Nullable
-    public <T> String retrieveTable(
+    public <T> String retrieveTableBySqlId(
         @NotNull final T sqlId,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager)
