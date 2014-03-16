@@ -137,8 +137,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandlerTest
         @NotNull final ResultSetMetaData t_Metadata = PowerMock.createNiceMock(ResultSetMetaData.class);
         @SuppressWarnings("unchecked")
         @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> t_Table =
-            PowerMock.createNiceMock
-            (Table.class);
+            PowerMock.createNiceMock(Table.class);
 
         EasyMock.expect(t_MetadataManager.getTableDAO()).andReturn(t_TableDAO);
         EasyMock.expect(t_TableDAO.findByDAO("dao")).andReturn(t_Table);
