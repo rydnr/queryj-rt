@@ -37,7 +37,7 @@
 package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 
 /*
- * Importing JetBrains annotations.
+ * Importing ACM SL
  */
 import org.acmsl.commons.logging.UniqueLogFactory;
 import org.acmsl.commons.utils.StringUtils;
