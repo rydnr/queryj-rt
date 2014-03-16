@@ -45,6 +45,10 @@ import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.exceptions.ColumnsNotAvailableForValidationException;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
