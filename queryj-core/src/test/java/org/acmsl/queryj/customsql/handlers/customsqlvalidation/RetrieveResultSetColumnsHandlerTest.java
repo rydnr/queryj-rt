@@ -100,25 +100,6 @@ public class RetrieveResultSetColumnsHandlerTest
 
         @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
-        @NotNull final SqlElement<String> t_Sql =
-            new SqlElement<>(
-                "id", "dao", "name", "String", Cardinality.SINGLE, "all", true /* validation */, false, "description");
-
-        @NotNull final List<Property<String>> t_lProperties = new ArrayList<>(2);
-        t_lProperties.add(new PropertyElement<>("name", "name", 1, String.class.getSimpleName(), false));
-        t_lProperties.add(new PropertyElement<>("tmst", "tmst", 1, "Date", false));
-
-        @NotNull final Result<String> t_Result = new ResultElement<>("r1", "Vo");
-        t_Result.add(new PropertyRefElement("name"));
-        t_Result.add(new PropertyRefElement("tmst"));
-
-        t_Sql.add(new ParameterRefElement("id"));
-        t_Sql.setResultRef(new ResultRefElement("r1"));
-
-        @NotNull final CustomSqlProvider t_CustomSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
-        @NotNull final MetadataManager t_MetadataManager = PowerMock.createNiceMock(MetadataManager.class);
-        @NotNull final SqlResultDAO t_ResultDAO = PowerMock.createNiceMock(SqlResultDAO.class);
-        @NotNull final SqlPropertyDAO t_PropertyDAO = PowerMock.createNiceMock(SqlPropertyDAO.class);
         @NotNull final ResultSet t_ResultSet = PowerMock.createNiceMock(ResultSet.class);
         @NotNull final PreparedStatement t_Statement = PowerMock.createNiceMock(PreparedStatement.class);
         @NotNull final TableDAO t_TableDAO = PowerMock.createNiceMock(TableDAO.class);
