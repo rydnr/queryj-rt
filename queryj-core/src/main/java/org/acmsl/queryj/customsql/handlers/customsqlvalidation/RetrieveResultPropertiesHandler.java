@@ -316,26 +316,6 @@ public class RetrieveResultPropertiesHandler
 
     /**
      * Retrieves the implicit properties declared for given result.
-     * @param sqlResult the custom sql result.
-     * @param customSqlProvider the <code>CustomSqlProvider</code> instance.
-     * @param metadataManager the <code>MetadataManager</code> instance.
-     * @param typeManager the <code>MetadataTypeManager</code> instance.
-     * @return such properties.
-     * @throws QueryJBuildException if the properties cannot be retrieved..
-     */
-    @NotNull
-    protected List<Property<String>> retrieveImplicitProperties(
-        @NotNull final String table,
-        @NotNull final CustomSqlProvider customSqlProvider,
-        @NotNull final MetadataManager metadataManager,
-        @NotNull final TypeManager typeManager)
-        throws  QueryJBuildException
-    {
-        return retrieveImplicitProperties(table, metadataManager, typeManager);
-    }
-
-    /**
-     * Retrieves the implicit properties declared for given result.
      * @param table the table name.
      * @param metadataManager the <code>MetadataManager</code> instance.
      * @param typeManager the <code>MetadataTypeManager</code> instance.
