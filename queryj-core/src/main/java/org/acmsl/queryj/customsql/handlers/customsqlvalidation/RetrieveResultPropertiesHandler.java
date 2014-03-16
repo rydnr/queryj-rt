@@ -177,10 +177,6 @@ public class RetrieveResultPropertiesHandler
 
         if (sqlResult != null)
         {
-
-        }
-        else
-        {
             @NotNull List<Property<String>> t_lProperties =
                 retrieveExplicitProperties(
                     sql,
