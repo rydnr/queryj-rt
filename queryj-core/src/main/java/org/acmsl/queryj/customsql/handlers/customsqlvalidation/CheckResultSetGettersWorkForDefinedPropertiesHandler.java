@@ -128,6 +128,8 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
                 try
                 {
                     validateProperties(t_ResultSet, t_lProperties, t_Sql, t_Result, new JdbcTypeManager(), t_Handler);
+
+                    setValidationOutcome(true, sql, command);
                 }
                 catch (@NotNull final SQLException errorDealingWithResultSetMetadata)
                 {
