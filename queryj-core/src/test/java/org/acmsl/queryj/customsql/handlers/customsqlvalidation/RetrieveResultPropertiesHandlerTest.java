@@ -130,7 +130,7 @@ public class RetrieveResultPropertiesHandlerTest
         @NotNull final TableDAO t_TableDAO = PowerMock.createNiceMock(TableDAO.class);
 
         EasyMock.expect(t_MetadataManager.getTableDAO()).andReturn(t_TableDAO);
-        EasyMock.expect(t_TableDAO.findByDAO()
+        EasyMock.expect(t_TableDAO.findByDAO("dao")
 
         EasyMock.expect(t_CustomSqlProvider.getSqlResultDAO()).andReturn(t_ResultDAO);
         EasyMock.expect(t_ResultDAO.findByPrimaryKey(t_Result.getId())).andReturn(t_Result);
