@@ -90,7 +90,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
         throws QueryJBuildException
     {
         @NotNull final ResultSet t_ResultSet = new ExecuteQueryHandler().retrieveCurrentResultSet(command);
-        @NotNull final
+        @NotNull final List<Property<String>> t_lProperties = new
         return false;
     }
 
