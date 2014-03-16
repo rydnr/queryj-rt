@@ -84,7 +84,7 @@ public class CacheValidationOutcomeHandlerTest
                 true /* validation */,
                 false,
                 "description");
-        new QueryJCommandWrapper<>()
+        new QueryJCommandWrapper<Sql<String>>()
         Assert.assertFalse(instance.handle(t_Parameters));
     }
 }
