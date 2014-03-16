@@ -27,7 +27,8 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Performs some checks in the ResultSet, for the expected
+ *              Properties.
  *
  * Date: 2014/03/16
  * Time: 08:44
