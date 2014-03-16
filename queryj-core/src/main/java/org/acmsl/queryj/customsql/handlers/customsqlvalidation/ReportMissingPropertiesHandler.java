@@ -107,9 +107,9 @@ public class ReportMissingPropertiesHandler
         @NotNull final Sql<String> sql,
         @Nullable final Log log)
     {
-        @Nullable final Log t_Log = UniqueLogFactory.getLog(ReportMissingPropertiesHandler.class);
+        @Nullable final Log log = UniqueLogFactory.getLog(ReportMissingPropertiesHandler.class);
 
-        if (t_Log != null)
+        if (log != null)
         {
             @NotNull final List<Property<String>> t_lMissingProperties =
                 detectMissingProperties(properties, columns);
@@ -120,7 +120,7 @@ public class ReportMissingPropertiesHandler
             {
                 if  (t_MissingProperty != null)
                 {
-                    t_Log.warn(
+                    log.warn(
                         "Column not declared ("
                         + t_iIndex + ", "
                         + t_MissingProperty.getColumnName() + ", "
