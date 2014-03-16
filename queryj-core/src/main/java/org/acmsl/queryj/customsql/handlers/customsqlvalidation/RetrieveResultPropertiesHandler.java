@@ -127,8 +127,7 @@ public class RetrieveResultPropertiesHandler
 
         @Nullable final ResultRef t_ResultRef = t_Sql.getResultRef();
 
-        if  (   (t_MetadataManager != null)
-             && (t_ResultRef != null))
+        if  (t_ResultRef != null)
         {
             validateResultSet(
                 t_ResultSet,
