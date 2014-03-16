@@ -370,13 +370,13 @@ public class CustomResultUtils
     {
         @Nullable final T t_strDao = sql.getDao();
 
-                    if (t_strDao != null)
-                    {
-                        @Nullable final Table<String, Attribute<String>, List<Attribute<String>>> t_Table =
-                            metadataManager.getTableDAO().findByDAO(t_strDao);
+        if (t_strDao != null)
+        {
+            @Nullable final Table<String, Attribute<String>, List<Attribute<String>>> t_Table =
+                metadataManager.getTableDAO().findByDAO(t_strDao);
 
-                        if  (t_Table != null)
-                        {
+            if  (t_Table != null)
+            {
                             result = t_Table.getName();
                             cacheEntry("" + resultId, result);
                             break;
