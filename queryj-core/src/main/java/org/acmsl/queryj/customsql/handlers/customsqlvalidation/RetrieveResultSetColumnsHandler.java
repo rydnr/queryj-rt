@@ -114,7 +114,7 @@ public class RetrieveResultSetColumnsHandler
     }
 
     /**
-     * Annotates the columns in the command.
+     * Retrieves the columns in the command.
      * @param columns the {@link Property properties} to store.
      * @param command the {@link QueryJCommand command}.
      */
