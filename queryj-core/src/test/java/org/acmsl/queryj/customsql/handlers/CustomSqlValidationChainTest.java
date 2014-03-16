@@ -86,7 +86,7 @@ public class CustomSqlValidationChainTest
 
         @NotNull final Chain<QueryJCommand, QueryJBuildException, QueryJCommandHandler<QueryJCommand>> t_Chain = new Chain<>();
 
-        instance.buildChain((Chain<QueryJCommand, QueryJBuildException, QueryJCommandHandler< QueryJCommand>>) t_Chain);
+        instance.buildChain(t_Chain);
 
         Assert.assertTrue(contains(BindQueryParametersHandler.class, t_Chain));
 
