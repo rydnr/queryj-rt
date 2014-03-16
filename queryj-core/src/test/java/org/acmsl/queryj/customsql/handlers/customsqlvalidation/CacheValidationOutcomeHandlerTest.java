@@ -64,6 +64,10 @@ import org.acmsl.queryj.metadata.SqlResultDAO;
  */
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.easymock.EasyMock;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
