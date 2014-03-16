@@ -93,7 +93,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
         @NotNull final RetrieveResultPropertiesHandler t_Handler = new RetrieveResultPropertiesHandler();
         @NotNull final List<Property<String>> t_lProperties = t_Handler.retrieveCurrentProperties(command);
         @NotNull final Sql<String> t_Sql = new RetrieveQueryHandler().retrieveCurrentSql(command);
-        @NotNull final Result<String> t_Result = new
+        @NotNull final Result<String> t_Result = new RetrieveQueryHandler()
         return false;
     }
 
