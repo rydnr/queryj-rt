@@ -490,7 +490,7 @@ public class RetrieveResultPropertiesHandler
         {
             @NotNull final Sql<String> t_Sql = new RetrieveQueryHandler().retrieveCurrentSql(command);
 
-            throw new PropertiesNotAvailableForValidationException(retrieveCurre)
+            throw new PropertiesNotAvailableForValidationException(t_Sql);
         }
     }
 }
