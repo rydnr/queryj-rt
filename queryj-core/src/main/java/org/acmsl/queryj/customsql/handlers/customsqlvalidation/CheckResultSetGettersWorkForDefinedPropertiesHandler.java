@@ -253,7 +253,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
 
         if (outcomes == null)
         {
-            outcomes = new HashMap<Sql, Boolean>();
+            outcomes = new HashMap<>();
             wrapper.setSetting(VALIDATION, outcomes);
         }
 
