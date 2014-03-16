@@ -58,7 +58,7 @@ public class ColumnsNotAvailableForValidationException
 {
     /**
      * Creates an instance using given {@link Sql} as context.
-     * @param sql
+     * @param sql the SQL.
      */
     public ColumnsNotAvailableForValidationException(final Sql<String> sql)
     {
