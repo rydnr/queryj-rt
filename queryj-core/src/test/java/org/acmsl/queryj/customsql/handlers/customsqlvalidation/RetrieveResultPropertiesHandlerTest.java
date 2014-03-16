@@ -149,7 +149,8 @@ public class RetrieveResultPropertiesHandlerTest
 
         EasyMock.replay(t_CustomSqlProvider);
         EasyMock.replay(t_MetadataManager);
-        EasyMock.replay();
+        EasyMock.replay(t_TableDAO);
+        EasyMock.replay(t_Table);
         EasyMock.replay(t_ResultDAO);
         EasyMock.replay(t_ResultSet);
         EasyMock.replay(t_Statement);
@@ -160,6 +161,9 @@ public class RetrieveResultPropertiesHandlerTest
         Assert.assertFalse(instance.handle(t_Parameters));
 
         EasyMock.verify(t_CustomSqlProvider);
+        EasyMock.verify(t_MetadataManager);
+        EasyMock.verify(t_TableDAO);
+        EasyMock.verify(t_Table);
         EasyMock.verify(t_ResultDAO);
         EasyMock.verify(t_ResultSet);
         EasyMock.verify(t_Statement);
