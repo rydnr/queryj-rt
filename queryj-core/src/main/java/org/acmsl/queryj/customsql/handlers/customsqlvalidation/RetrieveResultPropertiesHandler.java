@@ -165,7 +165,8 @@ public class RetrieveResultPropertiesHandler
         return false;
     }
 
-    protected void setCurrentProperties(@NotNull final List<Property<String>> properties, @NotNull final QueryJCommand command)
+    protected void setCurrentProperties(
+        @NotNull final List<Property<String>> properties, @NotNull final QueryJCommand command)
     {
         //To change body of created methods use File | Settings | File Templates.
     }
