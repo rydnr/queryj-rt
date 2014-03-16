@@ -82,7 +82,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Retrieves the {@link Property properties} from the {@link ResultSet}
+ * Retrieves the {@link Property properties} from the {@link ResultSet} and injects
+ * them into the command.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/15 16:52
