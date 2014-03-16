@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Represents errors when operating with {@link java.sql.ResultSet#getMetaData()}.
  *
  * Date: 2014/03/16
  * Time: 06:48
