@@ -89,6 +89,7 @@ public class ReportMissingPropertiesHandlerTest
         new QueryJCommandWrapper<List<Property<String>>>(t_Parameters)
             .setSetting(RetrieveResultPropertiesHandler.CURRENT_PROPERTIES, t_lProperties);
         new QueryJCommandWrapper<List<Property<String>>>(t_Parameters)
+            .setSetting(RetrieveResultSetColumnsHandler);
 
         Assert.assertFalse(instance.handle(t_Parameters));
     }
