@@ -63,6 +63,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+import org.powermock.api.easymock.PowerMock;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 
 import java.util.ArrayList;
@@ -106,7 +107,8 @@ public class ReportMissingPropertiesHandlerTest
 
         @NotNull final Log t_Log = EasyMock.createNiceMock(Log.class);
 
-        mockStatic(UniqueLogFactory.getLog(CustomSqlValidationHandler.class)
-        Assert.assertFalse(instance.handle(t_Parameters));
+        PowerMock.mockStatic(UniqueLogFactory.getLog(CustomSqlValidationHandler.class);
+
+                             Assert.assertFalse(instance.handle(t_Parameters));
     }
 }
