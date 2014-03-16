@@ -80,7 +80,7 @@ public class CacheValidationOutcomeHandler
 
         if (t_bResultSetGettersCheck)
         {
-
+            cacheOutcomeToDisk()
         }
         return true;
     }
