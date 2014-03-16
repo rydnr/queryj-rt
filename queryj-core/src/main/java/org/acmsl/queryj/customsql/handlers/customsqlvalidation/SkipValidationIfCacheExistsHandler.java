@@ -40,6 +40,7 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
  */
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
 import org.jetbrains.annotations.NotNull;
@@ -48,6 +49,9 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+
+import java.io.File;
+import java.nio.charset.Charset;
 
 /**
  *
@@ -80,6 +84,16 @@ public class SkipValidationIfCacheExistsHandler
     protected boolean validationCacheFound(@NotNull final Sql<String> sql, @NotNull final QueryJCommand command)
     {
         final boolean result;
+
+        @NotNull final File outputFolder = retrieveOutputFolderForSqlHashes(command);
+
+        @NotNull final CustomSqlProvider customSqlProvider = retrieveCustomSqlProvider(command);
+
+        @NotNull final Charset charset = retrieveCharset(command);
+
+        @NotNull final String hash = customSqlProvider.getHash(sql, charset.displayName());
+
+        writeHash(outputFolder, hash, charset);
 
         return result;
     }
