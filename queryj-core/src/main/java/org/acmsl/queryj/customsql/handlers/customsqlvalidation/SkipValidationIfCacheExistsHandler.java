@@ -102,7 +102,7 @@ public class SkipValidationIfCacheExistsHandler
     protected boolean hashExists(
         final File outputFolder, final Charset charset, final CacheValidationOutcomeHandler handler)
     {
-        @NotNull final String path = hashPath(outputFolder.getAbsolutePath(), hash);
+        @NotNull final String path = handler.hashPath(outputFolder.getAbsolutePath(), hash);
 
         return handler.existsAlready(path);
     }
