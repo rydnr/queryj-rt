@@ -143,7 +143,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
                                 t_Property, sql, sqlResult, noSuchMethod);
                     }
 
-                    invokeResultSetGetter(
+                    new RetrieveResultPropertiesHandler().invokeResultSetGetter(
                         t_Method, resultSet, t_Property, sqlResult, sql);
                 }
             }
