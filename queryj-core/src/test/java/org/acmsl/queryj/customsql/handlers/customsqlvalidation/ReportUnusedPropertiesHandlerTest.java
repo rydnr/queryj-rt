@@ -41,6 +41,7 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
+import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.PropertyElement;
 import org.acmsl.queryj.customsql.Sql;
@@ -73,6 +74,7 @@ import java.util.List;
 public class ReportUnusedPropertiesHandlerTest
 {
     public void detects_unused_properties()
+        throws QueryJBuildException
     {
         @NotNull final Log t_Log = EasyMock.createNiceMock(Log.class);
 
