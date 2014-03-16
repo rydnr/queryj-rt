@@ -132,8 +132,6 @@ public class CacheValidationOutcomeHandlerTest
         instance.handle(t_Command);
 
         Assert.assertTrue(new File(tempFolder.getRoot() + File.separator + hash).exists());
-
-        EasyMock.verify(resultDAO);
     }
 
     /**
