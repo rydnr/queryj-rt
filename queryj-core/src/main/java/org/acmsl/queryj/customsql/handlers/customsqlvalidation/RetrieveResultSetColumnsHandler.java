@@ -105,7 +105,7 @@ public class RetrieveResultSetColumnsHandler
 
     protected void setColumns(@NotNull final List<Property<String>> columns, @NotNull final QueryJCommand command)
     {
-        new QueryJCommandWrapper<List<Property<String>>>(CURRENT_COLUMNS, command);
+        new QueryJCommandWrapper<List<Property<String>>>(command).setSetting(CURRENT_COLUMNS, command);
     }
 
     /**
