@@ -207,6 +207,9 @@ public class RetrieveResultPropertiesHandler
                 throw new CustomResultWithNoPropertiesException(sqlResult, sql);
             }
             else
+            {
+                throw new CustomSqlWithNoPropertiesException()
+            }
 
         }
         else
