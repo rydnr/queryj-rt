@@ -121,8 +121,6 @@ public class RetrieveQueryHandler
             setCurrentSqlIndex(index + 1, command);
 
             chain.process(command);
-
-            result = false;
         }
 
         return false;
