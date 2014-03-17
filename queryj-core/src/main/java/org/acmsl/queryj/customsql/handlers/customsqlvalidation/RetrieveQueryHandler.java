@@ -124,12 +124,8 @@ public class RetrieveQueryHandler
 
             result = false;
         }
-        else
-        {
-            result = true;
-        }
 
-        return result;
+        return false;
     }
 
     /**
