@@ -160,7 +160,7 @@ public class RetrieveQueryHandler
     }
 
     /**
-     * Retrieves the index of the current SQL, or {@code 0} if the iteration
+     * Specifies the index of the current SQL, or {@code 0} if the iteration
      * has not started yet.
      * @param parameters the parameters.
      * @return the index of the current SQL.
