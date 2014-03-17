@@ -255,7 +255,7 @@ public abstract class AbstractQueryJChain
     public String toString()
     {
         return
-              "{ \"class\": \"" + AbstractQueryJChain.class.getName() + '"'
+              "{ \"class\": \"" + AbstractQueryJChain.class.getSimpleName() + '"'
             + ", \"chain\": " + getChain() + " }";
     }
 }
