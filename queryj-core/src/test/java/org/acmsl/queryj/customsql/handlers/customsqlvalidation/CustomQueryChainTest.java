@@ -47,7 +47,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /*
- * Importing checkthread.org annotations.
+ * Importing JUnit classes.
  */
 import org.junit.Assert;
 import org.junit.Test;
