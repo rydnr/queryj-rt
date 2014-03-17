@@ -39,10 +39,18 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
  * Importing JetBrains annotations.
  */
 import org.acmsl.commons.patterns.Chain;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.acmsl.queryj.AbstractQueryJChain;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.tools.handlers.QueryJCommandHandler;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
