@@ -71,8 +71,6 @@ public class CustomQueryChain
         @NotNull final Chain<QueryJCommand, QueryJBuildException, QueryJCommandHandler<QueryJCommand>> chain)
         throws QueryJBuildException
     {
-        chain.add(new GlobalValidationEnabledHandler());
-
         chain.add(new RetrieveQueryHandler());
 
         chain.add(new QueryValidationEnabledHandler());
