@@ -108,7 +108,7 @@ public class RetrieveQueryHandler
     protected boolean handle(@NotNull final QueryJCommand command, @NotNull final CustomQueryChain chain)
         throws QueryJBuildException
     {
-        final int index = retrieveCurrentSqlIndex(command);
+        int index = retrieveCurrentSqlIndex(command);
 
         @NotNull final List<Sql<String>> t_lSql = retrieveSqlList(command);
 
