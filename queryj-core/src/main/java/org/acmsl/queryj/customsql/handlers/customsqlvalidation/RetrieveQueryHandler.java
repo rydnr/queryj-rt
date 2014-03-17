@@ -106,6 +106,7 @@ public class RetrieveQueryHandler
         {
             setCurrentSql(t_lSql.get(index), command);
             setCurrentSqlIndex(index + 1, command);
+
             result = false;
         }
         else
