@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.009" errors="0" skipped="0" tests="2" name="org.acmsl.queryj.customsql.xml.StatementFlagsElementFactoryTest">
+<testsuite failures="0" time="0.037" errors="0" skipped="0" tests="2" name="org.acmsl.queryj.customsql.xml.StatementFlagsElementFactoryTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/opt/oracle-jdk-bin-1.7.0.51/jre/lib/amd64"/>
@@ -59,6 +59,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.001" classname="org.acmsl.queryj.customsql.xml.StatementFlagsElementFactoryTest" name="testCreateObject"/>
-  <testcase time="0.008" classname="org.acmsl.queryj.customsql.xml.StatementFlagsElementFactoryTest" name="testVault"/>
+  <testcase time="0.014" classname="org.acmsl.queryj.customsql.xml.StatementFlagsElementFactoryTest" name="testCreateObject"/>
+  <testcase time="0.023" classname="org.acmsl.queryj.customsql.xml.StatementFlagsElementFactoryTest" name="testVault"/>
 </testsuite>
