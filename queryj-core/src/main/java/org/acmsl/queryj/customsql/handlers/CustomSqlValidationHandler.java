@@ -174,6 +174,8 @@ public class CustomSqlValidationHandler
       throws  QueryJBuildException
     {
         new CustomSqlValidationChain().process(parameters);
+
+        return false;
     }
 
     /**
