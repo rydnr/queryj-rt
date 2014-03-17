@@ -160,16 +160,6 @@ public class RetrieveQueryHandler
     }
 
     /**
-     * Specifies the index of the current SQL.
-     * @param index the index of the current SQL.
-     * @param parameters the parameters.
-     */
-    protected void setCurrentSqlIndex(final int index, final QueryJCommand parameters)
-    {
-        new QueryJCommandWrapper<Integer>(parameters).setSetting(CURRENT_SQL_INDEX, index);
-    }
-
-    /**
      * Retrieves the list of queries.
      * @param parameters the parameters.
      * @return the list of {@link Sql queries}.
