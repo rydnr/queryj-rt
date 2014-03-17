@@ -124,16 +124,6 @@ public class CustomSqlValidationHandler
         (Class<String>[]) new Class<?>[] { String.class };
 
     /**
-     * The date format.
-     */
-    public final String DATE_FORMAT = "MM/DD/yyyy";
-
-    /**
-     * The date format, in english notation.
-     */
-    public final String DATE_FORMAT_EN = "yyyy/DD/MM/DD";
-
-    /**
      * Creates a <code>CustomSqlValidationHandler</code> instance.
      */
     public CustomSqlValidationHandler() {}
