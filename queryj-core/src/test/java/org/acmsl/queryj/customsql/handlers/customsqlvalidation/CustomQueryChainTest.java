@@ -42,7 +42,6 @@ import org.acmsl.commons.patterns.ArrayListChainAdapter;
 import org.acmsl.commons.patterns.Chain;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
-import org.acmsl.queryj.customsql.handlers.CustomSqlValidationChain;
 import org.acmsl.queryj.tools.handlers.QueryJCommandHandler;
 import org.jetbrains.annotations.NotNull;
 
