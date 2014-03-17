@@ -1,2 +1,2 @@
 * 2014/03/17
-** TODO #454 Refactor CustomSqlValidationHandler into its own chain: 1 ->
+** DONE #454 Refactor CustomSqlValidationHandler into its own chain: 2 -> X X
