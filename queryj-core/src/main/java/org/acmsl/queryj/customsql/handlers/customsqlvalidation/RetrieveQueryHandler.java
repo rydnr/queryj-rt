@@ -43,6 +43,7 @@ import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Sql;
+import org.acmsl.queryj.metadata.SqlDAO;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
 
 /*
@@ -186,6 +187,8 @@ public class RetrieveQueryHandler
         {
             @NotNull final CustomSqlProvider t_CustomSqlProvider =
                 retrieveCustomSqlProvider(parameters);
+
+            @NotNull final SqlDAO t_SqlDAO = t_CustomSqlProvider.getSqlDAO();
 
             result = new ArrayList<>(0);
         }
