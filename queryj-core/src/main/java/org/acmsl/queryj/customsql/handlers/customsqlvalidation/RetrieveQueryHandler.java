@@ -114,7 +114,7 @@ public class RetrieveQueryHandler
 
         @NotNull final List<Sql<String>> t_lSql = retrieveSqlList(command);
 
-        if (   (index > -1)
+        while (   (index > -1)
             && (index < t_lSql.size()))
         {
             setCurrentSql(t_lSql.get(index), command);
