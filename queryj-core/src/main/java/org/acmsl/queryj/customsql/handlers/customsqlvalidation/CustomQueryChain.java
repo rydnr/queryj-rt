@@ -108,6 +108,4 @@ public class CustomQueryChain
         @NotNull final QueryJBuildException buildException, @NotNull final QueryJCommand command)
     {
     }
-
-{
 }
