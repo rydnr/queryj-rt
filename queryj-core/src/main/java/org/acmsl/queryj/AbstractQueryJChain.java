@@ -256,6 +256,7 @@ public abstract class AbstractQueryJChain
     {
         return
               "{ \"class\": \"" + AbstractQueryJChain.class.getSimpleName() + '"'
+        + ", \"package\": \""
             + ", \"chain\": " + getChain() + " }";
     }
 }
