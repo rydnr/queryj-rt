@@ -97,9 +97,6 @@ public class CustomSqlValidationChainTest
         instance.buildChain(t_Chain);
 
         Assert.assertTrue(contains(CustomQueryChain.class, t_Chain));
-        Assert.assertTrue(contains(CacheValidationOutcomeHandler.class, t_Chain));
-        Assert.assertTrue(contains(CheckResultSetGettersWorkForDefinedPropertiesHandler.class, t_Chain));
-        Assert.assertTrue(contains(ExecuteQueryHandler.class, t_Chain));
         Assert.assertTrue(contains(GlobalValidationEnabledHandler.class, t_Chain));
         Assert.assertTrue(contains(QueryValidationEnabledHandler.class, t_Chain));
         Assert.assertTrue(contains(ReportMissingPropertiesHandler.class, t_Chain));
