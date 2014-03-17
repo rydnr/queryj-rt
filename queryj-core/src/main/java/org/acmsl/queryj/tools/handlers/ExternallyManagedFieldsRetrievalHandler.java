@@ -92,7 +92,7 @@ public class ExternallyManagedFieldsRetrievalHandler
     {
         return
             handle(
-                retrieveMetadataManagerIfExists(parameters),
+                retrieveMetadataManager(parameters),
                 retrieveExternallyManagedFieldsElement(parameters),
                 StringValidator.getInstance());
     }
