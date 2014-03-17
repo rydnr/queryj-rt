@@ -36,7 +36,7 @@
 package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 
 /*
- * Importing JetBrains annotations.
+ * Importing ACM SL Java Commons classes.
  */
 import org.acmsl.commons.patterns.ArrayListChainAdapter;
 import org.acmsl.commons.patterns.Chain;
