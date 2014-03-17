@@ -84,7 +84,6 @@ public class CustomQueryChainTest
         Assert.assertTrue(contains(QueryValidationEnabledHandler.class, t_Chain));
         Assert.assertTrue(contains(ReportMissingPropertiesHandler.class, t_Chain));
         Assert.assertTrue(contains(ReportUnusedPropertiesHandler.class, t_Chain));
-        Assert.assertTrue(contains(RetrieveQueryHandler.class, t_Chain));
         Assert.assertTrue(contains(RetrieveResultPropertiesHandler.class, t_Chain));
         Assert.assertTrue(contains(RetrieveResultSetColumnsHandler.class, t_Chain));
         Assert.assertTrue(contains(SetupPreparedStatementHandler.class, t_Chain));
