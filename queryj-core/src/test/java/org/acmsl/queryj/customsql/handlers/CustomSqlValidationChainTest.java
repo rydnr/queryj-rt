@@ -98,7 +98,7 @@ public class CustomSqlValidationChainTest
 
         instance.buildChain(t_Chain);
 
-        Assert.assertTrue(contains(CustomQueryChain.class, t_Chain));
+        Assert.assertTrue(contains(RetrieveQueryHandler.class, t_Chain));
         Assert.assertTrue(contains(GlobalValidationEnabledHandler.class, t_Chain));
     }
 
