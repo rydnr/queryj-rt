@@ -184,7 +184,7 @@ public class RetrieveQueryHandler
             new QueryJCommandWrapper<Sql<String>>(parameters).getListSetting(SQL_LIST);
 
         if (   (aux == null)
-            || (aux.size() == 0)
+            || (aux.size() == 0))
         {
             @NotNull final CustomSqlProvider t_CustomSqlProvider =
                 retrieveCustomSqlProvider(parameters);
