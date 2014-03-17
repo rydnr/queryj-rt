@@ -107,7 +107,7 @@ public class ExternallyManagedFieldsRetrievalHandler
      * @throws QueryJBuildException if the build process cannot be performed.
      */
     protected boolean handle(
-        @Nullable final MetadataManager metadataManager,
+        @NotNull final MetadataManager metadataManager,
         @Nullable final AntExternallyManagedFieldsElement externallyManagedFields,
         @NotNull final StringValidator stringValidator)
       throws  QueryJBuildException
