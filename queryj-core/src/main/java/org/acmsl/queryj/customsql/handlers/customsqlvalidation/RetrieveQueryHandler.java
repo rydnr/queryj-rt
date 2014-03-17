@@ -107,7 +107,9 @@ public class RetrieveQueryHandler
             setCurrentSql(t_lSql.get(index), command);
             setCurrentSqlIndex(index + 1, command);
 
-            result = new CustomQueryChain().process(command);
+            new CustomQueryChain().process(command);
+
+            result = false;
         }
         else
         {
