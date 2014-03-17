@@ -114,8 +114,7 @@ public class ExternallyManagedFieldsRetrievalHandler
     {
         final boolean result = false;
 
-        if  (   (metadataManager != null)
-             && (externallyManagedFields != null))
+        if  (externallyManagedFields != null)
         {
             for (@Nullable final AntFieldElement t_Field : externallyManagedFields.getFields())
             {
