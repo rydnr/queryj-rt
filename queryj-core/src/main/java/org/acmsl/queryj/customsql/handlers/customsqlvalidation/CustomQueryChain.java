@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Runs a list of steps to validate a custom {@link org.acmsl.queryj.customsql.Sql query}.
+ * Description: Runs a list of steps to validate a custom query.
  *
  * Date: 2014/03/17
  * Time: 08:15
