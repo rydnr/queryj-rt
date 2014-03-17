@@ -134,6 +134,17 @@ public class RetrieveQueryHandler
         return new QueryJCommandWrapper<Sql<String>>(command).getSetting(CURRENT_SQL);
     }
 
+
+    /**
+     * Specifies the index of the current SQL.
+     * @param index the index of the current SQL.
+     * @param parameters the parameters.
+     */
+    protected void setCurrentSqlIndex(final int index, final QueryJCommand parameters)
+    {
+        new QueryJCommandWrapper<Integer>(parameters).setSetting(CURRENT_SQL_INDEX, index);
+    }
+
     /**
      * Retrieves the index of the current SQL, or {@code 0} if the iteration
      * has not started yet.
