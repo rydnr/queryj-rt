@@ -160,6 +160,31 @@ public class RetrieveQueryHandler
     }
 
     /**
+     * Retrieves the index of the current SQL, or {@code 0} if the iteration
+     * has not started yet.
+     * @param parameters the parameters.
+     * @return the index of the current SQL.
+     */
+    protected int retrieveCurrentSqlIndex(final QueryJCommand parameters)
+    {
+        final int result;
+
+        @Nullable final Integer aux =
+            new QueryJCommandWrapper<Integer>(parameters).getSetting(CURRENT_SQL_INDEX);
+
+        if (aux == null)
+        {
+            result = 0;
+        }
+        else
+        {
+            result = aux;
+        }
+
+        return result;
+    }
+
+    /**
      * Retrieves the list of queries.
      * @param parameters the parameters.
      * @return the list of {@link Sql queries}.
