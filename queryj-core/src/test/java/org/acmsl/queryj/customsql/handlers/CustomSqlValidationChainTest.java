@@ -49,6 +49,7 @@ import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.BindQueryParametersHandler;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.CacheValidationOutcomeHandler;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.CheckResultSetGettersWorkForDefinedPropertiesHandler;
+import org.acmsl.queryj.customsql.handlers.customsqlvalidation.CustomQueryChain;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.CustomQueryChainTest;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.ExecuteQueryHandler;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.GlobalValidationEnabledHandler;
