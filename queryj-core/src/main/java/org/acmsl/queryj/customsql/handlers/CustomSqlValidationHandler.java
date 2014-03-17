@@ -152,8 +152,6 @@ public class CustomSqlValidationHandler
     {
         return
               "{ \"class\": \"" + CustomSqlValidationHandler.class.getSimpleName()
-            + ", \"package\": \"org.acmsl.queryj.customsql.handlers\","
-            + ", \"DATE_FORMAT\": \"" + DATE_FORMAT + "\""
-            + ", \"DATE_FORMAT_EN\": \"" + DATE_FORMAT_EN + "\" }";
+            + ", \"package\": \"org.acmsl.queryj.customsql.handlers\" }";
     }
 }
