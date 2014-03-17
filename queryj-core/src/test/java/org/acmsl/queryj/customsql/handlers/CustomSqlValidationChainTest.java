@@ -49,6 +49,7 @@ import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.BindQueryParametersHandler;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.CacheValidationOutcomeHandler;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.CheckResultSetGettersWorkForDefinedPropertiesHandler;
+import org.acmsl.queryj.customsql.handlers.customsqlvalidation.CustomQueryChainTest;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.ExecuteQueryHandler;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.GlobalValidationEnabledHandler;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.QueryValidationEnabledHandler;
@@ -104,6 +105,7 @@ public class CustomSqlValidationChainTest
         @NotNull final Class<?> handlerClass,
         @NotNull final Chain<QueryJCommand, QueryJBuildException, QueryJCommandHandler<QueryJCommand>> chain)
     {
+        return new CustomQueryChainTest().contains(handlerClass, chain);
         boolean result = false;
 
         for (@Nullable final QueryJCommandHandler<QueryJCommand> t_Handler : chain.getHandlers())
