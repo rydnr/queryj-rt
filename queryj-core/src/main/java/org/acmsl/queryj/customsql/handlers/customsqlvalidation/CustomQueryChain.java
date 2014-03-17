@@ -38,6 +38,11 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.commons.patterns.Chain;
+import org.acmsl.queryj.AbstractQueryJChain;
+import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.tools.handlers.QueryJCommandHandler;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -53,5 +58,56 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class CustomQueryChain
+    extends AbstractQueryJChain<QueryJCommand, QueryJCommandHandler<QueryJCommand>>
+{
+    /**
+     * Builds the chain.
+     * @param chain the chain to be configured.
+     * @return the updated chain.
+     * @throws org.acmsl.queryj.api.exceptions.QueryJBuildException if the chain cannot be built successfully.
+     */
+    @Override
+    protected Chain<QueryJCommand, QueryJBuildException, QueryJCommandHandler<QueryJCommand>> buildChain(
+        @NotNull final Chain<QueryJCommand, QueryJBuildException, QueryJCommandHandler<QueryJCommand>> chain)
+        throws QueryJBuildException
+    {
+        chain.add(new GlobalValidationEnabledHandler());
+
+        chain.add(new RetrieveQueryHandler());
+
+        chain.add(new QueryValidationEnabledHandler());
+
+        chain.add(new SkipValidationIfCacheExistsHandler());
+
+        chain.add(new RetrieveResultPropertiesHandler());
+
+        chain.add(new SetupPreparedStatementHandler());
+
+        chain.add(new BindQueryParametersHandler());
+
+        chain.add(new ExecuteQueryHandler());
+
+        chain.add(new RetrieveResultSetColumnsHandler());
+
+        chain.add(new CheckResultSetGettersWorkForDefinedPropertiesHandler());
+
+        chain.add(new ReportMissingPropertiesHandler());
+
+        chain.add(new ReportUnusedPropertiesHandler());
+
+        chain.add(new CacheValidationOutcomeHandler());
+
+        return chain;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    protected void cleanUpOnError(
+        @NotNull final QueryJBuildException buildException, @NotNull final QueryJCommand command)
+    {
+    }
+
 {
 }
