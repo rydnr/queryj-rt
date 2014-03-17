@@ -92,7 +92,7 @@ public class ExternallyManagedFieldsRetrievalHandler
     {
         return
             handle(
-                retrieveMetadataManager(parameters),
+                retrieveMetadataManagerIfExists(parameters),
                 retrieveExternallyManagedFieldsElement(parameters),
                 StringValidator.getInstance());
     }
@@ -127,8 +127,7 @@ public class ExternallyManagedFieldsRetrievalHandler
                     }
                     else
                     {
-                        if (stringValidator.isEmpty(
-                            t_Field.getTableName()))
+                        if (stringValidator.isEmpty(t_Field.getTableName()))
                         {
                             throw new MissingExternallyManagedFieldTableNameException(t_Field);
                         }
