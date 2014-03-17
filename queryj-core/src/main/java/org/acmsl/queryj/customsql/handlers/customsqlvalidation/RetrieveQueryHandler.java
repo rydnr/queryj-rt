@@ -103,7 +103,7 @@ public class RetrieveQueryHandler
             && (index < t_lSql.size()))
         {
             setCurrentSql(t_lSql.get(index), command);
-            setCu
+            setCurrentSqlIndex()
             result = false;
         }
         else
