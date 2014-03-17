@@ -39,49 +39,6 @@ package org.acmsl.queryj.customsql.handlers;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
-import org.acmsl.queryj.tools.handlers.ParameterValidationHandler;
-import org.acmsl.queryj.metadata.MetadataManager;
-import org.acmsl.queryj.metadata.MetadataTypeManager;
-import org.acmsl.queryj.metadata.vo.Attribute;
-
-/*
- * Importing some ACM-SL Commons classes.
- */
-import org.acmsl.commons.logging.UniqueLogFactory;
-import org.acmsl.commons.utils.Chronometer;
-import org.acmsl.commons.utils.ConversionUtils;
-import org.acmsl.commons.utils.StringUtils;
-
-/*
- * Importing some JDK classes.
- */
-import java.io.File;
-import java.lang.reflect.Method;
-import java.lang.NoSuchMethodException;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
-import java.nio.charset.Charset;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.sql.Timestamp;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Date;
-import java.util.List;
-import java.util.Locale;
-
-/*
- * Importing some Apache Commons Logging classes.
- */
-import org.apache.commons.logging.Log;
-
 /*
  * Importing JetBrains annotations.
  */
