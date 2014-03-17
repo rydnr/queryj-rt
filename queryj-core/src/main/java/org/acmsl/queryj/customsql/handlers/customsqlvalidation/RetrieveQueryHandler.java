@@ -166,10 +166,7 @@ public class RetrieveQueryHandler
      */
     protected void setCurrentSqlIndex(final int index, final QueryJCommand parameters)
     {
-        final int result;
-
-        @Nullable final Integer aux =
-            new QueryJCommandWrapper<Integer>(parameters).setSetting(CURRENT_SQL_INDEX, index);
+        new QueryJCommandWrapper<Integer>(parameters).setSetting(CURRENT_SQL_INDEX, index);
 
         if (aux == null)
         {
