@@ -37,21 +37,7 @@ package org.acmsl.queryj.customsql.handlers;
  * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.QueryJCommand;
-import org.acmsl.queryj.api.exceptions.CustomResultWithInvalidNumberOfColumnsException;
-import org.acmsl.queryj.api.exceptions.CustomResultWithNoPropertiesException;
-import org.acmsl.queryj.api.exceptions.InvalidCustomSqlException;
-import org.acmsl.queryj.api.exceptions.InvalidCustomSqlParameterException;
-import org.acmsl.queryj.api.exceptions.NoTableMatchingCustomResultException;
-import org.acmsl.queryj.api.exceptions.NoValidationValueForCustomSqlDateParameterException;
-import org.acmsl.queryj.api.exceptions.UnsupportedCustomResultPropertyTypeException;
-import org.acmsl.queryj.api.exceptions.UnsupportedCustomSqlParameterTypeException;
-import org.acmsl.queryj.customsql.*;
-import org.acmsl.queryj.metadata.SqlDAO;
-import org.acmsl.queryj.metadata.SqlParameterDAO;
-import org.acmsl.queryj.metadata.SqlPropertyDAO;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
-import org.acmsl.queryj.metadata.TypeManager;
-import org.acmsl.queryj.metadata.engines.JdbcTypeManager;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
 import org.acmsl.queryj.tools.handlers.ParameterValidationHandler;
 import org.acmsl.queryj.metadata.MetadataManager;
