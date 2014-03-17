@@ -124,31 +124,6 @@ public class CustomSqlValidationHandler
         (Class<String>[]) new Class<?>[] { String.class };
 
     /**
-     * String literal: "Could not bind parameter via "
-     */
-    protected static final String COULD_NOT_BIND_PARAMETER_VIA = "Could not bind parameter via ";
-
-    /**
-     * String literal: "PreparedStatement.set"
-     */
-    protected static final String PREPARED_STATEMENT_SET = "PreparedStatement.set";
-
-    /**
-     * String literal: "Validation failed for "
-     */
-    protected static final String VALIDATION_FAILED_FOR = "Validation failed for ";
-
-    /**
-     * String literal: "Could not retrieve result via "
-     */
-    protected static final String COULD_NOT_RETRIEVE_RESULT_VIA = "Could not retrieve result via ";
-
-    /**
-     * String literal: "ResultSet."
-     */
-    protected static final String RESULT_SET = "ResultSet.";
-
-    /**
      * The date format.
      */
     public final String DATE_FORMAT = "MM/DD/yyyy";
