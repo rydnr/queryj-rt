@@ -165,7 +165,7 @@ public class RetrieveQueryHandler
      * @param parameters the parameters.
      * @return the index of the current SQL.
      */
-    protected void setCurrentSqlIndex(final QueryJCommand parameters)
+    protected void setCurrentSqlIndex(final int index, final QueryJCommand parameters)
     {
         final int result;
 
