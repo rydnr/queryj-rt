@@ -36,7 +36,6 @@ package org.acmsl.queryj.customsql.handlers;
 /*
  * Importing QueryJ Core classes.
  */
-import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.CustomResultWithInvalidNumberOfColumnsException;
 import org.acmsl.queryj.api.exceptions.CustomResultWithNoPropertiesException;
