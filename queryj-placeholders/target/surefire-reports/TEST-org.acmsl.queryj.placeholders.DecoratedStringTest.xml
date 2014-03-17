@@ -59,10 +59,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.032" classname="org.acmsl.queryj.placeholders.DecoratedStringTest" name="camelcase_works"/>
+  <testcase time="0.031" classname="org.acmsl.queryj.placeholders.DecoratedStringTest" name="camelcase_works"/>
   <testcase time="0.001" classname="org.acmsl.queryj.placeholders.DecoratedStringTest" name="singleLine_works"/>
-  <testcase time="0.01" classname="org.acmsl.queryj.placeholders.DecoratedStringTest" name="camelcase_works_also_when_converting_from_plural_to_singular"/>
+  <testcase time="0.011" classname="org.acmsl.queryj.placeholders.DecoratedStringTest" name="camelcase_works_also_when_converting_from_plural_to_singular"/>
   <testcase time="0.001" classname="org.acmsl.queryj.placeholders.DecoratedStringTest" name="testCapitalized"/>
-  <testcase time="0.001" classname="org.acmsl.queryj.placeholders.DecoratedStringTest" name="testNormalizedUppercased"/>
-  <testcase time="0.001" classname="org.acmsl.queryj.placeholders.DecoratedStringTest" name="testUppercased"/>
+  <testcase time="0.002" classname="org.acmsl.queryj.placeholders.DecoratedStringTest" name="testNormalizedUppercased"/>
+  <testcase time="0" classname="org.acmsl.queryj.placeholders.DecoratedStringTest" name="testUppercased"/>
 </testsuite>
