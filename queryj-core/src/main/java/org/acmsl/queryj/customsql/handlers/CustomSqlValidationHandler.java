@@ -173,6 +173,7 @@ public class CustomSqlValidationHandler
     public boolean handle(@NotNull final QueryJCommand parameters)
       throws  QueryJBuildException
     {
+        new CustomSqlValidationChain().process(parameters);
     }
 
     /**
