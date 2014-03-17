@@ -70,7 +70,7 @@ public class CustomQueryChainTest
     public void includes_required_handlers()
         throws QueryJBuildException
     {
-        @NotNull final CustomSqlValidationChain instance = new CustomSqlValidationChain();
+        @NotNull final CustomQueryChain instance = new CustomSqlValidationChain();
 
         @NotNull final Chain<QueryJCommand, QueryJBuildException, QueryJCommandHandler<QueryJCommand>> t_Chain =
             new ArrayListChainAdapter<>();
