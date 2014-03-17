@@ -59,8 +59,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.024" classname="org.acmsl.queryj.customsql.ResultElementTest" name="testAdd"/>
-  <testcase time="0.003" classname="org.acmsl.queryj.customsql.ResultElementTest" name="testVault"/>
+  <testcase time="0.027" classname="org.acmsl.queryj.customsql.ResultElementTest" name="testAdd"/>
+  <testcase time="0" classname="org.acmsl.queryj.customsql.ResultElementTest" name="testVault"/>
   <testcase time="0" classname="org.acmsl.queryj.customsql.ResultElementTest" name="testToString"/>
   <testcase time="0" classname="org.acmsl.queryj.customsql.ResultElementTest" name="testGetPropertyRefs"/>
   <testcase time="0" classname="org.acmsl.queryj.customsql.ResultElementTest" name="testGetClassValue"/>
