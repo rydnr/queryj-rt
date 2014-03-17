@@ -59,32 +59,32 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.027" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_Long_works"/>
-  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_NClob_works"/>
-  <testcase time="0.012" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_int_works"/>
+  <testcase time="0.012" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_Long_works"/>
+  <testcase time="0.008" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_NClob_works"/>
+  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_int_works"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForBit"/>
-  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForRef"/>
+  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForRef"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcNclobCorrectly"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="boolean_can_be_used_for_numeric_columns"/>
-  <testcase time="0.003" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="setLongInPreparedStatementViaReflectionWorks"/>
+  <testcase time="0.014" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="setLongInPreparedStatementViaReflectionWorks"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcNcharCorrectly"/>
   <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_Clob_works"/>
-  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="bigint_can_be_used_for_numeric_columns"/>
+  <testcase time="0.005" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="bigint_can_be_used_for_numeric_columns"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForVarbinary"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="integer_can_be_used_for_numeric_columns"/>
-  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_Struct_works"/>
+  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_Struct_works"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcOtherCorrectly"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcDataLinkCorrectly"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForDecimal"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_double_works"/>
   <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_Blob_works"/>
-  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForBlob"/>
+  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForBlob"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForChar"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForClob"/>
-  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForDate"/>
+  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForDate"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForReal"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForTime"/>
-  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_Integer_works"/>
+  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_Integer_works"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="real_can_be_used_for_numeric_columns"/>
   <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_sqlDate_works"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcVarbinaryCorrectly"/>
@@ -94,30 +94,30 @@
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="float_can_be_used_for_numeric_columns"/>
   <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_Ref_works"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_byte_array_works"/>
-  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcVarcharCorrectly"/>
+  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcVarcharCorrectly"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="setBooleanInPreparedStatementViaReflectionWorks"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForInteger"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcIntegerCorrectly"/>
-  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForJavaObject"/>
+  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForJavaObject"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcNumericCorrectly"/>
-  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_Float_works"/>
+  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_Float_works"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForNumeric"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_Byte_works"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcBooleanCorrectly"/>
-  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForArray"/>
+  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForArray"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForFloat"/>
-  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForNchar"/>
+  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForNchar"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForNclob"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForOther"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForRowid"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_int_for_String_works"/>
-  <testcase time="0.002" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_BigDecimal_works"/>
+  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_BigDecimal_works"/>
   <testcase time="0.002" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="setArrayInPreparedStatementViaReflectionWorks"/>
   <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_Time_works"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcStructCorrectly"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="tinyint_can_be_used_for_numeric_columns"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForBigInt"/>
-  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForBinary"/>
+  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForBinary"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForDataLink"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="is_primitive_wrapper_works_for_longs"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForDouble"/>
@@ -127,10 +127,10 @@
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForTinyint"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="types_compatible_with_char_columns"/>
   <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_SQLXML_works"/>
-  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcFloatCorrectly"/>
-  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcClobCorrectly"/>
+  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcFloatCorrectly"/>
+  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcClobCorrectly"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForSqlxml"/>
-  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForStruct"/>
+  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForStruct"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcRowidCorrectly"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcCharCorrectly"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcDecimalCorrectly"/>
@@ -138,27 +138,27 @@
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcArrayCorrectly"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcBigIntCorrectly"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForLongvarchar"/>
-  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="to_primitive_works_for_longs"/>
+  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="to_primitive_works_for_longs"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_long_works"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcBlobCorrectly"/>
-  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcLongnvarcharCorrectly"/>
+  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcLongnvarcharCorrectly"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="varchar_can_be_used_for_nvarchar_columns"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForLongnvarbinary"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcJavaObjectCorrectly"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_boolean_works"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcNvarcharCorrectly"/>
-  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_Object_works"/>
+  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_Object_works"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="correct_type_reference_for_Dates"/>
-  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="correct_type_reference_for_longs"/>
+  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="correct_type_reference_for_longs"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcRealCorrectly"/>
-  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForLongnvarchar"/>
+  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForLongnvarchar"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForNvarchar"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="longnvarchar_can_be_used_for_char_columns"/>
-  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcTimestampCorrectly"/>
+  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcTimestampCorrectly"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcTinyintCorrectly"/>
-  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_Timestamp_works"/>
-  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_RowId_works"/>
-  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_BigInteger_works"/>
+  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_Timestamp_works"/>
+  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_RowId_works"/>
+  <testcase time="0.002" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_BigInteger_works"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcLongvarcharCorrectly"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcRefCorrectly"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="setBytesInPreparedStatementViaReflectionWorks"/>
@@ -172,19 +172,19 @@
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="preparedStatementSetterWorksForSmallint"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcSmallintCorrectly"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcDoubleCorrectly"/>
-  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_Array_works"/>
-  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_NUMBER_works"/>
+  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_Array_works"/>
+  <testcase time="0.002" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_NUMBER_works"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcDateCorrectly"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcBinaryCorrectly"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_float_works"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_Short_works"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcDistinctCorrectly"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_String_works"/>
-  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="smallint_can_be_used_for_numeric_columns"/>
+  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="smallint_can_be_used_for_numeric_columns"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcTimeCorrectly"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="convertsJdbcBitCorrectly"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="get_class_for_Byte_array_works"/>
-  <testcase time="0.001" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="findOutClassWorks"/>
+  <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="findOutClassWorks"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="bit_can_be_used_for_numeric_columns"/>
   <testcase time="0" classname="org.acmsl.queryj.metadata.engines.JdbcTypeManagerTest" name="double_can_be_used_for_numeric_columns"/>
 </testsuite>

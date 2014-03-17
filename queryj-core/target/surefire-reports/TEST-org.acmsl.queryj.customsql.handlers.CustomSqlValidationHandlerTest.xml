@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.338" errors="0" skipped="0" tests="21" name="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest">
+<testsuite failures="0" time="0.381" errors="0" skipped="0" tests="21" name="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/opt/oracle-jdk-bin-1.7.0.51/jre/lib/amd64"/>
@@ -59,25 +59,25 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.235" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="validate_works_for_date_parameters"/>
-  <testcase time="0.014" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="validate_works_for_String_parameters"/>
-  <testcase time="0.014" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="validate_works_for_int_parameters"/>
-  <testcase time="0.008" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="validate_works_for_Long_parameters"/>
-  <testcase time="0.007" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="validate_works_for_double_parameters"/>
-  <testcase time="0.004" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="retrieve_statement_setter_method_works_for_int_parameter"/>
-  <testcase time="0.004" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="retrieve_statement_setter_method_works_for_Int_parameter"/>
-  <testcase time="0.004" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="retrieve_statement_setter_method_works_for_long_parameter"/>
-  <testcase time="0.004" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="retrieve_statement_setter_method_works_for_Long_parameter"/>
-  <testcase time="0.004" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="retrieve_statement_setter_method_works_for_double_parameter"/>
-  <testcase time="0.004" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="retrieve_statement_setter_method_works_for_Double_parameter"/>
-  <testcase time="0.003" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="retrieve_statement_setter_method_works_for_float_parameter"/>
-  <testcase time="0.003" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="retrieve_statement_setter_method_works_for_Float_parameter"/>
-  <testcase time="0.004" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="retrieve_statement_setter_method_works_for_boolean_parameter"/>
-  <testcase time="0.004" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="retrieve_statement_setter_method_works_for_Boolean_parameter"/>
-  <testcase time="0.005" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="validation_skipped_if_hash_is_cached"/>
-  <testcase time="0.003" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="property_type_check_works_for_Strings"/>
-  <testcase time="0.003" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="property_type_check_works_for_longs"/>
-  <testcase time="0.004" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="property_index_check_works"/>
-  <testcase time="0.003" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="detectMissingProperties_detects_a_missing_property"/>
-  <testcase time="0.004" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="detectExtraProperties_detects_an_extra_property"/>
+  <testcase time="0.188" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="validate_works_for_date_parameters"/>
+  <testcase time="0.033" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="validate_works_for_String_parameters"/>
+  <testcase time="0.051" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="validate_works_for_int_parameters"/>
+  <testcase time="0.01" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="validate_works_for_Long_parameters"/>
+  <testcase time="0.014" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="validate_works_for_double_parameters"/>
+  <testcase time="0.005" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="retrieve_statement_setter_method_works_for_int_parameter"/>
+  <testcase time="0.005" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="retrieve_statement_setter_method_works_for_Int_parameter"/>
+  <testcase time="0.005" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="retrieve_statement_setter_method_works_for_long_parameter"/>
+  <testcase time="0.006" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="retrieve_statement_setter_method_works_for_Long_parameter"/>
+  <testcase time="0.005" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="retrieve_statement_setter_method_works_for_double_parameter"/>
+  <testcase time="0.006" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="retrieve_statement_setter_method_works_for_Double_parameter"/>
+  <testcase time="0.006" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="retrieve_statement_setter_method_works_for_float_parameter"/>
+  <testcase time="0.005" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="retrieve_statement_setter_method_works_for_Float_parameter"/>
+  <testcase time="0.005" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="retrieve_statement_setter_method_works_for_boolean_parameter"/>
+  <testcase time="0.005" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="retrieve_statement_setter_method_works_for_Boolean_parameter"/>
+  <testcase time="0.007" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="validation_skipped_if_hash_is_cached"/>
+  <testcase time="0.005" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="property_type_check_works_for_Strings"/>
+  <testcase time="0.005" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="property_type_check_works_for_longs"/>
+  <testcase time="0.005" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="property_index_check_works"/>
+  <testcase time="0.005" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="detectMissingProperties_detects_a_missing_property"/>
+  <testcase time="0.005" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="detectExtraProperties_detects_an_extra_property"/>
 </testsuite>
