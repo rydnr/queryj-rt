@@ -134,7 +134,6 @@ public class RetrieveQueryHandler
         return new QueryJCommandWrapper<Sql<String>>(command).getSetting(CURRENT_SQL);
     }
 
-
     /**
      * Specifies the index of the current SQL.
      * @param index the index of the current SQL.
