@@ -117,13 +117,6 @@ public class CustomSqlValidationHandler
     extends  AbstractQueryJCommandHandler
 {
     /**
-     * A cached class array.
-     */
-    @SuppressWarnings("unchecked")
-    private static final Class<String>[] CLASS_ARRAY_OF_ONE_STRING =
-        (Class<String>[]) new Class<?>[] { String.class };
-
-    /**
      * Creates a <code>CustomSqlValidationHandler</code> instance.
      */
     public CustomSqlValidationHandler() {}
