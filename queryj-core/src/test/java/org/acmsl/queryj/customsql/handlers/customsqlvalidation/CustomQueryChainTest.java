@@ -38,12 +38,21 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.commons.patterns.ArrayListChainAdapter;
+import org.acmsl.commons.patterns.Chain;
+import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.customsql.handlers.CustomSqlValidationChain;
+import org.acmsl.queryj.tools.handlers.QueryJCommandHandler;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
+import org.junit.Assert;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
@@ -56,5 +65,50 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class CustomQueryChainTest
 {
+    @SuppressWarnings("unchecked")
+    @Test
+    public void includes_required_handlers()
+        throws QueryJBuildException
+    {
+        @NotNull final CustomSqlValidationChain instance = new CustomSqlValidationChain();
+
+        @NotNull final Chain<QueryJCommand, QueryJBuildException, QueryJCommandHandler<QueryJCommand>> t_Chain =
+            new ArrayListChainAdapter<>();
+
+        instance.buildChain(t_Chain);
+
+        Assert.assertTrue(contains(BindQueryParametersHandler.class, t_Chain));
+        Assert.assertTrue(contains(CacheValidationOutcomeHandler.class, t_Chain));
+        Assert.assertTrue(contains(CheckResultSetGettersWorkForDefinedPropertiesHandler.class, t_Chain));
+        Assert.assertTrue(contains(ExecuteQueryHandler.class, t_Chain));
+        Assert.assertTrue(contains(GlobalValidationEnabledHandler.class, t_Chain));
+        Assert.assertTrue(contains(QueryValidationEnabledHandler.class, t_Chain));
+        Assert.assertTrue(contains(ReportMissingPropertiesHandler.class, t_Chain));
+        Assert.assertTrue(contains(ReportUnusedPropertiesHandler.class, t_Chain));
+        Assert.assertTrue(contains(RetrieveQueryHandler.class, t_Chain));
+        Assert.assertTrue(contains(RetrieveResultPropertiesHandler.class, t_Chain));
+        Assert.assertTrue(contains(RetrieveResultSetColumnsHandler.class, t_Chain));
+        Assert.assertTrue(contains(SetupPreparedStatementHandler.class, t_Chain));
+        Assert.assertTrue(contains(SkipValidationIfCacheExistsHandler.class, t_Chain));
+    }
+
+    protected boolean contains(
+        @NotNull final Class<?> handlerClass,
+        @NotNull final Chain<QueryJCommand, QueryJBuildException, QueryJCommandHandler<QueryJCommand>> chain)
+    {
+        boolean result = false;
+
+        for (@Nullable final QueryJCommandHandler<QueryJCommand> t_Handler : chain.getHandlers())
+        {
+            if (   (t_Handler != null)
+                   && (t_Handler.getClass().isAssignableFrom(handlerClass)))
+            {
+                result = true;
+                break;
+            }
+        }
+
+        return result;
+    }
 
 }
