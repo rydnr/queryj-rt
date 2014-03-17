@@ -121,8 +121,6 @@ public class QueryJChain<CH extends QueryJCommandHandler<QueryJCommand>>
         chain.add((CH) new JdbcConnectionOpeningHandler());
         chain.add((CH) new CustomSqlProviderRetrievalHandler());
 
-        chain.add((CH) new ExternallyManagedFieldsRetrievalHandler());
-
 //        chain.add(new DatabaseMetaDataCacheReadingHandler());
 //        chain.add((CH) new CustomSqlValidationCacheReadingHandler());
 
