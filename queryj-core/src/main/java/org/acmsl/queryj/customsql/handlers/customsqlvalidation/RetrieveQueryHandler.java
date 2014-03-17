@@ -190,7 +190,7 @@ public class RetrieveQueryHandler
 
             @NotNull final SqlDAO t_SqlDAO = t_CustomSqlProvider.getSqlDAO();
 
-            result = new ArrayList<>(0);
+            result = t_SqlDAO.findAll();
         }
         else
         {
