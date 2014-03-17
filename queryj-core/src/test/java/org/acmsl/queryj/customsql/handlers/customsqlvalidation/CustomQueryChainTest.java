@@ -70,7 +70,7 @@ public class CustomQueryChainTest
     public void includes_required_handlers()
         throws QueryJBuildException
     {
-        @NotNull final CustomQueryChain instance = new CustomSqlValidationChain();
+        @NotNull final CustomQueryChain instance = new CustomQueryChain();
 
         @NotNull final Chain<QueryJCommand, QueryJBuildException, QueryJCommandHandler<QueryJCommand>> t_Chain =
             new ArrayListChainAdapter<>();
@@ -81,7 +81,6 @@ public class CustomQueryChainTest
         Assert.assertTrue(contains(CacheValidationOutcomeHandler.class, t_Chain));
         Assert.assertTrue(contains(CheckResultSetGettersWorkForDefinedPropertiesHandler.class, t_Chain));
         Assert.assertTrue(contains(ExecuteQueryHandler.class, t_Chain));
-        Assert.assertTrue(contains(GlobalValidationEnabledHandler.class, t_Chain));
         Assert.assertTrue(contains(QueryValidationEnabledHandler.class, t_Chain));
         Assert.assertTrue(contains(ReportMissingPropertiesHandler.class, t_Chain));
         Assert.assertTrue(contains(ReportUnusedPropertiesHandler.class, t_Chain));
