@@ -169,7 +169,7 @@ public class RetrieveQueryHandler
         final int result;
 
         @Nullable final Integer aux =
-            new QueryJCommandWrapper<Integer>(parameters).getSetting(CURRENT_SQL_INDEX);
+            new QueryJCommandWrapper<Integer>(parameters).setSetting(CURRENT_SQL_INDEX);
 
         if (aux == null)
         {
