@@ -201,13 +201,6 @@ public abstract class AbstractQueryJCommandHandler
         return
             new QueryJCommandWrapper<MetadataManager>(parameters)
                 .getSetting(DatabaseMetaDataRetrievalHandler.METADATA_MANAGER);
-
-        if (result == null)
-        {
-            throw new MetadataManagerNotAvailableException();
-        }
-
-        return result;
     }
 
     /**
