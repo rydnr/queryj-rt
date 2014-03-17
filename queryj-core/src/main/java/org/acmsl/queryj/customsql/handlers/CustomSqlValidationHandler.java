@@ -173,7 +173,18 @@ public class CustomSqlValidationHandler
     public boolean handle(@NotNull final QueryJCommand parameters)
       throws  QueryJBuildException
     {
+    }
 
+    /**
+     * Handles given information.
+     * @param parameters the parameters.
+     * @return <code>true</code> in case the chain should be stopped.
+     * @throws QueryJBuildException if the build process cannot be performed.
+     */
+    @Override
+    public boolean handle(@NotNull final QueryJCommand parameters)
+        throws  QueryJBuildException
+    {
         @Nullable final MetadataManager t_MetadataManager =
             retrieveMetadataManager(parameters);
 
