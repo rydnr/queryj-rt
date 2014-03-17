@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for CustomQueryChain.
  *
  * Date: 2014/03/17
  * Time: 08:12
