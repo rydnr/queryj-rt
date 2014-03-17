@@ -106,18 +106,5 @@ public class CustomSqlValidationChainTest
         @NotNull final Chain<QueryJCommand, QueryJBuildException, QueryJCommandHandler<QueryJCommand>> chain)
     {
         return new CustomQueryChainTest().contains(handlerClass, chain);
-        boolean result = false;
-
-        for (@Nullable final QueryJCommandHandler<QueryJCommand> t_Handler : chain.getHandlers())
-        {
-            if (   (t_Handler != null)
-                && (t_Handler.getClass().isAssignableFrom(handlerClass)))
-            {
-                result = true;
-                break;
-            }
-        }
-
-        return result;
     }
 }
