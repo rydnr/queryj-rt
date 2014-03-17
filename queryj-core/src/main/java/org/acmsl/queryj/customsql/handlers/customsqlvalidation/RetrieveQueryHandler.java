@@ -162,8 +162,8 @@ public class RetrieveQueryHandler
     /**
      * Specifies the index of the current SQL, or {@code 0} if the iteration
      * has not started yet.
-     * @param parameters the parameters.
      * @param index the index of the current SQL.
+     * @param parameters the parameters.
      */
     protected void setCurrentSqlIndex(final int index, final QueryJCommand parameters)
     {
