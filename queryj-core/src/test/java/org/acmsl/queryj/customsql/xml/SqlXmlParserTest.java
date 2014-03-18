@@ -267,22 +267,22 @@ public class SqlXmlParserTest
     public void testParse()
         throws Exception
     {
-      @NotNull final SqlXmlParser t_Parser =
-          new SqlXmlParserImpl(new ByteArrayInputStream(TEST_INPUT.getBytes()));
-      Assert.assertNotNull(t_Parser);
-      t_Parser.parse();
-      final List<Sql<String>> t_lQueries = t_Parser.getQueries();
-      Assert.assertNotNull(t_lQueries);
+        @NotNull final SqlXmlParser t_Parser =
+            new SqlXmlParserImpl(new ByteArrayInputStream(TEST_INPUT.getBytes()));
+        Assert.assertNotNull(t_Parser);
+        t_Parser.parse();
+        final List<Sql<String>> t_lQueries = t_Parser.getQueries();
+        Assert.assertNotNull(t_lQueries);
 
-      Assert.assertEquals(4, t_lQueries.size());
+        Assert.assertEquals(4, t_lQueries.size());
 
-      final List<Result<String>> t_lResults = t_Parser.getResults();
+        final List<Result<String>> t_lResults = t_Parser.getResults();
         Assert.assertEquals(3, t_lResults.size());
 
-      final List<Parameter<String, ?>> t_lParameters = t_Parser.getParameters();
-      assertEquals(1, t_lParameters.size());
+        final List<Parameter<String, ?>> t_lParameters = t_Parser.getParameters();
+        Assert.assertEquals(1, t_lParameters.size());
 
-      final List<ParameterRef> t_lParameterRefs = t_Parser.getParameterRefs();
+        final List<ParameterRef> t_lParameterRefs = t_Parser.getParameterRefs();
       assertEquals(0, t_lParameterRefs.size());
 
       final List<Property<String>> t_lProperties = t_Parser.getProperties();
