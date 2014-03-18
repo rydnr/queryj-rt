@@ -77,6 +77,6 @@ public class CannotAnalyzeResultSetForValidationException
     public CannotAnalyzeResultSetForValidationException(
         @NotNull final SQLException cause, @NotNull final Sql<String> sql)
     {
-        super("cannot.analyze.ResultSet.for.validation", cause, new String[] { sql.getId() });
+        super("cannot.analyze.ResultSet.for.validation", new String[] { sql.getId() }, cause);
     }
 }
