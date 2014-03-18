@@ -111,9 +111,6 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
     public boolean handle(@NotNull final QueryJCommand command)
         throws QueryJBuildException
     {
-        @NotNull final ResultSet t_ResultSet = new ExecuteQueryHandler().retrieveCurrentResultSet(command);
-        @NotNull final RetrieveResultPropertiesHandler t_Handler = new RetrieveResultPropertiesHandler();
-        @NotNull final List<Property<String>> t_lProperties = t_Handler.retrieveCurrentProperties(command);
         @NotNull final Sql<String> t_Sql = new RetrieveQueryHandler().retrieveCurrentSql(command);
         @Nullable final ResultRef t_ResultRef = t_Sql.getResultRef();
 
