@@ -349,7 +349,8 @@ public class RetrieveResultPropertiesHandler
         @NotNull final ResultSet resultSet,
         @NotNull final Property<String> property,
         @Nullable final Result<String> sqlResult,
-        @NotNull final Sql<String> sql)
+        @NotNull final Sql<String> sql,
+        @NotNull final )
         throws QueryJBuildException
     {
         @Nullable final Log t_Log = UniqueLogFactory.getLog(CustomSqlValidationHandler.class);
