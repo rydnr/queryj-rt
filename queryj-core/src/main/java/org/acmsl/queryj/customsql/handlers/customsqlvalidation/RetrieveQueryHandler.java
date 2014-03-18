@@ -39,6 +39,7 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
  * Importing QueryJ Core classes.
  */
 import org.acmsl.commons.logging.UniqueLogFactory;
+import org.acmsl.commons.utils.Chronometer;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
@@ -117,6 +118,8 @@ public class RetrieveQueryHandler
         @NotNull final List<Sql<String>> t_lSql = retrieveSqlList(command);
 
         final int t_iTotalQueries = t_lSql.size();
+
+        @Nullable final Chronometer t_Chronometer;
 
         if (   (t_Log != null)
             && (t_Log.isInfoEnabled()))
