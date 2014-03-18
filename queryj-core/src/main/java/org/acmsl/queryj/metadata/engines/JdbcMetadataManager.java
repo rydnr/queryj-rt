@@ -636,6 +636,6 @@ public class JdbcMetadataManager
     @Override
     protected boolean isInvalidColumnTypeException(@NotNull final SQLException exception)
     {
-        return matchesMessage(exception, "Invalid column name");
+        return matchesMessage(exception, "Invalid column type");
     }
 }
