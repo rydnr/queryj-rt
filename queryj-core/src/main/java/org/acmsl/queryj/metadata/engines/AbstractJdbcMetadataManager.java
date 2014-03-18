@@ -1806,7 +1806,7 @@ public abstract class AbstractJdbcMetadataManager
     {
         final boolean result;
 
-        @Nullable SQLException
+        @Nullable SQLException underlying = unwrap(exception);
 
         while (   (underlying != null)
                   && (!(underlying instanceof SQLException)))
