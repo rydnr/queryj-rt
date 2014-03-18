@@ -256,15 +256,15 @@ public class SqlXmlParserTest
         + "  </flag-list>\n"
         + "</sql-list>\n";
 
-      /**
-  * Tests SqlXmlParserTest.parse()
-  * @throws Exception if an unexpected situation occurs.
-  * @see org.acmsl.queryj.customsql.xml.SqlXmlParser#parse()
-  */
-  @SuppressWarnings("unused")
-  public void testParse()
-  throws Exception
-  {
+    /**
+    * Tests SqlXmlParserTest.parse()
+    * @throws Exception if an unexpected situation occurs.
+    * @see org.acmsl.queryj.customsql.xml.SqlXmlParser#parse()
+    */
+    @SuppressWarnings("unused")
+    public void testParse()
+    throws Exception
+    {
 
     // JUnitDoclet begin method parse
       @NotNull final SqlXmlParser t_Parser =
