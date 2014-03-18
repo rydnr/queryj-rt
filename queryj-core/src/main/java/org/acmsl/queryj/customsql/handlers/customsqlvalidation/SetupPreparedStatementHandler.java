@@ -184,16 +184,6 @@ public class SetupPreparedStatementHandler
 
             result = connection.prepareStatement(t_strSql);
         }
-        else
-        {
-            @Nullable final Log t_Log = UniqueLogFactory.getLog(CustomSqlValidationHandler.class);
-
-            if (t_Log != null)
-            {
-                t_Log.warn("Empty query with validate=\"true\": " + sql.getId());
-            }
-            result = null;
-        }
 
         return result;
     }
