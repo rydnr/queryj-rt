@@ -59,6 +59,7 @@ import org.jetbrains.annotations.Nullable;
 public class InvalidColumnNameInCustomResultException
     extends QueryJNonCheckedException
 {
+
     /**
      * Creates a new instance with given context.
      * @param property the {@link Property property}.
