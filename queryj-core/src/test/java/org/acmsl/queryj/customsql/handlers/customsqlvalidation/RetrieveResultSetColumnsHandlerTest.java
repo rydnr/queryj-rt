@@ -155,7 +155,7 @@ public class RetrieveResultSetColumnsHandlerTest
 
         @NotNull final SqlElement<String> sql =
             new SqlElement<>(
-                "id", "dao", "name", "update", Cardinality.SINGLE, "all", true /* validation */, false, "description");
+                "id", "dao", "name", Sql.UPDATE, Cardinality.SINGLE, "all", true /* validation */, false, "description");
 
         new QueryJCommandWrapper<Sql<String>>(t_Parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, sql);
         new QueryJCommandWrapper<ResultSet>(t_Parameters).setSetting(
