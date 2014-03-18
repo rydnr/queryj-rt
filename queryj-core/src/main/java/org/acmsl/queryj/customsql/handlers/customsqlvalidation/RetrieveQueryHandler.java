@@ -38,6 +38,7 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.commons.logging.UniqueLogFactory;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
@@ -49,6 +50,7 @@ import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
 /*
  * Importing JetBrains annotations.
  */
+import org.apache.commons.logging.Log;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -110,6 +112,8 @@ public class RetrieveQueryHandler
     {
         int index = retrieveCurrentSqlIndex(command);
 
+
+        @Nullable final Log t_Log = UniqueLogFactory.getLog(RetrieveQueryHandler.class);
         @NotNull final List<Sql<String>> t_lSql = retrieveSqlList(command);
 
         while (   (index > -1)
