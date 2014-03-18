@@ -97,6 +97,9 @@ public class JdbcMetadataManager
      * String literal: "Discarding ".
      */
     public static final String DISCARDING = "Discarding ";
+
+    @**
+     Str
     public static final String KEY_SEQ = "KEY_SEQ";
 
     /**
