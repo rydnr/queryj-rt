@@ -63,7 +63,7 @@ public class InvalidColumnNameInCustomResultException
         @NotNull final Property<String> property,
         @NotNull final Sql<String> sql,
         @Nullable final Result<String> sqlResult,
-        @NotNull final
+        @NotNull final Throwable cause)
 
     )
 }
