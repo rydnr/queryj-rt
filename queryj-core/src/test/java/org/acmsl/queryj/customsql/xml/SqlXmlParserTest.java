@@ -58,12 +58,7 @@ import java.io.ByteArrayInputStream;
 import java.util.List;
 
 /*
-* Importing JUnit classes.
-*/
-import junit.framework.TestCase;
-
-/*
- * Importing some JetBrains annotations.
+ * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
 
