@@ -143,15 +143,7 @@ public class JdbcMetadataManager
     }
 
     /**
-     * Retrieves the table names.
-     * @param metaData the metadata.
-     * @param catalog the catalog.
-     * @param schema the schema.
-     * @param tableNames the fixed table names to process.
-     * @param metadataExtractionListener the metadata extraction listener.
-     * @param caseSensitiveness whether the checks are case sensitive or not.
-     * @return the list of all table names.
-     * @throws SQLException if the database operation fails.
+     * {@inheritDoc}
      */
     @Override
     protected List<TableIncompleteValueObject> extractTableNamesAndComments(
