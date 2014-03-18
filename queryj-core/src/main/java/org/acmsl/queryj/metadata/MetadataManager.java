@@ -184,7 +184,6 @@ public interface MetadataManager
     @NotNull
     List<String> getTableNames();
 
-
     /**
      * Checks whether given exception identifies an "Invalid column name".
      * @param exception the exception.
