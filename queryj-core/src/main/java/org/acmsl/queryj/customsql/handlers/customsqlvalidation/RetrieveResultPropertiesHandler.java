@@ -50,6 +50,7 @@ import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.exceptions.CustomResultWithInvalidNumberOfColumnsException;
 import org.acmsl.queryj.api.exceptions.CustomResultWithNoPropertiesException;
 import org.acmsl.queryj.api.exceptions.CustomSqlWithNoPropertiesException;
+import org.acmsl.queryj.api.exceptions.InvalidColumnNameInCustomResultException;
 import org.acmsl.queryj.api.exceptions.NoTableMatchingSqlException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.api.exceptions.UnsupportedCustomResultPropertyTypeException;
@@ -383,7 +384,7 @@ public class RetrieveResultPropertiesHandler
             if (metadataManager.isInvalidColumnNameException(cannotRetrieveColumnValue))
             {
                 throw
-                    new CustomResultWithInvalidNumberOfColumnsException(
+                    new InvalidColumnNameInCustomResultException(
                         property, sql, sqlResult, cannotRetrieveColumnValue);
             }
             else if (metadataManager.isInvalidColumnTypeException(cannotRetrieveColumnValue))
