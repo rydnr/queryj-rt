@@ -1399,9 +1399,7 @@ public abstract class AbstractJdbcMetadataManager
     }
 
     /**
-     * Checks whether the generation phase is enabled for given foreign key.
-     * @param foreignKey the foreign key.
-     * @return <code>true</code> in such case.
+     * {@inheritDoc}
      */
     @Override
     public boolean isGenerationAllowedForForeignKey(@NotNull final ForeignKey<String> foreignKey)
