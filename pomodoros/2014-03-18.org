@@ -1,0 +1,2 @@
+* 2014/03/18
+** DONE #455 Stop processing non-select queries just before dealing with ResultSet.getMetaData(): 1 -> 1
