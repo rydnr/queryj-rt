@@ -272,9 +272,9 @@ public class SqlXmlParserTest
       Assert.assertNotNull(t_Parser);
       t_Parser.parse();
       final List<Sql<String>> t_lQueries = t_Parser.getQueries();
-      assertNotNull(t_lQueries);
+        Assert.assertNotNull(t_lQueries);
 
-      assertEquals(4, t_lQueries.size());
+        Assert.assertEquals(4, t_lQueries.size());
 
       final List<Result<String>> t_lResults = t_Parser.getResults();
       assertEquals(3, t_lResults.size());
