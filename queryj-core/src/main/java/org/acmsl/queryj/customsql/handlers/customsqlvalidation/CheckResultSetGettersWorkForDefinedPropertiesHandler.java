@@ -218,7 +218,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
                     }
 
                     handler.invokeResultSetGetter(
-                        t_Method, resultSet, t_Property, sqlResult, sql);
+                        t_Method, resultSet, t_Property, sqlResult, sql, metadataManager);
                 }
             }
         }
