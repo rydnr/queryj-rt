@@ -59,6 +59,10 @@ import org.jetbrains.annotations.Nullable;
 public class InvalidColumnNameInCustomResultException
     extends QueryJNonCheckedException
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = 960685626915260054L;
 
     /**
      * Creates a new instance with given context.
