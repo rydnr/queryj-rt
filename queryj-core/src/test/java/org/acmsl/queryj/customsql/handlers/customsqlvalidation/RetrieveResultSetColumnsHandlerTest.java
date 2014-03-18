@@ -158,8 +158,5 @@ public class RetrieveResultSetColumnsHandlerTest
             ExecuteQueryHandler.CURRENT_RESULTSET, t_ResultSet);
 
         Assert.assertTrue(instance.handle(t_Parameters));
-
-        EasyMock.verify(t_ResultSet);
-        EasyMock.verify(t_ResultSetMetaData);
     }
 }
