@@ -64,4 +64,7 @@ public class InvalidColumnNameInCustomResultException
         @NotNull final Sql<String> sql,
         @Nullable final Result<String> sqlResult,
         @NotNull final Throwable cause)
+    {
+        super("invalid.column.name.in.custom.result")
+    }
 }
