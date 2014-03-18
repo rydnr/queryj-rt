@@ -133,5 +133,5 @@ public class RetrieveResultSetColumnsHandlerTest
     }
 
     @Test
-    public void
+    public void does_not_try_to_
 }
