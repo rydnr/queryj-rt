@@ -713,7 +713,7 @@ public class OracleMetadataManager
 
         if (underlying instanceof SQLException)
         {
-            result =
+            result = isInvalidColumnNameException()
         }
         return sqlException.getErrorCode() == 17006;
     }
