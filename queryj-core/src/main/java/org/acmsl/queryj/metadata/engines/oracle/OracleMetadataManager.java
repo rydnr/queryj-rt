@@ -688,6 +688,6 @@ public class OracleMetadataManager
 
     public boolean isInvalidColumnNameException(final SQLException sqlException)
     {
-        return sqlException.getV
+        return sqlException.getErrorCode() == 17006;
     }
 }
