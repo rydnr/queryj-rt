@@ -81,7 +81,7 @@ Boston, MA  02111-1307  USA
 * Tests StatementFlagsElementFactoryTest class.
 * @see org.acmsl.queryj.customsql.xml.StatementFlagsElementFactory
 */
-public class StatementFlagsElementFactoryTest
+public class tatementFlagsElementFactoryTest
 // JUnitDoclet begin extends_implements
 extends TestCase
 // JUnitDoclet end extends_implements
