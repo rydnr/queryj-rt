@@ -127,6 +127,8 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
             }
             else
             {
+                @NotNull final MetadataManager t_MetadataManager = retrieveMetadataManager(command);
+
                 try
                 {
                     validateProperties(
