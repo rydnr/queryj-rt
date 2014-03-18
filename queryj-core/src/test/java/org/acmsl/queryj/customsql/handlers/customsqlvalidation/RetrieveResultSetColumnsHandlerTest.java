@@ -156,8 +156,6 @@ public class RetrieveResultSetColumnsHandlerTest
             new SqlElement<>(
                 "id", "dao", "name", "update", Cardinality.SINGLE, "all", true /* validation */, false, "description");
 
-        sql.setValue("select sysdate from dual where ? = 'A'");
-
         new QueryJCommandWrapper<Sql<String>>(t_Parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, sql);
         new QueryJCommandWrapper<ResultSet>(t_Parameters).setSetting(
             ExecuteQueryHandler.CURRENT_RESULTSET, t_ResultSet);
