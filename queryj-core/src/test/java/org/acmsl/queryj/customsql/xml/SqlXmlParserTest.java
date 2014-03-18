@@ -30,7 +30,7 @@ Spain
 *
 * Filename: SqlXmlParserTest.java
 *
-* Author: Jose San Leandro Armend?riz
+* Author: Jose San Leandro Armendariz
 *
 * Description: Executes all tests defined for package
 *              org.acmsl.queryj.customsql.xml.
