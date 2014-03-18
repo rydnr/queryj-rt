@@ -300,25 +300,4 @@ public class SqlXmlParserTest
         final List<ResultSetFlags> t_lResultSetFlags = t_Parser.getResultSetFlagList();
         Assert.assertEquals(1, t_lResultSetFlags.size());
     }
-  
-  /**
-  * JUnitDoclet moves marker to this method, if there is not match
-  * for them in the regenerated code and if the marker is not empty.
-  * This way, no test gets lost when regenerating after renaming.
-  * Method testVault is supposed to be empty.
-  * @throws Exception if an unexpected situation occurs.
-  */
-  public void testVault()
-  throws Exception
-  {
-    // JUnitDoclet begin method testcase.testVault
-    // JUnitDoclet end method testcase.testVault
-  }
-  
-  public static void main(final String[] args)
-  {
-    // JUnitDoclet begin method testcase.main
-    junit.textui.TestRunner.run(SqlXmlParserTest.class);
-    // JUnitDoclet end method testcase.main
-  }
 }
