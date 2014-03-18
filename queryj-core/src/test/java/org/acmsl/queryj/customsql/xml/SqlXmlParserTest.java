@@ -65,6 +65,8 @@ import junit.framework.TestCase;
  * Importing some JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 /*
 This file is part of  JUnitDoclet, a project to generate basic
@@ -95,6 +97,7 @@ Boston, MA  02111-1307  USA
 * Tests SqlXmlParserTest class.
 * @see org.acmsl.queryj.customsql.xml.SqlXmlParser
 */
+@RunWith(JUnit4.class)
 public class SqlXmlParserTest
 // JUnitDoclet begin extends_implements
 extends TestCase
