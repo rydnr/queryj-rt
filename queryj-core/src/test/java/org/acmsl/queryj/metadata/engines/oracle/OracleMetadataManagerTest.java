@@ -102,7 +102,7 @@ public class OracleMetadataManagerTest
     }
 
     @Test
-    public void identifies_invalid_column_name_exceptions()
+    public void identifies_invalid_column_type_exceptions()
     {
         @NotNull final DatabaseMetaData metadata = EasyMock.createMock(DatabaseMetaData.class);
         @NotNull final MetadataExtractionListener listener = EasyMock.createMock(MetadataExtractionListener.class);
