@@ -382,6 +382,8 @@ public class RetrieveResultPropertiesHandler
 
             if (metadataManager.isInvalidColumnNameException(cannotRetrieveColumnValue))
             {
+            if (metadataManager.isInvalidColumnNameException(cannotRetrieveColumnValue))
+            {
                 throw
                     new UnsupportedCustomResultPropertyTypeException(
                         property, sql, sqlResult, cannotRetrieveColumnValue);
