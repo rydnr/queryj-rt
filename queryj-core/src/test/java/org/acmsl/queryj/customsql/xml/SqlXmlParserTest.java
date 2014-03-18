@@ -263,7 +263,7 @@ public class SqlXmlParserTest
     */
     @SuppressWarnings("unused")
     public void testParse()
-    throws Exception
+        throws Exception
     {
 
     // JUnitDoclet begin method parse
