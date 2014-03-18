@@ -190,7 +190,7 @@ public class SetupPreparedStatementHandler
 
             if (t_Log != null)
             {
-                t_Log.warn("Non-select/empty query with validate=\"true\": " + sql.getId());
+                t_Log.warn("Empty query with validate=\"true\": " + sql.getId());
             }
             result = null;
         }
