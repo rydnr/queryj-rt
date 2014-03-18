@@ -97,6 +97,8 @@ public class RetrieveResultSetColumnsHandler
     public boolean handle(@NotNull final QueryJCommand command)
         throws QueryJBuildException
     {
+        final boolean result;
+
         @NotNull final ResultSet t_ResultSet = new ExecuteQueryHandler().retrieveCurrentResultSet(command);
 
         @NotNull final Sql<String> t_Sql = new RetrieveQueryHandler().retrieveCurrentSql(command);
