@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.846" errors="0" skipped="0" tests="5" name="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest">
+<testsuite failures="0" time="0.3" errors="0" skipped="0" tests="5" name="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/opt/oracle-jdk-bin-1.7.0.51/jre/lib/amd64"/>
@@ -59,9 +59,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.823" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="validate_works_for_date_parameters"/>
-  <testcase time="0.006" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="validate_works_for_String_parameters"/>
-  <testcase time="0.005" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="validate_works_for_int_parameters"/>
-  <testcase time="0.006" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="validate_works_for_Long_parameters"/>
-  <testcase time="0.006" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="validate_works_for_double_parameters"/>
+  <testcase time="0.205" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="validate_works_for_date_parameters"/>
+  <testcase time="0.06" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="validate_works_for_String_parameters"/>
+  <testcase time="0.013" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="validate_works_for_int_parameters"/>
+  <testcase time="0.011" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="validate_works_for_Long_parameters"/>
+  <testcase time="0.011" classname="org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandlerTest" name="validate_works_for_double_parameters"/>
 </testsuite>
