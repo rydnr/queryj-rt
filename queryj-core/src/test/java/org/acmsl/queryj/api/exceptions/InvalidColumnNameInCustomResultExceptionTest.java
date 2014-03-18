@@ -100,6 +100,7 @@ public class InvalidColumnNameInCustomResultExceptionTest
             instance.getMessage(t_Locale);
         }
     }
+
     @Test
     public void the_message_is_internationalized_for_implicit_results()
         throws MissingResourceException
