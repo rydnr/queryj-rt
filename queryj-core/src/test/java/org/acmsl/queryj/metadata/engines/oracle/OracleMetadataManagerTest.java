@@ -100,4 +100,37 @@ public class OracleMetadataManagerTest
 
         Assert.assertTrue(instance.isInvalidColumnNameException(new RuntimeException("wrapper", invalidColumnName)));
     }
+
+    @Test
+    public void identifies_invalid_column_name_exceptions()
+    {
+        @NotNull final DatabaseMetaData metadata = EasyMock.createMock(DatabaseMetaData.class);
+        @NotNull final MetadataExtractionListener listener = EasyMock.createMock(MetadataExtractionListener.class);
+        @NotNull final String catalog = "";
+        @NotNull final String schema = "";
+        @NotNull final List<String> tableNames = Arrays.asList("table1");
+        @NotNull final List<Table<String, Attribute<String>, List<Attribute<String>>>> tables = new ArrayList<>(0);
+        final boolean disableTableExtraction = true;
+        final boolean lazyTableExtraction = true;
+        final boolean caseSensitive = false;
+
+        @NotNull final OracleMetadataManager instance =
+            new OracleMetadataManager(
+                metadata,
+                listener,
+                catalog,
+                schema,
+                tableNames,
+                tables,
+                disableTableExtraction,
+                lazyTableExtraction,
+                caseSensitive,
+                new OracleEngine("12c"));
+
+        @NotNull final SQLException invalidColumnName = new SQLException("Invalid column name", null, 17006);
+
+        Assert.assertTrue(instance.isInvalidColumnNameException(invalidColumnName));
+
+        Assert.assertTrue(instance.isInvalidColumnNameException(new RuntimeException("wrapper", invalidColumnName)));
+    }
 }
