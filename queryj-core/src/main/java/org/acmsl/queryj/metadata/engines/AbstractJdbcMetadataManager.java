@@ -1810,7 +1810,7 @@ public abstract class AbstractJdbcMetadataManager
 
         if (underlying != null)
         {
-            result = isInvalidColumnNameException((SQLException) underlying);
+            result = isInvalidColumnNameException(underlying);
         }
         else
         {
