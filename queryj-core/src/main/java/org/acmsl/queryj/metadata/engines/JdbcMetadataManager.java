@@ -89,9 +89,13 @@ public class JdbcMetadataManager
     private static final long serialVersionUID = -3287133509095459164L;
 
     /**
-     * String
+     * String literal: "REMARKS".
      */
     public static final String REMARKS = "REMARKS";
+
+    /**
+     * String literal: "Discarding ".
+     */
     public static final String DISCARDING = "Discarding ";
     public static final String KEY_SEQ = "KEY_SEQ";
 
