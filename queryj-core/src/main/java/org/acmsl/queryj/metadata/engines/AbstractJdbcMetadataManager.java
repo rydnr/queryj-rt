@@ -1797,6 +1797,37 @@ public abstract class AbstractJdbcMetadataManager
         return result;
     }
 
+
+    /**
+     * Checks whether given exception identifies an "Invalid column name".
+     * @param exception the exception.
+     * @return {@code true} in such case.
+     */
+    @Override
+    public boolean isInvalidColumnNameException(@NotNull final Throwable exception)
+    {
+        final boolean result;
+
+        @Nullable Throwable underlying = exception.getCause();
+
+        while (   (underlying != null)
+                  && (!(underlying instanceof SQLException)))
+        {
+            underlying = underlying.getCause();
+        }
+
+        if (underlying instanceof SQLException)
+        {
+            result = isInvalidColumnNameException((SQLException) underlying);
+        }
+        else
+        {
+            result = false;
+        }
+
+        return result;
+    }
+
     /**
      * Checks whether given exception identifies an "Invalid column name".
      * @param exception the exception.
