@@ -342,6 +342,7 @@ public class RetrieveResultPropertiesHandler
      * @param property the property.
      * @param sqlResult the {@link Result} instance.
      * @param sql the SQL element.
+     * @param metadataManager the {@link MetadataManager} instance.
      * @throws QueryJBuildException if the validation fails.
      */
     protected void invokeResultSetGetter(
