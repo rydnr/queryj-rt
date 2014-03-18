@@ -600,7 +600,6 @@ public class JdbcMetadataManager
     /**
      * {@inheritDoc}
      */
-    @Override
     protected boolean matchesMessage(@NotNull final SQLException exception)
     {
         final boolean result;
