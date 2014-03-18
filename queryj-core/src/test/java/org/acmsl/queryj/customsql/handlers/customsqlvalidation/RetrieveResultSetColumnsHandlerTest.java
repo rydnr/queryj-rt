@@ -133,5 +133,8 @@ public class RetrieveResultSetColumnsHandlerTest
     }
 
     @Test
-    public void does_not_try_to_
+    public void does_not_process_non_select_queries()
+    {
+
+    }
 }
