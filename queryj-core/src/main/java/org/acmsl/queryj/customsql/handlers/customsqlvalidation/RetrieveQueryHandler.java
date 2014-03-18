@@ -127,7 +127,6 @@ public class RetrieveQueryHandler
 
             if (   (t_Log != null)
                 && (t_Log.isDebugEnabled()))
-
             {
                 t_Log.debug("[" + t_iIndex + "/" + totalQueries + "] / " + t_Sql.getId());
             }
