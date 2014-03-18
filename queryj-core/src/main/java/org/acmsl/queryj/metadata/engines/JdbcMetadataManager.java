@@ -621,5 +621,12 @@ public class JdbcMetadataManager
         if (message != null)
         {
             result = exception.getMessage().contains("Invalid column name");
+        }
+        else
+        {
+            result = false;
+        }
+
+        return result;
     }
 }
