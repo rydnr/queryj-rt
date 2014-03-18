@@ -103,18 +103,19 @@ public class RetrieveResultSetColumnsHandler
 
         if (t_Sql.getType().equals(Sql.SELECT))
         {
-        try
-        {
-            @NotNull final List<Property<String>> t_lColumns =
-                retrieveColumns(t_ResultSet.getMetaData(), new RetrieveResultPropertiesHandler());
+            try
+            {
+                @NotNull final List<Property<String>> t_lColumns =
+                    retrieveColumns(t_ResultSet.getMetaData(), new RetrieveResultPropertiesHandler());
 
-            setColumns(t_lColumns, command);
-        }
-        catch (@NotNull final SQLException sqlException)
-        {
-            throw
-                new CannotAnalyzeResultSetForValidationException(
-                    sqlException, new RetrieveQueryHandler().retrieveCurrentSql(command));
+                setColumns(t_lColumns, command);
+            }
+            catch (@NotNull final SQLException sqlException)
+            {
+                throw
+                    new CannotAnalyzeResultSetForValidationException(
+                        sqlException, new RetrieveQueryHandler().retrieveCurrentSql(command));
+            }
         }
 
         return false;
