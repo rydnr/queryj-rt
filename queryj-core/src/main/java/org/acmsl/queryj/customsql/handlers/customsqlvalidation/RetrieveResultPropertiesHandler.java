@@ -362,7 +362,7 @@ public class RetrieveResultPropertiesHandler
 
             method.invoke(resultSet, t_aParameters);
         }
-        catch  (@NotNull final Throwable cannotRetrieveColum)
+        catch  (@NotNull final Throwable cannotRetrieveColumnValue)
         {
             if  (t_Log != null)
             {
