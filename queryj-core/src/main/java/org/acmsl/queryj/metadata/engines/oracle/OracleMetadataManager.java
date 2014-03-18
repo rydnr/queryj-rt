@@ -691,6 +691,10 @@ public class OracleMetadataManager
         return sqlException.getErrorCode() == 17006;
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public boolean isInvalidColumnTypeException(@NotNull final SQLException sqlException)
     {
         return false;  //To change body of created methods use File | Settings | File Templates.
