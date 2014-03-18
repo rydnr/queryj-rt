@@ -74,7 +74,8 @@ public class CannotAnalyzeResultSetForValidationException
      * Creates a new instance associated to given {@link Sql}.
      * @param sql the SQL.
      */
-    public CannotAnalyzeResultSetForValidationException(@NotNull final SQLException cause, @NotNull final Sql<String> sql)
+    public CannotAnalyzeResultSetForValidationException(
+        @NotNull final SQLException cause, @NotNull final Sql<String> sql)
     {
         super("cannot.analyze.ResultSet.for.validation", new String[] { sql.getId() });
     }
