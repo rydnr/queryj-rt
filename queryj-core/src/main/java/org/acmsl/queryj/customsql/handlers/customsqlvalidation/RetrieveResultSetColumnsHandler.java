@@ -121,8 +121,12 @@ public class RetrieveResultSetColumnsHandler
                         sqlException, new RetrieveQueryHandler().retrieveCurrentSql(command));
             }
         }
+        else
+        {
+            result = true;
+        }
 
-        return false;
+        return result;
     }
 
     /**
