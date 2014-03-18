@@ -100,4 +100,32 @@ public class InvalidColumnNameInCustomResultExceptionTest
             instance.getMessage(t_Locale);
         }
     }
+    @Test
+    public void the_message_is_internationalized_for_implicit_results()
+        throws MissingResourceException
+    {
+        @NotNull final Sql<String> t_Sql =
+            new SqlElement<>(
+                "id",
+                "dao",
+                "name",
+                String.class.getSimpleName(),
+                Cardinality.SINGLE,
+                "all",
+                true,
+                false,
+                "description");
+
+        @NotNull final Property<String> t_Property =
+            new PropertyElement<>("name", "name", 1, String.class.getSimpleName(), false);
+
+        @NotNull final InvalidColumnNameInCustomResultException instance =
+            new InvalidColumnNameInCustomResultException(t_Property, t_Sql, null, new RuntimeException("fake"));
+
+        for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
+        {
+            // throws a MissingResourceException if the key is not declared.
+            instance.getMessage(t_Locale);
+        }
+    }
 }
