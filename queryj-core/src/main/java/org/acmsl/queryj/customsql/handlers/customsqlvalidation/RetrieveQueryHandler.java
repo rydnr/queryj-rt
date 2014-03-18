@@ -118,6 +118,8 @@ public class RetrieveQueryHandler
 
         final int t_iTotalQueries = t_lSql.size();
 
+        if (   (t_Log != null)
+               && (t_Log.isDebugEnabled()))
         while (   (t_iIndex > -1)
                && (t_iIndex < t_lSql.size()))
         {
