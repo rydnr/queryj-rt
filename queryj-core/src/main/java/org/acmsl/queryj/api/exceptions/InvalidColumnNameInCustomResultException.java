@@ -61,10 +61,10 @@ public class InvalidColumnNameInCustomResultException
 {
     /**
      * Creates a new instance with given context.
-     * @param property the property.
-     * @param sql
-     * @param sqlResult
-     * @param cause
+     * @param property the {@link Property property}.
+     * @param sql the {@link Sql}.
+     * @param sqlResult the {@link Result result}.
+     * @param cause the cause.
      */
     public InvalidColumnNameInCustomResultException(
         @NotNull final Property<String> property,
