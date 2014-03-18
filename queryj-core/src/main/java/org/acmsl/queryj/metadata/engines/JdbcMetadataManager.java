@@ -628,13 +628,6 @@ public class JdbcMetadataManager
     protected boolean isInvalidColumnNameException(@NotNull final SQLException exception)
     {
         return matchesMessage(exception, "Invalid column name");
-        }
-        else
-        {
-            result = false;
-        }
-
-        return result;
     }
 
     /**
