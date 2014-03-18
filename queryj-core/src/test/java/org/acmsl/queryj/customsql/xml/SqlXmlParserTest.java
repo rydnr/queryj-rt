@@ -283,22 +283,22 @@ public class SqlXmlParserTest
         Assert.assertEquals(1, t_lParameters.size());
 
         final List<ParameterRef> t_lParameterRefs = t_Parser.getParameterRefs();
-      assertEquals(0, t_lParameterRefs.size());
+        Assert.assertEquals(0, t_lParameterRefs.size());
 
-      final List<Property<String>> t_lProperties = t_Parser.getProperties();
-      assertEquals(6, t_lProperties.size());
+        final List<Property<String>> t_lProperties = t_Parser.getProperties();
+        Assert.assertEquals(6, t_lProperties.size());
 
-      final List<PropertyRef> t_lPropertyRefs = t_Parser.getPropertyRefs();
-      assertEquals(0, t_lPropertyRefs.size());
+        final List<PropertyRef> t_lPropertyRefs = t_Parser.getPropertyRefs();
+        Assert.assertEquals(0, t_lPropertyRefs.size());
 
-      final List<ConnectionFlags> t_lConnectionFlags = t_Parser.getConnectionFlagList();
-      assertEquals(5, t_lConnectionFlags.size());
+        final List<ConnectionFlags> t_lConnectionFlags = t_Parser.getConnectionFlagList();
+        Assert.assertEquals(5, t_lConnectionFlags.size());
 
-      final List<StatementFlags> t_lStatementFlags = t_Parser.getStatementFlagList();
-      assertEquals(1, t_lStatementFlags.size());
+        final List<StatementFlags> t_lStatementFlags = t_Parser.getStatementFlagList();
+        Assert.assertEquals(1, t_lStatementFlags.size());
 
-      final List<ResultSetFlags> t_lResultSetFlags = t_Parser.getResultSetFlagList();
-      assertEquals(1, t_lResultSetFlags.size());
+        final List<ResultSetFlags> t_lResultSetFlags = t_Parser.getResultSetFlagList();
+        Assert.assertEquals(1, t_lResultSetFlags.size());
 
     // JUnitDoclet end method parse
   }
