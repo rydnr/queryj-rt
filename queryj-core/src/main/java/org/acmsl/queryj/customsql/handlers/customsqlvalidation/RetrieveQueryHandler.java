@@ -40,6 +40,10 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
  */
 import org.acmsl.commons.logging.UniqueLogFactory;
 import org.acmsl.commons.utils.Chronometer;
+
+/*
+ * Importing QueryJ Core classes.
+ */
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
