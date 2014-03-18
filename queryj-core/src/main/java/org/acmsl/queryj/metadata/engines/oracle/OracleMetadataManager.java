@@ -706,7 +706,10 @@ public class OracleMetadataManager
         @Nullable final Throwable underlying = exception.getCause();
 
         while (   (underlying != null)
-               && (underlying)
+               && (!(underlying instanceof SQLException)))
+        {
+            underlying = underlying.getCause();
+        }
         return sqlException.getErrorCode() == 17006;
     }
 }
