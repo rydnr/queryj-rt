@@ -722,9 +722,7 @@ public abstract class AbstractJdbcMetadataManager
 
     // RefactoredMetadataManager interface.
     /**
-     * Retrieves the metadata.
-     * @throws SQLException if the database operation fails.
-     * @throws QueryJException if an error, which is identified by QueryJ, occurs.
+     * {@inheritDoc}
      */
     @Override
     public void eagerlyFetchMetadata()
