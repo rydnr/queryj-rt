@@ -686,7 +686,12 @@ public class OracleMetadataManager
         return result;
     }
 
-    public boolean isInvalidColumnNameException(final SQLException sqlException)
+    /**
+     * Checks whether given exception identifies an "Invalid column name".
+     * @param sqlException the exception.
+     * @return {@code true} in such case.
+     */
+    public boolean isInvalidColumnNameException(@NotNull final SQLException sqlException)
     {
         return false; //sqlException.getErrorCode() == 17006;
     }
