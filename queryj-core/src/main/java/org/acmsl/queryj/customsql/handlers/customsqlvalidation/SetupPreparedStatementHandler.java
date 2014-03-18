@@ -183,7 +183,7 @@ public class SetupPreparedStatementHandler
         }
         else
         {
-            throw new CannotValidateCustomQueryNotSuitableForValidation(sql)
+            throw new CannotValidateEmptyQueryNotSuitableForValidation(sql)
             @Nullable final Log t_Log = UniqueLogFactory.getLog(CustomSqlValidationHandler.class);
 
             if (t_Log != null)
