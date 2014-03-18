@@ -1,5 +1,5 @@
 /*
-                      Project tests
+                      QueryJ Core
 
 Copyright (C) 2003  Jose San Leandro Armend?riz
 chous@acm-sl.org
