@@ -129,8 +129,8 @@ public class OracleMetadataManagerTest
 
         @NotNull final SQLException invalidColumnName = new SQLException("Invalid column type", null, 17006);
 
-        Assert.assertTrue(instance.isInvalidColumnNameException(invalidColumnName));
+        Assert.assertTrue(instance.isInvalidColumnTypeException(invalidColumnName));
 
-        Assert.assertTrue(instance.isInvalidColumnNameException(new RuntimeException("wrapper", invalidColumnName)));
+        Assert.assertTrue(instance.isInvalidColumnTypeException(new RuntimeException("wrapper", invalidColumnName)));
     }
 }
