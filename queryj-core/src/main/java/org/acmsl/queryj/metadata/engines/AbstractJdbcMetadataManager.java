@@ -628,8 +628,7 @@ public abstract class AbstractJdbcMetadataManager
     }
 
     /**
-     * Retrieves the case sensitiveness.
-     * @return whether the engine is case sensitive.
+     * {@inheritDoc}
      */
     @SuppressWarnings("unused")
     public boolean isCaseSensitive()
