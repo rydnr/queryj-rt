@@ -188,11 +188,6 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
         throws SQLException,
                QueryJBuildException
     {
-        if (sql.getId().equalsIgnoreCase("find-product-types-by-draw-type-id"))
-        {
-            int debug = 1;
-        }
-
         if  (resultSet.next())
         {
             @NotNull Method t_Method;
