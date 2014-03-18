@@ -1857,7 +1857,6 @@ public abstract class AbstractJdbcMetadataManager
 
     /**
      * @{inheritDoc}
-     * @return
      */
     @NotNull
     @Override
