@@ -99,7 +99,9 @@ public class RetrieveResultSetColumnsHandler
     {
         @NotNull final ResultSet t_ResultSet = new ExecuteQueryHandler().retrieveCurrentResultSet(command);
 
+        @NotNull final Sql<String> t_Sql = new RetrieveQueryHandler().retrieveCurrentSql(command);
 
+        if (t_Sql)
         try
         {
             @NotNull final List<Property<String>> t_lColumns =
