@@ -50,7 +50,8 @@ import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Represents the error of mi
+ * Represents the error of using different column names in custom queries than in the
+ * declared custom results, or
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/18 10:36
