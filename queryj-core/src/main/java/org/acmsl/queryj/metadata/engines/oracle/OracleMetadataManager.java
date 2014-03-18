@@ -697,6 +697,6 @@ public class OracleMetadataManager
     @Override
     public boolean isInvalidColumnTypeException(@NotNull final SQLException sqlException)
     {
-        return
+        return sqlException.getErrorCode() == 17004;
     }
 }
