@@ -692,7 +692,8 @@ public class OracleMetadataManager
         return sqlException.getErrorCode() == 17006;
     }
 
-    public boolean isInvalidColumnTypeException(final SQLException invalidColumnType)
+    public boolean isInvalidColumnTypeException(final SQLException sqlException)
     {
+        return false;  //To change body of created methods use File | Settings | File Templates.
     }
 }
