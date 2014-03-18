@@ -64,6 +64,4 @@ public class InvalidColumnNameInCustomResultException
         @NotNull final Sql<String> sql,
         @Nullable final Result<String> sqlResult,
         @NotNull final Throwable cause)
-
-    )
 }
