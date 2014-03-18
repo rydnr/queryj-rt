@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.013" errors="0" skipped="0" tests="5" name="org.acmsl.queryj.customsql.ResultElementTest">
+<testsuite failures="0" time="0.049" errors="0" skipped="0" tests="5" name="org.acmsl.queryj.customsql.ResultElementTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/opt/oracle-jdk-bin-1.7.0.51/jre/lib/amd64"/>
@@ -59,9 +59,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.001" classname="org.acmsl.queryj.customsql.ResultElementTest" name="testAdd"/>
+  <testcase time="0.032" classname="org.acmsl.queryj.customsql.ResultElementTest" name="testAdd"/>
   <testcase time="0" classname="org.acmsl.queryj.customsql.ResultElementTest" name="testVault"/>
   <testcase time="0" classname="org.acmsl.queryj.customsql.ResultElementTest" name="testToString"/>
   <testcase time="0" classname="org.acmsl.queryj.customsql.ResultElementTest" name="testGetPropertyRefs"/>
-  <testcase time="0.012" classname="org.acmsl.queryj.customsql.ResultElementTest" name="testGetClassValue"/>
+  <testcase time="0.017" classname="org.acmsl.queryj.customsql.ResultElementTest" name="testGetClassValue"/>
 </testsuite>
