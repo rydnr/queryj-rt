@@ -146,7 +146,7 @@ public class RetrieveResultSetColumnsHandlerTest
         @NotNull final ResultSetMetaData t_ResultSetMetaData = PowerMock.createMock(ResultSetMetaData.class);
 
 
-        new QueryJCommandWrapper<Sql<String>>(t_Parameters).setSetting();
+        new QueryJCommandWrapper<Sql<String>>(t_Parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, );
         EasyMock.replay(t_ResultSet);
         EasyMock.replay(t_ResultSetMetaData);
 
