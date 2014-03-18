@@ -123,7 +123,7 @@ public class RetrieveQueryHandler
         {
             @NotNull final Sql<String> t_Sql = t_lSql.get(t_iIndex);
 
-            setCurrentSql(t_lSql.get(t_iIndex), command);
+            setCurrentSql(t_Sql, command);
 
             if (t_Log != null)
             {
