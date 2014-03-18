@@ -132,6 +132,7 @@ public class RetrieveResultSetColumnsHandlerTest
         EasyMock.replay(t_ResultSet);
         EasyMock.replay(t_ResultSetMetaData);
 
+        new QueryJCommandWrapper<Sql<String>>(t_Parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, sql);
         new QueryJCommandWrapper<ResultSet>(t_Parameters).setSetting(
             ExecuteQueryHandler.CURRENT_RESULTSET, t_ResultSet);
 
