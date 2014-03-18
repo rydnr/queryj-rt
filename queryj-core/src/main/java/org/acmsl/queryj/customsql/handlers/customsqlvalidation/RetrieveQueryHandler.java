@@ -124,6 +124,7 @@ public class RetrieveQueryHandler
         if (   (t_Log != null)
             && (t_Log.isInfoEnabled()))
         {
+            t_Chronometer = new Chronometer();
             t_Log.info("Validating up to " + t_iTotalQueries + " queries. It can take some time.";
         }
         while (   (t_iIndex > -1)
