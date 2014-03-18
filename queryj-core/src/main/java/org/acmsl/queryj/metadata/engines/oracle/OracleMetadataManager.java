@@ -103,7 +103,14 @@ public class OracleMetadataManager
     implements  OracleTableRepository,
                 Serializable
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = -914170490377897216L;
+
+    /**
+     * String literal: "left outer join ( ";
+     */
     public static final String LEFT_OUTER_JOIN = "left outer join ( ";
 
     /**
