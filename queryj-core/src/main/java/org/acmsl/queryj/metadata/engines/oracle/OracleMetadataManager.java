@@ -688,6 +688,6 @@ public class OracleMetadataManager
 
     public boolean isInvalidColumnNameException(final SQLException sqlException)
     {
-        return false;  //To change body of created methods use File | Settings | File Templates.
+        return sqlException.getV
     }
 }
