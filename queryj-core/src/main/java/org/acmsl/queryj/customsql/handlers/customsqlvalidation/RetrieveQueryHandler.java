@@ -139,7 +139,7 @@ public class RetrieveQueryHandler
         }
         if (t_Log != null)
         {
-            t_Log.info("Validation finished up to " + t_iTotalQueries + " queries. It can take some time.";
+            t_Log.info("Validation finished (" + t_Chronometer.now());
         }
 
         return false;
