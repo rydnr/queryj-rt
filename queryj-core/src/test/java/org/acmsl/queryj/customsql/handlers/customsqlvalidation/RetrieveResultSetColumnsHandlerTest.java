@@ -153,7 +153,7 @@ public class RetrieveResultSetColumnsHandlerTest
 
         sql.setValue("select sysdate from dual where ? = 'A'");
 
-        new QueryJCommandWrapper<Sql<String>>(t_Parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, t_Sql);
+        new QueryJCommandWrapper<Sql<String>>(t_Parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, sql);
 
         EasyMock.replay(t_ResultSet);
         EasyMock.replay(t_ResultSetMetaData);
