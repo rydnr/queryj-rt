@@ -608,7 +608,7 @@ public class JdbcMetadataManager
 
         if (message != null)
         {
-            result = exception.getMessage().contains(text);
+            result = message.contains(text);
         }
         else
         {
