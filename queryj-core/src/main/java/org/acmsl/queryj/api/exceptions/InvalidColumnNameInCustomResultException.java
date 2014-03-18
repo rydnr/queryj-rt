@@ -50,7 +50,7 @@ import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Represents
+ * Represents the error of
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/18 10:36
