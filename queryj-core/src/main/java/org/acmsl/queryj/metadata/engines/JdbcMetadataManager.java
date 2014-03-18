@@ -636,6 +636,7 @@ public class JdbcMetadataManager
     @Override
     protected boolean isInvalidColumnNameException(@NotNull final SQLException exception)
     {
+        return matchesMessage(exception, "Invalid column name");
         final boolean result;
 
         @Nullable final String message = exception.getMessage();
