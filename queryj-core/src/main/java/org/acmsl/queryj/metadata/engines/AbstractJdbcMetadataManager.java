@@ -1822,9 +1822,7 @@ public abstract class AbstractJdbcMetadataManager
 
 
     /**
-     * Checks whether given exception identifies an "Invalid column name".
-     * @param exception the exception.
-     * @return {@code true} in such case.
+     * {@inheritDoc}
      */
     @Override
     public boolean isInvalidColumnTypeException(@NotNull final Throwable exception)
