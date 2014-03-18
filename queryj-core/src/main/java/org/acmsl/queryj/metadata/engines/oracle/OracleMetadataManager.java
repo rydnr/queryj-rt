@@ -719,6 +719,7 @@ public class OracleMetadataManager
         {
             result = false;
         }
-        return sqlException.getErrorCode() == 17006;
+
+        return result;
     }
 }
