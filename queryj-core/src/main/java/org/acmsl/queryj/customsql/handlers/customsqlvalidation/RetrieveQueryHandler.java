@@ -143,7 +143,8 @@ public class RetrieveQueryHandler
             chain.process(command);
         }
 
-        if (t_Log != null)
+        if (   (t_Log != null)
+            && (t_Chronometer != null))
         {
             t_Log.info("Validation finished (" + t_Chronometer.now());
         }
