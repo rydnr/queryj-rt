@@ -375,7 +375,7 @@ public class RetrieveResultPropertiesHandler
                           ?  "" + property.getIndex()
                           :  property.getColumnName())
                     + ")",
-                    illegalAccessException);
+                    cannotRetrieveColumnValue);
             }
 
             throw
