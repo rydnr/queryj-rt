@@ -691,4 +691,8 @@ public class OracleMetadataManager
     {
         return sqlException.getErrorCode() == 17006;
     }
+
+    public boolean isInvalidColumnTypeException(final SQLException invalidColumnType)
+    {
+    }
 }
