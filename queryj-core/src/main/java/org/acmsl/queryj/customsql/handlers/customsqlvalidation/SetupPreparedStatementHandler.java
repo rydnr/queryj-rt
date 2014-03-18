@@ -176,7 +176,7 @@ public class SetupPreparedStatementHandler
 
         if (t_strValue == null)
         {
-
+            throw new CannotValidateEmptyQueryException(sql);
         }
         else
         {
