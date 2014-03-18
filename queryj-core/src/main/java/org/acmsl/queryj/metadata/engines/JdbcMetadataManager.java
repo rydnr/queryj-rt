@@ -637,19 +637,5 @@ public class JdbcMetadataManager
     protected boolean isInvalidColumnNameException(@NotNull final SQLException exception)
     {
         return matchesMessage(exception, "Invalid column name");
-        final boolean result;
-
-        @Nullable final String message = exception.getMessage();
-
-        if (message != null)
-        {
-            result = exception.getMessage().contains("Invalid column type");
-        }
-        else
-        {
-            result = false;
-        }
-
-        return result;
     }
 }
