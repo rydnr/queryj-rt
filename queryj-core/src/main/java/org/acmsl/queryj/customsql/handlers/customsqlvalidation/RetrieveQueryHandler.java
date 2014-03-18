@@ -151,7 +151,7 @@ public class RetrieveQueryHandler
         if (   (t_Log != null)
             && (t_Chronometer != null))
         {
-            t_Log.info("Validation finished (" + t_Chronometer.now());
+            t_Log.info("Validation took " + t_Chronometer.now());
         }
 
         return false;
