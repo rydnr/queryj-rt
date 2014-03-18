@@ -266,8 +266,6 @@ public class SqlXmlParserTest
     public void testParse()
         throws Exception
     {
-
-    // JUnitDoclet begin method parse
       @NotNull final SqlXmlParser t_Parser =
           new SqlXmlParserImpl(new ByteArrayInputStream(TEST_INPUT.getBytes()));
       assertNotNull(t_Parser);
