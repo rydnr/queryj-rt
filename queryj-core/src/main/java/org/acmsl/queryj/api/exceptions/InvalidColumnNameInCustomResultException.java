@@ -66,6 +66,7 @@ public class InvalidColumnNameInCustomResultException
         @NotNull final Throwable cause)
     {
         super(
-            (sqlResult != null) ? "invalid.column.name.in.custom.result", new String[] { property.getColumnName(), sql.getId(), (sqlResult != null) ? sqlResult.getId() : "" }, cause);
+            (sqlResult != null) ? "invalid.column.name.in.custom.result" : "invalid.column.name.in.custom.query",
+            new String[] { property.getColumnName(), sql.getId(), (sqlResult != null) ? sqlResult.getId() : "" }, cause);
     }
 }
