@@ -388,26 +388,6 @@ public class RetrieveResultPropertiesHandler
             }
             else
         }
-        catch  (@NotNull final InvocationTargetException invocationTargetException)
-        {
-            if  (t_Log != null)
-            {
-                t_Log.warn(
-                    VALIDATION_FAILED_FOR + sql.getId() + ":\n"
-                    + COULD_NOT_RETRIEVE_RESULT_VIA
-                    + RESULT_SET + method.getName()
-                    + "("
-                    + (   (property.getIndex() > 0)
-                          ?  "" + property.getIndex()
-                          :  property.getColumnName())
-                    + ")",
-                    invocationTargetException);
-            }
-
-            throw
-                new UnsupportedCustomResultPropertyTypeException(
-                    property, sql, sqlResult, invocationTargetException);
-        }
     }
 
     /**
