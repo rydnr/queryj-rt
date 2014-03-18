@@ -144,27 +144,6 @@ public class RetrieveResultSetColumnsHandlerTest
         @NotNull final ResultSet t_ResultSet = PowerMock.createNiceMock(ResultSet.class);
         @NotNull final ResultSetMetaData t_ResultSetMetaData = PowerMock.createMock(ResultSetMetaData.class);
 
-        EasyMock.expect(t_ResultSet.getMetaData()).andReturn(t_ResultSetMetaData);
-
-        @NotNull final List<Property<String>> t_lProperties = new ArrayList<>(2);
-        t_lProperties.add(new PropertyElement<>("name", "name", 1, String.class.getSimpleName(), false));
-        t_lProperties.add(new PropertyElement<>("tmst", "tmst", 1, "Date", false));
-
-        @NotNull final Result<String> t_Result = new ResultElement<>("r1", "Vo");
-        t_Result.add(new PropertyRefElement("name"));
-        t_Result.add(new PropertyRefElement("tmst"));
-
-        int t_iIndex = 1;
-
-        EasyMock.expect(t_ResultSetMetaData.getColumnCount()).andReturn(t_lProperties.size());
-        for (@NotNull final Property<String> t_Property : t_lProperties)
-        {
-            EasyMock.expect(t_ResultSetMetaData.getColumnName(t_iIndex)).andReturn(t_Property.getColumnName());
-            EasyMock.expect(t_ResultSetMetaData.getColumnTypeName(t_iIndex)).andReturn(t_Property.getType());
-            EasyMock.expect(t_ResultSetMetaData.isNullable(t_iIndex)).andReturn(ResultSetMetaData.columnNoNulls);
-
-            t_iIndex++;
-        }
 
         EasyMock.replay(t_ResultSet);
         EasyMock.replay(t_ResultSetMetaData);
