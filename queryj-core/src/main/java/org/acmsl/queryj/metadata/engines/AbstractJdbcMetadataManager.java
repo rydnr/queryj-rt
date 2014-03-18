@@ -1811,7 +1811,7 @@ public abstract class AbstractJdbcMetadataManager
         @Nullable Throwable underlying = exception.getCause();
 
         while (   (underlying != null)
-                  && (!(underlying instanceof SQLException)))
+               && (!(underlying instanceof SQLException)))
         {
             underlying = underlying.getCause();
         }
