@@ -701,7 +701,7 @@ public class OracleMetadataManager
      * @param sqlException the exception.
      * @return {@code true} in such case.
      */
-    public boolean isInvalidColumnNameException(@NotNull final SQLException sqlException)
+    public boolean isInvalidColumnNameException(@NotNull final Throwable exception)
     {
         return sqlException.getErrorCode() == 17006;
     }
