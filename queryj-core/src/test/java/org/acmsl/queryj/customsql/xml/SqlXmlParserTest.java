@@ -256,19 +256,7 @@ public class SqlXmlParserTest
         + "  </flag-list>\n"
         + "</sql-list>\n";
 
-  /**
-  * Performs any required steps after each test.
-  * @throws Exception if an unexpected situation occurs.
-  */
-  protected void tearDown()
-  throws Exception
-  {
-    // JUnitDoclet begin method testcase.tearDown
-    super.tearDown();
-    // JUnitDoclet end method testcase.tearDown
-  }
-  
-  /**
+      /**
   * Tests SqlXmlParserTest.parse()
   * @throws Exception if an unexpected situation occurs.
   * @see org.acmsl.queryj.customsql.xml.SqlXmlParser#parse()
