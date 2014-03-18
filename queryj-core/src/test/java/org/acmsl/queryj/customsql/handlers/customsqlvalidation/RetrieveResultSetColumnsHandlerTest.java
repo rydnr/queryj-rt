@@ -130,6 +130,8 @@ public class RetrieveResultSetColumnsHandlerTest
 
         EasyMock.verify(t_ResultSet);
         EasyMock.verify(t_ResultSetMetaData);
-
     }
+
+    @Test
+    public void
 }
