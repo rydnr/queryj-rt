@@ -98,6 +98,12 @@ public class RetrieveResultSetColumnsHandlerTest
 
         @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
+        @NotNull final SqlElement<String> sql =
+            new SqlElement<>(
+                "id", "dao", "name", "update", Cardinality.SINGLE, "all", true /* validation */, false, "description");
+
+        sql.setValue("select sysdate from dual where ? = 'A'");
+
         @NotNull final ResultSet t_ResultSet = PowerMock.createNiceMock(ResultSet.class);
         @NotNull final ResultSetMetaData t_ResultSetMetaData = PowerMock.createNiceMock(ResultSetMetaData.class);
 
