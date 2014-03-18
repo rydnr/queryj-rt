@@ -38,12 +38,16 @@ package org.acmsl.queryj.api.exceptions;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.customsql.Property;
+import org.acmsl.queryj.customsql.Result;
+import org.acmsl.queryj.customsql.Sql;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
 
 /**
  *
@@ -55,5 +59,10 @@ import org.checkthread.annotations.ThreadSafe;
 public class InvalidColumnNameInCustomResultException
     extends QueryJNonCheckedException
 {
-    public InvalidColumnNameInCustomResultException()
+    public InvalidColumnNameInCustomResultException(
+        @NotNull final Property<String> property,
+        @Nullable final Result<String> sqlResult,
+        @NotNull final Sql<String> sql,
+
+    )
 }
