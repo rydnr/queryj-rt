@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.002" errors="0" skipped="0" tests="2" name="unittests.org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandlerTest">
+<testsuite failures="0" time="0.001" errors="0" skipped="0" tests="2" name="unittests.org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandlerTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/opt/oracle-jdk-bin-1.7.0.51/jre/lib/amd64"/>
@@ -60,5 +60,5 @@
     <property name="sun.cpu.isalist" value=""/>
   </properties>
   <testcase time="0.001" classname="unittests.org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandlerTest" name="testVault"/>
-  <testcase time="0.001" classname="unittests.org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandlerTest" name="testHandle"/>
+  <testcase time="0" classname="unittests.org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandlerTest" name="testHandle"/>
 </testsuite>
