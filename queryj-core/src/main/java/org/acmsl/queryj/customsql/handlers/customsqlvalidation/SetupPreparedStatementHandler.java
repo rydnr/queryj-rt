@@ -174,7 +174,10 @@ public class SetupPreparedStatementHandler
 
         @Nullable final String t_strValue = sql.getValue();
 
-        && (sql.getType().equals(Sql.SELECT)))
+        if (sql.getType().equals(Sql.SELECT)))
+        {
+
+        }
         if (t_strValue == null)
         {
 
