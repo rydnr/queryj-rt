@@ -70,7 +70,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 /**
- * Tests SqlXmlParserTest class.
+ * Tests {@link SqlXmlParserTest} class.
  * @see org.acmsl.queryj.customsql.xml.SqlXmlParser
  */
 @RunWith(JUnit4.class)
