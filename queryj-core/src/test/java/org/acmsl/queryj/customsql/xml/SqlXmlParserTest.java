@@ -268,7 +268,7 @@ public class SqlXmlParserTest
     {
       @NotNull final SqlXmlParser t_Parser =
           new SqlXmlParserImpl(new ByteArrayInputStream(TEST_INPUT.getBytes()));
-      assertNotNull(t_Parser);
+      Assert.assertNotNull(t_Parser);
       t_Parser.parse();
       final List<Sql<String>> t_lQueries = t_Parser.getQueries();
       assertNotNull(t_lQueries);
