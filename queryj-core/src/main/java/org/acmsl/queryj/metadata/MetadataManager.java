@@ -190,4 +190,11 @@ public interface MetadataManager
      * @return {@code true} in such case.
      */
     boolean isInvalidColumnNameException(@NotNull final Throwable exception);
+
+    /**
+     * Checks whether given exception identifies an "Invalid column name".
+     * @param exception the exception.
+     * @return {@code true} in such case.
+     */
+    boolean isInvalidColumnNameException(@NotNull final Throwable exception);
 }
