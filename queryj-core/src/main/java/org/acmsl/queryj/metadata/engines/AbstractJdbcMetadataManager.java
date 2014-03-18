@@ -1781,7 +1781,7 @@ public abstract class AbstractJdbcMetadataManager
      * @param exception the exception.
      * @return {@code true} in such case.
      */
-    public boolean isInvalidColumnNameException(@NotNull final Throwable exception)
+    protected boolean isInvalidColumnNameException(@NotNull final Throwable exception)
     {
         final boolean result;
 
