@@ -110,7 +110,7 @@ public class RetrieveQueryHandler
     protected boolean handle(@NotNull final QueryJCommand command, @NotNull final CustomQueryChain chain)
         throws QueryJBuildException
     {
-        int index = retrieveCurrentSqlIndex(command);
+        int t_iIndex = retrieveCurrentSqlIndex(command);
 
         @Nullable final Log t_Log = UniqueLogFactory.getLog(RetrieveQueryHandler.class);
 
@@ -118,18 +118,18 @@ public class RetrieveQueryHandler
 
         final int totalQueries = t_lSql.size();
 
-        while (   (index > -1)
-               && (index < t_lSql.size()))
+        while (   (t_iIndex > -1)
+               && (t_iIndex < t_lSql.size()))
         {
-            @NotNull final Sql<String> t_Sql = t_lSql.get(index);
+            @NotNull final Sql<String> t_Sql = t_lSql.get(t_iIndex);
 
-            setCurrentSql(t_lSql.get(index), command);
+            setCurrentSql(t_lSql.get(t_iIndex), command);
 
             if (t_Log != null)
             {
                 t_Log.debug("Validating " + t_lSql.get())
             }
-            setCurrentSqlIndex(index++, command);
+            setCurrentSqlIndex(t_iIndex++, command);
             chain.process(command);
         }
 
