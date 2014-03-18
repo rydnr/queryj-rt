@@ -711,7 +711,7 @@ public class OracleMetadataManager
             underlying = underlying.getCause();
         }
 
-        if (underlying instanceof SQLException)
+        if (underlying != null)
         {
             result =
         }
