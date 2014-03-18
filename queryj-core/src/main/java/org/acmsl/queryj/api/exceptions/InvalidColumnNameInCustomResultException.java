@@ -59,6 +59,13 @@ import org.jetbrains.annotations.Nullable;
 public class InvalidColumnNameInCustomResultException
     extends QueryJNonCheckedException
 {
+    /**
+     *
+     * @param property
+     * @param sql
+     * @param sqlResult
+     * @param cause
+     */
     public InvalidColumnNameInCustomResultException(
         @NotNull final Property<String> property,
         @NotNull final Sql<String> sql,
