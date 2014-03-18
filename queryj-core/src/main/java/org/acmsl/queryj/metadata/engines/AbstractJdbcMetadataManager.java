@@ -1856,8 +1856,7 @@ public abstract class AbstractJdbcMetadataManager
     protected abstract boolean isInvalidColumnTypeException(@NotNull final SQLException exception);
 
     /**
-     * @{in
-     * }
+     * @{inheritDoc}
      * @return
      */
     @NotNull
