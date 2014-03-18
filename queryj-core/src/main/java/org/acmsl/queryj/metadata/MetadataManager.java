@@ -196,5 +196,5 @@ public interface MetadataManager
      * @param exception the exception.
      * @return {@code true} in such case.
      */
-    boolean isInvalidColumnNameException(@NotNull final Throwable exception);
+    boolean isInvalidColumnTypeException(@NotNull final Throwable exception);
 }
