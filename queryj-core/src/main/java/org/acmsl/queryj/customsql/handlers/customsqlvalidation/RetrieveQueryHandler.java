@@ -116,6 +116,8 @@ public class RetrieveQueryHandler
 
         @NotNull final List<Sql<String>> t_lSql = retrieveSqlList(command);
 
+        final int totalQueries = t_lSql.size();
+
         while (   (index > -1)
                && (index < t_lSql.size()))
         {
