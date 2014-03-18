@@ -142,7 +142,7 @@ public class RetrieveResultSetColumnsHandlerTest
         @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
         @NotNull final ResultSet t_ResultSet = PowerMock.createNiceMock(ResultSet.class);
-        @NotNull final ResultSetMetaData t_ResultSetMetaData = PowerMock.createNiceMock(ResultSetMetaData.class);
+        @NotNull final ResultSetMetaData t_ResultSetMetaData = PowerMock.createMock(ResultSetMetaData.class);
 
         EasyMock.expect(t_ResultSet.getMetaData()).andReturn(t_ResultSetMetaData);
 
