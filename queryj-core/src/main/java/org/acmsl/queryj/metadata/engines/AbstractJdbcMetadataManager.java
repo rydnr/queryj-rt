@@ -1781,7 +1781,7 @@ public abstract class AbstractJdbcMetadataManager
     {
         return
               "{  \"class\": \"" + AbstractJdbcMetadataManager.class.getSimpleName() + "\""
-            + ", \"package\": \"org.acmsl.queryj.metadata.engines
+            + ", \"package\": \"org.acmsl.queryj.metadata.engines\""
             + ", \"caseSensitive\": \"" + m__bCaseSensitive + "\""
             + ", \"name\": \"" + m__strName + "\""
             + ", \"metaData\": \"" + m__MetaData + "\""
