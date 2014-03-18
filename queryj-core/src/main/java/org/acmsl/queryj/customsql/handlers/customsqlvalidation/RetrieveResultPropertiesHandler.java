@@ -350,7 +350,7 @@ public class RetrieveResultPropertiesHandler
         @NotNull final Property<String> property,
         @Nullable final Result<String> sqlResult,
         @NotNull final Sql<String> sql,
-        @NotNull final )
+        @NotNull final MetadataManager metadataManager)
         throws QueryJBuildException
     {
         @Nullable final Log t_Log = UniqueLogFactory.getLog(CustomSqlValidationHandler.class);
