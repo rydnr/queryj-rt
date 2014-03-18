@@ -630,7 +630,6 @@ public abstract class AbstractJdbcMetadataManager
     /**
      * {@inheritDoc}
      */
-    @SuppressWarnings("unused")
     public boolean isCaseSensitive()
     {
         return immutableIsCaseSensitive();
