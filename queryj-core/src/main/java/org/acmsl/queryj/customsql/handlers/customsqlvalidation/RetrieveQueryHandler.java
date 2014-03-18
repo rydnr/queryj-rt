@@ -112,8 +112,8 @@ public class RetrieveQueryHandler
     {
         int index = retrieveCurrentSqlIndex(command);
 
-
         @Nullable final Log t_Log = UniqueLogFactory.getLog(RetrieveQueryHandler.class);
+
         @NotNull final List<Sql<String>> t_lSql = retrieveSqlList(command);
 
         while (   (index > -1)
