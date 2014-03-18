@@ -51,6 +51,7 @@ import org.acmsl.queryj.customsql.ResultElement;
 /*
  * Importing Apache Commons Configuration classes.
  */
+import org.acmsl.queryj.customsql.Sql;
 import org.apache.commons.configuration.PropertiesConfiguration;
 
 /*
@@ -145,6 +146,7 @@ public class RetrieveResultSetColumnsHandlerTest
         @NotNull final ResultSetMetaData t_ResultSetMetaData = PowerMock.createMock(ResultSetMetaData.class);
 
 
+        new QueryJCommandWrapper<Sql<String>>(t_Parameters).setSetting();
         EasyMock.replay(t_ResultSet);
         EasyMock.replay(t_ResultSetMetaData);
 
