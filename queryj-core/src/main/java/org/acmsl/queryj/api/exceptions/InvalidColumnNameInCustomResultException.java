@@ -27,7 +27,8 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Represents the error of using different column names in custom queries than in the
+ * declared custom results, or the table names themselves.
  *
  * Date: 2014/03/18
  * Time: 10:36
