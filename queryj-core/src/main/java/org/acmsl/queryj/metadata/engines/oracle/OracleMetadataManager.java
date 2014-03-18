@@ -685,4 +685,8 @@ public class OracleMetadataManager
 
         return result;
     }
+
+    public boolean isInvalidColumnNameException(final SQLException invalidColumnName)
+    {
+    }
 }
