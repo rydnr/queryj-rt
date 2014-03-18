@@ -1780,7 +1780,8 @@ public abstract class AbstractJdbcMetadataManager
     public String toString()
     {
         return
-              "{  \"class\": \"" + AbstractJdbcMetadataManager.class.getName() + "\""
+              "{  \"class\": \"" + AbstractJdbcMetadataManager.class.getSimpleName() + "\""
+            + ", \"package\": \"" +
             + ", \"caseSensitive\": \"" + m__bCaseSensitive + "\""
             + ", \"name\": \"" + m__strName + "\""
             + ", \"metaData\": \"" + m__MetaData + "\""
