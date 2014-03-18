@@ -125,7 +125,7 @@ public class InvalidColumnNameInCustomResultExceptionTest
         @NotNull final Result<String> t_Result = new ResultElement<>("result1", "VoClassName");
 
         @NotNull final InvalidColumnNameInCustomResultException instance =
-            new InvalidColumnNameInCustomResultException(t_Property, t_Sql, null, new RuntimeException("fake"));
+            new InvalidColumnNameInCustomResultException(t_Property, t_Sql, t_Result, new RuntimeException("fake"));
 
         for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
         {
