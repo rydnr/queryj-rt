@@ -382,9 +382,11 @@ public class RetrieveResultPropertiesHandler
 
             if (metadataManager.isInvalidColumnNameException(cannotRetrieveColumnValue))
             {
-            throw
-                new UnsupportedCustomResultPropertyTypeException(
-                    property, sql, sqlResult, illegalAccessException);
+                throw
+                    new UnsupportedCustomResultPropertyTypeException(
+                        property, sql, sqlResult, illegalAccessException);
+            }
+            else
         }
         catch  (@NotNull final InvocationTargetException invocationTargetException)
         {
