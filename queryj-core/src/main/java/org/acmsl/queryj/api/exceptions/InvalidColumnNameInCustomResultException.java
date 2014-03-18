@@ -60,6 +60,8 @@ public class InvalidColumnNameInCustomResultException
     extends QueryJNonCheckedException
 {
     /**
+     * Creates a new instance with given cont
+     *
      *
      * @param property
      * @param sql
