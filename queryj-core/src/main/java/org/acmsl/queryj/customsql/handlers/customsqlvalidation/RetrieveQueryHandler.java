@@ -142,6 +142,7 @@ public class RetrieveQueryHandler
             setCurrentSqlIndex(t_iIndex++, command);
             chain.process(command);
         }
+
         if (t_Log != null)
         {
             t_Log.info("Validation finished (" + t_Chronometer.now());
