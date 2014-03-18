@@ -184,4 +184,4 @@ public interface MetadataManager
     @NotNull
     List<String> getTableNames();
 
-    public}
+}
