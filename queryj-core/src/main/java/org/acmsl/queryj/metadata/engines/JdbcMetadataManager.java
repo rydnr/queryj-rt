@@ -98,8 +98,8 @@ public class JdbcMetadataManager
      */
     public static final String DISCARDING = "Discarding ";
 
-    @**
-     Str
+    /**
+     * String literal: "KEY_SEQ
     public static final String KEY_SEQ = "KEY_SEQ";
 
     /**
