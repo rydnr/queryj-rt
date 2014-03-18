@@ -598,7 +598,7 @@ public class JdbcMetadataManager
     }
 
     /**
-     * {@inheritDoc}
+     * Checks whether tgiven excep
      */
     protected boolean matchesMessage(@NotNull final SQLException exception, @NotNull final String text)
     {
