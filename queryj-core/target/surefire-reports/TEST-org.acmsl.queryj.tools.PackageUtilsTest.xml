@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.066" errors="0" skipped="0" tests="18" name="org.acmsl.queryj.tools.PackageUtilsTest">
+<testsuite failures="0" time="0.037" errors="0" skipped="0" tests="18" name="org.acmsl.queryj.tools.PackageUtilsTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/opt/oracle-jdk-bin-1.7.0.51/jre/lib/amd64"/>
@@ -59,22 +59,22 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.015" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveBaseDAOFolder"/>
-  <testcase time="0" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveBaseDAOFactoryPackage"/>
+  <testcase time="0.008" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveBaseDAOFolder"/>
+  <testcase time="0.013" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveBaseDAOFactoryPackage"/>
   <testcase time="0.001" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveDataAccessManagerPackage"/>
-  <testcase time="0" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveBaseDAOFactoryFolder"/>
-  <testcase time="0.01" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveDAOFactoryPackage"/>
+  <testcase time="0.001" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveBaseDAOFactoryFolder"/>
+  <testcase time="0" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveDAOFactoryPackage"/>
   <testcase time="0.001" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveDataAccessManagerFolder"/>
-  <testcase time="0.005" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveJdbcOperationsFolder"/>
-  <testcase time="0.005" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveBaseDAOPackage"/>
-  <testcase time="0.001" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveValueObjectPackage"/>
-  <testcase time="0.017" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveValueObjectFolder"/>
+  <testcase time="0.001" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveJdbcOperationsFolder"/>
+  <testcase time="0.001" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveBaseDAOPackage"/>
+  <testcase time="0.004" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveValueObjectPackage"/>
+  <testcase time="0.001" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveValueObjectFolder"/>
   <testcase time="0.001" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveDAOPackage"/>
-  <testcase time="0.001" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveValueObjectFactoryFolder"/>
-  <testcase time="0" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveJdbcDAOPackage"/>
+  <testcase time="0" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveValueObjectFactoryFolder"/>
+  <testcase time="0.001" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveJdbcDAOPackage"/>
   <testcase time="0.001" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveDAOFolder"/>
   <testcase time="0.001" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveJdbcOperationsPackage"/>
   <testcase time="0.001" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveJdbcDAOFolder"/>
-  <testcase time="0.005" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveValueObjectFactoryPackage"/>
+  <testcase time="0" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveValueObjectFactoryPackage"/>
   <testcase time="0.001" classname="org.acmsl.queryj.tools.PackageUtilsTest" name="testRetrieveDAOFactoryFolder"/>
 </testsuite>
