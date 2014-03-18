@@ -99,11 +99,7 @@ Boston, MA  02111-1307  USA
 */
 @RunWith(JUnit4.class)
 public class SqlXmlParserTest
-// JUnitDoclet begin extends_implements
-extends TestCase
-// JUnitDoclet end extends_implements
 {
-  // JUnitDoclet begin class
     /**
      * Test input
      */
