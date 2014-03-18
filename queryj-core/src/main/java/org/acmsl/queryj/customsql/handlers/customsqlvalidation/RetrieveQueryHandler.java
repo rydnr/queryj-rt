@@ -127,7 +127,7 @@ public class RetrieveQueryHandler
 
             if (t_Log != null)
             {
-                t_Log.debug("[" + t_iIndex + "/" + totalQueries + "]Validating " + t_Sql.getId())
+                t_Log.debug("[" + t_iIndex + "/" + totalQueries + "] / Validating " + t_Sql.getId())
             }
             setCurrentSqlIndex(t_iIndex++, command);
             chain.process(command);
