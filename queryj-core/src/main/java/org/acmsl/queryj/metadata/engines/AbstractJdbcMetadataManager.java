@@ -1774,12 +1774,10 @@ public abstract class AbstractJdbcMetadataManager
      */
     protected SQLException unwrap(@NotNull final Throwable exception)
     {
-        final boolean result;
-
         @Nullable Throwable underlying = exception.getCause();
 
         while (   (underlying != null)
-                  && (!(underlying instanceof SQLException)))
+              && (!(underlying instanceof SQLException)))
         {
             underlying = underlying.getCause();
         }
