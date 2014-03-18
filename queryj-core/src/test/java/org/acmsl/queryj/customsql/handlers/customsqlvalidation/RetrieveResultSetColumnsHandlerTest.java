@@ -52,6 +52,8 @@ import org.acmsl.queryj.customsql.ResultElement;
  * Importing Apache Commons Configuration classes.
  */
 import org.acmsl.queryj.customsql.Sql;
+import org.acmsl.queryj.customsql.Sql.Cardinality;
+import org.acmsl.queryj.customsql.SqlElement;
 import org.apache.commons.configuration.PropertiesConfiguration;
 
 /*
@@ -145,6 +147,11 @@ public class RetrieveResultSetColumnsHandlerTest
         @NotNull final ResultSet t_ResultSet = PowerMock.createNiceMock(ResultSet.class);
         @NotNull final ResultSetMetaData t_ResultSetMetaData = PowerMock.createMock(ResultSetMetaData.class);
 
+        @NotNull final SqlElement<String> sql =
+            new SqlElement<>(
+                "id", "dao", "name", "select", Cardinality.SINGLE, "all", true /* validation */, false, "description");
+
+        sql.setValue("select sysdate from dual where ? = 'A'");
 
         new QueryJCommandWrapper<Sql<String>>(t_Parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, t_Sql);
 
