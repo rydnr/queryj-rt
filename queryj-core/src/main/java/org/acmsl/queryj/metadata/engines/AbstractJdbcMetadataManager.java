@@ -1841,22 +1841,6 @@ public abstract class AbstractJdbcMetadataManager
         {
             result = false;
         }
-        @Nullable Throwable underlying = exception.getCause();
-
-        while (   (underlying != null)
-               && (!(underlying instanceof SQLException)))
-        {
-            underlying = underlying.getCause();
-        }
-
-        if (underlying instanceof SQLException)
-        {
-            result = isInvalidColumnTypeException((SQLException) underlying);
-        }
-        else
-        {
-            result = false;
-        }
 
         return result;
     }
