@@ -65,6 +65,7 @@ import junit.framework.TestCase;
  * Importing some JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
@@ -257,10 +258,10 @@ public class SqlXmlParserTest
         + "</sql-list>\n";
 
     /**
-    * Tests SqlXmlParserTest.parse()
-    * @throws Exception if an unexpected situation occurs.
-    * @see org.acmsl.queryj.customsql.xml.SqlXmlParser#parse()
-    */
+     * Tests SqlXmlParserTest.parse()
+     * @throws Exception if an unexpected situation occurs.
+     * @see org.acmsl.queryj.customsql.xml.SqlXmlParser#parse()
+     */
     @Test
     public void testParse()
         throws Exception
