@@ -402,8 +402,7 @@ public abstract class AbstractJdbcMetadataManager
     }
 
     /**
-     * Retrieves the database meta data.
-     * @return such information.
+     * {@inheritDoc}
      */
     @NotNull
     @Override
