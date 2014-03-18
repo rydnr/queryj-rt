@@ -126,7 +126,7 @@ public class RetrieveQueryHandler
 
             if (t_Log != null)
             {
-                t_Log
+                t_Log.info()
             }
             chain.process(command);
         }
