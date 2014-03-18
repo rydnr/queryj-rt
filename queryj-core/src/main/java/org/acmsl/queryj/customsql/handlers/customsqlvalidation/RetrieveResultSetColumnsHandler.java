@@ -101,7 +101,8 @@ public class RetrieveResultSetColumnsHandler
 
         @NotNull final Sql<String> t_Sql = new RetrieveQueryHandler().retrieveCurrentSql(command);
 
-        if (t_Sql.getType().equals())
+        if (t_Sql.getType().equals(Sql.SELECT))
+        {
         try
         {
             @NotNull final List<Property<String>> t_lColumns =
