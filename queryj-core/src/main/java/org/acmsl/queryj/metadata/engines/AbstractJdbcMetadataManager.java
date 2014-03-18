@@ -1831,6 +1831,16 @@ public abstract class AbstractJdbcMetadataManager
     {
         final boolean result;
 
+        @Nullable final SQLException underlying = unwrap(exception);
+
+        if (underlying != null)
+        {
+            result = isInvalidColumnNameException(underlying);
+        }
+        else
+        {
+            result = false;
+        }
         @Nullable Throwable underlying = exception.getCause();
 
         while (   (underlying != null)
