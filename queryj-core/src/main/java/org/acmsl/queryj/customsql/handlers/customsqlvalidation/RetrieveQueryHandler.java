@@ -126,7 +126,7 @@ public class RetrieveQueryHandler
 
             if (t_Log != null)
             {
-                t_Log.debug("Validating " + )
+                t_Log.debug("Validating " + t_lSql.get())
             }
             chain.process(command);
         }
