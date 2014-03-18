@@ -686,7 +686,8 @@ public class OracleMetadataManager
         return result;
     }
 
-    public boolean isInvalidColumnNameException(final SQLException invalidColumnName)
+    public boolean isInvalidColumnNameException(final SQLException sqlException)
     {
+        return false;  //To change body of created methods use File | Settings | File Templates.
     }
 }
