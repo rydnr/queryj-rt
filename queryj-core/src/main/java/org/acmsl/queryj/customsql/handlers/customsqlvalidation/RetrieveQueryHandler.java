@@ -126,7 +126,7 @@ public class RetrieveQueryHandler
 
             if (t_Log != null)
             {
-                t_Log.debug("Validating query")
+                t_Log.debug("Validating " + )
             }
             chain.process(command);
         }
