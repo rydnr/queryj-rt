@@ -176,7 +176,7 @@ public class SetupPreparedStatementHandler
 
         if (sql.getType().equals(Sql.SELECT)))
         {
-            throw new NonSelectQueryCannotValidateEmptyQueryException(sql);
+            throw new CannotValidateNonSelectQueryException(sql);
         }
         if (t_strValue == null)
         {
