@@ -61,8 +61,9 @@ public class InvalidColumnNameInCustomResultException
 {
     public InvalidColumnNameInCustomResultException(
         @NotNull final Property<String> property,
-        @Nullable final Result<String> sqlResult,
         @NotNull final Sql<String> sql,
+        @Nullable final Result<String> sqlResult,
+        @NotNull final
 
     )
 }
