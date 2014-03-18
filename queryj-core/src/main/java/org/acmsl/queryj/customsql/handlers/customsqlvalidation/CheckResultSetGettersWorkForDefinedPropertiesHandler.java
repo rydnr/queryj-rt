@@ -53,6 +53,7 @@ import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.customsql.exceptions.ResultSetGettersValidationNotAvailableException;
 import org.acmsl.queryj.customsql.exceptions.ResultSetMetadataOperationFailedException;
+import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.SqlResultDAO;
 import org.acmsl.queryj.metadata.TypeManager;
 import org.acmsl.queryj.metadata.engines.JdbcTypeManager;
@@ -182,7 +183,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
         @NotNull final Result<String> sqlResult,
         @NotNull final TypeManager typeManager,
         @NotNull final RetrieveResultPropertiesHandler handler,
-        @NotNull final )
+        @NotNull final MetadataManager metadataManager)
         throws SQLException,
                QueryJBuildException
     {
