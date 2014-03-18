@@ -28,7 +28,7 @@ Spain
 
 ******************************************************************************
 *
-* Filename: $RCSfile$
+* Filename: SqlXmlParserTest.java
 *
 * Author: Jose San Leandro Armend?riz
 *
