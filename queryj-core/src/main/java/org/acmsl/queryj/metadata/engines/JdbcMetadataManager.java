@@ -618,4 +618,26 @@ public class JdbcMetadataManager
 
         return result;
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    protected boolean isInvalidColumnNameException(@NotNull final SQLException exception)
+    {
+        final boolean result;
+
+        @Nullable final String message = exception.getMessage();
+
+        if (message != null)
+        {
+            result = exception.getMessage().contains("Invalid column name");
+        }
+        else
+        {
+            result = false;
+        }
+
+        return result;
+    }
 }
