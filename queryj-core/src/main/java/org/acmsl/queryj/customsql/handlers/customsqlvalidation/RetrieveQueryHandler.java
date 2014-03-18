@@ -120,7 +120,7 @@ public class RetrieveQueryHandler
 
         if (t_Log != null)
         {
-
+            t_Log.info("Validating " + t_iTotalQueries + " queries";
         }
         while (   (t_iIndex > -1)
                && (t_iIndex < t_lSql.size()))
