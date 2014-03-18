@@ -384,7 +384,7 @@ public class RetrieveResultPropertiesHandler
             {
                 throw
                     new UnsupportedCustomResultPropertyTypeException(
-                        property, sql, sqlResult, illegalAccessException);
+                        property, sql, sqlResult, cannotRetrieveColumnValue);
             }
         }
     }
