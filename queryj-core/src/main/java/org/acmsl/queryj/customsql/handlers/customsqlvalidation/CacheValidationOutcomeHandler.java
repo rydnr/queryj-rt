@@ -144,7 +144,7 @@ public class CacheValidationOutcomeHandler
         @NotNull final String path = hashPath(outputFolder.getAbsolutePath(), hash);
 
         if (   (!existsAlready(path))
-            && (!)
+            && (!new File(path))
         {
             new File(outputFolder.getAbsolutePath()).mkdirs();
             FileUtils.getInstance().writeFileIfPossible(path, "", charset);
