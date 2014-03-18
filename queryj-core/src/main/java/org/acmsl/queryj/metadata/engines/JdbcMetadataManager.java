@@ -84,9 +84,13 @@ public class JdbcMetadataManager
     extends AbstractJdbcMetadataManager
 {
     /**
-     * The serial versi
+     * The serial version id.
      */
     private static final long serialVersionUID = -3287133509095459164L;
+
+    /**
+     * String
+     */
     public static final String REMARKS = "REMARKS";
     public static final String DISCARDING = "Discarding ";
     public static final String KEY_SEQ = "KEY_SEQ";
