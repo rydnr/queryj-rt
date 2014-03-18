@@ -124,7 +124,10 @@ public class RetrieveQueryHandler
             setCurrentSql(t_lSql.get(index), command);
             setCurrentSqlIndex(index++, command);
 
-            if
+            if (t_Log != null)
+            {
+                t_Log
+            }
             chain.process(command);
         }
 
