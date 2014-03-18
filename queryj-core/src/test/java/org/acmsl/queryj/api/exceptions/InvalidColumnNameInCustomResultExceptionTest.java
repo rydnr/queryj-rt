@@ -122,8 +122,7 @@ public class InvalidColumnNameInCustomResultExceptionTest
         @NotNull final Property<String> t_Property =
             new PropertyElement<>("name", "name", 1, String.class.getSimpleName(), false);
 
-        @NotNull final Result<String> t_Result =
-            new ResultElement<>("result1", "VoClassName");
+        @NotNull final Result<String> t_Result = new ResultElement<>("result1", "VoClassName");
 
         @NotNull final InvalidColumnNameInCustomResultException instance =
             new InvalidColumnNameInCustomResultException(t_Property, t_Sql, null, new RuntimeException("fake"));
