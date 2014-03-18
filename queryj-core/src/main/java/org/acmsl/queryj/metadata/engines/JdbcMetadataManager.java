@@ -598,7 +598,10 @@ public class JdbcMetadataManager
     }
 
     /**
-     * Checks whether the message in given exception contains
+     * Checks whether the message in given exception contains a text.
+     * @param exception the exception.
+     * @param text the text.
+     *
      */
     protected boolean matchesMessage(@NotNull final SQLException exception, @NotNull final String text)
     {
