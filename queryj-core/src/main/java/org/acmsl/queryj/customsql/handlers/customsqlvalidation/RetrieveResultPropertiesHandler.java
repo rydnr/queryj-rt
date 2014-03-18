@@ -362,7 +362,7 @@ public class RetrieveResultPropertiesHandler
 
             method.invoke(resultSet, t_aParameters);
         }
-        catch  (@NotNull final Throwable illegalAccessException)
+        catch  (@NotNull final Throwable cannot)
         {
             if  (t_Log != null)
             {
