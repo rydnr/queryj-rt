@@ -1775,7 +1775,6 @@ public abstract class AbstractJdbcMetadataManager
         return result;
     }
 
-
     /**
      * Checks whether given exception identifies an "Invalid column name".
      * @param exception the exception.
