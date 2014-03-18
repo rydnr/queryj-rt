@@ -125,7 +125,9 @@ public class RetrieveQueryHandler
 
             setCurrentSql(t_Sql, command);
 
-            if (t_Log != null)
+            if (   (t_Log != null)
+                && (t_Log.isDebugEnabled()))
+
             {
                 t_Log.debug("[" + t_iIndex + "/" + totalQueries + "] / " + t_Sql.getId());
             }
