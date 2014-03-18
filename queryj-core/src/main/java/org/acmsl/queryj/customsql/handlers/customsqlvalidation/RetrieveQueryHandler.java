@@ -118,7 +118,8 @@ public class RetrieveQueryHandler
 
         final int t_iTotalQueries = t_lSql.size();
 
-        if (  (t_Log != null)
+        if (   (t_Log != null)
+            && (t_Log.isInfoEnabled())
         {
             t_Log.info("Validating up to " + t_iTotalQueries + " queries. It can take some time.";
         }
