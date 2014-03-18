@@ -608,10 +608,7 @@ public class JdbcMetadataManager
     }
 
     /**
-     * Checks whether given exception identifies an "Invalid column name".
-     *
-     * @param exception the exception.
-     * @return {@code true} in such case.
+     * {@inheritDoc}
      */
     @Override
     protected boolean isInvalidColumnNameException(@NotNull final SQLException exception)
