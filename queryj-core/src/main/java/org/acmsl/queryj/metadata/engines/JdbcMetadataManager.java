@@ -598,9 +598,7 @@ public class JdbcMetadataManager
     }
 
     /**
-     * Retrieves the {@link org.acmsl.queryj.metadata.TableDAO} instance.
-     *
-     * @return such instance.
+     * {@inheritDoc}
      */
     @NotNull
     @Override
