@@ -105,6 +105,8 @@ public class RetrieveResultSetColumnsHandler
 
         if (t_Sql.getType().equals(Sql.SELECT))
         {
+            result = false;
+
             try
             {
                 @NotNull final List<Property<String>> t_lColumns =
