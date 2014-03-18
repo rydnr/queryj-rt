@@ -150,7 +150,7 @@ public class BindQueryParametersHandler
         @NotNull final CustomSqlProvider customSqlProvider = retrieveCustomSqlProvider(command);
         @NotNull final TypeManager typeManager = new JdbcTypeManager();
 
-        if (sql.getId())
+        if ("sql.getId())
         @NotNull final PreparedStatement t_PreparedStatement =
             new SetupPreparedStatementHandler().retrieveCurrentPreparedStatement(command);
 
