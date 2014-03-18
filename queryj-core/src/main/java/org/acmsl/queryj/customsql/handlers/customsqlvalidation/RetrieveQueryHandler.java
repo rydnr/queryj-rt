@@ -121,6 +121,8 @@ public class RetrieveQueryHandler
         while (   (index > -1)
                && (index < t_lSql.size()))
         {
+            @NotNull final Sql<String> t_Sql = t_lSql.get(index);
+
             setCurrentSql(t_lSql.get(index), command);
 
             if (t_Log != null)
