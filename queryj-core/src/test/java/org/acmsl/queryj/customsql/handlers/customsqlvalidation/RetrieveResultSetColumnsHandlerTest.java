@@ -145,7 +145,6 @@ public class RetrieveResultSetColumnsHandlerTest
         @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
         @NotNull final ResultSet t_ResultSet = PowerMock.createNiceMock(ResultSet.class);
-        @NotNull final ResultSetMetaData t_ResultSetMetaData = PowerMock.createMock(ResultSetMetaData.class);
 
         @NotNull final SqlElement<String> sql =
             new SqlElement<>(
