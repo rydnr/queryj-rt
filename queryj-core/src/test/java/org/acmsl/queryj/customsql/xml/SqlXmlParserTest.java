@@ -39,7 +39,7 @@ Spain
 package org.acmsl.queryj.customsql.xml;
 
 /*
-* Importing project classes.
+* Importing QueryJ Core classes.
 */
 import org.acmsl.queryj.customsql.ConnectionFlags;
 import org.acmsl.queryj.customsql.Parameter;
