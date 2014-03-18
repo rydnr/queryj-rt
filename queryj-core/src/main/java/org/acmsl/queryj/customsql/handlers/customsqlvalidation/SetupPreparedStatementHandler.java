@@ -183,6 +183,7 @@ public class SetupPreparedStatementHandler
         }
         else
         {
+            throw new
             @Nullable final Log t_Log = UniqueLogFactory.getLog(CustomSqlValidationHandler.class);
 
             if (t_Log != null)
