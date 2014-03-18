@@ -130,7 +130,8 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
             {
                 try
                 {
-                    validateProperties(t_ResultSet, t_lProperties, t_Sql, t_Result, new JdbcTypeManager(), t_Handler);
+                    validateProperties(
+                        t_ResultSet, t_lProperties, t_Sql, t_Result, new JdbcTypeManager(), t_Handler, t_MetadataManager);
 
                     setValidationOutcome(true, t_Sql, command);
                 }
