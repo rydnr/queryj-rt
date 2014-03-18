@@ -1790,7 +1790,7 @@ public abstract class AbstractJdbcMetadataManager
         }
         else
         {
-            result = false;
+            result = null;
         }
 
         return result;
