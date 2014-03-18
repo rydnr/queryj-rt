@@ -59,8 +59,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.189" classname="org.acmsl.queryj.customsql.handlers.CustomSqlCacheWritingHandlerTest" name="sql_hash_gets_written_correctly"/>
-  <testcase time="0.003" classname="org.acmsl.queryj.customsql.handlers.CustomSqlCacheWritingHandlerTest" name="hash_path_follows_convention"/>
-  <testcase time="0.002" classname="org.acmsl.queryj.customsql.handlers.CustomSqlCacheWritingHandlerTest" name="file_check_works"/>
-  <testcase time="0.004" classname="org.acmsl.queryj.customsql.handlers.CustomSqlCacheWritingHandlerTest" name="sql_hash_does_not_get_written_if_it_exists_already"/>
+  <testcase time="0.152" classname="org.acmsl.queryj.customsql.handlers.CustomSqlCacheWritingHandlerTest" name="sql_hash_gets_written_correctly"/>
+  <testcase time="0.023" classname="org.acmsl.queryj.customsql.handlers.CustomSqlCacheWritingHandlerTest" name="hash_path_follows_convention"/>
+  <testcase time="0.015" classname="org.acmsl.queryj.customsql.handlers.CustomSqlCacheWritingHandlerTest" name="file_check_works"/>
+  <testcase time="0.008" classname="org.acmsl.queryj.customsql.handlers.CustomSqlCacheWritingHandlerTest" name="sql_hash_does_not_get_written_if_it_exists_already"/>
 </testsuite>

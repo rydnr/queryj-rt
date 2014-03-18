@@ -59,6 +59,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.001" classname="org.acmsl.queryj.tools.handlers.ExternallyManagedFieldsRetrievalHandlerTest" name="testVault"/>
-  <testcase time="0.036" classname="org.acmsl.queryj.tools.handlers.ExternallyManagedFieldsRetrievalHandlerTest" name="testHandle"/>
+  <testcase time="0.021" classname="org.acmsl.queryj.tools.handlers.ExternallyManagedFieldsRetrievalHandlerTest" name="testVault"/>
+  <testcase time="0.016" classname="org.acmsl.queryj.tools.handlers.ExternallyManagedFieldsRetrievalHandlerTest" name="testHandle"/>
 </testsuite>
