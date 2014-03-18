@@ -697,6 +697,6 @@ public class OracleMetadataManager
     @Override
     public boolean isInvalidColumnTypeException(@NotNull final SQLException sqlException)
     {
-        return false;  //To change body of created methods use File | Settings | File Templates.
+        return
     }
 }
