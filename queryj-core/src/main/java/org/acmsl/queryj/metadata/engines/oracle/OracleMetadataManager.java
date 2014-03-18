@@ -715,7 +715,7 @@ public class OracleMetadataManager
 
         if (underlying instanceof SQLException)
         {
-            result = isInvalidColumnNameException((SQLException) underlying)
+            result = isInvalidColumnNameException((SQLException) underlying);
         }
         else
         {
