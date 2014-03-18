@@ -127,6 +127,11 @@ public class RetrieveQueryHandler
             t_Chronometer = new Chronometer();
             t_Log.info("Validating up to " + t_iTotalQueries + " queries. It can take some time.";
         }
+        else
+        {
+            t_Chronometer = null;
+        }
+
         while (   (t_iIndex > -1)
                && (t_iIndex < t_lSql.size()))
         {
