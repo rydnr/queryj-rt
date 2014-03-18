@@ -256,31 +256,6 @@ public class SqlXmlParserTest
         + "  </flag-list>\n"
         + "</sql-list>\n";
 
-  // JUnitDoclet end class
-  
-  /**
-  * Creates a SqlXmlParserTest with given name.
-  * @param name such name.
-  */
-  public SqlXmlParserTest(final String name)
-  {
-    // JUnitDoclet begin method SqlXmlParserTest
-    super(name);
-    // JUnitDoclet end method SqlXmlParserTest
-  }
-  
-  /**
-  * Performs any required steps before each test.
-  * @throws Exception if an unexpected situation occurs.
-  */
-  protected void setUp()
-  throws Exception
-  {
-    // JUnitDoclet begin method testcase.setUp
-    super.setUp();
-    // JUnitDoclet end method testcase.setUp
-  }
-  
   /**
   * Performs any required steps after each test.
   * @throws Exception if an unexpected situation occurs.
