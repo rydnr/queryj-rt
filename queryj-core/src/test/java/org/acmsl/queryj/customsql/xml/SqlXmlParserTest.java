@@ -51,7 +51,9 @@ import org.acmsl.queryj.customsql.ResultSetFlags;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.StatementFlags;
 
-// JUnitDoclet begin import
+/*
+ * Importing JDK classes.
+ */
 import java.io.ByteArrayInputStream;
 import java.util.List;
 // JUnitDoclet end import
