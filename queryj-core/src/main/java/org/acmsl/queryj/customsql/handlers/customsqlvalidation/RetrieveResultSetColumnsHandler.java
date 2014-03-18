@@ -110,8 +110,7 @@ public class RetrieveResultSetColumnsHandler
         {
             throw
                 new CannotAnalyzeResultSetForValidationException(
-                    sqlException,
-                    new RetrieveQueryHandler().retrieveCurrentSql(command));
+                    sqlException, new RetrieveQueryHandler().retrieveCurrentSql(command));
         }
 
         return false;
