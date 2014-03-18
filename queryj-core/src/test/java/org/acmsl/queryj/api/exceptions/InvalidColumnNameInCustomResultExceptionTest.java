@@ -40,6 +40,8 @@ package org.acmsl.queryj.api.exceptions;
  */
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.PropertyElement;
+import org.acmsl.queryj.customsql.Result;
+import org.acmsl.queryj.customsql.ResultElement;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.Sql.Cardinality;
 import org.acmsl.queryj.customsql.SqlElement;
@@ -120,7 +122,9 @@ public class InvalidColumnNameInCustomResultExceptionTest
         @NotNull final Property<String> t_Property =
             new PropertyElement<>("name", "name", 1, String.class.getSimpleName(), false);
 
-        @NotNull final Result<>
+        @NotNull final Result<String> t_Result =
+            new ResultElement<String>()
+
         @NotNull final InvalidColumnNameInCustomResultException instance =
             new InvalidColumnNameInCustomResultException(t_Property, t_Sql, null, new RuntimeException("fake"));
 
