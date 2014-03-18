@@ -380,7 +380,7 @@ public class RetrieveResultPropertiesHandler
                     cannotRetrieveColumnValue);
             }
 
-
+            if (metadataManager.isInvalidColumnNameException())
             throw
                 new UnsupportedCustomResultPropertyTypeException(
                     property, sql, sqlResult, illegalAccessException);
