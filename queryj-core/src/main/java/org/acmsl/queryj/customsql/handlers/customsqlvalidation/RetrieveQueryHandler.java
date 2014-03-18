@@ -128,6 +128,7 @@ public class RetrieveQueryHandler
             {
                 t_Log.debug("Validating " + t_lSql.get())
             }
+            setCurrentSqlIndex(index++, command);
             chain.process(command);
         }
 
