@@ -299,9 +299,7 @@ public class SqlXmlParserTest
 
         final List<ResultSetFlags> t_lResultSetFlags = t_Parser.getResultSetFlagList();
         Assert.assertEquals(1, t_lResultSetFlags.size());
-
-    // JUnitDoclet end method parse
-  }
+    }
   
   /**
   * JUnitDoclet moves marker to this method, if there is not match
