@@ -127,10 +127,10 @@ public class OracleMetadataManagerTest
                 caseSensitive,
                 new OracleEngine("12c"));
 
-        @NotNull final SQLException invalidColumnName = new SQLException("Invalid column type", null, 17006);
+        @NotNull final SQLException invalidColumnType = new SQLException("Invalid column type", null, 17006);
 
-        Assert.assertTrue(instance.isInvalidColumnTypeException(invalidColumnName));
+        Assert.assertTrue(instance.isInvalidColumnTypeException(invalidColumnType));
 
-        Assert.assertTrue(instance.isInvalidColumnTypeException(new RuntimeException("wrapper", invalidColumnName)));
+        Assert.assertTrue(instance.isInvalidColumnTypeException(new RuntimeException("wrapper", invalidColumnType)));
     }
 }
