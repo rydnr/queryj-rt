@@ -267,8 +267,7 @@ public abstract class AbstractJdbcMetadataManager
     }
 
     /**
-     * Retrieves the table names.
-     * @return such names.
+     * {@inheritDoc}
      */
     @Override
     @NotNull
