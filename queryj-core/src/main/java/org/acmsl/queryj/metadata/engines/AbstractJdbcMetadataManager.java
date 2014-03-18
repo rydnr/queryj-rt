@@ -1808,7 +1808,7 @@ public abstract class AbstractJdbcMetadataManager
 
         @Nullable SQLException underlying = unwrap(exception);
 
-        if (underlying instanceof SQLException)
+        if (underlying != null)
         {
             result = isInvalidColumnNameException((SQLException) underlying);
         }
