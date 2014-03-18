@@ -1389,7 +1389,7 @@ public abstract class AbstractJdbcMetadataManager
     /**
      * Parses given environment property to find out whether some tables are
      * explicitly specified.
-     * @param environmentProperty the environment propery.
+     * @param environmentProperty the environment property.
      * @return the tables specified in given environment property.
      */
     @NotNull
