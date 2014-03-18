@@ -52,6 +52,8 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 
+import java.sql.SQLException;
+
 /**
  * Represents any problem dealing with {@link java.sql.ResultSetMetaData} when validating what a SQL
  * actually returns.
@@ -72,7 +74,7 @@ public class CannotAnalyzeResultSetForValidationException
      * Creates a new instance associated to given {@link Sql}.
      * @param sql the SQL.
      */
-    public CannotAnalyzeResultSetForValidationException(@NotNull final Sql<String> sql)
+    public CannotAnalyzeResultSetForValidationException(@NotNull final SQLException cause, @NotNull final Sql<String> sql)
     {
         super("cannot.analyze.ResultSet.for.validation", new String[] { sql.getId() });
     }
