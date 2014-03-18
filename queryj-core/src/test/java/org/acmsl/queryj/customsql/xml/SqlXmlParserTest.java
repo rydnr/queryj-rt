@@ -56,7 +56,6 @@ import org.acmsl.queryj.customsql.StatementFlags;
  */
 import java.io.ByteArrayInputStream;
 import java.util.List;
-// JUnitDoclet end import
 
 /*
 * Importing JUnit classes.
