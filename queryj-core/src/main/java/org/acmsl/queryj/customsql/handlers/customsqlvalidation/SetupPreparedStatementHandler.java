@@ -174,10 +174,6 @@ public class SetupPreparedStatementHandler
 
         @Nullable final String t_strValue = sql.getValue();
 
-        if (sql.getType().equals(Sql.SELECT)))
-        {
-            throw new CannotValidateNonSelectQueryException(sql);
-        }
         if (t_strValue == null)
         {
 
