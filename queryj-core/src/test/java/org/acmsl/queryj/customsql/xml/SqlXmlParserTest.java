@@ -261,7 +261,6 @@ public class SqlXmlParserTest
     * @throws Exception if an unexpected situation occurs.
     * @see org.acmsl.queryj.customsql.xml.SqlXmlParser#parse()
     */
-    @SuppressWarnings("unused")
     public void testParse()
         throws Exception
     {
