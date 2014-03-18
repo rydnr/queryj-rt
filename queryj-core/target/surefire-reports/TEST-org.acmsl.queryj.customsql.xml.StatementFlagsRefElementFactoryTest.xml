@@ -59,6 +59,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.005" classname="org.acmsl.queryj.customsql.xml.StatementFlagsRefElementFactoryTest" name="testCreateObject"/>
-  <testcase time="0" classname="org.acmsl.queryj.customsql.xml.StatementFlagsRefElementFactoryTest" name="testVault"/>
+  <testcase time="0.001" classname="org.acmsl.queryj.customsql.xml.StatementFlagsRefElementFactoryTest" name="testCreateObject"/>
+  <testcase time="0.004" classname="org.acmsl.queryj.customsql.xml.StatementFlagsRefElementFactoryTest" name="testVault"/>
 </testsuite>
