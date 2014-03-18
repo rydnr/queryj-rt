@@ -102,7 +102,7 @@ public class InvalidColumnNameInCustomResultExceptionTest
     }
 
     @Test
-    public void the_message_is_internationalized_for_implicit_results()
+    public void the_message_is_internationalized_for_explicit_results()
         throws MissingResourceException
     {
         @NotNull final Sql<String> t_Sql =
