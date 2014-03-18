@@ -607,5 +607,15 @@ public class JdbcMetadataManager
         return new JdbcTableDAO(this);
     }
 
-
+    /**
+     * Checks whether given exception identifies an "Invalid column name".
+     *
+     * @param exception the exception.
+     * @return {@code true} in such case.
+     */
+    @Override
+    protected boolean isInvalidColumnNameException(@NotNull final SQLException exception)
+    {
+        return false;  //To change body of implemented methods use File | Settings | File Templates.
+    }
 }
