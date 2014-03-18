@@ -116,7 +116,7 @@ public class RetrieveQueryHandler
 
         @NotNull final List<Sql<String>> t_lSql = retrieveSqlList(command);
 
-        final int totalQueries = t_lSql.size();
+        final int t_iTotalQueries = t_lSql.size();
 
         while (   (t_iIndex > -1)
                && (t_iIndex < t_lSql.size()))
@@ -128,7 +128,7 @@ public class RetrieveQueryHandler
             if (   (t_Log != null)
                 && (t_Log.isDebugEnabled()))
             {
-                t_Log.debug("[" + t_iIndex + "/" + totalQueries + "] / " + t_Sql.getId());
+                t_Log.debug("[" + t_iIndex + "/" + t_iTotalQueries + "] / " + t_Sql.getId());
             }
             setCurrentSqlIndex(t_iIndex++, command);
             chain.process(command);
