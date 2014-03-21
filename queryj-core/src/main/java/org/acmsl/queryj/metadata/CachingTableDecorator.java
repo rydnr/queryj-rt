@@ -1030,6 +1030,7 @@ public class CachingTableDecorator
     {
         return
               "{ \"class\": \"" + CachingTableDecorator.class.getSimpleName() + "\""
+            + "{ \"class\": \"" + CachingTableDecorator.class.getSimpleName() + "\""
             + ", \"parentForeignKeyAlreadyRetrieved\": " + m__bParentForeignKeyAlreadyRetrieved
             + ", \"cachedPrimaryKey\": " + ToStringUtils.getInstance().toJson(m__lCachedPrimaryKey)
             + ", \"cachedReadOnlyAttributes\": " + ToStringUtils.getInstance().toJson(m__lCachedReadOnlyAttributes)
