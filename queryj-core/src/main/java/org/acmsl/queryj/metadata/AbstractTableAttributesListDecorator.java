@@ -358,6 +358,7 @@ public abstract class AbstractTableAttributesListDecorator
 
     /**
      * Writes a textual representation of the instance.
+     * @return such text.
      */
     @NotNull
     @Override
