@@ -968,9 +968,13 @@ public abstract class AbstractTemplatesTest<G, F>
     /**
      * Builds the template name.
      * @param context the template context.
-     *
+     * @return such name.
      */
     protected String buildTemplateName(@NotNull final TemplateContext context)
+    {
+
+    }
+
     /**
      * {@inheritDoc}
      */
