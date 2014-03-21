@@ -221,9 +221,9 @@ public abstract class AbstractListDecorator<T>
     }
 
     /**
-     * Retrieves the item at position
-     * @param i
-     * @return
+     * Retrieves the item at given position.
+     * @param i the position.
+     * @return the item.
      */
     @Override
     @Nullable
