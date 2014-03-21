@@ -95,7 +95,8 @@ import java.util.Map;
 /**
  * Helper class for per-table Cucumber tests.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
- * @since 2013/05/26
+ * @since 3.0
+ * Created: 2013/05/26
  */
 public class TableTestHelper
 {
