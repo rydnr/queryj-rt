@@ -488,6 +488,7 @@ public class TableAttributesPartialListDecorator
     /**
      * {@inheritDoc}
      */
+    @NotNull
     public ListDecorator<Attribute<DecoratedString>> getPrimaryKey1()
     {
         return getPrimaryKey();
