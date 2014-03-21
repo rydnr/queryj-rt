@@ -164,6 +164,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
      * @param parentTable the parent table.
      * @param staticAttribute the attribute used to label static rows.
      * @param voDecorated whether it's decorated.
+     * @param isRelationship whether the table identifies a relationship.
      */
     protected AbstractTable(
         @NotNull final V name,
