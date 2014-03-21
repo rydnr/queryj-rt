@@ -147,6 +147,9 @@ public abstract class AbstractListDecorator<T>
         getItems().clear();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean remove(@Nullable final Object o)
     {
