@@ -106,7 +106,15 @@ public class TableTestHelper
      * A String literal: "test comment".
      */
     private static final String TEST_COMMENT = "test comment";
+
+    /**
+     * A String literal: "column".
+     */
     private static final String COLUMN = "column";
+
+    /**
+     * A String literal: "parent table".
+     */
     private static final String PARENT_TABLE = "parent table";
     private static final String STATIC = "static";
     private static final String DECORATED = "decorated";
