@@ -1,2 +1,2 @@
 * 2014/03/21
-** DONE #448 Cucumber template: 1 -> 1
+** #448 Cucumber template: 2 -> 1
