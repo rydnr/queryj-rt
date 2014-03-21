@@ -295,6 +295,9 @@ public abstract class AbstractTableAttributesListDecorator
         return getAttributes();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public List<ForeignKey<DecoratedString>> getForeignKeys()
@@ -302,6 +305,9 @@ public abstract class AbstractTableAttributesListDecorator
         return getTable().getForeignKeys();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Nullable
     @Override
     public Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>>
