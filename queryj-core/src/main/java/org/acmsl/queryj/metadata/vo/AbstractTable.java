@@ -409,8 +409,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
     }
 
     /**
-     * Retrievesthe attribute used to label static contents.
-     * @return such attribute.
+     * {@inheritDoc}
      */
     @Override
     @Nullable
