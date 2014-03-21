@@ -976,6 +976,7 @@ public abstract class AbstractTemplatesTest<G, F>
 
         @NotNull final String aux = context.getTemplateName();
 
+        final int
         if (aux.contains("("))
         return result;
     }
