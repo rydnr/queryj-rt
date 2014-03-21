@@ -70,6 +70,7 @@ public final class TableValueObject
      * @param parentTable the parent table.
      * @param staticAttribute the attribute used to label static contents.
      * @param voDecorated whether the table is decorated.
+     * @param isRelationship whether the table identifies a relationship.
      */
     public TableValueObject(
         @NotNull final String name,
