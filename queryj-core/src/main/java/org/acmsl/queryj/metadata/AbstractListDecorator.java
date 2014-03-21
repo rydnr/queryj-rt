@@ -213,6 +213,10 @@ public abstract class AbstractListDecorator<T>
         return getItems().isEmpty();
     }
 
+    /**
+     *
+     * @return
+     */
     @Override
     @NotNull
     public Iterator<T> iterator()
