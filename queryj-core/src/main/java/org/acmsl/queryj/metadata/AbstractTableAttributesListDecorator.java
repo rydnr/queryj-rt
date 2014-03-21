@@ -325,6 +325,9 @@ public abstract class AbstractTableAttributesListDecorator
         return getTable().isStatic();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean isVoDecorated()
     {
