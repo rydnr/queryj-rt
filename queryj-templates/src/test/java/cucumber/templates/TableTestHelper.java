@@ -166,6 +166,10 @@ public class TableTestHelper
      * A String literal: "value".
      */
     private static final String VALUE = "value";
+
+    /**
+     * A String literal: "readonly".
+     */
     private static final String READONLY = "readonly";
     public static final String SYNTAX_ERROR_IN_STATIC_CONTENT = "Syntax error in static content ";
     private static final String DATE_FORMAT_ES = "DD/MM/yyyy";
