@@ -1237,9 +1237,7 @@ public abstract class AbstractJdbcMetadataManager
                 QueryJException;
 
     /**
-     * Retrieves the {@link org.acmsl.queryj.metadata.ColumnDAO} instance.
-     *
-     * @return such instance.
+     * {@inheritDoc}
      */
     @NotNull
     @Override
