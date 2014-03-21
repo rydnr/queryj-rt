@@ -1061,7 +1061,9 @@ public abstract class AbstractTableDecorator
         return result;
     }
 
-
+    /**
+     * Retrieves the name of the parent table, or {@code null} if no parent
+     */
     /**
      * Removes the duplicated attributes from <code>secondAttributes</code>.
      * @param firstAttributes the child attributes.
