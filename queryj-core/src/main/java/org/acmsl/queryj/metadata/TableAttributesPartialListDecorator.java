@@ -91,15 +91,15 @@ public class TableAttributesPartialListDecorator
     public static enum Operation
     {
         /**
-         * {@inheritDoc}
+         * The plus operation.
          */
         PLUS,
         /**
-         * {@inheritDoc}
+         * The minus operation.
          */
         MINUS,
         /**
-         * {@inheritDoc}
+         * The "only" operation.
          */
         ONLY
     }
