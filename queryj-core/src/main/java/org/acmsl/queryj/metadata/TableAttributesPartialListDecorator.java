@@ -210,6 +210,9 @@ public class TableAttributesPartialListDecorator
         throw new RuntimeException(AbstractTableAttributesListDecorator.INVALID_OPERATION);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     public PartialListDecorator plus()
     {
