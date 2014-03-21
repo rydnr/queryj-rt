@@ -366,6 +366,7 @@ public abstract class AbstractTableAttributesListDecorator
     {
         return
               "{ \"class\": " + AbstractTableAttributesListDecorator.class.getSimpleName() + '"'
+            + ", \"package\": \" + m__Table
             + ", \"table\": " + m__Table
             + " }";
     }
