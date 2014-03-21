@@ -203,6 +203,9 @@ public class TableAttributesPartialListDecorator
     }
 
     // ListDecorator implementation
+    /**
+     * {@inheritDoc}
+     */
     @SuppressWarnings("unused")
     @NotNull
     public List<Attribute<DecoratedString>> getItems()
