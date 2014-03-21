@@ -150,6 +150,9 @@ public abstract class AbstractTableAttributesListDecorator
 
     // TableDecorator implementation
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public ListDecorator<Attribute<DecoratedString>> getReadOnlyAttributes()
