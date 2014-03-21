@@ -210,6 +210,9 @@ public class TableAttributesListDecorator
         return getTable().getForeignKeys();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Nullable
     @Override
     public Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>>
