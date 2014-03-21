@@ -282,7 +282,7 @@ public class TableTestHelper
      * @param parentTable the name of the parent table, if any.
      * @param staticAttribute the attribute used to label static contents.
      * @param isDecorated whether the table is decorated.
-     * @param
+     * @param isRelationship whether the table identifies a relationship.
      * @return the {@link Table} instance.
      */
     @Nullable
