@@ -494,6 +494,9 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
         return new HashCodeBuilder().append(this.m__Name).toHashCode();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean equals(final Object obj)
     {
