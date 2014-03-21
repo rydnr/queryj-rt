@@ -138,11 +138,13 @@ public class TableTestHelper
     private static final String PRECISION = "precision";
 
     /**
-     * A String literal: "queryj".
+     * A String literal: "query".
      */
     private static final String QUERY = "query";
 
-
+    /**
+     * A String literal:
+     */
     private static final String ALLOWS_NULL = "allows null";
     private static final String SOURCE_TABLE = "source table";
     private static final String TARGET_TABLE = "target table";
