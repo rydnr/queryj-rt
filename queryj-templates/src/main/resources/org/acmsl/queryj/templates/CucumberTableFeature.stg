@@ -54,7 +54,7 @@ Feature: <table.name> code compiles
 
     Given the following tables:
     |    table     | parent table | decorated | relationship |   static    |
-    | <table.name> | <table.parent> | <table.decorated> | <table.relationship> | <table.static> |
+    | <table.name> | <table.parent> | <table.voDecorated> | <table.relationship> | <table.static> |
 
     And the following columns:
     |     table    |         column        | type      | pk    | allows null | readonly |   sequence    | keyword | boolean | length | precision |
