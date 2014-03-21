@@ -480,6 +480,9 @@ public class TableAttributesPartialListDecorator
         return result;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public ListDecorator<Attribute<DecoratedString>> getAttributes()
