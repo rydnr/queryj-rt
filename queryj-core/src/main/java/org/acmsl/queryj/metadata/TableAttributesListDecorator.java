@@ -187,6 +187,9 @@ public class TableAttributesListDecorator
     }
 
     // TODO: remove me
+    /**
+     * {@inheritDoc}
+     */
     public List<Attribute<DecoratedString>> getPrimaryKey1()
     {
         List<Object> a = new ArrayList<>(2);
