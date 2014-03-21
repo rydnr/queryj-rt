@@ -237,7 +237,7 @@ public class TableAttributesPartialListDecorator
     }
 
     /**
-     * Applies the "plus" operation to the items.
+     * Applies the "minus" operation to the items.
      * @return the partial result.
      */
     @NotNull
