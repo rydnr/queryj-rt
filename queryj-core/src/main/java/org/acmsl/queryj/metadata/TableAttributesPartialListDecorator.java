@@ -417,6 +417,9 @@ public class TableAttributesPartialListDecorator
     }
 
     // Table implementation
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public DecoratedString getName()
