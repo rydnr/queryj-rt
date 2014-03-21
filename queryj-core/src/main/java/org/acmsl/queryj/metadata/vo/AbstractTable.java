@@ -487,7 +487,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
      * @return such condition.
      */
     @SuppressWarnings("unused")
-    public boolean istRelationship()
+    public boolean isRelationship()
     {
         this.m__bRelationship;
     }
