@@ -607,6 +607,7 @@ public class TableAttributesPartialListDecorator
      * {@inheritDoc}
      */
     @Override
+    @NotNull
     public Attribute<DecoratedString> getStaticAttribute()
     {
         return getTable().getStaticAttribute();
