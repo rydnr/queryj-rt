@@ -183,7 +183,7 @@ public class TableTestHelper
     private static final String DATE_FORMAT_ES = "DD/MM/yyyy";
 
     /**
-     * The date format, in Spanish flavor.
+     * The date format, in English flavor.
      */
     private static final String DATE_FORMAT_EN = "yyyy/MM/DD";
 
