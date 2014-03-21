@@ -244,6 +244,9 @@ public abstract class AbstractTableAttributesListDecorator
     }
 
     // Table implementation
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public DecoratedString getName()
