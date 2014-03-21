@@ -222,6 +222,9 @@ public abstract class AbstractListDecorator<T>
         return getItems().listIterator();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void add(final int i, @Nullable final T item)
     {
