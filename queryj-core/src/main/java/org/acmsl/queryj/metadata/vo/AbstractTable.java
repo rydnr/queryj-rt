@@ -488,7 +488,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
     @Override
     public boolean isRelationship()
     {
-        this.m__bRelationship;
+        return this.m__bRelationship;
     }
 
     @Override
