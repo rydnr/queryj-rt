@@ -232,8 +232,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
     }
 
     /**
-     * Retrieves the table comment.
-     * @return such information.
+     * {@inheritDoc}
      */
     @Nullable
     @Override
