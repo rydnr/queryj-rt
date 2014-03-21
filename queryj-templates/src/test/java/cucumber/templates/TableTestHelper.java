@@ -880,6 +880,7 @@ public class TableTestHelper
      * @return the url.
      */
     @Nullable
+    @SuppressWarnings("unused")
     public String retrieveJdbcDriver(@NotNull final DataTable values)
     {
         return retrieveJdbcField(values, "driver");
