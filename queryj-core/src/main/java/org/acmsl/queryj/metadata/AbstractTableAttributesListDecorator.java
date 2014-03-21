@@ -357,7 +357,7 @@ public abstract class AbstractTableAttributesListDecorator
     }
 
     /**
-     * {@inheritDoc}
+     * Writes a textual representation of the instance.
      */
     @NotNull
     @Override
