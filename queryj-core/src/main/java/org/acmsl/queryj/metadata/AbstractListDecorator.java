@@ -109,6 +109,9 @@ public abstract class AbstractListDecorator<T>
     }
 
     // java.util.List implementation
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public List<T> subList(final int i, final int i2)
