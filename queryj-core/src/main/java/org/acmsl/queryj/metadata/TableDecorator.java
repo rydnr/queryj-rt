@@ -60,7 +60,7 @@ import java.util.List;
 /**
  * Decorates {@linkTable} instances to provide required alternate
  * representations of the information stored therein.
- * @author <a href="mailto:chous@acm-sl.org"
+ * @author <a href="mailto:queryj@acm-sl.org"
  *         >Jose San Leandro</a>
  */
 public interface TableDecorator
