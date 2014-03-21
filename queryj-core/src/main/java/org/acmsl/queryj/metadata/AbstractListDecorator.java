@@ -227,6 +227,11 @@ public abstract class AbstractListDecorator<T>
         return getItems().get(i);
     }
 
+    /**
+     * Checks whether given item is included.
+     * @param o the item.
+     * @return {@code true} in such case.
+     */
     @Override
     public boolean contains(@Nullable final Object o)
     {
