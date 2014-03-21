@@ -217,6 +217,7 @@ public class TableAttributesPartialListDecorator
     // ListDecorator implementation
     /**
      * Retrieves the items.
+     * @return such information.
      */
     @SuppressWarnings("unused")
     @NotNull
