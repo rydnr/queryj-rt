@@ -231,6 +231,9 @@ public abstract class AbstractListDecorator<T>
         getItems().add(i, item);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean containsAll(@NotNull final Collection<?> objects)
     {
