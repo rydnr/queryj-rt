@@ -402,6 +402,9 @@ public class TableAttributesPartialListDecorator
         return getTable().getStaticContent();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public List<Result<DecoratedString>> getDifferentCustomResults()
