@@ -176,6 +176,10 @@ public class TableTestHelper
      * A String literal: "Syntax error in static content ".
      */
     public static final String SYNTAX_ERROR_IN_STATIC_CONTENT = "Syntax error in static content ";
+
+    /**
+     * The date format, in Spanish flavor.
+     */
     private static final String DATE_FORMAT_ES = "DD/MM/yyyy";
     private static final String DATE_FORMAT_EN = "yyyy/MM/DD";
 
