@@ -1075,6 +1075,12 @@ public abstract class AbstractTableDecorator
         {
             result = new DecoratedString(t_Parent.getName());
         }
+        else
+        {
+            result = null;
+        }
+
+        return result;
 
     }
     /**
