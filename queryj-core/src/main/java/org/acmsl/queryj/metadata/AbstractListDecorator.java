@@ -235,8 +235,8 @@ public abstract class AbstractListDecorator<T>
 
     /**
      * Finds the position of given item in the list.
-     * @param o
-     * @return
+     * @param o the item.
+     * @return the position of the
      */
     @Override
     public int lastIndexOf(@Nullable final Object o)
