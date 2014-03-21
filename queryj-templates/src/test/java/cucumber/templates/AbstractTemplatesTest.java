@@ -964,6 +964,10 @@ public abstract class AbstractTemplatesTest<G, F>
         return result;
     }
 
+    /**
+     * {@inheritDoc}
+     * @return
+     */
     @NotNull
     @Override
     public String toString()
