@@ -1068,7 +1068,7 @@ public abstract class AbstractTableDecorator
     @Nullable
     public String getParentTableName()
     {
-        @Nullable final  Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>> t_Parent = getParentTable();
+        @Nullable final Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>> t_Parent = getParentTable();
 
     }
     /**
