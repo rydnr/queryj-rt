@@ -562,6 +562,9 @@ public class TableAttributesPartialListDecorator
         return getTable().compareTo(table);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public String toString()
