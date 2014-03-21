@@ -156,6 +156,9 @@ public abstract class AbstractListDecorator<T>
         return getItems().remove(o);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean addAll(final int i, @NotNull final Collection<? extends T> attributes)
     {
