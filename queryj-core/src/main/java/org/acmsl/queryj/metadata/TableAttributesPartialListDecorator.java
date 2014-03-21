@@ -418,8 +418,7 @@ public class TableAttributesPartialListDecorator
     }
 
     /**
-     * Retrieves the dynamic queries.
-     * @return such queries.
+     * {@inheritDoc}
      */
     @NotNull
     @Override
