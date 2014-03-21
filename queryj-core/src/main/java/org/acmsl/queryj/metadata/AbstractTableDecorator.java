@@ -204,7 +204,8 @@ public abstract class AbstractTableDecorator
             ? new CachingTableDecorator(parentTable, metadataManager, decoratorFactory, customSqlProvider)
             : null,
             staticAttribute != null ? decorate(staticAttribute, metadataManager) : null,
-            voDecorated);
+            voDecorated,
+            isRelationship);
 
         immutableSetTable(table);
         immutableSetPrimaryKey(
