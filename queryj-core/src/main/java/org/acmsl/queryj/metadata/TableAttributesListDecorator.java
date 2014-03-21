@@ -221,6 +221,9 @@ public class TableAttributesListDecorator
         return getTable().getParentTable();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean isStatic()
     {
