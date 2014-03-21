@@ -252,6 +252,10 @@ public abstract class AbstractListDecorator<T>
         return getItems().toArray();
     }
 
+    /**
+     * Writes a textual representation of the instance.
+     * @return such text.
+     */
     @NotNull
     @Override
     public String toString()
