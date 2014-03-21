@@ -125,6 +125,9 @@ public abstract class AbstractTableAttributesListDecorator
         return this.m__Table;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public PartialListDecorator getPlus()
