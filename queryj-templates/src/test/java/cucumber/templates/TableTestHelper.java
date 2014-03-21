@@ -163,7 +163,7 @@ public class TableTestHelper
     private static final String SOURCE_COLUMNS = "source columns";
 
     /**
-     * A String literal:
+     * A String literal: "value".
      */
     private static final String VALUE = "value";
     private static final String READONLY = "readonly";
