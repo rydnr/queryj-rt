@@ -176,6 +176,9 @@ public class TableAttributesListDecorator
         return getTable().getComment();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public ListDecorator<Attribute<DecoratedString>> getPrimaryKey()
