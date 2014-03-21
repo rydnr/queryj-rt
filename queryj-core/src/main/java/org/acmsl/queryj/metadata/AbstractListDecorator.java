@@ -175,12 +175,18 @@ public abstract class AbstractListDecorator<T>
         return getItems().remove(i);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public int indexOf(@Nullable final Object o)
     {
         return getItems().indexOf(o);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     @NotNull
     public ListIterator<T> listIterator(final int i)
