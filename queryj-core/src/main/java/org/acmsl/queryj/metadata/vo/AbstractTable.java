@@ -290,8 +290,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
     }
 
     /**
-     * Retrieves the primary key.
-     * @return the primary key.
+     * {@inheritDoc}
      */
     @NotNull
     @Override
