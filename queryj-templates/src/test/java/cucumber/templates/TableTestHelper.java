@@ -141,6 +141,8 @@ public class TableTestHelper
      * A String literal: "queryj".
      */
     private static final String QUERY = "query";
+
+
     private static final String ALLOWS_NULL = "allows null";
     private static final String SOURCE_TABLE = "source table";
     private static final String TARGET_TABLE = "target table";
