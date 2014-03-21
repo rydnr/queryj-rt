@@ -568,7 +568,7 @@ public class TableAttributesPartialListDecorator
     {
         return
               "{ \"class\": \"" + TableAttributesPartialListDecorator.class.getName() + '"'
-              + ", \"package\": \"org.acmsl.queryj.metadata
+            + ", \"package\": \"org.acmsl.queryj.metadata\""
             + ", \"listDecorator\": " + m__ListDecorator
             + ", \"table\": " + m__Table
             + ", \"operation\": " + m__Operation
