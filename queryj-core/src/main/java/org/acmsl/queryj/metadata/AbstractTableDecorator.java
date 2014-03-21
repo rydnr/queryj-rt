@@ -179,6 +179,7 @@ public abstract class AbstractTableDecorator
      * @param parentTable the parent table.
      * @param staticAttribute the attribute used to label static contents.
      * @param voDecorated whether the value-object should be decorated.
+     * @param isRelationship whether the table identifies a relationship.
      * @param metadataManager the {@link MetadataManager metadata manager}.
      * @param decoratorFactory the {@link DecoratorFactory decorator factory}.
      * @param customSqlProvider the {@link CustomSqlProvider custom-sql provider}.
