@@ -978,7 +978,7 @@ public abstract class AbstractTemplatesTest<G, F>
 
         final int t_iPosition = aux.indexOf('(');
 
-        if (aux.contains("("))
+        if (t_iPosition >
         return result;
     }
 
