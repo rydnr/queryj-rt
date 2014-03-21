@@ -316,6 +316,9 @@ public abstract class AbstractTableAttributesListDecorator
         return getTable().getParentTable();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean isStatic()
     {
