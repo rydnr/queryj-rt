@@ -1249,9 +1249,7 @@ public abstract class AbstractJdbcMetadataManager
     }
 
     /**
-     * Retrieves the {@link org.acmsl.queryj.metadata.PrimaryKeyDAO} instance.
-     *
-     * @return such instance.
+     * {@inheritDoc}
      */
     @NotNull
     @Override
