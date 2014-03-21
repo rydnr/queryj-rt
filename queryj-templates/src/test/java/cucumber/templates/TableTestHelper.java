@@ -173,7 +173,7 @@ public class TableTestHelper
     private static final String READONLY = "readonly";
 
     /**
-     * A String literal:
+     * A String literal: "Syntax error in static content ".
      */
     public static final String SYNTAX_ERROR_IN_STATIC_CONTENT = "Syntax error in static content ";
     private static final String DATE_FORMAT_ES = "DD/MM/yyyy";
