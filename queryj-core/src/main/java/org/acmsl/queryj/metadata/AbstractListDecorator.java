@@ -236,7 +236,7 @@ public abstract class AbstractListDecorator<T>
     /**
      * Finds the position of given item in the list.
      * @param o the item.
-     * @return among all ocurrences of the item in the list, the position of the right-most item.
+     * @return among all occurrences of the item in the list, the position of the right-most item.
      */
     @Override
     public int lastIndexOf(@Nullable final Object o)
