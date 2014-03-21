@@ -274,6 +274,9 @@ public abstract class AbstractTableAttributesListDecorator
         return getTable().getPrimaryKey();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public ListDecorator<Attribute<DecoratedString>> getAttributes()
