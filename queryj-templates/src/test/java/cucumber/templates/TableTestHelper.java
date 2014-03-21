@@ -116,9 +116,25 @@ public class TableTestHelper
      * A String literal: "parent table".
      */
     private static final String PARENT_TABLE = "parent table";
+
+    /**
+     * A String literal: "static".
+     */
     private static final String STATIC = "static";
+
+    /**
+     * A String literal: "decorated".
+     */
     private static final String DECORATED = "decorated";
+
+    /**
+     * A String literal: "relationship".
+     */
     private static final String RELATIONSHIP = "relationship";
+
+    /**
+     * A String literal: "precision".
+     */
     private static final String PRECISION = "precision";
     private static final String QUERY = "query";
     private static final String ALLOWS_NULL = "allows null";
