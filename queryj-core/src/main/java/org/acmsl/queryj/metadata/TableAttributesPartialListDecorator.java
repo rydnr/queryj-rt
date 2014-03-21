@@ -395,6 +395,9 @@ public class TableAttributesPartialListDecorator
         return getTable().getDynamicQueries();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public List<Row<DecoratedString>> getStaticContent()
