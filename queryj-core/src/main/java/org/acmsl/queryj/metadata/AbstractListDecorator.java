@@ -245,6 +245,9 @@ public abstract class AbstractListDecorator<T>
         return getItems().size();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public Object[] toArray()
