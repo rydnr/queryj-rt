@@ -160,7 +160,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
      */
     protected final void immutableSetRelationship(final boolean flag)
     {
-        this.relationship = flag;
+        this.m__bRelationship = flag;
     }
 
     /**
