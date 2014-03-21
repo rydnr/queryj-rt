@@ -570,6 +570,10 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
         return ("" + first.getName()).compareToIgnoreCase("" + second.getName());
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
     @Override
     public String toString()
     {
