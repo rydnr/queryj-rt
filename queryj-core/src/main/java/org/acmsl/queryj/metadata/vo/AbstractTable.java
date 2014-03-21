@@ -486,7 +486,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
      * Retrieves whether the table identifies a relationship.
      * @return such condition.
      */
-    @SuppressWarnings("unused")
+    @Override
     public boolean isRelationship()
     {
         this.m__bRelationship;
