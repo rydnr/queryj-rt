@@ -176,7 +176,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
         final boolean voDecorated,
         final boolean isRelationship)
     {
-        this(name, comment, parentTable, staticAttribute, voDecorated);
+        this(name, comment, parentTable, staticAttribute, voDecorated, isRelationship);
         immutableSetPrimaryKey(primaryKey);
         immutableSetAttributes(attributes);
         immutableSetForeignKeys(foreignKeys);
