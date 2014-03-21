@@ -328,8 +328,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
     }
 
     /**
-     * Retrieves the attributes.
-     * @return attributes.
+     * {@inheritDoc}
      */
     @NotNull
     @Override
