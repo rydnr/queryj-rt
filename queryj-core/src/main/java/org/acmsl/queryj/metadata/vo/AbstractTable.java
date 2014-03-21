@@ -180,7 +180,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
     @SuppressWarnings("unused")
     public boolean istRelationship()
     {
-        this.relationship;
+        this.m__bRelationship;
     }
 
     /**
