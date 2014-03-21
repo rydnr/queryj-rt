@@ -212,6 +212,9 @@ public abstract class AbstractListDecorator<T>
         return getItems().set(i, item);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public ListIterator<T> listIterator()
