@@ -927,7 +927,8 @@ public abstract class AbstractJdbcMetadataManager
                     cloneForeignKeys(table.getForeignKeys()),
                     t_Table,
                     table.getStaticAttribute(),
-                    table.isVoDecorated());
+                    table.isVoDecorated(),
+                    table.isRelationship());
         }
 
         return result;
