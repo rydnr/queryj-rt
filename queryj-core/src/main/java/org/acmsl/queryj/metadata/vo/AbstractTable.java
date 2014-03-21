@@ -149,7 +149,11 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
         immutableSetRelationship(isRelationship);
     }
 
-    private void immutableSetRelationship(final boolean flag)
+    /**
+     * Specifies whether the table identifies a relationship.
+     * @param flag such condition.
+     */
+    protected final void immutableSetRelationship(final boolean flag)
     {
         this.relationship = flag;
     }
