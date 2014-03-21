@@ -194,6 +194,9 @@ public abstract class AbstractListDecorator<T>
         return getItems().listIterator(i);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean removeAll(@NotNull final Collection<?> objects)
     {
