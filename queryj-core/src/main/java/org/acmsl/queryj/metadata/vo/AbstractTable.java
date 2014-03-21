@@ -173,7 +173,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
      * @param flag such condition.
      */
     @SuppressWarnings("unused")
-    protected void setRelationship(final boolean flag)
+    public void setRelationship(final boolean flag)
     {
         immutableSetRelationship(flag);
     }
