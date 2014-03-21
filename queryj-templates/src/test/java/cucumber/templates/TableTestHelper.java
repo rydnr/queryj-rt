@@ -136,6 +136,10 @@ public class TableTestHelper
      * A String literal: "precision".
      */
     private static final String PRECISION = "precision";
+
+    /**
+     * A String literal: "queryj".
+     */
     private static final String QUERY = "query";
     private static final String ALLOWS_NULL = "allows null";
     private static final String SOURCE_TABLE = "source table";
