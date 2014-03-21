@@ -203,6 +203,9 @@ public abstract class AbstractTableAttributesListDecorator
         return getExternallyManagedAttributes();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public List<Sql<DecoratedString>> getDynamicQueries()
