@@ -94,6 +94,9 @@ public class TableAttributesListDecorator
         throw new RuntimeException(INVALID_OPERATION);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public List<Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>>>
