@@ -367,8 +367,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
     }
 
     /**
-     * Retrieves the foreign keys.
-     * @return the foreign keys.
+     * {@inheritDoc}
      */
     @NotNull
     public List<ForeignKey<V>> getForeignKeys()
