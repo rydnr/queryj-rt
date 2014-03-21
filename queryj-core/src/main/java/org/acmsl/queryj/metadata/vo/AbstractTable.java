@@ -146,6 +146,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
             immutableSetStaticAttribute(staticAttribute);
         }
         immutableSetVoDecorated(voDecorated);
+        immutableSetRelationship(isRelationship);
     }
 
     /**
