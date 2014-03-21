@@ -173,7 +173,8 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
         @NotNull final List<ForeignKey<V>> foreignKeys,
         @Nullable final Table<V, A, L> parentTable,
         @Nullable final A staticAttribute,
-        final boolean voDecorated)
+        final boolean voDecorated,
+        final boolean isRelationship)
     {
         this(name, comment, parentTable, staticAttribute, voDecorated);
         immutableSetPrimaryKey(primaryKey);
