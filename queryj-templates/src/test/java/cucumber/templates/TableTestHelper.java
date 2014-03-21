@@ -161,6 +161,10 @@ public class TableTestHelper
      * A String literal: "source columns".
      */
     private static final String SOURCE_COLUMNS = "source columns";
+
+    /**
+     * A String literal:
+     */
     private static final String VALUE = "value";
     private static final String READONLY = "readonly";
     public static final String SYNTAX_ERROR_IN_STATIC_CONTENT = "Syntax error in static content ";
