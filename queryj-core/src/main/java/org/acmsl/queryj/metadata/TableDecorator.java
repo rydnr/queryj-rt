@@ -58,7 +58,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.List;
 
 /**
- * Decorates {@linkTable} instances to provide required alternate
+ * Decorates {@link Table} instances to provide required alternate
  * representations of the information stored therein.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  */
