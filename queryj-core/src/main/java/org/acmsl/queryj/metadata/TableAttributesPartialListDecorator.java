@@ -90,8 +90,17 @@ public class TableAttributesPartialListDecorator
      */
     public static enum Operation
     {
+        /**
+         * {@inheritDoc}
+         */
         PLUS,
+        /**
+         * {@inheritDoc}
+         */
         MINUS,
+        /**
+         * {@inheritDoc}
+         */
         ONLY
     }
 
