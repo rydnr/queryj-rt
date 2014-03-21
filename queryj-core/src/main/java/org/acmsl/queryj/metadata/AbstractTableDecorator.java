@@ -1066,7 +1066,7 @@ public abstract class AbstractTableDecorator
      * @return such information.
      */
     @Nullable
-    public String getParentTableName()
+    public DecoratedString getParentTableName()
     {
         @Nullable final Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>>
             t_Parent = getParentTable();
