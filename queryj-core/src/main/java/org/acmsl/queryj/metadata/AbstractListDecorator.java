@@ -203,6 +203,9 @@ public abstract class AbstractListDecorator<T>
         return getItems().removeAll(objects);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public T set(final int i, @Nullable final T item)
     {
