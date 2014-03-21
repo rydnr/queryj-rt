@@ -240,6 +240,9 @@ public abstract class AbstractListDecorator<T>
         return getItems().containsAll(objects);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean add(@NotNull final T item)
     {
