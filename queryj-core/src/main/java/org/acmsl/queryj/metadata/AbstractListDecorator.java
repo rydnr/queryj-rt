@@ -239,6 +239,10 @@ public abstract class AbstractListDecorator<T>
         return getItems().lastIndexOf(o);
     }
 
+    /**
+     * Returns the number of items.
+     * @return such count.
+     */
     @Override
     public int size()
     {
