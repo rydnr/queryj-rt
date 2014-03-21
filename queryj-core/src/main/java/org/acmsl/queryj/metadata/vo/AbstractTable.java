@@ -105,6 +105,10 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
      * Whether the value-object for the table is decorated.
      */
     private boolean m__bVoDecorated;
+
+    /**
+     * Whether the table represents a relationship.
+     */
     private boolean relationship;
 
     /**
