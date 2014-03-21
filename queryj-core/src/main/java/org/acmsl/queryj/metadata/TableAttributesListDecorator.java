@@ -74,8 +74,16 @@ import java.util.List;
 public class TableAttributesListDecorator
     extends AbstractTableAttributesListDecorator
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = -4692044880067201567L;
 
+    /**
+     * Creates a new instance.
+     * @param list the attributes.
+     * @param table the wrapped table.
+     */
     public TableAttributesListDecorator(
         @NotNull final List<Attribute<DecoratedString>> list,
         @NotNull final TableDecorator table)
