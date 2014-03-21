@@ -289,7 +289,7 @@ public class CheckResultSetGettersWorkForDefinedPropertiesHandler
         @NotNull final QueryJCommandWrapper<Map<Sql<?>, Boolean>> wrapper =
             new QueryJCommandWrapper<>(command);
 
-        @Nullable Map<Sql, Boolean> outcomes = wrapper.getSetting(VALIDATION);
+        @Nullable Map<Sql<?>, Boolean> outcomes = wrapper.getSetting(VALIDATION);
 
         if (outcomes == null)
         {
