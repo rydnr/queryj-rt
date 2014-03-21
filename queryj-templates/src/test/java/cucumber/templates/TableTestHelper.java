@@ -187,7 +187,9 @@ public class TableTestHelper
                     tableEntry.get(Literals.COMMENT),
                     tableEntry.get(PARENT_TABLE),
                     tableEntry.get(STATIC),
-                    isNullOrBlank(tableEntry.get(DECORATED)));
+                    isNullOrBlank(tableEntry.get(DECORATED)),
+                    isNo
+                );
         }
 
         return result;
