@@ -358,6 +358,9 @@ public abstract class AbstractTableAttributesListDecorator
         return getTable().compareTo(table);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public String toString()
