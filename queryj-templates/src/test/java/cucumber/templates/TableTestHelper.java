@@ -854,6 +854,10 @@ public class TableTestHelper
         extends AttributeIncompleteValueObject
     {
         /**
+         * Creates a new instance.
+         * @param staticAttribute the static attribute.
+         * @param tableName the table name.
+         */
         public _AttributeIncompleteValueObject(@NotNull final String staticAttribute, @NotNull final String tableName)
         {
             super(
