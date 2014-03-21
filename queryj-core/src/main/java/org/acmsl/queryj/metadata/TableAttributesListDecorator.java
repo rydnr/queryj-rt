@@ -248,6 +248,7 @@ public class TableAttributesListDecorator
         return getTable().isVoDecorated();
     }
 
+
     /**
      * {@inheritDoc}
      */
