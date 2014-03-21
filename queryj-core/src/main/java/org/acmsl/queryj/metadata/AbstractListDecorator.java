@@ -220,6 +220,11 @@ public abstract class AbstractListDecorator<T>
         return getItems().iterator();
     }
 
+    /**
+     * Retrieves the item at position
+     * @param i
+     * @return
+     */
     @Override
     @Nullable
     public T get(final int i)
