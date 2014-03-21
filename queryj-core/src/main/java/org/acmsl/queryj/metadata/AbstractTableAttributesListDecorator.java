@@ -358,10 +358,6 @@ public abstract class AbstractTableAttributesListDecorator
         return getTable().compareTo(table);
     }
 
-    /**
-     * Writes a textual representation of the instance.
-     * @return such text.
-     */
     @NotNull
     @Override
     public String toString()
