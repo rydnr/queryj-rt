@@ -964,6 +964,7 @@ public abstract class AbstractTemplatesTest<G, F>
         return result;
     }
 
+    @NotNull
     @Override
     public String toString()
     {
