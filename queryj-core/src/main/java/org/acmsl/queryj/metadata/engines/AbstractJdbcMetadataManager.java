@@ -755,7 +755,7 @@ public abstract class AbstractJdbcMetadataManager
                 && (t_Chronometer != null))
             {
                 @NotNull final String t_strMessage = "Finished database crawl: " + t_Chronometer.now();
-                t_Log.info("Finished database crawl: " + t_Chronometer.now());
+                t_Log.info(t_strMessage);
             }
         }
     }
