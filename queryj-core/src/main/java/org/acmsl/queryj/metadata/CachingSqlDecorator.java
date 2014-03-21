@@ -66,6 +66,9 @@ import org.checkthread.annotations.ThreadSafe;
 public class CachingSqlDecorator
     extends  AbstractSqlDecorator
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = 4468587636043277021L;
 
     /**
