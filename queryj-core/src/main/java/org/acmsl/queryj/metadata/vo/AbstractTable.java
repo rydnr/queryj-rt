@@ -169,6 +169,16 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
     }
 
     /**
+     * Specifies whether the table identifies a relationship.
+     * @param flag such condition.
+     */
+    @SuppressWarnings("unused")
+    protected void setRelationship(final boolean flag)
+    {
+        immutableSetRelationship(flag);
+    }
+
+    /**
      * Creates a new instance.
      * @param name the name.
      * @param comment the comment.
