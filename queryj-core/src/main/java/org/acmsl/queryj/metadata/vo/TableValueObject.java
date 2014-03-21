@@ -56,7 +56,9 @@ import java.util.List;
 public final class TableValueObject
     extends AbstractTable<String, Attribute<String>, List<Attribute<String>>>
 {
-
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = -1699360842530765122L;
 
     /**
