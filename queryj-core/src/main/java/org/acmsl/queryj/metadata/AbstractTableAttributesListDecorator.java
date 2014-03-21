@@ -223,6 +223,9 @@ public abstract class AbstractTableAttributesListDecorator
         throw new RuntimeException(INVALID_OPERATION);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public List<Result<DecoratedString>> getDifferentCustomResults()
