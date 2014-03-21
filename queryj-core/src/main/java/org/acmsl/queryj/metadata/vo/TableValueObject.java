@@ -79,7 +79,8 @@ public final class TableValueObject
         @NotNull final List<ForeignKey<String>> foreignKeys,
         @Nullable final Table<String, Attribute<String>, List<Attribute<String>>> parentTable,
         @Nullable final Attribute<String> staticAttribute,
-        final boolean voDecorated)
+        final boolean voDecorated,
+        final boolean isRelationship)
     {
         super(
             name,
