@@ -555,6 +555,9 @@ public class TableAttributesPartialListDecorator
         return getTable().isVoDecorated();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public int compareTo(
         @Nullable final Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>> table)
