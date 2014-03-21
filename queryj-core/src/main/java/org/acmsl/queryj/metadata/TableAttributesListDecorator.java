@@ -230,6 +230,9 @@ public class TableAttributesListDecorator
         return getTable().isStatic();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public Attribute<DecoratedString> getStaticAttribute()
     {
