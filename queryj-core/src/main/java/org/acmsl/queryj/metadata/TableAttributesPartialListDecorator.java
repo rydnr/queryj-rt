@@ -424,6 +424,9 @@ public class TableAttributesPartialListDecorator
         return getTable().getName();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Nullable
     @Override
     public DecoratedString getComment()
@@ -431,6 +434,9 @@ public class TableAttributesPartialListDecorator
         return getTable().getComment();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public ListDecorator<Attribute<DecoratedString>> getPrimaryKey()
