@@ -188,7 +188,7 @@ public class TableTestHelper
                     tableEntry.get(PARENT_TABLE),
                     tableEntry.get(STATIC),
                     isNullOrBlank(tableEntry.get(DECORATED)),
-                    isNo
+                    isNullOrBlank(tableEntry.get(RELATIOSHIP))
                 );
         }
 
