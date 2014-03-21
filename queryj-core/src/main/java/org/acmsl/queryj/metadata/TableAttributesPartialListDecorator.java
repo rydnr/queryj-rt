@@ -522,6 +522,9 @@ public class TableAttributesPartialListDecorator
         return result;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public List<ForeignKey<DecoratedString>> getForeignKeys()
