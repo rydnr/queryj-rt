@@ -169,8 +169,8 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
     }
 
     /**
-     * Specifies whether the table identifies a relationship.
-     * @param flag such condition.
+     * Retrieves whether the table identifies a relationship.
+     * @return such condition.
      */
     @SuppressWarnings("unused")
     public boolean istRelationship()
