@@ -290,7 +290,8 @@ public class TableTestHelper
         @Nullable final String comment,
         @SuppressWarnings("unused") @Nullable final String parentTable,
         @Nullable final String staticAttribute,
-        final boolean isDecorated)
+        final boolean isDecorated,
+        final boolean isRelationship)
     {
         return
             new TableValueObject(
