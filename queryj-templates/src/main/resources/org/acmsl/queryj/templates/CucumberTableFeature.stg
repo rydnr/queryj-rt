@@ -91,5 +91,5 @@ Feature: <table.name> code compiles
 
     Examples:
       | template | output |
-      | DAO | <engine.name.capitalized><table.name.singular.camelcase>.java |
+      | DAO | <engine.name.capitalized><table.name.singular.camelCase>.java |
 >>
