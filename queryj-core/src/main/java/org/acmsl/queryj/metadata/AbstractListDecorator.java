@@ -207,6 +207,10 @@ public abstract class AbstractListDecorator<T>
         return getItems().retainAll(objects);
     }
 
+    /**
+     * Checks whether the list is empty.
+     * @return such information.
+     */
     @Override
     public boolean isEmpty()
     {
