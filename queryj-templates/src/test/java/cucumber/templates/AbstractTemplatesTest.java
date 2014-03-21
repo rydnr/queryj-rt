@@ -978,7 +978,15 @@ public abstract class AbstractTemplatesTest<G, F>
 
         final int t_iPosition = aux.indexOf('(');
 
-        if (t_iPosition >
+        if (t_iPosition > -1)
+        {
+            result = aux.substring(0, t_iPosition);
+        }
+        else
+        {
+            result = aux;
+        }
+
         return result;
     }
 
