@@ -73,7 +73,11 @@ public abstract class AbstractTableAttributesListDecorator
     extends AbstractListDecorator<Attribute<DecoratedString>>
     implements TableDecorator
 {
+    /**
+     * The serial version id.
+     */
     public static final String INVALID_OPERATION = "Invalid operation";
+
     /**
      * The table decorator.
      */
