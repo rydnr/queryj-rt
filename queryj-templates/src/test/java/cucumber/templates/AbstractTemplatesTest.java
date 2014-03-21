@@ -965,6 +965,10 @@ public abstract class AbstractTemplatesTest<G, F>
     }
 
     /**
+     * Builds the template name.
+     * @param context the template context.
+     */
+    /**
      * {@inheritDoc}
      */
     @NotNull
