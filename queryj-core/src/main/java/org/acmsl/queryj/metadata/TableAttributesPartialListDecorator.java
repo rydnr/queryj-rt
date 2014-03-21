@@ -622,9 +622,7 @@ public class TableAttributesPartialListDecorator
     }
 
     /**
-     * Retrieves whether is a relationship table.
-     *
-     * @return such information.
+     * {@inheritDoc}
      */
     @Override
     public boolean isRelationship()
