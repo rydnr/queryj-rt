@@ -621,6 +621,7 @@ public class TableAttributesPartialListDecorator
         return getTable().isVoDecorated();
     }
 
+
     /**
      * {@inheritDoc}
      */
