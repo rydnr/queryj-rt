@@ -163,6 +163,7 @@ public abstract class AbstractTableDecorator
             table.getParentTable(),
             table.getStaticAttribute(),
             table.isVoDecorated(),
+            table.isRelationship(),
             metadataManager,
             decoratorFactory,
             customSqlProvider);
