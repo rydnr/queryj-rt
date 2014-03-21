@@ -84,6 +84,9 @@ public class TableAttributesListDecorator
     }
     // TableDecorator implementation
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public ListDecorator<Attribute<DecoratedString>> getReadOnlyAttributes()
