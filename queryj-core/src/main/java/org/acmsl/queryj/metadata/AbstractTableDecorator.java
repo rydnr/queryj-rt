@@ -192,6 +192,7 @@ public abstract class AbstractTableDecorator
         @Nullable final Table<String, Attribute<String>, List<Attribute<String>>> parentTable,
         @Nullable final Attribute<String> staticAttribute,
         final boolean voDecorated,
+        final boolean isRelationship,
         @NotNull final MetadataManager metadataManager,
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final CustomSqlProvider customSqlProvider)
