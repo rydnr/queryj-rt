@@ -348,7 +348,8 @@ public abstract class AbstractTableAttributesListDecorator
     }
 
     /**
-     * {@inheritDoc}
+     * Compares given instance with this one.
+     * @param table the table to compare with.
      */
     @Override
     public int compareTo(final Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>> table)
