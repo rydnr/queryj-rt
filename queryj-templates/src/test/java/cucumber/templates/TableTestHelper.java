@@ -146,8 +146,20 @@ public class TableTestHelper
      * A String literal: "allows null".
      */
     private static final String ALLOWS_NULL = "allows null";
+
+    /**
+     * A String literal: "source table".
+     */
     private static final String SOURCE_TABLE = "source table";
+
+    /**
+     * A String literal: "target table".
+     */
     private static final String TARGET_TABLE = "target table";
+
+    /**
+     * A String literal: "source columns".
+     */
     private static final String SOURCE_COLUMNS = "source columns";
     private static final String VALUE = "value";
     private static final String READONLY = "readonly";
