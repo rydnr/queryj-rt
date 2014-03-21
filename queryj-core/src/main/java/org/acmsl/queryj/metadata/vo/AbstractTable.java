@@ -155,35 +155,6 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
     }
 
     /**
-     * Specifies whether the table identifies a relationship.
-     * @param flag such condition.
-     */
-    protected final void immutableSetRelationship(final boolean flag)
-    {
-        this.m__bRelationship = flag;
-    }
-
-    /**
-     * Specifies whether the table identifies a relationship.
-     * @param flag such condition.
-     */
-    @SuppressWarnings("unused")
-    protected void setRelationship(final boolean flag)
-    {
-        immutableSetRelationship(flag);
-    }
-
-    /**
-     * Retrieves whether the table identifies a relationship.
-     * @return such condition.
-     */
-    @SuppressWarnings("unused")
-    public boolean istRelationship()
-    {
-        this.m__bRelationship;
-    }
-
-    /**
      * Creates a new instance.
      * @param name the name.
      * @param comment the comment.
