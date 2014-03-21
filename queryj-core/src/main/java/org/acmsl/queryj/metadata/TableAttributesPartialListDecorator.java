@@ -73,6 +73,9 @@ public class TableAttributesPartialListDecorator
     implements PartialListDecorator,
                TableDecorator
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = 3942968754043772227L;
 
     /**
