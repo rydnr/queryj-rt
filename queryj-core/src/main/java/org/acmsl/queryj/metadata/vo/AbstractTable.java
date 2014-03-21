@@ -149,6 +149,10 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
         immutableSetRelationship(isRelationship);
     }
 
+    private void immutableSetRelationship(final boolean relationship)
+    {
+    }
+
     /**
      * Creates a new instance.
      * @param name the name.
