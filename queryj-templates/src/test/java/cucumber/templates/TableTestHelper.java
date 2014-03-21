@@ -143,7 +143,7 @@ public class TableTestHelper
     private static final String QUERY = "query";
 
     /**
-     * A String literal:
+     * A String literal: "allows null".
      */
     private static final String ALLOWS_NULL = "allows null";
     private static final String SOURCE_TABLE = "source table";
