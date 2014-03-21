@@ -151,6 +151,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
 
     private void immutableSetRelationship(final boolean relationship)
     {
+        //To change body of created methods use File | Settings | File Templates.
     }
 
     /**
