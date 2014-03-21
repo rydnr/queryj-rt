@@ -214,8 +214,8 @@ public abstract class AbstractListDecorator<T>
     }
 
     /**
-     *
-     * @return
+     * Retrieves an {@link Iterator} to browse all items.
+     * @return such iterator.
      */
     @Override
     @NotNull
