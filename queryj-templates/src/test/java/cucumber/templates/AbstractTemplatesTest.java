@@ -972,7 +972,11 @@ public abstract class AbstractTemplatesTest<G, F>
      */
     protected String buildTemplateName(@NotNull final TemplateContext context)
     {
+        @NotNull final String result;
+
         @NotNull final String aux = context.getTemplateName();
+
+        return result;
     }
 
     /**
