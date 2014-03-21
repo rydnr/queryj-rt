@@ -248,6 +248,16 @@ public class TableAttributesListDecorator
         return getTable().isVoDecorated();
     }
 
+    /**
+     * Retrieves whether is a relationship table.
+     *
+     * @return such information.
+     */
+    @Override
+    public boolean isRelationship()
+    {
+        return false;  //To change body of implemented methods use File | Settings | File Templates.
+    }
 
     /**
      * {@inheritDoc}
