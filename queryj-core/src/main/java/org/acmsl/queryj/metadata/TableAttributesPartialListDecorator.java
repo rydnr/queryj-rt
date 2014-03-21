@@ -568,7 +568,7 @@ public class TableAttributesPartialListDecorator
     {
         return
               "{ \"class\": \"" + TableAttributesPartialListDecorator.class.getName() + '"'
-              + ", \"listDecorator\": " + m__ListDecorator
+              + ", \"package\": " + m__ListDecorator
             + ", \"listDecorator\": " + m__ListDecorator
             + ", \"table\": " + m__Table
             + ", \"operation\": " + m__Operation
