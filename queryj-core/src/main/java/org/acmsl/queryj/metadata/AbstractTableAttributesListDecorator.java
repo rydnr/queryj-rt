@@ -254,6 +254,9 @@ public abstract class AbstractTableAttributesListDecorator
         return getTable().getName();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Nullable
     @Override
     public DecoratedString getComment()
