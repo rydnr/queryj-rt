@@ -98,6 +98,9 @@ public abstract class AbstractListDecorator<T>
         immutableSetList(list);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public List<T> getItems()
