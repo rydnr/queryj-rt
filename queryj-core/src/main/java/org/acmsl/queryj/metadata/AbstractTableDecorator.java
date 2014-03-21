@@ -1065,6 +1065,7 @@ public abstract class AbstractTableDecorator
      * Retrieves the name of the parent table, or {@code null} if no parent exists.
      * @return such information.
      */
+    @SuppressWarnings("unused")
     @Nullable
     public DecoratedString getParentTableName()
     {
