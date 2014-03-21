@@ -248,6 +248,9 @@ public class TableAttributesListDecorator
         return getTable().isVoDecorated();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public int compareTo(final Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>> table)
     {
