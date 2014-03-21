@@ -233,6 +233,11 @@ public abstract class AbstractListDecorator<T>
         return getItems().contains(o);
     }
 
+    /**
+     * Fi
+     * @param o
+     * @return
+     */
     @Override
     public int lastIndexOf(@Nullable final Object o)
     {
