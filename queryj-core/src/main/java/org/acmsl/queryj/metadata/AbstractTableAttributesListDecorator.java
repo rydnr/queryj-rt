@@ -348,7 +348,7 @@ public abstract class AbstractTableAttributesListDecorator
     }
 
     /**
-     * Compares given instance with this one.
+     * Compares given instance with the one wrapped by this instance.
      * @param table the table to compare with.
      * @return the result of comparing given instance with the wrapped one.
      */
