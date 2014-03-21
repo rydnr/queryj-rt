@@ -366,7 +366,7 @@ public abstract class AbstractTableAttributesListDecorator
     {
         return
               "{ \"class\": " + AbstractTableAttributesListDecorator.class.getSimpleName() + '"'
-            + ", \"package\": \" + m__Table
+            + ", \"package\": \"org.acmsl.queryj.
             + ", \"table\": " + m__Table
             + " }";
     }
