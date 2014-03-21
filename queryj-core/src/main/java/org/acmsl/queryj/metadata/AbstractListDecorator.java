@@ -246,7 +246,8 @@ public abstract class AbstractListDecorator<T>
     }
 
     /**
-     * {@inheritDoc}
+     * Converts the items to an array.
+     * @return such items.
      */
     @NotNull
     @Override
