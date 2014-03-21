@@ -102,6 +102,9 @@ import java.util.Map;
  */
 public class TableTestHelper
 {
+    /**
+     * A String literal: "test comment".
+     */
     private static final String TEST_COMMENT = "test comment";
     private static final String COLUMN = "column";
     private static final String PARENT_TABLE = "parent table";
