@@ -638,7 +638,9 @@ public class TableAttributesPartialListDecorator
     }
 
     /**
-     * {@inheritDoc}
+     * Compares the wrapped table to given one.
+     * @param table the table to compare with.
+     * @return the result of comparing them.
      */
     @Override
     public int compareTo(
