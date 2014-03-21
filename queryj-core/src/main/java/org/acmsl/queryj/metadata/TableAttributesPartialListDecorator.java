@@ -440,6 +440,9 @@ public class TableAttributesPartialListDecorator
 
     @SuppressWarnings("unused")
     // TODO: remove me
+    /**
+     * {@inheritDoc}
+     */
     public ListDecorator<Attribute<DecoratedString>> getPrimaryKey1()
     {
         return getPrimaryKey();
