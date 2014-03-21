@@ -543,12 +543,18 @@ public class TableAttributesPartialListDecorator
         return getTable().isStatic();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public Attribute<DecoratedString> getStaticAttribute()
     {
         return getTable().getStaticAttribute();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean isVoDecorated()
     {
