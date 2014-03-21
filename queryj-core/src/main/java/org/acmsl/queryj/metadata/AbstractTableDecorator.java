@@ -1073,7 +1073,7 @@ public abstract class AbstractTableDecorator
 
         if (t_Parent != null)
         {
-            result = t_Parent.getName()
+            result = t_Parent.getName();
         }
 
     }
