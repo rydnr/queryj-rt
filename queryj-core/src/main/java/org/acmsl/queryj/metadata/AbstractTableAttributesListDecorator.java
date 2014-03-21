@@ -149,6 +149,9 @@ public abstract class AbstractTableAttributesListDecorator
                 this, getTable(), Operation.MINUS);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public PartialListDecorator getOnly()
