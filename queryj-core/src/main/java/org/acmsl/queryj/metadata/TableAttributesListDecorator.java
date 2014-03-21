@@ -200,6 +200,9 @@ public class TableAttributesListDecorator
         return getPrimaryKey();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public List<ForeignKey<DecoratedString>> getForeignKeys()
