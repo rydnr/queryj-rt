@@ -135,7 +135,8 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
         @Nullable final V comment,
         @Nullable final Table<V, A, L> parentTable,
         @Nullable final A staticAttribute,
-        final boolean voDecorated)
+        final boolean voDecorated,
+        final boolean isRelationship)
     {
         immutableSetName(name);
         immutableSetComment(comment);
