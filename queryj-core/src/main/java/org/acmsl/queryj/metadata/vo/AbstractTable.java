@@ -485,6 +485,10 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
         return this.m__bRelationship;
     }
 
+    /**
+     * {@inheritDoc}
+     * @return
+     */
     @Override
     public int hashCode()
     {
