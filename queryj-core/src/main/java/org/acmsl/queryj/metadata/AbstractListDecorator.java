@@ -252,6 +252,7 @@ public abstract class AbstractListDecorator<T>
         return getItems().toArray();
     }
 
+    @NotNull
     @Override
     public String toString()
     {
