@@ -109,7 +109,8 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
     /**
      * Whether the table represents a relationship.
      */
-    private boolean relationship;
+    private boolean m__bRelationship
+    \elationship;
 
     /**
      * Creates an <code>AbstractTable</code> with the following
