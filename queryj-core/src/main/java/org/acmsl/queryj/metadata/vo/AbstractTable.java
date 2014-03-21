@@ -487,7 +487,6 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
 
     /**
      * {@inheritDoc}
-     * @return
      */
     @Override
     public int hashCode()
