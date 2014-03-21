@@ -239,6 +239,9 @@ public class TableAttributesListDecorator
         return getTable().getStaticAttribute();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean isVoDecorated()
     {
