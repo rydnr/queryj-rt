@@ -119,6 +119,9 @@ public abstract class AbstractListDecorator<T>
         return getItems().subList(i, i2);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean addAll(@NotNull final Collection<? extends T> attributes)
     {
