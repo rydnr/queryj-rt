@@ -107,6 +107,7 @@ public class TableTestHelper
     private static final String PARENT_TABLE = "parent table";
     private static final String STATIC = "static";
     private static final String DECORATED = "decorated";
+    private static final String DECORATED = "decorated";
     private static final String PRECISION = "precision";
     private static final String QUERY = "query";
     private static final String ALLOWS_NULL = "allows null";
