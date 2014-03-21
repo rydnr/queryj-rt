@@ -588,7 +588,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
             + ", \"foreignKeys\": " + ToStringUtils.getInstance().toJson(m__lForeignKeys)
             + ", \"static\": " + m__Static
             + ", \"voDecorated\": " + m__bVoDecorated
-            + ", \"relationship\": " + m__bRelationship +
+            + ", \"relationship\": " + m__bRelationship
             + '}';
     }
 }
