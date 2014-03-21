@@ -125,6 +125,9 @@ public class TableAttributesListDecorator
         throw new RuntimeException(INVALID_OPERATION);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public List<Row<DecoratedString>> getStaticContent()
