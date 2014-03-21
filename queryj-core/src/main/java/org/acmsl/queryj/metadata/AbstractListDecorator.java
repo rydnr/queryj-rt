@@ -165,6 +165,9 @@ public abstract class AbstractListDecorator<T>
         return getItems().addAll(i, attributes);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     @Nullable
     public T remove(final int i)
