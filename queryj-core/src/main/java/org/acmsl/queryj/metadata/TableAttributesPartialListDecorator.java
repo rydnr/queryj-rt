@@ -227,7 +227,8 @@ public class TableAttributesPartialListDecorator
     }
 
     /**
-     * {@inheritDoc}
+     * Applies the "plus" operation to the items.
+     * @return the partial result.
      */
     @NotNull
     public PartialListDecorator plus()
