@@ -579,7 +579,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
     {
         return
               "{ \"class\": \"" + AbstractTable.class.getSimpleName()
-            + "{ \"class\": \"" + AbstractTable.class.getSimpleName()
+            + "{ \"package\": \"" + AbstractTable.class.getSimpleName()
             + ", \"name\": \"" + m__Name + '"'
             + ", \"comment\": \"" + m__Comment + '"'
             + ", \"parentTable\": " + m__ParentTable
