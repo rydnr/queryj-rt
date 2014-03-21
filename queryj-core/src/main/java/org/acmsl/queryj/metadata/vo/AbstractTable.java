@@ -483,8 +483,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
     }
 
     /**
-     * Retrieves whether the table identifies a relationship.
-     * @return such condition.
+     * {@inheritDoc}
      */
     @Override
     public boolean isRelationship()
