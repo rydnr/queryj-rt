@@ -853,6 +853,7 @@ public class TableTestHelper
     protected static class _AttributeIncompleteValueObject
         extends AttributeIncompleteValueObject
     {
+        /**
         public _AttributeIncompleteValueObject(@NotNull final String staticAttribute, @NotNull final String tableName)
         {
             super(
