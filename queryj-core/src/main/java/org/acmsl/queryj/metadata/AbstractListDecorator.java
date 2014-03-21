@@ -234,7 +234,7 @@ public abstract class AbstractListDecorator<T>
     }
 
     /**
-     * Fi
+     * Finds the position of given item
      * @param o
      * @return
      */
