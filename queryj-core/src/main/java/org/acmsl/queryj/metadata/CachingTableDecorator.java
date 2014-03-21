@@ -1030,7 +1030,7 @@ public class CachingTableDecorator
     {
         return
               "{ \"class\": \"" + CachingTableDecorator.class.getSimpleName() + "\""
-            + "{ \"package\": \"" + CachingTableDecorator.class.getSimpleName() + "\""
+            + "{ \"package\": \"org.acmsl.queryj.\""
             + ", \"parentForeignKeyAlreadyRetrieved\": " + m__bParentForeignKeyAlreadyRetrieved
             + ", \"cachedPrimaryKey\": " + ToStringUtils.getInstance().toJson(m__lCachedPrimaryKey)
             + ", \"cachedReadOnlyAttributes\": " + ToStringUtils.getInstance().toJson(m__lCachedReadOnlyAttributes)
