@@ -966,7 +966,6 @@ public abstract class AbstractTemplatesTest<G, F>
 
     /**
      * {@inheritDoc}
-     * @return
      */
     @NotNull
     @Override
