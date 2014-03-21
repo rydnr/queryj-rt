@@ -972,7 +972,7 @@ public abstract class AbstractTemplatesTest<G, F>
      */
     protected String buildTemplateName(@NotNull final TemplateContext context)
     {
-
+        return
     }
 
     /**
