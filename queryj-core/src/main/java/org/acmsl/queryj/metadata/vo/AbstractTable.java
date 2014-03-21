@@ -450,10 +450,8 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
     }
 
     /**
-     * Retrieves whether the value-object for the table is decorated.
-     * @return such information.
+     * {@inheritDoc}
      */
-    @SuppressWarnings("unused")
     @Override
     public boolean isVoDecorated()
     {
