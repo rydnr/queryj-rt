@@ -256,7 +256,7 @@ public class TableAttributesListDecorator
     @Override
     public boolean isRelationship()
     {
-        return false;  //To change body of implemented methods use File | Settings | File Templates.
+        return getTable().isRelationship();
     }
 
     /**
