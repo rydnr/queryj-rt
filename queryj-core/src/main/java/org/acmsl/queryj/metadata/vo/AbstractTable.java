@@ -419,8 +419,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
     }
 
     /**
-     * Retrieves whether the table is static or not.
-     * @return <tt>true</tt> in such case.
+     * {@inheritDoc}
      */
     @SuppressWarnings("unused")
     @Override
