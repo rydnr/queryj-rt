@@ -128,6 +128,9 @@ public abstract class AbstractListDecorator<T>
         return getItems().addAll(attributes);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public <T> T[] toArray(@NotNull final T[] ts)
@@ -135,6 +138,9 @@ public abstract class AbstractListDecorator<T>
         return getItems().toArray(ts);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void clear()
     {
