@@ -1062,8 +1062,15 @@ public abstract class AbstractTableDecorator
     }
 
     /**
-     * Retrieves the name of the parent table, or {@code null} if no parent
+     * Retrieves the name of the parent table, or {@code null} if no parent exists.
+     * @return such information.
      */
+    @Nullable
+    public String getParentTableName()
+    {
+        @Nullable final t_Parent = getParentTable();
+
+    }
     /**
      * Removes the duplicated attributes from <code>secondAttributes</code>.
      * @param firstAttributes the child attributes.
