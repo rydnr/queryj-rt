@@ -304,7 +304,8 @@ public class TableTestHelper
                 // and the table collection.
                 null, //parentTable,
                 staticAttribute != null ? new _AttributeIncompleteValueObject(staticAttribute, tableName) : null,
-                isDecorated);
+                isDecorated,
+                isRelationship);
     }
 
     /**
