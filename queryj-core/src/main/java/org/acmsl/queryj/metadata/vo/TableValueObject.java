@@ -90,7 +90,8 @@ public final class TableValueObject
             foreignKeys,
             parentTable,
             staticAttribute,
-            voDecorated);
+            voDecorated,
+            isRelationship);
     }
 }
 
