@@ -249,6 +249,9 @@ public abstract class AbstractListDecorator<T>
         return getItems().add(item);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean retainAll(@NotNull final Collection<?> objects)
     {
