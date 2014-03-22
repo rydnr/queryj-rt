@@ -33,7 +33,7 @@ Feature: G_CYCLE_TYPES code compiles
       |    table     |         row          |
       | G_CYCLE_TYPES | 1,29,"Primisistema100",4,2,4,179,"primisitema100.sellenddate.hours.offset",179,"primisistema100.sellenddate.bo.hours.offset",10,"primisistema100.interruptiondate.bo.hours.offset" |
 
-    When I generate with DAO.stg for Oracle
+    When I generate with per-table DAO.stg for Oracle
 
     Then the generated <output> file compiles successfully
 
