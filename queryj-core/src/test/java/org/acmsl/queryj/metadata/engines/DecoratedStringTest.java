@@ -68,7 +68,7 @@ public class DecoratedStringTest
     }
 
     @Test
-    public void capitalize_works_for_upper_cased_strings()
+    public void capitalize_works_for_mixed_cased_strings()
     {
         @NotNull final DecoratedString instance = new DecoratedString("G_CYCLE_TYPES");
 
