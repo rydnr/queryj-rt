@@ -131,7 +131,8 @@ public class DAOImplementationClassNameHandler
         @NotNull final EnglishGrammarUtils englishGrammarUtils,
         @NotNull final StringUtils stringUtils)
     {
-        @NotNull final String t_strCapitalizedEngine = stringUtils.capitalize(metadataManager.getEngine().getName());
+        @NotNull final String t_strCapitalizedEngine =
+            stringUtils.capitalize(metadataManager.getEngine().getName());
 
         @NotNull final String t_strSingularName =
             stringUtils.capitalize(
