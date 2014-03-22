@@ -39,7 +39,7 @@ Feature: G_CYCLE_TYPES code compiles
 
     Then the queries are validated correctly using the following database:
       |     driver     |     url     |     userName     |     password     |
-      |  |  |  |  |
+      | oracle.jdbc.driver.OracleDriver | jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.34.10.249)(PORT=1521))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME=PRE2))) | QUERYJGAMES | QUERYJGAMES |
 
     Examples:
       | template           | output                            |
