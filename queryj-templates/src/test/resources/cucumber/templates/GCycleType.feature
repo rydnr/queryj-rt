@@ -23,7 +23,7 @@ Feature: G_CYCLE_TYPES code compiles
 
     And the following queries:
       |       id      |     name      |     dao      |  type  | matches  |                        value                           | validate |
-      | cycle.types.find-cycle-type-by-product-type | find-cycle-type-by-product-type | g_cycle_types | select |  |     select * from   g_cycle_types ct where   ct.g_product_type_id = ?       | true |
+      | cycle.types.find-cycle-type-by-product-type | find-cycle-type-by-product-type | g_cycle_types | select | single |     select * from   g_cycle_types ct where   ct.g_product_type_id = ?       | true |
 
     And the following query parameters:
       |            id            |     sql       | index |  type  |     name    | validation-value |
