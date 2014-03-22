@@ -412,7 +412,7 @@ public class BindQueryParametersHandler
         @Nullable T result;
 
         if  (   ("Date".equals(type))
-                && (parameter.getValidationValue() != null))
+             && (parameter.getValidationValue() != null))
         {
             result = (T) new java.sql.Date(new Date().getTime());
         }
