@@ -132,7 +132,7 @@ public class DAOImplementationClassNameHandler
         @NotNull final StringUtils stringUtils)
     {
         @NotNull final String t_strCapitalizedEngine =
-            stringUtils.capitalize(metadataManager.getEngine().getName(), QueryJSettings);
+            stringUtils.capitalize(metadataManager.getEngine().getName(), QueryJSettings.DEFAULT_LOCALE);
 
         @NotNull final String t_strSingularName =
             stringUtils.capitalize(
