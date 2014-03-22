@@ -85,7 +85,7 @@ Feature: <table.name> code compiles
 <endif>
 <endif>
 
-    When I generate with \<template>.stg for <engine.name>
+    When I generate with \<template> for <engine.name>
 
     Then the generated \<output> file compiles successfully
 
