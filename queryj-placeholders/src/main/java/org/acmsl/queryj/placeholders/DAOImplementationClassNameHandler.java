@@ -136,7 +136,8 @@ public class DAOImplementationClassNameHandler
         @NotNull final String t_strSingularName =
             stringUtils.capitalize(
                 englishGrammarUtils.getSingular(
-                    tableName.toLowerCase(QueryJSettings.DEFAULT_LOCALE)));
+                    tableName.toLowerCase(QueryJSettings.DEFAULT_LOCALE)),
+                QueryJSettings.DEFAULT_LOCALE);
 
         return
             defaultThemeUtils.buildDAOImplementationClassName(
