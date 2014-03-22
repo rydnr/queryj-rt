@@ -3,3 +3,6 @@
 ** TODO Review generated DAO: 1 ->
 ** TODO Add BaseDAO: 1 ->
 ** TODO Fix BaseDAO: 1 ->
+
+** Pending:
+*** Move TableTestHelper out of QueryJ Templates
