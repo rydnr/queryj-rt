@@ -135,7 +135,7 @@ public class DAOFactoryClassNameHandler
             stringUtils.capitalize(
                 englishGrammarUtils.getSingular(
                     tableName.toLowerCase(QueryJSettings.DEFAULT_LOCALE)),
-                    QueryJSettings.DEFAULT_LOCALE);
+                QueryJSettings.DEFAULT_LOCALE);
 
         return
             defaultThemeUtils.buildDAOFactoryClassName(t_strSingularName);
