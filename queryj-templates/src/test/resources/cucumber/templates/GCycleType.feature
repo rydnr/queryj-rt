@@ -43,4 +43,5 @@ Feature: G_CYCLE_TYPES code compiles
 
     Examples:
       | template           | output                            |
+      | CucumberTableFeature | .feature |
 
