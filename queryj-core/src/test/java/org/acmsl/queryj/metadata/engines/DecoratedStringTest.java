@@ -70,7 +70,7 @@ public class DecoratedStringTest
     @Test
     public void capitalize_works_for_mixed_cased_strings()
     {
-        @NotNull final DecoratedString instance = new DecoratedString("GCycleTypes_CYCLE_TYPES");
+        @NotNull final DecoratedString instance = new DecoratedString("GCycleTypes");
 
         Assert.assertEquals("GCycleTypes", instance.getCapitalized().getValue());
     }
