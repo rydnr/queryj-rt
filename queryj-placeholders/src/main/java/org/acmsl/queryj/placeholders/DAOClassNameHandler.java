@@ -130,7 +130,6 @@ public class DAOClassNameHandler
                     tableName.toLowerCase(QueryJSettings.DEFAULT_LOCALE)),
                 QueryJSettings.DEFAULT_LOCALE);
 
-        return
-            defaultThemeUtils.buildDAOClassName(t_strSingularName);
+        return defaultThemeUtils.buildDAOClassName(t_strSingularName);
     }
 }
