@@ -386,7 +386,7 @@ public class PerTableTemplatesTest
      * @param outputName the name of the output file.
      */
     @SuppressWarnings("unused")
-    @Then("^the generated per-table (.*) file compiles successfully")
+    @Then("^the generated (.*) file compiles successfully")
     public void checkGeneratedFileCompiles(@NotNull final String outputName)
     {
         checkGeneratedFilesCompile(outputName, getOutputFiles());
