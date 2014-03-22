@@ -580,7 +580,6 @@ public class TableTestHelper
             @NotNull final String dao = sqlRow.get("dao");
             @NotNull final String type = sqlRow.get("type");
             @Nullable final String matches = sqlRow.get("matches");
-
             @NotNull final String validate = sqlRow.get("validate");
             @NotNull final Cardinality cardinality = Cardinality.fromString(matches.toLowerCase(Locale.US));
             @NotNull final String value = sqlRow.get(VALUE);
