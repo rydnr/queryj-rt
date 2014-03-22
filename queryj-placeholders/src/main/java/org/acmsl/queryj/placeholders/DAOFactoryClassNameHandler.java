@@ -137,7 +137,6 @@ public class DAOFactoryClassNameHandler
                     tableName.toLowerCase(QueryJSettings.DEFAULT_LOCALE)),
                 QueryJSettings.DEFAULT_LOCALE);
 
-        return
-            defaultThemeUtils.buildDAOFactoryClassName(t_strSingularName);
+        return defaultThemeUtils.buildDAOFactoryClassName(t_strSingularName);
     }
 }
