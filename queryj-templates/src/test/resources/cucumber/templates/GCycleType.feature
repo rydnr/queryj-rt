@@ -35,7 +35,7 @@ Feature: G_CYCLE_TYPES code compiles
 
     When I generate with per-table DAO.stg for Oracle
 
-    Then the generated <output> file compiles successfully
+    Then the generated per-table <output> file compiles successfully
 
     Then the queries are validated correctly using the following database:
       |     driver     |     url     |     userName     |     password     |
