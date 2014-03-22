@@ -64,6 +64,6 @@ public class DecoratedStringTest
     {
         @NotNull final DecoratedString instance = new DecoratedString("G_CYCLE_TYPES");
 
-        Assert.assertEquals("GCycleTypes", instance.getCapitalized());
+        Assert.assertEquals("GCycleTypes", instance.getCapitalized().getValue());
     }
 }
