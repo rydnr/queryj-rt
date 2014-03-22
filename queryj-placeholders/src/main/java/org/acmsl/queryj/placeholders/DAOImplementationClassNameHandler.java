@@ -68,6 +68,9 @@ import org.checkthread.annotations.ThreadSafe;
 public class DAOImplementationClassNameHandler
     extends AbstractDecoratedStringHandler<PerTableTemplateContext>
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = 5319051009737434878L;
 
     /**
