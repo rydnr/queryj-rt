@@ -66,4 +66,12 @@ public class DecoratedStringTest
 
         Assert.assertEquals("GCycleTypes", instance.getCapitalized().getValue());
     }
+
+    @Test
+    public void capitalize_works_for_upper_cased_strings()
+    {
+        @NotNull final DecoratedString instance = new DecoratedString("G_CYCLE_TYPES");
+
+        Assert.assertEquals("GCycleTypes", instance.getCapitalized().getValue());
+    }
 }
