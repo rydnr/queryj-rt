@@ -371,7 +371,7 @@ public class CustomResultUtils
     @Nullable
     protected <T> String retrieveTable(@NotNull final Sql<T> sql, @NotNull final TableDAO tableDAO)
     {
-        @Nullable String result;
+        @Nullable String result = null;
         @Nullable final T t_strDao = sql.getDao();
 
         if (t_strDao != null)
