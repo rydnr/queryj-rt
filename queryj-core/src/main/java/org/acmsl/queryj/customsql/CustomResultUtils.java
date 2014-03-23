@@ -393,7 +393,6 @@ public class CustomResultUtils
                     break;
                 }
             }
-            result = null;
         }
 
         return result;
