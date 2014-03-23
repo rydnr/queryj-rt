@@ -188,7 +188,7 @@ public abstract class AbstractFillTemplateChain<C extends TemplateContext>
     @SuppressWarnings("unchecked")
     protected <F extends FillHandler<P>, P> void add(
         @NotNull final Chain<QueryJCommand, QueryJBuildException, F> chain,
-        @NotNull final FillAdapterHandler<F, P> handler,
+        @NotNull final FillAdapterHandler handler,
         final boolean relevantOnly)
     {
         final F actualHandler;
