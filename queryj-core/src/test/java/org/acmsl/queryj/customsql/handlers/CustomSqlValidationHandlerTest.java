@@ -103,6 +103,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
+import java.sql.Types;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
@@ -152,6 +153,7 @@ public class CustomSqlValidationHandlerTest
                 Arrays.asList(
                     new AttributeIncompleteValueObject(
                         "name",
+                        Types.BIGINT,
 
 
         {
