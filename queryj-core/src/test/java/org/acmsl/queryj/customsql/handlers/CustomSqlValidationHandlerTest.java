@@ -154,7 +154,7 @@ public class CustomSqlValidationHandlerTest
                     new AttributeIncompleteValueObject(
                         "name",
                         Types.BIGINT,
-
+                        "long"
 
         {
         });
