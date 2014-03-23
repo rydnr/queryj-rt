@@ -161,9 +161,7 @@ public abstract class AbstractFillTemplateChain<C extends TemplateContext>
     }
 
     /**
-     * Retrieves the handlers.
-     *
-     * @return such handlers.
+     * {@inheritDoc}
      */
     @NotNull
     @Override
