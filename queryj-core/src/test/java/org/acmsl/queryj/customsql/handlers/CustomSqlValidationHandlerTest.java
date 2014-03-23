@@ -156,6 +156,7 @@ public class CustomSqlValidationHandlerTest
                         Types.BIGINT,
                         "long",
                         sql.getDao(),
+                        "comment",
 
 
         {
