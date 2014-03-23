@@ -1,5 +1,5 @@
 /*
-                        queryj
+                        QueryJ Core
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -62,9 +62,8 @@ public class DecoratedStringTest
     @Test
     public void capitalize_works_for_upper_cased_strings()
     {
-        @NotNull final DecoratedString instance = new DecoratedString("G_CYCLE_TYPES");
-
-        Assert.assertEquals("GCycleTypes", instance.getCapitalized().getValue());
+        Assert.assertEquals("GCycleTypes", new DecoratedString("G_CYCLE_TYPES").getCapitalized().getValue());
+        Assert.assertEquals("NAME", new DecoratedString("NAME").getCapitalized().getValue());
     }
 
     @Test
