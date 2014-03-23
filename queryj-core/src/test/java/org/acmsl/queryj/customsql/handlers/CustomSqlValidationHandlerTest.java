@@ -123,7 +123,7 @@ public class CustomSqlValidationHandlerTest
         throws Exception
     {
         @NotNull final CustomSqlProvider t_CustomSqlProvider = PowerMock.createNiceMock(CustomSqlProvider.class);
-        @NotNull final TableDAO t_TableDAO = PowerMock.createNiceMock()
+        @NotNull final TableDAO t_TableDAO = PowerMock.createNiceMock(TableDAO.class);
         @NotNull final SqlParameterDAO t_SqlParameterDAO = PowerMock.createNiceMock(SqlParameterDAO.class);
         @NotNull final MetadataManager t_MetadataManager = PowerMock.createNiceMock(MetadataManager.class);
         @NotNull final TypeManager t_TypeManager = new JdbcTypeManager();
