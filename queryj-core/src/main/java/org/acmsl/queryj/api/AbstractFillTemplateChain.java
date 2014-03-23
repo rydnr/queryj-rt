@@ -200,7 +200,7 @@ public abstract class AbstractFillTemplateChain<C extends TemplateContext>
         }
         else
         {
-            actualHandler = (F) handler;
+            actualHandler = handler;
         }
 
         chain.add(actualHandler);
