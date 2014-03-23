@@ -180,6 +180,7 @@ public class CustomSqlValidationHandlerTest
             EasyMock.verify(t_CustomSqlProvider);
             EasyMock.verify(t_SqlParameterDAO);
             EasyMock.verify(t_MetadataManager);
+            EasyMock.verify(t_TableDAO);
         }
     }
 
