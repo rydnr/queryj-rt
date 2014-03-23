@@ -35,6 +35,7 @@ package org.acmsl.queryj.customsql;
 /*
  * Importing some project-specific classes.
  */
+import org.acmsl.queryj.QueryJSettings;
 import org.acmsl.queryj.metadata.CachingResultDecorator;
 import org.acmsl.queryj.metadata.DecorationUtils;
 import org.acmsl.queryj.metadata.DecoratorFactory;
@@ -367,7 +368,7 @@ public class CustomResultUtils
 
             if  (t_Table == null)
             {
-                t_Table = metadataManager.getTableDAO().findByDAO("" + t_strDao);
+                t_Table = metadataManager.getTableDAO().findByDAO(("" + t_strDao).toLowerCase(QueryJSettings.DEFAULT_LOCALE));
             }
             if  (t_Table != null)
             {
