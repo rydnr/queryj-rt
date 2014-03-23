@@ -1,5 +1,5 @@
 /*
-                        QueryJ Templates Packaging
+                        QueryJ Template Packaging
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -94,7 +94,6 @@ public class TemplatePackagingChain<CH extends QueryJCommandHandler<QueryJComman
      * Builds the chain.
      * @param chain the chain to be configured.
      * @return the updated chain.
-     * @throws QueryJBuildException if the chain cannot be built successfully.
      */
     @SuppressWarnings("unchecked")
     @NotNull

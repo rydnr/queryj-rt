@@ -91,7 +91,6 @@ public class TemplatePackagingParameterValidationHandler
      * Handles given command.
      * @param command the command to handle.
      * @return <code>true</code> if the chain should be stopped.
-     * @throws QueryJBuildException if the build process cannot be performed.
      */
     public boolean handle(@NotNull final QueryJCommand command)
         throws QueryJBuildException
