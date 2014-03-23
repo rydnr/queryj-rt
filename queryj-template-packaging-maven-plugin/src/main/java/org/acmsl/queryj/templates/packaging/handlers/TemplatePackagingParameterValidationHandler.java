@@ -89,8 +89,8 @@ public class TemplatePackagingParameterValidationHandler
 
     /**
      * Handles given command.
+     * @throws org.acmsl.queryj.api.exceptions.QueryJBuildException if the build process cannot be performed.
      * @param command the command to handle.
-     * @exception  org.acmsl.queryj.api.exceptions.QueryJBuildException if the build process cannot be performed.
      * @return <code>true</code> if the chain should be stopped.
      */
     public boolean handle(@NotNull final QueryJCommand command)
