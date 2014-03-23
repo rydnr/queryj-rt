@@ -161,10 +161,7 @@ public class CustomSqlValidationHandlerTest
                         1,
                         1,
                         false,
-                        null)))
-
-        {
-        });
+                        null)));
         EasyMock.expect(t_CustomSqlProvider.getSqlParameterDAO()).andReturn(t_SqlParameterDAO);
         EasyMock.expect(t_CustomSqlProvider.getHash(sql, Charset.defaultCharset().displayName()))
             .andReturn("").anyTimes();
