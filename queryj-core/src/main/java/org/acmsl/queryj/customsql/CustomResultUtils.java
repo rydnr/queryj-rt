@@ -358,7 +358,9 @@ public class CustomResultUtils
         @NotNull final Sql<T> sql,
         @NotNull final MetadataManager metadataManager)
     {
+        return retrieveTable(sql, metadataManager.getTableDAO());
     }
+
     /**
      * Retrieves the table associated to the {@link Sql}.
      * @param sql the {@link Sql}.
