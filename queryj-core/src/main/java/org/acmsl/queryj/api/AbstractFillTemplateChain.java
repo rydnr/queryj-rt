@@ -196,7 +196,7 @@ public abstract class AbstractFillTemplateChain<C extends TemplateContext>
         if (   (relevantOnly)
             && (handler.getFillHandler() instanceof NonRelevantFillHandler))
         {
-            actualHandler = (F) new EmptyFillAdapterHandler<>(handler.getFillHandler());
+            actualHandler = new EmptyFillAdapterHandler(handler.getFillHandler());
         }
         else
         {
