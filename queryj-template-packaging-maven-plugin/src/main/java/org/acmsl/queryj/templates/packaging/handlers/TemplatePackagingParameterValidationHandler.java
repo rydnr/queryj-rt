@@ -104,7 +104,6 @@ public class TemplatePackagingParameterValidationHandler
     /**
      * Validates the parameters.
      * @param sources the source folders.
-     * @throws whenever the required parameters are not present or valid.
      */
     protected void validateParameters(@Nullable final List<File> sources)
         throws  QueryJBuildException
