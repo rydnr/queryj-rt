@@ -392,10 +392,7 @@ public class CustomResultUtils
                     result = t_Table.getName();
                     break;
                 }
-                else
-                {
-                    result = null;
-                }
+                result = null;
             }
         }
         else
