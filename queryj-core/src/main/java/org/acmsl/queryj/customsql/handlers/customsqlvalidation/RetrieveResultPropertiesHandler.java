@@ -151,16 +151,15 @@ public class RetrieveResultPropertiesHandler
 
         @Nullable final ResultRef t_ResultRef = t_Sql.getResultRef();
 
-            @NotNull final List<Property<String>> t_lProperties =
-                retrieveProperties(
-                    t_Sql,
-                    (t_ResultRef != null) ? t_CustomSqlProvider.getSqlResultDAO().findByPrimaryKey(t_ResultRef.getId()) : null,
-                    t_CustomSqlProvider,
-                    t_MetadataManager,
-                    new JdbcTypeManager());
+        @NotNull final List<Property<String>> t_lProperties =
+            retrieveProperties(
+                t_Sql,
+                (t_ResultRef != null) ? t_CustomSqlProvider.getSqlResultDAO().findByPrimaryKey(t_ResultRef.getId()) : null,
+                t_CustomSqlProvider,
+                t_MetadataManager,
+                new JdbcTypeManager());
 
-            setCurrentProperties(t_lProperties, command);
-        }
+        setCurrentProperties(t_lProperties, command);
 
         return false;
     }
