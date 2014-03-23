@@ -148,10 +148,10 @@ public abstract class AbstractFillTemplateChain<C extends TemplateContext>
     protected Chain<QueryJCommand, QueryJBuildException, FillHandler<?>> buildChain(
         @NotNull final Chain<QueryJCommand, QueryJBuildException, FillHandler<?>> chain, final boolean relevantOnly)
     {
-        @NotNull final List<FillAdapterHandler<?, ?>> t_lHandlers = (List<FillAdapterHandler<?, ?>>) getHandlers();
+        @NotNull final List<FillAdapterHandler> t_lHandlers = (List<FillAdapterHandler<?, ?>>) getHandlers();
 
         // Don't know how to fix the generics warnings
-        for (@NotNull final FillAdapterHandler<?, ?> t_Handler : t_lHandlers)
+        for (@NotNull final FillAdapterHandler t_Handler : t_lHandlers)
         {
             add(chain, t_Handler, relevantOnly);
         }
