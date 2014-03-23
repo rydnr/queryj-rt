@@ -358,6 +358,18 @@ public class CustomResultUtils
         @NotNull final Sql<T> sql,
         @NotNull final MetadataManager metadataManager)
     {
+    }
+    /**
+     * Retrieves the table associated to the {@link Sql}.
+     * @param sql the {@link Sql}.
+     * @param metadataManager the database metadata manager.
+     * @return the table name.
+     */
+    @Nullable
+    public <T> String retrieveTable(
+        @NotNull final Sql<T> sql,
+        @NotNull final MetadataManager metadataManager)
+    {
         @Nullable final String result;
         @Nullable final T t_strDao = sql.getDao();
 
