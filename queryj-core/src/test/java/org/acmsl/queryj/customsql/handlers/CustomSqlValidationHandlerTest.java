@@ -151,7 +151,7 @@ public class CustomSqlValidationHandlerTest
         EasyMock.expect(t_ColumnDAO.findAllColumns(sql.getDao()))
             .andReturn(
                 Arrays.asList(
-                    new AttributeIncompleteValueObject<String>(
+                    new AttributeIncompleteValueObject(
                         "fake_id",
                         Types.BIGINT,
                         "long",
