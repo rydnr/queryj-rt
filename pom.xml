@@ -22,6 +22,10 @@
     <url>http://www.acm-sl.org</url>
   </organization>
 
+  <prerequisites>
+    <maven>2.2.1</maven>
+  </prerequisites>
+
   <properties>
     <version.queryj>3.0-SNAPSHOT</version.queryj>
     <!-- to ensure encoding is not platform-dependent -->
