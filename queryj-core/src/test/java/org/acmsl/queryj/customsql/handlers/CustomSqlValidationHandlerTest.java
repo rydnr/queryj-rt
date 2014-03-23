@@ -134,6 +134,7 @@ public class CustomSqlValidationHandlerTest
 
         @NotNull final List<Sql<String>> t_lSql = Arrays.asList(sql);
 
+        EasyMock.expect(t_)
         EasyMock.expect(t_CustomSqlProvider.getSqlParameterDAO()).andReturn(t_SqlParameterDAO);
         EasyMock.expect(t_CustomSqlProvider.getHash(sql, Charset.defaultCharset().displayName()))
             .andReturn("").anyTimes();
