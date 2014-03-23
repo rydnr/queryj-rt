@@ -50,6 +50,7 @@ import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.Sql.Cardinality;
 import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.RetrieveQueryHandler;
+import org.acmsl.queryj.metadata.TableDAO;
 import org.acmsl.queryj.metadata.engines.JdbcTypeManager;
 import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.SqlParameterDAO;
@@ -122,6 +123,7 @@ public class CustomSqlValidationHandlerTest
         throws Exception
     {
         @NotNull final CustomSqlProvider t_CustomSqlProvider = PowerMock.createNiceMock(CustomSqlProvider.class);
+        @NotNull final TableDAO t_TableDAO = PowerMock.createNiceMock()
         @NotNull final SqlParameterDAO t_SqlParameterDAO = PowerMock.createNiceMock(SqlParameterDAO.class);
         @NotNull final MetadataManager t_MetadataManager = PowerMock.createNiceMock(MetadataManager.class);
         @NotNull final TypeManager t_TypeManager = new JdbcTypeManager();
