@@ -151,8 +151,6 @@ public class RetrieveResultPropertiesHandler
 
         @Nullable final ResultRef t_ResultRef = t_Sql.getResultRef();
 
-        if  (t_ResultRef != null)
-        {
             @NotNull final List<Property<String>> t_lProperties =
                 retrieveProperties(
                     t_Sql,
