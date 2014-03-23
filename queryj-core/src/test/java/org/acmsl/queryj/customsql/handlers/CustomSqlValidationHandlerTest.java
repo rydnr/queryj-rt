@@ -139,7 +139,7 @@ public class CustomSqlValidationHandlerTest
 
         EasyMock.expect(t_MetadataManager.getTableDAO()).andReturn(t_TableDAO);
         EasyMock.expect(t_TableDAO.findByName(sql.getDao())).andReturn(t_Table);
-        EasyMock.expect(t_Table.getName())
+        EasyMock.expect(t_Table.getAttributes()).
         EasyMock.expect(t_CustomSqlProvider.getSqlParameterDAO()).andReturn(t_SqlParameterDAO);
         EasyMock.expect(t_CustomSqlProvider.getHash(sql, Charset.defaultCharset().displayName()))
             .andReturn("").anyTimes();
