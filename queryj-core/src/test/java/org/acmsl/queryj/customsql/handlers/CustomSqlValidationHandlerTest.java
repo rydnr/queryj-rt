@@ -56,6 +56,7 @@ import org.acmsl.queryj.metadata.engines.JdbcTypeManager;
 import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.SqlParameterDAO;
 import org.acmsl.queryj.metadata.TypeManager;
+import org.acmsl.queryj.metadata.vo.AbstractAttribute;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.Table;
 import org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandler;
@@ -144,7 +145,10 @@ public class CustomSqlValidationHandlerTest
         EasyMock.expect(t_Table.getName()).andReturn(sql.getDao());
         EasyMock.expect(t_Table.getAttributes()).andReturn(new ArrayList<>(0));
         EasyMock.expect(t_MetadataManager.getColumnDAO()).andReturn(t_ColumnDAO);
-        EasyMock.expect(t_ColumnDAO.findAllColumns(sql.getDao())).andReturn(Arrays.asList(new );
+        EasyMock.expect(t_ColumnDAO.findAllColumns(sql.getDao())).andReturn(Arrays.asList(new AbstractAttribute<String>()
+
+        {
+        });
         EasyMock.expect(t_CustomSqlProvider.getSqlParameterDAO()).andReturn(t_SqlParameterDAO);
         EasyMock.expect(t_CustomSqlProvider.getHash(sql, Charset.defaultCharset().displayName()))
             .andReturn("").anyTimes();
