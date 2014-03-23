@@ -154,7 +154,8 @@ public class RetrieveResultPropertiesHandler
         @NotNull final List<Property<String>> t_lProperties =
             retrieveProperties(
                 t_Sql,
-                (t_ResultRef != null) ? t_CustomSqlProvider.getSqlResultDAO().findByPrimaryKey(t_ResultRef.getId()) : null,
+                (t_ResultRef != null)
+                ? t_CustomSqlProvider.getSqlResultDAO().findByPrimaryKey(t_ResultRef.getId()) : null,
                 t_CustomSqlProvider,
                 t_MetadataManager,
                 new JdbcTypeManager());
