@@ -38,6 +38,7 @@ package org.acmsl.queryj.api;
 /*
  * Importing project classes.
  */
+import org.acmsl.commons.patterns.CommandHandler;
 import org.acmsl.queryj.AbstractQueryJChain;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
@@ -191,7 +192,7 @@ public abstract class AbstractFillTemplateChain<C extends TemplateContext>
         @NotNull final FillAdapterHandler handler,
         final boolean relevantOnly)
     {
-        final FillHandler actualHandler;
+        final CommandHandler actualHandler;
 
         if (   (relevantOnly)
             && (handler.getFillHandler() instanceof NonRelevantFillHandler))
