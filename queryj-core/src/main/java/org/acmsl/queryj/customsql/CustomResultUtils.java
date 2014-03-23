@@ -390,6 +390,7 @@ public class CustomResultUtils
                 if  (t_Table != null)
                 {
                     result = t_Table.getName();
+                    break;
                 }
                 else
                 {
