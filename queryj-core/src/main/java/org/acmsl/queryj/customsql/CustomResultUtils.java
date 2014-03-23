@@ -395,10 +395,6 @@ public class CustomResultUtils
             }
             result = null;
         }
-        else
-        {
-            result = null;
-        }
 
         return result;
     }
