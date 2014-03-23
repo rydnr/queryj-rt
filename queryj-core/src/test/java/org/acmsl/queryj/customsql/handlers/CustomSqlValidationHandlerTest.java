@@ -133,7 +133,7 @@ public class CustomSqlValidationHandlerTest
         @NotNull final PreparedStatement t_Statement = PowerMock.createNiceMock(PreparedStatement.class);
         @NotNull final ResultSet t_ResultSet = PowerMock.createNiceMock(ResultSet.class);
         @NotNull final ResultSetMetaData t_Metadata = PowerMock.createNiceMock(ResultSetMetaData.class);
-        @NotNull final Table<String, Attribute<String>> t_Table = PowerMock.createNiceMock(Table.class);
+        @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> t_Table = PowerMock.createNiceMock(Table.class);
         @NotNull final List<Sql<String>> t_lSql = Arrays.asList(sql);
 
         EasyMock.expect(t_MetadataManager.getTableDAO()).andReturn(t_TableDAO);
