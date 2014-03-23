@@ -192,7 +192,7 @@ public abstract class AbstractFillTemplateChain<C extends TemplateContext>
         @NotNull final FillAdapterHandler handler,
         final boolean relevantOnly)
     {
-        final CommandHandler<QueryJCommand, ?> actualHandler;
+        final CommandHandler<QueryJCommand, QueryJBuildException> actualHandler;
 
         if (   (relevantOnly)
             && (handler.getFillHandler() instanceof NonRelevantFillHandler))
