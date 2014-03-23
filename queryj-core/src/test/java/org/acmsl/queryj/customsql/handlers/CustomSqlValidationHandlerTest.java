@@ -157,6 +157,9 @@ public class CustomSqlValidationHandlerTest
                         "long",
                         sql.getDao(),
                         "comment",
+                        1,
+                        1,
+                        1,
 
 
         {
