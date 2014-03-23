@@ -422,7 +422,7 @@ public class TemplatePackagingMojo
 
     /**
      * Executes Template Packaging via Maven2.
-     * @throws MojoExecutionException if something goes wrong.
+     * @throws MojoExecutionException
      */
     @Override
     public void execute()
