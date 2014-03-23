@@ -259,7 +259,7 @@
       <dependency>
         <groupId>commons-beanutils</groupId>
         <artifactId>commons-beanutils</artifactId>
-        <version>1.8.0</version>
+        <version>1.9.1</version>
       </dependency>
       <dependency>
         <groupId>com.jetbrains</groupId>
@@ -325,7 +325,7 @@
       <dependency>
         <groupId>commons-configuration</groupId>
         <artifactId>commons-configuration</artifactId>
-        <version>1.8</version>
+        <version>1.10</version>
       </dependency>
 
       <dependency>
