@@ -652,6 +652,7 @@ public class PerTableTemplatesTest
             t_strJdbcPassword,
             retrieveCustomSqlProvider(getSqlList(), getParameters()),
             retrieveMetadataManager(engineName));
+*/
     }
 
     /**
