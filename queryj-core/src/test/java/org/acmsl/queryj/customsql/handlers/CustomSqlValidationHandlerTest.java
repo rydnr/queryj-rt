@@ -50,6 +50,7 @@ import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.Sql.Cardinality;
 import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.RetrieveQueryHandler;
+import org.acmsl.queryj.metadata.ColumnDAO;
 import org.acmsl.queryj.metadata.TableDAO;
 import org.acmsl.queryj.metadata.engines.JdbcTypeManager;
 import org.acmsl.queryj.metadata.MetadataManager;
@@ -126,6 +127,7 @@ public class CustomSqlValidationHandlerTest
     {
         @NotNull final CustomSqlProvider t_CustomSqlProvider = PowerMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final TableDAO t_TableDAO = PowerMock.createNiceMock(TableDAO.class);
+        @NotNull final ColumnDAO t_ColumnDAO = PowerMock.createNiceMock(ColumnDAO.class);
         @NotNull final SqlParameterDAO t_SqlParameterDAO = PowerMock.createNiceMock(SqlParameterDAO.class);
         @NotNull final MetadataManager t_MetadataManager = PowerMock.createNiceMock(MetadataManager.class);
         @NotNull final TypeManager t_TypeManager = new JdbcTypeManager();
@@ -141,6 +143,8 @@ public class CustomSqlValidationHandlerTest
         EasyMock.expect(t_TableDAO.findByDAO(sql.getDao())).andReturn(t_Table);
         EasyMock.expect(t_Table.getName()).andReturn(sql.getDao());
         EasyMock.expect(t_Table.getAttributes()).andReturn(new ArrayList<>(0));
+        EasyMock.expect(t_MetadataManager.getColumnDAO()).andReturn(t_ColumnDAO);
+        EasyMock.expect(t_ColumnDAO.findAllColumns(sql.getDao())).andReturn(new ArrayList<>(0));
         EasyMock.expect(t_CustomSqlProvider.getSqlParameterDAO()).andReturn(t_SqlParameterDAO);
         EasyMock.expect(t_CustomSqlProvider.getHash(sql, Charset.defaultCharset().displayName()))
             .andReturn("").anyTimes();
@@ -153,6 +157,7 @@ public class CustomSqlValidationHandlerTest
         EasyMock.replay(t_SqlParameterDAO);
         EasyMock.replay(t_MetadataManager);
         EasyMock.replay(t_TableDAO);
+        EasyMock.replay(t_ColumnDAO);
         EasyMock.replay(t_Table);
         EasyMock.replay(t_Connection);
         EasyMock.replay(t_Statement);
@@ -188,6 +193,7 @@ public class CustomSqlValidationHandlerTest
             EasyMock.verify(t_SqlParameterDAO);
             EasyMock.verify(t_MetadataManager);
             EasyMock.verify(t_TableDAO);
+            EasyMock.verify(t_ColumnDAO);
             EasyMock.verify(t_Table);
         }
     }
