@@ -646,7 +646,7 @@ public class PerTableTemplatesTest
         @NotNull final Map\<String, Table<String, Attribute\<String>, List\<Attribute\<String\>>\>> t_mTables = getTables();
         @NotNull final Set\<String> t_TableNameSet = t_mTables.keySet();
         @NotNull final List\<String> t_lTableNames = new ArrayList\<>(t_TableNameSet.size());
-        @NotNull final List\<Table\<String, Attribute\<String>, List<Attribute<String\>>\>> t_lTables =
+        @NotNull final List\<Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> t_lTables =
             new ArrayList\<>(t_TableNameSet.size());
         t_lTableNames.addAll(t_TableNameSet);
         t_lTables.addAll(t_mTables.values());
