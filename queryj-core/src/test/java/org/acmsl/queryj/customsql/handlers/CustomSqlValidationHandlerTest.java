@@ -155,6 +155,7 @@ public class CustomSqlValidationHandlerTest
                         "fake_id",
                         Types.BIGINT,
                         "long",
+                        sql.getDao(),
 
 
         {
