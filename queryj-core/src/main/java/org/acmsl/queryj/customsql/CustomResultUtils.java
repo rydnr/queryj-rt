@@ -392,8 +392,8 @@ public class CustomResultUtils
                     result = t_Table.getName();
                     break;
                 }
-                result = null;
             }
+            result = null;
         }
         else
         {
