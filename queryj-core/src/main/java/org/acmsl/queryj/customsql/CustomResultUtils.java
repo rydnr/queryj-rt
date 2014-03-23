@@ -365,7 +365,7 @@ public class CustomResultUtils
             @Nullable Table<String, Attribute<String>, List<Attribute<String>>> t_Table =
                 metadataManager.getTableDAO().findByDAO("" + t_strDao);
 
-            if  (t_Table != null)
+            if  (t_Table == null)
             {
             if  (t_Table != null)
             {
