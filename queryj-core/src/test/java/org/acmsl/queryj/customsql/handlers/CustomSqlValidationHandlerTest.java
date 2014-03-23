@@ -151,6 +151,7 @@ public class CustomSqlValidationHandlerTest
             .andReturn(
                 Arrays.asList(
                     new AttributeIncompleteValueObject(
+                        "name",
 
 
         {
