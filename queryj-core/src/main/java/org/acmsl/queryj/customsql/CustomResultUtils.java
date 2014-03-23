@@ -382,7 +382,6 @@ public class CustomResultUtils
                     ("" + t_strDao).toLowerCase(QueryJSettings.DEFAULT_LOCALE),
                     ("" + t_strDao).toUpperCase(QueryJSettings.DEFAULT_LOCALE));
 
-
             for (@NotNull final String t_strTableName : t_lTableNameVariants)
             {
                 @Nullable final Table<String, Attribute<String>, List<Attribute<String>>> t_Table =
