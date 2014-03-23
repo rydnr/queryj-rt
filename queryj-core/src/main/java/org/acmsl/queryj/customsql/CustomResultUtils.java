@@ -387,13 +387,14 @@ public class CustomResultUtils
                 @Nullable final Table<String, Attribute<String>, List<Attribute<String>>> t_Table =
                     tableDAO.findByDAO(t_strTableName);
 
-            if  (t_Table != null)
-            {
-                result = t_Table.getName();
-            }
-            else
-            {
-                result = null;
+                if  (t_Table != null)
+                {
+                    result = t_Table.getName();
+                }
+                else
+                {
+                    result = null;
+                }
             }
         }
         else
