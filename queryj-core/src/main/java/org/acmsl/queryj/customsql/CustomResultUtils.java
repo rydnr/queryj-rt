@@ -381,7 +381,7 @@ public class CustomResultUtils
 
             if  (t_Table == null)
             {
-                t_Table = metadataManager.getTableDAO().findByDAO(("" + t_strDao).toLowerCase(QueryJSettings.DEFAULT_LOCALE));
+                t_Table = tableDAO.findByDAO(("" + t_strDao).toLowerCase(QueryJSettings.DEFAULT_LOCALE));
             }
             if  (t_Table != null)
             {
