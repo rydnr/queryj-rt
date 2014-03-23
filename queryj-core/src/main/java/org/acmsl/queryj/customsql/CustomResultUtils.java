@@ -382,7 +382,7 @@ public class CustomResultUtils
                     ("" + t_strDao).toLowerCase(QueryJSettings.DEFAULT_LOCALE),
                     ("" + t_strDao).toUpperCase(QueryJSettings.DEFAULT_LOCALE));
 
-            for (
+            for (@NotNull final String
                 @Nullable final Table<String, Attribute<String>, List<Attribute<String>>> t_Table
                 tableDAO.findByDAO("" + t_strDao);
 
