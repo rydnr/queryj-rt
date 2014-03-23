@@ -367,7 +367,7 @@ public class CustomResultUtils
 
             if  (t_Table == null)
             {
-                t_Table =
+                t_Table = metadataManager.getTableDAO().findByDAO("" + t_strDao);
             }
             if  (t_Table != null)
             {
