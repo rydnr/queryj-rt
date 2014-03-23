@@ -377,7 +377,7 @@ public class CustomResultUtils
         if (t_strDao != null)
         {
             @Nullable Table<String, Attribute<String>, List<Attribute<String>>> t_Table =
-                tableDAO().findByDAO("" + t_strDao);
+                tableDAO.findByDAO("" + t_strDao);
 
             if  (t_Table == null)
             {
