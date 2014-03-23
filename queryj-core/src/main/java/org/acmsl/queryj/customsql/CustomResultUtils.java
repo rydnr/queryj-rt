@@ -384,8 +384,8 @@ public class CustomResultUtils
 
             for (@NotNull final String t_strTableName : t_lTableNameVariants)
             {
-                @Nullable final Table<String, Attribute<String>, List<Attribute<String>>> t_Table
-                tableDAO.findByDAO("" + t_strDao);
+                @Nullable final Table<String, Attribute<String>, List<Attribute<String>>> t_Table =
+                    tableDAO.findByDAO(t_strTableName);
 
             if  (t_Table == null)
             {
