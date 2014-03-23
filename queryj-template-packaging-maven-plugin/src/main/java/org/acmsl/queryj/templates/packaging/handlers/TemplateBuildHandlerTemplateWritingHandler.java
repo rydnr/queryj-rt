@@ -103,7 +103,7 @@ public class TemplateBuildHandlerTemplateWritingHandler
      * Retrieves the templates from the command.
      * @param parameters the parameters.
      * @return the template.
-     * @throws QueryJBuildException if the template retrieval process fails.
+     * @exception  QueryJBuildException if the template retrieval process fails.
      */
     @NotNull
     @Override
