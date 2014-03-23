@@ -643,6 +643,7 @@ public class PerTableTemplatesTest
         setJdbcUserName(t_strJdbcUserName);
         setJdbcPassword(t_strJdbcPassword);
 
+/*
         validateQueries(
             getSqlList(),
             t_strJdbcDriver,
