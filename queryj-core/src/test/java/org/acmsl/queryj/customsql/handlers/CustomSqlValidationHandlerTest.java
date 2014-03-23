@@ -152,6 +152,7 @@ public class CustomSqlValidationHandlerTest
         EasyMock.replay(t_SqlParameterDAO);
         EasyMock.replay(t_MetadataManager);
         EasyMock.replay(t_TableDAO);
+        EasyMock.replay(t_Table);
         EasyMock.replay(t_Connection);
         EasyMock.replay(t_Statement);
         EasyMock.replay(t_ResultSet);
