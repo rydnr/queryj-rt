@@ -387,10 +387,6 @@ public class CustomResultUtils
                 @Nullable final Table<String, Attribute<String>, List<Attribute<String>>> t_Table =
                     tableDAO.findByDAO(t_strTableName);
 
-            if  (t_Table == null)
-            {
-                t_Table = tableDAO.findByDAO(("" + t_strDao).toLowerCase(QueryJSettings.DEFAULT_LOCALE));
-            }
             if  (t_Table != null)
             {
                 result = t_Table.getName();
