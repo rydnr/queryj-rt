@@ -379,7 +379,8 @@ public class CustomResultUtils
             @NotNull final List<String> t_lTableNameVariants =
                 Arrays.asList(
                     "" + t_strDao,
-                    ("" + t_strDao).toLowerCase(QueryJSettings.DEFAULT_LOCALE), ("" + t_strDao).toUpperCase(QueryJSettings.DEFAULT_LOCALE));
+                    ("" + t_strDao).toLowerCase(QueryJSettings.DEFAULT_LOCALE),
+                    ("" + t_strDao).toUpperCase(QueryJSettings.DEFAULT_LOCALE));
             @Nullable Table<String, Attribute<String>, List<Attribute<String>>> t_Table =
                 tableDAO.findByDAO("" + t_strDao);
 
