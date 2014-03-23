@@ -367,6 +367,8 @@ public class CustomResultUtils
 
             if  (t_Table != null)
             {
+            if  (t_Table != null)
+            {
                 result = t_Table.getName();
             }
             else
