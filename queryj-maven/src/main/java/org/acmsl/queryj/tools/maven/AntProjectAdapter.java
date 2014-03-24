@@ -1836,7 +1836,7 @@ public class AntProjectAdapter
     }
 
     /**
-     * @see Project#getThreadTask(Thread).
+     * See {@link Project#getThreadTask(Thread)}.
      * @param thread the thread task.
      * @param project the {@link Project} instance.
      * @return the task.
