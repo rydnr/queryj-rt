@@ -456,7 +456,6 @@ public abstract class BasePerTableTemplateBuildHandler
      * @param decoratorFactory the decorator factory.
      * @param daoTemplateUtils the {@link DAOTemplateUtils} instance.
      * @return such information.
-     * @throws SQLException if the operation fails.
      */
     @Nullable
     protected List<Row<String>> retrieveStaticContent(
