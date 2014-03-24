@@ -1308,7 +1308,6 @@ public abstract class DatabaseMetaDataRetrievalHandler
      * Retrieves the product's identifier quote string.
      * @param metaData the database metadata.
      * @return the quote string.
-     * @throws QueryJBuildException if the check fails.
      */
     @SuppressWarnings("unused")
     protected String retrieveProductQuote(@NotNull final DatabaseMetaData metaData)
