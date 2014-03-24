@@ -91,7 +91,7 @@ public class JdbcConnectionOpeningHandler
     public boolean handle(@NotNull final QueryJCommand command)
         throws  QueryJBuildException
     {
-        @Nullable final Connection connection = openConnection(command);
+        @NotNull final Connection connection = openConnection(command);
 
         if (connection != null)
         {
