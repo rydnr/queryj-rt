@@ -47,7 +47,7 @@ package org.acmsl.queryj.customsql;
  * non-xml implementations):
  * &lt;!ELEMENT connection-flags EMPTY&gt;
  * &lt;!ATTLIST connection-flags
- *   id ID #REQUIRED<br/>
+ *   id ID #REQUIRED
  *   transactionisolation (  TRANSACTION_NONE
  *                         | TRANSACTION_READ_COMMITTED
  *                         | TRANSACTION_READ_UNCOMMITTED
