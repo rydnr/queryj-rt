@@ -542,6 +542,8 @@ public class DecoratedString
     @NotNull
     public DecoratedString removeExtension()
     {
-        @NotNull final String result = EXT_REGEX.match(value).replaceAll("")
+        @NotNull final String result = EXT_REGEX.match(value).replaceAll("");
+
+        return new DecoratedString(result);
     }
 }
