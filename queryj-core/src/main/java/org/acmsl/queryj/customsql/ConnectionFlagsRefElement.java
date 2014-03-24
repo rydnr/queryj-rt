@@ -36,12 +36,12 @@ package org.acmsl.queryj.customsql;
  * Importing project-specific classes.
  */
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * Models &lt;connection-flags-ref&gt; elements in <i>custom-sql</i> models, which
