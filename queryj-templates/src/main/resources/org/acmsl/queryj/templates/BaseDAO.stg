@@ -182,7 +182,6 @@ public interface <table.name.voName>DAO
      * Persists \<code><table.name.voName>\</code> information.
      <table.allButExternallyManagedAttributes:attribute_javadoc(
        name=it.nameLowercased); separator="\n">
-     * @throws DataAccessException if the operation fails.
      */
     public void insert(
         <table.allButExternallyManagedAttributes:attribute_declaration(
