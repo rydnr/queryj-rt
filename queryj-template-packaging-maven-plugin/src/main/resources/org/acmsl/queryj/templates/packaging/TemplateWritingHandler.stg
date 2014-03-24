@@ -114,7 +114,7 @@ public class <C.class_name>
                 <def.name.noExtension>TemplateGenerator>
 {
     /**
-     * Creates a new writing handler for {@link <def.name.capitalized>Template templates}.
+     * Creates a new writing handler for {@link <def.name.noExtension>Template templates}.
      */
     public <C.class_name>() {}
 
