@@ -1466,7 +1466,7 @@ public class AntProjectAdapter
     }
 
     /**
-     * @see {@link Project#demuxInput(byte[], int, int)}
+     * @see Project#demuxInput(byte[], int, int)
      * @param buffer the input buffer.
      * @param offset the offset.
      * @param length the buffer length.
