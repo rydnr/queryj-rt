@@ -92,7 +92,6 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
      *
      * @param parameters the parameters.
      * @return <code>true</code> if the chain should be stopped.
-     * @throws QueryJBuildException if the build process cannot be performed.
      */
     @Override
     public boolean handle(@NotNull final QueryJCommand parameters)
