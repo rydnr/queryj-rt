@@ -60,7 +60,8 @@ import java.util.List;
  * Minimal {@link SqlPropertyDAO} implementation on top of a list of {@link Property properties}
  * and a given {@link Result}.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
- * @since 2013/06/25
+ * @since 3.0
+ * Created: 2013/06/25
  */
 @SuppressWarnings("unused")
 public class CucumberSqlPropertyDAO
