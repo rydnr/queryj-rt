@@ -75,5 +75,5 @@ public class DecoratedStringTest
     }
 
     @Test
-    public void remove_extension_for_
+    public void remove_extension_does_nothing_for_
 }
