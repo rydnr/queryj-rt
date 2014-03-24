@@ -41,7 +41,6 @@ import org.acmsl.queryj.Literals;
 /*
  * Importing Commons-Logging classes.
  */
-import org.acmsl.queryj.Literals;
 import org.apache.commons.logging.LogFactory;
 import org.jetbrains.annotations.NotNull;
 
