@@ -1320,7 +1320,6 @@ public class AntProjectAdapter
      * @param taskType the task type.
      * @param project the {@link Project} instance.
      * @return the new task.
-     * @throws BuildException if the task cannot be created.
      */
     @NotNull
     protected Task createTask(@NotNull final String taskType, @NotNull final Project project)
