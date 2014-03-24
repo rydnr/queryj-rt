@@ -113,7 +113,7 @@ class(def, C) ::= <<
 @ThreadSafe
 public class <C.class_name>
     extends Base<def.type.noExtension>TemplateBuildHandler\<
-                <def.name.>Template,
+                <def.name.capitalized>Template,
                 <def.type.capitalized>TemplateContext,
                 <def.name.capitalized>TemplateFactory>
 {
