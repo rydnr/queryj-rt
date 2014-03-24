@@ -69,7 +69,6 @@ public  class RefElementFactory
     /**
      * <p>Factory method called by {@link org.apache.commons.digester.FactoryCreateRule} to supply an
      * object based on the element's attributes.
-     *
      * @param attributes the element's attributes
      * @throws Exception any exception thrown will be propagated upwards
      */
