@@ -1142,7 +1142,6 @@ public class AntProjectAdapter
 
     /**
      * Retrieves the data type definitions.
-     * @param project the {@link Project} instance.
      * @return such information.
      */
     @NotNull
