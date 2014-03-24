@@ -79,4 +79,10 @@ public class DecoratedStringTest
     {
         Assert.assertEquals("bla", new DecoratedString("bla.txt").getNoExtension().getValue());
     }
+
+    @Test
+    public void remove_extension_does_nothing_for_texts_with_no_dots()
+    {
+        Assert.assertEquals("bla", new DecoratedString("bla.txt").getNoExtension().getValue());
+    }
 }
