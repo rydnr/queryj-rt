@@ -172,6 +172,7 @@ public class ProcedureMetadata
      * Retrieves the comment.
      * @return such comment.
      */
+    @Nullable
     public String getComment()
     {
         return m__strComment;
