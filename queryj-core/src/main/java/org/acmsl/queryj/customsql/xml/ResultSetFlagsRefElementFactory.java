@@ -80,6 +80,7 @@ public class ResultSetFlagsRefElementFactory
      * @param conversionUtils the ConversionUtils instance.
      * @return the &lt;resultset-ref&gt; information.
      */
+    @Override
     @Nullable
     public Object createObject(
         @NotNull final Attributes attributes,
