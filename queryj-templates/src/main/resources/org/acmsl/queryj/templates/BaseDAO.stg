@@ -203,7 +203,6 @@ public interface <table.name.voName>DAO
      * Updates \<code><table.name.voName>\</code> information.
      <input.attributes:attribute_javadoc(name=it.nameLowercased); separator="\n">
      * @return the number of entities updated.
-     * @throws DataAccessException if the operation fails.
      */
     public int update(
         <input.attributes:attribute_declaration(attr=it); separator=",\n">)
