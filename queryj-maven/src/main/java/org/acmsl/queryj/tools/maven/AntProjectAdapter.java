@@ -1615,7 +1615,7 @@ public class AntProjectAdapter
     }
 
     /**
-     * @see {@link Project#addReference(String, Object)}.
+     * @see Project#addReference(String, Object).
      * @param referenceName the reference name.
      * @param value the value.
      * @param project the {@link Project} instance.
