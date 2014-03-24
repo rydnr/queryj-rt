@@ -99,6 +99,7 @@ public class AntTableElement
      * Retrieves the table name.
      * @return such name.
      */
+    @Nullable
     public String getName()
     {
         return m__strTableName;
