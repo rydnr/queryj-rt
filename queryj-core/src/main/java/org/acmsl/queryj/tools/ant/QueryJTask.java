@@ -991,8 +991,6 @@ public class QueryJTask
 
     /**
      * Requests the chained logic to be performed.
-     * @throws BuildException whenever the required
-     * parameters are not present or valid.
      */
     public void execute()
         throws  BuildException
