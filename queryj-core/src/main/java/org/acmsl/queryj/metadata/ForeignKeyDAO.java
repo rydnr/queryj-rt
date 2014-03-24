@@ -59,7 +59,7 @@ import java.util.List;
 
 /**
  * Provides methods to access {@link ForeignKey} information.
- * @author <a href="mailto:chous@acm-sl.org">chous</a>
+ * @author <a href="mailto:queryj@acm-sl.org">chous</a>
  * @since 3.0
  * Created: 2012/06/06
  */
