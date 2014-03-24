@@ -103,7 +103,6 @@ public abstract class ElementFactory
      * @param conversionUtils the ConversionUtils instance.
      * @return the Customer information.
      * @throws SAXException if the attributes are not valid.
-     * @precondition conversionUtils != null
      */
     @Nullable
     protected abstract Object createObject(
