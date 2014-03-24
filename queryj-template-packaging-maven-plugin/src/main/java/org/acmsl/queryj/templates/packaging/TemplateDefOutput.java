@@ -77,5 +77,4 @@ public enum TemplateDefOutput
     {
         return EnumUtils.getInstance().getEnumFromString(TemplateDefOutput.class, type);
     }
-
 }
