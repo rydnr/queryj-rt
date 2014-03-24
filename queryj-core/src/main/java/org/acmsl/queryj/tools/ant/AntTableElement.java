@@ -118,7 +118,7 @@ public class AntTableElement
      * Specifies the field collection.
      * @param fields the collection
      */
-    public void setFields(final List<AntFieldElement> fields)
+    public void setFields(@NotNull final List<AntFieldElement> fields)
     {
         immutableSetFields(fields);
     }
