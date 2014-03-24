@@ -46,7 +46,7 @@ import org.acmsl.queryj.tools.exceptions.MissingJdbcUserNameAtRuntimeException;
 import org.acmsl.queryj.tools.exceptions.MissingJdbcDriverAtRuntimeException;
 
 /*
- * Importing some Commons-Logging classes.
+ * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
