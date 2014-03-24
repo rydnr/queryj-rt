@@ -686,7 +686,6 @@ public abstract class AbstractTemplate<C extends TemplateContext>
     /**
      * Generates the source code.
      * @return such output.
-     * @throws org.acmsl.queryj.api.exceptions.InvalidTemplateException if the template cannot be generated.
      */
     @Nullable
     @Override
