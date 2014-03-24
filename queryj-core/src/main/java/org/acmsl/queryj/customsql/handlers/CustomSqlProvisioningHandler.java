@@ -78,8 +78,6 @@ public class CustomSqlProvisioningHandler
 
     /**
      * Handles given parameters.
-     *
-     *
      * @param parameters the parameters.
      * @return <code>true</code> if the chain should be stopped.
      */
