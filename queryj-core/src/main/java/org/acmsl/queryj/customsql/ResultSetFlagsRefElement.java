@@ -56,6 +56,9 @@ public class ResultSetFlagsRefElement
     extends  AbstractIdElement<String>
     implements ResultSetFlagsRef
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = 5242210262110643037L;
 
     /**
