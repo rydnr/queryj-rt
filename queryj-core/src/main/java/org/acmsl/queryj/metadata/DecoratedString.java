@@ -90,7 +90,7 @@ public class DecoratedString
     /**
      * A regex for removing the extension.
      */
-    protected static final Pattern EXT_REGEX = Pattern.compile(".*(\\..*)$");
+    protected static final Pattern EXT_REGEX = Pattern.compile("(\\..*)$");
 
     /**
      * The actual value.
