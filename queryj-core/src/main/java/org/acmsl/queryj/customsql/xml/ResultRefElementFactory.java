@@ -78,10 +78,6 @@ public class ResultRefElementFactory
      * @param digester the Digester instance.
      * @param conversionUtils the ConversionUtils instance.
      * @return the &lt;result-ref&gt; information.
-     * @throws SAXException if the attributes are not valid.
-     * @precondition attributes != null
-     * @precondition digester != null
-     * @precondition conversionUtils != null
      */
     @Nullable
     public Object createObject(
