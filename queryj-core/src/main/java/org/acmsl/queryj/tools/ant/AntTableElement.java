@@ -109,7 +109,7 @@ public class AntTableElement
      * Specifies the field collection.
      * @param fields the collection
      */
-    protected final void immutableSetFields(final List<AntFieldElement> fields)
+    protected final void immutableSetFields(@NotNull final List<AntFieldElement> fields)
     {
         m__lFields = fields;
     }
