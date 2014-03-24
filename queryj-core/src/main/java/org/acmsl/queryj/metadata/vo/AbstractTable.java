@@ -537,7 +537,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
      * this condition should clearly indicate this fact.  The recommended
      * language is "Note: this class has a natural ordering that is
      * inconsistent with equals."
-     * <p/>
+     * <p></p>
      * <p>In the foregoing description, the notation
      * <tt>sgn(</tt><i>expression</i><tt>)</tt> designates the mathematical
      * <i>signum</i> function, which is defined to return one of <tt>-1</tt>,
