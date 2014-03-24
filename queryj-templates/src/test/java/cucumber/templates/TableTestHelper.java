@@ -276,6 +276,7 @@ public class TableTestHelper
      * Defines the columns from the feature.
      * @param columnInfo the column information.
      * @param tables the tables.
+     * @return the input columns.
      */
     public List<Table<String, Attribute<String>, List<Attribute<String>>>> defineInputColumns(
         @NotNull final DataTable columnInfo,
