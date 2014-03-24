@@ -63,7 +63,7 @@ import java.util.List;
 /**
  * <code>Attribute</code> implementation which retrieves its information
  * lazily.
- * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
+ * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  */
 @ThreadSafe
 public class LazyAttribute
