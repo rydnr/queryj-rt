@@ -115,6 +115,7 @@ import java.util.Properties;
  * @author <a href="chous@acm-sl.org">Jose San Leandro</a>
  * @since 2013/05/05
  * @param <G> the
+ * @param <P> the
  */
 @SuppressWarnings("unused")
 public abstract class AbstractTemplatesTest<G, F>
