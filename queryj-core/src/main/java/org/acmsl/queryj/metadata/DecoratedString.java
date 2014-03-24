@@ -556,7 +556,7 @@ public class DecoratedString
      * @return the new DecoratedString.
      */
     @NotNull
-    protected DecoratedString getNremoveExtension(@NotNull final String value)
+    protected DecoratedString getNoExtension(@NotNull final String value)
     {
         @NotNull final String result = EXT_REGEX.matcher(value).replaceAll("");
 
