@@ -90,7 +90,7 @@ public class ResultSetFlagsRefElementFactory
     {
         @Nullable final ResultSetFlagsRefElement result;
 
-        final String t_strId = attributes.getValue("id");
+        @NotNull final String t_strId = attributes.getValue("id");
 
         result = new ResultSetFlagsRefElement(t_strId);
 
