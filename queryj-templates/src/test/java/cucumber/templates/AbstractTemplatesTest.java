@@ -386,7 +386,7 @@ public abstract class AbstractTemplatesTest<G, F>
     }
 
     /**
-     * Specifies the row map (table name > static rows.
+     * Specifies the row map (table name -&gt; static rows).
      * @param map such map.
      */
     @SuppressWarnings("unused")
