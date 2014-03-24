@@ -105,7 +105,6 @@ public class CommonsLoggingMavenLogAdapter
 
     /**
      * <p> Is trace logging currently enabled? </p>
-     * <p/>
      * <p> Call this method to prevent having to perform expensive operations
      * (for example, <code>String</code> concatenation)
      * when the log level is more than trace. </p>
