@@ -83,7 +83,6 @@ public class MySQL4xMetadataManager
      * @param catalog the database catalog.
      * @param schema the database schema.
      * @param caseSensitive whether the database engine is case sensitive or not.
-     * @throws SQLException if the database operation fails.
      * @throws QueryJException if an error, which is identified by QueryJ,
      * occurs.
      */
