@@ -688,7 +688,6 @@ find_by_primary_key3(table, parent, repository, C) ::= <<
  * @return the {@link <table.name.voName>} matching given
 <endif>
  * primary key.
- * @throws DataAccessException if the operation fails.
  */
 <nullable(C=C)>
 <if(table.voDecorated)>
