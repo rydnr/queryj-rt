@@ -181,7 +181,7 @@ public class Table
             result.append(", {");
             boolean firstTime = true;
 
-            for (Field field : fields)
+            for (@Nullable final Field field : fields)
             {
                 if (!firstTime)
                 {
