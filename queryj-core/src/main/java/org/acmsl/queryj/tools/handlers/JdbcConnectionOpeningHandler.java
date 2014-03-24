@@ -93,10 +93,7 @@ public class JdbcConnectionOpeningHandler
     {
         @NotNull final Connection connection = openConnection(command);
 
-        if (connection != null)
-        {
-            storeConnection(connection, command);
-        }
+        storeConnection(connection, command);
 
         return false;
     }
