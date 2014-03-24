@@ -730,7 +730,6 @@ public class BindQueryParametersHandler
      * @param instanceClass the instance class.
      * @param methodName the method name.
      * @return the <code>Method</code> instance.
-     * @throws NoSuchMethodException if the desired method is not available.
      */
     @NotNull
     protected Method retrieveMethod(
