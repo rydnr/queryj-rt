@@ -377,7 +377,7 @@ public abstract class AbstractTemplatesTest<G, F>
     }
 
     /**
-     * Specifies the row map (table name -&gt; static rows.
+     * Specifies the row map (table name -&gt; static rows).
      * @param map such map.
      */
     protected final void immutableSetRows(@NotNull final Map<String, List<Row<String>>> map)
