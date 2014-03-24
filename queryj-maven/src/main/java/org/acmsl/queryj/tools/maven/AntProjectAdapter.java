@@ -1936,7 +1936,7 @@ public class AntProjectAdapter
     }
 
     /**
-     * @see Project#log(String, Throwable, int).
+     * See {@link Project#log(String, Throwable, int).
      * @param message the message.
      * @param throwable the error.
      * @param msgLevel either {@link Project#MSG_ERR}, {@link Project#MSG_WARN},
