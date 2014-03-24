@@ -516,7 +516,6 @@ public class DAOTemplateUtils
      * @param metadataUtils the <code>MetadataUtils</code> instance.
      * @param connection the connection.
      * @return the retrieved rows.
-     * @throws SQLException if the operation fails.
      */
     @SuppressWarnings("unused")
     @NotNull
