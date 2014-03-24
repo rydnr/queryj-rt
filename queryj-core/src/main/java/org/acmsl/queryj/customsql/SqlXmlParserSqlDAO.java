@@ -270,7 +270,7 @@ public class SqlXmlParserSqlDAO
     }
 
     /**
-     * Retrieves all <i>update</i> {@link Sql<String> sentences} for a given DAO (table).
+     * Retrieves all <i>update</i> {@link Sql sentences} for a given DAO (table).
      * @param table the table.
      * @return all matching <i>update</i> sentences.
      */
