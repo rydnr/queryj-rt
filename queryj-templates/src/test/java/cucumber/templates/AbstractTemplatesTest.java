@@ -124,7 +124,7 @@ public abstract class AbstractTemplatesTest<G, F>
     public static final String PARSER_ERROR = "Parser error: ";
 
     /**
-     * String literal:
+     * String literal: "Cannot read file: ".
      */
     public static final String CANNOT_READ_FILE = "Cannot read file: ";
 
