@@ -99,8 +99,6 @@ public class JdbcConnectionClosingHandler
 
     /**
      * Handles given information.
-     *
-     *
      * @param parameters the parameters.
      * @return <code>true</code> if the chain should be stopped.
      * @throws QueryJBuildException the build process cannot be performed.
