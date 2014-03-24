@@ -45,6 +45,7 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Contains all information inside a "fk" XML element in Ant scripts,
@@ -78,7 +79,7 @@ public class AntFieldFkElement
      * Retrieves the table name.
      * @return such table.
      */
-    @NotNull
+    @Nullable
     public String getTable()
     {
         return m__strTable;
