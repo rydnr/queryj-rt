@@ -35,7 +35,6 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing some project-specific classes.
  */
-import org.acmsl.commons.utils.EnglishGrammarUtils;
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.ForeignKey;
