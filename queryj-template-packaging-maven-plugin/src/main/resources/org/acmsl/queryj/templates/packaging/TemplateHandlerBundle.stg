@@ -98,8 +98,8 @@ public class <C.class_name>
     public <C.class_name>()
     {
         super(
-            new <def.name.capitalized>TemplateBuildHandler(),
-            new <def.name.capitalized>TemplateWritingHandler());
+            new <def.name.noExtension>TemplateBuildHandler(),
+            new <def.name.noExtension>TemplateWritingHandler());
     }
 }
 >>
