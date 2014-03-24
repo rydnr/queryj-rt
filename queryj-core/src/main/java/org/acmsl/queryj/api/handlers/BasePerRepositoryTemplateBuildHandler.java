@@ -107,7 +107,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
      * @param parameters the parameters.
      * @param projectPackage the project package.
      * @return <code>true</code> if the chain should be stopped.
-     * @throws QueryJBuildException if the build process cannot be performed.
      */
     protected boolean handle(@NotNull final QueryJCommand parameters, @NotNull final String projectPackage)
         throws  QueryJBuildException
