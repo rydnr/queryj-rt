@@ -139,7 +139,6 @@ public abstract class BasePerCustomResultTemplateBuildHandler
      * @param parameters the parameters.
      * @param metadataManager the database metadata manager.
      * @param customSqlProvider the custom RESULT provider.
-     * @throws QueryJBuildException if the build process cannot be performed.
      */
     @ThreadSafe
     protected void buildTemplates(

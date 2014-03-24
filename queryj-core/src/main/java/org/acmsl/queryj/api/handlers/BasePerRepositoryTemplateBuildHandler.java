@@ -145,7 +145,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
      * @param jmx whether to support JMX or not.
      * @param jndiLocation the JNDI path of the {@link javax.sql.DataSource}.
      * @param decoratorFactory the {@link DecoratorFactory} instance.
-     * @throws QueryJBuildException if the build process cannot be performed.
      */
     @SuppressWarnings("unchecked")
     protected void buildTemplate(

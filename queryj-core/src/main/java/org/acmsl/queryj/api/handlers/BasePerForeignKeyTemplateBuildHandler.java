@@ -123,7 +123,6 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
      * @param metadataManager the database metadata manager.
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
      * @param templateFactory the template factory.
-     * @throws QueryJBuildException if the build process cannot be performed.
      */
     protected void buildTemplates(
         @NotNull final QueryJCommand parameters,
