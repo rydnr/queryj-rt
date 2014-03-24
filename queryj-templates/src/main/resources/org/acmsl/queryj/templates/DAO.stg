@@ -984,7 +984,6 @@ create4(table, parent, repository, C) ::= <<
 <endif>
  * @param factory the {@link <table.name.voName>ValueObjectFactory}
  * instance.
- * @throws DataAccessException if the operation fails.
  */
 <nullable(C=C)>
 <if(table.voDecorated)>
