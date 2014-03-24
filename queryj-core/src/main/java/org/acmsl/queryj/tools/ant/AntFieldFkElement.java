@@ -87,7 +87,7 @@ public class AntFieldFkElement
      * Specifies the fk field.
      * @param field the field.
      */
-    protected void setField(final String field)
+    protected void setField(@NotNull final String field)
     {
         m__strField = field;
     }
