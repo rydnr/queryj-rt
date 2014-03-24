@@ -396,7 +396,7 @@ public abstract class AbstractTemplatesTest<G, F>
     }
 
     /**
-     * Retrieves the row map (table name > static rows.
+     * Retrieves the row map (table name &gt; static rows).
      * @return such map.
      */
     @NotNull
