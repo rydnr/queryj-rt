@@ -165,7 +165,6 @@ public class Log4JInitializerHandler
         /**
          * Instantiate a WriterAppender and set the output destination to
          * <code>writer</code>.
-         * <p/>
          * <p>The <code>writer</code> must have been previously opened by
          * the user.
          */
