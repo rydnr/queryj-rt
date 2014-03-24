@@ -291,8 +291,7 @@ public class SqlElement<T>
     }
     
     /**
-     * Retrieves the <i>repositoryScope</i> attribute.
-     * @return such information.
+     * {@inheritDoc}
      */
     @Override
     @Nullable
