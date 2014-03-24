@@ -164,8 +164,8 @@ public class Table
      * @return the formatted text.
      */
     protected String toString(
-        final String className,
-        final String name,
+        @NotNull final String className,
+        @Nullable final String name,
         @Nullable final List<Field> fields)
     {
         @NotNull StringBuilder result = new StringBuilder();
