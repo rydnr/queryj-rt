@@ -183,7 +183,7 @@ public class <C.class_name>
      */
     @Override
     protected void storeTemplates(
-        @NotNull final List\<<def.name.capitalized>Template> templates,
+        @NotNull final List\<<def.name.noExtension>Template> templates,
         @NotNull final QueryJCommand parameters)
     {
         new QueryJCommandWrapper\<List\<<def.name.capitalized>Template\>>(parameters)
