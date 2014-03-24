@@ -59,7 +59,11 @@ import org.checkthread.annotations.ThreadSafe;
 public class ImplicitDAOResult<T>
     extends  AbstractResult<T>
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = -8715430319121603602L;
+
     /**
      * The <i>DAO</i> attribute.
      */
