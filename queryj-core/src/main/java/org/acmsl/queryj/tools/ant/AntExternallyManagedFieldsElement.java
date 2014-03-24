@@ -146,6 +146,7 @@ public class AntExternallyManagedFieldsElement
      * @throws BuildException if the element is not supported.
      */
     @Nullable
+    @Override
     public Object createDynamicElement(@NotNull final String name)
     {
         @Nullable final AntFieldElement result;
