@@ -2143,7 +2143,6 @@ public class AntProjectAdapter
 
     /**
      * {@inheritDoc}
-     * @return
      */
     @Override
     @NotNull
