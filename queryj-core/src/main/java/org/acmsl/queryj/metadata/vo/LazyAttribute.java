@@ -69,6 +69,9 @@ import java.util.List;
 public class LazyAttribute
     extends  AbstractAttribute<String>
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = -3002626986582985895L;
 
     /**
