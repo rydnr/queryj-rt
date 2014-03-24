@@ -103,6 +103,7 @@ public class ConnectionFlagsRefElement
      * @param object the object to compare to.
      * @return the result of such comparison.
      */
+    @Override
     public boolean equals(final Object object)
     {
         boolean result = false;
