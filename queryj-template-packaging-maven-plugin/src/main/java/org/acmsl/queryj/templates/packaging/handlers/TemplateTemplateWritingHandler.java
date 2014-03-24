@@ -91,7 +91,7 @@ public class TemplateTemplateWritingHandler
     protected TemplatePackagingTemplateGenerator<TemplateTemplate<DefaultTemplatePackagingContext>, DefaultTemplatePackagingContext>
         retrieveTemplateGenerator(final boolean caching, final int threadCount)
     {
-        return new TemplatePackagingTemplateGenerator<TemplateTemplate<DefaultTemplatePackagingContext>, DefaultTemplatePackagingContext>(caching, threadCount);
+        return new TemplatePackagingTemplateGenerator<>(caching, threadCount);
     }
 
     /**
