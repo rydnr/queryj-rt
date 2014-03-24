@@ -1162,7 +1162,6 @@ public abstract class AbstractJdbcMetadataManager
      * @param metadataExtractionListener the metadata extraction listener.
      * @param caseSensitiveness whether the checks are case sensitive or not.
      * @return the list of all table names.
-     * @throws SQLException if the database operation fails.
      */
     protected abstract List<TableIncompleteValueObject> extractTableNamesAndComments(
         @NotNull final DatabaseMetaData metaData,
