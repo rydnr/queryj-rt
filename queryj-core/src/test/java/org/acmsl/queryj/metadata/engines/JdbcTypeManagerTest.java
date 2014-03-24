@@ -1093,7 +1093,6 @@ public class JdbcTypeManagerTest
 
     /**
      * Tests whether the correct PreparedStatement.setXX is called for byte[] parameters.
-     * @throws Exception
      */
     @Test
     public void setBytesInPreparedStatementViaReflectionWorks()
