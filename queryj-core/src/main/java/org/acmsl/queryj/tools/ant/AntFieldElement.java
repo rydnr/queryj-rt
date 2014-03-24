@@ -179,8 +179,8 @@ public class AntFieldElement
      * Creates a dynamic element.
      * @param name the element's name.
      * @return the object.
-     * @throws BuildException if the element is not supported.
      */
+    @Override
     @Nullable
     public Object createDynamicElement(final String name)
     {
