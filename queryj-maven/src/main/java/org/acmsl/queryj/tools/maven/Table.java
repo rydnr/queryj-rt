@@ -77,7 +77,7 @@ public class Table
      * Specifies the name.
      * @param name the table name.
      */
-    public void setName(final String name)
+    public void setName(@NotNull final String name)
     {
         immutableSetName(name);
     }
