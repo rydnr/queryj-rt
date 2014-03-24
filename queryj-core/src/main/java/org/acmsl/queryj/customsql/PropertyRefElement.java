@@ -57,6 +57,9 @@ public class PropertyRefElement
     extends  AbstractIdElement<String>
     implements PropertyRef
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = -944778567031371562L;
 
     /**
