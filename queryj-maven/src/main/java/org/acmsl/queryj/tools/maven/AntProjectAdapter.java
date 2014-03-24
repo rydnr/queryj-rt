@@ -1514,7 +1514,6 @@ public class AntProjectAdapter
 
     /**
      * See {@link Project#executeTarget(String)}.
-     * @see Project#executeTarget().
      * @param targetName the target name.
      * @param project the {@link Project} instance.
      */
