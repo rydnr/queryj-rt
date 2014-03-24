@@ -77,7 +77,7 @@ public abstract class MetadataManagerTableDAO<M extends MetadataManager>
      * The cache of DAO -> Table.
      */
     private static final Map<String, Table<String, Attribute<String>, List<Attribute<String>>>> FIND_BY_DAO_CACHE =
-        new HashMap<String, Table<String, Attribute<String>, List<Attribute<String>>>>();
+        new HashMap<>();
 
     /**
      * The cache miss.
