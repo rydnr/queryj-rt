@@ -118,6 +118,9 @@ import java.util.Properties;
 @SuppressWarnings("unused")
 public abstract class AbstractTemplatesTest<G, F>
 {
+    /**
+     * String literal:
+     */
     public static final String PARSER_ERROR = "Parser error: ";
     public static final String CANNOT_READ_FILE = "Cannot read file: ";
 
