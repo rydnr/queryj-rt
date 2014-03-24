@@ -292,7 +292,7 @@ public class ProcedureParameterMetadata
     public int compareTo(final Object object)
         throws  ClassCastException
     {
-        int result = 1;
+        final int result;
 
         if  (object instanceof ProcedureParameterMetadata)
         {
