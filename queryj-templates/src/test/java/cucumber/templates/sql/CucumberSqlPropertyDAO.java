@@ -56,7 +56,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
+/**
  * Minimal {@link SqlPropertyDAO} implementation on top of a list of {@link Property properties}
  * and a given {@link Result}.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
