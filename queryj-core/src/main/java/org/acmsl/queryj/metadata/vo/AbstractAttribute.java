@@ -46,7 +46,6 @@ import org.apache.commons.lang.builder.HashCodeBuilder;
 /*
  * Importing some JetBrains annotations.
  */
-import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
