@@ -222,6 +222,8 @@ public class ProcedureParameterMetadata
      * contained in this instance.
      * @return such information.
      */
+    @NotNull
+    @Override
     public String toString()
     {
         return
