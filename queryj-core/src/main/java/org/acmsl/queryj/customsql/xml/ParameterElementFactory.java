@@ -89,7 +89,7 @@ public class ParameterElementFactory
     private static final String DATE_FORMAT_ES = "DD/MM/yyyy";
 
     /**
-     * The date format in S.
+     * The date format in Spanish.
      */
     private static final String DATE_FORMAT_EN = "yyyy/DD/MM";
 
