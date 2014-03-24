@@ -194,7 +194,7 @@ public class AntFieldElement
 
             if  (t_cFieldFks == null)
             {
-                t_cFieldFks = new ArrayList<AntFieldFkElement>();
+                t_cFieldFks = new ArrayList<>();
                 setFieldFks(t_cFieldFks);
             }
 
