@@ -64,7 +64,11 @@ public class ConnectionFlagsElement
     extends  AbstractIdElement<String>
     implements  ConnectionFlags
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = 7483005190203528643L;
+
     /**
      * The <i>transactionisolation</i> attribute.
      */
