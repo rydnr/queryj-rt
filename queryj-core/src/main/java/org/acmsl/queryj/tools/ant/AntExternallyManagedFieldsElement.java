@@ -133,6 +133,7 @@ public class AntExternallyManagedFieldsElement
      * @param name the attribute name.
      * @param value the attribute value.
      */
+    @Override
     public void setDynamicAttribute(@NotNull final String name, @NotNull final String value)
     {
         throw new BuildException("Attributes are not supported");
