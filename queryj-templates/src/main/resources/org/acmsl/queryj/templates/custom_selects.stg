@@ -228,7 +228,6 @@ custom_update_or_insert(cs) ::= <<
  * \<b><cs.description>\</b>.
  <cs.parameters:{ p | <attribute_javadoc(name=p.name.lowercased)>}; separator="\n">
  * @return the number of entities updated.
- * @throws DataAccessException if the operation fails.
  */
 public int <cs.name.uncapitalized>(
     <cs.parameters:{ p | <attribute_declaration(attr=p, C=C)>}; separator=",\n">)
