@@ -815,7 +815,6 @@ create(table, parent, repository, C) ::= <<
 <else>
  <table.own.minus.readOnly.minus.externallyManagedAttributes:{ attr | <attribute_javadoc(attr=attr)>}; separator="\n">
 <endif>
- * @throws DataAccessException if the operation fails.
  */
 <notnull(C=C)>
 <if(table.voDecorated)>
