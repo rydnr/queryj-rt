@@ -88,7 +88,6 @@ public abstract class ElementFactory
      * Creates a Customer value object from given SAX attributes.
      * @param attributes the attributes.
      * @return the Customer information.
-     * @precondition attributes != null
      */
     @Nullable
     public Object createObject(final Attributes attributes)
