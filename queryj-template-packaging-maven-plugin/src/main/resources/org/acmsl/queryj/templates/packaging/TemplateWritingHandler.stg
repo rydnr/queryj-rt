@@ -143,7 +143,7 @@ public class <C.class_name>
 
         if (aux == null)
         {
-            result = new ArrayList\<<def.name.capitalized>Template>(0);
+            result = new ArrayList\<<def.name.noExtension>Template>(0);
         }
         else
         {
