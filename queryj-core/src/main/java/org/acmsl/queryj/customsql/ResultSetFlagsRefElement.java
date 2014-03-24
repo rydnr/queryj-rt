@@ -48,7 +48,7 @@ import org.checkthread.annotations.ThreadSafe;
  * non-xml implementations):
  *  <!ELEMENT resultset-ref EMPTY&gt;
  *  <!ATTLIST resultset-flags-ref
- *    id IDREF #REQUIRED>
+ *    id IDREF #REQUIRED&gt;
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  */
 @ThreadSafe
