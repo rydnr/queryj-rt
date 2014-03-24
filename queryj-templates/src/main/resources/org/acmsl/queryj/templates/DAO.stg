@@ -1202,7 +1202,6 @@ update2(table, parent, repository, C) ::= <<
  * @param dataAccessManager the {@link <repository.capitalized>DataAccessManager} instance.
 <endif>
  * @return the number of entities updated.
- * @throws DataAccessException if the operation fails.
  */
 protected int update(
 <if(parent)>
