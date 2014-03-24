@@ -83,6 +83,9 @@ import java.security.NoSuchAlgorithmException;
 public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends TemplateContext>
     implements TemplateGenerator<N, C>
 {
+    /**
+     * String literal:
+     */
     protected static final String CANNOT_SERIALIZE_TEMPLATE_LITERAL = "Cannot serialize template ";
 
     /**
