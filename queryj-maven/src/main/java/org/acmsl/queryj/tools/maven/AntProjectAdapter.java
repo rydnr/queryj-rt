@@ -1441,7 +1441,7 @@ public class AntProjectAdapter
     }
 
     /**
-     * @see {@link Project#defaultInput(byte[], int, int)}
+     * @see Project#defaultInput(byte[], int, int)
      * @param buffer the buffer.
      * @param offset the offset.
      * @param length the buffer length.
