@@ -135,6 +135,10 @@ public class AntFieldFkElement
                 "Nested elements inside <fk> are not supported");
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
     @Override
     public String toString()
     {
