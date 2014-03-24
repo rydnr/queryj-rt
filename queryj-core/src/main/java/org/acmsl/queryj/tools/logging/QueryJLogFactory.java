@@ -180,8 +180,6 @@ public class QueryJLogFactory
      * @param name Logical name of the <code>Log</code> instance to be
      * returned (the meaning of this name is only known to the underlying
      * logging implementation that is being wrapped)
-     * @throws LogConfigurationException if a suitable <code>Log</code>
-     * instance cannot be returned
      */
     @Override
     @Nullable
