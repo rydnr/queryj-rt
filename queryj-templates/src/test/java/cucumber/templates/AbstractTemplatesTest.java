@@ -119,7 +119,7 @@ import java.util.Properties;
 public abstract class AbstractTemplatesTest<G, F>
 {
     /**
-     * String literal:
+     * String literal: "Parser error: ".
      */
     public static final String PARSER_ERROR = "Parser error: ";
     public static final String CANNOT_READ_FILE = "Cannot read file: ";
