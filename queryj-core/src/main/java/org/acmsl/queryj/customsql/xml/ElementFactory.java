@@ -44,6 +44,7 @@ import org.acmsl.commons.utils.ConversionUtils;
  */
 import org.apache.commons.digester.Digester;
 import org.apache.commons.digester.ObjectCreationFactory;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
@@ -91,7 +92,7 @@ public abstract class ElementFactory
      */
     @Nullable
     @Override
-    public Object createObject(final Attributes attributes)
+    public Object createObject(@NotNull final Attributes attributes)
       throws SAXException
     {
         return createObject(attributes, getDigester(), ConversionUtils.getInstance());
