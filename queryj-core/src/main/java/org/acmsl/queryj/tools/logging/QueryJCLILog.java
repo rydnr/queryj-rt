@@ -358,7 +358,6 @@ public class QueryJCLILog
      * @param message the message.
      * @param throwable the cause.
      * @param printStream the print stream.
-     * @precondition printStream != null
      */
     protected void log(
         final Object message,
