@@ -854,6 +854,7 @@ public class TableTestHelper
     protected static class _AttributeIncompleteValueObject
         extends AttributeIncompleteValueObject
     {
+
         /**
          * Creates a new instance.
          * @param staticAttribute the static attribute.
