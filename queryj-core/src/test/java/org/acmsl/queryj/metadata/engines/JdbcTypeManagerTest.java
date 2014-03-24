@@ -973,7 +973,6 @@ public class JdbcTypeManagerTest
 
     /**
      * Tests whether the helper method findOutClass() works.
-     * @throws Exception
      */
     @Test
     public void findOutClassWorks()
