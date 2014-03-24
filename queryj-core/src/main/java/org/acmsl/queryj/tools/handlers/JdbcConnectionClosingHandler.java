@@ -86,6 +86,9 @@ public class JdbcConnectionClosingHandler
      */
     private static final Object LOCK = new Object();
 
+    /**
+     * String literal:
+     */
     protected static final String INTERRUPTED_WHILE_WAITING_FOR_THE_THREADS_TO_FINISH =
         "Interrupted while waiting for the threads to finish";
 
