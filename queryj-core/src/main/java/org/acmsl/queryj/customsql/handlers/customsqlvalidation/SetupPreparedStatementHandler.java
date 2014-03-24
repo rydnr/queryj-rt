@@ -49,11 +49,6 @@ import org.acmsl.queryj.customsql.exceptions.PreparedStatementNotAvailableForVal
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
 
 /*
- * Importing Apache Commons Logging classes.
- */
-import org.apache.commons.logging.Log;
-
-/*
  * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
