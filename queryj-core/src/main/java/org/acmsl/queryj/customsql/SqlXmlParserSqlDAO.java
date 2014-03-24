@@ -88,7 +88,7 @@ public class SqlXmlParserSqlDAO
     private static final Map<String, List<Sql<String>>> FIND_BY_RESULTID_CACHE = new HashMap<>();
 
     /**
-     * The cache of type -> List<Sql<String>>
+     * The cache of type -&gt; List<Sql<String>>
      */
     private static final Map<String, List<Sql<String>>> FIND_BY_TYPE_CACHE = new HashMap<>();
 
