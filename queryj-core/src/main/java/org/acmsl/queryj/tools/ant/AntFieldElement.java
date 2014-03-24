@@ -72,8 +72,14 @@ public class AntFieldElement
     extends  AbstractField
     implements  DynamicConfigurator
 {
-
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = 5709131443641728342L;
+
+    /**
+     * String literal:
+     */
     public static final String TABLE_NAME_LITERAL = "table-name";
     public static final String KEYWORD_LITERAL = "keyword";
     public static final String RETRIEVAL_QUERY_LITERAL = "retrieval-query";
