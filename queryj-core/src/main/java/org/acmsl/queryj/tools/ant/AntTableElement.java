@@ -90,7 +90,7 @@ public class AntTableElement
      * Specifies the table name.
      * @param name the table name.
      */
-    public void setName(final String name)
+    public void setName(@NotNull final String name)
     {
         immutableSetName(name);
     }
