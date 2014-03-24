@@ -1116,7 +1116,6 @@ public class JdbcTypeManagerTest
 
     /**
      * Tests whether the correct PreparedStatement.setXX is called for boolean parameters.
-     * @throws Exception
      */
     @Test
     public void setBooleanInPreparedStatementViaReflectionWorks()
