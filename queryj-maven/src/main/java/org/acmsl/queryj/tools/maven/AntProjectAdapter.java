@@ -1534,7 +1534,7 @@ public class AntProjectAdapter
     }
 
     /**
-     * See {@link roject#executeSortedTargets(Vector).
+     * See {@link Project#executeSortedTargets(Vector)}.
      * @param sortedTargets the target list.
      * @param project the {@link Project} instance.
      */
