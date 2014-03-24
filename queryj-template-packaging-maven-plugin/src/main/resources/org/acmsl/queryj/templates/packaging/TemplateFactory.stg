@@ -142,7 +142,7 @@ public class <C.class_name>
      */
     @Override
     @NotNull
-    public <def.name.capitalized>Template createTemplate(
+    public <def.name.noExtension>Template createTemplate(
         @NotNull final MetadataManager metadataManager,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final DecoratorFactory decoratorFactory,
