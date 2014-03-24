@@ -547,8 +547,6 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
      * @param o the object to be compared.
      * @return a negative integer, zero, or a positive integer as this object
      *         is less than, equal to, or greater than the specified object.
-     * @throws ClassCastException if the specified object's type prevents it
-     *                            from being compared to this object.
      */
     @Override
     public int compareTo(@NotNull final Table<V, A, L> o)
