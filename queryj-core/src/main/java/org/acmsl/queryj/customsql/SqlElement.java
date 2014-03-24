@@ -320,7 +320,7 @@ public class SqlElement<T>
     }
 
     /**
-     * {}
+     * {@inheritDoc}
      */
     @Override
     @NotNull
