@@ -143,7 +143,7 @@ public abstract class TemplatePackagingWritingHandler
         @NotNull final QueryJCommand parameters)
     {
         return
-            new TemplateGeneratorThread<T, C, TG>(
+            new TemplateGeneratorThread<>(
                 generator,
                 template,
                 outputDir,
