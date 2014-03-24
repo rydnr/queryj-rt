@@ -1290,7 +1290,6 @@ update4(table, parent, repository, C) ::= <<
 <endif>
  * @param daoListener the {@link <repository.capitalized>DAOListener} instance.
  * @return the number of entities updated.
- * @throws DataAccessException if the operation fails.
  */
 protected int update(
 <if(parent)>
