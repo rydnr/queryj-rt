@@ -77,7 +77,6 @@ public class ParameterRefElementFactory
      * @param digester the Digester instance.
      * @param conversionUtils the ConversionUtils instance.
      * @return the &lt;parameter-ref&gt; information.
-     * @precondition conversionUtils != null
      */
     @Nullable
     public Object createObject(
