@@ -93,7 +93,7 @@ public class <C.class_name>
     /**
      * Builds a bundle consisting of
      * {@link <def.name.capitalized>TemplateBuildHandler}
-     * and {@link <def.name.capitalized>TemplateWritingHandler}.
+     * and {@link <def.name.noExtension>TemplateWritingHandler}.
      */
     public <C.class_name>()
     {
