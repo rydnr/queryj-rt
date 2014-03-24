@@ -142,7 +142,6 @@ extends TestCase
   
   /**
   * Tests CompositeQueryJCommandHandlerTesthandle()
-  * @throws Exception if an unexpected situation occurs.
   * @see org.acmsl.queryj.tools.handlers.CompositeQueryJCommandHandler#handle(org.acmsl.queryj.tools.QueryJCommand)
   */
   public void testHandle()

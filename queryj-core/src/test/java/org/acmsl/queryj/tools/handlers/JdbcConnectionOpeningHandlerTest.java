@@ -142,7 +142,6 @@ extends TestCase
   
   /**
   * Tests JdbcConnectionOpeningHandlerTesthandle()
-  * @throws Exception if an unexpected situation occurs.
   * @see org.acmsl.queryj.tools.handlers.JdbcConnectionOpeningHandler#handle(org.acmsl.commons.patterns.Command)
   */
   public void testHandle()

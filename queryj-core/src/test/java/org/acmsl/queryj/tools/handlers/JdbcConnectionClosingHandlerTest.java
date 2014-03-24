@@ -142,7 +142,6 @@ extends TestCase
   
   /**
   * Tests JdbcConnectionClosingHandlerTesthandle()
-  * @throws Exception if an unexpected situation occurs.
   * @see org.acmsl.queryj.tools.handlers.JdbcConnectionClosingHandler#handle(org.acmsl.commons.patterns.Command)
   */
   public void testHandle()
