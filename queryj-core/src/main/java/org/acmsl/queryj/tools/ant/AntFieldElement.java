@@ -93,7 +93,7 @@ public class AntFieldElement
     public static final String RETRIEVAL_QUERY_LITERAL = "retrieval-query";
 
     /**
-     * String literal:
+     * String literal: "Attribute ".
      */
     static final String ATTRIBUTE_LITERAL = "Attribute ";
     /**
