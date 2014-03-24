@@ -66,6 +66,9 @@ import org.checkthread.annotations.ThreadSafe;
 public class AntExternallyManagedFieldsElement
     implements  DynamicConfigurator
 {
+    /**
+     * String literal: "field".
+     */
     public static final String FIELD_LITERAL = "field";
 
     /**
