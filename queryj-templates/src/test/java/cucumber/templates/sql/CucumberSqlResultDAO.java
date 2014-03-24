@@ -55,7 +55,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
+/**
  * A {@link SqlResultDAO} implementation wrapping a single {@link Result} instance.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
  * @since 2013/06/25
