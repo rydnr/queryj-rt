@@ -1594,7 +1594,7 @@ public class AntProjectAdapter
     }
 
     /**
-     * @see {@link Project#addIdReference(String, Object)}.
+     * @see Project#addIdReference(String, Object).
      * @param id the id.
      * @param value the reference.
      * @param project the {@link Project} instance.
