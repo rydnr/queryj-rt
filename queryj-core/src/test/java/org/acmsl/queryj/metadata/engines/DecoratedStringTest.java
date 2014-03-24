@@ -77,6 +77,6 @@ public class DecoratedStringTest
     @Test
     public void remove_extension_does_nothing_for_texts_with_no_dots()
     {
-        Assert.assertEquals("GCycleTypes", new DecoratedString("bla..getCapitalized().getValue());
+        Assert.assertEquals("GCycleTypes", new DecoratedString("bla.txt").removeExtension().getValue());
     }
 }
