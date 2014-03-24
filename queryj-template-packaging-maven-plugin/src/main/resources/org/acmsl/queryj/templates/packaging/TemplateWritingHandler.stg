@@ -137,7 +137,7 @@ public class <C.class_name>
     {
         @NotNull final List\<<def.name.noExtension>Template> result;
 
-        @Nullable final List\<<def.name.capitalized>Template> aux =
+        @Nullable final List\<<def.name.noExtension>Template> aux =
             new QueryJCommandWrapper\<List\<<def.name.capitalized>Template\>>(parameters)
                 .getSetting(<def.name.capitalized>TemplateBuildHandler.TEMPLATES_KEY);
 
