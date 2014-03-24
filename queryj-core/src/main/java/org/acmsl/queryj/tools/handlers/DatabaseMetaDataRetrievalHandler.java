@@ -896,8 +896,6 @@ public abstract class DatabaseMetaDataRetrievalHandler
      * @param metaData the {@link DatabaseMetaData} instance.
      * @param parameters the parameter map.
      * @return the metadata manager instance.
-     * @throws QueryJBuildException if the retrieval process cannot be
-     * performed.
      */
     @Nullable
     @SuppressWarnings("unchecked")
