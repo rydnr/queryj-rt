@@ -36,7 +36,7 @@
 package cucumber.templates;
 
 /*
- * Importing project classes.
+ * Importing QueryJ Core classes.
  */
 import cucumber.templates.sql.CucumberSqlDAO;
 import cucumber.templates.sql.CucumberSqlParameterDAO;
