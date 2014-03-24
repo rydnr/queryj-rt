@@ -136,6 +136,7 @@ public class AntTableElement
      * @param name the attribute name.
      * @param value the attribute value.
      */
+    @Override
     public void setDynamicAttribute(@NotNull final String name, @NotNull final String value)
     {
         if  ("name".equals(name))
