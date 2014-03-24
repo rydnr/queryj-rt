@@ -114,7 +114,7 @@ class(def, C) ::= <<
 public class <C.class_name>
     extends Base<def.type.noExtension>TemplateBuildHandler\<
                 <def.name.capitalized>Template,
-                <def.type.capitalized>TemplateContext,
+                <def.type.noExte>TemplateContext,
                 <def.name.capitalized>TemplateFactory>
 {
     /**
