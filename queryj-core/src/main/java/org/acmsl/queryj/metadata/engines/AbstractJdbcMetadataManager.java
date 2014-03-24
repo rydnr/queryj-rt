@@ -1001,7 +1001,7 @@ public abstract class AbstractJdbcMetadataManager
     /**
      * Appends parent attributes into their children.
      * @param tables the list of tables.
-     * @param attributes the map of tableName -> attributes.
+     * @param attributes the map of tableName -&gt; attributes.
      */
     protected void bindAttributes(
         @NotNull final Collection<TableIncompleteValueObject> tables,
