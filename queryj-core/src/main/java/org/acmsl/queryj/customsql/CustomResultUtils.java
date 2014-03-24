@@ -366,6 +366,7 @@ public class CustomResultUtils
      * Retrieves the table associated to the {@link Sql}.
      * @param sql the {@link Sql}.
      * @param tableDAO the {@link TableDAO}.
+     * @param <T> the type.
      * @return the table name.
      */
     @Nullable
