@@ -33,7 +33,7 @@
 package org.acmsl.queryj.metadata;
 
 /*
- * Importing some project-specific classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.metadata.vo.Attribute;
