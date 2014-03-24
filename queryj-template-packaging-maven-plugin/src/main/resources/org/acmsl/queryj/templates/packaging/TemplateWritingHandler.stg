@@ -123,7 +123,7 @@ public class <C.class_name>
      */
     @NotNull
     @Override
-    protected <def.name.capitalized>TemplateGenerator retrieveTemplateGenerator(final boolean caching, final int threadCount)
+    protected <def.name.noExtension>TemplateGenerator retrieveTemplateGenerator(final boolean caching, final int threadCount)
     {
         return new <def.name.capitalized>TemplateGenerator(caching, threadCount);
     }
