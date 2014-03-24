@@ -1020,8 +1020,6 @@ public abstract class DatabaseMetaDataRetrievalHandler
      * @param caseSensitive whether the engine is case sensitive or not.
      * @param engine the engine.
      * @return the metadata manager instance.
-     * @throws QueryJBuildException whenever the required
-     * parameters are not present or valid.
      */
     @NotNull
     protected MetadataManager buildMetadataManager(
@@ -1237,7 +1235,6 @@ public abstract class DatabaseMetaDataRetrievalHandler
      * Retrieves the product name.
      * @param metaData the database metadata.
      * @return the product name.
-     * @throws QueryJBuildException if the check fails.
      */
     @NotNull
     protected String retrieveProductName(@NotNull final DatabaseMetaData metaData)
