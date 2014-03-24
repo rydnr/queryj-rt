@@ -1576,7 +1576,7 @@ public class AntProjectAdapter
     }
 
     /**
-     * @see Project#inheritIDReferences(Project).
+     * See {@link Project#inheritIDReferences(Project)}.
      * @param parent the parent project.
      * @param project the {@link Project} instance.
      */
