@@ -81,7 +81,7 @@ public class AntTableElement
      * Specifies the table name.
      * @param name the table name.
      */
-    protected final void immutableSetName(final String name)
+    protected final void immutableSetName(@NotNull final String name)
     {
         m__strTableName = name;
     }
