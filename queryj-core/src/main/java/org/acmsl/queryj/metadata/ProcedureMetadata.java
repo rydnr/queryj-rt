@@ -183,6 +183,8 @@ public class ProcedureMetadata
      * contained in this instance.
      * @return such information.
      */
+    @NotNull
+    @Override
     public String toString()
     {
         return
