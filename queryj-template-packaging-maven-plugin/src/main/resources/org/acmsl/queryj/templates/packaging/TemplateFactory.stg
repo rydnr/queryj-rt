@@ -160,7 +160,7 @@ public class <C.class_name>
         @NotNull final List\<Row\<String\>> staticContents)
     {
         return
-            new <def.name.capitalized>Template(
+            new <def.name.noExtension>Template(
                 new <def.type.capitalized>TemplateContext(
                     metadataManager,
                     customSqlProvider,
