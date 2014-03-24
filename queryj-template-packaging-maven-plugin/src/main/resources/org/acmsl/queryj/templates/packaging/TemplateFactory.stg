@@ -113,7 +113,7 @@ class(def, C) ::= <<
 @ThreadSafe
 public class <C.class_name>
     implements <def.type.capitalized>TemplateFactory\<
-               <def.name.capitalized>Template, <def.type.capitalized>TemplateContext>,
+               <def.name.noExtension>Template, <def.type.capitalized>TemplateContext>,
                Singleton
 {
     /**
