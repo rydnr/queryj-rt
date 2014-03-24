@@ -391,7 +391,6 @@ public class RetrieveResultPropertiesHandler
      * @param instanceClass the instance class.
      * @param methodName the method name.
      * @return the <code>Method</code> instance.
-     * @throws NoSuchMethodException if the desired method is not available.
      */
     @NotNull
     protected Method retrieveMethod(
@@ -419,8 +418,6 @@ public class RetrieveResultPropertiesHandler
      * Retrieves the properties for current SQL.
      * @param command the command.
      * @return the properties.
-     * @throws PropertiesNotAvailableForValidationException if this method is called before the
-     * required previous handlers (up to ExecuteQueryHandler).
      */
     @NotNull
     public List<Property<String>> retrieveCurrentProperties(final QueryJCommand command)
