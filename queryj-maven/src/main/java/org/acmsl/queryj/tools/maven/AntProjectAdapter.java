@@ -1721,7 +1721,7 @@ public class AntProjectAdapter
     }
 
     /**
-     * @see {@link Project#getElementName(Object)}.
+     * @see Project#getElementName(Object).
      * @param element the element.
      * @param project the {@link Project} instance.
      * @return the name.
