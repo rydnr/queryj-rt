@@ -1044,7 +1044,6 @@ public class JdbcTypeManagerTest
 
     /**
      * Tests whether the correct PreparedStatement.setXX is called for Array parameters.
-     * @throws Exception
      */
     @Test
     public void setArrayInPreparedStatementViaReflectionWorks()
