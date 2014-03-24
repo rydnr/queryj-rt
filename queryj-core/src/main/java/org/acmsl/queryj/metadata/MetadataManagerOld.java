@@ -277,7 +277,7 @@ public interface MetadataManagerOld
     /**
      * Retrieves the foreign keys of given table.
      * @param tableName the table name.
-     * @return its foreign keys, a structure of<br/>
+     * @return its foreign keys, a structure of
      * <pre>
      * [referredTableName1]
      *   {foreign-key1-attribute1,..foreign-key1-attributeN}
