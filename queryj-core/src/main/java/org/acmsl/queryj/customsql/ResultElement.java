@@ -140,7 +140,6 @@ public class ResultElement<T>
     @SuppressWarnings("unused")
     protected int hashCode(
         @NotNull final T id,
-        @NotNull final T classValue,
         @NotNull final Collection<PropertyRef> propertyRefs)
     {
         return ("" + id).toLowerCase(Locale.US).hashCode() + Result.class.hashCode();
