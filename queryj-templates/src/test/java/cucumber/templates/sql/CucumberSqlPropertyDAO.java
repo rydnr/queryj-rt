@@ -204,7 +204,7 @@ public class CucumberSqlPropertyDAO
      * {@link Result}.
      * @param resultId the {@link Result} identifier.
      * @param properties the properties.
-     * @param
+     * @param customResult the custom result.
      * @return the list of properties associated to given {@link Result}.
      */
     @NotNull
