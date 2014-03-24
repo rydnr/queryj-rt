@@ -129,7 +129,6 @@ public abstract class AbstractTemplateWritingHandler
      * @param parameters the parameters.
      * @param threadCount the thread count.
      * @param rootDir the root dir.
-     * @throws QueryJBuildException if the build process cannot be performed.
      */
     @ThreadSafe
     protected void writeTemplates(
