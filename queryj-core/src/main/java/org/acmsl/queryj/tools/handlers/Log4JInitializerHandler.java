@@ -325,7 +325,6 @@ public class Log4JInitializerHandler
 
         /**
          * Flushes the writer's contents.
-         * @throws IOException if the flushing fails.
          */
         @Override
         public void flush()
