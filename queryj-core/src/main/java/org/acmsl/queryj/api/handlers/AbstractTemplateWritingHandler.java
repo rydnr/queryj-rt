@@ -130,7 +130,6 @@ public abstract class AbstractTemplateWritingHandler
      * @param threadCount the thread count.
      * @param rootDir the root dir.
      */
-    @ThreadSafe
     protected void writeTemplates(
         @NotNull final QueryJCommand parameters,
         final int threadCount,
