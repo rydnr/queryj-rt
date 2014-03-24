@@ -79,7 +79,7 @@ public class DecoratedStringTest
     }
 
     /**
-     * Tests {@link DecoratedString#getNormalized()}
+     * Tests {@link DecoratedString#getNormalized().getUppercased()}
      */
     @Test
     public void testNormalizedUppercased()
@@ -109,7 +109,7 @@ public class DecoratedStringTest
     }
 
     /**
-     * Tests {@link DecoratedString#getSingular()}
+     * Tests {@link DecoratedString#getSingular().getCamelCase()}
      */
     @Test
     public void camelcase_works_also_when_converting_from_plural_to_singular()
@@ -125,7 +125,7 @@ public class DecoratedStringTest
     }
 
     /**
-     * Tests {@link DecoratedString#getSingular()}
+     * Tests {@link DecoratedString#getSingular().getCamelCase()}
      */
     @Test
     public void singleLine_works()
