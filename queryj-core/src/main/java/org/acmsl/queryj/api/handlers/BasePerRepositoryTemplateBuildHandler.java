@@ -132,7 +132,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
             retrieveJNDILocation(parameters),
             CachingDecoratorFactory.getInstance());
 
-        return result;
+        return false;
     }
 
     /**
