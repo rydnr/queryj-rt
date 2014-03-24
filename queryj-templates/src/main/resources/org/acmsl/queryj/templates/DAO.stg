@@ -1888,7 +1888,6 @@ public static class <attr.name.capitalized>ResultSetExtractor
      * @param daoListener the {@link <repository.capitalized>DAOListener} instance.
      * @return the {@link <table.name.voName>} or \<code>null\</code>
      * if the operation returned no data.
-     * @throws DataAccessException with information about any
      * custom exception.
      */
     @SuppressWarnings("unchecked")
