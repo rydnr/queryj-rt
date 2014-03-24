@@ -115,6 +115,7 @@ public class Table
      * Specifies the fields.
      * @param fields the fields.
      */
+    @SuppressWarnings("unused")
     public void setFields(@NotNull final List<Field> fields)
     {
         immutableSetFields(fields);
