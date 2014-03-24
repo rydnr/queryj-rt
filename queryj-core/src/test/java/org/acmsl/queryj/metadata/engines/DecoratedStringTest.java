@@ -73,4 +73,7 @@ public class DecoratedStringTest
 
         Assert.assertEquals("GCycleTypes", instance.getCapitalized().getValue());
     }
+
+    @Test
+    public void remove_extension_
 }
