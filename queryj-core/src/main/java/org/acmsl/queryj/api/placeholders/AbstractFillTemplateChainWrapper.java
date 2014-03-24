@@ -145,7 +145,6 @@ public abstract class AbstractFillTemplateChainWrapper<C extends TemplateContext
      * be able to find out if two template realizations are equivalent. Usually,
      * generation timestamps,
      * documentation, etc. can be considered not relevant.
-     * @throws QueryJBuildException if the process fails.
      */
     @NotNull
     @Override
