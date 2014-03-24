@@ -127,7 +127,7 @@ public class ResultElement<T>
      */
     public int hashCode()
     {
-        return hashCode(getId(), getClassValue(), getPropertyRefs());
+        return hashCode(getId(), getPropertyRefs());
     }
 
     /**
