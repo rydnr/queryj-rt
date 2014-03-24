@@ -142,7 +142,7 @@ public class AntFieldElement
      * @param value the attribute value.
      */
     @Override
-    public void setDynamicAttribute(final String name, final String value)
+    public void setDynamicAttribute(@NotNull final String name, @NotNull final String value)
     {
         if  ("name".equals(name))
         {
