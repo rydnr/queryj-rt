@@ -117,7 +117,7 @@ public class AntExternallyManagedFieldsElement
 
         if (t_cFields == null)
         {
-            result = new ArrayList<AntFieldElement>();
+            result = new ArrayList<>();
             setFields(result);
         }
         else
