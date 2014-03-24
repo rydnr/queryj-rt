@@ -457,7 +457,7 @@ public abstract class AbstractTemplateWritingHandler
 
         if (aux == null)
         {
-            result = new ArrayList<Future<T>>(0);
+            result = new ArrayList<>(0);
         }
         else
         {
