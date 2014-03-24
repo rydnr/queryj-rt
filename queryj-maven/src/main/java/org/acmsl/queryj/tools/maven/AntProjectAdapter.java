@@ -2017,7 +2017,7 @@ public class AntProjectAdapter
     }
 
     /**
-     * @see {@link Project#log(Task, String, int)}.
+     * @see Project#log(Task, String, int).
      * @param task the task.
      * @param message the message.
      * @param throwable the error.
