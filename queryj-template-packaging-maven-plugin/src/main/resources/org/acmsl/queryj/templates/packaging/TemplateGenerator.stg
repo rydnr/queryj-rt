@@ -92,7 +92,7 @@ class(def, C) ::= <<
  */
 @ThreadSafe
 public class <C.class_name>
-    extends AbstractQueryJTemplateGenerator\<<def.name.noExtensios>Template, <def.type.capitalized>TemplateContext>
+    extends AbstractQueryJTemplateGenerator\<<def.name.noExtension>Template, <def.type.capitalized>TemplateContext>
     implements <def.type.capitalized>TemplateGenerator\<<def.name.noExtension>Template, <def.type.capitalized>TemplateContext>
 {
     /**
