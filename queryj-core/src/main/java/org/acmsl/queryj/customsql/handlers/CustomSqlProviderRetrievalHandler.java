@@ -109,7 +109,6 @@ public class CustomSqlProviderRetrievalHandler
      * Builds the custom SQL provider.
      * @param parameters the parameter map.
      * @return such provider.
-     * @throws QueryJBuildException if some problem occurs.
      */
     @Nullable
     protected CustomSqlProvider buildCustomSqlProvider(@NotNull final QueryJCommand parameters)
