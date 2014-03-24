@@ -149,6 +149,7 @@ public class ProcedureParameterMetadata
      * Specifies the data type.
      * @param dataType the data type.
      */
+    @SuppressWarnings("unused")
     protected void setDataType(final int dataType)
     {
         immutableSetDataType(dataType);
