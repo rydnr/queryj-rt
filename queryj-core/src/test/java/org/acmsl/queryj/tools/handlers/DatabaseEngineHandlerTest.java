@@ -142,7 +142,6 @@ extends TestCase
   
   /**
   * Tests DatabaseEngineHandlerTesthandle()
-  * @throws Exception if an unexpected situation occurs.
   * @see org.acmsl.queryj.tools.handlers.DatabaseEngineHandler#handle(org.acmsl.queryj.tools.AntCommand)
   */
   public void testHandle()
