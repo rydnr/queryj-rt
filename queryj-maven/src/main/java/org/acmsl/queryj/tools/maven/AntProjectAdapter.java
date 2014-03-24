@@ -1900,7 +1900,7 @@ public class AntProjectAdapter
     }
 
     /**
-     * @see Project#log(String).
+     * See {@link Project#log(String)}.
      * @param message the message.
      * @param msgLevel either {@link Project#MSG_ERR}, {@link Project#MSG_WARN},
      * {@link Project#MSG_INFO}, {@link Project#MSG_VERBOSE}, or {@link Project#MSG_DEBUG}.
