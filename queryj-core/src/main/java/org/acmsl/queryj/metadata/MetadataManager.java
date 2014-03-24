@@ -38,6 +38,11 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing some project classes.
  */
+import org.acmsl.queryj.api.exceptions.QueryJException;
+import org.acmsl.queryj.metadata.engines.Engine;
+import org.acmsl.queryj.metadata.vo.Attribute;
+import org.acmsl.queryj.metadata.vo.ForeignKey;
+import org.acmsl.queryj.metadata.vo.Table;
 
 /*
  * Importing some JetBrains annotations.
