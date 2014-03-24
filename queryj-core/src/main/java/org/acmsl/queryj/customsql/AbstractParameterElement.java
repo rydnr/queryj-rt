@@ -43,7 +43,7 @@ import org.jetbrains.annotations.Nullable;
  * satisfy the following DTD extract (to describe the model even in
  * non-xml implementations):
  *  &lt;!ELEMENT <i>element</i> EMPTY>
- *  <!ATTLIST <i>element</i>
+ *  &lt;!ATTLIST <i>element</i>
  *    id ID #REQUIRED
  *    column_name CDATA #IMPLIED
  *    index CDATA #IMPLIED
