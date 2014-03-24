@@ -77,8 +77,8 @@ import org.acmsl.queryj.tools.PackageUtils;
  * Importing custom templates.
  */
 import org.acmsl.queryj.api.<def.type.capitalized>TemplateContext;
-import org.acmsl.queryj.templates.<def.name.capitalized>Template;
-import org.acmsl.queryj.templates.<def.name.capitalized>TemplateFactory;
+import org.acmsl.queryj.templates.<def.name.noExtension>Template;
+import org.acmsl.queryj.templates.<def.name.noExtension>TemplateFactory;
 
 /*
  * Importing StringTemplate classes.
