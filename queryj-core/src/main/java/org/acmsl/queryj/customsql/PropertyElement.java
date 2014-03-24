@@ -33,7 +33,7 @@
 package org.acmsl.queryj.customsql;
 
 /*
- * Importing some JetBrains annotations.
+ * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
 
