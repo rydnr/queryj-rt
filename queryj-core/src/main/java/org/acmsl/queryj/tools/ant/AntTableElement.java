@@ -167,7 +167,7 @@ public class AntTableElement
 
             if  (t_lFields == null)
             {
-                t_lFields = new ArrayList<AntFieldElement>();
+                t_lFields = new ArrayList<>();
                 setFields(t_lFields);
             }
 
