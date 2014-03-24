@@ -125,7 +125,6 @@ public class JdbcConnectionOpeningHandler
      * @param jdbcUserName the user name.
      * @param jdbcPassword the password.
      * @return the JDBC connection.
-     * @throws QueryJBuildException if the connection cannot be opened.
      */
     @NotNull
     public Connection openConnection(
@@ -162,8 +161,6 @@ public class JdbcConnectionOpeningHandler
      * @param username the username.
      * @param password the password.
      * @return the JDBC connection.
-     * @throws QueryJBuildException whenever the required
-     * parameters are not present or valid.
      */
     @NotNull
     protected Connection proceed(
