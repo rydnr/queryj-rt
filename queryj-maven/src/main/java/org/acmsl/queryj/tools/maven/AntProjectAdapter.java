@@ -1343,7 +1343,6 @@ public class AntProjectAdapter
      * @param typeName the name of the data type.
      * @param project the {@link Project} instance.
      * @return the new data type.
-     * @throws BuildException if the data type cannot be created.
      */
     protected Object createDataType(@NotNull final String typeName, @NotNull final Project project)
         throws BuildException
