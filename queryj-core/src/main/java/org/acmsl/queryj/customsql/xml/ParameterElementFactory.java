@@ -104,7 +104,6 @@ public class ParameterElementFactory
      * @param digester the Digester instance.
      * @param conversionUtils the ConversionUtils instance.
      * @return the &lt;parameter&gt; information.
-     * @throws SAXException if the attributes are not valid.
      */
     @Override
     @Nullable
