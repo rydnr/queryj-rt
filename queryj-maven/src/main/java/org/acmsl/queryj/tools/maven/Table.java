@@ -95,6 +95,7 @@ public class Table
      * Returns the name.
      * @return such value.
      */
+    @Nullable
     public String getName()
     {
         return immutableGetName();
