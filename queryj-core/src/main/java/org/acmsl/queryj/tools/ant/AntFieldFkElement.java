@@ -78,6 +78,7 @@ public class AntFieldFkElement
      * Retrieves the table name.
      * @return such table.
      */
+    @NotNull
     public String getTable()
     {
         return m__strTable;
