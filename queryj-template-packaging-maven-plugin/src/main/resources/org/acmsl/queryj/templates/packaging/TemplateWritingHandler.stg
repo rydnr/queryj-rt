@@ -125,7 +125,7 @@ public class <C.class_name>
     @Override
     protected <def.name.noExtension>TemplateGenerator retrieveTemplateGenerator(final boolean caching, final int threadCount)
     {
-        return new <def.name.capitalized>TemplateGenerator(caching, threadCount);
+        return new <def.name.noExtension>TemplateGenerator(caching, threadCount);
     }
 
     /**
