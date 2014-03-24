@@ -125,7 +125,7 @@ public class <C.class_name>
     /**
      * Creates a {@code <def.name.capitalized>TemplateBuildHandler}.
      */
-    public <def.name.capitalized>TemplateBuildHandler() {}
+    public <C.class_namer() {}
 
     /**
      * Retrieves the template factory.
