@@ -85,7 +85,7 @@ import org.checkthread.annotations.ThreadSafe;
 
 class(def, C) ::= <<
 /**
- * Generator for {@link <def.name.capitalized>Template}s.
+ * Generator for {@link <def.name.noExtension>Template}s.
 <class_common_javadoc(
   template="org/acmsl/queryj/templates/packaging/TemplateGenerator.stg",
   timestamp=C.timestamp)>
