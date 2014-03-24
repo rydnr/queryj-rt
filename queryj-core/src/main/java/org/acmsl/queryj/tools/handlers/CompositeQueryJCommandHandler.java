@@ -166,6 +166,7 @@ public class CompositeQueryJCommandHandler<C extends QueryJCommand, CH extends Q
      * @param command the command to handle.
      * @return <code>true</code> if the chain should be stopped.
      */
+    @Override
     public boolean handle(@NotNull final C command)
         throws QueryJBuildException
     {
