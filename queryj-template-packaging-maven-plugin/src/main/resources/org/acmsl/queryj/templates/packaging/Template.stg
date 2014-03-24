@@ -138,7 +138,7 @@ public class <C.class_name>
     @Override
     public String getTemplateName()
     {
-        return "<def.name.capitalized>";
+        return "<def.name.noExtension>";
     }
 }
 >>
