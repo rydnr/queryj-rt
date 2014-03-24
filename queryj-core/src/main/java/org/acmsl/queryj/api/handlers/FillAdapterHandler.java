@@ -67,6 +67,9 @@ public class FillAdapterHandler<F extends FillHandler<P>, P>
     implements QueryJCommandHandler<QueryJCommand>,
                FillHandler<P>
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = 6058212934620381875L;
 
     /**
