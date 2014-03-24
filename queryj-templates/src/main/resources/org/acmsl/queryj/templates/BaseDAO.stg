@@ -332,7 +332,6 @@ custom_update_or_insert(cs) ::= <<
  * Custom sql \<i><cs.id>\</i>:\<br/>
  * \<b><cs.description>\</b>.
  <cs.parameters:attribute_javadoc(name=it.nameLowercased); separator="\n">
- * @throws DataAccessException if the operation fails.
  */
 public void <cs.nameUncapitalized>(
     <cs.parameters:attribute_declaration(attr=it); separator=",\n">)
