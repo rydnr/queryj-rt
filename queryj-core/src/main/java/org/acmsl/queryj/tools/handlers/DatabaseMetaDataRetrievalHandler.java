@@ -1411,7 +1411,6 @@ public abstract class DatabaseMetaDataRetrievalHandler
      * @param metaData the database metadata.
      * @param parameters the command parameters.
      * @return <code>true</code> in case it matches.
-     * @throws QueryJBuildException if the check fails.
      */
     protected boolean checkVendor(
         @NotNull final DatabaseMetaData metaData, @NotNull final QueryJCommand parameters)
