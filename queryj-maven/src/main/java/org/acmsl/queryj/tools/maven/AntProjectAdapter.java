@@ -1554,7 +1554,7 @@ public class AntProjectAdapter
     }
 
     /**
-     * @see {@link Project#resolveFile(String)}.
+     * @see Project#resolveFile(String).
      * @param fileName the file name.
      * @param project the {@link Project} instance.
      * @return the file.
