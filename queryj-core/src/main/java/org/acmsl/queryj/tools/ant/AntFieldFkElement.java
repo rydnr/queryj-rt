@@ -98,6 +98,7 @@ public class AntFieldFkElement
      * Retrieves the fk field.
      * @return such field.
      */
+    @Nullable
     public String getField()
     {
         return m__strField;
