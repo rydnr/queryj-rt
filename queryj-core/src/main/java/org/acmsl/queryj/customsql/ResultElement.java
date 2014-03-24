@@ -133,11 +133,9 @@ public class ResultElement<T>
     /**
      * Retrieves the hashcode.
      * @param id the <i>id</i> attribute.
-     * @param classValue the <i>class</i> attribute.
      * @param propertyRefs the <i>property-ref</i> elements.
      * @return such value.
      */
-    @SuppressWarnings("unused")
     protected int hashCode(
         @NotNull final T id,
         @NotNull final Collection<PropertyRef> propertyRefs)
