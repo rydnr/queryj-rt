@@ -701,7 +701,6 @@ public abstract class AbstractTemplate<C extends TemplateContext>
      * @param context the {@link QueryJTemplateContext} instance.
      * @param relevantOnly whether to include only relevant placeholders.
      * @return such output.
-     * @throws InvalidTemplateException if the template cannot be generated.
      */
     @Nullable
     protected String generate(@NotNull final C context, final boolean relevantOnly)
