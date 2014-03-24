@@ -560,7 +560,7 @@ public abstract class AbstractTemplatesTest<G, F>
                  */
                 @NotNull
                 @Override
-                public SqlParameterDAO getSqlParameterDAO()
+                public SqlParameterDAO getSqlParameterDAO()           N
                 {
                     return new CucumberSqlParameterDAO(parameters);
                 }
