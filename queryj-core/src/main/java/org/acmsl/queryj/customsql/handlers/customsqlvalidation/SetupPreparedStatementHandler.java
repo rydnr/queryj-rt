@@ -152,7 +152,6 @@ public class SetupPreparedStatementHandler
      * Validates given sql element.
      * @param sql such element.
      * @param connection the connection.
-     * @throws SQLException if the sql is not valid.
      */
     @Nullable
     public PreparedStatement setupStatement(
