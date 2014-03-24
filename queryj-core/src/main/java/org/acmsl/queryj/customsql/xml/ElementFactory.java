@@ -71,7 +71,8 @@ public abstract class ElementFactory
      * Specifies a new Digester instance.
      * @param digester such instance.
      */
-    public void setDigester(final Digester digester)
+    @Override
+    public void setDigester(@NotNull final Digester digester)
     {
         m__Digester = digester;
     }
