@@ -34,7 +34,7 @@
 package org.acmsl.queryj.customsql;
 
 /*
- * Importing project-specific classes.
+ * Importing JetBrains annotations.
  */
 
 /*
