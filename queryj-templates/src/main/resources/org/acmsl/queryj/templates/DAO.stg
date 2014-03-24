@@ -777,7 +777,6 @@ insert(table, parent, repository, C) ::= <<
 <else>
  <table.own.minus.readOnly.minus.externallyManagedAttributes:{ attr | <attribute_javadoc(attr=attr)>}; separator="\n">
 <endif>
- * @throws DataAccessException if the operation fails.
  */
 public void insert(
 <if(parent)>

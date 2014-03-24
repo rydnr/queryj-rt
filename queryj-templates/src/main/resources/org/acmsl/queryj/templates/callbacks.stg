@@ -543,7 +543,6 @@ protected static class SelectForUpdateTransactionCallback
      * @param preparedStatementSetter the prepared statement setter.
      * @param resultSetExtractor the result set extractor.
      * @return the result of the operation.
-     * @throws DataAccessException if the data cannot be accessed for some
      * reason.
      */
     <nullable(C=C)>
