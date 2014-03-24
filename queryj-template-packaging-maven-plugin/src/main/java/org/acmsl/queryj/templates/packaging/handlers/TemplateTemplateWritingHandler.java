@@ -108,7 +108,8 @@ public class TemplateTemplateWritingHandler
         @NotNull final List<TemplateTemplate<DefaultTemplatePackagingContext>> result;
 
         @Nullable final List<TemplateTemplate<DefaultTemplatePackagingContext>> aux =
-            new QueryJCommandWrapper<TemplateTemplate<DefaultTemplatePackagingContext>>(parameters).getListSetting(TEMPLATE_TEMPLATES);
+            new QueryJCommandWrapper<TemplateTemplate<DefaultTemplatePackagingContext>>(parameters)
+                .getListSetting(TEMPLATE_TEMPLATES);
 
         if (aux == null)
         {
