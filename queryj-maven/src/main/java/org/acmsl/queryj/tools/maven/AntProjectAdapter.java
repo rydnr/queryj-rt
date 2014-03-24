@@ -1419,7 +1419,7 @@ public class AntProjectAdapter
     }
 
     /**
-     * @see Project#demuxOutput(String, boolean)}
+     * @see Project#demuxOutput(String, boolean)
      * @param output the output.
      * @param isWarning whether the text represents a warning.
      * @param project the {@link Project} instance.
