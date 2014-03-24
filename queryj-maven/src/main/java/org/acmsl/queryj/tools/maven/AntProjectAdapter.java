@@ -2141,6 +2141,10 @@ public class AntProjectAdapter
         }
     }
 
+    /**
+     * {@inheritDoc}
+     * @return
+     */
     @Override
     @NotNull
     public String toString()
