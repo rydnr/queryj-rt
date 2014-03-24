@@ -46,7 +46,7 @@ import org.checkthread.annotations.ThreadSafe;
  * Models &lt;statement-flags-ref&gt; elements in <i>custom-sql</i> models, which
  * satisfy the following DTD extract (to describe the model even in
  * non-xml implementations):
- *  <!ELEMENT statement-ref EMPTY>
+ *  &lt;!ELEMENT statement-ref EMPTY>
  *  <!ATTLIST statement-ref
  *    id IDREF #REQUIRED>
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
