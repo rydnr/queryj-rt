@@ -509,11 +509,6 @@ public class ParameterValidationHandler
      * @param file the file.
      * @param fileUtils the {@link FileUtils} instance.
      * @return the file contents.
-     * @throws FileNotFoundException if the file is not found.
-     * @throws SecurityException if the environment prevents
-     * reading the file.
-     * @throws IOException if the file cannot be read for any
-     * other reason.
      */
     @NotNull
     protected String readFile(
