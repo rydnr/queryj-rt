@@ -216,7 +216,7 @@ public abstract class AbstractTemplatesTest<G, F>
     {
         immutableSetOutputFiles(new HashMap<>());
         immutableSetTables(new HashMap<>());
-        immutableSetForeignKeys(new ArrayList<ForeignKey<String>>());
+        immutableSetForeignKeys(new ArrayList<>());
         immutableSetSqlList(new ArrayList<Sql<String>>());
         immutableSetParameters(new HashMap<String, List<Parameter<String, ?>>>());
         immutableSetRows(new HashMap<String, List<Row<String>>>());
