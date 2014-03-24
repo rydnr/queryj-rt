@@ -56,6 +56,9 @@ public class ConnectionFlagsRefElement
     extends  AbstractIdElement<String>
     implements ConnectionFlagsRef
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = 3311191419084681233L;
 
     /**
