@@ -47,11 +47,6 @@ import org.acmsl.queryj.metadata.vo.Table;
 /*
  * Importing some JetBrains annotations.
  */
-import org.acmsl.queryj.api.exceptions.QueryJException;
-import org.acmsl.queryj.metadata.engines.Engine;
-import org.acmsl.queryj.metadata.vo.Attribute;
-import org.acmsl.queryj.metadata.vo.ForeignKey;
-import org.acmsl.queryj.metadata.vo.Table;
 import org.jetbrains.annotations.NotNull;
 
 /*
