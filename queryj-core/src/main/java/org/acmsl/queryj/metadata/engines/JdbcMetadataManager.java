@@ -448,8 +448,8 @@ public class JdbcMetadataManager
      * @param schema the schema.
      * @param caseSensitiveness whether the table names are case sensitive or not.
      * @param metadataExtractionListener the metadata extraction listener.
-     * @throws QueryJException if the any other error occurs.
      */
+    @Override
     protected void extractForeignKeys(
         @NotNull final DatabaseMetaData metaData,
         @Nullable final String catalog,
