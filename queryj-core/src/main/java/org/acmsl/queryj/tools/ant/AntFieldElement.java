@@ -88,9 +88,13 @@ public class AntFieldElement
     public static final String KEYWORD_LITERAL = "keyword";
 
     /**
-     * String literal:
+     * String literal: "retrieval-query".
      */
     public static final String RETRIEVAL_QUERY_LITERAL = "retrieval-query";
+
+    /**
+     * String literal:
+     */
     static final String ATTRIBUTE_LITERAL = "Attribute ";
     /**
      * The field pk nature.
