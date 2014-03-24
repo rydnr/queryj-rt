@@ -253,9 +253,10 @@ public class ProcedureParameterMetadata
      * @param object the object to compare to.
      * @return the result of such comparison.
      */
+    @Override
     public boolean equals(final Object object)
     {
-        boolean result = false;
+        final boolean result;
 
         if  (object instanceof ProcedureParameterMetadata)
         {
