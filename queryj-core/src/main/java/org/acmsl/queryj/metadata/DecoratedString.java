@@ -539,6 +539,7 @@ public class DecoratedString
      * Removes the extension, if applicable.
      * @return the new DecoratedString.
      */
+    @NotNull
     public DecoratedString removeExtension()
     {
         return null;
