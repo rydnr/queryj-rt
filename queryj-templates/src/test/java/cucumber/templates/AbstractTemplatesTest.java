@@ -40,6 +40,10 @@ package cucumber.templates;
  */
 import cucumber.templates.sql.CucumberSqlDAO;
 import cucumber.templates.sql.CucumberSqlParameterDAO;
+
+/*
+ * Importing QueryJ Core classes.
+ */
 import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.api.TemplateContext;
 import org.acmsl.queryj.metadata.engines.UndefinedJdbcEngine;
