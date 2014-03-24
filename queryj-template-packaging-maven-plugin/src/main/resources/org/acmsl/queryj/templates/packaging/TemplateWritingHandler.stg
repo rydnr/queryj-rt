@@ -101,7 +101,7 @@ import java.util.List;
 
 class(def, C) ::= <<
 /**
- * Writing handler for {@link <def.name.capitalized>Template}s.
+ * Writing handler for {@link <def.name.noExtension>Template}s.
 <class_common_javadoc(
   template="org/acmsl/templates/packaging/TemplateWritingHandler.stg",
   timestamp=C.timestamp)>
