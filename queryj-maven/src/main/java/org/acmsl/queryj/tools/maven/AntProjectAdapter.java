@@ -998,8 +998,6 @@ public class AntProjectAdapter
      * and operating system name.
      *
      * @param project the {@link Project} instance.
-     * @exception BuildException if this Java version is not supported.
-     *
      * @see org.apache.tools.ant.util.JavaEnvUtils#getJavaVersion
      */
     protected void setJavaVersionProperty(@NotNull final Project project)
