@@ -611,7 +611,7 @@ public class SqlElement<T>
     /**
      * Adds a new &lt;parameter-ref&gt; element.
      * @param parameterRef such element.
-     * @param parameterRefs thhe &ltparameter-ref&gt; elements.
+     * @param parameterRefs the &ltparameter-ref&gt; elements.
      */
     protected synchronized void add(
         @NotNull final ParameterRef parameterRef, @NotNull final List<ParameterRef> parameterRefs)
