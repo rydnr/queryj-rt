@@ -571,7 +571,6 @@ public abstract class AbstractTemplatesTest<G, F>
      * Sets up the Java parser.
      * @param javaFile the Java contents to parse.
      * @return the {@link JavaParser} instance.
-     * @throws RecognitionException if the comment cannot be parsed.
      * @throws IOException if the file could not be read.
      */
     @SuppressWarnings("unchecked")
