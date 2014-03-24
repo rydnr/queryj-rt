@@ -235,7 +235,6 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
      * @param charset the {@link Charset} to use.
      * @param fileUtils the {@link FileUtils} instance.
      * @param log the {@link Log} instance.
-     * @throws IOException if the output dir cannot be created.
      */
     protected boolean generate(
         @NotNull final N template,
