@@ -51,6 +51,7 @@ import org.checkthread.annotations.ThreadSafe;
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2013/08/15 07:49
+ * @param <C> the context.
  */
 @ThreadSafe
 public class TemplateTemplate<C extends TemplatePackagingContext>
