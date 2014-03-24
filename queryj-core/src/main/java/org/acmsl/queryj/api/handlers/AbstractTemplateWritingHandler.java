@@ -178,7 +178,6 @@ public abstract class AbstractTemplateWritingHandler
      * @param templateGenerator the template generator.
      * @param rootDir the root dir.
      */
-    @ThreadSafe
     @SuppressWarnings("unused")
     protected void writeTemplatesSequentially(
         @Nullable final List<T> templates,
