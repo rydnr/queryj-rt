@@ -47,8 +47,8 @@ import org.checkthread.annotations.ThreadSafe;
  * Models &lt;property-ref&gt; elements in <i>custom-sql</i> models, which
  * satisfy the following DTD extract (to describe the model even in
  * non-xml implementations):
- *  <!ELEMENT property-ref EMPTY&gt;
- *  <!ATTLIST property-ref
+ *  &lt;!ELEMENT property-ref EMPTY&gt;
+ *  &lt;!ATTLIST property-ref
  *    id IDREF #REQUIRED&gt;
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  */
