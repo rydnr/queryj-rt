@@ -133,7 +133,6 @@ public abstract class AbstractQueryJCommandHandler
      * Retrieves the database metadata from the attribute map.
      * @param parameters the parameter map.
      * @return the metadata.
-     * @throws QueryJBuildException if the database metadata is not accessible.
      */
     @NotNull
     protected DatabaseMetaData retrieveDatabaseMetaData(@NotNull final QueryJCommand parameters)
