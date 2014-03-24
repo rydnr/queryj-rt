@@ -402,7 +402,6 @@ public class DAOTemplateUtils
      * @param metaLanguageUtils the <code>MetaLanguageUtils</code> instance.
      * @param metadataUtils the <code>MetadataUtils</code> instance.
      * @return the retrieved rows.
-     * @throws SQLException if the operation fails.
      */
     @NotNull
     public List<Row<String>> queryContents(
