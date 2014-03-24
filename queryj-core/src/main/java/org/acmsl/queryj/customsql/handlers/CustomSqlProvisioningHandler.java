@@ -74,7 +74,6 @@ public class CustomSqlProvisioningHandler
     /**
      * Creates a <code>CustomSqlProvisioningHandler</code> instance.
      */
-    @SuppressWarnings("unused")
     public CustomSqlProvisioningHandler() {}
 
     /**
