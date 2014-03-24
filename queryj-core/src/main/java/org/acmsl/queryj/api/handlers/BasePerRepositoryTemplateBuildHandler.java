@@ -116,21 +116,21 @@ public abstract class BasePerRepositoryTemplateBuildHandler
         @NotNull final MetadataManager t_MetadataManager =
             retrieveMetadataManager(parameters);
 
-            result = false;
+        result = false;
 
-            buildTemplate(
-                parameters,
-                t_MetadataManager,
-                retrieveCustomSqlProvider(parameters),
-                retrieveTemplateFactory(),
-                retrievePackage(t_MetadataManager.getEngine(), projectPackage, PackageUtils.getInstance()),
-                projectPackage,
-                retrieveTableRepositoryName(parameters),
-                retrieveHeader(parameters),
-                retrieveImplementMarkerInterfaces(parameters),
-                retrieveJmx(parameters),
-                retrieveJNDILocation(parameters),
-                CachingDecoratorFactory.getInstance());
+        buildTemplate(
+            parameters,
+            t_MetadataManager,
+            retrieveCustomSqlProvider(parameters),
+            retrieveTemplateFactory(),
+            retrievePackage(t_MetadataManager.getEngine(), projectPackage, PackageUtils.getInstance()),
+            projectPackage,
+            retrieveTableRepositoryName(parameters),
+            retrieveHeader(parameters),
+            retrieveImplementMarkerInterfaces(parameters),
+            retrieveJmx(parameters),
+            retrieveJNDILocation(parameters),
+            CachingDecoratorFactory.getInstance());
         }
         else
         {
