@@ -330,7 +330,6 @@ public class AntProjectAdapter
     /**
      * Initializes the project properties.
      * @param project the {@link Project} instance.
-     * @throws BuildException if the initialization fails.
      */
     protected void initProperties(@NotNull final Project project)
         throws BuildException
