@@ -217,7 +217,6 @@ public class JdbcConnectionClosingHandler
     /**
      * Closes the JDBC connection stored in the attribute map.
      * @param parameters the parameter map.
-     * @throws QueryJBuildException if the connection cannot be closed.
      */
     protected void closeConnection(@NotNull final QueryJCommand parameters)
         throws  QueryJBuildException
