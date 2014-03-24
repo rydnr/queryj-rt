@@ -2106,7 +2106,7 @@ public class AntProjectAdapter
     }
 
     /**
-     * @see {@link Project#log(Target, String, int)}.
+     * @see Project#log(Target, String, int).
      * @param target the target.
      * @param message the message.
      * @param throwable the error.
