@@ -390,8 +390,7 @@ public class SqlElement<T>
     }
 
     /**
-     * Checks whether the query returns multiple values or not.
-     * @return such information.
+     * {@inheritDoc}
      */
     @Override
     public boolean isMultiple()
