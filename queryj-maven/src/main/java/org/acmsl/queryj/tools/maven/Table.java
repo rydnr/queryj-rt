@@ -135,6 +135,7 @@ public class Table
      * Returns the fields.
      * @return such values.
      */
+    @Nullable
     public List<Field> getFields()
     {
         return immutableGetFields();
