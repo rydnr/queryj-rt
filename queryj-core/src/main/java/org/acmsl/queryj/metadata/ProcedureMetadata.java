@@ -50,21 +50,6 @@ import org.checkthread.annotations.ThreadSafe;
 public class ProcedureMetadata
 {
     /**
-     * Indicates that a procedure's result is unknown.
-     */
-    public static final int PROCEDURE_RESULT_UNKNOWN = 1;
-
-    /**
-     * Indicates that a procedure doesn't return anything.
-     */
-    public static final int PROCEDURE_NO_RESULT = 2;
-
-    /**
-     * Indicates that a procedure returns something.
-     */
-    public static final int PROCEDURE_RETURNS_RESULT = 3;
-
-    /**
      * The name.
      */
     private String m__strName;
