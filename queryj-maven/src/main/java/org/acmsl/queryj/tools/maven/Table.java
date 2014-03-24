@@ -124,6 +124,7 @@ public class Table
      * Returns the fields.
      * @return such values.
      */
+    @Nullable
     protected final List<Field> immutableGetFields()
     {
         return m__aFields;
