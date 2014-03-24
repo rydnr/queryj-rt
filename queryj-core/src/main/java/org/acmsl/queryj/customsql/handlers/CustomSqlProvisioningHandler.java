@@ -141,12 +141,7 @@ public class CustomSqlProvisioningHandler
         @NotNull final List<Table<String, Attribute<String>, List<Attribute<String>>>> t_lTables =
             metadataManager.getTableDAO().findAllTables();
 
-        String t_strTableName;
-        String t_strResultName;
-        String[] t_astrAttributeNames;
-        String t_strAttributeName;
         String t_strPropertyName;
-        int t_iAttributeCount;
 
         for  (@Nullable final Table<String, Attribute<String>, List<Attribute<String>>> t_Table : t_lTables)
         {
