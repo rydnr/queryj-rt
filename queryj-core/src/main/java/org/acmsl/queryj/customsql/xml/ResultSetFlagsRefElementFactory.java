@@ -1,3 +1,4 @@
+import org.checkthread.annotations.ThreadSafe;
 //;-*- mode: java -*-
 /*
                         QueryJ Core
