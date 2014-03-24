@@ -116,8 +116,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
         @NotNull final MetadataManager t_MetadataManager =
             retrieveMetadataManager(parameters);
 
-        if (t_MetadataManager != null)
-        {
             result = false;
 
             buildTemplate(
