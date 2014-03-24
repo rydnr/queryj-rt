@@ -109,7 +109,7 @@ public class DecoratedStringTest
     }
 
     /**
-     * Tests {@link DecoratedString#getSingular().getCamelCase()}
+     * Tests {@link DecoratedString#getSingular()}
      */
     @Test
     public void camelcase_works_also_when_converting_from_plural_to_singular()
