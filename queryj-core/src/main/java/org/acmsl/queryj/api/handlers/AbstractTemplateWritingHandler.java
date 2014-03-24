@@ -226,9 +226,7 @@ public abstract class AbstractTemplateWritingHandler
      * @param threadCount the number of threads to use.
      * @param rootDir the root dir.
      * @return the list if {@link Future} to keep track of the progress.
-     * @throws org.acmsl.queryj.api.exceptions.QueryJBuildException if the build process cannot be performed.
      */
-    @ThreadSafe
     @NotNull
     protected List<Future<T>> writeTemplatesMultithread(
         @Nullable final List<T> templates,
