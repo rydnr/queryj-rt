@@ -169,7 +169,6 @@ protected <custom_select_return(cs=cs, table=table, result=cs.result, C=C)> <cs.
 <else>
  * @return the {@link <cs.dao.voName>} information retrieved.
 <endif>
- * @throws DataAccessException if the operation fails.
  */
 <custom_select_return_nullable_maybe(cs=cs, result=cs.result, C=C)>
 protected <custom_select_return(cs=cs, table=table, result=cs.result, C=C)> <cs.name.uncapitalized>(
