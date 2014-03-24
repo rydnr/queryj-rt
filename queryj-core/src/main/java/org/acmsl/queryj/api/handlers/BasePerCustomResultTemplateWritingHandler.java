@@ -90,14 +90,12 @@ public abstract class BasePerCustomResultTemplateWritingHandler
         @NotNull final MetadataManager t_MetadataManager =
             retrieveMetadataManager(parameters);
 
-        if (t_MetadataManager != null)
-        {
-            result =
-                retrieveOutputDir(
-                    context.getResult(),
-                    retrieveCustomSqlProvider(parameters),
-                    t_MetadataManager,
-                    parameters);
+        result =
+            retrieveOutputDir(
+                context.getResult(),
+                retrieveCustomSqlProvider(parameters),
+                t_MetadataManager,
+                parameters);
         }
         else
         {
