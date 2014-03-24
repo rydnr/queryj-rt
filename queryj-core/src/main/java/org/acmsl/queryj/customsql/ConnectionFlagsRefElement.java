@@ -46,8 +46,8 @@ import org.checkthread.annotations.ThreadSafe;
  * Models &lt;connection-flags-ref&gt; elements in <i>custom-sql</i> models, which
  * satisfy the following DTD extract (to describe the model even in
  * non-xml implementations):
- *  <!ELEMENT connection-flags-ref EMPTY>
- *  <!ATTLIST connection-flags-ref
+ *  &lt;!ELEMENT connection-flags-ref EMPTY&gt;
+ *  &lt;!ATTLIST connection-flags-ref
  *    id IDREF #REQUIRED>
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  */
