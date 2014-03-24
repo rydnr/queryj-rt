@@ -47,9 +47,9 @@ import org.checkthread.annotations.ThreadSafe;
  * Models &lt;parameter-ref&gt; elements in <i>custom-sql</i> models, which
  * satisfy the following DTD extract (to describe the model even in
  * non-xml implementations):
- *  &!ELEMENT parameter-ref EMPTY>
+ *  &lt;!ELEMENT parameter-ref EMPTY&gt;
  *  <!ATTLIST parameter-ref
- *    id IDREF #REQUIRED>
+ *    id IDREF #REQUIRED&gt;
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  */
 @ThreadSafe
