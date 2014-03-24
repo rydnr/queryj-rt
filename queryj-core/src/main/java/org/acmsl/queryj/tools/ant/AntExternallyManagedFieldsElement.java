@@ -143,7 +143,6 @@ public class AntExternallyManagedFieldsElement
      * Creates a dynamic element.
      * @param name the element's name.
      * @return the object.
-     * @throws BuildException if the element is not supported.
      */
     @Nullable
     @Override
