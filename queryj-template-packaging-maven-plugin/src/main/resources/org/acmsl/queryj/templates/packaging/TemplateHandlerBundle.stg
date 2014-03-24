@@ -88,7 +88,7 @@ class(def, C) ::= <<
  */
 @ThreadSafe
 public class <C.class_name>
-    extends TemplateHandlerBundle\<<def.name.noExtension>TemplateBuildHandler, <def.name.capitalized>TemplateWritingHandler>
+    extends TemplateHandlerBundle\<<def.name.noExtension>TemplateBuildHandler, <def.name.noExtension>TemplateWritingHandler>
 {
     /**
      * Builds a bundle consisting of
