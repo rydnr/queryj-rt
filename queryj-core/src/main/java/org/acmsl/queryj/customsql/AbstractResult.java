@@ -128,7 +128,7 @@ public abstract class AbstractResult<T>
     /**
      * Adds a new &lt;property-ref&gt; element.
      * @param propertyRef such element.
-     * @param propertyRefs thhe &ltproperty-ref&gt; elements.
+     * @param propertyRefs thhe &lt;property-ref&gt; elements.
      */
     protected synchronized void add(
         @NotNull final PropertyRef propertyRef, @NotNull final List<PropertyRef> propertyRefs)
