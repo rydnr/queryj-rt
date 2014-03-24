@@ -168,7 +168,7 @@ public class Table
         @Nullable final String name,
         @Nullable final List<Field> fields)
     {
-        @NotNull StringBuilder result = new StringBuilder();
+        @NotNull final StringBuilder result = new StringBuilder();
 
         result.append("{ class-name : \"");
         result.append(className);
