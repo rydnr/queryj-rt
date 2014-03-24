@@ -249,6 +249,7 @@ public class CucumberSqlPropertyDAO
      * @param index the property index.
      * @param type the type.
      * @param nullable whether it allows null or not.
+     * @param properties the properties.
      */
     protected void insert(
         @NotNull final String id,
