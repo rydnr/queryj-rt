@@ -289,6 +289,7 @@ public class ProcedureParameterMetadata
      * @param object the object to compare to.
      * @return the result of such comparison.
      */
+    @Override
     public int compareTo(final Object object)
         throws  ClassCastException
     {
