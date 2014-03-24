@@ -335,7 +335,6 @@ public class Log4JInitializerHandler
 
         /**
          * Closes the writer.
-         * @throws IOException if the writer cannot be closed.
          */
         @Override
         public void close()
