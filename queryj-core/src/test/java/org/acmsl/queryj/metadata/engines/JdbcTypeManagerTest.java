@@ -1070,7 +1070,6 @@ public class JdbcTypeManagerTest
 
     /**
      * Tests whether the correct PreparedStatement.setXX is called for long parameters.
-     * @throws Exception
      */
     @Test
     public void setLongInPreparedStatementViaReflectionWorks()
