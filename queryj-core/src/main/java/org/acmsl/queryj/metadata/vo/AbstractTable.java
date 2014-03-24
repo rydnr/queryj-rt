@@ -522,7 +522,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
      * -sgn(y.compareTo(x))</tt> for all <tt>x</tt> and <tt>y</tt>.  (This
      * implies that <tt>x.compareTo(y)</tt> must throw an exception iff
      * <tt>y.compareTo(x)</tt> throws an exception.)
-     * <p/>
+     * <p></p>
      * <p>The implementor must also ensure that the relation is transitive:
      * <tt>(x.compareTo(y)&gt;0 &amp;&amp; y.compareTo(z)&gt;0)</tt> implies
      * <tt>x.compareTo(z)&gt;0</tt>.
