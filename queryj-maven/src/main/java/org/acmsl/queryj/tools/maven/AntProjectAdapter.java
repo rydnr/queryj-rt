@@ -650,7 +650,6 @@ public class AntProjectAdapter
      * @return the given string with embedded property names replaced
      *         by values, or <code>null</code> if the given string is
      *         <code>null</code>.
-     * @throws BuildException if the given value has an unclosed
      *                        property name, e.g. <code>${xxx</code>.
      */
     @NotNull
