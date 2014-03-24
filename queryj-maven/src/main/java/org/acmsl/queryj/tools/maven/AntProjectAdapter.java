@@ -991,7 +991,7 @@ public class AntProjectAdapter
     }
 
     /**
-     * (Copied from Apache Ant 1.8.1 javadoc):<br/>
+     * (Copied from Apache Ant 1.8.1 javadoc):
      * Sets the <code>ant.java.version</code> property and tests for
      * unsupported JVM versions. If the version is supported,
      * verbose log messages are generated to record the Java version
