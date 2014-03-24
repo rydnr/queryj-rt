@@ -36,6 +36,7 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing project-specific classes.
  */
+import org.acmsl.queryj.Literals;
 
 /*
  * Importing Commons-Logging classes.
