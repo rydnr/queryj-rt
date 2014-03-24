@@ -49,11 +49,11 @@ import org.checkthread.annotations.ThreadSafe;
  * Models &lt;parameter&gt; elements in <i>custom-sql</i> models, which
  * satisfy the following DTD extract (to describe the model even in
  * non-xml implementations):
- *  &lt;!ELEMENT parameter EMPTY>
- *  <!ATTLIST parameter
+ *  &lt;!ELEMENT parameter EMPTY&gt;
+ *  &lt;!ATTLIST parameter
  *    id ID #REQUIRED
  *    index CDATA #IMPLIED
- *    type CDATA #REQUIRED>
+ *    type CDATA #REQUIRED&gt;
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  */
 @ThreadSafe
