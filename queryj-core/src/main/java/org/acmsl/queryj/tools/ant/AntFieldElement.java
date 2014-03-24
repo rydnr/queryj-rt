@@ -83,9 +83,13 @@ public class AntFieldElement
     public static final String TABLE_NAME_LITERAL = "table-name";
 
     /**
-     * String literal:
+     * String literal: "keyword".
      */
     public static final String KEYWORD_LITERAL = "keyword";
+
+    /**
+     * String literal:
+     */
     public static final String RETRIEVAL_QUERY_LITERAL = "retrieval-query";
     static final String ATTRIBUTE_LITERAL = "Attribute ";
     /**
