@@ -51,8 +51,7 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Abstract logic-less implementation of {@link Attribute} interface.
- * @author <a href="mailto:queryj@acm-sl.org"
- *         >Jose San Leandro</a>
+ * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  */
 public abstract class AbstractAttribute<T>
     implements Attribute<T>
