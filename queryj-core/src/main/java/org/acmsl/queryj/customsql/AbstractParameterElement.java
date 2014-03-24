@@ -48,7 +48,7 @@ import org.jetbrains.annotations.Nullable;
  *    column_name CDATA #IMPLIED
  *    index CDATA #IMPLIED
  *    name CDATA #IMPLIED
- *    type CDATA #REQUIRED>
+ *    type CDATA #REQUIRED&gt;
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  */
 public abstract class AbstractParameterElement<T>
