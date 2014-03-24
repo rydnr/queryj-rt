@@ -91,7 +91,6 @@ public class DatabaseMetaDataCacheReadingHandler
      * extraction has already been done.
      * @param metaData the database metadata.
      * @return <code>true</code> if the chain should be stopped.
-     * @throws QueryJBuildException if the build process cannot be performed.
      */
     @Override
     protected boolean handle(
