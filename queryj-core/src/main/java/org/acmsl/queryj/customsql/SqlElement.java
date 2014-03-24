@@ -835,7 +835,6 @@ public class SqlElement<T>
      * <p>The implementor must also ensure that the relation is transitive:
      * <tt>(x.compareTo(y)&gt;0 &amp;&amp; y.compareTo(z)&gt;0)</tt> implies
      * <tt>x.compareTo(z)&gt;0</tt>.
-     * <p/>
      * <p>Finally, the implementor must ensure that <tt>x.compareTo(y)==0</tt>
      * implies that <tt>sgn(x.compareTo(z)) == sgn(y.compareTo(z))</tt>, for
      * all <tt>z</tt>.
