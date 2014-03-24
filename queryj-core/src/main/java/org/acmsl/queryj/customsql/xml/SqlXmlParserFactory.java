@@ -178,7 +178,6 @@ public class SqlXmlParserFactory
      * Creates a <b>sql.xml</b> parser.
      * @param file the file.
      * @return such parser.
-     * @precondition file != null
      */
     @Nullable
     public SqlXmlParser createSqlXmlParser(final File file)

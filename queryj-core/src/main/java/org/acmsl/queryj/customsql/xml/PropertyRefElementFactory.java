@@ -78,7 +78,6 @@ public class PropertyRefElementFactory
      * @param digester the Digester instance.
      * @param conversionUtils the ConversionUtils instance.
      * @return the &lt;property-ref&gt; information.
-     * @precondition digester != null
      * @precondition conversionUtils != null
      */
     @Nullable
