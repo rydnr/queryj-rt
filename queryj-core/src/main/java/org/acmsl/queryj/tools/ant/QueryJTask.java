@@ -1001,8 +1001,6 @@ public class QueryJTask
     /**
      * Requests the chained logic to be performed.
      * @param command the command.
-     * @throws BuildException whenever the required
-     * parameters are not present or valid.
      */
     protected void execute(@NotNull final QueryJCommand command)
         throws  BuildException
@@ -1238,7 +1236,6 @@ public class QueryJTask
      * Creates a dynamic element.
      * @param name the element's name.
      * @return the object.
-     * @throws BuildException if the element is not supported.
      */
     @Nullable
     public Object createDynamicElement(final String name)
