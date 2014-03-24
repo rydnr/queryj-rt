@@ -193,7 +193,6 @@ public interface <table.name.voName>DAO
      * \<code><table.name.voName>\</code> instance.
      <table.allButExternallyManagedAttributes:attribute_javadoc(
        name=it.nameLowercased); separator="\n">
-     * @throws DataAccessException if the operation fails.
      */
     public <table.name.voName> create(
         <table.allButExternallyManagedAttributes:attribute_declaration(
