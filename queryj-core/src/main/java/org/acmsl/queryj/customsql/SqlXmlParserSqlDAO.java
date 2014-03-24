@@ -258,7 +258,7 @@ public class SqlXmlParserSqlDAO
     }
 
     /**
-     * Retrieves all <i>insert</i> {@link Sql<String> sentences} for a given DAO (table).
+     * Retrieves all <i>insert</i> {@link Sql sentences} for a given DAO (table).
      * @param table the table.
      * @return all matching <i>insert</i> sentences.
      */
