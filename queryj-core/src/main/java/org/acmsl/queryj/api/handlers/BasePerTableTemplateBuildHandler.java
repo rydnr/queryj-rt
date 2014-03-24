@@ -108,9 +108,7 @@ public abstract class BasePerTableTemplateBuildHandler
         @NotNull final MetadataManager t_MetadataManager =
             retrieveMetadataManager(parameters);
 
-        if (t_MetadataManager != null)
-        {
-            buildTemplate(parameters, t_MetadataManager, t_MetadataManager.getTableDAO());
+        buildTemplate(parameters, t_MetadataManager, t_MetadataManager.getTableDAO());
             result = false;
         }
         else
