@@ -64,7 +64,7 @@ public class CucumberSqlParameterDAO
     implements SqlParameterDAO
 {
     /**
-     * The map of sqlId -> parameters.
+     * The map of sqlId -&gt; parameters.
      */
     private Map<String, List<Parameter<String, ?>>> m__mParameters;
 
