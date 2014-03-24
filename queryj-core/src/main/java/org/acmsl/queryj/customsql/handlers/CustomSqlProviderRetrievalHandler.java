@@ -47,10 +47,6 @@ import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
 import org.acmsl.queryj.tools.handlers.ParameterValidationHandler;
 
 /*
- * Importing some ACM-SL classes.
- */
-
-/*
  * Importing some Commons-Logging classes.
  */
 import org.jetbrains.annotations.NotNull;
