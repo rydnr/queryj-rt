@@ -50,6 +50,7 @@ import org.jetbrains.annotations.Nullable;
  *    name CDATA #IMPLIED
  *    type CDATA #REQUIRED&gt;
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
+ * @param <T> the type.
  */
 public interface Parameter<T, V>
     extends  IdentifiableElement<T>
