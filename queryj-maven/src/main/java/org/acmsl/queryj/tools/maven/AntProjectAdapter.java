@@ -1063,7 +1063,6 @@ public class AntProjectAdapter
      * Checks given task class.
      * @param taskClass the task class.
      * @param project the {@link Project} instance.
-     * @throws BuildException if the verification fails.
      */
     protected void checkTaskClass(@NotNull final Class taskClass, @NotNull final Project project)
         throws BuildException
