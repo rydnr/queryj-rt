@@ -44,7 +44,7 @@ package org.acmsl.queryj.customsql;
 /**
  * Models &lt;connection-flags&gt; elements in <i>custom-sql</i> models, which
  * satisfy the following DTD extract (to describe the model even in
- * non-xml implementations):<br/>
+ * non-xml implementations):
  * &lt;!ELEMENT connection-flags EMPTY&gt;
  * &lt;!ATTLIST connection-flags
  *   id ID #REQUIRED<br/>
