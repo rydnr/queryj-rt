@@ -183,7 +183,6 @@ public class ParameterValidationHandler
      * Validates the parameters.
      * @param command the parameter map.
      * @param usingAnt whether QueryJ is executed within Ant.
-     * @throws QueryJBuildException if the build process cannot be performed.
      */
     public void validateParameters(
         @NotNull final QueryJCommand command, final boolean usingAnt)
