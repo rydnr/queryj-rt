@@ -222,7 +222,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
      * @param disableNotNullAnnotations whether to disable NotNull annotations.
      * @param disableCheckthreadAnnotations whether to disable checkthread.org annotations or not.
      * @return the template.
-     * @throws QueryJBuildException on invalid input.
      */
     @SuppressWarnings("unused")
     @Nullable
