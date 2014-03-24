@@ -158,7 +158,6 @@ extends TestCase
   * for them in the regenerated code and if the marker is not empty.
   * This way, no test gets lost when regenerating after renaming.
   * Method testVault is supposed to be empty.
-  * @throws Exception if an unexpected situation occurs.
   */
   public void testVault()
   throws Exception

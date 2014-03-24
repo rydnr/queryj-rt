@@ -153,7 +153,6 @@ extends TestCase
   
   /**
   * Tests ParameterValidationHandlerTestvalidateParameters()
-  * @throws Exception if an unexpected situation occurs.
   * @see org.acmsl.queryj.tools.handlers.ParameterValidationHandler#validateParameters(java.util.Map)
   */
   public void testValidateParameters()
