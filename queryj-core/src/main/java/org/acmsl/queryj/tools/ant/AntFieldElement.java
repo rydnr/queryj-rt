@@ -141,6 +141,7 @@ public class AntFieldElement
      * @param name the attribute name.
      * @param value the attribute value.
      */
+    @Override
     public void setDynamicAttribute(final String name, final String value)
     {
         if  ("name".equals(name))
