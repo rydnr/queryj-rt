@@ -75,8 +75,8 @@ import org.acmsl.queryj.tools.PackageUtils;
 /*
  * Importing custom templates.
  */
-import org.acmsl.queryj.templates.<def.name.capitalized>Template;
-import org.acmsl.queryj.templates.<def.name.capitalized>TemplateGenerator;
+import org.acmsl.queryj.templates.<def.name.noExtension>Template;
+import org.acmsl.queryj.templates.<def.name.noExtension>TemplateGenerator;
 
 /*
  * Importing some JetBrains annotations.
