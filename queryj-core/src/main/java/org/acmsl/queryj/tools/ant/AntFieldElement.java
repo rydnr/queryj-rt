@@ -78,9 +78,13 @@ public class AntFieldElement
     private static final long serialVersionUID = 5709131443641728342L;
 
     /**
-     * String literal:
+     * String literal: "table-name".
      */
     public static final String TABLE_NAME_LITERAL = "table-name";
+
+    /**
+     * String literal:
+     */
     public static final String KEYWORD_LITERAL = "keyword";
     public static final String RETRIEVAL_QUERY_LITERAL = "retrieval-query";
     static final String ATTRIBUTE_LITERAL = "Attribute ";
