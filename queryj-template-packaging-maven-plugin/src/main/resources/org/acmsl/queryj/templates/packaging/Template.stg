@@ -132,7 +132,7 @@ public class <C.class_name>
 
     /**
      * Retrieves the template name.
-     * @return "<def.name.capitalized>";
+     * @return "<def.name.toExtension>";
      */
     @NotNull
     @Override
