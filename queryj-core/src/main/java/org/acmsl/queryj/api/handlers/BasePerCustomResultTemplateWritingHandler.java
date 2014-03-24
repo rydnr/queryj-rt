@@ -96,11 +96,6 @@ public abstract class BasePerCustomResultTemplateWritingHandler
                 retrieveCustomSqlProvider(parameters),
                 t_MetadataManager,
                 parameters);
-        }
-        else
-        {
-            throw new CannotRetrieveMetadataManagerException();
-        }
 
         return result;
     }
