@@ -285,9 +285,7 @@ public class ProcedureParameterMetadata
     }
 
     /**
-     * Compares given object with this instance.
-     * @param object the object to compare to.
-     * @return the result of such comparison.
+     * {@inheritDoc}
      */
     @Override
     public int compareTo(final Object object)
