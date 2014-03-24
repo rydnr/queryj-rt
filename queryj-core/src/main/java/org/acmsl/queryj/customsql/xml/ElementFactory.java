@@ -90,6 +90,7 @@ public abstract class ElementFactory
      * @return the Customer information.
      */
     @Nullable
+    @Override
     public Object createObject(final Attributes attributes)
       throws SAXException
     {
