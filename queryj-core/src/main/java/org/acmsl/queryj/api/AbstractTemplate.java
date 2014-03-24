@@ -729,7 +729,6 @@ public abstract class AbstractTemplate<C extends TemplateContext>
      * @param context the context.
      * @param relevantOnly whether to include only relevant placeholders.
      * @return such code.
-     * @throws InvalidTemplateException if the template cannot be processed.
      */
     @Nullable
     protected String generateOutput(
