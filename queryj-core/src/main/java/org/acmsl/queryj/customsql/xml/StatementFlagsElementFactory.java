@@ -73,12 +73,7 @@ public class StatementFlagsElementFactory
     public StatementFlagsElementFactory() {}
 
     /**
-     * Creates a StatementFlagsElement instance from given SAX
-     * attributes.
-     * @param attributes the attributes.
-     * @param digester the Digester instance.
-     * @param conversionUtils the ConversionUtils instance.
-     * @return the &lt;sql&gt; information.
+     * {@inheritDoc}
      */
     @Nullable
     @Override
