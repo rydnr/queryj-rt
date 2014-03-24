@@ -1798,7 +1798,7 @@ public class AntProjectAdapter
     }
 
     /**
-     * @see Project#fireSubBuildFinished(Throwable).
+     * See {@link Project#fireSubBuildFinished(Throwable)}.
      * @param exception the exception, should it occurs.
      * @param project the {@link Project} instance.
      */
