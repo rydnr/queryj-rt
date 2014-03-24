@@ -86,7 +86,11 @@ public class DecoratedString
      * A regex for replacing new lines.
      */
     protected static final Pattern NEWLINE_PATTERN = Pattern.compile("\\s*\\n\\s*");
-    private static final Pattern EXT_REGEX = Pattern.compile(".*(\\.*)$");
+
+    /**
+     * A regex for removing the extension.
+     */
+    protected static final Pattern EXT_REGEX = Pattern.compile(".*(\\.*)$");
 
     /**
      * The actual value.
