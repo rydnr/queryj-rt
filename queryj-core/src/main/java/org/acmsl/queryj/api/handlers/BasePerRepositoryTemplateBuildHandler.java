@@ -111,9 +111,12 @@ public abstract class BasePerRepositoryTemplateBuildHandler
     protected boolean handle(@NotNull final QueryJCommand parameters, @NotNull final String projectPackage)
         throws  QueryJBuildException
     {
+        @NotNull final MetadataManager t_MetadataManager =
+            retrieveMetadataManager(parameters);
+
         buildTemplate(
             parameters,
-            retrieveMetadataManager(parameters),
+            t_MetadataManager,
             retrieveCustomSqlProvider(parameters),
             retrieveTemplateFactory(),
             retrievePackage(t_MetadataManager.getEngine(), projectPackage, PackageUtils.getInstance()),
