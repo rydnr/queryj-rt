@@ -119,7 +119,6 @@ public class FillAdapterHandler<F extends FillHandler<P>, P>
      * @param command the command.
      * @return {@code true} to avoid further processing of such command
      * by different handlers.
-     * @throws QueryJBuildException if the process fails.
      */
     @SuppressWarnings("unchecked")
     public boolean handle(@NotNull final QueryJCommand command)

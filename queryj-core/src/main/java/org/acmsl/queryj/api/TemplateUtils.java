@@ -324,7 +324,6 @@ public class TemplateUtils
      * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @param daoTemplateUtils the {@link DAOTemplateUtils} instance.
      * @return the custom results.
-     * @throws QueryJBuildException if there inconsistencies in the custom SQL
      * model.
      */
     @SuppressWarnings("unused")

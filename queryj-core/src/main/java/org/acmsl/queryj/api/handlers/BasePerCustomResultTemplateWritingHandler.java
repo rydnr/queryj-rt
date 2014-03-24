@@ -114,7 +114,6 @@ public abstract class BasePerCustomResultTemplateWritingHandler
      * @param metadataManager the metadata manager.
      * @param parameters the parameter map.
      * @return such folder.
-     * @throws QueryJBuildException if the output-dir retrieval process if faulty.
      */
     @NotNull
     @SuppressWarnings("unchecked")
