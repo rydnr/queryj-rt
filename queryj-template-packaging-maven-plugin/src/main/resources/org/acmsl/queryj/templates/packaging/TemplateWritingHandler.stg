@@ -139,7 +139,7 @@ public class <C.class_name>
 
         @Nullable final List\<<def.name.noExtension>Template> aux =
             new QueryJCommandWrapper\<List\<<def.name.noExtension>Template\>>(parameters)
-                .getSetting(<def.name.capitalized>TemplateBuildHandler.TEMPLATES_KEY);
+                .getSetting(<def.name.noExtension>TemplateBuildHandler.TEMPLATES_KEY);
 
         if (aux == null)
         {
