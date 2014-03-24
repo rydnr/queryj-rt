@@ -62,6 +62,9 @@ public class ParameterElement<T, V>
     implements Parameter<T, V>,
                Comparable<Parameter<T, V>>
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = 106725100966627608L;
 
     /**
