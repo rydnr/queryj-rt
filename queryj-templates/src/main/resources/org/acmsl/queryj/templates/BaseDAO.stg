@@ -173,7 +173,6 @@ public interface <table.name.voName>DAO
      <table.primaryKey:attribute_javadoc(name=it.nameLowercased); separator="\n">
      * @return the \<code><table.name.voName>\</code> matching given
      * primary key.
-     * @throws DataAccessException if the operation fails.
      */
     public <table.name.voName> findByPrimaryKey(
         <table.primaryKey:attribute_declaration(attr=it); separator=",\n">)
