@@ -1245,7 +1245,6 @@ update3(table, parent, repository, C) ::= <<
  * @param parentDAO the {@link <parent.name.voName>DAO} instance.
 <endif>
  * @return the number of entities updated.
- * @throws DataAccessException if the operation fails.
  */
 protected int update(
 <if(parent)>
