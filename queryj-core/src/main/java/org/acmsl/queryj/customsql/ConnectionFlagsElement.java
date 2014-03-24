@@ -49,8 +49,8 @@ import org.checkthread.annotations.ThreadSafe;
  * Models &lt;connection-flags&gt; elements in <i>custom-sql</i> models, which
  * satisfy the following DTD extract (to describe the model even in
  * non-xml implementations):<br/>
- * &lt;!ELEMENT connection-flags EMPTY><br/>
- * &lt;!ATTLIST connection-flags<br/>
+ * &lt;!ELEMENT connection-flags EMPTY&gt;
+ * &lt;!ATTLIST connection-flags
  *   id ID #REQUIRED<br/>
  *   transactionisolation (  TRANSACTION_NONE<br/>
  *                         | TRANSACTION_READ_COMMITTED<br/>
