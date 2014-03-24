@@ -118,7 +118,6 @@ extends TestCase
   
   /**
   * Performs any required steps before each test.
-  * @throws Exception if an unexpected situation occurs.
   */
   protected void setUp()
   throws Exception
