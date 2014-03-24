@@ -130,7 +130,6 @@ extends TestCase
   
   /**
   * Performs any required steps after each test.
-  * @throws Exception if an unexpected situation occurs.
   */
   protected void tearDown()
   throws Exception
