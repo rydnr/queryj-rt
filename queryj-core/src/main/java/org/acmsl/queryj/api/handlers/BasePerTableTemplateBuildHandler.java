@@ -269,7 +269,6 @@ public abstract class BasePerTableTemplateBuildHandler
      * @param engine the engine.
      * @param parameters the parameter map.
      * @return the package name.
-     * @throws QueryJBuildException if the package retrieval process if faulty.
      */
     protected String retrievePackage(
         @NotNull final String tableName, @NotNull final Engine<String> engine, @NotNull final QueryJCommand parameters)
