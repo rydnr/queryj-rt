@@ -84,12 +84,12 @@ public class ParameterElementFactory
     extends  ElementFactory
 {
     /**
-     * The date format in English.
+     * The date format in Spanish.
      */
     private static final String DATE_FORMAT_ES = "DD/MM/yyyy";
 
     /**
-     * The date format in Spanish.
+     * The date format in English.
      */
     private static final String DATE_FORMAT_EN = "yyyy/DD/MM";
 
