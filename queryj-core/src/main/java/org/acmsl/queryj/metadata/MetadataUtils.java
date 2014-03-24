@@ -321,7 +321,7 @@ public class MetadataUtils
      * @param metadataManager the {@link MetadataManager} instance.
      * @return the foreign keys of other tables pointing
      * to this one:
-     * a map of referringTableName -> ForeignKey[].
+     * a map of referringTableName -& ForeignKey[].
      */
     @SuppressWarnings("unused")
     @NotNull
