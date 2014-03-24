@@ -105,7 +105,7 @@ import java.util.List;
 
 class(def, C) ::= <<
 /**
- * Factory for {@link <def.name.capitalized>Template}s.
+ * Factory for {@link <def.name.noExtension>Template}s.
 <class_common_javadoc(
   template="org/acmsl/queryj/templates/packaging/TemplateFactory.stg",
   timestamp=C.timestamp)>
