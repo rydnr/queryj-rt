@@ -501,7 +501,6 @@ public class BindQueryParametersHandler
      * @param parameter the {@link Parameter}.
      * @param sql the {@link Sql}.
      * @return the {@link Date} value if it's a Date.
-     * @throws QueryJBuildException if some problem occurs.
      */
     protected Date assumeIsADate(
         @NotNull final Parameter<String, ?> parameter,
@@ -572,7 +571,6 @@ public class BindQueryParametersHandler
      * @param sql the {@link Sql}.
      * @param <T> the type.
      * @return the parameter value.
-     * @throws QueryJBuildException if some problem occurs.
      */
     protected <T> T createViaConstructor(
         @NotNull final Parameter<String, T> parameter,
