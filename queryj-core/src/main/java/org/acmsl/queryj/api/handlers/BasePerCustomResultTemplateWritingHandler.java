@@ -143,7 +143,6 @@ public abstract class BasePerCustomResultTemplateWritingHandler
      * @param parameters the parameter map.
      * @param packageUtils the <code>PackageUtils</code> instance.
      * @return such folder.
-     * @throws QueryJBuildException if the output-dir retrieval process if faulty.
      */
     @NotNull
     protected abstract File retrieveOutputDir(
