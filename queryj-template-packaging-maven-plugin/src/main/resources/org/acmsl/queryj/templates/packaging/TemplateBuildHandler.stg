@@ -133,9 +133,9 @@ public class <C.class_name>
      */
     @Override
     @NotNull
-    protected <def.name.capitalized>TemplateFactory retrieveTemplateFactory()
+    protected <def.name.noExtension>TemplateFactory retrieveTemplateFactory()
     {
-        return <def.name.capitalized>TemplateFactory.getInstance();
+        return <def.name.noExtension>TemplateFactory.getInstance();
     }
 
     /**
