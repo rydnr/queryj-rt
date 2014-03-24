@@ -347,7 +347,6 @@ public class QueryJCLILog
      * <p>Logs a message.</p>
      * @param message the message.
      * @param printStream the <code>PrintStream</code> instance.
-     * @precondition project != null
      */
     protected void log(final Object message, @NotNull final PrintStream printStream)
     {
