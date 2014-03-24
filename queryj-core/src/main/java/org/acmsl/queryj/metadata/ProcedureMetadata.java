@@ -86,7 +86,7 @@ public class ProcedureMetadata
      * @param comment the procedure comment.
      */
     public ProcedureMetadata(
-        final String name, final int type, final String comment)
+        final String name, final int type, @Nullable final String comment)
     {
         immutableSetName(name);
         immutableSetType(type);
