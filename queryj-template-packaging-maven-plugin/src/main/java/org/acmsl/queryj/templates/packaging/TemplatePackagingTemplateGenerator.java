@@ -60,7 +60,6 @@ import org.jetbrains.annotations.NotNull;
  * Created: 2013/08/17 10/09
  * @param <T> the template.
  * @param <C> the context.
- *
  */
 @ThreadSafe
 public class TemplatePackagingTemplateGenerator
