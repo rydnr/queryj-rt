@@ -60,6 +60,7 @@ import org.checkthread.annotations.ThreadSafe;
  *    class CDATA #IMPLIED
  *    matches (single | multiple) #REQUIRED&gt;
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
+ * @param <T> the type.
  */
 @ThreadSafe
 public class SqlElement<T>
