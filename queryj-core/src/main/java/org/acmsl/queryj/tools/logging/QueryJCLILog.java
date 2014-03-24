@@ -86,7 +86,6 @@ public class QueryJCLILog
      * from given <code>PrintStream</code>.
      * @param threshold the threshold.
      * @param printStream the print stream.
-     * @precondition printStream != null
      */
     public QueryJCLILog(final int threshold, final PrintStream printStream)
     {
