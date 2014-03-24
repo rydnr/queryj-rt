@@ -1638,7 +1638,7 @@ public class AntProjectAdapter
     }
 
     /**
-     * @see Project#getReferences().
+     * See {@link Project#getReferences()}.
      * @param project the {@link Project} instance.
      * @return such references.
      */
