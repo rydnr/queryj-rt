@@ -346,7 +346,6 @@ public class BindQueryParametersHandler
      * @param parameterIndex the index of the parameter.
      * @param type the parameter type.
      * @param sql the sql.
-     * @throws QueryJBuildException if some problem occurs.
      */
     @NotNull
     protected Method retrievePreparedStatementMethod(
