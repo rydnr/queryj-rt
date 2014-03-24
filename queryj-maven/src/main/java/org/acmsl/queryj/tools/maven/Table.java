@@ -68,7 +68,7 @@ public class Table
      * Specifies the name.
      * @param name the table name.
      */
-    protected final void immutableSetName(final String name)
+    protected final void immutableSetName(@NotNull final String name)
     {
         m__strName = name;
     }
