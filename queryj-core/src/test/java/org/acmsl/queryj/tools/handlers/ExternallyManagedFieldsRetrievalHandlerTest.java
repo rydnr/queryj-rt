@@ -142,7 +142,6 @@ extends TestCase
   
   /**
   * Tests ExternallyManagedFieldsRetrievalHandlerTesthandle()
-  * @throws Exception if an unexpected situation occurs.
   * @see org.acmsl.queryj.tools.handlers.ExternallyManagedFieldsRetrievalHandler#handle(org.acmsl.commons.patterns.Command)
   */
   public void testHandle()

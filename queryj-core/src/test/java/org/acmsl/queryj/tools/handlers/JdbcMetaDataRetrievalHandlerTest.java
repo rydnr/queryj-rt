@@ -142,7 +142,6 @@ extends TestCase
   
   /**
   * Tests DatabaseMetaDataRetrievalHandlerTesthandle()
-  * @throws Exception if an unexpected situation occurs.
   * @see org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandler#handle(org.acmsl.commons.patterns.Command)
   */
   public void testHandle()
