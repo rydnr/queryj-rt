@@ -93,7 +93,7 @@ public class DecoratedStringTest
     }
 
     /**
-     * Tests {@link DecoratedString#getCamelCase()}
+     * Tests {@code DecoratedString#getCamelCase()}
      */
     @Test
     public void camelcase_works()
