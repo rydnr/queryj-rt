@@ -92,7 +92,6 @@ public class Log4JInitializerHandler
      * @param parameters the parameters.
      * @return {@code true} to avoid further processing of such command
      *         by different handlers.
-     * @throws QueryJBuildException if the build process cannot be performed.
      */
     @Override
     public boolean handle(@NotNull final QueryJCommand parameters)
