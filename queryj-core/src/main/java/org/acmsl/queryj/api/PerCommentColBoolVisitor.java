@@ -67,7 +67,7 @@ public class PerCommentColBoolVisitor
      * Visits the parser tree within the <pre>tabRelationship</pre> rule.
      * @param context the parse context.
      * @return the list of boolean definitions. At position 0, the value representing {@code true}; 1 -> {@code false};
-     * 2 -> {@code null}.
+     * 2 -& {@code null}.
      */
     @NotNull
     @Override
