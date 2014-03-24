@@ -33,7 +33,14 @@
  */
 package org.acmsl.queryj.metadata;
 
+/*
+ * Importing QueryJ Core classes.
+ */
 import org.acmsl.queryj.Literals;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
