@@ -45,14 +45,14 @@ package org.acmsl.queryj.customsql;
  * Models &lt;connection-flags&gt; elements in <i>custom-sql</i> models, which
  * satisfy the following DTD extract (to describe the model even in
  * non-xml implementations):<br/>
- * <!ELEMENT connection-flags EMPTY><br/>
- * <!ATTLIST connection-flags<br/>
+ * &lt;!ELEMENT connection-flags EMPTY&gt;
+ * &lt;!ATTLIST connection-flags
  *   id ID #REQUIRED<br/>
- *   transactionisolation (  TRANSACTION_NONE<br/>
- *                         | TRANSACTION_READ_COMMITTED<br/>
- *                         | TRANSACTION_READ_UNCOMMITTED<br/>
- *                         | TRANSACTION_REPEATABLE_READ<br/>
- *                         | TRANSACTION_SERIALIZABLE ) #REQUIRED><br/>
+ *   transactionisolation (  TRANSACTION_NONE
+ *                         | TRANSACTION_READ_COMMITTED
+ *                         | TRANSACTION_READ_UNCOMMITTED
+ *                         | TRANSACTION_REPEATABLE_READ
+ *                         | TRANSACTION_SERIALIZABLE ) #REQUIRED&gt;
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  */
 public interface ConnectionFlags
