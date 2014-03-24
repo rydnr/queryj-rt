@@ -1232,7 +1232,6 @@ public class AntProjectAdapter
      * Adds given target.
      * @param target the target.
      * @param project the {@link Project} instance.
-     * @throws BuildException if the target cannot be added.
      */
     protected void addOrReplaceTarget(@NotNull final Target target, @NotNull final Project project)
         throws BuildException
