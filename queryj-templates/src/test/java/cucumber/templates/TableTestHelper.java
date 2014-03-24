@@ -716,6 +716,7 @@ public class TableTestHelper
      * Defines the static contents defined in a Cucumber test.
      * @param values the test values.
      * @param tables the tables.
+     * @return the rows.
      */
     @NotNull
     public Map<String, List<Row<String>>> defineRows(
