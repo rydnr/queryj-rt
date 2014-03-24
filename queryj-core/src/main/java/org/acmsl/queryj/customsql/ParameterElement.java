@@ -49,7 +49,7 @@ import org.checkthread.annotations.ThreadSafe;
  * Models &lt;parameter&gt; elements in <i>custom-sql</i> models, which
  * satisfy the following DTD extract (to describe the model even in
  * non-xml implementations):
- *  <!ELEMENT parameter EMPTY>
+ *  &lt;!ELEMENT parameter EMPTY>
  *  <!ATTLIST parameter
  *    id ID #REQUIRED
  *    index CDATA #IMPLIED
