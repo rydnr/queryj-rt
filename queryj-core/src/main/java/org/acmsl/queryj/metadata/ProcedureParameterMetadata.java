@@ -63,31 +63,6 @@ public class ProcedureParameterMetadata
     extends  ProcedureMetadata
 {
     /**
-     * Indicates that the parameter definition is unknown.
-     */
-    public static final int UNKNOWN_PARAMETER = 0;
-
-    /**
-     * Indicates that the parameter is defined as IN.
-     */
-    public static final int IN_PARAMETER = 1;
-
-    /**
-     * Indicates that the parameter is defined as IN/OUT.
-     */
-    public static final int IN_OUT_PARAMETER = 2;
-
-    /**
-     * Indicates that the parameter is defined as OUT.
-     */
-    public static final int OUT_PARAMETER = 3;
-
-    /**
-     * Indicates that the parameter is defined as the result of the procedure.
-     */
-    public static final int RESULT_PARAMETER = 5;
-
-    /**
      * The data type.
      */
     private int m__iDataType;
