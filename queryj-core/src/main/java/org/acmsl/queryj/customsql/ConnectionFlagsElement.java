@@ -51,12 +51,12 @@ import org.checkthread.annotations.ThreadSafe;
  * non-xml implementations):<br/>
  * &lt;!ELEMENT connection-flags EMPTY&gt;
  * &lt;!ATTLIST connection-flags
- *   id ID #REQUIRED<br/>
- *   transactionisolation (  TRANSACTION_NONE<br/>
- *                         | TRANSACTION_READ_COMMITTED<br/>
- *                         | TRANSACTION_READ_UNCOMMITTED<br/>
- *                         | TRANSACTION_REPEATABLE_READ<br/>
- *                         | TRANSACTION_SERIALIZABLE ) #REQUIRED><br/>
+ *   id ID #REQUIRED
+ *   transactionisolation (  TRANSACTION_NONE
+ *                         | TRANSACTION_READ_COMMITTED
+ *                         | TRANSACTION_READ_UNCOMMITTED
+ *                         | TRANSACTION_REPEATABLE_READ
+ *                         | TRANSACTION_SERIALIZABLE ) #REQUIRED&gt;
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  */
 @ThreadSafe
