@@ -88,9 +88,9 @@ public class ResultSetFlagsRefElementFactory
         final ConversionUtils conversionUtils)
       throws SAXException
     {
-        @Nullable ResultSetFlagsRefElement result;
+        @Nullable final ResultSetFlagsRefElement result;
 
-        String t_strId = attributes.getValue("id");
+        final String t_strId = attributes.getValue("id");
 
         result = new ResultSetFlagsRefElement(t_strId);
 
