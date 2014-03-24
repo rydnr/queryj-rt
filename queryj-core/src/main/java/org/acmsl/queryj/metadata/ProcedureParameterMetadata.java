@@ -52,6 +52,7 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Represents procedure parameter metadata.
@@ -113,7 +114,7 @@ public class ProcedureParameterMetadata
     public ProcedureParameterMetadata(
         final String name,
         final int type,
-        final String comment,
+        @Nullable final String comment,
         final int dataType,
         final int length,
         final int nullable)
