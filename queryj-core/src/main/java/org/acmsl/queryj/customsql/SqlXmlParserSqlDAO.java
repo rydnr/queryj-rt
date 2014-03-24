@@ -83,7 +83,7 @@ public class SqlXmlParserSqlDAO
     private static final Map<String, Boolean> PRIMARY_KEY_MISS_CACHE = new HashMap<>();
 
     /**
-     * The cache of resultId -&gt; List<Sql&lt;String&gt;&gt;
+     * The cache of resultId -&gt; List&lt;Sql&lt;String&gt;&gt;
      */
     private static final Map<String, List<Sql<String>>> FIND_BY_RESULTID_CACHE = new HashMap<>();
 
