@@ -89,7 +89,6 @@ public class CustomResultsHandler
      * Retrieves the {@link List} of {@link Result}s for given {@link org.acmsl.queryj.api.PerTableTemplateContext context}.
      * @param context the context.
      * @return such value.
-     * @throws QueryJBuildException if there inconsistencies in the custom SQL
      * model.
      */
     @NotNull
