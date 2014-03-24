@@ -104,7 +104,7 @@ public class ConnectionFlagsRefElement
      * @return the result of such comparison.
      */
     @Override
-    public boolean equals(final Object object)
+    public boolean equals(@Nullable final Object object)
     {
         boolean result = false;
 
