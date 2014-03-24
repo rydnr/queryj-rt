@@ -56,6 +56,9 @@ public class ResultRefElement
     extends  AbstractIdElement<String>
     implements ResultRef
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = -4772977255913187237L;
 
     /**
