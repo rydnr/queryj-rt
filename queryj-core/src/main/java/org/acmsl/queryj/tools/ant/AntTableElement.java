@@ -127,6 +127,7 @@ public class AntTableElement
      * Retrieves the field collection.
      * @return such collection.
      */
+    @NotNull
     public List<AntFieldElement> getFields()
     {
         return m__lFields;
