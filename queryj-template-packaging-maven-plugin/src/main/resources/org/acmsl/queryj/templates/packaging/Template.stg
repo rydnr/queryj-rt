@@ -105,7 +105,7 @@ public class <C.class_name>
     /**
      * The serial version UID for serialization.
      */
-    private static final long serialVersionUID = <C.serialVersionUID>;
+    private static final long serialVersionUID = <C.serialVersionUID>L;
 
     /**
      * Builds a <def.name.capitalized> using given context.
