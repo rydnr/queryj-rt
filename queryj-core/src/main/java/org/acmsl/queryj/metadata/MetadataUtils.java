@@ -46,6 +46,7 @@ import org.acmsl.queryj.metadata.vo.Table;
  */
 import org.acmsl.commons.patterns.Singleton;
 import org.acmsl.commons.patterns.Utils;
+import org.acmsl.commons.utils.EnglishGrammarUtils;
 
 /*
  * Importing some JetBrains annotations.
