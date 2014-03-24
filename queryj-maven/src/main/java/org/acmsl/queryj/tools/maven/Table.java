@@ -104,7 +104,7 @@ public class Table
      * Specifies the fields.
      * @param fields the fields.
      */
-    protected final void immutableSetFields(final List<Field> fields)
+    protected final void immutableSetFields(@NotNull final List<Field> fields)
     {
         m__aFields = fields;
     }
