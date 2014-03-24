@@ -79,7 +79,6 @@ public class ResultSetFlagsRefElementFactory
      * @param digester the Digester instance.
      * @param conversionUtils the ConversionUtils instance.
      * @return the &lt;resultset-ref&gt; information.
-     * @throws SAXException if the attributes are not valid.
      */
     @Nullable
     public Object createObject(
