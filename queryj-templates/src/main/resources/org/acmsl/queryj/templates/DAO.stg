@@ -868,7 +868,6 @@ create2(table, parent, repository, C) ::= <<
  <table.own.minus.readOnly.minus.externallyManagedAttributes:{ attr | <attribute_javadoc(attr=attr)>}; separator="\n">
 <endif>
  * @param retrieveAfterwards whether to retrieve the new instance afterwards or not.
- * @throws DataAccessException if the operation fails.
  */
 <nullable(C=C)>
 <if(table.voDecorated)>

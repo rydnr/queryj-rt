@@ -306,7 +306,6 @@ custom_select_for_update(cs, table) ::= <<
 <else>
  * @return the {@link <cs.dao.voName>} information retrieved.
 <endif>
- * @throws DataAccessException if the operation fails.
  */
 <if(cs.resultClass)>
 <cs.result:{rs|<if(table.voDecorated)><if(rs.implicitProperties)>
