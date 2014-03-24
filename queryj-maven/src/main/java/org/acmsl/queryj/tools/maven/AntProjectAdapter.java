@@ -1041,7 +1041,6 @@ public class AntProjectAdapter
      * @param taskName the task name.
      * @param taskClass the task class.
      * @param project the {@link Project} instance.
-     * @throws BuildException if the operation fails.
      */
     protected void addTaskDefinition(
         @NotNull final String taskName, @NotNull final Class taskClass, @NotNull final Project project)
