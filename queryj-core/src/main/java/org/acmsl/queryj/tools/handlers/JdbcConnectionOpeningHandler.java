@@ -86,7 +86,6 @@ public class JdbcConnectionOpeningHandler
      * Handles given parameters.
      * @param command the command.
      * @return <code>true</code> if the chain should be stopped.
-     * @throws QueryJBuildException if the build process cannot be performed.
      */
     @Override
     public boolean handle(@NotNull final QueryJCommand command)
