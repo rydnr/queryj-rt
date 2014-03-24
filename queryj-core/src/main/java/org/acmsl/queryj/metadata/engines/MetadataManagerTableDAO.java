@@ -82,7 +82,7 @@ public abstract class MetadataManagerTableDAO<M extends MetadataManager>
     /**
      * The cache miss.
      */
-    private static final Map<String, Boolean> FIND_BY_DAO_CACHE_MISS = new HashMap<String, Boolean>();
+    private static final Map<String, Boolean> FIND_BY_DAO_CACHE_MISS = new HashMap<>();
 
     /**
      * Creates a new {@link MetadataManagerTableDAO} instance using given {@link MetadataManager}.
