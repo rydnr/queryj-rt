@@ -320,8 +320,7 @@ public class SqlElement<T>
     }
 
     /**
-     * Retrieves the <i>name</i> attribute.
-     * @return such value.
+     * {}
      */
     @Override
     @NotNull
