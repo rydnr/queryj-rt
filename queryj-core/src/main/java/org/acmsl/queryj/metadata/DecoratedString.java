@@ -542,6 +542,6 @@ public class DecoratedString
     @NotNull
     public DecoratedString removeExtension()
     {
-        return null;
+        @NotNull final String result =
     }
 }
