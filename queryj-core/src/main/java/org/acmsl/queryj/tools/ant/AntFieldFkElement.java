@@ -70,7 +70,7 @@ public class AntFieldFkElement
      * Specifies the table name.
      * @param table the table name.
      */
-    protected void setTable(final String table)
+    protected void setTable(@NotNull final String table)
     {
         m__strTable = table;
     }
