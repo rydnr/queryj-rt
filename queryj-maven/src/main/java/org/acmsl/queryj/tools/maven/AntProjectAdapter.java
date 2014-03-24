@@ -1490,7 +1490,7 @@ public class AntProjectAdapter
     }
 
     /**
-     * @see {@link Project#demuxFlush(String, boolean)}.
+     * @see Project#demuxFlush(String, boolean).
      * @param output the output.
      * @param isError whether the output represents an error message.
      * @param project the {@link Project} instance.
