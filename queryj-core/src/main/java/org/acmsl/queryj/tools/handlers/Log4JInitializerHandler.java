@@ -286,7 +286,6 @@ public class Log4JInitializerHandler
          * @param cbuf the buffer to log.
          * @param off the offset.
          * @param len the buffer length.
-         * @throws IOException if the log fails.
          */
         @Override
         public void write(final char[] cbuf, final int off, final int len)
