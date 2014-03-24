@@ -108,7 +108,6 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
      * Builds the templates.
      * @param parameters the parameters.
      * @param metaData the database metadata.
-     * @throws QueryJBuildException if the build process cannot be performed.
      */
     protected void buildTemplates(
         @NotNull final QueryJCommand parameters, @NotNull final DatabaseMetaData metaData)
@@ -135,7 +134,6 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
      * @param engineName the engine name.
      * @param engineVersion the engine version.
      * @param quote the quote character.
-     * @throws QueryJBuildException if the build process cannot be performed.
      */
     protected void buildTemplates(
         @NotNull final QueryJCommand parameters,
