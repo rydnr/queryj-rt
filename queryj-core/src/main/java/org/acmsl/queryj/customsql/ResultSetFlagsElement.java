@@ -47,8 +47,8 @@ import org.checkthread.annotations.ThreadSafe;
  * Models &lt;resultSet-flags&gt; elements in <i>custom-sql</i> models, which
  * satisfy the following DTD extract (to describe the model even in
  * non-xml implementations):
- * <!ELEMENT resultset-flags EMPTY><br/>
- * <!ATTLIST resultset-flags<br/>
+ * &lt;!ELEMENT resultset-flags EMPTY><br/>
+ * &lt;!ATTLIST resultset-flags<br/>
  *   id ID #REQUIRED<br/>
  *   type (TYPE_FORWARD_ONLY | TYPE_SCROLL_INSENSITIVE | TYPE_SCROLL_SENSITIVE) #IMPLIED<br/>
  *   concurrency (CONCUR_READ_ONLY | CONCUR_UPDATABLE) #IMPLIED<br/>
