@@ -549,8 +549,10 @@ public class DecoratedString
     {
         return removeExtension(getValue());
     }
+
     /**
      * Removes the extension, if applicable.
+     * @param value the value.
      * @return the new DecoratedString.
      */
     @NotNull
