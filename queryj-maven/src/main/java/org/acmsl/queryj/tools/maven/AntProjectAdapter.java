@@ -1595,7 +1595,7 @@ public class AntProjectAdapter
     }
 
     /**
-     * See {@inheritDoc Project#addIdReference(String, Object)}.
+     * See {@link Project#addIdReference(String, Object)}.
      * @param id the id.
      * @param value the reference.
      * @param project the {@link Project} instance.
