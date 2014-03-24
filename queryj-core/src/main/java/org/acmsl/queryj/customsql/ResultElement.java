@@ -64,7 +64,11 @@ import org.jetbrains.annotations.Nullable;
 public class ResultElement<T>
     extends  AbstractResult<T>
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = -1123144871258452499L;
+
     /**
      * The <i>class</i> attribute.
      */
