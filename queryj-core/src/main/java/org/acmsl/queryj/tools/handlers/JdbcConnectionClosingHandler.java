@@ -229,8 +229,6 @@ public class JdbcConnectionClosingHandler
     /**
      * Closes the connection.
      * @param connection the JDBC connection.
-     * @throws QueryJBuildException whenever the required
-     * connection is not present or valid.
      */
     protected void closeConnection(@Nullable final Connection connection)
         throws  QueryJBuildException
