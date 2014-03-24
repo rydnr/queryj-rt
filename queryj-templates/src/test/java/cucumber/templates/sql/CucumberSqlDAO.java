@@ -284,6 +284,7 @@ public class CucumberSqlDAO
     /**
      * Retrieves all SQL matching given result id.
      * @param resultId the result id.
+     * @param sqlList the list of {@link Sql}.
      * @return the list of matching {@link Sql}.
      */
     @NotNull
