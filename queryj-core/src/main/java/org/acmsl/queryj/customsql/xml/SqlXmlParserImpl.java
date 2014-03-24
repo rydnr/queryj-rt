@@ -707,7 +707,6 @@ public class SqlXmlParserImpl
 
     /**
      * Loads the information from the XML resource.
-     * @throws QueryJBuildException if the information cannot be read.
      */
     protected void load()
       throws  QueryJBuildException
