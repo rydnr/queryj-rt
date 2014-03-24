@@ -142,7 +142,7 @@ public class Table
     }
 
     /**
-     * @{inheritDoc}
+     * {@inheritDoc}
      */
     @Override
     @NotNull
