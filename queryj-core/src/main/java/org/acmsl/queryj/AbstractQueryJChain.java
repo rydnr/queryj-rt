@@ -61,6 +61,8 @@ import org.jetbrains.annotations.Nullable;
 /*
  * Importing checkthread.org annotations.
  */
+import org.checkthread.annotations.ThreadSafe;
+
 /**
  * Manages a sequential chain of actions within QueryJ.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
