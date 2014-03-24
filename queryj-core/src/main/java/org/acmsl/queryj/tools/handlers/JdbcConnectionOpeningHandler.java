@@ -41,6 +41,8 @@ import org.acmsl.queryj.QueryJSettings;
 import org.acmsl.queryj.api.exceptions.CannotEstablishDatabaseConnectionException;
 import org.acmsl.queryj.api.exceptions.JdbcDriverNotFoundException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.tools.exceptions.MissingJdbcUrlAtRuntimeException;
+import org.acmsl.queryj.tools.exceptions.MissingJdbcUserNameAtRuntimeException;
 import org.acmsl.queryj.tools.exceptions.MissingJdbcDriverAtRuntimeException;
 
 /*
