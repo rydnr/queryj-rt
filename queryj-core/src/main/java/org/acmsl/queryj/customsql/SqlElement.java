@@ -838,7 +838,6 @@ public class SqlElement<T>
      * <p>Finally, the implementor must ensure that <tt>x.compareTo(y)==0</tt>
      * implies that <tt>sgn(x.compareTo(z)) == sgn(y.compareTo(z))</tt>, for
      * all <tt>z</tt>.
-     * <p/>
      * <p>It is strongly recommended, but <i>not</i> strictly required that
      * <tt>(x.compareTo(y)==0) == (x.equals(y))</tt>.  Generally speaking, any
      * class that implements the <tt>Comparable</tt> interface and violates
