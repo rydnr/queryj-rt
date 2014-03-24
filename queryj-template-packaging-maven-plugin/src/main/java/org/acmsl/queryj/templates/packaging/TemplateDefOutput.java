@@ -59,9 +59,13 @@ import org.checkthread.annotations.ThreadSafe;
 public enum TemplateDefOutput
 {
     /**
-     * Java flavor
+     * Java flavour.
      */
     JAVA,
+
+    /**
+     * Cucumber flavour.
+     */
     CUCUMBER;
 
     /**
