@@ -535,6 +535,10 @@ public class DecoratedString
         return getValue();
     }
 
+    /**
+     * Removes the extension, if applicable.
+     * @return the new DecoratedString.
+     */
     public DecoratedString removeExtension()
     {
         return null;  //To change body of created methods use File | Settings | File Templates.
