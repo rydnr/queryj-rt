@@ -1139,7 +1139,6 @@ public class JdbcTypeManagerTest
 
     /**
      * Tests whether the correct PreparedStatement.setXX is called for Blob parameters.
-     * @throws Exception
      */
     @Test
     public void setBlobInPreparedStatementViaReflectionWorks()
