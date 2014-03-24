@@ -396,7 +396,6 @@ public class BindQueryParametersHandler
      * @param sql the {@link Sql}.
      * @param conversionUtils the {@link ConversionUtils} instance.
      * @return the validation value.
-     * @throws QueryJBuildException if some problem occurs.
      */
     @SuppressWarnings("unchecked")
     protected <T> T retrieveParameterValue(
@@ -449,7 +448,6 @@ public class BindQueryParametersHandler
      * @param stringUtils the {@link StringUtils} instance.
      * @param <T> the type.
      * @return the validation value.
-     * @throws QueryJBuildException if some problem occurs.
      */
     @SuppressWarnings("unchecked")
     protected <T> T retrieveParameterValue(
