@@ -1658,7 +1658,7 @@ public class AntProjectAdapter
     }
 
     /**
-     * @see Project#hasReference(String).
+     * See {@link Project#hasReference(String)}.
      * @param key the reference key.
      * @param project the {@link Project} instance.
      * @return <code>true</code> in such case.
