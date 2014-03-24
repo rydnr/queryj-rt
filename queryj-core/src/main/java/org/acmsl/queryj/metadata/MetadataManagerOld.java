@@ -83,8 +83,6 @@ public interface MetadataManagerOld
 
     /**
      * Retrieves the metadata.
-     * @throws QueryJException if an error, which is identified by QueryJ,
-     * occurs.
      */
     public void retrieveMetadata()
         throws  SQLException,
