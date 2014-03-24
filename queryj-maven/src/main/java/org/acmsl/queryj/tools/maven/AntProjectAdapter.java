@@ -1743,7 +1743,7 @@ public class AntProjectAdapter
     }
 
     /**
-     * @see Project#fireBuildStarted().
+     * See {@link Project#fireBuildStarted()}.
      * @param project the {@link Project} instance.
      */
     protected void fireBuildStarted(@NotNull final Project project)
