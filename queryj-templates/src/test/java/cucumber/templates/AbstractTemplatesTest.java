@@ -114,6 +114,7 @@ import java.util.Properties;
  * Generic stuff for template tests.
  * @author <a href="chous@acm-sl.org">Jose San Leandro</a>
  * @since 2013/05/05
+ * @param <G> the
  */
 @SuppressWarnings("unused")
 public abstract class AbstractTemplatesTest<G, F>
