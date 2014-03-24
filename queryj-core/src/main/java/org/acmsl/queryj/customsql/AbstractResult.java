@@ -55,7 +55,7 @@ public abstract class AbstractResult<T>
     implements  Result<T>
 {
     /**
-     * The <i>property-ref> elements.
+     * The <i>property-ref</i> elements.
      */
     private List<PropertyRef> m__lPropertyRefs;
 
