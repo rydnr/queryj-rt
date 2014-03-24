@@ -113,9 +113,9 @@ class(def, C) ::= <<
 @ThreadSafe
 public class <C.class_name>
     extends Base<def.type.noExtension>TemplateBuildHandler\<
-                <def.name.capitalized>Template,
-                <def.type.noExte>TemplateContext,
-                <def.name.capitalized>TemplateFactory>
+                <def.name.noExtension>Template,
+                <def.type.capitalized>TemplateContext,
+                <def.name.noExtension>TemplateFactory>
 {
     /**
      * The key to access the templates in the command.
