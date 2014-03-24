@@ -150,7 +150,6 @@ public class ExecuteQueryHandler
      * @param sql the {@link Sql}.
      * @param preparedStatement the {@link PreparedStatement}.
      * @return the {@link ResultSet}.
-     * @throws QueryJBuildException if the validation fails.
      */
     @Nullable
     protected ResultSet validateStatement(
