@@ -46,7 +46,7 @@ import org.acmsl.queryj.api.exceptions.QueryJNonCheckedException;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
- * The &lt;externally-managed-fields&gt runtime information is missing.
+ * The &lt;externally-managed-fields&gt; runtime information is missing.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2013/12/08 10:53
