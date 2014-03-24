@@ -200,7 +200,6 @@ public abstract class BasePerCustomResultTemplateBuildHandler
      * @param disableCheckthreadAnnotations whether to disable checkthread.org annotations or not.
      * @param resultElements the {@link Result} list.
      * @param customResultUtils the {@link CustomResultUtils} instance.
-     * @throws QueryJBuildException if the templates cannot be built.
      */
     @ThreadSafe
     @SuppressWarnings("unchecked")

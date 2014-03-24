@@ -173,7 +173,6 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
      * @param disableCheckthreadAnnotations whether to disable checkthread.org annotations or not.
      * @param foreignKeys the foreign keys.
      * @param decoratorFactory the {@link DecoratorFactory} instance.
-     * @throws QueryJBuildException if the build process cannot be performed.
      */
     protected void buildTemplates(
         @NotNull final QueryJCommand parameters,
