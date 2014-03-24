@@ -173,7 +173,6 @@ public abstract class AbstractQueryJChain
      * @param chain the concrete chain.
      * @param command the command that represents which actions should be done.
      * @return <code>true</code> if the command is processed by the chain.
-     * @throws QueryJBuildException if the build process cannot be performed.
      */
     protected boolean process(
         @NotNull final Chain<C, QueryJBuildException, CH> chain, @NotNull final C command)
