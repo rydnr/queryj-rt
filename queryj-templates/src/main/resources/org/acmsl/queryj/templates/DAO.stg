@@ -1159,7 +1159,6 @@ update(table, parent, repository, C) ::= <<
  <table.own.minus.ReadOnlyAttributes:{ attr | <attribute_javadoc(attr=attr)>}; separator="\n">
 <endif>
  * @return the number of entities updated.
- * @throws DataAccessException if the operation fails.
  */
 public int update(
 <if(parent)>
