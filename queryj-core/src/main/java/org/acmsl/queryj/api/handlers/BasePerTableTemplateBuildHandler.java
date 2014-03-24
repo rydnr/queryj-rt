@@ -109,14 +109,8 @@ public abstract class BasePerTableTemplateBuildHandler
             retrieveMetadataManager(parameters);
 
         buildTemplate(parameters, t_MetadataManager, t_MetadataManager.getTableDAO());
-            result = false;
-        }
-        else
-        {
-            result = true;
-        }
 
-        return result;
+        return false;
     }
 
     /**
