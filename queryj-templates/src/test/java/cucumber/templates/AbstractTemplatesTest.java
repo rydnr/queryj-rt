@@ -694,7 +694,6 @@ public abstract class AbstractTemplatesTest<G, F>
      * Creates a temporary directory.
      * @param prefix the prefix to use (optional).
      * @return the temporary folder.
-     * @throws java.io.IOException if the folder cannot be created.
      */
     @SuppressWarnings("unused")
     @NotNull
