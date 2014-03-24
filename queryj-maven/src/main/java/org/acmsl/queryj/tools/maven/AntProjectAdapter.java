@@ -1517,7 +1517,6 @@ public class AntProjectAdapter
      * @see {@link Project#executeTarget(String)}.
      * @param targetName the target name.
      * @param project the {@link Project} instance.
-     * @throws BuildException if the target fails.
      */
     protected void executeTarget(@NotNull final String targetName, @NotNull final Project project)
         throws BuildException
