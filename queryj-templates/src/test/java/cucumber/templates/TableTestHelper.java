@@ -854,6 +854,10 @@ public class TableTestHelper
     protected static class _AttributeIncompleteValueObject
         extends AttributeIncompleteValueObject
     {
+        /**
+         * The serial version id.
+         */
+        private static final long serialVersionUID = 5282401170254035076L;
 
         /**
          * Creates a new instance.
