@@ -80,6 +80,8 @@ public abstract class ElementFactory
      * Retrieves the Digester instance.
      * @return such instance.
      */
+    @Override
+    @NotNull
     public Digester getDigester()
     {
         return m__Digester;
