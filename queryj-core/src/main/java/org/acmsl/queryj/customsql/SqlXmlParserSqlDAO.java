@@ -36,7 +36,7 @@
 package org.acmsl.queryj.customsql;
 
 /*
- * Importing some project classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.customsql.xml.AbstractSqlXmlParserDAO;
 import org.acmsl.queryj.customsql.xml.SqlXmlParser;
