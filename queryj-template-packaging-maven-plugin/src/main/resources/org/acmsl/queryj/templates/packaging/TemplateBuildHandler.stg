@@ -129,7 +129,7 @@ public class <C.class_name>
 
     /**
      * Retrieves the template factory.
-     * @return the {@link <def.name.capitalized>TemplateFactory} instance.
+     * @return the {@link <def.name.noExtension>TemplateFactory} instance.
      */
     @Override
     @NotNull
