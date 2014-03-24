@@ -131,11 +131,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
             retrieveJmx(parameters),
             retrieveJNDILocation(parameters),
             CachingDecoratorFactory.getInstance());
-        }
-        else
-        {
-            result = true;
-        }
 
         return result;
     }
