@@ -61,7 +61,7 @@ import org.checkthread.annotations.ThreadSafe;
  *   querytimeout CDATA #IMPLIED<br/>
  *   fetchdirection (FETCH_FORWARD | FETCH_REVERSE | FETCH_UNKNOWN) #IMPLIED<br/>
  *   escapeprocessing (true | false) #IMPLIED<br/>
- *   moreresults (CLOSE_CURRENT_RESULT | KEEP_CURRENT_RESULT | CLOSE_ALL_RESULTS) #IMPLIED>
+ *   moreresults (CLOSE_CURRENT_RESULT | KEEP_CURRENT_RESULT | CLOSE_ALL_RESULTS) #IMPLIED&gt;
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  */
 @ThreadSafe
