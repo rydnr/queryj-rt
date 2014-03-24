@@ -46,6 +46,7 @@ import org.apache.commons.lang.builder.HashCodeBuilder;
 /*
  * Importing some JetBrains annotations.
  */
+import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -53,6 +54,7 @@ import org.jetbrains.annotations.Nullable;
  * Abstract logic-less implementation of {@link Attribute} interface.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  */
+@ThreadSafe
 public abstract class AbstractAttribute<T>
     implements Attribute<T>
 {
