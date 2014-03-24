@@ -282,7 +282,7 @@ public class SqlXmlParserSqlDAO
     }
 
     /**
-     * Retrieves all <i>delete</i> {@link Sql<String> sentences} for a given DAO (table).
+     * Retrieves all <i>delete</i> {@link Sql sentences} for a given DAO (table).
      * @param table the table.
      * @return all matching <i>delete</i> sentences.
      */
