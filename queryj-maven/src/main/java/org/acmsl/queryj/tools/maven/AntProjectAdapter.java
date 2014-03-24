@@ -1699,7 +1699,7 @@ public class AntProjectAdapter
     }
 
     /**
-     * @see {@link Project#getReference(String)}.
+     * @see Project#getReference(String).
      * @param key the reference key.
      * @param project the {@link Project} instance.
      * @return the reference value.
