@@ -126,7 +126,6 @@ public abstract class AbstractQueryJChain
      * Builds the chain.
      * @param chain the chain to be configured.
      * @return the updated chain.
-     * @throws QueryJBuildException if the chain cannot be built successfully.
      */
     protected abstract Chain<C, QueryJBuildException, CH> buildChain(
         @NotNull final Chain<C, QueryJBuildException, CH> chain)
