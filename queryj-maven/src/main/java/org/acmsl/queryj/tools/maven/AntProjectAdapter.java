@@ -1857,7 +1857,7 @@ public class AntProjectAdapter
     }
 
     /**
-     * @see {@link Project#getResource(String)}.
+     * @see Project#getResource(String).
      * @param name the resource name.
      * @param project the {@link Project} instance.
      * @return the resource.
