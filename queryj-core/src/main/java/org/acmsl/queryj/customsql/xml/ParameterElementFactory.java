@@ -83,6 +83,9 @@ import java.util.Date;
 public class ParameterElementFactory
     extends  ElementFactory
 {
+    /**
+     * The date format in English.
+     */
     private static final String DATE_FORMAT_ES = "DD/MM/yyyy";
     private static final String DATE_FORMAT_EN = "yyyy/DD/MM";
 
