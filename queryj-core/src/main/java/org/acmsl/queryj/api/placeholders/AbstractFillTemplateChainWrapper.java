@@ -167,7 +167,6 @@ public abstract class AbstractFillTemplateChainWrapper<C extends TemplateContext
      * generation timestamps, documentation, etc. can be considered not relevant.
      * @param handlers the {@link FillHandler}s.
      * @return the {@link QueryJCommand}.
-     * @throws QueryJBuildException if the process fails.
      */
     @NotNull
     protected QueryJCommand providePlaceholders(
