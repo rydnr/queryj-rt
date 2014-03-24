@@ -73,7 +73,7 @@ public class SqlXmlParserSqlDAO
     implements SqlDAO
 {
     /**
-     * A cache of id -> Sql
+     * A cache of id -&gt; Sql
      */
     private static final Map<String, Sql<String>> FIND_BY_PRIMARY_KEY_CACHE = new HashMap<>();
 
