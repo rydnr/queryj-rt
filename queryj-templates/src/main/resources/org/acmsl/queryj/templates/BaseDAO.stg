@@ -348,7 +348,6 @@ custom_select_for_update(cs) ::= <<
  * \<b><cs.description>\</b>.
  <cs.parameters:attribute_javadoc(name=it.nameLowercased); separator="\n">
  * @return the \<i><cs.resultClass>\</i> information retrieved.
- * @throws DataAccessException if the operation fails.
  */
 public <cs.resultClass> <cs.nameUncapitalized>(
     <cs.parameters:attribute_declaration(attr=it); separator=",\n">)
