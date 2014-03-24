@@ -144,6 +144,8 @@ public class Table
     /**
      * @{inheritDoc}
      */
+    @Override
+    @NotNull
     public String toString()
     {
         return
