@@ -178,7 +178,6 @@ public abstract class AbstractTemplateWritingHandler
      * @param charset the file encoding.
      * @param templateGenerator the template generator.
      * @param rootDir the root dir.
-     * @throws QueryJBuildException if the build process cannot be performed.
      */
     @ThreadSafe
     @SuppressWarnings("unused")
