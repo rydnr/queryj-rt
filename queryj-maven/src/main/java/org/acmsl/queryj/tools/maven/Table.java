@@ -86,6 +86,7 @@ public class Table
      * Returns the name.
      * @return such value.
      */
+    @Nullable
     protected final String immutableGetName()
     {
         return m__strName;
