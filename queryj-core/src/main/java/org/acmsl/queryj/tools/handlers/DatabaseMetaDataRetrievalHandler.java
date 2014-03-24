@@ -177,7 +177,6 @@ public abstract class DatabaseMetaDataRetrievalHandler
      * extraction has already been done.
      * @param metaData the database metadata.
      * @return <code>true</code> if the chain should be stopped.
-     * @throws QueryJBuildException if the build process cannot be performed.
      */
     protected boolean handle(
         @NotNull final QueryJCommand parameters,
