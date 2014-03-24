@@ -235,8 +235,6 @@ public class ParameterValidationHandler
      * @param threadCount the number of threads.
      * @param command the command, to store processed information.
      * such as the header contents.
-     * @throws QueryJBuildException whenever the required
-     * parameters are not present or valid.
      */
     protected void validateParameters(
         @Nullable final String driver,
