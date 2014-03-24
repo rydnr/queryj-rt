@@ -125,7 +125,7 @@ public class DecoratedStringTest
     }
 
     /**
-     * Tests {@link DecoratedString#getSingular().getCamelCase()}
+     * Tests {@link DecoratedString#getSingular()}
      */
     @Test
     public void singleLine_works()
