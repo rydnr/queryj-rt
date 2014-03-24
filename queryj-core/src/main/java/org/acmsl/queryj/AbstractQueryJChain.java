@@ -54,13 +54,18 @@ import org.apache.commons.logging.Log;
 /*
  * Importing some JetBrains annotations.
  */
+import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+/*
+ * Importing checkthread.org annotations.
+ */
 /**
  * Manages a sequential chain of actions within QueryJ.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  */
+@ThreadSafe
 public abstract class AbstractQueryJChain
     <C extends QueryJCommand, CH extends QueryJCommandHandler<C>>
 {
