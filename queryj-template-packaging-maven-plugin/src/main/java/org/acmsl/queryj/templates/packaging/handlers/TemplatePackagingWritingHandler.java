@@ -76,6 +76,9 @@ import java.util.concurrent.CyclicBarrier;
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2013/08/20 18:02
+ * @param <T> the template.
+ * @param <C> the context.
+ * @param <TG> the template generator.
  */
 @ThreadSafe
 public abstract class TemplatePackagingWritingHandler
