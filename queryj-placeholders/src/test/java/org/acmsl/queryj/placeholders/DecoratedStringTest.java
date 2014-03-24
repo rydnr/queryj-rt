@@ -79,7 +79,7 @@ public class DecoratedStringTest
     }
 
     /**
-     * Tests {@link DecoratedString#getNormalized().getUppercased()}
+     * Tests {@code DecoratedString#getNormalized().getUppercased()}
      */
     @Test
     public void testNormalizedUppercased()
