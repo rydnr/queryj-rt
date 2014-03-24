@@ -54,7 +54,7 @@ import org.checkthread.annotations.ThreadSafe;
  * Models &lt;sql&gt; elements in <i>custom-sql</i> models, which
  * satisfy the following DTD extract (to describe the model even in
  * non-xml implementations):
- *  &lt;!ELEMENT sql (parameter-ref)+>
+ *  &lt;!ELEMENT sql (parameter-ref)+&gt;
  *  &lt;!ATTLIST sql
  *    id ID #REQUIRED
  *    class CDATA #IMPLIED
