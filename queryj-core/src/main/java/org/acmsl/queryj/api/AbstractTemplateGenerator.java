@@ -181,7 +181,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
         @NotNull final File rootFolder,
         @NotNull final Charset charset)
         throws  IOException,
-        QueryJBuildException
+                QueryJBuildException
     {
         return
             write(
@@ -203,8 +203,6 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
      * @param rootFolder the root folder.
      * @param charset the file encoding.
      * @param fileUtils the {@link org.acmsl.commons.utils.io.FileUtils} instance.
-     * @throws IOException if the file cannot be created.
-     * @throws QueryJBuildException if the generation process fails.
      */
     protected boolean write(
         final boolean caching,
