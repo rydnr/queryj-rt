@@ -120,8 +120,6 @@ public interface MetadataManager
 
     /**
      * Retrieves the metadata.
-     * @throws QueryJException if an error, which is identified by QueryJ,
-     * occurs.
      */
     public void eagerlyFetchMetadata()
       throws SQLException,
