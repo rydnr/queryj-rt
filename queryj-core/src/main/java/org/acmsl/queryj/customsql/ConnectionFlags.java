@@ -33,14 +33,6 @@
  */
 package org.acmsl.queryj.customsql;
 
-/*
- * Importing project-specific classes.
- */
-
-/*
- * Importing JDK classes.
- */
-
 /**
  * Models &lt;connection-flags&gt; elements in <i>custom-sql</i> models, which
  * satisfy the following DTD extract (to describe the model even in
