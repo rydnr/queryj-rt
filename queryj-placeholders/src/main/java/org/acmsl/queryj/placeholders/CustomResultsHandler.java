@@ -126,7 +126,6 @@ public class CustomResultsHandler
      * @param daoTemplateUtils the <code>DAOTemplateUtils</code> instance.
      * @param templateUtils the <code>TemplateUtils</code> instance.
      * @return the custom results.
-     * @throws QueryJBuildException if there inconsistencies in the custom SQL
      * model.
      */
     @NotNull
