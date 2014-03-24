@@ -48,7 +48,7 @@ import org.checkthread.annotations.ThreadSafe;
  * satisfy the following DTD extract (to describe the model even in
  * non-xml implementations):
  *  &lt;!ELEMENT parameter-ref EMPTY&gt;
- *  <!ATTLIST parameter-ref
+ *  &lt;!ATTLIST parameter-ref
  *    id IDREF #REQUIRED&gt;
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  */
