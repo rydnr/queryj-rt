@@ -163,7 +163,7 @@ public class ProcedureMetadata
      * Specifies the comment.
      * @param comment the comment.
      */
-    protected void setComment(final String comment)
+    protected void setComment(@NotNull final String comment)
     {
         immutableSetComment(comment);
     }
