@@ -534,4 +534,9 @@ public class DecoratedString
     {
         return getValue();
     }
+
+    public DecoratedString removeExtension()
+    {
+        return null;  //To change body of created methods use File | Settings | File Templates.
+    }
 }
