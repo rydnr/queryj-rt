@@ -481,7 +481,6 @@ public class DAOTemplateUtils
      * @param decoratorFactory the <code>DecoratorFactory</code> instance.
      * @param metaData the metadata.
      * @return the retrieved rows.
-     * @throws SQLException if the operation fails.
      */
     @NotNull
     protected List<Row<String>> queryContents(
