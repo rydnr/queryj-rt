@@ -48,8 +48,6 @@ import org.acmsl.queryj.tools.exceptions.MissingJdbcDriverAtRuntimeException;
 /*
  * Importing some Commons-Logging classes.
  */
-import org.acmsl.queryj.tools.exceptions.MissingJdbcUrlAtRuntimeException;
-import org.acmsl.queryj.tools.exceptions.MissingJdbcUserNameAtRuntimeException;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
