@@ -131,7 +131,7 @@ public abstract class AbstractJdbcMetadataManager
     private List<Table<String, Attribute<String>, List<Attribute<String>>>> m__lTables;
 
     /**
-     * The table attributes (table name -> columns).
+     * The table attributes (table name -&gt; columns).
      */
     private Map<String,List<Attribute<String>>> m__mColumns;
 
