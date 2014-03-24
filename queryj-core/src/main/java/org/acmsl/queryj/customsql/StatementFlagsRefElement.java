@@ -56,6 +56,9 @@ public class StatementFlagsRefElement
     extends  AbstractIdElement<String>
     implements StatementFlagsRef
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = 4902641145472579846L;
 
     /**
