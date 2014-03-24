@@ -113,7 +113,7 @@ public class Table
      * Specifies the fields.
      * @param fields the fields.
      */
-    public void setFields(final List<Field> fields)
+    public void setFields(@NotNull final List<Field> fields)
     {
         immutableSetFields(fields);
     }
