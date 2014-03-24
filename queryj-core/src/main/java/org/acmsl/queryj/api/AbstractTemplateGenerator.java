@@ -173,8 +173,6 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
      * @param outputDir the output folder.
      * @param rootFolder the root folder.
      * @param charset the file encoding.
-     * @throws IOException if the file cannot be created.
-     * @throws QueryJBuildException if the generation process fails.
      */
     @Override
     public boolean write(
