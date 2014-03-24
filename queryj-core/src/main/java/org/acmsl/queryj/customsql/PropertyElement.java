@@ -47,8 +47,8 @@ import org.jetbrains.annotations.Nullable;
  * Models &lt;property&gt; elements in <i>custom-sql</i> models, which
  * satisfy the following DTD extract (to describe the model even in
  * non-xml implementations):
- *   <!ELEMENT property EMPTY>
- *  <!ATTLIST property
+ *  &lt;!ELEMENT property EMPTY&gt;
+ *  &lt;!ATTLIST property
  *    id ID #REQUIRED
  *    column_name CDATA #IMPLIED
  *    index CDATA #IMPLIED
