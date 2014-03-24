@@ -200,6 +200,7 @@ public class ProcedureMetadata
      * Retrieves the hash code associated to this instance.
      * @return such information.
      */
+    @Override
     public int hashCode()
     {
         return
