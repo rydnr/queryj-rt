@@ -285,7 +285,6 @@ public class RetrieveResultPropertiesHandler
      * @param metadataManager the <code>MetadataManager</code> instance.
      * @param typeManager the <code>MetadataTypeManager</code> instance.
      * @return such properties.
-     * @throws QueryJBuildException if the properties cannot be retrieved..
      */
     @NotNull
     protected List<Property<String>> retrieveImplicitProperties(
@@ -336,7 +335,6 @@ public class RetrieveResultPropertiesHandler
      * @param sqlResult the {@link Result} instance.
      * @param sql the SQL element.
      * @param metadataManager the {@link MetadataManager} instance.
-     * @throws QueryJBuildException if the validation fails.
      */
     protected void invokeResultSetGetter(
         @NotNull final Method method,
