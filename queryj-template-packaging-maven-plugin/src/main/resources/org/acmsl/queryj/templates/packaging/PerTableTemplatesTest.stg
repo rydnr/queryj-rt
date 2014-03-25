@@ -460,7 +460,9 @@ public class PerTableTemplatesTest
         {
             firstTime = false;
 
-            @NotNull final List\<Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables = tableMap.values();
+            @NotNull final List\<Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables =
+                tableMap.values();
+
             for (@NotNull final Table\<String, Attribute\<String>, List\<Attribute\<String>\>> table : tables.values())
             {
                 @Nullable final PerTableTemplateFactory\<? extends PerTableTemplate\<PerTableTemplateContext>, PerTableTemplateContext> templateFactory =
