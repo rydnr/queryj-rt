@@ -342,7 +342,7 @@ public <if(table.dynamicQueries)>abstract <endif>class <engine.name><table.name.
     <notnull(C=C)>
     protected final List\<<table.name.voName\>> FIXED_CONSTANTS =
         Arrays.asList(
-            <table.staticContent:{ r | new <table.name.voName>(<r.attributes:{ a | <if(a.primitive)><a><else>"<a>"<endif>}; separator=", ">)}; separator=",\n">);
+            <C.staticValues:{ r | new <table.name.voName>(<r.attributes:{ a | <if(a.primitive)><a><else>"<a>"<endif>}; separator=", ">)}; separator=",\n">);
 
     /**
      * Retrieves the static (pre-cached) values.
