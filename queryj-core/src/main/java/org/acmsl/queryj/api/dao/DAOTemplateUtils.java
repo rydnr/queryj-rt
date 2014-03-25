@@ -429,7 +429,7 @@ public class DAOTemplateUtils
             }
             else
             {
-                t_StaticAttribute = t_StaticAttribute.getName()
+                t_StaticAttribute = t_StaticAttribute.getName();
             }
 
             if (t_strStaticAttribute != null)
