@@ -489,7 +489,7 @@ public class PerTableTemplatesTest
                         false, // disable NotNull annotations
                         true, // disable checkThread.org annotations
                         table.getName(),
-                        new ArrayList\<Row\<String\>>(0));
+                        tableRows);
 
                 Assert.assertNotNull("No template found for " + templateName, template);
 
