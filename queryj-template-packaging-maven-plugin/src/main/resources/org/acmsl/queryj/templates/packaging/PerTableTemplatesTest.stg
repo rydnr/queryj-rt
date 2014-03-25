@@ -467,7 +467,7 @@ public class PerTableTemplatesTest
                 @NotNull final String packageName =
                     resolvePackage(PACKAGE_MAPPINGS.get(templateName), resolveEngine(engine));
 
-                @Nullable final List
+                @Nullable final List\<Row\<String\>>
                 @Nullable final PerTableTemplate\<PerTableTemplateContext> template =
                     templateFactory.createTemplate(
                         retrieveMetadataManager(engine, table),
