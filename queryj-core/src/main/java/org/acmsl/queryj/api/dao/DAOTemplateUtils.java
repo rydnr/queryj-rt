@@ -426,6 +426,11 @@ public class DAOTemplateUtils
             if (t_StaticAttribute == null)
             {
                 t_strStaticAttribute = metaLanguageUtils.retrieveStaticAttribute(t_Table.getComment());
+            }
+            else
+            {
+                t_StaticAttribute = t_StaticAttribute.getName()
+            }
 
             if (t_strStaticAttribute != null)
             {
