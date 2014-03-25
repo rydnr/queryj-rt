@@ -446,7 +446,7 @@ public class DAOTemplateUtils
 
         if (result == null)
         {
-            result = new ArrayList<Row<String>>(0);
+            result = new ArrayList<>(0);
         }
 
         return result;
