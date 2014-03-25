@@ -421,7 +421,7 @@ public class DAOTemplateUtils
         {
             @Nullable final Attribute<String> t_StaticAttribute = t_Table.getStaticAttribute();
 
-            @Nullable final Attribute<String> t_strStaticAttribute;
+            @Nullable final String t_strStaticAttribute;
 
             if (t_StaticAttribute == null)
             {
