@@ -419,7 +419,7 @@ public class DAOTemplateUtils
 
         if (t_Table != null)
         {
-            @Nullable Attribute t_strStaticAttribute = t_Table.getStaticAttribute()
+            @Nullable Attribute<String> t_strStaticAttribute = t_Table.getStaticAttribute()
                 metaLanguageUtils.retrieveStaticAttribute(t_Table.getComment());
 
             if (t_strStaticAttribute != null)
