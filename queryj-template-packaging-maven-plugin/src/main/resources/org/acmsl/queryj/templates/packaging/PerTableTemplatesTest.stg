@@ -421,6 +421,7 @@ public class PerTableTemplatesTest
             template,
             engine,
             getTables(),
+            getRows(),
             getOutputFiles(),
             retrieveCustomSqlProvider(getSqlList(), getParameters()));
     }
