@@ -52,8 +52,9 @@ import java.util.List;
 /**
  * Represents <i>table</i> entities in the metadata model.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
- * @param <V> the type of the String attributes.
+ * @param <V> the type of the String values.
  * @param <A> the type of the attributes.
+ * @param <L> the type of the list of attributes.
  */
 public interface Table<V, A extends Attribute<V>, L extends List<A>>
     extends Serializable,
