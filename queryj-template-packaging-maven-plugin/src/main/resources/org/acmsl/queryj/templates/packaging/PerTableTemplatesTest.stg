@@ -484,7 +484,7 @@ public class PerTableTemplatesTest
                 @Nullable final PerTableTemplate\<PerTableTemplateContext> template =
                     templateFactory.createTemplate(
                         metadataManager,
-                        sqlProvider,
+qqq                        sqlProvider,
                         retrieveDecoratorFactory(generator),
                         packageName,
                         BASE_PACKAGE_NAME,
