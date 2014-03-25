@@ -430,6 +430,7 @@ public class PerTableTemplatesTest
      * @param templateName the template.
      * @param engine the engine name.
      * @param tables the tables.
+     * @param rows the rows.
      * @param outputFiles the output files.
      * @param sqlProvider the {@link CustomSqlProvider} instance.
      */
