@@ -463,7 +463,8 @@ public class PerTableTemplatesTest
             @NotNull final List\<Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables =
                 tableMap.values();
 
-            @NotNull final MetadataManager metadataManager = retrieveMetadataManager(engine, t
+            @NotNull final MetadataManager metadataManager = retrieveMetadataManager(engine, tables);
+
             for (@NotNull final Table\<String, Attribute\<String>, List\<Attribute\<String>\>> table : tables)
             {
                 @Nullable final PerTableTemplateFactory\<? extends PerTableTemplate\<PerTableTemplateContext>, PerTableTemplateContext> templateFactory =
