@@ -51,7 +51,7 @@ import java.util.List;
 
 /**
  * Represents <i>table</i> entities in the metadata model.
- * @author <a href="mailto:chous@acm-sl.org"
+ * @author <a href="mailto:queryj@acm-sl.org"
  *         >Jose San Leandro</a>
  */
 public interface Table<V, A extends Attribute<V>, L extends List<A>>
