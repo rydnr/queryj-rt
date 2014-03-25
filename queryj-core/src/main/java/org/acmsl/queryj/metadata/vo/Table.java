@@ -52,7 +52,7 @@ import java.util.List;
 /**
  * Represents <i>table</i> entities in the metadata model.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
- *
+ * @param <
  */
 public interface Table<V, A extends Attribute<V>, L extends List<A>>
     extends Serializable,
