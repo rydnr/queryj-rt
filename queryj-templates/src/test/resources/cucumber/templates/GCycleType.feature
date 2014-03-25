@@ -4,7 +4,7 @@ Feature: G_CYCLE_TYPES code compiles
 
     Given the following tables:
     |    table     | parent table | decorated | relationship |   static    |
-    | G_CYCLE_TYPES |  |  |  | true |
+    | G_CYCLE_TYPES |  |  |  | NAME |
 
     And the following columns:
     |     table    |         column        | type      | pk    | allows null | readonly |   sequence    | keyword | boolean | length | precision |
