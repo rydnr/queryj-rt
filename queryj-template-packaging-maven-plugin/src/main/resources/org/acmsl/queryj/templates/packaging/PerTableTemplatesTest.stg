@@ -438,6 +438,7 @@ public class PerTableTemplatesTest
         @NotNull final String templateName,
         @NotNull final String engine,
         @NotNull final Map\<String, Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables,
+        @NotNull final Map\<String, List\<Row\<String\>>
         @NotNull final Map\<String, File> outputFiles,
         @NotNull final CustomSqlProvider sqlProvider)
     {
