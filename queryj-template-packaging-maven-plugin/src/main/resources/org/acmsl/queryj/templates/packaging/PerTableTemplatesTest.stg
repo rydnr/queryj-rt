@@ -461,7 +461,7 @@ public class PerTableTemplatesTest
             firstTime = false;
 
             @NotNull final List\<Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables =
-                tableMap.values();
+                new ArrayList\<Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>>tableMap.values();
 
             @NotNull final MetadataManager metadataManager = retrieveMetadataManager(engine, tables);
 
