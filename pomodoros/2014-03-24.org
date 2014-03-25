@@ -1,5 +1,5 @@
 * 2014/03/24
-** TODO Upgrade to Java 8 : 1 ->
+** DONE Upgrade to Java 8 : 3 -> 3
 ** TODO #448 Cucumber template: 1 -> 
 ** TODO Review generated DAO: 1 ->
 ** TODO Add BaseDAO: 1 ->
