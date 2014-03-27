@@ -45,11 +45,6 @@ import org.acmsl.queryj.api.PerTableTemplateContext;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.api.handlers.TemplateContextFillAdapterHandler;
 import org.acmsl.queryj.api.handlers.fillhandlers.FillHandler;
-import org.acmsl.queryj.customsql.Result;
-import org.acmsl.queryj.metadata.DecoratedString;
-import org.acmsl.queryj.metadata.TableDecorator;
-import org.acmsl.queryj.metadata.vo.Attribute;
-import org.acmsl.queryj.metadata.vo.ForeignKey;
 
 /*
  * Importing some JetBrains annotations.
