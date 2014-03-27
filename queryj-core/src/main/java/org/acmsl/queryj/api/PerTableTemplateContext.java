@@ -207,7 +207,7 @@ public class PerTableTemplateContext
     @Nullable
     public List<Row<String>> getStaticValues()
     {
-        @Nullable List<Row<String>> result = null;
+        @Nullable final List<Row<String>> result;
 
         @Nullable final List<Row<String>> t_lRows = immutableGetStaticValues();
 
