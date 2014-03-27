@@ -41,6 +41,7 @@ package org.acmsl.queryj.placeholders;
 import org.acmsl.queryj.api.PerTableTemplateContext;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.metadata.vo.Row;
+
 /*
  * Importing JetBrains annotations.
  */
