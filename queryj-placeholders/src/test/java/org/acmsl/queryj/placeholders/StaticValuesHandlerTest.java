@@ -82,7 +82,7 @@ public class StaticValuesHandlerTest
         @NotNull final StaticValuesHandler instance =
             new StaticValuesHandler(t_Context);
 
-        Assert.assertEquals("static_values", instance.getPlaceHolder());
+        Assert.assertEquals("static_values", instance.getValue());
     }
 
 
