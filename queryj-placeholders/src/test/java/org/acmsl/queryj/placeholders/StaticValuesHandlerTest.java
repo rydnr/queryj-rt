@@ -92,7 +92,9 @@ public class StaticValuesHandlerTest
 
         @NotNull final PerTableTemplateContext t_Context = EasyMock.createNiceMock(PerTableTemplateContext.class);
 
-        EasyMock.expect(t_Context.getStaticValues())
+        EasyMock.expect(t_Context.getStaticValues()).andReturn(t_lStaticValues);
+        EasyMock.replay(t_Context);
+
         @NotNull final StaticValuesHandler instance =
             new StaticValuesHandler(t_Context);
 
