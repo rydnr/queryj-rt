@@ -51,11 +51,13 @@ import org.checkthread.annotations.ThreadSafe;
  * Value-object implementation of <code>Row</code> interface.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  */
-@SuppressWarnings("unused")
 @ThreadSafe
 public class RowValueObject
     extends  AbstractRow<String>
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = -1296713765073878556L;
 
     /**
