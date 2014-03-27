@@ -214,9 +214,9 @@ project_imports(
 /*
  * Importing project-specific classes.
  */
-import <package>.<table.name.lowercased>.<table.name.voName>AttributesStatementSetter;
-import <package>.<table.name.lowercased>.<table.name.voName>PkStatementSetter;
-import <package>.<table.name.lowercased>.<table.name.voName>ResultSetExtractor;
+import <package>.<table.name.voName.lowercased>.<table.name.voName>AttributesStatementSetter;
+import <package>.<table.name.voName.lowercased>.<table.name.voName>PkStatementSetter;
+import <package>.<table.name.voName.lowercased>.<table.name.voName>ResultSetExtractor;
 import <basePackageName>.<voSubpackageName>.<table.name.voName>;
 <if(parent)>
 import <basePackageName>.<baseDAOSubpackageName>.<parent.name.voName>DAO;
