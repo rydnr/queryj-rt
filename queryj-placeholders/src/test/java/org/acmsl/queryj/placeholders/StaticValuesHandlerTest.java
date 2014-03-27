@@ -99,5 +99,7 @@ public class StaticValuesHandlerTest
             new StaticValuesHandler(t_Context);
 
         Assert.assertEquals(t_lStaticValues, instance.getValue());
+
+        EasyMock.verify(t_Context);
     }
 }
