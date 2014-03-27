@@ -74,7 +74,8 @@ public class StaticValuesHandler
      */
     @NotNull
     @Override
-    protected List<Row<String>> getValue(@NotNull final PerTableTemplateContext context) throws QueryJBuildException
+    protected List<Row<String>> getValue(@NotNull final PerTableTemplateContext context)
+        throws QueryJBuildException
     {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
