@@ -214,8 +214,6 @@ public class PerTableTemplateContext
         if (t_lRows != null)
         {
             result = new ArrayList<>(t_lRows);
-
-            Collections.copy(result, t_lRows);
         }
 
         return result;
