@@ -215,6 +215,10 @@ public class PerTableTemplateContext
         {
             result = new ArrayList<>(t_lRows);
         }
+        else
+        {
+            result = new ArrayList<>
+        }
 
         return result;
     }
