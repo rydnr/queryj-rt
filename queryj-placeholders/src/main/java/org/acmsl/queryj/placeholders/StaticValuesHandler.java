@@ -62,8 +62,8 @@ public class StaticValuesHandler
     extends AbstractTemplateContextFillHandler<PerTableTemplateContext, List<Row<String>>>
 {
     /**
-     *
-     * @param context
+     * Creates a new instance wrapping given context.
+     * @param context the context.
      */
     public StaticValuesHandler(@NotNull final PerTableTemplateContext context)
     {
