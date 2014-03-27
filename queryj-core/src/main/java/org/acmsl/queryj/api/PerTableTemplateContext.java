@@ -213,7 +213,7 @@ public class PerTableTemplateContext
 
         if (t_lRows != null)
         {
-            result = new ArrayList<Row<String>>(t_lRows.size());
+            result = new ArrayList<Row<String>>(t_lRows);
 
             Collections.copy(result, t_lRows);
         }
