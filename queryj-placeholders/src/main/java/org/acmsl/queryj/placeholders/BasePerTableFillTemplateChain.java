@@ -144,15 +144,15 @@ public class BasePerTableFillTemplateChain
 
         result.add(
             new TemplateContextFillAdapterHandler<>(
-                    new TableNameHandler(context)));
+                new TableNameHandler(context)));
 
         result.add(
             new TemplateContextFillAdapterHandler<>(
-                    new ValueObjectNameHandler(context)));
+                new ValueObjectNameHandler(context)));
 
         result.add(
             new TemplateContextFillAdapterHandler<>(
-                new TableAttributeTypeImportsHandler(context)));
+            new TableAttributeTypeImportsHandler(context)));
 
         return result;
     }
