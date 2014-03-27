@@ -79,6 +79,7 @@ public class StaticValuesHandler
     protected List<Row<String>> getValue(@NotNull final PerTableTemplateContext context)
         throws QueryJBuildException
     {
+        @Nullable final List<Row<String>> result =
         return context.getStaticValues();
     }
 
