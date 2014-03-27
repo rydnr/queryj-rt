@@ -337,14 +337,6 @@ public <if(table.dynamicQueries)>abstract <endif>class <engine.name><table.name.
     <constructor(table=table, repository=repository, engine=engine, C=C)>
 <if(table.static)>
     /**
-     * The fixed constants.
-     */
-    <notnull(C=C)>
-    protected final List\<<table.name.voName\>> FIXED_CONSTANTS =
-        Arrays.asList(
-            <C.static_values:{ r | new <table.name.voName>ValueObject(<r.attributes:{ a | <if(a.primitive)><a><else>"<a>"<endif>}; separator=", ">)}; separator=",\n">);
-
-    /**
      * Retrieves the static (pre-cached) values.
      * @return such information.
      */
