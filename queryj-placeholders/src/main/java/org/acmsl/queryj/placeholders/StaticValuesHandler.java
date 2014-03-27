@@ -49,6 +49,7 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -79,7 +80,15 @@ public class StaticValuesHandler
     protected List<Row<String>> getValue(@NotNull final PerTableTemplateContext context)
         throws QueryJBuildException
     {
-        @Nullable final List<Row<String>> result = context.getStaticValues();
+        @NotNull final List<Row<String>> result;
+
+        @Nullable final List<Row<String>> aux = context.getStaticValues();
+
+        if (aux == null)
+        {
+            result = new ArrayList<Row<String>>();
+        }
+        ]
     }
 
     /**
