@@ -87,10 +87,10 @@ public class StaticValuesHandlerTest
     public void returns_the_expected_values()
         throws QueryJBuildException
     {
-        @NotNull final PerTableTemplateContext t_Context = EasyMock.createNiceMock(PerTableTemplateContext.class);
-
         @NotNull final List<Row<String>> t_lStaticValues =
             Arrays.<Row<String>>asList(new RowValueObject("row1", "table1", new ArrayList<>(0)));
+
+        @NotNull final PerTableTemplateContext t_Context = EasyMock.createNiceMock(PerTableTemplateContext.class);
 
         @NotNull final StaticValuesHandler instance =
             new StaticValuesHandler(t_Context);
