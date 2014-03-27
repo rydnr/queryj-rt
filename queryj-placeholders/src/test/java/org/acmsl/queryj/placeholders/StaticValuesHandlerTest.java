@@ -44,8 +44,6 @@ import org.acmsl.queryj.api.PerTableTemplateContext;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
-import org.acmsl.queryj.metadata.vo.Attribute;
-import org.acmsl.queryj.metadata.vo.AttributeIncompleteValueObject;
 import org.acmsl.queryj.metadata.vo.Row;
 import org.acmsl.queryj.metadata.vo.RowValueObject;
 import org.jetbrains.annotations.NotNull;
