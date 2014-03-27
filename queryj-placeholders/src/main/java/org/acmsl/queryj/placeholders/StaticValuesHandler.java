@@ -92,7 +92,8 @@ public class StaticValuesHandler
         {
             result = aux;
         }
-        ]
+
+        return result;
     }
 
     /**
