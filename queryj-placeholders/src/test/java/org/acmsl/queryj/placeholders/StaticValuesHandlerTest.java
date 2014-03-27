@@ -89,6 +89,4 @@ public class StaticValuesHandlerTest
 
         @NotNull final List<Row<String>> actualValues = instance.getValue();
     }
-
-
 }
