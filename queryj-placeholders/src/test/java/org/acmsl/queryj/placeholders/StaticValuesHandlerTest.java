@@ -44,6 +44,7 @@ import org.acmsl.queryj.api.PerTableTemplateContext;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.AttributeIncompleteValueObject;
 import org.acmsl.queryj.metadata.vo.Row;
 import org.acmsl.queryj.metadata.vo.RowValueObject;
@@ -58,6 +59,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.powermock.modules.junit4.PowerMockRunner;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -88,7 +90,8 @@ public class StaticValuesHandlerTest
         @NotNull final PerTableTemplateContext t_Context = EasyMock.createNiceMock(PerTableTemplateContext.class);
 
         @NotNull final List<Row<String>> t_lStaticValues =
-            Arrays.asList(new RowValueObject("row1", "table1", Arrays.asList(new AttributeIncompleteValueObject()))
+            Arrays.asList(new RowValueObject("row1", "table1", new ArrayList<Attribute<String>>(0));
+
         @NotNull final StaticValuesHandler instance =
             new StaticValuesHandler(t_Context);
 
