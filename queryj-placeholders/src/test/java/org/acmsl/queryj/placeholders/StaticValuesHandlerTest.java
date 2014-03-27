@@ -43,6 +43,7 @@ import org.acmsl.queryj.api.PerTableTemplateContext;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.metadata.vo.Row;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -53,6 +54,8 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.powermock.modules.junit4.PowerMockRunner;
+
+import java.util.List;
 
 /**
  * Tests for {@link StaticValuesHandler}.
@@ -82,6 +85,7 @@ public class StaticValuesHandlerTest
         @NotNull final StaticValuesHandler instance =
             new StaticValuesHandler(t_Context);
 
+        @NotNull final List<Row<String>> actualValues =
         Assert.assertEquals("static_values", instance.getValue());
     }
 
