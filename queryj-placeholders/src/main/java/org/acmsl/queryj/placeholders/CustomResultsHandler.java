@@ -74,6 +74,9 @@ import org.checkthread.annotations.ThreadSafe;
 public class CustomResultsHandler
     extends AbstractTemplateContextFillHandler<PerTableTemplateContext, List<Result<String>>>
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = 6281653014442667192L;
 
     /**
