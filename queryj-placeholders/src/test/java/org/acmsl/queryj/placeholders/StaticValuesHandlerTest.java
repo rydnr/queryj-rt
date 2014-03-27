@@ -86,7 +86,7 @@ public class StaticValuesHandlerTest
         @NotNull final PerTableTemplateContext t_Context = EasyMock.createNiceMock(PerTableTemplateContext.class);
 
         @NotNull final List<Row<String>> t_lStaticValues =
-            Arrays.asList(new Row<>)
+            Arrays.asList(new Row<>())
         @NotNull final StaticValuesHandler instance =
             new StaticValuesHandler(t_Context);
 
