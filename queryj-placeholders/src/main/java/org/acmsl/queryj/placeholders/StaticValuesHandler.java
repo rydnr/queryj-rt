@@ -72,7 +72,7 @@ public class StaticValuesHandler
      * @return such value.
      *         model.
      */
-    @Nullable
+    @NotNull
     @Override
     protected List<Row<String>> getValue(@NotNull final PerTableTemplateContext context) throws QueryJBuildException
     {
