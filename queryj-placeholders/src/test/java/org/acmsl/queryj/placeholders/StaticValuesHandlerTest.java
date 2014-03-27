@@ -75,7 +75,7 @@ public class StaticValuesHandlerTest
     }
 
     @Test
-    public void returns_the_expected_placeholder()
+    public void returns_the_expected_values()
     {
         @NotNull final PerTableTemplateContext t_Context = EasyMock.createNiceMock(PerTableTemplateContext.class);
 
