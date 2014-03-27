@@ -69,10 +69,9 @@ public class RowValueObject
      * @param attributes the attributes.
      */
     public RowValueObject(
-        @NotNull
-         final String name,
-        final String tableName,
-        final List<Attribute<String>> attributes)
+        @NotNull final String name,
+        @NotNull final String tableName,
+        @NotNull final List<Attribute<String>> attributes)
     {
         super(name, tableName, attributes);
     }
