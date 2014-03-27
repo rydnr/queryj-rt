@@ -46,6 +46,7 @@ import java.util.List;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Value-object implementation of <code>Row</code> interface.
@@ -68,7 +69,8 @@ public class RowValueObject
      * @param attributes the attributes.
      */
     public RowValueObject(
-        final String name,
+        @NotNull
+         final String name,
         final String tableName,
         final List<Attribute<String>> attributes)
     {
