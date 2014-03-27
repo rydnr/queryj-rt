@@ -52,7 +52,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 /**
- * Resolves the static
+ * Resolves the static values from a {@link PerTableTemplateContext}
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/27 07:21
