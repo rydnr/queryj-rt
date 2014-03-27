@@ -586,7 +586,7 @@ public class DecoratedString
     @NotNull
     protected DecoratedString getShrink(@NotNull final String value)
     {
-        @NotNull final String result = NON_ALPHANUM_REGEX.matcher(value).replaceAll("");
+        @NotNull final String result = NON_ALPHANUMERIC_REGEX.matcher(value).replaceAll("");
 
         return new DecoratedString(result);
     }
