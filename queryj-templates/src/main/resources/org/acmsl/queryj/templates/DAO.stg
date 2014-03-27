@@ -212,7 +212,7 @@ project_imports(
   @param parent the parent table (optional).
 !>
 /*
- * Importing project-specific classes.
+ * Importing <trName> (<table.name>) classes.
  */
 import <package>.<table.name.shrink.lowercased>.<table.name.voName>AttributesStatementSetter;
 import <package>.<table.name.shrink.lowercased>.<table.name.voName>PkStatementSetter;
