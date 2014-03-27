@@ -47,7 +47,6 @@ import java.util.List;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
-import org.jetbrains.annotations.NotNull;
 
 /**
  * Value-object implementation of <code>Row</code> interface.
