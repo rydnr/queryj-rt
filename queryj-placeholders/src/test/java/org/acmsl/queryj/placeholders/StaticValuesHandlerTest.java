@@ -45,6 +45,7 @@ import org.acmsl.queryj.api.PerTableTemplateContext;
  */
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.metadata.vo.Row;
+import org.acmsl.queryj.metadata.vo.RowValueObject;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -86,7 +87,7 @@ public class StaticValuesHandlerTest
         @NotNull final PerTableTemplateContext t_Context = EasyMock.createNiceMock(PerTableTemplateContext.class);
 
         @NotNull final List<Row<String>> t_lStaticValues =
-            Arrays.asList(new Row<>())
+            Arrays.asList(new RowValueObject()
         @NotNull final StaticValuesHandler instance =
             new StaticValuesHandler(t_Context);
 
