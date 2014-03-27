@@ -217,7 +217,7 @@ public class PerTableTemplateContext
         }
         else
         {
-            result = new ArrayList<>
+            result = new ArrayList<>(0);
         }
 
         return result;
