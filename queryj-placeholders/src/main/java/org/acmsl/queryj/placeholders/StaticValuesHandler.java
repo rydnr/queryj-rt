@@ -86,7 +86,11 @@ public class StaticValuesHandler
 
         if (aux == null)
         {
-            result = new ArrayList<Row<String>>();
+            result = new ArrayList<>();
+        }
+        else
+        {
+            result = aux;
         }
         ]
     }
