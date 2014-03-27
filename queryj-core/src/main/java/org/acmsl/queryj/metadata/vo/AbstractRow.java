@@ -33,10 +33,18 @@
 package org.acmsl.queryj.metadata.vo;
 
 /*
- * Importing project classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.Literals;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.checkthread.annotations.ThreadSafe;
+
+/*
+ * Importing checkthread.org annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
