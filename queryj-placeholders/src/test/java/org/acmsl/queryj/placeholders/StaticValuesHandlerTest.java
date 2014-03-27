@@ -74,5 +74,16 @@ public class StaticValuesHandlerTest
         Assert.assertEquals("static_values", instance.getPlaceHolder());
     }
 
+    @Test
+    public void returns_the_expected_placeholder()
+    {
+        @NotNull final PerTableTemplateContext t_Context = EasyMock.createNiceMock(PerTableTemplateContext.class);
+
+        @NotNull final StaticValuesHandler instance =
+            new StaticValuesHandler(t_Context);
+
+        Assert.assertEquals("static_values", instance.getPlaceHolder());
+    }
+
 
 }
