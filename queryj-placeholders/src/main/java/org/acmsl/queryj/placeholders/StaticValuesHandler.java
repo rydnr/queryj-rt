@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Resolves the static values from a PerTableTemplateContext.
  *
  * Date: 2014/03/27
  * Time: 07:21
