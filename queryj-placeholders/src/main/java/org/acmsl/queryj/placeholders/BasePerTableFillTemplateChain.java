@@ -156,7 +156,7 @@ public class BasePerTableFillTemplateChain
 
         result.add(
             new TemplateContextFillHandler<>(
-                new StaticValuesHandler()
+                new StaticValuesHandler(context))
         )
         return result;
     }
