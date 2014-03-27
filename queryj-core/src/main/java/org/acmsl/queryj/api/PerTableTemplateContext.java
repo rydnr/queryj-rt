@@ -204,7 +204,7 @@ public class PerTableTemplateContext
      * @return such values.
      */
     @SuppressWarnings("unused")
-    @Nullable
+    @NotNull
     public List<Row<String>> getStaticValues()
     {
         @Nullable final List<Row<String>> result;
