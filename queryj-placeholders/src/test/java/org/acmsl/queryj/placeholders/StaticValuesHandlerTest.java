@@ -56,6 +56,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.powermock.modules.junit4.PowerMockRunner;
 
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -84,6 +85,7 @@ public class StaticValuesHandlerTest
     {
         @NotNull final PerTableTemplateContext t_Context = EasyMock.createNiceMock(PerTableTemplateContext.class);
 
+        @NotNull final List<Row<String>> t_lStaticValues = Arrays.asList()
         @NotNull final StaticValuesHandler instance =
             new StaticValuesHandler(t_Context);
 
