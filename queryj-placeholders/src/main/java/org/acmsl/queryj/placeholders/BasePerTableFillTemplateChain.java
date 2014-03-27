@@ -116,31 +116,31 @@ public class BasePerTableFillTemplateChain
 
         result.add(
             new TemplateContextFillAdapterHandler<>(
-                    new DAOClassNameHandler(context)));
+                new DAOClassNameHandler(context)));
 
         result.add(
             new TemplateContextFillAdapterHandler<>(
-                    new DAOImplementationClassNameHandler(context)));
+                new DAOImplementationClassNameHandler(context)));
 
         result.add(
             new TemplateContextFillAdapterHandler<>(
-                    new DAOFactoryClassNameHandler(context)));
+                new DAOFactoryClassNameHandler(context)));
 
         result.add(
             new TemplateContextFillAdapterHandler<>(
-                    new ForeignKeyListHandler(context)));
+                new ForeignKeyListHandler(context)));
 
         result.add(
             new TemplateContextFillAdapterHandler<>(
-                    new NonPrimaryKeyAttributesHandler(context)));
+                new NonPrimaryKeyAttributesHandler(context)));
 
         result.add(
             new TemplateContextFillAdapterHandler<>(
-                    new PrimaryKeyHandler(context)));
+                new PrimaryKeyHandler(context)));
 
         result.add(
             new TemplateContextFillAdapterHandler<>(
-                    new TableHandler(context)));
+                new TableHandler(context)));
 
         result.add(
             new TemplateContextFillAdapterHandler<>(
