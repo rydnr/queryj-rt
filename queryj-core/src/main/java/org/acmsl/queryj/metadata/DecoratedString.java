@@ -562,4 +562,10 @@ public class DecoratedString
 
         return new DecoratedString(result);
     }
+
+    @NotNull
+    public DecoratedString getShrink()
+    {
+        return null;  //To change body of created methods use File | Settings | File Templates.
+    }
 }
