@@ -67,10 +67,8 @@ public class StaticValuesHandler
     }
 
     /**
-     * Retrieves the template value for this placeholder.
-     *
-     * @return such value.
-     *         model.
+     * Retrieves the static rows for the table.
+     * @return such rows.
      */
     @NotNull
     @Override
