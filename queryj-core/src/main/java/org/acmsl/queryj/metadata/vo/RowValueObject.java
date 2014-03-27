@@ -34,7 +34,7 @@
 package org.acmsl.queryj.metadata.vo;
 
 /*
- * Importing project classes.
+ * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
 
