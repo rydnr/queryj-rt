@@ -39,10 +39,6 @@ package org.acmsl.queryj.placeholders;
  * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.api.PerTableTemplateContext;
-
-/*
- * Importing QueryJ Core classes.
- */
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.metadata.vo.Row;
 import org.acmsl.queryj.metadata.vo.RowValueObject;
