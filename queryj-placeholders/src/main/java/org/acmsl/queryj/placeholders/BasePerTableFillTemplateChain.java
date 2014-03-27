@@ -154,6 +154,9 @@ public class BasePerTableFillTemplateChain
             new TemplateContextFillAdapterHandler<>(
             new TableAttributeTypeImportsHandler(context)));
 
+        result.add(
+            new FillTemplateChainWrapper<>()
+        )
         return result;
     }
 }
