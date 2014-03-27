@@ -43,6 +43,7 @@ import org.acmsl.queryj.api.PerTableTemplateContext;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.metadata.vo.Row;
 import org.jetbrains.annotations.NotNull;
 
@@ -79,6 +80,7 @@ public class StaticValuesHandlerTest
 
     @Test
     public void returns_the_expected_values()
+        throws QueryJBuildException
     {
         @NotNull final PerTableTemplateContext t_Context = EasyMock.createNiceMock(PerTableTemplateContext.class);
 
