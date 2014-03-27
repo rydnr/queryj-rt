@@ -95,7 +95,7 @@ public class BasePerTableFillTemplateChain
     public QueryJCommand providePlaceholders(final boolean relevantOnly)
         throws QueryJBuildException
     {
-        return new FillTemplateChainWrapper<PerTableTemplateContext>(this).providePlaceholders(relevantOnly);
+        return new FillTemplateChainWrapper<>(this).providePlaceholders(relevantOnly);
     }
 
     /**
