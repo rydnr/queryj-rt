@@ -56,6 +56,7 @@ import java.util.List;
 /**
  * Abstract logic-less implementation of <code>Row</code> interface.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
+ * @param <V> the type.
  */
 @ThreadSafe
 public abstract class AbstractRow<V>
