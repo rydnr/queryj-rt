@@ -95,7 +95,7 @@ public class DecoratedString
     /**
      * A regex matching all non-alphanumeric characters.
      */
-    protected static final Pattern NON_ALPHANUMERIC_REGEX = Pattern.compile("[^\\\\p{Alnum}]+");
+    protected static final Pattern NON_ALPHANUMERIC_REGEX = Pattern.compile("[^\\p{Alnum}]+");
 
     /**
      * The actual value.
