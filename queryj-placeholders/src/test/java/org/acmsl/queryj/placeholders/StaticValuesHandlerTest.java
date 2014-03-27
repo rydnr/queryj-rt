@@ -87,7 +87,6 @@ public class StaticValuesHandlerTest
         @NotNull final StaticValuesHandler instance =
             new StaticValuesHandler(t_Context);
 
-        t_Context.getStaticValues()
-        @NotNull final List<Row<String>> actualValues = instance.getValue();
+        Assert.assertEquals(t_lStaticValues, );@NotNull final List<Row<String>> actualValues = instance.getValue();
     }
 }
