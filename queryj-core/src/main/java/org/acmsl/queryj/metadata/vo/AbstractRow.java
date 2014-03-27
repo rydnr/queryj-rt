@@ -40,13 +40,13 @@ import org.acmsl.queryj.Literals;
 /*
  * Importing JetBrains annotations.
  */
-import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /*
  * Importing checkthread.org annotations.
  */
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
+import org.checkthread.annotations.ThreadSafe;
 
 /*
  * importing JDK classes.
