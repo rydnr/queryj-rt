@@ -61,6 +61,10 @@ import java.util.List;
 public class StaticValuesHandler
     extends AbstractTemplateContextFillHandler<PerTableTemplateContext, List<Row<String>>>
 {
+    /**
+     *
+     * @param context
+     */
     public StaticValuesHandler(@NotNull final PerTableTemplateContext context)
     {
         super(context);
