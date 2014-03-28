@@ -95,11 +95,6 @@ public abstract class AbstractTemplateContext
     protected static final String PACKAGE_NAME = "packageName";
 
     /**
-     * The base package name key.
-     */
-    protected static final String BASE_PACKAGE_NAME = "basePackageName";
-
-    /**
      * The file name key.
      */
     protected static final String FILE_NAME = "fileName";
