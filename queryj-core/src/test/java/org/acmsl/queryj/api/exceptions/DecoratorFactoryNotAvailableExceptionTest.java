@@ -38,7 +38,6 @@ package org.acmsl.queryj.api.exceptions;
 /*
  * Importing JetBrains annotations.
  */
-import org.acmsl.queryj.customsql.exceptions.CustomSqlProviderNotAvailableException;
 import org.jetbrains.annotations.NotNull;
 
 /*
