@@ -43,10 +43,15 @@ import org.jetbrains.annotations.NotNull;
 /*
  * Importing checkthread.org annotations.
  */
-import org.checkthread.annotations.ThreadSafe;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.util.Arrays;
+import java.util.Locale;
+
+/*
+ * Importing JDK classes.
+ */
 import java.util.Arrays;
 import java.util.Locale;
 
