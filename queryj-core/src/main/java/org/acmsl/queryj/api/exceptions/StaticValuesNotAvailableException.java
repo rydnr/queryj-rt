@@ -60,5 +60,11 @@ public class StaticValuesNotAvailableException
      */
     private static final long serialVersionUID = -6545289590394757639L;
 
-
+    /**
+     * Creates a new instance.
+     */
+    public StaticValuesNotAvailableException()
+    {
+        super("StaticValues.not.available");
+    }
 }
