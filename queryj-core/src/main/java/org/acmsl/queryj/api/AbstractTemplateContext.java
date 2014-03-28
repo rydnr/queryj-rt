@@ -421,7 +421,6 @@ public abstract class AbstractTemplateContext
      * @param command the command.
      * @return such information.
      */
-    @Override
     protected boolean isJmxSupportEnabled(@NotNull final QueryJCommand command)
     {
         return m__bJmx;
