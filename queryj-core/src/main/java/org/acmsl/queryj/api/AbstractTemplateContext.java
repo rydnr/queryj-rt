@@ -319,8 +319,7 @@ public abstract class AbstractTemplateContext
      * @return such information.
      */
     @NotNull
-    @Override
-    public String getPackageName()
+    protected String getPackageName()
     {
         return m__strPackageName;
     }
