@@ -125,6 +125,7 @@ public abstract class BasePerTableTemplateBuildHandler
     {
         buildTemplate(
             parameters,
+            buildCommand()
             metadataManager,
             retrieveCustomSqlProvider(parameters),
             retrieveTemplateFactory(),
