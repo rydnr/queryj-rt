@@ -460,7 +460,7 @@ public abstract class AbstractTemplateContext
     @Override
     public boolean getDisableGenerationTimestamps()
     {
-        return m__bDisableGenerationTimestamps;
+        return getBooleanValue(getCommand(), QueryJSettings.DISABLE_TIMESTAMPS);
     }
 
     /**
