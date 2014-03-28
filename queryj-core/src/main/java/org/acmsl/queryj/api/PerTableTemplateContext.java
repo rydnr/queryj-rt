@@ -104,25 +104,6 @@ public class PerTableTemplateContext
     }
 
     /**
-     * Specifies the table name.
-     * @param tableName such name.
-     */
-    protected final void immutableSetTableName(@NotNull final String tableName)
-    {
-        this.tableName = tableName;
-    }
-
-    /**
-     * Specifies the table name.
-     * @param tableName such name.
-     */
-    @SuppressWarnings("unused")
-    protected void setTableName(@NotNull final String tableName)
-    {
-        immutableSetTableName(tableName);
-    }
-
-    /**
      * Retrieves the table name.
      * @return such name.
      */
