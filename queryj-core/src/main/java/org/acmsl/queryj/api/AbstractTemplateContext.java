@@ -318,7 +318,6 @@ public abstract class AbstractTemplateContext
 
     /**
      * Retrieves whether to use generation timestamps or not.
-     *
      * @return such setting.
      */
     @Override
