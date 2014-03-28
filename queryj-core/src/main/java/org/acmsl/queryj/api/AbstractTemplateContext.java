@@ -84,6 +84,8 @@ public abstract class AbstractTemplateContext
      */
     private static final long serialVersionUID = 3405496681880071590L;
 
+    private static final String PACKAGE_NAME = "packageName";
+
     /**
      * The optional header.
      */
