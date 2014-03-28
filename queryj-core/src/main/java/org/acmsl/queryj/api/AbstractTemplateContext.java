@@ -296,25 +296,6 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Specifies whether to include JMX support.
-     * @param jmx such information.
-     */
-    protected final void immutableSetJmxSupportEnabled(final boolean jmx)
-    {
-        this.m__bJmx = jmx;
-    }
-
-    /**
-     * Specifies whether to include JMX support.
-     * @param jmx such information.
-     */
-    @SuppressWarnings("unused")
-    protected void setJmxSupportEnabled(final boolean jmx)
-    {
-        immutableSetJmxSupportEnabled(jmx);
-    }
-
-    /**
      * Retrieves whether to include JMX support.
      * @return such information.
      */
