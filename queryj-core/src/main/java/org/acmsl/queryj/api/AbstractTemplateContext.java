@@ -347,25 +347,6 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Specifies the file name.
-     * @param fileName the file name.
-     */
-    protected final void immutableSetFileName(@NotNull final String fileName)
-    {
-        this.m__strFileName = fileName;
-    }
-
-    /**
-     * Specifies the file name.
-     * @param fileName the file name.
-     */
-    @SuppressWarnings("unused")
-    protected void setFileName(@NotNull final String fileName)
-    {
-        immutableSetFileName(fileName);
-    }
-
-    /**
      * Retrieves the file name.
      * @return such information.
      */
