@@ -421,7 +421,7 @@ public abstract class AbstractTemplateContext
         return
             "{ \"class\": \"" + AbstractTemplateContext.class.getSimpleName() + '"'
             + ", \"package\": \"org.acmsl.queryj.api\"
-            + ", \"command\": " + m__strHeader + '\'' +
+            + ", \"command\": " + m__Command + '\'' +
                ", decoratorFactory=" + m__DecoratorFactory +
                ", metadataManager=" + m__MetadataManager +
                ", customSqlProvider=" + m__CustomSqlProvider +
