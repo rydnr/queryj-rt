@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for RepositoryNameNotAvailableException.
  *
  * Date: 2014/03/28
  * Time: 18:36
