@@ -68,7 +68,7 @@ public class PackageNameNotAvailableExceptionTest
     @Test
     public void exception_message_is_defined_in_Spanish_and_English()
     {
-        @NotNull final DecoratorFactoryNotAvailableException instance = new DecoratorFactoryNotAvailableException();
+        @NotNull final PackageNameNotAvailableException instance = new DecoratorFactoryNotAvailableException();
 
         for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
         {
