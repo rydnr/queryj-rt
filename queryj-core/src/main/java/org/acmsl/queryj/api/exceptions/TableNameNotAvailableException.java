@@ -53,5 +53,10 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class TableNameNotAvailableException
+    extends QueryJNonCheckedException
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = 7555776214364527188L;
 }
