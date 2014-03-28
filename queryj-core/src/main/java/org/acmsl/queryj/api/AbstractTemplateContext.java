@@ -163,8 +163,7 @@ public abstract class AbstractTemplateContext
      * Specifies the command.
      * @param command the command.
      */
-    private void immutableSetCommand(
-        @NotNull final QueryJCommand command)
+    private void immutableSetCommand(@NotNull final QueryJCommand command)
     {
         m__Command = command;
     }
