@@ -190,6 +190,17 @@ public abstract class AbstractTemplateContext
     }
 
     /**
+     * Retrieves the metadata manager.
+     * @return such manager.
+     */
+    @NotNull
+    @Override
+    public MetadataManager getMetadataManager()
+    {
+        return m__MetadataManager;
+    }
+
+    /**
      * Specifies the custom-sql provider.
      * @param customSqlProvider the customsql provider.
      */
