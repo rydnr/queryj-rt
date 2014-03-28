@@ -108,11 +108,6 @@ public abstract class AbstractTemplateContext
     private QueryJCommand m__Command;
 
     /**
-     * Whether to implement marker interfaces.
-     */
-    private boolean m__bImplementMarkerInterfaces;
-
-    /**
      * Whether to include JMX support.
      */
     private boolean m__bJmx;
