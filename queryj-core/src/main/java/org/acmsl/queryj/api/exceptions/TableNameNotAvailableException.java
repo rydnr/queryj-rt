@@ -46,7 +46,8 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
- * Represents the situation in which the table name information is
+ * Represents the situation in which the table name information was
+ * available and ready to use
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/28 20:31
