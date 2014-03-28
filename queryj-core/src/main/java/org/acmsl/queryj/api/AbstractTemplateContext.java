@@ -428,7 +428,7 @@ public abstract class AbstractTemplateContext
 
         @Nullable final Boolean aux =
             new QueryJCommandWrapper<Boolean>(command).getSetting(
-                QueryJSettings.IMPLEMENT_MARKER_INTERFACES);
+                QueryJSettings.JMX);
 
         if (aux == null)
         {
