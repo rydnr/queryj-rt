@@ -374,6 +374,17 @@ public abstract class AbstractTemplateContext
     }
 
     /**
+     * Retrieves the JNDI location for the {@link javax.sql.DataSource}.
+     * @return such location.
+     */
+    @Override
+    @NotNull
+    public String getJndiLocation()
+    {
+        return this.m__strJndiLocation;
+    }
+
+    /**
      * Retrieves whether to use generation timestamps or not.
      * @return such setting.
      */
