@@ -367,7 +367,7 @@ public abstract class AbstractTemplateContext
     protected String getRepositoryName(@NotNull final QueryJCommand command)
     {
         @Nullable final String result =
-            new QueryJCommandWrapper<String>(command).getSetting(REPOSITORY_NAME);
+            new QueryJCommandWrapper<String>(command).getSetting(QueryJSettings.REPOSITORY);
 
         if (result == null)
         {
