@@ -326,7 +326,6 @@ public abstract class BasePerTableTemplateBuildHandler
     @Nullable
     protected T createTemplate(
         @NotNull final TF templateFactory,
-        @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final String packageName,
         @NotNull final String projectPackage,
