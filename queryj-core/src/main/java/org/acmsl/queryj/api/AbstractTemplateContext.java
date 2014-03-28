@@ -467,7 +467,7 @@ public abstract class AbstractTemplateContext
     protected String getFileName(@NotNull final QueryJCommand command)
     {
         @Nullable final String result =
-            new QueryJCommandWrapper<String>(command).getSetting(QueryJSettings.JNDI_DATASOURCE);
+            new QueryJCommandWrapper<String>(command).getSetting(FILE_NAME);
 
         if (result == null)
         {
