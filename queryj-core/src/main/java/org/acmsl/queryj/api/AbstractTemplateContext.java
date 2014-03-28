@@ -418,7 +418,7 @@ public abstract class AbstractTemplateContext
 
     /**
      * Retrieves whether to include JMX support.
-     *
+     * @param command the command.
      * @return such information.
      */
     @Override
