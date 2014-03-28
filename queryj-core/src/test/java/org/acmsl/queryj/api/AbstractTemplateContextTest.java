@@ -281,6 +281,7 @@ public class AbstractTemplateContextTest
 
         final boolean disableCheckthreadAnnotations = true;
         new QueryJCommandWrapper<Boolean>(t_Command).setSetting("disableCheckthreadAnnotations", disableCheckthreadAnnotations);
+
         @NotNull final String fileName = "file.name";
 
         return
