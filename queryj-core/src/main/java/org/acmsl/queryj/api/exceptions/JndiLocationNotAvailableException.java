@@ -61,9 +61,7 @@ public class JndiLocationNotAvailableException
     private static final long serialVersionUID = 1572764644767456515L;
 
     /**
-     * Creates a QueryJNonCheckedException with given message.
-     *
-     * @param messageKey the key to build the exception message.
+     * Creates a new instance.
      */
     public JndiLocationNotAvailableException(@NotNull final String messageKey)
     {
