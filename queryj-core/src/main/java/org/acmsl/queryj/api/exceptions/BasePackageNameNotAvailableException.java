@@ -27,7 +27,9 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Represents a situation in which the information about the base e
+ * name is required (and expected), but it's not available. A bug or
+ * violation of the preconditions/invariants.
  *
  * Date: 2014/03/28
  * Time: 18:30
