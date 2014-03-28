@@ -93,7 +93,7 @@ public abstract class AbstractTemplateContext
     /**
      * The database metadata manager.
      */
-    private MetadataManager m__MetadataManager;
+    private MetadataManager m__Command;
 
     /**
      * The custom-sql provider.
