@@ -53,5 +53,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class FileNameNotAvailableException
+    extends QueryJNonCheckedException
 {
+
 }
