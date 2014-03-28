@@ -53,5 +53,8 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class JndiLocationNotAvailableException
+    extends QueryJNonCheckedException
 {
+
+    private static final long serialVersionUID = 1572764644767456515L;
 }
