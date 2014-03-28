@@ -124,7 +124,7 @@ public abstract class BasePerTableTemplateBuildHandler
       throws  QueryJBuildException
     {
         buildTemplate(
-            parameters,
+            buildCommandparameters,
             metadataManager,
             retrieveCustomSqlProvider(parameters),
             retrieveTemplateFactory(),
