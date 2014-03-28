@@ -38,6 +38,7 @@ package org.acmsl.queryj.api;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.MetadataManager;
@@ -112,7 +113,7 @@ public class PerTableTemplateContext
      * @param staticValues the static rows, if the table is marked as <code>@static</code>.
      */
     public PerTableTemplateContext(
-        @NotNull final MetadataManager metadataManager,
+        @NotNull final QueryJCommand command,
         @NotNull final CustomSqlProvider customSqlProvider,
         @Nullable final String header,
         @NotNull final DecoratorFactory decoratorFactory,
