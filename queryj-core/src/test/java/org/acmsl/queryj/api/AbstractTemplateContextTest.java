@@ -259,8 +259,7 @@ public class AbstractTemplateContextTest
             MetadataManager.class.getSimpleName(), metadataManager);
 
         return
-            new AbstractTemplateContext(
-                t_Command)
+            new AbstractTemplateContext(t_Command)
                 {
                     /**
                      * {@inheritDoc}
