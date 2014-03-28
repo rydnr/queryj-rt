@@ -414,7 +414,7 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Retrieves whether to use generation timestamps or not.
+     * Retrieves a boolean value from the command.
      * @param command the command.
      * @return such setting.
      */
