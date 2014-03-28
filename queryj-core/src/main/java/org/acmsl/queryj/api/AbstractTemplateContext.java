@@ -385,8 +385,10 @@ public abstract class AbstractTemplateContext
 
         if (result == null)
         {
-            throw new
+            throw new JndiLocationNotAvailableException();
         }
+
+        return result;
     }
 
     /**
