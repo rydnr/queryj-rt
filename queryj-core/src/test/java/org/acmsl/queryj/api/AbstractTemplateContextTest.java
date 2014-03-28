@@ -39,6 +39,7 @@ package org.acmsl.queryj.api;
  * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
+import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.MetadataManager;
@@ -250,7 +251,8 @@ public class AbstractTemplateContextTest
         final boolean disableCheckthreadAnnotations = true;
         @NotNull final String fileName = "file.name";
 
-        @NotNull final
+        @NotNull final QueryJCommand t_Command =
+            new ConfigurationQueryJCommandImpl(new PropertiesConfiguration())
         return
             new AbstractTemplateContext(
                 new ConfigurationQueryJCommandImpl(new PropertiesConfiguration(), null))
