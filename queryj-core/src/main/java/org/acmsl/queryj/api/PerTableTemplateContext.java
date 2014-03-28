@@ -136,6 +136,15 @@ public class PerTableTemplateContext
      * Retrieves the static values.
      * @return such values.
      */
+    protected final List<Row<String>> immutableGetStaticValues()
+    {
+        return m__lStaticValues;
+    }
+
+    /**
+     * Retrieves the static values.
+     * @return such values.
+     */
     @SuppressWarnings("unused")
     @NotNull
     public List<Row<String>> getStaticValues()
