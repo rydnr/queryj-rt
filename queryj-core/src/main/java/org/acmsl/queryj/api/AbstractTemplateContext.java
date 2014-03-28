@@ -153,19 +153,6 @@ public abstract class AbstractTemplateContext
     /**
      * Creates an {@link AbstractTemplateContext} with given information.
      * @param command the {@link QueryJCommand} instance.
-     * @param customSqlProvider the {@link CustomSqlProvider} instance.
-     * @param header the header.
-     * @param decoratorFactory the {@link DecoratorFactory} instance.
-     * @param packageName the package name.
-     * @param basePackageName the base package name.
-     * @param repositoryName the repository name.
-     * @param implementMarkerInterfaces whether to implement marker interfaces.
-     * @param jmx whether to include JMX support.
-     * @param jndiLocation the JNDI path of the {@link javax.sql.DataSource}.
-     * @param disableGenerationTimestamps whether to disable generation timestamps.
-     * @param disableNotNullAnnotations whether to disable NotNull annotations.
-     * @param disableCheckthreadAnnotations whether to disable checkthread.org annotations.
-     * @param fileName the file name.
      */
     protected AbstractTemplateContext(
         @NotNull final QueryJCommand command)
