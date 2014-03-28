@@ -252,12 +252,6 @@ public class AbstractTemplateContextTest
         final boolean disableCheckthreadAnnotations = true;
         @NotNull final String fileName = "file.name";
 
-        @NotNull final QueryJCommand t_Command =
-            new ConfigurationQueryJCommandImpl(new PropertiesConfiguration(), null);
-
-        new QueryJCommandWrapper<MetadataManager>(t_Command).setSetting(
-            MetadataManager.class.getSimpleName(), metadataManager);
-
         return
             new AbstractTemplateContext(t_Command)
                 {
