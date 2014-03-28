@@ -280,7 +280,7 @@ public class AbstractTemplateContextTest
             QueryJSettings.DISABLE_TIMESTAMPS, disableTimestampGeneration);
 
         final boolean disableNotNullAnnotations = true;
-        new QueryJCommandWrapper<Boolean>(t_Command).setSetting("disableNotNullAnnotations", disableNotNullAnnotations);
+        new QueryJCommandWrapper<Boolean>(t_Command).setSetting(QueryJSettings.DISABLE_NOTNULL_ANNOTATIONS, disableNotNullAnnotations);
 
         final boolean disableCheckthreadAnnotations = true;
         new QueryJCommandWrapper<Boolean>(t_Command).setSetting("disableCheckthreadAnnotations", disableCheckthreadAnnotations);
