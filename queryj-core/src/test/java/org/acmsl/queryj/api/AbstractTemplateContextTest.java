@@ -249,7 +249,7 @@ public class AbstractTemplateContextTest
         @NotNull final String fileName = "file.name";
 
         return
-            new AbstractTemplateContext(null)
+            new AbstractTemplateContext(
                 metadataManager,
                 customSqlProvider,
                 header,
