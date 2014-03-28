@@ -201,6 +201,18 @@ public abstract class AbstractTemplateContext
             new QueryJCommandWrapper<MetadataManager>(command).getSetting(MetadataManager.class.getSimpleName());
     }
 
+
+    /**
+     * Retrieves the metadata manager.
+     * @return such manager.
+     */
+    @NotNull
+    @Override
+    public MetadataManager getMetadataManager()
+    {
+        @Nullable final MetadataManager result =
+            new QueryJCommandWrapper<MetadataManager>(command).getSetting(MetadataManager.class.getSimpleName());
+    }
     /**
      * Specifies the custom-sql provider.
      * @param customSqlProvider the customsql provider.
