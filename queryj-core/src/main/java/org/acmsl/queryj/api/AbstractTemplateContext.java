@@ -417,6 +417,16 @@ public abstract class AbstractTemplateContext
     }
 
     /**
+     * Retrieves whether to include JMX support.
+     * @return such information.
+     */
+    @Override
+    public boolean isJmxSupportEnabled()
+    {
+        return m__bJmx;
+    }
+
+    /**
      * Retrieves the JNDI location for the {@link javax.sql.DataSource}.
      * @return such location.
      */
