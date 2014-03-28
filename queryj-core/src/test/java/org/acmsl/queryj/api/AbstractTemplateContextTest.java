@@ -266,7 +266,7 @@ public class AbstractTemplateContextTest
         new QueryJCommandWrapper<String>(t_Command).setSetting(QueryJSettings.REPOSITORY, repositoryName);
 
         final boolean implementMarkerInterfaces = false;
-        new QueryJCommandWrapper<Boolean>(t_Command).setSetting("markerInterfaces", implementMarkerInterfaces);
+        new QueryJCommandWrapper<Boolean>(t_Command).setSetting(QueryJSettings.IMPLEMENT_MARKER_INTERFACES, implementMarkerInterfaces);
 
         final boolean jmx = false;
         new QueryJCommandWrapper<Boolean>(t_Command).setSetting("jmx", jmx);
