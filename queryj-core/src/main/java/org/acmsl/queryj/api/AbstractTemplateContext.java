@@ -409,7 +409,7 @@ public abstract class AbstractTemplateContext
         final AbstractTemplateContext other = (AbstractTemplateContext) obj;
 
         return
-            new EqualsBuilder().append(this.m__strHeader, other.m__strHeader)
+            new EqualsBuilder().append(this.m__Command, other.m__strHeader)
             .append(this.m__DecoratorFactory, other.m__DecoratorFactory)
             .append(this.m__MetadataManager, other.m__MetadataManager)
             .append(this.m__CustomSqlProvider, other.m__CustomSqlProvider)
