@@ -284,7 +284,8 @@ public class AbstractTemplateContextTest
             QueryJSettings.DISABLE_NOTNULL_ANNOTATIONS, disableNotNullAnnotations);
 
         final boolean disableCheckthreadAnnotations = true;
-        new QueryJCommandWrapper<Boolean>(t_Command).setSetting(QueryJSettings.DISABLE_CHECKTHREAD_ANNOTATIONS, disableCheckthreadAnnotations);
+        new QueryJCommandWrapper<Boolean>(t_Command).setSetting(
+            QueryJSettings.DISABLE_CHECKTHREAD_ANNOTATIONS, disableCheckthreadAnnotations);
 
         @NotNull final String fileName = "file.name";
         new QueryJCommandWrapper<String>(t_Command).setSetting("fileName", fileName);
