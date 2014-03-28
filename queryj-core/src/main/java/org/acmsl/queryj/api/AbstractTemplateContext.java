@@ -385,6 +385,7 @@ public abstract class AbstractTemplateContext
      * Retrieves whether to implement marker interfaces.
      * @return such condition.
      */
+    @Override
     public boolean getImplementMarkerInterfaces()
     {
         return m__bImplementMarkerInterfaces;
