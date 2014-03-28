@@ -113,7 +113,7 @@ public class PerCustomResultTemplateContext
         @NotNull final String fileName,
         @NotNull final Result<String> result)
     {
-        super(
+        super(null);
             metadataManager,
             customSqlProvider,
             header,
