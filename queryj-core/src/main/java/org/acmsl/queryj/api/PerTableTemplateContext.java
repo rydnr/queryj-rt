@@ -133,25 +133,6 @@ public class PerTableTemplateContext
     }
 
     /**
-     * Specifies the static values.
-     * @param values such values.
-     */
-    protected final void immutableSetStaticValues(@Nullable final List<Row<String>> values)
-    {
-        m__lStaticValues = values;
-    }
-
-    /**
-     * Specifies the static values.
-     * @param values such values.
-     */
-    @SuppressWarnings("unused")
-    protected void setStaticValues(@Nullable final List<Row<String>> values)
-    {
-        immutableSetStaticValues(values);
-    }
-
-    /**
      * Retrieves the static values.
      * @return such values.
      */
