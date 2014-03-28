@@ -166,7 +166,7 @@ public abstract class AbstractTemplateContext
     private void immutableSetCommand(
         @NotNull final QueryJCommand command)
     {
-        m_Command = command;
+        m__Command = command;
     }
 
     /**
