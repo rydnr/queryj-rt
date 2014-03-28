@@ -418,10 +418,11 @@ public abstract class AbstractTemplateContext
 
     /**
      * Retrieves whether to include JMX support.
+     *
      * @return such information.
      */
     @Override
-    public boolean isJmxSupportEnabled()
+    protected boolean isJmxSupportEnabled(@NotNull final QueryJCommand command)
     {
         return m__bJmx;
     }
