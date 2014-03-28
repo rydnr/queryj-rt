@@ -263,6 +263,17 @@ public abstract class AbstractTemplateContext
     }
 
     /**
+     * Retrieves the header.
+     * @return the header.
+     */
+    @Nullable
+    @Override
+    public String getHeader()
+    {
+        return m__strHeader;
+    }
+
+    /**
      * Retrieves the {@link DecoratorFactory} instance.
      * @return such instance.
      */
