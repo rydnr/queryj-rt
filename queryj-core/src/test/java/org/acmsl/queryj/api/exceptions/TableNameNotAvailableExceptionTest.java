@@ -66,7 +66,7 @@ public class TableNameNotAvailableExceptionTest
     @Test
     public void exception_message_is_defined_in_Spanish_and_English()
     {
-        @NotNull final TableNameNotAvailableException instance = new BasePackageNameNotAvailableException();
+        @NotNull final TableNameNotAvailableException instance = new TableNameNotAvailableException();
 
         for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
         {
