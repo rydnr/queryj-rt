@@ -383,31 +383,6 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Retrieves whether to implement marker interfaces.
-     * @param command the command.
-     * @return such condition.
-     */
-    protected boolean getImplementMarkerInterfaces(@NotNull final QueryJCommand command)
-    {
-        final boolean result;
-
-        @Nullable final Boolean aux =
-            new QueryJCommandWrapper<Boolean>(command).getSetting(
-                QueryJSettings.IMPLEMENT_MARKER_INTERFACES);
-
-        if (aux == null)
-        {
-            result = false;
-        }
-        else
-        {
-            result = aux;
-        }
-
-        return result;
-    }
-
-    /**
      * Retrieves whether to include JMX support.
      * @return such information.
      */
