@@ -196,7 +196,7 @@ public abstract class AbstractTemplateContext
      * @return such manager.
      */
     @NotNull
-    protected MetadataManager getMetadataManager(@NotNull QueryJCommand command)
+    protected MetadataManager getMetadataManager(@NotNull final QueryJCommand command)
     {
         @Nullable final MetadataManager result =
             new QueryJCommandWrapper<MetadataManager>(command).getSetting(MetadataManager.class.getSimpleName());
