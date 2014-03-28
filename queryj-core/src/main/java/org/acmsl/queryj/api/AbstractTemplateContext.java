@@ -170,7 +170,7 @@ public abstract class AbstractTemplateContext
     protected AbstractTemplateContext(
         @NotNull final QueryJCommand command)
     {
-        immutableSet(metadataManager);
+        immutableSetCommand(metadataManager);
         immutableSetCustomSqlProvider(customSqlProvider);
         immutableSetHeader(header);
         immutableSetDecoratorFactory(decoratorFactory);
