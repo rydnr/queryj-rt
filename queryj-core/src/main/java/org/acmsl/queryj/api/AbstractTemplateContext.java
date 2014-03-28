@@ -317,25 +317,6 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Specifies whether to disable generation timestamps or not.
-     * @param flag such setting.
-     */
-    protected final void immutableSetDisableGenerationTimestamps(final boolean flag)
-    {
-        m__bDisableGenerationTimestamps = flag;
-    }
-
-    /**
-     * Specifies whether to disable generation timestamps or not.
-     * @param flag such setting.
-     */
-    @SuppressWarnings("unused")
-    protected void setDisableGenerationTimestamps(final boolean flag)
-    {
-        immutableSetDisableGenerationTimestamps(flag);
-    }
-
-    /**
      * Retrieves whether to use generation timestamps or not.
      *
      * @return such setting.
