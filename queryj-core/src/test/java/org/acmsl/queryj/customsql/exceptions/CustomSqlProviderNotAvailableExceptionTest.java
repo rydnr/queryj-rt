@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description:  * Tests for CustomSqlProviderNotAvailableException.
  *
  * Date: 2014/03/28
  * Time: 07:23
