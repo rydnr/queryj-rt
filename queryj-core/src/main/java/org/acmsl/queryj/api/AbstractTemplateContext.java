@@ -240,7 +240,7 @@ public abstract class AbstractTemplateContext
     protected CustomSqlProvider getCustomSqlProvider(@NotNull final QueryJCommand command)
     {
         @Nullable final MetadataManager result =
-            new QueryJCommandWrapper<MetadataManager>(command).getSetting(MetadataManager.class.getSimpleName());
+            new QueryJCommandWrapper<MetadataManager>(command).getSetting(CustomSqlProvider.class.getSimpleName());
 
         if (result == null)
         {
