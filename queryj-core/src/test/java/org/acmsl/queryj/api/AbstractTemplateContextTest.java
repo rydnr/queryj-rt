@@ -276,7 +276,7 @@ public class AbstractTemplateContextTest
         new QueryJCommandWrapper<String>(t_Command).setSetting(QueryJSettings.JNDI_DATASOURCE, jndiLocation);
 
         final boolean disableTimestampGeneration = true;
-        new QueryJCommandWrapper<Boolean>(t_Command).setSetting("disableTimestampGeneration", disableTimestampGeneration);
+        new QueryJCommandWrapper<Boolean>(t_Command).setSetting(QueryJSettings.DISABLE_TIMESTAMPS, disableTimestampGeneration);
 
         final boolean disableNotNullAnnotations = true;
         new QueryJCommandWrapper<Boolean>(t_Command).setSetting("disableNotNullAnnotations", disableNotNullAnnotations);
