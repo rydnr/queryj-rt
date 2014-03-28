@@ -264,6 +264,7 @@ public abstract class AbstractTemplateContext
 
     /**
      * Retrieves the header.
+     * @param command the command.
      * @return the header.
      */
     @Nullable
