@@ -174,9 +174,6 @@ public abstract class BasePerTableTemplateBuildHandler
         @NotNull final MetadataManager metadataManager,
         @NotNull final TF templateFactory,
         @NotNull final String jndiLocation,
-        final boolean disableGenerationTimestamps,
-        final boolean disableNotNullAnnotations,
-        final boolean disableCheckthreadAnnotations,
         @NotNull final List<Table<String, Attribute<String>, List<Attribute<String>>>> tables,
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final DAOTemplateUtils daoTemplateUtils)
