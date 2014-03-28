@@ -80,8 +80,6 @@ public interface PerTableTemplateFactory<T extends PerTableTemplate<C>, C extend
      */
     @Nullable
     public T createTemplate(
-        @NotNull final MetadataManager metadataManager,
-        @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final String packageName,
         @NotNull final String basePackageName,
