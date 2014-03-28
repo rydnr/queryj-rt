@@ -139,7 +139,8 @@ public class PerTableTemplateContext
     @NotNull
     protected final List<Row<String>> immutableGetStaticValues()
     {
-        return m__lStaticValues;
+        @Nullable final List<Row<String>> result =
+            new QueryJCommandWrapper<>()
     }
 
     /**
