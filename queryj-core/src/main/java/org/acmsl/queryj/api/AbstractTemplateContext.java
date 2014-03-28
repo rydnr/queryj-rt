@@ -154,8 +154,7 @@ public abstract class AbstractTemplateContext
      * Creates an {@link AbstractTemplateContext} with given information.
      * @param command the {@link QueryJCommand} instance.
      */
-    protected AbstractTemplateContext(
-        @NotNull final QueryJCommand command)
+    protected AbstractTemplateContext(@NotNull final QueryJCommand command)
     {
         immutableSetCommand(command);
     }
