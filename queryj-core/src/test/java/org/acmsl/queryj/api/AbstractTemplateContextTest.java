@@ -237,6 +237,7 @@ public class AbstractTemplateContextTest
     @NotNull
     protected AbstractTemplateContext createContext()
     {
+        @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         @Nullable final String header = "header";
         @NotNull final DecoratorFactory decoratorFactory = EasyMock.createNiceMock(DecoratorFactory.class);
