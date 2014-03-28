@@ -179,8 +179,8 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Retrieves the metadata manager.
-     * @return such manager.
+     * Retrieves the command.
+     * @return such command.
      */
     @NotNull
     public QueryJCommand getCommand()
