@@ -344,7 +344,7 @@ public abstract class AbstractTemplateContext
     protected String getBasePackageName(@NotNull final QueryJCommand command)
     {
         @Nullable final String result =
-            new QueryJCommandWrapper<String>(command).getSetting(PACKAGE_NAME);
+            new QueryJCommandWrapper<String>(command).getSetting(BASE_PACKAGE_NAME);
 
         if (result == null)
         {
