@@ -317,8 +317,9 @@ public abstract class AbstractTemplateContext
 
         if (result == null)
         {
-            throw new
+            throw new PackageNameNotAvailableException();
         }
+
         return result;
     }
 
