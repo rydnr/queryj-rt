@@ -97,20 +97,6 @@ public class PerTableTemplateContext
     /**
      * Creates a {@link PerTableTemplateContext} with given information.
      * @param command the {@link QueryJCommand}.
-     * @param customSqlProvider the {@link CustomSqlProvider} instance.
-     * @param header the header.
-     * @param decoratorFactory the {@link DecoratorFactory} instance.
-     * @param packageName the package name.
-     * @param basePackageName the base package name.
-     * @param repositoryName the repository name.
-     * @param implementMarkerInterfaces whether to implement marker interfaces or not.
-     * @param jmx whether to include JMX support.
-     * @param jndiLocation the JNDI path of the {@link javax.sql.DataSource}.
-     * @param disableGenerationTimestamps whether to disable generation timestamps.
-     * @param disableNotNullAnnotations whether to disable NotNull annotations.
-     * @param disableCheckthreadAnnotations whether to disable checkthread.org annotations or not.
-     * @param tableName the table name.
-     * @param staticValues the static rows, if the table is marked as <code>@static</code>.
      */
     public PerTableTemplateContext(@NotNull final QueryJCommand command)
     {
