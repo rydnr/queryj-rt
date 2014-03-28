@@ -175,7 +175,7 @@ public abstract class AbstractTemplateContext
      */
     @SuppressWarnings("unused")
     protected void setCommand(
-        @NotNull final MetadataManager metadataManager)
+        @NotNull final QueryJCommand command)
     {
         immutableSetMetadataManager(metadataManager);
     }
