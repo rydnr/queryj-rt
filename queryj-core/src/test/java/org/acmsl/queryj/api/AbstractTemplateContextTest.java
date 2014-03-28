@@ -260,7 +260,7 @@ public class AbstractTemplateContextTest
         @NotNull final String basePackageName = "base.package.name";
         new QueryJCommandWrapper<String>(t_Command).setSetting("header", header);
         @NotNull final String repositoryName = "repository.name";
-        new QueryJCommandWrapper<String>(t_Command).setSetting("header", header);
+        new QueryJCommandWrapper<String>(t_Command).setSetting("repositoryName", repositoryName);
         final boolean implementMarkerInterfaces = false;
         new QueryJCommandWrapper<Boolean>(t_Command).setSetting("markerInterfaces", implementMarkerInterfaces);
         final boolean jmx = false;
