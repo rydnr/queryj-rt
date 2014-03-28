@@ -183,7 +183,6 @@ public abstract class AbstractTemplateContext
      * @return such manager.
      */
     @NotNull
-    @Override
     public QueryJCommand getCommand()
     {
         return m__MetadataManager;
