@@ -358,7 +358,7 @@ public abstract class AbstractTemplateContext
     @Override
     public String getRepositoryName()
     {
-        return m__strRepositoryName;
+        return getRepositoryName(getCommand());
     }
 
 
