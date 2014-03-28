@@ -52,7 +52,7 @@ import java.util.Arrays;
 import java.util.Locale;
 
 /**
- *
+ * Tests for {@link StaticValuesNotAvailableException}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/28 20:34
@@ -66,7 +66,7 @@ public class StaticValuesNotAvailableExceptionTest
     @Test
     public void exception_message_is_defined_in_Spanish_and_English()
     {
-        @NotNull final StaticValuesNotAvailableException instance = new TableNameNotAvailableException();
+        @NotNull final StaticValuesNotAvailableException instance = new StaticValuesNotAvailableException();
 
         for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
         {
