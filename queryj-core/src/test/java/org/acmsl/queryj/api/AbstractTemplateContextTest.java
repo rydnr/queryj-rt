@@ -245,8 +245,9 @@ public class AbstractTemplateContextTest
             MetadataManager.class.getSimpleName(), metadataManager);
 
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
-        new QueryJCommandWrapper<MetadataManager>(t_Command).setSetting(
+        new QueryJCommandWrapper<CustomSqlProvider>(t_Command).setSetting(
             CustomSqlProvider.class.getSimpleName(), customSqlProvider);
+
         @Nullable final String header = "header";
         @NotNull final DecoratorFactory decoratorFactory = EasyMock.createNiceMock(DecoratorFactory.class);
         @NotNull final String packageName = "package.name";
