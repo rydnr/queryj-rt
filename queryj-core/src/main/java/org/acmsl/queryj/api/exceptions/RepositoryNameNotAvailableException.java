@@ -53,5 +53,20 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class RepositoryNameNotAvailableException
+    extends QueryJNonCheckedException
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = 3640369001803637683L;
+
+    /**
+     * Creates a QueryJNonCheckedException with given message.
+     *
+     * @param messageKey the key to build the exception message.
+     */
+    public RepositoryNameNotAvailableException(@NotNull final String messageKey)
+    {
+        super(messageKey);
+    }
 }
