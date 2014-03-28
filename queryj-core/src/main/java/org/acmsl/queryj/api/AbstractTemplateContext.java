@@ -152,7 +152,7 @@ public abstract class AbstractTemplateContext
 
     /**
      * Creates an {@link AbstractTemplateContext} with given information.
-     * @param metadataManager the {@link MetadataManager} instance.
+     * @param command the {@link MetadataManager} instance.
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
      * @param header the header.
      * @param decoratorFactory the {@link DecoratorFactory} instance.
