@@ -252,7 +252,7 @@ public class AbstractTemplateContextTest
         new QueryJCommandWrapper<String>(t_Command).setSetting("header", header);
 
         @NotNull final DecoratorFactory decoratorFactory = EasyMock.createNiceMock(DecoratorFactory.class);
-        new QueryJCommandWrapper<DecoratorFactory>(t_Command).setSetting(DecoratorFactory.class.getSimpleName(), );
+        new QueryJCommandWrapper<DecoratorFactory>(t_Command).setSetting(DecoratorFactory.class.getName(), );
         @NotNull final String packageName = "package.name";
         @NotNull final String basePackageName = "base.package.name";
         @NotNull final String repositoryName = "repository.name";
