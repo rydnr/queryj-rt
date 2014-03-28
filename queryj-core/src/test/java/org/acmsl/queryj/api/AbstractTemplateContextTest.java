@@ -260,7 +260,7 @@ public class AbstractTemplateContextTest
 
         return
             new AbstractTemplateContext(
-                t_Command
+                t_Command)
                 {
                     /**
                      * {@inheritDoc}
