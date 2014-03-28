@@ -337,27 +337,7 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Specifies whether to disable checkthread.org annotations or not.
-     * @param flag such setting.
-     */
-    protected final void immutableSetDisableCheckthreadAnnotations(final boolean flag)
-    {
-        m__bDisableCheckthreadAnnotations = flag;
-    }
-
-    /**
-     * Specifies whether to disable checkthread.org annotations or not.
-     * @param flag such setting.
-     */
-    @SuppressWarnings("unused")
-    protected void setDisableCheckthreadAnnotations(final boolean flag)
-    {
-        immutableSetDisableCheckthreadAnnotations(flag);
-    }
-
-    /**
      * Retrieves whether to use checkthread.org annotations or not.
-     *
      * @return such setting.
      */
     @Override
