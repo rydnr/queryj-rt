@@ -444,7 +444,7 @@ public abstract class AbstractTemplateContext
     @Override
     public boolean getDisableNotNullAnnotations()
     {
-        return m__bDisableNotNullAnnotations;
+        return getBooleanValue()
     }
 
     /**
