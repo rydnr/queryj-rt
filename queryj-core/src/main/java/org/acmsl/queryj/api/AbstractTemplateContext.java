@@ -374,7 +374,7 @@ public abstract class AbstractTemplateContext
 
         if (result == null)
         {
-            throw new BasePackageNameNotAvailableException();
+            throw new RepositoryNameNotAvailableException();
         }
 
         return result;
