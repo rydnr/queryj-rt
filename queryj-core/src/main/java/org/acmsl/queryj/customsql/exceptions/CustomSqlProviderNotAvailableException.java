@@ -38,6 +38,7 @@ package org.acmsl.queryj.customsql.exceptions;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.api.exceptions.QueryJNonCheckedException;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -52,6 +53,8 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2014/03/28 07:21
  */
 @ThreadSafe
-public class CustomSqlProviderNotAvailableException extends Throwable
+public class CustomSqlProviderNotAvailableException
+    extends QueryJNonCheckedException
 {
+
 }
