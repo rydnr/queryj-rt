@@ -235,15 +235,6 @@ public abstract class BasePerTableTemplateBuildHandler
                             decoratorFactory,
                             retrievePackage(
                                 t_Table.getName(), metadataManager.getEngine(), parameters),
-                            projectPackage,
-                            repository,
-                            header,
-                            implementMarkerInterfaces,
-                            jmx,
-                            jndiLocation,
-                            disableGenerationTimestamps,
-                            disableNotNullAnnotations,
-                            disableCheckthreadAnnotations,
                             t_Table.getName(),
                             t_lStaticContent,
                             parameters);
