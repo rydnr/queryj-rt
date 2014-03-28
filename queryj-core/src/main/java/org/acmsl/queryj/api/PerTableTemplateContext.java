@@ -212,7 +212,7 @@ public class PerTableTemplateContext
     @Override
     public int hashCode()
     {
-        return new HashCodeBuilder().appendSuper(super.hashCode()).append(this.tableName).append(this.m__lStaticValues)
+        return new HashCodeBuilder().appendSuper(super.hashCode()).append(getCommand())
             .toHashCode();
     }
 
