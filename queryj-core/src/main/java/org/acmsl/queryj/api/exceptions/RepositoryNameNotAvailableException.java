@@ -62,10 +62,8 @@ public class RepositoryNameNotAvailableException
 
     /**
      * Creates a QueryJNonCheckedException with given message.
-     *
-     * @param messageKey the key to build the exception message.
      */
-    public RepositoryNameNotAvailableException(@NotNull final String messageKey)
+    public RepositoryNameNotAvailableException()
     {
         super(messageKey);
     }
