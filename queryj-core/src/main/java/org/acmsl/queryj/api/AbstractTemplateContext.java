@@ -415,6 +415,7 @@ public abstract class AbstractTemplateContext
     public boolean isJmxSupportEnabled()
     {
         return isJmxSupportEnabled(getCommand());
+        return getBooleanValue(getCommand(), QueryJSettings.DISABLE_TIMESTAMPS);
     }
 
     /**
