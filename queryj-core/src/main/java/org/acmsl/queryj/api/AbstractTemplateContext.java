@@ -462,9 +462,8 @@ public abstract class AbstractTemplateContext
      * Retrieves the file name.
      * @return such information.
      */
-    @Override
     @NotNull
-    public String getFileName()
+    protected String getFileName(@NotNull final QueryJCommand command)
     {
         return this.m__strFileName;
     }
