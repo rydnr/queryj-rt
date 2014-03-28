@@ -171,19 +171,6 @@ public abstract class AbstractTemplateContext
         @NotNull final QueryJCommand command)
     {
         immutableSetCommand(command);
-        immutableSetCustomSqlProvider(customSqlProvider);
-        immutableSetHeader(header);
-        immutableSetDecoratorFactory(decoratorFactory);
-        immutableSetPackageName(packageName);
-        immutableSetBasePackageName(basePackageName);
-        immutableSetRepositoryName(repositoryName);
-        immutableSetImplementMarkerInterfaces(implementMarkerInterfaces);
-        immutableSetJmxSupportEnabled(jmx);
-        immutableSetJndiLocation(jndiLocation);
-        immutableSetDisableGenerationTimestamps(disableGenerationTimestamps);
-        immutableSetDisableNotNullAnnotations(disableNotNullAnnotations);
-        immutableSetDisableCheckthreadAnnotations(disableCheckthreadAnnotations);
-        immutableSetFileName(fileName);
     }
 
     /**
