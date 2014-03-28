@@ -36,6 +36,7 @@ package org.acmsl.queryj.api;
  * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.MetadataManager;
@@ -196,7 +197,7 @@ public abstract class AbstractTemplateContext
     @Override
     public MetadataManager getMetadataManager()
     {
-        return m__MetadataManager;
+        return new QueryJCommandWrapper<MetadataManager>();
     }
 
     /**
