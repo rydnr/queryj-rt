@@ -54,7 +54,6 @@ import org.acmsl.queryj.tools.exceptions.MetadataManagerNotAvailableException;
 /*
  * Importing Apache Commons Lang classes.
  */
-import org.acmsl.queryj.tools.exceptions.MetadataManagerNotAvailableException;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 
