@@ -46,6 +46,7 @@ import org.acmsl.queryj.metadata.MetadataManager;
 /*
  * Importing JetBrains annotations.
  */
+import org.apache.commons.configuration.PropertiesConfiguration;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -251,7 +252,8 @@ public class AbstractTemplateContextTest
 
         return
             new AbstractTemplateContext(
-                new ConfigurationQueryJCommandImpl(new Prop)
+                new ConfigurationQueryJCommandImpl(new PropertiesConfiguration()
+                )
                 metadataManager,
                 customSqlProvider,
                 header,
