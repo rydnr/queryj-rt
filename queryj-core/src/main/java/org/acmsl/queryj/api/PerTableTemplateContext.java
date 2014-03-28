@@ -234,7 +234,8 @@ public class PerTableTemplateContext
 
         return
             new EqualsBuilder()
-                .appendSuper(super.equals(obj)).append(this.getCommand(), other.getCommand()).isEquals();
+                .appendSuper(super.equals(obj)).append(this.getCommand(), other.getCommand())
+                .isEquals();
     }
 
     /**
