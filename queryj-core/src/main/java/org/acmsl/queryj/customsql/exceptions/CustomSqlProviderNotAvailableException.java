@@ -64,7 +64,7 @@ public class CustomSqlProviderNotAvailableException
     /**
      * Creates a new instance.
      */
-    public CustomSqlProviderNotAvailableException(@NotNull final String messageKey)
+    public CustomSqlProviderNotAvailableException()
     {
         super("CustomSqlProvider.not.available");
     }
