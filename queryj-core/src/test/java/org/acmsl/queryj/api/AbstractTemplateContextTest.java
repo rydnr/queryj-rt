@@ -250,6 +250,7 @@ public class AbstractTemplateContextTest
         final boolean disableCheckthreadAnnotations = true;
         @NotNull final String fileName = "file.name";
 
+        @NotNull final
         return
             new AbstractTemplateContext(
                 new ConfigurationQueryJCommandImpl(new PropertiesConfiguration(), null))
