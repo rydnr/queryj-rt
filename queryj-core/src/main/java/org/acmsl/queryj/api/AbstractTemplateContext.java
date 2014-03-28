@@ -444,7 +444,7 @@ public abstract class AbstractTemplateContext
     @Override
     public boolean getDisableNotNullAnnotations()
     {
-        return getBooleanValue()
+        return getBooleanValue(getCommand(), QueryJSettings.DISABLE_NOTNULL_ANNOTATIONS);
     }
 
     /**
