@@ -104,36 +104,6 @@ public abstract class AbstractTemplateContext
     private QueryJCommand m__Command;
 
     /**
-     * Whether to include JMX support.
-     */
-    private boolean m__bJmx;
-
-    /**
-     * The JNDI path of the DataSource.
-     */
-    private String m__strJndiLocation;
-
-    /**
-     * Whether to disable generation timestamps.
-     */
-    private boolean m__bDisableGenerationTimestamps;
-
-    /**
-     * Whether to disable NotNull annotations.
-     */
-    private boolean m__bDisableNotNullAnnotations;
-
-    /**
-     * Whether to disable checkthread.org annotations.
-     */
-    private boolean m__bDisableCheckthreadAnnotations;
-
-    /**
-     * The file name.
-     */
-    private String m__strFileName;
-
-    /**
      * Creates an {@link AbstractTemplateContext} with given information.
      * @param command the {@link QueryJCommand} instance.
      */
