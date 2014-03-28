@@ -322,7 +322,8 @@ public abstract class AbstractTemplateContext
     @NotNull
     protected String getPackageName(@NotNull final QueryJCommand command)
     {
-
+        @Nullable final String result =
+            new QueryJCommandWrapper<String>(command).getSetting(PACKAGE_NAME)
     }
 
     /**
