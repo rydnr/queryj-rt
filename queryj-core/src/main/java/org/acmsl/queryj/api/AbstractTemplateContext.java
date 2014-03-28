@@ -203,7 +203,7 @@ public abstract class AbstractTemplateContext
 
         if (aux == null)
         {
-            throw new MedatadaMa
+            throw new
         }
     }
 
