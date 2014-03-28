@@ -361,7 +361,6 @@ public abstract class AbstractTemplateContext
         return getRepositoryName(getCommand());
     }
 
-
     /**
      * Retrieves the base package name.
      * @param command the command.
