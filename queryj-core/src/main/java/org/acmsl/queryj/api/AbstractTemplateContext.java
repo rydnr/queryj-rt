@@ -177,7 +177,7 @@ public abstract class AbstractTemplateContext
      * Specifies the metadata manager.
      * @param metadataManager the metadata manager.
      */
-    private void immutableSetMetadat(
+    private void immutableSetCommand(
         @NotNull final MetadataManager metadataManager)
     {
         m__MetadataManager = metadataManager;
