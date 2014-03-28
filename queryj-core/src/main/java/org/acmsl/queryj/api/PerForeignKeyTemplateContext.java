@@ -111,7 +111,7 @@ public class PerForeignKeyTemplateContext
         @NotNull final String fileName,
         @NotNull final ForeignKey<String> foreignKey)
     {
-        super(
+        super(null);
             metadataManager,
             customSqlProvider,
             header,
