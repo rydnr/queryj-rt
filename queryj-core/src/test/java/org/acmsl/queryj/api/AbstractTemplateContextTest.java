@@ -270,7 +270,7 @@ public class AbstractTemplateContextTest
             QueryJSettings.IMPLEMENT_MARKER_INTERFACES, implementMarkerInterfaces);
 
         final boolean jmx = false;
-        new QueryJCommandWrapper<Boolean>(t_Command).setSetting("jmx", jmx);
+        new QueryJCommandWrapper<Boolean>(t_Command).setSetting(QueryJSettings.JMX, jmx);
 
         @NotNull final String jndiLocation = "jndi:/location";
         new QueryJCommandWrapper<String>(t_Command).setSetting("jndiLocation", jndiLocation);
