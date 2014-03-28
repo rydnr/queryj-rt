@@ -28,8 +28,7 @@
  * Author: Jose San Leandro Armendariz
  *
  * Description: Represents the situation in which the file name (needed to
- *              write the result of
- * rendering a template) is missing at runtime when it should not.
+ *              write the result of rendering a template) is missing at runtime when it should not.
  *
  * Date: 2014/03/28
  * Time: 20:00
