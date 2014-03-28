@@ -96,11 +96,6 @@ public class PerTableTemplateContext
     protected static final String STATIC_VALUES = "staticValues";
 
     /**
-     * The static contents.
-     */
-    private List<Row<String>> m__lStaticValues;
-
-    /**
      * Creates a {@link PerTableTemplateContext} with given information.
      * @param command the {@link QueryJCommand}.
      */
