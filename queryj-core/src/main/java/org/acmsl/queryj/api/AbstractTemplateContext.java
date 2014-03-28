@@ -285,6 +285,17 @@ public abstract class AbstractTemplateContext
     }
 
     /**
+     * Retrieves the {@link DecoratorFactory} instance.
+     * @return such instance.
+     */
+    @Override
+    @NotNull
+    public DecoratorFactory getDecoratorFactory()
+    {
+        return m__DecoratorFactory;
+    }
+
+    /**
      * Retrieves the package name.
      * @return such information.
      */
