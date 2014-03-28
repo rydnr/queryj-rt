@@ -46,7 +46,8 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
- *
+ * Represents situations in which the repository name is an
+ * invariant, but for some reason (bug) it's not available at runtime.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/28 18:37
