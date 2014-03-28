@@ -111,6 +111,15 @@ public class PerTableTemplateContext
     @NotNull
     public String getTableName()
     {
+    }
+
+    /**
+     * Retrieves the table name.
+     * @return such name.
+     */
+    @NotNull
+    public String getTableName()
+    {
         @Nullable final String result =
             new QueryJCommandWrapper<String>(command).getSetting(TABLE_NAME);
 
