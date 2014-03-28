@@ -90,16 +90,6 @@ public abstract class AbstractTemplateContext
     protected static final String PACKAGE_NAME = "packageName";
 
     /**
-     * The optional header.
-     */
-    private String m__strHeader;
-
-    /**
-     * The decorator factory.
-     */
-    private DecoratorFactory m__DecoratorFactory;
-
-    /**
      * The command.
      */
     private QueryJCommand m__Command;
