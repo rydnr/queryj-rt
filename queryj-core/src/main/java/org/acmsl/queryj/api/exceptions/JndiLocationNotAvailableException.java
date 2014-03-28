@@ -27,7 +27,8 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Represents the situation in which the JNDI path information is expected
+ * to be ready to use, but for some bug it's not available.
  *
  * Date: 2014/03/28
  * Time: 19:55
