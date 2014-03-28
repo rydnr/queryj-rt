@@ -334,15 +334,6 @@ public abstract class BasePerTableTemplateBuildHandler
                 parameters,
                 decoratorFactory,
                 packageName,
-                projectPackage,
-                repository,
-                header,
-                implementMarkerInterfaces,
-                jmx,
-                jndiLocation,
-                disableGenerationTimestamps,
-                disableNotNullAnnotations,
-                disableCheckthreadAnnotations,
                 tableName,
                 staticContents);
     }
