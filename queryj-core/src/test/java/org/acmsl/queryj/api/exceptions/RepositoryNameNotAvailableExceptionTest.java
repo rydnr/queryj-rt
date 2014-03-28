@@ -66,7 +66,7 @@ public class RepositoryNameNotAvailableExceptionTest
     @Test
     public void exception_message_is_defined_in_Spanish_and_English()
     {
-        @NotNull final RepositoryNameNotAvailableException instance = new PackageNameNotAvailableException();
+        @NotNull final RepositoryNameNotAvailableException instance = new RepositoryNameNotAvailableException();
 
         for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
         {
