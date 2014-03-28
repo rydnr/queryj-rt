@@ -90,6 +90,7 @@ public abstract class AbstractTemplateContext
      * The package name key.
      */
     protected static final String PACKAGE_NAME = "packageName";
+
     private static final String BASE_PACKAGE_NAME = "basePackageName";
 
     /**
