@@ -111,7 +111,7 @@ public class PerTableTemplateContext
     @NotNull
     public String getTableName()
     {
-        getTableName(getCommand());
+        return getTableName(getCommand());
     }
 
     /**
