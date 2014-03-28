@@ -276,25 +276,6 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Specifies the repository name.
-     * @param repositoryName the new repository name.
-     */
-    private void immutableSetRepositoryName(@NotNull final String repositoryName)
-    {
-        m__strRepositoryName = repositoryName;
-    }
-
-    /**
-     * Specifies the repository name.
-     * @param repositoryName the new repository name.
-     */
-    @SuppressWarnings("unused")
-    protected void setRepositoryName(@NotNull final String repositoryName)
-    {
-        immutableSetRepositoryName(repositoryName);
-    }
-
-    /**
      * Retrieves the repository name.
      * @return such information.
      */
