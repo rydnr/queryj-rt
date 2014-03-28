@@ -221,27 +221,6 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Specifies the custom-sql provider.
-     * @param customSqlProvider the customsql provider.
-     */
-    private void immutableSetCustomSqlProvider(
-        @NotNull final CustomSqlProvider customSqlProvider)
-    {
-        m__CustomSqlProvider = customSqlProvider;
-    }
-
-    /**
-     * Specifies the custom-sql provider.
-     * @param customSqlProvider the customsql provider.
-     */
-    @SuppressWarnings("unused")
-    protected void setCustomSqlProvider(
-        @NotNull final CustomSqlProvider customSqlProvider)
-    {
-        immutableSetCustomSqlProvider(customSqlProvider);
-    }
-
-    /**
      * Retrieves the custom-sql provider.
      * @return such provider.
      */
