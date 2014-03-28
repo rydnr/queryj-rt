@@ -130,20 +130,6 @@ public class PerTableTemplateContext
         @Nullable final List<Row<String>> staticValues)
     {
         super(null);
-            metadataManager,
-            customSqlProvider,
-            header,
-            decoratorFactory,
-            packageName,
-            basePackageName,
-            repositoryName,
-            implementMarkerInterfaces,
-            jmx,
-            jndiLocation,
-            disableGenerationTimestamps,
-            disableNotNullAnnotations,
-            disableCheckthreadAnnotations,
-            fileName);
 
         immutableSetTableName(tableName);
         immutableSetStaticValues(staticValues);
