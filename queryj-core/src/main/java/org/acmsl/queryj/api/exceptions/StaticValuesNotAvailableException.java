@@ -27,8 +27,8 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Used when the list of static values is required but it's not available
- * for some reason, likely a bug.
+ * Description: Used when the list of static values is required but it's not
+ *              available for some reason, likely a bug.
  *
  * Date: 2014/03/28
  * Time: 20:35
