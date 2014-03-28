@@ -476,7 +476,7 @@ public abstract class AbstractTemplateContext
      * @param command the command.
      * @return such setting.
      */
-    protected boolean getBoolean(
+    protected boolean getBooleanValue(
         @NotNull final QueryJCommand command, @NotNull final String key)
     {
         final boolean result;
