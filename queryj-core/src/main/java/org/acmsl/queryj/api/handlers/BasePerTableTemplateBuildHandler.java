@@ -303,18 +303,7 @@ public abstract class BasePerTableTemplateBuildHandler
     /**
      * Creates a template with required information.
      * @param templateFactory the {@link org.acmsl.queryj.api.PerTableTemplateFactory} instance.
-     * @param metadataManager the {@link MetadataManager} instance.
-     * @param customSqlProvider the {@link CustomSqlProvider} instance.
      * @param packageName the package name.
-     * @param projectPackage the project's base package.
-     * @param repository the repository name.
-     * @param header the custom file header.
-     * @param implementMarkerInterfaces whether to use marker interface or not.
-     * @param jmx whether to include JMX support or not.
-     * @param jndiLocation the JNDI path of the {@link javax.sql.DataSource}.
-     * @param disableGenerationTimestamps whether to disable generation timestamps.
-     * @param disableNotNullAnnotations whether to disable NotNull annotations.
-     * @param disableCheckthreadAnnotations whether to disable checkthread.org annotations or not.
      * @param tableName the table name.
      * @param staticContents the table's static contents (optional).
      * @param parameters the parameter map.
