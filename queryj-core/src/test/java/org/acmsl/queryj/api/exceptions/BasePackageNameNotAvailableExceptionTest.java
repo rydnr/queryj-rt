@@ -45,6 +45,8 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 import java.util.Arrays;
 import java.util.Locale;
@@ -55,7 +57,7 @@ import java.util.Locale;
  * @since 3.0
  * Created: 2014/03/28 18:28
  */
-@ThreadSafe
+@RunWith(JUnit4.class)
 public class BasePackageNameNotAvailableExceptionTest
 {
     /**
