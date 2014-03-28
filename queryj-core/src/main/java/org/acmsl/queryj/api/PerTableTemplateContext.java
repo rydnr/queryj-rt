@@ -89,7 +89,11 @@ public class PerTableTemplateContext
      * The table-name key.
      */
     protected static final String TABLE_NAME = "tableName";
-    private static final String STATIC_VALUES = "staticValues";
+
+    /**
+     * The static-values key.
+     */
+    protected static final String STATIC_VALUES = "staticValues";
 
     /**
      * The static contents.
