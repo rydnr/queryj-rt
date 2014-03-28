@@ -315,6 +315,17 @@ public abstract class AbstractTemplateContext
     }
 
     /**
+     * Retrieves the package name.
+     * @return such information.
+     */
+    @NotNull
+    @Override
+    public String getPackageName()
+    {
+        return m__strPackageName;
+    }
+
+    /**
      * Retrieves the base package name.
      * @return such information.
      */
