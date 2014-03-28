@@ -41,12 +41,15 @@ package org.acmsl.queryj.api.exceptions;
 import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing checkthread.org annotations.
+ * Importing JUnit classes.
  */
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+/*
+ * I
+ */
 import java.util.Arrays;
 import java.util.Locale;
 
