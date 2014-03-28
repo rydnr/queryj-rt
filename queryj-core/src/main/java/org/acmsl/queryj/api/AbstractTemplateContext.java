@@ -232,25 +232,6 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Specifies the header.
-     * @param header the header.
-     */
-    protected final void immutableSetHeader(@Nullable final String header)
-    {
-        m__strHeader = header;
-    }
-
-    /**
-     * Specifies the header.
-     * @param header the header.
-     */
-    @SuppressWarnings("unused")
-    protected void setHeader(@Nullable final String header)
-    {
-        immutableSetHeader(header);
-    }
-
-    /**
      * Retrieves the header.
      * @return the header.
      */
