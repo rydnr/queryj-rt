@@ -67,6 +67,6 @@ public class BasePackageNameNotAvailableException
      */
     public BasePackageNameNotAvailableException()
     {
-        super("");
+        super("BasePackageName.not.available");
     }
 }
