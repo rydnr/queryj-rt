@@ -401,8 +401,14 @@ public abstract class AbstractTemplateContext
 
         if (aux == null)
         {
-
+            result = false;
         }
+        else
+        {
+            result = aux;
+        }
+
+        return result;
     }
 
     /**
