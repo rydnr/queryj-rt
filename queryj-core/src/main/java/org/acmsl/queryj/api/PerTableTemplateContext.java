@@ -150,7 +150,7 @@ public class PerTableTemplateContext
     @NotNull
     public List<Row<String>> getStaticValues()
     {
-        @Nullable final List<Row<String>> result;
+        return new ArrayList<Row<String>>
 
         @Nullable final List<Row<String>> t_lRows = immutableGetStaticValues();
 
