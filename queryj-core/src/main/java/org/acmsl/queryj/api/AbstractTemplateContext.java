@@ -287,27 +287,6 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Specifies whether to implement marker interfaces.
-     * @param flag such condition.
-     */
-    protected final void immutableSetImplementMarkerInterfaces(
-        final boolean flag)
-    {
-        m__bImplementMarkerInterfaces = flag;
-    }
-
-    /**
-     * Specifies whether to implement marker interfaces.
-     * @param flag such condition.
-     */
-    @SuppressWarnings("unused")
-    protected void setImplementMarkerInterfaces(
-        final boolean flag)
-    {
-        immutableSetImplementMarkerInterfaces(flag);
-    }
-
-    /**
      * Retrieves whether to implement marker interfaces.
      * @return such condition.
      */
