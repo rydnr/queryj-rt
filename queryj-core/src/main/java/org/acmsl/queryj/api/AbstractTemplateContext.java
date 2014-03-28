@@ -377,9 +377,8 @@ public abstract class AbstractTemplateContext
      * Retrieves the JNDI location for the {@link javax.sql.DataSource}.
      * @return such location.
      */
-    @Override
     @NotNull
-    public String getJndiLocation()
+    protected String getJndiLocation(@NotNull final QueryJCommand command)
     {
         return this.m__strJndiLocation;
     }
