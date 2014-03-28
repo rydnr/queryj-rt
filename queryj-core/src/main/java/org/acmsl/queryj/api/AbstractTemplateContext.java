@@ -233,6 +233,7 @@ public abstract class AbstractTemplateContext
 
     /**
      * Retrieves the custom-sql provider.
+     * @param command the command.
      * @return such provider.
      */
     @NotNull
