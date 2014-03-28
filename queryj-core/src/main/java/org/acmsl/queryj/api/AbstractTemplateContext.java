@@ -420,7 +420,7 @@ public abstract class AbstractTemplateContext
     {
         return
             "{ \"class\": \"" + AbstractTemplateContext.class.getSimpleName() + '"'
-            + ", \"package\": \"org.acmsl.queryj.api\"""disableCheckthreadAnnotations=" + m__bDisableCheckthreadAnnotations +
+            + ", \"package\": \"org.acmsl.queryj.api\"
                ", header='" + m__strHeader + '\'' +
                ", decoratorFactory=" + m__DecoratorFactory +
                ", metadataManager=" + m__MetadataManager +
