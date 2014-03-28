@@ -152,18 +152,8 @@ public abstract class BasePerTableTemplateBuildHandler
      *
      * @param parameters the parameters.
      * @param metadataManager the database metadata manager.
-     * @param customSqlProvider the custom sql provider.
      * @param templateFactory the template factory.
-     * @param projectPackage the project package.
-     * @param repository the repository.
-     * @param header the header.
-     * @param implementMarkerInterfaces whether to implement marker
-     * interfaces.
-     * @param jmx whether to include JMX support.
      * @param jndiLocation the JNDI path of the {@link javax.sql.DataSource}.
-     * @param disableGenerationTimestamps whether to disable generation timestamps.
-     * @param disableNotNullAnnotations whether to disable NotNull annotations.
-     * @param disableCheckthreadAnnotations whether to disable checkthread.org annotations or not.
      * @param tables the tables.
      * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @param daoTemplateUtils the {@link DAOTemplateUtils} instance.
