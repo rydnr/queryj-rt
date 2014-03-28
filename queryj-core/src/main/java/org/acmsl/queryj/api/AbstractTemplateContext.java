@@ -167,7 +167,7 @@ public abstract class AbstractTemplateContext
      * @param fileName the file name.
      */
     protected AbstractTemplateContext(
-        @NotNull final MetadataManager metadataManager,
+        @NotNull final QueryJCommandMetadataManager metadataManager,
         @NotNull final CustomSqlProvider customSqlProvider,
         @Nullable final String header,
         @NotNull final DecoratorFactory decoratorFactory,
