@@ -418,31 +418,6 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Retrieves whether to include JMX support.
-     * @param command the command.
-     * @return such information.
-     */
-    protected boolean isJmxSupportEnabled(@NotNull final QueryJCommand command)
-    {
-        final boolean result;
-
-        @Nullable final Boolean aux =
-            new QueryJCommandWrapper<Boolean>(command).getSetting(
-                QueryJSettings.JMX);
-
-        if (aux == null)
-        {
-            result = false;
-        }
-        else
-        {
-            result = aux;
-        }
-
-        return result;
-    }
-
-    /**
      * Retrieves the JNDI location for the {@link javax.sql.DataSource}.
      * @return such location.
      */
