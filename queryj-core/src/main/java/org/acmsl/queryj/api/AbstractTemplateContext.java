@@ -327,27 +327,7 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Specifies whether to disable NotNull annotations or not.
-     * @param flag such setting.
-     */
-    protected final void immutableSetDisableNotNullAnnotations(final boolean flag)
-    {
-        m__bDisableNotNullAnnotations = flag;
-    }
-
-    /**
-     * Specifies whether to disable NotNull annotations or not.
-     * @param flag such setting.
-     */
-    @SuppressWarnings("unused")
-    protected void setDisableNotNullAnnotations(final boolean flag)
-    {
-        immutableSetDisableNotNullAnnotations(flag);
-    }
-
-    /**
      * Retrieves whether to use NotNull annotations or not.
-     *
      * @return such setting.
      */
     @Override
