@@ -292,7 +292,12 @@ public abstract class AbstractTemplateContext
     protected DecoratorFactory getDecoratorFactory(@NotNull final QueryJCommand command)
     {
         @Nullable final DecoratorFactory result =
-            new QueryJCommandWrapper<DecoratorFactory>(command).getSetting(DecoratorFactory.class)
+            new QueryJCommandWrapper<DecoratorFactory>(command).getSetting(DecoratorFactory.class.getName());
+
+        if (result == null)
+        {
+            throw new
+        }
     }
 
     /**
