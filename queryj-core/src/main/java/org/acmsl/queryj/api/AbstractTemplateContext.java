@@ -290,7 +290,7 @@ public abstract class AbstractTemplateContext
      */
     @Override
     @NotNull
-    public DecoratorFactory getDecoratorFactory()
+    public DecoratorFactory getDecoratorFactory(@NotNull final QueryJCommand command)
     {
         return m__DecoratorFactory;
     }
