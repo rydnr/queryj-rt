@@ -84,7 +84,11 @@ public class PerTableTemplateContext
      * The serial version id.
      */
     private static final long serialVersionUID = -7439946925532182308L;
-    private static final String TABLE_NAME = "tableName";
+
+    /**
+     * The table-name key.
+     */
+    protected static final String TABLE_NAME = "tableName";
 
     /**
      * The table name.
