@@ -244,7 +244,7 @@ public abstract class AbstractTemplateContext
 
         if (result == null)
         {
-            throw new MetadataManagerNotAvailableException();
+            throw new CustomSqlProviderNotAvailableException();
         }
 
         return result;
