@@ -424,7 +424,22 @@ public abstract class AbstractTemplateContext
      */
     protected boolean isJmxSupportEnabled(@NotNull final QueryJCommand command)
     {
-        return m__bJmx;
+        final boolean result;
+
+        @Nullable final Boolean aux =
+            new QueryJCommandWrapper<Boolean>(command).getSetting(
+                QueryJSettings.IMPLEMENT_MARKER_INTERFACES);
+
+        if (aux == null)
+        {
+            result = false;
+        }
+        else
+        {
+            result = aux;
+        }
+
+        return result;
     }
 
     /**
