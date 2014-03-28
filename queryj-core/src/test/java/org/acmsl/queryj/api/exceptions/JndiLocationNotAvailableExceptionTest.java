@@ -44,8 +44,12 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+
+import java.util.Arrays;
+import java.util.Locale;
 
 /**
  *
@@ -56,5 +60,18 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class JndiLocationNotAvailableExceptionTest
 {
+    /**
+     * Tests the message key is defined for Spanish and English.
+     */
+    @Test
+    public void exception_message_is_defined_in_Spanish_and_English()
+    {
+        @NotNull final RepositoryNameNotAvailableException instance = new RepositoryNameNotAvailableException();
 
+        for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
+        {
+            // throws a MissingResourceException if the key is not declared.
+            instance.getMessage(t_Locale);
+        }
+    }
 }
