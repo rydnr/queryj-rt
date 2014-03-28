@@ -114,14 +114,7 @@ public class PerTableTemplateContext
      */
     public PerTableTemplateContext(
         @NotNull final QueryJCommand command,
-        @NotNull final CustomSqlProvider customSqlProvider,
-        @Nullable final String header,
         @NotNull final DecoratorFactory decoratorFactory,
-        @NotNull final String packageName,
-        @NotNull final String basePackageName,
-        @NotNull final String repositoryName,
-        final boolean implementMarkerInterfaces,
-        final boolean jmx,
         @NotNull final String jndiLocation,
         final boolean disableGenerationTimestamps,
         final boolean disableNotNullAnnotations,
