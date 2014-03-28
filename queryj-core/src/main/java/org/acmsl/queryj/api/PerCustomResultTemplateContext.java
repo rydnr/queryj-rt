@@ -114,20 +114,6 @@ public class PerCustomResultTemplateContext
         @NotNull final Result<String> result)
     {
         super(null);
-            metadataManager,
-            customSqlProvider,
-            header,
-            decoratorFactory,
-            packageName,
-            basePackageName,
-            repositoryName,
-            implementMarkerInterfaces,
-            jmx,
-            jndiLocation,
-            disableGenerationTimestamps,
-            disableNotNullAnnotations,
-            disableCheckthreadAnnotations,
-            fileName);
 
         immutableSetResult(result);
     }
