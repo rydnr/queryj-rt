@@ -55,6 +55,18 @@ import org.checkthread.annotations.ThreadSafe;
 public class JndiLocationNotAvailableException
     extends QueryJNonCheckedException
 {
-
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = 1572764644767456515L;
+
+    /**
+     * Creates a QueryJNonCheckedException with given message.
+     *
+     * @param messageKey the key to build the exception message.
+     */
+    public JndiLocationNotAvailableException(@NotNull final String messageKey)
+    {
+        super(messageKey);
+    }
 }
