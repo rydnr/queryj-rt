@@ -420,7 +420,7 @@ public abstract class AbstractTemplateContext
     {
         return
             "{ \"class\": \"" + AbstractTemplateContext.class.getSimpleName() + '"'
-            + "disableCheckthreadAnnotations=" + m__bDisableCheckthreadAnnotations +
+            + ", \"package\": \"""disableCheckthreadAnnotations=" + m__bDisableCheckthreadAnnotations +
                ", header='" + m__strHeader + '\'' +
                ", decoratorFactory=" + m__DecoratorFactory +
                ", metadataManager=" + m__MetadataManager +
