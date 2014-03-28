@@ -362,7 +362,7 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Retrieves the base package name.
+     * Retrieves the repository name.
      * @param command the command.
      * @return such information.
      */
