@@ -389,12 +389,7 @@ public abstract class AbstractTemplateContext
     public int hashCode()
     {
         return
-            new HashCodeBuilder().append(this.m__strHeader).append(this.m__DecoratorFactory)
-            .append(this.m__MetadataManager).append(this.m__CustomSqlProvider).append(this.m__strPackageName)
-            .append(this.m__strBasePackageName).append(this.m__strRepositoryName)
-            .append(this.m__bImplementMarkerInterfaces).append(this.m__bJmx).append(this.m__strJndiLocation)
-            .append(this.m__bDisableGenerationTimestamps).append(this.m__bDisableNotNullAnnotations)
-            .append(this.m__bDisableCheckthreadAnnotations).append(this.m__strFileName)
+            new HashCodeBuilder().append(this.m__Command)
             .toHashCode();
     }
 
