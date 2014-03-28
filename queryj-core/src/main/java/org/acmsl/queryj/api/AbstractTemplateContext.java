@@ -381,7 +381,12 @@ public abstract class AbstractTemplateContext
     protected String getJndiLocation(@NotNull final QueryJCommand command)
     {
         @Nullable final String result =
-            new QueryJCommandWrapper<String>(command).getSetting()
+            new QueryJCommandWrapper<String>(command).getSetting(QueryJSettings.JNDI_DATASOURCE);
+
+        if (result == null)
+        {
+            throw new
+        }
     }
 
     /**
