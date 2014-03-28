@@ -160,7 +160,7 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Specifies the metadata manager.
+     * Specifies the command.
      * @param command the command.
      */
     private void immutableSetCommand(
