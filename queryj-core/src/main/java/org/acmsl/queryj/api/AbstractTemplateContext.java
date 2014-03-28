@@ -383,7 +383,7 @@ public abstract class AbstractTemplateContext
     @Override
     public boolean getImplementMarkerInterfaces()
     {
-        return m__bImplementMarkerInterfaces;
+        return getImplementMarkerInterfaces(getCommand());
     }
 
     /**
