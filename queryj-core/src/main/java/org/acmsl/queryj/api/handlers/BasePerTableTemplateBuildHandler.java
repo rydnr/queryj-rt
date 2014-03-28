@@ -232,7 +232,7 @@ public abstract class BasePerTableTemplateBuildHandler
                     }
 
                     t_Template =
-                        createTemplate(parameters,
+                        createTemplate(
                             retrievePackage(
                                 t_Table.getName(), metadataManager.getEngine(), parameters),
                             t_Table.getName(),
