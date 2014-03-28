@@ -277,9 +277,10 @@ public class AbstractTemplateContextTest
         new QueryJCommandWrapper<Boolean>(t_Command).setSetting("disableTimestampGeneration", disableTimestampGeneration);
 
         final boolean disableNotNullAnnotations = true;
-        new QueryJCommandWrapper<Boolean>(t_Command).setSetting("d", disableNotNullAnnotations);
+        new QueryJCommandWrapper<Boolean>(t_Command).setSetting("disableNotNullAnnotations", disableNotNullAnnotations);
+
         final boolean disableCheckthreadAnnotations = true;
-        new QueryJCommandWrapper<Boolean>(t_Command).setSetting("markerInterfaces", implementMarkerInterfaces);
+        new QueryJCommandWrapper<Boolean>(t_Command).setSetting("markerInterfaces", disableCheckthreadAnnotations, disableCheckthreadAnnotations);
         @NotNull final String fileName = "file.name";
 
         return
