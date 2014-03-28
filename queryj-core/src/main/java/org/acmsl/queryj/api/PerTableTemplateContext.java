@@ -112,7 +112,7 @@ public class PerTableTemplateContext
     public String getTableName()
     {
         @Nullable final String result =
-            new QueryJCommandWrapper<String>()
+            new QueryJCommandWrapper<String>(command).getSetting()
     }
 
     /**
