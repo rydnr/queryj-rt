@@ -253,21 +253,6 @@ public class AbstractTemplateContextTest
         return
             new AbstractTemplateContext(
                 new ConfigurationQueryJCommandImpl(new PropertiesConfiguration(), null));
-                )
-                metadataManager,
-                customSqlProvider,
-                header,
-                decoratorFactory,
-                packageName,
-                basePackageName,
-                repositoryName,
-                implementMarkerInterfaces,
-                jmx,
-                jndiLocation,
-                disableGenerationTimestamps,
-                disableNotNullAnnotations,
-                disableCheckthreadAnnotations,
-                fileName)
             {
                 /**
                  * {@inheritDoc}
