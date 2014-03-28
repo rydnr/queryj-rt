@@ -392,7 +392,8 @@ public abstract class AbstractTemplateContext
         final boolean result;
 
         @Nullable final Boolean aux =
-            new QueryJCommandWrapper<Boolean>(command).getSetting(QueryJSettings.IMPLEMENT_MARKER_INTERFACES);
+            new QueryJCommandWrapper<Boolean>(command).getSetting(
+                QueryJSettings.IMPLEMENT_MARKER_INTERFACES);
 
         if (aux == null)
         {
