@@ -393,7 +393,7 @@ public abstract class AbstractTemplateContext
      */
     protected boolean getImplementMarkerInterfaces(@NotNull final QueryJCommand command)
     {
-        return m__bImplementMarkerInterfaces;
+        @Nullable final
     }
 
     /**
