@@ -233,7 +233,7 @@ public abstract class AbstractTemplateContext
     protected CustomSqlProvider getCustomSqlProvider(@NotNull final QueryJCommand command)
     {
         @Nullable final CustomSqlProvider result =
-            new QueryJCommandWrapper<CustomSqlProvider>(command).getSetting(CustomSqlProvider.class.getSimpleName());
+            new QueryJCommandWrapper<CustomSqlProvider>(command).getSetting(CustomSqlProvider.class.getName());
 
         if (result == null)
         {
