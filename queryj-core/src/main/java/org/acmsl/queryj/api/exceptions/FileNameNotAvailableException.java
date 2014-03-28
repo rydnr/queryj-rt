@@ -61,12 +61,10 @@ public class FileNameNotAvailableException
     private static final long serialVersionUID = 3986842327579103661L;
 
     /**
-     * Creates a QueryJNonCheckedException with given message.
-     *
-     * @param messageKey the key to build the exception message.
+     * Creates a new instance.
      */
-    public FileNameNotAvailableException(@NotNull final String messageKey)
+    public FileNameNotAvailableException()
     {
-        super(messageKey);
+        super("FileName.not.available");
     }
 }
