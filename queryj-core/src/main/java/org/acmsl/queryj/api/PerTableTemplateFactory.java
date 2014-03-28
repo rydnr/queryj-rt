@@ -53,6 +53,7 @@ import java.util.List;
 /**
  * Represents entities able to create per-table templates.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
+ * @param <T> the type.
  */
 public interface PerTableTemplateFactory<T extends PerTableTemplate<C>, C extends PerTableTemplateContext>
     extends  TemplateFactory
