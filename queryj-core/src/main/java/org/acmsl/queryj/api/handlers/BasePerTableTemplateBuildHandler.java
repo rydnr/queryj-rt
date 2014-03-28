@@ -80,7 +80,7 @@ import org.jetbrains.annotations.Nullable;
 /**
  * Builds a per-table template using database metadata.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
- * @parma <T> the template type.
+ * @param <T> the template type.
  * @param <C> the template context.
  * @param <TF> the template factory.
  */
