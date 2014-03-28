@@ -42,7 +42,6 @@ import org.acmsl.queryj.metadata.TableDAO;
 import org.acmsl.queryj.api.PerTableTemplate;
 import org.acmsl.queryj.api.PerTableTemplateFactory;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
-import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.metadata.CachingDecoratorFactory;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.MetadataManager;
