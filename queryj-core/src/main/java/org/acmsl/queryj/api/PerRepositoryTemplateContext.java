@@ -116,20 +116,6 @@ public class PerRepositoryTemplateContext
         @NotNull final String fileName)
     {
         super(null);
-            metadataManager,
-            customSqlProvider,
-            header,
-            decoratorFactory,
-            packageName,
-            basePackageName,
-            repositoryName,
-            implementMarkerInterfaces,
-            jmx,
-            jndiLocation,
-            disableGenerationTimestamps,
-            disableNotNullAnnotations,
-            disableCheckthreadAnnotations,
-            fileName);
 
         immutableSetTableNames(tableNames);
     }
