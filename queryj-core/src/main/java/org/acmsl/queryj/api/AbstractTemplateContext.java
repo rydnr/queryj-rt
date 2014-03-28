@@ -228,7 +228,7 @@ public abstract class AbstractTemplateContext
     @Override
     public CustomSqlProvider getCustomSqlProvider()
     {
-        return m__CustomSqlProvider;
+        return getCustomSqlProvider(getCommand());
     }
 
     /**
