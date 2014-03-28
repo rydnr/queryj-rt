@@ -46,7 +46,8 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
- * Used when the list of static values was
+ * Used when the list of static values is required but it's not available
+ * for some reason, likely a bug.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/28 20:35
