@@ -65,6 +65,6 @@ public class RepositoryNameNotAvailableException
      */
     public RepositoryNameNotAvailableException()
     {
-        super("");
+        super("RepositoryName.not.available");
     }
 }
