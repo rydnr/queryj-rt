@@ -471,7 +471,7 @@ public abstract class AbstractTemplateContext
 
         if (result == null)
         {
-            throw new JndiLocationNotAvailableException();
+            throw new FileNameNotAvailableException();
         }
 
         return result;
