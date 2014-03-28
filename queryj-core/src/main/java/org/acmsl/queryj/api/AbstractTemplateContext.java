@@ -465,9 +465,10 @@ public abstract class AbstractTemplateContext
 
     /**
      * Retrieves whether to use generation timestamps or not.
+     * @param command the command.
      * @return such setting.
      */
-    protected boolean getDisableGenerationTimestamps(\)
+    protected boolean getDisableGenerationTimestamps(@NotNull final QueryJCommand command)
     {
         return m__bDisableGenerationTimestamps;
     }
