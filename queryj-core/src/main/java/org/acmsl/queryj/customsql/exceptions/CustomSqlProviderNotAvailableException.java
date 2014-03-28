@@ -62,7 +62,7 @@ public class CustomSqlProviderNotAvailableException
     private static final long serialVersionUID = -4034483450434129553L;
 
     /**
-     * Creates a QueryJNonCheckedException with given message.
+     * Creates a new instance.
      */
     public CustomSqlProviderNotAvailableException(@NotNull final String messageKey)
     {
