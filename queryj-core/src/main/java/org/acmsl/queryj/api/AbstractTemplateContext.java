@@ -409,20 +409,7 @@ public abstract class AbstractTemplateContext
         final AbstractTemplateContext other = (AbstractTemplateContext) obj;
 
         return
-            new EqualsBuilder().append(this.m__Command, other.m__Command)
-            .append(this.m__DecoratorFactory, other.m__DecoratorFactory)
-            .append(this.m__MetadataManager, other.m__MetadataManager)
-            .append(this.m__CustomSqlProvider, other.m__CustomSqlProvider)
-            .append(this.m__strPackageName, other.m__strPackageName)
-            .append(this.m__strBasePackageName, other.m__strBasePackageName)
-            .append(this.m__strRepositoryName, other.m__strRepositoryName)
-            .append(this.m__bImplementMarkerInterfaces, other.m__bImplementMarkerInterfaces)
-            .append(this.m__bJmx, other.m__bJmx).append(this.m__strJndiLocation, other.m__strJndiLocation)
-            .append(this.m__bDisableGenerationTimestamps, other.m__bDisableGenerationTimestamps)
-            .append(this.m__bDisableNotNullAnnotations, other.m__bDisableNotNullAnnotations)
-            .append(this.m__bDisableCheckthreadAnnotations, other.m__bDisableCheckthreadAnnotations)
-            .append(this.m__strFileName, other.m__strFileName)
-            .isEquals();
+            new EqualsBuilder().append(this.m__Command, other.m__Command).isEquals();
     }
 
     /**
