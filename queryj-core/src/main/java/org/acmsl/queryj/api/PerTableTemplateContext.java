@@ -247,6 +247,6 @@ public class PerTableTemplateContext
     {
         return
               "{ \"class\": \"" + PerTableTemplateContext.class.getSimpleName() + '"'
-            + ", \"command\": ableName='" + tableName + "' }";
+            + ", \"command\": { " + getCommand() + ableName='" + tableName + "' }";
     }
 }
