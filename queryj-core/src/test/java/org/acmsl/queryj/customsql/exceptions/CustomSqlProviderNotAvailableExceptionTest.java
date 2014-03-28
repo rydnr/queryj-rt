@@ -56,5 +56,5 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class CustomSqlProviderNotAvailableExceptionTest
 {
-    public void e
+    public void exception_message_is_defined_for_
 }
