@@ -289,7 +289,7 @@ public abstract class AbstractTemplateContext
      * @return such instance.
      */
     @NotNull
-    public DecoratorFactory getDecoratorFactory(@NotNull final QueryJCommand command)
+    protected DecoratorFactory getDecoratorFactory(@NotNull final QueryJCommand command)
     {
         return m__DecoratorFactory;
     }
