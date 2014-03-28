@@ -389,7 +389,7 @@ public abstract class AbstractTemplateContext
     public int hashCode()
     {
         return
-            new HashCodeBuilder().append(this.m__Command).toHashCode();
+            new HashCodeBuilder().append(append(this.m__Command).toHashCode();
     }
 
     /**
