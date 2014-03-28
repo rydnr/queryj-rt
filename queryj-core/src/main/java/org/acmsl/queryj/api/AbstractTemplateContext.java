@@ -270,7 +270,7 @@ public abstract class AbstractTemplateContext
     @Nullable
     protected String getHeader(@NotNull final QueryJCommand command)
     {
-        return m__strHeader;
+        return new QueryJCommandWrapper<String>(command).getSetting("header");
     }
 
     /**
