@@ -180,7 +180,7 @@ public abstract class AbstractTemplateContext
     private void immutableSetCommand(
         @NotNull final QueryJCommand command)
     {
-        m__MetadataManager = command;
+        m_Command = command;
     }
 
     /**
