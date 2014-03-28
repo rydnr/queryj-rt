@@ -174,7 +174,7 @@ public abstract class AbstractTemplateContext
      * @param metadataManager the metadata manager.
      */
     @SuppressWarnings("unused")
-    protected void setMetadataManager(
+    protected void setCommand(
         @NotNull final MetadataManager metadataManager)
     {
         immutableSetMetadataManager(metadataManager);
