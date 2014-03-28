@@ -65,8 +65,8 @@ public class BasePackageNameNotAvailableException
      *
      * @param messageKey the key to build the exception message.
      */
-    public BasePackageNameNotAvailableException(@NotNull final String messageKey)
+    public BasePackageNameNotAvailableException()
     {
-        super(messageKey);
+        super("");
     }
 }
