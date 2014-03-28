@@ -467,7 +467,7 @@ public abstract class AbstractTemplateContext
      * Retrieves whether to use generation timestamps or not.
      * @return such setting.
      */
-    protected boolean getDisableGenerationTimestamps()
+    protected boolean getDisableGenerationTimestamps(\)
     {
         return m__bDisableGenerationTimestamps;
     }
