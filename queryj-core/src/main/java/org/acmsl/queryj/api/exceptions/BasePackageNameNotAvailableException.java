@@ -61,9 +61,7 @@ public class BasePackageNameNotAvailableException
     private static final long serialVersionUID = 6952674169022923793L;
 
     /**
-     * Creates a QueryJNonCheckedException with given message.
-     *
-     * @param messageKey the key to build the exception message.
+     * Creates a new instance.
      */
     public BasePackageNameNotAvailableException()
     {
