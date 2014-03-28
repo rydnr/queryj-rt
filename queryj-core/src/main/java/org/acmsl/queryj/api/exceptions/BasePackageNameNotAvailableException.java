@@ -27,7 +27,8 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Represents a situation in which the information about the base e
+ * Description: Represents a situation in which the information about the base
+ *              package
  * name is required (and expected), but it's not available. A bug or
  * violation of the preconditions/invariants.
  *
