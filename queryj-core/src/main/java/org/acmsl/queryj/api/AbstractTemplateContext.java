@@ -422,18 +422,6 @@ public abstract class AbstractTemplateContext
             "{ \"class\": \"" + AbstractTemplateContext.class.getSimpleName() + '"'
             + ", \"package\": \"org.acmsl.queryj.api\"
             + ", \"command\": " + m__Command + '"' +
-               ", decoratorFactory=" + m__DecoratorFactory +
-               ", metadataManager=" + m__MetadataManager +
-               ", customSqlProvider=" + m__CustomSqlProvider +
-               ", packageName='" + m__strPackageName + '\'' +
-               ", basePackageName='" + m__strBasePackageName + '\'' +
-               ", repositoryName='" + m__strRepositoryName + '\'' +
-               ", implementMarkerInterfaces=" + m__bImplementMarkerInterfaces +
-               ", jmx=" + m__bJmx +
-               ", jndiLocation='" + m__strJndiLocation + '\'' +
-               ", disableGenerationTimestamps=" + m__bDisableGenerationTimestamps +
-               ", disableNotNullAnnotations=" + m__bDisableNotNullAnnotations +
-               ", fileName='" + m__strFileName + '\'' +
                '}';
     }
 }
