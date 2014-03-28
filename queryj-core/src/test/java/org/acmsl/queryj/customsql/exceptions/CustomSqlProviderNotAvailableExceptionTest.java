@@ -69,5 +69,4 @@ public class CustomSqlProviderNotAvailableExceptionTest
             instance.getMessage(t_Locale);
         }
     }
-
 }
