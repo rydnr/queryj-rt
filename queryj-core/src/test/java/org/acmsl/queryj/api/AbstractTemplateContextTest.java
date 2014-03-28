@@ -273,7 +273,7 @@ public class AbstractTemplateContextTest
         new QueryJCommandWrapper<Boolean>(t_Command).setSetting(QueryJSettings.JMX, jmx);
 
         @NotNull final String jndiLocation = "jndi:/location";
-        new QueryJCommandWrapper<String>(t_Command).setSetting("jndiLocation", jndiLocation);
+        new QueryJCommandWrapper<String>(t_Command).setSetting(QueryJSettings.JNDI_DATASOURCE, jndiLocation);
 
         final boolean disableTimestampGeneration = true;
         new QueryJCommandWrapper<Boolean>(t_Command).setSetting("disableTimestampGeneration", disableTimestampGeneration);
