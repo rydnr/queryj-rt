@@ -236,8 +236,7 @@ public abstract class AbstractTemplateContext
      * @return such provider.
      */
     @NotNull
-    @Override
-    public CustomSqlProvider getCustomSqlProvider()
+    protected CustomSqlProvider getCustomSqlProvider(@NotNull final )
     {
         return m__CustomSqlProvider;
     }
