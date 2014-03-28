@@ -61,7 +61,7 @@ public interface PerTableTemplateFactory<T extends PerTableTemplate<C>, C extend
 {
     /**
      * Generates a <i>per-table</i> template.
-     * @param customSqlProvider the CustomSqlProvider instance.
+     * @param command the command.
      * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @param packageName the package name.
      * @param basePackageName the base package name.
