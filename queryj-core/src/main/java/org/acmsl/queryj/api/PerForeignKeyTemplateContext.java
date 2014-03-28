@@ -112,20 +112,6 @@ public class PerForeignKeyTemplateContext
         @NotNull final ForeignKey<String> foreignKey)
     {
         super(null);
-            metadataManager,
-            customSqlProvider,
-            header,
-            decoratorFactory,
-            packageName,
-            basePackageName,
-            repositoryName,
-            implementMarkerInterfaces,
-            jmx,
-            jndiLocation,
-            disableGenerationTimestamps,
-            disableNotNullAnnotations,
-            disableCheckthreadAnnotations,
-            fileName);
 
         immutableSetForeignKey(foreignKey);
     }
