@@ -46,7 +46,9 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
- *
+ * Represents a situation in which the information about the base package
+ * name is required (and expected), but it's not available. A bug or
+ * violation of the preconditions/invariants.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/28 18:30
