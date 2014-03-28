@@ -175,7 +175,7 @@ public abstract class AbstractTemplateContext
 
     /**
      * Specifies the metadata manager.
-     * @param command the metadata manager.
+     * @param command the command.
      */
     private void immutableSetCommand(
         @NotNull final QueryJCommand command)
