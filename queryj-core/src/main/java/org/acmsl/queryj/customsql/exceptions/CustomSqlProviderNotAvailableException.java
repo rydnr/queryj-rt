@@ -63,8 +63,6 @@ public class CustomSqlProviderNotAvailableException
 
     /**
      * Creates a QueryJNonCheckedException with given message.
-     *
-     * @param messageKey the key to build the exception message.
      */
     public CustomSqlProviderNotAvailableException(@NotNull final String messageKey)
     {
