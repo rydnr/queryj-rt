@@ -37,6 +37,7 @@ package org.acmsl.queryj.api;
  */
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
+import org.acmsl.queryj.QueryJSettings;
 import org.acmsl.queryj.api.exceptions.BasePackageNameNotAvailableException;
 import org.acmsl.queryj.api.exceptions.DecoratorFactoryNotAvailableException;
 import org.acmsl.queryj.api.exceptions.PackageNameNotAvailableException;
@@ -394,7 +395,7 @@ public abstract class AbstractTemplateContext
     protected boolean getImplementMarkerInterfaces(@NotNull final QueryJCommand command)
     {
         @Nullable final Boolean result =
-            new QueryJCommandWrapper<Boolean>(command).getSetting(IMPLEMENT_MARKER_INTERFACES);
+            new QueryJCommandWrapper<Boolean>(command).getSetting(QueryJSettings.IMPLEMENT_MARKER_INTERFACES);
     }
 
     /**
