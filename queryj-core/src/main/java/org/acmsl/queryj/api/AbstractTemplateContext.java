@@ -418,7 +418,8 @@ public abstract class AbstractTemplateContext
     @Override
     public String toString()
     {
-        return "AbstractTemplateContext{" +
+        return
+            "AbstractTemplateContext{" +
                "disableCheckthreadAnnotations=" + m__bDisableCheckthreadAnnotations +
                ", header='" + m__strHeader + '\'' +
                ", decoratorFactory=" + m__DecoratorFactory +
