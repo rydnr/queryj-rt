@@ -95,11 +95,6 @@ public abstract class AbstractTemplateContext
     private QueryJCommand m__Command;
 
     /**
-     * The custom-sql provider.
-     */
-    private CustomSqlProvider m__CustomSqlProvider;
-
-    /**
      * The package name.
      */
     private String m__strPackageName;
