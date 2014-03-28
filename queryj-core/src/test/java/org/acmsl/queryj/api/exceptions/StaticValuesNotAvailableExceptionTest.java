@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for StaticValuesNotAvailableException.
  *
  * Date: 2014/03/28
  * Time: 20:34
