@@ -256,7 +256,7 @@ public class AbstractTemplateContextTest
             .setSetting(DecoratorFactory.class.getName(), decoratorFactory);
 
         @NotNull final String packageName = "package.name";
-        new QueryJCommandWrapper<String>(t_Command).setSetting("header", header);
+        new QueryJCommandWrapper<String>(t_Command).setSetting("packageName", packageName);
         @NotNull final String basePackageName = "base.package.name";
         new QueryJCommandWrapper<String>(t_Command).setSetting("basePackageName", basePackageName);
         @NotNull final String repositoryName = "repository.name";
