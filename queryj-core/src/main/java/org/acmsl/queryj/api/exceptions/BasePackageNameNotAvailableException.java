@@ -55,5 +55,10 @@ import org.checkthread.annotations.ThreadSafe;
 public class BasePackageNameNotAvailableException
     extends QueryJNonCheckedException
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = 6952674169022923793L;
+
 
 }
