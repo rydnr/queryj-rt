@@ -82,7 +82,7 @@ import org.jetbrains.annotations.Nullable;
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  * @parma <T> the template type.
  * @param <C> the template context.
- * @param
+ * @param <TF> the template factory.
  */
 public abstract class BasePerTableTemplateBuildHandler
        <T extends PerTableTemplate<C>,
