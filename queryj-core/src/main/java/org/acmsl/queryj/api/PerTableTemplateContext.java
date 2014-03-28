@@ -247,7 +247,7 @@ public class PerTableTemplateContext
     {
         return
               "{ \"class\": \"" + PerTableTemplateContext.class.getSimpleName() + '"'
-            + ", \"package\": \"org.acmsl.queryj"
+            + ", \"package\": \"org.acmsl.queryj.api\""
             + ", \"command\": { " + getCommand() + "} }";
     }
 }
