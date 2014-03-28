@@ -454,7 +454,7 @@ public abstract class AbstractTemplateContext
     @Override
     public boolean getDisableCheckthreadAnnotations()
     {
-        return m__bDisableCheckthreadAnnotations;
+        return getBooleanValue(getCommand(), QueryJSettings.DISABLE_CHECKTHREAD_ANNOTATIONS);
     }
 
     /**
