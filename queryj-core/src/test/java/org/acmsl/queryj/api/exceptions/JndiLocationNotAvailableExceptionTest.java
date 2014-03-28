@@ -68,7 +68,7 @@ public class JndiLocationNotAvailableExceptionTest
     @Test
     public void exception_message_is_defined_in_Spanish_and_English()
     {
-        @NotNull final JndiLocationNotAvailableException instance = new RepositoryNameNotAvailableException();
+        @NotNull final JndiLocationNotAvailableException instance = new JndiLocationNotAvailableException();
 
         for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
         {
