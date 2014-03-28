@@ -27,7 +27,8 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Represents situations in which the repository name is an
+ * invariant, but for some reason (bug) it's not available at runtime.
  *
  * Date: 2014/03/28
  * Time: 18:37
