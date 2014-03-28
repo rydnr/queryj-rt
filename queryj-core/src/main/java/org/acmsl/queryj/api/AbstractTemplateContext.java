@@ -408,8 +408,7 @@ public abstract class AbstractTemplateContext
         }
         final AbstractTemplateContext other = (AbstractTemplateContext) obj;
 
-        return
-            new EqualsBuilder().append(this.m__Command, other.m__Command).isEquals();
+        return new EqualsBuilder().append(this.m__Command, other.m__Command).isEquals();
     }
 
     /**
