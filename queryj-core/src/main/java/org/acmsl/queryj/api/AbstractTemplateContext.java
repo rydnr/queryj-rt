@@ -232,6 +232,17 @@ public abstract class AbstractTemplateContext
     }
 
     /**
+     * Retrieves the custom-sql provider.
+     * @return such provider.
+     */
+    @NotNull
+    @Override
+    public CustomSqlProvider getCustomSqlProvider()
+    {
+        return m__CustomSqlProvider;
+    }
+
+    /**
      * Retrieves the header.
      * @return the header.
      */
