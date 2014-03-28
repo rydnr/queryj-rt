@@ -410,7 +410,7 @@ public abstract class AbstractTemplateContext
      * Retrieves whether to include JMX support.
      * @return such information.
      */
-    @SuppressWarnings("unused")
+    @Override
     public boolean isJmxSupportEnabled()
     {
         return m__bJmx;
