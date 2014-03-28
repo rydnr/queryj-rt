@@ -283,7 +283,7 @@ public class AbstractTemplateContextTest
         new QueryJCommandWrapper<Boolean>(t_Command).setSetting("disableCheckthreadAnnotations", disableCheckthreadAnnotations);
 
         @NotNull final String fileName = "file.name";
-        new QueryJCommandWrapper<String>(t_Command).setSetting("jndiLocation", fileName);
+        new QueryJCommandWrapper<String>(t_Command).setSetting("fileName", fileName);
 
         return
             new AbstractTemplateContext(t_Command)
