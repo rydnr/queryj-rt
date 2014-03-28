@@ -40,6 +40,7 @@ package org.acmsl.queryj.api;
  */
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.MetadataManager;
@@ -252,7 +253,9 @@ public class AbstractTemplateContextTest
         @NotNull final String fileName = "file.name";
 
         @NotNull final QueryJCommand t_Command =
-            new ConfigurationQueryJCommandImpl(new PropertiesConfiguration())
+            new ConfigurationQueryJCommandImpl(new PropertiesConfiguration(), null);
+
+        new QueryJCommandWrapper<MetadataManager>()
         return
             new AbstractTemplateContext(
                 new ConfigurationQueryJCommandImpl(new PropertiesConfiguration(), null))
