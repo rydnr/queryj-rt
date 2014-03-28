@@ -236,7 +236,7 @@ public abstract class AbstractTemplateContext
      * @return such provider.
      */
     @NotNull
-    protected CustomSqlProvider getCustomSqlProvider(@NotNull final )
+    protected CustomSqlProvider getCustomSqlProvider(@NotNull final QueryJCommand command)
     {
         return m__CustomSqlProvider;
     }
