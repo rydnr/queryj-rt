@@ -234,8 +234,6 @@ public abstract class BasePerTableTemplateBuildHandler
                     t_Template =
                         createTemplate(
                             templateFactory,
-                            metadataManager,
-                            customSqlProvider,
                             decoratorFactory,
                             retrievePackage(
                                 t_Table.getName(), metadataManager.getEngine(), parameters),
