@@ -388,7 +388,7 @@ public abstract class AbstractTemplateContext
 
     /**
      * Retrieves whether to implement marker interfaces.
-     * @param
+     * @param command the command.
      * @return such condition.
      */
     protected boolean getImplementMarkerInterfaces(@NotNull final QueryJCommand command)
