@@ -470,7 +470,22 @@ public abstract class AbstractTemplateContext
      */
     protected boolean getDisableGenerationTimestamps(@NotNull final QueryJCommand command)
     {
-        return m__bDisableGenerationTimestamps;
+        final boolean result;
+
+        @Nullable final Boolean aux =
+            new QueryJCommandWrapper<Boolean>(command).getSetting(
+                QueryJSettings.JMX);
+
+        if (aux == null)
+        {
+            result = false;
+        }
+        else
+        {
+            result = aux;
+        }
+
+        return result;
     }
 
     /**
