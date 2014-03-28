@@ -319,7 +319,7 @@ public abstract class AbstractTemplateContext
      * @return such information.
      */
     @NotNull
-    protected String getPackageName()
+    protected String getPackageName(@NotNull final QueryJCommand command)
     {
         return m__strPackageName;
     }
