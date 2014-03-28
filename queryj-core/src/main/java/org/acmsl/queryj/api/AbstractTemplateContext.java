@@ -460,6 +460,7 @@ public abstract class AbstractTemplateContext
 
     /**
      * Retrieves the file name.
+     * @param command the command.
      * @return such information.
      */
     @NotNull
