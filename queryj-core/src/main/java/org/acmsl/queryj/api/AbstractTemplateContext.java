@@ -466,7 +466,15 @@ public abstract class AbstractTemplateContext
     @NotNull
     protected String getFileName(@NotNull final QueryJCommand command)
     {
-        return this.m__strFileName;
+        @Nullable final String result =
+            new QueryJCommandWrapper<String>(command).getSetting(QueryJSettings.JNDI_DATASOURCE);
+
+        if (result == null)
+        {
+            throw new JndiLocationNotAvailableException();
+        }
+
+        return result;
     }
 
     /**
