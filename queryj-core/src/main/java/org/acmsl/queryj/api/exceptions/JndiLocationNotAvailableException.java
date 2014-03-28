@@ -41,7 +41,7 @@ package org.acmsl.queryj.api.exceptions;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
- *
+ * Represents the situation in which the JNDI path information is
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/28 19:55
