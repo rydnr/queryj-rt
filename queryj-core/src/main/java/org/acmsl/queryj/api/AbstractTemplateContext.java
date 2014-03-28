@@ -459,6 +459,17 @@ public abstract class AbstractTemplateContext
     }
 
     /**
+     * Retrieves the file name.
+     * @return such information.
+     */
+    @Override
+    @NotNull
+    public String getFileName()
+    {
+        return this.m__strFileName;
+    }
+
+    /**
      * Concatenates given attributes.
      * @param attributes the attributes.
      * @return the CSV version of given list.
