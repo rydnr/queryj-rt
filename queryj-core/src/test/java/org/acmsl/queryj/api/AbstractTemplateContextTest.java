@@ -253,16 +253,16 @@ public class AbstractTemplateContextTest
         return
             new AbstractTemplateContext(
                 new ConfigurationQueryJCommandImpl(new PropertiesConfiguration(), null))
-            {
-                /**
-                 * {@inheritDoc}
-                 */
-                @NotNull
-                @Override
-                public String getTemplateName()
                 {
-                    return "";
-                }
-            };
+                    /**
+                     * {@inheritDoc}
+                     */
+                    @NotNull
+                    @Override
+                    public String getTemplateName()
+                    {
+                        return "";
+                    }
+                };
     }
 }
