@@ -96,7 +96,7 @@ public class PerTableTemplateContext
 
     /**
      * Creates a {@link PerTableTemplateContext} with given information.
-     * @param metadataManager the {@link MetadataManager} instance.
+     * @param command the {@link QueryJCommand}.
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
      * @param header the header.
      * @param decoratorFactory the {@link DecoratorFactory} instance.
