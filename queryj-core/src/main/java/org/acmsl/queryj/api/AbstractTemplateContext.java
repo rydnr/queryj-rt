@@ -91,7 +91,7 @@ public abstract class AbstractTemplateContext
     private DecoratorFactory m__DecoratorFactory;
 
     /**
-     * The database metadata manager.
+     * The command.
      */
     private QueryJCommand m__Command;
 
