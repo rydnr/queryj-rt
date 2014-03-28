@@ -107,11 +107,6 @@ public abstract class AbstractTemplateContext
     private QueryJCommand m__Command;
 
     /**
-     * The repository name.
-     */
-    private String m__strRepositoryName;
-
-    /**
      * Whether to implement marker interfaces.
      */
     private boolean m__bImplementMarkerInterfaces;
