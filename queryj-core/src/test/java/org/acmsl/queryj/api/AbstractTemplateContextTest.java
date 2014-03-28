@@ -252,7 +252,7 @@ public class AbstractTemplateContextTest
 
         return
             new AbstractTemplateContext(
-                new ConfigurationQueryJCommandImpl(new PropertiesConfiguration(), null)
+                new ConfigurationQueryJCommandImpl(new PropertiesConfiguration(), null));
                 )
                 metadataManager,
                 customSqlProvider,
