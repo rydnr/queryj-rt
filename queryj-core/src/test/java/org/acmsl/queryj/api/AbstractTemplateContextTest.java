@@ -275,6 +275,7 @@ public class AbstractTemplateContextTest
 
         final boolean disableTimestampGeneration = true;
         new QueryJCommandWrapper<Boolean>(t_Command).setSetting("disableTimestampGeneration", disableTimestampGeneration);
+
         final boolean disableNotNullAnnotations = true;
         new QueryJCommandWrapper<Boolean>(t_Command).setSetting("markerInterfaces", implementMarkerInterfaces);
         final boolean disableCheckthreadAnnotations = true;
