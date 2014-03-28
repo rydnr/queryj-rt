@@ -367,7 +367,7 @@ public abstract class AbstractTemplateContext
      * @return such information.
      */
     @NotNull
-    protected String getBasePackageName(@NotNull final QueryJCommand command)
+    protected String getRepositoryName(@NotNull final QueryJCommand command)
     {
         @Nullable final String result =
             new QueryJCommandWrapper<String>(command).getSetting(BASE_PACKAGE_NAME);
