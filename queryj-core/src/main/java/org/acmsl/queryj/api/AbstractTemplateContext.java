@@ -476,7 +476,7 @@ public abstract class AbstractTemplateContext
      * @param command the command.
      * @return such setting.
      */
-    protected boolean getDisableGenerationTimestamps(
+    protected boolean getBoolean(
         @NotNull final QueryJCommand command, @NotNull final String key)
     {
         final boolean result;
