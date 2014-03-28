@@ -331,6 +331,7 @@ public abstract class BasePerTableTemplateBuildHandler
     {
         return
             templateFactory.createTemplate(
+                parameters,
                 metadataManager,
                 customSqlProvider,
                 decoratorFactory,
