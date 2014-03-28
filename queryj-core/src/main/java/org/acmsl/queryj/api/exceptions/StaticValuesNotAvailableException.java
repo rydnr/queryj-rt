@@ -53,6 +53,12 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class StaticValuesNotAvailableException
-
+    extends QueryJNonCheckedException
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = -6545289590394757639L;
+
+
 }
