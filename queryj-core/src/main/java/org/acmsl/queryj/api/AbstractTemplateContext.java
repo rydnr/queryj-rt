@@ -419,7 +419,7 @@ public abstract class AbstractTemplateContext
     public String toString()
     {
         return
-            "{ \"class\": \"" + AbstractTemplateContext.class.getSimpleName() + '"'
+              "{ \"class\": \"" + AbstractTemplateContext.class.getSimpleName() + '"'
             + ", \"package\": \"org.acmsl.queryj.api\""
             + ", \"command\": " + m__Command
             + " }";
