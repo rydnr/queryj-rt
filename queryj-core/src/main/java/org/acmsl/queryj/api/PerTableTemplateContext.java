@@ -115,10 +115,6 @@ public class PerTableTemplateContext
     public PerTableTemplateContext(
         @NotNull final QueryJCommand command,
         @NotNull final DecoratorFactory decoratorFactory,
-        @NotNull final String jndiLocation,
-        final boolean disableGenerationTimestamps,
-        final boolean disableNotNullAnnotations,
-        final boolean disableCheckthreadAnnotations,
         @NotNull final String fileName,
         @NotNull final String tableName,
         @Nullable final List<Row<String>> staticValues)
