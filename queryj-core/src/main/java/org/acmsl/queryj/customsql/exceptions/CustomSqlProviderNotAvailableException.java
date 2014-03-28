@@ -27,7 +27,8 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Represents the situation in which the {@link org.acmsl.queryj.customsql.CustomSqlProvider}
+ * instance is not available but it should.
  *
  * Date: 2014/03/28
  * Time: 07:21
