@@ -112,7 +112,14 @@ public class PerTableTemplateContext
     public String getTableName()
     {
         @Nullable final String result =
-            new QueryJCommandWrapper<String>(command).getSetting(TABLE_NAME)
+            new QueryJCommandWrapper<String>(command).getSetting(TABLE_NAME);
+
+        if (result == null)
+        {
+            throw new TableNameNotAvailableException();
+        }
+
+        return result;
     }
 
     /**
