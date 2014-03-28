@@ -455,7 +455,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     public String getFileName()
     {
-        return this.m__strFileName;
+        return getFileName(getCommand());
     }
 
     /**
