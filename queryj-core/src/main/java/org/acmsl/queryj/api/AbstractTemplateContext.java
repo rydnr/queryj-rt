@@ -265,25 +265,6 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Specifies the base package name.
-     * @param basePackageName the new base package name.
-     */
-    private void immutableSetBasePackageName(@NotNull final String basePackageName)
-    {
-        m__strBasePackageName = basePackageName;
-    }
-
-    /**
-     * Specifies the base package name.
-     * @param basePackageName the new base package name.
-     */
-    @SuppressWarnings("unused")
-    protected void setBasePackageName(@NotNull final String basePackageName)
-    {
-        immutableSetBasePackageName(basePackageName);
-    }
-
-    /**
      * Retrieves the base package name.
      * @return such information.
      */
