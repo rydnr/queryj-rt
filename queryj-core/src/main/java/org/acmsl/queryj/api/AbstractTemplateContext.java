@@ -302,7 +302,7 @@ public abstract class AbstractTemplateContext
     @Override
     public String getPackageName()
     {
-        return getPackageName(getCommand());
+        return getPackageName(getCommand() );
     }
 
     /**
