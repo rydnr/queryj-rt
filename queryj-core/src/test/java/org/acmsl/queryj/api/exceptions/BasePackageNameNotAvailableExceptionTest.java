@@ -44,6 +44,10 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Test;
+
+import java.util.Arrays;
+import java.util.Locale;
 
 /**
  *
@@ -54,4 +58,18 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public class BasePackageNameNotAvailableExceptionTest
 {
+    /**
+     * Tests the message key is defined for Spanish and English.
+     */
+    @Test
+    public void exception_message_is_defined_in_Spanish_and_English()
+    {
+        @NotNull final PackageNameNotAvailableException instance = new PackageNameNotAvailableException();
+
+        for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
+        {
+            // throws a MissingResourceException if the key is not declared.
+            instance.getMessage(t_Locale);
+        }
+    }
 }
