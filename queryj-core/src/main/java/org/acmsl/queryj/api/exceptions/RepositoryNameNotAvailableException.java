@@ -61,7 +61,7 @@ public class RepositoryNameNotAvailableException
     private static final long serialVersionUID = 3640369001803637683L;
 
     /**
-     * Creates a QueryJNonCheckedException with given message.
+     * Creates a new instance.
      */
     public RepositoryNameNotAvailableException()
     {
