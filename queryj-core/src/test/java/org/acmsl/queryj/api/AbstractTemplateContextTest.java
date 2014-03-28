@@ -249,6 +249,7 @@ public class AbstractTemplateContextTest
             CustomSqlProvider.class.getSimpleName(), customSqlProvider);
 
         @Nullable final String header = "header";
+        new
         @NotNull final DecoratorFactory decoratorFactory = EasyMock.createNiceMock(DecoratorFactory.class);
         @NotNull final String packageName = "package.name";
         @NotNull final String basePackageName = "base.package.name";
