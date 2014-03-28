@@ -29,8 +29,7 @@
  *
  * Description: Represents the situation in which the table name information
  *              was available and ready to use to render a template, but for
- *              some
- * reason is not found at runtime.
+ *              some reason is not found at runtime.
  *
  * Date: 2014/03/28
  * Time: 20:31
