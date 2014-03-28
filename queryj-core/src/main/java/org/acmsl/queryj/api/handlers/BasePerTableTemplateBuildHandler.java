@@ -153,7 +153,6 @@ public abstract class BasePerTableTemplateBuildHandler
      * @param parameters the parameters.
      * @param metadataManager the database metadata manager.
      * @param templateFactory the template factory.
-     * @param jndiLocation the JNDI path of the {@link javax.sql.DataSource}.
      * @param tables the tables.
      * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @param daoTemplateUtils the {@link DAOTemplateUtils} instance.
@@ -163,7 +162,6 @@ public abstract class BasePerTableTemplateBuildHandler
         @NotNull final QueryJCommand parameters,
         @NotNull final MetadataManager metadataManager,
         @NotNull final TF templateFactory,
-        @NotNull final String jndiLocation,
         @NotNull final List<Table<String, Attribute<String>, List<Attribute<String>>>> tables,
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final DAOTemplateUtils daoTemplateUtils)
