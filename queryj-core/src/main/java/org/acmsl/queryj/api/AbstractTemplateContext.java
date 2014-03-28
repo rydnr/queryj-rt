@@ -281,7 +281,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     public DecoratorFactory getDecoratorFactory()
     {
-        return m__DecoratorFactory;
+        return getDecoratorFactory(getCommand());
     }
 
     /**
