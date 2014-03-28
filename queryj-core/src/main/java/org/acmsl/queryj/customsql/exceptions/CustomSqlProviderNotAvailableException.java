@@ -60,4 +60,6 @@ public class CustomSqlProviderNotAvailableException
      * The serial version id.
      */
     private static final long serialVersionUID = -4034483450434129553L;
+
+
 }
