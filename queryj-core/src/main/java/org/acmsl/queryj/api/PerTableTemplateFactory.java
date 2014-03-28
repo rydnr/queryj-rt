@@ -82,15 +82,6 @@ public interface PerTableTemplateFactory<T extends PerTableTemplate<C>, C extend
     public T createTemplate(
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final String packageName,
-        @NotNull final String basePackageName,
-        @NotNull final String repositoryName,
-        @Nullable final String header,
-        final boolean implementMarkerInterfaces,
-        final boolean jmx,
-        @NotNull final String jndiLocation,
-        final boolean disableGenerationTimestamps,
-        final boolean disableNotNullAnnotations,
-        final boolean disableCheckthreadAnnotations,
         @NotNull final String tableName,
         @NotNull final List<Row<String>> staticContents);
 }
