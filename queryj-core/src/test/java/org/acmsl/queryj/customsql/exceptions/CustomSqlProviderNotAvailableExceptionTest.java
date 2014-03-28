@@ -57,6 +57,8 @@ import org.junit.runners.JUnit4;
 public class CustomSqlProviderNotAvailableExceptionTest
 {
     public void exception_message_is_defined_in_Spanish_and_English()
-}
+    {
+        @NotNull final
+    }
 
 }
