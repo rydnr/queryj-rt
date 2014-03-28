@@ -414,7 +414,7 @@ public abstract class AbstractTemplateContext
     @Override
     public boolean isJmxSupportEnabled()
     {
-        return m__bJmx;
+        return isJmxSupportEnabled(getCommand());
     }
 
     /**
