@@ -482,7 +482,7 @@ public abstract class AbstractTemplateContext
 
         @Nullable final Boolean aux =
             new QueryJCommandWrapper<Boolean>(command).getSetting(
-                QueryJSettings.JMX);
+                key);
 
         if (aux == null)
         {
