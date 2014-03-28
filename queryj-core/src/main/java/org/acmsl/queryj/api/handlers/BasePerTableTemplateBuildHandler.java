@@ -232,7 +232,7 @@ public abstract class BasePerTableTemplateBuildHandler
                     }
 
                     t_Template =
-                        createTemplate(
+                        createTemplate(parameters)
                             templateFactory,
                             metadataManager,
                             customSqlProvider,
