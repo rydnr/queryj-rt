@@ -255,7 +255,8 @@ public class AbstractTemplateContextTest
         @NotNull final QueryJCommand t_Command =
             new ConfigurationQueryJCommandImpl(new PropertiesConfiguration(), null);
 
-        new QueryJCommandWrapper<MetadataManager>(t_Command).setSetting();
+        new QueryJCommandWrapper<MetadataManager>(t_Command).setSetting(metadataManager);
+
         return
             new AbstractTemplateContext(
                 new ConfigurationQueryJCommandImpl(new PropertiesConfiguration(), null))
