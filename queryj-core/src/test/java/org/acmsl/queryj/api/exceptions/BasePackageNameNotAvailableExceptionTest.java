@@ -66,7 +66,7 @@ public class BasePackageNameNotAvailableExceptionTest
     @Test
     public void exception_message_is_defined_in_Spanish_and_English()
     {
-        @NotNull final PackageNameNotAvailableException instance = new PackageNameNotAvailableException();
+        @NotNull final BasePackageNameNotAvailableException instance = new BasePackageNameNotAvailableException();
 
         for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
         {
