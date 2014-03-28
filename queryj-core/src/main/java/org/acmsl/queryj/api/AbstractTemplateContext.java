@@ -102,16 +102,6 @@ public abstract class AbstractTemplateContext
     private QueryJCommand m__Command;
 
     /**
-     * The package name.
-     */
-    private String m__strPackageName;
-
-    /**
-     * The base package name.
-     */
-    private String m__strBasePackageName;
-
-    /**
      * The repository name.
      */
     private String m__strRepositoryName;
