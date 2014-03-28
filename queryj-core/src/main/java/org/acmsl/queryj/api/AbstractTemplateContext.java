@@ -480,9 +480,7 @@ public abstract class AbstractTemplateContext
     {
         final boolean result;
 
-        @Nullable final Boolean aux =
-            new QueryJCommandWrapper<Boolean>(command).getSetting(
-                key);
+        @Nullable final Boolean aux = new QueryJCommandWrapper<Boolean>(command).getSetting(key);
 
         if (aux == null)
         {
