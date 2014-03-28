@@ -326,7 +326,7 @@ public abstract class BasePerTableTemplateBuildHandler
         @NotNull final String packageName,
         @NotNull final String tableName,
         @NotNull final List<Row<String>> staticContents,
-        @SuppressWarnings("unused") @NotNull final QueryJCommand parameters)
+        @NotNull final QueryJCommand parameters)
       throws  QueryJBuildException
     {
         return
