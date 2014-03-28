@@ -115,7 +115,7 @@ public class PerRepositoryTemplateContext
         final boolean disableCheckthreadAnnotations,
         @NotNull final String fileName)
     {
-        super(
+        super(null);
             metadataManager,
             customSqlProvider,
             header,
