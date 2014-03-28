@@ -267,7 +267,7 @@ public abstract class AbstractTemplateContext
      * @return the header.
      */
     @Nullable
-    protected String getHeader()
+    protected String getHeader(@NotNull final QueryJCommand command)
     {
         return m__strHeader;
     }
