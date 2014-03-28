@@ -316,6 +316,7 @@ public abstract class AbstractTemplateContext
 
     /**
      * Retrieves the package name.
+     * @param command the command.
      * @return such information.
      */
     @NotNull
