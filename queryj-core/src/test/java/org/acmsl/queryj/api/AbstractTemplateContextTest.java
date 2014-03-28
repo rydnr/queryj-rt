@@ -271,8 +271,11 @@ public class AbstractTemplateContextTest
         new QueryJCommandWrapper<Boolean>(t_Command).setSetting("markerInterfaces", implementMarkerInterfaces);
         @NotNull final String jndiLocation = "jndi:/location";
         final boolean disableGenerationTimestamps = true;
+        new QueryJCommandWrapper<Boolean>(t_Command).setSetting("markerInterfaces", implementMarkerInterfaces);
         final boolean disableNotNullAnnotations = true;
+        new QueryJCommandWrapper<Boolean>(t_Command).setSetting("markerInterfaces", implementMarkerInterfaces);
         final boolean disableCheckthreadAnnotations = true;
+        new QueryJCommandWrapper<Boolean>(t_Command).setSetting("markerInterfaces", implementMarkerInterfaces);
         @NotNull final String fileName = "file.name";
 
         return
