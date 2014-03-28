@@ -151,19 +151,6 @@ public class PerTableTemplateContext
     public List<Row<String>> getStaticValues()
     {
         return new ArrayList<>(immutableGetStaticValues());
-
-        @Nullable final List<Row<String>> t_lRows = immutableGetStaticValues();
-
-        if (t_lRows != null)
-        {
-            result = new ArrayList<>(t_lRows);
-        }
-        else
-        {
-            result = new ArrayList<>(0);
-        }
-
-        return result;
     }
 
     /**
