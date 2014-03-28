@@ -361,6 +361,26 @@ public abstract class AbstractTemplateContext
         return m__strRepositoryName;
     }
 
+
+    /**
+     * Retrieves the base package name.
+     * @param command the command.
+     * @return such information.
+     */
+    @NotNull
+    protected String getBasePackageName(@NotNull final QueryJCommand command)
+    {
+        @Nullable final String result =
+            new QueryJCommandWrapper<String>(command).getSetting(BASE_PACKAGE_NAME);
+
+        if (result == null)
+        {
+            throw new BasePackageNameNotAvailableException();
+        }
+
+        return result;
+    }
+
     /**
      * Retrieves whether to implement marker interfaces.
      * @return such condition.
