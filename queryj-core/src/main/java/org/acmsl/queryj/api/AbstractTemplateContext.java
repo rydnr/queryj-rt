@@ -380,7 +380,8 @@ public abstract class AbstractTemplateContext
     @NotNull
     protected String getJndiLocation(@NotNull final QueryJCommand command)
     {
-        return this.m__strJndiLocation;
+        @Nullable final String result =
+            new QueryJCommandWrapper<String>(command).getSetting()
     }
 
     /**
