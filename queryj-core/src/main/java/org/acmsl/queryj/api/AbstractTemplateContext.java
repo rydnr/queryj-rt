@@ -422,6 +422,6 @@ public abstract class AbstractTemplateContext
             "{ \"class\": \"" + AbstractTemplateContext.class.getSimpleName() + '"'
             + ", \"package\": \"org.acmsl.queryj.api\""
             + ", \"command\": " + m__Command
-            + '}';
+            + " }";
     }
 }
