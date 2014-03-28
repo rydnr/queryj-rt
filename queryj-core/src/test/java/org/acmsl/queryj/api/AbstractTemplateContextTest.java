@@ -260,7 +260,7 @@ public class AbstractTemplateContextTest
 
         return
             new AbstractTemplateContext(
-                new ConfigurationQueryJCommandImpl(new PropertiesConfiguration(), null))
+                t_Command
                 {
                     /**
                      * {@inheritDoc}
