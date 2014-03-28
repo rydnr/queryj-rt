@@ -379,7 +379,7 @@ public abstract class AbstractTemplateContext
     @Override
     public boolean getImplementMarkerInterfaces()
     {
-        return getBooleanValue(getCommand(), QueryJSettings.JMX);
+        return getBooleanValue(getCommand(), QueryJSettings.IMPLEMENT_MARKER_INTERFACES);
     }
 
     /**
