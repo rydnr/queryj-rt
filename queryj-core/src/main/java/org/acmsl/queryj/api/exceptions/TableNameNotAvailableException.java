@@ -59,4 +59,12 @@ public class TableNameNotAvailableException
      * The serial version id.
      */
     private static final long serialVersionUID = 7555776214364527188L;
+
+    /**
+     * Creates a new instance.
+     */
+    public TableNameNotAvailableException()
+    {
+        super("TableName.not.available");
+    }
 }
