@@ -246,7 +246,7 @@ public class PerTableTemplateContext
     public String toString()
     {
         return
-              "{ \"class\": PerTableTemplateContext{ staticValues=" + m__lStaticValues
+              "{ \"class\": \"" + PerTableTemplateContext.class.getSimpleName() + '"'
             + ", tableName='" + tableName + "' }";
     }
 }
