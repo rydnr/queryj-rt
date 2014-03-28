@@ -40,6 +40,7 @@ package org.acmsl.queryj.api;
  */
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
+import org.acmsl.queryj.api.exceptions.StaticValuesNotAvailableException;
 import org.acmsl.queryj.api.exceptions.TableNameNotAvailableException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.metadata.DecoratorFactory;
