@@ -201,10 +201,12 @@ public abstract class AbstractTemplateContext
         @Nullable final MetadataManager result =
             new QueryJCommandWrapper<MetadataManager>(command).getSetting(MetadataManager.class.getSimpleName());
 
-        if (aux == null)
+        if (result == null)
         {
             throw new MetadataManagerNotAvailableException();
         }
+
+        return result;
     }
 
     /**
