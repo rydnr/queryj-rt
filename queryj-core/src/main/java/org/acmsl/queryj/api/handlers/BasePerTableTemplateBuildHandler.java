@@ -173,7 +173,6 @@ public abstract class BasePerTableTemplateBuildHandler
     protected void buildTemplate(
         @NotNull final QueryJCommand parameters,
         @NotNull final MetadataManager metadataManager,
-        @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final TF templateFactory,
         @NotNull final String projectPackage,
         @NotNull final String repository,
