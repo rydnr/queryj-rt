@@ -66,6 +66,6 @@ public class CustomSqlProviderNotAvailableException
      */
     public CustomSqlProviderNotAvailableException(@NotNull final String messageKey)
     {
-        super("custom-");
+        super("CustomSqlProvider.not.available");
     }
 }
