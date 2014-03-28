@@ -101,9 +101,6 @@ public class PerTableTemplateContext
     public PerTableTemplateContext(@NotNull final QueryJCommand command)
     {
         super(command);
-
-        immutableSetTableName(tableName);
-        immutableSetStaticValues(staticValues);
     }
 
     /**
