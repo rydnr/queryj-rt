@@ -306,25 +306,6 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Specifies the JNDI location for the {@link javax.sql.DataSource}.
-     * @param location the JNDI location.
-     */
-    protected final void immutableSetJndiLocation(@NotNull final String location)
-    {
-        this.m__strJndiLocation = location;
-    }
-
-    /**
-     * Specifies the JNDI location for the {@link javax.sql.DataSource}.
-     * @param location the JNDI location.
-     */
-    @SuppressWarnings("unused")
-    protected void setJndiLocation(@NotNull final String location)
-    {
-        this.m__strJndiLocation = location;
-    }
-
-    /**
      * Retrieves the JNDI location for the {@link javax.sql.DataSource}.
      * @return such location.
      */
