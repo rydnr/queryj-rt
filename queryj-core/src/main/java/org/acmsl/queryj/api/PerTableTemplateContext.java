@@ -155,7 +155,7 @@ public class PerTableTemplateContext
      * @return such values.
      */
     @NotNull
-    protected final List<Row<String>> immutableGetStaticValues()
+    protected final List<Row<String>> immutableGetStaticValues(@NotNull final QueryJCommand command)
     {
         @Nullable final List<Row<String>> result =
             new QueryJCommandWrapper<Row<String>>(command).getListSetting(STATIC_VALUES);
