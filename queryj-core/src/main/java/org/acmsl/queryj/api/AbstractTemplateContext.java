@@ -322,7 +322,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     protected String getPackageName(@NotNull final QueryJCommand command)
     {
-        return new
+
     }
 
     /**
