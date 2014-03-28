@@ -231,7 +231,7 @@ public class PerTableTemplateContext
             return false;
         }
         final PerTableTemplateContext other = (PerTableTemplateContext) obj;
-        return new EqualsBuilder().appendSuper(super.equals(obj)).append(this.tableName, other.tableName)
+        return new EqualsBuilder().appendSuper(super.equals(obj)).append(this.getCommand(), other.tableName)
             .append(this.m__lStaticValues, other.m__lStaticValues).isEquals();
     }
 
