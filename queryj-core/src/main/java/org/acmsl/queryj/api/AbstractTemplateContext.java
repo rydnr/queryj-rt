@@ -370,7 +370,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     public String getJndiLocation()
     {
-        return this.m__strJndiLocation;
+        return getJndiLocation(getCommand());
     }
 
     /**
