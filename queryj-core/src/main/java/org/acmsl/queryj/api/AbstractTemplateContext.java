@@ -259,7 +259,7 @@ public abstract class AbstractTemplateContext
     @Override
     public String getHeader()
     {
-        return m__strHeader;
+        return getHeader(getCommand());
     }
 
     /**
