@@ -99,11 +99,6 @@ public abstract class AbstractTemplateContext
     protected static final String BASE_PACKAGE_NAME = "basePackageName";
 
     /**
-     * The repository name key.
-     */
-    protected static final String REPOSITORY_NAME = "repositoryName";
-
-    /**
      * The command.
      */
     private QueryJCommand m__Command;
