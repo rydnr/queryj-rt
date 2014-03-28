@@ -171,7 +171,7 @@ public abstract class AbstractTemplateContext
 
     /**
      * Specifies the command.
-     * @param command the metadata manager.
+     * @param command the command.
      */
     @SuppressWarnings("unused")
     protected void setCommand(@NotNull final QueryJCommand command)
