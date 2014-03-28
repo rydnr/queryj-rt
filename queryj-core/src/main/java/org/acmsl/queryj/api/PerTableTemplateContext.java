@@ -91,11 +91,6 @@ public class PerTableTemplateContext
     protected static final String TABLE_NAME = "tableName";
 
     /**
-     * The table name.
-     */
-    private String tableName;
-
-    /**
      * The static contents.
      */
     private List<Row<String>> m__lStaticValues;
