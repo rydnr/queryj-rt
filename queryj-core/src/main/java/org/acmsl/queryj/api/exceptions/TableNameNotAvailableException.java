@@ -27,7 +27,8 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Represents the situation in which the table name information was
+ * Description: Represents the situation in which the table name information
+ *              was
  * available and ready to use to render a template, but for some
  * reason is not found at runtime.
  *
