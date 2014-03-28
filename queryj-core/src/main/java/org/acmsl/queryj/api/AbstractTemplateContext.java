@@ -204,7 +204,7 @@ public abstract class AbstractTemplateContext
 
         if (aux == null)
         {
-            throw new MetadataManagerNotAvailableException()
+            throw new MetadataManagerNotAvailableException();
         }
     }
 
