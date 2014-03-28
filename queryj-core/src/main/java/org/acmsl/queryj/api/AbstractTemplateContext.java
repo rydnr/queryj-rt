@@ -370,7 +370,7 @@ public abstract class AbstractTemplateContext
     protected String getRepositoryName(@NotNull final QueryJCommand command)
     {
         @Nullable final String result =
-            new QueryJCommandWrapper<String>(command).getSetting(BASE_PACKAGE_NAME);
+            new QueryJCommandWrapper<String>(command).getSetting(REPOSITORY_NAME);
 
         if (result == null)
         {
