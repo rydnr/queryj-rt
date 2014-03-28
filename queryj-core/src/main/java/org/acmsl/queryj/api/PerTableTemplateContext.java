@@ -119,7 +119,7 @@ public class PerTableTemplateContext
         @NotNull final String tableName,
         @Nullable final List<Row<String>> staticValues)
     {
-        super(null);
+        super(command);
 
         immutableSetTableName(tableName);
         immutableSetStaticValues(staticValues);
