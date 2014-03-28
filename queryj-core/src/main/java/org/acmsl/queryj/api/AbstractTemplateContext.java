@@ -394,7 +394,7 @@ public abstract class AbstractTemplateContext
      */
     protected boolean getImplementMarkerInterfaces(@NotNull final QueryJCommand command)
     {
-        @Nullable final Boolean result =
+        @Nullable final Boolean aux =
             new QueryJCommandWrapper<Boolean>(command).getSetting(QueryJSettings.IMPLEMENT_MARKER_INTERFACES);
 
         if (result == null)
