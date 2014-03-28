@@ -419,7 +419,7 @@ public abstract class AbstractTemplateContext
     public String toString()
     {
         return
-            "{ \"class\": \"" AbstractTemplateContext.g
+            "{ \"class\": \"" + AbstractTemplateContext.class.getSimpleName() + '"'
                "disableCheckthreadAnnotations=" + m__bDisableCheckthreadAnnotations +
                ", header='" + m__strHeader + '\'' +
                ", decoratorFactory=" + m__DecoratorFactory +
