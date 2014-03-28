@@ -38,6 +38,7 @@ package org.acmsl.queryj.api;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.MetadataManager;
@@ -250,6 +251,7 @@ public class AbstractTemplateContextTest
 
         return
             new AbstractTemplateContext(
+                new ConfigurationQueryJCommandImpl()
                 metadataManager,
                 customSqlProvider,
                 header,
