@@ -258,7 +258,9 @@ public class AbstractTemplateContextTest
         @NotNull final String packageName = "package.name";
         new QueryJCommandWrapper<String>(t_Command).setSetting("header", header);
         @NotNull final String basePackageName = "base.package.name";
+        new QueryJCommandWrapper<String>(t_Command).setSetting("header", header);
         @NotNull final String repositoryName = "repository.name";
+        new QueryJCommandWrapper<String>(t_Command).setSetting("header", header);
         final boolean implementMarkerInterfaces = false;
         final boolean jmx = false;
         @NotNull final String jndiLocation = "jndi:/location";
