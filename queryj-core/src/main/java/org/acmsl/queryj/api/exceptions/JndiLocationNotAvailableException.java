@@ -63,8 +63,8 @@ public class JndiLocationNotAvailableException
     /**
      * Creates a new instance.
      */
-    public JndiLocationNotAvailableException(@NotNull final String messageKey)
+    public JndiLocationNotAvailableException()
     {
-        super(messageKey);
+        super("JndiLocation.not.available");
     }
 }
