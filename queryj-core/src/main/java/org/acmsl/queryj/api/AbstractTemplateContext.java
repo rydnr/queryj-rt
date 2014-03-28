@@ -464,6 +464,16 @@ public abstract class AbstractTemplateContext
     }
 
     /**
+     * Retrieves whether to use generation timestamps or not.
+     * @return such setting.
+     */
+    @Override
+    public boolean getDisableGenerationTimestamps()
+    {
+        return m__bDisableGenerationTimestamps;
+    }
+
+    /**
      * Retrieves whether to use NotNull annotations or not.
      * @return such setting.
      */
