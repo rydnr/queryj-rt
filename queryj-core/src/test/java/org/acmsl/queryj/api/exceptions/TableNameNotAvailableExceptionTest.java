@@ -74,5 +74,4 @@ public class TableNameNotAvailableExceptionTest
             instance.getMessage(t_Locale);
         }
     }
-
 }
