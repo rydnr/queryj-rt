@@ -149,7 +149,6 @@ public abstract class BasePerTableTemplateBuildHandler
 
     /**
      * Builds the template.
-     *
      * @param parameters the parameters.
      * @param metadataManager the database metadata manager.
      * @param templateFactory the template factory.
