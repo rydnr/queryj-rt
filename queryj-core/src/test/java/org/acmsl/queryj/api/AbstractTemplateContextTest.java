@@ -257,13 +257,18 @@ public class AbstractTemplateContextTest
 
         @NotNull final String packageName = "package.name";
         new QueryJCommandWrapper<String>(t_Command).setSetting("packageName", packageName);
+
         @NotNull final String basePackageName = "base.package.name";
         new QueryJCommandWrapper<String>(t_Command).setSetting("basePackageName", basePackageName);
+
         @NotNull final String repositoryName = "repository.name";
         new QueryJCommandWrapper<String>(t_Command).setSetting("repositoryName", repositoryName);
+
         final boolean implementMarkerInterfaces = false;
         new QueryJCommandWrapper<Boolean>(t_Command).setSetting("markerInterfaces", implementMarkerInterfaces);
+
         final boolean jmx = false;
+        new QueryJCommandWrapper<Boolean>(t_Command).setSetting("markerInterfaces", implementMarkerInterfaces);
         @NotNull final String jndiLocation = "jndi:/location";
         final boolean disableGenerationTimestamps = true;
         final boolean disableNotNullAnnotations = true;
