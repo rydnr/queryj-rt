@@ -267,8 +267,7 @@ public abstract class AbstractTemplateContext
      * @return the header.
      */
     @Nullable
-    @Override
-    public String getHeader()
+    protected String getHeader()
     {
         return m__strHeader;
     }
