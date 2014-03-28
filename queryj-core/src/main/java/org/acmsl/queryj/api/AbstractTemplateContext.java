@@ -291,7 +291,8 @@ public abstract class AbstractTemplateContext
     @NotNull
     protected DecoratorFactory getDecoratorFactory(@NotNull final QueryJCommand command)
     {
-        return m__DecoratorFactory;
+        @Nullable final DecoratorFactory result =
+            new QueryJCommandWrapper<DecoratorFactory>()
     }
 
     /**
