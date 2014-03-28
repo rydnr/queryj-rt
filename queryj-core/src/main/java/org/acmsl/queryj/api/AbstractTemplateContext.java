@@ -315,7 +315,10 @@ public abstract class AbstractTemplateContext
         @Nullable final String result =
             new QueryJCommandWrapper<String>(command).getSetting(PACKAGE_NAME);
 
-        if ()
+        if (result == null)
+        {
+            throw new
+        }
         return result;
     }
 
