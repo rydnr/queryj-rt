@@ -112,12 +112,7 @@ public class PerTableTemplateContext
      * @param tableName the table name.
      * @param staticValues the static rows, if the table is marked as <code>@static</code>.
      */
-    public PerTableTemplateContext(
-        @NotNull final QueryJCommand command,
-        @NotNull final DecoratorFactory decoratorFactory,
-        @NotNull final String fileName,
-        @NotNull final String tableName,
-        @Nullable final List<Row<String>> staticValues)
+    public PerTableTemplateContext(@NotNull final QueryJCommand command)
     {
         super(command);
 
