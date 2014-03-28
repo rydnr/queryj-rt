@@ -251,7 +251,7 @@ public class AbstractTemplateContextTest
 
         return
             new AbstractTemplateContext(
-                new ConfigurationQueryJCommandImpl()
+                new ConfigurationQueryJCommandImpl(new Prop)
                 metadataManager,
                 customSqlProvider,
                 header,
