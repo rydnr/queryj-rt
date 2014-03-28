@@ -56,5 +56,7 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class CustomSqlProviderNotAvailableExceptionTest
 {
-    public void exception_message_is_defined_in_English
+    public void exception_message_is_defined_in_Spanish_and_English()
+}
+
 }
