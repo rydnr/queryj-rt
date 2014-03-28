@@ -197,7 +197,8 @@ public abstract class AbstractTemplateContext
     @Override
     public MetadataManager getMetadataManager()
     {
-        return new QueryJCommandWrapper<MetadataManager>(command).getSetting(MetadataManager.class.getSimpleName());
+        @Nullable final MetadataManager result =
+            new QueryJCommandWrapper<MetadataManager>(command).getSetting(MetadataManager.class.getSimpleName());
     }
 
     /**
