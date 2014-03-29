@@ -57,6 +57,6 @@ public class QueryJCommandUtils
     implements Singleton
 {
     /**
-     * Singleton
+     * Singleton implemented to avoid double-check
      */
 }
