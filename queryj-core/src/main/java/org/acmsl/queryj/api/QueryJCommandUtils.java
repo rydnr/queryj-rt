@@ -39,6 +39,8 @@ package org.acmsl.queryj.api;
  * Importing JetBrains annotations.
  */
 import org.acmsl.commons.patterns.Singleton;
+import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.metadata.MetadataManager;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -56,6 +58,11 @@ import org.checkthread.annotations.ThreadSafe;
 public class QueryJCommandUtils
     implements Singleton
 {
+    public MetadataManager retrieveMetadataManager(final QueryJCommand command)
+    {
+        return null;  //To change body of created methods use File | Settings | File Templates.
+    }
+
     /**
      * Singleton implemented to avoid double-check locking.
      */
