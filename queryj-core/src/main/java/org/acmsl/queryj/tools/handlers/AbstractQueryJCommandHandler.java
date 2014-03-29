@@ -39,6 +39,7 @@ package org.acmsl.queryj.tools.handlers;
  */
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.QueryJSettings;
+import org.acmsl.queryj.api.QueryJCommandUtils;
 import org.acmsl.queryj.api.exceptions.CannotRetrieveDatabaseMetadataException;
 import org.acmsl.queryj.api.Template;
 import org.acmsl.queryj.api.exceptions.UnsupportedCharsetQueryjException;
@@ -176,6 +177,7 @@ public abstract class AbstractQueryJCommandHandler
     @NotNull
     public MetadataManager retrieveMetadataManager(@NotNull final QueryJCommand parameters)
     {
+        return QueryJCommandUtils.getInstance().retrieveMetadataManager(parameters);
         @Nullable final MetadataManager result = retrieveMetadataManagerIfExists(parameters);
 
         if (result == null)
