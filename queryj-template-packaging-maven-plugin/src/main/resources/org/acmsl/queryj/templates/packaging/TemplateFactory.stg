@@ -143,6 +143,11 @@ public class <C.class_name>
     @Override
     @NotNull
     public <def.name.noExtension>Template createTemplate(
+        @NotNull final QueryJCommand command,
+        @NotNull final DecoratorFactory decoratorFactory,
+        @NotNull final String packageName,
+        @NotNull final String tableName,
+        @NotNull final List<Row<String>> staticContents)
         @NotNull final MetadataManager metadataManager,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final DecoratorFactory decoratorFactory,
