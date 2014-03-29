@@ -38,6 +38,7 @@ package org.acmsl.queryj.api;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.commons.patterns.Singleton;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -53,5 +54,9 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class QueryJCommandUtils
+    implements Singleton
 {
+    /**
+     * Singleton
+     */
 }
