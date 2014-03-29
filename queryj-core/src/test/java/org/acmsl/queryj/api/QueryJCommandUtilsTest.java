@@ -63,5 +63,6 @@ public class QueryJCommandUtilsTest
         @NotNull final QueryJCommandUtils instance = QueryJCommandUtils.getInstance();
 
         @NotNull final MetadataManager t_MetadataManager = EasyMock.createMock(MetadataManager.class);
+
     }
 }
