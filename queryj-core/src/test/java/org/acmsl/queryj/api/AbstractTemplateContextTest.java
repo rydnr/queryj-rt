@@ -244,7 +244,7 @@ public class AbstractTemplateContextTest
 
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
         new QueryJCommandWrapper<MetadataManager>(t_Command).setSetting(
-            DatabaseMetaDataRetrievalHandler.METADATA_MANAGERMetadataManager.class.getName(), metadataManager);
+            DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, metadataManager);
 
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         new QueryJCommandWrapper<CustomSqlProvider>(t_Command).setSetting(
