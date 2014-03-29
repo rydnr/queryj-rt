@@ -161,7 +161,7 @@ public class <C.class_name>
 
         @NotNull final QueryJCommandUtils queryJCommandUtils = QueryJCommandUtils.getInstance();
 
-        new QueryJCommandWrapper<String>(command)
+        new QueryJCommandWrapper\<String>(command)
             .setSetting(
                 PerTableTemplateContext.FILE_NAME,
                 retrieveTemplateFileName(tableName, queryJCommandUtils.retrieveMetadataManager(command)));
