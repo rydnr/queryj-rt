@@ -152,11 +152,11 @@ public class <C.class_name>
     {
         new QueryJCommandWrapper\<DecoratorFactory>(command)
             .setSetting(DecoratorFactory.class.getName(), decoratorFactory);
-        new QueryJCommandWrapper<String>(command)
+        new QueryJCommandWrapper\<String>(command)
             .setSetting(PerTableTemplateContext.PACKAGE_NAME, packageName);
-        new QueryJCommandWrapper<String>(command)
+        new QueryJCommandWrapper\<String>(command)
             .setSetting(PerTableTemplateContext.TABLE_NAME, tableName);
-        new QueryJCommandWrapper<List<Row<String>>>(command)
+        new QueryJCommandWrapper\<List\<Row\<String>>>(command)
             .setSetting(PerTableTemplateContext.STATIC_VALUES, staticContents);
 
         @NotNull final QueryJCommandUtils queryJCommandUtils = QueryJCommandUtils.getInstance();
