@@ -93,8 +93,6 @@ public class QueryJCommandUtilsTest
         @NotNull final QueryJCommandUtils instance = QueryJCommandUtils.getInstance();
 
         @NotNull final QueryJCommand t_Command = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
-        new QueryJCommandWrapper<MetadataManager>(t_Command)
-            .setSetting(DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, t_MetadataManager);
 
         Assert.assertEquals(t_MetadataManager, instance.retrieveMetadataManager(t_Command));
     }
