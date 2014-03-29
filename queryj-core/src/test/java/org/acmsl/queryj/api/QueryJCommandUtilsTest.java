@@ -94,6 +94,6 @@ public class QueryJCommandUtilsTest
 
         @NotNull final QueryJCommand t_Command = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
-        Assert.assertEquals(t_MetadataManager, instance.retrieveMetadataManager(t_Command));
+        instance.retrieveMetadataManager(t_Command);
     }
 }
