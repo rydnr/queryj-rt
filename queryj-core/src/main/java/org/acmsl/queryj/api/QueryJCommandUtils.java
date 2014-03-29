@@ -77,4 +77,8 @@ public class QueryJCommandUtils
      * Retrieves the singleton instance.
      * @return such instance.
      */
+    public static QueryJCommandUtils getInstance()
+    {
+        return QueryJCommandUtilsSingletonContainer.SINGLETON;
+    }
 }
