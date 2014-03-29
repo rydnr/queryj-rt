@@ -111,6 +111,9 @@ public class QueryJCommandUtilsTest
             instance.retrieveMetadataManager(t_Command);
             Assert.fail("Should have thrown an exception");
         }
-        cat
+        catch (@NotNull final Throwable throwable)
+        {
+            // everything is fine
+        }
     }
 }
