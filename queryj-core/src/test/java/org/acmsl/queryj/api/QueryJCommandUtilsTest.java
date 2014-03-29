@@ -57,7 +57,6 @@ import org.jetbrains.annotations.NotNull;
 /*
  * Importing JUnit/EasyMock classes.
  */
-import org.apache.commons.configuration.PropertiesConfiguration;
 import org.easymock.EasyMock;
 import org.junit.Assert;
 import org.junit.Test;
