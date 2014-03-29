@@ -49,7 +49,7 @@ import org.acmsl.queryj.QueryJSettings;
 import org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandler;
 
 /*
- * Importing JetBrains annotations.
+ * Importing Apache Commons Configuration classes.
  */
 import org.apache.commons.configuration.PropertiesConfiguration;
 
