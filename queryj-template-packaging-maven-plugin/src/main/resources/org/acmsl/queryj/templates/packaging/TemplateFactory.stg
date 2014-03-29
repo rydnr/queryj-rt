@@ -148,7 +148,7 @@ public class <C.class_name>
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final String packageName,
         @NotNull final String tableName,
-        @NotNull final List<Row<String>> staticContents)
+        @NotNull final List\<Row\<String\>> staticContents)
     {
         new QueryJCommandWrapper<DecoratorFactory>(command)
             .setSetting(DecoratorFactory.class.getName(), decoratorFactory);
