@@ -108,8 +108,7 @@ public class QueryJCommandUtilsTest
 
         try
         {
-
+            instance.retrieveMetadataManager(t_Command);
         }
-        instance.retrieveMetadataManager(t_Command);
     }
 }
