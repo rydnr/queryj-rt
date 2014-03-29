@@ -51,6 +51,9 @@ import org.checkthread.annotations.ThreadSafe;
 public class CannotRetrieveMetadataManagerException
     extends QueryJBuildException
 {
+    /**
+     * The
+     */
     private static final long serialVersionUID = -2620214881892724L;
 
     /**
