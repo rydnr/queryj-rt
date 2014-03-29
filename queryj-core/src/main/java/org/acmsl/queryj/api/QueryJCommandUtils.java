@@ -58,11 +58,6 @@ import org.checkthread.annotations.ThreadSafe;
 public class QueryJCommandUtils
     implements Singleton
 {
-    public MetadataManager retrieveMetadataManager(final QueryJCommand command)
-    {
-        return null;  //To change body of created methods use File | Settings | File Templates.
-    }
-
     /**
      * Singleton implemented to avoid double-check locking.
      */
@@ -88,4 +83,10 @@ public class QueryJCommandUtils
     {
         return QueryJCommandUtilsSingletonContainer.SINGLETON;
     }
+
+    public MetadataManager retrieveMetadataManager(final QueryJCommand command)
+    {
+        return null;  //To change body of created methods use File | Settings | File Templates.
+    }
+
 }
