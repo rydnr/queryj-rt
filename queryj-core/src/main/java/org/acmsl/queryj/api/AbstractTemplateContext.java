@@ -46,6 +46,7 @@ import org.acmsl.queryj.api.exceptions.PackageNameNotAvailableException;
 import org.acmsl.queryj.api.exceptions.RepositoryNameNotAvailableException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.exceptions.CustomSqlProviderNotAvailableException;
+import org.acmsl.queryj.customsql.handlers.CustomSqlProviderRetrievalHandler;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.vo.Attribute;
@@ -195,7 +196,7 @@ public abstract class AbstractTemplateContext
     protected CustomSqlProvider getCustomSqlProvider(@NotNull final QueryJCommand command)
     {
         @Nullable final CustomSqlProvider result =
-            new QueryJCommandWrapper<CustomSqlProvider>(command).getSetting(CustomSqlProvider.class.getName());
+            new QueryJCommandWrapper<CustomSqlProvider>(command).getSetting(CustomSqlProviderRetrievalHandler.class.getName());
 
         if (result == null)
         {
