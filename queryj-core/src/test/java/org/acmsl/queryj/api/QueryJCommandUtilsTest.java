@@ -81,4 +81,21 @@ public class QueryJCommandUtilsTest
 
         Assert.assertEquals(t_MetadataManager, instance.retrieveMetadataManager(t_Command));
     }
+
+    /**
+     * Tests whether {@link QueryJCommandUtils} can retrieve the {@link MetadataManager} instance
+     * from the {@link QueryJCommand}.
+     */
+    @Test
+    public void retrieves_the_MetadataManager_instance_from_the_command()
+    {
+        @NotNull final QueryJCommandUtils instance = QueryJCommandUtils.getInstance();
+
+        @NotNull final MetadataManager t_MetadataManager = EasyMock.createMock(MetadataManager.class);
+        @NotNull final QueryJCommand t_Command = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+        new QueryJCommandWrapper<MetadataManager>(t_Command)
+            .setSetting(DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, t_MetadataManager);
+
+        Assert.assertEquals(t_MetadataManager, instance.retrieveMetadataManager(t_Command));
+    }
 }
