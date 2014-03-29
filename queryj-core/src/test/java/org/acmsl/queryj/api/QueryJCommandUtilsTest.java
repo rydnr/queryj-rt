@@ -43,13 +43,17 @@ import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandler;
+
+/*
+ * Importing
+ */
 import org.apache.commons.configuration.PropertiesConfiguration;
-import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing JUnit/EasyMock classes.
  */
+import org.apache.commons.configuration.PropertiesConfiguration;
 import org.easymock.EasyMock;
 import org.junit.Assert;
 import org.junit.Test;
