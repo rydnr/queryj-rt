@@ -64,7 +64,7 @@ source(C) ::= <<
 <checkers_import()>
 
 /*
- * Importing QueryJ-Core classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.api.AbstractTemplate;
 import org.acmsl.queryj.api.exceptions.DevelopmentModeException;
