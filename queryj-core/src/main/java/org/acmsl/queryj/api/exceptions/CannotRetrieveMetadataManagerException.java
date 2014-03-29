@@ -52,7 +52,7 @@ public class CannotRetrieveMetadataManagerException
     extends QueryJBuildException
 {
     /**
-     * The
+     * The serial version id.
      */
     private static final long serialVersionUID = -2620214881892724L;
 
