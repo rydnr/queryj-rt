@@ -45,9 +45,10 @@ import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandler;
 
 /*
- * Importing
+ * Importing Apache Commons Configuration classes.
  */
 import org.apache.commons.configuration.PropertiesConfiguration;
+
 import org.jetbrains.annotations.NotNull;
 
 /*
