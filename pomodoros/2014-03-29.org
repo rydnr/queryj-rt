@@ -1,6 +1,7 @@
 * 2014/03/29
 ** Refactor TemplateContext #459: 
 *** DONE Refactor TemplateFactory template: 2 -> 2
+*** Refactor PerTableTemplatesTest template: 1 ->
 *** TODO Refactor BuildHandler template: 1 ->
 ** Pending:
 *** Move TableTestHelper out of QueryJ Templates
