@@ -43,6 +43,7 @@ import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.QueryJSettings;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
+import org.acmsl.queryj.customsql.handlers.CustomSqlProviderRetrievalHandler;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.MetadataManager;
 
@@ -248,7 +249,7 @@ public class AbstractTemplateContextTest
 
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         new QueryJCommandWrapper<CustomSqlProvider>(t_Command).setSetting(
-            , customSqlProvider);
+            CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, customSqlProvider);
 
         @Nullable final String header = "header";
         new QueryJCommandWrapper<String>(t_Command).setSetting(QueryJSettings.HEADER_FILE, header);
