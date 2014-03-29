@@ -56,5 +56,8 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class QueryJCommandUtilsTest
 {
-    public void
+    public void retrieves_the_MetadataManager_instance_from_the_command()
+    {
+        @NotNull final QueryJCommandUtils instance = QueryJCommandUtils.getInstance();
+    }
 }
