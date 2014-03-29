@@ -76,13 +76,6 @@ import java.util.concurrent.Future;
 /*
  * Importing some Apache Commons Logging classes.
  */
-import org.acmsl.queryj.tools.exceptions.MetadataManagerNotAvailableException;
-import org.acmsl.queryj.tools.exceptions.MissingConnectionAtRuntimeException;
-import org.acmsl.queryj.tools.exceptions.MissingCustomSqlProviderAtRuntimeException;
-import org.acmsl.queryj.tools.exceptions.MissingDataSourceJndiPathAtRuntimeException;
-import org.acmsl.queryj.tools.exceptions.MissingOutputDirAtRuntimeException;
-import org.acmsl.queryj.tools.exceptions.MissingProjectPackageAtRuntimeException;
-import org.acmsl.queryj.tools.exceptions.MissingRepositoryNameAtRuntimeException;
 import org.apache.commons.logging.Log;
 
 /*
