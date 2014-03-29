@@ -189,7 +189,7 @@ public abstract class AbstractQueryJCommandHandler
     protected MetadataManager retrieveMetadataManager(
         @NotNull final QueryJCommand parameters, @NotNull final QueryJCommandUtils queryJCommandUtils)
     {
-        return queryJCommandUtils.getInstance().retrieveMetadataManager(parameters);
+        return queryJCommandUtils.retrieveMetadataManager(parameters);
     }
 
     /**
