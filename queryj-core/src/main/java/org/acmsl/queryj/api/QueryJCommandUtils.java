@@ -112,16 +112,10 @@ public class QueryJCommandUtils
      * @return the manager.
      */
     @Nullable
-    protected MetadataManager retrieveMetadataManagerIfExists(@NotNull final QueryJCommand parameters)
+    public MetadataManager retrieveMetadataManagerIfExists(@NotNull final QueryJCommand parameters)
     {
         return
             new QueryJCommandWrapper<MetadataManager>(parameters)
                 .getSetting(DatabaseMetaDataRetrievalHandler.METADATA_MANAGER);
     }
-
-    public MetadataManager retrieveMetadataManager(final QueryJCommand command)
-    {
-        return null;  //To change body of created methods use File | Settings | File Templates.
-    }
-
 }
