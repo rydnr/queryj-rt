@@ -46,6 +46,9 @@ import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.handlers.CustomSqlProviderRetrievalHandler;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.MetadataManager;
+import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.QueryJCommandWrapper;
+import org.acmsl.queryj.QueryJSettings;
 
 /*
  * Importing JetBrains annotations.
