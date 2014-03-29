@@ -88,7 +88,7 @@ public class PerTableTemplateContext
     /**
      * The table-name key.
      */
-    protected static final String TABLE_NAME = "tableName";
+    public static final String TABLE_NAME = "tableName";
 
     /**
      * The static-values key.
