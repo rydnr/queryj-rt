@@ -106,6 +106,10 @@ public class QueryJCommandUtilsTest
         @NotNull final QueryJCommand t_Command =
             new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
+        try
+        {
+
+        }
         instance.retrieveMetadataManager(t_Command);
     }
 }
