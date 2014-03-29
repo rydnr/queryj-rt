@@ -52,6 +52,10 @@ import org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandler;
  * Importing JetBrains annotations.
  */
 import org.apache.commons.configuration.PropertiesConfiguration;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
