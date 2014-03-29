@@ -176,7 +176,7 @@ public class <C.class_name>
                 retrieveTemplateFileName(tableName, queryJCommandUtils.retrieveMetadataManager(command)));
 
         return
-            <def.name.noExtension>new <def.name.noExtension>Template(new PerTableTemplateContext(command));
+            new <def.name.noExtension>Template(new PerTableTemplateContext(command));
 
         return
             new <def.name.noExtension>Template(
