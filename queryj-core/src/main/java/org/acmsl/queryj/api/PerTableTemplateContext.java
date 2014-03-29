@@ -93,7 +93,7 @@ public class PerTableTemplateContext
     /**
      * The static-values key.
      */
-    protected static final String STATIC_VALUES = "staticValues";
+    public static final String STATIC_VALUES = "staticValues";
 
     /**
      * Creates a {@link PerTableTemplateContext} with given information.
