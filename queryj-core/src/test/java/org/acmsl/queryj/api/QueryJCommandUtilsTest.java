@@ -87,7 +87,7 @@ public class QueryJCommandUtilsTest
      * from the {@link QueryJCommand}.
      */
     @Test
-    public void retrieves_the_MetadataManager_instance_from_the_command()
+    public void throws_exception_trying_to_retrieve_a_missing_MetadataManager_instance_from_the_command()
     {
         @NotNull final QueryJCommandUtils instance = QueryJCommandUtils.getInstance();
 
