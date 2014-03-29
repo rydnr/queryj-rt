@@ -49,7 +49,6 @@ import org.acmsl.queryj.tools.PackageUtils;
  * Importing Jetbrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 /*
  * Importing some JDK classes.
