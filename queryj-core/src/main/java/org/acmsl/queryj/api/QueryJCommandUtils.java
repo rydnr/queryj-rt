@@ -71,5 +71,6 @@ public class QueryJCommandUtils
      * Default constructor. There's no real requirement to force the user
      * to use only the getInstance() method.
      */
-    protected
+    protected QueryJCommandUtils() {};
+
 }
