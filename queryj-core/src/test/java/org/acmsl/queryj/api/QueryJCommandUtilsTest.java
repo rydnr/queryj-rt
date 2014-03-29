@@ -42,6 +42,7 @@ import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.metadata.MetadataManager;
+import org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandler;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
@@ -68,6 +69,6 @@ public class QueryJCommandUtilsTest
 
         @NotNull final MetadataManager t_MetadataManager = EasyMock.createMock(MetadataManager.class);
         @NotNull final QueryJCommand t_Command = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
-        new QueryJCommandWrapper<MetadataManager>(t_Command).setSetting();
+        new QueryJCommandWrapper<MetadataManager>(t_Command).setSetting(DatabaseMetaDataRetrievalHandler.METADATA_MANAGER);
     }
 }
