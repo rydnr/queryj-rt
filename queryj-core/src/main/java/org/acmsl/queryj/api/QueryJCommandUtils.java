@@ -68,6 +68,6 @@ public class QueryJCommandUtils
     }
 
     /**
-     * Default constructor. I
+     * Default constructor. There's no real requirement to force
      */
 }
