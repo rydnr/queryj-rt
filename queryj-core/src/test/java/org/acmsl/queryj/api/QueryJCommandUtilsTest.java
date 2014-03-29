@@ -59,5 +59,7 @@ public class QueryJCommandUtilsTest
     public void retrieves_the_MetadataManager_instance_from_the_command()
     {
         @NotNull final QueryJCommandUtils instance = QueryJCommandUtils.getInstance();
+
+
     }
 }
