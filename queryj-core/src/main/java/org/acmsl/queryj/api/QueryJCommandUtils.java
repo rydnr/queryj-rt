@@ -57,6 +57,17 @@ public class QueryJCommandUtils
     implements Singleton
 {
     /**
-     * Singleton implemented to avoid double-check
+     * Singleton implemented to avoid double-check locking.
+     */
+    protected static final class QueryJCommandUtilsSingletonContainer
+    {
+        /**
+         * The singleton.
+         */
+        public static final QueryJCommandUtils SINGLETON = new QueryJCommandUtils();
+    }
+
+    /**
+     * Default constructor. I
      */
 }
