@@ -512,24 +512,6 @@ public class PerTableTemplatesTest
                         table.getName(),
                         tableRows);
 
-                @Nullable final PerTableTemplate\<PerTableTemplateContext> template =
-                    templateFactory.createTemplate(
-                        metadataManager,
-                        sqlProvider,
-                        retrieveDecoratorFactory(generator),
-                        packageName,
-                        BASE_PACKAGE_NAME,
-                        "acme", // repository
-                        "", // header
-                        false, // marker
-                        false, // jmx
-                        "java:comp/env/db",
-                        false, // disable generation timestamps
-                        false, // disable NotNull annotations
-                        true, // disable checkThread.org annotations
-                        table.getName(),
-                        tableRows);
-
                 Assert.assertNotNull("No template found for " + templateName, template);
 
                 File outputDir = null;
