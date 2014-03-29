@@ -46,6 +46,7 @@ import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.QueryJSettings;
+import org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandler;
 
 /*
  * Importing JetBrains annotations.
