@@ -177,26 +177,6 @@ public class <C.class_name>
 
         return
             new <def.name.noExtension>Template(new <def.type.capitalized>TemplateContext(command));
-
-        return
-            new <def.name.noExtension>Template(
-                new <def.type.capitalized>TemplateContext(
-                    metadataManager,
-                    customSqlProvider,
-                    header,
-                    decoratorFactory,
-                    packageName,
-                    basePackageName,
-                    repositoryName,
-                    implementMarkerInterfaces,
-                    jmx,
-                    jndiLocation,
-                    disableGenerationTimestamps,
-                    disableNotNullAnnotations,
-                    disableCheckthreadAnnotations,
-                    retrieveTemplateFileName(tableName, metadataManager),
-                    tableName,
-                    staticContents));
     }
 
     /**
