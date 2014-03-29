@@ -40,13 +40,17 @@ package org.acmsl.queryj.api;
  */
 import org.acmsl.commons.patterns.Singleton;
 import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.metadata.MetadataManager;
+import org.acmsl.queryj.tools.exceptions.MetadataManagerNotAvailableException;
+import org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandler;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
 
 /**
  *
@@ -82,6 +86,37 @@ public class QueryJCommandUtils
     public static QueryJCommandUtils getInstance()
     {
         return QueryJCommandUtilsSingletonContainer.SINGLETON;
+    }
+
+    /**
+     * Retrieves the database metadata manager from the attribute map.
+     * @param parameters the parameter map.
+     * @return the manager.
+     */
+    @NotNull
+    public MetadataManager retrieveMetadataManager(@NotNull final QueryJCommand parameters)
+    {
+        @Nullable final MetadataManager result = retrieveMetadataManagerIfExists(parameters);
+
+        if (result == null)
+        {
+            throw new MetadataManagerNotAvailableException();
+        }
+
+        return result;
+    }
+
+    /**
+     * Retrieves the database metadata manager from the attribute map.
+     * @param parameters the parameter map.
+     * @return the manager.
+     */
+    @Nullable
+    protected MetadataManager retrieveMetadataManagerIfExists(@NotNull final QueryJCommand parameters)
+    {
+        return
+            new QueryJCommandWrapper<MetadataManager>(parameters)
+                .getSetting(DatabaseMetaDataRetrievalHandler.METADATA_MANAGER);
     }
 
     public MetadataManager retrieveMetadataManager(final QueryJCommand command)
