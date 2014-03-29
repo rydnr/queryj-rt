@@ -103,7 +103,7 @@ public class QueryJCommandUtilsTest
     {
         @NotNull final QueryJCommandUtils instance = QueryJCommandUtils.getInstance();
 
-        @NotNull final QueryJCommand t_Command = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+        @NotNull final QueryJCommand t_Command =new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
         instance.retrieveMetadataManager(t_Command);
     }
