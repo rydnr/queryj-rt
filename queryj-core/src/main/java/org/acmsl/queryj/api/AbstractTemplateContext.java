@@ -98,7 +98,7 @@ public abstract class AbstractTemplateContext
     /**
      * The file name key.
      */
-    protected static final String FILE_NAME = "fileName";
+    public static final String FILE_NAME = "fileName";
 
     /**
      * The command.
