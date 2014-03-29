@@ -88,7 +88,7 @@ public class QueryJCommandUtilsTest
      */
     @Test
     public void throws_exception_trying_to_retrieve_a_missing_MetadataManager_instance_from_the_command()
-    throw Exception
+        throws Exception
     {
         @NotNull final QueryJCommandUtils instance = QueryJCommandUtils.getInstance();
 
