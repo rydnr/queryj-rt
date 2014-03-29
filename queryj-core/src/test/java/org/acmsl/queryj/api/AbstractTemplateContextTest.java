@@ -49,6 +49,7 @@ import org.acmsl.queryj.metadata.MetadataManager;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandler;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -243,7 +244,7 @@ public class AbstractTemplateContextTest
 
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
         new QueryJCommandWrapper<MetadataManager>(t_Command).setSetting(
-            MetadataManager.class.getName(), metadataManager);
+            DatabaseMetaDataRetrievalHandler.METADATA_MANAGERMetadataManager.class.getName(), metadataManager);
 
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         new QueryJCommandWrapper<CustomSqlProvider>(t_Command).setSetting(
