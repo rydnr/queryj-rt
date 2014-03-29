@@ -75,7 +75,6 @@ public class QueryJCommandUtils
 
     /**
      * Retrieves the singleton instance.
-     * @ret
-     *
+     * @return such instance.
      */
 }
