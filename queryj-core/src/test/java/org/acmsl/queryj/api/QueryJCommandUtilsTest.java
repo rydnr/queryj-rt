@@ -45,6 +45,7 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 /**
  *
@@ -52,7 +53,7 @@ import org.junit.runner.RunWith;
  * @since 3.0
  * Created: 2014/03/29 07:54
  */
-@RunWith(J)
+@RunWith(JUnit4.class)
 public class QueryJCommandUtilsTest
 {
 }
