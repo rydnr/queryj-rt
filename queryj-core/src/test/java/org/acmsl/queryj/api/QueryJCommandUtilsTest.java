@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for QueryJCommandUtils.
  *
  * Date: 2014/03/29
  * Time: 07:54
