@@ -65,6 +65,10 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class QueryJCommandUtilsTest
 {
+    /**
+     * Tests whether {@link QueryJCommandUtils} can retrieve the {@link MetadataManager} instance
+     * from the {@link QueryJCommand}.
+     */
     @Test
     public void retrieves_the_MetadataManager_instance_from_the_command()
     {
