@@ -47,6 +47,13 @@ import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.handlers.CustomSqlProviderRetrievalHandler;
 import org.acmsl.queryj.metadata.MetadataManager;
+import org.acmsl.queryj.tools.exceptions.MetadataManagerNotAvailableException;
+import org.acmsl.queryj.tools.exceptions.MissingConnectionAtRuntimeException;
+import org.acmsl.queryj.tools.exceptions.MissingCustomSqlProviderAtRuntimeException;
+import org.acmsl.queryj.tools.exceptions.MissingDataSourceJndiPathAtRuntimeException;
+import org.acmsl.queryj.tools.exceptions.MissingOutputDirAtRuntimeException;
+import org.acmsl.queryj.tools.exceptions.MissingProjectPackageAtRuntimeException;
+import org.acmsl.queryj.tools.exceptions.MissingRepositoryNameAtRuntimeException;
 
 /*
  * Importing some ACM-SL classes.
