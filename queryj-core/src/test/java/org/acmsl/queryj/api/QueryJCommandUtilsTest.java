@@ -72,6 +72,6 @@ public class QueryJCommandUtilsTest
         new QueryJCommandWrapper<MetadataManager>(t_Command)
             .setSetting(DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, t_MetadataManager);
 
-        Assert.assertEquals(t_MetadataManager, )
+        Assert.assertEquals(t_MetadataManager, instance.retrieveMetadataManager())
     }
 }
