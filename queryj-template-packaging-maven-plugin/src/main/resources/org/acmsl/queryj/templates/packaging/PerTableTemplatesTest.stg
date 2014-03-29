@@ -481,6 +481,37 @@ public class PerTableTemplatesTest
                 {
                     tableRows = new ArrayList\<Row\<String\>>(0);
                 }
+
+                @NotNull final QueryJCommand t_Command =
+                    new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+
+                new QueryJCommandWrapper<MetadataManager>(t_Command).setSetting(
+                    DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, metadataManager);
+                new QueryJCommandWrapper<CustomSqlProvider>(t_Command).setSetting(
+                    CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, sqlProvider);
+                new QueryJCommandWrapper<String>(t_Command).setSetting(
+                    QueryJSettings.PACKAGE, BASE_PACKAGE_NAME);
+                new QueryJCommandWrapper<String>(t_Command).setSetting(
+                    QueryJSettings.REPOSITORY, "acme");
+                new QueryJCommandWrapper<String>(t_Command).setSetting(
+                    QueryJSettings.HEADER_FILE, "");
+                new QueryJCommandWrapper<Boolean>(t_Command).setSetting(
+                    QueryJSettings.DISABLE_TIMESTAMPS, false);
+                new QueryJCommandWrapper<Boolean>(t_Command).setSetting(
+                    QueryJSettings.IMPLEMENT_MARKER_INTERFACES, false);
+                new QueryJCommandWrapper<Boolean>(t_Command).setSetting(
+                    QueryJSettings.DISABLE_NOTNULL_ANNOTATIONS, false);
+                new QueryJCommandWrapper<Boolean>(t_Command).setSetting(
+                    QueryJSettings.DISABLE_CHECKTHREAD_ANNOTATIONS, false);
+
+                @Nullable final PerTableTemplate<PerTableTemplateContext> template =
+                    templateFactory.createTemplate(
+                        t_Command,
+                        retrieveDecoratorFactory(generator),
+                        packageName,
+                        table.getName(),
+                        tableRows);
+
                 @Nullable final PerTableTemplate\<PerTableTemplateContext> template =
                     templateFactory.createTemplate(
                         metadataManager,
