@@ -178,14 +178,6 @@ public abstract class AbstractQueryJCommandHandler
     public MetadataManager retrieveMetadataManager(@NotNull final QueryJCommand parameters)
     {
         return QueryJCommandUtils.getInstance().retrieveMetadataManager(parameters);
-        @Nullable final MetadataManager result = retrieveMetadataManagerIfExists(parameters);
-
-        if (result == null)
-        {
-            throw new MetadataManagerNotAvailableException();
-        }
-
-        return result;
     }
 
     /**
