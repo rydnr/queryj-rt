@@ -488,6 +488,7 @@ public abstract class AbstractQueryJCommandHandler
      * Annotates given list of generation tasks into the parameter map.
      * @param tasks the tasks to track.
      * @param parameters the parameter map.
+     * @param <T> the template type.
      */
     @SuppressWarnings("unused")
     protected <T extends Template<?>> void annotateGenerationTasks(
