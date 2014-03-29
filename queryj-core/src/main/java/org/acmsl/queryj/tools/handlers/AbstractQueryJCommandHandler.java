@@ -181,6 +181,17 @@ public abstract class AbstractQueryJCommandHandler
     }
 
     /**
+     * Retrieves the database metadata manager from the attribute map.
+     * @param parameters the parameter map.
+     * @return the manager.
+     */
+    @NotNull
+    public MetadataManager retrieveMetadataManager(@NotNull final QueryJCommand parameters)
+    {
+        return QueryJCommandUtils.getInstance().retrieveMetadataManager(parameters);
+    }
+
+    /**
      * Retrieves whether to use sub folders or not.
      * @param command the command.
      * @return such flag.
