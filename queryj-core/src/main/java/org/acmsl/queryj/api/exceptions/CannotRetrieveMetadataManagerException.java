@@ -61,6 +61,6 @@ public class CannotRetrieveMetadataManagerException
      */
     public CannotRetrieveMetadataManagerException()
     {
-        super("cannot.retrieve.metadatamanager.instance", new Object[0]);
+        super("cannot.retrieve.metadatamanager.instance");
     }
 }
