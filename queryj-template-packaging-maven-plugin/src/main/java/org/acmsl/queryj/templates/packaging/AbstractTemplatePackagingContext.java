@@ -395,7 +395,7 @@ public class AbstractTemplatePackagingContext
     @NotNull
     public String getJdbcUsername()
     {
-        return this.m__strJdbcUsername;
+        return getJdbcUsername(getCommand());
     }
 
     /**
