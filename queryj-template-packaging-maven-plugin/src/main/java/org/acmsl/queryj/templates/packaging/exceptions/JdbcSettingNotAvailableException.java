@@ -70,6 +70,7 @@ public class JdbcSettingNotAvailableException
          * The url.
          */
         URL("url");
+
     }
     /**
      * Creates a {@code TemplatePackagingNonCheckedException} with given message.
