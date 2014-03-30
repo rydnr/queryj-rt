@@ -75,7 +75,7 @@ public class DefaultTemplatePackagingContext
 
     /**
      * Creates a new instance.
-     * @param templateDef the template def.
+     * @param command the command.
      * @param templateName the template name.
      * @param fileName the file name.
      * @param packageName the package name.
