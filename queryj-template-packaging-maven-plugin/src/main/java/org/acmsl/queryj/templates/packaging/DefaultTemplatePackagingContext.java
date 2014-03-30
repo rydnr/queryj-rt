@@ -91,7 +91,7 @@ public class DefaultTemplatePackagingContext
      */
     protected final void immutableSetTemplateDef(@NotNull final TemplateDef<String> templateDef)
     {
-        this.m__TemplateDef = templateDef;
+        new QueryJCommandWrapper<TemplateDef<String>>(command).setSetting("templateDef", templateDef);
     }
 
     /**
