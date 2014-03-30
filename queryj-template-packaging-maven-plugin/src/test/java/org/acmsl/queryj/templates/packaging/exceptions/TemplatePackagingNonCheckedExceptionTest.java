@@ -69,3 +69,4 @@ public class TemplatePackagingNonCheckedExceptionTest
         Assert.assertEquals("template-packaging-exceptions", instance.retrieveExceptionsBundleName());
     }
 }
+// org.acmsl.queryj.exceptions
