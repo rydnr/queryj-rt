@@ -402,7 +402,7 @@ public class AbstractTemplatePackagingContext
      * @return the JDBC user name.
      */
     @NotNull
-    public String getJdbcUsername()
+    protected String getJdbcUsername(@NotNull final QueryJCommand command)
     {
         return getJdbcUsername(getCommand());
     }
