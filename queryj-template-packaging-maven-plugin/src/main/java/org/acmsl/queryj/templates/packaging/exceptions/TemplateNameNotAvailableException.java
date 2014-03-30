@@ -61,5 +61,11 @@ public class TemplateNameNotAvailableException
      */
     private static final long serialVersionUID = -2712500317340565753L;
 
-
+    /**
+     * Creates a new exception.
+     */
+    public TemplateNameNotAvailableException()
+    {
+        super("TemplateName.not.available");
+    }
 }
