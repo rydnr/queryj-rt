@@ -254,8 +254,10 @@ public class AbstractTemplatePackagingContext
 
         if (result == null)
         {
-            throw new PackageNameNotAvailableException()
+            throw new PackageNameNotAvailableException();
         }
+
+        return result;
     }
 
     /**
