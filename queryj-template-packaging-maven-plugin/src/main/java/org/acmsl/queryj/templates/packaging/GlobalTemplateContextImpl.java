@@ -92,7 +92,7 @@ public class GlobalTemplateContextImpl
         @NotNull final List<TemplateDef<String>> templateDefs,
         @NotNull final QueryJCommand command)
     {
-        super(null);
+        super(command);
             //templateName, fileName, packageName, rootDir, outputDir, jdbcDriver, jdbcUrl, jdbcUsername, jdbcPassword);
         immutableSetTemplateDefs(templateDefs);
     }
