@@ -70,12 +70,6 @@ public class DefaultTemplatePackagingContext
     private static final long serialVersionUID = -1034808848836900245L;
 
     /**
-     * The template def.
-     */
-    @NotNull
-    private TemplateDef<String> m__TemplateDef;
-
-    /**
      * Creates a new instance.
      * @param command the command.
      */
