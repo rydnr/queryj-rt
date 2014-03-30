@@ -93,7 +93,6 @@ public class GlobalTemplateContextImpl
         @NotNull final QueryJCommand command)
     {
         super(command);
-            //templateName, fileName, packageName, rootDir, outputDir, jdbcDriver, jdbcUrl, jdbcUsername, jdbcPassword);
         immutableSetTemplateDefs(templateDefs);
     }
 
