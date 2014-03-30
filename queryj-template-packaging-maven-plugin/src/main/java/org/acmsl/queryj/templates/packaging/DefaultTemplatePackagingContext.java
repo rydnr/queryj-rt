@@ -111,9 +111,8 @@ public class DefaultTemplatePackagingContext
      * Retrieves the template def.
      * @return such instance.
      */
-    @Override
     @NotNull
-    public TemplateDef<String> getTemplateDef()
+    protected TemplateDef<String> getTemplateDef(@NotNull final QueryJCommand command)
     {
         return getTemplateDef(getCommand());
     }
