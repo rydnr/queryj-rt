@@ -76,15 +76,6 @@ public class DefaultTemplatePackagingContext
     /**
      * Creates a new instance.
      * @param command the command.
-     * @param templateName the template name.
-     * @param fileName the file name.
-     * @param packageName the package name.
-     * @param rootDir the root dir.
-     * @param outputDir the output dir.
-     * @param jdbcDriver the JDBC driver.
-     * @param jdbcUrl the JDBC url.
-     * @param jdbcUsername the JDBC username.
-     * @param jdbcPassword the JDBC password.
      */
     public DefaultTemplatePackagingContext(@NotNull final QueryJCommand command)
     {
