@@ -107,6 +107,17 @@ public class DefaultTemplatePackagingContext
         return getTemplateDef(getCommand());
     }
 
+    /**
+     * Retrieves the template def.
+     * @return such instance.
+     */
+    @Override
+    @NotNull
+    public TemplateDef<String> getTemplateDef()
+    {
+        return getTemplateDef(getCommand());
+    }
+
     @NotNull
     @Override
     public String toString()
