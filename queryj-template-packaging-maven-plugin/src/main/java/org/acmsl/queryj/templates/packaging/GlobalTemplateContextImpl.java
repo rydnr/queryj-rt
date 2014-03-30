@@ -79,14 +79,8 @@ public class GlobalTemplateContextImpl
 
     /**
      * Creates a new global context.
-     * @param templateName the template name.
      * @param fileName the file name.
-     * @param packageName the package name.
-     * @param rootDir the root dir.
      * @param outputDir the output dir.
-     * @param jdbcUrl the JDBC url.
-     * @param jdbcUsername the JDBC username.
-     * @param jdbcPassword the JDBC password.
      * @param templateDefs the template definitions.
      */
     public GlobalTemplateContextImpl(
