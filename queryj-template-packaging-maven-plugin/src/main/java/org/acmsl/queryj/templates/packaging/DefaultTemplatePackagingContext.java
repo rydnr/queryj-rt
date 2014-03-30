@@ -130,6 +130,6 @@ public class DefaultTemplatePackagingContext
     {
         return
               "{ \"class\": \"" + DefaultTemplatePackagingContext.class.getName() + "\""
-            + "', \"command\": \"" + m__TemplateDef + "\" }";
+            + "', \"command\": \"" + m__Command+ "\" }";
     }
 }
