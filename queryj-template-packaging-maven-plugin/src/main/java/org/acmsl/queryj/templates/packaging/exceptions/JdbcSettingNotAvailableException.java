@@ -113,7 +113,8 @@ public class JdbcSettingNotAvailableException
         @Override
         public String toString()
         {
-            return "JdbcSetting{" +
+            return
+                "{ \"class\": \"JdbcSetting{" +
                    "m__Key='" + m__Key + '\'' +
                    '}';
         }
