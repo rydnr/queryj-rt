@@ -242,6 +242,16 @@ public class AbstractTemplatePackagingContext
     }
 
     /**
+     * Retrieves the package name.
+     * @return such information.
+     */
+    @NotNull
+    public String getPackageName()
+    {
+        return getPackageName(getCommand());
+    }
+
+    /**
      * Retrieves the root dir.
      * @return such folder.
      */
