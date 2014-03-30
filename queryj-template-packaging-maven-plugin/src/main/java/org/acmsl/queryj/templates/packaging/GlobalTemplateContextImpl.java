@@ -107,7 +107,7 @@ public class GlobalTemplateContextImpl
 
     /**
      * Specifies the file name.
-     * @param fileName the file name.
+     * @param outputDir the output dir.
      * @param command the command.
      */
     protected final void immutableSetOutputDir(@NotNull final File outputDir, @NotNull final QueryJCommand command)
