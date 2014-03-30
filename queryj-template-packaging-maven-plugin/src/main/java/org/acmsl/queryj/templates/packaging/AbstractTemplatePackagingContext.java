@@ -399,6 +399,7 @@ public class AbstractTemplatePackagingContext
 
     /**
      * Retrieves the JDBC user name.
+     * @param command the command.
      * @return the JDBC user name.
      */
     @NotNull
