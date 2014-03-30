@@ -77,7 +77,7 @@ public class DefaultTemplatePackagingContext
      * Creates a new instance.
      * @param command the command.
      */
-    public DefaultTemplatePackagingContext(@NotNull final QueryJCommand command)
+    public DefaultTemplatePackagingContext(@NotNull final QueryJCommand command, @NotNull final TemplateDef<String> templateDef)
     {
         super(command);
     }
