@@ -155,7 +155,7 @@ public abstract class TemplatePackagingBuildHandler
                 buildFilename(templateDefs, templateName),
                 new File(
                     rootDir.getAbsolutePath()
-                         + File.separator + outputPackage.replaceAll("\\.", File.separator)),
+                    + File.separator + outputPackage.replaceAll("\\.", File.separator)),
                 jdbcDriver,
                 jdbcUrl,
                 jdbcUsername,
