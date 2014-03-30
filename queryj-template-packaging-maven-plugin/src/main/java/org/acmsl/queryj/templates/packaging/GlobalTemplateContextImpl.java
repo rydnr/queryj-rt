@@ -106,6 +106,16 @@ public class GlobalTemplateContextImpl
     }
 
     /**
+     * Specifies the file name.
+     * @param fileName the file name.
+     * @param command the command.
+     */
+    protected final void immutableSetFileName(@NotNull final String fileName, @NotNull final QueryJCommand command)
+    {
+        new QueryJCommandWrapper<String>(command).setSetting("fileName", fileName);
+    }
+
+    /**
      * Specifies the template defs.
      * @param templateDefs the list of {@link TemplateDef}s.
      */
