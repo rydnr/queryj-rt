@@ -275,6 +275,16 @@ public class AbstractTemplatePackagingContext
     }
 
     /**
+     * Retrieves the root dir.
+     * @return such folder.
+     */
+    @NotNull
+    protected File getRootDir(@NotNull final QueryJCommand command)
+    {
+        return getRootDir(getCommand());
+    }
+
+    /**
      * Retrieves the output dir.
      * @return such folder.
      */
