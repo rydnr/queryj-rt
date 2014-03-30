@@ -144,11 +144,6 @@ public abstract class TemplatePackagingBuildHandler
 
         @NotNull final File rootDir = retrieveRootDir(parameters);
 
-        @NotNull final String jdbcDriver = retrieveJdbcDriver(parameters);
-        @NotNull final String jdbcUrl = retrieveJdbcUrl(parameters);
-        @NotNull final String jdbcUsername = retrieveJdbcUsername(parameters);
-        @NotNull final String jdbcPassword = retrieveJdbcPassword(parameters);
-
         return
             new GlobalTemplateContextImpl(
                 buildFilename(templateDefs, templateName),
