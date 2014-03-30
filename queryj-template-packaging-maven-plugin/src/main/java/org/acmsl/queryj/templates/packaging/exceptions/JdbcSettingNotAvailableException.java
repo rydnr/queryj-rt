@@ -106,6 +106,10 @@ public class JdbcSettingNotAvailableException
             return m__Key;
         }
 
+        /**
+         * {@inheritDoc}
+         */
+        @NotNull
         @Override
         public String toString()
         {
