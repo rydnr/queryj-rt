@@ -1,5 +1,5 @@
 /*
-                        QueryJ Template Packgaing Maven Plugin
+                        QueryJ Template Packaging Maven Plugin
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
