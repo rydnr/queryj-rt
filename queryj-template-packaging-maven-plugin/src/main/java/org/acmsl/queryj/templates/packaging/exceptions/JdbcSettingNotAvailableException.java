@@ -81,6 +81,7 @@ public class JdbcSettingNotAvailableException
 
         private JdbcSetting(@NotNull final String key)
         {
+
         }
     }
     /**
