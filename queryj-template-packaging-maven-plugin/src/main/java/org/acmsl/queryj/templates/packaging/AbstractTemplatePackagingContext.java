@@ -348,7 +348,7 @@ public class AbstractTemplatePackagingContext
 
         if (result == null)
         {
-            throw new JdbcSettingNotAvailableException(JdbcSetting.DRIVER);
+            throw new JdbcSettingNotAvailableException(JdbcSettingNotAvailableException.JdbcSetting.DRIVER);
         }
 
         return result;
