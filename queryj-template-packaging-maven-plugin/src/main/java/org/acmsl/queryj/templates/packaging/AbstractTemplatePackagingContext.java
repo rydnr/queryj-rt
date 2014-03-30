@@ -45,12 +45,8 @@ import org.acmsl.queryj.QueryJCommand;
  */
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.exceptions.FileNameNotAvailableException;
-import org.acmsl.queryj.api.exceptions.JdbcDriverNotFoundException;
-import org.acmsl.queryj.api.exceptions.MissingOutputFolderException;
-import org.acmsl.queryj.api.exceptions.OutputDirIsNotAFolderException;
 import org.acmsl.queryj.api.exceptions.PackageNameNotAvailableException;
 import org.acmsl.queryj.templates.packaging.exceptions.JdbcSettingNotAvailableException;
-import org.acmsl.queryj.templates.packaging.exceptions.JdbcSettingNotAvailableException.JdbcSetting;
 import org.acmsl.queryj.templates.packaging.exceptions.OutputDirNotAvailableException;
 import org.acmsl.queryj.templates.packaging.exceptions.RootDirNotAvailableException;
 import org.acmsl.queryj.templates.packaging.exceptions.TemplateNameNotAvailableException;
