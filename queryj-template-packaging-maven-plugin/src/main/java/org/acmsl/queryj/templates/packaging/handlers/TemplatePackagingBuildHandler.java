@@ -136,7 +136,7 @@ public abstract class TemplatePackagingBuildHandler
         @NotNull final String jdbcPassword = retrieveJdbcPassword(parameters);
 //        @NotNull final String version = retrieveVersion(parameters);
 
-        @NotNull final QueryJCommandWrapper<TemplateDef<String>>
+        @NotNull final QueryJCommandWrapper<TemplateDef<String>>()
         return
             new DefaultTemplatePackagingContext(
                 templateDef,
