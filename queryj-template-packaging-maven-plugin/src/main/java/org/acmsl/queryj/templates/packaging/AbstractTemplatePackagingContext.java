@@ -287,7 +287,7 @@ public class AbstractTemplatePackagingContext
      * @return such folder.
      */
     @NotNull
-    public File getOutputDir()
+    protected File getOutputDir(@NotNull final QueryJCommand command)
     {
         return getOutputDir(getCommand());
     }
