@@ -79,7 +79,9 @@ public class JdbcSettingNotAvailableException
          */
         PASSWORD("password");
 
-
+        private JdbcSetting()
+        {
+        }
     }
     /**
      * Creates a {@code TemplatePackagingNonCheckedException} with given message.
