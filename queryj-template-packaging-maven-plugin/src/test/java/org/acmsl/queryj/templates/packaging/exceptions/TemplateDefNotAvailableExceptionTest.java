@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for TemplateDefNotAvailableException.
  *
  * Date: 2014/03/30
  * Time: 22:37
