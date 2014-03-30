@@ -107,7 +107,7 @@ public class JdbcSettingNotAvailableExceptionTest
     }
 
     /**
-     * Tests the message key is defined for Spanish and English for the "JDBC driver" setting.
+     * Tests the message key is defined for Spanish and English for the "JDBC password" setting.
      */
     @Test
     public void jdbc_password_exception_message_is_defined_in_Spanish_and_English()
