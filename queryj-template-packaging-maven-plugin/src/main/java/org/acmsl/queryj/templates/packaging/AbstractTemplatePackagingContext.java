@@ -381,7 +381,7 @@ public class AbstractTemplatePackagingContext
         {
             throw
                 new JdbcSettingNotAvailableException(
-                    JdbcSettingNotAvailableException.JdbcSetting.DRIVER);
+                    JdbcSettingNotAvailableException.JdbcSetting.URL);
         }
 
         return result;
