@@ -60,5 +60,11 @@ public class OutputDirNotAvailableException
      */
     private static final long serialVersionUID = -9208868942257840824L;
 
-
+    /**
+     * Creates a new instance.
+     */
+    public OutputDirNotAvailableException()
+    {
+        super("OutputDir.not.available");
+    }
 }
