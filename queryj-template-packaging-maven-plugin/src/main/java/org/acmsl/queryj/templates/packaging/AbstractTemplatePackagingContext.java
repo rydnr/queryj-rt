@@ -375,7 +375,7 @@ public class AbstractTemplatePackagingContext
     protected String getJdbcUrl(@NotNull final QueryJCommand command)
     {
         @Nullable final String result =
-            new QueryJCommandWrapper<String>(command).getSetting("jdbcDriver");
+            new QueryJCommandWrapper<String>(command).getSetting("jdbcUrl");
 
         if (result == null)
         {
