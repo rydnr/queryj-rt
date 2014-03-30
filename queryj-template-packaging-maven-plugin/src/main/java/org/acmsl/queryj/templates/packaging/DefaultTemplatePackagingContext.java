@@ -89,7 +89,6 @@ public class DefaultTemplatePackagingContext
     public DefaultTemplatePackagingContext(@NotNull final QueryJCommand command)
     {
         super(command);
-        immutableSetTemplateDef(templateDef);
     }
 
     /**
