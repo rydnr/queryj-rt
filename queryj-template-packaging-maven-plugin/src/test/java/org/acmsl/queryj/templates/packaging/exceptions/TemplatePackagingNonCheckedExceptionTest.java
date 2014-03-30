@@ -70,7 +70,7 @@ public class TemplatePackagingNonCheckedExceptionTest
     }
 
     @Test
-    public void customizes_the_bundle()
+    public void customizes_the_system_property()
     {
         @NotNull final TemplatePackagingNonCheckedException instance =
             new TemplatePackagingNonCheckedException("bla") {};
