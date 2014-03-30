@@ -442,7 +442,7 @@ public class AbstractTemplatePackagingContext
         {
             throw
                 new JdbcSettingNotAvailableException(
-                    JdbcSettingNotAvailableException.JdbcSetting.USERNAME);
+                    JdbcSetting.PASSWORD);
         }
 
         return result;
