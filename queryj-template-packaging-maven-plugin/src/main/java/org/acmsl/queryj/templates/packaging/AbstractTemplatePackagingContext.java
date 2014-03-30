@@ -419,10 +419,9 @@ public class AbstractTemplatePackagingContext
     }
 
     /**
-     * Retrieves the JDBC url.
-     * @return the JDBC url.
+     * Retrieves the JDBC password.
+     * @return the JDBC password.
      */
-    @SuppressWarnings("unused")
     @NotNull
     public String getJdbcPassword()
     {
