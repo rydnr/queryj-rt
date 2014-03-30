@@ -103,6 +103,7 @@ public class JdbcSettingNotAvailableException
             return m__Key;
         }
     }
+
     /**
      * Creates a {@code TemplatePackagingNonCheckedException} with given message.
      * @param messageKey the key to build the exception message.
