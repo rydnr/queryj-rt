@@ -64,7 +64,7 @@ public class TemplatePackagingNonCheckedExceptionTest
     public void customizes_the_bundle()
     {
         @NotNull final TemplatePackagingNonCheckedException instance =
-            TemplatePackagingNonCheckedException("bla") {};
+            new TemplatePackagingNonCheckedException("bla") {};
 
         Assert.assertEquals("template-packaging-exceptions", instance.retrieveExceptionsBundleName());
     }
