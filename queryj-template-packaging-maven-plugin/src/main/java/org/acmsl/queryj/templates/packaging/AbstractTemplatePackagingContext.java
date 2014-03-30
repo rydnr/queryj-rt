@@ -268,7 +268,6 @@ public class AbstractTemplatePackagingContext
      * Retrieves the root dir.
      * @return such folder.
      */
-    @SuppressWarnings("unused")
     @NotNull
     public File getRootDir()
     {
