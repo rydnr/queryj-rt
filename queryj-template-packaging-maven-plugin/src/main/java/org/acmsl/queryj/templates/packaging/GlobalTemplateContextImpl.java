@@ -106,7 +106,7 @@ public class GlobalTemplateContextImpl
     }
 
     /**
-     * Specifies the file name.
+     * Specifies the output dir.
      * @param outputDir the output dir.
      * @param command the command.
      */
