@@ -279,7 +279,7 @@ public class AbstractTemplatePackagingContext
     @NotNull
     public File getOutputDir()
     {
-        return this.m__OutputDir;
+        return getOutputDir(getCommand());
     }
 
     /**
