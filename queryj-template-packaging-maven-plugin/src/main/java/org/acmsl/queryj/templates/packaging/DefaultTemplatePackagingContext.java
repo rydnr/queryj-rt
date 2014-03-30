@@ -39,6 +39,7 @@ package org.acmsl.queryj.templates.packaging;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.QueryJCommandWrapper;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -77,9 +78,11 @@ public class DefaultTemplatePackagingContext
      * Creates a new instance.
      * @param command the command.
      */
-    public DefaultTemplatePackagingContext(@NotNull final QueryJCommand command, @NotNull final TemplateDef<String> templateDef)
+    public DefaultTemplatePackagingContext(
+        @NotNull final QueryJCommand command, @NotNull final TemplateDef<String> templateDef)
     {
         super(command);
+        new QueryJCommandWrapper<TemplateDef<String>>(command).setSetting("templateDef", );
     }
 
     /**
