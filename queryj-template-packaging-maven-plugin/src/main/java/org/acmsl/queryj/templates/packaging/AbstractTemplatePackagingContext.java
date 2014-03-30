@@ -283,6 +283,16 @@ public class AbstractTemplatePackagingContext
     }
 
     /**
+     * Retrieves the output dir.
+     * @return such folder.
+     */
+    @NotNull
+    public File getOutputDir()
+    {
+        return getOutputDir(getCommand());
+    }
+
+    /**
      * Retrieves the JDBC url.
      * @return the JDBC url.
      */
