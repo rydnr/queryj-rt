@@ -282,7 +282,15 @@ public class AbstractTemplatePackagingContext
     @NotNull
     protected File getRootDir(@NotNull final QueryJCommand command)
     {
-        return getRootDir(getCommand());
+        @Nullable final File result =
+            new QueryJCommandWrapper<File>(command).getSetting("outputDir");
+
+        if (result == null)
+        {
+            throw new OutputDirNotAvailableException();
+        }
+
+        return result;
     }
 
     /**
