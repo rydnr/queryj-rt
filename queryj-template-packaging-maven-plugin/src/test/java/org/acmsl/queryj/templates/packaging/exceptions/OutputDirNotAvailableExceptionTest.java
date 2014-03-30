@@ -46,6 +46,9 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 
+import java.util.Arrays;
+import java.util.Locale;
+
 /**
  *
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
@@ -55,6 +58,18 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public class OutputDirNotAvailableExceptionTest
 {
-    @Test
-    public void
+    /**
+     * Tests the message key is defined for Spanish and English.
+     */
+    @org.junit.Test
+    public void exception_message_is_defined_in_Spanish_and_English()
+    {
+        @NotNull final TemplateNameNotAvailableException instance = new TemplateNameNotAvailableException();
+
+        for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
+        {
+            // throws a MissingResourceException if the key is not declared.
+            instance.getMessage(t_Locale);
+        }
+    }
 }
