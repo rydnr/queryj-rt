@@ -39,6 +39,7 @@ package org.acmsl.queryj.templates.packaging;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.QueryJCommandWrapper;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -103,7 +104,7 @@ public class GlobalTemplateContextImpl
     protected final void immutableSetTemplateDefs(
         @NotNull final List<TemplateDef<String>> templateDefs, @NotNull final QueryJCommand command)
     {
-        this.m__lTemplateDefs = templateDefs;
+        new QueryJCommandWrapper<List<TemplateDef<String>>>(command).getListSetting(templateDefs);
     }
 
     /**
