@@ -82,7 +82,7 @@ public class DefaultTemplatePackagingContext
         @NotNull final QueryJCommand command, @NotNull final TemplateDef<String> templateDef)
     {
         super(command);
-        new QueryJCommandWrapper<TemplateDef<String>>(command).setSetting("templateDef", );
+        new QueryJCommandWrapper<TemplateDef<String>>(command).setSetting("templateDef", templateDef);
     }
 
     /**
