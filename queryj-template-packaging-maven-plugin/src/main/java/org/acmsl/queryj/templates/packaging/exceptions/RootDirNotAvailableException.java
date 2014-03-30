@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Identifies the bug when the root-dir information is lost.
  *
  * Date: 2014/03/30
  * Time: 20:22
