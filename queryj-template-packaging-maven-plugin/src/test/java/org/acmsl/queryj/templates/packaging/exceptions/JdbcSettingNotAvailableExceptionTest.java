@@ -73,4 +73,52 @@ public class JdbcSettingNotAvailableExceptionTest
             instance.getMessage(t_Locale);
         }
     }
+
+    /**
+     * Tests the message key is defined for Spanish and English for the "JDBC driver" setting.
+     */
+    @Test
+    public void exception_message_is_defined_in_Spanish_and_English()
+    {
+        @NotNull final JdbcSettingNotAvailableException instance =
+            new JdbcSettingNotAvailableException(JdbcSettingNotAvailableException.DRIVER);
+
+        for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
+        {
+            // throws a MissingResourceException if the key is not declared.
+            instance.getMessage(t_Locale);
+        }
+    }
+
+    /**
+     * Tests the message key is defined for Spanish and English for the "JDBC driver" setting.
+     */
+    @Test
+    public void exception_message_is_defined_in_Spanish_and_English()
+    {
+        @NotNull final JdbcSettingNotAvailableException instance =
+            new JdbcSettingNotAvailableException(JdbcSettingNotAvailableException.DRIVER);
+
+        for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
+        {
+            // throws a MissingResourceException if the key is not declared.
+            instance.getMessage(t_Locale);
+        }
+    }
+
+    /**
+     * Tests the message key is defined for Spanish and English for the "JDBC driver" setting.
+     */
+    @Test
+    public void exception_message_is_defined_in_Spanish_and_English()
+    {
+        @NotNull final JdbcSettingNotAvailableException instance =
+            new JdbcSettingNotAvailableException(JdbcSettingNotAvailableException.DRIVER);
+
+        for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
+        {
+            // throws a MissingResourceException if the key is not declared.
+            instance.getMessage(t_Locale);
+        }
+    }
 }
