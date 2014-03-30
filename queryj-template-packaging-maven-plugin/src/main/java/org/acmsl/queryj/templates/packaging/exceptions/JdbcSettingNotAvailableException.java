@@ -105,6 +105,8 @@ public class JdbcSettingNotAvailableException
         {
             return m__Key;
         }
+
+
     }
 
     /**
