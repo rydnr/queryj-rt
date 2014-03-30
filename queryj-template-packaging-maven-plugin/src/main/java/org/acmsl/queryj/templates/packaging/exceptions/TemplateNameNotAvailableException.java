@@ -54,7 +54,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class TemplateNameNotAvailableException
-    extends QueryJNonCheckedException
+    extends TemplatePackagingNonCheckedException
 {
     /**
      * The serial version id.
