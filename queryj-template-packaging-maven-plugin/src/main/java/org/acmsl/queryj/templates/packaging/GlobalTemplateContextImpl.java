@@ -110,7 +110,7 @@ public class GlobalTemplateContextImpl
      * @param fileName the file name.
      * @param command the command.
      */
-    protected final void immutableSetOutputDir(@NotNull final String fileName, @NotNull final QueryJCommand command)
+    protected final void immutableSetOutputDir(@NotNull final File outputDir, @NotNull final QueryJCommand command)
     {
         new QueryJCommandWrapper<String>(command).setSetting("fileName", fileName);
     }
