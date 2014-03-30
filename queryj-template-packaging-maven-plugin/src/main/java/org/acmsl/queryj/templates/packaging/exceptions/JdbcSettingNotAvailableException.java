@@ -79,12 +79,18 @@ public class JdbcSettingNotAvailableException
          */
         PASSWORD("password");
 
+        /**
+         * The key.
+         */
         private final String m__Key;
 
+        /**
+         * Creates a new item.
+         * @param key the key.
+         */
         private JdbcSetting(@NotNull final String key)
         {
             m__Key = key;
-
         }
     }
     /**
