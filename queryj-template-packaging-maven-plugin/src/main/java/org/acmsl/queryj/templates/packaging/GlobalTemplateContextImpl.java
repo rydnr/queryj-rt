@@ -100,7 +100,8 @@ public class GlobalTemplateContextImpl
      * Specifies the template defs.
      * @param templateDefs the list of {@link TemplateDef}s.
      */
-    protected final void immutableSetTemplateDefs(@NotNull final List<TemplateDef<String>> templateDefs, @NotNull final QueryJCommand command)
+    protected final void immutableSetTemplateDefs(
+        @NotNull final List<TemplateDef<String>> templateDefs, @NotNull final QueryJCommand command)
     {
         this.m__lTemplateDefs = templateDefs;
     }
