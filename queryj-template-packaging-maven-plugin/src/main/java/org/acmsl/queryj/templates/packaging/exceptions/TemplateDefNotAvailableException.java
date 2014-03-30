@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Used to represent the required TemplateDef is not available.
  *
  * Date: 2014/03/30
  * Time: 22:39
