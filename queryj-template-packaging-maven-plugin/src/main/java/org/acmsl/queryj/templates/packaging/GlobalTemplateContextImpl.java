@@ -72,12 +72,6 @@ public class GlobalTemplateContextImpl
     private static final long serialVersionUID = -1563568480106519552L;
 
     /**
-     * The list of {@link TemplateDef}s.
-     */
-    @NotNull
-    private List<TemplateDef<String>> m__lTemplateDefs;
-
-    /**
      * Creates a new global context.
      * @param fileName the file name.
      * @param outputDir the output dir.
