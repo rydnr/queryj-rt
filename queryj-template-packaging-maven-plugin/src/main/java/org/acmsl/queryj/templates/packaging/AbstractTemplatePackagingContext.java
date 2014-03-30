@@ -331,7 +331,7 @@ public class AbstractTemplatePackagingContext
     @NotNull
     public String getJdbcDriver()
     {
-        return this.m__strJdbcDriver;
+        return getJdbcDriver(getCommand());
     }
 
     /**
