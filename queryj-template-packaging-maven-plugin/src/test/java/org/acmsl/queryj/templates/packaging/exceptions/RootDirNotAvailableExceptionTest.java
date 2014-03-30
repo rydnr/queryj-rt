@@ -64,7 +64,7 @@ public class RootDirNotAvailableExceptionTest
     @Test
     public void exception_message_is_defined_in_Spanish_and_English()
     {
-        @NotNull final RootDirNotAvailableException instance = new OutputDirNotAvailableException();
+        @NotNull final RootDirNotAvailableException instance = new RootDirNotAvailableException();
 
         for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
         {
