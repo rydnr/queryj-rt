@@ -105,8 +105,8 @@ public class JdbcSettingNotAvailableException
     }
 
     /**
-     * Creates a {@code TemplatePackagingNonCheckedException} with given message.
-     * @param setting the key to build the exception message.
+     * Creates a {@code TemplatePackagingNonCheckedException} with given setting.
+     * @param setting the JDBC setting.
      */
     public JdbcSettingNotAvailableException(@NotNull final JdbcSetting setting)
     {
