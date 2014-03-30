@@ -50,7 +50,6 @@ import org.checkthread.annotations.ThreadSafe;
  */
 import org.jetbrains.annotations.NotNull;
 
-
 /**
  * Non-checked QueryJ exceptions.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
