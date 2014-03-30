@@ -92,7 +92,7 @@ public class GlobalTemplateContextImpl
         super(command);
         immutableSetTemplateDefs(templateDefs, command);
         immutableSetFileName(fileName, command);
-        immutablesetOutputDir(outputDir, command);
+        immutableSetOutputDir(outputDir, command);
     }
 
     /**
