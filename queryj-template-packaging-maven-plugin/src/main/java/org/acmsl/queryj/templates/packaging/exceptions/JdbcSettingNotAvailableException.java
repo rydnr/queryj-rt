@@ -65,7 +65,7 @@ public class JdbcSettingNotAvailableException
         /**
          * The driver.
          */
-        DRIVER
+        DRIVER("driver")
     }
     /**
      * Creates a {@code TemplatePackagingNonCheckedException} with given message.
