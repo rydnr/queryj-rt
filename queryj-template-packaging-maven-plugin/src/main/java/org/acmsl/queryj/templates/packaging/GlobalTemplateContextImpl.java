@@ -97,7 +97,7 @@ public class GlobalTemplateContextImpl
 
     protected final void immutableSetFileName(@NotNull final String fileName, @NotNull final QueryJCommand command)
     {
-        //To change body of created methods use File | Settings | File Templates.
+        new QueryJCommandWrapper<String>(command).setSetting();
     }
 
     /**
