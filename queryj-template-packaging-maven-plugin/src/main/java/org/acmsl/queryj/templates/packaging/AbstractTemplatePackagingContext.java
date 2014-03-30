@@ -238,7 +238,7 @@ public class AbstractTemplatePackagingContext
     @NotNull
     public String getPackageName()
     {
-        return m__strPackageName;
+        return getPackageName(getCommand());
     }
 
     /**
