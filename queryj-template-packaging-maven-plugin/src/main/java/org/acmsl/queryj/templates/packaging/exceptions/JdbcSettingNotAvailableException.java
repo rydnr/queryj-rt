@@ -79,7 +79,7 @@ public class JdbcSettingNotAvailableException
          */
         PASSWORD("password");
 
-        private JdbcSetting()
+        private JdbcSetting(@NotNull final String key)
         {
         }
     }
