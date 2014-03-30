@@ -435,7 +435,17 @@ public class AbstractTemplatePackagingContext
     @NotNull
     protected String getJdbcPassword(@NotNull final QueryJCommand command)
     {
-        return getJdbcPassword(getCommand());
+        @Nullable final String result =
+            new QueryJCommandWrapper<String>(command).getSetting("jdbcUsername");
+
+        if (result == null)
+        {
+            throw
+                new JdbcSettingNotAvailableException(
+                    JdbcSettingNotAvailableException.JdbcSetting.USERNAME);
+        }
+
+        return result;
     }
 
     /**
