@@ -45,6 +45,7 @@ import org.acmsl.queryj.QueryJCommand;
  */
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.exceptions.FileNameNotAvailableException;
+import org.acmsl.queryj.api.exceptions.OutputDirIsNotAFolderException;
 import org.acmsl.queryj.api.exceptions.PackageNameNotAvailableException;
 import org.acmsl.queryj.templates.packaging.exceptions.TemplateNameNotAvailableException;
 import org.jetbrains.annotations.NotNull;
@@ -289,7 +290,13 @@ public class AbstractTemplatePackagingContext
     @NotNull
     protected File getOutputDir(@NotNull final QueryJCommand command)
     {
-        return getOutputDir(getCommand());
+        @Nullable final File result =
+            new QueryJCommandWrapper<File>(command).getSetting("outputDir");
+
+        if (result == null)
+        {
+            throw new OutputDirIsNotAFolderException()
+        }
     }
 
     /**
