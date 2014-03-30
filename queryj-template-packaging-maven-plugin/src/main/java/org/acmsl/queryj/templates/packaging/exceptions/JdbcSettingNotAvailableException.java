@@ -60,6 +60,12 @@ public class JdbcSettingNotAvailableException
      */
     private static final long serialVersionUID = -4549781005748769787L;
 
+    public enum
+    {
+        /**
+         * The driver.
+         */
+    }
     /**
      * Creates a {@code TemplatePackagingNonCheckedException} with given message.
      * @param messageKey the key to build the exception message.
