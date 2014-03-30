@@ -104,7 +104,7 @@ public class GlobalTemplateContextImpl
     protected final void immutableSetTemplateDefs(
         @NotNull final List<TemplateDef<String>> templateDefs, @NotNull final QueryJCommand command)
     {
-        new QueryJCommandWrapper<List<TemplateDef<String>>>(command).setSetting(templateDefs);
+        new QueryJCommandWrapper<List<TemplateDef<String>>>(command).setSetting("templateDefs", templateDefs);
     }
 
     /**
