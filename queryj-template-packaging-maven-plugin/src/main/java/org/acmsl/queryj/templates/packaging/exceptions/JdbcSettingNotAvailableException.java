@@ -60,7 +60,7 @@ public class JdbcSettingNotAvailableException
      */
     private static final long serialVersionUID = -4549781005748769787L;
 
-    public enum
+    public enum JdbcSetting
     {
         /**
          * The driver.
