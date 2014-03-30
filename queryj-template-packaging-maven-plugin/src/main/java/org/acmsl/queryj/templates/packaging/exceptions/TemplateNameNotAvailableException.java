@@ -27,7 +27,8 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Represents the bug when the template name is not longer available.
+ * Description: Represents the bug when the template name is not longer
+ *              available.
  *
  * Date: 2014/03/30
  * Time: 19:52
