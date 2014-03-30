@@ -138,13 +138,4 @@ public class GlobalTemplateContextImpl
 
         return result;
     }
-
-    @NotNull
-    @Override
-    public String toString()
-    {
-        return "{ 'class': 'GlobalTemplateContextImpl', " +
-               "'templateDefs': [ " + m__lTemplateDefs + "], " +
-               "'parent': " + super.toString() + " }";
-    }
 }
