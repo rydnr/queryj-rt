@@ -115,7 +115,7 @@ public class JdbcSettingNotAvailableException
         {
             return
                 "{ \"class\": \"JdbcSetting\""
-                + ", \"key\": \"" + m__Key + '"' +
+                + ", \"key\": \"" + m__Key + '"'
                 + " }";
         }
     }
