@@ -248,7 +248,8 @@ public class AbstractTemplatePackagingContext
     @NotNull
     protected String getPackageName(@NotNull final QueryJCommand command)
     {
-        return getPackageName(getCommand());
+        @Nullable final String result =
+            new QueryJCommandWrapper<String>(command).getSetting()
     }
 
     /**
