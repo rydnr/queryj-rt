@@ -113,7 +113,7 @@ public class JdbcSettingNotAvailableExceptionTest
     public void jdbc_password_exception_message_is_defined_in_Spanish_and_English()
     {
         @NotNull final JdbcSettingNotAvailableException instance =
-            new JdbcSettingNotAvailableException(JdbcSettingNotAvailableException.PASSWORD);
+            new JdbcSettingNotAvailableException(JdbcSettingNotAvailableException.JdbcSetting.PASSWORD);
 
         for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
         {
