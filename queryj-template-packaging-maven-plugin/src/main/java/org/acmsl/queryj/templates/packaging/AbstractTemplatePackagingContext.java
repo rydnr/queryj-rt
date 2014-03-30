@@ -219,7 +219,8 @@ public class AbstractTemplatePackagingContext
     @NotNull
     protected String getFileName(@NotNull final QueryJCommand command)
     {
-        return getFileName(getCommand());
+        @Nullable final String result =
+            new QueryJCommandWrapper<String>(command).getSetting()
     }
 
     /**
