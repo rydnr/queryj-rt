@@ -371,7 +371,7 @@ public class AbstractTemplatePackagingContext
      * @return the JDBC url.
      */
     @NotNull
-        public String getJdbcUrl()
+    protected String getJdbcUrl(@NotNull final QueryJCommand command)
     {
         return getJdbcUrl(getCommand());
     }
