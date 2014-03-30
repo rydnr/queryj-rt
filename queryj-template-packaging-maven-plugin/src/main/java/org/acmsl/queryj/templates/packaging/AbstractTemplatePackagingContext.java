@@ -192,7 +192,7 @@ public class AbstractTemplatePackagingContext
     protected String getTemplateName(@NotNull final QueryJCommand command)
     {
         @Nullable final String result =
-            new QueryJCommandWrapper<String>(command).getSetting("template.name");
+            new QueryJCommandWrapper<String>(command).getSetting("templateName");
 
         if (result == null)
         {
