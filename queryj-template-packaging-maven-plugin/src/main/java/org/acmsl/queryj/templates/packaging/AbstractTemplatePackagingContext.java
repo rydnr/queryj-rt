@@ -429,6 +429,16 @@ public class AbstractTemplatePackagingContext
     }
 
     /**
+     * Retrieves the JDBC password.
+     * @return the JDBC password.
+     */
+    @NotNull
+    public String getJdbcPassword()
+    {
+        return getJdbcPassword(getCommand());
+    }
+
+    /**
      * {@inheritDoc}
      */
     @NotNull
