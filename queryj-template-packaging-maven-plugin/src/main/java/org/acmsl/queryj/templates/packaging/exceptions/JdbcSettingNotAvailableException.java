@@ -80,8 +80,10 @@ public class JdbcSettingNotAvailableException
         PASSWORD("password");
 
         private final String m__Key;
+
         private JdbcSetting(@NotNull final String key)
         {
+            m__Key = key;
 
         }
     }
