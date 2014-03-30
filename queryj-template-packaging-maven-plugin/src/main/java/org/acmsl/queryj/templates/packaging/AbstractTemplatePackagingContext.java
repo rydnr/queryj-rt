@@ -276,6 +276,7 @@ public class AbstractTemplatePackagingContext
 
     /**
      * Retrieves the root dir.
+     * @param command the command.
      * @return such folder.
      */
     @NotNull
