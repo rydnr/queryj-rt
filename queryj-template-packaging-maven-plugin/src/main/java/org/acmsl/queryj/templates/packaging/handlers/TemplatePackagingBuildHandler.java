@@ -292,25 +292,6 @@ public abstract class TemplatePackagingBuildHandler
     }
 
     /**
-     * Retrieves the JDBC user name.
-     * @param parameters the parameters.
-     * @return the information.
-     */
-    @NotNull
-    public String retrieveJdbcUsername(@NotNull final QueryJCommand parameters)
-    {
-        @Nullable final String result =
-            new QueryJCommandWrapper<String>(parameters).getSetting(JDBC_USERNAME);
-
-        if (result == null)
-        {
-            throw new MissingJdbcUserNameAtRuntimeException();
-        }
-
-        return result;
-    }
-
-    /**
      * Retrieves the JDBC password.
      * @param parameters the parameters.
      * @return the password.
