@@ -87,16 +87,7 @@ public class DefaultTemplatePackagingContext
      * @param jdbcPassword the JDBC password.
      */
     public DefaultTemplatePackagingContext(
-        @NotNull final QueryJCommand,
-        @NotNull final String templateName,
-        @NotNull final String fileName,
-        @NotNull final String packageName,
-        @NotNull final File rootDir,
-        @NotNull final File outputDir,
-        @NotNull final String jdbcDriver,
-        @NotNull final String jdbcUrl,
-        @NotNull final String jdbcUsername,
-        @NotNull final String jdbcPassword)
+        @NotNull final QueryJCommand)
     {
         super(null);//templateName, fileName, packageName, rootDir, outputDir, jdbcDriver, jdbcUrl, jdbcUsername, jdbcPassword);
         immutableSetTemplateDef(templateDef);
