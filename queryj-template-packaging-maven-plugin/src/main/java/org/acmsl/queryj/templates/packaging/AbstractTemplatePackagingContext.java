@@ -287,7 +287,7 @@ public class AbstractTemplatePackagingContext
 
         if (result == null)
         {
-            throw new OutputDirNotAvailableException();
+            throw new RootDirNotAvailableException();
         }
 
         return result;
