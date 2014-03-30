@@ -122,10 +122,11 @@ public class GlobalTemplateContextImpl
 
     /**
      * Retrieves the list of {@link TemplateDef}s.
+     * @param command the command.
      * @return such list.
      */
     @NotNull
-    protected List<TemplateDef<String>> getTemplateDefs()
+    protected List<TemplateDef<String>> getTemplateDefs(@NotNull final QueryJCommand command)
     {
         @Nullable final List<TemplateDef<String>> result =
             new QueryJCommandWrapper<TemplateDef<String>>(command).getListSetting("templateDefs");
