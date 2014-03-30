@@ -374,7 +374,17 @@ public class AbstractTemplatePackagingContext
     @NotNull
     protected String getJdbcUrl(@NotNull final QueryJCommand command)
     {
-        return getJdbcUrl(getCommand());
+        @Nullable final String result =
+            new QueryJCommandWrapper<String>(command).getSetting("jdbcDriver");
+
+        if (result == null)
+        {
+            throw
+                new JdbcSettingNotAvailableException(
+                    JdbcSettingNotAvailableException.JdbcSetting.DRIVER);
+        }
+
+        return result;
     }
 
     /**
