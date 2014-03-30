@@ -38,6 +38,7 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.QueryJCommand;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -86,7 +87,7 @@ public class DefaultTemplatePackagingContext
      * @param jdbcPassword the JDBC password.
      */
     public DefaultTemplatePackagingContext(
-        @NotNull final TemplateDef<String> templateDef,
+        @NotNull final QueryJCommand,
         @NotNull final String templateName,
         @NotNull final String fileName,
         @NotNull final String packageName,
