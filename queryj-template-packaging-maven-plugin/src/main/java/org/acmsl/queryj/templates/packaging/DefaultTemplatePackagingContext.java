@@ -61,6 +61,9 @@ public class DefaultTemplatePackagingContext
     extends AbstractTemplatePackagingContext
     implements PerTemplateDefTemplateContext
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = -1034808848836900245L;
 
     /**

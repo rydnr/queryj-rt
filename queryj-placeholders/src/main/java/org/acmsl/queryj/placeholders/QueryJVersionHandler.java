@@ -1,5 +1,5 @@
 /*
-                        QueryJ Placeholders
+                        QueryJ Core
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -23,27 +23,28 @@
 
  ******************************************************************************
  *
- * Filename: JndiLocationFillHandler.java
+ * Filename: QueryJVersionHandler.java
  *
- * Author: Jose San Leandro Armendariz (chous)
+ * Author: Jose San Leandro Armendariz
  *
- * Description: Resolves "jndi_location" placeholders.
+ * Description: 
  *
- * Date: 6/25/12
- * Time: 5:05 AM
+ * Date: 2014/03/30
+ * Time: 18:41
  *
  */
 package org.acmsl.queryj.placeholders;
 
 /*
- * Importing some project classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.api.QueryJTemplateContext;
 
 /*
- * Importing some JetBrains annotations.
+ * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /*
  * Importing checkthread.org annotations.
@@ -51,50 +52,49 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
- * Resolves "jndi_location" placeholders.
- * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
+ *
+ * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
- * Created: 2012/06/25
+ * Created: 2014/03/30 18:41
  */
 @ThreadSafe
-@SuppressWarnings("unused")
-public class JndiLocationFillHandler
+public class QueryJVersionHandler
     extends AbstractDecoratedStringHandler<QueryJTemplateContext>
 {
     /**
      * The serial version id.
      */
-    private static final long serialVersionUID = -4111639313234855152L;
+    private static final long serialVersionUID = -7009997981120209866L;
 
     /**
-     * Creates a {@link JndiLocationFillHandler} with given context.
-     * @param context the {@link org.acmsl.queryj.api.QueryJTemplateContext context}.
+     * Creates a new instance wrapping given context.
+     * @param context the context.
      */
-    public JndiLocationFillHandler(@NotNull final QueryJTemplateContext context)
+    public QueryJVersionHandler(@NotNull final QueryJTemplateContext context)
     {
         super(context);
     }
 
     /**
-     * Resolves the actual value using given {@link org.acmsl.queryj.api.QueryJTemplateContext context}.
-     * @param context the {@link org.acmsl.queryj.api.QueryJTemplateContext context}.
-     * @return such value.
-     */
-    @NotNull
-    @Override
-    protected String resolveContextValue(@NotNull final QueryJTemplateContext context)
-    {
-        return context.getJndiLocation();
-    }
-
-    /**
-     * Retrieves the placeholder.
+     * Retrieves "version".
      * @return such placeholder.
      */
     @NotNull
     @Override
     public String getPlaceHolder()
     {
-        return "jndi_location";
+        return "version";
+    }
+
+
+    /**
+     * Retrieves the QueryJ version.
+     * @return such value.
+     */
+    @Nullable
+    @Override
+    protected String resolveContextValue(@NotNull final QueryJTemplateContext context)
+    {
+        return context.getVersion();
     }
 }
