@@ -324,8 +324,8 @@ public class AbstractTemplatePackagingContext
     }
 
     /**
-     * Retrieves the JDBC url.
-     * @return the JDBC url.
+     * Retrieves the JDBC driver.
+     * @return the JDBC driver.
      */
     @NotNull
     public String getJdbcDriver()
