@@ -216,7 +216,7 @@ public class AbstractTemplatePackagingContext
      * @return such information.
      */
     @NotNull
-    public String getFileName()
+    protected String getFileName(@NotNull final QueryJCommand command)
     {
         return getFileName(getCommand());
     }
