@@ -44,6 +44,7 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.Locale;
@@ -60,7 +61,7 @@ public class OutputDirNotAvailableExceptionTest
     /**
      * Tests the message key is defined for Spanish and English.
      */
-    @org.junit.Test
+    @Test
     public void exception_message_is_defined_in_Spanish_and_English()
     {
         @NotNull final OutputDirNotAvailableException instance = new OutputDirNotAvailableException();
