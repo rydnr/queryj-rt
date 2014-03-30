@@ -110,6 +110,7 @@ public class DefaultTemplatePackagingContext
 
     /**
      * Retrieves the template def.
+     * @param command the command.
      * @return such instance.
      */
     @NotNull
