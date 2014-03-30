@@ -127,5 +127,4 @@ public class QueryJNonCheckedException
     {
         return QUERYJ_EXCEPTIONS_BUNDLE_PROPERTY;
     }
-
 }
