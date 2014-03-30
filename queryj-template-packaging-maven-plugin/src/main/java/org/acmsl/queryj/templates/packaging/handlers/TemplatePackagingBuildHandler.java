@@ -153,8 +153,6 @@ public abstract class TemplatePackagingBuildHandler
             new GlobalTemplateContextImpl(
                 templateDefs,
                 buildFilename(templateDefs, templateName),
-                outputPackage,
-                rootDir,
                 new File(rootDir.getAbsolutePath()
                          + File.separator + outputPackage.replaceAll("\\.", File.separator)),
                 jdbcDriver,
