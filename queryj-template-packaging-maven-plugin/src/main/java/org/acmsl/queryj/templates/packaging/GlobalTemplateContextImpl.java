@@ -62,6 +62,9 @@ public class GlobalTemplateContextImpl
     extends AbstractTemplatePackagingContext
     implements GlobalTemplateContext
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = -1563568480106519552L;
 
     /**
