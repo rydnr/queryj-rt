@@ -430,6 +430,7 @@ public class AbstractTemplatePackagingContext
 
     /**
      * Retrieves the JDBC password.
+     * @param command the command.
      * @return the JDBC password.
      */
     @NotNull
