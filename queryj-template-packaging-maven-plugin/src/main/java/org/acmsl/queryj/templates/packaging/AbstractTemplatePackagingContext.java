@@ -45,6 +45,7 @@ import org.acmsl.queryj.QueryJCommand;
  */
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.exceptions.FileNameNotAvailableException;
+import org.acmsl.queryj.api.exceptions.JdbcDriverNotFoundException;
 import org.acmsl.queryj.api.exceptions.MissingOutputFolderException;
 import org.acmsl.queryj.api.exceptions.OutputDirIsNotAFolderException;
 import org.acmsl.queryj.api.exceptions.PackageNameNotAvailableException;
@@ -345,7 +346,7 @@ public class AbstractTemplatePackagingContext
 
         if (result == null)
         {
-            throw new
+            throw new JdbcDriverNotFoundException();
         }
 
     }
