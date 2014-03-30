@@ -49,6 +49,8 @@ import org.acmsl.queryj.api.exceptions.JdbcDriverNotFoundException;
 import org.acmsl.queryj.api.exceptions.MissingOutputFolderException;
 import org.acmsl.queryj.api.exceptions.OutputDirIsNotAFolderException;
 import org.acmsl.queryj.api.exceptions.PackageNameNotAvailableException;
+import org.acmsl.queryj.templates.packaging.exceptions.JdbcSettingNotAvailableException;
+import org.acmsl.queryj.templates.packaging.exceptions.JdbcSettingNotAvailableException.JdbcSetting;
 import org.acmsl.queryj.templates.packaging.exceptions.OutputDirNotAvailableException;
 import org.acmsl.queryj.templates.packaging.exceptions.RootDirNotAvailableException;
 import org.acmsl.queryj.templates.packaging.exceptions.TemplateNameNotAvailableException;
@@ -346,7 +348,7 @@ public class AbstractTemplatePackagingContext
 
         if (result == null)
         {
-            throw new JdbcSettingNotAvailableException();
+            throw new JdbcSettingNotAvailableException(JdbcSetting.DRIVER);
         }
 
         return result;
