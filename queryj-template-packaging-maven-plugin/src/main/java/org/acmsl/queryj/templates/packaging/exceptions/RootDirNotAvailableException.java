@@ -60,5 +60,11 @@ public class RootDirNotAvailableException
      */
     private static final long serialVersionUID = 1517138699849500608L;
 
-
+    /**
+     * Creates a new instance.
+     */
+    public RootDirNotAvailableException()
+    {
+        super("RootDir.not.available");
+    }
 }
