@@ -90,7 +90,6 @@ public abstract class TemplatePackagingNonCheckedException
 
     /**
      * Retrieves the exceptions bundle.
-     *
      * @return such bundle name.
      */
     @NotNull
