@@ -45,6 +45,7 @@ import org.acmsl.queryj.QueryJCommand;
  */
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.exceptions.FileNameNotAvailableException;
+import org.acmsl.queryj.api.exceptions.MissingOutputFolderException;
 import org.acmsl.queryj.api.exceptions.OutputDirIsNotAFolderException;
 import org.acmsl.queryj.api.exceptions.PackageNameNotAvailableException;
 import org.acmsl.queryj.templates.packaging.exceptions.TemplateNameNotAvailableException;
@@ -295,8 +296,10 @@ public class AbstractTemplatePackagingContext
 
         if (result == null)
         {
-            throw new OutputDirIsNotAFolderException()
+            throw new MissingOutputFolderException();
         }
+
+        return result;
     }
 
     /**
