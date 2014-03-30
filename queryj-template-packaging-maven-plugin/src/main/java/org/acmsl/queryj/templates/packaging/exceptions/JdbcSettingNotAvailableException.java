@@ -73,7 +73,7 @@ public class JdbcSettingNotAvailableException
         /**
          * The url.
          */
-        URL("url"),
+        URL("Url"),
         /**
          * The user name.
          */
