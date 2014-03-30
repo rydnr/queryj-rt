@@ -40,6 +40,7 @@ package org.acmsl.queryj.templates.packaging;
  */
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
+import org.acmsl.queryj.templates.packaging.exceptions.TemplateDefNotAvailableException;
 import org.jetbrains.annotations.NotNull;
 
 /*
