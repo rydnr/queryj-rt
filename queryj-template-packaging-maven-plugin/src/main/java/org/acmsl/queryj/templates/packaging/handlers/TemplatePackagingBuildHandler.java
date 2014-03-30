@@ -138,19 +138,7 @@ public abstract class TemplatePackagingBuildHandler
 
         new QueryJCommandWrapper<TemplateDef<String>>(parameters).setSetting("templateDef", templateDef);
 
-        return
-            new DefaultTemplatePackagingContext(parameters);
-                templateDef,
-                templateName,
-                buildFilename(templateDef, templateName),
-                outputPackage,
-                rootDir,
-                new File(rootDir.getAbsolutePath()
-                    + File.separator + outputPackage.replaceAll("\\.", File.separator)),
-                jdbcDriver,
-                jdbcUrl,
-                jdbcUsername,
-                jdbcPassword);
+        return new DefaultTemplatePackagingContext(parameters);
     }
 
     /**
