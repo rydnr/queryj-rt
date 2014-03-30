@@ -367,6 +367,16 @@ public class AbstractTemplatePackagingContext
     }
 
     /**
+     * Retrieves the JDBC url.
+     * @return the JDBC url.
+     */
+    @NotNull
+    public String getJdbcUrl()
+    {
+        return getJdbcUrl(getCommand());
+    }
+
+    /**
      * Retrieves the JDBC user name.
      * @return the JDBC user name.
      */
