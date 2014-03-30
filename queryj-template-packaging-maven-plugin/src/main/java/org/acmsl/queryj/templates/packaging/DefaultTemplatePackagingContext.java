@@ -90,7 +90,8 @@ public class DefaultTemplatePackagingContext
      * Specifies the template def.
      * @param templateDef the template def.
      */
-    protected final void immutableSetTemplateDef(@NotNull final TemplateDef<String> templateDef, @NotNull final QueryJCommand command)
+    protected final void immutableSetTemplateDef(
+        @NotNull final TemplateDef<String> templateDef, @NotNull final QueryJCommand command)
     {
         new QueryJCommandWrapper<TemplateDef<String>>(command).setSetting("templateDef", templateDef);
     }
