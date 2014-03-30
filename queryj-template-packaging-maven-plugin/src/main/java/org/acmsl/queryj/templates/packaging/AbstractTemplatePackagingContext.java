@@ -296,7 +296,7 @@ public class AbstractTemplatePackagingContext
 
         if (result == null)
         {
-            throw new MissingOutputFolderException();
+            throw new OutputDirNotAvailableException();
         }
 
         return result;
