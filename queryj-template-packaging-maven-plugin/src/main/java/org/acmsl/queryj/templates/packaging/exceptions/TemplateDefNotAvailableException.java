@@ -53,5 +53,10 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class TemplateDefNotAvailableException
+    extends TemplatePackagingNonCheckedException
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = -260541093460266713L;
 }
