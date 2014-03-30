@@ -56,5 +56,10 @@ import org.checkthread.annotations.ThreadSafe;
 public class TemplateNameNotAvailableException
     extends QueryJNonCheckedException
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = -2712500317340565753L;
+
 
 }
