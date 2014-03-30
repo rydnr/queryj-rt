@@ -95,6 +95,11 @@ public class GlobalTemplateContextImpl
         immutableSetOutputDir(outputDir, command);
     }
 
+    private void immutableSetFileName(final String fileName, final QueryJCommand command)
+    {
+        //To change body of created methods use File | Settings | File Templates.
+    }
+
     /**
      * Specifies the template defs.
      * @param templateDefs the list of {@link TemplateDef}s.
