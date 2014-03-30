@@ -77,11 +77,11 @@ public class JdbcSettingNotAvailableException
         /**
          * The user name.
          */
-        USERNAME("username"),
+        USERNAME("Username"),
         /**
          * The password.
          */
-        PASSWORD("password");
+        PASSWORD("Password");
 
         /**
          * The key.
