@@ -91,7 +91,8 @@ public class GlobalTemplateContextImpl
     {
         super(command);
         immutableSetTemplateDefs(templateDefs, command);
-        immutableSetFileName();
+        immutableSetFileName(fileName, command);
+        immutableSetOutputDir(outputDir, command);
     }
 
     /**
