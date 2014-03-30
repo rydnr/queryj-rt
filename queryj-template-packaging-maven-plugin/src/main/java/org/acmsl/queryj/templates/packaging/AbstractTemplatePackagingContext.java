@@ -349,6 +349,7 @@ public class AbstractTemplatePackagingContext
             throw new JdbcDriverNotFoundException();
         }
 
+        return result;
     }
 
     /**
