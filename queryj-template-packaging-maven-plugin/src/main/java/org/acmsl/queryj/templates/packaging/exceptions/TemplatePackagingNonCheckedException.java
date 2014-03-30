@@ -109,6 +109,6 @@ public abstract class TemplatePackagingNonCheckedException
     @Override
     protected String retrieveExceptionsBundleProperty()
     {
-        return "org.acmsl.queryj.templates.packaging.exceptions" super.retrieveExceptionsBundleProperty();
+        return "org.acmsl.queryj.templates.packaging.exceptions";
     }
 }
