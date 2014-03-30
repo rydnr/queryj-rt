@@ -38,7 +38,6 @@ package org.acmsl.queryj.templates.packaging.exceptions;
 /*
  * Importing JetBrains annotations.
  */
-import junit.framework.Test;
 import org.jetbrains.annotations.NotNull;
 
 /*
