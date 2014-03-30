@@ -93,7 +93,7 @@ public class GlobalTemplateContextImpl
         @NotNull final QueryJCommand command)
     {
         super(command);
-        immutableSetTemplateDefs(templateDefs);
+        immutableSetTemplateDefs(templateDefs, command);
     }
 
     /**
