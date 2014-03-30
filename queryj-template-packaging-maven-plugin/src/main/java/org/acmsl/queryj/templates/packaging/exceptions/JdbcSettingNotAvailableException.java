@@ -114,7 +114,7 @@ public class JdbcSettingNotAvailableException
         public String toString()
         {
             return
-                "{ \"class\": \"JdbcSetting\""
+                  "{ \"class\": \"JdbcSetting\""
                 + ", \"key\": \"" + m__Key + '"'
                 + " }";
         }
