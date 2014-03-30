@@ -425,7 +425,7 @@ public class AbstractTemplatePackagingContext
     @NotNull
     public String getJdbcPassword()
     {
-        return this.m__strJdbcPassword;
+        return getJdbcPassword(getCommand());
     }
 
     /**
