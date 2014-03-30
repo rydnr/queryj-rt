@@ -106,7 +106,13 @@ public class JdbcSettingNotAvailableException
             return m__Key;
         }
 
-
+        @Override
+        public String toString()
+        {
+            return "JdbcSetting{" +
+                   "m__Key='" + m__Key + '\'' +
+                   '}';
+        }
     }
 
     /**
