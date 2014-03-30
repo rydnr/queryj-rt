@@ -69,7 +69,7 @@ public class JdbcSettingNotAvailableException
         /**
          * The driver.
          */
-        DRIVER("driver"),
+        DRIVER("Driver"),
         /**
          * The url.
          */
