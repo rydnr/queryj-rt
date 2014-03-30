@@ -151,7 +151,7 @@ public abstract class TemplatePackagingBuildHandler
 
         return
             new GlobalTemplateContextImpl(
-                templateDefs, parameters);
+                templateDefs,
                 buildFilename(templateDefs, templateName),
                 outputPackage,
                 rootDir,
