@@ -97,16 +97,6 @@ public class DefaultTemplatePackagingContext
     }
 
     /**
-     * Specifies the template def.
-     * @param templateDef the template def.
-     */
-    @SuppressWarnings("unused")
-    protected void setTemplateDef(@NotNull final TemplateDef<String> templateDef)
-    {
-        immutableSetTemplateDef(templateDef);
-    }
-
-    /**
      * Retrieves the template def.
      * @return such instance.
      */
