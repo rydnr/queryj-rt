@@ -59,4 +59,12 @@ public class TemplateDefNotAvailableException
      * The serial version id.
      */
     private static final long serialVersionUID = -260541093460266713L;
+
+    /**
+     * Creates a new instance.
+     */
+    public TemplateDefNotAvailableException()
+    {
+        super("TemplateDef.not.available");
+    }
 }
