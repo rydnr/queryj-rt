@@ -368,6 +368,7 @@ public class AbstractTemplatePackagingContext
 
     /**
      * Retrieves the JDBC url.
+     * @param command the command.
      * @return the JDBC url.
      */
     @NotNull
