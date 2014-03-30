@@ -87,6 +87,7 @@ import java.util.regex.Pattern;
 /**
  * Base build handler for Template Packaging templates.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
+ * @param <T> the
  * @since 3.0
  * Created: 2013/08/17 11:00
  */
