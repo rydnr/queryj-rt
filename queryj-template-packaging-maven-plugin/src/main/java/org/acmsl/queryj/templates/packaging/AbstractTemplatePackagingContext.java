@@ -360,7 +360,6 @@ public class AbstractTemplatePackagingContext
      * Retrieves the JDBC url.
      * @return the JDBC url.
      */
-    @SuppressWarnings("unused")
     @NotNull
     public String getJdbcUrl()
     {
