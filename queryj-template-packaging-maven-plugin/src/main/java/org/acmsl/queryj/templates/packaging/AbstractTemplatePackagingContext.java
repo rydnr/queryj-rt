@@ -227,6 +227,8 @@ public class AbstractTemplatePackagingContext
         {
             throw new FileNameNotAvailableException();
         }
+
+        return result;
     }
 
     /**
