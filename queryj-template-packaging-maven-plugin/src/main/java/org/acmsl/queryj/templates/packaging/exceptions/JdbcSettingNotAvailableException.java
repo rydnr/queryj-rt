@@ -27,7 +27,8 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: To be thrown whenever a required JDBC setting is not available
+ *              at runtime.
  *
  * Date: 2014/03/30
  * Time: 22:16
