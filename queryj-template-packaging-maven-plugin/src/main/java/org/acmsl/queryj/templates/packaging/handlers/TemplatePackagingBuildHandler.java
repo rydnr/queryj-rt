@@ -125,17 +125,6 @@ public abstract class TemplatePackagingBuildHandler
         @NotNull final TemplateDef<String> templateDef,
         @NotNull final QueryJCommand parameters)
     {
-        @NotNull final String templateName = retrieveTemplateName(parameters);
-        @NotNull final String outputPackage = retrieveOutputPackage(parameters);
-
-        @NotNull final File rootDir = retrieveRootDir(parameters);
-
-        @NotNull final String jdbcDriver = retrieveJdbcDriver(parameters);
-        @NotNull final String jdbcUrl = retrieveJdbcUrl(parameters);
-        @NotNull final String jdbcUsername = retrieveJdbcUsername(parameters);
-        @NotNull final String jdbcPassword = retrieveJdbcPassword(parameters);
-//        @NotNull final String version = retrieveVersion(parameters);
-
         new QueryJCommandWrapper<TemplateDef<String>>(parameters).setSetting("templateDef", templateDef);
 
         return new DefaultTemplatePackagingContext(parameters);
