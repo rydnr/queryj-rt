@@ -433,7 +433,7 @@ public class AbstractTemplatePackagingContext
      * @return the JDBC password.
      */
     @NotNull
-    public String getJdbcPassword()
+    protected String getJdbcPassword(@NotNull final QueryJCommand command)
     {
         return getJdbcPassword(getCommand());
     }
