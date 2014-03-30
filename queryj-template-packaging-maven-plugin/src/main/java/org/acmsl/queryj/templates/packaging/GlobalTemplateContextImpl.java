@@ -87,8 +87,6 @@ public class GlobalTemplateContextImpl
      */
     public GlobalTemplateContextImpl(
         @NotNull final String fileName,
-        @NotNull final String packageName,
-        @NotNull final File rootDir,
         @NotNull final File outputDir,
         @NotNull final String jdbcDriver,
         @NotNull final String jdbcUrl,
