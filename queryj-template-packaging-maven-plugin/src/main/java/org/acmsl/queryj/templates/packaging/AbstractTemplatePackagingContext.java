@@ -90,60 +90,6 @@ public class AbstractTemplatePackagingContext
     private QueryJCommand m__Command;
 
     /**
-     * The template name.
-     */
-    @NotNull
-    private String m__strTemplateName;
-
-    /**
-     * The file name.
-     */
-    @NotNull
-    private String m__strFileName;
-
-    /**
-     * The package name.
-     */
-    @NotNull
-    private String m__strPackageName;
-
-    /**
-     * The root dir.
-     */
-    @NotNull
-    private File m__RootDir;
-
-    /**
-     * The output dir.
-     */
-    @NotNull
-    private File m__OutputDir;
-
-    /**
-     * The JDBC driver.
-     */
-    @NotNull
-    private String m__strJdbcDriver;
-
-    /**
-     * The JDBC url.
-     */
-    @NotNull
-    private String m__strJdbcUrl;
-
-    /**
-     * The JDBC username.
-     */
-    @NotNull
-    private String m__strJdbcUsername;
-
-    /**
-     * The JDBC password.
-     */
-    @NotNull
-    private String m__strJdbcPassword;
-
-    /**
      * Creates a new instance.
      * @param command the command.
      */
