@@ -55,5 +55,10 @@ import org.checkthread.annotations.ThreadSafe;
 public class RootDirNotAvailableException
     extends TemplatePackagingNonCheckedException
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = 1517138699849500608L;
+
 
 }
