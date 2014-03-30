@@ -127,6 +127,6 @@ public class JdbcSettingNotAvailableException
      */
     public JdbcSettingNotAvailableException(@NotNull final JdbcSetting setting)
     {
-        super("Jdbc" setting.getKey() + ".not.available");
+        super("Jdbc" + setting.getKey() + ".not.available");
     }
 }
