@@ -108,16 +108,6 @@ public class GlobalTemplateContextImpl
     }
 
     /**
-     * Specifies the template defs.
-     * @param templateDefs the list of {@link TemplateDef}s.
-     */
-    @SuppressWarnings("unused")
-    protected void setTemplateDefs(@NotNull final List<TemplateDef<String>> templateDefs)
-    {
-        immutableSetTemplateDefs(templateDefs);
-    }
-
-    /**
      * Retrieves the list of {@link TemplateDef}s.
      * @return such list.
      */
