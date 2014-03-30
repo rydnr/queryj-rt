@@ -297,6 +297,7 @@ public class AbstractTemplatePackagingContext
 
     /**
      * Retrieves the output dir.
+     * @param command the command.
      * @return such folder.
      */
     @NotNull
