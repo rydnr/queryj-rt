@@ -46,6 +46,7 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
 
 /*
  * Importing JDK classes.
@@ -116,6 +117,13 @@ public class DefaultTemplatePackagingContext
     {
         @Nullable final TemplateDef<String> result =
             new QueryJCommandWrapper<TemplateDef<String>>(command).getSetting("templateDef");
+
+        if (result == null)
+        {
+            throw new TemplateDefNotAvailableException();
+        }
+
+        return result;
     }
 
     @NotNull
