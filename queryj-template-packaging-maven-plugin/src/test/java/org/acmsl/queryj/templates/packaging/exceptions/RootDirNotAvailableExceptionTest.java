@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for RootDirNotAvailableException.
  *
  * Date: 2014/03/30
  * Time: 20:21
