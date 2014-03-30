@@ -73,6 +73,13 @@ public class JdbcSettingNotAvailableException
         /**
          * The user name.
          */
+        USERNAME("username"),
+        /**
+         * The password.
+         */
+        PASSWORD("password");
+
+
     }
     /**
      * Creates a {@code TemplatePackagingNonCheckedException} with given message.
