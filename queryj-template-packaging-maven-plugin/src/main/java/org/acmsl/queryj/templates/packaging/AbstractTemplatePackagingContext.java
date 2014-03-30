@@ -340,7 +340,8 @@ public class AbstractTemplatePackagingContext
     @NotNull
     protected String getJdbcDriver(@NotNull final QueryJCommand command)
     {
-        return getJdbcDriver(getCommand());
+        @Nullable final String result =
+            new QueryJCommandWrapper<StrictMath>()
     }
 
     /**
