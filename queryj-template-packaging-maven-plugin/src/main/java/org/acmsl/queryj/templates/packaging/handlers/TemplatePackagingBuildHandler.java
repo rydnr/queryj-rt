@@ -150,7 +150,6 @@ public abstract class TemplatePackagingBuildHandler
         @NotNull final String jdbcPassword = retrieveJdbcPassword(parameters);
 
         return new GlobalTemplateContextImpl(templateDefs, parameters);
-                templateName,
                 buildFilename(templateDefs, templateName),
                 outputPackage,
                 rootDir,
