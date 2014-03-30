@@ -212,6 +212,16 @@ public class AbstractTemplatePackagingContext
     }
 
     /**
+     * Retrieves the file name.
+     * @return such information.
+     */
+    @NotNull
+    public String getFileName()
+    {
+        return getFileName(getCommand());
+    }
+
+    /**
      * Retrieves the package name.
      * @return such information.
      */
