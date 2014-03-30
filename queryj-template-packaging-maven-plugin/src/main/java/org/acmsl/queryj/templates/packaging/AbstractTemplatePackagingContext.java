@@ -341,7 +341,13 @@ public class AbstractTemplatePackagingContext
     protected String getJdbcDriver(@NotNull final QueryJCommand command)
     {
         @Nullable final String result =
-            new QueryJCommandWrapper<StrictMath>()
+            new QueryJCommandWrapper<String>(command).getSetting("jdbcDriver");
+
+        if (result == null)
+        {
+            throw new
+        }
+
     }
 
     /**
