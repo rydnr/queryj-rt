@@ -97,7 +97,7 @@ public abstract class TemplatePackagingNonCheckedException
     @Override
     protected String retrieveExceptionsBundleName()
     {
-        return super.retrieveExceptionsBundleName();
+        return "template-packaging-exceptions";
     }
 
     /**
