@@ -53,5 +53,12 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class OutputDirNotAvailableException
+    extends TemplatePackagingNonCheckedException
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = -9208868942257840824L;
+
+
 }
