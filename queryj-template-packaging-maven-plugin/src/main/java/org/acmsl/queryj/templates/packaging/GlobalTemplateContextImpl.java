@@ -46,6 +46,7 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
 
 /*
  * Importing JDK classes.
@@ -115,6 +116,8 @@ public class GlobalTemplateContextImpl
     @Override
     public List<TemplateDef<String>> getTemplateDefs()
     {
+        @Nullable final List<TemplateDef<String>> result =
+            new QueryJCommandWrapper<TemplateDef<String>>()
         return m__lTemplateDefs;
     }
 
