@@ -97,7 +97,7 @@ public class DefaultTemplatePackagingContext
         @NotNull final String jdbcUsername,
         @NotNull final String jdbcPassword)
     {
-        super(templateName, fileName, packageName, rootDir, outputDir, jdbcDriver, jdbcUrl, jdbcUsername, jdbcPassword);
+        super(null);//templateName, fileName, packageName, rootDir, outputDir, jdbcDriver, jdbcUrl, jdbcUsername, jdbcPassword);
         immutableSetTemplateDef(templateDef);
     }
 
