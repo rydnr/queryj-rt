@@ -53,11 +53,6 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.Nullable;
 
-/*
- * Importing JDK classes.
- */
-import java.io.File;
-
 /**
  * Default implementation for TemplatePackagingContext.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
