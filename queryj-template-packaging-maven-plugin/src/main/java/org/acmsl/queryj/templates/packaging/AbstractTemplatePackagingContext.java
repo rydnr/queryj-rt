@@ -338,7 +338,7 @@ public class AbstractTemplatePackagingContext
      * @return the JDBC driver.
      */
     @NotNull
-    public String getJdbcDriver()
+    protected String getJdbcDriver()
     {
         return getJdbcDriver(getCommand());
     }
