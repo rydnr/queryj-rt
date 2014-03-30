@@ -65,7 +65,7 @@ public class JdbcSettingNotAvailableExceptionTest
     public void jdbc_driver_exception_message_is_defined_in_Spanish_and_English()
     {
         @NotNull final JdbcSettingNotAvailableException instance =
-            new JdbcSettingNotAvailableException(JdbcSettingNotAvailableException.DRIVER);
+            new JdbcSettingNotAvailableException(JdbcSettingNotAvailableException.JdbcSetting.DRIVER);
 
         for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
         {
