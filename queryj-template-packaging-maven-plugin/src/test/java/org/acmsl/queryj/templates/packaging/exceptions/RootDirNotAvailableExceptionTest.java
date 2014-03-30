@@ -50,7 +50,7 @@ import java.util.Arrays;
 import java.util.Locale;
 
 /**
- * Tests for {@link OutputDirNotAvailableException}.
+ * Tests for {@link RootDirNotAvailableException}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/30 20:21
