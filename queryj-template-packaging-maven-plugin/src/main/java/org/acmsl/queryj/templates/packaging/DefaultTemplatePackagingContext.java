@@ -114,7 +114,8 @@ public class DefaultTemplatePackagingContext
     @NotNull
     protected TemplateDef<String> getTemplateDef(@NotNull final QueryJCommand command)
     {
-        return getTemplateDef(getCommand());
+        @Nullable final TemplateDef<String> result =
+            new QueryJCommandWrapper<TemplateDef<String>>(command).getSetting("templateDef");
     }
 
     @NotNull
