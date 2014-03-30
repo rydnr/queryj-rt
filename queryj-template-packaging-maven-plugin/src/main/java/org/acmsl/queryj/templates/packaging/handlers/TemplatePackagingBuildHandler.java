@@ -125,8 +125,6 @@ public abstract class TemplatePackagingBuildHandler
         @NotNull final TemplateDef<String> templateDef,
         @NotNull final QueryJCommand parameters)
     {
-        new QueryJCommandWrapper<TemplateDef<String>>(parameters).setSetting("templateDef", templateDef);
-
         return new DefaultTemplatePackagingContext(templateDef, parameters);
     }
 
