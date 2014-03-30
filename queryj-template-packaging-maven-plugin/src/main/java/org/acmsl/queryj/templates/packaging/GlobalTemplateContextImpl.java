@@ -112,7 +112,7 @@ public class GlobalTemplateContextImpl
      */
     protected final void immutableSetOutputDir(@NotNull final File outputDir, @NotNull final QueryJCommand command)
     {
-        new QueryJCommandWrapper<String>(command).setSetting("fileName", fileName);
+        new QueryJCommandWrapper<String>(command).setSetting("outputDir", outputDir);
     }
 
     /**
