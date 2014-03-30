@@ -79,7 +79,8 @@ public class JdbcSettingNotAvailableException
          */
         PASSWORD("password");
 
-        protected JdbcSetting(@NotNull final String key)
+        private final String m__Key;
+        private JdbcSetting(@NotNull final String key)
         {
 
         }
