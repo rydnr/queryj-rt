@@ -53,5 +53,6 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class RootDirNotAvailableException
+    extends TemplatePackagingNonCheckedException
 {
 }
