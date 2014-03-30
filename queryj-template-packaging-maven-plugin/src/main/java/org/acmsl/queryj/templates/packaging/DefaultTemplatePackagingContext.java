@@ -120,16 +120,4 @@ public class DefaultTemplatePackagingContext
 
         return result;
     }
-
-    /**
-     * {@inheritDoc}
-     */
-    @NotNull
-    @Override
-    public String toString()
-    {
-        return
-              "{ \"class\": \"" + DefaultTemplatePackagingContext.class.getName() + "\""
-            + "', \"command\": \"" + m__Command+ "\" }";
-    }
 }
