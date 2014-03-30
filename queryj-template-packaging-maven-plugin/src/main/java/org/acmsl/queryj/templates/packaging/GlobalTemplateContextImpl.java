@@ -117,6 +117,7 @@ public class GlobalTemplateContextImpl
     @Override
     public List<TemplateDef<String>> getTemplateDefs()
     {
+        return getTemplateDefs(getCommand());
     }
 
     /**
@@ -124,8 +125,7 @@ public class GlobalTemplateContextImpl
      * @return such list.
      */
     @NotNull
-    @Override
-    public List<TemplateDef<String>> getTemplateDefs()
+    protected List<TemplateDef<String>> getTemplateDefs()
     {
         @Nullable final List<TemplateDef<String>> result =
             new QueryJCommandWrapper<TemplateDef<String>>(command).getListSetting("templateDefs");
