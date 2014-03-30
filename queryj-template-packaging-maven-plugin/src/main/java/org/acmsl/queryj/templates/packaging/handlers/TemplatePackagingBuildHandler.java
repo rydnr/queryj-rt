@@ -149,7 +149,8 @@ public abstract class TemplatePackagingBuildHandler
         @NotNull final String jdbcUsername = retrieveJdbcUsername(parameters);
         @NotNull final String jdbcPassword = retrieveJdbcPassword(parameters);
 
-        return new GlobalTemplateContextImpl(templateDefs, parameters);
+        return
+            new GlobalTemplateContextImpl(templateDefs, parameters);
                 buildFilename(templateDefs, templateName),
                 outputPackage,
                 rootDir,
