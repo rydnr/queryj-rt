@@ -75,6 +75,6 @@ public class TemplatePackagingNonCheckedExceptionTest
         @NotNull final TemplatePackagingNonCheckedException instance =
             new TemplatePackagingNonCheckedException("bla") {};
 
-        Assert.assertEquals("org.acmsl.queryj.exceptions", instance.retrieveExceptionsBundleProperty());
+        Assert.assertEquals("org.acmsl.queryj.templates.packaging.exceptions", instance.retrieveExceptionsBundleProperty());
     }
 }
