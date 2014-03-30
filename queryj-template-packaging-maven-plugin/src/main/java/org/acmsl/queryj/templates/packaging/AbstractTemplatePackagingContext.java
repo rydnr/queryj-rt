@@ -391,7 +391,6 @@ public class AbstractTemplatePackagingContext
      * Retrieves the JDBC user name.
      * @return the JDBC user name.
      */
-    @SuppressWarnings("unused")
     @NotNull
     public String getJdbcUsername()
     {
