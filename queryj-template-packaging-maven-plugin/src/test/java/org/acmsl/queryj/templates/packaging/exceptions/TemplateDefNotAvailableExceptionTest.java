@@ -64,7 +64,7 @@ public class TemplateDefNotAvailableExceptionTest
     @Test
     public void exception_message_is_defined_in_Spanish_and_English()
     {
-        @NotNull final TemplateDefNotAvailableException instance = new OutputDirNotAvailableException();
+        @NotNull final TemplateDefNotAvailableException instance = new TemplateDefNotAvailableException();
 
         for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
         {
