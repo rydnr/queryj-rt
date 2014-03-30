@@ -82,6 +82,7 @@ public class DefaultTemplatePackagingContext
         @NotNull final TemplateDef<String> templateDef, @NotNull final QueryJCommand command)
     {
         super(command);
+        immutableSetTemplateDef();
         new QueryJCommandWrapper<TemplateDef<String>>(command).setSetting("templateDef", templateDef);
     }
 
