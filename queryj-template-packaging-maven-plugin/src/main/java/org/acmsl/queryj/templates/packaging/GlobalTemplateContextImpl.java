@@ -38,6 +38,7 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.QueryJCommand;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -88,11 +89,8 @@ public class GlobalTemplateContextImpl
     public GlobalTemplateContextImpl(
         @NotNull final String fileName,
         @NotNull final File outputDir,
-        @NotNull final String jdbcDriver,
-        @NotNull final String jdbcUrl,
-        @NotNull final String jdbcUsername,
-        @NotNull final String jdbcPassword,
-        @NotNull final List<TemplateDef<String>> templateDefs)
+        @NotNull final List<TemplateDef<String>> templateDefs,
+        @NotNull final QueryJCommand command)
     {
         super(null);
             //templateName, fileName, packageName, rootDir, outputDir, jdbcDriver, jdbcUrl, jdbcUsername, jdbcPassword);
