@@ -88,7 +88,7 @@ public class DefaultTemplatePackagingContext
      */
     public DefaultTemplatePackagingContext(@NotNull final QueryJCommand command)
     {
-        super(null);//templateName, fileName, packageName, rootDir, outputDir, jdbcDriver, jdbcUrl, jdbcUsername, jdbcPassword);
+        super(command);
         immutableSetTemplateDef(templateDef);
     }
 
