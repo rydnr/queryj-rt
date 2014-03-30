@@ -106,6 +106,16 @@ public class GlobalTemplateContextImpl
     }
 
     /**
+     * Retrieves the file name.
+     * @return such information.
+     */
+    @NotNull
+    public String getFileName()
+    {
+        return getFileName(getCommand());
+    }
+
+    /**
      * Specifies the template defs.
      * @param templateDefs the list of {@link TemplateDef}s.
      */
