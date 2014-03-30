@@ -92,6 +92,16 @@ public class JdbcSettingNotAvailableException
         {
             m__Key = key;
         }
+
+        /**
+         * Retrieves the key.
+         * @return such information.
+         */
+        @NotNull
+        public String getKey()
+        {
+            return m__Key;
+        }
     }
     /**
      * Creates a {@code TemplatePackagingNonCheckedException} with given message.
