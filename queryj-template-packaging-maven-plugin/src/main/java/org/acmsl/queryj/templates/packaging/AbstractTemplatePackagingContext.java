@@ -363,7 +363,7 @@ public class AbstractTemplatePackagingContext
     @NotNull
     public String getJdbcUrl()
     {
-        return this.m__strJdbcUrl;
+        return getJdbcUrl(getCommand());
     }
 
     /**
