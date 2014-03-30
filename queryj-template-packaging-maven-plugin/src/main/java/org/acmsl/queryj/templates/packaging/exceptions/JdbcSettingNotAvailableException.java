@@ -53,5 +53,12 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class JdbcSettingNotAvailableException
+    extends TemplatePackagingNonCheckedException
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = -4549781005748769787L;
+
+
 }
