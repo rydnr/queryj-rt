@@ -244,6 +244,7 @@ public class AbstractTemplatePackagingContext
 
     /**
      * Retrieves the package name.
+     *
      * @return such information.
      */
     @NotNull
