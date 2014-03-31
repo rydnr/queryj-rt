@@ -158,6 +158,7 @@ public abstract class TemplatePackagingBuildHandler
 
         @NotNull final File rootDir = retrieveRootDir(parameters);
 
+        new QueryJCommandWrapper<String>(parameters).setSetting();
         return
             new GlobalTemplateContextImpl(
                 buildFilename(templateDefs, templateName),
