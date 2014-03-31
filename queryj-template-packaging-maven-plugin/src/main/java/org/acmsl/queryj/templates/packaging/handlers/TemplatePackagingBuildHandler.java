@@ -128,7 +128,7 @@ public abstract class TemplatePackagingBuildHandler
         @NotNull final TemplateDef<String> templateDef,
         @NotNull final QueryJCommand parameters)
     {
-        @NotNull final String templateName = retrieveTemplateName(parameters);
+        @NotNull final String tName = retrieveTemplateName(parameters);
         @NotNull final String outputPackage = retrieveOutputPackage(parameters);
         @NotNull final File rootDir = retrieveRootDir(parameters);
 
