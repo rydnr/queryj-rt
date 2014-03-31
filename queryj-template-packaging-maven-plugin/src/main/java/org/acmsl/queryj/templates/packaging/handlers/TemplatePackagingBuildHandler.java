@@ -101,6 +101,9 @@ public abstract class TemplatePackagingBuildHandler
                QueryJCommandHandler<QueryJCommand>,
                TemplatePackagingSettings
 {
+    /**
+     * The regex to match .stg
+     */
     @NotNull
     private static final Pattern STG_EXT = Pattern.compile("\\.stg$");
 
