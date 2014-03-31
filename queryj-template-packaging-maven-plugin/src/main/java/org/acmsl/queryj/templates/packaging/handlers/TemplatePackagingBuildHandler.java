@@ -128,6 +128,7 @@ public abstract class TemplatePackagingBuildHandler
         @NotNull final TemplateDef<String> templateDef,
         @NotNull final QueryJCommand parameters)
     {
+        new QueryJCommandWrapper<File>(parameters).setSetting();
         return new DefaultTemplatePackagingContext(templateDef, parameters);
     }
 
