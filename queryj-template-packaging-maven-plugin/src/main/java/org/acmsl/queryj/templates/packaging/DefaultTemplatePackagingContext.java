@@ -83,6 +83,7 @@ public class DefaultTemplatePackagingContext
     {
         super(command);
         immutableSetTemplateDef(templateDef, command);
+        immutableSetFileName(fileName, command);
         new QueryJCommandWrapper<TemplateDef<String>>(command).setSetting("templateDef", templateDef);
     }
 
