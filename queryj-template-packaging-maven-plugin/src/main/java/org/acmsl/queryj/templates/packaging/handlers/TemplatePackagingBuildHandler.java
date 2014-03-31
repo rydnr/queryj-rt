@@ -170,6 +170,7 @@ public abstract class TemplatePackagingBuildHandler
         new QueryJCommandWrapper<String>(parameters).setSetting("jdbcUrl", retrieveJdbcUrl(parameters);
         new QueryJCommandWrapper<String>(parameters).setSetting("jdbcUsername", retrieveJdbcUsername(parameters));
         new QueryJCommandWrapper<String>(parameters).setSetting("jdbcPassword", retrieveJdbcPassword(parameters));
+
         return
             new GlobalTemplateContextImpl(
                 buildFilename(templateDefs, templateName),
