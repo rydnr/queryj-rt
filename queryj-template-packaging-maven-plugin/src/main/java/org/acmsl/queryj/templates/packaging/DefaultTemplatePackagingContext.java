@@ -104,7 +104,7 @@ public class DefaultTemplatePackagingContext
     protected final void immutableSetOutputDir(
         @NotNull final File outputDir, @NotNull final QueryJCommand command)
     {
-        new QueryJCommandWrapper<String>(command).setSetting("outputDir", outputDir);
+        new QueryJCommandWrapper<File>(command).setSetting("outputDir", outputDir);
     }
 
     /**
