@@ -96,7 +96,6 @@ public class AbstractTemplatePackagingContext
     public AbstractTemplatePackagingContext(@NotNull final QueryJCommand command)
     {
         immutableSetCommand(command);
-        immutableSetTemplateName()
     }
 
     /**
