@@ -101,7 +101,7 @@ public class DefaultTemplatePackagingContext
      * Specifies the file name.
      * @param fileName the file name.
      */
-    protected final void immutableSetFileName(
+    protected final void immutableSetOutputDir(
         @NotNull final String fileName, @NotNull final QueryJCommand command)
     {
         new QueryJCommandWrapper<String>(command).setSetting("fileName", fileName);
