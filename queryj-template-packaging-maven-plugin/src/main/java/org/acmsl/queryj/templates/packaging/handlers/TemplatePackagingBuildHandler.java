@@ -44,6 +44,7 @@ import org.acmsl.queryj.api.handlers.TemplateBuildHandler;
 import org.acmsl.queryj.tools.exceptions.MissingJdbcDriverAtRuntimeException;
 import org.acmsl.queryj.tools.exceptions.MissingJdbcPasswordAtRuntimeException;
 import org.acmsl.queryj.tools.exceptions.MissingJdbcUrlAtRuntimeException;
+import org.acmsl.queryj.tools.exceptions.MissingJdbcUserNameAtRuntimeException;
 import org.acmsl.queryj.tools.exceptions.MissingOutputDirAtRuntimeException;
 import org.acmsl.queryj.tools.handlers.QueryJCommandHandler;
 
@@ -308,6 +309,25 @@ public abstract class TemplatePackagingBuildHandler
         if (result == null)
         {
             throw new MissingJdbcUrlAtRuntimeException();
+        }
+
+        return result;
+    }
+
+    /**
+     * Retrieves the JDBC user name.
+     * @param parameters the parameters.
+     * @return the information.
+     */
+    @NotNull
+    public String retrieveJdbcUsername(@NotNull final QueryJCommand parameters)
+    {
+        @Nullable final String result =
+            new QueryJCommandWrapper<String>(parameters).getSetting(JDBC_USERNAME);
+
+        if (result == null)
+        {
+            throw new MissingJdbcUserNameAtRuntimeException();
         }
 
         return result;
