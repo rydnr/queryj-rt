@@ -71,6 +71,7 @@ public class DefaultTemplatePackagingContext
 
     /**
      * Creates a new instance.
+     * @param templateDef the template def.
      * @param command the command.
      */
     public DefaultTemplatePackagingContext(
