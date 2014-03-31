@@ -99,7 +99,7 @@ public class DefaultTemplatePackagingContext
 
     /**
      * Specifies the output dir.
-     * @param outputDir the file name.
+     * @param outputDir the output dir.
      */
     protected final void immutableSetOutputDir(
         @NotNull final File outputDir, @NotNull final QueryJCommand command)
