@@ -144,7 +144,8 @@ public abstract class TemplatePackagingBuildHandler
         return
             new DefaultTemplatePackagingContext(
                 new File(rootDir.getAbsolutePath() + File.separator + outputPackage.replaceAll("\\.", File.separator)),
-                templateDef, parameters);
+                templateDef,
+                parameters);
     }
 
     /**
