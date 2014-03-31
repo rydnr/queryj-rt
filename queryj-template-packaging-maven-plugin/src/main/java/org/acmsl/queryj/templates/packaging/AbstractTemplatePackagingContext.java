@@ -233,7 +233,7 @@ public class AbstractTemplatePackagingContext
     protected File getRootDir(@NotNull final QueryJCommand command)
     {
         @Nullable final File result =
-            new QueryJCommandWrapper<File>(command).getSetting(OUTPUT_DIR"rootDir");
+            new QueryJCommandWrapper<File>(command).getSetting(OUTPUT_DIR);
 
         if (result == null)
         {
