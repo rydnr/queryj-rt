@@ -53,6 +53,8 @@ import org.jetbrains.annotations.Nullable;
  */
 import org.checkthread.annotations.ThreadSafe;
 
+import java.io.File;
+
 /**
  * Default implementation for TemplatePackagingContext.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
