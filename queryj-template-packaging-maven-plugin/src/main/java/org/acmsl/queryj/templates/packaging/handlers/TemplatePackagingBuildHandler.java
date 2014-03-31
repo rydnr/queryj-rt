@@ -102,7 +102,7 @@ public abstract class TemplatePackagingBuildHandler
                TemplatePackagingSettings
 {
     /**
-     * The regex to match .stg
+     * The regex to match .stg extensions.
      */
     @NotNull
     private static final Pattern STG_EXT = Pattern.compile("\\.stg$");
