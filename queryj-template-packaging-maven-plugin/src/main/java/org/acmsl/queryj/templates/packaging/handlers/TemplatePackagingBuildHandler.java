@@ -133,7 +133,6 @@ public abstract class TemplatePackagingBuildHandler
         @NotNull final String templateName = retrieveTemplateName(parameters);
         @NotNull final String outputPackage = retrieveOutputPackage(parameters);
         @NotNull final File rootDir = retrieveRootDir(parameters);
-        @NotNull final String fileName = buildFilename(templateDef, templateName);
 
         new QueryJCommandWrapper<File>(parameters).setSetting(
             "outputDir",
