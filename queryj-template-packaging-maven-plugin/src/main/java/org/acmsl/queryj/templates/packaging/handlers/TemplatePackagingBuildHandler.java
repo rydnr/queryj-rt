@@ -165,7 +165,6 @@ public abstract class TemplatePackagingBuildHandler
 
         new QueryJCommandWrapper<String>(parameters).setSetting("templateName", templateName);
         new QueryJCommandWrapper<String>(parameters).setSetting("packageName", outputPackage);
-        new QueryJCommandWrapper<File>(parameters).setSetting("rootDir", rootDir);
 
         return
             new GlobalTemplateContextImpl(
