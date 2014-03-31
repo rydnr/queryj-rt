@@ -44,7 +44,6 @@ import org.acmsl.queryj.api.handlers.TemplateBuildHandler;
 import org.acmsl.queryj.tools.exceptions.MissingJdbcDriverAtRuntimeException;
 import org.acmsl.queryj.tools.exceptions.MissingJdbcPasswordAtRuntimeException;
 import org.acmsl.queryj.tools.exceptions.MissingJdbcUrlAtRuntimeException;
-import org.acmsl.queryj.tools.exceptions.MissingJdbcUserNameAtRuntimeException;
 import org.acmsl.queryj.tools.exceptions.MissingOutputDirAtRuntimeException;
 import org.acmsl.queryj.tools.handlers.QueryJCommandHandler;
 
