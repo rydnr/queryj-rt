@@ -165,7 +165,7 @@ public abstract class TemplatePackagingBuildHandler
         new QueryJCommandWrapper<String>(parameters).setSetting("templateName", templateName);
         new QueryJCommandWrapper<String>(parameters).setSetting("packageName", outputPackage);
         new QueryJCommandWrapper<File>(parameters).setSetting("rootDir", rootDir);
-        NotNull final String jdbcDriver = retrieveJdbcDriver(parameters);
+        @NotNull final String jdbcDriver = retrieveJdbcDriver(parameters);
         @NotNull final String jdbcUrl = retrieveJdbcUrl(parameters);
         @NotNull final String jdbcUsername = retrieveJdbcUsername(parameters);
         @NotNull final String jdbcPassword = retrieveJdbcPassword(parameters);
