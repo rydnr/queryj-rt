@@ -99,12 +99,12 @@ public class DefaultTemplatePackagingContext
 
     /**
      * Specifies the file name.
-     * @param fileName the file name.
+     * @param outputDir the file name.
      */
     protected final void immutableSetOutputDir(
-        @NotNull final String fileName, @NotNull final QueryJCommand command)
+        @NotNull final File outputDir, @NotNull final QueryJCommand command)
     {
-        new QueryJCommandWrapper<String>(command).setSetting("fileName", fileName);
+        new QueryJCommandWrapper<String>(command).setSetting("outputDir", outputDir);
     }
 
     /**
