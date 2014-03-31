@@ -168,7 +168,7 @@ public abstract class TemplatePackagingBuildHandler
         new QueryJCommandWrapper<String>(parameters).setSetting("jdbcDriver", retrieveJdbcDriver(parameters));
         retrieveJdbcUrl(parameters);
         retrieveJdbcUsername(parameters);
-        @NotNull final String jdbcPassword = retrieveJdbcPassword(parameters);
+        retrieveJdbcPassword(parameters);
         return
             new GlobalTemplateContextImpl(
                 buildFilename(templateDefs, templateName),
