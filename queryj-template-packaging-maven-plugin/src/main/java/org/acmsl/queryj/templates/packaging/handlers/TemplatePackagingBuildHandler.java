@@ -137,6 +137,8 @@ public abstract class TemplatePackagingBuildHandler
             "outputDir",
             new File(rootDir.getAbsolutePath() + File.separator + outputPackage.replaceAll("\\.", File.separator)));
 
+        new QueryJCommandWrapper<String>(parameters).setSetting("fileName", fileName);
+
         return new DefaultTemplatePackagingContext(templateDef, parameters);
     }
 
