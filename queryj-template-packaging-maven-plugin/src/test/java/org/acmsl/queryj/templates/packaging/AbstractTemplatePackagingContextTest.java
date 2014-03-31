@@ -210,7 +210,7 @@ public class AbstractTemplatePackagingContextTest
         new QueryJCommandWrapper<String>(t_Command).setSetting("jdbcUrl", jdbcUrl);
 
         @NotNull final String jdbcUsername = "jdbc.username";
-        new QueryJCommandWrapper<String>(t_Command).setSetting("jdbcUsername", jdbcUsername);
+        new QueryJCommandWrapper<String>(t_Command).setSetting("jdbcUserName", jdbcUsername);
 
         @NotNull final String jdbcPassword = "jdbc.password";
         new QueryJCommandWrapper<String>(t_Command).setSetting("jdbcPassword", jdbcPassword);
