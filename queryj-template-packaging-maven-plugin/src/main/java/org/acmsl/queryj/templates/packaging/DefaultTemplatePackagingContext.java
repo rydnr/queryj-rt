@@ -98,7 +98,7 @@ public class DefaultTemplatePackagingContext
     }
 
     /**
-     * Specifies the file name.
+     * Specifies the output dir.
      * @param outputDir the file name.
      */
     protected final void immutableSetOutputDir(
