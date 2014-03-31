@@ -128,7 +128,8 @@ public abstract class TemplatePackagingBuildHandler
         @NotNull final TemplateDef<String> templateDef,
         @NotNull final QueryJCommand parameters)
     {
-        new QueryJCommandWrapper<File>(parameters).setSetting("outputDir", );
+        new QueryJCommandWrapper<File>(parameters).setSetting("outputDir", new File(rootDir.getAbsolutePath()
+                    + File.separator + outputPackage.replaceAll("\\.", File.separator)),);
         return new DefaultTemplatePackagingContext(templateDef, parameters);
     }
 
