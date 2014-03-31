@@ -142,7 +142,8 @@ public abstract class TemplatePackagingBuildHandler
         new QueryJCommandWrapper<String>(parameters).setSetting("fileName", fileName);
 
         return
-            new DefaultTemplatePackagingContext(templateDef, parameters);
+            new DefaultTemplatePackagingContext(
+                templateDef, parameters);
     }
 
     /**
