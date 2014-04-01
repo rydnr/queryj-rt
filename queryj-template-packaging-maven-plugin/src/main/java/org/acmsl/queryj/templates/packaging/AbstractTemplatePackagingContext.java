@@ -321,7 +321,21 @@ public abstract class AbstractTemplatePackagingContext
     @NotNull
     public String getJdbcUrl()
     {
-        return getJdbcUrl(getCommand());
+        return
+            getValue(
+                buildJdbcDriverKey(),
+                getCommand(),
+                new JdbcSettingNotAvailableException(JdbcSettingNotAvailableException.JdbcSetting.DRIVER));
+    }
+
+    /**
+     * Builds the JDBC driver key.
+     * @return such key.
+     */
+    @NotNull
+    protected String buildJdbcDriverKey()
+    {
+        return "jdbcDriver@" + hashCode();
     }
 
     /**
