@@ -68,7 +68,6 @@ import org.checkthread.annotations.ThreadSafe;
  */
 import java.io.File;
 import java.io.Serializable;
-import java.util.List;
 
 /**
  * Abstract implementation of {@link QueryJTemplateContext}.
