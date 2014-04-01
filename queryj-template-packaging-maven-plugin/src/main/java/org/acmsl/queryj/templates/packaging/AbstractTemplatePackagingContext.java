@@ -305,13 +305,6 @@ public abstract class AbstractTemplatePackagingContext
     protected String buildOutputDirKey()
     {
         return "outputDir@" + hashCode();
-
-        if (result == null)
-        {
-            throw new OutputDirNotAvailableException();
-        }
-
-        return result;
     }
 
     /**
