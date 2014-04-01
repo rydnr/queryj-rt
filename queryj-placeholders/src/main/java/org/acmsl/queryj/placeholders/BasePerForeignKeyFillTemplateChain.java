@@ -108,7 +108,7 @@ public class BasePerForeignKeyFillTemplateChain
 
         result.add(
             new TemplateContextFillAdapterHandler<>(
-                    new ForeignKeyHandler(context)));
+                new ForeignKeyHandler(context)));
 
         result.add(
             new TemplateContextFillAdapterHandler
