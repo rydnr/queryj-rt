@@ -70,6 +70,9 @@ import org.checkthread.annotations.ThreadSafe;
 public class PerForeignKeyTemplateContext
     extends AbstractQueryJTemplateContext
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = 1350908613901423440L;
 
     /**
