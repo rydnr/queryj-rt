@@ -166,7 +166,7 @@ public class AbstractQueryJTemplateContextTest
     @Test
     public void implementMarkerInterfaces_is_available()
     {
-        @NotNull final AbstractQueryJTemplateTemplateContext instance = createContext();
+        @NotNull final AbstractQueryJTemplateContext instance = createContext();
 
         Assert.assertFalse(instance.getImplementMarkerInterfaces());
     }
