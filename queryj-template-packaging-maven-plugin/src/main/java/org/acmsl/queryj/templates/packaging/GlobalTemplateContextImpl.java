@@ -97,7 +97,7 @@ public class GlobalTemplateContextImpl
     @Override
     public List<TemplateDef<String>> getTemplateDefs()
     {
-        return getTemplateDefs(getCommand());
+        return getValue(buildTemplateDefsKey(), getCommand());
     }
 
     /**
