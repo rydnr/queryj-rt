@@ -196,6 +196,7 @@ public class AbstractTemplatePackagingContextTest
         @NotNull final File rootDir = new File(".");
         @NotNull final File outputDir = new File("target");
         @NotNull final String jdbcDriver = "jdbc.driver";
+        @NotNull final String jdbcUrl = "jdbc.url";
 
         @NotNull final AbstractTemplatePackagingContext result =
             new AbstractTemplatePackagingContext(t_Command)
@@ -209,7 +210,6 @@ public class AbstractTemplatePackagingContextTest
             }};
 
 
-        @NotNull final String jdbcUrl = "jdbc.url";
         result.immutableSetValue(result.buildJdbcUrlKey(), jdbcUrl, t_Command);
 
         @NotNull final String jdbcUsername = "jdbc.username";
