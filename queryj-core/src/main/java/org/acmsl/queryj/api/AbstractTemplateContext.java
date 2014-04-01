@@ -164,31 +164,6 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Concatenates given attributes.
-     * @param attributes the attributes.
-     * @return the CSV version of given list.
-     */
-    @NotNull
-    protected String toCsv(@NotNull final List<Attribute<String>> attributes)
-    {
-        @NotNull final StringBuilder result = new StringBuilder();
-
-        for (@Nullable final Attribute<String> t_Attribute : attributes)
-        {
-            if (t_Attribute != null)
-            {
-                if (result.length() > 0)
-                {
-                    result.append(",");
-                }
-                result.append(t_Attribute.getName());
-            }
-        }
-
-        return result.toString();
-    }
-
-    /**
      * {@inheritDoc}
      */
     @Override
