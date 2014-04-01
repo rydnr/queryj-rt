@@ -131,24 +131,6 @@ public class PerTableTemplateContext
     }
 
     /**
-     * Retrieves the table name.
-     * @return such name.
-     */
-    @NotNull
-    protected String getTableName(@NotNull final QueryJCommand command)
-    {
-        @Nullable final String result =
-            new QueryJCommandWrapper<String>(command).getSetting(TABLE_NAME);
-
-        if (result == null)
-        {
-            throw new TableNameNotAvailableException();
-        }
-
-        return result;
-    }
-
-    /**
      * Retrieves the static values.
      * @return such values.
      */
