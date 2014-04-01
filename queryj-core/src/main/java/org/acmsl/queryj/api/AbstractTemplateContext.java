@@ -45,6 +45,7 @@ import org.acmsl.queryj.api.exceptions.JndiLocationNotAvailableException;
 import org.acmsl.queryj.api.exceptions.PackageNameNotAvailableException;
 import org.acmsl.queryj.api.exceptions.QueryJNonCheckedException;
 import org.acmsl.queryj.api.exceptions.RepositoryNameNotAvailableException;
+import org.acmsl.queryj.api.exceptions.RootDirNotAvailableException;
 import org.acmsl.queryj.api.exceptions.TemplateNameNotAvailableException;
 import org.acmsl.queryj.api.exceptions.VersionNotAvailableException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
@@ -254,7 +255,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     public File getRootDir()
     {
-        return getValue(buildRootDirKey(), getCommand(), new org.acmsl.queryj.templates.packaging.exceptions.RootDirNotAvailableException());
+        return getValue(buildRootDirKey(), getCommand(), new RootDirNotAvailableException());
     }
 
     /**
