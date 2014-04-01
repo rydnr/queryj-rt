@@ -111,9 +111,8 @@ public class BasePerForeignKeyFillTemplateChain
                 new ForeignKeyHandler(context)));
 
         result.add(
-            new TemplateContextFillAdapterHandler
-                <PerForeignKeyTemplateContext, ForeignKeyAttributeTypeImportsHandler,List<String>>(
-                    new ForeignKeyAttributeTypeImportsHandler(context)));
+            new TemplateContextFillAdapterHandler<>(
+                new ForeignKeyAttributeTypeImportsHandler(context)));
 
         return result;
     }
