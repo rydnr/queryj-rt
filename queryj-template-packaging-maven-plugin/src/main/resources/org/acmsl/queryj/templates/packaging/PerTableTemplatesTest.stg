@@ -54,9 +54,6 @@ source(C) ::= <<
   ],
   template="org/acmsl/queryj/templates/PerTableTemplatesTest.stg",
   C=C)><endif>
-<if(C.generation_timestamps_enabled)>
-// Generated on <C.timestamp>
-<endif>
 
 <package_declaration(packageName="cucumber.templates")>
 <checkers_import()>
