@@ -97,16 +97,6 @@ public class DefaultTemplatePackagingContext
     }
 
     /**
-     * Builds the output package key.
-     * @return such key.
-     */
-    @NotNull
-    protected String buildOutputPackageKey()
-    {
-        return "outputPackage@" + hashCode();
-    }
-
-    /**
      * {@inheritDoc}
      */
     @NotNull
