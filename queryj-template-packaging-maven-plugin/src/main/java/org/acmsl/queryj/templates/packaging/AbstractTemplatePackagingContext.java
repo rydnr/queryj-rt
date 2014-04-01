@@ -306,7 +306,7 @@ public abstract class AbstractTemplatePackagingContext
 
     /**
      * Builds the JDBC driver key.
-     * @return the JDBC driver.
+     * @return such key.
      */
     @NotNull
     protected String getJdbcDriver(@NotNull final QueryJCommand command)
