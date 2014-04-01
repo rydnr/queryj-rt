@@ -111,7 +111,7 @@ public class DefaultTemplatePackagingContext
      * Retrieves the file name.
      * @return such information.
      */
-    protected String getFileName()
+    protected String getFileName(@NotNull final QueryJCommand command)
     {
         return new QueryJCommandWrapper<String>(command).getSetting("fileName");
     }
