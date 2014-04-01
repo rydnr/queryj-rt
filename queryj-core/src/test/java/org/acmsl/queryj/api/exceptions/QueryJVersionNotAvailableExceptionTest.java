@@ -56,4 +56,6 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class QueryJVersionNotAvailableExceptionTest
 {
+    queryj-core/src/test/java/org/acmsl/queryj/api/exceptions/QueryJVersionNotAvailableExceptionTest.java
+
 }
