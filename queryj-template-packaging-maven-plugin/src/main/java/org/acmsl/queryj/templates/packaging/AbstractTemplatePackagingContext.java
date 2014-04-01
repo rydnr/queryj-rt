@@ -365,7 +365,7 @@ public abstract class AbstractTemplatePackagingContext
     @NotNull
     public String getVersion()
     {
-        return getValue(buildVersionKey(), getCommand(), )
+        return getValue(buildVersionKey(), getCommand(), new QueryJVersionNotAvailableExcep)
     }
     /**
      * {@inheritDoc}
