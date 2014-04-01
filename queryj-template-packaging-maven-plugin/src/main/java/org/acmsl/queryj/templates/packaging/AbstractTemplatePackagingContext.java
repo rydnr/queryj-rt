@@ -311,7 +311,7 @@ public abstract class AbstractTemplatePackagingContext
     @NotNull
     protected String buildJdbcUrlKey()
     {
-        return TemplatePackagingSettings.JDBC_DRIVER;
+        return TemplatePackagingSettings.JDBC_URL;
     }
 
     /**
