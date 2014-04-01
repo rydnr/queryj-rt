@@ -47,6 +47,7 @@ import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.exceptions.FileNameNotAvailableException;
 import org.acmsl.queryj.api.exceptions.PackageNameNotAvailableException;
+import org.acmsl.queryj.api.exceptions.QueryJNonCheckedException;
 import org.acmsl.queryj.templates.packaging.exceptions.JdbcSettingNotAvailableException;
 import org.acmsl.queryj.templates.packaging.exceptions.OutputDirNotAvailableException;
 import org.acmsl.queryj.templates.packaging.exceptions.RootDirNotAvailableException;
@@ -214,7 +215,7 @@ public abstract class AbstractTemplatePackagingContext
     protected <T> T getValue(
         @NotNull final String key,
         @NotNull final QueryJCommand command,
-        @NotNull final Class<RuntimeException> exceptionClass)
+        @NotNull final Class<QueryJNonCheckedException> exceptionClass)
     {
         @Nullable final T result =
             new QueryJCommandWrapper<T>(command).getSetting(key);
