@@ -300,7 +300,7 @@ public class AbstractQueryJTemplateContextTest
             new AbstractQueryJTemplateContext(t_Command)
                 {{
                     immutableSetValue(buildTemplateNameKey(), "", getCommand());
-                    immutableSetValue(buildFileNameKey(), );
+                    immutableSetValue(buildFileNameKey(), fileName, getCommand());
                 }
                     /**
                      * {@inheritDoc}
