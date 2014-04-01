@@ -75,7 +75,7 @@ import java.io.Serializable;
  * Created: 2013/09/15 06:53
  */
 @ThreadSafe
-public class AbstractTemplatePackagingContext
+public abstract class AbstractTemplatePackagingContext
     implements Serializable
 {
     /**
