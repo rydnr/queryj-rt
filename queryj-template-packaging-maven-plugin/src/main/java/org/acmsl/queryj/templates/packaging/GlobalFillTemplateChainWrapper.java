@@ -50,6 +50,7 @@ import org.acmsl.queryj.placeholders.CopyrightYearsHandler;
 import org.acmsl.queryj.placeholders.CurrentYearHandler;
 import org.acmsl.queryj.placeholders.FileNameHandler;
 import org.acmsl.queryj.placeholders.PackageNameHandler;
+import org.acmsl.queryj.placeholders.QueryJVersionHandler;
 import org.acmsl.queryj.placeholders.SerialVersionUIDHandler;
 import org.acmsl.queryj.placeholders.TemplateNameHandler;
 import org.acmsl.queryj.placeholders.TimestampHandler;
@@ -122,8 +123,7 @@ public class GlobalFillTemplateChainWrapper
         result.add(new JdbcUrlHandler(context));
         result.add(new JdbcUserNameHandler(context));
         result.add(new JdbcPasswordHandler(context));
-
-        result.addAll(getChain().getHandlers());
+        result.add(new QueryJVersionHandler<>(context));
 
         return result;
     }
