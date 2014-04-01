@@ -127,7 +127,7 @@ public class PerTableTemplateContext
     @NotNull
     public String getTableName()
     {
-        return getValue(buildTableNameKey(), getCommand());
+        return getValue(buildTableNameKey(), getCommand(), new TableNameNotAvailableException());
     }
 
     /**
