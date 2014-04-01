@@ -138,7 +138,7 @@ public abstract class AbstractTemplatePackagingContext
     @NotNull
     public String getTemplateName()
     {
-        return getValue(buildTemplateNameKey(), getCommand());
+        return getValue(buildTemplateNameKey(), getCommand(), new TemplateNameNotAvailableException());
     }
 
     /**
