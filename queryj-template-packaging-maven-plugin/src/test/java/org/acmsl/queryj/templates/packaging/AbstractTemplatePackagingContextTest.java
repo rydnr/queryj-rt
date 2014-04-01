@@ -191,7 +191,11 @@ public class AbstractTemplatePackagingContextTest
             new ConfigurationQueryJCommandImpl(new PropertiesConfiguration(), null);
 
         @NotNull final AbstractTemplatePackagingContext result =
-            new AbstractTemplatePackagingContext(t_Command) {};
+            new AbstractTemplatePackagingContext(t_Command)
+            {
+
+            };
+
 
         @Nullable final String templateName = "template";
         result.immutableSetValue(result.buildTemplateNameKey(), templateName, t_Command);
