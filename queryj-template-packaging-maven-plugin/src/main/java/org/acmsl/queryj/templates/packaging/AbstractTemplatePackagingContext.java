@@ -210,7 +210,7 @@ public abstract class AbstractTemplatePackagingContext
      * Retrieves the value.
      * @param key the key.
      * @param command the command.
-     * @param exceptionClass the exception class.
+     * @param exceptionClass the exception to throw.
      * @return such information.
      */
     @NotNull
