@@ -167,7 +167,7 @@ public abstract class AbstractFillTemplateChain<C extends TemplateContext>
     @Override
     public List<?> getHandlers()
     {
-        return getHandlers(getTemplateContext()).addAll(getChain().getHandlers());
+        return getHandlers(getTemplateContext()).addAll(getChain().getHandlers().addAll(getHandlers()));
     }
 
     /**
