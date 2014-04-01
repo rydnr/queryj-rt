@@ -237,7 +237,7 @@ public abstract class AbstractTemplatePackagingContext
     @NotNull
     public String getPackageName()
     {
-        return getValue(buildPackageNameKey(), getCommand(), PackageNameNotAvailableException.class);
+        return getValue(buildPackageNameKey(), getCommand(), new PackageNameNotAvailableException());
     }
 
     /**
