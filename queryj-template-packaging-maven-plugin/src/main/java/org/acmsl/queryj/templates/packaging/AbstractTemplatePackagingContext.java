@@ -146,7 +146,7 @@ public abstract class AbstractTemplatePackagingContext
      * @return such information.
      */
     @NotNull
-    protected String getTemplateName(@NotNull final QueryJCommand command)
+    protected String buildTemplateNameKey()
     {
         @Nullable final String result =
             new QueryJCommandWrapper<String>(command).getSetting("templateName");
