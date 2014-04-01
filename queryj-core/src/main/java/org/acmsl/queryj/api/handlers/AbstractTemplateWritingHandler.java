@@ -85,7 +85,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  * @param <T> the template type.
  * @param <C> the template context type.
- * @param <TG> the template generato
+ * @param <TG> the template generator type.
  */
 @ThreadSafe
 public abstract class AbstractTemplateWritingHandler
