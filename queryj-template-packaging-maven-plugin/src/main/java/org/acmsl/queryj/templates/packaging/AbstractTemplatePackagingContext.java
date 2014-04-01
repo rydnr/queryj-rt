@@ -38,6 +38,7 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.commons.logging.UniqueLogFactory;
 import org.acmsl.queryj.QueryJCommand;
 
 /*
@@ -54,6 +55,7 @@ import org.acmsl.queryj.templates.packaging.exceptions.TemplateNameNotAvailableE
 /*
  * Importing JetBrains annotations.
  */
+import org.apache.commons.logging.Log;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -227,6 +229,12 @@ public abstract class AbstractTemplatePackagingContext
             }
             catch (@NotNull final InstantiationException | IllegalAccessException cannotInstantiateException)
             {
+                @Nullable final Log t_Log = UniqueLogFactory.getLog(AbstractTemplatePackagingContext.class);
+
+                if (t_Log != null)
+                {
+                    t_Log.error(t_ExceptionToThrow);
+                }
             }
 
             if (t_ExceptionToThrow != null)
