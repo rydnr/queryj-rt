@@ -363,6 +363,10 @@ public abstract class AbstractTemplatePackagingContext
         return TemplatePackagingSettings.JDBC_PASSWORD;
     }
 
+    /**
+     * Retrieves the ve
+     * @return
+     */
     @NotNull
     public String getVersion()
     {
