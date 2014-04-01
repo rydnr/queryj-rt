@@ -97,8 +97,8 @@ public class DefaultTemplatePackagingContext
     }
 
     /**
-     * Builds the key to
-     * @return
+     * Builds the output package key.
+     * @return such key.
      */
     @NotNull
     protected String buildOutputPackageKey()
