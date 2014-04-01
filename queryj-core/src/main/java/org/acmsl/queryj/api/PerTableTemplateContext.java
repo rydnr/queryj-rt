@@ -108,6 +108,7 @@ public class PerTableTemplateContext
     {
         super(command);
         immutableSetValue(buildTableNameKey(), tableName, getCommand());
+        immutableSetValue(buildStaticValuesKey(), staticValues, getCommand());
     }
 
     /**
