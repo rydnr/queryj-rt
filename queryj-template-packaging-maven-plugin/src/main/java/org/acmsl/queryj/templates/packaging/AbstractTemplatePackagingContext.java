@@ -372,7 +372,7 @@ public abstract class AbstractTemplatePackagingContext
     {
         return
             getValue(
-                buildJdbcUserNameKey(),
+                buildJdbcPasswordKey(),
                 getCommand(),
                 new JdbcSettingNotAvailableException(JdbcSetting.PASSWORD));
     }
