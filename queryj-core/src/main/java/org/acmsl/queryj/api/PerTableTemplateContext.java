@@ -135,7 +135,7 @@ public class PerTableTemplateContext
      * @return such key.
      */
     @NotNull
-    protected String immutableGetStaticValues()
+    protected String buildStaticValuesKey()
     {
         return immutableGetStaticValues(getCommand());
     }
