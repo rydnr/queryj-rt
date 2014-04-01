@@ -186,26 +186,6 @@ public abstract class AbstractTemplatePackagingContext
     }
 
     /**
-     * Retrieves the version information.
-     * @return such information.
-     */
-    @NotNull
-    public String getVersion()
-    {
-        return getValue(buildVersionKey(), getCommand(), new VersionNotAvailableException());
-    }
-
-    /**
-     * Builds the key for the version.
-     * @return such key.
-     */
-    @NotNull
-    protected String buildVersionKey()
-    {
-        return QueryJSettings.VERSION;
-    }
-
-    /**
      * {@inheritDoc}
      */
     @NotNull
