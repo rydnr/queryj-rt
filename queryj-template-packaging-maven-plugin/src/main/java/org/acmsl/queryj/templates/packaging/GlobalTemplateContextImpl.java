@@ -107,8 +107,7 @@ public class GlobalTemplateContextImpl
     @NotNull
     protected String buildTemplateDefsKey()
     {
-        @Nullable final List<TemplateDef<String>> result =
-            new QueryJCommandWrapper<TemplateDef<String>>(command).getListSetting("templateDefs");
+        return "templateDefs");
 
         if (result == null)
         {
