@@ -163,7 +163,7 @@ public class AbstractTemplatePackagingContext
     @NotNull
     public String getFileName()
     {
-        return getFileName(getCommand());
+        return getFileName(getCommand(), buildFileNameKey());
     }
 
     /**
