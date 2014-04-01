@@ -97,6 +97,8 @@ public class PerTableTemplateContext
 
     /**
      * Creates a {@link PerTableTemplateContext} with given information.
+     * @param tableName the table name.
+     * @param staticValues the static values.
      * @param command the {@link QueryJCommand}.
      */
     public PerTableTemplateContext(
