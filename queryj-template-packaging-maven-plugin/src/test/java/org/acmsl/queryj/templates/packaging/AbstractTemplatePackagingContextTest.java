@@ -198,8 +198,6 @@ public class AbstractTemplatePackagingContextTest
             }};
 
 
-        result.setValue(result.buildTemplateNameKey(), templateName, t_Command);
-
         @NotNull final String fileName = "file.name";
         result.immutableSetValue(result.buildFileNameKey(), fileName, t_Command);
 
