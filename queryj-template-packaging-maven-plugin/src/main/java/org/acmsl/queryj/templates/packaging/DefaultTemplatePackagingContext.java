@@ -104,7 +104,7 @@ public class DefaultTemplatePackagingContext
     @NotNull
     public TemplateDef<String> getTemplateDef()
     {
-        return getValue(getCommand());
+        return getValue(buildTemplateDefKey(), getCommand());
     }
 
     /**
