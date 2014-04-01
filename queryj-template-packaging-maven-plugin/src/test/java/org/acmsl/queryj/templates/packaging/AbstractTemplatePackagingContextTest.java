@@ -202,7 +202,7 @@ public class AbstractTemplatePackagingContextTest
                 immutableSetValue(buildFileNameKey(), fileName, t_Command);
                 immutableSetValue(buildPackageNameKey(), packageName, t_Command);
                 immutableSetValue(buildRootDirKey(), rootDir, t_Command);
-                    result.immutableSetValue(result.buildOutputDirKey(), outputDir, t_Command);
+                immutableSetValue(result.buildOutputDirKey(), outputDir, t_Command);
             }};
 
 
