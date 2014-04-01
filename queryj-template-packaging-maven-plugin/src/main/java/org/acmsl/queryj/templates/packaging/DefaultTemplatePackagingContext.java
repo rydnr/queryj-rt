@@ -107,6 +107,15 @@ public class DefaultTemplatePackagingContext
     }
 
     /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    protected final String buildOutputDirKey()
+    {
+        return "outputDir@" + hashCode();
+    }
+
+    /**
      * Retrieves the template def.
      * @return such instance.
      */
