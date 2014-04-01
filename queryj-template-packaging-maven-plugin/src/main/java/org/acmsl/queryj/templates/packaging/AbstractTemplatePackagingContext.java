@@ -311,8 +311,7 @@ public abstract class AbstractTemplatePackagingContext
     @NotNull
     protected String buildJdbcDriverKey()
     {
-        @Nullable final String result =
-            new QueryJCommandWrapper<String>(command).getSetting("jdbcDriver");
+        return "jdbcDriver");
 
         if (result == null)
         {
