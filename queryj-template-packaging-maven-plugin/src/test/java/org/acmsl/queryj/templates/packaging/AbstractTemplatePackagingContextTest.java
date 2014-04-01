@@ -194,7 +194,7 @@ public class AbstractTemplatePackagingContextTest
         @NotNull final AbstractTemplatePackagingContext result =
             new AbstractTemplatePackagingContext(t_Command)
             {{
-                result.immutableSetValue(result.buildTemplateNameKey(), templateName, t_Command);
+                immutableSetValue(result.buildTemplateNameKey(), templateName, t_Command);
             }};
 
 
