@@ -293,9 +293,6 @@ public class AbstractQueryJTemplateContextTest
         new QueryJCommandWrapper<Boolean>(t_Command).setSetting(
             QueryJSettings.DISABLE_CHECKTHREAD_ANNOTATIONS, disableCheckthreadAnnotations);
 
-        @NotNull final String fileName = "file.name";
-        new QueryJCommandWrapper<String>(t_Command).setSetting("fileName", fileName);
-
         return
             new AbstractQueryJTemplateContext(t_Command)
                 {{
