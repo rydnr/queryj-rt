@@ -62,7 +62,7 @@ import java.util.List;
 /**
  * Wraps a given chain to add generic, stateless placeholders.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
- * @param <C> the
+ * @param <C> the context type.
  * @since 3.0
  * Created: 2013/06/11
  */
