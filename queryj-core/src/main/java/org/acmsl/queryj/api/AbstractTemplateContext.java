@@ -35,6 +35,7 @@ package org.acmsl.queryj.api;
 /*
  * Importing QueryJ Core classes.
  */
+import com.sun.scenario.Settings;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.QueryJSettings;
@@ -265,7 +266,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     protected String buildRootDirKey()
     {
-        return TemplatePackagingSettings.OUTPUT_DIR + "@" + hashCode();
+        return QueryJSettings.OUTPUT_DIR + "@" + hashCode();
     }
 
     /**
