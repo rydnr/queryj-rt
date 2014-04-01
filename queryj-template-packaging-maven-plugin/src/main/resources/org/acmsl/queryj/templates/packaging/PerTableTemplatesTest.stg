@@ -53,7 +53,7 @@ source(C) ::= <<
     description()
   ],
   template="org/acmsl/queryj/templates/PerTableTemplatesTest.stg",
-  C=C.version)><endif>
+  C=C)><endif>
 <if(C.generation_timestamps_enabled)>
 // Generated on <C.timestamp>
 <endif>
