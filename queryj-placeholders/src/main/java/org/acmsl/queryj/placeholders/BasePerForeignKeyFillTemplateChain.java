@@ -107,8 +107,7 @@ public class BasePerForeignKeyFillTemplateChain
         @NotNull final List<FillHandler<?>> result = new ArrayList<>(2);
 
         result.add(
-            new TemplateContextFillAdapterHandler
-                <PerForeignKeyTemplateContext, ForeignKeyHandler,ForeignKeyDecorator>(
+            new TemplateContextFillAdapterHandler<>(
                     new ForeignKeyHandler(context)));
 
         result.add(
