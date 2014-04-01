@@ -194,6 +194,7 @@ public class AbstractTemplatePackagingContextTest
         @NotNull final String fileName = "file.name";
         @NotNull final String packageName = "package.name";
         @NotNull final File rootDir = new File(".");
+        @NotNull final File outputDir = new File("target");
         @NotNull final AbstractTemplatePackagingContext result =
             new AbstractTemplatePackagingContext(t_Command)
             {{
@@ -203,8 +204,6 @@ public class AbstractTemplatePackagingContextTest
                 immutableSetValue(buildRootDirKey(), rootDir, t_Command);
             }};
 
-
-        result.immutableSetValue(result.buildRootDirKey(), rootDir, t_Command);
 
         @NotNull final File outputDir = new File("target");
         result.immutableSetValue(result.buildOutputDirKey(), outputDir, t_Command);
