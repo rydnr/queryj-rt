@@ -176,7 +176,7 @@ public abstract class AbstractFillTemplateChain<C extends TemplateContext>
      * @return such handlers.
      */
     @NotNull
-    protected abstract List<?> getHandlers(@NotNull final C context);
+    protected abstract List<FillHandler<?>> getHandlers(@NotNull final C context);
 
     /**
      * Adds given handler depending on whether it's relevant or not.
