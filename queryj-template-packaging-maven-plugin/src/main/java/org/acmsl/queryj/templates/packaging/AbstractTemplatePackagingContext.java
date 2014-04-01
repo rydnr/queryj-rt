@@ -207,7 +207,7 @@ public abstract class AbstractTemplatePackagingContext
     }
 
     /**
-     * Retrieves the file name.
+     * Retrieves the value.
      * @param command the command.
      * @return such information.
      */
