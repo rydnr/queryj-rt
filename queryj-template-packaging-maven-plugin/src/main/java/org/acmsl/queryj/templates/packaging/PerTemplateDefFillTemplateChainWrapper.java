@@ -117,8 +117,6 @@ public class PerTemplateDefFillTemplateChainWrapper
         result.add(new TemplateNameHandler<>(context));
         result.add(new TemplateDefHandler(context));
 
-        result.addAll(getChain().getHandlers());
-
         return result;
     }
 }
