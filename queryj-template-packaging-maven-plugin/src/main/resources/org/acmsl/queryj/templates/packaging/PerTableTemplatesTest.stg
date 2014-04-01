@@ -52,7 +52,7 @@ source(C) ::= <<
   [
     description()
   ],
-  filename=C.filename,
+  filename=C.fileName,
   template="org/acmsl/queryj/templates/PerTableTemplatesTest.stg",
   version=C.version)><endif>
 <if(C.generation_timestamps_enabled)>
