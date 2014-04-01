@@ -82,7 +82,7 @@ public class DefaultTemplatePackagingContext
         @NotNull final TemplateDef<String> templateDef, @NotNull final QueryJCommand command)
     {
         super(command);
-        immutableSetValue(fileName, buildFileNameKey(), command);
+        immutableSetValue(buildFileNameKey(), fileName, command);
         immutableSetValue(outputDir, buildOutputDirKey(), command);
         immutableSetValue(templateDef, buildTemplateDefKey(), command);
     }
