@@ -82,7 +82,8 @@ public class DefaultTemplatePackagingContext
      * @param command the command.
      */
     public DefaultTemplatePackagingContext(
-        @NotNull
+        @NotNull final String templateName,
+        @NotNull final String outputPackage,
         @NotNull final String fileName,
         @NotNull final File outputDir,
         @NotNull final TemplateDef<String> templateDef, @NotNull final QueryJCommand command)
