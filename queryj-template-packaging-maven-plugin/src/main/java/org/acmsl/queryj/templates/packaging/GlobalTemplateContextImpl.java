@@ -84,7 +84,7 @@ public class GlobalTemplateContextImpl
         @NotNull final QueryJCommand command)
     {
         super(command);
-        immutableSetTemplateDefs(templateDefs, command);
+        immutableSetValue(templateDefs, command);
         immutableSetFileName(fileName, command);
         immutableSetOutputDir(outputDir, command);
     }
