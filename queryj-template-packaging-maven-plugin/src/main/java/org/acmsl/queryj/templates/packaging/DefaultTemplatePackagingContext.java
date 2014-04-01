@@ -104,7 +104,7 @@ public class DefaultTemplatePackagingContext
      */
     @Override
     @NotNull
-    protected String buildFileNameKey(@NotNull final QueryJCommand command)
+    protected String buildFileNameKey()
     {
         return new QueryJCommandWrapper<String>(command).getSetting("fileName");
     }
