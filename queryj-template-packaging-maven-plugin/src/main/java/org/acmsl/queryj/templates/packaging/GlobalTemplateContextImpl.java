@@ -101,7 +101,7 @@ public class GlobalTemplateContextImpl
     }
 
     /**
-     * Retrieves the list of {@link TemplateDef}s.
+     * Builds a key to retrieve the {@link TemplateDef}s.
      * @param command the command.
      * @return such list.
      */
