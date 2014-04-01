@@ -78,7 +78,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class PerTableTemplateContext
-    extends AbstractTemplateContext
+    extends AbstractQueryJTemplateContext
 {
     /**
      * The serial version id.
