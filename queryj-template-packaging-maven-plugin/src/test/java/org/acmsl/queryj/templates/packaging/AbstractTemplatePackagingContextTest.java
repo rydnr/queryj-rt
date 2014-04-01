@@ -198,6 +198,7 @@ public class AbstractTemplatePackagingContextTest
         @NotNull final String jdbcDriver = "jdbc.driver";
         @NotNull final String jdbcUrl = "jdbc.url";
         @NotNull final String jdbcUsername = "jdbc.username";
+        @NotNull final String jdbcPassword = "jdbc.password";
 
         @NotNull final AbstractTemplatePackagingContext result =
             new AbstractTemplatePackagingContext(t_Command)
