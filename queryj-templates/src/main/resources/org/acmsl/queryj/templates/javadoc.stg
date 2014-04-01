@@ -48,7 +48,7 @@ java_header(year, fileName, description, template, timestamp, timestamps_enabled
   @param timestamp_enabled whether the timestamps are allowed or not.
 !>
 /*
-                        QueryJ
+                        QueryJ <version>
 
     Copyright (C) <year>-today Jose San Leandro Armendariz
                               queryj@acm-sl.org
