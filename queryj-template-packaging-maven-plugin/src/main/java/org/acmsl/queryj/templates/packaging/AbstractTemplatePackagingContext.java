@@ -302,7 +302,7 @@ public abstract class AbstractTemplatePackagingContext
      * @return such key.
      */
     @NotNull
-    protected File getOutputDir(@NotNull final QueryJCommand command)
+    protected String buildOutputDirKey(@NotNull final QueryJCommand command)
     {
         @Nullable final File result =
             new QueryJCommandWrapper<File>(command).getSetting("outputDir");
