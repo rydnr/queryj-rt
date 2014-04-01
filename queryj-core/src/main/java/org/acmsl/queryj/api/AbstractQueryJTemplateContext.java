@@ -75,11 +75,6 @@ public abstract class AbstractQueryJTemplateContext
     extends AbstractTemplateContext
 {
     /**
-     * The command.
-     */
-    private QueryJCommand m__Command;
-
-    /**
      * Creates an {@link AbstractTemplateContext} with given information.
      * @param command the {@link org.acmsl.queryj.QueryJCommand} instance.
      */
