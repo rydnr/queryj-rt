@@ -56,7 +56,6 @@ import org.acmsl.queryj.templates.packaging.exceptions.TemplateNameNotAvailableE
 /*
  * Importing JetBrains annotations.
  */
-import org.apache.commons.logging.Log;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
