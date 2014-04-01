@@ -195,6 +195,7 @@ public class AbstractTemplatePackagingContextTest
         @NotNull final String packageName = "package.name";
         @NotNull final File rootDir = new File(".");
         @NotNull final File outputDir = new File("target");
+        @NotNull final String jdbcDriver = "jdbc.driver";
         @NotNull final AbstractTemplatePackagingContext result =
             new AbstractTemplatePackagingContext(t_Command)
             {{
