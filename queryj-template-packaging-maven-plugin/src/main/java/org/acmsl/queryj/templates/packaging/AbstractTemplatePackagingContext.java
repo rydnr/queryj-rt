@@ -294,7 +294,7 @@ public abstract class AbstractTemplatePackagingContext
     @NotNull
     public File getOutputDir()
     {
-        return getValue(getCommand());
+        return getValue(buildOutputDirKey(), getCommand());
     }
 
     /**
