@@ -101,6 +101,7 @@ public class PerTableTemplateContext
      */
     public PerTableTemplateContext(
         @NotNull final String tableName,
+        @NotNull final List<Row<String>> staticValues,
         @NotNull final QueryJCommand command)
     {
         super(command);
