@@ -77,7 +77,7 @@ java_header(year, fileName, description, template, timestamp, timestamps_enabled
 
  ******************************************************************************
  *
- * Author: QueryJ
+ * Author: QueryJ <version>
  *
  * Filename: <fileName>
  *
