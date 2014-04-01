@@ -163,7 +163,7 @@ public abstract class AbstractTemplatePackagingContext
     protected final <T> void immutableSetValue(
         @NotNull final String key, @NotNull final T value, @NotNull final QueryJCommand command)
     {
-        new QueryJCommandWrapper<String>(command).setSetting(key, fileName);
+        new QueryJCommandWrapper<T>(command).setSetting(key, value);
     }
 
     /**
