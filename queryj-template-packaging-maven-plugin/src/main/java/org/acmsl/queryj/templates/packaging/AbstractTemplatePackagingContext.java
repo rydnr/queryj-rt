@@ -314,7 +314,7 @@ public abstract class AbstractTemplatePackagingContext
     @NotNull
     public String getJdbcDriver()
     {
-        return getJdbcDriver(getCommand());
+        return getJdbcDriver(buildJdbcDriverKey(), getCommand(), );
     }
 
     /**
