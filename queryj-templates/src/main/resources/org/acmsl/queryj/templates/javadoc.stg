@@ -37,7 +37,7 @@
 //
 group javadoc;
 
-java_header(year, fileName, description, template, timestamp, timestamps_enabled) ::= <<
+java_header(year, fileName, description, template, timestamp, timestamps_enabled, version) ::= <<
 <!
   Generates the copyright header.
   @param year the current year.
