@@ -256,6 +256,11 @@ public abstract class AbstractTemplatePackagingContext
         return getValue(buildPackageNameKey(), getCommand(), PackageNameNotAvailableException.class);
     }
 
+    /**
+     * Builds the package name.
+     * @return such value.
+     */
+    @NotNull
     protected String buildPackageNameKey()
     {
         return "packageName@" + hashCode();
