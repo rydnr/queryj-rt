@@ -105,6 +105,15 @@ public class DefaultTemplatePackagingContext
     {
         return new QueryJCommandWrapper<String>(command).getSetting("fileName");
     }
+
+    /**
+     * Retrieves the file name.
+     * @return such information.
+     */
+    protected String getFileName()
+    {
+        return new QueryJCommandWrapper<String>(command).getSetting("fileName");
+    }
     /**
      * Specifies the output dir.
      * @param outputDir the output dir.
