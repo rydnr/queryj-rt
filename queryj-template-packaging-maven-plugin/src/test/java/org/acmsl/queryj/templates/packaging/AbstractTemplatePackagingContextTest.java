@@ -208,9 +208,9 @@ public class AbstractTemplatePackagingContextTest
 
         @NotNull final String jdbcDriver = "jdbc.driver";
         result.immutableSetValue(result.buildJdbcDriverKey(), jdbcDriver, t_Command);
-        new QueryJCommandWrapper<String>(t_Command).setSetting("jdbcDriver", jdbcDriver);
 
         @NotNull final String jdbcUrl = "jdbc.url";
+        result.immutableSetValue(result.buildJdbcUrlKey(), jdbcUrl, t_Command);
         new QueryJCommandWrapper<String>(t_Command).setSetting("jdbcUrl", jdbcUrl);
 
         @NotNull final String jdbcUsername = "jdbc.username";
