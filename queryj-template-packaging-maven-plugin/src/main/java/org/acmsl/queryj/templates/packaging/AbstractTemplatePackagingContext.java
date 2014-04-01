@@ -223,7 +223,7 @@ public abstract class AbstractTemplatePackagingContext
 
             try
             {
-                exceptionClass.newInstance();
+                t_ExceptionToThrow = exceptionClass.newInstance();
             }
             catch (@NotNull final InstantiationException | IllegalAccessException cannotInstantiateException)
             {
