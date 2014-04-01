@@ -101,7 +101,10 @@ public class DefaultTemplatePackagingContext
      * Retrieves the file name.
      * @return such information.
      */
-    protected
+    protected String getFileName()
+    {
+        return
+    }
     /**
      * Specifies the output dir.
      * @param outputDir the output dir.
