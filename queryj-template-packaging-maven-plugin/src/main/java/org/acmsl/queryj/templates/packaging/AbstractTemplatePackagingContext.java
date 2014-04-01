@@ -374,7 +374,7 @@ public abstract class AbstractTemplatePackagingContext
             getValue(
                 buildJdbcUserNameKey(),
                 getCommand(),
-                new JdbcSettingNotAvailableException(JdbcSetting.USERNAME));
+                new JdbcSettingNotAvailableException(JdbcSetting.PASSWORD));
     }
 
     /**
