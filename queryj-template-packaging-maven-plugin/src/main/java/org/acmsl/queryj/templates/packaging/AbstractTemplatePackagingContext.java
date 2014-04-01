@@ -208,7 +208,9 @@ public abstract class AbstractTemplatePackagingContext
 
     /**
      * Retrieves the value.
+     * @param key the key.
      * @param command the command.
+     * @param exceptionClass the exception class.
      * @return such information.
      */
     @NotNull
