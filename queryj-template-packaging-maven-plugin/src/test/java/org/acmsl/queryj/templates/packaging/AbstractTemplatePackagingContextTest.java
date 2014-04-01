@@ -216,7 +216,7 @@ public class AbstractTemplatePackagingContextTest
         result.immutableSetValue(result.buildJdbcUserNameKey(), jdbcUsername, t_Command);
 
         @NotNull final String jdbcPassword = "jdbc.password";
-        new QueryJCommandWrapper<String>(t_Command).setSetting("jdbcPassword", jdbcPassword);
+        result.immutableSetValue();
 
         return new AbstractTemplatePackagingContext(t_Command) {};
     }
