@@ -38,7 +38,7 @@
 group javadoc;
 
 java_header(description, template, C) ::= <<
-<java_header_impl(year=C.copyright_years, fileName=fileName, description=description, template=template, timestamp=C.timestamp, version=C.version)>
+<java_header_impl(year=C.copyright_years, fileName=C.fileName, description=description, template=template, timestamp=C.timestamp, version=C.version)>
 >>
 
 java_header_impl(year, fileName, description, template, timestamp, version) ::= <<
