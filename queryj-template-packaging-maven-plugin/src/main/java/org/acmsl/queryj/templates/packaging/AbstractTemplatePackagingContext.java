@@ -173,22 +173,6 @@ public abstract class AbstractTemplatePackagingContext
     }
 
     /**
-     * Retrieves the file name.
-     * @return such information.
-     */
-    @NotNull
-    public String getFileName()
-    {
-        return getValue(buildFileNameKey(), getCommand(), new FileNameNotAvailableException());
-    }
-
-    /**
-     * Builds a file name key.
-     */
-    @NotNull
-    protected abstract String buildFileNameKey();
-
-    /**
      * Retrieves the value.
      * @param key the key.
      * @param command the command.
