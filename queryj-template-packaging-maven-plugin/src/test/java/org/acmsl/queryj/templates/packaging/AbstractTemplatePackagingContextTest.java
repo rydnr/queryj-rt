@@ -41,7 +41,6 @@ package org.acmsl.queryj.templates.packaging;
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.api.AbstractTemplateContext;
 import org.acmsl.queryj.QueryJCommand;
-import org.acmsl.queryj.QueryJCommandWrapper;
 
 /*
  * Importing Apache Commons Configuration classes.
