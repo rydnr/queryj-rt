@@ -283,8 +283,7 @@ public abstract class AbstractTemplatePackagingContext
     @NotNull
     protected String buildRootDirKey()
     {
-        @Nullable final File result =
-            new QueryJCommandWrapper<File>(command).getSetting(TemplatePackagingSettings.OUTPUT_DIR);
+        TemplatePackagingSettings.OUTPUT_DIR + "@" + hashCode();
 
         if (result == null)
         {
