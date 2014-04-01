@@ -38,6 +38,7 @@ package org.acmsl.queryj.api;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.QueryJCommand;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -54,5 +55,42 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public class AbstractQueryJTemplateContext
 {
+    /**
+     * Creates an {@link AbstractTemplateContext} with given information.
+     * @param command the {@link org.acmsl.queryj.QueryJCommand} instance.
+     */
+    protected AbstractTemplateContext(@NotNull final QueryJCommand command)
+    {
+        immutableSetCommand(command);
+    }
+
+    /**
+     * Specifies the command.
+     * @param command the command.
+     */
+    private void immutableSetCommand(@NotNull final QueryJCommand command)
+    {
+        m__Command = command;
+    }
+
+    /**
+     * Specifies the command.
+     * @param command the command.
+     */
+    @SuppressWarnings("unused")
+    protected void setCommand(@NotNull final QueryJCommand command)
+    {
+        immutableSetCommand(command);
+    }
+
+    /**
+     * Retrieves the command.
+     * @return such command.
+     */
+    @NotNull
+    public QueryJCommand getCommand()
+    {
+        return m__Command;
+    }
 
 }
