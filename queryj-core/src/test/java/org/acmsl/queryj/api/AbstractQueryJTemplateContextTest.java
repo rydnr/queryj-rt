@@ -298,7 +298,10 @@ public class AbstractQueryJTemplateContextTest
 
         return
             new AbstractQueryJTemplateContext(t_Command)
-                {
+                {{
+                    immutableSetValue(buildTemplateNameKey(), "", getCommand());
+                    immutableSetValue();
+                }
                     /**
                      * {@inheritDoc}
                      */
