@@ -55,5 +55,10 @@ import org.checkthread.annotations.ThreadSafe;
 public class QueryJVersionNotAvailableException
     extends QueryJNonCheckedException
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = 7586785380952613986L;
+
 
 }
