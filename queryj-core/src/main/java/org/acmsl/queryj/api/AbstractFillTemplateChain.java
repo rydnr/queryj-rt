@@ -218,6 +218,7 @@ public abstract class AbstractFillTemplateChain<C extends TemplateContext>
     {
         return
               "{ \"class\": \"" + AbstractFillTemplateChain.class.getSimpleName() + "\""
+        + ", \"package\": \"org.acmsl.queryj."
             + ", \"templateContext\": \"" + templateContext + "\" }";
     }
 }
