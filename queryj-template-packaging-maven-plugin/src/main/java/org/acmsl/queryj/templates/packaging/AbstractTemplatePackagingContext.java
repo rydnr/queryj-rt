@@ -257,7 +257,7 @@ public abstract class AbstractTemplatePackagingContext
     @NotNull
     public File getRootDir()
     {
-        return getValue(buildRootDirKey(), getCommand(), RootDirNotAvailableException.class);
+        return getValue(buildRootDirKey(), getCommand(), new RootDirNotAvailableException());
     }
 
     /**
