@@ -121,8 +121,7 @@ public class BasePerCustomResultFillTemplateChain
 
         result.add(
             (FillAdapterHandler)
-                new TemplateContextFillAdapterHandler
-                    <PerCustomResultTemplateContext, ResultIdHandler, DecoratedString>(
+                new TemplateContextFillAdapterHandler<>(
                         new ResultIdHandler(context)));
 
         return result;
