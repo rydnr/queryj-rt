@@ -360,7 +360,7 @@ public abstract class AbstractTemplatePackagingContext
     @NotNull
     protected String buildJdbcUrlKey()
     {
-        return "jdbcUrl@" + hashCode();
+        return "jdbcUserName@" + hashCode();
     }
 
     /**
