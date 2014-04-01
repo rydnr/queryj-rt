@@ -44,15 +44,7 @@ import org.acmsl.queryj.api.exceptions.QueryJNonCheckedException;
 import org.acmsl.queryj.api.exceptions.RootDirNotAvailableException;
 import org.acmsl.queryj.api.exceptions.TemplateNameNotAvailableException;
 import org.acmsl.queryj.api.exceptions.VersionNotAvailableException;
-import org.acmsl.queryj.customsql.CustomSqlProvider;
-import org.acmsl.queryj.customsql.exceptions.CustomSqlProviderNotAvailableException;
-import org.acmsl.queryj.customsql.handlers.CustomSqlProviderRetrievalHandler;
-import org.acmsl.queryj.metadata.DecoratorFactory;
-import org.acmsl.queryj.metadata.MetadataManager;
-import org.acmsl.queryj.metadata.vo.Attribute;
-import org.acmsl.queryj.tools.exceptions.MetadataManagerNotAvailableException;
 import org.acmsl.queryj.tools.exceptions.MissingOutputDirAtRuntimeException;
-import org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandler;
 
 /*
  * Importing Apache Commons Lang classes.
