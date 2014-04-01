@@ -188,7 +188,8 @@ public class AbstractTemplatePackagingContextTest
         @NotNull final QueryJCommand t_Command =
             new ConfigurationQueryJCommandImpl(new PropertiesConfiguration(), null);
 
-        return new AbstractTemplatePackagingContext(t_Command) {};
+        AbstractTemplatePackagingContext result =
+            new AbstractTemplatePackagingContext(t_Command) {};
 
         @Nullable final String templateName = "template";
         new QueryJCommandWrapper<String>(t_Command).setSetting("templateName", templateName);
