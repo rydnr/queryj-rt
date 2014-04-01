@@ -39,6 +39,10 @@ package org.acmsl.queryj.templates.packaging;
  * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.QueryJCommand;
+
+/*
+ * Importing QueryJ Template Packaging
+ */
 import org.acmsl.queryj.templates.packaging.exceptions.TemplateDefNotAvailableException;
 
 /*
