@@ -43,6 +43,7 @@ import org.acmsl.queryj.api.exceptions.DecoratorFactoryNotAvailableException;
 import org.acmsl.queryj.api.exceptions.FileNameNotAvailableException;
 import org.acmsl.queryj.api.exceptions.JndiLocationNotAvailableException;
 import org.acmsl.queryj.api.exceptions.PackageNameNotAvailableException;
+import org.acmsl.queryj.api.exceptions.QueryJNonCheckedException;
 import org.acmsl.queryj.api.exceptions.RepositoryNameNotAvailableException;
 import org.acmsl.queryj.api.exceptions.VersionNotAvailableException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
@@ -144,6 +145,44 @@ public abstract class AbstractTemplateContext
     public QueryJCommand getCommand()
     {
         return m__Command;
+    }
+
+    /**
+     * Annotates a value in the command.
+     * @param key the key.
+     * @param value the value.
+     * @param command the command.
+     * @param <T> the type.
+     */
+    protected final <T> void immutableSetValue(
+        @NotNull final String key, @NotNull final T value, @NotNull final QueryJCommand command)
+    {
+        new QueryJCommandWrapper<T>(command).setSetting(key, value);
+    }
+
+    /**
+     * Retrieves the value.
+     * @param key the key.
+     * @param command the command.
+     * @param exceptionToThrow the exception to throw.
+     * @param <T> the value type.
+     * @return such information.
+     */
+    @NotNull
+    protected <T> T getValue(
+        @NotNull final String key,
+        @NotNull final QueryJCommand command,
+        @NotNull final QueryJNonCheckedException exceptionToThrow)
+    {
+        @Nullable final T result =
+            new QueryJCommandWrapper<T>(command).getSetting(key);
+
+        if (result == null)
+        {
+            throw exceptionToThrow;
+        }
+
+        return result;
     }
 
     /**
