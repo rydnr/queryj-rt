@@ -211,8 +211,6 @@ public class AbstractTemplatePackagingContextTest
             }};
 
 
-        result.immutableSetValue(result.buildJdbcUrlKey(), jdbcUrl, t_Command);
-
         @NotNull final String jdbcUsername = "jdbc.username";
         result.immutableSetValue(result.buildJdbcUserNameKey(), jdbcUsername, t_Command);
 
