@@ -283,7 +283,7 @@ public abstract class AbstractTemplatePackagingContext
     @NotNull
     protected String buildRootDirKey()
     {
-        TemplatePackagingSettings.OUTPUT_DIR + "@" + hashCode();
+        return TemplatePackagingSettings.OUTPUT_DIR + "@" + hashCode();
     }
 
     /**
