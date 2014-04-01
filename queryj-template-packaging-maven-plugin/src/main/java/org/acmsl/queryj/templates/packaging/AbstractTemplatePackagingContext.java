@@ -354,7 +354,7 @@ public abstract class AbstractTemplatePackagingContext
     }
 
     /**
-     * Builds the JDBC url key.
+     * Builds the JDBC user name key.
      * @return such key.
      */
     @NotNull
