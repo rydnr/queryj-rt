@@ -149,13 +149,6 @@ public abstract class AbstractTemplatePackagingContext
     protected String buildTemplateNameKey()
     {
         return "templateName@" + hashCode();
-
-        if (result == null)
-        {
-            throw new TemplateNameNotAvailableException();
-        }
-
-        return result;
     }
 
     /**
