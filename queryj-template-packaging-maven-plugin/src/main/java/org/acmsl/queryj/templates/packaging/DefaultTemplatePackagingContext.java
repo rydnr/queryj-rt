@@ -96,10 +96,14 @@ public class DefaultTemplatePackagingContext
         immutableSetValue(buildTemplateDefKey(), templateDef, command);
     }
 
+    /**
+     * Builds the key to
+     * @return
+     */
     @NotNull
     protected String buildOutputPackageKey()
     {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        return "outputPackage@" + hashCode();
     }
 
     /**
