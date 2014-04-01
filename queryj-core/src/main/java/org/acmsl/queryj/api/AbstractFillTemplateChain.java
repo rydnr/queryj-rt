@@ -217,7 +217,7 @@ public abstract class AbstractFillTemplateChain<C extends TemplateContext>
     public String toString()
     {
         return
-              "{ \"class\": \"" + AbstractFillTemplateChain.class.getName() + "\""
+              "{ \"class\": \"" + AbstractFillTemplateChain.class.getSimpleName() + "\""
             + ", \"templateContext\": \"" + templateContext + "\" }";
     }
 }
