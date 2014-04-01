@@ -46,7 +46,6 @@ import org.acmsl.queryj.QueryJCommand;
 /*
  * Importing JetBrains annotations.
  */
-import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.templates.packaging.exceptions.TemplateDefNotAvailableException;
 import org.jetbrains.annotations.NotNull;
 
