@@ -193,7 +193,8 @@ public class AbstractTemplatePackagingContextTest
         @NotNull final AbstractTemplatePackagingContext result =
             new AbstractTemplatePackagingContext(t_Command)
             {
-
+                @Override
+                public void immutableSetValue()
             };
 
 
