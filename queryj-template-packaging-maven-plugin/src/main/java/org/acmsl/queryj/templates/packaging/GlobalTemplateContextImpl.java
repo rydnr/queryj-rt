@@ -86,27 +86,7 @@ public class GlobalTemplateContextImpl
         super(command);
         immutableSetValue(buildTemplateDefsKey(), templateDefs, command);
         immutableSetValue(buildFileNameKey(), fileName, command);
-        immutableSetOutputDir(outputDir, command);
-    }
-
-    /**
-     * Specifies the file name.
-     * @param fileName the file name.
-     * @param command the command.
-     */
-    protected final void immutableSetFileName(@NotNull final String fileName, @NotNull final QueryJCommand command)
-    {
-        new QueryJCommandWrapper<String>(command).setSetting("fileName", fileName);
-    }
-
-    /**
-     * Specifies the output dir.
-     * @param outputDir the output dir.
-     * @param command the command.
-     */
-    protected final void immutableSetOutputDir(@NotNull final File outputDir, @NotNull final QueryJCommand command)
-    {
-        new QueryJCommandWrapper<File>(command).setSetting("outputDir", outputDir);
+        immutableSetValue(buildOutputDirKey(), outputDir, command);
     }
 
     /**
