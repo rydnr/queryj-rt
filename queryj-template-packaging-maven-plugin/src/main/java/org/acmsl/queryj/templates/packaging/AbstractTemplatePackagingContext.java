@@ -304,8 +304,7 @@ public abstract class AbstractTemplatePackagingContext
     @NotNull
     protected String buildOutputDirKey()
     {
-        @Nullable final File result =
-            new QueryJCommandWrapper<File>(command).getSetting("outputDir");
+        return "outputDir@" + hashCode();
 
         if (result == null)
         {
