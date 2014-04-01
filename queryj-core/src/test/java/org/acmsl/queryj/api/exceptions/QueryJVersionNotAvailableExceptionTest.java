@@ -66,7 +66,7 @@ public class QueryJVersionNotAvailableExceptionTest
     @Test
     public void exception_message_is_defined_in_Spanish_and_English()
     {
-        @NotNull final QueryJVersionNotAvailableExceptionTest instance = new QueryJVersionNotAvailableException();
+        @NotNull final QueryJVersionNotAvailableException instance = new QueryJVersionNotAvailableException();
 
         for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
         {
