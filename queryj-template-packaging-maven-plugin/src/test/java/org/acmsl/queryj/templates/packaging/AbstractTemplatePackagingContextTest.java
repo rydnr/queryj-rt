@@ -194,7 +194,7 @@ public class AbstractTemplatePackagingContextTest
             new AbstractTemplatePackagingContext(t_Command)
             {
                 @Override
-                public void immutableSetValue()
+                public void immutableSetValue(@NotNull final String key, )
             };
 
 
