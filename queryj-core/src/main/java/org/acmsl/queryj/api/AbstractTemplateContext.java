@@ -276,7 +276,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     public File getOutputDir()
     {
-        return getValue(buildOutputDirKey(), getCommand(), new OutputDirNotAvailableException());
+        return getValue(buildOutputDirKey(), getCommand(), new Output
     }
 
     /**
