@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for QueryJVersionNotAvailableException.
  *
  * Date: 2014/04/01
  * Time: 15:09
