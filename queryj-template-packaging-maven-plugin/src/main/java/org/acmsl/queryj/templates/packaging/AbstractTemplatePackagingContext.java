@@ -91,12 +91,6 @@ public abstract class AbstractTemplatePackagingContext
     private static final long serialVersionUID = -7291939701431286380L;
 
     /**
-     * The command.
-     */
-    @NotNull
-    private QueryJCommand m__Command;
-
-    /**
      * Creates a new instance.
      * @param command the command.
      */
