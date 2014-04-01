@@ -110,7 +110,7 @@ public class DefaultTemplatePackagingContext
      * {@inheritDoc}
      */
     @NotNull
-    protected final String buildOutputDirKey()
+    protected final String buildTemplateDefKey()
     {
         return "outputDir@" + hashCode();
     }
