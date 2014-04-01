@@ -266,7 +266,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     protected String buildRootDirKey()
     {
-        return QueryJSettings.OUTPUT_DIR + "@" + hashCode();
+        return QueryJSettings.OUTPUT_FOLDER + "@" + hashCode();
     }
 
     /**
