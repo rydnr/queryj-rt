@@ -207,7 +207,6 @@ public class AbstractTemplatePackagingContextTest
             }};
 
 
-        @NotNull final String jdbcDriver = "jdbc.driver";
         result.immutableSetValue(result.buildJdbcDriverKey(), jdbcDriver, t_Command);
 
         @NotNull final String jdbcUrl = "jdbc.url";
