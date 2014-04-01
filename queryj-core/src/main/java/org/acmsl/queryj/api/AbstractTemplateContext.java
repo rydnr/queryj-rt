@@ -163,46 +163,4 @@ public abstract class AbstractTemplateContext
         return result;
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public int hashCode()
-    {
-        return
-            new HashCodeBuilder().append(AbstractTemplateContext.class.getName()).append(this.m__Command).toHashCode();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public boolean equals(@Nullable final Object obj)
-    {
-        if (obj == null)
-        {
-            return false;
-        }
-        if (getClass() != obj.getClass())
-        {
-            return false;
-        }
-        final AbstractTemplateContext other = (AbstractTemplateContext) obj;
-
-        return new EqualsBuilder().append(this.m__Command, other.m__Command).isEquals();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @NotNull
-    @Override
-    public String toString()
-    {
-        return
-              "{ \"class\": \"" + AbstractTemplateContext.class.getSimpleName() + '"'
-            + ", \"package\": \"org.acmsl.queryj.api\""
-            + ", \"command\": " + m__Command
-            + " }";
-    }
 }
