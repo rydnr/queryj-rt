@@ -80,7 +80,7 @@ public abstract class AbstractQueryJTemplateContext
      */
     protected AbstractQueryJTemplateContext(@NotNull final QueryJCommand command)
     {
-        immutableSetCommand(command);
+        super(command);
     }
 
     /**
