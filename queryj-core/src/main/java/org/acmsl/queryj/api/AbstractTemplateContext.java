@@ -254,7 +254,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     public File getRootDir()
     {
-        return getValue(buildRootDirKey(), getCommand(), new RootDirNotAvailableException());
+        return getValue(buildRootDirKey(), getCommand(), new org.acmsl.queryj.templates.packaging.exceptions.RootDirNotAvailableException());
     }
 
     /**
