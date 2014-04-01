@@ -191,6 +191,7 @@ public class AbstractTemplatePackagingContextTest
             new ConfigurationQueryJCommandImpl(new PropertiesConfiguration(), null);
 
         @Nullable final String templateName = "template";
+        @NotNull final String fileName = "file.name";
         @NotNull final AbstractTemplatePackagingContext result =
             new AbstractTemplatePackagingContext(t_Command)
             {{
