@@ -157,7 +157,7 @@ public abstract class AbstractTemplatePackagingContext
     }
 
     /**
-     * Specifies the file name.
+     * Specifies the key
      * @param fileName the file name.
      */
     protected final <T> void immutableSetValue(
