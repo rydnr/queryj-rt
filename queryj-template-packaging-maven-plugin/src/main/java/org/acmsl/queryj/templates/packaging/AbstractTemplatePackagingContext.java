@@ -382,7 +382,7 @@ public abstract class AbstractTemplatePackagingContext
      * @return such key.
      */
     @NotNull
-    protected String buildJdbcUserNameKey()
+    protected String buildJdbcPasswordKey()
     {
         return "jdbcUserName@" + hashCode();
     }
