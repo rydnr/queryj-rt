@@ -38,7 +38,6 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing QueryJ Core classes.
  */
-import org.acmsl.commons.logging.UniqueLogFactory;
 import org.acmsl.queryj.QueryJCommand;
 
 /*
