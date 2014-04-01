@@ -103,6 +103,7 @@ public class DefaultTemplatePackagingContext
      * @return such information.
      */
     @Override
+    @NotNull
     protected String getFileName(@NotNull final QueryJCommand command)
     {
         return new QueryJCommandWrapper<String>(command).getSetting("fileName");
