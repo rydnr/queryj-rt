@@ -67,6 +67,7 @@ sourceImpl(table, engine, C) ::= <<
   fileName=C.fileName,
   template="org/acmsl/queryj/dao/DAO.stg",
   C=C)><endif>
+<package_declaration(p=C.package)>
 
 <project_imports(
   basePackageName=C.project_package,
