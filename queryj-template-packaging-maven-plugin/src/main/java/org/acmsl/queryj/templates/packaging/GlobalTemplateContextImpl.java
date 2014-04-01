@@ -84,6 +84,8 @@ public class GlobalTemplateContextImpl
      * @param templateDefs the template definitions.
      */
     public GlobalTemplateContextImpl(
+        @NotNull final String templateName,
+        @NotNull final String packageName,
         @NotNull final String fileName,
         @NotNull final File outputDir,
         @NotNull final List<TemplateDef<String>> templateDefs,
