@@ -370,6 +370,21 @@ public abstract class AbstractTemplatePackagingContext
     @NotNull
     public String getJdbcPassword()
     {
+        return
+            getValue(
+                buildJdbcUserNameKey(),
+                getCommand(),
+                new JdbcSettingNotAvailableException(JdbcSetting.USERNAME));
+    }
+
+    /**
+     * Builds the JDBC user name key.
+     * @return such key.
+     */
+    @NotNull
+    protected String buildJdbcUserNameKey()
+    {
+        return "jdbcUserName@" + hashCode();
         return getJdbcPassword(getCommand());
     }
 
