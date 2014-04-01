@@ -38,7 +38,9 @@
 group javadoc;
 
 java_header(fileName, description, template, C) ::= <<
-<java_header_impl(year=C.copyright_years, fileName=fileName, description=description, template=template, timestamp=C.timestamp,
+<java_header_impl(year=C.copyright_years, fileName=fileName, description=description, template=template, timestamp=C.timestamp, version=C.version)>
+>>
+
 java_header(year, fileName, description, template, timestamp, timestamps_enabled, version) ::= <<
 <!
   Generates the copyright header.
