@@ -179,7 +179,7 @@ public abstract class AbstractTemplatePackagingContext
     @NotNull
     public String getFileName()
     {
-        return getFileName(getCommand(), buildFileNameKey());
+        return getValue(getCommand(), buildFileNameKey());
     }
 
     /**
