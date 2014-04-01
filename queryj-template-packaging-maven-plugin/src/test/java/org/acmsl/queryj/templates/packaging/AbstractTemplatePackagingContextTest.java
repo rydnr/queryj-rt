@@ -198,6 +198,7 @@ public class AbstractTemplatePackagingContextTest
             {{
                 immutableSetValue(buildTemplateNameKey(), templateName, t_Command);
                 immutableSetValue(buildFileNameKey(), fileName, t_Command);
+                    result.immutableSetValue(result.buildPackageNameKey(), packageName, t_Command);
             }};
 
 
