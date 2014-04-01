@@ -46,6 +46,7 @@ java_header(year, fileName, description, template, timestamp, timestamps_enabled
   @param template the name of the template.
   @param timestamp the timestamp.
   @param timestamp_enabled whether the timestamps are allowed or not.
+  @param version the version.
 !>
 /*
                         QueryJ <version>
