@@ -193,7 +193,6 @@ public class AbstractTemplatePackagingContextTest
         @NotNull final AbstractTemplatePackagingContext result =
             new AbstractTemplatePackagingContext(t_Command)
             {
-                @Override
                 public <T> void setValue(@NotNull final String key, @NotNull final T value, @NotNull final QueryJCommand command)
                 {
                     super.immutableSetValue(key, value, command);
