@@ -201,7 +201,6 @@ public class AbstractTemplatePackagingContextTest
             }};
 
 
-        @NotNull final String packageName = "package.name";
         result.immutableSetValue(result.buildPackageNameKey(), packageName, t_Command);
 
         @NotNull final File rootDir = new File(".");
