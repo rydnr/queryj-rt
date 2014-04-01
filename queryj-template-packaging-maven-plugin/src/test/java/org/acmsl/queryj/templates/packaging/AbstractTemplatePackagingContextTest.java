@@ -212,7 +212,6 @@ public class AbstractTemplatePackagingContextTest
             }};
 
 
-        @NotNull final String jdbcUsername = "jdbc.username";
         result.immutableSetValue(result.buildJdbcUserNameKey(), jdbcUsername, t_Command);
 
         @NotNull final String jdbcPassword = "jdbc.password";
