@@ -104,7 +104,6 @@ public class BasePerCustomResultFillTemplateChain
      */
     @NotNull
     @Override
-    @SuppressWarnings("unchecked")
     protected List<FillHandler<?>> getHandlers(@NotNull final PerCustomResultTemplateContext context)
     {
         @NotNull final List<FillHandler<?>> result = new ArrayList<>(3);
