@@ -51,6 +51,7 @@ import org.acmsl.queryj.customsql.exceptions.CustomSqlProviderNotAvailableExcept
 import org.acmsl.queryj.customsql.handlers.CustomSqlProviderRetrievalHandler;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.MetadataManager;
+import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.tools.exceptions.MetadataManagerNotAvailableException;
 import org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandler;
 import org.jetbrains.annotations.NotNull;
@@ -60,6 +61,8 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 /**
  *
@@ -419,6 +422,31 @@ public abstract class AbstractQueryJTemplateContext
     public boolean getDisableCheckthreadAnnotations()
     {
         return getBooleanValue(getCommand(), QueryJSettings.DISABLE_CHECKTHREAD_ANNOTATIONS);
+    }
+
+    /**
+     * Concatenates given attributes.
+     * @param attributes the attributes.
+     * @return the CSV version of given list.
+     */
+    @NotNull
+    protected String toCsv(@NotNull final List<Attribute<String>> attributes)
+    {
+        @NotNull final StringBuilder result = new StringBuilder();
+
+        for (@Nullable final Attribute<String> t_Attribute : attributes)
+        {
+            if (t_Attribute != null)
+            {
+                if (result.length() > 0)
+                {
+                    result.append(",");
+                }
+                result.append(t_Attribute.getName());
+            }
+        }
+
+        return result.toString();
     }
 
 }
