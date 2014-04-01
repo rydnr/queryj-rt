@@ -67,7 +67,6 @@ import org.checkthread.annotations.ThreadSafe;
 /*
  * Importing JDK classes.
  */
-import java.io.File;
 import java.io.Serializable;
 
 /**
