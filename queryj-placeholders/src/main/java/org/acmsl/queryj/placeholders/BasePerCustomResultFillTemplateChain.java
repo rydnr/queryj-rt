@@ -112,7 +112,7 @@ public class BasePerCustomResultFillTemplateChain
         result.add(
             (FillAdapterHandler)
                 new TemplateContextFillAdapterHandler
-                    <PerCustomResultTemplateContext, CustomResultHandler, ResultDecorator>(
+                    <>(
                         new CustomResultHandler(context)));
 
         result.add(
