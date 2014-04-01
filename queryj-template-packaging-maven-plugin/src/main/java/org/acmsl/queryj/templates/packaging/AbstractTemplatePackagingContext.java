@@ -311,7 +311,7 @@ public abstract class AbstractTemplatePackagingContext
     @NotNull
     protected String buildJdbcDriverKey()
     {
-        return "jdbcDriver");
+        return "jdbcDriver@" + hashCode();
 
         if (result == null)
         {
