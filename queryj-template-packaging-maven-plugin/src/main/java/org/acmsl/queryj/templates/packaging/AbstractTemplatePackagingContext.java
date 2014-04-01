@@ -364,27 +364,6 @@ public abstract class AbstractTemplatePackagingContext
     }
 
     /**
-     * Retrieves the JDBC user name.
-     * @param command the command.
-     * @return the JDBC user name.
-     */
-    @NotNull
-    protected String getJdbcUsername(@NotNull final QueryJCommand command)
-    {
-        @Nullable final String result =
-            new QueryJCommandWrapper<String>(command).getSetting("jdbcUserName");
-
-        if (result == null)
-        {
-            throw
-                new JdbcSettingNotAvailableException(
-                    JdbcSettingNotAvailableException.JdbcSetting.USERNAME);
-        }
-
-        return result;
-    }
-
-    /**
      * Retrieves the JDBC password.
      * @return the JDBC password.
      */
