@@ -112,7 +112,7 @@ public class DefaultTemplatePackagingContext
     @NotNull
     protected final String buildTemplateDefKey()
     {
-        return "outputDir@" + hashCode();
+        return "templateDef@" + hashCode();
     }
 
     /**
