@@ -224,24 +224,6 @@ public abstract class AbstractTemplatePackagingContext
 
         if (result == null)
         {
-            @Nullable QueryJNonCheckedException t_ExceptionToThrow = null;
-
-            try
-            {
-                t_ExceptionToThrow = exceptionClass.newInstance();
-            }
-            catch (@NotNull final InstantiationException | IllegalAccessException cannotInstantiateException)
-            {
-                @Nullable final Log t_Log = UniqueLogFactory.getLog(AbstractTemplatePackagingContext.class);
-
-                if (t_Log != null)
-                {
-                    t_Log.error(t_ExceptionToThrow);
-                }
-            }
-
-            if (t_ExceptionToThrow != null)
-            {
                 throw t_ExceptionToThrow;
             }
         }
