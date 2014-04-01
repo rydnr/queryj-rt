@@ -339,27 +339,6 @@ public abstract class AbstractTemplatePackagingContext
     }
 
     /**
-     * Retrieves the JDBC url.
-     * @param command the command.
-     * @return the JDBC url.
-     */
-    @NotNull
-    protected String getJdbcUrl(@NotNull final QueryJCommand command)
-    {
-        @Nullable final String result =
-            new QueryJCommandWrapper<String>(command).getSetting("jdbcUrl");
-
-        if (result == null)
-        {
-            throw
-                new JdbcSettingNotAvailableException(
-                    JdbcSettingNotAvailableException.JdbcSetting.URL);
-        }
-
-        return result;
-    }
-
-    /**
      * Retrieves the JDBC user name.
      * @return the JDBC user name.
      */
