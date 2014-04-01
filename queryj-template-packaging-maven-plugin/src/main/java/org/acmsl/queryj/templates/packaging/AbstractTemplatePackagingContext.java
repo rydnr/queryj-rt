@@ -278,11 +278,10 @@ public abstract class AbstractTemplatePackagingContext
 
     /**
      * Builds the root dir key.
-     * @param command the command.
-     * @return such folder.
+    * @return such key.
      */
     @NotNull
-    protected File getRootDir(@NotNull final QueryJCommand command)
+    protected File buildRootDirKey(@NotNull final QueryJCommand command)
     {
         @Nullable final File result =
             new QueryJCommandWrapper<File>(command).getSetting(TemplatePackagingSettings.OUTPUT_DIR);
