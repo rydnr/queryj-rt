@@ -107,26 +107,6 @@ public class DefaultTemplatePackagingContext
     }
 
     /**
-     * Specifies the output dir.
-     * @param outputDir the output dir.
-     */
-    protected final void immutableSetOutputDir(
-        @NotNull final File outputDir, @NotNull final QueryJCommand command)
-    {
-        new QueryJCommandWrapper<File>(command).setSetting("outputDir" + serialVersionUID, outputDir);
-    }
-
-    /**
-     * Specifies the template def.
-     * @param templateDef the template def.
-     */
-    protected final void immutableSetTemplateDef(
-        @NotNull final TemplateDef<String> templateDef, @NotNull final QueryJCommand command)
-    {
-        new QueryJCommandWrapper<TemplateDef<String>>(command).setSetting("templateDef" + serialVersionUID, templateDef);
-    }
-
-    /**
      * Retrieves the template def.
      * @return such instance.
      */
