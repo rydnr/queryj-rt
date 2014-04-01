@@ -202,7 +202,6 @@ public class AbstractTemplatePackagingContextTest
 
         @NotNull final File rootDir = new File(".");
         result.immutableSetValue(result.buildRootDirKey(), rootDir, t_Command);
-        new QueryJCommandWrapper<File>(t_Command).setSetting(TemplatePackagingSettings.OUTPUT_DIR, rootDir);
 
         @NotNull final File outputDir = new File("target");
         new QueryJCommandWrapper<File>(t_Command).setSetting("outputDir", outputDir);
