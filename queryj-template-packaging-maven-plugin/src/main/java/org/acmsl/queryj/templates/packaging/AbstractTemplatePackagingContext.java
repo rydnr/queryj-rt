@@ -224,7 +224,7 @@ public abstract class AbstractTemplatePackagingContext
 
         if (result == null)
         {
-                throw t_ExceptionToThrow;
+            throw t_ExceptionToThrow;
             }
         }
 
