@@ -335,7 +335,7 @@ public abstract class AbstractTemplatePackagingContext
     @NotNull
     protected String buildJdbcUserNameKey()
     {
-        return "jdbcUserName@" + hashCode();
+        return TemplatePackagingSettings.JDBC_URL;
     }
 
     /**
