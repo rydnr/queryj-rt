@@ -56,6 +56,7 @@ import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.tools.exceptions.MetadataManagerNotAvailableException;
+import org.acmsl.queryj.tools.exceptions.MissingOutputDirAtRuntimeException;
 import org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandler;
 
 /*
@@ -276,7 +277,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     public File getOutputDir()
     {
-        return getValue(buildOutputDirKey(), getCommand(), new Output
+        return getValue(buildOutputDirKey(), getCommand(), new MissingOutputDirAtRuntimeException();
     }
 
     /**
