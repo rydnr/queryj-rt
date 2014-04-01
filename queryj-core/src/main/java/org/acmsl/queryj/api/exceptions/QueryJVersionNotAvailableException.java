@@ -65,6 +65,6 @@ public class QueryJVersionNotAvailableException
      */
     public QueryJVersionNotAvailableException()
     {
-        super("QueryJ")
+        super("QueryJVersion.not.available");
     }
 }
