@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Thrown when the QueryJ version information is not available.
  *
  * Date: 2014/04/01
  * Time: 15:21
