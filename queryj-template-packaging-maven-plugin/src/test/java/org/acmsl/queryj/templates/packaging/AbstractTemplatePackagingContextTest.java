@@ -201,8 +201,6 @@ public class AbstractTemplatePackagingContextTest
             }};
 
 
-        result.immutableSetValue(result.buildFileNameKey(), fileName, t_Command);
-
         @NotNull final String packageName = "package.name";
         result.immutableSetValue(result.buildPackageNameKey(), packageName, t_Command);
 
