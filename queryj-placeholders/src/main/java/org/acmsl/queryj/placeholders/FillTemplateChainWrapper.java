@@ -122,7 +122,7 @@ public class FillTemplateChainWrapper<C extends QueryJTemplateContext>
     {
         return
               "{ \"class\": \"" + FillTemplateChainWrapper.class.getSimpleName() + '"'
-              + ", \"package\": \"org.acmsl.queryj."
+              + ", \"package\": \"org.acmsl.queryj.placeholders\""
             + ", \"parent\": \"" + super.toString() +  "\" }";
     }
 }
