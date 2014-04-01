@@ -71,7 +71,7 @@ import java.io.File;
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @param <T> the template type.
  * @param <C> the template context type.
- * @paraw <TG> the template generator type.
+ * @param <TG> the template generator type.
  * @since 3.0
  * Created: 2013/11/11 21:27
  */
