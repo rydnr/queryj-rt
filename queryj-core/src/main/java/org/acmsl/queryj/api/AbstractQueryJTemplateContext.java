@@ -73,6 +73,7 @@ import java.util.List;
 @ThreadSafe
 public abstract class AbstractQueryJTemplateContext
     extends AbstractTemplateContext
+    implements QueryJTemplateContext
 {
     /**
      * Creates an {@link AbstractTemplateContext} with given information.
