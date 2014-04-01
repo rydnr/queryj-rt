@@ -104,11 +104,6 @@ public abstract class AbstractTemplateContext
     public static final String FILE_NAME = "fileName";
 
     /**
-     * The command.
-     */
-    private QueryJCommand m__Command;
-
-    /**
      * Retrieves the metadata manager.
      * @return such manager.
      */
