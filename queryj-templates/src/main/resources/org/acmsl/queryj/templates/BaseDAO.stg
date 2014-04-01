@@ -62,7 +62,7 @@ sourceImpl(table, C) ::= <<
   [
     description(tableName=table.name)
   ],
-  template=")><endif>
+  template="org/acmsl/queryj/)><endif>
 <package_declaration(p=C.package)>
 
 <project_imports(
