@@ -45,6 +45,7 @@ import org.acmsl.queryj.api.exceptions.JndiLocationNotAvailableException;
 import org.acmsl.queryj.api.exceptions.PackageNameNotAvailableException;
 import org.acmsl.queryj.api.exceptions.QueryJNonCheckedException;
 import org.acmsl.queryj.api.exceptions.RepositoryNameNotAvailableException;
+import org.acmsl.queryj.api.exceptions.TemplateNameNotAvailableException;
 import org.acmsl.queryj.api.exceptions.VersionNotAvailableException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.exceptions.CustomSqlProviderNotAvailableException;
@@ -193,7 +194,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     public String getTemplateName()
     {
-        return getValue(buildTemplateNameKey(), getCommand(), new org.acmsl.queryj.templates.packaging.exceptions.TemplateNameNotAvailableException());
+        return getValue(buildTemplateNameKey(), getCommand(), new TemplateNameNotAvailableException());
     }
 
     /**
