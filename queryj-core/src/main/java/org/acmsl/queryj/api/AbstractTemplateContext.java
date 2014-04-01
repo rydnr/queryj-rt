@@ -77,7 +77,7 @@ import java.io.Serializable;
  */
 @ThreadSafe
 public abstract class AbstractTemplateContext
-    implements QueryJTemplateContext,
+    implements TemplateContext,
                Serializable
 {
     /**
