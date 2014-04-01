@@ -214,9 +214,6 @@ public class AbstractTemplatePackagingContextTest
                 immutableSetValue(buildJdbcPasswordKey(), jdbcPassword, t_Command);
             }};
 
-
-        result.immutableSetValue(result.buildJdbcPasswordKey(), jdbcPassword, t_Command);
-
         return result;
     }
 }
