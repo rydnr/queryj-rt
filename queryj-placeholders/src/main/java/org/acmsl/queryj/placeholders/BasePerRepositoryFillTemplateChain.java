@@ -108,9 +108,8 @@ public class BasePerRepositoryFillTemplateChain
         @NotNull final List<FillHandler<?>> result = new ArrayList<>(1);
 
         result.add(
-            new TemplateContextFillAdapterHandler
-                <PerRepositoryTemplateContext, TableListHandler,List<TableDecorator>>(
-                    new TableListHandler(context)));
+            new TemplateContextFillAdapterHandler<>(
+                new TableListHandler(context)));
 
         return result;
     }
