@@ -98,9 +98,7 @@ public class DefaultTemplatePackagingContext
     }
 
     /**
-     * Retrieves the file name.
-     * @return such command.
-     * @return such information.
+     * {@inheritDoc}
      */
     @Override
     @NotNull
