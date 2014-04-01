@@ -217,14 +217,14 @@ public abstract class AbstractTemplatePackagingContext
     protected <T> T getValue(
         @NotNull final String key,
         @NotNull final QueryJCommand command,
-        @NotNull final QueryJNonCheckedException exceptionClass)
+        @NotNull final QueryJNonCheckedException exceptionToThrow)
     {
         @Nullable final T result =
             new QueryJCommandWrapper<T>(command).getSetting(key);
 
         if (result == null)
         {
-            throw t_ExceptionToThrow;
+            throw exceptionToThrow;
             }
         }
 
