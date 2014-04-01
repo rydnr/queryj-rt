@@ -169,6 +169,7 @@ public abstract class AbstractTemplatePackagingContext
     /**
      * Builds a file name key.
      */
+    @NotNull
     protected abstract String buildFileNameKey();
 
     /**
@@ -180,7 +181,7 @@ public abstract class AbstractTemplatePackagingContext
     protected String getFileName(@NotNull final QueryJCommand command, @NotNull final String key)
     {
         @Nullable final String result =
-            new QueryJCommandWrapper<String>(command).getSetting("fileName");
+            new QueryJCommandWrapper<String>(command).getSetting(key);
 
         if (result == null)
         {
