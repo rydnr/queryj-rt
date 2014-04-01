@@ -117,7 +117,7 @@ public class PerTemplateDefFillTemplateChainWrapper
         result.add(new TimestampHandler());
         result.add(new TemplateNameHandler<>(context));
         result.add(new TemplateDefHandler(context));
-        result.add(new QueryJVersionHandler<>())
+        result.add(new QueryJVersionHandler<>(context));
 
         return result;
     }
