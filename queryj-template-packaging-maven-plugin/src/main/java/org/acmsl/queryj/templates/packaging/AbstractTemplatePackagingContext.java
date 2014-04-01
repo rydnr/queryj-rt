@@ -359,7 +359,7 @@ public abstract class AbstractTemplatePackagingContext
     @NotNull
     protected String buildJdbcPasswordKey()
     {
-        return "jdbcPassword@" + hashCode();
+        return TemplatePackagingSettings.JDBC_PASSWORD;
     }
 
     /**
