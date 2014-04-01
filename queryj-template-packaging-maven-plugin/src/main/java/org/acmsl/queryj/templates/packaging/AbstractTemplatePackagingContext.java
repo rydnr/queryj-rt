@@ -335,7 +335,7 @@ public abstract class AbstractTemplatePackagingContext
     @NotNull
     protected String buildJdbcUrlKey()
     {
-        return "jdbcDriver@" + hashCode();
+        return "jdbcUrl@" + hashCode();
     }
 
     /**
