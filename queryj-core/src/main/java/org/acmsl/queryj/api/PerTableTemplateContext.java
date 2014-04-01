@@ -149,7 +149,7 @@ public class PerTableTemplateContext
     @NotNull
     public List<Row<String>> getStaticValues()
     {
-        return new ArrayList<>(getValue(buildStaticValuesKey(), getCommand());
+        return new ArrayList<>(getValue(buildStaticValuesKey(), getCommand()));
     }
 
     /**
