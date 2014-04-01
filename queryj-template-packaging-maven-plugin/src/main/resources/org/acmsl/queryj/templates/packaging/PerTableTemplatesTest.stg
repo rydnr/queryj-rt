@@ -508,7 +508,7 @@ public class PerTableTemplatesTest
                 new QueryJCommandWrapper\<String>(t_Command).setSetting(
                     QueryJSettings.JNDI_DATASOURCE, "");
                 new QueryJCommandWrapper\<String>(t_Command).setSetting(
-                    QueryJSettings.VERSION, "");
+                    QueryJSettings.VERSION, "<");
 
                 @Nullable final PerTableTemplate\<PerTableTemplateContext> template =
                     templateFactory.createTemplate(
