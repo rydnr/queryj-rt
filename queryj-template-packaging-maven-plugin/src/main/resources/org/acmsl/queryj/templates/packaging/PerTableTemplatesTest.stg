@@ -52,6 +52,7 @@ source(C) ::= <<
   [
     description()
   ],
+  filename=C.filename,
   timestamp=C.timestamp,
   version=C.version)><endif>
 <if(C.generation_timestamps_enabled)>
