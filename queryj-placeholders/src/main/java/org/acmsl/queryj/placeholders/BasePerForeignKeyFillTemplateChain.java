@@ -91,7 +91,7 @@ public class BasePerForeignKeyFillTemplateChain
     public QueryJCommand providePlaceholders(final boolean relevantOnly)
         throws QueryJBuildException
     {
-        return new FillTemplateChainWrapper<PerForeignKeyTemplateContext>(this).providePlaceholders(relevantOnly);
+        return new FillTemplateChainWrapper<>(this).providePlaceholders(relevantOnly);
     }
 
     /**
@@ -101,7 +101,6 @@ public class BasePerForeignKeyFillTemplateChain
      */
     @NotNull
     @Override
-    @SuppressWarnings("unchecked")
     protected List<FillHandler<?>> getHandlers(@NotNull final PerForeignKeyTemplateContext context)
     {
         @NotNull final List<FillHandler<?>> result = new ArrayList<>(2);
