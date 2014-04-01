@@ -193,6 +193,7 @@ public class AbstractTemplatePackagingContextTest
         @NotNull final String templateName = "template";
         @NotNull final String fileName = "file.name";
         @NotNull final String packageName = "package.name";
+        @NotNull final File rootDir = new File(".");
         @NotNull final AbstractTemplatePackagingContext result =
             new AbstractTemplatePackagingContext(t_Command)
             {{
