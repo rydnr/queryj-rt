@@ -92,7 +92,7 @@ public class DefaultTemplatePackagingContext
      */
     @Override
     @NotNull
-    protected String buildFileNameKey()
+    protected final String buildFileNameKey()
     {
         return "fileName@" + hashCode();
     }
