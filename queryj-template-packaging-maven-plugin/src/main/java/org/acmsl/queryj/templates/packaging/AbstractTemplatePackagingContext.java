@@ -298,9 +298,8 @@ public abstract class AbstractTemplatePackagingContext
     }
 
     /**
-     * Builds the output dir.
-     * @param command the command.
-     * @return such folder.
+     * Builds the output dir key.
+     * @return such key.
      */
     @NotNull
     protected File getOutputDir(@NotNull final QueryJCommand command)
