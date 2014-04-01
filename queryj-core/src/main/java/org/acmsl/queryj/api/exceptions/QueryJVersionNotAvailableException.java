@@ -60,5 +60,11 @@ public class QueryJVersionNotAvailableException
      */
     private static final long serialVersionUID = 7586785380952613986L;
 
-
+    /**
+     * Creates a new instance.
+     */
+    public QueryJVersionNotAvailableException()
+    {
+        super("QueryJ")
+    }
 }
