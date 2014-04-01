@@ -100,7 +100,6 @@ public class DefaultTemplatePackagingContext
     /**
      * {@inheritDoc}
      */
-    @Override
     @NotNull
     protected final String buildOutputDirKey()
     {
