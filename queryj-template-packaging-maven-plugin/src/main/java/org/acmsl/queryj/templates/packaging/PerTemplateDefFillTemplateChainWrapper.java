@@ -103,7 +103,7 @@ public class PerTemplateDefFillTemplateChainWrapper
      */
     @NotNull
     @Override
-    protected List<?> getHandlers(@NotNull final DefaultTemplatePackagingContext context)
+    protected List<FillHandler<?>> getHandlers(@NotNull final DefaultTemplatePackagingContext context)
     {
         @NotNull final List<FillHandler<?>> result = new ArrayList<>(9);
 
