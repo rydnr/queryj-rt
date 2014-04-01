@@ -196,7 +196,6 @@ public class AbstractTemplatePackagingContextTest
 
         @NotNull final String fileName = "file.name";
         result.immutableSetValue(result.buildFileNameKey(), fileName, t_Command);
-        new QueryJCommandWrapper<String>(t_Command).setSetting("fileName", fileName);
 
         @NotNull final String packageName = "package.name";
         new QueryJCommandWrapper<String>(t_Command).setSetting("packageName", packageName);
