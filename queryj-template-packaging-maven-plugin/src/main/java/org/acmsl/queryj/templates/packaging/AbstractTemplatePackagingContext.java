@@ -273,7 +273,7 @@ public abstract class AbstractTemplatePackagingContext
     @NotNull
     public File getRootDir()
     {
-        return getValue()
+        return getValue(buildRootDirKey(), getCommand(), )
     }
 
     /**
