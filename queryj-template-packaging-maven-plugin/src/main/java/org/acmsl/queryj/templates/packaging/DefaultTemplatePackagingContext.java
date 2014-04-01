@@ -106,23 +106,4 @@ public class DefaultTemplatePackagingContext
     {
         return getValue(buildTemplateDefKey(), getCommand(), new TemplateDefNotAvailableException());
     }
-
-    /**
-     * Retrieves the template def.
-     * @param command the command.
-     * @return such instance.
-     */
-    @NotNull
-    protected TemplateDef<String> getTemplateDef(@NotNull final QueryJCommand command)
-    {
-        @Nullable final TemplateDef<String> result =
-            new QueryJCommandWrapper<TemplateDef<String>>(command).getSetting("templateDef" + serialVersionUID);
-
-        if (result == null)
-        {
-            throw new TemplateDefNotAvailableException();
-        }
-
-        return result;
-    }
 }
