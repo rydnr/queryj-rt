@@ -287,36 +287,6 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Retrieves the file name.
-     * @return such information.
-     */
-    @Override
-    @NotNull
-    public String getFileName()
-    {
-        return getFileName(getCommand());
-    }
-
-    /**
-     * Retrieves the file name.
-     * @param command the command.
-     * @return such information.
-     */
-    @NotNull
-    protected String getFileName(@NotNull final QueryJCommand command)
-    {
-        @Nullable final String result =
-            new QueryJCommandWrapper<String>(command).getSetting(FILE_NAME);
-
-        if (result == null)
-        {
-            throw new FileNameNotAvailableException();
-        }
-
-        return result;
-    }
-
-    /**
      * Retrieves the version.
      * @return such information.
      */
