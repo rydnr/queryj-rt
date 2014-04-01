@@ -94,7 +94,7 @@ public class DefaultTemplatePackagingContext
     protected final void immutableSetFileName(
         @NotNull final String fileName, @NotNull final QueryJCommand command)
     {
-        new QueryJCommandWrapper<String>(command).setSetting("fileName", fileName);
+        new QueryJCommandWrapper<String>(command).setSetting("fileName" + , fileName);
     }
 
     /**
