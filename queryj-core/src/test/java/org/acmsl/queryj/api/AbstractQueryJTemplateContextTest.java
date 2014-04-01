@@ -89,7 +89,7 @@ public class AbstractQueryJTemplateContextTest
     @Test
     public void metadataManager_is_available()
     {
-        @NotNull final AbstractTemplateContext instance = createContext();
+        @NotNull final AbstractQueryJTemplateContext instance = createContext();
 
         Assert.assertNotNull(instance.getMetadataManager());
     }
