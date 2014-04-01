@@ -284,13 +284,6 @@ public abstract class AbstractTemplatePackagingContext
     protected String buildRootDirKey()
     {
         TemplatePackagingSettings.OUTPUT_DIR + "@" + hashCode();
-
-        if (result == null)
-        {
-            throw new RootDirNotAvailableException();
-        }
-
-        return result;
     }
 
     /**
