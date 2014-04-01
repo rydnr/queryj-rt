@@ -210,9 +210,7 @@ public abstract class AbstractFillTemplateChain<C extends TemplateContext>
     }
 
     /**
-     * {@inheritDoc
-     * }
-     * @return
+     * {@inheritDoc}
      */
     @NotNull
     @Override
