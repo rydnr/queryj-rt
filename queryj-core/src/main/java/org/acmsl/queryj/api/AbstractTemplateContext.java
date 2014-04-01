@@ -75,6 +75,7 @@ import org.checkthread.annotations.ThreadSafe;
 /*
  * Importing some JDK classes.
  */
+import java.io.File;
 import java.io.Serializable;
 import java.util.List;
 
@@ -183,6 +184,106 @@ public abstract class AbstractTemplateContext
         }
 
         return result;
+    }
+
+    /**
+     * Retrieves the template name.
+     * @return such information.
+     */
+    @NotNull
+    public String getTemplateName()
+    {
+        return getValue(buildTemplateNameKey(), getCommand(), new TemplateNameNotAvailableException());
+    }
+
+    /**
+     * Builds the template name key.
+     * @return such information.
+     */
+    @NotNull
+    protected String buildTemplateNameKey()
+    {
+        return "templateName@" + hashCode();
+    }
+
+    /**
+     * Retrieves the file name.
+     * @return such information.
+     */
+    @NotNull
+    public String getFileName()
+    {
+        return getValue(buildFileNameKey(), getCommand(), new FileNameNotAvailableException());
+    }
+
+    /**
+     * Builds a file name key.
+     * @return such key.
+     */
+    @NotNull
+    protected String buildFileNameKey()
+    {
+        return "fileName@" + hashCode();
+    }
+
+    /**
+     * Retrieves the package name.
+     * @return such information.
+     */
+    @NotNull
+    public String getPackageName()
+    {
+        return getValue(buildPackageNameKey(), getCommand(), new PackageNameNotAvailableException());
+    }
+
+    /**
+     * Builds the package name.
+     * @return such value.
+     */
+    @NotNull
+    protected String buildPackageNameKey()
+    {
+        return "packageName@" + hashCode();
+    }
+
+    /**
+     * Retrieves the root dir.
+     * @return such folder.
+     */
+    @NotNull
+    public File getRootDir()
+    {
+        return getValue(buildRootDirKey(), getCommand(), new RootDirNotAvailableException());
+    }
+
+    /**
+     * Builds the root dir key.
+     * @return such key.
+     */
+    @NotNull
+    protected String buildRootDirKey()
+    {
+        return TemplatePackagingSettings.OUTPUT_DIR + "@" + hashCode();
+    }
+
+    /**
+     * Retrieves the output dir.
+     * @return such folder.
+     */
+    @NotNull
+    public File getOutputDir()
+    {
+        return getValue(buildOutputDirKey(), getCommand(), new OutputDirNotAvailableException());
+    }
+
+    /**
+     * Builds the output dir key.
+     * @return such key.
+     */
+    @NotNull
+    protected String buildOutputDirKey()
+    {
+        return "outputDir@" + hashCode();
     }
 
     /**
