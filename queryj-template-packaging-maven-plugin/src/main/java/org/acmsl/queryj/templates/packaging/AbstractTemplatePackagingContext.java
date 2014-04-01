@@ -318,7 +318,7 @@ public abstract class AbstractTemplatePackagingContext
             getJdbcDriver(
                 buildJdbcDriverKey(),
                 getCommand(),
-                new JdbcSettingNotAvailableException(JdbcSettingNotAvailableException.JdbcSetting.DRIVER);
+                new JdbcSettingNotAvailableException(JdbcSettingNotAvailableException.JdbcSetting.DRIVER));
         );
     }
 
