@@ -346,7 +346,21 @@ public abstract class AbstractTemplatePackagingContext
     @NotNull
     public String getJdbcUsername()
     {
-        return getJdbcUsername(getCommand());
+        return
+            getValue(
+                buildJdbcUrlKey(),
+                getCommand(),
+                new JdbcSettingNotAvailableException(JdbcSetting.URL));
+    }
+
+    /**
+     * Builds the JDBC url key.
+     * @return such key.
+     */
+    @NotNull
+    protected String buildJdbcUrlKey()
+    {
+        return "jdbcUrl@" + hashCode();
     }
 
     /**
