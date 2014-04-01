@@ -104,7 +104,7 @@ public class BasePerForeignKeyFillTemplateChain
     @SuppressWarnings("unchecked")
     protected List<FillHandler<?>> getHandlers(@NotNull final PerForeignKeyTemplateContext context)
     {
-        @NotNull final List<FillHandler<?>> result = new ArrayList<FillHandler<?>>(2);
+        @NotNull final List<FillHandler<?>> result = new ArrayList<>(2);
 
         result.add(
             new TemplateContextFillAdapterHandler
