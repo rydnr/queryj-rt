@@ -132,7 +132,7 @@ public class PerTableTemplateContext
 
     /**
      * Retrieves the static values' key.
-     * @return such values.
+     * @return such key.
      */
     @NotNull
     protected final List<Row<String>> immutableGetStaticValues()
