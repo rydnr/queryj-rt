@@ -123,6 +123,8 @@ public class GlobalFillTemplateChainWrapper
         result.add(new JdbcUserNameHandler(context));
         result.add(new JdbcPasswordHandler(context));
 
+        result.addAll(getChain().getHandlers());
+
         return result;
     }
 }
