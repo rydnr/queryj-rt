@@ -36,6 +36,9 @@
 package org.acmsl.queryj.templates.packaging;
 
 /*
+ * Importing QueryJ Core classes.
+ */
+/*
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.QueryJCommand;
