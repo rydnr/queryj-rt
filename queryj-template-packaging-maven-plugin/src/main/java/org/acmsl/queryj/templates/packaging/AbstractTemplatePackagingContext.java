@@ -364,8 +364,8 @@ public abstract class AbstractTemplatePackagingContext
     }
 
     /**
-     * Retrieves the ve
-     * @return
+     * Retrieves the version information.
+     * @return such information.
      */
     @NotNull
     public String getVersion()
