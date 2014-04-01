@@ -106,7 +106,7 @@ public class DefaultTemplatePackagingContext
     @NotNull
     protected String buildFileNameKey()
     {
-        return new QueryJCommandWrapper<String>(command).getSetting("fileName");
+        return "fileName@" + hashCode();
     }
     /**
      * Specifies the output dir.
