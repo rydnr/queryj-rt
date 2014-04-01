@@ -188,11 +188,11 @@ public class AbstractTemplatePackagingContextTest
         @NotNull final QueryJCommand t_Command =
             new ConfigurationQueryJCommandImpl(new PropertiesConfiguration(), null);
 
-        AbstractTemplatePackagingContext result =
+        @NotNull final AbstractTemplatePackagingContext result =
             new AbstractTemplatePackagingContext(t_Command) {};
 
         @Nullable final String templateName = "template";
-        new QueryJCommandWrapper<String>(t_Command).setSetting("templateName", templateName);
+        result.immutableSetValue(result.buildTemplateNameKey());new QueryJCommandWrapper<String>(t_Command).setSetting("templateName", templateName);
 
         @NotNull final String fileName = "file.name";
         new QueryJCommandWrapper<String>(t_Command).setSetting("fileName", fileName);
