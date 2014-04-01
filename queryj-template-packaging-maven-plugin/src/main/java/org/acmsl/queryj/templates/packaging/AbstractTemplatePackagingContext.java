@@ -49,7 +49,6 @@ import org.acmsl.queryj.api.exceptions.QueryJNonCheckedException;
 /*
  * Importing QueryJ Template Packaging classes.
  */
-import org.acmsl.queryj.api.exceptions.QueryJVersionNotAvailableException;
 import org.acmsl.queryj.api.exceptions.VersionNotAvailableException;
 import org.acmsl.queryj.templates.packaging.exceptions.JdbcSettingNotAvailableException;
 import org.acmsl.queryj.templates.packaging.exceptions.JdbcSettingNotAvailableException.JdbcSetting;
