@@ -102,7 +102,6 @@ public class BasePerRepositoryFillTemplateChain
      */
     @NotNull
     @Override
-    @SuppressWarnings("unchecked")
     protected List<FillHandler<?>> getHandlers(@NotNull final PerRepositoryTemplateContext context)
     {
         @NotNull final List<FillHandler<?>> result = new ArrayList<>(1);
