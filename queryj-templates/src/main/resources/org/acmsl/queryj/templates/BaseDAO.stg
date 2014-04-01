@@ -62,7 +62,7 @@ sourceImpl(table, C) ::= <<
   [
     description(tableName=table.name)
   ],
-  timestamp=C.timestamp)><endif>
+  template=C.timestamp)><endif>
 <package_declaration(p=C.package)>
 
 <project_imports(
