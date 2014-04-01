@@ -225,6 +225,6 @@ public abstract class AbstractTemplatePackagingContext
         return
               "{ \"class\": \"DefaultTemplatePackagingContext\""
             + ", \"package\": \"org.acmsl.queryj.templates.packaging\""
-            + ", \"command\": " + m__Command +" }";
+            + ", \"parentcommand\": " + m__Command +" }";
     }
 }
