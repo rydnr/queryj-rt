@@ -190,6 +190,7 @@ public class AbstractTemplatePackagingContextTest
         @NotNull final QueryJCommand t_Command =
             new ConfigurationQueryJCommandImpl(new PropertiesConfiguration(), null);
 
+        @Nullable final String templateName = "template";
         @NotNull final AbstractTemplatePackagingContext result =
             new AbstractTemplatePackagingContext(t_Command)
             {{
@@ -197,7 +198,6 @@ public class AbstractTemplatePackagingContextTest
             }};
 
 
-        @Nullable final String templateName = "template";
         result.setValue(result.buildTemplateNameKey(), templateName, t_Command);
 
         @NotNull final String fileName = "file.name";
