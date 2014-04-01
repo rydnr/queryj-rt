@@ -99,7 +99,9 @@ public class PerTableTemplateContext
      * Creates a {@link PerTableTemplateContext} with given information.
      * @param command the {@link QueryJCommand}.
      */
-    public PerTableTemplateContext(@NotNull final QueryJCommand command)
+    public PerTableTemplateContext(
+        @NotNull final String tableName,
+        @NotNull final QueryJCommand command)
     {
         super(command);
     }
