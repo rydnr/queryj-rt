@@ -96,7 +96,8 @@ public class DefaultTemplatePackagingContext
         immutableSetValue(buildTemplateDefKey(), templateDef, command);
     }
 
-    private String buildOutputPackageKey()
+    @NotNull
+    protected String buildOutputPackageKey()
     {
         return null;  //To change body of created methods use File | Settings | File Templates.
     }
