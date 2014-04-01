@@ -257,25 +257,6 @@ public abstract class AbstractTemplatePackagingContext
     }
 
     /**
-     * Retrieves the package name.
-     * @param command the command.
-     * @return such information.
-     */
-    @NotNull
-    protected String getPackageName(@NotNull final QueryJCommand command)
-    {
-        @Nullable final String result =
-            new QueryJCommandWrapper<String>(command).getSetting("packageName");
-
-        if (result == null)
-        {
-            throw new PackageNameNotAvailableException();
-        }
-
-        return result;
-    }
-
-    /**
      * Retrieves the root dir.
      * @return such folder.
      */
