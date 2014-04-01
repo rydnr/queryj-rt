@@ -69,7 +69,7 @@ import org.jetbrains.annotations.Nullable;
  */
 @ThreadSafe
 public class PerCustomResultTemplateContext
-    extends AbstractTemplateContext
+    extends AbstractQueryJTemplateContext
 {
     /**
      * The serial version id.
