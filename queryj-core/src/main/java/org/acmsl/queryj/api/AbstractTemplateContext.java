@@ -193,7 +193,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     public String getTemplateName()
     {
-        return getValue(buildTemplateNameKey(), getCommand(), new TemplateNameNotAvailableException());
+        return getValue(buildTemplateNameKey(), getCommand(), new org.acmsl.queryj.templates.packaging.exceptions.TemplateNameNotAvailableException());
     }
 
     /**
