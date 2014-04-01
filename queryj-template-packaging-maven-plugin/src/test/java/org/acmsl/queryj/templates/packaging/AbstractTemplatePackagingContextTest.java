@@ -38,8 +38,8 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing QueryJ Core classes.
  */
-import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.api.AbstractTemplateContext;
+import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 
 /*
