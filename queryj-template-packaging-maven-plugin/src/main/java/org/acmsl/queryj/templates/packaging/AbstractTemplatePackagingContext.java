@@ -82,7 +82,7 @@ import java.io.Serializable;
  */
 @ThreadSafe
 public abstract class AbstractTemplatePackagingContext
-    extends AbstractTemplateContext
+    extends AbstractCommandTemplateContext
     implements Serializable
 {
     /**
