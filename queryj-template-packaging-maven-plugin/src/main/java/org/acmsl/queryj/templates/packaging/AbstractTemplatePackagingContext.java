@@ -143,7 +143,6 @@ public abstract class AbstractTemplatePackagingContext
 
     /**
      * Builds the template name key.
-     * @param command the command.
      * @return such information.
      */
     @NotNull
