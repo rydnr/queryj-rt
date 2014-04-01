@@ -117,7 +117,7 @@ public class PerTableTemplateContext
     @NotNull
     protected String buildTableNameKey()
     {
-        return "TableName@" + hashCode();
+        return TABLE_NAME + "@" + hashCode();
     }
 
     /**
