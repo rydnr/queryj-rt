@@ -122,6 +122,7 @@ public class FillTemplateChainWrapper<C extends QueryJTemplateContext>
     {
         return
               "{ \"class\": \"" + FillTemplateChainWrapper.class.getSimpleName() + '"'
+              + ", \""
             + ", \"parent\": \"" + super.toString() +  "\" }";
     }
 }
