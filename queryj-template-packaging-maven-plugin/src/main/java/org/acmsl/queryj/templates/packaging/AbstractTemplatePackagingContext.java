@@ -211,7 +211,10 @@ public abstract class AbstractTemplatePackagingContext
      * Builds a file name key.
      */
     @NotNull
-    protected String buildFileNameKey();
+    protected String buildFileNameKey()
+    {
+        return "fileName@" + hashCode();
+    }
 
     /**
      * Retrieves the package name.
