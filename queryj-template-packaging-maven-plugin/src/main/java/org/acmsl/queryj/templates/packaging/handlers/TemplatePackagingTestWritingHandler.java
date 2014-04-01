@@ -70,7 +70,8 @@ import java.io.File;
  * Customizes default behavior for test-related generated sources.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @param <T> the template type.
- * @param <C> the template con</C>
+ * @param <C> the template context type.
+ * @paraw <TG> the template generator type.
  * @since 3.0
  * Created: 2013/11/11 21:27
  */
