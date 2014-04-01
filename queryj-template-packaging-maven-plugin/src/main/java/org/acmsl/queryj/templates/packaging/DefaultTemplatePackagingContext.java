@@ -102,7 +102,7 @@ public class DefaultTemplatePackagingContext
      */
     @Override
     @NotNull
-    protected final String buildFileNameKey()
+    protected final String buildOutputDirKey()
     {
         return "fileName@" + hashCode();
     }
