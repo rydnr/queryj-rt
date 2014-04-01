@@ -219,7 +219,12 @@ public abstract class AbstractTemplatePackagingContext
 
         if (result == null)
         {
-            throw exceptionClass.newInstance();;
+            try
+            {
+                throw exceptionClass.newInstance();;
+            }
+            catch (@NotNull final InstantiationException cannotInstantiateException)
+            {
         }
 
         return result;
