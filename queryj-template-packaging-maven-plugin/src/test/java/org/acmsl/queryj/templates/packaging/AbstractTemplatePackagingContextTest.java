@@ -205,7 +205,6 @@ public class AbstractTemplatePackagingContextTest
             }};
 
 
-        @NotNull final File outputDir = new File("target");
         result.immutableSetValue(result.buildOutputDirKey(), outputDir, t_Command);
 
         @NotNull final String jdbcDriver = "jdbc.driver";
