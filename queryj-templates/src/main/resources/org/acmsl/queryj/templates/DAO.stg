@@ -58,7 +58,6 @@ sourceImpl(table, engine, C) ::= <<
 <C.header>
 <else>
 <java_header(
-  year=C.current_year,
   description=
   [
     first_line_description(tableName=table.name, engine=engine),
