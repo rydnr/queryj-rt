@@ -45,6 +45,7 @@ import org.acmsl.queryj.api.TemplateContext;
 import org.acmsl.queryj.api.exceptions.FileNameNotAvailableException;
 import org.acmsl.queryj.api.exceptions.PackageNameNotAvailableException;
 import org.acmsl.queryj.api.exceptions.QueryJNonCheckedException;
+import org.acmsl.queryj.api.exceptions.VersionNotAvailableException;
 
 /*
  * Importing QueryJ Template Packaging classes.
