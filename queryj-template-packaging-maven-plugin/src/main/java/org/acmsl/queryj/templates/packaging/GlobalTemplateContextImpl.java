@@ -102,8 +102,7 @@ public class GlobalTemplateContextImpl
 
     /**
      * Builds a key to retrieve the {@link TemplateDef}s.
-     * @param command the command.
-     * @return such list.
+     * @return such key.
      */
     @NotNull
     protected List<TemplateDef<String>> getTemplateDefs(@NotNull final QueryJCommand command)
