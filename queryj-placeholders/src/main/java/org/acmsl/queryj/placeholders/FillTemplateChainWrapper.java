@@ -85,7 +85,6 @@ public class FillTemplateChainWrapper<C extends QueryJTemplateContext>
      */
     @Override
     @NotNull
-    @SuppressWarnings("unchecked")
     protected List<FillHandler<?>> getHandlers(@NotNull final C context)
     {
         @NotNull final List<FillHandler<?>> result = new ArrayList<>(22);
