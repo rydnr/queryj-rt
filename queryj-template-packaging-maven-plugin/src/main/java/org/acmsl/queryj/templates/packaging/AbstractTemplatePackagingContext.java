@@ -160,6 +160,7 @@ public abstract class AbstractTemplatePackagingContext
      * Annotates a value in the command.
      * @param key the key.
      * @param value the value.
+     * @param command the command.
      */
     protected final <T> void immutableSetValue(
         @NotNull final String key, @NotNull final T value, @NotNull final QueryJCommand command)
