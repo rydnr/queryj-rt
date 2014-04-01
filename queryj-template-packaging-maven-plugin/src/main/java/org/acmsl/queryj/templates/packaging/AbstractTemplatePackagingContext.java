@@ -219,7 +219,7 @@ public abstract class AbstractTemplatePackagingContext
 
         if (result == null)
         {
-            throw new FileNameNotAvailableException();
+            throw exceptionClass.newInstance();;
         }
 
         return result;
