@@ -100,7 +100,6 @@ public class BasePerTableFillTemplateChain
      */
     @NotNull
     @Override
-    @SuppressWarnings("unchecked")
     protected List<FillHandler<?>> getHandlers(@NotNull final PerTableTemplateContext context)
     {
         @NotNull final List<FillHandler<?>> result = new ArrayList<>(12);
