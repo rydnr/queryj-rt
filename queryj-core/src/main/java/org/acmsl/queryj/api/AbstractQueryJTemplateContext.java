@@ -64,7 +64,7 @@ public class AbstractQueryJTemplateContext
      * Creates an {@link AbstractTemplateContext} with given information.
      * @param command the {@link org.acmsl.queryj.QueryJCommand} instance.
      */
-    protected AbstractTemplateContext(@NotNull final QueryJCommand command)
+    protected AbstractQueryJTemplateContext(@NotNull final QueryJCommand command)
     {
         immutableSetCommand(command);
     }
