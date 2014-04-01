@@ -53,7 +53,8 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2014/04/01 21:26
  */
 @ThreadSafe
-public class AbstractQueryJTemplateContext
+public abstract class AbstractQueryJTemplateContext
+    extends AbstractTemplateContext
 {
     /**
      * The command.
