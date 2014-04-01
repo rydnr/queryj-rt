@@ -104,7 +104,7 @@ public class DefaultTemplatePackagingContext
     @Override
     public String getFileName()
     {
-        return new QueryJCommandWrapper<String>(command).getSetting("fileName");
+        return getFileName(getCommand());
     }
 
     /**
