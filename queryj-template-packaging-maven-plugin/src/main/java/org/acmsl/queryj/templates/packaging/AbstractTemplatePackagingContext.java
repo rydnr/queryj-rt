@@ -362,7 +362,11 @@ public abstract class AbstractTemplatePackagingContext
         return TemplatePackagingSettings.JDBC_PASSWORD;
     }
 
+    @NotNull
+    public String getVersion()
+    {
 
+    }
     /**
      * {@inheritDoc}
      */
