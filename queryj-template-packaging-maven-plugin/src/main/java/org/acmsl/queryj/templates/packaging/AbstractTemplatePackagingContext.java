@@ -209,7 +209,7 @@ public abstract class AbstractTemplatePackagingContext
      * @return such information.
      */
     @NotNull
-    protected String getValue(@NotNull final QueryJCommand command)
+    protected String getValue(@NotNull final String key, @NotNull final QueryJCommand command)
     {
         @Nullable final String result =
             new QueryJCommandWrapper<String>(command).getSetting(key);
