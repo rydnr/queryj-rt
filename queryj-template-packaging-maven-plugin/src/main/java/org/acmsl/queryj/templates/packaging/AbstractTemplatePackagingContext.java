@@ -253,7 +253,7 @@ public abstract class AbstractTemplatePackagingContext
     @NotNull
     public String getPackageName()
     {
-        return getPackageName(getCommand());
+        return getValue(buildPackageNameKey(), getCommand());
     }
 
     /**
