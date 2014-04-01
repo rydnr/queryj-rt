@@ -54,4 +54,5 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public class AbstractQueryJTemplateContext
 {
+
 }
