@@ -169,6 +169,26 @@ public abstract class AbstractTemplatePackagingContext
     }
 
     /**
+     * Retrieves the template name.
+     * @return such information.
+     */
+    @NotNull
+    public String getTemplateName()
+    {
+        return getValue(buildTemplateNameKey(), getCommand(), new TemplateNameNotAvailableException());
+    }
+
+    /**
+     * Builds the template name key.
+     * @return such information.
+     */
+    @NotNull
+    protected String buildTemplateNameKey()
+    {
+        return "templateName@" + hashCode();
+    }
+
+    /**
      * Retrieves the file name.
      * @return such information.
      */
