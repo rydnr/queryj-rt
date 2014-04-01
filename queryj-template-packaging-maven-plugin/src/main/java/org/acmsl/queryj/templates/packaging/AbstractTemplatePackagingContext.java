@@ -256,6 +256,8 @@ public abstract class AbstractTemplatePackagingContext
         return getValue(buildPackageNameKey(), getCommand(), PackageNameNotAvailableException.class);
     }
 
+    protected abstract String buildPackageNameKey();
+
     /**
      * Retrieves the root dir.
      * @return such folder.
