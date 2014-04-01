@@ -211,7 +211,8 @@ public abstract class AbstractTemplatePackagingContext
     @NotNull
     protected <T> T getValue(
         @NotNull final String key,
-        @NotNull final QueryJCommand command, @NotNull final Class<Throwable> exceptionClass)
+        @NotNull final QueryJCommand command,
+        @NotNull final Class<Throwable> exceptionClass)
     {
         @Nullable final T result =
             new QueryJCommandWrapper<T>(command).getSetting(key);
