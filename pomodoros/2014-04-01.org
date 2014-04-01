@@ -1,6 +1,13 @@
 * 2014/04/01
 ** Refactor TemplateContext #459: 
-*** TODO Check why only Cucumber sources are generated: 1 ->
+*** TODO Check why Cucumber sources are not generated: 1 ->
 *** TODO Make queryj-templates tests pass: 3 -> 
 ** Pending:
 *** Move TableTestHelper out of QueryJ Templates
+
+
+ValidationHandler
+Log4JInitializer
+FindTemplateDefs
+ParseTemplateDefs
+TemplateBuildHandler
