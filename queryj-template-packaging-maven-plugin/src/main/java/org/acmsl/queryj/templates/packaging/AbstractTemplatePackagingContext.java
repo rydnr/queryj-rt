@@ -167,6 +167,9 @@ public class AbstractTemplatePackagingContext
     }
 
     /**
+     *
+     */
+    /**
      * Retrieves the file name.
      * @param command the command.
      * @return such information.
