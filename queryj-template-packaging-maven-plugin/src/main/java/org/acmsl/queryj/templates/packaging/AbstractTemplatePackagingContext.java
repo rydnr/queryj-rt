@@ -148,8 +148,7 @@ public abstract class AbstractTemplatePackagingContext
     @NotNull
     protected String buildTemplateNameKey()
     {
-        @Nullable final String result =
-            new QueryJCommandWrapper<String>(command).getSetting("templateName");
+        return "templateName@" + hashCode();
 
         if (result == null)
         {
