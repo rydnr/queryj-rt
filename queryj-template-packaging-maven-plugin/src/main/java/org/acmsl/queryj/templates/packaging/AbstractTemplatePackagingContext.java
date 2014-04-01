@@ -204,6 +204,25 @@ public abstract class AbstractTemplatePackagingContext
     }
 
     /**
+     * Retrieves the file name.
+     * @param command the command.
+     * @return such information.
+     */
+    @NotNull
+    protected String getFileName(@NotNull final QueryJCommand command, @NotNull final String key)
+    {
+        @Nullable final String result =
+            new QueryJCommandWrapper<String>(command).getSetting(key);
+
+        if (result == null)
+        {
+            throw new FileNameNotAvailableException();
+        }
+
+        return result;
+    }
+
+    /**
      * Retrieves the package name.
      * @return such information.
      */
