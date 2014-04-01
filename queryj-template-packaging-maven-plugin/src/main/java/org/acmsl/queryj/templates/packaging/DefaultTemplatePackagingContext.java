@@ -90,25 +90,6 @@ public class DefaultTemplatePackagingContext
     /**
      * {@inheritDoc}
      */
-    @Override
-    @NotNull
-    protected final String buildFileNameKey()
-    {
-        return "fileName@" + hashCode();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @NotNull
-    protected final String buildOutputDirKey()
-    {
-        return "outputDir@" + hashCode();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     protected final String buildTemplateDefKey()
     {
