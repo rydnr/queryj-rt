@@ -209,6 +209,7 @@ public class AbstractTemplatePackagingContextTest
                 immutableSetValue(buildOutputDirKey(), outputDir, t_Command);
                 immutableSetValue(buildJdbcDriverKey(), jdbcDriver, t_Command);
                 immutableSetValue(buildJdbcUrlKey(), jdbcUrl, t_Command);
+                    result.immutableSetValue(result.buildJdbcUserNameKey(), jdbcUsername, t_Command);
             }};
 
 
