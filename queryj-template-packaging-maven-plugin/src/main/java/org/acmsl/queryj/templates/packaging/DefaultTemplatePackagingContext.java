@@ -137,7 +137,7 @@ public class DefaultTemplatePackagingContext
     protected TemplateDef<String> getTemplateDef(@NotNull final QueryJCommand command)
     {
         @Nullable final TemplateDef<String> result =
-            new QueryJCommandWrapper<TemplateDef<String>>(command).getSetting("templateDef");
+            new QueryJCommandWrapper<TemplateDef<String>>(command).getSetting("templateDef" + serialVersionUID);
 
         if (result == null)
         {
