@@ -83,7 +83,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * Writes <i>per-table</i> templates.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
- * @param <
+ * @param <T> the template
  */
 @ThreadSafe
 public abstract class AbstractTemplateWritingHandler
