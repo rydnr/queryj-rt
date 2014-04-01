@@ -90,7 +90,8 @@ public class DefaultTemplatePackagingContext
         @NotNull final String outputPackage,
         @NotNull final String fileName,
         @NotNull final File outputDir,
-        @NotNull final TemplateDef<String> templateDef, @NotNull final QueryJCommand command)
+        @NotNull final TemplateDef<String> templateDef,
+        @NotNull final QueryJCommand command)
     {
         super(command);
         immutableSetValue(buildTemplateNameKey(), templateName, command);
