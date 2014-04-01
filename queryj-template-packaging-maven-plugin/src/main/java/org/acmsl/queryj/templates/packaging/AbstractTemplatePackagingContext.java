@@ -106,35 +106,6 @@ public abstract class AbstractTemplatePackagingContext
     }
 
     /**
-     * Specifies the name of the template.
-     * @param command such name.
-     */
-    protected final void immutableSetCommand(@NotNull final QueryJCommand command)
-    {
-        this.m__Command = command;
-    }
-
-    /**
-     * Specifies the name of the template.
-     * @param command such name.
-     */
-    @SuppressWarnings("unused")
-    protected void setCommand(@NotNull final QueryJCommand command)
-    {
-        immutableSetCommand(command);
-    }
-
-    /**
-     * Retrieves the template name.
-     * @return such information.
-     */
-    @NotNull
-    public QueryJCommand getCommand()
-    {
-        return this.m__Command;
-    }
-
-    /**
      * Annotates a value in the command.
      * @param key the key.
      * @param value the value.
