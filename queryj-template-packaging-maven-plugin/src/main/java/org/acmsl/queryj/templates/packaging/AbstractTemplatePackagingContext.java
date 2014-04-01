@@ -324,7 +324,7 @@ public abstract class AbstractTemplatePackagingContext
     {
         return
             getValue(
-                buildJdbcDriverKey(),
+                buildJdbcUrlKey(),
                 getCommand(),
                 new JdbcSettingNotAvailableException(JdbcSetting.URL));
     }
