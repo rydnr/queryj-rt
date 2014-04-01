@@ -385,28 +385,6 @@ public abstract class AbstractTemplatePackagingContext
     protected String buildJdbcUserNameKey()
     {
         return "jdbcUserName@" + hashCode();
-        return getJdbcPassword(getCommand());
-    }
-
-    /**
-     * Retrieves the JDBC password.
-     * @param command the command.
-     * @return the JDBC password.
-     */
-    @NotNull
-    protected String getJdbcPassword(@NotNull final QueryJCommand command)
-    {
-        @Nullable final String result =
-            new QueryJCommandWrapper<String>(command).getSetting("jdbcPassword");
-
-        if (result == null)
-        {
-            throw
-                new JdbcSettingNotAvailableException(
-                    JdbcSettingNotAvailableException.JdbcSetting.PASSWORD);
-        }
-
-        return result;
     }
 
     /**
