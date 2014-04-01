@@ -395,7 +395,7 @@
             <compilerArgument>-Xlint:all</compilerArgument>
             <compilerArgument>-Xdoclint:all</compilerArgument>
             <compilerArgument>-Xlint:unchecked</compilerArgument>
-            <compilerArgument>-Xlint:deprecated</compilerArgument>
+            <compilerArgument>-Xlint:deprecation</compilerArgument>
           </configuration>
         </plugin>
         <plugin>
