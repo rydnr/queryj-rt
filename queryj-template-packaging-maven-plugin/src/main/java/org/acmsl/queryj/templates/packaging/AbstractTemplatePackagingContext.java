@@ -378,7 +378,7 @@ public abstract class AbstractTemplatePackagingContext
     }
 
     /**
-     * Builds the JDBC user name key.
+     * Builds the JDBC password key.
      * @return such key.
      */
     @NotNull
