@@ -68,7 +68,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class PerCustomSqlTemplateContext
-    extends AbstractTemplateContext
+    extends AbstractQueryJTemplateContext
 {
     private static final long serialVersionUID = -1302836113779801668L;
 
