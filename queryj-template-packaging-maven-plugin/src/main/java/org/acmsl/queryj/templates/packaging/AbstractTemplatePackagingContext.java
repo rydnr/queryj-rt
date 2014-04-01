@@ -312,15 +312,6 @@ public abstract class AbstractTemplatePackagingContext
     protected String buildJdbcDriverKey()
     {
         return "jdbcDriver@" + hashCode();
-
-        if (result == null)
-        {
-            throw
-                new JdbcSettingNotAvailableException(
-                    JdbcSettingNotAvailableException.JdbcSetting.DRIVER);
-        }
-
-        return result;
     }
 
     /**
