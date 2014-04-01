@@ -228,6 +228,7 @@ public abstract class AbstractTemplatePackagingContext
             catch (@NotNull final InstantiationException | IllegalAccessException cannotInstantiateException)
             {
             }
+
             if (t_ExceptionToThrow != null)
             {
                 throw t_ExceptionToThrow;
