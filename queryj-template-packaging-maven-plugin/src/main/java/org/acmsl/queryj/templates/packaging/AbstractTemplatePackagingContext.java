@@ -225,6 +225,7 @@ public abstract class AbstractTemplatePackagingContext
             }
             catch (@NotNull final InstantiationException cannotInstantiateException)
             {
+            }
         }
 
         return result;
