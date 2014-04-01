@@ -84,35 +84,6 @@ public abstract class AbstractQueryJTemplateContext
     }
 
     /**
-     * Specifies the command.
-     * @param command the command.
-     */
-    private void immutableSetCommand(@NotNull final QueryJCommand command)
-    {
-        m__Command = command;
-    }
-
-    /**
-     * Specifies the command.
-     * @param command the command.
-     */
-    @SuppressWarnings("unused")
-    protected void setCommand(@NotNull final QueryJCommand command)
-    {
-        immutableSetCommand(command);
-    }
-
-    /**
-     * Retrieves the command.
-     * @return such command.
-     */
-    @NotNull
-    public QueryJCommand getCommand()
-    {
-        return m__Command;
-    }
-
-    /**
      * Retrieves the metadata manager.
      * @return such manager.
      */
