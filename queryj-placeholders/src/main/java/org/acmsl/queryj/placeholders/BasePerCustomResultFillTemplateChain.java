@@ -117,9 +117,8 @@ public class BasePerCustomResultFillTemplateChain
 
         result.add(
             (FillAdapterHandler)
-                new TemplateContextFillAdapterHandler
-                    <>(
-                        new CustomResultTypeImportsHandler(context)));
+                new TemplateContextFillAdapterHandler<>(
+                    new CustomResultTypeImportsHandler(context)));
 
         result.add(
             (FillAdapterHandler)
