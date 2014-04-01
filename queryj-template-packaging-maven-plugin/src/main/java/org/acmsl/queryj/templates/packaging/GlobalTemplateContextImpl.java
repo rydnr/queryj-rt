@@ -43,10 +43,11 @@ import org.acmsl.queryj.QueryJCommand;
 /*
  * Importing QueryJ Template Packaging classes.
  */
+import org.acmsl.queryj.templates.packaging.exceptions.TemplateDefNotAvailableException;
+
 /*
  * Importing JetBrains annotations.
  */
-import org.acmsl.queryj.templates.packaging.exceptions.TemplateDefNotAvailableException;
 import org.jetbrains.annotations.NotNull;
 
 /*
