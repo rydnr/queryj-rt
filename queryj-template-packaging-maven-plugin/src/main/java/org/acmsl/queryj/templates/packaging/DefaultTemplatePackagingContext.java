@@ -104,7 +104,7 @@ public class DefaultTemplatePackagingContext
     @NotNull
     protected final String buildOutputDirKey()
     {
-        return "fileName@" + hashCode();
+        return "output@" + hashCode();
     }
 
     /**
