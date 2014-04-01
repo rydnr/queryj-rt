@@ -104,7 +104,7 @@ public class PerTableTemplatesTestTemplateWritingHandler
     {
         return
             new TemplatePackagingTemplateGenerator
-                <PerTableTemplatesTestTemplate, GlobalTemplateContext>(caching, threadCount);
+                <>(caching, threadCount);
     }
 
     /**
