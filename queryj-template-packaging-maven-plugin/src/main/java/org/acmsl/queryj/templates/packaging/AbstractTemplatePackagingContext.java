@@ -170,6 +170,7 @@ public class AbstractTemplatePackagingContext
      * Builds a file name key.
      */
     protected abstract String buildFileNameKey();
+
     /**
      * Retrieves the file name.
      * @param command the command.
