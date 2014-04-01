@@ -71,6 +71,9 @@ import org.jetbrains.annotations.Nullable;
 public class PerCustomResultTemplateContext
     extends AbstractTemplateContext
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = 5193168262427622240L;
 
     /**
