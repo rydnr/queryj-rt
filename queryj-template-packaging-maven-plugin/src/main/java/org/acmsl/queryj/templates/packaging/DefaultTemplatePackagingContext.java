@@ -96,6 +96,10 @@ public class DefaultTemplatePackagingContext
         immutableSetValue(buildTemplateDefKey(), templateDef, command);
     }
 
+    private String buildOutputPackageKey()
+    {
+    }
+
     /**
      * {@inheritDoc}
      */
