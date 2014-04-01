@@ -222,7 +222,7 @@ public abstract class AbstractTemplatePackagingContext
 
         if (result == null)
         {
-            @Nullable RuntimeException t_ExceptionToThrow = null;
+            @Nullable Throwable t_ExceptionToThrow = null;
 
             try
             {
