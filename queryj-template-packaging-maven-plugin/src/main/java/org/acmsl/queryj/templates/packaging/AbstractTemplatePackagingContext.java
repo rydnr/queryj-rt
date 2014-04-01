@@ -53,15 +53,11 @@ import org.acmsl.queryj.api.exceptions.VersionNotAvailableException;
  */
 import org.acmsl.queryj.templates.packaging.exceptions.JdbcSettingNotAvailableException;
 import org.acmsl.queryj.templates.packaging.exceptions.JdbcSettingNotAvailableException.JdbcSetting;
-import org.acmsl.queryj.templates.packaging.exceptions.OutputDirNotAvailableException;
-import org.acmsl.queryj.templates.packaging.exceptions.RootDirNotAvailableException;
-import org.acmsl.queryj.templates.packaging.exceptions.TemplateNameNotAvailableException;
 
 /*
  * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 /*
  * Importing checkthread.org annotations.
