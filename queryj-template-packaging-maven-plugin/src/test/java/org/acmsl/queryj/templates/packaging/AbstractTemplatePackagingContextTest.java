@@ -204,6 +204,7 @@ public class AbstractTemplatePackagingContextTest
         result.immutableSetValue(result.buildRootDirKey(), rootDir, t_Command);
 
         @NotNull final File outputDir = new File("target");
+        result.immutableSetValue(result.buildOutputDirKey(), outputDir, t_Command);
         new QueryJCommandWrapper<File>(t_Command).setSetting("outputDir", outputDir);
 
         @NotNull final String jdbcDriver = "jdbc.driver";
