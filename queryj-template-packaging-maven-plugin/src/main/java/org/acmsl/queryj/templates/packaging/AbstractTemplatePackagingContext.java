@@ -161,7 +161,7 @@ public abstract class AbstractTemplatePackagingContext
      * @param fileName the file name.
      */
     protected final <T> void immutableSetValue(
-        @NotNull final String key, @NotNull final QueryJCommand command)
+        @NotNull final String key, @NotNull final T value, @NotNull final QueryJCommand command)
     {
         new QueryJCommandWrapper<String>(command).setSetting("fileName@" + hashCode(), fileName);
     }
