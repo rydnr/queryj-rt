@@ -330,7 +330,7 @@ public abstract class AbstractTemplatePackagingContext
     }
 
     /**
-     * Builds the JDBC driver key.
+     * Builds the JDBC url key.
      * @return such key.
      */
     @NotNull
