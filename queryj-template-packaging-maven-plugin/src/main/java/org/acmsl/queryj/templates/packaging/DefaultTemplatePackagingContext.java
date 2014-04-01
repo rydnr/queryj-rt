@@ -99,18 +99,10 @@ public class DefaultTemplatePackagingContext
 
     /**
      * Retrieves the file name.
+     * @return such command.
      * @return such information.
      */
     @Override
-    public String getFileName()
-    {
-        return getFileName(getCommand());
-    }
-
-    /**
-     * Retrieves the file name.
-     * @return such information.
-     */
     protected String getFileName(@NotNull final QueryJCommand command)
     {
         return new QueryJCommandWrapper<String>(command).getSetting("fileName");
