@@ -103,7 +103,7 @@ public class DefaultTemplatePackagingContext
      */
     protected String getFileName()
     {
-        return new QueryJCommandWrapper<String>(command).setSetting("fileName" + serialVersionUID, fileName);
+        return new QueryJCommandWrapper<String>(command).getSetting("fileName" + serialVersionUID, fileName);
     }
     /**
      * Specifies the output dir.
