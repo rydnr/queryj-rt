@@ -89,7 +89,7 @@ public class BasePerCustomSqlFillTemplateChain
     public QueryJCommand providePlaceholders(final boolean relevantOnly)
         throws QueryJBuildException
     {
-        return new FillTemplateChainWrapper<PerCustomSqlTemplateContext>(this).providePlaceholders(relevantOnly);
+        return new FillTemplateChainWrapper<>(this).providePlaceholders(relevantOnly);
     }
 
     /**
