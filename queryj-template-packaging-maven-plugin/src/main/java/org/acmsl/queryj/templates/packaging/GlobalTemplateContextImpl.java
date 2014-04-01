@@ -108,12 +108,5 @@ public class GlobalTemplateContextImpl
     protected String buildTemplateDefsKey()
     {
         return "templateDefs@" + hashCode();
-
-        if (result == null)
-        {
-            throw new TemplateDefNotAvailableException();
-        }
-
-        return result;
     }
 }
