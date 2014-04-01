@@ -114,7 +114,7 @@ public class DefaultTemplatePackagingContext
     protected final void immutableSetTemplateDef(
         @NotNull final TemplateDef<String> templateDef, @NotNull final QueryJCommand command)
     {
-        new QueryJCommandWrapper<TemplateDef<String>>(command).setSetting("templateDef", templateDef);
+        new QueryJCommandWrapper<TemplateDef<String>>(command).setSetting("templateDef" + serialVersionUID, templateDef);
     }
 
     /**
