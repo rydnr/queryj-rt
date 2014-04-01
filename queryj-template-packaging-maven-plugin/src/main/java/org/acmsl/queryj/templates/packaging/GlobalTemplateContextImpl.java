@@ -107,7 +107,7 @@ public class GlobalTemplateContextImpl
     @NotNull
     protected String buildTemplateDefsKey()
     {
-        return "templateDefs");
+        return "templateDefs@" + hashCode();
 
         if (result == null)
         {
