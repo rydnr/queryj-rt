@@ -84,7 +84,7 @@ public class DefaultTemplatePackagingContext
         super(command);
         immutableSetValue(fileName, buildFileNameKey(), command);
         immutableSetValue(outputDir, buildOutputDirKey(), command);
-        immutableSetTemplateDef(templateDef, buildTemplateDefKey(), command);
+        immutableSetValue(templateDef, buildTemplateDefKey(), command);
     }
 
     /**
@@ -96,6 +96,17 @@ public class DefaultTemplatePackagingContext
     {
         return "fileName@" + hashCode();
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    @NotNull
+    protected final String buildFileNameKey()
+    {
+        return "fileName@" + hashCode();
+    }
+
     /**
      * Specifies the output dir.
      * @param outputDir the output dir.
