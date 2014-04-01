@@ -83,7 +83,7 @@ public class DefaultTemplatePackagingContext
     {
         super(command);
         immutableSetValue(buildFileNameKey(), fileName, command);
-        immutableSetValue(outputDir, buildOutputDirKey(), command);
+        immutableSetValue(buildOutputDirKey(), outputDir, command);
         immutableSetValue(templateDef, buildTemplateDefKey(), command);
     }
 
