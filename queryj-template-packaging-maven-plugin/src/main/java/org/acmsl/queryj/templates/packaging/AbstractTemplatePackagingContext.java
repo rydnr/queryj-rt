@@ -82,8 +82,8 @@ import java.io.Serializable;
  */
 @ThreadSafe
 public abstract class AbstractTemplatePackagingContext
-    extends AbstractTemplateContext,
-               Serializable
+    extends AbstractTemplateContext
+    implements Serializable
 {
     /**
      * The serial version id.
