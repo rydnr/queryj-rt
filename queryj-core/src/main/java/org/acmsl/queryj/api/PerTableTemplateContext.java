@@ -111,6 +111,16 @@ public class PerTableTemplateContext
     }
 
     /**
+     * Retrieves the key for the table name.
+     * @return such key.
+     */
+    @NotNull
+    protected String buildTableNameKey()
+    {
+        return "TableName@" + hashCode();
+    }
+
+    /**
      * Retrieves the table name.
      * @return such name.
      */
