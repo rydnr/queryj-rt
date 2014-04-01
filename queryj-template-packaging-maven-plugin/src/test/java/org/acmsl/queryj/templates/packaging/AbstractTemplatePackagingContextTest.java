@@ -211,7 +211,6 @@ public class AbstractTemplatePackagingContextTest
 
         @NotNull final String jdbcUrl = "jdbc.url";
         result.immutableSetValue(result.buildJdbcUrlKey(), jdbcUrl, t_Command);
-        new QueryJCommandWrapper<String>(t_Command).setSetting("jdbcUrl", jdbcUrl);
 
         @NotNull final String jdbcUsername = "jdbc.username";
         new QueryJCommandWrapper<String>(t_Command).setSetting("jdbcUserName", jdbcUsername);
