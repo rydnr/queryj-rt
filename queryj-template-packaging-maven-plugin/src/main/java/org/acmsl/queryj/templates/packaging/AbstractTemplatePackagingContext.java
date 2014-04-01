@@ -40,6 +40,7 @@ package org.acmsl.queryj.templates.packaging;
  */
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
+import org.acmsl.queryj.QueryJSettings;
 import org.acmsl.queryj.api.exceptions.FileNameNotAvailableException;
 import org.acmsl.queryj.api.exceptions.PackageNameNotAvailableException;
 import org.acmsl.queryj.api.exceptions.QueryJNonCheckedException;
@@ -368,7 +369,16 @@ public abstract class AbstractTemplatePackagingContext
         return getValue(buildVersionKey(), getCommand(), new QueryJVersionNotAvailableException());
     }
 
+    /**
+     * Builds the key for the version.
+     * @return such key.
+     */
+    @NotNull
     protected String buildVersionKey()
+    {
+        return QueryJSettings.VERSION;
+    }
+
     /**
      * {@inheritDoc}
      */
