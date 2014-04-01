@@ -131,7 +131,7 @@ public class PerTableTemplateContext
     }
 
     /**
-     * Retrieves the static values.
+     * Retrieves the static values' key.
      * @return such values.
      */
     @NotNull
