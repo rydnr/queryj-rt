@@ -305,7 +305,7 @@ public abstract class AbstractTemplatePackagingContext
     }
 
     /**
-     * Retrieves the JDBC driver.
+     * Builds the JDBC driver.
      * @return the JDBC driver.
      */
     @NotNull
