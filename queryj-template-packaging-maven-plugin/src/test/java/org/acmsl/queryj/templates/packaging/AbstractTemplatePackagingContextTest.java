@@ -203,7 +203,6 @@ public class AbstractTemplatePackagingContextTest
             }};
 
 
-        @NotNull final File rootDir = new File(".");
         result.immutableSetValue(result.buildRootDirKey(), rootDir, t_Command);
 
         @NotNull final File outputDir = new File("target");
