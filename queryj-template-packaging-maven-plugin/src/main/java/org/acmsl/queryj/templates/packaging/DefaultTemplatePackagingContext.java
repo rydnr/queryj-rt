@@ -98,6 +98,11 @@ public class DefaultTemplatePackagingContext
     }
 
     /**
+     * Retrieves the file name.
+     * @return such information.
+     */
+    protected
+    /**
      * Specifies the output dir.
      * @param outputDir the output dir.
      */
