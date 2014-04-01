@@ -88,16 +88,6 @@ public class DefaultTemplatePackagingContext
     }
 
     /**
-     * Specifies the file name.
-     * @param fileName the file name.
-     */
-    protected final void immutableSetFileName(
-        @NotNull final String fileName, @NotNull final QueryJCommand command)
-    {
-        new QueryJCommandWrapper<String>(command).setSetting("fileName@" + hashCode(), fileName);
-    }
-
-    /**
      * {@inheritDoc}
      */
     @Override
