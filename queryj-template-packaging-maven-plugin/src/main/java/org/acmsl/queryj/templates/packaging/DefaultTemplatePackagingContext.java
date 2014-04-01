@@ -90,7 +90,7 @@ public class DefaultTemplatePackagingContext
     {
         super(command);
         immutableSetValue(buildTemplateNameKey(), templateName, command);
-        immutableSetValue(buildOutputPackageKey(), outputPackage, command);
+        immutableSetValue(buildPackageKey(), outputPackage, command);
         immutableSetValue(buildFileNameKey(), fileName, command);
         immutableSetValue(buildOutputDirKey(), outputDir, command);
         immutableSetValue(buildTemplateDefKey(), templateDef, command);
