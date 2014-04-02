@@ -369,7 +369,7 @@ public class ConfigurationQueryJCommandImpl
     {
         return
             "{ \"class\": \"" + ConfigurationQueryJCommandImpl.class.getSimpleName()
-            + ", \"package\": \"org.acmsl.queryj."
+            + ", \"package\": \"org.acmsl.queryj\""
             + ", \"log\": \"" + m__Log + '"'
             + ", \"configuration\": "
             + "{ \"class\": \"" + m__Configuration.getClass().getSimpleName() + "' }";
