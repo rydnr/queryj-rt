@@ -254,6 +254,61 @@ public abstract class AbstractTemplateContext
     }
 
     /**
+     * Retrieves the value.
+     * @param key the key.
+     * @param command the command.
+     * @param exceptionToThrow the exception to throw.
+     * @param <T> the value type.
+     * @return such information.
+     */
+    @NotNull
+    protected <T> T getValue(
+        @NotNull final String key,
+        @NotNull final QueryJCommand command,
+        @NotNull final QueryJNonCheckedException exceptionToThrow)
+    {
+        return getValue(key, getPk(), command, exceptionToThrow);
+    }
+
+    /**
+     * Retrieves the value.
+     * @param key the key.
+     * @param pk the primary key.
+     * @param command the command.
+     * @param exceptionToThrow the exception to throw.
+     * @param <T> the value type.
+     * @return such information.
+     */
+    @NotNull
+    protected <T> T getValue(
+        @NotNull final String key,
+        @NotNull final String pk,
+        @NotNull final QueryJCommand command,
+        @NotNull final QueryJNonCheckedException exceptionToThrow)
+    {
+        @Nullable final T result;
+
+        @Nullable final T aux =
+            new QueryJCommandWrapper<T>(command).getSetting(key + '|' + pk);
+
+        if (aux == null)
+        {
+            result = new QueryJCommandWrapper<T>(command).getSetting(key);
+        }
+        else
+        {
+            result = aux;
+        }
+
+        if (result == null)
+        {
+            throw exceptionToThrow;
+        }
+
+        return result;
+    }
+
+    /**
      * Retrieves the template name.
      * @return such information.
      */
