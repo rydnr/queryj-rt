@@ -114,7 +114,7 @@ public abstract class AbstractQueryJTemplateContext
     @Override
     public CustomSqlProvider getCustomSqlProvider()
     {
-        return getCustomSqlProvider(getCommand());
+        return getValue()
     }
 
     /**
