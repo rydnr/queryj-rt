@@ -377,10 +377,9 @@ public class ConfigurationQueryJCommandImpl
 
         while (t_itKey.hasNext())
         {
-        for (@Nullable final String t_Key : conf.getKeys())
-        {
-
+            result.append()
         }
+
         return result.toString();
     }
 
