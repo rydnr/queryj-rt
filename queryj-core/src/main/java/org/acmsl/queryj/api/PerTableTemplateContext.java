@@ -231,38 +231,6 @@ public class PerTableTemplateContext
     /**
      * {@inheritDoc}
      */
-    @Override
-    public int hashCode()
-    {
-        return new HashCodeBuilder().appendSuper(super.hashCode()).append(getCommand())
-            .toHashCode();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public boolean equals(@Nullable final Object obj)
-    {
-        if (obj == null)
-        {
-            return false;
-        }
-        if (getClass() != obj.getClass())
-        {
-            return false;
-        }
-        final PerTableTemplateContext other = (PerTableTemplateContext) obj;
-
-        return
-            new EqualsBuilder()
-                .appendSuper(super.equals(obj)).append(this.getCommand(), other.getCommand())
-                .isEquals();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String toString()
