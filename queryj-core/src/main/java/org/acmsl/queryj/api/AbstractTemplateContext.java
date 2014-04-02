@@ -279,7 +279,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     protected String buildFileNameKey()
     {
-        return "fileName@" + hashCode();
+        return "fileName";
     }
 
     /**
