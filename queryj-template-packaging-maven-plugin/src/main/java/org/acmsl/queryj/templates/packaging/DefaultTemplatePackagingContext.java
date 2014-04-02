@@ -43,8 +43,6 @@ import org.acmsl.queryj.QueryJCommand;
 /*
  * Importing QueryJ Template Packaging classes.
  */
-import org.acmsl.queryj.api.AbstractTemplateContext;
-import org.acmsl.queryj.api.TemplateContext;
 import org.acmsl.queryj.templates.packaging.exceptions.TemplateDefNotAvailableException;
 
 /*
