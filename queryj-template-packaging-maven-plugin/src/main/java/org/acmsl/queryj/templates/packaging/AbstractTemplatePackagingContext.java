@@ -85,7 +85,7 @@ public abstract class AbstractTemplatePackagingContext
      */
     public AbstractTemplatePackagingContext(@NotNull final String pk, @NotNull final QueryJCommand command)
     {
-        super(command);
+        super(pk, command);
     }
 
     /**
