@@ -104,7 +104,7 @@ public abstract class AbstractQueryJTemplateContext
     @NotNull
     protected MetadataManager getMetadataManager(@NotNull final QueryJCommand command)
     {
-        return getValue(buildMetadataMa@Nullable final MetadataManager result =
+        return getValue(buildMetadataManagerKey(), @Nullable final MetadataManager result =
             new QueryJCommandWrapper<MetadataManager>(command)
                 .getSetting(DatabaseMetaDataRetrievalHandler.METADATA_MANAGER);
 
