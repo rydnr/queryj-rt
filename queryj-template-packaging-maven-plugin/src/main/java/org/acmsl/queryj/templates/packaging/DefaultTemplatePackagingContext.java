@@ -50,6 +50,9 @@ import org.acmsl.queryj.templates.packaging.exceptions.TemplateDefNotAvailableEx
 /*
  * Importing JetBrains annotations.
  */
+/*
+ * Importing Apache Commons Lang classes.
+ */
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.jetbrains.annotations.NotNull;
