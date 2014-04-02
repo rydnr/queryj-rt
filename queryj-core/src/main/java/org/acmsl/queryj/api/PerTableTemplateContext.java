@@ -228,6 +228,7 @@ public class PerTableTemplateContext
 
         return result;
     }
+
     /**
      * {@inheritDoc}
      */
