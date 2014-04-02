@@ -109,8 +109,8 @@ public class PerTableTemplateContext
     {
         super(command);
         immutableSetValue(buildFileNameKey(), fileName, command);
-        immutableSetValue(buildTableNameKey(), tableName, getCommand());
-        immutableSetValue(buildStaticValuesKey(), staticValues, getCommand());
+        immutableSetValue(buildTableNameKey(), tableName, command);
+        immutableSetValue(buildStaticValuesKey(), staticValues, command);
     }
 
     /**
