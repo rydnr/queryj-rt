@@ -187,7 +187,7 @@ public abstract class AbstractQueryJTemplateContext
      * @return such information.
      */
     @NotNull
-    protected String getBasePackageName(@NotNull final QueryJCommand command)
+    protected String buildBasePackageNameKey()
     {
         @Nullable final String result =
             new QueryJCommandWrapper<String>(command).getSetting(QueryJSettings.PACKAGE);
