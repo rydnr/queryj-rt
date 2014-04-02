@@ -373,7 +373,10 @@ public class ConfigurationQueryJCommandImpl
     {
         @NotNull final StringBuilder result = new StringBuilder();
 
-        @NotNull final Iterator<String> t_itKey =
+        @NotNull final Iterator<String> t_itKey = conf.getKeys();
+
+        while (t_itKey.hasNext())
+        {
         for (@Nullable final String t_Key : conf.getKeys())
         {
 
