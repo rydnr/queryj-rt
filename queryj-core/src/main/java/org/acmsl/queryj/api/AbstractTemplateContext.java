@@ -346,6 +346,7 @@ public abstract class AbstractTemplateContext
      * Retrieves the version.
      * @return such information.
      */
+    @Override
     @NotNull
     public String getVersion()
     {
