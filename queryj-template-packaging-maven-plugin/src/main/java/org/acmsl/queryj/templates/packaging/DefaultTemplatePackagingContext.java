@@ -163,7 +163,8 @@ public  class DefaultTemplatePackagingContext
             final DefaultTemplatePackagingContext other = (DefaultTemplatePackagingContext) obj;
 
             result =
-                new EqualsBuilder().appendSuper(super.equals(obj)).append(this.getCommand(), other.getCommand()).isEquals();
+                new EqualsBuilder()
+                    .appendSuper(super.equals(obj)).append(this.getCommand(), other.getCommand()).isEquals();
         }
 
         return result;
