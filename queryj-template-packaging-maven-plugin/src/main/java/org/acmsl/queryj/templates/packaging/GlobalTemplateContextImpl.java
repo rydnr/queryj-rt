@@ -48,12 +48,15 @@ import org.acmsl.queryj.templates.packaging.exceptions.TemplateDefNotAvailableEx
 /*
  * Importing JetBrains annotations.
  */
+import org.apache.commons.lang.builder.EqualsBuilder;
+import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
 
 /*
  * Importing JDK classes.
@@ -118,5 +121,46 @@ public class GlobalTemplateContextImpl
     protected String buildTemplateDefsKey()
     {
         return "templateDefs@" + hashCode();
+    }
+
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public int hashCode()
+    {
+        return
+            new HashCodeBuilder()
+                .append(super.hashCode())
+                .append(DefaultTemplatePackagingContext.class.getName())
+                .append(this.getCommand())
+                .toHashCode();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public boolean equals(@Nullable final Object obj)
+    {
+        final boolean result;
+
+        if (obj == null)
+        {
+            result = false;
+        }
+        else if (getClass() != obj.getClass())
+        {
+            result = false;
+        }
+        else
+        {
+            final DefaultTemplatePackagingContext other = (DefaultTemplatePackagingContext) obj;
+
+            result = new EqualsBuilder().append(this.getCommand(), other.getCommand()).isEquals();
+        }
+
+        return result;
     }
 }
