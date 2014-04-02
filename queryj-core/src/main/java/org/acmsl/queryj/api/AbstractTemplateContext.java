@@ -268,7 +268,7 @@ public abstract class AbstractTemplateContext
         @NotNull final QueryJCommand command,
         @NotNull final QueryJNonCheckedException exceptionToThrow)
     {
-        return getValue(key, getPk(), command, exceptionToThrow);
+        return getListValue(key, getPk(), command, exceptionToThrow);
     }
 
     /**
