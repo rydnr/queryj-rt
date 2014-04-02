@@ -287,7 +287,7 @@ public abstract class AbstractTemplateContext
         @NotNull final QueryJCommand command,
         @NotNull final QueryJNonCheckedException exceptionToThrow)
     {
-        @Nullable final <T> result;
+        @Nullable final List<T> result;
 
         @Nullable final List<T> aux =
             new QueryJCommandWrapper<T>(command).getListSetting(key + '|' + pk);
