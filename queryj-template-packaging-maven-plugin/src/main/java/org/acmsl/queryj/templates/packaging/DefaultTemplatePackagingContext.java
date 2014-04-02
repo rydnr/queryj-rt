@@ -133,7 +133,8 @@ public  class DefaultTemplatePackagingContext
     public int hashCode()
     {
         return
-            new HashCodeBuilder().append(super.hashCode()).append(DefaultTemplatePackagingContext.class.getName()).append(this.getCommand()).toHashCode();
+            new HashCodeBuilder()
+                .append(super.hashCode()).append(DefaultTemplatePackagingContext.class.getName()).append(this.getCommand()).toHashCode();
     }
 
     /**
