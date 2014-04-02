@@ -319,7 +319,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     protected String buildRootDirKey()
     {
-        return QueryJSettings.OUTPUT_FOLDER + "@" + hashCode();
+        return QueryJSettings.OUTPUT_FOLDER;
     }
 
     /**
