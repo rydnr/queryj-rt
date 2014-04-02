@@ -182,8 +182,7 @@ public abstract class AbstractQueryJTemplateContext
     }
 
     /**
-     * Retrieves the base package name.
-     * @param command the command.
+     * Retrieves the base package name key.
      * @return such information.
      */
     @NotNull
