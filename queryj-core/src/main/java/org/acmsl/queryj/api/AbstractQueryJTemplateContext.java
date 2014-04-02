@@ -167,8 +167,7 @@ public abstract class AbstractQueryJTemplateContext
     @NotNull
     protected String buildDecoratorFactoryKey()
     {
-        @Nullable final DecoratorFactory result =
-            new QueryJCommandWrapper<DecoratorFactory>(command).getSetting(DecoratorFactory.class.getName());
+        return DecoratorFactory.class.getName();
 
         if (result == null)
         {
