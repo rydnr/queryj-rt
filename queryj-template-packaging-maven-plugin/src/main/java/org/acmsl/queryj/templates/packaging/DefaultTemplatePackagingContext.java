@@ -162,6 +162,7 @@ public  class DefaultTemplatePackagingContext
 
             result = new EqualsBuilder().append(this.getCommand(), other.getCommand()).isEquals();
         }
+
         return result;
     }
 
