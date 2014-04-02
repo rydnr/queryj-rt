@@ -155,7 +155,7 @@ second_line_description(tableName, engine) ::= <<
   @param engineName the engine name.
   @param engineVersion the engine version.
 !>
- <tableName> entities from <engine.name>
+entities from <engine.name>
 >>
 
 third_line_description(tableName, engine) ::= <<
