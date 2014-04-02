@@ -371,8 +371,11 @@ public class ConfigurationQueryJCommandImpl
     @NotNull
     protected String confToString(@NotNull final Configuration conf)
     {
+        @NotNull final StringBuilder result = new StringBuilder();
 
+        return result.toString();
     }
+
     /**
      * {@inheritDoc}
      */
