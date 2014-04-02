@@ -43,17 +43,21 @@ import org.acmsl.queryj.QueryJCommand;
 /*
  * Importing QueryJ Template Packaging classes.
  */
+import org.acmsl.queryj.api.AbstractTemplateContext;
 import org.acmsl.queryj.templates.packaging.exceptions.TemplateDefNotAvailableException;
 
 /*
  * Importing JetBrains annotations.
  */
+import org.apache.commons.lang.builder.EqualsBuilder;
+import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
 
 /*
  * Importing JDK classes.
@@ -120,4 +124,34 @@ public  class DefaultTemplatePackagingContext
     {
         return getValue(buildTemplateDefKey(), getCommand(), new TemplateDefNotAvailableException());
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public int hashCode()
+    {
+        return
+            new HashCodeBuilder().append(AbstractTemplateContext.class.getName()).append(this.m__Command).toHashCode();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public boolean equals(@Nullable final Object obj)
+    {
+        if (obj == null)
+        {
+            return false;
+        }
+        if (getClass() != obj.getClass())
+        {
+            return false;
+        }
+        final AbstractTemplateContext other = (AbstractTemplateContext) obj;
+
+        return new EqualsBuilder().append(this.m__Command, other.m__Command).isEquals();
+    }
+
 }
