@@ -259,8 +259,7 @@ public abstract class AbstractQueryJTemplateContext
     @NotNull
     protected String buildJndiLocationKey()
     {
-        @Nullable final String result =
-            new QueryJCommandWrapper<String>(command).getSetting(QueryJSettings.JNDI_DATASOURCE);
+        return QueryJSettings.JNDI_DATASOURCE;
 
         if (result == null)
         {
