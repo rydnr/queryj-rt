@@ -136,7 +136,8 @@ public  class DefaultTemplatePackagingContext
             new HashCodeBuilder()
                 .append(super.hashCode())
                 .append(DefaultTemplatePackagingContext.class.getName())
-                .append(this.getCommand()).toHashCode();
+                .append(this.getCommand())
+                .toHashCode();
     }
 
     /**
