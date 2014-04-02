@@ -204,7 +204,6 @@ public abstract class AbstractQueryJTemplateContext
 
     /**
      * Retrieves the repository name.
-     * @param command the command.
      * @return such information.
      */
     @NotNull
