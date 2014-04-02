@@ -105,9 +105,6 @@ public abstract class AbstractQueryJTemplateContext
     protected MetadataManager getMetadataManager(@NotNull final QueryJCommand command)
     {
         return getValue(buildMetadataManagerKey(), getCommand(), new MetadataManagerNotAvailableException());
-        }
-
-        return result;
     }
 
     /**
