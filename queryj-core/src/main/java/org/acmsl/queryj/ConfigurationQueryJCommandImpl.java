@@ -373,6 +373,7 @@ public class ConfigurationQueryJCommandImpl
     {
         @NotNull final StringBuilder result = new StringBuilder();
 
+        for (@Nullable final )
         return result.toString();
     }
 
