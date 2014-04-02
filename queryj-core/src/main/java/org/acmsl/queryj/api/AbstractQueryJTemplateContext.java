@@ -171,27 +171,6 @@ public abstract class AbstractQueryJTemplateContext
     }
 
     /**
-     * Retrieves the package name.
-     * @return such information.
-     */
-    @NotNull
-    @Override
-    public String getPackageName()
-    {
-        return getValue(buildPackageNameKey(), getCommand(), new PackageNameNotAvailableException());
-    }
-
-    /**
-     * Builds the package name key.
-     * @return such information.
-     */
-    @NotNull
-    protected String buildPackageNameKey()
-    {
-        return PACKAGE_NAME;
-    }
-
-    /**
      * Retrieves the base package name.
      * @return such information.
      */
