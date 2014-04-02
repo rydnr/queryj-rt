@@ -86,16 +86,6 @@ public class PerTableTemplateContext
     private static final long serialVersionUID = -7439946925532182308L;
 
     /**
-     * The table-name key.
-     */
-    public static final String TABLE_NAME = "tableName";
-
-    /**
-     * The static-values key.
-     */
-    public static final String STATIC_VALUES = "staticValues";
-
-    /**
      * Creates a {@link PerTableTemplateContext} with given information.
      * @param fileName the file name.
      * @param packageName the package name.
