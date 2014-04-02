@@ -289,7 +289,7 @@ public abstract class AbstractTemplateContext
         @Nullable final T result;
 
         @Nullable final T aux =
-            new QueryJCommandWrapper<T>(command).getSetting(key + '|' + pk);
+            new QueryJCommandWrapper<T>(command).getListSetting(key + '|' + pk);
 
         if (aux == null)
         {
