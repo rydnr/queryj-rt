@@ -163,7 +163,8 @@ public class GlobalTemplateContextImpl
             final GlobalTemplateContextImpl other = (GlobalTemplateContextImpl) obj;
 
             result =
-                new EqualsBuilder().append(this.getCommand(), other.getCommand()).isEquals();
+                new EqualsBuilder()
+                    .append(this.getCommand(), other.getCommand()).isEquals();
         }
 
         return result;
