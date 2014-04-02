@@ -199,7 +199,7 @@ public abstract class AbstractQueryJTemplateContext
     @Override
     public String getRepositoryName()
     {
-        return getRepositoryName(getCommand());
+        return getValue(buildRepositoryNameKey(), getCommand());
     }
 
     /**
