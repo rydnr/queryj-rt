@@ -220,6 +220,7 @@ public class ConfigurationQueryJCommandImpl
      * @param key the key.
      * @param value the value for such key.
      * @param configuration the {@link Configuration configuration} settings.
+     * @param <T> the type.
      */
     protected <T> void setSetting(
         @NotNull final String key, @Nullable final T value, @NotNull final Configuration configuration)
