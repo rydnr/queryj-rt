@@ -225,6 +225,10 @@ public class PerTableTemplateContext
                     .append(this.getCommand(), other.getCommand())
                     .isEquals();
         }
+        else
+        {
+            result = false;
+        }
 
         return result;
     }
