@@ -153,7 +153,7 @@ public class <C.class_name>
     {
         @NotNull final QueryJCommandUtils t_QueryJCommandUtils = QueryJCommandUtils.getInstance();
 
-        new QueryJCommandWrapper<DecoratorFactory>(command).setSetting(
+        new QueryJCommandWrapper\<DecoratorFactory>(command).setSetting(
             DecoratorFactory.class.getName(), decoratorFactory);
 
         @NotNull final <def.type.capitalized>TemplateContext t_Context =
