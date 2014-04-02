@@ -154,7 +154,7 @@ public  class DefaultTemplatePackagingContext
         }
         else if (getClass() != obj.getClass())
         {
-            return false;
+            result = false;
         }
         final AbstractTemplateContext other = (DefaultTemplatePackagingContext) obj;
 
