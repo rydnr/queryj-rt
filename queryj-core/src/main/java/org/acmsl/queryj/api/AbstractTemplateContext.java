@@ -196,7 +196,6 @@ public abstract class AbstractTemplateContext
         @NotNull final QueryJCommand command)
     {
         new QueryJCommandWrapper<T>(command).setSetting(key + '|' + pk, value);
-        new QueryJCommandWrapper<T>(command).setSetting(key + '|' + pk, value);
     }
 
     /**
