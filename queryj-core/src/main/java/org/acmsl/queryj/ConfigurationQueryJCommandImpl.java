@@ -364,8 +364,8 @@ public class ConfigurationQueryJCommandImpl
     }
 
     /**
-     * Returns a JSON representation of given
-     * @param conf
+     * Returns a JSON representation of given {@link Configuration}.
+     * @param conf the instance to
      * @return
      */
     @NotNull
