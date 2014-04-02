@@ -361,6 +361,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     protected String getVersion(@NotNull final QueryJCommand command)
     {
+        return getValue(buildOutputDirKey(), getCommand(), new MissingOutputDirAtRuntimeException());
         @Nullable final String result =
             new QueryJCommandWrapper<String>(command).getSetting(QueryJSettings.VERSION);
 
