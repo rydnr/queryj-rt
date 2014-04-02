@@ -71,7 +71,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 /**
- *
+ * QueryJ-specific template context: used
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/01 21:26
