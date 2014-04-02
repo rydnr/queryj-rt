@@ -44,6 +44,7 @@ import org.acmsl.queryj.QueryJCommand;
  * Importing QueryJ Template Packaging classes.
  */
 import org.acmsl.queryj.api.AbstractTemplateContext;
+import org.acmsl.queryj.api.TemplateContext;
 import org.acmsl.queryj.templates.packaging.exceptions.TemplateDefNotAvailableException;
 
 /*
@@ -149,7 +150,7 @@ public  class DefaultTemplatePackagingContext
         {
             return false;
         }
-        final AbstractTemplateContext other = (AbstractTemplateContext) obj;
+        final AbstractTemplateContext other = (DefaultTemplatePackagingContext) obj;
 
         return new EqualsBuilder().append(this.m__Command, other.m__Command).isEquals();
     }
