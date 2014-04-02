@@ -371,6 +371,7 @@ public class ConfigurationQueryJCommandImpl
             "{ \"class\": \"" + ConfigurationQueryJCommandImpl.class.getSimpleName()
             + ", \"log\": \"" + m__Log + '"'
             + ", \"configuration\": "
-            +   "{'" + m__Configuration + "' }";
+            + "{ "
+        '" + m__Configuration + "' }";
     }
 }
