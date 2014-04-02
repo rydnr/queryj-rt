@@ -153,7 +153,7 @@ public class <C.class_name>
     {
         @NotNull final QueryJCommandUtils t_QueryJCommandUtils = QueryJCommandUtils.getInstance();
 
-        @NotNull final PerTableTemplateContext t_Context =
+        @NotNull final <def.type.capitalized>PerTableTemplateContext t_Context =
             new PerTableTemplateContext(
                 retrieveTemplateFileName(tableName, t_QueryJCommandUtils.retrieveMetadataManager(command)),
                 packageName,
