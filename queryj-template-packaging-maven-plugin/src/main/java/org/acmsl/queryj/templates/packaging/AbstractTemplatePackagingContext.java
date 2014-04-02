@@ -80,7 +80,7 @@ public abstract class AbstractTemplatePackagingContext
 
     /**
      * Creates a new instance.
-     *
+     * @param pk the pk.
      * @param command the command.
      */
     public AbstractTemplatePackagingContext(@NotNull final String pk, @NotNull final QueryJCommand command)
