@@ -372,6 +372,8 @@ public class ConfigurationQueryJCommandImpl
             + ", \"package\": \"org.acmsl.queryj\""
             + ", \"log\": \"" + m__Log + '"'
             + ", \"configuration\": "
-            + "{ \"class\": \"" + m__Configuration.getClass().getSimpleName() + "' }";
+            + "{ \"class\": \"" + m__Configuration.getClass().getSimpleName()
+            +
+            + "' }";
     }
 }
