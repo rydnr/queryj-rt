@@ -362,9 +362,6 @@ public abstract class AbstractTemplateContext
     protected String getVersion(@NotNull final QueryJCommand command)
     {
         return getValue(buildVersionKey(), getCommand(), new VersionNotAvailableException());
-        }
-
-        return result;
     }
 
     /**
