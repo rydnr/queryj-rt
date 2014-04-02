@@ -403,6 +403,6 @@ public class ConfigurationQueryJCommandImpl
             + "{ \"class\": \"" + m__Configuration.getClass().getSimpleName()
             + ", \"package\": \"" + m__Configuration.getClass().getPackage().getName() + '"'
             + confToString(m__Configuration)
-            + "' }";
+            + "} }";
     }
 }
