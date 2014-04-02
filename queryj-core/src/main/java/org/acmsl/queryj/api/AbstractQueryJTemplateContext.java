@@ -93,18 +93,17 @@ public abstract class AbstractQueryJTemplateContext
     @Override
     public MetadataManager getMetadataManager()
     {
-        return getMetadataManager(getCommand());
+        return getValue(buildMetadataManagerKey(), getCommand(), new MetadataManagerNotAvailableException());
     }
 
     /**
-     * Retrieves the metadata manager.
-     * @param command the command.
-     * @return such manager.
+     * Builds the metadata manager key.
+     * @return such key.
      */
     @NotNull
-    protected MetadataManager getMetadataManager(@NotNull final QueryJCommand command)
+    protected String buildMetadataManagerKey()
     {
-        return getValue(buildMetadataManagerKey(), getCommand(), new MetadataManagerNotAvailableException());
+        return DatabaseMetaDataRetrievalHandler.METADATA_MANAGER;
     }
 
     /**
