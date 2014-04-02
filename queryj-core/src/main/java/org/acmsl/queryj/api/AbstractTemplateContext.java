@@ -226,6 +226,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     protected <T> T getValue(
         @NotNull final String key,
+        @NotNull final String pk,
         @NotNull final QueryJCommand command,
         @NotNull final QueryJNonCheckedException exceptionToThrow)
     {
