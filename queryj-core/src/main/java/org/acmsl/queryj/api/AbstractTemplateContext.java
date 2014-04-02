@@ -123,7 +123,7 @@ public abstract class AbstractTemplateContext
      * Specifies the pk.
      * @param pk such pk.
      */
-    protected final void immutableSetPk(@NotNull final String pk)
+    protected void setPk(@NotNull final String pk)
     {
         this.m__Pk = pk;
     }
