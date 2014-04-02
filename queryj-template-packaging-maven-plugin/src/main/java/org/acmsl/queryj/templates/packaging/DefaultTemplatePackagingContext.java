@@ -165,5 +165,4 @@ public  class DefaultTemplatePackagingContext
 
         return result;
     }
-
 }
