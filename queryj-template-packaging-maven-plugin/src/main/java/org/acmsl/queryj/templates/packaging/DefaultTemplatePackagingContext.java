@@ -164,7 +164,8 @@ public  class DefaultTemplatePackagingContext
 
             result =
                 new EqualsBuilder()
-                    .appendSuper(super.equals(obj)).append(this.getCommand(), other.getCommand()).isEquals();
+                    .appendSuper(super.equals(obj))
+                    .append(this.getCommand(), other.getCommand()).isEquals();
         }
 
         return result;
