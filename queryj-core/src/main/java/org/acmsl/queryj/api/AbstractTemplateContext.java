@@ -361,7 +361,8 @@ public abstract class AbstractTemplateContext
     {
         return
             new HashCodeBuilder()
-                .append(AbstractTemplateContext.class.getName()).append(this.m__Command).toHashCode();
+                .append(AbstractTemplateContext.class.getName())
+                .append(this.m__Command).toHashCode();
     }
 
     /**
