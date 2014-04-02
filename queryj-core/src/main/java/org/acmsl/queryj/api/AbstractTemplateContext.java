@@ -259,7 +259,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     protected String buildTemplateNameKey()
     {
-        return "templateName@" + hashCode();
+        return "templateName";
     }
 
     /**
