@@ -213,15 +213,6 @@ public abstract class AbstractTemplateContext
         @NotNull final QueryJNonCheckedException exceptionToThrow)
     {
         return getValue(key, getPk(), command, exceptionToThrow);
-        @Nullable final T result =
-            new QueryJCommandWrapper<T>(command).getSetting(key);
-
-        if (result == null)
-        {
-            throw exceptionToThrow;
-        }
-
-        return result;
     }
 
     /**
