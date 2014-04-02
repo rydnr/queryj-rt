@@ -123,6 +123,7 @@ public abstract class AbstractTemplateContext
      * Specifies the pk.
      * @param pk such pk.
      */
+    @SuppressWarnings("unused")
     protected void setPk(@NotNull final String pk)
     {
         immutableSetPk(pk);
