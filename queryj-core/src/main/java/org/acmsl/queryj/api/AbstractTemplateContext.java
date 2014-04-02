@@ -68,6 +68,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 import java.io.File;
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Abstract implementation of {@link QueryJTemplateContext}.
@@ -280,7 +281,7 @@ public abstract class AbstractTemplateContext
      * @return such information.
      */
     @NotNull
-    protected <List<T>> T getListValue(
+    protected <T> List<T> getListValue(
         @NotNull final String key,
         @NotNull final String pk,
         @NotNull final QueryJCommand command,
