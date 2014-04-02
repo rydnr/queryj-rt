@@ -363,7 +363,7 @@ public class ConfigurationQueryJCommandImpl
         return (T) configuration.getProperty(key);
     }
 
-    protected String conf
+    protected String confToString(@NotNull final Iterator<String> keys, @NotNull )
     /**
      * {@inheritDoc}
      */
