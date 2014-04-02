@@ -44,7 +44,6 @@ import org.acmsl.queryj.QueryJSettings;
 import org.acmsl.queryj.api.exceptions.BasePackageNameNotAvailableException;
 import org.acmsl.queryj.api.exceptions.DecoratorFactoryNotAvailableException;
 import org.acmsl.queryj.api.exceptions.JndiLocationNotAvailableException;
-import org.acmsl.queryj.api.exceptions.PackageNameNotAvailableException;
 import org.acmsl.queryj.api.exceptions.RepositoryNameNotAvailableException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.exceptions.CustomSqlProviderNotAvailableException;
