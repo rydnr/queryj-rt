@@ -349,18 +349,6 @@ public abstract class AbstractTemplateContext
     @NotNull
     public String getVersion()
     {
-        return getVersion(getCommand());
-    }
-
-
-    /**
-     * Retrieves the version.
-     * @param command the command.
-     * @return such information.
-     */
-    @NotNull
-    protected String getVersion(@NotNull final QueryJCommand command)
-    {
         return getValue(buildVersionKey(), getCommand(), new VersionNotAvailableException());
     }
 
