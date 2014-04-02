@@ -109,6 +109,7 @@ public class FillTemplateChainWrapper<C extends QueryJTemplateContext>
         result.add(new TemplateNameHandler<>(context));
         result.add(new UseCheckthreadAnnotationsHandler(context));
         result.add(new UseNotNullAnnotationsHandler(context));
+        result.add(new QueryJVersionHandler<>(context));
 
         return result;
     }
