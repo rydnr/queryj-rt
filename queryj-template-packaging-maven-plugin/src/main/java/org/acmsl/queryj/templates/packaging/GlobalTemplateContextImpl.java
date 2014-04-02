@@ -164,7 +164,9 @@ public class GlobalTemplateContextImpl
 
             result =
                 new EqualsBuilder()
-                    .append(this.getCommand(), other.getCommand()).isEquals();
+                    .appendSuper()
+                    .append(this.getCommand(), other.getCommand())
+                    .isEquals();
         }
 
         return result;
