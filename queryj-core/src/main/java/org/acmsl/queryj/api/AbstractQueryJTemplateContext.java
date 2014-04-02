@@ -122,7 +122,7 @@ public abstract class AbstractQueryJTemplateContext
      * @return such key.
      */
     @NotNull
-    protected CustomSqlProvider getCustomSqlProvider(@NotNull final QueryJCommand command)
+    protected String buildCustomSqlProviderKey()
     {
         @Nullable final CustomSqlProvider result =
             new QueryJCommandWrapper<CustomSqlProvider>(command).getSetting(
