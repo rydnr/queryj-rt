@@ -190,13 +190,6 @@ public abstract class AbstractQueryJTemplateContext
     protected String buildBasePackageNameKey()
     {
         return QueryJSettings.PACKAGE;
-
-        if (result == null)
-        {
-            throw new BasePackageNameNotAvailableException();
-        }
-
-        return result;
     }
 
     /**
