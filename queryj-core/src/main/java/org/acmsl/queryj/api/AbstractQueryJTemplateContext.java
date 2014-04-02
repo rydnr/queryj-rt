@@ -27,7 +27,8 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: QueryJ-specific template context: used when QueryJ creates
+ * templates to be consumed by itself afterwards.
  *
  * Date: 2014/04/01
  * Time: 21:26
