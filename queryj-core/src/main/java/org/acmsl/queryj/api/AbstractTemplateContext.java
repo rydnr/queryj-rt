@@ -362,7 +362,7 @@ public abstract class AbstractTemplateContext
         return
             new HashCodeBuilder()
                 .append(AbstractTemplateContext.class.getName())
-                .append(m__Pk)
+                .append(this.m__Pk)
                 .append(this.m__Command)
                 .toHashCode();
     }
