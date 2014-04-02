@@ -155,16 +155,7 @@ second_line_description(tableName, engine) ::= <<
   @param engineName the engine name.
   @param engineVersion the engine version.
 !>
-entities from <engine.name>
->>
-
-third_line_description(tableName, engine) ::= <<
-<!
-  Generates a description for the generated file.
-  @param tableName the table name.
-  @param engine the engine.
-!>
-<if(engine.version)>(<engine.version>) <endif>persistence layers.
+entities from <engine.name> <if(engine.version)>(<engine.version>) <endif>persistence layers.
 >>
 
 project_imports(
