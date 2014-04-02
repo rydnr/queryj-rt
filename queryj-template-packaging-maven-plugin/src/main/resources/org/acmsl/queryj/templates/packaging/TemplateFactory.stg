@@ -151,6 +151,15 @@ public class <C.class_name>
         @NotNull final String tableName,
         @NotNull final List\<Row\<String\>> staticContents)
     {
+        @NotNull final QueryJCommandUtils t_QueryJCommandUtils = QueryJCommandUtils.getInstance();
+
+        @NotNull final PerTableTemplateContext t_Context =
+            new PerTableTemplateContext(
+                retrieveTemplateFileName(tableName, t_QueryJCommandUtils.retrieveMetadataManager(command)),
+                packageName,
+                tableName,
+                staticContents,
+                command);
         new QueryJCommandWrapper\<DecoratorFactory>(command)
             .setSetting(DecoratorFactory.class.getName(), decoratorFactory);
         new QueryJCommandWrapper\<String>(command)
