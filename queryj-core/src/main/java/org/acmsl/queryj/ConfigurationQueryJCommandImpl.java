@@ -402,7 +402,7 @@ public class ConfigurationQueryJCommandImpl
             + ", \"configuration\": "
             + "{ \"class\": \"" + m__Configuration.getClass().getSimpleName()
             + ", \"package\": \"" + m__Configuration.getClass().getPackage().getName() + '"'
-            + ", \"keys\": \"" + m__Configuration.getKeys()
+            + ", confm__Configuration.getKeys()
             + "' }";
     }
 }
