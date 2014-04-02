@@ -360,7 +360,8 @@ public abstract class AbstractTemplateContext
     public int hashCode()
     {
         return
-            new HashCodeBuilder().append(AbstractTemplateContext.class.getName()).append(this.m__Command).toHashCode();
+            new HashCodeBuilder()
+                .append(AbstractTemplateContext.class.getName()).append(this.m__Command).toHashCode();
     }
 
     /**
