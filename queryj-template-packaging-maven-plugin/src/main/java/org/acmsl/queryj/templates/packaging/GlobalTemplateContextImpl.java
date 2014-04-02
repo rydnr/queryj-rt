@@ -133,7 +133,7 @@ public class GlobalTemplateContextImpl
         return
             new HashCodeBuilder()
                 .append(super.hashCode())
-                .append(DefaultTemplatePackagingContext.class.getName())
+                .append(GlobalTemplateContextImpl.class.getName())
                 .append(this.getCommand())
                 .toHashCode();
     }
