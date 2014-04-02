@@ -96,6 +96,9 @@ public abstract class AbstractTemplateContext
     private QueryJCommand m__Command;
 
     /**
+     * The pk.
+     */
+    /**
      * Creates an {@link AbstractTemplateContext} with given information.
      * @param command the {@link org.acmsl.queryj.QueryJCommand} instance.
      */
