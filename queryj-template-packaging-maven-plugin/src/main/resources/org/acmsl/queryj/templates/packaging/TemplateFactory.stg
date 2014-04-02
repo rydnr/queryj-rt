@@ -160,6 +160,7 @@ public class <C.class_name>
                 tableName,
                 staticContents,
                 command);
+
         new QueryJCommandWrapper\<DecoratorFactory>(command)
             .setSetting(DecoratorFactory.class.getName(), decoratorFactory);
         new QueryJCommandWrapper\<String>(command)
