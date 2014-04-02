@@ -252,7 +252,7 @@ public abstract class AbstractQueryJTemplateContext
     }
 
     /**
-     * Retrieves the JNDI location for the {@link javax.sql.DataSource}.
+     * Retrieves the key of the JNDI location for the {@link javax.sql.DataSource}.
      * @return such location.
      */
     @NotNull
