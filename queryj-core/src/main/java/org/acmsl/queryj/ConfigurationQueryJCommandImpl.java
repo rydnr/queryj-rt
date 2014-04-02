@@ -379,7 +379,7 @@ public class ConfigurationQueryJCommandImpl
         {
             @NotNull final String t_strKey = t_itKey.next();
             result.append(", \"");
-            result.append(t_itKey.next());
+            result.append(t_strKey);
             result.append("\": \"");
             result.append(conf.getProperty())
         }
