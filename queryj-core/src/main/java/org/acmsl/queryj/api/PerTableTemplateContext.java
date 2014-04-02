@@ -194,7 +194,7 @@ public class PerTableTemplateContext
         return
             new HashCodeBuilder()
                 .appendSuper(super.hashCode())
-                .append(DefaultTemplatePackagingContext.class.getName())
+                .append(PerTableTemplateContext.class.getName())
                 .append(this.getCommand())
                 .toHashCode();
     }
