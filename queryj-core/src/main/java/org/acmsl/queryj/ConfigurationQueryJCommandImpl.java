@@ -381,7 +381,8 @@ public class ConfigurationQueryJCommandImpl
             result.append(", \"");
             result.append(t_strKey);
             result.append("\": \"");
-            result.append(conf.getProperty())
+            result.append(conf.getProperty(t_strKey));
+            result.append()
         }
 
         return result.toString();
