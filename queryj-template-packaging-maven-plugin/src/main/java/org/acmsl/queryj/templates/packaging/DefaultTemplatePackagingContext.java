@@ -114,7 +114,7 @@ public  class DefaultTemplatePackagingContext
     @NotNull
     protected final String buildTemplateDefKey()
     {
-        return "templateDef@" + hashCode();
+        return "templateDef";
     }
 
     /**
