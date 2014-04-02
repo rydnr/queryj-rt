@@ -152,7 +152,7 @@ public  class DefaultTemplatePackagingContext
         }
         final AbstractTemplateContext other = (DefaultTemplatePackagingContext) obj;
 
-        return new EqualsBuilder().append(this.m__Command, other.m__Command).isEquals();
+        return new EqualsBuilder().append(this.getCommand(), other.getCommand()).isEquals();
     }
 
 }
