@@ -150,9 +150,9 @@ public  class DefaultTemplatePackagingContext
 
         if (obj == null)
         {
-            return false;
+            result = false;
         }
-        if (getClass() != obj.getClass())
+        else if (getClass() != obj.getClass())
         {
             return false;
         }
