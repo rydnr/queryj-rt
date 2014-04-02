@@ -184,6 +184,7 @@ public abstract class AbstractTemplateContext
     /**
      * Annotates a value in the command.
      * @param key the key.
+     * @param pk the pk.
      * @param value the value.
      * @param command the command.
      * @param <T> the type.
