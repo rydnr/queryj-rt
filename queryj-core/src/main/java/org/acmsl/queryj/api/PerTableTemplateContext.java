@@ -134,7 +134,7 @@ public class PerTableTemplateContext
     @NotNull
     protected String buildStaticValuesKey()
     {
-        return STATIC_VALUES + '@' + hashCode();
+        return "staticValues@" + hashCode();
     }
 
     /**
