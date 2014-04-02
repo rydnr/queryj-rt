@@ -207,6 +207,7 @@ public class ConfigurationQueryJCommandImpl
      * Specifies the setting for given key.
      * @param key the key.
      * @param value the value for such key.
+     * @param <T> the type.
      */
     @Override
     public <T> void setSetting(@NotNull final String key, @Nullable final T value)
