@@ -189,8 +189,7 @@ public abstract class AbstractQueryJTemplateContext
     @NotNull
     protected String buildBasePackageNameKey()
     {
-        @Nullable final String result =
-            new QueryJCommandWrapper<String>(command).getSetting(QueryJSettings.PACKAGE);
+        return QueryJSettings.PACKAGE;
 
         if (result == null)
         {
