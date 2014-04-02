@@ -217,7 +217,7 @@ public class PerTableTemplateContext
         }
         else
         {
-            final DefaultTemplatePackagingContext other = (DefaultTemplatePackagingContext) obj;
+            final PerTableTemplateContext other = (DefaultTemplatePackagingContext) obj;
 
             result =
                 new EqualsBuilder()
