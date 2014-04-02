@@ -156,7 +156,7 @@ public class GlobalTemplateContextImpl
         }
         else
         {
-            final DefaultTemplatePackagingContext other = (GlobalTemplateContext) obj;
+            final DefaultTemplatePackagingContext other = (GlobalTemplateContextImpl) obj;
 
             result = new EqualsBuilder().append(this.getCommand(), other.getCommand()).isEquals();
         }
