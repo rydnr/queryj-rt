@@ -280,7 +280,7 @@ public abstract class AbstractTemplateContext
      * @return such information.
      */
     @NotNull
-    protected <T> T getValue(
+    protected <T> T getListValue(
         @NotNull final String key,
         @NotNull final String pk,
         @NotNull final QueryJCommand command,
