@@ -110,10 +110,15 @@ public abstract class AbstractTemplateContext
         immutableSetCommand(command);
     }
 
+    /**
+     * Specifies the pk.
+     * @param pk such pk.
+     */
     protected final void immutableSetPk(@NotNull final String pk)
     {
         this.m__Pk = pk;
     }
+
     /**
      * Specifies the command.
      * @param command the command.
