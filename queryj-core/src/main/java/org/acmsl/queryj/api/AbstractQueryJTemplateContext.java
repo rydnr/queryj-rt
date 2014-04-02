@@ -210,8 +210,7 @@ public abstract class AbstractQueryJTemplateContext
     @NotNull
     protected String buildRepositoryNameKey()
     {
-        @Nullable final String result =
-            new QueryJCommandWrapper<String>(command).getSetting(QueryJSettings.REPOSITORY);
+        return QueryJSettings.REPOSITORY;
 
         if (result == null)
         {
