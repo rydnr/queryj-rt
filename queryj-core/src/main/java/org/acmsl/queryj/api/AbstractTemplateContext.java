@@ -385,7 +385,9 @@ public abstract class AbstractTemplateContext
 
         return
             new EqualsBuilder()
-                .append(this.m__Command, other.m__Command).isEquals();
+                .append(this.m__Pk, other.m__Pk)
+                .append(this.m__Command, other.m__Command)
+                .isEquals();
     }
 
     /**
