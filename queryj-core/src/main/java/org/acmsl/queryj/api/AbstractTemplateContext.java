@@ -299,7 +299,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     protected String buildPackageNameKey()
     {
-        return "packageName@" + hashCode();
+        return "packageName";
     }
 
     /**
