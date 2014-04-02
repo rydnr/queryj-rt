@@ -355,7 +355,7 @@ public class ConfigurationQueryJCommandImpl
     /**
      * Retrieves the setting for given key.
      * @param key the key.
-     * @parma <T> the type.
+     * @param <T> the type.
      * @return the value for such key.
      */
     @SuppressWarnings("unchecked")
