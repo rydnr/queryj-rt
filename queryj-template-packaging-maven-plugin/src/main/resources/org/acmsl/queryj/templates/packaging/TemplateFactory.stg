@@ -161,7 +161,7 @@ public class <C.class_name>
                 staticContents,
                 command);
 
-            new <def.name.noExtension>Template(new <def.type.capitalized>TemplateContext(command));
+            new <def.name.noExtension>Template(t_Context);
     }
 
     /**
