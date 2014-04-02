@@ -363,6 +363,10 @@ public class ConfigurationQueryJCommandImpl
         return (T) configuration.getProperty(key);
     }
 
+
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public String toString()
