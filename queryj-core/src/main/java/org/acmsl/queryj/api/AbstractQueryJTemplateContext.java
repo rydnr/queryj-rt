@@ -168,13 +168,6 @@ public abstract class AbstractQueryJTemplateContext
     protected String buildDecoratorFactoryKey()
     {
         return DecoratorFactory.class.getName();
-
-        if (result == null)
-        {
-            throw new DecoratorFactoryNotAvailableException();
-        }
-
-        return result;
     }
 
     /**
