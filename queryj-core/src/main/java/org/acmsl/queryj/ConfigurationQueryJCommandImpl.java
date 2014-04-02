@@ -374,7 +374,7 @@ public class ConfigurationQueryJCommandImpl
             + ", \"configuration\": "
             + "{ \"class\": \"" + m__Configuration.getClass().getSimpleName()
             + ", \"package\": \"" + m__Configuration.getClass().getPackage().getName() + '"'
-            + ", "
+            + ", \"contents\": \"" + m__Configuration.getKeys()
             + "' }";
     }
 }
