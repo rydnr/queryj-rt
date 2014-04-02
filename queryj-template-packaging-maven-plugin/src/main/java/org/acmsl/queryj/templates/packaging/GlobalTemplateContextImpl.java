@@ -136,7 +136,7 @@ public class GlobalTemplateContextImpl
     {
         return
             new HashCodeBuilder()
-                .append(super.hashCode())
+                .appendSuper(super.hashCode())
                 .append(GlobalTemplateContextImpl.class.getName())
                 .append(this.getCommand())
                 .toHashCode();
