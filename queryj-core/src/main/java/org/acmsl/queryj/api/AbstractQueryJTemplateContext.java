@@ -118,9 +118,8 @@ public abstract class AbstractQueryJTemplateContext
     }
 
     /**
-     * Retrieves the custom-sql provider.
-     * @param command the command.
-     * @return such provider.
+     * Builds the custom-sql provider key.
+     * @return such key.
      */
     @NotNull
     protected CustomSqlProvider getCustomSqlProvider(@NotNull final QueryJCommand command)
