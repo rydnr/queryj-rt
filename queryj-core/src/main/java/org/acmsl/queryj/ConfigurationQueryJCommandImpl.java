@@ -195,6 +195,7 @@ public class ConfigurationQueryJCommandImpl
      * @param key the key.
      * @return the value for such key.
      * @param configuration the {@link Configuration configuration} settings.
+     * @param <T> the type.
      */
     @Nullable
     @SuppressWarnings("unchecked")
