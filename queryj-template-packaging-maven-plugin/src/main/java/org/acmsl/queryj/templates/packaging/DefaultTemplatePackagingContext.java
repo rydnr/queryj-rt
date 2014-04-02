@@ -158,7 +158,7 @@ public  class DefaultTemplatePackagingContext
         {
             result = false;
         }
-        else
+        else if (obj instanceof DefaultTemplatePackagingContext)
         {
             final DefaultTemplatePackagingContext other = (DefaultTemplatePackagingContext) obj;
 
