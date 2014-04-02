@@ -65,13 +65,6 @@ public interface TemplatePackagingContext
     extends TemplateContext
 {
     /**
-     * Retrieves the package name.
-     * @return such information.
-     */
-    @NotNull
-    public String getPackageName();
-
-    /**
      * Retrieves the root dir.
      * @return such folder.
      */
