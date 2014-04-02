@@ -129,6 +129,10 @@ public abstract class AbstractTemplateContext
         immutableSetPk(pk);
     }
 
+    /**
+     * Retrieves the pk.
+     * @return such information.
+     */
     @NotNull
     protected String getPk()
     {
