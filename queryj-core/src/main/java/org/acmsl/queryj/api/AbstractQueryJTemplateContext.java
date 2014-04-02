@@ -178,7 +178,7 @@ public abstract class AbstractQueryJTemplateContext
     @Override
     public String getPackageName()
     {
-        return getPackageName(getCommand());
+        return getValue(buildPackageNameKey(), getCommand());
     }
 
     /**
