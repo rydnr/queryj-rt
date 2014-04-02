@@ -158,7 +158,7 @@ public  class DefaultTemplatePackagingContext
         }
         else
         {
-            final AbstractTemplateContext other = (DefaultTemplatePackagingContext) obj;
+            final DefaultTemplatePackagingContext other = (DefaultTemplatePackagingContext) obj;
 
         return new EqualsBuilder().append(this.getCommand(), other.getCommand()).isEquals();
     }
