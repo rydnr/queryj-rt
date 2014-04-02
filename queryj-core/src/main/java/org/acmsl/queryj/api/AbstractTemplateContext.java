@@ -366,6 +366,7 @@ public abstract class AbstractTemplateContext
 
     /**
      * Builds the version key.
+     * @return such key.
      */
     @NotNull
     protected String buildVersionKey()
