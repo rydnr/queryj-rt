@@ -364,7 +364,7 @@ public class ConfigurationQueryJCommandImpl
     }
 
     /**
-     *
+     * Wr
      * @param conf
      * @return
      */
