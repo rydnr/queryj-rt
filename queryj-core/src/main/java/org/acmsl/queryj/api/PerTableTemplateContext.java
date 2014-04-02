@@ -184,6 +184,50 @@ public class PerTableTemplateContext
         return result.toString();
     }
 
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public int hashCode()
+    {
+        return
+            new HashCodeBuilder()
+                .appendSuper(super.hashCode())
+                .append(DefaultTemplatePackagingContext.class.getName())
+                .append(this.getCommand())
+                .toHashCode();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public boolean equals(@Nullable final Object obj)
+    {
+        final boolean result;
+
+        if (obj == null)
+        {
+            result = false;
+        }
+        else if (getClass() != obj.getClass())
+        {
+            result = false;
+        }
+        else
+        {
+            final DefaultTemplatePackagingContext other = (DefaultTemplatePackagingContext) obj;
+
+            result =
+                new EqualsBuilder()
+                    .appendSuper(super.equals(obj))
+                    .append(this.getCommand(), other.getCommand())
+                    .isEquals();
+        }
+
+        return result;
+    }
     /**
      * {@inheritDoc}
      */
