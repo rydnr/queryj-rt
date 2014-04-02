@@ -168,6 +168,10 @@ public  class DefaultTemplatePackagingContext
                     .append(this.getCommand(), other.getCommand())
                     .isEquals();
         }
+        else
+        {
+            result = false;
+        }
 
         return result;
     }
