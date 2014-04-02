@@ -248,7 +248,7 @@ public abstract class AbstractQueryJTemplateContext
     @NotNull
     public String getJndiLocation()
     {
-        return getValue(buildJndiLocationKey(), getCommand());
+        return getValue(buildJndiLocationKey(), getCommand(), new JndiLocationNotAvailableException());
     }
 
     /**
