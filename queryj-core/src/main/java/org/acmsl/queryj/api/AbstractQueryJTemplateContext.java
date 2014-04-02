@@ -124,9 +124,7 @@ public abstract class AbstractQueryJTemplateContext
     @NotNull
     protected String buildCustomSqlProviderKey()
     {
-        @Nullable final CustomSqlProvider result =
-            new QueryJCommandWrapper<CustomSqlProvider>(command).getSetting(
-                CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER);
+        return CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER;
 
         if (result == null)
         {
