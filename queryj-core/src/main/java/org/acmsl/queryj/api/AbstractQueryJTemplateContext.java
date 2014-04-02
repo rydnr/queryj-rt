@@ -125,13 +125,6 @@ public abstract class AbstractQueryJTemplateContext
     protected String buildCustomSqlProviderKey()
     {
         return CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER;
-
-        if (result == null)
-        {
-            throw new CustomSqlProviderNotAvailableException();
-        }
-
-        return result;
     }
 
     /**
