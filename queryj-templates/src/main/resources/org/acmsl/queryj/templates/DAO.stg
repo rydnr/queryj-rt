@@ -284,8 +284,7 @@ classImpl(foreign_keys, table, parent, repository, engine, C) ::= <<
 /**
  * <[
       first_line_description(tableName=table.name, engine=engine),
-      second_line_description(tableName=table.name, engine=engine),
-      third_line_description(tableName=table.name, engine=engine)
+      second_line_description(tableName=table.name, engine=engine)
     ]:{line |<line>}; separator="\n * ">
 <class_common_javadoc(template="org/acmsl/queryj/dao/DAO.stg", C=C)>
  */
