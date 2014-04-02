@@ -231,7 +231,7 @@ public abstract class AbstractTemplateContext
         @NotNull final QueryJCommand command,
         @NotNull final QueryJNonCheckedException exceptionToThrow)
     {
-        @Nullable final T result =
+        @Nullable final T aux =
             new QueryJCommandWrapper<T>(command).getSetting(key + '|' + pk);
 
         if (result == null)
