@@ -234,6 +234,10 @@ public abstract class AbstractTemplateContext
         @Nullable final T aux =
             new QueryJCommandWrapper<T>(command).getSetting(key + '|' + pk);
 
+        if (aux == null)
+        {
+
+        }
         if (result == null)
         {
             throw exceptionToThrow;
