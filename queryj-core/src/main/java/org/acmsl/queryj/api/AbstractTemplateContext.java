@@ -125,7 +125,7 @@ public abstract class AbstractTemplateContext
      */
     protected void setPk(@NotNull final String pk)
     {
-        this.m__Pk = pk;
+        immutableSetPk(pk);
     }
 
     /**
