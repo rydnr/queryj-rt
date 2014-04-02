@@ -211,13 +211,6 @@ public abstract class AbstractQueryJTemplateContext
     protected String buildRepositoryNameKey()
     {
         return QueryJSettings.REPOSITORY;
-
-        if (result == null)
-        {
-            throw new RepositoryNameNotAvailableException();
-        }
-
-        return result;
     }
 
     /**
