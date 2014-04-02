@@ -145,7 +145,7 @@ first_line_description(tableName, engine) ::= <<
   @param tableName the table name.
   @param engine the engine.
 !>
-DAO implementation responsible of managing the access to
+DAO implementation responsible of managing the access to  <tableName> entities from
 >>
 
 second_line_description(tableName, engine) ::= <<
