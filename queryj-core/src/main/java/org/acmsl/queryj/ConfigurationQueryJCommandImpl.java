@@ -367,6 +367,8 @@ public class ConfigurationQueryJCommandImpl
     @Override
     public String toString()
     {
-        return "{ \"class\": \"" + ConfigurationQueryJCommandImpl.class.getSimpleName() ', 'log':" + m__Log + ", configuration='" + m__Configuration + "' }";
+        return
+            "{ \"class\": \"" + ConfigurationQueryJCommandImpl.class.getSimpleName()
+            + ", \"', 'log':" + m__Log + ", configuration='" + m__Configuration + "' }";
     }
 }
