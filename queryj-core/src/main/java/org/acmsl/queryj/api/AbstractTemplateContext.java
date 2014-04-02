@@ -242,7 +242,7 @@ public abstract class AbstractTemplateContext
         }
         else
         {
-            result = null;
+            result = aux;
         }
 
         if (result == null)
