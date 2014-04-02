@@ -129,6 +129,12 @@ public abstract class AbstractTemplateContext
         immutableSetPk(pk);
     }
 
+    @NotNull
+    protected String getPk()
+    {
+        return this.m__Pk;
+    }
+
     /**
      * Specifies the command.
      * @param command the command.
