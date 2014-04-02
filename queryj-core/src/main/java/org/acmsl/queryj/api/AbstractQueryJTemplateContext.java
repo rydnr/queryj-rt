@@ -157,7 +157,7 @@ public abstract class AbstractQueryJTemplateContext
     @NotNull
     public DecoratorFactory getDecoratorFactory()
     {
-        return getValue(buildDecoratorFactoryKey(), getCommand());
+        return getValue(buildDecoratorFactoryKey(), getCommand(), new DecoratorFactoryNotAvailableException());
     }
 
     /**
