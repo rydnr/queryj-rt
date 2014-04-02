@@ -158,7 +158,7 @@ public class GlobalTemplateContextImpl
         {
             result = false;
         }
-        else
+        else if
         {
             final GlobalTemplateContextImpl other = (GlobalTemplateContextImpl) obj;
 
