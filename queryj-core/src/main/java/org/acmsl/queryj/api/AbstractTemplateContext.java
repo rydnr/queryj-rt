@@ -365,6 +365,14 @@ public abstract class AbstractTemplateContext
     }
 
     /**
+     * Builds the version key.
+     */
+    @NotNull
+    protected String buildVersionKey()
+    {
+        return ""
+    }
+    /**
      * {@inheritDoc}
      */
     @Override
