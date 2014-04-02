@@ -210,7 +210,7 @@ public abstract class AbstractTemplateContext
     protected <T> T getValue(
         @NotNull final String key,
         @NotNull final QueryJCommand command,
-        @NotNull final QueryJNonCheckedException exceptionToThrow)
+        @Nullable final QueryJNonCheckedException exceptionToThrow)
     {
         return getValue(key, getPk(), command, exceptionToThrow);
     }
