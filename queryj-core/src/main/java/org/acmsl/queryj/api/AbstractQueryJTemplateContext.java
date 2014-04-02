@@ -260,13 +260,6 @@ public abstract class AbstractQueryJTemplateContext
     protected String buildJndiLocationKey()
     {
         return QueryJSettings.JNDI_DATASOURCE;
-
-        if (result == null)
-        {
-            throw new JndiLocationNotAvailableException();
-        }
-
-        return result;
     }
 
     /**
