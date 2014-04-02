@@ -370,8 +370,9 @@ public abstract class AbstractTemplateContext
     @NotNull
     protected String buildVersionKey()
     {
-        return ""
+        return QueryJSettings.VERSION;
     }
+
     /**
      * {@inheritDoc}
      */
