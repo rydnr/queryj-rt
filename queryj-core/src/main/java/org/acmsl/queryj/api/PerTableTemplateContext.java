@@ -215,7 +215,7 @@ public class PerTableTemplateContext
         {
             result = false;
         }
-        else
+        else if (obj instanceof PerTableTemplateContext)
         {
             final PerTableTemplateContext other = (PerTableTemplateContext) obj;
 
