@@ -377,7 +377,7 @@ public class ConfigurationQueryJCommandImpl
 
         while (t_itKey.hasNext())
         {
-            result.append(",")
+            result.append(", \"")
         }
 
         return result.toString();
