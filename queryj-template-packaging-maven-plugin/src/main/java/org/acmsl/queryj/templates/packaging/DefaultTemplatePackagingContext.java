@@ -146,6 +146,8 @@ public  class DefaultTemplatePackagingContext
     @Override
     public boolean equals(@Nullable final Object obj)
     {
+        boolean result;
+
         if (obj == null)
         {
             return false;
