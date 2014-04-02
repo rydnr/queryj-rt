@@ -48,13 +48,14 @@ import org.acmsl.queryj.api.TemplateContext;
 import org.acmsl.queryj.templates.packaging.exceptions.TemplateDefNotAvailableException;
 
 /*
- * Importing JetBrains annotations.
- */
-/*
  * Importing Apache Commons Lang classes.
  */
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
