@@ -135,7 +135,7 @@ public abstract class AbstractQueryJTemplateContext
     @Override
     public String getHeader()
     {
-        return getHeader(getCommand());
+        return getValue(buildHeaderKey(), getCommand(), )
     }
 
     /**
