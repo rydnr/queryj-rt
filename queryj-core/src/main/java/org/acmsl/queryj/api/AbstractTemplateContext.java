@@ -240,6 +240,10 @@ public abstract class AbstractTemplateContext
         {
             result = new QueryJCommandWrapper<T>(command).getSetting(key);
         }
+        else
+        {
+            result = null;
+        }
         if (result == null)
         {
             throw exceptionToThrow;
