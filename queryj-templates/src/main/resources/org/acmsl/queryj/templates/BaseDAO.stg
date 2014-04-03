@@ -167,8 +167,7 @@ public interface <table.name.voName>DAO
      * @return the {@link <table.name.voName>} matching given
      * primary key.
      */
-    public <table.name.voName> findByPrimaryKey(
-        <table.primaryKey:attribute_declaration(attr=it); separator=",\n">)
+    public <table.name.voName> findByPrimaryKey(<table.primaryKey:attribute_declaration(attr=it); separator=",\n">)
       throws DataAccessException;
 
     /**
