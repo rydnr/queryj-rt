@@ -171,34 +171,33 @@ public interface <table.name.voName>DAO
        name=it.nameLowercased); separator="\n">
      */
     public <table.name.voName> create(
-        <table.allButExternallyManagedAttributes:attribute_declaration(
-          attr=it); separator=",\n">)
+        <table.allButExternallyManagedAttributes:{ a | <attribute_declaration(attr=a)>}; separator=",\n">)
       throws DataAccessException;
 
     /**
      * Updates \<code><table.name.voName>\</code> information.
-     <input.attributes:attribute_javadoc(name=it.nameLowercased); separator="\n">
+     <input.attributes:{ a | <attribute_javadoc(name=a.name.lowercased)>}; separator="\n">
      * @return the number of entities updated.
      */
     public int update(
-        <input.attributes:attribute_declaration(attr=it); separator=",\n">)
+        <input.attributes:{ a | <attribute_declaration(attr=a)>}; separator=",\n">)
       throws DataAccessException;
 
     /**
      * Deletes \<code><table.name.voName>\</code> information.
-     <table.primaryKey:attribute_javadoc(name=it.nameLowercased); separator="\n">
+     <table.primaryKey:{ a | <attribute_javadoc(name=a.name.lowercased)>}; separator="\n">
      */
     public void delete(
-        <table.primaryKey:attribute_declaration(attr=it); separator=",\n">)
+        <table.primaryKey:{ a | <attribute_declaration(attr=a)>}; separator=",\n">)
       throws DataAccessException;
 
-    <table.foreignKeys:fk_delete_method(foreignKey=it, table=table); separator="\n">
+    <table.foreignKeys:{ fk | <fk_delete_method(foreignKey=fk, table=table)>}; separator="\n">
 
-    <table.customSelects:custom_select(cs=it); separator="\n">
+    <table.customSelects:{ cs | <custom_select(cs=cs)>}; separator="\n">
 
-    <table.customUpdatesOrInserts:custom_update_or_insert(cs=it); separator="\n">
+    <table.customUpdatesOrInserts:{ cs | <custom_update_or_insert(cs=cs)>}; separator="\n">
 
-    <table.customSelectsForUpdate:custom_select_for_update(cs=it); separator="\n">
+    <table.customSelectsForUpdate:{ cs | <custom_select_for_update(cs=cs)>}; separator="\n">
 }
 >>
 
