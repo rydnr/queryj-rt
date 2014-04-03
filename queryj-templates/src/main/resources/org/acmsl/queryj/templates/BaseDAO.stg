@@ -176,7 +176,7 @@ public interface <table.name.voName>DAO
 
     /**
      * Updates {@link <table.name.voName>} information.
-     <input.attributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
+     <table.attributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
      * @return the number of {@link <table.name>} rows updated.
      */
     public int update(
