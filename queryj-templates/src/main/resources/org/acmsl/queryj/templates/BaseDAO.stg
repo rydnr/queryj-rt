@@ -211,9 +211,9 @@ cached_constants(row, voName) ::= <<
 /**
  * The <row.name> constant.
  */
-public static final <voName> <row.nameNormalizedUppercased> =
+public static final <voName> <row.name.normalized.uppercased> =
     new <voName>ValueObject(
-        <row.attributes:attribute_specification(attr=it); separator=",\n">);
+        <row.attributes:{ a | <attribute_specification(attr=a)>}; separator=",\n">);
 >>
 
 find_by_primary_key(table, parent, repository, C) ::= <<
