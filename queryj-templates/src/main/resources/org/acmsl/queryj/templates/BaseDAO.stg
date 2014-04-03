@@ -154,7 +154,7 @@ public interface <table.name.voName>DAO
     <table.attributes:{ a | <find_constant_methods(attribute=a, primaryKeyAttributes=table.primaryKey, voName=table.name.voName)>}; separator="\n\n">
 <endif>
 
-    <find_by_primary_key(table=table, parent=table.parent, repository=repository, C=C)>
+    <find_by_primary_key(table=table, parent=table.parent, repository=C.repository, C=C)>
 
     /**
      * Persists {@link <table.name.voName>} information.
