@@ -273,16 +273,6 @@ find_constant_methods(attribute, primaryKeyAttributes, voName) ::= <<
  */
 public <voName> findConstantBy<attribute.name.capitalized>(
     final <attribute.javaType> <attribute.name.lowercased>);
-
-/**
- * Loads \<i><attribute.tableName>\</i> information from the constant pool,
- * filtering by the primary key.
- <primaryKeyAttributes:attribute_javadoc(name=it.name.lowercased); separator="\n">
- * @return the \<code><attribute.name.voName>\</code> instance.
- */
-public <voName> findConstantByPk(
-  <primaryKeyAttributes:attribute_declaration(attr=it); separator=",\n">);
-
 >>
 
 fk_delete_method(foreignKey, table) ::= <<
