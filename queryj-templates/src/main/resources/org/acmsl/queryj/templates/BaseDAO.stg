@@ -86,6 +86,7 @@ import org.acmsl.commons.patterns.dao.DAO;
 /*
  * Importing some JDK classes.
  */
+<table.attributeTypes:{ t | import <t>;}; separator="\n">
 import java.math.BigDecimal;
 import java.util.Calendar;
 import java.util.Date;
