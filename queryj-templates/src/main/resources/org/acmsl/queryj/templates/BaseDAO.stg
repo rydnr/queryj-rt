@@ -151,7 +151,7 @@ public interface <table.name.voName>DAO
      */
     List\<<table.name.voName\>> getStaticValues();
 
-    <table.attributes:{ a | <find_constant_methods(attribute=a, primaryKeyAttributes=table.primaryKey, voName=table.name.voName)>}; separator="\n">
+    <table.attributes:{ a | <find_constant_methods(attribute=a, primaryKeyAttributes=table.primaryKey, voName=table.name.voName)>}; separator="\n\n">
 <endif>
 
     <find_by_primary_key(table=table, parent=parent, repository=repository, C=C)>
