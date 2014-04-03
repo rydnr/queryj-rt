@@ -311,7 +311,7 @@ custom_select(cs) ::= <<
 /**
  * Custom select \<i><cs.id>\</i>:
  * \<b><cs.description>\</b>.
- <cs.parameters:{ a | <attribute_javadoc(name=a)>}; separator="\n">
+ <cs.parameters:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
  * @return the \<i><cs.resultClass>\</i> information retrieved.
  */
 public <cs.resultClass> <cs.name.uncapitalized>(
