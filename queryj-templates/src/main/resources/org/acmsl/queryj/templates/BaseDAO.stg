@@ -151,8 +151,8 @@ public interface <table.name.voName>DAO
      */
     List\<<table.name.voName\>> getStaticValues();
 
-    <table.staticAttribute:find_constant_methods(
-      attribute=it,
+    <find_constant_methods(
+      attribute=table.staticAttribute,
       primaryKeyAttributes=table.primaryKey,
       voName=table.name.voName)>
 <endif>
