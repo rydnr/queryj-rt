@@ -309,13 +309,13 @@ custom_select(cs) ::= <<
   @param cs the custom select.
 !>
 /**
- * Custom select \<i><cs.id>\</i>:\<br/>
+ * Custom select \<i><cs.id>\</i>:
  * \<b><cs.description>\</b>.
  <cs.parameters:{ a | <attribute_javadoc(name=a)>}; separator="\n">
  * @return the \<i><cs.resultClass>\</i> information retrieved.
  */
 public <cs.resultClass> <cs.name.uncapitalized>(
-    <cs.parameters:{ a | attribute_declaration(attr=a)>}; separator=",\n">)
+    <cs.parameters:{ a | <attribute_declaration(attr=a)>}; separator=",\n">)
   throws DataAccessException;
 >>
 
