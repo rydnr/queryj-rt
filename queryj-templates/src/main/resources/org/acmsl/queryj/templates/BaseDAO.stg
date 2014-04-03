@@ -229,6 +229,39 @@ public static final <voName> <row.nameNormalizedUppercased> =
         <row.attributes:attribute_specification(attr=it); separator=",\n">);
 >>
 
+find_by_primary_key(table, parent, repository, C) ::= <<
+<!
+ Generates the find-by-primary-key methods.
+ @param table the table.
+ @param parent the parent.
+ @param repository the repository.
+ @param C the context.
+!>
+
+/**
+<if(table.voDecorated)>
+ * Retrieves {@link <table.name.voName>Decorator} (table <table.name>) information
+<else>
+ * Retrieves {@link <table.name.voName>} information
+<endif>
+ * filtering by its primary key.
+ <table.primaryKey:{ attr | <attribute_javadoc(attr=attr)>}; separator="\n">
+<if(table.voDecorated)>
+ * @return the {@link <table.name.voName>Decorator} (table <table.name>) matching given
+<else>
+ * @return the {@link <table.name.voName>} matching given
+<endif>
+ * primary key.
+ */
+<nullable(C=C)>
+<if(table.voDecorated)>
+public <table.name.voName>Decorator findByPrimaryKey(
+<else>
+public <table.name.voName> findByPrimaryKey(
+<endif>
+    <table.primaryKey:{ attr | <attribute_declaration(attr=attr, C=C)>}; separator=",\n">);
+>>
+
 attribute_specification(attr) ::= <<
 <!
  Prints the value of the attribute, optionally escaping it.
