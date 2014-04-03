@@ -164,8 +164,7 @@ public interface <table.name.voName>DAO
      * @return the {@link <table.name.voName>} matching given
      * primary key.
      */
-    public <table.name.voName> findByPrimaryKey(<table.primaryKey:attribute_declaration(attr=it); separator=",\n">)
-      throws DataAccessException;
+    <find_by_primary_key(table=table, parent=parent, repository=repository, C=C)>
 
     /**
      * Persists \<code><table.name.voName>\</code> information.
