@@ -134,10 +134,7 @@ class(table, C) ::= <<
       first_line_description(tableName=table.name),
       second_line_description(tableName=table.name)
     ]:{line |<line>}; separator="\n * ">
-<class_common_javadoc(
-  template="org/acmsl/queryj/templates/BaseDAO.stg",
-  version=C.version,
-  timestamp=C.timestamp)>
+<class_common_javadoc(template="org/acmsl/queryj/templates/BaseDAO.stg", C=C)>
  */
 public interface <table.name.voName>DAO
 <if(C.implement_markers)>
