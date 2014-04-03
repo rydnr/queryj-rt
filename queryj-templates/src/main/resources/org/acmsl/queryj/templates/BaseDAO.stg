@@ -147,7 +147,7 @@ public interface <table.name.voName>DAO
 
 {
 <if(table.static)>
-    <table.staticContents:{r | <cached_constants(row=r, voName=table.name.voName)}; separator="\n\n">
+    <table.staticContents:{r | <cached_constants(row=r, voName=table.name.voName)>}; separator="\n\n">
 
     /**
      * Retrieves the static (pre-cached) values.
