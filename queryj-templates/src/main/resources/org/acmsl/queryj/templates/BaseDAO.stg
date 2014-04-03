@@ -136,7 +136,7 @@ class(table, C) ::= <<
     ]:{line |<line>}; separator="\n * ">
 <class_common_javadoc(
   template="org/acmsl/queryj/templates/BaseDAO.stg",
-  generation_timestamps_enabled=C.generation_timestamps_enabled,
+  version=C.version,
   timestamp=C.timestamp)>
  */
 public interface <table.name.voName>DAO
