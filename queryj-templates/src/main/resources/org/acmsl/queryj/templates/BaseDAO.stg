@@ -158,7 +158,7 @@ public interface <table.name.voName>DAO
 
     /**
      * Persists \<code><table.name.voName>\</code> information.
-     <table.own.minus.externallyManagedAttributes:{ a | <attribute_javadoc(name=a.name.lowercased)>}; separator="\n">
+     <table.own.minus.externallyManagedAttributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
      */
     public void insert(
         <table.own.minus.externallyManagedAttributes:{ a | <attribute_declaration(attr=a)>}; separator=",\n">)
@@ -167,16 +167,15 @@ public interface <table.name.voName>DAO
     /**
      * Inserts and retrieves the newly-inserted
      * \<code><table.name.voName>\</code> instance.
-     <table.allButExternallyManagedAttributes:attribute_javadoc(
-       name=it.nameLowercased); separator="\n">
+     <table.own.minus.externallyManagedAttributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
      */
     public <table.name.voName> create(
-        <table.allButExternallyManagedAttributes:{ a | <attribute_declaration(attr=a)>}; separator=",\n">)
+        <table.own.minus.externallyManagedAttributes:{ a | <attribute_declaration(attr=a)>}; separator=",\n">)
       throws DataAccessException;
 
     /**
      * Updates \<code><table.name.voName>\</code> information.
-     <input.attributes:{ a | <attribute_javadoc(name=a.name.lowercased)>}; separator="\n">
+     <input.attributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
      * @return the number of entities updated.
      */
     public int update(
@@ -185,7 +184,7 @@ public interface <table.name.voName>DAO
 
     /**
      * Deletes \<code><table.name.voName>\</code> information.
-     <table.primaryKey:{ a | <attribute_javadoc(name=a.name.lowercased)>}; separator="\n">
+     <table.primaryKey:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
      */
     public void delete(
         <table.primaryKey:{ a | <attribute_declaration(attr=a)>}; separator=",\n">)
