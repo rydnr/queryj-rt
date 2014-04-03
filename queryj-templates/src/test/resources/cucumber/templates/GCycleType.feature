@@ -43,6 +43,6 @@ Feature: G_CYCLE_TYPES code compiles
 
     Examples:
       | template | output |
-      | DAO | OracleGCycleDAO.java |
       | BaseDAO | GCycleDAO.java |
+      | DAO | OracleGCycleDAO.java |
 
