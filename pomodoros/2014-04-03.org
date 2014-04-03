@@ -3,3 +3,4 @@
 ** Pending:
 *** Move TableTestHelper out of QueryJ Templates
 *** table.voDecorated returns true
+*** attribute type returns boolean
