@@ -157,13 +157,6 @@ public interface <table.name.voName>DAO
       voName=table.name.voName)>
 <endif>
 
-    /**
-     * Retrieves {@link <table.name.voName>} information
-     * filtering by its primary key.
-     <table.primaryKey:attribute_javadoc(name=it.nameLowercased); separator="\n">
-     * @return the {@link <table.name.voName>} matching given
-     * primary key.
-     */
     <find_by_primary_key(table=table, parent=parent, repository=repository, C=C)>
 
     /**
