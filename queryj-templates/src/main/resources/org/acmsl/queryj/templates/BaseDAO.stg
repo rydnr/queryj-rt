@@ -180,7 +180,7 @@ public interface <table.name.voName>DAO
      * @return the number of {@link <table.name>} rows updated.
      */
     public int update(
-        <input.attributes:{ a | <attribute_declaration(attr=a)>}; separator=",\n">)
+        <table.attributes:{ a | <attribute_declaration(attr=a)>}; separator=",\n">)
       throws DataAccessException;
 
     /**
