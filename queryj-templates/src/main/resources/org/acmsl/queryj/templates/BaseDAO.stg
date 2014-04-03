@@ -83,10 +83,12 @@ import org.springframework.dao.DataAccessException;
  */
 import org.acmsl.commons.patterns.dao.DAO;
 <endif>
+<if(table.attributeTypes)>
 /*
  * Importing some JDK classes.
  */
 <table.attributeTypes:{ t | import <t>;}; separator="\n">
+<endif>
 
 <class(table=table, C=C)>
 >>
