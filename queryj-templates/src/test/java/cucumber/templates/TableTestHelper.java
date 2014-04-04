@@ -325,7 +325,7 @@ public class TableTestHelper
                             Boolean.valueOf(columnEntry.get(TableTestHelper.ALLOWS_NULL)),
                             columnEntry.get(VALUE),
                             Boolean.valueOf(columnEntry.get(READONLY)),
-                            booleanInfo[0] != null,
+                            booleanInfo[0] != null && Boolean.valueOf(booleanInfo[0]),
                             booleanInfo[0],
                             booleanInfo[1],
                             booleanInfo[2]);
