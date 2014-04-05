@@ -214,7 +214,7 @@ public class SqlElement<T>
      * @param dynamic the <i>dynamic</i> attribute.
      * @param description the <i>description</i>.
      */
-    protected SqlElement(
+    public SqlElement(
         @NotNull final T id,
         @Nullable final T dao,
         @Nullable final T repositoryScope,
