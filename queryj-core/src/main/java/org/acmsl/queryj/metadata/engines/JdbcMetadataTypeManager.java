@@ -1784,7 +1784,7 @@ public class JdbcMetadataTypeManager
     public String toString()
     {
         return
-              "{ \"class\": \"" + JdbcMetadataTypeManager.class.getName() + '"'
+              "{ \"class\": \"" + JdbcMetadataTypeManager.class.getSimpleName() + '"'
             + ", \"native2JavaTypeMapping\": " + m__mNative2JavaTypeMapping
             + " }";
     }
