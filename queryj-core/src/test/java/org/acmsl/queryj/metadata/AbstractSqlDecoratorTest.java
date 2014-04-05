@@ -89,4 +89,28 @@ public class AbstractSqlDecoratorTest
 
         EasyMock.verify(customSqlProvider);
     }
+
+    /**
+     * Tests the correctness of isResultNullable() for single queries with implicit results.
+     */
+    @Test
+    public void isResultNullable_is_correct_for_implicit_results_and_single_queries()
+    {
+        @NotNull final Sql<String> sql =
+            new SqlElement<>("id1", "name1", "select", Cardinality.SINGLE, "all", false, false, "none", "desc1");
+
+        @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
+        @NotNull final SqlResultDAO resultDAO = EasyMock.createNiceMock(SqlResultDAO.class);
+        @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
+
+        EasyMock.expect(customSqlProvider.getSqlResultDAO()).andReturn(resultDAO);
+        EasyMock.replay(customSqlProvider);
+
+        @NotNull final AbstractSqlDecorator instance =
+            new AbstractSqlDecorator(sql, customSqlProvider, metadataManager) {};
+
+        Assert.assertTrue(instance.isResultNullable());
+
+        EasyMock.verify(customSqlProvider);
+    }
 }
