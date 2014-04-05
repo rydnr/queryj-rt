@@ -68,7 +68,7 @@ import java.sql.Types;
 public class JdbcMetadataTypeManagerTest
 {
     /**
-     * Tests
+     * Tests toJdbcType works for VARCHAR2.
      */
     @Test
     public void toJdbcType_works_for_VARCHAR2()
