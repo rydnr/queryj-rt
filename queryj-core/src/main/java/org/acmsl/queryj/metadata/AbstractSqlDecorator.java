@@ -608,7 +608,7 @@ public abstract class AbstractSqlDecorator
      */
     protected boolean isResultNullable(@NotNull final String resultClass)
     {
-        boolean result;
+        final boolean result;
 
         @NotNull final JdbcTypeManager typeManager = new JdbcTypeManager();
 
