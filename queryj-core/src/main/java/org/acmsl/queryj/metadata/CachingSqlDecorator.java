@@ -271,9 +271,9 @@ public class CachingSqlDecorator
     }
 
     /**
-     * Retrieves the cached information about whether the result
+     * the cached information about whether the result
      * is nullable or not.
-     * @return such information.
+     * @param info such information.
      */
     protected void setCachedIsResultNullable(final boolean info)
     {
