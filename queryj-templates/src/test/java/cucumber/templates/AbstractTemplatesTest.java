@@ -876,11 +876,11 @@ public abstract class AbstractTemplatesTest<G, F>
 
         EasyMock.expect(result.getMetaData()).andReturn(metadata).anyTimes();
         EasyMock.expect(result.getName()).andReturn("fake manager").anyTimes();
-        EasyMock.expect(result.getMetadataTypeManager()).andReturn(new JdbcMetadataTypeManager());
-        EasyMock.expect(result.getTableNames()).andReturn(tableNames);
-        EasyMock.expect(result.getTables()).andReturn(tables);
-        EasyMock.expect(result.isCaseSensitive()).andReturn(false);
-        EasyMock.expect(result.getEngine()).andReturn(new UndefinedJdbcEngine(engineName, "11"));
+        EasyMock.expect(result.getMetadataTypeManager()).andReturn(new JdbcMetadataTypeManager()).anyTimes();
+        EasyMock.expect(result.getTableNames()).andReturn(tableNames).anyTimes();
+        EasyMock.expect(result.getTables()).andReturn(tables).anyTimes();
+        EasyMock.expect(result.isCaseSensitive()).andReturn(false).anyTimes();
+        EasyMock.expect(result.getEngine()).andReturn(new UndefinedJdbcEngine(engineName, "11")).anyTimes();
         EasyMock.expect(result.getTableDAO()).andReturn(tableDAO);
 
         for (@NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table : tables)
