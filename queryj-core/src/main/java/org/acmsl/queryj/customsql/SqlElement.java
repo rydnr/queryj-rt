@@ -227,7 +227,10 @@ public class SqlElement<T>
         @NotNull final T description)
     {
         super(id);
-        immutableSetDAO(dao);
+        if (dao != null)
+        {
+            immutableSetDAO(dao);
+        }
         immutableSetRepositoryScope(repositoryScope);
         immutableSetName(name);
         immutableSetType(type);
