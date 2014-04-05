@@ -986,7 +986,6 @@ public class JdbcTypeManagerTest
         {
             /**
              * {@inheritDoc}
-             * @return
              */
             @Override public String getBaseTypeName()
             {
