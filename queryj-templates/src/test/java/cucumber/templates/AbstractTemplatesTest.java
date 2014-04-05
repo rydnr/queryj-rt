@@ -888,7 +888,7 @@ public abstract class AbstractTemplatesTest<G, F>
         EasyMock.expect(result.getMetadataTypeManager()).andReturn(new JdbcMetadataTypeManager());
         EasyMock.expect(result.getTableNames()).andReturn(tableNames);
         EasyMock.expect(result.getTables()).andReturn(tables);
-
+        EasyMock.expect(result.getCa)
         try
         {
             EasyMock.expect(metadata.getConnection()).andReturn(connection);
