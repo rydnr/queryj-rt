@@ -1059,7 +1059,8 @@ public class JdbcTypeManagerTest
             /**
              * {@inheritDoc}
              */
-            @Override public ResultSet getResultSet(final long l, final int i, final Map<String, Class<?>> stringClassMap)
+            @Override public ResultSet getResultSet(
+                final long l, final int i, final Map<String, Class<?>> stringClassMap)
             {
                 return null;
             }
