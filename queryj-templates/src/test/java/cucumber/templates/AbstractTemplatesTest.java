@@ -883,7 +883,8 @@ public abstract class AbstractTemplatesTest<G, F>
         EasyMock.expect(result.getEngine()).andReturn(new UndefinedJdbcEngine(engineName, "11"));
         EasyMock.expect(result.getTableDAO()).andReturn(tableDAO);
         for (@NotNull final Table<> table : tables)
-        EasyMock.expect()
+        {
+            EasyMock.expect()
         try
         {
             EasyMock.expect(metadata.getConnection()).andReturn(connection);
