@@ -876,7 +876,7 @@ public abstract class AbstractTemplatesTest<G, F>
     {
         @NotNull final MetadataManager result = EasyMock.createNiceMock(MetadataManager.class);
 
-        EasyMock.expect()
+        EasyMock.expect(result.getMetaData()).andReturn()
         return
             new JdbcMetadataManager(
                 "fake manager",
