@@ -879,11 +879,11 @@ public abstract class AbstractTemplatesTest<G, F>
         @NotNull final List<Table<String, Attribute<String>, List<Attribute<String>>>> tables)
     {
         @NotNull final MetadataManager result = EasyMock.createNiceMock(MetadataManager.class);
-        EasyMock
         @NotNull final DatabaseMetaData metadata = EasyMock.createNiceMock(DatabaseMetaData.class);
         @NotNull final Connection connection = EasyMock.createNiceMock(Connection.class);
 
         EasyMock.expect(result.getMetaData()).andReturn(metadata);
+        EasyMock.expect(result.getName())
         try
         {
             EasyMock.expect(metadata.getConnection()).andReturn(connection);
