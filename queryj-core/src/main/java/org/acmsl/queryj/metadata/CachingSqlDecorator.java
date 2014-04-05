@@ -282,6 +282,17 @@ public class CachingSqlDecorator
     }
 
     /**
+     * Retrieves the cached information about whether the result
+     * is nullable or not.
+     * @return such information.
+     */
+    @Nullable
+    protected Boolean getCachedIsResultNullable()
+    {
+        return m__bIsResultNullable;
+    }
+
+    /**
      * {@inheritDoc}
      */
     @NotNull
