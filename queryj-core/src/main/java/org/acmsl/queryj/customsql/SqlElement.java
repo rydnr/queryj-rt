@@ -289,7 +289,7 @@ public class SqlElement<T>
      * @param repositoryScope such attribute.
      */
     @SuppressWarnings("unused")
-    protected void setRepositoryScope(final T repositoryScope)
+    protected void setRepositoryScope(@NotNull final T repositoryScope)
     {
         immutableSetRepositoryScope(repositoryScope);
     }
