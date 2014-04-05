@@ -258,6 +258,6 @@ public class CachingSqlDecorator
             + ", \"wrappedParametersCheck\": " + m__bWrappedParametersCheck
             + ", \"cachedParameters\": [ " + m__cCachedParameters + ']'
             + ", \"resultClass\": \"" + m__strCachedResultClass + '"'
-            + '}';
+            + " }";
     }
 }
