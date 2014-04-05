@@ -553,6 +553,9 @@ public abstract class AbstractTemplatesTest<G, F>
         return
             new SqlXmlParserImpl(new ByteArrayInputStream("".getBytes()))
             {
+                /**
+                 * {@inheritDoc}
+                 */
                 @Override
                 @NotNull
                 public SqlDAO getSqlDAO()
