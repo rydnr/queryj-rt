@@ -1598,6 +1598,17 @@ public class JdbcTypeManagerTest
         Assert.assertEquals(String.class, instance.getClass(Types.VARCHAR));
     }
 
+    /**
+     * Tests whether the type "NUMBER" is recognized correctly.
+     */
+    @Test
+    public void get_class_for_NUMBER_works()
+    {
+        @NotNull final JdbcTypeManager instance = new JdbcTypeManager();
+
+        Assert.assertEquals(long.class, instance.getClass("NUMBER"));
+    }
+
     @Test
     public void bigint_can_be_used_for_numeric_columns()
     {
