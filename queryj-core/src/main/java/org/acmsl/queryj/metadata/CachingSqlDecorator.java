@@ -256,7 +256,7 @@ public class CachingSqlDecorator
         return
               "{ \"class\": \"" + CachingSqlDecorator.class.getSimpleName() + '"'
             + ", \"wrappedParametersCheck\": " + m__bWrappedParametersCheck
-            + ", m__cCachedParameters=" + m__cCachedParameters
+            + ", \"m__cCachedParameters=" + m__cCachedParameters
             + ", m__strCachedResultClass='" + m__strCachedResultClass + '\''
             + '}';
     }
