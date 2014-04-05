@@ -79,6 +79,11 @@ public abstract class AbstractSqlDecorator
     implements  SqlDecorator
 {
     /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = 8016386784936395080L;
+
+    /**
      * The wrapped sql element.
      */
     private Sql<String> m__Sql;
@@ -96,7 +101,7 @@ public abstract class AbstractSqlDecorator
     /**
      * Creates an <code>AbstractSqlDecorator</code> with given information.
      * @param sql the {@link Sql} to decorate.
-     * @param customSqlProvider the {@link >CustomSqlProvider}, required
+     * @param customSqlProvider the {@link CustomSqlProvider}, required
      * to decorate referred parameters.
      * @param metadataManager the {@link MetadataManager} instance.
      */
@@ -361,6 +366,7 @@ public abstract class AbstractSqlDecorator
 
     /**
      * Retrieves the result class.
+     * @param dao the dao name.
      * @param cardinality the cardinality.
      * @param resultRef the result ref.
      * @param customSqlProvider the custom sql provider.
@@ -378,6 +384,7 @@ public abstract class AbstractSqlDecorator
 
     /**
      * Retrieves the result class.
+     * @param dao the DAO name.
      * @param cardinality the cardinality.
      * @param resultRef the result ref.
      * @param resultDAO the {@link SqlResultDAO} instance.
