@@ -609,7 +609,8 @@ public abstract class AbstractSqlDecorator
     {
         boolean result;
 
-        new JdbcTypeManager().getClass()
+        @NotNull final typManager = new JdbcTypeManager();
+        .getClass()
     }
 
     /**
