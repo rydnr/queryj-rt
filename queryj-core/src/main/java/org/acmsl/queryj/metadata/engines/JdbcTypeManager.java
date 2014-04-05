@@ -650,6 +650,8 @@ public class JdbcTypeManager
         CLASS_MAPPING.put(Types.VARCHAR, String.class);
         INVERSE_CLASS_MAPPING.put(String.class, Types.VARCHAR);
         PREPARED_STATEMENT_METHODS.put(Types.VARCHAR, SET_STRING_METHOD);
+
+        TYPE_MAPPING.put(normalizeKey(VARCHAR), Types.VARCHAR);
     }
 
     /**
