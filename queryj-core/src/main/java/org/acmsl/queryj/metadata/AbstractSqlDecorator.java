@@ -374,7 +374,7 @@ public abstract class AbstractSqlDecorator
      * @param customSqlProvider the custom sql provider.
      * @return such information.
      */
-    @Nullable
+    @NotNull
     protected String getResultClass(
         @NotNull final DecoratedString dao,
         @NotNull final Cardinality cardinality,
