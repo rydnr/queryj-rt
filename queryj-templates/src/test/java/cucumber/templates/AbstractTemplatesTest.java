@@ -859,8 +859,6 @@ public abstract class AbstractTemplatesTest<G, F>
             }
         }
 
-        @NotNull final MetadataManager result = EasyMock.createNiceMock(MetadataManager.class);
-
         return retrieveMetadataManager(engineName, tableNames, tables);
     }
 
