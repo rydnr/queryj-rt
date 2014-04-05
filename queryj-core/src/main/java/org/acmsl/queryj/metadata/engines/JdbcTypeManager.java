@@ -890,7 +890,7 @@ public class JdbcTypeManager
             case Literals.FLOAT: result = float.class; break;
             case "int": result = int.class; break;
             case "long": result = long.class; break;
-            case Literals."short": result = short.class; break;
+            case Literals.SHORT_L: result = short.class; break;
             default: result = null; break;
         }
 
