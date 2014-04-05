@@ -91,7 +91,7 @@ public class AbstractSqlDecoratorTest
     }
 
     /**
-     * Tests the correctness of isResultNullable() for single queries with implicit results.
+     * Tests the correctness of isResultNullable() for multiple queries with implicit results.
      */
     @Test
     public void isResultNullable_is_correct_for_implicit_results_and_multiple_queries()
