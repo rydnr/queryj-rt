@@ -38,6 +38,7 @@ package org.acmsl.queryj.metadata.engines;
 /*
  * Importing EasyMock classes.
  */
+import org.acmsl.queryj.Literals;
 import org.easymock.EasyMock;
 
 /*
