@@ -1648,6 +1648,8 @@ public class JdbcMetadataTypeManager
     /**
      * Retrieves the JDBC type.
      * @param type the type.
+     * @param length the column length.
+     * @param precision the column precision.
      * @return the associated {@link java.sql.Types} constant.
      */
     @Override
