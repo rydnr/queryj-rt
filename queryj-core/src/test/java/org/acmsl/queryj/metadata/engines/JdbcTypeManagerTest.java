@@ -1649,7 +1649,7 @@ public class JdbcTypeManagerTest
     }
 
     /**
-     * Tests whether
+     * Tests whether the
      */
     @Test
     public void correct_type_reference_for_longs()
