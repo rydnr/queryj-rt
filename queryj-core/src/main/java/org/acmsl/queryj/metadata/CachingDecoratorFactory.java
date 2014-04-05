@@ -264,7 +264,7 @@ public class CachingDecoratorFactory
         @Nullable TableDecorator result = null;
 
         @Nullable final Table<String, Attribute<String>, List<Attribute<String>>> t_Table =
-            metadataManager.getTableDAO().findByName(table);
+            tableDAO.findByName(table);
 
         if (t_Table != null)
         {
