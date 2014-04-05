@@ -109,6 +109,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.charset.Charset;
+import java.sql.DatabaseMetaData;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -875,8 +876,9 @@ public abstract class AbstractTemplatesTest<G, F>
         @NotNull final List<Table<String, Attribute<String>, List<Attribute<String>>>> tables)
     {
         @NotNull final MetadataManager result = EasyMock.createNiceMock(MetadataManager.class);
-
-        EasyMock.expect(result.getMetaData()).andReturn()
+        @NotNull final DatabaseMetaData metadada = EasyMock.createNiceMock(DatabaseMetaData.class);
+        @NotNull final Connection connection =
+        EasyMock.expect(result.getMetaData()).andReturn(metadada);
         return
             new JdbcMetadataManager(
                 "fake manager",
