@@ -1,4 +1,4 @@
-* 2014/04/04:
+* 2014/04/05:
 ** DONE Fix attribute type in BaseDAO.stg #462: 1 -> 2
 ** TODO table.voDecorated returns true #461: 1 ->
 ** TODO Add SqlDecorator.isResultNullable(): 2 -> 1
@@ -9,4 +9,3 @@
 - NUMBER,
 - VARCHAR2
 
-*** wittyhead: 3 -> 3
