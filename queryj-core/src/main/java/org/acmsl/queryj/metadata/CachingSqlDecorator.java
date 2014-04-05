@@ -270,6 +270,10 @@ public class CachingSqlDecorator
         return result;
     }
 
+    private Boolean getCachedIsResultNullable()
+    {
+    }
+
     /**
      * {@inheritDoc}
      */
