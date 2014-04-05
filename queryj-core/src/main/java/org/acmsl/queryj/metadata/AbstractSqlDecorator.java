@@ -415,7 +415,14 @@ public abstract class AbstractSqlDecorator
             {
                 result.append('<');
             }
-            result.append(dao.getVoName());
+            if (dao != null)
+            {
+                result.append(dao.getVoName());
+            }
+            else
+            {
+
+            }
             if (multiple)
             {
                 result.append('>');
