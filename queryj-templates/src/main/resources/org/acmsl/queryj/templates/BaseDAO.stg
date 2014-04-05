@@ -119,7 +119,6 @@ project_imports(basePackageName, voName) ::= <<
  * Importing project classes.
  */
 import <basePackageName>.dao.<voName>;
-import <basePackageName>.dao.<voName>ValueObject;
 >>
 
 class(table, C) ::= <<
