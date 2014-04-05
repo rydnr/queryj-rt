@@ -357,7 +357,7 @@ public class JdbcMetadataTypeManager
         result.put(Literals.INTEGER_U, t_Long);
         result.put(Literals.NUMERIC_U, t_Long);
         result.put("Number", t_Long);
-        result.put("number", t_Long);
+        result.put(Literals.NUMBER_L, t_Long);
         result.put(Literals.NUMBER_U, t_Long);
         result.put(Literals.BIGINT_U, t_Long);
         result.put("Long", t_Long);
