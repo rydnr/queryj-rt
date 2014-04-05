@@ -90,6 +90,7 @@ import org.antlr.v4.runtime.tree.ParseTree;
 /*
  * Importing Jetbrains annotations.
  */
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -858,6 +859,7 @@ public abstract class AbstractTemplatesTest<G, F>
             }
         }
 
+        @NotNull final MetadataManager result = EasyMock.createNiceMock(MetadataManager)
         return retrieveMetadataManager(engineName, tableNames, tables);
     }
 
