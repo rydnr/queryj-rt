@@ -634,7 +634,7 @@ public class JdbcMetadataTypeManager
     @Override
     public String getProcedureResultType(final int dataType, final boolean isBool)
     {
-        @Nullable String result = getObjectType(dataType, isBool);
+        @Nullable String result;
 
         switch  (dataType)
         {
