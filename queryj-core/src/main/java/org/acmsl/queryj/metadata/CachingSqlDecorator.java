@@ -257,7 +257,7 @@ public class CachingSqlDecorator
               "{ \"class\": \"" + CachingSqlDecorator.class.getSimpleName() + '"'
             + ", \"wrappedParametersCheck\": " + m__bWrappedParametersCheck
             + ", \"cachedParameters\": [ " + m__cCachedParameters + ']'
-            + ", m__strCachedResultClass='" + m__strCachedResultClass + '\''
+            + ", \"resultClass\": ='" + m__strCachedResultClass + '\''
             + '}';
     }
 }
