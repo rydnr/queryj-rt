@@ -881,6 +881,10 @@ public abstract class AbstractTemplatesTest<G, F>
         @NotNull final Connection connection = EasyMock.createNiceMock(Connection.class);
 
         EasyMock.expect(result.getMetaData()).andReturn(metadata);
+        try
+        {
+
+        }
         EasyMock.expect(metadata.getConnection()).andReturn(connection);
 
         return
