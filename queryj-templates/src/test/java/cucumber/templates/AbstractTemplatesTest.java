@@ -884,7 +884,7 @@ public abstract class AbstractTemplatesTest<G, F>
 
         EasyMock.expect(result.getMetaData()).andReturn(metadata);
         EasyMock.expect(result.getName()).andReturn("fake manager");
-        EasyMock.expect()
+        EasyMock.expect(result.getMetadataTypeManager())
         try
         {
             EasyMock.expect(metadata.getConnection()).andReturn(connection);
