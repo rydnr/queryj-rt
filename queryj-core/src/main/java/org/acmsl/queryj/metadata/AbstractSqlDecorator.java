@@ -606,7 +606,7 @@ public abstract class AbstractSqlDecorator
      */
     protected boolean isResultNullable(@NotNull final String resultClass)
     {
-        return !isMultiple() && isResultNullable(getResultClass());
+        return
     }
 
     /**
