@@ -1696,6 +1696,9 @@ public class JdbcTypeManagerTest
         Assert.assertTrue(instance.areColumnTypesCompatible(Types.FLOAT, Types.NUMERIC));
     }
 
+    /**
+     * Tests whether Double can be used for Numeric columns.
+     */
     @Test
     public void integer_can_be_used_for_numeric_columns()
     {
