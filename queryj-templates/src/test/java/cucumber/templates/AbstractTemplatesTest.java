@@ -109,6 +109,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.charset.Charset;
+import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -877,7 +878,8 @@ public abstract class AbstractTemplatesTest<G, F>
     {
         @NotNull final MetadataManager result = EasyMock.createNiceMock(MetadataManager.class);
         @NotNull final DatabaseMetaData metadada = EasyMock.createNiceMock(DatabaseMetaData.class);
-        @NotNull final Connection connection =
+        @NotNull final Connection connection = EasyMock.createNiceMock(Connection.class);
+
         EasyMock.expect(result.getMetaData()).andReturn(metadada);
         return
             new JdbcMetadataManager(
