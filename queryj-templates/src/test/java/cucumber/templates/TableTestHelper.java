@@ -367,7 +367,7 @@ public class TableTestHelper
                 tableName,
                 comment,
                 new ArrayList<>(),
-                new ArrayList<Attribute<String>>(),
+                new ArrayList<>(),
                 new ArrayList<ForeignKey<String>>(),
                 // TODO: Decorate TableValueObject to retrieve the parent table via its name
                 // and the table collection.
