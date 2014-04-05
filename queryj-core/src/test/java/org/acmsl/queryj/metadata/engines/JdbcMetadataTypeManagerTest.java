@@ -39,7 +39,6 @@ package org.acmsl.queryj.metadata.engines;
  * Importing QueryJ classes.
  */
 import org.acmsl.queryj.Literals;
-import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
 
 /*
  * Importing JetBrains annotations.
