@@ -38,6 +38,7 @@ package org.acmsl.queryj.metadata.engines.oracle;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -60,6 +61,6 @@ public class JdbcMetadataTypeManagerTest
     @Test
     public void toJdbcType_works_for_VARCHAR2()
     {
-        @NotNull final
+        @NotNull final JdbcMetadataTypeManager instance =
     }
 }
