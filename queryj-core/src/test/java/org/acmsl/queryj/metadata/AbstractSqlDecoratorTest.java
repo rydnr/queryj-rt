@@ -96,7 +96,7 @@ public class AbstractSqlDecoratorTest
      * Tests the correctness of isResultNullable() for multiple queries with implicit results.
      */
     @Test
-    public void isResultNullable_is_correct_for_implicit_results_and_multiple_queries()
+    public void isResultNullable_is_correct_for_multiple_queries()
     {
         @NotNull final Sql<String> sql =
             new SqlElement<>("id1", "name1", "select", Cardinality.MULTIPLE, "all", false, false, "none", "desc1");
