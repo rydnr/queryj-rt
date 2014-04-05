@@ -1625,7 +1625,7 @@ public class JdbcTypeManagerTest
     }
 
     /**
-     * Tests whether BigInt can be used for numeric columns.
+     * Tests whether Decimal can be used for numeric columns.
      */
     @Test
     public void decimal_can_be_used_for_numeric_columns()
