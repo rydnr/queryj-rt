@@ -89,7 +89,8 @@ public class CachingSqlDecorator
     /**
      * The cached "is result nullable".
      */
-    private Boolean m__bIsResultNullable
+    private Boolean m__bIsResultNullable = null;
+
     /**
      * Creates a <code>CachingSqlDecorator</code> with given information.
      * @param sql the <code>Sql</code> to decorate.
