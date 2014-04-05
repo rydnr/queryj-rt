@@ -52,6 +52,7 @@ import org.jetbrains.annotations.NotNull;
  * Importing JUnit/PowerMock/EasyMock classes.
  */
 import org.easymock.EasyMock;
+import org.jetbrains.annotations.Nullable;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -73,7 +74,17 @@ public class AbstractSqlDecoratorTest
     public void isResultNullable_is_correct_for_implicit_results_and_single_queries()
     {
         @NotNull final Sql<String> sql =
-            new SqlElement<>("id1", "dao", null, "name1", "select", Cardinality.SINGLE, "all", true, false, "desc1");
+            new SqlElement<>("id1", "name1", "select", Cardinality.SINGLE, "all", false, false, "desc1");
+
+        @NotNull final T id,
+        @NotNull final T name,
+        @NotNull final T type,
+        @NotNull final Cardinality cardinality,
+        @Nullable final T implementation,
+        final boolean validate,
+        final boolean dynamic,
+        @NotNull final T repositoryScope,
+        @NotNull final T description)
 
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
