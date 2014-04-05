@@ -72,12 +72,6 @@ import org.acmsl.commons.utils.io.FileUtils;
 /*
  * Importing ANTLR classes.
  */
-import org.acmsl.queryj.metadata.vo.ForeignKey;
-import org.acmsl.queryj.metadata.vo.Table;
-
-/*
- * Importing ANTLR classes.
- */
 import org.antlr.v4.runtime.ANTLRFileStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.RecognitionException;
