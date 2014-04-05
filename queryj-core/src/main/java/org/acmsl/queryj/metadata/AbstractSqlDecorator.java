@@ -597,7 +597,7 @@ public abstract class AbstractSqlDecorator
      */
     public boolean isResultNullable()
     {
-        return isResultNullable(isMultiple(), this.getResultClass());
+        return isResultNullable(isMultiple(), getResultClass());
     }
 
     /**
