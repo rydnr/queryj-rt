@@ -59,7 +59,7 @@ import org.junit.runners.JUnit4;
 import java.sql.Types;
 
 /**
- *
+ * Tests for {@link JdbcMetadataTypeManager}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/05 06:53
