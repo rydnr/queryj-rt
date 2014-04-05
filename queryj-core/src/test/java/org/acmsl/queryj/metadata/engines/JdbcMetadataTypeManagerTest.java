@@ -33,7 +33,7 @@
  * Time: 06:53
  *
  */
-package org.acmsl.queryj.metadata.engines.oracle;
+package org.acmsl.queryj.metadata.engines;
 
 /*
  * Importing QueryJ classes.
