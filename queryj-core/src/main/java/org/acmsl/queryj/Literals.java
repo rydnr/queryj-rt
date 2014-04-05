@@ -120,4 +120,5 @@ public interface Literals
     String MALFORMED_PATTERN = "Malformed pattern";
     String VARCHAR2 = "VARCHAR2";
     String SHORT_L = "short";
+    String NUMBER_L = "number";
 }
