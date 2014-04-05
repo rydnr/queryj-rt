@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Tests for
+ * Description: Tests for JdbcMetadataTypeManager.
  *
  * Date: 2014/04/05
  * Time: 06:53
