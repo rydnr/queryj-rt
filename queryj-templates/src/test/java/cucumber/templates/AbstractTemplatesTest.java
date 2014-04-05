@@ -881,7 +881,8 @@ public abstract class AbstractTemplatesTest<G, F>
         EasyMock.expect(result.getTables()).andReturn(tables).anyTimes();
         EasyMock.expect(result.isCaseSensitive()).andReturn(false).anyTimes();
         EasyMock.expect(result.getEngine()).andReturn(new UndefinedJdbcEngine(engineName, "11")).anyTimes();
-        EasyMock.expect(result.getTableDAO()).andReturn(tableDAO);
+        EasyMock.expect(result.getTableDAO()).andReturn(tableDAO).anyTy
+        ;
 
         for (@NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table : tables)
         {
