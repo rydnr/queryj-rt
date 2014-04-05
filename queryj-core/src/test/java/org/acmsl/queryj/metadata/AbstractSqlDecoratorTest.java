@@ -118,7 +118,7 @@ public class AbstractSqlDecoratorTest
      * Tests the correctness of isResultNullable() for single queries with implicit results.
      */
     @Test
-    public void isResultNullable_is_correct_for_implicit_results_and_single_queries()
+    public void isResultNullable_is_correct_for_explicit_results_and_single_queries()
     {
         @NotNull final Sql<String> sql =
             new SqlElement<>("id1", "name1", "select", Cardinality.SINGLE, "all", false, false, "none", "desc1");
