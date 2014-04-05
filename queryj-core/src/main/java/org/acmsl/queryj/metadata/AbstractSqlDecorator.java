@@ -56,7 +56,6 @@ import org.acmsl.queryj.customsql.StatementFlagsRef;
 /*
  * Importing Apache Commons-Logging classes.
  */
-import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
 import org.acmsl.queryj.metadata.engines.JdbcTypeManager;
 import org.apache.commons.logging.Log;
 
