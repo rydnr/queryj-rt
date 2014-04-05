@@ -102,6 +102,9 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -872,6 +875,9 @@ public abstract class AbstractTemplatesTest<G, F>
         @NotNull final MetadataManager result = EasyMock.createNiceMock(MetadataManager.class);
         @NotNull final DatabaseMetaData metadata = EasyMock.createNiceMock(DatabaseMetaData.class);
         @NotNull final Connection connection = EasyMock.createNiceMock(Connection.class);
+        @NotNull final PreparedStatement statement = EasyMock.createNiceMock(PreparedStatement.class);
+        @NotNull final ResultSet resultSet = EasyMock.createNiceMock(ResultSet.class);
+        @NotNull final ResultSetMetaData resultSetMetaData = EasyMock.createNiceMock(ResultSetMetaData.class);
         @NotNull final TableDAO tableDAO = EasyMock.createNiceMock(TableDAO.class);
 
         EasyMock.expect(result.getMetaData()).andReturn(metadata).anyTimes();
@@ -883,21 +889,31 @@ public abstract class AbstractTemplatesTest<G, F>
         EasyMock.expect(result.getEngine()).andReturn(new UndefinedJdbcEngine(engineName, "11")).anyTimes();
         EasyMock.expect(result.getTableDAO()).andReturn(tableDAO).anyTimes();
 
-        for (@NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table : tables)
-        {
-            EasyMock.expect(tableDAO.findByName(table.getName())).andReturn(table).anyTimes();
-        }
         try
         {
             EasyMock.expect(metadata.getConnection()).andReturn(connection);
+            EasyMock.expect(statement.executeQuery()).andReturn(resultSet).anyTimes();
+            EasyMock.expect(resultSet.next());
+            EasyMock.expect(resultSet.getMetaData()).andReturn(resultSetMetaData);
+
+            for (@NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table : tables)
+            {
+                EasyMock.expect(tableDAO.findByName(table.getName())).andReturn(table).anyTimes();
+                EasyMock.expect(
+                    connection.prepareStatement("select * from " + table.getName())).andReturn(staticContent).anyTimes();
+            }
         }
         catch (@NotNull final SQLException sqlException)
         {
             // Being forced to catch it.
         }
+
         EasyMock.replay(result);
         EasyMock.replay(metadata);
         EasyMock.replay(connection);
+        EasyMock.replay(statement);
+        EasyMock.replay(resultSet);
+        EasyMock.replay(resultSetMetaData);
         EasyMock.replay(tableDAO);
 
         return result;
