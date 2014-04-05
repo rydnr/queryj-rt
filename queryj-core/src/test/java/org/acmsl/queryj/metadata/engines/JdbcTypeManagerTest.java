@@ -1697,7 +1697,7 @@ public class JdbcTypeManagerTest
     }
 
     /**
-     * Tests whether Double can be used for Numeric columns.
+     * Tests whether Integer can be used for Numeric columns.
      */
     @Test
     public void integer_can_be_used_for_numeric_columns()
