@@ -38,7 +38,6 @@ package org.acmsl.queryj.metadata.engines.oracle;
 /*
  * Importing JetBrains annotations.
  */
-import junit.framework.Assert;
 import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
 import org.jetbrains.annotations.NotNull;
