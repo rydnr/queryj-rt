@@ -59,4 +59,7 @@ public class JdbcMetadataTypeManagerTest
 {
     @Test
     public void toJdbcType_works_for_VARCHAR2()
+    {
+        @NotNull final
+    }
 }
