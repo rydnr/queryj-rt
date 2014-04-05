@@ -231,7 +231,10 @@ public class SqlElement<T>
         {
             immutableSetDAO(dao);
         }
-        immutableSetRepositoryScope(repositoryScope);
+        if (repositoryScope != null)
+        {
+            immutableSetRepositoryScope(repositoryScope);
+        }
         immutableSetName(name);
         immutableSetType(type);
         immutableSetCardinality(cardinality);
