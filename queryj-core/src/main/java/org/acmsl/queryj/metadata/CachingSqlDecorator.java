@@ -255,6 +255,11 @@ public class CachingSqlDecorator
     public boolean isResultNullable()
     {
         Boolean result = getCachedIsResultNullable();
+
+        if (result == null)
+        {
+            result =
+        }
         return super.isResultNullable();
     }
 
