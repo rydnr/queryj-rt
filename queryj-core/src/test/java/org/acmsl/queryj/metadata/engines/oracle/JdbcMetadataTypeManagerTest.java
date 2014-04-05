@@ -39,6 +39,7 @@ package org.acmsl.queryj.metadata.engines.oracle;
  * Importing JetBrains annotations.
  */
 import junit.framework.Assert;
+import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
 import org.jetbrains.annotations.NotNull;
 
@@ -66,6 +67,6 @@ public class JdbcMetadataTypeManagerTest
     {
         @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
 
-        Assert.assertEquals(Types.VARCHAR, instance.toJdbcType("VARCHAR2", 10, 0));
+        Assert.assertEquals(Types.VARCHAR, instance.toJdbcType(Literals.VARCHAR2, 10, 0));
     }
 }
