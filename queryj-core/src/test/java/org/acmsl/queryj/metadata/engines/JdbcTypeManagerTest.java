@@ -984,6 +984,10 @@ public class JdbcTypeManagerTest
 
         @NotNull final Array t_Array = new Array()
         {
+            /**
+             * {@inheritDoc}
+             * @return
+             */
             @Override public String getBaseTypeName()
             {
                 return null;
