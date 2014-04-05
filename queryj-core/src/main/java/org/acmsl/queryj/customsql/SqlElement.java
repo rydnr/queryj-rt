@@ -279,7 +279,7 @@ public class SqlElement<T>
      * @param repositoryScope such attribute.
      */
     protected final void immutableSetRepositoryScope(
-        final T repositoryScope)
+        @NotNull final T repositoryScope)
     {
         m__strRepositoryScope = repositoryScope;
     }
