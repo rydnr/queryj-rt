@@ -1590,6 +1590,9 @@ public class JdbcTypeManagerTest
         Assert.assertEquals(long.class, instance.toPrimitive(Long.class));
     }
 
+    /**
+     * Tests whether the type "NUMBER" is recognized correctly.
+     */
     @Test
     public void get_class_int_for_String_works()
     {
@@ -1606,7 +1609,7 @@ public class JdbcTypeManagerTest
     {
         @NotNull final JdbcTypeManager instance = new JdbcTypeManager();
 
-        Assert.assertEquals(long.class, instance.getClass("VARCHAR2"));
+        Assert.assertEquals(String.class, instance.getClass("VARCHAR2"));
     }
 
     @Test
