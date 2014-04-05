@@ -1606,7 +1606,7 @@ public class JdbcTypeManagerTest
     {
         @NotNull final JdbcTypeManager instance = new JdbcTypeManager();
 
-        Assert.assertEquals(long.class, instance.getClass("NUMBER"));
+        Assert.assertEquals(long.class, instance.getClass("VARCHAR2"));
     }
 
     @Test
