@@ -271,7 +271,7 @@ public class CachingSqlDecorator
     }
 
     /**
-     *
+     * Retrieves
      * @return
      */
     @Nullable
