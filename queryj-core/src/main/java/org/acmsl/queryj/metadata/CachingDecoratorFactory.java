@@ -249,6 +249,7 @@ public class CachingDecoratorFactory
      * Creates a {@link TableDecorator}.
      * @param table the table name.
      * @param metadataManager the {@link MetadataManager} instance.
+     * @param tableDAO the {@link TableDAO} instance.
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
      * @return the decorated table for the concrete template.
      */
