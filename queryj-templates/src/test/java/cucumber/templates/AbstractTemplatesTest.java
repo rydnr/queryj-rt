@@ -38,7 +38,6 @@ package cucumber.templates;
 /*
  * Importing QueryJ Core classes.
  */
-import com.sun.org.apache.xpath.internal.functions.FuncExtElementAvailable;
 import cucumber.templates.sql.CucumberSqlDAO;
 import cucumber.templates.sql.CucumberSqlParameterDAO;
 
