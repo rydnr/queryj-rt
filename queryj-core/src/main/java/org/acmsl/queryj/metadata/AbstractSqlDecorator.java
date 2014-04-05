@@ -392,7 +392,7 @@ public abstract class AbstractSqlDecorator
      * @param resultDAO the {@link SqlResultDAO} instance.
      * @return such information.
      */
-    @Nullable
+    @NotNull
     protected String getResultClass(
         @NotNull final DecoratedString dao,
         @NotNull final Cardinality cardinality,
