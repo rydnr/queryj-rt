@@ -889,6 +889,7 @@ public abstract class AbstractTemplatesTest<G, F>
         EasyMock.expect(result.getTableNames()).andReturn(tableNames);
         EasyMock.expect(result.getTables()).andReturn(tables);
         EasyMock.expect(result.isCaseSensitive()).andReturn(false);
+        EasyMock.expect(result.getEngine()).andReturn(engineName);
         try
         {
             EasyMock.expect(metadata.getConnection()).andReturn(connection);
