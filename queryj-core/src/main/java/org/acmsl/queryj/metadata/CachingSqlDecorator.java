@@ -254,8 +254,8 @@ public class CachingSqlDecorator
     public String toString()
     {
         return
-            "{ \"class\": \"" + CachingSqlDecorator.class.getSimpleName() + '"'
-            + "m__bWrappedParametersCheck=" + m__bWrappedParametersCheck
+              "{ \"class\": \"" + CachingSqlDecorator.class.getSimpleName() + '"'
+            + ", \"wrappedParametersCheck\": " + m__bWrappedParametersCheck
             + ", m__cCachedParameters=" + m__cCachedParameters
             + ", m__strCachedResultClass='" + m__strCachedResultClass + '\''
             + '}';
