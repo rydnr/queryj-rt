@@ -111,6 +111,7 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -883,9 +884,12 @@ public abstract class AbstractTemplatesTest<G, F>
         EasyMock.expect(result.getMetaData()).andReturn(metadata);
         try
         {
+            EasyMock.expect(metadata.getConnection()).andReturn(connection);
+        }
+        catch (@NotNull final SQLException sqlException)
+        {
 
         }
-        EasyMock.expect(metadata.getConnection()).andReturn(connection);
 
         return
             new JdbcMetadataManager(
