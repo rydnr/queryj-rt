@@ -253,7 +253,8 @@ public class CachingSqlDecorator
     @Override
     public String toString()
     {
-        return "CachingSqlDecorator{" +
+        return
+            "CachingSqlDecorator{" +
                "m__bWrappedParametersCheck=" + m__bWrappedParametersCheck +
                ", m__cCachedParameters=" + m__cCachedParameters +
                ", m__strCachedResultClass='" + m__strCachedResultClass + '\'' +
