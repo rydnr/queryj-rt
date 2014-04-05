@@ -258,7 +258,11 @@ public class CachingSqlDecorator
 
         if (result == null)
         {
-            result =super.isResultNullable();
+            result = super.isResultNullable();
+            setCachedIsResultNullable(result);
+        }
+
+        return result;
     }
 
     /**
