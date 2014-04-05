@@ -590,6 +590,16 @@ public abstract class AbstractSqlDecorator
         return result;
     }
 
+
+    /**
+     * Checks whether the result of this query could be {@code null} or not.
+     * @return such information.
+     */
+    public boolean isResultNullable()
+    {
+        return false;
+    }
+
     /**
      * Provides a text representation of the information
      * contained in this instance.
