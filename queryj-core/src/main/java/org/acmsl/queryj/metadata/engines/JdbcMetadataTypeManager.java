@@ -1768,7 +1768,7 @@ public class JdbcMetadataTypeManager
             case Literals.VARCHAR_U:
                 result = Types.VARCHAR;
                 break;
-            case Literals.VARCHAR_U:
+            case Literals.VARCHAR2:
                 result = Types.VARCHAR;
                 break;
             default:
