@@ -258,6 +258,7 @@ public class CachingDecoratorFactory
     public TableDecorator createTableDecorator(
         @NotNull final String table,
         @NotNull final MetadataManager metadataManager,
+        @NotNull final TableDAO tableDAO,
         @NotNull final CustomSqlProvider customSqlProvider)
     {
         @Nullable TableDecorator result = null;
