@@ -58,5 +58,5 @@ import org.junit.runners.JUnit4;
 public class JdbcMetadataTypeManagerTest
 {
     @Test
-    public void
+    public void toJdbcType_works_for_VARCHAR2()
 }
