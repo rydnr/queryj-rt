@@ -76,6 +76,7 @@ public class AbstractSqlDecoratorTest
             new SqlElement<>("id1", "name1", "select", Cardinality.SINGLE, "all", false, false, "none", "desc1");
 
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
+        @NotNull final
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
         @NotNull final AbstractSqlDecorator instance =
             new AbstractSqlDecorator(sql, customSqlProvider, metadataManager) {};
