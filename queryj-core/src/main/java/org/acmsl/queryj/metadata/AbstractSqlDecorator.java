@@ -421,7 +421,7 @@ public abstract class AbstractSqlDecorator
             {
                 result.append(dao.getVoName());
             }
-            else if (repo)
+            else if (repository != null)
             {
 
             }
