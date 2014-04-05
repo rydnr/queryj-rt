@@ -360,7 +360,7 @@ public abstract class AbstractSqlDecorator
      * Retrieves the result class.
      * @return such information.
      */
-    @Nullable
+    @NotNull
     public String getResultClass()
     {
         return getResultClass(getDao(), getCardinality(), getResultRef(), getCustomSqlProvider());
