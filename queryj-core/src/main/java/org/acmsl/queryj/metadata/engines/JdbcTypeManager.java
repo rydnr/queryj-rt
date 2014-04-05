@@ -1010,7 +1010,7 @@ public class JdbcTypeManager
             case "Boolean": result = boolean.class; break;
             case Literals.DOUBLE_C: result = double.class; break;
             case Literals.FLOAT_C: result = float.class; break;
-            case "Integer": result = int.class; break;
+            case Literals.INTEGER: result = int.class; break;
             case "Long": result = long.class; break;
             default: result = null; break;
         }
