@@ -245,7 +245,7 @@ public class SqlElement<T>
      * Specifies the <i>dao</i> attribute.
      * @param dao such value.
      */
-    protected final void immutableSetDAO(final T dao)
+    protected final void immutableSetDAO(@NotNull final T dao)
     {
         m__strDAO = dao;
     }
