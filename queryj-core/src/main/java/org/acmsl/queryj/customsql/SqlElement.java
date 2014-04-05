@@ -265,7 +265,7 @@ public class SqlElement<T>
      * @return such value.
      */
     @Override
-    @NotNull
+    @Nullable
     public T getDao()
     {
         return m__strDAO;
