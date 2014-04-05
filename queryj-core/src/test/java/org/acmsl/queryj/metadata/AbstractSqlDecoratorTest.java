@@ -126,7 +126,7 @@ public class AbstractSqlDecoratorTest
             new SqlElement<>("id1", "name1", "select", Cardinality.SINGLE, "all", false, false, "none", "desc1");
 
         @NotNull final Result<String> result =
-            new ResultElement<>("r1", );
+            new ResultElement<>("r1", String.class.getSimpleName());
 
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final SqlResultDAO resultDAO = EasyMock.createNiceMock(SqlResultDAO.class);
