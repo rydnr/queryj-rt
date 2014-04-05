@@ -1,5 +1,5 @@
 /*
-                        queryj
+                        QueryJ Core
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for AbstractSqlDecorator.
  *
  * Date: 2014/04/05
  * Time: 07:41
@@ -36,22 +36,50 @@
 package org.acmsl.queryj.metadata;
 
 /*
+ * Importing QueryJ Core classes.
+ */
+import org.acmsl.queryj.customsql.CustomSqlProvider;
+import org.acmsl.queryj.customsql.Sql;
+import org.acmsl.queryj.customsql.Sql.Cardinality;
+import org.acmsl.queryj.customsql.SqlElement;
+
+/*
  * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing checkthread.org annotations.
+ * Importing JUnit/PowerMock/EasyMock classes.
  */
-import org.checkthread.annotations.ThreadSafe;
+import org.easymock.EasyMock;
+import org.junit.Assert;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.powermock.modules.junit4.PowerMockRunner;
 
 /**
- *
+ * Tests for {@link AbstractSqlDecorator}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/05 07:41
  */
-@ThreadSafe
+@RunWith(PowerMockRunner.class)
 public class AbstractSqlDecoratorTest
 {
+    /**
+     * Tests the correctness of isResultNullable() for single queries with implicit results.
+     */
+    @Test
+    public void isResultNullable_is_correct_for_implicit_results_and_single_queries()
+    {
+        @NotNull final Sql<String> sql =
+            new SqlElement<>("id1", "dao", null, "name1", "select", Cardinality.SINGLE, "all", true, false, "desc1");
+
+        @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
+        @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
+        @NotNull final AbstractSqlDecorator instance =
+            new AbstractSqlDecorator(sql, customSqlProvider, metadataManager) {};
+
+        Assert.assertTrue(instance.isResultNullable());
+    }
 }
