@@ -887,7 +887,7 @@ public class JdbcTypeManager
             case "byte[]": result = byte[].class; break;
             case "Byte[]": result = Byte[].class; break;
             case Literals.DOUBLE: result = double.class; break;
-            case "float": result = float.class; break;
+            case Literals.FLOAT: result = float.class; break;
             case "int": result = int.class; break;
             case "long": result = long.class; break;
             case "short": result = short.class; break;
