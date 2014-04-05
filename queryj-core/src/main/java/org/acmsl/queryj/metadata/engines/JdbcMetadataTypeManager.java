@@ -374,7 +374,7 @@ public class JdbcMetadataTypeManager
         result.put(Literals.TIMESTAMP, t_TimeStamp);
         result.put("CHAR", t_Text);
         result.put(Literals.VARCHAR_U, t_Text);
-        result.put("VARCHAR2", t_Text);
+        result.put(Literals.VARCHAR2, t_Text);
         result.put(Literals.LONGVARCHAR_U, t_Text);
         result.put(Literals.BINARY_U, t_Text);
         result.put(Literals.VARBINARY_U, t_Text);
