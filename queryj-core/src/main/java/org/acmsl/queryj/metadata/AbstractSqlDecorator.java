@@ -423,7 +423,7 @@ public abstract class AbstractSqlDecorator
             }
             else if (repository != null)
             {
-
+                result.append(repository.getVoName());
             }
             if (multiple)
             {
