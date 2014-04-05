@@ -1612,6 +1612,9 @@ public class JdbcTypeManagerTest
         Assert.assertEquals(String.class, instance.getClass("VARCHAR2"));
     }
 
+    /**
+     * Tests whether BigInt can be used for numeric columns.
+     */
     @Test
     public void bigint_can_be_used_for_numeric_columns()
     {
