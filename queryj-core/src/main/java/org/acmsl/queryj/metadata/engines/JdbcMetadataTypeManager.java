@@ -659,6 +659,7 @@ public class JdbcMetadataTypeManager
                 break;
 
             default:
+                result =
                 break;
         }
 
