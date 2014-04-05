@@ -1660,6 +1660,9 @@ public class JdbcTypeManagerTest
         Assert.assertEquals(instance.getSqlType("long"), Types.BIGINT);
     }
 
+    /**
+     * Tests whether getSqlType(long) is BigInt.
+     */
     @Test
     public void correct_type_reference_for_Dates()
     {
