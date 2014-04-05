@@ -246,6 +246,16 @@ public class CachingSqlDecorator
         return result;
     }
 
+    /**
+     * Checks whether the result of this query could be {@code null} or not.
+     *
+     * @return such information.
+     */
+    @Override
+    public boolean isResultNullable()
+    {
+        return super.isResultNullable();
+    }
 
     /**
      * {@inheritDoc}
