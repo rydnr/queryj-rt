@@ -87,6 +87,10 @@ public class CachingSqlDecorator
     private Boolean m__bWrappedParametersCheck = null;
 
     /**
+     * The cached "is result nullable".
+     */
+    private Boolean m__bIsResultNullable
+    /**
      * Creates a <code>CachingSqlDecorator</code> with given information.
      * @param sql the <code>Sql</code> to decorate.
      * @param customSqlProvider the <code>CustomSqlProvider</code>, required
