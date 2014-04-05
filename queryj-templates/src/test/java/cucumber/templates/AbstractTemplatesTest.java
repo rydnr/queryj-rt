@@ -70,10 +70,6 @@ import org.acmsl.commons.utils.io.FileUtils;
 /*
  * Importing ANTLR classes.
  */
-import org.acmsl.queryj.metadata.MetadataManager;
-import org.acmsl.queryj.metadata.SqlDAO;
-import org.acmsl.queryj.metadata.SqlParameterDAO;
-import org.acmsl.queryj.metadata.engines.JdbcMetadataManager;
 import org.acmsl.queryj.metadata.vo.ForeignKey;
 import org.acmsl.queryj.metadata.vo.Table;
 
