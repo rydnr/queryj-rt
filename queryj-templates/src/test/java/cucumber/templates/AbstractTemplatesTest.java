@@ -564,9 +564,7 @@ public abstract class AbstractTemplatesTest<G, F>
                 }
 
                 /**
-                 * Retrieves the {@link org.acmsl.queryj.metadata.SqlParameterDAO} instance.
-                 *
-                 * @return such instance.
+                 * {@inheritDoc}
                  */
                 @NotNull
                 @Override
