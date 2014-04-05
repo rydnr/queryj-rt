@@ -268,12 +268,12 @@ find_constant_methods(attribute, primaryKeyAttributes, voName) ::= <<
 /**
  * Loads \<i><attribute.tableName>\</i> information from the constant pool,
  * filtering by <attribute.name>.
- * @param <attribute.name.normalized.lowercased> the <attribute.name>
+ * @param <attribute.name.normalized> the <attribute.name>
  * to filter.
  * @return the {@link <voName>} instance.
  */
 <nullable(C=C)>
-public <voName> findConstantBy<attribute.name.capitalized>(<if(!attribute.primitive)><notnull(C=C)><endif>final <attribute.javaType> <attribute.name.normalized.lowercased>);
+public <voName> findConstantBy<attribute.name.capitalized>(<if(!attribute.primitive)><notnull(C=C)><endif>final <attribute.javaType> <attribute.name.normalized>);
 >>
 
 fk_delete_method(foreignKey, table) ::= <<
