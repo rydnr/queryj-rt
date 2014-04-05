@@ -377,6 +377,7 @@ public abstract class AbstractSqlDecorator
     @NotNull
     protected String getResultClass(
         @Nullable final DecoratedString dao,
+        @Nullable final DecoratedString repository,
         @NotNull final Cardinality cardinality,
         @Nullable final ResultRef resultRef,
         @NotNull final CustomSqlProvider customSqlProvider)
