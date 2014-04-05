@@ -1769,7 +1769,7 @@ public class JdbcTypeManagerTest
     }
 
     /**
-     * Tests whether Double can be used for Numeric columns.
+     * Tests whether LonNVarchar can be used for Numeric columns.
      */
     @Test
     public void longnvarchar_can_be_used_for_char_columns()
