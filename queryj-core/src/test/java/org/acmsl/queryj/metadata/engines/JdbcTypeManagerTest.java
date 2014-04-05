@@ -1768,6 +1768,9 @@ public class JdbcTypeManagerTest
         Assert.assertTrue(instance.areColumnTypesCompatible(Types.BOOLEAN, Types.NUMERIC));
     }
 
+    /**
+     * Tests whether Double can be used for Numeric columns.
+     */
     @Test
     public void longnvarchar_can_be_used_for_char_columns()
     {
