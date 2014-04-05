@@ -874,6 +874,8 @@ public abstract class AbstractTemplatesTest<G, F>
         @NotNull final String engineName, @NotNull final List<String> tableNames,
         @NotNull final List<Table<String, Attribute<String>, List<Attribute<String>>>> tables)
     {
+        @NotNull final MetadataManager result = EasyMock.createNiceMock(MetadataManager.class);
+
         return
             new JdbcMetadataManager(
                 "fake manager",
