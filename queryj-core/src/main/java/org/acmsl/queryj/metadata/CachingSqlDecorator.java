@@ -182,7 +182,7 @@ public class CachingSqlDecorator
      * @return such information.
      */
     @Override
-    @Nullable
+    @NotNull
     public String getResultClass()
     {
         @Nullable String result = getCachedResultClass();
