@@ -1733,7 +1733,7 @@ public class JdbcTypeManagerTest
     }
 
     /**
-     * Tests whether Double can be used for Numeric columns.
+     * Tests whether Real can be used for Numeric columns.
      */
     @Test
     public void real_can_be_used_for_numeric_columns()
