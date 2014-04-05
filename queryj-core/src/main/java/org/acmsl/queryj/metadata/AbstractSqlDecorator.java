@@ -52,6 +52,7 @@ import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.ResultRef;
 import org.acmsl.queryj.customsql.StatementFlagsRef;
+import org.acmsl.queryj.metadata.engines.JdbcTypeManager;
 
 /*
  * Importing Apache Commons-Logging classes.
