@@ -612,7 +612,8 @@ public abstract class AbstractSqlDecorator
         @NotNull final JdbcTypeManager typeManager = new JdbcTypeManager();
         @NotNull final Class<?> clazz = typeManager.getClass(resultClass);
 
-        result = typeManager.toPrimitive(clazz) != null;
+        result =
+            (   (typeManager.toPrimitive(clazz) != null;
     }
 
     /**
