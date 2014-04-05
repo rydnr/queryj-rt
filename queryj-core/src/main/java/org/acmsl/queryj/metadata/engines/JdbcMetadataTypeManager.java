@@ -1781,7 +1781,6 @@ public class JdbcMetadataTypeManager
 
     /**
      * {@inheritDoc}
-     * @return
      */
     @Override
     @NotNull
