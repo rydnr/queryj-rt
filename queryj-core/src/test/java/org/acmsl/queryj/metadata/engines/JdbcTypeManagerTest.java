@@ -1637,7 +1637,7 @@ public class JdbcTypeManagerTest
     }
 
     /**
-     * Tests whether VARCHARcan be used for numeric columns.
+     * Tests whether VARCHARcan be used for NVARCHAR columns.
      */
     @Test
     public void varchar_can_be_used_for_nvarchar_columns()
