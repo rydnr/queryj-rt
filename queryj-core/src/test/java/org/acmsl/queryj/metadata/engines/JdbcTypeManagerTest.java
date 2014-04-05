@@ -1649,7 +1649,7 @@ public class JdbcTypeManagerTest
     }
 
     /**
-     * Tests whether getSqlType(long)
+     * Tests whether getSqlType(long) is BigInt.
      */
     @Test
     public void correct_type_reference_for_longs()
