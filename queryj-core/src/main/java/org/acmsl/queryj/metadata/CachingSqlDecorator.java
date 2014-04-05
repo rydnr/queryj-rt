@@ -246,6 +246,7 @@ public class CachingSqlDecorator
         return result;
     }
 
+
     /**
      * {@inheritDoc}
      */
