@@ -230,7 +230,6 @@ public class CachingDecoratorFactory
 
     /**
      * Creates a {@link TableDecorator}.
-     *
      * @param table the table name.
      * @param metadataManager the <code>MetadataManager</code> instance.
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
