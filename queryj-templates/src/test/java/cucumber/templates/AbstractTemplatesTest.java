@@ -904,18 +904,6 @@ public abstract class AbstractTemplatesTest<G, F>
         EasyMock.replay(connection);
 
         return result;
-            new JdbcMetadataManager(
-                "fake manager",
-                null, // database metadata
-                new MetadataExtractionLogger(), // extraction listener
-                Literals.CATALOG,
-                Literals.SCHEMA,
-                tableNames,
-                tables,
-                true, // disable table extraction
-                true, // lazy table extraction
-                false, // case sensitive
-                new UndefinedJdbcEngine(engineName, "11")); // engine version
     }
 
     /**
