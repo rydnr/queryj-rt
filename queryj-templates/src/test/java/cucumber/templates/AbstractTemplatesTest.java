@@ -53,10 +53,6 @@ import org.acmsl.queryj.templates.antlr.JavaLexer;
 import org.acmsl.queryj.templates.antlr.JavaPackageVisitor;
 import org.acmsl.queryj.templates.antlr.JavaParser;
 import org.acmsl.queryj.templates.antlr.JavaRootClassNameVisitor;
-import org.acmsl.queryj.customsql.CustomSqlProvider;
-import org.acmsl.queryj.customsql.Parameter;
-import org.acmsl.queryj.customsql.Sql;
-import org.acmsl.queryj.customsql.xml.SqlXmlParserImpl;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 
 /*
