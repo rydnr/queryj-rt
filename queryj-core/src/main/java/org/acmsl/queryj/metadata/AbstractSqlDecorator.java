@@ -610,7 +610,7 @@ public abstract class AbstractSqlDecorator
         boolean result;
 
         @NotNull final JdbcTypeManager typeManager = new JdbcTypeManager();
-        .getClass()
+        @NotNull final typeManager.getClass(resultClass);
     }
 
     /**
