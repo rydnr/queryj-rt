@@ -527,7 +527,6 @@ public class DAOTemplateUtils
      * @param connection the connection.
      * @return the retrieved rows.
      */
-    @SuppressWarnings("unused")
     @NotNull
     protected List<Row<String>> queryContents(
         @NotNull final String tableName,
@@ -541,7 +540,7 @@ public class DAOTemplateUtils
       throws  SQLException
     {
         // TODO: Move this to TableDAO
-        @NotNull final List<Row<String>> result = new ArrayList<Row<String>>();
+        @NotNull final List<Row<String>> result = new ArrayList<>();
 
         @Nullable final Log t_Log = UniqueLogFactory.getLog(DAOTemplateUtils.class);
         
