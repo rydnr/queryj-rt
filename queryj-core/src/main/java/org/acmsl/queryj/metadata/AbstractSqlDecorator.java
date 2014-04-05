@@ -388,6 +388,7 @@ public abstract class AbstractSqlDecorator
     /**
      * Retrieves the result class.
      * @param dao the DAO name.
+     * @param repository the repository.
      * @param cardinality the cardinality.
      * @param resultRef the result ref.
      * @param resultDAO the {@link SqlResultDAO} instance.
