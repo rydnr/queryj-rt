@@ -659,7 +659,12 @@ public class JdbcMetadataTypeManager
                 break;
 
             default:
-                result = Literals.OBJECT_C;
+                result = getObjectType(dataType, isBool);
+
+                if (result == null)
+                {
+                    result = Literals.OBJECT_C;
+                }
                 break;
         }
 
