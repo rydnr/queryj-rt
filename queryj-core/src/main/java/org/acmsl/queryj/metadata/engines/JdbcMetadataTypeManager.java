@@ -1779,6 +1779,10 @@ public class JdbcMetadataTypeManager
         return result;
     }
 
+    /**
+     * {@inheritDoc}
+     * @return
+     */
     @Override
     @NotNull
     public String toString()
