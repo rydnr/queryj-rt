@@ -992,46 +992,73 @@ public class JdbcTypeManagerTest
                 return null;
             }
 
+            /**
+             * {@inheritDoc}
+             */
             @Override public int getBaseType()
             {
                 return 0;
             }
 
+            /**
+             * {@inheritDoc}
+             */
             @Override public Object getArray()
             {
                 return null;
             }
 
+            /**
+             * {@inheritDoc}
+             */
             @Override public Object getArray(final Map<String, Class<?>> stringClassMap)
             {
                 return null;
             }
 
+            /**
+             * {@inheritDoc}
+             */
             @Override public Object getArray(final long l, final int i)
             {
                 return null;
             }
 
+            /**
+             * {@inheritDoc}
+             */
             @Override public Object getArray(final long l, final int i, final Map<String, Class<?>> stringClassMap)
             {
                 return null;
             }
 
+            /**
+             * {@inheritDoc}
+             */
             @Override public ResultSet getResultSet()
             {
                 return null;
             }
 
+            /**
+             * {@inheritDoc}
+             */
             @Override public ResultSet getResultSet(final Map<String, Class<?>> stringClassMap)
             {
                 return null;
             }
 
+            /**
+             * {@inheritDoc}
+             */
             @Override public ResultSet getResultSet(final long l, final int i)
             {
                 return null;
             }
 
+            /**
+             * {@inheritDoc}
+             */
             @Override public ResultSet getResultSet(final long l, final int i, final Map<String, Class<?>> stringClassMap)
             {
                 return null;
