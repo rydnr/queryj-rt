@@ -1648,6 +1648,9 @@ public class JdbcTypeManagerTest
         Assert.assertTrue(instance.areColumnTypesCompatible(Types.NVARCHAR, Types.VARCHAR));
     }
 
+    /**
+     * Tests whether
+     */
     @Test
     public void correct_type_reference_for_longs()
     {
