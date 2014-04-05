@@ -67,6 +67,9 @@ import java.sql.Types;
 @RunWith(JUnit4.class)
 public class JdbcMetadataTypeManagerTest
 {
+    /**
+     * Tests
+     */
     @Test
     public void toJdbcType_works_for_VARCHAR2()
     {
