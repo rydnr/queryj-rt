@@ -882,6 +882,7 @@ public abstract class AbstractTemplatesTest<G, F>
         EasyMock.expect(result.isCaseSensitive()).andReturn(false);
         EasyMock.expect(result.getEngine()).andReturn(new UndefinedJdbcEngine(engineName, "11"));
         EasyMock.expect(result.getTableDAO()).andReturn(tableDAO);
+
         try
         {
             EasyMock.expect(metadata.getConnection()).andReturn(connection);
