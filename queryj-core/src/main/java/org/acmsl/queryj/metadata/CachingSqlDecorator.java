@@ -278,7 +278,7 @@ public class CachingSqlDecorator
     @Nullable
     protected void setCachedIsResultNullable(@NotNull final boolean info)
     {
-        return m__bIsResultNullable;
+        this.m__bIsResultNullable = info;
     }
 
     /**
