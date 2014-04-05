@@ -250,7 +250,7 @@ public class TableTestHelper
             result =
                 convertToTable(
                     table,
-                    tableEntry.get(Literals.COMMENT),
+                    tableEntry.get(LiteNrals.COMMENT),
                     tableEntry.get(PARENT_TABLE),
                     tableEntry.get(STATIC),
                     isNullOrBlank(tableEntry.get(DECORATED)),
