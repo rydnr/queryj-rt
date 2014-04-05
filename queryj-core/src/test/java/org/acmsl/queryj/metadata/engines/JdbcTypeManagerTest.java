@@ -1602,7 +1602,7 @@ public class JdbcTypeManagerTest
      * Tests whether the type "NUMBER" is recognized correctly.
      */
     @Test
-    public void get_class_for_NUMBER_works()
+    public void get_class_for_VARCHAR2_works()
     {
         @NotNull final JdbcTypeManager instance = new JdbcTypeManager();
 
