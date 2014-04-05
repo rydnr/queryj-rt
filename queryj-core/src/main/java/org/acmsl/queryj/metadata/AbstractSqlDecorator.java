@@ -601,9 +601,10 @@ public abstract class AbstractSqlDecorator
 
     /**
      * Checks whether the result of this query could be {@code null} or not.
+     * @param resultClass the result classe.
      * @return such information.
      */
-    public boolean isResultNullable()
+    protected boolean isResultNullable()
     {
         return !isMultiple() && isResultNullable(getResultClass());
     }
