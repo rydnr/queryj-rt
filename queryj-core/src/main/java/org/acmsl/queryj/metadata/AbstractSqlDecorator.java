@@ -362,7 +362,7 @@ public abstract class AbstractSqlDecorator
     @NotNull
     public String getResultClass()
     {
-        return getResultClass(getDao(), getCardinality(), getResultRef(), getCustomSqlProvider());
+        return getResultClass(getDao(), getRepositoryScope(), getCardinality(), getResultRef(), getCustomSqlProvider());
     }
 
     /**
