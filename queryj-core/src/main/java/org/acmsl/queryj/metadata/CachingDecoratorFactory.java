@@ -253,7 +253,6 @@ public class CachingDecoratorFactory
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
      * @return the decorated table for the concrete template.
      */
-    @Override
     @Nullable
     public TableDecorator createTableDecorator(
         @NotNull final String table,
