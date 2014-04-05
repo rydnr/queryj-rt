@@ -276,7 +276,7 @@ public class CachingSqlDecorator
      * @return such information.
      */
     @Nullable
-    protected void setCachedIsResultNullable()
+    protected void setCachedIsResultNullable(@NotNull final boolean )
     {
         return m__bIsResultNullable;
     }
