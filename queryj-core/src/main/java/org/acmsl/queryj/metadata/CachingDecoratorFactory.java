@@ -261,7 +261,7 @@ public class CachingDecoratorFactory
      * @param attributes the attributes to decorate.
      * @param metadataManager the <code>MetadataManager</code> instance.
      * @return the decorated version of the attribute list.
-     * @param <V> the
+     * @param <V> the original attribute type.
      */
     @NotNull
     @Override
