@@ -119,4 +119,5 @@ public interface Literals
     String VALIDATING = "Validating ";
     String MALFORMED_PATTERN = "Malformed pattern";
     String VARCHAR2 = "VARCHAR2";
+    String SHORT_L = "short";
 }
