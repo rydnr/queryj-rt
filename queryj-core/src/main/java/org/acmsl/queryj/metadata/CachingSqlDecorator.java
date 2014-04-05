@@ -303,7 +303,7 @@ public class CachingSqlDecorator
             + ", \"wrappedParametersCheck\": " + m__bWrappedParametersCheck
             + ", \"cachedParameters\": [ " + m__cCachedParameters + ']'
             + ", \"resultClass\": \"" + m__strCachedResultClass + '"'
-            + ", \"resultClass\": \"" + m__strCachedResultClass + '"'
+            + ", \"isResultNullable\": \"" + m__strCachedResultClass + '"'
             + ", \"package\": \"" + CachingSqlDecorator.class.getPackage().getName() + '"'
             + " }";
     }
