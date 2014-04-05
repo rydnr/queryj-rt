@@ -1780,6 +1780,9 @@ public class JdbcTypeManagerTest
         Assert.assertTrue(instance.areColumnTypesCompatible(Types.LONGNVARCHAR, Types.CHAR));
     }
 
+    /**
+     * Tests whether Double can be used for Numeric columns.
+     */
     @Test
     public void types_compatible_with_char_columns()
     {
