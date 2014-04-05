@@ -382,7 +382,7 @@ public abstract class AbstractSqlDecorator
         @Nullable final ResultRef resultRef,
         @NotNull final CustomSqlProvider customSqlProvider)
     {
-        return getResultClass(dao, cardinality, resultRef, customSqlProvider.getSqlResultDAO());
+        return getResultClass(dao, repository, cardinality, resultRef, customSqlProvider.getSqlResultDAO());
     }
 
     /**
@@ -419,7 +419,7 @@ public abstract class AbstractSqlDecorator
             {
                 result.append(dao.getVoName());
             }
-            else
+            else if (repo)
             {
 
             }
