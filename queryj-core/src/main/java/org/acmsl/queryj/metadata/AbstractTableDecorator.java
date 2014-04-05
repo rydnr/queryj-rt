@@ -177,7 +177,7 @@ public abstract class AbstractTableDecorator
     /**
      * Creates an {@code AbstractTableDecorator} with the following
      * information.
-     * @param table the {@link table}.
+     * @param table the {@link Table}.
      * @param name the name.
      * @param primaryKey the primary key.
      * @param attributes the attributes.
