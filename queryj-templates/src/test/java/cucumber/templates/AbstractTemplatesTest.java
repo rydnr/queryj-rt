@@ -879,6 +879,7 @@ public abstract class AbstractTemplatesTest<G, F>
         @NotNull final List<Table<String, Attribute<String>, List<Attribute<String>>>> tables)
     {
         @NotNull final MetadataManager result = EasyMock.createNiceMock(MetadataManager.class);
+        EasyMock
         @NotNull final DatabaseMetaData metadata = EasyMock.createNiceMock(DatabaseMetaData.class);
         @NotNull final Connection connection = EasyMock.createNiceMock(Connection.class);
 
