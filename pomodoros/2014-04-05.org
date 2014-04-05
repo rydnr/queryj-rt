@@ -5,6 +5,8 @@
 ** Pending:
 *** Move TableTestHelper out of QueryJ Templates
 *** CachingTableDecorator#getStaticContent() -> AbstractTableDecorator#getStaticContent() -> getMetadataManager() -> getMetadata() -> getConnection().
-*** Test JdbcMetadataTypeManager.toJdbcType(String type, int length, int precision):
+*** DONE Test JdbcMetadataTypeManager.toJdbcType(String type, int length, int precision)
 - NUMBER,
 - VARCHAR2
+
+*** wittyhead: 3 -> 3
