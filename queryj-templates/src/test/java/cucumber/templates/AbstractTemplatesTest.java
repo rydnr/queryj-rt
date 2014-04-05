@@ -885,6 +885,7 @@ public abstract class AbstractTemplatesTest<G, F>
         for (@NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table : tables)
         {
             EasyMock.expect(tableDAO.findByName(table.getName())).andReturn(table);
+        }
         try
         {
             EasyMock.expect(metadata.getConnection()).andReturn(connection);
