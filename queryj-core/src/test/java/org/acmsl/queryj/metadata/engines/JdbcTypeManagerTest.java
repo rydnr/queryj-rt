@@ -1672,6 +1672,9 @@ public class JdbcTypeManagerTest
         Assert.assertEquals(instance.getSqlType("Date"), Types.DATE);
     }
 
+    /**
+     * Tests whether Doub
+     */
     @Test
     public void double_can_be_used_for_numeric_columns()
     {
