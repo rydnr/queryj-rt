@@ -893,7 +893,7 @@ public abstract class AbstractTemplatesTest<G, F>
         }
         catch (@NotNull final SQLException sqlException)
         {
-
+            // Being forced to catch it.
         }
         EasyMock.replay(result);
         EasyMock.replay(metadata);
