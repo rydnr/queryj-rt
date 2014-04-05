@@ -148,6 +148,7 @@ public interface <table.name.voName>DAO
      * Retrieves the static (pre-cached) values.
      * @return such information.
      */
+    <notnull(C=C)>
     List\<<table.name.voName\>> getStaticValues();
 
     <table.attributes:{ a | <find_constant_methods(attribute=a, primaryKeyAttributes=table.primaryKey, voName=table.name.voName)>}; separator="\n\n">
@@ -169,6 +170,7 @@ public interface <table.name.voName>DAO
      <table.own.minus.externallyManagedAttributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
      * @return such instance.
      */
+    <notnull(C=C)>
     public <table.name.voName> create(
         <table.own.minus.externallyManagedAttributes:{ a | <attribute_declaration(attr=a, C=C)>}; separator=",\n">)
       throws DataAccessException;
@@ -209,6 +211,7 @@ cached_constants(row, voName) ::= <<
 /**
  * The <row.name> constant.
  */
+<notnull(C=C)>
 public static final <voName> <row.name.normalized.uppercased> =
     new <voName>ValueObject(
         <row.attributes:{ a | <attribute_specification(attr=a)>}; separator=",\n">);
