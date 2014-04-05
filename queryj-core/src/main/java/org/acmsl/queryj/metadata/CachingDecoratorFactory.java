@@ -242,7 +242,9 @@ public class CachingDecoratorFactory
         @NotNull final MetadataManager metadataManager,
         @NotNull final CustomSqlProvider customSqlProvider)
     {
+        return createTableDecorator(table, metadataManager.getTableDAO(), customSqlProvider);
     }
+
     /**
      * Creates a {@link TableDecorator}.
      * @param table the table name.
