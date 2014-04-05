@@ -93,7 +93,7 @@ public class AbstractSqlDecoratorTest
     }
 
     /**
-     * Tests the correctness of isResultNullable() for multiple queries with implicit results.
+     * Tests the correctness of isResultNullable() for queries returning a list.
      */
     @Test
     public void isResultNullable_is_correct_for_multiple_queries()
