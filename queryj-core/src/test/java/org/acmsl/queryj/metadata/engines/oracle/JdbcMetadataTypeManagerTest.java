@@ -54,7 +54,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 /*
- * Importing JetBrains annotations.
+ * Importing JDK classes.
  */
 import java.sql.Types;
 
