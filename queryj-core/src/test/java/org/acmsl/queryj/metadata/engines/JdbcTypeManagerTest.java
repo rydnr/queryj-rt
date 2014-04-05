@@ -1591,7 +1591,7 @@ public class JdbcTypeManagerTest
     }
 
     /**
-     * Tests whether the type "NUMBER" is recognized correctly.
+     * Tests whether the type "VARCHAR" is recognized correctly.
      */
     @Test
     public void get_class_int_for_String_works()
