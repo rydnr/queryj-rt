@@ -1661,7 +1661,7 @@ public class JdbcTypeManagerTest
     }
 
     /**
-     * Tests whether getSqlType(long) is BigInt.
+     * Tests whether getSqlType(Date) is Date.
      */
     @Test
     public void correct_type_reference_for_Dates()
