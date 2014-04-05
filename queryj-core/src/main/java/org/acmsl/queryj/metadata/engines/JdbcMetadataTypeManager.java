@@ -659,7 +659,7 @@ public class JdbcMetadataTypeManager
                 break;
 
             default:
-                result =
+                result = "Object";
                 break;
         }
 
