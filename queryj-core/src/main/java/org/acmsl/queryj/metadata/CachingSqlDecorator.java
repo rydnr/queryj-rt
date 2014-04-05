@@ -270,8 +270,8 @@ public class CachingSqlDecorator
         return result;
     }
 
-    pro
-     Boolean getCachedIsResultNullable()
+    @Nullable
+    protected Boolean getCachedIsResultNullable()
     {
         return null;  //To change body of created methods use File | Settings | File Templates.
     }
