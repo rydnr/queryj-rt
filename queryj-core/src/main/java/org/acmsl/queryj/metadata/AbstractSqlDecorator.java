@@ -33,9 +33,13 @@
 package org.acmsl.queryj.metadata;
 
 /*
- * Importing project-specific classes.
+ * Importing ACM S.L. Commons classes.
  */
 import org.acmsl.commons.logging.UniqueLogFactory;
+
+/*
+ * Importing QueryJ Core classes.
+ */
 import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.customsql.ConnectionFlagsRef;
 import org.acmsl.queryj.customsql.ParameterRef;
@@ -47,17 +51,11 @@ import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.ResultRef;
-
-/*
- * Importing JDK classes.
- */
-import java.util.ArrayList;
-import java.util.List;
+import org.acmsl.queryj.customsql.StatementFlagsRef;
 
 /*
  * Importing Apache Commons-Logging classes.
  */
-import org.acmsl.queryj.customsql.StatementFlagsRef;
 import org.apache.commons.logging.Log;
 
 /*
@@ -65,6 +63,12 @@ import org.apache.commons.logging.Log;
  */
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+
+/*
+ * Importing JDK classes.
+ */
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Decorates &lt;sql&gt; elements in <i>custom-sql</i> models.
@@ -91,9 +95,10 @@ public abstract class AbstractSqlDecorator
 
     /**
      * Creates an <code>AbstractSqlDecorator</code> with given information.
-     * @param sql the <code>Sql</code> to decorate.
-     * @param customSqlProvider the <code>CustomSqlProvider</code>, required
+     * @param sql the {@link Sql} to decorate.
+     * @param customSqlProvider the {@link >CustomSqlProvider}, required
      * to decorate referred parameters.
+     * @param metadataManager the {@link MetadataManager} instance.
      */
     public AbstractSqlDecorator(
         @NotNull final Sql<String> sql,
@@ -110,6 +115,7 @@ public abstract class AbstractSqlDecorator
             sql.getValidate(),
             sql.isDynamic(),
             new DecoratedString(sql.getDescription()));
+
         @Nullable final String t_strValue = sql.getValue();
         if (t_strValue != null)
         {
