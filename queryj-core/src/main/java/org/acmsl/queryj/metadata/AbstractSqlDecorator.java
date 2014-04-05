@@ -604,7 +604,7 @@ public abstract class AbstractSqlDecorator
      * @param resultClass the result classe.
      * @return such information.
      */
-    protected boolean isResultNullable()
+    protected boolean isResultNullable(@NotNull final String resultClass)
     {
         return !isMultiple() && isResultNullable(getResultClass());
     }
