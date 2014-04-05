@@ -1673,7 +1673,7 @@ public class JdbcTypeManagerTest
     }
 
     /**
-     * Tests whether Doub
+     * Tests whether Double can be used for Numeric columns.
      */
     @Test
     public void double_can_be_used_for_numeric_columns()
