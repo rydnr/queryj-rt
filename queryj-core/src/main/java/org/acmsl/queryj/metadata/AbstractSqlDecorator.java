@@ -613,8 +613,8 @@ public abstract class AbstractSqlDecorator
         @NotNull final Class<?> clazz = typeManager.getClass(resultClass);
 
         result = typeManager.isPrimitiveWrapper(clazz);
-            ( typeManager.toPrimitive(clazz) == null)
 
+        return result;
     }
 
     /**
