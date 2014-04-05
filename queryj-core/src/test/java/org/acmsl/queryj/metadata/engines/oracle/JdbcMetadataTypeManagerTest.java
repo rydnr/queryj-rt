@@ -50,6 +50,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.sql.Types;
+
 /**
  *
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
@@ -64,6 +66,6 @@ public class JdbcMetadataTypeManagerTest
     {
         @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
 
-        Assert.assertEquals();
+        Assert.assertEquals(Types.VARCHAR, );
     }
 }
