@@ -56,6 +56,7 @@ import org.acmsl.queryj.customsql.StatementFlagsRef;
 /*
  * Importing Apache Commons-Logging classes.
  */
+import org.acmsl.queryj.metadata.engines.JdbcTypeManager;
 import org.apache.commons.logging.Log;
 
 /*
@@ -606,7 +607,7 @@ public abstract class AbstractSqlDecorator
      */
     protected boolean isResultNullable(@NotNull final String resultClass)
     {
-        return
+        return new JdbcTypeManager().isPrimitiveWrapper()
     }
 
     /**
