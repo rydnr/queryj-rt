@@ -1636,6 +1636,9 @@ public class JdbcTypeManagerTest
         Assert.assertTrue(instance.areColumnTypesCompatible(Types.DECIMAL, Types.NUMERIC));
     }
 
+    /**
+     * Tests whether Decimal can be used for numeric columns.
+     */
     @Test
     public void varchar_can_be_used_for_nvarchar_columns()
     {
