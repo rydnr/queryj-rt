@@ -258,7 +258,7 @@ public class SqlElement<T>
      * @param dao such value.
      */
     @SuppressWarnings("unused")
-    protected void setDao(final T dao)
+    protected void setDao(@NotNull final T dao)
     {
         immutableSetDAO(dao);
     }
