@@ -611,6 +611,7 @@ public abstract class AbstractSqlDecorator
         boolean result;
 
         @NotNull final JdbcTypeManager typeManager = new JdbcTypeManager();
+
         @NotNull final Class<?> clazz = typeManager.getClass(resultClass);
 
         result = !typeManager.isPrimitiveWrapper(clazz);
