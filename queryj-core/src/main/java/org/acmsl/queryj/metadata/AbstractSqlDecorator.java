@@ -613,7 +613,7 @@ public abstract class AbstractSqlDecorator
         @NotNull final JdbcTypeManager typeManager = new JdbcTypeManager();
         @NotNull final Class<?> clazz = typeManager.getClass(resultClass);
 
-        result = !typeManager.isPrimitiveWrapper(clazz)
+        result = !typeManager.isPrimitiveWrapper(clazz);
 
         return result;
     }
