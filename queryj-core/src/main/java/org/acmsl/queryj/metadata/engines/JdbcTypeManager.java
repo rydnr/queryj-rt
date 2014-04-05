@@ -174,7 +174,7 @@ public class JdbcTypeManager
     @NotNull protected static final String TINYINT = Literals.TINYINT_L;
     @NotNull protected static final String VARBINARY = "varbinary";
     @NotNull protected static final String VARCHAR = "varchar";
-    @NotNull protected static final String VARCHAR = "varchar";
+    @NotNull protected static final String VARCHAR = "varchar2";
 
     protected static final Method SET_ARRAY_METHOD;
     protected static final Method SET_ASCII_STREAM_METHOD;
