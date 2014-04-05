@@ -109,7 +109,7 @@ public class AbstractSqlDecoratorTest
         @NotNull final AbstractSqlDecorator instance =
             new AbstractSqlDecorator(sql, customSqlProvider, metadataManager) {};
 
-        Assert.assertTrue(instance.isResultNullable());
+        Assert.assertFalse(instance.isResultNullable());
 
         EasyMock.verify(customSqlProvider);
     }
