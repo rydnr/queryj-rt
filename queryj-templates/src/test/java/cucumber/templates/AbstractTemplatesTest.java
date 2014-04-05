@@ -58,7 +58,6 @@ import org.acmsl.queryj.templates.antlr.JavaLexer;
 import org.acmsl.queryj.templates.antlr.JavaPackageVisitor;
 import org.acmsl.queryj.templates.antlr.JavaParser;
 import org.acmsl.queryj.templates.antlr.JavaRootClassNameVisitor;
-import org.acmsl.queryj.metadata.DecoratorFactory;
 
 /*
  * Importing Java-Commons classes.
