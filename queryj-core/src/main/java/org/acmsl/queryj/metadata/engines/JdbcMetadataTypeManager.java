@@ -1786,7 +1786,7 @@ public class JdbcMetadataTypeManager
         return
               "{ \"class\": \"" + JdbcMetadataTypeManager.class.getSimpleName() + '"'
             + ", \"native2JavaTypeMapping\": " + m__mNative2JavaTypeMapping
-        + ", \"package\": "
+        + ", \"package\": \"" + JdbcMetadataTypeManager.class.getPackage().getName() + \""
             + " }";
     }
 }
