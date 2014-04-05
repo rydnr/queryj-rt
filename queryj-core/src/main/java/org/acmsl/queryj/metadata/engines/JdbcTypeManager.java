@@ -882,7 +882,7 @@ public class JdbcTypeManager
 
         switch (type)
         {
-            case "boolean": result = boolean.class; break;
+            case Literals.BOOLEAN: result = boolean.class; break;
             case "byte": result = byte.class; break;
             case "byte[]": result = byte[].class; break;
             case "Byte[]": result = Byte[].class; break;
