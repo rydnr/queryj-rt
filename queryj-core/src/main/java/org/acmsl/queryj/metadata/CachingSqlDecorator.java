@@ -258,9 +258,7 @@ public class CachingSqlDecorator
 
         if (result == null)
         {
-            result =
-        }
-        return super.isResultNullable();
+            result =super.isResultNullable();
     }
 
     /**
