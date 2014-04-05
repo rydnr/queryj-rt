@@ -80,10 +80,13 @@ public class AbstractSqlDecoratorTest
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
 
         EasyMock.expect(customSqlProvider.getSqlResultDAO()).andReturn(resultDAO);
+        EasyMock.replay(customSqlProvider);
 
         @NotNull final AbstractSqlDecorator instance =
             new AbstractSqlDecorator(sql, customSqlProvider, metadataManager) {};
 
         Assert.assertTrue(instance.isResultNullable());
+
+        EasyMock.verify(customSqlProvider);
     }
 }
