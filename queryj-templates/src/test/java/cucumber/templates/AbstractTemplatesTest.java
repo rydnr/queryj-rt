@@ -50,6 +50,7 @@ import org.acmsl.queryj.customsql.Parameter;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.xml.SqlXmlParserImpl;
 import org.acmsl.queryj.metadata.DecoratorFactory;
+import org.acmsl.queryj.metadata.TableDAO;
 import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
 import org.acmsl.queryj.metadata.engines.UndefinedJdbcEngine;
 import org.acmsl.queryj.metadata.MetadataManager;
@@ -871,6 +872,7 @@ public abstract class AbstractTemplatesTest<G, F>
         @NotNull final MetadataManager result = EasyMock.createNiceMock(MetadataManager.class);
         @NotNull final DatabaseMetaData metadata = EasyMock.createNiceMock(DatabaseMetaData.class);
         @NotNull final Connection connection = EasyMock.createNiceMock(Connection.class);
+        @NotNull final TableDAO tableDAO = EasyMock.createNiceMock(TableDAO.class);
 
         EasyMock.expect(result.getMetaData()).andReturn(metadata);
         EasyMock.expect(result.getName()).andReturn("fake manager");
