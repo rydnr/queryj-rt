@@ -119,4 +119,5 @@ public interface Literals
     String VARCHAR2 = "VARCHAR2";
     String SHORT_L = "short";
     String NUMBER_L = "number";
+    String OBJECT_C = "Object";
 }
