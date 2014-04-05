@@ -881,7 +881,7 @@ public abstract class AbstractTemplatesTest<G, F>
         @NotNull final Connection connection = EasyMock.createNiceMock(Connection.class);
 
         EasyMock.expect(result.getMetaData()).andReturn(metadada);
-        EasyMock.expect()
+        EasyMock.expect(metadada.getConnection()).andReturn()
         return
             new JdbcMetadataManager(
                 "fake manager",
