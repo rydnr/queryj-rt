@@ -254,7 +254,7 @@ public class CachingSqlDecorator
     @Override
     public boolean isResultNullable()
     {
-        return super.isResultNullable();
+        Boolean result = getCachedResultNullable()return super.isResultNullable();
     }
 
     /**
