@@ -1064,6 +1064,9 @@ public class JdbcTypeManagerTest
                 return null;
             }
 
+            /**
+             * {@inheritDoc}
+             */
             @Override public void free()
             {
             }
