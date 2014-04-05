@@ -271,7 +271,7 @@ public class CachingSqlDecorator
     }
 
     /**
-     * the cached information about whether the result
+     * Specifies the cached information about whether the result
      * is nullable or not.
      * @param info such information.
      */
