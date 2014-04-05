@@ -1781,7 +1781,7 @@ public class JdbcTypeManagerTest
     }
 
     /**
-     * Tests whether Double can be used for Numeric columns.
+     * Tests whether Double can be used for char columns.
      */
     @Test
     public void types_compatible_with_char_columns()
