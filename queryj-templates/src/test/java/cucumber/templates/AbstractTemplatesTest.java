@@ -874,7 +874,7 @@ public abstract class AbstractTemplatesTest<G, F>
         @NotNull final Connection connection = EasyMock.createNiceMock(Connection.class);
         @NotNull final TableDAO tableDAO = EasyMock.createNiceMock(TableDAO.class);
 
-        EasyMock.expect(result.getMetaData()).andReturn(metadata);
+        EasyMock.expect(result.getMetaData()).andReturn(metadata).anyTimes();
         EasyMock.expect(result.getName()).andReturn("fake manager");
         EasyMock.expect(result.getMetadataTypeManager()).andReturn(new JdbcMetadataTypeManager());
         EasyMock.expect(result.getTableNames()).andReturn(tableNames);
