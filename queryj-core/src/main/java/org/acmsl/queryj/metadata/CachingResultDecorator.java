@@ -192,6 +192,7 @@ public class CachingResultDecorator
      * Retrieves the properties.
      * @return such information.
      */
+    @Override
     @NotNull
     public List<Property<DecoratedString>> getLobProperties()
     {
@@ -238,6 +239,7 @@ public class CachingResultDecorator
      * Checks whether the result is 'implicit' (associated to a table) or not.
      * @return such information.
      */
+    @Override
     @SuppressWarnings("unused")
     public boolean isImplicit()
     {
@@ -285,6 +287,7 @@ public class CachingResultDecorator
      * Retrieves the properties.
      * @return such information.
      */
+    @Override
     @NotNull
     public List<Property<DecoratedString>> getImplicitProperties()
     {

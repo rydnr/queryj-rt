@@ -316,6 +316,7 @@ custom_select(cs) ::= <<
  <cs.parameters:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
  * @return the \<i><cs.resultClass>\</i> information retrieved.
  */
+<if(cs.multiple.primitive)><notnull(C=C)><else><if(cs.result.implicit)><nullable(C=C)><endif><endif>
 public <cs.resultClass> <cs.name.uncapitalized>(
     <cs.parameters:{ a | <attribute_declaration(attr=a, C=C)>}; separator=",\n">)
   throws DataAccessException;
