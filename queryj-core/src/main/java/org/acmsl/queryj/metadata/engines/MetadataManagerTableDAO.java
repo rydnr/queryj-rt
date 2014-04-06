@@ -340,8 +340,7 @@ public abstract class MetadataManagerTableDAO<M extends MetadataManager>
     @Nullable
     public List<Row<String>> queryContents(
         @NotNull final String tableName,
-        @NotNull final MetadataManager metadataManager,
-        @NotNull final DecoratorFactory decoratorFactory)
+        @NotNull final MetadataManager metadataManager)
         throws SQLException
     {
         return
