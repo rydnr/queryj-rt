@@ -398,8 +398,7 @@ public abstract class MetadataManagerTableDAO<M extends MetadataManager>
                         tableName,
                         t_strStaticAttribute,
                         metadataUtils.retrieveAttributes(tableName, metadataManager),
-                        metadataManager,
-                        decoratorFactory);
+                        metadataManager);
             }
         }
 
