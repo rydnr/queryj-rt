@@ -849,7 +849,8 @@ public class TableTestHelper
 
         for (@Nullable final Attribute<String> attribute : rowValues)
         {
-            if (   (staticAttribute.getName().equals(attribute.getName()))
+            if (   (attribute != null)
+                && (staticAttribute.getName().equals(attribute.getName())))
                 &&
             {
                 result = attribute.getValue();
