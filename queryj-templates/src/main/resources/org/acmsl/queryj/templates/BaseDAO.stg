@@ -76,14 +76,6 @@ sourceImpl(table, C) ::= <<
  * Importing Spring classes.
  */
 import org.springframework.dao.DataAccessException;
-<if(table.static)>
-
-/*
- * Importing JDK classes.
- */
-import java.util.Arrays;
-import java.util.Collections;
-<endif>
 <if(C.implement_markers)>
 
 /*
@@ -91,11 +83,24 @@ import java.util.Collections;
  */
 import org.acmsl.commons.patterns.dao.DAO;
 <endif>
+<if(table.static)>
+
+/*
+ * Importing JDK classes.
+ */
+import java.util.Arrays;
+import java.util.Collections;
 <if(table.attributeTypes)>
+<table.attributeTypes:{ t | import <t>;}; separator="\n">
+<endif>
+<else>
+<if(table.attributeTypes)>
+
 /*
  * Importing some JDK classes.
  */
 <table.attributeTypes:{ t | import <t>;}; separator="\n">
+<endif>
 <endif>
 
 <class(table=table, C=C)>
