@@ -39,11 +39,6 @@
 
     <dependency>
       <groupId>org.acmsl.queryj</groupId>
-      <artifactId>queryj-maven</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>org.acmsl.queryj</groupId>
       <artifactId>queryj-placeholders</artifactId>
     </dependency>
 
@@ -55,12 +50,6 @@
     <dependency>
       <groupId>org.acmsl</groupId>
       <artifactId>acmsl-commons</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>log4j</groupId>
-      <artifactId>log4j</artifactId>
-      <scope>runtime</scope>
-      <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
@@ -94,10 +83,6 @@
       <artifactId>commons-lang</artifactId>
       <scope>runtime</scope>
       <optional>true</optional>
-    </dependency>
-    <dependency>
-      <groupId>org.antlr</groupId>
-      <artifactId>antlr</artifactId>
     </dependency>
     <dependency>
       <groupId>org.antlr</groupId>
