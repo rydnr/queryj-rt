@@ -53,16 +53,6 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>info.cukes</groupId>
-      <artifactId>cucumber-java</artifactId>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>info.cukes</groupId>
-      <artifactId>cucumber-junit</artifactId>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>com.rubiconproject.oss</groupId>
       <artifactId>jchronic</artifactId>
       <scope>test</scope>
