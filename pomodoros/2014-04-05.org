@@ -1,6 +1,6 @@
 * 2014/04/05:
 ** DONE Fix attribute type in BaseDAO.stg #462: 1 -> 3
-** TODO table.voDecorated returns true #461: 1 ->
+** TODO table.voDecorated returns true #461: 1 -> 1
 ** DONE Add SqlDecorator.isResultNullable(): 2 -> 2
 ** Pending:
 *** Move TableTestHelper out of QueryJ Templates
