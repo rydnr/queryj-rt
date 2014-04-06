@@ -869,7 +869,7 @@ public abstract class AbstractTemplatesTest<G, F>
         {
             try
             {
-                EasyMock.expect(tableDAO.queryContents(table.getName())).andReturn(staticContents);
+                EasyMock.expect(tableDAO.queryContents(table.getName())).andReturn(staticContents).anyTimes();
             }
             catch (@NotNull final SQLException sqlException)
             {
