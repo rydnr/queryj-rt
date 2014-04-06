@@ -36,7 +36,7 @@
 package org.acmsl.queryj.metadata.engines;
 
 /*
- * Importing QueryJ Core classes.
+ * Importing ACM SL Commons classes.
  */
 import org.acmsl.commons.logging.UniqueLogFactory;
 
