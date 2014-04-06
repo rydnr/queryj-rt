@@ -189,7 +189,11 @@ public class TableTestHelper
     /**
      * The starting quote regex.
      */
-    protected static final Pattern STARTING_QUOTE_REGEX = Pattern.compile("^")
+    protected static final Pattern STARTING_QUOTE_REGEX = Pattern.compile("^\"+");
+
+    /**
+     * The ending quote regex.
+     */
     /**
      * Singleton implementation to avoid double-locking check.
      */
