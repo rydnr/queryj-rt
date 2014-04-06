@@ -851,7 +851,7 @@ public class TableTestHelper
             if (   (attribute != null)
                 && (staticAttribute.getName().equals(attribute)))
             {
-                result =
+                result = attribute.getValue();
             }
         }
 
