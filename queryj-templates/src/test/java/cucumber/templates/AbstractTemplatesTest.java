@@ -792,13 +792,15 @@ public abstract class AbstractTemplatesTest<G, F>
      * @param engineName the name of the engine.
      * @param table the {@link Table}.
      * @param staticContent the static content.
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @return such instance.
      */
     @NotNull
     protected MetadataManager retrieveMetadataManager(
         @NotNull final String engineName,
 	    @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table,
-        @NotNull final List<Row<String>> staticContent)
+        @NotNull final List<Row<String>> staticContent,
+        @NotNull final DecoratorFactory decoratorFactory)
     {
         @NotNull final List<String> tableNames = new ArrayList<>(1);
         tableNames.add(table.getName());
@@ -806,44 +808,7 @@ public abstract class AbstractTemplatesTest<G, F>
 	        new ArrayList<>(1);
         tables.add(table);
 
-        return retrieveMetadataManager(engineName, tableNames, tables, staticContent);
-    }
-
-    /**
-     * Retrieves a {@link org.acmsl.queryj.metadata.MetadataManager} instance.
-     * @param engineName the name of the engine.
-     * @param table the {@link Table}.
-     * @return such instance.
-     */
-    @NotNull
-    protected MetadataManager retrieveMetadataManager(
-        @NotNull final String engineName,
-        @NotNull final String table,
-        @NotNull final List<Row<String>> staticContents,
-        @NotNull final DecoratorFactory decoratorFactory)
-    {
-        @NotNull final List<String> tableNames = new ArrayList<>(1);
-        tableNames.add(table);
-        @NotNull final List<Table<String, Attribute<String>, List<Attribute<String>>>> tables =
-	    new ArrayList<>(0);
-
-        return retrieveMetadataManager(engineName, tableNames, tables, staticContents, decoratorFactory);
-    }
-
-    /**
-     * Retrieves a {@link org.acmsl.queryj.metadata.MetadataManager} instance.
-     * @param engineName the name of the engine.
-     * @return such instance.
-     */
-    @NotNull
-    protected MetadataManager retrieveMetadataManager(
-        @NotNull final String engineName, @NotNull final DecoratorFactory decoratorFactory)
-    {
-        @NotNull final List<String> tableNames = new ArrayList<>(0);
-        @NotNull final List<Table<String, Attribute<String>, List<Attribute<String>>>> tables =
-	        new ArrayList<>(0);
-
-        return retrieveMetadataManager(engineName, tableNames, tables, new ArrayList<>(0), decoratorFactory);
+        return retrieveMetadataManager(engineName, tableNames, tables, staticContent, decoratorFactory);
     }
 
     /**
