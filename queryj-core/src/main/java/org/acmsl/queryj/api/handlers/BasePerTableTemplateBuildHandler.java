@@ -392,9 +392,7 @@ public abstract class BasePerTableTemplateBuildHandler
         @NotNull final TableDAO tableDAO)
       throws  SQLException
     {
-        return
-            tableDAO.queryContents(
-                tableName, metadataManager, decoratorFactory);
+        return tableDAO.queryContents(tableName);
     }
 
     /**
