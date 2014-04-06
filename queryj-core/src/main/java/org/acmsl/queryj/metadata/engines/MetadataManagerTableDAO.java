@@ -336,7 +336,7 @@ public abstract class MetadataManagerTableDAO<M extends MetadataManager>
      * @param metadataManager the metadata manager.
      * @return the retrieved rows.
      */
-    @Nullable
+    @NotNull
     public List<Row<String>> queryContents(
         @NotNull final String tableName,
         @NotNull final MetadataManager metadataManager)
