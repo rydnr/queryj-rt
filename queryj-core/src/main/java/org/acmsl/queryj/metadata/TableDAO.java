@@ -104,4 +104,8 @@ public interface TableDAO
      */
     @Nullable
     Table<String, Attribute<String>, List<Attribute<String>>> findByDAO(@NotNull final String dao);
+
+    /**
+     *
+     */
 }
