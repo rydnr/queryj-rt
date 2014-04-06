@@ -56,7 +56,7 @@ import org.acmsl.queryj.metadata.vo.RowValueObject;
 import org.acmsl.queryj.metadata.vo.Table;
 
 /*
- * Importing some JetBrains annotations.
+ * Importing Apache Commons Logging classes.
  */
 import org.apache.commons.logging.Log;
 
