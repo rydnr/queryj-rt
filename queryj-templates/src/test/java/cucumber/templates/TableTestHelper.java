@@ -745,7 +745,7 @@ public class TableTestHelper
             else
             {
 
-                fillValues(contents, table.getAttributes())
+                List<Attribute<String>> fillValues(contents, table.getAttributes())
                 @Nullable final String rowName = retrieveRowName(contents, table);
 
                 Assert.assertNotNull("Cannot retrieve the row name.", rowName);
