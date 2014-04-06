@@ -176,11 +176,7 @@ public abstract class BasePerTableTemplateBuildHandler
                         try
                         {
                             t_lStaticContent =
-                                retrieveStaticContent(
-                                    t_Table.getName(),
-                                    metadataManager,
-                                    decoratorFactory,
-                                    daoTemplateUtils);
+                                retrieveStaticContent(t_Table.getName(), metadataManager.getTableDAO());
                         }
                         catch (@Nullable final SQLException cannotRetrieveTableContents)
                         {
