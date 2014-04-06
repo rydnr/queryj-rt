@@ -143,7 +143,10 @@ public interface <table.name.voName>DAO
 <if(table.static)>
     <table.staticContent:{r | <cached_constants(row=r, voName=table.name.voName)>}; separator="\n\n">
 
-    <notnull(C=C)> FIXED_CONSTANTS =
+    <notnull(C=C)> List\<<Table.name.voName>\>FIXED_CONSTANTS =
+        Collections.unmodifiableList(
+            Arrays.asList(
+                <table.staticContent:{ r | <r.name.normalized.uppercased>}; separator=",\n">));
 
     /**
      * Retrieves the static (pre-cached) values.
