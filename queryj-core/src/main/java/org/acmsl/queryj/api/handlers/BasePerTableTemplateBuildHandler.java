@@ -380,13 +380,11 @@ public abstract class BasePerTableTemplateBuildHandler
      * Checks whether given table contains static values or not.
      * @param tableName the table name.
      * @param tableDAO the {@link TableDAO} instance.
-     * @param decoratorFactory the decorator factory.
      * @return such information.
      */
     @Nullable
     protected List<Row<String>> retrieveStaticContent(
-        @NotNull final String tableName,
-        @NotNull final TableDAO tableDAO)
+        @NotNull final String tableName, @NotNull final TableDAO tableDAO)
       throws  SQLException
     {
         return tableDAO.queryContents(tableName);
