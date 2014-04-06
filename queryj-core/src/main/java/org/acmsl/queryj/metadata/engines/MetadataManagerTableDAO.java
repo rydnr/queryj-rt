@@ -366,7 +366,6 @@ public abstract class MetadataManagerTableDAO<M extends MetadataManager>
     public List<Row<String>> queryContents(
         @NotNull final String tableName,
         @NotNull final MetadataManager metadataManager,
-        @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final MetaLanguageUtils metaLanguageUtils,
         @NotNull final MetadataUtils metadataUtils)
         throws  SQLException
