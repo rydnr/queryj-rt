@@ -742,6 +742,9 @@ public abstract class MetadataManagerTableDAO<M extends MetadataManager>
         System.arraycopy(source, 0, target, 0, source.length);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public String toString()
