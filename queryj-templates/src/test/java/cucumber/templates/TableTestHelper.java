@@ -186,6 +186,9 @@ public class TableTestHelper
     private static final String DATE_FORMAT_EN = "yyyy/MM/DD";
 
     /**
+     * The starting
+     */
+    /**
      * Singleton implementation to avoid double-locking check.
      */
     protected static final class TableTestHelperSingletonContainer
