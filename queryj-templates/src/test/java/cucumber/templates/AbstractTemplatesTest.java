@@ -857,7 +857,7 @@ public abstract class AbstractTemplatesTest<G, F>
         @NotNull final DatabaseMetaData metadata = EasyMock.createNiceMock(DatabaseMetaData.class);
         PowerMock.mockStatic(DAOTemplateUtils.class);
         @NotNull final DAOTemplateUtils templateUtils = EasyMock.createNiceMock(DAOTemplateUtils.class);
-        EasyMock.expect(DAOTemplateUtils.getInstance()).andReturn(templateUtils);
+        EasyMock.expect(DAOTemplateUtils.getInstance()).andReturn(templateUtils).anyTimes();
         @NotNull final TableDAO tableDAO = EasyMock.createNiceMock(TableDAO.class);
 
         EasyMock.expect(result.getMetaData()).andReturn(metadata).anyTimes();
