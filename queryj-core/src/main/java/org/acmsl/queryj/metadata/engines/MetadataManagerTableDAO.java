@@ -88,6 +88,7 @@ import java.util.Map;
  * @author <a href="mailto:queryj@acm-sl.org">chous</a>
  * @since 3.0
  * Created: 2012/06/06
+ * @param <M> the metadata manager type.
  */
 public abstract class MetadataManagerTableDAO<M extends MetadataManager>
     implements TableDAO
