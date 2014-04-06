@@ -834,7 +834,8 @@ public class TableTestHelper
         @NotNull final String result;
 
         result =
-            STARTING_QUOTE_REGEX.matcher(value).replaceAll(""").replace("\"$", "");
+            ENDING_QUOTE_REGEX.matcher(
+                STARTING_QUOTE_REGEX.matcher(value).replaceAll(""").replace("\"$", "");
 
         return result;
     }
