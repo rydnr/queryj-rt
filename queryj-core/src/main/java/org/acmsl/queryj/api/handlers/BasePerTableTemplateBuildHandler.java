@@ -379,7 +379,7 @@ public abstract class BasePerTableTemplateBuildHandler
     /**
      * Checks whether given table contains static values or not.
      * @param tableName the table name.
-     * @param metadataManager the {@link MetadataManager} instance.
+     * @param tableDAO the {@link MetadataManager} instance.
      * @param decoratorFactory the decorator factory.
      * @return such information.
      */
