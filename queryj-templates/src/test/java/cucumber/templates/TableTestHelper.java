@@ -837,7 +837,7 @@ public class TableTestHelper
     protected String retrieveRowName(
         @NotNull final List<Attribute<String>> rowValues, @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table)
     {
-        @NotNull final String result;
+        @NotNull String result = null;
 
         @Nullable final Attribute<String> staticAttribute = table.getStaticAttribute();
 
