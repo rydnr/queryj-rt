@@ -350,6 +350,19 @@ public abstract class MetadataManagerTableDAO<M extends MetadataManager>
         @NotNull final MetadataManager metadataManager)
         throws SQLException
     {
+    }
+    /**
+     * Queries the contents of given table.
+     * @param tableName the table name.
+     * @param metadataManager the metadata manager.
+     * @return the retrieved rows.
+     */
+    @NotNull
+    public List<Row<String>> queryContents(
+        @NotNull final String tableName,
+        @NotNull final MetadataManager metadataManager)
+        throws SQLException
+    {
         return
             queryContents(
                 tableName,
