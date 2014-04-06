@@ -147,7 +147,6 @@ public abstract class BasePerTableTemplateBuildHandler
      * @param templateFactory the template factory.
      * @param tables the tables.
      * @param decoratorFactory the {@link DecoratorFactory} instance.
-     * @param daoTemplateUtils the {@link DAOTemplateUtils} instance.
      */
     @SuppressWarnings("unchecked")
     protected void buildTemplate(
