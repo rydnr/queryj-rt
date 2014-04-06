@@ -35,8 +35,13 @@
     <dependency>
       <groupId>org.acmsl</groupId>
       <artifactId>acmsl-commons</artifactId>
+      <scope>compile</scope>
     </dependency>
-
+    <dependency>
+      <groupId>org.powermock</groupId>
+      <artifactId>powermock-core</artifactId>
+      <scope>compile</scope>
+    </dependency>
     <dependency>
       <groupId>org.checkthread</groupId>
       <artifactId>checkthread-annotations</artifactId>
@@ -44,12 +49,7 @@
     </dependency>
     <dependency>
       <groupId>info.cukes</groupId>
-      <artifactId>gherkin</artifactId>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>info.cukes</groupId>
-      <artifactId>cucumber-jvm-deps</artifactId>
+      <artifactId>cucumber-core</artifactId>
       <scope>compile</scope>
     </dependency>
     <dependency>
