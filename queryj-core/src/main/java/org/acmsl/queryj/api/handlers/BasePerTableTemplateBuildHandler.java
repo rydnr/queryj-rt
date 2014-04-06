@@ -346,11 +346,7 @@ public abstract class BasePerTableTemplateBuildHandler
             try
             {
                 result =
-                    retrieveStaticContent(
-                        tableName,
-                        metadataManager,
-                        decoratorFactory,
-                        metadataManager.getTableDAO());
+                    retrieveStaticContent(tableName, metadataManager.getTableDAO());
 
                 if (result == null)
                 {
