@@ -39,6 +39,7 @@ package org.acmsl.queryj.metadata;
  * Importing project classes.
  */
 import org.acmsl.queryj.metadata.vo.Attribute;
+import org.acmsl.queryj.metadata.vo.Row;
 import org.acmsl.queryj.metadata.vo.Table;
 
 /*
@@ -108,4 +109,6 @@ public interface TableDAO
     /**
      * Retrieves the actual contents of the table.
      */
+    @NotNull
+    List<Row<String>> queryContents();
 }
