@@ -829,7 +829,7 @@ public class TableTestHelper
 
     /**
      * Retrieves the row for given contents.
-     * @param contents the contents.
+     * @param rowValues the row contents.
      * @param table the table.
      * @return the row.
      */
