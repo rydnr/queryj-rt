@@ -130,8 +130,7 @@ public abstract class BasePerTableTemplateBuildHandler
             metadataManager,
             retrieveTemplateFactory(),
             tableDAO.findAllTables(),
-            CachingDecoratorFactory.getInstance(),
-            DAOTemplateUtils.getInstance());
+            CachingDecoratorFactory.getInstance());
     }
 
     /**
