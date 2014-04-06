@@ -55,6 +55,12 @@
       <optional>true</optional>
     </dependency>
     <dependency>
+      <groupId>commons-logging</groupId>
+      <artifactId>commons-logging</artifactId>
+      <scope>runtime</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
       <groupId>com.jetbrains</groupId>
       <artifactId>annotations</artifactId>
       <optional>true</optional>
