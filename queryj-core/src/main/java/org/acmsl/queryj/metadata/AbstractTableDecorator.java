@@ -1365,7 +1365,6 @@ public abstract class AbstractTableDecorator
      * @param tableName the table name.
      * @param metadataManager the {@link MetadataManager} instance.
      * @param decoratorFactory the decorator factory.
-     * @param daoTemplateUtils the {@link DAOTemplateUtils} instance.
      * @return such information.
      */
     @NotNull
