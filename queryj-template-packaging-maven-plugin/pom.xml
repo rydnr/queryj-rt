@@ -98,6 +98,10 @@
       <artifactId>antlr4-annotations</artifactId>
     </dependency>
     <dependency>
+      <groupId>org.antlr</groupId>
+      <artifactId>ST4-runtime</artifactId>
+    </dependency>
+    <dependency>
       <groupId>com.jetbrains</groupId>
       <artifactId>annotations</artifactId>
     </dependency>
