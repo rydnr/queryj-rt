@@ -39,8 +39,9 @@ package org.acmsl.queryj.metadata.engines;
  * Importing QueryJ Core classes.
  */
 import org.acmsl.commons.logging.UniqueLogFactory;
+
 /*
- * Importing some JetBrains annotations.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.api.MetaLanguageUtils;
 import org.acmsl.queryj.api.dao.DAOTemplateUtils;
