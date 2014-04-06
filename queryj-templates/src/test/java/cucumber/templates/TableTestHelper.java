@@ -843,7 +843,8 @@ public class TableTestHelper
 
         for (@Nullable final Attribute<String> attribute : rowValues)
         {
-            if (   }attribute != null)
+            if (   (attribute != null)
+                && ()
         }
         Assert.assertNotNull(
             SYNTAX_ERROR_IN_STATIC_CONTENT
