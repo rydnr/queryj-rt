@@ -94,6 +94,7 @@ import org.junit.Rule;
 import org.junit.rules.TemporaryFolder;
 import org.powermock.api.easymock.PowerMock;
 import org.powermock.core.classloader.annotations.PrepareForTest;
+import org.powermock.modules.junit4.PowerMockRunner;
 
 /*
  * Importing JDK classes.
@@ -120,6 +121,7 @@ import java.util.Properties;
  */
 @SuppressWarnings("unused")
 @PrepareForTest(DAOTemplateUtils.class)
+@RunWith(PowerMockRunner.class)
 public abstract class AbstractTemplatesTest<G, F>
 {
     /**
