@@ -207,6 +207,11 @@
         <version>1.1</version>
       </dependency>
       <dependency>
+        <groupId>commons-logging</groupId>
+        <artifactId>commons-logging</artifactId>
+        <version>1.1</version>
+      </dependency>
+      <dependency>
         <groupId>com.oracle</groupId>
         <artifactId>oracle-driver</artifactId>
         <version>${version.oracle-driver}</version>
