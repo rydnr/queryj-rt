@@ -835,7 +835,8 @@ public class TableTestHelper
 
         result =
             ENDING_QUOTE_REGEX.matcher(
-                STARTING_QUOTE_REGEX.matcher(value).replaceAll(""").replace("\"$", "");
+                STARTING_QUOTE_REGEX.matcher(value).replaceAll(""))
+                .replace("\"$", "");
 
         return result;
     }
