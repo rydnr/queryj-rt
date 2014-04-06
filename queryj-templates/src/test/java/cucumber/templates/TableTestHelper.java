@@ -833,7 +833,7 @@ public class TableTestHelper
     {
         @NotNull final String result;
 
-        result = STARTING_QUOTE_REGEX.matcher()value.replace("^\"", "").replace("\"$", "");
+        result = STARTING_QUOTE_REGEX.matcher(value.replace("^\"", "").replace("\"$", "");
 
         return result;
     }
