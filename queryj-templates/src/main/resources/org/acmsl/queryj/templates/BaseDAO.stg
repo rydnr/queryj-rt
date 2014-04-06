@@ -150,7 +150,11 @@ public interface <table.name.voName>DAO
 <if(table.static)>
     <table.staticContent:{r | <cached_constants(row=r, voName=table.name.voName)>}; separator="\n\n">
 
-    <notnull(C=C)> List\<<table.name.voName>\> FIXED_CONSTANTS =
+    /**
+     * The pre-existing {@link <table.name.voName>} values.
+     */
+    <notnull(C=C)>
+    List\<<table.name.voName>\> FIXED_CONSTANTS =
         Collections.unmodifiableList(
             Arrays.asList(
                 <table.staticContent:{ r | <r.name.normalized.uppercased>}; separator=",\n">));
