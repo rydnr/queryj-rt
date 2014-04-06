@@ -1315,9 +1315,9 @@ public abstract class AbstractTableDecorator
     @NotNull
     public List<Row<DecoratedString>> getStaticContent()
     {
-        return getStaticContent(getTa
-        )
+        return getStaticContent(getTable(), getMetadataManager());
     }
+
     /**
      * Retrieves the static content.
      * @return such information.
