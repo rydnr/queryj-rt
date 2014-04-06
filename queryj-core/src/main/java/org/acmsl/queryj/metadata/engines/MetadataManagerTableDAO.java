@@ -55,6 +55,10 @@ import org.acmsl.queryj.metadata.vo.Table;
  * Importing some JetBrains annotations.
  */
 import org.apache.commons.logging.Log;
+
+/*
+ * Importing some JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
