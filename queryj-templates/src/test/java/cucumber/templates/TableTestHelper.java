@@ -852,10 +852,10 @@ public class TableTestHelper
                 && (staticAttribute.getName().equals(attribute)))
             {
                 result = attribute.getValue();
+                break;
             }
         }
 
-        result = attribute.getName();
 
         return result;
     }
