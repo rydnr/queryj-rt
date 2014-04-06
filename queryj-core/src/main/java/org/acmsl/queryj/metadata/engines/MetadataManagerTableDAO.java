@@ -528,7 +528,7 @@ public abstract class MetadataManagerTableDAO<M extends MetadataManager>
                     reorderAttributes(
                         attributes, t_astrColumnNames, t_astrColumnValues);
 
-                    @NotNull final List<Attribute<String>> t_lAttributes = new ArrayList<Attribute<String>>(t_astrColumnValues.length);
+                    @NotNull final List<Attribute<String>> t_lAttributes = new ArrayList<>(t_astrColumnValues.length);
 
                     Attribute<String> t_NewAttribute;
 
