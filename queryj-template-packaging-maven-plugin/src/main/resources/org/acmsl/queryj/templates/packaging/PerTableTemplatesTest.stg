@@ -447,6 +447,8 @@ public class PerTableTemplatesTest
 
         Assert.assertNotNull("No template generator found for " + templateName, generator);
 
+        @NotNull final DecoratorFactory decoratorFactory = retrieveDecoratorFactory(generator);
+
         boolean firstTime = true;
         boolean restart = false;
 
