@@ -2067,10 +2067,10 @@ public abstract class AbstractTableDecorator
     }
 
     /**
-     * Retrieves the string representation.
-     *
-     * @return such text.
+     * {@inheritDoc}
      */
+    @No
+
     @Override
     public String toString()
     {
