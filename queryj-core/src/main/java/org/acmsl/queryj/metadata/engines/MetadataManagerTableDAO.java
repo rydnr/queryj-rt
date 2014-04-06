@@ -43,7 +43,6 @@ import org.acmsl.queryj.api.MetaLanguageUtils;
 import org.acmsl.queryj.api.dao.DAOTemplateUtils;
 import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.MetadataUtils;
-import org.acmsl.queryj.metadata.MetadataUtils;
 import org.acmsl.queryj.metadata.TableDAO;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.AttributeValueObject;
