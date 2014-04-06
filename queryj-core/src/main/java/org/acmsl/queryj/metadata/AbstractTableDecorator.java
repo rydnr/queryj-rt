@@ -1323,8 +1323,7 @@ public abstract class AbstractTableDecorator
      * @return such information.
      */
     @NotNull
-    protected List<Row<DecoratedString>> getStaticContent(@No
-                                                           )
+    protected List<Row<DecoratedString>> getStaticContent(@NotNull final Table<>)
     {
         List<Row<DecoratedString>> result = null;
 
