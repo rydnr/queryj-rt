@@ -683,6 +683,8 @@ public class PerTableTemplatesTest
         t_lTableNames.addAll(t_TableNameSet);
         t_lTables.addAll(t_mTables.values());
 
+        @NotNull final DecoratorFactory decoratorFactory = retrieveDecoratorFactory(generator);
+
         validateQueries(
             getSqlList(),
             t_strJdbcDriver,
