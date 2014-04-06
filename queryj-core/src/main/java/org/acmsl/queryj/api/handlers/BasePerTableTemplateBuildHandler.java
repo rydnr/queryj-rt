@@ -155,8 +155,7 @@ public abstract class BasePerTableTemplateBuildHandler
         @NotNull final MetadataManager metadataManager,
         @NotNull final TF templateFactory,
         @NotNull final List<Table<String, Attribute<String>, List<Attribute<String>>>> tables,
-        @NotNull final DecoratorFactory decoratorFactory,
-        @NotNull final DAOTemplateUtils daoTemplateUtils)
+        @NotNull final DecoratorFactory decoratorFactory)
       throws  QueryJBuildException
     {
         @NotNull final List<T> t_lTemplates = new ArrayList<>();
