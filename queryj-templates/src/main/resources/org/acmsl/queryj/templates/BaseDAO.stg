@@ -93,6 +93,7 @@ import java.util.Collections;
 <if(table.attributeTypes)>
 <table.attributeTypes:{ t | import <t>;}; separator="\n">
 <endif>
+
 <else>
 <if(table.attributeTypes)>
 
@@ -100,6 +101,7 @@ import java.util.Collections;
  * Importing some JDK classes.
  */
 <table.attributeTypes:{ t | import <t>;}; separator="\n">
+
 <endif>
 <endif>
 
