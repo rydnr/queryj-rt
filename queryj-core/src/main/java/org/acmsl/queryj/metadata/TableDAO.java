@@ -62,7 +62,8 @@ import java.util.List;
 /**
  * Provides the methods to access {@link Table} information.
  * @author <a href="mailto:chous@acm-sl.org">chous</a>
- * @since 2012/06/06
+ * @since 3.0
+ * Created: 2012/06/06
  */
 public interface TableDAO
     extends DAO
