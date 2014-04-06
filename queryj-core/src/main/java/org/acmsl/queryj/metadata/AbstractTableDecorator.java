@@ -1335,8 +1335,9 @@ public abstract class AbstractTableDecorator
         {
             result =
                 retrieveStaticContent(
-                    getTable().getName(),
-                    getMetadataManager(),
+                    table.getName(),
+                    metadataManager,
+                    metadataManager.getTableDAO(),
                     getDecoratorFactory());
         }
         catch (@NotNull final SQLException invalidQuery)
