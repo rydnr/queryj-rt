@@ -393,7 +393,7 @@ public abstract class BasePerTableTemplateBuildHandler
       throws  SQLException
     {
         return
-            daoTemplateUtils.queryContents(
+            tableDAO.queryContents(
                 tableName, metadataManager, decoratorFactory);
     }
 
