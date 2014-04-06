@@ -341,7 +341,6 @@ public abstract class MetadataManagerTableDAO<M extends MetadataManager>
     /**
      * Queries the contents of given table.
      * @param tableName the table name.
-     * @param metadataManager the metadata manager.
      * @return the retrieved rows.
      */
     @NotNull
