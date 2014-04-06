@@ -389,7 +389,7 @@ public abstract class BasePerTableTemplateBuildHandler
         @NotNull final String tableName,
         @NotNull final MetadataManager metadataManager,
         @NotNull final DecoratorFactory decoratorFactory,
-        @NotNull final DAOTemplateUtils daoTemplateUtils)
+        @NotNull final TableDAO tableDAO)
       throws  SQLException
     {
         return
