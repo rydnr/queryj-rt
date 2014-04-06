@@ -188,6 +188,7 @@ public class TableTestHelper
     /**
      * The starting quote regex.
      */
+    protected static final Pattern
     /**
      * Singleton implementation to avoid double-locking check.
      */
