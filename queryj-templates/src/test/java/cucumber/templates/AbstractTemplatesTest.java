@@ -886,6 +886,7 @@ public abstract class AbstractTemplatesTest<G, F>
         EasyMock.replay(result);
         EasyMock.replay(metadata);
         EasyMock.replay(tableDAO);
+        EasyMock.replay();
 
         return result;
     }
