@@ -856,7 +856,7 @@ public abstract class AbstractTemplatesTest<G, F>
         @NotNull final MetadataManager result = EasyMock.createNiceMock(MetadataManager.class);
         @NotNull final DatabaseMetaData metadata = EasyMock.createNiceMock(DatabaseMetaData.class);
         @NotNull final TableDAO tableDAO = EasyMock.createNiceMock(TableDAO.class);
-        @NotNull final ColumnDAO columnDAO = EasyMock.createNiceMock(ColumnDAO.class)
+        @NotNull final ColumnDAO columnDAO = EasyMock.createNiceMock(ColumnDAO.class);
 
         EasyMock.expect(result.getMetaData()).andReturn(metadata).anyTimes();
         EasyMock.expect(result.getName()).andReturn("fake manager").anyTimes();
