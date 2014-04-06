@@ -683,12 +683,6 @@ public class PerTableTemplatesTest
         t_lTableNames.addAll(t_TableNameSet);
         t_lTables.addAll(t_mTables.values());
 
-        @NotNull final DecoratorFactory decoratorFactory = retrieveDecoratorFactory(generator);
-
-        @Nullable final PerTableTemplateGenerator\<PerTableTemplate\<PerTableTemplateContext>, PerTableTemplateContext> generator =
-            (PerTableTemplateGenerator\<PerTableTemplate\<PerTableTemplateContext>, PerTableTemplateContext>) retrieveTemplateGenerator(
-                templateName);
-
         validateQueries(
             getSqlList(),
             t_strJdbcDriver,
