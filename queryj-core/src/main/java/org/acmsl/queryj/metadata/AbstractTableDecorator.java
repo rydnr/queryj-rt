@@ -1320,6 +1320,8 @@ public abstract class AbstractTableDecorator
 
     /**
      * Retrieves the static content.
+     * @param table the table.
+     * @param metadataManager the {@link MetadataManager} instance.
      * @return such information.
      */
     @NotNull
