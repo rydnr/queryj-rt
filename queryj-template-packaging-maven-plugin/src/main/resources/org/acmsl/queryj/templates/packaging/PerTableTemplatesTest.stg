@@ -97,7 +97,7 @@ import org.acmsl.queryj.tools.handlers.ParameterValidationHandler;
 /*
  * Importing QueryJ Test classes.
  */
-importing org.acmsl.queryj.test.AbstractTemplatesTest;
+import org.acmsl.queryj.test.AbstractTemplatesTest;
 importing org.acmsl.queryj.test.TableTestHelper;
 
 /*
