@@ -2069,8 +2069,7 @@ public abstract class AbstractTableDecorator
     /**
      * {@inheritDoc}
      */
-    @No
-
+    @NotNull
     @Override
     public String toString()
     {
