@@ -121,6 +121,11 @@
       </dependency>
       <dependency>
         <groupId>org.acmsl.queryj</groupId>
+        <artifactId>queryj-test</artifactId>
+        <version>${version.queryj}</version>
+      </dependency>
+       <dependency>
+        <groupId>org.acmsl.queryj</groupId>
         <artifactId>queryj-templates</artifactId>
         <version>${version.queryj}</version>
       </dependency>
