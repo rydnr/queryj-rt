@@ -1315,6 +1315,7 @@ public abstract class AbstractTableDecorator
     @NotNull
     public List<Row<DecoratedString>> getStaticContent()
     {
+
         List<Row<DecoratedString>> result = null;
 
         try
