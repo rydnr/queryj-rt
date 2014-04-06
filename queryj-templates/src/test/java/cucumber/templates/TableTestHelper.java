@@ -828,10 +828,10 @@ public class TableTestHelper
     }
 
     /**
-     * Retrieves the row for given contents.
+     * Retrieves the row name for given contents.
      * @param rowValues the row contents.
      * @param table the table.
-     * @return the row.
+     * @return the row name.
      */
     @Nullable
     protected String retrieveRowName(
