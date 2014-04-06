@@ -1323,7 +1323,9 @@ public abstract class AbstractTableDecorator
      * @return such information.
      */
     @NotNull
-    protected List<Row<DecoratedString>> getStaticContent(@NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table)
+    protected List<Row<DecoratedString>> getStaticContent(
+        @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table,
+        @NotNull final MetadataManager metadataManager)
     {
         List<Row<DecoratedString>> result = null;
 
