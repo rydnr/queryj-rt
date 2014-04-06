@@ -387,8 +387,6 @@ public abstract class BasePerTableTemplateBuildHandler
     @Nullable
     protected List<Row<String>> retrieveStaticContent(
         @NotNull final String tableName,
-        @NotNull final MetadataManager metadataManager,
-        @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final TableDAO tableDAO)
       throws  SQLException
     {
