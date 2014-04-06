@@ -229,7 +229,7 @@ cached_constants(row, voName) ::= <<
  @param voName the value-object name.
 !>
 /**
- * The <row.name> constant.
+ * The <row.name> {@link <voName>}.
  */
 <notnull(C=C)>
 public static final <voName> <row.name.normalized.uppercased> =
