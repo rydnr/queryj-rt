@@ -359,6 +359,13 @@
     
       <dependency>
         <groupId>org.powermock</groupId>
+        <artifactId>powermock-core</artifactId>
+        <version>${version.powermock}</version>
+        <optional>true</optional>
+      </dependency>
+    
+      <dependency>
+        <groupId>org.powermock</groupId>
         <artifactId>powermock-api-easymock</artifactId>
         <version>${version.powermock}</version>
         <optional>true</optional>
