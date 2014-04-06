@@ -839,7 +839,7 @@ public class TableTestHelper
     {
         @NotNull final String result;
 
-        @Nullable final Attribute<String> attribute = table.getStaticAttribute();
+        @Nullable final Attribute<String> staticAttribute = table.getStaticAttribute();
 
         for (@Nullable final Attribute<String> attribute : )
         Assert.assertNotNull(
