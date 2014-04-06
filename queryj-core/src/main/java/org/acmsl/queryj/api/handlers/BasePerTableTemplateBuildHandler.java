@@ -350,7 +350,7 @@ public abstract class BasePerTableTemplateBuildHandler
                         tableName,
                         metadataManager,
                         decoratorFactory,
-                        DAOTemplateUtils.getInstance());
+                        metadataManager.getTableDAO());
 
                 if (result == null)
                 {
