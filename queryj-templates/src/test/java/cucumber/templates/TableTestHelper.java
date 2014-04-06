@@ -851,7 +851,6 @@ public class TableTestHelper
         {
             if (   (attribute != null)
                 && (staticAttribute.getName().equals(attribute.getName())))
-                &&
             {
                 result = attribute.getValue();
                 break;
