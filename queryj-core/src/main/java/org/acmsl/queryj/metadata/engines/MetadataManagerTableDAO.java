@@ -417,7 +417,6 @@ public abstract class MetadataManagerTableDAO<M extends MetadataManager>
      * @param staticAttributeName the name of the static attribute.
      * @param attributes the attributes.
      * @param metadataManager the metadata manager.
-     * @param decoratorFactory the <code>DecoratorFactory</code> instance.
      * @return the retrieved rows.
      */
     @NotNull
