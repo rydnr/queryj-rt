@@ -1392,7 +1392,7 @@ public abstract class AbstractTableDecorator
     {
         @NotNull final List<Row<DecoratedString>> result;
 
-        @Nullable final List<Row<String>> aux =
+        @NotNull final List<Row<String>> aux =
             tableDAO.queryContents(tableName);
 
         if (aux == null)
