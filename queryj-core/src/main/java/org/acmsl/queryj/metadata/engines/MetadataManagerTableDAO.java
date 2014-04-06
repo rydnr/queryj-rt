@@ -425,8 +425,7 @@ public abstract class MetadataManagerTableDAO<M extends MetadataManager>
         @NotNull final String tableName,
         @Nullable final String staticAttributeName,
         @NotNull final List<Attribute<String>> attributes,
-        @NotNull final MetadataManager metadataManager,
-        @NotNull final DecoratorFactory decoratorFactory)
+        @NotNull final MetadataManager metadataManager)
         throws  SQLException
     {
         return
