@@ -90,7 +90,7 @@
     </dependency>
     <dependency>
       <groupId>org.antlr</groupId>
-      <artifactId>ST4-runtime</artifactId>
+      <artifactId>ST4</artifactId>
     </dependency>
     <dependency>
       <groupId>com.jetbrains</groupId>
