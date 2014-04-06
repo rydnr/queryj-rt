@@ -56,6 +56,7 @@ import org.jetbrains.annotations.Nullable;
 /*
  * Importing some JDK classes.
  */
+import java.sql.SQLException;
 import java.util.List;
 
 /**
@@ -112,5 +113,6 @@ public interface TableDAO
      * @return the retrieved rows.
      */
     @NotNull
-    List<Row<String>> queryContents(@NotNull final String tableName);
+    List<Row<String>> queryContents(@NotNull final String tableName)
+        throws SQLException;
 }
