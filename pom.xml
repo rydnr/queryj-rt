@@ -43,6 +43,7 @@
     <module>queryj-maven</module>
     <module>queryj-template-packaging-maven-plugin</module>
     <module>queryj-placeholders</module>
+    <module>queryj-test</module>
     <module>queryj-templates</module>
   </modules>
 
