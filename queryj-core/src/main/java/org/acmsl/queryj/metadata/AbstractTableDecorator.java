@@ -1395,14 +1395,7 @@ public abstract class AbstractTableDecorator
         @NotNull final List<Row<String>> aux =
             tableDAO.queryContents(tableName);
 
-        if (aux == null)
-        {
-            result = new ArrayList<>(0);
-        }
-        else
-        {
-            result = decorate(aux, metadataManager, decoratorFactory);
-        }
+        result = decorate(aux, metadataManager, decoratorFactory);
 
         return result;
     }
