@@ -55,7 +55,7 @@ source(C) ::= <<
   template="org/acmsl/queryj/templates/PerTableTemplatesTest.stg",
   C=C)><endif>
 
-<package_declaration(packageName="cucumber.templates")>
+<package_declaration(packageName="org.acmsl.queryj.test")>
 <checkers_import()>
 
 /*
