@@ -1386,6 +1386,7 @@ public abstract class AbstractTableDecorator
     protected List<Row<DecoratedString>> retrieveStaticContent(
         @NotNull final String tableName,
         @NotNull final MetadataManager metadataManager,
+        @NotNull final TableDAO tableDAO,
         @NotNull final DecoratorFactory decoratorFactory)
         throws SQLException
     {
