@@ -107,7 +107,6 @@ public interface TableDAO
     Table<String, Attribute<String>, List<Attribute<String>>> findByDAO(@NotNull final String dao);
 
     /**
-     /**
      * Retrieves the actual contents of given table.
      * @param tableName the table name.
      * @return the retrieved rows.
