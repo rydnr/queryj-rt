@@ -1372,8 +1372,7 @@ public abstract class AbstractTableDecorator
     protected List<Row<DecoratedString>> retrieveStaticContent(
         @NotNull final String tableName,
         @NotNull final MetadataManager metadataManager,
-        @NotNull final DecoratorFactory decoratorFactory,
-        @NotNull final DAOTemplateUtils daoTemplateUtils)
+        @NotNull final DecoratorFactory decoratorFactory)
         throws SQLException
     {
         @NotNull final List<Row<DecoratedString>> result;
