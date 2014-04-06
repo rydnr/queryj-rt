@@ -348,7 +348,6 @@ public abstract class MetadataManagerTableDAO<M extends MetadataManager>
             queryContents(
                 tableName,
                 metadataManager,
-                decoratorFactory,
                 MetaLanguageUtils.getInstance(),
                 MetadataUtils.getInstance());
     }
