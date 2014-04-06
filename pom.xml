@@ -244,11 +244,6 @@
       </dependency>
       <dependency>
         <groupId>org.antlr</groupId>
-        <artifactId>ST4-runtime</artifactId>
-        <version>4.0.7</version>
-      </dependency>
-      <dependency>
-        <groupId>org.antlr</groupId>
         <artifactId>antlr</artifactId>
         <version>3.5.1</version>
       </dependency>
