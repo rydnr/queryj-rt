@@ -84,6 +84,7 @@ import org.springframework.dao.DataAccessException;
 import org.acmsl.commons.patterns.dao.DAO;
 
 <endif>
+
 /*
  * Importing JDK classes.
  */
