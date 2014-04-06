@@ -91,6 +91,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.regex.Pattern;
 
 /**
  * Helper class for per-table Cucumber tests.
@@ -188,7 +189,7 @@ public class TableTestHelper
     /**
      * The starting quote regex.
      */
-    protected static final Pattern STARTING_QUOTE_REGEX
+    protected static final Pattern STARTING_QUOTE_REGEX = Pattern.compile("^")
     /**
      * Singleton implementation to avoid double-locking check.
      */
