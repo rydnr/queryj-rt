@@ -752,7 +752,7 @@ public class TableTestHelper
                 Assert.assertNotNull("Cannot retrieve the row name.", rowName);
 
                 @NotNull final Row<String> row =
-                    new RowValueObject(rowName, tableName, fillValues(contents, table.getAttributes()));
+                    new RowValueObject(rowName, tableName, rowValues);
 
                 rows.add(row);
             }
