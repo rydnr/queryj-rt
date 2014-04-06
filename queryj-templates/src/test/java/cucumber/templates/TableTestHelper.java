@@ -841,6 +841,10 @@ public class TableTestHelper
 
         @Nullable final Attribute<String> staticAttribute = table.getStaticAttribute();
 
+        Assert.assertNotNull(
+            SYNTAX_ERROR_IN_STATIC_CONTENT
+            + ". Static column not found.",
+            attribute);
         for (@Nullable final Attribute<String> attribute : rowValues)
         {
             if (   (attribute != null)
