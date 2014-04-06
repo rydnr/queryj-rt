@@ -846,10 +846,6 @@ public class TableTestHelper
             if (   (attribute != null)
                 && ()
         }
-        Assert.assertNotNull(
-            SYNTAX_ERROR_IN_STATIC_CONTENT
-            + ". Static column not found.",
-            attribute);
 
         result = attribute.getName();
 
