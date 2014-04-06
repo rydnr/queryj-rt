@@ -835,7 +835,7 @@ public class TableTestHelper
      */
     @Nullable
     protected String retrieveRowName(
-        @NotNull final List<Attribute<String>> contents, @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table)
+        @NotNull final List<Attribute<String>> rowValues, @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table)
     {
         @NotNull final String result;
 
