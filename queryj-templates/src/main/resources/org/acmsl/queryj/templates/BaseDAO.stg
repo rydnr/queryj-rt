@@ -69,7 +69,6 @@ sourceImpl(table, C) ::= <<
 <project_imports(
   basePackageName=C.package,
   voName=table.name.voName)>
-
 <checkers_import(C=C)>
 /*
  * Importing Spring classes.
@@ -83,6 +82,7 @@ import org.springframework.dao.DataAccessException;
 import org.acmsl.commons.patterns.dao.DAO;
 
 <endif>
+
 
 /*
  * Importing JDK classes.
