@@ -112,5 +112,5 @@ public interface TableDAO
      * @return the retrieved rows.
      */
     @NotNull
-    List<Row<String>> queryContents();
+    List<Row<String>> queryContents(@NotNull final String tableName);
 }
