@@ -339,7 +339,7 @@ public abstract class MetadataManagerTableDAO<M extends MetadataManager>
     }
 
     /**
-     * Queries the contents of given table.
+     * Retrieves the actual contents of given table.
      * @param tableName the table name.
      * @return the retrieved rows.
      */
