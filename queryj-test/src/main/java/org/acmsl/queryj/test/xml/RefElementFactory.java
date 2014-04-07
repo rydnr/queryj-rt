@@ -56,7 +56,7 @@ import org.xml.sax.Attributes;
  * Creates {@link RefElement}s.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
- * Created: 2013/05/25
+ * Created: 2013/05/25k
  */
 public  class RefElementFactory
     implements ObjectCreationFactory
