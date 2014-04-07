@@ -184,9 +184,9 @@ public class CachingAttributeDecorator
      * Specifies the cached <code>isPrimitive</code> value.
      * @param value the value to cache.
      */
-    protected void setCachedIsPrimitive(final Boolean value)
+    protected void setCachedIsPrimitiveWrapper(final Boolean value)
     {
-        immutableSetCachedIsPrimitive(value);
+        immutableSetCachedIsPrimitiveWrapper(value);
     }
 
     /**
