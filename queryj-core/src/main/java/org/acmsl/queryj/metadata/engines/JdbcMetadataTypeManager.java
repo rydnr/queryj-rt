@@ -1482,7 +1482,7 @@ public class JdbcMetadataTypeManager
     @Override
     public boolean isBlob(final int dataType)
     {
-        return (dataType == Types.CLOB);
+        return (dataType == Types.BLOB);
     }
 
     /**
