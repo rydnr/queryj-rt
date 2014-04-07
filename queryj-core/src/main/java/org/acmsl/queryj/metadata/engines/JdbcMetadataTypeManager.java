@@ -1079,7 +1079,7 @@ public class JdbcMetadataTypeManager
     @Override
     public String getConstantName(final int dataType)
     {
-        @Nullable final String result;
+        @NotNull final String result;
 
         switch (dataType)
         {
