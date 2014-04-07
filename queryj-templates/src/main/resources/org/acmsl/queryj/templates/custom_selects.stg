@@ -468,7 +468,7 @@ custom_select_return_cast(cs, table, result, C) ::= <<
 >>
 
 custom_select_return_nullable_maybe(cs, result, C) ::= <<
-<if(!cs.multiple)><if(cs.resultRef)><if(result.wrappingASingleProperty)><result.properties:{property|<if(property.object)><nullable(C=C)><endif>}><endif><endif><endif>
+<if(cs.multiple)><notnull(C=C)><else><if(cs.resultRef)><if(result.wrappingASingleProperty)><result.properties:{property|<if(property.object)><nullable(C=C)><endif>}><endif><endif><endif>
 >>
 
 attribute_declaration(attr, C) ::= <<
