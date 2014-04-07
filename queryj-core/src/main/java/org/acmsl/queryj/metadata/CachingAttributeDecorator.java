@@ -111,6 +111,11 @@ public class CachingAttributeDecorator
     private DecoratedString m__strCachedType;
 
     /**
+     * Whether is
+     */
+    private Boolean m__bCachedIsPrimitiveWrapper;
+
+    /**
      * Creates a <code>CachingAttributeDecorator</code> with the
      * <code>Attribute</code> to decorate.
      * @param attribute the attribute.
