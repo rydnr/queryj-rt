@@ -310,7 +310,7 @@ fk_delete_method(foreignKey, table) ::= <<
 void discardRelationTo<foreignKey.target.voName>By<foreignKey.attributes:{attr |<attr.name.capitalized>};
                                                           separator="And">(
 <else>
-public void deleteBy<foreignKey.attributes:{attr |<attr.name.capitalized>};
+void deleteBy<foreignKey.attributes:{attr |<attr.name.capitalized>};
                       separator="And">(
 <endif>
 
