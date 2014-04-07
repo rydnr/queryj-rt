@@ -338,7 +338,7 @@ public abstract class AbstractAttributeDecorator
      */
     protected boolean isPrimitiveWrapper(final int type, @NotNull final MetadataTypeManager metadataTypeManager)
     {
-        return metadataTypeManager.isPrimitiveWrapper()getTypeId(), getMetadataTypeManager();
+        return metadataTypeManager.isPrimitiveWrapper(getTypeId(), getMetadataTypeManager();
     }
 
     /**
