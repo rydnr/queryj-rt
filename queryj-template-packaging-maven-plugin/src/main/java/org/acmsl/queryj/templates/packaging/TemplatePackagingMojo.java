@@ -84,7 +84,7 @@ import org.checkthread.annotations.ThreadSafe;
  * @execute phase="generate-sources"
  * @threadSafe
  * @since 3.0
- * Created: mk2013/06/16
+ * Created: 2013/06/16
  */
 @SuppressWarnings("unused")
 @ThreadSafe
