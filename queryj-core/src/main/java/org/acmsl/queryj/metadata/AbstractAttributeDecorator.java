@@ -324,7 +324,7 @@ public abstract class AbstractAttributeDecorator
     }
 
     /**
-     * Retrieves whether the type of thi attribute is a primitive wrapper or not.
+     * Retrieves whether the type of this attribute is a primitive wrapper or not.
      * @return {@code true} in such case.
      */
     public boolean isPrimitiveWrapper()
