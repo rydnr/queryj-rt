@@ -336,9 +336,9 @@ public abstract class AbstractAttributeDecorator
      * Retrieves whether the type of thi attribute is a primitive wrapper or not.
      * @return {@code true} in such case.
      */
-    protected boolean isPrimitiveWrapper(final int type, @NotNull final MetadataTypeManager metadataTypeManager)
+    protected boolean isPrimitiveWrapper(final int typeId, @NotNull final MetadataTypeManager metadataTypeManager)
     {
-        return metadataTypeManager.isPrimitiveWrapper(getTypeId(), getMetadataTypeManager();
+        return metadataTypeManager.isPrimitiveWrapper(typeId);
     }
 
     /**
