@@ -358,7 +358,7 @@ transactionTemplate.execute(
 
 custom_select_return(cs, table, result, C) ::= <<
 <if(table.voDecorated)>
-dec <custom_select_return_decorated(cs=cs, result=result, C=C)>
+<custom_select_return_decorated(cs=cs, result=result, C=C)>
 <else><custom_select_return_nondecorated(cs=cs, result=result, C=C)><endif>
 >>
 
