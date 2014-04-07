@@ -909,7 +909,7 @@ public class JdbcMetadataTypeManager
     @Override
     public String getSmartObjectRetrievalType(final int dataType, final boolean isBool)
     {
-        @Nullable final String result;
+        @NotNull final String result;
 
         if (isBool)
         {
