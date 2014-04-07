@@ -1436,7 +1436,7 @@ public class JdbcMetadataTypeManager
     @Override
     public boolean isPrimitiveWrapper(@NotNull final String dataType)
     {
-        final boolean result = false;
+        final boolean result;
 
         if  (   (Integer.class.getSimpleName().equals(dataType))
              || (Long.class.getSimpleName().equals(dataType))
