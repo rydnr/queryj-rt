@@ -306,7 +306,7 @@ public abstract class AbstractAttributeDecorator
      */
     public boolean isPrimitive()
     {
-        return isPrimitive(getTypeId(), getMetadataTypeManager());
+        return isPrimitive(getTypeId(), retrieveType(), isNullable(), getMetadataTypeManager());
     }
 
     /**
@@ -316,11 +316,28 @@ public abstract class AbstractAttributeDecorator
      * @return <code>false</code> if no primitive matches.
      */
     protected boolean isPrimitive(
-        final int type, @NotNull final MetadataTypeManager metadataTypeManager)
+        final int typeId,
+        @NotNull final String type,
+        final boolean nullable,
+        @NotNull final MetadataTypeManager metadataTypeManager)
     {
-        return
-            (metadataTypeManager.isPrimitive(type))
-            ?  Boolean.TRUE : Boolean.FALSE;
+        final boolean result;
+
+        if (metadataTypeManager.isPrimitive(typeId))
+        {
+            result = true;
+        }
+        else if (   !(nullable)
+                 && (metadataTypeManager.isPrimitiveWrapper(type)))
+        {
+            result = true;
+        }
+        else
+        {
+            result = false;
+        }
+
+        return result;
     }
 
     /**
