@@ -177,7 +177,7 @@ public class CachingAttributeDecorator
     protected final void immutableSetCachedIsPrimitive(
         final Boolean value)
     {
-        m__bCachedIsPrimitive = value;
+        m__bCachedIsPrimitiveWrapper = value;
     }
 
     /**
