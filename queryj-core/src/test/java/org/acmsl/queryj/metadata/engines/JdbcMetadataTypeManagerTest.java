@@ -90,7 +90,7 @@ public class JdbcMetadataTypeManagerTest
     }
 
     /**
-     * Tests whether isPrimitiveWrapper() knows about Float class.
+     * Tests whether isPrimitiveWrapper() knows about Double class.
      */
     @Test
     public void isPrimitiveWrapper_works_for_Float()
