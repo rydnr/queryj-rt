@@ -127,8 +127,6 @@
           <outputDirectory>${project.build.directory}/generated-sources/org/acmsl/queryj/templates/packaging/antlr</outputDirectory>
         </configuration>
       </plugin>
-
     </plugins>
   </build>
-
 </project>
