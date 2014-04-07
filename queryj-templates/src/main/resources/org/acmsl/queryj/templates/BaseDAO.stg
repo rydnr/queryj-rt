@@ -307,7 +307,7 @@ fk_delete_method(foreignKey, table) ::= <<
  <foreignKey.attributes:{ a | <attribute_javadoc(name=a)>}; separator="\n">
  */
 <if(foreignKey.allowsNull)>
-public void discardRelationTo<foreignKey.target.voName>By<foreignKey.attributes:{attr |<attr.name.capitalized>};
+void discardRelationTo<foreignKey.target.voName>By<foreignKey.attributes:{attr |<attr.name.capitalized>};
                                                           separator="And">(
 <else>
 public void deleteBy<foreignKey.attributes:{attr |<attr.name.capitalized>};
