@@ -186,7 +186,7 @@ public interface <table.name.voName>DAO
      * @return such instance.
      */
     <notnull(C=C)>
-    public <table.name.voName> create(
+    <table.name.voName> create(
         <table.own.minus.externallyManagedAttributes:{ a | <attribute_declaration(attr=a, C=C)>}; separator=",\n">)
       throws DataAccessException;
 
@@ -195,7 +195,7 @@ public interface <table.name.voName>DAO
      <table.attributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
      * @return the number of {@code <table.name>} rows updated.
      */
-    public int update(
+    int update(
         <table.attributes:{ a | <attribute_declaration(attr=a, C=C)>}; separator=",\n">)
       throws DataAccessException;
 
@@ -203,7 +203,7 @@ public interface <table.name.voName>DAO
      * Deletes {@link <table.name.voName>} information.
      <table.primaryKey:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
      */
-    public void delete(<table.primaryKey:{ a | <attribute_declaration(attr=a, C=C)>}; separator=",\n">)
+    void delete(<table.primaryKey:{ a | <attribute_declaration(attr=a, C=C)>}; separator=",\n">)
         throws DataAccessException;
 
     <table.foreignKeys:{ fk | <fk_delete_method(foreignKey=fk, table=table)>}; separator="\n">
