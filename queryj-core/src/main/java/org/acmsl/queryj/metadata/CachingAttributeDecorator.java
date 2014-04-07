@@ -111,7 +111,7 @@ public class CachingAttributeDecorator
     private DecoratedString m__strCachedType;
 
     /**
-     * Whether is
+     * Whether is a primitive wrapper.
      */
     private Boolean m__bCachedIsPrimitiveWrapper;
 
