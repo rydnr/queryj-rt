@@ -361,7 +361,7 @@ custom_select_for_update(cs) ::= <<
  <cs.parameters:{ a | <attribute_javadoc(name=a)>}; separator="\n">
  * @return the \<i><cs.resultClass>\</i> information retrieved.
  */
-public <cs.resultClass> <cs.name.uncapitalized>(
+<cs.resultClass> <cs.name.uncapitalized>(
     <cs.parameters:{ a | <attribute_declaration(attr=a, C=C)>}; separator=",\n">)
   throws DataAccessException;
 >>
