@@ -193,7 +193,7 @@ public class CachingAttributeDecorator
      * Retrieves the cached <code>isPrimitive</code> value.
      * @return such value.
      */
-    public Boolean getCachedIsPrimitive()
+    public Boolean getCachedIsPrimitiveWrapper()
     {
         return m__bCachedIsPrimitive;
     }
