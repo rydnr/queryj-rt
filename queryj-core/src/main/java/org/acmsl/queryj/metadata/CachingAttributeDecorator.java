@@ -156,7 +156,6 @@ public class CachingAttributeDecorator
      * @return <code>false</code> if no primitive matches.
      */
     @Override
-    @Nullable
     public boolean isPrimitive()
     {
         Boolean result = getCachedIsPrimitive();
