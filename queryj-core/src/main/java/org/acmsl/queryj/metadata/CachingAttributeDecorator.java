@@ -210,7 +210,7 @@ public class CachingAttributeDecorator
     @Override
     public boolean isPrimitiveWrapper()
     {
-        Boolean result = getCachedIsPrimitive();
+        Boolean result = getCachedIsPrimitiveWrapper();
 
         if  (result == null)
         {
