@@ -316,8 +316,7 @@ public abstract class AbstractAttributeDecorator
      * @param metadataTypeManager the metadata type manager.
      * @return <code>false</code> if no primitive matches.
      */
-    @NotNull
-    protected Boolean isPrimitive(
+    protected boolean isPrimitive(
         final int type, @NotNull final MetadataTypeManager metadataTypeManager)
     {
         return
