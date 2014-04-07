@@ -77,4 +77,6 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals(Types.VARCHAR, instance.toJdbcType(Literals.VARCHAR2, 10, 0));
     }
+
+    /**
 }
