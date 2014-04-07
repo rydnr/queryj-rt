@@ -99,4 +99,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertTrue(instance.isPrimitiveWrapper(Float.class.getSimpleName()));
     }
+
+    /**
+     * Tests whether isPrimitiveWrapper() knows about Float class.
+     */
+    @Test
+    public void isPrimitiveWrapper_works_for_Float()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertTrue(instance.isPrimitiveWrapper(Float.class.getSimpleName()));
+    }
 }
