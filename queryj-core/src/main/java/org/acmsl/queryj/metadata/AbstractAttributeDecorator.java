@@ -304,8 +304,7 @@ public abstract class AbstractAttributeDecorator
      * Retrieves whether this attribute can be modelled as a primitive or not.
      * @return <code>false</code> if no primitive matches.
      */
-    @Nullable
-    public Boolean isPrimitive()
+    public boolean isPrimitive()
     {
         return isPrimitive(getTypeId(), getMetadataTypeManager());
     }
