@@ -40,7 +40,6 @@
       <groupId>org.acmsl.queryj</groupId>
       <artifactId>queryj-template-packaging</artifactId>
     </dependency>
-
     <dependency>
       <groupId>org.checkthread</groupId>
       <artifactId>checkthread-annotations</artifactId>
