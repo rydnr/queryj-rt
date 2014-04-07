@@ -175,7 +175,7 @@ public interface <table.name.voName>DAO
      * Persists {@link <table.name.voName>} information.
      <table.own.minus.externallyManagedAttributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
      */
-    public void insert(
+    void insert(
         <table.own.minus.externallyManagedAttributes:{ a | <attribute_declaration(attr=a, C=C)>}; separator=",\n">)
       throws DataAccessException;
 
