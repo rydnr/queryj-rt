@@ -1,5 +1,5 @@
 /*
-                        QueryJ
+                        QueryJ Test
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -33,7 +33,7 @@
  * Time: 8:25 PM
  *
  */
-package cucumber.templates.xml;
+package org.acmsl.queryj.test.xml;
 
 /*
  * Importing Jetbrains annotations.
