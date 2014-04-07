@@ -633,6 +633,10 @@ public class CachingAttributeDecorator
         return m__strCachedType;
     }
 
+    /**
+     * {@inheritDoc}
+     * @return
+     */
     @NotNull
     @Override
     public String toString()
