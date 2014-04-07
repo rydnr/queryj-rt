@@ -1620,7 +1620,7 @@ find_constant_methods(attribute, table, C) ::= <<
   @param table the table.
 !>
 /**
- * Loads \<i><table.name>\</i> information from the constant pool,
+ * Loads \<i><table.name>\</i> information from the pre-existing constants,
  * filtering by \<i><attribute.name>\</i>.
  * @param <attribute.name.lowercased> the \<i><attribute.name>\</i>
  * to filter.
