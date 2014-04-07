@@ -284,7 +284,7 @@ find_constant_by_pk(primaryKey, table, C) ::= <<
  * @return the {@link <table.name.voName>} instance.
  */
 <nullable(C=C)>
-<table.name.voName> findConstantByPrimaryKey(
+u<table.name.voName> findConstantByPrimaryKey(
     <primaryKey:{ attr | <attribute_declaration(attr=attr, C=C)>}; separator=",\n">);
 >>
 
