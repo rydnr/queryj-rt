@@ -295,7 +295,7 @@ find_constant_methods(attribute, table, C) ::= <<
   @param table the table.
 !>
 /**
- * Loads \<i><attribute.tableName>\</i> information from the constant pool,
+ * Loads \<i><table.name>\</i> information from the constant pool,
  * filtering by <attribute.name>.
  * @param <attribute.name.lowercased.uncapitalized> the <attribute.name>
  * value to filter.
