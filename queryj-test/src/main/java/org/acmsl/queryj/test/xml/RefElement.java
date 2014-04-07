@@ -42,7 +42,7 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Represents &lt;ref&gt; information in XML files.
- * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
+ * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2013/05/25
  */
