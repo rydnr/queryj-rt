@@ -50,7 +50,8 @@ import java.util.List;
 /**
  * Represents &lt;bean&gt; information in XML files.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
- * @since 2013/05/25
+ * @since 3.0
+ * Created: 2013/05/25
  */
 public class BeanElement
 {
