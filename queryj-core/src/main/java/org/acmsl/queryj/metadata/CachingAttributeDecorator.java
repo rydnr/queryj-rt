@@ -650,7 +650,7 @@ public class CachingAttributeDecorator
             + ", \"cachedStatementSetterFieldType\" : \"" + m__strCachedStatementSetterFieldType + '"'
             + ", \"cachedNumberSmallerThanInt\" : " + m__bCachedNumberSmallerThanInt
             + ", \"cachedType\" : '" + m__strCachedType + '"'
-            + ", \"cachedPrimitiveWrapper\" : '" + m__strCachedIsPrimitiveWrapper+ '"'
+            + ", \"cachedPrimitiveWrapper\" : '" + m__strCachedIsPrimitiveWrapper + '"'
             + " }";
     }
 }
