@@ -330,7 +330,7 @@ custom_select(cs) ::= <<
  * @return the \<i><cs.resultClass>\</i> information retrieved.
  */
 <if(cs.resultNullable)><nullable(C=C)><else><if(cs.result.multiple)><notnull(C=C)><endif><endif>
-public <cs.resultClass> <cs.name.uncapitalized>(
+<cs.resultClass> <cs.name.uncapitalized>(
     <cs.parameters:{ a | <attribute_declaration(attr=a, C=C)>}; separator=",\n">)
   throws DataAccessException;
 >>
