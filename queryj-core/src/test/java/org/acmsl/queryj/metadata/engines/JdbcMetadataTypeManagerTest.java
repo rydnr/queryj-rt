@@ -85,5 +85,7 @@ public class JdbcMetadataTypeManagerTest
     public void isString_works_for_CLOB()
     {
         @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertTrue()
     }
 }
