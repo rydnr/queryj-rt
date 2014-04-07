@@ -717,7 +717,7 @@ public abstract class AbstractAttributeDecorator
     {
         @Nullable final String result;
 
-        if (isPrimitive(typeId, type, true, metadataTypeManager))
+        if (isPrimitive(typeId, type, isNullable(), metadataTypeManager))
         {
             result = metadataTypeManager.getNativeType(typeId, true, isBool, precision);
         }
