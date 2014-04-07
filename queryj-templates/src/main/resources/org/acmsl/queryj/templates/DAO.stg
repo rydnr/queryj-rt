@@ -327,11 +327,7 @@ public <if(table.dynamicQueries)>abstract <endif>class <engine.name><table.name.
     @Override
     public List\<<table.name.voName\>> getStaticValues()
     {
-        <notnull(C=C)> final result = new ArrayList\<<table.name.voName>\>(FIXED_CONSTANTS.length);
-
-        result.addAll(Arrays.asList(FIXED_CONSTANTS));
-
-        return result;
+        return FIXED_CONSTANTS;
     }
 
 <if(table.primaryKey)>
