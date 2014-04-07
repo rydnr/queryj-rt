@@ -1186,6 +1186,7 @@ public class JdbcMetadataTypeManager
             case Types.BINARY:
             case Types.VARBINARY:
             case Types.LONGVARBINARY:
+            case Types.CLOB:
                 result = true;
                 break;
 
