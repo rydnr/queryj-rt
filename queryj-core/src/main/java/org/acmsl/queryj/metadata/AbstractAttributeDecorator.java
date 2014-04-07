@@ -325,6 +325,7 @@ public abstract class AbstractAttributeDecorator
             ?  Boolean.TRUE : Boolean.FALSE;
     }
 
+
     /**
      * Retrieves the object type.
      * @return such information.
