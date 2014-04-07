@@ -27,10 +27,6 @@
     <version>3.0-SNAPSHOT</version>
   </parent>
 
-  <prerequisites>
-    <maven>2.2.1</maven>
-  </prerequisites>
- 
   <dependencies>
     <dependency>
       <groupId>org.acmsl.queryj</groupId>
