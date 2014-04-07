@@ -89,7 +89,9 @@ public class JdbcMetadataTypeManagerTest
         Assert.assertTrue(instance.isString(Types.CLOB));
     }
 
-    l
+    /**
+     * Tests whether isPrimitiveWrapper() knows about Float class.
+     */
     @Test
     public void isPrimitiveWrapper_works_for_Float()
     {
