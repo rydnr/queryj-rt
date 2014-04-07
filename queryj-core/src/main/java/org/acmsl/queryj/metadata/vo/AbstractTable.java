@@ -107,7 +107,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
     private List<ForeignKey<V>> m__lForeignKeys;
 
     /**
-     * The attribute used to lamel static rows.
+     * The attribute used to label static rows.
      */
     private A m__Static;
 
