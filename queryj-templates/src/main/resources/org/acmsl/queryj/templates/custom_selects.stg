@@ -70,7 +70,7 @@ public <custom_select_return(cs=cs, table=table, result=cs.result, C=C)> <cs.nam
     <notnull(C=C)>final String sql = auditSql(<cs.id.normalized.uppercased>_SQL);
 
     <notnull(C=C)>final PreparedStatementCreatorFactory preparedStatementCreatorFactory =
-        new PreparedStatementCreatorFactory(t_strSql);
+        new PreparedStatementCreatorFactory(sql);
 
     <cs.parameters:{ p | <custom_select_parameter_type_specification(
       type=p.sqlType)>}; separator="\n">
@@ -358,7 +358,7 @@ transactionTemplate.execute(
 
 custom_select_return(cs, table, result, C) ::= <<
 <if(table.voDecorated)>
-<custom_select_return_decorated(cs=cs, result=result, C=C)>
+dec <custom_select_return_decorated(cs=cs, result=result, C=C)>
 <else><custom_select_return_nondecorated(cs=cs, result=result, C=C)><endif>
 >>
 
