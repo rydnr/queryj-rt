@@ -226,7 +226,7 @@ cached_constants(row, voName) ::= <<
  * The <row.name> {@link <voName>}.
  */
 <notnull(C=C)>
-public static final <voName> <row.name.normalized.uppercased> =
+static final <voName> <row.name.normalized.uppercased> =
     new <voName>ValueObject(
         <row.attributes:{ a | <attribute_specification(attr=a)>}; separator=",\n">);
 >>
