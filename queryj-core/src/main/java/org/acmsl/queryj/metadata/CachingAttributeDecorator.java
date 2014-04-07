@@ -635,7 +635,6 @@ public class CachingAttributeDecorator
 
     /**
      * {@inheritDoc}
-     * @return
      */
     @NotNull
     @Override
