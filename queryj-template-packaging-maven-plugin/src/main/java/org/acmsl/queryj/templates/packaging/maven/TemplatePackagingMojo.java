@@ -35,6 +35,7 @@ package org.acmsl.queryj.templates.packaging.maven;
 /*
  * Importing QueryJ Template Packaging Plugin.
  */
+import org.acmsl.queryj.templates.packaging.TemplatePackagingChain;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingSettings;
 
 /*
