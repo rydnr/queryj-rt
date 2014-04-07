@@ -39,6 +39,7 @@
     <dependency>
       <groupId>org.acmsl.queryj</groupId>
       <artifactId>queryj-template-packaging</artifactId>
+      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.checkthread</groupId>
