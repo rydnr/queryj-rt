@@ -36,7 +36,7 @@
 package org.acmsl.queryj.metadata.engines;
 
 /*
- * Importing QueryJ classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.Literals;
 
