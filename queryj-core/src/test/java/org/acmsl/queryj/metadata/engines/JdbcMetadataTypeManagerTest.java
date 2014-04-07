@@ -94,6 +94,6 @@ public class JdbcMetadataTypeManagerTest
     {
         @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
 
-        Assert.assertTrue(instance.isString(Types.CLOB));
+        Assert.assertTrue(instance.isPrimitiveWrapper(Float.class.getSimpleName());
     }
 }
