@@ -285,7 +285,9 @@ find_constant_by_pk(primaryKey, table, C) ::= <<
  */
 <nullable(C=C)>
 public <table.name.voName> findConstantByPrimaryKey(
-    <primaryKey:{ attr | <attribute_declaration(attr=attr, C=C)>}; separator=",\n">)
+    <primaryKey:{ attr | <attribute_declaration(attr=attr, C=C)>}; separator=",\n">);
+>>
+
 find_constant_methods(attribute, table, C) ::= <<
 <!
   Declares the methods to operate directly on defined constants.
