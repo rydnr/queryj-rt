@@ -203,7 +203,7 @@ public class CachingAttributeDecorator
      * @return <code>false</code> if no primitive matches.
      */
     @Override
-    public boolean isPrimitive()
+    public boolean isPrimitiveWrapper()
     {
         Boolean result = getCachedIsPrimitive();
 
