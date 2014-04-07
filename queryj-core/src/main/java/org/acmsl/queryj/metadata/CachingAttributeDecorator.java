@@ -640,7 +640,6 @@ public class CachingAttributeDecorator
         return
               "{ \"class\": \"" + CachingAttributeDecorator.class.getName() + '"'
             + ", \"super\": " + super.toString()
-/*
             + ", \"cachedIsClob\": \"" + m__bCachedIsClob + '"'
             + ", \"cachedIsPrimitive\" : " + m__bCachedIsPrimitive
             + ", \"cachedObjectType\" : " + m__strCachedObjectType
