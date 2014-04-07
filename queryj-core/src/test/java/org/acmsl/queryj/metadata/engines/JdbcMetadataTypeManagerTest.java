@@ -89,5 +89,9 @@ public class JdbcMetadataTypeManagerTest
         Assert.assertTrue(instance.isString(Types.CLOB));
     }
 
+    @Test
+    public void isPrimitiveWrapper_works_for_Float()
+    {
 
+    }
 }
