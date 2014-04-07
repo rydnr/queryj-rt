@@ -195,7 +195,7 @@ public class CachingAttributeDecorator
      */
     public Boolean getCachedIsPrimitiveWrapper()
     {
-        return m__bCachedIsPrimitive;
+        return m__bCachedIsPrimitiveWrapper;
     }
 
     /**
