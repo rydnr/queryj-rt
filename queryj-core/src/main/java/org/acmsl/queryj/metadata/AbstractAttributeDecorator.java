@@ -323,6 +323,10 @@ public abstract class AbstractAttributeDecorator
             ?  Boolean.TRUE : Boolean.FALSE;
     }
 
+    /**
+     * Retrieves whether
+     * @return
+     */
     public boolean isPrimitiveWrapper()
     {
         return isPrimitiveWrapper()getTypeId(), getMetadataTypeManager();
