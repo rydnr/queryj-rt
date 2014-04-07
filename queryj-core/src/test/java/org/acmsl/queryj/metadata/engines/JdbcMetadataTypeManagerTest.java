@@ -79,6 +79,11 @@ public class JdbcMetadataTypeManagerTest
     }
 
     /**
-     * Tests isString
+     * Tests isString() works for {@link Types.CLOB}.
      */
+    @Test
+    public void isString_works_for_CLOB()
+    {
+
+    }
 }
