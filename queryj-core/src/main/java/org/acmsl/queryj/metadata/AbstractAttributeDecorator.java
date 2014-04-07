@@ -711,6 +711,7 @@ public abstract class AbstractAttributeDecorator
     protected String getPrimitiveType(
         final int typeId,
         @NotNull final String type,
+        final boolean i
         final boolean isBool,
         final int precision,
         @NotNull final MetadataTypeManager metadataTypeManager)
