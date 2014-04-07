@@ -169,6 +169,53 @@ public class CachingAttributeDecorator
         return result;
     }
 
+
+    /**
+     * Specifies the cached <code>isPrimitive</code> value.
+     * @param value the value to cache.
+     */
+    protected final void immutableSetCachedIsPrimitive(
+        final Boolean value)
+    {
+        m__bCachedIsPrimitive = value;
+    }
+
+    /**
+     * Specifies the cached <code>isPrimitive</code> value.
+     * @param value the value to cache.
+     */
+    protected void setCachedIsPrimitive(final Boolean value)
+    {
+        immutableSetCachedIsPrimitive(value);
+    }
+
+    /**
+     * Retrieves the cached <code>isPrimitive</code> value.
+     * @return such value.
+     */
+    public Boolean getCachedIsPrimitive()
+    {
+        return m__bCachedIsPrimitive;
+    }
+
+    /**
+     * Retrieves whether this attribute can be modelled as a primitive or not.
+     * @return <code>false</code> if no primitive matches.
+     */
+    @Override
+    public boolean isPrimitive()
+    {
+        Boolean result = getCachedIsPrimitive();
+
+        if  (result == null)
+        {
+            result = super.isPrimitive();
+            setCachedIsPrimitive(result);
+        }
+
+        return result;
+    }
+
     /**
      * Specifies the cached object type.
      * @param value the value to cache.
