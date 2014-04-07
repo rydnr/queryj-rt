@@ -720,7 +720,7 @@ public abstract class AbstractAttributeDecorator
 
         if (isPrimitive(typeId, type, isNullable, metadataTypeManager))
         {
-            result = metadataTypeManager.getNativeType(typeId, true, isBool, precision);
+            result = metadataTypeManager.getNativeType(typeId, false, isBool, precision);
         }
         else
         {
