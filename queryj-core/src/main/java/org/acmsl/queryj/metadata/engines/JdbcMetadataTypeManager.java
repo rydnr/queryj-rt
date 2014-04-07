@@ -1445,6 +1445,10 @@ public class JdbcMetadataTypeManager
         {
             result = true;
         }
+        else
+        {
+            result = false;
+        }
 
         return result;
     }
