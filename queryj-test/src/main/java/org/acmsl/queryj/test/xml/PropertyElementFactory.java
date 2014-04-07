@@ -1,5 +1,5 @@
 /*
-                        QueryJ
+                        QueryJ Test
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -33,7 +33,7 @@
  * Time: 8:42 PM
  *
  */
-package cucumber.templates.xml;
+package org.acmsl.queryj.test.xml;
 
 /*
  * Importing Digester classes.
@@ -53,7 +53,7 @@ import org.jetbrains.annotations.Nullable;
 import org.xml.sax.Attributes;
 
 /**
- * Creates PropertyElements.
+ * Creates {@link PropertyElement}s.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
  * @since 2013/05/25
  */
