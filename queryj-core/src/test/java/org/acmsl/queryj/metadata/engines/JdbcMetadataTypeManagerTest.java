@@ -79,4 +79,6 @@ public class JdbcMetadataTypeManagerTest
     }
 
     /**
+     * Tests isString
+     */
 }
