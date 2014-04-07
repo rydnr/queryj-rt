@@ -166,10 +166,15 @@ public interface <table.name.voName>DAO
     <notnull(C=C)>
     List\<<table.name.voName\>> getStaticValues();
 
-    <table.attributes:{ a | <find_constant_methods(attribute=a, primaryKeyAttributes=table.primaryKey, voName=table.name.voName)>}; separator="\n\n">
+<if(table.primaryKey)>
+
+    <find_constant_by_pk(primaryKey=table.primaryKey, table=table, C=C)>
 <endif>
 
-    <find_by_primary_key(table=table, parent=table.parentTable, repository=C.repository, C=C)>
+    <table.own.minus.primaryKey.minus.readOnlyAttributes:{ attr | <find_constant_methods(attribute=attr, table=table, C=C)>}; separator="\n">
+
+    <find_by_primary_key(table=table, parent=parent, repository=repository, C=C)>
+<endif>
 
     /**
      * Persists {@link <table.name.voName>} information.
@@ -271,12 +276,11 @@ attribute_specification(attr) ::= <<
 <if(attr.string)>"<attr.value>"<else><attr.value><endif>
 >>
 
-find_constant_methods(attribute, primaryKeyAttributes, voName) ::= <<
+find_constant_methods(attribute, table, C) ::= <<
 <!
   Declares the methods to operate directly on defined constants.
-  @param attribute the static attribute.
-  @param primaryKeyAttributes the primary key attributes.
-  @param voName the value-object name.
+  @param attribute the attribute.
+  @param table the table.
 !>
 /**
  * Loads \<i><attribute.tableName>\</i> information from the constant pool,
@@ -286,7 +290,7 @@ find_constant_methods(attribute, primaryKeyAttributes, voName) ::= <<
  * @return the {@link <voName>} instance.
  */
 <notnull(C=C)>
-List\<<voName>\> findConstantsBy<attribute.name.capitalized>(<if(!attribute.primitive)><if(!attribute.primitiveWrapper)><notnull(C=C)><else><if(attribute.nullable)><notnull(C=C)><endif><endif><endif>final <attribute.primitiveType> <attribute.name.lowercased.uncapitalized>);
+List\<<table.name.voName>\> findConstantsBy<attribute.name.capitalized>(<if(!attribute.primitive)><if(!attribute.primitiveWrapper)><notnull(C=C)><else><if(attribute.nullable)><notnull(C=C)><endif><endif><endif>final <attribute.primitiveType> <attribute.name.lowercased.uncapitalized>);
 >>
 
 fk_delete_method(foreignKey, table) ::= <<
