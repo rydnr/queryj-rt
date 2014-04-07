@@ -15,7 +15,7 @@ Feature: G_CYCLE_TYPES code compiles
     | G_CYCLE_TYPES | G_LAST_DRAW_TYPE_ID | NUMBER | false | false | false |  |  | false | 22 | 0 |
     | G_CYCLE_TYPES | NUMBER_OF_WEEKS | NUMBER | false | false | false |  |  | false | 22 | 0 |
     | G_CYCLE_TYPES | BEFORE_SELL_DEFAULT | NUMBER | false | true | false |  |  | false | 22 | 0 |
-    | G_CYCLE_TYPES | BEFORE_SELL_CONF_KEY | VARCHAR2 | false | true | false |  |  | false | 50 | 0 |
+    | G_CYCLE_TYPES | BEFORE_SELL_CONF_KEY | CLOB | false | true | false |  |  | false | 50 | 0 |
     | G_CYCLE_TYPES | BEFORE_SELL_BO_DEFAULT | NUMBER | false | true | false |  |  | false | 22 | 0 |
     | G_CYCLE_TYPES | BEFORE_SELL_BO_CONF_KEY | VARCHAR2 | false | true | false |  |  | false | 50 | 0 |
     | G_CYCLE_TYPES | BEFORE_INTERRUPT_BO_DEFAULT | NUMBER | false | true | false |  |  | false | 22 | 0 |
