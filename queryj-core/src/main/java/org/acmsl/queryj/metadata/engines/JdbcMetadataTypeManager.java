@@ -1441,6 +1441,7 @@ public class JdbcMetadataTypeManager
         if  (   (Literals.INTEGER.equals(dataType))
              || ("Long".equals(dataType))
              || (Literals.DOUBLE_C.equals(dataType)))
+|| (Literals.DOUBLE_C.equals(dataType)))
         {
             result = true;
         }
