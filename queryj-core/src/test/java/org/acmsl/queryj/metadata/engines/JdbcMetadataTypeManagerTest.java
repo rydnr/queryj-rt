@@ -101,10 +101,10 @@ public class JdbcMetadataTypeManagerTest
     }
 
     /**
-     * Tests whether isPrimitiveWrapper() knows about Integer class.
+     * Tests whether isPrimitiveWrapper() knows about Long class.
      */
     @Test
-    public void isPrimitiveWrapper_works_for_Integer()
+    public void isPrimitiveWrapper_works_for_Long()
     {
         @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
 
