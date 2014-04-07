@@ -157,7 +157,7 @@ public class CachingAttributeDecorator
      */
     @Override
     @Nullable
-    public Boolean isPrimitive()
+    public boolean isPrimitive()
     {
         Boolean result = getCachedIsPrimitive();
 
