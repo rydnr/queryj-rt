@@ -329,7 +329,7 @@ public abstract class AbstractAttributeDecorator
      */
     public boolean isPrimitiveWrapper()
     {
-        return isPrimitiveWrapper(retrieveType(), getMetadataTypeManager();
+        return isPrimitiveWrapper(retrieveType(), getMetadataTypeManager());
     }
 
     /**
