@@ -214,8 +214,8 @@ public class CachingAttributeDecorator
 
         if  (result == null)
         {
-            result = super.isPrimitive();
-            setCachedIsPrimitive(result);
+            result = super.isPrimitiveWrapper();
+            setCachedIsPrimitiveWrapper(result);
         }
 
         return result;
