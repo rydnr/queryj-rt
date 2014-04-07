@@ -1439,7 +1439,7 @@ public class JdbcMetadataTypeManager
         boolean result = false;
 
         if  (   (Literals.INTEGER.equals(dataType))
-             || ("Long".equals(dataType))
+             || (Long.class.getSimpleName().equals(dataType))
              || (Float.class.getSimpleName().equals(dataType))
              || (Double.class.getSimpleName().equals(dataType)))
         {
