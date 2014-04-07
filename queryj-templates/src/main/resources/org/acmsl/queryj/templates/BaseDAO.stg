@@ -299,7 +299,7 @@ find_constant_methods(attribute, table, C) ::= <<
  * filtering by <attribute.name>.
  * @param <attribute.name.lowercased.uncapitalized> the <attribute.name>
  * value to filter.
- * @return the {@link <table.name.voName>} instance.
+ * @return the list of {@link <table.name.voName>} instances with given <attribute.name>.
  */
 <notnull(C=C)>
 List\<<table.name.voName>\> findConstantsBy<attribute.name.capitalized>(<if(!attribute.primitive)><if(!attribute.primitiveWrapper)><notnull(C=C)><else><if(attribute.nullable)><notnull(C=C)><endif><endif><endif>final <attribute.primitiveType> <attribute.name.lowercased.uncapitalized>);
