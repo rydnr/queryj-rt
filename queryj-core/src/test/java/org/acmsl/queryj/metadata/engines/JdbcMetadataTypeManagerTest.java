@@ -101,6 +101,17 @@ public class JdbcMetadataTypeManagerTest
     }
 
     /**
+     * Tests whether isPrimitiveWrapper() knows about Double class.
+     */
+    @Test
+    public void isPrimitiveWrapper_works_for_Double()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertTrue(instance.isPrimitiveWrapper(Double.class.getSimpleName()));
+    }
+
+    /**
      * Tests whether isPrimitiveWrapper() knows about Float class.
      */
     @Test
