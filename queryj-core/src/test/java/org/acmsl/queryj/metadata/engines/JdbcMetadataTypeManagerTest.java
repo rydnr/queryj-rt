@@ -108,7 +108,7 @@ public class JdbcMetadataTypeManagerTest
     {
         @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
 
-        Assert.assertTrue(instance.isPrimitiveWrapper(Integer.class.getSimpleName()));
+        Assert.assertTrue(instance.isPrimitiveWrapper(Long.class.getSimpleName()));
     }
 
     /**
