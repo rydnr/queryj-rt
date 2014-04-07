@@ -259,7 +259,7 @@ find_by_primary_key(table, parent, repository, C) ::= <<
 <if(table.voDecorated)>
 <table.name.voName>Decorator findByPrimaryKey(<table.primaryKey:{ attr | <attribute_declaration(attr=attr, C=C)>}; separator=",\n">);
 <else>
-public <table.name.voName> findByPrimaryKey(<table.primaryKey:{ attr | <attribute_declaration(attr=attr, C=C)>}; separator=",\n">);
+<table.name.voName> findByPrimaryKey(<table.primaryKey:{ attr | <attribute_declaration(attr=attr, C=C)>}; separator=",\n">);
 <endif>
 >>
 
