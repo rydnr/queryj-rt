@@ -1465,7 +1465,7 @@ public class JdbcMetadataTypeManager
      * @param dataType the data type.
      * @return <code>true</code> if such data type can be managed as a
      * Clob.
-     * @param <T> the
+     * @param <T> the type.
      */
     @Override
     public <T> boolean isClob(@NotNull final T dataType)
