@@ -1627,11 +1627,9 @@ find_constant_methods(attribute, table, C) ::= <<
  * @return the {@link <table.name.voName>} instance.
  */
 <notnull(C=C)>
-List<voName> findConstantBy<attribute.name.capitalized>(<if(!attribute.primitive)><if(!attribute.primitiveWrapper)><notnull(C=C)><else><if(attribute.nullable)><notnull(C=C)><endif><endif><endif>final <attribute.primitiveType> <attribute.name.lowercased.uncapitalized>);
-public List\<<table.name.voName>\> findConstantBy<attribute.name.capitalized>(
-    <type_checker(attribute=attribute, C=C)>final <attribute.javaType> <attribute.name.lowercased>)
+public List\<<table.name.voName>\> findConstantBy<attribute.name.capitalized>(<if(!attribute.primitive)><if(!attribute.primitiveWrapper)><notnull(C=C)><else><if(attribute.nullable)><notnull(C=C)><endif><endif><endif>final <attribute.primitiveType> <attribute.name.lowercased.uncapitalized>);
 {
-    <notnull(C=C)>final List\<<table.name.voName>\> result = new ArrayList\<<table.name.voName>\>(FIXED_CONSTANTS.length);
+    <notnull(C=C)>final List\<<table.name.voName>\> result = new ArrayList\<<table.name.voName>\>(FIXED_CONSTANTS.size());
 
     for  (<nullable(C=C)>final <table.name.voName> item : FIXED_CONSTANTS)
     {
