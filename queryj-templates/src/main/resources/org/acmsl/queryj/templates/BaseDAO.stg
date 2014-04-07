@@ -171,7 +171,7 @@ public interface <table.name.voName>DAO
     <find_constant_by_pk(primaryKey=table.primaryKey, table=table, C=C)>
 <endif>
 
-    <table.own.minus.primaryKey.minus.readOnlyAttributes:{ attr | <find_constant_methods(attribute=attr, table=table, C=C)>}; separator="\n">
+    <table.own.minus.primaryKey.minus.readOnlyAttributes:{ attr | <find_constant_methods(attribute=attr, table=table, C=C)>}; separator="\n\n">
 
     <find_by_primary_key(table=table, parent=table.parentTable, repository=C.repository, C=C)>
 <endif>
