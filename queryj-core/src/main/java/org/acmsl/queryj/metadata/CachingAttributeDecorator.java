@@ -58,6 +58,9 @@ import org.jetbrains.annotations.Nullable;
 public class CachingAttributeDecorator
     extends  AbstractAttributeDecorator
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = 7937414826592045025L;
 
     /**
