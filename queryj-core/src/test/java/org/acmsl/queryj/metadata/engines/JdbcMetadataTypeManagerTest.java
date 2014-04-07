@@ -86,6 +86,6 @@ public class JdbcMetadataTypeManagerTest
     {
         @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
 
-        Assert.assertTrue(instance.isString())
+        Assert.assertTrue(instance.isString(Types.CLOB));
     }
 }
