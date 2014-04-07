@@ -325,7 +325,7 @@ public abstract class AbstractAttributeDecorator
             ?  Boolean.TRUE : Boolean.FALSE;
     }
 
-
+    public Boolean isPrimitiveWrapper()
     /**
      * Retrieves the object type.
      * @return such information.
