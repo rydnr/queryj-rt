@@ -333,7 +333,7 @@ public abstract class AbstractAttributeDecorator
     }
 
     /**
-     * Retrieves whether the type of thi attribute is a primitive wrapper or not.
+     * Retrieves whether type of thi attribute is a primitive wrapper or not.
      * @param type the type.
      * @param metadataTypeManager the {@link MetadataTypeManager}.
      * @return {@code true} in such case.
