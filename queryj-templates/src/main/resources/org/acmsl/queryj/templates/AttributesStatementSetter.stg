@@ -172,7 +172,7 @@ public class <table.name.voName>AttributesStatementSetter
      * @param updateOperation whether the operation is an update.
      */
     public <table.name.voName>AttributesStatementSetter(
-        <table.attributes:{ a | <attribute_declaration(attribute=a)>};
+        <table.attributes:{ a | <attribute_method_parameter_declaration(attribute=a)>};
           separator="\n">
         final boolean updateOperation)
     {
@@ -194,7 +194,7 @@ public class <table.name.voName>AttributesStatementSetter
      * @param updateOperation whether the operation is an update.
      */
     public <table.name.voName>AttributesStatementSetter(
-        <table.own.minus.primaryKey:{ a | <attribute_declaration(attribute=a)>};
+        <table.own.minus.primaryKey:{ a | <attribute_method_parameter_declaration(attribute=a)>};
           separator="\n">
         final boolean updateOperation)
     {
