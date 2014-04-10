@@ -188,7 +188,7 @@ attribute_setter(attribute) ::= <<
  @param attribute the attribute.
 !>
 /**
- * Specifies the \<i\><attribute.name>\</i\> value.
+ * Specifies the \<i\><attribute.name>\</i> value.
  * @param value such information.
  */
 protected final void immutableSet<attribute.name.capitalized>(<if(!attribute.strictlyPrimitive)><notnull(C=C)><endif>final <attribute.javaType> value)
@@ -197,7 +197,7 @@ protected final void immutableSet<attribute.name.capitalized>(<if(!attribute.str
 }
 
 /**
- * Specifies the \<i\><attribute.name>\</i\> value.
+ * Specifies the \<i\><attribute.name>\</i> value.
  * @param value such information.
  */
 @SuppressWarnings("unused")
@@ -213,7 +213,7 @@ attribute_getter(attribute) ::= <<
  @param attribute the attribute.
 !>
 /**
- * Retrieves the \<i\><attribute.name>\</i\> value.
+ * Retrieves the \<i\><attribute.name>\</i> value.
  * @return such information.
  */
 <if(attribute.allowsNull)>
@@ -228,7 +228,7 @@ protected final <attribute.javaType> immutableGet<attribute.name.capitalized>()
 }
 
 /**
- * Retrieves the \<i\><attribute.name>\</i\> value.
+ * Retrieves the \<i\><attribute.name>\</i> value.
  * @return such information.
  */
 @Override
