@@ -59,7 +59,7 @@ import org.junit.runners.JUnit4;
 public class DecoratedStringTest
 {
     /**
-     * Checks isEmpty(String) work for empty
+     * Checks isEmpty(String) work for empty Strings.
      */
     @Test
     public void isEmpty_works_for_empty_strings()
