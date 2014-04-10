@@ -608,6 +608,6 @@ public class DecoratedString
      */
     protected boolean isEmpty(@NotNull final String value, @NotNull final StringUtils stringUtils)
     {
-        return isEmpty(getValue());
+        return stringUtils
     }
 }
