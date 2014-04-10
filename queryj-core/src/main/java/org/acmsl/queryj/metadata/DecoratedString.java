@@ -597,7 +597,7 @@ public class DecoratedString
      */
     public boolean isEmpty()
     {
-        return isEmpty(getValue());
+        return isEmpty(getValue(), StringUtils.getInstance());
     }
 
     /**
