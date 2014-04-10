@@ -217,9 +217,9 @@ attribute_getter(attribute) ::= <<
  * @return such information.
  */
 <if(attribute.allowsNull)>
-protected final <attribute.objectType> immutableGet<attribute.name.capitalized>()
+protected final <if(!attribute.strictlyPrimitive)><nullable(C=C)><endif><attribute.objectType> immutableGet<attribute.name.capitalized>()
 <else>
-protected final <attribute.javaType> immutableGet<attribute.name.capitalized>()
+protected final <if(!attribute.strictlyPrimitive)><notnull(C=C)><endif><attribute.javaType> immutableGet<attribute.name.capitalized>()
 <endif>
 {
     return m__<attribute.name.capitalized>;
@@ -229,10 +229,11 @@ protected final <attribute.javaType> immutableGet<attribute.name.capitalized>()
  * Retrieves the \<i\><attribute.name>\</i\> value.
  * @return such information.
  */
+@Override
 <if(attribute.allowsNull)>
-public <attribute.objectType> get<attribute.name.capitalized>()
+public <if(!attribute.strictlyPrimitive)><nullable(C=C)><endif><attribute.objectType> get<attribute.name.capitalized>()
 <else>
-public <attribute.javaType> get<attribute.name.capitalized>()
+public <if(!attribute.strictlyPrimitive)><notnull(C=C)><endif><attribute.javaType> get<attribute.name.capitalized>()
 <endif>
 {
 <if(attribute.date)>
