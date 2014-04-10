@@ -107,22 +107,21 @@ class(table, C) ::= <<
 public interface <table.name.voName>
     extends Serializable
 {
-    <input.attributes:attribute_declaration(attribute=it);
-     separator="\n\n">
+    <table.attributes:{ a | <attribute_declaration(attribute=a)>}; separator="\n\n">;
 
     /**
      * Creates a \<code\>Abstract<input.vo_name>ValueObject\</code> instance.
-     <input.attributes:attribute_javadoc(attribute=it); separator="\n">
+     <table.attributes:{ a | <attribute_javadoc(attribute=a)>}; separator="\n">
      */
-    public Abstract<input.vo_name>ValueObject(
-        <input.attributes:attribute_method_declaration(attribute=it);
+    public Abstract<table.name.voName>ValueObject(
+        <table.attributes:{ a | <attribute_method_declaration(attribute=a)>};
           separator=",\n">)
     {
-        <input.attributes:immutable_setter_call(attribute=it);
+        <table.attributes:{ a | <immutable_setter_call(attribute=a)>};
           separator="\n">
     }
 
-    <input.attributes:attribute_accessors(attribute=it);
+    <table.attributes:{ a | <attribute_accessors(attribute=a)>};
      separator="\n\n">
 }
 >>
@@ -136,9 +135,9 @@ attribute_declaration(attribute) ::= <<
  * The \<i\><attribute.name>\</i\> value.
  */
 <if(attribute.allowsNull)>
-private <attribute.objectType> m__<attribute.nameCapitalized>;
+private <attribute.objectType> m__<attribute.name.capitalized>;
 <else>
-private <attribute.javaType> m__<attribute.nameCapitalized>;
+private <attribute.javaType> m__<attribute.name.capitalized>;
 <endif>
 
 >>
@@ -148,7 +147,7 @@ attribute_javadoc(attribute) ::= <<
  Writes the Javadoc for given attribute.
  @param attribute the attribute.
 !>
-* @param <attribute.nameUncapitalized> the \<i\><attribute.nameCapitalized>\</i> value.
+* @param <attribute.name.uncapitalized> the \<i\><attribute.name.capitalized>\</i> value.
 >>
 
 attribute_method_declaration(attribute) ::= <<
@@ -157,9 +156,9 @@ attribute_method_declaration(attribute) ::= <<
  @param attribute the attribute.
 !>
 <if(attribute.allowsNull)>
-final <attribute.objectType> <attribute.nameUncapitalized>
+final <attribute.objectType> <attribute.name.uncapitalized>
 <else>
-final <attribute.javaType> <attribute.nameUncapitalized>
+final <attribute.javaType> <attribute.name.uncapitalized>
 <endif>
 
 >>
@@ -169,7 +168,7 @@ immutable_setter_call(attribute) ::= <<
  Writes the method call for the immutable setter of given attribute.
  @param attribute the attribute.
 !>
-immutableSet<attribute.nameCapitalized>(<attribute.nameUncapitalized>);
+immutableSet<attribute.name.capitalized>(<attribute.name.uncapitalized>);
 <endif>
 
 >>
@@ -193,9 +192,9 @@ attribute_setter(attribute) ::= <<
  * @param value such information.
  */
 <if(attribute.allowsNull)>
-protected final void immutableSet<attribute.nameCapitalized>(final <attribute.objectType> value)
+protected final void immutableSet<attribute.name.capitalized>(final <attribute.objectType> value)
 <else>
-protected final void immutableSet<attribute.nameCapitalized>(final <attribute.javaType> value)
+protected final void immutableSet<attribute.name.capitalized>(final <attribute.javaType> value)
 <endif>
 
 {
@@ -207,13 +206,13 @@ protected final void immutableSet<attribute.nameCapitalized>(final <attribute.ja
  * @param value such information.
  */
 <if(attribute.allowsNull)>
-protected void set<attribute.nameCapitalized>(final <attribute.objectType> value)
+protected void set<attribute.name.capitalized>(final <attribute.objectType> value)
 <else>
-protected void set<attribute.nameCapitalized>(final <attribute.javaType> value)
+protected void set<attribute.name.capitalized>(final <attribute.javaType> value)
 <endif>
 
 {
-    immutableSet<attribute.nameCapitalized>(value);
+    immutableSet<attribute.name.capitalized>(value);
 }
 >>
 
@@ -227,24 +226,24 @@ attribute_getter(attribute) ::= <<
  * @return such information.
  */
 <if(attribute.allowsNull)>
-protected final <attribute.objectType> immutableGet<attribute.nameCapitalized>()
+protected final <attribute.objectType> immutableGet<attribute.name.capitalized>()
 <else>
-protected final <attribute.javaType> immutableGet<attribute.nameCapitalized>()
+protected final <attribute.javaType> immutableGet<attribute.name.capitalized>()
 <endif>
 
 {
-    return m__<attribute.nameCapitalized>;
+    return m__<attribute.name.capitalized>;
 }
 
 <if(attribute.allowsNull)>
-public <attribute.objectType> get<attribute.nameCapitalized>()
+public <attribute.objectType> get<attribute.name.capitalized>()
 <else>
-public <attribute.javaType> get<attribute.nameCapitalized>()
+public <attribute.javaType> get<attribute.name.capitalized>()
 <endif>
 
 {
 <if(attribute.date)>
-    Date result = immutableGet<attribute.nameCapitalized>();
+    Date result = immutableGet<attribute.name.capitalized>();
 
     if  (result != null)
     {
@@ -253,7 +252,7 @@ public <attribute.javaType> get<attribute.nameCapitalized>()
 
     return result;
 <else>
-    return immutableGet<attribute.nameCapitalized>();
+    return immutableGet<attribute.name.capitalized>();
 <endif>
 
 }
