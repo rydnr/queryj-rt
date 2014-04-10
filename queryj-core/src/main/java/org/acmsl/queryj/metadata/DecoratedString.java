@@ -597,6 +597,6 @@ public class DecoratedString
      */
     public boolean isEmpty()
     {
-        return false;
+        return isEmpty(getValue());
     }
 }
