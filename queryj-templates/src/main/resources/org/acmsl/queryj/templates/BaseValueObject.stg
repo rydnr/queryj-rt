@@ -317,12 +317,12 @@ public int hashcode()
 {
     final int result;
 
-    final int tableNameHashCode = "<table.name>".hashcode();
+    final int classHashCode = Abstract<Table.name.voName>.class.hashcode();
 
     <table.attributes:{ a | <attribute_hashcode(attribute=a)>}; separator="\n">
 
     result =
-          tableNameHashCode
+          classHashCode
         <table.attributes:{ a |+ <a.name.uncapitalized>HashCode}; separator="\n">;
 
     return result;
