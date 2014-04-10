@@ -43,8 +43,8 @@ Feature: G_CYCLE_TYPES code compiles
 
     Examples:
       | template | output |
-      | ValueObject | GCycleValueObject.java |
-#      | BaseValueObject | GCycle.java |
+#      | ValueObject | GCycleTypeValueObject.java |
+      | BaseValueObject | GCycleType.java |
 #      | BaseDAO | GCycleTypeDAO.java |
 #      | DAO | OracleGCycleTypeDAO.java |
 
