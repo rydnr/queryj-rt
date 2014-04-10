@@ -167,8 +167,7 @@ immutable_setter_call(attribute) ::= <<
 if (<attribute.name.uncapitalized> != null)
 {
     immutableSet<attribute.name.capitalized>(<attribute.name.uncapitalized>);
-}
-<else>immutableSet<attribute.name.capitalized>(<attribute.name.uncapitalized>);<endif>
+}<else>immutableSet<attribute.name.capitalized>(<attribute.name.uncapitalized>);<endif>
 <else>immutableSet<attribute.name.capitalized>(<attribute.name.uncapitalized>);<endif>
 >>
 
