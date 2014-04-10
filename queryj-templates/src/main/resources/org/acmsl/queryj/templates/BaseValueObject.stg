@@ -169,11 +169,9 @@ if (<attribute.name.uncapitalized> != null)
     immutableSet<attribute.name.capitalized>(<attribute.name.uncapitalized>);
 }
 <else>
-immutableSet<attribute.name.capitalized>(<attribute.name.uncapitalized>);
-<endif>
+immutableSet<attribute.name.capitalized>(<attribute.name.uncapitalized>);<endif>
 <else>
-immutableSet<attribute.name.capitalized>(<attribute.name.uncapitalized>);
-<endif>
+immutableSet<attribute.name.capitalized>(<attribute.name.uncapitalized>);<endif>
 >>
 
 attribute_accessors(attribute) ::= <<
