@@ -65,7 +65,6 @@ sourceImpl(table, C) ::= <<
   template="org/acmsl/queryj/templates/ValueObject.stg",
   C=C)><endif>
 <package_declaration(p=C.package)>
-
 <checkers_import(C=C)>
 <if(C.implement_markers)>
 
