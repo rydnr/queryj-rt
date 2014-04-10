@@ -66,7 +66,7 @@ sourceImpl(table, C) ::= <<
   C=C)><endif>
 <package_declaration(p=C.package)>
 
-<imports(table=table)>
+<checkers_import(C=C)>
 <if(C.implement_markers)>
 
 /*
@@ -93,14 +93,6 @@ description(table) ::= <<
   @param result the custom result.
 !>
 <if(table.comment.empty)>ValueObject for <table.name>.<else><table.comment><endif>
->>
-
-imports(table) ::= <<
-<!
-  Generates the imports for the attributes' types.
-  @param table the table.
-!>
-<table.attributeTypes:{ t | import <t>;} ; separator="\n">
 >>
 
 class(table, C) ::= <<
