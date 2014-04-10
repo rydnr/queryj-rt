@@ -602,6 +602,8 @@ public class DecoratedString
 
     /**
      * Checks whether the value is empty.
+     * @param value the value.
+     * @param stringUtils the {@link StringUtils} instance..
      * @return {@code true} in such case.
      */
     protected boolean isEmpty(@NotNull final String value, @NotNull final StringUtils stringUtils)
