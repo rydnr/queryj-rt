@@ -172,5 +172,5 @@ attribute_member_declaration(attribute) ::= <<
  * <if(attribute.comment.empty)>The \<i><attribute.name>\</i> information<else><attribute.comment><endif>.
  */
 <if(!attribute.strictlyPrimitive)><if(attribute.allowsNull)><nullable(C=C)><else><notnull(C=C)><endif><endif>
-private <attr.javaType> <attr.name.uncapitalized>;
+private <attribute.javaType> <attribute.name.uncapitalized>;
 >>
