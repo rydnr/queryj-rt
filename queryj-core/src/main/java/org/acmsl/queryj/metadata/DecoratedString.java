@@ -591,6 +591,10 @@ public class DecoratedString
         return new DecoratedString(result);
     }
 
+    /**
+     * Checks whether the value is empty.
+     * @return {@code true} in such case.
+     */
     public boolean isEmpty()
     {
         return false;  //To change body of created methods use File | Settings | File Templates.
