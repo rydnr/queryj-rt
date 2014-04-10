@@ -10,5 +10,6 @@
 *** TODO ValueObjectFactory.stg
 *** TODO BaseDAO.stg 
 *** TODO DAO.stg
+*** TODO AttributeStatementSetter.stg
 ** Nest QueryJs, overriding only such templates:
 
