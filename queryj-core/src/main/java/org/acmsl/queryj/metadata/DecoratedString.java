@@ -599,4 +599,13 @@ public class DecoratedString
     {
         return isEmpty(getValue());
     }
+
+    /**
+     * Checks whether the value is empty.
+     * @return {@code true} in such case.
+     */
+    public boolean isEmpty()
+    {
+        return isEmpty(getValue());
+    }
 }
