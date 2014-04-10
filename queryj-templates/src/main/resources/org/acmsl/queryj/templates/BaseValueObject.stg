@@ -111,6 +111,11 @@ class(table, C) ::= <<
 public abstract class Abstract<table.name.voName>
     extends Serializable
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = <C.serialVersionUID>;
+
     <table.attributes:{ a | <attribute_declaration(attribute=a)>}; separator="\n\n">
 
     /**
