@@ -221,7 +221,6 @@ protected final <attribute.objectType> immutableGet<attribute.name.capitalized>(
 <else>
 protected final <attribute.javaType> immutableGet<attribute.name.capitalized>()
 <endif>
-
 {
     return m__<attribute.name.capitalized>;
 }
@@ -235,7 +234,6 @@ public <attribute.objectType> get<attribute.name.capitalized>()
 <else>
 public <attribute.javaType> get<attribute.name.capitalized>()
 <endif>
-
 {
 <if(attribute.date)>
     Date result = immutableGet<attribute.name.capitalized>();
