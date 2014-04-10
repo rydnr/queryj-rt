@@ -38,12 +38,23 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.metadata.vo.Attribute;
+import org.acmsl.queryj.metadata.vo.AttributeValueObject;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Assert;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
+import org.powermock.api.easymock.PowerMock;
+import org.powermock.modules.junit4.PowerMockRunner;
+
+import java.sql.Types;
 
 /**
  *
@@ -51,7 +62,41 @@ import org.checkthread.annotations.ThreadSafe;
  * @since 3.0
  * Created: 2014/04/10 11:30
  */
-@ThreadSafe
+@RunWith(PowerMockRunner.class)
 public class AbstractAttributeDecoratorTest
 {
+    @Test
+    public void isStrictlyPrimitive_works_for_primitives()
+    {
+        @NotNull final MetadataManager metadataManager =
+            EasyMock.createNiceMock(MetadataManager.class);
+
+        @NotNull final Attribute<String> attribute =
+            new AttributeValueObject(
+                "name",
+                Types.BIGINT,
+                "long",
+                "tableName",
+                "comment",
+                1,
+                10, // length
+                1, // precision
+                null, // keyword
+                null, // retrieval query
+                null, // sequence
+                false, // nullable
+                null, // value
+                false, // read-only
+                false, // is-bool
+                null, // boolean-true
+                null, // boolean-false
+                null); // boolean-null
+
+        @NotNull final AbstractAttributeDecorator instance =
+            new AbstractAttributeDecorator(
+                attribute,
+                metadataManager) {};
+
+        Assert.assertTrue(instance.isStrictlyPrimitive());
+    }
 }
