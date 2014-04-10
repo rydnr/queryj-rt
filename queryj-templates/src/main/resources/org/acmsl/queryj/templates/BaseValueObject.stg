@@ -102,9 +102,7 @@ class(table, C) ::= <<
       description(table=table)
     ]:{line |<line>}; separator="\n * ">
 <class_common_javadoc(
-  template="org/acmsl/queryj/templates/BaseValueObject.stg",
-  generation_timestamps_enabled=C.generation_timestamps_enabled,
-  timestamp=C.timestamp)>
+  template="org/acmsl/queryj/templates/BaseValueObject.stg", C=C)>
  */
 public interface <table.name.voName>
     extends Serializable
