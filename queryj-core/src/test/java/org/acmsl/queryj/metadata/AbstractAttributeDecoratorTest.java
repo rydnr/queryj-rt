@@ -38,6 +38,7 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.AttributeValueObject;
 import org.easymock.EasyMock;
@@ -72,7 +73,7 @@ public class AbstractAttributeDecoratorTest
             EasyMock.createNiceMock(MetadataManager.class);
 
         @NotNull final MetadataTypeManager metadataTypeManager =
-            EasyMock.createNiceMock(MetadataTypeManager.class);
+            new JdbcMetadataTypeManager();
 
         EasyMock.expect(metadataManager.getMetadataTypeManager()).andReturn(metadataTypeManager);
 
