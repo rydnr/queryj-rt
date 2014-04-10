@@ -69,6 +69,9 @@ public class DecoratedStringTest
         Assert.assertTrue(instance.isEmpty());
     }
 
+    /**
+     * Checks isEmpty(String) work for empty Strings.
+     */
     @Test
     public void isEmpty_works_for_blank_strings()
     {
