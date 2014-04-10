@@ -110,7 +110,7 @@ public interface <table.name.voName>
     <table.attributes:{ a | <attribute_declaration(attribute=a)>}; separator="\n\n">;
 
     /**
-     * Creates a \<code\>Abstract<input.vo_name>ValueObject\</code> instance.
+     * Creates a \<code>Abstract<table.name.voName>ValueObject\</code> instance.
      <table.attributes:{ a | <attribute_javadoc(attribute=a)>}; separator="\n">
      */
     public Abstract<table.name.voName>ValueObject(
