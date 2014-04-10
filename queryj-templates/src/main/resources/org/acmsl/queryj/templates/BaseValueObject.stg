@@ -190,7 +190,7 @@ protected final void immutableSet<attribute.name.capitalized>(final <attribute.o
 protected final void immutableSet<attribute.name.capitalized>(final <attribute.javaType> value)
 <endif>
 {
-    m__<attribute.name.capitalized> = value;
+    this.m__<attribute.name.capitalized> = value;
 }
 
 /**
