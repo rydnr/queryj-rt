@@ -18,7 +18,7 @@
 
 ** Implement those templates ASAP:
 *** DONE ValueObject.stg #469: 4 -> 4
-*** BaseValueObject.stg #470: 3 -> 3
+*** DONE BaseValueObject.stg #470: 3 -> 3
 *** ValueObjectFactory.stg #471: 1 ->
 *** AttributesStatementSetter.stg: 1 ->
 
