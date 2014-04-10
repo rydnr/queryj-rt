@@ -107,7 +107,7 @@ class(table, C) ::= <<
 <class_common_javadoc(
   template="org/acmsl/queryj/templates/BaseValueObject.stg", C=C)>
  */
-public interface <table.name.voName>
+public abstract class Abstract<table.name.voName>
     extends Serializable
 {
     <table.attributes:{ a | <attribute_declaration(attribute=a)>}; separator="\n">
@@ -300,7 +300,7 @@ tostring_method(table, C) ::= <<
 @Override
 public String toString()
 {
-    StringBuilder result = new StringBuilder("{ \class\": \"<table.name.voName>");
+    StringBuilder result = new StringBuilder("{ \class\": \"Abstract<table.name.voName>");
 
     <table.attributes:{ a | <attribute_toString(attribute=a)>}; separator="\n">
     result.append(", \"package\": \"<C.package>\" }");
