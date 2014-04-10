@@ -108,6 +108,7 @@ class(table, C) ::= <<
   template="org/acmsl/queryj/templates/BaseValueObject.stg", C=C)>
  */
 public interface <table.name.voName>
+    extends Serializable
 {
     <table.attributes:{ a | <attribute_declaration(attribute=a)>}; separator="\n">
 
