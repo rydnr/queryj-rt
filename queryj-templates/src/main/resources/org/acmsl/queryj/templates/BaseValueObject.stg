@@ -139,7 +139,6 @@ private <attribute.objectType> m__<attribute.name.capitalized>;
 <else>
 private <attribute.javaType> m__<attribute.name.capitalized>;
 <endif>
-
 >>
 
 attribute_javadoc(attribute) ::= <<
