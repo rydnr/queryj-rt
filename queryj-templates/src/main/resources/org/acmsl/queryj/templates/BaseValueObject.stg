@@ -42,7 +42,7 @@ import "queryj.stg"
 
 source(C) ::= <<
 <!
-  Defines the rules to generate value object interfaces.
+  Defines the rules to generate abstract value object implementations.
   @param C the context.
 !>
 <sourceImpl(table=C.table, C=C)>
@@ -50,7 +50,7 @@ source(C) ::= <<
 
 sourceImpl(table, C) ::= <<
 <!
-  Defines the rules to generate value object interfaces.
+  Defines the rules to generate abstract value object implementations.
   @param table the table.
   @param C the context.
 !>
@@ -119,7 +119,7 @@ public abstract class Abstract<table.name.voName>
     <table.attributes:{ a | <attribute_declaration(attribute=a)>}; separator="\n\n">
 
     /**
-     * Creates a \<code>Abstract<table.name.voName>ValueObject\</code> instance.
+     * Creates an \<code>Abstract<table.name.voName>ValueObject\</code> instance.
      <table.attributes:{ a | <attribute_javadoc(attribute=a)>}; separator="\n">
      */
     public Abstract<table.name.voName>ValueObject(
