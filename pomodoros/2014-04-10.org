@@ -16,5 +16,4 @@
 *** DONE FkStatementSetter.stg -> Depends on FK mgmt
 
 ** Nest QueryJs, overriding only such templates
-*** Test
 
