@@ -138,7 +138,7 @@ public class <table.name.voName>ValueObjectFactory
 
     /**
      * Creates a \<code\><table.name.voName>ValueObject\</code> instance.
-     <input.attributes:{ a | <attribute_javadoc(attribute=a)>}; separator="\n">
+     <table.attributes:{ a | <attribute_javadoc(attribute=a)>}; separator="\n">
      */
     public <table.name.voName> create<table.name.voName>(
         <table.attributes:{ a | <attribute_method_declaration(attribute=a)>};
