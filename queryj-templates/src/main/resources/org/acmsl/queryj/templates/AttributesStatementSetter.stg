@@ -233,6 +233,34 @@ public class <table.name.voName>AttributesStatementSetter
     {
         return m__bUpdateOperation;
     }
+
+    /**
+     * Specifies the values on given {@link PreparedStatement}
+     * @param preparedStatement the prepared statement.
+     * @throws SQLException intercepted by \<i>Spring\</i>.
+     */
+    @Override
+    public void setValues(<notnull(C=C)>final PreparedStatement preparedStatement)
+        throws  SQLException
+    {
+        setValues(
+            preparedStatement,
+            <table.attributes:{ attr | get<attr.name.capitalized>()}; separator=",\n">,
+            isUpdateOperation());
+    }
+
+    /**
+     * Specifies the values on given {@link PreparedStatement}
+     * @param preparedStatement the prepared statement.
+     * @param update whether it's an update operation.
+     * @throws SQLException intercepted by \<i>Spring\</i>.
+     */
+    protected void setValues(
+    <notnull(C=C)>final PreparedStatement preparedStatement, final boolean update)
+        throws  SQLException
+    {
+        // TODO
+    }
 }
 >>
 
