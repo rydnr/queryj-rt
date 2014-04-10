@@ -189,11 +189,7 @@ attribute_setter(attribute) ::= <<
  * Specifies the \<i\><attribute.name>\</i\> value.
  * @param value such information.
  */
-<if(attribute.allowsNull)>
-protected final void immutableSet<attribute.name.capitalized>(<notnull(C=C)>final <attribute.objectType> value)
-<else>
-protected final void immutableSet<attribute.name.capitalized>(final <attribute.javaType> value)
-<endif>
+protected final void immutableSet<attribute.name.capitalized>(<if(!attribute.strictlyPrimitive)><if(attribute.nullable)><nullable(C=C)><else><notnull(C=C)><endif><endif>final <attribute.javaType> value)
 {
     this.m__<attribute.name.capitalized> = value;
 }
