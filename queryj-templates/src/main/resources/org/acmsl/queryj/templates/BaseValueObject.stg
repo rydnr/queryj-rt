@@ -247,6 +247,5 @@ public <attribute.javaType> get<attribute.name.capitalized>()
 <else>
     return immutableGet<attribute.name.capitalized>();
 <endif>
-
 }
 >>
