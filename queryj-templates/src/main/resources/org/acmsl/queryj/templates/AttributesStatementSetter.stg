@@ -204,6 +204,8 @@ public class <table.name.voName>AttributesStatementSetter
         immutableSetUpdateOperation(updateOperation);
     }
 
+    <table.attributes:{ a | <attribute_accessors(attribute=a)>}; separator="\n\n">
+
     /**
      * Specifies whether the operation is an update or not.
      * @param updateOperation such information.
@@ -231,9 +233,6 @@ public class <table.name.voName>AttributesStatementSetter
     {
         return m__bUpdateOperation;
     }
-
-    <table.attributes:{ a | <attribute_accessors(attribute=a)>}; separator="\n\n">
-
 }
 >>
 
