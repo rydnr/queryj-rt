@@ -68,7 +68,7 @@ sourceImpl(table, C) ::= <<
 
 <imports(table=table)>
 /*
- * Importing some JDK classes.
+ * Importing JDK classes.
  */
 import java.io.Serializable;
 
