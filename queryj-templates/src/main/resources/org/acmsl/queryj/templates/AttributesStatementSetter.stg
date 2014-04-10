@@ -70,8 +70,7 @@ sourceImpl(table, C) ::= <<
 <project_imports(
   basePackageName=C.project_package,
   voSubpackageName=typeInitMap.voSubpackageName,
-  voName=table.name.voName,
-  trSubpackageName=typeInitMap.tableRepositorySubpackageName)>
+  voName=table.name.voName)>
 
 /*
  * Importing Spring classes.
@@ -102,13 +101,12 @@ import org.apache.commons.logging.LogFactory;
 >>
 
 project_imports(
-  basePackageName, voSubpackageName, voName, trSubpackageName) ::= <<
+  basePackageName, voSubpackageName, voName) ::= <<
 <!
  Generates the project imports.
  @param basePackageName the base package name.
  @param voSubpackageName the value-object subpackage name.
  @param voName the value-object name.
- @param trSubpackageName the table repository subpackage name.
 !>
 /*
  * Importing project classes.
