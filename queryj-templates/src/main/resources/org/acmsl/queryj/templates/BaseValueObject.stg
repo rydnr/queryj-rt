@@ -161,7 +161,6 @@ final <attribute.objectType> <attribute.name.uncapitalized>
 <else>
 final <attribute.javaType> <attribute.name.uncapitalized>
 <endif>
-
 >>
 
 immutable_setter_call(attribute) ::= <<
