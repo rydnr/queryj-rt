@@ -331,8 +331,7 @@ attribute_hashcode(attribute) ::= <<
 <! Generates the hashcode contribution for each attribute. !>
 <if(attribute.strictlyPrimitive)>
 final int <attribute.name.uncapitalized>HashCode = ("" + this.m__<attribute.name.capitalized>).hashcode();
-<else><if(attribute.allowsNull)>
-final int <attribute.name.uncapitalized>HashCode;
+<else><if(attribute.allowsNull)>final int <attribute.name.uncapitalized>HashCode;
 if (this.m__<attribute.name.capitalized> == null)
 {
     <attribute.name.uncapitalized>HashCode = 0;
