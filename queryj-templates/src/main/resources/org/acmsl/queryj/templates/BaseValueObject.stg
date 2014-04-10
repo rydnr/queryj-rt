@@ -156,7 +156,7 @@ attribute_method_declaration(attribute) ::= <<
  Writes the method declaration for given attribute.
  @param attribute the attribute.
 !><if(!attribute.strictlyPrimitive)><if(attribute.nullable)>@Nullable<else>@NotNull<endif><endif>
-  <attribute.javaType>  <attribute.name.uncapitalized><endif>
+  <attribute.javaType> <attribute.name.uncapitalized><endif>
 >>
 
 immutable_setter_call(attribute) ::= <<
