@@ -73,7 +73,6 @@ sourceImpl(table, C) ::= <<
 <table.attributeTypes:{ t | import <t>;}; separator="\n">
 <endif>
 
-
 <class(table=table, C=C)>
 >>
 
