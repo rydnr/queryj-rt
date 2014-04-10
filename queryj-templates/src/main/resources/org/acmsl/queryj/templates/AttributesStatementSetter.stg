@@ -203,6 +203,37 @@ public class <table.name.voName>AttributesStatementSetter
           separator="\n">
         immutableSetUpdateOperation(updateOperation);
     }
+
+    /**
+     * Specifies whether the operation is an update or not.
+     * @param updateOperation such information.
+     */
+    protected final void immutableSetUpdateOperation(
+        final boolean updateOperation)
+    {
+        m__bUpdateOperation = updateOperation;
+    }
+
+    /**
+     * Specifies whether the operation is an update or not.
+     * @param updateOperation such information.
+     */
+    protected void setUpdateOperation(final boolean updateOperation)
+    {
+        immutableSetUpdateOperation(updateOperation);
+    }
+
+    /**
+     * Retrieves whether the operation is an update or not.
+     * @return such information.
+     */
+    public boolean isUpdateOperation()
+    {
+        return m__bUpdateOperation;
+    }
+
+    <table.attributes:{ a | <attribute_accessors(attribute=a)>}; separator="\n\n">
+
 }
 >>
 
