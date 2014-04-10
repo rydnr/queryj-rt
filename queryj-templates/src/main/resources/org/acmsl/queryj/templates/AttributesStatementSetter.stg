@@ -67,7 +67,7 @@ sourceImpl(table, C) ::= <<
   C=C)><endif>
 <package_declaration(p=C.package)>
 <project_imports(
-  basePackageName=C.base_package,
+  basePackageName=C.basePackage,
   voSubpackageName=typeInitMap.voSubpackageName,
   voName=table.name.voName,
   trSubpackageName=typeInitMap.tableRepositorySubpackageName,
