@@ -128,7 +128,9 @@ class(table, C) ::= <<
 !>
 /**
  * <[
-      description(table=table)
+      first_line_description(table=table),
+      second_line_description(table=table),
+      third_line_description(table=table)
     ]:{line |<line>}; separator="\n * ">
 <class_common_javadoc(
   template="org/acmsl/queryj/templates/AttributesStatementSetter.stg", C=C)>
