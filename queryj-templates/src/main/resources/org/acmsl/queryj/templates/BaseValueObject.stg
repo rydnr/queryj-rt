@@ -204,6 +204,7 @@ protected final void immutableSet<attribute.name.capitalized>(final <attribute.j
  * Specifies the \<i\><attribute.name>\</i\> value.
  * @param value such information.
  */
+@SuppressWarnings("unused")
 <if(attribute.allowsNull)>
 protected void set<attribute.name.capitalized>(final <attribute.objectType> value)
 <else>
