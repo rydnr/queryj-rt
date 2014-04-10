@@ -66,6 +66,7 @@ sourceImpl(table, C) ::= <<
   template="org/acmsl/queryj/templates/AttributesStatementSetter.stg",
   C=C)><endif>
 <package_declaration(p=C.package)>
+
 <project_imports(
   basePackageName=C.project_package,
   voSubpackageName=typeInitMap.voSubpackageName,
