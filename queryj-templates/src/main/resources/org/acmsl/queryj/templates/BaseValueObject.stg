@@ -302,7 +302,7 @@ public String toString()
 {
     StringBuilder result = new StringBuilder("{ ");
 
-    result.append("\class\": \"<table.name.voName>\"");
+    result.append("\class\": \"<table.name.voName>");
     <table.attributes:{ a | <attribute_toString(attribute=a)>}; separator="\n">
     result.append(", \"package\": \"<C.package>\" }");
 
@@ -312,7 +312,6 @@ public String toString()
 
 attribute_toString(attribute) ::= <<
 <! Generates the code to include given attribute within the toString() method. !>
-result.append(", \"<a.name.capitalized>\": \"");
+result.append("\", \"<a.name.capitalized>\": \"");
 result.append(this.m__<a.name.capitalized>);
-result.append("\"");
 >>
