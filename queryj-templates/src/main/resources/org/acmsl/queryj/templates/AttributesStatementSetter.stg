@@ -159,5 +159,18 @@ class(table, C) ::= <<
 <class_annotations(C=C)>
 public class <table.name.voName>AttributesStatementSetter
 {
+    <table.attributes:{ a | <attribute_member_declaration(attr=a)>}; separator="\n\n">
 }
+>>
+
+attribute_member_declaration(attr) ::= <<
+<!
+ Generates the member declaration for a concrete attribute.
+ @param attr the attribute.
+!>
+/**
+ * <if(attr.comment.empty)>The \<i><attr.name>\</i> information<else><attr.comment><endif>.
+ */
+<if(!attribute.strictlyPrimitive)><if(attribute.allowsNull)><nullable(C=C)><else><notnull(C=C)><endif>
+private <attr.javaType> <attr.name.uncapitalized>;
 >>
