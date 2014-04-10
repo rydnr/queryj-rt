@@ -217,8 +217,8 @@ attribute_getter(attribute) ::= <<
  * @return such information.
  */
 <if(attribute.allowsNull)>
-<if(!attribute.strictlyPrimitive)><nullable(C=C)><endif><attribute.objectType>
-protected final immutableGet<attribute.name.capitalized>()
+<if(!attribute.strictlyPrimitive)><nullable(C=C)><endif>
+protected final <attribute.objectType> immutableGet<attribute.name.capitalized>()
 <else>
 <if(!attribute.strictlyPrimitive)><notnull(C=C)><endif>
 protected final <attribute.javaType> immutableGet<attribute.name.capitalized>()
