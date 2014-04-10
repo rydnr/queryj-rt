@@ -179,12 +179,12 @@ public class <table.name.voName>AttributesStatementSetter
         final boolean updateOperation)
     {
         this(
-            <table.own.minus.primaryKey:{ attr | <attr.name.lowercased>,};
+            <table.own.minus.primaryKey:{ attr | <attr.name.uncapitalized>,};
               separator="\n">
             updateOperation);
 
         <table.primaryKey:
-          { attr | immutableSet<attr.nameCapitalized>(<attr.name.lowercased>);};
+          { attr | immutableSet<attr.nameCapitalized>(<attr.name.uncapitalized>);};
           separator="\n">
     }
 
@@ -201,7 +201,7 @@ public class <table.name.voName>AttributesStatementSetter
         final boolean updateOperation)
     {
         <table.own.minus.primaryKey:
-          { attr | immutableSet<attr.name.capitalized>(<attr.name.lowercased>);};
+          { attr | immutableSet<attr.name.capitalized>(<attr.name.uncapitalized>);};
           separator="\n">
         immutableSetUpdateOperation(updateOperation);
     }
