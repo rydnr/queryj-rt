@@ -284,9 +284,13 @@ attribute_equals(attribute) ::= <<
 <! Generates the contribution of each attribute to the equals method. !>
 <if(attribute.strictlyPrimitive)>
 final boolean <attribute.name.uncapitalized> = (this.m__<attribute.name.capitalized> == other.get<attribute.name.capitalized());
-<else><if(attribute.allowsNull)>(   (this.m__<attribute.name.capitalized> != null)
-                                 && (this.m__<attribute.name.capitalized>.equals(other.get<attribute.name.capitalized())));<endif>
-<else>(this.m__<attribute.name.capitalized>.equals(other.get<attribute.name.capitalized()));<endif>
+<else><if(attribute.allowsNull)>
+final boolean <attribute.name.uncapitalized> =
+    (   (this.m__<attribute.name.capitalized> != null)
+     && (this.m__<attribute.name.capitalized>.equals(other.get<attribute.name.capitalized())));<endif>
+<else>
+final boolean <attribute.name.uncapitalized> =
+    (this.m__<attribute.name.capitalized>.equals(other.get<attribute.name.capitalized()));<endif>
 >>
 
 hashcode_method(table, C) ::= <<
