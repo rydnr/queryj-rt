@@ -17,8 +17,8 @@
 *** Custom query related templates?
 
 ** Implement those templates ASAP:
-*** DONE ValueObject.stg: 1 -> 1
-*** BaseValueObject.stg: 4 -> 3
+*** DONE ValueObject.stg: 4 -> 4
+*** BaseValueObject.stg: 2 ->
 *** ValueObjectFactory.stg: 1 ->
 *** BaseDAO.stg: 1 ->
 *** DAO.stg: 1 ->
