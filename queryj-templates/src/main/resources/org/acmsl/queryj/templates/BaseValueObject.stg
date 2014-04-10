@@ -279,6 +279,10 @@ public boolean equals(<nullable(C=C)>final Object other)
         result =
             <table.attributes:{ a |<a.name.uncapitalized>Match}; separator="\n&& ">;
     }
+    else
+    {
+        result = false;
+    }
 
     return result;
 }
