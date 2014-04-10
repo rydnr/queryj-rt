@@ -169,8 +169,6 @@ immutable_setter_call(attribute) ::= <<
  @param attribute the attribute.
 !>
 immutableSet<attribute.name.capitalized>(<attribute.name.uncapitalized>);
-<endif>
-
 >>
 
 attribute_accessors(attribute) ::= <<
@@ -235,6 +233,10 @@ protected final <attribute.javaType> immutableGet<attribute.name.capitalized>()
     return m__<attribute.name.capitalized>;
 }
 
+/**
+ * Retrieves the \<i\><attribute.name>\</i\> value.
+ * @return such information.
+ */
 <if(attribute.allowsNull)>
 public <attribute.objectType> get<attribute.name.capitalized>()
 <else>
