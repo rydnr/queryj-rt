@@ -58,6 +58,9 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class DecoratedStringTest
 {
+    /**
+     * Checks isEmpty(String) work for empty
+     */
     @Test
     public void isEmpty_works_for_empty_strings()
     {
