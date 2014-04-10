@@ -153,4 +153,49 @@ public class AbstractAttributeDecoratorTest
 
         Assert.assertTrue(instance.isStrictlyPrimitive());
     }
+
+
+    /**
+     * Tests whether isStrictlyPrimitive works for floats.
+     */
+    @Test
+    public void isStrictlyPrimitive_works_for_floats()
+    {
+        @NotNull final MetadataManager metadataManager =
+            EasyMock.createNiceMock(MetadataManager.class);
+
+        @NotNull final MetadataTypeManager metadataTypeManager =
+            new JdbcMetadataTypeManager();
+
+        EasyMock.expect(metadataManager.getMetadataTypeManager()).andReturn(metadataTypeManager);
+
+        EasyMock.replay(metadataManager);
+
+        @NotNull final Attribute<String> attribute =
+            new AttributeValueObject(
+                "name",
+                Types.FLOAT,
+                "float",
+                "tableName",
+                "comment",
+                1,
+                10, // length
+                1, // precision
+                null, // keyword
+                null, // retrieval query
+                null, // sequence
+                false, // nullable
+                null, // value
+                false, // read-only
+                false, // is-bool
+                null, // boolean-true
+                null, // boolean-false
+                null); // boolean-null
+
+        @NotNull final AbstractAttributeDecorator instance =
+            new AbstractAttributeDecorator(
+                attribute, metadataManager) {};
+
+        Assert.assertTrue(instance.isStrictlyPrimitive());
+    }
 }
