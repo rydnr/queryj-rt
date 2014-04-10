@@ -114,7 +114,7 @@ public abstract class Abstract<table.name.voName>
     /**
      * The serial version id.
      */
-    private static final long serialVersionUID = <C.serialVersionUID>;
+    private static final long serialVersionUID = <C.serialVersionUID>L;
 
     <table.attributes:{ a | <attribute_declaration(attribute=a)>}; separator="\n\n">
 
