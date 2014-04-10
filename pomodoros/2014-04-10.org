@@ -2,3 +2,8 @@
 ** TODO Test / fix clobs #465: 3 ->
 ** TODO Test / fix inheritance #466: 4 ->
 ** TODO Nest QueryJ versions in msg-manager: 2 ->
+
+* GOAL : Deliver QueryJ 3.0 ASAP
+** Find out which templates are affected by the order of columns: 
+** Nest QueryJs, overriding only such templates:
+
