@@ -71,6 +71,13 @@ public class AbstractAttributeDecoratorTest
         @NotNull final MetadataManager metadataManager =
             EasyMock.createNiceMock(MetadataManager.class);
 
+        @NotNull final MetadataTypeManager metadataTypeManager =
+            EasyMock.createNiceMock(MetadataTypeManager.class);
+
+        EasyMock.expect(metadataManager.getMetadataTypeManager()).andReturn(metadataTypeManager);
+
+        EasyMock.replay(metadataManager);
+
         @NotNull final Attribute<String> attribute =
             new AttributeValueObject(
                 "name",
