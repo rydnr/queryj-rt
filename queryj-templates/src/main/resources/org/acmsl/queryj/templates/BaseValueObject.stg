@@ -270,12 +270,16 @@ equals_method(table, C) ::= <<
 @Override
 public boolean equals(<nullable(C=C)>final Object other)
 {
-    boolean result = false;
+    final boolean result;
 
     if (other instanceof <table.name.voName>)
     {
         <table.attributes:{ a | <attribute_equals(attribute=a)>}; separator="">
+
+        result =
+            <table.attributes:{ a |<a.name.uncapitalized>Match}; separator="&& ">
     }
+
     return result;
 }
 >>
@@ -290,6 +294,11 @@ final boolean <attribute.name.uncapitalized>Match =
      && (this.m__<attribute.name.capitalized>.equals(other.get<attribute.name.capitalized>())));
 <else>
 final boolean <attribute.name.uncapitalized>Match = this.m__<attribute.name.capitalized>.equals(other.get<attribute.name.capitalized>());<endif><endif>
+>>
+
+attribute_equals(attribute) ::= <<
+<! Generates the final check in the equals method, for each attribute. !>
+<attribute.name.uncapitalized>Mach
 >>
 
 hashcode_method(table, C) ::= <<
