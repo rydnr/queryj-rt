@@ -731,15 +731,6 @@ public abstract class AbstractAttributeDecorator
     }
 
     /**
-     * Checks whether the attribute is strictly primitive.
-     * @return such information.
-     */
-    public boolean isStrictlyPrimitive()
-    {
-        return false;
-    }
-
-    /**
      * Retrieves the Java type of the property.
      * @param type the type.
      * @param metadataManager the <code>MetadataManager</code>
