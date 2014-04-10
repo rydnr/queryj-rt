@@ -1,5 +1,5 @@
 /*
-                        queryj
+                        QueryJ Core
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for AbstractAttributeDecorator.
  *
  * Date: 2014/04/10
  * Time: 11:30
@@ -58,7 +58,7 @@ import org.powermock.modules.junit4.PowerMockRunner;
 import java.sql.Types;
 
 /**
- *
+ * Tests for {@link AbstractAttributeDecorator}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/10 11:30
@@ -66,8 +66,55 @@ import java.sql.Types;
 @RunWith(PowerMockRunner.class)
 public class AbstractAttributeDecoratorTest
 {
+    /**
+     * Tests whether isStrictlyPrimitive works for longs.
+     */
     @Test
-    public void isStrictlyPrimitive_works_for_primitives()
+    public void isStrictlyPrimitive_works_for_ints()
+    {
+        @NotNull final MetadataManager metadataManager =
+            EasyMock.createNiceMock(MetadataManager.class);
+
+        @NotNull final MetadataTypeManager metadataTypeManager =
+            new JdbcMetadataTypeManager();
+
+        EasyMock.expect(metadataManager.getMetadataTypeManager()).andReturn(metadataTypeManager);
+
+        EasyMock.replay(metadataManager);
+
+        @NotNull final Attribute<String> attribute =
+            new AttributeValueObject(
+                "name",
+                Types.INTEGER,
+                "int",
+                "tableName",
+                "comment",
+                1,
+                10, // length
+                1, // precision
+                null, // keyword
+                null, // retrieval query
+                null, // sequence
+                false, // nullable
+                null, // value
+                false, // read-only
+                false, // is-bool
+                null, // boolean-true
+                null, // boolean-false
+                null); // boolean-null
+
+        @NotNull final AbstractAttributeDecorator instance =
+            new AbstractAttributeDecorator(
+                attribute, metadataManager) {};
+
+        Assert.assertTrue(instance.isStrictlyPrimitive());
+    }
+
+    /**
+     * Tests whether isStrictlyPrimitive works for longs.
+     */
+    @Test
+    public void isStrictlyPrimitive_works_for_longs()
     {
         @NotNull final MetadataManager metadataManager =
             EasyMock.createNiceMock(MetadataManager.class);
