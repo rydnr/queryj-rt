@@ -5,7 +5,7 @@
 
 * GOAL : Deliver QueryJ 3.0 ASAP
 ** Find out which templates are affected by the order of columns: 
-*** ValueObject.stg
+*** TODO ValueObject.stg
 *** DONE BaseValueObject.stg
 *** TODO ValueObjectFactory.stg
 *** TODO BaseDAO.stg 
