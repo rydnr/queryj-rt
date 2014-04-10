@@ -70,7 +70,7 @@ public class DecoratedStringTest
     }
 
     /**
-     * Checks isEmpty(String) work for empty Strings.
+     * Checks isEmpty(String) work for blank Strings.
      */
     @Test
     public void isEmpty_works_for_blank_strings()
