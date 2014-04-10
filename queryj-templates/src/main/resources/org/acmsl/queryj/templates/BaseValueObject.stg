@@ -330,6 +330,7 @@ public String toString()
     StringBuilder result = new StringBuilder("{ \class\": \"Abstract<table.name.voName>");
 
     <table.attributes:{ a | <attribute_toString(attribute=a)>}; separator="\n">
+
     result.append(", \"package\": \"<C.package>\" }");
 
     return result.toString();
