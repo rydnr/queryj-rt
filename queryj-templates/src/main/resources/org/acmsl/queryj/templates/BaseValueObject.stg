@@ -339,8 +339,7 @@ if (this.m__<attribute.name.capitalized> == null)
 else
 {
      <attribute.name.uncapitalized>HashCode = this.m__<attribute.name.capitalized>.hashCode();
-}<else>
-final int <attribute.name.uncapitalized>HashCode = this.m__<attribute.name.capitalized>.hashCode();<endif><endif>
+}<else>final int <attribute.name.uncapitalized>HashCode = this.m__<attribute.name.capitalized>.hashCode();<endif><endif>
 >>
 
 tostring_method(table, C) ::= <<
