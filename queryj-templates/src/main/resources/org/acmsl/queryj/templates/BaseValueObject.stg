@@ -313,10 +313,36 @@ hashcode_method(table, C) ::= <<
 @Override
 public int hashcode()
 {
-    int result = 0;
+    final int result;
+
+    final int tableHashCode = "<table.name>".hashcode();
+
+    <table.attributes:{ a | <attribute_hashcode(attribute=a)>}; separator="\n">
+
+    result =
+          tableHashCode
+        <table.attributes:{ a |+ <a.name.uncapitalized>HashCode}; separator="\n">;
 
     return result;
 }
+>>
+
+attribute_hashcode(attribute) ::= <<
+<! Generates the hashcode contribution for each attribute. !>
+<if(attribute.strictlyPrimitive)>
+final int <attribute.name.uncapitalized>HashCode = ("" + this.m__<attribute.name.capitalized>).hashcode();
+<else><if(attribute.allowsNull)>
+final int <attribute.name.uncapitalized>HashCode;
+if (this.m__<attribute.name.capitalized> == null)
+{
+    <attribute.name.uncapitalized>HashCode = 0;
+}
+else
+{
+     <attribute.name.uncapitalized>HashCode = this.m__<attribute.name.capitalized>.hashCode();
+}
+<else>
+final int <attribute.name.uncapitalized>Match = this.m__<attribute.name.capitalized>.hashCode();<endif><endif>
 >>
 
 tostring_method(table, C) ::= <<
