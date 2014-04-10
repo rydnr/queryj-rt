@@ -75,7 +75,7 @@ import org.acmsl.commons.patterns.dao.ValueObject;
 
 <endif>
 /*
- * Importing some JDK classes.
+ * Importing JDK classes.
  */
 import java.io.Serializable;
 <if(table.attributeTypes)>

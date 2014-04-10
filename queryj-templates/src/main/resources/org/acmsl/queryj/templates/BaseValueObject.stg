@@ -66,11 +66,13 @@ sourceImpl(table, C) ::= <<
   C=C)><endif>
 <package_declaration(p=C.package)>
 
-<imports(table=table)>
+<checkers_import(C=C)>
+<if(table.attributeTypes)>
 /*
  * Importing JDK classes.
  */
-import java.io.Serializable;
+<table.attributeTypes:{ t | import <t>;}; separator="\n">
+<endif>
 
 <class(table=table, C=C)>
 >>
@@ -105,7 +107,6 @@ class(table, C) ::= <<
   template="org/acmsl/queryj/templates/BaseValueObject.stg", C=C)>
  */
 public interface <table.name.voName>
-    extends Serializable
 {
     <table.attributes:{ a | <attribute_declaration(attribute=a)>}; separator="\n">
 
