@@ -258,4 +258,10 @@ public <attribute.javaType> get<attribute.name.capitalized>()
 }
 >>
 
-equals_method=
+equals_method(table, C) ::= <<
+<! Generates the equals method !>
+/**
+ * Checks whether given object is semantically equivalent to this one.
+ * @param other the other object to compare to.
+ *
+>>
