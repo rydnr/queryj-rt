@@ -138,6 +138,7 @@ public class <table.name.voName>ValueObjectFactory
     /**
      * Creates a new {@link <table.name.voName>ValueObject} instance.
      <table.attributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
+     * @return the new value object.
      */
     public <table.name.voName> create<table.name.voName>(
         <table.attributes:{ a | <attribute_method_declaration(attribute=a)>};
