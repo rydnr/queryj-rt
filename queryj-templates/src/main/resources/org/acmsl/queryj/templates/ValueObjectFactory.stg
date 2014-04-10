@@ -148,4 +148,5 @@ public class <table.name.voName>ValueObjectFactory
             new <table.name.voName>ValueObject(
                 <table.attributes:{ a | <a.name.uncapitalized>}; separator=",\n">);
     }
+}
 >>
