@@ -178,6 +178,7 @@ attribute_accessors(attribute) ::= <<
 !>
 <attribute_setter(attribute=attribute)>
 <attribute_getter(attribute=attribute)>
+
 >>
 
 attribute_setter(attribute) ::= <<
