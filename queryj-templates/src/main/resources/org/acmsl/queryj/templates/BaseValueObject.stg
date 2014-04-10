@@ -309,7 +309,7 @@ public String toString()
 }
 >>
 
-atttribute_toString(attribute) ::= <<
+attribute_toString(attribute) ::= <<
 <! Generates the code to include given attribute within the toString() method. !>
 result.append(", \"<a.name.capitalized\": \"");
 result.append(this.m__<a.name.capitalized>);
