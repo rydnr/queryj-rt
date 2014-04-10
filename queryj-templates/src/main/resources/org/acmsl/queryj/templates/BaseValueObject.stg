@@ -274,7 +274,7 @@ public boolean equals(<nullable(C=C)>final Object other)
 
     if (other instanceof <table.name.voName>)
     {
-        <table.attributes:{ a | <attribute_equals(attribute=a)>}; separator="\n\n">
+        <table.attributes:{ a | <attribute_equals(attribute=a)>}; separator="">
     }
     return result;
 }
@@ -283,13 +283,13 @@ public boolean equals(<nullable(C=C)>final Object other)
 attribute_equals(attribute) ::= <<
 <! Generates the contribution of each attribute to the equals method. !>
 <if(attribute.strictlyPrimitive)>
-final boolean <attribute.name.uncapitalized> = (this.m__<attribute.name.capitalized> == other.get<attribute.name.capitalized>());
+final boolean <attribute.name.uncapitalized>Match = (this.m__<attribute.name.capitalized> == other.get<attribute.name.capitalized>());
 <else><if(attribute.allowsNull)>
-final boolean <attribute.name.uncapitalized> =
+final boolean <attribute.name.uncapitalized>Match =
     (   (this.m__<attribute.name.capitalized> != null)
      && (this.m__<attribute.name.capitalized>.equals(other.get<attribute.name.capitalized>())));
 <else>
-final boolean <attribute.name.uncapitalized> =
+final boolean <attribute.name.uncapitalized>Match =
     (this.m__<attribute.name.capitalized>.equals(other.get<attribute.name.capitalized>()));<endif><endif>
 >>
 
