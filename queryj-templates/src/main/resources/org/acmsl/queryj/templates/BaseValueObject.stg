@@ -191,7 +191,7 @@ attribute_setter(attribute) ::= <<
  * Specifies the \<i\><attribute.name>\</i\> value.
  * @param value such information.
  */
-protected final void immutableSet<attribute.name.capitalized>(<if(!attribute.strictlyPrimitive)><if(attribute.nullable)><nullable(C=C)><else><notnull(C=C)><endif><endif>final <attribute.javaType> value)
+protected final void immutableSet<attribute.name.capitalized>(<if(!attribute.strictlyPrimitive)><notnull(C=C)><endif>final <attribute.javaType> value)
 {
     this.m__<attribute.name.capitalized> = value;
 }
@@ -201,7 +201,7 @@ protected final void immutableSet<attribute.name.capitalized>(<if(!attribute.str
  * @param value such information.
  */
 @SuppressWarnings("unused")
-protected void set<attribute.name.capitalized>(<if(!attribute.strictlyPrimitive)><if(attribute.nullable)><nullable(C=C)><else><notnull(C=C)><endif><endif>final <attribute.javaType> value)
+protected void set<attribute.name.capitalized>(<if(!attribute.strictlyPrimitive)><notnull(C=C)><endif>final <attribute.javaType> value)
 {
     immutableSet<attribute.name.capitalized>(value);
 }
