@@ -169,7 +169,7 @@ public class <table.name.voName>AttributesStatementSetter
     /**
      * Creates a \<code><table.name.voName>AttributesStatementSetter\</code>
      * instance.
-     <table.attributes:attribute_javadoc(name=it.nameLowercased);
+     <table.attributes:{a | <attribute_javadoc(attr=a)>};
         separator="\n">
      * @param updateOperation whether the operation is an update.
      */
