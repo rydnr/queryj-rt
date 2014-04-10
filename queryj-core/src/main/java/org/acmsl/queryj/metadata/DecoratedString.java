@@ -604,7 +604,7 @@ public class DecoratedString
      * Checks whether the value is empty.
      * @return {@code true} in such case.
      */
-    public boolean isEmpty()
+    protected boolean isEmpty(@NotNull final String value, @NotNull final StringUtils stringUtils)
     {
         return isEmpty(getValue());
     }
