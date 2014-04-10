@@ -13,7 +13,7 @@
 *** TODO AttributesStatementSetter.stg
 *** DONE ResultSetExtractor.stg
 *** DONE PkStatementSetter.stg
-*** DONE FkStatementSetter.stg
+*** DONE FkStatementSetter.stg -> Depends on FK mgmt
 
 ** Nest QueryJs, overriding only such templates:
 
