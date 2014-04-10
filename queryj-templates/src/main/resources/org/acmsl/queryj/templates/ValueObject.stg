@@ -81,6 +81,7 @@ import org.acmsl.commons.patterns.dao.ValueObject;
 import java.io.Serializable;
 <if(table.attributeTypes)>
 <table.attributeTypes:{ t | import <t>;}; separator="\n">
+
 <endif>
 
 <class(table=table, C=C)>
