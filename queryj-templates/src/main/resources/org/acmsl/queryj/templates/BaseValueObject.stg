@@ -277,7 +277,7 @@ public boolean equals(<nullable(C=C)>final Object other)
         <table.attributes:{ a | <attribute_equals(attribute=a)>}; separator="">
 
         result =
-            <table.attributes:{ a |<a.name.uncapitalized>Match}; separator="\n&& ">
+            <table.attributes:{ a |<a.name.uncapitalized>Match}; separator="\n&& ">;
     }
 
     return result;
