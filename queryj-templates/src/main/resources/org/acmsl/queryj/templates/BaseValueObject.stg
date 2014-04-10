@@ -302,10 +302,11 @@ public String toString()
 {
     StringBuilder result = new StringBuilder("{ ");
 
+    result.append("\class\": \"<table.name.voName>\"");
     <table.attributes:{ a | <attribute_toString(attribute=a)>}; separator="\n">
+    result.append(", \"package\": \"<C.package>\" }");
 
-    result.append(" }");
-    return result;
+    return result.toString();
 }
 >>
 
