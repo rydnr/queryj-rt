@@ -259,9 +259,47 @@ public <attribute.javaType> get<attribute.name.capitalized>()
 >>
 
 equals_method(table, C) ::= <<
-<! Generates the equals method !>
+<! Generates the equals(Object) method !>
 /**
  * Checks whether given object is semantically equivalent to this one.
  * @param other the other object to compare to.
- *
+ * @return {@code true} if and only if they're equivalent.
+ */
+@Override
+public boolean equals(<nullable(C=C)>final Object other)
+{
+    boolean result = false;
+
+    return result;
+}
+>>
+
+hashcode_method(table, C) ::= <<
+<! Generates the hashcode() method !>
+/**
+ * Retrieves the hashcode which identifies this instance
+ * from any other one.
+ * @return the unique (among instances of this class) value.
+ */
+@Override
+public int hashcode()
+{
+    int result = 0;
+
+    return result;
+}
+>>
+
+tostring_method(table, C) ::= <<
+<! Generates the toString() method !>
+/**
+ * {@inheritdoc}
+ */
+@Override
+public String hashcode()
+{
+    StringBuilder result = new StringBuilder();
+
+    return result;
+}
 >>
