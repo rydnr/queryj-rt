@@ -107,6 +107,7 @@ class(table, C) ::= <<
 <class_common_javadoc(
   template="org/acmsl/queryj/templates/BaseValueObject.stg", C=C)>
  */
+<class_annotations(C=C)>
 public abstract class Abstract<table.name.voName>
     extends Serializable
 {
