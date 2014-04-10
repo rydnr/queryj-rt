@@ -191,17 +191,17 @@ public class <table.name.voName>AttributesStatementSetter
     /**
      * Creates a \<code><table.name.voName>AttributesStatementSetter\</code>
      * instance.
-     <input.nonpk_attributes:attribute_javadoc(name=it.nameLowercased);
+     <table.own.minus.primaryKey:{a | <attribute_javadoc(attr=a)>};
         separator="\n">
      * @param updateOperation whether the operation is an update.
      */
     public <table.name.voName>AttributesStatementSetter(
-        <input.nonpk_attributes:attribute_isolated_declaration(attr=it);
+        <table.own.minus.primaryKey:{ a | <attribute_isolated_declaration(attr=a)>};
           separator="\n">
         final boolean updateOperation)
     {
-        <input.nonpk_attributes:
-          { attr | immutableSet<attr.nameCapitalized>(<attr.nameLowercased>);};
+        <table.own.minus.primaryKey:
+          { attr | immutableSet<attr.name.capitalized>(<attr.name.lowercased>);};
           separator="\n">
         immutableSetUpdateOperation(updateOperation);
     }
