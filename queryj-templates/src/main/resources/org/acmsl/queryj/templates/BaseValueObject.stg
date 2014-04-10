@@ -67,10 +67,11 @@ sourceImpl(table, C) ::= <<
 <package_declaration(p=C.package)>
 
 <checkers_import(C=C)>
-<if(table.attributeTypes)>
 /*
  * Importing JDK classes.
  */
+import java.io.Serializable;
+<if(table.attributeTypes)>
 <table.attributeTypes:{ t | import <t>;}; separator="\n">
 <endif>
 
