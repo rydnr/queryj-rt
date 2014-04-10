@@ -13,6 +13,7 @@
 *** TODO AttributesStatementSetter.stg
 *** DONE ResultSetExtractor.stg
 *** DONE PkStatementSetter.stg
+*** TODO FkStatementSetter.stg
 
 ** Nest QueryJs, overriding only such templates:
 
