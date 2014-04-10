@@ -160,6 +160,51 @@ class(table, C) ::= <<
 public class <table.name.voName>AttributesStatementSetter
 {
     <table.attributes:{ a | <attribute_member_declaration(attribute=a)>}; separator="\n\n">
+
+    /**
+     * The \<i>update\</i> operation.
+     */
+    private boolean m__bUpdateOperation;
+
+    /**
+     * Creates a \<code><table.name.voName>AttributesStatementSetter\</code>
+     * instance.
+     <input.attributes:attribute_javadoc(name=it.nameLowercased);
+        separator="\n">
+     * @param updateOperation whether the operation is an update.
+     */
+    public <table.name.voName>AttributesStatementSetter(
+        <table.attributes:{ a | <attribute_isolated_declaration(attr=a)>};
+          separator="\n">
+        final boolean updateOperation)
+    {
+        this(
+            <table.own.minus.primaryKey:{ attr | <attr.name.lowercased>,};
+              separator="\n">
+            updateOperation);
+
+        <table.primaryKey:
+          { attr | immutableSet<attr.nameCapitalized>(<attr.name.lowercased>);};
+          separator="\n">
+    }
+
+    /**
+     * Creates a \<code><table.name.voName>AttributesStatementSetter\</code>
+     * instance.
+     <input.nonpk_attributes:attribute_javadoc(name=it.nameLowercased);
+        separator="\n">
+     * @param updateOperation whether the operation is an update.
+     */
+    public <table.name.voName>AttributesStatementSetter(
+        <input.nonpk_attributes:attribute_isolated_declaration(attr=it);
+          separator="\n">
+        final boolean updateOperation)
+    {
+        <input.nonpk_attributes:
+          { attr | immutableSet<attr.nameCapitalized>(<attr.nameLowercased>);};
+          separator="\n">
+        immutableSetUpdateOperation(updateOperation);
+    }
 }
 >>
 
