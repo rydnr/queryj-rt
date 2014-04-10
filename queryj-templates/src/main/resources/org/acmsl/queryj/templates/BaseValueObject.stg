@@ -111,7 +111,6 @@ public interface <table.name.voName>
     extends Serializable
 {
     <table.attributes:{ a | <attribute_declaration(attribute=a)>}; separator="\n">
-
     /**
      * Creates a \<code>Abstract<table.name.voName>ValueObject\</code> instance.
      <table.attributes:{ a | <attribute_javadoc(attribute=a)>}; separator="\n">
