@@ -125,6 +125,10 @@ public interface <table.name.voName>
 
     <table.attributes:{ a | <attribute_accessors(attribute=a)>};
      separator="\n\n">
+
+    <equals_method(table=table, C=C)>
+    <hashcode_method(table=table, C=C)>
+    <tostring_method(table=table, C=C)>
 }
 >>
 
@@ -253,3 +257,5 @@ public <attribute.javaType> get<attribute.name.capitalized>()
 <endif>
 }
 >>
+
+equals_method=
