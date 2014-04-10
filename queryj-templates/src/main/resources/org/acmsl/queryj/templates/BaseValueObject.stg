@@ -298,10 +298,19 @@ tostring_method(table, C) ::= <<
  * {@inheritdoc}
  */
 @Override
-public String hashcode()
+public String toString()
 {
-    StringBuilder result = new StringBuilder();
+    StringBuilder result = new StringBuilder("{ ");
 
+    <table.attributes:{ a | <attribute_toString(attribute=a)>}; separator="\n">
+    result.append(" }");
     return result;
 }
+>>
+
+atttribute_toString(attribute) ::= <<
+<! Generates the code to include given attribute within the toString() method. !>
+result.append(", \"<a.name.capitalized\": \"");
+result.append(this.m__<a.name.capitalized>);
+result.append("\"");
 >>
