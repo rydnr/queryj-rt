@@ -5,5 +5,7 @@
 
 * GOAL : Deliver QueryJ 3.0 ASAP
 ** Find out which templates are affected by the order of columns: 
+*** ValueObject.stg X
+*** 
 ** Nest QueryJs, overriding only such templates:
 
