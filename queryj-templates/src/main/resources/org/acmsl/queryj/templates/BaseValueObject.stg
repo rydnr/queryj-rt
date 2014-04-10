@@ -303,6 +303,7 @@ public String toString()
     StringBuilder result = new StringBuilder("{ ");
 
     <table.attributes:{ a | <attribute_toString(attribute=a)>}; separator="\n">
+
     result.append(" }");
     return result;
 }
