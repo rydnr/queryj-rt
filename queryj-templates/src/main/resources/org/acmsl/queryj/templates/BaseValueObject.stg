@@ -163,7 +163,17 @@ immutable_setter_call(attribute) ::= <<
  Writes the method call for the immutable setter of given attribute.
  @param attribute the attribute.
 !>
+<if(!attribute.strictlyPrimitive)><if(attribute.nullable)>
+if (<attribute.name.uncapitalized> != null)
+{
+    immutableSet<attribute.name.capitalized>(<attribute.name.uncapitalized>);
+}
+<else>
 immutableSet<attribute.name.capitalized>(<attribute.name.uncapitalized>);
+<endif>
+<else>
+immutableSet<attribute.name.capitalized>(<attribute.name.uncapitalized>);
+<endif>
 >>
 
 attribute_accessors(attribute) ::= <<
@@ -185,7 +195,7 @@ attribute_setter(attribute) ::= <<
  * @param value such information.
  */
 <if(attribute.allowsNull)>
-protected final void immutableSet<attribute.name.capitalized>(final <attribute.objectType> value)
+protected final void immutableSet<attribute.name.capitalized>(<notnull(C=C)>final <attribute.objectType> value)
 <else>
 protected final void immutableSet<attribute.name.capitalized>(final <attribute.javaType> value)
 <endif>
