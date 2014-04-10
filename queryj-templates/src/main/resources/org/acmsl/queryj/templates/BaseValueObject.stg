@@ -127,7 +127,9 @@ public interface <table.name.voName>
      separator="\n\n">
 
     <equals_method(table=table, C=C)>
+
     <hashcode_method(table=table, C=C)>
+
     <tostring_method(table=table, C=C)>
 }
 >>
