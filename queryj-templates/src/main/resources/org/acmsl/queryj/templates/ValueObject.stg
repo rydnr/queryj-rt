@@ -92,7 +92,7 @@ description(table) ::= <<
   Generates the first line of the generated file description.
   @param result the custom result.
 !>
-<if(table.comment.empty)>ValueObject for <table.name> information.<else><table.comment><endif>
+<if(table.comment.empty)>ValueObject for <table.name>.<else><table.comment><endif>
 >>
 
 imports(table) ::= <<
