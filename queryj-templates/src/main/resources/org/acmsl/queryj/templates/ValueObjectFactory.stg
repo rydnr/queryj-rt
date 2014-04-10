@@ -136,7 +136,7 @@ public class <table.name.voName>ValueObjectFactory
     }
 
     /**
-     * Creates a \<code\><table.name.voName>ValueObject\</code> instance.
+     * Creates a new {@link <table.name.voName>ValueObject} instance.
      <table.attributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
      */
     public <table.name.voName> create<table.name.voName>(
