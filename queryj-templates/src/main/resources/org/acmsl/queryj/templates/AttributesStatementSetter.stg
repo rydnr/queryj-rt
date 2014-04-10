@@ -78,7 +78,6 @@ sourceImpl(table, C) ::= <<
  */
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.PreparedStatementSetter;
-
 <checkers_import(C=C)>
 
 /*
