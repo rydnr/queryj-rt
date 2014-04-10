@@ -66,6 +66,13 @@ sourceImpl(table, C) ::= <<
   template="org/acmsl/queryj/templates/AttributesStatementSetter.stg",
   C=C)><endif>
 <package_declaration(p=C.package)>
+<project_imports(
+  basePackageName=C.base_package_,
+  voSubpackageName=typeInitMap.voSubpackageName,
+  voName=table.name.voName,
+  trSubpackageName=typeInitMap.tableRepositorySubpackageName,
+  trName=C.repository)>
+
 /*
  * Importing Spring classes.
  */
@@ -94,6 +101,24 @@ import java.sql.SQLException;
 import org.apache.commons.logging.LogFactory;
 
 <class(table=table, C=C)>
+>>
+
+project_imports(
+  basePackageName, voSubpackageName, voName, trSubpackageName, trName) ::= <<
+<!
+ Generates the project imports.
+ @param basePackageName the base package name.
+ @param voSubpackageName the value-object subpackage name.
+ @param voName the value-object name.
+ @param trSubpackageName the table repository subpackage name.
+ @param trName the table repository name.
+!>
+/*
+ * Importing project classes.
+ */
+import <basePackageName>.<voSubpackageName>.<voName>;
+import <basePackageName>.<voSubpackageName>.<voName>ValueObject;
+import <basePackageName>.<trSubpackageName>.<trName>TableRepository;
 >>
 
 first_line_description(table) ::= <<
