@@ -17,6 +17,6 @@
 **** Custom query related templates?
 
 *** Implement those templates ASAP:
-**** TODO AttributesStatementSetter.stg #472: 5 -> 1
+**** DONE AttributesStatementSetter.stg #472: 5 -> 5
 **** Nest QueryJs, overriding only such templates
 
