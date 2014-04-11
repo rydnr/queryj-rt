@@ -260,6 +260,8 @@ public class <table.name.voName>AttributesStatementSetter
         throws  SQLException
     {
 <  if(table.externallyManagedAttributes)>
+
+<  endif>
     }
 }
 >>
