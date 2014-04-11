@@ -336,7 +336,7 @@ preparedStatement.set<attr.objectType>(index++, <attr.name.uncapitalized>);<endi
 clob_specification(attribute) ::= <<
 <! Deals with Clob attributes !>
 <notnull(C=C)>final Clob <attribute.name.uncapitalized>Clob = preparedStatement.getConnection().createClob();
-<notnull(C=C)>inal Writer clobWriter = <attribute.name.uncapitalized>Clob.setCharacterStream(1);
+<notnull(C=C)>final Writer clobWriter = <attribute.name.uncapitalized>Clob.setCharacterStream(1);
 clobWriter.write(<attribute.name.uncapitalized>);
 preparedStatement.setClob(index++, <attribute.name.uncapitalized>Clob);
 >>
