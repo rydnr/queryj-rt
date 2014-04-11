@@ -495,4 +495,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("TIME", instance.getConstantName(Types.TIME));
     }
+
+    /**
+     * Checks whether getConstantName() works for TIME_WITH_TIMEZONEs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_TIME_WITH_TIMEZONEs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("TIME_WITH_TIMEZONE", instance.getConstantName(Types.TIME_WITH_TIMEZONE));
+    }
 }
