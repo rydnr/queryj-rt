@@ -451,4 +451,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("ROWID", instance.getConstantName(Types.ROWID));
     }
+
+    /**
+     * Checks whether getConstantName() works for SMALLINTs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_SMALLINTs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("SMALLINT", instance.getConstantName(Types.SMALLINT));
+    }
 }
