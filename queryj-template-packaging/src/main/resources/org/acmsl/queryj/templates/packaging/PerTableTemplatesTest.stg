@@ -486,7 +486,7 @@ public class PerTableTemplatesTest
                 Assert.assertNotNull("No template factory found for " + templateName, templateFactory);
 
                 @NotNull final String packageName =
-                    resolvePackage(PACKAGE_MAPPINGS.get(templateName), resolveEngine(engine));
+                    resolvePackage(PACKAGE_MAPPINGS.get(templateName), table.getName(), resolveEngine(engine));
 
                 @NotNull final QueryJCommand t_Command =
                     new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
@@ -517,7 +517,7 @@ public class PerTableTemplatesTest
                 @Nullable final PerTableTemplate\<PerTableTemplateContext> template =
                     templateFactory.createTemplate(
                         t_Command,
-                        retrieveDecoratorFactory(generator),
+                        decoratorFactory,
                         packageName,
                         table.getName(),
                         tableRows);
@@ -623,16 +623,21 @@ public class PerTableTemplatesTest
     /**
      * Resolves the package.
      * @param packageTemplate the package template.
+     * @param tableName the table name.
      * @param engine the engine.
      * @return the actual package.
      */
     @NotNull
-    protected String resolvePackage(@NotNull final String packageTemplate, @NotNull final Engine\<String> engine)
+    protected String resolvePackage(
+        @NotNull final String packageTemplate,
+        @NotNull final String tableName,
+        @NotNull final Engine\<String> engine)
     {
         @NotNull final String result;
 
         @NotNull final ST template = new ST(packageTemplate);
         template.add(Literals.PACKAGE_NAME, new DecoratedString(BASE_PACKAGE_NAME));
+        template.add(Literals.TABLE_NAME, new DecoratedString(tableName));
         template.add(Literals.ENGINE, new EngineDecorator(engine));
 
         result = template.render();
