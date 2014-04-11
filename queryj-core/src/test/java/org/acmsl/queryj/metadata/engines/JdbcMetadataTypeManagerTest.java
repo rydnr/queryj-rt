@@ -484,4 +484,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("STRUCT", instance.getConstantName(Types.STRUCT));
     }
+
+    /**
+     * Checks whether getConstantName() works for TIMEs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_TIMEs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("TIME", instance.getConstantName(Types.TIME));
+    }
 }
