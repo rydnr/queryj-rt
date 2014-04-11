@@ -330,7 +330,12 @@ else
     preparedStatement.set<attr.objectType>(index++, <attribute_to_primitive(attribute=attr)>);
 }<else>
 preparedStatement.set<attr.objectType>(index++, <attr.name.uncapitalized>);<endif
-><else>// TODO: CLOB<endif>
+><else><clob_specification(attribute=attr)><endif>
+>>
+
+clob_specification(attribute) ::= <<
+<! Deals with Clob attributes !>
+<notnull(C=C)>final Clob = preparedStatement.getConnection().createClob();
 >>
 
 equals_method(table, C) ::= <<
