@@ -262,7 +262,7 @@ public class <table.name.voName>AttributesStatementSetter
 <  if(table.externallyManagedAttributes)>
         if (update)
         {
-            <table.externallyManagedAttributes:{ a | <attribute_preparedstatement_specification(attr=a)>}; separator="\n">
+            <table.externallyManagedAttributes:{ a | <attribute_preparedstatementquery_specification(attr=a)>}; separator="\n">
         }
 <  endif>
     }
