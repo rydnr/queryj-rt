@@ -187,4 +187,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("BLOB", instance.getConstantName(Types.BLOB));
     }
+
+    /**
+     * Checks whether getConstantName() works for BOOLEANs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_BOOLEANs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("BOOLEAN", instance.getConstantName(Types.BOOLEAN));
+    }
 }
