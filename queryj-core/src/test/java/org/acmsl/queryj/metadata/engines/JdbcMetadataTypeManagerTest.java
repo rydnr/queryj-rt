@@ -253,4 +253,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("DECIMAL", instance.getConstantName(Types.DECIMAL));
     }
+
+    /**
+     * Checks whether getConstantName() works for DISTINCTs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_DISTINCTs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("DISTINCT", instance.getConstantName(Types.DISTINCT));
+    }
 }
