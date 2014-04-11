@@ -339,7 +339,7 @@ clob_specification(attribute) ::= <<
 
 <notnull(C=C)final Writer clobWriter = <attribute.name.uncapitalized>Clob.setCharacterStream(index++);
 
-clobWriter.write(<attribute.name.uncapitalized>);
+clobWriter.write(<attribute.name.uncapitalized>);.
 >>
 
 equals_method(table, C) ::= <<
