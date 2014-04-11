@@ -36,29 +36,34 @@
 package org.acmsl.queryj.metadata;
 
 /*
- * Importing JetBrains annotations.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.AttributeIncompleteValueObject;
-import org.acmsl.queryj.metadata.vo.AttributeValueObject;
 import org.acmsl.queryj.metadata.vo.ForeignKey;
 import org.acmsl.queryj.metadata.vo.Table;
 import org.acmsl.queryj.metadata.vo.TableValueObject;
-import org.easymock.EasyMock;
-import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing checkthread.org annotations.
+ * Importing JetBrains annotations.
  */
-import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+
+/*
+ * Importing JUnit/PowerMock/EasyMock classes.
+ */
+import org.easymock.EasyMock;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+/*
+ * Importing JDK classes.
+ */
 import java.sql.Types;
 import java.util.ArrayList;
 import java.util.List;
