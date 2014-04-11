@@ -328,3 +328,75 @@ else
 }<else>preparedStatement.set<attr.objectType>(index++, <attr.name.uncapitalized>);
 <endif><endif>
 >>
+
+
+equals_method(table, C) ::= <<
+<! Generates the equals(Object) method !>
+/**
+ * Checks whether given object is semantically equivalent to this one.
+ * @param other the other object to compare to.
+ * @return {@code true} if and only if they're equivalent.
+ */
+@Override
+public boolean equals(<nullable(C=C)>final Object other)
+{
+    final boolean result;
+
+    if (other instanceof <table.name.voName>)
+    {
+        <notnull(C=C)>final <table.name.voName> candidate = (<table.name.voName>) other;
+
+        <table.attributes:{ a | <attribute_equals(attribute=a)>}; separator="">
+        result =
+            <table.attributes:{ a |<a.name.uncapitalized>Match}; separator="\n&& ">;
+    }
+    else
+    {
+        result = false;
+    }
+
+    return result;
+}
+>>
+
+hashcode_method(table, C) ::= <<
+<! Generates the hashcode() method !>
+/**
+ * Retrieves the hashcode which identifies this instance
+ * from any other one.
+ * @return the unique (among instances of this class) value.
+ */
+@Override
+public int hashcode()
+{
+    final int result;
+
+    final int classHashCode = <table.name.voName>AttributesStatementSetter.class.hashcode();
+
+    <table.attributes:{ a | <attribute_hashcode(attribute=a)>}; separator="\n">
+
+    result =
+          classHashCode
+        <table.attributes:{ a |+ <a.name.uncapitalized>HashCode}; separator="\n">;
+
+    return result;
+}
+>>
+
+tostring_method(table, C) ::= <<
+<! Generates the toString() method !>
+/**
+ * {@inheritdoc}
+ */
+@Override
+public String toString()
+{
+    StringBuilder result = new StringBuilder("{ \class\": \"<table.name.voName>AttributesStatementSetter");
+
+    <table.attributes:{ a | <attribute_toString(attribute=a)>}; separator="\n">
+
+    result.append(", \"package\": \"<C.package>\" }");
+
+    return result.toString();
+}
+>>
