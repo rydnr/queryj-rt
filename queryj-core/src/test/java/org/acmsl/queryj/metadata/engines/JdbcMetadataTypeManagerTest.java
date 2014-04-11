@@ -528,4 +528,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("TIMESTAMP_WITH_TIMEZONE", instance.getConstantName(Types.TIMESTAMP_WITH_TIMEZONE));
     }
+
+    /**
+     * Checks whether getConstantName() works for TINYINTs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_TINYINTs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("TINYINT", instance.getConstantName(Types.TINYINT));
+    }
 }
