@@ -292,7 +292,7 @@ query.setInt(
 query.set<attr.objectType>(
 <endif>
 
-    <attr.tableNameUppercased>.<attr.nameUppercased>.equals(),
+    <attr.table.nameUppercased>.<attr.nameUppercased>.equals(),
     <attr.nameLowercased>);
 >>
 
