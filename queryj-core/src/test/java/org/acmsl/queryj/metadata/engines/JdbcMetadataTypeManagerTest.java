@@ -242,4 +242,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("DATE", instance.getConstantName(Types.DATE));
     }
+
+    /**
+     * Checks whether getConstantName() works for DECIMALs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_DECIMALs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("DECIMAL", instance.getConstantName(Types.DECIMAL));
+    }
 }
