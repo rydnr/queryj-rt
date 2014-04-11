@@ -421,7 +421,9 @@ public String toString()
     result.append(", \"update\": ");
     result.append(this.m__UpdateOperation);
 
-    result.append(", \"package\": \"<C.package>\" }");
+    result.append(", \"package\": \"");
+    result.append(<table.name.voName>AttributesStatementSetter.class.getPackage().getName());
+    result.append("\" }");
 
     return result.toString();
 }
