@@ -318,9 +318,7 @@ attribute_preparedstatement_specification(attr) ::= <<
  Generates the code to specify the attribute into the PreparedStatement.
  @param attr the attribute.
 !>
-<if(!attr.clob)>
-<if(attr.allowsNull)>
-if  (<attr.name.lowercased> == null)
+<if(!attr.clob)><if(attr.allowsNull)>if  (<attr.name.lowercased> == null)
 {
     preparedStatement.setNull(index++, <attr.type>);
 }
