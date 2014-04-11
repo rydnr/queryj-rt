@@ -291,7 +291,7 @@ attribute_preparedstatement_specification(attr) ::= <<
 <if(attr.allowsNull)>
 if  (<attr.name.lowercased> == null)
 {
-    preparedStatement.setNull(t_iIndex++, <attr.type>);
+    preparedStatement.setNull(index++, <attr.type>);
 }
 else
 {
