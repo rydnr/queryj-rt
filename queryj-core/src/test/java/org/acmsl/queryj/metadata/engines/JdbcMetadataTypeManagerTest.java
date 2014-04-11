@@ -352,4 +352,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("NCHAR", instance.getConstantName(Types.NCHAR));
     }
+
+    /**
+     * Checks whether getConstantName() works for NCLOBs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_NCLOBs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("NCLOB", instance.getConstantName(Types.NCLOB));
+    }
 }
