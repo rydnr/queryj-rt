@@ -329,7 +329,6 @@ else
 <endif><endif>
 >>
 
-
 equals_method(table, C) ::= <<
 <! Generates the equals(Object) method !>
 /**
@@ -342,13 +341,12 @@ public boolean equals(<nullable(C=C)>final Object other)
 {
     final boolean result;
 
-    if (other instanceof <table.name.voName>)
+    if (other instanceof <table.name.voName>AttributesStatementSetter)
     {
-        <notnull(C=C)>final <table.name.voName> candidate = (<table.name.voName>) other;
+        <notnull(C=C)>final <table.name.voName>AttributesStatementSetter> candidate =
+            (<table.name.voName>AttributesStatementSetter) other;
 
-        <table.attributes:{ a | <attribute_equals(attribute=a)>}; separator="">
-        result =
-            <table.attributes:{ a |<a.name.uncapitalized>Match}; separator="\n&& ">;
+        result = equals(getValues(), isUpdateOperation(), candidate.getValues(), candidate.isUpdateOperation());
     }
     else
     {
@@ -356,6 +354,25 @@ public boolean equals(<nullable(C=C)>final Object other)
     }
 
     return result;
+}
+
+/**
+ * Checks whether the state information provided match.
+ * @param myValues my {@code <table.name.voName>} values..
+ * @param myUpdate whether it's an update operation.
+ * @param hisValues his {@code <table.name.voName>} values.
+ * @param hisUpdate whether his it's an update operation.
+ * @return {@code true} if and only if both sets are equivalent.
+ */
+protected boolean equals(
+    <notnull(C=C)>final <table.name.voName> myValues,
+    final boolean myUpdate,
+    <notnull(C=C)>final <table.name.voName> hisValues,
+    final boolean hisUpdate)
+{
+    return
+           (myUpdate == hisUpdate)
+        && (myValues.equals(hisValues));
 }
 >>
 
@@ -369,18 +386,47 @@ hashcode_method(table, C) ::= <<
 @Override
 public int hashcode()
 {
+    return hashcode(getValues(), isUpdateOperation());
+}
+
+/**
+ * Computes a hashcode using given information.
+ * @param values the values.
+ * @param update whether it's an update operation.
+ * @return the computed hashcode.
+ */
+protected int hashcode(<notnull(C=C)>final <table.name.voName> values, final boolean update)
+{
     final int result;
 
     final int classHashCode = <table.name.voName>AttributesStatementSetter.class.hashcode();
 
     <table.attributes:{ a | <attribute_hashcode(attribute=a)>}; separator="\n">
 
+    final int updateHashCode = Boolean.valueOf(update).hashcode();
+
     result =
           classHashCode
-        <table.attributes:{ a |+ <a.name.uncapitalized>HashCode}; separator="\n">;
+        <table.attributes:{ a |+ <a.name.uncapitalized>HashCode}; separator="\n">
+        + updateHashCode;
 
     return result;
 }
+>>
+
+attribute_hashcode(attribute) ::= <<
+<! Generates the hashcode contribution for each attribute. !>
+<if(attribute.strictlyPrimitive)>
+final int <attribute.name.uncapitalized>HashCode = ("" + this.m__<attribute.name.capitalized>).hashcode();<else>
+<if(attribute.allowsNull)>final int <attribute.name.uncapitalized>HashCode;
+if (this.m__<attribute.name.capitalized> == null)
+{
+    <attribute.name.uncapitalized>HashCode = 0;
+}
+else
+{
+     <attribute.name.uncapitalized>HashCode = this.m__<attribute.name.capitalized>.hashCode();
+}<else>final int <attribute.name.uncapitalized>HashCode = this.m__<attribute.name.capitalized>.hashCode();<endif><endif>
 >>
 
 tostring_method(table, C) ::= <<
@@ -391,7 +437,7 @@ tostring_method(table, C) ::= <<
 @Override
 public String toString()
 {
-    StringBuilder result = new StringBuilder("{ \class\": \"<table.name.voName>AttributesStatementSetter");
+    StringBuilder result = new StringBuilder("{ \class\": \"Abstract<table.name.voName>");
 
     <table.attributes:{ a | <attribute_toString(attribute=a)>}; separator="\n">
 
@@ -399,4 +445,10 @@ public String toString()
 
     return result.toString();
 }
+>>
+
+attribute_toString(attribute) ::= <<
+<! Generates the code to include given attribute within the toString() method. !>
+result.append("\", \"<a.name.capitalized>\": \"");
+result.append(this.m__<a.name.capitalized>);
 >>
