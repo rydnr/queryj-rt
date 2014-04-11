@@ -92,7 +92,10 @@ import javax.sql.DataSource;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Types;
-
+<if(table.containsClobs)>
+import java.io.Writer;
+import java.sql.Clob;
+<endif>
 /*
  * Importing Apache Commons Logging classes
  */
