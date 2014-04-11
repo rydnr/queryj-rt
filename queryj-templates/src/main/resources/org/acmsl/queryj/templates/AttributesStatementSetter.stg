@@ -289,7 +289,7 @@ attribute_preparedstatement_specification(attr) ::= <<
 !>
 <if(!attr.clob)>
 <if(attr.allowsNull)>
-if  (<attr.nameLowercased> == null)
+if  (<attr.name.lowercased> == null)
 {
     preparedStatement.setNull(t_iIndex++, <attr.type>);
 }
