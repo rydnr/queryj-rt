@@ -231,4 +231,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("DATALINK", instance.getConstantName(Types.DATALINK));
     }
+
+    /**
+     * Checks whether getConstantName() works for DATEs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_DATEs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("DATE", instance.getConstantName(Types.DATE));
+    }
 }
