@@ -300,7 +300,7 @@ else
 }
 <else>
 preparedStatement.set<attr.objectType>(
-    t_iIndex++, <attr.nameLowercased>);
+    index++, <attr.nameLowercased>);
 <endif>
 <endif>
 
