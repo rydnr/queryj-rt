@@ -1115,6 +1115,10 @@ public class JdbcMetadataTypeManager
                 result = "JAVA_OBJECT";
                 break;
 
+            case Types.LONGNVARCHAR:
+                result = "LONGNVARCHAR";
+                break;
+
             case Types.TINYINT:
                     result = Literals.TINYINT_U;
                     break;
