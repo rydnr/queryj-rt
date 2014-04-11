@@ -275,4 +275,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("DOUBLE", instance.getConstantName(Types.DOUBLE));
     }
+
+    /**
+     * Checks whether getConstantName() works for FLOATs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_FLOATs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("FLOAT", instance.getConstantName(Types.FLOAT));
+    }
 }
