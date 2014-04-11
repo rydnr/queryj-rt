@@ -220,4 +220,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("CLOB", instance.getConstantName(Types.CLOB));
     }
+
+    /**
+     * Checks whether getConstantName() works for DATALINKs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_DATALINKs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("DATALINK", instance.getConstantName(Types.DATALINK));
+    }
 }
