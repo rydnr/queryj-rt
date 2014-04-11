@@ -259,7 +259,7 @@ public class <table.name.voName>AttributesStatementSetter
     <notnull(C=C)>final PreparedStatement preparedStatement, final boolean update)
         throws  SQLException
     {
-        // TODO
+        <if
     }
 }
 >>
