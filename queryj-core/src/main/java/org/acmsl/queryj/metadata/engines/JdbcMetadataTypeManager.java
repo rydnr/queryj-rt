@@ -1087,6 +1087,10 @@ public class JdbcMetadataTypeManager
                 result = "ARRAY";
                 break;
 
+            case Types.BLOB:
+                result = "BLOB";
+                break;
+
             case Types.BIT:
                     result = "BIT";
                     break;
