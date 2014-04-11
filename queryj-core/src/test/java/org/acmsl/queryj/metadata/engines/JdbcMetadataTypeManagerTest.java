@@ -374,4 +374,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("NULL", instance.getConstantName(Types.NULL));
     }
+
+    /**
+     * Checks whether getConstantName() works for NUMERICs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_NUMERICs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("NUMERIC", instance.getConstantName(Types.NUMERIC));
+    }
 }
