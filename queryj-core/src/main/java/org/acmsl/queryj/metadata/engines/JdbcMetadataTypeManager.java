@@ -1095,6 +1095,10 @@ public class JdbcMetadataTypeManager
                     result = "BIT";
                     break;
 
+            case Types.BOOLEAN:
+                result = "BOOLEAN";
+                break;
+
             case Types.TINYINT:
                     result = Literals.TINYINT_U;
                     break;
