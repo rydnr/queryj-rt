@@ -330,7 +330,7 @@ else
     preparedStatement.set<attr.objectType>(index++, <attribute_to_primitive(attribute=attr)>);
 }<else>
 preparedStatement.set<attr.objectType>(index++, <attr.name.uncapitalized>);<endif
-><else>CLOB<endif>
+><else>// TODO: CLOB<endif>
 >>
 
 equals_method(table, C) ::= <<
