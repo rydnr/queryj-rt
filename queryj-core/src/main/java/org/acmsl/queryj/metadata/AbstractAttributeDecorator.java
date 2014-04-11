@@ -123,6 +123,8 @@ public abstract class AbstractAttributeDecorator
      * @param tableName the table name.
      * @param comment the attribute comment.
      * @param ordinalPosition the ordinal position.
+     * @param length the length.
+     * @param precision the precision.
      * @param keyword the keyword used to retrieve the value, if any.
      * @param retrievalQuery the query used to retrieve the value, if any.
      * @param sequence the sequence (for Oracle engines).
