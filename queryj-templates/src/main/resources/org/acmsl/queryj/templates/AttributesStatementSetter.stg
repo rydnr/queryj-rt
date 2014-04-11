@@ -269,7 +269,6 @@ public class <table.name.voName>AttributesStatementSetter
 <  endif>
 
         <table.own.minus.externallyManagedAttributes:{ a | <attribute_preparedstatementquery_specification(attr=a)>}; separator="\n">
-
     }
 }
 >>
