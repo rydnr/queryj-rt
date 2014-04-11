@@ -488,32 +488,6 @@ public class PerTableTemplatesTest
                 @NotNull final String packageName =
                     resolvePackage(PACKAGE_MAPPINGS.get(templateName), table.getName(), resolveEngine(engine));
 
-                @NotNull final QueryJCommand t_Command =
-                    new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
-
-                new QueryJCommandWrapper\<MetadataManager>(t_Command).setSetting(
-                    DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, metadataManager);
-                new QueryJCommandWrapper\<CustomSqlProvider>(t_Command).setSetting(
-                    CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, sqlProvider);
-                new QueryJCommandWrapper\<String>(t_Command).setSetting(
-                    QueryJSettings.PACKAGE, BASE_PACKAGE_NAME);
-                new QueryJCommandWrapper\<String>(t_Command).setSetting(
-                    QueryJSettings.REPOSITORY, "acme");
-                new QueryJCommandWrapper\<String>(t_Command).setSetting(
-                    QueryJSettings.HEADER_FILE, "");
-                new QueryJCommandWrapper\<Boolean>(t_Command).setSetting(
-                    QueryJSettings.DISABLE_TIMESTAMPS, false);
-                new QueryJCommandWrapper\<Boolean>(t_Command).setSetting(
-                    QueryJSettings.IMPLEMENT_MARKER_INTERFACES, false);
-                new QueryJCommandWrapper\<Boolean>(t_Command).setSetting(
-                    QueryJSettings.DISABLE_NOTNULL_ANNOTATIONS, false);
-                new QueryJCommandWrapper\<Boolean>(t_Command).setSetting(
-                    QueryJSettings.DISABLE_CHECKTHREAD_ANNOTATIONS, false);
-                new QueryJCommandWrapper\<String>(t_Command).setSetting(
-                    QueryJSettings.JNDI_DATASOURCE, "");
-                new QueryJCommandWrapper\<String>(t_Command).setSetting(
-                    QueryJSettings.VERSION, "<C.version>");
-
                 @Nullable final PerTableTemplate\<PerTableTemplateContext> template =
                     templateFactory.createTemplate(
                         t_Command,
