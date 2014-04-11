@@ -1111,6 +1111,10 @@ public class JdbcMetadataTypeManager
                 result = "DISTINCT";
                 break;
 
+            case Types.JAVA_OBJECT:
+                result = "JAVA_OBJECT";
+                break;
+
             case Types.TINYINT:
                     result = Literals.TINYINT_U;
                     break;
