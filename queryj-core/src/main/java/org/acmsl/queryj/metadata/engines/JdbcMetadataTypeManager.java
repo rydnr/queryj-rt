@@ -1147,6 +1147,10 @@ public class JdbcMetadataTypeManager
                 result = "REF_CURSOR";
                 break;
 
+            case Types.ROWID:
+                result = "ROWID";
+                break;
+
             case Types.TINYINT:
                     result = Literals.TINYINT_U;
                     break;
