@@ -1143,6 +1143,10 @@ public class JdbcMetadataTypeManager
                 result = "REF";
                 break;
 
+            case Types.REF_CURSOR:
+                result = "REF_CURSOR";
+                break;
+
             case Types.TINYINT:
                     result = Literals.TINYINT_U;
                     break;
