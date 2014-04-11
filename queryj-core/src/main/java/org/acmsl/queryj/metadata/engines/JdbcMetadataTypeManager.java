@@ -1139,6 +1139,10 @@ public class JdbcMetadataTypeManager
                 result = "OTHER";
                 break;
 
+            case Types.REF:
+                result = "REF";
+                break;
+
             case Types.TINYINT:
                     result = Literals.TINYINT_U;
                     break;
