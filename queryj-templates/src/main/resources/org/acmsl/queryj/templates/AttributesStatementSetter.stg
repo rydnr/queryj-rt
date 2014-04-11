@@ -392,47 +392,18 @@ hashcode_method(table, C) ::= <<
 @Override
 public int hashcode()
 {
-    return hashcode(getValues(), isUpdateOperation());
-}
-
-/**
- * Computes a hashcode using given information.
- * @param values the values.
- * @param update whether it's an update operation.
- * @return the computed hashcode.
- */
-protected int hashcode(<notnull(C=C)>final <table.name.voName> values, final boolean update)
-{
     final int result;
 
     final int classHashCode = <table.name.voName>AttributesStatementSetter.class.hashcode();
 
-    <table.attributes:{ a | <attribute_hashcode(attribute=a)>}; separator="\n">
+    final int valuesHashCode = this.m__Values.hashcode();
 
-    final int updateHashCode = Boolean.valueOf(update).hashcode();
+    final int updateHashCode = Boolean.valueOf(this.m__bUpdateOperation).hashcode();
 
-    result =
-          classHashCode
-        <table.attributes:{ a |+ <a.name.uncapitalized>HashCode}; separator="\n">
-        + updateHashCode;
+    result = classHashCode + valuesHashCode + updateHashCode;
 
     return result;
 }
->>
-
-attribute_hashcode(attribute) ::= <<
-<! Generates the hashcode contribution for each attribute. !>
-<if(attribute.strictlyPrimitive)>
-final int <attribute.name.uncapitalized>HashCode = ("" + values.get<attribute.name.capitalized>()).hashcode();<else>
-<if(attribute.allowsNull)>final int <attribute.name.uncapitalized>HashCode;
-if (values.get<attribute.name.capitalized>() == null)
-{
-    <attribute.name.uncapitalized>HashCode = 0;
-}
-else
-{
-     <attribute.name.uncapitalized>HashCode = get<attribute.name.capitalized>().hashCode();
-}<else>final int <attribute.name.uncapitalized>HashCode = get<attribute.name.capitalized>().hashCode();<endif><endif>
 >>
 
 tostring_method(table, C) ::= <<
