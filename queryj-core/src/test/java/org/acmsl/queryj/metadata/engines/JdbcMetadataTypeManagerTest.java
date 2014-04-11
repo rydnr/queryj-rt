@@ -132,4 +132,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertTrue(instance.isPrimitiveWrapper(Float.class.getSimpleName()));
     }
+
+    /**
+     * Checks whether getJavaTypeConstant() works for BIGINTs.
+     */
+    @Test
+    public void getSqlTypeConstant_retrieves_the_correct_constant_for_BIGINTs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("BIGINT", instance.getJavaTypeConstant(Types.BIGINT));
+    }
 }

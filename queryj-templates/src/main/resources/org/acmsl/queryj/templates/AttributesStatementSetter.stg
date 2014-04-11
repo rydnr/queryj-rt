@@ -249,10 +249,7 @@ public class <table.name.voName>AttributesStatementSetter
     public void setValues(<notnull(C=C)>final PreparedStatement preparedStatement)
         throws  SQLException
     {
-        setValues(
-            preparedStatement,
-            getValues(),
-            isUpdateOperation());
+        setValues(preparedStatement, getValues(), isUpdateOperation());
     }
 
     /**
@@ -331,7 +328,7 @@ attribute_preparedstatement_specification(attr) ::= <<
 }
 else
 {
-    preparedStatement.set<attr.objectType>(index++, indirect_template(name=attr.objectType + _to_primitive);
+    preparedStatement.set<attr.objectType>(index++, <attribute_to_primitive(attribute=attr)>);
 }<else>preparedStatement.set<attr.objectType>(index++, <attr.name.uncapitalized>);
 <endif><endif>
 >>

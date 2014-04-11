@@ -122,6 +122,7 @@ public abstract class AbstractAttributeDecorator
      * @param type the type.
      * @param tableName the table name.
      * @param comment the attribute comment.
+     * @param ordinalPosition the ordinal position.
      * @param keyword the keyword used to retrieve the value, if any.
      * @param retrievalQuery the query used to retrieve the value, if any.
      * @param sequence the sequence (for Oracle engines).
@@ -844,8 +845,7 @@ public abstract class AbstractAttributeDecorator
     }
 
     /**
-     * Retrieves the attribute type, as a {@link java.sql.Types}'s constant.
-     *
+     * Retrieves the attribute type, as a {@link java.sql.Types}'s constant value.
      * @return such information.
      */
     @Override
@@ -855,14 +855,39 @@ public abstract class AbstractAttributeDecorator
     }
 
     /**
-     * Retrieves the attribute type, as a {@link java.sql.Types}'s constant.
+     * Retrieves the attribute type, as a {@link java.sql.Types}'s constant value.
      * @param attribute the {@link Attribute attribute}.
      * @param metadataTypeManager the {@link MetadataTypeManager} instance.
      * @return the {@link java.sql.Types}'s constant value.
      */
-    protected int getJavaSqlType(@NotNull final Attribute<String> attribute, @NotNull final MetadataTypeManager metadataTypeManager)
+    protected int getJavaSqlType(
+        @NotNull final Attribute<String> attribute, @NotNull final MetadataTypeManager metadataTypeManager)
     {
         return metadataTypeManager.getJavaType(attribute.getType());
+    }
+
+    /**
+     * Retrieves the attribute type, as a {@link java.sql.Types}'s constant name.
+     * @return such information.
+     */
+    @Override
+    @NotNull
+    public String getJavaSqlTypeConstant()
+    {
+        return getJavaSqlTypeConstant(getAttribute(), getMetadataTypeManager());
+    }
+
+    /**
+     * Retrieves the attribute type, as a {@link java.sql.Types}'s constant value.
+     * @param attribute the {@link Attribute attribute}.
+     * @param metadataTypeManager the {@link MetadataTypeManager} instance.
+     * @return the {@link java.sql.Types}'s constant value.
+     */
+    @NotNull
+    protected String getJavaSqlTypeConstant(
+        @NotNull final Attribute<String> attribute, @NotNull final MetadataTypeManager metadataTypeManager)
+    {
+        return metadataTypeManager.getJavaTypeConstant(attribute.getTypeId());
     }
 
     /**
