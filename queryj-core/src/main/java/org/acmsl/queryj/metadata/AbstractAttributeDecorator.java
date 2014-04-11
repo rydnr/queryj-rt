@@ -887,9 +887,9 @@ public abstract class AbstractAttributeDecorator
      */
     @Override
     @NotNull
-    public String getJavaSqlTypeConstant()
+    public String getConstantName()
     {
-        return getJavaSqlTypeConstant(getAttribute(), getMetadataTypeManager());
+        return getConstantName(getAttribute(), getMetadataTypeManager());
     }
 
     /**
@@ -899,10 +899,10 @@ public abstract class AbstractAttributeDecorator
      * @return the {@link java.sql.Types}'s constant value.
      */
     @NotNull
-    protected String getJavaSqlTypeConstant(
+    protected String getConstantName(
         @NotNull final Attribute<String> attribute, @NotNull final MetadataTypeManager metadataTypeManager)
     {
-        return metadataTypeManager.getJavaTypeConstant(attribute.getTypeId());
+        return metadataTypeManager.getConstantName(attribute.getTypeId());
     }
 
     /**

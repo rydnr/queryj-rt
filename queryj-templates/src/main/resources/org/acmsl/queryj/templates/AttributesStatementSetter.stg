@@ -324,7 +324,7 @@ attribute_preparedstatement_specification(attr) ::= <<
 !>
 <if(!attr.clob)><if(attr.allowsNull)>if  (<attr.name.uncapitalized> == null)
 {
-    preparedStatement.setNull(index++, Types.<attr.sqlType>);
+    preparedStatement.setNull(index++, Types.<attr.constantName>);
 }
 else
 {

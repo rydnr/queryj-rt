@@ -99,6 +99,6 @@ public interface AttributeDecorator
      */
     @SuppressWarnings("unused")
     @NotNull
-    String getJavaSqlTypeConstant();
+    String getConstantName();
 
 }
