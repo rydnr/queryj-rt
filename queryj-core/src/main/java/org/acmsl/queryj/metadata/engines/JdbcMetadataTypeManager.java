@@ -1123,6 +1123,10 @@ public class JdbcMetadataTypeManager
                 result = "NCHAR";
                 break;
 
+            case Types.NCLOB:
+                result = "NCLOB";
+                break;
+
             case Types.TINYINT:
                     result = Literals.TINYINT_U;
                     break;
