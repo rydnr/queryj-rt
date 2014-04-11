@@ -107,6 +107,9 @@ public class AbstractTableDecoratorTest
         @NotNull final AbstractTableDecorator instance =
             new AbstractTableDecorator(table, metadataManager, decoratorFactory, customSqlProvider)
             {
+                /**
+                 * {@inheritDoc}
+                 */
                 @Nullable
                 @Override
                 protected Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>> createTableDecorator(
@@ -177,6 +180,9 @@ public class AbstractTableDecoratorTest
         @NotNull final AbstractTableDecorator instance =
             new AbstractTableDecorator(table, metadataManager, decoratorFactory, customSqlProvider)
             {
+                /**
+                 * {@inheritDoc}
+                 */
                 @Nullable
                 @Override
                 protected Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>> createTableDecorator(

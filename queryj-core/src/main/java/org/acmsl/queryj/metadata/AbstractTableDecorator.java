@@ -609,8 +609,8 @@ public abstract class AbstractTableDecorator
     /**
      * Checks whether given foreign keys are decorated already or not.
      * @param foreignKeys the {@link ForeignKey} list.
-     * @return {@code true} in such case.
      * @param <V> the value type.
+     * @return {@code true} in such case.
      */
     protected <V> boolean areDecorated(@NotNull final List<ForeignKey<V>> foreignKeys)
     {
@@ -987,8 +987,8 @@ public abstract class AbstractTableDecorator
     /**
      * Retrieves whether the attributes are already decorated or not.
      * @param attributes the {@link Attribute} list.
-     * @return {@code true} in such case.
      * @param <K> the attribute type.
+     * @return {@code true} in such case.
      */
     protected <K> boolean alreadyDecorated(@NotNull final ListDecorator<Attribute<K>> attributes)
     {
@@ -1507,8 +1507,8 @@ public abstract class AbstractTableDecorator
      * Filters certain attributes.
      * @param attributes the attributes.
      * @param toExclude the attributes to exclude.
-     * @return such list.
      * @param <K> the attribute type.
+     * @return such list.
      */
     @SuppressWarnings("unused")
     @NotNull
@@ -2075,7 +2075,32 @@ public abstract class AbstractTableDecorator
      */
     public boolean getContainsClobs()
     {
-        return false;
+        return containClobs(getAttributes(), getMetadataManager().getMetadataTypeManager());
+    }
+
+    /**
+     * Checks whether any attribute is a clob.
+     * @param attributes the {@link Attribute}s.
+     * @param metadataTypeManager the {@link MetadataTypeManager} instance.
+     * @return {@code true} in such case.
+     */
+    protected boolean containClobs(
+        @NotNull final ListDecorator<Attribute<DecoratedString>> attributes,
+        @NotNull final MetadataTypeManager metadataTypeManager)
+    {
+        boolean result = false;
+
+        for (@Nullable final Attribute<DecoratedString> attribute : attributes)
+        {
+            if (   (attribute != null)
+                && (metadataTypeManager.isClob(attribute.getTypeId())))
+            {
+                result = true;
+                break;
+            }
+        }
+
+        return result;
     }
 
     /**
