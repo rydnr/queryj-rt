@@ -10,7 +10,7 @@
 **** DONE ValueObjectFactory.stg
 **** TODO BaseDAO.stg 
 **** TODO DAO.stg
-**** TODO AttributesStatementSetter.stg
+**** DONE AttributesStatementSetter.stg
 **** DONE ResultSetExtractor.stg
 **** DONE PkStatementSetter.stg
 **** DONE FkStatementSetter.stg -> Depends on FK mgmt
