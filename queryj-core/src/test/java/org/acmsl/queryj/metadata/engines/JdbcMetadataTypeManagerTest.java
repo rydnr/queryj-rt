@@ -464,13 +464,13 @@ public class JdbcMetadataTypeManagerTest
     }
 
     /**
-     * Checks whether getConstantName() works for SMALLINTs.
+     * Checks whether getConstantName() works for SQLXMLs.
      */
     @Test
-    public void getConstantName_retrieves_the_correct_constant_for_SMALLINTs()
+    public void getConstantName_retrieves_the_correct_constant_for_SQLXMLs()
     {
         @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
 
-        Assert.assertEquals("S", instance.getConstantName(Types.SQLXML));
+        Assert.assertEquals("SQLXML", instance.getConstantName(Types.SQLXML));
     }
 }
