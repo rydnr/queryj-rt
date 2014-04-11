@@ -1159,6 +1159,10 @@ public class JdbcMetadataTypeManager
                 result = "STRUCT";
                 break;
 
+            case Types.TIME_WITH_TIMEZONE:
+                result = "TIME_WITH_TIMEZONE";
+                break;
+
             case Types.TINYINT:
                     result = Literals.TINYINT_U;
                     break;
