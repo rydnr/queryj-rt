@@ -89,13 +89,13 @@ import javax.sql.DataSource;
 <if(table.attributeTypes)>
 <table.attributeTypes:{ t | import <t>;}; separator="\n">
 <endif>
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Types;
 <if(table.containsClobs)>
 import java.io.Writer;
 import java.sql.Clob;
 <endif>
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Types;
 
 /*
  * Importing Apache Commons Logging classes
