@@ -91,6 +91,7 @@ import javax.sql.DataSource;
 <endif>
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.sql.Types;
 
 /*
  * Importing Apache Commons Logging classes
@@ -326,7 +327,7 @@ attribute_preparedstatement_specification(attr) ::= <<
 !>
 <if(!attr.clob)><if(attr.allowsNull)>if  (<attr.name.uncapitalized> == null)
 {
-    preparedStatement.setNull(index++, <attr.type>);
+    preparedStatement.setNull(index++, Types.<attr.sqlType>);
 }
 else
 {
