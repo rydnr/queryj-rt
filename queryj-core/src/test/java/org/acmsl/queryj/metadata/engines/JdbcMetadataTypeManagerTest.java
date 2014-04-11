@@ -385,4 +385,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("NUMERIC", instance.getConstantName(Types.NUMERIC));
     }
+
+    /**
+     * Checks whether getConstantName() works for NVARCHARs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_NVARCHARs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("NVARCHAR", instance.getConstantName(Types.NVARCHAR));
+    }
 }
