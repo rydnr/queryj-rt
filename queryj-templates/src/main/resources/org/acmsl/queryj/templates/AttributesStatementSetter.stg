@@ -284,7 +284,7 @@ public class <table.name.voName>AttributesStatementSetter
      */
     protected void setValues(
         <notnull(C=C)>final PreparedStatement preparedStatement,
-        <table.attributes:{a | <attribute_method_parameter(attr=a)>; separator=",\n">,
+        <table.attributes:{a | <attribute_method_parameter(attr=a)>}; separator=",\n">,
         final boolean update)
         throws  SQLException
     {
