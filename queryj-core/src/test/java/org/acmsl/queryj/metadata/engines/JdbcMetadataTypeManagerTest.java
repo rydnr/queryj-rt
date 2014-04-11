@@ -308,4 +308,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("JAVA_OBJECT", instance.getConstantName(Types.JAVA_OBJECT));
     }
+
+    /**
+     * Checks whether getConstantName() works for LONGNVARCHARs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_LONGNVARCHARs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("LONGNVARCHAR", instance.getConstantName(Types.LONGNVARCHAR));
+    }
 }
