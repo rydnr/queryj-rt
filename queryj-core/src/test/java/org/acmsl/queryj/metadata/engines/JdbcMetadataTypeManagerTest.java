@@ -429,4 +429,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("REF", instance.getConstantName(Types.REF));
     }
+
+    /**
+     * Checks whether getConstantName() works for REF_CURSORs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_REF_CURSORs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("REF_CURSOR", instance.getConstantName(Types.REF_CURSOR));
+    }
 }
