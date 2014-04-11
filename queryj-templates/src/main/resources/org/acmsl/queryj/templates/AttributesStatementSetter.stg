@@ -259,6 +259,8 @@ public class <table.name.voName>AttributesStatementSetter
     <notnull(C=C)>final PreparedStatement preparedStatement, final boolean update)
         throws  SQLException
     {
+        int index = 1;
+
 <  if(table.externallyManagedAttributes)>
         if (update)
         {
