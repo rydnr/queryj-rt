@@ -68,6 +68,9 @@ import org.checkthread.annotations.ThreadSafe;
 public class MySQL4xMetadataTypeManager
     extends  JdbcMetadataTypeManager
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = 465592675402130675L;
 
     /**

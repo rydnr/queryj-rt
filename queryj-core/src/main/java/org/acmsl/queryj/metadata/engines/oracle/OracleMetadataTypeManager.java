@@ -67,6 +67,9 @@ import org.checkthread.annotations.ThreadSafe;
 public class OracleMetadataTypeManager
     extends  JdbcMetadataTypeManager
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = -5734188707115499051L;
 
     /**

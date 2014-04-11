@@ -1,7 +1,7 @@
 /*
-                        QueryJ
+                        QueryJ Core
 
-    Copyright (C) 2002-2007  Jose San Leandro Armendariz
+    Copyright (C) 2002-today  Jose San Leandro Armendariz
                         chous@acm-sl.org
 
     This library is free software; you can redistribute it and/or
@@ -39,7 +39,7 @@
 package org.acmsl.queryj.metadata;
 
 /*
- * Importing project classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.metadata.vo.AbstractAttribute;
 import org.acmsl.queryj.metadata.vo.Attribute;
@@ -56,16 +56,27 @@ import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+/*
+ * Importing checkthread.org annotation.
+ */
+import org.checkthread.annotations.ThreadSafe;
+
 /**
  * Decorates <code>Attribute</code> instances to provide required alternate
  * representations of the information stored therein.
  * @author <a href="mailto:chous@acm-sl.org"
  *         >Jose San Leandro</a>
  */
+@ThreadSafe
 public abstract class AbstractAttributeDecorator
     extends  AbstractAttribute<DecoratedString>
     implements  AttributeDecorator
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = -5926089876321230076L;
+
     /**
      * The decorated attribute.
      */
@@ -315,6 +326,7 @@ public abstract class AbstractAttributeDecorator
     /**
      * Retrieves whether this attribute can be modelled as a primitive or not.
      * @param typeId the attribute type.
+     * @param nullable whether the attribute allows nulls.
      * @param metadataTypeManager the metadata type manager.
      * @return <code>false</code> if no primitive matches.
      */
@@ -413,7 +425,7 @@ public abstract class AbstractAttributeDecorator
 
     /**
      * Retrieves whether the attribute is a blob or not.
-     * return such information.
+     * @return such information.
      */
     @SuppressWarnings("unused")
     public boolean isBlob()
@@ -426,7 +438,7 @@ public abstract class AbstractAttributeDecorator
      * @param type the type.
      * @param metadataTypeManager the <code>MetadataTypeManager</code>
      * instance.
-     * return such information.
+     * @return such information.
      */
     protected boolean isBlob(
         final int type, @NotNull final MetadataTypeManager metadataTypeManager)
@@ -436,7 +448,7 @@ public abstract class AbstractAttributeDecorator
 
     /**
      * Retrieves whether the attribute is a clob or not.
-     * return such information.
+     * @return such information.
      */
     @Override
     public boolean isClob()
@@ -449,7 +461,7 @@ public abstract class AbstractAttributeDecorator
      * @param type the type.
      * @param metadataTypeManager the <code>MetadataTypeManager</code>
      * instance.
-     * return such information.
+     * @return such information.
      */
     protected boolean isClob(
         final int type, @NotNull final MetadataTypeManager metadataTypeManager)
@@ -459,7 +471,7 @@ public abstract class AbstractAttributeDecorator
 
     /**
      * Retrieves whether the attribute is a string or not.
-     * return such information.
+     * @return such information.
      */
     @Override
     public boolean isString()
@@ -472,7 +484,7 @@ public abstract class AbstractAttributeDecorator
      * @param type the type.
      * @param metadataTypeManager the <code>MetadataTypeManager</code>
      * instance.
-     * return such information.
+     * @return such information.
      */
     protected boolean isString(
         final int type, @NotNull final MetadataTypeManager metadataTypeManager)
@@ -482,7 +494,7 @@ public abstract class AbstractAttributeDecorator
 
     /**
      * Retrieves whether the attribute is a date or not.
-     * return such information.
+     * @return such information.
      */
     @Override
     public boolean isDate()
@@ -495,7 +507,7 @@ public abstract class AbstractAttributeDecorator
      * @param type the type.
      * @param metadataTypeManager the <code>MetadataTypeManager</code>
      * instance.
-     * return such information.
+     * @return such information.
      */
     protected boolean isDate(
         final String type, @NotNull final MetadataTypeManager metadataTypeManager)
@@ -505,7 +517,7 @@ public abstract class AbstractAttributeDecorator
 
     /**
      * Retrieves whether the attribute is a timestamp or not.
-     * return such information.
+     * @return such information.
      */
     @SuppressWarnings("unused")
     public boolean isTimestamp()
@@ -518,7 +530,7 @@ public abstract class AbstractAttributeDecorator
      * @param type the type.
      * @param metadataTypeManager the <code>MetadataTypeManager</code>
      * instance.
-     * return such information.
+     * @return such information.
      */
     protected boolean isTimestamp(
         final int type, @NotNull final MetadataTypeManager metadataTypeManager)
@@ -538,6 +550,7 @@ public abstract class AbstractAttributeDecorator
 
     /**
      * Retrieves the query to retrieve the externally-managed value.
+     * @param attribute the {@link Attribute}.
      * @param managedExternally whether the attribute is managed externally.
      * @return such information.
      */
