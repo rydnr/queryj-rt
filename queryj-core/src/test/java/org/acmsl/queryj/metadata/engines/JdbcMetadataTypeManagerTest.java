@@ -539,4 +539,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("TINYINT", instance.getConstantName(Types.TINYINT));
     }
+
+    /**
+     * Checks whether getConstantName() works for VARBINARYs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_VARBINARYs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("VARBINARY", instance.getConstantName(Types.VARBINARY));
+    }
 }
