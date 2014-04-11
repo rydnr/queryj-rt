@@ -286,7 +286,6 @@ attribute_query_specification(attr) ::= <<
  Generates the code to specify the attribute into the query.
  @param attr the attribute.
 !>
-preparedStatement.set<attr.objectType>(
-    <attr.name.lowercased>);
+preparedStatement.set<attr.objectType>(<attr.name.lowercased>);
 >>
 
