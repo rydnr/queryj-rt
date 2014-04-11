@@ -276,7 +276,7 @@ public class <table.name.voName>AttributesStatementSetter
     /**
      * Specifies the values on given {@link PreparedStatement}
      * @param preparedStatement the prepared statement.
-     <table.attributes:{ a | <attribute_javadoc(attribute=a)>}; separator="\n">
+     <table.attributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
      * @param update whether it's an update operation.
      * @throws SQLException intercepted by \<i>Spring\</i>.
      */
