@@ -1155,6 +1155,10 @@ public class JdbcMetadataTypeManager
                 result = "SQLXML";
                 break;
 
+            case Types.STRUCT:
+                result = "STRUCT";
+                break;
+
             case Types.TINYINT:
                     result = Literals.TINYINT_U;
                     break;
