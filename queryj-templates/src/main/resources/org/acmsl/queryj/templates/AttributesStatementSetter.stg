@@ -287,7 +287,6 @@ attribute_query_specification(attr) ::= <<
  @param attr the attribute.
 !>
 preparedStatement.set<attr.objectType>(
-    <attr.table.name.uppercased>.<attr.name.uppercased>.equals(),
     <attr.name.lowercased>);
 >>
 
