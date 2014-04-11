@@ -1103,6 +1103,10 @@ public class JdbcMetadataTypeManager
                 result = "CLOB";
                 break;
 
+            case Types.DATALINK:
+                result = "DATALINK";
+                break;
+
             case Types.TINYINT:
                     result = Literals.TINYINT_U;
                     break;
