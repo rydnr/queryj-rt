@@ -260,7 +260,10 @@ public class <table.name.voName>AttributesStatementSetter
         throws  SQLException
     {
 <  if(table.externallyManagedAttributes)>
-
+        if (update)
+        {
+            <table.externallyManagedAttributes:{ a |
+        }
 <  endif>
     }
 }
