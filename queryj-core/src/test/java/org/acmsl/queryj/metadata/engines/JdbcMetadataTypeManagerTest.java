@@ -473,4 +473,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("SQLXML", instance.getConstantName(Types.SQLXML));
     }
+
+    /**
+     * Checks whether getConstantName() works for STRUCTs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_STRUCTs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("STRUCT", instance.getConstantName(Types.STRUCT));
+    }
 }
