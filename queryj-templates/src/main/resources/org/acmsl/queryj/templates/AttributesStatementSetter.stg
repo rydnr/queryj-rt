@@ -291,7 +291,7 @@ public class <table.name.voName>AttributesStatementSetter
         {
             <table.externallyManagedAttributes:{ a | <attribute_preparedstatement_specification(attr=a)>}; separator="\n">
         }<
-   endif>a
+   endif>
         <table.own.minus.externallyManagedAttributes:{ a | <attribute_preparedstatement_specification(attr=a)>}; separator="\n">
     }
 
@@ -315,13 +315,12 @@ attribute_member_declaration(attribute) ::= <<
 private <attribute.javaType> <attribute.name.uncapitalized>;
 >>
 
-
 attribute_preparedstatement_specification(attr) ::= <<
 <!
  Generates the code to specify the attribute into the PreparedStatement.
  @param attr the attribute.
 !>
-<if(!attr.clob)><if(attr.allowsNull)>
+<if(!attr.clob)><if(attr.allowsNull)>b
 if  (<attr.name.uncapitalized> == null)
 {
     preparedStatement.setNull(index++, Types.<attr.constantName>);
