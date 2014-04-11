@@ -1083,6 +1083,10 @@ public class JdbcMetadataTypeManager
 
         switch (dataType)
         {
+            case Types.ARRAY:
+                result = "ARRAY";
+                break;
+
             case Types.BIT:
                     result = "BIT";
                     break;
