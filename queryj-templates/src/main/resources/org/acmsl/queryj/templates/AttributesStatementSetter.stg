@@ -293,6 +293,6 @@ query.set<attr.objectType>(
 <endif>
 
     <attr.table.name.uppercased>.<attr.name.uppercased>.equals(),
-    <attr.name.Lowercased>);
+    <attr.name.lowercased>);
 >>
 
