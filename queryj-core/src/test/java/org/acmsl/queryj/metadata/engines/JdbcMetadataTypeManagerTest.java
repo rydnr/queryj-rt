@@ -209,4 +209,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("CHAR", instance.getConstantName(Types.CHAR));
     }
+
+    /**
+     * Checks whether getConstantName() works for CLOBs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_CLOBs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("CLOB", instance.getConstantName(Types.CLOB));
+    }
 }
