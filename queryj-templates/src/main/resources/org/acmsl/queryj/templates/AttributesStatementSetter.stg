@@ -287,7 +287,7 @@ attribute_query_specification(attr) ::= <<
  @param attr the attribute.
 !>
 <if(attr.numberSmallerThanInt)>
-preparedStatement.set<attr.javaTypeInt(
+preparedStatement.set<attr.objectType>(Int(
 <else>
 query.set<attr.objectType>(
 <endif>
