@@ -181,34 +181,37 @@ public class <table.name.voName>AttributesStatementSetter
         final boolean updateOperation)
     {
         immutableSetValues(values);
-            <table.own.minus.primaryKey:{ attr | <attr.name.uncapitalized>,};
-              separator="\n">
-            updateOperation);
-
-        <table.primaryKey:
-          { attr | immutableSet<attr.nameCapitalized>(<attr.name.uncapitalized>);};
-          separator="\n">
-    }
-
-    /**
-     * Creates a \<code><table.name.voName>AttributesStatementSetter\</code>
-     * instance.
-     <table.own.minus.primaryKey:{a | <attribute_javadoc(attr=a)>};
-        separator="\n">
-     * @param updateOperation whether the operation is an update.
-     */
-    public <table.name.voName>AttributesStatementSetter(
-        <table.own.minus.primaryKey:{ a | <attribute_method_parameter_declaration(attribute=a)>};
-          separator="\n">
-        final boolean updateOperation)
-    {
-        <table.own.minus.primaryKey:
-          { attr | immutableSet<attr.name.capitalized>(<attr.name.uncapitalized>);};
-          separator="\n">
         immutableSetUpdateOperation(updateOperation);
     }
 
-    <table.attributes:{ a | <attribute_accessors(attribute=a)>}; separator="\n\n">
+    /**
+     * Specifies the values.
+     * @param values the {@link <table.name.voName>} instance.
+     */
+    protected final void immutableSetValues(<notnull(C=C)>final <table.name.voName> values)
+    {
+        this.m__Values = values;
+    }
+
+    /**
+     * Specifies the values.
+     * @param values the {@link <table.name.voName>} instance.
+     */
+    @SuppressWarnings("unused")
+    protected void setValues(<notnull(C=C)>final <table.name.voName> values)
+    {
+        immutableSetValues(values);
+    }
+
+    /**
+     * Retrieves the values.
+     * @return such {@link <table.name.voName>} instance.
+     */
+    <notnull(C=C)>
+    public <table.name.voName> getValues()
+    {
+        return this.m__Values;
+    }
 
     /**
      * Specifies whether the operation is an update or not.
@@ -249,18 +252,40 @@ public class <table.name.voName>AttributesStatementSetter
     {
         setValues(
             preparedStatement,
-            <table.attributes:{ attr | get<attr.name.capitalized>()}; separator=",\n">,
+            getValues(),
             isUpdateOperation());
     }
 
     /**
      * Specifies the values on given {@link PreparedStatement}
      * @param preparedStatement the prepared statement.
+     * @param values the {@link <table.vo.name>} instance.
      * @param update whether it's an update operation.
      * @throws SQLException intercepted by \<i>Spring\</i>.
      */
     protected void setValues(
-    <notnull(C=C)>final PreparedStatement preparedStatement, final boolean update)
+        <notnull(C=C)>final PreparedStatement preparedStatement,
+        <notnull(C=C)>final <table.name.voName> values,
+        final boolean update)
+        throws  SQLException
+    {
+        setValues(
+            preparedStatement,
+            <table.attributes:{ attr | values.get<attr.name.capitalized>()}; separator=",\n">,
+            isUpdateOperation());
+    }
+
+    /**
+     * Specifies the values on given {@link PreparedStatement}
+     * @param preparedStatement the prepared statement.
+     <table.attributes:{ a | <attribute_javadoc(attribute=a)>}; separator="\n">
+     * @param update whether it's an update operation.
+     * @throws SQLException intercepted by \<i>Spring\</i>.
+     */
+    protected void setValues(
+        <notnull(C=C)>final PreparedStatement preparedStatement,
+        <table.attributes:{a | <attribute_method_parameter(attr=a)>; separator=",\n">,
+        final boolean update)
         throws  SQLException
     {
         int index = 1;
