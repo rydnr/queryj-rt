@@ -264,4 +264,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("DISTINCT", instance.getConstantName(Types.DISTINCT));
     }
+
+    /**
+     * Checks whether getConstantName() works for DOUBLEs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_DOUBLEs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("DOUBLE", instance.getConstantName(Types.DOUBLE));
+    }
 }
