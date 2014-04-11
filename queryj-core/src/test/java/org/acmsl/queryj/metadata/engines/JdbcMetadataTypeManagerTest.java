@@ -550,4 +550,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("VARBINARY", instance.getConstantName(Types.VARBINARY));
     }
+
+    /**
+     * Checks whether getConstantName() works for VARCHARs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_VARCHARs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("VARCHAR", instance.getConstantName(Types.VARCHAR));
+    }
 }
