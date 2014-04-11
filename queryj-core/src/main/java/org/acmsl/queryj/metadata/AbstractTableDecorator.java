@@ -2070,6 +2070,15 @@ public abstract class AbstractTableDecorator
     }
 
     /**
+     * Checks whether any attribute is a clob.
+     * @return {@code true} in such case.
+     */
+    public boolean getContainsClobs()
+    {
+        return false;
+    }
+
+    /**
      * {@inheritDoc}
      */
     @NotNull
