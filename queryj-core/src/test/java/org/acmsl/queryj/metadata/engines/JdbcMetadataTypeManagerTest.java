@@ -330,4 +330,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("LONGVARBINARY", instance.getConstantName(Types.LONGVARBINARY));
     }
+
+    /**
+     * Checks whether getConstantName() works for LONGVARCHARs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_LONGVARCHARs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("LONGVARCHAR", instance.getConstantName(Types.LONGVARCHAR));
+    }
 }
