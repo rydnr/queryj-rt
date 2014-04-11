@@ -471,6 +471,6 @@ public class JdbcMetadataTypeManagerTest
     {
         @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
 
-        Assert.assertEquals("SMALLINT", instance.getConstantName(Types));
+        Assert.assertEquals("S", instance.getConstantName(Types.SQLXML));
     }
 }
