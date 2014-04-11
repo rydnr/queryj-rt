@@ -337,7 +337,9 @@ clob_specification(attribute) ::= <<
 <! Deals with Clob attributes !>
 <notnull(C=C)>final Clob <attribute.name.uncapitalized>Clob = preparedStatement.getConnection().createClob();
 
-Writer clobWriter = <attribute.name.uncapitalized>Clob.setCharacterStream(index++);
+<notnull(C=C)final Writer clobWriter = <attribute.name.uncapitalized>Clob.setCharacterStream(index++);
+
+clobWriter.write(<attribute.name.uncapitalized>);
 >>
 
 equals_method(table, C) ::= <<
