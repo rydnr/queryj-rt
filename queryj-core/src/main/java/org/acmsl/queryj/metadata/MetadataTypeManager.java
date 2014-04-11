@@ -463,12 +463,4 @@ public interface MetadataTypeManager
      */
     public int toJdbcType(@NotNull final String type, final int length, final int precision);
 
-    /**
-     * Retrieves the name of the java.sql.Types constant associated to given id.
-     * @param type the type.
-     * @return the constant.
-     * @see java.sql.Types
-     */
-    @NotNull
-    String getJavaTypeConstant(final int type);
 }
