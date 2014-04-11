@@ -1099,6 +1099,10 @@ public class JdbcMetadataTypeManager
                 result = "BOOLEAN";
                 break;
 
+            case Types.CLOB:
+                result = "CLOB";
+                break;
+
             case Types.TINYINT:
                     result = Literals.TINYINT_U;
                     break;
