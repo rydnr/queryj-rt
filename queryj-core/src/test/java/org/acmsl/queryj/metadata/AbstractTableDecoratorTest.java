@@ -101,6 +101,9 @@ public class AbstractTableDecoratorTest
                 isRelationship);
 
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
+        @NotNull final MetadataTypeManager metadataTypeManager = new JdbcMetadataTypeManager();
+        EasyMock.expect(metadataManager.getMetadataTypeManager()).andReturn(metadataTypeManager).anyTimes();
+        EasyMock.replay(metadataManager);
         @NotNull final DecoratorFactory decoratorFactory = CachingDecoratorFactory.getInstance();
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
 
