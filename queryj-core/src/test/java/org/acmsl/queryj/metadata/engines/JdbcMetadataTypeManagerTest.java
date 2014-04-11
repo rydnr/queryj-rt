@@ -506,4 +506,26 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("TIME_WITH_TIMEZONE", instance.getConstantName(Types.TIME_WITH_TIMEZONE));
     }
+
+    /**
+     * Checks whether getConstantName() works for TIMESTAMPs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_TIMESTAMPs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("TIMESTAMP", instance.getConstantName(Types.TIMESTAMP));
+    }
+
+    /**
+     * Checks whether getConstantName() works for TIMESTAMP_WITH_TIMEZONEs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_TIMESTAMP_WITH_TIMEZONEs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("TIMESTAMP_WITH_TIMEZONE", instance.getConstantName(Types.TIMESTAMP_WITH_TIMEZONE));
+    }
 }
