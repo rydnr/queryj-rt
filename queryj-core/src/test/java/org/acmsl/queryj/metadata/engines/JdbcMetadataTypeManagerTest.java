@@ -297,4 +297,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("INTEGER", instance.getConstantName(Types.INTEGER));
     }
+
+    /**
+     * Checks whether getConstantName() works for JAVA_OBJECTs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_JAVA_OBJECTs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("JAVA_OBJECT", instance.getConstantName(Types.JAVA_OBJECT));
+    }
 }
