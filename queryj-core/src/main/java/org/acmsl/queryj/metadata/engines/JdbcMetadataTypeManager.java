@@ -1127,6 +1127,10 @@ public class JdbcMetadataTypeManager
                 result = "NCLOB";
                 break;
 
+            case Types.NULL:
+                result = "NULL";
+                break;
+
             case Types.TINYINT:
                     result = Literals.TINYINT_U;
                     break;
