@@ -679,7 +679,7 @@ public abstract class AbstractAttributeDecorator
      * Retrieves whether the attribute is numeric or not.
      * @return such information.
      */
-    @SuppressWarnings("unused")
+    @Override
     public boolean isNumeric()
     {
         return isNumeric(getTypeId(), getMetadataManager());

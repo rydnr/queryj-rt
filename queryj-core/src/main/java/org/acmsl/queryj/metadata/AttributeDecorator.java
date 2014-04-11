@@ -87,6 +87,12 @@ public interface AttributeDecorator
     public boolean isNumberSmallerThanInt();
 
     /**
+     * Retrieves whether the attribute is numeric or not.
+     * @return such information.
+     */
+    public boolean isNumeric();
+
+    /**
      * Retrieves the attribute type, as a {@link java.sql.Types}'s constant value.
      * @return such information.
      */
