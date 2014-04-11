@@ -1790,24 +1790,6 @@ public class JdbcMetadataTypeManager
     /**
      * {@inheritDoc}
      */
-    @NotNull
-    @Override
-    public String getJavaTypeConstant(final int type)
-    {
-        @NotNull final String result;
-
-        switch (type)
-        {
-            case Types.BIGINT: result = "BIGINT"; break;
-            default: result = "OTHER"; break;
-        }
-
-        return result;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     @Override
     @NotNull
     public String toString()
