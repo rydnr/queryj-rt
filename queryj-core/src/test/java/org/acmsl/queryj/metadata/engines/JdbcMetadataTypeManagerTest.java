@@ -198,4 +198,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("BOOLEAN", instance.getConstantName(Types.BOOLEAN));
     }
+
+    /**
+     * Checks whether getConstantName() works for CHARs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_CHARs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("CHAR", instance.getConstantName(Types.CHAR));
+    }
 }
