@@ -280,3 +280,19 @@ attribute_member_declaration(attribute) ::= <<
 <if(!attribute.strictlyPrimitive)><if(attribute.allowsNull)><nullable(C=C)><else><notnull(C=C)><endif><endif>
 private <attribute.javaType> <attribute.name.uncapitalized>;
 >>
+
+attribute_query_specification(attr) ::= <<
+<!
+ Generates the code to specify the attribute into the query.
+ @param attr the attribute.
+!>
+<if(attr.numberSmallerThanInt)>
+query.setInt(
+<else>
+query.set<attr.objectType>(
+<endif>
+
+    <attr.tableNameUppercased>.<attr.nameUppercased>.equals(),
+    <attr.nameLowercased>);
+>>
+
