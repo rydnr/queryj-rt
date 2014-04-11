@@ -407,4 +407,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("OTHER", instance.getConstantName(Types.OTHER));
     }
+
+    /**
+     * Checks whether getConstantName() works for REALs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_REALs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("REAL", instance.getConstantName(Types.REAL));
+    }
 }

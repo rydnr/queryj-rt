@@ -1135,6 +1135,10 @@ public class JdbcMetadataTypeManager
                 result = "NVARCHAR";
                 break;
 
+            case Types.OTHER:
+                result = "OTHER";
+                break;
+
             case Types.TINYINT:
                     result = Literals.TINYINT_U;
                     break;
