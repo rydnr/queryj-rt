@@ -321,6 +321,7 @@ attribute_preparedstatement_specification(attr) ::= <<
  @param attr the attribute.
 !>
 
+
 <if(!attr.clob)><if(attr.allowsNull)>
 if  (<attr.name.uncapitalized> == null)
 {
