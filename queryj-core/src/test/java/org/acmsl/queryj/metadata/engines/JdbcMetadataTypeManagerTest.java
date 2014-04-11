@@ -286,4 +286,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("FLOAT", instance.getConstantName(Types.FLOAT));
     }
+
+    /**
+     * Checks whether getConstantName() works for INTEGERs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_INTEGERs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("INTEGER", instance.getConstantName(Types.INTEGER));
+    }
 }
