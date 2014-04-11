@@ -40,6 +40,8 @@ package org.acmsl.queryj.metadata;
  */
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.metadata.vo.Attribute;
+import org.acmsl.queryj.metadata.vo.AttributeIncompleteValueObject;
+import org.acmsl.queryj.metadata.vo.AttributeValueObject;
 import org.acmsl.queryj.metadata.vo.ForeignKey;
 import org.acmsl.queryj.metadata.vo.Table;
 import org.acmsl.queryj.metadata.vo.TableValueObject;
@@ -56,6 +58,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.sql.Types;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -120,5 +123,72 @@ public class AbstractTableDecoratorTest
             };
 
         Assert.assertFalse(instance.getContainsClobs());
+    }
+
+    /**
+     * Checks whethe getContainsClobs() is correct for tables with Clob attributes.
+     */
+    @Test
+    public void getContainsClobs_is_correct_if_table_contains_clobs()
+    {
+        @NotNull final String name = "name";
+        @NotNull final String comment = "comment";
+        @NotNull final List<Attribute<String>> primaryKey = new ArrayList<>(0);
+        @NotNull final List<Attribute<String>> attributes = new ArrayList<>();
+        attributes.add(
+            new AttributeIncompleteValueObject(
+                "name",
+                Types.CLOB,
+                "String",
+                name,
+                "comment",
+                1, // ordinalPosition
+                6222, // length
+                1, // precision
+                false, // allowsNull
+                null)); // value
+
+        @NotNull final List<ForeignKey<String>> foreignKeys = new ArrayList<>(0);
+        @Nullable final Table<String, Attribute<String>, List<Attribute<String>>> parentTable = null;
+        @Nullable final Attribute<String> staticAttribute = null;
+        final boolean voDecorated = false;
+        final boolean isRelationship = false;
+
+        @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table =
+            new TableValueObject(
+                name,
+                comment,
+                primaryKey,
+                attributes,
+                foreignKeys,
+                parentTable,
+                staticAttribute,
+                voDecorated,
+                isRelationship);
+
+        @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
+        @NotNull final DecoratorFactory decoratorFactory = CachingDecoratorFactory.getInstance();
+        @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
+
+        @NotNull final AbstractTableDecorator instance =
+            new AbstractTableDecorator(table, metadataManager, decoratorFactory, customSqlProvider)
+            {
+                @Nullable
+                @Override
+                protected Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>> createTableDecorator(
+                    @Nullable final String parentTable,
+                    @NotNull final ListDecorator<Attribute<String>> primaryKey,
+                    @NotNull final ListDecorator<Attribute<String>> attributes,
+                    final boolean isStatic,
+                    final boolean voDecorated,
+                    @NotNull final MetadataManager metadataManager,
+                    @NotNull final DecoratorFactory decoratorFactory,
+                    @NotNull final CustomSqlProvider customSqlProvider)
+                {
+                    return null;
+                }
+            };
+
+        Assert.assertTrue(instance.getContainsClobs());
     }
 }
