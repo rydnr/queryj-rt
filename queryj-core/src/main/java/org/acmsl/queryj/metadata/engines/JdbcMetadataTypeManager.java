@@ -1107,6 +1107,10 @@ public class JdbcMetadataTypeManager
                 result = "DATALINK";
                 break;
 
+            case Types.DISTINCT:
+                result = "DISTINCT";
+                break;
+
             case Types.TINYINT:
                     result = Literals.TINYINT_U;
                     break;
