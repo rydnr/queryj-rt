@@ -299,14 +299,11 @@ if  (<attr.name.lowercased> == null)
 }
 else
 {
-    preparedStatement.set<attr.objectType>(
-        index++, indirect_template(name=attr.objectType + _to_primitive);
+    preparedStatement.set<attr.objectType>(index++, indirect_template(name=attr.objectType + _to_primitive);
 }
 <else>
 preparedStatement.set<attr.objectType>(
     index++, <attr.name.lowercased>);
 <endif>
 <endif>
-
-
 >>
