@@ -134,6 +134,17 @@ public class JdbcMetadataTypeManagerTest
     }
 
     /**
+     * Checks whether getJavaTypeConstant() works for ARRAYs.
+     */
+    @Test
+    public void getSqlTypeConstant_retrieves_the_correct_constant_for_ARRAYs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("ARRAY", instance.getJavaTypeConstant(Types.ARRAY));
+    }
+
+    /**
      * Checks whether getJavaTypeConstant() works for BIGINTs.
      */
     @Test

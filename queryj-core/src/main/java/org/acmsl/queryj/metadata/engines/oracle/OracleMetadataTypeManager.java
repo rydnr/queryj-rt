@@ -1,6 +1,6 @@
 //;-*- mode: java -*-
 /*
-                        QueryJ
+                        QueryJ Core
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -34,14 +34,10 @@
 package org.acmsl.queryj.metadata.engines.oracle;
 
 /*
- * Importing project classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
-
-/*
- * Importing some ACM-SL Commons classes.
- */
 
 /*
  * Importing some JetBrains annotations.
