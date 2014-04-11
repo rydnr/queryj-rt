@@ -396,4 +396,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("NVARCHAR", instance.getConstantName(Types.NVARCHAR));
     }
+
+    /**
+     * Checks whether getConstantName() works for OTHERs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_OTHERs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("OTHER", instance.getConstantName(Types.OTHER));
+    }
 }
