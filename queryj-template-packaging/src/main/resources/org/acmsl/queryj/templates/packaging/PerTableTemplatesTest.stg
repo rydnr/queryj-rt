@@ -504,6 +504,9 @@ public class PerTableTemplatesTest
                 @NotNull final MetadataManager metadataManager =
                     retrieveMetadataManager(engine, table, tableRows, decoratorFactory);
 
+                new QueryJCommandWrapper\<MetadataManager>(t_Command).setSetting(
+                    DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, metadataManager);
+
                 @Nullable final PerTableTemplateFactory\<? extends PerTableTemplate\<PerTableTemplateContext>, PerTableTemplateContext> templateFactory =
                     retrieveTemplateFactory(templateName);
 
