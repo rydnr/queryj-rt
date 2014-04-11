@@ -2077,7 +2077,7 @@ public abstract class AbstractTableDecorator
     public String toString()
     {
         return
-              "{ \"class\": \"" + AbstractTableDecorator.class.getName() + '"'
+              "{ \"class\": \"" + AbstractTableDecorator.class.getSimpleName() + '"'
             + ", \"table\": " + m__Table
             + ", \"metadataManager\": " + m__MetadataManager
             + ", \"decoratorFactory\": " + m__DecoratorFactory
@@ -2088,6 +2088,6 @@ public abstract class AbstractTableDecorator
             + ", \"parentForeignKey\": " + m__ParentForeignKey
             + ", \"childAttributes\": " + ToStringUtils.getInstance().toJson(m__lChildAttributes)
             + ", \"attributesShouldBeCleanedUp\": " + m__bAttributesShouldBeCleanedUp
-            + '}';
+            + ", \"package\": \"" + AbstractTableDecorator.class.getPackage().getName() + "\" }";
     }
 }
