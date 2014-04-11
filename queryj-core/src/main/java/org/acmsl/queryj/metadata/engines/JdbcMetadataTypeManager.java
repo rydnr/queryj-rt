@@ -1087,16 +1087,28 @@ public class JdbcMetadataTypeManager
                 result = "ARRAY";
                 break;
 
+            case Types.BIGINT:
+                result = Literals.BIGINT_U;
+                break;
+
+            case Types.BINARY:
+                result = Literals.BINARY_U;
+                break;
+
+            case Types.BIT:
+                result = "BIT";
+                break;
+
             case Types.BLOB:
                 result = "BLOB";
                 break;
 
-            case Types.BIT:
-                    result = "BIT";
-                    break;
-
             case Types.BOOLEAN:
                 result = "BOOLEAN";
+                break;
+
+            case Types.CHAR:
+                result = "CHAR";
                 break;
 
             case Types.CLOB:
@@ -1107,8 +1119,28 @@ public class JdbcMetadataTypeManager
                 result = "DATALINK";
                 break;
 
+            case Types.DATE:
+                result = "DATE";
+                break;
+
+            case Types.DECIMAL:
+                result = Literals.DECIMAL;
+                break;
+
             case Types.DISTINCT:
                 result = "DISTINCT";
+                break;
+
+            case Types.DOUBLE:
+                result = Literals.DOUBLE_U;
+                break;
+
+            case Types.FLOAT:
+                result = Literals.FLOAT_U;
+                break;
+
+            case Types.INTEGER:
+                result = Literals.INTEGER_U;
                 break;
 
             case Types.JAVA_OBJECT:
@@ -1117,6 +1149,14 @@ public class JdbcMetadataTypeManager
 
             case Types.LONGNVARCHAR:
                 result = "LONGNVARCHAR";
+                break;
+
+            case Types.LONGVARBINARY:
+                result = Literals.LONGVARBINARY_U;
+                break;
+
+            case Types.LONGVARCHAR:
+                result = Literals.LONGVARCHAR_U;
                 break;
 
             case Types.NCHAR:
@@ -1131,12 +1171,20 @@ public class JdbcMetadataTypeManager
                 result = "NULL";
                 break;
 
+            case Types.NUMERIC:
+                result = Literals.NUMERIC_U;
+                break;
+
             case Types.NVARCHAR:
                 result = "NVARCHAR";
                 break;
 
             case Types.OTHER:
                 result = "OTHER";
+                break;
+
+            case Types.REAL:
+                result = "REAL";
                 break;
 
             case Types.REF:
@@ -1155,12 +1203,24 @@ public class JdbcMetadataTypeManager
                 result = "SQLXML";
                 break;
 
+            case Types.SMALLINT:
+                result = Literals.SMALLINT_U;
+                break;
+
             case Types.STRUCT:
                 result = "STRUCT";
                 break;
 
+            case Types.TIME:
+                result = "TIME";
+                break;
+
             case Types.TIME_WITH_TIMEZONE:
                 result = "TIME_WITH_TIMEZONE";
+                break;
+
+            case Types.TIMESTAMP:
+                result = Literals.TIMESTAMP_U;
                 break;
 
             case Types.TIMESTAMP_WITH_TIMEZONE:
@@ -1168,76 +1228,16 @@ public class JdbcMetadataTypeManager
                 break;
 
             case Types.TINYINT:
-                    result = Literals.TINYINT_U;
-                    break;
-
-            case Types.SMALLINT:
-                    result = Literals.SMALLINT_U;
-                    break;
-
-            case Types.INTEGER:
-                    result = Literals.INTEGER_U;
-                    break;
-
-            case Types.BIGINT:
-                    result = Literals.BIGINT_U;
-                    break;
-
-            case Types.NUMERIC:
-                    result = Literals.NUMERIC_U;
-                    break;
-
-            case Types.DECIMAL:
-                    result = Literals.DECIMAL;
-                    break;
-
-            case Types.REAL:
-                    result = "REAL";
-                    break;
-
-            case Types.FLOAT:
-                    result = Literals.FLOAT_U;
-                    break;
-
-            case Types.DOUBLE:
-                    result = Literals.DOUBLE_U;
-                    break;
-
-            case Types.TIME:
-                    result = "TIME";
-                    break;
-
-            case Types.DATE:
-                    result = "DATE";
-                    break;
-
-            case Types.TIMESTAMP:
-                    result = Literals.TIMESTAMP_U;
-                    break;
-
-            case Types.CHAR:
-                    result = "CHAR";
-                    break;
-
-            case Types.VARCHAR:
-                    result = Literals.VARCHAR_U;
-                    break;
-
-            case Types.LONGVARCHAR:
-                    result = Literals.LONGVARCHAR_U;
-                    break;
-
-            case Types.BINARY:
-                    result = Literals.BINARY_U;
-                    break;
+                result = Literals.TINYINT_U;
+                break;
 
             case Types.VARBINARY:
-                    result = Literals.VARBINARY_U;
-                    break;
+                result = Literals.VARBINARY_U;
+                break;
 
-            case Types.LONGVARBINARY:
-                    result = Literals.LONGVARBINARY_U;
-                    break;
+            case Types.VARCHAR:
+                result = Literals.VARCHAR_U;
+                break;
 
             default:
                     result = "OTHER";
