@@ -157,7 +157,11 @@ class(table, C) ::= <<
 <class_annotations(C=C)>
 public class <table.name.voName>AttributesStatementSetter
 {
-    <table.attributes:{ a | <attribute_member_declaration(attribute=a)>}; separator="\n\n">
+    /**
+     * An attribute container.
+     */
+    <notnull(C=C)>
+    private <table.name.voName> m__Values;
 
     /**
      * The \<i>update\</i> operation.
@@ -172,11 +176,11 @@ public class <table.name.voName>AttributesStatementSetter
      * @param updateOperation whether the operation is an update.
      */
     public <table.name.voName>AttributesStatementSetter(
-        <table.attributes:{ a | <attribute_method_parameter_declaration(attribute=a)>};
+        <notnull(C=C)>final <table.name.voName> values,
           separator="\n">
         final boolean updateOperation)
     {
-        this(
+        immutableSetValues(values);
             <table.own.minus.primaryKey:{ attr | <attr.name.uncapitalized>,};
               separator="\n">
             updateOperation);
