@@ -145,6 +145,17 @@ public class JdbcMetadataTypeManagerTest
     }
 
     /**
+     * Checks whether getConstantName() works for BIGINTs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_BIGINTs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("BIGINT", instance.getConstantName(Types.BIGINT));
+    }
+
+    /**
      * Checks whether getConstantName() works for BINARYs.
      */
     @Test
@@ -156,13 +167,13 @@ public class JdbcMetadataTypeManagerTest
     }
 
     /**
-     * Checks whether getConstantName() works for BIGINTs.
+     * Checks whether getConstantName() works for BITs.
      */
     @Test
-    public void getConstantName_retrieves_the_correct_constant_for_BIGINTs()
+    public void getConstantName_retrieves_the_correct_constant_for_BITs()
     {
         @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
 
-        Assert.assertEquals("BIGINT", instance.getConstantName(Types.BIGINT));
+        Assert.assertEquals("BIT", instance.getConstantName(Types.BIT));
     }
 }
