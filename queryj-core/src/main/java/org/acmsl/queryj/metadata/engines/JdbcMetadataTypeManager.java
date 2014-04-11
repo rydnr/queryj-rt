@@ -1156,7 +1156,7 @@ public class JdbcMetadataTypeManager
                     break;
 
             case Types.SMALLINT:
-                    result = Literals.SMALLINT;
+                    result = Literals.SMALLINT_U;
                     break;
 
             case Types.INTEGER:
