@@ -291,8 +291,7 @@ public class <table.name.voName>AttributesStatementSetter
         {
             <table.externallyManagedAttributes:{ a | <attribute_preparedstatement_specification(attr=a)>}; separator="\n">
         }<
-   endif>
-        <table.own.minus.externallyManagedAttributes:{ a | <attribute_preparedstatement_specification(attr=a)>}; separator="">
+   endif><table.own.minus.externallyManagedAttributes:{ a | <attribute_preparedstatement_specification(attr=a)>}; separator="">
     }
 
     <equals_method(table=table, C=C)>
