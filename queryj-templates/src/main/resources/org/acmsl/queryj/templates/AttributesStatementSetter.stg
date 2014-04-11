@@ -325,7 +325,6 @@ attribute_preparedstatement_specification(attr) ::= <<
 else
 {
     preparedStatement.set<attr.objectType>(index++, indirect_template(name=attr.objectType + _to_primitive);
-}
-<else>preparedStatement.set<attr.objectType>(index++, <attr.name.uncapitalized>);
+}<else>preparedStatement.set<attr.objectType>(index++, <attr.name.uncapitalized>);
 <endif><endif>
 >>
