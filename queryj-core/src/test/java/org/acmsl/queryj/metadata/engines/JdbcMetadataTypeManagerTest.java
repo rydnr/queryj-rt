@@ -145,6 +145,17 @@ public class JdbcMetadataTypeManagerTest
     }
 
     /**
+     * Checks whether getConstantName() works for BINARYs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_BINARYs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("BINARY", instance.getConstantName(Types.BINARY));
+    }
+
+    /**
      * Checks whether getConstantName() works for BIGINTs.
      */
     @Test
