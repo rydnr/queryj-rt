@@ -328,7 +328,8 @@ if  (<attr.name.uncapitalized> == null)
 else
 {
     preparedStatement.set<attr.objectType>(index++, <attribute_to_primitive(attribute=attr)>);
-}<else>preparedStatement.set<attr.objectType>(index++, <attr.name.uncapitalized>);<endif><endif>
+}<else>
+preparedStatement.set<attr.objectType>(index++, <attr.name.uncapitalized>);<endif><endif>
 >>
 
 equals_method(table, C) ::= <<
