@@ -155,5 +155,5 @@ public <attribute.javaType> get<attribute.name.capitalized>()
 
 attribute_to_primitive(attribute) ::= <<
 <! Generates the code to convert given attribute's value to a primitive !>
-<if(attribute.isNumeric)><attribute.name.uncapitalized><endif>
+<attribute.class><if(attribute.isNumeric)><attribute.name.uncapitalized><endif>
 >>
