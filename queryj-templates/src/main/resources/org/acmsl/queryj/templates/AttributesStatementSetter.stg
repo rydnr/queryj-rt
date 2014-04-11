@@ -297,6 +297,12 @@ public class <table.name.voName>AttributesStatementSetter
 
         <table.own.minus.externallyManagedAttributes:{ a | <attribute_preparedstatement_specification(attr=a)>}; separator="\n">
     }
+
+    <equals_method(table=table, C=C)>
+
+    <hashcode_method(table=table, C=C)>
+
+    <tostring_method(table=table, C=C)>
 }
 >>
 
@@ -417,38 +423,37 @@ protected int hashcode(<notnull(C=C)>final <table.name.voName> values, final boo
 attribute_hashcode(attribute) ::= <<
 <! Generates the hashcode contribution for each attribute. !>
 <if(attribute.strictlyPrimitive)>
-final int <attribute.name.uncapitalized>HashCode = ("" + this.m__<attribute.name.capitalized>).hashcode();<else>
+final int <attribute.name.uncapitalized>HashCode = ("" + values.get<attribute.name.capitalized>()).hashcode();<else>
 <if(attribute.allowsNull)>final int <attribute.name.uncapitalized>HashCode;
-if (this.m__<attribute.name.capitalized> == null)
+if (values.get<attribute.name.capitalized>() == null)
 {
     <attribute.name.uncapitalized>HashCode = 0;
 }
 else
 {
-     <attribute.name.uncapitalized>HashCode = this.m__<attribute.name.capitalized>.hashCode();
-}<else>final int <attribute.name.uncapitalized>HashCode = this.m__<attribute.name.capitalized>.hashCode();<endif><endif>
+     <attribute.name.uncapitalized>HashCode = get<attribute.name.capitalized>().hashCode();
+}<else>final int <attribute.name.uncapitalized>HashCode = get<attribute.name.capitalized>().hashCode();<endif><endif>
 >>
 
 tostring_method(table, C) ::= <<
 <! Generates the toString() method !>
 /**
- * {@inheritdoc}
+ * Generates a JSON-compatible representation of this instance.
+ * @return such text.
  */
 @Override
 public String toString()
 {
-    StringBuilder result = new StringBuilder("{ \class\": \"Abstract<table.name.voName>");
+    <notnull(C=C)>final StringBuilder result =
+        new StringBuilder("{ \class\": \"<table.name.voName>AttributesStatementSetter");
 
-    <table.attributes:{ a | <attribute_toString(attribute=a)>}; separator="\n">
+    result.append("\", \"values\": ");
+    result.append(this.m__Values);
+    result.append(", \"update\": ");
+    result.append(this.m__UpdateOperation);
 
     result.append(", \"package\": \"<C.package>\" }");
 
     return result.toString();
 }
->>
-
-attribute_toString(attribute) ::= <<
-<! Generates the code to include given attribute within the toString() method. !>
-result.append("\", \"<a.name.capitalized>\": \"");
-result.append(this.m__<a.name.capitalized>);
 >>
