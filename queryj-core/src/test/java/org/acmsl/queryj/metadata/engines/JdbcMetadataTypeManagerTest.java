@@ -363,4 +363,15 @@ public class JdbcMetadataTypeManagerTest
 
         Assert.assertEquals("NCLOB", instance.getConstantName(Types.NCLOB));
     }
+
+    /**
+     * Checks whether getConstantName() works for NULLs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_NULLs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("NULL", instance.getConstantName(Types.NULL));
+    }
 }
