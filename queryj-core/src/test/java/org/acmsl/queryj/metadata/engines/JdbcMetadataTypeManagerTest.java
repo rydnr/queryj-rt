@@ -152,7 +152,7 @@ public class JdbcMetadataTypeManagerTest
     {
         @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
 
-        Assert.assertEquals("BIGINT", instance.getConstantName(Types.BIGINT));
+        Assert.assertEquals(Literals.BIGINT_U, instance.getConstantName(Types.BIGINT));
     }
 
     /**
@@ -163,7 +163,7 @@ public class JdbcMetadataTypeManagerTest
     {
         @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
 
-        Assert.assertEquals("BINARY", instance.getConstantName(Types.BINARY));
+        Assert.assertEquals(Literals.BINARY_U, instance.getConstantName(Types.BINARY));
     }
 
     /**
@@ -175,5 +175,16 @@ public class JdbcMetadataTypeManagerTest
         @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
 
         Assert.assertEquals("BIT", instance.getConstantName(Types.BIT));
+    }
+
+    /**
+     * Checks whether getConstantName() works for BLOBs.
+     */
+    @Test
+    public void getConstantName_retrieves_the_correct_constant_for_BLOBs()
+    {
+        @NotNull final JdbcMetadataTypeManager instance = new JdbcMetadataTypeManager();
+
+        Assert.assertEquals("BLOB", instance.getConstantName(Types.BLOB));
     }
 }
