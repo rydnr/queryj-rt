@@ -61,6 +61,7 @@ import org.checkthread.annotations.ThreadSafe;
  * Importing JDK classes.
  */
 import java.sql.Types;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -265,7 +266,7 @@ public abstract class AbstractTableAttributesListDecorator
     @NotNull
     protected List<DecoratedString> getAttributeTypes(@NotNull final List<Attribute<DecoratedString>> items)
     {
-        return
+        return new ArrayList<>();
         protected List<DecoratedString> getAttributeTypes(
         @NotNull final List<Attribute<DecoratedString>> attrs,
         @NotNull final MetadataTypeManager typeManager)
