@@ -187,7 +187,7 @@ public class AbstractTableAttributesListDecoratorTest
     @Test
     public void getAttributeTypes_retrieves_the_attribute_types()
     {
-        @NotNull final List<Attribute<String>> attributes =
+        @NotNull final List<Attribute<DecoratedString>> attributes =
             new ArrayList<>();
 
         @NotNull final String name = "name";
