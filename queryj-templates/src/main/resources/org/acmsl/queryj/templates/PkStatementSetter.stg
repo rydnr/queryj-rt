@@ -335,15 +335,6 @@ public int hashcode()
         <table.attributes:{ a |+ <a.name.uncapitalized>HashCode}; separator="\n">;
 
     return result;
-    final int classHashCode = <table.name.voName>AttributesStatementSetter.class.hashcode();
-
-    final int valuesHashCode = this.m__Values.hashcode();
-
-    final int updateHashCode = Boolean.valueOf(this.m__bUpdateOperation).hashcode();
-
-    result = classHashCode + valuesHashCode + updateHashCode;
-
-    return result;
 }
 >>
 
