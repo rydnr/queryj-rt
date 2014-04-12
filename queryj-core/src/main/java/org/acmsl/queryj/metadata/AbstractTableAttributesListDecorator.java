@@ -273,7 +273,7 @@ public abstract class AbstractTableAttributesListDecorator
         @NotNull final MetadataTypeManager metadataTypManager,
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
-        return new ArrayList<>();
+        return tableDecoratorHelper.getAttributeTypes(items, metadataTypManager);
     }
 
     // Table implementation
