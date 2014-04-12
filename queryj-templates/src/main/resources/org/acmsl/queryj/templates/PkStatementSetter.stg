@@ -162,7 +162,8 @@ class(table, C) ::= <<
 <class_annotations(C=C)>
 public class <table.name.voName>PkStatementSetter
 {
-    <table.primaryKey:{ a | <attribute_accessors(attribute=a)>}; separator="\n\n"
+    <table.primaryKey:{ a | <attribute_accessors(attribute=a)>}; separator="\n">
+
     /**
      * The \<i>update\</i> operation.
      */
