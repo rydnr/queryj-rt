@@ -186,3 +186,18 @@ clob_specification(attribute) ::= <<
 clobWriter.write(<attribute.name.uncapitalized>);
 preparedStatement.setClob(index++, <attribute.name.uncapitalized>Clob);
 >>
+
+attribute_hashcode(attribute) ::= <<
+<! Generates the hashcode contribution for each attribute. !>
+<if(attribute.strictlyPrimitive)>
+final int <attribute.name.uncapitalized>HashCode = ("" + this.m__<attribute.name.capitalized>).hashcode();<else>
+<if(attribute.allowsNull)>final int <attribute.name.uncapitalized>HashCode;
+if (this.m__<attribute.name.capitalized> == null)
+{
+    <attribute.name.uncapitalized>HashCode = 0;
+}
+else
+{
+     <attribute.name.uncapitalized>HashCode = this.m__<attribute.name.capitalized>.hashCode();
+}<else>final int <attribute.name.uncapitalized>HashCode = this.m__<attribute.name.capitalized>.hashCode();<endif><endif>
+>>
