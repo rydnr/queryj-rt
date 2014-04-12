@@ -170,7 +170,7 @@ public class <table.name.voName>PkStatementSetter
     private boolean m__bUpdateOperation;
 
     /**
-     * Creates a \<code><table.name.voName>AttributesStatementSetter\</code>
+     * Creates a \<code><table.name.voName>PkStatementSetter\</code>
      * instance.
      * @param values the {@link <table.name.voName>} instance.
      * @param updateOperation whether the operation is an update.
