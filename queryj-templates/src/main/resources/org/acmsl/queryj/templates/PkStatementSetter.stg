@@ -241,25 +241,6 @@ public class <table.name.voName>PkStatementSetter
         final boolean update)
         throws  SQLException
     {
-        setValues(
-            preparedStatement,
-            <table.attributes:{ attr | values.get<attr.name.capitalized>()}; separator=",\n">,
-            isUpdateOperation());
-    }
-
-    /**
-     * Specifies the values on given {@link PreparedStatement}
-     * @param preparedStatement the prepared statement.
-     <table.attributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
-     * @param update whether it's an update operation.
-     * @throws SQLException intercepted by \<i>Spring\</i>.
-     */
-    protected void setValues(
-        <notnull(C=C)>final PreparedStatement preparedStatement,
-        <table.attributes:{a | <attribute_method_parameter_declaration(attribute=a)>}; separator=",\n">,
-        final boolean update)
-        throws  SQLException
-    {
         int index = 1;
 
 <  if(table.externallyManagedAttributes)>
