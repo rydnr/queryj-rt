@@ -232,7 +232,8 @@ public class AbstractTableAttributesListDecoratorTest
         @NotNull final List<DecoratedString> types = instance.getAttributeTypes();
         Assert.assertFalse(types.isEmpty());
         Assert.assertEquals(1, types.size());
-        @NotNull final DecoratedString
+        @NotNull final DecoratedString type = types.get(0);
+        Assert.assertEquals("java.util.Date", type);
         EasyMock.verify(attribute);
         EasyMock.verify(metadataManager);
     }
