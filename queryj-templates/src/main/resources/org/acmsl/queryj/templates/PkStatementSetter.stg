@@ -274,6 +274,22 @@ public boolean equals(<nullable(C=C)>final Object other)
 
     if (other instanceof <table.name.voName>PkStatementSetter)
     {
+    final boolean result;
+
+    if (other instanceof <table.name.voName>)
+    {
+        <notnull(C=C)>final <table.name.voName> candidate = (<table.name.voName>) other;
+
+        <table.attributes:{ a | <attribute_equals(attribute=a)>}; separator="">
+        result =
+            <table.attributes:{ a |<a.name.uncapitalized>Match}; separator="\n&& ">;
+    }
+    else
+    {
+        result = false;
+    }
+
+    return result;
         <notnull(C=C)>final <table.name.voName>PkStatementSetter> candidate =
             (<table.name.voName>AttributesStatementSetter) other;
 
