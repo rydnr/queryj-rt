@@ -316,4 +316,7 @@ public class AbstractTableAttributesListDecoratorTest
         Assert.assertFalse(types.isEmpty());
         EasyMock.verify(attribute);
     }
+
+    @NotNull
+    protected
 }
