@@ -200,7 +200,7 @@ public class AbstractTableAttributesListDecoratorTest
             new CachingTableDecorator(table, metadataManager, decoratorFactory, customSqlProvider);
 
         @NotNull final AbstractTableAttributesListDecorator instance =
-            createInstance() AbstractTableAttributesListDecorator(attributes, tableDecorator)
+            createInstance(attributes, tableDecorator, metadataManager);
             {
                 /**
                  * {@inheritDoc}
