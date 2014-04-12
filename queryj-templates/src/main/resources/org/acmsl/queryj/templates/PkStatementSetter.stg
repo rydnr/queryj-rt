@@ -249,7 +249,7 @@ public class <table.name.voName>PkStatementSetter
             <table.primaryKey.minus.not.externallyManagedAttributes:{ a | <attribute_preparedstatement_specification(attr=a)>}; separator="\n">
         }<
    endif>
-        <table.own.minus.externallyManagedAttributes:{ a | <attribute_preparedstatement_specification(attr=a)>}; separator="\n">
+        <table.primaryKey.minus.externallyManagedAttributes:{ a | <attribute_preparedstatement_specification(attr=a)>}; separator="\n">
     }
 
     <equals_method(table=table, C=C)>
