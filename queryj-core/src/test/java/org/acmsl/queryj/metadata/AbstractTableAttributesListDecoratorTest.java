@@ -320,6 +320,7 @@ public class AbstractTableAttributesListDecoratorTest
     @NotNull
     protected AbstractTableAttributesListDecorator createInstance()
     {
+        return
         new AbstractTableAttributesListDecorator(new ArrayList<Attribute<DecoratedString>>(0), tableDecorator)
         {
             /**
