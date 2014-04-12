@@ -43,7 +43,7 @@ Feature: G_CYCLE_TYPES code compiles
 
     Examples:
       | template | output |
-      | AttributesStatementSetter | GCycleTypeAttributesStatementSetter.java |
+#      | AttributesStatementSetter | GCycleTypeAttributesStatementSetter.java |
 #      | ValueObjectFactory | GCycleTypeValueObjectFactory.java |
 #      | ValueObject | GCycleTypeValueObject.java |
 #      | BaseValueObject | AbstractGCycleType.java |
