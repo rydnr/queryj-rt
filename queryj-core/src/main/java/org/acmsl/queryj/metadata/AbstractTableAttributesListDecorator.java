@@ -255,7 +255,11 @@ public abstract class AbstractTableAttributesListDecorator
     @Override
     public List<DecoratedString> getAttributeTypes()
     {
-        return getAttributeTypes(getItems(), getMetadataManager().getMetadataTypeManager());
+        return
+            getAttributeTypes(
+                getItems(),
+                getMetadataManager().getMetadataTypeManager(),
+                TableDecoratorHelper.getInstance());
     }
 
     /**
