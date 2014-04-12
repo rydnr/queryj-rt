@@ -279,7 +279,7 @@ public boolean equals(<nullable(C=C)>final Object other)
 
         result =
             equals(
-                getValues(),
+                <table.primaryKey:{ a | <getValues(),
                 isUpdateOperation(),
                 candidate.getValues(),
                 candidate.isUpdateOperation());
