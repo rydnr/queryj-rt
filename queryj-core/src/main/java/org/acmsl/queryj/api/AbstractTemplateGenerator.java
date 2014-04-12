@@ -203,6 +203,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
      * @param rootFolder the root folder.
      * @param charset the file encoding.
      * @param fileUtils the {@link org.acmsl.commons.utils.io.FileUtils} instance.
+     * @return
      */
     protected boolean write(
         final boolean caching,
