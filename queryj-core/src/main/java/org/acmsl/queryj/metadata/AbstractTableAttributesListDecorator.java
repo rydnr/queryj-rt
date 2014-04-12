@@ -359,6 +359,8 @@ public abstract class AbstractTableAttributesListDecorator
 
     /**
      * Checks whether the items include any Clob attribute.
+     * @param attributes the attributes.
+     * @param typeId the type id.
      * @return {@code true} in such case.
      */
     protected boolean contains(
