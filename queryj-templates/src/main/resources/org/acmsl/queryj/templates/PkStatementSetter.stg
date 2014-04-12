@@ -333,10 +333,9 @@ public String toString()
 
     <table.attributes:{ a | <attribute_toString(attribute=a)>}; separator="\n">
 
-    result.append(", \"package\": \"<C.package>\" }");
-
     result.append(", \"update\": ");
     result.append(this.m__UpdateOperation);
+    result.append(", \"package\": \"<C.package>\" }");
 
     result.append("\" }");
 
