@@ -288,8 +288,6 @@ public boolean equals(<nullable(C=C)>final Object other)
     }
 
     return result;
-
-    return result;
 }
 
 /**
