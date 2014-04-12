@@ -851,6 +851,7 @@ public abstract class DatabaseMetaDataRetrievalHandler
 
     /**
      * Retrieves the database product version.
+     * @param parameters the parameters.
      * @return such version.
      */
     @Nullable
