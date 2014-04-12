@@ -265,6 +265,8 @@ public abstract class AbstractTableAttributesListDecorator
     /**
      * Retrieves the types of the attributes.
      * @param items such items.
+     * @param metadataTypManager the {@link MetadataTypeManager} instance.
+     * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
      * @return their types.
      */
     @NotNull
