@@ -320,6 +320,35 @@ public class AbstractTableAttributesListDecoratorTest
     @NotNull
     protected AbstractTableAttributesListDecorator createInstance()
     {
+        new AbstractTableAttributesListDecorator(new ArrayList<Attribute<DecoratedString>>(0), tableDecorator)
+        {
+            /**
+             * {@inheritDoc}
+             */
+            @Override
+            public Attribute<DecoratedString> getStaticAttribute()
+            {
+                return null;
+            }
 
+            /**
+             * {@inheritDoc}
+             */
+            @Override
+            public boolean isRelationship()
+            {
+                return false;
+            }
+
+            /**
+             * {@inheritDoc}
+             */
+            @NotNull
+            @Override
+            public MetadataManager getMetadataManager()
+            {
+                return metadataManager;
+            }
+        };
     }
 }
