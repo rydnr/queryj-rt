@@ -179,6 +179,7 @@ public class <table.name.voName>PkStatementSetter
         <table.primaryKey:{ a | <attribute_method_declaration(attribute=a)>}; separator=",\n">,
         final boolean updateOperation)
     {
+        <table.primaryKey
         immutableSetValues(values);
         immutableSetUpdateOperation(updateOperation);
     }
