@@ -141,7 +141,7 @@ public class AbstractTableAttributesListDecoratorTest
      * attribute.
      */
     @Test
-    public void getContainsClobs_works_when_there_are_clobs()
+    public void getContainsClobs_works_when_there_are_no_clobs()
     {
         @NotNull final List<Attribute<String>> attributes =
             new ArrayList<>();
