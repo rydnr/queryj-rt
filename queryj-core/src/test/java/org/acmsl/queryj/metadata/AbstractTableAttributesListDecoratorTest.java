@@ -56,6 +56,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.sql.Types;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -101,7 +102,8 @@ public class AbstractTableAttributesListDecoratorTest
                 isRelationship);
 
         @NotNull final Attribute<DecoratedString> attribute = EasyMock.createNiceMock(Attribute.class);
-        EasyMock.expect(attribute.getTypeId())
+        EasyMock.expect(attribute.getTypeId()).andReturn(Types.CLOB);
+        EasyMock.replay();
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
         @NotNull final DecoratorFactory decoratorFactory = CachingDecoratorFactory.getInstance();
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
