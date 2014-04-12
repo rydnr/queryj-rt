@@ -1,5 +1,5 @@
 /*
- * AttributesStatementSetter template metadata.
+ * PkStatementSetter template metadata.
  */
 // The template name (the filename).
 name : AttributesStatementSetter.stg;
