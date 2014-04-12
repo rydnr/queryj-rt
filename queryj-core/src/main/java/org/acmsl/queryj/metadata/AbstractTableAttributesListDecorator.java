@@ -348,8 +348,10 @@ public abstract class AbstractTableAttributesListDecorator
     }
 
     /**
-     * Checks whether the items inc
+     * Checks whether the items include any Clob attribute.
+     * @return {@code true} in such case.
      */
+
     /**
      * Compares given instance with the one wrapped by this instance.
      * @param table the table to compare with.
