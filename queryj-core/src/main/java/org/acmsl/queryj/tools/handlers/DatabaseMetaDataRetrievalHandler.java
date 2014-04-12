@@ -739,7 +739,8 @@ public abstract class DatabaseMetaDataRetrievalHandler
     }
 
     /**
-     * Extracts the procedures..
+     * Extracts the procedures.
+     * @param tables the tables.
      * @param extractedMap the already-extracted information.
      * @param metadataManager the database metadata manager.
      * @param tableKey the key to store the tables.
