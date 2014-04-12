@@ -114,4 +114,10 @@ public interface TableDecorator
      */
     @NotNull
     List<DecoratedString> getAttributeTypes();
+
+    /**
+     * Retrieves the metadata manager.
+     * @retu
+     *
+     */
 }
