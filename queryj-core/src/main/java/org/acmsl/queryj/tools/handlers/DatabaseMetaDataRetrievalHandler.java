@@ -1188,6 +1188,7 @@ public abstract class DatabaseMetaDataRetrievalHandler
 
     /**
      * Builds the table fields key.
+     * @param key the key.
      * @return the map key.
      */
     @NotNull
