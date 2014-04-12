@@ -336,6 +336,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
      * @param fileName  the file name.
      * @param outputDir the output folder.
      * @param rootFolder the root folder.
+     * @param charset the charset.
      * @param fileUtils the {@link org.acmsl.commons.utils.io.FileUtils} instance.
      * @return the hash, if found.
      */
