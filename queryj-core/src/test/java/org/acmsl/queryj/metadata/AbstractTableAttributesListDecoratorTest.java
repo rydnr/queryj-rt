@@ -317,6 +317,13 @@ public class AbstractTableAttributesListDecoratorTest
         EasyMock.verify(attribute);
     }
 
+    /**
+     * Creates a new instance.
+     * @param attributes
+     * @param tableDecorator
+     * @param metadataManager
+     * @return
+     */
     @NotNull
     protected AbstractTableAttributesListDecorator createInstance(
         @NotNull final List<Attribute<DecoratedString>> attributes,
