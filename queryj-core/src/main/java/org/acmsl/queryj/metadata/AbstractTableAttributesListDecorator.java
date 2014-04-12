@@ -370,7 +370,7 @@ public abstract class AbstractTableAttributesListDecorator
 
         for (@Nullable final Attribute<DecoratedString> attribute : attributes)
         {
-            if ()
+            if (attribute.getTypeId() == typeId)
         }
         return result;
     }
