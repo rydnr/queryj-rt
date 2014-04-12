@@ -136,6 +136,7 @@ public class AbstractTableAttributesListDecoratorTest
 
         Assert.assertTrue(instance.getContainsClobs());
     }
+
     /**
      * Checks whether getContainsClobs() detects any Clob
      * attribute, when there is none.
