@@ -335,6 +335,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
      * Tries to read the hash from disk.
      * @param fileName  the file name.
      * @param outputDir the output folder.
+     * @param rootFolder the root folder.
      * @param fileUtils the {@link org.acmsl.commons.utils.io.FileUtils} instance.
      * @return the hash, if found.
      */
