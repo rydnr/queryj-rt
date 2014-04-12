@@ -43,7 +43,7 @@ import "queryj.stg"
 
 source(C) ::= <<
 <!
-  Defines the rules to generate AttributesStatementSetter implementations.
+  Defines the rules to generate PkStatementSetter implementations.
   @param C the context.
 !>
 <sourceImpl(table=C.table, C=C)>
