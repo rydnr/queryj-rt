@@ -121,35 +121,6 @@ public class AbstractTableAttributesListDecoratorTest
 
         @NotNull final AbstractTableAttributesListDecorator instance =
             createInstance(attributes, tableDecorator, metadataManager);
-            {
-                /**
-                 * {@inheritDoc}
-                 */
-                @Override
-                public Attribute<DecoratedString> getStaticAttribute()
-                {
-                    return null;
-                }
-
-                /**
-                 * {@inheritDoc}
-                 */
-                @Override
-                public boolean isRelationship()
-                {
-                    return false;
-                }
-
-                /**
-                 * {@inheritDoc}
-                 */
-                @NotNull
-                @Override
-                public MetadataManager getMetadataManager()
-                {
-                    return metadataManager;
-                }
-            };
 
         Assert.assertTrue(instance.getContainsClobs());
         EasyMock.verify(attribute);
