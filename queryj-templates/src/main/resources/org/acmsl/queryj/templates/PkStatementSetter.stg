@@ -278,7 +278,11 @@ public boolean equals(<nullable(C=C)>final Object other)
             (<table.name.voName>AttributesStatementSetter) other;
 
         result =
-            equals(getValues(), isUpdateOperation(), candidate.getValues(), candidate.isUpdateOperation());
+            equals(
+                getValues(),
+                isUpdateOperation(),
+                candidate.getValues(),
+                candidate.isUpdateOperation());
     }
     else
     {
