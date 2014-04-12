@@ -718,7 +718,7 @@ public class CachingTableDecorator
             {
                 result =
                     new TableAttributesListDecorator(
-                        new ArrayList<Attribute<DecoratedString>>(0), this);
+                        new ArrayList<>(0), this);
             }
 
             setCachedChildAttributes(result);
