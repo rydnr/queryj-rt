@@ -368,7 +368,10 @@ public abstract class AbstractTableAttributesListDecorator
     {
         boolean result = false;
 
-        for (@Nullable final Attribute<DecoratedString>)
+        for (@Nullable final Attribute<DecoratedString> attribute : attributes)
+        {
+            if ()
+        }
         return result;
     }
 
