@@ -347,6 +347,10 @@ public abstract class AbstractTableAttributesListDecorator
         return getTable().isVoDecorated();
     }
 
+
+    /**
+     * Checks whether the items inc
+     */
     /**
      * Compares given instance with the one wrapped by this instance.
      * @param table the table to compare with.
