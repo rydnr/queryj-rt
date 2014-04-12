@@ -331,7 +331,7 @@ public String toString()
 
     StringBuilder result = new StringBuilder("{ \class\": \"Abstract<table.name.voName>");
 
-    <table.attributes:{ a | <attribute_toString(attribute=a)>}; separator="\n">
+    <table.primaryKey:{ a | <attribute_toString(attribute=a)>}; separator="\n">
 
     result.append(", \"update\": ");
     result.append(this.m__UpdateOperation);
