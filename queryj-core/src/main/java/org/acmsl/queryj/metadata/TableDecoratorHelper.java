@@ -325,7 +325,7 @@ public class TableDecoratorHelper
     public List<Attribute<DecoratedString>> removeNonReadOnlyAttributes(
         @NotNull final List<Attribute<DecoratedString>> attributes)
     {
-        final List<Attribute<DecoratedString>> result = new ArrayList<Attribute<DecoratedString>>();
+        final List<Attribute<DecoratedString>> result = new ArrayList<>();
 
         for (@Nullable final Attribute<DecoratedString> t_Attribute : attributes)
         {
