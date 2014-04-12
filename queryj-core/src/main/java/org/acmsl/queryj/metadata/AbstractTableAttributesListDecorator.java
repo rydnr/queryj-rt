@@ -257,6 +257,16 @@ public abstract class AbstractTableAttributesListDecorator
         return getAttributeTypes(getItems());
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public List<DecoratedString> getAttributeTypes()
+    {
+        return getAttributeTypes(getItems());
+    }
+
     // Table implementation
     /**
      * {@inheritDoc}
