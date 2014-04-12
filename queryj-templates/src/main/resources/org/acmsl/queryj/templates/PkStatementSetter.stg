@@ -117,7 +117,6 @@ project_imports(
  * Importing project classes.
  */
 import <basePackageName>.<voSubpackageName>.<voName>;
-import <basePackageName>.<voSubpackageName>.<voName>ValueObject;
 >>
 
 first_line_description(table) ::= <<
