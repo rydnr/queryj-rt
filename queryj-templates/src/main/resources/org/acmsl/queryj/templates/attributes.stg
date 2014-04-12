@@ -46,7 +46,7 @@ attribute_method_parameter_declaration(attribute, prefix) ::= <<
 <if(!attribute.strictlyPrimitive)><if(attribute.nullable)><nullable(C=C)><else><notnull(C=C)><endif><endif>final <attribute.javaType> <if(prefix)><prefix><attribute.name.capitalized><else><attribute.name.uncapitalized><endif>
 >>
 
-attribute_declaration(attribute) ::= <<
+attribute_declaration(attribute, C=C) ::= <<
 <!
  Writes the declaration for given attribute.
  @param attribute the attribute.
@@ -56,6 +56,30 @@ attribute_declaration(attribute) ::= <<
  */
 <if(!attribute.strictlyPrimitive)><if(attribute.nullable)><nullable(C=C)><else><notnull(C=C)><endif><endif>
 private <attribute.javaType> m__<attribute.name.capitalized>;
+>>
+
+attribute_declaration_impl(attr, C) ::= <<
+<!
+  Writes the parameter declaration for a concrete attribute.
+  @param attr the attribute.
+!>
+<type_checker(attribute=attr, C=C)>final <if(attr.clob)>String<else><attr.javaType><endif> <attr.name.uncapitalized>
+>>
+
+attribute_isolated_declaration(attr, C) ::= <<
+<!
+  Writes the parameter declaration for a concrete attribute, isolated.
+  @param attr the attribute.
+!>
+<attribute_declaration(attr=attr, C=C)>,
+>>
+
+attribute_isolated_declaration_impl(attr, C) ::= <<
+<!
+  Writes the parameter declaration for a concrete attribute.
+  @param attr the attribute.
+!>
+<type_checker(attribute=attr, C=C)>final <if(attr.clob)>String<else><attr.javaType><endif> <attr.name.lowercased>,
 >>
 
 immutable_setter_call(attribute) ::= <<

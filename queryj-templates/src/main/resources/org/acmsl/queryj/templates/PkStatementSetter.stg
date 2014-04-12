@@ -163,7 +163,7 @@ class(table, C) ::= <<
 public class <table.name.voName>PkStatementSetter
     implements  PreparedStatementSetter
 {
-    <table.primaryKey:{ a | <attribute_declaration(attribute=a)>}; separator="\n">
+    <table.primaryKey:{ a | <attribute_declaration(attribute=a, C=C)>}; separator="\n">
 
     /**
      * The \<i>update\</i> operation.
