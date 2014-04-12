@@ -347,7 +347,6 @@ public abstract class AbstractTableAttributesListDecorator
         return getTable().isVoDecorated();
     }
 
-
     /**
      * Checks whether the items inc
      */
