@@ -733,6 +733,7 @@ public class BindQueryParametersHandler
      * Retrieves the method to call.
      * @param instanceClass the instance class.
      * @param methodName the method name.
+     * @param parameterClasses the parameter classes.
      * @return the <code>Method</code> instance.
      */
     @NotNull
