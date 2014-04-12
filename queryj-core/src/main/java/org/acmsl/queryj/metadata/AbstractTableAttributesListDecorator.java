@@ -353,7 +353,7 @@ public abstract class AbstractTableAttributesListDecorator
      */
     public boolean getContainsClobs()
     {
-        return false;
+        return containsClobs();
     }
 
     /**
