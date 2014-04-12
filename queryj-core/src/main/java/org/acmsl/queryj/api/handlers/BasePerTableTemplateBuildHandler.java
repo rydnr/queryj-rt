@@ -264,6 +264,7 @@ public abstract class BasePerTableTemplateBuildHandler
      * @param tableName the table name.
      * @param staticContents the table's static contents (optional).
      * @param parameters the parameter map.
+     * @return the template.
      */
     @Nullable
     protected T createTemplate(
