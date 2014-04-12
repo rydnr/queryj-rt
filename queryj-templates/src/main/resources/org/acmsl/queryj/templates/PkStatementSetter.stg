@@ -51,7 +51,7 @@ source(C) ::= <<
 
 sourceImpl(table, C) ::= <<
 <!
-  Defines the rules to generate AttributesStatementSetter implementations.
+  Defines the rules to generate PkStatementSetter implementations.
   @param table the table.
   @param C the context.
 !>
