@@ -254,7 +254,7 @@ public abstract class AbstractTableAttributesListDecorator
     @Override
     public List<DecoratedString> getAttributeTypes()
     {
-        return getAttributeTypes()
+        return getAttributeTypes(getItems());
     }
 
     // Table implementation
