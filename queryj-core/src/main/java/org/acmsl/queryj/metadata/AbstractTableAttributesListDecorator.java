@@ -358,6 +358,15 @@ public abstract class AbstractTableAttributesListDecorator
     }
 
     /**
+     * Checks whether the items include any Clob attribute.
+     * @return {@code true} in such case.
+     */
+    public boolean getContainsClobs()
+    {
+        return contains(getAttributes(), Types.CLOB);
+    }
+
+    /**
      * Compares given instance with the one wrapped by this instance.
      * @param table the table to compare with.
      * @return the result of comparing given instance with the wrapped one.
