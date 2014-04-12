@@ -157,7 +157,7 @@ class(table, C) ::= <<
       third_line_description(table=table)
     ]:{line |<line>}; separator="\n * ">
 <class_common_javadoc(
-  template="org/acmsl/queryj/templates/AttributesStatementSetter.stg", C=C)>
+  template="org/acmsl/queryj/templates/PkStatementSetter.stg", C=C)>
  */
 <class_annotations(C=C)>
 public class <table.name.voName>AttributesStatementSetter
