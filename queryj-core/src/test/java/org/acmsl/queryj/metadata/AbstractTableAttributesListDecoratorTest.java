@@ -319,4 +319,7 @@ public class AbstractTableAttributesListDecoratorTest
 
     @NotNull
     protected AbstractTableAttributesListDecorator createInstance()
+    {
+
+    }
 }
