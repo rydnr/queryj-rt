@@ -303,7 +303,7 @@ public boolean equals(<nullable(C=C)>final Object other)
 protected boolean equals(
     <table.primaryKey:{ a | <attribute_parameter_method_declaration(attribute=a, prefix="my")>}; separator="\n">
     final boolean myUpdate,
-    <notnull(C=C)>final <table.name.voName> hisValues,
+    <table.primaryKey:{ a | <attribute_parameter_method_declaration(attribute=a, prefix="my")>}; separator="\n">
     final boolean hisUpdate)
 {
     return
