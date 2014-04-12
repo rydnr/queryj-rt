@@ -117,7 +117,8 @@ public interface TableDecorator
 
     /**
      * Retrieves the metadata manager.
-     * @retu
-     *
+     * @return such instance.
      */
+    @NotNull
+    MetadataManager getMetadataManager();
 }
