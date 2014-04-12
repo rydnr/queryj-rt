@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description:
+ * Description: Provides some common logic for table list decorators.
  *
  * Date: 2013/12/30
  * Time: 11:00
