@@ -87,7 +87,7 @@ import javax.sql.DataSource;
  * Importing JDK classes.
  */
 <if(table.pkAttributeTypes)>
-<table.attributeTypes:{ t | import <t>;}; separator="\n">
+<table.pkAttributeTypes:{ t | import <t>;}; separator="\n">
 <endif>
 <if(table.pkContainsClobs)>
 import java.io.Writer;
