@@ -162,11 +162,6 @@ class(table, C) ::= <<
 <class_annotations(C=C)>
 public class <table.name.voName>PkStatementSetter
 {
-    /**
-     * An attribute container.
-     */
-    <notnull(C=C)>
-    private <table.name.voName> m__Values;
 
     /**
      * The \<i>update\</i> operation.
