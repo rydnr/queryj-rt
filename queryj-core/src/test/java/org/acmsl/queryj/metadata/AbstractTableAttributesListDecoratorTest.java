@@ -331,7 +331,7 @@ public class AbstractTableAttributesListDecoratorTest
         @NotNull final MetadataManager metadataManager)
     {
         return
-            new AbstractTableAttributesListDecorator(new ArrayList<Attribute<DecoratedString>>(0), tableDecorator)
+            new AbstractTableAttributesListDecorator(attributes, tableDecorator)
             {
                 /**
                  * {@inheritDoc}
