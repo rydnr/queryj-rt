@@ -321,35 +321,35 @@ public class AbstractTableAttributesListDecoratorTest
     protected AbstractTableAttributesListDecorator createInstance()
     {
         return
-        new AbstractTableAttributesListDecorator(new ArrayList<Attribute<DecoratedString>>(0), tableDecorator)
-        {
-            /**
-             * {@inheritDoc}
-             */
-            @Override
-            public Attribute<DecoratedString> getStaticAttribute()
+            new AbstractTableAttributesListDecorator(new ArrayList<Attribute<DecoratedString>>(0), tableDecorator)
             {
-                return null;
-            }
+                /**
+                 * {@inheritDoc}
+                 */
+                @Override
+                public Attribute<DecoratedString> getStaticAttribute()
+                {
+                    return null;
+                }
 
-            /**
-             * {@inheritDoc}
-             */
-            @Override
-            public boolean isRelationship()
-            {
-                return false;
-            }
+                /**
+                 * {@inheritDoc}
+                 */
+                @Override
+                public boolean isRelationship()
+                {
+                    return false;
+                }
 
-            /**
-             * {@inheritDoc}
-             */
-            @NotNull
-            @Override
-            public MetadataManager getMetadataManager()
-            {
-                return metadataManager;
-            }
-        };
+                /**
+                 * {@inheritDoc}
+                 */
+                @NotNull
+                @Override
+                public MetadataManager getMetadataManager()
+                {
+                    return metadataManager;
+                }
+            };
     }
 }
