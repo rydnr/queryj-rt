@@ -377,6 +377,7 @@ public abstract class AbstractTableAttributesListDecorator
                 break;
             }
         }
+
         return result;
     }
 
