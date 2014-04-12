@@ -327,7 +327,7 @@ tostring_method(table, C) ::= <<
 public String toString()
 {
     <notnull(C=C)>final StringBuilder result =
-        new StringBuilder("{ \class\": \"<table.name.voName>AttributesStatementSetter");
+        new StringBuilder("{ \class\": \"<table.name.voName>PkStatementSetter");
 
     <table.primaryKey:{ a | <attribute_toString(attribute=a)>}; separator="\n">
 
