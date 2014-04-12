@@ -829,6 +829,7 @@ public abstract class DatabaseMetaDataRetrievalHandler
 
     /**
      * Retrieves the database product name.
+     * @param parameters the parameters.
      * @return such name.
      */
     @Nullable
