@@ -479,6 +479,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
      * @param hashValue the content to write
      * @param fileName the file name.
      * @param outputDir the output dir.
+     * @param rootFolder the root folder.
      * @param charset the charset.
      * @param fileUtils the {@link FileUtils} instance.
      */
