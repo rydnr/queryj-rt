@@ -65,7 +65,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Provides some common logic for tablelist decorators.
+ * Provides some common logic for table list decorators.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2013/12/30 11:00
