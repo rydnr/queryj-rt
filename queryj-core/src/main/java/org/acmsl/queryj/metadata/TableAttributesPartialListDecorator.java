@@ -635,7 +635,7 @@ public class TableAttributesPartialListDecorator
     @Override
     public MetadataManager getMetadataManager()
     {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return getTable().getMetadataManager();
     }
 
     /**
