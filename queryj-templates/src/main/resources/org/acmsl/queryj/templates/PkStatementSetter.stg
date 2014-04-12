@@ -310,7 +310,8 @@ public int hashcode()
 
     result =
           classHashCode
-        <table.primaryKey:{ a |+ <a.name.uncapitalized>HashCode}; separator="\n">;
+        <table.primaryKey:{ a |+ <a.name.uncapitalized>HashCode}; separator="\n">
+        + updateHashCode;
 
     return result;
 }
