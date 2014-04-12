@@ -89,7 +89,7 @@ import javax.sql.DataSource;
 <if(table.primaryKey.attributeTypes)>
 <table.pkAttributeTypes:{ t | import <t>;}; separator="\n">
 <endif>
-<if(table.pkContainsClobs)>
+<if(table.primaryKey.containsClobs)>
 import java.io.Writer;
 import java.sql.Clob;
 <endif>
