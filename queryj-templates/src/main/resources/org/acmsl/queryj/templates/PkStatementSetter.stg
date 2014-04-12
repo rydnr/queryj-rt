@@ -224,7 +224,7 @@ public class <table.name.voName>PkStatementSetter
     {
         setValues(
             preparedStatement,
-            <table.primaryKey:{ a | <
+            <table.primaryKey:{ a | get<a.name.capitalized>()
             isUpdateOperation());
     }
 
