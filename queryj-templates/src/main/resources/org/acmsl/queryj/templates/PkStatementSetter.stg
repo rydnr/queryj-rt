@@ -294,7 +294,7 @@ public boolean equals(<nullable(C=C)>final Object other)
 
 /**
  * Checks whether the state information provided match.
- <table.primaryKey:{ a | * @param myValues my {@code <table.name.voName>} values.
+ <table.primaryKey:{ a | * @param my<aValues my {@code <table.name.voName>} values.
  * @param myUpdate whether it's an update operation.
  * @param hisValues his {@code <table.name.voName>} values.
  * @param hisUpdate whether his it's an update operation.
