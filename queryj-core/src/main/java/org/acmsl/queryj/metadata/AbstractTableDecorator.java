@@ -2034,7 +2034,8 @@ public abstract class AbstractTableDecorator
     @NotNull
     public List<DecoratedString> getAttributeTypes()
     {
-        return getAttributeTypes(getAttributes(), getMetadataManager().getMetadataTypeManager());
+        return
+            getAttributeTypes(getAttributes(), getMetadataManager().getMetadataTypeManager());
     }
 
     /**
