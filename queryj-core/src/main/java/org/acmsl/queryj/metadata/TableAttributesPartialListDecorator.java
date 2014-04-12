@@ -628,7 +628,6 @@ public class TableAttributesPartialListDecorator
 
     /**
      * Retrieves the metadata manager.
-     *
      * @return such instance.
      */
     @NotNull
