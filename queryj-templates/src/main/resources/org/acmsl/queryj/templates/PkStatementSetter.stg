@@ -306,7 +306,7 @@ public int hashcode()
 
     <table.primaryKey:{ a | <attribute_hashcode(attribute=a)>}; separator="\n">
 
-    final int updateHashCode = Boolean.valueOf(
+    final int updateHashCode = Boolean.valueOf(get
     result =
           classHashCode
         <table.primaryKey:{ a |+ <a.name.uncapitalized>HashCode}; separator="\n">;
