@@ -347,6 +347,8 @@ public class BindQueryParametersHandler
      * @param parameterIndex the index of the parameter.
      * @param type the parameter type.
      * @param sql the sql.
+     * @param parameterClasses the parameter classes.
+     * @return the method.
      */
     @NotNull
     protected Method retrievePreparedStatementMethod(
