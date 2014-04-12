@@ -329,8 +329,6 @@ public String toString()
     <notnull(C=C)>final StringBuilder result =
         new StringBuilder("{ \class\": \"<table.name.voName>AttributesStatementSetter");
 
-    StringBuilder result = new StringBuilder("{ \class\": \"Abstract<table.name.voName>");
-
     <table.primaryKey:{ a | <attribute_toString(attribute=a)>}; separator="\n">
 
     result.append(", \"update\": ");
