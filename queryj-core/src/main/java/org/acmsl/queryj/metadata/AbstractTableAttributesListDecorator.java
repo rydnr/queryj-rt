@@ -352,6 +352,10 @@ public abstract class AbstractTableAttributesListDecorator
      * @return {@code true} in such case.
      */
     public boolean getContainsClobs()
+    {
+        return false;
+    }
+
     /**
      * Compares given instance with the one wrapped by this instance.
      * @param table the table to compare with.
