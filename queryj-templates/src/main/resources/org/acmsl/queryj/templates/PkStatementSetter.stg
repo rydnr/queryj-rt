@@ -290,6 +290,7 @@ public boolean equals(<nullable(C=C)>final Object other)
 
     return result;
 }
+>>
 
 hashcode_method(table, C) ::= <<
 <! Generates the hashcode() method !>
