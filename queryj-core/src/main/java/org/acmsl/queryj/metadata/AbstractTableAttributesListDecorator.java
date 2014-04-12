@@ -265,7 +265,10 @@ public abstract class AbstractTableAttributesListDecorator
     @NotNull
     protected List<DecoratedString> getAttributeTypes(@NotNull final List<Attribute<DecoratedString>> items)
     {
-        return getAttributeTypes(getItems());
+        return super.getA
+        protected List<DecoratedString> getAttributeTypes(
+        @NotNull final List<Attribute<DecoratedString>> attrs,
+        @NotNull final MetadataTypeManager typeManager)
     }
 
     // Table implementation
