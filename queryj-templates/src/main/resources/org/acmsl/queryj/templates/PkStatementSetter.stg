@@ -162,7 +162,7 @@ class(table, C) ::= <<
 <class_annotations(C=C)>
 public class <table.name.voName>PkStatementSetter
 {
-    <
+    <table.primaryKey:{
     /**
      * The \<i>update\</i> operation.
      */
