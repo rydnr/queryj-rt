@@ -361,7 +361,7 @@ public abstract class AbstractTableAttributesListDecorator
      * Checks whether the items include any Clob attribute.
      * @return {@code true} in such case.
      */
-    protected boolean getContainsClobs(@NotNull final List<Attribute<DecoratedString>>)
+    protected boolean getContainsClobs(@NotNull final List<Attribute<DecoratedString>> attributes, )
     {
         return contains(getAttributes(), Types.CLOB);
     }
