@@ -324,6 +324,17 @@ public int hashcode()
 {
     final int result;
 
+    final int result;
+
+    final int classHashCode = Abstract<table.name.voName>.class.hashcode();
+
+    <table.attributes:{ a | <attribute_hashcode(attribute=a)>}; separator="\n">
+
+    result =
+          classHashCode
+        <table.attributes:{ a |+ <a.name.uncapitalized>HashCode}; separator="\n">;
+
+    return result;
     final int classHashCode = <table.name.voName>AttributesStatementSetter.class.hashcode();
 
     final int valuesHashCode = this.m__Values.hashcode();
