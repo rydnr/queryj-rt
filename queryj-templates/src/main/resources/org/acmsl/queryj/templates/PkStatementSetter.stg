@@ -180,7 +180,6 @@ public class <table.name.voName>PkStatementSetter
         final boolean updateOperation)
     {
         <table.primaryKey:{ a | immutableSet<a.name.capitalized>(<a.name.uncapitalized>);}; separator="\n">
-        immutableSetValues(values);
         immutableSetUpdateOperation(updateOperation);
     }
 
