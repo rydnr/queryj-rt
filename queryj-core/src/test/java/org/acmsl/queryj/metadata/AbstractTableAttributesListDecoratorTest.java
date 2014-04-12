@@ -94,7 +94,7 @@ public class AbstractTableAttributesListDecoratorTest
                 name,
                 comment,
                 primaryKey,
-                tableAttributes,
+                attributes,
                 foreignKeys,
                 parentTable,
                 staticAttribute,
