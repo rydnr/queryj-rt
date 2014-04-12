@@ -2050,7 +2050,8 @@ public abstract class AbstractTableDecorator
     @NotNull
     protected List<DecoratedString> getAttributeTypes(
         @NotNull final List<Attribute<DecoratedString>> attrs,
-        @NotNull final MetadataTypeManager typeManager)
+        @NotNull final MetadataTypeManager typeManager,
+        @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
         @NotNull final List<DecoratedString> result = new ArrayList<>(attrs.size());
 
