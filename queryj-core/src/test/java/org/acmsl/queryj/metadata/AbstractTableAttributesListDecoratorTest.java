@@ -218,6 +218,8 @@ public class AbstractTableAttributesListDecoratorTest
 
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
         @NotNull final MetadataTypeManager metadataTypeManager = new JdbcMetadataTypeManager();
+        EasyMock.expect(metadataManager.getMetadataTypeManager()).andReturn(metadataTypeManager);
+        EasyMock.replay(metadataManager);
         @NotNull final DecoratorFactory decoratorFactory = CachingDecoratorFactory.getInstance();
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
 
