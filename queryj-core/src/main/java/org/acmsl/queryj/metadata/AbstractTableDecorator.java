@@ -2053,7 +2053,7 @@ public abstract class AbstractTableDecorator
         @NotNull final MetadataTypeManager typeManager,
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
-        return tableDecoratorHelper.getAttributeTypes()@NotNull final List<DecoratedString> result = new ArrayList<>(attrs.size());
+        return tableDecoratorHelper.getAttributeTypes(attrs, typeManager);
 
         for (@Nullable final Attribute<DecoratedString> attr: attrs)
         {
