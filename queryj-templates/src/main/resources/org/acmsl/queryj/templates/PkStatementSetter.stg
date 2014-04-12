@@ -222,7 +222,10 @@ public class <table.name.voName>PkStatementSetter
     public void setValues(<notnull(C=C)>final PreparedStatement preparedStatement)
         throws  SQLException
     {
-        setValues(preparedStatement, getValues(), isUpdateOperation());
+        setValues(
+            preparedStatement,
+            getValues(),
+            isUpdateOperation());
     }
 
     /**
