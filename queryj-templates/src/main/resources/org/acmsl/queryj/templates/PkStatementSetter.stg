@@ -243,7 +243,7 @@ public class <table.name.voName>PkStatementSetter
     {
         int index = 1;
 
-<  if(table.primaryKey.minus.not.externallyManagedAttributes)>
+<  if(table.primaryKey.minus.not.externallyManaged)>
         if (update)
         {
             <table.primaryKey.minus.not.externallyManaged:{ a | <attribute_preparedstatement_specification(attr=a)>}; separator="\n">
