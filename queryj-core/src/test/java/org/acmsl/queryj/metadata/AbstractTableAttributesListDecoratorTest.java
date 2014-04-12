@@ -212,7 +212,6 @@ public class AbstractTableAttributesListDecoratorTest
                 isRelationship);
 
         @NotNull final Attribute<DecoratedString> attribute = EasyMock.createNiceMock(Attribute.class);
-        EasyMock.expect(attribute.getTypeId()).andReturn(Types.DATE);
         EasyMock.expect(attribute.getType()).andReturn(new DecoratedString("Date"));
         EasyMock.replay(attribute);
         attributes.add(attribute);
