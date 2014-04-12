@@ -282,7 +282,8 @@ public class AbstractTableAttributesListDecoratorTest
                 }
             };
 
-        instance.getAttributeTypes());
+        @NotNull final List<DecoratedString> types = instance.getAttributeTypes();
+        Assert.assertFalse(types.isEmpty());
         EasyMock.verify(attribute);
     }
 }
