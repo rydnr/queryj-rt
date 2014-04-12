@@ -892,6 +892,7 @@ public abstract class DatabaseMetaDataRetrievalHandler
 
     /**
      * Retrieves the database minor version.
+     * @param parameters the parameters.
      * @return such version.
      */
     public int retrieveDatabaseMinorVersion(@NotNull final QueryJCommand parameters)
