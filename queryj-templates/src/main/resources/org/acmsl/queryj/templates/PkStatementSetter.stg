@@ -278,7 +278,8 @@ public boolean equals(<nullable(C=C)>final Object other)
 
     if (other instanceof <table.name.voName>)
     {
-        <notnull(C=C)>final <table.name.voName> candidate = (<table.name.voName>) other;
+        <notnull(C=C)>final <table.name.voName>PkStatementSetter> candidate =
+            (<table.name.voName>AttributesStatementSetter) other;
 
         <table.attributes:{ a | <attribute_equals(attribute=a)>}; separator="">
         result =
