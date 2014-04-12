@@ -290,8 +290,6 @@ public boolean equals(<nullable(C=C)>final Object other)
     }
 
     return result;
-        <notnull(C=C)>final <table.name.voName>PkStatementSetter> candidate =
-            (<table.name.voName>AttributesStatementSetter) other;
 
         result =
             equals(
