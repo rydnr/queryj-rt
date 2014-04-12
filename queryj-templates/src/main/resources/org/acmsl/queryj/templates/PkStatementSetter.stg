@@ -184,35 +184,6 @@ public class <table.name.voName>PkStatementSetter
     }
 
     /**
-     * Specifies the values.
-     * @param values the {@link <table.name.voName>} instance.
-     */
-    protected final void immutableSetValues(<notnull(C=C)>final <table.name.voName> values)
-    {
-        this.m__Values = values;
-    }
-
-    /**
-     * Specifies the values.
-     * @param values the {@link <table.name.voName>} instance.
-     */
-    @SuppressWarnings("unused")
-    protected void setValues(<notnull(C=C)>final <table.name.voName> values)
-    {
-        immutableSetValues(values);
-    }
-
-    /**
-     * Retrieves the values.
-     * @return such {@link <table.name.voName>} instance.
-     */
-    <notnull(C=C)>
-    public <table.name.voName> getValues()
-    {
-        return this.m__Values;
-    }
-
-    /**
      * Specifies whether the operation is an update or not.
      * @param updateOperation such information.
      */
