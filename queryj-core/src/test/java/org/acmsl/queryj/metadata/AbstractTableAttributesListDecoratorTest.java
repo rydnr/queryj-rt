@@ -300,6 +300,16 @@ public class AbstractTableAttributesListDecoratorTest
                 {
                     return false;
                 }
+
+                /**
+                 * {@inheritDoc}
+                 */
+                @NotNull
+                @Override
+                public MetadataManager getMetadataManager()
+                {
+                    return metadataManager;
+                }
             };
 
         @NotNull final List<DecoratedString> types = instance.getAttributeTypes();
