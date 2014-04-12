@@ -498,6 +498,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
     /**
      * Computes the hash of given content.
      * @param relevantContent the content.
+     * @param charset the charset.
      * @return the hash.
      */
     @NotNull
