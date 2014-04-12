@@ -1013,7 +1013,7 @@ public abstract class DatabaseMetaDataRetrievalHandler
 
     /**
      * Retrieves whether the database engine is case sensitive or not.
-     * @param parameters the parameters.
+     * @param caseSensitive the case sensitiveness.
      * @param parameters the parameters.
      */
     @SuppressWarnings("unchecked")
