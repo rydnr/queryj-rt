@@ -260,18 +260,6 @@ public class <table.name.voName>PkStatementSetter
 }
 >>
 
-attribute_member_declaration(attribute) ::= <<
-<!
- Generates the member declaration for a concrete attribute.
- @param attribute the attribute.
-!>
-/**
- * <if(attribute.comment.empty)>The \<i><attribute.name>\</i> information<else><attribute.comment><endif>.
- */
-<if(!attribute.strictlyPrimitive)><if(attribute.allowsNull)><nullable(C=C)><else><notnull(C=C)><endif><endif>
-private <attribute.javaType> <attribute.name.uncapitalized>;
->>
-
 attribute_preparedstatement_specification(attr) ::= <<
 <!
  Generates the code to specify the attribute into the PreparedStatement.
