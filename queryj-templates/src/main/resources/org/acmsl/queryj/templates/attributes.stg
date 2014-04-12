@@ -186,4 +186,3 @@ clob_specification(attribute) ::= <<
 clobWriter.write(<attribute.name.uncapitalized>);
 preparedStatement.setClob(index++, <attribute.name.uncapitalized>Clob);
 >>
-
