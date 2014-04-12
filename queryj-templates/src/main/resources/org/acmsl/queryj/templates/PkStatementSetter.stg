@@ -290,29 +290,6 @@ public boolean equals(<nullable(C=C)>final Object other)
     return result;
 }
 
-/**
- * Checks whether the state information provided match.
- <table.primaryKey:{ a | * @param my<a.name.capitalized> my <a.name> value.}; separator="\n">
- * @param myUpdate whether it's an update operation.
- <table.primaryKey:{ a | * @param his<a.name.capitalized> his <a.name> value.}; separator="\n">
- * @param hisUpdate whether his it's an update operation.
- * @return {@code true} if and only if both sets are equivalent.
- */
-protected boolean equals(
-    <table.primaryKey:{ a | <attribute_parameter_method_declaration(attribute=a, prefix="my")>}; separator="\n">
-    final boolean myUpdate,
-    <table.primaryKey:{ a | <attribute_parameter_method_declaration(attribute=a, prefix="his")>}; separator="\n">
-    final boolean hisUpdate)
-{
-        <table.attributes:{ a | <attribute_equals(attribute=a)>}; separator="">
-        result =
-            <table.attributes:{ a |<a.name.uncapitalized>Match}; separator="\n&& ">;
-    return
-           (myUpdate == hisUpdate)
-        && (myValues.equals(hisValues));
-}
->>
-
 hashcode_method(table, C) ::= <<
 <! Generates the hashcode() method !>
 /**
