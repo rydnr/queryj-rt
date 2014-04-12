@@ -153,7 +153,7 @@ public class AbstractTableAttributesListDecoratorTest
     @Test
     public void getContainsClobs_works_when_there_are_no_clobs()
     {
-        @NotNull final List<Attribute<String>> attributes =
+        @NotNull final List<Attribute<DecoratedString>> attributes =
             new ArrayList<>();
 
         @NotNull final String name = "name";
