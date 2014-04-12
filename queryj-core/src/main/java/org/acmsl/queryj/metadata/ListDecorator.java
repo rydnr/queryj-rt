@@ -90,6 +90,6 @@ public interface ListDecorator<T>
     PartialListDecorator getOnly();
 
     /**
-     * Checks whether the
+     * Checks whether the items inc
      */
 }
