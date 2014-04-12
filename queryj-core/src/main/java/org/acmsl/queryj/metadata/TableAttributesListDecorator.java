@@ -194,20 +194,6 @@ public class TableAttributesListDecorator
         return getTable().getPrimaryKey();
     }
 
-    // TODO: remove me
-    /**
-     * {@inheritDoc}
-     */
-    public List<Attribute<DecoratedString>> getPrimaryKey1()
-    {
-        List<Object> a = new ArrayList<>(2);
-
-        Object[] b = { 1, 2, 3};
-        a.addAll(Arrays.asList(b));
-
-        return getPrimaryKey();
-    }
-
     /**
      * {@inheritDoc}
      */
