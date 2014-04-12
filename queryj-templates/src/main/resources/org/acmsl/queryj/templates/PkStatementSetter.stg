@@ -338,8 +338,6 @@ public String toString()
     result.append(", \"update\": ");
     result.append(this.m__UpdateOperation);
 
-    result.append(", \"package\": \"");
-    result.append(<table.name.voName>PkStatementSetter.class.getPackage().getName());
     result.append("\" }");
 
     return result.toString();
