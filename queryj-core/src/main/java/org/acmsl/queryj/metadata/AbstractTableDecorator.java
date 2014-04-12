@@ -297,8 +297,9 @@ public abstract class AbstractTableDecorator
      * Retrieves the metadata manager.
      * @return such instance.
      */
+    @Override
     @NotNull
-    protected MetadataManager getMetadataManager()
+    public MetadataManager getMetadataManager()
     {
         return m__MetadataManager;
     }
