@@ -254,7 +254,7 @@ public abstract class AbstractTableAttributesListDecorator
     @Override
     public List<DecoratedString> getAttributeTypes()
     {
-        throw new RuntimeException(INVALID_OPERATION);
+        return getAttributeTypes()
     }
 
     // Table implementation
