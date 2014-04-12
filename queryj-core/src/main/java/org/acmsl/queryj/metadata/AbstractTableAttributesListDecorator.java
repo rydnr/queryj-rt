@@ -60,6 +60,7 @@ import org.checkthread.annotations.ThreadSafe;
 /*
  * Importing JDK classes.
  */
+import java.sql.Types;
 import java.util.List;
 
 /**
@@ -353,7 +354,7 @@ public abstract class AbstractTableAttributesListDecorator
      */
     public boolean getContainsClobs()
     {
-        return contains(getAttributes());
+        return contains(getAttributes(), Types.CLOB);
     }
 
     /**
