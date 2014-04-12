@@ -252,9 +252,7 @@ public class TableAttributesListDecorator
     }
 
     /**
-     * Retrieves the metadata manager.
-     *
-     * @return such instance.
+     * {@inheritDoc}
      */
     @NotNull
     @Override
