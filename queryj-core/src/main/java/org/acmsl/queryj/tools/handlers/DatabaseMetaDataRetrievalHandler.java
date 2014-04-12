@@ -1024,6 +1024,7 @@ public abstract class DatabaseMetaDataRetrievalHandler
 
     /**
      * Builds a database metadata manager.
+     * @param parameters the parameters.
      * @param tables the tables.
      * @param metaData the database metadata.
      * @param catalog the database catalog.
