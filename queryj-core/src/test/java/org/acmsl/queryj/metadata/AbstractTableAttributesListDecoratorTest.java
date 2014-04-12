@@ -39,6 +39,7 @@ package org.acmsl.queryj.metadata;
  * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.customsql.CustomSqlProvider;
+import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.ForeignKey;
 import org.acmsl.queryj.metadata.vo.Table;
@@ -216,6 +217,7 @@ public class AbstractTableAttributesListDecoratorTest
         attributes.add(attribute);
 
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
+        @NotNull final MetadataTypeManager metadataTypeManager = new JdbcMetadataTypeManager();
         @NotNull final DecoratorFactory decoratorFactory = CachingDecoratorFactory.getInstance();
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
 
