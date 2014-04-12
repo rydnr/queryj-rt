@@ -140,7 +140,17 @@ public class AbstractTableAttributesListDecoratorTest
                     return false;
                 }
 
-
+                /**
+                 * Retrieves the metadata manager.
+                 *
+                 * @return such instance.
+                 */
+                @NotNull
+                @Override
+                public MetadataManager getMetadataManager()
+                {
+                    return metadataManager;
+                }
             };
 
         Assert.assertTrue(instance.getContainsClobs());
