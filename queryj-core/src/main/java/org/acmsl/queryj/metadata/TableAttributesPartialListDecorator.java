@@ -488,17 +488,6 @@ public class TableAttributesPartialListDecorator
         return getPrimaryKey(getListDecorator(), getTable(), getOperation());
     }
 
-    @SuppressWarnings("unused")
-    // TODO: remove me
-    /**
-     * {@inheritDoc}
-     */
-    @NotNull
-    public ListDecorator<Attribute<DecoratedString>> getPrimaryKey1()
-    {
-        return getPrimaryKey();
-    }
-
     /**
      * Retrieves the result of adding or removing the primary key from the wrapped list.
      * @param list the list.
