@@ -237,6 +237,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
      * @param charset the {@link Charset} to use.
      * @param fileUtils the {@link FileUtils} instance.
      * @param log the {@link Log} instance.
+     * @return whether it gets written to disk.
      */
     protected boolean generate(
         @NotNull final N template,
