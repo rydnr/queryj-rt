@@ -282,7 +282,7 @@ public boolean equals(<nullable(C=C)>final Object other)
                 <table.primaryKey:{ a | this.get<a.name.capitalized>(),}; separator="\n">
                 this.isUpdateOperation(),
                 candidate.getValues(),
-                <table.primaryKey:{ a | this.get<a.name.capitalized>()}; separator=",\n">
+                <table.primaryKey:{ a | this.get<a.name.capitalized>()}; separator=",\n">);
                 candidate.isUpdateOperation());
     }
     else
