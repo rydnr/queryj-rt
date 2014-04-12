@@ -138,7 +138,7 @@ public class AbstractTableAttributesListDecoratorTest
     }
     /**
      * Checks whether getContainsClobs() detects any Clob
-     * attribute.
+     * attribute, when the table contains none.
      */
     @Test
     public void getContainsClobs_works_when_there_are_no_clobs()
