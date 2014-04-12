@@ -227,6 +227,7 @@ public class BindQueryParametersHandler
     /**
      * Binds the parameters to given statement.
      * @param parameter the {@link Parameter}.
+     * @param parameterIndex the parameter index.
      * @param sql the sql.
      * @param statement the prepared statement.
      * @param typeManager the metadata type manager.
