@@ -258,7 +258,9 @@ public abstract class AbstractTableAttributesListDecorator
     }
 
     /**
-     * {@inheritDoc}
+     * Retrieves the types of the attributes.
+     * @param items such items.
+     * @return their types.
      */
     @NotNull
     protected List<DecoratedString> getAttributeTypes(@NotNull final List<Attribute<DecoratedString>> items)
