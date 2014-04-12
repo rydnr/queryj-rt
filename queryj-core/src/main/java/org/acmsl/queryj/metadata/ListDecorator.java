@@ -88,8 +88,4 @@ public interface ListDecorator<T>
     @NotNull
     @SuppressWarnings("unused")
     PartialListDecorator getOnly();
-
-    /**
-     * Checks whether the items inc
-     */
 }
