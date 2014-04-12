@@ -252,6 +252,18 @@ public class TableAttributesListDecorator
     }
 
     /**
+     * Retrieves the metadata manager.
+     *
+     * @return such instance.
+     */
+    @NotNull
+    @Override
+    public MetadataManager getMetadataManager()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
      * {@inheritDoc}
      */
     @Override
