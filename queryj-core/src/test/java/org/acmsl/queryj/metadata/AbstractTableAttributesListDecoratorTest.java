@@ -204,6 +204,7 @@ public class AbstractTableAttributesListDecoratorTest
                 }
             };
 
+        EasyMock.verify(attribute);
         Assert.assertTrue(instance.getContainsClobs());
     }
 }
