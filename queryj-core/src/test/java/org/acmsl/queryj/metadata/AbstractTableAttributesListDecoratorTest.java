@@ -139,6 +139,8 @@ public class AbstractTableAttributesListDecoratorTest
                 {
                     return false;
                 }
+
+
             };
 
         Assert.assertTrue(instance.getContainsClobs());
