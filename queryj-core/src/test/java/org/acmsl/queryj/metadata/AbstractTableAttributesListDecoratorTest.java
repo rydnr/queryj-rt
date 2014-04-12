@@ -318,7 +318,9 @@ public class AbstractTableAttributesListDecoratorTest
     }
 
     @NotNull
-    protected AbstractTableAttributesListDecorator createInstance()
+    protected AbstractTableAttributesListDecorator createInstance(
+        @NotNull final List<Attribute<DecoratedString>> attributes, @NotNull final TableDecorator tableDecorator)
+    )
     {
         return
             new AbstractTableAttributesListDecorator(new ArrayList<Attribute<DecoratedString>>(0), tableDecorator)
