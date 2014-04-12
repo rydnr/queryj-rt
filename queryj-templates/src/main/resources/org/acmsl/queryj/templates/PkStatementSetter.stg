@@ -296,7 +296,7 @@ public boolean equals(<nullable(C=C)>final Object other)
  * Checks whether the state information provided match.
  <table.primaryKey:{ a | * @param my<a.name.capitalized> my <a.name> value.}; separator="\n">
  * @param myUpdate whether it's an update operation.
- <table.primaryKey:{ a | * @param his<a.name.capitalized> my <a.name> value.}; separator="\n">
+ <table.primaryKey:{ a | * @param his<a.name.capitalized> his <a.name> value.}; separator="\n">
  * @param hisUpdate whether his it's an update operation.
  * @return {@code true} if and only if both sets are equivalent.
  */
