@@ -1014,6 +1014,7 @@ public abstract class DatabaseMetaDataRetrievalHandler
     /**
      * Retrieves whether the database engine is case sensitive or not.
      * @param parameters the parameters.
+     * @param parameters the parameters.
      */
     @SuppressWarnings("unchecked")
     public void storeCaseSensitive(final boolean caseSensitive, @NotNull final QueryJCommand parameters)
