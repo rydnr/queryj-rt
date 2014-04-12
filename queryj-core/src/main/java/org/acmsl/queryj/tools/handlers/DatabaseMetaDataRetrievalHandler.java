@@ -375,6 +375,9 @@ public abstract class DatabaseMetaDataRetrievalHandler
      * @param tableMap the table map.
      * @param tableNameMap the table name map.
      * @param fieldMap a map to store field information.
+     * @param fieldFkMap the field fk map.
+     * @param fieldNameMap the field name map.
+     * @param attributeMap the attribute map.
      */
     protected void processExplicitSchema(
         @SuppressWarnings("unused") @NotNull final QueryJCommand parameters,
