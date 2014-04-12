@@ -232,7 +232,7 @@ public class AbstractTableAttributesListDecoratorTest
         @NotNull final List<DecoratedString> types = instance.getAttributeTypes();
         Assert.assertFalse(types.isEmpty());
         Assert.assertEquals(1, types.size());
-        @NotNull final
+        @NotNull final DecoratedString
         EasyMock.verify(attribute);
         EasyMock.verify(metadataManager);
     }
