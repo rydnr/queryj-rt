@@ -73,6 +73,7 @@ public class AbstractTableAttributesListDecoratorTest
      * Checks whether getContainsClobs() detects any Clob
      * attribute, when there is one.
      */
+    @SuppressWarnings("unchecked")
     @Test
     public void getContainsClobs_works_when_there_are_clobs()
     {
