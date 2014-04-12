@@ -172,7 +172,7 @@ public class <table.name.voName>PkStatementSetter
     /**
      * Creates a \<code><table.name.voName>PkStatementSetter\</code>
      * instance.
-     * @param values the {@link <table.name.voName>} instance.
+     <table.primaryKey:* @param values the {@link <table.name.voName>} instance.
      * @param updateOperation whether the operation is an update.
      */
     public <table.name.voName>AttributesStatementSetter(
