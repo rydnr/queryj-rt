@@ -183,6 +183,8 @@ public class <table.name.voName>PkStatementSetter
         immutableSetUpdateOperation(updateOperation);
     }
 
+    <table.primaryKey:{ a | <attribute_accessors(attribute=a)>}; separator="\n">
+
     /**
      * Specifies whether the operation is an update or not.
      * @param updateOperation such information.
