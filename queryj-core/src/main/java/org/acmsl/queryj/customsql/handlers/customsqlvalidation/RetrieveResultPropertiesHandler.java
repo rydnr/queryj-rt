@@ -180,6 +180,7 @@ public class RetrieveResultPropertiesHandler
      * @param customSqlProvider the <code>CustomSqlProvider</code> instance.
      * @param metadataManager the <code>MetadataManager</code> instance.
      * @param typeManager the <code>MetadataTypeManager</code> instance.
+     * @return the properties.
      */
     protected List<Property<String>> retrieveProperties(
         @NotNull final Sql<String> sql,
