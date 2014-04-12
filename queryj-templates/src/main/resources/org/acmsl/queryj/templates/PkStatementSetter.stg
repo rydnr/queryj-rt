@@ -306,6 +306,9 @@ protected boolean equals(
     <table.primaryKey:{ a | <attribute_parameter_method_declaration(attribute=a, prefix="his")>}; separator="\n">
     final boolean hisUpdate)
 {
+        <table.attributes:{ a | <attribute_equals(attribute=a)>}; separator="">
+        result =
+            <table.attributes:{ a |<a.name.uncapitalized>Match}; separator="\n&& ">;
     return
            (myUpdate == hisUpdate)
         && (myValues.equals(hisValues));
