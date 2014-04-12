@@ -187,6 +187,18 @@ clobWriter.write(<attribute.name.uncapitalized>);
 preparedStatement.setClob(index++, <attribute.name.uncapitalized>Clob);
 >>
 
+attribute_equals(attribute) ::= <<
+<! Generates the contribution of each attribute to the equals method. !>
+<if(attribute.strictlyPrimitive)>
+final boolean <attribute.name.uncapitalized>Match = (this.m__<attribute.name.capitalized> == candidate.get<attribute.name.capitalized>());
+<else><if(attribute.allowsNull)>
+final boolean <attribute.name.uncapitalized>Match =
+    (   (this.m__<attribute.name.capitalized> != null)
+     && (this.m__<attribute.name.capitalized>.equals(candidate.get<attribute.name.capitalized>())));
+<else>
+final boolean <attribute.name.uncapitalized>Match = this.m__<attribute.name.capitalized>.equals(candidate.get<attribute.name.capitalized>());<endif><endif>
+>>
+
 attribute_hashcode(attribute) ::= <<
 <! Generates the hashcode contribution for each attribute. !>
 <if(attribute.strictlyPrimitive)>
