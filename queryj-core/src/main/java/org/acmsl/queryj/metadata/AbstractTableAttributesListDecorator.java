@@ -358,7 +358,7 @@ public abstract class AbstractTableAttributesListDecorator
     }
 
     /**
-     * Checks whether given attributes include any Clob attribute.
+     * Checks whether given attributes include any of a certain type.
      * @param attributes the attributes.
      * @param typeId the type id.
      * @return {@code true} in such case.
