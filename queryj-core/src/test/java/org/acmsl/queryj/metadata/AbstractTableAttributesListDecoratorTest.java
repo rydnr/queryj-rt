@@ -320,8 +320,8 @@ public class AbstractTableAttributesListDecoratorTest
     @NotNull
     protected AbstractTableAttributesListDecorator createInstance(
         @NotNull final List<Attribute<DecoratedString>> attributes,
-        @NotNull final TableDecorator tableDecorator)
-    )
+        @NotNull final TableDecorator tableDecorator,
+        @NotNull final MetadataManager metadataManager)
     {
         return
             new AbstractTableAttributesListDecorator(new ArrayList<Attribute<DecoratedString>>(0), tableDecorator)
