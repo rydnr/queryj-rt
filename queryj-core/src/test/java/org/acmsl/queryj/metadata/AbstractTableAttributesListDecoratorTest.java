@@ -318,5 +318,5 @@ public class AbstractTableAttributesListDecoratorTest
     }
 
     @NotNull
-    protected
+    protected AbstractTableAttributesListDecorator createInstance()
 }
