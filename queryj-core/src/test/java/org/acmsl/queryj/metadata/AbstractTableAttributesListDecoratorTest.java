@@ -204,7 +204,7 @@ public class AbstractTableAttributesListDecoratorTest
                 name,
                 comment,
                 primaryKey,
-                attributes,
+                new ArrayList<>(0), // not used in this test
                 foreignKeys,
                 parentTable,
                 staticAttribute,
