@@ -214,4 +214,75 @@ public class AbstractTableAttributesListDecoratorTest
         Assert.assertTrue(instance.getContainsClobs());
         EasyMock.verify(attribute);
     }
+
+
+    /**
+     * Checks whether getContainsClobs() detects any Clob
+     * attribute, when there is none.
+     */
+    @SuppressWarnings("unchecked")
+    @Test
+    public void getContainsClobs_works_when_there_are_no_clobs()
+    {
+        @NotNull final List<Attribute<String>> attributes =
+            new ArrayList<>();
+
+        @NotNull final String name = "name";
+        @NotNull final String comment = "comment";
+        @NotNull final List<Attribute<String>> primaryKey = new ArrayList<>(0);
+        @NotNull final List<ForeignKey<String>> foreignKeys = new ArrayList<>(0);
+        @Nullable final Table<String, Attribute<String>, List<Attribute<String>>> parentTable = null;
+        @Nullable final Attribute<String> staticAttribute = null;
+        final boolean voDecorated = false;
+        final boolean isRelationship = false;
+
+        @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table =
+            new TableValueObject(
+                name,
+                comment,
+                primaryKey,
+                attributes,
+                foreignKeys,
+                parentTable,
+                staticAttribute,
+                voDecorated,
+                isRelationship);
+
+        @NotNull final Attribute<String> attribute = EasyMock.createNiceMock(Attribute.class);
+        EasyMock.expect(attribute.getTypeId()).andReturn(Types.CLOB);
+        EasyMock.replay(attribute);
+        attributes.add(attribute);
+
+        @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
+        @NotNull final DecoratorFactory decoratorFactory = CachingDecoratorFactory.getInstance();
+        @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
+
+        @NotNull final TableDecorator tableDecorator =
+            new CachingTableDecorator(table, metadataManager, decoratorFactory, customSqlProvider);
+
+        @NotNull final AbstractTableAttributesListDecorator instance =
+            new AbstractTableAttributesListDecorator(new ArrayList<Attribute<DecoratedString>>(0), tableDecorator)
+            {
+                /**
+                 * {@inheritDoc}
+                 */
+                @Override
+                public Attribute<DecoratedString> getStaticAttribute()
+                {
+                    return null;
+                }
+
+                /**
+                 * {@inheritDoc}
+                 */
+                @Override
+                public boolean isRelationship()
+                {
+                    return false;
+                }
+            };
+
+        Assert.assertTrue(instance.getContainsClobs());
+        EasyMock.verify(attribute);
+    }
 }
