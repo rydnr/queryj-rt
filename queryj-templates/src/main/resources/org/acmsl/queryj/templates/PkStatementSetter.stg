@@ -160,7 +160,7 @@ class(table, C) ::= <<
   template="org/acmsl/queryj/templates/PkStatementSetter.stg", C=C)>
  */
 <class_annotations(C=C)>
-public class <table.name.voName>AttributesStatementSetter
+public class <table.name.voName>PkStatementSetter
 {
     /**
      * An attribute container.
