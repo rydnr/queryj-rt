@@ -100,7 +100,7 @@ public class AbstractTableAttributesListDecoratorTest
                 name,
                 comment,
                 primaryKey,
-                new ArrayList<Attribute<String>>()attributes,
+                new ArrayList<>(0), // not used in this test
                 foreignKeys,
                 parentTable,
                 staticAttribute,
