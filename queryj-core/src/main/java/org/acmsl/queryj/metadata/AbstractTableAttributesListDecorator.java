@@ -61,7 +61,6 @@ import org.checkthread.annotations.ThreadSafe;
  * Importing JDK classes.
  */
 import java.sql.Types;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
