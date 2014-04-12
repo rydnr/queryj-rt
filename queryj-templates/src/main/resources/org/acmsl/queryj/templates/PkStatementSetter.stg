@@ -37,7 +37,7 @@
 //              implementations.
 //
 //
-group AttributesStatementSetter;
+group PkStatementSetter;
 
 import "queryj.stg"
 
