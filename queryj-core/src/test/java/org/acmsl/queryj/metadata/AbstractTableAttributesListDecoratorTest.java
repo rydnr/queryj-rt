@@ -101,7 +101,7 @@ public class AbstractTableAttributesListDecoratorTest
                 isRelationship);
 
         @NotNull final Attribute<DecoratedString> attribute = EasyMock.createNiceMock(Attribute.class);
-
+        EasyMock.expect(attribute.getTypeId())
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
         @NotNull final DecoratorFactory decoratorFactory = CachingDecoratorFactory.getInstance();
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
