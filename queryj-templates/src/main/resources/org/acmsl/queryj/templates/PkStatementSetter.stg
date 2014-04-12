@@ -337,8 +337,6 @@ public String toString()
     result.append(this.m__UpdateOperation);
     result.append(", \"package\": \"<C.package>\" }");
 
-    result.append("\" }");
-
     return result.toString();
 }
 >>
