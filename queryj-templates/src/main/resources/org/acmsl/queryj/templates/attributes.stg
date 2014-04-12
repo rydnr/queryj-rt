@@ -50,6 +50,7 @@ attribute_declaration(attribute, C=C) ::= <<
 <!
  Writes the declaration for given attribute.
  @param attribute the attribute.
+ @param context the context.
 !>
 /**
  * The \<i><attribute.name>\</i> value.
