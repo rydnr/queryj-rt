@@ -627,6 +627,18 @@ public class TableAttributesPartialListDecorator
     }
 
     /**
+     * Retrieves the metadata manager.
+     *
+     * @return such instance.
+     */
+    @NotNull
+    @Override
+    public MetadataManager getMetadataManager()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
      * Compares the wrapped table to given one.
      * @param table the table to compare with.
      * @return the result of comparing them.
