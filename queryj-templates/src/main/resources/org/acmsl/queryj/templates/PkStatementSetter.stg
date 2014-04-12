@@ -326,9 +326,6 @@ public int hashcode()
 
     final int classHashCode = Abstract<table.name.voName>.class.hashcode();
 
-        <table.attributes:{ a | <attribute_equals(attribute=a)>}; separator="">
-        result =
-            <table.attributes:{ a |<a.name.uncapitalized>Match}; separator="\n&& ">;
     <table.primaryKey:{ a | <attribute_hashcode(attribute=a)>}; separator="\n">
 
     result =
