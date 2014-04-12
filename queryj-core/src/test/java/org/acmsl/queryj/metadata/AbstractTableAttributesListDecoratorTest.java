@@ -104,6 +104,7 @@ public class AbstractTableAttributesListDecoratorTest
         @NotNull final Attribute<DecoratedString> attribute = EasyMock.createNiceMock(Attribute.class);
         EasyMock.expect(attribute.getTypeId()).andReturn(Types.CLOB);
         EasyMock.replay(attribute);
+        attributes.add(attribute);
 
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
         @NotNull final DecoratorFactory decoratorFactory = CachingDecoratorFactory.getInstance();
