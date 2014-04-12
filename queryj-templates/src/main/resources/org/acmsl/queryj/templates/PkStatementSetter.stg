@@ -272,7 +272,7 @@ public boolean equals(<nullable(C=C)>final Object other)
 {
     final boolean result;
 
-    if (other instanceof <table.name.voName>AttributesStatementSetter)
+    if (other instanceof <table.name.voName>PkStatementSetter)
     {
         <notnull(C=C)>final <table.name.voName>AttributesStatementSetter> candidate =
             (<table.name.voName>AttributesStatementSetter) other;
