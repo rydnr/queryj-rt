@@ -278,7 +278,7 @@ public boolean equals(<nullable(C=C)>final Object other)
         <notnull(C=C)>final <table.name.voName>PkStatementSetter> candidate =
             (<table.name.voName>AttributesStatementSetter) other;
 
-        <table.attributes:{ a | <attribute_equals(attribute=a)>}; separator="">
+        <table.primaryKey:{ a | <attribute_equals(attribute=a)>}; separator="">
         result =
                 (isUpdateOperation() == candidate.isUpdateOperation())
             <table.attributes:{ a |&& <a.name.uncapitalized>Match}; separator="\n">;
