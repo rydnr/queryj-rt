@@ -141,7 +141,7 @@ third_line_description(table) ::= <<
   Generates the third line of the generated file description.
   @param table the table.
 !>
-complete attribute set.
+primary key.
 >>
 
 class(table, C) ::= <<
