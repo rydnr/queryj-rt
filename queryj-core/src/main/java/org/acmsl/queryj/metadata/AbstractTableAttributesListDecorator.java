@@ -264,7 +264,8 @@ public abstract class AbstractTableAttributesListDecorator
      * @return their types.
      */
     @NotNull
-    protected List<DecoratedString> getAttributeTypes(@NotNull final List<Attribute<DecoratedString>> items)
+    protected List<DecoratedString> getAttributeTypes(
+        @NotNull final List<Attribute<DecoratedString>> items, @NotNull final MetadataManager)
     {
         return new ArrayList<>();
     }
