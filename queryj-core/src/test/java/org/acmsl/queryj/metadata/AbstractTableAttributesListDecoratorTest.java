@@ -219,6 +219,16 @@ public class AbstractTableAttributesListDecoratorTest
                 {
                     return false;
                 }
+
+                /**
+                 * {@inheritDoc}
+                 */
+                @NotNull
+                @Override
+                public MetadataManager getMetadataManager()
+                {
+                    return metadataManager;
+                }
             };
 
         Assert.assertTrue(instance.getContainsClobs());
