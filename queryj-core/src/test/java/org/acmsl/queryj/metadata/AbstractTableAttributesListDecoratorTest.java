@@ -282,35 +282,6 @@ public class AbstractTableAttributesListDecoratorTest
 
         @NotNull final AbstractTableAttributesListDecorator instance =
             createInstance(new ArrayList<Attribute<DecoratedString>>(0), tableDecorator, metadataManager);
-            {
-                /**
-                 * {@inheritDoc}
-                 */
-                @Override
-                public Attribute<DecoratedString> getStaticAttribute()
-                {
-                    return null;
-                }
-
-                /**
-                 * {@inheritDoc}
-                 */
-                @Override
-                public boolean isRelationship()
-                {
-                    return false;
-                }
-
-                /**
-                 * {@inheritDoc}
-                 */
-                @NotNull
-                @Override
-                public MetadataManager getMetadataManager()
-                {
-                    return metadataManager;
-                }
-            };
 
         @NotNull final List<DecoratedString> types = instance.getAttributeTypes();
         Assert.assertFalse(types.isEmpty());
