@@ -182,11 +182,6 @@ final boolean <attribute.name.uncapitalized>Match =
 final boolean <attribute.name.uncapitalized>Match = this.m__<attribute.name.capitalized>.equals(candidate.get<attribute.name.capitalized>());<endif><endif>
 >>
 
-attribute_equals(attribute) ::= <<
-<! Generates the final check in the equals method, for each attribute. !>
-<attribute.name.uncapitalized>Mach
->>
-
 hashcode_method(table, C) ::= <<
 <! Generates the hashcode() method !>
 /**
