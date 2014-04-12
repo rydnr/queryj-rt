@@ -354,7 +354,7 @@ public abstract class AbstractTableAttributesListDecorator
      */
     public boolean getContainsClobs()
     {
-        return contains(getAttributes(), Types.CLOB);
+        return contains(getItems(), Types.CLOB);
     }
 
     /**
