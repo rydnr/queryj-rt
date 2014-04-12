@@ -372,6 +372,8 @@ public abstract class DatabaseMetaDataRetrievalHandler
      * @param metadataManager the {@link MetadataManager} instance.
      * @param metadataTypeManager the {@link MetadataTypeManager} instance.
      * @param explicitTables the {@link AntTablesElement} instance.
+     * @param tableMap the table map.
+     * @param tableNameMap the table name map.
      * @param fieldMap a map to store field information.
      */
     protected void processExplicitSchema(
