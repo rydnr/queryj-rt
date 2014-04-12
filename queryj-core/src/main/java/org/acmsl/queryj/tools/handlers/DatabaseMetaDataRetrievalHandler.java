@@ -1110,7 +1110,7 @@ public abstract class DatabaseMetaDataRetrievalHandler
      * Retrieves the flag which indicates whether the metadata extraction
      * has been done already.
      * @param parameters the parameter map.
-     * @return
+     * @return such condition.
      */
     protected boolean retrieveAlreadyDoneFlag(@NotNull final QueryJCommand parameters)
     {
