@@ -176,7 +176,7 @@ public class <table.name.voName>PkStatementSetter
      * @param updateOperation whether the operation is an update.
      */
     public <table.name.voName>AttributesStatementSetter(
-        <table.primaryKey:{ a | <attribute_method_declaration(attribute=a)>}; separator="\n">,
+        <table.primaryKey:{ a | <attribute_method_declaration(attribute=a)>}; separator="\n">
         final boolean updateOperation)
     {
         immutableSetValues(values);
