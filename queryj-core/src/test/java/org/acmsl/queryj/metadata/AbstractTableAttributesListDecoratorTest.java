@@ -222,7 +222,7 @@ public class AbstractTableAttributesListDecoratorTest
      */
     @SuppressWarnings("unchecked")
     @Test
-    public void getAttributeTypes_works_when_there_are_no_clobs()
+    public void getAttributeTypes_retrieves the_attribute_types()
     {
         @NotNull final List<Attribute<String>> attributes =
             new ArrayList<>();
