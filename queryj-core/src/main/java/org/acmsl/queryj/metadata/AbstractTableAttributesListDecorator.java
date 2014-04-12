@@ -366,7 +366,10 @@ public abstract class AbstractTableAttributesListDecorator
     protected boolean contains(
         @NotNull final List<Attribute<DecoratedString>> attributes, final int typeId)
     {
-        return contains(getAttributes(), Types.CLOB);
+        boolean result = false;
+
+        for (@Nullable final Attribute<DecoratedString>)
+        return result;
     }
 
     /**
