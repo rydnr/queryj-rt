@@ -301,7 +301,7 @@ public boolean equals(<nullable(C=C)>final Object other)
  * @return {@code true} if and only if both sets are equivalent.
  */
 protected boolean equals(
-     <table.primaryKey:{ a | * @param my<a.name.capitalized> my <a.name> value.}; separator="\n">
+    <table.primaryKey:{ a | * @param my<a.name.capitalized> my <a.name> value.}; separator="\n">
     final boolean myUpdate,
     <notnull(C=C)>final <table.name.voName> hisValues,
     final boolean hisUpdate)
