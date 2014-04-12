@@ -319,10 +319,10 @@ public class AbstractTableAttributesListDecoratorTest
 
     /**
      * Creates a new instance.
-     * @param attributes
-     * @param tableDecorator
-     * @param metadataManager
-     * @return
+     * @param attributes the attributes.
+     * @param tableDecorator the {@link TableDecorator}.
+     * @param metadataManager the {@link MetadataManager}.
+     * @return the new instance.
      */
     @NotNull
     protected AbstractTableAttributesListDecorator createInstance(
