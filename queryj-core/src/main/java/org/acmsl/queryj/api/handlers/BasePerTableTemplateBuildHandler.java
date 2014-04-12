@@ -259,6 +259,7 @@ public abstract class BasePerTableTemplateBuildHandler
     /**
      * Creates a template with required information.
      * @param templateFactory the {@link org.acmsl.queryj.api.PerTableTemplateFactory} instance.
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @param packageName the package name.
      * @param tableName the table name.
      * @param staticContents the table's static contents (optional).
