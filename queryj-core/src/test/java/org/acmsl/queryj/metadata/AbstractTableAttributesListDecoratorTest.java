@@ -100,8 +100,7 @@ public class AbstractTableAttributesListDecoratorTest
                 voDecorated,
                 isRelationship);
 
-        @NotNull final Attribute<DecoratedString> attribute = EasyMock.createNiceMock(Attribute.class)
-            new AttributeValueObject();
+        @NotNull final Attribute<DecoratedString> attribute = EasyMock.createNiceMock(Attribute.class);
 
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
         @NotNull final DecoratorFactory decoratorFactory = CachingDecoratorFactory.getInstance();
