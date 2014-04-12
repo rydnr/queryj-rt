@@ -213,6 +213,7 @@ public class AbstractTableAttributesListDecoratorTest
 
         @NotNull final Attribute<DecoratedString> attribute = EasyMock.createNiceMock(Attribute.class);
         EasyMock.expect(attribute.getTypeId()).andReturn(Types.CLOB);
+        EasyMock.expect(attribute.getType())
         EasyMock.replay(attribute);
         attributes.add(attribute);
 
