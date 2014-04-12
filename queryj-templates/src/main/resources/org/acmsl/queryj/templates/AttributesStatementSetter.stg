@@ -161,6 +161,7 @@ class(table, C) ::= <<
  */
 <class_annotations(C=C)>
 public class <table.name.voName>AttributesStatementSetter
+    implements  PreparedStatementSetter
 {
     /**
      * An attribute container.
