@@ -2054,25 +2054,6 @@ public abstract class AbstractTableDecorator
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
         return tableDecoratorHelper.getAttributeTypes(attrs, typeManager);
-
-        for (@Nullable final Attribute<DecoratedString> attr: attrs)
-        {
-            if (attr != null)
-            {
-                @Nullable final String importType =
-                    typeManager.getImport(
-                        typeManager.getJavaType(attr.getType().getValue()));
-
-                if (importType != null)
-                {
-                    result.add(new DecoratedString(importType));
-                }
-            }
-        }
-
-        Collections.sort(result);
-
-        return result;
     }
 
     /**
