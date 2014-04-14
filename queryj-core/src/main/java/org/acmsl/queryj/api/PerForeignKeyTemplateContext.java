@@ -39,6 +39,7 @@ package org.acmsl.queryj.api;
 /*
  * Importing some project classes.
  */
+import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.MetadataManager;
@@ -82,56 +83,30 @@ public class PerForeignKeyTemplateContext
 
     /**
      * Creates a {@link PerForeignKeyTemplateContext} with given information.
-     * @param metadataManager the {@link MetadataManager} instance.
-     * @param customSqlProvider the {@link CustomSqlProvider} instance.
-     * @param header the header.
-     * @param decoratorFactory the {@link DecoratorFactory} instance.
-     * @param packageName the package name.
-     * @param basePackageName the base package name.
-     * @param repositoryName the repository name.
-     * @param implementMarkerInterfaces whether to implement marker interfaces or not.
-     * @param jndiLocation the JNDI path of the {@link javax.sql.DataSource}.
-     * @param disableGenerationTimestamps whether to disable generation timestamps.
-     * @param disableNotNullAnnotations whether to disable NotNull annotations.
-     * @param disableCheckthreadAnnotations whether to disable checkthread.org annotations or not.
      * @param fileName the file name.
+     * @param packageName the package name.
      * @param foreignKey the {@link ForeignKey} instance.
+     * @param command the {@link QueryJCommand} instance.
      */
     public PerForeignKeyTemplateContext(
         @NotNull final String fileName,
         @NotNull final String packageName,
-        @NotNull final ForeignKey<String> foreignKey)
+        @NotNull final ForeignKey<String> foreignKey,
+        @NotNull final QueryJCommand command)
     {
-        super(null, null);
+        super("fk" + foreignKey.getFkName(), command);
 
-        immutableSetForeignKey(foreignKey);
+        immutableSetValue(buildFileNameKey(), fileName, command);
+        immutableSetValue(buildPackageNameKey(), packageName, command);
+        immutableSetValue(buildForeignKeyKey(), foreignKey, command);
     }
 
     /**
-     * Specifies the foreign key.
-     * @param foreignKey the foreign key.
-     */
-    protected final void immutableSetForeignKey(@NotNull final ForeignKey<String> foreignKey)
-    {
-        m__ForeignKey = foreignKey;
-    }
-
-    /**
-     * Specifies the foreign key.
-     * @param foreignKey the foreign key.
-     */
-    @SuppressWarnings("unused")
-    protected void setForeignKey(@NotNull final ForeignKey<String> foreignKey)
-    {
-        immutableSetForeignKey(foreignKey);
-    }
-
-    /**
-     * Retrieves the foreign key.
+     * Retrieves the key to access the foreign key.
      * @return such information.
      */
     @NotNull
-    public ForeignKey<String> getForeignKey()
+    public String buildForeignKeyKey()
     {
         return m__ForeignKey;
     }
