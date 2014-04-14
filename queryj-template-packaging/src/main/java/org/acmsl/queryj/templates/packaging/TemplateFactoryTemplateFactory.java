@@ -89,6 +89,17 @@ public class TemplateFactoryTemplateFactory
     public TemplateFactoryTemplate<DefaultTemplatePackagingContext> createTemplate(
         @NotNull final DefaultTemplatePackagingContext context)
     {
-        return new TemplateFactoryTemplate<>(context);
+        @NotNull final TemplateFactoryTemplate<DefaultTemplatePackagingContext> result;
+
+        switch (TemplateDefType.getEnumFromString(context.getTemplateDef().getType().getType()))
+        {
+            case PER_FOREIGN_KEY:
+                result = new PerForeignKeyTemplateFactoryTemplate<>(context);
+                break;
+            default:
+                result = new TemplateFactoryTemplate<>(context);
+        }
+
+        return result;
     }
 }
