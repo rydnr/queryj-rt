@@ -84,12 +84,12 @@ public abstract class BasePerForeignKeyTemplateWritingHandler
     {
         return
             retrieveOutputDir(
+                retrieveEngine(parameters),
                 retrieveProductName(parameters),
                 retrieveProjectOutputDir(parameters),
                 retrieveProjectPackage(parameters),
                 context.getForeignKey().getSourceTableName(),
-                retrieveUseSubfoldersFlag(parameters),
-                PackageUtils.getInstance());
+                retrieveUseSubfoldersFlag(parameters));
     }
 
     /**
@@ -99,7 +99,6 @@ public abstract class BasePerForeignKeyTemplateWritingHandler
      * @param projectPackage the project package.
      * @param tableName the table name.
      * @param subFolders whether to use sub folders or not.
-     * @param packageUtils the <code>PackageUtils</code> instance.
      * @return such folder.
      */
     @NotNull
@@ -108,6 +107,5 @@ public abstract class BasePerForeignKeyTemplateWritingHandler
         @NotNull final File projectOutputDir,
         final String projectPackage,
         @NotNull final String tableName,
-        final boolean subFolders,
-        @NotNull final PackageUtils packageUtils);
+        final boolean subFolders);
 }

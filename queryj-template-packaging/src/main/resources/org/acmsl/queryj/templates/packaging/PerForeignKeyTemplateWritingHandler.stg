@@ -156,13 +156,11 @@ public class <C.class_name>
 
     /**
      * Retrieves the output dir from the attribute map.
-     *
-     * @param engineName       the engine name.
+     * @param engineName the engine name.
      * @param projectOutputDir the project output dir.
-     * @param projectPackage   the project package.
-     * @param tableName        the table name.
-     * @param subFolders       whether to use sub folders or not.
-     * @param packageUtils     the <code>PackageUtils</code> instance.
+     * @param projectPackage the project package.
+     * @param tableName the source table name.
+     * @param subFolders whether to use sub folders or not.
      * @return such folder.
      */
     @NotNull
@@ -172,8 +170,7 @@ public class <C.class_name>
         @NotNull final File projectOutputDir,
         final String projectPackage,
         @NotNull final String tableName,
-        final boolean subFolders,
-        @NotNull final PackageUtils packageUtils)
+        final boolean subFolders)
     {
         @NotNull final File result;
 
@@ -191,7 +188,7 @@ public class <C.class_name>
             aux.append(piece);
         }
 
-        result = new File(projectFolder.getAbsolutePath() + aux.toString());
+        result = new File(projectOutputDir.getAbsolutePath() + aux.toString());
 
         return result;
     }
