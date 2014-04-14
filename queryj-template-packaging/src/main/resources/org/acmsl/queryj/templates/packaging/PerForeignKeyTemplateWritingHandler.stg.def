@@ -1,14 +1,14 @@
 /*
- * PerForeignKeyTemplatesFeature template metadata.
+ * PerForeignKeyTemplateWritingHandler template metadata.
  */
 // The template name (the filename).
-name : PerTableTemplatesFeature.stg;
+name : PerForeignKeyTemplateWritingHandler.stg;
 
 // The type of template: per-table, per-repository, per-foreign-key, per-custom-result, per-sql.
-type : per-repository;
+type : per-foreign-key;
 
 // The output flavor.
-output: Cucumber;
+output: Java;
 
 // The filename builder.
 filename  builder : PerTableTemplates.feature;
