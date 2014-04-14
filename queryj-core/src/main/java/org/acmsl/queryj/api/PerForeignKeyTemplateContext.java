@@ -37,14 +37,10 @@
 package org.acmsl.queryj.api;
 
 /*
- * Importing some project classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.ForeignKeyNotAvailableException;
-import org.acmsl.queryj.api.exceptions.TableNameNotAvailableException;
-import org.acmsl.queryj.customsql.CustomSqlProvider;
-import org.acmsl.queryj.metadata.DecoratorFactory;
-import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.vo.ForeignKey;
 
 /*
@@ -57,7 +53,6 @@ import org.apache.commons.lang.builder.HashCodeBuilder;
  * Importing some JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 /*
  * Importing checkthread.org annotations.
@@ -77,11 +72,6 @@ public class PerForeignKeyTemplateContext
      * The serial version id.
      */
     private static final long serialVersionUID = 1350908613901423440L;
-
-    /**
-     * The result.
-     */
-    private ForeignKey<String> m__ForeignKey;
 
     /**
      * Creates a {@link PerForeignKeyTemplateContext} with given information.
@@ -114,12 +104,23 @@ public class PerForeignKeyTemplateContext
     }
 
     /**
+     * Retrieves the foreign key.
+     * @return such {@link ForeignKey} instance.
+     */
+    @NotNull
+    public ForeignKey<String> getForeignKey()
+    {
+        return getValue(buildForeignKeyKey(), getCommand(), new ForeignKeyNotAvailableException());
+    }
+
+    /**
      * {@inheritDoc}
      */
+    @Override
     @NotNull
     public String getTemplateName()
     {
-        return getValue(buildForeignKeyKey(), getCommand(), new ForeignKeyNotAvailableException());
+        return getTemplateName(getForeignKey());
     }
 
     /**
@@ -148,7 +149,7 @@ public class PerForeignKeyTemplateContext
     @Override
     public int hashCode()
     {
-        return new HashCodeBuilder().appendSuper(super.hashCode()).append(this.m__ForeignKey).toHashCode();
+        return new HashCodeBuilder().appendSuper(super.hashCode()).append(PerForeignKeyTemplate.class).toHashCode();
     }
 
     /**
@@ -169,11 +170,9 @@ public class PerForeignKeyTemplateContext
         }
         else
         {
-            final PerForeignKeyTemplateContext other = (PerForeignKeyTemplateContext) obj;
             result =
                 new EqualsBuilder()
                     .appendSuper(super.equals(obj))
-                    .append(this.m__ForeignKey, other.m__ForeignKey)
                 .isEquals();
         }
 
