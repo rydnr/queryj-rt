@@ -155,6 +155,30 @@ public class <C.class_name>
     }
 
     /**
+     * Retrieves the output dir from the attribute map.
+     *
+     * @param engineName       the engine name.
+     * @param projectOutputDir the project output dir.
+     * @param projectPackage   the project package.
+     * @param tableName        the table name.
+     * @param subFolders       whether to use sub folders or not.
+     * @param packageUtils     the <code>PackageUtils</code> instance.
+     * @return such folder.
+     */
+    @NotNull
+    @Override
+    protected File retrieveOutputDir(
+        @NotNull final String engineName,
+        @NotNull final File projectOutputDir,
+        final String projectPackage,
+        @NotNull final String tableName,
+        final boolean subFolders,
+        @NotNull final PackageUtils packageUtils)
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
      * {@inheritDoc}
      */
     @NotNull
