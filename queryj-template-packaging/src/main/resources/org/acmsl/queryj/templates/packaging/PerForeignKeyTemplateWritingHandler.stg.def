@@ -1,5 +1,5 @@
 /*
- * PerFoTemplatesFeature template metadata.
+ * PerForeignKeyTemplatesFeature template metadata.
  */
 // The template name (the filename).
 name : PerTableTemplatesFeature.stg;
