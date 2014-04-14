@@ -34,10 +34,12 @@
  *
  */
 package org.acmsl.queryj.templates.packaging;
+
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Represents foreign key-specific template writing handler templates.
@@ -46,6 +48,31 @@ import org.checkthread.annotations.ThreadSafe;
  * Created 2014/04/14
  */
 @ThreadSafe
-public class PerForeignKeyTemplateWritingHandlerTemplate
+public class PerForeignKeyTemplateWritingHandlerTemplate<C extends TemplatePackagingContext>
+    extends AbstractTemplatePackagingTemplate<C>
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = 6677048230055426118L;
+
+    /**
+     * Creates a new instance using given context.
+     * @param context the context.
+     */
+    public PerForeignKeyTemplateWritingHandlerTemplate(@NotNull final C context)
+    {
+        super(context);
+    }
+
+    /**
+     * Retrieves the template name.
+     * @return "PerForeignKeyTemplateWritingHandler".
+     */
+    @NotNull
+    @Override
+    public String getTemplateName()
+    {
+        return "PerForeignKeyTemplateWritingHandler";
+    }
 }
