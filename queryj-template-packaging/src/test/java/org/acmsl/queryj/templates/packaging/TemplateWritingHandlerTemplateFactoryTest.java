@@ -37,7 +37,10 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JUnit classes.
  */
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -57,7 +60,18 @@ public class TemplateWritingHandlerTemplateFactoryTest
         @NotNull final TemplateWritingHandlerTemplateFactory instance =
             new TemplateWritingHandlerTemplateFactory();
 
-        instance.createTemplate()
+        @NotNull final DefaultTemplatePackagingContext context =
+            EasyMock.createNiceMock(DefaultTemplatePackagingContext.class);
+        @NotNull final TemplateDef templateDef = EasyMock.createNiceMock(TemplateDef.class);
+
+        EasyMock.expect(context.getTemplateDef()).andReturn(templateDef);
+        EasyMock.expect(templateDef.getType()).andReturn(TemplateDefType.PER_REPOSITORY);
+
+        @Nullable final TemplateWritingHandlerTemplate<DefaultTemplatePackagingContext> template =
+            instance.createTemplate(context);
+
+        Assert.assertNotNull(template);
+        Assert.assertEquals(Literals,TEMPLATE_WRITING_HANDLER, template.getTemplateName());
 
     }
 }
