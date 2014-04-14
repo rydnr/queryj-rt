@@ -58,8 +58,22 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class TemplateWritingHandlerTemplateFactoryTest
 {
+    /**
+     * Checks whether the createTemplate() method returns the correct template
+     * for a per-repository type.
+     */
     @Test
-    public void createTemplate_returns_the_correct_template_for_the_default_context()
+    public void createTemplate_returns_the_correct_template_for_a_per_repository_template()
+    {
+        testCreateTemplate(TemplateDefType.PER_REPOSITORY, "TemplateWritingHandler");
+    }
+
+    /**
+     * Checks whether the createTemplate() method returns the correct template.
+     * @param type the {@link TemplateDefType type}.
+     * @param templateName the template name.
+     */
+    protected void testCreateTemplate(@NotNull final TemplateDefType type, @NotNull final String templateName)
     {
         @NotNull final TemplateWritingHandlerTemplateFactory instance =
             new TemplateWritingHandlerTemplateFactory();
@@ -71,7 +85,7 @@ public class TemplateWritingHandlerTemplateFactoryTest
         @NotNull final TemplateDef<String> templateDef = EasyMock.createNiceMock(TemplateDef.class);
 
         EasyMock.expect(context.getTemplateDef()).andReturn(templateDef);
-        EasyMock.expect(templateDef.getType()).andReturn(TemplateDefType.PER_REPOSITORY);
+        EasyMock.expect(templateDef.getType()).andReturn(type);
 
         EasyMock.replay(context);
         EasyMock.replay(templateDef);
@@ -80,7 +94,7 @@ public class TemplateWritingHandlerTemplateFactoryTest
             instance.createTemplate(context);
 
         Assert.assertNotNull(template);
-        Assert.assertEquals("TemplateWritingHandler", template.getTemplateName());
+        Assert.assertEquals(templateName, template.getTemplateName());
 
         EasyMock.verify(context);
         EasyMock.verify(templateDef);
