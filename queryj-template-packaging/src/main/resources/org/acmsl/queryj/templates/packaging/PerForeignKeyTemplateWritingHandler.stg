@@ -175,23 +175,6 @@ public class <C.class_name>
         final boolean subFolders,
         @NotNull final PackageUtils packageUtils)
     {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @NotNull
-    @Override
-    protected File retrieveOutputDir(
-        @NotNull final File projectFolder,
-        @NotNull final String projectPackage,
-        final boolean useSubfolders,
-        @NotNull final String tableName,
-        @NotNull final Engine\<String> engine,
-        @NotNull final QueryJCommand parameters,
-        @NotNull final PackageUtils packageUtils)
-    {
         @NotNull final File result;
 
         @NotNull final String packageName =
