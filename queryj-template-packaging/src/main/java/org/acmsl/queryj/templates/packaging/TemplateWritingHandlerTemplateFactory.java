@@ -95,7 +95,7 @@ public class TemplateWritingHandlerTemplateFactory
 
         switch (TemplateDefType.getEnumFromString(context.getTemplateDef().getType().getType()))
         {
-            case TemplateDefType.PER_FOREIGN_KEY:
+            case PER_FOREIGN_KEY:
                 result = new PerForeignKeyTemplateWritingHandlerTemplate<>(context);
                 break;
             default:
