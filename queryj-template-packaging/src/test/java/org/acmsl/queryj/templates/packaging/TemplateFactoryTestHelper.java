@@ -59,34 +59,13 @@ import org.junit.Assert;
  * Created 2014/04/14
  */
 @ThreadSafe
-public class TemplateFactoryTestHelper<TF extends TemplatePackagingTemplateFactory<T, C>, T extends TemplateWritingHandlerTemplate<C>, C extents DefaultTemplatePackagingContext>
+public abstract class TemplateFactoryTestHelper<TF extends TemplatePackagingTemplateFactory<T, C>,
+    T extends TemplateWritingHandlerTemplate<C>, C extends DefaultTemplatePackagingContext>
 {
-    /**
-     * Singleton implemented to avoid double-locking check.
-     */
-    protected static final class TemplateFactoryTestHelperSingletonContainer
-    {
-        /**
-         * The singleton instance.
-         */
-        @NotNull
-        public static final TemplateFactoryTestHelper SINGLETON = new TemplateFactoryTestHelper();
-    }
-
     /**
      * Creates a new instance.
      */
     public TemplateFactoryTestHelper() {}
-
-    /**
-     * Retrieves the singleton instance.
-     * @return such instance.
-     */
-    @NotNull
-    public static TemplateFactoryTestHelper getInstance()
-    {
-        return TemplateFactoryTestHelperSingletonContainer.SINGLETON;
-    }
 
     /**
      * Checks whether the createTemplate() method returns the correct template.
@@ -95,11 +74,10 @@ public class TemplateFactoryTestHelper<TF extends TemplatePackagingTemplateFacto
      */
     public void testCreateTemplate(@NotNull final TemplateDefType type, @NotNull final String templateName)
     {
-        @NotNull final TemplateWritingHandlerTemplateFactory instance =
-            new TemplateWritingHandlerTemplateFactory();
+        @NotNull final TF instance = createFactory();
 
         @NotNull final DefaultTemplatePackagingContext context =
-            EasyMock.createNiceMock(DefaultTemplatePackagingContext.class);
+            EasyMock.createNiceMock(C);
 
         @SuppressWarnings("unchecked")
         @NotNull final TemplateDef<String> templateDef = EasyMock.createNiceMock(TemplateDef.class);
