@@ -27,24 +27,40 @@
  *
  * Author: Jose San Leandro
  *
- * Description:
+ * Description: Thrown whenever a ForeignKey is expected but it's not
+ *              available, which is a bug.
  *
  * Created: 2014/04/14 17:04
  *
  */
 package org.acmsl.queryj.api.exceptions;
+
 /*
  * Importing checkthread.org annotations.
  */
-import org.checkthread.ThreadSafe;
+import org.checkthread.annotations.ThreadSafe;
 
 /**
- *
+ * Thrown whenever a {@link org.acmsl.queryj.metadata.vo.ForeignKey} is expected
+ * but it's not available, which is a bug.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created 2014/04/14
  */
 @ThreadSafe
 public class ForeignKeyNotAvailableException
+    extends QueryJNonCheckedException
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = -7142576551876642009L;
+
+    /**
+     * Creates a new instance.
+     */
+    public ForeignKeyNotAvailableException()
+    {
+        super("ForeignKey.not.available");
+    }
 }

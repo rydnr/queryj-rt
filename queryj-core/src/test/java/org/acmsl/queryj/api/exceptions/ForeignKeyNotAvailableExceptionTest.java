@@ -27,27 +27,33 @@
  *
  * Author: Jose San Leandro
  *
- * Description: Thrown whenever a ForeignKey is expected but it's not
- *              available, which is a bug.
+ * Description: Tests for ForeignKeyNotAvailableException.
  *
  * Created: 2014/04/14 17:01
  *
  */
 package org.acmsl.queryj.api.exceptions;
+
 /*
- * Importing checkthread.org annotations.
+ * Importing JetBrains annotations.
  */
-import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.NotNull;
+
+/*
+ * Importing JUnit classes.
+ */
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+/*
+ * Importing JDK classes.
+ */
 import java.util.Arrays;
 import java.util.Locale;
 
 /**
- * Thrown whenever a {@link ForeignKey} is expected but it's not available, which is a bug.
+ * Tests for {@link ForeignKeyNotAvailableException}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created 2014/04/14
