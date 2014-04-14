@@ -158,25 +158,10 @@ public class PerForeignKeyTemplateContext
     @Override
     public boolean equals(final Object obj)
     {
-        final boolean result;
-
-        if (obj == null)
-        {
-            result = false;
-        }
-        else if (getClass() != obj.getClass())
-        {
-            result = false;
-        }
-        else
-        {
-            result =
-                new EqualsBuilder()
-                    .appendSuper(super.equals(obj))
-                .isEquals();
-        }
-
-        return result;
+        return
+               (obj != null)
+            && (getClass() == obj.getClass())
+            && (new EqualsBuilder().appendSuper(super.equals(obj)).isEquals());
     }
 
     /**
@@ -188,7 +173,7 @@ public class PerForeignKeyTemplateContext
     {
         return
               "{ \"class\": \"PerForeignKeyTemplateContext\""
-            + ", \"foreignKey\": " + m__ForeignKey + '"'
+            + ", \"super\": " + super.toString()
             + ", \"package\": \"org.acmsl.queryj.api\""
             + " }";
     }
