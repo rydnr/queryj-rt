@@ -73,7 +73,7 @@ public class TemplateWritingHandlerTemplateFactoryTest
      * for a per-repository type.
      */
     @Test
-    public void createTemplate_returns_the_correct_template_for_a_per_repository_template()
+    public void createTemplate_returns_the_correct_template_for_a_per_table_template()
     {
         testCreateTemplate(TemplateDefType.PER_TABLE, "TemplateWritingHandler");
     }
@@ -93,7 +93,7 @@ public class TemplateWritingHandlerTemplateFactoryTest
      * for a per-repository type.
      */
     @Test
-    public void createTemplate_returns_the_correct_template_for_a_per_repository_template()
+    public void createTemplate_returns_the_correct_template_for_a_per_custom_result_template()
     {
         testCreateTemplate(TemplateDefType.PER_CUSTOM_RESULT, "TemplateWritingHandler");
     }
