@@ -69,11 +69,11 @@ public class TemplateWritingHandlerTemplateFactoryTest
         EasyMock.expect(context.getTemplateDef()).andReturn(templateDef);
         EasyMock.expect(templateDef.getType()).andReturn(TemplateDefType.PER_REPOSITORY);
 
-        @Nullable final TemplateWritingHandlerTemplate<DefaultTemplatePackagingContext> template =
-            instance.createTemplate(context);
-
         EasyMock.replay(context);
         EasyMock.replay(templateDef);
+
+        @Nullable final TemplateWritingHandlerTemplate<DefaultTemplatePackagingContext> template =
+            instance.createTemplate(context);
 
         Assert.assertNotNull(template);
         Assert.assertEquals("TemplateWritingHandler", template.getTemplateName());
