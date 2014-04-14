@@ -37,11 +37,12 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JUnit classes.
  */
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 /**
- *
+ * Tests for {@link PerForeignKeyTemplateWritingHandlerTemplate}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created 2014/04/14
@@ -49,4 +50,6 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class PerForeignKeyTemplateWritingHandlerTemplateTest
 {
+    @Test
+    public void 
 }
