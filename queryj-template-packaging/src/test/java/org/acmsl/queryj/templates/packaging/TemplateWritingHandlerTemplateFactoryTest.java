@@ -69,6 +69,36 @@ public class TemplateWritingHandlerTemplateFactoryTest
     }
 
     /**
+     * Checks whether the createTemplate() method returns the correct template
+     * for a per-repository type.
+     */
+    @Test
+    public void createTemplate_returns_the_correct_template_for_a_per_repository_template()
+    {
+        testCreateTemplate(TemplateDefType.PER_TABLE, "TemplateWritingHandler");
+    }
+
+    /**
+     * Checks whether the createTemplate() method returns the correct template
+     * for a per-repository type.
+     */
+    @Test
+    public void createTemplate_returns_the_correct_template_for_a_per_foreign_key_template()
+    {
+        testCreateTemplate(TemplateDefType.PER_FOREIGN_KEY, "TemplateWritingHandler");
+    }
+
+    /**
+     * Checks whether the createTemplate() method returns the correct template
+     * for a per-repository type.
+     */
+    @Test
+    public void createTemplate_returns_the_correct_template_for_a_per_repository_template()
+    {
+        testCreateTemplate(TemplateDefType.PER_CUSTOM_RESULT, "TemplateWritingHandler");
+    }
+
+    /**
      * Checks whether the createTemplate() method returns the correct template.
      * @param type the {@link TemplateDefType type}.
      * @param templateName the template name.
