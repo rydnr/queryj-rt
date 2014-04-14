@@ -35,16 +35,8 @@
 package org.acmsl.queryj.templates.packaging;
 
 /*
- * Importing JetBrains annotations.
- */
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
-
-/*
  * Importing JUnit classes.
  */
-import org.easymock.EasyMock;
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -65,7 +57,8 @@ public class TemplateWritingHandlerTemplateFactoryTest
     @Test
     public void createTemplate_returns_the_correct_template_for_a_per_repository_template()
     {
-        testCreateTemplate(TemplateDefType.PER_REPOSITORY, "TemplateWritingHandler");
+        TemplateFactoryTestHelper.getInstance().testCreateTemplate(
+            TemplateDefType.PER_REPOSITORY, "TemplateWritingHandler");
     }
 
     /**
@@ -75,7 +68,8 @@ public class TemplateWritingHandlerTemplateFactoryTest
     @Test
     public void createTemplate_returns_the_correct_template_for_a_per_table_template()
     {
-        testCreateTemplate(TemplateDefType.PER_TABLE, "TemplateWritingHandler");
+        TemplateFactoryTestHelper.getInstance().testCreateTemplate(
+            TemplateDefType.PER_TABLE, "TemplateWritingHandler");
     }
 
     /**
@@ -85,7 +79,8 @@ public class TemplateWritingHandlerTemplateFactoryTest
     @Test
     public void createTemplate_returns_the_correct_template_for_a_per_foreign_key_template()
     {
-        testCreateTemplate(TemplateDefType.PER_FOREIGN_KEY, "PerForeignKeyTemplateWritingHandler");
+        TemplateFactoryTestHelper.getInstance().testCreateTemplate(
+            TemplateDefType.PER_FOREIGN_KEY, "PerForeignKeyTemplateWritingHandler");
     }
 
     /**
@@ -95,38 +90,7 @@ public class TemplateWritingHandlerTemplateFactoryTest
     @Test
     public void createTemplate_returns_the_correct_template_for_a_per_custom_result_template()
     {
-        testCreateTemplate(TemplateDefType.PER_CUSTOM_RESULT, "TemplateWritingHandler");
-    }
-
-    /**
-     * Checks whether the createTemplate() method returns the correct template.
-     * @param type the {@link TemplateDefType type}.
-     * @param templateName the template name.
-     */
-    protected void testCreateTemplate(@NotNull final TemplateDefType type, @NotNull final String templateName)
-    {
-        @NotNull final TemplateWritingHandlerTemplateFactory instance =
-            new TemplateWritingHandlerTemplateFactory();
-
-        @NotNull final DefaultTemplatePackagingContext context =
-            EasyMock.createNiceMock(DefaultTemplatePackagingContext.class);
-
-        @SuppressWarnings("unchecked")
-        @NotNull final TemplateDef<String> templateDef = EasyMock.createNiceMock(TemplateDef.class);
-
-        EasyMock.expect(context.getTemplateDef()).andReturn(templateDef);
-        EasyMock.expect(templateDef.getType()).andReturn(type);
-
-        EasyMock.replay(context);
-        EasyMock.replay(templateDef);
-
-        @Nullable final TemplateWritingHandlerTemplate<DefaultTemplatePackagingContext> template =
-            instance.createTemplate(context);
-
-        Assert.assertNotNull(template);
-        Assert.assertEquals(templateName, template.getTemplateName());
-
-        EasyMock.verify(context);
-        EasyMock.verify(templateDef);
+        TemplateFactoryTestHelper.getInstance().testCreateTemplate(
+            TemplateDefType.PER_CUSTOM_RESULT, "TemplateWritingHandler");
     }
 }

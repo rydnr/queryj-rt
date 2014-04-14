@@ -1,5 +1,5 @@
 /*
-                        QueryJ Core
+                        QueryJ Template Packaging
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -33,13 +33,22 @@
  *
  */
 package org.acmsl.queryj.templates.packaging;
+
+/*
+ * Importing JetBrains annotations.
+ */
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+
+/*
+ * Importing JUnit/EasyMock classes.
+ */
 import org.easymock.EasyMock;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 import org.junit.Assert;
 
 /**
@@ -60,6 +69,7 @@ public class TemplateFactoryTestHelper
         /**
          * The singleton instance.
          */
+        @NotNull
         public static final TemplateFactoryTestHelper SINGLETON = new TemplateFactoryTestHelper();
     }
 
@@ -72,6 +82,7 @@ public class TemplateFactoryTestHelper
      * Retrieves the singleton instance.
      * @return such instance.
      */
+    @NotNull
     public static TemplateFactoryTestHelper getInstance()
     {
         return TemplateFactoryTestHelperSingletonContainer.SINGLETON;
