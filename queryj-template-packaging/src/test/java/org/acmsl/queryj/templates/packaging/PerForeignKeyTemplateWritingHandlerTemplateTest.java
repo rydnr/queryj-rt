@@ -40,8 +40,9 @@ package org.acmsl.queryj.templates.packaging;
 import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing JUnit classes.
+ * Importing JUnit/EasyMock classes.
  */
+import org.easymock.EasyMock;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -66,6 +67,5 @@ public class PerForeignKeyTemplateWritingHandlerTemplateTest
             new PerForeignKeyTemplateWritingHandlerTemplate<>(context);
 
         Assert.assertEquals("PerForeignKeyTemplateWritingHandlerTemplate", instance.getTemplateName());
-
     }
 }
