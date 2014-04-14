@@ -35,8 +35,14 @@
 package org.acmsl.queryj.templates.packaging;
 
 /*
+ * Importing JetBrains annotations.
+ */
+import org.jetbrains.annotations.NotNull;
+
+/*
  * Importing JUnit classes.
  */
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -51,5 +57,12 @@ import org.junit.runners.JUnit4;
 public class PerForeignKeyTemplateWritingHandlerTemplateTest
 {
     @Test
-    public void
+    public void getTemplateName_returns_the_correct_template_name()
+    {
+        @NotNull final PerForeignKeyTemplateWritingHandlerTemplate instance =
+            new PerForeignKeyTemplateWritingHandlerTemplate();
+
+        Assert.assertEquals("PerForeignKeyTemplateWritingHandlerTemplate", instance.getTemplateName());
+
+    }
 }
