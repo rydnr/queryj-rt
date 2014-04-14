@@ -40,6 +40,7 @@ package org.acmsl.queryj.api;
  * Importing some project classes.
  */
 import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.api.exceptions.TableNameNotAvailableException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.MetadataManager;
@@ -108,7 +109,7 @@ public class PerForeignKeyTemplateContext
     @NotNull
     public String buildForeignKeyKey()
     {
-        return m__ForeignKey;
+        return "foreignKey@" + hashCode();
     }
 
     /**
@@ -117,7 +118,7 @@ public class PerForeignKeyTemplateContext
     @NotNull
     public String getTemplateName()
     {
-        return getTemplateName(getForeignKey());
+        return getValue(buildForeignKeyKey(), getCommand(), new ForeignKeyNotAvailableException());
     }
 
     /**
@@ -149,17 +150,27 @@ public class PerForeignKeyTemplateContext
     @Override
     public boolean equals(final Object obj)
     {
+        final boolean result;
+
         if (obj == null)
         {
-            return false;
+            result = false;
         }
-        if (getClass() != obj.getClass())
+        else if (getClass() != obj.getClass())
         {
-            return false;
+            result = false;
         }
-        final PerForeignKeyTemplateContext other = (PerForeignKeyTemplateContext) obj;
-        return new EqualsBuilder().appendSuper(super.equals(obj)).append(this.m__ForeignKey, other.m__ForeignKey)
-            .isEquals();
+        else
+        {
+            final PerForeignKeyTemplateContext other = (PerForeignKeyTemplateContext) obj;
+            result =
+                new EqualsBuilder()
+                    .appendSuper(super.equals(obj))
+                    .append(this.m__ForeignKey, other.m__ForeignKey)
+                .isEquals();
+        }
+
+        return result;
     }
 
     @NotNull
