@@ -59,7 +59,7 @@ import org.junit.Assert;
  * Created 2014/04/14
  */
 @ThreadSafe
-public class TemplateFactoryTestHelper<T extends TemplatePackagingTemplateFactory<TemplateWritingHandlerTemplate<DefaultTemplatePackagingContext>, DefaultTemplatePackagingContext>
+public class TemplateFactoryTestHelper<TF extends TemplatePackagingTemplateFactory<T>, T extends TemplateWritingHandlerTemplate<C>, C extents DefaultTemplatePackagingContext>
 {
     /**
      * Singleton implemented to avoid double-locking check.
