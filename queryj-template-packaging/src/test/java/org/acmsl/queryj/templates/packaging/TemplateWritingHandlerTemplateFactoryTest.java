@@ -37,6 +37,7 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JUnit classes.
  */
+import org.easymock.EasyMock;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -50,8 +51,30 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class TemplateWritingHandlerTemplateFactoryTest
     extends TemplateFactoryTestHelper<
-                TemplateWritingHandlerTemplateFactory<TemplateWritingHandlerTemplate<DefaultTemplatePackagingContext>>
+                TemplateWritingHandlerTemplateFactory,
+                TemplateWritingHandlerTemplate<DefaultTemplatePackagingContext>,
+                DefaultTemplatePackagingContext>
 {
+    /**
+     * Creates a new nice mock of {@link DefaultTemplatePackagingContext}.
+     * @return such instance.
+     */
+    @Override
+    protected DefaultTemplatePackagingContext createContext()
+    {
+        return EasyMock.createNiceMock(DefaultTemplatePackagingContext.class);
+    }
+
+    /**
+     * Creates a new {@link TemplateWritingHandlerTemplateFactory} instance.
+     * @return such instance.
+     */
+    @Override
+    protected TemplateWritingHandlerTemplateFactory createFactory()
+    {
+        return new TemplateWritingHandlerTemplateFactory();
+    }
+
     /**
      * Checks whether the createTemplate() method returns the correct template
      * for a per-repository type.
@@ -59,8 +82,7 @@ public class TemplateWritingHandlerTemplateFactoryTest
     @Test
     public void createTemplate_returns_the_correct_template_for_a_per_repository_template()
     {
-        TemplateFactoryTestHelper.getInstance().testCreateTemplate(
-            TemplateDefType.PER_REPOSITORY, "TemplateWritingHandler");
+        testCreateTemplate(TemplateDefType.PER_REPOSITORY, "TemplateWritingHandler");
     }
 
     /**
@@ -70,8 +92,7 @@ public class TemplateWritingHandlerTemplateFactoryTest
     @Test
     public void createTemplate_returns_the_correct_template_for_a_per_table_template()
     {
-        TemplateFactoryTestHelper.getInstance().testCreateTemplate(
-            TemplateDefType.PER_TABLE, "TemplateWritingHandler");
+        testCreateTemplate(TemplateDefType.PER_TABLE, "TemplateWritingHandler");
     }
 
     /**
@@ -81,8 +102,7 @@ public class TemplateWritingHandlerTemplateFactoryTest
     @Test
     public void createTemplate_returns_the_correct_template_for_a_per_foreign_key_template()
     {
-        TemplateFactoryTestHelper.getInstance().testCreateTemplate(
-            TemplateDefType.PER_FOREIGN_KEY, "PerForeignKeyTemplateWritingHandler");
+        testCreateTemplate(TemplateDefType.PER_FOREIGN_KEY, "PerForeignKeyTemplateWritingHandler");
     }
 
     /**
@@ -92,7 +112,6 @@ public class TemplateWritingHandlerTemplateFactoryTest
     @Test
     public void createTemplate_returns_the_correct_template_for_a_per_custom_result_template()
     {
-        TemplateFactoryTestHelper.getInstance().testCreateTemplate(
-            TemplateDefType.PER_CUSTOM_RESULT, "TemplateWritingHandler");
+        testCreateTemplate(TemplateDefType.PER_CUSTOM_RESULT, "TemplateWritingHandler");
     }
 }
