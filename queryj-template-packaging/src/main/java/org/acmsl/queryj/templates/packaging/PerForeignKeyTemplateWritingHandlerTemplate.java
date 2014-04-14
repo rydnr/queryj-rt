@@ -35,11 +35,12 @@
  */
 package org.acmsl.queryj.templates.packaging;
 
+import org.jetbrains.annotations.NotNull;
+
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
-import org.jetbrains.annotations.NotNull;
 
 /**
  * Represents foreign key-specific template writing handler templates.
