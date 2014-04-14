@@ -72,7 +72,13 @@ public class TemplateWritingHandlerTemplateFactoryTest
         @Nullable final TemplateWritingHandlerTemplate<DefaultTemplatePackagingContext> template =
             instance.createTemplate(context);
 
+        EasyMock.replay(context);
+        EasyMock.replay(templateDef);
+
         Assert.assertNotNull(template);
         Assert.assertEquals("TemplateWritingHandler", template.getTemplateName());
+
+        EasyMock.verify(context);
+        EasyMock.verify(templateDef);
     }
 }
