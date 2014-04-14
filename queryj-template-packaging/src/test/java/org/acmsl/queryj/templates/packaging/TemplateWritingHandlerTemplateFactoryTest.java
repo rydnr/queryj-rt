@@ -37,6 +37,7 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JUnit classes.
  */
+import org.jetbrains.annotations.NotNull;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -51,5 +52,9 @@ import org.junit.runners.JUnit4;
 public class TemplateWritingHandlerTemplateFactoryTest
 {
     @Test
-    public void creates_the
+    public void createTemplate_returns_the_correct_template_for_the_default_context()
+    {
+        @NotNull
+
+    }
 }
