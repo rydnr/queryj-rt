@@ -81,16 +81,14 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
     public static final String FOREIGN_KEYS = "..FOreignKeY:::";
 
     /**
-     * Creates a <code>BasePerForeignKeyTemplateBuildHandler</code> instance.
+     * Creates a {@code BasePerForeignKeyTemplateBuildHandler} instance.
      */
     public BasePerForeignKeyTemplateBuildHandler() {}
 
     /**
      * Handles given information.
-     *
-     *
      * @param parameters the parameters.
-     * @return <code>true</code> if the chain should be stopped.
+     * @return {@code true} if the chain should be stopped.
      */
     @Override
     public boolean handle(@NotNull final QueryJCommand parameters)
