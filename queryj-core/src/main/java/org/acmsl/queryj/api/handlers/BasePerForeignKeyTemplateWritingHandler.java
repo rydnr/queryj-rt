@@ -39,6 +39,8 @@ import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.PerForeignKeyTemplate;
 import org.acmsl.queryj.api.PerForeignKeyTemplateContext;
 import org.acmsl.queryj.api.PerForeignKeyTemplateGenerator;
+import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.metadata.engines.Engine;
 import org.acmsl.queryj.tools.PackageUtils;
 
 /*
@@ -81,11 +83,11 @@ public abstract class BasePerForeignKeyTemplateWritingHandler
         @NotNull final C context,
         @NotNull final File rootDir,
         @NotNull final QueryJCommand parameters)
+      throws QueryJBuildException
     {
         return
             retrieveOutputDir(
-                retrieveEngine(parameters),
-                retrieveProductName(parameters),
+                retrieveEngine(parameters, retrieveDatabaseMetaData(parameters)),
                 retrieveProjectOutputDir(parameters),
                 retrieveProjectPackage(parameters),
                 context.getForeignKey().getSourceTableName(),
@@ -94,7 +96,7 @@ public abstract class BasePerForeignKeyTemplateWritingHandler
 
     /**
      * Retrieves the output dir from the attribute map.
-     * @param engineName the engine name.
+     * @param engine the engine.
      * @param projectOutputDir the project output dir.
      * @param projectPackage the project package.
      * @param tableName the table name.
@@ -103,7 +105,7 @@ public abstract class BasePerForeignKeyTemplateWritingHandler
      */
     @NotNull
     protected abstract File retrieveOutputDir(
-        @NotNull final String engineName,
+        @NotNull final Engine<String> engine,
         @NotNull final File projectOutputDir,
         final String projectPackage,
         @NotNull final String tableName,

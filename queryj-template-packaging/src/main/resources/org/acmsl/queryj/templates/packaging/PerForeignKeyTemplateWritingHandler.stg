@@ -156,7 +156,7 @@ public class <C.class_name>
 
     /**
      * Retrieves the output dir from the attribute map.
-     * @param engineName the engine name.
+     * @param engine the engine.
      * @param projectOutputDir the project output dir.
      * @param projectPackage the project package.
      * @param tableName the source table name.
@@ -166,7 +166,7 @@ public class <C.class_name>
     @NotNull
     @Override
     protected File retrieveOutputDir(
-        @NotNull final String engineName,
+        @NotNull final Engine\<String> engine,
         @NotNull final File projectOutputDir,
         final String projectPackage,
         @NotNull final String tableName,
