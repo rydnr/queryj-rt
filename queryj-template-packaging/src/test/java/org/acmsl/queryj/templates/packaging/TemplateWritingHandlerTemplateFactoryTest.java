@@ -51,5 +51,5 @@ import org.junit.runners.JUnit4;
 public class TemplateWritingHandlerTemplateFactoryTest
 {
     @Test
-    public void 
+    public void creates_t
 }
