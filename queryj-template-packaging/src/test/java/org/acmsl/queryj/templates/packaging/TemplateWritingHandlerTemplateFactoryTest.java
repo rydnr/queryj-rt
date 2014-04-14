@@ -70,7 +70,7 @@ public class TemplateWritingHandlerTemplateFactoryTest
 
     /**
      * Checks whether the createTemplate() method returns the correct template
-     * for a per-repository type.
+     * for a per-table type.
      */
     @Test
     public void createTemplate_returns_the_correct_template_for_a_per_table_template()
@@ -80,17 +80,17 @@ public class TemplateWritingHandlerTemplateFactoryTest
 
     /**
      * Checks whether the createTemplate() method returns the correct template
-     * for a per-repository type.
+     * for a per-foreign-key type.
      */
     @Test
     public void createTemplate_returns_the_correct_template_for_a_per_foreign_key_template()
     {
-        testCreateTemplate(TemplateDefType.PER_FOREIGN_KEY, "TemplateWritingHandler");
+        testCreateTemplate(TemplateDefType.PER_FOREIGN_KEY, "PerForeignKeyTemplateWritingHandler");
     }
 
     /**
      * Checks whether the createTemplate() method returns the correct template
-     * for a per-repository type.
+     * for a per-custom-result type.
      */
     @Test
     public void createTemplate_returns_the_correct_template_for_a_per_custom_result_template()
