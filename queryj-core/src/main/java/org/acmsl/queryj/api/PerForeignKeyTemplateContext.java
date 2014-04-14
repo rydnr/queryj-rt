@@ -141,12 +141,18 @@ public class PerForeignKeyTemplateContext
         return result;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public int hashCode()
     {
         return new HashCodeBuilder().appendSuper(super.hashCode()).append(this.m__ForeignKey).toHashCode();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean equals(final Object obj)
     {
@@ -173,12 +179,17 @@ public class PerForeignKeyTemplateContext
         return result;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public String toString()
     {
-        return "{ 'class': 'PerForeignKeyTemplateContext'" +
-               ", 'foreignKey': " + m__ForeignKey +
-               " }";
+        return
+              "{ \"class\": \"PerForeignKeyTemplateContext\""
+            + ", \"foreignKey\": " + m__ForeignKey + '"'
+            + ", \"package\": \"org.acmsl.queryj.api\""
+            + " }";
     }
 }
