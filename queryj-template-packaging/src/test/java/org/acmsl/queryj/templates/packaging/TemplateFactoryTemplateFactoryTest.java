@@ -33,9 +33,12 @@
  *
  */
 package org.acmsl.queryj.templates.packaging;
+
 /*
- * Importing checkthread.org annotations.
+ * Importing JUnit/EasyMock classes.
  */
+import org.easymock.EasyMock;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
@@ -47,5 +50,68 @@ import org.junit.runners.JUnit4;
  */
 @RunWith(JUnit4.class)
 public class TemplateFactoryTemplateFactoryTest
+    extends TemplateFactoryTestHelper<
+                TemplateFactoryTemplateFactory,
+                TemplateFactoryTemplate<DefaultTemplatePackagingContext>,
+                DefaultTemplatePackagingContext>
 {
+    /**
+     * Creates a new nice mock of {@link DefaultTemplatePackagingContext}.
+     * @return such instance.
+     */
+    @Override
+    protected DefaultTemplatePackagingContext createContext()
+    {
+        return EasyMock.createNiceMock(DefaultTemplatePackagingContext.class);
+    }
+
+    /**
+     * Creates a new {@link TemplateWritingHandlerTemplateFactory} instance.
+     * @return such instance.
+     */
+    @Override
+    protected TemplateFactoryTemplateFactory createFactory()
+    {
+        return new TemplateFactoryTemplateFactory();
+    }
+
+    /**
+     * Checks whether the createTemplate() method returns the correct template
+     * for a per-repository type.
+     */
+    @Test
+    public void createTemplate_returns_the_correct_template_for_a_per_repository_template()
+    {
+        testCreateTemplate(TemplateDefType.PER_REPOSITORY, "TemplateFactory");
+    }
+
+    /**
+     * Checks whether the createTemplate() method returns the correct template
+     * for a per-table type.
+     */
+    @Test
+    public void createTemplate_returns_the_correct_template_for_a_per_table_template()
+    {
+        testCreateTemplate(TemplateDefType.PER_TABLE, "TemplateFactory");
+    }
+
+    /**
+     * Checks whether the createTemplate() method returns the correct template
+     * for a per-foreign-key type.
+     */
+    @Test
+    public void createTemplate_returns_the_correct_template_for_a_per_foreign_key_template()
+    {
+        testCreateTemplate(TemplateDefType.PER_FOREIGN_KEY, "PerForeignKeyTemplateFactory");
+    }
+
+    /**
+     * Checks whether the createTemplate() method returns the correct template
+     * for a per-custom-result type.
+     */
+    @Test
+    public void createTemplate_returns_the_correct_template_for_a_per_custom_result_template()
+    {
+        testCreateTemplate(TemplateDefType.PER_CUSTOM_RESULT, "TemplateFactory");
+    }
 }

@@ -60,7 +60,7 @@ import org.junit.Assert;
  */
 @ThreadSafe
 public abstract class TemplateFactoryTestHelper<TF extends TemplatePackagingTemplateFactory<T, C>,
-    T extends TemplateWritingHandlerTemplate<C>, C extends DefaultTemplatePackagingContext>
+    T extends TemplatePackagingTemplate<C>, C extends DefaultTemplatePackagingContext>
 {
     /**
      * Creates a new instance.
