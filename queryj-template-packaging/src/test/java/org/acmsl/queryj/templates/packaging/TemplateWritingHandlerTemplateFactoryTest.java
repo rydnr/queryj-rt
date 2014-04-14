@@ -49,6 +49,8 @@ import org.junit.runners.JUnit4;
  */
 @RunWith(JUnit4.class)
 public class TemplateWritingHandlerTemplateFactoryTest
+    extends TemplateFactoryTestHelper<
+                TemplateWritingHandlerTemplateFactory<TemplateWritingHandlerTemplate<DefaultTemplatePackagingContext>>
 {
     /**
      * Checks whether the createTemplate() method returns the correct template

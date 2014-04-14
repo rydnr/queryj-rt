@@ -76,8 +76,7 @@ public abstract class TemplateFactoryTestHelper<TF extends TemplatePackagingTemp
     {
         @NotNull final TF instance = createFactory();
 
-        @NotNull final DefaultTemplatePackagingContext context =
-            EasyMock.createNiceMock(C);
+        @NotNull final C context = createContext();
 
         @SuppressWarnings("unchecked")
         @NotNull final TemplateDef<String> templateDef = EasyMock.createNiceMock(TemplateDef.class);
@@ -88,8 +87,7 @@ public abstract class TemplateFactoryTestHelper<TF extends TemplatePackagingTemp
         EasyMock.replay(context);
         EasyMock.replay(templateDef);
 
-        @Nullable final TemplateWritingHandlerTemplate<DefaultTemplatePackagingContext> template =
-            instance.createTemplate(context);
+        @Nullable final T template = instance.createTemplate(context);
 
         Assert.assertNotNull(template);
         Assert.assertEquals(templateName, template.getTemplateName());
@@ -97,4 +95,16 @@ public abstract class TemplateFactoryTestHelper<TF extends TemplatePackagingTemp
         EasyMock.verify(context);
         EasyMock.verify(templateDef);
     }
+
+    /**
+     * Retrieves a new context instance.
+     * @return such instance.
+     */
+    protected abstract C createContext();
+
+    /**
+     * Retrieves the template factory instance.
+     * @return such instance.
+     */
+    protected abstract TF createFactory();
 }
