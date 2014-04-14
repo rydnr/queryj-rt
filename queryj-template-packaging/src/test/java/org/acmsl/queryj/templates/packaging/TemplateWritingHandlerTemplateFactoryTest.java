@@ -54,7 +54,10 @@ public class TemplateWritingHandlerTemplateFactoryTest
     @Test
     public void createTemplate_returns_the_correct_template_for_the_default_context()
     {
-        @NotNull
+        @NotNull final TemplateWritingHandlerTemplateFactory instance =
+            new TemplateWritingHandlerTemplateFactory();
+
+        instance.createTemplate()
 
     }
 }
