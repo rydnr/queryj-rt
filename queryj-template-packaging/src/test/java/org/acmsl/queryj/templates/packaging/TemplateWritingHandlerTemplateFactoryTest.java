@@ -97,36 +97,4 @@ public class TemplateWritingHandlerTemplateFactoryTest
     {
         testCreateTemplate(TemplateDefType.PER_CUSTOM_RESULT, "TemplateWritingHandler");
     }
-
-    /**
-     * Checks whether the createTemplate() method returns the correct template.
-     * @param type the {@link TemplateDefType type}.
-     * @param templateName the template name.
-     */
-    protected void testCreateTemplate(@NotNull final TemplateDefType type, @NotNull final String templateName)
-    {
-        @NotNull final TemplateWritingHandlerTemplateFactory instance =
-            new TemplateWritingHandlerTemplateFactory();
-
-        @NotNull final DefaultTemplatePackagingContext context =
-            EasyMock.createNiceMock(DefaultTemplatePackagingContext.class);
-
-        @SuppressWarnings("unchecked")
-        @NotNull final TemplateDef<String> templateDef = EasyMock.createNiceMock(TemplateDef.class);
-
-        EasyMock.expect(context.getTemplateDef()).andReturn(templateDef);
-        EasyMock.expect(templateDef.getType()).andReturn(type);
-
-        EasyMock.replay(context);
-        EasyMock.replay(templateDef);
-
-        @Nullable final TemplateWritingHandlerTemplate<DefaultTemplatePackagingContext> template =
-            instance.createTemplate(context);
-
-        Assert.assertNotNull(template);
-        Assert.assertEquals(templateName, template.getTemplateName());
-
-        EasyMock.verify(context);
-        EasyMock.verify(templateDef);
-    }
 }
