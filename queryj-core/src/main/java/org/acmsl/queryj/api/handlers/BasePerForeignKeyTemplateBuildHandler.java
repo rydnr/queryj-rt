@@ -1,5 +1,5 @@
 /*
-                        QueryJ
+                        QueryJ Core
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -34,15 +34,13 @@
 package org.acmsl.queryj.api.handlers;
 
 /*
- * Importing some project classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.PerForeignKeyTemplate;
 import org.acmsl.queryj.api.PerForeignKeyTemplateContext;
 import org.acmsl.queryj.api.PerForeignKeyTemplateFactory;
-import org.acmsl.queryj.metadata.CachingDecoratorFactory;
-import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.metadata.MetadataManager;
@@ -131,19 +129,9 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
         buildTemplates(
             parameters,
             metadataManager,
-            customSqlProvider,
             templateFactory,
             retrieveProjectPackage(parameters),
-            retrieveTableRepositoryName(parameters),
-            retrieveHeader(parameters),
-            retrieveImplementMarkerInterfaces(parameters),
-            retrieveJmx(parameters),
-            retrieveJNDILocation(parameters),
-            retrieveDisableGenerationTimestamps(parameters),
-            retrieveDisableNotNullAnnotations(parameters),
-            retrieveDisableCheckthreadAnnotations(parameters),
-            retrieveForeignKeys(parameters, metadataManager),
-            CachingDecoratorFactory.getInstance());
+            retrieveForeignKeys(parameters, metadataManager));
     }
 
     /**
@@ -157,36 +145,16 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
      * Builds the templates.
      * @param parameters the parameters.
      * @param metadataManager the database metadata manager.
-     * @param customSqlProvider the custom sql provider.
      * @param templateFactory the template factory.
      * @param projectPackage the project package.
-     * @param repository the repository.
-     * @param header the header.
-     * @param implementMarkerInterfaces whether to implement marker interfaces.
-     * @param jmx whether to include JMX support.
-     * @param jndiLocation the JNDI location.
-     * @param disableGenerationTimestamps whether to disable generation timestamps.
-     * @param disableNotNullAnnotations whether to disable NotNull annotations.
-     * @param disableCheckthreadAnnotations whether to disable checkthread.org annotations or not.
      * @param foreignKeys the foreign keys.
-     * @param decoratorFactory the {@link DecoratorFactory} instance.
      */
     protected void buildTemplates(
         @NotNull final QueryJCommand parameters,
         @NotNull final MetadataManager metadataManager,
-        @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final TF templateFactory,
         @NotNull final String projectPackage,
-        @NotNull final String repository,
-        @Nullable final String header,
-        final boolean implementMarkerInterfaces,
-        final boolean jmx,
-        @NotNull final String jndiLocation,
-        final boolean disableGenerationTimestamps,
-        final boolean disableNotNullAnnotations,
-        final boolean disableCheckthreadAnnotations,
-        @NotNull final List<ForeignKey<String>> foreignKeys,
-        @NotNull final DecoratorFactory decoratorFactory)
+        @NotNull final List<ForeignKey<String>> foreignKeys)
       throws  QueryJBuildException
     {
         @NotNull final List<T> t_lTemplates = new ArrayList<>();
@@ -198,23 +166,12 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
             {
                 t_lTemplates.add(
                     templateFactory.createTemplate(
-                        metadataManager,
-                        customSqlProvider,
-                        decoratorFactory,
                         retrievePackage(
                             t_ForeignKey.getSourceTableName(),
                             metadataManager.getEngine(),
                             parameters),
-                        projectPackage,
-                        repository,
-                        header,
-                        implementMarkerInterfaces,
-                        jmx,
-                        jndiLocation,
-                        disableGenerationTimestamps,
-                        disableNotNullAnnotations,
-                        disableCheckthreadAnnotations,
-                        t_ForeignKey));
+                        t_ForeignKey,
+                        parameters));
             }
         }
 
