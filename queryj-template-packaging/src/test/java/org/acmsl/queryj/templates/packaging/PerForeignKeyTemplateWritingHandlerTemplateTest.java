@@ -59,8 +59,11 @@ public class PerForeignKeyTemplateWritingHandlerTemplateTest
     @Test
     public void getTemplateName_returns_the_correct_template_name()
     {
+        @NotNull final DefaultTemplatePackagingContext context =
+            EasyMock.createNiceMock(DefaultTemplatePackagingContext.class);
+
         @NotNull final PerForeignKeyTemplateWritingHandlerTemplate instance =
-            new PerForeignKeyTemplateWritingHandlerTemplate();
+            new PerForeignKeyTemplateWritingHandlerTemplate<>(context);
 
         Assert.assertEquals("PerForeignKeyTemplateWritingHandlerTemplate", instance.getTemplateName());
 

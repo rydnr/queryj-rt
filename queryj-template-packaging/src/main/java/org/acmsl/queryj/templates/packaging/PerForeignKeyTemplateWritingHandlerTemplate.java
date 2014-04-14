@@ -50,12 +50,12 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class PerForeignKeyTemplateWritingHandlerTemplate<C extends TemplatePackagingContext>
-    extends AbstractTemplatePackagingTemplate<C>
+    extends TemplateWritingHandlerTemplate<C>
 {
     /**
      * The serial version id.
      */
-    private static final long serialVersionUID = 6677048230055426118L;
+    private static final long serialVersionUID = 3487564525136393115L;
 
     /**
      * Creates a new instance using given context.
