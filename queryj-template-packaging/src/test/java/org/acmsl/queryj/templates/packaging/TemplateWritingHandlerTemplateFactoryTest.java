@@ -62,7 +62,9 @@ public class TemplateWritingHandlerTemplateFactoryTest
 
         @NotNull final DefaultTemplatePackagingContext context =
             EasyMock.createNiceMock(DefaultTemplatePackagingContext.class);
-        @NotNull final TemplateDef templateDef = EasyMock.createNiceMock(TemplateDef.class);
+
+        @SuppressWarnings("unchecked")
+        @NotNull final TemplateDef<String> templateDef = EasyMock.createNiceMock(TemplateDef.class);
 
         EasyMock.expect(context.getTemplateDef()).andReturn(templateDef);
         EasyMock.expect(templateDef.getType()).andReturn(TemplateDefType.PER_REPOSITORY);
@@ -71,7 +73,6 @@ public class TemplateWritingHandlerTemplateFactoryTest
             instance.createTemplate(context);
 
         Assert.assertNotNull(template);
-        Assert.assertEquals(Literals,TEMPLATE_WRITING_HANDLER, template.getTemplateName());
-
+        Assert.assertEquals("TemplateWritingHandler", template.getTemplateName());
     }
 }
