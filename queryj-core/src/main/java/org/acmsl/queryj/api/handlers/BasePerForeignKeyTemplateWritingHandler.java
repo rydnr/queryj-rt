@@ -33,7 +33,7 @@
 package org.acmsl.queryj.api.handlers;
 
 /*
- * Importing some project classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.PerForeignKeyTemplate;
@@ -82,25 +82,12 @@ public abstract class BasePerForeignKeyTemplateWritingHandler
         @NotNull final File rootDir,
         @NotNull final QueryJCommand parameters)
     {
-        return retrieveOutputDir(context.getForeignKey().getSourceTableName(), parameters);
-    }
-
-    /**
-     * Retrieves the output dir from the attribute map.
-     * @param tableName the table name.
-     * @param parameters the parameter map.
-     * @return such folder.
-     */
-    @NotNull
-    protected File retrieveOutputDir(
-        @NotNull final String tableName, @NotNull final QueryJCommand parameters)
-    {
         return
             retrieveOutputDir(
                 retrieveProductName(parameters),
                 retrieveProjectOutputDir(parameters),
                 retrieveProjectPackage(parameters),
-                tableName,
+                context.getForeignKey().getSourceTableName(),
                 retrieveUseSubfoldersFlag(parameters),
                 PackageUtils.getInstance());
     }

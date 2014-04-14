@@ -98,21 +98,18 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
     public boolean handle(@NotNull final QueryJCommand parameters)
         throws  QueryJBuildException
     {
-        boolean result = true;
+        final boolean result;
 
-        @Nullable final MetadataManager t_MetadataManager =
+        @NotNull final MetadataManager t_MetadataManager =
             retrieveMetadataManager(parameters);
 
-        if (t_MetadataManager != null)
-        {
-            buildTemplates(
-                parameters,
-                t_MetadataManager,
-                retrieveCustomSqlProvider(parameters),
-                retrieveTemplateFactory());
+        buildTemplates(
+            parameters,
+            t_MetadataManager,
+            retrieveCustomSqlProvider(parameters),
+            retrieveTemplateFactory());
 
-            result = false;
-        }
+        result = false;
 
         return result;
     }
@@ -148,7 +145,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
             retrieveForeignKeys(parameters, metadataManager),
             CachingDecoratorFactory.getInstance());
     }
-    
+
     /**
      * Retrieves the template factory.
      * @return such instance.
@@ -240,7 +237,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
         return
             retrievePackage(
                 tableName,
-                engine.getName(),
+                engine,
                 retrieveProjectPackage(parameters),
                 PackageUtils.getInstance());
     }
@@ -256,7 +253,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
     @NotNull
     protected abstract String retrievePackage(
         @NotNull final String tableName,
-        @NotNull final String engineName,
+        @NotNull final Engine<String> engineName,
         @NotNull final String projectPackage,
         @NotNull final PackageUtils packageUtils);
 

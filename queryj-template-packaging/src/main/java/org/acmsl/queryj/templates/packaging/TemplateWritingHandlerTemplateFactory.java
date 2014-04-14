@@ -39,6 +39,7 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.api.PerForeignKeyTemplate;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -90,6 +91,17 @@ public class TemplateWritingHandlerTemplateFactory
     public TemplateWritingHandlerTemplate<DefaultTemplatePackagingContext> createTemplate(
         @NotNull final DefaultTemplatePackagingContext context)
     {
-        return new TemplateWritingHandlerTemplate<DefaultTemplatePackagingContext>(context);
+        @NotNull final TemplateWritingHandlerTemplate<DefaultTemplatePackagingContext> result;
+
+        switch (context.getTemplateDef().getType())
+        {
+            case TemplateDefType.PER_FOREIGN_KEY:
+                result = new PerForeignKeyTemplateWritingHandlerTemplate<>(context);
+                break;
+            default:
+                result = new TemplateWritingHandlerTemplate<>(context);
+        }
+
+        return result;
     }
 }
