@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro
  *
- * Description:
+ * Description: Tests for PerForeignKeyTemplateFactoryTemplate.
  *
  * Created: 2014/04/14 18:32
  *
@@ -37,9 +37,13 @@ package org.acmsl.queryj.templates.packaging;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.easymock.EasyMock;
+import org.jetbrains.annotations.NotNull;
+import org.junit.Assert;
+import org.junit.Test;
 
 /**
- *
+ * Tests for {@link PerForeignKeyTemplateFactoryTemplate}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created 2014/04/14
@@ -47,4 +51,18 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public class PerForeignKeyTemplateFactoryTemplateTest
 {
+    /**
+     * Checks whether getTemplateName() returns the correct template name.
+     */
+    @Test
+    public void getTemplateName_returns_the_correct_template_name()
+    {
+        @NotNull final DefaultTemplatePackagingContext context =
+            EasyMock.createNiceMock(DefaultTemplatePackagingContext.class);
+
+        @NotNull final PerForeignKeyTemplateFactoryTemplate instance =
+            new PerForeignKeyTemplateFactoryTemplate<>(context);
+
+        Assert.assertEquals("PerForeignKeyTemplateFactory", instance.getTemplateName());
+    }
 }
