@@ -38,9 +38,13 @@ package org.acmsl.queryj.api.exceptions;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.NotNull;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+
+import java.util.Arrays;
+import java.util.Locale;
 
 /**
  * Thrown whenever a {@link ForeignKey} is expected but it's not available, which is a bug.
@@ -51,6 +55,18 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class ForeignKeyNotAvailableExceptionTest
 {
+    /**
+     * Tests the message key is defined for Spanish and English.
+     */
     @Test
-    public void
+    public void exception_message_is_defined_in_Spanish_and_English()
+    {
+        @NotNull final ForeignKeyNotAvailableException instance = new ForeignKeyNotAvailableException();
+
+        for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
+        {
+            // throws a MissingResourceException if the key is not declared.
+            instance.getMessage(t_Locale);
+        }
+    }
 }
