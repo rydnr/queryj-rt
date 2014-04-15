@@ -249,6 +249,8 @@ public class PerForeignKeyTemplatesTest
      * Defines the columns from the feature.
      * @param columnInfo the column information.
      * @param foreignKeys the foreign keys.
+     * @param helper the {@link ForeignKeyTestHelper} instance.
+     * @return the foreign keys.
      */
     protected List\<ForeignKey\<String\>> defineInputColumns(
         @NotNull final DataTable columnInfo,
