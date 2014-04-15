@@ -163,7 +163,7 @@ public class <C.class_name>
         @NotNull final String packageName,
         @NotNull final ForeignKey\<String> foreignKey,
         @NotNull final QueryJCommand command
-        @NotNull final )
+        @NotNull final QueryJCommandUtils )
     {
         @NotNull final QueryJCommandUtils t_QueryJCommandUtils = QueryJCommandUtils.getInstance();
 
