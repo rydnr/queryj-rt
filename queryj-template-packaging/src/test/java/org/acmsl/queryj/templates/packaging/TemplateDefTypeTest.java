@@ -66,5 +66,6 @@ public class TemplateDefTypeTest
         Assert.assertTrue(TemplateDefType.PER_TABLE.isPerTable());
         Assert.assertFalse(TemplateDefType.PER_REPOSITORY.isPerTable());
         Assert.assertFalse(TemplateDefType.PER_SQL.isPerTable());
+        Assert.assertFalse(TemplateDefType.PER_SQL.isPerTable());
     }
 }
