@@ -213,7 +213,7 @@ public class PerForeignKeyTemplatesTest
      * @param tableInfo the information about the tables.
      */
     @SuppressWarnings("unused")
-    @Given("^the following tables:$")
+    @Given("^the table containing the foreign key ishe following tables:$")
     public void defineInputTables(@NotNull final DataTable tableInfo)
     {
         defineInputTables(tableInfo, getTables(), TableTestHelper.getInstance());
