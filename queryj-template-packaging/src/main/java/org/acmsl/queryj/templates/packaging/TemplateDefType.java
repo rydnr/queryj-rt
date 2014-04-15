@@ -152,6 +152,6 @@ public enum TemplateDefType
 
     public boolean isPerRepository()
     {
-        return "per-repository"
+        return PER_REPOSITORY.getType().equals(getType());
     }
 }
