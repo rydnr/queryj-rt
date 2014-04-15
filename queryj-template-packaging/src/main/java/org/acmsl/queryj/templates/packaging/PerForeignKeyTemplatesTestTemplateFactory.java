@@ -85,7 +85,7 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public class PerForeignKeyTemplatesTestTemplateFactory
     implements PerForeignKeyTemplateFactory<
-               PerForeignKeyTemplatesTestTemplate, PerForeignKeyTemplateContext>,
+    org.acmsl.queryj.templates.PerForeignKeyTemplatesTestTemplate, PerForeignKeyTemplateContext>,
                Singleton
 {
     /**
@@ -114,7 +114,7 @@ public class PerForeignKeyTemplatesTestTemplateFactory
      */
     @Override
     @NotNull
-    public PerForeignKeyTemplatesTestTemplate createTemplate(
+    public org.acmsl.queryj.templates.PerForeignKeyTemplatesTestTemplate createTemplate(
         @NotNull final String packageName,
         @NotNull final ForeignKey<String> foreignKey,
         @NotNull final QueryJCommand command)
@@ -131,7 +131,7 @@ public class PerForeignKeyTemplatesTestTemplateFactory
      * @return the new template.
      */
     @NotNull
-    protected PerForeignKeyTemplatesTestTemplate createTemplate(
+    protected org.acmsl.queryj.templates.PerForeignKeyTemplatesTestTemplate createTemplate(
         @NotNull final String packageName,
         @NotNull final ForeignKey<String> foreignKey,
         @NotNull final QueryJCommand command,
@@ -146,7 +146,7 @@ public class PerForeignKeyTemplatesTestTemplateFactory
                 foreignKey,
                 command);
 
-        return new PerForeignKeyTemplatesTestTemplate(t_Context);
+        return new org.acmsl.queryj.templates.PerForeignKeyTemplatesTestTemplate(t_Context);
     }
 
     /**
