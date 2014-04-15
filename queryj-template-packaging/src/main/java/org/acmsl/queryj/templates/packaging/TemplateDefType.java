@@ -152,6 +152,6 @@ public enum TemplateDefType
 
     public boolean isPerRepository()
     {
-        return false;  //To change body of created methods use File | Settings | File Templates.
+        return "per-repository"
     }
 }
