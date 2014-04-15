@@ -71,10 +71,6 @@ Feature: <fk.sourceTableName> foreign keys code compiles
 
     Then the generated per-foreign key \<output> file compiles successfully
 
-    Then the queries are validated correctly using the following database:
-      |     driver     |     url     |     userName     |     password     |
-      | <C.jdbcDriver> | <C.jdbcUrl> | <C.jdbcUserName> | <C.jdbcPassword> |
-
     Examples:
       | template           | output                            |
       <C.templateDefs:{ d | <indirect_template(def=d, engineName="Oracle", tableName="User")>}; separator="\n">
