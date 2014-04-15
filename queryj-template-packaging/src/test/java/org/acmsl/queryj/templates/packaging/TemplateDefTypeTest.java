@@ -74,7 +74,7 @@ public class TemplateDefTypeTest
         Assert.assertFalse(TemplateDefType.PER_TABLE.isPerRepository());
         Assert.assertTrue(TemplateDefType.PER_REPOSITORY.isPerRepository());
         Assert.assertFalse(TemplateDefType.PER_SQL.isPerRepository());
-        Assert.assertFalse(TemplateDefType.PER_FOREIGN_KEY.isPerTable());
-        Assert.assertFalse(TemplateDefType.PER_CUSTOM_RESULT.isPerTable());
+        Assert.assertFalse(TemplateDefType.PER_FOREIGN_KEY.isPerRepository());
+        Assert.assertFalse(TemplateDefType.PER_CUSTOM_RESULT.isPerRepository());
     }
 }
