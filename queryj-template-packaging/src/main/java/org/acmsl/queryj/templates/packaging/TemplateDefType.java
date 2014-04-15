@@ -118,6 +118,15 @@ public enum TemplateDefType
     }
 
     /**
+     * Checks whether this type identifies per-table template defs.
+     * @return {@code true} in such case.
+     */
+    public boolean isPerTable()
+    {
+        return "per-table".equals(getType());
+    }
+
+    /**
      * Retrieves a capitalized version.
      * @return the type, capitalized.
      */
