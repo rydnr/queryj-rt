@@ -156,7 +156,12 @@ public class <C.class_name>
     }
 
     /**
-     * {@inheritDoc}
+     * Creates a per-<i>foreign key</i> template.
+     * @param packageName the package name.
+     * @param foreignKey the foreign key.
+     * @param command the {@link QueryJCommand} instance.
+     * @param queryJCommandUtils the {@link QueryJCommandUtils} instance.
+     * @return the new template.
      */
     @NotNull
     protected <def.name.noExtension>Template createTemplate(
