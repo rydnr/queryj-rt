@@ -165,9 +165,8 @@ import java.util.Set;
 description() ::= <<
 <!
   Generates a description for the generated file.
-  @param tableName the table name.
 !>
-Cucumber tests for per-table templates.
+Cucumber tests for per-foreign key templates.
 >>
 
 def_import(d) ::= <<
@@ -188,7 +187,7 @@ class(defs, C) ::= <<
 /**
  * <description()>
 <class_common_javadoc(
-  template="org/acmsl/queryj/dao/PerTableTemplatesTest.stg",
+  template="org/acmsl/queryj/dao/PerForeignKeyTemplatesTest.stg",
   generation_timestamps_enabled=C.generation_timestamps_enabled,
   timestamp=C.timestamp,
   version=C.version)>
