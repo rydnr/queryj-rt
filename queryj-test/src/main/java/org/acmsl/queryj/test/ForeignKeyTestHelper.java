@@ -59,7 +59,9 @@ import java.util.List;
 public class ForeignKeyTestHelper
 {
     public List<ForeignKey<String>> defineInputColumns(final DataTable columnInfo, final List<ForeignKey<String>> foreignKeys)
+
     {
+        return null;  //To change body of created methods use File | Settings | File Templates.
     }
 
     /**
