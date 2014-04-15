@@ -369,7 +369,7 @@ public class PerForeignKeyTemplatesTest
                 new QueryJCommandWrapper\<MetadataManager>(t_Command).setSetting(
                     DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, metadataManager);
 
-                @Nullable final PerForeignKeyTemplateFactory\<? extends PerTableTemplate\<PerTableTemplateContext>, PerTableTemplateContext> templateFactory =
+                @Nullable final PerForeignKeyTemplateFactory\<? extends PerForeignKeyTemplate\<PerForeignKeyTemplateContext>, PerForeignKeyTemplateContext> templateFactory =
                     retrieveTemplateFactory(templateName);
 
                 Assert.assertNotNull("No template factory found for " + templateName, templateFactory);
