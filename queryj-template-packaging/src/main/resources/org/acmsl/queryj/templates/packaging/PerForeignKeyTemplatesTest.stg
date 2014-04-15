@@ -279,7 +279,7 @@ public class PerForeignKeyTemplatesTest
     @NotNull
     @Override
     protected DecoratorFactory retrieveDecoratorFactory(
-        @NotNull final PerForeignKeyTemplateGenerator\<? extends PerForeignKeyTemplate\<PerForeignKeyTemplateContext>, PerTableTemplateContext> generator)
+        @NotNull final PerForeignKeyTemplateGenerator\<? extends PerForeignKeyTemplate\<PerForeignKeyTemplateContext>, PerForeignKeyTemplateContext> generator)
     {
         return generator.getDecoratorFactory();
     }
