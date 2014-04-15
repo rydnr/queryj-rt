@@ -81,6 +81,15 @@ public class MissingTemplatesExceptionTest
     }
 
     /**
+     * Tests the "per-foreign-key-templates-test" exception is defined for Spanish and English.
+     */
+    @Test
+    public void per_table_templates_feature_message_is_defined_in_Spanish_and_English()
+    {
+        checkExceptionMessageIsDefinedInSpanishAndEnglish("per-table-templates-feature");
+    }
+
+    /**
      * Tests the message key is defined for Spanish and English.
      */
     protected void checkExceptionMessageIsDefinedInSpanishAndEnglish(@NotNull final String templateName)
