@@ -51,11 +51,9 @@ import org.acmsl.queryj.api.handlers.BasePerForeignKeyTemplateWritingHandler;
 import org.acmsl.queryj.metadata.engines.Engine;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
-import org.acmsl.queryj.templates.packaging.handlers.PerForeignKeyTemplatesTestTemplateBuildHandler;
-import org.acmsl.queryj.tools.PackageUtils;
 
 /*
- * Importing custom templates.
+ * Importing QueryJ Template Packaging classes.
  */
 import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplateGenerator;
@@ -121,7 +119,7 @@ public class PerForeignKeyTemplatesTestTemplateWritingHandler
 
         if (aux == null)
         {
-            result = new ArrayList<PerForeignKeyTemplatesTestTemplate>(0);
+            result = new ArrayList<>(0);
         }
         else
         {
