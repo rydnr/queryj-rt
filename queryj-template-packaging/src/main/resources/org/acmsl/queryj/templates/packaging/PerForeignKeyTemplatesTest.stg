@@ -298,8 +298,7 @@ public class PerForeignKeyTemplatesTest
         generateFile(
             template,
             engine,
-            getTables(),
-            getRows(),
+            getForeignKeys(),
             getOutputFiles(),
             retrieveCustomSqlProvider(getSqlList(), getParameters()));
     }
