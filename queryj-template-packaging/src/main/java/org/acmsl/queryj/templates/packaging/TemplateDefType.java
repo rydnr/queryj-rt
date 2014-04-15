@@ -149,13 +149,4 @@ public enum TemplateDefType
             + ", \"package\": \"" + TemplateDefType.class.getPackage().getName()
             + "\" }";
     }
-
-    /**
-     * Checks whether this type identifies per-repository template defs.
-     * @return {@code true} in such case.
-     */
-    public boolean isPerRepository()
-    {
-        return PER_REPOSITORY.getType().equals(getType());
-    }
 }
