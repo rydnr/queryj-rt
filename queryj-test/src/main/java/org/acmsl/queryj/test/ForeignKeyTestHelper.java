@@ -67,7 +67,6 @@ public class ForeignKeyTestHelper
 
     /**
      * Retrieves the singleton instance.
-     *
      * @return such instance.
      */
     @NotNull
