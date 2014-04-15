@@ -79,6 +79,11 @@ public class ForeignKeyTestHelper
         return ForeignKeyTestHelperSingletonContainer.SINGLETON;
     }
 
+    /**
+     *
+     * @param tableInfo
+     * @param foreignKeys
+     */
     public void defineInputForeignKeys(
         @NotNull final DataTable tableInfo, @NotNull final List<ForeignKey<String>> foreignKeys)
     {
