@@ -312,7 +312,7 @@ public class PerForeignKeyTemplatesTest
     protected void generateFile(
         @NotNull final String templateName,
         @NotNull final String engine,
-        @NotNull final List\<String, ForeignKey\<String\>> foreignKeyMap,
+        @NotNull final List\<ForeignKey\<String\>> foreignKeyMap,
         @NotNull final Map\<String, File> outputFiles)
     {
         @Nullable final PerForeignKeyTemplateGenerator\<PerForeignKeyTemplate\<PerForeignKeyTemplateContext>, PerForeignKeyTemplateContext> generator =
