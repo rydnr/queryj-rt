@@ -82,7 +82,7 @@ public class TemplateDefTypeTest
      * Tests isPerSqr() for all types.
      */
     @Test
-    public void isPerRepository_is_correct_for_all_types()
+    public void isPerSql_is_correct_for_all_types()
     {
         Assert.assertFalse(TemplateDefType.PER_TABLE.isPerRepository());
         Assert.assertTrue(TemplateDefType.PER_REPOSITORY.isPerRepository());
