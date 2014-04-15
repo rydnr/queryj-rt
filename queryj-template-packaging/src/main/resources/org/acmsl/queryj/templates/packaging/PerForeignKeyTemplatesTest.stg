@@ -192,23 +192,23 @@ class(defs, C) ::= <<
   timestamp=C.timestamp,
   version=C.version)>
  */
-public class PerTableTemplatesTest
+public class PerForeignKeyTemplatesTest
     extends AbstractTemplatesTest\<
-                PerTableTemplateGenerator\<? extends PerTableTemplate\<PerTableTemplateContext>, PerTableTemplateContext>,
-                PerTableTemplateFactory\<? extends PerTableTemplate\<PerTableTemplateContext>, PerTableTemplateContext\>>
+                PerForeignKeyTemplateGenerator\<? extends PerForeignKeyTemplate\<PerForeignKeyTemplateContext>, PerForeignKeyTemplateContext>,
+                PerForeignKeyTemplateFactory\<? extends PerForeignKeyTemplate\<PerForeignKeyTemplateContext>, PerForeignKeyTemplateContext\>>
 {
     /**
      * Creates an instance.
      */
-    public PerTableTemplatesTest()
+    public PerForeignKeyTemplatesTest()
     {
         super();
 
-        <defs:{ d | <if(!d.disabled)><if(d.type.perTable)><generator_mapping(def=d)><endif><endif>}; separator="\n">
+        <defs:{ d | <if(!d.disabled)><if(d.type.perForeignKey)><generator_mapping(def=d)><endif><endif>}; separator="\n">
     }
 
     /**
-     * Defines the input tables based on the information provided by the
+     * Defines the input foreign keys based on the information provided by the
      * feature.
      * @param tableInfo the information about the tables.
      */
