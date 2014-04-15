@@ -147,7 +147,18 @@ public class <C.class_name>
      */
     @Override
     @NotNull
-    public <def.name.noExtension>Template createTemplate(
+    /**
+     * Creates a per-<i>foreign key</i> template.
+     * @param packageName the package name.
+     * @param foreignKey the foreign key.
+     * @param command the {@link QueryJCommand} instance.
+     * @return the new template.
+     */
+    @NotNull
+    T createTemplate(
+        @NotNull final String packageName,
+        @NotNull final ForeignKey<String> foreignKey,
+        @NotNull final QueryJCommand command);    public <def.name.noExtension>Template createTemplate(
         @NotNull final QueryJCommand command,
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final String packageName,
