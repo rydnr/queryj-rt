@@ -38,12 +38,16 @@ package org.acmsl.queryj.test;
 /*
  * Importing JetBrains annotations.
  */
+import cucumber.api.DataTable;
+import org.acmsl.queryj.metadata.vo.ForeignKey;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+
+import java.util.List;
 
 /**
  * Helper class for per-foreign key Cucumber tests.
@@ -54,6 +58,10 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public class ForeignKeyTestHelper
 {
+    public void defineInputForeignKeys(final DataTable tableInfo, final List<ForeignKey<String>> foreignKeys)
+    {
+    }
+
     /**
      * Singleton implementation to avoid double-locking check.
      */
