@@ -154,7 +154,7 @@ public enum TemplateDefType
     }
 
     /**
-     * Checks whether this type identifies per-foreign key template defs.
+     * Checks whether this type identifies per-custom result key template defs.
      * @return {@code true} in such case.
      */
     public boolean isPerCustomResult()
