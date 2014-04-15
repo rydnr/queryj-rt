@@ -176,9 +176,4 @@ public enum TemplateDefType
             + ", \"package\": \"" + TemplateDefType.class.getPackage().getName()
             + "\" }";
     }
-
-    public boolean isPerCustomResult()
-    {
-        return PER_CUSTOM_RESULT.getType().equals(getType());
-    }
 }
