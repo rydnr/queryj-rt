@@ -66,13 +66,11 @@ sourceImpl(def, C) ::= <<
  * Importing QueryJ-Core classes.
  */
 import org.acmsl.queryj.QueryJCommand;
-import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.<def.type.capitalized>TemplateContext;
 import org.acmsl.queryj.api.<def.type.capitalized>TemplateFactory;
 import org.acmsl.queryj.api.QueryJCommandUtils;
 import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.metadata.DecoratedString;
-import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.engines.EngineDecorator;
 import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.vo.ForeignKey;
