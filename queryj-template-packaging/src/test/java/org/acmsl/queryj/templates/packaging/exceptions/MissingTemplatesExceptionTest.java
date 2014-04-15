@@ -72,7 +72,7 @@ public class MissingTemplatesExceptionTest
     }
 
     /**
-     * Tests the "default-template-chain-provider" exception is defined for Spanish and English.
+     * Tests the "per-foreign-key-templates-test" exception is defined for Spanish and English.
      */
     @Test
     public void per_foreign_key_templates_test_message_is_defined_in_Spanish_and_English()
