@@ -80,7 +80,6 @@ import org.acmsl.queryj.metadata.vo.ForeignKey;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.QueryJSettings;
-import org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandler;
 
 /*
  * Importing QueryJ Test classes.
