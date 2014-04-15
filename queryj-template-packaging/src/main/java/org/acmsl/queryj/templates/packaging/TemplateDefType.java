@@ -128,8 +128,7 @@ public enum TemplateDefType
     }
 
     /**
-     *
-     * @return
+     * {@inheritDoc}
      */
     @NotNull
     @Override
