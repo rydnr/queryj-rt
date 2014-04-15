@@ -41,10 +41,10 @@
  * EITHER MODIFY org/acmsl/queryj/templates/packaging/TemplateBuildHandler.stg
  * OR CREATE AND APPLY A PATCH.
  */
-package org.acmsl.queryj.templates.handlers;
+package org.acmsl.queryj.templates.packaging.handlers;
 
 /*
- * Importing QueryJ-Core classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.api.handlers.BasePerForeignKeyTemplateBuildHandler;
 import org.acmsl.queryj.QueryJCommand;
@@ -59,8 +59,8 @@ import org.acmsl.queryj.tools.PackageUtils;
  * Importing custom templates.
  */
 import org.acmsl.queryj.api.PerForeignKeyTemplateContext;
-import org.acmsl.queryj.templates.PerForeignKeyTemplatesTestTemplate;
-import org.acmsl.queryj.templates.PerForeignKeyTemplatesTestTemplateFactory;
+import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplate;
+import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplateFactory;
 
 /*
  * Importing StringTemplate classes.
