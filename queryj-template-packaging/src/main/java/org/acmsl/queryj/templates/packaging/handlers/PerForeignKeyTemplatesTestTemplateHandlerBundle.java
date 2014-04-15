@@ -46,12 +46,6 @@ package org.acmsl.queryj.templates.packaging.handlers;
 import org.acmsl.queryj.api.handlers.TemplateHandlerBundle;
 
 /*
- * Importing some JetBrains annotations.
- */
-import org.acmsl.queryj.templates.packaging.handlers.PerForeignKeyTemplatesTestTemplateBuildHandler;
-import org.jetbrains.annotations.NotNull;
-
-/*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
