@@ -492,7 +492,7 @@ public class PerForeignKeyTemplatesTest
     @NotNull
     protected String resolvePackage(
         @NotNull final String packageTemplate,
-        @NotNull final String tableName,
+        @NotNull final String foreignK,
         @NotNull final Engine\<String> engine)
     {
         @NotNull final String result;
