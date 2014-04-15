@@ -345,9 +345,6 @@ public class PerForeignKeyTemplatesTest
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
                 QueryJSettings.VERSION, "<C.version>");
 
-            @NotNull final List\<ForeignKey\<String\>> foreignKeys =
-                new ArrayList\<>(foreignKeyMap.values());
-
             for (@NotNull final ForeignKey\<String\>> foreignKey: foreignKeys)
             {
                 @NotNull final MetadataManager metadataManager =
