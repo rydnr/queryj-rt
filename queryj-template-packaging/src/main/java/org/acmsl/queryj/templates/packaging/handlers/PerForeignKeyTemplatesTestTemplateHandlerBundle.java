@@ -60,7 +60,7 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
- * Handler bundle for {@link org.acmsl.queryj.templates.PerForeignKeyTemplatesTestTemplate}s.
+ * Handler bundle for {@link org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplate}s.
  * @author <a href="http://www.acm-sl.org/projects/queryj">QueryJ's Template Packaging 3.0-SNAPSHOT</a>
  * Generation template: org/acmsl/queryj/templates/packaging/TemplateHandlerBundle.stg
 
