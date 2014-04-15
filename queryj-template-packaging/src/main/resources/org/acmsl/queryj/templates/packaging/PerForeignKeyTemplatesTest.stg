@@ -94,7 +94,7 @@ import org.acmsl.queryj.test.TableTestHelper;
 /*
  * Importing project classes.
  */
-<C.templateDefs:{ d | <def_import(d=d)>}; separator="\n">
+<C.templateDefs:{ d | <if(d.perForeignKey<def_import(d=d)>}; separator="\n">
 
 /*
  * Importing Apache Commons Logging classes.
