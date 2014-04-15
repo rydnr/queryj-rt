@@ -141,6 +141,10 @@ public enum TemplateDefType
             + "\" }";
     }
 
+    /**
+     * Checks whether is
+     * @return
+     */
     public boolean isPerTable()
     {
         return "per-table".equals(getType());
