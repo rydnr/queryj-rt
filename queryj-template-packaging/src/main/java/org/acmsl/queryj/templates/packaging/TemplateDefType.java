@@ -127,6 +127,10 @@ public enum TemplateDefType
         return new DecoratedString(getType()).getCapitalized().getValue();
     }
 
+    /**
+     *
+     * @return
+     */
     @NotNull
     @Override
     public String toString()
