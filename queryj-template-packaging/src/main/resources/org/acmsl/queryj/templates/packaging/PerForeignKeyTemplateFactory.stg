@@ -35,7 +35,7 @@
 //
 // Description: Defines the rules to generate QueryJ's TemplateFactories.
 //
-group TemplateFactory;
+group PerForeignKeyTemplateFactory;
 
 import "common.stg"
 
