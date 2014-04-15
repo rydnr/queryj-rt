@@ -68,6 +68,7 @@ public class MissingTemplatesExceptionTest
     @Test
     public void exception_message_is_defined_in_Spanish_and_English()
     {
+        for (@NotNull final String message : Arrays.asList("default-template-chain-provider", ))
         @NotNull final MissingTemplatesException instance = new MissingTemplatesException();
 
         for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
