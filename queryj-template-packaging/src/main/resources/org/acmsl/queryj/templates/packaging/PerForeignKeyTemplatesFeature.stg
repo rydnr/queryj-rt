@@ -143,4 +143,4 @@ indirect_template(def, engineName, tableName) ::= <<
 
 cucumber_attribute_declaration(attribute) ::= <<
 <! Declares the attribute metadata in Cucumber format !>
-| <attribute.table.name> | <attribute.name> | <attribute.type> | true | <attribute.| false    |               |         |         |     10 |         0 |
+| <attribute.table.name> | <attribute.name> | <attribute.type> | true | <attribute.nullable> | <attribute.read|               |         |         |     10 |         0 |
