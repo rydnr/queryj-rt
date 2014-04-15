@@ -140,4 +140,9 @@ public enum TemplateDefType
             + ", \"package\": \"" + TemplateDefType.class.getPackage().getName()
             + "\" }";
     }
+
+    public boolean isPerTable()
+    {
+        return perTable;
+    }
 }
