@@ -58,6 +58,12 @@ import java.util.List;
 @ThreadSafe
 public class ForeignKeyTestHelper
 {
+    /**
+     * Defines the input columns, based on the Cucumber table given.
+     * @param columnInfo the Cucumber table.
+     * @param foreignKeys the foreign keys.
+     * @return
+     */
     public List<ForeignKey<String>> defineInputColumns(final DataTable columnInfo, final List<ForeignKey<String>> foreignKeys)
 
     {
