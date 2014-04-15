@@ -50,7 +50,7 @@ sourceImpl(fk, C) ::= <<
 <!
   Generates PerForeignKeyTemplates.feature files.
 !>
-Feature: <fk.G_CYCLE_TYPES foreign keys code compiles
+Feature: <fk.sourceTableName>G_CYCLE_TYPES foreign keys code compiles
 
   Scenario Outline: Templates bound to G_CYCLE_TYPES' foreign keys compile
 
