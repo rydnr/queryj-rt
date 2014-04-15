@@ -39,6 +39,7 @@ import org.acmsl.queryj.AbstractQueryJChain;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.templates.packaging.handlers.DefaultTemplateChainProviderTemplateHandlerBundle;
+import org.acmsl.queryj.templates.packaging.handlers.PerForeignKeyTemplatesTestTemplateHandlerBundle;
 import org.acmsl.queryj.templates.packaging.handlers.PerTableTemplatesFeatureTemplateHandlerBundle;
 import org.acmsl.queryj.templates.packaging.handlers.PerTableTemplatesTestTemplateHandlerBundle;
 import org.acmsl.queryj.tools.QueryJChain;
@@ -125,7 +126,7 @@ public class TemplatePackagingChain<CH extends QueryJCommandHandler<QueryJComman
 
 //        chain.add((CH) new PerTableTemplatesFeatureTemplateHandlerBundle());
 
-        chain.add((CH) new PerForeignKeyTemplatesTestTemplate());
+        chain.add((CH) new PerForeignKeyTemplatesTestTemplateHandlerBundle());
 
         chain.add((CH) new DefaultTemplateChainProviderTemplateHandlerBundle());
 
