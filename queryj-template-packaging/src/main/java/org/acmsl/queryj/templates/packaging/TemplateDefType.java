@@ -135,6 +135,11 @@ public enum TemplateDefType
         return PER_REPOSITORY.getType().equals(getType());
     }
 
+    public boolean isPerSql()
+    {
+        return PER_SQL.getType().equals(getType());
+    }
+
     /**
      * Retrieves a capitalized version.
      * @return the type, capitalized.
