@@ -107,9 +107,6 @@ public enum TemplateDefType
     }
 
     /**
-     * Checks whe
-     */
-    /**
      * Retrieves the template def type for given value.
      * @param type the value.
      * @return the enum.
