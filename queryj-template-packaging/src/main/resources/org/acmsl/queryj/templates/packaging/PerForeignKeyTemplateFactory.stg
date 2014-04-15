@@ -158,7 +158,8 @@ public class <C.class_name>
     T createTemplate(
         @NotNull final String packageName,
         @NotNull final ForeignKey<String> foreignKey,
-        @NotNull final QueryJCommand command);    public <def.name.noExtension>Template createTemplate(
+        @NotNull final QueryJCommand command);
+public <def.name.noExtension>Template createTemplate(
         @NotNull final QueryJCommand command,
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final String packageName,
