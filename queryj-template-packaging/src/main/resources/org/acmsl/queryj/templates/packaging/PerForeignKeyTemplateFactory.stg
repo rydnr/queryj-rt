@@ -147,14 +147,6 @@ public class <C.class_name>
      */
     @Override
     @NotNull
-    /**
-     * Creates a per-<i>foreign key</i> template.
-     * @param packageName the package name.
-     * @param foreignKey the foreign key.
-     * @param command the {@link QueryJCommand} instance.
-     * @return the new template.
-     */
-    @NotNull
     public <def.name.noExtension>Template createTemplate(
         @NotNull final String packageName,
         @NotNull final ForeignKey<String> foreignKey,
