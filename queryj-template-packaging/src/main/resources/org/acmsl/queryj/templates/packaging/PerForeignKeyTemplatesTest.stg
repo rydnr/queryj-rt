@@ -223,7 +223,8 @@ public class PerForeignKeyTemplatesTest
      * Defines the input foreign keys based on the information provided by the
      * feature.
      * @param tableInfo the information about the foreign keys.
-     * @param
+     * @param foreignKeys the foreign keys.
+     * @param helper the {@link ForeignKeyTestHelper}
      */
     protected void defineInputForeignKeys(
         @NotNull final DataTable tableInfo,
