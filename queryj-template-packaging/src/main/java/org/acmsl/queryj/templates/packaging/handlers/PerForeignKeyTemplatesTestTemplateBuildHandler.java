@@ -54,13 +54,13 @@ import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.metadata.DecoratedString;
 import org.acmsl.queryj.metadata.engines.Engine;
 import org.acmsl.queryj.metadata.engines.EngineDecorator;
+import org.acmsl.queryj.tools.PackageUtils;
 
 /*
-* Importing QueryJ Pro
+ * Importing QueryJ Template Packaging classes.
  */
 import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplateFactory;
-import org.acmsl.queryj.tools.PackageUtils;
 
 /*
  * Importing StringTemplate classes.
