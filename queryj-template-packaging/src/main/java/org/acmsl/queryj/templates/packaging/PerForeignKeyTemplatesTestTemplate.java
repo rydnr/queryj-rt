@@ -37,9 +37,6 @@
  * Generated originally by QueryJ Template Packaging's 3.0-SNAPSHOT
  * org/acmsl/queryj/templates/packaging/Template.stg
  *
- * DO NOT MODIFY THIS CLASS MANUALLY, SINCE IT GETS GENERATED AUTOMATICALLY.
- * EITHER MODIFY org/acmsl/queryj/templates/packaging/Template.stg
- * OR CREATE AND APPLY A PATCH.
  */
 package org.acmsl.queryj.templates.packaging;
 
