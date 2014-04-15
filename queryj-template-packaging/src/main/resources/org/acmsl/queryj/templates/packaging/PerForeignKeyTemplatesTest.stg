@@ -36,7 +36,7 @@
 // Description: Defines the rules to generate PerForeignKeyTemplatesTest
 //              implementations.
 //
-group PerTableTemplatesTest;
+group PerForeignKeyTemplatesTest;
 
 import "common.stg"
 
@@ -52,7 +52,7 @@ source(C) ::= <<
   [
     description()
   ],
-  template="org/acmsl/queryj/templates/PerTableTemplatesTest.stg",
+  template="org/acmsl/queryj/templates/PerForeignKeyTemplatesTest.stg",
   C=C)><endif>
 
 <package_declaration(packageName="cucumber.templates")>
