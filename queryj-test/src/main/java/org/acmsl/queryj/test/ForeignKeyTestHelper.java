@@ -58,6 +58,10 @@ import java.util.List;
 @ThreadSafe
 public class ForeignKeyTestHelper
 {
+    public List<ForeignKey<String>> defineInputColumns(final DataTable columnInfo, final List<ForeignKey<String>> foreignKeys)
+    {
+    }
+
     /**
      * Singleton implementation to avoid double-locking check.
      */
