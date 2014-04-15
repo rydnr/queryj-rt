@@ -55,12 +55,14 @@ import org.acmsl.queryj.QueryJCommandWrapper;
 /*
  * Importing QueryJ Template Packaging classes.
  */
+import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
 import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplate;
-import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplateGenerator;
 
 /*
  * Importing some JetBrains annotations.
  */
+import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplate;
+import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplateGenerator;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -84,10 +86,10 @@ import java.util.List;
  */
 @ThreadSafe
 public class PerForeignKeyTemplatesTestTemplateWritingHandler
-    extends BasePerForeignKeyTemplateWritingHandler<
-                PerForeignKeyTemplatesTestTemplate,
-                PerForeignKeyTemplateContext,
-                PerForeignKeyTemplatesTestTemplateGenerator>
+    extends TemplatePackagingTestWritingHandler
+                <PerForeignKeyTemplatesTestTemplate,
+                    GlobalTemplateContext,
+                    TemplatePackagingTemplateGenerator<PerForeignKeyTemplatesTestTemplate, GlobalTemplateContext>>
 {
     /**
      * Creates a new writing handler for {@link PerForeignKeyTemplatesTestTemplate templates}.
