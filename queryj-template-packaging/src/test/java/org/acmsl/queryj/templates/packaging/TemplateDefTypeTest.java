@@ -79,7 +79,7 @@ public class TemplateDefTypeTest
     }
 
     /**
-     * Tests isPerSqr() for all types.
+     * Tests isPerSql() for all types.
      */
     @Test
     public void isPerSql_is_correct_for_all_types()
