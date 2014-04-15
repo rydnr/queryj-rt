@@ -135,6 +135,10 @@ public enum TemplateDefType
         return PER_REPOSITORY.getType().equals(getType());
     }
 
+    public boolean isPerForeignKey()
+    {
+        return PER_FOREIGN_KEY.getType().equals(getType());
+    }
     /**
      * Checks whether this type identifies per-sql template defs.
      * @return {@code true} in such case.
