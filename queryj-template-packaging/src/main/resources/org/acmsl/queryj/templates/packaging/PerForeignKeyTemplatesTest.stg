@@ -215,7 +215,7 @@ public class PerForeignKeyTemplatesTest
      */
     protected void defineInputForeignKeys(
         @NotNull final DataTable tableInfo,
-        @NotNull final List\<String, ForeignKey\<String> foreignKeys,
+        @NotNull final List\<ForeignKey\<String\>> foreignKeys,
         @NotNull final ForeignKeyTestHelper helper)
     {
         helper.defineInputForeignKeys(tableInfo, foreignKeys);
