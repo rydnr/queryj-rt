@@ -99,12 +99,48 @@ public class MissingTemplatesExceptionTest
     }
 
     /**
-     * Tests the "per" exception is defined for Spanish and English.
+     * Tests the "template-build-handler" exception is defined for Spanish and English.
      */
     @Test
     public void template_build_handler_message_is_defined_in_Spanish_and_English()
     {
-        checkExceptionMessageIsDefinedInSpanishAndEnglish("per-table-templates-test");
+        checkExceptionMessageIsDefinedInSpanishAndEnglish("template-build-handler");
+    }
+
+    /**
+     * Tests the "template-factory" exception is defined for Spanish and English.
+     */
+    @Test
+    public void template_factory_message_is_defined_in_Spanish_and_English()
+    {
+        checkExceptionMessageIsDefinedInSpanishAndEnglish("template-factory");
+    }
+
+    /**
+     * Tests the "template-generator" exception is defined for Spanish and English.
+     */
+    @Test
+    public void template_generator_message_is_defined_in_Spanish_and_English()
+    {
+        checkExceptionMessageIsDefinedInSpanishAndEnglish("template-generator");
+    }
+
+    /**
+     * Tests the "template-handler-bundle" exception is defined for Spanish and English.
+     */
+    @Test
+    public void template_handler_bundle_message_is_defined_in_Spanish_and_English()
+    {
+        checkExceptionMessageIsDefinedInSpanishAndEnglish("template-handler-bundle");
+    }
+
+    /**
+     * Tests the "template" exception is defined for Spanish and English.
+     */
+    @Test
+    public void template_message_is_defined_in_Spanish_and_English()
+    {
+        checkExceptionMessageIsDefinedInSpanishAndEnglish("template-handler-bundle");
     }
 
     /**
