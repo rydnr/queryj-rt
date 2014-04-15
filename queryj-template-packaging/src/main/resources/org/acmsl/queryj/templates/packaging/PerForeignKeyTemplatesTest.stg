@@ -363,7 +363,7 @@ public class PerForeignKeyTemplatesTest
 
             for (@NotNull final ForeignKey\<String\>> foreignKey: foreignKeys)
             {
-                @Nullable List\<Row\<String\>> tableRows = rows.get(table.getName());
+                @Nullable List\<ForeignKey\<String\>> tableRows = rows.get(table.getName());
 
                 if (tableRows == null)
                 {
