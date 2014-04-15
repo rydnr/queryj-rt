@@ -361,7 +361,7 @@ public class PerForeignKeyTemplatesTest
             @NotNull final List\<ForeignKey\<String\>> foreignKeys =
                 new ArrayList\<>(foreignKeyMap.values());
 
-            for (@NotNull final Table\<String, Attribute\<String>, List\<Attribute\<String>\>> table : tables)
+            for (@NotNull final ForeignKey\<String\>> foreignKey: foreignKeys)
             {
                 @Nullable List\<Row\<String\>> tableRows = rows.get(table.getName());
 
