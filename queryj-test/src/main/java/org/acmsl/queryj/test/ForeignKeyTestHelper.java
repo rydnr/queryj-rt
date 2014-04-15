@@ -57,7 +57,7 @@ public class ForeignKeyTestHelper
     /**
      * Singleton implementation to avoid double-locking check.
      */
-    protected static final class TableTestHelperSingletonContainer
+    protected static final class ForeignKeyTestHelperSingletonContainer
     {
         /**
          * The actual singleton.
