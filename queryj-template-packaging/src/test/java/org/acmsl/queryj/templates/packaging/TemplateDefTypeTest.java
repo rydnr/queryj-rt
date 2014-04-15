@@ -111,7 +111,7 @@ public class TemplateDefTypeTest
     public void isPerCustomResult_is_correct_for_all_types()
     {
         Assert.assertFalse(TemplateDefType.PER_TABLE.isPerForeignKey());
-        Assert.assertFalse(TemplateDefType.PER_REPOSITORY.isPerForeignKey());
+        Assert.assertFalse(TemplateDefType.PER_REPOSITORY.isPerCustomResult());
         Assert.assertFalse(TemplateDefType.PER_SQL.isPerCustomResult());
         Assert.assertFalse(TemplateDefType.PER_FOREIGN_KEY.isPerCustomResult());
         Assert.assertTrue(TemplateDefType.PER_CUSTOM_RESULT.isPerCustomResult());
