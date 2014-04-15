@@ -145,7 +145,7 @@ public enum TemplateDefType
     }
 
     /**
-     * Checks whether this type identifies per-sql template defs.
+     * Checks whether this type identifies per-foreign key template defs.
      * @return {@code true} in such case.
      */
     public boolean isPerForeignKey()
