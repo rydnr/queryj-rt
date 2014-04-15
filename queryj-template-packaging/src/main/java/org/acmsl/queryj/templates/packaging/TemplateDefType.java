@@ -140,13 +140,4 @@ public enum TemplateDefType
             + ", \"package\": \"" + TemplateDefType.class.getPackage().getName()
             + "\" }";
     }
-
-    /**
-     * Checks whether this type identifies per-table template defs.
-     * @return {@code true} in such case.
-     */
-    public boolean isPerTable()
-    {
-        return "per-table".equals(getType());
-    }
 }
