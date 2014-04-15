@@ -41,7 +41,7 @@ import "common.stg"
 
 source(C) ::= <<
 <!
- Generates a TemplateFactory source file.
+ Generates a PerForeignKeyTemplateFactory source file.
  @param C the context.
  !>
 <sourceImpl(def=C.templateDef, C=C)>
