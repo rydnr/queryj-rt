@@ -449,7 +449,7 @@ public class PerForeignKeyTemplatesTest
                 }
 
                 outputFiles.put(
-                    table.getName(),
+                    foreignKey.getName(),
                     new File(outputDir, template.getTemplateContext().getFileName()));
             }
         }
