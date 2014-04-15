@@ -46,6 +46,7 @@ package org.acmsl.queryj.templates.packaging.handlers;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.queryj.api.PerForeignKeyTemplateContext;
 import org.acmsl.queryj.api.handlers.BasePerForeignKeyTemplateBuildHandler;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
@@ -53,14 +54,9 @@ import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.metadata.DecoratedString;
 import org.acmsl.queryj.metadata.engines.Engine;
 import org.acmsl.queryj.metadata.engines.EngineDecorator;
-import org.acmsl.queryj.tools.PackageUtils;
-
-/*
- * Importing custom templates.
- */
-import org.acmsl.queryj.api.PerForeignKeyTemplateContext;
 import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplateFactory;
+import org.acmsl.queryj.tools.PackageUtils;
 
 /*
  * Importing StringTemplate classes.
@@ -91,9 +87,9 @@ import java.util.List;
 @ThreadSafe
 public class PerForeignKeyTemplatesTestTemplateBuildHandler
     extends BasePerForeignKeyTemplateBuildHandler<
-                PerForeignKeyTemplatesTestTemplate,
-                PerForeignKeyTemplateContext,
-                PerForeignKeyTemplatesTestTemplateFactory>
+    PerForeignKeyTemplatesTestTemplate,
+    PerForeignKeyTemplateContext,
+    PerForeignKeyTemplatesTestTemplateFactory>
 {
     /**
      * The key to access the templates in the command.
