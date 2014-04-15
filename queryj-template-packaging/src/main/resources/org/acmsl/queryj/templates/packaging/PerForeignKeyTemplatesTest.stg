@@ -94,7 +94,7 @@ import org.acmsl.queryj.test.ForeignKeyTestHelper;
 /*
  * Importing project classes.
  */
-<C.templateDefs:{ d | <if(d.perForeignKey)><def_import(d=d)><endif>}; separator="\n">
+<C.templateDefs:{ d | <if(d.type.perForeignKey)><def_import(d=d)><endif>}; separator="\n">
 
 /*
  * Importing Apache Commons Logging classes.
