@@ -155,7 +155,7 @@ public class PerForeignKeyTemplatesTestTemplateBuildHandler
     @Override
     protected String retrieveTemplateName(@NotNull final QueryJCommand parameters)
     {
-        return org.acmsl.queryj.templates.packaging.Literals.PER_TABLE_TEMPLATES_TEST;
+        return Literals.PER_FOREIGN_TEMPLATES_TEST;
     }
 
     /**
