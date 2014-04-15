@@ -90,7 +90,7 @@ import java.util.List;
  */
 @ThreadSafe
 public class PerForeignKeyTemplatesTestTemplateBuildHandler
-    extends BasePerForeignKeyTemplateBuildHandler<
+    extends TemplatePackagingTestBuildHandler<
     PerForeignKeyTemplatesTestTemplate,
     PerForeignKeyTemplateContext,
     PerForeignKeyTemplatesTestTemplateFactory>
