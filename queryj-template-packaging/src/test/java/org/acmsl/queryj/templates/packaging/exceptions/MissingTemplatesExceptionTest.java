@@ -77,4 +77,20 @@ public class MissingTemplatesExceptionTest
             instance.getMessage(t_Locale);
         }
     }
+
+    /**
+     * Tests the message key is defined for Spanish and English.
+     */
+    protected void checkExceptionMessageIsDefinedInSpanishAndEnglish(@NotNull final String template)
+    {
+        for (@NotNull final String message : Arrays.asList("default-template-chain-provider", "per-foreign-key-templates-test"))
+            @NotNull final MissingTemplatesException instance = new MissingTemplatesException();
+
+        for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
+        {
+            // throws a MissingResourceException if the key is not declared.
+            instance.getMessage(t_Locale);
+        }
+    }
+
 }
