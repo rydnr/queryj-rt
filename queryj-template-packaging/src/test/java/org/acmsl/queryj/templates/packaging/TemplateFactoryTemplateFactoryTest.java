@@ -92,7 +92,7 @@ public class TemplateFactoryTemplateFactoryTest
     @Test
     public void createTemplate_returns_the_correct_template_for_a_per_table_template()
     {
-        testCreateTemplate(TemplateDefType.PER_TABLE, "TemplateFactory");
+        testCreateTemplate(TemplateDefType.PER_TABLE, Literals.TEMPLATE_FACTORY"TemplateFactory");
     }
 
     /**
