@@ -97,10 +97,10 @@ public class TemplateDefTypeTest
     @Test
     public void isPerForeignKey_is_correct_for_all_types()
     {
-        Assert.assertFalse(TemplateDefType.PER_TABLE.isPerSql());
-        Assert.assertFalse(TemplateDefType.PER_REPOSITORY.isPerSql());
-        Assert.assertFalse(TemplateDefType.PER_SQL.isPerSql());
-        Assert.assertTrue(TemplateDefType.PER_FOREIGN_KEY.isPerSql());
+        Assert.assertFalse(TemplateDefType.PER_TABLE.isPerForeignKey());
+        Assert.assertFalse(TemplateDefType.PER_REPOSITORY.isPerForeignKey());
+        Assert.assertFalse(TemplateDefType.PER_SQL.isPerForeignKey());
+        Assert.assertTrue(TemplateDefType.PER_FOREIGN_KEY.isPerForeignKey());
         Assert.assertTrue(TemplateDefType.PER_CUSTOM_RESULT.isPerForeignKey());
     }
 }
