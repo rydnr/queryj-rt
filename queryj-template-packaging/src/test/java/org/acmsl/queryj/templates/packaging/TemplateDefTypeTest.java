@@ -36,11 +36,6 @@
 package org.acmsl.queryj.templates.packaging;
 
 /*
- * Importing JetBrains annotations.
- */
-import org.jetbrains.annotations.NotNull;
-
-/*
  * Importing JUnit classes.
  */
 import org.junit.Assert;
