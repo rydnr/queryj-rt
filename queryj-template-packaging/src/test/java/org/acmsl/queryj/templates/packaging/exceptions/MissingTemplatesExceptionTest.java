@@ -68,7 +68,7 @@ public class MissingTemplatesExceptionTest
     @Test
     public void template_chain_provider_message_is_defined_in_Spanish_and_English()
     {
-        checkExceptionMessageIsDefinedInSpanishAndEnglish();
+        checkExceptionMessageIsDefinedInSpanishAndEnglish("default-template-chain-provider");
         for (@NotNull final String message : Arrays.asList("default-template-chain-provider", "per-foreign-key-templates-test"))
         @NotNull final MissingTemplatesException instance = new MissingTemplatesException();
 
