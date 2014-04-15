@@ -382,8 +382,7 @@ public class PerForeignKeyTemplatesTest
                         t_Command,
                         decoratorFactory,
                         packageName,
-                        foreignKey.getName(),
-                        tableRows);
+                        foreignKey);
 
                 Assert.assertNotNull("No template found for " + templateName, template);
 
