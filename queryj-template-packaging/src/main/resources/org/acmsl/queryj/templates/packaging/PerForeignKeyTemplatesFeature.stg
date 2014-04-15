@@ -60,8 +60,7 @@ Feature: <fk.sourceTableName> foreign keys code compiles
 
     And the table containing the foreign key has the following columns:
     |     table    |         column        | type      | pk    | allows null | readonly |   sequence    | keyword | boolean | length | precision |
-    <fk.sourceTable.attributes:{ a |<cucumber_attribute_declaration(attr
-    | <fk.sourceTable.name> | g_draw_id             | number    | true  | false       | false    | seq_g_draws   |         |         |     10 |         0 |
+    <fk.sourceTable.attributes:{ a |<cucumber_attribute_declaration(attribute=a)>}; separator="\n">
     | g_draws      | g_draw_type_id        | number    | false | false       | false    |               |         |         |     10 |         0 |
     | g_draws      | drawing_date          | date      | false | false       | false    |               |         |         |        |           |
     | g_draws      | g_draw_state_id       | number    | false | false       | false    |               |         |         |     10 |         0 |
