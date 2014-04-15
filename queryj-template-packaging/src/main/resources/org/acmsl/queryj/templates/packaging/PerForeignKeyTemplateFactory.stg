@@ -163,10 +163,8 @@ public class <C.class_name>
         @NotNull final String packageName,
         @NotNull final ForeignKey\<String> foreignKey,
         @NotNull final QueryJCommand command
-        @NotNull final QueryJCommandUtils )
+        @NotNull final QueryJCommandUtils queryJCommandUtils)
     {
-        @NotNull final QueryJCommandUtils t_QueryJCommandUtils = QueryJCommandUtils.getInstance();
-
         @NotNull final <def.type.capitalized>TemplateContext t_Context =
             new <def.type.capitalized>TemplateContext(
                 retrieveTemplateFileName(foreignKey.getSourceTableName(), t_QueryJCommandUtils.retrieveMetadataManager(command)),
