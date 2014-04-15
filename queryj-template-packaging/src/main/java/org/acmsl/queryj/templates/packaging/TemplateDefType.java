@@ -170,6 +170,6 @@ public enum TemplateDefType
 
     public boolean isPerForeignKey()
     {
-        return PER_FOREIGN_KEY.equals(getType());
+        return PER_FOREIGN_KEY.getType().equals(getType());
     }
 }
