@@ -60,10 +60,25 @@ import org.jetbrains.annotations.NotNull;
 @ThreadSafe
 public enum TemplateDefType
 {
+    /**
+     * Per table.
+     */
     PER_TABLE("per-table"),
+    /**
+     * Per repository.
+     */
     PER_REPOSITORY("per-repository"),
+    /**
+     * Per custom result.
+     */
     PER_CUSTOM_RESULT("per-custom-result"),
+    /**
+     * Per foreign key.
+     */
     PER_FOREIGN_KEY("per-foreign-key"),
+    /**
+     * Per custom SQL.
+     */
     PER_SQL("per-sql");
 
     /**
