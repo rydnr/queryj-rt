@@ -89,20 +89,6 @@ public class PerForeignKeyTemplatesTestTemplate
     }
 
     /**
-     * Retrieves the StringTemplate group for "PerForeignKeyTemplatesTest.stg".
-     * @return such {@link STGroup group}.
-     */
-    @Nullable
-    @Override
-    public STGroup retrieveGroup()
-    {
-        return
-            retrieveGroup(
-                "org/acmsl/queryj/templates/PerForeignKeyTemplatesTest.stg",
-                Arrays.asList(org.acmsl.queryj.Literals.ORG_ACMSL_QUERYJ_TEMPLATES));
-    }
-
-    /**
      * Retrieves the template name.
      * @return "";
      */
