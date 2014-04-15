@@ -54,4 +54,26 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public class ForeignKeyTestHelper
 {
+    /**
+     * Singleton implementation to avoid double-locking check.
+     */
+    protected static final class TableTestHelperSingletonContainer
+    {
+        /**
+         * The actual singleton.
+         */
+        public static final TableTestHelper SINGLETON = new TableTestHelper();
+    }
+
+    /**
+     * Retrieves the singleton instance.
+     *
+     * @return such instance.
+     */
+    @NotNull
+    public static TableTestHelper getInstance()
+    {
+        return TableTestHelperSingletonContainer.SINGLETON;
+    }
+
 }
