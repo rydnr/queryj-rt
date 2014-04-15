@@ -142,8 +142,8 @@ public enum TemplateDefType
     }
 
     /**
-     * Checks whether is per-table
-     * @return
+     * Checks whether this type identifies per-table template defs.
+     * @return {@code true} in such case.
      */
     public boolean isPerTable()
     {
