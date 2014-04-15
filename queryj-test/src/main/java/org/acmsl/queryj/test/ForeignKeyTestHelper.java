@@ -59,18 +59,6 @@ import java.util.List;
 public class ForeignKeyTestHelper
 {
     /**
-     * Defines the input columns, based on the Cucumber table given.
-     * @param columnInfo the Cucumber table.
-     * @param foreignKeys the foreign keys.
-     * @return the foreign keys.
-     */
-    public List<ForeignKey<String>> defineInputColumns(final DataTable columnInfo, final List<ForeignKey<String>> foreignKeys)
-
-    {
-        return null;  //To change body of created methods use File | Settings | File Templates.
-    }
-
-    /**
      * Singleton implementation to avoid double-locking check.
      */
     protected static final class ForeignKeyTestHelperSingletonContainer
@@ -100,6 +88,18 @@ public class ForeignKeyTestHelper
         @NotNull final DataTable tableInfo, @NotNull final List<ForeignKey<String>> foreignKeys)
     {
         // TODO
+    }
+
+    /**
+     * Defines the input columns, based on the Cucumber table given.
+     * @param columnInfo the Cucumber table.
+     * @param foreignKeys the foreign keys.
+     * @return the foreign keys.
+     */
+    public List<ForeignKey<String>> defineInputColumns(final DataTable columnInfo, final List<ForeignKey<String>> foreignKeys)
+
+    {
+        return null;  //To change body of created methods use File | Settings | File Templates.
     }
 
 }
