@@ -345,12 +345,6 @@ public class PerForeignKeyTemplatesTest
 
             for (@NotNull final ForeignKey\<String> foreignKey: foreignKeys)
             {
-                @NotNull final MetadataManager metadataManager =
-                    retrieveMetadataManager(engine, foreignKey, decoratorFactory);
-
-                new QueryJCommandWrapper\<MetadataManager>(t_Command).setSetting(
-                    DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, metadataManager);
-
                 @Nullable final PerForeignKeyTemplateFactory\<? extends PerForeignKeyTemplate\<PerForeignKeyTemplateContext>, PerForeignKeyTemplateContext> templateFactory =
                     retrieveTemplateFactory(templateName);
 
