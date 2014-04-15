@@ -158,9 +158,8 @@ public class <C.class_name>
     /**
      * {@inheritDoc}
      */
-    @Override
     @NotNull
-    public <def.name.noExtension>Template createTemplate(
+    protected <def.name.noExtension>Template createTemplate(
         @NotNull final String packageName,
         @NotNull final ForeignKey\<String> foreignKey,
         @NotNull final QueryJCommand command)
