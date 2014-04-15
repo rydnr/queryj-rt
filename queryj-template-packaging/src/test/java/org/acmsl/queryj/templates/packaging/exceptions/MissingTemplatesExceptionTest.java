@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for MissingTemplatesException.
  *
  * Date: 2014/04/15
  * Time: 18:21
@@ -68,7 +68,7 @@ public class MissingTemplatesExceptionTest
     @Test
     public void exception_message_is_defined_in_Spanish_and_English()
     {
-        @NotNull final OutputDirNotAvailableException instance = new OutputDirNotAvailableException();
+        @NotNull final MissingTemplatesException instance = new MissingTemplatesException();
 
         for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
         {
