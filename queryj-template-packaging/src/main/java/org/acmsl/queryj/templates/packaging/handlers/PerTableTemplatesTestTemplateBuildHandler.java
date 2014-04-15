@@ -108,7 +108,6 @@ public class PerTableTemplatesTestTemplateBuildHandler
 
     /**
      * Builds the context from given parameters.
-     *
      * @param templateDefs the template defs.
      * @param parameters   the command with the parameters.
      * @return the template context.
