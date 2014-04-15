@@ -81,7 +81,7 @@ public class MissingTemplatesExceptionTest
     /**
      * Tests the message key is defined for Spanish and English.
      */
-    protected void checkExceptionMessageIsDefinedInSpanishAndEnglish(@NotNull final String template)
+    protected void checkExceptionMessageIsDefinedInSpanishAndEnglish(@NotNull final String templateName)
     {
         for (@NotNull final String message : Arrays.asList("default-template-chain-provider", "per-foreign-key-templates-test"))
             @NotNull final MissingTemplatesException instance = new MissingTemplatesException();
