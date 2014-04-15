@@ -55,7 +55,7 @@ sourceImpl(def, C) ::= <<
   @param C the context.
 !>
 <java_header(
-  description=[ "Factory for ", def.name.capitalized, "Templates, for " ],
+  description=[ "Factory for ", def.name.capitalized, "Templates, for each foreign key" ],
   description_oneline=true,
   filename=C.class_name,
   template="org/acmsl/queryj/templates/packaging/TemplateFactory.stg",
