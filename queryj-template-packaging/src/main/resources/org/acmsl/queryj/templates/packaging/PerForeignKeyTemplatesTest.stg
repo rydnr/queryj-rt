@@ -364,7 +364,6 @@ public class PerForeignKeyTemplatesTest
                 @Nullable final PerForeignKeyTemplate\<PerForeignKeyTemplateContext> template =
                     templateFactory.createTemplate(
                         t_Command,
-                        decoratorFactory,
                         packageName,
                         foreignKey);
 
