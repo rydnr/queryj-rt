@@ -144,6 +144,11 @@ public enum TemplateDefType
         return PER_SQL.getType().equals(getType());
     }
 
+    public boolean isPerForeignKey()
+    {
+        return PER_FOREIGN_KEY.getType().equals(getType());
+    }
+
     /**
      * Retrieves a capitalized version.
      * @return the type, capitalized.
