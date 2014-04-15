@@ -134,7 +134,8 @@ public enum TemplateDefType
     @Override
     public String toString()
     {
-        return "{ \"class\": \"" + TemplateDefType.class.getSimpleName() + '"'
+        return
+            "{ \"class\": \"" + TemplateDefType.class.getSimpleName() + '"'
         ', 'type': '" + this.m__strType + "' }";
     }
 }
