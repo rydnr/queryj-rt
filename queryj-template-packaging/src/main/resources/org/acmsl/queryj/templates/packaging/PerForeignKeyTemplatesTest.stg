@@ -89,7 +89,7 @@ import org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandler;
  * Importing QueryJ Test classes.
  */
 import org.acmsl.queryj.test.AbstractTemplatesTest;
-import org.acmsl.queryj.test.TableTestHelper;
+import org.acmsl.queryj.test.ForeignKeyTestHelper;
 
 /*
  * Importing project classes.
