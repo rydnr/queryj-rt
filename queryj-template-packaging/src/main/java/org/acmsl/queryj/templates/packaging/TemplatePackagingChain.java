@@ -33,14 +33,13 @@
 package org.acmsl.queryj.templates.packaging;
 
 /*
- * Importing some QueryJ-Core classes.
+ * Importing some QueryJ Core classes.
  */
 import org.acmsl.queryj.AbstractQueryJChain;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.templates.packaging.handlers.DefaultTemplateChainProviderTemplateHandlerBundle;
 import org.acmsl.queryj.templates.packaging.handlers.PerForeignKeyTemplatesTestTemplateHandlerBundle;
-import org.acmsl.queryj.templates.packaging.handlers.PerTableTemplatesFeatureTemplateHandlerBundle;
 import org.acmsl.queryj.templates.packaging.handlers.PerTableTemplatesTestTemplateHandlerBundle;
 import org.acmsl.queryj.tools.QueryJChain;
 import org.acmsl.queryj.tools.handlers.Log4JInitializerHandler;
