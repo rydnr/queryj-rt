@@ -66,7 +66,7 @@ public class TemplateDefTypeTest
     }
 
     /**
-     * Tests isPerTable() for all types.
+     * Tests isPerRepository() for all types.
      */
     @Test
     public void isPerTable_is_correct_for_all_types()
