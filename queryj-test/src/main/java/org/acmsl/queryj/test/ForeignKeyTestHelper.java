@@ -62,7 +62,7 @@ public class ForeignKeyTestHelper
         /**
          * The actual singleton.
          */
-        public static final TableTestHelper SINGLETON = new TableTestHelper();
+        public static final ForeignKeyTestHelper SINGLETON = new ForeignKeyTestHelper();
     }
 
     /**
