@@ -118,11 +118,11 @@ public class PerForeignKeyTemplatesTestTemplateWritingHandler
     @Override
     protected List<PerForeignKeyTemplatesTestTemplate> retrieveTemplates(@NotNull final QueryJCommand parameters)
     {
-        @NotNull final List<PerTableTemplatesTestTemplate> result;
+        @NotNull final List<PerForeignKeyTemplatesTestTemplate> result;
 
-        @Nullable final List<PerTableTemplatesTestTemplate> aux =
-            new QueryJCommandWrapper<PerTableTemplatesTestTemplate>(parameters)
-                .getListSetting(PerTableTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
+        @Nullable final List<PerForeignKeyTemplatesTestTemplate> aux =
+            new QueryJCommandWrapper<PerForeignKeyTemplatesTestTemplate>(parameters)
+                .getListSetting(PerForeignKeyTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
 
         if (aux == null)
         {
