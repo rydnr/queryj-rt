@@ -44,6 +44,11 @@ source(C) ::= <<
 <!
   Generates PerForeignKeyTemplates.feature files.
 !>
+Feature: G_CYCLE_TYPES foreign keys code compiles
+
+  Scenario Outline: Templates bound to G_CYCLE_TYPES' foreign keys compile
+
+    Given the table containing the foreign key is:
 Feature: Per-foreign key templates
 
   Scenario Outline: Per-foreign key templates compile
