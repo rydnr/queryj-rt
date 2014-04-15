@@ -79,7 +79,7 @@ public class TemplateDefTypeTest
     }
 
     /**
-     * Tests isPerRepository() for all types.
+     * Tests isPerSqr() for all types.
      */
     @Test
     public void isPerRepository_is_correct_for_all_types()
