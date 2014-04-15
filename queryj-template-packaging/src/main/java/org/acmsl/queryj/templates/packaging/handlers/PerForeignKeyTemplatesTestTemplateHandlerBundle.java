@@ -41,7 +41,11 @@
  * EITHER MODIFY org/acmsl/queryj/templates/packaging/TemplateHandlerBundle.stg
  * OR CREATE AND APPLY A PATCH.
  */
-package org.acmsl.queryj.templates.handlers;
+package org.acmsl.queryj.templates.packaging.
+
+import org.checkthread.annotations.ThreadSafe;
+
+handlers;
 
 /*
  * Importing QueryJ-API classes.
@@ -51,6 +55,7 @@ import org.acmsl.queryj.api.handlers.TemplateHandlerBundle;
 /*
  * Importing some JetBrains annotations.
  */
+import org.acmsl.queryj.templates.packaging.handlers.PerForeignKeyTemplatesTestTemplateBuildHandler;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -66,7 +71,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class PerForeignKeyTemplatesTestTemplateHandlerBundle
-    extends TemplateHandlerBundle<PerForeignKeyTemplatesTestTemplateBuildHandler, PerForeignKeyTemplatesTestTemplateWritingHandler>
+    extends TemplateHandlerBundle<PerForeignKeyTemplatesTestTemplateBuildHandler, org.acmsl.queryj.templates.handlers.PerForeignKeyTemplatesTestTemplateWritingHandler>
 {
     /**
      * Builds a bundle consisting of
@@ -77,6 +82,6 @@ public class PerForeignKeyTemplatesTestTemplateHandlerBundle
     {
         super(
             new PerForeignKeyTemplatesTestTemplateBuildHandler(),
-            new PerForeignKeyTemplatesTestTemplateWritingHandler());
+            new org.acmsl.queryj.templates.handlers.PerForeignKeyTemplatesTestTemplateWritingHandler());
     }
 }

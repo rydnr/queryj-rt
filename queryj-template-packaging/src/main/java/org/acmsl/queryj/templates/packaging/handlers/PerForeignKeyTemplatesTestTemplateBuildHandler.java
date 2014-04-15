@@ -83,7 +83,7 @@ import org.checkthread.annotations.ThreadSafe;
 import java.util.List;
 
 /**
- * Build handler for {@link org.acmsl.queryj.templates.PerForeignKeyTemplatesTestTemplate}s.
+ * Build handler for {@link PerForeignKeyTemplatesTestTemplate}s.
  * @author <a href="http://www.acm-sl.org/projects/queryj">QueryJ's Template Packaging 3.0-SNAPSHOT</a>
  * Generation template: org/acmsl/queryj/templates/packaging/TemplateBuildHandler.stg
 
