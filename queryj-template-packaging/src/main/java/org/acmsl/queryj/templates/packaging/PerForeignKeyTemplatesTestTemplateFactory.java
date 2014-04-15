@@ -44,19 +44,6 @@
 package org.acmsl.queryj.templates.packaging;
 
 /*
- * Importing QueryJ Core classes.
- */
-import org.acmsl.queryj.QueryJCommand;
-import org.acmsl.queryj.api.PerForeignKeyTemplateContext;
-import org.acmsl.queryj.api.PerForeignKeyTemplateFactory;
-import org.acmsl.queryj.api.QueryJCommandUtils;
-import org.acmsl.queryj.Literals;
-import org.acmsl.queryj.metadata.DecoratedString;
-import org.acmsl.queryj.metadata.engines.EngineDecorator;
-import org.acmsl.queryj.metadata.MetadataManager;
-import org.acmsl.queryj.metadata.vo.ForeignKey;
-
-/*
  * Importing some ACM-SL Java Commons classes.
  */
 import org.acmsl.commons.patterns.Singleton;
@@ -118,8 +105,8 @@ public class PerForeignKeyTemplatesTestTemplateFactory
      */
     @Nullable
     @Override
-    public PerTableTemplatesTestTemplate createTemplate(@NotNull final GlobalTemplateContext context)
+    public PerForeignKeyTemplatesTestTemplate createTemplate(@NotNull final GlobalTemplateContext context)
     {
-        return new PerTableTemplatesTestTemplate(context);
+        return new PerForeignKeyTemplatesTestTemplate(context);
     }
 }
