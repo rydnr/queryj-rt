@@ -52,7 +52,7 @@ sourceImpl(fk, C) ::= <<
 !>
 Feature: <fk.sourceTableName> foreign keys code compiles
 
-  Scenario Outline: Templates bound to G_CYCLE_TYPES' foreign keys compile
+  Scenario Outline: Templates bound to <fk.sourceTableName' foreign keys compile
 
     Given the table containing the foreign key is:
 Feature: Per-foreign key templates
