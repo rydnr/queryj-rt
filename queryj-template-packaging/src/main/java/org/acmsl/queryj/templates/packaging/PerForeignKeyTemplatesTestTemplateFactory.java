@@ -64,6 +64,7 @@ import org.acmsl.commons.patterns.Singleton;
 /*
  * Importing StringTemplate classes.
  */
+import org.jetbrains.annotations.Nullable;
 import org.stringtemplate.v4.ST;
 
 /*
@@ -108,66 +109,17 @@ public class PerForeignKeyTemplatesTestTemplateFactory
         return PerForeignKeyTemplatesTestTemplateFactorySingletonContainer.SINGLETON;
     }
 
+
     /**
-     * {@inheritDoc}
+     * Generates a template.
+     *
+     * @param context the context.
+     * @return such template.
      */
+    @Nullable
     @Override
-    @NotNull
-    public PerForeignKeyTemplatesTestTemplate createTemplate(
-        @NotNull final String packageName,
-        @NotNull final ForeignKey<String> foreignKey,
-        @NotNull final QueryJCommand command)
+    public PerTableTemplatesTestTemplate createTemplate(@NotNull final GlobalTemplateContext context)
     {
-        return createTemplate(packageName, foreignKey, command, QueryJCommandUtils.getInstance());
-    }
-
-    /**
-     * Creates a per-foreign key template.
-     * @param packageName the package name.
-     * @param foreignKey the foreign key.
-     * @param command the {@link QueryJCommand} instance.
-     * @param queryJCommandUtils the {@link QueryJCommandUtils} instance.
-     * @return the new template.
-     */
-    @NotNull
-    protected PerForeignKeyTemplatesTestTemplate createTemplate(
-        @NotNull final String packageName,
-        @NotNull final ForeignKey<String> foreignKey,
-        @NotNull final QueryJCommand command,
-        @NotNull final QueryJCommandUtils queryJCommandUtils)
-    {
-        @NotNull final PerForeignKeyTemplateContext t_Context =
-            new PerForeignKeyTemplateContext(
-                retrieveTemplateFileName(
-                    foreignKey.getSourceTableName(),
-                    queryJCommandUtils.retrieveMetadataManager(command)),
-                packageName,
-                foreignKey,
-                command);
-
-        return new PerForeignKeyTemplatesTestTemplate(t_Context);
-    }
-
-    /**
-     * Retrieves the file name of the template.
-     * @param tableName the table name.
-     * @param metadataManager the {@link MetadataManager} instance.
-     * @return the file name.
-     */
-    @NotNull
-    public String retrieveTemplateFileName(
-        @NotNull final String tableName, @NotNull final MetadataManager metadataManager)
-    {
-        @NotNull final String result;
-
-        @NotNull final ST template =
-            new ST("PerForeignKeyTemplatesTest.java");
-
-        template.add(Literals.TABLE_NAME, new DecoratedString(tableName));
-        template.add(Literals.ENGINE, new EngineDecorator(metadataManager.getEngine()));
-
-        result = template.render();
-
-        return result;
+        return new PerTableTemplatesTestTemplate(context);
     }
 }
