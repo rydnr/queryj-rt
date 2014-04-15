@@ -64,7 +64,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class PerForeignKeyTemplatesTestTemplateHandlerBundle
-    extends TemplateHandlerBundle<PerForeignKeyTemplatesTestTemplateBuildHandler, org.acmsl.queryj.templates.handlers.PerForeignKeyTemplatesTestTemplateWritingHandler>
+    extends TemplateHandlerBundle<PerForeignKeyTemplatesTestTemplateBuildHandler, PerForeignKeyTemplatesTestTemplateWritingHandler>
 {
     /**
      * Builds a bundle consisting of
@@ -75,6 +75,6 @@ public class PerForeignKeyTemplatesTestTemplateHandlerBundle
     {
         super(
             new PerForeignKeyTemplatesTestTemplateBuildHandler(),
-            new org.acmsl.queryj.templates.handlers.PerForeignKeyTemplatesTestTemplateWritingHandler());
+            new PerForeignKeyTemplatesTestTemplateWritingHandler());
     }
 }
