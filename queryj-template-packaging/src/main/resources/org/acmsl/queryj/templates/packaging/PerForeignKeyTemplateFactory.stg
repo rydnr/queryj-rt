@@ -58,7 +58,7 @@ sourceImpl(def, C) ::= <<
   description=[ "Factory for ", def.name.capitalized, "Templates, for each foreign key" ],
   description_oneline=true,
   filename=C.class_name,
-  template="org/acmsl/queryj/templates/packaging/TemplateFactory.stg",
+  template="org/acmsl/queryj/templates/packaging/PerForeignKeyTemplateFactory.stg",
   C=C)>
 <package_declaration(packageName="org.acmsl.queryj.templates")>
 
