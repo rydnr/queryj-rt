@@ -239,7 +239,7 @@ public class PerForeignKeyTemplatesTest
      * @param columnInfo the column information.
      */
     @SuppressWarnings("unused")
-    @Given("^the table containing the foreign key has the following columns:the following columns:$")
+    @Given("^the table containing the foreign key has the following columns:$")
     public void defineInputColumns(@NotNull final DataTable columnInfo)
     {
         defineInputColumns(columnInfo, getTables(), TableTestHelper.getInstance());
