@@ -1,0 +1,17 @@
+/*
+ * PerForeignKeyTemplatesTest template metadata.
+ */
+// The template name (the filename).
+name : PerForeignKeyTemplatesTest.stg;
+
+// The type of template: per-table, per-repository, per-foreign-key, per-custom-result, per-sql.
+type : per-foreign-key;
+
+// The output flavor.
+output: Java;
+
+// The filename builder.
+filename  builder : PerForeignKeyTemplatesTest.java;
+
+// The package.
+package: cucumber.templates;
