@@ -150,4 +150,4 @@ indirect_template(def, engineName, tableName) ::= <<
 
 cucumber_attribute_declaration(attribute) ::= <<
 <! Declares the attribute metadata in Cucumber format !>
-| <attribute.table.name> | <attribute.name> | <attribute.type> | <attribute.| false       | false    |               |         |         |     10 |         0 |
+| <attribute.table.name> | <attribute.name> | <attribute.type> | <attribute.is| false       | false    |               |         |         |     10 |         0 |
