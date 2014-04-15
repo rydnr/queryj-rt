@@ -148,5 +148,6 @@ indirect_template(def, engineName, tableName) ::= <<
 | <def.name; format="%-30s"> | <(def.filenameRule)(engineName, tableName)> |
 >>
 
-cucumber_attribute_declaration(attribute) ::=
+cucumber_attribute_declaration(attribute) ::= <<
+
     | g_draws      | g_draw_type_id        | number    | false | false       | false    |               |         |         |     10 |         0 |
