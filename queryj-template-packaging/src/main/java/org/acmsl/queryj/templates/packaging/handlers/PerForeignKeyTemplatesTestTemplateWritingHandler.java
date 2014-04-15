@@ -63,6 +63,7 @@ import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplate;
  */
 import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplateGenerator;
+import org.acmsl.queryj.templates.packaging.exceptions.MissingTemplatesException;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -97,13 +98,17 @@ public class PerForeignKeyTemplatesTestTemplateWritingHandler
     public PerForeignKeyTemplatesTestTemplateWritingHandler() {}
 
     /**
-     * {@inheritDoc}
+     * Retrieves the template generator.
+     * @param caching whether to enable template caching.
+     * @param threadCount the number of threads to use.
+     * @return such instance.
      */
     @NotNull
     @Override
-    protected PerForeignKeyTemplatesTestTemplateGenerator retrieveTemplateGenerator(final boolean caching, final int threadCount)
+    protected TemplatePackagingTemplateGenerator<PerForeignKeyTemplatesTestTemplate, GlobalTemplateContext> retrieveTemplateGenerator(
+        final boolean caching, final int threadCount)
     {
-        return new PerForeignKeyTemplatesTestTemplateGenerator(caching, threadCount);
+        return new TemplatePackagingTemplateGenerator<>(caching, threadCount);
     }
 
     /**
@@ -113,59 +118,20 @@ public class PerForeignKeyTemplatesTestTemplateWritingHandler
     @Override
     protected List<PerForeignKeyTemplatesTestTemplate> retrieveTemplates(@NotNull final QueryJCommand parameters)
     {
-        @NotNull final List<PerForeignKeyTemplatesTestTemplate> result;
+        @NotNull final List<PerTableTemplatesTestTemplate> result;
 
-        @Nullable final List<PerForeignKeyTemplatesTestTemplate> aux =
-            new QueryJCommandWrapper<List<PerForeignKeyTemplatesTestTemplate>>(parameters)
-                .getSetting(PerForeignKeyTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
+        @Nullable final List<PerTableTemplatesTestTemplate> aux =
+            new QueryJCommandWrapper<PerTableTemplatesTestTemplate>(parameters)
+                .getListSetting(PerTableTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
 
         if (aux == null)
         {
-            result = new ArrayList<>(0);
+            throw new MissingTemplatesException("per-table-templates-test");
         }
         else
         {
             result = aux;
         }
-
-        return result;
-    }
-
-    /**
-     * Retrieves the output dir from the attribute map.
-     * @param engine the engine.
-     * @param projectOutputDir the project output dir.
-     * @param projectPackage the project package.
-     * @param tableName the source table name.
-     * @param subFolders whether to use sub folders or not.
-     * @return such folder.
-     */
-    @NotNull
-    @Override
-    protected File retrieveOutputDir(
-        @NotNull final Engine<String> engine,
-        @NotNull final File projectOutputDir,
-        final String projectPackage,
-        @NotNull final String tableName,
-        final boolean subFolders)
-    {
-        @NotNull final File result;
-
-        @NotNull final String packageName =
-            PerForeignKeyTemplatesTestTemplateBuildHandler.buildPackageName(
-                tableName, engine, projectPackage);
-
-        @NotNull final String[] pieces = packageName.split("\\.");
-
-        @NotNull final StringBuilder aux = new StringBuilder();
-
-        for (@NotNull final String piece : pieces)
-        {
-            aux.append(File.separator);
-            aux.append(piece);
-        }
-
-        result = new File(projectOutputDir.getAbsolutePath() + aux.toString());
 
         return result;
     }
