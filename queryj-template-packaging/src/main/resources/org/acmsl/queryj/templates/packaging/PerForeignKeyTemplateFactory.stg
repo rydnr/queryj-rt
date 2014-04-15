@@ -109,6 +109,8 @@ class(def, C) ::= <<
 /**
  * Factory for {@link <def.name.noExtension>Template}s.
 <class_common_javadoc(
+  description=[ "Factory for ", def.name.capitalized, "Templates, for each foreign key" ],
+  description_oneline=true,
   template="org/acmsl/queryj/templates/packaging/PerForeignKeyTemplateFactory.stg",
   timestamp=C.timestamp,
   version=C.version)>
