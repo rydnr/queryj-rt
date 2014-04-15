@@ -56,7 +56,7 @@ Feature: <fk.sourceTableName> foreign keys code compiles
 
     Given the table containing the foreign key is:
     |    table     | parent table | decorated | relationship |   static    |
-    | <fk.sourceTable> | <fk.sourceTable.parent>          |              |             |
+    | <fk.sourceTable.name> | <fk.sourceTable.parent> | <fk.sourceTable.decorated> | fk|
     | g_draw_types |              |           |              | description |
 
     And the following columns:
