@@ -167,9 +167,4 @@ public enum TemplateDefType
             + ", \"package\": \"" + TemplateDefType.class.getPackage().getName()
             + "\" }";
     }
-
-    public boolean isPerForeignKey()
-    {
-        return PER_FOREIGN_KEY.getType().equals(getType());
-    }
 }
