@@ -141,6 +141,6 @@ indirect_template(def, engineName, tableName) ::= <<
 | <def.name; format="%-30s"> | <(def.filenameRule)(engineName, tableName)> |
 >>
 
-cucumber_attribute_declaration(attribute) ::= <<
+cucumber_attribute_declaration(attribute, pk) ::= <<
 <! Declares the attribute metadata in Cucumber format !>
 | <attribute.table.name> | <attribute.name> | <attribute.type> | true | false       | false    |               |         |         |     10 |         0 |
