@@ -23,7 +23,7 @@
 
  ******************************************************************************
  *
- * Filename: QueryJChain.java
+ * Filename: TemplatePackagingChain.java
  *
  * Author: Jose San Leandro Armendariz
  *
