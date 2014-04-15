@@ -153,6 +153,11 @@ public enum TemplateDefType
         return PER_FOREIGN_KEY.getType().equals(getType());
     }
 
+
+    public boolean isPerCustomResult()
+    {
+        return PER_CUSTOM_RESULT.getType().equals(getType());
+    }
     /**
      * Retrieves a capitalized version.
      * @return the type, capitalized.
