@@ -150,6 +150,10 @@ public enum TemplateDefType
             + "\" }";
     }
 
+    /**
+     *
+     * @return
+     */
     public boolean isPerRepository()
     {
         return PER_REPOSITORY.getType().equals(getType());
