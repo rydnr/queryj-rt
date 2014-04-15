@@ -261,139 +261,11 @@ public class PerForeignKeyTemplatesTest
     }
 
     /**
-     * Defines the foreign keys via cucumber features.
-     * @param fkInfo such information.
-     */
-    @SuppressWarnings("unused")
-    @Given("^the following foreign keys:$")
-    public void defineForeignKeys(@NotNull final DataTable fkInfo)
-    {
-        defineForeignKeys(fkInfo, getTables(), getForeignKeys(), TableTestHelper.getInstance());
-    }
-
-    /**
-     * Defines the foreign keys via cucumber features.
-     * @param fkInfo such information.
-     * @param tables the table map.
-     * @param foreignKeys the foreignKeys,
-     * @param helper the {@link TableTestHelper} instance.
-     */
-    protected void defineForeignKeys(
-        @NotNull final DataTable fkInfo,
-        @NotNull final Map\<String, Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables,
-        @NotNull final List\<ForeignKey\<String\>> foreignKeys,
-        @NotNull final TableTestHelper helper)
-    {
-        helper.defineForeignKeys(fkInfo, tables, foreignKeys);
-    }
-
-    /**
-     * Defines table values via cucumber features.
-     * @param values such information.
-     */
-    @SuppressWarnings("unused")
-    @And("^the following values:$")
-    public void defineValues(@NotNull final DataTable values)
-    {
-        defineValues(values, getTables(), TableTestHelper.getInstance());
-    }
-
-    /**
-     * Defines table values via cucumber features.
-     * @param values such information.
-     * @param tables the tables.
-     * @param helper the {@link TableTestHelper} instance.
-     */
-    protected void defineValues(
-        @NotNull final DataTable values,
-        @NotNull final Map\<String, Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables,
-        @NotNull final TableTestHelper helper)
-    {
-        helper.defineValues(values, tables);
-    }
-
-    /**
-     * Defines SQL sentences via cucumber features.
-     * @param values such information.
-     */
-    @SuppressWarnings("unused")
-    @And("^the following queries:$")
-    public void defineSql(@NotNull final DataTable values)
-    {
-        setSqlList(defineSql(values, TableTestHelper.getInstance()));
-    }
-
-    /**
-     * Retrieves the list of {@link Sql} from a Cucumber table.
-     * @param values the Cucumber table.
-     * @param helper the {@link TableTestHelper} instance.
-     * @return the list of SQL items.
-     */
-    @NotNull
-    protected List\<Sql\<String\>> defineSql(@NotNull final DataTable values, @NotNull final TableTestHelper helper)
-    {
-        return helper.defineSql(values);
-    }
-
-    /**
-     * Defines SQL sentences via cucumber features.
-     * @param values such information.
-     */
-    @SuppressWarnings("unused")
-    @And("^the following query parameters:$")
-    public void defineParameters(@NotNull final DataTable values)
-    {
-        setParameters(defineParameters(values, getSqlList(), TableTestHelper.getInstance()));
-    }
-
-    /**
-     * Defines SQL parameters via cucumber features.
-     * @param values the SQL parameters in Cucumber table format.
-     * @param sqlList the list of {@link Sql queries}.
-     * @param helper the {@link TableTestHelper} instance.
-     */
-    @NotNull
-    protected Map\<String, List\<Parameter\<String, ?>\>> defineParameters(
-        @NotNull final DataTable values,
-        @NotNull final List\<Sql\<String>\> sqlList,
-        @NotNull final TableTestHelper helper)
-    {
-        return helper.defineParameters(values, sqlList);
-    }
-
-    /**
-     * Defines constant rows via cucumber features.
-     * @param values such information.
-     */
-    @SuppressWarnings("unused")
-    @And("^the following contents:$")
-    public void defineRows(@NotNull final DataTable values)
-    {
-        setRows(defineRows(values, getTables(), TableTestHelper.getInstance()));
-    }
-
-    /**
-     * Retrieves the list of {@link Row}s from a Cucumber table.
-     * @param values the Cucumber table.
-     * @param tables the tables.
-     * @param helper the {@link TableTestHelper} instance.
-     * @return the list of rows.
-     */
-    @NotNull
-    protected Map\<String, List\<Row\<String>\>> defineRows(
-        @NotNull final DataTable values,
-        @NotNull final Map\<String, Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables,
-        @NotNull final TableTestHelper helper)
-    {
-        return helper.defineRows(values, tables);
-    }
-
-    /**
      * Checks the generated file compiles.
      * @param outputName the name of the output file.
      */
     @SuppressWarnings("unused")
-    @Then("^the generated per-table (.*) file compiles successfully")
+    @Then("^the generated per-foreign key (.*) file compiles successfully")
     public void checkGeneratedFileCompiles(@NotNull final String outputName)
     {
         checkGeneratedFilesCompile(outputName, getOutputFiles());
@@ -407,7 +279,7 @@ public class PerForeignKeyTemplatesTest
     @NotNull
     @Override
     protected DecoratorFactory retrieveDecoratorFactory(
-        @NotNull final PerTableTemplateGenerator\<? extends PerTableTemplate\<PerTableTemplateContext>, PerTableTemplateContext> generator)
+        @NotNull final PerForeignKeyTemplateGenerator\<? extends PerForeignKeyTemplate\<PerForeignKeyTemplateContext>, PerTableTemplateContext> generator)
     {
         return generator.getDecoratorFactory();
     }
