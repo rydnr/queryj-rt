@@ -1,4 +1,5 @@
 * 2014/04/14:
+** #474: Support per-fk templates: 3 -> 3
 ** GOAL : Deliver QueryJ 3.0 ASAP
 *** Find out which templates are affected by the order of columns: 
 **** DONE ValueObject.stg
