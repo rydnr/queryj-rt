@@ -250,7 +250,7 @@ public class PerForeignKeyTemplatesTest
      * @param columnInfo the column information.
      * @param foreignKeys the foreign keys.
      */
-    protected List\<ForeignKey\<String> defineInputColumns(
+    protected List\<ForeignKey\<String\>> defineInputColumns(
         @NotNull final DataTable columnInfo,
         @NotNull final Map\<String, Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables,
         @NotNull final TableTestHelper helper)
