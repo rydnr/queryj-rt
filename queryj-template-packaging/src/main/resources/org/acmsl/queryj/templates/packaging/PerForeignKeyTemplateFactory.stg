@@ -50,7 +50,7 @@ source(C) ::= <<
 
 sourceImpl(def, C) ::= <<
 <!
-  Generates a TemplateFactory source file.
+  Generates a PerTemplateFactory source file.
   @param def the template def.
   @param C the context.
 !>
