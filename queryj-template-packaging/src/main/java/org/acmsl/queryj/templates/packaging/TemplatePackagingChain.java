@@ -125,7 +125,7 @@ public class TemplatePackagingChain<CH extends QueryJCommandHandler<QueryJComman
 
 //        chain.add((CH) new PerTableTemplatesFeatureTemplateHandlerBundle());
 
-        chain.add((CH) new PerTableTemplatesFeatureTemplateHandlerBundle());
+        chain.add((CH) new PerForeignKeyTemplatesTestTemplate());
 
         chain.add((CH) new DefaultTemplateChainProviderTemplateHandlerBundle());
 
