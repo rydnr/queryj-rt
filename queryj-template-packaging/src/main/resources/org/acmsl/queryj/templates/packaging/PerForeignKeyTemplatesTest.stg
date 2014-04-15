@@ -359,7 +359,7 @@ public class PerForeignKeyTemplatesTest
                     templateFactory.createTemplate(
                         packageName,
                         foreignKey,
-                        t_Command,
+                        t_Command);
 
                 Assert.assertNotNull("No template found for " + templateName, template);
 
