@@ -41,23 +41,24 @@
  * EITHER MODIFY org/acmsl/queryj/templates/packaging/PerForeignKeyTemplateWritingHandler.stg
  * OR CREATE AND APPLY A PATCH.
  */
-package org.acmsl.queryj.templates.handlers;
+package org.acmsl.queryj.templates.packaging.handlers;
 
 /*
- * Importing QueryJ-Core classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.api.PerForeignKeyTemplateContext;
 import org.acmsl.queryj.api.handlers.BasePerForeignKeyTemplateWritingHandler;
 import org.acmsl.queryj.metadata.engines.Engine;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
+import org.acmsl.queryj.templates.packaging.handlers.PerForeignKeyTemplatesTestTemplateBuildHandler;
 import org.acmsl.queryj.tools.PackageUtils;
 
 /*
  * Importing custom templates.
  */
-import org.acmsl.queryj.templates.PerForeignKeyTemplatesTestTemplate;
-import org.acmsl.queryj.templates.PerForeignKeyTemplatesTestTemplateGenerator;
+import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplate;
+import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplateGenerator;
 
 /*
  * Importing some JetBrains annotations.
