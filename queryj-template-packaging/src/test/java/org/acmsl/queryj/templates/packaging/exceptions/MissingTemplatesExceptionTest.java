@@ -90,12 +90,21 @@ public class MissingTemplatesExceptionTest
     }
 
     /**
-     * Tests the "per-table-templates-feature" exception is defined for Spanish and English.
+     * Tests the "per-table-templates-test" exception is defined for Spanish and English.
      */
     @Test
-    public void per_table_templates_feature_message_is_defined_in_Spanish_and_English()
+    public void per_table_templates_test_message_is_defined_in_Spanish_and_English()
     {
-        checkExceptionMessageIsDefinedInSpanishAndEnglish("per-table-templates-feature");
+        checkExceptionMessageIsDefinedInSpanishAndEnglish("per-table-templates-test");
+    }
+
+    /**
+     * Tests the "per-table-templates-test" exception is defined for Spanish and English.
+     */
+    @Test
+    public void per_table_templates_test_message_is_defined_in_Spanish_and_English()
+    {
+        checkExceptionMessageIsDefinedInSpanishAndEnglish("per-table-templates-test");
     }
 
     /**
