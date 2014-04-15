@@ -36,12 +36,6 @@
 package org.acmsl.queryj.templates.packaging.exceptions;
 
 /*
- * Importing QueryJ Core classes.
- */
-import org.acmsl.commons.NonCheckedException;
-import org.acmsl.queryj.api.exceptions.QueryJNonCheckedException;
-
-/*
  * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
