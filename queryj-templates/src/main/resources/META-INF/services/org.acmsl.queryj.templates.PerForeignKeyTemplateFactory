@@ -1,2 +1,2 @@
 org.acmsl.queryj.templates.dao.FkStatementSetterTemplateFactory
-org.acmsl.queryj.templates.PerForeignKeyTest
+org.acmsl.queryj.templates.PerForeignKeyTemplateTest
