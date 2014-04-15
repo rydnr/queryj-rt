@@ -1,5 +1,5 @@
 /*
-                        QueryJ Core
+                        QueryJ
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -34,13 +34,15 @@
 package org.acmsl.queryj.api.handlers;
 
 /*
- * Importing QueryJ Core classes.
+ * Importing some project classes.
  */
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.PerForeignKeyTemplate;
 import org.acmsl.queryj.api.PerForeignKeyTemplateContext;
 import org.acmsl.queryj.api.PerForeignKeyTemplateFactory;
+import org.acmsl.queryj.metadata.CachingDecoratorFactory;
+import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.metadata.MetadataManager;
@@ -81,31 +83,36 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
     public static final String FOREIGN_KEYS = "..FOreignKeY:::";
 
     /**
-     * Creates a {@code BasePerForeignKeyTemplateBuildHandler} instance.
+     * Creates a <code>BasePerForeignKeyTemplateBuildHandler</code> instance.
      */
     public BasePerForeignKeyTemplateBuildHandler() {}
 
     /**
      * Handles given information.
+     *
+     *
      * @param parameters the parameters.
-     * @return {@code true} if the chain should be stopped.
+     * @return <code>true</code> if the chain should be stopped.
      */
     @Override
     public boolean handle(@NotNull final QueryJCommand parameters)
         throws  QueryJBuildException
     {
-        final boolean result;
+        boolean result = true;
 
-        @NotNull final MetadataManager t_MetadataManager =
+        @Nullable final MetadataManager t_MetadataManager =
             retrieveMetadataManager(parameters);
 
-        buildTemplates(
-            parameters,
-            t_MetadataManager,
-            retrieveCustomSqlProvider(parameters),
-            retrieveTemplateFactory());
+        if (t_MetadataManager != null)
+        {
+            buildTemplates(
+                parameters,
+                t_MetadataManager,
+                retrieveCustomSqlProvider(parameters),
+                retrieveTemplateFactory());
 
-        result = false;
+            result = false;
+        }
 
         return result;
     }
@@ -127,11 +134,21 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
         buildTemplates(
             parameters,
             metadataManager,
+            customSqlProvider,
             templateFactory,
             retrieveProjectPackage(parameters),
-            retrieveForeignKeys(parameters, metadataManager));
+            retrieveTableRepositoryName(parameters),
+            retrieveHeader(parameters),
+            retrieveImplementMarkerInterfaces(parameters),
+            retrieveJmx(parameters),
+            retrieveJNDILocation(parameters),
+            retrieveDisableGenerationTimestamps(parameters),
+            retrieveDisableNotNullAnnotations(parameters),
+            retrieveDisableCheckthreadAnnotations(parameters),
+            retrieveForeignKeys(parameters, metadataManager),
+            CachingDecoratorFactory.getInstance());
     }
-
+    
     /**
      * Retrieves the template factory.
      * @return such instance.
@@ -143,16 +160,36 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
      * Builds the templates.
      * @param parameters the parameters.
      * @param metadataManager the database metadata manager.
+     * @param customSqlProvider the custom sql provider.
      * @param templateFactory the template factory.
      * @param projectPackage the project package.
+     * @param repository the repository.
+     * @param header the header.
+     * @param implementMarkerInterfaces whether to implement marker interfaces.
+     * @param jmx whether to include JMX support.
+     * @param jndiLocation the JNDI location.
+     * @param disableGenerationTimestamps whether to disable generation timestamps.
+     * @param disableNotNullAnnotations whether to disable NotNull annotations.
+     * @param disableCheckthreadAnnotations whether to disable checkthread.org annotations or not.
      * @param foreignKeys the foreign keys.
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
      */
     protected void buildTemplates(
         @NotNull final QueryJCommand parameters,
         @NotNull final MetadataManager metadataManager,
+        @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final TF templateFactory,
         @NotNull final String projectPackage,
-        @NotNull final List<ForeignKey<String>> foreignKeys)
+        @NotNull final String repository,
+        @Nullable final String header,
+        final boolean implementMarkerInterfaces,
+        final boolean jmx,
+        @NotNull final String jndiLocation,
+        final boolean disableGenerationTimestamps,
+        final boolean disableNotNullAnnotations,
+        final boolean disableCheckthreadAnnotations,
+        @NotNull final List<ForeignKey<String>> foreignKeys,
+        @NotNull final DecoratorFactory decoratorFactory)
       throws  QueryJBuildException
     {
         @NotNull final List<T> t_lTemplates = new ArrayList<>();
@@ -164,12 +201,23 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
             {
                 t_lTemplates.add(
                     templateFactory.createTemplate(
+                        metadataManager,
+                        customSqlProvider,
+                        decoratorFactory,
                         retrievePackage(
                             t_ForeignKey.getSourceTableName(),
                             metadataManager.getEngine(),
                             parameters),
-                        t_ForeignKey,
-                        parameters));
+                        projectPackage,
+                        repository,
+                        header,
+                        implementMarkerInterfaces,
+                        jmx,
+                        jndiLocation,
+                        disableGenerationTimestamps,
+                        disableNotNullAnnotations,
+                        disableCheckthreadAnnotations,
+                        t_ForeignKey));
             }
         }
 
@@ -192,7 +240,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
         return
             retrievePackage(
                 tableName,
-                engine,
+                engine.getName(),
                 retrieveProjectPackage(parameters),
                 PackageUtils.getInstance());
     }
@@ -208,7 +256,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
     @NotNull
     protected abstract String retrievePackage(
         @NotNull final String tableName,
-        @NotNull final Engine<String> engineName,
+        @NotNull final String engineName,
         @NotNull final String projectPackage,
         @NotNull final PackageUtils packageUtils);
 

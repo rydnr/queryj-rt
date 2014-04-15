@@ -1,5 +1,5 @@
 /*
-                        QueryJ Template Packaging
+                        queryj
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -89,17 +89,6 @@ public class TemplateFactoryTemplateFactory
     public TemplateFactoryTemplate<DefaultTemplatePackagingContext> createTemplate(
         @NotNull final DefaultTemplatePackagingContext context)
     {
-        @NotNull final TemplateFactoryTemplate<DefaultTemplatePackagingContext> result;
-
-        switch (TemplateDefType.getEnumFromString(context.getTemplateDef().getType().getType()))
-        {
-            case PER_FOREIGN_KEY:
-                result = new PerForeignKeyTemplateFactoryTemplate<>(context);
-                break;
-            default:
-                result = new TemplateFactoryTemplate<>(context);
-        }
-
-        return result;
+        return new TemplateFactoryTemplate<>(context);
     }
 }
