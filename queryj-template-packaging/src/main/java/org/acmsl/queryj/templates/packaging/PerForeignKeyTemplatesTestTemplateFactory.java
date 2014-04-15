@@ -84,8 +84,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class PerForeignKeyTemplatesTestTemplateFactory
-    implements PerForeignKeyTemplateFactory<
-    PerForeignKeyTemplatesTestTemplate, PerForeignKeyTemplateContext>,
+    implements TemplatePackagingTemplateFactory<PerForeignKeyTemplatesTestTemplate, GlobalTemplateContext>,
                Singleton
 {
     /**
