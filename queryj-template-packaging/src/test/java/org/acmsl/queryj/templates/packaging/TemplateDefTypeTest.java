@@ -58,7 +58,7 @@ import org.junit.runners.JUnit4;
 public class TemplateDefTypeTest
 {
     /**
-     * Tests isPerTable() for PER_TABLE type.
+     * Tests isPerTable() for all types.
      */
     @Test
     public void isPerTable_is_correct_for_all_types()
