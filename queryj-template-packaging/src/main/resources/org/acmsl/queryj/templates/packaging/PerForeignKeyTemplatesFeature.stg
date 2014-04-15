@@ -55,11 +55,6 @@ Feature: <fk.sourceTableName> foreign keys code compiles
   Scenario Outline: Templates bound to <fk.sourceTableName>' foreign keys compile
 
     Given the table containing the foreign key is:
-Feature: Per-foreign key templates
-
-  Scenario Outline: Per-foreign key templates compile
-
-    Given the following tables:
     |    table     | parent table | decorated | relationship |   static    |
     | g_draws      |              |           |              |             |
     | g_draw_types |              |           |              | description |
