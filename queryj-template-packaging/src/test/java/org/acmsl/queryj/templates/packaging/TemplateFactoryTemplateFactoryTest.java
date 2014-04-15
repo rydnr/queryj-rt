@@ -82,7 +82,7 @@ public class TemplateFactoryTemplateFactoryTest
     @Test
     public void createTemplate_returns_the_correct_template_for_a_per_repository_template()
     {
-        testCreateTemplate(TemplateDefType.PER_REPOSITORY, "TemplateFactory");
+        testCreateTemplate(TemplateDefType.PER_REPOSITORY, Literals.TEMPLATE_FACTORY);
     }
 
     /**
