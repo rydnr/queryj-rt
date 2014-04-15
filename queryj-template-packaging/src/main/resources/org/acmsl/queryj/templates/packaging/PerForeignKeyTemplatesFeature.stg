@@ -65,30 +65,11 @@ Feature: <fk.sourceTableName> foreign keys code compiles
 
     And the foreign key is:
     | source table | source columns | target table | allows null |
-    | <fk.sourceTable.name>| <fk.attributes:{a | <a.name>}; separator=", ">| <fk.targetTable.name>| false       |
+    | <fk.sourceTable.name>| <fk.attributes:{a | <a.name>}; separator=", ">| <fk.targetTable.name> | <fk.nullable> |
 
-    And the following queries:
-      |       id      |     name      |     dao      |  type  | matches  |                        value                           | validate |
-      | first.select  | first-select  | g_draws      | select | single   | select * from g_draws where g_draw_id = ?              |   true   |
-      | second.select | second-select | g_draws      | select | multiple | select * from g_draws where drawing_date > sysdate - 7 |   true   |
-      | third.select  | third-select  | g_draw_types | select | multiple | select * from g_draw_types where description like ?    |   true   |
-      | fourth.select | fourth-select | g_draws      | select | multiple | select * from g_draws where drawing_date = ?           |   true   |
+    When I generate with per-foreign key \<template>.stg for Oracle
 
-    And the following query parameters:
-      |            id            |     sql       | index |  type  |     name    | validation-value |
-      | g_draws.g_draw_id        | first.select  |   1   |  long  | drawId      |         1        |
-      | g_draw_types.description | third.select  |   1   | String | description |  'Euromillones'  |
-      | g_draws.drawing_date     | fourth.select |   1   |  Date  | drawingDate |   '2014/02/15'   |
-
-    And the following contents:
-      |    table     |         row          |
-      | g_draw_types | 1, "Euromillions", 1 |
-      | g_draw_types | 2, "El_Gordo",     1 |
-      | g_draw_types | 3, "Primitiva",    1 |
-
-    When I generate with per-table \<template>.stg for Oracle
-
-    Then the generated per-table \<output> file compiles successfully
+    Then the generated per-foreign key \<output> file compiles successfully
 
     Then the queries are validated correctly using the following database:
       |     driver     |     url     |     userName     |     password     |
