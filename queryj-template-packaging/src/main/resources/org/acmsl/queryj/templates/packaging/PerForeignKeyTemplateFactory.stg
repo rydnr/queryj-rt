@@ -156,7 +156,7 @@ public class <C.class_name>
 
         @NotNull final <def.type.capitalized>TemplateContext t_Context =
             new <def.type.capitalized>TemplateContext(
-                retrieveTemplateFileName(tableName, t_QueryJCommandUtils.retrieveMetadataManager(command)),
+                retrieveTemplateFileName(foreignKey.getSourceTableName(), t_QueryJCommandUtils.retrieveMetadataManager(command)),
                 packageName,
                 foreignKey,
                 command);
