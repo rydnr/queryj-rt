@@ -126,7 +126,7 @@ public class PerForeignKeyTemplatesTestTemplateWritingHandler
 
         if (aux == null)
         {
-            throw new MissingTemplatesException("per-for-templates-test");
+            throw new MissingTemplatesException("per-foreign-templates-test");
         }
         else
         {
