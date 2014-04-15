@@ -60,6 +60,7 @@ public class ForeignKeyTestHelper
 {
     public void defineInputForeignKeys(final DataTable tableInfo, final List<ForeignKey<String>> foreignKeys)
     {
+        //To change body of created methods use File | Settings | File Templates.
     }
 
     /**
