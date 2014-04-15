@@ -57,6 +57,7 @@ import org.acmsl.queryj.metadata.engines.EngineDecorator;
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
 import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplateFactory;
+import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.acmsl.queryj.tools.PackageUtils;
 
 /*
@@ -120,54 +121,52 @@ public class PerForeignKeyTemplatesTestTemplateBuildHandler
     }
 
     /**
-     * {@inheritDoc}
+     * Builds the context from given parameters.
+     * @param templateDefs the template defs.
+     * @param parameters   the command with the parameters.
+     * @return the template context.
      */
-    @Override
     @NotNull
-    protected String retrievePackage(
-        @NotNull final String tableName,
-        @NotNull final Engine<String> engine,
-        @NotNull final String projectPackage,
-        @NotNull final PackageUtils packageUtils)
+    @Override
+    protected GlobalTemplateContext buildContext(
+        @NotNull final List<TemplateDef<String>> templateDefs, @NotNull final QueryJCommand parameters)
     {
-        return buildPackageName(tableName, engine, projectPackage);
+        return buildGlobalContext(templateDefs, parameters);
     }
 
     /**
-     * Builds the actual package name.
-     * @param tableName the table name.
-     * @param engine the engine.
-     * @param projectPackage the project package.
-     * @return the package name.
+     * Retrieves the output package for the generated file.
+     * @param parameters the parameters.
+     * @return such package.
      */
     @NotNull
-    static String buildPackageName(
-        @SuppressWarnings("unused") @NotNull final String tableName,
-        @SuppressWarnings("unused") @NotNull final Engine<String> engine,
-        @SuppressWarnings("unused") @NotNull final String projectPackage)
+    @Override
+    protected String retrieveOutputPackage(@NotNull final QueryJCommand parameters)
     {
-        @NotNull final String result;
+        return org.acmsl.queryj.templates.packaging.Literals.CUCUMBER_TEMPLATES;
+    }
 
-        @NotNull final ST packageTemplate = new ST("cucumber.templates");
-
-        packageTemplate.add(Literals.TABLE_NAME, new DecoratedString(tableName));
-        packageTemplate.add(Literals.PACKAGE_NAME, new DecoratedString(projectPackage));
-        packageTemplate.add(Literals.ENGINE, new EngineDecorator(engine));
-
-        result = packageTemplate.render();
-
-        return result;
+    /**
+     * Retrieves the template name, using the parameters if necessary.
+     * @param parameters the parameters.
+     * @return the template name.
+     */
+    @NotNull
+    @Override
+    protected String retrieveTemplateName(@NotNull final QueryJCommand parameters)
+    {
+        return org.acmsl.queryj.templates.packaging.Literals.PER_TABLE_TEMPLATES_TEST;
     }
 
     /**
      * {@inheritDoc}
      */
     @Override
-    protected void storeTemplates(
-        @NotNull final List<PerForeignKeyTemplatesTestTemplate> templates,
+    protected void storeTemplate(
+        @NotNull final PerForeignKeyTemplatesTestTemplate template,
         @NotNull final QueryJCommand parameters)
     {
-        new QueryJCommandWrapper<List<PerForeignKeyTemplatesTestTemplate>>(parameters)
-            .setSetting(TEMPLATES_KEY, templates);
+        new QueryJCommandWrapper<PerForeignKeyTemplatesTestTemplate>(parameters)
+            .setSetting(TEMPLATES_KEY, template);
     }
 }
