@@ -33,7 +33,8 @@
 //
 // Author: Jose San Leandro Armendariz
 //
-// Description: Defines the rules to generate QueryJ's peTemplateFactories.
+// Description: Defines the rules to generate QueryJ's per-foreign key
+//              TemplateFactories.
 //
 group PerForeignKeyTemplateFactory;
 
