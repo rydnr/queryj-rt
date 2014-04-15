@@ -151,7 +151,7 @@ public enum TemplateDefType
     }
 
     /**
-     * Checks whether this type identifies per-table template defs.
+     * Checks whether this type identifies per-repository template defs.
      * @return {@code true} in such case.
      */
     public boolean isPerRepository()
