@@ -57,6 +57,9 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class TemplateDefTypeTest
 {
+    /**
+     * Tests isPerTable() for PER_TABLE type.
+     */
     @Test
     public void isPerTable_is_correct_for_perTable_types()
     {
