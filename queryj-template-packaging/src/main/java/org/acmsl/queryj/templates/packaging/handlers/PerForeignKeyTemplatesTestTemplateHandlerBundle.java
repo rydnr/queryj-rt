@@ -41,11 +41,7 @@
  * EITHER MODIFY org/acmsl/queryj/templates/packaging/TemplateHandlerBundle.stg
  * OR CREATE AND APPLY A PATCH.
  */
-package org.acmsl.queryj.templates.packaging.
-
-import org.checkthread.annotations.ThreadSafe;
-
-handlers;
+package org.acmsl.queryj.templates.packaging.handlers;
 
 /*
  * Importing QueryJ-API classes.
