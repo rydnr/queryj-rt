@@ -50,11 +50,6 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 
-/*
- * Importing JDK classes.
- */
-import java.util.Arrays;
-
 /**
  * Used to generate sources using PerForeignKeyTemplatesTest.stg.
  * @author <a href="http://www.acm-sl.org/projects/queryj">QueryJ's Template Packaging 3.0-SNAPSHOT</a>
