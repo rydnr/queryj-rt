@@ -44,12 +44,6 @@
 package org.acmsl.queryj.templates.packaging;
 
 /*
- * Importing QueryJ-Core classes.
- */
-import org.acmsl.queryj.api.AbstractBasePerForeignKeyTemplate;
-import org.acmsl.queryj.api.PerForeignKeyTemplateContext;
-
-/*
  * Importing some JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
@@ -87,7 +81,7 @@ public class PerForeignKeyTemplatesTestTemplate
 
     /**
      * Builds a PerForeignKeyTemplatesTest using given context.
-     * @param context the {@link PerForeignKeyTemplateContext}.
+     * @param context the {@link GlobalTemplateContext}.
      */
     public PerForeignKeyTemplatesTestTemplate(@NotNull final GlobalTemplateContext context)
     {
