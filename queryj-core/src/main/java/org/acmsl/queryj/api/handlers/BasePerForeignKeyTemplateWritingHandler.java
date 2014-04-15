@@ -33,14 +33,12 @@
 package org.acmsl.queryj.api.handlers;
 
 /*
- * Importing QueryJ Core classes.
+ * Importing some project classes.
  */
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.PerForeignKeyTemplate;
 import org.acmsl.queryj.api.PerForeignKeyTemplateContext;
 import org.acmsl.queryj.api.PerForeignKeyTemplateGenerator;
-import org.acmsl.queryj.api.exceptions.QueryJBuildException;
-import org.acmsl.queryj.metadata.engines.Engine;
 import org.acmsl.queryj.tools.PackageUtils;
 
 /*
@@ -83,31 +81,46 @@ public abstract class BasePerForeignKeyTemplateWritingHandler
         @NotNull final C context,
         @NotNull final File rootDir,
         @NotNull final QueryJCommand parameters)
-      throws QueryJBuildException
     {
-        return
-            retrieveOutputDir(
-                retrieveEngine(parameters, retrieveDatabaseMetaData(parameters)),
-                retrieveProjectOutputDir(parameters),
-                retrieveProjectPackage(parameters),
-                context.getForeignKey().getSourceTableName(),
-                retrieveUseSubfoldersFlag(parameters));
+        return retrieveOutputDir(context.getForeignKey().getSourceTableName(), parameters);
     }
 
     /**
      * Retrieves the output dir from the attribute map.
-     * @param engine the engine.
+     * @param tableName the table name.
+     * @param parameters the parameter map.
+     * @return such folder.
+     */
+    @NotNull
+    protected File retrieveOutputDir(
+        @NotNull final String tableName, @NotNull final QueryJCommand parameters)
+    {
+        return
+            retrieveOutputDir(
+                retrieveProductName(parameters),
+                retrieveProjectOutputDir(parameters),
+                retrieveProjectPackage(parameters),
+                tableName,
+                retrieveUseSubfoldersFlag(parameters),
+                PackageUtils.getInstance());
+    }
+
+    /**
+     * Retrieves the output dir from the attribute map.
+     * @param engineName the engine name.
      * @param projectOutputDir the project output dir.
      * @param projectPackage the project package.
      * @param tableName the table name.
      * @param subFolders whether to use sub folders or not.
+     * @param packageUtils the <code>PackageUtils</code> instance.
      * @return such folder.
      */
     @NotNull
     protected abstract File retrieveOutputDir(
-        @NotNull final Engine<String> engine,
+        @NotNull final String engineName,
         @NotNull final File projectOutputDir,
         final String projectPackage,
         @NotNull final String tableName,
-        final boolean subFolders);
+        final boolean subFolders,
+        @NotNull final PackageUtils packageUtils);
 }
