@@ -305,7 +305,7 @@ public class PerForeignKeyTemplatesTest
      * Generates a file with the information from the feature.
      * @param templateName the template.
      * @param engine the engine name.
-     * @param foreignKeyMap the foreign key map.
+     * @param foreignKeys the foreign keys.
      * @param outputFiles the output files.
      */
     @SuppressWarnings("unchecked")
