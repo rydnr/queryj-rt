@@ -169,7 +169,7 @@ public class <C.class_name>
             new <def.type.capitalized>TemplateContext(
                 retrieveTemplateFileName(tableName, t_QueryJCommandUtils.retrieveMetadataManager(command)),
                 packageName,
-                tableName,
+                foreignKey,
                 staticContents,
                 command);
 
