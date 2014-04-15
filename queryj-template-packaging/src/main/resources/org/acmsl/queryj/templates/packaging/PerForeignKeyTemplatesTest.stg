@@ -375,7 +375,7 @@ public class PerForeignKeyTemplatesTest
                 Assert.assertNotNull("No template factory found for " + templateName, templateFactory);
 
                 @NotNull final String packageName =
-                    resolvePackage(PACKAGE_MAPPINGS.get(templateName), table.getName(), resolveEngine(engine));
+                    resolvePackage(PACKAGE_MAPPINGS.get(templateName), foreignKey.getName(), resolveEngine(engine));
 
                 @Nullable final PerTableTemplate\<PerTableTemplateContext> template =
                     templateFactory.createTemplate(
