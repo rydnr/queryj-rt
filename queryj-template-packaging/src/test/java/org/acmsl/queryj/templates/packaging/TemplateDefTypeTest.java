@@ -65,6 +65,6 @@ public class TemplateDefTypeTest
     {
         @NotNull final TemplateDefType instance = TemplateDefType.PER_TABLE;
 
-        Assert.assertTrue(instance.isPerTable());
+        Assert.assertTrue(TemplateDefType.PER_TABLE.isPerTable());
     }
 }
