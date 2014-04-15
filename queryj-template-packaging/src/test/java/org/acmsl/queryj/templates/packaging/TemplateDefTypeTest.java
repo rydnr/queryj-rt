@@ -69,7 +69,7 @@ public class TemplateDefTypeTest
      * Tests isPerRepository() for all types.
      */
     @Test
-    public void isPerTable_is_correct_for_all_types()
+    public void isPerRepository_is_correct_for_all_types()
     {
         Assert.assertTrue(TemplateDefType.PER_TABLE.isPerTable());
         Assert.assertFalse(TemplateDefType.PER_REPOSITORY.isPerTable());
