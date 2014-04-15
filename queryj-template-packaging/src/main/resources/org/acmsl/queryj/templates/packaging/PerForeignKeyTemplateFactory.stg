@@ -170,7 +170,6 @@ public class <C.class_name>
                 retrieveTemplateFileName(tableName, t_QueryJCommandUtils.retrieveMetadataManager(command)),
                 packageName,
                 foreignKey,
-                staticContents,
                 command);
 
         return new <def.name.noExtension>Template(t_Context);
