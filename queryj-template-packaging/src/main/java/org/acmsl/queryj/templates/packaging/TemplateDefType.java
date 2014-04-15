@@ -153,11 +153,15 @@ public enum TemplateDefType
         return PER_FOREIGN_KEY.getType().equals(getType());
     }
 
-
+    /**
+     * Checks whether this type identifies per-foreign key template defs.
+     * @return {@code true} in such case.
+     */
     public boolean isPerCustomResult()
     {
         return PER_CUSTOM_RESULT.getType().equals(getType());
     }
+
     /**
      * Retrieves a capitalized version.
      * @return the type, capitalized.
