@@ -63,7 +63,7 @@ import java.util.Locale;
 public class MissingTemplatesExceptionTest
 {
     /**
-     * Tests the "default-template-chain-provider" message key is defined for Spanish and English.
+     * Tests the "default-template-chain-provider" exception is message key is defined for Spanish and English.
      */
     @Test
     public void template_chain_provider_message_is_defined_in_Spanish_and_English()
