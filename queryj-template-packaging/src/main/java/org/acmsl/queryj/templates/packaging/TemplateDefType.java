@@ -142,7 +142,7 @@ public enum TemplateDefType
     }
 
     /**
-     * Checks whether is
+     * Checks whether is per-table
      * @return
      */
     public boolean isPerTable()
