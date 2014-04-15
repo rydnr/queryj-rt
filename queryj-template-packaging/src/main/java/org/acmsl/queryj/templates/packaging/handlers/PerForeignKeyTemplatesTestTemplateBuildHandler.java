@@ -54,6 +54,9 @@ import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.metadata.DecoratedString;
 import org.acmsl.queryj.metadata.engines.Engine;
 import org.acmsl.queryj.metadata.engines.EngineDecorator;
+import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
+import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplate;
+import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplateFactory;
 import org.acmsl.queryj.tools.PackageUtils;
 
 /*
@@ -90,10 +93,10 @@ import java.util.List;
  */
 @ThreadSafe
 public class PerForeignKeyTemplatesTestTemplateBuildHandler
-    extends TemplatePackagingTestBuildHandler<
-    PerForeignKeyTemplatesTestTemplate,
-    PerForeignKeyTemplateContext,
-    PerForeignKeyTemplatesTestTemplateFactory>
+    extends TemplatePackagingTestBuildHandler
+                <PerForeignKeyTemplatesTestTemplate,
+                    PerForeignKeyTemplatesTestTemplateFactory,
+                    GlobalTemplateContext>
 {
     /**
      * The key to access the templates in the command.
