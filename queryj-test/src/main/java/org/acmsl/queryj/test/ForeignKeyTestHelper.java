@@ -98,8 +98,7 @@ public class ForeignKeyTestHelper
      */
     @NotNull
     public List<ForeignKey<String>> defineInputColumns(
-        @NotNull final DataTable columnInfo, final List<ForeignKey<String>> foreignKeys)
-
+        @NotNull final DataTable columnInfo, @NotNull final List<ForeignKey<String>> foreignKeys)
     {
         // TODO
         return foreignKeys;
