@@ -144,12 +144,12 @@ public class MissingTemplatesExceptionTest
     }
 
     /**
-     * Tests the "template" exception is defined for Spanish and English.
+     * Tests the "template-writing-handler" exception is defined for Spanish and English.
      */
     @Test
-    public void template_message_is_defined_in_Spanish_and_English()
+    public void template_writing_handler_message_is_defined_in_Spanish_and_English()
     {
-        checkExceptionMessageIsDefinedInSpanishAndEnglish("template");
+        checkExceptionMessageIsDefinedInSpanishAndEnglish("template-writing-handler");
     }
 
     /**
