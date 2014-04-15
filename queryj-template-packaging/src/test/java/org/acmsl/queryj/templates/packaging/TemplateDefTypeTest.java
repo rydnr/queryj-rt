@@ -63,8 +63,7 @@ public class TemplateDefTypeTest
     @Test
     public void isPerTable_is_correct_for_all_types()
     {
-        @NotNull final TemplateDefType instance = TemplateDefType.PER_TABLE;
-
         Assert.assertTrue(TemplateDefType.PER_TABLE.isPerTable());
+        Assert.assertFalsse(TemplateDefType.PER_TABLE.isPerTable());
     }
 }
