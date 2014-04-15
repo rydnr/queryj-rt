@@ -423,7 +423,7 @@ public class PerForeignKeyTemplatesTest
                 }
 
                 outputFiles.put(
-                    foreignKey.getName(),
+                    foreignKey.getFkName(),
                     new File(outputDir, template.getTemplateContext().getFileName()));
             }
         }
