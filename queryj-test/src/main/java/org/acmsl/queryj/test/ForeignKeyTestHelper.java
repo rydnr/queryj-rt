@@ -100,6 +100,7 @@ public class ForeignKeyTestHelper
 
     {
         // TODO
+        return foreignKeys;
     }
 
 }
