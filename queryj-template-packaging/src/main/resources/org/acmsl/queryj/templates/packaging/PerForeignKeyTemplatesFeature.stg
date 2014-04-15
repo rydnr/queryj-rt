@@ -60,15 +60,8 @@ Feature: <fk.sourceTableName> foreign keys code compiles
 
     And the table containing the foreign key has the following columns:
     |     table    |         column        | type      | pk    | allows null | readonly |   sequence    | keyword | boolean | length | precision |
-    <fk.sourceTable.attributes:{ a |<cucumber_attribute_declaration(attribute=a)>}; separator="\n">
-    | g_draws      | g_draw_type_id        | number    | false | false       | false    |               |         |         |     10 |         0 |
-    | g_draws      | drawing_date          | date      | false | false       | false    |               |         |         |        |           |
-    | g_draws      | g_draw_state_id       | number    | false | false       | false    |               |         |         |     10 |         0 |
-    | g_draws      | last_modified         | timestamp | false | false       | false    |               |         |         |        |           |
-    | g_draws      | creation_date         | timestamp | false | false       | false    |               | sysdate |         |        |           |
-    | g_draw_types | g_draw_type_id        | number    | true  | false       | false    | seq_g_draws   |         |         |     10 |         0 |
-    | g_draw_types | description           | varchar   | false | false       | false    |               |         |         |     40 |           |
-    | g_draw_types | g_lottery_provider_id | number    | false | false       | false    |               | sysdate |         |        |           |
+    <fk.sourceTable.primaryKey:{ a |<cucumber_attribute_declaration(attribute=a)>}; separator="\n">
+    <fk.sourceTable.own.minus.primaryKey:{ a |<cucumber_attribute_declaration(attribute=a)>}; separator="\n">
 
     And the following foreign keys:
     | source table | source columns | target table | allows null |
@@ -150,4 +143,4 @@ indirect_template(def, engineName, tableName) ::= <<
 
 cucumber_attribute_declaration(attribute) ::= <<
 <! Declares the attribute metadata in Cucumber format !>
-| <attribute.table.name> | <attribute.name> | <attribute.type> | <attribute.is| false       | false    |               |         |         |     10 |         0 |
+| <attribute.table.name> | <attribute.name> | <attribute.type> | true | false       | false    |               |         |         |     10 |         0 |
