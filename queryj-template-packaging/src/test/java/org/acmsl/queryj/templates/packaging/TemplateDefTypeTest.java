@@ -105,10 +105,10 @@ public class TemplateDefTypeTest
     }
 
     /**
-     * Tests isPerForeignKey() for all types.
+     * Tests isPerCustomResult() for all types.
      */
     @Test
-    public void isPerForeignKey_is_correct_for_all_types()
+    public void isPerCustomResult_is_correct_for_all_types()
     {
         Assert.assertFalse(TemplateDefType.PER_TABLE.isPerForeignKey());
         Assert.assertFalse(TemplateDefType.PER_REPOSITORY.isPerForeignKey());
