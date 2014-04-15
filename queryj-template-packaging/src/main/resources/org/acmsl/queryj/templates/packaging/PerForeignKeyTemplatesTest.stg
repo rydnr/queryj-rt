@@ -363,13 +363,6 @@ public class PerForeignKeyTemplatesTest
 
             for (@NotNull final ForeignKey\<String\>> foreignKey: foreignKeys)
             {
-                @Nullable List\<ForeignKey\<String\>> tableRows = rows.get(table.getName());
-
-                if (tableRows == null)
-                {
-                    tableRows = new ArrayList\<>(0);
-                }
-
                 @NotNull final MetadataManager metadataManager =
                     retrieveMetadataManager(engine, table, tableRows, decoratorFactory);
 
