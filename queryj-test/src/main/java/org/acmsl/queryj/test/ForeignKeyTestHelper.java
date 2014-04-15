@@ -58,7 +58,7 @@ import java.util.List;
 @ThreadSafe
 public class ForeignKeyTestHelper
 {
-    public void defineInputForeignKeys(final DataTable tableInfo, final List<ForeignKey<String>> foreignKeys)
+    public void defineInputForeignKeys(@NotNull final DataTable tableInfo, @NotNull final List<ForeignKey<String>> foreignKeys)
     {
         //To change body of created methods use File | Settings | File Templates.
     }
