@@ -140,7 +140,16 @@ public class MissingTemplatesExceptionTest
     @Test
     public void template_message_is_defined_in_Spanish_and_English()
     {
-        checkExceptionMessageIsDefinedInSpanishAndEnglish("template-handler-bundle");
+        checkExceptionMessageIsDefinedInSpanishAndEnglish("template");
+    }
+
+    /**
+     * Tests the "template" exception is defined for Spanish and English.
+     */
+    @Test
+    public void template_message_is_defined_in_Spanish_and_English()
+    {
+        checkExceptionMessageIsDefinedInSpanishAndEnglish("template");
     }
 
     /**
