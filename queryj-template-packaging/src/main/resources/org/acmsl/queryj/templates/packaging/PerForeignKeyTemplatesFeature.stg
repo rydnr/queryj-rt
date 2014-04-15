@@ -147,3 +147,6 @@ Feature: <fk.sourceTableName> foreign keys code compiles
 indirect_template(def, engineName, tableName) ::= <<
 | <def.name; format="%-30s"> | <(def.filenameRule)(engineName, tableName)> |
 >>
+
+attribute_
+    | g_draws      | g_draw_type_id        | number    | false | false       | false    |               |         |         |     10 |         0 |
