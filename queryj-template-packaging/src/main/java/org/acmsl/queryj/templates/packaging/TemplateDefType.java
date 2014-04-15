@@ -137,6 +137,7 @@ public enum TemplateDefType
         return
             "{ \"class\": \"" + TemplateDefType.class.getSimpleName() + '"'
             + ", \"type\": \"" + this.m__strType + '"'
-            + ", \"package\": }";
+            + ", \"package\": " + TemplateDefType.class.getPackage().getName()
+            + "\" }";
     }
 }
