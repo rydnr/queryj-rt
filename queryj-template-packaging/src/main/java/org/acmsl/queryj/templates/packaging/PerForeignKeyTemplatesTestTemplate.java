@@ -81,6 +81,6 @@ public class PerForeignKeyTemplatesTestTemplate
     @Override
     public String getTemplateName()
     {
-        return "PerForeignKeyTemplatesTest";
+        return Literals.PER_FOREIGN_KEY_TEMPLATES_TEST"PerForeignKeyTemplatesTest";
     }
 }
