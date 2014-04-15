@@ -1,7 +1,7 @@
 /*
                   QueryJ's Template Packaging
 
-    Copyright (C) 20022014-today Jose San Leandro Armendariz
+    Copyright (C) 2002-today Jose San Leandro Armendariz
                               queryj@acm-sl.org
 
     This library is free software; you can redistribute it and/or
