@@ -80,9 +80,9 @@ public class ForeignKeyTestHelper
     }
 
     /**
-     *
-     * @param tableInfo
-     * @param foreignKeys
+     * Defines the foreign keys based on the Cucumber information given.
+     * @param tableInfo the Cucumber table.
+     * @param foreignKeys the list to
      */
     public void defineInputForeignKeys(
         @NotNull final DataTable tableInfo, @NotNull final List<ForeignKey<String>> foreignKeys)
