@@ -149,5 +149,5 @@ indirect_template(def, engineName, tableName) ::= <<
 >>
 
 cucumber_attribute_declaration(attribute) ::= <<
-<! Declares the attribute metadata as
-    | g_draws      | g_draw_type_id        | number    | false | false       | false    |               |         |         |     10 |         0 |
+<! Declares the attribute metadata in Cucumber format !>
+| <fk.sourceTable.name> | <g_draw_type_id        | number    | false | false       | false    |               |         |         |     10 |         0 |
