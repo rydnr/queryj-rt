@@ -78,7 +78,7 @@ import java.util.Arrays;
  */
 @ThreadSafe
 public class PerForeignKeyTemplatesTestTemplate
-    extends AbstractBasePerForeignKeyTemplate<PerForeignKeyTemplateContext>
+    extends AbstractTemplatePackagingTemplate<GlobalTemplateContext>
 {
     /**
      * The serial version UID for serialization.
@@ -89,7 +89,7 @@ public class PerForeignKeyTemplatesTestTemplate
      * Builds a PerForeignKeyTemplatesTest using given context.
      * @param context the {@link PerForeignKeyTemplateContext}.
      */
-    public PerForeignKeyTemplatesTestTemplate(@NotNull final PerForeignKeyTemplateContext context)
+    public PerForeignKeyTemplatesTestTemplate(@NotNull final GlobalTemplateContext context)
     {
         super(context);
     }
