@@ -306,22 +306,18 @@ public class PerForeignKeyTemplatesTest
      * Generates a file with the information from the feature.
      * @param templateName the template.
      * @param engine the engine name.
-     * @param tableMap the table map.
-     * @param rows the rows.
+     * @param foreignKeyMap the foreign key map.
      * @param outputFiles the output files.
-     * @param sqlProvider the {@link CustomSqlProvider} instance.
      */
     @SuppressWarnings("unchecked")
     protected void generateFile(
         @NotNull final String templateName,
         @NotNull final String engine,
-        @NotNull final Map\<String, Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tableMap,
-        @NotNull final Map\<String, List\<Row\<String>\>> rows,
-        @NotNull final Map\<String, File> outputFiles,
-        @NotNull final CustomSqlProvider sqlProvider)
+        @NotNull final Map\<String, ForeignKey\<String\>> foreignKeyMap,
+        @NotNull final Map\<String, File> outputFiles)
     {
-        @Nullable final PerTableTemplateGenerator\<PerTableTemplate\<PerTableTemplateContext>, PerTableTemplateContext> generator =
-            (PerTableTemplateGenerator\<PerTableTemplate\<PerTableTemplateContext>, PerTableTemplateContext>) retrieveTemplateGenerator(
+        @Nullable final PerForeignKeyTemplateGenerator\<PerForeignKeyTemplate\<PerForeignKeyTemplateContext>, PerForeignKeyTemplateContext> generator =
+            (PerForeignKeyTemplateGenerator\<PerForeignKeyTemplate\<PerForeignKeyTemplateContext>, PerForeignKeyTemplateContext>) retrieveTemplateGenerator(
                 templateName);
 
         Assert.assertNotNull("No template generator found for " + templateName, generator);
