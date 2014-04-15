@@ -63,9 +63,9 @@ Feature: <fk.sourceTableName> foreign keys code compiles
     <fk.sourceTable.primaryKey:{ a |<cucumber_pk_declaration(attribute=a)>}; separator="\n">
     <fk.sourceTable.own.minus.primaryKey:{ a |<cucumber_nonpk_declaration(attribute=a)>}; separator="\n">
 
-    And the following foreign key:
+    And the foreign key is:
     | source table | source columns | target table | allows null |
-    | <fk.g_draws      | g_draw_type_id | d_draw_types | false       |
+    | <fk.sourceTable.name>| <fk.attributes:{a | <attribute.| d_draw_types | false       |
 
     And the following queries:
       |       id      |     name      |     dao      |  type  | matches  |                        value                           | validate |
