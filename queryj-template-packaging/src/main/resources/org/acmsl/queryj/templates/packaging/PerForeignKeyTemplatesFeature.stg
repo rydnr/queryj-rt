@@ -47,6 +47,8 @@ source(C) ::= <<
 <sourceImpl(fk=C.foreignKey, C=C)>
 >>
 sourceImpl(fk, C) ::= <<
+<!
+
 Feature: G_CYCLE_TYPES foreign keys code compiles
 
   Scenario Outline: Templates bound to G_CYCLE_TYPES' foreign keys compile
