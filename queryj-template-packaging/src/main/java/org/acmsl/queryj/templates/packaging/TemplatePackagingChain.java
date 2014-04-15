@@ -46,10 +46,10 @@ import org.acmsl.queryj.tools.handlers.QueryJCommandHandler;
  * Importing some QueryJ Template Packaging classes.
  */
 import org.acmsl.queryj.templates.packaging.handlers.DefaultTemplateChainProviderTemplateHandlerBundle;
-import org.acmsl.queryj.templates.packaging.handlers.PerForeignKeyTemplatesTestTemplateHandlerBundle;
-import org.acmsl.queryj.templates.packaging.handlers.PerTableTemplatesTestTemplateHandlerBundle;
 import org.acmsl.queryj.templates.packaging.handlers.FindTemplateDefsHandler;
 import org.acmsl.queryj.templates.packaging.handlers.ParseTemplateDefsHandler;
+import org.acmsl.queryj.templates.packaging.handlers.PerForeignKeyTemplatesTestTemplateHandlerBundle;
+import org.acmsl.queryj.templates.packaging.handlers.PerTableTemplatesTestTemplateHandlerBundle;
 import org.acmsl.queryj.templates.packaging.handlers.TemplateBuildHandlerTemplateHandlerBundle;
 import org.acmsl.queryj.templates.packaging.handlers.TemplateFactoryTemplateHandlerBundle;
 import org.acmsl.queryj.templates.packaging.handlers.TemplateGeneratorTemplateHandlerBundle;
