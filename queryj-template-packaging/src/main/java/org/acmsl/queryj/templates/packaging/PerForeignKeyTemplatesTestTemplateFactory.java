@@ -41,10 +41,10 @@
  * EITHER MODIFY org/acmsl/queryj/templates/packaging/PerForeignKeyTemplateFactory.stg
  * OR CREATE AND APPLY A PATCH.
  */
-package org.acmsl.queryj.templates;
+package org.acmsl.queryj.templates.packaging;
 
 /*
- * Importing QueryJ-Core classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.PerForeignKeyTemplateContext;
@@ -85,7 +85,7 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public class PerForeignKeyTemplatesTestTemplateFactory
     implements PerForeignKeyTemplateFactory<
-    org.acmsl.queryj.templates.PerForeignKeyTemplatesTestTemplate, PerForeignKeyTemplateContext>,
+    PerForeignKeyTemplatesTestTemplate, PerForeignKeyTemplateContext>,
                Singleton
 {
     /**
@@ -114,7 +114,7 @@ public class PerForeignKeyTemplatesTestTemplateFactory
      */
     @Override
     @NotNull
-    public org.acmsl.queryj.templates.PerForeignKeyTemplatesTestTemplate createTemplate(
+    public PerForeignKeyTemplatesTestTemplate createTemplate(
         @NotNull final String packageName,
         @NotNull final ForeignKey<String> foreignKey,
         @NotNull final QueryJCommand command)
@@ -131,7 +131,7 @@ public class PerForeignKeyTemplatesTestTemplateFactory
      * @return the new template.
      */
     @NotNull
-    protected org.acmsl.queryj.templates.PerForeignKeyTemplatesTestTemplate createTemplate(
+    protected PerForeignKeyTemplatesTestTemplate createTemplate(
         @NotNull final String packageName,
         @NotNull final ForeignKey<String> foreignKey,
         @NotNull final QueryJCommand command,
@@ -146,7 +146,7 @@ public class PerForeignKeyTemplatesTestTemplateFactory
                 foreignKey,
                 command);
 
-        return new org.acmsl.queryj.templates.PerForeignKeyTemplatesTestTemplate(t_Context);
+        return new PerForeignKeyTemplatesTestTemplate(t_Context);
     }
 
     /**

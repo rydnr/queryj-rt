@@ -41,7 +41,7 @@
  * EITHER MODIFY org/acmsl/queryj/templates/packaging/Template.stg
  * OR CREATE AND APPLY A PATCH.
  */
-package org.acmsl.queryj.templates;
+package org.acmsl.queryj.templates.packaging;
 
 /*
  * Importing QueryJ-Core classes.
