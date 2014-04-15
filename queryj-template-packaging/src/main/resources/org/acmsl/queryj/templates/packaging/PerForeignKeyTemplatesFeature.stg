@@ -65,7 +65,7 @@ Feature: <fk.sourceTableName> foreign keys code compiles
 
     And the following foreign keys:
     | source table | source columns | target table | allows null |
-    | g_draws      | g_draw_type_id | d_draw_types | false       |
+    | <fk.g_draws      | g_draw_type_id | d_draw_types | false       |
 
     And the following queries:
       |       id      |     name      |     dao      |  type  | matches  |                        value                           | validate |
