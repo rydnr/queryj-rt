@@ -61,7 +61,7 @@ public class TemplateDefTypeTest
      * Tests isPerTable() for PER_TABLE type.
      */
     @Test
-    public void isPerTable_is_correct_for_perTable_types()
+    public void isPerTable_is_correct_for_all_types()
     {
         @NotNull final TemplateDefType instance = TemplateDefType.PER_TABLE;
 
