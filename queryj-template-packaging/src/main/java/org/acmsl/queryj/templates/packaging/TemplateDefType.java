@@ -126,7 +126,6 @@ public enum TemplateDefType
         return PER_TABLE.getType().equals(getType());
     }
 
-
     /**
      * Checks whether this type identifies per-repository template defs.
      * @return {@code true} in such case.
