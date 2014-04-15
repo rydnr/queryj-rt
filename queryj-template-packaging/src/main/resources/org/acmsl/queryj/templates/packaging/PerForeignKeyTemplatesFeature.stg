@@ -58,9 +58,9 @@ Feature: <fk.sourceTableName> foreign keys code compiles
     |    table     | parent table | decorated | relationship |   static    |
     | <fk.sourceTable.name> | <fk.sourceTable.parent> | <fk.sourceTable.decorated> | <fk.sourceTabel.relationship> | <fk.sourceTable.static> |
 
-    And the following columns:
+    And the table containing the foreign key has the following columns:
     |     table    |         column        | type      | pk    | allows null | readonly |   sequence    | keyword | boolean | length | precision |
-    | g_draws      | g_draw_id             | number    | true  | false       | false    | seq_g_draws   |         |         |     10 |         0 |
+    | <fk.sourceTable.name> | g_draw_id             | number    | true  | false       | false    | seq_g_draws   |         |         |     10 |         0 |
     | g_draws      | g_draw_type_id        | number    | false | false       | false    |               |         |         |     10 |         0 |
     | g_draws      | drawing_date          | date      | false | false       | false    |               |         |         |        |           |
     | g_draws      | g_draw_state_id       | number    | false | false       | false    |               |         |         |     10 |         0 |
