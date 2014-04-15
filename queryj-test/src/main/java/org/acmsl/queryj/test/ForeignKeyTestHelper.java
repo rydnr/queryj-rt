@@ -71,9 +71,9 @@ public class ForeignKeyTestHelper
      * @return such instance.
      */
     @NotNull
-    public static TableTestHelper getInstance()
+    public static ForeignKeyTestHelper getInstance()
     {
-        return TableTestHelperSingletonContainer.SINGLETON;
+        return ForeignKeyTestHelperSingletonContainer.SINGLETON;
     }
 
 }
