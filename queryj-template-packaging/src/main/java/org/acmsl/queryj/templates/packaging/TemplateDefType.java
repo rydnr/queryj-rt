@@ -158,4 +158,9 @@ public enum TemplateDefType
             + ", \"package\": \"" + TemplateDefType.class.getPackage().getName()
             + "\" }";
     }
+
+    public boolean isPerSql()
+    {
+        return false;  //To change body of created methods use File | Settings | File Templates.
+    }
 }
