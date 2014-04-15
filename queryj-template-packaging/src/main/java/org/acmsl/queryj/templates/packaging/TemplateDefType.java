@@ -143,6 +143,6 @@ public enum TemplateDefType
 
     public boolean isPerTable()
     {
-        return getType();
+        return "per-table".equals(getType();
     }
 }
