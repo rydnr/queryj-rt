@@ -60,8 +60,8 @@ Feature: <fk.sourceTableName> foreign keys code compiles
 
     And the table containing the foreign key has the following columns:
     |     table    |         column        | type      | pk    | allows null | readonly |   sequence    | keyword | boolean | length | precision |
-    <fk.sourceTable.primaryKey:{ a |<cucumber_attribute_declaration(attribute=a)>}; separator="\n">
-    <fk.sourceTable.own.minus.primaryKey:{ a |<cucumber_attribute_declaration(attribute=a)>}; separator="\n">
+    <fk.sourceTable.primaryKey:{ a |<cucumber_pk_declaration(attribute=a)>}; separator="\n">
+    <fk.sourceTable.own.minus.primaryKey:{ a |<cucumber_nonpk_declaration(attribute=a)>}; separator="\n">
 
     And the following foreign keys:
     | source table | source columns | target table | allows null |
