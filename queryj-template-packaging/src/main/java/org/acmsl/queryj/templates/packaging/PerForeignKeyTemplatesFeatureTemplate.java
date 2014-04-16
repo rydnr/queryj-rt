@@ -59,28 +59,15 @@ import java.util.Arrays;
  */
 @ThreadSafe
 public class PerForeignKeyTemplatesFeatureTemplate
+    extends AbstractTemplatePackagingTemplate<GlobalTemplateContext>
 {
     /**
-     * Builds a PerTableTemplatesFeature using given context.
-     * @param context the {@link org.acmsl.queryj.api.PerRepositoryTemplateContext}.
+     * Builds a PerForeignKeyTemplatesFeature using given context.
+     * @param context the {@link org.acmsl.queryj.templates.packaging.GlobalTemplateContext}.
      */
-    public PerTableTemplatesFeatureTemplate(@NotNull final GlobalTemplateContext context)
+    public PerForeignKeyTemplatesFeatureTemplate(@NotNull final GlobalTemplateContext context)
     {
         super(context);
-    }
-
-    /**
-     * Retrieves the StringTemplate group for "PerTableTemplatesFeature.stg".
-     * @return such {@link org.stringtemplate.v4.STGroup group}.
-     */
-    @Nullable
-    @Override
-    public STGroup retrieveGroup()
-    {
-        return
-            retrieveGroup(
-                "org/acmsl/queryj/templates/packaging/PerForeignKeyTemplatesFeature.stg",
-                Arrays.asList(org.acmsl.queryj.Literals.ORG_ACMSL_QUERYJ_TEMPLATES));
     }
 
     /**
