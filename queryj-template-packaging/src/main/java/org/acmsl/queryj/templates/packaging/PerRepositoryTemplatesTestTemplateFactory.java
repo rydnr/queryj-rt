@@ -55,7 +55,7 @@ import org.jetbrains.annotations.Nullable;
  */
 @ThreadSafe
 public class PerRepositoryTemplatesTestTemplateFactory
-    implements TemplatePackagingTemplateFactory<PerTableTemplatesTestTemplate, GlobalTemplateContext>,
+    implements TemplatePackagingTemplateFactory<PerRepositoryTemplatesTestTemplate, GlobalTemplateContext>,
                Singleton
 {
     /**
