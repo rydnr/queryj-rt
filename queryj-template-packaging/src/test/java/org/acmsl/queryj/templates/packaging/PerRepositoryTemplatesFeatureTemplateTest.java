@@ -58,5 +58,5 @@ import org.junit.runners.JUnit4;
 public class PerRepositoryTemplatesFeatureTemplateTest
 {
     @Test
-    public void templateName_is_
+    public void templateName_is_correct()
 }
