@@ -54,7 +54,7 @@ sourceImpl(repository, C) ::= <<
 !>
 Feature: <repository>-wide classes compile
 
-  Scenario Outline: Templates bound to <C.rep>' foreign keys compile
+  Scenario Outline: Templates bound to <C.repository>' foreign keys compile
 
     Given the table containing the foreign key is:
     |    table     | parent table | decorated | relationship |   static    |
