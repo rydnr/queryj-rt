@@ -81,3 +81,8 @@ cucumber_custom_result_declaration(attribute) ::= <<
 <! Declares the custom result metadata in Cucumber format !>
 | <result.id> | <result.dao> | <result.type> |
 >>
+
+cucumber_custom_result_declaration(attribute) ::= <<
+<! Declares the custom result metadata in Cucumber format !>
+| <result.id> | <result.dao> | <result.type> |
+>>
