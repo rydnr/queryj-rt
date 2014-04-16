@@ -1,5 +1,5 @@
 /*
-                        queryj
+                        QueryJ Template Packaging
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Factory for PerRepositoryTemplatesFeatureTemplate.
+ * Description: Factory for PerRepositoryTemplatesFeatureTemplates.
  *
  * Date: 2014/04/16
  * Time: 13:23
