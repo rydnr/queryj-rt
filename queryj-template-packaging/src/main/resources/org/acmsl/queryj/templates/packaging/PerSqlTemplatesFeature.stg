@@ -47,9 +47,11 @@ source(C) ::= <<
 <sourceImpl(sql=C.sql, C=C)>
 >>
 
-sourceImpl(C) ::= <<
+sourceImpl(sql, C) ::= <<
 <!
   Generates PerSqlTemplates.feature files.
+  @param sql the SQL.
+  @param C the context.
 !>
 Feature: Per-SQL templates
 
@@ -57,7 +59,7 @@ Feature: Per-SQL templates
 
     Given the following tables:
     |    table     | parent table | decorated | relationship |   static    |
-    | g_draws      |              |           |              |             |
+    | <sql.g_draws      |              |           |              |             |
     | g_draw_types |              |           |              | description |
 
     And the following columns:
