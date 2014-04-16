@@ -34,8 +34,7 @@
 // Author: Jose San Leandro Armendariz
 //
 // Description: Defines the rules to generate
-//              PerCustomResultTemplates.feature
-//              Cucumber tests
+//              PerCustomResultTemplates.feature Cucumber tests
 //
 group PerRepositoryTemplatesFeature;
 
