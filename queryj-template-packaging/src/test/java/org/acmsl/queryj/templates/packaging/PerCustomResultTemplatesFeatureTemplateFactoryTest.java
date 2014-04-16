@@ -1,5 +1,5 @@
 /*
-                        queryj
+                        QueryJ Template Packaging
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for PerCustomResultTemplatesFeatureTemplateFactory.
  *
  * Date: 2014/04/16
  * Time: 15:40
@@ -50,7 +50,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * Tests for {@link PerCustomResultTemplatesFeatureTemplateFactory}
+ * Tests for {@link PerCustomResultTemplatesFeatureTemplateFactory}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/16 15:40
