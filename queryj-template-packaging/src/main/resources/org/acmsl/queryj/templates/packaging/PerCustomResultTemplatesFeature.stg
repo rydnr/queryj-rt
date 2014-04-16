@@ -44,7 +44,7 @@ source(C) ::= <<
 <!
   Generates PerCustomResultTemplates.feature files.
 !>
-<sourceImpl(result=C.result, tables=C.tables, C=C)>
+<sourceImpl(result=C.result, C=C)>
 >>
 
 sourceImpl(repository, tables, C) ::= <<
