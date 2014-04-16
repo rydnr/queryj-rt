@@ -60,7 +60,7 @@ import java.util.Arrays;
 @ThreadSafe
 public class PerRepositoryTemplatesFeatureTemplate
     extends AbstractTemplatePackagingTemplate<GlobalTemplateContext>
-{{
+{
     /**
      * Builds a PerTableTemplatesFeature using given context.
      * @param context the {@link org.acmsl.queryj.api.PerRepositoryTemplateContext}.
