@@ -42,7 +42,7 @@ import "common.stg"
 
 source(C) ::= <<
 <!
-  Generates PerRepositoryTemplates.feature files.
+  Generates PerCustomResultTemplates.feature files.
 !>
 <sourceImpl(repository=C.repository, tables=C.tables, C=C)>
 >>
