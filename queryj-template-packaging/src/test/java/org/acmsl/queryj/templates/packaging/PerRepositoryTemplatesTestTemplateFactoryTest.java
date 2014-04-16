@@ -38,12 +38,15 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Assert;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
@@ -56,4 +59,17 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class PerRepositoryTemplatesTestTemplateFactoryTest
 {
+    /**
+     * Tests whether createTemplate() creates a template.
+     */
+    @Test
+    public void createTemplate_creates_a_new_template()
+    {
+        @NotNull final PerTableTemplatesTestTemplateFactory instance =
+            PerTableTemplatesTestTemplateFactory.getInstance();
+
+        @NotNull final GlobalTemplateContext context = EasyMock.createNiceMock(GlobalTemplateContext.class);
+
+        Assert.assertNotNull(instance.createTemplate(context));
+    }
 }
