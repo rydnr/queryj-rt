@@ -58,7 +58,7 @@ public class PerCustomResultTemplatesFeatureTemplate
 {
     /**
      * Builds a {@link PerCustomResultTemplatesFeatureTemplate} with given context.
-     * @param context the {@link GlobalTemplateContext}
+     * @param context the {@link GlobalTemplateContext context}.
      */
     public PerCustomResultTemplatesFeatureTemplate(@NotNull final GlobalTemplateContext context)
     {
