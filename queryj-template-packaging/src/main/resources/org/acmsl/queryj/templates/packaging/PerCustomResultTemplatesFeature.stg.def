@@ -2,7 +2,7 @@
  * PerRepositoryTemplatesFeature template metadata.
  */
 // The template name (the filename).
-name : PerRepositoryTemplatesFeature.stg;
+name : PerCustomResultTemplatesFeature.stg;
 
 // The type of template: per-table, per-repository, per-foreign-key, per-custom-result, per-sql.
 type : per-custom-result;
