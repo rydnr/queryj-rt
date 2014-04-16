@@ -54,5 +54,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class PerCustomResultTemplatesFeatureTemplate
+    extends AbstractTemplatePackagingTemplate<GlobalTemplateContext>
 {
+
 }
