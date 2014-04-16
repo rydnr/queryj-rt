@@ -60,7 +60,7 @@ Feature: Classes associated to custom results compile
     | result | dao | type |
     | <result:{ r | <cucumber_custom_result_declaration(result=r)>}; separator="\n">
 
-    Given the following custom result:
+    And the following custom result properties:
     | result | dao | type |
     | <result:{ r | <cucumber_custom_result_declaration(result=r)>}; separator="\n">
 
