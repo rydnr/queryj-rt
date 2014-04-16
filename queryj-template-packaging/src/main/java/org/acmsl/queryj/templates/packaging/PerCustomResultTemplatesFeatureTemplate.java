@@ -56,6 +56,7 @@ import org.checkthread.annotations.ThreadSafe;
 public class PerCustomResultTemplatesFeatureTemplate
     extends AbstractTemplatePackagingTemplate<GlobalTemplateContext>
 {
+
     /**
      * Builds a {@link PerCustomResultTemplatesFeatureTemplate} with given context.
      * @param context the {@link GlobalTemplateContext context}.
