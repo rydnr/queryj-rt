@@ -52,7 +52,7 @@ sourceImpl(result, C) ::= <<
   Generates PerCustomResultTemplates.feature files.
   @param result the custom result.
 !>
-Feature: classes associated to custom results compile
+Feature: Classes associated to custom results compile
 
   Scenario Outline: Templates bound to <C.repository> compile
 
