@@ -61,6 +61,10 @@ import java.util.Arrays;
 public class PerRepositoryTemplatesFeatureTemplate
     extends AbstractTemplatePackagingTemplate<GlobalTemplateContext>
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = 7986340064857909415L;
 
     /**
      * Builds a {@code PerRepositoryTemplatesFeature} using given context.
