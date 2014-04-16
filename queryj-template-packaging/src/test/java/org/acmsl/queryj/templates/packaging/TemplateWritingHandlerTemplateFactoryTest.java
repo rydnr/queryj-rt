@@ -102,7 +102,7 @@ public class TemplateWritingHandlerTemplateFactoryTest
     @Test
     public void createTemplate_returns_the_correct_template_for_a_per_foreign_key_template()
     {
-        testCreateTemplate(TemplateDefType.PER_FOREIGN_KEY, "PerForeignKeyTemplateWritingHandler");
+        testCreateTemplate(TemplateDefType.PER_FOREIGN_KEY, Literals.PER_FOREIGN_KEY_TEMPLATE_WRITING_HANDLER"PerForeignKeyTemplateWritingHandler");
     }
 
     /**
