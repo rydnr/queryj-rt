@@ -10,6 +10,7 @@
 **** DONE #476
 **** DONE #477
 *** PerXXXTemplatesFeatureTemplateFactory
+**** TODO #474
 *** PerXXXTemplatesTestTemplate
 *** PerXXXTemplatesTestTemplateFactory
 *** PerXXXTemplatesTestTemplateBuildHandler
