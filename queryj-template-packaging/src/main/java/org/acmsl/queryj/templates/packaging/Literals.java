@@ -117,4 +117,20 @@ public interface Literals
      * String literal: "PerCustomResultTemplatesFeature".
      */
     String PER_CUSTOM_RESULT_TEMPLATES_FEATURE = "PerCustomResultTemplatesFeature";
+    /**
+     * String literal: "PerSqlTemplatesFeature".
+     */
+    String PER_SQL_TEMPLATES_FEATURE = "PerSqlTemplatesFeature";
+    /**
+     * String literal: "PerForeignKeyTemplatesFeature".
+     */
+    String PER_FOREIGN_KEY_TEMPLATES_FEATURE = "PerForeignKeyTemplatesFeature";
+    /**
+     * String literal: "PerRepositoryTemplatesTest".
+     */
+    String PER_REPOSITORY_TEMPLATES_TEST = "PerRepositoryTemplatesTest";
+    /**
+     * String literal: "PerCustomResultTemplatesTest".
+     */
+    String PER_CUSTOM_RESULT_TEMPLATES_TEST = "PerCustomResultTemplatesTest";
 }
