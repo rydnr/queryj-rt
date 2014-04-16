@@ -92,8 +92,8 @@ public class PerForeignKeyTemplatesTestTemplateBuildHandlerTest
     @Test
     public void storeTemplate_stores_the_templates_in_the_command()
     {
-        @NotNull final PerTableTemplatesTestTemplateBuildHandler instance =
-            new PerTableTemplatesTestTemplateBuildHandler();
+        @NotNull final PerForeignKeyTemplatesTestTemplateBuildHandler instance =
+            new PerForeignKeyTemplatesTestTemplateBuildHandler();
 
         @NotNull final QueryJCommand command =
             new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
@@ -103,7 +103,7 @@ public class PerForeignKeyTemplatesTestTemplateBuildHandlerTest
 
         instance.storeTemplate(template, command);
 
-        Assert.assertEquals(template, command.getSetting(PerTableTemplatesTestTemplateBuildHandler.TEMPLATES_KEY));
+        Assert.assertEquals(template, command.getSetting(PerForeignKeyTemplatesTestTemplateBuildHandler.TEMPLATES_KEY));
     }
 
     /**
