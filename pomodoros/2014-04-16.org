@@ -5,7 +5,8 @@
 * Notes:
 ** Each of #474, #475, #476, #477 requires:
 *** PerXXXTemplatesFeatureTemplate
-**** TODO #474
+**** DONE #474
+**** TODO #475
 *** PerXXXTemplatesFeatureTemplateFactory
 *** PerXXXTemplatesTestTemplate
 *** PerXXXTemplatesTestTemplateFactory
