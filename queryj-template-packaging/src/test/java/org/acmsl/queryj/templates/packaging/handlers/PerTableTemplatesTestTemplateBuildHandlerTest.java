@@ -89,7 +89,7 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
      * Checks whether storeTemplate
      */
     @Test
-    public void storeTemplates_stores_the_templates_in_the_command()
+    public void storeTemplate_stores_the_templates_in_the_command()
     {
         @NotNull final PerTableTemplatesTestTemplateBuildHandler instance =
             new PerTableTemplatesTestTemplateBuildHandler();
