@@ -146,7 +146,7 @@ public class PerForeignKeyTemplatesTestTemplateBuildHandlerTest
             new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
         new QueryJCommandWrapper<File>(command).setSetting(
-            PerTableTemplatesTestTemplate.OUTPUT_DIR_FOR_TESTS, new File("/"));
+            PerForeignKeyTemplatesTestTemplate.OUTPUT_DIR_FOR_TESTS, new File("/"));
 
         @NotNull final List<TemplateDef<String>> templateDefs = new ArrayList<>(0);
 
