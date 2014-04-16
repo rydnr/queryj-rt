@@ -88,4 +88,5 @@ indirect_template(def, engineName, tableName) ::= <<
 | <def.name; format="%-30s"> | <(def.filenameRule)(engineName, tableName)> |
 >>
 
-cucumber_column_specification(attribute)
+cucumber_column_specification(attribute) ::= <<
+<! Generates the specification for a column !>
