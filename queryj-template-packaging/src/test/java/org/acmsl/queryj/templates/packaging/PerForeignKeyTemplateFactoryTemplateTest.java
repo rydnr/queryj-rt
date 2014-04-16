@@ -63,6 +63,6 @@ public class PerForeignKeyTemplateFactoryTemplateTest
         @NotNull final PerForeignKeyTemplateFactoryTemplate instance =
             new PerForeignKeyTemplateFactoryTemplate<>(context);
 
-        Assert.assertEquals("PerForeignKeyTemplateFactory", instance.getTemplateName());
+        Assert.assertEquals(Literals.PER_FOREIGN_KEY_TEMPLATE_FACTORY"PerForeignKeyTemplateFactory", instance.getTemplateName());
     }
 }
