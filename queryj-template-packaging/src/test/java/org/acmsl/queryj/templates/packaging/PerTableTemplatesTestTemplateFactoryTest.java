@@ -60,6 +60,9 @@ public class PerTableTemplatesTestTemplateFactoryTest
     @Test
     public void createTemplate_creates_a_new_template()
     {
+        @NotNull final PerTableTemplatesTestTemplateFactory instance =
+            PerTableTemplatesTestTemplateFactory.getInstance();
 
+        Assert.assertNotNull()
     }
 }
