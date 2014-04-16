@@ -123,6 +123,9 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
         Assert.assertEquals(PerTableTemplatesTestTemplateFactory.getInstance(), instance.retrieveTemplateFactory());
     }
 
+    /**
+     * Checks whether the output package is the Cucumber's.
+     */
     @Test
     public void retrieveOutputPackage_returns_the_cucumber_package()
     {
