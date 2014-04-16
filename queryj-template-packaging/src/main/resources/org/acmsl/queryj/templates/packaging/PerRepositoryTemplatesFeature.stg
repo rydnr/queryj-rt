@@ -46,7 +46,7 @@ source(C) ::= <<
 !>
 Feature: <repository>-wide classes compile
 
-  Scenario Outline: Templates bound to <fk.sourceTableName>' foreign keys compile
+  Scenario Outline: Templates bound to <C.rep>' foreign keys compile
 
     Given the table containing the foreign key is:
     |    table     | parent table | decorated | relationship |   static    |
