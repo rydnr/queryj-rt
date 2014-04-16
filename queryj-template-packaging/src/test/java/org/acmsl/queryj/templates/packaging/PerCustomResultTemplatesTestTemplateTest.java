@@ -1,5 +1,5 @@
 /*
-                        queryj
+                        QueryJ Template Packaging
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for PerCustomResultTemplatesTestTemplate.
  *
  * Date: 2014/04/16
  * Time: 16:27
@@ -38,15 +38,18 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Assert;
+import org.junit.Test;
 
 /**
- *
+ * Tests for {@link PerCustomResultTemplatesTestTemplate}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/16 16:27
@@ -54,4 +57,17 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public class PerCustomResultTemplatesTestTemplateTest
 {
+    /**
+     * Checks the template name is correct.
+     */
+    @Test
+    public void templateName_is_correct()
+    {
+        @NotNull final GlobalTemplateContext context = EasyMock.createNiceMock(GlobalTemplateContext.class);
+
+        @NotNull final PerCustomResultTemplatesTestTemplate instance =
+            new PerCustomResultTemplatesTestTemplate(context);
+
+        Assert.assertEquals(Literals.PER_CUSTOM_RESULT_TEMPLATES_TEST, instance.getTemplateName());
+    }
 }
