@@ -77,6 +77,6 @@ public class PerSqlTemplatesFeatureTemplate
     @Override
     public String getTemplateName()
     {
-        return null;
+        return Literals.PER_SQL_TEMPLATES_FEATURE;
     }
 }
