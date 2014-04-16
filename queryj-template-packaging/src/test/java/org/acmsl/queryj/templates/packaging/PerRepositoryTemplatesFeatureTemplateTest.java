@@ -83,6 +83,6 @@ public class PerRepositoryTemplatesFeatureTemplateTest
         @NotNull final PerRepositoryTemplatesFeatureTemplate instance =
             new PerRepositoryTemplatesFeatureTemplate(context);
 
-        Assert.assertEquals(Literals.PER_REPOSITORY_TEMPLATES_FEATURE, instance.getTemplateName());
+        Assert.assertNotNull(Literals.PER_REPOSITORY_TEMPLATES_FEATURE, instance.getTemplateName());
     }
 }
