@@ -64,4 +64,6 @@ public class PerCustomResultTemplatesFeatureTemplate
     {
         super(context);
     }
+
+
 }
