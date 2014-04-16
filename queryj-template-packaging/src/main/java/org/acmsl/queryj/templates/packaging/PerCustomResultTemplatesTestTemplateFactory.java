@@ -77,7 +77,7 @@ public class PerCustomResultTemplatesTestTemplateFactory
     @NotNull
     public static PerRepositoryTemplatesTestTemplateFactory getInstance()
     {
-        return PerRepositoryTemplatesTestTemplateFactorySingletonContainer.SINGLETON;
+        return PerCustomResultTemplatesTestTemplateFactorySingletonContainer.SINGLETON;
     }
 
     /**
