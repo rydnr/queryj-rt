@@ -78,8 +78,3 @@ cucumber_table_declaration(attribute) ::= <<
 <! Declares the table metadata in Cucumber format !>
 | <table.name> | <table.parent> | <table.decorated> | <table.relationship> | <table.statit> |
 >>
-
-cucumber_pk_declaration(attribute) ::= <<
-<! Declares the attribute metadata in Cucumber format !>
-| <attribute.table.name> | <attribute.name> | <attribute.type> | true | <attribute.nullable> | <attribute.readOnly> | <attribute.sequence> | <attribute.keyword> | <attribute.boolean> | <attribute.length> | <attribute.precision> |
->>
