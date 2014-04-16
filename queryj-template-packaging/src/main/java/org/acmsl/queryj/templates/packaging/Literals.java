@@ -94,7 +94,7 @@ public interface Literals
      */
     String PER_TABLE_TEMPLATES_FEATURE = "PerTableTemplatesFeature";
     /**
-     * String literal: "
+     * String literal: "package".
      */
     String PACKAGE = org.acmsl.queryj.Literals.PACKAGE;
     String ORG_ACMSL_QUERYJ_TEMPLATES_PACKAGING = "org/acmsl/queryj/templates/packaging/";
