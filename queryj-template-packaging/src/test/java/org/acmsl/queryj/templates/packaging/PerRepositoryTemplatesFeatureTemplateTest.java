@@ -62,6 +62,6 @@ public class PerRepositoryTemplatesFeatureTemplateTest
     {
         @NotNull final PerRepositoryTemplatesFeatureTemplate instance = new PerRepositoryTemplatesFeatureTemplate();
 
-        Assert.assertEquals("PerRepositoryTemplatesFeature")
+        Assert.assertEquals("PerRepositoryTemplatesFeature", instance.getTemplateName());
     }
 }
