@@ -54,7 +54,7 @@ sourceImpl(result, C) ::= <<
 !>
 Feature: Classes associated to custom results compile
 
-  Scenario Outline: CustomTemplates bound to <C.repository> compile
+  Scenario Outline: Custom result templates bound to <C.repository> compile
 
     Given the repository whose name is \<repository>, composed of :
     | table | parent table | decorated | relationship |   static    |
