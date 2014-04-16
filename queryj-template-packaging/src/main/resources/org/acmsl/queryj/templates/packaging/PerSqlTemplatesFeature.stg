@@ -59,7 +59,7 @@ Feature: Per-SQL templates
 
     Given the following tables:
     |    table     | parent table | decorated | relationship |   static    |
-    | <sql.dao>      |              |           |              |             |
+    | <sql.dao>     |              |           |              |             |
     | g_draw_types |              |           |              | description |
 
     And the following columns:
