@@ -66,7 +66,7 @@ public class PerCustomResultTemplatesTestTemplateFactory
         /**
          * The actual singleton.
          */
-        public static final PerRepositoryTemplatesTestTemplateFactory SINGLETON =
+        public static final PerCustomResultTemplatesTestTemplateFactory SINGLETON =
             new PerRepositoryTemplatesTestTemplateFactory();
     }
 
