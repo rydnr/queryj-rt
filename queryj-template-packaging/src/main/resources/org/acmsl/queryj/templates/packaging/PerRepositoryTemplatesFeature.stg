@@ -76,7 +76,7 @@ indirect_template(def, engineName, tableName) ::= <<
 
 cucumber_table_declaration(attribute) ::= <<
 <! Declares the table metadata in Cucumber format !>
-| <table.table.name> | <attribute.name> | <attribute.type> | false | <attribute.nullable> | <attribute.readOnly> | <attribute.sequence> | <attribute.keyword> | <attribute.boolean> | <attribute.length> | <attribute.precision> |
+| <table.name> | <attribute.name> | <attribute.type> | false | <attribute.nullable> | <attribute.readOnly> | <attribute.sequence> | <attribute.keyword> | <attribute.boolean> | <attribute.length> | <attribute.precision> |
 >>
 
 cucumber_pk_declaration(attribute) ::= <<
