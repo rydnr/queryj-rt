@@ -57,7 +57,7 @@ Feature: Per-SQL templates
 
   Scenario Outline: Per-SQL templates compile for a type 1 table
 
-    Given the following queries:
+    Given the following tables associated to :
     |    id
     |    table     | parent table | decorated | relationship |   static    |
     | <sql.dao>     |              |           |              |             |
