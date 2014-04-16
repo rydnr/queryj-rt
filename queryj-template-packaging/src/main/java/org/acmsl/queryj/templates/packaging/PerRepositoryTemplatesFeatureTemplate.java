@@ -52,7 +52,7 @@ import org.stringtemplate.v4.STGroupString;
 import java.util.Arrays;
 
 /**
- *
+ * Used to generate sources using PerTableTemplatesFeature.stg.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/16 06:04
