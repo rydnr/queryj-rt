@@ -99,6 +99,6 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
 
         instance.storeTemplate(template, command);
 
-        Assert.assertEquals()
+        Assert.assertEquals(command.getSetting())
     }
 }
