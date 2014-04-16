@@ -3,6 +3,24 @@
 ** TODO #476: Support per-custom result templates: 3 ->  
 ** TODO #477: Support per-sql templates: 3 -> 
 * Notes:
+** Each of #474, #475, #476, #477 requires:
+*** PerXXXTemplatesFeatureTemplate
+**** TODO #474
+*** PerXXXTemplatesFeatureTemplateFactory
+*** PerXXXTemplatesTestTemplate
+*** PerXXXTemplatesTestTemplateFactory
+*** PerXXXTemplatesTestTemplateBuildHandler
+*** PerXXXTemplatesTestTemplateHandlerBundle
+*** PerXXXTemplatesTestTemplateWritingHandler
+*** PerXXXTemplateFactory.stg
+*** PerXXXTemplatesFeature.stg
+*** PerXXXTemplatesFeature.stg.def
+*** PerXXXTemplatesTest.stg
+*** PerXXXTemplateWritingHandler.stg
+*** XXXTestHelper
+*** Add PerXXXTemplatesTestTemplateHandlerBundle to TemplatePackagingChain
+*** Add case to TemplateFactoryTemplateFactory
+*** Add case to TemplateWritingHandlerTemplateFactory
 ** GOAL : Deliver QueryJ 3.0 ASAP
 *** Find out which templates are affected by the order of columns: 
 **** DONE ValueObject.stg
