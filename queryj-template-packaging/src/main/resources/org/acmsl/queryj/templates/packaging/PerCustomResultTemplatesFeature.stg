@@ -56,7 +56,7 @@ Feature: Classes associated to custom results compile
 
   Scenario Outline: Custom result templates work
 
-    Given the following custom results:
+    Given the following custom result:
     | result | dao | type |
     | <result:{ t | <cucumber_table_declaration(table=t)>}; separator="\n">
 
