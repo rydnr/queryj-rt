@@ -65,5 +65,15 @@ public class PerCustomResultTemplatesFeatureTemplate
         super(context);
     }
 
-
+    /**
+     * Retrieves the template name.
+     *
+     * @return such name.
+     */
+    @NotNull
+    @Override
+    public String getTemplateName()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
 }
