@@ -35,6 +35,9 @@
  */
 package org.acmsl.queryj.templates.packaging;
 
+/*
+ * Importing
+ */
 import org.acmsl.commons.patterns.Singleton;
 
 /*
