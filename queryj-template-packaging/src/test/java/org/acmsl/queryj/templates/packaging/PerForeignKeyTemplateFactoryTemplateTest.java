@@ -49,7 +49,6 @@ import org.junit.Test;
  * @since 3.0
  * Created 2014/04/14
  */
-@ThreadSafe
 public class PerForeignKeyTemplateFactoryTemplateTest
 {
     /**
