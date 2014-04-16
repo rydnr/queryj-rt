@@ -106,7 +106,7 @@ public interface Literals
      */
     String PER_FOREIGN_KEY_TEMPLATE_FACTORY = "PerForeignKeyTemplateFactory";
     /**
-     * String literal:
+     * String literal: "PerRepositoryTemplatesFeature".
      */
     String PER_REPOSITORY_TEMPLATES_FEATURE = "PerRepositoryTemplatesFeature";
 }
