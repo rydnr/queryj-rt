@@ -15,7 +15,10 @@
 **** DONE #476
 **** DONE #477
 *** PerXXXTemplatesTestTemplate
-**** TODO #474
+**** DONE #474
+**** DONE #475
+**** DONE #476
+**** TODO #477
 *** PerXXXTemplatesTestTemplateFactory
 *** PerXXXTemplatesTestTemplateBuildHandler
 *** PerXXXTemplatesTestTemplateHandlerBundle
@@ -32,10 +35,6 @@
 **** DONE #477
 
 *** PerxxxTemplatesTest.stg
-**** DONE #474
-**** DONE #475
-**** DONE #476
-**** TODO #477
 *** PerXXXTemplateWritingHandler.stg
 *** XXXTestHelper
 *** Add PerXXXTemplatesTestTemplateHandlerBundle to TemplatePackagingChain
