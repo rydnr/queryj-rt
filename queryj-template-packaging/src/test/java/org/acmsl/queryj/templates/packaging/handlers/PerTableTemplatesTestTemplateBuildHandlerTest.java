@@ -51,10 +51,10 @@ import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplate;
  * Importing Apache Commons Configuration classes.
  */
 import org.apache.commons.configuration.PropertiesConfiguration;
+
 /*
  * Importing JetBrains annotations.
  */
-import org.apache.commons.configuration.PropertiesConfiguration;
 import org.jetbrains.annotations.NotNull;
 
 /*
