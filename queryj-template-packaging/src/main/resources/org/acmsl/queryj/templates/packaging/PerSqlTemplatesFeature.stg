@@ -29,24 +29,24 @@
 //
 //***************************************************************************
 //
-// Filename: PerTableTemplatesFeature.stg
+// Filename: PerSqlTemplatesFeature.stg
 //
 // Author: Jose San Leandro Armendariz
 //
-// Description: Defines the rules to generate PerTableTemplates.feature
+// Description: Defines the rules to generate PerSqlTemplates.feature
 //              Cucumber tests
 //
-group PerTableTemplatesFeature;
+group PerSqlTemplatesFeature;
 
 import "common.stg"
 
 source(C) ::= <<
 <!
-  Generates PerTableTemplates.feature files.
+  Generates PerSqlTemplates.feature files.
 !>
-Feature: Per-table templates
+Feature: Per-SQL templates
 
-  Scenario Outline: Per-table templates compile for a type 1 table
+  Scenario Outline: Per-SQL templates compile for a type 1 table
 
     Given the following tables:
     |    table     | parent table | decorated | relationship |   static    |
