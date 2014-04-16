@@ -88,9 +88,9 @@ indirect_template(def, engineName, tableName) ::= <<
 | <def.name; format="%-30s"> | <(def.filenameRule)(engineName, tableName)> |
 >>
 
-cucumber_parameter_specification(parameter ::= <<
-<! Generates the specification for a column !>
-| <attribute.table> | <attribute.name> | <attribute.type> | <attribute.pk> | <attribute.nullable> | <attribute.readonly> | <attribute.sequence> | <attribute.keyword> | <attribute.length> | <attribute.precision> |
+cucumber_parameter_specification(parameter) ::= <<
+<! Generates the specification for a parameter !>
+| <parameter.id> | <parameter.name> | <attribute.type> | <attribute.pk> | <attribute.nullable> | <attribute.readonly> | <attribute.sequence> | <attribute.keyword> | <attribute.length> | <attribute.precision> |
 >>
 
 cucumber_column_specification(attribute) ::= <<
