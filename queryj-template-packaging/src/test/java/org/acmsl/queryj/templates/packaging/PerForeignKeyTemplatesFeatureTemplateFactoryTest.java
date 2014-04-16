@@ -38,6 +38,7 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.metadata.engines.UndefinedJdbcEngine;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -83,6 +84,6 @@ public class PerForeignKeyTemplatesFeatureTemplateFactoryTest
         @NotNull final PerForeignKeyTemplatesFeatureTemplateFactory instance =
             PerForeignKeyTemplatesFeatureTemplateFactory.getInstance();
 
-        Assert.assertNotNull(instance.retrieveTemplateFileName("repo"));
+        Assert.assertNotNull(instance.retrieveTemplateFileName("repo", new UndefinedJdbcEngine()));
     }
 }
