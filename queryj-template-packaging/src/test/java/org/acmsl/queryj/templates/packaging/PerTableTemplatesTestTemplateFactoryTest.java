@@ -59,6 +59,9 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class PerTableTemplatesTestTemplateFactoryTest
 {
+    /**
+     *
+     */
     @Test
     public void createTemplate_creates_a_new_template()
     {
