@@ -152,7 +152,7 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
 
         @NotNull final QueryJCommand command = EasyMock.createNiceMock(QueryJCommand.class);
 
-        @NotNull final List<TemplateDef> templateDefs = new ArrayList<>(0);
+        @NotNull final List<TemplateDef<String>> templateDefs = new ArrayList<>(0);
 
         Assert.assertNotNull(instance.buildContext(templateDefs, command));
     }
