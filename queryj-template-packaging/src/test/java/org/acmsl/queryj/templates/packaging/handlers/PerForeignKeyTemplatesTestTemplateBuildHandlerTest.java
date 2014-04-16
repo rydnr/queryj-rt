@@ -59,7 +59,7 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 /*
- * Importing JUnit/
+ * Importing JUnit/EasyMock classes.
  */
 import org.junit.Assert;
 import org.junit.Test;
