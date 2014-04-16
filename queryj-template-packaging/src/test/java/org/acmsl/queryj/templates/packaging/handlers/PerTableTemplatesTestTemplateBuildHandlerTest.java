@@ -86,7 +86,7 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
     }
 
     /**
-     * Checks whether storeTemplate
+     * Checks whether storeTemplate()
      */
     @Test
     public void storeTemplate_stores_the_templates_in_the_command()
