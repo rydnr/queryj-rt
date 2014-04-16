@@ -23,7 +23,7 @@
 
  ******************************************************************************
  *
- * Filename: PerCustomSqlTemplatesFeatureTemplateFactoryTest.java
+ * Filename: PerSqlTemplatesFeatureTemplateFactoryTest.java
  *
  * Author: Jose San Leandro Armendariz
  *
@@ -68,8 +68,8 @@ public class PerSqlTemplatesFeatureTemplateFactoryTest
     {
         @NotNull final GlobalTemplateContext context = EasyMock.createNiceMock(GlobalTemplateContext.class);
 
-        @NotNull final PerCustomSqlTemplatesFeatureTemplateFactory instance =
-            PerForeignKeyTemplatesFeatureTemplateFactory.getInstance();
+        @NotNull final PerSqlTemplatesFeatureTemplateFactory instance =
+            PerSqlTemplatesFeatureTemplateFactory.getInstance();
 
         Assert.assertNotNull(instance.createTemplate(context));
     }
