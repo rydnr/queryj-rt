@@ -75,7 +75,7 @@ public class PerSqlTemplatesTestTemplateFactory
      * @return such instance.
      */
     @NotNull
-    public static PerCustomResultTemplatesTestTemplateFactory getInstance()
+    public static PerSqlTemplatesTestTemplateFactory getInstance()
     {
         return PerSqlTemplatesTestTemplateFactorySingletonContainer.SINGLETON;
     }
