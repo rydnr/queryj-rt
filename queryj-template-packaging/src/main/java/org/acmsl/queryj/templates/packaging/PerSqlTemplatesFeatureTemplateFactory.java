@@ -36,20 +36,32 @@
 package org.acmsl.queryj.templates.packaging;
 
 /*
- * Importing JetBrains annotations.
+ * Importing ACM S.L Java Commons classes.
  */
 import org.acmsl.commons.patterns.Singleton;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.acmsl.queryj.metadata.DecoratedString;
 import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.engines.Engine;
 import org.acmsl.queryj.metadata.engines.EngineDecorator;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
-import org.jetbrains.annotations.Nullable;
+
+/*
+ * Importing StringTemplate 4 classes.
+ */
 import org.stringtemplate.v4.ST;
 
 /**
@@ -60,19 +72,19 @@ import org.stringtemplate.v4.ST;
  */
 @ThreadSafe
 public class PerSqlTemplatesFeatureTemplateFactory
-    implements TemplatePackagingTemplateFactory<PerRepositoryTemplatesFeatureTemplate, GlobalTemplateContext>,
+    implements TemplatePackagingTemplateFactory<PerSqlTemplatesFeatureTemplate, GlobalTemplateContext>,
                Singleton
 {
     /**
      * Singleton instance to avoid double-locking check.
      */
-    protected static final class PerRepositoryTemplatesFeatureTemplateFactorySingletonContainer
+    protected static final class PerSqlTemplatesFeatureTemplateFactorySingletonContainer
     {
         /**
          * The actual singleton.
          */
-        public static final PerRepositoryTemplatesFeatureTemplateFactory SINGLETON =
-            new PerRepositoryTemplatesFeatureTemplateFactory();
+        public static final PerSqlTemplatesFeatureTemplateFactory SINGLETON =
+            new PerSqlTemplatesFeatureTemplateFactory();
     }
 
     /**
@@ -80,9 +92,9 @@ public class PerSqlTemplatesFeatureTemplateFactory
      * @return such instance.
      */
     @NotNull
-    public static PerRepositoryTemplatesFeatureTemplateFactory getInstance()
+    public static PerSqlTemplatesFeatureTemplateFactory getInstance()
     {
-        return PerRepositoryTemplatesFeatureTemplateFactorySingletonContainer.SINGLETON;
+        return PerSqlTemplatesFeatureTemplateFactorySingletonContainer.SINGLETON;
     }
 
     /**
@@ -93,9 +105,9 @@ public class PerSqlTemplatesFeatureTemplateFactory
      */
     @Nullable
     @Override
-    public PerRepositoryTemplatesFeatureTemplate createTemplate(@NotNull final GlobalTemplateContext context)
+    public PerSqlTemplatesFeatureTemplate createTemplate(@NotNull final GlobalTemplateContext context)
     {
-        return new PerRepositoryTemplatesFeatureTemplate(context);
+        return new PerSqlTemplatesFeatureTemplate(context);
     }
 
     /**
@@ -124,7 +136,7 @@ public class PerSqlTemplatesFeatureTemplateFactory
         @NotNull final String result;
 
         @NotNull final ST template =
-            new ST("PerRepositoryTemplates.feature");
+            new ST("PerSqlTemplates.feature");
 
         template.add(Literals.REPOSITORY, new DecoratedString(repository));
         template.add(org.acmsl.queryj.Literals.ENGINE, new EngineDecorator(engine));
