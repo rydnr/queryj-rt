@@ -74,6 +74,6 @@ public class PerCustomResultTemplatesFeatureTemplate
     @Override
     public String getTemplateName()
     {
-        return Literals.PER_REPOSITORY_TEMPLATES_FEATURE;
+        return Literals.PER_CUSTOM_RESULT_TEMPLATES_FEATURE;
     }
 }
