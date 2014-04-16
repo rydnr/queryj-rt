@@ -62,9 +62,12 @@ public interface Literals
      */
     String PER_TABLE_TEMPLATES_TEST = "PerTableTemplatesTest";
     /**
-     *
+     * String literal: "PerForeignKeyTemplatesTest".
      */
     String PER_FOREIGN_KEY_TEMPLATES_TEST = "PerForeignKeyTemplatesTest";
+    /**
+     *
+     */
     String TEMPLATE_BUILD_HANDLER = "TemplateBuildHandler";
     String DOT_HANDLERS = ".handlers";
     String TEMPLATE_FACTORY = "TemplateFactory";
