@@ -65,6 +65,7 @@ import org.checkthread.annotations.ThreadSafe;
 /*
  * Importing JUnit/EasyMock classes.
  */
+import org.easymock.EasyMock;
 import org.junit.Assert;
 import org.junit.Test;
 
