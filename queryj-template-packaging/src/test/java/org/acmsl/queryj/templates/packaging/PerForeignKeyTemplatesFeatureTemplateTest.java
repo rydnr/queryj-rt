@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for {@link PerForeignKeyTemplatesFeatureTemplate}.
  *
  * Date: 2014/04/16
  * Time: 13:07
@@ -51,7 +51,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 /**
- * Tests for {@link PerRepositoryTemplatesFeatureTemplate}.
+ * Tests for {@link PerForeignKeyTemplatesFeatureTemplate}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/16 13:07
