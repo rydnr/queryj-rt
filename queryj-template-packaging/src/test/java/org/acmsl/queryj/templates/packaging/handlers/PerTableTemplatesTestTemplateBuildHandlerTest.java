@@ -72,6 +72,6 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
 
         @NotNull final QueryJCommand command = EasyMock.createNiceMock(QueryJCommand.class);
 
-        Assert.assertEquals(Literals.PER_TABLE_TEMPLATES_TEST, instance.retrieveTemplateName(parameters));
+        Assert.assertEquals(Literals.PER_TABLE_TEMPLATES_TEST, instance.retrieveTemplateName(command));
     }
 }
