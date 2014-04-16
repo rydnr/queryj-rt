@@ -129,6 +129,8 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
         @NotNull final PerTableTemplatesTestTemplateBuildHandler instance =
             new PerTableTemplatesTestTemplateBuildHandler();
 
+        @NotNull final QueryJCommand command = EasyMock.createNiceMock(QueryJCommand.class);
+
         Assert.assertEquals(Literals.CUCUMBER_TEMPLATES, instance.retrieveOutputPackage(command));
     }
 }
