@@ -69,6 +69,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -154,8 +155,8 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
         @NotNull final QueryJCommand command =
             new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
-        new QueryJCommandWrapper<String>(command).setSetting(
-            PerTableTemplatesTestTemplate.OUTPUT_DIR_FOR_TESTS, "test");
+        new QueryJCommandWrapper<File>(command).setSetting(
+            PerTableTemplatesTestTemplate.OUTPUT_DIR_FOR_TESTS, File.createTempFile("", "", ""));
 
         @NotNull final List<TemplateDef<String>> templateDefs = new ArrayList<>(0);
 
