@@ -56,6 +56,10 @@ import org.checkthread.annotations.ThreadSafe;
 public class PerCustomResultTemplatesFeatureTemplate
     extends AbstractTemplatePackagingTemplate<GlobalTemplateContext>
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = -719114085008579188L;
 
     /**
      * Builds a {@link PerCustomResultTemplatesFeatureTemplate} with given context.
