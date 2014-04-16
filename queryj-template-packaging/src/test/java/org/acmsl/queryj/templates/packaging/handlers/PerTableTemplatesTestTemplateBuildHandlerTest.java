@@ -45,6 +45,7 @@ import org.acmsl.queryj.QueryJCommand;
  * Importing QueryJ Template Packaging classes.
  */
 import org.acmsl.queryj.templates.packaging.Literals;
+import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplate;
 
 /*
  * Importing JetBrains annotations.
