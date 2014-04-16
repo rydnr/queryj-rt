@@ -94,6 +94,9 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
         @NotNull final QueryJCommand command =
             new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
-        @NotNull final PerTableTemplatesTestTemplate template = EasyMock.createNiceMock(PerTableTemplatesTestTemplate.class);
+        @NotNull final PerTableTemplatesTestTemplate template =
+            EasyMock.createNiceMock(PerTableTemplatesTestTemplate.class);
+
+
     }
 }
