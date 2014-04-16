@@ -27,7 +27,8 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Used to generate sources using PerForeignKeyTemplatesFeature.stg.
+ * Description: Used to generate sources using
+ *              PerCustomResultTemplatesFeature.stg.
  *
  * Date: 2014/04/16
  * Time: 07:31
