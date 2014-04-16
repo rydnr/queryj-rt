@@ -44,6 +44,7 @@ import org.acmsl.queryj.QueryJCommand;
 /*
  * Importing QueryJ Template Packaging classes.
  */
+import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.templates.packaging.Literals;
 import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplate;
 
@@ -150,8 +151,10 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
         @NotNull final PerTableTemplatesTestTemplateBuildHandler instance =
             new PerTableTemplatesTestTemplateBuildHandler();
 
-        @NotNull final QueryJCommand command = EasyMock.createNiceMock(QueryJCommand.class);
+        @NotNull final QueryJCommand command =
+            new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
+        new QueryJCommandWrapper<String>(command).setSetting();
         @NotNull final List<TemplateDef<String>> templateDefs = new ArrayList<>(0);
 
         Assert.assertNotNull(instance.buildContext(templateDefs, command));
