@@ -11,7 +11,7 @@ type : per-repository;
 output: Cucumber;
 
 // The filename builder.
-filename  builder : PerForeignKeyTemplates.feature;
+filename  builder : PerRepositoryTemplates.feature;
 
 // The package.
 package: cucumber.templates;
