@@ -55,7 +55,7 @@ import org.jetbrains.annotations.Nullable;
  */
 @ThreadSafe
 public class PerSqlTemplatesTestTemplateFactory
-    implements TemplatePackagingTemplateFactory<PerCustomResultTemplatesTestTemplate, GlobalTemplateContext>,
+    implements TemplatePackagingTemplateFactory<PerSqlTemplatesTestTemplate, GlobalTemplateContext>,
                Singleton
 {
     /**
