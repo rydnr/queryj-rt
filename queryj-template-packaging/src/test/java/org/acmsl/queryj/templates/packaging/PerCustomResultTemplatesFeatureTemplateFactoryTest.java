@@ -66,14 +66,14 @@ public class PerCustomResultTemplatesFeatureTemplateFactoryTest
     {
         @NotNull final GlobalTemplateContext context = EasyMock.createNiceMock(GlobalTemplateContext.class);
 
-        @NotNull final PerRepositoryTemplatesFeatureTemplateFactory instance =
-            PerRepositoryTemplatesFeatureTemplateFactory.getInstance();
+        @NotNull final PerCustomResultTemplatesFeatureTemplateFactory instance =
+            PerCustomResultTemplatesFeatureTemplateFactory.getInstance();
 
         Assert.assertNotNull(instance.createTemplate(context));
     }
 
     /**
-     * Checks whether retrieveTemplateFileName() returns "PerRepositoryTemplates.feature".
+     * Checks whether retrieveTemplateFileName() returns "PerCustomResultTemplates.feature".
      */
     @Test
     public void retrieveTemplateFileName_retrieves_the_fixed_value()
