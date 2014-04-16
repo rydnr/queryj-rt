@@ -38,12 +38,14 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.commons.patterns.Singleton;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
 
 /**
  *
@@ -53,5 +55,41 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class PerSqlTemplatesTestTemplateFactory
+    implements TemplatePackagingTemplateFactory<PerCustomResultTemplatesTestTemplate, GlobalTemplateContext>,
+               Singleton
+{
+    /**
+     * Singleton instance to avoid double-locking check.
+     */
+    protected static final class PerCustomResultTemplatesTestTemplateFactorySingletonContainer
+    {
+        /**
+         * The actual singleton.
+         */
+        public static final PerCustomResultTemplatesTestTemplateFactory SINGLETON =
+            new PerCustomResultTemplatesTestTemplateFactory();
+    }
+
+    /**
+     * Retrieves the singleton instance.
+     * @return such instance.
+     */
+    @NotNull
+    public static PerCustomResultTemplatesTestTemplateFactory getInstance()
+    {
+        return PerCustomResultTemplatesTestTemplateFactorySingletonContainer.SINGLETON;
+    }
+
+    /**
+     * Generates a template.
+     * @param context the context.
+     * @return such template.
+     */
+    @Nullable
+    @Override
+    public PerCustomResultTemplatesTestTemplate createTemplate(@NotNull final GlobalTemplateContext context)
+    {
+        return new PerCustomResultTemplatesTestTemplate(context);
+    }
 {
 }
