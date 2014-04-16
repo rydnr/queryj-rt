@@ -57,6 +57,6 @@ import org.junit.runners.JUnit4;
 public class PerTableTemplatesTestTemplateBuildHandlerTest
 {
     /**
-     * Tests whether
+     * Tests whether retrieveTemplateName() works.
      */
 }
