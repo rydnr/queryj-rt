@@ -39,17 +39,19 @@ package org.acmsl.queryj.templates.packaging;
  * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
-import org.jetbrains.annotations.Nullable;
+
+/*
+ * Importing StringTemplate 4 classes.
+ */
 import org.stringtemplate.v4.ST;
 import org.stringtemplate.v4.STGroup;
 import org.stringtemplate.v4.STGroupString;
-
-import java.util.Arrays;
 
 /**
  * Used to generate sources using PerForeignKeyTemplatesFeature.stg.
