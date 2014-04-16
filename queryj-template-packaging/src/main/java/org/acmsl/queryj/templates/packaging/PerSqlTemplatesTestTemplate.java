@@ -59,7 +59,7 @@ public class PerSqlTemplatesTestTemplate
      * Builds a PerCustomResultTemplatesTest using given context.
      * @param context the {@link GlobalTemplateContext}.
      */
-    public PerCustomResultTemplatesTestTemplate(@NotNull final GlobalTemplateContext context)
+    public PerSqlTemplatesTestTemplate(@NotNull final GlobalTemplateContext context)
     {
         super(context);
     }
