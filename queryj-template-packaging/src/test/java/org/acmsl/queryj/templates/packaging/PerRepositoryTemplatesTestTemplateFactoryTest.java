@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for PerRepositoryTemplatesTestTemplateFactory.
  *
  * Date: 2014/04/16
  * Time: 21:16
