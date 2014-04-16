@@ -122,4 +122,7 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
 
         Assert.assertEquals(PerTableTemplatesTestTemplateFactory.getInstance(), instance.retrieveTemplateFactory());
     }
+
+    @Test
+    public
 }
