@@ -154,7 +154,9 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
         @NotNull final QueryJCommand command =
             new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
-        new QueryJCommandWrapper<String>(command).setSetting(PerTableTemplatesTestTemplate.OUTPUT_DIR_FOR_TESTS, "test");
+        new QueryJCommandWrapper<String>(command).setSetting(
+            PerTableTemplatesTestTemplate.OUTPUT_DIR_FOR_TESTS, "test");
+
         @NotNull final List<TemplateDef<String>> templateDefs = new ArrayList<>(0);
 
         Assert.assertNotNull(instance.buildContext(templateDefs, command));
