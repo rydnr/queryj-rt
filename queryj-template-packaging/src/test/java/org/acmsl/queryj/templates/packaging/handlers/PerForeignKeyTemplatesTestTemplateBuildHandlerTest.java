@@ -36,11 +36,13 @@
 package org.acmsl.queryj.templates.packaging.handlers;
 
 /*
- * Importing QueryJ Core classes.
+ * Importing Apache Commons Configuration classes.
  */
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 
-
+/*
+ * Importing QueryJ Core classes.
+ */
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.templates.packaging.Literals;
@@ -53,7 +55,6 @@ import org.easymock.EasyMock;
 /*
  * Importing JetBrains annotations.
  */
-import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
