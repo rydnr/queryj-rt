@@ -84,6 +84,6 @@ public class PerForeignKeyTemplatesFeatureTemplateFactoryTest
         @NotNull final PerForeignKeyTemplatesFeatureTemplateFactory instance =
             PerForeignKeyTemplatesFeatureTemplateFactory.getInstance();
 
-        Assert.assertNotNull(instance.retrieveTemplateFileName("repo", new UndefinedJdbcEngine("unknown", "")));
+        Assert.assertNotNull(instance.retrieveTemplateFileName("repo", new UndefinedJdbcEngine("unknown", "1.0")));
     }
 }
