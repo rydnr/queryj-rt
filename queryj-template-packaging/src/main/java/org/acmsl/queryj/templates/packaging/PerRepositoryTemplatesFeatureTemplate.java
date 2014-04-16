@@ -63,7 +63,7 @@ public class PerRepositoryTemplatesFeatureTemplate
 {
     /**
      * Builds a PerRepositoryTemplatesFeature using given context.
-     * @param context the {@link org.acmsl.queryj.api.PerRepositoryTemplateContext}.
+     * @param context the {@link org.acmsl.queryj.templates.packaging.GlobalTemplateContext}.
      */
     public PerRepositoryTemplatesFeatureTemplate(@NotNull final GlobalTemplateContext context)
     {
