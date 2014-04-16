@@ -70,6 +70,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -148,6 +149,7 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
      */
     @Test
     public void buildContext_builds_a_global_context()
+        throws IOException
     {
         @NotNull final PerTableTemplatesTestTemplateBuildHandler instance =
             new PerTableTemplatesTestTemplateBuildHandler();
