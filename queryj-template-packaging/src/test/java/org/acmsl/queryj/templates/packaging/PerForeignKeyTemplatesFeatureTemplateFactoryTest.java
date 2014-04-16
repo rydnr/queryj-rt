@@ -83,6 +83,6 @@ public class PerForeignKeyTemplatesFeatureTemplateFactoryTest
         @NotNull final PerForeignKeyTemplatesFeatureTemplateFactory instance =
             PerForeignKeyTemplatesFeatureTemplateFactory.getInstance();
 
-        Assert.assertNotNull(instance.retrieveTemplateFileName(context));
+        Assert.assertNotNull(instance.retrieveTemplateFileName("repo"));
     }
 }
