@@ -46,7 +46,8 @@ source(C) ::= <<
 !>
 <sourceImpl(sql=C.sql, C=C)>
 >>
-source(C) ::= <<
+
+sourceImpl(C) ::= <<
 <!
   Generates PerSqlTemplates.feature files.
 !>
