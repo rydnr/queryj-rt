@@ -36,7 +36,7 @@
 package org.acmsl.queryj.templates.packaging;
 
 /*
- * Importing JetBrains annotations.
+ * Importing ACM SL Java Commons classes.
  */
 import org.acmsl.commons.patterns.Singleton;
 
