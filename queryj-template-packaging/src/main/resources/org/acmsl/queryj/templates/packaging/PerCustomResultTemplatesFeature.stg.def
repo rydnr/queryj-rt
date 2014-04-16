@@ -5,7 +5,7 @@
 name : PerRepositoryTemplatesFeature.stg;
 
 // The type of template: per-table, per-repository, per-foreign-key, per-custom-result, per-sql.
-type : per-repository;
+type : per-custom-result;
 
 // The output flavor.
 output: Cucumber;
