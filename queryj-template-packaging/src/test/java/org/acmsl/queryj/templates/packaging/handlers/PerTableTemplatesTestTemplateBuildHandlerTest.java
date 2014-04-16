@@ -161,7 +161,7 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
             new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
         new QueryJCommandWrapper<File>(command).setSetting(
-            PerTableTemplatesTestTemplate.OUTPUT_DIR_FOR_TESTS, File.createTempFile("a", "b"));
+            PerTableTemplatesTestTemplate.OUTPUT_DIR_FOR_TESTS, new File("/"));
 
         @NotNull final List<TemplateDef<String>> templateDefs = new ArrayList<>(0);
 
