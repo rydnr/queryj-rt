@@ -1,5 +1,5 @@
 /*
- * PerRepositoryTemplatesFeature template metadata.
+ * PerCustomResultTemplatesFeature template metadata.
  */
 // The template name (the filename).
 name : PerCustomResultTemplatesFeature.stg;
