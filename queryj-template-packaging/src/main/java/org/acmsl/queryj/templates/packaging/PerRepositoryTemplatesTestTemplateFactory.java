@@ -35,6 +35,8 @@
  */
 package org.acmsl.queryj.templates.packaging;
 
+import org.acmsl.commons.patterns.Singleton;
+
 /*
  * Importing JetBrains annotations.
  */
