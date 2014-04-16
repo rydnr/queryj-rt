@@ -71,4 +71,13 @@ public class PerRepositoryTemplatesFeatureTemplateTest
 
         Assert.assertEquals(Literals.PER_REPOSITORY_TEMPLATES_FEATURE, instance.getTemplateName());
     }
+
+    /**
+     * Checks whether the group is found.
+     */
+    @Test
+    public void group_is_available()
+    {
+
+    }
 }
