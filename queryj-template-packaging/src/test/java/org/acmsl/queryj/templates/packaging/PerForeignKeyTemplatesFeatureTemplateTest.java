@@ -70,7 +70,7 @@ public class PerForeignKeyTemplatesFeatureTemplateTest
         @NotNull final PerForeignKeyTemplatesFeatureTemplate instance =
             new PerForeignKeyTemplatesFeatureTemplate(context);
 
-        Assert.assertEquals(Literals.PER_REPOSITORY_TEMPLATES_FEATURE, instance.getTemplateName());
+        Assert.assertEquals(Literals.PER_FOREIGN_KEY_TEMPLATES_FEATURE, instance.getTemplateName());
     }
 
     /**
