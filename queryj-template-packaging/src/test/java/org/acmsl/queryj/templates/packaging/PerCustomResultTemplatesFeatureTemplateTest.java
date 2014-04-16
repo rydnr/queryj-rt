@@ -68,9 +68,9 @@ public class PerCustomResultTemplatesFeatureTemplateTest
         @NotNull final GlobalTemplateContext context = EasyMock.createNiceMock(GlobalTemplateContext.class);
 
         @NotNull final PerCustomResultTemplatesFeatureTemplate instance =
-            new PerRepositoryTemplatesFeatureTemplate(context);
+            new PerCustomResultTemplatesFeatureTemplate(context);
 
-        Assert.assertEquals(Literals.PER_REPOSITORY_TEMPLATES_FEATURE, instance.getTemplateName());
+        Assert.assertEquals(Literals.PER_CUSTOM_RESULT_TEMPLATES_FEATURE, instance.getTemplateName());
     }
 
     /**
