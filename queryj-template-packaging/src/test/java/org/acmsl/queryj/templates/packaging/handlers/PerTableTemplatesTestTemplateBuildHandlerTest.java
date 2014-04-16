@@ -111,4 +111,7 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
 
     @Test
     public void retrieveTemplateFactory_retrieves_the_correct_factory()
+    {
+
+    }
 }
