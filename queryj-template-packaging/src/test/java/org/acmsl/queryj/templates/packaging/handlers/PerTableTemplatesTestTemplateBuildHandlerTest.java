@@ -97,6 +97,8 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
         @NotNull final PerTableTemplatesTestTemplate template =
             EasyMock.createNiceMock(PerTableTemplatesTestTemplate.class);
 
+        instance.storeTemplate(template, command);
 
+        Assert.assertEquals()
     }
 }
