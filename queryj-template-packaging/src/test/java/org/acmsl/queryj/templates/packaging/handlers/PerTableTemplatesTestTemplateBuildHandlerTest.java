@@ -138,5 +138,8 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
     }
 
     @Test
-    public void buildContext_
+    public void buildContext_builds_a_global_context()
+    {
+
+    }
 }
