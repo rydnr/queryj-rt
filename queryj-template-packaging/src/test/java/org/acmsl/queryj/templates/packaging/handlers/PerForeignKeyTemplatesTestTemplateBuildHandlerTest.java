@@ -38,20 +38,18 @@ package org.acmsl.queryj.templates.packaging.handlers;
 /*
  * Importing Apache Commons Configuration classes.
  */
-import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.apache.commons.configuration.PropertiesConfiguration;
 
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.templates.packaging.Literals;
 import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplateFactory;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
-import org.apache.commons.configuration.PropertiesConfiguration;
-import org.easymock.EasyMock;
 
 /*
  * Importing JetBrains annotations.
@@ -70,6 +68,9 @@ import org.easymock.EasyMock;
 import org.junit.Assert;
 import org.junit.Test;
 
+/*
+ * Importing JDK classes.
+ */
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
