@@ -63,7 +63,7 @@ Feature: <repository>-wide classes compile
 
     When I use the repository-wide \<template>.stg for Oracle
 
-    Then the generated per-foreign key \<output> file compiles successfully
+    Then the generated repository-wide \<output> file compiles successfully
 
     Examples:
       | template           | output                            |
