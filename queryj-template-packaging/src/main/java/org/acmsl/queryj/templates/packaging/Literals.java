@@ -53,7 +53,13 @@ public interface Literals
      * String literal: "repository".
      */
     String REPOSITORY = org.acmsl.queryj.Literals.REPOSITORY;
+    /**
+     * String literal: "cucumber.templates".
+     */
     String CUCUMBER_TEMPLATES = "cucumber.templates";
+    /**
+     *
+     */
     String PER_TABLE_TEMPLATES_TEST = "PerTableTemplatesTest";
     String PER_FOREIGN_KEY_TEMPLATES_TEST = "PerForeignKeyTemplatesTest";
     String TEMPLATE_BUILD_HANDLER = "TemplateBuildHandler";
