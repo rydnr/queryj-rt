@@ -79,11 +79,11 @@ public class PerForeignKeyTemplatesFeatureTemplateFactoryTest
     @Test
     public void retrieveTemplateFileName_retrieves_the_fixed_value()
     {
-        @NotNull final GlobalTemplateContext context = EasyMock.createNiceMock(GlobalTemplateContext.class);
-
         @NotNull final PerForeignKeyTemplatesFeatureTemplateFactory instance =
             PerForeignKeyTemplatesFeatureTemplateFactory.getInstance();
 
-        Assert.assertNotNull(instance.retrieveTemplateFileName("repo", new UndefinedJdbcEngine("unknown", "1.0")));
+        Assert.assertEquals(
+            "PerForeignKeyTemplates.feature",
+            instance.retrieveTemplateFileName("repo", new UndefinedJdbcEngine("unknown", "1.0")));
     }
 }
