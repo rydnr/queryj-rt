@@ -37,7 +37,6 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing checkthread.org annotations.
  */
-import org.checkthread.annotations.ThreadSafe;
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 import org.junit.Assert;
