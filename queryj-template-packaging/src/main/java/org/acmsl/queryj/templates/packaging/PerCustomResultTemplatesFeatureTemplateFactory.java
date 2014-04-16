@@ -136,7 +136,7 @@ public class PerCustomResultTemplatesFeatureTemplateFactory
         @NotNull final String result;
 
         @NotNull final ST template =
-            new ST("PerForeignKeyTemplates.feature");
+            new ST("PerCustomResultTemplates.feature");
 
         template.add(Literals.REPOSITORY, new DecoratedString(repository));
         template.add(org.acmsl.queryj.Literals.ENGINE, new EngineDecorator(engine));
