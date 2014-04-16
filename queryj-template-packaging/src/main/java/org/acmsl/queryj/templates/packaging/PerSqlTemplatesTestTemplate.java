@@ -72,6 +72,6 @@ public class PerSqlTemplatesTestTemplate
     @Override
     public String getTemplateName()
     {
-        return Literals.PER_CUSTOM_RESULT_TEMPLATES_TEST;
+        return Literals.PER_SQL_TEMPLATES_TEST;
     }
 }
