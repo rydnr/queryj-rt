@@ -63,5 +63,5 @@ public interface Literals
     String PACKAGE = org.acmsl.queryj.Literals.PACKAGE;
     String ORG_ACMSL_QUERYJ_TEMPLATES_PACKAGING = "org/acmsl/queryj/templates/packaging/";
     String PER_FOREIGN_KEY_TEMPLATE_FACTORY = "PerForeignKeyTemplateFactory";
-    String PER_REPOSITORY_TEMPLATES_FEATURE = "PerRepository";
+    String PER_REPOSITORY_TEMPLATES_FEATURE = "PerRepositoryTemplatesFeature";
 }
