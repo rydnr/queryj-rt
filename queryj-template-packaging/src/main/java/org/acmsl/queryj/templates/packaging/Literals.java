@@ -66,7 +66,7 @@ public interface Literals
      */
     String PER_FOREIGN_KEY_TEMPLATES_TEST = "PerForeignKeyTemplatesTest";
     /**
-     *
+     * String literal: "TemplateBuildHandler".
      */
     String TEMPLATE_BUILD_HANDLER = "TemplateBuildHandler";
     String DOT_HANDLERS = ".handlers";
