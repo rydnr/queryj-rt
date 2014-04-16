@@ -44,16 +44,23 @@ import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.templates.packaging.Literals;
 import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplateFactory;
-import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.easymock.EasyMock;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+
+/*
+ * Importing JUnit/
+ */
 import org.junit.Assert;
 import org.junit.Test;
 
