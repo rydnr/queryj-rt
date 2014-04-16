@@ -49,6 +49,7 @@ import org.acmsl.queryj.templates.packaging.Literals;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplate;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.jetbrains.annotations.NotNull;
 
@@ -93,6 +94,6 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
         @NotNull final QueryJCommand command =
             new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
-
+        @NotNull final PerTableTemplatesTestTemplate template = EasyMock.createNiceMock(PerTableTemplatesTestTemplate.class);
     }
 }
