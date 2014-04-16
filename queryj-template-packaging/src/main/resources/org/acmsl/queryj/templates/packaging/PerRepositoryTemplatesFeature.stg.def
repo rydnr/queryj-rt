@@ -1,5 +1,5 @@
 /*
- * PerForeignKeyTemplatesFeature template metadata.
+ * PerRepositoryTemplatesFeature template metadata.
  */
 // The template name (the filename).
 name : PerForeignKeyTemplatesFeature.stg;
