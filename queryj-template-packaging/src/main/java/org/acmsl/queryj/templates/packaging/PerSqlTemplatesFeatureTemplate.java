@@ -56,11 +56,18 @@ public class PerSqlTemplatesFeatureTemplate
     extends AbstractTemplatePackagingTemplate<GlobalTemplateContext>
 {
     /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = 185269394913835018L;
+
+    /**
      * Creates a new {@code PerSqlTemplatesFeatureTemplate}.
-     * @param context the {@link GlobalTemplateContext}
+     * @param context the {@link GlobalTemplateContext context}.
      */
     public PerSqlTemplatesFeatureTemplate(@NotNull final GlobalTemplateContext context)
     {
         super(context);
     }
+
+
 }
