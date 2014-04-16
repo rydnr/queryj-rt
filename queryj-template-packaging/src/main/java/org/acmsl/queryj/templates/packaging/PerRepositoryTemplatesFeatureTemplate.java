@@ -65,7 +65,7 @@ public class PerRepositoryTemplatesFeatureTemplate
      * Builds a PerTableTemplatesFeature using given context.
      * @param context the {@link org.acmsl.queryj.api.PerRepositoryTemplateContext}.
      */
-    public PerTableTemplatesFeatureTemplate(@NotNull final GlobalTemplateContext context)
+    public PerRepositoryTemplatesFeatureTemplate(@NotNull final GlobalTemplateContext context)
     {
         super(context);
     }
