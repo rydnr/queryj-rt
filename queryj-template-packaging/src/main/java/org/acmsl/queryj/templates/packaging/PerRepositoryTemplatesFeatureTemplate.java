@@ -44,6 +44,12 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
+import org.stringtemplate.v4.ST;
+import org.stringtemplate.v4.STGroup;
+import org.stringtemplate.v4.STGroupString;
+
+import java.util.Arrays;
 
 /**
  *
@@ -54,4 +60,64 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public class PerRepositoryTemplatesFeatureTemplate
 {
+    /**
+     * Builds a PerTableTemplatesFeature using given context.
+     * @param context the {@link org.acmsl.queryj.api.PerRepositoryTemplateContext}.
+     */
+    public PerTableTemplatesFeatureTemplate(@NotNull final GlobalTemplateContext context)
+    {
+        super(context);
+    }
+
+    /**
+     * Retrieves the StringTemplate group for "PerTableTemplatesFeature.stg".
+     * @return such {@link org.stringtemplate.v4.STGroup group}.
+     */
+    @Nullable
+    @Override
+    public STGroup retrieveGroup()
+    {
+        return
+            retrieveGroup(
+                "org/acmsl/queryj/templates/packaging/PerTableTemplatesFeature.stg",
+                Arrays.asList(org.acmsl.queryj.Literals.ORG_ACMSL_QUERYJ_TEMPLATES));
+    }
+
+    /**
+     * Retrieves the template in given group.
+     * @param group the StringTemplate group.
+     * @return the template.
+     */
+    @Nullable
+    @Override
+    protected ST retrieveTemplate(@Nullable final STGroup group)
+    {
+        @Nullable final ST result = super.retrieveTemplate(group);
+
+        if (group != null)
+        {
+            for (@NotNull final TemplateDef<String> def : getTemplateContext().getTemplateDefs())
+            {
+                @NotNull final String ruleBody =
+                    def.getFilenameRule()
+                    + "(engine, fileName) ::= <<\n" + def.getFilenameBuilder() + ">>\n";
+
+                group.importTemplates(new STGroupString(def.getName() + "_filename", ruleBody));
+            }
+        }
+
+        return result;
+    }
+
+    /**
+     * Retrieves the template name.
+     * @return "PerTableTemplatesFeature";
+     */
+    @NotNull
+    @Override
+    public String getTemplateName()
+    {
+        return Literals.PER_TABLE_TEMPLATES_FEATURE;
+    }
+
 }
