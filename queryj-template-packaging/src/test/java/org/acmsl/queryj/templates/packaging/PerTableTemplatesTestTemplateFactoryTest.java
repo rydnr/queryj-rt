@@ -60,7 +60,7 @@ import org.junit.runners.JUnit4;
 public class PerTableTemplatesTestTemplateFactoryTest
 {
     /**
-     *
+     * Tests whether createTemplate() creates a template.
      */
     @Test
     public void createTemplate_creates_a_new_template()
