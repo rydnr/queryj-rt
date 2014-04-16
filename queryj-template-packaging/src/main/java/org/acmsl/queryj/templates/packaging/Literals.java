@@ -109,7 +109,6 @@ public interface Literals
      * String literal: "PerRepositoryTemplatesFeature".
      */
     String PER_REPOSITORY_TEMPLATES_FEATURE = "PerRepositoryTemplatesFeature";
-
     /**
      * String literal: "PerForeignKeyTemplateWritingHandler".
      */
