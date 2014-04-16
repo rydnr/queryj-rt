@@ -113,5 +113,5 @@ public interface Literals
      * String literal: "PerForeignKeyTemplateWritingHandler".
      */
     String PER_FOREIGN_KEY_TEMPLATE_WRITING_HANDLER = "PerForeignKeyTemplateWritingHandler";
-    String PER_CUSTOM_RESULT_TEMPLATES_FEATURE = ;
+    String PER_CUSTOM_RESULT_TEMPLATES_FEATURE = "PerCustomResultTemplatesFeature";
 }
