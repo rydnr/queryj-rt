@@ -133,5 +133,5 @@ public interface Literals
      * String literal: "PerCustomResultTemplatesTest".
      */
     String PER_CUSTOM_RESULT_TEMPLATES_TEST = "PerCustomResultTemplatesTest";
-    String PER_SQL_TEMPLATES_TEST = "PerSqlTemplateTest";
+    String PER_SQL_TEMPLATES_TEST = "PerSqlTemplatesTest";
 }
