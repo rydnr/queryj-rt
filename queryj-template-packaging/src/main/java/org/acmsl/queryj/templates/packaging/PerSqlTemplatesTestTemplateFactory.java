@@ -67,7 +67,7 @@ public class PerSqlTemplatesTestTemplateFactory
          * The actual singleton.
          */
         public static final PerCustomResultTemplatesTestTemplateFactory SINGLETON =
-            new PerCustomResultTemplatesTestTemplateFactory();
+            new PerSqlTemplatesTestTemplateFactory();
     }
 
     /**
