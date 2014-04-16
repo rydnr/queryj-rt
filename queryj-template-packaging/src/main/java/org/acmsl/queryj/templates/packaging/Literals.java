@@ -58,9 +58,12 @@ public interface Literals
      */
     String CUCUMBER_TEMPLATES = "cucumber.templates";
     /**
-     *
+     * String literal: "PerTableTemplatesTest".
      */
     String PER_TABLE_TEMPLATES_TEST = "PerTableTemplatesTest";
+    /**
+     *
+     */
     String PER_FOREIGN_KEY_TEMPLATES_TEST = "PerForeignKeyTemplatesTest";
     String TEMPLATE_BUILD_HANDLER = "TemplateBuildHandler";
     String DOT_HANDLERS = ".handlers";
