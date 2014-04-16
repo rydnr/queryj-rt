@@ -69,7 +69,13 @@ public interface Literals
      * String literal: "TemplateBuildHandler".
      */
     String TEMPLATE_BUILD_HANDLER = "TemplateBuildHandler";
+    /**
+     * String literal: ".handlers".
+     */
     String DOT_HANDLERS = ".handlers";
+    /**
+     * String literal:
+     */
     String TEMPLATE_FACTORY = "TemplateFactory";
     String TEMPLATE_GENERATOR = "TemplateGenerator";
     String TEMPLATE_HANDLER_BUNDLE = "TemplateHandlerBundle";
