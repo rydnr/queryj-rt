@@ -71,7 +71,7 @@ public class PerRepositoryTemplatesFeatureTemplate
     }
 
     /**
-     * Retrieves the StringTemplate group for "PerRTemplatesFeature.stg".
+     * Retrieves the StringTemplate group for "PerRepositoryTemplatesFeature.stg".
      * @return such {@link org.stringtemplate.v4.STGroup group}.
      */
     @Nullable
