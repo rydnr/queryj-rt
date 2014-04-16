@@ -61,7 +61,7 @@ public class PerSqlTemplatesTestTemplateFactory
     /**
      * Singleton instance to avoid double-locking check.
      */
-    protected static final class PerCustomResultTemplatesTestTemplateFactorySingletonContainer
+    protected static final class PerSqlTemplatesTestTemplateFactorySingletonContainer
     {
         /**
          * The actual singleton.
