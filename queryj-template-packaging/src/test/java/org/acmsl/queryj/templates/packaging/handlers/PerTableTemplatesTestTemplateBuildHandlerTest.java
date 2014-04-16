@@ -68,6 +68,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -148,6 +149,8 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
 
         @NotNull final QueryJCommand command = EasyMock.createNiceMock(QueryJCommand.class);
 
-        @NotNull final List<TemplateDef>
+        @NotNull final List<TemplateDef> templateDefs = new ArrayList<>(0);
+
+        Assert.assertNotNull()
     }
 }
