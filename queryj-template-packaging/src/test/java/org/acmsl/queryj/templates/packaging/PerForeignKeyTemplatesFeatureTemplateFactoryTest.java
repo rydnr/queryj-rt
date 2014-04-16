@@ -35,15 +35,14 @@
  */
 package org.acmsl.queryj.templates.packaging;
 
-import org.junit.runner.RunWith;
-
 /**
- *
+ * Importing QueryJ Core classes.
  */
+import org.acmsl.queryj.metadata.engines.UndefinedJdbcEngine;
+
 /*
  * Importing JetBrains annotations.
  */
-import org.acmsl.queryj.metadata.engines.UndefinedJdbcEngine;
 import org.jetbrains.annotations.NotNull;
 
 /*
