@@ -38,6 +38,7 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -64,6 +65,8 @@ public class PerRepositoryTemplatesFeatureTemplateTest
     @Test
     public void templateName_is_correct()
     {
+        @NotNull final GlobalTemplateContext context = EasyMock.createNiceMock(GlobalTemplateContext.class);
+
         @NotNull final PerRepositoryTemplatesFeatureTemplate instance =
             new PerRepositoryTemplatesFeatureTemplate();
 
