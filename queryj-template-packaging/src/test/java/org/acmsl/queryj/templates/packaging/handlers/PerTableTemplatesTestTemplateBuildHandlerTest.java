@@ -140,6 +140,11 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
     @Test
     public void buildContext_builds_a_global_context()
     {
+        @NotNull final PerTableTemplatesTestTemplateBuildHandler instance =
+            new PerTableTemplatesTestTemplateBuildHandler();
+
+        @NotNull final QueryJCommand command = EasyMock.createNiceMock(QueryJCommand.class);
+
 
     }
 }
