@@ -40,6 +40,10 @@ package org.acmsl.queryj.templates.packaging.handlers;
  */
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.templates.packaging.Literals;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
