@@ -136,7 +136,7 @@ public class PerSqlTemplatesFeatureTemplateFactory
         @NotNull final String result;
 
         @NotNull final ST template =
-            new ST("PerSqlTemplates.feature");
+            new ST("PerSqlTemplates. feature");
 
         template.add(Literals.REPOSITORY, new DecoratedString(repository));
         template.add(org.acmsl.queryj.Literals.ENGINE, new EngineDecorator(engine));
