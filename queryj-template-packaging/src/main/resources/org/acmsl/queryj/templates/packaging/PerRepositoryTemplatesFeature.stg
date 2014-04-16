@@ -44,6 +44,11 @@ source(C) ::= <<
 <!
   Generates PerRepositoryTemplates.feature files.
 !>
+>>
+sourceImpl(repository, C) ::= <<
+<!
+  Generates PerRepositoryTemplates.feature files.
+!>
 Feature: <repository>-wide classes compile
 
   Scenario Outline: Templates bound to <C.rep>' foreign keys compile
