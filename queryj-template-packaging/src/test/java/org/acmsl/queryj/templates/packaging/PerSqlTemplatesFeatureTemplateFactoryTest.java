@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for PerSqlTemplatesFeatureTemplateFactory.
  *
  * Date: 2014/04/16
  * Time: 15:50
@@ -43,9 +43,8 @@ import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing checkthread.org annotations.
+ * Importing JUnit
  */
-import org.checkthread.annotations.ThreadSafe;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
