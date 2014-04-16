@@ -112,7 +112,7 @@ public class PerRepositoryTemplatesFeatureTemplate
 
     /**
      * Retrieves the template name.
-     * @return "PerTableTemplatesFeature";
+     * @return "PerRepositoryTemplatesFeature";
      */
     @NotNull
     @Override
