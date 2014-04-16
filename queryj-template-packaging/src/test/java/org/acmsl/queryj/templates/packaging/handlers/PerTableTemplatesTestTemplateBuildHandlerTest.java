@@ -65,5 +65,7 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
     {
         @NotNull final PerTableTemplatesTestTemplateBuildHandler instance =
             new PerTableTemplatesTestTemplateBuildHandler();
+
+
     }
 }
