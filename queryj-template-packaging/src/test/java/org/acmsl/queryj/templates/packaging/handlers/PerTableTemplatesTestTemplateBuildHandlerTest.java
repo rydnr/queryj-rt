@@ -154,6 +154,6 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
 
         @NotNull final List<TemplateDef> templateDefs = new ArrayList<>(0);
 
-        Assert.assertNotNull(instance.buildContext())
+        Assert.assertNotNull(instance.buildContext(templateDefs, command))
     }
 }
