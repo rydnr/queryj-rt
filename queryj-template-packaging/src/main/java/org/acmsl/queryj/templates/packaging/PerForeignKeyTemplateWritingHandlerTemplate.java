@@ -74,6 +74,6 @@ public class PerForeignKeyTemplateWritingHandlerTemplate<C extends TemplatePacka
     @Override
     public String getTemplateName()
     {
-        return "PerForeignKeyTemplateWritingHandler";
+        return Literals.PER_FOREIGN_KEY_TEMPLATE_WRITING_HANDLER"PerForeignKeyTemplateWritingHandler";
     }
 }
