@@ -44,6 +44,7 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
@@ -59,4 +60,6 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
     /**
      * Tests whether retrieveTemplateName() works.
      */
+    @Test
+    public void retrieveTemplateName_works()
 }
