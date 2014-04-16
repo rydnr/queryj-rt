@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Factory for PerRepositoryTemplatesFeatureTemplate.
  *
  * Date: 2014/04/16
  * Time: 13:23
@@ -53,7 +53,7 @@ import org.jetbrains.annotations.Nullable;
 import org.stringtemplate.v4.ST;
 
 /**
- * Factory for {@link PerForeignKeyTemplatesFeatureTemplate}s.
+ * Factory for {@link PerRepositoryTemplatesFeatureTemplate}s.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/16 13:23
