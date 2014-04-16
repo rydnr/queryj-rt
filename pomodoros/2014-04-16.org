@@ -6,7 +6,7 @@
 ** Each of #474, #475, #476, #477 requires:
 *** PerXXXTemplatesFeatureTemplate
 **** DONE #474
-**** TODO #475
+**** DONE #475
 *** PerXXXTemplatesFeatureTemplateFactory
 *** PerXXXTemplatesTestTemplate
 *** PerXXXTemplatesTestTemplateFactory
