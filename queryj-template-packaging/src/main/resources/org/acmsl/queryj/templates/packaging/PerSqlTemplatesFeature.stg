@@ -90,4 +90,4 @@ indirect_template(def, engineName, tableName) ::= <<
 
 cucumber_column_specification(attribute) ::= <<
 <! Generates the specification for a column !>
-| <
+| <attribute.table
