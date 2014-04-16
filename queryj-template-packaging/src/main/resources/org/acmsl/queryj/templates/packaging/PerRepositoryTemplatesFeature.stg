@@ -44,7 +44,7 @@ source(C) ::= <<
 <!
   Generates PerRepositoryTemplates.feature files.
 !>
-Feature: <fk.sourceTableName> foreign keys code compiles
+Feature: <repository>- foreign keys code compiles
 
   Scenario Outline: Templates bound to <fk.sourceTableName>' foreign keys compile
 
