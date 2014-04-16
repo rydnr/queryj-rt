@@ -39,7 +39,9 @@ package org.acmsl.queryj.templates.packaging.handlers;
  * Importing JetBrains annotations.
  */
 import junit.framework.Assert;
+import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.templates.packaging.Literals;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -67,6 +69,8 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
     {
         @NotNull final PerTableTemplatesTestTemplateBuildHandler instance =
             new PerTableTemplatesTestTemplateBuildHandler();
+
+        @NotNull final QueryJCommand command = EasyMock.createNiceMock(QueryJCommand.class);
 
         Assert.assertEquals(Literals.PER_TABLE_TEMPLATES_TEST, instance.retrieveTemplateName(parameters));
     }
