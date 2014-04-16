@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Factory for PerSqlTemplatesFeatureTemplates.
  *
  * Date: 2014/04/16
  * Time: 15:53
