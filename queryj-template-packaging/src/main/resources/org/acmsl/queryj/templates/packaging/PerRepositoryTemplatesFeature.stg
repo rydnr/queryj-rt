@@ -74,7 +74,7 @@ indirect_template(def, engineName, tableName) ::= <<
 | <def.name; format="%-30s"> | <(def.filenameRule)(engineName, tableName)> |
 >>
 
-cucumber_nonpk_declaration(attribute) ::= <<
+cucumber_table_declaration(attribute) ::= <<
 <! Declares the attribute metadata in Cucumber format !>
 | <attribute.table.name> | <attribute.name> | <attribute.type> | false | <attribute.nullable> | <attribute.readOnly> | <attribute.sequence> | <attribute.keyword> | <attribute.boolean> | <attribute.length> | <attribute.precision> |
 >>
