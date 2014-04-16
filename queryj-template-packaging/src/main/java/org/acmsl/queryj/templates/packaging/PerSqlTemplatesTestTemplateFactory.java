@@ -91,5 +91,4 @@ public class PerSqlTemplatesTestTemplateFactory
     {
         return new PerCustomResultTemplatesTestTemplate(context);
     }
-{
 }
