@@ -62,7 +62,7 @@ public class PerRepositoryTemplatesFeatureTemplate
     extends AbstractTemplatePackagingTemplate<GlobalTemplateContext>
 {
     /**
-     * Builds a PerRepositoryTemplatesFeature using given context.
+     * Builds a {@code PerRepositoryTemplatesFeature using given context.
      * @param context the {@link GlobalTemplateContext}.
      */
     public PerRepositoryTemplatesFeatureTemplate(@NotNull final GlobalTemplateContext context)
