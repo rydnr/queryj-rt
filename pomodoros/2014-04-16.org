@@ -15,6 +15,7 @@
 **** DONE #476
 **** DONE #477
 *** PerXXXTemplatesTestTemplate
+**** TODO #474
 *** PerXXXTemplatesTestTemplateFactory
 *** PerXXXTemplatesTestTemplateBuildHandler
 *** PerXXXTemplatesTestTemplateHandlerBundle
