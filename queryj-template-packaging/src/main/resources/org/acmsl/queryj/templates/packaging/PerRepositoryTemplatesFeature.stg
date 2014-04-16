@@ -44,7 +44,9 @@ source(C) ::= <<
 <!
   Generates PerRepositoryTemplates.feature files.
 !>
+<sourceImpl(repository=C.repository, C=C)>
 >>
+
 sourceImpl(repository, C) ::= <<
 <!
   Generates PerRepositoryTemplates.feature files.
