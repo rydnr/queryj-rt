@@ -66,7 +66,7 @@ public class PerSqlTemplatesTestTemplate
 
     /**
      * Retrieves the template name.
-     * @return "PerCustomResultTemplatesTest";
+     * @return "PerSqlTemplatesTest";
      */
     @NotNull
     @Override
