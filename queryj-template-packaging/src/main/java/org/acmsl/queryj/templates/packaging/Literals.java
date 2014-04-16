@@ -90,9 +90,12 @@ public interface Literals
      */
     String TEMPLATE_WRITING_HANDLER = "TemplateWritingHandler";
     /**
-     * String literal:
+     * String literal: "PerTableTemplatesFeature".
      */
     String PER_TABLE_TEMPLATES_FEATURE = "PerTableTemplatesFeature";
+    /**
+     * String literal: "
+     */
     String PACKAGE = org.acmsl.queryj.Literals.PACKAGE;
     String ORG_ACMSL_QUERYJ_TEMPLATES_PACKAGING = "org/acmsl/queryj/templates/packaging/";
     String PER_FOREIGN_KEY_TEMPLATE_FACTORY = "PerForeignKeyTemplateFactory";
