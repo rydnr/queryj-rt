@@ -129,6 +129,6 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
         @NotNull final PerTableTemplatesTestTemplateBuildHandler instance =
             new PerTableTemplatesTestTemplateBuildHandler();
 
-        Assert.assertEquals();
+        Assert.assertEquals(Literals.CUCUMBER_TEMPLATES);
     }
 }
