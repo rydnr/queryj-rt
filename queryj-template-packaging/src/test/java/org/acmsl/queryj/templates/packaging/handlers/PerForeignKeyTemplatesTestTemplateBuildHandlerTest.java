@@ -42,6 +42,8 @@ import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.templates.packaging.Literals;
+import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplate;
+import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplateFactory;
 import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplateFactory;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
@@ -96,7 +98,7 @@ public class PerForeignKeyTemplatesTestTemplateBuildHandlerTest
         @NotNull final QueryJCommand command =
             new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
-        @NotNull final PerTableTemplatesTestTemplate template =
+        @NotNull final PerForeignKeyTemplatesTestTemplate template =
             EasyMock.createNiceMock(PerTableTemplatesTestTemplate.class);
 
         instance.storeTemplate(template, command);
@@ -111,10 +113,10 @@ public class PerForeignKeyTemplatesTestTemplateBuildHandlerTest
     @Test
     public void retrieveTemplateFactory_retrieves_the_correct_factory()
     {
-        @NotNull final PerTableTemplatesTestTemplateBuildHandler instance =
-            new PerTableTemplatesTestTemplateBuildHandler();
+        @NotNull final PerForeignKeyTemplatesTestTemplateBuildHandler instance =
+            new PerForeignKeyTemplatesTestTemplateBuildHandler();
 
-        Assert.assertEquals(PerTableTemplatesTestTemplateFactory.getInstance(), instance.retrieveTemplateFactory());
+        Assert.assertEquals(PerForeignKeyTemplatesTestTemplateFactory.getInstance(), instance.retrieveTemplateFactory());
     }
 
     /**
@@ -123,8 +125,8 @@ public class PerForeignKeyTemplatesTestTemplateBuildHandlerTest
     @Test
     public void retrieveOutputPackage_returns_the_cucumber_package()
     {
-        @NotNull final PerTableTemplatesTestTemplateBuildHandler instance =
-            new PerTableTemplatesTestTemplateBuildHandler();
+        @NotNull final PerForeignKeyTemplatesTestTemplateBuildHandler instance =
+            new PerForeignKeyTemplatesTestTemplateBuildHandler();
 
         @NotNull final QueryJCommand command = EasyMock.createNiceMock(QueryJCommand.class);
 
