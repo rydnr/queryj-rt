@@ -67,7 +67,7 @@ public class PerCustomResultTemplatesFeatureTemplate
 
     /**
      * Retrieves the template name.
-     * @return such
+     * @return "PerCustomResultTemplatesFeature".
      */
     @NotNull
     @Override
