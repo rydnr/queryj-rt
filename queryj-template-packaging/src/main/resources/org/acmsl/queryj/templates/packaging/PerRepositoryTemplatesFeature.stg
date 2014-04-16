@@ -44,7 +44,7 @@ source(C) ::= <<
 <!
   Generates PerRepositoryTemplates.feature files.
 !>
-Feature: <repository>-wide classes code compiles
+Feature: <repository>-wide classes compile
 
   Scenario Outline: Templates bound to <fk.sourceTableName>' foreign keys compile
 
