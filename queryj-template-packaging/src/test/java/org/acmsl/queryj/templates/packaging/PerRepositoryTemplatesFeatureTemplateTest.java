@@ -58,6 +58,9 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class PerRepositoryTemplatesFeatureTemplateTest
 {
+    /**
+     * Checks the template name is correct.
+     */
     @Test
     public void templateName_is_correct()
     {
