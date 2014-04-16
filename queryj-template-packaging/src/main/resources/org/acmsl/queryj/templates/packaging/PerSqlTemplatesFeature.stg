@@ -59,7 +59,7 @@ Feature: Per-SQL templates
 
     Given the following columns for the tables involved:
     |     table    |         column        | type      | pk    | allows null | readonly |   sequence    | keyword | boolean | length | precision |
-    <C.tables:{t | <t.attributes:{ a | <cucumber_column_specification(attribute=a)>}; separator="\n"
+    <C.tables:{t | <t.attributes:{ a | <cucumber_column_specification(attribute=a)>}; separator="\n">}; separator="\n">
     | <sql.dao> | g_draw_id             | number    | true  | false       | false    | seq_g_draws   |         |         |     10 |         0 |
     | g_draws      | g_draw_type_id        | number    | false | false       | false    |               |         |         |     10 |         0 |
     | g_draws      | drawing_date          | date      | false | false       | false    |               |         |         |        |           |
