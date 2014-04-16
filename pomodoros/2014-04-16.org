@@ -5,7 +5,7 @@
 * Notes:
 ** Each of #474, #475, #476, #477 requires:
 *** PerXXXTemplatesFeatureTemplate
-**** DONE #474
+**** TODO #474
 **** DONE #475
 **** DONE #476
 **** DONE #477
