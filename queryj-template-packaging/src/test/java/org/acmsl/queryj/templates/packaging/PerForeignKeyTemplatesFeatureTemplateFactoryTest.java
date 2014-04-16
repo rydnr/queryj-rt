@@ -72,9 +72,12 @@ public class PerForeignKeyTemplatesFeatureTemplateFactoryTest
         Assert.assertNotNull(instance.createTemplate(context));
     }
 
+    /**
+     * Checks retrieveTemplateFileName() returns "PerForeignKeyTemplates.feature".
+     */
     @Test
     public void retrieveTemplateFileName_retrieves_the_fixed_value()
     {
-        PerForeignKeyTemplates.feature
+
     }
 }
