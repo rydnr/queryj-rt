@@ -56,7 +56,7 @@ public class PerSqlTemplatesTestTemplate
     extends AbstractTemplatePackagingTemplate<GlobalTemplateContext>
 {
     /**
-     * Builds a PerCustomResultTemplatesTest using given context.
+     * Builds a PerSqlTemplatesTest using given context.
      * @param context the {@link GlobalTemplateContext}.
      */
     public PerSqlTemplatesTestTemplate(@NotNull final GlobalTemplateContext context)
