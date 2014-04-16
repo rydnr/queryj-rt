@@ -53,5 +53,14 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class PerSqlTemplatesFeatureTemplate
+    extends AbstractTemplatePackagingTemplate<GlobalTemplateContext>
 {
+    /**
+     * Creates a new {@code PerSqlTemplatesFeatureTemplate}.
+     * @param context the {@link GlobalTemplateContext}
+     */
+    public PerSqlTemplatesFeatureTemplate(@NotNull final GlobalTemplateContext context)
+    {
+        super(context);
+    }
 }
