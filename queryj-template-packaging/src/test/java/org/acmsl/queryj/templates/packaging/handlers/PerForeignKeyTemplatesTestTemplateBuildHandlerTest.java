@@ -55,6 +55,7 @@ import org.easymock.EasyMock;
 /*
  * Importing JetBrains annotations.
  */
+import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
