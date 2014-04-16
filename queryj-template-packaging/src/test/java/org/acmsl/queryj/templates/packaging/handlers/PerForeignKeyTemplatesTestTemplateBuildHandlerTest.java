@@ -1,5 +1,5 @@
 /*
-                        queryj
+                        QueryJ Template Packaging
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for PerForeignKeyTemplatesTestTemplateBuildHandler.
  *
  * Date: 2014/04/16
  * Time: 22:32
@@ -45,7 +45,6 @@ import org.acmsl.queryj.templates.packaging.Literals;
 import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplateFactory;
 import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplate;
-import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplateFactory;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.easymock.EasyMock;
