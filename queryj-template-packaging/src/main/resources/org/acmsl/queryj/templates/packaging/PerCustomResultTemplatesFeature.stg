@@ -74,6 +74,6 @@ indirect_template(def, engineName, tableName) ::= <<
 >>
 
 cucumber_custom_result_declaration(attribute) ::= <<
-<! Declares the table metadata in Cucumber format !>
+<! Declares the custom result metadata in Cucumber format !>
 | <table.name> | <table.parent> | <table.decorated> | <table.relationship> | <table.static> |
 >>
