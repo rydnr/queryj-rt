@@ -1,5 +1,5 @@
 /*
-                        queryj
+                        QueryJ Template Packaging
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for PerRepositoryTemplatesFeatureTemplateFactory.
  *
  * Date: 2014/04/16
  * Time: 13:21
@@ -50,7 +50,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- *
+ * Tests for {@link PerRepositoryTemplatesFeatureTemplateFactory}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/16 13:21
@@ -66,14 +66,14 @@ public class PerRepositoryTemplatesFeatureTemplateFactoryTest
     {
         @NotNull final GlobalTemplateContext context = EasyMock.createNiceMock(GlobalTemplateContext.class);
 
-        @NotNull final PerForeignKeyTemplatesFeatureTemplateFactory instance =
-            PerForeignKeyTemplatesFeatureTemplateFactory.getInstance();
+        @NotNull final PerRepositoryTemplatesFeatureTemplateFactory instance =
+            PerRepositoryTemplatesFeatureTemplateFactory.getInstance();
 
         Assert.assertNotNull(instance.createTemplate(context));
     }
 
     /**
-     * Checks whether retrieveTemplateFileName() returns "PerForeignKeyTemplates.feature".
+     * Checks whether retrieveTemplateFileName() returns "PerRepositoryTemplates.feature".
      */
     @Test
     public void retrieveTemplateFileName_retrieves_the_fixed_value()
