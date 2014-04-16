@@ -62,4 +62,7 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
      */
     @Test
     public void retrieveTemplateName_works()
+    {
+
+    }
 }
