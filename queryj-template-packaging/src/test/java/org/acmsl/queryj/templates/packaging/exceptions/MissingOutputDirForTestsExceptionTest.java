@@ -1,5 +1,5 @@
 /*
-                        queryj
+                        QueryJ Template Packaging
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for MissingOutputDirForTestsException.
  *
  * Date: 2014/04/16
  * Time: 22:23
@@ -50,7 +50,7 @@ import java.util.Arrays;
 import java.util.Locale;
 
 /**
- *
+ * Tests for {@link MissingOutputDirForTestsException}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/16 22:23
