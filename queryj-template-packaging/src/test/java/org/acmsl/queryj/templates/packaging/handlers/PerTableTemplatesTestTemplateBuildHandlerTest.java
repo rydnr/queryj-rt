@@ -38,6 +38,7 @@ package org.acmsl.queryj.templates.packaging.handlers;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 
 /*
@@ -80,5 +81,15 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
         @NotNull final QueryJCommand command = EasyMock.createNiceMock(QueryJCommand.class);
 
         Assert.assertEquals(Literals.PER_TABLE_TEMPLATES_TEST, instance.retrieveTemplateName(command));
+    }
+
+    @Test
+    public void storeTemplates_stores_the_templates_in_the_command()
+    {
+        @NotNull final PerTableTemplatesTestTemplateBuildHandler instance =
+            new PerTableTemplatesTestTemplateBuildHandler();
+
+        @NotNull final QueryJCommand command =
+            new ConfigurationQueryJCommandImpl()
     }
 }
