@@ -33,6 +33,7 @@
  *
  */
 package org.acmsl.queryj.templates.packaging;
+
 /*
  * Importing checkthread.org annotations.
  */
