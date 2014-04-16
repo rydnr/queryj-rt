@@ -49,6 +49,9 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public interface Literals
 {
+    /**
+     * String literal: "
+     */
     String REPOSITORY = org.acmsl.queryj.Literals.REPOSITORY;
     String CUCUMBER_TEMPLATES = "cucumber.templates";
     String PER_TABLE_TEMPLATES_TEST = "PerTableTemplatesTest";
