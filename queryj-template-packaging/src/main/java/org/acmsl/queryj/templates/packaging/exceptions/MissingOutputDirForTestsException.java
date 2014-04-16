@@ -37,12 +37,6 @@
 package org.acmsl.queryj.templates.packaging.exceptions;
 
 /*
- * Importing QueryJ-API classes..
- */
-import org.acmsl.commons.NonCheckedException;
-import org.acmsl.queryj.api.exceptions.QueryJNonCheckedException;
-
-/*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
