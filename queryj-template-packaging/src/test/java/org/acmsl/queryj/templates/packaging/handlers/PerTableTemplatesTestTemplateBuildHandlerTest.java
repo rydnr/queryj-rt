@@ -141,6 +141,9 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
         Assert.assertEquals(Literals.CUCUMBER_TEMPLATES, instance.retrieveOutputPackage(command));
     }
 
+    /**
+     *
+     */
     @Test
     public void buildContext_builds_a_global_context()
     {
