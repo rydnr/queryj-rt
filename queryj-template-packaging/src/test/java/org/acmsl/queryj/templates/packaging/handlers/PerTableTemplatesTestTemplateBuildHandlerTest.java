@@ -85,6 +85,9 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
         Assert.assertEquals(Literals.PER_TABLE_TEMPLATES_TEST, instance.retrieveTemplateName(command));
     }
 
+    /**
+     * Checks whether storeTemplate
+     */
     @Test
     public void storeTemplates_stores_the_templates_in_the_command()
     {
