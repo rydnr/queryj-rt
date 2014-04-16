@@ -1,5 +1,5 @@
 /*
-                        queryj
+                        QueryJ Template Packaging
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -52,7 +52,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 /**
- *
+ * Tests for {@link PerSqlTemplatesFeatureTemplateFactory}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/16 15:50
@@ -80,11 +80,11 @@ public class PerSqlTemplatesFeatureTemplateFactoryTest
     @Test
     public void retrieveTemplateFileName_retrieves_the_fixed_value()
     {
-        @NotNull final PerForeignKeyTemplatesFeatureTemplateFactory instance =
-            PerForeignKeyTemplatesFeatureTemplateFactory.getInstance();
+        @NotNull final PerSqlTemplatesFeatureTemplateFactory instance =
+            PerSqlTemplatesFeatureTemplateFactory.getInstance();
 
         Assert.assertEquals(
-            "PerForeignKeyTemplates.feature",
+            "PerSqlTemplates.feature",
             instance.retrieveTemplateFileName("repo", new UndefinedJdbcEngine("unknown", "1.0")));
     }
 }
