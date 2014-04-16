@@ -38,12 +38,16 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.metadata.engines.UndefinedJdbcEngine;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Assert;
+import org.junit.Test;
 
 /**
  *
@@ -54,4 +58,32 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public class PerCustomResultTemplatesFeatureTemplateFactoryTest
 {
+    /**
+     * Tests whether the createTemplate() method returns null.
+     */
+    @Test
+    public void createTemplate_returns_not_null()
+    {
+        @NotNull final GlobalTemplateContext context = EasyMock.createNiceMock(GlobalTemplateContext.class);
+
+        @NotNull final PerRepositoryTemplatesFeatureTemplateFactory instance =
+            PerRepositoryTemplatesFeatureTemplateFactory.getInstance();
+
+        Assert.assertNotNull(instance.createTemplate(context));
+    }
+
+    /**
+     * Checks whether retrieveTemplateFileName() returns "PerRepositoryTemplates.feature".
+     */
+    @Test
+    public void retrieveTemplateFileName_retrieves_the_fixed_value()
+    {
+        @NotNull final PerCustomResultTemplatesFeatureTemplateFactory instance =
+            PerCustomResultTemplatesFeatureTemplateFactory.getInstance();
+
+        Assert.assertEquals(
+            "PerRepositoryTemplates.feature",
+            instance.retrieveTemplateFileName("repo", new UndefinedJdbcEngine("unknown", "1.0")));
+    }
+
 }
