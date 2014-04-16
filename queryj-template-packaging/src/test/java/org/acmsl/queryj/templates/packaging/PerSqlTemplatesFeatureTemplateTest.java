@@ -1,5 +1,5 @@
 /*
-                        queryj
+                        QueryJ Template Packaging
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for PerSqlTemplatesFeatureTemplate.
  *
  * Date: 2014/04/16
  * Time: 11:52
@@ -38,17 +38,20 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Assert;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 /**
- *
+ * Tests for {@link PerSqlTemplatesFeatureTemplate}
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/16 11:52
@@ -56,4 +59,32 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class PerSqlTemplatesFeatureTemplateTest
 {
+    /**
+     * Checks the template name is correct.
+     */
+    @Test
+    public void templateName_is_correct()
+    {
+        @NotNull final GlobalTemplateContext context = EasyMock.createNiceMock(GlobalTemplateContext.class);
+
+        @NotNull final PerSqlTemplatesFeatureTemplate instance =
+            new PerSqlTemplatesFeatureTemplate(context);
+
+        Assert.assertEquals(Literals.PER_SQL_TEMPLATES_FEATURE, instance.getTemplateName());
+    }
+
+    /**
+     * Checks whether the group is found.
+     */
+    @Test
+    public void group_is_available()
+    {
+        @NotNull final GlobalTemplateContext context = EasyMock.createNiceMock(GlobalTemplateContext.class);
+
+        @NotNull final PerSqlTemplatesFeatureTemplate instance =
+            new PerSqlTemplatesFeatureTemplate(context);
+
+        Assert.assertNotNull(instance.retrieveGroup());
+    }
+
 }
