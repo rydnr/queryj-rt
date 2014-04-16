@@ -118,7 +118,7 @@ public class PerRepositoryTemplatesFeatureTemplate
     @Override
     public String getTemplateName()
     {
-        return Literals.PER_TABLE_TEMPLATES_FEATURE;
+        return Literals.PER_REPOSITORY_TEMPLATES_FEATURE;
     }
 
 }
