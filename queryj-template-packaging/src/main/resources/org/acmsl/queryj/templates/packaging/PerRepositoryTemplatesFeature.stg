@@ -56,7 +56,7 @@ Feature: <repository>-wide classes compile
 
   Scenario Outline: Templates bound to <C.repository> compile
 
-    Given the table containing the foreign key is:
+    Given the containing the foreign key is:
     |    table     | parent table | decorated | relationship |   static    |
     | <fk.sourceTable.name> | <fk.sourceTable.parent> | <fk.sourceTable.decorated> | <fk.sourceTabel.relationship> | <fk.sourceTable.static> |
 
