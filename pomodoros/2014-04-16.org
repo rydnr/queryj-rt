@@ -7,7 +7,7 @@
 *** PerXXXTemplatesFeatureTemplate
 **** DONE #474
 **** DONE #475
-**** TODO #476
+**** DONE #476
 *** PerXXXTemplatesFeatureTemplateFactory
 *** PerXXXTemplatesTestTemplate
 *** PerXXXTemplatesTestTemplateFactory
@@ -18,6 +18,7 @@
 *** PerXXXTemplatesFeature.stg
 **** DONE #474
 **** DONE #475
+**** DONE #476
 *** PerXXXTemplatesFeature.stg.def
 *** PerXXXTemplatesTest.stg
 *** PerXXXTemplateWritingHandler.stg
