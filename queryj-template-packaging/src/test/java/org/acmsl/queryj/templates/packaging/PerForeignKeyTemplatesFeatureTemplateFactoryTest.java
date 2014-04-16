@@ -73,5 +73,8 @@ public class PerForeignKeyTemplatesFeatureTemplateFactoryTest
     }
 
     @Test
-    public void retrieve
+    public void retrieveTemplateFileName_retrieves_the_fixed_value()
+    {
+
+    }
 }
