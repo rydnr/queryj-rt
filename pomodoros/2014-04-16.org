@@ -22,7 +22,12 @@
 **** DONE #476
 **** DONE #477
 *** PerXXXTemplatesFeature.stg.def
-*** PerXXXTemplatesTest.stg
+**** DONE #474
+**** DONE #475
+**** DONE #476
+**** DONE #477
+
+*** Perxxxtemplatestest.stg
 *** PerXXXTemplateWritingHandler.stg
 *** XXXTestHelper
 *** Add PerXXXTemplatesTestTemplateHandlerBundle to TemplatePackagingChain
