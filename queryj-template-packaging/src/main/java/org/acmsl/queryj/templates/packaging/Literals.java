@@ -122,7 +122,7 @@ public interface Literals
      */
     String PER_SQL_TEMPLATES_FEATURE = "PerSqlTemplatesFeature";
     /**
-     * String literal:
+     * String literal: "PerForeignKeyTemplatesFeature".
      */
     String PER_FOREIGN_KEY_TEMPLATES_FEATURE = "PerForeignKeyTemplatesFeature";
 }
