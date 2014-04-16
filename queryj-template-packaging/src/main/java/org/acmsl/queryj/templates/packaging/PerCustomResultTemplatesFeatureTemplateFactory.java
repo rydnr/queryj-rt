@@ -38,12 +38,19 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.commons.patterns.Singleton;
+import org.acmsl.queryj.metadata.DecoratedString;
+import org.acmsl.queryj.metadata.MetadataManager;
+import org.acmsl.queryj.metadata.engines.Engine;
+import org.acmsl.queryj.metadata.engines.EngineDecorator;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
+import org.stringtemplate.v4.ST;
 
 /**
  *
@@ -53,6 +60,77 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class PerCustomResultTemplatesFeatureTemplateFactory
+    implements TemplatePackagingTemplateFactory<PerForeignKeyTemplatesFeatureTemplate, GlobalTemplateContext>,
+               Singleton
 {
+    /**
+     * Singleton instance to avoid double-locking check.
+     */
+    protected static final class PerForeignKeyTemplatesFeatureTemplateFactorySingletonContainer
+    {
+        /**
+         * The actual singleton.
+         */
+        public static final PerForeignKeyTemplatesFeatureTemplateFactory SINGLETON =
+            new PerForeignKeyTemplatesFeatureTemplateFactory();
+    }
 
+    /**
+     * Retrieves the singleton instance.
+     * @return such instance.
+     */
+    @NotNull
+    public static PerForeignKeyTemplatesFeatureTemplateFactory getInstance()
+    {
+        return PerForeignKeyTemplatesFeatureTemplateFactorySingletonContainer.SINGLETON;
+    }
+
+    /**
+     * Generates a template.
+     *
+     * @param context the context.
+     * @return such template.
+     */
+    @Nullable
+    @Override
+    public PerForeignKeyTemplatesFeatureTemplate createTemplate(@NotNull final GlobalTemplateContext context)
+    {
+        return new PerForeignKeyTemplatesFeatureTemplate(context);
+    }
+
+    /**
+     * Retrieves the file name of the template.
+     * @param repository the repository name.
+     * @param metadataManager the {@link org.acmsl.queryj.metadata.MetadataManager} instance.
+     * @return the file name.
+     */
+    @NotNull
+    public String retrieveTemplateFileName(
+        @NotNull final String repository, @NotNull final MetadataManager metadataManager)
+    {
+        return retrieveTemplateFileName(repository, metadataManager.getEngine());
+    }
+
+    /**
+     * Retrieves the file name of the template.
+     * @param repository the repository name.
+     * @param engine the {@link org.acmsl.queryj.metadata.engines.Engine} instance.
+     * @return the file name.
+     */
+    @NotNull
+    public String retrieveTemplateFileName(
+        @NotNull final String repository, @NotNull final Engine<String> engine)
+    {
+        @NotNull final String result;
+
+        @NotNull final ST template =
+            new ST("PerForeignKeyTemplates.feature");
+
+        template.add(Literals.REPOSITORY, new DecoratedString(repository));
+        template.add(org.acmsl.queryj.Literals.ENGINE, new EngineDecorator(engine));
+
+        result = template.render();
+
+        return result;
+    }
 }
