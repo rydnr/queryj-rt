@@ -48,7 +48,7 @@ import org.acmsl.queryj.templates.packaging.Literals;
 import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplate;
 
 /*
- * Importing Apache Com
+ * Importing Apache Commons Configuration classes.
  */
 import org.apache.commons.configuration.PropertiesConfiguration;
 /*
