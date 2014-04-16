@@ -87,7 +87,7 @@ public class PerCustomResultTemplatesTestTemplateFactory
      */
     @Nullable
     @Override
-    public PerRepositoryTemplatesTestTemplate createTemplate(@NotNull final GlobalTemplateContext context)
+    public PerCustomResultTemplatesTestTemplate createTemplate(@NotNull final GlobalTemplateContext context)
     {
         return new PerRepositoryTemplatesTestTemplate(context);
     }
