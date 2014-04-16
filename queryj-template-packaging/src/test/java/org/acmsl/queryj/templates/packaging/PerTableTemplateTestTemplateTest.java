@@ -68,7 +68,7 @@ public class PerTableTemplateTestTemplateTest
         @NotNull final GlobalTemplateContext context = EasyMock.createNiceMock(GlobalTemplateContext.class);
 
         @NotNull final PerTableTemplateTestTemplate instance =
-            new PerSqlTemplatesFeatureTemplate(context);
+            new PerTableTemplatesTestTemplate(context);
 
         Assert.assertEquals(Literals.PER_SQL_TEMPLATES_FEATURE, instance.getTemplateName());
     }
