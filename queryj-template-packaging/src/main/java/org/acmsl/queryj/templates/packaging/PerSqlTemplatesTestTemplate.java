@@ -54,4 +54,23 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public class PerSqlTemplatesTestTemplate
 {
+    /**
+     * Builds a PerCustomResultTemplatesTest using given context.
+     * @param context the {@link GlobalTemplateContext}.
+     */
+    public PerCustomResultTemplatesTestTemplate(@NotNull final GlobalTemplateContext context)
+    {
+        super(context);
+    }
+
+    /**
+     * Retrieves the template name.
+     * @return "PerCustomResultTemplatesTest";
+     */
+    @NotNull
+    @Override
+    public String getTemplateName()
+    {
+        return Literals.PER_CUSTOM_RESULT_TEMPLATES_TEST;
+    }
 }
