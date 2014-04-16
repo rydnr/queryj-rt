@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Factory for PerCustomResultTemplatesTestTemplates.
  *
  * Date: 2014/04/16
  * Time: 21:24
