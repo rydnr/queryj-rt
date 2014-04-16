@@ -73,11 +73,16 @@ public class PerForeignKeyTemplatesFeatureTemplateFactoryTest
     }
 
     /**
-     * Checks retrieveTemplateFileName() returns "PerForeignKeyTemplates.feature".
+     * Checks whether retrieveTemplateFileName() returns "PerForeignKeyTemplates.feature".
      */
     @Test
     public void retrieveTemplateFileName_retrieves_the_fixed_value()
     {
+        @NotNull final GlobalTemplateContext context = EasyMock.createNiceMock(GlobalTemplateContext.class);
 
+        @NotNull final PerForeignKeyTemplatesFeatureTemplateFactory instance =
+            PerForeignKeyTemplatesFeatureTemplateFactory.getInstance();
+
+        Assert.assertNotNull(instance.retrieveTemplateFileName(context));
     }
 }
