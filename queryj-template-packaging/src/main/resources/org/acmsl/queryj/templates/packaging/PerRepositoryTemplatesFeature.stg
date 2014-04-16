@@ -42,7 +42,7 @@ import "common.stg"
 
 source(C) ::= <<
 <!
-  Generates PerForeignKeyTemplates.feature files.
+  Generates PerRepositoryTemplates.feature files.
 !>
 <sourceImpl(fk=C.foreignKey, C=C)>
 >>
