@@ -110,6 +110,9 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
         Assert.assertEquals(template, command.getSetting(PerTableTemplatesTestTemplateBuildHandler.TEMPLATES_KEY));
     }
 
+    /**
+     * Checks whether
+     */
     @Test
     public void retrieveTemplateFactory_retrieves_the_correct_factory()
     {
