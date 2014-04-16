@@ -51,7 +51,6 @@ sourceImpl(result, C) ::= <<
 <!
   Generates PerCustomResultTemplates.feature files.
   @param result the custom result.
-  @param tables the tables.
 !>
 Feature: <repository>-wide classes compile
 
