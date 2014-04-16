@@ -57,8 +57,8 @@ public class PerCustomResultTemplatesFeatureTemplate
     extends AbstractTemplatePackagingTemplate<GlobalTemplateContext>
 {
     /**
-     * Builds a {@link PerCustomResultTemplatesFeatureTemplate}
-     * @param context
+     * Builds a {@link PerCustomResultTemplatesFeatureTemplate} with given context.
+     * @param context the {@link GlobalTemplateContext}
      */
     public PerCustomResultTemplatesFeatureTemplate(@NotNull final GlobalTemplateContext context)
     {
