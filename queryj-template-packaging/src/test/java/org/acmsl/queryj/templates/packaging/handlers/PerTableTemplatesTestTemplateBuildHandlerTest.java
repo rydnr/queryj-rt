@@ -126,6 +126,9 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
     @Test
     public void retrieveOutputPackage_returns_the_cucumber_package()
     {
+        @NotNull final PerTableTemplatesTestTemplateBuildHandler instance =
+            new PerTableTemplatesTestTemplateBuildHandler();
 
+        Assert.assertEquals();
     }
 }
