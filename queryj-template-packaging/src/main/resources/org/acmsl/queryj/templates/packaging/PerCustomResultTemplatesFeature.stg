@@ -47,9 +47,9 @@ source(C) ::= <<
 <sourceImpl(result=C.result, C=C)>
 >>
 
-sourceImpl(repository, tables, C) ::= <<
+sourceImpl(result, C) ::= <<
 <!
-  Generates PerRepositoryTemplates.feature files.
+  Generates PerCustomResultTemplates.feature files.
   @param repository the repository.
   @param tables the tables.
 !>
