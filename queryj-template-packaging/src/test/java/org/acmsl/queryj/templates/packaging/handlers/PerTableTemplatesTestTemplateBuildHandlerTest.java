@@ -51,6 +51,7 @@ import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplate;
  * Importing Apache Commons Configuration classes.
  */
 import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplateFactory;
+import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.apache.commons.configuration.PropertiesConfiguration;
 
 /*
@@ -66,6 +67,8 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+
+import java.util.List;
 
 /**
  * Tests for {@link PerTableTemplatesTestTemplateBuildHandler}.
@@ -145,6 +148,6 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
 
         @NotNull final QueryJCommand command = EasyMock.createNiceMock(QueryJCommand.class);
 
-
+        @NotNull final List<TemplateDef>
     }
 }
