@@ -57,12 +57,6 @@ Feature: Per-SQL templates
 
   Scenario Outline: Per-SQL templates compile for a type 1 table
 
-    Given the following tables associated to :
-    |    id
-    |    table     | parent table | decorated | relationship |   static    |
-    | <sql.dao>     |              |           |              |             |
-    | g_draw_types |              |           |              | description |
-
     And the following columns:
     |     table    |         column        | type      | pk    | allows null | readonly |   sequence    | keyword | boolean | length | precision |
     | g_draws      | g_draw_id             | number    | true  | false       | false    | seq_g_draws   |         |         |     10 |         0 |
