@@ -47,10 +47,11 @@ source(C) ::= <<
 <sourceImpl(repository=C.repository, tables=C.tables, C=C)>
 >>
 
-sourceImpl(repository, C) ::= <<
+sourceImpl(repository, tables, C) ::= <<
 <!
   Generates PerRepositoryTemplates.feature files.
   @param repository the repository.
+  @param tables the tables.
 !>
 Feature: <repository>-wide classes compile
 
