@@ -75,57 +75,16 @@ Feature: Per-SQL templates
       | g_draw_types | 2, "El_Gordo",     1 |
       | g_draw_types | 3, "Primitiva",    1 |
 
-    When I generate with per-table \<template>.stg for Oracle
+    When I generate with per-SQL \<template>.stg for Oracle
 
-    Then the generated per-table \<output> file compiles successfully
-
-    Then the queries are validated correctly using the following database:
-      |     driver     |     url     |     userName     |     password     |
-      | <C.jdbcDriver> | <C.jdbcUrl> | <C.jdbcUserName> | <C.jdbcPassword> |
+    Then the generated per-SQL \<output> file compiles successfully
 
     Examples:
       | template           | output                            |
       <C.templateDefs:{ d | <indirect_template(def=d, engineName="Oracle", tableName="User")>}; separator="\n">
-
-<!
-  Scenario Outline: Per-table templates compiles for a type 2 table
-
-    Given the following tables:
-      | table      | parent table | decorated | relationship | static |
-      | car_brands |              |           |              | name   |
-
-    And the following columns:
-      | table      | column    | type     | pk    | allows null | readonly | sequence  | keyword | boolean | length | precision |
-      | car_brands | brand_id  | number   | true  | false       | false    |           |         |         |     10 |         0 |
-      | car_brands | name      | varchar  | false | false       | false    |           |         |         |     30 |           |
-
-    And the following values:
-      | car_brands | brand_id |       name |
-      | car_brands |        1 |       SEAT |
-      | car_brands |        2 |    CITROEN |
-      | car_brands |        3 | VOLKSWAGEN |
-      | car_brands |        4 |       AUDI |
-
-    And the following queries:
-      |       id      |     name      |     dao    |  type  | matches  |                     value                                |
-      | first.select  | first-select  | car_brands | select | single   | select brand_id, name from car_brands where brand_id = ? |
-      | second.select | second-select | car_brands | select | multiple |select brand_id, name from car_brands where name = ?      |
-
-    And the following query parameters:
-      |         id          |      sql       | index |  type  |  name    |
-      | car_brands.brand_id |  first.select  |   1   |  long  |  brandId |
-      | car_brands.name     |  second.select |   1   | String |  name    |
-
-    When I generate with per-table \<template>.stg for Oracle
-
-    Then the generated per-table \<output> file compiles successfully
-
-    Examples:
-      | template           | output                            |
-      <C.templateDefs:{ d | <indirect_template(def=d, engineName="Oracle", tableName="CarBrand")>}; separator="\n">
-!>
 >>
 
 indirect_template(def, engineName, tableName) ::= <<
 | <def.name; format="%-30s"> | <(def.filenameRule)(engineName, tableName)> |
 >>
+
