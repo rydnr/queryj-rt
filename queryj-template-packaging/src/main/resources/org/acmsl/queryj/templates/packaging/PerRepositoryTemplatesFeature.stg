@@ -59,7 +59,7 @@ Feature: <repository>-wide classes compile
 
     Given the repository whose name is \<repository>, composed of :
     | table | parent table | decorated | relationship |   static    |
-    | <C.> | <fk.sourceTable.parent> | <fk.sourceTable.decorated> | <fk.sourceTabel.relationship> | <fk.sourceTable.static> |
+    | <tables> | <fk.sourceTable.parent> | <fk.sourceTable.decorated> | <fk.sourceTabel.relationship> | <fk.sourceTable.static> |
 
     And the table containing the foreign key has the following columns:
     |     table    |         column        | type      | pk    | allows null | readonly |   sequence    | keyword | boolean | length | precision |
