@@ -38,6 +38,7 @@ package org.acmsl.queryj.templates.packaging.handlers;
 /*
  * Importing JetBrains annotations.
  */
+import junit.framework.Assert;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -66,6 +67,6 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
         @NotNull final PerTableTemplatesTestTemplateBuildHandler instance =
             new PerTableTemplatesTestTemplateBuildHandler();
 
-
+        Assert.assertEquals();
     }
 }
