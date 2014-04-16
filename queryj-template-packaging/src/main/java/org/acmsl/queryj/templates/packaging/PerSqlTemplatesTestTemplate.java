@@ -46,7 +46,7 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
- * Used to generate sources using PerCustomResultTemplatesTest.stg.
+ * Used to generate sources using PerSqlTemplatesTest.stg.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/16 21:03
