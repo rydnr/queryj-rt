@@ -69,12 +69,6 @@ Feature: Per-SQL templates
     |     table    |         column        | type      | pk    | allows null | readonly |   sequence    | keyword | boolean | length | precision |
     <C.tables:{t | <t.attributes:{ a | <cucumber_column_specification(attribute=a)>}; separator="\n">}; separator="\n">
 
-    And the following contents:
-      |    table     |         row          |
-      | g_draw_types | 1, "Euromillions", 1 |
-      | g_draw_types | 2, "El_Gordo",     1 |
-      | g_draw_types | 3, "Primitiva",    1 |
-
     When I generate with per-SQL \<template>.stg for Oracle
 
     Then the generated per-SQL \<output> file compiles successfully
