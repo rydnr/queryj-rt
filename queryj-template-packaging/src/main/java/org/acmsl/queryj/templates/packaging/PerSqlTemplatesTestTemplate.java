@@ -53,6 +53,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class PerSqlTemplatesTestTemplate
+    extends AbstractTemplatePackagingTemplate<GlobalTemplateContext>
 {
     /**
      * Builds a PerCustomResultTemplatesTest using given context.
