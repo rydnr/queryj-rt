@@ -81,7 +81,6 @@ public class PerRepositoryTemplatesTestTemplateFactory
 
     /**
      * Generates a template.
-     *
      * @param context the context.
      * @return such template.
      */
