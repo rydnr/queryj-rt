@@ -61,7 +61,7 @@ Feature: Classes associated to custom results compile
     | <result:{ r | <cucumber_custom_result_declaration(result=r)>}; separator="\n">
 
     And the following custom result properties:
-    | name | dao | type |
+    | name | type |
     | <result:{ r | <cucumber_custom_result_declaration(result=r)>}; separator="\n">
 
     When I use the custom result template \<template>.stg for Oracle
