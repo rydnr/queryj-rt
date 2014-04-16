@@ -90,7 +90,7 @@ indirect_template(def, engineName, tableName) ::= <<
 
 cucumber_parameter_specification(parameter) ::= <<
 <! Generates the specification for a parameter !>
-| <parameter.id> | <parameter.sql> | <parameter.index> | <parameter.type> | <parameter.name> | <attribute.readonly> | <attribute.sequence> | <attribute.keyword> | <attribute.length> | <attribute.precision> |
+| <parameter.id> | <parameter.sql> | <parameter.index> | <parameter.type> | <parameter.name> | <parameter.validationValue> |
 >>
 
 cucumber_column_specification(attribute) ::= <<
