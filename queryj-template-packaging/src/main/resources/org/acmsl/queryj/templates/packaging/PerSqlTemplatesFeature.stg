@@ -44,6 +44,12 @@ source(C) ::= <<
 <!
   Generates PerSqlTemplates.feature files.
 !>
+<sourceImpl(
+>>
+source(C) ::= <<
+<!
+  Generates PerSqlTemplates.feature files.
+!>
 Feature: Per-SQL templates
 
   Scenario Outline: Per-SQL templates compile for a type 1 table
