@@ -71,20 +71,6 @@ public class PerRepositoryTemplatesFeatureTemplate
     }
 
     /**
-     * Retrieves the StringTemplate group for "PerRepositoryTemplatesFeature.stg".
-     * @return such {@link org.stringtemplate.v4.STGroup group}.
-     */
-    @Nullable
-    @Override
-    public STGroup retrieveGroup()
-    {
-        return
-            retrieveGroup(
-                "org/acmsl/queryj/templates/packaging/PerRepositoryTemplatesFeature.stg",
-                Arrays.asList(org.acmsl.queryj.Literals.ORG_ACMSL_QUERYJ_TEMPLATES));
-    }
-
-    /**
      * Retrieves the template in given group.
      * @param group the StringTemplate group.
      * @return the template.
