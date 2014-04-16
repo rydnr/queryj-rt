@@ -62,10 +62,8 @@ Feature: Per-SQL templates
       | <sql.id> | <sql.name> | <sql.dao>| <sql.type> | <sql.matches> | <sql.value> | <sql.validate> |
 
     And the following query parameters:
-      |            id            |     sql       | index |  type  |     name    | validation-value |
+      | id | sql | index | type | name | validation-value |
       <sql.parameters:{p | <cucumber_parameter_specification(parameter=p)>}; separator="\n">
-      | g_draw_types.description | third.select  |   1   | String | description |  'Euromillones'  |
-      | g_draws.drawing_date     | fourth.select |   1   |  Date  | drawingDate |   '2014/02/15'   |
 
     And the following columns for the tables involved:
     |     table    |         column        | type      | pk    | allows null | readonly |   sequence    | keyword | boolean | length | precision |
