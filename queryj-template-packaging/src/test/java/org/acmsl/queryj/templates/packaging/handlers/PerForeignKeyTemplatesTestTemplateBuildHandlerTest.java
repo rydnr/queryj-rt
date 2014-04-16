@@ -107,7 +107,7 @@ public class PerForeignKeyTemplatesTestTemplateBuildHandlerTest
 
     /**
      * Checks whether retrieveTemplateFactory() retrieves
-     * {@link org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplateFactory}.
+     * {@link PerForeignKeyTemplatesTestTemplateFactory}.
      */
     @Test
     public void retrieveTemplateFactory_retrieves_the_correct_factory()
