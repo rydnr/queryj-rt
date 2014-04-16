@@ -50,7 +50,7 @@ import org.checkthread.annotations.ThreadSafe;
 public interface Literals
 {
     /**
-     * String literal: "
+     * String literal: "repository".
      */
     String REPOSITORY = org.acmsl.queryj.Literals.REPOSITORY;
     String CUCUMBER_TEMPLATES = "cucumber.templates";
