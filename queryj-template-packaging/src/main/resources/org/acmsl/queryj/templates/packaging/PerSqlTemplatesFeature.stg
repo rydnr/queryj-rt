@@ -60,19 +60,6 @@ Feature: Per-SQL templates
     Given the following columns for the tables involved:
     |     table    |         column        | type      | pk    | allows null | readonly |   sequence    | keyword | boolean | length | precision |
     <C.tables:{t | <t.attributes:{ a | <cucumber_column_specification(attribute=a)>}; separator="\n">}; separator="\n">
-    | <sql.dao> | g_draw_id             | number    | true  | false       | false    | seq_g_draws   |         |         |     10 |         0 |
-    | g_draws      | g_draw_type_id        | number    | false | false       | false    |               |         |         |     10 |         0 |
-    | g_draws      | drawing_date          | date      | false | false       | false    |               |         |         |        |           |
-    | g_draws      | g_draw_state_id       | number    | false | false       | false    |               |         |         |     10 |         0 |
-    | g_draws      | last_modified         | timestamp | false | false       | false    |               |         |         |        |           |
-    | g_draws      | creation_date         | timestamp | false | false       | false    |               | sysdate |         |        |           |
-    | g_draw_types | g_draw_type_id        | number    | true  | false       | false    | seq_g_draws   |         |         |     10 |         0 |
-    | g_draw_types | description           | varchar   | false | false       | false    |               |         |         |     40 |           |
-    | g_draw_types | g_lottery_provider_id | number    | false | false       | false    |               | sysdate |         |        |           |
-
-    And the following foreign keys:
-    | source table | source columns | target table | allows null |
-    | g_draws      | g_draw_type_id | d_draw_types | false       |
 
     And the following queries:
       |       id      |     name      |     dao      |  type  | matches  |                        value                           | validate |
