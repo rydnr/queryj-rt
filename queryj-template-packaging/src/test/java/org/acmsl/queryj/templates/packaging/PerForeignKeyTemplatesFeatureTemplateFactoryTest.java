@@ -71,4 +71,7 @@ public class PerForeignKeyTemplatesFeatureTemplateFactoryTest
 
         Assert.assertNotNull(instance.createTemplate(context));
     }
+
+    @Test
+    public void retrieve
 }
