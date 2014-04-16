@@ -64,7 +64,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
+ * Tests for {@link PerForeignKeyTemplatesTestTemplateBuildHandler}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/16 22:32
@@ -78,12 +78,12 @@ public class PerForeignKeyTemplatesTestTemplateBuildHandlerTest
     @Test
     public void retrieveTemplateName_works()
     {
-        @NotNull final PerTableTemplatesTestTemplateBuildHandler instance =
-            new PerTableTemplatesTestTemplateBuildHandler();
+        @NotNull final PerForeignKeyTemplatesTestTemplateBuildHandler instance =
+            new PerForeignKeyTemplatesTestTemplateBuildHandler();
 
         @NotNull final QueryJCommand command = EasyMock.createNiceMock(QueryJCommand.class);
 
-        Assert.assertEquals(Literals.PER_TABLE_TEMPLATES_TEST, instance.retrieveTemplateName(command));
+        Assert.assertEquals(Literals.PER_FOREIGN_KEY_TEMPLATES_TEST, instance.retrieveTemplateName(command));
     }
 
     /**
@@ -99,7 +99,7 @@ public class PerForeignKeyTemplatesTestTemplateBuildHandlerTest
             new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
         @NotNull final PerForeignKeyTemplatesTestTemplate template =
-            EasyMock.createNiceMock(PerTableTemplatesTestTemplate.class);
+            EasyMock.createNiceMock(PerForeignKeyTemplatesTestTemplate.class);
 
         instance.storeTemplate(template, command);
 
