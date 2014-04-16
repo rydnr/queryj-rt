@@ -61,6 +61,7 @@ import java.util.Arrays;
 public class PerRepositoryTemplatesFeatureTemplate
     extends AbstractTemplatePackagingTemplate<GlobalTemplateContext>
 {
+
     /**
      * Builds a {@code PerRepositoryTemplatesFeature} using given context.
      * @param context the {@link GlobalTemplateContext}.
