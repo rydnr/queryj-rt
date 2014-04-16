@@ -78,6 +78,11 @@ public class PerRepositoryTemplatesFeatureTemplateTest
     @Test
     public void group_is_available()
     {
+        @NotNull final GlobalTemplateContext context = EasyMock.createNiceMock(GlobalTemplateContext.class);
 
+        @NotNull final PerRepositoryTemplatesFeatureTemplate instance =
+            new PerRepositoryTemplatesFeatureTemplate(context);
+
+        Assert.assertEquals(Literals.PER_REPOSITORY_TEMPLATES_FEATURE, instance.getTemplateName());
     }
 }
