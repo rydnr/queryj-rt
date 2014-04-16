@@ -81,8 +81,17 @@ public interface Literals
      * String literal: "TemplateGenerator".
      */
     String TEMPLATE_GENERATOR = "TemplateGenerator";
+    /**
+     * String literal: "TemplateHandlerBundle".
+     */
     String TEMPLATE_HANDLER_BUNDLE = "TemplateHandlerBundle";
+    /**
+     * String literal: "TemplateWritingHandler".
+     */
     String TEMPLATE_WRITING_HANDLER = "TemplateWritingHandler";
+    /**
+     * String literal:
+     */
     String PER_TABLE_TEMPLATES_FEATURE = "PerTableTemplatesFeature";
     String PACKAGE = org.acmsl.queryj.Literals.PACKAGE;
     String ORG_ACMSL_QUERYJ_TEMPLATES_PACKAGING = "org/acmsl/queryj/templates/packaging/";
