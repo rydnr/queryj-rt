@@ -84,5 +84,5 @@ cucumber_custom_result_declaration(attribute) ::= <<
 
 cucumber_property_declaration(attribute) ::= <<
 <! Declares the property metadata in Cucumber format !>
-| <property.id> | <property.dao> | <result.type> |
+| <property.id> | <property.type> | <result.type> |
 >>
