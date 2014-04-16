@@ -44,9 +44,12 @@ import org.jetbrains.annotations.NotNull;
 /*
  * Importing checkthread.org annotations.
  */
+import org.easymock.EasyMock;
 import org.checkthread.annotations.ThreadSafe;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 /**
  * Tests for {@link PerCustomResultTemplatesTestTemplate}.
@@ -54,7 +57,7 @@ import org.junit.Test;
  * @since 3.0
  * Created: 2014/04/16 16:27
  */
-@ThreadSafe
+@RunWith(JUnit4.class)
 public class PerCustomResultTemplatesTestTemplateTest
 {
     /**
