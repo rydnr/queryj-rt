@@ -56,7 +56,7 @@ Feature: Classes associated to custom results compile
 
   Scenario Outline: Custom result templates work
 
-    Given the following custom resultswhose name is \<repository>, composed of :
+    Given the following custom results:
     | table | parent table | decorated | relationship |   static    |
     <tables:{ t | <cucumber_table_declaration(table=t)>}; separator="\n">
 
