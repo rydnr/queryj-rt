@@ -63,6 +63,6 @@ public class PerTableTemplatesTestTemplateFactoryTest
         @NotNull final PerTableTemplatesTestTemplateFactory instance =
             PerTableTemplatesTestTemplateFactory.getInstance();
 
-        Assert.assertNotNull()
+        Assert.assertNotNull(instance.createTemplate(context));
     }
 }
