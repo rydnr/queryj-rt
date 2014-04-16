@@ -63,7 +63,7 @@ Feature: Per-SQL templates
 
     And the following query parameters:
       |            id            |     sql       | index |  type  |     name    | validation-value |
-      | g_draws.g_draw_id        | first.select  |   1   |  long  | drawId      |         1        |
+      | <sql.g_draws.g_draw_id        | first.select  |   1   |  long  | drawId      |         1        |
       | g_draw_types.description | third.select  |   1   | String | description |  'Euromillones'  |
       | g_draws.drawing_date     | fourth.select |   1   |  Date  | drawingDate |   '2014/02/15'   |
 
