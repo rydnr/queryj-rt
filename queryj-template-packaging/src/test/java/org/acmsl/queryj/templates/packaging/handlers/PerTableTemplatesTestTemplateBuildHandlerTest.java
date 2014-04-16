@@ -63,6 +63,7 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
     @Test
     public void retrieveTemplateName_works()
     {
-
+        @NotNull final PerTableTemplatesTestTemplateBuildHandler instance =
+            new PerTableTemplatesTestTemplateBuildHandler();
     }
 }
