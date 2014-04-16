@@ -35,6 +35,11 @@
  */
 package org.acmsl.queryj.templates.packaging;
 
+import org.junit.runner.RunWith;
+
+/**
+ *
+ */
 /*
  * Importing JetBrains annotations.
  */
