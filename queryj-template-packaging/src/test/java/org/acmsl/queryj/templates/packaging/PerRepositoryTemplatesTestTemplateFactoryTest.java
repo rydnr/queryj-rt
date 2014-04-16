@@ -65,7 +65,7 @@ public class PerRepositoryTemplatesTestTemplateFactoryTest
     @Test
     public void createTemplate_creates_a_new_template()
     {
-        @NotNull final PerTableTemplatesTestTemplateFactory instance =
+        @NotNull final PerRepositoryTemplatesTestTemplateFactory instance =
             PerTableTemplatesTestTemplateFactory.getInstance();
 
         @NotNull final GlobalTemplateContext context = EasyMock.createNiceMock(GlobalTemplateContext.class);
