@@ -64,7 +64,8 @@ public class PerRepositoryTemplatesFeatureTemplateTest
     @Test
     public void templateName_is_correct()
     {
-        @NotNull final PerRepositoryTemplatesFeatureTemplate instance = new PerRepositoryTemplatesFeatureTemplate();
+        @NotNull final PerRepositoryTemplatesFeatureTemplate instance =
+            new PerRepositoryTemplatesFeatureTemplate();
 
         Assert.assertEquals("PerRepositoryTemplatesFeature", instance.getTemplateName());
     }
