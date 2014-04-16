@@ -50,6 +50,7 @@ source(C) ::= <<
 sourceImpl(repository, C) ::= <<
 <!
   Generates PerRepositoryTemplates.feature files.
+  @param repository the repository.
 !>
 Feature: <repository>-wide classes compile
 
