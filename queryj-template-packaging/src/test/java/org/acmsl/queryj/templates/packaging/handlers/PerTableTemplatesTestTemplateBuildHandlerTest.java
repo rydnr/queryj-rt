@@ -48,6 +48,10 @@ import org.acmsl.queryj.templates.packaging.Literals;
 import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplate;
 
 /*
+ * Importing Apache Com
+ */
+import org.apache.commons.configuration.PropertiesConfiguration;
+/*
  * Importing JetBrains annotations.
  */
 import org.apache.commons.configuration.PropertiesConfiguration;
