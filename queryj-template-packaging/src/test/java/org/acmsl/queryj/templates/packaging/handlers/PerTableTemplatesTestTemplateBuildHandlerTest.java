@@ -50,7 +50,6 @@ import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplate;
 /*
  * Importing JetBrains annotations.
  */
-import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplate;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.jetbrains.annotations.NotNull;
 
