@@ -59,6 +59,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 import org.stringtemplate.v4.ST;
 import org.stringtemplate.v4.STGroup;
+import org.stringtemplate.v4.STGroupString;
 
 /*
  * Importing JDK classes.
@@ -169,5 +170,31 @@ public abstract class AbstractTemplatePackagingTemplate<C extends TemplatePackag
     {
         // TODO
         return null;
+    }
+
+    /**
+     * Retrieves the template in given group.
+     * @param group the StringTemplate group.
+     * @return the template.
+     */
+    @Nullable
+    @Override
+    protected ST retrieveTemplate(@Nullable final STGroup group)
+    {
+        @Nullable final ST result = super.retrieveTemplate(group);
+
+        if (group != null)
+        {
+            for (@NotNull final TemplateDef<String> def : getTemplateContext().getTemplateDefs())
+            {
+                @NotNull final String ruleBody =
+                    def.getFilenameRule()
+                    + "(engine, fileName) ::= <<\n" + def.getFilenameBuilder() + ">>\n";
+
+                group.importTemplates(new STGroupString(def.getName() + "_filename", ruleBody));
+            }
+        }
+
+        return result;
     }
 }
