@@ -142,7 +142,7 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
     }
 
     /**
-     *
+     * Checks whether
      */
     @Test
     public void buildContext_builds_a_global_context()
