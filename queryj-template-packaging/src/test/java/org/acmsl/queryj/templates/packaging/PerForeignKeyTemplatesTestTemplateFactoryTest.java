@@ -66,7 +66,7 @@ public class PerForeignKeyTemplatesTestTemplateFactoryTest
     public void createTemplate_creates_a_new_template()
     {
         @NotNull final PerTableTemplatesTestTemplateFactory instance =
-            PerTableTemplatesTestTemplateFactory.getInstance();
+            PerForeignKeyTemplatesTestTemplateFactory.getInstance();
 
         @NotNull final GlobalTemplateContext context = EasyMock.createNiceMock(GlobalTemplateContext.class);
 
