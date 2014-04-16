@@ -39,6 +39,7 @@ package org.acmsl.queryj.templates.packaging.exceptions;
 /*
  * Importing QueryJ-API classes..
  */
+import org.acmsl.commons.NonCheckedException;
 import org.acmsl.queryj.api.exceptions.QueryJNonCheckedException;
 
 /*
@@ -54,7 +55,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class MissingOutputDirForTestsException
-    extends QueryJNonCheckedException
+    extends TemplatePackagingNonCheckedException
 {
     /**
      * The serial vension id.
