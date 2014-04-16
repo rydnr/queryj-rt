@@ -1,5 +1,5 @@
 /*
-                        queryj
+                        QueryJ Template Packaging
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Factory for PerCustomResultTemplatesFeatureTemplates.
  *
  * Date: 2014/04/16
  * Time: 15:44
@@ -36,43 +36,55 @@
 package org.acmsl.queryj.templates.packaging;
 
 /*
- * Importing JetBrains annotations.
+ * Importing ACM SL Java Commons classes.
  */
 import org.acmsl.commons.patterns.Singleton;
+
+/*
+ * Importing QueryJ Core classes.
+ */
 import org.acmsl.queryj.metadata.DecoratedString;
 import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.engines.Engine;
 import org.acmsl.queryj.metadata.engines.EngineDecorator;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
-import org.jetbrains.annotations.Nullable;
+
+/*
+ * Importing StringTemplate 4 classes.
+ */
 import org.stringtemplate.v4.ST;
 
 /**
- *
+ * Factory for {@link PerCustomResultTemplatesFeatureTemplate}s.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/16 15:44
  */
 @ThreadSafe
 public class PerCustomResultTemplatesFeatureTemplateFactory
-    implements TemplatePackagingTemplateFactory<PerForeignKeyTemplatesFeatureTemplate, GlobalTemplateContext>,
+    implements TemplatePackagingTemplateFactory<PerCustomResultTemplatesFeatureTemplate, GlobalTemplateContext>,
                Singleton
 {
     /**
      * Singleton instance to avoid double-locking check.
      */
-    protected static final class PerForeignKeyTemplatesFeatureTemplateFactorySingletonContainer
+    protected static final class PerCustomResultTemplatesFeatureTemplateFactorySingletonContainer
     {
         /**
          * The actual singleton.
          */
-        public static final PerForeignKeyTemplatesFeatureTemplateFactory SINGLETON =
-            new PerForeignKeyTemplatesFeatureTemplateFactory();
+        public static final PerCustomResultTemplatesFeatureTemplateFactory SINGLETON =
+            new PerCustomResultTemplatesFeatureTemplateFactory();
     }
 
     /**
@@ -80,9 +92,9 @@ public class PerCustomResultTemplatesFeatureTemplateFactory
      * @return such instance.
      */
     @NotNull
-    public static PerForeignKeyTemplatesFeatureTemplateFactory getInstance()
+    public static PerCustomResultTemplatesFeatureTemplateFactory getInstance()
     {
-        return PerForeignKeyTemplatesFeatureTemplateFactorySingletonContainer.SINGLETON;
+        return PerCustomResultTemplatesFeatureTemplateFactorySingletonContainer.SINGLETON;
     }
 
     /**
@@ -93,9 +105,9 @@ public class PerCustomResultTemplatesFeatureTemplateFactory
      */
     @Nullable
     @Override
-    public PerForeignKeyTemplatesFeatureTemplate createTemplate(@NotNull final GlobalTemplateContext context)
+    public PerCustomResultTemplatesFeatureTemplate createTemplate(@NotNull final GlobalTemplateContext context)
     {
-        return new PerForeignKeyTemplatesFeatureTemplate(context);
+        return new PerCustomResultTemplatesFeatureTemplate(context);
     }
 
     /**
