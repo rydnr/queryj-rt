@@ -58,7 +58,7 @@ Feature: Classes associated to custom results compile
 
     Given the following custom result:
     | result | dao | type |
-    | <result:{ t | <cucumber_table_declaration(table=t)>}; separator="\n">
+    | <result:{ r | <cucumber_table_declaration(table=t)>}; separator="\n">
 
     When I use the repository-wide \<template>.stg for Oracle
 
