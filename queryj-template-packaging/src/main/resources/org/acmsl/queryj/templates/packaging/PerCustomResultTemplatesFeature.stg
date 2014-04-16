@@ -60,7 +60,7 @@ Feature: Classes associated to custom results compile
     | result | dao | type |
     | <result:{ r | <cucumber_custom_result_declaration(result=r)>}; separator="\n">
 
-    When I use the custom result \<template>.stg for Oracle
+    When I use the custom result template \<template>.stg for Oracle
 
     Then the generated repository-wide \<output> file compiles successfully
 
