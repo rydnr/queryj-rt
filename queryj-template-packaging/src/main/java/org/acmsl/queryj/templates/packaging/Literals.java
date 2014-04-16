@@ -117,4 +117,5 @@ public interface Literals
      * String literal: "PerCustomResultTemplatesFeature".
      */
     String PER_CUSTOM_RESULT_TEMPLATES_FEATURE = "PerCustomResultTemplatesFeature";
+    String PER_SQL_TEMPLATES_FEATURE = ;
 }
