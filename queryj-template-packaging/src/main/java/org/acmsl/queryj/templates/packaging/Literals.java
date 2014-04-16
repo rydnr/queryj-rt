@@ -98,7 +98,7 @@ public interface Literals
      */
     String PACKAGE = org.acmsl.queryj.Literals.PACKAGE;
     /**
-     * String literal: "
+     * String literal: "org/acmsl/queryj/templates/packaging/".
      */
     String ORG_ACMSL_QUERYJ_TEMPLATES_PACKAGING = "org/acmsl/queryj/templates/packaging/";
     String PER_FOREIGN_KEY_TEMPLATE_FACTORY = "PerForeignKeyTemplateFactory";
