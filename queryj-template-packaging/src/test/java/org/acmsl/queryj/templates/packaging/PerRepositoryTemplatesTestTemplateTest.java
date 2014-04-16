@@ -72,5 +72,4 @@ public class PerRepositoryTemplatesTestTemplateTest
 
         Assert.assertEquals(Literals.PER_REPOSITORY_TEMPLATES_TEST, instance.getTemplateName());
     }
-
 }
