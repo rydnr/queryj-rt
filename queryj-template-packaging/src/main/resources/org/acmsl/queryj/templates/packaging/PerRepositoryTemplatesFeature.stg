@@ -56,8 +56,8 @@ Feature: <repository>-wide classes compile
 
   Scenario Outline: Templates bound to <C.repository> compile
 
-    Given the repository whose name is \<repository>, composed of:
-    |    table | parent table | decorated | relationship |   static    |
+    Given the repository whose name is \<repository>, composed of :
+    | table | parent table | decorated | relationship |   static    |
     | <fk.sourceTable.name> | <fk.sourceTable.parent> | <fk.sourceTable.decorated> | <fk.sourceTabel.relationship> | <fk.sourceTable.static> |
 
     And the table containing the foreign key has the following columns:
