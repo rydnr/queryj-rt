@@ -67,7 +67,8 @@ Feature: Per-SQL templates
 
     And the following columns for the tables involved:
     |     table    |         column        | type      | pk    | allows null | readonly |   sequence    | keyword | boolean | length | precision |
-    <C.tables:{t | <t.attributes:{ a | <cucumber_column_specification(attribute=a)>}; separator="\n">}; separator="\n">
+    <C.tables:{t | <t.attributes:{ a | <cucumber_column_specification(attribute=a)>
+                   <t.attributes:{ a | <cucumber_column_specification(attribute=a)>}; separator="\n">}; separator="\n">
 
     And the following contents:
       |    table     |         row          |
