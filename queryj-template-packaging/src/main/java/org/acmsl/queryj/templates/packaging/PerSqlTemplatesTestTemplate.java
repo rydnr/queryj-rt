@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Used to generate sources using PerSqlTemplatesTest.stg.
  *
  * Date: 2014/04/16
  * Time: 21:03
