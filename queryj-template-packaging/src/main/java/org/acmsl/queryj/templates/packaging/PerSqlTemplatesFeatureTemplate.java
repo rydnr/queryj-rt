@@ -71,7 +71,7 @@ public class PerSqlTemplatesFeatureTemplate
 
     /**
      * Retrieves the template name.
-     * @return such name.
+     * @return "PerSqlTemplatesFeature".
      */
     @NotNull
     @Override
