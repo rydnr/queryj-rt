@@ -100,12 +100,12 @@ public class PerForeignKeyTemplatesFeatureTemplate
 
     /**
      * Retrieves the template name.
-     * @return "PerTableTemplatesFeature";
+     * @return "PerForeignKeyTemplatesFeature";
      */
     @NotNull
     @Override
     public String getTemplateName()
     {
-        return Literals.PER_TABLE_TEMPLATES_FEATURE;
+        return Literals.PER_FOREIGN_KEY_TEMPLATES_FEATURE;
     }
 }
