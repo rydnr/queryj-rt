@@ -62,7 +62,7 @@ public class PerRepositoryTemplatesFeatureTemplate
     extends AbstractTemplatePackagingTemplate<GlobalTemplateContext>
 {
     /**
-     * Builds a PerTableTemplatesFeature using given context.
+     * Builds a PerRepositoryTemplatesFeature using given context.
      * @param context the {@link org.acmsl.queryj.api.PerRepositoryTemplateContext}.
      */
     public PerRepositoryTemplatesFeatureTemplate(@NotNull final GlobalTemplateContext context)
