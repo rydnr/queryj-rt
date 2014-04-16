@@ -33,7 +33,7 @@
 //
 // Author: Jose San Leandro Armendariz
 //
-// Description: Defines the rules to generate PerForeignKeyTemplates.feature
+// Description: Defines the rules to generate PerRepositoryTemplates.feature
 //              Cucumber tests
 //
 group PerForeignKeyTemplatesFeature;
