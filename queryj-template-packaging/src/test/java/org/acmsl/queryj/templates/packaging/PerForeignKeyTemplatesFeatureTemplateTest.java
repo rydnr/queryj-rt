@@ -1,5 +1,5 @@
 /*
-                        queryj
+                        QueryJ Template Packaging
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Tests for {@link PerForeignKeyTemplatesFeatureTemplate}.
+ * Description: Tests for PerForeignKeyTemplatesFeatureTemplate.
  *
  * Date: 2014/04/16
  * Time: 13:07
