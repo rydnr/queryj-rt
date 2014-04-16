@@ -49,6 +49,7 @@ import org.acmsl.queryj.templates.packaging.Literals;
 /*
  * Importing JetBrains annotations.
  */
+import org.apache.commons.configuration.PropertiesConfiguration;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -90,6 +91,6 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
             new PerTableTemplatesTestTemplateBuildHandler();
 
         @NotNull final QueryJCommand command =
-            new ConfigurationQueryJCommandImpl()
+            new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
     }
 }
