@@ -70,7 +70,7 @@ public class PerSqlTemplatesTestTemplateTest
         @NotNull final PerSqlTemplatesTestTemplate instance =
             new PerSqlTemplatesTestTemplate(context);
 
-        Assert.assertEquals(Literals.PER_CUSTOM_RESULT_TEMPLATES_TEST, instance.getTemplateName());
+        Assert.assertEquals(Literals.PER_SQL_TEMPLATES_TEST, instance.getTemplateName());
     }
 
 }
