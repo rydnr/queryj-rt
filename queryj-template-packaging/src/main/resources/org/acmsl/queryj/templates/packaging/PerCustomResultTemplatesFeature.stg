@@ -73,7 +73,7 @@ indirect_template(def, engineName, tableName) ::= <<
 | <def.name; format="%-30s"> | <(def.filenameRule)(engineName, tableName)> |
 >>
 
-cucumber_table_declaration(attribute) ::= <<
+cucumber_custom_result_declaration(attribute) ::= <<
 <! Declares the table metadata in Cucumber format !>
 | <table.name> | <table.parent> | <table.decorated> | <table.relationship> | <table.static> |
 >>
