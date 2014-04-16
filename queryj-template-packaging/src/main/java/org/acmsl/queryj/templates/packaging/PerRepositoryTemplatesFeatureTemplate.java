@@ -80,7 +80,7 @@ public class PerRepositoryTemplatesFeatureTemplate
     {
         return
             retrieveGroup(
-                "org/acmsl/queryj/templates/packaging/PerTableTemplatesFeature.stg",
+                "org/acmsl/queryj/templates/packaging/PerRepositoryTemplatesFeature.stg",
                 Arrays.asList(org.acmsl.queryj.Literals.ORG_ACMSL_QUERYJ_TEMPLATES));
     }
 
