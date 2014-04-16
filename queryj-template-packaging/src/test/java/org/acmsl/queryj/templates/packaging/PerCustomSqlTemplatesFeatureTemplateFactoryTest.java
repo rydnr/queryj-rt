@@ -68,7 +68,7 @@ public class PerCustomSqlTemplatesFeatureTemplateFactoryTest
     {
         @NotNull final GlobalTemplateContext context = EasyMock.createNiceMock(GlobalTemplateContext.class);
 
-        @NotNull final PerForeignKeyTemplatesFeatureTemplateFactory instance =
+        @NotNull final PerCustomSqlTemplatesFeatureTemplateFactory instance =
             PerForeignKeyTemplatesFeatureTemplateFactory.getInstance();
 
         Assert.assertNotNull(instance.createTemplate(context));
