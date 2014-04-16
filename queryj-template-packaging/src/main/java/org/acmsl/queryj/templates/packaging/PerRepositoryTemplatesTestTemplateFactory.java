@@ -89,6 +89,6 @@ public class PerRepositoryTemplatesTestTemplateFactory
     @Override
     public PerRepositoryTemplatesTestTemplate createTemplate(@NotNull final GlobalTemplateContext context)
     {
-        return new PerTableTemplatesTestTemplate(context);
+        return new PerRepositoryTemplatesTestTemplate(context);
     }
 }
