@@ -441,7 +441,7 @@ public abstract class AbstractTemplatesTest<G, F>
     @NotNull
     protected Map<String, Table<String, Attribute<String>, List<Attribute<String>>>> getTables()
     {
-        return m__mTables;
+        return m__mResults;
     }
 
     /**
