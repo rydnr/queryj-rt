@@ -32,9 +32,6 @@
  * Date: 2014/04/17
  * Time: 11:33
  *
- * Date: 2014/04/15
- * Time: 21:11
- *
  */
 package org.acmsl.queryj.test;
 
