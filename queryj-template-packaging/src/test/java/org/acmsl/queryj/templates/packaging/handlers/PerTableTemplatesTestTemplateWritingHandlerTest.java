@@ -41,6 +41,7 @@ package org.acmsl.queryj.templates.packaging.handlers;
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplateGenerator;
+import org.apache.commons.configuration.PropertiesConfiguration;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -83,7 +84,7 @@ public class PerTableTemplatesTestTemplateWritingHandlerTest
             new PerTableTemplatesTestTemplateBuildHandler();
 
         @NotNull final QueryJCommand command =
-            new ConfigurationQueryJCommandImpl(new Prope
+            new ConfigurationQueryJCommandImpl(new PropertiesConfiguration()
             )
     }
 }
