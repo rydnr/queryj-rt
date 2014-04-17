@@ -117,7 +117,7 @@ public class TemplateWritingHandlerTemplateFactoryTest
 
     /**
      * Checks whether the createTemplate() method returns the correct template
-     * for a per-custom-result type.
+     * for a per-sql type.
      */
     @Test
     public void createTemplate_returns_the_correct_template_for_a_per_sql_template()
