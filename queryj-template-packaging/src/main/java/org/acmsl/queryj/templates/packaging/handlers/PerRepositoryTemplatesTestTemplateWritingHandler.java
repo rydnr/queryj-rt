@@ -28,7 +28,6 @@
  * Author: Jose San Leandro Armendariz
  *
  * Description: Writing handler for PerForeignKeyTemplatesTestTemplates.
-
  *
  * Date: 2014/04/17
  * Time: 09:15
