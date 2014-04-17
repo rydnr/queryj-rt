@@ -214,7 +214,7 @@ public class PerCustomResultTemplatesTest
      * @param tableInfo the information about the tables.
      */
     @SuppressWarnings("unused")
-    @Given("^Given the repository whose name is \<repository>, composed of:$")
+    @Given("^Given the result whose name is \<result>, composed of:$")
     public void defineInputTables(@NotNull final DataTable tableInfo)
     {
         defineInputTables(tableInfo, getTables(), CustomResultTestHelper.getInstance());
@@ -239,7 +239,7 @@ public class PerCustomResultTemplatesTest
      * @param engine the engine.
      */
     @SuppressWarnings("unused")
-    @When("^When I use the repository-wide (.*).stg for (.*)$")
+    @When("^When I use the result-wide (.*).stg for (.*)$")
     public void generateFile(@NotNull final String template, @NotNull final String engine)
     {
         setEngineName(engine);
@@ -428,7 +428,7 @@ public class PerCustomResultTemplatesTest
      * @param outputName the name of the output file.
      */
     @SuppressWarnings("unused")
-    @Then("^Then the generated repository-wide (.*) file compiles successfully")
+    @Then("^Then the generated result-wide (.*) file compiles successfully")
     public void checkGeneratedFileCompiles(@NotNull final String outputName)
     {
         checkGeneratedFilesCompile(outputName, getOutputFiles());
