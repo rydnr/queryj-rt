@@ -143,6 +143,7 @@ public class CustomResultTestHelper
     @Nullable
     protected Result<String> convertToCustomResult(@NotNull final Map<String, String> tableEntry)
     {
-        @NotNull final Result<String> result;
+        return
+            new ResultValu
     }
 }
