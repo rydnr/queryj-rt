@@ -167,7 +167,7 @@ public class CustomResultTestHelper
     {
         @NotNull final List<Map<String, String>> tableEntries = tableInfo.asMaps();
 
-        @Nullable Result<String> result;
+        @Nullable Property<String> result;
 
         for (@NotNull final Map<String, String> tableEntry: tableEntries)
         {
