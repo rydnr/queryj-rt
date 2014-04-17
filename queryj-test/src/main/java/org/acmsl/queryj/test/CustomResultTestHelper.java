@@ -126,8 +126,7 @@ public class CustomResultTestHelper
 
         if (id != null)
         {
-            result =
-                convertToCustomResult( currentResult, tableEntry.get("type"));
+            result = convertToCustomResult(id, tableEntry.get("type"));
         }
 
         return result;
