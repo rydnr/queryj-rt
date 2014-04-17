@@ -65,7 +65,7 @@ import org.checkthread.annotations.ThreadSafe;
 import java.util.List;
 
 /**
- * Build handler for {@link org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplate}s.
+ * Build handler for {@link PerRepositoryTemplatesTestTemplate}s.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/17 07:30
