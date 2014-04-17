@@ -44,6 +44,7 @@ import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
 import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplate;
+import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplateFactory;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplateGenerator;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.easymock.EasyMock;
@@ -72,7 +73,7 @@ public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
     BH extends TemplatePackagingTestBuildHandler
         <T, GlobalTemplateContext, TemplatePackagingTemplateGenerator<T, GlobalTemplateContext>>,
     T extends TemplatePackagingTemplate,
-    TF extends TemplatePackagingTemplate>
+    TF extends TemplatePackagingTemplateFactory<T, GlobalTemplateContext>>
 {
     /**
      * Creates a new writing handler instance.
