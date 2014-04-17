@@ -100,7 +100,7 @@ public class TemplateFactoryTemplateFactory
                 result = new PerRepositoryTemplateFactoryTemplate<>(context);
                 break;
             case PER_CUSTOM_RESULT:
-                result = new PerRepositoryTemplateFactoryTemplate<>(context);
+                result = new PerCustomResultTemplateFactoryTemplate<>(context);
                 break;
             default:
                 result = new TemplateFactoryTemplate<>(context);
