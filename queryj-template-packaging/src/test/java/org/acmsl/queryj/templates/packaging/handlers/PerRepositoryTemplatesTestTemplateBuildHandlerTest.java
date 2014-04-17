@@ -116,6 +116,7 @@ public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
      * Checks whether retrieveTemplateFactory() retrieves
      * {@link org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory}.
      */
+    @Override
     @Test
     public void retrieveTemplateFactory_retrieves_the_correct_factory()
     {
