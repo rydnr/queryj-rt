@@ -239,7 +239,7 @@ public class PerRepositoryTemplatesTest
      * @param engine the engine.
      */
     @SuppressWarnings("unused")
-    @When("^When I use the repository-wide \<template>.stg for OracleI generate with per-table (.*) for (.*)$")
+    @When("^When I use the repository-wide (.*).stg for OracleI generate with per-table (.*) for (.*)$")
     public void generateFile(@NotNull final String template, @NotNull final String engine)
     {
         setEngineName(engine);
