@@ -128,7 +128,7 @@ public class CustomResultTestHelper
             result =
                 convertToCustomResult(
                     currentResult,
-                    tableEntry.get(Literals.COMMENT),
+                    tableEntry.get("dao"),
                     tableEntry.get(PARENT_TABLE),
                     tableEntry.get(STATIC),
                     !isNullOrBlank(tableEntry.get(DECORATED)) && Boolean.TRUE.equals(tableEntry.get(DECORATED)),
