@@ -217,7 +217,7 @@ public class PerSqlTemplatesTest
     @Given("^Given the following custom result:$")
     public void defineInputResults(@NotNull final DataTable resultInfo)
     {
-        defineInputResults(resultInfo, getResults(), SqlTestHelper.getInstance());
+        defineInputResults(resultInfo, getResults(), CustomResultTestHelper.getInstance());
     }
 
     /**
