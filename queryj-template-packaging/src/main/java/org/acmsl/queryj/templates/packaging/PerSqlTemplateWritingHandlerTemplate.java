@@ -1,5 +1,5 @@
 /*
-                        queryj
+                        QueryJ Template Packaging
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -23,14 +23,15 @@
 
  ******************************************************************************
  *
- * Filename: PerSqlTemplateWritingHandlerTemplate.java
+ * Filename: PerRepositoryTemplateWritingHandlerTemplate.java
  *
- * Author: Jose San Leandro Armendariz
+ * Author: Jose San Leandro
  *
- * Description: 
+ * Description: Represents repository-specific template writing handler
+ *              templates.
  *
  * Date: 2014/04/17
- * Time: 12:40
+ * Time: 12:31
  *
  */
 package org.acmsl.queryj.templates.packaging;
@@ -46,12 +47,38 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
- *
+ * Represents repository-specific template writing handler templates.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
+ * @param <C> the context type.
  * @since 3.0
- * Created: 2014/04/17 12:40
+ * Created: 2014/04/17 12:31
  */
 @ThreadSafe
-public class PerSqlTemplateWritingHandlerTemplate
+public class PerRepositoryTemplateWritingHandlerTemplate<C extends TemplatePackagingContext>
+    extends TemplateWritingHandlerTemplate<C>
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = 5604500279696395267L;
+
+    /**
+     * Creates a new instance using given context.
+     * @param context the context.
+     */
+    public PerRepositoryTemplateWritingHandlerTemplate(@NotNull final C context)
+    {
+        super(context);
+    }
+
+    /**
+     * Retrieves the template name.
+     * @return "PerRepositoryTemplateWritingHandler".
+     */
+    @NotNull
+    @Override
+    public String getTemplateName()
+    {
+        return Literals.PER_REPOSITORY_TEMPLATE_WRITING_HANDLER;
+    }
 }
