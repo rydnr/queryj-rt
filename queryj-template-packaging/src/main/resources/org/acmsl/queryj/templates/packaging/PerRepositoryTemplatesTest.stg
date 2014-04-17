@@ -234,33 +234,6 @@ public class PerRepositoryTemplatesTest
     }
 
     /**
-     * Defines the foreign keys via cucumber features.
-     * @param fkInfo such information.
-     */
-    @SuppressWarnings("unused")
-    @Given("^the following foreign keys:$")
-    public void defineForeignKeys(@NotNull final DataTable fkInfo)
-    {
-        defineForeignKeys(fkInfo, getTables(), getForeignKeys(), TableTestHelper.getInstance());
-    }
-
-    /**
-     * Defines the foreign keys via cucumber features.
-     * @param fkInfo such information.
-     * @param tables the table map.
-     * @param foreignKeys the foreignKeys,
-     * @param helper the {@link TableTestHelper} instance.
-     */
-    protected void defineForeignKeys(
-        @NotNull final DataTable fkInfo,
-        @NotNull final Map\<String, Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables,
-        @NotNull final List\<ForeignKey\<String\>> foreignKeys,
-        @NotNull final TableTestHelper helper)
-    {
-        helper.defineForeignKeys(fkInfo, tables, foreignKeys);
-    }
-
-    /**
      * Defines table values via cucumber features.
      * @param values such information.
      */
