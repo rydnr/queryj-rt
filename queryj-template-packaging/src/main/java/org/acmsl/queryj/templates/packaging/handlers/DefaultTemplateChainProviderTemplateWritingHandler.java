@@ -90,7 +90,7 @@ public class DefaultTemplateChainProviderTemplateWritingHandler
      */
     @NotNull
     @Override
-    protected TemplatePackagingTemplateGenerator<DefaultTemplateChainProviderTemplate<GlobalTemplateContext>, GlobalTemplateContext> retrieveTemplateGenerator(
+    public TemplatePackagingTemplateGenerator<DefaultTemplateChainProviderTemplate<GlobalTemplateContext>, GlobalTemplateContext> retrieveTemplateGenerator(
         final boolean caching, final int threadCount)
     {
         return
