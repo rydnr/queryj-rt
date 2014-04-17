@@ -242,7 +242,7 @@ public class CustomResultTestHelper
         }
         else
         {
-            result = new PropertyElement<>(id, columnName, index, type, nullable);
+            result = new PropertyElement<>(id, columnName, propertyIndex, type, nullable);
         }
 
         return result;
