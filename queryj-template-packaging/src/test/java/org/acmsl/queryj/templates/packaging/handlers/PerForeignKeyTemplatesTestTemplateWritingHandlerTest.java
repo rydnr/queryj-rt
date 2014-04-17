@@ -58,7 +58,7 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public class PerForeignKeyTemplatesTestTemplateWritingHandlerTest
     extends AbstractTemplatesTestTemplateWritingHandlerTest<
-    PerForeignKeyTemplatesTestTemplateWritingHandler,
+                PerForeignKeyTemplatesTestTemplateWritingHandler,
     PerForeignKeyTemplatesTestTemplateBuildHandler,
     PerForeignKeyTemplatesTestTemplate,
     PerForeignKeyTemplatesTestTemplateFactory,
