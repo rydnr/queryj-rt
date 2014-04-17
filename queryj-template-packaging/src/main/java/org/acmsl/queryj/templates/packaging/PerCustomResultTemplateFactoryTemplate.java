@@ -56,10 +56,10 @@ import org.checkthread.annotations.ThreadSafe;
 public class PerCustomResultTemplateFactoryTemplate<C extends TemplatePackagingContext>
     extends TemplateFactoryTemplate<C>
 {
-    private static final long serialVersionUID = 5088739033210858667L;
     /**
      * The serial version id.
      */
+    private static final long serialVersionUID = 5088739033210858667L;
 
     /**
      * Creates a new instance.
