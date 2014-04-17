@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description:  * Writing handler for {@link PerForeignKeyTemplatesTestTemplate}s.
+ * Description: Writing handler for {@link PerForeignKeyTemplatesTestTemplate}s.
 
  *
  * Date: 2014/04/17
