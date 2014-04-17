@@ -112,7 +112,7 @@ public class PerCustomResultTemplatesTestTemplateWritingHandler
 
         if (aux == null)
         {
-            throw new MissingTemplatesException("per-repository-templates-test");
+            throw new MissingTemplatesException("per-custom-result-templates-test");
         }
         else
         {
