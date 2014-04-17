@@ -59,10 +59,10 @@ import org.checkthread.annotations.ThreadSafe;
 public class PerForeignKeyTemplatesTestTemplateWritingHandlerTest
     extends AbstractTemplatesTestTemplateWritingHandlerTest<
                 PerForeignKeyTemplatesTestTemplateWritingHandler,
-    PerForeignKeyTemplatesTestTemplateBuildHandler,
-    PerForeignKeyTemplatesTestTemplate,
-    PerForeignKeyTemplatesTestTemplateFactory,
-    GlobalTemplateContext>
+                PerForeignKeyTemplatesTestTemplateBuildHandler,
+                PerForeignKeyTemplatesTestTemplate,
+                PerForeignKeyTemplatesTestTemplateFactory,
+                GlobalTemplateContext>
 {
     /**
      * Creates a new writing handler instance.
