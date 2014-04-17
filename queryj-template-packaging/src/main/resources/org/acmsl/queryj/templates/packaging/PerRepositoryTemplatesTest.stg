@@ -234,31 +234,6 @@ public class PerRepositoryTemplatesTest
     }
 
     /**
-     * Defines table values via cucumber features.
-     * @param values such information.
-     */
-    @SuppressWarnings("unused")
-    @And("^the following values:$")
-    public void defineValues(@NotNull final DataTable values)
-    {
-        defineValues(values, getTables(), TableTestHelper.getInstance());
-    }
-
-    /**
-     * Defines table values via cucumber features.
-     * @param values such information.
-     * @param tables the tables.
-     * @param helper the {@link TableTestHelper} instance.
-     */
-    protected void defineValues(
-        @NotNull final DataTable values,
-        @NotNull final Map\<String, Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables,
-        @NotNull final TableTestHelper helper)
-    {
-        helper.defineValues(values, tables);
-    }
-
-    /**
      * Defines SQL sentences via cucumber features.
      * @param values such information.
      */
