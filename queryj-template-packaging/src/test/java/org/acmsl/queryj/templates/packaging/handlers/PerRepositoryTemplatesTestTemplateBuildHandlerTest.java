@@ -53,7 +53,7 @@ import org.apache.commons.configuration.PropertiesConfiguration;
 import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing checkthread.org annotations.
+ * Importing JUnit
  */
 import org.easymock.EasyMock;
 import org.junit.Assert;
