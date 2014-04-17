@@ -40,7 +40,9 @@ package org.acmsl.queryj.templates.packaging.handlers;
  */
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
 import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplate;
+import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplateGenerator;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
@@ -60,7 +62,10 @@ import org.junit.Test;
  */
 @ThreadSafe
 public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
-    WH extends >
+    WH extends TemplatePackagingTestWritingHandler
+        <PerTableTemplatesTestTemplate,
+            GlobalTemplateContext,
+            TemplatePackagingTemplateGenerator<PerTableTemplatesTestTemplate, GlobalTemplateContext>>>
 {
     /**
      * Creates a new writing handler instance.
