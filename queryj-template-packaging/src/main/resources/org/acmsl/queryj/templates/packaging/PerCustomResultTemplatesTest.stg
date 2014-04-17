@@ -215,7 +215,7 @@ public class PerCustomResultTemplatesTest
      */
     @SuppressWarnings("unused")
     @Given("^Given the following custom result:$")
-    public void defineInputResults(@NotNull final Dataresult resultInfo)
+    public void defineInputResults(@NotNull final DataTable resultInfo)
     {
         defineInputResults(resultInfo, getResults(), CustomResultTestHelper.getInstance());
     }
