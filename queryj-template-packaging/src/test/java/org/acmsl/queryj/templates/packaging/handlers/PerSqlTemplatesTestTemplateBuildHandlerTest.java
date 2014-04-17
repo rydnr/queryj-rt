@@ -39,12 +39,12 @@ package org.acmsl.queryj.templates.packaging.handlers;
  * Importing QueryJ Template Packaging classes.
  */
 import org.acmsl.queryj.templates.packaging.Literals;
+import org.acmsl.queryj.templates.packaging.PerSqlTemplatesTestTemplate;
+import org.acmsl.queryj.templates.packaging.PerSqlTemplatesTestTemplateFactory;
 
 /*
  * Importing JetBrains annotations.
  */
-import org.acmsl.queryj.templates.packaging.PerSqlTemplatesTestTemplate;
-import org.acmsl.queryj.templates.packaging.PerSqlTemplatesTestTemplateFactory;
 import org.jetbrains.annotations.NotNull;
 
 /*
