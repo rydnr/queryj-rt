@@ -40,6 +40,7 @@ package org.acmsl.queryj.test;
  */
 import cucumber.api.DataTable;
 import org.acmsl.queryj.Literals;
+import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.Table;
 import org.acmsl.queryj.tools.ant.AntTablesElement;
@@ -93,7 +94,7 @@ public class CustomResultTestHelper
      */
     public void defineInputResults(
         @NotNull final DataTable tableInfo,
-        @NotNull final Map<String, CustomResult<String, Attribute<String>, List<Attribute<String>>>> tables)
+        @NotNull final Map<String, Result<String, Attribute<String>, List<Attribute<String>>>> tables)
     {
         @NotNull final List<Map<String, String>> tableEntries = tableInfo.asMaps();
 
