@@ -184,7 +184,7 @@ public class CustomResultTestHelper
      * @return the {@link Result} instance.
      */
     @Nullable
-    protected Result<String> convertToCustomResult(@NotNull final Map<String, String> tableEntry)
+    protected Result<String> convertToProperty(@NotNull final Map<String, String> tableEntry)
     {
         @Nullable Result<String> result = null;
 
@@ -192,7 +192,7 @@ public class CustomResultTestHelper
 
         if (id != null)
         {
-            result = convertToCustomResult(id, tableEntry.get("type"));
+            result = convertToProperty(id, tableEntry.get("type"));
         }
 
         return result;
@@ -205,7 +205,7 @@ public class CustomResultTestHelper
      * @return the {@link Result} instance.
      */
     @Nullable
-    protected Result<String> convertToCustomResult(@NotNull final String id, @NotNull final String type)
+    protected Result<String> convertToProperty(@NotNull final String id, @NotNull final String type)
     {
         return new ResultElement<>(id, type);
     }
