@@ -23,7 +23,7 @@
 
  ******************************************************************************
  *
- * Filename: PerRepositoryTemplateFactoryTemplate.java
+ * Filename: PerCustomResultTemplateFactoryTemplate.java
  *
  * Author: Jose San Leandro
  *
@@ -53,7 +53,7 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2014/04/17 12:14
  */
 @ThreadSafe
-public class PerRepositoryTemplateFactoryTemplate<C extends TemplatePackagingContext>
+public class PerCustomResultTemplateFactoryTemplate<C extends TemplatePackagingContext>
     extends TemplateFactoryTemplate<C>
 {
     /**
@@ -65,14 +65,14 @@ public class PerRepositoryTemplateFactoryTemplate<C extends TemplatePackagingCon
      * Creates a new instance.
      * @param context the template context.
      */
-    public PerRepositoryTemplateFactoryTemplate(@NotNull final C context)
+    public PerCustomResultTemplateFactoryTemplate(@NotNull final C context)
     {
         super(context);
     }
 
     /**
      * Retrieves the template name.
-     * @return "PerRepositoryTemplateFactory".
+     * @return "PerCustomResultTemplateFactory".
      */
     @NotNull
     @Override
