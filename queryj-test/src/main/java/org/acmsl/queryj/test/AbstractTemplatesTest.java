@@ -415,8 +415,8 @@ public abstract class AbstractTemplatesTest<G, F>
     }
 
     /**
-     * Specifies the tables.
-     * @param tables the tables.
+     * Specifies the results.
+     * @param results the results.
      */
     protected final void immutableSetResults(@NotNull final Map<String, Result<String>> results)
     {
