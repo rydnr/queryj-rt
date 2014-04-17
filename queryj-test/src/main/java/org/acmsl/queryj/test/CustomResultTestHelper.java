@@ -233,7 +233,6 @@ public class CustomResultTestHelper
         }
         catch (@NotNull final NumberFormatException invalidIndex)
         {
-
         }
 
         if (propertyIndex == -1)
