@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Tests for PerForeignKeyTemplateFactoryTemplate.
+ * Description: Tests for PerRepositoryTemplateFactoryTemplate.
  *
  * Date: 2014/04/17
  * Time: 12:07
@@ -45,12 +45,12 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * Tests for {@link PerForeignKeyTemplateFactoryTemplate}.
+ * Tests for {@link PerRepositoryTemplateFactoryTemplate}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/17 12:07
  */
-public class PerForeignKeyTemplateFactoryTemplateTest
+public class PerRepositoryTemplateFactoryTemplateTest
 {
     /**
      * Checks whether getTemplateName() returns the correct template name.
@@ -61,8 +61,8 @@ public class PerForeignKeyTemplateFactoryTemplateTest
         @NotNull final DefaultTemplatePackagingContext context =
             EasyMock.createNiceMock(DefaultTemplatePackagingContext.class);
 
-        @NotNull final PerForeignKeyTemplateFactoryTemplate instance =
-            new PerForeignKeyTemplateFactoryTemplate<>(context);
+        @NotNull final PerRepositoryTemplateFactoryTemplate instance =
+            new PerRepositoryTemplateFactoryTemplate<>(context);
 
         Assert.assertEquals(Literals.PER_FOREIGN_KEY_TEMPLATE_FACTORY, instance.getTemplateName());
     }
