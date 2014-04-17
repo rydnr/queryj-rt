@@ -236,7 +236,14 @@ public class CustomResultTestHelper
 
         }
 
-        if (propertyIndex )
+        if (propertyIndex == -1)
+        {
+            result = null;
+        }
+        else
+        {
+
+        }
         return new PropertyElement<>(id, columnName, index, type, nullable);
     }
 }
