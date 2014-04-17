@@ -82,8 +82,7 @@ public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
     @Test
     public void retrieveTemplateGenerator_works()
     {
-        @NotNull final WH instance =
-            new PerTableTemplatesTestTemplateWritingHandler();
+        @NotNull final WH instance = createInstance();
 
         Assert.assertNotNull(instance.retrieveTemplateGenerator(false, 1));
     }
