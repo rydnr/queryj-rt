@@ -104,7 +104,6 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
 
     /**
      * Retrieves a new template mock.
-     *
      * @return such mock.
      */
     @NotNull
