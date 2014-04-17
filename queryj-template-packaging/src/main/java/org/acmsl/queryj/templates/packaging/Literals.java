@@ -153,4 +153,5 @@ public interface Literals
      * String literal: "PerRepositoryTemplateWritingHandler".
      */
     String PER_REPOSITORY_TEMPLATE_WRITING_HANDLER = "PerRepositoryTemplateWritingHandler";
+    String PER_CUSTOM_RESULT_TEMPLATE_WRITING_HANDLER = "PerCustomResultTemplateWritingHandler";
 }
