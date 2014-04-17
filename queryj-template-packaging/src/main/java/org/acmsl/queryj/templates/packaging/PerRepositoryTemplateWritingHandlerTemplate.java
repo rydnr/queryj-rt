@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro
  *
- * Description: Represents foreign key-specific template writing handler
+ * Description: Represents repository-specific template writing handler
  *              templates.
  *
  * Date: 2014/04/17
