@@ -439,7 +439,7 @@ public abstract class AbstractTemplatesTest<G, F>
      * @return such information.
      */
     @NotNull
-    protected Map<String, Result<String, Attribute<String>, List<Attribute<String>>>> getTables()
+    protected Map<String, Result<String>> getResults()
     {
         return m__mResults;
     }
