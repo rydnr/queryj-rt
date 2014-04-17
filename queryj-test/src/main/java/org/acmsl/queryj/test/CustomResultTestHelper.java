@@ -93,6 +93,7 @@ public class CustomResultTestHelper
      * @param tableInfo the information about the tables.
      * @param tables the table collection.
      */
+    @SuppressWarnings("unused")
     public void defineInputResults(
         @NotNull final DataTable tableInfo,
         @NotNull final Map<String, Result<String>> tables)
