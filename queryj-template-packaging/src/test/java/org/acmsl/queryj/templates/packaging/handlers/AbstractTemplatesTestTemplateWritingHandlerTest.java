@@ -66,7 +66,6 @@ import org.junit.Test;
  * @param <T> the template class.
  * @param <TF> the template factory class.
  */
-@ThreadSafe
 public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
     WH extends TemplatePackagingTestWritingHandler
         <T, GlobalTemplateContext, TemplatePackagingTemplateGenerator<T, GlobalTemplateContext>>,
