@@ -60,7 +60,7 @@ import org.junit.Test;
  */
 @ThreadSafe
 public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
-    W>
+    WH extends >
 {
     /**
      * Creates a new writing handler instance.
