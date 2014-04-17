@@ -341,7 +341,7 @@ public class PerCustomResultTemplatesTest
                 }
                 else
                 {
-                    @Nullable List\<Row\<String\>> resultRows = rows.get(result.getName());
+                    @Nullable List\<Row\<String\>> resultRows = properties.get(result.getName());
 
                     if (resultRows == null)
                     {
