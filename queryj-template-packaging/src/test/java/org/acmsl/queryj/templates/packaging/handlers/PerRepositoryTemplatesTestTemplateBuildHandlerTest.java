@@ -140,39 +140,4 @@ public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
         retrieveTemplateFactory_retrieves_the_correct_factory(
             PerRepositoryTemplatesTestTemplateFactory.getInstance());
     }
-
-    /**
-     * Checks whether the output package is the Cucumber's.
-     */
-    @Test
-    public void retrieveOutputPackage_returns_the_cucumber_package()
-    {
-        @NotNull final PerRepositoryTemplatesTestTemplateBuildHandler instance =
-            new PerRepositoryTemplatesTestTemplateBuildHandler();
-
-        @NotNull final QueryJCommand command = EasyMock.createNiceMock(QueryJCommand.class);
-
-        Assert.assertEquals(Literals.CUCUMBER_TEMPLATES, instance.retrieveOutputPackage(command));
-    }
-
-    /**
-     * Checks whether buildContext() builds a global context.
-     */
-    @Test
-    public void buildContext_builds_a_global_context()
-        throws IOException
-    {
-        @NotNull final PerRepositoryTemplatesTestTemplateBuildHandler instance =
-            new PerRepositoryTemplatesTestTemplateBuildHandler();
-
-        @NotNull final QueryJCommand command =
-            new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
-
-        new QueryJCommandWrapper<File>(command).setSetting(
-            PerRepositoryTemplatesTestTemplate.OUTPUT_DIR_FOR_TESTS, new File("/"));
-
-        @NotNull final List<TemplateDef<String>> templateDefs = new ArrayList<>(0);
-
-        Assert.assertNotNull(instance.buildContext(templateDefs, command));
-    }
 }
