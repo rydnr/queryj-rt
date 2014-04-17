@@ -240,7 +240,7 @@ public class PerCustomResultTemplatesTest
      * @param properties the properties.
      * @param helper the {@link CustomResultTestHelper} instance.
      */
-    protected void defineInputResults(
+    protected void defineInputProperties(
         @NotNull final DataTable resultInfo,
         @NotNull final Map\<String, Result\<String\>> results,
         @NotNull final CustomResultTestHelper helper)
