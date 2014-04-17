@@ -91,7 +91,6 @@ public class PerForeignKeyTemplatesTestTemplateBuildHandlerTest
 {
     /**
      * Creates a new build handler instance.
-     *
      * @return such new instance.
      */
     @NotNull
