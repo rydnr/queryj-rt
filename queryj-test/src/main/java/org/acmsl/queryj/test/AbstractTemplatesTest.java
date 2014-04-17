@@ -270,7 +270,8 @@ public abstract class AbstractTemplatesTest<G, F>
      * Specifies the tables.
      * @param tables the tables.
      */
-    protected final void immutableSetTables(@NotNull final Map<String, Table<String, Attribute<String>, List<Attribute<String>>>> tables)
+    protected final void immutableSetTables(
+        @NotNull final Map<String, Table<String, Attribute<String>, List<Attribute<String>>>> tables)
     {
         m__mTables = tables;
     }
