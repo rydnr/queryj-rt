@@ -429,9 +429,9 @@ public abstract class AbstractTemplatesTest<G, F>
      * @param tables the tables.
      */
     @SuppressWarnings("unused")
-    protected void setResults(@NotNull final Map<String, Result<String>> tables)
+    protected void setResults(@NotNull final Map<String, Result<String>> results)
     {
-        immutableSetTables(tables);
+        immutableSetTables(results);
     }
 
     /**
