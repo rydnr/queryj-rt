@@ -456,7 +456,7 @@ public abstract class AbstractTemplatesTest<G, F>
      */
     protected final void immutableSetResults(@NotNull final Map<String, Result<String>> results)
     {
-        m__mResults = results;
+        m__mProperties = properties;
     }
 
     /**
