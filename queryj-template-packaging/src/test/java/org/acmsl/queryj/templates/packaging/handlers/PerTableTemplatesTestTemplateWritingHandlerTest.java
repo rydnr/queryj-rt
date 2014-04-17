@@ -86,6 +86,6 @@ public class PerTableTemplatesTestTemplateWritingHandlerTest
         @NotNull final QueryJCommand command =
             new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
-        buildHandler.storeTemplate();
+        buildHandler.storeTemplate(template, command);
     }
 }
