@@ -431,7 +431,7 @@ public abstract class AbstractTemplatesTest<G, F>
     @SuppressWarnings("unused")
     protected void setResults(@NotNull final Map<String, Result<String>> results)
     {
-        immutableSetTables(results);
+        immutableSetResults(results);
     }
 
     /**
