@@ -41,6 +41,8 @@ import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 /**
  * Tests for {@link PerForeignKeyTemplateFactoryTemplate}.
@@ -48,6 +50,7 @@ import org.junit.Test;
  * @since 3.0
  * Created 2014/04/14
  */
+@RunWith(JUnit4.class)
 public class PerForeignKeyTemplateFactoryTemplateTest
 {
     /**
