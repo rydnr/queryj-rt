@@ -152,7 +152,6 @@ public class CustomResultTestHelper
         return new ResultElement<>(id, type);
     }
 
-
     /**
      * Defines the input tables based on the information provided by the
      * feature.
