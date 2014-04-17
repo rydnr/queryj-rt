@@ -102,9 +102,9 @@ public class CustomResultTestHelper
 
         for (@NotNull final Map<String, String> tableEntry: tableEntries)
         {
-            table = convertToCustomResult(tableEntry);
+            result = convertToCustomResult(tableEntry);
 
-            if (table != null)
+            if (result != null)
             {
                 tables.put(table.getName(), table);
             }
