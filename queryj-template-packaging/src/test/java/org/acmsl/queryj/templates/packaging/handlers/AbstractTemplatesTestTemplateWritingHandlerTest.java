@@ -65,7 +65,7 @@ public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
     WH extends TemplatePackagingTestWritingHandler
         <T,
             GlobalTemplateContext,
-            TemplatePackagingTemplateGenerator<PerTableTemplatesTestTemplate, GlobalTemplateContext>>,
+            TemplatePackagingTemplateGenerator<T, GlobalTemplateContext>>,
     T extends PerTableTemplatesTestTemplate>
 {
     /**
