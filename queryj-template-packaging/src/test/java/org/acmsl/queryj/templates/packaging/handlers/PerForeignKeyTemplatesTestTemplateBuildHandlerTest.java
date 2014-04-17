@@ -137,7 +137,7 @@ public class PerForeignKeyTemplatesTestTemplateBuildHandlerTest
     @Test
     public void retrieveTemplateFactory_retrieves_the_correct_factory()
     {
-        retrieveTemplateFactory_retrieves_the_correct_factory(PerForeignKeyTemplatesTestTemplateFactory.getInstance(), instance.retrieveTemplateFactory());
+        retrieveTemplateFactory_retrieves_the_correct_factory(PerForeignKeyTemplatesTestTemplateFactory.getInstance());
     }
 
     /**
