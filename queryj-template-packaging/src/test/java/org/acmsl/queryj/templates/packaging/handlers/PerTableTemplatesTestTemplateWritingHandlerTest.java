@@ -101,7 +101,7 @@ public class PerTableTemplatesTestTemplateWritingHandlerTest
     @Override
     protected PerTableTemplatesTestTemplateWritingHandler createInstance()
     {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        new PerTableTemplatesTestTemplateWritingHandler();
     }
 
     /**
