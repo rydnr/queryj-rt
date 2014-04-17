@@ -214,7 +214,7 @@ public class PerCustomResultTemplatesTest
      * @param tableInfo the information about the tables.
      */
     @SuppressWarnings("unused")
-    @Given("^$")
+    @Given("^Given the following custom result:$")
     public void defineInputTables(@NotNull final DataTable tableInfo)
     {
         defineInputTables(tableInfo, getTables(), CustomResultTestHelper.getInstance());
