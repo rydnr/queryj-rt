@@ -88,7 +88,7 @@ public class PerCustomResultTemplatesTestTemplateBuildHandlerTest
 
     /**
      * Checks whether retrieveTemplateFactory() retrieves
-     * {@link org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory}.
+     * {@link org.acmsl.queryj.templates.packaging.PerCustomResultTemplatesFeatureTemplateFactory}.
      */
     @Override
     @Test
