@@ -140,29 +140,4 @@ public class RepositoryTestHelper
         return result;
     }
 
-    /**
-     * Defines the foreign keys based on the Cucumber information given.
-     * @param tableInfo the Cucumber table.
-     * @param foreignKeys the list to fill with the foreign keys.
-     */
-    public void defineInputRepositorys(
-        @NotNull final DataTable tableInfo, @NotNull final List<Repository<String>> foreignKeys)
-    {
-        // TODO
-    }
-
-    /**
-     * Defines the input columns, based on the Cucumber table given.
-     * @param columnInfo the Cucumber table.
-     * @param foreignKeys the foreign keys.
-     * @return the foreign keys.
-     */
-    @NotNull
-    public List<Repository<String>> defineInputColumns(
-        @NotNull final DataTable columnInfo, @NotNull final List<Repository<String>> foreignKeys)
-    {
-        // TODO
-        return foreignKeys;
-    }
-
 }
