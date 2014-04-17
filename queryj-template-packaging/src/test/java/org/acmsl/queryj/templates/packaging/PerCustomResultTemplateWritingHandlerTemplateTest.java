@@ -23,11 +23,11 @@
 
  ******************************************************************************
  *
- * Filename: PerRepositoryTemplateWritingHandlerTemplateTest.java
+ * Filename: PerCustomResultTemplateWritingHandlerTemplateTest.java
  *
  * Author: Jose San Leandro
  *
- * Description: Tests for PerRepositoryTemplateWritingHandlerTemplate.
+ * Description: Tests for PerCustomResultTemplateWritingHandlerTemplate.
  *
  * Created: 2014/04/17 12:34
  *
@@ -50,13 +50,13 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 /**
- * Tests for {@link PerRepositoryTemplateWritingHandlerTemplate}.
+ * Tests for {@link PerCustomResultTemplateWritingHandlerTemplate}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created 2014/04/17 12:34
  */
 @RunWith(JUnit4.class)
-public class PerRepositoryTemplateWritingHandlerTemplateTest
+public class PerCustomResultTemplateWritingHandlerTemplateTest
 {
     /**
      * Checks whether getTemplateName() returns the correct template name.
@@ -67,8 +67,8 @@ public class PerRepositoryTemplateWritingHandlerTemplateTest
         @NotNull final DefaultTemplatePackagingContext context =
             EasyMock.createNiceMock(DefaultTemplatePackagingContext.class);
 
-        @NotNull final PerRepositoryTemplateWritingHandlerTemplate instance =
-            new PerRepositoryTemplateWritingHandlerTemplate<>(context);
+        @NotNull final PerCustomResultTemplateWritingHandlerTemplate instance =
+            new PerCustomResultTemplateWritingHandlerTemplate<>(context);
 
         Assert.assertEquals(Literals.PER_REPOSITORY_TEMPLATE_WRITING_HANDLER, instance.getTemplateName());
     }
