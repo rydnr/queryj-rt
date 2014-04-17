@@ -39,8 +39,16 @@ package org.acmsl.queryj.test;
  * Importing JetBrains annotations.
  */
 import cucumber.api.DataTable;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.ResultElement;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -49,6 +57,9 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.Nullable;
 
+/*
+ * Importing JetBrains annotations.
+ */
 import java.util.List;
 import java.util.Map;
 
