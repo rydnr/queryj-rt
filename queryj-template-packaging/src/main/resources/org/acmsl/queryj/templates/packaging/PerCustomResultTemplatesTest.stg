@@ -436,7 +436,7 @@ public class PerCustomResultTemplatesTest
                     }
 
                     outputFiles.put(
-                        result.getName(),
+                        result.getId(),
                         new File(outputDir, template.getTemplateContext().getFileName()));
                 }
             }
