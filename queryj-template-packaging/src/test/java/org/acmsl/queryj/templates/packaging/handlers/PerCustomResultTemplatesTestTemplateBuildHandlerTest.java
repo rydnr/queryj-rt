@@ -66,7 +66,7 @@ public class PerCustomResultTemplatesTestTemplateBuildHandlerTest
     extends AbstractTemplatesTestTemplateBuildHandlerTest<
                 PerCustomResultTemplatesTestTemplateBuildHandler,
                 PerCustomResultTemplatesTestTemplate,
-    PerCustomResultTemplatesTestTemplateFactory>
+                PerCustomResultTemplatesTestTemplateFactory>
 {
     /**
      * Creates a new build handler instance.
