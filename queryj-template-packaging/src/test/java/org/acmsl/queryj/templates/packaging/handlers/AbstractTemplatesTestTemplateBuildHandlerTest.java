@@ -27,7 +27,8 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Common logic and tests to follow a DRY approach when testing TemplatesTest build handlers.
+ * Description: Common logic and tests to follow a DRY approach when testing
+ *              TemplatesTest build handlers.
  *
  * Date: 2014/04/17
  * Time: 07:34
