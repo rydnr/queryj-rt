@@ -139,7 +139,7 @@ public abstract class AbstractTemplatesTestTemplateBuildHandlerTest
     }
 
     /**
-     * Checks whether retrieveTemplateFactory() retrieves a @lt;TF&gt; instance.
+     * Checks whether retrieveTemplateFactory() retrieves a &lt;TF&gt; instance.
      * @param factory the expected factory.
      */
     protected void retrieveTemplateFactory_retrieves_the_correct_factory(@NotNull final TF factory)
