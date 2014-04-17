@@ -236,7 +236,7 @@ public class PerCustomResultTemplatesTest
     /**
      * Defines the input properties based on the information provided by the
      * feature.
-     * @param resultInfo the information about the properties.
+     * @param propertiesInfo the information about the properties.
      */
     @SuppressWarnings("unused")
     @Given("^Given the following properties:$")
