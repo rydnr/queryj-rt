@@ -199,7 +199,8 @@ public class CustomResultTestHelper
                     name,
                     tableEntry.get("columnName"),
                     toInt(tableEntry.get("index")),
-                    tableEntry.get("type"));
+                    tableEntry.get("type"),
+                    Boolean.valueOf(tableEntry.get("nullable")));
         }
 
         return result;
