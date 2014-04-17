@@ -61,6 +61,29 @@ public class PerCustomResultTemplatesTestTemplateBuildHandlerTest
                 PerCustomResultTemplatesTestTemplate,
     PerCustomResultTemplatesTestTemplateFactory>
 {
+
+    /**
+     * Creates a new build handler instance.
+     * @return such new instance.
+     */
+    @NotNull
+    @Override
+    protected PerCustomResultTemplatesTestTemplateBuildHandler createInstance()
+    {
+        return new PerCustomResultTemplatesTestTemplateBuildHandler();
+    }
+
+    /**
+     * Retrieves a new template mock.
+     * @return such mock.
+     */
+    @NotNull
+    @Override
+    protected PerCustomResultTemplatesTestTemplate createTemplateMock()
+    {
+        return EasyMock.createNiceMock(PerCustomResultTemplatesTestTemplate.class);
+    }
+
     /**
      * Checks whether retrieveTemplateFactory() retrieves
      * {@link org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory}.
