@@ -220,6 +220,6 @@ public class CustomResultTestHelper
         @NotNull final String type,
         final boolean nullable)
     {
-        return new PropertyElement<>(name, type);
+        return new PropertyElement<>(name, columnName, index, type, nullable);
     }
 }
