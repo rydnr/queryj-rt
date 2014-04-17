@@ -1,5 +1,5 @@
 /*
-                        queryj
+                        QueryJ Template Packaging
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -23,14 +23,13 @@
 
  ******************************************************************************
  *
- * Filename: PerSqlTemplateWritingHandlerTemplateTest.java
+ * Filename: PerRepositoryTemplateWritingHandlerTemplateTest.java
  *
- * Author: Jose San Leandro Armendariz
+ * Author: Jose San Leandro
  *
- * Description: 
+ * Description: Tests for PerRepositoryTemplateWritingHandlerTemplate.
  *
- * Date: 2014/04/17
- * Time: 12:39
+ * Created: 2014/04/17 12:28
  *
  */
 package org.acmsl.queryj.templates.packaging;
@@ -38,20 +37,39 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing checkthread.org annotations.
+ * Importing JUnit/EasyMock classes.
  */
-import org.checkthread.annotations.ThreadSafe;
+import org.easymock.EasyMock;
+import org.junit.Assert;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 /**
- *
+ * Tests for {@link PerRepositoryTemplateWritingHandlerTemplate}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
- * Created: 2014/04/17 12:39
+ * Created 2014/04/17 12:28
  */
-@ThreadSafe
-public class PerSqlTemplateWritingHandlerTemplateTest
+@RunWith(JUnit4.class)
+public class PerRepositoryTemplateWritingHandlerTemplateTest
 {
+    /**
+     * Checks whether getTemplateName() returns the correct template name.
+     */
+    @Test
+    public void getTemplateName_returns_the_correct_template_name()
+    {
+        @NotNull final DefaultTemplatePackagingContext context =
+            EasyMock.createNiceMock(DefaultTemplatePackagingContext.class);
+
+        @NotNull final PerRepositoryTemplateWritingHandlerTemplate instance =
+            new PerRepositoryTemplateWritingHandlerTemplate<>(context);
+
+        Assert.assertEquals(Literals.PER_REPOSITORY_TEMPLATE_WRITING_HANDLER, instance.getTemplateName());
+    }
 }
