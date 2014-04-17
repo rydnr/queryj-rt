@@ -51,6 +51,7 @@ import org.acmsl.queryj.tools.handlers.QueryJCommandHandler;
 import org.acmsl.queryj.templates.packaging.handlers.DefaultTemplateChainProviderTemplateHandlerBundle;
 import org.acmsl.queryj.templates.packaging.handlers.FindTemplateDefsHandler;
 import org.acmsl.queryj.templates.packaging.handlers.ParseTemplateDefsHandler;
+import org.acmsl.queryj.templates.packaging.handlers.PerCustomResultTemplatesTestTemplateHandlerBundle;
 import org.acmsl.queryj.templates.packaging.handlers.PerForeignKeyTemplatesTestTemplateHandlerBundle;
 import org.acmsl.queryj.templates.packaging.handlers.PerTableTemplatesTestTemplateHandlerBundle;
 import org.acmsl.queryj.templates.packaging.handlers.TemplateBuildHandlerTemplateHandlerBundle;
