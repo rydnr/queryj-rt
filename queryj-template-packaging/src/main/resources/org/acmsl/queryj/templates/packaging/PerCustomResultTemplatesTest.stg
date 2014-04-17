@@ -248,7 +248,7 @@ public class PerCustomResultTemplatesTest
         @NotNull final Map\<String, List\<Property\<String>\>> properties,
         @NotNull final CustomResultTestHelper helper)
     {
-        helper.defineInputProperties(propertiesInfo, properties);
+        helper.defineInputProperties(propertiesInfo, results, properties);
     }
 
     /**
