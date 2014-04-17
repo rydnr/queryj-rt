@@ -59,7 +59,8 @@ import org.junit.Test;
  * Created: 2014/04/17 08:49
  */
 @ThreadSafe
-public abstract class AbstractTemplatesTestTemplateWritingHandlerTest
+public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
+    W>
 {
     /**
      * Creates a new writing handler instance.
