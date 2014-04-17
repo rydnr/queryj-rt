@@ -169,7 +169,7 @@ def_import(d) ::= <<
 !>
 <if(d.type.perCustomResult)>
 import org.acmsl.queryj.templates.<d.name>TemplateFactory;
-import org.acmsl.queryj.templates.<d.name>TemplateGenerator;
+import org.acmsl.queryj.templates.<d.name>TemplateGenerator;<endif>
 >>
 
 class(defs, C) ::= <<
