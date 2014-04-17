@@ -193,7 +193,7 @@ public class CustomResultTestHelper
 
         if (name != null)
         {
-            result = convertToProperty(id, tableEntry.get("type"));
+            result = convertToProperty(name, tableEntry.get("type"));
         }
 
         return result;
