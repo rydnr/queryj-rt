@@ -38,6 +38,7 @@ package org.acmsl.queryj.templates.packaging.handlers;
 /*
  * Importing QueryJ Template Packaging classes.
  */
+import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
 import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplateFactory;
 
@@ -65,7 +66,8 @@ public class PerTableTemplatesTestTemplateWritingHandlerTest
                 PerTableTemplatesTestTemplateWritingHandler,
                 PerTableTemplatesTestTemplateBuildHandler,
                 PerTableTemplatesTestTemplate,
-                PerTableTemplatesTestTemplateFactory>
+                PerTableTemplatesTestTemplateFactory,
+                GlobalTemplateContext>
 {
     /**
      * Creates a new writing handler instance.
