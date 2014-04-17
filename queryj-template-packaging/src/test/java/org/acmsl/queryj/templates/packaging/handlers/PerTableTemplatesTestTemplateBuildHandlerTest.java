@@ -93,6 +93,7 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
     /**
      * Tests whether retrieveTemplateName() works.
      */
+    @Override
     @Test
     public void retrieveTemplateName_works()
     {
