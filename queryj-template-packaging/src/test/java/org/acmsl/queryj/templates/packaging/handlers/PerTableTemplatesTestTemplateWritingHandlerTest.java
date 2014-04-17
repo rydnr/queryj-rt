@@ -60,6 +60,6 @@ public class PerTableTemplatesTestTemplateWritingHandlerTest
     public void retrieveTemplateGenerator_works()
     {
         @NotNull final PerTableTemplatesTestTemplateWritingHandler instance =
-            new
+            new PerTableTemplatesTestTemplateWritingHandler();
     }
 }
