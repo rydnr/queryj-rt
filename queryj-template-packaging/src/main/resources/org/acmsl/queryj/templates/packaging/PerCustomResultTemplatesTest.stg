@@ -230,7 +230,7 @@ public class PerCustomResultTemplatesTest
         @NotNull final Map\<String, result\<String, Attribute\<String>, List\<Attribute\<String\>>\>> results,
         @NotNull final CustomResultTestHelper helper)
     {
-        helper.defineInputresults(resultInfo, results);
+        helper.defineInputResults(resultInfo, results);
     }
 
     /**
