@@ -57,10 +57,10 @@ import org.checkthread.annotations.ThreadSafe;
 public class PerRepositoryTemplateWritingHandlerTemplate<C extends TemplatePackagingContext>
     extends TemplateWritingHandlerTemplate<C>
 {
+    private static final long serialVersionUID = 5604500279696395267L;
     /**
      * The serial version id.
      */
-    private static final long serialVersionUID = 3487564525136393115L;
 
     /**
      * Creates a new instance using given context.
