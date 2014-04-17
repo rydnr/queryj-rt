@@ -217,7 +217,7 @@ public class PerCustomResultTemplatesTest
     @Given("^Given the following custom result:$")
     public void defineInputResults(@NotNull final DataTable tableInfo)
     {
-        defineInputTables(tableInfo, getTables(), CustomResultTestHelper.getInstance());
+        defineInputResults(tableInfo, getTables(), CustomResultTestHelper.getInstance());
     }
 
     /**
