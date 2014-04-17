@@ -171,7 +171,7 @@ public class CustomResultTestHelper
 
         @Nullable Property<String> property;
 
-        @Nullable List<Property<String>> propertyList;
+        @Nullable List<Property<String>> propertyList = properties.get();
 
         for (@NotNull final Map<String, String> propertyEntry: propertyEntries)
         {
