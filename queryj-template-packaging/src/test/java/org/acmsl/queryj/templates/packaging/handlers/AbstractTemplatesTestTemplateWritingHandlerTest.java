@@ -66,7 +66,7 @@ import org.junit.Test;
 public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
     WH extends TemplatePackagingTestWritingHandler
         <T, GlobalTemplateContext, TemplatePackagingTemplateGenerator<T, GlobalTemplateContext>>,
-    WH extends TemplatePackagingTestWritingHandler
+    BH extends TemplatePackagingTestWritingHandler
         <T, GlobalTemplateContext, TemplatePackagingTemplateGenerator<T, GlobalTemplateContext>>,
     T extends PerTableTemplatesTestTemplate>
 {
