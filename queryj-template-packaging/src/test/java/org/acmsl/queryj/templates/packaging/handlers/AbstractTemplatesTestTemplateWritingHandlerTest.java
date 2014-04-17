@@ -38,12 +38,19 @@ package org.acmsl.queryj.templates.packaging.handlers;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
+import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplate;
+import org.apache.commons.configuration.PropertiesConfiguration;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Assert;
+import org.junit.Test;
 
 /**
  *
@@ -54,4 +61,40 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public class AbstractTemplatesTestTemplateWritingHandlerTest
 {
+    /**
+     * Checks retrieveTemplateGenerator retrieves a not-null instance.
+     * Redundant check since it's annotated with @NotNull.
+     */
+    @Test
+    public void retrieveTemplateGenerator_works()
+    {
+        @NotNull final PerTableTemplatesTestTemplateWritingHandler instance =
+            new PerTableTemplatesTestTemplateWritingHandler();
+
+        Assert.assertNotNull(instance.retrieveTemplateGenerator(false, 1));
+    }
+
+    /**
+     * Checks the templates built by the build handler are later
+     * found by the writing handler.
+     */
+    @Test
+    public void retrieveTemplates_finds_the_templates()
+    {
+        @NotNull final PerTableTemplatesTestTemplateWritingHandler instance =
+            new PerTableTemplatesTestTemplateWritingHandler();
+
+        @NotNull final PerTableTemplatesTestTemplateBuildHandler buildHandler =
+            new PerTableTemplatesTestTemplateBuildHandler();
+
+        @NotNull final QueryJCommand command =
+            new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+
+        @NotNull final PerTableTemplatesTestTemplate template =
+            EasyMock.createNiceMock(PerTableTemplatesTestTemplate.class);
+
+        buildHandler.storeTemplate(template, command);
+
+        Assert.assertNotNull(instance.retrieveTemplates(command));
+    }
 }
