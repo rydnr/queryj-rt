@@ -113,11 +113,7 @@ public abstract class AbstractTemplatesTestTemplateBuildHandlerTest
     /**
      * Tests whether retrieveTemplateName() works.
      */
-    @Test
     public abstract void retrieveTemplateName_works();
-    {
-        retrieveTemplateName_works(Literals.PER_REPOSITORY_TEMPLATES_TEST);
-    }
 
     /**
      * Checks whether storeTemplate() binds the template to the command.
