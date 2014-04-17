@@ -476,7 +476,7 @@ public abstract class AbstractTemplatesTest<G, F>
     @NotNull
     protected Map<String, Result<String>> getResults()
     {
-        return m__mResults;
+        return m__mProperties;
     }
 
     /**
