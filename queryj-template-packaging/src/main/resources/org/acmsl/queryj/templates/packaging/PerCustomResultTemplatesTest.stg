@@ -242,7 +242,7 @@ public class PerCustomResultTemplatesTest
      */
     protected void defineInputProperties(
         @NotNull final DataTable propertiesInfo,
-        @NotNull final Map\<String, Property\<String\>> results,
+        @NotNull final Map\<String, Property\<String\>> properties,
         @NotNull final CustomResultTestHelper helper)
     {
         helper.defineInputProperties(propertiesInfo, properties);
