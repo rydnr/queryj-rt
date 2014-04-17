@@ -144,7 +144,6 @@ public class CustomResultTestHelper
     @Nullable
     protected Result<String> convertToCustomResult(@NotNull final Map<String, String> tableEntry)
     {
-        return
-            new ResultElement<>(id, type);
+        return new ResultElement<>(id, type);
     }
 }
