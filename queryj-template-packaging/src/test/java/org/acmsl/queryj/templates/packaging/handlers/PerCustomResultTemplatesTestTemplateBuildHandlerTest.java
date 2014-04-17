@@ -90,6 +90,7 @@ public class PerCustomResultTemplatesTestTemplateBuildHandlerTest
      * {@link org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory}.
      */
     @Override
+    @Test
     public void retrieveTemplateFactory_retrieves_the_correct_factory()
     {
         //To change body of implemented methods use File | Settings | File Templates.
