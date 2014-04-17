@@ -244,6 +244,7 @@ public class PerCustomResultTemplatesTest
      */
     protected void defineInputProperties(
         @NotNull final DataTable propertiesInfo,
+        @NotNull final Map\<String, Result\<String\>> results,
         @NotNull final Map\<String, List\<Property\<String>\>> properties,
         @NotNull final CustomResultTestHelper helper)
     {
