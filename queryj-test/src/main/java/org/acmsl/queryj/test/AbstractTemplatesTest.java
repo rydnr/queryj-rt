@@ -415,6 +415,36 @@ public abstract class AbstractTemplatesTest<G, F>
     }
 
     /**
+     * Specifies the tables.
+     * @param tables the tables.
+     */
+    protected final void immutableSetTables(
+        @NotNull final Map<String, Table<String, Attribute<String>, List<Attribute<String>>>> tables)
+    {
+        m__mTables = tables;
+    }
+
+    /**
+     * Specifies the tables.
+     * @param tables the tables.
+     */
+    @SuppressWarnings("unused")
+    protected void setTables(@NotNull final Map<String, Table<String, Attribute<String>, List<Attribute<String>>>> tables)
+    {
+        immutableSetTables(tables);
+    }
+
+    /**
+     * Retrieves the tables.
+     * @return such information.
+     */
+    @NotNull
+    protected Map<String, Table<String, Attribute<String>, List<Attribute<String>>>> getTables()
+    {
+        return m__mTables;
+    }
+
+    /**
      * Specifies the engine name.
      * @param name such name.
      */
