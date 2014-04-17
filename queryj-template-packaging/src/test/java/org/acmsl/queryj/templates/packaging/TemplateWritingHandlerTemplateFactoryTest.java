@@ -82,7 +82,7 @@ public class TemplateWritingHandlerTemplateFactoryTest
     @Test
     public void createTemplate_returns_the_correct_template_for_a_per_repository_template()
     {
-        testCreateTemplate(TemplateDefType.PER_REPOSITORY, Literals.TEMPLATE_WRITING_HANDLER);
+        testCreateTemplate(TemplateDefType.PER_REPOSITORY, Literals.PER_REPOSITORY_TEMPLATE_WRITING_HANDLER);
     }
 
     /**
