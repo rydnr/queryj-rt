@@ -36,7 +36,7 @@
 **** TODO #477
 *** PerXXXTemplatesTestTemplateWritingHandler
 **** DONE #474
-**** TODO #475
+**** DONE #475
 **** TODO #476
 **** TODO #477
 *** PerXXXTemplatesFeature.stg
