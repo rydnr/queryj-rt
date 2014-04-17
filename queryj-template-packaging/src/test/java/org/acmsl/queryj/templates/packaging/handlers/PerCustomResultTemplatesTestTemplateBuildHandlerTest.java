@@ -87,18 +87,6 @@ public class PerCustomResultTemplatesTestTemplateBuildHandlerTest
     }
 
     /**
-     * Checks whether retrieveTemplateFactory() retrieves
-     * {@link org.acmsl.queryj.templates.packaging.PerCustomResultTemplatesFeatureTemplateFactory}.
-     */
-    @Override
-    @Test
-    public void retrieveTemplateFactory_retrieves_the_correct_factory()
-    {
-        retrieveTemplateFactory_retrieves_the_correct_factory(
-            PerCustomResultTemplatesTestTemplateFactory.getInstance());
-    }
-
-    /**
      * Tests whether retrieveTemplateName() works.
      */
     @Override
@@ -117,4 +105,16 @@ public class PerCustomResultTemplatesTestTemplateBuildHandlerTest
     {
         //To change body of implemented methods use File | Settings | File Templates.
     }
+    /**
+     * Checks whether retrieveTemplateFactory() retrieves
+     * {@link org.acmsl.queryj.templates.packaging.PerCustomResultTemplatesFeatureTemplateFactory}.
+     */
+    @Override
+    @Test
+    public void retrieveTemplateFactory_retrieves_the_correct_factory()
+    {
+        retrieveTemplateFactory_retrieves_the_correct_factory(
+            PerCustomResultTemplatesTestTemplateFactory.getInstance());
+    }
+
 }
