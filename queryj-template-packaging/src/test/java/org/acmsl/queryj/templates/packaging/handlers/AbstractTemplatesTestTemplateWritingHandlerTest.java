@@ -65,7 +65,8 @@ public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
     WH extends TemplatePackagingTestWritingHandler
         <PerTableTemplatesTestTemplate,
             GlobalTemplateContext,
-            TemplatePackagingTemplateGenerator<PerTableTemplatesTestTemplate, GlobalTemplateContext>>>
+            TemplatePackagingTemplateGenerator<PerTableTemplatesTestTemplate, GlobalTemplateContext>>,
+    T extends PerTableTemplatesTestTemplate>
 {
     /**
      * Creates a new writing handler instance.
