@@ -38,7 +38,6 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JUnit/EasyMock classes.
  */
-import org.checkthread.annotations.ThreadSafe;
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 import org.junit.Assert;
