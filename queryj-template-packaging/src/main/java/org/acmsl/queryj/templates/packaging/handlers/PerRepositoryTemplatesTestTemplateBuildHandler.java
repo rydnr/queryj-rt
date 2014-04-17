@@ -42,8 +42,8 @@ import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
 import org.acmsl.queryj.templates.packaging.Literals;
-import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplate;
-import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplateFactory;
+import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplate;
+import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.jetbrains.annotations.NotNull;
 
@@ -63,29 +63,29 @@ import java.util.List;
 @ThreadSafe
 public class PerRepositoryTemplatesTestTemplateBuildHandler
     extends TemplatePackagingTestBuildHandler
-                <PerForeignKeyTemplatesTestTemplate,
-                    PerForeignKeyTemplatesTestTemplateFactory,
+                <PerRepositoryTemplatesTestTemplate,
+                    PerRepositoryTemplatesTestTemplateFactory,
                     GlobalTemplateContext>
 {
     /**
      * The key to access the templates in the command.
      */
-    @NotNull static final String TEMPLATES_KEY = "PerForeignKeyTemplatesTest_templates";
+    @NotNull static final String TEMPLATES_KEY = "PerRepositoryTemplatesTest_templates";
 
     /**
-     * Creates a {@code PerForeignKeyTemplatesTestTemplateBuildHandler}.
+     * Creates a {@code PerRepositoryTemplatesTestTemplateBuildHandler}.
      */
-    public PerForeignKeyTemplatesTestTemplateBuildHandler() {}
+    public PerRepositoryTemplatesTestTemplateBuildHandler() {}
 
     /**
      * Retrieves the template factory.
-     * @return the {@link PerForeignKeyTemplatesTestTemplateFactory} instance.
+     * @return the {@link PerRepositoryTemplatesTestTemplateFactory} instance.
      */
     @Override
     @NotNull
-    protected PerForeignKeyTemplatesTestTemplateFactory retrieveTemplateFactory()
+    protected PerRepositoryTemplatesTestTemplateFactory retrieveTemplateFactory()
     {
-        return PerForeignKeyTemplatesTestTemplateFactory.getInstance();
+        return PerRepositoryTemplatesTestTemplateFactory.getInstance();
     }
 
     /**
@@ -131,10 +131,10 @@ public class PerRepositoryTemplatesTestTemplateBuildHandler
      */
     @Override
     protected void storeTemplate(
-        @NotNull final PerForeignKeyTemplatesTestTemplate template,
+        @NotNull final PerRepositoryTemplatesTestTemplate template,
         @NotNull final QueryJCommand parameters)
     {
-        new QueryJCommandWrapper<PerForeignKeyTemplatesTestTemplate>(parameters)
+        new QueryJCommandWrapper<PerRepositoryTemplatesTestTemplate>(parameters)
             .setSetting(TEMPLATES_KEY, template);
     }
 }
