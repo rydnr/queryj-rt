@@ -192,6 +192,11 @@ public abstract class AbstractTemplatesTest<G, F>
     private Map<String, List<Row<String>>> m__mRows;
 
     /**
+     * The tables.
+     */
+    private Map<String, Table<String, Attribute<String>, List<Attribute<String>>>> m__mTables;
+
+    /**
      * The engine name.
      */
     private String m__strEngineName;
