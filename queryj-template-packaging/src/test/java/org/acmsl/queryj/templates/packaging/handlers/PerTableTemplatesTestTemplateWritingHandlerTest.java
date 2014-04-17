@@ -65,6 +65,6 @@ public class PerTableTemplatesTestTemplateWritingHandlerTest
             new PerTableTemplatesTestTemplateWritingHandler();
 
         Assert.assertTrue(
-            instance.retrieveTemplateGenerator(false, 1) instanceof TemplatePackagingTemplateGenerator.class);
+            instance.retrieveTemplateGenerator(false, 1) instanceof TemplatePackagingTemplateGenerator);
     }
 }
