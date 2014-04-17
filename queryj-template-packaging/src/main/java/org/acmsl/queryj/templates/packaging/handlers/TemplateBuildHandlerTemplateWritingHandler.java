@@ -103,7 +103,7 @@ public class TemplateBuildHandlerTemplateWritingHandler
      */
     @NotNull
     @Override
-    protected List<TemplateBuildHandlerTemplate<DefaultTemplatePackagingContext>> retrieveTemplates(
+    public List<TemplateBuildHandlerTemplate<DefaultTemplatePackagingContext>> retrieveTemplates(
         @NotNull final QueryJCommand parameters)
         throws QueryJBuildException
     {
