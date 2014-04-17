@@ -38,12 +38,19 @@ package org.acmsl.queryj.templates.packaging.handlers;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.templates.packaging.Literals;
+import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplate;
+import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 /**
  *
@@ -52,6 +59,69 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2014/04/17 08:15
  */
 @ThreadSafe
+@RunWith(JUnit4.class)
+public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
+    extends AbstractTemplatesTestTemplateBuildHandlerTest
+                <PerRepositoryTemplatesTestTemplateBuildHandler,
+                    PerRepositoryTemplatesTestTemplate,
+                    PerRepositoryTemplatesTestTemplateFactory>
+{
+    /**
+     * Creates a new build handler instance.
+     *
+     * @return such new instance.
+     */
+    @Override
+    @NotNull
+    protected PerRepositoryTemplatesTestTemplateBuildHandler createInstance()
+    {
+        return new PerRepositoryTemplatesTestTemplateBuildHandler();
+    }
+
+    /**
+     * Retrieves a new template mock.
+     * @return such mock.
+     */
+    @Override
+    @NotNull
+    protected PerRepositoryTemplatesTestTemplate createTemplateMock()
+    {
+        return EasyMock.createNiceMock(PerRepositoryTemplatesTestTemplate.class);
+    }
+
+    /**
+     * Tests whether retrieveTemplateName() works.
+     */
+    @Override
+    @Test
+    public void retrieveTemplateName_works()
+    {
+        retrieveTemplateName_works(Literals.PER_REPOSITORY_TEMPLATES_TEST);
+    }
+
+    /**
+     * Checks whether storeTemplate() binds the template to the command.
+     */
+    @Override
+    @Test
+    public void storeTemplate_stores_the_templates_in_the_command()
+    {
+        storeTemplate_stores_the_templates_in_the_command(
+            PerRepositoryTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
+    }
+
+    /**
+     * Checks whether retrieveTemplateFactory() retrieves
+     * {@link org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory}.
+     */
+    @Override
+    @Test
+    public void retrieveTemplateFactory_retrieves_the_correct_factory()
+    {
+        retrieveTemplateFactory_retrieves_the_correct_factory(
+            PerRepositoryTemplatesTestTemplateFactory.getInstance());
+    }
+}
 public class PerSqlTemplatesTestTemplateBuildHandlerTest
 {
 }
