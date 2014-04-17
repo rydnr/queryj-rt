@@ -62,6 +62,34 @@ public class PerCustomResultTemplatesTestTemplateBuildHandlerTest
     PerCustomResultTemplatesTestTemplateFactory>
 {
     /**
+     * Checks whether retrieveTemplateFactory() retrieves
+     * {@link org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory}.
+     */
+    @Override
+    public void retrieveTemplateFactory_retrieves_the_correct_factory()
+    {
+        //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
+     * Tests whether retrieveTemplateName() works.
+     */
+    @Override
+    public void retrieveTemplateName_works()
+    {
+        //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
+     * Checks whether storeTemplate() binds the template to the command.
+     */
+    @Override
+    public void storeTemplate_stores_the_templates_in_the_command()
+    {
+        //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
      * Creates a new build handler instance.
      * @return such new instance.
      */
