@@ -170,7 +170,7 @@ public class CustomResultTestHelper
 
         @Nullable Property<String> property;
 
-        for (@NotNull final Map<String, String> tableEntry: tableEntries)
+        for (@NotNull final Map<String, String> tableEntry: propertyEntries)
         {
             property = convertToProperty(tableEntry);
 
