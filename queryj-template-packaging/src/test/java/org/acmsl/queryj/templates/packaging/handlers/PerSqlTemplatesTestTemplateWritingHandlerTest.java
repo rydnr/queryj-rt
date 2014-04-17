@@ -45,7 +45,6 @@ import org.acmsl.queryj.templates.packaging.PerSqlTemplatesTestTemplateFactory;
 /*
  * Importing JetBrains annotations.
  */
-import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.NotNull;
 
 /*
