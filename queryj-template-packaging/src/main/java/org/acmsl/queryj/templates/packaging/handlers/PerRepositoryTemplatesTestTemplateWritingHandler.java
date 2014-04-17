@@ -38,12 +38,21 @@ package org.acmsl.queryj.templates.packaging.handlers;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.QueryJCommandWrapper;
+import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
+import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplate;
+import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplateGenerator;
+import org.acmsl.queryj.templates.packaging.exceptions.MissingTemplatesException;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 /**
  *
@@ -53,5 +62,52 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class PerRepositoryTemplatesTestTemplateWritingHandler
+    extends TemplatePackagingTestWritingHandler
+                <PerForeignKeyTemplatesTestTemplate,
+                    GlobalTemplateContext,
+                    TemplatePackagingTemplateGenerator<PerForeignKeyTemplatesTestTemplate, GlobalTemplateContext>>
 {
+    /**
+     * Creates a new writing handler for {@link PerForeignKeyTemplatesTestTemplate templates}.
+     */
+    public PerForeignKeyTemplatesTestTemplateWritingHandler() {}
+
+    /**
+     * Retrieves the template generator.
+     * @param caching whether to enable template caching.
+     * @param threadCount the number of threads to use.
+     * @return such instance.
+     */
+    @NotNull
+    @Override
+    public TemplatePackagingTemplateGenerator<PerForeignKeyTemplatesTestTemplate, GlobalTemplateContext> retrieveTemplateGenerator(
+        final boolean caching, final int threadCount)
+    {
+        return new TemplatePackagingTemplateGenerator<>(caching, threadCount);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public List<PerForeignKeyTemplatesTestTemplate> retrieveTemplates(@NotNull final QueryJCommand parameters)
+    {
+        @NotNull final List<PerForeignKeyTemplatesTestTemplate> result;
+
+        @Nullable final List<PerForeignKeyTemplatesTestTemplate> aux =
+            new QueryJCommandWrapper<PerForeignKeyTemplatesTestTemplate>(parameters)
+                .getListSetting(PerForeignKeyTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
+
+        if (aux == null)
+        {
+            throw new MissingTemplatesException("per-foreign-key-templates-test");
+        }
+        else
+        {
+            result = aux;
+        }
+
+        return result;
+    }
 }
