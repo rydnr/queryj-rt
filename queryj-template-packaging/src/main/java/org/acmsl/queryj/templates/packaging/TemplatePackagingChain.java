@@ -139,6 +139,10 @@ public class TemplatePackagingChain<CH extends QueryJCommandHandler<QueryJComman
 
 //        chain.add((CH) new PerCustomResultTemplatesFeatureTemplateHandlerBundle());
 
+        chain.add((CH) new PerForeignKeyTemplatesTestTemplateHandlerBundle());
+
+//        chain.add((CH) new PerForeignKeyTemplatesFeatureTemplateHandlerBundle());
+
         chain.add((CH) new DefaultTemplateChainProviderTemplateHandlerBundle());
 
         return chain;
