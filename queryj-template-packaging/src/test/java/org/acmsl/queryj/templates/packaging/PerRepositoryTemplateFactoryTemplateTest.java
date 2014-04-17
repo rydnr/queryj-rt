@@ -31,9 +31,6 @@
  *
  * Date: 2014/04/17
  * Time: 12:07
- * Description: Tests for PerForeignKeyTemplateFactoryTemplate.
- *
- * Created: 2014/04/14 18:32
  *
  */
 package org.acmsl.queryj.templates.packaging;
