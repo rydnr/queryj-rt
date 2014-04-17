@@ -43,6 +43,7 @@ import cucumber.api.DataTable;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.ResultElement;
 
