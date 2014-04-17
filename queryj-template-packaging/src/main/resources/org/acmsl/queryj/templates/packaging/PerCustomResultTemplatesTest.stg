@@ -266,7 +266,7 @@ public class PerCustomResultTemplatesTest
      * @param engine the engine.
      */
     @SuppressWarnings("unused")
-    @When("^When I use the custom result template \<template>.stg for (.*)$")
+    @When("^When I use the custom result template (.*) for (.*)$")
     public void generateFile(@NotNull final String template, @NotNull final String engine)
     {
         setEngineName(engine);
