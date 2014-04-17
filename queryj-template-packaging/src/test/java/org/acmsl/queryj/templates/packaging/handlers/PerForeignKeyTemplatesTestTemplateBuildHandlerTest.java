@@ -106,6 +106,7 @@ public class PerForeignKeyTemplatesTestTemplateBuildHandlerTest
     /**
      * Checks whether storeTemplate() binds the template to the command.
      */
+    @Override
     @Test
     public void storeTemplate_stores_the_templates_in_the_command()
     {
