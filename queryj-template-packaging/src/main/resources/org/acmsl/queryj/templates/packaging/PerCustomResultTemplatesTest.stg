@@ -343,7 +343,7 @@ public class PerCustomResultTemplatesTest
                 {
                     @Nullable List\<Property\<String\>> properties = properties.get(result.getId());
 
-                    if (resultRows == null)
+                    if (properties == null)
                     {
                         resultRows = new ArrayList\<>(0);
                     }
