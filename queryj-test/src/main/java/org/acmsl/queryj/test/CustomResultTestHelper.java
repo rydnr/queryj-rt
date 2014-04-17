@@ -229,7 +229,7 @@ public class CustomResultTestHelper
 
         try
         {
-
+            propertyIndex =
         }
         return new PropertyElement<>(id, columnName, index, type, nullable);
     }
