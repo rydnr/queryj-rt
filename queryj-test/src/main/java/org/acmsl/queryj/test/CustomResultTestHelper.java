@@ -225,7 +225,7 @@ public class CustomResultTestHelper
     {
         @Nullable final Property<String> result;
 
-        @Nullable final String propertyIndex
+        final int propertyIndex =
         return new PropertyElement<>(id, columnName, index, type, nullable);
     }
 }
