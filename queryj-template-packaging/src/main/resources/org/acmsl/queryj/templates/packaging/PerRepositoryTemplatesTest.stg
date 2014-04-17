@@ -228,7 +228,7 @@ public class PerRepositoryTemplatesTest
     protected void defineInputTables(
         @NotNull final DataTable tableInfo,
         @NotNull final Map\<String, Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables,
-        @NotNull final TableTestHelper helper)
+        @NotNull final RepositoryTestHelper helper)
     {
         helper.defineInputTables(tableInfo, tables);
     }
