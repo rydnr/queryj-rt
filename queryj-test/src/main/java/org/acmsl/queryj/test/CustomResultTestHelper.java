@@ -175,9 +175,9 @@ public class CustomResultTestHelper
 
         if (propertyList != null)
         {
-        for (@NotNull final Map<String, String> propertyEntry: propertyEntries)
-        {
-            property = convertToProperty(propertyEntry);
+            for (@NotNull final Map<String, String> propertyEntry: propertyEntries)
+            {
+                property = convertToProperty(propertyEntry);
 
             if (property != null)
             {
