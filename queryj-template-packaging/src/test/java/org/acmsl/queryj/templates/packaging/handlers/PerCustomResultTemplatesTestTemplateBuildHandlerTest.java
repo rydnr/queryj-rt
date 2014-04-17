@@ -104,7 +104,7 @@ public class PerCustomResultTemplatesTestTemplateBuildHandlerTest
     public void storeTemplate_stores_the_templates_in_the_command()
     {
         storeTemplate_stores_the_templates_in_the_command(
-            PerRepositoryTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
+            PerCustomResultTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
     }
 
     /**
