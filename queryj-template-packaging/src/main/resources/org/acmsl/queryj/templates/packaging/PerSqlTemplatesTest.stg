@@ -288,7 +288,7 @@ public class PerSqlTemplatesTest
      * @param engine the engine.
      */
     @SuppressWarnings("unused")
-    @When("^When I use the custom result template (.*) for (.*)$")
+    @When("^I generate with per-SQL \<template>.stg for (.*)$")
     public void generateFile(@NotNull final String template, @NotNull final String engine)
     {
         setEngineName(engine);
