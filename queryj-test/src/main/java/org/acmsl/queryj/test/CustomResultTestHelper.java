@@ -91,17 +91,17 @@ public class CustomResultTestHelper
      * @param tableInfo the information about the tables.
      * @param tables the table collection.
      */
-    public void defineInputTables(
-        @NotNull final DataTable tableInfo,
-        @NotNull final Map<String, Table<String, Attribute<String>, List<Attribute<String>>>> tables)
+    public void defineInputCustomResults(
+        @NotNull final DataCustomResult tableInfo,
+        @NotNull final Map<String, CustomResult<String, Attribute<String>, List<Attribute<String>>>> tables)
     {
         @NotNull final List<Map<String, String>> tableEntries = tableInfo.asMaps();
 
-        @Nullable Table<String, Attribute<String>, List<Attribute<String>>> table;
+        @Nullable CustomResult<String, Attribute<String>, List<Attribute<String>>> table;
 
         for (@NotNull final Map<String, String> tableEntry: tableEntries)
         {
-            table = convertToTable(tableEntry);
+            table = convertToCustomResult(tableEntry);
 
             if (table != null)
             {
@@ -111,22 +111,22 @@ public class CustomResultTestHelper
     }
 
     /**
-     * Converts given table information to a {@link Table}.
+     * Converts given table information to a {@link CustomResult}.
      * @param tableEntry the table information.
-     * @return the {@link Table} instance.
+     * @return the {@link CustomResult} instance.
      */
     @Nullable
-    protected Table<String, Attribute<String>, List<Attribute<String>>> convertToTable(
+    protected CustomResult<String, Attribute<String>, List<Attribute<String>>> convertToCustomResult(
         @NotNull final Map<String, String> tableEntry)
     {
-        @Nullable Table<String, Attribute<String>, List<Attribute<String>>> result = null;
+        @Nullable CustomResult<String, Attribute<String>, List<Attribute<String>>> result = null;
 
-        @Nullable final String table =  tableEntry.get(AntTablesElement.TABLE);
+        @Nullable final String table =  tableEntry.get(AntCustomResultsElement.TABLE);
 
         if (table != null)
         {
             result =
-                convertToTable(
+                convertToCustomResult(
                     table,
                     tableEntry.get(Literals.COMMENT),
                     tableEntry.get(PARENT_TABLE),
