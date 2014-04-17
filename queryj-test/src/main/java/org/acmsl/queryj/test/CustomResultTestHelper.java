@@ -57,12 +57,12 @@ public class CustomResultTestHelper
     /**
      * Singleton implementation to avoid double-locking check.
      */
-    protected static final class TableTestHelperSingletonContainer
+    protected static final class CustomResultTestHelperSingletonContainer
     {
         /**
          * The actual singleton.
          */
-        public static final TableTestHelper SINGLETON = new TableTestHelper();
+        public static final CustomResultTestHelper SINGLETON = new CustomResultTestHelper();
     }
 
     /**
@@ -71,9 +71,9 @@ public class CustomResultTestHelper
      * @return such instance.
      */
     @NotNull
-    public static TableTestHelper getInstance()
+    public static CustomResultTestHelper getInstance()
     {
-        return TableTestHelperSingletonContainer.SINGLETON;
+        return CustomResultTestHelperSingletonContainer.SINGLETON;
     }
 
 }
