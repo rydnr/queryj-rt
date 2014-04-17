@@ -36,13 +36,6 @@
 package org.acmsl.queryj.templates.packaging.handlers;
 
 /*
- * Importing QueryJ Core classes.
- */
-import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
-import org.acmsl.queryj.QueryJCommand;
-import org.acmsl.queryj.QueryJCommandWrapper;
-
-/*
  * Importing QueryJ Template Packaging classes.
  */
 import org.acmsl.queryj.templates.packaging.Literals;
