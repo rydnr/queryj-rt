@@ -173,6 +173,8 @@ public class CustomResultTestHelper
 
         @Nullable List<Property<String>> propertyList = properties.get(result.getId());
 
+        if (propertyList != null)
+        {
         for (@NotNull final Map<String, String> propertyEntry: propertyEntries)
         {
             property = convertToProperty(propertyEntry);
