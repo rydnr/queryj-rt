@@ -335,7 +335,11 @@ public class PerCustomResultTemplatesTest
 
             for (@Nullable final Result\<String\>> result : results)
             {
-                if (result != null)
+                if (result == null)
+                {
+                    Assert.fail("Null result found");
+                }
+                else
                 {
                     @Nullable List\<Row\<String\>> resultRows = rows.get(result.getName());
 
