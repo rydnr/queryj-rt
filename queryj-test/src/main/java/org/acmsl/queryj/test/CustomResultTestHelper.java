@@ -175,17 +175,19 @@ public class CustomResultTestHelper
         {
             if (result != null)
             {
-        @Nullable final List<Property<String>> propertyList = properties.get(result.getId());
+                @Nullable final List<Property<String>> propertyList = properties.get(result.getId());
 
-        if (propertyList != null)
-        {
-            for (@NotNull final Map<String, String> propertyEntry: propertyEntries)
-            {
-                property = convertToProperty(propertyEntry);
-
-                if (property != null)
+                if (propertyList != null)
                 {
-                    propertyList.add(property);
+                    for (@NotNull final Map<String, String> propertyEntry: propertyEntries)
+                    {
+                        property = convertToProperty(propertyEntry);
+
+                        if (property != null)
+                        {
+                            propertyList.add(property);
+                        }
+                    }
                 }
             }
         }
