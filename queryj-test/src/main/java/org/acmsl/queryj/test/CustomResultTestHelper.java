@@ -200,10 +200,10 @@ public class CustomResultTestHelper
     }
 
     /**
-     * Creates a new {@link Result}.
+     * Creates a new {@link Property}.
      * @param id the id.
      * @param type the type.
-     * @return the {@link Result} instance.
+     * @return the {@link Property} instance.
      */
     @Nullable
     protected Property<String> convertToProperty(@NotNull final String id, @NotNull final String type)
