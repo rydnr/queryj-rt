@@ -30,7 +30,7 @@
 **** DONE #476
 **** DONE #477
 *** PerXXXTemplatesTestTemplateHandlerBundle
-**** TODO #474
+**** DONE #474
 **** DONE #475
 **** TODO #476
 **** TODO #477
