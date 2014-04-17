@@ -101,7 +101,7 @@ public class CustomResultTestHelper
      * Defines the input results based on the information provided by the
      * feature.
      * @param tableInfo the information about the results.
-     * @param tables the table collection.
+     * @param tables the resultcollection.
      */
     @SuppressWarnings("unused")
     public void defineInputResults(
