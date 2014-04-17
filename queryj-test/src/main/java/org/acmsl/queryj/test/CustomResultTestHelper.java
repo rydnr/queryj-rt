@@ -118,7 +118,7 @@ public class CustomResultTestHelper
 
             if (result != null)
             {
-                tables.put(result.getId(), result);
+                results.put(result.getId(), result);
             }
         }
     }
