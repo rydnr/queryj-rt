@@ -209,6 +209,7 @@ public class CustomResultTestHelper
     /**
      * Creates a new {@link Property}.
      * @param name the name.
+     * @param
      * @param type the type.
      * @return the {@link Property} instance.
      */
