@@ -23,7 +23,7 @@
 
  ******************************************************************************
  *
- * Filename: PerRepositoryTemplateWritingHandlerTemplate.java
+ * Filename: PerSqlTemplateWritingHandlerTemplate.java
  *
  * Author: Jose San Leandro
  *
@@ -54,7 +54,7 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2014/04/17 12:40
  */
 @ThreadSafe
-public class PerRepositoryTemplateWritingHandlerTemplate<C extends TemplatePackagingContext>
+public class PerSqlTemplateWritingHandlerTemplate<C extends TemplatePackagingContext>
     extends TemplateWritingHandlerTemplate<C>
 {
     /**
@@ -66,14 +66,14 @@ public class PerRepositoryTemplateWritingHandlerTemplate<C extends TemplatePacka
      * Creates a new instance using given context.
      * @param context the context.
      */
-    public PerRepositoryTemplateWritingHandlerTemplate(@NotNull final C context)
+    public PerSqlTemplateWritingHandlerTemplate(@NotNull final C context)
     {
         super(context);
     }
 
     /**
      * Retrieves the template name.
-     * @return "PerRepositoryTemplateWritingHandler".
+     * @return "PerSqlTemplateWritingHandler".
      */
     @NotNull
     @Override
