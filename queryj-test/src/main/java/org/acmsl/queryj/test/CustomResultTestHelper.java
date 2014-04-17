@@ -212,6 +212,7 @@ public class CustomResultTestHelper
      * @param columnName the column name.
      * @param index the index.
      * @param type the type.
+     * @param
      * @return the {@link Property} instance.
      */
     @Nullable
