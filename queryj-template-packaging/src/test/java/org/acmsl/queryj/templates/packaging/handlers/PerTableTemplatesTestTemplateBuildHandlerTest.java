@@ -90,6 +90,29 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
                 PerTableTemplatesTestTemplate,
                 PerTableTemplatesTestTemplateFactory>
 {
+    /**
+     * Creates a new build handler instance.
+     *
+     * @return such new instance.
+     */
+    @NotNull
+    @Override
+    protected PerTableTemplatesTestTemplateBuildHandler createInstance()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
+     * Retrieves a new template mock.
+     *
+     * @return such mock.
+     */
+    @NotNull
+    @Override
+    protected PerTableTemplatesTestTemplate createTemplateMock()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
 
     /**
      * Tests whether retrieveTemplateName() works.
