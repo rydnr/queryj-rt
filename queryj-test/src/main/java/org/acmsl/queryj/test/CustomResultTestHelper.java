@@ -119,7 +119,7 @@ public class CustomResultTestHelper
     @Nullable
     protected Result<String> convertToCustomResult(@NotNull final Map<String, String> tableEntry)
     {
-        @Nullable Result<String>> result = null;
+        @Nullable Result<String> result = null;
 
         @Nullable final String table =  tableEntry.get(AntCustomResultsElement.TABLE);
 
