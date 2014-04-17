@@ -38,6 +38,7 @@ package org.acmsl.queryj.test;
 /*
  * Importing QueryJ Test classes.
  */
+import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.test.antlr4.JavaLexer;
 import org.acmsl.queryj.test.antlr4.JavaPackageVisitor;
 import org.acmsl.queryj.test.antlr4.JavaParser;
