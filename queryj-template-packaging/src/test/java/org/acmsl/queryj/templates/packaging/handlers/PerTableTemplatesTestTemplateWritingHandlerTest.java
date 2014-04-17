@@ -93,6 +93,6 @@ public class PerTableTemplatesTestTemplateWritingHandlerTest
 
         buildHandler.storeTemplate(template, command);
 
-
+        Assert.assertNotNull(instance.retrieveTemplates(command));
     }
 }
