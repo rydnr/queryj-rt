@@ -85,7 +85,8 @@ import java.util.List;
  */
 @RunWith(JUnit4.class)
 public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
-    extends AbstractTemplatesTestTemplateBuildHandlerTest<>
+    extends AbstractTemplatesTestTemplateBuildHandlerTest<            new PerRepositoryTemplatesTestTemplateBuildHandler();
+>
 {
     /**
      * Tests whether retrieveTemplateName() works.
