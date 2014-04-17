@@ -128,18 +128,6 @@ public abstract class AbstractTemplatesTestTemplateBuildHandlerTest
     public abstract void retrieveTemplateFactory_retrieves_the_correct_factory();
 
     /**
-     * Tests whether retrieveTemplateName() works.
-     */
-    protected void retrieveTemplateName_works(@NotNull final String templateName)
-    {
-        @NotNull final BH instance = createInstance();
-
-        @NotNull final QueryJCommand command = EasyMock.createNiceMock(QueryJCommand.class);
-
-        Assert.assertEquals(templateName, instance.retrieveTemplateName(command));
-    }
-
-    /**
      * Checks whether storeTemplate() binds the template to the command.
      * @param commandKey the key in the command where the templates are expected to be stored.
      */
