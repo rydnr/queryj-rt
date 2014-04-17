@@ -98,7 +98,7 @@ public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
     @Override
     protected PerRepositoryTemplatesTestTemplateBuildHandler createInstance()
     {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        new PerRepositoryTemplatesTestTemplateBuildHandler()
     }
 
     /**
