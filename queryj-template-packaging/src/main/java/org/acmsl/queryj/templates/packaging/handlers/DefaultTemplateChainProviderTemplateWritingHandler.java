@@ -94,9 +94,7 @@ public class DefaultTemplateChainProviderTemplateWritingHandler
         final boolean caching, final int threadCount)
     {
         return
-            new TemplatePackagingTemplateGenerator
-                <DefaultTemplateChainProviderTemplate<GlobalTemplateContext>,
-                 GlobalTemplateContext>(caching, threadCount);
+            new TemplatePackagingTemplateGenerator<>(caching, threadCount);
     }
 
     /**
