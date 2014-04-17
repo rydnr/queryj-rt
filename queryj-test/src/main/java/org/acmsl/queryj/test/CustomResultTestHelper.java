@@ -182,7 +182,6 @@ public class CustomResultTestHelper
                 if (property != null)
                 {
                     propertyList = properties.get(property.)
-                properties.put(property.getId(), property);
             }
         }
     }
