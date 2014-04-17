@@ -122,29 +122,3 @@ public class PerRepositoryTemplatesTestTemplateWritingHandler
         return result;
     }
 }
- * Date: 2014/04/17
- * Time: 10:15
- *
- */
-package org.acmsl.queryj.templates.packaging.handlers;
-
-/*
- * Importing JetBrains annotations.
- */
-import org.jetbrains.annotations.NotNull;
-
-/*
- * Importing checkthread.org annotations.
- */
-import org.checkthread.annotations.ThreadSafe;
-
-/**
- *
- * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
- * @since 3.0
- * Created: 2014/04/17 10:15
- */
-@ThreadSafe
-public class PerSqlTemplatesTestTemplateWritingHandler
-{
-}
