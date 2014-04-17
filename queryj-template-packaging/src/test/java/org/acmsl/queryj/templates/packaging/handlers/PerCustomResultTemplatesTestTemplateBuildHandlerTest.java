@@ -95,7 +95,7 @@ public class PerCustomResultTemplatesTestTemplateBuildHandlerTest
     public void retrieveTemplateFactory_retrieves_the_correct_factory()
     {
         retrieveTemplateFactory_retrieves_the_correct_factory(
-            PerRepositoryTemplatesTestTemplateFactory.getInstance());
+            PerCustomResultTemplatesTestTemplateFactory.getInstance());
     }
 
     /**
