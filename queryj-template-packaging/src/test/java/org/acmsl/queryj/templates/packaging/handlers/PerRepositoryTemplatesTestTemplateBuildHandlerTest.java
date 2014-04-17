@@ -126,7 +126,8 @@ public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
     @Test
     public void storeTemplate_stores_the_templates_in_the_command()
     {
-        storeTemplate_stores_the_templates_in_the_command(PerRepositoryTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
+        storeTemplate_stores_the_templates_in_the_command(
+            PerRepositoryTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
     }
 
     /**
