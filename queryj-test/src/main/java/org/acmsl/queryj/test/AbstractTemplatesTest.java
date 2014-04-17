@@ -192,7 +192,7 @@ public abstract class AbstractTemplatesTest<G, F>
     private Map<String, List<Row<String>>> m__mRows;
 
     /**
-     * The tables.
+     * The custom results.
      */
     private Map<String, Table<String, Attribute<String>, List<Attribute<String>>>> m__mTables;
 
