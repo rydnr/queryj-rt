@@ -120,7 +120,7 @@ public class TemplateWritingHandlerTemplateFactoryTest
      * for a per-custom-result type.
      */
     @Test
-    public void createTemplate_returns_the_correct_template_for_a_per_custom_result_template()
+    public void createTemplate_returns_the_correct_template_for_a_per_sql_template()
     {
         testCreateTemplate(TemplateDefType.PER_CUSTOM_RESULT, Literals.TEMPLATE_WRITING_HANDLER);
     }
