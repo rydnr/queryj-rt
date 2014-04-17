@@ -127,19 +127,7 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
     @Test
     public void storeTemplate_stores_the_templates_in_the_command()
     {
-        storeTemplate_stores_the_templates_in_the_command();
-        @NotNull final PerTableTemplatesTestTemplateBuildHandler instance =
-            new PerTableTemplatesTestTemplateBuildHandler();
-
-        @NotNull final QueryJCommand command =
-            new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
-
-        @NotNull final PerTableTemplatesTestTemplate template =
-            EasyMock.createNiceMock(PerTableTemplatesTestTemplate.class);
-
-        instance.storeTemplate(template, command);
-
-        Assert.assertEquals(template, command.getSetting(PerTableTemplatesTestTemplateBuildHandler.TEMPLATES_KEY));
+        storeTemplate_stores_the_templates_in_the_command(PerTableTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
     }
 
     /**
