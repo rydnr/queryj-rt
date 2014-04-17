@@ -94,7 +94,7 @@ public class CustomResultTestHelper
      */
     public void defineInputResults(
         @NotNull final DataTable tableInfo,
-        @NotNull final Map<String, Result<String, Attribute<String>, List<Attribute<String>>>> tables)
+        @NotNull final Map<String, Result<String>> tables)
     {
         @NotNull final List<Map<String, String>> tableEntries = tableInfo.asMaps();
 
