@@ -137,10 +137,7 @@ public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
     @Test
     public void retrieveTemplateFactory_retrieves_the_correct_factory()
     {
-        retrieveTemplateName_works();@NotNull final PerRepositoryTemplatesTestTemplateBuildHandler instance =
-            new PerRepositoryTemplatesTestTemplateBuildHandler();
-
-        Assert.assertEquals(PerRepositoryTemplatesTestTemplateFactory.getInstance(), instance.retrieveTemplateFactory());
+        retrieveTemplateName_works(PerRepositoryTemplatesTestTemplateFactory.getInstance(), instance.retrieveTemplateFactory());
     }
 
     /**
