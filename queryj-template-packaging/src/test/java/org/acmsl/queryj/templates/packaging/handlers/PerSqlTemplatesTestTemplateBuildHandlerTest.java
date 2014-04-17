@@ -45,29 +45,15 @@ import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFa
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.templates.packaging.PerSqlTemplatesTestTemplate;
+import org.acmsl.queryj.templates.packaging.PerSqlTemplatesTestTemplateFactory;
+import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing JUnit/EasyMock classes.
  */
 import org.easymock.EasyMock;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
-
-/*
- * Importing JetBrains annotations.
- */
-import org.acmsl.queryj.templates.packaging.Literals;
-import org.acmsl.queryj.templates.packaging.PerSqlTemplatesTestTemplate;
-import org.acmsl.queryj.templates.packaging.PerSqlTemplatesTestTemplateFactory;
-import org.easymock.EasyMock;
-import org.jetbrains.annotations.NotNull;
-
-/*
- * Importing checkthread.org annotations.
- */
-import org.checkthread.annotations.ThreadSafe;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
