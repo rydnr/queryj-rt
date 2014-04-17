@@ -67,27 +67,6 @@ import java.util.List;
 
 /**
  * Build handler for {@link PerRepositoryTemplatesTestTemplate}s.
-/*
- * Importing JetBrains annotations.
- */
-import org.acmsl.queryj.QueryJCommand;
-import org.acmsl.queryj.QueryJCommandWrapper;
-import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
-import org.acmsl.queryj.templates.packaging.Literals;
-import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplate;
-import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory;
-import org.acmsl.queryj.templates.packaging.TemplateDef;
-import org.jetbrains.annotations.NotNull;
-
-/*
- * Importing checkthread.org annotations.
- */
-import org.checkthread.annotations.ThreadSafe;
-
-import java.util.List;
-
-/**
- *
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/17 08:12
