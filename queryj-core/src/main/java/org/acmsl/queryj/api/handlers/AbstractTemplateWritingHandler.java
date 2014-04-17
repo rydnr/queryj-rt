@@ -431,7 +431,7 @@ public abstract class AbstractTemplateWritingHandler
      * @return such instance.
      */
     @NotNull
-    protected abstract TG retrieveTemplateGenerator(final boolean caching, final int threadCount);
+    public abstract TG retrieveTemplateGenerator(final boolean caching, final int threadCount);
 
     /**
      * Retrieves the templates from the command.
