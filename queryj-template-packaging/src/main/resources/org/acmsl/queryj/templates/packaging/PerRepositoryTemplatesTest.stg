@@ -428,7 +428,7 @@ public class PerRepositoryTemplatesTest
      * @param outputName the name of the output file.
      */
     @SuppressWarnings("unused")
-    @Then("^Then the generated repository-wide \<output> file compiles successfullythe generated per-table (.*) file compiles successfully")
+    @Then("^Then the generated repository-wide \<output> file compiles successfully")
     public void checkGeneratedFileCompiles(@NotNull final String outputName)
     {
         checkGeneratedFilesCompile(outputName, getOutputFiles());
