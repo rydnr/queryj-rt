@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Helper class for per-foreign key Cucumber tests.
+ * Description: Helper class for per-repository Cucumber tests.
  *
  * Date: 2014/04/17
  * Time: 11:33
