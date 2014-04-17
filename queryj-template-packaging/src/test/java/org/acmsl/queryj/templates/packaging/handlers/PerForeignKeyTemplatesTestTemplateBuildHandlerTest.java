@@ -117,7 +117,7 @@ public class PerForeignKeyTemplatesTestTemplateBuildHandlerTest
     @Test
     public void retrieveTemplateName_works()
     {
-        retrieveTemplateName_works(Literals.PER_FOREIGN_KEY_TEMPLATES_TEST, instance.retrieveTemplateName(command));
+        retrieveTemplateName_works(Literals.PER_FOREIGN_KEY_TEMPLATES_TEST);
     }
 
     /**
