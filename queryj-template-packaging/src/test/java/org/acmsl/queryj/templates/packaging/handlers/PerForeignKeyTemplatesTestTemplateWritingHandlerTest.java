@@ -41,12 +41,12 @@ package org.acmsl.queryj.templates.packaging.handlers;
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
 import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplateFactory;
-import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
+import org.easymock.EasyMock;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
