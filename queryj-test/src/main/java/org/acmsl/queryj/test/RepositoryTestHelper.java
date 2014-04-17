@@ -63,6 +63,7 @@ import java.util.Map;
  * @since 3.0
  * Created: 2014/04/17 11:33
  */
+@SuppressWarnings("unused")
 @ThreadSafe
 public class RepositoryTestHelper
 {
