@@ -238,7 +238,7 @@ public class PerSqlTemplatesTest
      * @param values such information.
      */
     @SuppressWarnings("unused")
-    @And("^the following queries:$")
+    @And("^the following query:$")
     public void defineSql(@NotNull final DataTable values)
     {
         setSqlList(defineSql(values, TableTestHelper.getInstance()));
