@@ -47,7 +47,6 @@ import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFa
  */
 import org.acmsl.queryj.templates.packaging.PerSqlTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.PerSqlTemplatesTestTemplateFactory;
-import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.NotNull;
 
 /*
