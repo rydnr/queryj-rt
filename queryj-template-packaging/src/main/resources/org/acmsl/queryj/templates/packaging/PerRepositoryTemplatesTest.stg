@@ -234,48 +234,6 @@ public class PerRepositoryTemplatesTest
     }
 
     /**
-     * Defines SQL parameters via cucumber features.
-     * @param values the SQL parameters in Cucumber table format.
-     * @param sqlList the list of {@link Sql queries}.
-     * @param helper the {@link TableTestHelper} instance.
-     */
-    @NotNull
-    protected Map\<String, List\<Parameter\<String, ?>\>> defineParameters(
-        @NotNull final DataTable values,
-        @NotNull final List\<Sql\<String>\> sqlList,
-        @NotNull final TableTestHelper helper)
-    {
-        return helper.defineParameters(values, sqlList);
-    }
-
-    /**
-     * Defines constant rows via cucumber features.
-     * @param values such information.
-     */
-    @SuppressWarnings("unused")
-    @And("^the following contents:$")
-    public void defineRows(@NotNull final DataTable values)
-    {
-        setRows(defineRows(values, getTables(), TableTestHelper.getInstance()));
-    }
-
-    /**
-     * Retrieves the list of {@link Row}s from a Cucumber table.
-     * @param values the Cucumber table.
-     * @param tables the tables.
-     * @param helper the {@link TableTestHelper} instance.
-     * @return the list of rows.
-     */
-    @NotNull
-    protected Map\<String, List\<Row\<String>\>> defineRows(
-        @NotNull final DataTable values,
-        @NotNull final Map\<String, Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables,
-        @NotNull final TableTestHelper helper)
-    {
-        return helper.defineRows(values, tables);
-    }
-
-    /**
      * Checks the generated file compiles.
      * @param outputName the name of the output file.
      */
