@@ -47,7 +47,7 @@ import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplate;
 
 /*
- * Importing JetBrains annotations.
+ * Importing Apache Commons Configuration classes.
  */
 import org.apache.commons.configuration.PropertiesConfiguration;
 
