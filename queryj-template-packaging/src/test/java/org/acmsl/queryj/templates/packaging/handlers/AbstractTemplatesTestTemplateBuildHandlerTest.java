@@ -41,6 +41,9 @@ package org.acmsl.queryj.templates.packaging.handlers;
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
+/*
+ * Importing JetBrains annotations.
+ */
 import org.acmsl.queryj.templates.packaging.AbstractTemplatePackagingTemplate;
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
 import org.acmsl.queryj.templates.packaging.Literals;
