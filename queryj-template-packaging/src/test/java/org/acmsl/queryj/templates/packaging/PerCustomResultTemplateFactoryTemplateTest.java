@@ -73,7 +73,8 @@ public class PerRepositoryTemplateFactoryTemplateTest
 
         Assert.assertEquals(Literals.PER_REPOSITORY_TEMPLATE_FACTORY, instance.getTemplateName());
     }
-}/*
+}
+/*
                         QueryJ Template Packaging
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
