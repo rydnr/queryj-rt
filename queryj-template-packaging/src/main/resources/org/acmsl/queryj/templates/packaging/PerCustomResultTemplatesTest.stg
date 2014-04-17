@@ -341,7 +341,7 @@ public class PerCustomResultTemplatesTest
                 }
                 else
                 {
-                    @Nullable List\<Property\<String\>> properties = properties.get(result.getId());
+                    @Nullable List\<Property\<String\>> properties = propertyMap.get(result.getId());
 
                     if (properties == null)
                     {
