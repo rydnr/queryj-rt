@@ -45,12 +45,7 @@ import org.acmsl.queryj.QueryJCommand;
  * Importing QueryJ Template Packaging classes.
  */
 import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplate;
-
-/*
- * Importing Apache Commons Configuration classes.
- */
 import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplateFactory;
-import org.apache.commons.configuration.PropertiesConfiguration;
 
 /*
  * Importing JetBrains annotations.
