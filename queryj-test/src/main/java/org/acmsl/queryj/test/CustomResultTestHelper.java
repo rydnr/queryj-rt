@@ -127,7 +127,7 @@ public class CustomResultTestHelper
         {
             result =
                 convertToCustomResult(
-                    table,
+                    currentResult,
                     tableEntry.get(Literals.COMMENT),
                     tableEntry.get(PARENT_TABLE),
                     tableEntry.get(STATIC),
