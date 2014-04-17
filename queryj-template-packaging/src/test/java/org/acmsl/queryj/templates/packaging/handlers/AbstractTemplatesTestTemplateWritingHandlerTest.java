@@ -96,6 +96,7 @@ public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
      * Checks retrieveTemplateGenerator retrieves a not-null instance.
      * Redundant check since it's annotated with @NotNull.
      */
+    @SuppressWarnings("unused")
     @Test
     public void retrieveTemplateGenerator_works()
     {
