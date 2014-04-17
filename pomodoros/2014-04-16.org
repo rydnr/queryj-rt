@@ -51,12 +51,12 @@
 **** DONE #477
 *** PerxxxTemplatesTest.stg
 **** DONE #474
-**** TODO #475
+**** DONE #475
 **** TODO #476
 **** TODO #477
 *** PerxxxTemplatesTest.stg.def
 **** DONE #474
-**** TODO #475
+**** DONE #475
 **** TODO #476
 **** TODO #477
 *** PerXXXTemplateWritingHandler.stg
