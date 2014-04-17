@@ -216,8 +216,9 @@ public class CustomResultTestHelper
     protected Property<String> convertToProperty(
         @NotNull final String name,
         @NotNull final String columnName,
-
-        @NotNull final String type)
+        final int index,
+        @NotNull final String type,
+        )
     {
         return new PropertyElement<>(name, type);
     }
