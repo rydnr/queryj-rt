@@ -242,7 +242,7 @@ public class PerCustomResultTemplatesTest
     @Given("^Given the following properties:$")
     public void defineInputProperties(@NotNull final DataTable resultInfo)
     {
-        defineInputResults(resultInfo, getResults(), CustomResultTestHelper.getInstance());
+        defineInputProperties(resultInfo, getResults(), CustomResultTestHelper.getInstance());
     }
 
     /**
