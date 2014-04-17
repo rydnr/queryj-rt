@@ -90,6 +90,7 @@ public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
                  PerRepositoryTemplatesTestTemplate,
                     PerRepositoryTemplatesTestTemplateFactory>
 {
+
     /**
      * Tests whether retrieveTemplateName() works.
      */
