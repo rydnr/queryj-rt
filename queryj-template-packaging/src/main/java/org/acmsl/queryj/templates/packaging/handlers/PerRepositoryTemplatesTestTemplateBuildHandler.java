@@ -134,7 +134,7 @@ public class PerRepositoryTemplatesTestTemplateBuildHandler
     @Override
     protected String retrieveTemplateName(@NotNull final QueryJCommand parameters)
     {
-        return Literals.PER_FOREIGN_KEY_TEMPLATES_TEST;
+        return Literals.PER_REPOSITORY_TEMPLATES_TEST;
     }
 
     /**
