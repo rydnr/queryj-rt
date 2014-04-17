@@ -23,7 +23,7 @@
 
  ******************************************************************************
  *
- * Filename: PerForeignKeyTemplateWritingHandlerTemplate.java
+ * Filename: PerRepositoryTemplateWritingHandlerTemplate.java
  *
  * Author: Jose San Leandro
  *
@@ -54,7 +54,7 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2014/04/17 12:31
  */
 @ThreadSafe
-public class PerForeignKeyTemplateWritingHandlerTemplate<C extends TemplatePackagingContext>
+public class PerRepositoryTemplateWritingHandlerTemplate<C extends TemplatePackagingContext>
     extends TemplateWritingHandlerTemplate<C>
 {
     /**
@@ -66,14 +66,14 @@ public class PerForeignKeyTemplateWritingHandlerTemplate<C extends TemplatePacka
      * Creates a new instance using given context.
      * @param context the context.
      */
-    public PerForeignKeyTemplateWritingHandlerTemplate(@NotNull final C context)
+    public PerRepositoryTemplateWritingHandlerTemplate(@NotNull final C context)
     {
         super(context);
     }
 
     /**
      * Retrieves the template name.
-     * @return "PerForeignKeyTemplateWritingHandler".
+     * @return "PerRepositoryTemplateWritingHandler".
      */
     @NotNull
     @Override
