@@ -78,6 +78,6 @@ public class PerSqlTemplateFactoryTemplate<C extends TemplatePackagingContext>
     @Override
     public String getTemplateName()
     {
-        return Literals.PER_REPOSITORY_TEMPLATE_FACTORY;
+        return Literals.PER_SQL_TEMPLATE_FACTORY;
     }
 }
