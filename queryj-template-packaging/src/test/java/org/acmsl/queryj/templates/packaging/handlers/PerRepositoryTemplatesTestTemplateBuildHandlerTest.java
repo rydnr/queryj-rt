@@ -98,6 +98,7 @@ public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
      * @return such mock.
      */
     @Override
+    @NotNull
     protected PerRepositoryTemplatesTestTemplate createTemplateMock()
     {
         return EasyMock.createNiceMock(PerRepositoryTemplatesTestTemplate.class);
