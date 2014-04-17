@@ -38,6 +38,10 @@ package org.acmsl.queryj.templates.packaging.handlers;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
+import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplate;
+import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -53,5 +57,43 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class PerCustomResultTemplatesTestTemplateWritingHandlerTest
+    extends AbstractTemplatesTestTemplateWritingHandlerTest<
+    PerRepositoryTemplatesTestTemplateWritingHandler,
+    PerRepositoryTemplatesTestTemplateBuildHandler,
+    PerRepositoryTemplatesTestTemplate,
+    PerRepositoryTemplatesTestTemplateFactory,
+    GlobalTemplateContext>
 {
+    /**
+     * Creates a new writing handler instance.
+     * @return such instance.
+     */
+    @NotNull
+    @Override
+    protected PerRepositoryTemplatesTestTemplateBuildHandler createBuildHandlerInstance()
+    {
+        return new PerRepositoryTemplatesTestTemplateBuildHandler();
+    }
+
+    /**
+     * Creates a new writing handler instance.
+     * @return such instance.
+     */
+    @NotNull
+    @Override
+    protected PerRepositoryTemplatesTestTemplateWritingHandler createInstance()
+    {
+        return new PerRepositoryTemplatesTestTemplateWritingHandler();
+    }
+
+    /**
+     * Retrieves a new template mock.
+     * @return such mock.
+     */
+    @NotNull
+    @Override
+    protected PerRepositoryTemplatesTestTemplate createTemplateMock()
+    {
+        return EasyMock.createNiceMock(PerRepositoryTemplatesTestTemplate.class);
+    }
 }
