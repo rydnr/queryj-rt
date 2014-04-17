@@ -461,7 +461,7 @@ public abstract class AbstractTemplatesTest<G, F>
 
     /**
      * Specifies the properties.
-     * @param results the properties.
+     * @param properties the properties.
      */
     @SuppressWarnings("unused")
     protected void setProperties(@NotNull final Map<String, Property<String>> properties)
