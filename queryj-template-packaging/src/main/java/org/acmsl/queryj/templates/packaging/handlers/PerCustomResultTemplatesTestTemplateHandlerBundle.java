@@ -23,11 +23,11 @@
 
  ******************************************************************************
  *
- * Filename: PerRepositoryTemplatesTestTemplateHandlerBundle.java
+ * Filename: PerCustomResultTemplatesTestTemplateHandlerBundle.java
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Handler bundle for PerRepositoryTemplatesTestTemplates.
+ * Description: Handler bundle for PerCustomResultTemplatesTestTemplates.
  *
  * Date: 2014/04/17
  * Time: 10:22
@@ -46,25 +46,25 @@ import org.acmsl.queryj.api.handlers.TemplateHandlerBundle;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
- * Handler bundle for {@link org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplate}s.
+ * Handler bundle for {@link org.acmsl.queryj.templates.packaging.PerCustomResultTemplatesTestTemplate}s.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/17 10:22
  */
 @ThreadSafe
-public class PerRepositoryTemplatesTestTemplateHandlerBundle
+public class PerCustomResultTemplatesTestTemplateHandlerBundle
     extends TemplateHandlerBundle<
-    PerRepositoryTemplatesTestTemplateBuildHandler, PerRepositoryTemplatesTestTemplateWritingHandler>
+    PerCustomResultTemplatesTestTemplateBuildHandler, PerCustomResultTemplatesTestTemplateWritingHandler>
 {
     /**
      * Builds a bundle consisting of
-     * {@link PerRepositoryTemplatesTestTemplateBuildHandler}
-     * and {@link PerRepositoryTemplatesTestTemplateWritingHandler}.
+     * {@link PerCustomResultTemplatesTestTemplateBuildHandler}
+     * and {@link PerCustomResultTemplatesTestTemplateWritingHandler}.
      */
-    public PerRepositoryTemplatesTestTemplateHandlerBundle()
+    public PerCustomResultTemplatesTestTemplateHandlerBundle()
     {
         super(
-            new PerRepositoryTemplatesTestTemplateBuildHandler(),
-            new PerRepositoryTemplatesTestTemplateWritingHandler());
+            new PerCustomResultTemplatesTestTemplateBuildHandler(),
+            new PerCustomResultTemplatesTestTemplateWritingHandler());
     }
 }
