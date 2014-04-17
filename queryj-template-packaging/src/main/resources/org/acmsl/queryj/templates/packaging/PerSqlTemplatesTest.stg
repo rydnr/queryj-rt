@@ -228,7 +228,7 @@ public class PerSqlTemplatesTest
     protected void defineInputResults(
         @NotNull final DataTable resultInfo,
         @NotNull final Map\<String, Sql\<String\>> results,
-        @NotNull final SqlTestHelper helper)
+        @NotNull final CustomResultTestHelper helper)
     {
         helper.defineInputResults(resultInfo, results);
     }
