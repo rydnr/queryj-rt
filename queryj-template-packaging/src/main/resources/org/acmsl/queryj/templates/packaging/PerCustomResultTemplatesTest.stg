@@ -239,8 +239,8 @@ public class PerCustomResultTemplatesTest
      * @param resultInfo the information about the properties.
      */
     @SuppressWarnings("unused")
-    @Given("^Given the following custom result:$")
-    public void defineInputResults(@NotNull final DataTable resultInfo)
+    @Given("^Given the following properties:$")
+    public void defineInputProperties(@NotNull final DataTable resultInfo)
     {
         defineInputResults(resultInfo, getResults(), CustomResultTestHelper.getInstance());
     }
