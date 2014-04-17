@@ -233,6 +233,8 @@ public class CustomResultTestHelper
         }
         catch (@NotNull final NumberFormatException invalidIndex)
         {
+
+        }
         return new PropertyElement<>(id, columnName, index, type, nullable);
     }
 }
