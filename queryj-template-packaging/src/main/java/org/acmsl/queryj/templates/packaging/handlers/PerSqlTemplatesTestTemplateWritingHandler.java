@@ -112,7 +112,7 @@ public class PerSqlTemplatesTestTemplateWritingHandler
 
         if (aux == null)
         {
-            throw new MissingTemplatesException("per-repository-templates-test");
+            throw new MissingTemplatesException("per-sql-templates-test");
         }
         else
         {
