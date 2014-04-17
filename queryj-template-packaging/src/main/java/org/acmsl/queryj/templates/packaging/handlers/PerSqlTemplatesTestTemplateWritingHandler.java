@@ -23,11 +23,11 @@
 
  ******************************************************************************
  *
- * Filename: PerRepositoryTemplatesTestTemplateWritingHandler.java
+ * Filename: PerSqlTemplatesTestTemplateWritingHandler.java
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Writing handler for PerRepositoryTemplatesTestTemplates.
+ * Description: Writing handler for PerSqlTemplatesTestTemplates.
  *
  * Date: 2014/04/17
  * Time: 10:15
@@ -45,7 +45,7 @@ import org.acmsl.queryj.QueryJCommandWrapper;
  * Importing QueryJ Template Packaging classes.
  */
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
-import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplate;
+import org.acmsl.queryj.templates.packaging.PerSqlTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplateGenerator;
 import org.acmsl.queryj.templates.packaging.exceptions.MissingTemplatesException;
 
@@ -66,22 +66,22 @@ import org.checkthread.annotations.ThreadSafe;
 import java.util.List;
 
 /**
- * Writing handler for {@link PerRepositoryTemplatesTestTemplate}s.
+ * Writing handler for {@link PerSqlTemplatesTestTemplate}s.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/17 10:15
  */
 @ThreadSafe
-public class PerRepositoryTemplatesTestTemplateWritingHandler
+public class PerSqlTemplatesTestTemplateWritingHandler
     extends TemplatePackagingTestWritingHandler
-                <PerRepositoryTemplatesTestTemplate,
+                <PerSqlTemplatesTestTemplate,
                     GlobalTemplateContext,
-                    TemplatePackagingTemplateGenerator<PerRepositoryTemplatesTestTemplate, GlobalTemplateContext>>
+                    TemplatePackagingTemplateGenerator<PerSqlTemplatesTestTemplate, GlobalTemplateContext>>
 {
     /**
-     * Creates a new writing handler for {@link PerRepositoryTemplatesTestTemplate templates}.
+     * Creates a new writing handler for {@link PerSqlTemplatesTestTemplate templates}.
      */
-    public PerRepositoryTemplatesTestTemplateWritingHandler() {}
+    public PerSqlTemplatesTestTemplateWritingHandler() {}
 
     /**
      * Retrieves the template generator.
@@ -91,7 +91,7 @@ public class PerRepositoryTemplatesTestTemplateWritingHandler
      */
     @NotNull
     @Override
-    public TemplatePackagingTemplateGenerator<PerRepositoryTemplatesTestTemplate, GlobalTemplateContext> retrieveTemplateGenerator(
+    public TemplatePackagingTemplateGenerator<PerSqlTemplatesTestTemplate, GlobalTemplateContext> retrieveTemplateGenerator(
         final boolean caching, final int threadCount)
     {
         return new TemplatePackagingTemplateGenerator<>(caching, threadCount);
@@ -102,13 +102,13 @@ public class PerRepositoryTemplatesTestTemplateWritingHandler
      */
     @NotNull
     @Override
-    public List<PerRepositoryTemplatesTestTemplate> retrieveTemplates(@NotNull final QueryJCommand parameters)
+    public List<PerSqlTemplatesTestTemplate> retrieveTemplates(@NotNull final QueryJCommand parameters)
     {
-        @NotNull final List<PerRepositoryTemplatesTestTemplate> result;
+        @NotNull final List<PerSqlTemplatesTestTemplate> result;
 
-        @Nullable final List<PerRepositoryTemplatesTestTemplate> aux =
-            new QueryJCommandWrapper<PerRepositoryTemplatesTestTemplate>(parameters)
-                .getListSetting(PerRepositoryTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
+        @Nullable final List<PerSqlTemplatesTestTemplate> aux =
+            new QueryJCommandWrapper<PerSqlTemplatesTestTemplate>(parameters)
+                .getListSetting(PerSqlTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
 
         if (aux == null)
         {
