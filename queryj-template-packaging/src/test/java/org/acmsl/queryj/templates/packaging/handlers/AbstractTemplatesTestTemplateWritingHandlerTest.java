@@ -100,7 +100,7 @@ public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
         @NotNull final QueryJCommand command =
             new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
-        @NotNull final PerTableTemplatesTestTemplate template =
+        @NotNull final T template =
             EasyMock.createNiceMock(PerTableTemplatesTestTemplate.class);
 
         buildHandler.storeTemplate(template, command);
