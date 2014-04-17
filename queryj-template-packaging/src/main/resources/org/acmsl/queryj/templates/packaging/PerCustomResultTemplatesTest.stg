@@ -226,7 +226,7 @@ public class PerCustomResultTemplatesTest
      * @param resultInfo the information about the results.
      */
     protected void defineInputResults(
-        @NotNull final Dataresult resultInfo,
+        @NotNull final DataTable resultInfo,
         @NotNull final Map\<String, result\<String, Attribute\<String>, List\<Attribute\<String\>>\>> results,
         @NotNull final CustomResultTestHelper helper)
     {
