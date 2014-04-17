@@ -36,7 +36,7 @@
 package org.acmsl.queryj.templates.packaging.handlers;
 
 /*
- * Importing JetBrains annotations.
+ * Importing QueryJ Template Packaging
  */
 import org.acmsl.queryj.templates.packaging.Literals;
 import org.acmsl.queryj.templates.packaging.PerCustomResultTemplatesTestTemplate;
