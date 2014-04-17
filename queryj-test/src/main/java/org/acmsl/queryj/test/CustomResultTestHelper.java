@@ -129,7 +129,6 @@ public class CustomResultTestHelper
             result =
                 convertToCustomResult(
                     currentResult,
-                    tableEntry.get("dao"),
                     tableEntry.get("type"));
         }
 
