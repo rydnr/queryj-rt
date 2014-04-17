@@ -198,6 +198,7 @@ public class CustomResultTestHelper
                 convertToProperty(
                     name,
                     tableEntry.get("columnName"),
+                    tableEntry.get("index"),
                     tableEntry.get("type"));
         }
 
