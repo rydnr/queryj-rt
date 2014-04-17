@@ -197,6 +197,7 @@ public class CustomResultTestHelper
             result =
                 convertToProperty(
                     name,
+                    tableEntry.get("columnName"),
                     tableEntry.get("type"));
         }
 
