@@ -42,7 +42,7 @@ import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 
 /*
- * Importing JetBrains annotations.
+ * Importing QueryJ Template Packaging.
  */
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
 import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplate;
