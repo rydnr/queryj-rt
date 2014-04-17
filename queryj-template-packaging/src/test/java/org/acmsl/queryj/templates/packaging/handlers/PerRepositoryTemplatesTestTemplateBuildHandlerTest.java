@@ -85,7 +85,7 @@ import java.util.List;
  */
 @RunWith(JUnit4.class)
 public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
-    extends AbstractTemplatesTestTemplateBuildHandlerTest<PerRepositoryTemplatesTestTemplateBuildHandler, PerRepositoryTemplatesTestTemplate
+    extends AbstractTemplatesTestTemplateBuildHandlerTest<PerRepositoryTemplatesTestTemplateBuildHandler, PerRepositoryTemplatesTestTemplate, PerRepositoryTemplatesTestTemplateFactory>
 >
 {
     /**
