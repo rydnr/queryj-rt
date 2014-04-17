@@ -70,6 +70,6 @@ public class PerCustomResultTemplateFactoryTemplateTest
         @NotNull final PerCustomResultTemplateFactoryTemplate instance =
             new PerCustomResultTemplateFactoryTemplate<>(context);
 
-        Assert.assertEquals(Literals.PER_REPOSITORY_TEMPLATE_FACTORY, instance.getTemplateName());
+        Assert.assertEquals(Literals.PER_CUSTOM_RESULT_TEMPLATE_FACTORY, instance.getTemplateName());
     }
 }
