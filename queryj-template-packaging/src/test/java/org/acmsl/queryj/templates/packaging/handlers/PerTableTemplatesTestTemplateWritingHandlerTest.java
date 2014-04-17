@@ -60,6 +60,7 @@ public class PerTableTemplatesTestTemplateWritingHandlerTest
 {
     /**
      * Checks retrieveTemplateGenerator retrieves a not-null instance.
+     * Trivial check since it's annotated with @NotNull.
      */
     @Test
     public void retrieveTemplateGenerator_works()
