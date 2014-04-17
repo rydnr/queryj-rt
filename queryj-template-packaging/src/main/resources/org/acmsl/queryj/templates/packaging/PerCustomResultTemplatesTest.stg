@@ -29,20 +29,20 @@
 //
 //***************************************************************************
 //
-// Filename: PerRepositoryTemplatesTest.stg
+// Filename: PerCustomResultTemplatesTest.stg
 //
 // Author: Jose San Leandro Armendariz
 //
-// Description: Defines the rules to generate PerRepositoryTemplatesTest
+// Description: Defines the rules to generate PerCustomResultTemplatesTest
 //              implementations.
 //
-group PerRepositoryTemplatesTest;
+group PerCustomResultTemplatesTest;
 
 import "common.stg"
 
 source(C) ::= <<
 <!
-  Generates PerRepositoryTemplatesTest implementations.
+  Generates PerCustomResultTemplatesTest implementations.
 !>
 <if(C.header)>
 <C.header>
@@ -52,7 +52,7 @@ source(C) ::= <<
   [
     description()
   ],
-  template="org/acmsl/queryj/templates/PerRepositoryTemplatesTest.stg",
+  template="org/acmsl/queryj/templates/PerCustomResultTemplatesTest.stg",
   C=C)><endif>
 
 <package_declaration(packageName="cucumber.templates")>
@@ -64,10 +64,10 @@ source(C) ::= <<
 import org.acmsl.queryj.api.AbstractTemplate;
 import org.acmsl.queryj.api.exceptions.DevelopmentModeException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
-import org.acmsl.queryj.api.PerRepositoryTemplate;
-import org.acmsl.queryj.api.PerRepositoryTemplateContext;
-import org.acmsl.queryj.api.PerRepositoryTemplateFactory;
-import org.acmsl.queryj.api.PerRepositoryTemplateGenerator;
+import org.acmsl.queryj.api.PerCustomResultTemplate;
+import org.acmsl.queryj.api.PerCustomResultTemplateContext;
+import org.acmsl.queryj.api.PerCustomResultTemplateFactory;
+import org.acmsl.queryj.api.PerCustomResultTemplateGenerator;
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.handlers.CustomSqlProviderRetrievalHandler;
@@ -188,24 +188,24 @@ class(defs, C) ::= <<
 /**
  * <description()>
 <class_common_javadoc(
-  template="org/acmsl/queryj/dao/PerRepositoryTemplatesTest.stg",
+  template="org/acmsl/queryj/dao/PerCustomResultTemplatesTest.stg",
   generation_timestamps_enabled=C.generation_timestamps_enabled,
   timestamp=C.timestamp,
   version=C.version)>
  */
-public class PerRepositoryTemplatesTest
+public class PerCustomResultTemplatesTest
     extends AbstractTemplatesTest\<
-                PerRepositoryTemplateGenerator\<? extends PerRepositoryTemplate\<PerRepositoryTemplateContext>, PerRepositoryTemplateContext>,
-                PerRepositoryTemplateFactory\<? extends PerRepositoryTemplate\<PerRepositoryTemplateContext>, PerRepositoryTemplateContext\>>
+                PerCustomResultTemplateGenerator\<? extends PerCustomResultTemplate\<PerCustomResultTemplateContext>, PerCustomResultTemplateContext>,
+                PerCustomResultTemplateFactory\<? extends PerCustomResultTemplate\<PerCustomResultTemplateContext>, PerCustomResultTemplateContext\>>
 {
     /**
      * Creates an instance.
      */
-    public PerRepositoryTemplatesTest()
+    public PerCustomResultTemplatesTest()
     {
         super();
 
-        <defs:{ d | <if(!d.disabled)><if(d.type.perRepository)><generator_mapping(def=d)><endif><endif>}; separator="\n">
+        <defs:{ d | <if(!d.disabled)><if(d.type.perCustomResult)><generator_mapping(def=d)><endif><endif>}; separator="\n">
     }
 
     /**
@@ -217,7 +217,7 @@ public class PerRepositoryTemplatesTest
     @Given("^Given the repository whose name is \<repository>, composed of:$")
     public void defineInputTables(@NotNull final DataTable tableInfo)
     {
-        defineInputTables(tableInfo, getTables(), RepositoryTestHelper.getInstance());
+        defineInputTables(tableInfo, getTables(), CustomResultTestHelper.getInstance());
     }
 
     /**
@@ -228,7 +228,7 @@ public class PerRepositoryTemplatesTest
     protected void defineInputTables(
         @NotNull final DataTable tableInfo,
         @NotNull final Map\<String, Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables,
-        @NotNull final RepositoryTestHelper helper)
+        @NotNull final CustomResultTestHelper helper)
     {
         helper.defineInputTables(tableInfo, tables);
     }
@@ -271,8 +271,8 @@ public class PerRepositoryTemplatesTest
         @NotNull final Map\<String, File> outputFiles,
         @NotNull final CustomSqlProvider sqlProvider)
     {
-        @Nullable final PerRepositoryTemplateGenerator\<PerRepositoryTemplate\<PerRepositoryTemplateContext>, PerRepositoryTemplateContext> generator =
-            (PerRepositoryTemplateGenerator\<PerRepositoryTemplate\<PerRepositoryTemplateContext>, PerRepositoryTemplateContext>) retrieveTemplateGenerator(
+        @Nullable final PerCustomResultTemplateGenerator\<PerCustomResultTemplate\<PerCustomResultTemplateContext>, PerCustomResultTemplateContext> generator =
+            (PerCustomResultTemplateGenerator\<PerCustomResultTemplate\<PerCustomResultTemplateContext>, PerCustomResultTemplateContext>) retrieveTemplateGenerator(
                 templateName);
 
         Assert.assertNotNull("No template generator found for " + templateName, generator);
@@ -331,7 +331,7 @@ public class PerRepositoryTemplatesTest
                 new QueryJCommandWrapper\<MetadataManager>(t_Command).setSetting(
                     DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, metadataManager);
 
-                @Nullable final PerRepositoryTemplateFactory\<? extends PerRepositoryTemplate\<PerRepositoryTemplateContext>, PerRepositoryTemplateContext> templateFactory =
+                @Nullable final PerCustomResultTemplateFactory\<? extends PerCustomResultTemplate\<PerCustomResultTemplateContext>, PerCustomResultTemplateContext> templateFactory =
                     retrieveTemplateFactory(templateName);
 
                 Assert.assertNotNull("No template factory found for " + templateName, templateFactory);
@@ -339,7 +339,7 @@ public class PerRepositoryTemplatesTest
                 @NotNull final String packageName =
                     resolvePackage(PACKAGE_MAPPINGS.get(templateName), table.getName(), resolveEngine(engine));
 
-                @Nullable final PerRepositoryTemplate\<PerRepositoryTemplateContext> template =
+                @Nullable final PerCustomResultTemplate\<PerCustomResultTemplateContext> template =
                     templateFactory.createTemplate(
                         t_Command,
                         decoratorFactory,
@@ -378,7 +378,7 @@ public class PerRepositoryTemplatesTest
                     Assert.fail("Cannot create folder: " + outputDir.getAbsolutePath());
                 }
 
-                UniqueLogFactory.initializeInstance(LogFactory.getLog(PerRepositoryTemplatesTest.class));
+                UniqueLogFactory.initializeInstance(LogFactory.getLog(PerCustomResultTemplatesTest.class));
 
                 ((AbstractTemplate) template).setDebugMode(true);
 
@@ -442,7 +442,7 @@ public class PerRepositoryTemplatesTest
     @NotNull
     @Override
     protected DecoratorFactory retrieveDecoratorFactory(
-        @NotNull final PerRepositoryTemplateGenerator\<? extends PerRepositoryTemplate\<PerRepositoryTemplateContext>, PerRepositoryTemplateContext> generator)
+        @NotNull final PerCustomResultTemplateGenerator\<? extends PerCustomResultTemplate\<PerCustomResultTemplateContext>, PerCustomResultTemplateContext> generator)
     {
         return generator.getDecoratorFactory();
     }
