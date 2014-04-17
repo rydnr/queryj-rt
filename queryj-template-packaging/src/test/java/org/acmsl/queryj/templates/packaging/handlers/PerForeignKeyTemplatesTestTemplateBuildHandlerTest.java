@@ -86,8 +86,8 @@ import java.util.List;
 public class PerForeignKeyTemplatesTestTemplateBuildHandlerTest
     extends AbstractTemplatesTestTemplateBuildHandlerTest<
         PerForeignKeyTemplatesTestTemplateBuildHandler,
-    PerForeignKeyTemplatesTestTemplate,
-    PerForeignKeyTemplatesTestTemplateFactory>
+        PerForeignKeyTemplatesTestTemplate,
+        PerForeignKeyTemplatesTestTemplateFactory>
 {
     /**
      * Tests whether retrieveTemplateName() works.
