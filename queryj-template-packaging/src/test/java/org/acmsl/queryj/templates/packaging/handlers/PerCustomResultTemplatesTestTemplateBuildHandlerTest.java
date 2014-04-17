@@ -61,7 +61,6 @@ public class PerCustomResultTemplatesTestTemplateBuildHandlerTest
                 PerCustomResultTemplatesTestTemplate,
     PerCustomResultTemplatesTestTemplateFactory>
 {
-
     /**
      * Creates a new build handler instance.
      * @return such new instance.
