@@ -275,7 +275,7 @@ public class PerCustomResultTemplatesTest
             template,
             engine,
             getResults(),
-            getRows(),
+            getProperties(),
             getOutputFiles(),
             retrieveCustomSqlProvider(getSqlList(), getParameters()));
     }
