@@ -159,7 +159,7 @@ public class CustomResultTestHelper
      * Defines the input properties based on the information provided by the
      * feature.
      * @param tableInfo the information about the properties.
-     * @param
+     * @param results the custom results.
      * @param properties the properties collection.
      */
     @SuppressWarnings("unused")
