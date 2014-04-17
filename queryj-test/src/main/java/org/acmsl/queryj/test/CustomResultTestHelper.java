@@ -169,7 +169,7 @@ public class CustomResultTestHelper
 
         for (@NotNull final Map<String, String> tableEntry: tableEntries)
         {
-            result = convertToCustomResult(tableEntry);
+            result = convertToProperty(tableEntry);
 
             if (result != null)
             {
