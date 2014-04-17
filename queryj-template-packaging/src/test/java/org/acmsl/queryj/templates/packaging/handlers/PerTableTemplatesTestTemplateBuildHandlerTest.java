@@ -115,6 +115,7 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
      * Checks whether retrieveTemplateFactory() retrieves
      * {@link PerTableTemplatesTestTemplateFactory}.
      */
+    @Override
     @Test
     public void retrieveTemplateFactory_retrieves_the_correct_factory()
     {
