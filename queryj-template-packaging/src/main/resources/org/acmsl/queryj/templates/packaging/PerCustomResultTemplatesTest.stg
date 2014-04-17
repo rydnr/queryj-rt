@@ -74,7 +74,7 @@ import org.acmsl.queryj.customsql.handlers.CustomSqlProviderRetrievalHandler;
 import org.acmsl.queryj.customsql.handlers.CustomSqlValidationHandler;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.RetrieveQueryHandler;
 import org.acmsl.queryj.customsql.Parameter;
-import org.acmsl.queryj.customsql.Sql;
+import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.metadata.DecoratedString;
 import org.acmsl.queryj.metadata.DecoratorFactory;
