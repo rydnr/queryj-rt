@@ -223,6 +223,7 @@ public class CustomResultTestHelper
         @NotNull final String type,
         final boolean nullable)
     {
+        @Nullable final
         return new PropertyElement<>(id, columnName, index, type, nullable);
     }
 }
