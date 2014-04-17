@@ -345,7 +345,7 @@ public class PerCustomResultTemplatesTest
 
                     if (properties == null)
                     {
-                        resultRows = new ArrayList\<>(0);
+                        properties = new ArrayList\<>(0);
                     }
 
                     @NotNull final MetadataManager metadataManager =
