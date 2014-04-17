@@ -41,6 +41,10 @@ package org.acmsl.queryj.templates.packaging.handlers;
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
+
+/*
+ * Importing QueryJ Template Packaging classes.
+ */
 import org.acmsl.queryj.templates.packaging.Literals;
 import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory;
