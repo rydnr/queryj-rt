@@ -41,6 +41,7 @@ package org.acmsl.queryj.templates.packaging.handlers;
 import org.acmsl.queryj.templates.packaging.Literals;
 import org.acmsl.queryj.templates.packaging.PerCustomResultTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.PerCustomResultTemplatesTestTemplateFactory;
+import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory;
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
@@ -93,7 +94,8 @@ public class PerCustomResultTemplatesTestTemplateBuildHandlerTest
     @Test
     public void retrieveTemplateFactory_retrieves_the_correct_factory()
     {
-        //To change body of implemented methods use File | Settings | File Templates.
+        retrieveTemplateFactory_retrieves_the_correct_factory(
+            PerRepositoryTemplatesTestTemplateFactory.getInstance());
     }
 
     /**
