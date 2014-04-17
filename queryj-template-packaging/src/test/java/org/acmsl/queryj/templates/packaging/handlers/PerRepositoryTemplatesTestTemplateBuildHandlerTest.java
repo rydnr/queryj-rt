@@ -90,6 +90,27 @@ public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
                  PerRepositoryTemplatesTestTemplate,
                     PerRepositoryTemplatesTestTemplateFactory>
 {
+    /**
+     * Creates a new build handler instance.
+     *
+     * @return such new instance.
+     */
+    @Override
+    protected PerRepositoryTemplatesTestTemplateBuildHandler createInstance()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
+     * Retrieves a new template mock.
+     *
+     * @return such mock.
+     */
+    @Override
+    protected PerRepositoryTemplatesTestTemplate createTemplateMock()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
 
     /**
      * Tests whether retrieveTemplateName() works.
