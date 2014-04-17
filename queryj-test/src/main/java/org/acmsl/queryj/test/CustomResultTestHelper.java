@@ -219,7 +219,7 @@ public class CustomResultTestHelper
     protected Property<String> convertToProperty(
         @NotNull final String id,
         @NotNull final String columnName,
-        final int index,
+        @NotNull int index,
         @NotNull final String type,
         final boolean nullable)
     {
