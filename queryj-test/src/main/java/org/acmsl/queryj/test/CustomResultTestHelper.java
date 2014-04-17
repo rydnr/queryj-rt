@@ -159,7 +159,7 @@ public class CustomResultTestHelper
      * @param tables the table collection.
      */
     @SuppressWarnings("unused")
-    public void defineInputResults(
+    public void defineInputProperties(
         @NotNull final DataTable tableInfo,
         @NotNull final Map<String, Result<String>> tables)
     {
