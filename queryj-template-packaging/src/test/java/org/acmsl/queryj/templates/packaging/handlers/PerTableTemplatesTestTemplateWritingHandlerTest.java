@@ -101,7 +101,7 @@ public class PerTableTemplatesTestTemplateWritingHandlerTest
     @Override
     protected PerTableTemplatesTestTemplateWritingHandler createInstance()
     {
-        new PerTableTemplatesTestTemplateWritingHandler();
+        return new PerTableTemplatesTestTemplateWritingHandler();
     }
 
     /**
