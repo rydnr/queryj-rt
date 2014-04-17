@@ -94,8 +94,7 @@ public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
     {
         @NotNull final WH instance = createInstance();
 
-        @NotNull final BH buildHandler = createBuildHandlerInstance()
-            new PerTableTemplatesTestTemplateBuildHandler();
+        @NotNull final BH buildHandler = createBuildHandlerInstance();
 
         @NotNull final QueryJCommand command =
             new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
