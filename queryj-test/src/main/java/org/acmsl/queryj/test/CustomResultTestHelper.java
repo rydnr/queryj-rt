@@ -175,7 +175,7 @@ public class CustomResultTestHelper
 
             if (property != null)
             {
-                tables.put(property.getId(), property);
+                properties.put(property.getId(), property);
             }
         }
     }
