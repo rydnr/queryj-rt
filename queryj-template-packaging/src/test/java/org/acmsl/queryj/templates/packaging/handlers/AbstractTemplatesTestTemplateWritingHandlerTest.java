@@ -50,6 +50,10 @@ import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplate;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplateFactory;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplateGenerator;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.apache.commons.configuration.PropertiesConfiguration;
 
 /*
