@@ -151,6 +151,13 @@ public abstract class AbstractTemplatesTestTemplateBuildHandlerTest
     }
 
     /**
+     * Checks whether retrieveTemplateFactory() retrieves
+     * {@link org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory}.
+     */
+    @Test
+    public abstract void retrieveTemplateFactory_retrieves_the_correct_factory();
+
+    /**
      * Checks whether retrieveTemplateFactory() retrieves a &lt;TF&gt; instance.
      * @param factory the expected factory.
      */
