@@ -36,7 +36,7 @@
 package org.acmsl.queryj.test;
 
 /*
- * Importing JetBrains annotations.
+ * Importing Cucumber classes.
  */
 import cucumber.api.DataTable;
 
