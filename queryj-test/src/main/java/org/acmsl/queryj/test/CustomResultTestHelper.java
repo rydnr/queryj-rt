@@ -106,7 +106,7 @@ public class CustomResultTestHelper
     @SuppressWarnings("unused")
     public void defineInputResults(
         @NotNull final DataTable tableInfo,
-        @NotNull final Map<String, Result<String>> tables)
+        @NotNull final Map<String, Result<String>> results)
     {
         @NotNull final List<Map<String, String>> tableEntries = tableInfo.asMaps();
 
