@@ -40,6 +40,7 @@ package org.acmsl.queryj.templates.packaging.handlers;
  */
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
 import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplateGenerator;
@@ -112,6 +113,7 @@ public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
     @SuppressWarnings("unused")
     @Test
     public void retrieveTemplates_finds_the_templates()
+        throws QueryJBuildException
     {
         @NotNull final WH instance = createInstance();
 
