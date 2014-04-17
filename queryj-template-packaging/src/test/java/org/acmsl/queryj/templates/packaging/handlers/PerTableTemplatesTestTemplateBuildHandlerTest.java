@@ -138,7 +138,8 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
     @Test
     public void retrieveTemplateFactory_retrieves_the_correct_factory()
     {
-        retrieveTemplateFactory_retrieves_the_correct_factory(PerTableTemplatesTestTemplateFactory.getInstance());
+        retrieveTemplateFactory_retrieves_the_correct_factory(
+            PerTableTemplatesTestTemplateFactory.getInstance());
     }
 
     /**
