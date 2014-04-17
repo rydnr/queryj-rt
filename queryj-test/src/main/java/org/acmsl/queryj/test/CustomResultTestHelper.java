@@ -229,8 +229,10 @@ public class CustomResultTestHelper
 
         try
         {
-            propertyIndex = Integer.parseInt()
+            propertyIndex = Integer.parseInt(index);
         }
+        catch (@NotNull final NumberFormatException invalidIndex)
+        {
         return new PropertyElement<>(id, columnName, index, type, nullable);
     }
 }
