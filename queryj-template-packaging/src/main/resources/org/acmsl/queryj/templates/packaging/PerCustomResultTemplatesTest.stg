@@ -167,6 +167,7 @@ def_import(d) ::= <<
   Generates the imports for a given TemplateDef.
   @param d the template def.
 !>
+<if(d.type.perCustomResult)>
 import org.acmsl.queryj.templates.<d.name>TemplateFactory;
 import org.acmsl.queryj.templates.<d.name>TemplateGenerator;
 >>
