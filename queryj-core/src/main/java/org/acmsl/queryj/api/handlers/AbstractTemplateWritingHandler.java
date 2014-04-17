@@ -439,7 +439,7 @@ public abstract class AbstractTemplateWritingHandler
      * @return the template.
      */
     @NotNull
-    protected abstract List<T> retrieveTemplates(@NotNull final QueryJCommand parameters)
+    public abstract List<T> retrieveTemplates(@NotNull final QueryJCommand parameters)
         throws QueryJBuildException;
 
     /**
