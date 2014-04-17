@@ -53,6 +53,8 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 /**
  * Tests for {@link PerCustomResultTemplatesTestTemplateBuildHandler}.
@@ -60,7 +62,7 @@ import org.junit.Test;
  * @since 3.0
  * Created: 2014/04/17 08:05
  */
-@ThreadSafe
+@RunWith(JUnit4.class)
 public class PerCustomResultTemplatesTestTemplateBuildHandlerTest
     extends AbstractTemplatesTestTemplateBuildHandlerTest<
                 PerCustomResultTemplatesTestTemplateBuildHandler,
