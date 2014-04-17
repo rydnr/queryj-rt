@@ -46,9 +46,6 @@ package org.acmsl.queryj.templates.packaging.handlers;
 /*
  * Importing QueryJ Core classes.
  */
-import org.acmsl.queryj.api.PerForeignKeyTemplateContext;
-import org.acmsl.queryj.api.handlers.BasePerForeignKeyTemplateWritingHandler;
-import org.acmsl.queryj.metadata.engines.Engine;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 
