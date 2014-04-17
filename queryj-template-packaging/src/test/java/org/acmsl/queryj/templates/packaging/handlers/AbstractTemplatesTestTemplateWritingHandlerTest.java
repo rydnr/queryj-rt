@@ -50,7 +50,7 @@ import org.apache.commons.configuration.PropertiesConfiguration;
 import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing checkthread.org annotations.
+ * Importing JUnit classes.
  */
 import org.junit.Assert;
 import org.junit.Test;
