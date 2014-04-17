@@ -225,7 +225,7 @@ public class PerSqlTemplatesTest
      * feature.
      * @param resultInfo the information about the results.
      * @param results the custom results.
-     * @param
+     * @param helper the {@link CustomResultTestHelper} instance.
      */
     protected void defineInputResults(
         @NotNull final DataTable resultInfo,
