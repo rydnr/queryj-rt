@@ -114,41 +114,4 @@ public class PerTableTemplatesTestTemplateWritingHandlerTest
     {
         return EasyMock.createNiceMock(PerTableTemplatesTestTemplate.class);
     }
-
-    /**
-     * Checks retrieveTemplateGenerator retrieves a not-null instance.
-     * Redundant check since it's annotated with @NotNull.
-     */
-    @Test
-    public void retrieveTemplateGenerator_works()
-    {
-        @NotNull final PerTableTemplatesTestTemplateWritingHandler instance =
-            new PerTableTemplatesTestTemplateWritingHandler();
-
-        Assert.assertNotNull(instance.retrieveTemplateGenerator(false, 1));
-    }
-
-    /**
-     * Checks the templates built by the build handler are later
-     * found by the writing handler.
-     */
-    @Test
-    public void retrieveTemplates_finds_the_templates()
-    {
-        @NotNull final PerTableTemplatesTestTemplateWritingHandler instance =
-            new PerTableTemplatesTestTemplateWritingHandler();
-
-        @NotNull final PerTableTemplatesTestTemplateBuildHandler buildHandler =
-            new PerTableTemplatesTestTemplateBuildHandler();
-
-        @NotNull final QueryJCommand command =
-            new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
-
-        @NotNull final PerTableTemplatesTestTemplate template =
-            EasyMock.createNiceMock(PerTableTemplatesTestTemplate.class);
-
-        buildHandler.storeTemplate(template, command);
-
-        Assert.assertNotNull(instance.retrieveTemplates(command));
-    }
 }
