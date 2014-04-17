@@ -105,7 +105,7 @@ public class PerTableTemplatesFeatureTemplateWritingHandler
      */
     @NotNull
     @Override
-    protected List<PerTableTemplatesFeatureTemplate> retrieveTemplates(@NotNull final QueryJCommand parameters)
+    public List<PerTableTemplatesFeatureTemplate> retrieveTemplates(@NotNull final QueryJCommand parameters)
     {
         @NotNull final List<PerTableTemplatesFeatureTemplate> result;
 
