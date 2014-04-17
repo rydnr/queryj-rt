@@ -234,6 +234,55 @@ public class PerSqlTemplatesTest
     }
 
     /**
+     * Defines SQL sentences via cucumber features.
+     * @param values such information.
+     */
+    @SuppressWarnings("unused")
+    @And("^the following queries:$")
+    public void defineSql(@NotNull final DataTable values)
+    {
+        setSqlList(defineSql(values, TableTestHelper.getInstance()));
+    }
+
+    /**
+     * Retrieves the list of {@link Sql} from a Cucumber table.
+     * @param values the Cucumber table.
+     * @param helper the {@link TableTestHelper} instance.
+     * @return the list of SQL items.
+     */
+    @NotNull
+    protected List\<Sql\<String\>> defineSql(@NotNull final DataTable values, @NotNull final TableTestHelper helper)
+    {
+        return helper.defineSql(values);
+    }
+
+    /**
+     * Defines SQL sentences via cucumber features.
+     * @param values such information.
+     */
+    @SuppressWarnings("unused")
+    @And("^the following query parameters:$")
+    public void defineParameters(@NotNull final DataTable values)
+    {
+        setParameters(defineParameters(values, getSqlList(), TableTestHelper.getInstance()));
+    }
+
+    /**
+     * Defines SQL parameters via cucumber features.
+     * @param values the SQL parameters in Cucumber table format.
+     * @param sqlList the list of {@link Sql queries}.
+     * @param helper the {@link TableTestHelper} instance.
+     */
+    @NotNull
+    protected Map\<String, List\<Parameter\<String, ?>\>> defineParameters(
+        @NotNull final DataTable values,
+        @NotNull final List\<Sql\<String>\> sqlList,
+        @NotNull final TableTestHelper helper)
+    {
+        return helper.defineParameters(values, sqlList);
+    }
+
+    /**
      * Defines the input properties based on the information provided by the
      * feature.
      * @param propertiesInfo the information about the properties.
