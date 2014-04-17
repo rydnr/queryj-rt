@@ -118,7 +118,6 @@ public abstract class AbstractTemplatesTestTemplateBuildHandlerTest
     /**
      * Checks whether storeTemplate() binds the template to the command.
      */
-    @Test
     public void storeTemplate_stores_the_templates_in_the_command()
     {
         storeTemplate_stores_the_templates_in_the_command(
