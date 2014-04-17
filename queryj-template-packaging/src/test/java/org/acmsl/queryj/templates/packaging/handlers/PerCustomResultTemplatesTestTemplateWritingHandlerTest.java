@@ -63,11 +63,11 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class PerCustomResultTemplatesTestTemplateWritingHandlerTest
     extends AbstractTemplatesTestTemplateWritingHandlerTest<
-    PerCustomResultTemplatesTestTemplateWritingHandler,
-    PerCustomResultTemplatesTestTemplateBuildHandler,
-    PerCustomResultTemplatesTestTemplate,
-    PerCustomResultTemplatesTestTemplateFactory,
-    GlobalTemplateContext>
+                PerCustomResultTemplatesTestTemplateWritingHandler,
+                PerCustomResultTemplatesTestTemplateBuildHandler,
+                PerCustomResultTemplatesTestTemplate,
+                PerCustomResultTemplatesTestTemplateFactory,
+                GlobalTemplateContext>
 {
     /**
      * Creates a new writing handler instance.
