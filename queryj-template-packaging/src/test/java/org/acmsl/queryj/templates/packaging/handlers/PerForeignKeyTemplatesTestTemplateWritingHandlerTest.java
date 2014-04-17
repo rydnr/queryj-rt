@@ -50,7 +50,7 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
- * Tests for {@link PerForeignKeyTemplatesTestTemplateBuildHandler}
+ * Tests for {@link PerForeignKeyTemplatesTestTemplateWritingHandlerTest}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/17 09:07
