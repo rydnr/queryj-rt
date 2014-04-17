@@ -62,8 +62,11 @@ import org.junit.Test;
 public abstract class AbstractTemplatesTestTemplateWritingHandlerTest
 {
     /**
-     * Creates
+     * Creates a new writing handler instance.
+     * @return such instance.
      */
+    @NotNull
+    protected abstract
     /**
      * Checks retrieveTemplateGenerator retrieves a not-null instance.
      * Redundant check since it's annotated with @NotNull.
