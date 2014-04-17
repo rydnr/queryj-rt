@@ -283,33 +283,6 @@ public class PerSqlTemplatesTest
     }
 
     /**
-     * Defines the input properties based on the information provided by the
-     * feature.
-     * @param propertiesInfo the information about the properties.
-     */
-    @SuppressWarnings("unused")
-    @Given("^Given the following properties:$")
-    public void defineInputProperties(@NotNull final DataTable propertiesInfo)
-    {
-        defineInputProperties(resultInfo, getResults(), SqlTestHelper.getInstance());
-    }
-
-    /**
-     * Defines the input properties based on the information provided by the
-     * feature.
-     * @param propertiesInfo the information about the properties.
-     * @param properties the properties.
-     * @param helper the {@link SqlTestHelper} instance.
-     */
-    protected void defineInputResults(
-        @NotNull final DataTable resultInfo,
-        @NotNull final Map\<String, Sql\<String\>> results,
-        @NotNull final SqlTestHelper helper)
-    {
-        helper.defineInputProperties(propertiesInfo, properties);
-    }
-
-    /**
      * Generates a file with the information from the feature.
      * @param template the template.
      * @param engine the engine.
