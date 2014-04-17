@@ -287,7 +287,7 @@ public class PerSqlTemplatesTest
      * @param columnInfo the column information.
      */
     @SuppressWarnings("unused")
-    @Given("^the following columns:$")
+    @Given("^the following columns for the tables involved:$")
     public void defineInputColumns(@NotNull final DataTable columnInfo)
     {
         defineInputColumns(columnInfo, getTables(), TableTestHelper.getInstance());
