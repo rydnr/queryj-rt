@@ -117,7 +117,7 @@ public class CustomResultTestHelper
      * @return the {@link Result} instance.
      */
     @Nullable
-    protected Result<String, Attribute<String>, List<Attribute<String>>> convertToCustomResult(
+    protected Result<String>> convertToCustomResult(
         @NotNull final Map<String, String> tableEntry)
     {
         @Nullable CustomResult<String, Attribute<String>, List<Attribute<String>>> result = null;
