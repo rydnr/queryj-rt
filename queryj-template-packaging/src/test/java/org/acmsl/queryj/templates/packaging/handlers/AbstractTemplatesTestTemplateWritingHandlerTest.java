@@ -82,7 +82,8 @@ public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
         <T, GlobalTemplateContext, TemplatePackagingTemplateGenerator<T, GlobalTemplateContext>>,
     BH extends TemplatePackagingTestBuildHandler<T, TF, GlobalTemplateContext>,
     T extends TemplatePackagingTemplate,
-    TF extends TemplatePackagingTemplateFactory<T, GlobalTemplateContext>>
+    TF extends TemplatePackagingTemplateFactory<T, GlobalTemplateContext>,
+    C extends >
 {
     /**
      * Creates a new writing handler instance.
