@@ -104,7 +104,7 @@ public class TemplateWritingHandlerTemplateWritingHandler
      */
     @NotNull
     @Override
-    protected List<TemplateWritingHandlerTemplate<DefaultTemplatePackagingContext>> retrieveTemplates(
+    public List<TemplateWritingHandlerTemplate<DefaultTemplatePackagingContext>> retrieveTemplates(
         @NotNull final QueryJCommand parameters)
         throws QueryJBuildException
     {
