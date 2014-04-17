@@ -105,7 +105,7 @@ public class PerForeignKeyTemplatesTestTemplateWritingHandler
      */
     @NotNull
     @Override
-    protected TemplatePackagingTemplateGenerator<PerForeignKeyTemplatesTestTemplate, GlobalTemplateContext> retrieveTemplateGenerator(
+    public TemplatePackagingTemplateGenerator<PerForeignKeyTemplatesTestTemplate, GlobalTemplateContext> retrieveTemplateGenerator(
         final boolean caching, final int threadCount)
     {
         return new TemplatePackagingTemplateGenerator<>(caching, threadCount);
