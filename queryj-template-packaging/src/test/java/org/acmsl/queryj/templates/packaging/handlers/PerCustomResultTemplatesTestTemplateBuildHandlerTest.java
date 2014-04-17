@@ -38,6 +38,7 @@ package org.acmsl.queryj.templates.packaging.handlers;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.templates.packaging.Literals;
 import org.acmsl.queryj.templates.packaging.PerCustomResultTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.PerCustomResultTemplatesTestTemplateFactory;
 import org.easymock.EasyMock;
@@ -99,7 +100,7 @@ public class PerCustomResultTemplatesTestTemplateBuildHandlerTest
     @Override
     public void retrieveTemplateName_works()
     {
-        //To change body of implemented methods use File | Settings | File Templates.
+        retrieveTemplateName_works(Literals.PER_FOREIGN_KEY_TEMPLATES_TEST);
     }
 
     /**
