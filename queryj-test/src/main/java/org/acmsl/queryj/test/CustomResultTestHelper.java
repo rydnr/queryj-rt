@@ -208,6 +208,6 @@ public class CustomResultTestHelper
     @Nullable
     protected Property<String> convertToProperty(@NotNull final String id, @NotNull final String type)
     {
-        return new ResultElement<>(id, type);
+        return new PropertyElement<>(id, type);
     }
 }
