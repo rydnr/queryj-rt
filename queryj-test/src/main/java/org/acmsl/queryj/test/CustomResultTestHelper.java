@@ -43,6 +43,7 @@ import cucumber.api.DataTable;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.PropertyElement;
 import org.acmsl.queryj.customsql.Result;
@@ -198,7 +199,7 @@ public class CustomResultTestHelper
                 convertToProperty(
                     name,
                     tableEntry.get("columnName"),
-                    tableEntry.get("index"),
+                    tableEntry.get(Literals.INDEX),
                     tableEntry.get("type"),
                     Boolean.valueOf(tableEntry.get("nullable")));
         }
