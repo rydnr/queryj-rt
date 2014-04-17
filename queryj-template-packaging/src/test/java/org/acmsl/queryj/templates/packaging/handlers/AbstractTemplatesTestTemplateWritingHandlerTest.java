@@ -47,7 +47,6 @@ import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplate;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplateFactory;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplateGenerator;
 import org.apache.commons.configuration.PropertiesConfiguration;
-import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
