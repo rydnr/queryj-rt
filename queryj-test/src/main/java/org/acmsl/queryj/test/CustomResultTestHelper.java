@@ -188,7 +188,7 @@ public class CustomResultTestHelper
     {
         @Nullable Result<String> result = null;
 
-        @Nullable final String id =  tableEntry.get("id");
+        @Nullable final String id =  tableEntry.get("name");
 
         if (id != null)
         {
