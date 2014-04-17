@@ -86,6 +86,13 @@ public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
     protected abstract BH createBuildHandlerInstance();
 
     /**
+     * Retrieves a new template mock.
+     * @return such mock.
+     */
+    @NotNull
+    protected abstract T createTemplateMock();
+
+    /**
      * Checks retrieveTemplateGenerator retrieves a not-null instance.
      * Redundant check since it's annotated with @NotNull.
      */
