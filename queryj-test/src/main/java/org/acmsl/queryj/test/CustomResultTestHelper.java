@@ -44,6 +44,7 @@ import cucumber.api.DataTable;
  * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.customsql.Property;
+import org.acmsl.queryj.customsql.PropertyElement;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.ResultElement;
 
@@ -206,8 +207,8 @@ public class CustomResultTestHelper
      * @return the {@link Property} instance.
      */
     @Nullable
-    protected Property<String> convertToProperty(@NotNull final String id, @NotNull final String type)
+    protected Property<String> convertToProperty(@NotNull final String name, @NotNull final String type)
     {
-        return new PropertyElement<>(id, type);
+        return new PropertyElement<>(name, type);
     }
 }
