@@ -118,7 +118,7 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
     @Test
     public void retrieveTemplateName_works()
     {
-        retrieveTemplateName_works(Literals.PER_TABLE_TEMPLATES_TEST, instance.retrieveTemplateName(command));
+        retrieveTemplateName_works(Literals.PER_TABLE_TEMPLATES_TEST);
     }
 
     /**
