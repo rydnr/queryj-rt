@@ -48,6 +48,7 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Test;
 
 /**
  * Tests for {@link PerCustomResultTemplatesTestTemplateBuildHandler}.
@@ -108,6 +109,7 @@ public class PerCustomResultTemplatesTestTemplateBuildHandlerTest
      * Checks whether storeTemplate() binds the template to the command.
      */
     @Override
+    @Test
     public void storeTemplate_stores_the_templates_in_the_command()
     {
         //To change body of implemented methods use File | Settings | File Templates.
