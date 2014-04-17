@@ -56,24 +56,6 @@ import org.junit.runners.JUnit4;
 
 /**
  * Tests for {@link PerRepositoryTemplatesTestTemplateWritingHandler}.
-/*
- * Importing JetBrains annotations.
- */
-import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
-import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplate;
-import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory;
-import org.easymock.EasyMock;
-import org.jetbrains.annotations.NotNull;
-
-/*
- * Importing checkthread.org annotations.
- */
-import org.checkthread.annotations.ThreadSafe;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
-
-/**
- *
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/17 10:09
