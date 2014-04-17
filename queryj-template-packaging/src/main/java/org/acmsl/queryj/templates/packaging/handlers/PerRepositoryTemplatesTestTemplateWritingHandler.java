@@ -40,10 +40,18 @@ package org.acmsl.queryj.templates.packaging.handlers;
  */
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
 import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplateGenerator;
 import org.acmsl.queryj.templates.packaging.exceptions.MissingTemplatesException;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
