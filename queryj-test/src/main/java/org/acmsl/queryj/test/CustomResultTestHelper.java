@@ -123,7 +123,7 @@ public class CustomResultTestHelper
 
         @Nullable final String currentResult =  tableEntry.get("id");
 
-        if (table != null)
+        if (currentResult != null)
         {
             result =
                 convertToCustomResult(
