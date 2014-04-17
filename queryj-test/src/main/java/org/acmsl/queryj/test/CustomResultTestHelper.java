@@ -153,9 +153,9 @@ public class CustomResultTestHelper
     }
 
     /**
-     * Defines the input tables based on the information provided by the
+     * Defines the input properties based on the information provided by the
      * feature.
-     * @param tableInfo the information about the tables.
+     * @param tableInfo the information about the properties.
      * @param tables the table collection.
      */
     @SuppressWarnings("unused")
