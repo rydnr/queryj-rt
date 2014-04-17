@@ -74,6 +74,6 @@ public class PerTableTemplatesTestTemplateWritingHandlerTest
     @Test
     public void retrieveTemplates_finds_the_templates()
     {
-
+        @NotNull final
     }
 }
