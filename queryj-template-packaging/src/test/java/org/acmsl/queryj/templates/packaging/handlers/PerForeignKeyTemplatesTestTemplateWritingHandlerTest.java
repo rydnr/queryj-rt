@@ -36,7 +36,7 @@
 package org.acmsl.queryj.templates.packaging.handlers;
 
 /*
- * Importing JetBrains annotations.
+ * Importing Template Packaging classes.
  */
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
 import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplate;
