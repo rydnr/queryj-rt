@@ -335,6 +335,8 @@ public class PerCustomResultTemplatesTest
 
             for (@Nullable final Result\<String\>> result : results)
             {
+                if (result != null)
+                {
                 @Nullable List\<Row\<String\>> resultRows = rows.get(result.getName());
 
                 if (resultRows == null)
