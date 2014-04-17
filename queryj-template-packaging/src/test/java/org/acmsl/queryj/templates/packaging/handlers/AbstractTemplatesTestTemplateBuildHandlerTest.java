@@ -84,6 +84,9 @@ import java.util.List;
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/17 07:34
+ * @param <BH> the build handler class.
+ * @param <T> the template class.
+ * @param <TF> the template factory class.
  */
 @RunWith(JUnit4.class)
 public abstract class AbstractTemplatesTestTemplateBuildHandlerTest
