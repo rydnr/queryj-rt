@@ -90,7 +90,7 @@ public class TemplateFactoryTemplateWritingHandler
      */
     @NotNull
     @Override
-    protected TemplatePackagingTemplateGenerator<TemplateFactoryTemplate<DefaultTemplatePackagingContext>, DefaultTemplatePackagingContext>
+    public TemplatePackagingTemplateGenerator<TemplateFactoryTemplate<DefaultTemplatePackagingContext>, DefaultTemplatePackagingContext>
         retrieveTemplateGenerator(final boolean caching, final int threadCount)
     {
         return new TemplatePackagingTemplateGenerator<>(caching, threadCount);
