@@ -48,6 +48,8 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 /**
  *
@@ -55,7 +57,7 @@ import org.checkthread.annotations.ThreadSafe;
  * @since 3.0
  * Created: 2014/04/17 10:09
  */
-@ThreadSafe
+@RunWith(JUnit4.class)
 public class PerCustomResultTemplatesTestTemplateWritingHandlerTest
     extends AbstractTemplatesTestTemplateWritingHandlerTest<
     PerRepositoryTemplatesTestTemplateWritingHandler,
