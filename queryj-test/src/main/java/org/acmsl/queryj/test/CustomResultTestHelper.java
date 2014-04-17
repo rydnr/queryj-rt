@@ -184,9 +184,9 @@ public class CustomResultTestHelper
      * @return the {@link Result} instance.
      */
     @Nullable
-    protected Result<String> convertToProperty(@NotNull final Map<String, String> tableEntry)
+    protected Property<String> convertToProperty(@NotNull final Map<String, String> tableEntry)
     {
-        @Nullable Result<String> result = null;
+        @Nullable Property<String> result = null;
 
         @Nullable final String name =  tableEntry.get("name");
 
