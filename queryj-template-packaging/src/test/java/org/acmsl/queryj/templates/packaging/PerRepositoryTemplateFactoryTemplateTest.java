@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description:
+ * Description: Tests for PerForeignKeyTemplateFactoryTemplate.
  *
  * Date: 2014/04/17
  * Time: 12:07
