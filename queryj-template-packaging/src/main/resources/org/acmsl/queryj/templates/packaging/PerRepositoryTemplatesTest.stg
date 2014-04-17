@@ -223,7 +223,8 @@ public class PerRepositoryTemplatesTest
     /**
      * Defines the input tables based on the information provided by the
      * feature.
-     * @param tableInfo the nformation about the tables.
+     * @param tableInfo the information about the tables.
+
      */
     protected void defineInputTables(
         @NotNull final DataTable tableInfo,
