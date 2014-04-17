@@ -103,7 +103,6 @@ public class PerForeignKeyTemplatesTestTemplateBuildHandlerTest
 
     /**
      * Retrieves a new template mock.
-     *
      * @return such mock.
      */
     @NotNull
