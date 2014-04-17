@@ -224,7 +224,8 @@ public class PerSqlTemplatesTest
      * Defines the input results based on the information provided by the
      * feature.
      * @param resultInfo the information about the results.
-     * @param re
+     * @param results the custom results.
+     * @param
      */
     protected void defineInputResults(
         @NotNull final DataTable resultInfo,
