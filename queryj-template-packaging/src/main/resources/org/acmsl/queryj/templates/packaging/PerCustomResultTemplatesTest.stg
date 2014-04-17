@@ -86,7 +86,7 @@ import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.ForeignKey;
 import org.acmsl.queryj.metadata.vo.Row;
-import org.acmsl.queryj.metadata.vo.Table;
+import org.acmsl.queryj.metadata.vo.result;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.QueryJSettings;
@@ -98,7 +98,7 @@ import org.acmsl.queryj.tools.handlers.ParameterValidationHandler;
  * Importing QueryJ Test classes.
  */
 import org.acmsl.queryj.test.AbstractTemplatesTest;
-import org.acmsl.queryj.test.TableTestHelper;
+import org.acmsl.queryj.test.resultTestHelper;
 
 /*
  * Importing project classes.
@@ -123,7 +123,7 @@ import org.acmsl.commons.logging.UniqueLogFactory;
 /*
  * Importing Cucumber classes.
  */
-import cucumber.api.DataTable;
+import cucumber.api.Dataresult;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -165,9 +165,9 @@ import java.util.Set;
 description() ::= <<
 <!
   Generates a description for the generated file.
-  @param tableName the table name.
+  @param resultName the result name.
 !>
-Cucumber tests for per-table templates.
+Cucumber tests for per-result templates.
 >>
 
 def_import(d) ::= <<
@@ -209,28 +209,28 @@ public class PerCustomResultTemplatesTest
     }
 
     /**
-     * Defines the input tables based on the information provided by the
+     * Defines the input results based on the information provided by the
      * feature.
-     * @param tableInfo the information about the tables.
+     * @param resultInfo the information about the results.
      */
     @SuppressWarnings("unused")
     @Given("^Given the following custom result:$")
-    public void defineInputResults(@NotNull final DataTable tableInfo)
+    public void defineInputResults(@NotNull final Dataresult resultInfo)
     {
-        defineInputResults(tableInfo, getTables(), CustomResultTestHelper.getInstance());
+        defineInputResults(resultInfo, getresults(), CustomResultTestHelper.getInstance());
     }
 
     /**
-     * Defines the input tables based on the information provided by the
+     * Defines the input results based on the information provided by the
      * feature.
-     * @param tableInfo the information about the tables.
+     * @param resultInfo the information about the results.
      */
-    protected void defineInputTables(
-        @NotNull final DataTable tableInfo,
-        @NotNull final Map\<String, Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables,
+    protected void defineInputresults(
+        @NotNull final Dataresult resultInfo,
+        @NotNull final Map\<String, result\<String, Attribute\<String>, List\<Attribute\<String\>>\>> results,
         @NotNull final CustomResultTestHelper helper)
     {
-        helper.defineInputTables(tableInfo, tables);
+        helper.defineInputresults(resultInfo, results);
     }
 
     /**
@@ -247,7 +247,7 @@ public class PerCustomResultTemplatesTest
         generateFile(
             template,
             engine,
-            getTables(),
+            getresults(),
             getRows(),
             getOutputFiles(),
             retrieveCustomSqlProvider(getSqlList(), getParameters()));
@@ -257,7 +257,7 @@ public class PerCustomResultTemplatesTest
      * Generates a file with the information from the feature.
      * @param templateName the template.
      * @param engine the engine name.
-     * @param tableMap the table map.
+     * @param resultMap the result map.
      * @param rows the rows.
      * @param outputFiles the output files.
      * @param sqlProvider the {@link CustomSqlProvider} instance.
@@ -266,7 +266,7 @@ public class PerCustomResultTemplatesTest
     protected void generateFile(
         @NotNull final String templateName,
         @NotNull final String engine,
-        @NotNull final Map\<String, Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tableMap,
+        @NotNull final Map\<String, result\<String, Attribute\<String>, List\<Attribute\<String\>>\>> resultMap,
         @NotNull final Map\<String, List\<Row\<String>\>> rows,
         @NotNull final Map\<String, File> outputFiles,
         @NotNull final CustomSqlProvider sqlProvider)
@@ -313,20 +313,20 @@ public class PerCustomResultTemplatesTest
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
                 QueryJSettings.VERSION, "<C.version>");
 
-            @NotNull final List\<Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables =
-                new ArrayList\<>(tableMap.values());
+            @NotNull final List\<result\<String, Attribute\<String>, List\<Attribute\<String\>>\>> results =
+                new ArrayList\<>(resultMap.values());
 
-            for (@NotNull final Table\<String, Attribute\<String>, List\<Attribute\<String>\>> table : tables)
+            for (@NotNull final result\<String, Attribute\<String>, List\<Attribute\<String>\>> result : results)
             {
-                @Nullable List\<Row\<String\>> tableRows = rows.get(table.getName());
+                @Nullable List\<Row\<String\>> resultRows = rows.get(result.getName());
 
-                if (tableRows == null)
+                if (resultRows == null)
                 {
-                    tableRows = new ArrayList\<>(0);
+                    resultRows = new ArrayList\<>(0);
                 }
 
                 @NotNull final MetadataManager metadataManager =
-                    retrieveMetadataManager(engine, table, tableRows, decoratorFactory);
+                    retrieveMetadataManager(engine, result, resultRows, decoratorFactory);
 
                 new QueryJCommandWrapper\<MetadataManager>(t_Command).setSetting(
                     DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, metadataManager);
@@ -337,15 +337,15 @@ public class PerCustomResultTemplatesTest
                 Assert.assertNotNull("No template factory found for " + templateName, templateFactory);
 
                 @NotNull final String packageName =
-                    resolvePackage(PACKAGE_MAPPINGS.get(templateName), table.getName(), resolveEngine(engine));
+                    resolvePackage(PACKAGE_MAPPINGS.get(templateName), result.getName(), resolveEngine(engine));
 
                 @Nullable final PerCustomResultTemplate\<PerCustomResultTemplateContext> template =
                     templateFactory.createTemplate(
                         t_Command,
                         decoratorFactory,
                         packageName,
-                        table.getName(),
-                        tableRows);
+                        result.getName(),
+                        resultRows);
 
                 Assert.assertNotNull("No template found for " + templateName, template);
 
@@ -412,7 +412,7 @@ public class PerCustomResultTemplatesTest
                 }
 
                 outputFiles.put(
-                    table.getName(),
+                    result.getName(),
                     new File(outputDir, template.getTemplateContext().getFileName()));
             }
         }
@@ -472,21 +472,21 @@ public class PerCustomResultTemplatesTest
     /**
      * Resolves the package.
      * @param packageTemplate the package template.
-     * @param tableName the table name.
+     * @param resultName the result name.
      * @param engine the engine.
      * @return the actual package.
      */
     @NotNull
     protected String resolvePackage(
         @NotNull final String packageTemplate,
-        @NotNull final String tableName,
+        @NotNull final String resultName,
         @NotNull final Engine\<String> engine)
     {
         @NotNull final String result;
 
         @NotNull final ST template = new ST(packageTemplate);
         template.add(Literals.PACKAGE_NAME, new DecoratedString(BASE_PACKAGE_NAME));
-        template.add(Literals.TABLE_NAME, new DecoratedString(tableName));
+        template.add(Literals.result_NAME, new DecoratedString(resultName));
         template.add(Literals.ENGINE, new EngineDecorator(engine));
 
         result = template.render();
