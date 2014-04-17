@@ -40,8 +40,20 @@ package org.acmsl.queryj.templates.packaging.handlers;
  */
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplate;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.apache.commons.configuration.PropertiesConfiguration;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
