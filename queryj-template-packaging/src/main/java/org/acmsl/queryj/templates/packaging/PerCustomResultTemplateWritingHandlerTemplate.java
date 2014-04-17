@@ -79,6 +79,6 @@ public class PerCustomResultTemplateWritingHandlerTemplate<C extends TemplatePac
     @Override
     public String getTemplateName()
     {
-        return Literals.PER_REPOSITORY_TEMPLATE_WRITING_HANDLER;
+        return Literals.PER_CUSTOM_RESULT_TEMPLATE_WRITING_HANDLER;
     }
 }
