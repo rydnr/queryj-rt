@@ -59,6 +59,8 @@ import org.junit.Test;
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/17 08:49
+ * @param <WH> the writing handler class.
+ * @param <T> the template class.
  */
 @ThreadSafe
 public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
