@@ -190,7 +190,7 @@ public class CustomResultTestHelper
 
         @Nullable final String name =  tableEntry.get("name");
 
-        if (id != null)
+        if (name != null)
         {
             result = convertToProperty(id, tableEntry.get("type"));
         }
