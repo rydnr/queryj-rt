@@ -248,7 +248,8 @@ public class PerCustomResultTemplatesTest
     /**
      * Defines the input properties based on the information provided by the
      * feature.
-     * @param resultInfo the information about the results.
+     * @param propertiesInfo the information about the properties.
+     * @param r
      */
     protected void defineInputResults(
         @NotNull final DataTable resultInfo,
