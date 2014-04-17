@@ -58,7 +58,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- *
+ * Common logic and tests to follow a DRY approach when testing TemplatesTest build handlers.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/17 08:49
