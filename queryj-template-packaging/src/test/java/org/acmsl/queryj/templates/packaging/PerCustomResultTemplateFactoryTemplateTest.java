@@ -23,11 +23,11 @@
 
  ******************************************************************************
  *
- * Filename: PerRepositoryTemplateFactoryTemplateTest.java
+ * Filename: PerCustomResultTemplateFactoryTemplateTest.java
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Tests for PerRepositoryTemplateFactoryTemplate.
+ * Description: Tests for PerCustomResultTemplateFactoryTemplate.
  *
  * Date: 2014/04/17
  * Time: 12:14
@@ -51,13 +51,13 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 /**
- * Tests for {@link PerRepositoryTemplateFactoryTemplate}.
+ * Tests for {@link PerCustomResultTemplateFactoryTemplate}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/17 12:14
  */
 @RunWith(JUnit4.class)
-public class PerRepositoryTemplateFactoryTemplateTest
+public class PerCustomResultTemplateFactoryTemplateTest
 {
     /**
      * Checks whether getTemplateName() returns the correct template name.
@@ -68,8 +68,8 @@ public class PerRepositoryTemplateFactoryTemplateTest
         @NotNull final DefaultTemplatePackagingContext context =
             EasyMock.createNiceMock(DefaultTemplatePackagingContext.class);
 
-        @NotNull final PerRepositoryTemplateFactoryTemplate instance =
-            new PerRepositoryTemplateFactoryTemplate<>(context);
+        @NotNull final PerCustomResultTemplateFactoryTemplate instance =
+            new PerCustomResultTemplateFactoryTemplate<>(context);
 
         Assert.assertEquals(Literals.PER_REPOSITORY_TEMPLATE_FACTORY, instance.getTemplateName());
     }
