@@ -33,7 +33,7 @@
 //
 // Author: Jose San Leandro Armendariz
 //
-// Description: Defines the rules to generate PerTableTemplatesTest
+// Description: Defines the rules to generate PerRepositoryTemplatesTest
 //              implementations.
 //
 group PerTableTemplatesTest;
