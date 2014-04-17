@@ -64,7 +64,7 @@ import org.junit.runners.JUnit4;
  * @since 3.0
  * Created: 2014/04/17 08:15
  */
-@ThreadSafe
+@RunWith(JUnit4.class)
 @RunWith(JUnit4.class)
 public class PerSqlTemplatesTestTemplateBuildHandlerTest
     extends AbstractTemplatesTestTemplateBuildHandlerTest
