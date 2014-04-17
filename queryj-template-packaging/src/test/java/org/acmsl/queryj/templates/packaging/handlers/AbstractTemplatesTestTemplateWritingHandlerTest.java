@@ -86,6 +86,19 @@ public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
     protected abstract BH createBuildHandlerInstance();
 
     /**
+     * Checks retrieveTemplateGenerator retrieves a not-null instance.
+     * Redundant check since it's annotated with @NotNull.
+     */
+    @Test
+    public void retrieveTemplateGenerator_works()
+    {
+        @NotNull final PerTableTemplatesTestTemplateWritingHandler instance =
+            new PerTableTemplatesTestTemplateWritingHandler();
+
+        Assert.assertNotNull(instance.retrieveTemplateGenerator(false, 1));
+    }
+
+    /**
      * Checks the templates built by the build handler are later
      * found by the writing handler.
      */
