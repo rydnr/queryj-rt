@@ -114,7 +114,7 @@ public class CustomResultTestHelper
     /**
      * Converts given table information to a {@link Result}.
      * @param tableEntry the table information.
-     * @return the {@link CustomResult} instance.
+     * @return the {@link Result} instance.
      */
     @Nullable
     protected CustomResult<String, Attribute<String>, List<Attribute<String>>> convertToCustomResult(
