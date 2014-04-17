@@ -110,7 +110,7 @@ public class PerForeignKeyTemplatesTestTemplateBuildHandlerTest
     @Override
     protected PerForeignKeyTemplatesTestTemplate createTemplateMock()
     {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return EasyMock.createNiceMock(PerForeignKeyTemplatesTestTemplate.class);
     }
 
     /**
