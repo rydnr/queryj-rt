@@ -23,11 +23,11 @@
 
  ******************************************************************************
  *
- * Filename: PerRepositoryTemplatesTestTemplateWritingHandler.java
+ * Filename: PerCustomResultTemplatesTestTemplateWritingHandler.java
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Writing handler for PerRepositoryTemplatesTestTemplates.
+ * Description: Writing handler for PerCustomResultTemplatesTestTemplates.
  *
  * Date: 2014/04/17
  * Time: 10:11
@@ -45,7 +45,7 @@ import org.acmsl.queryj.QueryJCommandWrapper;
  * Importing QueryJ Template Packaging classes.
  */
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
-import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplate;
+import org.acmsl.queryj.templates.packaging.PerCustomResultTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplateGenerator;
 import org.acmsl.queryj.templates.packaging.exceptions.MissingTemplatesException;
 
@@ -66,22 +66,22 @@ import org.checkthread.annotations.ThreadSafe;
 import java.util.List;
 
 /**
- * Writing handler for {@link PerRepositoryTemplatesTestTemplate}s.
+ * Writing handler for {@link PerCustomResultTemplatesTestTemplate}s.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/17 10:11
  */
 @ThreadSafe
-public class PerRepositoryTemplatesTestTemplateWritingHandler
+public class PerCustomResultTemplatesTestTemplateWritingHandler
     extends TemplatePackagingTestWritingHandler
-                <PerRepositoryTemplatesTestTemplate,
+                <PerCustomResultTemplatesTestTemplate,
                     GlobalTemplateContext,
-                    TemplatePackagingTemplateGenerator<PerRepositoryTemplatesTestTemplate, GlobalTemplateContext>>
+                    TemplatePackagingTemplateGenerator<PerCustomResultTemplatesTestTemplate, GlobalTemplateContext>>
 {
     /**
-     * Creates a new writing handler for {@link PerRepositoryTemplatesTestTemplate templates}.
+     * Creates a new writing handler for {@link PerCustomResultTemplatesTestTemplate templates}.
      */
-    public PerRepositoryTemplatesTestTemplateWritingHandler() {}
+    public PerCustomResultTemplatesTestTemplateWritingHandler() {}
 
     /**
      * Retrieves the template generator.
@@ -91,7 +91,7 @@ public class PerRepositoryTemplatesTestTemplateWritingHandler
      */
     @NotNull
     @Override
-    public TemplatePackagingTemplateGenerator<PerRepositoryTemplatesTestTemplate, GlobalTemplateContext> retrieveTemplateGenerator(
+    public TemplatePackagingTemplateGenerator<PerCustomResultTemplatesTestTemplate, GlobalTemplateContext> retrieveTemplateGenerator(
         final boolean caching, final int threadCount)
     {
         return new TemplatePackagingTemplateGenerator<>(caching, threadCount);
@@ -102,13 +102,13 @@ public class PerRepositoryTemplatesTestTemplateWritingHandler
      */
     @NotNull
     @Override
-    public List<PerRepositoryTemplatesTestTemplate> retrieveTemplates(@NotNull final QueryJCommand parameters)
+    public List<PerCustomResultTemplatesTestTemplate> retrieveTemplates(@NotNull final QueryJCommand parameters)
     {
-        @NotNull final List<PerRepositoryTemplatesTestTemplate> result;
+        @NotNull final List<PerCustomResultTemplatesTestTemplate> result;
 
-        @Nullable final List<PerRepositoryTemplatesTestTemplate> aux =
-            new QueryJCommandWrapper<PerRepositoryTemplatesTestTemplate>(parameters)
-                .getListSetting(PerRepositoryTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
+        @Nullable final List<PerCustomResultTemplatesTestTemplate> aux =
+            new QueryJCommandWrapper<PerCustomResultTemplatesTestTemplate>(parameters)
+                .getListSetting(PerCustomResultTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
 
         if (aux == null)
         {
