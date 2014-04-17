@@ -149,9 +149,3 @@ public class PerSqlTemplatesTestTemplateBuildHandler
             .setSetting(TEMPLATES_KEY, template);
     }
 }
- * Created: 2014/04/17 08:17
- */
-@ThreadSafe
-public class PerSqlTemplatesTestTemplateBuildHandler
-{
-}
