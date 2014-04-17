@@ -73,7 +73,6 @@ public class PerCustomResultTemplatesTestTemplateBuildHandlerTest
 
     /**
      * Retrieves a new template mock.
-     *
      * @return such mock.
      */
     @NotNull
