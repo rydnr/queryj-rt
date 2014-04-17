@@ -117,7 +117,7 @@ public class PerForeignKeyTemplatesTestTemplateBuildHandlerTest
     @Test
     public void retrieveTemplateName_works()
     {
-        @NotNull final PerForeignKeyTemplatesTestTemplateBuildHandler instance =
+        retrieveTemplateName_works();@NotNull final PerForeignKeyTemplatesTestTemplateBuildHandler instance =
             new PerForeignKeyTemplatesTestTemplateBuildHandler();
 
         @NotNull final QueryJCommand command = EasyMock.createNiceMock(QueryJCommand.class);
