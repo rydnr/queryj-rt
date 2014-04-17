@@ -142,7 +142,7 @@ public class CustomResultTestHelper
      * @return the {@link Result} instance.
      */
     @Nullable
-    protected Result<String> convertToCustomResult(@NotNull final Map<String, String> tableEntry)
+    protected Result<String> convertToCustomResult(@NotNull final String id, @NotNull final String type)
     {
         return new ResultElement<>(id, type);
     }
