@@ -125,7 +125,7 @@ public abstract class AbstractTemplatesTestTemplateBuildHandlerTest
      * {@link org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory}.
      */
     @Test
-    public void retrieveTemplateFactory_retrieves_the_correct_factory()
+    public abstract void retrieveTemplateFactory_retrieves_the_correct_factory();
     {
         retrieveTemplateFactory_retrieves_the_correct_factory(
             PerRepositoryTemplatesTestTemplateFactory.getInstance());
