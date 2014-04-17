@@ -98,6 +98,7 @@ public class PerCustomResultTemplatesTestTemplateBuildHandlerTest
      * Tests whether retrieveTemplateName() works.
      */
     @Override
+    @Test
     public void retrieveTemplateName_works()
     {
         retrieveTemplateName_works(Literals.PER_CUSTOM_RESULT_TEMPLATES_TEST);
