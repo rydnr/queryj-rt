@@ -87,6 +87,7 @@ public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
      * @return such new instance.
      */
     @Override
+    @NotNull
     protected PerRepositoryTemplatesTestTemplateBuildHandler createInstance()
     {
         return new PerRepositoryTemplatesTestTemplateBuildHandler();
