@@ -98,7 +98,7 @@ public class CustomResultTestHelper
     {
         @NotNull final List<Map<String, String>> tableEntries = tableInfo.asMaps();
 
-        @Nullable CustomResult<String, Attribute<String>, List<Attribute<String>>> table;
+        @Nullable Result<String, Attribute<String>, List<Attribute<String>>> table;
 
         for (@NotNull final Map<String, String> tableEntry: tableEntries)
         {
