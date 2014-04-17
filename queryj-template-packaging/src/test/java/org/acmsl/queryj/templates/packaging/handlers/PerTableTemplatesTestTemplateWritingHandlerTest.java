@@ -58,6 +58,9 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class PerTableTemplatesTestTemplateWritingHandlerTest
 {
+    /**
+     * Checks retrieveTemplateGenerator retrieves a not-null instance.
+     */
     @Test
     public void retrieveTemplateGenerator_works()
     {
