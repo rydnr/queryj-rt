@@ -205,7 +205,7 @@ public class PerRepositoryTemplatesTest
     {
         super();
 
-        <defs:{ d | <if(!d.disabled)><if(d.type.PerRepository)><generator_mapping(def=d)><endif><endif>}; separator="\n">
+        <defs:{ d | <if(!d.disabled)><if(d.type.perRepository)><generator_mapping(def=d)><endif><endif>}; separator="\n">
     }
 
     /**
