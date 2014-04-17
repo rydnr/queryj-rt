@@ -134,7 +134,8 @@ public class CustomResultTestHelper
 
     /**
      * Creates a new {@link Result}.
-     * @param tableEntry the table information.
+     * @param id the id.
+     * @param type the type.
      * @return the {@link Result} instance.
      */
     @Nullable
