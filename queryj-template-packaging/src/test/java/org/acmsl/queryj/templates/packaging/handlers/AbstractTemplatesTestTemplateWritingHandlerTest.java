@@ -76,18 +76,6 @@ public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
     protected abstract WH createInstance();
 
     /**
-     * Checks retrieveTemplateGenerator retrieves a not-null instance.
-     * Redundant check since it's annotated with @NotNull.
-     */
-    @Test
-    public void retrieveTemplateGenerator_works()
-    {
-        @NotNull final WH instance = createInstance();
-
-        Assert.assertNotNull(instance.retrieveTemplateGenerator(false, 1));
-    }
-
-    /**
      * Checks the templates built by the build handler are later
      * found by the writing handler.
      */
