@@ -98,12 +98,11 @@ public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
     @Override
     protected PerRepositoryTemplatesTestTemplateBuildHandler createInstance()
     {
-        new PerRepositoryTemplatesTestTemplateBuildHandler();
+        return new PerRepositoryTemplatesTestTemplateBuildHandler();
     }
 
     /**
      * Retrieves a new template mock.
-     *
      * @return such mock.
      */
     @Override
