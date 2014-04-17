@@ -94,6 +94,7 @@ public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
     /**
      * Tests whether retrieveTemplateName() works.
      */
+    @Override
     @Test
     public void retrieveTemplateName_works()
     {
