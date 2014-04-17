@@ -126,10 +126,7 @@ public abstract class AbstractTemplatesTestTemplateBuildHandlerTest
      */
     @Test
     public abstract void retrieveTemplateFactory_retrieves_the_correct_factory();
-    {
-        retrieveTemplateFactory_retrieves_the_correct_factory(
-            PerRepositoryTemplatesTestTemplateFactory.getInstance());
-    }
+
     /**
      * Tests whether retrieveTemplateName() works.
      */
