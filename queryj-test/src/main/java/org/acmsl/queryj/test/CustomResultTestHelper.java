@@ -208,19 +208,19 @@ public class CustomResultTestHelper
 
     /**
      * Creates a new {@link Property}.
-     * @param name the name.
+     * @param id the id.
      * @param
      * @param type the type.
      * @return the {@link Property} instance.
      */
     @Nullable
     protected Property<String> convertToProperty(
-        @NotNull final String name,
+        @NotNull final String id,
         @NotNull final String columnName,
         final int index,
         @NotNull final String type,
         final boolean nullable)
     {
-        return new PropertyElement<>(name, columnName, index, type, nullable);
+        return new PropertyElement<>(id, columnName, index, type, nullable);
     }
 }
