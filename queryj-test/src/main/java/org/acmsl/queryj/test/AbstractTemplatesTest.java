@@ -464,7 +464,7 @@ public abstract class AbstractTemplatesTest<G, F>
      * @param results the results.
      */
     @SuppressWarnings("unused")
-    protected void setResults(@NotNull final Map<String, Result<String>> results)
+    protected void setResults(@NotNull final Map<String, Result<String>> properties)
     {
         immutableSetProperties(properties);
     }
