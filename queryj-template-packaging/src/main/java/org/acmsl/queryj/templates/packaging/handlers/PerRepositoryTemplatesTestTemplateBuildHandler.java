@@ -137,5 +137,4 @@ public class PerRepositoryTemplatesTestTemplateBuildHandler
         new QueryJCommandWrapper<PerForeignKeyTemplatesTestTemplate>(parameters)
             .setSetting(TEMPLATES_KEY, template);
     }
-{
 }
