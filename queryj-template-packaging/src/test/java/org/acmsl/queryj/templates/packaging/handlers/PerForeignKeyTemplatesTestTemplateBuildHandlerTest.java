@@ -126,7 +126,7 @@ public class PerForeignKeyTemplatesTestTemplateBuildHandlerTest
     @Test
     public void storeTemplate_stores_the_templates_in_the_command()
     {
-        @NotNull final PerForeignKeyTemplatesTestTemplateBuildHandler instance =
+        storeTemplate_stores_the_templates_in_the_command();@NotNull final PerForeignKeyTemplatesTestTemplateBuildHandler instance =
             new PerForeignKeyTemplatesTestTemplateBuildHandler();
 
         @NotNull final QueryJCommand command =
