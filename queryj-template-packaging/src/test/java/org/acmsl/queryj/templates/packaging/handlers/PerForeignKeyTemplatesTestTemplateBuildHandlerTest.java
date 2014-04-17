@@ -89,6 +89,7 @@ public class PerForeignKeyTemplatesTestTemplateBuildHandlerTest
                 PerForeignKeyTemplatesTestTemplate,
                 PerForeignKeyTemplatesTestTemplateFactory>
 {
+
     /**
      * Tests whether retrieveTemplateName() works.
      */
