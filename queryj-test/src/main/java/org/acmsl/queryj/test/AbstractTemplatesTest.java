@@ -195,7 +195,7 @@ public abstract class AbstractTemplatesTest<G, F>
     /**
      * The custom results.
      */
-    private Map<String, Result<String>> m__mTables;
+    private Map<String, Result<String>> m__mResults;
 
     /**
      * The engine name.
