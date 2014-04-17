@@ -92,5 +92,7 @@ public class PerTableTemplatesTestTemplateWritingHandlerTest
             EasyMock.createNiceMock(PerTableTemplatesTestTemplate.class);
 
         buildHandler.storeTemplate(template, command);
+
+
     }
 }
