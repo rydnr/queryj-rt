@@ -117,7 +117,7 @@ public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
     @Test
     public void retrieveTemplateName_works()
     {
-        @NotNull final PerRepositoryTemplatesTestTemplateBuildHandler instance =
+        retrieveTemplateName_works();@NotNull final PerRepositoryTemplatesTestTemplateBuildHandler instance =
             new PerRepositoryTemplatesTestTemplateBuildHandler();
 
         @NotNull final QueryJCommand command = EasyMock.createNiceMock(QueryJCommand.class);
