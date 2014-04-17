@@ -110,7 +110,7 @@ public class PerTableTemplatesTestTemplateWritingHandler
      */
     @NotNull
     @Override
-    protected List<PerTableTemplatesTestTemplate> retrieveTemplates(@NotNull final QueryJCommand parameters)
+    public List<PerTableTemplatesTestTemplate> retrieveTemplates(@NotNull final QueryJCommand parameters)
     {
         @NotNull final List<PerTableTemplatesTestTemplate> result;
 
