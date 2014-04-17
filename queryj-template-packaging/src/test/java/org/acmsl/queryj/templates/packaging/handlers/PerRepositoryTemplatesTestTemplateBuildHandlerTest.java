@@ -38,12 +38,28 @@ package org.acmsl.queryj.templates.packaging.handlers;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
+import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.QueryJCommandWrapper;
+import org.acmsl.queryj.templates.packaging.Literals;
+import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplate;
+import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplateFactory;
+import org.acmsl.queryj.templates.packaging.TemplateDef;
+import org.apache.commons.configuration.PropertiesConfiguration;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -54,4 +70,85 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
 {
+    /**
+     * Tests whether retrieveTemplateName() works.
+     */
+    @Test
+    public void retrieveTemplateName_works()
+    {
+        @NotNull final PerForeignKeyTemplatesTestTemplateBuildHandler instance =
+            new PerForeignKeyTemplatesTestTemplateBuildHandler();
+
+        @NotNull final QueryJCommand command = EasyMock.createNiceMock(QueryJCommand.class);
+
+        Assert.assertEquals(Literals.PER_FOREIGN_KEY_TEMPLATES_TEST, instance.retrieveTemplateName(command));
+    }
+
+    /**
+     * Checks whether storeTemplate() binds the template to the command.
+     */
+    @Test
+    public void storeTemplate_stores_the_templates_in_the_command()
+    {
+        @NotNull final PerForeignKeyTemplatesTestTemplateBuildHandler instance =
+            new PerForeignKeyTemplatesTestTemplateBuildHandler();
+
+        @NotNull final QueryJCommand command =
+            new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+
+        @NotNull final PerForeignKeyTemplatesTestTemplate template =
+            EasyMock.createNiceMock(PerForeignKeyTemplatesTestTemplate.class);
+
+        instance.storeTemplate(template, command);
+
+        Assert.assertEquals(template, command.getSetting(PerForeignKeyTemplatesTestTemplateBuildHandler.TEMPLATES_KEY));
+    }
+
+    /**
+     * Checks whether retrieveTemplateFactory() retrieves
+     * {@link org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplateFactory}.
+     */
+    @Test
+    public void retrieveTemplateFactory_retrieves_the_correct_factory()
+    {
+        @NotNull final PerForeignKeyTemplatesTestTemplateBuildHandler instance =
+            new PerForeignKeyTemplatesTestTemplateBuildHandler();
+
+        Assert.assertEquals(PerForeignKeyTemplatesTestTemplateFactory.getInstance(), instance.retrieveTemplateFactory());
+    }
+
+    /**
+     * Checks whether the output package is the Cucumber's.
+     */
+    @Test
+    public void retrieveOutputPackage_returns_the_cucumber_package()
+    {
+        @NotNull final PerForeignKeyTemplatesTestTemplateBuildHandler instance =
+            new PerForeignKeyTemplatesTestTemplateBuildHandler();
+
+        @NotNull final QueryJCommand command = EasyMock.createNiceMock(QueryJCommand.class);
+
+        Assert.assertEquals(Literals.CUCUMBER_TEMPLATES, instance.retrieveOutputPackage(command));
+    }
+
+    /**
+     * Checks whether buildContext() builds a global context.
+     */
+    @Test
+    public void buildContext_builds_a_global_context()
+        throws IOException
+    {
+        @NotNull final PerForeignKeyTemplatesTestTemplateBuildHandler instance =
+            new PerForeignKeyTemplatesTestTemplateBuildHandler();
+
+        @NotNull final QueryJCommand command =
+            new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+
+        new QueryJCommandWrapper<File>(command).setSetting(
+            PerForeignKeyTemplatesTestTemplate.OUTPUT_DIR_FOR_TESTS, new File("/"));
+
+        @NotNull final List<TemplateDef<String>> templateDefs = new ArrayList<>(0);
+
+        Assert.assertNotNull(instance.buildContext(templateDefs, command));
+    }
 }
