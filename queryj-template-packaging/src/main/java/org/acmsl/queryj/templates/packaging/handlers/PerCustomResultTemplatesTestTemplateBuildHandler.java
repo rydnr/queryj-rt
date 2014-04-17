@@ -36,6 +36,38 @@
 package org.acmsl.queryj.templates.packaging.handlers;
 
 /*
+ * Importing QueryJ Core classes.
+ */
+import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.QueryJCommandWrapper;
+
+/*
+ * Importing QueryJ Template Packaging classes.
+ */
+import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
+import org.acmsl.queryj.templates.packaging.Literals;
+import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplate;
+import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory;
+import org.acmsl.queryj.templates.packaging.TemplateDef;
+
+/*
+ * Importing JetBrains annotations.
+ */
+import org.jetbrains.annotations.NotNull;
+
+/*
+ * Importing checkthread.org annotations.
+ */
+import org.checkthread.annotations.ThreadSafe;
+
+/*
+ * Importing JDK classes.
+ */
+import java.util.List;
+
+/**
+ * Build handler for {@link PerRepositoryTemplatesTestTemplate}s.
+/*
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.QueryJCommand;
