@@ -122,9 +122,9 @@ public class CustomResultTestHelper
     {
         @Nullable Result<String> result = null;
 
-        @Nullable final String currentResult =  tableEntry.get("id");
+        @Nullable final String id =  tableEntry.get("id");
 
-        if (currentResult != null)
+        if (id != null)
         {
             result =
                 convertToCustomResult( currentResult, tableEntry.get("type"));
