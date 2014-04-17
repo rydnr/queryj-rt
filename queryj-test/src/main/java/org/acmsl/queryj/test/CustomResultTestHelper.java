@@ -229,7 +229,7 @@ public class CustomResultTestHelper
 
         try
         {
-            propertyIndex =
+            propertyIndex = Integer.parseInt()
         }
         return new PropertyElement<>(id, columnName, index, type, nullable);
     }
