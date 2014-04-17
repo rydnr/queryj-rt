@@ -50,12 +50,6 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 
-/*
- * Importing JDK classes.
- */
-import java.util.List;
-import java.util.Map;
-
 /**
  * Helper class for per-foreign key Cucumber tests.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
