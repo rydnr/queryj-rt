@@ -56,7 +56,7 @@ import org.junit.Assert;
  * tests.
  * @param <TF> the template factory class.
  * @param <T> the template class.
- * @param C the context class.
+ * @param <C> the context class.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created 2014/04/14
