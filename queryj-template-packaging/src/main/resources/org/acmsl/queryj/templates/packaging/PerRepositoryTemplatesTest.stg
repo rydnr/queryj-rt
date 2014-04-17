@@ -223,12 +223,12 @@ public class PerRepositoryTemplatesTest
     /**
      * Defines the input tables based on the information provided by the
      * feature.
-     * @param tableInfo the information about the tables.
+     * @param tableInfo the nformation about the tables.
      */
     protected void defineInputTables(
         @NotNull final DataTable tableInfo,
         @NotNull final Map\<String, Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables,
-        @NotNull final RepositoryTestHelper helper)
+        @NotNull final TableTestHelper helper)
     {
         helper.defineInputTables(tableInfo, tables);
     }
