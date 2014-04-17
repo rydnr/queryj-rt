@@ -349,7 +349,7 @@ public class PerCustomResultTemplatesTest
                     }
 
                     @NotNull final MetadataManager metadataManager =
-                        retrieveMetadataManager(engine, result, resultRows, decoratorFactory);
+                        retrieveMetadataManager(engine, result, properties, decoratorFactory);
 
                     new QueryJCommandWrapper\<MetadataManager>(t_Command).setSetting(
                         DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, metadataManager);
