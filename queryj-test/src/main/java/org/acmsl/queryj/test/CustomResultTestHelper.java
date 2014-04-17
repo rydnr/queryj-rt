@@ -91,7 +91,7 @@ public class CustomResultTestHelper
      * @param tableInfo the information about the tables.
      * @param tables the table collection.
      */
-    public void defineInputCustomResults(
+    public void defineInputResults(
         @NotNull final DataCustomResult tableInfo,
         @NotNull final Map<String, CustomResult<String, Attribute<String>, List<Attribute<String>>>> tables)
     {
