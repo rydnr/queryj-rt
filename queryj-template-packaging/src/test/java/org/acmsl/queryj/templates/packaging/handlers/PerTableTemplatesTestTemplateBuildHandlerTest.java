@@ -85,7 +85,9 @@ import java.util.List;
  */
 @RunWith(JUnit4.class)
 public class PerTableTemplatesTestTemplateBuildHandlerTest
-    extends AbstractTemplatesTestTemplateBuildHandlerTest
+    extends AbstractTemplatesTestTemplateBuildHandlerTest<
+                PerTableTemplatesTestTemplateBuildHandler,
+                >
 {
     /**
      * Tests whether retrieveTemplateName() works.
