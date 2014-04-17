@@ -89,7 +89,7 @@ public class TemplateBuildHandlerTemplateWritingHandler
      */
     @NotNull
     @Override
-    protected TemplatePackagingTemplateGenerator
+    public TemplatePackagingTemplateGenerator
         <TemplateBuildHandlerTemplate<DefaultTemplatePackagingContext>, DefaultTemplatePackagingContext>
         retrieveTemplateGenerator(final boolean caching, final int threadCount)
     {
