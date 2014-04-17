@@ -179,9 +179,9 @@ public class CustomResultTestHelper
             {
                 property = convertToProperty(propertyEntry);
 
-            if (property != null)
-            {
-                propertyList = properties.get(property.)
+                if (property != null)
+                {
+                    propertyList = properties.get(property.)
                 properties.put(property.getId(), property);
             }
         }
