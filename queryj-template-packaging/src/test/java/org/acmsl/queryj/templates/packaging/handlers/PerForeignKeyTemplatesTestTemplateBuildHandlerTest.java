@@ -118,6 +118,7 @@ public class PerForeignKeyTemplatesTestTemplateBuildHandlerTest
      * Checks whether retrieveTemplateFactory() retrieves
      * {@link PerForeignKeyTemplatesTestTemplateFactory}.
      */
+    @Override
     @Test
     public void retrieveTemplateFactory_retrieves_the_correct_factory()
     {
