@@ -106,7 +106,7 @@ public class DefaultTemplateChainProviderTemplateWritingHandler
      */
     @NotNull
     @Override
-    protected List<DefaultTemplateChainProviderTemplate<GlobalTemplateContext>> retrieveTemplates(
+    public List<DefaultTemplateChainProviderTemplate<GlobalTemplateContext>> retrieveTemplates(
         @NotNull final QueryJCommand parameters)
         throws QueryJBuildException
     {
