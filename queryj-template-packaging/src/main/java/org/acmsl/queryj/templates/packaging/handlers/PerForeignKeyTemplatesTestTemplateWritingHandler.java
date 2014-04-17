@@ -54,6 +54,8 @@ import org.acmsl.queryj.QueryJCommandWrapper;
  */
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
 import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplate;
+import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplateGenerator;
+import org.acmsl.queryj.templates.packaging.exceptions.MissingTemplatesException;
 
 /*
  * Importing some JetBrains annotations.
