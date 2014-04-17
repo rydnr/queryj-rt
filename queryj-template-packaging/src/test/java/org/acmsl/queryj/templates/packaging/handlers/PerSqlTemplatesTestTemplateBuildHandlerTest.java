@@ -122,6 +122,3 @@ public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
             PerRepositoryTemplatesTestTemplateFactory.getInstance());
     }
 }
-public class PerSqlTemplatesTestTemplateBuildHandlerTest
-{
-}
