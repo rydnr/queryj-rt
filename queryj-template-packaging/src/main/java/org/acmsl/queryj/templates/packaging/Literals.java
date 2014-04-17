@@ -145,5 +145,5 @@ public interface Literals
      * String literal: "PerCustomResultTemplateFactory".
      */
     String PER_CUSTOM_RESULT_TEMPLATE_FACTORY = "PerCustomResultTemplateFactory";
-    String PER_SQL_TEMPLATE_FACTORY = ;
+    String PER_SQL_TEMPLATE_FACTORY = "PerSqlTemplateFactory";
 }
