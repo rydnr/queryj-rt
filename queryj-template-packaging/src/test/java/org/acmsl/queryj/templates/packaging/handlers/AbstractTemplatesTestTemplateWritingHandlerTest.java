@@ -80,7 +80,7 @@ import org.junit.Test;
  */
 public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
     WH extends TemplatePackagingTestWritingHandler
-        <T, GlobalTemplateContext, TemplatePackagingTemplateGenerator<T, GlobalTemplateContext>>,
+        <T, GlobalTemplateContext, TemplatePackagingTemplateGenerator<T, C>>,
     BH extends TemplatePackagingTestBuildHandler<T, TF, C>,
     T extends TemplatePackagingTemplate<C>,
     TF extends TemplatePackagingTemplateFactory<T, C>,
