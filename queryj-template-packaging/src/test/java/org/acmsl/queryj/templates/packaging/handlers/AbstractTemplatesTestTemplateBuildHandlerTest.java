@@ -80,7 +80,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Common bas
+ * Common logic and tests to
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/17 07:34
