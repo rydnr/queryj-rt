@@ -55,7 +55,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 /**
- *
+ * Writing handler for {@link PerForeignKeyTemplatesTestTemplate}s.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/17 09:15
