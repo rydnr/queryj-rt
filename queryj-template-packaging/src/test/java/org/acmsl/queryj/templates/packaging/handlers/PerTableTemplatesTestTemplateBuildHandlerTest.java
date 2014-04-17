@@ -127,7 +127,8 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
     @Test
     public void storeTemplate_stores_the_templates_in_the_command()
     {
-        storeTemplate_stores_the_templates_in_the_command(PerTableTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
+        storeTemplate_stores_the_templates_in_the_command(
+            PerTableTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
     }
 
     /**
