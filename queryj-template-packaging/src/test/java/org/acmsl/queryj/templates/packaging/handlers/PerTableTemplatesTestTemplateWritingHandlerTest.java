@@ -42,7 +42,7 @@ import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 
 /*
- * Importing JetBrains annotations.
+ * Importing QueryJ Template Packaging classes.
  */
 import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplate;
 
