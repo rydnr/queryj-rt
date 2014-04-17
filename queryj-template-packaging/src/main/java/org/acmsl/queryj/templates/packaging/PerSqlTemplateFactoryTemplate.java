@@ -56,10 +56,10 @@ import org.checkthread.annotations.ThreadSafe;
 public class PerSqlTemplateFactoryTemplate<C extends TemplatePackagingContext>
     extends TemplateFactoryTemplate<C>
 {
+    private static final long serialVersionUID = -4060477890430335951L;
     /**
      * The serial version id.
      */
-    private static final long serialVersionUID = -6864648420741642410L;
 
     /**
      * Creates a new instance.
