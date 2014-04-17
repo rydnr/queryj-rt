@@ -137,7 +137,8 @@ public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
     @Test
     public void retrieveTemplateFactory_retrieves_the_correct_factory()
     {
-        retrieveTemplateFactory_retrieves_the_correct_factory(PerRepositoryTemplatesTestTemplateFactory.getInstance());
+        retrieveTemplateFactory_retrieves_the_correct_factory(
+            PerRepositoryTemplatesTestTemplateFactory.getInstance());
     }
 
     /**
