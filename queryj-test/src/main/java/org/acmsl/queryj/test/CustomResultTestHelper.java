@@ -164,7 +164,7 @@ public class CustomResultTestHelper
     @SuppressWarnings("unused")
     public void defineInputProperties(
         @NotNull final DataTable tableInfo,
-        @NotNull final Result<String> result,
+        @NotNull final Map<String, Result<String> result,
         @NotNull final Map<String, List<Property<String>>> properties)
     {
         @NotNull final List<Map<String, String>> propertyEntries = tableInfo.asMaps();
