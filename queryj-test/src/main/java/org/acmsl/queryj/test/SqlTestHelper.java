@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Helper class for per-SQL Cucumber tests.
  *
  * Date: 2014/04/17
  * Time: 11:57
