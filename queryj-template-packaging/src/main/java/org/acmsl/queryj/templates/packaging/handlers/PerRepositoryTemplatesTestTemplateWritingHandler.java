@@ -101,7 +101,7 @@ public class PerRepositoryTemplatesTestTemplateWritingHandler
 
         if (aux == null)
         {
-            throw new MissingTemplatesException("per-foreign-key-templates-test");
+            throw new MissingTemplatesException("per-repository-templates-test");
         }
         else
         {
