@@ -129,10 +129,7 @@ public class CustomResultTestHelper
                 convertToCustomResult(
                     currentResult,
                     tableEntry.get("dao"),
-                    tableEntry.get(PARENT_TABLE),
-                    tableEntry.get(STATIC),
-                    !isNullOrBlank(tableEntry.get(DECORATED)) && Boolean.TRUE.equals(tableEntry.get(DECORATED)),
-                    !isNullOrBlank(tableEntry.get(RELATIONSHIP)) && Boolean.TRUE.equals(tableEntry.get(RELATIONSHIP)));
+                    tableEntry.get("type"));
         }
 
         return result;
