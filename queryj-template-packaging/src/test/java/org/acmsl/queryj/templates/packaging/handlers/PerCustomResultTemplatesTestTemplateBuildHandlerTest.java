@@ -100,7 +100,7 @@ public class PerCustomResultTemplatesTestTemplateBuildHandlerTest
     @Override
     public void retrieveTemplateName_works()
     {
-        retrieveTemplateName_works(Literals.PER_FOREIGN_KEY_TEMPLATES_TEST);
+        retrieveTemplateName_works(Literals.PER_CUSTOM_RESULT_TEMPLATES_TEST);
     }
 
     /**
