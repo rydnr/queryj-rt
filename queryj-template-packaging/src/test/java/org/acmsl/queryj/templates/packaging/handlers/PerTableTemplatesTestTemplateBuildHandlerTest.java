@@ -92,7 +92,6 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
 {
     /**
      * Creates a new build handler instance.
-     *
      * @return such new instance.
      */
     @NotNull
