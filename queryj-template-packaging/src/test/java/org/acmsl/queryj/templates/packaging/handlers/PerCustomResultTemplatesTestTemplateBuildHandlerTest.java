@@ -41,7 +41,6 @@ package org.acmsl.queryj.templates.packaging.handlers;
 import org.acmsl.queryj.templates.packaging.Literals;
 import org.acmsl.queryj.templates.packaging.PerCustomResultTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.PerCustomResultTemplatesTestTemplateFactory;
-import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory;
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
