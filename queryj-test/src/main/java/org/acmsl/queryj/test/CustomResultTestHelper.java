@@ -178,6 +178,7 @@ public class CustomResultTestHelper
 
             if (property != null)
             {
+                propertyList = properties.get(property.get)
                 properties.put(property.getId(), property);
             }
         }
