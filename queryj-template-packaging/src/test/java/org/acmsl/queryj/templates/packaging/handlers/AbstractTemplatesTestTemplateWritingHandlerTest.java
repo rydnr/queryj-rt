@@ -82,7 +82,7 @@ public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
     WH extends TemplatePackagingTestWritingHandler
         <T, GlobalTemplateContext, TemplatePackagingTemplateGenerator<T, GlobalTemplateContext>>,
     BH extends TemplatePackagingTestBuildHandler<T, TF, GlobalTemplateContext>,
-    T extends TemplatePackagingTemplate,
+    T extends TemplatePackagingTemplate<C>,
     TF extends TemplatePackagingTemplateFactory<T, GlobalTemplateContext>,
     C extends TemplatePackagingContext>
 {
