@@ -43,6 +43,8 @@ import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 /**
  * Tests for {@link PerRepositoryTemplateFactoryTemplate}.
@@ -50,6 +52,7 @@ import org.junit.Test;
  * @since 3.0
  * Created: 2014/04/17 12:07
  */
+@RunWith(JUnit4.class)
 public class PerRepositoryTemplateFactoryTemplateTest
 {
     /**
