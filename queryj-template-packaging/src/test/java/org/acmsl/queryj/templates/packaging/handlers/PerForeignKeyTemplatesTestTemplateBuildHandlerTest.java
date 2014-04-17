@@ -84,7 +84,7 @@ import java.util.List;
  */
 @ThreadSafe
 public class PerForeignKeyTemplatesTestTemplateBuildHandlerTest
-
+    extends AbstractTemplatesTestTemplateBuildHandlerTest
 {
     /**
      * Tests whether retrieveTemplateName() works.
