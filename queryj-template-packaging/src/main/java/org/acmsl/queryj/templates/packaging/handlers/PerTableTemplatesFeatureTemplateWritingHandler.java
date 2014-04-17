@@ -94,7 +94,7 @@ public class PerTableTemplatesFeatureTemplateWritingHandler
      */
     @NotNull
     @Override
-    protected TemplatePackagingTemplateGenerator<PerTableTemplatesFeatureTemplate, GlobalTemplateContext> retrieveTemplateGenerator(
+    public TemplatePackagingTemplateGenerator<PerTableTemplatesFeatureTemplate, GlobalTemplateContext> retrieveTemplateGenerator(
         final boolean caching, final int threadCount)
     {
         return new TemplatePackagingTemplateGenerator<PerTableTemplatesFeatureTemplate, GlobalTemplateContext>(caching, threadCount);
