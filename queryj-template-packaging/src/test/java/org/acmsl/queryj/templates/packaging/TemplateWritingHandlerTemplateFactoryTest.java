@@ -122,6 +122,6 @@ public class TemplateWritingHandlerTemplateFactoryTest
     @Test
     public void createTemplate_returns_the_correct_template_for_a_per_sql_template()
     {
-        testCreateTemplate(TemplateDefType.PER_CUSTOM_RESULT, Literals.TEMPLATE_WRITING_HANDLER);
+        testCreateTemplate(TemplateDefType.PER_SQL, Literals.TEMPLATE_WRITING_HANDLER);
     }
 }
