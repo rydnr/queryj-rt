@@ -113,6 +113,7 @@ public abstract class AbstractTemplatesTestTemplateBuildHandlerTest
     /**
      * Tests whether retrieveTemplateName() works.
      */
+    @SuppressWarnings("unused")
     public abstract void retrieveTemplateName_works();
 
     /**
