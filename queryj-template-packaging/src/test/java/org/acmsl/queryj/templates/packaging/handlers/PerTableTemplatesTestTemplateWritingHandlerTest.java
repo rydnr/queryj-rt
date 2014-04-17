@@ -76,6 +76,9 @@ public class PerTableTemplatesTestTemplateWritingHandlerTest
         Assert.assertNotNull(instance.retrieveTemplateGenerator(false, 1));
     }
 
+    /**
+     * Checks the templates
+     */
     @Test
     public void retrieveTemplates_finds_the_templates()
     {
