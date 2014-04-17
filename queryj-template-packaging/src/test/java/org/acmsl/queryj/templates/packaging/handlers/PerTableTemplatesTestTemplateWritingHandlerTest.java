@@ -49,6 +49,7 @@ import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplate;
 /*
  * Importing Apache Commons Configuration classes.
  */
+import org.acmsl.queryj.templates.packaging.PerTableTemplatesTestTemplateFactory;
 import org.apache.commons.configuration.PropertiesConfiguration;
 
 /*
@@ -74,7 +75,7 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class PerTableTemplatesTestTemplateWritingHandlerTest
     extends AbstractTemplatesTestTemplateWritingHandlerTest<
-    PerTableTemplatesTestTemplateWritingHandler, PerTableTemplatesTestTemplateWritingHandler>
+    PerTableTemplatesTestTemplateWritingHandler, PerTableTemplatesTestTemplateBuildHandler, PerTableTemplatesTestTemplate, PerTableTemplatesTestTemplateFactory>
 {
     /**
      * Checks retrieveTemplateGenerator retrieves a not-null instance.
