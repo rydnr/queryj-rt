@@ -49,7 +49,7 @@ import org.checkthread.annotations.ThreadSafe;
  * Handler bundle for {@link org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplate}s.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
- * Created: 2014/04/17 10:18
+ * Created: 2014/04/17 10:22
  */
 @ThreadSafe
 public class PerRepositoryTemplatesTestTemplateHandlerBundle
