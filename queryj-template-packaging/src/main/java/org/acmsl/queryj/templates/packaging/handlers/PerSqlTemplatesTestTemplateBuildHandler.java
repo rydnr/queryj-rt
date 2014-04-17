@@ -149,20 +149,6 @@ public class PerRepositoryTemplatesTestTemplateBuildHandler
             .setSetting(TEMPLATES_KEY, template);
     }
 }
-/*
- * Importing JetBrains annotations.
- */
-import org.jetbrains.annotations.NotNull;
-
-/*
- * Importing checkthread.org annotations.
- */
-import org.checkthread.annotations.ThreadSafe;
-
-/**
- *
- * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
- * @since 3.0
  * Created: 2014/04/17 08:17
  */
 @ThreadSafe
