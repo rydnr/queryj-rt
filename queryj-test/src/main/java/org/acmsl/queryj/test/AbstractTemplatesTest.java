@@ -451,6 +451,35 @@ public abstract class AbstractTemplatesTest<G, F>
     }
 
     /**
+     * Specifies the results.
+     * @param results the results.
+     */
+    protected final void immutableSetResults(@NotNull final Map<String, Result<String>> results)
+    {
+        m__mResults = results;
+    }
+
+    /**
+     * Specifies the results.
+     * @param results the results.
+     */
+    @SuppressWarnings("unused")
+    protected void setResults(@NotNull final Map<String, Result<String>> results)
+    {
+        immutableSetResults(results);
+    }
+
+    /**
+     * Retrieves the tables.
+     * @return such information.
+     */
+    @NotNull
+    protected Map<String, Result<String>> getResults()
+    {
+        return m__mResults;
+    }
+
+    /**
      * Specifies the engine name.
      * @param name such name.
      */
