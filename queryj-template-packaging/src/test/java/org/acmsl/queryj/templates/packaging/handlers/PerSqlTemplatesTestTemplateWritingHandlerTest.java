@@ -23,11 +23,11 @@
 
  ******************************************************************************
  *
- * Filename: PerRepositoryTemplatesTestTemplateWritingHandlerTest.java
+ * Filename: PerSqlTemplatesTestTemplateWritingHandlerTest.java
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Tests for PerRepositoryTemplatesTestTemplateWritingHandler.
+ * Description: Tests for PerSqlTemplatesTestTemplateWritingHandler.
  *
  * Date: 2014/04/17
  * Time: 10:14
@@ -39,8 +39,8 @@ package org.acmsl.queryj.templates.packaging.handlers;
  * Importing QueryJ Template Packaging classes.
  */
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
-import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplate;
-import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory;
+import org.acmsl.queryj.templates.packaging.PerSqlTemplatesTestTemplate;
+import org.acmsl.queryj.templates.packaging.PerSqlTemplatesTestTemplateFactory;
 
 /*
  * Importing JetBrains annotations.
@@ -56,18 +56,18 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 /**
- * Tests for {@link PerRepositoryTemplatesTestTemplateWritingHandler}.
+ * Tests for {@link PerSqlTemplatesTestTemplateWritingHandler}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/17 10:14
  */
 @RunWith(JUnit4.class)
-public class PerRepositoryTemplatesTestTemplateWritingHandlerTest
+public class PerSqlTemplatesTestTemplateWritingHandlerTest
     extends AbstractTemplatesTestTemplateWritingHandlerTest<
-    PerRepositoryTemplatesTestTemplateWritingHandler,
-    PerRepositoryTemplatesTestTemplateBuildHandler,
-    PerRepositoryTemplatesTestTemplate,
-    PerRepositoryTemplatesTestTemplateFactory,
+    PerSqlTemplatesTestTemplateWritingHandler,
+    PerSqlTemplatesTestTemplateBuildHandler,
+    PerSqlTemplatesTestTemplate,
+    PerSqlTemplatesTestTemplateFactory,
     GlobalTemplateContext>
 {
     /**
@@ -76,9 +76,9 @@ public class PerRepositoryTemplatesTestTemplateWritingHandlerTest
      */
     @NotNull
     @Override
-    protected PerRepositoryTemplatesTestTemplateBuildHandler createBuildHandlerInstance()
+    protected PerSqlTemplatesTestTemplateBuildHandler createBuildHandlerInstance()
     {
-        return new PerRepositoryTemplatesTestTemplateBuildHandler();
+        return new PerSqlTemplatesTestTemplateBuildHandler();
     }
 
     /**
@@ -87,9 +87,9 @@ public class PerRepositoryTemplatesTestTemplateWritingHandlerTest
      */
     @NotNull
     @Override
-    protected PerRepositoryTemplatesTestTemplateWritingHandler createInstance()
+    protected PerSqlTemplatesTestTemplateWritingHandler createInstance()
     {
-        return new PerRepositoryTemplatesTestTemplateWritingHandler();
+        return new PerSqlTemplatesTestTemplateWritingHandler();
     }
 
     /**
@@ -98,8 +98,8 @@ public class PerRepositoryTemplatesTestTemplateWritingHandlerTest
      */
     @NotNull
     @Override
-    protected PerRepositoryTemplatesTestTemplate createTemplateMock()
+    protected PerSqlTemplatesTestTemplate createTemplateMock()
     {
-        return EasyMock.createNiceMock(PerRepositoryTemplatesTestTemplate.class);
+        return EasyMock.createNiceMock(PerSqlTemplatesTestTemplate.class);
     }
 }
