@@ -89,6 +89,29 @@ public class PerForeignKeyTemplatesTestTemplateBuildHandlerTest
                 PerForeignKeyTemplatesTestTemplate,
                 PerForeignKeyTemplatesTestTemplateFactory>
 {
+    /**
+     * Creates a new build handler instance.
+     *
+     * @return such new instance.
+     */
+    @NotNull
+    @Override
+    protected PerForeignKeyTemplatesTestTemplateBuildHandler createInstance()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
+     * Retrieves a new template mock.
+     *
+     * @return such mock.
+     */
+    @NotNull
+    @Override
+    protected PerForeignKeyTemplatesTestTemplate createTemplateMock()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
 
     /**
      * Tests whether retrieveTemplateName() works.
