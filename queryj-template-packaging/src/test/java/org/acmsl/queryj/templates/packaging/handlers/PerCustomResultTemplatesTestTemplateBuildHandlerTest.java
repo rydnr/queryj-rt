@@ -105,6 +105,7 @@ public class PerCustomResultTemplatesTestTemplateBuildHandlerTest
     {
         //To change body of implemented methods use File | Settings | File Templates.
     }
+
     /**
      * Checks whether retrieveTemplateFactory() retrieves
      * {@link org.acmsl.queryj.templates.packaging.PerCustomResultTemplatesFeatureTemplateFactory}.
