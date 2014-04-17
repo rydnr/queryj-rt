@@ -240,6 +240,7 @@ public abstract class AbstractTemplatesTest<G, F>
         immutableSetParameters(new HashMap<>());
         immutableSetRows(new HashMap<>());
         immutableSetResults(new HashMap<>());
+        immutableSetProperties(new HashMap<>());
     }
 
     /**
