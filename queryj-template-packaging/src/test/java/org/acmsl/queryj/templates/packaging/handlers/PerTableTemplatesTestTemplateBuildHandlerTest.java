@@ -87,8 +87,8 @@ import java.util.List;
 public class PerTableTemplatesTestTemplateBuildHandlerTest
     extends AbstractTemplatesTestTemplateBuildHandlerTest<
                 PerTableTemplatesTestTemplateBuildHandler,
-    PerTableTemplatesTestTemplate,
-    PerTableTemplatesTestTemplateFactory>
+                PerTableTemplatesTestTemplate,
+                PerTableTemplatesTestTemplateFactory>
 {
     /**
      * Tests whether retrieveTemplateName() works.
