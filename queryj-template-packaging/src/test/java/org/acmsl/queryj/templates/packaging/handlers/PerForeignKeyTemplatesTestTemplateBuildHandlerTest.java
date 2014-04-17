@@ -36,11 +36,6 @@
 package org.acmsl.queryj.templates.packaging.handlers;
 
 /*
- * Importing Apache Commons Configuration classes.
- */
-import org.apache.commons.configuration.PropertiesConfiguration;
-
-/*
  * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.templates.packaging.Literals;
