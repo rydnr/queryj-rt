@@ -46,6 +46,7 @@ import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.apache.commons.configuration.PropertiesConfiguration;
+
 /*
  * Importing JetBrains annotations.
  */
