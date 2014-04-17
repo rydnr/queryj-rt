@@ -109,6 +109,7 @@ public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
      * Checks the templates built by the build handler are later
      * found by the writing handler.
      */
+    @SuppressWarnings("unused")
     @Test
     public void retrieveTemplates_finds_the_templates()
     {
