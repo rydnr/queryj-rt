@@ -96,6 +96,7 @@ public class PerForeignKeyTemplatesTestTemplateBuildHandlerTest
     /**
      * Tests whether retrieveTemplateName() works.
      */
+    @Override
     @Test
     public void retrieveTemplateName_works()
     {
