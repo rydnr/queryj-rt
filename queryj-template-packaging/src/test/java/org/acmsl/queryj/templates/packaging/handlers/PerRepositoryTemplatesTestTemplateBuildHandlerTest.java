@@ -126,19 +126,7 @@ public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
     @Test
     public void storeTemplate_stores_the_templates_in_the_command()
     {
-        storeTemplate_stores_the_templates_in_the_command();
-        @NotNull final PerRepositoryTemplatesTestTemplateBuildHandler instance =
-            new PerRepositoryTemplatesTestTemplateBuildHandler();
-
-        @NotNull final QueryJCommand command =
-            new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
-
-        @NotNull final PerRepositoryTemplatesTestTemplate template =
-            EasyMock.createNiceMock(PerRepositoryTemplatesTestTemplate.class);
-
-        instance.storeTemplate(template, command);
-
-        Assert.assertEquals(template, command.getSetting(PerRepositoryTemplatesTestTemplateBuildHandler.TEMPLATES_KEY));
+        storeTemplate_stores_the_templates_in_the_command(PerRepositoryTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
     }
 
     /**
