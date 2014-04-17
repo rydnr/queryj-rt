@@ -42,8 +42,8 @@ import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.templates.packaging.Literals;
-import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplate;
-import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplateFactory;
+import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplate;
+import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.easymock.EasyMock;
@@ -76,8 +76,8 @@ public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
     @Test
     public void retrieveTemplateName_works()
     {
-        @NotNull final PerForeignKeyTemplatesTestTemplateBuildHandler instance =
-            new PerForeignKeyTemplatesTestTemplateBuildHandler();
+        @NotNull final PerRepositoryTemplatesTestTemplateBuildHandler instance =
+            new PerRepositoryTemplatesTestTemplateBuildHandler();
 
         @NotNull final QueryJCommand command = EasyMock.createNiceMock(QueryJCommand.class);
 
@@ -90,31 +90,31 @@ public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
     @Test
     public void storeTemplate_stores_the_templates_in_the_command()
     {
-        @NotNull final PerForeignKeyTemplatesTestTemplateBuildHandler instance =
-            new PerForeignKeyTemplatesTestTemplateBuildHandler();
+        @NotNull final PerRepositoryTemplatesTestTemplateBuildHandler instance =
+            new PerRepositoryTemplatesTestTemplateBuildHandler();
 
         @NotNull final QueryJCommand command =
             new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
-        @NotNull final PerForeignKeyTemplatesTestTemplate template =
-            EasyMock.createNiceMock(PerForeignKeyTemplatesTestTemplate.class);
+        @NotNull final PerRepositoryTemplatesTestTemplate template =
+            EasyMock.createNiceMock(PerRepositoryTemplatesTestTemplate.class);
 
         instance.storeTemplate(template, command);
 
-        Assert.assertEquals(template, command.getSetting(PerForeignKeyTemplatesTestTemplateBuildHandler.TEMPLATES_KEY));
+        Assert.assertEquals(template, command.getSetting(PerRepositoryTemplatesTestTemplateBuildHandler.TEMPLATES_KEY));
     }
 
     /**
      * Checks whether retrieveTemplateFactory() retrieves
-     * {@link org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplateFactory}.
+     * {@link org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory}.
      */
     @Test
     public void retrieveTemplateFactory_retrieves_the_correct_factory()
     {
-        @NotNull final PerForeignKeyTemplatesTestTemplateBuildHandler instance =
-            new PerForeignKeyTemplatesTestTemplateBuildHandler();
+        @NotNull final PerRepositoryTemplatesTestTemplateBuildHandler instance =
+            new PerRepositoryTemplatesTestTemplateBuildHandler();
 
-        Assert.assertEquals(PerForeignKeyTemplatesTestTemplateFactory.getInstance(), instance.retrieveTemplateFactory());
+        Assert.assertEquals(PerRepositoryTemplatesTestTemplateFactory.getInstance(), instance.retrieveTemplateFactory());
     }
 
     /**
@@ -123,8 +123,8 @@ public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
     @Test
     public void retrieveOutputPackage_returns_the_cucumber_package()
     {
-        @NotNull final PerForeignKeyTemplatesTestTemplateBuildHandler instance =
-            new PerForeignKeyTemplatesTestTemplateBuildHandler();
+        @NotNull final PerRepositoryTemplatesTestTemplateBuildHandler instance =
+            new PerRepositoryTemplatesTestTemplateBuildHandler();
 
         @NotNull final QueryJCommand command = EasyMock.createNiceMock(QueryJCommand.class);
 
@@ -138,14 +138,14 @@ public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
     public void buildContext_builds_a_global_context()
         throws IOException
     {
-        @NotNull final PerForeignKeyTemplatesTestTemplateBuildHandler instance =
-            new PerForeignKeyTemplatesTestTemplateBuildHandler();
+        @NotNull final PerRepositoryTemplatesTestTemplateBuildHandler instance =
+            new PerRepositoryTemplatesTestTemplateBuildHandler();
 
         @NotNull final QueryJCommand command =
             new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
         new QueryJCommandWrapper<File>(command).setSetting(
-            PerForeignKeyTemplatesTestTemplate.OUTPUT_DIR_FOR_TESTS, new File("/"));
+            PerRepositoryTemplatesTestTemplate.OUTPUT_DIR_FOR_TESTS, new File("/"));
 
         @NotNull final List<TemplateDef<String>> templateDefs = new ArrayList<>(0);
 
