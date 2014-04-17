@@ -57,5 +57,8 @@ import org.junit.runners.JUnit4;
 public class PerTableTemplatesTestTemplateWritingHandlerTest
 {
     @Test
-    public void
+    public void retrieveTemplateGenerator_works()
+    {
+        @NotNull final PerTableTemplatesTestTemplateWritingHandlerTest
+    }
 }
