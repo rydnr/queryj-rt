@@ -50,7 +50,15 @@ import org.acmsl.queryj.templates.packaging.Literals;
 import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplateFactory;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.apache.commons.configuration.PropertiesConfiguration;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
