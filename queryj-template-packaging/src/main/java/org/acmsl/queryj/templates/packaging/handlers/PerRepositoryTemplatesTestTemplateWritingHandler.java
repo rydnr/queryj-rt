@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Writing handler for PerForeignKeyTemplatesTestTemplates.
+ * Description: Writing handler for PerRepositoryTemplatesTestTemplates.
  *
  * Date: 2014/04/17
  * Time: 09:15
@@ -41,7 +41,7 @@ package org.acmsl.queryj.templates.packaging.handlers;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
-import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplate;
+import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplateGenerator;
 import org.acmsl.queryj.templates.packaging.exceptions.MissingTemplatesException;
 import org.jetbrains.annotations.NotNull;
@@ -55,7 +55,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 /**
- * Writing handler for {@link PerForeignKeyTemplatesTestTemplate}s.
+ * Writing handler for {@link PerRepositoryTemplatesTestTemplate}s.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/17 09:15
@@ -63,14 +63,14 @@ import java.util.List;
 @ThreadSafe
 public class PerRepositoryTemplatesTestTemplateWritingHandler
     extends TemplatePackagingTestWritingHandler
-                <PerForeignKeyTemplatesTestTemplate,
+                <PerRepositoryTemplatesTestTemplate,
                     GlobalTemplateContext,
-                    TemplatePackagingTemplateGenerator<PerForeignKeyTemplatesTestTemplate, GlobalTemplateContext>>
+                    TemplatePackagingTemplateGenerator<PerRepositoryTemplatesTestTemplate, GlobalTemplateContext>>
 {
     /**
-     * Creates a new writing handler for {@link PerForeignKeyTemplatesTestTemplate templates}.
+     * Creates a new writing handler for {@link PerRepositoryTemplatesTestTemplate templates}.
      */
-    public PerForeignKeyTemplatesTestTemplateWritingHandler() {}
+    public PerRepositoryTemplatesTestTemplateWritingHandler() {}
 
     /**
      * Retrieves the template generator.
@@ -80,7 +80,7 @@ public class PerRepositoryTemplatesTestTemplateWritingHandler
      */
     @NotNull
     @Override
-    public TemplatePackagingTemplateGenerator<PerForeignKeyTemplatesTestTemplate, GlobalTemplateContext> retrieveTemplateGenerator(
+    public TemplatePackagingTemplateGenerator<PerRepositoryTemplatesTestTemplate, GlobalTemplateContext> retrieveTemplateGenerator(
         final boolean caching, final int threadCount)
     {
         return new TemplatePackagingTemplateGenerator<>(caching, threadCount);
@@ -91,13 +91,13 @@ public class PerRepositoryTemplatesTestTemplateWritingHandler
      */
     @NotNull
     @Override
-    public List<PerForeignKeyTemplatesTestTemplate> retrieveTemplates(@NotNull final QueryJCommand parameters)
+    public List<PerRepositoryTemplatesTestTemplate> retrieveTemplates(@NotNull final QueryJCommand parameters)
     {
-        @NotNull final List<PerForeignKeyTemplatesTestTemplate> result;
+        @NotNull final List<PerRepositoryTemplatesTestTemplate> result;
 
-        @Nullable final List<PerForeignKeyTemplatesTestTemplate> aux =
-            new QueryJCommandWrapper<PerForeignKeyTemplatesTestTemplate>(parameters)
-                .getListSetting(PerForeignKeyTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
+        @Nullable final List<PerRepositoryTemplatesTestTemplate> aux =
+            new QueryJCommandWrapper<PerRepositoryTemplatesTestTemplate>(parameters)
+                .getListSetting(PerRepositoryTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
 
         if (aux == null)
         {
