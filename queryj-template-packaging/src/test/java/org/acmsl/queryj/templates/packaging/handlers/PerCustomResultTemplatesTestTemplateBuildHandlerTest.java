@@ -88,26 +88,4 @@ public class PerCustomResultTemplatesTestTemplateBuildHandlerTest
     {
         //To change body of implemented methods use File | Settings | File Templates.
     }
-
-    /**
-     * Creates a new build handler instance.
-     * @return such new instance.
-     */
-    @NotNull
-    @Override
-    protected PerCustomResultTemplatesTestTemplateBuildHandler createInstance()
-    {
-        return new PerCustomResultTemplatesTestTemplateBuildHandler();
-    }
-
-    /**
-     * Retrieves a new template mock.
-     * @return such mock.
-     */
-    @NotNull
-    @Override
-    protected PerCustomResultTemplatesTestTemplate createTemplateMock()
-    {
-        return EasyMock.createNiceMock(PerCustomResultTemplatesTestTemplate.class);
-    }
 }
