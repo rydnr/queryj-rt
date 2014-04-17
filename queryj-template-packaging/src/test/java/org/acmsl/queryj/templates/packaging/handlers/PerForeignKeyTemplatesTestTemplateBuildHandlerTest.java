@@ -126,7 +126,8 @@ public class PerForeignKeyTemplatesTestTemplateBuildHandlerTest
     @Test
     public void storeTemplate_stores_the_templates_in_the_command()
     {
-        storeTemplate_stores_the_templates_in_the_command(PerForeignKeyTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
+        storeTemplate_stores_the_templates_in_the_command(
+            PerForeignKeyTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
     }
 
     /**
