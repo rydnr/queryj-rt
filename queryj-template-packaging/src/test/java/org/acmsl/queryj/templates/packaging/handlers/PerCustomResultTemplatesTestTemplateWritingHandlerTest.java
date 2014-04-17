@@ -53,7 +53,5 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class PerCustomResultTemplatesTestTemplateWritingHandlerTest
-    extends AbstractTemplatesTestTemplateWritingHandlerTest<
-    PerCu>
 {
 }
