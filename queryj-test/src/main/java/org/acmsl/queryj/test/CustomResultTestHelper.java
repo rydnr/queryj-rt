@@ -151,4 +151,63 @@ public class CustomResultTestHelper
     {
         return new ResultElement<>(id, type);
     }
+
+
+    /**
+     * Defines the input tables based on the information provided by the
+     * feature.
+     * @param tableInfo the information about the tables.
+     * @param tables the table collection.
+     */
+    @SuppressWarnings("unused")
+    public void defineInputResults(
+        @NotNull final DataTable tableInfo,
+        @NotNull final Map<String, Result<String>> tables)
+    {
+        @NotNull final List<Map<String, String>> tableEntries = tableInfo.asMaps();
+
+        @Nullable Result<String> result;
+
+        for (@NotNull final Map<String, String> tableEntry: tableEntries)
+        {
+            result = convertToCustomResult(tableEntry);
+
+            if (result != null)
+            {
+                tables.put(result.getId(), result);
+            }
+        }
+    }
+
+    /**
+     * Converts given table information to a {@link Result}.
+     * @param tableEntry the table information.
+     * @return the {@link Result} instance.
+     */
+    @Nullable
+    protected Result<String> convertToCustomResult(@NotNull final Map<String, String> tableEntry)
+    {
+        @Nullable Result<String> result = null;
+
+        @Nullable final String id =  tableEntry.get("id");
+
+        if (id != null)
+        {
+            result = convertToCustomResult(id, tableEntry.get("type"));
+        }
+
+        return result;
+    }
+
+    /**
+     * Creates a new {@link Result}.
+     * @param id the id.
+     * @param type the type.
+     * @return the {@link Result} instance.
+     */
+    @Nullable
+    protected Result<String> convertToCustomResult(@NotNull final String id, @NotNull final String type)
+    {
+        return new ResultElement<>(id, type);
+    }
 }
