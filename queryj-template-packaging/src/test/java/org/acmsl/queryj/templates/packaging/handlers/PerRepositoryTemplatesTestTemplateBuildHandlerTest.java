@@ -46,6 +46,7 @@ import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.apache.commons.configuration.PropertiesConfiguration;
+import org.checkthread.annotations.ThreadSafe;
 import org.easymock.EasyMock;
 /*
  * Importing JetBrains annotations.
@@ -55,7 +56,7 @@ import org.jetbrains.annotations.NotNull;
 /*
  * Importing checkthread.org annotations.
  */
-import org.checkthread.annotations.ThreadSafe;
+import org.easymock.EasyMock;
 import org.junit.Assert;
 import org.junit.Test;
 
