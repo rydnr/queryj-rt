@@ -69,7 +69,7 @@ public class PerCustomResultTemplatesTestTemplateBuildHandlerTest
     @Override
     protected PerCustomResultTemplatesTestTemplateBuildHandler createInstance()
     {
-        return new
+        return new PerCustomResultTemplatesTestTemplateBuildHandler();
     }
 
     /**
