@@ -58,12 +58,12 @@ public class SqlTestHelper
     /**
      * Singleton implementation to avoid double-locking check.
      */
-    protected static final class TableTestHelperSingletonContainer
+    protected static final class SqlTestHelperSingletonContainer
     {
         /**
          * The actual singleton.
          */
-        public static final TableTestHelper SINGLETON = new TableTestHelper();
+        public static final SqlTestHelper SINGLETON = new SqlTestHelper();
     }
 
     /**
@@ -72,8 +72,8 @@ public class SqlTestHelper
      * @return such instance.
      */
     @NotNull
-    public static TableTestHelper getInstance()
+    public static SqlTestHelper getInstance()
     {
-        return TableTestHelperSingletonContainer.SINGLETON;
+        return SqlTestHelperSingletonContainer.SINGLETON;
     }
 }
