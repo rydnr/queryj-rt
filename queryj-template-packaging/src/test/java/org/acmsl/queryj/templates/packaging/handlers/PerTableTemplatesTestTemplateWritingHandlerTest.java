@@ -38,6 +38,7 @@ package org.acmsl.queryj.templates.packaging.handlers;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplateGenerator;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -62,6 +63,6 @@ public class PerTableTemplatesTestTemplateWritingHandlerTest
         @NotNull final PerTableTemplatesTestTemplateWritingHandler instance =
             new PerTableTemplatesTestTemplateWritingHandler();
 
-        Assert.assertTrue(instance.retrieveTemplateGenerator(false, 1))
+        Assert.assertTrue(instance.retrieveTemplateGenerator(false, 1) instanceof TemplatePackagingTemplateGenerator.class);
     }
 }
