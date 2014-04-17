@@ -66,7 +66,7 @@ public abstract class AbstractTemplatesTestTemplateWritingHandlerTest
      * @return such instance.
      */
     @NotNull
-    protected abstract
+    protected abstract WH create
     /**
      * Checks retrieveTemplateGenerator retrieves a not-null instance.
      * Redundant check since it's annotated with @NotNull.
