@@ -233,6 +233,7 @@ public abstract class AbstractTemplatesTest<G, F>
         immutableSetSqlList(new ArrayList<>());
         immutableSetParameters(new HashMap<>());
         immutableSetRows(new HashMap<>());
+        immutableSetResults(new HashMap<>());
     }
 
     /**
