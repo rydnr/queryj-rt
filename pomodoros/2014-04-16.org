@@ -82,7 +82,7 @@
 *** Add case to TemplateFactoryTemplateFactory
 **** DONE #474
 **** DONE #475
-**** TODO #476
+**** DONE #476
 **** TODO #477
 *** Add case to TemplateWritingHandlerTemplateFactory
 **** TODO #474
