@@ -41,7 +41,7 @@ package org.acmsl.queryj.test;
 import cucumber.api.DataTable;
 
 /*
- * Importing JetBrains annotations.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.ResultElement;
