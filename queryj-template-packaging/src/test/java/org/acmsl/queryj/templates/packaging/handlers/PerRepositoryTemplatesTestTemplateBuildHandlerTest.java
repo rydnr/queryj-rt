@@ -98,7 +98,7 @@ public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
     @Override
     protected PerRepositoryTemplatesTestTemplateBuildHandler createInstance()
     {
-        new PerRepositoryTemplatesTestTemplateBuildHandler()
+        new PerRepositoryTemplatesTestTemplateBuildHandler();
     }
 
     /**
