@@ -78,6 +78,6 @@ public class PerRepositoryTemplateFactoryTemplate<C extends TemplatePackagingCon
     @Override
     public String getTemplateName()
     {
-        return Literals.PER_REPOSITORY_TEMPLATE_FACTORY;
+        return Literals.PER_CUSTOM_RESULT_TEMPLATE_FACTORY;
     }
 }
