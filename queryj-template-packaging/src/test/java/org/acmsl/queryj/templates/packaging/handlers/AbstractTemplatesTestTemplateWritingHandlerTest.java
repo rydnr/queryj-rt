@@ -82,8 +82,7 @@ public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
     @Test
     public void retrieveTemplates_finds_the_templates()
     {
-        @NotNull final WH instance =
-            new PerTableTemplatesTestTemplateWritingHandler();
+        @NotNull final WH instance = createInstance();
 
         @NotNull final PerTableTemplatesTestTemplateBuildHandler buildHandler =
             new PerTableTemplatesTestTemplateBuildHandler();
