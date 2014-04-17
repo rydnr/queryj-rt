@@ -65,6 +65,7 @@ import org.junit.Test;
  * @param <WH> the writing handler class.
  * @param <BH> the build handler class.
  * @param <T> the template class.
+ * @param <TF> the template factory class.
  */
 @ThreadSafe
 public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
