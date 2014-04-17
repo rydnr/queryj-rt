@@ -97,7 +97,7 @@ public class TemplateWritingHandlerTemplateFactory
             case PER_FOREIGN_KEY:
                 result = new PerForeignKeyTemplateWritingHandlerTemplate<>(context);
                 break;
-            case PER_FOREIGN_KEY:
+            case PER_REPOSITORY:
                 result = new PerForeignKeyTemplateWritingHandlerTemplate<>(context);
                 break;
             default:
