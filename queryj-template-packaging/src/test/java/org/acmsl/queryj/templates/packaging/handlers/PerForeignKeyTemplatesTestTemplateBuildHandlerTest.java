@@ -43,13 +43,9 @@ import org.apache.commons.configuration.PropertiesConfiguration;
 /*
  * Importing QueryJ Core classes.
  */
-import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
-import org.acmsl.queryj.QueryJCommand;
-import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.templates.packaging.Literals;
 import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplateFactory;
-import org.acmsl.queryj.templates.packaging.TemplateDef;
 
 /*
  * Importing JetBrains annotations.
