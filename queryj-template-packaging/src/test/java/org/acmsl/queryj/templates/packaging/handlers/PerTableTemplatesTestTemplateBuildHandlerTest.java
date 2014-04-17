@@ -111,7 +111,7 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
     @Override
     protected PerTableTemplatesTestTemplate createTemplateMock()
     {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return EasyMock.createNiceMock(PerTableTemplatesTestTemplate.class);
     }
 
     /**
