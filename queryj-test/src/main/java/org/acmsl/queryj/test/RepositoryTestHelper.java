@@ -39,7 +39,6 @@ package org.acmsl.queryj.test;
  * Importing JetBrains annotations.
  */
 import cucumber.api.DataTable;
-import org.acmsl.queryj.metadata.vo.Repository;
 import org.jetbrains.annotations.NotNull;
 
 /*
