@@ -40,6 +40,7 @@ package org.acmsl.queryj.templates.packaging.handlers;
  */
 import org.acmsl.queryj.templates.packaging.PerCustomResultTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.PerCustomResultTemplatesTestTemplateFactory;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -79,6 +80,6 @@ public class PerCustomResultTemplatesTestTemplateBuildHandlerTest
     @Override
     protected PerCustomResultTemplatesTestTemplate createTemplateMock()
     {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return EasyMock.createNiceMock()
     }
 }
