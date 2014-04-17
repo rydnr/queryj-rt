@@ -73,7 +73,8 @@ import org.junit.runners.JUnit4;
  */
 @RunWith(JUnit4.class)
 public class PerTableTemplatesTestTemplateWritingHandlerTest
-    extends AbstractTemplatesTestTemplateWritingHandlerTest<>
+    extends AbstractTemplatesTestTemplateWritingHandlerTest<
+    PerTableTemplatesTestTemplateWritingHandler>
 {
     /**
      * Checks retrieveTemplateGenerator retrieves a not-null instance.
