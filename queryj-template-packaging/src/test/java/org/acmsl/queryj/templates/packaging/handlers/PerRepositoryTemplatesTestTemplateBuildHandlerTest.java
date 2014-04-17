@@ -97,7 +97,7 @@ public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
 
         @NotNull final QueryJCommand command = EasyMock.createNiceMock(QueryJCommand.class);
 
-        Assert.assertEquals(Literals.PER_FOREIGN_KEY_TEMPLATES_TEST, instance.retrieveTemplateName(command));
+        Assert.assertEquals(Literals.PER_REPOSITORY_TEMPLATES_TEST, instance.retrieveTemplateName(command));
     }
 
     /**
