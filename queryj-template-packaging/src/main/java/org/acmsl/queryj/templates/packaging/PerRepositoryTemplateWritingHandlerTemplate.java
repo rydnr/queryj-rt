@@ -79,6 +79,6 @@ public class PerRepositoryTemplateWritingHandlerTemplate<C extends TemplatePacka
     @Override
     public String getTemplateName()
     {
-        return Literals.PER_FOREIGN_KEY_TEMPLATE_WRITING_HANDLER;
+        return Literals.PER_REPOSITORY_TEMPLATE_WRITING_HANDLER;
     }
 }
