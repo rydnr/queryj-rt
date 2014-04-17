@@ -76,6 +76,13 @@ public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
     protected abstract WH createInstance();
 
     /**
+     * Creates a new writing handler instance.
+     * @return such instance.
+     */
+    @NotNull
+    protected abstract WH createInstance();
+
+    /**
      * Checks the templates built by the build handler are later
      * found by the writing handler.
      */
