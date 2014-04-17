@@ -116,7 +116,7 @@ public class PerForeignKeyTemplatesTestTemplateWritingHandler
      */
     @NotNull
     @Override
-    protected List<PerForeignKeyTemplatesTestTemplate> retrieveTemplates(@NotNull final QueryJCommand parameters)
+    public List<PerForeignKeyTemplatesTestTemplate> retrieveTemplates(@NotNull final QueryJCommand parameters)
     {
         @NotNull final List<PerForeignKeyTemplatesTestTemplate> result;
 
