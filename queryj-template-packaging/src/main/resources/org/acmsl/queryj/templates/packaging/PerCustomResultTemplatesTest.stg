@@ -337,102 +337,103 @@ public class PerCustomResultTemplatesTest
             {
                 if (result != null)
                 {
-                @Nullable List\<Row\<String\>> resultRows = rows.get(result.getName());
+                    @Nullable List\<Row\<String\>> resultRows = rows.get(result.getName());
 
-                if (resultRows == null)
-                {
-                    resultRows = new ArrayList\<>(0);
-                }
+                    if (resultRows == null)
+                    {
+                        resultRows = new ArrayList\<>(0);
+                    }
 
-                @NotNull final MetadataManager metadataManager =
-                    retrieveMetadataManager(engine, result, resultRows, decoratorFactory);
+                    @NotNull final MetadataManager metadataManager =
+                        retrieveMetadataManager(engine, result, resultRows, decoratorFactory);
 
-                new QueryJCommandWrapper\<MetadataManager>(t_Command).setSetting(
-                    DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, metadataManager);
+                    new QueryJCommandWrapper\<MetadataManager>(t_Command).setSetting(
+                        DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, metadataManager);
 
-                @Nullable final PerCustomResultTemplateFactory\<? extends PerCustomResultTemplate\<PerCustomResultTemplateContext>, PerCustomResultTemplateContext> templateFactory =
-                    retrieveTemplateFactory(templateName);
+                    @Nullable final PerCustomResultTemplateFactory\<? extends PerCustomResultTemplate\<PerCustomResultTemplateContext>, PerCustomResultTemplateContext> templateFactory =
+                        retrieveTemplateFactory(templateName);
 
-                Assert.assertNotNull("No template factory found for " + templateName, templateFactory);
+                    Assert.assertNotNull("No template factory found for " + templateName, templateFactory);
 
-                @NotNull final String packageName =
-                    resolvePackage(PACKAGE_MAPPINGS.get(templateName), result.getName(), resolveEngine(engine));
+                    @NotNull final String packageName =
+                        resolvePackage(PACKAGE_MAPPINGS.get(templateName), result.getName(), resolveEngine(engine));
 
-                @Nullable final PerCustomResultTemplate\<PerCustomResultTemplateContext> template =
-                    templateFactory.createTemplate(
-                        t_Command,
-                        decoratorFactory,
-                        packageName,
+                    @Nullable final PerCustomResultTemplate\<PerCustomResultTemplateContext> template =
+                        templateFactory.createTemplate(
+                            t_Command,
+                            decoratorFactory,
+                            packageName,
+                            result.getName(),
+                            properties);
+
+                    Assert.assertNotNull("No template found for " + templateName, template);
+
+                    File outputDir = null;
+
+                    try
+                    {
+                        rootFolder.create();
+
+                        @NotNull final String[] packages = packageName.split("\\\.");
+                        @NotNull final StringBuilder folder = new StringBuilder();
+
+                        for (@NotNull final String pkg : packages)
+                        {
+                            folder.append(File.separator);
+                            folder.append(pkg);
+                        }
+
+                        outputDir = new File(rootFolder.getRoot().getAbsolutePath().concat(folder.toString()));
+
+                        outputDir.mkdirs();
+                    }
+                    catch (@NotNull final IOException ioException)
+                    {
+                        Assert.fail(ioException.getMessage());
+                    }
+
+                    if (!outputDir.exists())
+                    {
+                        Assert.fail("Cannot create folder: " + outputDir.getAbsolutePath());
+                    }
+
+                    UniqueLogFactory.initializeInstance(LogFactory.getLog(PerCustomResultTemplatesTest.class));
+
+                    ((AbstractTemplate) template).setDebugMode(true);
+
+                    try
+                    {
+                        generator.write(
+                            template,
+                            outputDir,
+                            rootFolder.getRoot(),
+                            Charset.defaultCharset());
+                    }
+                    catch (@NotNull final IOException ioException)
+                    {
+                        if (failCause == null)
+                        {
+                            failCause = ioException.getMessage();
+                        }
+                        restart = false;
+                    }
+                    catch (@NotNull final DevelopmentModeException debugging)
+                    {
+                        restart = true;
+                    }
+                    catch (@NotNull final QueryJBuildException queryjBuildException)
+                    {
+                        if (failCause == null)
+                        {
+                            failCause = queryjBuildException.getMessage();
+                        }
+                        restart = false;
+                    }
+
+                    outputFiles.put(
                         result.getName(),
-                        properties);
-
-                Assert.assertNotNull("No template found for " + templateName, template);
-
-                File outputDir = null;
-
-                try
-                {
-                    rootFolder.create();
-
-                    @NotNull final String[] packages = packageName.split("\\\.");
-                    @NotNull final StringBuilder folder = new StringBuilder();
-
-                    for (@NotNull final String pkg : packages)
-                    {
-                        folder.append(File.separator);
-                        folder.append(pkg);
-                    }
-
-                    outputDir = new File(rootFolder.getRoot().getAbsolutePath().concat(folder.toString()));
-
-                    outputDir.mkdirs();
+                        new File(outputDir, template.getTemplateContext().getFileName()));
                 }
-                catch (@NotNull final IOException ioException)
-                {
-                    Assert.fail(ioException.getMessage());
-                }
-
-                if (!outputDir.exists())
-                {
-                    Assert.fail("Cannot create folder: " + outputDir.getAbsolutePath());
-                }
-
-                UniqueLogFactory.initializeInstance(LogFactory.getLog(PerCustomResultTemplatesTest.class));
-
-                ((AbstractTemplate) template).setDebugMode(true);
-
-                try
-                {
-                    generator.write(
-                        template,
-                        outputDir,
-                        rootFolder.getRoot(),
-                        Charset.defaultCharset());
-                }
-                catch (@NotNull final IOException ioException)
-                {
-                    if (failCause == null)
-                    {
-                        failCause = ioException.getMessage();
-                    }
-                    restart = false;
-                }
-                catch (@NotNull final DevelopmentModeException debugging)
-                {
-                    restart = true;
-                }
-                catch (@NotNull final QueryJBuildException queryjBuildException)
-                {
-                    if (failCause == null)
-                    {
-                        failCause = queryjBuildException.getMessage();
-                    }
-                    restart = false;
-                }
-
-                outputFiles.put(
-                    result.getName(),
-                    new File(outputDir, template.getTemplateContext().getFileName()));
             }
         }
 
