@@ -126,18 +126,7 @@ public class PerForeignKeyTemplatesTestTemplateBuildHandlerTest
     @Test
     public void storeTemplate_stores_the_templates_in_the_command()
     {
-        storeTemplate_stores_the_templates_in_the_command();@NotNull final PerForeignKeyTemplatesTestTemplateBuildHandler instance =
-            new PerForeignKeyTemplatesTestTemplateBuildHandler();
-
-        @NotNull final QueryJCommand command =
-            new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
-
-        @NotNull final PerForeignKeyTemplatesTestTemplate template =
-            EasyMock.createNiceMock(PerForeignKeyTemplatesTestTemplate.class);
-
-        instance.storeTemplate(template, command);
-
-        Assert.assertEquals(template, command.getSetting(PerForeignKeyTemplatesTestTemplateBuildHandler.TEMPLATES_KEY));
+        storeTemplate_stores_the_templates_in_the_command(PerForeignKeyTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
     }
 
     /**
