@@ -1130,8 +1130,8 @@ public abstract class AbstractTemplatesTest<G, F>
         result.append(m__mRows);
         result.append(", results=");
         result.append(m__mResults);
-        result.append(", results=");
-        result.append(m__mResults);
+        result.append(", properties=");
+        result.append(m__mProperties);
         result.append(", engineName=");
         result.append(m__strEngineName);
         result.append(", jdbcDriver=");
