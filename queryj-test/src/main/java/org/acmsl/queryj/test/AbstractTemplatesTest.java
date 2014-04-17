@@ -474,7 +474,7 @@ public abstract class AbstractTemplatesTest<G, F>
      * @return such information.
      */
     @NotNull
-    protected Map<String, Property<String>> getProperties()
+    protected Map<String, List<Property<String>> getProperties()
     {
         return m__mProperties;
     }
