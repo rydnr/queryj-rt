@@ -60,13 +60,14 @@ import org.junit.Test;
  * @since 3.0
  * Created: 2014/04/17 08:49
  * @param <WH> the writing handler class.
+ * @param <BH> the build handler class.
  * @param <T> the template class.
  */
 @ThreadSafe
 public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
     WH extends TemplatePackagingTestWritingHandler
         <T, GlobalTemplateContext, TemplatePackagingTemplateGenerator<T, GlobalTemplateContext>>,
-    BH extends TemplatePackagingTestWritingHandler
+    BH extends TemplatePackagingTestBuildHandler
         <T, GlobalTemplateContext, TemplatePackagingTemplateGenerator<T, GlobalTemplateContext>>,
     T extends PerTableTemplatesTestTemplate>
 {
