@@ -171,7 +171,8 @@ public class CustomResultTestHelper
 
         @Nullable Property<String> property;
 
-        for (@Nullable final Result<String> result: )
+        for (@Nullable final Result<String> result: results.values())
+        {
         @Nullable final List<Property<String>> propertyList = properties.get(result.getId());
 
         if (propertyList != null)
