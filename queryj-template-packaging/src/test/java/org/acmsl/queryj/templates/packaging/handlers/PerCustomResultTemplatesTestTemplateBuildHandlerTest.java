@@ -80,6 +80,6 @@ public class PerCustomResultTemplatesTestTemplateBuildHandlerTest
     @Override
     protected PerCustomResultTemplatesTestTemplate createTemplateMock()
     {
-        return EasyMock.createNiceMock()
+        return EasyMock.createNiceMock(PerCustomResultTemplatesTestTemplate.class);
     }
 }
