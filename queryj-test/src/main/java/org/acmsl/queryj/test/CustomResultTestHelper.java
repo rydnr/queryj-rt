@@ -121,7 +121,7 @@ public class CustomResultTestHelper
     {
         @Nullable Result<String> result = null;
 
-        @Nullable final String currentResult =  tableEntry.get(AntCustomResultsElement.TABLE);
+        @Nullable final String currentResult =  tableEntry.get("");
 
         if (table != null)
         {
