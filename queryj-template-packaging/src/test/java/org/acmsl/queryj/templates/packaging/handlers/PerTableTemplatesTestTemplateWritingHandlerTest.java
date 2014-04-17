@@ -81,6 +81,42 @@ public class PerTableTemplatesTestTemplateWritingHandlerTest
                 PerTableTemplatesTestTemplateFactory>
 {
     /**
+     * Creates a new writing handler instance.
+     *
+     * @return such instance.
+     */
+    @NotNull
+    @Override
+    protected PerTableTemplatesTestTemplateBuildHandler createBuildHandlerInstance()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
+     * Creates a new writing handler instance.
+     *
+     * @return such instance.
+     */
+    @NotNull
+    @Override
+    protected PerTableTemplatesTestTemplateWritingHandler createInstance()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
+     * Retrieves a new template mock.
+     *
+     * @return such mock.
+     */
+    @NotNull
+    @Override
+    protected PerTableTemplatesTestTemplate createTemplateMock()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
      * Checks retrieveTemplateGenerator retrieves a not-null instance.
      * Redundant check since it's annotated with @NotNull.
      */
