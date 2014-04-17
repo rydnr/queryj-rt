@@ -213,7 +213,8 @@ public class CustomResultTestHelper
      * @return the {@link Property} instance.
      */
     @Nullable
-    protected Property<String> convertToProperty(@NotNull final String name, @NotNull final String type)
+    protected Property<String> convertToProperty(
+        @NotNull final String name, @NotNull final String type)
     {
         return new PropertyElement<>(name, type);
     }
