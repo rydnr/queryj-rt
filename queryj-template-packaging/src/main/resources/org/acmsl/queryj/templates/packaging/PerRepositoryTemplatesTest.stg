@@ -29,20 +29,20 @@
 //
 //***************************************************************************
 //
-// Filename: PerTableTemplatesTest.stg
+// Filename: PerRepositoryTemplatesTest.stg
 //
 // Author: Jose San Leandro Armendariz
 //
 // Description: Defines the rules to generate PerRepositoryTemplatesTest
 //              implementations.
 //
-group PerTableTemplatesTest;
+group PerRepositoryTemplatesTest;
 
 import "common.stg"
 
 source(C) ::= <<
 <!
-  Generates PerTableTemplatesTest implementations.
+  Generates PerRepositoryTemplatesTest implementations.
 !>
 <if(C.header)>
 <C.header>
@@ -52,7 +52,7 @@ source(C) ::= <<
   [
     description()
   ],
-  template="org/acmsl/queryj/templates/PerTableTemplatesTest.stg",
+  template="org/acmsl/queryj/templates/PerRepositoryTemplatesTest.stg",
   C=C)><endif>
 
 <package_declaration(packageName="cucumber.templates")>
@@ -64,10 +64,10 @@ source(C) ::= <<
 import org.acmsl.queryj.api.AbstractTemplate;
 import org.acmsl.queryj.api.exceptions.DevelopmentModeException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
-import org.acmsl.queryj.api.PerTableTemplate;
-import org.acmsl.queryj.api.PerTableTemplateContext;
-import org.acmsl.queryj.api.PerTableTemplateFactory;
-import org.acmsl.queryj.api.PerTableTemplateGenerator;
+import org.acmsl.queryj.api.PerRepositoryTemplate;
+import org.acmsl.queryj.api.PerRepositoryTemplateContext;
+import org.acmsl.queryj.api.PerRepositoryTemplateFactory;
+import org.acmsl.queryj.api.PerRepositoryTemplateGenerator;
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.handlers.CustomSqlProviderRetrievalHandler;
@@ -188,24 +188,24 @@ class(defs, C) ::= <<
 /**
  * <description()>
 <class_common_javadoc(
-  template="org/acmsl/queryj/dao/PerTableTemplatesTest.stg",
+  template="org/acmsl/queryj/dao/PerRepositoryTemplatesTest.stg",
   generation_timestamps_enabled=C.generation_timestamps_enabled,
   timestamp=C.timestamp,
   version=C.version)>
  */
-public class PerTableTemplatesTest
+public class PerRepositoryTemplatesTest
     extends AbstractTemplatesTest\<
-                PerTableTemplateGenerator\<? extends PerTableTemplate\<PerTableTemplateContext>, PerTableTemplateContext>,
-                PerTableTemplateFactory\<? extends PerTableTemplate\<PerTableTemplateContext>, PerTableTemplateContext\>>
+                PerRepositoryTemplateGenerator\<? extends PerRepositoryTemplate\<PerRepositoryTemplateContext>, PerRepositoryTemplateContext>,
+                PerRepositoryTemplateFactory\<? extends PerRepositoryTemplate\<PerRepositoryTemplateContext>, PerRepositoryTemplateContext\>>
 {
     /**
      * Creates an instance.
      */
-    public PerTableTemplatesTest()
+    public PerRepositoryTemplatesTest()
     {
         super();
 
-        <defs:{ d | <if(!d.disabled)><if(d.type.perTable)><generator_mapping(def=d)><endif><endif>}; separator="\n">
+        <defs:{ d | <if(!d.disabled)><if(d.type.PerRepository)><generator_mapping(def=d)><endif><endif>}; separator="\n">
     }
 
     /**
@@ -404,7 +404,7 @@ public class PerTableTemplatesTest
     @NotNull
     @Override
     protected DecoratorFactory retrieveDecoratorFactory(
-        @NotNull final PerTableTemplateGenerator\<? extends PerTableTemplate\<PerTableTemplateContext>, PerTableTemplateContext> generator)
+        @NotNull final PerRepositoryTemplateGenerator\<? extends PerRepositoryTemplate\<PerRepositoryTemplateContext>, PerRepositoryTemplateContext> generator)
     {
         return generator.getDecoratorFactory();
     }
@@ -447,8 +447,8 @@ public class PerTableTemplatesTest
         @NotNull final Map\<String, File> outputFiles,
         @NotNull final CustomSqlProvider sqlProvider)
     {
-        @Nullable final PerTableTemplateGenerator\<PerTableTemplate\<PerTableTemplateContext>, PerTableTemplateContext> generator =
-            (PerTableTemplateGenerator\<PerTableTemplate\<PerTableTemplateContext>, PerTableTemplateContext>) retrieveTemplateGenerator(
+        @Nullable final PerRepositoryTemplateGenerator\<PerRepositoryTemplate\<PerRepositoryTemplateContext>, PerRepositoryTemplateContext> generator =
+            (PerRepositoryTemplateGenerator\<PerRepositoryTemplate\<PerRepositoryTemplateContext>, PerRepositoryTemplateContext>) retrieveTemplateGenerator(
                 templateName);
 
         Assert.assertNotNull("No template generator found for " + templateName, generator);
@@ -507,7 +507,7 @@ public class PerTableTemplatesTest
                 new QueryJCommandWrapper\<MetadataManager>(t_Command).setSetting(
                     DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, metadataManager);
 
-                @Nullable final PerTableTemplateFactory\<? extends PerTableTemplate\<PerTableTemplateContext>, PerTableTemplateContext> templateFactory =
+                @Nullable final PerRepositoryTemplateFactory\<? extends PerRepositoryTemplate\<PerRepositoryTemplateContext>, PerRepositoryTemplateContext> templateFactory =
                     retrieveTemplateFactory(templateName);
 
                 Assert.assertNotNull("No template factory found for " + templateName, templateFactory);
@@ -515,7 +515,7 @@ public class PerTableTemplatesTest
                 @NotNull final String packageName =
                     resolvePackage(PACKAGE_MAPPINGS.get(templateName), table.getName(), resolveEngine(engine));
 
-                @Nullable final PerTableTemplate\<PerTableTemplateContext> template =
+                @Nullable final PerRepositoryTemplate\<PerRepositoryTemplateContext> template =
                     templateFactory.createTemplate(
                         t_Command,
                         decoratorFactory,
@@ -554,7 +554,7 @@ public class PerTableTemplatesTest
                     Assert.fail("Cannot create folder: " + outputDir.getAbsolutePath());
                 }
 
-                UniqueLogFactory.initializeInstance(LogFactory.getLog(PerTableTemplatesTest.class));
+                UniqueLogFactory.initializeInstance(LogFactory.getLog(PerRepositoryTemplatesTest.class));
 
                 ((AbstractTemplate) template).setDebugMode(true);
 
