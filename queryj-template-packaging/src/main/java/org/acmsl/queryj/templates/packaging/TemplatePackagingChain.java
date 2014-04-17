@@ -38,6 +38,7 @@ package org.acmsl.queryj.templates.packaging;
 import org.acmsl.queryj.AbstractQueryJChain;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.templates.packaging.handlers.PerCustomResultTemplatesTestTemplateHandlerBundle;
 import org.acmsl.queryj.templates.packaging.handlers.PerRepositoryTemplatesTestTemplateHandlerBundle;
 import org.acmsl.queryj.tools.QueryJChain;
 import org.acmsl.queryj.tools.handlers.Log4JInitializerHandler;
