@@ -90,6 +90,7 @@ public class PerTableTemplatesTestTemplateBuildHandlerTest
                 PerTableTemplatesTestTemplate,
                 PerTableTemplatesTestTemplateFactory>
 {
+
     /**
      * Tests whether retrieveTemplateName() works.
      */
