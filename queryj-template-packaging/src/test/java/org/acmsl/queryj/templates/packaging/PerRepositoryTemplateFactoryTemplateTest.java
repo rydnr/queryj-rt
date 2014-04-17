@@ -64,6 +64,6 @@ public class PerRepositoryTemplateFactoryTemplateTest
         @NotNull final PerRepositoryTemplateFactoryTemplate instance =
             new PerRepositoryTemplateFactoryTemplate<>(context);
 
-        Assert.assertEquals(Literals.PER_FOREIGN_KEY_TEMPLATE_FACTORY, instance.getTemplateName());
+        Assert.assertEquals(Literals.PER_REPOSITORY_TEMPLATE_FACTORY, instance.getTemplateName());
     }
 }
