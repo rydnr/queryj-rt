@@ -133,13 +133,6 @@ public abstract class AbstractTemplatesTestTemplateBuildHandlerTest
     public abstract void storeTemplate_stores_the_templates_in_the_command();
 
     /**
-     * Checks whether retrieveTemplateFactory() retrieves
-     * {@link org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory}.
-     */
-    @Test
-    public abstract void retrieveTemplateFactory_retrieves_the_correct_factory();
-
-    /**
      * Checks whether storeTemplate() binds the template to the command.
      * @param commandKey the key in the command where the templates are expected to be stored.
      */
