@@ -240,7 +240,7 @@ public class PerCustomResultTemplatesTest
      */
     @SuppressWarnings("unused")
     @Given("^Given the following properties:$")
-    public void defineInputProperties(@NotNull final DataTable resultInfo)
+    public void defineInputProperties(@NotNull final DataTable propertiesInfo)
     {
         defineInputProperties(resultInfo, getResults(), CustomResultTestHelper.getInstance());
     }
