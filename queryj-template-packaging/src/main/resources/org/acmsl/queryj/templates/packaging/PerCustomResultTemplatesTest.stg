@@ -348,7 +348,7 @@ public class PerCustomResultTemplatesTest
                         properties = new ArrayList\<>(0);
                     }
 
-                    @NotNull final MetadataManager metadataManager =
+                    @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
                         retrieveMetadataManager(engine, result, properties, decoratorFactory);
 
                     new QueryJCommandWrapper\<MetadataManager>(t_Command).setSetting(
