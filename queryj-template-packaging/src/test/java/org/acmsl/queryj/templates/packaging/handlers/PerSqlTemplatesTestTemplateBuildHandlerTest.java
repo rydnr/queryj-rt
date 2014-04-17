@@ -39,8 +39,8 @@ package org.acmsl.queryj.templates.packaging.handlers;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.templates.packaging.Literals;
-import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplate;
-import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory;
+import org.acmsl.queryj.templates.packaging.PerSqlTemplatesTestTemplate;
+import org.acmsl.queryj.templates.packaging.PerSqlTemplatesTestTemplateFactory;
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
@@ -60,11 +60,11 @@ import org.junit.runners.JUnit4;
  */
 @ThreadSafe
 @RunWith(JUnit4.class)
-public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
+public class PerSqlTemplatesTestTemplateBuildHandlerTest
     extends AbstractTemplatesTestTemplateBuildHandlerTest
-                <PerRepositoryTemplatesTestTemplateBuildHandler,
-                    PerRepositoryTemplatesTestTemplate,
-                    PerRepositoryTemplatesTestTemplateFactory>
+                <PerSqlTemplatesTestTemplateBuildHandler,
+                    PerSqlTemplatesTestTemplate,
+                    PerSqlTemplatesTestTemplateFactory>
 {
     /**
      * Creates a new build handler instance.
@@ -73,9 +73,9 @@ public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
      */
     @Override
     @NotNull
-    protected PerRepositoryTemplatesTestTemplateBuildHandler createInstance()
+    protected PerSqlTemplatesTestTemplateBuildHandler createInstance()
     {
-        return new PerRepositoryTemplatesTestTemplateBuildHandler();
+        return new PerSqlTemplatesTestTemplateBuildHandler();
     }
 
     /**
@@ -84,9 +84,9 @@ public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
      */
     @Override
     @NotNull
-    protected PerRepositoryTemplatesTestTemplate createTemplateMock()
+    protected PerSqlTemplatesTestTemplate createTemplateMock()
     {
-        return EasyMock.createNiceMock(PerRepositoryTemplatesTestTemplate.class);
+        return EasyMock.createNiceMock(PerSqlTemplatesTestTemplate.class);
     }
 
     /**
@@ -107,18 +107,18 @@ public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
     public void storeTemplate_stores_the_templates_in_the_command()
     {
         storeTemplate_stores_the_templates_in_the_command(
-            PerRepositoryTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
+            PerSqlTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
     }
 
     /**
      * Checks whether retrieveTemplateFactory() retrieves
-     * {@link org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory}.
+     * {@link org.acmsl.queryj.templates.packaging.PerSqlTemplatesTestTemplateFactory}.
      */
     @Override
     @Test
     public void retrieveTemplateFactory_retrieves_the_correct_factory()
     {
         retrieveTemplateFactory_retrieves_the_correct_factory(
-            PerRepositoryTemplatesTestTemplateFactory.getInstance());
+            PerSqlTemplatesTestTemplateFactory.getInstance());
     }
 }
