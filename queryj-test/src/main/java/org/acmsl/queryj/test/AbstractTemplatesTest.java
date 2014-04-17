@@ -200,7 +200,7 @@ public abstract class AbstractTemplatesTest<G, F>
     /**
      * The properties.
      */
-    private Map<String, Result<String>> m__mProperties;
+    private Map<String, Property<String>> m__mProperties;
 
     /**
      * The engine name.
