@@ -54,7 +54,7 @@ import org.junit.runners.JUnit4;
  * Tests for {@link PerRepositoryTemplateFactoryTemplate}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
- * Created: 2014/04/17 12:07
+ * Created: 2014/04/17 12:14
  */
 @RunWith(JUnit4.class)
 public class PerRepositoryTemplateFactoryTemplateTest
