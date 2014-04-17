@@ -122,11 +122,3 @@ public class PerRepositoryTemplatesTestTemplateWritingHandler
         return result;
     }
 }
- * Date: 2014/04/17
- * Time: 10:11
- * Created: 2014/04/17 10:11
- */
-@ThreadSafe
-public class PerCustomResultTemplatesTestTemplateWritingHandler
-{
-}
