@@ -234,30 +234,6 @@ public class PerRepositoryTemplatesTest
     }
 
     /**
-     * Defines the columns from the feature.
-     * @param columnInfo the column information.
-     */
-    @SuppressWarnings("unused")
-    @Given("^the following columns:$")
-    public void defineInputColumns(@NotNull final DataTable columnInfo)
-    {
-        defineInputColumns(columnInfo, getTables(), TableTestHelper.getInstance());
-    }
-
-    /**
-     * Defines the columns from the feature.
-     * @param columnInfo the column information.
-     * @param tables the tables.
-     */
-    protected List\<Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> defineInputColumns(
-        @NotNull final DataTable columnInfo,
-        @NotNull final Map\<String, Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables,
-        @NotNull final TableTestHelper helper)
-    {
-        return helper.defineInputColumns(columnInfo, tables);
-    }
-
-    /**
      * Defines the foreign keys via cucumber features.
      * @param fkInfo such information.
      */
