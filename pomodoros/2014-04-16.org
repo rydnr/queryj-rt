@@ -67,7 +67,7 @@
 *** XXXTestHelper
 **** DONE #474
 **** DONE #475
-**** TODO #476
+**** DONE #476
 **** TODO #477
 *** Add PerXXXTemplatesTestTemplateHandlerBundle to TemplatePackagingChain
 **** TODO #474
