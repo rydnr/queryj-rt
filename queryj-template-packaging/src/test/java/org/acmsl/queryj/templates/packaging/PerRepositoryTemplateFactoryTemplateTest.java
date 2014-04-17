@@ -31,10 +31,6 @@
  *
  * Date: 2014/04/17
  * Time: 12:07
- * Filename: PerForeignKeyTemplateFactoryTemplateTest.java
- *
- * Author: Jose San Leandro
- *
  * Description: Tests for PerForeignKeyTemplateFactoryTemplate.
  *
  * Created: 2014/04/14 18:32
