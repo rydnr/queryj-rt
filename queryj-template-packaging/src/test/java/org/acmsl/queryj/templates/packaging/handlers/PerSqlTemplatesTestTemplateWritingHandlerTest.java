@@ -103,29 +103,3 @@ public class PerRepositoryTemplatesTestTemplateWritingHandlerTest
         return EasyMock.createNiceMock(PerRepositoryTemplatesTestTemplate.class);
     }
 }
- * Date: 2014/04/17
- * Time: 10:14
- *
- */
-package org.acmsl.queryj.templates.packaging.handlers;
-
-/*
- * Importing JetBrains annotations.
- */
-import org.jetbrains.annotations.NotNull;
-
-/*
- * Importing checkthread.org annotations.
- */
-import org.checkthread.annotations.ThreadSafe;
-
-/**
- *
- * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
- * @since 3.0
- * Created: 2014/04/17 10:14
- */
-@ThreadSafe
-public class PerSqlTemplatesTestTemplateWritingHandlerTest
-{
-}
