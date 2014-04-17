@@ -276,7 +276,7 @@ public class PerCustomResultTemplatesTest
      * @param templateName the template.
      * @param engine the engine name.
      * @param resultMap the result map.
-     * @param properties the properties.
+     * @param propertyMap the property map.
      * @param outputFiles the output files.
      * @param sqlProvider the {@link CustomSqlProvider} instance.
      */
