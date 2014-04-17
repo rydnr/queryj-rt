@@ -97,7 +97,7 @@ public class PerTableTemplatesFeatureTemplateWritingHandler
     public TemplatePackagingTemplateGenerator<PerTableTemplatesFeatureTemplate, GlobalTemplateContext> retrieveTemplateGenerator(
         final boolean caching, final int threadCount)
     {
-        return new TemplatePackagingTemplateGenerator<PerTableTemplatesFeatureTemplate, GlobalTemplateContext>(caching, threadCount);
+        return new TemplatePackagingTemplateGenerator<>(caching, threadCount);
     }
 
     /**
