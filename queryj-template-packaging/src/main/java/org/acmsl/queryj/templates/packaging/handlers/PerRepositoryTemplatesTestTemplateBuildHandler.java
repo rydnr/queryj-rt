@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Build handler for {@link PerRepositoryTemplatesTestTemplate}s.
+ * Description: Build handler for PerRepositoryTemplatesTestTemplates.
  *
  * Date: 2014/04/17
  * Time: 07:30
