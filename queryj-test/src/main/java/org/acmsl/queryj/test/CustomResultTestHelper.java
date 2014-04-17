@@ -198,7 +198,7 @@ public class CustomResultTestHelper
                 convertToProperty(
                     name,
                     tableEntry.get("columnName"),
-                    toInt(tableEntry.get("index")),
+                    tableEntry.get("index"),
                     tableEntry.get("type"),
                     Boolean.valueOf(tableEntry.get("nullable")));
         }
