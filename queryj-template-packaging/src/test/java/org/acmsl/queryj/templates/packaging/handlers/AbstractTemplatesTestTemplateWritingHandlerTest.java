@@ -52,7 +52,7 @@ import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplateFactory;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplateGenerator;
 
 /*
- * Importing JetBrains annotations.
+ * Importing Apache Commons Configuration classes.
  */
 import org.apache.commons.configuration.PropertiesConfiguration;
 
