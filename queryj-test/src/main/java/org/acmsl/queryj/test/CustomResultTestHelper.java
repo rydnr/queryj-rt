@@ -92,7 +92,7 @@ public class CustomResultTestHelper
      * @param tables the table collection.
      */
     public void defineInputResults(
-        @NotNull final DataCustomResult tableInfo,
+        @NotNull final DataTable tableInfo,
         @NotNull final Map<String, CustomResult<String, Attribute<String>, List<Attribute<String>>>> tables)
     {
         @NotNull final List<Map<String, String>> tableEntries = tableInfo.asMaps();
