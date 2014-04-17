@@ -59,6 +59,8 @@ import org.jetbrains.annotations.NotNull;
 import org.easymock.EasyMock;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 import java.io.File;
 import java.io.IOException;
@@ -71,7 +73,7 @@ import java.util.List;
  * @since 3.0
  * Created: 2014/04/17 07:27
  */
-@ThreadSafe
+@RunWith(JUnit4.class)
 public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
 {
     /**
