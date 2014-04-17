@@ -215,6 +215,7 @@ public class CustomResultTestHelper
     @Nullable
     protected Property<String> convertToProperty(
         @NotNull final String name,
+        @NotNull final String columnName,
 
         @NotNull final String type)
     {
