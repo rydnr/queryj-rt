@@ -117,7 +117,7 @@ public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
     @Test
     public void retrieveTemplateName_works()
     {
-        retrieveTemplateName_works(Literals.PER_REPOSITORY_TEMPLATES_TEST, instance.retrieveTemplateName(command));
+        retrieveTemplateName_works(Literals.PER_REPOSITORY_TEMPLATES_TEST);
     }
 
     /**
