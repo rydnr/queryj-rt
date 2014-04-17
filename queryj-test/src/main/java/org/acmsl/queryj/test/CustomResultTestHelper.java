@@ -106,7 +106,7 @@ public class CustomResultTestHelper
 
             if (result != null)
             {
-                tables.put(table.getName(), table);
+                tables.put(result.getName(), table);
             }
         }
     }
