@@ -70,6 +70,6 @@ public class PerCustomResultTemplateWritingHandlerTemplateTest
         @NotNull final PerCustomResultTemplateWritingHandlerTemplate instance =
             new PerCustomResultTemplateWritingHandlerTemplate<>(context);
 
-        Assert.assertEquals(Literals.PER_REPOSITORY_TEMPLATE_WRITING_HANDLER, instance.getTemplateName());
+        Assert.assertEquals(Literals.PER_CUSTOM_RESULT_TEMPLATE_WRITING_HANDLER, instance.getTemplateName());
     }
 }
