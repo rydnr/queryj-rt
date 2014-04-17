@@ -112,7 +112,7 @@ public class CustomResultTestHelper
     }
 
     /**
-     * Converts given table information to a {@link CustomResult}.
+     * Converts given table information to a {@link Result}.
      * @param tableEntry the table information.
      * @return the {@link CustomResult} instance.
      */
