@@ -103,7 +103,8 @@ public class PerCustomResultTemplatesTestTemplateBuildHandlerTest
     @Test
     public void storeTemplate_stores_the_templates_in_the_command()
     {
-        //To change body of implemented methods use File | Settings | File Templates.
+        storeTemplate_stores_the_templates_in_the_command(
+            PerRepositoryTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
     }
 
     /**
