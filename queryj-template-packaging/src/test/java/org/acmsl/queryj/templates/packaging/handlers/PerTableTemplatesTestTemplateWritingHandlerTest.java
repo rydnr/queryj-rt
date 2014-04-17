@@ -77,7 +77,8 @@ public class PerTableTemplatesTestTemplateWritingHandlerTest
     }
 
     /**
-     * Checks the templates
+     * Checks the templates built by the build handler are later
+     *
      */
     @Test
     public void retrieveTemplates_finds_the_templates()
