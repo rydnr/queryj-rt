@@ -126,6 +126,7 @@ public class PerRepositoryTemplatesTestTemplateBuildHandlerTest
     @Test
     public void storeTemplate_stores_the_templates_in_the_command()
     {
+        storeTemplate_stores_the_templates_in_the_command();
         @NotNull final PerRepositoryTemplatesTestTemplateBuildHandler instance =
             new PerRepositoryTemplatesTestTemplateBuildHandler();
 
