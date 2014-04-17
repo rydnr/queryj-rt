@@ -293,7 +293,7 @@ public class PerCustomResultTemplatesTest
     protected void generateFile(
         @NotNull final String templateName,
         @NotNull final String engine,
-        @NotNull final Map\<String, result\<String, Attribute\<String>, List\<Attribute\<String\>>\>> resultMap,
+        @NotNull final Map\<String, CustomResult\<String, Attribute\<String>, List\<Attribute\<String\>>\>> resultMap,
         @NotNull final Map\<String, List\<Row\<String>\>> rows,
         @NotNull final Map\<String, File> outputFiles,
         @NotNull final CustomSqlProvider sqlProvider)
