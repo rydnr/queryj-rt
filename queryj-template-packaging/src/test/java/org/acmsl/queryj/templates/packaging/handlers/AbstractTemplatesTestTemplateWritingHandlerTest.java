@@ -77,6 +77,7 @@ import org.junit.Test;
  * @param <BH> the build handler class.
  * @param <T> the template class.
  * @param <TF> the template factory class.
+ * @param <C> the template context class.
  */
 public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
     WH extends TemplatePackagingTestWritingHandler
