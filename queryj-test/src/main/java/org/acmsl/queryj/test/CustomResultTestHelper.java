@@ -214,7 +214,9 @@ public class CustomResultTestHelper
      */
     @Nullable
     protected Property<String> convertToProperty(
-        @NotNull final String name, @NotNull final String type)
+        @NotNull final String name,
+
+        @NotNull final String type)
     {
         return new PropertyElement<>(name, type);
     }
