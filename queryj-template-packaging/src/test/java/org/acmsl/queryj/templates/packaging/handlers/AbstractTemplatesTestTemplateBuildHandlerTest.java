@@ -45,7 +45,6 @@ import org.acmsl.queryj.templates.packaging.AbstractTemplatePackagingTemplate;
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
 import org.acmsl.queryj.templates.packaging.Literals;
 import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplate;
-import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplateFactory;
 import org.apache.commons.configuration.PropertiesConfiguration;
