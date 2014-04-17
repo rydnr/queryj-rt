@@ -71,6 +71,6 @@ public class PerSqlTemplateFactoryTemplateTest
         @NotNull final PerSqlTemplateFactoryTemplate instance =
             new PerSqlTemplateFactoryTemplate<>(context);
 
-        Assert.assertEquals(Literals.PER_REPOSITORY_TEMPLATE_FACTORY, instance.getTemplateName());
+        Assert.assertEquals(Literals.PER_SQL_TEMPLATE_FACTORY, instance.getTemplateName());
     }
 }
