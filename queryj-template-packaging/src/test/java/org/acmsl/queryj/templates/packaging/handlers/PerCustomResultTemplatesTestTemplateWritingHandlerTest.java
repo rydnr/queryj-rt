@@ -39,8 +39,8 @@ package org.acmsl.queryj.templates.packaging.handlers;
  * Importing QueryJ Template Packaging classes.
  */
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
-import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplate;
-import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory;
+import org.acmsl.queryj.templates.packaging.PerCustomResultTemplatesTestTemplate;
+import org.acmsl.queryj.templates.packaging.PerCustomResultTemplatesTestTemplateFactory;
 
 /*
  * Importing JetBrains annotations.
@@ -55,7 +55,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 /**
- * Tests for {@link PerRepositoryTemplatesTestTemplateWritingHandler}.
+ * Tests for {@link PerCustomResultTemplatesTestTemplateWritingHandler}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/17 10:09
@@ -63,10 +63,10 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class PerCustomResultTemplatesTestTemplateWritingHandlerTest
     extends AbstractTemplatesTestTemplateWritingHandlerTest<
-    PerRepositoryTemplatesTestTemplateWritingHandler,
-    PerRepositoryTemplatesTestTemplateBuildHandler,
-    PerRepositoryTemplatesTestTemplate,
-    PerRepositoryTemplatesTestTemplateFactory,
+    PerCustomResultTemplatesTestTemplateWritingHandler,
+    PerCustomResultTemplatesTestTemplateBuildHandler,
+    PerCustomResultTemplatesTestTemplate,
+    PerCustomResultTemplatesTestTemplateFactory,
     GlobalTemplateContext>
 {
     /**
@@ -75,9 +75,9 @@ public class PerCustomResultTemplatesTestTemplateWritingHandlerTest
      */
     @NotNull
     @Override
-    protected PerRepositoryTemplatesTestTemplateBuildHandler createBuildHandlerInstance()
+    protected PerCustomResultTemplatesTestTemplateBuildHandler createBuildHandlerInstance()
     {
-        return new PerRepositoryTemplatesTestTemplateBuildHandler();
+        return new PerCustomResultTemplatesTestTemplateBuildHandler();
     }
 
     /**
@@ -86,9 +86,9 @@ public class PerCustomResultTemplatesTestTemplateWritingHandlerTest
      */
     @NotNull
     @Override
-    protected PerRepositoryTemplatesTestTemplateWritingHandler createInstance()
+    protected PerCustomResultTemplatesTestTemplateWritingHandler createInstance()
     {
-        return new PerRepositoryTemplatesTestTemplateWritingHandler();
+        return new PerCustomResultTemplatesTestTemplateWritingHandler();
     }
 
     /**
@@ -97,8 +97,8 @@ public class PerCustomResultTemplatesTestTemplateWritingHandlerTest
      */
     @NotNull
     @Override
-    protected PerRepositoryTemplatesTestTemplate createTemplateMock()
+    protected PerCustomResultTemplatesTestTemplate createTemplateMock()
     {
-        return EasyMock.createNiceMock(PerRepositoryTemplatesTestTemplate.class);
+        return EasyMock.createNiceMock(PerCustomResultTemplatesTestTemplate.class);
     }
 }
