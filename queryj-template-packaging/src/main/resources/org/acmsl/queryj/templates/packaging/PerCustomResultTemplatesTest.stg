@@ -372,7 +372,7 @@ public class PerCustomResultTemplatesTest
                         decoratorFactory,
                         packageName,
                         result.getName(),
-                        resultRows);
+                        properties);
 
                 Assert.assertNotNull("No template found for " + templateName, template);
 
