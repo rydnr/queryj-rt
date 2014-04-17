@@ -68,14 +68,6 @@ import org.easymock.EasyMock;
 import org.junit.Assert;
 import org.junit.Test;
 
-/*
- * Importing JDK classes.
- */
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * Tests for {@link PerForeignKeyTemplatesTestTemplateBuildHandler}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
