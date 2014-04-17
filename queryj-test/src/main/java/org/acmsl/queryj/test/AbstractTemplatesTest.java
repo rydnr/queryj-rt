@@ -454,7 +454,7 @@ public abstract class AbstractTemplatesTest<G, F>
      * Specifies the properties.
      * @param properties the properties.
      */
-    protected final void immutableSetProperties(@NotNull final Map<String, Property<String>> properties)
+    protected final void immutableSetProperties(@NotNull final Map<String, List<Property<String>> properties)
     {
         m__mProperties = properties;
     }
