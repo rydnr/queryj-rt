@@ -460,8 +460,8 @@ public abstract class AbstractTemplatesTest<G, F>
     }
 
     /**
-     * Specifies the results.
-     * @param results the results.
+     * Specifies the properties.
+     * @param results the properties.
      */
     @SuppressWarnings("unused")
     protected void setProperties(@NotNull final Map<String, Property<String>> properties)
