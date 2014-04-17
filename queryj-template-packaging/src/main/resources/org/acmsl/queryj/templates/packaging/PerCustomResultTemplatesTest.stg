@@ -227,7 +227,7 @@ public class PerCustomResultTemplatesTest
      */
     protected void defineInputResults(
         @NotNull final DataTable resultInfo,
-        @NotNull final Map\<String, CustomResult\<String> results,
+        @NotNull final Map\<String, CustomResult\<String\>> results,
         @NotNull final CustomResultTestHelper helper)
     {
         helper.defineInputResults(resultInfo, results);
