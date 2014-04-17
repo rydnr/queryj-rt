@@ -166,7 +166,7 @@ public class CustomResultTestHelper
         @NotNull final DataTable tableInfo,
         @NotNull final Map<String, List<Property<String>>> properties)
     {
-        @NotNull final List<Map<String, String>> tableEntries = tableInfo.asMaps();
+        @NotNull final List<Map<String, String>> propertyEntries = tableInfo.asMaps();
 
         @Nullable Property<String> property;
 
