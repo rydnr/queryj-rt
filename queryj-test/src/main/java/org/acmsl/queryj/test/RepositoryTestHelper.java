@@ -39,7 +39,7 @@ package org.acmsl.queryj.test;
  * Importing JetBrains annotations.
  */
 import cucumber.api.DataTable;
-import org.acmsl.queryj.metadata.vo.ForeignKey;
+import org.acmsl.queryj.metadata.vo.Repository;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -56,17 +56,17 @@ import java.util.List;
  * Created: 2014/04/17 11:33
  */
 @ThreadSafe
-public class ForeignKeyTestHelper
+public class RepositoryTestHelper
 {
     /**
      * Singleton implementation to avoid double-locking check.
      */
-    protected static final class ForeignKeyTestHelperSingletonContainer
+    protected static final class RepositoryTestHelperSingletonContainer
     {
         /**
          * The actual singleton.
          */
-        public static final ForeignKeyTestHelper SINGLETON = new ForeignKeyTestHelper();
+        public static final RepositoryTestHelper SINGLETON = new RepositoryTestHelper();
     }
 
     /**
@@ -74,9 +74,9 @@ public class ForeignKeyTestHelper
      * @return such instance.
      */
     @NotNull
-    public static ForeignKeyTestHelper getInstance()
+    public static RepositoryTestHelper getInstance()
     {
-        return ForeignKeyTestHelperSingletonContainer.SINGLETON;
+        return RepositoryTestHelperSingletonContainer.SINGLETON;
     }
 
     /**
@@ -84,8 +84,8 @@ public class ForeignKeyTestHelper
      * @param tableInfo the Cucumber table.
      * @param foreignKeys the list to fill with the foreign keys.
      */
-    public void defineInputForeignKeys(
-        @NotNull final DataTable tableInfo, @NotNull final List<ForeignKey<String>> foreignKeys)
+    public void defineInputRepositorys(
+        @NotNull final DataTable tableInfo, @NotNull final List<Repository<String>> foreignKeys)
     {
         // TODO
     }
@@ -97,8 +97,8 @@ public class ForeignKeyTestHelper
      * @return the foreign keys.
      */
     @NotNull
-    public List<ForeignKey<String>> defineInputColumns(
-        @NotNull final DataTable columnInfo, @NotNull final List<ForeignKey<String>> foreignKeys)
+    public List<Repository<String>> defineInputColumns(
+        @NotNull final DataTable columnInfo, @NotNull final List<Repository<String>> foreignKeys)
     {
         // TODO
         return foreignKeys;
