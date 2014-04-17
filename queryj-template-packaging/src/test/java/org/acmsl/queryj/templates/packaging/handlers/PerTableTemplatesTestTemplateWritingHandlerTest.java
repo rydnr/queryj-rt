@@ -76,5 +76,10 @@ public class PerTableTemplatesTestTemplateWritingHandlerTest
     {
         @NotNull final PerTableTemplatesTestTemplateWritingHandler instance =
             new PerTableTemplatesTestTemplateWritingHandler();
+
+        @NotNull final PerTableTemplatesTestTemplateBuildHandler buildHandler =
+            new PerTableTemplatesTestTemplateBuildHandler();
+
+
     }
 }
