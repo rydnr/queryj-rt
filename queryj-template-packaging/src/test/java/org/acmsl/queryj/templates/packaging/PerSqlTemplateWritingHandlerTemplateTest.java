@@ -70,6 +70,6 @@ public class PerSqlTemplateWritingHandlerTemplateTest
         @NotNull final PerSqlTemplateWritingHandlerTemplate instance =
             new PerSqlTemplateWritingHandlerTemplate<>(context);
 
-        Assert.assertEquals(Literals.PER_REPOSITORY_TEMPLATE_WRITING_HANDLER, instance.getTemplateName());
+        Assert.assertEquals(Literals.PER_SQL_TEMPLATE_WRITING_HANDLER, instance.getTemplateName());
     }
 }
