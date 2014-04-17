@@ -48,7 +48,7 @@ import org.acmsl.queryj.templates.packaging.PerForeignKeyTemplatesTestTemplateFa
 import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing checkthread.org annotations.
+ * Importing JUnit/EasyMock classes.
  */
 import org.easymock.EasyMock;
 import org.junit.runner.RunWith;
