@@ -80,7 +80,7 @@ public abstract class AbstractTemplatesTestTemplateWritingHandlerTest<
      * @return such instance.
      */
     @NotNull
-    protected abstract WH createInstance();
+    protected abstract BH createBuildHandlerInstance();
 
     /**
      * Checks the templates built by the build handler are later
