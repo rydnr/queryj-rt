@@ -59,8 +59,11 @@ import org.junit.Test;
  * Created: 2014/04/17 08:49
  */
 @ThreadSafe
-public class AbstractTemplatesTestTemplateWritingHandlerTest
+public abstract class AbstractTemplatesTestTemplateWritingHandlerTest
 {
+    /**
+     * Creates
+     */
     /**
      * Checks retrieveTemplateGenerator retrieves a not-null instance.
      * Redundant check since it's annotated with @NotNull.
