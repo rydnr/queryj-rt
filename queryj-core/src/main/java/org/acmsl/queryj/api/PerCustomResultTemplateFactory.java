@@ -53,6 +53,8 @@ import org.acmsl.commons.patterns.Factory;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
+
 /**
  * Represents entities able to create per-<i>custom result</i> templates.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
@@ -67,6 +69,7 @@ public interface PerCustomResultTemplateFactory
      * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @param packageName the package name.
      * @param customResult the custom result.
+     * @param properties the properties.
      * @return the template.
      */
     @Nullable
@@ -75,5 +78,5 @@ public interface PerCustomResultTemplateFactory
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final String packageName,
         @NotNull final Result<String> customResult,
-        @NotNull final List<Property<String>>);
+        @NotNull final List<Property<String>> properties);
 }
