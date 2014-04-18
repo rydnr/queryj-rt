@@ -158,7 +158,7 @@ public interface Literals
      */
     String PER_CUSTOM_RESULT_TEMPLATE_WRITING_HANDLER = "PerCustomResultTemplateWritingHandler";
     /**
-     * String literal: "PerSqlTemplateWritingHandler".
+     * String literal: "PerCustomSqlTemplateWritingHandler".
      */
     String PER_CUSTOM_SQL_TEMPLATE_WRITING_HANDLER = "PerCustomSqlTemplateWritingHandler";
 }
