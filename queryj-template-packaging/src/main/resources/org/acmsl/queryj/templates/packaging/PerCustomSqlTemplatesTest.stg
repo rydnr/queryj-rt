@@ -231,8 +231,8 @@ public class PerCustomSqlTemplatesTest
      * @param helper the {@link TableTestHelper} instance.
      */
     protected void defineInputResults(
-        @NotNull final DataTable resultInfo,
-        @NotNull final Map\<String, Sql\<String\>> results,
+        @NotNull final DataTable sqlInfo,
+        @NotNull final Map\<String, Sql\<String\>> queries,
         @NotNull final CustomResultTestHelper helper)
     {
         helper.defineInputResults(resultInfo, results);
