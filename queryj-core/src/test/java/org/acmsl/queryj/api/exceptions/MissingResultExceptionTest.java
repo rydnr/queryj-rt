@@ -55,5 +55,15 @@ import org.checkthread.annotations.ThreadSafe;
 public class MissingResultExceptionTest
     extends AbstractExceptionTest<MissingResultException>
 {
-
+    /**
+     * Creates a new exception.
+     *
+     * @return such instance.
+     */
+    @NotNull
+    @Override
+    protected MissingResultException createInstance()
+    {
+        return new MissingResultException();
+    }
 }
