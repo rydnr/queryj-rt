@@ -308,8 +308,8 @@ public class PerCustomSqlTemplatesTest
      * Generates a file with the information from the feature.
      * @param templateName the template.
      * @param engine the engine name.
-     * @param resultMap the table map.
-     * @param rows the rows.
+     * @param tables the table map.
+     * @param sqlListhe custom queries.
      * @param outputFiles the output files.
      * @param sqlProvider the {@link CustomSqlProvider} instance.
      */
