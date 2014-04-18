@@ -23,7 +23,7 @@
 
  ******************************************************************************
  *
- * Filename: SqlTestHelper.java
+ * Filename: CustomSqlTestHelper.java
  *
  * Author: Jose San Leandro Armendariz
  *
