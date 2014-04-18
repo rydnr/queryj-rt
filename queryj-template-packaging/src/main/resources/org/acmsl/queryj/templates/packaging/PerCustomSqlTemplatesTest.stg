@@ -217,7 +217,7 @@ public class PerCustomSqlTemplatesTest
      * @param resultInfo the information about the results.
      */
     @SuppressWarnings("unused")
-    @Given("^Given the following custom result:$")
+    @Given("^Given the following custom query:$")
     public void defineInputResults(@NotNull final DataTable resultInfo)
     {
         defineInputResults(resultInfo, getResults(), CustomResultTestHelper.getInstance());
