@@ -172,11 +172,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
                     templateFactory,
                     packageName,
                     repository,
-                    t_lTableNames,
-                    jndiLocation,
-                    retrieveDisableGenerationTimestamps(parameters),
-                    retrieveDisableNotNullAnnotations(parameters),
-                    retrieveDisableCheckthreadAnnotations(parameters),
                     parameters);
 
             if (t_Template != null)
