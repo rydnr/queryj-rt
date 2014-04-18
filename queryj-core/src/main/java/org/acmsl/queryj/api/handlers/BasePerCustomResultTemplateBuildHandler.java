@@ -123,11 +123,6 @@ public abstract class BasePerCustomResultTemplateBuildHandler
             retrieveCustomSqlProvider(parameters));
 
         result = false;
-        }
-        else
-        {
-            result = true;
-        }
 
         return result;
     }
