@@ -234,10 +234,6 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
                     templateFactory.createTemplate(
                         t_Sql,
                         retrievePackage(t_Sql, engineName, parameters),
-                        engineName,
-                        engineVersion,
-                        projectPackage,
-                        repository,
                         header));
             }
         }
