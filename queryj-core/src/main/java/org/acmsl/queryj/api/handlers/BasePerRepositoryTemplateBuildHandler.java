@@ -59,9 +59,13 @@ import org.acmsl.queryj.tools.PackageUtils;
 /*
  * Importing some JetBrains annotations.
  */
-import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+
+/*
+ * Importing some JetBrains annotations.
+ */
+import org.checkthread.annotations.ThreadSafe;
 
 /**
  * Builds a per-repository template using database metadata.
