@@ -44,8 +44,15 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+
+/*
+ * Importing JUnit classes.
+ */
 import org.junit.Test;
 
+/*
+ * Importing JDK classes.
+ */
 import java.util.Arrays;
 import java.util.Locale;
 
