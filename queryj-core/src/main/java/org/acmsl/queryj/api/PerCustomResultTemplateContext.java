@@ -110,7 +110,7 @@ public class PerCustomResultTemplateContext
         @NotNull final Result<String> result,
         @NotNull final List<Property<String>> properties)
     {
-        super(null, null);
+        super(null, command);
 
         immutableSetResult(result);
     }
