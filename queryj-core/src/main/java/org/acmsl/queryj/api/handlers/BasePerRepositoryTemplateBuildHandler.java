@@ -172,7 +172,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
                     templateFactory,
                     packageName,
                     repository,
-                    header,
                     implementMarkerInterfaces,
                     jmx,
                     t_lTableNames,
