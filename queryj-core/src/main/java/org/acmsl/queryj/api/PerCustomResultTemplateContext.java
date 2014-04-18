@@ -115,7 +115,7 @@ public class PerCustomResultTemplateContext
     @NotNull
     public Result<String> getResult()
     {
-        return m__Result;
+        return getValue(buildResultKey());
     }
 
     /**
