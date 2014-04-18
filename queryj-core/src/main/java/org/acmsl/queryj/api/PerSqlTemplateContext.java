@@ -60,7 +60,9 @@ public class PerSqlTemplateContext
      * Creates a new instance.
      * @param command the command.
      */
-    public PerSqlTemplateContext(@NotNull final QueryJCommand command)
+    public PerSqlTemplateContext(
+        @NotNull final String fileName,
+        @NotNull final String packageName,@NotNull final QueryJCommand command)
     {
         super(pk, command);
     }
