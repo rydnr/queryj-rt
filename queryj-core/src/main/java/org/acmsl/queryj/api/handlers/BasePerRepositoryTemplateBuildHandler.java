@@ -149,7 +149,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
     @SuppressWarnings("unchecked")
     protected void buildTemplate(
         @NotNull final QueryJCommand parameters,
-        @NotNull final MetadataManager metadataManager,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final TF templateFactory,
         @NotNull final String packageName,
