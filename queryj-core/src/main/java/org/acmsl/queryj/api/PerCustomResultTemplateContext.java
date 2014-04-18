@@ -130,6 +130,7 @@ public class PerCustomResultTemplateContext
         return getValue(buildResultKey(), getCommand(), new MissingResultException());
     }
 
+
     /**
      * {@inheritDoc}
      */
