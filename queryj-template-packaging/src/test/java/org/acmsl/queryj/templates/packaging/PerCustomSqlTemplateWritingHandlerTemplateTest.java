@@ -23,7 +23,7 @@
 
  ******************************************************************************
  *
- * Filename: PerSqlTemplateWritingHandlerTemplateTest.java
+ * Filename: PerCustomSqlTemplateWritingHandlerTemplateTest.java
  *
  * Author: Jose San Leandro
  *
