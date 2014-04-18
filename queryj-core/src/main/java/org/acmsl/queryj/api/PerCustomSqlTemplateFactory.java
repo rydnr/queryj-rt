@@ -73,8 +73,6 @@ public interface PerCustomSqlTemplateFactory<T extends PerCustomSqlTemplate<C>, 
     @NotNull
     public T createTemplate(
         @NotNull final Sql<String> sql,
-        @NotNull final CustomSqlProvider customSqlProvider,
-        @NotNull final MetadataManager metadataManager,
         @NotNull final String packageName,
         @NotNull final String engineName,
         @Nullable final String engineVersion,
