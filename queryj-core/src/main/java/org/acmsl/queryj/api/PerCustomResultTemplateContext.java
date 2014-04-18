@@ -147,8 +147,9 @@ public class PerCustomResultTemplateContext
     @NotNull
     public List<Property<String>> getProperties()
     {
-        return
+        return getValue(buildPropertiesKey(), getCommand(), new MissingPropertiesException());
     }
+
     /**
      * {@inheritDoc}
      */
