@@ -59,6 +59,8 @@ public class PerSqlTemplateContext
 {
     /**
      * Creates a new instance.
+     * @param fileName the file name.
+     * @param sql the {@link Sql}.
      * @param command the command.
      */
     public PerSqlTemplateContext(
