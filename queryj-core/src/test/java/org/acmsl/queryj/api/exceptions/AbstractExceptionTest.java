@@ -73,6 +73,10 @@ public abstract class AbstractExceptionTest<E extends QueryJNonCheckedException>
         }
     }
 
+    /**
+     * Creates a new exception.
+     * @return such instance.
+     */
     @NotNull
     protected abstract E createInstance();
 }
