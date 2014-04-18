@@ -204,11 +204,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
      * @param templateFactory the template factory.
      * @param packageName the package name.
      * @param repository the repository.
-     * @param tableNames the table names.
-     * @param jndiLocation the JNDI path of the {@link javax.sql.DataSource}.
-     * @param disableGenerationTimestamps whether to disable generation timestamps.
-     * @param disableNotNullAnnotations whether to disable NotNull annotations.
-     * @param disableCheckthreadAnnotations whether to disable checkthread.org annotations or not.
      * @return the template.
      */
     @Nullable
