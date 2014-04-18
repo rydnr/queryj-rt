@@ -112,7 +112,7 @@ public class PerCustomResultTemplateContext
 
     /**
      * Retrieves the result key.
-     * @return such information.
+     * @return "resultName".
      */
     @NotNull
     public String buildResultKey()
