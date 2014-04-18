@@ -58,5 +58,8 @@ import org.junit.runners.JUnit4;
 public class PerCustomResultTemplateContextTest
 {
     @Test
-    public void properties_are_stored_correctly()
+    public void properties_are_stored_correctly_in_the_command()
+    {
+        @NotNull final
+    }
 }
