@@ -235,7 +235,7 @@ public class PerCustomSqlTemplatesTest
         @NotNull final Map\<String, Sql\<String\>> queries,
         @NotNull final TableTestHelper helper)
     {
-        helper.defineSql(sqlInfo, results);
+        helper.defineSql(sqlInfo, queries);
     }
 
     /**
