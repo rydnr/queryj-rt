@@ -52,7 +52,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Represents entities able to create per-<i>custom sql</i> templates.
+ * @param <T> the template type.
+ * @param <C> the template context.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
+ * @since 2.0
  */
 public interface PerCustomSqlTemplateFactory<T extends PerCustomSqlTemplate<C>, C extends PerCustomSqlTemplateContext>
     extends  Factory
