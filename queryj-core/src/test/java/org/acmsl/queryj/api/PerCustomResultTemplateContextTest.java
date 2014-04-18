@@ -67,6 +67,6 @@ public class PerCustomResultTemplateContextTest
         @NotNull final List<Property<String>> properties = new ArrayList<>(0);
 
         @NotNull final PerCustomResultTemplate instance =
-            new PerCustomResultTemplateContext("fileName", "packageName", );
+            new PerCustomResultTemplateContext("fileName", "packageName", result, );
     }
 }
