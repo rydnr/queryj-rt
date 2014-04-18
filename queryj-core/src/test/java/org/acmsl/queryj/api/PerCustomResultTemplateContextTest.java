@@ -86,7 +86,7 @@ public class PerCustomResultTemplateContextTest
     {
         @NotNull final List<Property<String>> properties = new ArrayList<>(0);
 
-        properties.add(new PropertyElement<String>())
+        properties.add(new PropertyElement<String>("id", "col"))
         @NotNull final Result<String> result = new ResultElement<>("id", "class");
 
         @NotNull final QueryJCommand command =
