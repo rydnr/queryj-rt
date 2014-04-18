@@ -40,7 +40,7 @@ package org.acmsl.queryj.templates.packaging.handlers;
  */
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
 import org.acmsl.queryj.templates.packaging.PerCustomSqlTemplatesTestTemplate;
-import org.acmsl.queryj.templates.packaging.PerSqlTemplatesTestTemplateFactory;
+import org.acmsl.queryj.templates.packaging.PerCustomSqlTemplatesTestTemplateFactory;
 
 /*
  * Importing JetBrains annotations.
@@ -66,7 +66,7 @@ public class PerSqlTemplatesTestTemplateWritingHandlerTest
     PerSqlTemplatesTestTemplateWritingHandler,
     PerSqlTemplatesTestTemplateBuildHandler,
     PerCustomSqlTemplatesTestTemplate,
-    PerSqlTemplatesTestTemplateFactory,
+    PerCustomSqlTemplatesTestTemplateFactory,
     GlobalTemplateContext>
 {
     /**

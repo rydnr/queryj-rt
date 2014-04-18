@@ -40,7 +40,7 @@ package org.acmsl.queryj.templates.packaging.handlers;
  */
 import org.acmsl.queryj.templates.packaging.Literals;
 import org.acmsl.queryj.templates.packaging.PerCustomSqlTemplatesTestTemplate;
-import org.acmsl.queryj.templates.packaging.PerSqlTemplatesTestTemplateFactory;
+import org.acmsl.queryj.templates.packaging.PerCustomSqlTemplatesTestTemplateFactory;
 
 /*
  * Importing JetBrains annotations.
@@ -66,7 +66,7 @@ public class PerSqlTemplatesTestTemplateBuildHandlerTest
     extends AbstractTemplatesTestTemplateBuildHandlerTest
                 <PerSqlTemplatesTestTemplateBuildHandler,
                     PerCustomSqlTemplatesTestTemplate,
-                    PerSqlTemplatesTestTemplateFactory>
+                    PerCustomSqlTemplatesTestTemplateFactory>
 {
     /**
      * Creates a new build handler instance.
@@ -114,13 +114,13 @@ public class PerSqlTemplatesTestTemplateBuildHandlerTest
 
     /**
      * Checks whether retrieveTemplateFactory() retrieves
-     * {@link org.acmsl.queryj.templates.packaging.PerSqlTemplatesTestTemplateFactory}.
+     * {@link org.acmsl.queryj.templates.packaging.PerCustomSqlTemplatesTestTemplateFactory}.
      */
     @Override
     @Test
     public void retrieveTemplateFactory_retrieves_the_correct_factory()
     {
         retrieveTemplateFactory_retrieves_the_correct_factory(
-            PerSqlTemplatesTestTemplateFactory.getInstance());
+            PerCustomSqlTemplatesTestTemplateFactory.getInstance());
     }
 }

@@ -47,7 +47,7 @@ import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
 import org.acmsl.queryj.templates.packaging.Literals;
 import org.acmsl.queryj.templates.packaging.PerCustomSqlTemplatesTestTemplate;
-import org.acmsl.queryj.templates.packaging.PerSqlTemplatesTestTemplateFactory;
+import org.acmsl.queryj.templates.packaging.PerCustomSqlTemplatesTestTemplateFactory;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
 
 /*
@@ -75,7 +75,7 @@ import java.util.List;
 public class PerSqlTemplatesTestTemplateBuildHandler
     extends TemplatePackagingTestBuildHandler
                 <PerCustomSqlTemplatesTestTemplate,
-                    PerSqlTemplatesTestTemplateFactory,
+                    PerCustomSqlTemplatesTestTemplateFactory,
                     GlobalTemplateContext>
 {
     /**
@@ -90,13 +90,13 @@ public class PerSqlTemplatesTestTemplateBuildHandler
 
     /**
      * Retrieves the template factory.
-     * @return the {@link PerSqlTemplatesTestTemplateFactory} instance.
+     * @return the {@link org.acmsl.queryj.templates.packaging.PerCustomSqlTemplatesTestTemplateFactory} instance.
      */
     @Override
     @NotNull
-    protected PerSqlTemplatesTestTemplateFactory retrieveTemplateFactory()
+    protected PerCustomSqlTemplatesTestTemplateFactory retrieveTemplateFactory()
     {
-        return PerSqlTemplatesTestTemplateFactory.getInstance();
+        return PerCustomSqlTemplatesTestTemplateFactory.getInstance();
     }
 
     /**
