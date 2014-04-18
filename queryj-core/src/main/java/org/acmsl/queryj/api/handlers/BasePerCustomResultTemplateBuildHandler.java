@@ -76,7 +76,9 @@ import java.util.List;
 
 /**
  * Builds all templates to generate sources for each custom result.
- * @param
+ * @param <T> the template type.
+ * @param <C> the context type.
+ * @param <TF> the template factory type.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  */
 @ThreadSafe
