@@ -131,12 +131,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
      * @param customSqlProvider the custom sql provider.
      * @param templateFactory the template factory.
      * @param packageName the package name.
-     * @param projectPackage the project package.
      * @param repository the repository.
-     * @param header the header.
-     * @param implementMarkerInterfaces whether to implement marker interfaces.
-     * @param jmx whether to support JMX or not.
-     * @param jndiLocation the JNDI path of the {@link javax.sql.DataSource}.
      * @param decoratorFactory the {@link DecoratorFactory} instance.
      */
     @SuppressWarnings("unchecked")
