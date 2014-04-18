@@ -201,7 +201,6 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
      * @param engineName the engine name.
      * @param templateFactory the template factory.
      * @param sqlElements the custom SQL elements.
-     * @param header the header.
      */
     protected void buildTemplates(
         @NotNull final QueryJCommand parameters,
