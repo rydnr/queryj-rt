@@ -203,6 +203,6 @@ public class PerCustomResultTemplateContext
     public String toString()
     {
         return "{ 'class': 'PerCustomResultTemplateContext', " +
-               ", 'result': " + m__Result + " }";
+               ", 'result': " + getResult() + " }";
     }
 }
