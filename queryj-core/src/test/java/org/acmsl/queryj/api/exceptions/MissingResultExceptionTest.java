@@ -56,9 +56,7 @@ public class MissingResultExceptionTest
     extends AbstractExceptionTest<MissingResultException>
 {
     /**
-     * Creates a new exception.
-     *
-     * @return such instance.
+     * {@inheritDoc}
      */
     @NotNull
     @Override
