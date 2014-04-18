@@ -74,9 +74,4 @@ public interface PerCustomSqlTemplateFactory<T extends PerCustomSqlTemplate<C>, 
     public T createTemplate(
         @NotNull final Sql<String> sql,
         @NotNull final String packageName,
-        @NotNull final String engineName,
-        @Nullable final String engineVersion,
-        @NotNull final String basePackageName,
-        @NotNull final String repositoryName,
-        @Nullable final String header);
 }
