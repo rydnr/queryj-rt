@@ -74,5 +74,6 @@ public interface PerCustomResultTemplateFactory
         @NotNull final QueryJCommand command,
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final String packageName,
-        @NotNull final Result<String> customResult);
+        @NotNull final Result<String> customResult,
+        @NotNull final List<Property<String>>);
 }
