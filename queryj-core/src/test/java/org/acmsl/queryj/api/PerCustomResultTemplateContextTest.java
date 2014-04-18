@@ -77,6 +77,9 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public class PerCustomResultTemplateContextTest
 {
+    /**
+     * Tests the properties are correctly stored.
+     */
     @Test
     public void properties_are_stored_correctly_in_the_command()
     {
