@@ -52,11 +52,6 @@ import org.acmsl.queryj.metadata.vo.Table;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-/*
- * Importing some JDK classes.
- */
-import java.util.List;
-
 /**
  * Represents entities able to create per-repository templates.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
