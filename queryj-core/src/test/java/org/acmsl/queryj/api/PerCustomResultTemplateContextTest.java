@@ -93,7 +93,7 @@ public class PerCustomResultTemplateContextTest
             new PerCustomResultTemplateContext("fileName", "packageName", result, properties, command);
 
         @NotNull final PerCustomResultTemplateContext instance2 =
-            new PerCustomResultTemplateContext("fileName", "packageName", result, properties, command);
+            new PerCustomResultTemplateContext("fileName", "packageName", result, new ArrayList<>(0), command);
 
         Assert.assertEquals(properties, instance.getProperties());
     }
