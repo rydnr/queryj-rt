@@ -50,7 +50,7 @@ import java.util.Arrays;
 import java.util.Locale;
 
 /**
- * Crea
+ * Common tests for all exceptions.
  * @param <E> the exception type.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
