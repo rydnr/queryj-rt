@@ -63,7 +63,7 @@ public class PerSqlTemplateContext
      */
     public PerSqlTemplateContext(
         @NotNull final String fileName,
-        @NotNull final Sql<>
+        @NotNull final Sql<String> sql,
         @NotNull final QueryJCommand command)
     {
         super(pk, command);
