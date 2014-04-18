@@ -370,7 +370,7 @@ public class PerCustomSqlTemplatesTest
                     tableMap.get(sql.getDao());
 
                 @NotNull final MetadataManager metadataManager =
-                    retrieveMetadataManager(engine, table, new ArrayListdecoratorFactory);
+                    retrieveMetadataManager(engine, table, new ArrayList\<Row\<String\>>decoratorFactory);
 
                 new QueryJCommandWrapper\<MetadataManager>(t_Command).setSetting(
                     DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, metadataManager);
