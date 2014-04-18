@@ -119,7 +119,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
 
         buildTemplates(
             parameters,
-            t_MetadataManager,
+            retrieveMetadataManager(parameters),
             retrieveCustomSqlProvider(parameters));
 
         result = false;
