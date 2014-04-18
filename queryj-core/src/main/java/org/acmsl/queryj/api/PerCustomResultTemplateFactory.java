@@ -59,9 +59,10 @@ import java.util.List;
 
 /**
  * Represents entities able to create per-<i>custom result</i> templates.
+ * @param <T> the template type.
+ * @param <C> the context type.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  * @since 3.0
- *
  */
 public interface PerCustomResultTemplateFactory
     <T extends PerCustomResultTemplate<C>, C extends PerCustomResultTemplateContext>
