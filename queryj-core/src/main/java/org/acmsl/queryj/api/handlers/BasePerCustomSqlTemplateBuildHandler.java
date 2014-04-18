@@ -208,8 +208,7 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
         @NotNull final QueryJCommand parameters,
         @NotNull final String engineName,
         @NotNull final PerCustomSqlTemplateFactory<T, C> templateFactory,
-        @NotNull final List<Sql<String>> sqlElements,
-        @Nullable final String header)
+        @NotNull final List<Sql<String>> sqlElements)
       throws  QueryJBuildException
     {
         @NotNull final List<T> t_lTemplates = new ArrayList<>(sqlElements.size());
