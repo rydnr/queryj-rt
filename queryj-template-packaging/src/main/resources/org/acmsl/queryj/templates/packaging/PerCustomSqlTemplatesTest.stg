@@ -387,6 +387,7 @@ public class PerCustomSqlTemplatesTest
                     templateFactory.createTemplate(
                         packageName,
                         sql,
+                        decoratorFactory,
                         t_Command);
 
                 Assert.assertNotNull("No template found for " + templateName, template);
