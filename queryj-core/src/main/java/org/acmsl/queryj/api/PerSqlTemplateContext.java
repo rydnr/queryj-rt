@@ -38,6 +38,7 @@ package org.acmsl.queryj.api;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.QueryJCommand;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -55,4 +56,8 @@ import org.checkthread.annotations.ThreadSafe;
 public class PerSqlTemplateContext
     extends AbstractQueryJTemplateContext
 {
+    public PerSqlTemplateContext(@NotNull final String pk, @NotNull final QueryJCommand command)
+    {
+        super(pk, command);
+    }
 }
