@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for MissingResultException.
  *
  * Date: 2014/04/18
  * Time: 13:55
