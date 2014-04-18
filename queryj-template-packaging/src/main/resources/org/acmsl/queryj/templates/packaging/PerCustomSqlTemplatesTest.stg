@@ -385,7 +385,7 @@ public class PerCustomSqlTemplatesTest
 
                 @Nullable final PerCustomSqlTemplate\<PerCustomSqlTemplateContext> template =
                     templateFactory.createTemplate(
-                        fileName,
+                        "", //fileName,
                         sql,
                         packageName,
                         t_Command);
