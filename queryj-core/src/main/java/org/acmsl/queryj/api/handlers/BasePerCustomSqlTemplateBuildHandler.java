@@ -184,8 +184,7 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
                 engineName,
                 retrieveTemplateFactory(),
                 retrieveCustomSql(
-                    parameters, customSqlProvider, metadataManager),
-                retrieveHeader(parameters));
+                    parameters, customSqlProvider, metadataManager));
         }
     }
     
