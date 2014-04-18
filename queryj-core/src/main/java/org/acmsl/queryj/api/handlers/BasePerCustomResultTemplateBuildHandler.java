@@ -229,15 +229,6 @@ public abstract class BasePerCustomResultTemplateBuildHandler
                                 metadataManager,
                                 metadataManager.getEngine(),
                                 parameters),
-                            projectPackage,
-                            repository,
-                            header,
-                            implementMarkerInterfaces,
-                            jmx,
-                            jndiLocation,
-                            disableGenerationTimestamps,
-                            disableNotNullAnnotations,
-                            disableCheckthreadAnnotations,
                             t_ResultElement);
 
                     if  (   (t_Template != null)
