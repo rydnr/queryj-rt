@@ -75,5 +75,6 @@ public class AbstractExceptionTest<E extends QueryJNonCheckedException>
 
     private E createInstance()
     {
+        return null;  //To change body of created methods use File | Settings | File Templates.
     }
 }
