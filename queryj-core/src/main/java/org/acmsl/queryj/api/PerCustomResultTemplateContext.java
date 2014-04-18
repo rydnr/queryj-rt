@@ -102,6 +102,9 @@ public class PerCustomResultTemplateContext
     {
         super(result.getId(), command);
 
+        immutableSetValue(buildFileNameKey(), fileName, command);
+        immutableSetValue(buildPackageNameKey(), packageName, command);
+        immutableSetValue(buildForeignKeyKey(), foreignKey, command);
         immutableSetResult(result);
     }
 
