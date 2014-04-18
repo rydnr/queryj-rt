@@ -212,7 +212,7 @@ public class PerCustomSqlTemplatesTest
     }
 
     /**
-     * Defines the input results based on the information provided by the
+     * Defines the input SQL based on the information provided by the
      * feature.
      * @param sqlInfo the information about the SQL.
      */
