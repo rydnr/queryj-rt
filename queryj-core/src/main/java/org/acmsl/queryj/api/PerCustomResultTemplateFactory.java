@@ -65,15 +65,6 @@ public interface PerCustomResultTemplateFactory
      * Creates a per-<i>custom result</i> template.
      * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @param packageName the package name.
-     * @param basePackageName the base package name.
-     * @param repositoryName the repository name.
-     * @param header the header.
-     * @param implementMarkerInterfaces whether to implement marker interfaces or not.
-     * @param jmx whether to include JMX support.
-     * @param jndiLocation the JNDI path for the {@link javax.sql.DataSource}.
-     * @param disableGenerationTimestamps whether to disable generation timestamps.
-     * @param disableNotNullAnnotations whether to disable NotNull annotations.
-     * @param disableCheckthreadAnnotations whether to disable checkthread.org annotations or not.
      * @param customResult the custom result.
      * @return the template.
      */
