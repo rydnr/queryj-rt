@@ -212,8 +212,6 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
         @NotNull final QueryJCommand parameters,
         @NotNull final String engineName,
         @NotNull final PerCustomSqlTemplateFactory<T, C> templateFactory,
-        @NotNull final String projectPackage,
-        @NotNull final String repository,
         @NotNull final List<Sql<String>> sqlElements,
         @Nullable final String header)
       throws  QueryJBuildException
