@@ -65,14 +65,14 @@ import org.checkthread.annotations.ThreadSafe;
 import org.stringtemplate.v4.ST;
 
 /**
- * Factory for {@link PerSqlTemplatesFeatureTemplate}s.
+ * Factory for {@link PerCustomSqlTemplatesFeatureTemplate}s.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/16 15:53
  */
 @ThreadSafe
 public class PerSqlTemplatesFeatureTemplateFactory
-    implements TemplatePackagingTemplateFactory<PerSqlTemplatesFeatureTemplate, GlobalTemplateContext>,
+    implements TemplatePackagingTemplateFactory<PerCustomSqlTemplatesFeatureTemplate, GlobalTemplateContext>,
                Singleton
 {
     /**
@@ -105,9 +105,9 @@ public class PerSqlTemplatesFeatureTemplateFactory
      */
     @Nullable
     @Override
-    public PerSqlTemplatesFeatureTemplate createTemplate(@NotNull final GlobalTemplateContext context)
+    public PerCustomSqlTemplatesFeatureTemplate createTemplate(@NotNull final GlobalTemplateContext context)
     {
-        return new PerSqlTemplatesFeatureTemplate(context);
+        return new PerCustomSqlTemplatesFeatureTemplate(context);
     }
 
     /**
