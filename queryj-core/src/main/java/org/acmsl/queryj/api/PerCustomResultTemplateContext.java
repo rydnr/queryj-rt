@@ -197,7 +197,7 @@ public class PerCustomResultTemplateContext
             return false;
         }
         final PerCustomResultTemplateContext other = (PerCustomResultTemplateContext) obj;
-        return new EqualsBuilder().appendSuper(super.equals(obj)).append(this.m__Result, other.m__Result).isEquals();
+        return new EqualsBuilder().appendSuper(super.equals(obj)).isEquals();
     }
 
     /**
@@ -208,7 +208,7 @@ public class PerCustomResultTemplateContext
     public String toString()
     {
         return
-              "{ \"class\": \"" + PerCustomResultTemplateContext + '"'
+              "{ \"class\": \"" + PerCustomResultTemplateContext.class.getSimpleName() + '"'
             + ", \"result\": " + getResult()
             +", \"properties\": " + getProperties()
             + " }";
