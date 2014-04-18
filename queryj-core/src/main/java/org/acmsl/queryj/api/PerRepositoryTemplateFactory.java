@@ -74,7 +74,6 @@ public interface PerRepositoryTemplateFactory
         @NotNull final QueryJCommand command,
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final String packageName,
-        @NotNull final String packageName,
         @NotNull final String repository,
         @NotNull final List<String> tableNames,
         @NotNull final QueryJCommand command);
