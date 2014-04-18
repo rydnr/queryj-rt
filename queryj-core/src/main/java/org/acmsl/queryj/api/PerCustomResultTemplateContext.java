@@ -102,7 +102,7 @@ public class PerCustomResultTemplateContext
         immutableSetValue(buildFileNameKey(), fileName, command);
         immutableSetValue(buildPackageNameKey(), packageName, command);
         immutableSetValue(buildResultKey(), result, command);
-        immutableSetValue(buildPropertiesKey(getPk()), properties, command);
+        immutableSetValue(buildPropertiesKey(), properties, command);
     }
 
     /**
