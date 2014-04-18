@@ -87,7 +87,7 @@ public class PerCustomSqlTemplatesFeatureTemplateFactoryTest
             PerCustomSqlTemplatesFeatureTemplateFactory.getInstance();
 
         Assert.assertEquals(
-            "PerSqlTemplates.feature",
+            "PerCustomSqlTemplates.feature",
             instance.retrieveTemplateFileName("repo", new UndefinedJdbcEngine("unknown", "1.0")));
     }
 }
