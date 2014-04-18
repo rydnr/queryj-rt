@@ -45,6 +45,10 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.stringtemplate.v4.ST;
 
 /**
