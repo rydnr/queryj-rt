@@ -55,5 +55,15 @@ import org.checkthread.annotations.ThreadSafe;
 public class MissingPropertiesExceptionTest
     extends AbstractExceptionTest<MissingPropertiesException>
 {
-
+    /**
+     * Creates a new exception.
+     *
+     * @return such instance.
+     */
+    @NotNull
+    @Override
+    protected MissingPropertiesException createInstance()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
 }
