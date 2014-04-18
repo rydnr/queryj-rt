@@ -142,7 +142,7 @@ public class PerCustomResultTemplateContext
     @NotNull
     public List<Property<String>> getProperties()
     {
-        return getValue(buildPropertiesKey(), getCommand(), new MissingPropertiesException());
+        return getListValue(buildPropertiesKey(), getCommand(), new MissingPropertiesException());
     }
 
     /**
