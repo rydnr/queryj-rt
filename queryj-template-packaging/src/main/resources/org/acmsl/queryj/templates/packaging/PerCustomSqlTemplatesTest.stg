@@ -239,7 +239,7 @@ public class PerCustomSqlTemplatesTest
      * @param values such information.
      */
     @SuppressWarnings("unused")
-    @And("^the following query parameters:$")
+    @And("^the following custom query parameters:$")
     public void defineParameters(@NotNull final DataTable values)
     {
         setParameters(defineParameters(values, getSqlList(), TableTestHelper.getInstance()));
