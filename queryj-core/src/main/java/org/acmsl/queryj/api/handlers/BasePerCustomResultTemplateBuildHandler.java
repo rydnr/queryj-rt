@@ -176,13 +176,6 @@ public abstract class BasePerCustomResultTemplateBuildHandler
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
      * @param templateFactory the {@link org.acmsl.queryj.api.TemplateFactory} instance.
      * @param decoratorFactory the {@link DecoratorFactory} instance.
-     * @param projectPackage the project package.
-     * @param repository the repository.
-     * @param implementMarkerInterfaces whether to implement marker interfaces.
-     * @param jndiLocation the JNDI location.
-     * @param disableGenerationTimestamps whether to disable generation timestamps.
-     * @param disableNotNullAnnotations whether to disable NotNull annotations.
-     * @param disableCheckthreadAnnotations whether to disable checkthread.org annotations or not.
      * @param resultElements the {@link Result} list.
      * @param customResultUtils the {@link CustomResultUtils} instance.
      */
