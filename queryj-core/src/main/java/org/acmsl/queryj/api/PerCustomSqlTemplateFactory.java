@@ -39,6 +39,7 @@ package org.acmsl.queryj.api;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Sql;
+import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.MetadataManager;
 
 /*
@@ -69,5 +70,6 @@ public interface PerCustomSqlTemplateFactory<T extends PerCustomSqlTemplate<C>, 
     public T createTemplate(
         @NotNull final Sql<String> sql,
         @NotNull final String packageName,
+        @NotNull final DecoratorFactory,
         @NotNull final QueryJCommand command);
 }
