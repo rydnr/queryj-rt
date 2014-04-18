@@ -38,6 +38,7 @@ package org.acmsl.queryj.api;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.customsql.Property;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -48,6 +49,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -62,7 +64,8 @@ public class PerCustomResultTemplateContextTest
     @Test
     public void properties_are_stored_correctly_in_the_command()
     {
-        @NotNull final List<Property<String>>
+        @NotNull final List<Property<String>> properties = new ArrayList<>(0);
+
         @NotNull final PerCustomResultTemplate instance = new PerCustomResultTemplateContext();
     }
 }
