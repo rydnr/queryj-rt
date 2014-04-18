@@ -233,7 +233,7 @@ public class PerCustomSqlTemplatesTest
     protected void defineInputResults(
         @NotNull final DataTable sqlInfo,
         @NotNull final Map\<String, Sql\<String\>> queries,
-        @NotNull final CustomResultTestHelper helper)
+        @NotNull final TableTestHelper helper)
     {
         helper.defineInputResults(resultInfo, results);
     }
