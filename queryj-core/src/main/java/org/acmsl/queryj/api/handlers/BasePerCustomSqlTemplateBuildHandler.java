@@ -138,8 +138,6 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
      * Builds the templates.
      * @param parameters the parameters.
      * @param engineName the engine name.
-     * @param engineVersion the engine version.
-     * @param quote the quote character.
      */
     protected void buildTemplates(
         @NotNull final QueryJCommand parameters,
