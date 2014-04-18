@@ -177,6 +177,9 @@ public class PerCustomResultTemplateContext
         return new HashCodeBuilder().appendSuper(super.hashCode()).append(this.m__Result).toHashCode();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean equals(final Object obj)
     {
