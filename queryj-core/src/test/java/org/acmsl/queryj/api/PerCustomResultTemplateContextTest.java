@@ -38,6 +38,7 @@ package org.acmsl.queryj.api;
 /*
  * Importing JetBrains annotations.
  */
+import junit.framework.Assert;
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.customsql.Property;
@@ -77,5 +78,7 @@ public class PerCustomResultTemplateContextTest
 
         @NotNull final PerCustomResultTemplateContext instance =
             new PerCustomResultTemplateContext("fileName", "packageName", result, properties, command);
+
+        Assert.assertEquals();
     }
 }
