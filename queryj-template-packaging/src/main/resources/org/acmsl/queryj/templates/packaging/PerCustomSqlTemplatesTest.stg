@@ -298,7 +298,7 @@ public class PerCustomSqlTemplatesTest
         generateFile(
             template,
             engine,
-            getResults(),
+            getTables(),
             getProperties(),
             getOutputFiles(),
             retrieveCustomSqlProvider(getSqlList(), getParameters()));
