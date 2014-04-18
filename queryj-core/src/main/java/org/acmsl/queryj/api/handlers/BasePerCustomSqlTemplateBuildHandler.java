@@ -220,8 +220,6 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
     {
         @NotNull final List<T> t_lTemplates = new ArrayList<>(sqlElements.size());
 
-        @Nullable final SqlElement<String> t_SqlElement = null;
-
         for (@Nullable final Sql<String> t_Sql : sqlElements)
         {
             if (t_Sql != null)
