@@ -222,7 +222,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
      */
     @Nullable
     protected T createTemplate(
-        @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final TF templateFactory,
         @NotNull final String packageName,
