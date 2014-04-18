@@ -23,7 +23,7 @@
 
  ******************************************************************************
  *
- * Filename: PerSqlTemplatesFeatureTemplateFactoryTest.java
+ * Filename: PerCustomSqlTemplatesFeatureTemplateFactoryTest.java
  *
  * Author: Jose San Leandro Armendariz
  *
