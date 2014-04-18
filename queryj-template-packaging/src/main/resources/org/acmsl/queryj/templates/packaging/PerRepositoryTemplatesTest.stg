@@ -405,7 +405,7 @@ public class PerRepositoryTemplatesTest
             }
 
             outputFiles.put(
-                table.getName(),
+                repository,
                 new File(outputDir, template.getTemplateContext().getFileName()));
         }
 
