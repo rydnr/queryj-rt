@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Customization of a template on a per-SQL basis.
  *
  * Date: 2014/04/18
  * Time: 08:51
