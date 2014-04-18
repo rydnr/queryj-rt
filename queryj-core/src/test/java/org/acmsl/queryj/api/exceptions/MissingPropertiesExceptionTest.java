@@ -56,9 +56,7 @@ public class MissingPropertiesExceptionTest
     extends AbstractExceptionTest<MissingPropertiesException>
 {
     /**
-     * Creates a new exception.
-     *
-     * @return such instance.
+     * {@inheritDoc}
      */
     @NotNull
     @Override
