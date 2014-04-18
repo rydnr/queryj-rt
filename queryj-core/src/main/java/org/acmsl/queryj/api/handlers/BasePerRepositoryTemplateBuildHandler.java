@@ -206,7 +206,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
      * @param templateFactory the template factory.
      * @param packageName the package name.
      * @param repository the repository.
-     * @param header the header.
      * @param implementMarkerInterfaces whether to implement marker interfaces.
      * @param jmx whether to support JMX or not.
      * @param tableNames the table names.
