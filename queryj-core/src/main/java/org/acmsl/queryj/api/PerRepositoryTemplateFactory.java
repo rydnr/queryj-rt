@@ -38,9 +38,7 @@ package org.acmsl.queryj.api;
  */
 import org.acmsl.commons.patterns.Factory;
 import org.acmsl.queryj.QueryJCommand;
-import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.metadata.DecoratorFactory;
-import org.acmsl.queryj.metadata.MetadataManager;
 
 /*
  * Importing some JetBrains annotations.
