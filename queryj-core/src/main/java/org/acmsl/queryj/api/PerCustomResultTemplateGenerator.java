@@ -33,7 +33,7 @@
 package org.acmsl.queryj.api;
 
 /**
- * Represents entities able to write per-repository templates.
+ * Represents entities able to write per-custom result templates.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  */
 public interface PerCustomResultTemplateGenerator
