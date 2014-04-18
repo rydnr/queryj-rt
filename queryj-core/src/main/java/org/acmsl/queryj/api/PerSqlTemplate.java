@@ -71,6 +71,3 @@ public interface PerSqlTemplate<C extends PerSqlTemplateContext>
         @NotNull final ST template,
         @NotNull final Throwable actualException);
 }
-
-{
-}
