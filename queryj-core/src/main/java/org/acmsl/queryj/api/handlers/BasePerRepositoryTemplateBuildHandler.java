@@ -62,11 +62,6 @@ import org.acmsl.queryj.tools.PackageUtils;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-/*
- * Importing some JDK classes.
- */
-import java.util.List;
-
 /**
  * Builds a per-repository template using database metadata.
  * @author <a href="mailto:chous@acm-sl.org"
