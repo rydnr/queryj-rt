@@ -23,7 +23,7 @@
 
  ******************************************************************************
  *
- * Filename: PerSqlTemplatesTestTemplateTest.java
+ * Filename: PerCustomSqlTemplatesTestTemplateTest.java
  *
  * Author: Jose San Leandro Armendariz
  *
