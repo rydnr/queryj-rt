@@ -168,8 +168,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
 
             @Nullable final T t_Template =
                 createTemplate(
-                    metadataManager,
-                    customSqlProvider,
                     decoratorFactory,
                     templateFactory,
                     packageName,
