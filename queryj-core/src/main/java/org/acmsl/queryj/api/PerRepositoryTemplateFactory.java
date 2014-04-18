@@ -78,5 +78,5 @@ public interface PerRepositoryTemplateFactory
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final String packageName,
         @NotNull final String repository,
-        @NotNull final List<Table<String, Attribute<String>, List<Attribute<String>>> tables);
+        @NotNull final List<Table<String, Attribute<String>, List<Attribute<String>>>> tables);
 }
