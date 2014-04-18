@@ -68,7 +68,8 @@ public class PerCustomResultTemplateContextTest
     {
         @NotNull final List<Property<String>> properties = new ArrayList<>(0);
 
-        @NotNull final Result<String> result = new ResultElement<String>("id");
+        @NotNull final Result<String> result = new ResultElement<>("id", "class");
+
         @NotNull final PerCustomResultTemplate instance =
             new PerCustomResultTemplateContext("fileName", "packageName", result, properties);
     }
