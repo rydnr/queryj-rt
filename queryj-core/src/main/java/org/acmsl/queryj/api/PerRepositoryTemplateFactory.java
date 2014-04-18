@@ -63,7 +63,8 @@ public interface PerRepositoryTemplateFactory
 {
     /**
      * Creates a {@link T} instance with given information.
-     * @param command the {@link QueryJCommand command}.
+     * @param repository the repository name.
+     * @param packageName the package name.
      * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @param packageName the package name.
      * @param repository the repository name.
