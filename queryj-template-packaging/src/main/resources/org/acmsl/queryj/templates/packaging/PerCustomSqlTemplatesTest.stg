@@ -220,7 +220,7 @@ public class PerCustomSqlTemplatesTest
     @Given("^Given the following custom query:$")
     public void defineInputResults(@NotNull final DataTable resultInfo)
     {
-        defineInputResults(resultInfo, getResults(), TableTestHelper.getInstance());
+        defineInputResults(resultInfo, getSql(), TableTestHelper.getInstance());
     }
 
     /**
