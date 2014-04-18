@@ -185,6 +185,7 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
                 parameters,
                 engineName,
                 retrieveTemplateFactory(),
+                CachingDecoratorFactory.getInstance()
                 retrieveCustomSql(parameters, customSqlProvider, metadataManager),
                 CachingDecoratorFactory.getInstance());
         }
