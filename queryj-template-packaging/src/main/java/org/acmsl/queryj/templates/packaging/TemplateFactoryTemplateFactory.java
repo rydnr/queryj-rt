@@ -102,7 +102,7 @@ public class TemplateFactoryTemplateFactory
             case PER_CUSTOM_RESULT:
                 result = new PerCustomResultTemplateFactoryTemplate<>(context);
                 break;
-            case PER_SQL:
+            case PER_CUSTOM_SQL:
                 result = new PerCustomSqlTemplateFactoryTemplate<>(context);
                 break;
             default:
