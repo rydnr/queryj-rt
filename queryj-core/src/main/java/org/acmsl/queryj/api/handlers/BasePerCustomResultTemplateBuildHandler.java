@@ -222,6 +222,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
                 {
                     t_Template =
                         templateFactory.createTemplate(
+                            parameters,
                             decoratorFactory,
                             retrievePackage(
                                 t_ResultElement,
