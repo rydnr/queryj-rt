@@ -455,7 +455,7 @@ public class PerCustomSqlTemplatesTest
                 }
 
                 outputFiles.put(
-                    result.getName(),
+                    sql.getName(),
                     new File(outputDir, template.getTemplateContext().getFileName()));
             }
         }
