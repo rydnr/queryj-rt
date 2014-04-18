@@ -66,6 +66,7 @@ public interface PerRepositoryTemplateFactory
      * @param packageName the package name.
      * @param repository the repository name.
      * @param tableNames the list of table names.
+     * @param command the {@link QueryJCommand command}.
      * @return the new template.
      */
     @Nullable
