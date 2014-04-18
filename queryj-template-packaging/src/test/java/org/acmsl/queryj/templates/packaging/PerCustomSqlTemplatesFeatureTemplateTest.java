@@ -69,7 +69,7 @@ public class PerCustomSqlTemplatesFeatureTemplateTest
         @NotNull final PerCustomSqlTemplatesFeatureTemplate instance =
             new PerCustomSqlTemplatesFeatureTemplate(context);
 
-        Assert.assertEquals(Literals.PER_SQL_TEMPLATES_FEATURE, instance.getTemplateName());
+        Assert.assertEquals(Literals.PER_CUSTOM_SQL_TEMPLATES_FEATURE, instance.getTemplateName());
     }
 
     /**

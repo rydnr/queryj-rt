@@ -77,6 +77,6 @@ public class PerCustomSqlTemplatesFeatureTemplate
     @Override
     public String getTemplateName()
     {
-        return Literals.PER_SQL_TEMPLATES_FEATURE;
+        return Literals.PER_CUSTOM_SQL_TEMPLATES_FEATURE;
     }
 }
