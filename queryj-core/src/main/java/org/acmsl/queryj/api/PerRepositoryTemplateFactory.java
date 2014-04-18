@@ -68,7 +68,7 @@ public interface PerRepositoryTemplateFactory
      * @param packageName the package name.
      * @param repository the repository name.
      * @param command the {@link QueryJCommand command}.
-     *                   * @return the new template.
+     * @return the new template.
      */
     @Nullable
     public T createTemplate(
