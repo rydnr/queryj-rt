@@ -53,7 +53,8 @@ import org.checkthread.annotations.ThreadSafe;
 /**
  * Represents the situation in which a custom SQL does not define the result.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
- * @since 2013/06/11
+ * @since 3.0
+ * Created: 2013/06/11
  */
 @ThreadSafe
 public class MissingResultException
