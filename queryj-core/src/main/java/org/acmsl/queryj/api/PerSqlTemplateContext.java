@@ -39,6 +39,7 @@ package org.acmsl.queryj.api;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.customsql.Sql;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -62,7 +63,8 @@ public class PerSqlTemplateContext
      */
     public PerSqlTemplateContext(
         @NotNull final String fileName,
-        @NotNull final String packageName,@NotNull final QueryJCommand command)
+        @NotNull final Sql<>
+        @NotNull final QueryJCommand command)
     {
         super(pk, command);
     }
