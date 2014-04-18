@@ -389,7 +389,7 @@ public class PerCustomSqlTemplatesTest
                         packageName,
                         result.getName(),
                         properties,
-                        t_Command)
+                        t_Command);
 
                 Assert.assertNotNull("No template found for " + templateName, template);
 
