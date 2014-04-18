@@ -46,8 +46,6 @@ import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.metadata.SqlDAO;
-import org.acmsl.queryj.customsql.CustomSqlProvider;
-import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.metadata.MetadataManager;
