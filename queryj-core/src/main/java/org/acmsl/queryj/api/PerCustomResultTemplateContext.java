@@ -104,10 +104,11 @@ public class PerCustomResultTemplateContext
      * @param result the {@link Result} instance.
      */
     public PerCustomResultTemplateContext(
-        @NotNull final QueryJCommand command,
+        @NotNull final String fileName,
         @NotNull final String packageName,
         @NotNull final Result<String> result,
-        @NotNull final List<Property<String>> properties)
+        @NotNull final List<Property<String>> properties,
+        @NotNull final QueryJCommand command)
     {
         super(result.getId(), command);
 
