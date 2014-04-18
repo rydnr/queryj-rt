@@ -364,7 +364,7 @@ public class PerCustomSqlTemplatesTest
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
                 QueryJSettings.VERSION, "<C.version>");
 
-            for (@NotNull final Sql\<String> table : tables)
+            for (@NotNull final Sql\<String> sql : sqlList)
             {
                 @NotNull final MetadataManager metadataManager =
                     retrieveMetadataManager(engine, table, decoratorFactory);
