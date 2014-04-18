@@ -61,6 +61,8 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
+
 /**
  * Context information required by templates customized for each {@link Result}
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
@@ -102,16 +104,8 @@ public class PerCustomResultTemplateContext
     public PerCustomResultTemplateContext(
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final String packageName,
-        @NotNull final String basePackageName,
-        @NotNull final String repositoryName,
-        final boolean implementMarkerInterfaces,
-        final boolean jmx,
-        @NotNull final String jndiLocation,
-        final boolean disableGenerationTimestamps,
-        final boolean disableNotNullAnnotations,
-        final boolean disableCheckthreadAnnotations,
-        @NotNull final String fileName,
-        @NotNull final Result<String> result)
+        @NotNull final Result<String> result,
+        @NotNull final List<Property<String>> properties)
     {
         super(null, null);
 
