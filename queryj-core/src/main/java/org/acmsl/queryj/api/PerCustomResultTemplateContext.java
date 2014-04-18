@@ -83,11 +83,6 @@ public class PerCustomResultTemplateContext
     private static final long serialVersionUID = 5193168262427622240L;
 
     /**
-     * The result.
-     */
-    private Result<String> m__Result;
-
-    /**
      * Creates a {@link PerCustomResultTemplateContext} with given information.
      * @param fileName the file name.
      * @param packageName the package name.
