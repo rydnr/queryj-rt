@@ -79,6 +79,6 @@ public class MissingResultException
      */
     public MissingResultException()
     {
-        super("result.not.available");
+        super("CustomResult.not.available");
     }
 }
