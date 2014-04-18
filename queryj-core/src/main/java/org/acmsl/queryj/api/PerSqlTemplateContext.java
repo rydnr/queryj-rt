@@ -56,6 +56,10 @@ import org.checkthread.annotations.ThreadSafe;
 public class PerSqlTemplateContext
     extends AbstractQueryJTemplateContext
 {
+    /**
+     * Creates a new instance.
+     * @param command the command.
+     */
     public PerSqlTemplateContext(@NotNull final QueryJCommand command)
     {
         super(pk, command);
