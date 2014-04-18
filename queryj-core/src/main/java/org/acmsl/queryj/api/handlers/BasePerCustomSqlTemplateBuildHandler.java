@@ -47,6 +47,7 @@ import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
+import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.SqlDAO;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
@@ -207,6 +208,7 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
         @NotNull final QueryJCommand parameters,
         @NotNull final String engineName,
         @NotNull final PerCustomSqlTemplateFactory<T, C> templateFactory,
+        @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final List<Sql<String>> sqlElements)
       throws  QueryJBuildException
     {
