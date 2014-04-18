@@ -364,7 +364,7 @@ public class PerCustomSqlTemplatesTest
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
                 QueryJSettings.VERSION, "<C.version>");
 
-            @NotNull final List\<result\<String, Attribute\<String>, List\<Attribute\<String\>>\>> results =
+            @NotNull final List\<result\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables =
                 new ArrayList\<>(resultMap.values());
 
             for (@NotNull final result\<String, Attribute\<String>, List\<Attribute\<String>\>> result : results)
