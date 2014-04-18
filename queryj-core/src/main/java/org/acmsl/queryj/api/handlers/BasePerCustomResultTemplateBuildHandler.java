@@ -142,7 +142,6 @@ public abstract class BasePerCustomResultTemplateBuildHandler
             customSqlProvider,
             retrieveTemplateFactory(),
             CachingDecoratorFactory.getInstance(),
-            retrieveProjectPackage(parameters),
             retrieveCustomResults(parameters, customSqlProvider, isDuplicatedResultsAllowed()),
             CustomResultUtils.getInstance());
     }
