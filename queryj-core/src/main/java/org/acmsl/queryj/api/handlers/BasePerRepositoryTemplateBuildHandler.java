@@ -217,11 +217,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
         @NotNull final TF templateFactory,
         @NotNull final String packageName,
         @NotNull final String repository,
-        @NotNull final List<String> tableNames,
-        @NotNull final String jndiLocation,
-        final boolean disableGenerationTimestamps,
-        final boolean disableNotNullAnnotations,
-        final boolean disableCheckthreadAnnotations,
         @NotNull final QueryJCommand parameters)
       throws  QueryJBuildException
     {
