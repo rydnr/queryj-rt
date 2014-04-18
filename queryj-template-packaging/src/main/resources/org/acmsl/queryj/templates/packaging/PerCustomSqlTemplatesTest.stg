@@ -299,7 +299,7 @@ public class PerCustomSqlTemplatesTest
             template,
             engine,
             getTables(),
-            getProperties(),
+            getSqlList(),
             getOutputFiles(),
             retrieveCustomSqlProvider(getSqlList(), getParameters()));
     }
