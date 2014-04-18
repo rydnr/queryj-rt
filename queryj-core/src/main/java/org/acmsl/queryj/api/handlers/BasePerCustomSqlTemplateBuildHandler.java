@@ -233,8 +233,6 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
                 t_lTemplates.add(
                     templateFactory.createTemplate(
                         t_Sql,
-                        customSqlProvider,
-                        metadataManager,
                         retrievePackage(t_Sql, engineName, parameters),
                         engineName,
                         engineVersion,
