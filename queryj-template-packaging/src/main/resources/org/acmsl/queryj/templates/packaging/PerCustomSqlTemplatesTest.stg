@@ -318,7 +318,7 @@ public class PerCustomSqlTemplatesTest
         @NotNull final String templateName,
         @NotNull final String engine,
         @NotNull final Map\<String, Sql\<String\>> sqlList,
-        @NotNull final Map\<String, List\<Property\<String>\>> properties,
+        @NotNull final Map\<String, List\<Sql\<String>\>> sqlList,
         @NotNull final Map\<String, File> outputFiles,
         @NotNull final CustomSqlProvider sqlProvider)
     {
