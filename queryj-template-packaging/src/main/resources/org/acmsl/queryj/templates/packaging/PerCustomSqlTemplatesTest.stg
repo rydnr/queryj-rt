@@ -369,13 +369,6 @@ public class PerCustomSqlTemplatesTest
 
             for (@NotNull final Table\<String, Attribute\<String>, List\<Attribute\<String>\>> table : tables)
             {
-                @Nullable List\<Row\<String\>> resultRows = rows.get(result.getName());
-
-                if (resultRows == null)
-                {
-                    resultRows = new ArrayList\<>(0);
-                }
-
                 @NotNull final MetadataManager metadataManager =
                     retrieveMetadataManager(engine, result, resultRows, decoratorFactory);
 
