@@ -204,6 +204,7 @@ public class PerCustomResultTemplateContext
     {
         return "{ 'class': 'PerCustomResultTemplateContext', " +
                ", 'result': " + getResult()
+               +", \"properties\": "
                + " }";
     }
 }
