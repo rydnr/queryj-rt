@@ -114,7 +114,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
     {
         final boolean result;
 
-        @Nullable final MetadataManager t_MetadataManager =
+        @NotNull final MetadataManager t_MetadataManager =
             retrieveMetadataManager(parameters);
 
         if (t_MetadataManager != null)
