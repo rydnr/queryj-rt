@@ -58,7 +58,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class MissingResultException
-    extends QueryJBuildException
+    extends QueryJNonCheckedException
 {
     /**
      * The serial version id.
