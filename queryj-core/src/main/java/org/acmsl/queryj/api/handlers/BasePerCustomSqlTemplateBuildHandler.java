@@ -200,6 +200,7 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
      * @param parameters the parameters.
      * @param engineName the engine name.
      * @param templateFactory the template factory.
+     * @param decoratorFactory the {@link DecoratorFactory}.
      * @param sqlElements the custom SQL elements.
      */
     protected void buildTemplates(
