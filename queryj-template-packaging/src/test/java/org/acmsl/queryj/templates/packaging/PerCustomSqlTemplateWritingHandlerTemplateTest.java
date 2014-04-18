@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro
  *
- * Description: Tests for PerSqlTemplateWritingHandlerTemplate.
+ * Description: Tests for PerCustomSqlTemplateWritingHandlerTemplate.
  *
  * Created: 2014/04/17 12:39
  *
