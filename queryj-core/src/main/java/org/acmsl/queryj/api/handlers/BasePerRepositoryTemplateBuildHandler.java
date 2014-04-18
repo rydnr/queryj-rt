@@ -67,6 +67,7 @@ import org.jetbrains.annotations.Nullable;
  * @author <a href="mailto:chous@acm-sl.org"
  *         >Jose San Leandro</a>
  */
+@ThreadSafe
 public abstract class BasePerRepositoryTemplateBuildHandler
     <T extends AbstractBasePerRepositoryTemplate<C>,
      C extends PerRepositoryTemplateContext,
