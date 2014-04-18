@@ -183,8 +183,6 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
                 parameters,
                 engineName,
                 retrieveTemplateFactory(),
-                retrieveProjectPackage(parameters),
-                retrieveTableRepositoryName(parameters),
                 retrieveCustomSql(
                     parameters, customSqlProvider, metadataManager),
                 retrieveHeader(parameters));
