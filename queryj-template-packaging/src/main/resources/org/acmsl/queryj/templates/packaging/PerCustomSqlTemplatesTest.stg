@@ -100,6 +100,7 @@ import org.acmsl.queryj.tools.handlers.ParameterValidationHandler;
 import org.acmsl.queryj.test.AbstractTemplatesTest;
 import org.acmsl.queryj.test.CustomResultTestHelper;
 import org.acmsl.queryj.test.CustomSqlTestHelper;
+import org.acmsl.queryj.test.CustomSqlTestHelper;
 
 /*
  * Importing project classes.
