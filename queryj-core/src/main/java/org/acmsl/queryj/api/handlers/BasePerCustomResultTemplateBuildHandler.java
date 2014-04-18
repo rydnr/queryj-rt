@@ -199,7 +199,6 @@ public abstract class BasePerCustomResultTemplateBuildHandler
         @NotNull final String projectPackage,
         @NotNull final String repository,
         final boolean implementMarkerInterfaces,
-        final boolean jmx,
         @NotNull final String jndiLocation,
         final boolean disableGenerationTimestamps,
         final boolean disableNotNullAnnotations,
