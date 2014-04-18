@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Tests for PerSqlTemplatesFeatureTemplateFactory.
+ * Description: Tests for PerCustomSqlTemplatesFeatureTemplateFactory.
  *
  * Date: 2014/04/16
  * Time: 15:50
