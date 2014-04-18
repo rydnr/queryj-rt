@@ -164,8 +164,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
     {
         if (isGenerationEnabled(customSqlProvider, parameters))
         {
-            @NotNull final List<String> t_lTableNames = metadataManager.getTableDAO().findAllTableNames();
-
             @Nullable final T t_Template =
                 createTemplate(
                     decoratorFactory,
