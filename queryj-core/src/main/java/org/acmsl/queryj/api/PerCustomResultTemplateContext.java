@@ -111,7 +111,7 @@ public class PerCustomResultTemplateContext
     }
 
     /**
-     * Retrieves the result.
+     * Retrieves the result key.
      * @return such information.
      */
     @NotNull
