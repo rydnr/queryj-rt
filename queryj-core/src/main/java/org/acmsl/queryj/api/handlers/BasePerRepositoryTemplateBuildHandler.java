@@ -116,7 +116,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
 
         buildTemplate(
             parameters,
-            t_MetadataManager,
             retrieveCustomSqlProvider(parameters),
             retrieveTemplateFactory(),
             retrievePackage(t_MetadataManager.getEngine(), projectPackage, PackageUtils.getInstance()),
