@@ -52,7 +52,11 @@ import org.acmsl.commons.patterns.Factory;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-/
+import java.util.List;
+
+/*
+ * Importing JDK classes.
+ */
 import java.util.List;
 
 /**
