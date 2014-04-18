@@ -64,7 +64,7 @@ public class AbstractExceptionTest<E extends QueryJNonCheckedException>
     @Test
     public void exception_message_is_defined_in_Spanish_and_English()
     {
-        @NotNull final JndiLocationNotAvailableException instance = new JndiLocationNotAvailableException();
+        @NotNull final E instance = new JndiLocationNotAvailableException();
 
         for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
         {
