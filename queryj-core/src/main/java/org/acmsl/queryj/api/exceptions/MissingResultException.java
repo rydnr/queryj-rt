@@ -73,4 +73,13 @@ public class MissingResultException
     {
         super("missing.result", new Object[] { sql.getId() } );
     }
+
+    /**
+     * Creates an instance with given context.
+     * @param sql the {@link Sql}.
+     */
+    public MissingResultException(@NotNull final Sql<?> sql)
+    {
+        super("missing.result", new Object[] { sql.getId() } );
+    }
 }
