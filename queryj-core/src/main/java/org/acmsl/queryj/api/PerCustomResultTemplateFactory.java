@@ -63,8 +63,6 @@ public interface PerCustomResultTemplateFactory
 {
     /**
      * Creates a per-<i>custom result</i> template.
-     * @param customSqlProvider the {@link CustomSqlProvider} instance.
-     * @param metadataManager the {@link MetadataManager} instance.
      * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @param packageName the package name.
      * @param basePackageName the base package name.
