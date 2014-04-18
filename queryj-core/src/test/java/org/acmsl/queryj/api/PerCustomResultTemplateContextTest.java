@@ -39,6 +39,8 @@ package org.acmsl.queryj.api;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.customsql.Property;
+import org.acmsl.queryj.customsql.Result;
+import org.acmsl.queryj.customsql.ResultElement;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -66,7 +68,8 @@ public class PerCustomResultTemplateContextTest
     {
         @NotNull final List<Property<String>> properties = new ArrayList<>(0);
 
+        @NotNull final Result<String> result = new ResultElement<String>();
         @NotNull final PerCustomResultTemplate instance =
-            new PerCustomResultTemplateContext("fileName", "packageName", result, );
+            new PerCustomResultTemplateContext("fileName", "packageName", result, properties);
     }
 }
