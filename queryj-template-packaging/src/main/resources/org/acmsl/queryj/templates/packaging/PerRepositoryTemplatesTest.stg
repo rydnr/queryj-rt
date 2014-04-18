@@ -350,8 +350,7 @@ public class PerRepositoryTemplatesTest
                         decoratorFactory,
                         packageName,
                         repository,
-                        table.getName(),
-                        tableRows);
+                        tableNames);
 
                 Assert.assertNotNull("No template found for " + templateName, template);
 
