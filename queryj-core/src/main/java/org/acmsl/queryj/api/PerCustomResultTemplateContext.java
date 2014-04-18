@@ -168,6 +168,9 @@ public class PerCustomResultTemplateContext
         return result;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public int hashCode()
     {
