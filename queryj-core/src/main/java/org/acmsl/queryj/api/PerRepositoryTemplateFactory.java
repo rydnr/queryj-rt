@@ -37,6 +37,7 @@ package org.acmsl.queryj.api;
  * Importing some ACM-SL Commons classes.
  */
 import org.acmsl.commons.patterns.Factory;
+import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.MetadataManager;
@@ -83,8 +84,5 @@ public interface PerRepositoryTemplateFactory
         @NotNull final String packageName,
         @NotNull final String repository,
         @NotNull final List<String> tableNames,
-        @NotNull final String jndiLocation,
-        final boolean disableGenerationTimestamps,
-        final boolean disableNotNullAnnotations,
-        final boolean disableCheckthreadAnnotations);
+        @NotNull final QueryJCommand command);
 }
