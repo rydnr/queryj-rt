@@ -3,7 +3,7 @@
 *** Fix PerXXXTemplate class:
 **** TODO #474: 1 ->
 **** TODO #475: 1 ->
-**** TODO #476: 1 ->
+**** DONE #476: 1 -> 1
 **** TODO #477: 1 ->
 *** Fix PerXXXTemplatesTest generated code:
 **** TODO #474: 2 ->
