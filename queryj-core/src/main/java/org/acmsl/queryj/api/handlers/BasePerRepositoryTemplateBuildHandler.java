@@ -223,7 +223,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final TF templateFactory,
         @NotNull final String packageName,
-        @NotNull final String projectPackage,
         @NotNull final String repository,
         @Nullable final String header,
         final boolean implementMarkerInterfaces,
