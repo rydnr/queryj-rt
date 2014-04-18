@@ -219,10 +219,6 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
     protected void buildTemplates(
         @NotNull final QueryJCommand parameters,
         @NotNull final String engineName,
-        @Nullable final String engineVersion,
-        @NotNull final String quote,
-        @NotNull final MetadataManager metadataManager,
-        @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final PerCustomSqlTemplateFactory<T, C> templateFactory,
         @NotNull final String projectPackage,
         @NotNull final String repository,
