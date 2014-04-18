@@ -218,7 +218,7 @@ public class PerCustomSqlTemplatesTest
      */
     @SuppressWarnings("unused")
     @Given("^Given the following custom query:$")
-    public void defineInputSql(@NotNull final DataTable resultInfo)
+    public void defineInputSql(@NotNull final DataTable sqlInfo)
     {
         defineInputSql(resultInfo, getSql(), TableTestHelper.getInstance());
     }
