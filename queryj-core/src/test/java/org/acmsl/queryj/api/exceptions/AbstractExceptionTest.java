@@ -72,4 +72,8 @@ public class AbstractExceptionTest<E extends QueryJNonCheckedException>
             instance.getMessage(t_Locale);
         }
     }
+
+    private E createInstance()
+    {
+    }
 }
