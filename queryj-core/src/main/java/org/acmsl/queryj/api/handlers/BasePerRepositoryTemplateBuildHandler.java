@@ -246,12 +246,8 @@ public abstract class BasePerRepositoryTemplateBuildHandler
     {
         return
             templateFactory.createTemplate(
-                metadataManager,
-                customSqlProvider,
-                decoratorFactory,
-                packageName,
-                projectPackage,
                 repository,
+                packageName,
                 header,
                 implementMarkerInterfaces,
                 jmx,
