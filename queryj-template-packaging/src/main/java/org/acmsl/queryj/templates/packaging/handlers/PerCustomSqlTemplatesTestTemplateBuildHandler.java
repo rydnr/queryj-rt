@@ -134,7 +134,7 @@ public class PerCustomSqlTemplatesTestTemplateBuildHandler
     @Override
     protected String retrieveTemplateName(@NotNull final QueryJCommand parameters)
     {
-        return Literals.PER_SQL_TEMPLATES_TEST;
+        return Literals.PER_CUSTOM_SQL_TEMPLATES_TEST;
     }
 
     /**

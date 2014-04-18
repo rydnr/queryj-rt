@@ -98,7 +98,7 @@ public class PerCustomSqlTemplatesTestTemplateBuildHandlerTest
     @Test
     public void retrieveTemplateName_works()
     {
-        retrieveTemplateName_works(Literals.PER_SQL_TEMPLATES_TEST);
+        retrieveTemplateName_works(Literals.PER_CUSTOM_SQL_TEMPLATES_TEST);
     }
 
     /**
