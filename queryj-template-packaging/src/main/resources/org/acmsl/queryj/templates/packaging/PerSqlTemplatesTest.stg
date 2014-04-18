@@ -65,7 +65,7 @@ import org.acmsl.queryj.api.AbstractTemplate;
 import org.acmsl.queryj.api.exceptions.DevelopmentModeException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.api.PerCustomSqlTemplate;
-import org.acmsl.queryj.api.PerSqlTemplateContext;
+import org.acmsl.queryj.api.PerCustomSqlTemplateContext;
 import org.acmsl.queryj.api.PerSqlTemplateFactory;
 import org.acmsl.queryj.api.PerSqlTemplateGenerator;
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
