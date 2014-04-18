@@ -48,6 +48,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.util.List;
+
 /**
  *
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
@@ -60,6 +62,7 @@ public class PerCustomResultTemplateContextTest
     @Test
     public void properties_are_stored_correctly_in_the_command()
     {
+        @NotNull final List<Property<String>>
         @NotNull final PerCustomResultTemplate instance = new PerCustomResultTemplateContext();
     }
 }
