@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Tests for {MissingPropertiesException.
+ * Description: Tests for MissingPropertiesException.
  *
  * Date: 2014/04/18
  * Time: 14:05
