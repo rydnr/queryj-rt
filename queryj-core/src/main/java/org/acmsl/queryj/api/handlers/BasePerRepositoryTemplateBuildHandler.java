@@ -120,10 +120,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
             retrieveTemplateFactory(),
             retrievePackage(t_MetadataManager.getEngine(), projectPackage, PackageUtils.getInstance()),
             retrieveTableRepositoryName(parameters),
-            retrieveHeader(parameters),
-            retrieveImplementMarkerInterfaces(parameters),
-            retrieveJmx(parameters),
-            retrieveJNDILocation(parameters),
             CachingDecoratorFactory.getInstance());
 
         return false;
