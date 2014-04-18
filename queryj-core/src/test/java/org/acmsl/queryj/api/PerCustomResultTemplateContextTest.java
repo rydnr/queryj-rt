@@ -47,13 +47,16 @@ import org.apache.commons.configuration.PropertiesConfiguration;
 import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing JUnit
+ * Importing JUnit classes.
  */
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+/*
+ * Importing JDK classes.
+ */
 import java.util.ArrayList;
 import java.util.List;
 
