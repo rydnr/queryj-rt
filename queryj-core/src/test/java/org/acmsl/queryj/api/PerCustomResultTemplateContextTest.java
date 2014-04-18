@@ -43,7 +43,15 @@ import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.ResultElement;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.apache.commons.configuration.PropertiesConfiguration;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
