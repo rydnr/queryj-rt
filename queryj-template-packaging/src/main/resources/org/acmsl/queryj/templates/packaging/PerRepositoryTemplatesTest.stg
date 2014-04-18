@@ -341,8 +341,7 @@ public class PerRepositoryTemplatesTest
                     t_Command,
                     decoratorFactory,
                     packageName,
-                    repository,
-                    tables);
+                    repository);
 
             Assert.assertNotNull("No template found for " + templateName, template);
 
