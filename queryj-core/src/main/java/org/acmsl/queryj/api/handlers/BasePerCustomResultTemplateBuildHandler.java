@@ -200,7 +200,6 @@ public abstract class BasePerCustomResultTemplateBuildHandler
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final String projectPackage,
         @NotNull final String repository,
-        @Nullable final String header,
         final boolean implementMarkerInterfaces,
         final boolean jmx,
         @NotNull final String jndiLocation,
