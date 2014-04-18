@@ -8,5 +8,5 @@
 *** Fix PerXXXTemplatesTest generated code:
 **** TODO #474: 2 ->
 **** TODO #475: 2 ->
-**** TODO #476: 2 -> 2
+**** DONE #476: 2 -> 2
 **** TODO #477: 2 ->   
