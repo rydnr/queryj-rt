@@ -143,11 +143,6 @@ public abstract class BasePerCustomResultTemplateBuildHandler
             retrieveTemplateFactory(),
             CachingDecoratorFactory.getInstance(),
             retrieveProjectPackage(parameters),
-            retrieveTableRepositoryName(parameters),
-            retrieveImplementMarkerInterfaces(parameters),
-            retrieveDisableGenerationTimestamps(parameters),
-            retrieveDisableNotNullAnnotations(parameters),
-            retrieveDisableCheckthreadAnnotations(parameters),
             retrieveCustomResults(parameters, customSqlProvider, isDuplicatedResultsAllowed()),
             CustomResultUtils.getInstance());
     }
