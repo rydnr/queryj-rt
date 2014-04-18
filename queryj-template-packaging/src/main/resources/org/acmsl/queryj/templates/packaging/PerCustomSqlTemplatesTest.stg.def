@@ -1,0 +1,19 @@
+/*
+ * PerCustomSqlTemplatesTest template metadata.
+ */
+// The template name (the filename).
+name : PerSqlTemplatesTest.stg;
+
+// The type of template: per-table, per-repository, per-foreign-key, per-custom-result, per-custom-sql.
+type : per-custom-sql;
+
+// The output flavor.
+output: Java;
+
+// The filename builder.
+filename builder : PerCustomSqlTemplatesTest.java;
+
+// The package.
+package: cucumber.templates;
+
+disabled;
