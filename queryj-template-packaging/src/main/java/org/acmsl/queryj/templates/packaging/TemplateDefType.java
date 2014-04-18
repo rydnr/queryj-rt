@@ -79,7 +79,7 @@ public enum TemplateDefType
     /**
      * Per custom SQL.
      */
-    PER_SQL("per-sql");
+    PER_SQL("per-custom-sql");
 
     /**
      * The type.
