@@ -41,6 +41,7 @@ package org.acmsl.queryj.api;
  */
 import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.api.exceptions.MissingPropertiesException;
 import org.acmsl.queryj.api.exceptions.MissingResultException;
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.Result;
