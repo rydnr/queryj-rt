@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for PerCustomResultTemplateContext.
  *
  * Date: 2014/04/18
  * Time: 17:34
