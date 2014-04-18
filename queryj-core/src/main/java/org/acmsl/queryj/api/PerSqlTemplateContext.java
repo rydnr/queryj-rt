@@ -56,7 +56,7 @@ import org.checkthread.annotations.ThreadSafe;
 public class PerSqlTemplateContext
     extends AbstractQueryJTemplateContext
 {
-    public PerSqlTemplateContext(@NotNull final String pk, @NotNull final QueryJCommand command)
+    public PerSqlTemplateContext(@NotNull final QueryJCommand command)
     {
         super(pk, command);
     }
