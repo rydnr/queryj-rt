@@ -344,74 +344,73 @@ public class PerRepositoryTemplatesTest
                     repository,
                     tables);
 
-                Assert.assertNotNull("No template found for " + templateName, template);
+            Assert.assertNotNull("No template found for " + templateName, template);
 
-                File outputDir = null;
+            File outputDir = null;
 
-                try
+            try
+            {
+                rootFolder.create();
+
+                @NotNull final String[] packages = packageName.split("\\\.");
+                @NotNull final StringBuilder folder = new StringBuilder();
+
+                for (@NotNull final String pkg : packages)
                 {
-                    rootFolder.create();
-
-                    @NotNull final String[] packages = packageName.split("\\\.");
-                    @NotNull final StringBuilder folder = new StringBuilder();
-
-                    for (@NotNull final String pkg : packages)
-                    {
-                        folder.append(File.separator);
-                        folder.append(pkg);
-                    }
-
-                    outputDir = new File(rootFolder.getRoot().getAbsolutePath().concat(folder.toString()));
-
-                    outputDir.mkdirs();
-                }
-                catch (@NotNull final IOException ioException)
-                {
-                    Assert.fail(ioException.getMessage());
+                    folder.append(File.separator);
+                    folder.append(pkg);
                 }
 
-                if (!outputDir.exists())
-                {
-                    Assert.fail("Cannot create folder: " + outputDir.getAbsolutePath());
-                }
+                outputDir = new File(rootFolder.getRoot().getAbsolutePath().concat(folder.toString()));
 
-                UniqueLogFactory.initializeInstance(LogFactory.getLog(PerRepositoryTemplatesTest.class));
-
-                ((AbstractTemplate) template).setDebugMode(true);
-
-                try
-                {
-                    generator.write(
-                        template,
-                        outputDir,
-                        rootFolder.getRoot(),
-                        Charset.defaultCharset());
-                }
-                catch (@NotNull final IOException ioException)
-                {
-                    if (failCause == null)
-                    {
-                        failCause = ioException.getMessage();
-                    }
-                    restart = false;
-                }
-                catch (@NotNull final DevelopmentModeException debugging)
-                {
-                    restart = true;
-                }
-                catch (@NotNull final QueryJBuildException queryjBuildException)
-                {
-                    if (failCause == null)
-                    {
-                        failCause = queryjBuildException.getMessage();
-                    }
-                    restart = false;
-                }
-
-                outputFiles.put(
-                    table.getName(),
-                    new File(outputDir, template.getTemplateContext().getFileName()));
+                outputDir.mkdirs();
             }
+            catch (@NotNull final IOException ioException)
+            {
+                Assert.fail(ioException.getMessage());
+            }
+
+            if (!outputDir.exists())
+            {
+                Assert.fail("Cannot create folder: " + outputDir.getAbsolutePath());
+            }
+
+            UniqueLogFactory.initializeInstance(LogFactory.getLog(PerRepositoryTemplatesTest.class));
+
+            ((AbstractTemplate) template).setDebugMode(true);
+
+            try
+            {
+                generator.write(
+                    template,
+                    outputDir,
+                    rootFolder.getRoot(),
+                    Charset.defaultCharset());
+            }
+            catch (@NotNull final IOException ioException)
+            {
+                if (failCause == null)
+                {
+                    failCause = ioException.getMessage();
+                }
+                restart = false;
+            }
+            catch (@NotNull final DevelopmentModeException debugging)
+            {
+                restart = true;
+            }
+            catch (@NotNull final QueryJBuildException queryjBuildException)
+            {
+                if (failCause == null)
+                {
+                    failCause = queryjBuildException.getMessage();
+                }
+                restart = false;
+            }
+
+            outputFiles.put(
+                table.getName(),
+                new File(outputDir, template.getTemplateContext().getFileName()));
         }
 
         if (failCause != null)
