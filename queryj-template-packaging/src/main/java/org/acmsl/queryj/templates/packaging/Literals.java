@@ -160,5 +160,5 @@ public interface Literals
     /**
      * String literal: "PerSqlTemplateWritingHandler".
      */
-    String PER_SQL_TEMPLATE_WRITING_HANDLER = "PerSqlTemplateWritingHandler";
+    String PER_CUSTOM_SQL_TEMPLATE_WRITING_HANDLER = "PerSqlTemplateWritingHandler";
 }

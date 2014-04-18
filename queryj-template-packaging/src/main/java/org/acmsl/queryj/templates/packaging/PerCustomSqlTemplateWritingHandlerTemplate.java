@@ -79,6 +79,6 @@ public class PerCustomSqlTemplateWritingHandlerTemplate<C extends TemplatePackag
     @Override
     public String getTemplateName()
     {
-        return Literals.PER_SQL_TEMPLATE_WRITING_HANDLER;
+        return Literals.PER_CUSTOM_SQL_TEMPLATE_WRITING_HANDLER;
     }
 }

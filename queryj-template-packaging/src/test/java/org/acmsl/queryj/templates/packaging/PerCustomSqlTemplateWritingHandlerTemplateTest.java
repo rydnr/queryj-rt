@@ -69,6 +69,6 @@ public class PerCustomSqlTemplateWritingHandlerTemplateTest
         @NotNull final PerCustomSqlTemplateWritingHandlerTemplate instance =
             new PerCustomSqlTemplateWritingHandlerTemplate<>(context);
 
-        Assert.assertEquals(Literals.PER_SQL_TEMPLATE_WRITING_HANDLER, instance.getTemplateName());
+        Assert.assertEquals(Literals.PER_CUSTOM_SQL_TEMPLATE_WRITING_HANDLER, instance.getTemplateName());
     }
 }
