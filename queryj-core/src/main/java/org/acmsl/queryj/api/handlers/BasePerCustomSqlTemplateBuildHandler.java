@@ -155,8 +155,6 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
         buildTemplates(
             parameters,
             engineName,
-            engineVersion,
-            quote,
             retrieveMetadataManager(parameters),
             retrieveCustomSqlProvider(parameters));
     }
