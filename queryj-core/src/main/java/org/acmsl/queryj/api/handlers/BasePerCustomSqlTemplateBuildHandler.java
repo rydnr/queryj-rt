@@ -60,6 +60,11 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /*
+ * Importing some JetBrains annotations.
+ */
+import org.checkthread.annotations.ThreadSafe;
+
+/*
  * Importing some JDK classes.
  */
 import java.sql.DatabaseMetaData;
