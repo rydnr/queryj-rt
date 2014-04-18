@@ -34,6 +34,7 @@ package org.acmsl.queryj.api;
 
 /**
  * Represents entities able to write per-sql templates.
+ * @param <N> the template
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  * @since 2.0
  */
