@@ -44,7 +44,6 @@ import org.acmsl.queryj.api.PerCustomSqlTemplateContext;
 import org.acmsl.queryj.api.PerCustomSqlTemplateFactory;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Sql;
-import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.metadata.CachingDecoratorFactory;
