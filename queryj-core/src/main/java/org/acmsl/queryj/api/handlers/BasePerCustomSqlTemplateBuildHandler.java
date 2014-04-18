@@ -125,9 +125,7 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
     {
         try
         {
-            buildTemplates(
-                parameters,
-                metaData.getDatabaseProductName());
+            buildTemplates(parameters, metaData.getDatabaseProductName());
         }
         catch  (@NotNull final SQLException sqlException)
         {
