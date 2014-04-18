@@ -150,10 +150,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
         @NotNull final TF templateFactory,
         @NotNull final String packageName,
         @NotNull final String repository,
-        @Nullable final String header,
-        final boolean implementMarkerInterfaces,
-        final boolean jmx,
-        @NotNull final String jndiLocation,
         @NotNull final DecoratorFactory decoratorFactory)
       throws  QueryJBuildException
     {
