@@ -87,7 +87,8 @@ public class PerCustomResultTemplateContextTest
 
         @NotNull final Result<String> result = new ResultElement<>("id", "class");
 
-        @NotNull final QueryJCommand command = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+        @NotNull final QueryJCommand command =
+            new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
         @NotNull final PerCustomResultTemplateContext instance =
             new PerCustomResultTemplateContext(
