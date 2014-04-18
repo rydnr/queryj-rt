@@ -38,7 +38,6 @@ package org.acmsl.queryj.api;
 /*
  * Importing JetBrains annotations.
  */
-import junit.framework.Assert;
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.customsql.Property;
