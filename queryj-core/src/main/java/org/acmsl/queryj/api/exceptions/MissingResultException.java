@@ -59,6 +59,9 @@ import org.checkthread.annotations.ThreadSafe;
 public class MissingResultException
     extends QueryJBuildException
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = 7969992085829051936L;
 
     /**
