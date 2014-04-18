@@ -108,6 +108,34 @@ public class PerCustomResultTemplateContext
         immutableSetValue(buildPropertiesKey(), properties, command);
     }
 
+    /**
+     * Specifies the result.
+     * @param result the custom result.
+     */
+    protected final void immutableSetResult(@NotNull final Result<String> result)
+    {
+        m__Result = result;
+    }
+
+    /**
+     * Specifies the result.
+     * @param result the custom result.
+     */
+    @SuppressWarnings("unused")
+    protected void setResult(@NotNull final Result<String> result)
+    {
+        immutableSetResult(result);
+    }
+
+    /**
+     * Retrieves the result.
+     * @return such information.
+     */
+    @NotNull
+    public Result<String> getResult()
+    {
+        return m__Result;
+    }
 
     /**
      * {@inheritDoc}
