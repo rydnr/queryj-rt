@@ -49,7 +49,6 @@ import org.acmsl.commons.patterns.Factory;
  * Importing some JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * Represents entities able to create per-<i>custom sql</i> templates.
