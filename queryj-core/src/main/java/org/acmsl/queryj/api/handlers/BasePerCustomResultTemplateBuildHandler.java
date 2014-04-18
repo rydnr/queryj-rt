@@ -112,19 +112,12 @@ public abstract class BasePerCustomResultTemplateBuildHandler
     public boolean handle(@NotNull final QueryJCommand parameters)
         throws QueryJBuildException
     {
-        final boolean result;
-
-        @NotNull final MetadataManager t_MetadataManager =
-            retrieveMetadataManager(parameters);
-
         buildTemplates(
             parameters,
             retrieveMetadataManager(parameters),
             retrieveCustomSqlProvider(parameters));
 
-        result = false;
-
-        return result;
+        return false;
     }
 
     /**
