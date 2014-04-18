@@ -178,9 +178,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
      * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @param projectPackage the project package.
      * @param repository the repository.
-     * @param header the header.
      * @param implementMarkerInterfaces whether to implement marker interfaces.
-     * @param jmx whether to enable JMX support.
      * @param jndiLocation the JNDI location.
      * @param disableGenerationTimestamps whether to disable generation timestamps.
      * @param disableNotNullAnnotations whether to disable NotNull annotations.
