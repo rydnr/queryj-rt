@@ -117,12 +117,10 @@ public abstract class BasePerCustomResultTemplateBuildHandler
         @NotNull final MetadataManager t_MetadataManager =
             retrieveMetadataManager(parameters);
 
-        if (t_MetadataManager != null)
-        {
-            buildTemplates(
-                parameters,
-                t_MetadataManager,
-                retrieveCustomSqlProvider(parameters));
+        buildTemplates(
+            parameters,
+            t_MetadataManager,
+            retrieveCustomSqlProvider(parameters));
 
             result = false;
         }
