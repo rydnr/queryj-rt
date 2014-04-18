@@ -349,6 +349,7 @@ public class PerRepositoryTemplatesTest
                         t_Command,
                         decoratorFactory,
                         packageName,
+                        repository,
                         table.getName(),
                         tableRows);
 
