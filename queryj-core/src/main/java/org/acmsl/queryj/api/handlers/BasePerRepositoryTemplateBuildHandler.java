@@ -205,7 +205,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
 
     /**
      * Uses the factory to create the template.
-     * @param customSqlProvider the {@link CustomSqlProvider} instance.
      * @param templateFactory the template factory.
      * @param projectPackage the base package.
      * @param packageName the package name.
