@@ -39,6 +39,7 @@ package org.acmsl.queryj.api;
 /*
  * Importing some project classes.
  */
+import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Property;
@@ -116,7 +117,7 @@ public class PerCustomResultTemplateContext
     @NotNull
     public String buildResultKey()
     {
-        return "result";
+        return Literals.RESULT_NAME;
     }
 
     /**
