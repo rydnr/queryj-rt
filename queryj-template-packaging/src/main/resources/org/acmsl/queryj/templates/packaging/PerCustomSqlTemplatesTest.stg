@@ -309,7 +309,7 @@ public class PerCustomSqlTemplatesTest
      * @param templateName the template.
      * @param engine the engine name.
      * @param tables the table map.
-     * @param sqlListhe custom queries.
+     * @param sqlList the custom queries.
      * @param outputFiles the output files.
      * @param sqlProvider the {@link CustomSqlProvider} instance.
      */
