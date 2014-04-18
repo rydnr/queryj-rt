@@ -70,6 +70,6 @@ public class PerCustomSqlTemplateFactoryTemplateTest
         @NotNull final PerCustomSqlTemplateFactoryTemplate instance =
             new PerCustomSqlTemplateFactoryTemplate<>(context);
 
-        Assert.assertEquals(Literals.PER_SQL_TEMPLATE_FACTORY, instance.getTemplateName());
+        Assert.assertEquals(Literals.PER_CUSTOM_SQL_TEMPLATE_FACTORY, instance.getTemplateName());
     }
 }

@@ -78,6 +78,6 @@ public class PerCustomSqlTemplateFactoryTemplate<C extends TemplatePackagingCont
     @Override
     public String getTemplateName()
     {
-        return Literals.PER_SQL_TEMPLATE_FACTORY;
+        return Literals.PER_CUSTOM_SQL_TEMPLATE_FACTORY;
     }
 }

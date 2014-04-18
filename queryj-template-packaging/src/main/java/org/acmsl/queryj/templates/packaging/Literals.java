@@ -148,7 +148,7 @@ public interface Literals
     /**
      * String literal: "PerSqlTemplateFactory".
      */
-    String PER_SQL_TEMPLATE_FACTORY = "PerSqlTemplateFactory";
+    String PER_CUSTOM_SQL_TEMPLATE_FACTORY = "PerSqlTemplateFactory";
     /**
      * String literal: "PerRepositoryTemplateWritingHandler".
      */
