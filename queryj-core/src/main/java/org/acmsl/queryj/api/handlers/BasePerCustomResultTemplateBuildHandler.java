@@ -122,7 +122,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
             t_MetadataManager,
             retrieveCustomSqlProvider(parameters));
 
-            result = false;
+        result = false;
         }
         else
         {
