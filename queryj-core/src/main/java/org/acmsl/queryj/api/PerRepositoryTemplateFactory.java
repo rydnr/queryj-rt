@@ -82,5 +82,8 @@ public interface PerRepositoryTemplateFactory
     public T createTemplate(
         @NotNull final String packageName,
         @NotNull final List<String> tableNames,
+        @NotNull final String jndiLocation,
+        final boolean disableGenerationTimestamps,
+        final boolean disableNotNullAnnotations,
         final boolean disableCheckthreadAnnotations);
 }
