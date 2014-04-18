@@ -87,10 +87,6 @@ public class PerCustomResultTemplateContext
 
     /**
      * Creates a {@link PerCustomResultTemplateContext} with given information.
-     * @param metadataManager the {@link MetadataManager} instance.
-     * @param customSqlProvider the {@link CustomSqlProvider} instance.
-     * @param header the header.
-     * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @param packageName the package name.
      * @param basePackageName the base package name.
      * @param repositoryName the repository name.
