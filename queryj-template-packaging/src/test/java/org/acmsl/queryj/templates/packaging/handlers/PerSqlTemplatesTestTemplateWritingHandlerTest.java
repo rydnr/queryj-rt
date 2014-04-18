@@ -64,7 +64,7 @@ import org.junit.runners.JUnit4;
 public class PerSqlTemplatesTestTemplateWritingHandlerTest
     extends AbstractTemplatesTestTemplateWritingHandlerTest<
     PerSqlTemplatesTestTemplateWritingHandler,
-    PerSqlTemplatesTestTemplateBuildHandler,
+    PerCustomSqlTemplatesTestTemplateBuildHandler,
     PerCustomSqlTemplatesTestTemplate,
     PerCustomSqlTemplatesTestTemplateFactory,
     GlobalTemplateContext>
@@ -75,9 +75,9 @@ public class PerSqlTemplatesTestTemplateWritingHandlerTest
      */
     @NotNull
     @Override
-    protected PerSqlTemplatesTestTemplateBuildHandler createBuildHandlerInstance()
+    protected PerCustomSqlTemplatesTestTemplateBuildHandler createBuildHandlerInstance()
     {
-        return new PerSqlTemplatesTestTemplateBuildHandler();
+        return new PerCustomSqlTemplatesTestTemplateBuildHandler();
     }
 
     /**

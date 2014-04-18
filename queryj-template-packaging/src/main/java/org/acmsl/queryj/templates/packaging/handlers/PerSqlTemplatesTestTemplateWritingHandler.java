@@ -108,7 +108,7 @@ public class PerSqlTemplatesTestTemplateWritingHandler
 
         @Nullable final List<PerCustomSqlTemplatesTestTemplate> aux =
             new QueryJCommandWrapper<PerCustomSqlTemplatesTestTemplate>(parameters)
-                .getListSetting(PerSqlTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
+                .getListSetting(PerCustomSqlTemplatesTestTemplateBuildHandler.TEMPLATES_KEY);
 
         if (aux == null)
         {
