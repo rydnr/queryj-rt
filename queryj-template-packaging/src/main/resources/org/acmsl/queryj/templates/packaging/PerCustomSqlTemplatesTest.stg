@@ -366,7 +366,7 @@ public class PerCustomSqlTemplatesTest
 
             for (@NotNull final Sql\<String> sql : sqlList)
             {
-                @NotNull final Table\<String, Attribute\<String>
+                @NotNull final Table\<String, Attribute\<String>, List\<Attribute\<String>>>
                 @NotNull final MetadataManager metadataManager =
                     retrieveMetadataManager(engine, table, decoratorFactory);
 
