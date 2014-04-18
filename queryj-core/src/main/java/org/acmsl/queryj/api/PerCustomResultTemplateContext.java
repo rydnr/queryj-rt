@@ -108,6 +108,17 @@ public class PerCustomResultTemplateContext
         immutableSetValue(buildPropertiesKey(), properties, command);
     }
 
+
+    /**
+     * Retrieves the result.
+     * @return such information.
+     */
+    @NotNull
+    public Result<String> getResult()
+    {
+        return getValue(buildResultKey());
+    }
+
     /**
      * Retrieves the result.
      * @return such information.
