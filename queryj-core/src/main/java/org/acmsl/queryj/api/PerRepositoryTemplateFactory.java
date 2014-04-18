@@ -66,8 +66,6 @@ public interface PerRepositoryTemplateFactory
      * @param repository the repository name.
      * @param packageName the package name.
      * @param decoratorFactory the {@link DecoratorFactory} instance.
-     * @param packageName the package name.
-     * @param repository the repository name.
      * @param command the {@link QueryJCommand command}.
      * @return the new template.
      */
