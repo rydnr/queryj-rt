@@ -223,7 +223,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
      * @param disableCheckthreadAnnotations whether to disable checkthread.org annotations or not.
      * @return the template.
      */
-    @SuppressWarnings("unused")
     @Nullable
     protected T createTemplate(
         @NotNull final MetadataManager metadataManager,
