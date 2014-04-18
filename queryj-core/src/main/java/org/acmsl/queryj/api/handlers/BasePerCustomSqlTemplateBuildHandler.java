@@ -127,9 +127,7 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
         {
             buildTemplates(
                 parameters,
-                metaData.getDatabaseProductName(),
-                retrieveDatabaseProductVersion(metaData),
-                fixQuote(metaData.getIdentifierQuoteString()));
+                metaData.getDatabaseProductName());
         }
         catch  (@NotNull final SQLException sqlException)
         {
