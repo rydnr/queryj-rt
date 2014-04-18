@@ -65,6 +65,7 @@ public interface PerCustomSqlTemplateFactory<T extends PerCustomSqlTemplate<C>, 
      * @param command the {@link QueryJCommand}.
      * @param sql the sql.
      * @param packageName the package name.
+     * @param command the {@link QueryJCommand}.
      */
     @NotNull
     public T createTemplate(
