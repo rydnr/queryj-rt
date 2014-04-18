@@ -58,7 +58,7 @@ import org.jetbrains.annotations.NotNull;
  * @since 2.0
  */
 public interface PerCustomSqlTemplateFactory<T extends PerCustomSqlTemplate<C>, C extends PerCustomSqlTemplateContext>
-    extends  Factory
+    extends Factory
 {
     /**
      * Creates a per-<i>custom sql</i> template.
