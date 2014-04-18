@@ -385,10 +385,8 @@ public class PerCustomSqlTemplatesTest
 
                 @Nullable final PerCustomSqlTemplate\<PerCustomSqlTemplateContext> template =
                     templateFactory.createTemplate(
-                        decoratorFactory,
                         packageName,
                         sql,
-                        properties,
                         t_Command);
 
                 Assert.assertNotNull("No template found for " + templateName, template);
