@@ -387,7 +387,7 @@ public class PerCustomSqlTemplatesTest
                     templateFactory.createTemplate(
                         decoratorFactory,
                         packageName,
-                        result.getName(),
+                        sql,
                         properties,
                         t_Command);
 
