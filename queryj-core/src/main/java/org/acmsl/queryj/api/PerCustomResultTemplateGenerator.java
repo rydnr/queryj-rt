@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Represents entities able to create per-repository templates.
+ * Description: Represents entities able to create per-custom result templates.
  *
  */
 package org.acmsl.queryj.api;
