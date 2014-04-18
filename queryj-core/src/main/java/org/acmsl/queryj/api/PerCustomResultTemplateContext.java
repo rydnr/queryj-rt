@@ -202,9 +202,10 @@ public class PerCustomResultTemplateContext
     @Override
     public String toString()
     {
-        return "{ 'class': \"" + PerCustomResultTemplateContext + '"'
-               ", \"result\": " + getResult()
-               +", \"properties\": " + getProperties()
-               + " }";
+        return
+              "{ \"class\": \"" + PerCustomResultTemplateContext + '"'
+            + ", \"result\": " + getResult()
+            +", \"properties\": " + getProperties()
+            + " }";
     }
 }
