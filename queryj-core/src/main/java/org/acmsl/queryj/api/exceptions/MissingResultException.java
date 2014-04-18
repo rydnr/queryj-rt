@@ -80,6 +80,6 @@ public class MissingResultException
      */
     public MissingResultException()
     {
-        super("result.not.available", new Object[] { sql.getId() } );
+        super("result.not.available");
     }
 }
