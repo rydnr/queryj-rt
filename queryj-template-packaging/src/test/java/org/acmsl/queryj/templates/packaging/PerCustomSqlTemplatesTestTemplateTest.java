@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Tests for PerSqlTemplatesTestTemplate.
+ * Description: Tests for PerCustomSqlTemplatesTestTemplate.
  *
  * Date: 2014/04/16
  * Time: 20:59
