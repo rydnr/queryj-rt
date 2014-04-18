@@ -205,7 +205,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
     /**
      * Uses the factory to create the template.
      * @param templateFactory the template factory.
-     * @param projectPackage the base package.
      * @param packageName the package name.
      * @param repository the repository.
      * @param header the header.
