@@ -58,5 +58,5 @@ import org.junit.runners.JUnit4;
 public class PerCustomResultTemplateContextTest
 {
     @Test
-    public void
+    public void properties_are_stored_correctly()
 }
