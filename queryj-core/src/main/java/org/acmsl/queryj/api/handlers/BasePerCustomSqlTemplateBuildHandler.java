@@ -79,7 +79,6 @@ import java.util.List;
  * @since 2.0
  */
 @ThreadSafe
-@SuppressWarnings("unused")
 public abstract class BasePerCustomSqlTemplateBuildHandler
     <T extends PerCustomSqlTemplate<C>, C extends PerCustomSqlTemplateContext>
     extends    AbstractQueryJCommandHandler
