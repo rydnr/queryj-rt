@@ -51,7 +51,7 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 /*
- * Importing JetBrains annotations.
+ * Importing StringTemplate 4 classes.
  */
 import org.stringtemplate.v4.ST;
 
