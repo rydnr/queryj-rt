@@ -323,13 +323,6 @@ public class PerRepositoryTemplatesTest
 
             for (@NotNull final Table\<String, Attribute\<String>, List\<Attribute\<String>\>> table : tables)
             {
-                @Nullable List\<Row\<String\>> tableRows = rows.get(table.getName());
-
-                if (tableRows == null)
-                {
-                    tableRows = new ArrayList\<>(0);
-                }
-
                 @NotNull final MetadataManager metadataManager =
                     retrieveMetadataManager(engine, table, tableRows, decoratorFactory);
 
