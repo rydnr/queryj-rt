@@ -82,7 +82,7 @@ import java.util.List;
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  */
 @ThreadSafe
-@SuppressWarnings("unused")
+//@SuppressWarnings("unused")
 public abstract class BasePerCustomResultTemplateBuildHandler
     <T extends PerCustomResultTemplate<C>,
      C extends PerCustomResultTemplateContext,
