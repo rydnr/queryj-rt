@@ -195,7 +195,7 @@ class(defs, C) ::= <<
  */
 public class PerCustomSqlTemplatesTest
     extends AbstractTemplatesTest\<
-                PerCustomSqlTemplateGenerator\<? extends PerSqlTemplate\<PerCustomSqlTemplateContext>, PerSqlTemplateContext>,
+                PerCustomSqlTemplateGenerator\<? extends PerSqlTemplate\<PerCustomSqlTemplateContext>, PerCustomSqlTemplateContext>,
                 PerCustomSqlTemplateFactory\<? extends PerSqlTemplate\<PerCustomSqlTemplateContext>, PerSqlTemplateContext\>>
 {
     /**
