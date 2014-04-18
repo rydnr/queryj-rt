@@ -45,6 +45,8 @@ import org.acmsl.queryj.metadata.MetadataManager;
 /*
  * Importing some JetBrains annotations.
  */
+import org.acmsl.queryj.metadata.vo.Attribute;
+import org.acmsl.queryj.metadata.vo.Table;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -76,5 +78,5 @@ public interface PerRepositoryTemplateFactory
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final String packageName,
         @NotNull final String repository,
-        @NotNull final List<String> tableNames);
+        @NotNull final List<Table<String, Attribute<String>, List<Attribute<String>>> tableNames);
 }
