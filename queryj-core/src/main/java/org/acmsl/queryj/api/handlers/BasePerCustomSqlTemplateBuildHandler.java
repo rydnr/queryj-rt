@@ -55,6 +55,7 @@ import org.acmsl.queryj.tools.PackageUtils;
 /*
  * Importing some JetBrains annotations.
  */
+import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -73,6 +74,7 @@ import java.util.List;
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  * @since 2.0
  */
+@ThreadSafe
 @SuppressWarnings("unused")
 public abstract class BasePerCustomSqlTemplateBuildHandler
     <T extends PerCustomSqlTemplate<C>, C extends PerCustomSqlTemplateContext>
