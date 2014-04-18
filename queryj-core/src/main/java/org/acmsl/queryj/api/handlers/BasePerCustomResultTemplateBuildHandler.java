@@ -222,8 +222,6 @@ public abstract class BasePerCustomResultTemplateBuildHandler
                 {
                     t_Template =
                         templateFactory.createTemplate(
-                            customSqlProvider,
-                            metadataManager,
                             decoratorFactory,
                             retrievePackage(
                                 t_ResultElement,
