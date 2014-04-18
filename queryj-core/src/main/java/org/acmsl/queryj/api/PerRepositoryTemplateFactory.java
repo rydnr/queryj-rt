@@ -43,8 +43,6 @@ import org.acmsl.commons.patterns.Factory;
  */
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.metadata.DecoratorFactory;
-import org.acmsl.queryj.metadata.vo.Attribute;
-import org.acmsl.queryj.metadata.vo.Table;
 
 /*
  * Importing some JetBrains annotations.
@@ -54,7 +52,10 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Represents entities able to create per-repository templates.
+ * @param <T> the template type.
+ * @param <C> the template context type.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
+ * @since 2.0
  */
 public interface PerRepositoryTemplateFactory
     <T extends AbstractBasePerRepositoryTemplate<C>, C extends PerRepositoryTemplateContext>
