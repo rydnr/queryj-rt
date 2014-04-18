@@ -141,6 +141,15 @@ public class PerCustomResultTemplateContext
     }
 
     /**
+     * Retrieves the properties.
+     * @returns the list of properties.
+     */
+    @NotNull
+    public List<Property<String>> getProperties()
+    {
+        return
+    }
+    /**
      * {@inheritDoc}
      */
     @NotNull
