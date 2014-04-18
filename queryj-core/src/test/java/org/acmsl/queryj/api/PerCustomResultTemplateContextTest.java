@@ -41,6 +41,7 @@ package org.acmsl.queryj.api;
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.customsql.Property;
+import org.acmsl.queryj.customsql.PropertyElement;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.ResultElement;
 
@@ -85,6 +86,7 @@ public class PerCustomResultTemplateContextTest
     {
         @NotNull final List<Property<String>> properties = new ArrayList<>(0);
 
+        properties.add(new PropertyElement<String>())
         @NotNull final Result<String> result = new ResultElement<>("id", "class");
 
         @NotNull final QueryJCommand command =
