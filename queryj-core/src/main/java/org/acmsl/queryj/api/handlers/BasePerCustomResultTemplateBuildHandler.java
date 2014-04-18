@@ -194,13 +194,6 @@ public abstract class BasePerCustomResultTemplateBuildHandler
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final TF templateFactory,
         @NotNull final DecoratorFactory decoratorFactory,
-        @NotNull final String projectPackage,
-        @NotNull final String repository,
-        final boolean implementMarkerInterfaces,
-        @NotNull final String jndiLocation,
-        final boolean disableGenerationTimestamps,
-        final boolean disableNotNullAnnotations,
-        final boolean disableCheckthreadAnnotations,
         @NotNull final List<Result<String>> resultElements,
         @NotNull final CustomResultUtils customResultUtils)
       throws  QueryJBuildException
