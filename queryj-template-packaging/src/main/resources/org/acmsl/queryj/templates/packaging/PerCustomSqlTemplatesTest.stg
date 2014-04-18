@@ -212,33 +212,6 @@ public class PerCustomSqlTemplatesTest
     }
 
     /**
-     * Defines the input SQL based on the information provided by the
-     * feature.
-     * @param sqlInfo the information about the SQL.
-     */
-    @SuppressWarnings("unused")
-    @Given("^Given the following custom query:$")
-    public void defineInputSql(@NotNull final DataTable sqlInfo)
-    {
-        defineInputSql(sqlInfo, getSql(), TableTestHelper.getInstance());
-    }
-
-    /**
-     * Defines the input SQL based on the information provided by the
-     * feature.
-     * @param sqlInfo the information about the results.
-     * @param queries the custom SQLs.
-     * @param helper the {@link TableTestHelper} instance.
-     */
-    protected void defineInputResults(
-        @NotNull final DataTable sqlInfo,
-        @NotNull final Map\<String, Sql\<String\>> queries,
-        @NotNull final TableTestHelper helper)
-    {
-        helper.defineSql(sqlInfo, queries);
-    }
-
-    /**
      * Defines SQL sentences via cucumber features.
      * @param values such information.
      */
