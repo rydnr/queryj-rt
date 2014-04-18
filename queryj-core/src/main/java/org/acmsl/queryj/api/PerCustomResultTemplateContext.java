@@ -130,6 +130,15 @@ public class PerCustomResultTemplateContext
         return getValue(buildResultKey(), getCommand(), new MissingResultException());
     }
 
+    /**
+     * Retrieves the properties key.
+     * @return "properties".
+     */
+    @NotNull
+    protected String buildPropertiesKey()
+    {
+        return "properties";
+    }
 
     /**
      * {@inheritDoc}
