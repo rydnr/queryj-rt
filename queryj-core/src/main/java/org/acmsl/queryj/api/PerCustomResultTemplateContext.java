@@ -87,9 +87,11 @@ public class PerCustomResultTemplateContext
 
     /**
      * Creates a {@link PerCustomResultTemplateContext} with given information.
-     * @param packageName the package name.
      * @param fileName the file name.
+     * @param packageName the package name.
      * @param result the {@link Result} instance.
+     * @param properties the properties.
+     * @param
      */
     public PerCustomResultTemplateContext(
         @NotNull final String fileName,
