@@ -171,7 +171,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
                     decoratorFactory,
                     templateFactory,
                     packageName,
-                    projectPackage,
                     repository,
                     header,
                     implementMarkerInterfaces,
