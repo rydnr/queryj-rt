@@ -47,6 +47,7 @@ import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
+import org.acmsl.queryj.metadata.CachingDecoratorFactory;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.SqlDAO;
@@ -184,8 +185,8 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
                 parameters,
                 engineName,
                 retrieveTemplateFactory(),
-                retrieveCustomSql(
-                    parameters, customSqlProvider, metadataManager));
+                retrieveCustomSql(parameters, customSqlProvider, metadataManager),
+                CachingDecoratorFactory.getInstance());
         }
     }
     
