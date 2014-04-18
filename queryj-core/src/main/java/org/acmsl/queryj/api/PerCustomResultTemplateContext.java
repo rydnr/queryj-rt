@@ -117,7 +117,7 @@ public class PerCustomResultTemplateContext
     @NotNull
     public String buildResultKey()
     {
-        return org.acmsl.queryj.plLiterals.RESULT_NAME;
+        return org.acmsl.queryj.placeholders.Literals.RESULT_NAME;
     }
 
     /**
