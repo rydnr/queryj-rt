@@ -179,7 +179,7 @@ public class PerCustomResultTemplateContext
     @Override
     public int hashCode()
     {
-        return new HashCodeBuilder().appendSuper(super.hashCode()).append(this.m__Result).toHashCode();
+        return new HashCodeBuilder().appendSuper(super.hashCode()).toHashCode();
     }
 
     /**
