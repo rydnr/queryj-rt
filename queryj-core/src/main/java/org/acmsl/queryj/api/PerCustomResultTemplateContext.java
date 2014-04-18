@@ -132,7 +132,7 @@ public class PerCustomResultTemplateContext
     @NotNull
     protected String buildPropertiesKey()
     {
-        return "properties";
+        return "properties.for." ;
     }
 
     /**
