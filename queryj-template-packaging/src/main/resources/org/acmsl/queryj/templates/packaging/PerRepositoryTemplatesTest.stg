@@ -321,8 +321,6 @@ public class PerRepositoryTemplatesTest
             @NotNull final List\<Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables =
                 new ArrayList\<>(tableMap.values());
 
-            for (@NotNull final Table\<String, Attribute\<String>, List\<Attribute\<String>\>> table : tables)
-            {
                 @NotNull final MetadataManager metadataManager =
                     retrieveMetadataManager(engine, table, tableRows, decoratorFactory);
 
