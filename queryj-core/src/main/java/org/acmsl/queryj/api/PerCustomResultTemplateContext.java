@@ -100,9 +100,6 @@ public class PerCustomResultTemplateContext
      * @param result the {@link Result} instance.
      */
     public PerCustomResultTemplateContext(
-        @NotNull final MetadataManager metadataManager,
-        @NotNull final CustomSqlProvider customSqlProvider,
-        @Nullable final String header,
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final String packageName,
         @NotNull final String basePackageName,
