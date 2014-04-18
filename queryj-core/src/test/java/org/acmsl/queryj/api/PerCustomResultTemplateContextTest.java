@@ -76,6 +76,6 @@ public class PerCustomResultTemplateContextTest
         @NotNull final QueryJCommand command = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
         @NotNull final PerCustomResultTemplate instance =
-            new PerCustomResultTemplateContext("fileName", "packageName", result, properties);
+            new PerCustomResultTemplateContext("fileName", "packageName", result, properties, command);
     }
 }
