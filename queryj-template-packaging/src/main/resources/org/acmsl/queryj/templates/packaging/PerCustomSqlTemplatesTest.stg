@@ -36,7 +36,7 @@
 // Description: Defines the rules to generate PerCustomSqlTemplatesTest
 //              implementations.
 //
-group PerSqlTemplatesTest;
+group PerCustomSqlTemplatesTest;
 
 import "common.stg"
 
@@ -322,8 +322,8 @@ public class PerCustomSqlTemplatesTest
         @NotNull final Map\<String, File> outputFiles,
         @NotNull final CustomSqlProvider sqlProvider)
     {
-        @Nullable final PerSqlTemplateGenerator\<PerSqlTemplate\<PerSqlTemplateContext>, PerSqlTemplateContext> generator =
-            (PerSqlTemplateGenerator\<PerSqlTemplate\<PerSqlTemplateContext>, PerSqlTemplateContext>) retrieveTemplateGenerator(
+        @Nullable final PerCustomSqlTemplateGenerator\<PerCustomSqlTemplate\<PerCustomSqlTemplateContext>, PerCustomSqlTemplateContext> generator =
+            (PerCustomSqlTemplateGenerator\<PerCustomSqlTemplate\<PerCustomSqlTemplateContext>, PerCustomSqlTemplateContext>) retrieveTemplateGenerator(
                 templateName);
 
         Assert.assertNotNull("No template generator found for " + templateName, generator);
@@ -382,7 +382,7 @@ public class PerCustomSqlTemplatesTest
                 new QueryJCommandWrapper\<MetadataManager>(t_Command).setSetting(
                     DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, metadataManager);
 
-                @Nullable final PerSqlTemplateFactory\<? extends PerSqlTemplate\<PerSqlTemplateContext>, PerSqlTemplateContext> templateFactory =
+                @Nullable final PerCustomSqlTemplateFactory\<? extends PerCustomSqlTemplate\<PerCustomSqlTemplateContext>, PerCustomSqlTemplateContext> templateFactory =
                     retrieveTemplateFactory(templateName);
 
                 Assert.assertNotNull("No template factory found for " + templateName, templateFactory);
@@ -390,7 +390,7 @@ public class PerCustomSqlTemplatesTest
                 @NotNull final String packageName =
                     resolvePackage(PACKAGE_MAPPINGS.get(templateName), result.getName(), resolveEngine(engine));
 
-                @Nullable final PerSqlTemplate\<PerSqlTemplateContext> template =
+                @Nullable final PerCustomSqlTemplate\<PerCustomSqlTemplateContext> template =
                     templateFactory.createTemplate(
                         t_Command,
                         decoratorFactory,
@@ -429,7 +429,7 @@ public class PerCustomSqlTemplatesTest
                     Assert.fail("Cannot create folder: " + outputDir.getAbsolutePath());
                 }
 
-                UniqueLogFactory.initializeInstance(LogFactory.getLog(PerSqlTemplatesTest.class));
+                UniqueLogFactory.initializeInstance(LogFactory.getLog(PerCustomSqlTemplatesTest.class));
 
                 ((AbstractTemplate) template).setDebugMode(true);
 
@@ -493,7 +493,7 @@ public class PerCustomSqlTemplatesTest
     @NotNull
     @Override
     protected DecoratorFactory retrieveDecoratorFactory(
-        @NotNull final PerSqlTemplateGenerator\<? extends PerSqlTemplate\<PerSqlTemplateContext>, PerSqlTemplateContext> generator)
+        @NotNull final PerCustomSqlTemplateGenerator\<? extends PerCustomSqlTemplate\<PerCustomSqlTemplateContext>, PerCustomSqlTemplateContext> generator)
     {
         return generator.getDecoratorFactory();
     }
