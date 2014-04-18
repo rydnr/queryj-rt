@@ -37,6 +37,10 @@ package org.acmsl.queryj.api;
  * Importing some ACM-SL Commons classes.
  */
 import org.acmsl.commons.patterns.Factory;
+
+/*
+ * Importing some ACM-SL Commons classes.
+ */
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.vo.Attribute;
