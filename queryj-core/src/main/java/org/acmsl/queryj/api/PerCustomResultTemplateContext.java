@@ -104,7 +104,7 @@ public class PerCustomResultTemplateContext
 
         immutableSetValue(buildFileNameKey(), fileName, command);
         immutableSetValue(buildPackageNameKey(), packageName, command);
-        immutableSetValue(buildResultKey(), foreignKey, command);
+        immutableSetValue(buildResultKey(), result, command);
         immutableSetResult(result);
     }
 
