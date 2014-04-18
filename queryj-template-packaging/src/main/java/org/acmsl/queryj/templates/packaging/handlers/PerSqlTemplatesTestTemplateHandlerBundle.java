@@ -46,7 +46,7 @@ import org.acmsl.queryj.api.handlers.TemplateHandlerBundle;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
- * Handler bundle for {@link org.acmsl.queryj.templates.packaging.PerSqlTemplatesTestTemplate}s.
+ * Handler bundle for {@link org.acmsl.queryj.templates.packaging.PerCustomSqlTemplatesTestTemplate}s.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/17 10:24

@@ -46,7 +46,7 @@ import org.acmsl.queryj.QueryJCommandWrapper;
  */
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
 import org.acmsl.queryj.templates.packaging.Literals;
-import org.acmsl.queryj.templates.packaging.PerSqlTemplatesTestTemplate;
+import org.acmsl.queryj.templates.packaging.PerCustomSqlTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.PerSqlTemplatesTestTemplateFactory;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
 
@@ -66,7 +66,7 @@ import org.checkthread.annotations.ThreadSafe;
 import java.util.List;
 
 /**
- * Build handler for {@link PerSqlTemplatesTestTemplate}s.
+ * Build handler for {@link org.acmsl.queryj.templates.packaging.PerCustomSqlTemplatesTestTemplate}s.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/17 08:17
@@ -74,7 +74,7 @@ import java.util.List;
 @ThreadSafe
 public class PerSqlTemplatesTestTemplateBuildHandler
     extends TemplatePackagingTestBuildHandler
-                <PerSqlTemplatesTestTemplate,
+                <PerCustomSqlTemplatesTestTemplate,
                     PerSqlTemplatesTestTemplateFactory,
                     GlobalTemplateContext>
 {
@@ -142,10 +142,10 @@ public class PerSqlTemplatesTestTemplateBuildHandler
      */
     @Override
     protected void storeTemplate(
-        @NotNull final PerSqlTemplatesTestTemplate template,
+        @NotNull final PerCustomSqlTemplatesTestTemplate template,
         @NotNull final QueryJCommand parameters)
     {
-        new QueryJCommandWrapper<PerSqlTemplatesTestTemplate>(parameters)
+        new QueryJCommandWrapper<PerCustomSqlTemplatesTestTemplate>(parameters)
             .setSetting(TEMPLATES_KEY, template);
     }
 }

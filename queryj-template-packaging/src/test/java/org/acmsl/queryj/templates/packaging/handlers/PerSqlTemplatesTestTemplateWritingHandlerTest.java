@@ -39,7 +39,7 @@ package org.acmsl.queryj.templates.packaging.handlers;
  * Importing QueryJ Template Packaging classes.
  */
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
-import org.acmsl.queryj.templates.packaging.PerSqlTemplatesTestTemplate;
+import org.acmsl.queryj.templates.packaging.PerCustomSqlTemplatesTestTemplate;
 import org.acmsl.queryj.templates.packaging.PerSqlTemplatesTestTemplateFactory;
 
 /*
@@ -65,7 +65,7 @@ public class PerSqlTemplatesTestTemplateWritingHandlerTest
     extends AbstractTemplatesTestTemplateWritingHandlerTest<
     PerSqlTemplatesTestTemplateWritingHandler,
     PerSqlTemplatesTestTemplateBuildHandler,
-    PerSqlTemplatesTestTemplate,
+    PerCustomSqlTemplatesTestTemplate,
     PerSqlTemplatesTestTemplateFactory,
     GlobalTemplateContext>
 {
@@ -97,8 +97,8 @@ public class PerSqlTemplatesTestTemplateWritingHandlerTest
      */
     @NotNull
     @Override
-    protected PerSqlTemplatesTestTemplate createTemplateMock()
+    protected PerCustomSqlTemplatesTestTemplate createTemplateMock()
     {
-        return EasyMock.createNiceMock(PerSqlTemplatesTestTemplate.class);
+        return EasyMock.createNiceMock(PerCustomSqlTemplatesTestTemplate.class);
     }
 }

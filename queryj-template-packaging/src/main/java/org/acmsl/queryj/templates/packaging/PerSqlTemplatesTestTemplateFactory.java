@@ -48,14 +48,14 @@ import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Factory for {@link PerSqlTemplatesTestTemplate}s.
+ * Factory for {@link PerCustomSqlTemplatesTestTemplate}s.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/16 21:46
  */
 @ThreadSafe
 public class PerSqlTemplatesTestTemplateFactory
-    implements TemplatePackagingTemplateFactory<PerSqlTemplatesTestTemplate, GlobalTemplateContext>,
+    implements TemplatePackagingTemplateFactory<PerCustomSqlTemplatesTestTemplate, GlobalTemplateContext>,
                Singleton
 {
     /**
@@ -87,8 +87,8 @@ public class PerSqlTemplatesTestTemplateFactory
      */
     @Nullable
     @Override
-    public PerSqlTemplatesTestTemplate createTemplate(@NotNull final GlobalTemplateContext context)
+    public PerCustomSqlTemplatesTestTemplate createTemplate(@NotNull final GlobalTemplateContext context)
     {
-        return new PerSqlTemplatesTestTemplate(context);
+        return new PerCustomSqlTemplatesTestTemplate(context);
     }
 }
