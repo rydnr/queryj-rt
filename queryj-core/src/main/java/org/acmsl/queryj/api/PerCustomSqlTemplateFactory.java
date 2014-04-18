@@ -62,14 +62,7 @@ public interface PerCustomSqlTemplateFactory<T extends PerCustomSqlTemplate<C>, 
     /**
      * Creates a per-<i>custom sql</i> template.
      * @param sql the sql.
-     * @param customSqlProvider the custom sql provider.
-     * @param metadataManager the database metadata manager.
      * @param packageName the package name.
-     * @param engineName the engine name.
-     * @param engineVersion the engine version.
-     * @param basePackageName the base package name.
-     * @param repositoryName the repository name.
-     * @param header the file header.
      */
     @NotNull
     public T createTemplate(
