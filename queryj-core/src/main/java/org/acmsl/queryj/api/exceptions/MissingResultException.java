@@ -76,7 +76,6 @@ public class MissingResultException
 
     /**
      * Creates an instance with given context.
-     * @param sql the {@link Sql}.
      */
     public MissingResultException()
     {
