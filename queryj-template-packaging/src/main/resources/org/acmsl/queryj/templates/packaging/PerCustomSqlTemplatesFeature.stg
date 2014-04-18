@@ -61,7 +61,7 @@ Feature: Per-SQL templates
       | id | name | dao | type | matches | value | validate |
       | <sql.id> | <sql.name> | <sql.dao>| <sql.type> | <sql.matches> | <sql.value> | <sql.validate> |
 
-    And the following query parameters:
+    And the following custom query parameters:
       | id | sql | index | type | name | validation-value |
       <sql.parameters:{p | <cucumber_parameter_specification(parameter=p)>}; separator="\n">
 
