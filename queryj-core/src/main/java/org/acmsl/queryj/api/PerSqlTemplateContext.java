@@ -66,6 +66,6 @@ public class PerSqlTemplateContext
         @NotNull final Sql<String> sql,
         @NotNull final QueryJCommand command)
     {
-        super(pk, command);
+        super(sql.getId(), command);
     }
 }
