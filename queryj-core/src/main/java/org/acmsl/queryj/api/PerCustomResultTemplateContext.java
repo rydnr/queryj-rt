@@ -105,7 +105,6 @@ public class PerCustomResultTemplateContext
      */
     public PerCustomResultTemplateContext(
         @NotNull final QueryJCommand command,
-        @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final String packageName,
         @NotNull final Result<String> result,
         @NotNull final List<Property<String>> properties)
