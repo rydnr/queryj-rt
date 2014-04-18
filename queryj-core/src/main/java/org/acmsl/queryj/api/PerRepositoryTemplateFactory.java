@@ -81,11 +81,6 @@ public interface PerRepositoryTemplateFactory
     @Nullable
     public T createTemplate(
         @NotNull final String packageName,
-        @NotNull final String projectPackage,
-        @NotNull final String repository,
-        @Nullable final String header,
-        final boolean implementMarkerInterfaces,
-        final boolean jmx,
         @NotNull final List<String> tableNames,
         @NotNull final String jndiLocation,
         final boolean disableGenerationTimestamps,
