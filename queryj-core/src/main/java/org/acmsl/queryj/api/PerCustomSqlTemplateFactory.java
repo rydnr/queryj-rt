@@ -37,10 +37,8 @@ package org.acmsl.queryj.api;
  * Importing some project classes.
  */
 import org.acmsl.queryj.QueryJCommand;
-import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.metadata.DecoratorFactory;
-import org.acmsl.queryj.metadata.MetadataManager;
 
 /*
  * Importing some ACM-SL Commons classes.
