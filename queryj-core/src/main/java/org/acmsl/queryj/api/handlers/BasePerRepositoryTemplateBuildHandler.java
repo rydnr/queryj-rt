@@ -248,14 +248,8 @@ public abstract class BasePerRepositoryTemplateBuildHandler
             templateFactory.createTemplate(
                 repository,
                 packageName,
-                header,
-                implementMarkerInterfaces,
-                jmx,
-                tableNames,
-                jndiLocation,
-                disableGenerationTimestamps,
-                disableNotNullAnnotations,
-                disableCheckthreadAnnotations);
+                decoratorFactory,
+                parameters);
     }
 
     /**
