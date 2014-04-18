@@ -37,8 +37,6 @@ package org.acmsl.queryj.api.handlers;
 /*
  * Importing QueryJ Core classes.
  */
-import org.acmsl.queryj.QueryJCommand;
-import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.PerCustomSqlTemplateContext;
 import org.acmsl.queryj.api.PerCustomSqlTemplateFactory;
 import org.acmsl.queryj.api.exceptions.CannotRetrieveDatabaseInformationException;
