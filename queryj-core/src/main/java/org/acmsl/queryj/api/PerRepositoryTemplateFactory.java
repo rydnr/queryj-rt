@@ -71,8 +71,7 @@ public interface PerRepositoryTemplateFactory
      * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @param packageName the package name.
      * @param repository the repository name.
-     * @param tables the list of tables.
-     * @return the new template.
+    * @return the new template.
      */
     @Nullable
     public T createTemplate(
