@@ -56,7 +56,7 @@ import java.util.Locale;
  * Created: 2014/04/18 13:56
  */
 @ThreadSafe
-public class AbstractExceptionTest<E extends QueryJNonCheckedException>
+public abstract class AbstractExceptionTest<E extends QueryJNonCheckedException>
 {
     /**
      * Tests the message key is defined for Spanish and English.
