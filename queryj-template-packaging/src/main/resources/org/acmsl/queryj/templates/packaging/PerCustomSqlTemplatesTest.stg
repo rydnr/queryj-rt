@@ -228,7 +228,7 @@ public class PerCustomSqlTemplatesTest
      * feature.
      * @param sqlInfo the information about the results.
      * @param queries the custom SQLs.
-     * @param helper the {@link CustomResultTestHelper} instance.
+     * @param helper the {@link TableTestHelper} instance.
      */
     protected void defineInputResults(
         @NotNull final DataTable resultInfo,
