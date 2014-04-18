@@ -145,7 +145,6 @@ public abstract class BasePerCustomResultTemplateBuildHandler
             retrieveProjectPackage(parameters),
             retrieveTableRepositoryName(parameters),
             retrieveImplementMarkerInterfaces(parameters),
-            retrieveJNDILocation(parameters),
             retrieveDisableGenerationTimestamps(parameters),
             retrieveDisableNotNullAnnotations(parameters),
             retrieveDisableCheckthreadAnnotations(parameters),
