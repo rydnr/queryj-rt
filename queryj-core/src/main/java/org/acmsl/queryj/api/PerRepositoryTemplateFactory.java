@@ -67,7 +67,8 @@ public interface PerRepositoryTemplateFactory
      * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @param packageName the package name.
      * @param repository the repository name.
-    * @return the new template.
+     * @param command the {@link QueryJCommand command}.
+     *                   * @return the new template.
      */
     @Nullable
     public T createTemplate(
