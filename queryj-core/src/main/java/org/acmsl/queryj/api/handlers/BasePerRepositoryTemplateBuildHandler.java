@@ -133,7 +133,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
     /**
      * Handles given information.
      * @param parameters the parameters.
-     * @param metadataManager the database metadata manager.
      * @param customSqlProvider the custom sql provider.
      * @param templateFactory the template factory.
      * @param packageName the package name.
