@@ -39,6 +39,7 @@ package org.acmsl.queryj.api;
 /*
  * Importing some project classes.
  */
+import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.metadata.DecoratorFactory;
@@ -102,6 +103,7 @@ public class PerCustomResultTemplateContext
      * @param result the {@link Result} instance.
      */
     public PerCustomResultTemplateContext(
+        @NotNull final QueryJCommand command,
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final String packageName,
         @NotNull final Result<String> result,
