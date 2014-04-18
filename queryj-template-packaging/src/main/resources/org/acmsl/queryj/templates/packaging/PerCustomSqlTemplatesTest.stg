@@ -227,7 +227,7 @@ public class PerCustomSqlTemplatesTest
      * Defines the input SQL based on the information provided by the
      * feature.
      * @param sqlInfo the information about the results.
-     * @param results the custom results.
+     * @param sqlthe custom results.
      * @param helper the {@link CustomResultTestHelper} instance.
      */
     protected void defineInputResults(
