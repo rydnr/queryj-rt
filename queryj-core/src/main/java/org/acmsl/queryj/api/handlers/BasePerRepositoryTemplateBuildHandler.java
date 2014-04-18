@@ -172,8 +172,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
                     templateFactory,
                     packageName,
                     repository,
-                    implementMarkerInterfaces,
-                    jmx,
                     t_lTableNames,
                     jndiLocation,
                     retrieveDisableGenerationTimestamps(parameters),
