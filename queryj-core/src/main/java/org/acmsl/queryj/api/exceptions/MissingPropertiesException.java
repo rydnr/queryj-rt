@@ -62,6 +62,6 @@ public class MissingPropertiesException
      */
     public MissingPropertiesException()
     {
-        super("Properties.for.");
+        super("Properties.");
     }
 }
