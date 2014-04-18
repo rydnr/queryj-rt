@@ -37,7 +37,7 @@ package org.acmsl.queryj.api;
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  */
 public interface PerRepositoryTemplateGenerator
-    <N extends AbstractBasePerRepositoryTemplate<C>, C extends PerRepositoryTemplateContext>
+    <N extends PerRepositoryTemplate<C>, C extends PerRepositoryTemplateContext>
     extends TemplateGenerator<N, C>
 {
 }
