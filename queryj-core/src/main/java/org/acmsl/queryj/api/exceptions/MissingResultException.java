@@ -75,7 +75,7 @@ public class MissingResultException
     }
 
     /**
-     * Creates an instance with given context.
+     * Creates an instance.
      */
     public MissingResultException()
     {
