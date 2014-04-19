@@ -141,8 +141,8 @@ public class <C.class_name>
     @Override
     @NotNull
     public <def.name.noExtension>Template createTemplate(
-        @NotNull final String packageName,
         @NotNull final ForeignKey\<String> foreignKey,
+        @NotNull final String packageName,
         @NotNull final QueryJCommand command)
     {
         return createTemplate(packageName, foreignKey, command, QueryJCommandUtils.getInstance());
