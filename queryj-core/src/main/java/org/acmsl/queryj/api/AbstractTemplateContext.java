@@ -168,7 +168,7 @@ public abstract class AbstractTemplateContext
      */
     protected void setDecoratorFactory(@NotNull final DecoratorFactory decoratorFactory)
     {
-        this.m__DecoratorFactory = decoratorFactory;
+        immutableSetDecoratorFactory();
     }
 
     /**
