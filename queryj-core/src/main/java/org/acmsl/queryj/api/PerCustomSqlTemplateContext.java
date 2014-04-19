@@ -160,12 +160,18 @@ public class PerCustomSqlTemplateContext
         return getSql().getId();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public int hashCode()
     {
         return new HashCodeBuilder().appendSuper(super.hashCode()).append(this.m__Sql).toHashCode();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean equals(final Object obj)
     {
