@@ -179,7 +179,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     public DecoratorFactory getDecoratorFactory()
     {
-        immutableSetDecoratorFactory(decoratorFactory);
+        return this.m__DecoratorFactory;
     }
 
     /**
