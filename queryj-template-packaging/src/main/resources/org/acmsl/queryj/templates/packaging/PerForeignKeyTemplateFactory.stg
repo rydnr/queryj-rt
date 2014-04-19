@@ -173,6 +173,7 @@ public class <C.class_name>
                     queryJCommandUtils.retrieveMetadataManager(command)),
                 foreignKey,
                 packageName,
+                decoratorFactory,
                 command);
 
         return new <def.name.noExtension>Template(t_Context);
