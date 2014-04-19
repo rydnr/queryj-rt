@@ -101,7 +101,6 @@ public class PerCustomResultTemplateContext
     {
         super(result.getId(), decoratorFactory, command);
 
-        immutableSetValue(buildFileNameKey(), fileName, command);
         immutableSetValue(buildPackageNameKey(), packageName, command);
         immutableSetValue(buildResultKey(), result, command);
         immutableSetValue(buildPropertiesKey(), properties, command);
