@@ -104,7 +104,7 @@ public class PerCustomResultTemplateContextTest
 
         @NotNull final PerCustomResultTemplateContext instance2 =
             new PerCustomResultTemplateContext(
-                "fileName", "packageName", result2, new ArrayList<>(0), CachingDecoratorFactory.getInstance(), command);
+                "packageName", result2, new ArrayList<>(0), CachingDecoratorFactory.getInstance(), command);
 
         Assert.assertEquals(properties, instance.getProperties());
         Assert.assertNotEquals(properties, instance2.getProperties());
