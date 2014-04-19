@@ -69,7 +69,7 @@ import org.checkthread.annotations.ThreadSafe;
 
 /**
  * Builds a per-repository template using database metadata.
- * @author <a href="mailto:chous@acm-sl.org"
+ * @author <a href="mailto:queryj@acm-sl.org"
  *         >Jose San Leandro</a>
  */
 @ThreadSafe
