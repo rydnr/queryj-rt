@@ -176,7 +176,7 @@ public abstract class AbstractTemplateContext
      * Specifies the decorator factory.
      * @param decoratorFactory the {@link DecoratorFactory} instance.
      */
-    @SuppressWarnings("unused")
+    @NotNull
     protected void setDecoratorFactory(@NotNull final DecoratorFactory decoratorFactory)
     {
         immutableSetDecoratorFactory(decoratorFactory);
