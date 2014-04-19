@@ -1,2 +1,4 @@
 * 2014/04/19
-** FkStatementSetter #478: 2 -> 
+** FkStatementSetter #478: 2 -> 1
+*** Check filename of per-fk cucumber feature
+*** Generate real per-fk cucumber feature
