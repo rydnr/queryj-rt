@@ -89,7 +89,9 @@ public abstract class AbstractQueryJTemplateContext
      * @param command the {@link org.acmsl.queryj.QueryJCommand} instance.
      */
     protected AbstractQueryJTemplateContext(
-        @NotNull final String pk, @NotNull final QueryJCommand command)
+        @NotNull final String pk,
+        @NotNull final DecoratorFactory decoratorFactory,
+        @NotNull final QueryJCommand command)
     {
         super(pk, command);
     }
