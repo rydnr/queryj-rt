@@ -104,7 +104,7 @@ public abstract class AbstractTemplateContext
 
     /**
      * Creates an {@link AbstractTemplateContext} with given information.
-     * @param pk the primary key
+     * @param pk the primary key of the
      * @param command the {@link org.acmsl.queryj.QueryJCommand} instance.
      */
     protected AbstractTemplateContext(
