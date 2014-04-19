@@ -69,8 +69,11 @@ import org.checkthread.annotations.ThreadSafe;
 
 /**
  * Builds a per-repository template using database metadata.
- * @author <a href="mailto:queryj@acm-sl.org"
- *         >Jose San Leandro</a>
+ * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
+ * @since 2.0
+ * @param <T> the template class.
+ * @param <C> the template context class.
+ * @param <TF> the template factory class.
  */
 @ThreadSafe
 public abstract class BasePerRepositoryTemplateBuildHandler
