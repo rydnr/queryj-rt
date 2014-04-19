@@ -148,6 +148,15 @@ public abstract class AbstractTemplateContext
     }
 
     /**
+     * Specifies the decorator factory.
+     * @param
+     */
+    protected final void immutableSetDecoratorFactory(@NotNull final DecoratorFactory decoratorFactory)
+    {
+        this.m__DecoratorFactory = decoratorFactory;
+    }
+
+    /**
      * Specifies the command.
      * @param command the command.
      */
