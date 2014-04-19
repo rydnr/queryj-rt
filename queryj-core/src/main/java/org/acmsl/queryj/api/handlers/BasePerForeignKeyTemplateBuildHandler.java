@@ -44,6 +44,7 @@ import org.acmsl.queryj.api.PerForeignKeyTemplateFactory;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.metadata.CachingDecoratorFactory;
+import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.engines.Engine;
 import org.acmsl.queryj.metadata.vo.Attribute;
@@ -146,7 +147,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
      * @return such instance.
      */
     @NotNull
-    protected abstract TF retrieveTemplateFactory();
+    protected DecoratorFactory retrieveTemplateFactory();
 
     /**
      * Builds the templates.
