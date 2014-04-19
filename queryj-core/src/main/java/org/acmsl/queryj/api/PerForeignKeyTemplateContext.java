@@ -87,9 +87,8 @@ public class PerForeignKeyTemplateContext
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final QueryJCommand command)
     {
-        super("fk" + foreignKey.getFkName(), command);
+        super("fk" + foreignKey.getFkName(), decoratorFactory, command);
 
-        immutableSetValue(buildFileNameKey(), fileName, command);
         immutableSetValue(buildPackageNameKey(), packageName, command);
         immutableSetValue(buildForeignKeyKey(), foreignKey, command);
     }
