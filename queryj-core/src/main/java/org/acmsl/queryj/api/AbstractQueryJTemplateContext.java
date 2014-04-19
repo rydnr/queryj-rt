@@ -83,6 +83,11 @@ public abstract class AbstractQueryJTemplateContext
     implements QueryJTemplateContext
 {
     /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = -3671360539593632338L;
+
+    /**
      * Creates an {@link AbstractTemplateContext} with given information.
      * @param pk the pk.
      * @param decoratorFactory the {@link DecoratorFactory}.
