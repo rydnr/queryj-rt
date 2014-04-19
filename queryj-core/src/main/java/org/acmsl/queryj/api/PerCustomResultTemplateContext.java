@@ -93,7 +93,6 @@ public class PerCustomResultTemplateContext
      * @param command the command.
      */
     public PerCustomResultTemplateContext(
-        @NotNull final String fileName,
         @NotNull final String packageName,
         @NotNull final Result<String> result,
         @NotNull final List<Property<String>> properties,
