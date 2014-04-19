@@ -164,6 +164,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
 
     /**
      * Checks whether template generation is enabled for this kind of template.
+     * @param customSqlProvider the {@link CustomSqlProvider}
      * @return <code>true</code> in such case.
      */
     @SuppressWarnings("unchecked")
