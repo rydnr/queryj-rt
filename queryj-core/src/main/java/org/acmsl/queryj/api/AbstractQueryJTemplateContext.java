@@ -162,16 +162,6 @@ public abstract class AbstractQueryJTemplateContext
     }
 
     /**
-     * Retrieves the {@link DecoratorFactory} instance.
-     * @return such instance.
-     */
-    @NotNull
-    protected String buildDecoratorFactoryKey()
-    {
-        return DecoratorFactory.class.getName();
-    }
-
-    /**
      * Retrieves the base package name.
      * @return such information.
      */
