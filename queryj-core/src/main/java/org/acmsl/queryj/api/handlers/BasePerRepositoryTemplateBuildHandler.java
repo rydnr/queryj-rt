@@ -183,6 +183,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
      * @param templateFactory the template factory.
      * @param packageName the package name.
      * @param repository the repository.
+     * @param parameters the command.
      * @return the template.
      */
     @Nullable
