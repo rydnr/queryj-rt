@@ -166,6 +166,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
         @NotNull final MetadataManager metadataManager,
         @NotNull final TF templateFactory,
         @NotNull final String projectPackage,
+        @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final List<ForeignKey<String>> foreignKeys)
       throws  QueryJBuildException
     {
