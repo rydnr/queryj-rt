@@ -101,6 +101,7 @@ public abstract class AbstractTemplateContext
      * The pk.
      */
     private String m__Pk;
+    private DecoratorFactory m__DecoratorFactory;
 
     /**
      * Creates an {@link AbstractTemplateContext} with given information.
