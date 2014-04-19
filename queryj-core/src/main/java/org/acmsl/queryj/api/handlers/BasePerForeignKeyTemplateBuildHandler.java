@@ -129,7 +129,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
             metadataManager,
             templateFactory,
             retrieveProjectPackage(parameters),
-            retrieveDe
+            retrieve
             retrieveForeignKeys(parameters, metadataManager));
     }
 
