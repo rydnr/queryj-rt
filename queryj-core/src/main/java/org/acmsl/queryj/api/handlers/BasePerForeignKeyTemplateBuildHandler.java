@@ -70,7 +70,8 @@ import java.util.List;
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  * @since 2.0
  * @param <T> the template class.
- *
+ * @param <C> the template context class.
+ * @param <TF> the template factory class.
  */
 @SuppressWarnings("unused")
 public abstract class BasePerForeignKeyTemplateBuildHandler
