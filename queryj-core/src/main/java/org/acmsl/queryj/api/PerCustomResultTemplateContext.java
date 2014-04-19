@@ -49,6 +49,7 @@ import org.acmsl.queryj.customsql.Result;
 /*
  * Importing some Apache Commons Lang builder classes.
  */
+import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 
@@ -95,6 +96,7 @@ public class PerCustomResultTemplateContext
         @NotNull final String packageName,
         @NotNull final Result<String> result,
         @NotNull final List<Property<String>> properties,
+        @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final QueryJCommand command)
     {
         super(result.getId(), command);
