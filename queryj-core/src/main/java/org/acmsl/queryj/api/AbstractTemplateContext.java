@@ -114,6 +114,7 @@ public abstract class AbstractTemplateContext
         @NotNull final QueryJCommand command)
     {
         immutableSetPk(pk);
+        immutableSetDe
         immutableSetCommand(command);
     }
 
