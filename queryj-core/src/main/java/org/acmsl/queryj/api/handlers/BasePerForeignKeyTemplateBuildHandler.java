@@ -158,7 +158,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
      * @param metadataManager the database metadata manager.
      * @param templateFactory the template factory.
      * @param projectPackage the project package.
-     * @param deco
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @param foreignKeys the foreign keys.
      */
     protected void buildTemplates(
