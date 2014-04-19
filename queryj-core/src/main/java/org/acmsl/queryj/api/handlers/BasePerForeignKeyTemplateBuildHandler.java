@@ -169,6 +169,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
                             t_ForeignKey.getSourceTableName(),
                             metadataManager.getEngine(),
                             parameters),
+                        decoratorFactory,
                         parameters));
             }
         }
