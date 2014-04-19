@@ -91,7 +91,7 @@ public abstract class AbstractTemplateContext
     /**
      * The package name key.
      */
-    public static final String PACKAGE_NAME = Literals.PACKAGE_NAME; "packageName";
+    public static final String PACKAGE_NAME = Literals.PACKAGE_NAME;
 
     /**
      * The command.
