@@ -101,6 +101,10 @@ public abstract class AbstractTemplateContext
      * The pk.
      */
     private String m__Pk;
+
+    /**
+     * The decorator factory.
+     */
     private DecoratorFactory m__DecoratorFactory;
 
     /**
