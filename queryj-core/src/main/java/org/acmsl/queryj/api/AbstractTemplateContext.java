@@ -483,7 +483,7 @@ public abstract class AbstractTemplateContext
             new HashCodeBuilder()
                 .append(AbstractTemplateContext.class.getName())
                 .append(this.m__Pk)
-                .append(this.m__DecoratorFactory,)
+                .append(this.m__DecoratorFactory)
                 .append(this.m__Command)
                 .toHashCode();
     }
