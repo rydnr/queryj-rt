@@ -395,6 +395,7 @@ public abstract class AbstractTemplateContext
      * Retrieves the package name.
      * @return such information.
      */
+    @Override
     @NotNull
     public String getPackageName()
     {
