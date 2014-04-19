@@ -142,7 +142,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
     protected abstract TF retrieveTemplateFactory();
 
     /**
-     * Retrieves the template factory.
+     * Retrieves the decorator factory.
      * @return such instance.
      */
     @NotNull
