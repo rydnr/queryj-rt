@@ -142,6 +142,13 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
     protected abstract TF retrieveTemplateFactory();
 
     /**
+     * Retrieves the template factory.
+     * @return such instance.
+     */
+    @NotNull
+    protected abstract TF retrieveTemplateFactory();
+
+    /**
      * Builds the templates.
      * @param parameters the parameters.
      * @param metadataManager the database metadata manager.
