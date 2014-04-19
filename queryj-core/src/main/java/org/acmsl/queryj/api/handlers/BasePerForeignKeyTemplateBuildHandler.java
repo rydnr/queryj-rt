@@ -131,7 +131,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
             metadataManager,
             templateFactory,
             retrieveProjectPackage(parameters),
-            CachingDecoratorFactory.getInstance(),
+            retrieveDecoratorFactory(),
             retrieveForeignKeys(parameters, metadataManager));
     }
 
