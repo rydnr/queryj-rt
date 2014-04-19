@@ -147,7 +147,10 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
      * @return such instance.
      */
     @NotNull
-    protected DecoratorFactory retrieveTemplateFactory();
+    protected DecoratorFactory retrieveDecoratorFactory()
+    {
+        return CachingDecoratorFactory.getInstance();
+    }
 
     /**
      * Builds the templates.
