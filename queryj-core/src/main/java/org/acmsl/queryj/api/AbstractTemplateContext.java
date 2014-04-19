@@ -35,6 +35,7 @@ package org.acmsl.queryj.api;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.QueryJSettings;
@@ -90,7 +91,7 @@ public abstract class AbstractTemplateContext
     /**
      * The package name key.
      */
-    public static final String PACKAGE_NAME = "packageName";
+    public static final String PACKAGE_NAME = Literals.PACKAGE_NAME"packageName";
 
     /**
      * The command.
