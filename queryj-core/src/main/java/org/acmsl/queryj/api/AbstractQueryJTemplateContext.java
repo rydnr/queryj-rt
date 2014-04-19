@@ -162,17 +162,6 @@ public abstract class AbstractQueryJTemplateContext
     }
 
     /**
-     * Retrieves the {@link org.acmsl.queryj.metadata.DecoratorFactory} instance.
-     * @return such instance.
-     */
-    @Override
-    @NotNull
-    public DecoratorFactory getDecoratorFactory()
-    {
-        return getValue(buildDecoratorFactoryKey(), getCommand(), new DecoratorFactoryNotAvailableException());
-    }
-
-    /**
      * Retrieves the {@link DecoratorFactory} instance.
      * @return such instance.
      */
