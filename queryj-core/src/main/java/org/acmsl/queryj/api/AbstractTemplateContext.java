@@ -166,7 +166,7 @@ public abstract class AbstractTemplateContext
      * Specifies the decorator factory.
      * @param decoratorFactory the {@link DecoratorFactory} instance.
      */
-    protected void sSetDecoratorFactory(@NotNull final DecoratorFactory decoratorFactory)
+    protected void setDecoratorFactory(@NotNull final DecoratorFactory decoratorFactory)
     {
         this.m__DecoratorFactory = decoratorFactory;
     }
