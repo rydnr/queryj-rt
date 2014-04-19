@@ -68,6 +68,8 @@ import java.util.List;
 /**
  * Builds all templates to generate sources for each foreign key.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
+ * @since 2.0
+ *
  */
 @SuppressWarnings("unused")
 public abstract class BasePerForeignKeyTemplateBuildHandler
