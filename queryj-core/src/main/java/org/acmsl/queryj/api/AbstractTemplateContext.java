@@ -173,8 +173,8 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Specifies the decorator factory.
-     * @param decoratorFactory the {@link DecoratorFactory} instance.
+     * Retrieves the decorator factory.
+     * @return the {@link DecoratorFactory} instance.
      */
     @NotNull
     public DecoratorFactory getDecoratorFactory()
