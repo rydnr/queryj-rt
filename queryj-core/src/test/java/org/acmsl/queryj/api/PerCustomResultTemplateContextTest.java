@@ -48,6 +48,7 @@ import org.acmsl.queryj.customsql.ResultElement;
 /*
  * Importing Apache Commons Configuration classes.
  */
+import org.acmsl.queryj.metadata.CachingDecoratorFactory;
 import org.apache.commons.configuration.PropertiesConfiguration;
 
 /*
@@ -95,7 +96,7 @@ public class PerCustomResultTemplateContextTest
 
         @NotNull final PerCustomResultTemplateContext instance =
             new PerCustomResultTemplateContext(
-                "packageName", result, properties, command);
+                "packageName", result, properties, CachingDecoratorFactory.getInstance(), command);
 
         Assert.assertEquals(properties, instance.getProperties());
 
