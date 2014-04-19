@@ -177,7 +177,7 @@ public abstract class AbstractTemplateContext
      * @param decoratorFactory the {@link DecoratorFactory} instance.
      */
     @NotNull
-    protected void setDecoratorFactory(@NotNull final DecoratorFactory decoratorFactory)
+    public DecoratorFactory getDecoratorFactory()
     {
         immutableSetDecoratorFactory(decoratorFactory);
     }
