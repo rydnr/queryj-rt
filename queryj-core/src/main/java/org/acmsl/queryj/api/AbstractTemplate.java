@@ -238,7 +238,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
      */
     protected AbstractTemplate(@NotNull final C context, @NotNull final DecoratorFactory decoratorFactory)
     {
-        this(context, Literals.DEFAULT_PLACEHOLDER_PACKAGE);
+        this(context, Literals.DEFAULT_PLACEHOLDER_PACKAGE, decoratorFactory);
     }
 
     /**
