@@ -236,7 +236,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
      * Builds a {@link AbstractTemplate} with given context.
      * @param context the context.
      */
-    protected AbstractTemplate(@NotNull final C context)
+    protected AbstractTemplate(@NotNull final C context, @NotNull final DecoratorFactory decoratorFactory)
     {
         this(context, Literals.DEFAULT_PLACEHOLDER_PACKAGE);
     }
