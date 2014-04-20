@@ -70,6 +70,8 @@ public abstract class AbstractBasePerCustomResultTemplate<C extends PerCustomRes
     /**
      * Builds a <code>AbstractBasePerCustomResultTemplate</code> using
      * given information.
+     * @param context the context.
+     * @param
      */
     @SuppressWarnings("unused")
     public AbstractBasePerCustomResultTemplate(
