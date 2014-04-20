@@ -88,14 +88,9 @@ public class PerRepositoryTemplateContext
 
     /**
      * Creates the template context with required information.
-     * @param metadataManager the {@link MetadataManager} instance.
-     * @param customSqlProvider the {@link CustomSqlProvider} instance.
-     * @param header the header.
-     * @param decoratorFactory the {@link DecoratorFactory} instance.
-     * @param packageName the package name.
-     * @param basePackageName the base package name.
      * @param repositoryName the repository name.
      * @param tableNames the table names.
+     * @param command the command.
      */
     public PerRepositoryTemplateContext(
         @NotNull final String repositoryName,
