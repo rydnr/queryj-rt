@@ -42,6 +42,7 @@ import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
 /*
  * Importing StringTemplate classes.
  */
+import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.stringtemplate.v4.ST;
 
 /*
@@ -68,7 +69,7 @@ public abstract class AbstractBasePerRepositoryTemplate<C extends PerRepositoryT
      * @param context the {@link PerRepositoryTemplateContext} instance.
      * @param
      */
-    public AbstractBasePerRepositoryTemplate(@NotNull final C context)
+    public AbstractBasePerRepositoryTemplate(@NotNull final C context, @NotNull final DecoratorFactory decoratorFactory)
     {
         super(context);
     }
