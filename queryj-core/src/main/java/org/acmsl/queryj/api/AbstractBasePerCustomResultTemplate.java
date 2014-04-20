@@ -71,7 +71,7 @@ public abstract class AbstractBasePerCustomResultTemplate<C extends PerCustomRes
      * Builds a <code>AbstractBasePerCustomResultTemplate</code> using
      * given information.
      * @param context the context.
-     * @param
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
      */
     @SuppressWarnings("unused")
     public AbstractBasePerCustomResultTemplate(
