@@ -195,7 +195,7 @@ public class PerCustomResultTemplateContext
             return false;
         }
         final PerCustomResultTemplateContext other = (PerCustomResultTemplateContext) obj;
-        return new EqualsBuilder().appendSuper(super.equals(obj)).isEquals();
+        return new EqualsBuilder().appendSuper(super.equals(other)).isEquals();
     }
 
     /**
