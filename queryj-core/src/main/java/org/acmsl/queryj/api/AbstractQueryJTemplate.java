@@ -70,7 +70,7 @@ public abstract class AbstractQueryJTemplate<C extends QueryJTemplateContext>
      * Builds a {@link AbstractQueryJTemplate} with given context.
      * @param context the context.
      */
-    protected AbstractQueryJTemplate(@NotNull final C context, @Not final org.acmsl.queryj.metadata.DecoratorFactory decoratorFactory)
+    protected AbstractQueryJTemplate(@NotNull final C context, @NotNull final org.acmsl.queryj.metadata.DecoratorFactory decoratorFactory)
     {
         super(context);
     }
