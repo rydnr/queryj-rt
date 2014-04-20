@@ -117,17 +117,6 @@ public class AbstractQueryJTemplateContextTest
     }
 
     /**
-     * Tests the DecoratorFactory is available (survives refactorings).
-     */
-    @Test
-    public void decoratorFactory_is_available()
-    {
-        @NotNull final AbstractQueryJTemplateContext instance = createContext();
-
-        Assert.assertNotNull(instance.getDecoratorFactory());
-    }
-
-    /**
      * Tests the packageName setting is available (survives refactorings).
      */
     @Test
