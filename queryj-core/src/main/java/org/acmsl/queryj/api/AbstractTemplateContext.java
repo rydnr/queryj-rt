@@ -106,7 +106,6 @@ public abstract class AbstractTemplateContext
     /**
      * Creates an {@link AbstractTemplateContext} with given information.
      * @param pk something unique to the template.
-     * @param decoratorFactory the {@link DecoratorFactory} instance..
      * @param command the {@link org.acmsl.queryj.QueryJCommand} instance.
      */
     protected AbstractTemplateContext(
