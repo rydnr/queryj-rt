@@ -154,6 +154,9 @@ public abstract class AbstractTemplate<C extends TemplateContext>
                 }
             }
 
+            /**
+             * {@inheritDoc}
+             */
             @Override
             public void internalError(@NotNull final STMessage stMessage)
             {
