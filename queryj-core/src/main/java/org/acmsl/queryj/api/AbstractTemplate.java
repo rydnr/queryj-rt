@@ -1045,6 +1045,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
     {
         return "{ \"class\": \"AbstractTemplate" +
                "\", \"templateContext\": \"" + this.m__TemplateContext +
+
                "\", \"placeholderPackage\": \"" + this.m__strPlaceholderPackage + "\" }";
     }
 }
