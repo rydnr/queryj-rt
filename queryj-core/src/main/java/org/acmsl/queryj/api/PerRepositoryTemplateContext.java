@@ -135,7 +135,7 @@ public class PerRepositoryTemplateContext
     @NotNull
     public List<String> getTableNames()
     {
-        return new ArrayList<String>(immutableGetTableNames());
+        return new ArrayList<>(immutableGetTableNames());
     }
 
     /**
