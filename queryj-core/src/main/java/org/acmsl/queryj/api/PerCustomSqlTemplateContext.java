@@ -99,8 +99,7 @@ public class PerCustomSqlTemplateContext
      * @param fileName the file name.
      * @param sql the {@link Sql} instance.
      */
-    public PerCustomSqlTemplateContext(
-        @NotNull final Sql<String> sql, @NotNull final QueryJCommand command)
+    public PerCustomSqlTemplateContext(@NotNull final Sql<String> sql, @NotNull final QueryJCommand command)
     {
         super(sql.getId(), command);
 
