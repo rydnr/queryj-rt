@@ -48,6 +48,7 @@ import org.jetbrains.annotations.Nullable;
 /**
  * Represents any kind of templates.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
+ * @since 2.0
  */
 public interface Template<T extends TemplateContext>
 {
