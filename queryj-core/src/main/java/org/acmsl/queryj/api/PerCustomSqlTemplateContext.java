@@ -167,7 +167,7 @@ public class PerCustomSqlTemplateContext
     public String toString()
     {
         return
-              "{ \"class\": \"" + PerCustomSqlTemplateContext.class.getName() + '"'
+              "{ \"class\": \"" + PerCustomSqlTemplateContext.class.getSimpleName() + '"'
             + ", \"sql\": " + m__Sql + " }";
     }
 }
