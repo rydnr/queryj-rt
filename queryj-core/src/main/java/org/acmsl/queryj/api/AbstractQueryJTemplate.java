@@ -145,7 +145,7 @@ public abstract class AbstractQueryJTemplate<C extends QueryJTemplateContext>
     public String toString()
     {
         return
-              "{ \"class\": \"" + AbstractQueryJTemplate.class.getSimpleName()Name() + '"'
+              "{ \"class\": \"" + AbstractQueryJTemplate.class.getSimpleName() + '"'
             + ", \"cachedProcessedHeader\": \"" + m__strCachedProcessedHeader + '"'
             + Literals.JSON_PARENT_ATTR + super.toString()
             + " }";
