@@ -36,6 +36,7 @@ package org.acmsl.queryj.api;
  * Importing some JetBrains annotations.
  */
 import org.acmsl.queryj.Literals;
+import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -70,7 +71,7 @@ public abstract class AbstractQueryJTemplate<C extends QueryJTemplateContext>
      * Builds a {@link AbstractQueryJTemplate} with given context.
      * @param context the context.
      */
-    protected AbstractQueryJTemplate(@NotNull final C context, @NotNull final org.acmsl.queryj.metadata.DecoratorFactory decoratorFactory)
+    protected AbstractQueryJTemplate(@NotNull final C context, @NotNull final DecoratorFactory decoratorFactory)
     {
         super(context);
     }
