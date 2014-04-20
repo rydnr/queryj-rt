@@ -177,6 +177,10 @@ public abstract class AbstractTemplate<C extends TemplateContext>
                 }
             }
         };
+
+    /**
+     * String literal:
+     */
     public static final String XRUNJDWP_TRANSPORT = "-Xrunjdwp:transport";
 
     /**
