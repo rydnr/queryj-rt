@@ -61,6 +61,7 @@ import java.util.List;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Context used by per-repository templates.
