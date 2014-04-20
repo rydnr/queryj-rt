@@ -97,6 +97,7 @@ public class PerTableTemplateContext
         @NotNull final String packageName,
         @NotNull final String tableName,
         @NotNull final List<Row<String>> staticValues,
+
         @NotNull final QueryJCommand command)
     {
         super(tableName, decoratorFactory, command);
