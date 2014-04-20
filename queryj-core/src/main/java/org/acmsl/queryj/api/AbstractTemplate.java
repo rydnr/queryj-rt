@@ -1044,9 +1044,9 @@ public abstract class AbstractTemplate<C extends TemplateContext>
     public String toString()
     {
         return
-            "{ \"class\": \"AbstractTemplate" +
+              "{ \"class\": \"AbstractTemplate"
             + "\", \"templateContext\": \"" + this.m__TemplateContext
-        + "\", \"DecoratorFactory\": " + this.m__DecoratorFactory
-               "\", \"placeholderPackage\": \"" + this.m__strPlaceholderPackage + "\" }";
+            + "\", \"DecoratorFactory\": " + this.m__DecoratorFactory
+            + "\", \"placeholderPackage\": \"" + this.m__strPlaceholderPackage + "\" }";
     }
 }
