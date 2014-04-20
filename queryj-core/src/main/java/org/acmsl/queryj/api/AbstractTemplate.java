@@ -103,6 +103,8 @@ import java.util.ServiceLoader;
 
 /**
  * Common logic for all templates.
+ * @param <C> the context type.
+ *
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2013/08/15 08/24
