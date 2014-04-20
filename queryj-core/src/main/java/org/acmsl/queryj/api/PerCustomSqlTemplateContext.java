@@ -113,10 +113,10 @@ public class PerCustomSqlTemplateContext
         final boolean disableNotNullAnnotations,
         final boolean disableCheckthreadAnnotations,
         @NotNull final String fileName,
-        @NotNull final Sql<String> sql)
+        @NotNull final Sql<String> sql,
+        @NotNull final QueryJCommand command)
     {
-        // TODO
-        super(sql.getId(), null, null);
+        super(sql.getId(), command);
 
         immutableSetSql(sql);
     }
