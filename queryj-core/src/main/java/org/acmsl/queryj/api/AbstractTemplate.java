@@ -132,6 +132,9 @@ public abstract class AbstractTemplate<C extends TemplateContext>
                 }
             }
 
+            /**
+             * {@inheritDoc}
+             */
             @Override
             public void runTimeError(@NotNull final STMessage stMessage)
             {
