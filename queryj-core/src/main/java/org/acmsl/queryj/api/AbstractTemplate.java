@@ -1038,7 +1038,6 @@ public abstract class AbstractTemplate<C extends TemplateContext>
 
     /**
      * {@inheritDoc}
-     * @return
      */
     @NotNull
     @Override
