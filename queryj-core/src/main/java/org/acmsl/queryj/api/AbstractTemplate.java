@@ -624,6 +624,10 @@ public abstract class AbstractTemplate<C extends TemplateContext>
             traceANTLRClassLoadingIssues();
         }
 
+        /**
+         * {@inheritDoc}
+         */
+        @NotNull
         @Override
         public String toString()
         {
