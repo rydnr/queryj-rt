@@ -56,6 +56,9 @@ public abstract class AbstractQueryJTemplate<C extends QueryJTemplateContext>
                 DefaultThemeConstants,
                 Serializable
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = -8374041537939183395L;
 
     /**
