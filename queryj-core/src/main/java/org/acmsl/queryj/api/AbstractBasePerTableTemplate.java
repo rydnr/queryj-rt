@@ -50,7 +50,7 @@ import org.jetbrains.annotations.NotNull;
  * Contains the elements required to create any template of any type,
  * associated to each table.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
- * @param
+ * @param <C> the template context type.
  */
 public abstract class AbstractBasePerTableTemplate<C extends PerTableTemplateContext>
     extends AbstractQueryJTemplate<C>
