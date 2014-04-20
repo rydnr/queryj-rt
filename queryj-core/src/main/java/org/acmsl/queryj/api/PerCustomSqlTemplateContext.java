@@ -81,7 +81,7 @@ public class PerCustomSqlTemplateContext
     private Sql<String> m__Sql;
 
     /**
-     * Creates a {@link PerCustomSqlTemplateContext} with given information.
+     * Creates a {@code PerCustomSqlTemplateContext} with given information.
      * @param metadataManager the {@link MetadataManager} instance.
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
      * @param header the header.
