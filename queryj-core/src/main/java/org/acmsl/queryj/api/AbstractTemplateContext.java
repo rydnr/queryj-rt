@@ -316,6 +316,7 @@ public abstract class AbstractTemplateContext
      * @return such information.
      */
     @NotNull
+    @Override
     public String getTemplateName()
     {
         return getValue(buildTemplateNameKey(), getCommand(), new TemplateNameNotAvailableException());
