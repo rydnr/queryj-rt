@@ -48,7 +48,6 @@ import org.acmsl.queryj.api.exceptions.RepositoryNameNotAvailableException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.exceptions.CustomSqlProviderNotAvailableException;
 import org.acmsl.queryj.customsql.handlers.CustomSqlProviderRetrievalHandler;
-import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.tools.exceptions.MetadataManagerNotAvailableException;
