@@ -87,7 +87,7 @@ public abstract class AbstractBasePerForeignKeyTemplate<C extends PerForeignKeyT
     public AbstractBasePerForeignKeyTemplate(
         @NotNull final C context, @NotNull final DecoratorFactory decoratorFactory)
     {
-        super(context);
+        super(context, decoratorFactory);
     }
 
     /**
