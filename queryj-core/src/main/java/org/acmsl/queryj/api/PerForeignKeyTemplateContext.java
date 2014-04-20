@@ -84,7 +84,6 @@ public class PerForeignKeyTemplateContext
     public PerForeignKeyTemplateContext(
         @NotNull final String packageName,
         @NotNull final ForeignKey<String> foreignKey,
-        @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final QueryJCommand command)
     {
         super("fk" + foreignKey.getFkName(), command);
