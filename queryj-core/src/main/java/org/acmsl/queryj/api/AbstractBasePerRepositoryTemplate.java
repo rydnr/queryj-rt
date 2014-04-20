@@ -66,6 +66,7 @@ public abstract class AbstractBasePerRepositoryTemplate<C extends PerRepositoryT
      * Builds a <code>PerRepositoryTemplate</code> using given
      * information.
      * @param context the {@link PerRepositoryTemplateContext} instance.
+     * @param
      */
     public AbstractBasePerRepositoryTemplate(@NotNull final C context)
     {
