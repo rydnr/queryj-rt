@@ -1036,6 +1036,10 @@ public abstract class AbstractTemplate<C extends TemplateContext>
         @NotNull final ST template,
         @NotNull final Throwable actualException);
 
+    /**
+     * {@inheritDoc}
+     * @return
+     */
     @NotNull
     @Override
     public String toString()
