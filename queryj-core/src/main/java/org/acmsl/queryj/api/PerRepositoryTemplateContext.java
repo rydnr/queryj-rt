@@ -120,7 +120,7 @@ public class PerRepositoryTemplateContext
         @NotNull final String fileName)
     {
         // TODO
-        super(null, null);
+        super(, command);
 
         immutableSetTableNames(tableNames);
     }
