@@ -38,6 +38,7 @@ import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
 /*
  * Importing StringTemplate classes.
  */
+import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.stringtemplate.v4.ST;
 
 /*
@@ -58,8 +59,10 @@ public abstract class AbstractBasePerTableTemplate<C extends PerTableTemplateCon
      * Builds an <code>AbstractBasePerTableTemplate</code> using given
      * information.
      * @param context the {@link PerTableTemplateContext} instance.
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
      */
-    protected AbstractBasePerTableTemplate(@NotNull final C context)
+    protected AbstractBasePerTableTemplate(
+        @NotNull final C context, @NotNull final DecoratorFactory decoratorFactory)
     {
         super(context);
     }
