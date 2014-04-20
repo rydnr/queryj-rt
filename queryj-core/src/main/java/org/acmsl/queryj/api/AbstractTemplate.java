@@ -62,6 +62,7 @@ import org.acmsl.commons.utils.ClassLoaderUtils;
 /*
  * Importing ANTLR classes.
  */
+import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.antlr.v4.parse.ANTLRParser;
 
 /*
@@ -335,6 +336,35 @@ public abstract class AbstractTemplate<C extends TemplateContext>
     public boolean getDebugMode()
     {
         return this.m__bDebug;
+    }
+
+    /**
+     * Specifies the decorator factory.
+     * @param decoratorFactory the {@link org.acmsl.queryj.metadata.DecoratorFactory} instance.
+     */
+    protected final void immutableSetDecoratorFactory(@NotNull final DecoratorFactory decoratorFactory)
+    {
+        this.m__DecoratorFactory = decoratorFactory;
+    }
+
+    /**
+     * Specifies the decorator factory.
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
+     */
+    @SuppressWarnings("unused")
+    protected void setDecoratorFactory(@NotNull final DecoratorFactory decoratorFactory)
+    {
+        immutableSetDecoratorFactory(decoratorFactory);
+    }
+
+    /**
+     * Retrieves the decorator factory.
+     * @return the {@link DecoratorFactory} instance.
+     */
+    @NotNull
+    public DecoratorFactory getDecoratorFactory()
+    {
+        return this.m__DecoratorFactory;
     }
 
     /**
