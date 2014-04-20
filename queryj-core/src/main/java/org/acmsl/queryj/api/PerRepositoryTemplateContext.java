@@ -187,6 +187,6 @@ public class PerRepositoryTemplateContext
               "{ \"class\": \"" + PerRepositoryTemplateContext.class.getSimpleName() + '"'
             + ", \"tableNames'\": [" + m__lTableNames + "], "
             + ", \"parent\": " + super.toString()
-            + ", \"package\": \"org.acmsl.queryj.api'}';
+            + ", \"package\": \"org.acmsl.queryj.api\" }";
     }
 }
