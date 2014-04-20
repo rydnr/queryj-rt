@@ -53,6 +53,7 @@ import org.jetbrains.annotations.NotNull;
 /**
  * Logic-less container for all templates to be processed once per repository.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
+ * @param <C> the template context.
  */
 public abstract class AbstractBasePerRepositoryTemplate<C extends PerRepositoryTemplateContext>
     extends AbstractQueryJTemplate<C>
