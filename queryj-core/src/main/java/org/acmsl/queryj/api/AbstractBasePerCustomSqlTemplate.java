@@ -72,6 +72,7 @@ public abstract class AbstractBasePerCustomSqlTemplate<C extends PerCustomSqlTem
      * Builds a <code>AbstractBasePerCustomSqlTemplate</code> using
      * given context.
      * @param context the {@link PerCustomSqlTemplateContext} instance.
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
      */
     @SuppressWarnings("unused")
     public AbstractBasePerCustomSqlTemplate(@NotNull final C context, @NotNull final DecoratorFactory decoratorFactory)
