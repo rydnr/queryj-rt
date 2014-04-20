@@ -69,9 +69,10 @@ public abstract class AbstractBasePerRepositoryTemplate<C extends PerRepositoryT
      * @param context the {@link PerRepositoryTemplateContext} instance.
      * @param
      */
-    public AbstractBasePerRepositoryTemplate(@NotNull final C context, @NotNull final DecoratorFactory decoratorFactory)
+    public AbstractBasePerRepositoryTemplate(
+        @NotNull final C context, @NotNull final DecoratorFactory decoratorFactory)
     {
-        super(context);
+        super(context, decoratorFactory);
     }
 
     /**
