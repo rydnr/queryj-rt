@@ -29,7 +29,7 @@
 package org.acmsl.queryj.api;
 
 /*
- * Importing project classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.api.exceptions.InvalidPerTableTemplateException;
