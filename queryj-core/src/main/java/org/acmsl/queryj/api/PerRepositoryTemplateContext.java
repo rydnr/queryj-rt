@@ -119,7 +119,6 @@ public class PerRepositoryTemplateContext
         final boolean disableCheckthreadAnnotations,
         @NotNull final String fileName)
     {
-        // TODO
         super(repositoryName, command);
 
         immutableSetTableNames(tableNames);
