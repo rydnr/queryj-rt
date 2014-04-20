@@ -116,7 +116,7 @@ public class PerCustomSqlTemplateContext
         @NotNull final Sql<String> sql)
     {
         // TODO
-        super(null, null, null);
+        super(sql.getId(), null, null);
 
         immutableSetSql(sql);
     }
