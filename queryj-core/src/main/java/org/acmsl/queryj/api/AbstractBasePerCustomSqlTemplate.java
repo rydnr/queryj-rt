@@ -41,11 +41,11 @@ import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.api.exceptions.InvalidPerCustomSqlTemplateException;
 import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
 import org.acmsl.queryj.customsql.Sql;
+import org.acmsl.queryj.metadata.DecoratorFactory;
 
 /*
  * Importing StringTemplate classes.
  */
-import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.stringtemplate.v4.ST;
 
 /*
