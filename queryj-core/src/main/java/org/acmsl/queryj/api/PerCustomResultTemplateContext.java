@@ -95,7 +95,6 @@ public class PerCustomResultTemplateContext
         @NotNull final String packageName,
         @NotNull final Result<String> result,
         @NotNull final List<Property<String>> properties,
-        @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final QueryJCommand command)
     {
         super(result.getId(), command);
