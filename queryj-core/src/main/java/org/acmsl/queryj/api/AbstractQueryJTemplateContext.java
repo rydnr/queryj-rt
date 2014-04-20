@@ -95,7 +95,6 @@ public abstract class AbstractQueryJTemplateContext
      */
     protected AbstractQueryJTemplateContext(
         @NotNull final String pk,
-        @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final QueryJCommand command)
     {
         super(pk, decoratorFactory, command);
