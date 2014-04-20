@@ -104,8 +104,6 @@ public class PerRepositoryTemplateContext
      */
     public PerRepositoryTemplateContext(
         @NotNull final String repositoryName,
-        final boolean implementMarkerInterfaces,
-        final boolean jmx,
         @NotNull final List<String> tableNames,
         @NotNull final String jndiLocation,
         final boolean disableGenerationTimestamps,
