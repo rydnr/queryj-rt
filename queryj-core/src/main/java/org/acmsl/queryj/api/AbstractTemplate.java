@@ -1052,7 +1052,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
             + ", \"templateContext\": " + this.m__TemplateContext
             + ", \"decoratorFactory\": " + this.m__DecoratorFactory
             + ", \"placeholderPackage\": \"" + this.m__strPlaceholderPackage + '"'
-            + ", \"debug\": \"" + this.m__strPlaceholderPackage + '"'
+            + ", \"debug\": " + this.m__strPlaceholderPackage + '"'
             + ", \"package\": \"org.acmsl.queryj.api\" }";
     }
 }
