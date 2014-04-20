@@ -95,13 +95,7 @@ public class PerRepositoryTemplateContext
      * @param packageName the package name.
      * @param basePackageName the base package name.
      * @param repositoryName the repository name.
-     * @param implementMarkerInterfaces whether to implement marker interfaces.
-     * @param jmx whether to include JMX support.
      * @param tableNames the table names.
-     * @param jndiLocation the JNDI location of the data source.
-     * @param disableGenerationTimestamps whether to disable generation timestamps.
-     * @param disableNotNullAnnotations whether to disable NotNull annotations.
-     * @param disableCheckthreadAnnotations whether to disable checkthread.org annotations or not.
      */
     public PerRepositoryTemplateContext(
         @NotNull final String repositoryName,
