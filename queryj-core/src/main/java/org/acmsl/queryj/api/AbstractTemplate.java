@@ -187,6 +187,10 @@ public abstract class AbstractTemplate<C extends TemplateContext>
      * Whether we are in debug mode.
      */
     private boolean m__bDebug;
+
+    /**
+     * The decorator factory.
+     */
     private DecoratorFactory m__DecoratorFactory;
 
     /**
