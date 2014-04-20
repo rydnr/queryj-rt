@@ -1047,6 +1047,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
               "{ \"class\": \"AbstractTemplate" + '"'
             + ", \"templateContext\": " + this.m__TemplateContext
             + ", \"decoratorFactory\": " + this.m__DecoratorFactory
-            + ", \"placeholderPackage\": \"" + this.m__strPlaceholderPackage + "\" }";
+            + ", \"placeholderPackage\": \"" + this.m__strPlaceholderPackage + '"'
+        + "\" }";
     }
 }
