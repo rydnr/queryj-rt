@@ -49,7 +49,6 @@ import org.acmsl.queryj.customsql.Result;
 /*
  * Importing some Apache Commons Lang builder classes.
  */
-import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 
