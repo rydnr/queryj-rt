@@ -104,11 +104,6 @@ public abstract class AbstractTemplateContext
     private String m__Pk;
 
     /**
-     * The decorator factory.
-     */
-    private DecoratorFactory m__DecoratorFactory;
-
-    /**
      * Creates an {@link AbstractTemplateContext} with given information.
      * @param pk something unique to the template.
      * @param decoratorFactory the {@link DecoratorFactory} instance..
