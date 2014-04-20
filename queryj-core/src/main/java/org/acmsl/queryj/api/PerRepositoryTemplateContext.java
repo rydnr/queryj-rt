@@ -183,7 +183,8 @@ public class PerRepositoryTemplateContext
     @Override
     public String toString()
     {
-        return "{ 'class': 'PerRepositoryTemplateContext'," +
+        return
+            "{ \"class\": \"PerRepositoryTemplateContext'," +
                " 'tableNames': [" + m__lTableNames + "], " +
                " parent: " + super.toString() +
                '}';
