@@ -245,6 +245,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
      * Builds a {@link AbstractTemplate} with given context.
      * @param context the context.
      * @param placeholderPackage the package of the placeholder classes.
+     * @param decoratorFactory the {@link DecoratorFactory} instance..
      */
     protected AbstractTemplate(@NotNull final C context, @NotNull final String placeholderPackage)
     {
