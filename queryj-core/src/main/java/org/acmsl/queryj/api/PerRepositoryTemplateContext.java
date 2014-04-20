@@ -103,12 +103,6 @@ public class PerRepositoryTemplateContext
      * @param disableCheckthreadAnnotations whether to disable checkthread.org annotations or not.
      */
     public PerRepositoryTemplateContext(
-        @NotNull final MetadataManager metadataManager,
-        @NotNull final CustomSqlProvider customSqlProvider,
-        @Nullable final String header,
-        @NotNull final DecoratorFactory decoratorFactory,
-        @NotNull final String packageName,
-        @NotNull final String basePackageName,
         @NotNull final String repositoryName,
         final boolean implementMarkerInterfaces,
         final boolean jmx,
