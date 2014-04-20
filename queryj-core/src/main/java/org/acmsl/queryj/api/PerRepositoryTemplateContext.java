@@ -38,6 +38,7 @@ package org.acmsl.queryj.api;
 /*
  * Importing project classes.
  */
+import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.MetadataManager;
@@ -105,7 +106,7 @@ public class PerRepositoryTemplateContext
     public PerRepositoryTemplateContext(
         @NotNull final String repositoryName,
         @NotNull final List<String> tableNames,
-)
+        @NotNull final QueryJCommand command)
     {
         super(repositoryName, command);
 
