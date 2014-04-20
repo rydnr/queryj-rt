@@ -41,6 +41,7 @@ import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
 /*
  * Importing some JetBrains annotations.
  */
+import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -63,6 +64,13 @@ public interface Template<T extends TemplateContext>
      */
     @NotNull
     String getTemplateName();
+
+    /**
+     * Retrieves the {@link org.acmsl.queryj.metadata.DecoratorFactory} instance.
+     * @return such instance.
+     */
+    @NotNull
+    DecoratorFactory getDecoratorFactory();
 
     /**
      * Generates the output source code.
