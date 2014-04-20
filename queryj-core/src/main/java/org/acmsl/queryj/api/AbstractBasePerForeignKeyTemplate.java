@@ -39,6 +39,7 @@ package org.acmsl.queryj.api;
 import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.api.exceptions.InvalidPerForeignKeyTemplateException;
 import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
+import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.vo.ForeignKey;
 
 /*
@@ -82,7 +83,7 @@ public abstract class AbstractBasePerForeignKeyTemplate<C extends PerForeignKeyT
      * @param context the {@link PerForeignKeyTemplateContext} instance.
      */
     @SuppressWarnings("unused")
-    public AbstractBasePerForeignKeyTemplate(@NotNull final C context)
+    public AbstractBasePerForeignKeyTemplate(@NotNull final C context, @NotNull final DecoratorFactory decoratorFactory)
     {
         super(context);
     }
