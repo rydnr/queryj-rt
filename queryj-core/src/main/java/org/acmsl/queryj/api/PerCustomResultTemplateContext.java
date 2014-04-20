@@ -88,7 +88,6 @@ public class PerCustomResultTemplateContext
      * @param packageName the package name.
      * @param result the {@link Result} instance.
      * @param properties the properties.
-     * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @param command the command.
      */
     public PerCustomResultTemplateContext(
