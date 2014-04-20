@@ -187,6 +187,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
      * Whether we are in debug mode.
      */
     private boolean m__bDebug;
+    private DecoratorFactory m__DecoratorFactory;
 
     /**
      * A singleton container to avoid the double-checking lock idiom.
