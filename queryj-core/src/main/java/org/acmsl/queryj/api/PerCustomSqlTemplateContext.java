@@ -169,6 +169,6 @@ public class PerCustomSqlTemplateContext
         return
               "{ \"class\": \"" + PerCustomSqlTemplateContext.class.getSimpleName() + '"'
             + ", \"sql\": " + m__Sql
-            + ", \"package\": \"org.acmsl.queryj.api\"" }";
+            + ", \"package\": \"org.acmsl.queryj.api\" }";
     }
 }
