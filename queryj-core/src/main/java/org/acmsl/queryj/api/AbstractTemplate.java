@@ -247,7 +247,8 @@ public abstract class AbstractTemplate<C extends TemplateContext>
      * @param placeholderPackage the package of the placeholder classes.
      * @param decoratorFactory the {@link DecoratorFactory} instance..
      */
-    protected AbstractTemplate(@NotNull final C context, @NotNull final String placeholderPackage)
+    protected AbstractTemplate(
+        @NotNull final C context, @NotNull final String placeholderPackage)
     {
         immutableSetTemplateContext(context);
         immutableSetPlaceholderPackage(placeholderPackage);
