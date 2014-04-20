@@ -250,7 +250,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
     protected AbstractTemplate(
         @NotNull final C context,
         @NotNull final String placeholderPackage,
-        )
+        @NotNull final DecoratorFactory decoratorFactory)
     {
         immutableSetTemplateContext(context);
         immutableSetPlaceholderPackage(placeholderPackage);
