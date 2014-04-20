@@ -208,7 +208,7 @@ public class PerCustomResultTemplateContext
               "{ \"class\": \"" + PerCustomResultTemplateContext.class.getSimpleName() + '"'
             + ", \"result\": " + getResult()
             +", \"properties\": " + getProperties()
-            + ", \"package\": \"org.acmsl.queryj.api\""
+            + ", \"package\": \"org.acmsl.queryj.api\"
             + " }";
     }
 }
