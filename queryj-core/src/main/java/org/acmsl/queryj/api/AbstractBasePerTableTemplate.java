@@ -105,13 +105,6 @@ public abstract class AbstractBasePerTableTemplate<C extends PerTableTemplateCon
     }
 
     /**
-     * Retrieves the template name.
-     * @return such information.
-     */
-    @NotNull
-    public abstract String getTemplateName();
-
-    /**
      * Builds a context-specific exception.
      * @param context the context.
      * @param template the {@link ST} instance.
