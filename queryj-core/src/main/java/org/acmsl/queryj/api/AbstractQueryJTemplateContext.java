@@ -90,7 +90,6 @@ public abstract class AbstractQueryJTemplateContext
     /**
      * Creates an {@link AbstractTemplateContext} with given information.
      * @param pk the pk.
-     * @param decoratorFactory the {@link DecoratorFactory}.
      * @param command the {@link org.acmsl.queryj.QueryJCommand} instance.
      */
     protected AbstractQueryJTemplateContext(
