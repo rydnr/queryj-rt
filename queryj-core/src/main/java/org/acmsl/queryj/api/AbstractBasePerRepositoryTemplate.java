@@ -38,11 +38,11 @@ package org.acmsl.queryj.api;
  */
 import org.acmsl.queryj.api.exceptions.InvalidPerRepositoryTemplateException;
 import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
+import org.acmsl.queryj.metadata.DecoratorFactory;
 
 /*
  * Importing StringTemplate classes.
  */
-import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.stringtemplate.v4.ST;
 
 /*
