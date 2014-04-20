@@ -147,7 +147,9 @@ public class PerRepositoryTemplateContext
         return getRepositoryName();
     }
 
-
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public int hashCode()
     {
