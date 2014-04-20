@@ -121,6 +121,9 @@ public abstract class AbstractTemplate<C extends TemplateContext>
         DEFAULT_ST_ERROR_LISTENER =
         new STErrorListener()
         {
+            /**
+             * {@inheritDoc}
+             */
             @Override
             public void compileTimeError(@NotNull final STMessage stMessage)
             {
