@@ -185,7 +185,7 @@ public class PerRepositoryTemplateContext
     {
         return
               "{ \"class\": \"" + PerRepositoryTemplateContext.class.getSimpleName() + '"'
-            + ", \"tableNames': [" + m__lTableNames + "], "
+            + ", \"tableNames'\": [" + m__lTableNames + "], "
             + ", \"parent\": " + super.toString() +
                '}';
     }
