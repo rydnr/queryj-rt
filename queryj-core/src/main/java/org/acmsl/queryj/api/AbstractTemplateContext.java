@@ -147,35 +147,6 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Specifies the decorator factory.
-     * @param decoratorFactory the {@link DecoratorFactory} instance.
-     */
-    protected final void immutableSetDecoratorFactory(@NotNull final DecoratorFactory decoratorFactory)
-    {
-        this.m__DecoratorFactory = decoratorFactory;
-    }
-
-    /**
-     * Specifies the decorator factory.
-     * @param decoratorFactory the {@link DecoratorFactory} instance.
-     */
-    @SuppressWarnings("unused")
-    protected void setDecoratorFactory(@NotNull final DecoratorFactory decoratorFactory)
-    {
-        immutableSetDecoratorFactory(decoratorFactory);
-    }
-
-    /**
-     * Retrieves the decorator factory.
-     * @return the {@link DecoratorFactory} instance.
-     */
-    @NotNull
-    public DecoratorFactory getDecoratorFactory()
-    {
-        return this.m__DecoratorFactory;
-    }
-
-    /**
      * Specifies the command.
      * @param command the command.
      */
