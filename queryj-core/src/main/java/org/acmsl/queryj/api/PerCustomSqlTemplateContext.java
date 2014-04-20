@@ -168,6 +168,7 @@ public class PerCustomSqlTemplateContext
     {
         return
               "{ \"class\": \"" + PerCustomSqlTemplateContext.class.getSimpleName() + '"'
-            + ", \"sql\": " + m__Sql + " }";
+            + ", \"sql\": " + m__Sql
+            + ", \"package\"+ " }";
     }
 }
