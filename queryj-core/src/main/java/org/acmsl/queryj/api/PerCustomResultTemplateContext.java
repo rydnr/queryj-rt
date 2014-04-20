@@ -98,7 +98,7 @@ public class PerCustomResultTemplateContext
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final QueryJCommand command)
     {
-        super(result.getId(), decoratorFactory, command);
+        super(result.getId(), command);
 
         immutableSetValue(buildPackageNameKey(), packageName, command);
         immutableSetValue(buildResultKey(), result, command);
