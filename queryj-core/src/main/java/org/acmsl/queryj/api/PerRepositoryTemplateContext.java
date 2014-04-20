@@ -184,9 +184,9 @@ public class PerRepositoryTemplateContext
     public String toString()
     {
         return
-            "{ \"class\": \"PerRepositoryTemplateContext'," +
-               " 'tableNames': [" + m__lTableNames + "], " +
-               " parent: " + super.toString() +
+            "{ \"class\": \"" + PerRepositoryTemplateContext.class.getSimpleName() + '"'
+            + " 'tableNames': [" + m__lTableNames + "], "
+            + " parent: " + super.toString() +
                '}';
     }
 }
