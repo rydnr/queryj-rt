@@ -137,6 +137,9 @@ public abstract class AbstractQueryJTemplate<C extends QueryJTemplateContext>
         return result;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     @NotNull
     public String toString()
