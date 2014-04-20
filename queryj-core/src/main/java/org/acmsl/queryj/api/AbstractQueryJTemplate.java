@@ -50,6 +50,7 @@ import java.util.Map;
  * Represents generic templates.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  * @since 2.0
+ * @param <C> the template context.
  */
 public abstract class AbstractQueryJTemplate<C extends QueryJTemplateContext>
     extends AbstractTemplate<C>
