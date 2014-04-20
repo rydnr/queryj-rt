@@ -100,20 +100,6 @@ public class PerCustomSqlTemplateContext
      * @param sql the {@link Sql} instance.
      */
     public PerCustomSqlTemplateContext(
-        @NotNull final MetadataManager metadataManager,
-        @NotNull final CustomSqlProvider customSqlProvider,
-        @Nullable final String header,
-        @NotNull final DecoratorFactory decoratorFactory,
-        @NotNull final String packageName,
-        @NotNull final String basePackageName,
-        @NotNull final String repositoryName,
-        final boolean implementMarkerInterfaces,
-        final boolean jmx,
-        @NotNull final String jndiLocation,
-        final boolean disableGenerationTimestamps,
-        final boolean disableNotNullAnnotations,
-        final boolean disableCheckthreadAnnotations,
-        @NotNull final String fileName,
         @NotNull final Sql<String> sql,
         @NotNull final QueryJCommand command)
     {
