@@ -108,8 +108,7 @@ public abstract class AbstractTemplateContext
      * @param pk something unique to the template.
      * @param command the {@link org.acmsl.queryj.QueryJCommand} instance.
      */
-    protected AbstractTemplateContext(
-        @NotNull final String pk, @NotNull final QueryJCommand command)
+    protected AbstractTemplateContext(@NotNull final String pk, @NotNull final QueryJCommand command)
     {
         immutableSetPk(pk);
         immutableSetCommand(command);
