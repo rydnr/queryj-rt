@@ -57,6 +57,7 @@ import org.jetbrains.annotations.Nullable;
 /**
  * Logic-less container for all templates to be processed once per custom SQL.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
+ * @param <C> the template context type.
  */
 @SuppressWarnings("unused")
 public abstract class AbstractBasePerCustomSqlTemplate<C extends PerCustomSqlTemplateContext>
