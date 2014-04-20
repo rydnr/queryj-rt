@@ -78,7 +78,6 @@ public class PerForeignKeyTemplateContext
      * Creates a {@link PerForeignKeyTemplateContext} with given information.
      * @param packageName the package name.
      * @param foreignKey the {@link ForeignKey} instance.
-     * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @param command the {@link QueryJCommand} instance.
      */
     public PerForeignKeyTemplateContext(
