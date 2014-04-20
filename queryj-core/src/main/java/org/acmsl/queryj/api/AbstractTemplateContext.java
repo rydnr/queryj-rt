@@ -111,11 +111,9 @@ public abstract class AbstractTemplateContext
      */
     protected AbstractTemplateContext(
         @NotNull final String pk,
-        @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final QueryJCommand command)
     {
         immutableSetPk(pk);
-        immutableSetDecoratorFactory(decoratorFactory);
         immutableSetCommand(command);
     }
 
