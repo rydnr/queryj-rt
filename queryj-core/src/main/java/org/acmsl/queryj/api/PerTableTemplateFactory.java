@@ -33,7 +33,7 @@
 package org.acmsl.queryj.api;
 
 /*
- * Importing some project classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.metadata.DecoratorFactory;
