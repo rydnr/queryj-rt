@@ -176,6 +176,9 @@ public class PerRepositoryTemplateContext
             .isEquals();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public String toString()
