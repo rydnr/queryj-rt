@@ -45,6 +45,7 @@ import org.acmsl.queryj.customsql.Result;
 /*
  * Importing StringTemplate classes.
  */
+import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.stringtemplate.v4.ST;
 
 /*
@@ -71,7 +72,7 @@ public abstract class AbstractBasePerCustomResultTemplate<C extends PerCustomRes
      * given information.
      */
     @SuppressWarnings("unused")
-    public AbstractBasePerCustomResultTemplate(@NotNull final C context)
+    public AbstractBasePerCustomResultTemplate(@NotNull final C context, @NotNull final DecoratorFactory decoratorFactory)
     {
         super(context);
     }
