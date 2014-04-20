@@ -111,7 +111,6 @@ public abstract class AbstractBasePerTableTemplate<C extends PerTableTemplateCon
     @NotNull
     public abstract String getTemplateName();
 
-
     /**
      * Builds a context-specific exception.
      * @param context the context.
