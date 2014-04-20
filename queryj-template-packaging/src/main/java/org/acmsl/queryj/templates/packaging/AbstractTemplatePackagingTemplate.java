@@ -41,6 +41,7 @@ package org.acmsl.queryj.templates.packaging;
 import org.acmsl.queryj.api.AbstractTemplate;
 import org.acmsl.queryj.api.STTemplate;
 import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
+import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.templates.packaging.exceptions.InvalidTemplatePackagingTemplateException;
 
 /*
@@ -82,7 +83,7 @@ public abstract class AbstractTemplatePackagingTemplate<C extends TemplatePackag
      * Creates a new instance.
      * @param context the {@link TemplatePackagingContext context}.
      */
-    protected AbstractTemplatePackagingTemplate(@NotNull final C context)
+    protected AbstractTemplatePackagingTemplate(@NotNull final C context, @NotNull final DecoratorFactory decoratorFactory)
     {
         super(context, "org.acmsl.queryj.templates.packaging.placeholders");
     }
