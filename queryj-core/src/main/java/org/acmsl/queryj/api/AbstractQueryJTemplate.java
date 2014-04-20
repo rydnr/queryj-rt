@@ -148,7 +148,7 @@ public abstract class AbstractQueryJTemplate<C extends QueryJTemplateContext>
               "{ \"class\": \"" + AbstractQueryJTemplate.class.getSimpleName() + '"'
             + ", \"cachedProcessedHeader\": \"" + m__strCachedProcessedHeader + '"'
             + Literals.JSON_PARENT_ATTR + super.toString()
-            + ", \"package\": \"org.acmsl.queryj.api\""
+            + ", \"package\": \"org.acmsl.queryj.api\"
             + " }";
     }
 }
