@@ -105,11 +105,7 @@ public class PerRepositoryTemplateContext
     public PerRepositoryTemplateContext(
         @NotNull final String repositoryName,
         @NotNull final List<String> tableNames,
-        @NotNull final String jndiLocation,
-        final boolean disableGenerationTimestamps,
-        final boolean disableNotNullAnnotations,
-        final boolean disableCheckthreadAnnotations,
-        @NotNull final String fileName)
+)
     {
         super(repositoryName, command);
 
