@@ -1043,8 +1043,9 @@ public abstract class AbstractTemplate<C extends TemplateContext>
     @Override
     public String toString()
     {
-        return "{ \"class\": \"AbstractTemplate" +
-               "\", \"templateContext\": \"" + this.m__TemplateContext +
+        return
+            "{ \"class\": \"AbstractTemplate" +
+            + "\", \"templateContext\": \"" + this.m__TemplateContext
         + "\", \"DecoratorFactory\": " + this.m__DecoratorFactory
                "\", \"placeholderPackage\": \"" + this.m__strPlaceholderPackage + "\" }";
     }
