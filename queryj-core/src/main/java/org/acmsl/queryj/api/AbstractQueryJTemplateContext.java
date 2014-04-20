@@ -88,7 +88,7 @@ public abstract class AbstractQueryJTemplateContext
     private static final long serialVersionUID = -3671360539593632338L;
 
     /**
-     * Creates an {@link AbstractTemplateContext} with given information.
+     * Creates an {@code AbstractTemplateContext} with given information.
      * @param pk the pk.
      * @param command the {@link org.acmsl.queryj.QueryJCommand} instance.
      */
