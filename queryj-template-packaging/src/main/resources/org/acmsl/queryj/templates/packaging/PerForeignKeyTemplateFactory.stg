@@ -160,9 +160,7 @@ public class <C.class_name>
         @NotNull final QueryJCommand command)
     {
         @NotNull final <def.type.capitalized>TemplateContext t_Context =
-            new <def.type.capitalized>TemplateContext(
-                foreignKey,
-                command);
+            new <def.type.capitalized>TemplateContext(foreignKey, command);
 
         return new <def.name.noExtension>Template(t_Context);
     }
