@@ -209,18 +209,18 @@ public abstract class BasePerCustomResultTemplateBuildHandler
                         metadataManager,
                         metadataManager.getEngine(),
                         parameters),
-                    */
-                    if  (   (t_Template != null)
-                         && (!t_lTemplates.contains(t_Template)))
-                    {
-                        t_lTemplates.add(t_Template);
-                    }
                 }
                 catch  (@NotNull final QueryJException queryjException)
                 {
                     throw
                         new CannotCreateCustomResultTemplateException(t_ResultElement, queryjException);
                 }
+                    */
+                    if  (   (t_Template != null)
+                         && (!t_lTemplates.contains(t_Template)))
+                    {
+                        t_lTemplates.add(t_Template);
+                    }
             }
         }
 
