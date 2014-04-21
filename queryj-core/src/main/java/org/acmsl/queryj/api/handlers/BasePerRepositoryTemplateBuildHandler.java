@@ -201,8 +201,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
         return
             templateFactory.createTemplate(
                 repository,
-                packageName,
-                decoratorFactory,
                 parameters);
     }
 
