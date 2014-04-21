@@ -86,7 +86,7 @@ public class ForeignKeyTestHelper
      * @param fkInfo the Cucumber table.
      * @param foreignKeys the list to fill with the foreign keys.
      */
-    public void defineInputForeignKeys(
+    public void defineInputForeignKey(
         @NotNull final DataTable fkInfo, @NotNull final List<ForeignKey<String>> foreignKeys)
     {
         @NotNull final List<Map<String, String>> fkEntries = fkInfo.asMaps();
