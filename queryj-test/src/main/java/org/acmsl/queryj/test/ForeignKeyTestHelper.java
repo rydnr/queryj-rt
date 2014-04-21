@@ -161,6 +161,8 @@ public class ForeignKeyTestHelper
                         -1,
                         "",
                         sourceTable,
+                        "",
+                        0,
                         )
                 )
             }
