@@ -36,7 +36,6 @@ package org.acmsl.queryj.api;
  * Importing some JetBrains annotations.
  */
 import org.acmsl.queryj.Literals;
-import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
