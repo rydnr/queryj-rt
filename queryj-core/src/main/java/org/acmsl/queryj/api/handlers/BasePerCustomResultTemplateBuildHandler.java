@@ -210,6 +210,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
                         metadataManager,
                         metadataManager.getEngine(),
                         parameters),
+                    */
                     if  (   (t_Template != null)
                          && (!t_lTemplates.contains(t_Template)))
                     {
