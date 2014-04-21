@@ -64,7 +64,6 @@ public interface PerForeignKeyTemplateFactory
      * Creates a per-<i>foreign key</i> template.
      * @param packageName the package name.
      * @param foreignKey the foreign key.
-     * @param decoratorFactory the {@link DecoratorFactory}.
      * @param command the {@link QueryJCommand} instance.
      * @return the new template.
      */
