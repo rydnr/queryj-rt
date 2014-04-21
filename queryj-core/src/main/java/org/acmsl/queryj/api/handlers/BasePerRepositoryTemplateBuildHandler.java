@@ -124,9 +124,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
             parameters,
             retrieveCustomSqlProvider(parameters),
             retrieveTemplateFactory(),
-            retrievePackage(t_MetadataManager.getEngine(), projectPackage, PackageUtils.getInstance()),
-            retrieveTableRepositoryName(parameters),
-            CachingDecoratorFactory.getInstance());
+            retrieveTableRepositoryName(parameters));
 
         return false;
     }
