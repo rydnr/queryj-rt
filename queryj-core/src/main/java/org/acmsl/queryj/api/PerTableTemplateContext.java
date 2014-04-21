@@ -85,7 +85,7 @@ public class PerTableTemplateContext
     private static final long serialVersionUID = -7439946925532182308L;
 
     /**
-     * Creates a {@link PerTableTemplateContext} with given information.
+     * Creates a {@code PerTableTemplateContext} with given information.
      * @param fileName the file name.
      * @param packageName the package name.
      * @param tableName the table name.
