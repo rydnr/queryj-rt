@@ -64,7 +64,7 @@ public abstract class AbstractBasePerTableTemplate<C extends PerTableTemplateCon
      */
     protected AbstractBasePerTableTemplate(@NotNull final C context)
     {
-        super(context, decoratorFactory);
+        super(context);
     }
 
     /**
