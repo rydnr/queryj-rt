@@ -319,6 +319,7 @@ public class PerForeignKeyTemplatesTest
      * @param templateName the template.
      * @param engine the engine name.
      * @param foreignKeys the foreign keys.
+     * @param tables the tables.
      * @param outputFiles the output files.
      */
     @SuppressWarnings("unchecked")
