@@ -72,6 +72,5 @@ public interface PerForeignKeyTemplateFactory
     T createTemplate(
         @NotNull final ForeignKey<String> foreignKey,
         @NotNull final String packageName,
-        @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final QueryJCommand command);
 }
