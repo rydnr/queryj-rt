@@ -225,7 +225,7 @@ public class PerForeignKeyTemplatesTest
      */
     @SuppressWarnings("unused")
     @Given("^the referred tables are:$")
-    public void defineInputForeignKeys(@NotNull final DataTable tableInfo)
+    public void defineInputTables(@NotNull final DataTable tableInfo)
     {
         defineInputTables(tableInfo, getTables(), TableTestHelper.getInstance());
     }
