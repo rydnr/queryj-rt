@@ -151,18 +151,18 @@ public class ForeignKeyTestHelper
 
         if (sourceTable != null)
         {
-        @NotNull final StringTokenizer tokenizer = new StringTokenizer(sourceColumns, ",");
+            @NotNull final StringTokenizer tokenizer = new StringTokenizer(sourceColumns, ",");
 
-        while (tokenizer.hasMoreTokens())
-        {
-            result.add(
-                new AttributeIncompleteValueObject(
-                    tokenizer.nextToken(),
-                    -1,
-                    "",
-                    )
-            )
-        }
+            while (tokenizer.hasMoreTokens())
+            {
+                result.add(
+                    new AttributeIncompleteValueObject(
+                        tokenizer.nextToken(),
+                        -1,
+                        "",
+                        )
+                )
+            }
 
         return result;
     }
