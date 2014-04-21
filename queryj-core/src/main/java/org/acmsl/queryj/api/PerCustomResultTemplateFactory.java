@@ -80,7 +80,6 @@ public interface PerCustomResultTemplateFactory
     @Nullable
     public T createTemplate(
         @NotNull final QueryJCommand command,
-        @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final String packageName,
         @NotNull final Result<String> customResult,
         @NotNull final List<Property<String>> properties);
