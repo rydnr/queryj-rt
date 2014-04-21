@@ -379,6 +379,7 @@ public class PerForeignKeyTemplatesTest
                 DecoratorFactory.class.getName(), decoratorFactory);
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
                 QueryJSettings.PACKAGE, BASE_PACKAGE_NAME);
+            new QueryJCommand
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
                 QueryJSettings.REPOSITORY, "acme");
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
