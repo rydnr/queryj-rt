@@ -206,11 +206,6 @@ public abstract class AbstractTemplate<C extends TemplateContext>
     private boolean m__bDebug;
 
     /**
-     * The decorator factory.
-     */
-    private DecoratorFactory m__DecoratorFactory;
-
-    /**
      * A singleton container to avoid the double-checking lock idiom.
      */
     protected static final class FinalizingThreadSingletonContainer
