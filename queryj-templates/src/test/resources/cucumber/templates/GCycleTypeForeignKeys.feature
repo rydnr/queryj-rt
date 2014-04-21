@@ -25,7 +25,7 @@ Feature: G_CYCLE_TYPES foreign keys code compiles
     | G_CYCLE_TYPES | BEFORE_SELL_BO_CONF_KEY | VARCHAR2 | false | true | false |  |  | false | 50 | 0 |
     | G_CYCLE_TYPES | BEFORE_INTERRUPT_BO_DEFAULT | NUMBER | false | true | false |  |  | false | 22 | 0 |
     | G_CYCLE_TYPES | BEFORE_INTERRUPT_BO_CONF_KEY | VARCHAR2 | false | true | false |  |  | false | 50 | 0 |
-    |    G_DRAWS    | G_FIRST_DRAW_TYPE_ID | NUMBER | false | false | false |  |  | false | 22 | 0 |
+    |    G_DRAWS    | G_DRAW_ID | NUMBER | false | false | false |  |  | false | 22 | 0 |
 
     When I generate with per-foreign key <template> for Oracle
 
