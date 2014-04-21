@@ -33,7 +33,7 @@
 package org.acmsl.queryj.api;
 
 /*
- * Importing some JetBrains annotations.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.Literals;
 
