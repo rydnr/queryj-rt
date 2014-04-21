@@ -72,7 +72,7 @@ public abstract class AbstractQueryJTemplate<C extends QueryJTemplateContext>
      * Builds a {@link AbstractQueryJTemplate} with given context.
      * @param context the context.
      */
-    protected AbstractQueryJTemplate(@NotNull final C context, @NotNull final DecoratorFactory decoratorFactory)
+    protected AbstractQueryJTemplate(@NotNull final C context)
     {
         super(context);
     }
