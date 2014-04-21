@@ -150,7 +150,6 @@ public class <C.class_name>
     /**
      * Creates a per-\<i>foreign key\</i> template.
      * @param foreignKey the foreign key.
-     * @param packageName the package name.
      * @param command the {@link QueryJCommand} instance.
      * @param queryJCommandUtils the {@link QueryJCommandUtils} instance.
      * @return the new template.
