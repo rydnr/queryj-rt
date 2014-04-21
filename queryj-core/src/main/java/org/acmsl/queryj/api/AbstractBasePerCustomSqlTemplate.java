@@ -76,9 +76,9 @@ public abstract class AbstractBasePerCustomSqlTemplate<C extends PerCustomSqlTem
      * @param decoratorFactory the {@link DecoratorFactory} instance.
      */
     @SuppressWarnings("unused")
-    public AbstractBasePerCustomSqlTemplate(@NotNull final C context, @NotNull final DecoratorFactory decoratorFactory)
+    public AbstractBasePerCustomSqlTemplate(@NotNull final C context)
     {
-        super(context, decoratorFactory);
+        super(context);
     }
 
     /**
