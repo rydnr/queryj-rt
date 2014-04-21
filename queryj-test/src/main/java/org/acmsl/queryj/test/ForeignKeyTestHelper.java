@@ -108,7 +108,7 @@ public class ForeignKeyTestHelper
     @Nullable
     protected ForeignKey<String> convertToForeignKey(final Map<String, String> fkEntry)
     {
-        @Nullable final
+        @Nullable final ForeignKey<String> res
     }
 
     /**
