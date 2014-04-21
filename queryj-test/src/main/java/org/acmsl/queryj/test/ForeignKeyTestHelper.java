@@ -85,7 +85,7 @@ public class ForeignKeyTestHelper
      * @param foreignKeys the list to fill with the foreign keys.
      */
     public void defineInputForeignKeys(
-        @NotNull final DataTable tableInfo, @NotNull final List<ForeignKey<String>> foreignKeys)
+        @NotNull final DataTable fkInfo, @NotNull final List<ForeignKey<String>> foreignKeys)
     {
 
     }
