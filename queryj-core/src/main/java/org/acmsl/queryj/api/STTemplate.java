@@ -52,7 +52,7 @@ import org.jetbrains.annotations.Nullable;
  * @param <C> the template context type.
  */
 public interface STTemplate<C extends TemplateContext>
-    extends  Template<T>
+    extends  Template<C>
 {
     /**
      * Retrieves the template group.
