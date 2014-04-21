@@ -33,7 +33,7 @@
 package org.acmsl.queryj.api;
 
 /*
- * Importing QueryJ-Core classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.api.exceptions.DevelopmentModeException;
 import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
