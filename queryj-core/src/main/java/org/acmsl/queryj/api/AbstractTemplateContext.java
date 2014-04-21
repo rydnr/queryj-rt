@@ -326,7 +326,7 @@ public abstract class AbstractTemplateContext
 
     /**
      * Builds the template name key.
-     * @return such information.
+     * @return "templateName".
      */
     @NotNull
     protected String buildTemplateNameKey()
