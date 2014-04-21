@@ -448,6 +448,10 @@ public abstract class AbstractTemplateContext
         return getValue(buildDecoratorFactoryKey(), getCommand(), new DecoratorFactoryNotAvailableException());
     }
 
+    /**
+     * Retrieves the key to retrieve the {@link DecoratorFactory} from the command.
+     * @return such key.
+     */
     @NotNull
     protected String buildDecoratorFactoryKey()
     {
