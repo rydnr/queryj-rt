@@ -79,6 +79,5 @@ public interface PerCustomResultTemplateFactory
     public T createTemplate(
         @NotNull final Result<String> customResult,
         @NotNull final List<Property<String>> properties,
-        @NotNull final String packageName,
         @NotNull final QueryJCommand command);
 }
