@@ -450,6 +450,7 @@ public abstract class AbstractTemplateContext
 
     private String buildDecoratorFactoryKey()
     {
+        return null;  //To change body of created methods use File | Settings | File Templates.
     }
 
     /**
