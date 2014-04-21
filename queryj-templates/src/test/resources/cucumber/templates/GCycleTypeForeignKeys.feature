@@ -11,7 +11,7 @@ Feature: G_CYCLE_TYPES foreign keys code compiles
     | G_CYCLE_TYPES |              |           |              |    NAME     |
     |    G_DRAWS    |              |           |              |             |
 
-    And the table(s)' containing the foreign key has the following columns:
+    And the tables' columns are:
     |     table     |         column        | type      | pk    | allows null | readonly |   sequence    | keyword | boolean | length | precision |
     | G_CYCLE_TYPES | G_CYCLE_TYPE_ID | NUMBER | true | false | false |  |  | false | 22 | 0 |
     | G_CYCLE_TYPES | G_PRODUCT_TYPE_ID | NUMBER | false | false | false |  |  | false | 22 | 0 |
