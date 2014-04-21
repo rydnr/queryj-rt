@@ -152,7 +152,7 @@ public class ForeignKeyTestHelper
         while (tokenizer.hasMoreTokens())
         {
             result.add(
-                new AttributeIncompleteValueObject()
+                new AttributeIncompleteValueObject(tokenizer.nextToken())
             )
         }
 
