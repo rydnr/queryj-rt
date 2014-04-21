@@ -279,9 +279,9 @@ public abstract class BasePerTableTemplateBuildHandler
     {
         return
             templateFactory.createTemplate(
-                parameters,
                 tableName,
-                staticContents);
+                staticContents,
+                parameters);
     }
 
     /**
