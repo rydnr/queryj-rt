@@ -145,7 +145,6 @@ public abstract class BasePerTableTemplateBuildHandler
      * @param metadataManager the database metadata manager.
      * @param templateFactory the template factory.
      * @param tables the tables.
-     * @param decoratorFactory the {@link DecoratorFactory} instance.
      */
     @SuppressWarnings("unchecked")
     protected void buildTemplate(
