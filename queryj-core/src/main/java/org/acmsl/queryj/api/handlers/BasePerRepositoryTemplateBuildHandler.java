@@ -155,7 +155,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
             @Nullable final T t_Template =
                 createTemplate(
                     templateFactory,
-                    packageName,
+                    tableNames,
                     repository,
                     parameters);
 
