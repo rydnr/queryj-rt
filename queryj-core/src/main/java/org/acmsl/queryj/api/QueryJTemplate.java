@@ -51,8 +51,4 @@ import org.checkthread.annotations.ThreadSafe;
 public interface QueryJTemplate<C extends QueryJTemplateContext>
     extends Template<C>
 {
-    /**
-     * The DAO group.
-     */
-    String DAO_GROUP = "org/acmsl/queryj/dao/";
 }
