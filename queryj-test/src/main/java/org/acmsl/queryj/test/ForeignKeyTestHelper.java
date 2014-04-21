@@ -40,6 +40,7 @@ package org.acmsl.queryj.test;
  */
 import cucumber.api.DataTable;
 import org.acmsl.queryj.metadata.vo.Attribute;
+import org.acmsl.queryj.metadata.vo.AttributeIncompleteValueObject;
 import org.acmsl.queryj.metadata.vo.ForeignKey;
 import org.acmsl.queryj.metadata.vo.ForeignKeyValueObject;
 import org.jetbrains.annotations.NotNull;
@@ -150,7 +151,9 @@ public class ForeignKeyTestHelper
 
         while (tokenizer.hasMoreTokens())
         {
-
+            result.add(
+                new AttributeIncompleteValueObject()
+            )
         }
 
         return result;
