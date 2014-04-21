@@ -72,7 +72,5 @@ public interface PerRepositoryTemplateFactory
     @Nullable
     public T createTemplate(
         @NotNull final String repository,
-        @NotNull final String packageName,
-        @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final QueryJCommand command);
 }
