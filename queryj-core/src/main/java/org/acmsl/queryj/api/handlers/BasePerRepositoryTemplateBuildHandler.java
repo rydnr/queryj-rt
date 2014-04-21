@@ -145,7 +145,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
         @NotNull final QueryJCommand parameters,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final TF templateFactory,
-        @NotNull final String packageName,
         @NotNull final String repository,
         @NotNull final MetadataManager metadataManager)
       throws  QueryJBuildException
