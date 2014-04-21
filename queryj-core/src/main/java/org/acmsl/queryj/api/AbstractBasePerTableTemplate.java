@@ -62,8 +62,7 @@ public abstract class AbstractBasePerTableTemplate<C extends PerTableTemplateCon
      * @param context the {@link PerTableTemplateContext} instance.
      * @param decoratorFactory the {@link DecoratorFactory} instance.
      */
-    protected AbstractBasePerTableTemplate(
-        @NotNull final C context, @NotNull final DecoratorFactory decoratorFactory)
+    protected AbstractBasePerTableTemplate(@NotNull final C context)
     {
         super(context, decoratorFactory);
     }
