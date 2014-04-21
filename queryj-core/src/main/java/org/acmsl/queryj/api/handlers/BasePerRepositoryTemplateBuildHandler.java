@@ -124,7 +124,8 @@ public abstract class BasePerRepositoryTemplateBuildHandler
             parameters,
             retrieveCustomSqlProvider(parameters),
             retrieveTemplateFactory(),
-            retrieveTableRepositoryName(parameters));
+            retrieveTableRepositoryName(parameters),
+            retrieveMetadataManager());
 
         return false;
     }
