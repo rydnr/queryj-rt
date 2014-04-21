@@ -143,7 +143,8 @@ public class ForeignKeyTestHelper
      * @return the attribute list.
      */
     @NotNull
-    protected List<Attribute<String>> fromCsv(@Nullable final String sourceColumns)
+    protected List<Attribute<String>> fromCsv(
+        @Nullable final String sourceColumns)
     {
         @NotNull final List<Attribute<String>> result = new ArrayList<>();
 
