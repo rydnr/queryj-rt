@@ -365,8 +365,7 @@ public class PerCustomResultTemplatesTest
                     @Nullable final PerCustomResultTemplate\<PerCustomResultTemplateContext> template =
                         templateFactory.createTemplate(
                             result,
-                            properties,                             t_Command,
-);
+                             properties, t_Command);
 
                     Assert.assertNotNull("No template found for " + templateName, template);
 
