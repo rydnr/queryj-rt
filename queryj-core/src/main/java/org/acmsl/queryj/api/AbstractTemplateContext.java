@@ -444,7 +444,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     public DecoratorFactory getDecoratorFactory()
     {
-        return getValue()
+        return getValue(buildDecoratorFactoryKey(), )
     }
     /**
      * {@inheritDoc}
