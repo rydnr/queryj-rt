@@ -448,7 +448,8 @@ public abstract class AbstractTemplateContext
         return getValue(buildDecoratorFactoryKey(), getCommand(), new DecoratorFactoryNotAvailableException());
     }
 
-    private String buildDecoratorFactoryKey()
+    protected
+    String buildDecoratorFactoryKey()
     {
         return null;  //To change body of created methods use File | Settings | File Templates.
     }
