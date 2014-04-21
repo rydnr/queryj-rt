@@ -272,8 +272,6 @@ public abstract class BasePerTableTemplateBuildHandler
     @Nullable
     protected T createTemplate(
         @NotNull final TF templateFactory,
-        @NotNull final DecoratorFactory decoratorFactory,
-        @NotNull final String packageName,
         @NotNull final String tableName,
         @NotNull final List<Row<String>> staticContents,
         @NotNull final QueryJCommand parameters)
