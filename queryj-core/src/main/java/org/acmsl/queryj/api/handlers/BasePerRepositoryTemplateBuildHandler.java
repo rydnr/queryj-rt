@@ -185,8 +185,8 @@ public abstract class BasePerRepositoryTemplateBuildHandler
     /**
      * Uses the factory to create the template.
      * @param templateFactory the template factory.
-     * @param tableNames the table names.
      * @param repository the repository.
+     * @param tableNames the table names.
      * @param parameters the command.
      * @return the template.
      */
