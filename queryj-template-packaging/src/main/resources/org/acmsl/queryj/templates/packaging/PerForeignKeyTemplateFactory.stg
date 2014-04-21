@@ -162,7 +162,6 @@ public class <C.class_name>
     protected <def.name.noExtension>Template createTemplate(
         @NotNull final ForeignKey\<String> foreignKey,
         @NotNull final String packageName,
-        @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final QueryJCommand command,
         @NotNull final QueryJCommandUtils queryJCommandUtils)
     {
