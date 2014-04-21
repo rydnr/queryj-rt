@@ -148,7 +148,7 @@ public class <C.class_name>
             new <def.type.capitalized>TemplateContext(foreignKey, command);
 
         @NotNull final String t_strFileName =
-            retrieveTemplateFileName(foreignKey.getSourceTable
+            retrieveTemplateFileName(foreignKey.getSourceTableName()
         new QueryJCommandWrapper\<String>(command).setSetting(
             Literals.FILE_NAME, t_strFileName);
 
