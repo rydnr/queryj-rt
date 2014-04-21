@@ -451,7 +451,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     protected String buildDecoratorFactoryKey()
     {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        return DecoratorFactory.class.getName();
     }
 
     /**
