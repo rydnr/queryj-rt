@@ -2,7 +2,8 @@ Feature: G_CYCLE_TYPES foreign keys code compiles
 
   Scenario Outline: Templates bound to G_CYCLE_TYPES' foreign keys compile
 
-    Given the table containing the foreign key is:
+    Given
+    And the table containing the foreign key is:
     |    table     | parent table | decorated | relationship |   static    |
     | G_CYCLE_TYPES |  |  |  | NAME |
 
