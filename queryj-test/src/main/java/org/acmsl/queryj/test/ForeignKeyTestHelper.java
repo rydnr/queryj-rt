@@ -110,7 +110,7 @@ public class ForeignKeyTestHelper
     {
         @Nullable final ForeignKey<String> result;
 
-        @Nullable String sourceTable = fkEntry.get("")
+        @Nullable String sourceTable = fkEntry.get("source")
         result = null;
 
         return result;
