@@ -219,6 +219,31 @@ public class PerForeignKeyTemplatesTest
     }
 
     /**
+     * Defines the input foreign keys based on the information provided by the
+     * feature.
+     * @param tableInfo the information about the foreign keys.
+     */
+    @SuppressWarnings("unused")
+    @Given("^the table containing the foreign key is:$")
+    public void defineInputForeignKeys(@NotNull final DataTable tableInfo)
+    {
+        defineInputTables(tableInfo, getTables(), TableTestHelper.getInstance());
+    }
+
+    /**
+     * Defines the input tables based on the information provided by the
+     * feature.
+     * @param tableInfo the information about the tables.
+     */
+    protected void defineInputTables(
+        @NotNull final DataTable tableInfo,
+        @NotNull final Map\<String, Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables,
+        @NotNull final TableTestHelper helper)
+    {
+        helper.defineInputTables(tableInfo, tables);
+    }
+
+    /**
      * Defines the columns from the feature.
      * @param columnInfo the column information.
      */
