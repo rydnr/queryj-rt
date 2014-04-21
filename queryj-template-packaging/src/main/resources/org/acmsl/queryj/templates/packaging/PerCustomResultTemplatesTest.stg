@@ -365,8 +365,6 @@ public class PerCustomResultTemplatesTest
                     @Nullable final PerCustomResultTemplate\<PerCustomResultTemplateContext> template =
                         templateFactory.createTemplate(
                             t_Command,
-                            decoratorFactory,
-                            packageName,
                             result,
                             properties);
 
