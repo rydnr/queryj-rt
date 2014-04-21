@@ -160,6 +160,7 @@ public class ForeignKeyTestHelper
                         tokenizer.nextToken(),
                         -1,
                         "",
+                        sourceTable,
                         )
                 )
             }
