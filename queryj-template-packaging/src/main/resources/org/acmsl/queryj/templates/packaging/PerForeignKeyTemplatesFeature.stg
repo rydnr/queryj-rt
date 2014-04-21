@@ -56,7 +56,7 @@ Feature: <fk.sourceTableName> foreign keys code compiles
 
     Given the following foreign key:
     | source | column(s)| destination | allows null |
-    | <fk.sourceTable.name> | <fk.attributes:{a | <a.namesourceTable.parent> | <fk.sourceTable.decorated> | <fk.sourceTabel.relationship> | <fk.sourceTable.static> |
+    | <fk.sourceTable.name> | <fk.attributes:{a | <a.name>sourceTable.parent> | <fk.sourceTable.decorated> | <fk.sourceTabel.relationship> | <fk.sourceTable.static> |
 
     And the table containing the foreign key is:
     |    table     | parent table | decorated | relationship |   static    |
