@@ -46,7 +46,7 @@ import org.stringtemplate.v4.STGroup;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * <a href="http://www.stringtemplate.org>StringTemplate</a>-specific templates.
+ * StringTemplate-specific templates.
  * @author <a href="mailto:chous@acm-sl.org">chous</a>
  * @param <C> the template context type.
  */
