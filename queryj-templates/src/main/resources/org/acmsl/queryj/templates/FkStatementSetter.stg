@@ -70,7 +70,7 @@ sourceImpl(fk, C) ::= <<
 <project_imports(
   basePackageName=C.project_package,
   voSubpackageName=typeInitMap.voSubpackageName,
-  voName=table.name.voName)>
+  voName=ftable.name.voName)>
 
 /*
  * Importing Spring classes.
