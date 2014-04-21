@@ -211,7 +211,7 @@ public class PerForeignKeyTemplatesTest
      * @param tableInfo the information about the tables.
      */
     protected void defineInputForeignKeys(
-        @NotNull final DataTable tableInfo,
+        @NotNull final DataTable fkInfo,
         @NotNull final List\<ForeignKey\<String\>> foreignKeys,
         @NotNull final ForeignKeyTestHelper helper)
     {
