@@ -95,8 +95,7 @@ public class PerCustomResultTemplateContextTest
             new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
         @NotNull final PerCustomResultTemplateContext instance =
-            new PerCustomResultTemplateContext(
-                result, properties, command);
+            new PerCustomResultTemplateContext(result, properties, command);
 
         Assert.assertEquals(properties, instance.getProperties());
 
