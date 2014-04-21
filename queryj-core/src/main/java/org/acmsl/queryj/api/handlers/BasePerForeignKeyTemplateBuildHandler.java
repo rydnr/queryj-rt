@@ -107,7 +107,6 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
         buildTemplates(
             parameters,
             t_MetadataManager,
-            retrieveCustomSqlProvider(parameters),
             retrieveTemplateFactory());
 
         result = false;
