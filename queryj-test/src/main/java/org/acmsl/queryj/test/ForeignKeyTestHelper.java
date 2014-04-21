@@ -105,6 +105,10 @@ public class ForeignKeyTestHelper
 
     }
 
+    private ForeignKey<String> convertToForeignKey(final Map<String,String> fkEntry)
+    {
+    }
+
     /**
      * Defines the input columns, based on the Cucumber table given.
      * @param columnInfo the Cucumber table.
