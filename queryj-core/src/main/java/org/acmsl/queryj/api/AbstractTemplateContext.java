@@ -39,6 +39,7 @@ import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.QueryJSettings;
+import org.acmsl.queryj.api.exceptions.DecoratorFactoryNotAvailableException;
 import org.acmsl.queryj.api.exceptions.FileNameNotAvailableException;
 import org.acmsl.queryj.api.exceptions.PackageNameNotAvailableException;
 import org.acmsl.queryj.api.exceptions.QueryJNonCheckedException;
@@ -444,7 +445,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     public DecoratorFactory getDecoratorFactory()
     {
-        return getValue(buildDecoratorFactoryKey(), )
+        return getValue(buildDecoratorFactoryKey(), getCommand(), new DecoratorFactoryNotAvailableException());
     }
     /**
      * {@inheritDoc}
