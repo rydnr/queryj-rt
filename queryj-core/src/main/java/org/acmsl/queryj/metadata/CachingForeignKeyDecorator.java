@@ -243,7 +243,8 @@ public class CachingForeignKeyDecorator
     @NotNull
     public String toString()
     {
-        return "CachingForeignKeyDecorator{" +
+        return
+            "CachingForeignKeyDecorator{" +
                "cachedSource=" + m__CachedSource +
                ", cachedTarget=" + m__CachedTarget +
                '}';
