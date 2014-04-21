@@ -90,7 +90,7 @@ public interface TemplateContext
 
     /**
      * Retrieves the decorator factory.
-     * @return such {@link DecoratorFactory}
+     * @return such {@link DecoratorFactory factory}.
      */
     @NotNull
     DecoratorFactory getDecoratorFactory();
