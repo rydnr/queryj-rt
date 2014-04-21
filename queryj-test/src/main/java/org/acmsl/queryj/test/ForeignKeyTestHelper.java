@@ -124,7 +124,7 @@ public class ForeignKeyTestHelper
             && (columns.size() > 0)
             && (targetTable != null))
         {
-            result = new ForeignKeyValueObject(sourceTable, )
+            result = new ForeignKeyValueObject(sourceTable, columns)
         }
         result = null;
 
