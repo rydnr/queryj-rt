@@ -225,7 +225,7 @@ public class PerForeignKeyTemplatesTest
      * @param tableInfo the information about the foreign keys.
      */
     @SuppressWarnings("unused")
-    @Given("^the referred tables are:$")
+    @And("^the referred tables are:$")
     public void defineInputTables(@NotNull final DataTable tableInfo)
     {
         defineInputTables(tableInfo, getTables(), TableTestHelper.getInstance());
