@@ -244,7 +244,7 @@ public class CachingForeignKeyDecorator
     public String toString()
     {
         return
-            "{ \"class\": \"CachingForeignKeyDecorator\"
+              "{ \"class\": \"CachingForeignKeyDecorator\"
             + ", \"cachedSource\": \"" + m__CachedSource + '"'
             + ", \"cachedTarget\": \"" + m__CachedTarget + '"'
             + " }";
