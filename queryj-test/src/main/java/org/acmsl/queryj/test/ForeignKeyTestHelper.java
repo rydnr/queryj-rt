@@ -135,6 +135,10 @@ public class ForeignKeyTestHelper
         return result;
     }
 
+    private List<Attribute<String>> fromCsv(final String sourceColumns)
+    {
+    }
+
     /**
      * Defines the input columns, based on the Cucumber table given.
      * @param columnInfo the Cucumber table.
