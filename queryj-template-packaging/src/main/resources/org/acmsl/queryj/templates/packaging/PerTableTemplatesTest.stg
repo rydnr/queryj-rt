@@ -517,9 +517,9 @@ public class PerTableTemplatesTest
 
                 @Nullable final PerTableTemplate\<PerTableTemplateContext> template =
                     templateFactory.createTemplate(
-                        t_Command,
                         table.getName(),
-                        tableRows);
+                        tableRows, t_Command,
+);
 
                 Assert.assertNotNull("No template found for " + templateName, template);
 
