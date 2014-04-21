@@ -289,7 +289,7 @@ public abstract class AbstractForeignKeyDecorator
         @NotNull final MetadataManager metadataManager,
         @NotNull final DecoratorFactory decoratorFactory)
     {
-        @NotNull final List<Attribute<K>> result = new ArrayList<Attribute<K>>(attributes.size());
+        @NotNull final List<Attribute<K>> result = new ArrayList<>(attributes.size());
 
         for (@Nullable final Attribute<V> t_Attribute : attributes)
         {
