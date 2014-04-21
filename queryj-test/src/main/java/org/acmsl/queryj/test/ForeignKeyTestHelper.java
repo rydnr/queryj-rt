@@ -135,7 +135,13 @@ public class ForeignKeyTestHelper
         return result;
     }
 
-    private List<Attribute<String>> fromCsv(@Nullable final String sourceColumns)
+    /**
+     *
+     * @param sourceColumns
+     * @return
+     */
+    @NotNull
+    protected List<Attribute<String>> fromCsv(@Nullable final String sourceColumns)
     {
         return null;  //To change body of created methods use File | Settings | File Templates.
     }
