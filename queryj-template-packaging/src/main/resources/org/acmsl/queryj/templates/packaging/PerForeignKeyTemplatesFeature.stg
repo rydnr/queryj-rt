@@ -69,10 +69,6 @@ Feature: <fk.sourceTableName> foreign keys code compiles
     <fk.sourceTable.own.minus.primaryKey:{ a |<cucumber_nonpk_declaration(attribute=a)>}; separator="\n">
     <fk.targetTable.primaryKey:{ a |<cucumber_pk_declaration(attribute=a)>}; separator="\n">
 
-    And the foreign key is:
-    | source table | source columns | target table | allows null |
-    | <fk.sourceTable.name>| <fk.attributes:{a | <a.name>}; separator=", ">| <fk.targetTable.name> | <fk.nullable> |
-
     When I generate with per-foreign key \<template>.stg for Oracle
 
     Then the generated per-foreign key \<output> file compiles successfully
