@@ -92,7 +92,7 @@ public abstract class BasePerTableTemplateBuildHandler
     implements TemplateBuildHandler
 {
     /**
-     * Creates a {@link BasePerTableTemplateBuildHandler} instance.
+     * Creates a {@code BasePerTableTemplateBuildHandler} instance.
      */
     protected BasePerTableTemplateBuildHandler() {}
 
