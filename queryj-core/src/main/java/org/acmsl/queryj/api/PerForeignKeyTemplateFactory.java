@@ -69,6 +69,7 @@ public interface PerForeignKeyTemplateFactory
     @NotNull
     T createTemplate(
         @NotNull final ForeignKey<String> foreignKey,
+        @NotNull final String fileName,
         @NotNull final String packageName,
         @NotNull final QueryJCommand command);
 }
