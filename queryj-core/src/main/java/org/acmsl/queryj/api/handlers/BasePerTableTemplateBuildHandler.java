@@ -280,8 +280,6 @@ public abstract class BasePerTableTemplateBuildHandler
         return
             templateFactory.createTemplate(
                 parameters,
-                decoratorFactory,
-                packageName,
                 tableName,
                 staticContents);
     }
