@@ -106,11 +106,11 @@ public abstract class BasePerRepositoryTemplateBuildHandler
         throws  QueryJBuildException
     {
         buildTemplate(
-            parameters,
-            retrieveCustomSqlProvider(parameters),
+            command,
+            retrieveCustomSqlProvider(command),
             retrieveTemplateFactory(),
-            retrieveTableRepositoryName(parameters),
-            retrieveMetadataManager(parameters));
+            retrieveTableRepositoryName(command),
+            retrieveMetadataManager(command));
 
         return false;
     }
