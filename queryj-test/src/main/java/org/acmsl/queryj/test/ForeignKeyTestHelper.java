@@ -149,6 +149,8 @@ public class ForeignKeyTestHelper
     {
         @NotNull final List<Attribute<String>> result = new ArrayList<>();
 
+        if (sourceTable != null)
+        {
         @NotNull final StringTokenizer tokenizer = new StringTokenizer(sourceColumns, ",");
 
         while (tokenizer.hasMoreTokens())
