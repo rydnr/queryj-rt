@@ -45,6 +45,7 @@ import org.checkthread.annotations.ThreadSafe;
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2013/08/15 08/45
+ * @param
  */
 @ThreadSafe
 public interface QueryJTemplate<C extends QueryJTemplateContext>
