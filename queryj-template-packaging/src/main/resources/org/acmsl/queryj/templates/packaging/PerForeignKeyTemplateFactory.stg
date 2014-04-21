@@ -142,7 +142,6 @@ public class <C.class_name>
     @NotNull
     public <def.name.noExtension>Template createTemplate(
         @NotNull final ForeignKey\<String> foreignKey,
-        @NotNull final String packageName,
         @NotNull final QueryJCommand command)
     {
         return createTemplate(foreignKey, packageName, decoratorFactory, command, QueryJCommandUtils.getInstance());
