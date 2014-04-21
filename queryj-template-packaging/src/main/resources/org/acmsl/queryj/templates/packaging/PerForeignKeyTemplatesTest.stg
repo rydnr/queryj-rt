@@ -235,7 +235,7 @@ public class PerForeignKeyTemplatesTest
      * Defines the input tables based on the information provided by the
      * feature.
      * @param tableInfo the information about the tables.
-     * @param
+     * @param t
      */
     protected void defineInputTables(
         @NotNull final DataTable tableInfo,
