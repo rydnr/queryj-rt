@@ -56,6 +56,9 @@ import org.checkthread.annotations.ThreadSafe;
 public class DefaultTemplateChainProviderTemplate<C extends GlobalTemplateContext>
     extends AbstractTemplatePackagingTemplate<C>
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = -9176142599558546996L;
 
     /**
