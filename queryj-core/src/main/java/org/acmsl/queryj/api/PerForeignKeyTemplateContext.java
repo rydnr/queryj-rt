@@ -75,6 +75,7 @@ public class PerForeignKeyTemplateContext
 
     /**
      * Creates a {@link PerForeignKeyTemplateContext} with given information.
+     * @param fileName the file name.
      * @param packageName the package name.
      * @param foreignKey the {@link ForeignKey} instance.
      * @param command the {@link QueryJCommand} instance.
