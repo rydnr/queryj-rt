@@ -1,4 +1,5 @@
 * 2014/04/21
-** FkStatementSetter #478: 2 -> 2
+** Refactor template contexts and factories: 2 -> 2
+** FkStatementSetter #478: 2 ->
 *** Check filename of per-fk cucumber feature
 *** Generate real per-fk cucumber feature
