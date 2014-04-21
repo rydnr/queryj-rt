@@ -216,11 +216,11 @@ public abstract class BasePerCustomResultTemplateBuildHandler
                         new CannotCreateCustomResultTemplateException(t_ResultElement, queryjException);
                 }
                     */
-                    if  (   (t_Template != null)
-                         && (!t_lTemplates.contains(t_Template)))
-                    {
-                        t_lTemplates.add(t_Template);
-                    }
+                if  (   (t_Template != null)
+                     && (!t_lTemplates.contains(t_Template)))
+                {
+                    t_lTemplates.add(t_Template);
+                }
             }
         }
 
