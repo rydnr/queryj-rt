@@ -144,7 +144,7 @@ public class <C.class_name>
         @NotNull final ForeignKey\<String> foreignKey,
         @NotNull final QueryJCommand command)
     {
-        return createTemplate(foreignKey, decoratorFactory, command, QueryJCommandUtils.getInstance());
+        return createTemplate(foreignKey,  command, QueryJCommandUtils.getInstance());
     }
 
     /**
