@@ -254,7 +254,7 @@ public class PerForeignKeyTemplatesTest
     @Given("^the tables' columns are:$")
     public void defineInputColumns(@NotNull final DataTable columnInfo)
     {
-        defineInputColumns(columnInfo, getTables(), ForeignKeyTestHelper.getInstance());
+        defineInputColumns(columnInfo, getTables(), TableTestHelper.getInstance());
     }
 
     /**
