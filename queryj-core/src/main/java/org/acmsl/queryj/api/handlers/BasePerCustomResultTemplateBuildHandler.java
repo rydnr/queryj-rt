@@ -201,12 +201,6 @@ public abstract class BasePerCustomResultTemplateBuildHandler
                             t_ResultElement,
                             customSqlProvider.getSqlPropertyDAO().findByResult(t_ResultElement.getId()),
                             parameters,
-                            retrievePackage(
-                                t_ResultElement,
-                                customSqlProvider,
-                                metadataManager,
-                                metadataManager.getEngine(),
-                                parameters),
                     parameters,
 
                     if  (   (t_Template != null)
