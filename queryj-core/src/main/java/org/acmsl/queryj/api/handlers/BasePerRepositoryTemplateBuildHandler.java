@@ -193,7 +193,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
      */
     @Nullable
     protected T createTemplate(
-        @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final TF templateFactory,
         @NotNull final List<String> tableNames,
         @NotNull final String repository,
