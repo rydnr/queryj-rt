@@ -60,7 +60,6 @@ public abstract class AbstractBasePerTableTemplate<C extends PerTableTemplateCon
      * Builds an <code>AbstractBasePerTableTemplate</code> using given
      * information.
      * @param context the {@link PerTableTemplateContext} instance.
-     * @param decoratorFactory the {@link DecoratorFactory} instance.
      */
     protected AbstractBasePerTableTemplate(@NotNull final C context)
     {
