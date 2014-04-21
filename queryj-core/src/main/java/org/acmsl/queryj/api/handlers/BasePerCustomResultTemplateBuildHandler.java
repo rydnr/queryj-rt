@@ -200,8 +200,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
                         templateFactory.createTemplate(
                             t_ResultElement,
                             customSqlProvider.getSqlPropertyDAO().findByResult(t_ResultElement.getId()),
-                            parameters,
-                    parameters,
+                            parameters);
 
                     /*
                     retrievePackage(
