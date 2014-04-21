@@ -362,35 +362,6 @@ public abstract class AbstractTemplate<C extends TemplateContext>
     }
 
     /**
-     * Specifies the decorator factory.
-     * @param decoratorFactory the {@link org.acmsl.queryj.metadata.DecoratorFactory} instance.
-     */
-    protected final void immutableSetDecoratorFactory(@NotNull final DecoratorFactory decoratorFactory)
-    {
-        this.m__DecoratorFactory = decoratorFactory;
-    }
-
-    /**
-     * Specifies the decorator factory.
-     * @param decoratorFactory the {@link DecoratorFactory} instance.
-     */
-    @SuppressWarnings("unused")
-    protected void setDecoratorFactory(@NotNull final DecoratorFactory decoratorFactory)
-    {
-        immutableSetDecoratorFactory(decoratorFactory);
-    }
-
-    /**
-     * Retrieves the decorator factory.
-     * @return the {@link DecoratorFactory} instance.
-     */
-    @NotNull
-    public DecoratorFactory getDecoratorFactory()
-    {
-        return this.m__DecoratorFactory;
-    }
-
-    /**
      * Retrieves the string template group.
      * @param path the path.
      * @param lookupPaths the lookup paths.
@@ -1068,7 +1039,6 @@ public abstract class AbstractTemplate<C extends TemplateContext>
         return
               "{ \"class\": \"AbstractTemplate" + '"'
             + ", \"templateContext\": " + this.m__TemplateContext
-            + ", \"decoratorFactory\": " + this.m__DecoratorFactory
             + ", \"placeholderPackage\": \"" + this.m__strPlaceholderPackage + '"'
             + ", \"debug\": " + this.m__bDebug
             + ", \"package\": \"org.acmsl.queryj.api\" }";
