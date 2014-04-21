@@ -93,7 +93,10 @@ public class ForeignKeyTestHelper
 
         @Nullable ForeignKey<String> foreignKey;
 
+        for (@NotNull final Map<String, String> fkEntry : fkEntries)
+        {
 
+        }
 
     }
 
