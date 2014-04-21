@@ -39,6 +39,7 @@ package org.acmsl.queryj.test;
  * Importing JetBrains annotations.
  */
 import cucumber.api.DataTable;
+import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.ForeignKey;
 import org.jetbrains.annotations.NotNull;
 
@@ -111,7 +112,7 @@ public class ForeignKeyTestHelper
         @Nullable final ForeignKey<String> result;
 
         @Nullable final String sourceTable = fkEntry.get("source");
-        @NotNull final
+        @NotNull final List<Attribute<String>> columns =
         @Nullable final String sourceColumns = fkEntry.get("column(s)");
         @Nullable final String targetTable = fkEntry.get("target");
         @Nullable final boolean allowsNull = Boolean.valueOf(fkEntry.get("allows null"));
