@@ -45,6 +45,7 @@ import org.acmsl.queryj.api.exceptions.QueryJNonCheckedException;
 import org.acmsl.queryj.api.exceptions.RootDirNotAvailableException;
 import org.acmsl.queryj.api.exceptions.TemplateNameNotAvailableException;
 import org.acmsl.queryj.api.exceptions.VersionNotAvailableException;
+import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.tools.exceptions.MissingOutputDirAtRuntimeException;
 
 /*
@@ -438,8 +439,13 @@ public abstract class AbstractTemplateContext
 
     /**
      * Retrieves the {@link DecoratorFactory} instance.
-     * @param
+     * @return such instance.
      */
+    @NotNull
+    public DecoratorFactory getDecoratorFactory()
+    {
+
+    }
     /**
      * {@inheritDoc}
      */
