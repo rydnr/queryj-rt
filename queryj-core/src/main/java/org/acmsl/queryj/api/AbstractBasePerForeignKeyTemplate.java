@@ -82,11 +82,9 @@ public abstract class AbstractBasePerForeignKeyTemplate<C extends PerForeignKeyT
      * Builds a <code>AbstractBasePerForeignKeyTemplate</code> using
      * given information.
      * @param context the {@link PerForeignKeyTemplateContext} instance.
-     * @param decoratorFactory the {@link DecoratorFactory} instance.
      */
     @SuppressWarnings("unused")
-    public AbstractBasePerForeignKeyTemplate(
-        @NotNull final C contexty)
+    public AbstractBasePerForeignKeyTemplate(@NotNull final C context)
     {
         super(context);
     }
