@@ -56,7 +56,8 @@ import org.checkthread.annotations.ThreadSafe;
 /**
  * Is able to resolve {@link ForeignKey} placeholders in templates.
  * @author <a href="mailto:chous@acm-sl.org">chous</a>
- * @since 2012/05/24
+ * @since 3.0
+ * Created: 2012/05/24
  */
 @SuppressWarnings("unused")
 @ThreadSafe
