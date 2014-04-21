@@ -136,9 +136,9 @@ public class ForeignKeyTestHelper
     }
 
     /**
-     * Parses given list of columns to
-     * @param sourceColumns
-     * @return
+     * Parses given list of columns to a list of {@link Attribute}s.
+     * @param sourceColumns the column names.
+     * @return the
      */
     @NotNull
     protected List<Attribute<String>> fromCsv(@Nullable final String sourceColumns)
