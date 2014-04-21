@@ -197,9 +197,10 @@ public abstract class BasePerTableTemplateBuildHandler
                     t_Template =
                         createTemplate(
                             templateFactory,
-                            decoratorFactory,
+                            /*
                             retrievePackage(
                                 t_Table.getName(), metadataManager.getEngine(), parameters),
+                            */
                             t_Table.getName(),
                             t_lStaticContent,
                             parameters);
