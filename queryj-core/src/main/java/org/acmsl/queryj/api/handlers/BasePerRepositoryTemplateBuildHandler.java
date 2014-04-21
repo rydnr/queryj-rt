@@ -138,7 +138,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
      * @param templateFactory the template factory.
      * @param packageName the package name.
      * @param repository the repository.
-     * @param decoratorFactory the {@link DecoratorFactory} instance.
+     * @param metadataManager the {@link DecoratorFactory} instance.
      */
     @SuppressWarnings("unchecked")
     protected void buildTemplate(
