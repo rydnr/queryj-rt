@@ -62,7 +62,7 @@ public class PerCustomResultTemplatesFeatureTemplate
     private static final long serialVersionUID = -719114085008579188L;
 
     /**
-     * Builds a {@link PerCustomResultTemplatesFeatureTemplate} with given context.
+     * Builds a {@code PerCustomResultTemplatesFeatureTemplate} with given context.
      * @param context the {@link GlobalTemplateContext context}.
      */
     public PerCustomResultTemplatesFeatureTemplate(@NotNull final GlobalTemplateContext context)
