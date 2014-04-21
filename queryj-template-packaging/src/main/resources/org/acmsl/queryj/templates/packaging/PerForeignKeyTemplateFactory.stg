@@ -172,7 +172,6 @@ public class <C.class_name>
                     foreignKey.getSourceTableName(),
                     queryJCommandUtils.retrieveMetadataManager(command)),
                 packageName,
-                decoratorFactory,
                 command);
 
         return new <def.name.noExtension>Template(t_Context);
