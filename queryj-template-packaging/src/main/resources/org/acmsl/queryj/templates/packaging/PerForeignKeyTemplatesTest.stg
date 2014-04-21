@@ -200,7 +200,7 @@ public class PerForeignKeyTemplatesTest
      */
     @SuppressWarnings("unused")
     @Given("^the table containing the foreign key is:$")
-    public void defineInputForeignKeys(@NotNull final DataTable tableInfo)
+    public void defineInputForeignKeys(@NotNull final DataTable fkInfo)
     {
         defineInputForeignKeys(fkInfo, getTables(), TableTestHelper.getInstance());
     }
