@@ -70,7 +70,6 @@ public interface PerCustomResultTemplateFactory
     /**
      * Creates a per-<i>custom result</i> template.
      * @param command the {@link QueryJCommand}.
-     * @param packageName the package name.
      * @param customResult the custom result.
      * @param properties the properties.
      * @return the template.
