@@ -88,6 +88,7 @@ import org.acmsl.queryj.QueryJSettings;
  */
 import org.acmsl.queryj.test.AbstractTemplatesTest;
 import org.acmsl.queryj.test.ForeignKeyTestHelper;
+import org.acmsl.queryj.test.ForeignKeyTestHelper;
 
 /*
  * Importing project classes.
