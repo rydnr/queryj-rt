@@ -43,7 +43,6 @@ import org.stringtemplate.v4.STGroup;
 /*
  * Importing some JetBrains annotations.
  */
-import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
