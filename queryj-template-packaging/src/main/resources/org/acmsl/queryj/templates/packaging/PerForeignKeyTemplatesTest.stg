@@ -202,7 +202,7 @@ public class PerForeignKeyTemplatesTest
     @Given("^the following foreign key :$")
     public void defineInputForeignKeys(@NotNull final DataTable fkInfo)
     {
-        defineInputForeignKeys(fkInfo, getForeignKeys(), TableTestHelper.getInstance());
+        defineInputForeignKeys(fkInfo, getForeignKeys(), ForeignKeyTestHelper.getInstance());
     }
 
     /**
