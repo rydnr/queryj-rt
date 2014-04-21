@@ -147,7 +147,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
         @NotNull final TF templateFactory,
         @NotNull final String packageName,
         @NotNull final String repository,
-        @NotNull final DecoratorFactory decoratorFactory)
+        @NotNull final MetadataManager metadataManager)
       throws  QueryJBuildException
     {
         if (isGenerationEnabled(customSqlProvider, parameters))
@@ -155,7 +155,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
             @Nullable final T t_Template =
                 createTemplate(
                     templateFactory,
-                    tableNames,
+                    metadataManager,
                     repository,
                     parameters);
 
