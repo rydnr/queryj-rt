@@ -349,7 +349,7 @@ public class PerForeignKeyTemplatesTest
             @NotNull final QueryJCommand t_Command =
                 new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
-            new QueryJCommandWrapper\<
+            new QueryJCommandWrapper\<DecoratorFactory>
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
                 QueryJSettings.PACKAGE, BASE_PACKAGE_NAME);
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
