@@ -117,6 +117,7 @@ public class ForeignKeyTestHelper
 
         if (   (sourceTable != null)
             && (columns.size() > 0))
+            && (targetTable != null)
         result = null;
 
         return result;
