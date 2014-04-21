@@ -246,7 +246,7 @@ public class CachingForeignKeyDecorator
         return
             "{ \"class\": \"CachingForeignKeyDecorator\"
             + ", \"cachedSource\": \"" + m__CachedSource + '"'
-            + ", achedTarget=" + m__CachedTarget +
+            + ", \"cachedTarget=" + m__CachedTarget +
                '}';
     }
 }
