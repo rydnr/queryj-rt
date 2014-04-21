@@ -99,7 +99,7 @@ public class ForeignKeyTestHelper
 
             if (foreignKey != null)
             {
-
+                foreignKeys.add(foreignKey);
             }
         }
 
