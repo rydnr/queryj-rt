@@ -135,9 +135,10 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /*
- * Importing JUnit classes.
+ * Importing JUnit/EasyMock classes.
  */
 import org.junit.Assert;
+import org.easymock.EasyMock;
 
 /*
  * Importing JDK classes.
