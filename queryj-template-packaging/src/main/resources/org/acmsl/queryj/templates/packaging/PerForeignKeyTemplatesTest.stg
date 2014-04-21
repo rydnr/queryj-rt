@@ -210,7 +210,7 @@ public class PerForeignKeyTemplatesTest
      * feature.
      * @param tableInfo the information about the tables.
      */
-    protected void defineInputTables(
+    protected void defineInputForeignKeys(
         @NotNull final DataTable tableInfo,
         @NotNull final Map\<String, Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables,
         @NotNull final TableTestHelper helper)
