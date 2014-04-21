@@ -41,7 +41,6 @@ package org.acmsl.queryj.templates.packaging;
 import org.acmsl.queryj.api.AbstractTemplate;
 import org.acmsl.queryj.api.STTemplate;
 import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
-import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.templates.packaging.exceptions.InvalidTemplatePackagingTemplateException;
 
 /*
