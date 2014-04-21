@@ -83,10 +83,9 @@ public abstract class AbstractTemplatePackagingTemplate<C extends TemplatePackag
      * Creates a new instance.
      * @param context the {@link TemplatePackagingContext context}.
      */
-    protected AbstractTemplatePackagingTemplate(
-        @NotNull final C context, @NotNull final DecoratorFactory decoratorFactory)
+    protected AbstractTemplatePackagingTemplate(@NotNull final C context)
     {
-        super(context, "org.acmsl.queryj.templates.packaging.placeholders", decoratorFactory);
+        super(context, "org.acmsl.queryj.templates.packaging.placeholders");
     }
 
     /**
