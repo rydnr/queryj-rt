@@ -87,7 +87,7 @@ public class ForeignKeyTestHelper
     public void defineInputForeignKeys(
         @NotNull final DataTable fkInfo, @NotNull final List<ForeignKey<String>> foreignKeys)
     {
-        @NotNull final List<Map<String, String>>
+        @NotNull final List<Map<String, String>> fkEntries = fkInfo.asMaps();
     }
 
     /**
