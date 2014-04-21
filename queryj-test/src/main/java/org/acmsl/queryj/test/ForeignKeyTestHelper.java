@@ -87,7 +87,7 @@ public class ForeignKeyTestHelper
     public void defineInputForeignKeys(
         @NotNull final DataTable tableInfo, @NotNull final List<ForeignKey<String>> foreignKeys)
     {
-        // TODO
+
     }
 
     /**
