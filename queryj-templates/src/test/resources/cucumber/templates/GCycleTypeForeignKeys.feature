@@ -7,7 +7,7 @@ Feature: G_CYCLE_TYPES foreign keys code compiles
       | G_CYCLE_TYPES | G_FIRST_DRAW_TYPE_ID |      G_DRAWS      |    false    |
 
     And the tables referred are:
-    |    table     | parent table | decorated | relationship |   static    |
+    |     table     | parent table | decorated | relationship |   static    |
     | G_CYCLE_TYPES |  |  |  | NAME |
 
     And the table containing the foreign key has the following columns:
