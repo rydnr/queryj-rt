@@ -331,7 +331,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     protected String buildTemplateNameKey()
     {
-        return "templateName";
+        return Literals.TEMPLATE_NAME;
     }
 
     /**
