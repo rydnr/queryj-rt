@@ -46,6 +46,7 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.Map;
@@ -89,6 +90,9 @@ public class ForeignKeyTestHelper
         @NotNull final DataTable fkInfo, @NotNull final List<ForeignKey<String>> foreignKeys)
     {
         @NotNull final List<Map<String, String>> fkEntries = fkInfo.asMaps();
+
+        @Nullable final
+
     }
 
     /**
