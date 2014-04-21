@@ -163,6 +163,7 @@ public class ForeignKeyTestHelper
                         )
                 )
             }
+        }
 
         return result;
     }
