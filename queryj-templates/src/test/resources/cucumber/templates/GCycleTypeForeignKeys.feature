@@ -6,7 +6,7 @@ Feature: G_CYCLE_TYPES foreign keys code compiles
       |    source     |         column(s)    | destination | allows null |
       | G_CYCLE_TYPES | G_FIRST_DRAW_TYPE_ID |   G_DRAWS   |    false    |
 
-    And the tables referred are:
+    And the referred tables are:
     |     table     | parent table | decorated | relationship |   static    |
     | G_CYCLE_TYPES |              |           |              |    NAME     |
     |    G_DRAWS    |              |           |              |             |
