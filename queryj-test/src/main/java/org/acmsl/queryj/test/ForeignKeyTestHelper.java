@@ -136,7 +136,7 @@ public class ForeignKeyTestHelper
     }
 
     /**
-     * Parses given list of
+     * Parses given list of columns
      * @param sourceColumns
      * @return
      */
