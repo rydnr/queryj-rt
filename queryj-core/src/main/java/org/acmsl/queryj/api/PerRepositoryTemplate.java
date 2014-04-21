@@ -53,7 +53,8 @@ import org.jetbrains.annotations.NotNull;
 /**
  * Defines the external API for per-repository templates.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
- * @since 2013/06/01
+ * @since 3.0
+ * @2013/06/01
  */
 public interface PerRepositoryTemplate<C extends PerRepositoryTemplateContext>
     extends Template<C>
