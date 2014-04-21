@@ -125,7 +125,6 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
     protected void buildTemplates(
         @NotNull final QueryJCommand parameters,
         @NotNull final MetadataManager metadataManager,
-        @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final TF templateFactory)
       throws  QueryJBuildException
     {
