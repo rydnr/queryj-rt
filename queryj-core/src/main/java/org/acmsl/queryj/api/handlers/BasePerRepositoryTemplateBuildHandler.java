@@ -67,6 +67,8 @@ import org.jetbrains.annotations.Nullable;
  */
 import org.checkthread.annotations.ThreadSafe;
 
+import java.util.List;
+
 /**
  * Builds a per-repository template using database metadata.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
@@ -193,7 +195,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
     protected T createTemplate(
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final TF templateFactory,
-        @NotNull final String packageName,
+        @NotNull final List<String> tableNames,
         @NotNull final String repository,
         @NotNull final QueryJCommand parameters)
       throws  QueryJBuildException
