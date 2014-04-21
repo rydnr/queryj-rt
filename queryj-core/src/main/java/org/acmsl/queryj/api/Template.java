@@ -68,13 +68,6 @@ public interface Template<T extends TemplateContext>
     String getTemplateName();
 
     /**
-     * Retrieves the {@link org.acmsl.queryj.metadata.DecoratorFactory} instance.
-     * @return such instance.
-     */
-    @NotNull
-    DecoratorFactory getDecoratorFactory();
-
-    /**
      * Generates the output source code.
      * @param relevantOnly whether to include only relevant placeholders.
      * @return such output.
