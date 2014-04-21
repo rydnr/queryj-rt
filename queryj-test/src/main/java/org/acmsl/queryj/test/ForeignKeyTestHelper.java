@@ -115,6 +115,7 @@ public class ForeignKeyTestHelper
         @Nullable final String targetTable = fkEntry.get("target");
         @Nullable final String allowsNull = fkEntry.get("allows null");
 
+        if (   (sourceTable != null))
         result = null;
 
         return result;
