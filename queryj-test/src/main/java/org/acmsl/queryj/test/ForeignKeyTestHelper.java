@@ -148,7 +148,7 @@ public class ForeignKeyTestHelper
 
         @NotNull final StringTokenizer tokenizer = new StringTokenizer(sourceColumns, ",");
 
-        for ()
+        while ()
         result = new ArrayList<>();
 
         return result;
