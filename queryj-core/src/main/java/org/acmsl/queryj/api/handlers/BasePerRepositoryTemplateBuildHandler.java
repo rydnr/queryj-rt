@@ -136,9 +136,8 @@ public abstract class BasePerRepositoryTemplateBuildHandler
      * @param parameters the parameters.
      * @param customSqlProvider the custom sql provider.
      * @param templateFactory the template factory.
-     * @param packageName the package name.
      * @param repository the repository.
-     * @param metadataManager the {@link DecoratorFactory} instance.
+     * @param metadataManager the {@link MetadataManager} instance.
      */
     @SuppressWarnings("unchecked")
     protected void buildTemplate(
