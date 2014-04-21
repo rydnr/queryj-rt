@@ -448,6 +448,10 @@ public abstract class AbstractTemplateContext
         return getValue(buildDecoratorFactoryKey(), getCommand(), new DecoratorFactoryNotAvailableException());
     }
 
+    private String buildDecoratorFactoryKey()
+    {
+    }
+
     /**
      * {@inheritDoc}
      */
