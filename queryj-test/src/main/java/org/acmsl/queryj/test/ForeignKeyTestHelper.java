@@ -110,6 +110,11 @@ public class ForeignKeyTestHelper
 
     }
 
+    /**
+     * Converts given
+     * @param fkEntry
+     * @return
+     */
     @Nullable
     protected ForeignKey<String> convertToForeignKey(final Map<String, String> fkEntry)
     {
