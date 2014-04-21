@@ -194,11 +194,11 @@ public abstract class BasePerCustomResultTemplateBuildHandler
                 && (isGenerationAllowedForResult(
                         t_ResultElement, customSqlProvider, metadataManager, customResultUtils)))
             {
-                    t_Template =
-                        templateFactory.createTemplate(
-                            t_ResultElement,
-                            customSqlProvider.getSqlPropertyDAO().findByResult(t_ResultElement.getId()),
-                            parameters);
+                t_Template =
+                    templateFactory.createTemplate(
+                        t_ResultElement,
+                        customSqlProvider.getSqlPropertyDAO().findByResult(t_ResultElement.getId()),
+                        parameters);
 
                     /*
                 try
