@@ -3,7 +3,7 @@ Feature: G_CYCLE_TYPES foreign keys code compiles
   Scenario Outline: Templates bound to G_CYCLE_TYPES' foreign keys compile
 
     Given the following foreign key:
-      | source table  |         column(s)    | destination table | allows null |
+      | source    |         column(s)    | destination table | allows null |
       | G_CYCLE_TYPES | G_FIRST_DRAW_TYPE_ID |      G_DRAWS      |    false    |
 
     And the tables referred are:
