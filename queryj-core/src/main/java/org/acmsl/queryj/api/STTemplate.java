@@ -51,7 +51,7 @@ import org.jetbrains.annotations.Nullable;
  * @author <a href="mailto:chous@acm-sl.org">chous</a>
  * @param <C> the template context type.
  */
-public interface STTemplate<T extends TemplateContext>
+public interface STTemplate<C extends TemplateContext>
     extends  Template<T>
 {
     /**
