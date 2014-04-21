@@ -58,6 +58,10 @@ Feature: <fk.sourceTableName> foreign keys code compiles
     |    table     | parent table | decorated | relationship |   static    |
     | <fk.sourceTable.name> | <fk.sourceTable.parent> | <fk.sourceTable.decorated> | <fk.sourceTabel.relationship> | <fk.sourceTable.static> |
 
+    And the table containing the foreign key is:
+    |    table     | parent table | decorated | relationship |   static    |
+    | <fk.sourceTable.name> | <fk.sourceTable.parent> | <fk.sourceTable.decorated> | <fk.sourceTabel.relationship> | <fk.sourceTable.static> |
+
     And the table containing the foreign key has the following columns:
     |     table    |         column        | type      | pk    | allows null | readonly |   sequence    | keyword | boolean | length | precision |
     <fk.sourceTable.primaryKey:{ a |<cucumber_pk_declaration(attribute=a)>}; separator="\n">
