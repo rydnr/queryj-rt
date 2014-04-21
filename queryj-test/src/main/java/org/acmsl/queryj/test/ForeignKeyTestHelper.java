@@ -143,7 +143,7 @@ public class ForeignKeyTestHelper
     @NotNull
     protected List<Attribute<String>> fromCsv(@Nullable final String sourceColumns)
     {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        @NotNull final List<Attribute<String>> result = new ArrayList<>
     }
 
     /**
