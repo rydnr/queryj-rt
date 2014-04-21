@@ -59,6 +59,6 @@ public interface STTemplate<C extends TemplateContext>
      * @return such group.
      */
     @Nullable
-    public @Nullable
+    public
     STGroup retrieveGroup();
 }
