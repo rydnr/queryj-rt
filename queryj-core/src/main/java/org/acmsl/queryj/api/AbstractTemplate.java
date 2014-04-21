@@ -230,11 +230,10 @@ public abstract class AbstractTemplate<C extends TemplateContext>
     /**
      * Builds a {@link AbstractTemplate} with given context.
      * @param context the context.
-     * @param decoratorFactory the {@link DecoratorFactory} instance.
      */
-    protected AbstractTemplate(@NotNull final C context, @NotNull final DecoratorFactory decoratorFactory)
+    protected AbstractTemplate(@NotNull final C context)
     {
-        this(context, Literals.DEFAULT_PLACEHOLDER_PACKAGE, decoratorFactory);
+        this(context, Literals.DEFAULT_PLACEHOLDER_PACKAGE);
     }
 
     /**
