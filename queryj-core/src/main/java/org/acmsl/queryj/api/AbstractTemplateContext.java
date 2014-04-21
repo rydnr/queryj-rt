@@ -435,6 +435,10 @@ public abstract class AbstractTemplateContext
         return QueryJSettings.VERSION;
     }
 
+
+    /**
+     * Retrieves the {@link DecoratorFactory }
+     */
     /**
      * {@inheritDoc}
      */
