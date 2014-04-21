@@ -147,8 +147,10 @@ public class <C.class_name>
         @NotNull final <def.type.capitalized>TemplateContext t_Context =
             new <def.type.capitalized>TemplateContext(foreignKey, command);
 
+
         new QueryJCommandWrapper\<String>(command).setSetting(
-            Literals.FILE_NAME, retrieveTemplateFileName(
+            Literals.FILE_NAME, t_strFileName);
+
         return new <def.name.noExtension>Template(t_Context);
     }
 
