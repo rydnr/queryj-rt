@@ -93,8 +93,6 @@ public class PerTableTemplateContext
      * @param command the {@link QueryJCommand}.
      */
     public PerTableTemplateContext(
-        @NotNull final String fileName,
-        @NotNull final String packageName,
         @NotNull final String tableName,
         @NotNull final List<Row<String>> staticValues,
         @NotNull final QueryJCommand command)
