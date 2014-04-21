@@ -71,8 +71,6 @@ public interface PerTableTemplateFactory<T extends PerTableTemplate<C>, C extend
     @Nullable
     public T createTemplate(
         @NotNull final QueryJCommand command,
-        @NotNull final DecoratorFactory decoratorFactory,
-        @NotNull final String packageName,
         @NotNull final String tableName,
         @NotNull final List<Row<String>> staticContents);
 }
