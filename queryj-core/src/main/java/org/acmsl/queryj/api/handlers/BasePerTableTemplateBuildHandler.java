@@ -51,7 +51,6 @@ import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
 import org.acmsl.queryj.tools.PackageUtils;
 import org.acmsl.queryj.metadata.vo.Row;
 import org.acmsl.queryj.metadata.vo.Table;
-import org.acmsl.queryj.api.dao.DAOTemplateUtils;
 import org.acmsl.queryj.api.MetaLanguageUtils;
 
 /*
