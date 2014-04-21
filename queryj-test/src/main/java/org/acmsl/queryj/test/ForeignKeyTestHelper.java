@@ -167,7 +167,8 @@ public class ForeignKeyTestHelper
                         0,
                         0,
                         0,
-                        allowsNull)
+                        allowsNull,
+                        null);
                 )
             }
         }
