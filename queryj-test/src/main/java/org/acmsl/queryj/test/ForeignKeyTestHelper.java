@@ -111,6 +111,7 @@ public class ForeignKeyTestHelper
         @Nullable final ForeignKey<String> result;
 
         @Nullable final String sourceTable = fkEntry.get("source");
+        @NotNull final
         @Nullable final String sourceColumns = fkEntry.get("column(s)");
         @Nullable final String targetTable = fkEntry.get("target");
         @Nullable final boolean allowsNull = Boolean.valueOf(fkEntry.get("allows null"));
