@@ -86,9 +86,9 @@ public abstract class AbstractBasePerForeignKeyTemplate<C extends PerForeignKeyT
      */
     @SuppressWarnings("unused")
     public AbstractBasePerForeignKeyTemplate(
-        @NotNull final C context, @NotNull final DecoratorFactory decoratorFactory)
+        @NotNull final C contexty)
     {
-        super(context, decoratorFactory);
+        super(context, );
     }
 
     /**
