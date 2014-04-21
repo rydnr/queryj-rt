@@ -68,7 +68,6 @@ Feature: <fk.sourceTableName> foreign keys code compiles
     <fk.sourceTable.primaryKey:{ a |<cucumber_pk_declaration(attribute=a)>}; separator="\n">
     <fk.sourceTable.own.minus.primaryKey:{ a |<cucumber_nonpk_declaration(attribute=a)>}; separator="\n">
     <fk.targetTable.primaryKey:{ a |<cucumber_pk_declaration(attribute=a)>}; separator="\n">
-    <fk.targetTable.own.minus.primaryKey:{ a |<cucumber_nonpk_declaration(attribute=a)>}; separator="\n">
 
     And the foreign key is:
     | source table | source columns | target table | allows null |
