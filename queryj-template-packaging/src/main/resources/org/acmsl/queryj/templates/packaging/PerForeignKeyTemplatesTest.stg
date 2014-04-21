@@ -352,7 +352,7 @@ public class PerForeignKeyTemplatesTest
 
             @NotNull final MetadataManager metadataManager =
                 retrieveMetadataManager(
-                    engine, new ArrayList\<>(tableMap.values()), new ArrayList<>(0), decoratorFactory);
+                    engine, new ArrayList\<>(tableMap.values()), new ArrayList\<>(0), decoratorFactory);
 
             new QueryJCommandWrapper<MetadataManager>(t_Command).setSetting(
                 DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, metadataManager);
