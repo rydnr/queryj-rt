@@ -370,6 +370,7 @@ public class PerForeignKeyTemplatesTest
             EasyMock.expect(t_CustomSqlProvider.getSqlDAO()).andReturn(t_SqlDAO);
             EasyMock.expect(t_SqlDAO.containsRepositoryScopedSql()).andReturn(false);
             EasyMock.replay(t_CustomSqlProvider);
+            EasyMock.repla(
             new QueryJCommandWrapper\<CustomSqlProvider>(t_Command).setSetting(
                 CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, t_CustomSqlProvider);
 
