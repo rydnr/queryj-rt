@@ -3,6 +3,7 @@ Feature: G_CYCLE_TYPES foreign keys code compiles
   Scenario Outline: Templates bound to G_CYCLE_TYPES' foreign keys compile
 
     Given the following foreign key:
+      | G_CYCLE_TYPES | G_FIRST_DRAW_TYPE_ID | NUMBER | false | false | false |  |  | false | 22 | 0 |
 
     And the table containing the foreign key is:
     |    table     | parent table | decorated | relationship |   static    |
