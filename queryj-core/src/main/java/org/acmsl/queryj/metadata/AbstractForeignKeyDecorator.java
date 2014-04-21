@@ -388,6 +388,7 @@ public abstract class AbstractForeignKeyDecorator
 
     /**
      * Checks whether this foreign key allows null or not.
+     * @param <V> the attribute type.
      * @return such condition.
      */
     protected <V> boolean isNullable(@NotNull final List<Attribute<V>> attributes)
