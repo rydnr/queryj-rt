@@ -365,7 +365,7 @@ public class PerForeignKeyTemplatesTest
                 EasyMock.createNiceMock(CustomSqlProvider.class);
             EasyMock.replay(t_CustomSqlProvider);
             new QueryJCommandWrapper\<CustomSqlProvider>(t_Command).setSetting(
-                DecoratorFactory.class.getName(), decoratorFactory);
+                CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, t_CustomSqlProvider);
 
             new QueryJCommandWrapper\<DecoratorFactory>(t_Command).setSetting(
                 DecoratorFactory.class.getName(), decoratorFactory);
