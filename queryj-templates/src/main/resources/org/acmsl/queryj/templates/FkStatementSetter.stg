@@ -159,7 +159,7 @@ class(fk, C) ::= <<
   template="org/acmsl/queryj/templates/FkStatementSetter.stg", C=C)>
  */
 <class_annotations(C=C)>
-public class <fk.sourceTableName.voName>By<fk.targetTableName.voName>StatementSetter
+public class <fk.source.name.voName>By<fk.target.name.voName>StatementSetter
     implements  PreparedStatementSetter
 {
 }
