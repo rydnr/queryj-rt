@@ -89,8 +89,8 @@ public interface TemplateContext
     String getVersion();
 
     /**
-     * Retrieves the decorator
-     * @return
+     * Retrieves the decorator factory.
+     * @return such {@link DecoratorFactory}
      */
     @NotNull
     DecoratorFactory getDecoratorFactory();
