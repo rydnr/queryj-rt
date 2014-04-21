@@ -121,4 +121,5 @@ public interface Literals
     String NUMBER_L = "number";
     String OBJECT_C = "Object";
     String RESULT_NAME = "resultName";
+    String TEMPLATE_NAME="templateName";
 }
