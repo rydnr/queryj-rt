@@ -437,7 +437,8 @@ public abstract class AbstractTemplateContext
 
 
     /**
-     * Retrieves the {@link DecoratorFactory }
+     * Retrieves the {@link DecoratorFactory} instance.
+     * @param
      */
     /**
      * {@inheritDoc}
