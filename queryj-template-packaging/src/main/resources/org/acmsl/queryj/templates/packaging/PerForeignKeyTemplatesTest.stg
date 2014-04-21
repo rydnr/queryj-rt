@@ -266,7 +266,7 @@ public class PerForeignKeyTemplatesTest
      */
     protected List\<ForeignKey\<String\>> defineInputColumns(
         @NotNull final DataTable columnInfo,
-        @NotNull final Map\<String, List\<ForeignKey\<String\>> foreignKeys,
+        @NotNull final Map\<String, TableList\<ForeignKey\<String\>> foreignKeys,
         @NotNull final TableTestHelper helper)
     {
         return helper.defineInputColumns(columnInfo, foreignKeys);
