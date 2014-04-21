@@ -105,17 +105,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
     public boolean handle(@NotNull final QueryJCommand command)
         throws  QueryJBuildException
     {
-        return handle(command, retrieveProjectPackage(command));
-    }
-
-    /**
-     * Handles given information.
-     * @param parameters the parameters.
-     * @param projectPackage the project package.
-     * @return <code>true</code> if the chain should be stopped.
-     */
-    protected boolean handle(@NotNull final QueryJCommand parameters, @NotNull final String projectPackage)
-        throws  QueryJBuildException
     {
         buildTemplate(
             parameters,
