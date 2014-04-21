@@ -55,7 +55,7 @@ Feature: <fk.sourceTableName> foreign keys code compiles
   Scenario Outline: Templates bound to <fk.sourceTableName>' foreign keys compile
 
     Given the following foreign key:
-    | source | column(s)| destination | relationship |   static    |
+    | source | column(s)| destination |
     | <fk.sourceTable.name> | <fk.sourceTable.parent> | <fk.sourceTable.decorated> | <fk.sourceTabel.relationship> | <fk.sourceTable.static> |
 
     And the table containing the foreign key is:
