@@ -327,7 +327,7 @@ public class PerForeignKeyTemplatesTest
         @NotNull final String templateName,
         @NotNull final String engine,
         @NotNull final List\<ForeignKey\<String\>> foreignKeys,
-        @Not
+        @NotNull final Map\<String,
         @NotNull final Map\<String, File> outputFiles)
     {
         @Nullable final PerForeignKeyTemplateGenerator\<PerForeignKeyTemplate\<PerForeignKeyTemplateContext>, PerForeignKeyTemplateContext> generator =
