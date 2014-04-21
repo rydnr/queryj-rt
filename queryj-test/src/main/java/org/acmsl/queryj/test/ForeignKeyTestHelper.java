@@ -48,6 +48,7 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Helper class for per-foreign key Cucumber tests.
