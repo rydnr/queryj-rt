@@ -209,7 +209,7 @@ public class PerForeignKeyTemplatesTest
      */
     protected void defineInputTables(
         @NotNull final DataTable tableInfo,
-        @NotNull final Map\<String, Table\<String, Attribute<String>, List\<Attribute\<String>>>> tables,
+        @NotNull final Map\<String, Table\<String, Attribute<String>, List\<Attribute\<String>\>> tables,
         @NotNull final TableTestHelper helper)
     {
         helper.defineInputTables(tableInfo, tables);
