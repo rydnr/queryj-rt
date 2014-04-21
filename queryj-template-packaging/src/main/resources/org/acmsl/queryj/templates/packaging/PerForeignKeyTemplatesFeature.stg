@@ -60,8 +60,8 @@ Feature: <fk.sourceTableName> foreign keys code compiles
 
     And the referred tables are:
     |    table     | parent table | decorated | relationship |   static    |
-    | <fk.sourceTable.name> | <fk.sourceTable.parent> | <fk.sourceTable.decorated> | <fk.sourceTabel.relationship> | <fk.sourceTable.static> |
-    | <fk.targetTable.name> | <fk.targetTable.parent> | <fk.targetTable.decorated> | <fk.sourceTabel.relationship> | <fk.sourceTable.static> |
+    | <fk.sourceTable.name> | <fk.sourceTable.parent> | <fk.sourceTable.decorated> | <fk.sourceTable.relationship> | <fk.sourceTable.static> |
+    | <fk.targetTable.name> | <fk.targetTable.parent> | <fk.targetTable.decorated> | <fk.targetTable.relationship> | <fk.sourceTable.static> |
 
     And the table containing the foreign key has the following columns:
     |     table    |         column        | type      | pk    | allows null | readonly |   sequence    | keyword | boolean | length | precision |
