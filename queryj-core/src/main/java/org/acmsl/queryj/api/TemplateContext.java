@@ -86,4 +86,6 @@ public interface TemplateContext
      */
     @NotNull
     String getVersion();
+
+    @NotNull
 }
