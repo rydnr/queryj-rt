@@ -53,7 +53,7 @@ import org.checkthread.annotations.ThreadSafe;
 
 /**
  * Is able to resolve "package" placeholders.
- *
+ * @param <C> the template context type.
  * @author <a href="mailto:chous@acm-sl.org">chous</a>
  * @since 3.0
  * Created: 2013/05/05
