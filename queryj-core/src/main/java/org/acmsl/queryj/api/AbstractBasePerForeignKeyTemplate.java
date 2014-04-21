@@ -39,7 +39,6 @@ package org.acmsl.queryj.api;
 import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.api.exceptions.InvalidPerForeignKeyTemplateException;
 import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
-import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.vo.ForeignKey;
 
 /*
