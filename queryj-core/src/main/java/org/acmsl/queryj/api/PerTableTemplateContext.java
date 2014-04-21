@@ -86,8 +86,6 @@ public class PerTableTemplateContext
 
     /**
      * Creates a {@code PerTableTemplateContext} with given information.
-     * @param fileName the file name.
-     * @param packageName the package name.
      * @param tableName the table name.
      * @param staticValues the static values.
      * @param command the {@link QueryJCommand}.
