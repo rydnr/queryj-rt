@@ -72,7 +72,8 @@ public abstract class AbstractBasePerRepositoryTemplate<C extends PerRepositoryT
      */
     public AbstractBasePerRepositoryTemplate(@NotNull final C context)
     {
-        super(context, decoratorFactory) }
+        super(context);
+    }
 
     /**
      * Builds a context-specific exception.
