@@ -91,7 +91,9 @@ public class ForeignKeyTestHelper
     {
         @NotNull final List<Map<String, String>> fkEntries = fkInfo.asMaps();
 
-        @Nullable ForeignKey<String>
+        @Nullable ForeignKey<String>;
+
+
 
     }
 
