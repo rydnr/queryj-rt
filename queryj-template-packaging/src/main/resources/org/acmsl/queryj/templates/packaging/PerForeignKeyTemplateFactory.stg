@@ -147,7 +147,7 @@ public class <C.class_name>
         @NotNull final <def.type.capitalized>TemplateContext t_Context =
             new <def.type.capitalized>TemplateContext(foreignKey, command);
 
-        new QueryJ
+        new QueryJCommandWrapper\<String>(
         return new <def.name.noExtension>Template(t_Context);
     }
 
