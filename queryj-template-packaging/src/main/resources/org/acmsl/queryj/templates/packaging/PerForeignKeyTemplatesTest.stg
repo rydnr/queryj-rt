@@ -199,7 +199,7 @@ public class PerForeignKeyTemplatesTest
      * @param tableInfo the information about the foreign keys.
      */
     @SuppressWarnings("unused")
-    @Given("^the following foreign key is:$")
+    @Given("^the following foreign key :$")
     public void defineInputForeignKeys(@NotNull final DataTable fkInfo)
     {
         defineInputForeignKeys(fkInfo, getTables(), TableTestHelper.getInstance());
