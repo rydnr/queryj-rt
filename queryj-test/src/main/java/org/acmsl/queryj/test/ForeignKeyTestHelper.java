@@ -127,7 +127,8 @@ public class ForeignKeyTestHelper
             && (targetTable != null))
         {
             result =
-                new ForeignKeyValueObject(sourceTable, columns, targetTable, allowsNull);
+                new ForeignKeyValueObject(
+                    sourceTable, columns, targetTable, allowsNull);
         }
         else
         {
