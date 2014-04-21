@@ -157,8 +157,7 @@ public class <C.class_name>
     @NotNull
     protected <def.name.noExtension>Template createTemplate(
         @NotNull final ForeignKey\<String> foreignKey,
-        @NotNull final QueryJCommand command,
-        @NotNull final QueryJCommandUtils queryJCommandUtils)
+        @NotNull final QueryJCommand command)
     {
         @NotNull final <def.type.capitalized>TemplateContext t_Context =
             new <def.type.capitalized>TemplateContext(
