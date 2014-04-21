@@ -95,7 +95,6 @@ public class PerCustomResultTemplateContext
     {
         super(result.getId(), command);
 
-        immutableSetValue(buildPackageNameKey(), packageName, command);
         immutableSetValue(buildResultKey(), result, command);
         immutableSetValue(buildPropertiesKey(), properties, command);
     }
