@@ -347,7 +347,6 @@ public abstract class AbstractTemplateContext
 
     /**
      * Builds a file name key.
-     * @return such key.
      */
     @NotNull
     protected String buildFileNameKey()
