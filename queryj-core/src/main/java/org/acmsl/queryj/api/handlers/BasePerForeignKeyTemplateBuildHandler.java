@@ -130,8 +130,6 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
             parameters,
             metadataManager,
             templateFactory,
-            retrieveProjectPackage(parameters),
-            retrieveDecoratorFactory(),
             retrieveForeignKeys(parameters, metadataManager));
     }
 
