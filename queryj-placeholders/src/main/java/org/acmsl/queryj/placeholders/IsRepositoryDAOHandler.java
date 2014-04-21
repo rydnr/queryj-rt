@@ -65,6 +65,9 @@ import org.checkthread.annotations.ThreadSafe;
 public class IsRepositoryDAOHandler
     extends AbstractTemplateContextFillHandler<QueryJTemplateContext, Boolean>
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = 5018265597468636823L;
 
     /**
