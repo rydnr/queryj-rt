@@ -77,7 +77,7 @@ public abstract class AbstractBasePerCustomResultTemplate<C extends PerCustomRes
      */
     @SuppressWarnings("unused")
     public AbstractBasePerCustomResultTemplate(
-        @NotNull final C context, @NotNull final DecoratorFactory decoratorFactory)
+        @NotNull final C context)
     {
         super(context, decoratorFactory);
     }
