@@ -154,7 +154,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
         {
             @Nullable final T t_Template =
                 createTemplate(
-                    decoratorFactory,
                     templateFactory,
                     packageName,
                     repository,
