@@ -162,5 +162,6 @@ class(fk, C) ::= <<
 public class <fk.source.name.voName>By<fk.target.name.voName>StatementSetter
     implements  PreparedStatementSetter
 {
+
 }
 >>
