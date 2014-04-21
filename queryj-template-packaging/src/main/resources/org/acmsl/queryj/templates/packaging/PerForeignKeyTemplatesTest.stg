@@ -269,7 +269,7 @@ public class PerForeignKeyTemplatesTest
         @NotNull final Map\<String, Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables,
         @NotNull final TableTestHelper helper)
     {
-        return helper.defineInputColumns(columnInfo, foreignKeys);
+        return helper.defineInputColumns(columnInfo, tables);
     }
 
     /**
