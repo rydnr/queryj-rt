@@ -194,8 +194,6 @@ public abstract class BasePerCustomResultTemplateBuildHandler
                 && (isGenerationAllowedForResult(
                         t_ResultElement, customSqlProvider, metadataManager, customResultUtils)))
             {
-                try
-                {
                     t_Template =
                         templateFactory.createTemplate(
                             t_ResultElement,
@@ -203,6 +201,8 @@ public abstract class BasePerCustomResultTemplateBuildHandler
                             parameters);
 
                     /*
+                try
+                {
                     retrievePackage(
                         t_ResultElement,
                         customSqlProvider,
