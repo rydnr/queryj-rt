@@ -88,7 +88,7 @@ public abstract class AbstractBasePerForeignKeyTemplate<C extends PerForeignKeyT
     public AbstractBasePerForeignKeyTemplate(
         @NotNull final C contexty)
     {
-        super(context, );
+        super(context);
     }
 
     /**
