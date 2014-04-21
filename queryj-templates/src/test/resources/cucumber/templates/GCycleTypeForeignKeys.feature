@@ -4,7 +4,7 @@ Feature: G_CYCLE_TYPES foreign keys code compiles
 
     Given the following foreign key:
       | source table  |         column(s)    | destination table | allows null |
-      | G_CYCLE_TYPES | G_FIRST_DRAW_TYPE_ID | G_DRAWS | false | false | false |  |  | false | 22 | 0 |
+      | G_CYCLE_TYPES | G_FIRST_DRAW_TYPE_ID |      G_DRAWS      | false | false | false |  |  | false | 22 | 0 |
 
     And the table containing the foreign key is:
     |    table     | parent table | decorated | relationship |   static    |
