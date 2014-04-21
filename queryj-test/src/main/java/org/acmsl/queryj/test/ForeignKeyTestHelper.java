@@ -105,8 +105,9 @@ public class ForeignKeyTestHelper
 
     }
 
-    private ForeignKey<String> convertToForeignKey(final Map<String,String> fkEntry)
+    private ForeignKey<String> convertToForeignKey(final Map<String, String> fkEntry)
     {
+        return null;  //To change body of created methods use File | Settings | File Templates.
     }
 
     /**
