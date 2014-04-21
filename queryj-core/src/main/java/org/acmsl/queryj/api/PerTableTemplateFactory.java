@@ -61,11 +61,9 @@ public interface PerTableTemplateFactory<T extends PerTableTemplate<C>, C extend
 {
     /**
      * Generates a <i>per-table</i> template.
-     * @param command the command.
-     * @param decoratorFactory the {@link DecoratorFactory} instance.
-     * @param packageName the package name.
      * @param tableName the table name.
      * @param staticContents the table's static contents (optional).
+     * @param command the command.
      * @return a template.
      */
     @Nullable
