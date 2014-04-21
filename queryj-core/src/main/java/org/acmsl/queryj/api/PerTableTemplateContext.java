@@ -96,8 +96,7 @@ public class PerTableTemplateContext
         @NotNull final QueryJCommand command)
     {
         super(tableName, command);
-        immutableSetValue(buildFileNameKey(), fileName, command);
-        immutableSetValue(buildPackageNameKey(), packageName, command);
+
         immutableSetValue(buildTableNameKey(), tableName, command);
         immutableSetValue(buildStaticValuesKey(), staticValues, command);
     }
