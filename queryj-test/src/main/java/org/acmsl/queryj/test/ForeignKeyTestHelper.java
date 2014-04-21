@@ -111,7 +111,7 @@ public class ForeignKeyTestHelper
     }
 
     /**
-     * Converts given
+     * Converts given foreign key described in a Cucumber feature, to
      * @param fkEntry
      * @return
      */
