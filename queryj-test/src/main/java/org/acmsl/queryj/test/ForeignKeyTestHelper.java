@@ -95,7 +95,7 @@ public class ForeignKeyTestHelper
 
         for (@NotNull final Map<String, String> fkEntry : fkEntries)
         {
-
+            foreignKey = convertToForeignKey()
         }
 
     }
