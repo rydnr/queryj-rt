@@ -41,7 +41,6 @@ import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.api.exceptions.InvalidPerCustomResultTemplateException;
 import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
 import org.acmsl.queryj.customsql.Result;
-import org.acmsl.queryj.metadata.DecoratorFactory;
 
 /*
  * Importing StringTemplate classes.
