@@ -167,7 +167,6 @@ public class <C.class_name>
                 retrieveTemplateFileName(
                     foreignKey.getSourceTableName(),
                     queryJCommandUtils.retrieveMetadataManager(command)),
-                packageName,
                 command);
 
         return new <def.name.noExtension>Template(t_Context);
