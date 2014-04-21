@@ -210,7 +210,6 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
                         /*
                         retrievePackage(t_Sql, engineName, parameters),
                         */
-                        decoratorFactory,
                         parameters));
             }
         }
