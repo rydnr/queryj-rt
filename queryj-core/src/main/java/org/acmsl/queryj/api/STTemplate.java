@@ -60,11 +60,4 @@ public interface STTemplate<C extends TemplateContext>
      */
     public @Nullable
     STGroup retrieveGroup();
-
-    /**
-     * Retrieves the template name.
-     * @return such name.
-     */
-    public @NotNull
-    String getTemplateName();
 }
