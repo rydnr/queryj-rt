@@ -132,7 +132,7 @@ second_line_description(fk) ::= <<
  Generates the second line of the generated file description.
  @param fk the foreign key.
 !>
-the foreign key between <fk.source> and <fk.target>
+the foreign key between <fk.source.name> and <fk.target>
 >>
 
 third_line_description(fk) ::= <<
