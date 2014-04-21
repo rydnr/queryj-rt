@@ -152,7 +152,6 @@ public class ForeignKeyTestHelper
         {
 
         }
-        result = new ArrayList<>();
 
         return result;
     }
