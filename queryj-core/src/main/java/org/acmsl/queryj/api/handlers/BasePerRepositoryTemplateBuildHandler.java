@@ -154,7 +154,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
             @Nullable final T t_Template =
                 createTemplate(
                     templateFactory,
-                    metadataManager,
+                    metadataManager.getTableDAO().findAllTableNames(),
                     repository,
                     parameters);
 
