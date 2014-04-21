@@ -264,7 +264,7 @@ public class PerForeignKeyTemplatesTest
      * @param helper the {@link TableTestHelper} instance.
      * @return the foreign keys.
      */
-    protected List\<Table\<String>, Attribute\<String>, List\<Attribute\<String>>> defineInputColumns(
+    protected List\<Table\<String>, Attribute\<String>, List\<Attribute\<String>\>> defineInputColumns(
         @NotNull final DataTable columnInfo,
         @NotNull final Map\<String, Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables,
         @NotNull final TableTestHelper helper)
