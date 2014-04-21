@@ -111,9 +111,9 @@ public class ForeignKeyTestHelper
     }
 
     /**
-     * Converts given foreign key described in a Cucumber feature, to
-     * @param fkEntry
-     * @return
+     * Converts given foreign key described in a Cucumber feature, to a {@link ForeignKey}.
+     * @param fkEntry the Cucumber information.
+     * @return the {@link ForeignKey}.
      */
     @Nullable
     protected ForeignKey<String> convertToForeignKey(final Map<String, String> fkEntry)
