@@ -118,7 +118,6 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
      * Builds the templates.
      * @param parameters the parameters.
      * @param metadataManager the database metadata manager.
-     * @param customSqlProvider the {@link CustomSqlProvider} instance.
      * @param templateFactory the template factory.
      */
     protected void buildTemplates(
