@@ -155,7 +155,8 @@ public class ForeignKeyTestHelper
                 new AttributeIncompleteValueObject(
                     tokenizer.nextToken(),
                     -1,
-                    "",)
+                    "",
+                    )
             )
         }
 
