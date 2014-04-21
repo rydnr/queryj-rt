@@ -349,7 +349,8 @@ public class PerForeignKeyTemplatesTest
             @NotNull final QueryJCommand t_Command =
                 new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
-            new QueryJCommandWrapper\<DecoratorFactory>
+            new QueryJCommandWrapper\<DecoratorFactory>(t_Command).setSetting(
+
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
                 QueryJSettings.PACKAGE, BASE_PACKAGE_NAME);
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
