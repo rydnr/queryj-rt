@@ -74,7 +74,7 @@ public class PerForeignKeyTemplateContext
     private static final long serialVersionUID = 1350908613901423440L;
 
     /**
-     * Creates a {@link PerForeignKeyTemplateContext} with given information.
+     * Creates a {@code PerForeignKeyTemplateContext} with given information.
      * @param fileName the file name.
      * @param packageName the package name.
      * @param foreignKey the {@link ForeignKey} instance.
