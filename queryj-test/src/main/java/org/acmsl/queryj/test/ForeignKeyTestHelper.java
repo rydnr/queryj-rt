@@ -127,7 +127,10 @@ public class ForeignKeyTestHelper
             result =
                 new ForeignKeyValueObject(sourceTable, columns, targetTable, allowsNull);
         }
-        result = null;
+        else
+        {
+            result = null;
+        }
 
         return result;
     }
