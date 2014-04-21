@@ -88,7 +88,7 @@ public class PerForeignKeyTemplateContext
     {
         super("fk" + foreignKey.getFkName(), command);
 
-        immutableSetValue(buildFileNameKey());
+        immutableSetValue(buildFileNameKey(), fileName, command);
         immutableSetValue(buildPackageNameKey(), packageName, command);
         immutableSetValue(buildForeignKeyKey(), foreignKey, command);
     }
