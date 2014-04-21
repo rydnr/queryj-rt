@@ -201,6 +201,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
         return
             templateFactory.createTemplate(
                 repository,
+                tableNames,
                 parameters);
     }
 
