@@ -80,6 +80,7 @@ public class PerForeignKeyTemplateContext
      * @param command the {@link QueryJCommand} instance.
      */
     public PerForeignKeyTemplateContext(
+        @NotNull final String fileName,
         @NotNull final String packageName,
         @NotNull final ForeignKey<String> foreignKey,
         @NotNull final QueryJCommand command)
