@@ -73,7 +73,6 @@ import java.util.List;
  * @param <C> the template context class.
  * @param <TF> the template factory class.
  */
-@SuppressWarnings("unused")
 public abstract class BasePerForeignKeyTemplateBuildHandler
     <T extends PerForeignKeyTemplate<C>,
      C extends PerForeignKeyTemplateContext,
