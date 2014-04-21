@@ -236,6 +236,9 @@ public class CachingForeignKeyDecorator
         return result;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     @NotNull
     public String toString()
