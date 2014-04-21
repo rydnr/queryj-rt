@@ -62,7 +62,6 @@ import org.acmsl.commons.utils.ClassLoaderUtils;
 /*
  * Importing ANTLR classes.
  */
-import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.antlr.v4.parse.ANTLRParser;
 
 /*
