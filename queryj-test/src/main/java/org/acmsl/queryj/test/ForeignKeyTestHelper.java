@@ -41,6 +41,7 @@ package org.acmsl.queryj.test;
 import cucumber.api.DataTable;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.ForeignKey;
+import org.acmsl.queryj.metadata.vo.ForeignKeyValueObject;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -122,6 +123,9 @@ public class ForeignKeyTestHelper
         if (   (sourceTable != null)
             && (columns.size() > 0)
             && (targetTable != null))
+        {
+            result = new ForeignKeyValueObject()
+        }
         result = null;
 
         return result;
