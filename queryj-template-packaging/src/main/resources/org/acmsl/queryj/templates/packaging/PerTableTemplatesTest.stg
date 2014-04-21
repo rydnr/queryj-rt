@@ -518,8 +518,6 @@ public class PerTableTemplatesTest
                 @Nullable final PerTableTemplate\<PerTableTemplateContext> template =
                     templateFactory.createTemplate(
                         t_Command,
-                        decoratorFactory,
-                        packageName,
                         table.getName(),
                         tableRows);
 
