@@ -49,6 +49,7 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -112,7 +113,7 @@ public class ForeignKeyTestHelper
         @Nullable final ForeignKey<String> result;
 
         @Nullable final String sourceTable = fkEntry.get("source");
-        @NotNull final List<Attribute<String>> columns =
+        @NotNull final List<Attribute<String>> columns = new ArrayList<>()
         @Nullable final String sourceColumns = fkEntry.get("column(s)");
         @Nullable final String targetTable = fkEntry.get("target");
         @Nullable final boolean allowsNull = Boolean.valueOf(fkEntry.get("allows null"));
