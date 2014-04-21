@@ -34,7 +34,6 @@ package org.acmsl.queryj.api;
 import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.api.exceptions.InvalidPerTableTemplateException;
 import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
-import org.acmsl.queryj.metadata.DecoratorFactory;
 
 /*
  * Importing StringTemplate classes.
