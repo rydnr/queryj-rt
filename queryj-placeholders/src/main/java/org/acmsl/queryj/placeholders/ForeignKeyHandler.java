@@ -64,7 +64,9 @@ import org.checkthread.annotations.ThreadSafe;
 public class ForeignKeyHandler
     extends AbstractTemplateContextFillHandler<PerForeignKeyTemplateContext, ForeignKeyDecorator>
 {
-
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = -8241292451651391465L;
 
     /**
