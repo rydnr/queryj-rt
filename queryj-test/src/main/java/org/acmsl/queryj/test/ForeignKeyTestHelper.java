@@ -242,10 +242,10 @@ public class ForeignKeyTestHelper
                     }
                     else
                     {
-                        result =
+                        result = attribute.getTypeId();
                     }
 
-                    return
+                    return result;
                 }
 
                 @NotNull
