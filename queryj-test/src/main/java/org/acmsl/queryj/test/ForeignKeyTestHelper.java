@@ -189,7 +189,8 @@ public class ForeignKeyTestHelper
                 @Nullable final Table<String, Attribute<String>, List<Attribute<String>>> table =
                     tables.get(sourceTable);
 
-                @Nullable final Attribute<String> attribute = findAttribute(attributeName, table);
+                @Nullable final Attribute<String> attribute =
+                    findAttribute(attributeName, table);
 
                 if (attribute != null)
                 {
