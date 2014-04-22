@@ -271,11 +271,11 @@ public class ForeignKeyTestHelper
                 @Override
                 public String getComment()
                 {
-                    @NotNull final String result;
+                    @Nullable final String result;
 
                     @NotNull final Attribute<String> attribute = resolveAttribute();
 
-                    result = attribute.getType();
+                    result = attribute.getComment();
 
                     return result;
                 }
@@ -287,7 +287,7 @@ public class ForeignKeyTestHelper
 
                     @NotNull final Attribute<String> attribute = resolveAttribute();
 
-                    result = attribute.getType();
+                    result = attribute.isExternallyManaged();
 
                     return result;
                 }
@@ -296,7 +296,13 @@ public class ForeignKeyTestHelper
                 @Override
                 public String getKeyword()
                 {
-                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                    @NotNull final String result;
+
+                    @NotNull final Attribute<String> attribute = resolveAttribute();
+
+                    result = attribute.getType();
+
+                    return result;
                 }
 
                 @Nullable
