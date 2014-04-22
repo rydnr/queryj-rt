@@ -104,7 +104,8 @@ public class ForeignKeyTestHelperTest
 
     /**
      * Tests whether defineInputForeignKey() builds a foreign key which
-     * uses the Table information passed in order to provide the
+     * uses the Table information passed in order to provide the metadata
+     * about each one of the attributes.
      */
     @Test
     public void defineInputForeignKeys_takes_into_account_the_table_data()
