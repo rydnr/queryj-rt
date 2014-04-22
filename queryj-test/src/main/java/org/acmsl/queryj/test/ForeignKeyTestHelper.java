@@ -216,7 +216,7 @@ public class ForeignKeyTestHelper
             new Attribute<String>()
             {
                 @Nullable
-                protected Attribute<String>
+                protected Attribute<String> find
                 @NotNull
                 @Override
                 public String getName()
