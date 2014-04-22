@@ -271,13 +271,25 @@ public class ForeignKeyTestHelper
                 @Override
                 public String getComment()
                 {
-                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                    @NotNull final String result;
+
+                    @NotNull final Attribute<String> attribute = resolveAttribute();
+
+                    result = attribute.getType();
+
+                    return result;
                 }
 
                 @Override
                 public boolean isExternallyManaged()
                 {
-                    return false;  //To change body of implemented methods use File | Settings | File Templates.
+                    final boolean result;
+
+                    @NotNull final Attribute<String> attribute = resolveAttribute();
+
+                    result = attribute.getType();
+
+                    return result;
                 }
 
                 @Nullable
