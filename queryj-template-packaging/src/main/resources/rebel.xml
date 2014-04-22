@@ -6,13 +6,6 @@
         </dir>
         <dir name="${queryjroot}/queryj-template-packaging/target/classes">
         </dir>
-        <!-- ugly workaround -->
-        <dir name="${queryjroot}/queryj-templates/src/main/resources">
-        </dir>
-        <dir name="${queryjroot}/queryj-templates/target/classes">
-        </dir>
-        <dir name="${queryjroot}/queryj-templates/target/test-classes">
-        </dir>
     </classpath>
 
 </application>
