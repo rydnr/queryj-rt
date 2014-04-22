@@ -291,6 +291,7 @@ public class ForeignKeyTestHelperTest
 
         Assert.assertTrue(foreignKeys.size() == 1);
 
+        // The table map is filled after the foreign key is built.
         tableMap.put("G_CYCLE_TYPES", table);
 
         @NotNull final List<Attribute<String>> attributes = foreignKeys.get(0).getAttributes();
