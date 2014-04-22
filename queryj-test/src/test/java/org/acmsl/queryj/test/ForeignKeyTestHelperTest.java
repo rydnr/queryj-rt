@@ -110,6 +110,19 @@ public class ForeignKeyTestHelperTest
     @Test
     public void defineInputForeignKeys_takes_into_account_the_table_data()
     {
+        @NotNull final ForeignKeyTestHelper instance = ForeignKeyTestHelper.getInstance();
 
+        @NotNull final String[] columnNames = { "source", "column(s)", "target", "allows null" };
+        @NotNull final Map<String, String> row = new HashMap<>(4);
+        row.put("source", "G_CYCLE_TYPES");
+        row.put("column(s)", "G_FIRST_DRAW_TYPE_ID");
+        row.put("target", "G_DRAWS");
+        row.put("allows null", "false");
+        @NotNull final List<?> data = Arrays.asList(row);
+        @NotNull final DataTable dataTable = DataTable.create(data, Locale.getDefault(), columnNames);
+
+        @NotNull final List<ForeignKey<String>> foreignKeys = new ArrayList<>();
+
+        instance.defineInputForeignKey(dataTable, foreignKeys);
     }
 }
