@@ -93,7 +93,7 @@ public class ForeignKeyTestHelperTest
         row.put("target", "G_DRAWS");
         row.put("allows null", "false");
         @NotNull final List<?> data =
-            Arrays.asList(
+            Arrays.asList(row
                 "G_CYCLE_TYPES", "G_FIRST_DRAW_TYPE_ID", "G_DRAWS", "false");
         @NotNull final DataTable dataTable = DataTable.create(data, Locale.getDefault(), columnNames);
 
