@@ -65,6 +65,7 @@ import org.junit.runners.JUnit4;
 /*
  * Importing JDK classes.
  */
+import java.sql.Types;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -136,7 +137,8 @@ public class ForeignKeyTestHelperTest
                     return
                         new AttributeValueObject(
                             "G_FIRST_DRAW_ID",
-
+                            Types.BIGINT,
+                            "long"
                         )
                 };
             };
