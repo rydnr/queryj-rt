@@ -215,6 +215,9 @@ public class ForeignKeyTestHelperTest
         Assert.assertEquals(Types.BIGINT, attribute.getTypeId());
         Assert.assertEquals("long", attribute.getType());
         Assert.assertEquals("G_CYCLE_TYPES", attribute.getTableName());
-        Assert.assertNull()
+        Assert.assertNull(attribute.getComment());
+        Assert.assertEquals(1, attribute.getLength());
+        Assert.assertEquals(10, attribute.getPrecision());
+
     }
 }
