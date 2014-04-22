@@ -225,7 +225,9 @@ public class ForeignKeyTestHelper
                         throw new AttributeNotFoundException(attributeName, sourceTable);
                     }
 
+                    return result;
                 }
+
                 @NotNull
                 @Override
                 public String getName()
