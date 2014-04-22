@@ -103,5 +103,5 @@ public class ForeignKeyTestHelperTest
     }
 
     @Test
-    public void defineInputForeignKeys_
+    public void defineInputForeignKeys_takes_into_account_the_table
 }
