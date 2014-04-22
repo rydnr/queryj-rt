@@ -218,9 +218,9 @@ public class ForeignKeyTestHelper
                 @Nullable
                 protected Attribute<String> findAttribute()
                 {
-                    @Nullable final Attribute<String> attribute = findAttribute(attributeName, tables.get(sourceTable));
+                    @Nullable final Attribute<String> result = findAttribute(attributeName, tables.get(sourceTable));
 
-                    if (attribute == null)
+                    if (result == null)
                     {
                         throw new AttributeNotFoundException(attributeName, sourceTable);
                     }
