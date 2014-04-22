@@ -214,5 +214,6 @@ public class ForeignKeyTestHelperTest
         Assert.assertEquals("G_FIRST_DRAW_ID", attribute.getName());
         Assert.assertEquals(Types.BIGINT, attribute.getTypeId());
         Assert.assertEquals("long", attribute.getType());
+        Assert.assertEquals();
     }
 }
