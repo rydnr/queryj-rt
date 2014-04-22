@@ -9,6 +9,8 @@
         <!-- ugly workaround -->
         <dir name="${queryjroot}/queryj-templates/src/main/resources">
         </dir>
+        <dir name="${queryjroot}/queryj-templates/target/classes">
+        </dir>
     </classpath>
 
 </application>
