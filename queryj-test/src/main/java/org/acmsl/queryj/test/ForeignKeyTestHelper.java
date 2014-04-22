@@ -204,8 +204,13 @@ public class ForeignKeyTestHelper
         return result;
     }
 
-    private Attribute<String> createLazyAttribute(final String attributeName, final String sourceTable, final Map<String,Table<String, Attribute<String>, List<Attribute<String>>>> tables)
+    protected Attribute<String> createLazyAttribute(
+        @NotNull final String attributeName,
+        @NotNull final String sourceTable,
+        @NotNull final Map<String, Table<String, Attribute<String>, List<Attribute<String>>>> tables)
+
     {
+        return null;  //To change body of created methods use File | Settings | File Templates.
     }
 
     /**
