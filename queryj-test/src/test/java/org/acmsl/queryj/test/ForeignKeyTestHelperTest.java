@@ -36,21 +36,31 @@
 package org.acmsl.queryj.test;
 
 /*
- * Importing JetBrains annotations.
+ * Importing Cucumber classes.
  */
 import cucumber.api.DataTable;
+
+/*
+ * Importing QueryJ Core classes.
+ */
 import org.acmsl.queryj.metadata.vo.ForeignKey;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing checkthread.org annotations.
+ * Importing JUnit classes.
  */
-import org.checkthread.annotations.ThreadSafe;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+/*
+ * Importing JDK classes.
+ */
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
