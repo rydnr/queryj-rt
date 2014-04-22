@@ -260,7 +260,7 @@ public class ForeignKeyTestHelper
                 {
                     @NotNull final String result;
 
-                    @Nullable final Attribute<String> attribute = findAttribute();
+                    @NotNull final Attribute<String> attribute = findAttribute();
 
                     if (attribute == null)
                     {
