@@ -91,6 +91,7 @@ public class ForeignKeyTestHelper
      * Defines a foreign key based on the Cucumber information given.
      * @param fkInfo the Cucumber table.
      * @param foreignKeys the list to fill with the foreign keys.
+     * @param tables the table information (needed to provide
      */
     public void defineInputForeignKey(
         @NotNull final DataTable fkInfo,
