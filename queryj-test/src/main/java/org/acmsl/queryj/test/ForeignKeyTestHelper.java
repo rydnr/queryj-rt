@@ -216,7 +216,7 @@ public class ForeignKeyTestHelper
             new Attribute<String>()
             {
                 @Nullable
-                protected Attribute<String> findAttribute()
+                protected Attribute<String> lazyFindAttribute()
                 {
                     @Nullable final Attribute<String> result = findAttribute(attributeName, tables.get(sourceTable));
 
