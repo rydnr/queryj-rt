@@ -209,6 +209,6 @@ public class ForeignKeyTestHelperTest
         Assert.assertTrue(foreignKeys.size() == 1);
 
         @NotNull final List<Attribute<String>> attributes = foreignKeys.get(0).getAttributes();
-        Assert.assertTrue()
+        Assert.assertTrue(attributes.size() == 1);
     }
 }
