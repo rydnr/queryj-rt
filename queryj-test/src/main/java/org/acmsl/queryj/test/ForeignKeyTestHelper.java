@@ -105,7 +105,7 @@ public class ForeignKeyTestHelper
 
         for (@NotNull final Map<String, String> fkEntry : fkEntries)
         {
-            foreignKey = convertToForeignKey(fkEntry);
+            foreignKey = convertToForeignKey(fkEntry, tables);
 
             if (foreignKey != null)
             {
