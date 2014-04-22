@@ -66,6 +66,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 
 /**
  * Tests for {@link ForeignKeyTestHelper}.
@@ -87,6 +88,7 @@ public class ForeignKeyTestHelperTest
 
         @NotNull final String[] columnNames = { "source", "column(s)", "target", "allows null" };
         @NotNull final Map<String, String> source = new HashMap<>(1);
+        source.put()
         @NotNull final List<?> data =
             Arrays.asList(
                 "G_CYCLE_TYPES", "G_FIRST_DRAW_TYPE_ID", "G_DRAWS", "false");
