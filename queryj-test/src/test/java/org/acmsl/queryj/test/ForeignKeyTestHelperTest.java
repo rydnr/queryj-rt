@@ -131,6 +131,10 @@ public class ForeignKeyTestHelperTest
         @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table =
             new TableIncompleteValueObject("G_CYCLE_TYPES", "")
             {
+                /**
+                 * {@inheritDoc}
+                 * @return
+                 */
                 @Override
                 public List<Attribute<String>> getAttributes()
                 {
