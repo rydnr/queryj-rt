@@ -240,16 +240,9 @@ public class ForeignKeyTestHelper
                 {
                     final int result;
 
-                    @Nullable final Attribute<String> attribute = findAttribute();
+                    @NotNull final Attribute<String> attribute = findAttribute_();
 
-                    if (attribute == null)
-                    {
-                        throw new AttributeNotFoundException(attributeName, sourceTable);
-                    }
-                    else
-                    {
-                        result = attribute.getTypeId();
-                    }
+                    result = attribute.getTypeId();
 
                     return result;
                 }
