@@ -2077,7 +2077,7 @@ public abstract class AbstractTableDecorator
         @NotNull final MetadataTypeManager metadataTypeManager,
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
-        return tableDecoratorHelper.containClobs(
+        return tableDecoratorHelper.containClobs(attributes, metadataTypeManager);
     }
 
     /**
