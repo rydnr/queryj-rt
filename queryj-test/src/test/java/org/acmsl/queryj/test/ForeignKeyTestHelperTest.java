@@ -44,6 +44,7 @@ import cucumber.api.DataTable;
  * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.metadata.vo.Attribute;
+import org.acmsl.queryj.metadata.vo.AttributeValueObject;
 import org.acmsl.queryj.metadata.vo.ForeignKey;
 
 /*
@@ -133,6 +134,7 @@ public class ForeignKeyTestHelperTest
                 public List<Attribute<String>> getAttributes()
                 {
                     return
+                        new AttributeValueObject()
                 };
             };
 
