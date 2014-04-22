@@ -123,7 +123,9 @@ public class ForeignKeyTestHelper
      * @return the {@link ForeignKey}.
      */
     @Nullable
-    protected ForeignKey<String> convertToForeignKey(final Map<String, String> fkEntry,)
+    protected ForeignKey<String> convertToForeignKey(
+        final Map<String, String> fkEntry,
+        @NotNull final Map<String, Table<String, Attribute<String>, List<Attribute<String>>>> tables)
     {
         @Nullable final ForeignKey<String> result;
 
