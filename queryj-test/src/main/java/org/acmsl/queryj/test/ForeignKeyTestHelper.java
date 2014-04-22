@@ -190,7 +190,9 @@ public class ForeignKeyTestHelper
                     tables.get(sourceTable);
 
                 @Nullable final Attribute<String> attribute =
-                    table == null ? createLazyAttribute(attributeName, sourceTable, tables)findAttribute(attributeName, table);
+                    table == null
+                    ? createLazyAttribute(attributeName, sourceTable, tables)
+                    : findAttribute(attributeName, table);
 
                 if (attribute != null)
                 {
