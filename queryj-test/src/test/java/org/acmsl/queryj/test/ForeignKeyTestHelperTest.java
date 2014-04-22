@@ -49,6 +49,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.util.List;
 import java.util.Locale;
 
 /**
@@ -69,7 +70,8 @@ public class ForeignKeyTestHelperTest
     {
         @NotNull final ForeignKeyTestHelper instance = ForeignKeyTestHelper.getInstance();
 
-        @NotNull final DataTable dataTable = DataTable.create(data, Locale.getDefault(), )
+        @NotNull final List<?>
+        @NotNull final DataTable dataTable = DataTable.create(data, Locale.getDefault(), columnNames);
         instance.defineInputForeignKeys(data, );
     }
 }
