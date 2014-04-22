@@ -155,6 +155,8 @@ public class ForeignKeyTestHelper
     /**
      * Parses given list of columns to a list of {@link Attribute}s.
      * @param sourceColumns the column names.
+     * @param tables the table information (needed to provide additional
+     * metadata about the foreign key attributes.
      * @return the attribute list.
      */
     @NotNull
