@@ -50,6 +50,7 @@ import org.acmsl.queryj.metadata.vo.ForeignKey;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.metadata.vo.Table;
+import org.acmsl.queryj.metadata.vo.TableIncompleteValueObject;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -125,7 +126,8 @@ public class ForeignKeyTestHelperTest
 
         @NotNull final List<ForeignKey<String>> foreignKeys = new ArrayList<>();
 
-        @NotNull final Table<String, >
+        @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table =
+            new TableIncompleteValueObject()
         @NotNull final Map<String, Table<String, Attribute<String>, List<Attribute<String>>>> tableMap =
             new HashMap<>(1);
         tableMap.put("G_CYCLE_TYPES", table);
