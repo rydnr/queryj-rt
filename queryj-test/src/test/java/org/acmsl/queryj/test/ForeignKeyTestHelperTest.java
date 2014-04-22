@@ -140,7 +140,7 @@ public class ForeignKeyTestHelperTest
                             Types.BIGINT,
                             "long",
                             "G_CYCLE_TYPES",
-
+                            null,
                         )
                 };
             };
