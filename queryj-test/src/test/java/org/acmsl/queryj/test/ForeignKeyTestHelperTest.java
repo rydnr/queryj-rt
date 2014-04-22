@@ -63,6 +63,7 @@ import org.junit.runners.JUnit4;
  */
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 
@@ -86,7 +87,8 @@ public class ForeignKeyTestHelperTest
 
         @NotNull final String[] columnNames = { "source", "column(s)", "target", "allows null" };
         @NotNull final List<?> data =
-            Arrays.asList("G_CYCLE_TYPES", "G_FIRST_DRAW_TYPE_ID", "G_DRAWS", "false");
+            Arrays.asList(
+                new HashMap<String, String>"G_CYCLE_TYPES", "G_FIRST_DRAW_TYPE_ID", "G_DRAWS", "false");
         @NotNull final DataTable dataTable = DataTable.create(data, Locale.getDefault(), columnNames);
 
         @NotNull final List<ForeignKey<String>> foreignKeys = new ArrayList<>();
