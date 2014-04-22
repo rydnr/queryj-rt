@@ -130,7 +130,7 @@ public class ForeignKeyTestHelperTest
             new TableIncompleteValueObject("G_CYCLE_TYPES", "")
             {
                 @Override
-                public List<Attribute<String>> getAttribute
+                public List<Attribute<String>> getAttributes()
             }
 
         @NotNull final Map<String, Table<String, Attribute<String>, List<Attribute<String>>>> tableMap =
