@@ -212,7 +212,6 @@ public class ForeignKeyTestHelper
 
     {
         return
-            new _AttributeIncompleteValueObject()
     }
 
     /**
