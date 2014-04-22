@@ -219,7 +219,8 @@ public class ForeignKeyTestHelperTest
         Assert.assertEquals(1, attribute.getLength());
         Assert.assertEquals(10, attribute.getPrecision());
         Assert.assertEquals(1, attribute.getOrdinalPosition());
-        Assert.assertNotNull();
+        Assert.assertNotNull(attribute.getKeyword());
+        Assert.assertNull(attribute.getRetrievalQuery())
 
     }
 }
