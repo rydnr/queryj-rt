@@ -218,6 +218,7 @@ public class ForeignKeyTestHelperTest
         Assert.assertNull(attribute.getComment());
         Assert.assertEquals(1, attribute.getLength());
         Assert.assertEquals(10, attribute.getPrecision());
+        Assert.assertEquals();
 
     }
 }
