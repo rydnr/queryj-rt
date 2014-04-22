@@ -219,6 +219,8 @@ public class ForeignKeyTestHelper
                 public String getName()
                 {
                     @NotNull final String result;
+
+                    @Nullable final Attribute<String> attribute = findAttribute(attributeName, sourceTable, tables)
                 }
 
                 @Override
