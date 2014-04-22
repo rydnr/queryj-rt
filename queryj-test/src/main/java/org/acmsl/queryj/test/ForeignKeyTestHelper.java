@@ -51,6 +51,7 @@ import org.acmsl.queryj.metadata.vo.Table;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.test.TableTestHelper._AttributeIncompleteValueObject;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -210,7 +211,8 @@ public class ForeignKeyTestHelper
         @NotNull final Map<String, Table<String, Attribute<String>, List<Attribute<String>>>> tables)
 
     {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        return
+            new _AttributeIncompleteValueObject()
     }
 
     /**
