@@ -66,6 +66,6 @@ public class ForeignKeyTestHelperTest
     {
         @NotNull final ForeignKeyTestHelper instance = ForeignKeyTestHelper.getInstance();
 
-
+        instance.defineInputForeignKey();
     }
 }
