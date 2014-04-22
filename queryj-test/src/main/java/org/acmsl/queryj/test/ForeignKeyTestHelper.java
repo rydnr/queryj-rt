@@ -194,19 +194,4 @@ public class ForeignKeyTestHelper
 
         return result;
     }
-
-    /**
-     * Defines the input columns, based on the Cucumber table given.
-     * @param columnInfo the Cucumber table.
-     * @param foreignKeys the foreign keys.
-     * @return the foreign keys.
-     */
-    @NotNull
-    public List<ForeignKey<String>> defineInputColumns(
-        @NotNull final DataTable columnInfo, @NotNull final List<ForeignKey<String>> foreignKeys)
-    {
-        // TODO
-        return foreignKeys;
-    }
-
 }
