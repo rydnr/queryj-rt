@@ -103,5 +103,5 @@ public class ForeignKeyTestHelperTest
     }
 
     @Test
-    public void
+    public void defineInputForeignKeys_
 }
