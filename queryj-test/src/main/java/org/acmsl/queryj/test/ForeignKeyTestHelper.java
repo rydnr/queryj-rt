@@ -219,14 +219,7 @@ public class ForeignKeyTestHelper
                 @Override
                 public String getName()
                 {
-                    @NotNull final String result;
-
-                    @Nullable final Attribute<String> attribute = findAttribute(attributeName, tables.get(sourceTable));
-
-                    if (attribute == null)
-                    {
-                        throw new AttributeNotFoundException(attributeName, sourceTable);
-                    }
+                    return attributeName;
                 }
 
                 @Override
@@ -252,7 +245,20 @@ public class ForeignKeyTestHelper
                 @Override
                 public String getType()
                 {
-                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                    @NotNull final String result;
+
+                    @Nullable final Attribute<String> attribute = findAttribute(attributeName, tables.get(sourceTable));
+
+                    if (attribute == null)
+                    {
+                        throw new AttributeNotFoundException(attributeName, sourceTable);
+                    }
+                    else
+                    {
+                        result = attribute.getType();
+                    }
+
+                    return result;
                 }
 
                 @NotNull
