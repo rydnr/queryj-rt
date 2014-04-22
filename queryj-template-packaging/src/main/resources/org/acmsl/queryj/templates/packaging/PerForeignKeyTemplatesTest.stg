@@ -225,7 +225,7 @@ public class PerForeignKeyTemplatesTest
         @NotNull final Map\<String, Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables,
         @NotNull final ForeignKeyTestHelper helper)
     {
-        helper.defineInputForeignKey(fkInfo, foreignKeys);
+        helper.defineInputForeignKey(fkInfo, foreignKeys, );
     }
 
     /**
