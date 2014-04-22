@@ -162,7 +162,6 @@ public class CachingForeignKeyDecorator
 
     /**
      * Retrieves the source table.
-     *
      * @return such information.
      */
     @Override
