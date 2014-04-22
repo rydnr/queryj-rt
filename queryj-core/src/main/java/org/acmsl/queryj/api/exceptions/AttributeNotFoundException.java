@@ -46,7 +46,8 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
- * Used to represent exceptional situations in which a lazily-
+ * Used to represent exceptional situations in which a lazily-loaded attribute
+ * is
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/22 13:32
