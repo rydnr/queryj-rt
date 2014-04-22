@@ -379,7 +379,7 @@ public class TableDecoratorHelper
      * @return {@code true} in such case.
      */
     public boolean containClobs(
-        @NotNull final ListDecorator<Attribute<DecoratedString>> attributes,
+        @NotNull final List<Attribute<DecoratedString>> attributes,
         @NotNull final MetadataTypeManager metadataTypeManager)
     {
         boolean result = false;
@@ -387,7 +387,7 @@ public class TableDecoratorHelper
         for (@Nullable final Attribute<DecoratedString> attribute : attributes)
         {
             if (   (attribute != null)
-                   && (metadataTypeManager.isClob(attribute.getTypeId())))
+                && (metadataTypeManager.isClob(attribute.getTypeId())))
             {
                 result = true;
                 break;
