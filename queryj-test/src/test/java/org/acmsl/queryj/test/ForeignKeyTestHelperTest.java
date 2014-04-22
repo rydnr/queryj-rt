@@ -138,7 +138,8 @@ public class ForeignKeyTestHelperTest
                         new AttributeValueObject(
                             "G_FIRST_DRAW_ID",
                             Types.BIGINT,
-                            "long"
+                            "long",
+                            "G_CYCLE_TYPES",
                         )
                 };
             };
