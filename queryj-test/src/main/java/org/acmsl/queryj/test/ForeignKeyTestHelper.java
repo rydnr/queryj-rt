@@ -309,71 +309,137 @@ public class ForeignKeyTestHelper
                 @Override
                 public String getRetrievalQuery()
                 {
-                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                    @Nullable final String result;
+
+                    @NotNull final Attribute<String> attribute = resolveAttribute();
+
+                    result = attribute.getRetrievalQuery();
+
+                    return result;
                 }
 
                 @Override
                 public boolean isNullable()
                 {
-                    return false;  //To change body of implemented methods use File | Settings | File Templates.
+                    final boolean result;
+
+                    @NotNull final Attribute<String> attribute = resolveAttribute();
+
+                    result = attribute.isNullable();
+
+                    return result;
                 }
 
                 @Nullable
                 @Override
                 public String getValue()
                 {
-                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                    @Nullable final String result;
+
+                    @NotNull final Attribute<String> attribute = resolveAttribute();
+
+                    result = attribute.getValue();
+
+                    return result;
                 }
 
                 @Override
                 public boolean isReadOnly()
                 {
-                    return false;  //To change body of implemented methods use File | Settings | File Templates.
-                }
+                    final boolean result;
+
+                    @NotNull final Attribute<String> attribute = resolveAttribute();
+
+                    result = attribute.isReadOnly();
+
+                    return result;
+}
 
                 @Override
                 public boolean isBoolean()
                 {
-                    return false;  //To change body of implemented methods use File | Settings | File Templates.
+                    final boolean result;
+
+                    @NotNull final Attribute<String> attribute = resolveAttribute();
+
+                    result = attribute.isNullable();
+
+                    return result;
                 }
 
                 @Nullable
                 @Override
                 public String getBooleanTrue()
                 {
-                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                    @Nullable final String result;
+
+                    @NotNull final Attribute<String> attribute = resolveAttribute();
+
+                    result = attribute.getValue();
+
+                    return result;
                 }
 
                 @Nullable
                 @Override
                 public String getBooleanFalse()
                 {
-                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                    @Nullable final String result;
+
+                    @NotNull final Attribute<String> attribute = resolveAttribute();
+
+                    result = attribute.getValue();
+
+                    return result;
                 }
 
                 @Nullable
                 @Override
                 public String getBooleanNull()
                 {
-                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                    @Nullable final String result;
+
+                    @NotNull final Attribute<String> attribute = resolveAttribute();
+
+                    result = attribute.getValue();
+
+                    return result;
                 }
 
                 @Override
                 public int getOrdinalPosition()
                 {
-                    return 0;  //To change body of implemented methods use File | Settings | File Templates.
+                    final int result;
+
+                    @NotNull final Attribute<String> attribute = resolveAttribute();
+
+                    result = attribute.getOrdinalPosition();
+
+                    return result;
                 }
 
                 @Override
                 public int getLength()
                 {
-                    return 0;  //To change body of implemented methods use File | Settings | File Templates.
+                    final int result;
+
+                    @NotNull final Attribute<String> attribute = resolveAttribute();
+
+                    result = attribute.getOrdinalPosition();
+
+                    return result;
                 }
 
                 @Override
                 public int getPrecision()
                 {
-                    return 0;  //To change body of implemented methods use File | Settings | File Templates.
+                    final int result;
+
+                    @NotNull final Attribute<String> attribute = resolveAttribute();
+
+                    result = attribute.getOrdinalPosition();
+
+                    return result;
                 }
 
                 @Nullable
