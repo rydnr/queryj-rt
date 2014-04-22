@@ -507,6 +507,7 @@ public abstract class AbstractForeignKeyDecorator
         return result;
     }
 
+
     /**
      * Provides a text representation of the information
      * contained in given instance.
