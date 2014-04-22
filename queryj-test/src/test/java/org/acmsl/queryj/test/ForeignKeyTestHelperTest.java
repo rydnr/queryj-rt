@@ -167,5 +167,7 @@ public class ForeignKeyTestHelperTest
             new HashMap<>(1);
         tableMap.put("G_CYCLE_TYPES", table);
         instance.defineInputForeignKey(dataTable, foreignKeys, tableMap);
+
+
     }
 }
