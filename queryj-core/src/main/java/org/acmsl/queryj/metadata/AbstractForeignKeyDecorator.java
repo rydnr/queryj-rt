@@ -538,6 +538,29 @@ public abstract class AbstractForeignKeyDecorator
     }
 
     /**
+     * Checks whether any attribute is a clob.
+     * @return {@code true} in such case.
+     */
+    public boolean getContainsClobs()
+    {
+        return containClobs(getAttributes(), getMetadataManager().getMetadataTypeManager(), TableDecoratorHelper.getInstance());
+    }
+
+    /**
+     * Checks whether any attribute is a clob.
+     * @param attributes the {@link Attribute}s.
+     * @param metadataTypeManager the {@link MetadataTypeManager} instance.
+     * @return {@code true} in such case.
+     */
+    protected boolean containClobs(
+        @NotNull final ListDecorator<Attribute<DecoratedString>> attributes,
+        @NotNull final MetadataTypeManager metadataTypeManager,
+        @NotNull final TableDecoratorHelper tableDecoratorHelper)
+    {
+        return tableDecoratorHelper.containClobs(attributes, metadataTypeManager);
+    }
+
+    /**
      * Provides a text representation of the information
      * contained in given instance.
      * @return such information.
