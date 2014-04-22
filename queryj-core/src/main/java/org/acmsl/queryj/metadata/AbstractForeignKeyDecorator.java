@@ -510,7 +510,7 @@ public abstract class AbstractForeignKeyDecorator
     @NotNull
     public List<Attribute<DecoratedString>> getAttributeTypes()
     {
-        return getAttributeTypes()
+        return getAttributeTypes(getAttributes(), getMetadataManager().getMetadataTypeManager())
     }
     /**
      * Provides a text representation of the information
