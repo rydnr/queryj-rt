@@ -88,7 +88,8 @@ public class ForeignKeyTestHelperTest
 
         @NotNull final String[] columnNames = { "source", "column(s)", "target", "allows null" };
         @NotNull final Map<String, String> row = new HashMap<>(1);
-        source.put("source", "G_CYCLE_TYPES");
+        row.put("source", "G_CYCLE_TYPES");
+        row.put("column")
         @NotNull final List<?> data =
             Arrays.asList(
                 "G_CYCLE_TYPES", "G_FIRST_DRAW_TYPE_ID", "G_DRAWS", "false");
