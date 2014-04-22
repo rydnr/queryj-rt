@@ -289,11 +289,6 @@ public class ForeignKeyTestHelperTest
             new HashMap<>(1);
         instance.defineInputForeignKey(dataTable, foreignKeys, tableMap);
 
-        testAttribute(foreignKeys);
-    }
-
-    protected void testAttribute(@NotNull final List<ForeignKey<String>> foreignKeys)
-    {
         Assert.assertTrue(foreignKeys.size() == 1);
 
         @NotNull final List<Attribute<String>> attributes = foreignKeys.get(0).getAttributes();
