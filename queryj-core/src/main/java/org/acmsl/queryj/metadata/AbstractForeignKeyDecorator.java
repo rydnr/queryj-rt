@@ -519,7 +519,7 @@ public abstract class AbstractForeignKeyDecorator
         @NotNull final MetadataTypeManager metadataTypeManager,
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
-        return tableDecoratorHelper.getAttributeTypes(attributes, )
+        return tableDecoratorHelper.getAttributeTypes(attributes, metadataTypeManager);
     }
 
     /**
