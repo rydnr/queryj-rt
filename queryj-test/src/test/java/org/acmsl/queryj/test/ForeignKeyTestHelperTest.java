@@ -236,7 +236,7 @@ public class ForeignKeyTestHelperTest
      * about each one of the attributes.
      */
     @Test
-    public void defineInputForeignKeys_takes_into_account_the_table_data()
+    public void defineInputForeignKeys_uses_attributes_which_lazy_load_their_contents()
     {
         @NotNull final ForeignKeyTestHelper instance = ForeignKeyTestHelper.getInstance();
 
