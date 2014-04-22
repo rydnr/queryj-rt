@@ -220,7 +220,7 @@ public class ForeignKeyTestHelper
                 {
                     @NotNull final String result;
 
-                    @Nullable final Attribute<String> attribute = findAttribute(attributeName, sourceTable, tables);
+                    @Nullable final Attribute<String> attribute = findAttribute(attributeName, tables.get());
                 }
 
                 @Override
