@@ -134,7 +134,7 @@ public class ForeignKeyTestHelper
 
         @Nullable final String targetTable = fkEntry.get("target");
         @Nullable final boolean allowsNull = Boolean.valueOf(fkEntry.get("allows null"));
-        @NotNull final List<Attribute<String>> columns = fromCsv(sourceColumns, sourceTable, allowsNull);
+        @NotNull final List<Attribute<String>> columns = fromCsv(sourceColumns, sourceTable, allowsNull, tables);
 
         if (   (sourceTable != null)
             && (columns.size() > 0)
