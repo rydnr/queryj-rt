@@ -232,7 +232,7 @@ public class ForeignKeyTestHelperTest
 
     /**
      * Tests whether defineInputForeignKey() builds a foreign key which
-     * uses the Table information passed in order to provide the metadata
+     * lazily uses the Table information passed in order to provide the metadata
      * about each one of the attributes.
      */
     @Test
