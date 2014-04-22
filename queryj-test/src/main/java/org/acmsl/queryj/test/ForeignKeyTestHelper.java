@@ -173,7 +173,7 @@ public class ForeignKeyTestHelper
     protected List<Attribute<String>> fromCsv(
         @Nullable final String sourceColumns,
         @Nullable final String sourceTable,
-        @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table)
+        @NotNull final Map<Table<String, Attribute<String>, List<Attribute<String>>>> tables)
     {
         @NotNull final List<Attribute<String>> result = new ArrayList<>();
 
@@ -185,7 +185,7 @@ public class ForeignKeyTestHelper
             while (tokenizer.hasMoreTokens())
             {
                 @Nullable final Attribute<String> attribute =
-                    findAttribute(tokenizer.nextToken(), table);
+                    findAttribute(tokenizer.nextToken(), tables.get(sourceTable));
 
                 if (attribute != null)
                 {
