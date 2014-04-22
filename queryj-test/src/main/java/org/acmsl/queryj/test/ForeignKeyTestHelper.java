@@ -63,6 +63,7 @@ import org.checkthread.annotations.ThreadSafe;
 /*
  * Importing JDK classes.
  */
+import javax.management.AttributeNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -224,7 +225,7 @@ public class ForeignKeyTestHelper
 
                     if (attribute == null)
                     {
-
+                        throw new AttributeNotFoundException();
                     }
                 }
 
