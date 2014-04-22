@@ -51,7 +51,6 @@ import org.acmsl.queryj.metadata.vo.Table;
 /*
  * Importing JetBrains annotations.
  */
-import org.acmsl.queryj.test.TableTestHelper._AttributeIncompleteValueObject;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -63,7 +62,6 @@ import org.checkthread.annotations.ThreadSafe;
 /*
  * Importing JDK classes.
  */
-import javax.management.AttributeNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
