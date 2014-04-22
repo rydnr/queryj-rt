@@ -212,6 +212,7 @@ public class ForeignKeyTestHelperTest
         Assert.assertTrue(attributes.size() == 1);
         @NotNull final Attribute<String> attribute = attributes.get(0);
         Assert.assertEquals("G_FIRST_DRAW_ID", attribute.getName());
+        Assert.assertEquals(Types.BIGINT, attribute.getTypeId());
         Assert.assertEquals();
     }
 }
