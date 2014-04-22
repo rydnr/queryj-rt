@@ -227,7 +227,8 @@ public class ForeignKeyTestHelperTest
         Assert.assertFalse(attribute.isNullable());
         Assert.assertFalse(attribute.isBoolean());
         Assert.assertNull(attribute.getBooleanTrue());
-        Assert.assertNull(attribute)
+        Assert.assertNull(attribute.getBooleanFalse());
+        Assert.assertNull(attribute.getBooleanNull());
 
     }
 }
