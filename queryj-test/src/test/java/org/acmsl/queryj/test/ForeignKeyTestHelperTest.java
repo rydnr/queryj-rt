@@ -222,6 +222,11 @@ public class ForeignKeyTestHelperTest
         Assert.assertNull(attribute.getKeyword());
         Assert.assertNull(attribute.getRetrievalQuery());
         Assert.assertNull(attribute.getSequence());
+        Assert.assertNull(attribute.getValue());
+        Assert.assertFalse(attribute.isReadOnly());
+        Assert.assertFalse(attribute.isNullable());
+        Assert.assertFalse(attribute.isBoolean());
+        Assert.assertNull(attribute.getBooleanTrue());
         Assert.assertNull(attribute)
 
     }
