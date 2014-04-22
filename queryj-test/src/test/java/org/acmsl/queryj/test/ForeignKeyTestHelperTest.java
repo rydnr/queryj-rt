@@ -43,11 +43,13 @@ import cucumber.api.DataTable;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.ForeignKey;
 
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.metadata.vo.Table;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -123,6 +125,9 @@ public class ForeignKeyTestHelperTest
 
         @NotNull final List<ForeignKey<String>> foreignKeys = new ArrayList<>();
 
+        @NotNull final Map<String, Table<String, Attribute<String>, List<Attribute<String>>>> tableMap =
+            new HashMap<>(1);
+        tableMap.add
         instance.defineInputForeignKey(dataTable, foreignKeys);
     }
 }
