@@ -115,7 +115,7 @@ public class ForeignKeyTestHelperTest
                     return
                         Arrays.<Attribute<String>>asList(
                             new AttributeValueObject(
-                                "G_FIRST_DRAW_TYPE_ID",
+                                "G_FIRST_DRAW_ID",
                                 Types.BIGINT,
                                 "long",
                                 "G_CYCLE_TYPES",
