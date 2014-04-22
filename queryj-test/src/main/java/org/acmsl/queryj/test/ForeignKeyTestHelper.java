@@ -118,6 +118,8 @@ public class ForeignKeyTestHelper
     /**
      * Converts given foreign key described in a Cucumber feature, to a {@link ForeignKey}.
      * @param fkEntry the Cucumber information.
+     * @param tables the table information (needed to provide additional
+     * metadata about the foreign key attributes.
      * @return the {@link ForeignKey}.
      */
     @Nullable
