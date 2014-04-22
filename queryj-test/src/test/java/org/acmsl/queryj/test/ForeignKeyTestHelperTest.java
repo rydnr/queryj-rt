@@ -137,24 +137,24 @@ public class ForeignKeyTestHelperTest
                     return
                         Arrays.asList(
                             new AttributeValueObject(
-                            "G_FIRST_DRAW_ID",
-                            Types.BIGINT,
-                            "long",
-                            "G_CYCLE_TYPES",
-                            null,
-                            1,
-                            10,
-                            1,
-                            null,
-                            null,
-                            null,
-                            false,
-                            null,
-                            false,
-                            false,
-                            null,
-                            null,
-                            null);
+                                "G_FIRST_DRAW_ID",
+                                Types.BIGINT,
+                                "long",
+                                "G_CYCLE_TYPES",
+                                null,
+                                1,
+                                10,
+                                1,
+                                null,
+                                null,
+                                null,
+                                false,
+                                null,
+                                false,
+                                false,
+                                null,
+                                null,
+                                null));
                         )
                 };
             };
