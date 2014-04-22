@@ -78,7 +78,7 @@ import java.util.Map;
 public class ForeignKeyTestHelperTest
 {
     /**
-     * Tests whether defineInputForeignKeys() adds new foreign keys to
+     * Tests whether defineInputForeignKey() adds new foreign keys to
      * the list passed.
      */
     @Test
