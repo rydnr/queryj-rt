@@ -133,8 +133,8 @@ public class ForeignKeyTestHelperTest
                 public List<Attribute<String>> getAttributes()
                 {
 
-                }
-            }
+                };
+            };
 
         @NotNull final Map<String, Table<String, Attribute<String>, List<Attribute<String>>>> tableMap =
             new HashMap<>(1);
