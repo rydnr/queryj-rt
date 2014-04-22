@@ -216,7 +216,7 @@ public class ForeignKeyTestHelper
             new Attribute<String>()
             {
                 @NotNull
-                protected Attribute<String> findAttribute_()
+                protected Attribute<String> resolveAttribute()
                 {
                     @Nullable final Attribute<String> result = findAttribute(attributeName, tables.get(sourceTable));
 
@@ -240,7 +240,7 @@ public class ForeignKeyTestHelper
                 {
                     final int result;
 
-                    @NotNull final Attribute<String> attribute = findAttribute_();
+                    @NotNull final Attribute<String> attribute = resolveAttribute();
 
                     result = attribute.getTypeId();
 
@@ -253,7 +253,7 @@ public class ForeignKeyTestHelper
                 {
                     @NotNull final String result;
 
-                    @NotNull final Attribute<String> attribute = findAttribute();
+                    @NotNull final Attribute<String> attribute = resolveAttribute();
 
                     result = attribute.getType();
 
@@ -264,7 +264,7 @@ public class ForeignKeyTestHelper
                 @Override
                 public String getTableName()
                 {
-                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                    return sourceTable;
                 }
 
                 @Nullable
