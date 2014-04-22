@@ -99,7 +99,7 @@ public class ForeignKeyTestHelperTest
 
         instance.defineInputForeignKey(dataTable, foreignKeys);
 
-        Assert.assertTrue(foreignKeys.size() > 0);
+        Assert.assertTrue(foreignKeys.size() == 1);
     }
 
     /**
