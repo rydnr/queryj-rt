@@ -553,7 +553,7 @@ public abstract class AbstractForeignKeyDecorator
      * @return {@code true} in such case.
      */
     protected boolean containClobs(
-        @NotNull final ListDecorator<Attribute<DecoratedString>> attributes,
+        @NotNull final List<Attribute<DecoratedString>> attributes,
         @NotNull final MetadataTypeManager metadataTypeManager,
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
