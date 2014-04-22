@@ -240,6 +240,10 @@ public class ForeignKeyTestHelper
                     {
                         throw new AttributeNotFoundException(attributeName, sourceTable);
                     }
+                    else
+                    {
+                        result =
+                    }
 
                     return
                 }
