@@ -51,6 +51,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 
@@ -72,9 +73,9 @@ public class ForeignKeyTestHelperTest
     {
         @NotNull final ForeignKeyTestHelper instance = ForeignKeyTestHelper.getInstance();
 
-        @NotNull final List<?> data = new ArrayList<>();
+        @NotNull final List<?> data = Arrays.asList()
         @NotNull final String[] columnNames = { "source", "column(s)", "target", "allows null" };
-
+        data.add
         @NotNull final DataTable dataTable = DataTable.create(data, Locale.getDefault(), columnNames);
 
         @NotNull final List<ForeignKey<String>> foreignKeys = new ArrayList<>();
