@@ -127,7 +127,8 @@ public class ForeignKeyTestHelperTest
         @NotNull final List<ForeignKey<String>> foreignKeys = new ArrayList<>();
 
         @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table =
-            new TableIncompleteValueObject()
+            new TableIncompleteValueObject("G_CYCLE_TYPES", "");
+
         @NotNull final Map<String, Table<String, Attribute<String>, List<Attribute<String>>>> tableMap =
             new HashMap<>(1);
         tableMap.put("G_CYCLE_TYPES", table);
