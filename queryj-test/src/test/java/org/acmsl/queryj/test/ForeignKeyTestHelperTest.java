@@ -72,9 +72,9 @@ public class ForeignKeyTestHelperTest
         @NotNull final ForeignKeyTestHelper instance = ForeignKeyTestHelper.getInstance();
 
         @NotNull final List<?> data = new ArrayList<>();
-        @NotNull final String[] columnNames = []
+        @NotNull final String[] columnNames = { " " };
 
-        @NotNull final DataTable dataTable = DataTable.create(data, Locale.getDefault(), columnNames.toArray(new String[0]));
-        instance.defineInputForeignKeys(data, );
+        @NotNull final DataTable dataTable = DataTable.create(data, Locale.getDefault(), columnNames);
+        instance.defineInputForeignKeys(dataTable, );
     }
 }
