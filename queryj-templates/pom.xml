@@ -190,7 +190,7 @@
           </execution>
           <execution>
             <id>add-resource</id>
-            <phase>generate-sources</phase>
+            <phase>generate-resources</phase>
             <goals>
               <goal>add-resource</goal>
             </goals>
@@ -215,7 +215,7 @@
           </execution>
           <execution>
             <id>add-test-resource</id>
-            <phase>generate-test-sources</phase>
+            <phase>generate-test-resources</phase>
             <goals>
               <goal>add-test-resource</goal>
             </goals>
