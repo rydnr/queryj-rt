@@ -73,9 +73,8 @@ public class ForeignKeyTestHelperTest
     {
         @NotNull final ForeignKeyTestHelper instance = ForeignKeyTestHelper.getInstance();
 
-        @NotNull final List<?> data = Arrays.asList()
         @NotNull final String[] columnNames = { "source", "column(s)", "target", "allows null" };
-        data.add
+        @NotNull final List<?> data = Arrays.asList("G_CYCLE_TYPES", )
         @NotNull final DataTable dataTable = DataTable.create(data, Locale.getDefault(), columnNames);
 
         @NotNull final List<ForeignKey<String>> foreignKeys = new ArrayList<>();
