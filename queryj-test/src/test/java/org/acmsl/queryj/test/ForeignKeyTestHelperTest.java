@@ -103,7 +103,8 @@ public class ForeignKeyTestHelperTest
     }
 
     /**
-     * Tests whether defineInputForeignKey()
+     * Tests whether defineInputForeignKey() builds a foreign key which
+     * uses the given
      */
     @Test
     public void defineInputForeignKeys_takes_into_account_the_table_data()
