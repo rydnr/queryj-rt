@@ -133,7 +133,6 @@ public class ForeignKeyTestHelperTest
             {
                 /**
                  * {@inheritDoc}
-                 * @return
                  */
                 @Override
                 public List<Attribute<String>> getAttributes()
