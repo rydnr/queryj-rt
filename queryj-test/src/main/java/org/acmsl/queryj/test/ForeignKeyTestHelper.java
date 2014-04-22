@@ -216,7 +216,7 @@ public class ForeignKeyTestHelper
             new Attribute<String>()
             {
                 @Nullable
-                protected Attribute<String> findAttribute_()
+                protected Attribute<String> findAttribute()
                 {
                     @Nullable final Attribute<String> result = findAttribute(attributeName, tables.get(sourceTable));
 
@@ -384,7 +384,7 @@ public class ForeignKeyTestHelper
                 {
                     return 0;  //To change body of implemented methods use File | Settings | File Templates.
                 }
-            }
+            };
     }
 
     /**
