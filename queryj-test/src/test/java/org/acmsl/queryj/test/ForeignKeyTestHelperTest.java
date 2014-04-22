@@ -206,6 +206,7 @@ public class ForeignKeyTestHelperTest
         tableMap.put("G_CYCLE_TYPES", table);
         instance.defineInputForeignKey(dataTable, foreignKeys, tableMap);
 
+        Assert.assertTrue(foreignKeys.size() == 1);
 
     }
 }
