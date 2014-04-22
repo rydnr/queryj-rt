@@ -46,7 +46,7 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
- *
+ * Used to
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/22 13:32
@@ -55,5 +55,18 @@ import org.checkthread.annotations.ThreadSafe;
 public class AttributeNotFoundException
     extends QueryJNonCheckedException
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = -2830064648254267166L;
 
+    /**
+     * Creates a new instance.
+     * @param attributeName the attribute name.
+     * @param tableName the table name.
+     */
+    public AttributeNotFoundException(@NotNull final String attributeName, @NotNull final String tableName)
+    {
+        super("attribute.not.found", new String[] { attributeName, tableName});
+    }
 }
