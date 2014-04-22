@@ -208,6 +208,6 @@ public class ForeignKeyTestHelperTest
 
         Assert.assertTrue(foreignKeys.size() == 1);
 
-
+        List<Attribute<String>> attributes =
     }
 }
