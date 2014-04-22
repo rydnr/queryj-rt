@@ -43,6 +43,7 @@ import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.AttributeIncompleteValueObject;
 import org.acmsl.queryj.metadata.vo.ForeignKey;
 import org.acmsl.queryj.metadata.vo.ForeignKeyValueObject;
+import org.acmsl.queryj.metadata.vo.Table;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -94,7 +95,7 @@ public class ForeignKeyTestHelper
     public void defineInputForeignKey(
         @NotNull final DataTable fkInfo,
         @NotNull final List<ForeignKey<String>> foreignKeys,
-        @NotNull final Map<>)
+        @NotNull final Map<String, Table<String, Attribute<String>, List<Attribute<String>>>>)
     {
         @NotNull final List<Map<String, String>> fkEntries = fkInfo.asMaps();
 
