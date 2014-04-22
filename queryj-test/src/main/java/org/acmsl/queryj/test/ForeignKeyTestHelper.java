@@ -123,7 +123,7 @@ public class ForeignKeyTestHelper
      * @return the {@link ForeignKey}.
      */
     @Nullable
-    protected ForeignKey<String> convertToForeignKey(final Map<String, String> fkEntry)
+    protected ForeignKey<String> convertToForeignKey(final Map<String, String> fkEntry,)
     {
         @Nullable final ForeignKey<String> result;
 
