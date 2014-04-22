@@ -232,7 +232,14 @@ public class ForeignKeyTestHelper
                 @Override
                 public int getTypeId()
                 {
-                    return 0;  //To change body of implemented methods use File | Settings | File Templates.
+                    final int result;
+
+                    @Nullable final Attribute<String> attribute = findAttribute(attributeName, tables.get(sourceTable));
+
+                    if (attribute == null)
+                    {
+                        throw new AttributeNotFoundException(attributeName, sourceTable);
+                    }
                 }
 
                 @NotNull
