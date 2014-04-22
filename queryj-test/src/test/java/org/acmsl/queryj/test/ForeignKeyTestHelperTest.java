@@ -292,7 +292,8 @@ public class ForeignKeyTestHelperTest
         testAttribute(foreignKeys);
     }
 
-    protected void testAttribute()
+    protected void testAttribute(@NotNull final List<ForeignKey<String>> foreignKeys)
+    {
         Assert.assertTrue(foreignKeys.size() == 1);
 
         @NotNull final List<Attribute<String>> attributes = foreignKeys.get(0).getAttributes();
