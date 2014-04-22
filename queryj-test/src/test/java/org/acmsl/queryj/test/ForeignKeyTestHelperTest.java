@@ -209,7 +209,7 @@ public class ForeignKeyTestHelperTest
         @NotNull final List<Attribute<String>> attributes = foreignKeys.get(0).getAttributes();
         Assert.assertTrue(attributes.size() == 1);
         @NotNull final Attribute<String> attribute = attributes.get(0);
-        Assert.assertEquals("G_FIRST_DRAW_ID", attribute.getName());
+        Assert.assertEquals("G_FIRST_DRAW_TID", attribute.getName());
         Assert.assertEquals(Types.BIGINT, attribute.getTypeId());
         Assert.assertEquals("long", attribute.getType());
         Assert.assertEquals("G_CYCLE_TYPES", attribute.getTableName());
