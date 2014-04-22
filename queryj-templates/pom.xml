@@ -188,7 +188,7 @@
               </sources>
             </configuration>
           </execution>
-          <<execution>
+          <execution>
             <id>add-resource</id>
             <phase>generate-sources</phase>
             <goals>
