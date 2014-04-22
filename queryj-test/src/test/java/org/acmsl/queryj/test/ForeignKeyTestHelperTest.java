@@ -58,7 +58,7 @@ import org.junit.runners.JUnit4;
 public class ForeignKeyTestHelperTest
 {
     /**
-     * Tests whether defineInputForeignKeys() builds the
+     * Tests whether defineInputForeignKeys() adds new
      */
     @Test
     public void defineInputForeignKeys_builds_the_foreign_key_list()
