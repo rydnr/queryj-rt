@@ -79,6 +79,6 @@ public class ForeignKeyTestHelperTest
 
         @NotNull final List<ForeignKey<String>> foreignKeys = new ArrayList<>();
 
-        instance.defineInputForeignKeys(dataTable, foreignKeys);
+        instance.defineInputForeignKey(dataTable, foreignKeys);
     }
 }
