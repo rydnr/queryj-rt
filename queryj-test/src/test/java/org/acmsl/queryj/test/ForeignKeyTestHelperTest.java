@@ -59,7 +59,7 @@ public class ForeignKeyTestHelperTest
 {
     /**
      * Tests whether defineInputForeignKeys() adds new foreign keys to
-     * the
+     * the list
      */
     @Test
     public void defineInputForeignKeys_builds_the_foreign_key_list()
