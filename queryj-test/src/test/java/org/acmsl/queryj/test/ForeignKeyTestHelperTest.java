@@ -59,11 +59,13 @@ public class ForeignKeyTestHelperTest
 {
     /**
      * Tests whether defineInputForeignKeys() adds new foreign keys to
-     * the list
+     * the list passed.
      */
     @Test
     public void defineInputForeignKeys_builds_the_foreign_key_list()
     {
+        @NotNull final ForeignKeyTestHelper instance = ForeignKeyTestHelper.getInstance();
+
 
     }
 }
