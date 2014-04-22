@@ -218,7 +218,7 @@ public class ForeignKeyTestHelper
                 @Override
                 public String getName()
                 {
-                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                    @NotNull final String result;
                 }
 
                 @Override
