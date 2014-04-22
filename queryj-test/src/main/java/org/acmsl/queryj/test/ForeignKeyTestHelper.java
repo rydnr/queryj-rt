@@ -184,9 +184,9 @@ public class ForeignKeyTestHelper
 
             while (tokenizer.hasMoreTokens())
             {
-                @NotNull final
+                @NotNull final String attributeName = tokenizer.nextToken();
                 @Nullable final Attribute<String> attribute =
-                    findAttribute(tokenizer.nextToken(), tables.get(sourceTable));
+                    findAttribute(attributeName, tables.get(sourceTable));
 
                 if (attribute != null)
                 {
