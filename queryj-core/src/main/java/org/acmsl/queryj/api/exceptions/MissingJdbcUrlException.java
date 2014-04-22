@@ -50,6 +50,9 @@ import org.checkthread.annotations.ThreadSafe;
 public class MissingJdbcUrlException
     extends QueryJBuildException
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = -3841755051591751766L;
 
     /**
