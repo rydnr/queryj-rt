@@ -221,6 +221,11 @@ public class ForeignKeyTestHelper
                     @NotNull final String result;
 
                     @Nullable final Attribute<String> attribute = findAttribute(attributeName, tables.get(sourceTable));
+
+                    if (attribute == null)
+                    {
+
+                    }
                 }
 
                 @Override
