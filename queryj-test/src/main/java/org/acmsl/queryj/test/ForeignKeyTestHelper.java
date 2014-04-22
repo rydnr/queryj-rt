@@ -204,6 +204,10 @@ public class ForeignKeyTestHelper
         return result;
     }
 
+    private Attribute<String> createLazyAttribute(final String attributeName, final String sourceTable, final Map<String,Table<String, Attribute<String>, List<Attribute<String>>>> tables)
+    {
+    }
+
     /**
      * Retrieves the attribute matching given name.
      * @param name the name.
