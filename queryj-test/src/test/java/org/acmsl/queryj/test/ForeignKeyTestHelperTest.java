@@ -102,6 +102,12 @@ public class ForeignKeyTestHelperTest
         Assert.assertTrue(foreignKeys.size() > 0);
     }
 
+    /**
+     * Tests whether defineInputForeignKeys
+     */
     @Test
-    public void defineInputForeignKeys_takes_into_account_the_table
+    public void defineInputForeignKeys_takes_into_account_the_table_data()
+    {
+
+    }
 }
