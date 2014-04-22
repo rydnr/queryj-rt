@@ -87,7 +87,7 @@ public class ForeignKeyTestHelperTest
         @NotNull final ForeignKeyTestHelper instance = ForeignKeyTestHelper.getInstance();
 
         @NotNull final String[] columnNames = { "source", "column(s)", "target", "allows null" };
-        @NotNull final Map<String, String> row = new HashMap<>(1);
+        @NotNull final Map<String, String> row = new HashMap<>(4);
         row.put("source", "G_CYCLE_TYPES");
         row.put("column(s)", )
         @NotNull final List<?> data =
