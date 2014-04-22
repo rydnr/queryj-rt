@@ -102,7 +102,45 @@ public class ForeignKeyTestHelperTest
 
         @NotNull final List<ForeignKey<String>> foreignKeys = new ArrayList<>();
 
-        instance.defineInputForeignKey(dataTable, foreignKeys);
+        @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table =
+            new TableIncompleteValueObject("G_CYCLE_TYPES", "")
+            {
+                /**
+                 * {@inheritDoc}
+                 */
+                @Override
+                @NotNull
+                public List<Attribute<String>> getAttributes()
+                {
+                    return
+                        Arrays.<Attribute<String>>asList(
+                            new AttributeValueObject(
+                                "G_FIRST_DRAW_ID",
+                                Types.BIGINT,
+                                "long",
+                                "G_CYCLE_TYPES",
+                                null,
+                                1,
+                                10,
+                                1,
+                                null,
+                                null,
+                                null,
+                                false,
+                                null,
+                                false,
+                                false,
+                                null,
+                                null,
+                                null));
+                    )
+                };
+            };
+
+        @NotNull final Map<String, Table<String, Attribute<String>, List<Attribute<String>>>> tableMap =
+            new HashMap<>(1);
+        tableMap.put("G_CYCLE_TYPES", table);
+        instance.defineInputForeignKey(dataTable, foreignKeys, tableMap);
 
         Assert.assertTrue(foreignKeys.size() == 1);
     }
