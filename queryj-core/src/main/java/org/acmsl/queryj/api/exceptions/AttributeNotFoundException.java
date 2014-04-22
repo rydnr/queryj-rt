@@ -1,5 +1,5 @@
 /*
-                        queryj
+                        QueryJ Core
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -27,7 +27,8 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Used to represent exceptional situations in which a
+ *              lazily-loaded attribute is not resolvable at runtime.
  *
  * Date: 2014/04/22
  * Time: 13:32
@@ -47,7 +48,7 @@ import org.checkthread.annotations.ThreadSafe;
 
 /**
  * Used to represent exceptional situations in which a lazily-loaded attribute
- * is not
+ * is not resolvable at runtime.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/22 13:32
