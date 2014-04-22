@@ -161,7 +161,8 @@ public class ForeignKeyTestHelper
     protected List<Attribute<String>> fromCsv(
         @Nullable final String sourceColumns,
         @Nullable final String sourceTable,
-        final boolean allowsNull)
+        final boolean allowsNull,
+        @NotNull final Map<String, Table<String, Attribute<String>, List<Attribute<String>>>> tables)
     {
         @NotNull final List<Attribute<String>> result = new ArrayList<>();
 
