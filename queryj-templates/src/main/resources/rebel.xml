@@ -11,6 +11,7 @@
             <exclude name="**/*"/>
         </dir>
         <dir name="${queryjroot}/queryj-templates/target/test-classes">
+            <exclude name="**/*"/>
         </dir>
     </classpath>
 
