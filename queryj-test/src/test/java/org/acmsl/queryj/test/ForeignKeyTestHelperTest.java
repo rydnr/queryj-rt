@@ -58,5 +58,5 @@ import org.junit.runners.JUnit4;
 public class ForeignKeyTestHelperTest
 {
     @Test
-    public void
+    public void defineInputForeignKeys_
 }
