@@ -296,11 +296,11 @@ public class ForeignKeyTestHelper
                 @Override
                 public String getKeyword()
                 {
-                    @NotNull final String result;
+                    @Nullable final String result;
 
                     @NotNull final Attribute<String> attribute = resolveAttribute();
 
-                    result = attribute.getType();
+                    result = attribute.getKeyword();
 
                     return result;
                 }
