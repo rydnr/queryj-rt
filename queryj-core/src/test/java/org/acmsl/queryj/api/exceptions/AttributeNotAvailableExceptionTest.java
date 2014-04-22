@@ -46,22 +46,22 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
- * Tests for {@link AttributeNotFoundException}.
+ * Tests for {@link AttributeNotAvailableException}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/22 13:31
  */
 @ThreadSafe
 public class AttributeNotAvailableExceptionTest
-    extends AbstractExceptionTest<AttributeNotFoundException>
+    extends AbstractExceptionTest<AttributeNotAvailableException>
 {
     /**
      * {@inheritDoc}
      */
     @NotNull
     @Override
-    protected AttributeNotFoundException createInstance()
+    protected AttributeNotAvailableException createInstance()
     {
-        return new AttributeNotFoundException("attribute", "table");
+        return new AttributeNotAvailableException("attribute", "table");
     }
 }

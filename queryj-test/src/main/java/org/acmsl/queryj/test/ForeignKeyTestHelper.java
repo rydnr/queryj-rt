@@ -43,7 +43,7 @@ import cucumber.api.DataTable;
 /*
  * Importing QueryJ Core classes.
  */
-import org.acmsl.queryj.api.exceptions.AttributeNotFoundException;
+import org.acmsl.queryj.api.exceptions.AttributeNotAvailableException;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.ForeignKey;
 import org.acmsl.queryj.metadata.vo.ForeignKeyValueObject;
@@ -221,7 +221,7 @@ public class ForeignKeyTestHelper
 
                     if (result == null)
                     {
-                        throw new AttributeNotFoundException(attributeName, sourceTable);
+                        throw new AttributeNotAvailableException(attributeName, sourceTable);
                     }
 
                     return result;
