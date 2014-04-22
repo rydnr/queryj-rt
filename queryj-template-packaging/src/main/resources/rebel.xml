@@ -6,7 +6,7 @@
         </dir>
         <dir name="${queryjroot}/queryj-template-packaging/target/classes">
         </dir>
-        <!-- ugly hack -->
+        <!-- ugly workaround -->
         <dir name="${queryjroot}/queryj-templates/src/main/resources">
         </dir>
     </classpath>
