@@ -49,6 +49,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.util.Locale;
+
 /**
  * Tests for {@link ForeignKeyTestHelper}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
@@ -67,7 +69,7 @@ public class ForeignKeyTestHelperTest
     {
         @NotNull final ForeignKeyTestHelper instance = ForeignKeyTestHelper.getInstance();
 
-        @NotNull final DataTable data = DataTable.create()
+        @NotNull final DataTable dataTable = DataTable.create(data, Locale.getDefault(), )
         instance.defineInputForeignKeys(data, );
     }
 }
