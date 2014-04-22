@@ -262,7 +262,7 @@ public class ForeignKeyTestHelper
 
                     @Nullable final Attribute<String> attribute = findAttribute();
 
-                    if (attribute != null)
+                    if (attribute == null)
                     {
                         throw new AttributeNotFoundException(attributeName, sourceTable);
                     }
