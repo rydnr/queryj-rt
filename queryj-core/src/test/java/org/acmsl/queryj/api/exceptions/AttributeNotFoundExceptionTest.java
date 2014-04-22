@@ -62,6 +62,6 @@ public class AttributeNotFoundExceptionTest
     @Override
     protected AttributeNotFoundException createInstance()
     {
-        return new AttributeNotFoundException("attribute");
+        return new AttributeNotFoundException("attribute", "table");
     }
 }
