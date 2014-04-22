@@ -67,7 +67,7 @@ public class ForeignKeyTestHelperTest
     {
         @NotNull final ForeignKeyTestHelper instance = ForeignKeyTestHelper.getInstance();
 
-        @NotNull final DataTable data =
+        @NotNull final DataTable data = DataTable.create()
         instance.defineInputForeignKeys(data, );
     }
 }
