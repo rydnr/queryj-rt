@@ -212,6 +212,139 @@ public class ForeignKeyTestHelper
 
     {
         return
+            new Attribute<String>()
+            {
+                @NotNull
+                @Override
+                public String getName()
+                {
+                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+
+                @Override
+                public int getTypeId()
+                {
+                    return 0;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+
+                @NotNull
+                @Override
+                public String getType()
+                {
+                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+
+                @NotNull
+                @Override
+                public String getTableName()
+                {
+                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+
+                @Nullable
+                @Override
+                public String getComment()
+                {
+                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+
+                @Override
+                public boolean isExternallyManaged()
+                {
+                    return false;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+
+                @Nullable
+                @Override
+                public String getKeyword()
+                {
+                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+
+                @Nullable
+                @Override
+                public String getRetrievalQuery()
+                {
+                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+
+                @Override
+                public boolean isNullable()
+                {
+                    return false;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+
+                @Nullable
+                @Override
+                public String getValue()
+                {
+                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+
+                @Override
+                public boolean isReadOnly()
+                {
+                    return false;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+
+                @Override
+                public boolean isBoolean()
+                {
+                    return false;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+
+                @Nullable
+                @Override
+                public String getBooleanTrue()
+                {
+                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+
+                @Nullable
+                @Override
+                public String getBooleanFalse()
+                {
+                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+
+                @Nullable
+                @Override
+                public String getBooleanNull()
+                {
+                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+
+                @Override
+                public int getOrdinalPosition()
+                {
+                    return 0;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+
+                @Override
+                public int getLength()
+                {
+                    return 0;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+
+                @Override
+                public int getPrecision()
+                {
+                    return 0;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+
+                @Nullable
+                @Override
+                public String getSequence()
+                {
+                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+
+                @Override
+                public int compareTo(final Attribute<String> o)
+                {
+                    return 0;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+            }
     }
 
     /**
