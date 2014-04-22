@@ -188,7 +188,7 @@
               </sources>
             </configuration>
           </execution>
-          <execution>
+          <!--execution>
             <id>add-resource</id>
             <phase>generate-resources</phase>
             <goals>
@@ -199,7 +199,7 @@
                 <resource>${project.basedir}/src/main/resources/</resource>
               </resources>
             </configuration>
-          </execution>
+          </execution-->
           <execution>
             <id>add-test-source</id>
             <phase>generate-test-sources</phase>
@@ -213,7 +213,7 @@
               </sources>
             </configuration>
           </execution>
-          <execution>
+          <!--execution>
             <id>add-test-resource</id>
             <phase>generate-test-resources</phase>
             <goals>
@@ -224,7 +224,7 @@
                 <resource>${project.basedir}/src/main/resources/</resource>
               </resources>
             </configuration>
-          </execution>
+          </execution-->
         </executions>
       </plugin>
    </plugins>
