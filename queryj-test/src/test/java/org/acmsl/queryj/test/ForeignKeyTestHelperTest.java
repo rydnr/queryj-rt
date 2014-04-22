@@ -141,6 +141,10 @@ public class ForeignKeyTestHelperTest
                             "long",
                             "G_CYCLE_TYPES",
                             null,
+                            1,
+                            10,
+                            1,
+
                         )
                 };
             };
