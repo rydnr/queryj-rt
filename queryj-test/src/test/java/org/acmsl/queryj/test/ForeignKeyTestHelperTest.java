@@ -1,5 +1,5 @@
 /*
-                        queryj
+                        QueryJ Test
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for ForeignKeyTestHelper.
  *
  * Date: 2014/04/22
  * Time: 06:13
@@ -44,11 +44,12 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 /**
- *
+ * Tests for {@link ForeignKeyTestHelper}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/22 06:13
@@ -56,4 +57,6 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class ForeignKeyTestHelperTest
 {
+    @Test
+    public void
 }
