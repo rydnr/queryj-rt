@@ -86,9 +86,10 @@ public class ForeignKeyTestHelperTest
         @NotNull final ForeignKeyTestHelper instance = ForeignKeyTestHelper.getInstance();
 
         @NotNull final String[] columnNames = { "source", "column(s)", "target", "allows null" };
+        @NotNull final Map<String, String> new HashMap<String, String>(),
         @NotNull final List<?> data =
             Arrays.asList(
-                new HashMap<String, String>(),"G_CYCLE_TYPES", "G_FIRST_DRAW_TYPE_ID", "G_DRAWS", "false");
+                "G_CYCLE_TYPES", "G_FIRST_DRAW_TYPE_ID", "G_DRAWS", "false");
         @NotNull final DataTable dataTable = DataTable.create(data, Locale.getDefault(), columnNames);
 
         @NotNull final List<ForeignKey<String>> foreignKeys = new ArrayList<>();
