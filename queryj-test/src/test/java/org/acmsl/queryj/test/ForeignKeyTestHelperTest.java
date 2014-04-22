@@ -82,7 +82,7 @@ public class ForeignKeyTestHelperTest
      * the list passed.
      */
     @Test
-    public void defineInputForeignKeys_builds_the_foreign_key_list()
+    public void defineInputForeignKey_builds_the_foreign_key_list()
     {
         @NotNull final ForeignKeyTestHelper instance = ForeignKeyTestHelper.getInstance();
 
