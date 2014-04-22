@@ -215,7 +215,8 @@ public class ForeignKeyTestHelper
         return
             new Attribute<String>()
             {
-                @
+                @Nullable
+                protected
                 @NotNull
                 @Override
                 public String getName()
