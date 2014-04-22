@@ -38,6 +38,7 @@ package org.acmsl.queryj.test;
 /*
  * Importing JetBrains annotations.
  */
+import cucumber.api.DataTable;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -66,6 +67,7 @@ public class ForeignKeyTestHelperTest
     {
         @NotNull final ForeignKeyTestHelper instance = ForeignKeyTestHelper.getInstance();
 
-        instance.defineInputForeignKeys();
+        DataTable data
+        instance.defineInputForeignKeys(data, );
     }
 }
