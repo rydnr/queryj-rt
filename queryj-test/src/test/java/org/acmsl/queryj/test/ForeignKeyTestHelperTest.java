@@ -131,6 +131,9 @@ public class ForeignKeyTestHelperTest
             {
                 @Override
                 public List<Attribute<String>> getAttributes()
+                {
+
+                }
             }
 
         @NotNull final Map<String, Table<String, Attribute<String>, List<Attribute<String>>>> tableMap =
