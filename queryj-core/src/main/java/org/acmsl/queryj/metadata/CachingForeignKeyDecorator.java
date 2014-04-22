@@ -220,6 +220,7 @@ public class CachingForeignKeyDecorator
      * @return such information.
      */
     @Override
+    @NotNull
     public Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>> getTarget()
     {
         @Nullable Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>> result =
