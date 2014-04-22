@@ -514,9 +514,12 @@ public abstract class AbstractForeignKeyDecorator
     }
 
     @NotNull
-    protected List<Attribute<DecoratedString>> getAttributeTypes()
+    protected List<Attribute<DecoratedString>> getAttributeTypes(
+        @NotNull final List<Attribute<DecoratedString>> attributes,
+        @NotNull final MetadataTypeManager metadataTypeManager,
+        @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
-        return getAttributeTypes(getAttributes(), getMetadataManager().getMetadataTypeManager(), TableDecoratorHelper.getInstance());
+        return tableDecoratorHelper.getAttributeTypes(attributes, )
     }
 
     /**
