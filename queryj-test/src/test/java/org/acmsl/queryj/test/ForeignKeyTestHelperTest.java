@@ -197,7 +197,6 @@ public class ForeignKeyTestHelperTest
                                 null,
                                 null,
                                 null));
-                        )
                 };
             };
 
