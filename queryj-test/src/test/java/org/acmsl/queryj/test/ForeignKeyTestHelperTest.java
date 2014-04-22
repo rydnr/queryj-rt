@@ -134,7 +134,9 @@ public class ForeignKeyTestHelperTest
                 public List<Attribute<String>> getAttributes()
                 {
                     return
-                        new AttributeValueObject()
+                        new AttributeValueObject(
+                            "G_FIRST_DRAW_ID",
+                        )
                 };
             };
 
