@@ -164,6 +164,7 @@ public class CachingForeignKeyDecorator
      * Retrieves the source table.
      * @return such information.
      */
+    @Nullable
     @Override
     public Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>> getSource()
     {
