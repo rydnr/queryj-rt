@@ -508,7 +508,7 @@ public abstract class AbstractForeignKeyDecorator
     }
 
     @NotNull
-    public
+    public List<Attribute<String>>
     /**
      * Provides a text representation of the information
      * contained in given instance.
