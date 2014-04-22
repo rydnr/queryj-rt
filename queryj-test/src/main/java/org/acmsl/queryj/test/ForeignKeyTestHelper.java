@@ -143,7 +143,7 @@ public class ForeignKeyTestHelper
 
         @Nullable final String targetTable = fkEntry.get("target");
         @Nullable final boolean allowsNull = Boolean.valueOf(fkEntry.get("allows null"));
-        @NotNull final List<Attribute<String>> columns = fromCsv(sourceColumns, sourceTable, tables.get(sourceTable));
+        @NotNull final List<Attribute<String>> columns = fromCsv(sourceColumns, sourceTable, tables);
 
         if (   (sourceTable != null)
             && (columns.size() > 0)
@@ -165,7 +165,7 @@ public class ForeignKeyTestHelper
      * Parses given list of columns to a list of {@link Attribute}s.
      * @param sourceColumns the column names.
      * @param sourceTable the source table.
-     * @param table the table information (needed to provide additional
+     * @param tables the table information (needed to provide additional
      * metadata about the foreign key attributes.
      * @return the attribute list.
      */
@@ -173,7 +173,7 @@ public class ForeignKeyTestHelper
     protected List<Attribute<String>> fromCsv(
         @Nullable final String sourceColumns,
         @Nullable final String sourceTable,
-        @NotNull final Map<Table<String, Attribute<String>, List<Attribute<String>>>> tables)
+        @NotNull final Map<String, Table<String, Attribute<String>, List<Attribute<String>>>> tables)
     {
         @NotNull final List<Attribute<String>> result = new ArrayList<>();
 
