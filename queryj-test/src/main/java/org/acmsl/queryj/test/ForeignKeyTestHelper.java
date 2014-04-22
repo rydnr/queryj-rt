@@ -92,7 +92,7 @@ public class ForeignKeyTestHelper
      * @param fkInfo the Cucumber table.
      * @param foreignKeys the list to fill with the foreign keys.
      * @param tables the table information (needed to provide additional
-     * information about the foreign key
+     * metadata about the foreign key attributes.
      */
     public void defineInputForeignKey(
         @NotNull final DataTable fkInfo,
