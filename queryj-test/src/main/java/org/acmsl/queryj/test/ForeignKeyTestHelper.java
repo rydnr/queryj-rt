@@ -225,7 +225,7 @@ public class ForeignKeyTestHelper
 
                     if (attribute == null)
                     {
-                        throw new AttributeNotFoundException();
+                        throw new AttributeNotFoundException(attributeName);
                     }
                 }
 
