@@ -208,6 +208,6 @@ public class ForeignKeyTestHelperTest
 
         Assert.assertTrue(foreignKeys.size() == 1);
 
-        List<Attribute<String>> attributes = foreignKeys.get(0).getAttributes();
+        @NotNull final List<Attribute<String>> attributes = foreignKeys.get(0).getAttributes();
     }
 }
