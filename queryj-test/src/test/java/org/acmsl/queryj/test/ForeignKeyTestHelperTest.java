@@ -135,6 +135,7 @@ public class ForeignKeyTestHelperTest
                  * {@inheritDoc}
                  */
                 @Override
+                @NotNull
                 public List<Attribute<String>> getAttributes()
                 {
                     return
