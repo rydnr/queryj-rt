@@ -115,7 +115,6 @@ public abstract class AbstractForeignKeyDecorator
         immutableSetCustomSqlProvider(customSqlProvider);
 
         immutableSetForeignKey(foreignKey);
-
     }
 
     /**
