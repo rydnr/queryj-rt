@@ -362,7 +362,7 @@ public class ForeignKeyTestHelper
 
                     @NotNull final Attribute<String> attribute = resolveAttribute();
 
-                    result = attribute.isNullable();
+                    result = attribute.isBoolean();
 
                     return result;
                 }
@@ -375,7 +375,7 @@ public class ForeignKeyTestHelper
 
                     @NotNull final Attribute<String> attribute = resolveAttribute();
 
-                    result = attribute.getValue();
+                    result = attribute.getBooleanTrue();
 
                     return result;
                 }
@@ -388,7 +388,7 @@ public class ForeignKeyTestHelper
 
                     @NotNull final Attribute<String> attribute = resolveAttribute();
 
-                    result = attribute.getValue();
+                    result = attribute.getBooleanFalse();
 
                     return result;
                 }
@@ -401,7 +401,7 @@ public class ForeignKeyTestHelper
 
                     @NotNull final Attribute<String> attribute = resolveAttribute();
 
-                    result = attribute.getValue();
+                    result = attribute.getBooleanNull();
 
                     return result;
                 }
@@ -425,7 +425,7 @@ public class ForeignKeyTestHelper
 
                     @NotNull final Attribute<String> attribute = resolveAttribute();
 
-                    result = attribute.getOrdinalPosition();
+                    result = attribute.getLength();
 
                     return result;
                 }
@@ -437,7 +437,7 @@ public class ForeignKeyTestHelper
 
                     @NotNull final Attribute<String> attribute = resolveAttribute();
 
-                    result = attribute.getOrdinalPosition();
+                    result = attribute.getPrecision();
 
                     return result;
                 }
@@ -446,13 +446,25 @@ public class ForeignKeyTestHelper
                 @Override
                 public String getSequence()
                 {
-                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                    @Nullable final String result;
+
+                    @NotNull final Attribute<String> attribute = resolveAttribute();
+
+                    result = attribute.getSequence();
+
+                    return result;
                 }
 
                 @Override
                 public int compareTo(final Attribute<String> o)
                 {
-                    return 0;  //To change body of implemented methods use File | Settings | File Templates.
+                    final int result;
+
+                    @NotNull final Attribute<String> attribute = resolveAttribute();
+
+                    result = attribute.compareTo(o);
+
+                    return result;
                 }
             };
     }
