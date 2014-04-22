@@ -162,6 +162,6 @@ class(fk, C) ::= <<
 public class <fk.source.name.voName>By<fk.target.name.voName>StatementSetter
     implements  PreparedStatementSetter
 {
-    <fk.attributes:{ a | <attribute_declaration(attr=a, C=C)>}; separator="\n">
+    <fk.attributes:{ a | <attribute_declaration(attribute=a, C=C)>}; separator="\n">
 }
 >>
