@@ -519,7 +519,8 @@ public abstract class AbstractForeignKeyDecorator
 
     /**
      * Retrieves the list of attribute types.
-     * @param
+     * @param attributes the attributes.
+     * @param metadataTypeManager the {@link MetadataTypeManager}
      * @return such list.
      */
     @NotNull
