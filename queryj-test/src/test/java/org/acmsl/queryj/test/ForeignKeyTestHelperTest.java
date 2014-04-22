@@ -74,7 +74,7 @@ public class ForeignKeyTestHelperTest
         @NotNull final List<?> data = new ArrayList<>();
         @NotNull final List<String> columnNames = new ArrayList<>();
 
-        @NotNull final DataTable dataTable = DataTable.create(data, Locale.getDefault(), columnNames.toArray());
+        @NotNull final DataTable dataTable = DataTable.create(data, Locale.getDefault(), columnNames.toArray(new String[0]));
         instance.defineInputForeignKeys(data, );
     }
 }
