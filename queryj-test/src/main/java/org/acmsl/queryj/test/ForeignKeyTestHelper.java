@@ -178,7 +178,6 @@ public class ForeignKeyTestHelper
             while (tokenizer.hasMoreTokens())
             {
                 result.add(
-                    findAttribute(table)
                     new AttributeIncompleteValueObject(
                         tokenizer.nextToken(),
                         -1,
