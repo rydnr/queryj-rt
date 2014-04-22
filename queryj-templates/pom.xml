@@ -196,7 +196,7 @@
             </goals>
             <configuration>
               <resources>
-                <resource>${project.basedir}/src/main/resources/</source>
+                <resource>${project.basedir}/src/main/resources/</resource>
               </resources>
             </configuration>
           </execution>
@@ -221,7 +221,7 @@
             </goals>
             <configuration>
               <resources>
-                <resource>${project.basedir}/src/main/resources/</source>
+                <resource>${project.basedir}/src/main/resources/</resource>
               </resources>
             </configuration>
           </execution>
