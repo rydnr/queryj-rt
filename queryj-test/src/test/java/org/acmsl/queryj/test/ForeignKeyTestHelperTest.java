@@ -91,7 +91,7 @@ public class ForeignKeyTestHelperTest
         row.put("source", "G_CYCLE_TYPES");
         row.put("column(s)", "G_FIRST_DRAW_TYPE_ID");
         row.put("target", "G_DRAWS");
-        row.put()
+        row.put("allows null", "false");
         @NotNull final List<?> data =
             Arrays.asList(
                 "G_CYCLE_TYPES", "G_FIRST_DRAW_TYPE_ID", "G_DRAWS", "false");
