@@ -135,7 +135,7 @@ public class ForeignKeyTestHelperTest
                 public List<Attribute<String>> getAttributes()
                 {
                     return
-                        Arrays.asList(
+                        Arrays.<Attribute<String>>asList(
                             new AttributeValueObject(
                                 "G_FIRST_DRAW_ID",
                                 Types.BIGINT,
