@@ -508,8 +508,8 @@ public abstract class AbstractForeignKeyDecorator
     }
 
     /**
-     * Retrieves the li
-     * @return
+     * Retrieves the list of attribute types.
+     * @return such list.
      */
     @NotNull
     public List<DecoratedString> getAttributeTypes()
@@ -517,6 +517,11 @@ public abstract class AbstractForeignKeyDecorator
         return getAttributeTypes(getAttributes(), getMetadataManager().getMetadataTypeManager(), TableDecoratorHelper.getInstance());
     }
 
+    /**
+     * Retrieves the list of attribute types.
+     * @param
+     * @return such list.
+     */
     @NotNull
     protected List<DecoratedString> getAttributeTypes(
         @NotNull final List<Attribute<DecoratedString>> attributes,
