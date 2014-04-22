@@ -215,8 +215,8 @@ public class ForeignKeyTestHelper
         return
             new Attribute<String>()
             {
-                @Nullable
-                protected Attribute<String> findAttribute()
+                @NotNull
+                protected Attribute<String> findAttribute_()
                 {
                     @Nullable final Attribute<String> result = findAttribute(attributeName, tables.get(sourceTable));
 
@@ -240,7 +240,7 @@ public class ForeignKeyTestHelper
                 {
                     final int result;
 
-                    @Nullable final Attribute<String> attribute = findAttribute(attributeName, tables.get(sourceTable));
+                    @Nullable final Attribute<String> attribute = findAttribute();
 
                     if (attribute == null)
                     {
@@ -262,14 +262,7 @@ public class ForeignKeyTestHelper
 
                     @NotNull final Attribute<String> attribute = findAttribute();
 
-                    if (attribute == null)
-                    {
-                        throw new AttributeNotFoundException(attributeName, sourceTable);
-                    }
-                    else
-                    {
-                        result = attribute.getType();
-                    }
+                    result = attribute.getType();
 
                     return result;
                 }
