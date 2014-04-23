@@ -75,6 +75,14 @@ sourceImpl(repository, tables, C) ::= <<
 import org.acmsl.commons.patterns.dao.DataAccessManager;
 
 <endif>
+/*
+ * Importing JDK classes.
+ */
+import java.io.Serializable;
+<if(table.attributeTypes)>
+<table.attributeTypes:{ t | import <t>;}; separator="\n">
+<endif>
+
 
 <class(table=table, C=C)>
 >>
