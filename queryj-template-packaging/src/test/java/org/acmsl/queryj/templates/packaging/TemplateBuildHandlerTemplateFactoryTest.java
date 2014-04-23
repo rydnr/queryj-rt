@@ -56,9 +56,9 @@ import org.junit.Test;
 @ThreadSafe
 public class TemplateBuildHandlerTemplateFactoryTest
     extends TemplateFactoryTestHelper<
-    TemplateBuildHandlerTemplateFactory,
-    TemplateBuildHandlerTemplate<DefaultTemplatePackagingContext>,
-    DefaultTemplatePackagingContext>
+                TemplateBuildHandlerTemplateFactory,
+                TemplateBuildHandlerTemplate<DefaultTemplatePackagingContext>,
+                DefaultTemplatePackagingContext>
 {
     /**
      * Creates a new nice mock of {@link DefaultTemplatePackagingContext}.
