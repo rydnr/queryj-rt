@@ -103,7 +103,7 @@ public abstract class BasePerRepositoryTemplateWritingHandler
      * @return the template.
      */
     @Nullable
-    protected T retrieveTemplate(@NotNull final QueryJCommand parameters)
+    protected abstract T retrieveTemplate(@NotNull final QueryJCommand parameters)
         throws QueryJBuildException;
 
     /**
