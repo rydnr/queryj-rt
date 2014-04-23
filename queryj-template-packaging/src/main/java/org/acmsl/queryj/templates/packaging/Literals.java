@@ -162,7 +162,7 @@ public interface Literals
      */
     String PER_CUSTOM_SQL_TEMPLATE_WRITING_HANDLER = "PerCustomSqlTemplateWritingHandler";
     /**
-     * String literal:
+     * String literal: "PerRepositoryTemplateBuildHandler".
      */
     String PER_REPOSITORY_TEMPLATE_BUILD_HANDLER = "PerRepositoryTemplateBuildHandler";
 }
