@@ -228,7 +228,7 @@ public class <repository.capitalized>DAOChooser
      * Loads the configuration from a property file.
      * @param properties where to store the settings.
      */
-    private synchronized void loadProperties(final Properties properties)
+    protected synchronized void loadProperties(final Properties properties)
     {
         if  (properties != null)
         {
