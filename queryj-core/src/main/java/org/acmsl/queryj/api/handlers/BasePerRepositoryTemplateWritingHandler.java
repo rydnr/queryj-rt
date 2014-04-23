@@ -81,10 +81,12 @@ public abstract class BasePerRepositoryTemplateWritingHandler
     {
         @Nullable final T template = retrieveTemplate(parameters);
 
-        if (template == null)
+        if (template != null)
         {
-            result
+            result.add(template);
         }
+
+        return result;
     }
 
     /**
