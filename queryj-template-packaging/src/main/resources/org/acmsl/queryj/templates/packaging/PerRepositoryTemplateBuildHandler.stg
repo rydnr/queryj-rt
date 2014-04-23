@@ -154,7 +154,7 @@ public class <C.class_name>
 
     /**
      * Builds the actual package name.
-     * @param tableName the table name.
+     * @param repository the repository.
      * @param engine the engine.
      * @param projectPackage the project package.
      * @return the package name.
