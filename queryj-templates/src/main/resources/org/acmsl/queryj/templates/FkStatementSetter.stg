@@ -182,10 +182,9 @@ public class <fk.source.name.voName>By<fk.target.name.voName>StatementSetter
      * Specifies the values on given {@link PreparedStatement}
      * @param preparedStatement the prepared statement.
      * @throws SQLException intercepted by \<i>Spring\</i>.
-     <precondition_notnull("preparedStatement")>
-     <precondition_instanceof(name="preparedStatement", className="Query")>
      */
-    public void setValues(final PreparedStatement preparedStatement)
+    @Override
+    public void setValues(<notnull(C=C)>final PreparedStatement preparedStatement)
         throws  SQLException
     {
 }
