@@ -1154,7 +1154,7 @@ public abstract class AbstractTemplatesTest<G, F>
         result.append(m__mOutputFiles);
         result.append(", tables=");
         result.append(m__mTables);
-        result.append(", foreignKeys=");
+        result.append("\", \"foreignKeys=");
         result.append(m__lForeignKeys);
         result.append("\", \"sqlList=");
         result.append(m__lSql);
