@@ -200,7 +200,9 @@ protected <table.name.voName>DAO get<table.name.voName>DAOReference()
 <notnull(C=C)>
 public <table.name.voName>DAO get<table.name.voName>DAO()
 {
-    <nullable(C=C)><table.name.voName>DAO result = get<table.name.voName>DAOReference();
+    <notnull(C=C)><table.name.voName>DAO result;
+
+    <nullable(C=C)><table.name.voName>DAO aux = get<table.name.voName>DAOReference();
 
     if  (result == null)
     {
@@ -209,7 +211,7 @@ public <table.name.voName>DAO get<table.name.voName>DAO()
 
         if  (t_<table.name.voName>DAOFactory != null)
         {
-            result = t_<table.name.voName>DAOFactory.create<table.name.voName>DAO();
+            aux = t_<table.name.voName>DAOFactory.create<table.name.voName>DAO();
 
             if (result != null)
             {
