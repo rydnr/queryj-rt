@@ -92,8 +92,7 @@ public class BasePerRepositoryTemplateBuildHandler
      * Retrieves the per-repository template factory.
      * @return such instance.
      */
-//    protected abstract TF retrieveTemplateFactory();
-    protected TF retrieveTemplateFactory() { return null; }
+    protected abstract TF retrieveTemplateFactory();
 
     /**
      * Handles given command.
