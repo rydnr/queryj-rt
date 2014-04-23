@@ -174,7 +174,7 @@ public class <fk.source.name.voName>By<fk.target.name.voName>StatementSetter
           separator=",\n">)
     {
         <foreignKey.attributes:
-          { attr | immutableSet<attr.nameCapitalized>(<attr.nameLowercased>);};
+          { attr | immutableSet<attr.name.capitalized>(<attr.nameLowercased>);};
           separator="\n">
     }
 }
