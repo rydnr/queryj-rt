@@ -244,7 +244,7 @@ repository_dao_methods(repository, C=C) ::= <<
  * Specifies the new {@code <repository.capitalized>DAO} reference to keep.
  * @param dao the new DAO.
  */
-protected void set<repository.capitalized>DAOReference(final <repository.capitalized>DAO dao)
+protected void set<repository.capitalized>DAOReference(<notnull(C=C)>final <repository.capitalized>DAO dao)
 {
     m__<repository.capitalized>DAO = dao;
 }
