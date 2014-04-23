@@ -195,8 +195,7 @@ public class BasePerRepositoryTemplateBuildHandler
     @NotNull
     protected String retrievePackage(
         @NotNull final Engine<String> engine,
-        @NotNull final String projectPackage,
-        @NotNull final PackageUtils packageUtils);
+        @NotNull final String projectPackage)
 
     /**
      * Stores the template in given attribute map.
