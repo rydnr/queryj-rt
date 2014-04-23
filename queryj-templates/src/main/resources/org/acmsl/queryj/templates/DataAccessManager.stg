@@ -112,24 +112,24 @@ public class <repository.capitalized>DataAccessManager
     /**
      * Public constructor to allow reflective access.
      */
-    public <repository.>DataAccessManager() {};
+    public <repository.capitalized>DataAccessManager() {};
 
     /**
      * Singleton implementation to avoid double-checked locking.
      */
-    private static final class <input.tr_name_capitalized>DataAccessManagerSingletonContainer
+    private static final class <repository.capitalized>DataAccessManagerSingletonContainer
     {
-        private static final <input.tr_name_capitalized>DataAccessManager SINGLETON =
-            new <input.tr_name_capitalized>DataAccessManager();
+        private static final <repository.capitalized>DataAccessManager SINGLETON =
+            new <repository.capitalized>DataAccessManager();
     }
 
     /**
-     * Retrieves a \<code\><input.tr_name_capitalized>DataAccessManager\</code\> instance.
+     * Retrieves a {@code <repository.capitalized>DataAccessManager} instance.
      * @return such instance.
      */
-    public static <input.tr_name_capitalized>DataAccessManager getInstance()
+    public static <repository.capitalized>DataAccessManager getInstance()
     {
-        return <input.tr_name_capitalized>DataAccessManagerSingletonContainer.SINGLETON;
+        return <repository.capitalized>DataAccessManagerSingletonContainer.SINGLETON;
     }
 }
 >>
