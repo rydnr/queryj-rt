@@ -175,7 +175,7 @@ dao_methods(table) ::= <<
  @param table the table.
 !>
 /**
- * Specifies the new \<code><table.voName>DAO\</code> reference to keep.
+ * Specifies the new {@code <table.name.voName>DAO} reference to keep.
  * @param dao the new DAO.
  */
 protected void set<table.voName>DAOReference(final <table.voName>DAO dao)
