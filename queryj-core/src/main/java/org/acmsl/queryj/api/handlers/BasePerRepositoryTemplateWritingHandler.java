@@ -90,8 +90,6 @@ public abstract class BasePerRepositoryTemplateWritingHandler
     /**
      * Retrieves the output dir from the attribute map.
      * @param projectFolder the project folder.
-     * @param projectPackage the project base package.
-     * @param useSubfolders whether to use subfolders for tests, or
      * using a different package naming scheme.
      * @param engine the engine.
      * @param parameters the parameter map.
