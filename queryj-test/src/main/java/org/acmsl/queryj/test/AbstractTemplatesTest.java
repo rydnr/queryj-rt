@@ -1178,7 +1178,7 @@ public abstract class AbstractTemplatesTest<G, F>
         result.append(m__strJdbcPassword);
         result.append("\", \"repository\": \"");
         result.append(m__strRepository);
-        result.append("}");
+        result.append("\" }");
 
         return result.toString();
     }
