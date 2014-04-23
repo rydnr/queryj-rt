@@ -158,9 +158,9 @@ repository_dao_attribute_declaration(repository) ::= <<
  @param repository the repository.
 !>
 /**
- * The \<code><repositoryCapitalized>DAO\</code> reference (cached whereas Manager
+ * The \<code><repository.capitalized>DAO\</code> reference (cached whereas Manager
  * instance is not garbage collected).
  */
-private <repositoryCapitalized>DAO m__<repositoryCapitalized>DAO;
+private <repository.capitalized>DAO m__<repository.capitalized>DAO;
 >>
 
