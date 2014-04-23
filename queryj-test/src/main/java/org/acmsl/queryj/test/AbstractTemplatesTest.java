@@ -975,6 +975,7 @@ public abstract class AbstractTemplatesTest<G, F>
         EasyMock.expect(result.getEngine()).andReturn(new UndefinedJdbcEngine(engineName, "11")).anyTimes();
         EasyMock.expect(result.getTableDAO()).andReturn(tableDAO).anyTimes();
         EasyMock.expect(result.getColumnDAO()).andReturn(columnDAO).anyTimes();
+        EasyMock.expect(tableDAO.findAllTables()).andReturn(tables).anyTimes();
 
         for (@NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table : tables)
         {
