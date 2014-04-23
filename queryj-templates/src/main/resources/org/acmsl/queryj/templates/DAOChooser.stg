@@ -189,7 +189,7 @@ public class <repository.capitalized>DAOChooser
     <notnull(C=C)>
     private Properties immutableGetProperties()
     {
-        <notnull(C=C)>final Properties result = getProperties();
+        final Properties result = getProperties();
 
         if  (result == null)
         {
