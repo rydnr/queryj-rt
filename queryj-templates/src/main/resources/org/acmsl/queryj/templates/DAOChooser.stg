@@ -101,7 +101,7 @@ class(repository, tables, C) ::= <<
 <class_common_javadoc(
   template="org/acmsl/queryj/templates/DAOChooser.stg", C=C)>
  */
-public class <repository.capitalized>DataAccessManager
+public class <repository.capitalized>DAOChooser
 <if(C.implement_markers)>
     extends  DataAccessManager,
              Serializable
