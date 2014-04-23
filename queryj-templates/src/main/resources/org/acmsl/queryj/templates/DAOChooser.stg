@@ -301,7 +301,7 @@ public class <repository.capitalized>DAOChooser
 
 <if(input.repository_dao)>
     <repository_dao_factory_getters(
-      repositoryCapitalized=repository.capitalized,
+      repository=repository.capitalized,
       repositoryUppercased=input.tr_name_uppercased);
      separator="\n\n">
 <endif>
