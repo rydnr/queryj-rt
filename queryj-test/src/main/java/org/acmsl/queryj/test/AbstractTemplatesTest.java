@@ -1144,7 +1144,7 @@ public abstract class AbstractTemplatesTest<G, F>
             new StringBuilder("AbstractTemplatesTest{ FACTORY_MAPPINGS=");
 
         result.append(FACTORY_MAPPINGS);
-        result.append(", GENERATOR_MAPPINGS=");
+        result.append("\", \"GENERATOR_MAPPINGS=");
         result.append(GENERATOR_MAPPINGS);
         result.append("\", \"PACKAGE_MAPPINGS=");
         result.append(PACKAGE_MAPPINGS);
