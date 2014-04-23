@@ -71,6 +71,6 @@ public class PerRepositoryTemplateBuildHandlerTemplateTest
         @NotNull final PerRepositoryTemplateBuildHandlerTemplate instance =
             new PerRepositoryTemplateBuildHandlerTemplate<>(context);
 
-        Assert.assertEquals(Literals.PER_REPOSITORY_TEMPLATE_FACTORY, instance.getTemplateName());
+        Assert.assertEquals(Literals.PER_REPOSITORY_TEMPLATE_BUILD_HANDLER, instance.getTemplateName());
     }
 }
