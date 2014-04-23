@@ -33,7 +33,7 @@
 //
 // Author: Jose San Leandro Armendariz
 //
-// Description: Defines the rules to generate value object interfaces.
+// Description: Defines the rules to generate DataAccessManager facades.
 //
 //
 group BaseValueObject;
