@@ -154,6 +154,8 @@ public class <C.class_name>
     {
         @NotNull final File result;
 
+        @NotNull final String projectPackage = retrieveProjectPackage(parameters);
+
         @NotNull final String packageName =
             <def.name.noExtension>TemplateBuildHandler.buildPackageName(
                 repository, engine, projectPackage);
