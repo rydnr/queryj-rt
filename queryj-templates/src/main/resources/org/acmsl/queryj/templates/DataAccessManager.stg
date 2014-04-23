@@ -51,7 +51,7 @@ source(C) ::= <<
 sourceImpl(table, C) ::= <<
 <!
   Defines the rules to generate DataAccessManager facades.
-  @param table the table.
+  @param tables the table.
   @param C the context.
 !>
 <if(C.header)>
