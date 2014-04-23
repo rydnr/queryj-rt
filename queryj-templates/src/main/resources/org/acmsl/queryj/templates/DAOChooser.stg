@@ -133,7 +133,7 @@ public class <repository.capitalized>DAOChooser
         return <repository.capitalized>DAOChooserSingletonContainer.SINGLETON;
     }
 
-    <tables:{ t | <dao_constant(table=t, C=C)>}; separator="\n\n">
+    <tables:{ t | <dao_constant(table=t, repository=repository, C=C)>}; separator="\n\n">
 <if(C.repository_dao)>
     <repository_dao_constant(repository=repository, C=C)>
 <endif>
