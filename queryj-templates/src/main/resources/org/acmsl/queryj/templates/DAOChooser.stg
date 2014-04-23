@@ -151,15 +151,15 @@ public class <repository.capitalized>DAOChooser
     /**
      * Public constructor to allow reflective access.
      */
-    public <input.tr_name_capitalized>DAOChooser() {};
+    public <repository.capitalized>DAOChooser() {};
 
     /**
-     * Retrieves a \<code\><input.tr_name_capitalized>DAOChooser\</code\> instance.
+     * Retrieves a \<code\><repository.capitalized>DAOChooser\</code\> instance.
      * @return such instance.
      */
-    public static <input.tr_name_capitalized>DAOChooser getInstance()
+    public static <repository.capitalized>DAOChooser getInstance()
     {
-        return <input.tr_name_capitalized>DAOChooserSingletonContainer.SINGLETON;
+        return <repository.capitalized>DAOChooserSingletonContainer.SINGLETON;
     }
 
     /**
@@ -234,14 +234,14 @@ public class <repository.capitalized>DAOChooser
             {
                 // try classpath
                 t_isProperties =
-                    <input.tr_name_capitalized>DAOChooser.class.getClassLoader().getResourceAsStream(
+                    <repository.capitalized>DAOChooser.class.getClassLoader().getResourceAsStream(
                         "/" + PROPERTIES_FILE);
 
                 if  (t_isProperties == null)
                 {
                     // try local
                     t_isProperties =
-                        <input.tr_name_capitalized>DAOChooser.class.getClassLoader().getResourceAsStream(
+                        <repository.capitalized>DAOChooser.class.getClassLoader().getResourceAsStream(
                             PROPERTIES_FILE);
                 }
 
@@ -253,7 +253,7 @@ public class <repository.capitalized>DAOChooser
                 {
                      try
                      {
-                         LogFactory.getLog(<input.tr_name_capitalized>DAOChooser.class).warn(
+                         LogFactory.getLog(<repository.capitalized>DAOChooser.class).warn(
                                "Couldn't find the property file: "
                              + PROPERTIES_FILE);
                      }
@@ -267,7 +267,7 @@ public class <repository.capitalized>DAOChooser
             {
                 try
                 {
-                     LogFactory.getLog(<input.tr_name_capitalized>DAOChooser.class).warn(
+                     LogFactory.getLog(<repository.capitalized>DAOChooser.class).warn(
                           "Couldn't find the property file: "
                         + PROPERTIES_FILE,
                         ioException);
@@ -282,7 +282,7 @@ public class <repository.capitalized>DAOChooser
         {
             try
             {
-                LogFactory.getLog(<input.tr_name_capitalized>DAOChooser.class).warn(
+                LogFactory.getLog(<repository.capitalized>DAOChooser.class).warn(
                     "Properties object not valid!");
             }
             catch  (final Throwable throwable)
@@ -297,7 +297,7 @@ public class <repository.capitalized>DAOChooser
 
 <if(input.repository_dao)>
     <repository_dao_factory_getters(
-      repositoryCapitalized=input.tr_name_capitalized,
+      repositoryCapitalized=repository.capitalized,
       repositoryUppercased=input.tr_name_uppercased);
      separator="\n\n">
 <endif>
