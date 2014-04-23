@@ -375,6 +375,6 @@ repository_dao_factory_getters(repository, C) ::= <<
  */
 public String get<repository.capitalized>DAOFactoryClassName()
 {
-    return getProperty(<repositoryUppercased>_DAO);
+    return getProperty(<repository.uppercased>_DAO);
 }
 >>
