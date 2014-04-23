@@ -139,11 +139,8 @@ public class <repository.capitalized>DataAccessManager
     }
 
     <tables:{ t | <dao_methods(table=t)>}; separator="\n\n">
-<if(input.repository_dao)>
-    <repository_dao_methods(
-      repository=input.tr_name,
-      repositoryCapitalized=input.tr_name_capitalized);
-     separator="\n\n">
+<if(C.repository_dao)>
+    <repository_dao_methods(repository=repository)>
 <endif>
 }
 >>
