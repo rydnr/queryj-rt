@@ -52,7 +52,8 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2014/04/23 18:44
  */
 @ThreadSafe
-public class PerRepositoryTemplateBuildHandlerTemplate
+public class PerRepositoryTemplateBuildHandlerTemplate<C extends TemplatePackagingContext>
+    extends TemplateFactoryTemplate<C>
 
 {
     /**
