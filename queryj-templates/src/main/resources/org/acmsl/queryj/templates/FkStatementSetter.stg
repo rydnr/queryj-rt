@@ -244,7 +244,7 @@ public boolean equals(<nullable(C=C)>final Object other)
 }
 >>
 
-hashcode_method(table, C) ::= <<
+hashcode_method(fk, C) ::= <<
 <! Generates the hashcode() method !>
 /**
  * Retrieves the hashcode which identifies this instance
