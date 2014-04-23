@@ -152,3 +152,15 @@ dao_attribute_declaration(table) ::= <<
 private <table.name.voName>DAO m__<table.name.voName>DAO;
 >>
 
+repository_dao_attribute_declaration(repositoryCapitalized) ::= <<
+<!
+ Generates the attribute declaration for the repository DAO.
+ @param repositoryCapitalized the repository, capitalized.
+!>
+/**
+ * The \<code><repositoryCapitalized>DAO\</code> reference (cached whereas Manager
+ * instance is not garbage collected).
+ */
+private <repositoryCapitalized>DAO m__<repositoryCapitalized>DAO;
+>>
+
