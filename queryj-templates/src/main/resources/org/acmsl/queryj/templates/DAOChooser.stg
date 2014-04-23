@@ -357,6 +357,8 @@ public String get<table.voName>DAOFactoryClassName()
     {
         throw new RuntimeException(<repository.uppercased>_<table.voName.uppercased>_DAO + " not defined!");
     }
+
+    return result;
 }
 >>
 
