@@ -362,8 +362,7 @@ public String get<table.voName>DAOFactoryClassName()
 }
 >>
 
-repository_dao_factory_getters(
-  repositoryCapitalized, repositoryUppercased) ::= <<
+repository_dao_factory_getters(repository, C) ::= <<
 <!
  Generates the getter methods to retrieve the class names of the
  repository DAOFactory implementation.
