@@ -109,5 +109,6 @@ public class <repository.capitalized>DataAccessManager
     extends Serializable
 <endif>
 {
+aoeu
 }
 >>
