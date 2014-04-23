@@ -66,7 +66,6 @@ public class PerRepositoryTemplateBuildHandlerTemplate<C extends TemplatePackagi
 
     /**
      * Retrieves the template name.
-     *
      * @return such name.
      */
     @NotNull
