@@ -87,7 +87,7 @@ public class TemplateBuildHandlerTemplateFactory
     public TemplateBuildHandlerTemplate<DefaultTemplatePackagingContext> createTemplate(
         @NotNull final DefaultTemplatePackagingContext context)
     {
-        @NotNull final TemplateFactoryTemplate<DefaultTemplatePackagingContext> result;
+        @NotNull final TemplateBuildHandlerTemplate<DefaultTemplatePackagingContext> result;
 
         switch (TemplateDefType.getEnumFromString(context.getTemplateDef().getType().getType()))
         {
