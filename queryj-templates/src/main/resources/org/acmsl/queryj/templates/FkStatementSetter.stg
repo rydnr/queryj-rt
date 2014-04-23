@@ -177,5 +177,16 @@ public class <fk.source.name.voName>By<fk.target.name.voName>StatementSetter
     }
 
     <fk.attributes:{ a | <attribute_accessors(attribute=a)>}; separator="\n">
+
+    /**
+     * Specifies the values on given \<code>PreparedStatement\</code>
+     * @param preparedStatement the prepared statement.
+     * @throws SQLException intercepted by \<i>Spring\</i>.
+     <precondition_notnull("preparedStatement")>
+     <precondition_instanceof(name="preparedStatement", className="Query")>
+     */
+    public void setValues(final PreparedStatement preparedStatement)
+        throws  SQLException
+    {
 }
 >>
