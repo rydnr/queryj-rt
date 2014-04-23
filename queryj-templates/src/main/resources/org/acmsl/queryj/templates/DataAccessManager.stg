@@ -197,6 +197,7 @@ protected <table.name.voName>DAO get<table.name.voName>DAOReference()
  * Retrieves a {@link <table.name.voName>DAO}.
  * @return a DAO instance for accessing <table.name> information.
  */
+<nullabl
 public <table.name.voName>DAO get<table.name.voName>DAO()
 {
     <nullable(C=C)><table.name.voName>DAO result = get<table.name.voName>DAOReference();
@@ -211,7 +212,9 @@ public <table.name.voName>DAO get<table.name.voName>DAO()
             result = t_<table.name.voName>DAOFactory.create<table.name.voName>DAO();
 
             if (result != null)
-            set<table.name.voName>DAOReference(result);
+            {
+                set<table.name.voName>DAOReference(result);
+            }
         }
     }
 
