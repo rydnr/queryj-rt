@@ -188,8 +188,8 @@ public class <fk.source.name.voName>By<fk.target.name.voName>StatementSetter
         throws  SQLException
     {
         setValues(
-            (Query) preparedStatement,
-            <foreignKey.attributes:{attr | get<attr.nameCapitalized>()}; separator=",\n">);
+            preparedStatement,
+            <fk.attributes:{attr | get<attr.name.capitalized>()}; separator=",\n">);
     }
 
     /**
@@ -209,7 +209,6 @@ public class <fk.source.name.voName>By<fk.target.name.voName>StatementSetter
     {
         <foreignKey.attributes:attribute_query_specification(attr=it);
           separator="\n">
-    }
     }
 }
 >>
