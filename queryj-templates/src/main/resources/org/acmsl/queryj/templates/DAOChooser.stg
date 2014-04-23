@@ -355,7 +355,7 @@ public String get<table.voName>DAOFactoryClassName()
 
     if (result == null)
     {
-        throw new RuntimeException("
+        throw new RuntimeException("<repository.lowercased>.<table.voName.lowercased>.dao
     }
 }
 >>
