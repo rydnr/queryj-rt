@@ -188,7 +188,7 @@ public class <C.class_name>
         @NotNull final QueryJCommand parameters)
     {
         new QueryJCommandWrapper\<<def.name.noExtension>Template>(parameters)
-            .setSetting(TEMPLATES_KEY, templates);
+            .setSetting(TEMPLATE_KEY, templates);
     }
 }
 >>
