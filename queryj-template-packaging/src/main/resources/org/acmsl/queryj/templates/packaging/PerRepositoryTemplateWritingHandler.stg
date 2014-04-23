@@ -169,7 +169,7 @@ public class <C.class_name>
 
         @NotNull final String packageName =
             <def.name.noExtension>TemplateBuildHandler.buildPackageName(
-                tableName, engine, projectPackage);
+                repository, engine, projectPackage);
 
         @NotNull final String[] pieces = packageName.split("\\\.");
 
