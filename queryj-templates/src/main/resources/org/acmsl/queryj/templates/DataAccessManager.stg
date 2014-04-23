@@ -87,7 +87,7 @@ description(repository) ::= <<
 DataAccessManager facade for <repository> repository.
 >>
 
-class(table, C) ::= <<
+class(repository, tables, C) ::= <<
 <!
  Generates the class body.
  @param table the table.
