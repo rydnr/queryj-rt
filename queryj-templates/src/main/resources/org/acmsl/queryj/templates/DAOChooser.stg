@@ -342,6 +342,7 @@ dao_factory_getters(table, repository, C) ::= <<
  concrete DAOFactory implementations.
  @param table the table.
  @param repository the repository in upper-case.
+
 !>
 /**
  * Retrieves the \<code\><table.singularNameCapitalized>DAOFactory\</code\> class name.
