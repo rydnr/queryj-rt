@@ -53,7 +53,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class PerRepositoryTemplateBuildHandlerTemplate<C extends TemplatePackagingContext>
-    extends TemplateFactoryTemplate<C>
+    extends TemplateBuildHandlerTemplate<C>
 
 {
     /**
