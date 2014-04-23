@@ -253,6 +253,7 @@ protected void set<repository.capitalized>DAOReference(<notnull(C=C)>final <repo
  * Retrieves the existing {@code <repository.capitalized>DAO} reference.
  * @return a DAO instance for accessing the <repository>-wide DAO.
  */
+<nullable(C=C)>
 protected <repository.capitalized>DAO get<repository.capitalized>DAOReference()
 {
     return m__<repository.capitalized>DAO;
@@ -262,6 +263,7 @@ protected <repository.capitalized>DAO get<repository.capitalized>DAOReference()
  * Retrieves a {@code <repository.capitalized>DAO}.
  * @return a DAO instance for accessing the <repository>-wide DAO.
  */
+<notnull(C=C)>
 public <repository.capitalized>DAO get<repository.capitalized>DAO()
 {
     <repository.capitalized>DAO result = get<repository.capitalized>DAOReference();
