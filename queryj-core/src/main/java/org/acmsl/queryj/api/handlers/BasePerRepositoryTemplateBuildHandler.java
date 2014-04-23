@@ -93,7 +93,7 @@ public class BasePerRepositoryTemplateBuildHandler
      * @return such instance.
      */
 //    protected abstract TF retrieveTemplateFactory();
-    protected abstract TF retrieveTemplateFactory();
+    protected TF retrieveTemplateFactory() { return null; }
 
     /**
      * Handles given command.
