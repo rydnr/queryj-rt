@@ -215,7 +215,10 @@ public <table.name.voName>DAO get<table.name.voName>DAO()
         }
     }
 
-    if (aux
+    if (aux == null)
+    {
+        throw new RuntimeException(
+    }
     if (result != null)
     {
         set<table.name.voName>DAOReference(result);
