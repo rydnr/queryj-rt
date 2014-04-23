@@ -190,7 +190,7 @@ public class <repository.capitalized>DAOChooser
     <notnull(C=C)>
     protected final Properties immutableGetProperties()
     {
-        final Properties result = getProperties();
+        <nullable(C=C)>final Properties result = getProperties();
 
         if  (result == null)
         {
