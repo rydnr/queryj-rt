@@ -48,7 +48,7 @@ import org.checkthread.annotations.ThreadSafe;
 import org.junit.Test;
 
 /**
- * Tests for {@link TemplateFactoryTemplateFactory}.
+ * Tests for {@link TemplateBuildHandlerTemplateFactory}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/23 18:13
