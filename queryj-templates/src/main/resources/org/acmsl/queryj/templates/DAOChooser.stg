@@ -103,7 +103,7 @@ class(repository, tables, C) ::= <<
  */
 public class <repository.capitalized>DAOChooser
 <if(C.implement_markers)>
-    extends  DataAccessManager,
+    extends  DAOChooser,
              Serializable
 <else>
     extends Serializable
