@@ -652,6 +652,7 @@ public abstract class AbstractTemplatesTest<G, F>
     {
         return this.m__strRepository;
     }
+
     /**
      * Retrieves a {@link org.acmsl.queryj.customsql.CustomSqlProvider} instance adapted for given result.
      * @param sqlList the list of {@link Sql}.
