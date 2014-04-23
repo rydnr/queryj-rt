@@ -316,7 +316,7 @@ dao_constant(table, repository, C) ::= <<
  * Used to retrieve the value of \<i\><repository>.<table.name.normalized.lowercased>.dao\</i\>
  * from the configuration layer.
  */
-public static final String <repositoryUppercased>_<table.singularNameUppercased>_DAO =
+public static final String <repository.uppercased>_<table.singularNameUppercased>_DAO =
     "<repositoryLowercased>.<table.singularNameNormalizedLowercased>.dao";
 >>
 
