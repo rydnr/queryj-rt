@@ -109,6 +109,8 @@ public class <repository.capitalized>DataAccessManager
     extends Serializable
 <endif>
 {
+    <tables:dao_attribute_declaration(table=it); separator="\n\n">
+
     /**
      * Public constructor to allow reflective access.
      */
