@@ -61,7 +61,7 @@ sourceImpl(repository, tables, C) ::= <<
 <java_header(
   description=
   [
-    description(table=table)
+    description(repository=table)
   ],
   template="org/acmsl/queryj/templates/DataAccessManager.stg",
   C=C)><endif>
