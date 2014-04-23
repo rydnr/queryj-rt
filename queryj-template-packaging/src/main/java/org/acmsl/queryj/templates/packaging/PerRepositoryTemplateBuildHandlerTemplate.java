@@ -64,5 +64,15 @@ public class PerRepositoryTemplateBuildHandlerTemplate<C extends TemplatePackagi
         super(context);
     }
 
-
+    /**
+     * Retrieves the template name.
+     *
+     * @return such name.
+     */
+    @NotNull
+    @Override
+    public String getTemplateName()
+    {
+        return super.getTemplateName();
+    }
 }
