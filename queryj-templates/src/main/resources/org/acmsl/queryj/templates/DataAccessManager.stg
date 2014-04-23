@@ -84,7 +84,7 @@ description(repository) ::= <<
   Generates the first line of the generated file description.
   @param repository the repository.
 !>
-DataAccessManager facade for <repository>
+DataAccessManager facade for <repository> repository.
 >>
 
 class(table, C) ::= <<
