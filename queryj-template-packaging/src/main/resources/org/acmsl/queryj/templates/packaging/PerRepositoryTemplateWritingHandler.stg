@@ -138,7 +138,7 @@ public class <C.class_name>
         @NotNull final List\<<def.name.noExtension>Template> result;
 
         @Nullable final <def.name.noExtension>Template aux =
-            new QueryJCommandWrapper\<List\<<def.name.noExtension>Template\>>(parameters)
+            new QueryJCommandWrapper\<<def.name.noExtension>Template\>>(parameters)
                 .getSetting(<def.name.noExtension>TemplateBuildHandler.TEMPLATE_KEY);
 
         if (aux == null)
