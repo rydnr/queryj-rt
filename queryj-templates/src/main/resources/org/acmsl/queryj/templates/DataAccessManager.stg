@@ -90,7 +90,7 @@ DataAccessManager facade for <repository> repository.
 class(repository, tables, C) ::= <<
 <!
  Generates the class body.
- @param table the table.
+ @param table the tables.
  @param C the context.
 !>
 /**
