@@ -128,6 +128,7 @@ public class <repository.capitalized>DAOChooser
      * Retrieves a {@code <repository.capitalized>DAOChooser} instance.
      * @return such instance.
      */
+    <notnull(C=C)>
     public static <repository.capitalized>DAOChooser getInstance()
     {
         return <repository.capitalized>DAOChooserSingletonContainer.SINGLETON;
