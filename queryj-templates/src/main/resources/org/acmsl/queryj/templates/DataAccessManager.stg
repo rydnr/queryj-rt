@@ -210,6 +210,7 @@ public <table.name.voName>DAO get<table.name.voName>DAO()
         {
             result = t_<table.name.voName>DAOFactory.create<table.name.voName>DAO();
 
+            if (result != null)
             set<table.name.voName>DAOReference(result);
         }
     }
