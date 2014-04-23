@@ -159,15 +159,17 @@ dao_attribute_declaration(table, C) ::= <<
 private <table.name.voName>DAO m__<table.name.voName>DAO;
 >>
 
-repository_dao_attribute_declaration(repository) ::= <<
+repository_dao_attribute_declaration(repository, C) ::= <<
 <!
  Generates the attribute declaration for the repository DAO.
  @param repository the repository.
+ @param C the context.
 !>
 /**
  * The {@link <repository.capitalized>DAO} reference (cached whereas Manager
  * instance is not garbage collected).
  */
+<nullable(C=C)>
 private <repository.capitalized>DAO m__<repository.capitalized>DAO;
 >>
 
