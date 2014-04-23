@@ -76,7 +76,7 @@ import org.acmsl.commons.patterns.dao.DataAccessManager;
 
 <endif>
 
-<class(table=table, C=C)>
+<class(repository=repository, tables=tables, C=C)>
 >>
 
 description(table) ::= <<
