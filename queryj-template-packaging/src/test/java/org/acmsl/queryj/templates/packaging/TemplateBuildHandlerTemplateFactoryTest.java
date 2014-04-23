@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for TemplateBuildHandlerTemplateFactory.
  *
  * Date: 2014/04/23
  * Time: 18:13
