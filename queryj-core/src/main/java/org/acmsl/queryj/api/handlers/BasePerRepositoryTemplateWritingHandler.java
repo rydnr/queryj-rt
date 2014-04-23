@@ -86,6 +86,10 @@ public abstract class BasePerRepositoryTemplateWritingHandler
 
         if (template == null)
         {
+            result = new ArrayList<>(0);
+        }
+        else
+        {
             result = new ArrayList<>(1);
             result.add(template);
         }
