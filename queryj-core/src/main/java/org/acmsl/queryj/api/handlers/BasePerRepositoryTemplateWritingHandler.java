@@ -81,7 +81,10 @@ public abstract class BasePerRepositoryTemplateWritingHandler
     {
         @Nullable final T template = retrieveTemplate(parameters);
 
-
+        if (template == null)
+        {
+            result
+        }
     }
 
     /**
