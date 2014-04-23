@@ -110,10 +110,6 @@ public class <repository.capitalized>DAOChooser
 <endif>
 {
 
-<if(C.repository_dao)>
-    <repository_dao_attribute_declaration(repository=repository, C=C)>
-<endif>
-
     /**
      * Public constructor to allow reflective access.
      */
