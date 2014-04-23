@@ -216,7 +216,7 @@ public class <repository.capitalized>DAOChooser
      * @param key the property key.
      * @return the configuration value associated to such setting.
      */
-    private String getProperty(final String key)
+    private String getProperty(<notnull(C=C)>final String key)
     {
         // This is safe since immutableGetProperties() is private and ensures
         // a new object if the instance's is null.
