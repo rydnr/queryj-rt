@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Per repository template build handler template.
  *
  * Date: 2014/04/23
  * Time: 18:44
