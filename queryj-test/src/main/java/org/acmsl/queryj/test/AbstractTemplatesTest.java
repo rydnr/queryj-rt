@@ -1160,11 +1160,11 @@ public abstract class AbstractTemplatesTest<G, F>
         result.append(m__lSql);
         result.append("\", \"sqlParameters\": \"");
         result.append(m__mParameters);
-        result.append("\", \"rows=");
+        result.append("\", \"rows\": \"");
         result.append(m__mRows);
-        result.append("\", \"results=");
+        result.append("\", \"results\": \"");
         result.append(m__mResults);
-        result.append("\", \"properties=");
+        result.append("\", \"properties\": \"");
         result.append(m__mProperties);
         result.append("\", \"engineName=");
         result.append(m__strEngineName);
