@@ -101,7 +101,7 @@ class(repository, tables, C) ::= <<
 <class_common_javadoc(
   template="org/acmsl/queryj/templates/DataAccessManager.stg", C=C)>
  */
-public interface <table.name.voName>
+public interface <repository.capitalized>
 <if(C.implement_markers)>
     extends  ValueObject,
              Serializable
