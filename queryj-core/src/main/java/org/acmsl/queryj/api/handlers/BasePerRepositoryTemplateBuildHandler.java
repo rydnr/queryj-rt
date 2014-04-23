@@ -202,7 +202,7 @@ public class BasePerRepositoryTemplateBuildHandler
      * @param template the template.
      * @param parameters the parameter map.
      */
-    protected void storeTemplates(
+    protected void storeTemplate(
         @NotNull final T template, @NotNull final QueryJCommand parameters) {};
 
     /**
