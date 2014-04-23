@@ -170,12 +170,7 @@ public class <C.class_name>
         @NotNull final String projectPackage,
         final boolean useSubfolders,
         @NotNull final Engine\<String> engine,
-        @NotNull final QueryJCommand parameters);
-        @NotNull final Engine\<String> engine,
-        @NotNull final File projectOutputDir,
-        final String projectPackage,
-        @NotNull final String tableName,
-        final boolean subFolders)
+        @NotNull final QueryJCommand parameters)
     {
         @NotNull final File result;
 
