@@ -145,6 +145,6 @@ dao_attribute_declaration(table) ::= <<
  * The {@link <table.normalized.capitalized>DAO} reference (cached whereas Manager
  * instance is not garbage collected).
  */
-private <table.voName>DAO m__<table.voName>DAO;
+private <table.normalized.capitalized>DAO m__<table.normalized.capitalized>DAO;
 >>
 
