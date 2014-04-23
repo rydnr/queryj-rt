@@ -332,7 +332,7 @@ repository_dao_constant(repository, C) ::= <<
  * from the configuration layer.
  */
 public static final String <repository.uppercased>_DAO =
-    "<repositoryLowercased>.dao";
+    "<repository.lowercased>.dao";
 >>
 
 dao_factory_getters(table, repository) ::= <<
