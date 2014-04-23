@@ -68,8 +68,8 @@ public class PerRepositoryTemplateBuildHandlerTemplateTest
         @NotNull final DefaultTemplatePackagingContext context =
             EasyMock.createNiceMock(DefaultTemplatePackagingContext.class);
 
-        @NotNull final PerRepositoryTemplateFactoryTemplate instance =
-            new PerRepositoryTemplateFactoryTemplate<>(context);
+        @NotNull final PerRepositoryTemplateBuildHandlerTemplate instance =
+            new PerRepositoryTemplateBuildHandlerTemplate<>(context);
 
         Assert.assertEquals(Literals.PER_REPOSITORY_TEMPLATE_FACTORY, instance.getTemplateName());
     }
