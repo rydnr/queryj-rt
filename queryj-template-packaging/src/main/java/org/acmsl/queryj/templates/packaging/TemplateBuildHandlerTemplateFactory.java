@@ -108,6 +108,5 @@ public class TemplateBuildHandlerTemplateFactory
         }
 
         return result;
-        return new TemplateBuildHandlerTemplate<>(context);
     }
 }
