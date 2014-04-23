@@ -149,6 +149,7 @@ dao_attribute_declaration(table, C) ::= <<
 <!
  Generates the attribute declaration for each DAO.
  @param table the table.
+ @param C the context.
 !>
 /**
  * The {@link <table.name.voName>DAO} reference (cached whereas Manager
