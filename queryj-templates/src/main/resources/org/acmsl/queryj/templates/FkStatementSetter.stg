@@ -170,7 +170,7 @@ public class <fk.source.name.voName>By<fk.target.name.voName>StatementSetter
      ><fk.sourceVoName>By<foreignKey.targetVoName>StatementSetter\</code><foreignKey.attributes:attribute_javadoc(name=it.nameLowercased);
         separator="\n">
      */
-    public <foreignKey.sourceVoName>By<foreignKey.targetVoName>StatementSetter(
+    public <fk.source.name.voName>By<fk.target.name.voName>StatementSetter(
         <foreignKey.attributes:primitive_attribute_declaration(attr=it);
           separator=",\n">)
     {
