@@ -111,6 +111,12 @@ public class <repository.capitalized>DataAccessManager
 {
     <tables:{ t | <dao_attribute_declaration(table=t)>}; separator="\n\n">
 
+<if(C.repository_dao)>
+    <repository_dao_attribute_declaration(
+      repositoryCapitalized=input.tr_name_capitalized);
+     separator="\n\n">
+<endif>
+
     /**
      * Public constructor to allow reflective access.
      */
