@@ -376,7 +376,7 @@ repository_dao_factory_getters(repository, C) ::= <<
 <notnull(C=C)>
 public String get<repository.capitalized>DAOFactoryClassName()
 {
-    <nullable(C=C)> final String result = getProperty(<repository.uppercased>_DAO);
+    <nullable(C=C)>final String result = getProperty(<repository.uppercased>_DAO);
     if (result == null)
     {
         throw new RuntimeException(<repository.uppercased>_<table.voName.uppercased>_DAO + " not defined!");
