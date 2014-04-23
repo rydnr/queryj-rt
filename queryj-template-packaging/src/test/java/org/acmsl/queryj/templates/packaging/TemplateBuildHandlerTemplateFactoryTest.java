@@ -57,7 +57,7 @@ import org.junit.Test;
 public class TemplateBuildHandlerTemplateFactoryTest
     extends TemplateFactoryTestHelper<
     TemplateBuildHandlerTemplateFactory,
-    TemplateFactoryTemplate<DefaultTemplatePackagingContext>,
+    TemplateBuildHandlerTemplate<DefaultTemplatePackagingContext>,
     DefaultTemplatePackagingContext>
 {
     /**
