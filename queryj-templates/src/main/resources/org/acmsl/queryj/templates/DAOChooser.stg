@@ -109,7 +109,6 @@ public class <repository.capitalized>DAOChooser
     extends Serializable
 <endif>
 {
-    <tables:{ t | <dao_attribute_declaration(table=t, C=C)>}; separator="\n\n">
 
 <if(C.repository_dao)>
     <repository_dao_attribute_declaration(repository=repository, C=C)>
