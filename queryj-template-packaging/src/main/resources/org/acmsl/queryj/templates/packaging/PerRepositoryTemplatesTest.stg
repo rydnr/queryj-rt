@@ -302,6 +302,8 @@ public class PerRepositoryTemplatesTest
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
                 QueryJSettings.PACKAGE, BASE_PACKAGE_NAME);
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
+                QueryJSettings.PACKAGE, BASE_PACKAGE_NAME);
+            new QueryJCommandWrapper\<String>(t_Command).setSetting(
                 QueryJSettings.REPOSITORY, repository);
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
                 QueryJSettings.HEADER_FILE, "");
