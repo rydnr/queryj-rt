@@ -1141,7 +1141,7 @@ public abstract class AbstractTemplatesTest<G, F>
     public String toString()
     {
         @NotNull final StringBuilder result =
-            new StringBuilder("{ \"class\": \"AbstractTemplatesTest\"){ FACTORY_MAPPINGS=");
+            new StringBuilder("{ \"class\": \"AbstractTemplatesTest\", \"FACTORY_MAPPINGS\": ");
 
         result.append(FACTORY_MAPPINGS);
         result.append("\", \"GENERATOR_MAPPINGS=");
