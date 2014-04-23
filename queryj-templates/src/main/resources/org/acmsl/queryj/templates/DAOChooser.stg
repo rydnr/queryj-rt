@@ -99,7 +99,7 @@ class(repository, tables, C) ::= <<
       description(repository=repository)
     ]:{line |<line>}; separator="\n * ">
 <class_common_javadoc(
-  template="org/acmsl/queryj/templates/DataAccessManager.stg", C=C)>
+  template="org/acmsl/queryj/templates/DAOChooser.stg", C=C)>
  */
 public class <repository.capitalized>DataAccessManager
 <if(C.implement_markers)>
