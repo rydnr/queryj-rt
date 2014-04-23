@@ -50,7 +50,7 @@ source(C) ::= <<
 
 sourceImpl(table, C) ::= <<
 <!
-  Defines the rules to generate value object interfaces.
+  Defines the rules to generate DataAccessManager facades.
   @param table the table.
   @param C the context.
 !>
