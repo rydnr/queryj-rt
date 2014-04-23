@@ -294,6 +294,7 @@ public <repository.capitalized>DAO get<repository.capitalized>DAO()
     {
         result = aux;
     }
+
     return result;
 }
 >>
