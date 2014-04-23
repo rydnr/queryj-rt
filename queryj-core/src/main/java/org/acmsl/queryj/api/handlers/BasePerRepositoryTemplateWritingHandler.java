@@ -98,6 +98,7 @@ public abstract class BasePerRepositoryTemplateWritingHandler
      */
     @NotNull
     protected abstract File retrieveOutputDir(
+        @NotNull final String repository,
         @NotNull final C context,
         @NotNull final File projectFolder,
         @NotNull final Engine<String> engine,
