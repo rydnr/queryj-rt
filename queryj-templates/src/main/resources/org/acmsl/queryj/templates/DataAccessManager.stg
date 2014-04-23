@@ -137,6 +137,14 @@ public class <repository.capitalized>DataAccessManager
     {
         return <repository.capitalized>DataAccessManagerSingletonContainer.SINGLETON;
     }
+
+    <tables:{ t | <dao_methods(table=t)>}; separator="\n\n">
+<if(input.repository_dao)>
+    <repository_dao_methods(
+      repository=input.tr_name,
+      repositoryCapitalized=input.tr_name_capitalized);
+     separator="\n\n">
+<endif>
 }
 >>
 
