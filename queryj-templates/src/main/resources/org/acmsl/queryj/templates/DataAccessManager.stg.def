@@ -1,5 +1,5 @@
 /*
- * DAOFactory template metadata.
+ * DataAccessManager template metadata.
  */
 // The template name (the filename).
 name : DAOFactory.stg;
