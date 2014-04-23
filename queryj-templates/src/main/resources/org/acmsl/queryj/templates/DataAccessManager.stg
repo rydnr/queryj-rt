@@ -82,7 +82,7 @@ import org.acmsl.commons.patterns.dao.DataAccessManager;
 description(repository) ::= <<
 <!
   Generates the first line of the generated file description.
-  @param result the custom result.
+  @param repository the repository.
 !>
 <if(table.comment.empty)>ValueObject for <table.name>.<else><table.comment><endif>
 >>
