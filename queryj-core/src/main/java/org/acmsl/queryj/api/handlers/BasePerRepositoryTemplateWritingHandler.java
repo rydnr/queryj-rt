@@ -103,9 +103,9 @@ public abstract class BasePerRepositoryTemplateWritingHandler
      * @return the template.
      */
     @Nullable
-    protected List<T> retrieveTemplates(@NotNull final QueryJCommand parameters)
-        throws QueryJBuildException
-    {
+    protected T retrieveTemplate(@NotNull final QueryJCommand parameters)
+        throws QueryJBuildException;
+
     /**
      * {@inheritDoc}
      */
