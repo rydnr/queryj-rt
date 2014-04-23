@@ -106,7 +106,7 @@ public class TemplateBuildHandlerTemplateFactoryTest
     @Test
     public void createTemplate_returns_the_correct_template_for_a_per_foreign_key_template()
     {
-        testCreateTemplate(TemplateDefType.PER_FOREIGN_KEY, Literals.TEMPLATE_BUILD_HANDLERTEMPLATE_FACTORY);
+        testCreateTemplate(TemplateDefType.PER_FOREIGN_KEY, Literals.TEMPLATE_BUILD_HANDLER);
     }
 
     /**
