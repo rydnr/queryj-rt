@@ -98,6 +98,15 @@ public abstract class BasePerRepositoryTemplateWritingHandler
     }
 
     /**
+     * Retrieves the templates from the command.
+     * @param parameters the parameters.
+     * @return the template.
+     */
+    @NotNull
+    public List<T> retrieveTemplates(@NotNull final QueryJCommand parameters)
+        throws QueryJBuildException
+    {
+    /**
      * {@inheritDoc}
      */
     @Override
