@@ -196,7 +196,7 @@ public class <repository.capitalized>DAOChooser
         if  (result == null)
         {
             result = new Properties();
-            loadProperties(aux);
+            loadProperties(result);
             immutableSetProperties(aux);
         }
 
