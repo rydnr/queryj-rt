@@ -309,7 +309,7 @@ dao_constant(table, repository, C) ::= <<
 <!
  Writes the constant declaration for each table.
  @param table the table.
- @param repositoryUppercased the repository, in upper-case.
+ @param repositor the repository, in upper-case.
  @param repositoryLowercased the repository, in lower-case.
 !>
 /**
