@@ -256,16 +256,13 @@ public int hashcode()
 {
     final int result;
 
-    final int classHashCode = Abstract<table.name.voName>.class.hashcode();
+    final int classHashCode = <fk.source.name.voName>By<fk.target.name.voName>StatementSetter.class.hashcode();
 
-    <table.primaryKey:{ a | <attribute_hashcode(attribute=a)>}; separator="\n">
-
-    final int updateHashCode = Boolean.valueOf(isUpdateOperation()).hashcode();
+    <fk.attributes:{ a | <attribute_hashcode(attribute=a)>}; separator="\n">
 
     result =
           classHashCode
-        <table.primaryKey:{ a |+ <a.name.uncapitalized>HashCode}; separator="\n">
-        + updateHashCode;
+        <fk.attributes:{ a |+ <a.name.uncapitalized>HashCode}; separator="\n">;
 
     return result;
 }
