@@ -109,6 +109,27 @@ public class <repository.capitalized>DataAccessManager
     extends Serializable
 <endif>
 {
-aoeu
+    /**
+     * Public constructor to allow reflective access.
+     */
+    public <repository.>DataAccessManager() {};
+
+    /**
+     * Singleton implementation to avoid double-checked locking.
+     */
+    private static final class <input.tr_name_capitalized>DataAccessManagerSingletonContainer
+    {
+        private static final <input.tr_name_capitalized>DataAccessManager SINGLETON =
+            new <input.tr_name_capitalized>DataAccessManager();
+    }
+
+    /**
+     * Retrieves a \<code\><input.tr_name_capitalized>DataAccessManager\</code\> instance.
+     * @return such instance.
+     */
+    public static <input.tr_name_capitalized>DataAccessManager getInstance()
+    {
+        return <input.tr_name_capitalized>DataAccessManagerSingletonContainer.SINGLETON;
+    }
 }
 >>
