@@ -33,7 +33,7 @@
 //
 // Author: Jose San Leandro Armendariz
 //
-// Description: Defines the rules to generate QueryJ's per-foreign key
+// Description: Defines the rules to generate QueryJ's per-repository
 //              TemplateFactories.
 //
 group PerRepositoryTemplateFactory;
@@ -50,12 +50,12 @@ source(C) ::= <<
 
 sourceImpl(def, C) ::= <<
 <!
-  Generates a per-foreign key TemplateFactory source file.
+  Generates a per-repository TemplateFactory source file.
   @param def the template def.
   @param C the context.
 !>
 <java_header(
-  description=[ "Factory for ", def.name.capitalized, "Templates, for each foreign key" ],
+  description=[ "Factory for ", def.name.capitalized, "Templates, for each repository" ],
   description_oneline=true,
   filename=C.class_name,
   template="org/acmsl/queryj/templates/packaging/PerRepositoryTemplateFactory.stg",
@@ -102,7 +102,7 @@ class(def, C) ::= <<
 /**
  * Factory for {@link <def.name.noExtension>Template}s.
 <class_common_javadoc(
-  description=[ "Factory for ", def.name.capitalized, "Templates, for each foreign key" ],
+  description=[ "Factory for ", def.name.capitalized, "Templates, for each repository" ],
   description_oneline=true,
   template="org/acmsl/queryj/templates/packaging/PerRepositoryTemplateFactory.stg",
   timestamp=C.timestamp,
