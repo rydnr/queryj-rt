@@ -213,11 +213,12 @@ public <table.name.voName>DAO get<table.name.voName>DAO()
         {
             aux = t_<table.name.voName>DAOFactory.create<table.name.voName>DAO();
         }
-            if (result != null)
-            {
-                set<table.name.voName>DAOReference(result);
-            }
-        }
+    }
+
+    if (aux
+    if (result != null)
+    {
+        set<table.name.voName>DAOReference(result);
     }
 
     return result;
