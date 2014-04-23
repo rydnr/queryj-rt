@@ -976,7 +976,8 @@ public abstract class AbstractTemplatesTest<G, F>
         EasyMock.expect(result.getTableDAO()).andReturn(tableDAO).anyTimes();
         EasyMock.expect(result.getColumnDAO()).andReturn(columnDAO).anyTimes();
         EasyMock.expect(tableDAO.findAllTables()).andReturn(tables).anyTimes();
-        EasyMock.expect(tableDAO.findAllTableNames()).andReturn()
+        EasyMock.expect(tableDAO.findAllTableNames()).andReturn(tableNames).anyTimes();
+
         for (@NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table : tables)
         {
             try
