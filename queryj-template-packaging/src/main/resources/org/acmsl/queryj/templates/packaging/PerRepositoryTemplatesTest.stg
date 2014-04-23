@@ -294,8 +294,7 @@ public class PerRepositoryTemplatesTest
             @NotNull final QueryJCommand t_Command =
                 new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
-            // TODO: repository
-            @NotNull final String repository = "<repository>";
+            @NotNull final String repository = getRepository();
 
             new QueryJCommandWrapper\<CustomSqlProvider>(t_Command).setSetting(
                 CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, sqlProvider);
