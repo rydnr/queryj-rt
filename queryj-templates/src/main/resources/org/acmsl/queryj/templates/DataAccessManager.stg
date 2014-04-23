@@ -288,7 +288,11 @@ public <repository.capitalized>DAO get<repository.capitalized>DAO()
 
     if (aux == null)
     {
-        throw new RuntimeException("<repository.capitalized>DAO
+        throw new RuntimeException("<repository.capitalized>DAO is not available!");
+    }
+    else
+    {
+        result = aux;
     }
     return result;
 }
