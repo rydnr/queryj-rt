@@ -146,10 +146,11 @@ public class <C.class_name>
     @Override
     @NotNull
     protected String retrievePackage(
+        @NotNull final String repository,
         @NotNull final Engine\<String> engine,
         @NotNull final String projectPackage)
     {
-        return buildPackageName(engine, projectPackage);
+        return buildPackageName(repository, engine, projectPackage);
     }
 
     /**
