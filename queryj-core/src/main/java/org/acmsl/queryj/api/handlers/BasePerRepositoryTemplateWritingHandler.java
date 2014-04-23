@@ -83,8 +83,7 @@ public abstract class BasePerRepositoryTemplateWritingHandler
                 retrieveProjectPackage(parameters),
                 retrieveUseSubfoldersFlag(parameters),
                 retrieveProductName(parameters),
-                parameters,
-                PackageUtils.getInstance());
+                parameters);
     }
 
     /**
