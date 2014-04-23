@@ -73,6 +73,6 @@ public class PerRepositoryTemplateBuildHandlerTemplate<C extends TemplatePackagi
     @Override
     public String getTemplateName()
     {
-        return super.getTemplateName();
+        return Literals.PER_REPOSITORY_TEMPLATE_BUILD_HANDLER;
     }
 }
