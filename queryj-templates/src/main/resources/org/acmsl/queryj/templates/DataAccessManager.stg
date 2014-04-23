@@ -223,41 +223,41 @@ repository_dao_methods(repository) ::= <<
  @param repository the repository.
 !>
 /**
- * Specifies the new \<code><repositoryCapitalized>DAO\</code> reference to keep.
+ * Specifies the new {@code <repository.capitalized>DAO} reference to keep.
  * @param dao the new DAO.
  */
-protected void set<repositoryCapitalized>DAOReference(final <repositoryCapitalized>DAO dao)
+protected void set<repository.capitalized>DAOReference(final <repository.capitalized>DAO dao)
 {
-    m__<repositoryCapitalized>DAO = dao;
+    m__<repository.capitalized>DAO = dao;
 }
 
 /**
- * Retrieves the existing \<code><repositoryCapitalized>DAO\</code> reference.
+ * Retrieves the existing {@code <repository.capitalized>DAO} reference.
  * @return a DAO instance for accessing the <repository>-wide DAO.
  */
-protected <repositoryCapitalized>DAO get<repositoryCapitalized>DAOReference()
+protected <repository.capitalized>DAO get<repository.capitalized>DAOReference()
 {
-    return m__<repositoryCapitalized>DAO;
+    return m__<repository.capitalized>DAO;
 }
 
 /**
- * Retrieves a \<code><repositoryCapitalized>DAO\</code>.
+ * Retrieves a \<code><repository.capitalized>DAO\</code>.
  * @return a DAO instance for accessing the <repository>-wide DAO.
  */
-public <repositoryCapitalized>DAO get<repositoryCapitalized>DAO()
+public <repository.capitalized>DAO get<repository.capitalized>DAO()
 {
-    <repositoryCapitalized>DAO result = get<repositoryCapitalized>DAOReference();
+    <repository.capitalized>DAO result = get<repository.capitalized>DAOReference();
 
     if  (result == null)
     {
-        <repositoryCapitalized>DAOFactory t_<repositoryCapitalized>DAOFactory =
-            <repositoryCapitalized>DAOFactory.getInstance();
+        <repository.capitalized>DAOFactory t_<repository.capitalized>DAOFactory =
+            <repository.capitalized>DAOFactory.getInstance();
 
-        if  (t_<repositoryCapitalized>DAOFactory != null)
+        if  (t_<repository.capitalized>DAOFactory != null)
         {
-            result = t_<repositoryCapitalized>DAOFactory.create<repositoryCapitalized>DAO();
+            result = t_<repository.capitalized>DAOFactory.create<repository.capitalized>DAO();
 
-            set<repositoryCapitalized>DAOReference(result);
+            set<repository.capitalized>DAOReference(result);
         }
     }
 
