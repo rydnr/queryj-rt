@@ -141,6 +141,7 @@ public class <repository.capitalized>DAOChooser
     /**
      * The configuration settings.
      */
+    <notnull(C=C)>
     private static final String PROPERTIES_FILE = "<input.properties_file_name>";
 
     /**
