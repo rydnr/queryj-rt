@@ -154,7 +154,7 @@ public class <C.class_name>
     }
 
     /**
-     * {\
+     * {@inheritDoc}
      */
     @NotNull
     @Override
