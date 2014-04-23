@@ -166,6 +166,11 @@ public class <C.class_name>
     @NotNull
     @Override
     protected File retrieveOutputDir(
+        @NotNull final File projectFolder,
+        @NotNull final String projectPackage,
+        final boolean useSubfolders,
+        @NotNull final String engineName,
+        @NotNull final QueryJCommand parameters);
         @NotNull final Engine\<String> engine,
         @NotNull final File projectOutputDir,
         final String projectPackage,
