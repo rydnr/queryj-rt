@@ -48,7 +48,7 @@ source(C) ::= <<
 <sourceImpl(repository=C.repository, tables=C.tables, C=C)>
 >>
 
-sourceImpl(table, C) ::= <<
+sourceImpl(repository, tables, C) ::= <<
 <!
   Defines the rules to generate DataAccessManager facades.
   @param tables the tables.
