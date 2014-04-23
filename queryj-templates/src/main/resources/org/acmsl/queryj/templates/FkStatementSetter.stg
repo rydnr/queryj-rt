@@ -205,5 +205,11 @@ public class <fk.source.name.voName>By<fk.target.name.voName>StatementSetter
     {
         <fk.attributes:{ a | <attribute_preparedstatement_specification(attr=a)>}; separator="\n">
     }
+
+    <equals_method(table=table, C=C)>
+
+    <hashcode_method(table=table, C=C)>
+
+    <tostring_method(table=table, C=C)>
 }
 >>
