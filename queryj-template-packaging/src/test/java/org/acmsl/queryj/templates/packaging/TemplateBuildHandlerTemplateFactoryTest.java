@@ -56,7 +56,7 @@ import org.junit.Test;
 @ThreadSafe
 public class TemplateBuildHandlerTemplateFactoryTest
     extends TemplateFactoryTestHelper<
-    TemplateFactoryTemplateFactory,
+    TemplateBuildHandlerTemplateFactory,
     TemplateFactoryTemplate<DefaultTemplatePackagingContext>,
     DefaultTemplatePackagingContext>
 {
