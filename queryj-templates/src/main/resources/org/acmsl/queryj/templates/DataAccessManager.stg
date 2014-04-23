@@ -241,7 +241,7 @@ protected <repository.capitalized>DAO get<repository.capitalized>DAOReference()
 }
 
 /**
- * Retrieves a \<code><repository.capitalized>DAO\</code>.
+ * Retrieves a {@code <repository.capitalized>DAO}.
  * @return a DAO instance for accessing the <repository>-wide DAO.
  */
 public <repository.capitalized>DAO get<repository.capitalized>DAO()
