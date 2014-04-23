@@ -201,8 +201,8 @@ public class BasePerRepositoryTemplateBuildHandler
      * @param template the template.
      * @param parameters the parameter map.
      */
-    protected void storeTemplate(
-        @NotNull final T template, @NotNull final QueryJCommand parameters)
+    protected abstract void storeTemplate(
+        @NotNull final T template, @NotNull final QueryJCommand parameters);
 
     /**
      * Checks whether there's any custom SQL for the whole repository.
