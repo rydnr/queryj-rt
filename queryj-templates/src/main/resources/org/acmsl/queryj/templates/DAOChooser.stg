@@ -350,7 +350,7 @@ dao_factory_getters(table, repository, C) ::= <<
  */
 public String get<table.voName>DAOFactoryClassName()
 {
-    return getProperty(<repository>_<table.singularNameUppercased>_DAO);
+    return getProperty(<repository.uppercased>_<table.singularNameUppercased>_DAO);
 }
 >>
 
