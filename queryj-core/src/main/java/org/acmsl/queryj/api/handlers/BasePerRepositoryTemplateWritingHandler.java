@@ -52,6 +52,7 @@ import org.jetbrains.annotations.Nullable;
  * Importing some JDK classes.
  */
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -79,6 +80,7 @@ public abstract class BasePerRepositoryTemplateWritingHandler
     public List<T> retrieveTemplates(@NotNull final QueryJCommand parameters)
         throws QueryJBuildException
     {
+        @NotNull final List<T> result = new ArrayList<>()
         @Nullable final T template = retrieveTemplate(parameters);
 
         if (template != null)
