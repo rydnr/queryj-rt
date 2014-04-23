@@ -234,10 +234,11 @@ public <table.name.voName>DAO get<table.name.voName>DAO()
 }
 >>
 
-repository_dao_methods(repository) ::= <<
+repository_dao_methods(repository, C=C) ::= <<
 <!
  Generates the methods for the repository DAO.
  @param repository the repository.
+ @param C the context.
 !>
 /**
  * Specifies the new {@code <repository.capitalized>DAO} reference to keep.
