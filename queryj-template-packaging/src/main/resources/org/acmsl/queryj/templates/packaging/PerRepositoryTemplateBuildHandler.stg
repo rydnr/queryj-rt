@@ -149,7 +149,7 @@ public class <C.class_name>
         @NotNull final Engine\<String> engine,
         @NotNull final String projectPackage)
     {
-        return buildPackageName(tableName, engine, projectPackage);
+        return buildPackageName(engine, projectPackage);
     }
 
     /**
