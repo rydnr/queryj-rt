@@ -269,8 +269,8 @@ public class PerRepositoryTemplatesTest
     protected void generateFile(
         @NotNull final String templateName,
         @NotNull final String engine,
+        @NotNull final String repository,
         @NotNull final Map\<String, Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tableMap,
-        @NotNull final Map\<String, List\<Row\<String>\>> rows,
         @NotNull final Map\<String, File> outputFiles,
         @NotNull final CustomSqlProvider sqlProvider)
     {
