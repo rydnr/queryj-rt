@@ -160,7 +160,7 @@ public class <C.class_name>
             <def.name.noExtension>TemplateBuildHandler.buildPackageName(
                 repository, engine, projectPackage);
 
-        @NotNull final String[] pieces = packageName.split("\\\.");
+        @NotNull final String[] pieces = packageName.splitT("\\\.");
 
         @NotNull final StringBuilder aux = new StringBuilder();
 
