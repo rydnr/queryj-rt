@@ -161,7 +161,6 @@ public class <C.class_name>
      */
     @NotNull
     static String buildPackageName(
-        @SuppressWarnings("unused") @NotNull final String tableName,
         @SuppressWarnings("unused") @NotNull final Engine\<String> engine,
         @SuppressWarnings("unused") @NotNull final String projectPackage)
     {
