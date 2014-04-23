@@ -96,7 +96,7 @@ class(repository, tables, C) ::= <<
 !>
 /**
  * <[
-      description(table=table)
+      description(repository=repository)
     ]:{line |<line>}; separator="\n * ">
 <class_common_javadoc(
   template="org/acmsl/queryj/templates/BaseValueObject.stg", C=C)>
