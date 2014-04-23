@@ -200,8 +200,6 @@ public class <repository.capitalized>DAOChooser
             immutableSetProperties(result);
         }
 
-        result = aux;
-
         return result;
     }
 
