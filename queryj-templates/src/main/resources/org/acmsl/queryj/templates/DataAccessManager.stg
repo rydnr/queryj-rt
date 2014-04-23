@@ -163,16 +163,17 @@ repository_dao_attribute_declaration(repository) ::= <<
  @param repository the repository.
 !>
 /**
- * The \<code><repository.capitalized>DAO\</code> reference (cached whereas Manager
+ * The {@code><repository.capitalized>DAO\</code> reference (cached whereas Manager
  * instance is not garbage collected).
  */
 private <repository.capitalized>DAO m__<repository.capitalized>DAO;
 >>
 
-dao_methods(table) ::= <<
+dao_methods(table, C) ::= <<
 <!
  Generates the DAO-specific methods for each table.
  @param table the table.
+ @param C the context.
 !>
 /**
  * Specifies the new {@link <table.name.voName>DAO} reference to keep.
