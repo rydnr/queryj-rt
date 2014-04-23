@@ -33,7 +33,7 @@
 //
 // Author: Jose San Leandro Armendariz
 //
-// Description: Defines the rules to generate DataAccessManager facades.
+// Description: Defines the rules to generate DAOChooser facades.
 //
 //
 group DataAccessManager;
