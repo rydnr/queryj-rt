@@ -154,7 +154,7 @@ public class <repository.capitalized>DAOChooser
     public <repository.capitalized>DAOChooser() {};
 
     /**
-     * Retrieves a {@code <repository.capitalized>DAOChooser\</code\> instance.
+     * Retrieves a {@code <repository.capitalized>DAOChooser} instance.
      * @return such instance.
      */
     public static <repository.capitalized>DAOChooser getInstance()
