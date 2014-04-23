@@ -1148,7 +1148,7 @@ public abstract class AbstractTemplatesTest<G, F>
         result.append(GENERATOR_MAPPINGS);
         result.append("\", \"PACKAGE_MAPPINGS\": \"");
         result.append(PACKAGE_MAPPINGS);
-        result.append("\", \"rootFolder=");
+        result.append("\", \"rootFolder\": \"");
         result.append(rootFolder);
         result.append("\", \"outputFiles=");
         result.append(m__mOutputFiles);
