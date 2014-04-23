@@ -988,7 +988,6 @@ public abstract class AbstractTemplatesTest<G, F>
             }
             EasyMock.expect(tableDAO.findByName(table.getName())).andReturn(table).anyTimes();
             EasyMock.expect(tableDAO.findByDAO(table.getName())).andReturn(table).anyTimes();
-            EasyMock.expect(tableDAO.findAllTables()).andReturn(tables).anyTimes();
             EasyMock.expect(columnDAO.findAllColumns(table.getName())).andReturn(table.getAttributes());
         }
 
