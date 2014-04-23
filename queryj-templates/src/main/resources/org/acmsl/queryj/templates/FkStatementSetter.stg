@@ -231,7 +231,7 @@ public boolean equals(<nullable(C=C)>final Object other)
         <notnull(C=C)>final <fk.source.name.voName>By<fk.target.name.voName>StatementSetter candidate =
             (<fk.source.name.voName>By<fk.target.name.voName>StatementSetter) other;
 
-        <table.primaryKey:{ a | <attribute_equals(attribute=a)>}; separator="">
+        <fk.attributes:{ a | <attribute_equals(attribute=a)>}; separator="">
         result =
                 (isUpdateOperation() == candidate.isUpdateOperation())
             <table.primaryKey:{ a |&& <a.name.uncapitalized>Match}; separator="\n">;
