@@ -296,7 +296,7 @@ public class PerRepositoryTemplatesTest
                 new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
             new QueryJCommandWrapper\<DecoratorFactory>(t_Command).setSetting(
-                DecoratorFactory.class
+                DecoratorFactory.class.
             new QueryJCommandWrapper\<CustomSqlProvider>(t_Command).setSetting(
                 CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, sqlProvider);
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
