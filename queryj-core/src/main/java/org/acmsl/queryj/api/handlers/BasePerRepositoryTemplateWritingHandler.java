@@ -83,7 +83,7 @@ public abstract class BasePerRepositoryTemplateWritingHandler
             retrieveOutputDir(
                 context,
                 rootDir,
-                retrieveTableRepositoryName()
+                retrieveTableRepositoryName(parameters)
                 retrieveEngine(parameters, retrieveDatabaseMetaData(parameters)),
                 parameters);
     }
