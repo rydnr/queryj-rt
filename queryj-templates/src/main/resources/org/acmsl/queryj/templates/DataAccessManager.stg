@@ -84,7 +84,7 @@ description(repository) ::= <<
   Generates the first line of the generated file description.
   @param repository the repository.
 !>
-<if(table.comment.empty)>ValueObject for <table.name>.<else><table.comment><endif>
+DataAccessManager facade for
 >>
 
 class(table, C) ::= <<
