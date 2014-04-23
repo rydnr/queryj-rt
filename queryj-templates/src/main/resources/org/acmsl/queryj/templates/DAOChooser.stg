@@ -324,7 +324,7 @@ public static final String <repository.uppercased>_<table.name.voName.uppercased
 repository_dao_constant(repository, C) ::= <<
 <!
  Writes the constant declaration for the repository DAO.
- @param repositoryLowercased the repository, in lower-case.
+ @param repository the repository.
  @param repositoryUppercased the repository, in upper-case.
 !>
 /**
