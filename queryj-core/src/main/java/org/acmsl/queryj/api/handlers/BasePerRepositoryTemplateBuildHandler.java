@@ -76,7 +76,7 @@ import java.util.List;
  * @param <TF> the template factory class.
  */
 @ThreadSafe
-public abstract class BasePerRepositoryTemplateBuildHandler
+public class BasePerRepositoryTemplateBuildHandler
     <T extends AbstractBasePerRepositoryTemplate<C>,
      C extends PerRepositoryTemplateContext,
      TF extends PerRepositoryTemplateFactory<T, C>>
