@@ -2,7 +2,7 @@
  * DAOChooser template metadata.
  */
 // The template name (the filename).
-name : DataAccessManager.stg;
+name : DAOChooser.stg;
 
 // The type of template: per-table, per-repository, per-foreign-key, per-custom-result, per-custom-sql.
 type : per-repository;
