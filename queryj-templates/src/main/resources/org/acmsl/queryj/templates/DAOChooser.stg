@@ -143,7 +143,7 @@ public class <repository.capitalized>DAOChooser
      * The configuration settings.
      */
     <notnull(C=C)>
-    private static final String PROPERTIES_FILE = "<repository.lowercased>";
+    private static final String PROPERTIES_FILE = "queryj-<repository.lowercased>.properties";
 
     /**
      * The configuration settings.
