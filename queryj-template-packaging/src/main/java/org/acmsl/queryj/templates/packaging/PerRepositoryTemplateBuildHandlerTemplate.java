@@ -54,4 +54,7 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public class PerRepositoryTemplateBuildHandlerTemplate
 {
+    public PerRepositoryTemplateBuildHandlerTemplate()
+    {
+    }
 }
