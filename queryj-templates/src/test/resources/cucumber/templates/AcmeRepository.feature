@@ -12,10 +12,4 @@ Feature: Acme-wide classes compile
 
   Examples:
     | template | output |
-    | PkStatementSetter | GCycleTypePkStatementSetter.java |
-  #      | AttributesStatementSetter | GCycleTypeAttributesStatementSetter.java |
-  #      | ValueObjectFactory | GCycleTypeValueObjectFactory.java |
-  #      | ValueObject | GCycleTypeValueObject.java |
-  #      | BaseValueObject | AbstractGCycleType.java |
-  #      | BaseDAO | GCycleTypeDAO.java |
-  #      | DAO | OracleGCycleTypeDAO.java |
+    | DataAccessManager| AcmeDataAccessManager.java |
