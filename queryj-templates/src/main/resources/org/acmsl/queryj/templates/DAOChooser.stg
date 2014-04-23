@@ -341,8 +341,8 @@ dao_factory_getters(table, repository, C) ::= <<
  Generates the getter methods to retrieve the class names of the
  concrete DAOFactory implementations.
  @param table the table.
- @param repository the repository in upper-case.
-
+ @param repository the repository.
+ @param C the context.
 !>
 /**
  * Retrieves the \<code\><table.singularNameCapitalized>DAOFactory\</code\> class name.
