@@ -86,6 +86,11 @@ public abstract class BasePerRepositoryTemplateBuildHandler
     implements TemplateBuildHandler
 {
     /**
+     * The key for storing the foreign keys in the parameter map.
+     */
+    public static final String FOREIGN_KEYS = "..FOreignKeY:::";
+
+    /**
      * Creates a {@link BasePerRepositoryTemplateBuildHandler} instance.
      */
     public BasePerRepositoryTemplateBuildHandler() {}
