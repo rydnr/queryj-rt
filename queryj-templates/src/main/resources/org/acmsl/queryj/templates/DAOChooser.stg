@@ -328,7 +328,7 @@ repository_dao_constant(repository, C) ::= <<
  @param C the context.
 !>
 /**
- * Used to retrieve the value of \<i\><repositoryLowercased>.dao\</i\>
+ * Used to retrieve the value of \<i\><repository.lowercased>.dao\</i\>
  * from the configuration layer.
  */
 public static final String <repositoryUppercased>_DAO =
