@@ -36,7 +36,7 @@
 // Description: Defines the rules to generate DataAccessManager facades.
 //
 //
-group BaseValueObject;
+group DataAccessManager;
 
 import "queryj.stg"
 
