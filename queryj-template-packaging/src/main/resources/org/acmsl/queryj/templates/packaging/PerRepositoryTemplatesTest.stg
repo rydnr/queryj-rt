@@ -382,10 +382,8 @@ public class PerRepositoryTemplatesTest
             }
             catch (@NotNull final IOException ioException)
             {
-                if (failCause == null)
-                {
-                    failCause = ioException.getMessage();
-                }
+                failCause = ioException.getMessage();
+
                 restart = false;
             }
             catch (@NotNull final DevelopmentModeException debugging)
