@@ -56,10 +56,13 @@ public class PerRepositoryTemplateBuildHandlerTemplate<C extends TemplatePackagi
     extends TemplateBuildHandlerTemplate<C>
 {
     /**
-     * Creates a new instance
+     * Creates a new instance using given context.
+     * @param context the context.
      */
     public PerRepositoryTemplateBuildHandlerTemplate(@NotNull final C context)
     {
         super(context);
     }
+
+
 }
