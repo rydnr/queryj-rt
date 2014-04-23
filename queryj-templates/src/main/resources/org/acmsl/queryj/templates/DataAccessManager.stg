@@ -203,7 +203,7 @@ public <table.name.voName>DAO get<table.name.voName>DAO()
 
     if  (result == null)
     {
-        <notnull(C=C)><table.name.voName>DAOFactory t_<table.name.voName>DAOFactory =
+        <notnull(C=C)>final <table.name.voName>DAOFactory t_<table.name.voName>DAOFactory =
             <table.name.voName>DAOFactory.getInstance();
 
         if  (t_<table.name.voName>DAOFactory != null)
