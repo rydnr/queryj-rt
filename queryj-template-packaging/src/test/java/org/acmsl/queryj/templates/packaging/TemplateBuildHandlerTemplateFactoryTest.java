@@ -130,5 +130,3 @@ public class TemplateBuildHandlerTemplateFactoryTest
         testCreateTemplate(TemplateDefType.PER_CUSTOM_SQL, Literals.PER_CUSTOM_SQL_TEMPLATE_FACTORY);
     }
 }
-
-}
