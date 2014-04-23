@@ -300,8 +300,7 @@ public class <repository.capitalized>DAOChooser
     <tables:{t | <dao_factory_getters(table=t, repository=repository, C=C)>}; separator="\n\n">
 
 <if(input.repository_dao)>
-    <repository_dao_factory_getters(repository=repository,
-      C=C);
+    <repository_dao_factory_getters(repository=repository, C=C);
      separator="\n\n">
 <endif>
 }
