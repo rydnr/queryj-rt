@@ -154,13 +154,7 @@ public class <C.class_name>
     }
 
     /**
-     * Retrieves the output dir from the attribute map.
-     * @param engine the engine.
-     * @param projectOutputDir the project output dir.
-     * @param projectPackage the project package.
-     * @param tableName the source table name.
-     * @param subFolders whether to use sub folders or not.
-     * @return such folder.
+     * {\
      */
     @NotNull
     @Override
