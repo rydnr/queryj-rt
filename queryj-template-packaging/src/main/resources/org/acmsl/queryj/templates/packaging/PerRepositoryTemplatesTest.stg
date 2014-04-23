@@ -214,7 +214,7 @@ public class PerRepositoryTemplatesTest
      * @param tableInfo the information about the tables.
      */
     @SuppressWarnings("unused")
-    @Given("^Given the repository whose name is \<repository>, composed of:$")
+    @Given("^Given the repository whose name is <repository>, composed of:$")
     public void defineInputTables(@NotNull final DataTable tableInfo)
     {
         defineInputTables(tableInfo, getTables(), TableTestHelper.getInstance());
