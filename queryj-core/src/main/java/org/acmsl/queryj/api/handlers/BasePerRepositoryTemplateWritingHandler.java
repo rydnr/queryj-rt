@@ -72,8 +72,7 @@ public abstract class BasePerRepositoryTemplateWritingHandler
     public BasePerRepositoryTemplateWritingHandler() {}
 
     /**
-     * {@ni
-     * }
+     * {@inheritDoc}
      */
     @NotNull
     public List<T> retrieveTemplates(@NotNull final QueryJCommand parameters)
