@@ -319,7 +319,7 @@ dao_constant(table, repository, C) ::= <<
  */
 <notnull(C=C)>
 public static final String <repository.uppercased>_<table.name.voName.uppercased>_DAO =
-    "<repository.lowercased>.<table.voName>.dao";
+    "<repository.lowercased>.<table.name.voName>.dao";
 >>
 
 repository_dao_constant(repository, C) ::= <<
