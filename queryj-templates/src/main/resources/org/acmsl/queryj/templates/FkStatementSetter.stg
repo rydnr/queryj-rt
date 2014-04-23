@@ -279,9 +279,9 @@ tostring_method(fk, C) ::= <<
 public String toString()
 {
     <notnull(C=C)>final StringBuilder result =
-        new StringBuilder("{ \class\": \"<table.name.voName>PkStatementSetter");
+        new StringBuilder("{ \class\": \"<<fk.source.name.voName>By<fk.target.name.voName>StatementSetter");
 
-    <table.primaryKey:{ a | <attribute_toString(attribute=a)>}; separator="\n">
+    <fk.attributes:{ a | <attribute_toString(attribute=a)>}; separator="\n">
 
     result.append(", \"update\": ");
     result.append(this.m__UpdateOperation);
