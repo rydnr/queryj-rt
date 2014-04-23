@@ -166,7 +166,7 @@ public class <C.class_name>
     @Override
     protected File retrieveOutputDir(
         @NotNull final String repository,
-        @NotNull final C context,
+        @NotNull final <def.type.capitalized>TemplateContext context,
         @NotNull final File projectFolder,
         @NotNull final Engine\<String> engine,
         @NotNull final QueryJCommand parameters)
