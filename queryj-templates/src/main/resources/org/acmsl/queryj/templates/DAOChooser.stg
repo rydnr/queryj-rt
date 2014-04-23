@@ -336,7 +336,7 @@ public static final String <repository.uppercased>_DAO =
     "<repository.lowercased>.dao";
 >>
 
-dao_factory_getters(table, repository) ::= <<
+dao_factory_getters(table, repository, C) ::= <<
 <!
  Generates the getter methods to retrieve the class names of the
  concrete DAOFactory implementations.
