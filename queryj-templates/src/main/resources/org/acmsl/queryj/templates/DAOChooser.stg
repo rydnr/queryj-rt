@@ -72,7 +72,7 @@ sourceImpl(repository, tables, C) ::= <<
 /*
  * Importing some ACM-SL Commons classes.
  */
-import org.acmsl.commons.patterns.dao.DataAccessManager;
+import org.acmsl.commons.patterns.dao.DAOChooser;
 
 <endif>
 
