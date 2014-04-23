@@ -1170,7 +1170,7 @@ public abstract class AbstractTemplatesTest<G, F>
         result.append(m__strEngineName);
         result.append(", jdbcDriver=");
         result.append(m__strJdbcDriver);
-        result.append(", jdbcUrl=");
+        result.append("\", \"jdbcUrl=");
         result.append(m__strJdbcUrl);
         result.append("\", \"jdbcUserName=");
         result.append(m__strJdbcUserName);
