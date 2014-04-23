@@ -226,9 +226,9 @@ public boolean equals(<nullable(C=C)>final Object other)
 {
     final boolean result;
 
-    if (other instanceof <table.name.voName>PkStatementSetter)
+    if (other instanceof <fk.source.name.voName>By<fk.target.name.voName>StatementSetter)
     {
-        <notnull(C=C)>final <table.name.voName>PkStatementSetter> candidate =
+        <notnull(C=C)>final <fk.source.name.voName>By<fk.target.name.voName>StatementSetter candidate =
             (<table.name.voName>AttributesStatementSetter) other;
 
         <table.primaryKey:{ a | <attribute_equals(attribute=a)>}; separator="">
