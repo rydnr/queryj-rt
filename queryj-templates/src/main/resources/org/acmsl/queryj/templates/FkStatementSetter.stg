@@ -187,5 +187,7 @@ public class <fk.source.name.voName>By<fk.target.name.voName>StatementSetter
     public void setValues(<notnull(C=C)>final PreparedStatement preparedStatement)
         throws  SQLException
     {
+        setValues(
+    }
 }
 >>
