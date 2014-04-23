@@ -138,17 +138,6 @@ public class <C.class_name>
         return
             new QueryJCommandWrapper\<<def.name.noExtension>Template>(parameters)
                 .getSetting(<def.name.noExtension>TemplateBuildHandler.TEMPLATE_KEY);
-
-        if (aux == null)
-        {
-            result = new ArrayList\<<def.name.noExtension>Template>(0);
-        }
-        else
-        {
-            result = aux;
-        }
-
-        return result;
     }
 
     /**
