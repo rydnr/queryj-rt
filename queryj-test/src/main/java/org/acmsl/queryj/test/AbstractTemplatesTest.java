@@ -229,6 +229,11 @@ public abstract class AbstractTemplatesTest<G, F>
     private String m__strJdbcPassword;
 
     /**
+     * The repository name.
+     */
+    private String m__strRepository;
+
+    /**
      * Creates an empty instance.
      */
     protected AbstractTemplatesTest()
