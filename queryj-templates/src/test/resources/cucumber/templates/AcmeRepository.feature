@@ -12,4 +12,5 @@ Feature: Acme-wide classes compile
 
   Examples:
     | template           | output                            |
+  queryj-templates/src/test/resources/cucumber/templates/AcmeRepository.feature
   <C.templateDefs:{ d | <indirect_template(def=d, engineName="Oracle", tableName="User")>}; separator="\n">
