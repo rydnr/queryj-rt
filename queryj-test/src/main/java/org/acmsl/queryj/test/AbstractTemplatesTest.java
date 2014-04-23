@@ -637,7 +637,7 @@ public abstract class AbstractTemplatesTest<G, F>
      * Specifies the repository.
      * @param repo such name.
      */
-    protected final void immutableSetRepository(@NotNull final String repo)
+    protected void setRepository(@NotNull final String repo)
     {
         this.m__strRepository = repo;
     }
