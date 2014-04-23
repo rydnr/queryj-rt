@@ -392,10 +392,8 @@ public class PerRepositoryTemplatesTest
             }
             catch (@NotNull final QueryJBuildException queryjBuildException)
             {
-                if (failCause == null)
-                {
-                    failCause = queryjBuildException.getMessage();
-                }
+                failCause = queryjBuildException.getMessage();
+
                 restart = false;
             }
 
