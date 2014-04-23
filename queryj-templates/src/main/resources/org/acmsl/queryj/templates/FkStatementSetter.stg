@@ -274,6 +274,7 @@ tostring_method(fk, C) ::= <<
  * Generates a JSON-compatible representation of this instance.
  * @return such text.
  */
+<notnull(C=C)>
 @Override
 public String toString()
 {
