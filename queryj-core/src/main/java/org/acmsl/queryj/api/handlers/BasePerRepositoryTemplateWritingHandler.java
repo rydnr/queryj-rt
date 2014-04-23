@@ -82,8 +82,7 @@ public abstract class BasePerRepositoryTemplateWritingHandler
         return
             retrieveOutputDir(
                 rootDir,
-                retrieveProjectPackage(parameters),
-                retrieveUseSubfoldersFlag(parameters),
+                context,
                 retrieveEngine(parameters, retrieveDatabaseMetaData(parameters)),
                 parameters);
     }
