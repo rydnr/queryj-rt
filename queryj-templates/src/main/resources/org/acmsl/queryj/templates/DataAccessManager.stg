@@ -215,10 +215,9 @@ public <table.name.voName>DAO get<table.name.voName>DAO()
             aux = t_<table.name.voName>DAOFactory.create<table.name.voName>DAO();
 
             if (aux != null)
-    {
-        set<table.name.voName>DAOReference(result);
-    }
-
+            {
+                set<table.name.voName>DAOReference(aux);
+            }
         }
     }
 
