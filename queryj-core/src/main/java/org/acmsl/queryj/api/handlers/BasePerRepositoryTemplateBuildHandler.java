@@ -189,13 +189,12 @@ public class BasePerRepositoryTemplateBuildHandler
      * Retrieves the package name.
      * @param engine the engine.
      * @param projectPackage the project package.
-     * @param packageUtils the <code>PackageUtils</code> instance.
      * @return the package name.
      */
     @NotNull
     protected String retrievePackage(
         @NotNull final Engine<String> engine,
-        @NotNull final String projectPackage)
+        @NotNull final String projectPackage);
 
     /**
      * Stores the template in given attribute map.
