@@ -314,7 +314,7 @@ dao_constant(table, repository, C) ::= <<
  @param C the context.
 !>
 /**
- * Used to retrieve the value of \<i\><repository>.<table.name.normalized.lowercased>.dao\</i\>
+ * Used to retrieve the value of \<i\><repository.lowercased>.<table.name.normalized.lowercased>.dao\</i\>
  * from the configuration layer.
  */
 <notnull(C=C)>
