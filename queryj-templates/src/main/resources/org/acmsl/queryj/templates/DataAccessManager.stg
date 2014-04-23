@@ -187,6 +187,7 @@ protected void set<table.name.voName>DAOReference(final <table.name.voName>DAO d
  * Retrieves the existing {@link <table.name.voName>DAO} reference.
  * @return a DAO instance for accessing <table.name> information.
  */
+<nullable(C=C)>
 protected <table.name.voName>DAO get<table.name.voName>DAOReference()
 {
     return m__<table.name.voName>DAO;
@@ -198,7 +199,7 @@ protected <table.name.voName>DAO get<table.name.voName>DAOReference()
  */
 public <table.name.voName>DAO get<table.name.voName>DAO()
 {
-    <table.name.voName>DAO result = get<table.name.voName>DAOReference();
+    <nullable(C=C)><table.name.voName>DAO result = get<table.name.voName>DAOReference();
 
     if  (result == null)
     {
