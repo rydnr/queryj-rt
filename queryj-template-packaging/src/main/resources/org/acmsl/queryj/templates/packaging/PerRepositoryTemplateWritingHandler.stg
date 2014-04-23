@@ -168,7 +168,7 @@ public class <C.class_name>
         @NotNull final String repository,
         @NotNull final C context,
         @NotNull final File projectFolder,
-        @NotNull final Engine<String> engine,
+        @NotNull final Engine\<String> engine,
         @NotNull final QueryJCommand parameters)
     {
         @NotNull final File result;
