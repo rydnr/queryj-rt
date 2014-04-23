@@ -197,7 +197,7 @@ protected <table.name.voName>DAO get<table.name.voName>DAOReference()
  * Retrieves a {@link <table.name.voName>DAO}.
  * @return a DAO instance for accessing <table.name> information.
  */
-<nullabl
+<notnull(C=C)>
 public <table.name.voName>DAO get<table.name.voName>DAO()
 {
     <nullable(C=C)><table.name.voName>DAO result = get<table.name.voName>DAOReference();
