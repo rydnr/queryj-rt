@@ -205,6 +205,7 @@ public class <repository.capitalized>DAOChooser
      * Retrieves the properties.
      * @return such information.
      */
+     <nullable(C=C)>
      protected Properties getProperties()
      {
          return m__Properties;
