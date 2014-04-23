@@ -1146,13 +1146,13 @@ public abstract class AbstractTemplatesTest<G, F>
         result.append(FACTORY_MAPPINGS);
         result.append(", GENERATOR_MAPPINGS=");
         result.append(GENERATOR_MAPPINGS);
-        result.append(", PACKAGE_MAPPINGS=");
+        result.append("\", \"PACKAGE_MAPPINGS=");
         result.append(PACKAGE_MAPPINGS);
-        result.append(", rootFolder=");
+        result.append("\", \"rootFolder=");
         result.append(rootFolder);
-        result.append(", outputFiles=");
+        result.append("\", \"outputFiles=");
         result.append(m__mOutputFiles);
-        result.append(", tables=");
+        result.append("\", \"tables=");
         result.append(m__mTables);
         result.append("\", \"foreignKeys=");
         result.append(m__lForeignKeys);
