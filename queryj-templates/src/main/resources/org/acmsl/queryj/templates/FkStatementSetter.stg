@@ -195,8 +195,7 @@ public class <fk.source.name.voName>By<fk.target.name.voName>StatementSetter
     /**
      * Specifies the values on given {@link PreparedStatement}
      * @param preparedStatement the prepared statement.
-     <fk.attributes:attribute_javadoc(name=it.nameLowercased);
-        separator="\n">
+     <fk.attributes:{ a |<attribute_javadoc(attr=a)>}; separator="\n">
      * @throws SQLException intercepted by \<i>Spring\</i>.
      */
     protected void setValues(
