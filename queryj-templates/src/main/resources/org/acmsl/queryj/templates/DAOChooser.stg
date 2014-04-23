@@ -137,6 +137,171 @@ public class <repository.capitalized>DAOChooser
 <if(C.repository_dao)>
     <repository_dao_constant(repository=repository, C=C)>
 <endif>
+
+    /**
+     * The configuration settings.
+     */
+    private static final String PROPERTIES_FILE = "<input.properties_file_name>";
+
+    /**
+     * The configuration settings.
+     */
+    private Properties m__Properties;
+
+    /**
+     * Public constructor to allow reflective access.
+     */
+    public <input.tr_name_capitalized>DAOChooser() {};
+
+    /**
+     * Retrieves a \<code\><input.tr_name_capitalized>DAOChooser\</code\> instance.
+     * @return such instance.
+     */
+    public static <input.tr_name_capitalized>DAOChooser getInstance()
+    {
+        return <input.tr_name_capitalized>DAOChooserSingletonContainer.SINGLETON;
+    }
+
+    /**
+     * Specifies the properties.
+     * @param properties the new properties.
+     */
+    private void immutableSetProperties(final Properties properties)
+    {
+        m__Properties = properties;
+    }
+
+    /**
+     * Specifies the properties.
+     * @param properties the new properties.
+     */
+    protected void setProperties(final Properties properties)
+    {
+        immutableSetProperties(properties);
+    }
+
+    /**
+     * Retrieves the configuration settings.
+     * @return the properties.
+     */
+    private Properties immutableGetProperties()
+    {
+        Properties result = getProperties();
+
+        if  (result == null)
+        {
+            result = new Properties();
+            loadProperties(result);
+            immutableSetProperties(result);
+        }
+
+        return result;
+    }
+
+    /**
+     * Retrieves the properties.
+     * @return such information.
+     */
+     protected Properties getProperties()
+     {
+         return m__Properties;
+     };
+
+    /**
+     * Retrieves a concrete property.
+     * @param key the property key.
+     * @return the configuration value associated to such setting.
+     */
+    private String getProperty(final String key)
+    {
+        // This is safe since immutableGetProperties() is private and ensures
+        // a new object if the instance's is null.
+        return immutableGetProperties().getProperty(key);
+    }
+
+    /**
+     * Loads the configuration from a property file.
+     * @param properties where to store the settings.
+     */
+    private synchronized void loadProperties(final Properties properties)
+    {
+        if  (properties != null)
+        {
+            InputStream t_isProperties = null;
+
+            // Loading properties
+            try
+            {
+                // try classpath
+                t_isProperties =
+                    <input.tr_name_capitalized>DAOChooser.class.getClassLoader().getResourceAsStream(
+                        "/" + PROPERTIES_FILE);
+
+                if  (t_isProperties == null)
+                {
+                    // try local
+                    t_isProperties =
+                        <input.tr_name_capitalized>DAOChooser.class.getClassLoader().getResourceAsStream(
+                            PROPERTIES_FILE);
+                }
+
+                if  (t_isProperties != null)
+                {
+                    properties.load(t_isProperties);
+                }
+                else
+                {
+                     try
+                     {
+                         LogFactory.getLog(<input.tr_name_capitalized>DAOChooser.class).warn(
+                               "Couldn't find the property file: "
+                             + PROPERTIES_FILE);
+                     }
+                     catch  (final Throwable throwable)
+                     {
+                         // class-loading problem.
+                     }
+                }
+            }
+            catch  (final IOException ioException)
+            {
+                try
+                {
+                     LogFactory.getLog(<input.tr_name_capitalized>DAOChooser.class).warn(
+                          "Couldn't find the property file: "
+                        + PROPERTIES_FILE,
+                        ioException);
+                }
+                catch  (final Throwable throwable)
+                {
+                    // class-loading problem.
+                }
+            }
+        }
+        else
+        {
+            try
+            {
+                LogFactory.getLog(<input.tr_name_capitalized>DAOChooser.class).warn(
+                    "Properties object not valid!");
+            }
+            catch  (final Throwable throwable)
+            {
+                // class-loading problem.
+            }
+        }
+    }
+
+    <input.tables:dao_factory_getters(
+      table=it, repository=input.tr_name_uppercased); separator="\n\n">
+
+<if(input.repository_dao)>
+    <repository_dao_factory_getters(
+      repositoryCapitalized=input.tr_name_capitalized,
+      repositoryUppercased=input.tr_name_uppercased);
+     separator="\n\n">
+<endif>
+
 }
 >>
 
