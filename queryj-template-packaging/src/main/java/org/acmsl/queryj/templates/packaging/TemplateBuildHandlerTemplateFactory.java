@@ -92,7 +92,7 @@ public class TemplateBuildHandlerTemplateFactory
         switch (TemplateDefType.getEnumFromString(context.getTemplateDef().getType().getType()))
         {
             case PER_REPOSITORY:
-                result = new PerRepositoryTemplateFactoryTemplate<>(context);
+                result = new PerRepositoryTemplateBuildHandlerTemplate<>(context);
                 break;
             default:
                 result = new TemplateBuildHandlerTemplate<>(context);
