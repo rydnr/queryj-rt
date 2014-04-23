@@ -94,7 +94,6 @@ public abstract class BasePerRepositoryTemplateWritingHandler
      * using a different package naming scheme.
      * @param engineName the engine name.
      * @param parameters the parameter map.
-     * @param packageUtils the <code>PackageUtils</code> instance.
      * @return such folder.
      */
     @NotNull
@@ -103,6 +102,5 @@ public abstract class BasePerRepositoryTemplateWritingHandler
         @NotNull final String projectPackage,
         final boolean useSubfolders,
         @NotNull final String engineName,
-        @NotNull final QueryJCommand parameters,
-        @NotNull final PackageUtils packageUtils);
+        @NotNull final QueryJCommand parameters);
 }
