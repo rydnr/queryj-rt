@@ -141,6 +141,7 @@ dao_attribute_declaration(table) ::= <<
  Generates the attribute declaration for each DAO.
  @param table the table.
 !>
+<table>
 /**
  * The {@link <table.normalized.capitalized>DAO} reference (cached whereas Manager
  * instance is not garbage collected).
