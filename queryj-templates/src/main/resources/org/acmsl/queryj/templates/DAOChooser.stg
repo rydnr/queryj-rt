@@ -325,7 +325,7 @@ repository_dao_constant(repository, C) ::= <<
 <!
  Writes the constant declaration for the repository DAO.
  @param repository the repository.
- @param repositoryUppercased the repository, in upper-case.
+ @param C the context.
 !>
 /**
  * Used to retrieve the value of \<i\><repositoryLowercased>.dao\</i\>
