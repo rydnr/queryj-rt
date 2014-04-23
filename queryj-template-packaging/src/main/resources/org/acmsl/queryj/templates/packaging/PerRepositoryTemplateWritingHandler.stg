@@ -131,7 +131,7 @@ public class <C.class_name>
     /**
      * {@inheritDoc}
      */
-    @NotNull
+    @Nullable
     @Override
     public <def.name.noExtension>Template retrieveTemplate(@NotNull final QueryJCommand parameters)
     {
