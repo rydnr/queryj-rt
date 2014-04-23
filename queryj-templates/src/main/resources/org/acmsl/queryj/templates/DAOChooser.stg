@@ -166,7 +166,7 @@ public class <repository.capitalized>DAOChooser
      * Specifies the properties.
      * @param properties the new properties.
      */
-    private void immutableSetProperties(final Properties properties)
+    private void immutableSetProperties(<notnull(C=C)>final Properties properties)
     {
         m__Properties = properties;
     }
