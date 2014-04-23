@@ -109,6 +109,5 @@ public class <repository.capitalized>DataAccessManager
     extends Serializable
 <endif>
 {
-    <table.attributes:getter(); separator="\n\n">
 }
 >>
