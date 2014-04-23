@@ -43,6 +43,7 @@ import org.acmsl.queryj.api.PerRepositoryTemplateContext;
 /*
  * Importing some JetBrains annotations.
  */
+import org.acmsl.queryj.metadata.engines.Engine;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -100,6 +101,6 @@ public abstract class BasePerRepositoryTemplateWritingHandler
         @NotNull final File projectFolder,
         @NotNull final String projectPackage,
         final boolean useSubfolders,
-        @NotNull final String engineName,
+        @NotNull final Engine<String> engine,
         @NotNull final QueryJCommand parameters);
 }
