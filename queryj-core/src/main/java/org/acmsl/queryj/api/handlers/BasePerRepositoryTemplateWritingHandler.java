@@ -43,6 +43,7 @@ import org.acmsl.queryj.api.PerRepositoryTemplateContext;
 /*
  * Importing some JetBrains annotations.
  */
+import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.metadata.engines.Engine;
 import org.jetbrains.annotations.NotNull;
 
@@ -76,6 +77,7 @@ public abstract class BasePerRepositoryTemplateWritingHandler
         @NotNull final C context,
         @NotNull final File rootDir,
         @NotNull final QueryJCommand parameters)
+        throws QueryJBuildException
     {
         return
             retrieveOutputDir(
