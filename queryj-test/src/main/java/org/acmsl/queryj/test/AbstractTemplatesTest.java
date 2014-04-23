@@ -632,6 +632,16 @@ public abstract class AbstractTemplatesTest<G, F>
     {
         this.m__strRepository = repo;
     }
+
+    /**
+     * Specifies the repository.
+     * @param repo such name.
+     */
+    protected final void immutableSetRepository(@NotNull final String repo)
+    {
+        this.m__strRepository = repo;
+    }
+
     /**
      * Retrieves a {@link org.acmsl.queryj.customsql.CustomSqlProvider} instance adapted for given result.
      * @param sqlList the list of {@link Sql}.
