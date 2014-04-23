@@ -1,5 +1,5 @@
 /*
- * DataAccessManager template metadata.
+ * DAOChooser template metadata.
  */
 // The template name (the filename).
 name : DataAccessManager.stg;
