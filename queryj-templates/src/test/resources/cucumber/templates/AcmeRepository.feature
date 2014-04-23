@@ -11,6 +11,11 @@ Feature: Acme-wide classes compile
     Then the generated repository-wide <output> file compiles successfully
 
   Examples:
-    | template           | output                            |
-  queryj-templates/src/test/resources/cucumber/templates/AcmeRepository.feature
-  <C.templateDefs:{ d | <indirect_template(def=d, engineName="Oracle", tableName="User")>}; separator="\n">
+    | template | output |
+    | PkStatementSetter | GCycleTypePkStatementSetter.java |
+  #      | AttributesStatementSetter | GCycleTypeAttributesStatementSetter.java |
+  #      | ValueObjectFactory | GCycleTypeValueObjectFactory.java |
+  #      | ValueObject | GCycleTypeValueObject.java |
+  #      | BaseValueObject | AbstractGCycleType.java |
+  #      | BaseDAO | GCycleTypeDAO.java |
+  #      | DAO | OracleGCycleTypeDAO.java |
