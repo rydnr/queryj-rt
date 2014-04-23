@@ -75,9 +75,9 @@ public class TemplateBuildHandlerTemplateFactoryTest
      * @return such instance.
      */
     @Override
-    protected TemplateFactoryTemplateFactory createFactory()
+    protected TemplateBuildHandlerTemplateFactory createFactory()
     {
-        return new TemplateFactoryTemplateFactory();
+        return new TemplateBuildHandlerTemplateFactory();
     }
 
     /**
