@@ -193,7 +193,7 @@ public class <repository.capitalized>DAOChooser
 
         <nullable(C=C)>Properties aux = getProperties();
 
-        if  (result == null)
+        if  (aux == null)
         {
             result = new Properties();
             loadProperties(result);
