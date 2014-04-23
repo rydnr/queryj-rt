@@ -161,6 +161,7 @@ public class <C.class_name>
      */
     @NotNull
     static String buildPackageName(
+        @NotNull final String repository,
         @SuppressWarnings("unused") @NotNull final Engine\<String> engine,
         @SuppressWarnings("unused") @NotNull final String projectPackage)
     {
