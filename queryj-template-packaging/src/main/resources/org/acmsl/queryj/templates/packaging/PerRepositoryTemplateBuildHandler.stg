@@ -58,7 +58,7 @@ sourceImpl(def, C) ::= <<
   description=[ "Build handler for ", def.name.capitalized, "Templates." ],
   description_oneline=true,
   filename=C.class_name,
-  template="org/acmsl/queryj/templates/packaging/TemplateBuildHandler.stg",
+  template="org/acmsl/queryj/templates/packaging/PerRepositoryTemplateBuildHandler.stg",
   C=C)>
 <package_declaration(packageName="org.acmsl.queryj.templates.handlers")>
 
