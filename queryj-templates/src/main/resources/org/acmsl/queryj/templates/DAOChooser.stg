@@ -333,7 +333,7 @@ repository_dao_constant(repository, C) ::= <<
  * from the configuration layer.
  */
 <notnull(C=C)>
-public static final String <repository.uppercased>_DAO =
+public static final String <repository.uppercased>_DAO_KEY =
     "<repository.lowercased>.dao";
 >>
 
