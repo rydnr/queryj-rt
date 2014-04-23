@@ -38,12 +38,14 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Test;
 
 /**
  *
@@ -53,5 +55,80 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class TemplateBuildHandlerTemplateFactoryTest
+    extends TemplateFactoryTestHelper<
+    TemplateFactoryTemplateFactory,
+    TemplateFactoryTemplate<DefaultTemplatePackagingContext>,
+    DefaultTemplatePackagingContext>
 {
+    /**
+     * Creates a new nice mock of {@link DefaultTemplatePackagingContext}.
+     * @return such instance.
+     */
+    @Override
+    protected DefaultTemplatePackagingContext createContext()
+    {
+        return EasyMock.createNiceMock(DefaultTemplatePackagingContext.class);
+    }
+
+    /**
+     * Creates a new {@link TemplateWritingHandlerTemplateFactory} instance.
+     * @return such instance.
+     */
+    @Override
+    protected TemplateFactoryTemplateFactory createFactory()
+    {
+        return new TemplateFactoryTemplateFactory();
+    }
+
+    /**
+     * Checks whether the createTemplate() method returns the correct template
+     * for a per-repository type.
+     */
+    @Test
+    public void createTemplate_returns_the_correct_template_for_a_per_repository_template()
+    {
+        testCreateTemplate(TemplateDefType.PER_REPOSITORY, Literals.PER_REPOSITORY_TEMPLATE_FACTORY);
+    }
+
+    /**
+     * Checks whether the createTemplate() method returns the correct template
+     * for a per-table type.
+     */
+    @Test
+    public void createTemplate_returns_the_correct_template_for_a_per_table_template()
+    {
+        testCreateTemplate(TemplateDefType.PER_TABLE, Literals.TEMPLATE_FACTORY);
+    }
+
+    /**
+     * Checks whether the createTemplate() method returns the correct template
+     * for a per-foreign-key type.
+     */
+    @Test
+    public void createTemplate_returns_the_correct_template_for_a_per_foreign_key_template()
+    {
+        testCreateTemplate(TemplateDefType.PER_FOREIGN_KEY, Literals.PER_FOREIGN_KEY_TEMPLATE_FACTORY);
+    }
+
+    /**
+     * Checks whether the createTemplate() method returns the correct template
+     * for a per-custom-result type.
+     */
+    @Test
+    public void createTemplate_returns_the_correct_template_for_a_per_custom_result_template()
+    {
+        testCreateTemplate(TemplateDefType.PER_CUSTOM_RESULT, Literals.PER_CUSTOM_RESULT_TEMPLATE_FACTORY);
+    }
+
+    /**
+     * Checks whether the createTemplate() method returns the correct template
+     * for a per-sql type.
+     */
+    @Test
+    public void createTemplate_returns_the_correct_template_for_a_per_sql_template()
+    {
+        testCreateTemplate(TemplateDefType.PER_CUSTOM_SQL, Literals.PER_CUSTOM_SQL_TEMPLATE_FACTORY);
+    }
+}
+
 }
