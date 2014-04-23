@@ -305,7 +305,7 @@ public class <repository.capitalized>DAOChooser
 }
 >>
 
-dao_constant(table, repositoryLowercased, repositoryUppercased) ::= <<
+dao_constant(table, repository, C) ::= <<
 <!
  Writes the constant declaration for each table.
  @param table the table.
