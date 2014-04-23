@@ -79,7 +79,7 @@ import org.acmsl.commons.patterns.dao.DataAccessManager;
 <class(repository=repository, tables=tables, C=C)>
 >>
 
-description(table) ::= <<
+description(repository) ::= <<
 <!
   Generates the first line of the generated file description.
   @param result the custom result.
