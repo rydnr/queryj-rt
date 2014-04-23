@@ -51,6 +51,7 @@ import org.jetbrains.annotations.NotNull;
  * Importing some JDK classes.
  */
 import java.io.File;
+import java.util.List;
 
 /**
  * Writes <i>per-repository</i> templates.
@@ -67,6 +68,18 @@ public abstract class BasePerRepositoryTemplateWritingHandler
      * Creates a <code>BasePerRepositoryTemplateWritingHandler</code> instance.
      */
     public BasePerRepositoryTemplateWritingHandler() {}
+
+    /**
+     * Retrieves the templates from the command.
+     * @param parameters the parameters.
+     * @return the template.
+     */
+    @NotNull
+    public List<T> retrieveTemplates(@NotNull final QueryJCommand parameters)
+        throws QueryJBuildException
+    {
+
+    }
 
     /**
      * {@inheritDoc}
