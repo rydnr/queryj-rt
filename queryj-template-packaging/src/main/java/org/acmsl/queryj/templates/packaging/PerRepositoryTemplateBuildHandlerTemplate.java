@@ -56,6 +56,11 @@ public class PerRepositoryTemplateBuildHandlerTemplate<C extends TemplatePackagi
     extends TemplateBuildHandlerTemplate<C>
 {
     /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = -3593908234655501807L;
+
+    /**
      * Creates a new instance using given context.
      * @param context the context.
      */
