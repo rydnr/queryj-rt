@@ -126,6 +126,6 @@ public class TemplateBuildHandlerTemplateFactoryTest
     @Test
     public void createTemplate_returns_the_correct_template_for_a_per_sql_template()
     {
-        testCreateTemplate(TemplateDefType.PER_CUSTOM_SQL, Literals.PER_CUSTOM_SQL_TEMPLATE_FACTORY);
+        testCreateTemplate(TemplateDefType.PER_CUSTOM_SQL, Literals.TEMPLATE_BUILD_HANDLER);
     }
 }
