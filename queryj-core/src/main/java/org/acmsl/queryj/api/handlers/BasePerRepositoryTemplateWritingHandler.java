@@ -90,8 +90,9 @@ public abstract class BasePerRepositoryTemplateWritingHandler
 
     /**
      * Retrieves the output dir from the attribute map.
+     * @param repository the repository name.
+     * @param context the context.
      * @param projectFolder the project folder.
-     * using a different package naming scheme.
      * @param engine the engine.
      * @param parameters the parameter map.
      * @return such folder.
