@@ -644,6 +644,9 @@ public abstract class AbstractTemplatesTest<G, F>
     }
 
     /**
+     * Retrieves the repository name.
+     */
+    /**
      * Retrieves a {@link org.acmsl.queryj.customsql.CustomSqlProvider} instance adapted for given result.
      * @param sqlList the list of {@link Sql}.
      * @param parameters the {@link Parameter} map.
