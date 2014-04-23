@@ -36,13 +36,13 @@
 // Description: Defines the rules to generate QueryJ's per-foreign key
 //              TemplateFactories.
 //
-group PerForeignKeyTemplateFactory;
+group PerRepositoryTemplateFactory;
 
 import "common.stg"
 
 source(C) ::= <<
 <!
- Generates a PerForeignKeyTemplateFactory source file.
+ Generates a PerRepositoryTemplateFactory source file.
  @param C the context.
  !>
 <sourceImpl(def=C.templateDef, C=C)>
@@ -58,7 +58,7 @@ sourceImpl(def, C) ::= <<
   description=[ "Factory for ", def.name.capitalized, "Templates, for each foreign key" ],
   description_oneline=true,
   filename=C.class_name,
-  template="org/acmsl/queryj/templates/packaging/PerForeignKeyTemplateFactory.stg",
+  template="org/acmsl/queryj/templates/packaging/PerRepositoryTemplateFactory.stg",
   C=C)>
 <package_declaration(packageName="org.acmsl.queryj.templates")>
 
@@ -73,7 +73,7 @@ import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.metadata.DecoratedString;
 import org.acmsl.queryj.metadata.engines.EngineDecorator;
 import org.acmsl.queryj.metadata.MetadataManager;
-import org.acmsl.queryj.metadata.vo.ForeignKey;
+import org.acmsl.queryj.metadata.vo.Repository;
 
 /*
  * Importing some ACM-SL Java Commons classes.
@@ -104,7 +104,7 @@ class(def, C) ::= <<
 <class_common_javadoc(
   description=[ "Factory for ", def.name.capitalized, "Templates, for each foreign key" ],
   description_oneline=true,
-  template="org/acmsl/queryj/templates/packaging/PerForeignKeyTemplateFactory.stg",
+  template="org/acmsl/queryj/templates/packaging/PerRepositoryTemplateFactory.stg",
   timestamp=C.timestamp,
   version=C.version)>
  */
@@ -141,7 +141,7 @@ public class <C.class_name>
     @Override
     @NotNull
     public <def.name.noExtension>Template createTemplate(
-        @NotNull final ForeignKey\<String> foreignKey,
+        @NotNull final Repository\<String> foreignKey,
         @NotNull final QueryJCommand command)
     {
         @NotNull final <def.type.capitalized>TemplateContext t_Context =
