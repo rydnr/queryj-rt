@@ -188,7 +188,7 @@ public class <repository.capitalized>DAOChooser
      * @return the properties.
      */
     <notnull(C=C)>
-    private Properties immutableGetProperties()
+    protected final Properties immutableGetProperties()
     {
         final Properties result = getProperties();
 
@@ -220,7 +220,7 @@ public class <repository.capitalized>DAOChooser
     <nullable(C=C)>
     protected String getProperty(<notnull(C=C)>final String key)
     {
-        // This is safe since immutableGetProperties() is private and ensures
+        // This is safe since immutableGetProperties() is final and ensures
         // a new object if the instance's is null.
         return immutableGetProperties().getProperty(key);
     }
