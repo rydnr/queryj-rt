@@ -4,7 +4,7 @@ Feature: Acme-wide classes compile
 
     Given the repository whose name is Acme, composed of:
       | table | parent table | decorated | relationship |   static    |
-  <tables:{ t | <cucumber_table_declaration(table=t)>}; separator="\n">
+      <tables:{ t | <cucumber_table_declaration(table=t)>}; separator="\n">
 
     When I use the repository-wide <template>.stg for Oracle
 
