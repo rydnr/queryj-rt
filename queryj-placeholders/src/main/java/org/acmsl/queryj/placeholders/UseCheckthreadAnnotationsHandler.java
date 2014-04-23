@@ -93,4 +93,7 @@ public class UseCheckthreadAnnotationsHandler
     {
         return !context.getDisableCheckthreadAnnotations();
     }
+
+    @Override
+    public int hashCode()
 }
