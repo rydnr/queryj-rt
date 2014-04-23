@@ -184,6 +184,7 @@ public class <repository.capitalized>DAOChooser
      * Retrieves the configuration settings.
      * @return the properties.
      */
+    <notnull(C=C)>
     private Properties immutableGetProperties()
     {
         Properties result = getProperties();
