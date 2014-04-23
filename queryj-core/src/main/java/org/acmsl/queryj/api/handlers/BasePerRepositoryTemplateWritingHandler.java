@@ -98,7 +98,7 @@ public abstract class BasePerRepositoryTemplateWritingHandler
     }
 
     /**
-     * Retrieves the templates from the command.
+     * Retrieves the template from the command.
      * @param parameters the parameters.
      * @return the template.
      */
