@@ -297,7 +297,7 @@ public class <repository.capitalized>DAOChooser
         }
     }
 
-    <tables:dao_factory_getters(
+    <tables:{t | <dao_factory_getters(
       table=it, repository=input.tr_name_uppercased); separator="\n\n">
 
 <if(input.repository_dao)>
