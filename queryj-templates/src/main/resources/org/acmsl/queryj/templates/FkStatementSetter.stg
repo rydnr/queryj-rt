@@ -188,6 +188,28 @@ public class <fk.source.name.voName>By<fk.target.name.voName>StatementSetter
         throws  SQLException
     {
         setValues(
+            (Query) preparedStatement,
+            <foreignKey.attributes:{attr | get<attr.nameCapitalized>()}; separator=",\n">);
+    }
+
+    /**
+     * Specifies the values on given \<code>PreparedStatement\</code>
+     * @param preparedStatement the prepared statement.
+     <foreignKey.attributes:attribute_javadoc(name=it.nameLowercased);
+        separator="\n">
+     * @throws SQLException intercepted by \<i>Spring\</i>.
+     <precondition_notnull("preparedStatement")>
+     <precondition_notnull("query")>
+     */
+    protected void setValues(
+        final Query query,
+        <foreignKey.attributes:primitive_attribute_declaration(attr=it);
+          separator=",\n">)
+      throws  SQLException
+    {
+        <foreignKey.attributes:attribute_query_specification(attr=it);
+          separator="\n">
+    }
     }
 }
 >>
