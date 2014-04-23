@@ -118,24 +118,24 @@ public class <repository.capitalized>DAOChooser
     /**
      * Public constructor to allow reflective access.
      */
-    public <repository.capitalized>DataAccessManager() {};
+    public <repository.capitalized>DAOChooser() {};
 
     /**
      * Singleton implementation to avoid double-checked locking.
      */
-    private static final class <repository.capitalized>DataAccessManagerSingletonContainer
+    private static final class <repository.capitalized>DAOChooserSingletonContainer
     {
-        private static final <repository.capitalized>DataAccessManager SINGLETON =
-            new <repository.capitalized>DataAccessManager();
+        private static final <repository.capitalized>DAOChooser SINGLETON =
+            new <repository.capitalized>DAOChooser();
     }
 
     /**
-     * Retrieves a {@code <repository.capitalized>DataAccessManager} instance.
+     * Retrieves a {@code <repository.capitalized>DAOChooser} instance.
      * @return such instance.
      */
-    public static <repository.capitalized>DataAccessManager getInstance()
+    public static <repository.capitalized>DAOChooser getInstance()
     {
-        return <repository.capitalized>DataAccessManagerSingletonContainer.SINGLETON;
+        return <repository.capitalized>DAOChooserSingletonContainer.SINGLETON;
     }
 
     <tables:{ t | <dao_methods(table=t, C=C)>}; separator="\n\n">
