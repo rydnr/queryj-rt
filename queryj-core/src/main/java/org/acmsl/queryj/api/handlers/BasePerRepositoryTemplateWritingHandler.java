@@ -40,12 +40,11 @@ import org.acmsl.queryj.api.PerRepositoryTemplateGenerator;
 import org.acmsl.queryj.api.AbstractBasePerRepositoryTemplate;
 import org.acmsl.queryj.api.PerRepositoryTemplateContext;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.metadata.engines.Engine;
 
 /*
  * Importing some JetBrains annotations.
  */
-import org.acmsl.queryj.api.exceptions.QueryJBuildException;
-import org.acmsl.queryj.metadata.engines.Engine;
 import org.jetbrains.annotations.NotNull;
 
 /*
