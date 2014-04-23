@@ -72,9 +72,8 @@ public abstract class BasePerRepositoryTemplateWritingHandler
     public BasePerRepositoryTemplateWritingHandler() {}
 
     /**
-     * Retrieves the templates from the command.
-     * @param parameters the parameters.
-     * @return the template.
+     * {@ni
+     * }
      */
     @NotNull
     public List<T> retrieveTemplates(@NotNull final QueryJCommand parameters)
