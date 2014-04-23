@@ -109,7 +109,7 @@ public class <repository.capitalized>DataAccessManager
     extends Serializable
 <endif>
 {
-    <tables:{ t | <dao_attribute_declaration(table=t)>}; separator="\n\n">
+    <tables:{ t | <dao_attribute_declaration(table=t, C=C)>}; separator="\n\n">
 
 <if(C.repository_dao)>
     <repository_dao_attribute_declaration(repository=repository)>
@@ -138,9 +138,9 @@ public class <repository.capitalized>DataAccessManager
         return <repository.capitalized>DataAccessManagerSingletonContainer.SINGLETON;
     }
 
-    <tables:{ t | <dao_methods(table=t)>}; separator="\n\n">
+    <tables:{ t | <dao_methods(table=t, C=C)>}; separator="\n\n">
 <if(C.repository_dao)>
-    <repository_dao_methods(repository=repository)>
+    <repository_dao_methods(repository=repository, C=C)>
 <endif>
 }
 >>
