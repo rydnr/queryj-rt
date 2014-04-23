@@ -187,7 +187,7 @@ public class <repository.capitalized>DAOChooser
      * @return the properties.
      */
     <notnull(C=C)>
-    private Properties immutableGetProperties()
+    protected Properties immutableGetProperties()
     {
         final Properties result = getProperties();
 
