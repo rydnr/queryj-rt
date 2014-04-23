@@ -64,8 +64,6 @@ import org.jetbrains.annotations.Nullable;
  */
 import org.checkthread.annotations.ThreadSafe;
 
-import java.util.List;
-
 /*
  * Importing JDK classes.
  */
