@@ -133,7 +133,7 @@ public class <C.class_name>
      */
     @NotNull
     @Override
-    public List\<<def.name.noExtension>Template> retrieveTemplates(@NotNull final QueryJCommand parameters)
+    public List\<<def.name.noExtension>Template> retrieveTemplate(@NotNull final QueryJCommand parameters)
     {
         @NotNull final List\<<def.name.noExtension>Template> result;
 
