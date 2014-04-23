@@ -193,7 +193,7 @@ public class <fk.source.name.voName>By<fk.target.name.voName>StatementSetter
     }
 
     /**
-     * Specifies the values on given \<code>PreparedStatement\</code>
+     * Specifies the values on given {@link PreparedStatement}
      * @param preparedStatement the prepared statement.
      <foreignKey.attributes:attribute_javadoc(name=it.nameLowercased);
         separator="\n">
