@@ -270,7 +270,7 @@ public <repository.capitalized>DAO get<repository.capitalized>DAO()
 
     <nullable(C=C)><repository.capitalized>DAO aux = get<repository.capitalized>DAOReference();
 
-    if  (result == null)
+    if  (aux == null)
     {
         <notnull(C=C)>final <repository.capitalized>DAOFactory t_<repository.capitalized>DAOFactory =
             <repository.capitalized>DAOFactory.getInstance();
