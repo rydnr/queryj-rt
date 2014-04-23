@@ -247,9 +247,9 @@ public boolean equals(<nullable(C=C)>final Object other)
 >>
 
 hashcode_method(fk, C) ::= <<
-<! Generates the hashcode() method !>
+<! Generates the hashCode() method !>
 /**
- * Retrieves the hashcode which identifies this instance
+ * Retrieves the hash code which identifies this instance
  * from any other one.
  * @return the unique (among instances of this class) value.
  */
@@ -258,7 +258,7 @@ public int hashCode()
 {
     final int result;
 
-    final int classHashCode = <fk.source.name.voName>By<fk.target.name.voName>StatementSetter.class.hashcode();
+    final int classHashCode = <fk.source.name.voName>By<fk.target.name.voName>StatementSetter.class.hashCode();
 
     <fk.attributes:{ a | <attribute_hashcode(attribute=a)>}; separator="\n">
 
