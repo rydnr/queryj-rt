@@ -103,7 +103,7 @@ class(repository, tables, C) ::= <<
  */
 public class <repository.capitalized>DataAccessManager
 <if(C.implement_markers)>
-    extends  ValueObject,
+    extends  DataAccessManager,
              Serializable
 <else>
     extends Serializable
