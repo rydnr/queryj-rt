@@ -11,7 +11,7 @@ type : per-repository;
 output: Java;
 
 // The filename builder.
-filename  builder : <tableName.capitalized>DAOFactory.java;
+filename  builder : <repository.capitalized>DAOFactory.java;
 
 // The package.
 package: <packageName>.dao;
