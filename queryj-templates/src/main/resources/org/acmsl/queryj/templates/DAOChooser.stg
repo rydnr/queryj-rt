@@ -320,7 +320,7 @@ public static final String <repository.uppercased>_<table.name.voName.uppercased
     "<repository.lowercased>.<table.voName.lowercased>.dao";
 >>
 
-repository_dao_constant(repositoryLowercased, repositoryUppercased) ::= <<
+repository_dao_constant(repository, repositoryUppercased) ::= <<
 <!
  Writes the constant declaration for the repository DAO.
  @param repositoryLowercased the repository, in lower-case.
