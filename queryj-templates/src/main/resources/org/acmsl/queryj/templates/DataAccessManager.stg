@@ -175,7 +175,7 @@ dao_methods(table) ::= <<
  @param table the table.
 !>
 /**
- * Specifies the new {@code <table.name.voName>DAO} reference to keep.
+ * Specifies the new {@link <table.name.voName>DAO} reference to keep.
  * @param dao the new DAO.
  */
 protected void set<table.name.voName>DAOReference(final <table.name.voName>DAO dao)
@@ -184,7 +184,7 @@ protected void set<table.name.voName>DAOReference(final <table.name.voName>DAO d
 }
 
 /**
- * Retrieves the existing \<code><table.name.voName>DAO\</code> reference.
+ * Retrieves the existing {@link <table.name.voName>DAO} reference.
  * @return a DAO instance for accessing <table.name> information.
  */
 protected <table.name.voName>DAO get<table.name.voName>DAOReference()
