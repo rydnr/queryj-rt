@@ -142,6 +142,7 @@ public class <C.class_name>
     @NotNull
     public <def.name.noExtension>Template createTemplate(
         @NotNull final String repository,
+        @NotNull final List\<String> tableNames,
         @NotNull final QueryJCommand command)
     {
         @NotNull final <def.type.capitalized>TemplateContext t_Context =
