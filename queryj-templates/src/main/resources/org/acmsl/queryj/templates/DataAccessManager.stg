@@ -45,7 +45,7 @@ source(C) ::= <<
   Defines the rules to generate DataAccessManager facades.
   @param C the context.
 !>
-<sourceImpl(repository=C.repository, C=C)>
+<sourceImpl(repository=C.repository, tables=C.tables, C=C)>
 >>
 
 sourceImpl(table, C) ::= <<
