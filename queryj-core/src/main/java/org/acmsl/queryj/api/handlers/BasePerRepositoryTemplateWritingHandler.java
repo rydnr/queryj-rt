@@ -102,8 +102,8 @@ public abstract class BasePerRepositoryTemplateWritingHandler
      * @param parameters the parameters.
      * @return the template.
      */
-    @NotNull
-    public List<T> retrieveTemplates(@NotNull final QueryJCommand parameters)
+    @Nullable
+    protected List<T> retrieveTemplates(@NotNull final QueryJCommand parameters)
         throws QueryJBuildException
     {
     /**
