@@ -84,7 +84,7 @@ public abstract class BasePerRepositoryTemplateWritingHandler
 
         @Nullable final T template = retrieveTemplate(parameters);
 
-        if (template != null)
+        if (template == null)
         {
             result = new ArrayList<>(1);
             result.add(template);
