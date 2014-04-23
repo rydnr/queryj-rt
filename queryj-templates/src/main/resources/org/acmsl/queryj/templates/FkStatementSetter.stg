@@ -167,8 +167,7 @@ public class <fk.source.name.voName>By<fk.target.name.voName>StatementSetter
     /**
      * Creates a {@code <fk.source.name.voName>By<fk.target.name.voName>StatementSetter}
      * instance.
-     ><fk.sourceVoName>By<foreignKey.targetVoName>StatementSetter\</code><foreignKey.attributes:attribute_javadoc(name=it.nameLowercased);
-        separator="\n">
+     <fk.attributes:{ a |<attribute_javadoc(attr=a)>}; separator="\n">
      */
     public <fk.source.name.voName>By<fk.target.name.voName>StatementSetter(
         <foreignKey.attributes:primitive_attribute_declaration(attr=it);
