@@ -193,7 +193,7 @@ public class BasePerRepositoryTemplateBuildHandler
      * @return the package name.
      */
     @NotNull
-    protected abstract String retrievePackage(
+    protected String retrievePackage(
         @NotNull final Engine<String> engine,
         @NotNull final String projectPackage,
         @NotNull final PackageUtils packageUtils);
