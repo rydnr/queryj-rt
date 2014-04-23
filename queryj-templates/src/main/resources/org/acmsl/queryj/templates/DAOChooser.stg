@@ -310,7 +310,7 @@ dao_constant(table, repository, C) ::= <<
  Writes the constant declaration for each table.
  @param table the table.
  @param repository the repository.
- @param repositoryLowercased the repository, in lower-case.
+ @param C the context.
 !>
 /**
  * Used to retrieve the value of \<i\><repositoryLowercased>.<table.singularNameNormalizedLowercased>.dao\</i\>
