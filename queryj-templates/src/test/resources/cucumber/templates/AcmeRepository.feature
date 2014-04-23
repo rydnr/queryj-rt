@@ -5,7 +5,7 @@ Feature: Acme-wide classes compile
     Given the repository whose name is Acme, composed of:
       | table         | parent table | decorated | relationship |   static    |
       | G_CYCLE_TYPES |              |   false   |     false    |    false    |
-      | G_CYCLE_TYPES |              |   false   |     false    |    false    |
+      | G_DRAWS       |              |   false   |     false    |    false    |
 
     When I use the repository-wide <template>.stg for Oracle
 
