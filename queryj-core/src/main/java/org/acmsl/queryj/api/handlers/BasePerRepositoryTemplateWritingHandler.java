@@ -82,7 +82,7 @@ public abstract class BasePerRepositoryTemplateWritingHandler
                 rootDir,
                 retrieveProjectPackage(parameters),
                 retrieveUseSubfoldersFlag(parameters),
-                retrieveEngine(parameters),
+                retrieveEngine(parameters, retrieveDatabaseMetaData()),
                 parameters);
     }
 
