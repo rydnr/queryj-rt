@@ -331,6 +331,7 @@ repository_dao_constant(repository, C) ::= <<
  * Used to retrieve the value of \<i\><repository.lowercased>.dao\</i\>
  * from the configuration layer.
  */
+<notnull(C=C)>
 public static final String <repository.uppercased>_DAO =
     "<repository.lowercased>.dao";
 >>
