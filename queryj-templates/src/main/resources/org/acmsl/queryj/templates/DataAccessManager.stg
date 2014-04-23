@@ -286,6 +286,10 @@ public <repository.capitalized>DAO get<repository.capitalized>DAO()
         }
     }
 
+    if (aux == null)
+    {
+        throw new RuntimeException("
+    }
     return result;
 }
 >>
