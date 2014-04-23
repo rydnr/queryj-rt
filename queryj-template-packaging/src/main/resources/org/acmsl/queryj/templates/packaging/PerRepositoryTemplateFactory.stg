@@ -141,7 +141,7 @@ public class <C.class_name>
     @Override
     @NotNull
     public <def.name.noExtension>Template createTemplate(
-        @NotNull final Repository\<String> foreignKey,
+        @NotNull final String repository,
         @NotNull final QueryJCommand command)
     {
         @NotNull final <def.type.capitalized>TemplateContext t_Context =
