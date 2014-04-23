@@ -146,7 +146,7 @@ public class <C.class_name>
         @NotNull final QueryJCommand command)
     {
         @NotNull final <def.type.capitalized>TemplateContext t_Context =
-            new <def.type.capitalized>TemplateContext(repository, command);
+            new <def.type.capitalized>TemplateContext(repository, tableNames, command);
 
         @NotNull final String t_strFileName =
             retrieveTemplateFileName(
