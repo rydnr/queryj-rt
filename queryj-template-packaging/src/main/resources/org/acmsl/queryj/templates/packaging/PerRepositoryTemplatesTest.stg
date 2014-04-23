@@ -250,6 +250,7 @@ public class PerRepositoryTemplatesTest
         generateFile(
             template,
             engine,
+            getRepository(),
             getTables(),
             getRows(),
             getOutputFiles(),
