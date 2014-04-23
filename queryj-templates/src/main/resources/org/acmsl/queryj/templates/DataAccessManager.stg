@@ -169,3 +169,99 @@ repository_dao_attribute_declaration(repository) ::= <<
 private <repository.capitalized>DAO m__<repository.capitalized>DAO;
 >>
 
+dao_methods(table) ::= <<
+<!
+ Generates the DAO-specific methods for each table.
+ @param table the table.
+!>
+/**
+ * Specifies the new \<code><table.voName>DAO\</code> reference to keep.
+ * @param dao the new DAO.
+ */
+protected void set<table.voName>DAOReference(final <table.voName>DAO dao)
+{
+    m__<table.voName>DAO = dao;
+}
+
+/**
+ * Retrieves the existing \<code><table.voName>DAO\</code> reference.
+ * @return a DAO instance for accessing <table.name> information.
+ */
+protected <table.voName>DAO get<table.voName>DAOReference()
+{
+    return m__<table.voName>DAO;
+}
+
+/**
+ * Retrieves a \<code><table.voName>DAO\</code>.
+ * @return a DAO instance for accessing <table.name> information.
+ */
+public <table.voName>DAO get<table.voName>DAO()
+{
+    <table.voName>DAO result = get<table.voName>DAOReference();
+
+    if  (result == null)
+    {
+        <table.voName>DAOFactory t_<table.voName>DAOFactory =
+            <table.voName>DAOFactory.getInstance();
+
+        if  (t_<table.voName>DAOFactory != null)
+        {
+            result = t_<table.voName>DAOFactory.create<table.voName>DAO();
+
+            set<table.voName>DAOReference(result);
+        }
+    }
+
+    return result;
+}
+>>
+
+repository_dao_methods(repository, repositoryCapitalized) ::= <<
+<!
+ Generates the methods for the repository DAO.
+ @param repository the repository.
+ @param repositoryCapitalized the repository, capitalized.
+!>
+/**
+ * Specifies the new \<code><repositoryCapitalized>DAO\</code> reference to keep.
+ * @param dao the new DAO.
+ */
+protected void set<repositoryCapitalized>DAOReference(final <repositoryCapitalized>DAO dao)
+{
+    m__<repositoryCapitalized>DAO = dao;
+}
+
+/**
+ * Retrieves the existing \<code><repositoryCapitalized>DAO\</code> reference.
+ * @return a DAO instance for accessing the <repository>-wide DAO.
+ */
+protected <repositoryCapitalized>DAO get<repositoryCapitalized>DAOReference()
+{
+    return m__<repositoryCapitalized>DAO;
+}
+
+/**
+ * Retrieves a \<code><repositoryCapitalized>DAO\</code>.
+ * @return a DAO instance for accessing the <repository>-wide DAO.
+ */
+public <repositoryCapitalized>DAO get<repositoryCapitalized>DAO()
+{
+    <repositoryCapitalized>DAO result = get<repositoryCapitalized>DAOReference();
+
+    if  (result == null)
+    {
+        <repositoryCapitalized>DAOFactory t_<repositoryCapitalized>DAOFactory =
+            <repositoryCapitalized>DAOFactory.getInstance();
+
+        if  (t_<repositoryCapitalized>DAOFactory != null)
+        {
+            result = t_<repositoryCapitalized>DAOFactory.create<repositoryCapitalized>DAO();
+
+            set<repositoryCapitalized>DAOReference(result);
+        }
+    }
+
+    return result;
+}
+>>
