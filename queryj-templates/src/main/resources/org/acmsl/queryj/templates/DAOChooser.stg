@@ -345,7 +345,7 @@ dao_factory_getters(table, repository, C) ::= <<
  @param C the context.
 !>
 /**
- * Retrieves the {@link <table.voName>DAOFactory\</code\> class name.
+ * Retrieves the {@link <table.voName>DAOFactory}\</code\> class name.
  * @return such class name.
  */
 public String get<table.singularNameCapitalized>DAOFactoryClassName()
