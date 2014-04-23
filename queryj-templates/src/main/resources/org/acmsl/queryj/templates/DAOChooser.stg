@@ -313,7 +313,7 @@ dao_constant(table, repository, C) ::= <<
  @param C the context.
 !>
 /**
- * Used to retrieve the value of \<i\><repositoryLowercased>.<table.singularNameNormalizedLowercased>.dao\</i\>
+ * Used to retrieve the value of \<i\><repository>.<table.singularNameNormalizedLowercased>.dao\</i\>
  * from the configuration layer.
  */
 public static final String <repositoryUppercased>_<table.singularNameUppercased>_DAO =
