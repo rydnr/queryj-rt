@@ -199,9 +199,8 @@ public class <fk.source.name.voName>By<fk.target.name.voName>StatementSetter
      * @throws SQLException intercepted by \<i>Spring\</i>.
      */
     protected void setValues(
-        final Query query,
-        <foreignKey.attributes:primitive_attribute_declaration(attr=it);
-          separator=",\n">)
+        <notnull(C=C)>final PreparedStatement preparedStatement,
+        <fk.attributes:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
       throws  SQLException
     {
         <foreignKey.attributes:attribute_query_specification(attr=it);
