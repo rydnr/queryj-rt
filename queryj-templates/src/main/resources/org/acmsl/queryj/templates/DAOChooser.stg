@@ -373,7 +373,7 @@ repository_dao_factory_getters(repository, C) ::= <<
  * Retrieves the {@link <repository.capitalized>DAOFactory} class name.
  * @return such class name.
  */
-public String get<repositoryCapitalized>DAOFactoryClassName()
+public String get<repository.capitalized>DAOFactoryClassName()
 {
     return getProperty(<repositoryUppercased>_DAO);
 }
