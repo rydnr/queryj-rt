@@ -80,7 +80,7 @@ public abstract class BasePerRepositoryTemplateWritingHandler
     public List<T> retrieveTemplates(@NotNull final QueryJCommand parameters)
         throws QueryJBuildException
     {
-        @NotNull final List<T> result = new ArrayList<>(1);
+        @NotNull final List<T> result;
 
         @Nullable final T template = retrieveTemplate(parameters);
 
