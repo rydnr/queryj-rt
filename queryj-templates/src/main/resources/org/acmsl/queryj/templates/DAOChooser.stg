@@ -36,7 +36,7 @@
 // Description: Defines the rules to generate DAOChooser facades.
 //
 //
-group DataAccessManager;
+group DAOChooser;
 
 import "queryj.stg"
 
