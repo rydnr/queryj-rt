@@ -215,7 +215,7 @@ public class PerRepositoryTemplatesTest
      */
     @SuppressWarnings("unused")
     @Given("^the repository whose name is (.*), composed of:$")
-    public void defineInputTables(@NotNull final DataTable tableInfo)
+    public void defineInputTables(@NotNull final Str@NotNull final DataTable tableInfo)
     {
         defineInputTables(tableInfo, getTables(), TableTestHelper.getInstance());
     }
