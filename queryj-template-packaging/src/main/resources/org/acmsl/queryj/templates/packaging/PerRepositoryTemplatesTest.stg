@@ -217,6 +217,7 @@ public class PerRepositoryTemplatesTest
     @Given("^the repository whose name is (.*), composed of:$")
     public void defineInputTables(@NotNull final String repository, @NotNull final DataTable tableInfo)
     {
+        setRepository(repository);
         defineInputTables(tableInfo, getTables(), TableTestHelper.getInstance());
     }
 
