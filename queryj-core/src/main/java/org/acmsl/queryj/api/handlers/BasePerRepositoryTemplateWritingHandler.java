@@ -46,6 +46,7 @@ import org.acmsl.queryj.metadata.engines.Engine;
  * Importing some JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /*
  * Importing some JDK classes.
