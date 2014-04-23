@@ -647,7 +647,7 @@ public abstract class AbstractTemplatesTest<G, F>
      * Retrieves the repository name.
      * @return such name.
      */
-    @NotNull
+    @Nullable
     public String getRepository()
     {
         return this.m__strRepository;
