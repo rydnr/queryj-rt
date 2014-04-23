@@ -235,7 +235,7 @@ public boolean equals(<nullable(C=C)>final Object other)
 
         <fk.attributes:{ a | <attribute_equals(attribute=a)>}; separator="">
         result =
-            <fk.attributes:{ a |<a.name.uncapitalized>Match}; separator="&&\n">;
+            <fk.attributes:{ a |<a.name.uncapitalized>Match}; separator="&& \n">;
     }
     else
     {
