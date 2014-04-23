@@ -100,7 +100,7 @@ public abstract class BasePerRepositoryTemplateWritingHandler
     @NotNull
     protected abstract File retrieveOutputDir(
         @NotNull final File projectFolder,
-        @NotNull final String projectPackage,
+        @NotNull final C context,
         final boolean useSubfolders,
         @NotNull final Engine<String> engine,
         @NotNull final QueryJCommand parameters);
