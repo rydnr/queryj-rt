@@ -178,7 +178,7 @@ dao_methods(table) ::= <<
  * Specifies the new {@link <table.name.voName>DAO} reference to keep.
  * @param dao the new DAO.
  */
-protected void set<table.name.voName>DAOReference(final <table.name.voName>DAO dao)
+protected void set<table.name.voName>DAOReference(<notnull(C=C)>final <table.name.voName>DAO dao)
 {
     m__<table.name.voName>DAO = dao;
 }
@@ -217,8 +217,13 @@ public <table.name.voName>DAO get<table.name.voName>DAO()
 
     if (aux == null)
     {
-        throw new RuntimeException(
+        throw new RuntimeException("<table.name.voName>DAO not available!");
     }
+    else
+    {
+        result = aux;
+    }
+
     if (result != null)
     {
         set<table.name.voName>DAOReference(result);
