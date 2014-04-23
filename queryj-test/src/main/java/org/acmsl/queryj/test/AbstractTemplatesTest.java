@@ -650,7 +650,7 @@ public abstract class AbstractTemplatesTest<G, F>
     @NotNull
     public String getRepository()
     {
-
+        return this.m__strRepository;
     }
     /**
      * Retrieves a {@link org.acmsl.queryj.customsql.CustomSqlProvider} instance adapted for given result.
