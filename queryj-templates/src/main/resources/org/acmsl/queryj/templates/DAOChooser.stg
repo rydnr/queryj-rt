@@ -217,7 +217,7 @@ public class <repository.capitalized>DAOChooser
      * @return the configuration value associated to such setting.
      */
     <nullable(C=C)>
-    private String getProperty(<notnull(C=C)>final String key)
+    protected String getProperty(<notnull(C=C)>final String key)
     {
         // This is safe since immutableGetProperties() is private and ensures
         // a new object if the instance's is null.
