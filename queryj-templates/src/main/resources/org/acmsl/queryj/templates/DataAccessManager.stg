@@ -278,7 +278,7 @@ public <repository.capitalized>DAO get<repository.capitalized>DAO()
         if  (t_<repository.capitalized>DAOFactory != null)
         {
             aux = t_<repository.capitalized>DAOFactory.create<repository.capitalized>DAO();
-        }
+
             set<repository.capitalized>DAOReference(result);
         }
     }
