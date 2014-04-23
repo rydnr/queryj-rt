@@ -203,7 +203,7 @@ public class <fk.source.name.voName>By<fk.target.name.voName>StatementSetter
         <fk.attributes:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
       throws  SQLException
     {
-        <foreignKey.attributes:attribute_query_specification(attr=it);
+        <foreignKey.attributes:{ a | <attribute_preparedstatement_specification(attr=a)>}; separator="\n">attribute_query_specification(attr=it);
           separator="\n">
     }
 }
