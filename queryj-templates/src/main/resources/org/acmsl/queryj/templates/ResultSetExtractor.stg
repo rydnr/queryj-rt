@@ -110,7 +110,7 @@ public class <table.name.voName>ResultSetExtractor
     implements  ResultSetExtractor,
                 <repository.capitalized>TableRepository
 {
-<if(input.lobHandling)>
+<if(table.lobHandling)>
     <indirect_template(name=input.lobHandling+"Extractor", input=input)>
 <else>
     <defaultExtractor(input=input)>
