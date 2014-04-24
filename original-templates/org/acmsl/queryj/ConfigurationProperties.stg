@@ -42,7 +42,7 @@ import "queryj.stg"
 
 source(C) ::= <<
 <!
-  Defines the rules to generate DAOChooser facades.
+  Defines the rules to generate ConfigurationProperties files.
   @param C the context.
 !>
 <sourceImpl(repository=C.repository, tables=C.tables, C=C)>
@@ -50,7 +50,7 @@ source(C) ::= <<
 
 sourceImpl(repository, tables, C) ::= <<
 <!
-  Defines the rules to generate DAOChooser facades.
+  Defines the rules to generate ConfigurationProperties files.
   @param repository the repository name.
   @param tables the tables.
   @param C the context.
