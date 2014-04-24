@@ -226,7 +226,7 @@ attribute_resultset_retrieval(attr, C) ::= <<
  @param C the context.
 !>
 
-<if(!attr.clob)><if(attr.allowsNull)>resultSet.ge
+<if(!attr.clob)><if(attr.allowsNull)>resultSet.get
 {
     preparedStatement.setNull(index++, Types.<attr.constantName>);
 }
