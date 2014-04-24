@@ -151,9 +151,8 @@ public Object extractData(<notnull(C=C)>final ResultSet resultSet)
  * @throws SQLException intercepted by \<i>Spring\</i>.
  * @throws DataAccessException with information about any
  * custom exception.
- <precondition_notnull("resultSet")>
- <precondition_notnull("factory")>
  */
+<notnull(C=C)>
 protected <table.name.voName> extractData(
     final QueryResultSet resultSet,
     final <table.name.voName>ValueObjectFactory factory)
