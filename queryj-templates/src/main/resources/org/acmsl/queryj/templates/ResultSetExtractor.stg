@@ -37,13 +37,13 @@
 //              implementations.
 //
 //
-group BaseValueObject;
+group ResultSetExtractor;
 
 import "queryj.stg"
 
 source(C) ::= <<
 <!
-  Defines the rules to generate value object interfaces.
+  Defines the rules to generate ResultSetEx.
   @param C the context.
 !>
 <sourceImpl(table=C.table, C=C)>

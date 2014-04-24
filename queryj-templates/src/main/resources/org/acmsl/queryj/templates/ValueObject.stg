@@ -36,7 +36,7 @@
 // Description: Defines the rules to generate value object interfaces.
 //
 //
-group BaseValueObject;
+group ValueObject;
 
 import "queryj.stg"
 
