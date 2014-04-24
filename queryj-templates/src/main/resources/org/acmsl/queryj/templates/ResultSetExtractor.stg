@@ -135,9 +135,7 @@ public Object extractData(<notnull(C=C)>final ResultSet resultSet)
     throws  SQLException,
             DataAccessException
 {
-    return
-        extractData(
-            resultSet, <table.name.voName>ValueObjectFactory.getInstance());
+    return extractData(resultSet, <table.name.voName>ValueObjectFactory.getInstance());
 }
 
 /**
