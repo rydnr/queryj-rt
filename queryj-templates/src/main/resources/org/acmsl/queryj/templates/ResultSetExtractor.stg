@@ -111,7 +111,7 @@ public class <table.name.voName>ResultSetExtractor
 {
     /**
      * Creates a new instance.
-     * @param listener the {@link <repository.voName>
+     * @param listener the {@link <repository.voName>DAOListener} instance.
     <defaultExtractor(table=table, repository=repository, C=C)>
 
 }
