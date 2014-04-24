@@ -69,7 +69,11 @@ sourceImpl(repository, tables, C) ::= <<
 
 <if(C.repository_dao)>
 <  tables:{t | <repository_dao_factory_property(
-                  repository=repository, C=C)>}; separator="\n\n">
+                  repository=repository,
+                  subpackageName=typeInitMap.rdbSubpackageName,
+                  xmlSubpackageName=typeInitMap.xmlSubpackageName,
+  mockSubpackageName=typeInitMap.mockSubpackageName);
+                  C=C)>}; separator="\n\n">
 <else>
 <  tables:{t | <dao_factory_property(table=t, repository=repository, C=C)>}; separator="\n\n">
 <endif>
