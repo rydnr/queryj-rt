@@ -212,7 +212,7 @@ clob_preparedstatement_specification(attribute, C) ::= <<
  Deals with Clob attributes
  @param attr the attribute.
  @param C the context.
-
+ !>
 <notnull(C=C)>final Clob <attribute.name.uncapitalized>Clob = preparedStatement.getConnection().createClob();
 <notnull(C=C)>final Writer clobWriter = <attribute.name.uncapitalized>Clob.setCharacterStream(1);
 clobWriter.write(<attribute.name.uncapitalized>);
