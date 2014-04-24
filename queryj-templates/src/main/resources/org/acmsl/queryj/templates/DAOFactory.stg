@@ -59,9 +59,7 @@ sourceImpl(table, C) ::= <<
 <java_header(
   description=
   [
-    first_line_description(tableName=table.name, engine=engine),
-    second_line_description(tableName=table.name, engine=engine),
-    third_line_description(tableName=table.name, engine=engine)
+    description(tableName=table.name)
   ],
   template="org/acmsl/queryj/dao/DAO.stg",
   C=C)>*/<endif>
