@@ -99,7 +99,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
     private int m__iThreadCount = 1;
 
     /**
-     * Creates an {@link AbstractTemplateGenerator} with given settings.
+     * Creates an {@code AbstractTemplateGenerator} with given settings.
      * @param caching whether to support caching or not.
      * @param threadCount the number of threads to use.
      */
