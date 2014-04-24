@@ -56,7 +56,7 @@ sourceImpl(repository, tables, C) ::= <<
   @param C the context.
 !>
 <if(C.header)>
-<C.header.split>
+<C.header>
 <else>
 <java_header(
   description=
