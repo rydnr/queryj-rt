@@ -187,7 +187,9 @@ protected <table.name.voName> extractData(
     }
     else
     {
-        throw new RuntimeException("No more data to extract!");
+        // TODO: check it this
+        //throw new RuntimeException("No more data to extract!");
+        result = null;
     }
 
     return result;
