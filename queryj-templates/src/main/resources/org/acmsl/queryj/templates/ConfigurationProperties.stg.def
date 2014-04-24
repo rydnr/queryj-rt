@@ -8,7 +8,7 @@ name : DAOChooser.stg;
 type : per-repository;
 
 // The output flavor.
-output: pr;
+output: properties;
 
 // The filename builder.
 filename builder : <repository.capitalized>DAOChooser.java;
