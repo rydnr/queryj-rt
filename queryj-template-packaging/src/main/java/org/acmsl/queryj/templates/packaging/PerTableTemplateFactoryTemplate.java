@@ -52,6 +52,31 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2014/04/24 12:45
  */
 @ThreadSafe
-public class PerTableTemplateFactoryTemplate
+public class PerTableTemplateFactoryTemplate<C extends TemplatePackagingContext>
+    extends TemplateFactoryTemplate<C>
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = 753437683427320384L;
+
+    /**
+     * Creates a new instance.
+     * @param context the template context.
+     */
+    public PerTableTemplateFactoryTemplate(@NotNull final C context)
+    {
+        super(context);
+    }
+
+    /**
+     * Retrieves the template name.
+     * @return "PerTableTemplateFactory".
+     */
+    @NotNull
+    @Override
+    public String getTemplateName()
+    {
+        return Literals.PER_TABLE_TEMPLATE_FACTORY;
+    }
 }
