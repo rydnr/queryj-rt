@@ -74,7 +74,7 @@ sourceImpl(repository, tables, C) ::= <<
                   package=C.package,
                   daoSubpackage=typeInitMap.baseDAOSubpackageName,
                   subpackage=typeInitMap.rdbSubpackageName);
-                  C=C)>}; separator="\n\n">
+                  C=C)>
 <else>
 <  tables:{t | <repository_dao_factory_property(
                   repository=repository,
