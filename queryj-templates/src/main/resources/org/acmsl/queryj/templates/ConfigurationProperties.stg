@@ -75,5 +75,6 @@ sourceImpl(repository, tables, C) ::= <<
 >>
 
 repository_dao_factory_property(repository, C) ::= <<
-<! Generates the property for
+<! Generates the property for creating repository DAO factories !>
+
 >>
