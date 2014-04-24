@@ -192,6 +192,7 @@ attribute_preparedstatement_specification(attr, C) ::= <<
 <!
  Generates the code to specify the attribute into the PreparedStatement.
  @param attr the attribute.
+ @param C the context.
 !>
 
 <if(!attr.clob)><if(attr.allowsNull)>if  (<attr.name.uncapitalized> == null)
@@ -207,7 +208,11 @@ preparedStatement.set<attr.objectType>(index++, <attr.name.uncapitalized>);<endi
 >>
 
 clob_preparedstatement_specification(attribute, C) ::= <<
-<! Deals with Clob attributes !>
+<!
+ Deals with Clob attributes
+ @param attr the attribute.
+ @param C the context.
+
 <notnull(C=C)>final Clob <attribute.name.uncapitalized>Clob = preparedStatement.getConnection().createClob();
 <notnull(C=C)>final Writer clobWriter = <attribute.name.uncapitalized>Clob.setCharacterStream(1);
 clobWriter.write(<attribute.name.uncapitalized>);
