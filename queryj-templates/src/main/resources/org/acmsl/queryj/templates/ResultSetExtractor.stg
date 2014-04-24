@@ -107,8 +107,7 @@ class(table, repository, C) ::= <<
   template="org/acmsl/queryj/templates/ResultSetExtractor.stg", C=C)>
  */
 public class <table.name.voName>ResultSetExtractor
-    implements  ResultSetExtractor,
-                <repository.capitalized>TableRepository
+    implements  ResultSetExtractor
 {
     <defaultExtractor(table=table, repository=repository, C=C)>
 
