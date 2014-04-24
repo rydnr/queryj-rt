@@ -64,7 +64,7 @@ sourceImpl(repository, tables, C) ::= <<
   [
     description(repository=repository)
   ],
-  template="org/acmsl/queryj/templates/DAOChooser.stg",
+  template="org/acmsl/queryj/templates/ConfigurationProperties.stg",
   C=C)><endif>
 */
 >>
