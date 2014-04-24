@@ -109,6 +109,8 @@ class(table, repository, C) ::= <<
 public class <table.name.voName>ResultSetExtractor
     implements  ResultSetExtractor
 {
+    /**
+     * Creates a new instance
     <defaultExtractor(table=table, repository=repository, C=C)>
 
 }
