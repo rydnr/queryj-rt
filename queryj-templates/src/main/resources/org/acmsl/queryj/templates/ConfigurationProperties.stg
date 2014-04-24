@@ -67,5 +67,5 @@ sourceImpl(repository, tables, C) ::= <<
   prefix="#",
   C=C)><endif>
 
-<tables:dao_factory_property
+<tables:dao_factory_property(
 >>
