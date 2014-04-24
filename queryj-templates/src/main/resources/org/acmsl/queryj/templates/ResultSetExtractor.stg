@@ -153,6 +153,7 @@ protected <table.name.voName> extractData(
 /**
  * Extracts {@link <table.name.voName>} information from given result set.
  * @param resultSet the result set.
+ * @param listener the {@link <repository.voName>DAOListener} instance.
  * @param factory the {@link <table.name.voName>ValueObjectFactory}
  * instance.
  * @return the {@code <table.name.voName>} or
@@ -164,6 +165,7 @@ protected <table.name.voName> extractData(
 <notnull(C=C)>
 protected <table.name.voName> extractData(
     <notnull(C=C)>final ResultSet resultSet,
+    <nullable(C=C)>final <repository.voName>DAOListener listener,
     <notnull(C=C)>final <table.name.voName>ValueObjectFactory factory)
   throws  SQLException,
           DataAccessException
@@ -172,6 +174,10 @@ protected <table.name.voName> extractData(
 
     if  (resultSet.next())
     {
+        if (listener != null)
+        {
+
+        }
         <table.attributes:{ a| <nullable_attribute_extraction(attr=a, table=table, repository=repository, C=C)>}; separator="\n">
 
         result =
