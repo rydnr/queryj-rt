@@ -65,10 +65,6 @@ sourceImpl(table, C) ::= <<
   ],
   template="org/acmsl/queryj/dao/DAO.stg",
   C=C)>*/<endif>
-/*
-<java_header(
-  description=
-  [
     description(repository=repository)
   ],
   template="org/acmsl/queryj/templates/DAOChooser.stg",
