@@ -55,10 +55,10 @@ sourceImpl(repository, tables, C) ::= <<
   @param tables the tables.
   @param C the context.
 !>
+/*
 <if(C.header)>
 <C.header>
 <else>
-/*
 <java_header(
   description=
   [
