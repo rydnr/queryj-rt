@@ -1,3 +1,3 @@
 * 2014/04/24
-** TODO ConfigurationProperties template #481: 2 -> 1
+** DONE ConfigurationProperties template #481: 2 -> 2
 ** TODO CustomResultSetExtractor template : 6 ->
