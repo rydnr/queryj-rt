@@ -68,4 +68,6 @@ sourceImpl(repository, tables, C) ::= <<
   C=C)><endif>
 
 <tables:{t | <dao_factory_property(table=t, repository=repository, C=C)>}; separator="\n\n">
+<if(C.repository_dao)>
+
 >>
