@@ -66,7 +66,12 @@ public enum TemplateDefOutput
     /**
      * Cucumber flavour.
      */
-    CUCUMBER;
+    CUCUMBER,
+
+    /**
+     * P
+     */
+    ;
 
     /**
      * Retrieves the template def output for given value.
