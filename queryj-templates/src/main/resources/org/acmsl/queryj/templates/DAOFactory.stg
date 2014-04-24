@@ -63,10 +63,6 @@ sourceImpl(table, C) ::= <<
   ],
   template="org/acmsl/queryj/dao/DAO.stg",
   C=C)>*/<endif>
-    description(tableName=table.name)
-  ],
-  timestamp=C.timestamp)>*/<endif>
-
 <package_declaration(p=C.package)>
 
 <checkers_import(C=C)>
