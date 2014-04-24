@@ -173,7 +173,7 @@ protected <table.name.voName> extractData(
     }
     else
     {
-        throw new RuntimeException("No
+        throw new RuntimeException("No more data to extract
     }
 
     return result;
