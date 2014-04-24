@@ -57,6 +57,14 @@ sourceImpl(table, C) ::= <<
 <else>
 /*
 <java_header(
+  description=
+  [
+    description(repository=repository)
+  ],
+  template="org/acmsl/queryj/templates/DAOChooser.stg",
+  C=C)>*/<endif>
+/*
+<java_header(
   year=C.current_year,
   description=
   [
