@@ -38,15 +38,16 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
-import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing checkthread.org annotations.
+ * Importing JUnit/EasyMock classes.
  */
-import org.checkthread.annotations.ThreadSafe;
+import org.easymock.EasyMock;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 /**
  * Tests for {@link PerTableTemplateFactoryTemplate}.
@@ -54,7 +55,7 @@ import org.junit.Test;
  * @since 3.0
  * Created: 2014/04/24 12:42
  */
-@ThreadSafe
+@RunWith(JUnit4.class)
 public class PerTableTemplateFactoryTemplateTest
 {
     /**
