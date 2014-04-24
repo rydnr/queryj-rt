@@ -96,5 +96,4 @@ table_dao_factory_property(table, repository, engine, package, daoSubpackage, su
 <! Generates the property for creating repository DAO factories !>
 # <table.name> DAO implementation.
 <repository>.<table.voName.lowercased>.dao=<package>.<daoSubpackage>.<subpackage>.<engine.name.lowercased>.<engine.name.capitalized><table.name.voName>DAOFactory
-<repository.lowercased>.dao=<package>.<daoSubpackage>.<subpackage>.<engine.name.lowercased>.<engine.name.capitalized><repository.capitalized>DAOFactory
 >>
