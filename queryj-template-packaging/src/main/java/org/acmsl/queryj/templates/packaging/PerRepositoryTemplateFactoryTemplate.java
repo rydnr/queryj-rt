@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro
  *
- * Description: Represents foreign key-specific template factory templates.
+ * Description: Represents repository-specific template factory templates.
  *
  * Date: 2014/04/17
  * Time: 12:09
@@ -46,7 +46,7 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
- * Represents foreign key-specific template factory templates.
+ * Represents repository-specific template factory templates.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @param <C> the context.
  * @since 3.0
