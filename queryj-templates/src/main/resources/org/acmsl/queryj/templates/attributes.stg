@@ -214,7 +214,7 @@ clobWriter.write(<attribute.name.uncapitalized>);
 preparedStatement.setClob(index++, <attribute.name.uncapitalized>Clob);
 >>
 
-attribute_preparedstatement_specification(attr, C) ::= <<
+attribute_resultset_specification(attr, C) ::= <<
 <!
  Generates the code to specify the attribute into the PreparedStatement.
  @param attr the attribute.
