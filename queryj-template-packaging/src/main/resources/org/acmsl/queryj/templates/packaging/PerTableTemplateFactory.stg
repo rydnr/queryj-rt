@@ -147,12 +147,7 @@ public class <C.class_name>
     public <def.name.noExtension>Template createTemplate(
         @NotNull final String tableName,
         @NotNull final List<Row<String>> staticContents,
-        @NotNull final QueryJCommand command);
-        @NotNull final QueryJCommand command,
-        @NotNull final DecoratorFactory decoratorFactory,
-        @NotNull final String packageName,
-        @NotNull final String tableName,
-        @NotNull final List\<Row\<String\>> staticContents)
+        @NotNull final QueryJCommand command)
     {
         @NotNull final QueryJCommandUtils t_QueryJCommandUtils = QueryJCommandUtils.getInstance();
 
