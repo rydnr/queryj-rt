@@ -76,5 +76,5 @@ sourceImpl(repository, tables, C) ::= <<
 
 repository_dao_factory_property(repository, C) ::= <<
 <! Generates the property for creating repository DAO factories !>
-<repositoryLowercased>.dao=<basePackageName>.<baseDAOSubpackageName>.<subpackageName>.<engine.name.lowercased>.<C.engine.capitalized><repository.capitalized>DAOFactory
+<repositoryLowercased>.dao=<basePackageName>.<baseDAOSubpackageName>.<subpackageName>.<engine.name.lowercased>.<C.engine.name.capitalized><repository.capitalized>DAOFactory
 >>
