@@ -29,7 +29,7 @@
 //
 //***************************************************************************
 //
-// Filename: TemplateFactory.stg
+// Filename: PerTableTemplateFactory.stg
 //
 // Author: Jose San Leandro Armendariz
 //
@@ -41,7 +41,7 @@ import "common.stg"
 
 source(C) ::= <<
 <!
- Generates a TemplateFactory source file.
+ Generates a per-table TemplateFactory source file.
  @param C the context.
  !>
 <sourceImpl(def=C.templateDef, C=C)>
@@ -49,7 +49,7 @@ source(C) ::= <<
 
 sourceImpl(def, C) ::= <<
 <!
-  Generates a TemplateFactory source file.
+  Generates a per-table TemplateFactory source file.
   @param def the template def.
   @param C the context.
 !>
