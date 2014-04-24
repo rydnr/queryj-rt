@@ -230,7 +230,11 @@ attribute_resultset_retrieval(attr, C) ::= <<
 >>
 
 clob_resultset_retrieval(attribute, C) ::= <<
-<! Deals with Clob attributes !>
+<!
+ Deals with Clob attributes
+ @param attr the attribute.
+ @param C the context.
+ !>
 <notnull(C=C)>final Clob <attribute.name.uncapitalized>Clob = preparedStatement.getConnection().createClob();
 <notnull(C=C)>final Writer clobWriter = <attribute.name.uncapitalized>Clob.setCharacterStream(1);
 clobWriter.write(<attribute.name.uncapitalized>);
