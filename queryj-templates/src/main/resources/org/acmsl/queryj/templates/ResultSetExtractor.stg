@@ -43,7 +43,7 @@ import "queryj.stg"
 
 source(C) ::= <<
 <!
-  Defines the rules to generate ResultSetEx.
+  Defines the rules to generate ResultSetExtractor implementations.
   @param C the context.
 !>
 <sourceImpl(table=C.table, C=C)>
@@ -51,7 +51,7 @@ source(C) ::= <<
 
 sourceImpl(table, C) ::= <<
 <!
-  Defines the rules to generate value object interfaces.
+  Defines the rules to generate ResultSetExtractor implementations.
   @param table the table.
   @param C the context.
 !>
@@ -64,17 +64,12 @@ sourceImpl(table, C) ::= <<
   [
     description(table=table)
   ],
-  template="org/acmsl/queryj/templates/ValueObject.stg",
+  template="org/acmsl/queryj/templates/ResultSetExtractor.stg",
   C=C)><endif>
 */
 <package_declaration(p=C.package)>
 <checkers_import(C=C)>
 <if(C.implement_markers)>
-
-/*
- * Importing some ACM-SL Commons classes.
- */
-import org.acmsl.commons.patterns.dao.ValueObject;
 
 <endif>
 /*
