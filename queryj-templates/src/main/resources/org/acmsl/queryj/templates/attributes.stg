@@ -229,7 +229,7 @@ attribute_resultset_retrieval(attr, C) ::= <<
 <if(!attr.clob)>resultSet.get<attr.objectType>("<attr.name>")<else><clob_resultset_retrieval(attribute=attr, C=C)><endif>
 >>
 
-clob_preparedstatement_specification(attribute, C) ::= <<
+clob_resultset_retrieval(attribute, C) ::= <<
 <! Deals with Clob attributes !>
 <notnull(C=C)>final Clob <attribute.name.uncapitalized>Clob = preparedStatement.getConnection().createClob();
 <notnull(C=C)>final Writer clobWriter = <attribute.name.uncapitalized>Clob.setCharacterStream(1);
