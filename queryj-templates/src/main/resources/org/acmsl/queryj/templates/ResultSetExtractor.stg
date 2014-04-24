@@ -178,4 +178,5 @@ protected <table.name.voName> extractData(
 }
 >>
 
-nullable_attribute_extraction(
+nullable_attribute_extraction(attr, table, repository, C) ::= <<
+>>
