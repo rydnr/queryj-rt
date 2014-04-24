@@ -11,7 +11,7 @@ type : per-repository;
 output: properties;
 
 // The filename builder.
-filename builder : <repository>.properties;
+filename builder : queryj-<repository>.properties;
 
 // The package.
 package: <packageName>.dao;
