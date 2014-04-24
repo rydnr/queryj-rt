@@ -51,6 +51,7 @@ java_header_impl(year, fileName, description, template, timestamp, version, pref
   @param template the name of the template.
   @param timestamp the timestamp.
   @param version the version.
+  @param prefix the prefix.
 !>
 /*
                         QueryJ <version>
