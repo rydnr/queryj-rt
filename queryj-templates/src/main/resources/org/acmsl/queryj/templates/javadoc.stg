@@ -75,11 +75,11 @@ java_header_impl(year, fileName, description, template, timestamp, version, pref
 <prefix>    Thanks to ACM S.L. for distributing this library under the GPL license.
 <prefix>    Contact info: jose.sanleandro@acm-sl.com
 <prefix>    Postal Address: c/Playa de Lagoa, 1
-                    Urb. Valdecabanas
-                    Boadilla del monte
-                    28660 Madrid
-                    Spain
-
+<prefix>                    Urb. Valdecabanas
+<prefix>                    Boadilla del monte
+<prefix>                    28660 Madrid
+<prefix>                    Spain
+<prefix>
  ******************************************************************************
  *
  * Author: QueryJ <version>
