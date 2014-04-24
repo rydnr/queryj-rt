@@ -110,19 +110,17 @@ public class <table.name.voName>ResultSetExtractor
     implements  ResultSetExtractor,
                 <repository.capitalized>TableRepository
 {
-<if(table.lobHandling)>
-    <indirect_template(name=input.lobHandling+"Extractor", input=input)>
-<else>
-    <defaultExtractor(input=input)>
-<endif>
+    <defaultExtractor(table=table, repository=repository, C=C)>
 
 }
 >>
 
-defaultExtractor(input) ::= <<
+defaultExtractor(table, repository, C) ::= <<
 <!
  Generates the default logic for the extractor.
- @param input the input.
+ @param table the table.
+ @param repository the repository.
+ @param C the context.
 !>
 /**
  * Extracts \<i><input.vo_name>\</i> information from given result set.
