@@ -149,8 +149,6 @@ public class <C.class_name>
         @NotNull final List<Row<String>> staticContents,
         @NotNull final QueryJCommand command)
     {
-        @NotNull final QueryJCommandUtils t_QueryJCommandUtils = QueryJCommandUtils.getInstance();
-
         @NotNull final <def.type.capitalized>TemplateContext t_Context =
             new <def.type.capitalized>TemplateContext(tableName, staticContents, command);
 
