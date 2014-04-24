@@ -58,7 +58,7 @@ sourceImpl(table, C) ::= <<
 <if(C.header)>
 <C.header>
 <else>
-
+/*
 <java_header(
   description=
   [
