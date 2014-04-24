@@ -80,9 +80,9 @@ java_header_impl(year, fileName, description, template, timestamp, version, pref
 <prefix>                    28660 Madrid
 <prefix>                    Spain
 <prefix>
- ******************************************************************************
- *
- * Author: QueryJ <version>
+<prefix> ******************************************************************************
+<prefix> *
+<prefix> * Author: QueryJ <version>
  *
  * Filename: <fileName>
  *
