@@ -107,7 +107,7 @@ class(table, repository, C) ::= <<
   template="org/acmsl/queryj/templates/ResultSetExtractor.stg", C=C)>
  */
 public class <table.name.voName>ResultSetExtractor
-    extends <repository.voName>ResultSetExtractor\<table.name.voName>
+    extends <repository.voName>ResultSetExtractor\<<table.name.voName>
 {
     /**
      * Creates a new instance.
