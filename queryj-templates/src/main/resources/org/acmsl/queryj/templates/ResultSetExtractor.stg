@@ -107,7 +107,7 @@ class(table, repository, C) ::= <<
   template="org/acmsl/queryj/templates/ResultSetExtractor.stg", C=C)>
  */
 public class <table.name.voName>ResultSetExtractor
-    implements  ResultSetExtractor
+    extends <repository.voName>ResultSetExtractor
 {
     /**
      * Creates a new instance.
@@ -115,8 +115,9 @@ public class <table.name.voName>ResultSetExtractor
      */
     public <table.name.voName>ResultSetExtractor(<nullable(C=C)>final <repository.voName>DAOListener listener)
     {
-
+        super(listener);
     }
+
     <defaultExtractor(table=table, repository=repository, C=C)>
 
 }
