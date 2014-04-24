@@ -62,11 +62,11 @@ java_header_impl(year, fileName, description, template, timestamp, version, pref
 <prefix>    modify it under the terms of the GNU General Public
 <prefix>    License as published by the Free Software Foundation; either
 <prefix>    version 2 of the License, or any later version.
-
-    This library is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-    General Public License for more details.
+<prefix>
+<prefix>    This library is distributed in the hope that it will be useful,
+<prefix>    but WITHOUT ANY WARRANTY; without even the implied warranty of
+<prefix>    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+<prefix>    General Public License for more details.
 
     You should have received a copy of the GNU General Public
     License along with this library; if not, write to the Free Software
