@@ -188,7 +188,7 @@ attribute_to_primitive(attribute) ::= <<
     ><attribute.name.uncapitalized><endif><endif>
 >>
 
-attribute_preparedstatement_specification(attr) ::= <<
+attribute_preparedstatement_specification(attr, C=C) ::= <<
 <!
  Generates the code to specify the attribute into the PreparedStatement.
  @param attr the attribute.
@@ -206,7 +206,7 @@ preparedStatement.set<attr.objectType>(index++, <attr.name.uncapitalized>);<endi
 ><else><clob_preparedstatement_specification(attribute=attr)><endif>
 >>
 
-clob_preparedstatement_specification(attribute) ::= <<
+clob_preparedstatement_specification(attribute, C=C) ::= <<
 <! Deals with Clob attributes !>
 <notnull(C=C)>final Clob <attribute.name.uncapitalized>Clob = preparedStatement.getConnection().createClob();
 <notnull(C=C)>final Writer clobWriter = <attribute.name.uncapitalized>Clob.setCharacterStream(1);
