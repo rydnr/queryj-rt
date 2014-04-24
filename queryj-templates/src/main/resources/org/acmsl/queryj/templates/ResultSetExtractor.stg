@@ -92,10 +92,11 @@ description(table) ::= <<
 {@link ResultSetExtractor} implementation for <table.name>.
 >>
 
-class(table, C) ::= <<
+class(table, repository, C) ::= <<
 <!
  Generates the class body.
  @param table the table.
+ @param repository the repository.
  @param C the context.
 !>
 /**
@@ -105,10 +106,9 @@ class(table, C) ::= <<
 <class_common_javadoc(
   template="org/acmsl/queryj/templates/ResultSetExtractor.stg", C=C)>
  */
-public interface <table.name.voName>
-public class <input.vo_name>ResultSetExtractor
+public class <table.name.voName>ResultSetExtractor
     implements  ResultSetExtractor,
-                <input.tr_name_capitalized>TableRepository
+                <repository.capitalized>TableRepository
 {
 <if(input.lobHandling)>
     <indirect_template(name=input.lobHandling+"Extractor", input=input)>
