@@ -167,8 +167,7 @@ protected <table.name.voName> extractData(
 
         result =
             factory.create<table.name.voName>(
-                <table.attributes:{a | <attribute_extraction(attr=a);
-                  separator=",\n">);
+                <table.attributes:{a | <attribute_extraction(attr=a)>}; separator=",\n">);
     }
     else
     {
