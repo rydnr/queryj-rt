@@ -111,7 +111,7 @@ public class <table.name.voName>ResultSetExtractor
 {
     /**
      * Creates a new instance.
-     * @param listener the {@link <repository.capitalize
+     * @param listener the {@link <repository.voName>
     <defaultExtractor(table=table, repository=repository, C=C)>
 
 }
