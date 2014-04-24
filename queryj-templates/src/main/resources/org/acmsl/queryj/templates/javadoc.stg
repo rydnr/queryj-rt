@@ -42,7 +42,7 @@ java_header(description, template, prefix, C) ::= <<
   year=C.copyright_years, fileName=C.fileName, description=description, template=template, timestamp=C.timestamp, version=C.version, prefix=prefix)>
 >>
 
-java_header_impl(year, fileName, description, template, timestamp, version) ::= <<
+java_header_impl(year, fileName, description, template, timestamp, version, prefix) ::= <<
 <!
   Generates the copyright header.
   @param year the current year.
