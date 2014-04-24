@@ -138,8 +138,7 @@ public Object extractData(<notnull(C=C)>final ResultSet resultSet)
 {
     return
         extractData(
-            (QueryResultSet) resultSet,
-            <input.vo_name>ValueObjectFactory.getInstance());
+            resultSet, <input.vo_name>ValueObjectFactory.getInstance());
 }
 
 /**
