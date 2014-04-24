@@ -69,8 +69,9 @@ public enum TemplateDefOutput
     CUCUMBER,
 
     /**
-     * P
+     * Properties files.
      */
+    PROPERTIES
     ;
 
     /**
