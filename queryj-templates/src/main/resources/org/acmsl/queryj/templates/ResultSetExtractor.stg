@@ -176,8 +176,9 @@ protected <table.name.voName> extractData(
     {
         if (listener != null)
         {
-
+            daoListener.resultSetMovedForward(this);
         }
+
         <table.attributes:{ a| <nullable_attribute_extraction(attr=a, table=table, repository=repository, C=C)>}; separator="\n">
 
         result =
