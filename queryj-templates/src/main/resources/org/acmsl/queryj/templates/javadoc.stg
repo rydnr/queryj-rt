@@ -53,7 +53,7 @@ java_header_impl(year, fileName, description, template, timestamp, version, pref
   @param version the version.
   @param prefix the prefix.
 !>
-                        QueryJ <version>
+<prefix>                        QueryJ <version>
 
     Copyright (C) <year>-today Jose San Leandro Armendariz
                               queryj@acm-sl.org
