@@ -140,7 +140,7 @@ defaultExtractor(table, repository, C) ::= <<
  * custom exception.
  */
 <notnull(C=C)>
-public Object extractData(<notnull(C=C)>final ResultSet resultSet)
+public \<<table.name.voName>\> extractData(<notnull(C=C)>final ResultSet resultSet)
     throws  SQLException,
             DataAccessException
 {
