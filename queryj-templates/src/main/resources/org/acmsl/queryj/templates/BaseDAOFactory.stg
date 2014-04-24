@@ -58,6 +58,14 @@ sourceImpl(table, C) ::= <<
 <else>
 /*
 <java_header(
+  description=
+  [
+    description(tableName=table.name)
+  ],
+  template="org/acmsl/queryj/templates/BaseDAO.stg",
+  C=C)>*/<endif>
+/*
+<java_header(
   year=C.current_year,
   description=
   [
