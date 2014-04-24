@@ -192,6 +192,11 @@ protected <table.name.voName> extractData(
         result = null;
     }
 
+    if  (daoListener != null)
+    {
+        daoListener.resultSetClosed(this);
+    }
+
     return result;
 }
 >>
