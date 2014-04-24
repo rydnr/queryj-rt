@@ -184,17 +184,17 @@ protected <table.name.voName> extractData(
         result =
             factory.create<table.name.voName>(
                 <table.attributes:{a | <attribute_extraction(attr=a, table=table, repository=repository, C=C)>}; separator=",\n">);
+
+        if  (daoListener != null)
+        {
+            daoListener.resultSetClosed(this);
+        }
     }
     else
     {
         // TODO: check it this is exceptional or not.
         //throw new RuntimeException("No more data to extract!");
         result = null;
-    }
-
-    if  (daoListener != null)
-    {
-        daoListener.resultSetClosed(this);
     }
 
     return result;
