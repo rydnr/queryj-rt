@@ -130,8 +130,6 @@ defaultExtractor(table, repository, C) ::= <<
  * @throws SQLException intercepted by \<i>Spring\</i\>.
  * @throws DataAccessException with information about any
  * custom exception.
- <precondition_notnull("resultSet")>
- <precondition_instanceof(name="resultSet", className="QueryResultSet")>
  */
 public Object extractData(final ResultSet resultSet)
     throws  SQLException,
