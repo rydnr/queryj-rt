@@ -159,7 +159,7 @@ protected <table.name.voName> extractData(
   throws  SQLException,
           DataAccessException
 {
-    <table.name.voName> result = null;
+    <nullable(C=C)>final <table.name.voName> result;
 
     if  (resultSet.next())
     {
@@ -170,6 +170,10 @@ protected <table.name.voName> extractData(
             factory.create<table.name.voName>ValueObject(
                 <input.attributes:attribute_extraction(attr=it);
                   separator=",\n">);
+    }
+    else
+    {
+        throw new RuntimeException("No
     }
 
     return result;
