@@ -77,6 +77,7 @@ sourceImpl(repository, tables, C) ::= <<
                   C=C)>
 <else>
 <  tables:{t | <repository_dao_factory_property(
+                  table=t,
                   repository=repository,
                   engine=C.engine,
                   package=C.package,
