@@ -33,7 +33,7 @@
 //
 // Author: Jose San Leandro Armendariz
 //
-// Description: Defines the rules to generate ConfigurationProperties facades.
+// Description: Defines the rules to generate ConfigurationProperties files.
 //
 //
 group DAOChooser;
