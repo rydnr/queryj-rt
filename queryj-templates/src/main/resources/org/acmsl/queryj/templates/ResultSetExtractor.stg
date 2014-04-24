@@ -154,8 +154,8 @@ public Object extractData(<notnull(C=C)>final ResultSet resultSet)
  */
 <notnull(C=C)>
 protected <table.name.voName> extractData(
-    final QueryResultSet resultSet,
-    final <table.name.voName>ValueObjectFactory factory)
+    <notnull(C=C)>final ResultSet resultSet,
+    <notnull(C=C)>final <table.name.voName>ValueObjectFactory factory)
   throws  SQLException,
           DataAccessException
 {
