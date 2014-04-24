@@ -123,7 +123,7 @@ defaultExtractor(table, repository, C) ::= <<
  @param C the context.
 !>
 /**
- * Extracts \<i><table.name.voName>\</i> information from given result set.
+ * Extracts {@link <table.name.voName>\</i> information from given result set.
  * @param resultSet the result set.
  * @return the \<code><input.vo_name>\</code> or
  * \<code>null\</code> if the operation returned no data.
