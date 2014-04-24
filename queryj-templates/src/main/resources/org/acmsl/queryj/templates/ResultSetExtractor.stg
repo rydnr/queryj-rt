@@ -131,7 +131,7 @@ defaultExtractor(table, repository, C) ::= <<
  * @throws DataAccessException with information about any
  * custom exception.
  */
-public Object extractData(final ResultSet resultSet)
+public Object extractData(<notnull(C=C)>final ResultSet resultSet)
     throws  SQLException,
             DataAccessException
 {
