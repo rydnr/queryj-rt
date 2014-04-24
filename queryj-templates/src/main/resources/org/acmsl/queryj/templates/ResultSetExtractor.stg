@@ -163,8 +163,7 @@ protected <table.name.voName> extractData(
 
     if  (resultSet.next())
     {
-        <table.attributes:nullable_attribute_extraction(
-          attr=a, table=table, repository=repository, C=C)>
+        <table.attributes:{ a| <nullable_attribute_extraction(attr=a, table=table, repository=repository, C=C)>
 
         result =
             factory.create<table.name.voName>ValueObject(
