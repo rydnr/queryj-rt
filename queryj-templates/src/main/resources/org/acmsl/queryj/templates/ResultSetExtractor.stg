@@ -193,8 +193,8 @@ protected <table.name.voName> extractData(
     else
     {
         // TODO: check it this is exceptional or not.
-        //throw new RuntimeException("No more data to extract!");
-        result = null;
+        throw new RuntimeException("No more data to extract!");
+        //result = null;
     }
 
     return result;
