@@ -226,7 +226,7 @@ attribute_resultset_retrieval(attr, C) ::= <<
  @param C the context.
 !>
 
-<if(!attr.clob)><if(attr.allowsNull)>resultSet.get<attr.objectType>(<attr.);
+<if(!attr.clob)><if(attr.allowsNull)>resultSet.get<attr.objectType>("<attr.name>");
 }<else>
 preparedStatement.set<attr.objectType>(index++, <attr.name.uncapitalized>);<endif
 ><else><clob_preparedstatement_specification(attribute=attr, C=C)><endif>
