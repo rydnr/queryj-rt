@@ -166,7 +166,7 @@ protected <table.name.voName> extractData(
         <table.attributes:{ a| <nullable_attribute_extraction(attr=a, table=table, repository=repository, C=C)>}; separator="\n">
 
         result =
-            factory.create<table.name.voName>ValueObject(
+            factory.create<table.name.voName>(
                 <input.attributes:attribute_extraction(attr=it);
                   separator=",\n">);
     }
