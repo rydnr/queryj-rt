@@ -66,4 +66,5 @@ sourceImpl(repository, tables, C) ::= <<
   template="org/acmsl/queryj/templates/ConfigurationProperties.stg",
   prefix="#",
   C=C)><endif>
+
 >>
