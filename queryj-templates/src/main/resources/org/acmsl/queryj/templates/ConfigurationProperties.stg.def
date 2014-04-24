@@ -1,5 +1,5 @@
 /*
- * DAOChooser template metadata.
+ * ConfigurationProperties template metadata.
  */
 // The template name (the filename).
 name : ConfigurationProperties.stg;
