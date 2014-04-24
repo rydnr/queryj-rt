@@ -50,7 +50,7 @@ source(C) ::= <<
 
 sourceImpl(repository, tables, C) ::= <<
 <!
-  Defines the rules to generate DAOChooser facades.
+  Defines the rules to generate ConfigurationProperties files.
   @param repository the repository name.
   @param tables the tables.
   @param C the context.
