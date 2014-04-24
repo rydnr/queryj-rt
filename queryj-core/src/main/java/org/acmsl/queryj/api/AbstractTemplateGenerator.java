@@ -194,7 +194,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
                 FileUtils.getInstance());
     }
 
-    /**
+    /**                                               N
      * Writes a table template to disk.
      * @param caching whether to use caching or not.
      * @param template the table template to write.
