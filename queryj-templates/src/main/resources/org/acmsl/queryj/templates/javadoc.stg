@@ -54,8 +54,8 @@ java_header_impl(year, fileName, description, template, timestamp, version, pref
   @param prefix the prefix.
 !>
 <prefix>                        QueryJ <version>
-
-    Copyright (C) <year>-today Jose San Leandro Armendariz
+<prefix>
+    <prefix>Copyright (C) <year>-today Jose San Leandro Armendariz
                               queryj@acm-sl.org
 
     This library is free software; you can redistribute it and/or
