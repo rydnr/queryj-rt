@@ -181,7 +181,7 @@ protected <table.name.voName> extractData(
 
         result =
             factory.create<table.name.voName>(
-                <table.attributes:{a | <attribute_resultset_retrieval(attr=a, table=table, repository=repository, C=C)>}; separator=",\n">);
+                <table.attributes:{a | <attribute_resultset_retrieval(attr=a, C=C)>}; separator=",\n">);
 
         if  (daoListener != null)
         {
