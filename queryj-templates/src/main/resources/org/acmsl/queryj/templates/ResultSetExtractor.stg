@@ -106,26 +106,310 @@ class(table, C) ::= <<
   template="org/acmsl/queryj/templates/ResultSetExtractor.stg", C=C)>
  */
 public interface <table.name.voName>
-<if(C.implement_markers)>
-    extends  ValueObject,
-             Serializable
-<else>
-    extends Serializable
-<endif>
+public class <input.vo_name>ResultSetExtractor
+    implements  ResultSetExtractor,
+                <input.tr_name_capitalized>TableRepository
 {
-    <table.attributes:getter(); separator="\n\n">
+<if(input.lobHandling)>
+    <indirect_template(name=input.lobHandling+"Extractor", input=input)>
+<else>
+    <defaultExtractor(input=input)>
+<endif>
+
 }
 >>
 
-getter(attribute) ::= <<
+defaultExtractor(input) ::= <<
 <!
- Writes the getter for given attribute.
- @param attribute the attribute.
+ Generates the default logic for the extractor.
+ @param input the input.
 !>
 /**
- * <if(attribute.comment)><attribute.comment><else>Retrieves the \<i\><attribute.name>\</i\> value<endif>.
- * @return such information.
+ * Extracts \<i><input.vo_name>\</i> information from given result set.
+ * @param resultSet the result set.
+ * @return the \<code><input.vo_name>\</code> or
+ * \<code>null\</code> if the operation returned no data.
+ * @throws SQLException intercepted by \<i>Spring\</i\>.
+ * @throws DataAccessException with information about any
+ * custom exception.
+ <precondition_notnull("resultSet")>
+ <precondition_instanceof(name="resultSet", className="QueryResultSet")>
  */
-<if(!attribute.strictlyPrimitive)><if(attribute.nullable)><nullable(C=C)><else><notnull(C=C)><endif><endif>
-<attribute.javaType> get<attribute.name.capitalized>();
+public Object extractData(final ResultSet resultSet)
+    throws  SQLException,
+            DataAccessException
+{
+    return
+        extractData(
+            (QueryResultSet) resultSet,
+            <input.vo_name>ValueObjectFactory.getInstance());
+}
+
+/**
+ * Extracts \<i><input.vo_name>\</i> information from given result set.
+ * @param resultSet the result set.
+ * @param factory the \<code><input.vo_name>ValueObjectFactory\</code>
+ * instance.
+ * @return the \<code><input.vo_name>\</code> or
+ * \<code>null\</code> if the operation returned no data.
+ * @throws SQLException intercepted by \<i>Spring\</i>.
+ * @throws DataAccessException with information about any
+ * custom exception.
+ <precondition_notnull("resultSet")>
+ <precondition_notnull("factory")>
+ */
+protected <input.vo_name> extractData(
+    final QueryResultSet resultSet,
+    final <input.vo_name>ValueObjectFactory factory)
+  throws  SQLException,
+          DataAccessException
+{
+    <input.vo_name> result = null;
+
+    if  (resultSet.next())
+    {
+        <input.attributes:nullable_attribute_extraction(
+          attr=it, input=input)>
+
+        result =
+            factory.create<input.vo_name>ValueObject(
+                <input.attributes:attribute_extraction(attr=it);
+                  separator=",\n">);
+    }
+
+    return result;
+}
+>>
+
+oracleExtractor(input) ::= <<
+<!
+ Generates the constructor needed by Oracle LOB management.
+ @param input the input.
+!>
+<oracle8Extractor(input=input)>
+>>
+
+oracle8Extractor(input) ::= <<
+<!
+ Generates the constructor needed by Oracle8 LOB management.
+ @param input the input.
+!>
+<input.lob_attributes:attribute_class_declaration(attr=it);
+  separator="\n\n">
+
+/**
+ * The \<i>select for update\</i> mode.
+ */
+private boolean m__bSelectForUpdateMode;
+
+/**
+ * Creates a Oracle-based \<code>ResultSetExtractor\</code>
+ * to extract <input.vo_name> information, managing LOB stuff.
+ * @param selectForUpdateMode whether the result set is the result of
+ * the \<i>select for update\</code> (required to perform some operations
+ * such as \<b>insert\</b>s), or not.
+ */
+protected <input.vo_name>ResultSetExtractor(
+    final boolean selectForUpdateMode)
+{
+    immutableSetSelectForUpdateMode(selectForUpdateMode);
+}
+
+/**
+ * Creates a Oracle-based \<code>ResultSetExtractor\</code>
+ * to extract <input.vo_name> information, managing LOB stuff.
+ <input.lob_attributes:attribute_javadoc_method_declaration(attr=it);
+   separator=",\n">
+ * @param selectForUpdateMode whether the result set is the result of
+ * the \<i>select for update\</code> (required to perform some operations
+ * such as \<b>insert\</b>s), or not.
+ */
+public <input.vo_name>ResultSetExtractor(
+    <input.lob_attributes:attribute_method_declaration(attr=it);
+      separator=",\n">,
+    final boolean selectForUpdateMode)
+{
+    this(selectForUpdateMode);
+    <input.lob_attributes:attribute_setter_call(attr=it); separator="\n">
+}
+
+/**
+ * Creates a Oracle-based \<code>ResultSetExtractor\</code>
+ * to extract <input.vo_name> information, managing LOB stuff.
+ */
+public <input.vo_name>ResultSetExtractor()
+{
+    this(false);
+}
+
+<input.lob_attributes:attribute_accessors(attr=it); separator="\n\n">
+
+/**
+ * Specifies whether the extractor is retrieving results of a
+ * \<i>select for update\</i> or not.
+ * @param selectForUpdate such behaviour.
+ */
+protected final void immutableSetSelectForUpdateMode(
+    final boolean selectForUpdateMode)
+{
+    m__bSelectForUpdateMode = selectForUpdateMode;
+}
+
+/**
+ * Specifies whether the extractor is retrieving results of a
+ * \<i>select for update\</i> or not.
+ * @param selectForUpdate such behaviour.
+ */
+protected void setSelectForUpdateMode(final boolean selectForUpdateMode)
+{
+    immutableSetSelectForUpdateMode(selectForUpdateMode);
+}
+
+/**
+ * Retrieves whether the extractor is retrieving results of a
+ * \<i>select for update\</i> or not.
+ * @return such behaviour.
+ */
+public boolean getSelectForUpdateMode()
+{
+    return m__bSelectForUpdateMode;
+}
+
+/**
+ * Extracts \<i><input.vo_name>\</i> information from given result set.
+ * @param resultSet the result set.
+ * @return the \<code><input.vo_name>\</code> or
+ * \<code>null\</code> if the operation returned no data.
+ * @throws SQLException intercepted by \<i>Spring\</i\>.
+ * @throws DataAccessException with information about any
+ * custom exception.
+ <precondition_instanceof(name="resultSet", className="QueryResultSet")>
+ */
+public Object extractData(final ResultSet resultSet)
+    throws  SQLException,
+            DataAccessException
+{
+    return
+        extractData(
+            resultSet,
+            <input.lob_attributes:{get<it.nameCapitalized>()};
+              separator=",\n">,
+            getSelectForUpdateMode(),
+            <input.vo_name>ValueObjectFactory.getInstance());
+}
+
+/**
+ * Extracts \<i><input.vo_name>\</i> information from given result set.
+ * @param resultSet the result set.
+ <input.lob_attributes:attribute_javadoc_method_declaration(attr=it);
+   separator="\n">
+ * @param selectForUpdate whether the operation is a
+ * \<i>select for update\</i>.
+ * @param factory the \<code><input.vo_name>ValueObjectFactory\</code>
+ * instance.
+ * @return the \<code><input.vo_name>\</code> or
+ * \<code>null\</code> if the operation returned no data.
+ * @throws SQLException intercepted by \<i>Spring\</i\>.
+ * @throws DataAccessException with information about any
+ * custom exception.
+ <precondition_notnull("resultSet")>
+ <precondition_notnull("factory")>
+ */
+protected Object extractData(
+    final ResultSet resultSet,
+    <input.lob_attributes:attribute_method_declaration(attr=it);
+      separator=",\n">,
+    final boolean selectForUpdateMode,
+    final <input.vo_name>ValueObjectFactory factory)
+  throws  SQLException,
+          DataAccessException
+{
+    <input.vo_name> result = null;
+
+    if  (resultSet.next())
+    {
+        <input.attributes:nullable_attribute_extraction(
+          attr=it, input=input)>
+        <input.lob_attributes:special_attribute_extraction(
+          attr=it, input=input)>
+
+        result =
+            factory.create<input.vo_name>ValueObject(
+                <input.attributes:attribute_extraction(
+                  attr=it, input=input); separator=",\n">);
+    }
+
+    return result;
+}
+
+>>
+
+attribute_class_declaration(attr) ::= <<
+<!
+ Generates the attribute class declaration.
+ @param attr the attribute.
+!>
+/**
+ * The <attr.name> attribute.
+ */
+private <attr.objectType> m__<attr.nameCapitalized>;
+>>
+
+attribute_javadoc_method_declaration(attr) ::= <<
+<!
+ Generates the attribute Javadoc method declaration.
+ @param attr the attribute.
+!>
+* @param <attr.nameLowercased> the \<i><attr.name>\</i> information.
+>>
+
+attribute_method_declaration(attr) ::= <<
+<!
+ Generates the attribute method declaration.
+ @param attr the attribute.
+!>
+final <attr.objectType> <attr.nameLowercased>
+>>
+
+attribute_setter_call(attr) ::= <<
+<!
+ Generates the attribute setter call.
+ @param attr the attribute.
+!>
+immutableSet<attr.nameCapitalized>(<attr.nameLowercased>);
+>>
+
+attribute_accessors(attr) ::= <<
+<!
+ Generates the attribute accessors.
+ @param attr the attribute.
+!>
+/**
+ * Specifies the \<i><attr.name>\</i> information.
+ * @param <attr.nameLowercased> such value.
+ */
+protected final void immutableSet<attr.nameCapitalized>(
+    final <attr.objectType> <attr.nameLowercased>)
+{
+    m__<attr.nameCapitalized> = <attr.nameLowercased>;
+}
+
+/**
+ * Specifies the \<i><attr.name>\</i> information.
+ * @param <attr.nameLowercased> such value.
+ */
+protected void set<attr.nameCapitalized>(
+    final <attr.objectType> <attr.nameLowercased>)
+{
+    immutableSet<attr.nameCapitalized>(<attr.nameLowercased>);
+}
+
+/**
+ * Specifies the \<i><attr.name>\</i> information.
+ * @param <attr.nameLowercased> such value.
+ */
+public <attr.objectType> get<attr.nameCapitalized>()
+{
+    return m__<attr.nameCapitalized>;
+}
 >>
