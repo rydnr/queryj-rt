@@ -179,7 +179,7 @@ protected <table.name.voName> extractData(
             daoListener.resultSetMovedForward(this);
         }
 
-        <table.attributes:{ a| <nullable_attribute_extraction(attr=a, table=table, repository=repository, C=C)>}; separator="\n">
+        <table.attributes:{ a| <attribute_resultset_retrieval(attr=a, C=C)>}; separator="\n">
 
         result =
             factory.create<table.name.voName>(
