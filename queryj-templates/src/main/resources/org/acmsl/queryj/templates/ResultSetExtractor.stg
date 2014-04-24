@@ -89,7 +89,7 @@ description(table) ::= <<
   Generates the first line of the generated file description.
   @param result the custom result.
 !>
-<if(table.comment.empty)>ValueObject for <table.name>.<else><table.comment><endif>
+{@link ResultSetExtractor} implementation for <table.name>.
 >>
 
 class(table, C) ::= <<
@@ -103,7 +103,7 @@ class(table, C) ::= <<
       description(table=table)
     ]:{line |<line>}; separator="\n * ">
 <class_common_javadoc(
-  template="org/acmsl/queryj/templates/BaseValueObject.stg", C=C)>
+  template="org/acmsl/queryj/templates/ResultSetExtractor.stg", C=C)>
  */
 public interface <table.name.voName>
 <if(C.implement_markers)>
