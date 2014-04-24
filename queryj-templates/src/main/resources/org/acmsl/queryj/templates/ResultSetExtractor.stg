@@ -81,7 +81,7 @@ import java.io.Serializable;
 <endif>
 
 
-<class(table=table, C=C)>
+<class(table=table, repository=C.repository, C=C)>
 >>
 
 description(table) ::= <<
