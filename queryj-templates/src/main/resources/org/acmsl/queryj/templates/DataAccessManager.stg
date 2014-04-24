@@ -58,6 +58,7 @@ sourceImpl(repository, tables, C) ::= <<
 <if(C.header)>
 <C.header>
 <else>
+/*
 <java_header(
   description=
   [
