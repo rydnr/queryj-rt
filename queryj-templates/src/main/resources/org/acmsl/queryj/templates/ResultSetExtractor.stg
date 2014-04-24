@@ -133,6 +133,7 @@ defaultExtractor(table, repository, C) ::= <<
 /**
  * Extracts {@link <table.name.voName>} information from given result set.
  * @param resultSet the result set.
+ * @param listener the {@link <repository.voName>DAOListener} instance.
  * @return the {@code <table.name.voName>} or
  * {@code null} if the operation returned no data.
  * @throws SQLException intercepted by \<i>Spring\</i\>.
@@ -140,11 +141,13 @@ defaultExtractor(table, repository, C) ::= <<
  * custom exception.
  */
 <notnull(C=C)>
-protected <table.name.voName> extractData(<notnull(C=C)>final ResultSet resultSet)
+protected <table.name.voName> extractData(
+    <notnull(C=C)>final ResultSet resultSet,
+    <nullable(C=C)>final <repository.voName>DAOListener listener)
     throws  SQLException,
             DataAccessException
 {
-    return extractData(resultSet, <table.name.voName>ValueObjectFactory.getInstance());
+    return extractData(resultSet, listener, <table.name.voName>ValueObjectFactory.getInstance());
 }
 
 /**
