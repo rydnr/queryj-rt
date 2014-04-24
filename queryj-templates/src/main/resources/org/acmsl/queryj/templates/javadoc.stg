@@ -58,10 +58,10 @@ java_header_impl(year, fileName, description, template, timestamp, version, pref
 <prefix>    Copyright (C) <year>-today Jose San Leandro Armendariz
 <prefix>                              queryj@acm-sl.org
 <prefix>
-    <prefix>This library is free software; you can redistribute it and/or
-    modify it under the terms of the GNU General Public
-    License as published by the Free Software Foundation; either
-    version 2 of the License, or any later version.
+<prefix>    This library is free software; you can redistribute it and/or
+<prefix>    modify it under the terms of the GNU General Public
+<prefix>    License as published by the Free Software Foundation; either
+<prefix>    version 2 of the License, or any later version.
 
     This library is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
