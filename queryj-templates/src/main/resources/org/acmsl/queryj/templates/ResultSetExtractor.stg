@@ -123,9 +123,9 @@ defaultExtractor(table, repository, C) ::= <<
  @param C the context.
 !>
 /**
- * Extracts {@link <table.name.voName>\</i> information from given result set.
+ * Extracts {@link <table.name.voName>} information from given result set.
  * @param resultSet the result set.
- * @return the \<code><input.vo_name>\</code> or
+ * @return the {@code <table.name.voName>} or
  * \<code>null\</code> if the operation returned no data.
  * @throws SQLException intercepted by \<i>Spring\</i\>.
  * @throws DataAccessException with information about any
