@@ -213,6 +213,7 @@ public abstract class AbstractQueryJCommandHandler
 
         return result;
     }
+
     /**
      * Retrieves whether to use sub folders or not.
      * @param command the command.
@@ -247,7 +248,7 @@ public abstract class AbstractQueryJCommandHandler
     }
 
     /**
-     * Retrieves the custom-sql provider from the attribute map.
+     * Retrievesthe custom-sql provider from the attribute map.
      * @param parameters the parameter map.
      * @return the provider.
      */
