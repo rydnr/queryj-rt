@@ -317,7 +317,7 @@ public class PerCustomResultTemplatesTest
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
                 QueryJSettings.PACKAGE, BASE_PACKAGE_NAME);
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
-                QueryJSettings.PACKAGE, "<def.template>");
+                QueryJSettings.PACKAGE_NAME, "<def.template>");
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
                 QueryJSettings.REPOSITORY, "acme");
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
