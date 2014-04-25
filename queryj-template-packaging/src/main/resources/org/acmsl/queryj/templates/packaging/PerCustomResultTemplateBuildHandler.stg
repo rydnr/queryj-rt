@@ -165,7 +165,6 @@ public class <C.class_name>
     }
 
     /**
-    /**
      * Retrieves the package name from the attribute map.
      * @param customResult the custom RESULT.
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
