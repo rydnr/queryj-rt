@@ -42,7 +42,7 @@ import "common.stg"
 
 source(C) ::= <<
 <!
- Generates a per-table TemplateFactory source file.
+ Generates a per-custom result TemplateFactory source file.
  @param C the context.
  !>
 <sourceImpl(def=C.templateDef, C=C)>
