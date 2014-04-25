@@ -33,7 +33,7 @@
 //
 // Author: Jose San Leandro Armendariz
 //
-// Description: Defines the rules to generate ResultSetExtractor
+// Description: Defines the rules to generate CustomResultSetExtractor
 //              implementations.
 //
 //
