@@ -144,6 +144,5 @@ public abstract class BasePerCustomResultTemplateWritingHandler
         @NotNull final MetadataManager metadataManager,
         @NotNull final File projectFolder,
         @NotNull final Engine<String> engine,
-        @NotNull final QueryJCommand parameters)
-      throws  QueryJBuildException;
+        @NotNull final QueryJCommand parameters);
 }
