@@ -278,6 +278,8 @@ public class PerRepositoryTemplatesTest
             (PerRepositoryTemplateGenerator\<PerRepositoryTemplate\<PerRepositoryTemplateContext>, PerRepositoryTemplateContext>) retrieveTemplateGenerator(
                 templateName);
 
+            new QueryJCommandWrapper\<DecoratorFactory>(t_Command).setSetting(
+                DecoratorFactory.class.getName(), decoratorFactory);
         Assert.assertNotNull("No template generator found for " + templateName, generator);
 
         @NotNull final DecoratorFactory decoratorFactory = retrieveDecoratorFactory(generator);
