@@ -155,7 +155,15 @@ public class <C.class_name>
         @NotNull final Engine\<String> engine,
         @NotNull final QueryJCommand parameters)
     {
+        return
+            retrievePackage(
+                customResult,
+                customSqlProvider,
+                metadataManager,
+                engine,
+                parameters);
     }
+
     /**
      * {@inheritDoc}
      */
