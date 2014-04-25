@@ -84,7 +84,7 @@ import java.io.Serializable;
 <class(result=result, repository=C.repository, C=C)>
 >>
 
-description(table) ::= <<
+description(result) ::= <<
 <!
   Generates the first line of the generated file description.
   @param result the custom result.
