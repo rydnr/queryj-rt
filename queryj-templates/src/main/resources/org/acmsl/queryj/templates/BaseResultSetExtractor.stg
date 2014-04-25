@@ -101,6 +101,7 @@ class(repository, tables, C) ::= <<
  * <[
       description(repository=repository)
     ]:{line |<line>}; separator="\n * ">
+ * @param \<
 <class_common_javadoc(
   template="org/acmsl/queryj/templates/BaseResultSetExtractor.stg", C=C)>
  */
