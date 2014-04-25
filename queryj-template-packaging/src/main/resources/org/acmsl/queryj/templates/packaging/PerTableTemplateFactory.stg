@@ -36,7 +36,7 @@
 // Description: Defines the rules to generate QueryJ's per-table template
 //              factories.
 //
-group TemplateFactory;
+group PerTableTemplateFactory;
 
 import "common.stg"
 
