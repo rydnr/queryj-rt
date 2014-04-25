@@ -146,8 +146,6 @@ public abstract class BasePerCustomResultTemplateWritingHandler
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
         @NotNull final File projectFolder,
-        @NotNull final String projectPackage,
-        final boolean useSubFolders,
         @NotNull final String engineName,
         @NotNull final QueryJCommand parameters)
       throws  QueryJBuildException;
