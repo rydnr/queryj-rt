@@ -181,7 +181,7 @@ public class <C.class_name>
         template.add(
             Literals.RESULT,
             new CachingResultDecorator(
-                result,
+                customResult,
                 customSqlProvider,
                 metadataManager,
                 decoratorFactory);
