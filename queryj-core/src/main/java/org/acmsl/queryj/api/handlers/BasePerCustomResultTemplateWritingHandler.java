@@ -124,7 +124,7 @@ public abstract class BasePerCustomResultTemplateWritingHandler
                 retrieveProjectOutputDir(parameters),
                 retrieveProjectPackage(parameters),
                 retrieveUseSubfoldersFlag(parameters),
-                retrieveProductName(parameters),
+                retrieveEngine(parameters),
                 parameters);
     }
 
