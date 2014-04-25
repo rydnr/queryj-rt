@@ -165,7 +165,7 @@ public class <C.class_name>
 
     /**
      * Retrieves the file name of the template.
-     * @param customthe table name.
+     * @param customResult the custom result.
      * @param metadataManager the {@link MetadataManager} instance.
      * @return the file name.
      */
