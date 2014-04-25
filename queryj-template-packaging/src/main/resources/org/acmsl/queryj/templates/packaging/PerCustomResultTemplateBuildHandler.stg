@@ -163,6 +163,7 @@ public class <C.class_name>
                 metadataManager,
                 engine,
                 retrieveDecoratorFactory(parameters),
+                retrieveProjectPackage(parameters),
                 parameters);
     }
 
