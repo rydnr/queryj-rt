@@ -181,6 +181,7 @@ public class <C.class_name>
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
         @NotNull final Engine\<String> engine,
+        @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final QueryJCommand parameters)
     {
         @NotNull final String result;
