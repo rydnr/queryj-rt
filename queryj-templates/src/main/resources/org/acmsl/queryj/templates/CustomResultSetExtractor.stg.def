@@ -15,5 +15,3 @@ filename builder : <result.name.camelCase>ResultSetExtractor.java;
 
 // The package.
 package: <packageName>.dao;
-
-disabled;
