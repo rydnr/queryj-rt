@@ -5,7 +5,7 @@
 name : CustomResultSetExtractor.stg;
 
 // The type of template: per-table, per-repository, per-foreign-key, per-custom-result, per-custom-sql.
-type : per-table;
+type : per-custom-result;
 
 // The output flavor.
 output: Cucumber;
