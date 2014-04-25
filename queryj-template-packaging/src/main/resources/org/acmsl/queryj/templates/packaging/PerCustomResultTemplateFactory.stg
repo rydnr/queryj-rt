@@ -178,7 +178,9 @@ public class <C.class_name>
         @NotNull final ST template =
             new ST("<def.filenameBuilder>");
 
-        template.add(Literals.RESULT, new CachingResultDecorator(result, customSqlProvider, metadataManager, decoratorFactory);
+        template.add(
+            Literals.RESULT,
+            new CachingResultDecorator(result, customSqlProvider, metadataManager, decoratorFactory);
         template.add(Literals.ENGINE, new EngineDecorator(metadataManager.getEngine()));
 
         result = template.render();
