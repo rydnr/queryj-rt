@@ -184,6 +184,7 @@ public class <C.class_name>
                 customSqlProvider,
                 metadataManager,
                 engine,
+                retrieveDecoratorFactory(parameters),
                 parameters);
 
         @NotNull final String[] pieces = packageName.split("\\\.");
