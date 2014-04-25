@@ -295,7 +295,8 @@ public class PerCustomResultTemplatesTest
                 templateName);
 
         Assert.assertNotNull(
-        "No template generator found for " + templateName + ". Does " + templateName + ".stg exist?", generator);
+            "No template generator found for " + templateName + ". Does " + templateName + ".stg exist?",
+            generator);
 
         @NotNull final DecoratorFactory decoratorFactory = retrieveDecoratorFactory(generator);
 
