@@ -120,8 +120,7 @@ public abstract class <repository.capitalized>BaseResultSetExtractor\<V>
      */
     <notnull(C=C)>
     public Object extractData(
-        <notnull(C=C)>final ResultSet resultSet,
-        <nullable(C=C)>final <repository.voName>DAOListener listener)
+        <notnull(C=C)>final ResultSet resultSet)
         throws  SQLException,
                 DataAccessException
     {
