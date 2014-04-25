@@ -171,7 +171,9 @@ public class <C.class_name>
      */
     @NotNull
     public String retrieveTemplateFileName(
-        @NotNull final Result\<String> customResult, @NotNull final MetadataManager metadataManager)
+        @NotNull final Result\<String> customResult,
+        @NotNull final
+        @NotNull final MetadataManager metadataManager)
     {
         @NotNull final String result;
 
