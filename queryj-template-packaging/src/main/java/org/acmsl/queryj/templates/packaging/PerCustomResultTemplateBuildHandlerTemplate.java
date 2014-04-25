@@ -58,7 +58,6 @@ public class PerCustomResultTemplateBuildHandlerTemplate<C extends TemplatePacka
     /**
      * The serial version id.
      */
-    private static final long serialVersionUID = -3593908234655501807L;
 
     /**
      * Creates a new instance using given context.
