@@ -138,7 +138,7 @@ public abstract class <repository.capitalized>BaseResultSetExtractor\<V>
      * custom exception.
      */
     <notnull(C=C)>
-    protected abstract \<table.name.voName> extractData(
+    protected abstract V extractData(
         <notnull(C=C)>final ResultSet resultSet,
         <nullable(C=C)>final <repository.voName>DAOListener listener)
         throws  SQLException,
