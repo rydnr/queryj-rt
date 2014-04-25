@@ -169,7 +169,7 @@ public class <C.class_name>
      */
     @NotNull
     public String retrieveTemplateFileName(
-        @NotNull final String tableName, @NotNull final MetadataManager metadataManager)
+        @NotNull final Result\<String> tableName, @NotNull final MetadataManager metadataManager)
     {
         @NotNull final String result;
 
