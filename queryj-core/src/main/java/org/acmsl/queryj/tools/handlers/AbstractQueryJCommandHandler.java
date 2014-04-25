@@ -202,7 +202,14 @@ public abstract class AbstractQueryJCommandHandler
     @NotNull
     protected DecoratorFactory retrieveDecoratorFactory(@NotNull final QueryJCommand command)
     {
-        return QueryJCommandUtils.getInstance().retrieveDe
+        @Nullable final MetadataManager result = retrieveMetadataManagerIfExists(parameters);
+
+        if (result == null)
+        {
+            throw new MetadataManagerNotAvailableException();
+        }
+
+        return result;
     }
     /**
      * Retrieves whether to use sub folders or not.
