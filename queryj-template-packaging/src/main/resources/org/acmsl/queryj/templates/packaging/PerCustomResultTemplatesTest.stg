@@ -294,7 +294,7 @@ public class PerCustomResultTemplatesTest
             (PerCustomResultTemplateGenerator\<PerCustomResultTemplate\<PerCustomResultTemplateContext>, PerCustomResultTemplateContext>) retrieveTemplateGenerator(
                 templateName);
 
-        Assert.assertNotNull("No template generator found for " + templateName + ". , generator);
+        Assert.assertNotNull("No template generator found for " + templateName + ". Does, generator);
 
         @NotNull final DecoratorFactory decoratorFactory = retrieveDecoratorFactory(generator);
 
