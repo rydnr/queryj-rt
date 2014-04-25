@@ -137,7 +137,7 @@ public abstract class BasePerCustomResultTemplateWritingHandler
      * @param projectPackage the project base package.
      * @param useSubFolders whether to use subFolders for tests, or
      * using a different package naming scheme.
-     * @param engineName the engine name.
+     * @param engine the engine.
      * @param parameters the parameter map.
      * @return such folder.
      */
