@@ -51,7 +51,7 @@ source(C) ::= <<
 
 sourceImpl(table, C) ::= <<
 <!
-  Defines the rules to generate ResultSetExtractor implementations.
+  Defines the rules to generate CustomResultSetExtractor implementations.
   @param table the table.
   @param C the context.
 !>
