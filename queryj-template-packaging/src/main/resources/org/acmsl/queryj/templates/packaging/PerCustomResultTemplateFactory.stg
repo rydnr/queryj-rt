@@ -182,7 +182,10 @@ public class <C.class_name>
             Literals.RESULT,
             new CachingResultDecorator(
                 result,
-                customSqlProvider, metadataManager, decoratorFactory);
+                customSqlProvider,
+                metadataManager,
+                decoratorFactory);
+
         template.add(Literals.ENGINE, new EngineDecorator(metadataManager.getEngine()));
 
         result = template.render();
