@@ -191,7 +191,7 @@ public class <C.class_name>
                 customResult,
                 customSqlProvider,
                 metadataManager,
-                decoratorFactory);
+                decoratorFactory));
 
         template.add(Literals.ENGINE, new EngineDecorator(metadataManager.getEngine()));
 
