@@ -147,7 +147,6 @@ public class <C.class_name>
     @NotNull
     public <def.name.noExtension>Template createTemplate(
         @NotNull final String result,
-        @NotNull final List\<Row\<String\>> staticContents,
         @NotNull final QueryJCommand command)
     {
         @NotNull final <def.type.capitalized>TemplateContext t_Context =
