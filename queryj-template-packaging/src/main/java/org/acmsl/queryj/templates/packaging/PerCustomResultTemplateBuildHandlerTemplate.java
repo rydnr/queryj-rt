@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Template for per-custom result template build handlers.
  *
  * Date: 2014/04/25
  * Time: 18:39
