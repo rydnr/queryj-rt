@@ -94,6 +94,9 @@ public class TemplateBuildHandlerTemplateFactory
             case PER_REPOSITORY:
                 result = new PerRepositoryTemplateBuildHandlerTemplate<>(context);
                 break;
+            case PER_CUSTOM_RESULT:
+                result = new PerRepositoryTemplateBuildHandlerTemplate<>(context);
+                break;
             default:
                 result = new TemplateBuildHandlerTemplate<>(context);
         }
