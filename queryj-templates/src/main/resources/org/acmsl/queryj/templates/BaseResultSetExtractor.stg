@@ -110,7 +110,9 @@ public abstract class <repository.capitalized>BaseResultSetExtractor\<V>
 {
     /**
      * Creates a new instance.
-     * @param listener the {@link <repository.voName>
+     * @param listener the {@link <repository.capitalized>DAOListener} instance.
+     */
+    protected
     /**
      * Extracts V information from given result set.
      * @param resultSet the result set.
