@@ -79,6 +79,4 @@ public class PerCustomResultTemplateBuildHandlerTemplate<C extends TemplatePacka
     {
         return Literals.PER_CUSTOM_RESULT_TEMPLATE_BUILD_HANDLER;
     }
-
-    {
 }
