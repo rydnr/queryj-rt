@@ -157,7 +157,7 @@ public class <C.class_name>
     /**
      * Retrieves the output dir from the attribute map.
      * @param customResult the custom result.
-     * @param customSqlProvider the custom sql provider.
+     * @param customSqlProvider the {@link CustomSqlProvider} instance.
      * @param metadataManager the metadata manager.
      * @param projectFolder the project folder.
      * @param projectPackage the project base package.
