@@ -122,7 +122,7 @@ public abstract class BasePerCustomResultTemplateWritingHandler
                 customSqlProvider,
                 metadataManager,
                 retrieveProjectOutputDir(parameters),
-                retrieveEngine(parameters, retrieveDatabaseMetaData()),
+                retrieveEngine(parameters, retrieveDatabaseMetaData(parameters)),
                 parameters);
     }
 
