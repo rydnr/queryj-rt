@@ -104,7 +104,7 @@ class(repository, tables, C) ::= <<
 <class_common_javadoc(
   template="org/acmsl/queryj/templates/BaseResultSetExtractor.stg", C=C)>
  */
-public abstract class <repository.capitalized>BaseResultSetExtractor
+public abstract class <repository.capitalized>BaseResultSetExtractor\<
     implements Serializable
 {
 }
