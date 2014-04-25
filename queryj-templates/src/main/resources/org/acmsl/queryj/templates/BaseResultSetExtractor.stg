@@ -33,7 +33,8 @@
 //
 // Author: Jose San Leandro Armendariz
 //
-// Description: Defines the rules to generate BaseResultSetExtractor facades.
+// Description: Defines the rules to generate BaseResultSetExtractor
+//              implementations.
 //
 //
 group BaseResultSetExtractor;
