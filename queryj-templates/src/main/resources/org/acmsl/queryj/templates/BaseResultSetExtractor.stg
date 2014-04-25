@@ -124,7 +124,7 @@ public abstract class <repository.capitalized>BaseResultSetExtractor\<V>
         throws  SQLException,
                 DataAccessException
     {
-        return extractData(resultSet, getlistener, <table.name.voName>ValueObjectFactory.getInstance());
+        return extractData(resultSet, getDAOlistener());
     }
 
 
