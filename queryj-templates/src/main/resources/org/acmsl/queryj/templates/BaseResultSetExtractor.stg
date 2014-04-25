@@ -42,7 +42,7 @@ import "queryj.stg"
 
 source(C) ::= <<
 <!
-  Defines the rules to generate BaseResultSetExtractor facades.
+  Defines the rules to generate BaseResultSetExtractor implementations.
   @param C the context.
 !>
 <sourceImpl(repository=C.repository, tables=C.tables, C=C)>
