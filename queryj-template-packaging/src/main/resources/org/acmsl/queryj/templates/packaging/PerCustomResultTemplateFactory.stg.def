@@ -15,5 +15,3 @@ filename  builder : PerCustomResultTemplateFactory.java;
 
 // The package.
 package: cucumber.templates;
-
-disabled;
