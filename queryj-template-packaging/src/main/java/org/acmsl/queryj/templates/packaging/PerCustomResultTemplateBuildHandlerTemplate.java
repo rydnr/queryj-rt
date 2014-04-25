@@ -64,7 +64,7 @@ public class PerCustomResultTemplateBuildHandlerTemplate<C extends TemplatePacka
      * Creates a new instance using given context.
      * @param context the context.
      */
-    public PerRepositoryTemplateBuildHandlerTemplate(@NotNull final C context)
+    public PerCustomResultTemplateBuildHandlerTemplate(@NotNull final C context)
     {
         super(context);
     }
