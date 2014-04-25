@@ -146,7 +146,7 @@ public class <C.class_name>
     @Override
     @NotNull
     protected String retrievePackage(
-        @NotNull final Result<String> customResult,
+        @NotNull final Result\<String> customResult,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
         @NotNull final Engine\<String> engine,
