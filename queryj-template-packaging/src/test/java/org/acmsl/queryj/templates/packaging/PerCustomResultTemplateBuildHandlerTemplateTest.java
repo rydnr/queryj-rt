@@ -68,7 +68,7 @@ public class PerCustomResultTemplateBuildHandlerTemplateTest
         @NotNull final DefaultTemplatePackagingContext context =
             EasyMock.createNiceMock(DefaultTemplatePackagingContext.class);
 
-        @NotNull final PerRepositoryTemplateBuildHandlerTemplate instance =
+        @NotNull final PerCustomResultTemplateBuildHandlerTemplate instance =
             new PerRepositoryTemplateBuildHandlerTemplate<>(context);
 
         Assert.assertEquals(Literals.PER_CUSTOM_RESULT_TEMPLATE_BUILD_HANDLER, instance.getTemplateName());
