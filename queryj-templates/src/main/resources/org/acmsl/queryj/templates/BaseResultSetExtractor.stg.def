@@ -11,7 +11,7 @@ type : per-repository;
 output: Java;
 
 // The filename builder.
-filename builder : <repository.capitalized>DAOChooser.java;
+filename builder : <repository.capitalized>ResultSetExtractor.java;
 
 // The package.
 package: <packageName>.dao;
