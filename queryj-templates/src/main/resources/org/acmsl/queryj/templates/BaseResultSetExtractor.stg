@@ -119,7 +119,8 @@ public abstract class <repository.capitalized>BaseResultSetExtractor\<V>
     }
 
     /**
-     * Specifies the
+     * Specifies the DAO listener.
+     * @param listener the {@link <repository.capitalized>DAOListener} instance.
     /**
      * Extracts V information from given result set.
      * @param resultSet the result set.
