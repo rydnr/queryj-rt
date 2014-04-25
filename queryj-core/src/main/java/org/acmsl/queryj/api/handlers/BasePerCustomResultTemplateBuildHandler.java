@@ -275,7 +275,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
         @NotNull final MetadataManager metadataManager,
         @NotNull final Engine<String> engine,
         @NotNull final QueryJCommand parameters)
-      throws  QueryJBuildException
+      throws  QueryJBuildException;
     {
         return
             retrievePackage(
