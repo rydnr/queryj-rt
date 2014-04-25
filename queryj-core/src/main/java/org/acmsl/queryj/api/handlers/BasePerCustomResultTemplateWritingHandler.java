@@ -149,7 +149,6 @@ public abstract class BasePerCustomResultTemplateWritingHandler
         @NotNull final String projectPackage,
         final boolean useSubFolders,
         @NotNull final String engineName,
-        @NotNull final QueryJCommand parameters,
-        @NotNull final PackageUtils packageUtils)
+        @NotNull final QueryJCommand parameters)
       throws  QueryJBuildException;
 }
