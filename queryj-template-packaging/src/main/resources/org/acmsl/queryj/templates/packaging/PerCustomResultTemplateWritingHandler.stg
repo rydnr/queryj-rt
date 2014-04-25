@@ -170,7 +170,7 @@ public class <C.class_name>
      */
     @NotNull
     protected File retrieveOutputDir(
-        @NotNull final Result<String> customResult,
+        @NotNull final Result\<String> customResult,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
         @NotNull final File projectFolder,
