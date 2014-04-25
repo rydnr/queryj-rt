@@ -177,24 +177,7 @@ public class <C.class_name>
         final boolean useSubFolders,
         @NotNull final String engineName,
         @NotNull final QueryJCommand parameters)
-      throws  QueryJBuildException;
-    /**
-     * Retrieves the output dir from the attribute map.
-     * @param engine the engine.
-     * @param projectOutputDir the project output dir.
-     * @param projectPackage the project package.
-     * @param tableName the source table name.
-     * @param subFolders whether to use sub folders or not.
-     * @return such folder.
-     */
-    @NotNull
-    @Override
-    protected File retrieveOutputDir(
-        @NotNull final Engine\<String> engine,
-        @NotNull final File projectOutputDir,
-        final String projectPackage,
-        @NotNull final String tableName,
-        final boolean subFolders)
+      throws  QueryJBuildException
     {
         @NotNull final File result;
 
