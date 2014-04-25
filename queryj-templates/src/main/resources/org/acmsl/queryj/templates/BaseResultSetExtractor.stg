@@ -111,6 +111,8 @@ public abstract class <repository.capitalized>BaseResultSetExtractor\<V>
     /**
      * The DAO listener.
      */
+    <nullable(C=C)>
+    private <repository.capitalized>DAOListener m__DAOListener;
 
     /**
      * Creates a new instance.
