@@ -134,8 +134,6 @@ public abstract class BasePerCustomResultTemplateWritingHandler
      * @param customSqlProvider the custom sql provider.
      * @param metadataManager the metadata manager.
      * @param projectFolder the project folder.
-     * @param projectPackage the project base package.
-     * @param useSubFolders whether to use subFolders for tests, or
      * using a different package naming scheme.
      * @param engine the engine.
      * @param parameters the parameter map.
