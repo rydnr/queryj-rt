@@ -124,8 +124,7 @@ public abstract class BasePerCustomResultTemplateWritingHandler
                 retrieveProjectPackage(parameters),
                 retrieveUseSubfoldersFlag(parameters),
                 retrieveProductName(parameters),
-                parameters,
-                PackageUtils.getInstance());
+                parameters);
     }
 
     /**
