@@ -11,7 +11,7 @@ Feature: Classes associated to custom results compile
       | g_cycle_id | int  |
       | count      | long |
 
-    When I use the custom result template <template>.stg for Oracle
+    When I use the custom result template <template> for Oracle
 
     Then the generated custom result-specific <output> file compiles successfully
 
