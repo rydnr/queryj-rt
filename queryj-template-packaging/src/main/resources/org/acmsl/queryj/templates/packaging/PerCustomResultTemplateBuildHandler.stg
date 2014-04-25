@@ -159,7 +159,10 @@ public class <C.class_name>
         packageTemplate.add(
             Literals.RESULT,
             new CachingResultDecorator(
-                customResult, customSqlProvider, metadataManager, retrieveDecoratorFactory(parameters)));
+                customResult,
+                customSqlProvider,
+                metadataManager,
+                retrieveDecoratorFactory(parameters)));
         packageTemplate.add(Literals.PACKAGE_NAME, new DecoratedString(projectPackage));
         packageTemplate.add(Literals.ENGINE, new EngineDecorator(engine));
 
