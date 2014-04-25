@@ -102,7 +102,6 @@ class(repository, tables, C) ::= <<
 public abstract class <repository.capitalized>BaseResultSetExtractor
     implements Serializable
 {
-
     /**
      * Public constructor to allow reflective access.
      */
