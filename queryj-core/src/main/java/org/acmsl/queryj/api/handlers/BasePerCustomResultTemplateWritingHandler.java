@@ -122,8 +122,6 @@ public abstract class BasePerCustomResultTemplateWritingHandler
                 customSqlProvider,
                 metadataManager,
                 retrieveProjectOutputDir(parameters),
-                retrieveProjectPackage(parameters),
-                retrieveUseSubfoldersFlag(parameters),
                 retrieveEngine(parameters),
                 parameters);
     }
