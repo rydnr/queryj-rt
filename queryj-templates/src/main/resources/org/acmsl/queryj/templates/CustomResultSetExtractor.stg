@@ -92,7 +92,7 @@ description(table) ::= <<
 {@link ResultSetExtractor} implementation for <table.name>.
 >>
 
-class(table, repository, C) ::= <<
+class(result, repository, C) ::= <<
 <!
  Generates the class body.
  @param table the table.
