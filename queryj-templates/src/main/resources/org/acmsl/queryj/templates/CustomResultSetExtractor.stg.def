@@ -11,7 +11,7 @@ type : per-custom-result;
 output: Java;
 
 // The filename builder.
-filename builder : <tableName.singular.camelCase>.feature;
+filename builder : <result.singular.camelCase>.feature;
 
 // The package.
 package: <packageName>.dao;
