@@ -71,7 +71,7 @@ public class PerCustomResultTemplateBuildHandlerTemplate<C extends TemplatePacka
 
     /**
      * Retrieves the template name.
-     * @return such name.
+     * @return "PerCustomResultTemplateBuildHandler".
      */
     @NotNull
     @Override
