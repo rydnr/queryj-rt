@@ -228,7 +228,7 @@ public class PerCustomResultTemplatesTest
      * @param propertiesInfo the information about the properties.
      */
     @SuppressWarnings("unused")
-    @And("^the following properties:$")
+    @And("^the following custom result properties:$")
     public void defineInputProperties(@NotNull final DataTable propertiesInfo)
     {
         defineInputProperties(propertiesInfo, getResults(), getProperties(), CustomResultTestHelper.getInstance());
