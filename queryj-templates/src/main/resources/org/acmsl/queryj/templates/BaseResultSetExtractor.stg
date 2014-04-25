@@ -51,7 +51,7 @@ source(C) ::= <<
 
 sourceImpl(repository, tables, C) ::= <<
 <!
-  Defines the rules to generate BaseResultSetExtractor facades.
+  Defines the rules to generate BaseResultSetExtractor implementations.
   @param repository the repository name.
   @param tables the tables.
   @param C the context.
