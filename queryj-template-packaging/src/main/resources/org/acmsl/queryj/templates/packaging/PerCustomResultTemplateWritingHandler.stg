@@ -168,7 +168,7 @@ public class <C.class_name>
      * @return such folder.
      */
     @NotNull
-    protected abstract File retrieveOutputDir(
+    protected File retrieveOutputDir(
         @NotNull final Result<String> resultElement,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
