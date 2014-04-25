@@ -47,6 +47,7 @@ import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.handlers.CustomSqlProviderRetrievalHandler;
+import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.tools.exceptions.MetadataManagerNotAvailableException;
 import org.acmsl.queryj.tools.exceptions.MissingConnectionAtRuntimeException;
@@ -193,6 +194,16 @@ public abstract class AbstractQueryJCommandHandler
         return queryJCommandUtils.retrieveMetadataManager(parameters);
     }
 
+    /**
+     * Retrieves the decorator factory.
+     * @param command the command.
+     * @return such instance.
+     */
+    @NotNull
+    protected DecoratorFactory retrieveDecoratorFactory(@NotNull final QueryJCommand command)
+    {
+
+    }
     /**
      * Retrieves whether to use sub folders or not.
      * @param command the command.
