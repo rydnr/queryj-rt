@@ -109,6 +109,10 @@ public abstract class <repository.capitalized>BaseResultSetExtractor\<V>
     implements Serializable
 {
     /**
+     * The DAO listener.
+     */
+
+    /**
      * Creates a new instance.
      * @param listener the {@link <repository.capitalized>DAOListener} instance.
      */
