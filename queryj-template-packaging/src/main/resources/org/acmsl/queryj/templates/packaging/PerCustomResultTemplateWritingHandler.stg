@@ -178,7 +178,6 @@ public class <C.class_name>
         @NotNull final File projectFolder,
         @NotNull final Engine\<String> engine,
         @NotNull final QueryJCommand parameters)
-      throws  QueryJBuildException
     {
         @NotNull final File result;
 
