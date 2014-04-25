@@ -183,7 +183,7 @@ public class <C.class_name>
 
         @NotNull final String packageName =
             <def.name.noExtension>TemplateBuildHandler.buildPackageName(
-            buildPackage(
+            buildPackageName(
                 customResult,
                 customSqlProvider,
                 metadataManager,
