@@ -77,7 +77,7 @@ public class PerCustomResultTemplateBuildHandlerTemplate<C extends TemplatePacka
     @Override
     public String getTemplateName()
     {
-        return Literals.PER_REPOSITORY_TEMPLATE_BUILD_HANDLER;
+        return Literals.PER_CUSTOM_RESULT_TEMPLATE_BUILD_HANDLER;
     }
 
     {
