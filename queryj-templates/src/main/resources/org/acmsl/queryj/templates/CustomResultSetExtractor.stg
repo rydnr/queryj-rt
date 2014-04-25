@@ -106,7 +106,7 @@ class(result, repository, C) ::= <<
 <class_common_javadoc(
   template="org/acmsl/queryj/templates/CustomResultSetExtractor.stg", C=C)>
  */
-public class <table.name.voName>ResultSetExtractor
+public class <result.name.voName>ResultSetExtractor
     extends <repository.voName>ResultSetExtractor\<<table.name.voName>\>
 {
     /**
