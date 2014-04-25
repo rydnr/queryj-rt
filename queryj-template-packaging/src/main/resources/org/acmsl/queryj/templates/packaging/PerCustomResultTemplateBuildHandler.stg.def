@@ -15,5 +15,3 @@ filename  builder : PerCustomResultTemplates.feature;
 
 // The package.
 package: cucumber.templates;
-
-disabled;
