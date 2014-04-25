@@ -269,7 +269,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
      * @return the package name.
      */
     @ThreadSafe
-    protected String retrievePackage(
+    protected abstract String retrievePackage(
         @NotNull final Result<String> customResult,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
