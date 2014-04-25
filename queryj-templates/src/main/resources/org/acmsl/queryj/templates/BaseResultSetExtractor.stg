@@ -29,20 +29,20 @@
 //
 //***************************************************************************
 //
-// Filename: DAOChooser.stg
+// Filename: BaseResultSetExtractor.stg
 //
 // Author: Jose San Leandro Armendariz
 //
-// Description: Defines the rules to generate DAOChooser facades.
+// Description: Defines the rules to generate BaseResultSetExtractor facades.
 //
 //
-group DAOChooser;
+group BaseResultSetExtractor;
 
 import "queryj.stg"
 
 source(C) ::= <<
 <!
-  Defines the rules to generate DAOChooser facades.
+  Defines the rules to generate BaseResultSetExtractor facades.
   @param C the context.
 !>
 <sourceImpl(repository=C.repository, tables=C.tables, C=C)>
@@ -50,7 +50,7 @@ source(C) ::= <<
 
 sourceImpl(repository, tables, C) ::= <<
 <!
-  Defines the rules to generate DAOChooser facades.
+  Defines the rules to generate BaseResultSetExtractor facades.
   @param repository the repository name.
   @param tables the tables.
   @param C the context.
@@ -64,7 +64,7 @@ sourceImpl(repository, tables, C) ::= <<
   [
     description(repository=repository)
   ],
-  template="org/acmsl/queryj/templates/DAOChooser.stg",
+  template="org/acmsl/queryj/templates/BaseResultSetExtractor.stg",
   C=C)><endif>
 */
 <package_declaration(p=C.package)>
@@ -74,7 +74,7 @@ sourceImpl(repository, tables, C) ::= <<
 /*
  * Importing some ACM-SL Commons classes.
  */
-import org.acmsl.commons.patterns.dao.DAOChooser;
+import org.acmsl.commons.patterns.dao.BaseResultSetExtractor;
 
 <endif>
 
@@ -86,7 +86,7 @@ description(repository) ::= <<
   Generates the first line of the generated file description.
   @param repository the repository.
 !>
-DAOChooser facade for <repository> repository.
+BaseResultSetExtractor facade for <repository> repository.
 >>
 
 class(repository, tables, C) ::= <<
@@ -101,11 +101,11 @@ class(repository, tables, C) ::= <<
       description(repository=repository)
     ]:{line |<line>}; separator="\n * ">
 <class_common_javadoc(
-  template="org/acmsl/queryj/templates/DAOChooser.stg", C=C)>
+  template="org/acmsl/queryj/templates/BaseResultSetExtractor.stg", C=C)>
  */
-public class <repository.capitalized>DAOChooser
+public class <repository.capitalized>BaseResultSetExtractor
 <if(C.implement_markers)>
-    extends  DAOChooser,
+    extends  BaseResultSetExtractor,
              Serializable
 <else>
     extends Serializable
@@ -115,25 +115,25 @@ public class <repository.capitalized>DAOChooser
     /**
      * Public constructor to allow reflective access.
      */
-    public <repository.capitalized>DAOChooser() {};
+    public <repository.capitalized>BaseResultSetExtractor() {};
 
     /**
      * Singleton implementation to avoid double-checked locking.
      */
-    private static final class <repository.capitalized>DAOChooserSingletonContainer
+    private static final class <repository.capitalized>BaseResultSetExtractorSingletonContainer
     {
-        private static final <repository.capitalized>DAOChooser SINGLETON =
-            new <repository.capitalized>DAOChooser();
+        private static final <repository.capitalized>BaseResultSetExtractor SINGLETON =
+            new <repository.capitalized>BaseResultSetExtractor();
     }
 
     /**
-     * Retrieves a {@code <repository.capitalized>DAOChooser} instance.
+     * Retrieves a {@code <repository.capitalized>BaseResultSetExtractor} instance.
      * @return such instance.
      */
     <notnull(C=C)>
-    public static <repository.capitalized>DAOChooser getInstance()
+    public static <repository.capitalized>BaseResultSetExtractor getInstance()
     {
-        return <repository.capitalized>DAOChooserSingletonContainer.SINGLETON;
+        return <repository.capitalized>BaseResultSetExtractorSingletonContainer.SINGLETON;
     }
 
     <tables:{ t | <dao_constant(table=t, repository=repository, C=C)>}; separator="\n\n">
@@ -155,16 +155,16 @@ public class <repository.capitalized>DAOChooser
     /**
      * Public constructor to allow reflective access.
      */
-    public <repository.capitalized>DAOChooser() {};
+    public <repository.capitalized>BaseResultSetExtractor() {};
 
     /**
-     * Retrieves a {@code <repository.capitalized>DAOChooser} instance.
+     * Retrieves a {@code <repository.capitalized>BaseResultSetExtractor} instance.
      * @return such instance.
      */
     <notnull(C=C)>
-    public static <repository.capitalized>DAOChooser getInstance()
+    public static <repository.capitalized>BaseResultSetExtractor getInstance()
     {
-        return <repository.capitalized>DAOChooserSingletonContainer.SINGLETON;
+        return <repository.capitalized>BaseResultSetExtractorSingletonContainer.SINGLETON;
     }
 
     /**
@@ -242,14 +242,14 @@ public class <repository.capitalized>DAOChooser
             {
                 // try classpath
                 t_isProperties =
-                    <repository.capitalized>DAOChooser.class.getClassLoader().getResourceAsStream(
+                    <repository.capitalized>BaseResultSetExtractor.class.getClassLoader().getResourceAsStream(
                         "/" + PROPERTIES_FILE);
 
                 if  (t_isProperties == null)
                 {
                     // try local
                     t_isProperties =
-                        <repository.capitalized>DAOChooser.class.getClassLoader().getResourceAsStream(
+                        <repository.capitalized>BaseResultSetExtractor.class.getClassLoader().getResourceAsStream(
                             PROPERTIES_FILE);
                 }
 
@@ -261,7 +261,7 @@ public class <repository.capitalized>DAOChooser
                 {
                      try
                      {
-                         LogFactory.getLog(<repository.capitalized>DAOChooser.class).warn(
+                         LogFactory.getLog(<repository.capitalized>BaseResultSetExtractor.class).warn(
                                "Couldn't find the property file: "
                              + PROPERTIES_FILE);
                      }
@@ -275,7 +275,7 @@ public class <repository.capitalized>DAOChooser
             {
                 try
                 {
-                     LogFactory.getLog(<repository.capitalized>DAOChooser.class).warn(
+                     LogFactory.getLog(<repository.capitalized>BaseResultSetExtractor.class).warn(
                           "Couldn't find the property file: "
                         + PROPERTIES_FILE,
                         ioException);
@@ -290,7 +290,7 @@ public class <repository.capitalized>DAOChooser
         {
             try
             {
-                LogFactory.getLog(<repository.capitalized>DAOChooser.class).warn(
+                LogFactory.getLog(<repository.capitalized>BaseResultSetExtractor.class).warn(
                     "Properties object not valid!");
             }
             catch  (final Throwable throwable)
