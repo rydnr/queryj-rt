@@ -74,6 +74,11 @@ sourceImpl(repository, tables, C) ::= <<
 
 <endif>
 
+/*
+ * Importing JDK classes.
+ */
+import java.io.Serializable;
+
 <class(repository=repository, tables=tables, C=C)>
 >>
 
