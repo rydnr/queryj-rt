@@ -162,7 +162,7 @@ public class <C.class_name>
                 customResult,
                 customSqlProvider,
                 metadataManager,
-                retrieveDecoratorFactory(parameters)));
+                new QueryJretrieveDecoratorFactory(parameters)));
         packageTemplate.add(Literals.PACKAGE_NAME, new DecoratedString(retrieveProjectPackage(parameters)));
         packageTemplate.add(Literals.ENGINE, new EngineDecorator(engine));
 
