@@ -52,6 +52,33 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2014/04/25 18:39
  */
 @ThreadSafe
-public class PerCustomResultTemplateBuildHandlerTemplate
+public class PerCustomResultTemplateBuildHandlerTemplate<C extends TemplatePackagingContext>
+    extends TemplateBuildHandlerTemplate<C>
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = -3593908234655501807L;
+
+    /**
+     * Creates a new instance using given context.
+     * @param context the context.
+     */
+    public PerRepositoryTemplateBuildHandlerTemplate(@NotNull final C context)
+    {
+        super(context);
+    }
+
+    /**
+     * Retrieves the template name.
+     * @return such name.
+     */
+    @NotNull
+    @Override
+    public String getTemplateName()
+    {
+        return Literals.PER_REPOSITORY_TEMPLATE_BUILD_HANDLER;
+    }
+
+    {
 }
