@@ -200,7 +200,7 @@ public class <C.class_name>
             aux.append(piece);
         }
 
-        result = new File(projectOutputDir.getAbsolutePath() + aux.toString());
+        result = new File(projectFolder.getAbsolutePath() + aux.toString());
 
         return result;
     }
