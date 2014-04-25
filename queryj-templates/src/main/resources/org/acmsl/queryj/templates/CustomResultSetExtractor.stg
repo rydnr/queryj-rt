@@ -117,9 +117,6 @@ public class <result.name.voName>ResultSetExtractor
     {
         super(listener);
     }
-
-    <defaultExtractor(table=table, repository=repository, C=C)>
-
 }
 >>
 
