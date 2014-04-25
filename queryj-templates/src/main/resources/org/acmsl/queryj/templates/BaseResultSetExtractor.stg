@@ -100,11 +100,7 @@ class(repository, tables, C) ::= <<
   template="org/acmsl/queryj/templates/BaseResultSetExtractor.stg", C=C)>
  */
 public abstract class <repository.capitalized>BaseResultSetExtractor
-<if(C.implement_markers)>
-    extends  BaseResultSetExtractor,
-             Serializable
-<else>
-    extends Serializable
+    implements Serializable
 <endif>
 {
 
