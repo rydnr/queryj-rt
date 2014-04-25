@@ -121,6 +121,12 @@ public abstract class <repository.capitalized>BaseResultSetExtractor\<V>
     /**
      * Specifies the DAO listener.
      * @param listener the {@link <repository.capitalized>DAOListener} instance.
+     */
+    protected final void immutableSetDAOListener(
+        <nullable(C=C)>final <repository.capitalized>DAOListener listener)
+    {
+        this.
+    }
     /**
      * Extracts V information from given result set.
      * @param resultSet the result set.
