@@ -152,22 +152,6 @@ public class <C.class_name>
         @NotNull final Engine\<String> engine,
         @NotNull final QueryJCommand parameters)
     {
-        return buildPackageName(repository, engine, projectPackage);
-    }
-
-    /**
-     * Builds the actual package name.
-     * @param repository the repository.
-     * @param engine the engine.
-     * @param projectPackage the project package.
-     * @return the package name.
-     */
-    @NotNull
-    static String buildPackageName(
-        @NotNull final String repository,
-        @SuppressWarnings("unused") @NotNull final Engine\<String> engine,
-        @SuppressWarnings("unused") @NotNull final String projectPackage)
-    {
         @NotNull final String result;
 
         @NotNull final ST packageTemplate = new ST("<def.packageName>");
