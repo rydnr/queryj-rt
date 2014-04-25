@@ -183,7 +183,7 @@ public class <C.class_name>
      * {@inheritDoc}
      */
     @Override
-    protected void storeTemplate(
+    protected void storeTemplates(
         @NotNull final <def.name.noExtension>Template template,
         @NotNull final QueryJCommand parameters)
     {
