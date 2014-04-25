@@ -95,7 +95,7 @@ description(result) ::= <<
 class(result, repository, C) ::= <<
 <!
  Generates the class body.
- @param table the table.
+ @param result the result.
  @param repository the repository.
  @param C the context.
 !>
