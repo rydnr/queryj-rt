@@ -108,7 +108,6 @@ class(repository, tables, C) ::= <<
 public abstract class <repository.capitalized>BaseResultSetExtractor\<V>
     implements Serializable
 {
-
     /**
      * Extracts {@link <table.name.voName>} information from given result set.
      * @param resultSet the result set.
