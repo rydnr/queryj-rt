@@ -169,5 +169,8 @@ public interface Literals
      * String literal: "PerTableTemplateFactory".
      */
     String PER_TABLE_TEMPLATE_FACTORY = "PerTableTemplateFactory";
+    /**
+     * String literal:
+     */
     String PER_CUSTOM_RESULT_TEMPLATE_BUILD_HANDLER = "PerCustomResultTemplateBuildHandler";
 }
