@@ -11,7 +11,7 @@ type : per-custom-result;
 output: Cucumber;
 
 // The filename builder.
-filename  builder : PerCustomResultTemplateBuildHandler.feature;
+filename  builder : PerCustomResultTemplateBuildHandler.java;
 
 // The package.
 package: cucumber.templates;
