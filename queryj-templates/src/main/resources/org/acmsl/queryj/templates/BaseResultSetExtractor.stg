@@ -82,7 +82,7 @@ description(repository) ::= <<
   Generates the first line of the generated file description.
   @param repository the repository.
 !>
-BaseResultSetExtractor facade for <repository> repository.
+BaseResultSetExtractor implementation for <repository> repository.
 >>
 
 class(repository, tables, C) ::= <<
