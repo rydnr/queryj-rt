@@ -42,6 +42,7 @@ import org.acmsl.queryj.QueryJSettings;
 import org.acmsl.queryj.api.QueryJCommandUtils;
 import org.acmsl.queryj.api.exceptions.CannotRetrieveDatabaseMetadataException;
 import org.acmsl.queryj.api.Template;
+import org.acmsl.queryj.api.exceptions.DecoratorFactoryNotAvailableException;
 import org.acmsl.queryj.api.exceptions.UnsupportedCharsetQueryjException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.QueryJCommand;
@@ -207,7 +208,7 @@ public abstract class AbstractQueryJCommandHandler
 
         if (result == null)
         {
-            throw new MetadataManagerNotAvailableException();
+            throw new DecoratorFactoryNotAvailableException();
         }
 
         return result;
