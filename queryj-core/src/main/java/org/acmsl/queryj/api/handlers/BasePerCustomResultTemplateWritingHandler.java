@@ -43,6 +43,7 @@ import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.metadata.MetadataManager;
+import org.acmsl.queryj.metadata.engines.Engine;
 import org.acmsl.queryj.tools.PackageUtils;
 
 /*
@@ -146,7 +147,7 @@ public abstract class BasePerCustomResultTemplateWritingHandler
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
         @NotNull final File projectFolder,
-        @NotNull final String engineName,
+        @NotNull final Engine<String> engine,
         @NotNull final QueryJCommand parameters)
       throws  QueryJBuildException;
 }
