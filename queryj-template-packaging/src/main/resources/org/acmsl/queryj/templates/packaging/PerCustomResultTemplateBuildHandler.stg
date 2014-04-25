@@ -156,7 +156,7 @@ public class <C.class_name>
 
         @NotNull final ST packageTemplate = new ST("<def.packageName>");
 
-        packageTemplate.add(Literals.RESULT, new DecoratedString(repository));
+        packageTemplate.add(Literals.RESULT, new CachingResultDecorator(customResult, );
         packageTemplate.add(Literals.PACKAGE_NAME, new DecoratedString(projectPackage));
         packageTemplate.add(Literals.ENGINE, new EngineDecorator(engine));
 
