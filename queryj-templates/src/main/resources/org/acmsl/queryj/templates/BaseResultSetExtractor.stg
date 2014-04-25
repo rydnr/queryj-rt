@@ -72,11 +72,6 @@ sourceImpl(repository, tables, C) ::= <<
 <checkers_import(C=C)>
 <if(C.implement_markers)>
 
-/*
- * Importing some ACM-SL Commons classes.
- */
-import org.acmsl.commons.patterns.dao.BaseResultSetExtractor;
-
 <endif>
 
 <class(repository=repository, tables=tables, C=C)>
