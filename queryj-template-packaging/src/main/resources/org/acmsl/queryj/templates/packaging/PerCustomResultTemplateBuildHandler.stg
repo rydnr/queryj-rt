@@ -165,7 +165,14 @@ public class <C.class_name>
     }
 
     /**
-     * {@inheritDoc}
+    /**
+     * Retrieves the package name from the attribute map.
+     * @param customResult the custom RESULT.
+     * @param customSqlProvider the {@link CustomSqlProvider} instance.
+     * @param metadataManager the database metadata manager.
+     * @param engine the engine.
+     * @param parameters the parameter map.
+     * @return the package name.
      */
     @NotNull
     public static String retrievePackage(
