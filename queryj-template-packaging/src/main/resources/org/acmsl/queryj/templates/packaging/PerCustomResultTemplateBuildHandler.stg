@@ -171,6 +171,7 @@ public class <C.class_name>
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
      * @param metadataManager the database metadata manager.
      * @param engine the engine.
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @param parameters the parameter map.
      * @return the package name.
      */
