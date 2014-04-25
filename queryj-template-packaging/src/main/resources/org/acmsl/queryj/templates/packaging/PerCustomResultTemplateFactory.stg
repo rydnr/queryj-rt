@@ -175,8 +175,6 @@ public class <C.class_name>
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
         @NotNull final DecoratorFactory decoratorFactory)
-        @NotNull final
-        @NotNull final MetadataManager metadataManager)
     {
         @NotNull final String result;
 
