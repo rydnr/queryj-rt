@@ -8,7 +8,7 @@ name : CustomResultSetExtractor.stg;
 type : per-custom-result;
 
 // The output flavor.
-output: Cucumber;
+output: Java;
 
 // The filename builder.
 filename  builder : <tableName.singular.camelCase>.feature;
