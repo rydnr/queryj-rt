@@ -102,25 +102,6 @@ class(repository, tables, C) ::= <<
 public abstract class <repository.capitalized>BaseResultSetExtractor
     implements Serializable
 {
-    /**
-     * Singleton implementation to avoid double-checked locking.
-     */
-    private static final class <repository.capitalized>BaseResultSetExtractorSingletonContainer
-    {
-        private static final <repository.capitalized>BaseResultSetExtractor SINGLETON =
-            new <repository.capitalized>BaseResultSetExtractor();
-    }
-
-    /**
-     * Retrieves a {@code <repository.capitalized>BaseResultSetExtractor} instance.
-     * @return such instance.
-     */
-    <notnull(C=C)>
-    public static <repository.capitalized>BaseResultSetExtractor getInstance()
-    {
-        return <repository.capitalized>BaseResultSetExtractorSingletonContainer.SINGLETON;
-    }
-
     <tables:{ t | <dao_constant(table=t, repository=repository, C=C)>}; separator="\n\n">
 <if(C.repository_dao)>
     <repository_dao_constant(repository=repository, C=C)>
