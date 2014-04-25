@@ -58,6 +58,9 @@ import java.io.File;
 
 /**
  * Writes <i>per-custom-result</i> templates.
+ * @param <T> the template type.
+ * @param <C> the template context type.
+ * @param <TG> the template generator type.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  */
 public abstract class BasePerCustomResultTemplateWritingHandler
