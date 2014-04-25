@@ -101,11 +101,11 @@ class(repository, tables, C) ::= <<
  * <[
       description(repository=repository)
     ]:{line |<line>}; separator="\n * ">
- * @param \<
+ * @param \<V> the value object type.
 <class_common_javadoc(
   template="org/acmsl/queryj/templates/BaseResultSetExtractor.stg", C=C)>
  */
-public abstract class <repository.capitalized>BaseResultSetExtractor\<TP
+public abstract class <repository.capitalized>BaseResultSetExtractor\<V>
     implements Serializable
 {
 }
