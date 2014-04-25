@@ -202,8 +202,8 @@ public abstract class AbstractQueryJCommandHandler
     @NotNull
     protected DecoratorFactory retrieveDecoratorFactory(@NotNull final QueryJCommand command)
     {
-        @Nullable final MetadataManager result =
-            new QueryJCommandWrapper<DecoratorFactory>(command)
+        @Nullable final DecoratorFactory result =
+            new QueryJCommandWrapper<DecoratorFactory>(command).getSetting(DecoratorFactory.class.getName());
 
         if (result == null)
         {
