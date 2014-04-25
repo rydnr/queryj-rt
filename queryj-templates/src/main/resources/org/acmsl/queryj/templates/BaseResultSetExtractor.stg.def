@@ -2,7 +2,7 @@
  * BaseResultSetExtractor template metadata.
  */
 // The template name (the filename).
-name : DAOChooser.stg;
+name : BaseResultSetExtractor.stg;
 
 // The type of template: per-table, per-repository, per-foreign-key, per-custom-result, per-custom-sql.
 type : per-repository;
