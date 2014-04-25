@@ -261,8 +261,14 @@ public abstract class BasePerCustomResultTemplateBuildHandler
 
     /**
      * Retrieves the decorator factory.
-     * @param de
+     * @param command the command.
+     * @return such instance.
      */
+    @NotNull
+    protected DecoratorFactory retrieveDecoratorFactory(@NotNull final QueryJCommand command)
+    {
+
+    }
     /**
      * Retrieves the package name from the attribute map.
      * @param customResult the custom RESULT.
