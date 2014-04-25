@@ -109,6 +109,8 @@ public abstract class <repository.capitalized>BaseResultSetExtractor\<V>
     implements Serializable
 {
     /**
+     * Creates a new instance.
+    /**
      * Extracts V information from given result set.
      * @param resultSet the result set.
      * @return the V instance, or {@code null} if the operation returned no data.
