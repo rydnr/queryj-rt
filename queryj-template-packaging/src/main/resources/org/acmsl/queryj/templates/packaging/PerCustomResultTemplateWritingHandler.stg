@@ -183,6 +183,12 @@ public class <C.class_name>
 
         @NotNull final String packageName =
             <def.name.noExtension>TemplateBuildHandler.buildPackageName(
+            buildPackage(
+                customResult,
+                customSqlProvider,
+                metadataManager,
+                engine,
+                parameters);
                 tableName, engine, projectPackage);
 
         @NotNull final String[] pieces = packageName.split("\\\.");
