@@ -174,7 +174,7 @@ public class <C.class_name>
      * @return the package name.
      */
     @NotNull
-    public static String retrievePackage(
+    public static String buildPackage(
         @NotNull final Result\<String> customResult,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
