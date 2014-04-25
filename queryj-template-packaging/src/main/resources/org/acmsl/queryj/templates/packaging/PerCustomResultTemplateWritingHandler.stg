@@ -156,6 +156,30 @@ public class <C.class_name>
 
     /**
      * Retrieves the output dir from the attribute map.
+     * @param resultElement the result element.
+     * @param customSqlProvider the custom sql provider.
+     * @param metadataManager the metadata manager.
+     * @param projectFolder the project folder.
+     * @param projectPackage the project base package.
+     * @param useSubFolders whether to use subFolders for tests, or
+     * using a different package naming scheme.
+     * @param engineName the engine name.
+     * @param parameters the parameter map.
+     * @return such folder.
+     */
+    @NotNull
+    protected abstract File retrieveOutputDir(
+        @NotNull final Result<String> resultElement,
+        @NotNull final CustomSqlProvider customSqlProvider,
+        @NotNull final MetadataManager metadataManager,
+        @NotNull final File projectFolder,
+        @NotNull final String projectPackage,
+        final boolean useSubFolders,
+        @NotNull final String engineName,
+        @NotNull final QueryJCommand parameters)
+      throws  QueryJBuildException;
+    /**
+     * Retrieves the output dir from the attribute map.
      * @param engine the engine.
      * @param projectOutputDir the project output dir.
      * @param projectPackage the project package.
