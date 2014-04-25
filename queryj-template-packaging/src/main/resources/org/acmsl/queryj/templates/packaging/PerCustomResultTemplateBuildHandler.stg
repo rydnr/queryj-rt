@@ -161,6 +161,7 @@ public class <C.class_name>
                 customSqlProvider,
                 metadataManager,
                 engine,
+                retrieveDecoratorFactory(parameters),
                 parameters);
     }
 
