@@ -176,7 +176,7 @@ public class <C.class_name>
         @NotNull final File projectFolder,
         @NotNull final String projectPackage,
         final boolean useSubFolders,
-        @NotNull final Engine\<String engineName,
+        @NotNull final Engine\<String> engine,
         @NotNull final QueryJCommand parameters)
       throws  QueryJBuildException
     {
