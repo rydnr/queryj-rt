@@ -148,7 +148,6 @@ public class <C.class_name>
     public <def.name.noExtension>Template createTemplate(
         @NotNull final Result<String> customResult,
         @NotNull final List<Property<String>> properties,
-        @NotNull final String result,
         @NotNull final QueryJCommand command)
     {
         @NotNull final <def.type.capitalized>TemplateContext t_Context =
