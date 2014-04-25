@@ -14,4 +14,4 @@ output: Cucumber;
 filename  builder : PerCustomResultTemplateBuildHandler.java;
 
 // The package.
-package: cucumber.templates;
+package: org.acmsl.queryj.templates.handlers;
