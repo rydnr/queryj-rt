@@ -34,9 +34,9 @@
 // Author: Jose San Leandro Armendariz
 //
 // Description: Defines the rules to generate QueryJ's per custom result
-//              templateFactories.
+//              template factories.
 //
-group TemplateFactory;
+group PerCustomResultTemplateFactory;
 
 import "common.stg"
 
