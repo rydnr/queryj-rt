@@ -260,6 +260,10 @@ public abstract class BasePerCustomResultTemplateBuildHandler
     }
 
     /**
+     * Retrieves the decorator factory.
+     * @param de
+     */
+    /**
      * Retrieves the package name from the attribute map.
      * @param customResult the custom RESULT.
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
