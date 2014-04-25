@@ -138,7 +138,6 @@ public abstract class BasePerCustomResultTemplateWritingHandler
      * using a different package naming scheme.
      * @param engineName the engine name.
      * @param parameters the parameter map.
-     * @param packageUtils the <code>PackageUtils</code> instance.
      * @return such folder.
      */
     @NotNull
