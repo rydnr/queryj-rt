@@ -189,7 +189,6 @@ public class <C.class_name>
                 metadataManager,
                 engine,
                 parameters);
-                tableName, engine, projectPackage);
 
         @NotNull final String[] pieces = packageName.split("\\\.");
 
