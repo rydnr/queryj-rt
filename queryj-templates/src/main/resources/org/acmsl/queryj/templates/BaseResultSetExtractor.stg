@@ -158,7 +158,7 @@ public abstract class <repository.capitalized>BaseResultSetExtractor\<V>
     /**
      * Extracts &lt;V&gt; information from given result set.
      * @param resultSet the result set.
-     * @return the V instance, or {@code null} if the operation returned no data.
+     * @return the &lt;V&gt; instance, or {@code null} if the operation returned no data.
      * @throws SQLException intercepted by \<i>Spring\</i\>.
      * @throws DataAccessException with information about any
      * custom exception.
