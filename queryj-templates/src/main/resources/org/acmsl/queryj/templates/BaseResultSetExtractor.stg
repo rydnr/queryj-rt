@@ -108,6 +108,26 @@ class(repository, tables, C) ::= <<
 public abstract class <repository.capitalized>BaseResultSetExtractor\<V>
     implements Serializable
 {
+    /**
+     * Extracts {@link <table.name.voName>} information from given result set.
+     * @param resultSet the result set.
+     * @param listener the {@link <repository.voName>DAOListener} instance.
+     * @return the {@code <table.name.voName>} or
+     * {@code null} if the operation returned no data.
+     * @throws SQLException intercepted by \<i>Spring\</i\>.
+     * @throws DataAccessException with information about any
+     * custom exception.
+     */
+    <notnull(C=C)>
+    public Object extractData(
+        <notnull(C=C)>final ResultSet resultSet,
+        <nullable(C=C)>final <repository.voName>DAOListener listener)
+        throws  SQLException,
+                DataAccessException
+    {
+        return extractData(resultSet, listener, <table.name.voName>ValueObjectFactory.getInstance());
+    }
+
 
 }
 >>
