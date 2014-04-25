@@ -146,7 +146,7 @@ public class <C.class_name>
     @Override
     @NotNull
     public <def.name.noExtension>Template createTemplate(
-        @NotNull final String tableName,
+        @NotNull final String result,
         @NotNull final List\<Row\<String\>> staticContents,
         @NotNull final QueryJCommand command)
     {
