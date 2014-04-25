@@ -202,7 +202,7 @@ public abstract class AbstractQueryJCommandHandler
     @NotNull
     protected DecoratorFactory retrieveDecoratorFactory(@NotNull final QueryJCommand command)
     {
-
+        return QueryJCommandUtils.getInstance().retrieveDe
     }
     /**
      * Retrieves whether to use sub folders or not.
