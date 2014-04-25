@@ -155,7 +155,8 @@ public class <C.class_name>
 
         @NotNull final String t_strFileName =
             retrieveTemplateFileName(
-                customResult, t_Context.getMetadataManager());
+                customResult,
+                t_Context.getMetadataManager());
 
         new QueryJCommandWrapper\<String>(command).setSetting(
             Literals.FILE_NAME, t_strFileName);
