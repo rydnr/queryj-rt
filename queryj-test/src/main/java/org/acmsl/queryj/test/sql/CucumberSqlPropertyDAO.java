@@ -226,9 +226,8 @@ public class CucumberSqlPropertyDAO
         @Nullable final Result<String> customResult =
             new CucumberSqlResultDAO(customResults).findByPrimaryKey(resultId);
 
-            if (   (customResult != null)
-                && (resultId.equals(customResult.getId())))
-            {
+        if (customResult != null)
+        {
                 for (@Nullable final Property<String> property : properties.get(resultId))
                 {
                     if (property != null)
