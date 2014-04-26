@@ -199,7 +199,7 @@ public class CucumberSqlResultDAO
 
         if (result == null)
         {
-            throw new RuntimeException("")
+            throw new RuntimeException("result for table " + )
         }
         return result;
     }
