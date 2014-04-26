@@ -486,7 +486,7 @@ public abstract class AbstractPropertyDecorator
      */
     public boolean isStrictlyPrimitive()
     {
-        return isStrictlyPrimitive(getType(), isNullable(), getMetadataTypeManager());
+        return isStrictlyPrimitive(getType().getValue(), isNullable(), getMetadataTypeManager());
     }
 
     /**
