@@ -43,7 +43,7 @@ import "queryj.stg"
 
 source(C) ::= <<
 <!
-  Defines the rules to generate CustomResultSetExtractor implementations.
+  Defines the rules to generate CustomValueObject interfaces.
   @param C the context.
 !>
 <sourceImpl(result=C.result, C=C)>
