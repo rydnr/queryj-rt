@@ -81,7 +81,7 @@ public interface ResultDecorator
      * @return such information.
      */
     @NotNull
-    List<Property<DecoratedString>> getPropertyTypes();
+    List<DecoratedString> getPropertyTypes();
 
     /**
      * Retrieves the large-object-block properties.
