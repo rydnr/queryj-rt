@@ -112,7 +112,7 @@ public abstract class Abstract<result.id.voName>
      <result.properties:{ p | <property_javadoc(property=p)>}; separator="\n">
      */
     public Abstract<result.id.voName>(
-        <result.properties:{ p | <property_method_declaration(property=p, C=C)>}; separator="\n">)
+        <result.properties:{ p | <property_method_declaration(property=p, usePrefix=false, prefix="", C=C)>}; separator="\n">)
     {
 
     }
