@@ -72,6 +72,6 @@ else
   ><if(!property.strictlyPrimitive)
     ><notnull(C=C)><
     endif
-  ><property.javaType> get<property.id.capitalized>()
-<endif>;
+  ><property.javaType> get<property.id.capitalized>()<
+endif>;
 >>
