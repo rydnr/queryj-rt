@@ -217,7 +217,7 @@ public class CucumberSqlResultDAO
     {
         return
             "{ \"class\": \"CucumberSqlResultDAO\""
-            + ", \"result\": =" + m__CustomResult +
-               '}';
+            + ", \"result\": " + m__CustomResult +
+            + ""'}';
     }
 }
