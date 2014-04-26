@@ -37,10 +37,10 @@
 //
 group properties;
 
-attribute_resultset_retrieval(attr, C) ::= <<
+property_resultset_retrieval(attr, C) ::= <<
 <!
- Generates the code to retrieve the attribute value from the ResultSet.
- @param attr the attribute.
+ Generates the code to retrieve the property value from the ResultSet.
+ @param property the property.
  @param C the context.
 !>
 <if(!attr.clob)>resultSet.get<attr.objectType>("<attr.name>")<else><clob_resultset_retrieval(attribute=attr, C=C)><endif>
