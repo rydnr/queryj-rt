@@ -89,7 +89,7 @@ description(result) ::= <<
   Generates the first line of the generated file description.
   @param result the custom result.
 !>
-{@link <result.id.voName} implementation for <result.id> result.
+{@link <result.id.ca} implementation for <result.id> result.
 >>
 
 class(result, repository, C) ::= <<
