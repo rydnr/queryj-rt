@@ -178,6 +178,7 @@ else
     endif
   >public <property.javaType> get<property.id.capitalized>()<
 endif>
+
 {
     return this.m__<property.id.capitalized>;
 }
