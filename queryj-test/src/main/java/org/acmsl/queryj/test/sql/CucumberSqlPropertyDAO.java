@@ -172,7 +172,7 @@ public class CucumberSqlPropertyDAO
      */
     @Nullable
     protected Property<String> findByPrimaryKey(
-        @NotNull final String id, @NotNull final Map<String, List<Property<String>> properties)
+        @NotNull final String id, @NotNull final Map<String, List<Property<String>>> properties)
     {
         @Nullable Property<String> result = null;
 
