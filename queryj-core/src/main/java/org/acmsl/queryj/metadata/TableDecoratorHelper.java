@@ -374,13 +374,13 @@ public class TableDecoratorHelper
     }
 
     /**
-     * Retrieves the ordered list of the fully-qualified types of given attributes.
-     * @param properties such attributes.
+     * Retrieves the ordered list of the fully-qualified types of given properties.
+     * @param properties such properties.
      * @param typeManager the {@link MetadataTypeManager} instance.
      * @return such list.
      */
     @NotNull
-    protected List<DecoratedString> getAttributeTypes(
+    protected List<DecoratedString> getPropertyTypes(
         @NotNull final List<Property<DecoratedString>> properties,
         @NotNull final MetadataTypeManager typeManager)
     {
