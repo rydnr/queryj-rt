@@ -97,13 +97,13 @@ public class CucumberSqlResultDAO
     }
 
     /**
-     * Specifies the custom result.
-     * @param result such result.
+     * Specifies the custom results.
+     * @param results such results.
      */
     @SuppressWarnings("unused")
-    protected void setResultList(@NotNull final List<Result<String>> result)
+    protected void setResultList(@NotNull final List<Result<String>> results)
     {
-        immutableSetResultList(result);
+        immutableSetResultList(results);
     }
 
     /**
