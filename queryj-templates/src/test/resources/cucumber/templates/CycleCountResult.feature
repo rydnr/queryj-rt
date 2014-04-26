@@ -7,7 +7,7 @@ Feature: Classes associated to custom results compile
       | cycle.count | GCycle |
 
     And the following custom result properties:
-      | name       | type | nullable |
+      | name       | index | type | nullable |
       | g_cycle_id | int  | false    |
       | count      | long | false    |
 
