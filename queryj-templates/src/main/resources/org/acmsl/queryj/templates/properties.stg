@@ -47,6 +47,27 @@ property_method_parameter_declaration(property, usePrefix, prefix, C) ::= <<
 <if(!property.strictlyPrimitive)><if(property.nullable)><nullable(C=C)><else><notnull(C=C)><endif><endif>final <property.javaType> <if(usePrefix)><prefix><property.id.voName.capitalized><else><property.id.voName.uncapitalized><endif>
 >>
 
+attribute_declaration(attribute, C) ::= <<
+<!
+ Writes the declaration for given attribute.
+ @param attribute the attribute.
+ @param context the context.
+!>
+/**
+ * The \<i><attribute.name>\</i> value.
+ */
+<if(!attribute.strictlyPrimitive)><if(attribute.nullable)><nullable(C=C)><else><notnull(C=C)><endif><endif>
+private <attribute.javaType> m__<attribute.name.capitalized>;
+>>
+
+attribute_declaration_impl(attr, C) ::= <<
+<!
+  Writes the parameter declaration for a concrete attribute.
+  @param attr the attribute.
+!>
+<type_checker(attribute=attr, C=C)>final <if(attr.clob)>String<else><attr.javaType><endif> <attr.name.uncapitalized>
+>>
+
 property_isolated_declaration(property, C) ::= <<
 <!
   Writes the parameter declaration for a concrete property, isolated.
