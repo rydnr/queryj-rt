@@ -239,7 +239,7 @@ public class CustomResultTestHelper
 
         try
         {
-            propertyIndex = Integer.parseInt(index);
+            result = Integer.parseInt(value);
         }
         catch (@NotNull final NumberFormatException invalidIndex)
         {
