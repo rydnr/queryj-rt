@@ -146,9 +146,9 @@ public boolean equals(<nullable(C=C)>final Object other)
     {
         <notnull(C=C)>final <result.id.voName.voName> candidate = (<result.id.voName.voName>) other;
 
-        <result.attributes:{ a | <attribute_equals(attribute=a)>}; separator="">
+        <result.properties:{ a | <property_equals(property=a)>}; separator="">
         result =
-            <result.attributes:{ a |<a.name.uncapitalized>Match}; separator="\n&& ">;
+            <result.properties:{ a |<a.name.uncapitalized>Match}; separator="\n&& ">;
     }
     else
     {
@@ -173,11 +173,11 @@ public int hashcode()
 
     final int classHashCode = Abstract<result.id.voName.voName>.class.hashcode();
 
-    <result.attributes:{ a | <attribute_hashcode(attribute=a)>}; separator="\n">
+    <result.properties:{ a | <property_hashcode(property=a)>}; separator="\n">
 
     result =
           classHashCode
-        <result.attributes:{ a |+ <a.name.uncapitalized>HashCode}; separator="\n">;
+        <result.properties:{ a |+ <a.name.uncapitalized>HashCode}; separator="\n">;
 
     return result;
 }
@@ -193,7 +193,7 @@ public String toString()
 {
     StringBuilder result = new StringBuilder("{ \class\": \"Abstract<result.id.voName.voName>");
 
-    <result.attributes:{ a | <attribute_toString(attribute=a)>}; separator="\n">
+    <result.properties:{ a | <property_toString(property=a)>}; separator="\n">
 
     result.append(", \"package\": \"<C.package>\" }");
 
