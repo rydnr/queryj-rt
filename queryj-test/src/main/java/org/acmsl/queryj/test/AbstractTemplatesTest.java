@@ -1012,7 +1012,7 @@ public abstract class AbstractTemplatesTest<G, F>
     protected MetadataManager retrieveMetadataManager(
         @NotNull final String engineName,
         @NotNull final Result<String> result,
-        @NotNull final List<Row<String>> staticContents,
+        @NotNull final List<Property<String>> properties,
         @NotNull final DecoratorFactory decoratorFactory)
     {
         @NotNull final List<String> tableNames = new ArrayList<>(tables.size());
