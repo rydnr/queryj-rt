@@ -229,7 +229,7 @@ public class CustomResultTestHelper
     }
 
     /**
-     *
+     * Converts the index.
      */
     /**
      * Creates a new {@link Property}.
