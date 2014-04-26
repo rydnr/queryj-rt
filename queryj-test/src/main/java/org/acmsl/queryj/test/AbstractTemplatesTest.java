@@ -952,6 +952,7 @@ public abstract class AbstractTemplatesTest<G, F>
      * @param tableNames the table names.
      * @param tables the tables.
      * @param staticContents the static contents.
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @return such instance.
      */
     @NotNull
