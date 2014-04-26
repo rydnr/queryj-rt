@@ -91,7 +91,7 @@ public class CucumberSqlResultDAO
      * Specifies the custom result.
      * @param result such result.
      */
-    protected final void immutableSetResultList(@NotNull final Result<String> result)
+    protected final void immutableSetResultList(@NotNull final List<Result<String>> result)
     {
         this.m__lCustomResults = result;
     }
@@ -101,7 +101,7 @@ public class CucumberSqlResultDAO
      * @param result such result.
      */
     @SuppressWarnings("unused")
-    protected void setResultList(@NotNull final Result<String> result)
+    protected void setResultList(@NotNull final List<Result<String>> result)
     {
         immutableSetResultList(result);
     }
