@@ -107,8 +107,8 @@ public class CucumberSqlResultDAO
     }
 
     /**
-     * Retrieves the custom result.
-     * @return such result.
+     * Retrieves the custom results.
+     * @return such results.
      */
     @NotNull
     protected List<Result<String>> getResultList()
