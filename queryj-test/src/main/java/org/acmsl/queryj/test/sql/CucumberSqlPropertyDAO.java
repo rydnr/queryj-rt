@@ -236,7 +236,6 @@ public class CucumberSqlPropertyDAO
                         }
                     }
                 }
-                result = properties;
                 break;
             }
         }
