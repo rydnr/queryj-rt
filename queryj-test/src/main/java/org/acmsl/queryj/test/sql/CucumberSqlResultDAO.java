@@ -66,7 +66,7 @@ public class CucumberSqlResultDAO
     /**
      * The wrapped result list.
      */
-    private List<Result<String>> m__CustomResult;
+    private List<Result<String>> m__lCustomResults;
 
     /**
      * Creates a DAO wrapping given result.
@@ -83,7 +83,7 @@ public class CucumberSqlResultDAO
      */
     protected final void immutableSetResult(@NotNull final Result<String> result)
     {
-        this.m__CustomResult = result;
+        this.m__lCustomResults = result;
     }
 
     /**
@@ -103,7 +103,7 @@ public class CucumberSqlResultDAO
     @NotNull
     protected Result<String> getResult()
     {
-        return m__CustomResult;
+        return m__lCustomResults;
     }
 
     /**
@@ -216,7 +216,7 @@ public class CucumberSqlResultDAO
     {
         return
               "{ \"class\": \"CucumberSqlResultDAO\""
-            + ", \"result\": " + m__CustomResult
+            + ", \"result\": " + m__lCustomResults
             + ", \"package\": \"org.acmsl.queryj.test\""
             + " }";
     }
