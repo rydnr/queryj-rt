@@ -131,11 +131,12 @@ public class CucumberSqlResultDAO
     /**
      * Retrieves the {@link Result} matching given id.
      * @param id the result id.
-     * @param customResult the custom result.
+     * @param customResults the custom results.
      * @return such result.
      */
     @Nullable
-    protected Result<String> findByPrimaryKey(@NotNull final String id, @NotNull final Result<String> customResult)
+    protected Result<String> findByPrimaryKey(
+        @NotNull final String id, @NotNull final List<Result<String>> customResults)
     {
         @Nullable Result<String> result = null;
 
