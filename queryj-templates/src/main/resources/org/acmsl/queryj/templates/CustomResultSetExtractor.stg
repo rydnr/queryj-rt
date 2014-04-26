@@ -62,7 +62,7 @@ sourceImpl(result, C) ::= <<
 <java_header(
   description=
   [
-    description(table=table)
+    description(result=result)
   ],
   template="org/acmsl/queryj/templates/CustomResultSetExtractor.stg",
   C=C)><endif>
