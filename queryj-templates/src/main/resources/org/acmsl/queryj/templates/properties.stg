@@ -77,22 +77,22 @@ property_setter(property, C) ::= <<
  @param C the context.
 !>
 /**
- * Specifies the \<i><property.name>\</i> value.
+ * Specifies the \<i><property.id.voName>\</i> value.
  * @param value such information.
  */
-protected final void immutableSet<property.name.capitalized>(<if(!property.strictlyPrimitive)><notnull(C=C)><endif>final <property.javaType> value)
+protected final void immutableSet<property.id.voName.capitalized>(<if(!property.strictlyPrimitive)><notnull(C=C)><endif>final <property.javaType> value)
 {
-    this.m__<property.name.capitalized> = value;
+    this.m__<property.id.voName.capitalized> = value;
 }
 
 /**
- * Specifies the \<i><property.name>\</i> value.
+ * Specifies the \<i><property.id.voName>\</i> value.
  * @param value such information.
  */
 @SuppressWarnings("unused")
-protected void set<property.name.capitalized>(<if(!property.strictlyPrimitive)><notnull(C=C)><endif>final <property.javaType> value)
+protected void set<property.id.voName.capitalized>(<if(!property.strictlyPrimitive)><notnull(C=C)><endif>final <property.javaType> value)
 {
-    immutableSet<property.name.capitalized>(value);
+    immutableSet<property.id.voName.capitalized>(value);
 }
 >>
 
@@ -103,35 +103,35 @@ property_getter(property, C) ::= <<
  @param C the context.
 !>
 /**
- * Retrieves the \<i><property.name>\</i> value.
+ * Retrieves the \<i><property.id.voName>\</i> value.
  * @return such information.
  */
 <if(property.allowsNull)>
 <if(!property.strictlyPrimitive)><nullable(C=C)><endif>
-protected final <property.objectType> immutableGet<property.name.capitalized>()
+protected final <property.objectType> immutableGet<property.id.voName.capitalized>()
 <else>
 <if(!property.strictlyPrimitive)><notnull(C=C)><endif>
-protected final <property.javaType> immutableGet<property.name.capitalized>()
+protected final <property.javaType> immutableGet<property.id.voName.capitalized>()
 <endif>
 {
-    return m__<property.name.capitalized>;
+    return m__<property.id.voName.capitalized>;
 }
 
 /**
- * Retrieves the \<i><property.name>\</i> value.
+ * Retrieves the \<i><property.id.voName>\</i> value.
  * @return such information.
  */
 @Override
 <if(property.allowsNull)>
 <if(!property.strictlyPrimitive)><nullable(C=C)><endif>
-public <property.objectType> get<property.name.capitalized>()
+public <property.objectType> get<property.id.voName.capitalized>()
 <else>
 <if(!property.strictlyPrimitive)><notnull(C=C)><endif>
-public <property.javaType> get<property.name.capitalized>()
+public <property.javaType> get<property.id.voName.capitalized>()
 <endif>
 {
 <if(property.date)>
-    Date result = immutableGet<property.name.capitalized>();
+    Date result = immutableGet<property.id.voName.capitalized>();
 
     if  (result != null)
     {
@@ -140,7 +140,7 @@ public <property.javaType> get<property.name.capitalized>()
 
     return result;
 <else>
-    return immutableGet<property.name.capitalized>();
+    return immutableGet<property.id.voName.capitalized>();
 <endif>
 }
 >>
@@ -148,9 +148,9 @@ public <property.javaType> get<property.name.capitalized>()
 property_to_primitive(property) ::= <<
 <! Generates the code to convert given property's value to a primitive !>
 <if(property.numeric)
-    ><property.name.uncapitalized><
+    ><property.id.voName.uncapitalized><
  else><if(property.string)
-    ><property.name.uncapitalized><endif><endif>
+    ><property.id.voName.uncapitalized><endif><endif>
 >>
 
 property_resultset_retrieval(property, C) ::= <<
