@@ -46,6 +46,7 @@ import cucumber.api.DataTable;
 import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.PropertyElement;
+import org.acmsl.queryj.customsql.PropertyRefElement;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.ResultElement;
 
@@ -194,7 +195,7 @@ public class CustomResultTestHelper
                     {
                         propertyList.add(property);
 
-
+                        result.add(new PropertyRefElement());
                     }
                 }
             }
