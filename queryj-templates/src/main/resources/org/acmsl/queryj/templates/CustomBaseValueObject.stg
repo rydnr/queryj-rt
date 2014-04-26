@@ -72,11 +72,10 @@ sourceImpl(result, C) ::= <<
 <if(C.implement_markers)>
 
 <endif>
+<if(result.propertyTypes)>
 /*
  * Importing JDK classes.
  */
-import java.io.Serializable;
-<if(result.propertyTypes)>
 <result.propertyTypes:{ t | import <t>;}; separator="\n">
 <endif>
 
