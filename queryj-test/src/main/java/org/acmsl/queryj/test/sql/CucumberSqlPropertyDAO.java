@@ -221,6 +221,7 @@ public class CucumberSqlPropertyDAO
                 && (resultId.equals(customResult.getId())))
             {
                 result = properties;
+                break;
             }
         }
 
