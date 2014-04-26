@@ -43,11 +43,6 @@ import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.metadata.SqlResultDAO;
 
 /*
- * Importing QueryJ Test classes.
- */
-import org.acmsl.queryj.test.antlr4.JavaParser.NonWildcardTypeArgumentsContext;
-
-/*
  * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
