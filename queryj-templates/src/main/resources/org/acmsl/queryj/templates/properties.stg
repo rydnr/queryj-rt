@@ -51,6 +51,6 @@ clob_property_resultset_retrieval(attribute, C) ::= <<
  Deals with Clob properties.
  @param property the property.
  @param C the context.
- !>resultSe.getClob("<attribute.name>")
+ !>resultSet.getClob("<property.id>")
  >>
 
