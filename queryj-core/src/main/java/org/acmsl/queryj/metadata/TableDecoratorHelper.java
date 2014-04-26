@@ -375,7 +375,7 @@ public class TableDecoratorHelper
 
     /**
      * Retrieves the ordered list of the fully-qualified types of given attributes.
-     * @param attrs such attributes.
+     * @param properties such attributes.
      * @param typeManager the {@link MetadataTypeManager} instance.
      * @return such list.
      */
