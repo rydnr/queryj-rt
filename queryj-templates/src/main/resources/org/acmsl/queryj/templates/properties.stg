@@ -44,7 +44,7 @@ property_method_parameter_declaration(property, usePrefix, prefix, C) ::= <<
  @param usePrefix whether to use a prefix or not.
  @param prefix the prefix.
 !>
-<if(!property.strictlyPrimitive)><if(property.nullable)><nullable(C=C)><else><notnull(C=C)><endif><endif>final <property.javaType> <if(usePrefix)><prefix><attribute.name.capitalized><else><attribute.name.uncapitalized><endif>
+<if(!property.strictlyPrimitive)><if(property.nullable)><nullable(C=C)><else><notnull(C=C)><endif><endif>final <property.javaType> <if(usePrefix)><prefix><property.id.capitalized><else><property.id.uncapitalized><endif>
 >>
 
 
