@@ -33,11 +33,11 @@
 //
 // Author: Jose San Leandro Armendariz
 //
-// Description: Defines the rules to generate CustomResultSetExtractor
+// Description: Defines the rules to generate CustomValueObject
 //              implementations.
 //
 //
-group ResultSetExtractor;
+group CustomValueObject;
 
 import "queryj.stg"
 
