@@ -38,6 +38,7 @@ package org.acmsl.queryj.test;
 /*
  * Importing QueryJ Test classes.
  */
+import org.acmsl.commons.utils.StringUtils;
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.test.antlr4.JavaLexer;
@@ -1023,7 +1024,7 @@ public abstract class AbstractTemplatesTest<G, F>
         @NotNull final DatabaseMetaData metadata = EasyMock.createNiceMock(DatabaseMetaData.class);
         @NotNull final TableDAO tableDAO = EasyMock.createNiceMock(TableDAO.class);
         @NotNull final ColumnDAO columnDAO = EasyMock.createNiceMock(ColumnDAO.class);
-        @NotNull final List<String> tableNames = Arrays.asList(customResult.getClassValue());
+        @NotNull final List<String> tableNames = Arrays.asList(StringUtils.getInstance().unCapitalize()customResult.getClassValue());
         EasyMock.expect(result.getMetaData()).andReturn(metadata).anyTimes();
         EasyMock.expect(result.getName()).andReturn("fake manager").anyTimes();
         EasyMock.expect(result.getMetadataTypeManager()).andReturn(new JdbcMetadataTypeManager()).anyTimes();
