@@ -92,7 +92,7 @@ public class CucumberSqlResultDAO
      * @param result such result.
      */
     @SuppressWarnings("unused")
-    protected void setResult(@NotNull final Result<String> result)
+    protected void setResultList(@NotNull final Result<String> result)
     {
         immutableSetResultList(result);
     }
