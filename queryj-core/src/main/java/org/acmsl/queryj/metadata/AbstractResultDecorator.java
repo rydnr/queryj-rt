@@ -77,7 +77,7 @@ import java.util.List;
 @ThreadSafe
 public abstract class AbstractResultDecorator
     extends  ResultElement<DecoratedString>
-    implements  Result,
+    implements  Result<DecoratedString>,
                 ResultDecorator
 {
     /**
