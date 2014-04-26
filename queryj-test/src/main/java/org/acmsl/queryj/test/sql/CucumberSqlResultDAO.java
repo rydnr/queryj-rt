@@ -79,6 +79,15 @@ public class CucumberSqlResultDAO
     }
 
     /**
+     * Creates a DAO wrapping given results.
+     * @param results such results.
+     */
+    public CucumberSqlResultDAO(@NotNull final List<Result<String>> results)
+    {
+        immutableSetResultList(results);
+    }
+
+    /**
      * Specifies the custom result.
      * @param result such result.
      */
@@ -102,7 +111,7 @@ public class CucumberSqlResultDAO
      * @return such result.
      */
     @NotNull
-    protected Result<String> getResult()
+    protected Result<String> getResultList()
     {
         return m__lCustomResults;
     }
@@ -116,7 +125,7 @@ public class CucumberSqlResultDAO
     @Override
     public Result<String> findByPrimaryKey(@NotNull final String id)
     {
-        return findByPrimaryKey(id, getResult());
+        return findByPrimaryKey(id, getResultList());
     }
 
     /**
@@ -157,7 +166,7 @@ public class CucumberSqlResultDAO
     @Override
     public Result<String> findByTable(@NotNull final String table)
     {
-        return findByTable(table, getResult());
+        return findByTable(table, getResultList());
     }
 
     /**
@@ -190,7 +199,7 @@ public class CucumberSqlResultDAO
     @Override
     public List<Result<String>> findAll()
     {
-        return findAll(getResult());
+        return findAll(getResultList());
     }
 
     /**
