@@ -34,7 +34,7 @@
 // Author: Jose San Leandro Armendariz
 //
 // Description: Defines the rules to generate CustomBaseValueObject
-//              interfaces.
+//              implementations.
 //
 //
 group CustomBaseValueObject;
@@ -43,7 +43,7 @@ import "queryj.stg"
 
 source(C) ::= <<
 <!
-  Defines the rules to generate CustomBaseValueObject interfaces.
+  Defines the rules to generate CustomBaseValueObject implementations.
   @param C the context.
 !>
 <sourceImpl(result=C.result, C=C)>
@@ -51,7 +51,7 @@ source(C) ::= <<
 
 sourceImpl(result, C) ::= <<
 <!
-  Defines the rules to generate CustomBaseValueObject interfaces.
+  Defines the rules to generate CustomBaseValueObject implementations.
   @param result the result.
   @param C the context.
 !>
@@ -64,7 +64,7 @@ sourceImpl(result, C) ::= <<
   [
     description(result=result)
   ],
-  template="org/acmsl/queryj/templates/CustomValueObject.stg",
+  template="org/acmsl/queryj/templates/CustomBaseValueObject.stg",
   C=C)><endif>
 */
 <package_declaration(p=C.package)>
@@ -103,7 +103,7 @@ class(result, repository, C) ::= <<
       description(result=result)
     ]:{line |<line>}; separator="\n * ">
 <class_common_javadoc(
-  template="org/acmsl/queryj/templates/CustomResultSetExtractor.stg", C=C)>
+  template="org/acmsl/queryj/templates/CustomBaseValueObject.stg", C=C)>
  */
 public interface <result.id.voName>
     extends Serializable
