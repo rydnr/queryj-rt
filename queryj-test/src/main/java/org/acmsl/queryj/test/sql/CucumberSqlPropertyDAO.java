@@ -75,7 +75,7 @@ public class CucumberSqlPropertyDAO
     /**
      * The custom results.
      */
-    private Result<String> m__lCustomResults;
+    private List<Result<String>> m__lCustomResults;
 
     /**
      * Creates an instance with given properties and result.
