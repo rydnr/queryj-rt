@@ -85,7 +85,7 @@ public class CucumberSqlPropertyDAO
      */
     @SuppressWarnings("unused")
     public CucumberSqlPropertyDAO(
-        @NotNull final List<Property<String>> properties, @NotNull final List<Result<String>> results)
+        @NotNull final Map<String, List<Property<String>> properties, @NotNull final List<Result<String>> results)
     {
         immutableSetProperties(properties);
         immutableSetResults(results);
