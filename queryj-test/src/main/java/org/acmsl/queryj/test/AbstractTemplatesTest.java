@@ -1045,7 +1045,6 @@ public abstract class AbstractTemplatesTest<G, F>
         EasyMock.expect(tableDAO.findAllTables()).andReturn(tables).anyTimes();
         EasyMock.expect(tableDAO.findAllTableNames()).andReturn(tableNames).anyTimes();
 
-
         EasyMock.replay(result);
         EasyMock.replay(metadata);
         EasyMock.replay(tableDAO);
