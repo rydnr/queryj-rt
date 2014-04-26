@@ -216,8 +216,8 @@ public class CucumberSqlResultDAO
     public String toString()
     {
         return
-            "CucumberSqlResultDAO{" +
-               "customResult=" + m__CustomResult +
+            "{ \"class\": \"CucumberSqlResultDAO\""
+            + ", \"customResult=" + m__CustomResult +
                '}';
     }
 }
