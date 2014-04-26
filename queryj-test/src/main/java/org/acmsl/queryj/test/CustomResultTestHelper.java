@@ -215,7 +215,7 @@ public class CustomResultTestHelper
             result =
                 convertToProperty(
                     name,
-                    tableEntry.get("columnName"),
+                    columnName != null ? columnName : name,
                     tableEntry.get(Literals.INDEX),
                     tableEntry.get("type"),
                     Boolean.valueOf(tableEntry.get("nullable")));
