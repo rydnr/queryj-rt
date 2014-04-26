@@ -158,7 +158,30 @@ clob_property_resultset_retrieval(property, C) ::= <<
  !>resultSet.getClob("<property.id>")
  >>
 
-property_getter(property, interface, C) ::= <<
+property_getter_interface(property, C) ::= <<
+<!
+ Writes the getter for given property.
+ @param property the property.
+!>
+/**
+ * Retrieves the \<i><property.id>\</i> value.
+ * @return such information.
+ */
+<if(property.allowsNull)
+  ><if(!property.strictlyPrimitive)
+    ><nullable(C=C)><
+    endif
+  ><if(!interface)>public <endif><property.objectType> get<property.id.capitalized>()<
+else
+  ><if(!property.strictlyPrimitive)
+    ><notnull(C=C)><
+    endif
+  ><if(!interface)>public <endif><property.javaType> get<property.id.capitalized>()<
+endif>
+{
+>>
+
+property_getter(property, C) ::= <<
 <!
  Writes the getter for given property.
  @param property the property.
