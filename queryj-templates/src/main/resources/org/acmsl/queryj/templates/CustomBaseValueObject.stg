@@ -191,9 +191,9 @@ tostring_method(result, C) ::= <<
 @Override
 public String toString()
 {
-    StringBuilder result = new StringBuilder("{ \class\": \"Abstract<result.id.voName.voName>");
+    <notnull(C=C)>final StringBuilder result = new StringBuilder("{ \class\": \"Abstract<result.id.voName.voName>");
 
-    <result.properties:{ a | <property_toString(property=a)>}; separator="\n">
+    <result.properties:{ p | <property_toString(property=p)>}; separator="\n">
 
     result.append(", \"package\": \"<C.package>\" }");
 
