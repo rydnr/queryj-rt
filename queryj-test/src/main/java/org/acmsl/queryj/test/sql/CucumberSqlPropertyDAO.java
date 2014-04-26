@@ -224,7 +224,8 @@ public class CucumberSqlPropertyDAO
             }
         }
 
-        if
+        if (result == null)
+        {
             result = new ArrayList<>(0);
         }
 
