@@ -4,7 +4,7 @@ Feature: Classes associated to custom results compile
 
     Given the following custom result:
       | id | class |
-      | cycle.count | G_CYCLES |
+      | cycle.count | GCycle |
 
     And the following custom result properties:
       | name       | type |
