@@ -88,12 +88,12 @@ public class CucumberSqlResultDAO
     }
 
     /**
-     * Specifies the custom result.
-     * @param result such result.
+     * Specifies the custom results.
+     * @param results such results.
      */
-    protected final void immutableSetResultList(@NotNull final List<Result<String>> result)
+    protected final void immutableSetResultList(@NotNull final List<Result<String>> results)
     {
-        this.m__lCustomResults = result;
+        this.m__lCustomResults = results;
     }
 
     /**
@@ -111,7 +111,7 @@ public class CucumberSqlResultDAO
      * @return such result.
      */
     @NotNull
-    protected Result<String> getResultList()
+    protected List<Result<String>> getResultList()
     {
         return m__lCustomResults;
     }
