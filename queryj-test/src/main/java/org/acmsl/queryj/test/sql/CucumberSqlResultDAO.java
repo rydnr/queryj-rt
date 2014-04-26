@@ -72,6 +72,7 @@ public class CucumberSqlResultDAO
      * Creates a DAO wrapping given result.
      * @param result such result.
      */
+    @SuppressWarnings("unused")
     public CucumberSqlResultDAO(@NotNull final Result<String> result)
     {
         immutableSetResultList(Arrays.asList(result));
