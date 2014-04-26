@@ -140,10 +140,13 @@ public class CucumberSqlResultDAO
     {
         @Nullable Result<String> result = null;
 
-        if (id.equals(customResult.getId()))
+        for (@Nullable final Result<String> customResult : customResults)
         {
-            result = customResult;
-        }
+            if (   (customResult != null)
+                && (id.equals(customResult.getId())))
+            {
+                result = customResult;
+            }
 
         return result;
     }
