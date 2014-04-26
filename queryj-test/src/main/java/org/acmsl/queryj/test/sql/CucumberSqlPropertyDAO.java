@@ -223,7 +223,8 @@ public class CucumberSqlPropertyDAO
     {
         @NotNull final List<Property<String>> result = new ArrayList<>();
 
-        new CucumberSqlResultDAO(customResults).findByPrimaryKey(resultId);
+        @Nullable final Result<String> customResult =
+            new CucumberSqlResultDAO(customResults).findByPrimaryKey(resultId);
 
         for (@Nullable final Result<String> customResult : customResults)
         {
