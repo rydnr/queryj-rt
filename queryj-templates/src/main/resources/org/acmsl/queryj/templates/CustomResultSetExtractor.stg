@@ -180,7 +180,7 @@ protected <result.id.voName> extractData(
 
         result =
             factory.create<result.id.voName>(
-                <result.properties:{a | <attribute_resultset_retrieval(attr=a, C=C)>}; separator=",\n">);
+                <result.properties:{a | <attribute_resultset_retrieval(attr=, C=C)>}; separator=",\n">);
 
         if  (daoListener != null)
         {
