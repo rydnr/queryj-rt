@@ -222,7 +222,7 @@ public class CucumberSqlPropertyDAO
             {
                 for (@Nullable final Property<String> property : properties)
                 {
-                    if ()
+                    if (customResult.getPropertyRefs())
                 }
                 result = properties;
                 break;
