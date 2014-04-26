@@ -514,7 +514,9 @@ public abstract class AbstractPropertyDecorator
     {
         return
             "{ \"class\": \"AbstractPropertyDecorator\""
-        + ", \"property\": "
+        + ", \"property\": " + this.m__Property
+        + ", \"metadataManager\": " + this.m__MetadataManager
+            + ", \""
     }
 
     /**
