@@ -120,7 +120,7 @@ public class CachingAttributeDecorator
 
     /**
      * Creates a {@code CachingAttributeDecorator} with the
-     * <code>Attribute</code> to decorate.
+     * {@link Attribute} to decorate.
      * @param attribute the attribute.
      * @param metadataManager the metadata manager.
      */
