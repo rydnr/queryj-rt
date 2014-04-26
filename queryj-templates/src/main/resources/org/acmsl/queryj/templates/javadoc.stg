@@ -111,5 +111,5 @@ property_javadoc(property) ::= <<
   Writes the Javadoc for a property parameter.
   @param property the property.
 !>
-<if(attr.comment.empty)>* @param <attr.name.uncapitalized> the \<i><attr.name>\</i> value.<else>* @param <attr.name.uncapitalized> <attr.comment>.<endif>
+* @param <attr.name.uncapitalized> the \<i><property.id>\</i> value<else><attr.comment><endif>.
 >>
