@@ -205,7 +205,8 @@ public class CustomResultTestHelper
      * @return the {@link Result} instance.
      */
     @Nullable
-    protected Property<String> convertToProperty(@NotNull final Map<String, String> tableEntry)
+    protected Property<String> convertToProperty(
+        @NotNull final Map<String, String> tableEntry, final int )
     {
         @Nullable Property<String> result = null;
 
