@@ -54,10 +54,10 @@ property_declaration(property, C) ::= <<
  @param context the context.
 !>
 /**
- * The \<i><property.name>\</i> value.
+ * The \<i><property.id.voName>\</i> value.
  */
 <if(!property.strictlyPrimitive)><if(property.nullable)><nullable(C=C)><else><notnull(C=C)><endif><endif>
-private <property.javaType> m__<property.name.capitalized>;
+private <property.javaType> m__<property.id.voName.capitalized>;
 >>
 
 property_declaration_impl(attr, C) ::= <<
