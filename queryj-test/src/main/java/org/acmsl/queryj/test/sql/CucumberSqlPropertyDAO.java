@@ -116,7 +116,7 @@ public class CucumberSqlPropertyDAO
      * @return such list.
      */
     @NotNull
-    protected List<Property<String>> getProperties()
+    protected Map<String, List<Property<String>> getProperties()
     {
         return this.m__Properties;
     }
