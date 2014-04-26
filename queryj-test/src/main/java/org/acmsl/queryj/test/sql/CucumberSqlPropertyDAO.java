@@ -139,7 +139,7 @@ public class CucumberSqlPropertyDAO
     }
 
     /**
-     * Retrieves the custom result.
+     * Retrieves the custom results.
      * @return such result.
      */
     @NotNull
