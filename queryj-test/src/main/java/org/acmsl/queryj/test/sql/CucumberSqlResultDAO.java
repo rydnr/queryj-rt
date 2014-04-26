@@ -212,18 +212,7 @@ public class CucumberSqlResultDAO
     @Override
     public List<Result<String>> findAll()
     {
-        return findAll(getResultList());
-    }
-
-    /**
-     * Retrieves all custom {@link Result results}.
-     * @param customResult the wrapped result.
-     * @return a list of just that element.
-     */
-    @NotNull
-    protected List<Result<String>> findAll(@NotNull final List<Result<String>> customResult)
-    {
-        return result;
+        return getResultList();
     }
 
     /**
