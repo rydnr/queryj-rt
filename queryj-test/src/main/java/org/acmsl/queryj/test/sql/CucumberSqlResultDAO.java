@@ -146,7 +146,9 @@ public class CucumberSqlResultDAO
                 && (id.equals(customResult.getId())))
             {
                 result = customResult;
+                break;
             }
+        }
 
         return result;
     }
@@ -180,10 +182,12 @@ public class CucumberSqlResultDAO
      * @return the result.
      */
     @NotNull
-    protected Result<String> findByTable(@NotNull final String table, @NotNull final Result<String> customResult)
+    protected Result<String> findByTable(
+        @NotNull final String table, @NotNull final List<Result<String>> customResult)
     {
         @Nullable final Result<String> result;
 
+        for ()
         if (table.equals(customResult.getClassValue()))
         {
             result = customResult;
