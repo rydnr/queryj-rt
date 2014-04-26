@@ -191,7 +191,7 @@ tostring_method(result, C) ::= <<
 @Override
 public String toString()
 {
-    <notnull(C=C)>final StringBuilder result = new StringBuilder("{ \class\": \"Abstract<result.id.voName.voName>");
+    <notnull(C=C)>final StringBuilder result = new StringBuilder("{ \class\": \"Abstract<result.id.voName>");
 
     <result.properties:{ p | <property_toString(property=p)>}; separator="\n">
 
