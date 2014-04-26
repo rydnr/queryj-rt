@@ -120,10 +120,10 @@ public class <result.id.voName>ResultSetExtractor
 }
 >>
 
-defaultExtractor(table, repository, C) ::= <<
+defaultExtractor(result, repository, C) ::= <<
 <!
  Generates the default logic for the extractor.
- @param table the table.
+ @param result the result.
  @param repository the repository.
  @param C the context.
 !>
