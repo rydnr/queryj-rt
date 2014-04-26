@@ -700,7 +700,7 @@ public abstract class AbstractTemplatesTest<G, F>
      */
     @NotNull
     protected CustomSqlProvider retrieveCustomSqlProvider(
-        @NotNull final List<Result<String>> sqlList,
+        @NotNull final List<Result<String>> results,
         @NotNull final Map<String, List<Property<String>>> properties)
     {
         return
