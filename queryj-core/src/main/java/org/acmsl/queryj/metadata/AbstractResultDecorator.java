@@ -600,7 +600,7 @@ public abstract class AbstractResultDecorator
     @NotNull
     public String toString()
     {
-        return "AbstractResultDecorator{" +
+        return "{ \"class\": \"AbstractResultDecorator\"
                "customSqlProvider=" + m__CustomSqlProvider +
                ",result=" + m__Result +
                ",metadataManager=" + m__MetadataManager +
