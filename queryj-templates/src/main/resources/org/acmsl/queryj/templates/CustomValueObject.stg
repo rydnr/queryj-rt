@@ -34,7 +34,7 @@
 // Author: Jose San Leandro Armendariz
 //
 // Description: Defines the rules to generate CustomValueObject
-//              implementations.
+//              interfaces.
 //
 //
 group CustomValueObject;
