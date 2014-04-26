@@ -226,8 +226,6 @@ public class CucumberSqlPropertyDAO
         @Nullable final Result<String> customResult =
             new CucumberSqlResultDAO(customResults).findByPrimaryKey(resultId);
 
-        for (@Nullable final Result<String> customResult : customResults)
-        {
             if (   (customResult != null)
                 && (resultId.equals(customResult.getId())))
             {
