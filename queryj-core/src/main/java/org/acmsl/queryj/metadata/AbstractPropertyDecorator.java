@@ -517,6 +517,7 @@ public abstract class AbstractPropertyDecorator
         + ", \"property\": " + this.m__Property
         + ", \"metadataManager\": " + this.m__MetadataManager
             + ", \"metadataTypeManager\": " + this.m__MetadataTypeManager
+            + ""
     }
 
     /**
