@@ -123,7 +123,7 @@ public class CucumberSqlPropertyDAO
      * Specifies the custom result.
      * @param result such result.
      */
-    protected final void immutableSetResult(@NotNull final Result<String> result)
+    protected final void immutableSetResults(@NotNull final Result<String> result)
     {
         this.m__lCustomResults = result;
     }
@@ -135,7 +135,7 @@ public class CucumberSqlPropertyDAO
     @SuppressWarnings("unused")
     protected void setResult(@NotNull final Result<String> result)
     {
-        immutableSetResult(result);
+        immutableSetResults(result);
     }
 
     /**
