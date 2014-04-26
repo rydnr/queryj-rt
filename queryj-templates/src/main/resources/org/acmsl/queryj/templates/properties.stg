@@ -133,55 +133,6 @@ protected void set<property.id.voName.capitalized>(<if(!property.strictlyPrimiti
 }
 >>
 
-property_getter(property, C) ::= <<
-<!
- Writes the getter for given property.
- @param property the property.
- @param C the context.
-!>
-/**
- * Retrieves the \<i><property.id.voName>\</i> value.
- * @return such information.
- */
-<if(property.allowsNull)>
-<if(!property.strictlyPrimitive)><nullable(C=C)><endif>
-protected final <property.objectType> immutableGet<property.id.voName.capitalized>()
-<else>
-<if(!property.strictlyPrimitive)><notnull(C=C)><endif>
-protected final <property.javaType> immutableGet<property.id.voName.capitalized>()
-<endif>
-{
-    return m__<property.id.voName.capitalized>;
-}
-
-/**
- * Retrieves the \<i><property.id.voName>\</i> value.
- * @return such information.
- */
-@Override
-<if(property.allowsNull)>
-<if(!property.strictlyPrimitive)><nullable(C=C)><endif>
-public <property.objectType> get<property.id.voName.capitalized>()
-<else>
-<if(!property.strictlyPrimitive)><notnull(C=C)><endif>
-public <property.javaType> get<property.id.voName.capitalized>()
-<endif>
-{
-<if(property.date)>
-    Date result = immutableGet<property.id.voName.capitalized>();
-
-    if  (result != null)
-    {
-        result = new Date(result.getTime());
-    }
-
-    return result;
-<else>
-    return immutableGet<property.id.voName.capitalized>();
-<endif>
-}
->>
-
 property_to_primitive(property) ::= <<
 <! Generates the code to convert given property's value to a primitive !>
 <if(property.numeric)
