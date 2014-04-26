@@ -206,7 +206,7 @@ public class CustomResultTestHelper
      */
     @Nullable
     protected Property<String> convertToProperty(
-        @NotNull final Map<String, String> tableEntry, final int )
+        @NotNull final Map<String, String> tableEntry, final int index)
     {
         @Nullable Property<String> result = null;
 
