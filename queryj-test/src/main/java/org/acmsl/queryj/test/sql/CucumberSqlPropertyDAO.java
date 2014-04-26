@@ -228,21 +228,21 @@ public class CucumberSqlPropertyDAO
 
         if (customResult != null)
         {
-                for (@Nullable final Property<String> property : properties.get(resultId))
+            for (@Nullable final Property<String> property : properties.get(resultId))
+            {
+                if (property != null)
                 {
-                    if (property != null)
+                    for (@Nullable final PropertyRef propertyRef : customResult.getPropertyRefs())
                     {
-                        for (@Nullable final PropertyRef propertyRef : customResult.getPropertyRefs())
+                        if (   (propertyRef != null)
+                            && (propertyRef.getId().equals(property.getId())))
                         {
-                            if (   (propertyRef != null)
-                                && (propertyRef.getId().equals(property.getId())))
-                            {
-                                result.add(property);
-                                break;
-                            }
+                            result.add(property);
+                            break;
                         }
                     }
                 }
+            }
                 break;
             }
         }
