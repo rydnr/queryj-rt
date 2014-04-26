@@ -1027,7 +1027,7 @@ public abstract class AbstractTemplatesTest<G, F>
         @Nullable final String resultClass = customResult.getClassValue();
         @NotNull final List<String> tableNames =
             resultClass != null
-            ? Arrays.asList(StringUtils.getInstance().unCapitalize(customResult.getClassValue(), "_"))
+            ? Arrays.asList(StringUtils.getInstance().unCapitalize(resultClass, "_"))
             : new ArrayList<>(0);
 
         EasyMock.expect(result.getMetaData()).andReturn(metadata).anyTimes();
