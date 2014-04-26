@@ -110,6 +110,7 @@ import java.nio.charset.Charset;
 import java.sql.DatabaseMetaData;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -1022,7 +1023,7 @@ public abstract class AbstractTemplatesTest<G, F>
         @NotNull final DatabaseMetaData metadata = EasyMock.createNiceMock(DatabaseMetaData.class);
         @NotNull final TableDAO tableDAO = EasyMock.createNiceMock(TableDAO.class);
         @NotNull final ColumnDAO columnDAO = EasyMock.createNiceMock(ColumnDAO.class);
-
+        @NotNull final List<String> tableNames = Arrays.asList(customResult.getClassValue());
         EasyMock.expect(result.getMetaData()).andReturn(metadata).anyTimes();
         EasyMock.expect(result.getName()).andReturn("fake manager").anyTimes();
         EasyMock.expect(result.getMetadataTypeManager()).andReturn(new JdbcMetadataTypeManager()).anyTimes();
