@@ -51,7 +51,7 @@ source(C) ::= <<
 
 sourceImpl(result, C) ::= <<
 <!
-  Defines the rules to generate CustomResultSetExtractor implementations.
+  Defines the rules to generate CustomValueObject implementations.
   @param result the result.
   @param C the context.
 !>
