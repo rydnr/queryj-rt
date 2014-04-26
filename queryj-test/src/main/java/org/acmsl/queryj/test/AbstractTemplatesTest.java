@@ -1006,7 +1006,7 @@ public abstract class AbstractTemplatesTest<G, F>
      * @param engineName the name of the engine.
      * @param customResult the custom result.
      * @param properties the properties.
-     * @param
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @return such instance.
      */
     @NotNull
