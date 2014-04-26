@@ -289,6 +289,7 @@ public class CucumberSqlPropertyDAO
         for (@NotNull final Entry<String, List<Property<String>>> entry : properties.entrySet())
         {
             entry.getValue().add(new PropertyElement<>(id, columnName, index, type, nullable));
+        }
     }
 
     /**
