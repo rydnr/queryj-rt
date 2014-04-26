@@ -235,6 +235,15 @@ public class CustomResultTestHelper
      */
     protected int toInt(@NotNull final String value)
     {
+        int propertyIndex = -1;
+
+        try
+        {
+            propertyIndex = Integer.parseInt(index);
+        }
+        catch (@NotNull final NumberFormatException invalidIndex)
+        {
+        }
 
     }
 
