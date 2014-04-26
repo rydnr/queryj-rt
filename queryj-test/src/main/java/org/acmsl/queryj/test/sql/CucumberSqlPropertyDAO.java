@@ -80,7 +80,7 @@ public class CucumberSqlPropertyDAO
     /**
      * Creates an instance with given properties and result.
      * @param properties the properties.
-     * @param result the result.
+     * @param results the results.
      */
     @SuppressWarnings("unused")
     public CucumberSqlPropertyDAO(
