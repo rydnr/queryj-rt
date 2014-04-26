@@ -235,7 +235,7 @@ public class CustomResultTestHelper
      */
     protected int toInt(@NotNull final String value)
     {
-        int propertyIndex = -1;
+        int result = -1;
 
         try
         {
