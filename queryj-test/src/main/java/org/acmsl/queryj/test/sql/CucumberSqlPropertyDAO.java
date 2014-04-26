@@ -219,6 +219,9 @@ public class CucumberSqlPropertyDAO
         {
             if (   (customResult != null)
                 && (resultId.equals(customResult.getId())))
+            {
+                result = properties;
+            }
         {
             result = new ArrayList<>(0);
         }
