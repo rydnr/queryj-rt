@@ -1045,20 +1045,6 @@ public abstract class AbstractTemplatesTest<G, F>
         EasyMock.expect(tableDAO.findAllTables()).andReturn(tables).anyTimes();
         EasyMock.expect(tableDAO.findAllTableNames()).andReturn(tableNames).anyTimes();
 
-        for (@NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table : tables)
-        {
-            try
-            {
-                EasyMock.expect(tableDAO.queryContents(table.getName())).andReturn(staticContents).anyTimes();
-            }
-            catch (@NotNull final SQLException sqlException)
-            {
-                // Forced to define the catch block.
-            }
-            EasyMock.expect(tableDAO.findByName(table.getName())).andReturn(table).anyTimes();
-            EasyMock.expect(tableDAO.findByDAO(table.getName())).andReturn(table).anyTimes();
-            EasyMock.expect(columnDAO.findAllColumns(table.getName())).andReturn(table.getAttributes());
-        }
 
         EasyMock.replay(result);
         EasyMock.replay(metadata);
