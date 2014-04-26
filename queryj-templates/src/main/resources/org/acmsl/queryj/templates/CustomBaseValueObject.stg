@@ -144,7 +144,7 @@ public boolean equals(<nullable(C=C)>final Object other)
 
     if (other instanceof <result.id.voName>)
     {
-        <notnull(C=C)>final <result.name.voName> candidate = (<result.name.voName>) other;
+        <notnull(C=C)>final <result.id.voName.voName> candidate = (<result.id.voName.voName>) other;
 
         <result.attributes:{ a | <attribute_equals(attribute=a)>}; separator="">
         result =
@@ -171,7 +171,7 @@ public int hashcode()
 {
     final int result;
 
-    final int classHashCode = Abstract<result.name.voName>.class.hashcode();
+    final int classHashCode = Abstract<result.id.voName.voName>.class.hashcode();
 
     <result.attributes:{ a | <attribute_hashcode(attribute=a)>}; separator="\n">
 
@@ -191,7 +191,7 @@ tostring_method(result, C) ::= <<
 @Override
 public String toString()
 {
-    StringBuilder result = new StringBuilder("{ \class\": \"Abstract<result.name.voName>");
+    StringBuilder result = new StringBuilder("{ \class\": \"Abstract<result.id.voName.voName>");
 
     <result.attributes:{ a | <attribute_toString(attribute=a)>}; separator="\n">
 
