@@ -514,7 +514,7 @@ public abstract class AbstractPropertyDecorator
     {
         return
             "{ \"class\": \"AbstractPropertyDecorator\""
-        + ", "
+        + ", \"property\": "
     }
 
     /**
