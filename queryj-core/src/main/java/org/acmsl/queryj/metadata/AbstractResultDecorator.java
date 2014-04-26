@@ -601,12 +601,12 @@ public abstract class AbstractResultDecorator
     public String toString()
     {
         return
-            "{ \"class\": \"AbstractResultDecorator\""
+              "{ \"class\": \"AbstractResultDecorator\""
             + ", \"result\": " + m__Result
             + ", \"customSqlProvider\": " + m__CustomSqlProvider
-            + ", \"metadataManager\": " + m__MetadataManager +
-            + ", \"decoratorFactory\": " + m__DecoratorFactory +
-               '}';
+            + ", \"metadataManager\": " + m__MetadataManager
+            + ", \"decoratorFactory\": " + m__DecoratorFactory
+            + " }";
     }
 
     /**
