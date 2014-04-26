@@ -233,6 +233,7 @@ public class CucumberSqlPropertyDAO
                                 result.add(property);
                                 break;
                             }
+                        }
                     }
                 }
                 result = properties;
