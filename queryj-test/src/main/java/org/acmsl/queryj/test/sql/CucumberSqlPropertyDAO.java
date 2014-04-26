@@ -272,6 +272,9 @@ public class CucumberSqlPropertyDAO
         properties.add(new PropertyElement<>(id, columnName, index, type, nullable));
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public String toString()
     {
