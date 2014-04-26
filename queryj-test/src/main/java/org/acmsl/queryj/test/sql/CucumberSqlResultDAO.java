@@ -218,7 +218,7 @@ public class CucumberSqlResultDAO
         return
             "{ \"class\": \"CucumberSqlResultDAO\""
             + ", \"result\": " + m__CustomResult
-            + ", \"package\": \""
+            + ", \"package\": \"org.acmsl.queryj.test"
             + " }";
     }
 }
