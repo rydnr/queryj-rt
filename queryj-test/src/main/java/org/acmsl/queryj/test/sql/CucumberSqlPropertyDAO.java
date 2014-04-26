@@ -223,7 +223,7 @@ public class CucumberSqlPropertyDAO
     {
         @NotNull final List<Property<String>> result = new ArrayList<>();
 
-        new Cu
+        new CucumberSqlResultDAO()
 
         for (@Nullable final Result<String> customResult : customResults)
         {
