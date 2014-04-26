@@ -184,14 +184,13 @@ public class CustomResultTestHelper
                     propertyList = new ArrayList<>();
                     properties.put(result.getId(), propertyList);
                 }
-                    for (@NotNull final Map<String, String> propertyEntry: propertyEntries)
-                    {
-                        property = convertToProperty(propertyEntry);
+                for (@NotNull final Map<String, String> propertyEntry: propertyEntries)
+                {
+                    property = convertToProperty(propertyEntry);
 
-                        if (property != null)
-                        {
-                            propertyList.add(property);
-                        }
+                    if (property != null)
+                    {
+                        propertyList.add(property);
                     }
                 }
             }
