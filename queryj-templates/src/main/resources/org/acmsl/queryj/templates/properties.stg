@@ -69,7 +69,5 @@ property_getter(attribute, C) ::= <<
 <else>
 <if(!property.strictlyPrimitive)><notnull(C=C)><endif>
 <attribute.javaType> get<attribute.name.capitalized>()
-<endif>
-{
-    return m__<attribute.name.capitalized>;
-}
+<endif>;
+>>

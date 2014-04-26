@@ -132,10 +132,11 @@ protected void set<attribute.name.capitalized>(<if(!attribute.strictlyPrimitive)
 }
 >>
 
-attribute_getter(attribute) ::= <<
+attribute_getter(attribute, C) ::= <<
 <!
  Writes the getter for given attribute.
  @param attribute the attribute.
+ @param C the context.
 !>
 /**
  * Retrieves the \<i><attribute.name>\</i> value.
