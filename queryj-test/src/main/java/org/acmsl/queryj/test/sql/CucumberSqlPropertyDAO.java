@@ -286,7 +286,7 @@ public class CucumberSqlPropertyDAO
         @NotNull final Map<String, List<Property<String>>> properties)
     {
         // we don't know the result :(
-        for (@NotNull final Entry<String, List<Property<String>>> : properties.entrySet())
+        for (@NotNull final Entry<String, List<Property<String>>> entry : properties.entrySet())
         {
         properties.add(new PropertyElement<>(id, columnName, index, type, nullable));
     }
