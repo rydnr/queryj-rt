@@ -63,6 +63,7 @@ import org.checkthread.annotations.ThreadSafe;
 /*
  * Importing JetBrains annotations.
  */
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -180,6 +181,7 @@ public class CustomResultTestHelper
 
                 if (propertyList == null)
                 {
+                    propertyList = new ArrayList<>()
                     for (@NotNull final Map<String, String> propertyEntry: propertyEntries)
                     {
                         property = convertToProperty(propertyEntry);
