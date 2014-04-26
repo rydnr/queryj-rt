@@ -261,13 +261,13 @@ public class CustomResultTestHelper
     protected Property<String> convertToProperty(
         @NotNull final String id,
         @NotNull final String columnName,
-        @NotNull final int index,
+        final int index,
         @NotNull final String type,
         final boolean nullable)
     {
         @Nullable final Property<String> result;
 
-        if (index < 1)
+        if (index < 0)
         {
             result = null;
         }
