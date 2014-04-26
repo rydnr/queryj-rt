@@ -197,11 +197,3 @@ protected <result.id.voName> extractData(
     return result;
 }
 >>
-
-nullable_attribute_extraction(attr, table, repository, C) ::= <<
-<attr.name>
->>
-
-attribute_extraction(attr, table, repository, C) ::= <<
-<attr.name>
->>
