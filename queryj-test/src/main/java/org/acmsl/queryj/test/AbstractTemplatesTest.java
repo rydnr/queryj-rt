@@ -1027,6 +1027,8 @@ public abstract class AbstractTemplatesTest<G, F>
         @NotNull final List<String> tableNames =
             customResult.getClassValue() != null
             ? Arrays.asList(StringUtils.getInstance().unCapitalize(customResult.getClassValue(), "_"))
+            : new ArrayList<>(0);
+
         EasyMock.expect(result.getMetaData()).andReturn(metadata).anyTimes();
         EasyMock.expect(result.getName()).andReturn("fake manager").anyTimes();
         EasyMock.expect(result.getMetadataTypeManager()).andReturn(new JdbcMetadataTypeManager()).anyTimes();
