@@ -1018,6 +1018,44 @@ public abstract class AbstractTemplatesTest<G, F>
         @NotNull final List<Property<String>> properties,
         @NotNull final DecoratorFactory decoratorFactory)
     {
+        @NotNull final MetadataManager result = EasyMock.createNiceMock(MetadataManager.class);
+        @NotNull final DatabaseMetaData metadata = EasyMock.createNiceMock(DatabaseMetaData.class);
+        @NotNull final TableDAO tableDAO = EasyMock.createNiceMock(TableDAO.class);
+        @NotNull final ColumnDAO columnDAO = EasyMock.createNiceMock(ColumnDAO.class);
+
+        EasyMock.expect(result.getMetaData()).andReturn(metadata).anyTimes();
+        EasyMock.expect(result.getName()).andReturn("fake manager").anyTimes();
+        EasyMock.expect(result.getMetadataTypeManager()).andReturn(new JdbcMetadataTypeManager()).anyTimes();
+        EasyMock.expect(result.getTableNames()).andReturn(tableNames).anyTimes();
+        EasyMock.expect(result.getTables()).andReturn(tables).anyTimes();
+        EasyMock.expect(result.isCaseSensitive()).andReturn(false).anyTimes();
+        EasyMock.expect(result.getEngine()).andReturn(new UndefinedJdbcEngine(engineName, "11")).anyTimes();
+        EasyMock.expect(result.getTableDAO()).andReturn(tableDAO).anyTimes();
+        EasyMock.expect(result.getColumnDAO()).andReturn(columnDAO).anyTimes();
+        EasyMock.expect(tableDAO.findAllTables()).andReturn(tables).anyTimes();
+        EasyMock.expect(tableDAO.findAllTableNames()).andReturn(tableNames).anyTimes();
+
+        for (@NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table : tables)
+        {
+            try
+            {
+                EasyMock.expect(tableDAO.queryContents(table.getName())).andReturn(staticContents).anyTimes();
+            }
+            catch (@NotNull final SQLException sqlException)
+            {
+                // Forced to define the catch block.
+            }
+            EasyMock.expect(tableDAO.findByName(table.getName())).andReturn(table).anyTimes();
+            EasyMock.expect(tableDAO.findByDAO(table.getName())).andReturn(table).anyTimes();
+            EasyMock.expect(columnDAO.findAllColumns(table.getName())).andReturn(table.getAttributes());
+        }
+
+        EasyMock.replay(result);
+        EasyMock.replay(metadata);
+        EasyMock.replay(tableDAO);
+        EasyMock.replay(columnDAO);
+
+        return result;
     }
 
     /**
