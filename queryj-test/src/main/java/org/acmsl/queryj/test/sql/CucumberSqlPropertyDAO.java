@@ -57,6 +57,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 
 /**
  * Minimal {@link SqlPropertyDAO} implementation on top of a list of {@link Property properties}
@@ -285,6 +286,7 @@ public class CucumberSqlPropertyDAO
         @NotNull final Map<String, List<Property<String>>> properties)
     {
         // we don't know the result :(
+        for (@NotNull final Entry)
         properties.add(new PropertyElement<>(id, columnName, index, type, nullable));
     }
 
