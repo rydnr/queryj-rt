@@ -1004,7 +1004,7 @@ public abstract class AbstractTemplatesTest<G, F>
     /**
      * Retrieves a {@link MetadataManager} instance.
      * @param engineName the name of the engine.
-     * @param result the custom result.
+     * @param customResult the custom result.
      * @param properties the properties.
      * @return such instance.
      */
