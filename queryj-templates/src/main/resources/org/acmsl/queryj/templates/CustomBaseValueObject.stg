@@ -144,7 +144,7 @@ public boolean equals(<nullable(C=C)>final Object other)
 
     if (other instanceof <result.id.voName>)
     {
-        <notnull(C=C)>final <result.id.voName.voName> candidate = (<result.id.voName.voName>) other;
+        <notnull(C=C)>final <result.id.voName> candidate = (<result.id.voName>) other;
 
         <result.properties:{ a | <property_equals(property=a)>}; separator="">
         result =
