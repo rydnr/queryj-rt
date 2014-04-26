@@ -711,7 +711,7 @@ public abstract class AbstractTemplatesTest<G, F>
                  */
                 @Override
                 @NotNull
-                public SqlDAO getReDAO()
+                public SqlDAO getSqlDAO()
                 {
                     return new CucumberSqlDAO(sqlList);
                 }
