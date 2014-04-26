@@ -197,7 +197,10 @@ public class CucumberSqlResultDAO
             }
         }
 
-        if ()
+        if (result == null)
+        {
+            throw new RuntimeException("")
+        }
         return result;
     }
 
