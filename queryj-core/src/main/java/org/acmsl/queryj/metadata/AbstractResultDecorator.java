@@ -592,9 +592,35 @@ public abstract class AbstractResultDecorator
     }
 
     /**
-     * Retrieves the attribute types.
-     * @return such information.
+     * Retrieves the ordered list of the fully-qualified attribute types.
+     * @return such list.
      */
+    @Override
+    @NotNull
+    public List<DecoratedString> getAttributeTypes()
+    {
+        return
+            getAttributeTypes(
+                getProperties(),
+                getMetadataManager().getMetadataTypeManager(),
+                TableDecoratorHelper.getInstance());
+    }
+
+    /**
+     * Retrieves the ordered list of the fully-qualified types of given attributes.
+     * @param properties such attributes.
+     * @param typeManager the {@link MetadataTypeManager} instance.
+     * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
+     * @return such list.
+     */
+    @NotNull
+    protected List<DecoratedString> getAttributeTypes(
+        @NotNull final List<Property<DecoratedString>> properties,
+        @NotNull final MetadataTypeManager typeManager,
+        @NotNull final TableDecoratorHelper tableDecoratorHelper)
+    {
+        return tableDecoratorHelper.getAttributeTypes(properties, typeManager);
+    }
 
     /**
      * Provides a text representation of the information
