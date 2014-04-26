@@ -27,8 +27,8 @@
  *
  * Author: Jose San Leandro Armendariz (chous)
  *
- * Description: A SqlResultDAO implementation wrapping a single Result
- *              instance.
+ * Description: A SqlResultDAO implementation wrapping a single or multiple
+ *              Result instances.
  *
  * Date: 6/25/13
  * Time: 6:02 AM
@@ -64,9 +64,9 @@ public class CucumberSqlResultDAO
     implements SqlResultDAO
 {
     /**
-     * The wrapped result.
+     * The wrapped result list.
      */
-    private Result<String> m__CustomResult;
+    private List<Result<String>> m__CustomResult;
 
     /**
      * Creates a DAO wrapping given result.
