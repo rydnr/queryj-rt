@@ -73,9 +73,9 @@ public class CucumberSqlPropertyDAO
     private List<Property<String>> m__Properties;
 
     /**
-     * The custom result.
+     * The custom results.
      */
-    private Result<String> m__CustomResult;
+    private Result<String> m__lCustomResults;
 
     /**
      * Creates an instance with given properties and result.
@@ -125,7 +125,7 @@ public class CucumberSqlPropertyDAO
      */
     protected final void immutableSetResult(@NotNull final Result<String> result)
     {
-        this.m__CustomResult = result;
+        this.m__lCustomResults = result;
     }
 
     /**
@@ -145,7 +145,7 @@ public class CucumberSqlPropertyDAO
     @NotNull
     protected Result<String> getResult()
     {
-        return m__CustomResult;
+        return m__lCustomResults;
     }
 
     /**
@@ -266,7 +266,7 @@ public class CucumberSqlPropertyDAO
     public String toString()
     {
         return "CucumberSqlPropertyDAO{" +
-               "customResult=" + m__CustomResult +
+               "customResult=" + m__lCustomResults +
                ", properties=" + m__Properties +
                '}';
     }
