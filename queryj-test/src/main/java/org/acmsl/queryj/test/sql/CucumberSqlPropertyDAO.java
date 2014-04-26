@@ -178,7 +178,8 @@ public class CucumberSqlPropertyDAO
 
         for (@Nullable final List<Property<String>> propertyList: properties.values())
         {
-            if ()
+            if (propertyList != null)
+            {
         }
         for (@NotNull final Property<String> property : properties)
         {
