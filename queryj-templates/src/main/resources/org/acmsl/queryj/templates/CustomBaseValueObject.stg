@@ -117,20 +117,20 @@ public abstract class Abstract<result.id.voName>
     public Abstract<result.id.voName>(
         <result.properties:{ p | <property_method_parameter_declaration(property=p, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
     {
-        <result.properties:{ p | <immutable_property_setter_call(property=p)>}; separator="\n">
+        <result.properties:{ p | <immuresult_property_setter_call(property=p)>}; separator="\n">
     }
 
     <result.properties:{ p | <property_accessors(property=p, C=C)>}; separator="\n">
 
-    <equals_method(table=table, C=C)>
+    <equals_method(result=result, C=C)>
 
-    <hashcode_method(table=table, C=C)>
+    <hashcode_method(result=result, C=C)>
 
-    <tostring_method(table=table, C=C)>
+    <tostring_method(result=result, C=C)>
 }
 >>
 
-equals_method(table, C) ::= <<
+equals_method(result, C) ::= <<
 <! Generates the equals(Object) method !>
 /**
  * Checks whether given object is semantically equivalent to this one.
@@ -142,13 +142,13 @@ public boolean equals(<nullable(C=C)>final Object other)
 {
     final boolean result;
 
-    if (other instanceof <table.name.voName>)
+    if (other instanceof <result.name.voName>)
     {
-        <notnull(C=C)>final <table.name.voName> candidate = (<table.name.voName>) other;
+        <notnull(C=C)>final <result.name.voName> candidate = (<result.name.voName>) other;
 
-        <table.attributes:{ a | <attribute_equals(attribute=a)>}; separator="">
+        <result.attributes:{ a | <attribute_equals(attribute=a)>}; separator="">
         result =
-            <table.attributes:{ a |<a.name.uncapitalized>Match}; separator="\n&& ">;
+            <result.attributes:{ a |<a.name.uncapitalized>Match}; separator="\n&& ">;
     }
     else
     {
@@ -159,7 +159,7 @@ public boolean equals(<nullable(C=C)>final Object other)
 }
 >>
 
-hashcode_method(table, C) ::= <<
+hashcode_method(result, C) ::= <<
 <! Generates the hashcode() method !>
 /**
  * Retrieves the hashcode which identifies this instance
@@ -171,19 +171,19 @@ public int hashcode()
 {
     final int result;
 
-    final int classHashCode = Abstract<table.name.voName>.class.hashcode();
+    final int classHashCode = Abstract<result.name.voName>.class.hashcode();
 
-    <table.attributes:{ a | <attribute_hashcode(attribute=a)>}; separator="\n">
+    <result.attributes:{ a | <attribute_hashcode(attribute=a)>}; separator="\n">
 
     result =
           classHashCode
-        <table.attributes:{ a |+ <a.name.uncapitalized>HashCode}; separator="\n">;
+        <result.attributes:{ a |+ <a.name.uncapitalized>HashCode}; separator="\n">;
 
     return result;
 }
 >>
 
-tostring_method(table, C) ::= <<
+tostring_method(result, C) ::= <<
 <! Generates the toString() method !>
 /**
  * {@inheritdoc}
@@ -191,9 +191,9 @@ tostring_method(table, C) ::= <<
 @Override
 public String toString()
 {
-    StringBuilder result = new StringBuilder("{ \class\": \"Abstract<table.name.voName>");
+    StringBuilder result = new StringBuilder("{ \class\": \"Abstract<result.name.voName>");
 
-    <table.attributes:{ a | <attribute_toString(attribute=a)>}; separator="\n">
+    <result.attributes:{ a | <attribute_toString(attribute=a)>}; separator="\n">
 
     result.append(", \"package\": \"<C.package>\" }");
 
