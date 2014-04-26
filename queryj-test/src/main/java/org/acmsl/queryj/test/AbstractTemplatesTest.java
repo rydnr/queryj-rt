@@ -701,7 +701,7 @@ public abstract class AbstractTemplatesTest<G, F>
     @NotNull
     protected CustomSqlProvider retrieveCustomSqlProvider(
         @NotNull final List<Result<String>> sqlList,
-        @NotNull final Map<String, List<Parameter<String, ?>>> parameters)
+        @NotNull final Map<String, List<Property<String>>> properties)
     {
         return
             new SqlXmlParserImpl(new ByteArrayInputStream("".getBytes()))
