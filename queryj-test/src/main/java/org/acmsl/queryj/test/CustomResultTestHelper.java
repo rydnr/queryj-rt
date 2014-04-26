@@ -267,7 +267,7 @@ public class CustomResultTestHelper
     {
         @Nullable final Property<String> result;
 
-        if (index < 0)
+        if (index < 1)
         {
             result = null;
         }
