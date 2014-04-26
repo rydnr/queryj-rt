@@ -185,17 +185,16 @@ public class CucumberSqlResultDAO
     protected Result<String> findByTable(
         @NotNull final String table, @NotNull final List<Result<String>> customResults)
     {
-        @Nullable final Result<String> result;
+        @Nullable Result<String> result = null;
 
         for (@Nullable final Result<String> customResult : customResults)
         {
-            if (table.equals(customResult.getClassValue()))
+            if (   (customResult != null)
+                && (table.equals(customResult.getClassValue())))
             {
                 result = customResult;
+                break;
             }
-        else
-        {
-            result = null;
         }
 
         return result;
