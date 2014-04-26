@@ -597,10 +597,10 @@ public abstract class AbstractResultDecorator
      */
     @Override
     @NotNull
-    public List<DecoratedString> getAttributeTypes()
+    public List<DecoratedString> getPropertyTypes()
     {
         return
-            getAttributeTypes(
+            getPropertyTypes(
                 getProperties(),
                 getMetadataManager().getMetadataTypeManager(),
                 TableDecoratorHelper.getInstance());
@@ -614,12 +614,12 @@ public abstract class AbstractResultDecorator
      * @return such list.
      */
     @NotNull
-    protected List<DecoratedString> getAttributeTypes(
+    protected List<DecoratedString> getPropertyTypes(
         @NotNull final List<Property<DecoratedString>> properties,
         @NotNull final MetadataTypeManager typeManager,
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
-        return tableDecoratorHelper.getAttributeTypes(properties, typeManager);
+        return tableDecoratorHelper.getPropertyTypes(properties, typeManager);
     }
 
     /**
