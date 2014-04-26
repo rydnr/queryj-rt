@@ -211,7 +211,7 @@ public class CucumberSqlPropertyDAO
     protected List<Property<String>> findByResult(
         @NotNull final String resultId,
         @NotNull final List<Property<String>> properties,
-        @NotNull final Result<String> customResult)
+        @NotNull final List<Result<String>> customResult)
     {
         @NotNull List<Property<String>> result = properties;
 
