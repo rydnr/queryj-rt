@@ -76,8 +76,8 @@ sourceImpl(result, C) ::= <<
  * Importing JDK classes.
  */
 import java.io.Serializable;
-<if(table.attributeTypes)>
-<table.attributeTypes:{ t | import <t>;}; separator="\n">
+<if(result.attributeTypes)>
+<result.attributeTypes:{ t | import <t>;}; separator="\n">
 <endif>
 
 
