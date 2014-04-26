@@ -281,7 +281,7 @@ public class CucumberSqlPropertyDAO
         return
             "{ \"class\": \"CucumberSqlPropertyDAO\""
             + ", \"customResults\": " + m__lCustomResults +
-            + ", properties=" + m__Properties +
+            + ", \"properties\": " + m__Properties +
                '}';
     }
 }
