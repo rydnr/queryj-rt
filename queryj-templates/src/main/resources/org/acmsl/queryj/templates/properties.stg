@@ -54,3 +54,22 @@ clob_property_resultset_retrieval(property, C) ::= <<
  !>resultSet.getClob("<property.id>")
  >>
 
+property_getter(attribute) ::= <<
+<!
+ Writes the getter for given property.
+ @param attribute the attribute.
+!>
+/**
+ * Retrieves the \<i><attribute.name>\</i> value.
+ * @return such information.
+ */
+<if(attribute.allowsNull)>
+<if(!attribute.strictlyPrimitive)><nullable(C=C)><endif>
+protected final <attribute.objectType> immutableGet<attribute.name.capitalized>()
+<else>
+<if(!attribute.strictlyPrimitive)><notnull(C=C)><endif>
+protected final <attribute.javaType> immutableGet<attribute.name.capitalized>()
+<endif>
+{
+    return m__<attribute.name.capitalized>;
+}
