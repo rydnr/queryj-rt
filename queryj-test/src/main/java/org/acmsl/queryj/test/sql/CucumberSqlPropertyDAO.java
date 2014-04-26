@@ -218,7 +218,7 @@ public class CucumberSqlPropertyDAO
     @NotNull
     protected List<Property<String>> findByResult(
         @NotNull final String resultId,
-        @NotNull final Map<String, List<Property<String>> properties,
+        @NotNull final Map<String, List<Property<String>>> properties,
         @NotNull final List<Result<String>> customResults)
     {
         @NotNull final List<Property<String>> result = new ArrayList<>();
