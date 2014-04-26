@@ -284,6 +284,7 @@ public class CucumberSqlPropertyDAO
         final boolean nullable,
         @NotNull final Map<String, List<Property<String>>> properties)
     {
+        // we don't know the result :(
         properties.add(new PropertyElement<>(id, columnName, index, type, nullable));
     }
 
