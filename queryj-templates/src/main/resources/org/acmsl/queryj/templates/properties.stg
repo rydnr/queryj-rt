@@ -229,35 +229,35 @@ else
 endif>;
 >>
 
-attribute_equals(attribute) ::= <<
-<! Generates the contribution of each attribute to the equals method. !>
-<if(attribute.strictlyPrimitive)>
-final boolean <attribute.name.uncapitalized>Match = (this.m__<attribute.name.capitalized> == candidate.get<attribute.name.capitalized>());
-<else><if(attribute.allowsNull)>
-final boolean <attribute.name.uncapitalized>Match =
-    (   (this.m__<attribute.name.capitalized> != null)
-     && (this.m__<attribute.name.capitalized>.equals(candidate.get<attribute.name.capitalized>())));
+property_equals(property) ::= <<
+<! Generates the contribution of each property to the equals method. !>
+<if(property.strictlyPrimitive)>
+final boolean <property.id.voName.uncapitalized>Match = (this.m__<property.id.voName.capitalized> == candidate.get<property.id.voName.capitalized>());
+<else><if(property.allowsNull)>
+final boolean <property.id.voName.uncapitalized>Match =
+    (   (this.m__<property.id.voName.capitalized> != null)
+     && (this.m__<property.id.voName.capitalized>.equals(candidate.get<property.id.voName.capitalized>())));
 <else>
-final boolean <attribute.name.uncapitalized>Match = this.m__<attribute.name.capitalized>.equals(candidate.get<attribute.name.capitalized>());<endif><endif>
+final boolean <property.id.voName.uncapitalized>Match = this.m__<property.id.voName.capitalized>.equals(candidate.get<property.id.voName.capitalized>());<endif><endif>
 >>
 
-attribute_hashcode(attribute) ::= <<
-<! Generates the hashcode contribution for each attribute. !>
-<if(attribute.strictlyPrimitive)>
-final int <attribute.name.uncapitalized>HashCode = ("" + this.m__<attribute.name.capitalized>).hashCode();<else>
-<if(attribute.allowsNull)>final int <attribute.name.uncapitalized>HashCode;
-if (this.m__<attribute.name.capitalized> == null)
+property_hashcode(property) ::= <<
+<! Generates the hashcode contribution for each property. !>
+<if(property.strictlyPrimitive)>
+final int <property.id.voName.uncapitalized>HashCode = ("" + this.m__<property.id.voName.capitalized>).hashCode();<else>
+<if(property.allowsNull)>final int <property.id.voName.uncapitalized>HashCode;
+if (this.m__<property.id.voName.capitalized> == null)
 {
-    <attribute.name.uncapitalized>HashCode = 0;
+    <property.id.voName.uncapitalized>HashCode = 0;
 }
 else
 {
-     <attribute.name.uncapitalized>HashCode = this.m__<attribute.name.capitalized>.hashCode();
-}<else>final int <attribute.name.uncapitalized>HashCode = this.m__<attribute.name.capitalized>.hashCode();<endif><endif>
+     <property.id.voName.uncapitalized>HashCode = this.m__<property.id.voName.capitalized>.hashCode();
+}<else>final int <property.id.voName.uncapitalized>HashCode = this.m__<property.id.voName.capitalized>.hashCode();<endif><endif>
 >>
 
-attribute_toString(attribute) ::= <<
-<! Generates the code to include given attribute within the toString() method. !>
+property_toString(property) ::= <<
+<! Generates the code to include given property within the toString() method. !>
 result.append("\", \"<a.name.capitalized>\": \"");
 result.append(this.m__<a.name.capitalized>);
 >>
