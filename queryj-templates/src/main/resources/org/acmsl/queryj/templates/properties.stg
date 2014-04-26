@@ -60,78 +60,78 @@ if (<property.id.voName.uncapitalized> != null)
 <else>immutableSet<property.id.voName.capitalized>(<property.id.voName.uncapitalized>);<endif>
 >>
 
-attribute_accessors(attribute, C) ::= <<
+property_accessors(property, C) ::= <<
 <!
- Writes the accessors for given attribute.
- @param attribute the attribute.
+ Writes the accessors for given property.
+ @param property the property.
 !>
-<attribute_setter(attribute=attribute, C=C)>
+<property_setter(property=property, C=C)>
 
-<attribute_getter(attribute=attribute, C=C)>
+<property_getter(property=property, C=C)>
 >>
 
-attribute_setter(attribute, C) ::= <<
+property_setter(property, C) ::= <<
 <!
- Writes the setter for given attribute.
- @param attribute the attribute.
+ Writes the setter for given property.
+ @param property the property.
  @param C the context.
 !>
 /**
- * Specifies the \<i><attribute.name>\</i> value.
+ * Specifies the \<i><property.name>\</i> value.
  * @param value such information.
  */
-protected final void immutableSet<attribute.name.capitalized>(<if(!attribute.strictlyPrimitive)><notnull(C=C)><endif>final <attribute.javaType> value)
+protected final void immutableSet<property.name.capitalized>(<if(!property.strictlyPrimitive)><notnull(C=C)><endif>final <property.javaType> value)
 {
-    this.m__<attribute.name.capitalized> = value;
+    this.m__<property.name.capitalized> = value;
 }
 
 /**
- * Specifies the \<i><attribute.name>\</i> value.
+ * Specifies the \<i><property.name>\</i> value.
  * @param value such information.
  */
 @SuppressWarnings("unused")
-protected void set<attribute.name.capitalized>(<if(!attribute.strictlyPrimitive)><notnull(C=C)><endif>final <attribute.javaType> value)
+protected void set<property.name.capitalized>(<if(!property.strictlyPrimitive)><notnull(C=C)><endif>final <property.javaType> value)
 {
-    immutableSet<attribute.name.capitalized>(value);
+    immutableSet<property.name.capitalized>(value);
 }
 >>
 
-attribute_getter(attribute, C) ::= <<
+property_getter(property, C) ::= <<
 <!
- Writes the getter for given attribute.
- @param attribute the attribute.
+ Writes the getter for given property.
+ @param property the property.
  @param C the context.
 !>
 /**
- * Retrieves the \<i><attribute.name>\</i> value.
+ * Retrieves the \<i><property.name>\</i> value.
  * @return such information.
  */
-<if(attribute.allowsNull)>
-<if(!attribute.strictlyPrimitive)><nullable(C=C)><endif>
-protected final <attribute.objectType> immutableGet<attribute.name.capitalized>()
+<if(property.allowsNull)>
+<if(!property.strictlyPrimitive)><nullable(C=C)><endif>
+protected final <property.objectType> immutableGet<property.name.capitalized>()
 <else>
-<if(!attribute.strictlyPrimitive)><notnull(C=C)><endif>
-protected final <attribute.javaType> immutableGet<attribute.name.capitalized>()
+<if(!property.strictlyPrimitive)><notnull(C=C)><endif>
+protected final <property.javaType> immutableGet<property.name.capitalized>()
 <endif>
 {
-    return m__<attribute.name.capitalized>;
+    return m__<property.name.capitalized>;
 }
 
 /**
- * Retrieves the \<i><attribute.name>\</i> value.
+ * Retrieves the \<i><property.name>\</i> value.
  * @return such information.
  */
 @Override
-<if(attribute.allowsNull)>
-<if(!attribute.strictlyPrimitive)><nullable(C=C)><endif>
-public <attribute.objectType> get<attribute.name.capitalized>()
+<if(property.allowsNull)>
+<if(!property.strictlyPrimitive)><nullable(C=C)><endif>
+public <property.objectType> get<property.name.capitalized>()
 <else>
-<if(!attribute.strictlyPrimitive)><notnull(C=C)><endif>
-public <attribute.javaType> get<attribute.name.capitalized>()
+<if(!property.strictlyPrimitive)><notnull(C=C)><endif>
+public <property.javaType> get<property.name.capitalized>()
 <endif>
 {
-<if(attribute.date)>
-    Date result = immutableGet<attribute.name.capitalized>();
+<if(property.date)>
+    Date result = immutableGet<property.name.capitalized>();
 
     if  (result != null)
     {
@@ -140,17 +140,17 @@ public <attribute.javaType> get<attribute.name.capitalized>()
 
     return result;
 <else>
-    return immutableGet<attribute.name.capitalized>();
+    return immutableGet<property.name.capitalized>();
 <endif>
 }
 >>
 
-attribute_to_primitive(attribute) ::= <<
-<! Generates the code to convert given attribute's value to a primitive !>
-<if(attribute.numeric)
-    ><attribute.name.uncapitalized><
- else><if(attribute.string)
-    ><attribute.name.uncapitalized><endif><endif>
+property_to_primitive(property) ::= <<
+<! Generates the code to convert given property's value to a primitive !>
+<if(property.numeric)
+    ><property.name.uncapitalized><
+ else><if(property.string)
+    ><property.name.uncapitalized><endif><endif>
 >>
 
 property_resultset_retrieval(property, C) ::= <<
