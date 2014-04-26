@@ -223,6 +223,7 @@ public class CucumberSqlPropertyDAO
             {
                 for (@Nullable final Property<String> property : properties)
                 {
+                    if (property != null)
                     for (@Nullable final PropertyRef propertyRef : customResult.getPropertyRefs())
                     {
                         if (propertyRef != null)
