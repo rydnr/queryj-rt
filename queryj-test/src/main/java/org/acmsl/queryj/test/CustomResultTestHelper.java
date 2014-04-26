@@ -184,7 +184,7 @@ public class CustomResultTestHelper
                     propertyList = new ArrayList<>();
                     properties.put(result.getId(), propertyList);
                 }
-                int
+                int index = 0;
                 for (@NotNull final Map<String, String> propertyEntry: propertyEntries)
                 {
                     property = convertToProperty(propertyEntry);
