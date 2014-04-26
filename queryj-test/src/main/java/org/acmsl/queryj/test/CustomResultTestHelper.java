@@ -267,16 +267,6 @@ public class CustomResultTestHelper
     {
         @Nullable final Property<String> result;
 
-        int propertyIndex = -1;
-
-        try
-        {
-            propertyIndex = Integer.parseInt(index);
-        }
-        catch (@NotNull final NumberFormatException invalidIndex)
-        {
-        }
-
         if (propertyIndex == -1)
         {
             result = null;
