@@ -564,6 +564,9 @@ public abstract class AbstractPropertyDecorator
         return property.equals(object);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public int compareTo(final Property<DecoratedString> property)
     {
