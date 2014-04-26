@@ -1,5 +1,5 @@
 /*
- * CustomResultSetExtractor template metadata.
+ * CustomValueObject template metadata.
  */
 // The template name (the filename).
 name : CustomResultSetExtractor.stg;
