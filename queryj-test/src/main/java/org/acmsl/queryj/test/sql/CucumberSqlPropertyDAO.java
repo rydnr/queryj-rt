@@ -228,7 +228,7 @@ public class CucumberSqlPropertyDAO
                         for (@Nullable final PropertyRef propertyRef : customResult.getPropertyRefs())
                         {
                             if (   (propertyRef != null)
-                                && (propertyRef.getId().equals(property.getId()))
+                                && (propertyRef.getId().equals(property.getId())))
                             {
                                 result.add(property);
                                 break;
