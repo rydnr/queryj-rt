@@ -56,8 +56,8 @@ immutable_property_setter_call(property) ::= <<
 if (<property.id.voName.uncapitalized> != null)
 {
     immutableSet<property.id.voName.capitalized>(<property.id.voName.uncapitalized>);
-}<else>immutableSet<prpo.name.capitalized>(<property.id.voName.uncapitalized>);<endif>
-<else>immutableSet<attribute.name.capitalized>(<property.id.voName.uncapitalized>);<endif>
+}<else>immutableSet<property.id.voName.capitalized>(<property.id.voName.uncapitalized>);<endif>
+<else>immutableSet<property.id.voName.capitalized>(<property.id.voName.uncapitalized>);<endif>
 >>
 
 property_resultset_retrieval(property, C) ::= <<
