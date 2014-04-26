@@ -228,7 +228,7 @@ public class CucumberSqlPropertyDAO
             if (   (customResult != null)
                 && (resultId.equals(customResult.getId())))
             {
-                for (@Nullable final Property<String> property : properties)
+                for (@Nullable final Property<String> property : properties.get(resultId))
                 {
                     if (property != null)
                     {
