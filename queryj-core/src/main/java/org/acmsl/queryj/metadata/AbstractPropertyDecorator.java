@@ -484,6 +484,7 @@ public abstract class AbstractPropertyDecorator
      * Checks whether the attribute is strictly primitive.
      * @return such information.
      */
+    @SuppressWarnings("unused")
     public boolean isStrictlyPrimitive()
     {
         return isStrictlyPrimitive(getType().getValue(), isNullable(), getMetadataTypeManager());
