@@ -280,7 +280,7 @@ public class CucumberSqlPropertyDAO
     {
         return
             "{ \"class\": \"CucumberSqlPropertyDAO\""
-            + "customResult=" + m__lCustomResults +
+            + ", \"customResult=" + m__lCustomResults +
                ", properties=" + m__Properties +
                '}';
     }
