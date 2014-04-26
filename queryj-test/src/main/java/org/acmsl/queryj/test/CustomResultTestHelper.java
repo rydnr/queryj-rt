@@ -188,7 +188,7 @@ public class CustomResultTestHelper
                 for (@NotNull final Map<String, String> propertyEntry: propertyEntries)
                 {
                     index++;
-                    property = convertToProperty(propertyEntry);
+                    property = convertToProperty(propertyEntry, index);
 
                     if (property != null)
                     {
