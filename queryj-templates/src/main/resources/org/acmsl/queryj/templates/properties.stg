@@ -47,6 +47,22 @@ property_method_parameter_declaration(property, usePrefix, prefix, C) ::= <<
 <if(!property.strictlyPrimitive)><if(property.nullable)><nullable(C=C)><else><notnull(C=C)><endif><endif>final <property.javaType> <if(usePrefix)><prefix><property.id.voName.capitalized><else><property.id.voName.uncapitalized><endif>
 >>
 
+property_isolated_declaration(attr, C) ::= <<
+<!
+  Writes the parameter declaration for a concrete property, isolated.
+  @param attr the property.
+!>
+<property_declaration(attr=attr, C=C)>,
+>>
+
+property_isolated_declaration_impl(attr, C) ::= <<
+<!
+  Writes the parameter declaration for a concrete property.
+  @param attr the property.
+!>
+<type_checker(property=attr, C=C)>final <if(attr.clob)>String<else><attr.javaType><endif> <attr.name.lowercased>,
+>>
+
 immutable_property_setter_call(property) ::= <<
 <!
  Writes the method call for the immutable setter of given property.
