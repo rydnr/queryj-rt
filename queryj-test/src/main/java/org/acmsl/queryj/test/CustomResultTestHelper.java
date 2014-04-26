@@ -195,7 +195,7 @@ public class CustomResultTestHelper
                     {
                         propertyList.add(property);
 
-                        result.add(new PropertyRefElement());
+                        result.add(new PropertyRefElement(property.getId()));
                     }
                 }
             }
