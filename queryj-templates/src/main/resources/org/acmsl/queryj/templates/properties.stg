@@ -64,8 +64,8 @@ property_getter(attribute, C) ::= <<
  * @return such information.
  */
 <if(property.allowsNull)>
-<if(!attribute.strictlyPrimitive)><nullable(C=C)><endif>
-protected final <attribute.objectType> immutableGet<attribute.name.capitalized>()
+<if(!property.strictlyPrimitive)><nullable(C=C)><endif>
+<property.objectType> get<attribute.name.capitalized>()
 <else>
 <if(!attribute.strictlyPrimitive)><notnull(C=C)><endif>
 protected final <attribute.javaType> immutableGet<attribute.name.capitalized>()
