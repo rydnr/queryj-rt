@@ -106,6 +106,7 @@ class(result, repository, C) ::= <<
   template="org/acmsl/queryj/templates/CustomResultSetExtractor.stg", C=C)>
  */
 public interface <result.id.voName>
+    extends Serializable
 {
 }
 >>
