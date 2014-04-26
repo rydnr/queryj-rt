@@ -107,7 +107,7 @@ attribute_accessors(attribute, C) ::= <<
 <attribute_getter(attribute=attribute, C=C)>
 >>
 
-attribute_setter(attribute, C=C) ::= <<
+attribute_setter(attribute, C) ::= <<
 <!
  Writes the setter for given attribute.
  @param attribute the attribute.
