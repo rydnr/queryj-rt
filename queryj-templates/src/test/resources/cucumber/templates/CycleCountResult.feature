@@ -17,5 +17,5 @@ Feature: Classes associated to custom results compile
 
   Examples:
     | template                 | output                        |
-    | CustomResultSetExtractor | GCycleCountResultSetExtractor |
+    | CustomValueObject | GCycleCountResultSetExtractor |
 #    | CustomResultSetExtractor | GCycleCountResultSetExtractor |
