@@ -1026,7 +1026,7 @@ public abstract class AbstractTemplatesTest<G, F>
         @NotNull final ColumnDAO columnDAO = EasyMock.createNiceMock(ColumnDAO.class);
         @NotNull final List<String> tableNames =
             customResult.getClassValue() != null
-            ? Arrays.asList(StringUtils.getInstance().unCapitalize(customResult.getClassValue(), "_"));
+            ? Arrays.asList(StringUtils.getInstance().unCapitalize(customResult.getClassValue(), "_"))
         EasyMock.expect(result.getMetaData()).andReturn(metadata).anyTimes();
         EasyMock.expect(result.getName()).andReturn("fake manager").anyTimes();
         EasyMock.expect(result.getMetadataTypeManager()).andReturn(new JdbcMetadataTypeManager()).anyTimes();
