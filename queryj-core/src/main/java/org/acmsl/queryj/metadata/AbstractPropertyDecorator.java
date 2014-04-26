@@ -512,7 +512,9 @@ public abstract class AbstractPropertyDecorator
     @NotNull
     public String toString()
     {
-        return "" + getProperty();
+        return
+            "{ \"class\": \"AbstractPropertyDecorator\""
+        + ", "
     }
 
     /**
