@@ -108,15 +108,5 @@ class(result, repository, C) ::= <<
  */
 public interface <result.id.voName>
 {
-    /**
-     * Creates a new instance.
-     * @param listener the {@link <repository.voName>DAOListener} instance.
-     */
-    public <result.id.voName>ResultSetExtractor(<nullable(C=C)>final <repository.voName>DAOListener listener)
-    {
-        super(listener);
-    }
-
-    <defaultExtractor(result=result, repository=repository, C=C)>
 }
 >>
