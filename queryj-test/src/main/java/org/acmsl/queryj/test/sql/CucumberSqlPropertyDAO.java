@@ -214,7 +214,7 @@ public class CucumberSqlPropertyDAO
         @NotNull final List<Property<String>> properties,
         @NotNull final List<Result<String>> customResults)
     {
-        @Nullable List<Property<String>> result = null;
+        @NotNull List<Property<String>> result = new ArrayList<;
 
         for (@Nullable final Result<String> customResult : customResults)
         {
