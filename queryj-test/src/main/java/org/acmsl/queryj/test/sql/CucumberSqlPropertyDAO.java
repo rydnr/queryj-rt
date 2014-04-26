@@ -176,7 +176,7 @@ public class CucumberSqlPropertyDAO
     {
         @Nullable Property<String> result = null;
 
-        for (@Nullable)
+        for (@Nullable final List<Property<String>> )
         for (@NotNull final Property<String> property : properties)
         {
             if (id.equals(property.getId()))
