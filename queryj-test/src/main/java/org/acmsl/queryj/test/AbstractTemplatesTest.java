@@ -703,7 +703,7 @@ public abstract class AbstractTemplatesTest<G, F>
      * @return such instance.
      */
     @NotNull
-    protected CustomSqlProvider retrieveCustomSqlProvider(
+    protected CustomSqlProvider retrieveCustomSqlProviderForResults(
         @NotNull final List<Result<String>> results,
         @NotNull final Map<String, List<Property<String>>> properties)
     {
