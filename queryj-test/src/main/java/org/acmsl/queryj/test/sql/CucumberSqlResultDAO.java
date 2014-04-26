@@ -213,6 +213,7 @@ public class CucumberSqlResultDAO
      * {@inheritDoc}
      */
     @Override
+    @NotNull
     public String toString()
     {
         return
