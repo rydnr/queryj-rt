@@ -233,7 +233,11 @@ public class CustomResultTestHelper
      * @param value the value.
      * @return the numeric value.
      */
-    protected int toInt()
+    protected int toInt(@NotNull final String value)
+    {
+
+    }
+
     /**
      * Creates a new {@link Property}.
      * @param id the id.
