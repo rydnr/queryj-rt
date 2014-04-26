@@ -142,7 +142,7 @@ public boolean equals(<nullable(C=C)>final Object other)
 {
     final boolean result;
 
-    if (other instanceof <result.name.voName>)
+    if (other instanceof <result.id.voName>)
     {
         <notnull(C=C)>final <result.name.voName> candidate = (<result.name.voName>) other;
 
