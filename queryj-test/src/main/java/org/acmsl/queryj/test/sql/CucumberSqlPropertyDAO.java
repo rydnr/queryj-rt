@@ -230,6 +230,9 @@ public class CucumberSqlPropertyDAO
                             if (   (propertyRef != null)
                                 && (propertyRef.getId().equals(property.getId()))
                             {
+                                result.add(property);
+                                break;
+                            }
                     }
                 }
                 result = properties;
