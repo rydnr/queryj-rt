@@ -60,6 +60,99 @@ if (<property.id.voName.uncapitalized> != null)
 <else>immutableSet<property.id.voName.capitalized>(<property.id.voName.uncapitalized>);<endif>
 >>
 
+attribute_accessors(attribute, C) ::= <<
+<!
+ Writes the accessors for given attribute.
+ @param attribute the attribute.
+!>
+<attribute_setter(attribute=attribute, C=C)>
+
+<attribute_getter(attribute=attribute, C=C)>
+>>
+
+attribute_setter(attribute, C) ::= <<
+<!
+ Writes the setter for given attribute.
+ @param attribute the attribute.
+ @param C the context.
+!>
+/**
+ * Specifies the \<i><attribute.name>\</i> value.
+ * @param value such information.
+ */
+protected final void immutableSet<attribute.name.capitalized>(<if(!attribute.strictlyPrimitive)><notnull(C=C)><endif>final <attribute.javaType> value)
+{
+    this.m__<attribute.name.capitalized> = value;
+}
+
+/**
+ * Specifies the \<i><attribute.name>\</i> value.
+ * @param value such information.
+ */
+@SuppressWarnings("unused")
+protected void set<attribute.name.capitalized>(<if(!attribute.strictlyPrimitive)><notnull(C=C)><endif>final <attribute.javaType> value)
+{
+    immutableSet<attribute.name.capitalized>(value);
+}
+>>
+
+attribute_getter(attribute, C) ::= <<
+<!
+ Writes the getter for given attribute.
+ @param attribute the attribute.
+ @param C the context.
+!>
+/**
+ * Retrieves the \<i><attribute.name>\</i> value.
+ * @return such information.
+ */
+<if(attribute.allowsNull)>
+<if(!attribute.strictlyPrimitive)><nullable(C=C)><endif>
+protected final <attribute.objectType> immutableGet<attribute.name.capitalized>()
+<else>
+<if(!attribute.strictlyPrimitive)><notnull(C=C)><endif>
+protected final <attribute.javaType> immutableGet<attribute.name.capitalized>()
+<endif>
+{
+    return m__<attribute.name.capitalized>;
+}
+
+/**
+ * Retrieves the \<i><attribute.name>\</i> value.
+ * @return such information.
+ */
+@Override
+<if(attribute.allowsNull)>
+<if(!attribute.strictlyPrimitive)><nullable(C=C)><endif>
+public <attribute.objectType> get<attribute.name.capitalized>()
+<else>
+<if(!attribute.strictlyPrimitive)><notnull(C=C)><endif>
+public <attribute.javaType> get<attribute.name.capitalized>()
+<endif>
+{
+<if(attribute.date)>
+    Date result = immutableGet<attribute.name.capitalized>();
+
+    if  (result != null)
+    {
+        result = new Date(result.getTime());
+    }
+
+    return result;
+<else>
+    return immutableGet<attribute.name.capitalized>();
+<endif>
+}
+>>
+
+attribute_to_primitive(attribute) ::= <<
+<! Generates the code to convert given attribute's value to a primitive !>
+<if(attribute.numeric)
+    ><attribute.name.uncapitalized><
+ else><if(attribute.string)
+    ><attribute.name.uncapitalized><endif><endif>
+>>
+
 property_resultset_retrieval(property, C) ::= <<
 <!
  Generates the code to retrieve the property value from the ResultSet.
