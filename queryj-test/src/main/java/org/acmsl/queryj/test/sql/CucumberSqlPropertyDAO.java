@@ -140,7 +140,7 @@ public class CucumberSqlPropertyDAO
 
     /**
      * Retrieves the custom results.
-     * @return such result.
+     * @return such results.
      */
     @NotNull
     protected List<Result<String>> getResults()
