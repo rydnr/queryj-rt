@@ -128,46 +128,46 @@ defaultExtractor(result, repository, C) ::= <<
  @param C the context.
 !>
 /**
- * Extracts {@link <table.name.voName>} information from given result set.
+ * Extracts {@link <result.id.voName>} information from given result set.
  * @param resultSet the result set.
  * @param listener the {@link <repository.voName>DAOListener} instance.
- * @return the {@code <table.name.voName>} or
+ * @return the {@code <result.id.voName>} or
  * {@code null} if the operation returned no data.
  * @throws SQLException intercepted by \<i>Spring\</i\>.
  * @throws DataAccessException with information about any
  * custom exception.
  */
 <notnull(C=C)>
-protected <table.name.voName> extractData(
+protected <result.id.voName> extractData(
     <notnull(C=C)>final ResultSet resultSet,
     <nullable(C=C)>final <repository.voName>DAOListener listener)
     throws  SQLException,
             DataAccessException
 {
-    return extractData(resultSet, listener, <table.name.voName>ValueObjectFactory.getInstance());
+    return extractData(resultSet, listener, <result.id.voName>ValueObjectFactory.getInstance());
 }
 
 /**
- * Extracts {@link <table.name.voName>} information from given result set.
+ * Extracts {@link <result.id.voName>} information from given result set.
  * @param resultSet the result set.
  * @param listener the {@link <repository.voName>DAOListener} instance.
- * @param factory the {@link <table.name.voName>ValueObjectFactory}
+ * @param factory the {@link <result.id.voName>ValueObjectFactory}
  * instance.
- * @return the {@code <table.name.voName>} or
+ * @return the {@code <result.id.voName>} or
  * {@code null} if the operation returned no data.
  * @throws SQLException intercepted by \<i>Spring\</i>.
  * @throws DataAccessException with information about any
  * custom exception.
  */
 <notnull(C=C)>
-protected <table.name.voName> extractData(
+protected <result.id.voName> extractData(
     <notnull(C=C)>final ResultSet resultSet,
     <nullable(C=C)>final <repository.voName>DAOListener listener,
-    <notnull(C=C)>final <table.name.voName>ValueObjectFactory factory)
+    <notnull(C=C)>final <result.id.voName>ValueObjectFactory factory)
   throws  SQLException,
           DataAccessException
 {
-    <nullable(C=C)>final <table.name.voName> result;
+    <nullable(C=C)>final <result.id.voName> result;
 
     if  (resultSet.next())
     {
@@ -177,7 +177,7 @@ protected <table.name.voName> extractData(
         }
 
         result =
-            factory.create<table.name.voName>(
+            factory.create<result.id.voName>(
                 <table.attributes:{a | <attribute_resultset_retrieval(attr=a, C=C)>}; separator=",\n">);
 
         if  (daoListener != null)
