@@ -54,7 +54,7 @@ clob_property_resultset_retrieval(property, C) ::= <<
  !>resultSet.getClob("<property.id>")
  >>
 
-property_getter(attribute, C) ::= <<
+property_getter(property, C) ::= <<
 <!
  Writes the getter for given property.
  @param attribute the attribute.
