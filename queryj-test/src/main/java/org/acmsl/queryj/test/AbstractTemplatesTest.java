@@ -1024,7 +1024,7 @@ public abstract class AbstractTemplatesTest<G, F>
         @NotNull final DatabaseMetaData metadata = EasyMock.createNiceMock(DatabaseMetaData.class);
         @NotNull final TableDAO tableDAO = EasyMock.createNiceMock(TableDAO.class);
         @NotNull final ColumnDAO columnDAO = EasyMock.createNiceMock(ColumnDAO.class);
-        @Nullable final
+        @Nullable final String resultClass =
         @NotNull final List<String> tableNames =
             customResult.getClassValue() != null
             ? Arrays.asList(StringUtils.getInstance().unCapitalize(customResult.getClassValue(), "_"))
