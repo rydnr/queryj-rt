@@ -37,7 +37,7 @@
 package org.acmsl.queryj.test.sql;
 
 /*
- * Importing QueryJ-Core classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.metadata.SqlResultDAO;
