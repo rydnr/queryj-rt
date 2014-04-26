@@ -113,7 +113,7 @@ public class <result.id.voName>ResultSetExtractor
      * Creates a new instance.
      * @param listener the {@link <repository.voName>DAOListener} instance.
      */
-    public <result.name.voName>ResultSetExtractor(<nullable(C=C)>final <repository.voName>DAOListener listener)
+    public <result.id.voName>ResultSetExtractor(<nullable(C=C)>final <repository.voName>DAOListener listener)
     {
         super(listener);
     }
