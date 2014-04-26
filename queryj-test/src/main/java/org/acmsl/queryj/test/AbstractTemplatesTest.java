@@ -693,6 +693,42 @@ public abstract class AbstractTemplatesTest<G, F>
     }
 
     /**
+     * Retrieves a {@link org.acmsl.queryj.customsql.CustomSqlProvider} instance adapted for given result.
+     * @param sqlList the list of {@link Sql}.
+     * @param parameters the {@link Parameter} map.
+     * @return such instance.
+     */
+    @NotNull
+    protected CustomSqlProvider retrieveCustomSqlProvider(
+        @NotNull final List<Result<String>> sqlList,
+        @NotNull final Map<String, List<Parameter<String, ?>>> parameters)
+    {
+        return
+            new SqlXmlParserImpl(new ByteArrayInputStream("".getBytes()))
+            {
+                /**
+                 * {@inheritDoc}
+                 */
+                @Override
+                @NotNull
+                public SqlDAO getSqlDAO()
+                {
+                    return new CucumberSqlDAO(sqlList);
+                }
+
+                /**
+                 * {@inheritDoc}
+                 */
+                @NotNull
+                @Override
+                public SqlParameterDAO getSqlParameterDAO()
+                {
+                    return new CucumberSqlParameterDAO(parameters);
+                }
+            };
+    }
+
+    /**
      * Sets up the Java parser.
      * @param javaFile the Java contents to parse.
      * @return the {@link JavaParser} instance.
