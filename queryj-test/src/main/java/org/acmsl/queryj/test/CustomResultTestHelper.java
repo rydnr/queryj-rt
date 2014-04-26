@@ -181,7 +181,8 @@ public class CustomResultTestHelper
 
                 if (propertyList == null)
                 {
-                    propertyList = new ArrayList<>()
+                    propertyList = new ArrayList<>();
+                }
                     for (@NotNull final Map<String, String> propertyEntry: propertyEntries)
                     {
                         property = convertToProperty(propertyEntry);
