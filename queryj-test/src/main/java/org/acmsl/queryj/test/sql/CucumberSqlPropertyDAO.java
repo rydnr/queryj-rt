@@ -278,8 +278,9 @@ public class CucumberSqlPropertyDAO
     @Override
     public String toString()
     {
-        return "CucumberSqlPropertyDAO{" +
-               "customResult=" + m__lCustomResults +
+        return
+            "{ \"class\": \"CucumberSqlPropertyDAO\""
+            + "customResult=" + m__lCustomResults +
                ", properties=" + m__Properties +
                '}';
     }
