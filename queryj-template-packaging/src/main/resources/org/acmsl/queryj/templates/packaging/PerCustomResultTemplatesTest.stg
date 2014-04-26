@@ -269,7 +269,7 @@ public class PerCustomResultTemplatesTest
             getResults(),
             getProperties(),
             getOutputFiles(),
-            retrieveCustomSqlProvider(getResultList(), getProperties()));
+            retrieveCustomSqlProvider(getResults(), getProperties()));
     }
 
     /**
