@@ -7,8 +7,8 @@ Feature: Classes associated to custom results compile
       | cycle.count | GCycle |
 
     And the following custom result properties:
-      | name       | index | type | nullable |
-      | g_cycle_id | 1     | int  | false    |
+      | name       | type | nullable |
+      | g_cycle_id | int  | false    |
       | count      | 2     | long | false    |
 
     When I use the custom result template <template> for Oracle
