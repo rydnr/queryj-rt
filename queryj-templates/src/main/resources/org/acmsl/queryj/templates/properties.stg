@@ -39,8 +39,8 @@ group properties;
 
 property_method_parameter_declaration(property, usePrefix, prefix, C) ::= <<
 <!
- Writes the method parameter declaration for given attribute.
- @param attribute the attribute.
+ Writes the method parameter declaration for given property.
+ @param property the property.
  @param usePrefix whether to use a prefix or not.
  @param prefix the prefix.
 !>
