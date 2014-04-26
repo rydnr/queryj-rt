@@ -179,7 +179,7 @@ else
   ><if(!interface)>public <endif><property.javaType> get<property.id.capitalized>()<
 endif>
 {
-    this.m__<property.id.capitalized> =
+    return this.m__<property.id.capitalized>;
 }
 >>
 
