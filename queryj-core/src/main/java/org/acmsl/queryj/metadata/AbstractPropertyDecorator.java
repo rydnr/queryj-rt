@@ -513,11 +513,12 @@ public abstract class AbstractPropertyDecorator
     public String toString()
     {
         return
-            "{ \"class\": \"AbstractPropertyDecorator\""
-        + ", \"property\": " + this.m__Property
-        + ", \"metadataManager\": " + this.m__MetadataManager
+              "{ \"class\": \"AbstractPropertyDecorator\""
+            + ", \"property\": " + this.m__Property
+            + ", \"metadataManager\": " + this.m__MetadataManager
             + ", \"metadataTypeManager\": " + this.m__MetadataTypeManager
             + ", \"package\": \"org.acmsl.queryj.metadata\""
+            + " }";
     }
 
     /**
