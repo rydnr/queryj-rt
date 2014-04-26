@@ -37,7 +37,7 @@
 //
 group properties;
 
-property_resultset_retrieval(attr, C) ::= <<
+property_resultset_retrieval(property, C) ::= <<
 <!
  Generates the code to retrieve the property value from the ResultSet.
  @param property the property.
@@ -46,7 +46,7 @@ property_resultset_retrieval(attr, C) ::= <<
 <if(!property.clob)>resultSet.get<property.objectType>("<property.id>")<else><clob_property_resultset_retrieval(property=attr, C=C)><endif>
 >>
 
-clob_property_resultset_retrieval(attribute, C) ::= <<
+clob_property_resultset_retrieval(property, C) ::= <<
 <!
  Deals with Clob properties.
  @param property the property.
