@@ -41,6 +41,7 @@ package org.acmsl.queryj.test;
 import org.acmsl.commons.utils.StringUtils;
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.Result;
+import org.acmsl.queryj.metadata.SqlPropertyDAO;
 import org.acmsl.queryj.metadata.SqlResultDAO;
 import org.acmsl.queryj.test.antlr4.JavaLexer;
 import org.acmsl.queryj.test.antlr4.JavaPackageVisitor;
@@ -79,6 +80,7 @@ import org.acmsl.commons.utils.io.FileUtils;
 /*
  * Importing ANTLR classes.
  */
+import org.acmsl.queryj.test.sql.CucumberSqlPropertyDAO;
 import org.acmsl.queryj.test.sql.CucumberSqlResultDAO;
 import org.antlr.v4.runtime.ANTLRFileStream;
 import org.antlr.v4.runtime.CommonTokenStream;
@@ -723,9 +725,9 @@ public abstract class AbstractTemplatesTest<G, F>
                  */
                 @NotNull
                 @Override
-                public SqlParameterDAO getSqlParameterDAO()
+                public SqlPropertyDAO getSqlPropertyDAO()
                 {
-                    return new CucumberSqlParameterDAO(parameters);
+                    return new CucumberSqlPropertyDAO(properties);
                 }
             };
     }
