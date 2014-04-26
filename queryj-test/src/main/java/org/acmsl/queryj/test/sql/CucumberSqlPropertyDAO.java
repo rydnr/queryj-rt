@@ -282,7 +282,7 @@ public class CucumberSqlPropertyDAO
         final int index,
         @NotNull final String type,
         final boolean nullable,
-        @NotNull final Map<String, List<Property<String>> properties)
+        @NotNull final Map<String, List<Property<String>>> properties)
     {
         properties.add(new PropertyElement<>(id, columnName, index, type, nullable));
     }
