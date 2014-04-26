@@ -1034,7 +1034,7 @@ public abstract class AbstractTemplatesTest<G, F>
         @NotNull final List<Table<String, Attribute<String>, List<Attribute<String>>>> tables =
             Arrays.asList(table);
 
-
+        result.getS
         EasyMock.expect(result.getMetaData()).andReturn(metadata).anyTimes();
         EasyMock.expect(result.getName()).andReturn("fake manager").anyTimes();
         EasyMock.expect(result.getMetadataTypeManager()).andReturn(new JdbcMetadataTypeManager()).anyTimes();
