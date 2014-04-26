@@ -282,7 +282,7 @@ public class CucumberSqlPropertyDAO
               "{ \"class\": \"CucumberSqlPropertyDAO\""
             + ", \"customResults\": " + m__lCustomResults
             + ", \"properties\": " + m__Properties
-            + ", \"package\": \"org.acmsl.queryj"
+            + ", \"package\": \"org.acmsl.queryj.test.sql\""
             + "  }";
     }
 }
