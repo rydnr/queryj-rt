@@ -229,6 +229,9 @@ public class CustomResultTestHelper
     }
 
     /**
+     *
+     */
+    /**
      * Creates a new {@link Property}.
      * @param id the id.
      * @param columnName the column name.
