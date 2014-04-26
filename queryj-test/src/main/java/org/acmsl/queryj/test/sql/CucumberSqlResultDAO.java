@@ -199,8 +199,9 @@ public class CucumberSqlResultDAO
 
         if (result == null)
         {
-            throw new RuntimeException("result for table " + )
+            throw new RuntimeException("result for table " + table + " is not found");
         }
+
         return result;
     }
 
@@ -220,12 +221,8 @@ public class CucumberSqlResultDAO
      * @return a list of just that element.
      */
     @NotNull
-    protected List<Result<String>> findAll(@NotNull final Result<String> customResult)
+    protected List<Result<String>> findAll(@NotNull final List<Result<String>> customResult)
     {
-        @NotNull final List<Result<String>> result = new ArrayList<>(1);
-
-        result.add(customResult);
-
         return result;
     }
 
