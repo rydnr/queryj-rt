@@ -47,7 +47,7 @@ property_method_parameter_declaration(property, usePrefix, prefix, C) ::= <<
 <if(!property.strictlyPrimitive)><if(property.nullable)><nullable(C=C)><else><notnull(C=C)><endif><endif>final <property.javaType> <if(usePrefix)><prefix><property.id.voName.capitalized><else><property.id.voName.uncapitalized><endif>
 >>
 
-immutable_setter_call(attribute) ::= <<
+immutable_property_setter_call(property) ::= <<
 <!
  Writes the method call for the immutable setter of given attribute.
  @param attribute the attribute.
