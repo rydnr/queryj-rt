@@ -64,7 +64,9 @@ property_getter(property, C) ::= <<
  * @return such information.
  */
 <if(property.allowsNull)
-><if(!property.strictlyPrimitive)><nullable(C=C)><endif>
+  ><if(!property.strictlyPrimitive)
+    ><nullable(C=C)><
+    endif>
 <property.objectType> get<property.id.capitalized>()<else><if(!property.strictlyPrimitive)><notnull(C=C)><endif>
 <property.javaType> get<property.id.capitalized>()
 <endif>;
