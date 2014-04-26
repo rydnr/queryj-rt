@@ -178,7 +178,6 @@ protected <result.id.voName> extractData(
             daoListener.resultSetMovedForward(this);
         }
 
-        // <result.properties>
         result =
             factory.create<result.id.voName>(
                 <result.properties:{p | <attribute_resultset_retrieval(attr=p, C=C)>}; separator=",\n">);
