@@ -8,8 +8,8 @@ Feature: Classes associated to custom results compile
 
     And the following custom result properties:
       | name       | index | type | nullable |
-      | g_cycle_id | int  | false    |
-      | count      | long | false    |
+      | g_cycle_id | 1     | int  | false    |
+      | count      | 2     | long | false    |
 
     When I use the custom result template <template> for Oracle
 
