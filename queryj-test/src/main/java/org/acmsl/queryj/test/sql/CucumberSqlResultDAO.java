@@ -137,6 +137,9 @@ public class CucumberSqlResultDAO
         return result;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Nullable
     @Override
     public Result<String> findBySqlId(@NotNull final String sqlId)
