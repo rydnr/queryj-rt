@@ -491,17 +491,17 @@ public abstract class AbstractPropertyDecorator
 
     /**
      * Retrieves whether this attribute can be modelled as a primitive or not.
-     * @param typeId the attribute type.
+     * @param type the attribute type.
      * @param nullable whether the attribute allows nulls.
      * @param metadataTypeManager the metadata type manager.
      * @return <code>false</code> if no primitive matches.
      */
     protected boolean isStrictlyPrimitive(
-        final int type,
+        @NotNull final String type,
         final boolean nullable,
         @NotNull final MetadataTypeManager metadataTypeManager)
     {
-        return !nullable && metadataTypeManager.isPrimitive(typeId);
+        return !nullable && metadataTypeManager.isPrimitive(type);
     }
 
     /**
