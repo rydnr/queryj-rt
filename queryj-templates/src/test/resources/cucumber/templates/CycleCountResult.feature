@@ -9,7 +9,7 @@ Feature: Classes associated to custom results compile
     And the following custom result properties:
       | name       | type | nullable |
       | g_cycle_id | int  | false    |
-      | count      | 2     | long | false    |
+      | count      | long | false    |
 
     When I use the custom result template <template> for Oracle
 
