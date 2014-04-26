@@ -143,7 +143,7 @@ public class CucumberSqlPropertyDAO
      * @return such result.
      */
     @NotNull
-    protected Result<String> getResult()
+    protected List<Result<String>> getResults()
     {
         return m__lCustomResults;
     }
@@ -196,7 +196,7 @@ public class CucumberSqlPropertyDAO
     @Override
     public List<Property<String>> findByResult(@NotNull final String resultId)
     {
-        return findByResult(resultId, getProperties(), getResult());
+        return findByResult(resultId, getProperties(), getResults());
     }
 
     /**
