@@ -267,13 +267,13 @@ public class CustomResultTestHelper
     {
         @Nullable final Property<String> result;
 
-        if (index == -1)
+        if (index < 0)
         {
             result = null;
         }
         else
         {
-            result = new PropertyElement<>(id, columnName, propertyIndex, type, nullable);
+            result = new PropertyElement<>(id, columnName, index, type, nullable);
         }
 
         return result;
