@@ -209,10 +209,14 @@ public class CucumberSqlResultDAO
         return result;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public String toString()
     {
-        return "CucumberSqlResultDAO{" +
+        return
+            "CucumberSqlResultDAO{" +
                "customResult=" + m__CustomResult +
                '}';
     }
