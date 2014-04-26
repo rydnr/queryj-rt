@@ -107,6 +107,7 @@ class(result, repository, C) ::= <<
   template="org/acmsl/queryj/templates/CustomBaseValueObject.stg", C=C)>
  */
 public abstract class Abstract<result.id.voName>
+    implements <result.id.voName>
 {
     <result.properties:{ p | <property_isolated_declaration(property=p, C=C)>}; separator="\n\n">
 
