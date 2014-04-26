@@ -727,7 +727,7 @@ public abstract class AbstractTemplatesTest<G, F>
                 @Override
                 public SqlPropertyDAO getSqlPropertyDAO()
                 {
-                    return new CucumberSqlPropertyDAO(properties);
+                    return new CucumberSqlPropertyDAO(properties, results);
                 }
             };
     }
