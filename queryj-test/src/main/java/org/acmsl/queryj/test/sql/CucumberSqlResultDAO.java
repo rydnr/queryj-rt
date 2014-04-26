@@ -52,6 +52,7 @@ import org.jetbrains.annotations.Nullable;
  * Importing JDK classes.
  */
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -74,14 +75,14 @@ public class CucumberSqlResultDAO
      */
     public CucumberSqlResultDAO(@NotNull final Result<String> result)
     {
-        immutableSetResult(result);
+        immutableSetResultList(Arrays.asList(result));
     }
 
     /**
      * Specifies the custom result.
      * @param result such result.
      */
-    protected final void immutableSetResult(@NotNull final Result<String> result)
+    protected final void immutableSetResultList(@NotNull final Result<String> result)
     {
         this.m__lCustomResults = result;
     }
@@ -93,7 +94,7 @@ public class CucumberSqlResultDAO
     @SuppressWarnings("unused")
     protected void setResult(@NotNull final Result<String> result)
     {
-        immutableSetResult(result);
+        immutableSetResultList(result);
     }
 
     /**
