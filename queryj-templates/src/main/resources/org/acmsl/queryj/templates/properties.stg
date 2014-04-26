@@ -171,7 +171,7 @@ property_getter(property, interface, C) ::= <<
   ><if(!property.strictlyPrimitive)
     ><nullable(C=C)><
     endif
-  ><property.objectType> get<property.id.capitalized>()<
+  ><if(interface)><property.objectType> get<property.id.capitalized>()<
 else
   ><if(!property.strictlyPrimitive)
     ><notnull(C=C)><
