@@ -29,11 +29,11 @@
 //
 //***************************************************************************
 //
-// Filename: attributes.stg
+// Filename: properties.stg
 //
 // Author: Jose San Leandro Armendariz
 //
-// Description: Defines common templates for attributes.
+// Description: Defines common templates for properties.
 //
-group attributes;
+group properties;
 
