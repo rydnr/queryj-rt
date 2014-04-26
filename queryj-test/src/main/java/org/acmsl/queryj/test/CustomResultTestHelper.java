@@ -195,6 +195,7 @@ public class CustomResultTestHelper
                     {
                         propertyList.add(property);
 
+                        // so far there's only result in the cucumber feature
                         result.add(new PropertyRefElement(property.getId()));
                     }
                 }
