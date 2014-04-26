@@ -96,7 +96,7 @@ public class CucumberSqlPropertyDAO
      * Specifies the list of {@link Property properties}.
      * @param properties such list.
      */
-    protected final void immutableSetProperties(@NotNull final Map<List<Property<String>> properties)
+    protected final void immutableSetProperties(@NotNull final Map<String, List<Property<StringP>> properties)
     {
         this.m__Properties = properties;
     }
