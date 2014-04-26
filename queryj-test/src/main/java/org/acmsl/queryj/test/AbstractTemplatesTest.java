@@ -1018,17 +1018,6 @@ public abstract class AbstractTemplatesTest<G, F>
         @NotNull final List<Property<String>> properties,
         @NotNull final DecoratorFactory decoratorFactory)
     {
-        @NotNull final List<String> tableNames = new ArrayList<>(tables.size());
-
-        for (@Nullable final Table<String, Attribute<String>, List<Attribute<String>>> table : tables)
-        {
-            if (table != null)
-            {
-                tableNames.add(table.getName());
-            }
-        }
-
-        return retrieveMetadataManager(engineName, tableNames, tables, staticContents, decoratorFactory);
     }
 
     /**
