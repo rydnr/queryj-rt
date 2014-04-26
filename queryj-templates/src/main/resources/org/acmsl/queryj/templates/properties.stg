@@ -179,6 +179,8 @@ else
   ><if(!interface)>public <endif><property.javaType> get<property.id.capitalized>()<
 endif>
 {
+    this.
+}
 >>
 
 property_getter(property, C) ::= <<
