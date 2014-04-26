@@ -258,6 +258,6 @@ else
 
 property_toString(property) ::= <<
 <! Generates the code to include given property within the toString() method. !>
-result.append("\", \"<property.name.capitalized>\": \"");
-result.append(this.m__<a.name.capitalized>);
+result.append("\", \"<property.id.voName.capitalized>\": \"");
+result.append(this.m__<property.voName.capitalized>);
 >>
