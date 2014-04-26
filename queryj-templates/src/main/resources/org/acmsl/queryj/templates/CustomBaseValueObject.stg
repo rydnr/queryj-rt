@@ -116,5 +116,8 @@ public abstract class Abstract<result.id.voName>
     {
         <result.properties:{ p | <immutable_property_setter_call(property=p)>}; separator="\n">
     }
+
+    <result.properties:{ p | <property_accessors(property=p, C=C)>}; separator="\n">
+
 }
 >>
