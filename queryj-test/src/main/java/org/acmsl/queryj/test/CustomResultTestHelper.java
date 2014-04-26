@@ -216,6 +216,7 @@ public class CustomResultTestHelper
         {
             @Nullable final String columnName = tableEntry.get("columnName");
             @Nullable final int propertyIndex = toInt(tableEntry.get(Literals.INDEX));
+            if (propertyIndex < )
             result =
                 convertToProperty(
                     name,
