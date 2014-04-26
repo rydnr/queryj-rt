@@ -105,8 +105,7 @@ class(result, repository, C) ::= <<
 <class_common_javadoc(
   template="org/acmsl/queryj/templates/CustomBaseValueObject.stg", C=C)>
  */
-public interface <result.id.voName>
-    extends Serializable
+public abstract class Abstract<result.id.voName>
 {
     <result.properties:{ p | <property_getter(property=p, C=C)>}; separator="\n\n">
 }
