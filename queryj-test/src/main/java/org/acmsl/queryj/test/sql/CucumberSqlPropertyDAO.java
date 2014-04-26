@@ -222,7 +222,9 @@ public class CucumberSqlPropertyDAO
             {
                 result = properties;
             }
-        {
+        }
+
+        if
             result = new ArrayList<>(0);
         }
 
