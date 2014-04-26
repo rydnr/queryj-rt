@@ -171,13 +171,13 @@ public int hashcode()
 {
     final int result;
 
-    final int classHashCode = Abstract<result.id.voName.voName>.class.hashcode();
+    final int classHashCode = Abstract<result.id.voName>.class.hashCode();
 
-    <result.properties:{ a | <property_hashcode(property=a)>}; separator="\n">
+    <result.properties:{ p | <property_hashcode(property=p)>}; separator="\n">
 
     result =
           classHashCode
-        <result.properties:{ a |+ <a.name.uncapitalized>HashCode}; separator="\n">;
+        <result.properties:{ p |+ <p.id.uncapitalized>HashCode}; separator="\n">;
 
     return result;
 }
