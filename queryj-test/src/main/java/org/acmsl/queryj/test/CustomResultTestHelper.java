@@ -229,8 +229,11 @@ public class CustomResultTestHelper
     }
 
     /**
-     * Converts the index.
+     * Converts the index to numeric.
+     * @param value the value.
+     * @return the numeric value.
      */
+
     /**
      * Creates a new {@link Property}.
      * @param id the id.
