@@ -182,6 +182,7 @@ public class CustomResultTestHelper
                 if (propertyList == null)
                 {
                     propertyList = new ArrayList<>();
+                    properties.set()
                 }
                     for (@NotNull final Map<String, String> propertyEntry: propertyEntries)
                     {
