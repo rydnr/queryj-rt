@@ -216,9 +216,9 @@ public class CucumberSqlResultDAO
     public String toString()
     {
         return
-            "{ \"class\": \"CucumberSqlResultDAO\""
+              "{ \"class\": \"CucumberSqlResultDAO\""
             + ", \"result\": " + m__CustomResult
-            + ", \"package\": \"org.acmsl.queryj.test"
+            + ", \"package\": \"org.acmsl.queryj.test\""
             + " }";
     }
 }
