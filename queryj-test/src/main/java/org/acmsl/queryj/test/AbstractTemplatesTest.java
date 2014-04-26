@@ -1004,8 +1004,8 @@ public abstract class AbstractTemplatesTest<G, F>
     /**
      * Retrieves a {@link MetadataManager} instance.
      * @param engineName the name of the engine.
-     * @param tables the tables.
-     * @param staticContents the static contents.
+     * @param result the result.
+     * @param properties the properties.
      * @return such instance.
      */
     @NotNull
