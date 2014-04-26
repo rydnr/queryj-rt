@@ -107,6 +107,8 @@ class(result, repository, C) ::= <<
  */
 public abstract class Abstract<result.id.voName>
 {
+    <result.properties:{ p | <property_isolated_declaration(property=p, C=C)>}; separator="\n">
+
     /**
      * Creates a new {@code Abstract<result.id.voName>}.
      <result.properties:{ p | <property_javadoc(property=p)>}; separator="\n">
