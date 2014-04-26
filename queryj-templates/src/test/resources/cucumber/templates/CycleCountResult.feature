@@ -3,8 +3,8 @@ Feature: Classes associated to custom results compile
   Scenario Outline: Custom result GCycleCount work
 
     Given the following custom result:
-      | id | dao | type |
-      | cycle.count | G_CYCLES | |
+      | id | class |
+      | cycle.count | G_CYCLES |
 
     And the following custom result properties:
       | name       | type |
