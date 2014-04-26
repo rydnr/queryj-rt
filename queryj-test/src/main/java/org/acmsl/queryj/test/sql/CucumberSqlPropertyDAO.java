@@ -41,6 +41,7 @@ package org.acmsl.queryj.test.sql;
  */
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.PropertyElement;
+import org.acmsl.queryj.customsql.PropertyRef;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.metadata.SqlPropertyDAO;
 
@@ -222,7 +223,7 @@ public class CucumberSqlPropertyDAO
             {
                 for (@Nullable final Property<String> property : properties)
                 {
-                    for (@Nullable final PropertyRef propertyRef
+                    for (@Nullable final PropertyRef propertyRef :
                 }
                 result = properties;
                 break;
