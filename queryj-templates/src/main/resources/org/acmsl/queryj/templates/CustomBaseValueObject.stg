@@ -80,6 +80,7 @@ import java.io.Serializable;
 <result.propertyTypes:{ t | import <t>;}; separator="\n">
 <endif>
 
+
 <class(result=result, repository=C.repository, C=C)>
 >>
 
