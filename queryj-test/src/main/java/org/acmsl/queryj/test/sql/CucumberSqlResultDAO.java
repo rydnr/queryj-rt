@@ -178,20 +178,21 @@ public class CucumberSqlResultDAO
     /**
      * Finds nte {@link Result} of given type.
      * @param table the table name.
-     * @param customResult the custom result.
+     * @param customResults the custom results.
      * @return the result.
      */
     @NotNull
     protected Result<String> findByTable(
-        @NotNull final String table, @NotNull final List<Result<String>> customResult)
+        @NotNull final String table, @NotNull final List<Result<String>> customResults)
     {
         @Nullable final Result<String> result;
 
-        for ()
-        if (table.equals(customResult.getClassValue()))
+        for (@Nullable final Result<String> customResult : customResults)
         {
-            result = customResult;
-        }
+            if (table.equals(customResult.getClassValue()))
+            {
+                result = customResult;
+            }
         else
         {
             result = null;
