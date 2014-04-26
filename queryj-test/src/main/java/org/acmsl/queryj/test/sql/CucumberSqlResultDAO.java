@@ -55,7 +55,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * A {@link SqlResultDAO} implementation wrapping a single {@link Result}, or multiple instance.
+ * A {@link SqlResultDAO} implementation wrapping a single {@link Result}or multiple instance.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2013/06/25
