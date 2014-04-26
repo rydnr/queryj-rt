@@ -117,6 +117,8 @@ public class <result.id.voName>ResultSetExtractor
     {
         super(listener);
     }
+
+    <defaultExtractor(result=result, repository=repository
 }
 >>
 
