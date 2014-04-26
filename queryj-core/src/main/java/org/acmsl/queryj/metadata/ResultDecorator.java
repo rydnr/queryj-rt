@@ -77,7 +77,7 @@ public interface ResultDecorator
     List<Property<DecoratedString>> getProperties();
 
     /**
-     * Retrieves the properties.
+     * Retrieves the property types.
      * @return such information.
      */
     @NotNull
