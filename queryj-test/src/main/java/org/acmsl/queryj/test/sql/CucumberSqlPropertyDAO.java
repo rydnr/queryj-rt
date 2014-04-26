@@ -180,7 +180,7 @@ public class CucumberSqlPropertyDAO
         {
             if (propertyList != null)
             {
-                for (@NotNull final Property<String> property : properties)
+                for (@NotNull final Property<String> property : propertyList)
                 {
                     if (id.equals(property.getId()))
                     {
