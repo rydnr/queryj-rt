@@ -1002,6 +1002,33 @@ public abstract class AbstractTemplatesTest<G, F>
     }
 
     /**
+     * Retrieves a {@link MetadataManager} instance.
+     * @param engineName the name of the engine.
+     * @param tables the tables.
+     * @param staticContents the static contents.
+     * @return such instance.
+     */
+    @NotNull
+    protected MetadataManager retrieveMetadataManager(
+        @NotNull final String engineName,
+        @NotNull final List<Table<String, Attribute<String>, List<Attribute<String>>>> tables,
+        @NotNull final List<Row<String>> staticContents,
+        @NotNull final DecoratorFactory decoratorFactory)
+    {
+        @NotNull final List<String> tableNames = new ArrayList<>(tables.size());
+
+        for (@Nullable final Table<String, Attribute<String>, List<Attribute<String>>> table : tables)
+        {
+            if (table != null)
+            {
+                tableNames.add(table.getName());
+            }
+        }
+
+        return retrieveMetadataManager(engineName, tableNames, tables, staticContents, decoratorFactory);
+    }
+
+    /**
      * Checks the generated properties files are valid.
      * @param outputName the name of the output file.
      * @param outputFiles the output files.
