@@ -211,6 +211,7 @@ public class CustomResultTestHelper
 
         if (name != null)
         {
+            @Nullable final String columnName =
             result =
                 convertToProperty(
                     name,
