@@ -506,9 +506,9 @@ public abstract class AbstractPropertyDecorator
     }
 
     /**
-     * Retrieves the property name.
-     * @return such information.
+     * {@inheritDoc}
      */
+    @Override
     @NotNull
     public String toString()
     {
