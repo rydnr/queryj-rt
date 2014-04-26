@@ -245,6 +245,7 @@ public class CustomResultTestHelper
         {
         }
 
+        return result;
     }
 
     /**
