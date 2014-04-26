@@ -106,7 +106,7 @@ public class CucumberSqlPropertyDAO
      * @param properties such list.
      */
     @SuppressWarnings("unused")
-    protected final void setProperties(@NotNull final List<Property<String>> properties)
+    protected final void setProperties(@NotNull final Map<String, List<Property<String>> properties)
     {
         immutableSetProperties(properties);
     }
