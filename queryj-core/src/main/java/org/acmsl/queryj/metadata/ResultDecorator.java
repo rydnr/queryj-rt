@@ -77,6 +77,13 @@ public interface ResultDecorator
     List<Property<DecoratedString>> getProperties();
 
     /**
+     * Retrieves the properties.
+     * @return such information.
+     */
+    @NotNull
+    List<Property<DecoratedString>> getPropertyTypes();
+
+    /**
      * Retrieves the large-object-block properties.
      * @return such collection.
      */
