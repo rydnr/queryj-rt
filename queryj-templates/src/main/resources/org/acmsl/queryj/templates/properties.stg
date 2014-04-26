@@ -97,10 +97,11 @@ if (<property.id.voName.uncapitalized> != null)
 <else>immutableSet<property.id.voName.capitalized>(<property.id.voName.uncapitalized>);<endif>
 >>
 
-property_accessors(property, C) ::= <<
+property_accessors(property, interface, C) ::= <<
 <!
  Writes the accessors for given property.
  @param property the property.
+ @param interface whe
 !>
 <property_setter(property=property, C=C)>
 
@@ -173,10 +174,10 @@ property_getter(property, interface, C) ::= <<
     endif
   ><if(!interface)>public <endif><property.objectType> get<property.id.capitalized>()<
 else
-  ><if(!interface)>public <endif><if(!property.strictlyPrimitive)
+  ><if(!property.strictlyPrimitive)
     ><notnull(C=C)><
     endif
-  ><property.javaType> get<property.id.capitalized>()<
+  ><if(!interface)>public <endif><property.javaType> get<property.id.capitalized>()<
 endif>;
 >>
 
