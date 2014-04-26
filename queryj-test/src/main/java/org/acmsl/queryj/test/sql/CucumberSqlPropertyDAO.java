@@ -72,7 +72,7 @@ public class CucumberSqlPropertyDAO
     /**
      * The list of properties.
      */
-    private List<Property<String>> m__Properties;
+    private Map<String, List<Property<String>> m__Properties;
 
     /**
      * The custom results.
