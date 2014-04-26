@@ -215,10 +215,10 @@ public class CustomResultTestHelper
         if (name != null)
         {
             @Nullable final String columnName = tableEntry.get("columnName");
-            @Nullable final int propertyIndex = toInt(tableEntry.get(Literals.INDEX));
+            int propertyIndex = toInt(tableEntry.get(Literals.INDEX));
             if (propertyIndex < 0)
             {
-
+                propertyIndex = index;
             }
             result =
                 convertToProperty(
