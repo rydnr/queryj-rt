@@ -279,9 +279,10 @@ public class CucumberSqlPropertyDAO
     public String toString()
     {
         return
-            "{ \"class\": \"CucumberSqlPropertyDAO\""
+              "{ \"class\": \"CucumberSqlPropertyDAO\""
             + ", \"customResults\": " + m__lCustomResults
             + ", \"properties\": " + m__Properties
+            + ", \"package"
             + "  }";
     }
 }
