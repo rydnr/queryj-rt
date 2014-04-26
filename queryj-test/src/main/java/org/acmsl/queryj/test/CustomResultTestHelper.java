@@ -178,7 +178,7 @@ public class CustomResultTestHelper
             {
                 @Nullable final List<Property<String>> propertyList = properties.get(result.getId());
 
-                if (propertyList != null)
+                if (propertyList == null)
                 {
                     for (@NotNull final Map<String, String> propertyEntry: propertyEntries)
                     {
