@@ -602,10 +602,10 @@ public abstract class AbstractResultDecorator
     {
         return
             "{ \"class\": \"AbstractResultDecorator\""
-            + ", \"customSqlProvider\": " + m__CustomSqlProvider +
-               ",result=" + m__Result +
-               ",metadataManager=" + m__MetadataManager +
-               ",decoratorFactory=" + m__DecoratorFactory +
+            + ", \"result\": " + m__Result
+            + ", \"customSqlProvider\": " + m__CustomSqlProvider
+            + ", \"metadataManager\": " + m__MetadataManager +
+            + ", \"decoratorFactory\": " + m__DecoratorFactory +
                '}';
     }
 
