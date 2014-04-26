@@ -68,7 +68,7 @@ property_getter(attribute, C) ::= <<
 <property.objectType> get<attribute.name.capitalized>()
 <else>
 <if(!property.strictlyPrimitive)><notnull(C=C)><endif>
-protected final <attribute.javaType> immutableGet<attribute.name.capitalized>()
+<attribute.javaType> immutableGet<attribute.name.capitalized>()
 <endif>
 {
     return m__<attribute.name.capitalized>;
