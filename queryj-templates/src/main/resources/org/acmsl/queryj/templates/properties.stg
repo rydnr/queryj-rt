@@ -104,7 +104,7 @@ property_accessors(property, C) ::= <<
 !>
 <property_setter(property=property, C=C)>
 
-<property_getter(property=property, interface=false, C=C)>
+<property_getter(property=property, C=C)>
 >>
 
 property_setter(property, C) ::= <<

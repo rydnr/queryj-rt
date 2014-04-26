@@ -108,6 +108,6 @@ class(result, repository, C) ::= <<
 public interface <result.id.voName>
     extends Serializable
 {
-    <result.properties:{ p | <property_getter(property=p, interface=true, C=C)>}; separator="\n\n">
+    <result.properties:{ p | <property_getter_interface(property=p, C=C)>}; separator="\n\n">
 }
 >>
