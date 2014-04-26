@@ -497,7 +497,7 @@ public abstract class AbstractPropertyDecorator
      * @return <code>false</code> if no primitive matches.
      */
     protected boolean isStrictlyPrimitive(
-        final int typeId,
+        final int type,
         final boolean nullable,
         @NotNull final MetadataTypeManager metadataTypeManager)
     {
