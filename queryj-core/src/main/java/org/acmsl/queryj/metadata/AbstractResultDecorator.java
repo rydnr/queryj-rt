@@ -592,6 +592,11 @@ public abstract class AbstractResultDecorator
     }
 
     /**
+     * Retrieves the attribute types.
+     * @return such information.
+     */
+
+    /**
      * Provides a text representation of the information
      * contained in given instance.
      * @return such information.
