@@ -146,9 +146,9 @@ public boolean equals(<nullable(C=C)>final Object other)
     {
         <notnull(C=C)>final <result.id.voName> candidate = (<result.id.voName>) other;
 
-        <result.properties:{ a | <property_equals(property=a)>}; separator="">
+        <result.properties:{ p | <property_equals(property=p)>}; separator="">
         result =
-            <result.properties:{ p |<p.name.uncapitalized>Match}; separator="\n&& ">;
+            <result.properties:{ p |<p.id.uncapitalized>Match}; separator="\n&& ">;
     }
     else
     {
