@@ -1011,7 +1011,7 @@ public abstract class AbstractTemplatesTest<G, F>
     @NotNull
     protected MetadataManager retrieveMetadataManager(
         @NotNull final String engineName,
-        @NotNull final Result<String> result,
+        @NotNull final Result<String> customResult,
         @NotNull final List<Property<String>> properties,
         @NotNull final DecoratorFactory decoratorFactory)
     {
