@@ -923,6 +923,7 @@ public abstract class AbstractTemplatesTest<G, F>
      * @param engineName the name of the engine.
      * @param tables the tables.
      * @param staticContents the static contents.
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @return such instance.
      */
     @NotNull
