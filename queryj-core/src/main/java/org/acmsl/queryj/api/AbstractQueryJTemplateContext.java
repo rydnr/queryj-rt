@@ -190,6 +190,8 @@ public abstract class AbstractQueryJTemplateContext
     protected String retrieveHeaderFromFile(
         @NotNull final QueryJCommand command, @NotNull final FileUtils fileUtils)
     {
+        @Nullable final String result;
+    }
         @Nullable final File file = new QueryJCommandWrapper<File>(command).getSetting(QueryJSettings.HEADER_FILE);
 
         if (file != null)
