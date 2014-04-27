@@ -124,7 +124,7 @@ public class <result.id.voName>Factory
      * Retrieves a {@code <result.id.voName>DataAccessManager} instance.
      * @return such instance.
      */
-    public static <>DataAccessManager getInstance()
+    public static <result.id.voName>DataAccessManager getInstance()
     {
         return <>DataAccessManagerSingletonContainer.SINGLETON;
     }
