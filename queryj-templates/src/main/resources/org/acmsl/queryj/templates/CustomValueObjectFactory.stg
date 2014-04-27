@@ -110,7 +110,7 @@ public class <result.id.voName>Factory
      * Creates a new {@code <result.id.voName>}.
      <result.properties:{ p | <property_javadoc(property=p)>}; separator="\n">
      */
-    public <result.id.voName>Factory(
+    public <result.id.voName> createFactory(
         <result.properties:{ p | <property_method_parameter_declaration(property=p, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
     {
         super(<result.properties:{ p | <p.id.voName.uncapitalized>}; separator=", ">);
