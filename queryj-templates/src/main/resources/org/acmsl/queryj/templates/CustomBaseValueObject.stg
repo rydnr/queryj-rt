@@ -187,6 +187,7 @@ tostring_method(result, C) ::= <<
 /**
  * {@inheritdoc}
  */
+<notnull(C=C)>
 @Override
 public String toString()
 {
