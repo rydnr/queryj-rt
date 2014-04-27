@@ -180,6 +180,7 @@ public abstract class AbstractQueryJTemplateContext
         return result;
     }
 
+
 @Nullable final File file = new QueryJCommandWrapper<File>(command).getSetting(QueryJSettings.HEADER_FILE);
 
 if (file != null)
