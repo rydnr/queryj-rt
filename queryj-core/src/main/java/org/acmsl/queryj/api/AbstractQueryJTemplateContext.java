@@ -176,7 +176,9 @@ public abstract class AbstractQueryJTemplateContext
 
             if (result == null)
             {
-                wrapper.setSetting(Literals.HEADER, result);
+                result = "";
+            }
+            wrapper.setSetting(Literals.HEADER, result);
             }
             else
             {
