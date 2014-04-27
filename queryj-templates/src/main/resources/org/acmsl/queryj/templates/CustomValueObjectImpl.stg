@@ -114,6 +114,7 @@ public class <result.id.voName>Impl
     public Abstract<result.id.voName>(
         <result.properties:{ p | <property_method_parameter_declaration(property=p, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
     {
+        super(
         <result.properties:{ p | <immutable_property_setter_call(property=p)>}; separator="\n">
     }
 
