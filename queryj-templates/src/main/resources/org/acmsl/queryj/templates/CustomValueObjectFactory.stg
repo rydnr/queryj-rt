@@ -87,7 +87,7 @@ description(result) ::= <<
   Generates the first line of the generated file description.
   @param result the custom result.
 !>
-{@link <result.id.voName>} value object implementations.
+Are responsible of creating {@link <result.id.voName>} value object factories.
 >>
 
 class(result, repository, C) ::= <<
