@@ -170,11 +170,10 @@ public abstract class AbstractQueryJTemplateContext
         if (result == null)
         {
             result = retrieveHeaderFromFile(command, StringUtils.getInstance());
-        }
-                if (result != null)
-                {
-                    wrapper.setSetting(Literals.HEADER, result);
-                }
+
+            if (result != null)
+            {
+                wrapper.setSetting(Literals.HEADER, result);
             }
         }
 
