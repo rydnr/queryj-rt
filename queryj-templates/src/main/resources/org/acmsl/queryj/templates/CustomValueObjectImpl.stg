@@ -37,7 +37,7 @@
 //              implementations.
 //
 //
-group CustomBaseValueObject;
+group CustomBaseValueObjectImpl;
 
 import "queryj.stg"
 
