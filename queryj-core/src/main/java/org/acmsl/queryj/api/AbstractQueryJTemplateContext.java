@@ -181,6 +181,10 @@ public abstract class AbstractQueryJTemplateContext
 
             wrapper.setSetting(Literals.HEADER, result);
         }
+        else
+        {
+            if ()
+        }
 
         return result;
     }
