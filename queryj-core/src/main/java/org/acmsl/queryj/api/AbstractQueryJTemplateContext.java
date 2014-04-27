@@ -196,10 +196,10 @@ public abstract class AbstractQueryJTemplateContext
             file, charset != null ? charset : Charset.defaultCharset());
     }
 
-/**
- * Retrieves the base package name.
- * @return such information.
- */
+    /**
+     * Retrieves the base package name.
+     * @return such information.
+     */
     @NotNull
     @Override
     public String getBasePackageName()
