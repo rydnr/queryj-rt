@@ -162,7 +162,7 @@ public abstract class AbstractQueryJTemplateContext
     @Nullable
     protected String getHeader(@NotNull final QueryJCommand command)
     {
-        @NotNull final wrapper = new QueryJCommandWrapper<String>(command);
+        @NotNull final QueryJCommandWrapper<String> wrapper = new QueryJCommandWrapper<String>(command);
         @Nullable String result = .getSetting(Literals.HEADER);
 
         if (result == null)
