@@ -181,7 +181,9 @@ public abstract class AbstractQueryJTemplateContext
     }
 
     @Nullable
-    protected String retrieveHeaderFromFile(@NotNull final QueryJCommand command, @NotNull final StringUtils stringUtils)
+    protected String retrieveHeaderFromFile(
+        @NotNull final QueryJCommand command, @NotNull final StringUtils stringUtils)
+    {
 @Nullable final File file = new QueryJCommandWrapper<File>(command).getSetting(QueryJSettings.HEADER_FILE);
 
 if (file != null)
