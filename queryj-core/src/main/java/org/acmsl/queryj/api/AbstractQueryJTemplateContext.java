@@ -169,9 +169,9 @@ public abstract class AbstractQueryJTemplateContext
 
             if (file != null)
             {
-                @Nullable final String charset =
+                @Nullable final String charset = new QueryJCommandWrapper<String>(command).getSetting(QueryJSettings.ENCODING);
 
-                result = FileUtils.getInstance().readFileIfPossible(file, new QueryJCommandWrapper<String>(command).getSetting(QueryJSettings.ENCODING))
+                result = FileUtils.getInstance().readFileIfPossible(file, )
             }
         }
     }
