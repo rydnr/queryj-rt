@@ -192,7 +192,8 @@ public abstract class AbstractQueryJTemplateContext
     {
         @Nullable final String result;
 
-        @Nullable final File file = new QueryJCommandWrapper<File>(command).getSetting(QueryJSettings.HEADER_FILE);
+        @Nullable final File file =
+            new QueryJCommandWrapper<File>(command).getSetting(QueryJSettings.HEADER_FILE);
 
         if (file != null)
         {
