@@ -105,7 +105,6 @@ class(result, repository, C) ::= <<
   template="org/acmsl/queryj/templates/CustomValueObjectFactory.stg", C=C)>
  */
 public class <result.id.voName>Factory
-    extends Abstract<result.id.voName>
 {
     /**
      * Creates a new {@code <result.id.voName>}.
