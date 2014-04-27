@@ -114,19 +114,19 @@ public class <result.id.voName>Factory
     /**
      * Singleton implementation to avoid double-checked locking.
      */
-    private static final class <result.id.voName>DataAccessManagerSingletonContainer
+    private static final class <result.id.voName>FactorySingletonContainer
     {
-        private static final <result.id.voName>DataAccessManager SINGLETON =
-            new <result.id.voName>DataAccessManager();
+        private static final <result.id.voName>Factory SINGLETON =
+            new <result.id.voName>Factory();
     }
 
     /**
-     * Retrieves a {@code <result.id.voName>DataAccessManager} instance.
+     * Retrieves a {@code <result.id.voName>Factory} instance.
      * @return such instance.
      */
-    public static <result.id.voName>DataAccessManager getInstance()
+    public static <result.id.voName>Factory getInstance()
     {
-        return <result.id.voName>DataAccessManagerSingletonContainer.SINGLETON;
+        return <result.id.voName>FactorySingletonContainer.SINGLETON;
     }
 
 
