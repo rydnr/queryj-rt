@@ -102,7 +102,7 @@ class(result, repository, C) ::= <<
       description(result=result)
     ]:{line |<line>}; separator="\n * ">
 <class_common_javadoc(
-  template="org/acmsl/queryj/templates/CustomBaseValueObject.stg", C=C)>
+  template="org/acmsl/queryj/templates/CustomBaseValueObjectImpl.stg", C=C)>
  */
 public abstract class Abstract<result.id.voName>
     implements <result.id.voName>
