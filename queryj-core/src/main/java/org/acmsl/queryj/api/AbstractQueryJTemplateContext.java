@@ -178,12 +178,8 @@ public abstract class AbstractQueryJTemplateContext
             {
                 result = "";
             }
+
             wrapper.setSetting(Literals.HEADER, result);
-            }
-            else
-            {
-                wrappe
-            }
         }
 
         return result;
