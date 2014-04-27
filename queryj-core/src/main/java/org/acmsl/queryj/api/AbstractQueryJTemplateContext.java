@@ -39,7 +39,6 @@ package org.acmsl.queryj.api;
 /*
  * Importing QueryJ Core classes.
  */
-import org.acmsl.commons.utils.io.FileUtils;
 import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
