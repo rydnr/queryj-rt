@@ -115,7 +115,7 @@ public class AbstractQueryJTemplateContextTest
     {
         @NotNull final AbstractQueryJTemplateContext instance = createContext();
 
-        Assert.assertEquals("", instance.getHeader());
+        Assert.assertNull(instance.getHeader());
     }
 
     /**
