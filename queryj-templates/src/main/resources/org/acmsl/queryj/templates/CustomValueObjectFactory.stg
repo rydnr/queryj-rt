@@ -121,7 +121,7 @@ public class <result.id.voName>Factory
     }
 
     /**
-     * Retrieves a {@code <repository.capitalized>DataAccessManager} instance.
+     * Retrieves a {@code <>DataAccessManager} instance.
      * @return such instance.
      */
     public static <repository.capitalized>DataAccessManager getInstance()
