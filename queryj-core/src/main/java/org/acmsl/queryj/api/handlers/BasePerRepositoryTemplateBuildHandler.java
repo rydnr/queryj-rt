@@ -146,7 +146,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
                 storeTemplate(t_Template, parameters);
             }
         }
-    }
+//    }
 
     /**
      * Checks whether template generation is enabled for this kind of template.
