@@ -64,7 +64,7 @@ sourceImpl(result, C) ::= <<
   [
     description(result=result)
   ],
-  template="org/acmsl/queryj/templates/CustomBaseValueObjectImpl.stg",
+  template="org/acmsl/queryj/templates/CustomValueObjectImpl.stg",
   C=C)><endif>
 */
 <package_declaration(p=C.package)>
@@ -102,7 +102,7 @@ class(result, repository, C) ::= <<
       description(result=result)
     ]:{line |<line>}; separator="\n * ">
 <class_common_javadoc(
-  template="org/acmsl/queryj/templates/CustomBaseValueObjectImpl.stg", C=C)>
+  template="org/acmsl/queryj/templates/CustomValueObjectImpl.stg", C=C)>
  */
 public class <result.id.voName>Impl
     extend Abstract<result.id.voName>
