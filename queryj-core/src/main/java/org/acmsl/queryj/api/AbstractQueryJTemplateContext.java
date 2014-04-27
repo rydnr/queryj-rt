@@ -164,7 +164,6 @@ public abstract class AbstractQueryJTemplateContext
     {
         @NotNull final QueryJCommandWrapper<String> wrapper = new QueryJCommandWrapper<String>(command);
 
-
         @Nullable String result = wrapper.getSetting(Literals.HEADER);
 
         if (result == null)
