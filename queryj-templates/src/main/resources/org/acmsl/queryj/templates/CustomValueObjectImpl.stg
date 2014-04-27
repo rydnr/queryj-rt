@@ -64,7 +64,7 @@ sourceImpl(result, C) ::= <<
   [
     description(result=result)
   ],
-  template="org/acmsl/queryj/templates/CustomBaseValueObject.stg",
+  template="org/acmsl/queryj/templates/CustomBaseValueObjectImpl.stg",
   C=C)><endif>
 */
 <package_declaration(p=C.package)>
