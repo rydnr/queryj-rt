@@ -184,17 +184,17 @@ public abstract class AbstractQueryJTemplateContext
     protected String retrieveHeaderFromFile(
         @NotNull final QueryJCommand command, @NotNull final StringUtils stringUtils)
     {
-@Nullable final File file = new QueryJCommandWrapper<File>(command).getSetting(QueryJSettings.HEADER_FILE);
+        @Nullable final File file = new QueryJCommandWrapper<File>(command).getSetting(QueryJSettings.HEADER_FILE);
 
-if (file != null)
-    {
-@Nullable final Charset charset =
-    new QueryJCommandWrapper<Charset>(command).getSetting(QueryJSettings.ENCODING);
+        if (file != null)
+            {
+        @Nullable final Charset charset =
+            new QueryJCommandWrapper<Charset>(command).getSetting(QueryJSettings.ENCODING);
 
-result =
-    FileUtils.getInstance().readFileIfPossible(
-    file, charset != null ? charset : Charset.defaultCharset());
-
+        result =
+            FileUtils.getInstance().readFileIfPossible(
+            file, charset != null ? charset : Charset.defaultCharset());
+      }
 
 /**
  * Retrieves the base package name.
