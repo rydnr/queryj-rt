@@ -202,6 +202,13 @@ public abstract class AbstractQueryJTemplateContext
             result =
                 fileUtils.readFileIfPossible(
                     file, charset != null ? charset : Charset.defaultCharset());
+        }
+        else
+        {
+            result = null;
+        }
+
+        return result;
     }
 
     /**
