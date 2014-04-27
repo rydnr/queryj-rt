@@ -132,7 +132,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
         @NotNull final MetadataManager metadataManager)
       throws  QueryJBuildException
     {
-        if (isGenerationEnabled(customSqlProvider, parameters))
+//        if (isGenerationEnabled(customSqlProvider, parameters))
         {
             @Nullable final T t_Template =
                 createTemplate(
