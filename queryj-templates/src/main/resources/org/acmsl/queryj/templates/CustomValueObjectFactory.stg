@@ -29,29 +29,29 @@
 //
 //***************************************************************************
 //
-// Filename: CustomValueObjectImpl.stg
+// Filename: CustomValueObjectFactory.stg
 //
 // Author: Jose San Leandro Armendariz
 //
-// Description: Defines the rules to generate CustomValueObjectImpl
+// Description: Defines the rules to generate CustomValueObjectFactory
 //              implementations.
 //
 //
-group CustomValueObjectImpl;
+group CustomValueObjectFactory;
 
 import "queryj.stg"
 
 source(C) ::= <<
 <!
-  Defines the rules to generate CustomValueObjectImpl implementations.
+  Defines the rules to generate CustomValueObjectFactory implementations.
   @param C the context.
 !>
-<sourceImpl(result=C.result, C=C)>
+<sourceFactory(result=C.result, C=C)>
 >>
 
-sourceImpl(result, C) ::= <<
+sourceFactory(result, C) ::= <<
 <!
-  Defines the rules to generate CustomValueObjectImpl implementations.
+  Defines the rules to generate CustomValueObjectFactory implementations.
   @param result the result.
   @param C the context.
 !>
@@ -64,7 +64,7 @@ sourceImpl(result, C) ::= <<
   [
     description(result=result)
   ],
-  template="org/acmsl/queryj/templates/CustomValueObjectImpl.stg",
+  template="org/acmsl/queryj/templates/CustomValueObjectFactory.stg",
   C=C)><endif>
 */
 <package_declaration(p=C.package)>
@@ -102,16 +102,16 @@ class(result, repository, C) ::= <<
       description(result=result)
     ]:{line |<line>}; separator="\n * ">
 <class_common_javadoc(
-  template="org/acmsl/queryj/templates/CustomValueObjectImpl.stg", C=C)>
+  template="org/acmsl/queryj/templates/CustomValueObjectFactory.stg", C=C)>
  */
-public class <result.id.voName>Impl
+public class <result.id.voName>Factory
     extends Abstract<result.id.voName>
 {
     /**
      * Creates a new {@code <result.id.voName>}.
      <result.properties:{ p | <property_javadoc(property=p)>}; separator="\n">
      */
-    public <result.id.voName>Impl(
+    public <result.id.voName>Factory(
         <result.properties:{ p | <property_method_parameter_declaration(property=p, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
     {
         super(<result.properties:{ p | <p.id.voName.uncapitalized>}; separator=", ">);
@@ -130,6 +130,6 @@ tostring_method(result, C) ::= <<
 @Override
 public String toString()
 {
-    return "{ \class\": \"<result.id.voName>Impl\", \"super\": " + super.toString() + ", \"package\": \"<C.package>\" }");
+    return "{ \class\": \"<result.id.voName>Factory\", \"super\": " + super.toString() + ", \"package\": \"<C.package>\" }");
 }
 >>
