@@ -169,7 +169,7 @@ public abstract class AbstractQueryJTemplateContext
 
         if (result == null)
         {
-            result = retrieveHeaderFromFile(command, StringUtils.getInstance());
+            result = retrieveHeaderFromFile(command, FileUtils.getInstance());
 
             if (result != null)
             {
