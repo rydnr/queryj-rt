@@ -180,6 +180,12 @@ public abstract class AbstractQueryJTemplateContext
         return result;
     }
 
+    /**
+     *
+     * @param command
+     * @param fileUtils
+     * @return
+     */
     @Nullable
     protected String retrieveHeaderFromFile(
         @NotNull final QueryJCommand command, @NotNull final FileUtils fileUtils)
