@@ -168,6 +168,7 @@ public abstract class AbstractQueryJTemplateContext
 
         if (result == null)
         {
+            result = retrieveHeaderFromFile()
             @Nullable final File file = new QueryJCommandWrapper<File>(command).getSetting(QueryJSettings.HEADER_FILE);
 
             if (file != null)
