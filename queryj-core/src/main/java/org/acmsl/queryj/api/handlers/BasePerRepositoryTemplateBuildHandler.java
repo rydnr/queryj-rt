@@ -116,7 +116,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
     }
 
     /**
-     *
      * Handles given information.
      * @param parameters the parameters.
      * @param customSqlProvider the custom sql provider.
