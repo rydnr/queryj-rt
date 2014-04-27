@@ -246,7 +246,7 @@ public class AbstractQueryJTemplateContextTest
         new QueryJCommandWrapper<CustomSqlProvider>(t_Command).setSetting(
             CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, customSqlProvider);
 
-        @Nullable final File header = "header";
+        @Nullable final File header = null;
         new QueryJCommandWrapper<File>(t_Command).setSetting(QueryJSettings.HEADER_FILE, header);
 
         @NotNull final DecoratorFactory decoratorFactory = EasyMock.createNiceMock(DecoratorFactory.class);
