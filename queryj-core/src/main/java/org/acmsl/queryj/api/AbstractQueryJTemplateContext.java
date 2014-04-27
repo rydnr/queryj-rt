@@ -70,6 +70,7 @@ import org.jetbrains.annotations.Nullable;
  * Importing JDK classes.
  */
 import java.io.File;
+import java.nio.charset.Charset;
 import java.util.List;
 
 /**
@@ -169,7 +170,7 @@ public abstract class AbstractQueryJTemplateContext
 
             if (file != null)
             {
-                @Nullable final String charset = new QueryJCommandWrapper<String>(command).getSetting(QueryJSettings.ENCODING);
+                @Nullable final String charset = new QueryJCommandWrapper<Charset>(command).getSetting(QueryJSettings.ENCODING);
 
                 result = FileUtils.getInstance().readFileIfPossible(file, )
             }
