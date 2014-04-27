@@ -126,7 +126,7 @@ public class <result.id.voName>Factory
      */
     public static <>DataAccessManager getInstance()
     {
-        return <repository.capitalized>DataAccessManagerSingletonContainer.SINGLETON;
+        return <>DataAccessManagerSingletonContainer.SINGLETON;
     }
 
 
