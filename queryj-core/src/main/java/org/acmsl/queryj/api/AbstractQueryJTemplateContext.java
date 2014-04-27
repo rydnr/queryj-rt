@@ -173,7 +173,8 @@ public abstract class AbstractQueryJTemplateContext
                 @Nullable final Charset charset =
                     new QueryJCommandWrapper<Charset>(command).getSetting(QueryJSettings.ENCODING);
 
-                result = FileUtils.getInstance().readFileIfPossible(file, charset != null ? charset : Charset.defaultCharset())
+                result =
+                    FileUtils.getInstance().readFileIfPossible(file, charset != null ? charset : Charset.defaultCharset());
             }
         }
     }
