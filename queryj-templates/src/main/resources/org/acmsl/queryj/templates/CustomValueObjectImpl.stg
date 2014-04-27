@@ -51,7 +51,7 @@ source(C) ::= <<
 
 sourceImpl(result, C) ::= <<
 <!
-  Defines the rules to generate CustomBaseValueObject implementations.
+  Defines the rules to generate CustomBaseValueObjectImpl implementations.
   @param result the result.
   @param C the context.
 !>
