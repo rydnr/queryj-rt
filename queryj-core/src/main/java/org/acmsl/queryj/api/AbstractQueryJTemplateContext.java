@@ -180,6 +180,7 @@ public abstract class AbstractQueryJTemplateContext
         return result;
     }
 
+
     /**
      * Retrieves the base package name.
      * @return such information.
