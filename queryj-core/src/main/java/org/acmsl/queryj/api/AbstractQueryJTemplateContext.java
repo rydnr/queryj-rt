@@ -181,7 +181,8 @@ public abstract class AbstractQueryJTemplateContext
 
             wrapper.setSetting(Literals.HEADER, result);
         }
-        else if ("".equals(result.trim()))
+
+        if ("".equals(result.trim()))
         {
             result = null;
         }
