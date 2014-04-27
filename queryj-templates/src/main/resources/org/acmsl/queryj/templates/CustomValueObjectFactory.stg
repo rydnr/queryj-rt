@@ -107,7 +107,9 @@ class(result, repository, C) ::= <<
 public class <result.id.voName>Factory
 {
     /**
-     * Public constructor
+     * Public constructor ease reflection-based instantiation.
+     */
+    public
     /**
      * Creates a new {@code <result.id.voName>}.
      <result.properties:{ p | <property_javadoc(property=p)>}; separator="\n">
