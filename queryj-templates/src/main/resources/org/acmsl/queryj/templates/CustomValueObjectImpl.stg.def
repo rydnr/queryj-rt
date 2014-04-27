@@ -2,7 +2,7 @@
  * CustomValueObjectImpl template metadata.
  */
 // The template name (the filename).
-name : CustomValueObject.stg;
+name : CustomValueObjectImpl.stg;
 
 // The type of template: per-table, per-repository, per-foreign-key, per-custom-result, per-custom-sql.
 type : per-custom-result;
