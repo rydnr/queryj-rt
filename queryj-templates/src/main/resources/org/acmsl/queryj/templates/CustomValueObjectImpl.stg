@@ -188,7 +188,7 @@ tostring_method(result, C) ::= <<
 @Override
 public String toString()
 {
-    return "{ \class\": \"<result.id.voName>Impl\", \"super\":");
+    return "{ \class\": \"<result.id.voName>Impl\", \"super\": ");
 
     <result.properties:{ p | <property_toString(property=p)>}; separator="\n">
 
