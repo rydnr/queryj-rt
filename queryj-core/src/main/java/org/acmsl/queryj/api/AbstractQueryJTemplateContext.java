@@ -212,7 +212,7 @@ public abstract class AbstractQueryJTemplateContext
 
             result =
                 fileUtils.readFileIfPossible(
-                    file, charset != null ? charset : Charset.defaultCharset());
+                    file, charset != null ? Charset.forName(charset) : Charset.defaultCharset());
         }
         else
         {
