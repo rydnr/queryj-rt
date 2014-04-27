@@ -133,7 +133,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
       throws  QueryJBuildException
     {
 //        if (isGenerationEnabled(customSqlProvider, parameters))
-        {
+//        {
             @Nullable final T t_Template =
                 createTemplate(
                     templateFactory,
