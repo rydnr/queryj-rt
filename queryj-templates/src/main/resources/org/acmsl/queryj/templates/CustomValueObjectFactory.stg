@@ -113,7 +113,9 @@ public class <result.id.voName>Factory
     public <result.id.voName> create(
         <result.properties:{ p | <property_method_parameter_declaration(property=p, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
     {
-        super(<result.properties:{ p | <p.id.voName.uncapitalized>}; separator=", ">);
+        return
+            new <result.id.voName>Impl(
+            super(<result.properties:{ p | <p.id.voName.uncapitalized>}; separator=", ">);
     }
 
     <tostring_method(result=result, C=C)>
