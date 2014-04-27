@@ -182,9 +182,9 @@ public abstract class AbstractQueryJTemplateContext
 
     /**
      * Retrieves the header from the specified the header file.
-     * @param command the {@link QueryJCommand}
-     * @param fileUtils
-     * @return
+     * @param command the {@link QueryJCommand} instance.
+     * @param fileUtils the {@link FileUtils} instance.
+     * @return the header
      */
     @Nullable
     protected String retrieveHeaderFromFile(
