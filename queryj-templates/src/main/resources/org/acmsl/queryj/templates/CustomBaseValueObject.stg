@@ -185,7 +185,7 @@ public int hashCode()
 tostring_method(result, C) ::= <<
 <! Generates the toString() method !>
 /**
- * {@inheritdoc}
+ * {@inheritDoc}
  */
 <notnull(C=C)>
 @Override
