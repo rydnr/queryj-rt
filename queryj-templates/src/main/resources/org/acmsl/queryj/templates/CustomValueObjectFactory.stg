@@ -129,7 +129,6 @@ public class <result.id.voName>Factory
         return <result.id.voName>FactorySingletonContainer.SINGLETON;
     }
 
-
     /**
      * Creates a new {@code <result.id.voName>}.
      <result.properties:{ p | <property_javadoc(property=p)>}; separator="\n">
