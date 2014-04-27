@@ -127,59 +127,6 @@ public class <result.id.voName>Impl
 }
 >>
 
-equals_method(result, C) ::= <<
-<! Generates the equals(Object) method !>
-/**
- * Checks whether given object is semantically equivalent to this one.
- * @param other the other object to compare to.
- * @return {@code true} if and only if they're equivalent.
- */
-@Override
-public boolean equals(<nullable(C=C)>final Object other)
-{
-    final boolean result;
-
-    if (other instanceof <result.id.voName>)
-    {
-        <notnull(C=C)>final <result.id.voName> candidate = (<result.id.voName>) other;
-
-        <result.properties:{ p | <property_equals(property=p)>}; separator="">
-        result =
-            <result.properties:{ p |<p.id.uncapitalized>Match}; separator="\n&& ">;
-    }
-    else
-    {
-        result = false;
-    }
-
-    return result;
-}
->>
-
-hashcode_method(result, C) ::= <<
-<! Generates the hashcode() method !>
-/**
- * Retrieves the hashcode which identifies this instance
- * from any other one.
- * @return the unique (among instances of this class) value.
- */
-@Override
-public int hashCode()
-{
-    final int result;
-
-    final int classHashCode = Abstract<result.id.voName>.class.hashCode();
-
-    <result.properties:{ p | <property_hashcode(property=p)>}; separator="\n">
-
-    result =
-          classHashCode
-        <result.properties:{ p |+ <p.id.uncapitalized>HashCode}; separator="\n">;
-
-    return result;
-}
->>
-
 tostring_method(result, C) ::= <<
 <! Generates the toString() method !>
 /**
