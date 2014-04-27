@@ -104,7 +104,7 @@ class(result, repository, C) ::= <<
 <class_common_javadoc(
   template="org/acmsl/queryj/templates/CustomBaseValueObjectImpl.stg", C=C)>
  */
-public class <result.id.voName>
+public class <result.id.voName>Impl
     implements <result.id.voName>
 {
     <result.properties:{ p | <property_isolated_declaration(property=p, C=C)>}; separator="\n\n">
