@@ -171,17 +171,6 @@ public abstract class AbstractQueryJTemplateContext
         {
             result = retrieveHeaderFromFile(command, StringUtils.getInstance());
         }
-            @Nullable final File file = new QueryJCommandWrapper<File>(command).getSetting(QueryJSettings.HEADER_FILE);
-
-            if (file != null)
-            {
-                @Nullable final Charset charset =
-                    new QueryJCommandWrapper<Charset>(command).getSetting(QueryJSettings.ENCODING);
-
-                result =
-                    FileUtils.getInstance().readFileIfPossible(
-                        file, charset != null ? charset : Charset.defaultCharset());
-
                 if (result != null)
                 {
                     wrapper.setSetting(Literals.HEADER, result);
