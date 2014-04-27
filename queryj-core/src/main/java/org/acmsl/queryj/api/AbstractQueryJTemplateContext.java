@@ -194,7 +194,7 @@ public abstract class AbstractQueryJTemplateContext
         result =
             FileUtils.getInstance().readFileIfPossible(
             file, charset != null ? charset : Charset.defaultCharset());
-      }
+    }
 
 /**
  * Retrieves the base package name.
