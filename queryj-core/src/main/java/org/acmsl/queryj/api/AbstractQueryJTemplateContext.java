@@ -174,13 +174,13 @@ public abstract class AbstractQueryJTemplateContext
         {
             result = retrieveHeaderFromFile(command, FileUtils.getInstance());
 
-            if (result != null)
+            if (result == null)
             {
                 wrapper.setSetting(Literals.HEADER, result);
             }
             else
             {
-
+                wrappe
             }
         }
 
