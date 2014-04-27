@@ -1,5 +1,5 @@
 /*
- * CustomValueObject template metadata.
+ * CustomValueObjectImpl template metadata.
  */
 // The template name (the filename).
 name : CustomValueObject.stg;
