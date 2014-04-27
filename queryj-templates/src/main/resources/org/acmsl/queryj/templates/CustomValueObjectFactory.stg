@@ -117,7 +117,7 @@ public class <result.id.voName>Factory
     private static final class <result.id.voName>DataAccessManagerSingletonContainer
     {
         private static final <result.id.voName>DataAccessManager SINGLETON =
-            new <>DataAccessManager();
+            new <result.id.voName>DataAccessManager();
     }
 
     /**
