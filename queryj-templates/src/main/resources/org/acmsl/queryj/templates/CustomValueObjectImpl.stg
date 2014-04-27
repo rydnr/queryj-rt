@@ -108,7 +108,7 @@ public class <result.id.voName>Impl
     extend Abstract<result.id.voName>
 {
     /**
-     * Creates a new {@code Abstract<result.id.voName>}.
+     * Creates a new {@code <result.id.voName>}.
      <result.properties:{ p | <property_javadoc(property=p)>}; separator="\n">
      */
     public Abstract<result.id.voName>(
