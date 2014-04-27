@@ -180,7 +180,7 @@ public abstract class AbstractQueryJTemplateContext
 
                 if (result != null)
                 {
-                    wrapper.setSetting();
+                    wrapper.setSetting(Literals.HEADER, );
                 }
             }
         }
