@@ -170,7 +170,7 @@ public abstract class AbstractQueryJTemplateContext
             if (file != null)
             {
                 @Nullable final
-                result = FileUtils.getInstance().readFileIfPossible(file, new QueryJCommandWrapper<String>(command).getSetting())
+                result = FileUtils.getInstance().readFileIfPossible(file, new QueryJCommandWrapper<String>(command).getSetting(QueryJSettings.ENCODING))
             }
         }
     }
