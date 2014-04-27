@@ -33,7 +33,7 @@
 //
 // Author: Jose San Leandro Armendariz
 //
-// Description: Defines the rules to generate CustomBaseValueObject
+// Description: Defines the rules to generate CustomBaseValueObjectImpl
 //              implementations.
 //
 //
