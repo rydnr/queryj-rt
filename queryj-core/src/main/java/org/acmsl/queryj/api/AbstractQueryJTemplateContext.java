@@ -58,6 +58,8 @@ import org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandler;
 /*
  * Importing some ACM S.L. Java Commons classes.
  */
+import org.acmsl.commons.utils.io.FileUtils;
+
 /*
  * Importing JetBrains annotations.
  */
