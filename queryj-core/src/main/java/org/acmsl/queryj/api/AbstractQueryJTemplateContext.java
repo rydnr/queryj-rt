@@ -178,6 +178,10 @@ public abstract class AbstractQueryJTemplateContext
             {
                 wrapper.setSetting(Literals.HEADER, result);
             }
+            else
+            {
+
+            }
         }
 
         return result;
