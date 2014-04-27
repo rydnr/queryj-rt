@@ -183,7 +183,7 @@ public abstract class AbstractQueryJTemplateContext
         }
         else if ("".equals(result.trim()))
         {
-            if ()
+            result = null;
         }
 
         return result;
