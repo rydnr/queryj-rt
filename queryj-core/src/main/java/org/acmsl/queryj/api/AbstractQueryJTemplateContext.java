@@ -163,7 +163,7 @@ public abstract class AbstractQueryJTemplateContext
 
         if (result == null)
         {
-            @NotNull final File
+            @NotNull final File file = new QueryJCommandWrapper<>()
         }
     }
 
