@@ -181,10 +181,22 @@ public abstract class AbstractQueryJTemplateContext
         return result;
     }
 
-    /**
-     * Retrieves the base package name.
-     * @return such information.
-     */
+@Nullable final File file = new QueryJCommandWrapper<File>(command).getSetting(QueryJSettings.HEADER_FILE);
+
+if (file != null)
+    {
+@Nullable final Charset charset =
+    new QueryJCommandWrapper<Charset>(command).getSetting(QueryJSettings.ENCODING);
+
+result =
+    FileUtils.getInstance().readFileIfPossible(
+    file, charset != null ? charset : Charset.defaultCharset());
+
+
+/**
+ * Retrieves the base package name.
+ * @return such information.
+ */
     @NotNull
     @Override
     public String getBasePackageName()
