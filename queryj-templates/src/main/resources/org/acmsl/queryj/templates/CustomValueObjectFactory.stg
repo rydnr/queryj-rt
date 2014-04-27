@@ -114,7 +114,7 @@ public class <result.id.voName>Factory
     /**
      * Singleton implementation to avoid double-checked locking.
      */
-    private static final class <repository.capitalized>DataAccessManagerSingletonContainer
+    private static final class <result.id.voName>DataAccessManagerSingletonContainer
     {
         private static final <repository.capitalized>DataAccessManager SINGLETON =
             new <repository.capitalized>DataAccessManager();
