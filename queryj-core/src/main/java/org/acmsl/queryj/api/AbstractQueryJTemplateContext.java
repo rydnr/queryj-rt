@@ -169,7 +169,7 @@ public abstract class AbstractQueryJTemplateContext
 
             if (file != null)
             {
-                result = FileUtils.getInstance().readFileIfPossible(file, )
+                result = FileUtils.getInstance().readFileIfPossible(file, retrieveCha)
             }
         }
     }
