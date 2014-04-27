@@ -109,7 +109,9 @@ public class <result.id.voName>Factory
     /**
      * Public constructor ease reflection-based instantiation.
      */
-    public
+    public <result.id.voName>Factory() {}
+
+
     /**
      * Creates a new {@code <result.id.voName>}.
      <result.properties:{ p | <property_javadoc(property=p)>}; separator="\n">
