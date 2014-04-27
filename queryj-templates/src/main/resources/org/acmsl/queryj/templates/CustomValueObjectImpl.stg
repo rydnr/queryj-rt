@@ -189,7 +189,5 @@ tostring_method(result, C) ::= <<
 public String toString()
 {
     return "{ \class\": \"<result.id.voName>Impl\", \"super\": " + super.toString() + ", \"package\": \"<C.package>\" }");
-
-    return result.toString();
 }
 >>
