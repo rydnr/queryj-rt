@@ -163,7 +163,7 @@ public abstract class AbstractQueryJTemplateContext
 
         if (result == null)
         {
-            @NotNull final File file = new QueryJCommandWrapper<File>(command).getSetting(QueryJSettings.HEADER_FILE)
+            @NotNull final File file = new QueryJCommandWrapper<File>(command).getSetting(QueryJSettings.HEADER_FILE);
         }
     }
 
