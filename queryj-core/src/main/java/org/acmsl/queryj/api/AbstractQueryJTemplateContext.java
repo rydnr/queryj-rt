@@ -68,6 +68,7 @@ import org.jetbrains.annotations.Nullable;
 /*
  * Importing JDK classes.
  */
+import java.io.File;
 import java.util.List;
 
 /**
