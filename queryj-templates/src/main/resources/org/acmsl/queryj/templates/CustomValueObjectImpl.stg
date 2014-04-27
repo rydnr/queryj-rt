@@ -117,7 +117,7 @@ public class <result.id.voName>Impl
         super(<result.properties:{ p | <p.id.voName.uncapitalized)>}; separator=", ">
     }
 
-    <result.properties:{ p | <property_accessors(property=p, C=C)>}; separator="\n">
+    <result.properties:{ p | <property_getter(property=p, C=C)>}; separator="\n">
 
     <equals_method(result=result, C=C)>
 
