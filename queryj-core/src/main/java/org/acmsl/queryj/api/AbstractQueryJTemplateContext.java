@@ -39,6 +39,7 @@ package org.acmsl.queryj.api;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.commons.utils.StringUtils;
 import org.acmsl.commons.utils.io.FileUtils;
 import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.QueryJCommand;
@@ -168,7 +169,8 @@ public abstract class AbstractQueryJTemplateContext
 
         if (result == null)
         {
-            result = retrieveHeaderFromFile()
+            result = retrieveHeaderFromFile(command, StringUtils.getInstance());
+        }
             @Nullable final File file = new QueryJCommandWrapper<File>(command).getSetting(QueryJSettings.HEADER_FILE);
 
             if (file != null)
