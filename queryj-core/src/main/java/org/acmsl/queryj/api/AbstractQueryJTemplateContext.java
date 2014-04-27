@@ -181,8 +181,8 @@ public abstract class AbstractQueryJTemplateContext
     }
 
     /**
-     *
-     * @param command
+     * Retrieves the header from the specified the header file.
+     * @param command the {@link QueryJCommand}
      * @param fileUtils
      * @return
      */
