@@ -124,7 +124,7 @@ public class <result.id.voName>Impl
 tostring_method(result, C) ::= <<
 <! Generates the toString() method !>
 /**
- * {@inheritdoc}
+ * {@inheritDoc}
  */
 <notnull(C=C)>
 @Override
