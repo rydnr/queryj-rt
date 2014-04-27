@@ -29,21 +29,21 @@
 //
 //***************************************************************************
 //
-// Filename: CustomBaseValueObjectImpl.stg
+// Filename: CustomValueObjectImpl.stg
 //
 // Author: Jose San Leandro Armendariz
 //
-// Description: Defines the rules to generate CustomBaseValueObjectImpl
+// Description: Defines the rules to generate CustomValueObjectImpl
 //              implementations.
 //
 //
-group CustomBaseValueObjectImpl;
+group CustomValueObjectImpl;
 
 import "queryj.stg"
 
 source(C) ::= <<
 <!
-  Defines the rules to generate CustomBaseValueObjectImpl implementations.
+  Defines the rules to generate CustomValueObjectImpl implementations.
   @param C the context.
 !>
 <sourceImpl(result=C.result, C=C)>
@@ -51,7 +51,7 @@ source(C) ::= <<
 
 sourceImpl(result, C) ::= <<
 <!
-  Defines the rules to generate CustomBaseValueObjectImpl implementations.
+  Defines the rules to generate CustomValueObjectImpl implementations.
   @param result the result.
   @param C the context.
 !>
