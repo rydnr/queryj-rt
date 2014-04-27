@@ -56,6 +56,9 @@ import org.acmsl.queryj.tools.exceptions.MetadataManagerNotAvailableException;
 import org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandler;
 
 /*
+ * Importing some ACM S.L. Java Commons classes.
+ */
+/*
  * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
