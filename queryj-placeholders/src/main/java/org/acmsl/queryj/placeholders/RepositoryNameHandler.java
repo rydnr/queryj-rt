@@ -53,17 +53,21 @@ import org.checkthread.annotations.ThreadSafe;
 /**
  * Is able to resolve "repository" placeholder values.
  * @author <a href="mailto:chous@acm-sl.org">chous</a>
- * @since 2012/05/23
+ * @since 3.0
+ * Created: 2012/05/23
  */
 @ThreadSafe
 @SuppressWarnings("unused")
 public class RepositoryNameHandler
     extends AbstractDecoratedStringHandler<QueryJTemplateContext>
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = 7727414526536102572L;
 
     /**
-     * Creates a new {@link RepositoryNameHandler} associated to given
+     * Creates a new {@code RepositoryNameHandler} associated to given
      * {@link org.acmsl.queryj.api.QueryJTemplateContext}.
      * @param context the template.
      */
