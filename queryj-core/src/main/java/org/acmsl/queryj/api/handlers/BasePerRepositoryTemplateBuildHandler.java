@@ -117,7 +117,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
             wrapper.setSetting(DecoratorFactory.class.getName(), decoratorFactory);
 
         }
-        @NotNull final QueryJCommandWrapper<String> package
+        @NotNull final QueryJCommandWrapper<String> packageWrapper =
         buildTemplate(
             command,
             retrieveCustomSqlProvider(command),
