@@ -40,6 +40,7 @@ package org.acmsl.queryj.api.handlers;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.metadata.CachingDecoratorFactory;
 import org.acmsl.queryj.metadata.DecoratorFactory;
@@ -126,7 +127,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
                 retrieveEngine(command),
                 retrieveProjectPackage(command));
 
-        packageWrapper.setSetting();
+        packageWrapper.setSetting(Literals.PACKAGE_NAME, packageName);
         buildTemplate(
             command,
             retrieveCustomSqlProvider(command),
