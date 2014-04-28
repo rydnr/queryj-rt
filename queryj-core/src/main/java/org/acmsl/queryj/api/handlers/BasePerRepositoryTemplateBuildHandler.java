@@ -108,7 +108,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
     public boolean handle(@NotNull final QueryJCommand command)
         throws  QueryJBuildException
     {
-        @NotNull final new QueryJCommandWrapper<DecoratorFactory>(command)
+        @NotNull final QueryJCommandWrapper<DecoratorFactory> wrapper = new QueryJCommandWrapper<DecoratorFactory>(command)
         @Nullable final DecoratorFactory decoratorFactory =
             new QueryJCommandWrapper<DecoratorFactory>(command).getSetting(DecoratorFactory.class.getName());
 
