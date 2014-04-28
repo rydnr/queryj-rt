@@ -120,7 +120,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
         @NotNull final QueryJCommandWrapper<String> packageWrapper =
             new QueryJCommandWrapper<>(command);
 
-        @NotNull final String packageName = packageWrapper.getSetting()
+        @NotNull final String packageName = retrievePackage()
         buildTemplate(
             command,
             retrieveCustomSqlProvider(command),
