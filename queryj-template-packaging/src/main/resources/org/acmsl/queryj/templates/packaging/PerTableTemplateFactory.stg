@@ -33,9 +33,10 @@
 //
 // Author: Jose San Leandro Armendariz
 //
-// Description: Defines the rules to generate QueryJ's TemplateFactories.
+// Description: Defines the rules to generate QueryJ's per-table template
+//              factories.
 //
-group TemplateFactory;
+group PerTableTemplateFactory;
 
 import "common.stg"
 
@@ -154,7 +155,7 @@ public class <C.class_name>
 
         @NotNull final String t_strFileName = retrieveTemplateFileName(tableName, t_Context.getMetadataManager());
 
-        new QueryJCommandWrapper<String>(command).setSetting(
+        new QueryJCommandWrapper\<String>(command).setSetting(
             Literals.FILE_NAME, t_strFileName);
 
         return new <def.name.noExtension>Template(t_Context);

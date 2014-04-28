@@ -78,6 +78,7 @@ import org.acmsl.commons.patterns.dao.DataAccessManager;
 
 <endif>
 
+
 <class(repository=repository, tables=tables, C=C)>
 >>
 
@@ -120,7 +121,7 @@ public class <repository.capitalized>DataAccessManager
     /**
      * Public constructor to allow reflective access.
      */
-    public <repository.capitalized>DataAccessManager() {};
+    public <repository.capitalized>DataAccessManager() {}
 
     /**
      * Singleton implementation to avoid double-checked locking.
