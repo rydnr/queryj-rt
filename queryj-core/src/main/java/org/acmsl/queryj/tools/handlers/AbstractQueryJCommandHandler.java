@@ -42,13 +42,11 @@ import org.acmsl.queryj.QueryJSettings;
 import org.acmsl.queryj.api.QueryJCommandUtils;
 import org.acmsl.queryj.api.exceptions.CannotRetrieveDatabaseMetadataException;
 import org.acmsl.queryj.api.Template;
-import org.acmsl.queryj.api.exceptions.DecoratorFactoryNotAvailableException;
 import org.acmsl.queryj.api.exceptions.UnsupportedCharsetQueryjException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.handlers.CustomSqlProviderRetrievalHandler;
-import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.tools.exceptions.MetadataManagerNotAvailableException;
 import org.acmsl.queryj.tools.exceptions.MissingConnectionAtRuntimeException;
@@ -196,25 +194,6 @@ public abstract class AbstractQueryJCommandHandler
     }
 
     /**
-     * Retrieves the decorator factory.
-     * @param command the command.
-     * @return such instance.
-     */
-    @NotNull
-    protected DecoratorFactory retrieveDecoratorFactory(@NotNull final QueryJCommand command)
-    {
-        @Nullable final DecoratorFactory result =
-            new QueryJCommandWrapper<DecoratorFactory>(command).getSetting(DecoratorFactory.class.getName());
-
-        if (result == null)
-        {
-            throw new DecoratorFactoryNotAvailableException();
-        }
-
-        return result;
-    }
-
-    /**
      * Retrieves whether to use sub folders or not.
      * @param command the command.
      * @return such flag.
@@ -248,7 +227,7 @@ public abstract class AbstractQueryJCommandHandler
     }
 
     /**
-     * Retrievesthe custom-sql provider from the attribute map.
+     * Retrieves the custom-sql provider from the attribute map.
      * @param parameters the parameter map.
      * @return the provider.
      */

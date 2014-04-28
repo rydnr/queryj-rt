@@ -101,15 +101,7 @@ class_common_javadoc(template, C) ::= <<
 attribute_javadoc(attr) ::= <<
 <!
   Writes the Javadoc for a attribute parameter.
-  @param attribute the attribute.
+  @param name the name of the attribute.
 !>
-* @param <attr.name.uncapitalized> <if(attr.comment.empty)>the \<i><attr.name>\</i> value<else><attr.comment><endif>.
->>
-
-property_javadoc(property) ::= <<
-<!
-  Writes the Javadoc for a property parameter.
-  @param property the property.
-!>
-* @param <property.id.voName.uncapitalized> the \<i><property.id>\</i> value.
+<if(attr.comment.empty)>* @param <attr.name.uncapitalized> the \<i><attr.name>\</i> value.<else>* @param <attr.name.uncapitalized> <attr.comment>.<endif>
 >>

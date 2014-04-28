@@ -73,8 +73,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
-import java.io.File;
-
 /**
  * Tests for {@link AbstractQueryJTemplateContext}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
@@ -115,7 +113,7 @@ public class AbstractQueryJTemplateContextTest
     {
         @NotNull final AbstractQueryJTemplateContext instance = createContext();
 
-        Assert.assertNull(instance.getHeader());
+        Assert.assertEquals("header", instance.getHeader());
     }
 
     /**
@@ -245,6 +243,9 @@ public class AbstractQueryJTemplateContextTest
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         new QueryJCommandWrapper<CustomSqlProvider>(t_Command).setSetting(
             CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, customSqlProvider);
+
+        @Nullable final String header = "header";
+        new QueryJCommandWrapper<String>(t_Command).setSetting(QueryJSettings.HEADER_FILE, header);
 
         @NotNull final DecoratorFactory decoratorFactory = EasyMock.createNiceMock(DecoratorFactory.class);
         new QueryJCommandWrapper<DecoratorFactory>(t_Command)

@@ -123,5 +123,4 @@ public interface Literals
     String RESULT_NAME = "resultName";
     String TEMPLATE_NAME = "templateName";
     String FILE_NAME = "fileName";
-    String RESULT = "result";
 }

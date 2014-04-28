@@ -1,5 +1,5 @@
 /*
-                        QueryJ Template Packaging
+                        queryj
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -93,9 +93,6 @@ public class TemplateBuildHandlerTemplateFactory
         {
             case PER_REPOSITORY:
                 result = new PerRepositoryTemplateBuildHandlerTemplate<>(context);
-                break;
-            case PER_CUSTOM_RESULT:
-                result = new PerCustomResultTemplateBuildHandlerTemplate<>(context);
                 break;
             default:
                 result = new TemplateBuildHandlerTemplate<>(context);

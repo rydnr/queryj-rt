@@ -57,14 +57,14 @@ Feature: Classes associated to custom results compile
   Scenario Outline: Custom result templates work
 
     Given the following custom result:
-    | id | class |
+    | result | dao | type |
     | <result:{ r | <cucumber_custom_result_declaration(result=r)>}; separator="\n">
 
     And the following custom result properties:
-    | name | type | nullable |
+    | name | type |
     | <result.properties:{ p | <cucumber_property_declaration(property=p)>}; separator="\n">
 
-    When I use the custom result template \<template> for Oracle
+    When I use the custom result template \<template>.stg for Oracle
 
     Then the generated custom result-specific \<output> file compiles successfully
 
@@ -79,10 +79,10 @@ indirect_template(def, engineName, tableName) ::= <<
 
 cucumber_custom_result_declaration(attribute) ::= <<
 <! Declares the custom result metadata in Cucumber format !>
-| <result.id> | <result.classValue> |
+| <result.id> | <result.dao> | <result.type> |
 >>
 
 cucumber_property_declaration(attribute) ::= <<
 <! Declares the property metadata in Cucumber format !>
-| <property.id> | <property.type> | <property.nullable> |
+| <property.id> | <property.type> |
 >>

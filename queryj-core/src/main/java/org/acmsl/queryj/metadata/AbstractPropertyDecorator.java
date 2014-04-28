@@ -481,44 +481,13 @@ public abstract class AbstractPropertyDecorator
     }
 
     /**
-     * Checks whether the attribute is strictly primitive.
+     * Retrieves the property name.
      * @return such information.
      */
-    @SuppressWarnings("unused")
-    public boolean isStrictlyPrimitive()
-    {
-        return isStrictlyPrimitive(getType().getValue(), isNullable(), getMetadataTypeManager());
-    }
-
-    /**
-     * Retrieves whether this attribute can be modelled as a primitive or not.
-     * @param type the attribute type.
-     * @param nullable whether the attribute allows nulls.
-     * @param metadataTypeManager the metadata type manager.
-     * @return <code>false</code> if no primitive matches.
-     */
-    protected boolean isStrictlyPrimitive(
-        @NotNull final String type,
-        final boolean nullable,
-        @NotNull final MetadataTypeManager metadataTypeManager)
-    {
-        return !nullable && metadataTypeManager.isPrimitive(type);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
     @NotNull
     public String toString()
     {
-        return
-              "{ \"class\": \"AbstractPropertyDecorator\""
-            + ", \"property\": " + this.m__Property
-            + ", \"metadataManager\": " + this.m__MetadataManager
-            + ", \"metadataTypeManager\": " + this.m__MetadataTypeManager
-            + ", \"package\": \"org.acmsl.queryj.metadata\""
-            + " }";
+        return "" + getProperty();
     }
 
     /**
@@ -570,9 +539,6 @@ public abstract class AbstractPropertyDecorator
         return property.equals(object);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int compareTo(final Property<DecoratedString> property)
     {

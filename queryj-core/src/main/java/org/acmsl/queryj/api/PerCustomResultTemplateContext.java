@@ -101,12 +101,12 @@ public class PerCustomResultTemplateContext
 
     /**
      * Retrieves the result key.
-     * @return "result".
+     * @return "resultName".
      */
     @NotNull
     public String buildResultKey()
     {
-        return Literals.RESULT;
+        return Literals.RESULT_NAME;
     }
 
     /**

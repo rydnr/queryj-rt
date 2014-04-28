@@ -451,9 +451,7 @@ public class PerTableTemplatesTest
             (PerTableTemplateGenerator\<PerTableTemplate\<PerTableTemplateContext>, PerTableTemplateContext>) retrieveTemplateGenerator(
                 templateName);
 
-        Assert.assertNotNull(
-            "No template generator found for " + templateName + ". Does " + templateName + ".stg exist?",
-            generator);
+        Assert.assertNotNull("No template generator found for " + templateName, generator);
 
         @NotNull final DecoratorFactory decoratorFactory = retrieveDecoratorFactory(generator);
 
