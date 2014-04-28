@@ -114,7 +114,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
         if (decoratorFactory == null)
         {
             decoratorFactory = CachingDecoratorFactory.getInstance();
-
+            wrapper.setSetting();
 
         }
         buildTemplate(
