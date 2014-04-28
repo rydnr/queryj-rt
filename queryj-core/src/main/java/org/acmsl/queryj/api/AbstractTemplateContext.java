@@ -373,7 +373,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     protected String buildPackageNameKey()
     {
-        return PACKAGE_NAME;
+        return QueryJSettings.PACKAGE;
     }
 
     /**
