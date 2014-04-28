@@ -121,7 +121,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
             new QueryJCommandWrapper<>(command);
 
         @NotNull final String packageName =
-            retrievePackage(retrieveTableRepositoryName(command), retrieveProjectPackage(command));
+            retrievePackage(retrieveTableRepositoryName(command), retrieveE retrieveProjectPackage(command));
         buildTemplate(
             command,
             retrieveCustomSqlProvider(command),
