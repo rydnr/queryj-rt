@@ -1,5 +1,5 @@
 /*
-                        QueryJ
+                        QueryJ Template Packaging
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -23,33 +23,22 @@
 
  ******************************************************************************
  *
- * Filename: CurrentYearHandler.java
+ * Filename: PerCustomResultTemplateBuildHandlerTemplate.java
  *
- * Author: Jose San Leandro Armendariz (chous)
+ * Author: Jose San Leandro Armendariz
  *
- * Description: Used to fill the 'current_year' placeholder in templates.
+ * Description: Template for per-custom result template build handlers.
  *
- * Date: 5/13/12
- * Time: 6:08 AM
+ * Date: 2014/04/25
+ * Time: 18:39
  *
  */
-package org.acmsl.queryj.placeholders;
+package org.acmsl.queryj.templates.packaging;
 
 /*
- * Importing some JetBrains annotations.
- */
-import org.acmsl.queryj.api.NonRelevantFillHandler;
-
-/*
- * Importing checkthreads.org annotations.
+ * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
-
-/*
- * Importing some JDK classes.
- */
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 /*
  * Importing checkthread.org annotations.
@@ -57,39 +46,38 @@ import java.util.Date;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
- * Used to fill the 'current_year' placeholder in templates.
- * @author <a href="mailto:jose@acm-sl.org">Jose San Leandro</a>
- * @since 2012/05/13
+ * Template for per-custom result template build handlers.
+ * @param <C> the template packaging context type.
+ * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
+ * @since 3.0
+ * Created: 2014/04/25 18:39
  */
 @ThreadSafe
-public class CurrentYearHandler
-    extends AbstractFillHandler<String>
-    implements NonRelevantFillHandler
+public class PerCustomResultTemplateBuildHandlerTemplate<C extends TemplatePackagingContext>
+    extends TemplateBuildHandlerTemplate<C>
 {
     /**
      * The serial version id.
      */
-    private static final long serialVersionUID = 3601964012509602628L;
+    private static final long serialVersionUID = -8254912668317648369L;
 
     /**
-     * Returns "current_year".
-     * @return such placeholder.
+     * Creates a new instance using given context.
+     * @param context the context.
      */
-    @NotNull
-    @Override
-    public String getPlaceHolder()
+    public PerCustomResultTemplateBuildHandlerTemplate(@NotNull final C context)
     {
-        return "current_year";
+        super(context);
     }
 
     /**
-     * Retrieves the template value for that placeholder.
-     * @return the dynamic value.
+     * Retrieves the template name.
+     * @return "PerCustomResultTemplateBuildHandler".
      */
     @NotNull
     @Override
-    public String getValue()
+    public String getTemplateName()
     {
-        return new SimpleDateFormat("yyyy").format(new Date());
+        return Literals.PER_CUSTOM_RESULT_TEMPLATE_BUILD_HANDLER;
     }
 }

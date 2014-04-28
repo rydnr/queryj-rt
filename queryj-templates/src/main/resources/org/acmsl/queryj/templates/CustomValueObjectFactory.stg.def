@@ -1,17 +1,17 @@
 /*
- * BaseResultSetExtractor template metadata.
+ * CustomValueObjectFactory template metadata.
  */
 // The template name (the filename).
-name : BaseResultSetExtractor.stg;
+name : CustomValueObjectFactory.stg;
 
 // The type of template: per-table, per-repository, per-foreign-key, per-custom-result, per-custom-sql.
-type : per-repository;
+type : per-custom-result;
 
 // The output flavor.
 output: Java;
 
 // The filename builder.
-filename builder : <repository.capitalized>ResultSetExtractor.java;
+filename builder : <result.name.camelCase>Factory.java;
 
 // The package.
 package: <packageName>.dao;
