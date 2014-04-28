@@ -126,7 +126,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
                 retrieveEngine(command),
                 retrieveProjectPackage(command));
 
-
+        packageWrapper.setSetting();
         buildTemplate(
             command,
             retrieveCustomSqlProvider(command),
