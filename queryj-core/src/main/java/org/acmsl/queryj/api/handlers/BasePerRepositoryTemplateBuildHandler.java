@@ -86,7 +86,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
     implements TemplateBuildHandler
 {
     /**
-     * Creates a {@link BasePerRepositoryTemplateBuildHandler} instance.
+     * Creates a {@code BasePerRepositoryTemplateBuildHandler} instance.
      */
     public BasePerRepositoryTemplateBuildHandler() {}
 
