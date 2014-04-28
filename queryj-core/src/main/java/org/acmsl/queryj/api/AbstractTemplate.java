@@ -774,7 +774,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
         }
         else
         {
-             or fin l int i = 0; i < a; i++)
+            for final int i = 0; i < a; i++)
             {
                 xxx
             }
