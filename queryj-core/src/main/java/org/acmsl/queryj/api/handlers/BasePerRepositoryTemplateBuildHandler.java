@@ -105,7 +105,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
     public boolean handle(@NotNull final QueryJCommand command)
         throws  QueryJBuildException
     {
-        super.retrieveDecoratorFactory()
+        super.retrieveDecoratorFactory(command);
         buildTemplate(
             command,
             retrieveCustomSqlProvider(command),
