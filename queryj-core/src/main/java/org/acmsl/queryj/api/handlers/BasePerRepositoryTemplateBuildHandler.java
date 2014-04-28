@@ -40,6 +40,8 @@ package org.acmsl.queryj.api.handlers;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.queryj.QueryJCommandWrapper;
+import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.SqlDAO;
 import org.acmsl.queryj.api.AbstractBasePerRepositoryTemplate;
 import org.acmsl.queryj.api.PerRepositoryTemplateContext;
@@ -105,7 +107,13 @@ public abstract class BasePerRepositoryTemplateBuildHandler
     public boolean handle(@NotNull final QueryJCommand command)
         throws  QueryJBuildException
     {
-        super.retrieveDecoratorFactory(command);
+        @Nullable final DecoratorFactory decoratorFactory =
+            new QueryJCommandWrapper<DecoratorFactory>(command).getSetting(DecoratorFactory.class.getName());
+
+        if (decoratorFactory == null)
+        {
+
+        }
         buildTemplate(
             command,
             retrieveCustomSqlProvider(command),
