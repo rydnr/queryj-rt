@@ -774,12 +774,6 @@ public abstract class AbstractTemplate<C extends TemplateContext>
         }
         else
         {
-            for final int i = 0; i < a; i++)
-            {
-                xxx
-            }
-        }
-        {
             t_Template = retrieveTemplate(t_Group);
 
             if (t_Template != null)
