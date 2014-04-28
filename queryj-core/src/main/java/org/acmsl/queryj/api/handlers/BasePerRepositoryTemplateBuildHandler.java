@@ -40,6 +40,10 @@ package org.acmsl.queryj.api.handlers;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.queryj.Literals;
+import org.acmsl.queryj.QueryJCommandWrapper;
+import org.acmsl.queryj.metadata.CachingDecoratorFactory;
+import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.SqlDAO;
 import org.acmsl.queryj.api.AbstractBasePerRepositoryTemplate;
 import org.acmsl.queryj.api.PerRepositoryTemplateContext;
@@ -86,7 +90,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
     implements TemplateBuildHandler
 {
     /**
-     * Creates a {@link BasePerRepositoryTemplateBuildHandler} instance.
+     * Creates a {@code BasePerRepositoryTemplateBuildHandler} instance.
      */
     public BasePerRepositoryTemplateBuildHandler() {}
 
@@ -105,6 +109,24 @@ public abstract class BasePerRepositoryTemplateBuildHandler
     public boolean handle(@NotNull final QueryJCommand command)
         throws  QueryJBuildException
     {
+        @NotNull final QueryJCommandWrapper<DecoratorFactory> wrapper = new QueryJCommandWrapper<>(command);
+        @Nullable DecoratorFactory decoratorFactory = wrapper.getSetting(DecoratorFactory.class.getName());
+
+        if (decoratorFactory == null)
+        {
+            decoratorFactory = CachingDecoratorFactory.getInstance();
+            wrapper.setSetting(DecoratorFactory.class.getName(), decoratorFactory);
+
+        }
+
+        @NotNull final String packageName =
+            retrievePackage(
+                retrieveTableRepositoryName(command),
+                retrieveEngine(command),
+                retrieveProjectPackage(command));
+
+        new QueryJCommandWrapper<>(command).setSetting(Literals.PACKAGE_NAME, packageName);
+
         buildTemplate(
             command,
             retrieveCustomSqlProvider(command),

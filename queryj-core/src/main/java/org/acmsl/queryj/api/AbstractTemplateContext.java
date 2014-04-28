@@ -504,8 +504,8 @@ public abstract class AbstractTemplateContext
     {
         return
               "{ \"class\": \"" + AbstractTemplateContext.class.getSimpleName() + '"'
-            + ", \"pk\": \"" + m__Pk + '"'
-            + ", \"command\": " + m__Command
+//            + ", \"pk\": \"" + m__Pk + '"'
+//            + ", \"command\": " + m__Command
             + ", \"package\": \"org.acmsl.queryj.api\""
             + " }";
     }
