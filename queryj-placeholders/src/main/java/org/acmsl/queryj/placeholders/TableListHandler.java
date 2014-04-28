@@ -130,7 +130,7 @@ public class TableListHandler
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final CustomSqlProvider customSqlProvider)
     {
-        @NotNull final List<TableDecorator> result = new ArrayList<TableDecorator>(tables.size());
+        @NotNull final List<TableDecorator> result = new ArrayList<>(tables.size());
 
         for (@Nullable final String t_strTable: tables)
         {
