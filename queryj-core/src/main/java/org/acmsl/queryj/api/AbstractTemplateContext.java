@@ -498,7 +498,7 @@ public abstract class AbstractTemplateContext
     /**
      * {@inheritDoc}
      */
-    @NotNull
+    @NotNull            N
     @Override
     public String toString()
     {
