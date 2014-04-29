@@ -36,7 +36,7 @@
 // Description: Defines the rules to generate per-SQL QueryJ's
 //              TemplateFactories.
 //
-group CustomSqlTemplateFactory;
+group PerCustomSqlTemplateFactory;
 
 import "common.stg"
 
