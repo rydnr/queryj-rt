@@ -58,7 +58,6 @@ public class PerTableTemplateBuildHandlerTemplate<C extends TemplatePackagingCon
     /**
      * The serial version id.
      */
-    private static final long serialVersionUID = 7067911093065280009L;
 
     /**
      * Creates a new instance using given context.
