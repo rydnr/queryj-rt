@@ -58,7 +58,6 @@ public class PerCustomSqlTemplateBuildHandlerTemplate<C extends TemplatePackagin
     /**
      * The serial version id.
      */
-    private static final long serialVersionUID = -8254912668317648369L;
 
     /**
      * Creates a new instance using given context.
