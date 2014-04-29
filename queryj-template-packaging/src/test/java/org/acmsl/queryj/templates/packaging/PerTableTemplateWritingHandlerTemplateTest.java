@@ -68,7 +68,7 @@ public class PerTableTemplateWritingHandlerTemplateTest
         @NotNull final DefaultTemplatePackagingContext context =
             EasyMock.createNiceMock(DefaultTemplatePackagingContext.class);
 
-        @NotNull final PerTableTemplateBuildHandlerTemplate instance =
+        @NotNull final PerTableTemplateWritingHandlerTemplate instance =
             new PerTableTemplateWritingHandlerTemplate<>(context);
 
         Assert.assertEquals(Literals.PER_TABLE_TEMPLATE_WRITING_HANDLER, instance.getTemplateName());
