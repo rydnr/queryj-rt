@@ -80,6 +80,3 @@ public class PerCustomSqlTemplateBuildHandlerTemplate<C extends TemplatePackagin
         return Literals.PER_CUSTOM_RESULT_TEMPLATE_BUILD_HANDLER;
     }
 }
-
-{
-}
