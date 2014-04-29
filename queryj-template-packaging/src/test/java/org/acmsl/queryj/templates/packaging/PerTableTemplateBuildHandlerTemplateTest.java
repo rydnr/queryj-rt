@@ -66,7 +66,7 @@ public class PerTableTemplateBuildHandlerTemplateTest
         @NotNull final DefaultTemplatePackagingContext context =
             EasyMock.createNiceMock(DefaultTemplatePackagingContext.class);
 
-        @NotNull final PerCustomSqlTemplateBuildHandlerTemplate instance =
+        @NotNull final PerTableTemplateBuildHandlerTemplate instance =
             new PerTableTemplateBuildHandlerTemplate<>(context);
 
         Assert.assertEquals(Literals.PER_TABLE_TEMPLATE_BUILD_HANDLER, instance.getTemplateName());
