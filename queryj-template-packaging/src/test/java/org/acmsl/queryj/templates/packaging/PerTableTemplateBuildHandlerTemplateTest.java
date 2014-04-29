@@ -47,6 +47,8 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 /**
  * Tests for {@link PerTableTemplateBuildHandlerTemplate}.
@@ -54,7 +56,7 @@ import org.junit.Test;
  * @since 3.0
  * Created: 2014/04/29 05:53
  */
-@ThreadSafe
+@RunWith(JUnit4.class)
 public class PerTableTemplateBuildHandlerTemplateTest
 {
     /**
