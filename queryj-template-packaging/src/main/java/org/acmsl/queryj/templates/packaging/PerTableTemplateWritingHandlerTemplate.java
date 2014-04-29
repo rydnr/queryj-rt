@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Represents table-specific template writing handler templates.
  *
  * Date: 2014/04/29
  * Time: 06:01
