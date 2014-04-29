@@ -69,7 +69,7 @@ public class PerCustomSqlTemplateBuildHandlerTemplateTest
             EasyMock.createNiceMock(DefaultTemplatePackagingContext.class);
 
         @NotNull final PerCustomSqlTemplateBuildHandlerTemplate instance =
-            new PerCustomResultTemplateBuildHandlerTemplate<>(context);
+            new PerCustomSqlTemplateBuildHandlerTemplate<>(context);
 
         Assert.assertEquals(Literals.PER_CUSTOM_RESULT_TEMPLATE_BUILD_HANDLER, instance.getTemplateName());
     }
