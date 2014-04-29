@@ -178,7 +178,7 @@ public interface Literals
      */
     String PER_CUSTOM_SQL_TEMPLATE_BUILD_HANDLER = "PerCustomSqlTemplateBuildHandler";
     /**
-     * String literal:
+     * String literal: "PerTableTemplateBuildHandler".
      */
     String PER_TABLE_TEMPLATE_BUILD_HANDLER = "PerTableTemplateBuildHandler";
 }
