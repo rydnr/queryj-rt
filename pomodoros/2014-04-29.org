@@ -1,0 +1,5 @@
+* 2014/04/29
+** TODO Fix AttributesStatementSetter : 3 ->
+** TODO Move shared classes to commons project : 3 ->
+** TODO Fix DAOChooser : 3 ->
+   
