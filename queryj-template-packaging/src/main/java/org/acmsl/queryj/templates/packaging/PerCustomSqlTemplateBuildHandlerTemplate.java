@@ -63,7 +63,7 @@ public class PerCustomSqlTemplateBuildHandlerTemplate<C extends TemplatePackagin
      * Creates a new instance using given context.
      * @param context the context.
      */
-    public PerCustomResultTemplateBuildHandlerTemplate(@NotNull final C context)
+    public PerCustomSqlTemplateBuildHandlerTemplate(@NotNull final C context)
     {
         super(context);
     }
