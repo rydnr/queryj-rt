@@ -71,6 +71,6 @@ public class PerTableTemplateWritingHandlerTemplateTest
         @NotNull final PerTableTemplateBuildHandlerTemplate instance =
             new PerTableTemplateBuildHandlerTemplate<>(context);
 
-        Assert.assertEquals(Literals.PER_TABLE_TEMPLATE_BUILD_HANDLER, instance.getTemplateName());
+        Assert.assertEquals(Literals.PER_TABLE_TEMPLATE_WRITING_HANDLER, instance.getTemplateName());
     }
 }
