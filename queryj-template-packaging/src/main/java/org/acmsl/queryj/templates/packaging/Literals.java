@@ -182,7 +182,7 @@ public interface Literals
      */
     String PER_TABLE_TEMPLATE_BUILD_HANDLER = "PerTableTemplateBuildHandler";
     /**
-     * String literal: "PerTableTemplateBuildHandler".
+     * String literal: "PerTableTemplateWritingHandler".
      */
     String PER_TABLE_TEMPLATE_WRITING_HANDLER = "PerTableTemplateWritingHandler";
 }
