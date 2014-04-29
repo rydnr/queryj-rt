@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Template for per-table template build handlers.
  *
  * Date: 2014/04/29
  * Time: 05:56
