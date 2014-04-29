@@ -156,6 +156,13 @@ public class <C.class_name>
         @NotNull final QueryJCommand parameters)
       throws  QueryJBuildException
     {
+        new QueryJCommandWrapper\<DecoratorFactory>(parameters).setSetting(
+            DecoratorFactory.class.getName(), CachingDecoratorFactory.getInstance());
+
+        new QueryJCommandWrapper\<String>(parameters).setSetting(
+            Literals.PACKAGE_NAME,
+            retrievePackage(
+                repository, retrieveMetadataManager(parameters).getEngine(), retrieveProjectPackage(parameters)));
 
         return super.createTemplate(tableName, staticContents, parameters);
     }
