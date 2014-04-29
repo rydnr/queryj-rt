@@ -69,7 +69,7 @@ public class PerTableTemplateBuildHandlerTemplateTest
         @NotNull final PerCustomSqlTemplateBuildHandlerTemplate instance =
             new PerCustomSqlTemplateBuildHandlerTemplate<>(context);
 
-        Assert.assertEquals(Literals.PER_CUSTOM_SQL_TEMPLATE_BUILD_HANDLER, instance.getTemplateName());
+        Assert.assertEquals(Literals.PER_TABLE_TEMPLATE_BUILD_HANDLER, instance.getTemplateName());
     }
 
 }
