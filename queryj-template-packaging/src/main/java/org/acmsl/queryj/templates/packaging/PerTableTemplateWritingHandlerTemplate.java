@@ -76,6 +76,6 @@ public class PerTableTemplateWritingHandlerTemplate<C extends TemplatePackagingC
     @Override
     public String getTemplateName()
     {
-        return Literals.PER_TABLE_TEMPLATE_BUILD_HANDLER;
+        return Literals.PER_TABLE_TEMPLATE_WRITING_HANDLER;
     }
 }
