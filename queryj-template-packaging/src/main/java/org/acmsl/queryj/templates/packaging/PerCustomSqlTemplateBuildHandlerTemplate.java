@@ -76,6 +76,6 @@ public class PerCustomSqlTemplateBuildHandlerTemplate<C extends TemplatePackagin
     @Override
     public String getTemplateName()
     {
-        return Literals.PER_CUSTOM_RESULT_TEMPLATE_BUILD_HANDLER;
+        return Literals.PER_CUSTOM_SQL_TEMPLATE_BUILD_HANDLER;
     }
 }
