@@ -71,7 +71,7 @@ public class PerTableTemplateBuildHandlerTemplate<C extends TemplatePackagingCon
 
     /**
      * Retrieves the template name.
-     * @return "PerCustomSqlTemplateBuildHandler".
+     * @return "PerTableTemplateBuildHandler".
      */
     @NotNull
     @Override
