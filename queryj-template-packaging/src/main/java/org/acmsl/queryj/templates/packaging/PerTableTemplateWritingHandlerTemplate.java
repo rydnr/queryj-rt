@@ -63,7 +63,7 @@ public class PerTableTemplateWritingHandlerTemplate<C extends TemplatePackagingC
      * Creates a new instance using given context.
      * @param context the context.
      */
-    public PerTableTemplateBuildHandlerTemplate(@NotNull final C context)
+    public PerTableTemplateWritingHandlerTemplate(@NotNull final C context)
     {
         super(context);
     }
