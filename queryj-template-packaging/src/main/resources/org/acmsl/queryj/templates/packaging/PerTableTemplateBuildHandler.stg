@@ -152,7 +152,7 @@ public class <C.class_name>
     protected <def.name.noExtension>Template createTemplate(
         @NotNull final <def.name.noExtension>TemplateFactory templateFactory,
         @NotNull final String tableName,
-        @NotNull final List<Row<String>> staticContents,
+        @NotNull final List<Row<String\>> staticContents,
         @NotNull final QueryJCommand parameters)
       throws  QueryJBuildException
     {
