@@ -72,5 +72,4 @@ public class PerTableTemplateBuildHandlerTemplateTest
 
         Assert.assertEquals(Literals.PER_TABLE_TEMPLATE_BUILD_HANDLER, instance.getTemplateName());
     }
-
 }
