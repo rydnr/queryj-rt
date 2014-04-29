@@ -35,7 +35,7 @@
 //
 // Description: Defines the rules to generate QueryJ's TemplateBuildHandlers.
 //
-group TemplateBuildHandler;
+group PerCustomSqlTemplateBuildHandler;
 
 import "common.stg"
 
