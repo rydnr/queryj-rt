@@ -42,7 +42,7 @@ import "common.stg"
 
 source(C) ::= <<
 <!
-  Generates a TemplateWritingHandler source file.
+  Generates a per-table TemplateWritingHandler source file.
   @param C the context.
 !>
 <sourceImpl(def=C.templateDef, C=C)>
