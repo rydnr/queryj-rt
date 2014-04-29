@@ -52,6 +52,31 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2014/04/29 05:56
  */
 @ThreadSafe
-public class PerTableTemplateBuildHandlerTemplate
+public class PerTableTemplateBuildHandlerTemplate<C extends TemplatePackagingContext>
+    extends TemplateBuildHandlerTemplate<C>
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = 7067911093065280009L;
+
+    /**
+     * Creates a new instance using given context.
+     * @param context the context.
+     */
+    public PerCustomSqlTemplateBuildHandlerTemplate(@NotNull final C context)
+    {
+        super(context);
+    }
+
+    /**
+     * Retrieves the template name.
+     * @return "PerCustomSqlTemplateBuildHandler".
+     */
+    @NotNull
+    @Override
+    public String getTemplateName()
+    {
+        return Literals.PER_CUSTOM_SQL_TEMPLATE_BUILD_HANDLER;
+    }
 }
