@@ -56,6 +56,7 @@ import org.checkthread.annotations.ThreadSafe;
 public class PerTableTemplateWritingHandlerTemplate<C extends TemplatePackagingContext>
     extends TemplateBuildHandlerTemplate<C>
 {
+    private static final long serialVersionUID = -910691293894728629L;
     /**
      * The serial version id.
      */
