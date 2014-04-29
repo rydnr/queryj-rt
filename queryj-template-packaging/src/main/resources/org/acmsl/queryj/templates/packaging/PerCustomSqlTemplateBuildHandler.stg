@@ -33,7 +33,8 @@
 //
 // Author: Jose San Leandro Armendariz
 //
-// Description: Defines the rules to generate per-SQL QueryJ's TemplateBuildHandlers.
+// Description: Defines the rules to generate per-SQL QueryJ's
+//              TemplateBuildHandlers.
 //
 group PerCustomSqlTemplateBuildHandler;
 
