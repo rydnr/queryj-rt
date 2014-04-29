@@ -70,7 +70,7 @@ public class PerTableTemplateWritingHandlerTemplate<C extends TemplatePackagingC
 
     /**
      * Retrieves the template name.
-     * @return "PerTableTemplateBuildHandler".
+     * @return "PerTableTemplateWritingHandler".
      */
     @NotNull
     @Override
