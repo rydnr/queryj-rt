@@ -70,7 +70,7 @@ public class PerCustomSqlTemplateBuildHandlerTemplate<C extends TemplatePackagin
 
     /**
      * Retrieves the template name.
-     * @return "PerCustomResultTemplateBuildHandler".
+     * @return "PerCustomSqlTemplateBuildHandler".
      */
     @NotNull
     @Override
