@@ -156,7 +156,8 @@ public class <C.class_name>
         @NotNull final QueryJCommand parameters)
       throws  QueryJBuildException
     {
-        return templateFactory.createTemplate(tableName, staticContents, parameters);
+
+        return super.createTemplate(tableName, staticContents, parameters);
     }
 
     /**
