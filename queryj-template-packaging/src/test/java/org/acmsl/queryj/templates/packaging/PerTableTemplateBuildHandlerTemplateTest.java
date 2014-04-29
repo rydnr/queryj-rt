@@ -38,12 +38,15 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Assert;
+import org.junit.Test;
 
 /**
  *
@@ -54,4 +57,19 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public class PerTableTemplateBuildHandlerTemplateTest
 {
+    /**
+     * Checks whether getTemplateName() returns the correct template name.
+     */
+    @Test
+    public void getTemplateName_returns_the_correct_template_name()
+    {
+        @NotNull final DefaultTemplatePackagingContext context =
+            EasyMock.createNiceMock(DefaultTemplatePackagingContext.class);
+
+        @NotNull final PerCustomSqlTemplateBuildHandlerTemplate instance =
+            new PerCustomSqlTemplateBuildHandlerTemplate<>(context);
+
+        Assert.assertEquals(Literals.PER_CUSTOM_SQL_TEMPLATE_BUILD_HANDLER, instance.getTemplateName());
+    }
+
 }
