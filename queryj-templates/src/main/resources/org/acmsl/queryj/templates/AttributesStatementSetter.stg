@@ -372,7 +372,7 @@ public int hashCode()
 
     final int valuesHashCode = this.m__Values.hashCode();
 
-    final int updateHashCode = Boolean.valueOf(this.m__bUpdateOperation).hashcode();
+    final int updateHashCode = Boolean.valueOf(this.m__bUpdateOperation).hashCode();
 
     result = classHashCode + valuesHashCode + updateHashCode;
 
