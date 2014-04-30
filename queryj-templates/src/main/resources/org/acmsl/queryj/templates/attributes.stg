@@ -188,7 +188,7 @@ attribute_to_primitive(attribute) ::= <<
   >new java.sql.Timestamp(<attribute.name.uncapitalized>)<
  else
   ><attribute.name.uncapitalized><
- >endif>
+ endif>
 >>
 
 attribute_preparedstatement_specification(attr, C) ::= <<
