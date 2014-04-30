@@ -339,7 +339,7 @@ public abstract class AbstractTemplateContext
      * @return such information.
      */
     @Override
-    public String getFileName()
+    public void setFileName(@NotNull final String fileName)
     {
         return getValue(buildFileNameKey(), getCommand(), new FileNameNotAvailableException());
     }
