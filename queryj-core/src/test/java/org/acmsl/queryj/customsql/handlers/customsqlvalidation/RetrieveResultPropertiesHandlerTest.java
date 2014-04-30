@@ -41,6 +41,7 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
+import org.acmsl.queryj.SerializablePropertiesConfiguration;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.ParameterRefElement;
@@ -101,6 +102,11 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public class RetrieveResultPropertiesHandlerTest
 {
+    /**
+     *
+     * @throws QueryJBuildException
+     * @throws SQLException
+     */
     @Test
     public void publishes_explicit_properties()
         throws  QueryJBuildException,
@@ -108,7 +114,8 @@ public class RetrieveResultPropertiesHandlerTest
     {
         @NotNull final RetrieveResultPropertiesHandler instance = new RetrieveResultPropertiesHandler();
 
-        @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+        @NotNull final QueryJCommand t_Parameters =
+            new ConfigurationQueryJCommandImpl(new SerializablePropertiesConfiguration());
 
         @NotNull final SqlElement<String> t_Sql =
             new SqlElement<>(
