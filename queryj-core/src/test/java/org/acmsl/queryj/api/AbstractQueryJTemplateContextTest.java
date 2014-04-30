@@ -230,8 +230,9 @@ public class AbstractQueryJTemplateContextTest
     @NotNull
     protected AbstractQueryJTemplateContext createContext()
     {
-        return createContext()
+        return createContext("fileName");
     }
+
     /**
      * Retrieves an {@link AbstractQueryJTemplateContext}.
      * @param pk the pk.
