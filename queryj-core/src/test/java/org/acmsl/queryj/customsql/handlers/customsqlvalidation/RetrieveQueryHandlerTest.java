@@ -81,6 +81,10 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public class RetrieveQueryHandlerTest
 {
+    /**
+     * Checks the list of queries is retrieved correctly.
+     * @throws QueryJBuildException
+     */
     @Test
     public void retrieves_the_first_query()
         throws QueryJBuildException
@@ -114,6 +118,10 @@ public class RetrieveQueryHandlerTest
         Assert.assertFalse(instance.handle(parameters, chain));
     }
 
+    /**
+     * Checks the list of queries is retrieved correctly.
+     * @throws QueryJBuildException
+     */
     @Test
     public void retrieves_the_list_of_queries()
         throws QueryJBuildException
