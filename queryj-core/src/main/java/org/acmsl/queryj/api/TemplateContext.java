@@ -79,7 +79,7 @@ public interface TemplateContext
      * @return such instance.
      */
     @NotNull
-    String getFileName();
+    void setFileName(@NotNull final String fileName);
 
     /**
      * Retrieves the package name.
