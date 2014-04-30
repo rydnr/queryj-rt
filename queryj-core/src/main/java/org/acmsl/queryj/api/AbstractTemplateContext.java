@@ -180,7 +180,7 @@ public abstract class AbstractTemplateContext
      */
     protected String buildKey(final String key)
     {
-        return buildKey(getPk() + "|" + key;
+        return buildKey(getPk(), key);
     }
 
     /**
