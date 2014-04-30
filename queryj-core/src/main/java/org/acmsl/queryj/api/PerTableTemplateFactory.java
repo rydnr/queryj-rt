@@ -70,5 +70,6 @@ public interface PerTableTemplateFactory<T extends PerTableTemplate<C>, C extend
     public T createTemplate(
         @NotNull final String tableName,
         @NotNull final List<Row<String>> staticContents,
+        @NotNull final C context,
         @NotNull final QueryJCommand command);
 }
