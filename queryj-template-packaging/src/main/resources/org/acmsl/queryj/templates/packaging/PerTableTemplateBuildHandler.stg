@@ -167,12 +167,7 @@ public class <C.class_name>
             retrievePackage(
                 tableName, retrieveMetadataManager(parameters).getEngine(), parameters));
 
-        new QueryJCommandWrapper\<String>(parameters).setSetting(
-            Literals.PACKAGE_NAME,
-            retrievePackage(
-                tableName, retrieveMetadataManager(parameters).getEngine(), parameters));
-
-        return super.createTemplate(templateFactory, tableName, staticContents, parameters);
+        return createTemplate(templateFactory, tableName, staticContents, parameters);
     }
 
     /**
