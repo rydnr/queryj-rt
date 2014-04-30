@@ -41,6 +41,7 @@ package org.acmsl.queryj.customsql.handlers;
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
+import org.acmsl.queryj.SerializablePropertiesConfiguration;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Parameter;
@@ -180,7 +181,8 @@ public class CustomSqlValidationHandlerTest
         EasyMock.replay(t_ResultSet);
         EasyMock.replay(t_Metadata);
 
-        @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+        @NotNull final QueryJCommand t_Parameters =
+            new ConfigurationQueryJCommandImpl(new SerializablePropertiesConfiguration());
 
         new QueryJCommandWrapper<Connection>(t_Parameters)
             .setSetting(JdbcConnectionOpeningHandler.JDBC_CONNECTION, t_Connection);
