@@ -33,7 +33,7 @@
 package org.acmsl.queryj.templates.packaging.maven;
 
 /*
- * Importing QueryJ Template Packaging Plugin.
+ * Importing QueryJ Template Packaging.
  */
 import org.acmsl.queryj.SerializablePropertiesConfiguration;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingChain;
