@@ -36,10 +36,14 @@
 package org.acmsl.queryj;
 
 /*
- * Importing JetBrains annotations.
+ * Importing Apache Commons Configuration classes.
  */
 import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.PropertiesConfiguration;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -47,6 +51,9 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 
+/*
+ * Importing JDK classes.
+ */
 import java.io.File;
 import java.io.Serializable;
 import java.net.URL;
@@ -57,6 +64,7 @@ import java.net.URL;
  * @since 3.0
  * Created: 2014/04/30 12:54
  */
+@SuppressWarnings("unused")
 @ThreadSafe
 public class SerializableConfiguration
     extends PropertiesConfiguration
@@ -81,7 +89,8 @@ public class SerializableConfiguration
     /**
      * {@inheritDoc}
      */
-    public SerializableConfiguration(final File file) throws ConfigurationException
+    public SerializableConfiguration(@NotNull final File file)
+        throws ConfigurationException
     {
         super(file);
     }
@@ -89,7 +98,8 @@ public class SerializableConfiguration
     /**
      * {@inheritDoc}
      */
-    public SerializableConfiguration(final URL url) throws ConfigurationException
+    public SerializableConfiguration(@NotNull final URL url)
+        throws ConfigurationException
     {
         super(url);
     }
