@@ -187,7 +187,8 @@ attribute_to_primitive(attribute) ::= <<
 <if(attribute.numeric)
     ><attribute.name.uncapitalized><
  else><if(attribute.string)
-    ><attribute.name.uncapitalized><endif><endif>
+    ><attribute.name.uncapitalized><
+    endif><endif>
 >>
 
 attribute_preparedstatement_specification(attr, C) ::= <<
