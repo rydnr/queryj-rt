@@ -167,7 +167,7 @@ public class <C.class_name>
             retrievePackage(
                 tableName, retrieveMetadataManager(parameters).getEngine(), parameters));
 
-        return createTemplate(templateFactory, tableName, staticContents, parameters);
+        return templateFactory.createTemplate(templateFactory, tableName, staticContents, parameters);
     }
 
     /**
