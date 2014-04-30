@@ -493,7 +493,7 @@ public abstract class AbstractTemplateContext
      */
     public void setDecoratorFactory(@NotNull final DecoratorFactory factory)
     {
-        new QueryJCommandWrapper<String>(getCommand()).setSetting(buildPackageNameKey(), packageName);
+        new QueryJCommandWrapper<DecoratorFactory>(getCommand()).setSetting(buildPackageNameKey(), factory);
         return setValue(buildDecoratorFactoryKey(), getCommand(), new DecoratorFactoryNotAvailableException());
     }
 
