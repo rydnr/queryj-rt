@@ -45,6 +45,8 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 
+import java.io.Serializable;
+
 /**
  *
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
@@ -53,5 +55,6 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class SerializableConfiguration
+    implements Serializable
 {
 }
