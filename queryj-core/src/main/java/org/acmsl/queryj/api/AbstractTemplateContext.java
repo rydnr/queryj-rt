@@ -188,7 +188,7 @@ public abstract class AbstractTemplateContext
      * @param key the key.
      * @return the command key.
      */
-    protected String buildKey(@NotNull final string pkfinal String key)
+    protected String buildKey(@NotNull final String pk, @NotNull final String key)
     {
         return getPk() + "|" + key;
     }
