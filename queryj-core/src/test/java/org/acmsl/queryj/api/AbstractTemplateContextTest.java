@@ -71,6 +71,8 @@ public class AbstractTemplateContextTest
 
     protected <T> AbstractTemplateContext createContext(@NotNull final T pk)
     {
-
+        return new AbstractQueryJTemplateContext()
+        {
+        }
     }
 }
