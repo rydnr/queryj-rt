@@ -49,11 +49,6 @@ import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.tools.handlers.JdbcConnectionOpeningHandler;
 
 /*
- * Importing Apache Commons Configuration classes.
- */
-import org.apache.commons.configuration.PropertiesConfiguration;
-
-/*
  * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
@@ -86,7 +81,7 @@ import java.sql.SQLException;
 public class SetupPreparedStatementHandlerTest
 {
     /**
-     * Checks
+     * Checks it injects a prepared statement into the command.
      * @throws QueryJBuildException
      * @throws SQLException
      */
