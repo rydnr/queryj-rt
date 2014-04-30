@@ -243,7 +243,7 @@ public abstract class BasePerTableTemplateBuildHandler
      * @return the template.
      */
     @Nullable
-    protected T createTemplate(
+    protected abstract T createTemplate(
         @NotNull final TF templateFactory,
         @NotNull final String tableName,
         @NotNull final List<Row<String>> staticContents,
