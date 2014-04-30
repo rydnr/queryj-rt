@@ -46,13 +46,18 @@ import org.acmsl.queryj.QueryJCommandWrapper;
 /*
  * Importing QueryJ Template Packaging classes.
  */
-import org.acmsl.queryj.SerializablePropertiesConfiguration;
 import org.acmsl.queryj.templates.packaging.AbstractTemplatePackagingTemplate;
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
 import org.acmsl.queryj.templates.packaging.Literals;
 import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplate;
+import org.acmsl.queryj.templates.packaging.PerRepositoryTemplatesTestTemplateFactory;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplateFactory;
+
+/*
+ * Importing Apache Commons Configuration classes.
+ */
+import org.apache.commons.configuration.PropertiesConfiguration;
 
 /*
  * Importing JetBrains annotations.
@@ -138,7 +143,7 @@ public abstract class AbstractTemplatesTestTemplateBuildHandlerTest
         @NotNull final BH instance = createInstance();
 
         @NotNull final QueryJCommand command =
-            new ConfigurationQueryJCommandImpl(new SerializablePropertiesConfiguration());
+            new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
         @NotNull final T template = createTemplateMock();
 
@@ -189,7 +194,7 @@ public abstract class AbstractTemplatesTestTemplateBuildHandlerTest
         @NotNull final BH instance = createInstance();
 
         @NotNull final QueryJCommand command =
-            new ConfigurationQueryJCommandImpl(new SerializablePropertiesConfiguration());
+            new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
         new QueryJCommandWrapper<File>(command).setSetting(
             PerRepositoryTemplatesTestTemplate.OUTPUT_DIR_FOR_TESTS, new File("/"));

@@ -35,11 +35,20 @@
  */
 package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 
-import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.tools.handlers.ParameterValidationHandler;
+import org.junit.runner.RunWith;
+
+/*
+ * Importing QueryJ-Core classes.
+ */
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
-import org.acmsl.queryj.SerializablePropertiesConfiguration;
-import org.acmsl.queryj.tools.handlers.ParameterValidationHandler;
+import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+
+/*
+ * Importing Apache Commons Logging classes.
+ */
+import org.apache.commons.configuration.PropertiesConfiguration;
 
 /*
  * Importing JetBrains annotations.
@@ -52,7 +61,6 @@ import org.jetbrains.annotations.NotNull;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runners.JUnit4;
-import org.junit.runner.RunWith;
 
 /**
  * Tests {@link GlobalValidationEnabledHandler}.
@@ -63,10 +71,6 @@ import org.junit.runner.RunWith;
 @RunWith(JUnit4.class)
 public class GlobalValidationEnabledHandlerTest
 {
-    /**
-     * Tests the validation is enabled if the disable_custom_sql_validation flag is disabled.
-     * @throws QueryJBuildException
-     */
     @Test
     public void global_validation_enabled_passes_through()
         throws QueryJBuildException
@@ -75,17 +79,13 @@ public class GlobalValidationEnabledHandlerTest
             new GlobalValidationEnabledHandler();
 
         @NotNull final QueryJCommand parameters =
-            new ConfigurationQueryJCommandImpl(new SerializablePropertiesConfiguration());
+            new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
         parameters.setSetting(ParameterValidationHandler.DISABLE_CUSTOM_SQL_VALIDATION, false);
 
         Assert.assertFalse(instance.handle(parameters));
     }
 
-    /**
-     * Tests the validation is disabled if the disable_custom_sql_validation flag is enabled.
-     * @throws QueryJBuildException
-     */
     @Test
     public void global_validation_disabled_prevents_validation()
         throws QueryJBuildException
@@ -94,7 +94,7 @@ public class GlobalValidationEnabledHandlerTest
             new GlobalValidationEnabledHandler();
 
         @NotNull final QueryJCommand parameters =
-            new ConfigurationQueryJCommandImpl(new SerializablePropertiesConfiguration());
+            new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
         parameters.setSetting(ParameterValidationHandler.DISABLE_CUSTOM_SQL_VALIDATION, true);
 

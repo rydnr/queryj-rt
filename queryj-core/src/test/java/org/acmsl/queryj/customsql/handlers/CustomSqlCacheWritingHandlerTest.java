@@ -38,7 +38,6 @@ package org.acmsl.queryj.customsql.handlers;
 /*
  * Importing QueryJ Core classes.
  */
-import org.acmsl.queryj.SerializablePropertiesConfiguration;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
@@ -136,8 +135,7 @@ public class CustomSqlCacheWritingHandlerTest
                 statementFlagsDAO,
                 resultSetFlagsDAO);
 
-        @NotNull final QueryJCommand t_Command =
-            new ConfigurationQueryJCommandImpl(new SerializablePropertiesConfiguration());
+        @NotNull final QueryJCommand t_Command = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
         new QueryJCommandWrapper<File>(t_Command).setSetting(
             CustomSqlCacheWritingHandler.CUSTOM_SQL_OUTPUT_FOLDER_FOR_HASHES, tempFolder.getRoot());
         new QueryJCommandWrapper<CustomSqlProvider>(t_Command).setSetting(
@@ -225,8 +223,7 @@ public class CustomSqlCacheWritingHandlerTest
                 statementFlagsDAO,
                 resultSetFlagsDAO);
 
-        @NotNull final QueryJCommand t_Command =
-            new ConfigurationQueryJCommandImpl(new SerializablePropertiesConfiguration());
+        @NotNull final QueryJCommand t_Command = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
         new QueryJCommandWrapper<File>(t_Command).setSetting(
             CustomSqlCacheWritingHandler.CUSTOM_SQL_OUTPUT_FOLDER_FOR_HASHES, tempFolder.getRoot());
         new QueryJCommandWrapper<CustomSqlProvider>(t_Command).setSetting(

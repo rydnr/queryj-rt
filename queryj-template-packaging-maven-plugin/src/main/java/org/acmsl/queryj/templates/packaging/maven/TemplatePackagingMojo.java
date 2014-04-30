@@ -33,7 +33,7 @@
 package org.acmsl.queryj.templates.packaging.maven;
 
 /*
- * Importing QueryJ Template Packaging classes.
+ * Importing QueryJ Template Packaging Plugin.
  */
 import org.acmsl.queryj.templates.packaging.TemplatePackagingChain;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingSettings;
@@ -46,7 +46,6 @@ import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.QueryJSettings;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
-import org.acmsl.queryj.SerializablePropertiesConfiguration;
 import org.acmsl.queryj.tools.maven.QueryJMojo;
 
 /*
@@ -60,7 +59,12 @@ import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 
 /*
- * Importing some JetBrains annotations.
+ * Importing some Apache Commons Configuration classes.
+ */
+import org.apache.commons.configuration.PropertiesConfiguration;
+
+/*
+ * Importing some Jetbrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -160,7 +164,7 @@ public class TemplatePackagingMojo
      */
     public TemplatePackagingMojo()
     {
-        immutableSetQueryJCommand(new ConfigurationQueryJCommandImpl(new SerializablePropertiesConfiguration()));
+        immutableSetQueryJCommand(new ConfigurationQueryJCommandImpl(new PropertiesConfiguration()));
     }
 
     /**

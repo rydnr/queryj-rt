@@ -86,7 +86,6 @@ import org.acmsl.queryj.metadata.vo.Table;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.QueryJSettings;
-import org.acmsl.queryj.SerializablePropertiesConfiguration;
 import org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandler;
 
 /*
@@ -100,6 +99,11 @@ import org.acmsl.queryj.test.TableTestHelper;
  * Importing project classes.
  */
 <C.templateDefs:{ d | <if(d.type.perForeignKey)><def_import(d=d)><endif>}; separator="\n">
+
+/*
+ * Importing Apache Commons Logging classes.
+ */
+import org.apache.commons.configuration.PropertiesConfiguration;
 
 /*
  * Importing StringTemplate classes.
@@ -357,7 +361,7 @@ public class PerForeignKeyTemplatesTest
             firstTime = false;
 
             @NotNull final QueryJCommand t_Command =
-                new ConfigurationQueryJCommandImpl(new SerializablePropertiesConfiguration());
+                new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
             @NotNull final MetadataManager t_MetadataManager =
                 retrieveMetadataManager(

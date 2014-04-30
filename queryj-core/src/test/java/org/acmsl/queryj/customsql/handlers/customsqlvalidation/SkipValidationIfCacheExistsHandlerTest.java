@@ -1,5 +1,5 @@
 /*
-                        QueryJ Core
+                        queryj
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Tests SkipValidationIfCacheExistsHandler.
+ * Description: 
  *
  * Date: 2014/03/16
  * Time: 16:36
@@ -42,7 +42,6 @@ import org.acmsl.commons.utils.io.FileUtils;
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
-import org.acmsl.queryj.SerializablePropertiesConfiguration;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.CustomSqlProviderTest.SemiMockedAbstractCustomSqlProvider;
@@ -79,7 +78,7 @@ import java.io.File;
 import java.nio.charset.Charset;
 
 /**
- * Tests {@link SkipValidationIfCacheExistsHandler}.
+ *
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/16 16:36
@@ -93,10 +92,6 @@ public class SkipValidationIfCacheExistsHandlerTest
     @Rule
     public TemporaryFolder tempFolder = new TemporaryFolder();
 
-    /**
-     * Checks whether it skips further tests if validation cache is found.
-     * @throws QueryJBuildException
-     */
     @Test
     public void skips_further_handlers_if_validation_cache_is_found()
         throws QueryJBuildException
@@ -131,8 +126,7 @@ public class SkipValidationIfCacheExistsHandlerTest
 
         EasyMock.replay(resultDAO);
 
-        @NotNull final QueryJCommand t_Parameters =
-            new ConfigurationQueryJCommandImpl(new SerializablePropertiesConfiguration());
+        @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
         new QueryJCommandWrapper<File>(t_Parameters).setSetting(
             CustomSqlCacheWritingHandler.CUSTOM_SQL_OUTPUT_FOLDER_FOR_HASHES, tempFolder.getRoot());
