@@ -44,11 +44,6 @@ import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 
 /*
- * Importing Apache Commons Configuration classes.
- */
-import org.apache.commons.configuration.PropertiesConfiguration;
-
-/*
  * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
