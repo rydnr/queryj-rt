@@ -519,4 +519,8 @@ public abstract class AbstractTemplateContext
             + ", \"package\": \"org.acmsl.queryj.api\""
             + " }";
     }
+
+    public String buildKey(final String bla)
+    {
+    }
 }
