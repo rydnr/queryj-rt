@@ -89,6 +89,7 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public class ReportUnusedPropertiesHandlerTest
 {
+    /
     @Test
     public void detects_unused_properties()
         throws QueryJBuildException
