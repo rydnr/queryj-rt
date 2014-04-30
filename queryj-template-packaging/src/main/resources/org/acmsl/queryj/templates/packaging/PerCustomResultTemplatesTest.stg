@@ -69,6 +69,7 @@ import org.acmsl.queryj.api.PerCustomResultTemplateContext;
 import org.acmsl.queryj.api.PerCustomResultTemplateFactory;
 import org.acmsl.queryj.api.PerCustomResultTemplateGenerator;
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
+import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.handlers.CustomSqlProviderRetrievalHandler;
 import org.acmsl.queryj.customsql.Property;
