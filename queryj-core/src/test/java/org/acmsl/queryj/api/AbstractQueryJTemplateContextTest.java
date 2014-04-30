@@ -294,10 +294,5 @@ public class AbstractQueryJTemplateContextTest
             QueryJSettings.DISABLE_CHECKTHREAD_ANNOTATIONS, disableCheckthreadAnnotations);
 
         return result;
-            new AbstractQueryJTemplateContext("" + pk, t_Command)
-                {{
-                    immutableSetValue(buildTemplateNameKey(), "", getCommand());
-                    immutableSetValue(buildFileNameKey(), "" + pk, getCommand());
-                }};
     }
 }
