@@ -69,6 +69,12 @@ public class AbstractTemplateContextTest
         Assert.assertTrue(instance.buildKey("bla").contains("this-is-a-pk"));
     }
 
+    /**
+     * Creates a new context.
+     * @param pk the pk.
+     * @param <T> the pk type.
+     * @return the context.
+     */
     protected <T> AbstractTemplateContext createContext(@NotNull final T pk)
     {
         return new AbstractQueryJTemplateContextTest().createContext(pk);
