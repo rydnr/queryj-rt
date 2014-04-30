@@ -341,7 +341,7 @@ public abstract class AbstractTemplateContext
     @Override
     public void setFileName(@NotNull final String fileName)
     {
-
+        new QueryJCommandWrapper<>()
         return getValue(buildFileNameKey(), getCommand(), new FileNameNotAvailableException());
     }
 
