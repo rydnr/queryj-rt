@@ -75,7 +75,7 @@ import org.junit.runners.JUnit4;
 public class QueryValidationEnabledHandlerTest
 {
     /**
-     * Checks a query is not validated if it
+     * Checks a query is not validated if its flag is
      * @throws QueryJBuildException
      */
     @Test
