@@ -443,7 +443,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     protected String buildOutputDirKey()
     {
-        return "outputDir";
+        return buildKey("outputDir");
     }
 
     /**
