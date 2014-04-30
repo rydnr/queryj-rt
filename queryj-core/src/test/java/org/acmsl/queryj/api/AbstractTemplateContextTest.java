@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for AbstractTemplateContext.
  *
  * Date: 2014/04/30
  * Time: 18:16
