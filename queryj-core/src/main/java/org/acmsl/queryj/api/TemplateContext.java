@@ -94,9 +94,6 @@ public interface TemplateContext
      */
     @Override
     public void setPackageName(@NotNull final String packageName);
-    {
-        new QueryJCommandWrapper<String>(getCommand()).setSetting(buildPackageNameKey(), packageName);
-    }
 
     /**
      * Retrieves the version.
