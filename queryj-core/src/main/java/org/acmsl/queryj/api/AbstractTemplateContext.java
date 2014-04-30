@@ -173,7 +173,6 @@ public abstract class AbstractTemplateContext
         return m__Command;
     }
 
-
     /**
      * Builds a command key.
      * @param key the key.
