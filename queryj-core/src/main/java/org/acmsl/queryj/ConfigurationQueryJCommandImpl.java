@@ -414,20 +414,4 @@ public class ConfigurationQueryJCommandImpl
 //            +    confToString(m__Configuration)
             + "} }";
     }
-
-    protected static class SerializableConfigurationWrapper
-        implements Configuration,
-                   Serializable
-    {
-        /**
-         * The wrapped configuration.
-         */
-        /**
-         * Creates a configuration wrapper.
-         * @param configuration the wrapped configuration.
-         */
-        public SerializableConfigurationWrapper(@NotNull final Configuration configuration)
-        {
-        }
-    }
 }
