@@ -414,4 +414,13 @@ public class ConfigurationQueryJCommandImpl
 //            +    confToString(m__Configuration)
             + "} }";
     }
+
+    private class SerializableConfiguration
+        implements Configuration,
+                   Serializable
+    {
+        public SerializableConfiguration(final Configuration configuration)
+        {
+        }
+    }
 }
