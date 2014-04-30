@@ -386,11 +386,11 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Specifies the file name.
+     * Specifies the package name.
      * @param fileName such file name.
      */
     @Override
-    public void setFileName(@NotNull final String fileName)
+    public void setPackageName(@NotNull final String fileName)
     {
         new QueryJCommandWrapper<String>(getCommand()).setSetting(buildFileNameKey(), fileName);
     }
