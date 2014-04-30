@@ -362,7 +362,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     protected String buildFileNameKey()
     {
-        return Literals.FILE_NAME;
+        return getPk() + "|" Literals.FILE_NAME;
     }
 
     /**
