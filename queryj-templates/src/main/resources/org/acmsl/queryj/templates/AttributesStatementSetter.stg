@@ -323,7 +323,7 @@ public boolean equals(<nullable(C=C)>final Object other)
 
     if (other instanceof <table.name.voName>AttributesStatementSetter)
     {
-        <notnull(C=C)>final <table.name.voName>AttributesStatementSetter> candidate =
+        <notnull(C=C)>final <table.name.voName>AttributesStatementSetter candidate =
             (<table.name.voName>AttributesStatementSetter) other;
 
         result = equals(getValues(), isUpdateOperation(), candidate.getValues(), candidate.isUpdateOperation());
