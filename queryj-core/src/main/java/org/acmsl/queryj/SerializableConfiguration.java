@@ -55,6 +55,7 @@ import java.io.Serializable;
  */
 @ThreadSafe
 public class SerializableConfiguration
+    extends
     implements Serializable
 {
 }
