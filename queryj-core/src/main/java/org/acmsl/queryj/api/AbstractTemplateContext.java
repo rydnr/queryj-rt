@@ -491,6 +491,7 @@ public abstract class AbstractTemplateContext
     /**
      * {@inheritDoc}
      */
+    @Override
     public void setDecoratorFactory(@NotNull final DecoratorFactory factory)
     {
         new QueryJCommandWrapper<DecoratorFactory>(getCommand()).setSetting(buildDecoratorFactoryKey(), factory);
