@@ -248,7 +248,7 @@ public abstract class BasePerTableTemplateBuildHandler
         @NotNull final String tableName,
         @NotNull final List<Row<String>> staticContents,
         @NotNull final QueryJCommand parameters)
-      throws  QueryJBuildException
+      throws  QueryJBuildException;
     {
         return templateFactory.createTemplate(tableName, staticContents, context, parameters);
     }
