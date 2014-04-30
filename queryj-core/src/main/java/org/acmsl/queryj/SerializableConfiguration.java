@@ -49,6 +49,7 @@ import org.checkthread.annotations.ThreadSafe;
 
 import java.io.File;
 import java.io.Serializable;
+import java.net.URL;
 
 /**
  *
@@ -62,22 +63,14 @@ public class SerializableConfiguration
     implements Serializable
 {
     /**
-     * Creates an empty PropertyConfiguration object which can be
-     * used to synthesize a new Properties file by adding values and
-     * then saving().
+     * {@inheritDoc}
      */
     public SerializableConfiguration()
     {
     }
 
     /**
-     * Creates and loads the extended properties from the specified file.
-     * The specified file can contain "include = " properties which then
-     * are loaded and merged into the properties.
-     *
-     * @param fileName The name of the properties file to load.
-     * @throws org.apache.commons.configuration.ConfigurationException
-     *          Error while loading the properties file
+     * {@inheritDoc}
      */
     public SerializableConfiguration(final String fileName) throws ConfigurationException
     {
@@ -85,18 +78,18 @@ public class SerializableConfiguration
     }
 
     /**
-     * Creates and loads the extended properties from the specified file.
-     * The specified file can contain "include = " properties which then
-     * are loaded and merged into the properties. If the file does not exist,
-     * an empty configuration will be created. Later the {@code save()}
-     * method can be called to save the properties to the specified file.
-     *
-     * @param file The properties file to load.
-     * @throws org.apache.commons.configuration.ConfigurationException
-     *          Error while loading the properties file
+     * {@inheritDoc}
      */
     public SerializableConfiguration(final File file) throws ConfigurationException
     {
         super(file);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public SerializableConfiguration(final URL url) throws ConfigurationException
+    {
+        super(url);
     }
 }
