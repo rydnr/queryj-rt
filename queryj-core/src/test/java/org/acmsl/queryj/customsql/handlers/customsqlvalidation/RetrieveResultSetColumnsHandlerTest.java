@@ -91,7 +91,7 @@ import java.util.List;
 public class RetrieveResultSetColumnsHandlerTest
 {
     /**
-     * Checks the properties are built fro
+     * Checks the properties are built from the result set metadata.
      * @throws QueryJBuildException
      * @throws SQLException
      */
@@ -149,6 +149,11 @@ public class RetrieveResultSetColumnsHandlerTest
         EasyMock.verify(t_ResultSetMetaData);
     }
 
+    /**
+     * Checks it does not process
+     * @throws QueryJBuildException
+     * @throws SQLException
+     */
     @Test
     public void does_not_process_non_select_queries()
         throws QueryJBuildException,
