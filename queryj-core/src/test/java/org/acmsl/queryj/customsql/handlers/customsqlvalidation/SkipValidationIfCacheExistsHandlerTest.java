@@ -1,5 +1,5 @@
 /*
-                        queryj
+                        QueryJ Core
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests SkipValidationIfCacheExistsHandler.
  *
  * Date: 2014/03/16
  * Time: 16:36
@@ -79,7 +79,7 @@ import java.io.File;
 import java.nio.charset.Charset;
 
 /**
- * Tests {@link Sk}
+ * Tests {@link SkipValidationIfCacheExistsHandler}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/16 16:36
