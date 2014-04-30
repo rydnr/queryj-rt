@@ -185,8 +185,8 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
     {
         return
             generate(
-                isCaching(),
                 template,
+                isCaching(),
                 template.getTemplateContext().getFileName(),
                 outputDir,
                 rootFolder,
