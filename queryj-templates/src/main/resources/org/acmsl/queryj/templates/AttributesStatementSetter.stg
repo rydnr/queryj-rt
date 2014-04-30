@@ -380,7 +380,7 @@ public int hashCode()
 }
 >>
 
-tostring_method(table, C) ::= <<
+toString_method(table, C) ::= <<
 <! Generates the toString() method !>
 /**
  * Generates a JSON-compatible representation of this instance.
