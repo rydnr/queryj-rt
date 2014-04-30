@@ -146,8 +146,8 @@ public class RetrieveResultSetColumnsHandlerTest
 
     /**
      * Checks it does not process non-select queries.
-     * @throws QueryJBuildException
-     * @throws SQLException
+     * Throws QueryJBuildException
+     * Throws SQLException
      */
     @Test
     public void does_not_process_non_select_queries()
