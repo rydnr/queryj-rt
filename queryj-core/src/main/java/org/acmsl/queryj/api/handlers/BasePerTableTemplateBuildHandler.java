@@ -247,7 +247,6 @@ public abstract class BasePerTableTemplateBuildHandler
         @NotNull final TF templateFactory,
         @NotNull final String tableName,
         @NotNull final List<Row<String>> staticContents,
-        @NotNull final C context,
         @NotNull final QueryJCommand parameters)
       throws  QueryJBuildException
     {
