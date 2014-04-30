@@ -38,6 +38,7 @@ package org.acmsl.queryj.api;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.jetbrains.annotations.NotNull;
 
@@ -86,6 +87,16 @@ public interface TemplateContext
      */
     @NotNull
     String getPackageName();
+
+    /**
+     * Specifies the package name.
+     * @param packageName the package name.
+     */
+    @Override
+    public void setPackageName(@NotNull final String packageName)
+    {
+        new QueryJCommandWrapper<String>(getCommand()).setSetting(buildPackageNameKey(), packageName);
+    }
 
     /**
      * Retrieves the version.
