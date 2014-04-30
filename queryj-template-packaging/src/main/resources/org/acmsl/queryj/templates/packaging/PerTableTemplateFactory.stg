@@ -157,6 +157,7 @@ public class <C.class_name>
 
         t_Context.setFileName(t_strFileName);
 
+        t_Context.set
         new QueryJCommandWrapper\<String>(parameters).setSetting(
             Literals.PACKAGE_NAME,
             retrievePackage(
