@@ -75,7 +75,7 @@ public interface TemplateContext
     String getFileName();
 
     /**
-     * Retrieves the file name.
+     * Specifies the file name.
      * @param fileName the filename.
      */
     void setFileName(@NotNull final String fileName);
