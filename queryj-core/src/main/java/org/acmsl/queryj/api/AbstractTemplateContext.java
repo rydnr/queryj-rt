@@ -259,7 +259,7 @@ public abstract class AbstractTemplateContext
         @Nullable final T result;
 
         @Nullable final T aux =
-            new QueryJCommandWrapper<T>(command).getSetting(buildKey(pk, key);
+            new QueryJCommandWrapper<T>(command).getSetting(buildKey(pk, key));
 
         if (aux == null)
         {
