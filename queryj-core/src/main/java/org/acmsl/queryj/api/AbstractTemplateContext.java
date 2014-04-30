@@ -403,7 +403,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     protected String buildPackageNameKey()
     {
-        return PACKAGE_NAME;
+        return buildKey(PACKAGE_NAME);
     }
 
     /**
