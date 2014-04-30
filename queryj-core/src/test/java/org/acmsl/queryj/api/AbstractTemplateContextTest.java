@@ -61,7 +61,7 @@ public class AbstractTemplateContextTest
     @Test
     public void buildKey_uses_the_pk()
     {
-        @NotNull final AbstractTemplateContext instance = createContext();
+        @NotNull final AbstractTemplateContext instance = createContext("");
 
         Assert.assertTrue(instance.buildKey("bla"))
     }
