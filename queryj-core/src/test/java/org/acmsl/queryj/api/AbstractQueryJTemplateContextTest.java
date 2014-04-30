@@ -230,6 +230,16 @@ public class AbstractQueryJTemplateContextTest
     @NotNull
     protected <T> AbstractQueryJTemplateContext createContext(@NotNull final T pk)
     {
+    }
+    /**
+     * Retrieves an {@link AbstractQueryJTemplateContext}.
+     * @param pk the pk.
+     * @param <T> the pk type.
+     * @return such context.
+     */
+    @NotNull
+    protected <T> AbstractQueryJTemplateContext createContext(@NotNull final T pk)
+    {
         @NotNull final QueryJCommand t_Command =
             new ConfigurationQueryJCommandImpl(new SerializablePropertiesConfiguration(), null);
 
