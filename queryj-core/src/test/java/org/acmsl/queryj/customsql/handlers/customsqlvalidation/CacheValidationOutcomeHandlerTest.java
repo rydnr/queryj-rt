@@ -61,11 +61,6 @@ import org.acmsl.queryj.metadata.SqlPropertyDAO;
 import org.acmsl.queryj.metadata.SqlResultDAO;
 
 /*
- * Importing Apache Commons Configuration classes.
- */
-import org.apache.commons.configuration.PropertiesConfiguration;
-
-/*
  * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
@@ -219,7 +214,8 @@ public class CacheValidationOutcomeHandlerTest
         EasyMock.expect(resultDAO.findBySqlId(t_Sql.getId())).andReturn(t_Result);
         EasyMock.replay(resultDAO);
 
-        @NotNull final QueryJCommand t_Command = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+        @NotNull final QueryJCommand t_Command =
+            new ConfigurationQueryJCommandImpl(new SerializablePropertiesConfiguration());
 
         new QueryJCommandWrapper<File>(t_Command).setSetting(
             CustomSqlCacheWritingHandler.CUSTOM_SQL_OUTPUT_FOLDER_FOR_HASHES, tempFolder.getRoot());
