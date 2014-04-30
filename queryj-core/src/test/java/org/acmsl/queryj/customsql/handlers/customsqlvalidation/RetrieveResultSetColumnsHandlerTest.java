@@ -91,7 +91,7 @@ import java.util.List;
 public class RetrieveResultSetColumnsHandlerTest
 {
     /**
-     * Checks the properties
+     * Checks the properties are built fro
      * @throws QueryJBuildException
      * @throws SQLException
      */
