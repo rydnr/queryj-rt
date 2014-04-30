@@ -37,8 +37,7 @@ package org.acmsl.queryj.tools.cli;
  * Importing some project-specific classes.
  */
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
-import org.acmsl.queryj.QueryJCommand;
-import org.acmsl.queryj.tools.handlers.QueryJCommandHandler;
+import org.acmsl.queryj.SerializablePropertiesConfiguration;
 import org.acmsl.queryj.tools.logging.QueryJCLILog;
 import org.acmsl.queryj.tools.logging.QueryJLog;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
@@ -216,7 +215,7 @@ public final class QueryJCLI
                 try
                 {
                     @NotNull final Configuration t_ConfigurationSettings =
-                        new PropertiesConfiguration(t_strConfigurationFileName);
+                        new SerializablePropertiesConfiguration(t_strConfigurationFileName);
 
                     // Custom sql file is validated as part of QueryJ chain.
                     try
