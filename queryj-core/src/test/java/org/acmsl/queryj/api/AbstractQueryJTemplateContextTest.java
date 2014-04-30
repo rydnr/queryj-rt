@@ -243,7 +243,7 @@ public class AbstractQueryJTemplateContextTest
         @NotNull final QueryJCommand t_Command =
             new ConfigurationQueryJCommandImpl(new SerializablePropertiesConfiguration(), null);
 
-        AbstractQueryJTemplateContext result =
+        @NotNull final AbstractQueryJTemplateContext result =
             new AbstractQueryJTemplateContext("" + pk, t_Command)
             {{
                 immutableSetValue(buildTemplateNameKey(), "", getCommand());
