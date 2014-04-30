@@ -69,5 +69,5 @@ public class AbstractTemplateContextTest
         Assert.assertTrue(instance.buildKey("bla").contains("this-is-a-pk"));
     }
 
-    protected AbstractTemplateContext createContext(@NotNull final )
+    protected <T> AbstractTemplateContext createContext(@NotNull final T )
 }
