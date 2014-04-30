@@ -392,7 +392,7 @@ public abstract class AbstractTemplateContext
     @Override
     public void setPackageName(@NotNull final String packageName)
     {
-        new QueryJCommandWrapper<String>(getCommand()).setSetting(buildPackageNameKey(), fileName);
+        new QueryJCommandWrapper<String>(getCommand()).setSetting(buildPackageNameKey(), packageName);
     }
 
     /**
