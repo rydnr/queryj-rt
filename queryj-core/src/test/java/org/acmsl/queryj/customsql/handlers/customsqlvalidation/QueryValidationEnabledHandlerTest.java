@@ -48,11 +48,6 @@ import org.acmsl.queryj.customsql.Sql.Cardinality;
 import org.acmsl.queryj.customsql.SqlElement;
 
 /*
- * Importing Apache Commons Configuration classes.
- */
-import org.apache.commons.configuration.PropertiesConfiguration;
-
-/*
  * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
@@ -75,7 +70,7 @@ import org.junit.runners.JUnit4;
 public class QueryValidationEnabledHandlerTest
 {
     /**
-     * Checks a query is not validated if its flag is
+     * Checks a query is not validated if its flag is disabled.
      * @throws QueryJBuildException
      */
     @Test
@@ -96,6 +91,10 @@ public class QueryValidationEnabledHandlerTest
         Assert.assertTrue(instance.handle(parameters));
     }
 
+    /**
+     * Checks a query is validated if its flag is enabled.
+     * @throws QueryJBuildException
+     */
     @Test
     public void allows_the_validation_process_for_the_current_query_if_validation_flag_is_enabled()
         throws QueryJBuildException
