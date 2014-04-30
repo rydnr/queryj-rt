@@ -74,13 +74,18 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class QueryValidationEnabledHandlerTest
 {
+    /**
+     *
+     * @throws QueryJBuildException
+     */
     @Test
     public void stops_the_validation_process_for_the_current_query_if_validation_flag_is_disabled()
         throws QueryJBuildException
     {
         @NotNull final QueryValidationEnabledHandler instance = new QueryValidationEnabledHandler();
 
-        @NotNull final QueryJCommand parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+        @NotNull final QueryJCommand parameters =
+            new ConfigurationQueryJCommandImpl(new SerializablePropertiesConfiguration());
 
         @NotNull final Sql<String> sql =
             new SqlElement<>(
