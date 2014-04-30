@@ -163,6 +163,8 @@ public class <C.class_name>
 
         new QueryJCommandWrapper\<String>(command).setSetting(
             Literals.FILE_NAME, t_strFileName);
+        new QueryJCommandWrapper\<String>(command).setSetting(
+            Literals.FILE_NAME, t_strFileName);
 
         return new <def.name.noExtension>Template(t_Context);
     }
