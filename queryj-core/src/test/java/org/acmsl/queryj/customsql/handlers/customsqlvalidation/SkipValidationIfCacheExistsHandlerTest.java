@@ -94,6 +94,9 @@ public class SkipValidationIfCacheExistsHandlerTest
     public TemporaryFolder tempFolder = new TemporaryFolder();
 
     /**
+     * Checks whether it skips further tests if validation cache is found.
+     * @throws QueryJBuildException
+     */
     @Test
     public void skips_further_handlers_if_validation_cache_is_found()
         throws QueryJBuildException
