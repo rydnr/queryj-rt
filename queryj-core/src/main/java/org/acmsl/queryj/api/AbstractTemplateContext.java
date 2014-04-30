@@ -493,7 +493,7 @@ public abstract class AbstractTemplateContext
      */
     public void setDecoratorFactory(@NotNull final DecoratorFactory factory)
     {
-        return getValue(buildDecoratorFactoryKey(), getCommand(), new DecoratorFactoryNotAvailableException());
+        return setValue(buildDecoratorFactoryKey(), getCommand(), new DecoratorFactoryNotAvailableException());
     }
 
     /**
