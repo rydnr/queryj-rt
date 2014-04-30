@@ -41,6 +41,7 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
+import org.acmsl.queryj.SerializablePropertiesConfiguration;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.CustomSqlProviderTest.SemiMockedAbstractCustomSqlProvider;
@@ -132,7 +133,8 @@ public class CacheValidationOutcomeHandlerTest
         EasyMock.expect(resultDAO.findBySqlId(t_Sql.getId())).andReturn(t_Result);
         EasyMock.replay(resultDAO);
 
-        @NotNull final QueryJCommand t_Command = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+        @NotNull final QueryJCommand t_Command =
+            new ConfigurationQueryJCommandImpl(new SerializablePropertiesConfiguration());
 
         new QueryJCommandWrapper<File>(t_Command).setSetting(
             CustomSqlCacheWritingHandler.CUSTOM_SQL_OUTPUT_FOLDER_FOR_HASHES, tempFolder.getRoot());
