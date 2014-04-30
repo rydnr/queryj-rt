@@ -110,7 +110,7 @@ public interface TemplateContext
 
     /**
      * Specifies the decorator factory.
-     * @param such {@link DecoratorFactory factory}.
+     * @param factosuch {@link DecoratorFactory factory}.
      */
     @NotNull
     DecoratorFactory getDecoratorFactory();
