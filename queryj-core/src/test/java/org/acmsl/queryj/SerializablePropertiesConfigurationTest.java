@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Tests for SerializableConfiguration.
+ * Description: Tests for SerializablePropertiesConfiguration.
  *
  * Date: 2014/04/30
  * Time: 12:51
@@ -54,7 +54,7 @@ import org.junit.runners.JUnit4;
 import java.io.Serializable;
 
 /**
- * Tests for {@link SerializableConfiguration}.
+ * Tests for {@link SerializablePropertiesConfiguration}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/30 12:51
@@ -65,7 +65,7 @@ public class SerializablePropertiesConfigurationTest
     @Test
     public void check_instance_is_serializable()
     {
-        @NotNull final SerializableConfiguration instance = new SerializableConfiguration();
+        @NotNull final SerializablePropertiesConfiguration instance = new SerializablePropertiesConfiguration();
 
         Assert.assertTrue(instance instanceof Serializable);
     }
