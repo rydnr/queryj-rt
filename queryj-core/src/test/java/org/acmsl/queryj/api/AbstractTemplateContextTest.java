@@ -58,6 +58,9 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class AbstractTemplateContextTest
 {
+    /**
+     * Checks the buildKey method uses the pk.
+     */
     @Test
     public void buildKey_uses_the_pk()
     {
