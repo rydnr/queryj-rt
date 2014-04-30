@@ -338,7 +338,6 @@ public abstract class AbstractTemplateContext
      * Retrieves the file name.
      * @return such information.
      */
-    @NotNull
     @Override
     public String getFileName()
     {
