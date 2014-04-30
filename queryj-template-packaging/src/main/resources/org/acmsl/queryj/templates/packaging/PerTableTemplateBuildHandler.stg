@@ -163,6 +163,10 @@ public class <C.class_name>
         new QueryJCommandWrapper\<DecoratorFactory>(parameters).setSetting(
             DecoratorFactory.class.getName(), CachingDecoratorFactory.getInstance());
 
+        t_Context.setPackageName(
+            retrievePackage(
+                tableName, retrieveMetadataManager(parameters).getEngine(), parameters));
+
         new QueryJCommandWrapper\<String>(parameters).setSetting(
             Literals.PACKAGE_NAME,
             retrievePackage(
