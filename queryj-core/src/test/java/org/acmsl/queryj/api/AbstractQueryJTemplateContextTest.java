@@ -230,7 +230,7 @@ public class AbstractQueryJTemplateContextTest
     @NotNull
     protected AbstractQueryJTemplateContext createContext()
     {
-        return
+        return createContext()
     }
     /**
      * Retrieves an {@link AbstractQueryJTemplateContext}.
