@@ -303,9 +303,9 @@ public class <table.name.voName>AttributesStatementSetter
 
     <equals_method(table=table, C=C)>
 
-    <hashcode_method(table=table, C=C)>
+    <hashCode_method(table=table, C=C)>
 
-    <tostring_method(table=table, C=C)>
+    <toString_method(table=table, C=C)>
 }
 >>
 
