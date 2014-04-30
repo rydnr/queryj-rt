@@ -58,5 +58,5 @@ import org.junit.runners.JUnit4;
 public class AbstractTemplateContextTest
 {
     @Test
-    public void buildKey_uses_p
+    public void buildKey_uses_the_pk
 }
