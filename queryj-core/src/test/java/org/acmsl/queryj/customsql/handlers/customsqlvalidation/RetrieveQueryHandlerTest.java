@@ -54,11 +54,6 @@ import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.tools.handlers.QueryJCommandHandler;
 
 /*
- * Importing Apache Commons Configuration classes.
- */
-import org.apache.commons.configuration.PropertiesConfiguration;
-
-/*
  * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
@@ -125,7 +120,8 @@ public class RetrieveQueryHandlerTest
     {
         @NotNull final RetrieveQueryHandler instance = new RetrieveQueryHandler();
 
-        @NotNull final QueryJCommand parameters =new ConfigurationQueryJCommandImpl(new SerializablePropertiesConfiguration());
+        @NotNull final QueryJCommand parameters =
+            new ConfigurationQueryJCommandImpl(new SerializablePropertiesConfiguration());
 
         @NotNull final List<Sql<String>> list = new ArrayList<>(1);
         list.add(
