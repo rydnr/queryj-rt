@@ -91,6 +91,7 @@ import org.acmsl.queryj.metadata.vo.Table;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.QueryJSettings;
+import org.acmsl.queryj.SerializablePropertiesConfiguration;
 import org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandler;
 import org.acmsl.queryj.tools.handlers.JdbcConnectionOpeningHandler;
 import org.acmsl.queryj.tools.handlers.ParameterValidationHandler;
@@ -343,7 +344,7 @@ public class PerCustomSqlTemplatesTest
             firstTime = false;
 
             @NotNull final QueryJCommand t_Command =
-                new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+                new ConfigurationQueryJCommandImpl(new SerializablePropertiesConfiguration());
 
             new QueryJCommandWrapper\<CustomSqlProvider>(t_Command).setSetting(
                 CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, sqlProvider);
