@@ -161,7 +161,7 @@ public class <C.class_name>
       throws  QueryJBuildException
     {
         @NotNull final <def.name.noExtension>TemplateContext t_Context =
-            new <def.name.noExtension>PerTableTemplateContext(tableName, staticContents, parameters);
+            new <def.name.noExtension>TemplateContext(tableName, staticContents, parameters);
 
         t_Context.setDecoratorFactory(CachingDecoratorFactory.getInstance());
 
