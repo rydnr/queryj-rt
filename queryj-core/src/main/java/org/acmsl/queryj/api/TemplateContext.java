@@ -93,7 +93,7 @@ public interface TemplateContext
      * @param packageName the package name.
      */
     @Override
-    public void setPackageName(@NotNull final String packageName)
+    public void setPackageName(@NotNull final String packageName);
     {
         new QueryJCommandWrapper<String>(getCommand()).setSetting(buildPackageNameKey(), packageName);
     }
