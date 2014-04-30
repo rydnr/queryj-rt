@@ -58,5 +58,8 @@ import org.junit.runners.JUnit4;
 public class SerializableConfigurationTest
 {
     @Test
-    public void check
+    public void check_instance_is_serializable()
+    {
+        @
+    }
 }
