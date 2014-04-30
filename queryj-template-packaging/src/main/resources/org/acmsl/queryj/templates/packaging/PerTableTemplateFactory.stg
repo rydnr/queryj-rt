@@ -157,6 +157,12 @@ public class <C.class_name>
 
         t_Context.setFileName(t_strFileName);
 
+        new QueryJCommandWrapper\<String>(parameters).setSetting(
+            Literals.PACKAGE_NAME,
+            retrievePackage(
+                tableName, retrieveMetadataManager(parameters).getEngine(), parameters));
+
+
         return new <def.name.noExtension>Template(t_Context);
     }
 
