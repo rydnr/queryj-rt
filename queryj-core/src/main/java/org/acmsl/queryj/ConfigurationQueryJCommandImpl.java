@@ -420,6 +420,9 @@ public class ConfigurationQueryJCommandImpl
                    Serializable
     {
         /**
+         * The wrapped configuration
+         */
+        /**
          * Creates a configuration wrapper.
          * @param configuration the wrapped configuration.
          */
