@@ -92,8 +92,7 @@ public interface TemplateContext
      * Specifies the package name.
      * @param packageName the package name.
      */
-    @Override
-    public void setPackageName(@NotNull final String packageName);
+    void setPackageName(@NotNull final String packageName);
 
     /**
      * Retrieves the version.
