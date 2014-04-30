@@ -520,7 +520,12 @@ public abstract class AbstractTemplateContext
             + " }";
     }
 
-    public String buildKey(final String key)
+    /**
+     * Builds a
+     * @param key
+     * @return
+     */
+    protected String buildKey(final String key)
     {
         return getPk() + "|" + key;
     }
