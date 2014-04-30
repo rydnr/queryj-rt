@@ -356,7 +356,7 @@ protected boolean equals(
 }
 >>
 
-hashcode_method(table, C) ::= <<
+hashCode_method(table, C) ::= <<
 <! Generates the hashCode() method !>
 /**
  * Retrieves the hashCode which identifies this instance
