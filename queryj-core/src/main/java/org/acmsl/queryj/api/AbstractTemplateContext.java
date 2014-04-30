@@ -386,8 +386,7 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Specifies the package name.
-     * @param packageName the package name.
+     * {@inheritDoc}
      */
     @Override
     public void setPackageName(@NotNull final String packageName)
