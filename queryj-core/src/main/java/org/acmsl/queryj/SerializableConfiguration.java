@@ -38,6 +38,7 @@ package org.acmsl.queryj;
 /*
  * Importing JetBrains annotations.
  */
+import org.apache.commons.configuration.PropertiesConfiguration;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -55,7 +56,7 @@ import java.io.Serializable;
  */
 @ThreadSafe
 public class SerializableConfiguration
-    extends
+    extends PropertiesConfiguration
     implements Serializable
 {
 }
