@@ -46,6 +46,7 @@ import org.acmsl.commons.patterns.Chain;
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
+import org.acmsl.queryj.SerializablePropertiesConfiguration;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.Sql.Cardinality;
@@ -105,7 +106,8 @@ public class RetrieveQueryHandlerTest
 
         @NotNull final RetrieveQueryHandler instance = new RetrieveQueryHandler();
 
-        @NotNull final QueryJCommand parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+        @NotNull final QueryJCommand parameters =
+            new ConfigurationQueryJCommandImpl(new SerializablePropertiesConfiguration());
 
         @NotNull final List<SqlElement<String>> list = new ArrayList<>(1);
         list.add(
@@ -123,7 +125,7 @@ public class RetrieveQueryHandlerTest
     {
         @NotNull final RetrieveQueryHandler instance = new RetrieveQueryHandler();
 
-        @NotNull final QueryJCommand parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+        @NotNull final QueryJCommand parameters =new ConfigurationQueryJCommandImpl(new SerializablePropertiesConfiguration());
 
         @NotNull final List<Sql<String>> list = new ArrayList<>(1);
         list.add(
