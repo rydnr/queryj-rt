@@ -255,7 +255,7 @@ public final class QueryJCLI
         @NotNull final String customSqlFile)
       throws  QueryJBuildException
     {
-        new QueryJChain<QueryJCommandHandler<>>()
+        new QueryJChain<>()
             .process(
                 new ConfigurationQueryJCommandImpl(configurationSettings, new QueryJCLILog(logThreshold, System.err)));
     }
