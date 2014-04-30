@@ -312,7 +312,7 @@ public class PerCustomResultTemplatesTest
             firstTime = false;
 
             @NotNull final QueryJCommand t_Command =
-                new ConfigurationQueryJCommandImpl(new SerializableConfiguration());
+                new ConfigurationQueryJCommandImpl(new SerializablePropertiesConfiguration());
 
             new QueryJCommandWrapper\<DecoratorFactory>(t_Command).setSetting(
                 DecoratorFactory.class.getName(), decoratorFactory);
