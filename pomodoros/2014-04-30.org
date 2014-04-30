@@ -1,4 +1,4 @@
 * 2014/04/30
-** TODO Fix AttributesStatementSetter #494: 3 ->
+** DONE Fix AttributesStatementSetter #494: 3 -> 1
 ** TODO Move shared classes to commons project : 3 ->
    
