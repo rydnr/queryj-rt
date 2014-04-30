@@ -82,7 +82,7 @@ public interface TemplateContext
 
     /**
      * Retrieves the package name.
-     * @return such instance.
+     * @return such information.
      */
     @NotNull
     String getPackageName();
