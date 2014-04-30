@@ -173,6 +173,16 @@ public abstract class AbstractTemplateContext
         return m__Command;
     }
 
+
+    /**
+     * Builds a command key.
+     * @param key the key.
+     * @return the command key.
+     */
+    protected String buildKey(final String key)
+    {
+        return getPk() + "|" + key;
+    }
     /**
      * Annotates a value in the command.
      * @param key the key.
