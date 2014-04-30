@@ -103,7 +103,7 @@ import java.util.List;
 public class RetrieveResultPropertiesHandlerTest
 {
     /**
-     *
+     * Checks the properties
      * @throws QueryJBuildException
      * @throws SQLException
      */
