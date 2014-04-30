@@ -72,7 +72,8 @@ public class SerializableConfiguration
     /**
      * {@inheritDoc}
      */
-    public SerializableConfiguration(final String fileName) throws ConfigurationException
+    public SerializableConfiguration(@NotNull final String fileName)
+        throws ConfigurationException
     {
         super(fileName);
     }
