@@ -93,6 +93,7 @@ public class SkipValidationIfCacheExistsHandlerTest
     @Rule
     public TemporaryFolder tempFolder = new TemporaryFolder();
 
+    /**
     @Test
     public void skips_further_handlers_if_validation_cache_is_found()
         throws QueryJBuildException
