@@ -183,6 +183,7 @@ public abstract class AbstractTemplateContext
     {
         return getPk() + "|" + key;
     }
+
     /**
      * Annotates a value in the command.
      * @param key the key.
