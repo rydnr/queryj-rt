@@ -120,7 +120,7 @@ public class RetrieveQueryHandlerTest
 
     /**
      * Checks the list of queries is retrieved correctly.
-     * @throws QueryJBuildException
+     * Throws QueryJBuildException
      */
     @Test
     public void retrieves_the_list_of_queries()
