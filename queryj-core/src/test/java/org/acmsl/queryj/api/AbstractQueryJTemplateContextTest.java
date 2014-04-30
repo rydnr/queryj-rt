@@ -228,7 +228,7 @@ public class AbstractQueryJTemplateContextTest
     @NotNull
     protected AbstractQueryJTemplateContext createContext()
     {
-        return createContext("fileName");
+        return createContext("file.name");
     }
 
     /**
