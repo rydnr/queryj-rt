@@ -249,6 +249,7 @@ public class AbstractQueryJTemplateContextTest
                 immutableSetValue(buildTemplateNameKey(), "", getCommand());
                 immutableSetValue(buildFileNameKey(), "" + pk, getCommand());
             }};
+
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
         new QueryJCommandWrapper<MetadataManager>(t_Command).setSetting(
             DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, metadataManager);
