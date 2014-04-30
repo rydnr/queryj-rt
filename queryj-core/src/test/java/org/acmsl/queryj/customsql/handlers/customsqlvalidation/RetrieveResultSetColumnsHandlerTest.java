@@ -90,6 +90,11 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public class RetrieveResultSetColumnsHandlerTest
 {
+    /**
+     * Checks the properties
+     * @throws QueryJBuildException
+     * @throws SQLException
+     */
     @Test
     public void builds_a_list_of_properties_from_the_ResultSetMetadata()
         throws QueryJBuildException,
