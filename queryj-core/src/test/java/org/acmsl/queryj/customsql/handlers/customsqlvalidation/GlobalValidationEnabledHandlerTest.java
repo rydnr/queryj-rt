@@ -84,7 +84,7 @@ public class GlobalValidationEnabledHandlerTest
 
     /**
      * Tests the validation is disabled if the disable_custom_sql_validation flag is enabled.
-//     * @throws QueryJBuildException
+     * @throws QueryJBuildException
      */
     @Test
     public void global_validation_disabled_prevents_validation()
