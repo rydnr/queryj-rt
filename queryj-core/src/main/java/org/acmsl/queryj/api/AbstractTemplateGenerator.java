@@ -184,7 +184,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
                 QueryJBuildException
     {
         return
-            write(
+            generate(
                 isCaching(),
                 template,
                 template.getTemplateContext().getFileName(),
