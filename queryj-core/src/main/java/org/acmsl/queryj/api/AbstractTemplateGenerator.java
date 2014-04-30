@@ -195,39 +195,6 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
                 UniqueLogFactory.getLog(AbstractQueryJTemplateGenerator.class));
     }
 
-    /**                                               N
-     * Writes a table template to disk.
-     * @param caching whether to use caching or not.
-     * @param template the table template to write.
-     * @param fileName the template's file name.
-     * @param outputDir the output folder.
-     * @param rootFolder the root folder.
-     * @param charset the file encoding.
-     * @param fileUtils the {@link org.acmsl.commons.utils.io.FileUtils} instance.
-     * @return whether it gets written to disk.
-     */
-    protected boolean write(
-        final boolean caching,
-        @NotNull final N template,
-        @NotNull final String fileName,
-        @NotNull final File outputDir,
-        @NotNull final File rootFolder,
-        @NotNull final Charset charset,
-        @NotNull final FileUtils fileUtils)
-        throws IOException, QueryJBuildException
-    {
-        return
-            generate(
-                template,
-                caching,
-                fileName,
-                outputDir,
-                rootFolder,
-                charset,
-                fileUtils,
-                UniqueLogFactory.getLog(AbstractQueryJTemplateGenerator.class));
-    }
-
     /**
      * Performs the generation process.
      * @param template the template.
