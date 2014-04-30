@@ -112,6 +112,5 @@ public interface TemplateContext
      * Specifies the decorator factory.
      * @param factory the {@link DecoratorFactory factory}.
      */
-    @NotNull
-    DecoratorFactory getDecoratorFactory();
+    getDecoratorFactory();
 }
