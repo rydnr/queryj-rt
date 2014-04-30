@@ -335,8 +335,8 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Retrieves the file name.
-     * @return such information.
+     * Specifies the file name.
+     * @param fileName such information.
      */
     @Override
     public void setFileName(@NotNull final String fileName)
