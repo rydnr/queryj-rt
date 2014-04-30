@@ -155,8 +155,7 @@ public class <C.class_name>
 
         @NotNull final String t_strFileName = retrieveTemplateFileName(tableName, t_Context.getMetadataManager());
 
-        t_Context.setFileName(
-            Literals.FILE_NAME, t_strFileName);
+        t_Context.setFileName(t_strFileName);
 
         return new <def.name.noExtension>Template(t_Context);
     }
