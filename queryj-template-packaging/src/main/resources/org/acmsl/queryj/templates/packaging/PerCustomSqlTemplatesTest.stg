@@ -110,11 +110,6 @@ import org.acmsl.queryj.test.TableTestHelper;
 <C.templateDefs:{ d | <def_import(d=d)>}; separator="\n">
 
 /*
- * Importing Apache Commons Logging classes.
- */
-import org.apache.commons.configuration.PropertiesConfiguration;
-
-/*
  * Importing StringTemplate classes.
  */
 import org.stringtemplate.v4.ST;
