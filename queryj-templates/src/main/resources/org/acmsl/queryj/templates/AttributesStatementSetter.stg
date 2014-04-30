@@ -364,7 +364,7 @@ hashcode_method(table, C) ::= <<
  * @return the unique (among instances of this class) value.
  */
 @Override
-public int hashcode()
+public int hashCode()
 {
     final int result;
 
