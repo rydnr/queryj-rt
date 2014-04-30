@@ -59,4 +59,12 @@ public class SerializableConfiguration
     extends PropertiesConfiguration
     implements Serializable
 {
+    /**
+     * Creates an empty PropertyConfiguration object which can be
+     * used to synthesize a new Properties file by adding values and
+     * then saving().
+     */
+    public SerializableConfiguration()
+    {
+    }
 }
