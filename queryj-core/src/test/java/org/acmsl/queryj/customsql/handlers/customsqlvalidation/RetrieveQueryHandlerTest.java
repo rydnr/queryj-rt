@@ -82,7 +82,7 @@ import java.util.List;
 public class RetrieveQueryHandlerTest
 {
     /**
-     * Checks the list of queries is retrieved correctly.
+     * Checks the first query is retrieved correctly.
      * @throws QueryJBuildException
      */
     @Test
