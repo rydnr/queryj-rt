@@ -75,7 +75,7 @@ import org.junit.runners.JUnit4;
 public class QueryValidationEnabledHandlerTest
 {
     /**
-     * Checks a query is validated
+     * Checks a query is valid
      * @throws QueryJBuildException
      */
     @Test
