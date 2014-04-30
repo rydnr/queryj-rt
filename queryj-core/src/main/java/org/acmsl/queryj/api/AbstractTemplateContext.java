@@ -314,7 +314,7 @@ public abstract class AbstractTemplateContext
         @Nullable final List<T> result;
 
         @Nullable final List<T> aux =
-            new QueryJCommandWrapper<T>(command).getListSetting(key + '|' + pk);
+            new QueryJCommandWrapper<T>(command).getListSetting(buildKey(pk, key + '|' + pk);
 
         if (aux == null)
         {
