@@ -76,7 +76,7 @@ public interface TemplateContext
 
     /**
      * Retrieves the file name.
-     * @param fileName the such instance.
+     * @param fileName the filename.
      */
     void setFileName(@NotNull final String fileName);
 
