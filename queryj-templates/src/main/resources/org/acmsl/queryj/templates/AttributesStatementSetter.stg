@@ -386,6 +386,7 @@ toString_method(table, C) ::= <<
  * Generates a JSON-compatible representation of this instance.
  * @return such text.
  */
+
 @Override
 public String toString()
 {
