@@ -48,6 +48,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.io.Serializable;
+
 /**
  * Tests for {@link SerializableConfiguration}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
@@ -60,6 +62,8 @@ public class SerializableConfigurationTest
     @Test
     public void check_instance_is_serializable()
     {
-        @
+        @NotNull final SerializableConfiguration instance = new SerializableConfiguration();
+
+        Assert.assertTrue(instance instanceof Serializable);
     }
 }
