@@ -492,7 +492,7 @@ public abstract class AbstractTemplateContext
      * Retrieves the {@link DecoratorFactory} instance.
      * @return such instance.
      */
-    public DecoratorFactory getDecoratorFactory()
+    public void setDecoratorFactory(@NotNull final DecoratorFactory factory)
     {
         return getValue(buildDecoratorFactoryKey(), getCommand(), new DecoratorFactoryNotAvailableException());
     }
