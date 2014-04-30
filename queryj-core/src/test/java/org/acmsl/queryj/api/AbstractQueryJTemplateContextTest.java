@@ -224,7 +224,7 @@ public class AbstractQueryJTemplateContextTest
     /**
      * Retrieves an {@link AbstractQueryJTemplateContext}.
      * @param pk the pk.
-     * @param <T> the </T>
+     * @param <T> the pk type.
      * @return such context.
      */
     @NotNull
