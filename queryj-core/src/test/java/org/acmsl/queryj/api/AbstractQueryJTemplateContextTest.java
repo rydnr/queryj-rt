@@ -226,7 +226,7 @@ public class AbstractQueryJTemplateContextTest
      * @return such context.
      */
     @NotNull
-    protected AbstractQueryJTemplateContext createContext()
+    protected <T> AbstractQueryJTemplateContext createContext()
     {
         @NotNull final QueryJCommand t_Command =
             new ConfigurationQueryJCommandImpl(new SerializablePropertiesConfiguration(), null);
