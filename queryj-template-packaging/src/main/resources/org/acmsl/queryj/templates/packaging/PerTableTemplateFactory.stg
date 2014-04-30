@@ -148,9 +148,6 @@ public class <C.class_name>
         @NotNull final <def.type.capitalized>TemplateContext,
         @NotNull final QueryJCommand command)
     {
-        @NotNull final <def.type.capitalized>TemplateContext t_Context =
-            new <def.type.capitalized>TemplateContext(tableName, staticContents, command);
-
         @NotNull final String t_strFileName = retrieveTemplateFileName(tableName, t_Context.getMetadataManager());
 
         t_Context.setFileName(t_strFileName);
