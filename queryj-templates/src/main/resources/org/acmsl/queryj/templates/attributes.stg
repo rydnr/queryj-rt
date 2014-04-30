@@ -187,7 +187,6 @@ attribute_to_primitive(attribute) ::= <<
 <if(attribute.date)
     >new java.sql.Timestamp(<attribute.name.uncapitalized>)<
  else><attribute.name.uncapitalized><
-      else
       >endif><endif>
 >>
 
