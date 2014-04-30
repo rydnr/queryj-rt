@@ -58,7 +58,6 @@ import org.apache.commons.cli.PosixParser;
  */
 import org.apache.commons.configuration.Configuration;
 import org.apache.commons.configuration.ConfigurationException;
-import org.apache.commons.configuration.PropertiesConfiguration;
 
 /*
  * Importing JetBrains annotations,
