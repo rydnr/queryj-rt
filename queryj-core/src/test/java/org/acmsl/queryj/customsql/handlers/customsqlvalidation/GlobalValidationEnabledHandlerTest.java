@@ -64,7 +64,7 @@ import org.junit.runner.RunWith;
 public class GlobalValidationEnabledHandlerTest
 {
     /**
-     * Tests the validation is enabled if the disable_custom_sql_validation flag is
+     * Tests the validation is enabled if the disable_custom_sql_validation flag is disabled.
      * @throws QueryJBuildException
      */
     @Test
@@ -82,6 +82,10 @@ public class GlobalValidationEnabledHandlerTest
         Assert.assertFalse(instance.handle(parameters));
     }
 
+    /**
+     * Tests the validation is if the disable_custom_sql_validation flag is enabled.
+     * @throws QueryJBuildException
+     */
     @Test
     public void global_validation_disabled_prevents_validation()
         throws QueryJBuildException
