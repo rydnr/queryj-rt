@@ -38,6 +38,7 @@ package org.acmsl.queryj;
 /*
  * Importing JetBrains annotations.
  */
+import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.jetbrains.annotations.NotNull;
 
@@ -46,6 +47,7 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 
+import java.io.File;
 import java.io.Serializable;
 
 /**
@@ -66,5 +68,35 @@ public class SerializableConfiguration
      */
     public SerializableConfiguration()
     {
+    }
+
+    /**
+     * Creates and loads the extended properties from the specified file.
+     * The specified file can contain "include = " properties which then
+     * are loaded and merged into the properties.
+     *
+     * @param fileName The name of the properties file to load.
+     * @throws org.apache.commons.configuration.ConfigurationException
+     *          Error while loading the properties file
+     */
+    public SerializableConfiguration(final String fileName) throws ConfigurationException
+    {
+        super(fileName);
+    }
+
+    /**
+     * Creates and loads the extended properties from the specified file.
+     * The specified file can contain "include = " properties which then
+     * are loaded and merged into the properties. If the file does not exist,
+     * an empty configuration will be created. Later the {@code save()}
+     * method can be called to save the properties to the specified file.
+     *
+     * @param file The properties file to load.
+     * @throws org.apache.commons.configuration.ConfigurationException
+     *          Error while loading the properties file
+     */
+    public SerializableConfiguration(final File file) throws ConfigurationException
+    {
+        super(file);
     }
 }
