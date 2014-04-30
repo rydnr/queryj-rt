@@ -73,6 +73,7 @@ public class AbstractTemplateContextTest
     {
         return new AbstractQueryJTemplateContext()
         {
+
         }
     }
 }
