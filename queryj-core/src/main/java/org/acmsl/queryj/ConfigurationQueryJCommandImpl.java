@@ -419,7 +419,7 @@ public class ConfigurationQueryJCommandImpl
         implements Configuration,
                    Serializable
     {
-        public SerializableConfiguration(final Configuration configuration)
+        public SerializableConfiguration(@NotNull final final Configuration configuration)
         {
         }
     }
