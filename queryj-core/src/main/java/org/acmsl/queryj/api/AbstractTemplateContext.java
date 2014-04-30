@@ -520,7 +520,8 @@ public abstract class AbstractTemplateContext
             + " }";
     }
 
-    public String buildKey(final String bla)
+    public String buildKey(final String key)
     {
+        return null;  //To change body of created methods use File | Settings | File Templates.
     }
 }
