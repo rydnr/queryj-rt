@@ -730,7 +730,7 @@ public class PerTableTemplatesTest
                     jdbcDriver, jdbcUrl, jdbcUserName, jdbcPassword);
 
             @NotNull final QueryJCommand t_Parameters =
-                new ConfigurationQueryJCommandImpl(new SerializationPropertiesConfiguration());
+                new ConfigurationQueryJCommandImpl(new SerializaPropertiesConfiguration());
 
             new QueryJCommandWrapper\<Connection>(t_Parameters)
                 .setSetting(JdbcConnectionOpeningHandler.JDBC_CONNECTION, connection);
