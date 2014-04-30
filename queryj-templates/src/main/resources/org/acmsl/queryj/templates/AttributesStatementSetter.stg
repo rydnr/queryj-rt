@@ -391,7 +391,7 @@ toString_method(table, C) ::= <<
 public String toString()
 {
     <notnull(C=C)>final StringBuilder result =
-        new StringBuilder("{ \class\": \"<table.name.voName>AttributesStatementSetter");
+        new StringBuilder("{ \"class\": \"<table.name.voName>AttributesStatementSetter");
 
     result.append("\", \"values\": ");
     result.append(this.m__Values);
