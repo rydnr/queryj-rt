@@ -357,9 +357,9 @@ protected boolean equals(
 >>
 
 hashcode_method(table, C) ::= <<
-<! Generates the hashcode() method !>
+<! Generates the hashCode() method !>
 /**
- * Retrieves the hashcode which identifies this instance
+ * Retrieves the hashCode which identifies this instance
  * from any other one.
  * @return the unique (among instances of this class) value.
  */
