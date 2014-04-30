@@ -64,11 +64,6 @@ import org.acmsl.queryj.metadata.vo.Table;
 import org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandler;
 
 /*
- * Importing Apache Commons Configuration classes.
- */
-import org.apache.commons.configuration.PropertiesConfiguration;
-
-/*
  * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
@@ -88,7 +83,6 @@ import org.powermock.api.easymock.PowerMock;
  */
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -103,7 +97,7 @@ import java.util.List;
 public class RetrieveResultPropertiesHandlerTest
 {
     /**
-     * Checks the properties
+     * Checks the explicit properties are published.
      * @throws QueryJBuildException
      * @throws SQLException
      */
