@@ -228,8 +228,9 @@ public class AbstractQueryJTemplateContextTest
      * @return such context.
      */
     @NotNull
-    protected <T> AbstractQueryJTemplateContext createContext(@NotNull final T pk)
+    protected AbstractQueryJTemplateContext createContext()
     {
+        return
     }
     /**
      * Retrieves an {@link AbstractQueryJTemplateContext}.
