@@ -489,8 +489,7 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * {@inheritDoc
-     * }
+     * {@inheritDoc}
      */
     public void setDecoratorFactory(@NotNull final DecoratorFactory factory)
     {
