@@ -295,7 +295,7 @@ public class <table.name.voName>AttributesStatementSetter
 <  if(table.externallyManagedAttributes)>
         if (update)
         {
-            <table.externallyManagedAttributes:{ a | <attribute_preparedstatement_specification(attr=a)>}; separator="\n">
+            <table.externallyManagedAttributes:{ a | <attribute_preparedstatement_specification(attr=a, C=C)>}; separator="\n">
         }<
    endif>
         <table.own.minus.externallyManagedAttributes:{ a | <attribute_preparedstatement_specification(attr=a)>}; separator="\n">
