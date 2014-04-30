@@ -521,8 +521,8 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Builds a
-     * @param key
+     * Builds a key.
+     * @param key the
      * @return
      */
     protected String buildKey(final String key)
