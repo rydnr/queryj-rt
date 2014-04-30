@@ -58,5 +58,5 @@ import org.junit.runners.JUnit4;
 public class SerializableConfigurationTest
 {
     @Test
-    public void
+    public void check
 }
