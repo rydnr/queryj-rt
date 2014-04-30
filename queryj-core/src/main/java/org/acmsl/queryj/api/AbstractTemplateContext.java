@@ -519,14 +519,4 @@ public abstract class AbstractTemplateContext
             + ", \"package\": \"org.acmsl.queryj.api\""
             + " }";
     }
-
-    /**
-     * Builds a command key.
-     * @param key the key.
-     * @return the command key.
-     */
-    protected String buildKey(final String key)
-    {
-        return getPk() + "|" + key;
-    }
 }
