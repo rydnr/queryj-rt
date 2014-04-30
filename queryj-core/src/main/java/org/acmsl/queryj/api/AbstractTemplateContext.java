@@ -387,7 +387,7 @@ public abstract class AbstractTemplateContext
 
     /**
      * Specifies the package name.
-     * @param fileName such file name.
+     * @param packageName the package name.
      */
     @Override
     public void setPackageName(@NotNull final String packageName)
