@@ -91,7 +91,7 @@ public class ConfigurationQueryJCommandImpl
      */
     public ConfigurationQueryJCommandImpl(@NotNull final Configuration configuration)
     {
-        immutableSetConfiguration(configuration);
+        immutableSetConfiguration(new SerializableConfiguration(configuration));
     }
 
     /**
