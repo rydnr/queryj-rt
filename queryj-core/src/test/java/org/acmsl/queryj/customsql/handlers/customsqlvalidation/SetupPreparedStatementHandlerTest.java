@@ -41,6 +41,7 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
+import org.acmsl.queryj.SerializablePropertiesConfiguration;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.Sql.Cardinality;
@@ -84,13 +85,19 @@ import java.sql.SQLException;
 @RunWith(JUnit4.class)
 public class SetupPreparedStatementHandlerTest
 {
+    /**
+     * Checks
+     * @throws QueryJBuildException
+     * @throws SQLException
+     */
     @Test
     public void injects_a_prepared_statement_into_the_command()
         throws QueryJBuildException, SQLException
     {
         @NotNull final SetupPreparedStatementHandler instance = new SetupPreparedStatementHandler();
 
-        @NotNull final QueryJCommand parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+        @NotNull final QueryJCommand parameters =
+            new ConfigurationQueryJCommandImpl(new SerializablePropertiesConfiguration());
 
         @NotNull final SqlElement<String> sql =
             new SqlElement<>(

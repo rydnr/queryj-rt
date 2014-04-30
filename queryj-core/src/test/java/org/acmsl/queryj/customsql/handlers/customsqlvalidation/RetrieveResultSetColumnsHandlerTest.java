@@ -48,14 +48,9 @@ import org.acmsl.queryj.customsql.PropertyElement;
 import org.acmsl.queryj.customsql.PropertyRefElement;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.ResultElement;
-
-/*
- * Importing Apache Commons Configuration classes.
- */
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.Sql.Cardinality;
 import org.acmsl.queryj.customsql.SqlElement;
-import org.apache.commons.configuration.PropertiesConfiguration;
 
 /*
  * Importing JetBrains annotations.
@@ -161,7 +156,8 @@ public class RetrieveResultSetColumnsHandlerTest
     {
         @NotNull final RetrieveResultSetColumnsHandler instance = new RetrieveResultSetColumnsHandler();
 
-        @NotNull final QueryJCommand t_Parameters = new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+        @NotNull final QueryJCommand t_Parameters =
+            new ConfigurationQueryJCommandImpl(new SerializablePropertiesConfiguration());
 
         @NotNull final ResultSet t_ResultSet = PowerMock.createMock(ResultSet.class);
 
