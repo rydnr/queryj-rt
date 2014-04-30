@@ -1628,10 +1628,12 @@ public class QueryJMojo
             result = getRequestThreadCountFromMaven();
         }
 
+        /*
         if (result < 1)
         {
             result = getRequestThreadCountFromRuntime();
         }
+        */
 
         if (result < 1)
         {
