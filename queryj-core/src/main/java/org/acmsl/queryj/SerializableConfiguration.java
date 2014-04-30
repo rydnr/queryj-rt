@@ -1,5 +1,5 @@
 /*
-                        queryj
+                        QueryJ Core
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Makes PropertiesConfiguration Serializable.
  *
  * Date: 2014/04/30
  * Time: 12:54
@@ -52,7 +52,7 @@ import java.io.Serializable;
 import java.net.URL;
 
 /**
- * Makes {@link PropertiesConfiguration}
+ * Makes {@link PropertiesConfiguration} {@link Serializable}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/30 12:54
