@@ -52,7 +52,7 @@ import java.io.Serializable;
 import java.net.URL;
 
 /**
- *
+ * Makes {@link PropertiesConfiguration}
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/04/30 12:54
