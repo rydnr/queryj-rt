@@ -489,8 +489,8 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Retrieves the {@link DecoratorFactory} instance.
-     * @return such instance.
+     * {@ni
+     * }
      */
     public void setDecoratorFactory(@NotNull final DecoratorFactory factory)
     {
