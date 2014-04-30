@@ -64,7 +64,7 @@ import org.junit.runner.RunWith;
 public class GlobalValidationEnabledHandlerTest
 {
     /**
-     * Tests
+     * Tests the validation
      * @throws QueryJBuildException
      */
     @Test
