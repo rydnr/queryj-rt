@@ -53,14 +53,12 @@ import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.customsql.handlers.CustomSqlProviderRetrievalHandler;
 import org.acmsl.queryj.metadata.SqlParameterDAO;
 import org.acmsl.queryj.tools.handlers.JdbcConnectionOpeningHandler;
-import org.apache.commons.configuration.PropertiesConfiguration;
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing checkthread.org annotations.
+ * Importing JUnit/EasyMock classes.
  */
-import org.checkthread.annotations.ThreadSafe;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -97,7 +95,7 @@ public class ExecuteQueryHandlerTest
 
         sql.setValue("select sysdate from dual where ? = 'A'");
 
-        @NotNull final Parameter parameter = new ParameterElement<String, String>("id", 1, "id", "String", "1");
+        @NotNull final Parameter parameter = new ParameterElement<>("id", 1, "id", "String", "1");
         sql.add(new ParameterRefElement("id"));
 
         new QueryJCommandWrapper<Sql<String>>(parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, sql);
