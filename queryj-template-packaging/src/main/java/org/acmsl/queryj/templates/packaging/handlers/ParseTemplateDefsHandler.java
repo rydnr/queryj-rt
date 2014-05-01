@@ -209,7 +209,7 @@ public class ParseTemplateDefsHandler
      * @param file the file.
      */
     @NotNull
-    protected TemplateDef<String> parseDef(
+    public TemplateDef<String> parseDef(
         @NotNull final TemplateDefParser parser, @NotNull final File file)
         throws TemplatePackagingCheckedException
     {
