@@ -355,7 +355,6 @@ public class TemplateDefImpl
 
     /**
      * {@inheritDoc}
-     * @return
      */
     @NotNull
     @Override
