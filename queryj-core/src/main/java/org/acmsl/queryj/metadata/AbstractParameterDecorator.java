@@ -347,7 +347,7 @@ public abstract class AbstractParameterDecorator<V>
     }
 
     /**
-     * Checks whether this parameter is primitive or not.
+     * Checks whether this parameter is a primitive or not.
      * @return such information.
      */
     @SuppressWarnings("unused")
