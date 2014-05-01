@@ -73,8 +73,6 @@ public class AbstractTemplatesTestTest
         {
             /**
              * {@inheritDoc}
-             * @param generator the generator to use.
-             * @return
              */
             @NotNull
             @Override
