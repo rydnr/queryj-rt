@@ -239,7 +239,7 @@ public class <table.name.voName>PkStatementSetter
      */
     protected void setValues(
         <notnull(C=C)>final PreparedStatement preparedStatement,
-        <table.primaryKey:{ a | <attribute_method_parameter_declaration(attribute=a, prefix="")>}; separator=",\n">,
+        <table.primaryKey:{ a | <attribute_method_parameter_declaration(attribute=a, uprefix="")>}; separator=",\n">,
         final boolean update)
         throws  SQLException
     {
