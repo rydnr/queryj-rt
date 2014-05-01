@@ -1268,6 +1268,7 @@ public abstract class AbstractTemplatesTest<G, F>
 
     private TemplateDefParser setupParser(final InputStream stream)
     {
+        return null;  //To change body of created methods use File | Settings | File Templates.
     }
 
     /**
