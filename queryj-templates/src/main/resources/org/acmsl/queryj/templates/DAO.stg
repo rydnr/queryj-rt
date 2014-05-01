@@ -589,7 +589,7 @@ public <table.name.voName>Decorator findByPrimaryKey(
 <else>
 public <table.name.voName> findByPrimaryKey(
 <endif>
-    <table.primaryKey:{ attr | <attribute_declaration(attr=attr, C=C)>}; separator=",\n">)
+    <table.primaryKey:{ attr | <attribute_declaration(attribute=attr, C=C)>}; separator=",\n">)
 {
     return
         findByPrimaryKey(
