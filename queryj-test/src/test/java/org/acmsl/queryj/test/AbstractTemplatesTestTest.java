@@ -61,7 +61,7 @@ public class AbstractTemplatesTestTest
 {
     /**
      * Checks whether the retrieveTemplateDef() method actually
-     * retrieves a {@link TemplateDef}
+     * retrieves a {@link TemplateDef}.
      */
     @Test
     public void retrieveTemplateDef_finds_the_templateDef()
