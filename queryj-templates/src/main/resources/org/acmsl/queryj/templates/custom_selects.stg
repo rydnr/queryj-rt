@@ -234,7 +234,7 @@ custom_select_for_update(cs, table) ::= <<
 /**
  * Custom select for update \<i><cs.id>\</i>:\<br/>
  * \<b><cs.description>\</b>.
- <cs.parameters:{ p | <attribute_javadoc(name=p.name)>}; separator=",\n">
+ <cs.parameters:{ p | <attribute_javadoc(attr=p.name)>}; separator=",\n">
 <if(cs.resultRef)>
  * @return the {@link <cs.resultClass>} information retrieved.
 <else>
