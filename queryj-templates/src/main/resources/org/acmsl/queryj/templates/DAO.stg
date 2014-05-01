@@ -228,7 +228,7 @@ import <basePackageName>.<damSubpackageName>.<trName>DataAccessManager;
 <table.differentCustomResults:{ cr  | <custom_select_import(result=cr, table=table, package=basePackageName)>}; separator="\n">
 >>
 
-custom_select_import(result, table, package) ::= <<
+custom_select_import(result, package, C) ::= <<
 <custom_select_return_import(result=result, package=package, C=C)>
 >>
 
