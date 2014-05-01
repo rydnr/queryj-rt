@@ -44,6 +44,7 @@ import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.metadata.SqlPropertyDAO;
 import org.acmsl.queryj.metadata.SqlResultDAO;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
+import org.acmsl.queryj.templates.packaging.antlr.TemplateDefParser;
 import org.acmsl.queryj.test.antlr4.JavaLexer;
 import org.acmsl.queryj.test.antlr4.JavaPackageVisitor;
 import org.acmsl.queryj.test.antlr4.JavaParser;
@@ -1247,7 +1248,7 @@ public abstract class AbstractTemplatesTest<G, F>
     {
         @NotNull final InputStream stream = getClass().getResourceAsStream(template + ".stg.def");
 
-
+        @NotNull final TemplateDefParser
     }
 
     /**
