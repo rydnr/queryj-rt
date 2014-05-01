@@ -1253,7 +1253,11 @@ public abstract class AbstractTemplatesTest<G, F>
 
         @NotNull final TemplateDefParser parser = setupParser(stream);
 
-        return new ParseTemplateDefsHandler().parseDef(parser, new File("unknown"));
+        try
+        {
+            result = new ParseTemplateDefsHandler().parseDef(parser, new File("unknown"));
+        }
+        catch (@NotNull final )
     }
 
     /**
