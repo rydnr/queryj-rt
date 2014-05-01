@@ -43,6 +43,7 @@ import org.acmsl.commons.utils.StringUtils;
 /*
  * Importing QueryJ Template Packaging classes.
  */
+import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.acmsl.queryj.templates.packaging.antlr.TemplateDefLexer;
 import org.acmsl.queryj.templates.packaging.antlr.TemplateDefParser;
@@ -1265,7 +1266,7 @@ public abstract class AbstractTemplatesTest<G, F>
         {
             @NotNull final TemplateDefParser parser = setupParser(stream);
 
-            result = new ParseTemplateDefsHandler().parseDef(parser, new File("unknown"));
+            result = new ParseTemplateDefsHandler().parseDef(parser, new File(Literals"unknown"));
         }
         catch (@NotNull final Throwable throwable)
         {
