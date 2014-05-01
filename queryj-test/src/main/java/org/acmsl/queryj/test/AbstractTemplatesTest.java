@@ -57,6 +57,8 @@ import org.acmsl.queryj.test.antlr4.JavaParser;
 import org.acmsl.queryj.test.antlr4.JavaRootClassNameVisitor;
 import org.acmsl.queryj.test.sql.CucumberSqlDAO;
 import org.acmsl.queryj.test.sql.CucumberSqlParameterDAO;
+import org.acmsl.queryj.test.sql.CucumberSqlPropertyDAO;
+import org.acmsl.queryj.test.sql.CucumberSqlResultDAO;
 
 /*
  * Importing QueryJ Core classes.
