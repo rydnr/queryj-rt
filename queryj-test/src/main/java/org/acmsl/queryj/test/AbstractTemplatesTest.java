@@ -36,7 +36,7 @@
 package org.acmsl.queryj.test;
 
 /*
- * Importing QueryJ Test classes.
+ * Importing ACM SL Java Commons classes.
  */
 import org.acmsl.commons.utils.StringUtils;
 
