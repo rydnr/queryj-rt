@@ -1264,7 +1264,7 @@ public abstract class AbstractTemplatesTest<G, F>
 
         if (stream == null)
         {
-            stream =
+            stream = getClass().getResourceAsStream("/" + template + ".stg.def");
         }
         if (stream == null)
         {
