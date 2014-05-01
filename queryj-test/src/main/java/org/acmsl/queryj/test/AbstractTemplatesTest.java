@@ -1260,7 +1260,7 @@ public abstract class AbstractTemplatesTest<G, F>
         }
         catch (@NotNull final TemplatePackagingCheckedException invalidTemplateDef)
         {
-            Assert.fail()
+            Assert.fail("Invalid template def ")
         }
     }
 
