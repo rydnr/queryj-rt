@@ -353,7 +353,7 @@ public abstract class AbstractParameterDecorator<V>
     @SuppressWarnings("unused")
     public boolean isPrimitive()
     {
-        return isPrimitive(getType(), getMetadataTypeManager());
+        return isPrimitiveWrapper(getType(), getMetadataTypeManager());
     }
 
     /**
