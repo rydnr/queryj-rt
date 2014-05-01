@@ -43,6 +43,7 @@ import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.metadata.SqlPropertyDAO;
 import org.acmsl.queryj.metadata.SqlResultDAO;
+import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.acmsl.queryj.test.antlr4.JavaLexer;
 import org.acmsl.queryj.test.antlr4.JavaPackageVisitor;
 import org.acmsl.queryj.test.antlr4.JavaParser;
@@ -1279,6 +1280,7 @@ public abstract class AbstractTemplatesTest<G, F>
         return result.toString();
     }
 
+    @Nullable
     public TemplateDef<String> retrieveTemplateDef(@NotNull final String template)
     {
         return null;  //To change body of created methods use File | Settings | File Templates.
