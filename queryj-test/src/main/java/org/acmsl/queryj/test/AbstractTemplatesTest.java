@@ -45,6 +45,7 @@ import org.acmsl.queryj.metadata.SqlPropertyDAO;
 import org.acmsl.queryj.metadata.SqlResultDAO;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.acmsl.queryj.templates.packaging.antlr.TemplateDefParser;
+import org.acmsl.queryj.templates.packaging.exceptions.TemplatePackagingCheckedException;
 import org.acmsl.queryj.templates.packaging.handlers.ParseTemplateDefsHandler;
 import org.acmsl.queryj.test.antlr4.JavaLexer;
 import org.acmsl.queryj.test.antlr4.JavaPackageVisitor;
@@ -1257,7 +1258,7 @@ public abstract class AbstractTemplatesTest<G, F>
         {
             result = new ParseTemplateDefsHandler().parseDef(parser, new File("unknown"));
         }
-        catch (@NotNull final )
+        catch (@NotNull final TemplatePackagingCheckedException)
     }
 
     /**
