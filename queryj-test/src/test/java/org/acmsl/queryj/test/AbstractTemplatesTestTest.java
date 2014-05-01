@@ -57,5 +57,6 @@ import org.junit.runners.JUnit4;
 public class AbstractTemplatesTestTest
 {
     @Test
+    public void
 
 }
