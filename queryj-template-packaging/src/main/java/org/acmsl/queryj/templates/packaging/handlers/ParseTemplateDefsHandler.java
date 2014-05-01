@@ -200,7 +200,7 @@ public class ParseTemplateDefsHandler
             throw new CannotSetUpTemplateDefParserException(file, missingFile);
         }
 
-        return parseDefFile(t_Parser, file);
+        return parseDef(t_Parser, file);
     }
 
     /**
