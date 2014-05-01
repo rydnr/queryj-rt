@@ -15,5 +15,3 @@ filename  builder : <tableName.capitalized>PkStatementSetter.java;
 
 // The package.
 package: <packageName>.dao.rdb.<engine.name.voName>.<tableName.normalized.lowercased>;
-
-disabled;
