@@ -453,7 +453,7 @@ public class PerTableTemplatesTest
     {
         if (templateDef == null)
         {
-            Assert.fail("No TemplateDef (" + found.");
+            Assert.fail("No TemplateDef (" + templateName + ".stg.deffound.");
         }
         @Nullable final PerTableTemplateGenerator\<PerTableTemplate\<PerTableTemplateContext>, PerTableTemplateContext> generator =
             (PerTableTemplateGenerator\<PerTableTemplate\<PerTableTemplateContext>, PerTableTemplateContext>) retrieveTemplateGenerator(
