@@ -419,6 +419,7 @@ public class PerTableTemplatesTest
         generateFile(
             template,
             engine,
+            retrieveTemplateDef(template),
             getTables(),
             getRows(),
             getOutputFiles(),
