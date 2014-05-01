@@ -52,5 +52,5 @@ Feature: Per-table templates
 
   Examples:
     | template           | output                       |
-    | DAO                | GDrawResultSetExtractor.java |
+    | DAO                | Orac.java |
 #    | ResultSetExtractor | GDrawResultSetExtractor.java |
