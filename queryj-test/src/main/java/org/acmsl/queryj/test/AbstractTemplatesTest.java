@@ -1251,7 +1251,7 @@ public abstract class AbstractTemplatesTest<G, F>
 
         @NotNull final TemplateDefParser parser = setupParser(stream);
 
-        new ParseTemplateDefsHandler()
+        new ParseTemplateDefsHandler().
     }
 
     /**
