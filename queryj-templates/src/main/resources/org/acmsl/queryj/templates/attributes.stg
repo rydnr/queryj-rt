@@ -162,7 +162,7 @@ protected final <attribute.javaType> immutableGet<attribute.name.capitalized>()
 <if(!attribute.primitive)><nullable(C=C)><endif>
 public <attribute.objectType> get<attribute.name.capitalized>()
 <else>
-<if(!attribute.strictlyPrimitive)><notnull(C=C)><endif>
+<if(!attribute.primitive)><notnull(C=C)><endif>
 public <attribute.javaType> get<attribute.name.capitalized>()
 <endif>
 {
