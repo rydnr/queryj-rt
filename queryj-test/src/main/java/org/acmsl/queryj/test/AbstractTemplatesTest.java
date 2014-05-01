@@ -1262,6 +1262,8 @@ public abstract class AbstractTemplatesTest<G, F>
         {
             Assert.fail("Invalid template def " + template + ".stg.def");
         }
+
+        return result;
     }
 
     /**
