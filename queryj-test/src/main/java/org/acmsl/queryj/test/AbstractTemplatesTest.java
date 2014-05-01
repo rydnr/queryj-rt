@@ -75,8 +75,6 @@ import org.acmsl.queryj.metadata.SqlParameterDAO;
 import org.acmsl.queryj.metadata.SqlPropertyDAO;
 import org.acmsl.queryj.metadata.SqlResultDAO;
 import org.acmsl.queryj.metadata.TableDAO;
-import org.acmsl.queryj.metadata.SqlDAO;
-import org.acmsl.queryj.metadata.SqlParameterDAO;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.ForeignKey;
 import org.acmsl.queryj.metadata.vo.Row;
