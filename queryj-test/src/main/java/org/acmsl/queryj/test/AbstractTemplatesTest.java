@@ -1258,7 +1258,10 @@ public abstract class AbstractTemplatesTest<G, F>
         {
             result = new ParseTemplateDefsHandler().parseDef(parser, new File("unknown"));
         }
-        catch (@NotNull final TemplatePackagingCheckedException)
+        catch (@NotNull final TemplatePackagingCheckedException invalidTemplateDef)
+        {
+            Assert.fail()
+        }
     }
 
     /**
