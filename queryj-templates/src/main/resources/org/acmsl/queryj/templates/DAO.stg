@@ -228,7 +228,6 @@ import <basePackageName>.<damSubpackageName>.<trName>DataAccessManager;
  */
 import com.ventura24.commons.dao.DAOListener;
 import com.ventura24.commons.dao.V24JdbcTemplate;
-import com.ventura24.commons.dao.V24PreparedStatementCreator;
 import com.ventura24.commons.dao.V24ResultSetExtractor;
 
 >>
