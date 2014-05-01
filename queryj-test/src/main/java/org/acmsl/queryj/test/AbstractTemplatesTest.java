@@ -1278,4 +1278,8 @@ public abstract class AbstractTemplatesTest<G, F>
 
         return result.toString();
     }
+
+    public Object retrieveTemplateDef(final String myTemplateDef)
+    {
+    }
 }
