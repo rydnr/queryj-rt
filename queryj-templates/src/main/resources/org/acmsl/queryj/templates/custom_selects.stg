@@ -451,7 +451,7 @@ custom_select_return_nondecorated_implicit_single(cs, result, C) ::= <<
 <cs.dao.voName>
 >>
 
-custom_select_return_import(cs, table, result, package, C) ::= <<
+custom_select_return_import(cs, tableresult, package, C) ::= <<
 <if(result.wrappingASingleProperty)>
 <custom_select_return_import_property_single(result=result, package=package)>
 <else><if(result.classValue)>
