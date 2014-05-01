@@ -1244,7 +1244,7 @@ public abstract class AbstractTemplatesTest<G, F>
     @Nullable
     public TemplateDef<String> retrieveTemplateDef(@NotNull final String template)
     {
-        return null;
+        @NotNull final InputStream stream = return null;
     }
 
     /**
