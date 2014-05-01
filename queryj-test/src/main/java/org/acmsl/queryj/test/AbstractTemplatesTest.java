@@ -1281,7 +1281,7 @@ public abstract class AbstractTemplatesTest<G, F>
         @NotNull final TemplateDefParser result;
 
         @NotNull final TemplateDefLexer t_Lexer =
-            new TemplateDefLexer(new ANTLRInputStream(file.getAbsolutePath()));
+            new TemplateDefLexer(new ANTLRInputStream(stream));
 
         @NotNull final CommonTokenStream t_Tokens = new CommonTokenStream(t_Lexer);
 
