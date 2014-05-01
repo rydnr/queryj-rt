@@ -213,11 +213,11 @@ public class ParseTemplateDefsHandler
     {
         @NotNull final TemplateDef<String> result;
 
-        @Nullable final TemplateDefParser t_Parser;
+        @Nullable final TemplateDefParser parser;
 
         try
         {
-            t_Parser = setUpParser(file);
+            parser = setUpParser(file);
         }
         catch (final IOException missingFile)
         {
@@ -228,7 +228,7 @@ public class ParseTemplateDefsHandler
 
         try
         {
-            tree = t_Parser.templateDef();
+            tree = parser.templateDef();
         }
         catch (@NotNull final Throwable invalidClass)
         {
