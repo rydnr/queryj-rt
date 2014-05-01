@@ -146,7 +146,7 @@ attribute_getter(attribute, C) ::= <<
 <if(!attribute.primitive)><nullable(C=C)><endif>
 protected final <attribute.objectType> immutableGet<attribute.name.capitalized>()
 <else>
-<if(!attribute.strictlyPrimitive)><notnull(C=C)><endif>
+<if(!attribute.primitive)><notnull(C=C)><endif>
 protected final <attribute.javaType> immutableGet<attribute.name.capitalized>()
 <endif>
 {
