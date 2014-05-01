@@ -59,6 +59,10 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class AbstractTemplatesTestTest
 {
+    /**
+     * Checks whether the retrieveTemplateDef() method actually
+     * retrieves a {@link TemplateDef}
+     */
     @Test
     public void retrieveTemplateDef_finds_the_templateDef()
     {
