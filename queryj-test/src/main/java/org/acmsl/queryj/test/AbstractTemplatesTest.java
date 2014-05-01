@@ -1266,6 +1266,10 @@ public abstract class AbstractTemplatesTest<G, F>
         return result;
     }
 
+    private TemplateDefParser setupParser(final InputStream stream)
+    {
+    }
+
     /**
      * {@inheritDoc}
      */
