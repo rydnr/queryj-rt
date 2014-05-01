@@ -224,7 +224,7 @@ import <basePackageName>.<damSubpackageName>.<trName>DataAccessManager;
 <table.foreignKeys:{ fk | <foreignkey_dao_import(
   basePackageName=basePackageName,
   baseDAOSubpackageName=baseDAOSubpackageName,
-  referredVOName=fk.sourceTable.name.VoName)>}; separator="\n">
+  referredVOName=fk.sourceTable.name.voName)>}; separator="\n">
 <table.differentCustomResults:{ cr  | <custom_select_import(result=cr, package=basePackageName, C=C)>}; separator="\n">
 >>
 
