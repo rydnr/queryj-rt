@@ -1262,7 +1262,7 @@ public abstract class AbstractTemplatesTest<G, F>
         }
         catch (@NotNull final Throwable throwable)
         {
-            Assert.fail("Invalid template def " + template + ".stg.def");
+            Assert.fail(throwable, "Invalid template def " + template + ".stg.def");
         }
 
         return result;
