@@ -339,7 +339,7 @@ public class ParseTemplateDefsHandler
     @NotNull
     protected TemplateDefParser setUpParser(@NotNull final File file)
     throws RecognitionException,
-            IOException
+           IOException
     {
         @NotNull final TemplateDefParser result;
 
