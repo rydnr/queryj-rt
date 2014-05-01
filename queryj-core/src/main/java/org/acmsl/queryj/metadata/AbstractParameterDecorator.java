@@ -364,7 +364,7 @@ public abstract class AbstractParameterDecorator<V>
      */
     protected boolean isPrimitive(@NotNull final DecoratedString type, @NotNull final MetadataTypeManager metadataTypeManager)
     {
-        return metadataTypeManager.isPrimitive(type.getValue());
+        return metadataTypeManager.isPrimitiveWrapper(type.getValue());
     }
 
     /**
