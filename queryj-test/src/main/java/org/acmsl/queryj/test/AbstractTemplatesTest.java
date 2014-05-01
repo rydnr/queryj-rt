@@ -1266,6 +1266,8 @@ public abstract class AbstractTemplatesTest<G, F>
         {
             Assert.fail("Template def " + template + ".stg.def not found");
         }
+        else
+        {
         try
         {
             @NotNull final TemplateDefParser parser = setupParser(stream);
