@@ -67,6 +67,10 @@ public class AbstractTemplatesTestTest
         Assert.assertNotNull(instance.retrieveTemplateDef("myTemplateDef"));
     }
 
+    /**
+     * Creates a new instance.
+     * @return the new instance.
+     */
     protected AbstractTemplatesTest createInstance()
     {
         return new AbstractTemplatesTest()
