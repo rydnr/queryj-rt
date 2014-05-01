@@ -213,15 +213,6 @@ public class ParseTemplateDefsHandler
     {
         @NotNull final TemplateDef<String> result;
 
-        try
-        {
-            parser = setUpParser(file);
-        }
-        catch (final IOException missingFile)
-        {
-            throw new CannotSetUpTemplateDefParserException(file, missingFile);
-        }
-
         @Nullable final ParseTree tree;
 
         try
