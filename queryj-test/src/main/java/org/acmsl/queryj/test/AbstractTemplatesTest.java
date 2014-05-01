@@ -144,6 +144,7 @@ public abstract class AbstractTemplatesTest<G, F>
      * String literal: "Cannot read file: ".
      */
     public static final String CANNOT_READ_FILE = "Cannot read file: ";
+    private static final String FAKE_MANAGER = "fake manager";
 
     /**
      * A simple mapping between template names and generators.
@@ -1012,7 +1013,7 @@ public abstract class AbstractTemplatesTest<G, F>
         @NotNull final ColumnDAO columnDAO = EasyMock.createNiceMock(ColumnDAO.class);
 
         EasyMock.expect(result.getMetaData()).andReturn(metadata).anyTimes();
-        EasyMock.expect(result.getName()).andReturn("fake manager").anyTimes();
+        EasyMock.expect(result.getName()).andReturn(FAKE_MANAGER).anyTimes();
         EasyMock.expect(result.getMetadataTypeManager()).andReturn(new JdbcMetadataTypeManager()).anyTimes();
         EasyMock.expect(result.getTableNames()).andReturn(tableNames).anyTimes();
         EasyMock.expect(result.getTables()).andReturn(tables).anyTimes();
@@ -1077,7 +1078,7 @@ public abstract class AbstractTemplatesTest<G, F>
             Arrays.asList(table);
 
         EasyMock.expect(result.getMetaData()).andReturn(metadata).anyTimes();
-        EasyMock.expect(result.getName()).andReturn("fake manager").anyTimes();
+        EasyMock.expect(result.getName()).andReturn(FAKE_MANAGER).anyTimes();
         EasyMock.expect(result.getMetadataTypeManager()).andReturn(new JdbcMetadataTypeManager()).anyTimes();
         EasyMock.expect(result.getTableNames()).andReturn(tableNames).anyTimes();
         EasyMock.expect(result.getTables()).andReturn(tables).anyTimes();
