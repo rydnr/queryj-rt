@@ -44,6 +44,7 @@ import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.metadata.SqlPropertyDAO;
 import org.acmsl.queryj.metadata.SqlResultDAO;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
+import org.acmsl.queryj.templates.packaging.antlr.TemplateDefLexer;
 import org.acmsl.queryj.templates.packaging.antlr.TemplateDefParser;
 import org.acmsl.queryj.templates.packaging.exceptions.TemplatePackagingCheckedException;
 import org.acmsl.queryj.templates.packaging.handlers.ParseTemplateDefsHandler;
@@ -1274,7 +1275,20 @@ public abstract class AbstractTemplatesTest<G, F>
     @NotNull
     protected TemplateDefParser setupParser(@NotNull final InputStream stream)
     {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        throws RecognitionException,
+        IOException
+        {
+            @NotNull final TemplateDefParser result;
+
+            @NotNull final TemplateDefLexer t_Lexer =
+                new TemplateDefLexer(new ANTLRFileStream(file.getAbsolutePath()));
+
+            @NotNull final CommonTokenStream t_Tokens = new CommonTokenStream(t_Lexer);
+
+            result = new TemplateDefParser(t_Tokens);
+
+            return result;
+        }
     }
 
     /**
