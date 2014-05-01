@@ -1262,6 +1262,7 @@ public abstract class AbstractTemplatesTest<G, F>
 
         @Nullable final InputStream stream = getClass().getResourceAsStream(template + ".stg.def");
 
+
         if (stream == null)
         {
             Assert.fail("Template def " + template + ".stg.def not found");
