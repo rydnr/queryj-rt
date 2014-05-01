@@ -835,6 +835,7 @@ public abstract class AbstractTemplatesTest<G, F>
                     "Invalid package in file " + outputFile.getAbsolutePath(),
                     "com.foo.bar.dao",
                     packageName);
+*/
 
                 @NotNull final JavaRootClassNameVisitor rootClassVisitor = new JavaRootClassNameVisitor();
 
