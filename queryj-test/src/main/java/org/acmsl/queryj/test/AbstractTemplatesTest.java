@@ -1279,15 +1279,4 @@ public abstract class AbstractTemplatesTest<G, F>
 
         return result.toString();
     }
-
-    /**
-     * Retrieves the template def for given template.
-     * @param template such template.
-     * @return the associated {@link TemplateDef}.
-     */
-    @Nullable
-    public TemplateDef<String> retrieveTemplateDef(@NotNull final String template)
-    {
-        return null;
-    }
 }
