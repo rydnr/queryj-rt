@@ -144,7 +144,11 @@ public abstract class AbstractTemplatesTest<G, F>
      * String literal: "Cannot read file: ".
      */
     public static final String CANNOT_READ_FILE = "Cannot read file: ";
-    private static final String FAKE_MANAGER = "fake manager";
+
+    /**
+     * String literal: "fake manager".
+     */
+    protected static final String FAKE_MANAGER = "fake manager";
 
     /**
      * A simple mapping between template names and generators.
