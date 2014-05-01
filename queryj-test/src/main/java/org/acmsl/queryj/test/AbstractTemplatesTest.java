@@ -1264,7 +1264,7 @@ public abstract class AbstractTemplatesTest<G, F>
 
         if (stream == null)
         {
-            stream = getClass().getResourceAsStream("org.acmsl.queryj.templates/" + template + ".stg.def");
+            stream = getClass().getResourceAsStream("org.acmsl.queryj.templates." + template + ".stg.def");
         }
         if (stream == null)
         {
