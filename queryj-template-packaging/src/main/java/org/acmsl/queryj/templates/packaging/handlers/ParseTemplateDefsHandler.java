@@ -206,7 +206,7 @@ public class ParseTemplateDefsHandler
     /**
      * Parses a template def file.
      * @param parser the parser.
-     *
+     * @param file the file.
      */
     @NotNull
     protected TemplateDef<String> parseDefFile(
