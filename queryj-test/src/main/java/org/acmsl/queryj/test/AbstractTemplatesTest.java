@@ -1274,7 +1274,7 @@ public abstract class AbstractTemplatesTest<G, F>
      */
     @NotNull
     protected TemplateDefParser setupParser(@NotNull final InputStream stream)
-     throws RecognitionException,
+    throws  RecognitionException,
             IOException
         {
             @NotNull final TemplateDefParser result;
