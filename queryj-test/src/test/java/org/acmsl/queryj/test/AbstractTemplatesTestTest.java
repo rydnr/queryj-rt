@@ -61,7 +61,7 @@ public class AbstractTemplatesTestTest
 {
     /**
      * Checks whether the retrieveTemplateDef() method actually
-     * retrieves a {@link org.acmsl.queryj.templates.TemplateDef}.
+     * retrieves a {@code org.acmsl.queryj.templates.TemplateDef}.
      */
     @Test
     public void retrieveTemplateDef_finds_the_templateDef()
