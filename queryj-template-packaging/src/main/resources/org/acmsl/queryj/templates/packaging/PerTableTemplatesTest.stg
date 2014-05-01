@@ -485,8 +485,6 @@ public class PerTableTemplatesTest
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
                 QueryJSettings.PACKAGE, BASE_PACKAGE_NAME);
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
-                Literals.PACKAGE_NAME, templateDef.getPackageName());
-            new QueryJCommandWrapper\<String>(t_Command).setSetting(
                 QueryJSettings.REPOSITORY, "acme");
             new QueryJCommandWrapper\<Boolean>(t_Command).setSetting(
                 QueryJSettings.DISABLE_TIMESTAMPS, false);
@@ -525,7 +523,7 @@ public class PerTableTemplatesTest
                 Assert.assertNotNull("No template factory found for " + templateName, templateFactory);
 
                 @NotNull final String packageName =
-                    resolvePackage(PACKAGE_MAPPINGS.get(templateName), table.getName(), resolveEngine(engine));
+                    resolvePackage(templateDef.getPackageName(), table.getName(), resolveEngine(engine));
 
                 @NotNull final PerTableTemplateContext t_Context =
                     new PerTableTemplateContext(table.getName(), tableRows, t_Command);
