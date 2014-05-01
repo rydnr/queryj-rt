@@ -309,7 +309,7 @@ public int hashCode()
 
     <table.primaryKey:{ a | <attribute_hashcode(attribute=a)>}; separator="\n">
 
-    final int updateHashCode = Boolean.valueOf(isUpdateOperation()).hashcode();
+    final int updateHashCode = Boolean.valueOf(isUpdateOperation()).hashCode();
 
     result =
           classHashCode
