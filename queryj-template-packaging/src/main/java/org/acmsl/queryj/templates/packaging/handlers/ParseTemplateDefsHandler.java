@@ -213,8 +213,6 @@ public class ParseTemplateDefsHandler
     {
         @NotNull final TemplateDef<String> result;
 
-        @Nullable final TemplateDefParser parser;
-
         try
         {
             parser = setUpParser(file);
