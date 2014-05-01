@@ -225,7 +225,7 @@ import <basePackageName>.<damSubpackageName>.<trName>DataAccessManager;
   basePackageName=basePackageName,
   baseDAOSubpackageName=baseDAOSubpackageName,
   referredVOName=fk.sourceTable.name.VoName)>}; separator="\n">
-<table.differentCustomResults:{ cr  | <custom_select_import(result=cr, table=table, package=project_package)>}; separator="\n">
+<table.differentCustomResults:{ cr  | <custom_select_import(result=cr, table=table, package=basePackageName)>}; separator="\n">
 >>
 
 custom_select_import(result, table, package) ::= <<
