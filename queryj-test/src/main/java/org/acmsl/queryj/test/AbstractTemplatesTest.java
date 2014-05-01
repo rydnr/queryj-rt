@@ -1247,7 +1247,7 @@ public abstract class AbstractTemplatesTest<G, F>
     @Nullable
     public TemplateDef<String> retrieveTemplateDef(@NotNull final String template)
     {
-        @Nullable final TemplateDef<String> result;
+        @Nullable TemplateDef<String> result = null;
 
         @NotNull final InputStream stream = getClass().getResourceAsStream(template + ".stg.def");
 
