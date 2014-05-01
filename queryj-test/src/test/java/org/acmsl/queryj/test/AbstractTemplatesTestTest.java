@@ -35,8 +35,6 @@
  */
 package org.acmsl.queryj.test;
 
-import org.junit.runner.RunWith;
-
 /*
  * Importing QueryJ Core classes.
  */
