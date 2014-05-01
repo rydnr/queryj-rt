@@ -1054,6 +1054,7 @@ public abstract class AbstractTemplatesTest<G, F>
      * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @return such instance.
      */
+    @SuppressWarnings("unchecked")
     @NotNull
     protected MetadataManager retrieveMetadataManager(
         @NotNull final String engineName,
