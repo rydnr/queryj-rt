@@ -38,6 +38,7 @@ package org.acmsl.queryj.test;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.metadata.CachingDecoratorFactory;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.jetbrains.annotations.NotNull;
 
@@ -74,7 +75,7 @@ public class AbstractTemplatesTestTest
             @Override
             protected DecoratorFactory retrieveDecoratorFactory(@NotNull final Object generator)
             {
-                return null;  //To change body of implemented methods use File | Settings | File Templates.
+                return CachingDecoratorFactory.getInstance();
             }
         }
     }
