@@ -189,8 +189,6 @@ public class ParseTemplateDefsHandler
     protected TemplateDef<String> parseDefFile(@NotNull final File file)
         throws TemplatePackagingCheckedException
     {
-        @NotNull final TemplateDef<String> result;
-
         @Nullable final TemplateDefParser t_Parser;
 
         try
