@@ -44,8 +44,6 @@ import org.acmsl.queryj.metadata.DecoratorFactory;
 /*
  * Importing JetBrains annotations.
  */
-import org.acmsl.queryj.metadata.CachingDecoratorFactory;
-import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.jetbrains.annotations.NotNull;
 
 /*
