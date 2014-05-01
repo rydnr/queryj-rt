@@ -39,7 +39,6 @@
 group DAO;
 
 import "queryj.stg"
-import "type_checkers.stg"
 
 source(C) ::= <<
 <!
