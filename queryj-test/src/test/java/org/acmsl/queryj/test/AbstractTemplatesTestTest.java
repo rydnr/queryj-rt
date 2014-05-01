@@ -71,6 +71,11 @@ public class AbstractTemplatesTestTest
     {
         return new AbstractTemplatesTest()
         {
+            /**
+             * {@inheritDoc}
+             * @param generator the generator to use.
+             * @return
+             */
             @NotNull
             @Override
             protected DecoratorFactory retrieveDecoratorFactory(@NotNull final Object generator)
