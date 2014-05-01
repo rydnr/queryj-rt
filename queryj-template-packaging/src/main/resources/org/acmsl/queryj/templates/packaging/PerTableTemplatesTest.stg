@@ -476,7 +476,7 @@ public class PerTableTemplatesTest
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
                 QueryJSettings.PACKAGE, BASE_PACKAGE_NAME);
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
-                Literals.PACKAGE_NAME, BASE_PACKAGE_NAME + ".dao"); // hard-coded in parent. could be retrieved from the feature file
+                Literals.PACKAGE_NAME, templateDef.getPackageName());
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
                 QueryJSettings.REPOSITORY, "acme");
             new QueryJCommandWrapper\<Boolean>(t_Command).setSetting(
