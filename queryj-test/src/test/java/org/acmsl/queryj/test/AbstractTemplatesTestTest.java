@@ -77,7 +77,7 @@ public class AbstractTemplatesTestTest
             {
                 return CachingDecoratorFactory.getInstance();
             }
-        }
+        };
     }
 
 }
