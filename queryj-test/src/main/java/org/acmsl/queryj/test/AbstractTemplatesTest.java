@@ -1260,7 +1260,7 @@ public abstract class AbstractTemplatesTest<G, F>
     {
         @Nullable TemplateDef<String> result = null;
 
-        @Nullable final InputStream stream = getClass().getResourceAsStream("/" + template + ".stg.def");
+        @Nullable InputStream stream = getClass().getResourceAsStream("/" + template + ".stg.def");
 
         if (stream == null)
         {
