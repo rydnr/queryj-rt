@@ -43,10 +43,6 @@ import org.acmsl.commons.utils.StringUtils;
 /*
  * Importing QueryJ Test classes.
  */
-import org.acmsl.queryj.customsql.Property;
-import org.acmsl.queryj.customsql.Result;
-import org.acmsl.queryj.metadata.SqlPropertyDAO;
-import org.acmsl.queryj.metadata.SqlResultDAO;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.acmsl.queryj.templates.packaging.antlr.TemplateDefLexer;
 import org.acmsl.queryj.templates.packaging.antlr.TemplateDefParser;
