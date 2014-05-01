@@ -35,6 +35,14 @@
  */
 package org.acmsl.queryj.test;
 
+import org.junit.runner.RunWith;
+
+/*
+ * Importing QueryJ Core classes.
+ */
+import org.acmsl.queryj.metadata.CachingDecoratorFactory;
+import org.acmsl.queryj.metadata.DecoratorFactory;
+
 /*
  * Importing JetBrains annotations.
  */
