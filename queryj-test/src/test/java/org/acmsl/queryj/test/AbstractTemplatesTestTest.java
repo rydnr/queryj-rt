@@ -82,7 +82,7 @@ public class AbstractTemplatesTestTest
     @NotNull
     protected AbstractTemplatesTest createInstance()
     {
-        return new AbstractTemplatesTest()
+        return new AbstractTemplatesTest<>()
         {
             /**
              * {@inheritDoc}
