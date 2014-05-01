@@ -41,7 +41,7 @@ package org.acmsl.queryj.test;
 import org.acmsl.commons.utils.StringUtils;
 
 /*
- * Importing QueryJ Test classes.
+ * Importing QueryJ Template Packaging classes.
  */
 import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.acmsl.queryj.templates.packaging.antlr.TemplateDefLexer;
