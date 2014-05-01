@@ -73,7 +73,7 @@ attribute_isolated_declaration(attr, C) ::= <<
   Writes the parameter declaration for a concrete attribute, isolated.
   @param attr the attribute.
 !>
-<attribute_declaration(attr=attr, C=C)>,
+<attribute_declaration(attribute=attr, C=C)>,
 >>
 
 attribute_isolated_declaration_impl(attr, C) ::= <<
