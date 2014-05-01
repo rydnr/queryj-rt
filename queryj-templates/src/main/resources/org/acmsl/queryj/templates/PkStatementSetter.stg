@@ -307,7 +307,7 @@ public int hashCode()
 
     final int classHashCode = Abstract<table.name.voName>.class.hashCode();
 
-    <table.primaryKey:{ a | <attribute_hashcode(attribute=a)>}; separator="\n">
+    <table.primaryKey:{ a | <attribute_hashCode(attribute=a)>}; separator="\n">
 
     final int updateHashCode = Boolean.valueOf(isUpdateOperation()).hashCode();
 
