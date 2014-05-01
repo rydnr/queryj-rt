@@ -1264,7 +1264,7 @@ public abstract class AbstractTemplatesTest<G, F>
 
         if (stream == null)
         {
-            Assert.fail()
+            Assert.fail("Template def " + template + ".stg.def is not )
         }
         try
         {
