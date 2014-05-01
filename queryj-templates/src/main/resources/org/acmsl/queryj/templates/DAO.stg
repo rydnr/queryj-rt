@@ -227,9 +227,9 @@ import <basePackageName>.<damSubpackageName>.<trName>DataAccessManager;
  * Importing V24-Commons classes.
  */
 import com.ventura24.commons.dao.DAOListener;
-import com.ventura24.commons.dao.<basePackageName>.<baseDAOSubpackageName>.<rdbSubpackageName>.<trName>JdbcTemplate;
-import com.ventura24.commons.dao.<basePackageName>.<baseDAOSubpackageName>.<rdbSubpackageName>.<trName>PreparedStatementCreator;
-import com.ventura24.commons.dao.ResultSetExtractor;
+import com.ventura24.commons.dao..V24JdbcTemplate;
+import com.ventura24.commons.dao.V24PreparedStatementCreator;
+import com.ventura24.commons.dao.V24ResultSetExtractor;
 
 >>
 
