@@ -46,7 +46,6 @@ import org.acmsl.queryj.metadata.SqlResultDAO;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.acmsl.queryj.templates.packaging.antlr.TemplateDefLexer;
 import org.acmsl.queryj.templates.packaging.antlr.TemplateDefParser;
-import org.acmsl.queryj.templates.packaging.exceptions.TemplatePackagingCheckedException;
 import org.acmsl.queryj.templates.packaging.handlers.ParseTemplateDefsHandler;
 import org.acmsl.queryj.test.antlr4.JavaLexer;
 import org.acmsl.queryj.test.antlr4.JavaPackageVisitor;
