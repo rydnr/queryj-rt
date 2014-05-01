@@ -1262,7 +1262,10 @@ public abstract class AbstractTemplatesTest<G, F>
 
         @NotNull final InputStream stream = getClass().getResourceAsStream(template + ".stg.def");
 
-        if ()
+        if (stream == null)
+        {
+
+        }
         try
         {
             @NotNull final TemplateDefParser parser = setupParser(stream);
