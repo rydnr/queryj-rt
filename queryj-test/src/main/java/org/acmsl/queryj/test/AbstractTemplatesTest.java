@@ -1280,9 +1280,14 @@ public abstract class AbstractTemplatesTest<G, F>
         return result.toString();
     }
 
+    /**
+     * Retrieves
+     * @param template
+     * @return
+     */
     @Nullable
     public TemplateDef<String> retrieveTemplateDef(@NotNull final String template)
     {
-        return
+        return null;
     }
 }
