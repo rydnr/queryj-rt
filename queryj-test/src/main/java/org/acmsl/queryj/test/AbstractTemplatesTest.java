@@ -1230,7 +1230,6 @@ public abstract class AbstractTemplatesTest<G, F>
         return result;
     }
 
-
     /**
      * Retrieves the template def for given template.
      * @param template such template.
