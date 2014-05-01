@@ -455,7 +455,7 @@ custom_select_return_import(cs, table, result, package, C) ::= <<
 <if(result.wrappingASingleProperty)>
 <custom_select_return_import_property_single(result=result, package=package)>
 <else><if(result.classValue)>
-import <package>.<typeInitMap.voSubpackageName>.<resultvoName>;
+import <package>.<typeInitMap.voSubpackageName>.<result.id.voName>;
 <endif><endif>
 >>
 
