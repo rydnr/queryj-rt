@@ -1247,6 +1247,8 @@ public abstract class AbstractTemplatesTest<G, F>
     @Nullable
     public TemplateDef<String> retrieveTemplateDef(@NotNull final String template)
     {
+        @Nullable final TemplateDef<String> result;
+
         @NotNull final InputStream stream = getClass().getResourceAsStream(template + ".stg.def");
 
         @NotNull final TemplateDefParser parser = setupParser(stream);
