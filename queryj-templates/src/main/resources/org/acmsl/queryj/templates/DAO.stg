@@ -1902,7 +1902,7 @@ public static class <attr.name.capitalized>ResultSetExtractor
               name=attr.name.uncapitalized,
               getterMethod=attr.getterMethod,
               objectType=attr.objectType,
-              isPrimitive=attr.isPrimitive)>
+              isPrimitive=attr.primitive)>
         }
 
         if (daoListener != null)
