@@ -88,6 +88,7 @@ import org.acmsl.commons.utils.io.FileUtils;
 import org.acmsl.queryj.test.sql.CucumberSqlPropertyDAO;
 import org.acmsl.queryj.test.sql.CucumberSqlResultDAO;
 import org.antlr.v4.runtime.ANTLRFileStream;
+import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.RecognitionException;
 import org.antlr.v4.runtime.tree.ParseTree;
@@ -1280,7 +1281,7 @@ public abstract class AbstractTemplatesTest<G, F>
         @NotNull final TemplateDefParser result;
 
         @NotNull final TemplateDefLexer t_Lexer =
-            new TemplateDefLexer(new ANTLRFileStream(file.getAbsolutePath()));
+            new TemplateDefLexer(new ANTLRInputStream(file.getAbsolutePath()));
 
         @NotNull final CommonTokenStream t_Tokens = new CommonTokenStream(t_Lexer);
 
