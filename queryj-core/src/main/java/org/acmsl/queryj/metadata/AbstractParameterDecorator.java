@@ -347,6 +347,27 @@ public abstract class AbstractParameterDecorator<V>
     }
 
     /**
+     * Checks whether this parameter is primitive or not.
+     * @return such information.
+     */
+    @SuppressWarnings("unused")
+    public boolean isPrimitive()
+    {
+        return isPrimitive(getType(), getMetadataTypeManager());
+    }
+
+    /**
+     * Checks whether this parameter is primitive or not.
+     * @param type the type.
+     * @param metadataTypeManager the {@link MetadataTypeManager} instance.
+     * @return such information.
+     */
+    protected boolean isPrimitive(@NotNull final DecoratedString type, @NotNull final MetadataTypeManager metadataTypeManager)
+    {
+        return metadataTypeManager.isPrimitive(type.getValue());
+    }
+
+    /**
      * Provides a text representation of the information
      * contained in given instance.
      * @return such information.
