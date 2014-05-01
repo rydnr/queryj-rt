@@ -1276,18 +1276,17 @@ public abstract class AbstractTemplatesTest<G, F>
     protected TemplateDefParser setupParser(@NotNull final InputStream stream)
     throws  RecognitionException,
             IOException
-        {
-            @NotNull final TemplateDefParser result;
+    {
+        @NotNull final TemplateDefParser result;
 
-            @NotNull final TemplateDefLexer t_Lexer =
-                new TemplateDefLexer(new ANTLRFileStream(file.getAbsolutePath()));
+        @NotNull final TemplateDefLexer t_Lexer =
+            new TemplateDefLexer(new ANTLRFileStream(file.getAbsolutePath()));
 
-            @NotNull final CommonTokenStream t_Tokens = new CommonTokenStream(t_Lexer);
+        @NotNull final CommonTokenStream t_Tokens = new CommonTokenStream(t_Lexer);
 
-            result = new TemplateDefParser(t_Tokens);
+        result = new TemplateDefParser(t_Tokens);
 
-            return result;
-        }
+        return result;
     }
 
     /**
