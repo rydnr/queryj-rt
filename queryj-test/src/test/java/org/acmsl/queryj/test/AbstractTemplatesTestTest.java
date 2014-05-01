@@ -38,6 +38,7 @@ package org.acmsl.queryj.test;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -67,7 +68,15 @@ public class AbstractTemplatesTestTest
 
     protected AbstractTemplatesTest createInstance()
     {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        return new AbstractTemplatesTest()
+        {
+            @NotNull
+            @Override
+            protected DecoratorFactory retrieveDecoratorFactory(@NotNull final Object generator)
+            {
+                return null;  //To change body of implemented methods use File | Settings | File Templates.
+            }
+        }
     }
 
 }
