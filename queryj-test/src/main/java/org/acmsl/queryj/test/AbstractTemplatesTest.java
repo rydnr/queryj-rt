@@ -1283,7 +1283,7 @@ public abstract class AbstractTemplatesTest<G, F>
     /**
      * Retrieves the template def for given template.
      * @param template such template.
-     * @return the {@link TemplateDef}
+     * @return the {@link TemplateDef}.
      */
     @Nullable
     public TemplateDef<String> retrieveTemplateDef(@NotNull final String template)
