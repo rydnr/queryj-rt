@@ -62,7 +62,7 @@ public class AbstractTemplatesTestTest
     {
         @NotNull final AbstractTemplatesTest instance = createInstance();
 
-        Assert.assertNotNull(instance.retrieveTemplateDef("myTemplateDef.stg"));
+        Assert.assertNotNull(instance.retrieveTemplateDef("myTemplateDef"));
     }
 
 }
