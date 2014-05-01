@@ -57,6 +57,6 @@ import org.junit.runners.JUnit4;
 public class AbstractTemplatesTestTest
 {
     @Test
-    public void
+    public void retrieveTemplateDef_finds_the_templateDef
 
 }
