@@ -1268,15 +1268,16 @@ public abstract class AbstractTemplatesTest<G, F>
         }
         else
         {
-        try
-        {
-            @NotNull final TemplateDefParser parser = setupParser(stream);
+            try
+            {
+                @NotNull final TemplateDefParser parser = setupParser(stream);
 
-            result = new ParseTemplateDefsHandler().parseDef(parser, new File(Literals.UNKNOWN));
-        }
-        catch (@NotNull final Throwable throwable)
-        {
-            Assert.fail("Invalid template def " + template + ".stg.def");
+                result = new ParseTemplateDefsHandler().parseDef(parser, new File(Literals.UNKNOWN));
+            }
+            catch (@NotNull final Throwable throwable)
+            {
+                Assert.fail("Invalid template def " + template + ".stg.def");
+            }
         }
 
         return result;
