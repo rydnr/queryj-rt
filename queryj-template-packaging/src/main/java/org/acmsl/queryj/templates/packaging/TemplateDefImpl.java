@@ -61,6 +61,9 @@ import java.io.File;
 public class TemplateDefImpl
     implements TemplateDef<String>
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = 3072766515558433392L;
 
     /**
