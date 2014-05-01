@@ -1266,6 +1266,7 @@ public abstract class AbstractTemplatesTest<G, F>
         {
             stream = getClass().getResourceAsStream("/org/acmsl/queryj/templates/" + template + ".stg.def");
         }
+
         if (stream == null)
         {
             Assert.fail("Template def " + template + ".stg.def not found");
