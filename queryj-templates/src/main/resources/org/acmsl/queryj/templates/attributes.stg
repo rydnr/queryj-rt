@@ -56,7 +56,7 @@ attribute_declaration(attribute, C) ::= <<
 /**
  * The \<i><attribute.name>\</i> value.
  */
-<if(!attribute.primitive)><if(attribute.nullable)><nullable(C=C)><else><notnull(C=C)><endif><endif>
+<if(!attribute.primitive)><if(attribute.nullable)><nullable(C=C)><else><if(attribute.nullable)><notnull(C=C)><endif><endif>
 private <attribute.javaType> m__<attribute.name.capitalized>;
 >>
 
