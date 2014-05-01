@@ -224,7 +224,13 @@ import <basePackageName>.<damSubpackageName>.<trName>DataAccessManager;
 <table.differentCustomResults:{ cr  | <custom_select_import(result=cr, package=basePackageName, C=C)>}; separator="\n">
 
 /*
- * Importing V
+ * Importing V24-Commons classes.
+ */
+import com.ventura24.commons.dao.DAOListener;
+import com.ventura24.commons.dao.<basePackageName>.<baseDAOSubpackageName>.<rdbSubpackageName>.<trName>JdbcTemplate;
+import com.ventura24.commons.dao.<basePackageName>.<baseDAOSubpackageName>.<rdbSubpackageName>.<trName>PreparedStatementCreator;
+import com.ventura24.commons.dao.ResultSetExtractor;
+
 >>
 
 custom_select_import(result, package, C) ::= <<
