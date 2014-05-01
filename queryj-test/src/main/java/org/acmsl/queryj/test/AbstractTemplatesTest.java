@@ -1279,7 +1279,8 @@ public abstract class AbstractTemplatesTest<G, F>
         return result.toString();
     }
 
-    public TemplateDef<String> retrieveTemplateDef(final String myTemplateDef)
+    public TemplateDef<String> retrieveTemplateDef(final String templateDef)
     {
+        return null;  //To change body of created methods use File | Settings | File Templates.
     }
 }
