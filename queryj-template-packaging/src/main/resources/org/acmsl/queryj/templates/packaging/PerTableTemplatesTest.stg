@@ -476,8 +476,6 @@ public class PerTableTemplatesTest
                 Literals.PACKAGE_NAME, BASE_PACKAGE_NAME + ".dao"); // hard-coded in parent. could be retrieved from the feature file
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
                 QueryJSettings.REPOSITORY, "acme");
-            new QueryJCommandWrapper\<String>(t_Command).setSetting(
-                QueryJSettings.HEADER_FILE, "");
             new QueryJCommandWrapper\<Boolean>(t_Command).setSetting(
                 QueryJSettings.DISABLE_TIMESTAMPS, false);
             new QueryJCommandWrapper\<Boolean>(t_Command).setSetting(
