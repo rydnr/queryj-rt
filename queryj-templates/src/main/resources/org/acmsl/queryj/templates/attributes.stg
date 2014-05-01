@@ -126,7 +126,7 @@ protected final void immutableSet<attribute.name.capitalized>(<if(attribute.null
  * @param value such information.
  */
 @SuppressWarnings("unused")
-protected void set<attribute.name.capitalized>(<if(!attribute.nullable)><notnull(C=C)><endif>final <attribute.javaType> value)
+protected void set<attribute.name.capitalized>(<if(attribute.nullable)><notnull(C=C)><endif>final <attribute.javaType> value)
 {
     immutableSet<attribute.name.capitalized>(value);
 }
