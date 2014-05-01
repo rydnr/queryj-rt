@@ -1266,7 +1266,7 @@ public abstract class AbstractTemplatesTest<G, F>
         {
             @NotNull final TemplateDefParser parser = setupParser(stream);
 
-            result = new ParseTemplateDefsHandler().parseDef(parser, new File(Literals"unknown"));
+            result = new ParseTemplateDefsHandler().parseDef(parser, new File(Literals.UNKNOWN));
         }
         catch (@NotNull final Throwable throwable)
         {
