@@ -1590,7 +1590,7 @@ find_constant_by_pk(primaryKey, table, C) ::= <<
  */
 <nullable(C=C)>
 public <table.name.voName> findConstantByPrimaryKey(
-    <primaryKey:{ attr | <attribute_declaration(attr=attr, C=C)>}; separator=",\n">)
+    <primaryKey:{ attr | <attribute_declaration(attribute=attr, C=C)>}; separator=",\n">)
 {
     <nullable(C=C)><table.name.voName> result;
 
