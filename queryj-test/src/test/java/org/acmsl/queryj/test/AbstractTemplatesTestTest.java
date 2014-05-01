@@ -65,7 +65,7 @@ public class AbstractTemplatesTestTest
         Assert.assertNotNull(instance.retrieveTemplateDef("myTemplateDef"));
     }
 
-    private AbstractTemplatesTest createInstance()
+    protected AbstractTemplatesTest createInstance()
     {
         return null;  //To change body of created methods use File | Settings | File Templates.
     }
