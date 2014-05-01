@@ -59,9 +59,9 @@ import org.acmsl.queryj.test.sql.CucumberSqlParameterDAO;
  */
 import org.acmsl.queryj.api.TemplateContext;
 import org.acmsl.queryj.api.dao.DAOTemplateUtils;
+import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.Result;
-import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Parameter;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.xml.SqlXmlParserImpl;
