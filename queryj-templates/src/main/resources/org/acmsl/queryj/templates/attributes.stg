@@ -143,7 +143,7 @@ attribute_getter(attribute, C) ::= <<
  * @return such information.
  */
 <if(attribute.allowsNull)>
-<if(!attribute.strictlyPrimitive)><nullable(C=C)><endif>
+<if(!attribute.primitiveWrapp)><nullable(C=C)><endif>
 protected final <attribute.objectType> immutableGet<attribute.name.capitalized>()
 <else>
 <if(!attribute.strictlyPrimitive)><notnull(C=C)><endif>
