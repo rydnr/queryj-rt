@@ -1,5 +1,5 @@
 * 2014/05/01
-** TODO Move shared classes to commons project : 3 ->
+** DONE Move shared classes to commons project : 3 -> 2
 ** TODO Fix PkStatementSetter #496: 3 -> 
 ** TODO Fix BaseDAOFactory template: #497: 3 ->
 ** TODO Fix BaseDAO template: #498: 3 ->
