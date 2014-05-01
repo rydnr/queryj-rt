@@ -79,6 +79,7 @@ public class AbstractTemplatesTestTest
      * Creates a new instance.
      * @return the new instance.
      */
+    @NotNull
     protected AbstractTemplatesTest createInstance()
     {
         return new AbstractTemplatesTest()
