@@ -387,7 +387,7 @@ public class PerTableTemplatesTest
      */
     @SuppressWarnings("unused")
     @Then("^the generated per-table (.*) file compiles successfully, in package (.*)")
-    public void checkGeneratedFileCompiles(@NotNull final String outputName)
+    public void checkGeneratedFileCompiles(@NotNull final String outputName, @NotNull final String )
     {
         checkGeneratedFilesCompile(outputName, getOutputFiles());
     }
