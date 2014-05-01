@@ -1266,7 +1266,12 @@ public abstract class AbstractTemplatesTest<G, F>
         return result;
     }
 
-    private TemplateDefParser setupParser(final InputStream stream)
+    /**
+     * Configures a parser for given stream.
+     * @param stream the stream.
+     * @return
+     */
+    protected TemplateDefParser setupParser(@NotNull final InputStream stream)
     {
         return null;  //To change body of created methods use File | Settings | File Templates.
     }
