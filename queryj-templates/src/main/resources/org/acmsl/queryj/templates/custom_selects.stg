@@ -160,7 +160,7 @@ custom_update_or_insert(cs) ::= <<
 /**
  * Custom sql \<i><cs.id>\</i>:\<br/>
  * \<b><cs.description>\</b>.
- <cs.parameters:{ p | <attribute_javadoc(attr=p.name.lowercased)>}; separator="\n">
+ <cs.parameters:{ p | <attribute_javadoc(attr=p)>}; separator="\n">
  * @return the number of entities updated.
  */
 public int <cs.name.uncapitalized>(
