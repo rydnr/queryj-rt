@@ -58,6 +58,10 @@ import org.acmsl.queryj.test.sql.CucumberSqlParameterDAO;
  * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.api.TemplateContext;
+import org.acmsl.queryj.customsql.Property;
+import org.acmsl.queryj.customsql.Result;
+import org.acmsl.queryj.metadata.SqlPropertyDAO;
+import org.acmsl.queryj.metadata.SqlResultDAO;
 import org.acmsl.queryj.api.dao.DAOTemplateUtils;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Parameter;
