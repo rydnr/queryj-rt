@@ -59,7 +59,9 @@ public class AbstractTemplatesTestTest
     @Test
     public void retrieveTemplateDef_finds_the_templateDef()
     {
-        @NotNull final AbstractTemplatesTest instance = create
+        @NotNull final AbstractTemplatesTest instance = createInstance();
+
+
     }
 
 }
