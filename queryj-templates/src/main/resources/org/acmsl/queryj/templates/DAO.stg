@@ -593,7 +593,7 @@ public <table.name.voName>Decorator findByPrimaryKey(
 <else>
 public <table.name.voName> findByPrimaryKey(
 <endif>
-    <table.primaryKey:{ attr | <attribute_declaration(attribute=attr, C=C)>}; separator=",\n">)
+    <table.primaryKey:{ attr | <attribute_method_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
 {
     return
         findByPrimaryKey(
@@ -769,9 +769,9 @@ insert(table, parent, repository, C) ::= <<
  */
 public void insert(
 <if(parent)>
-    <table.all.minus.readOnly.minus.externallyManagedAttributes:{ attr | <attribute_declaration(attribute=attr, C=C)>}; separator=",\n">)
+    <table.all.minus.readOnly.minus.externallyManagedAttributes:{ attr | <attribute_method_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
 <else>
-    <table.own.minus.readOnly.minus.externallyManagedAttributes:{ attr | <attribute_declaration(attribute=attr, C=C)>}; separator=",\n">)
+    <table.own.minus.readOnly.minus.externallyManagedAttributes:{ attr | <attribute_method_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
 <endif>
 {
     create(
@@ -812,9 +812,9 @@ public <table.name.voName>Decorator create(
 public <table.name.voName> create(
 <endif>
 <if(parent)>
-    <table.all.minus.readOnly.minus.externallyManagedAttributes:{ attr | <attribute_declaration(attribute=attr, C=C)>}; separator=",\n">)
+    <table.all.minus.readOnly.minus.externallyManagedAttributes:{ attr | <attribute_method_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
 <else>
-    <table.own.minus.readOnly.minus.externallyManagedAttributes:{ attr | <attribute_declaration(attribute=attr, C=C)>}; separator=",\n">)
+    <table.own.minus.readOnly.minus.externallyManagedAttributes:{ attr | <attribute_method_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
 <endif>
 {
     return
@@ -1340,7 +1340,7 @@ delete(table, parent, repository, C) ::= <<
  <table.primaryKey:{ attr | <attribute_javadoc(attr=attr)>}; separator="\n">
  */
 public void delete(
-    <table.primaryKey:{ attr | <attribute_declaration(attribute=attr, C=C)>}; separator=",\n">)
+    <table.primaryKey:{ attr | <attribute_method_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
 {
 <if(table.foreignKeys)>
     <table.foreignKeys:{ fk | <fk_dao_delete_call(foreignKey=fk, table=table)> };
@@ -1370,7 +1370,7 @@ delete2(table, parent, repository, C) ::= <<
  <table.primaryKey:{ attr | <attribute_javadoc(attr=attr)>}; separator="\n">
  */
 protected void deleteNoFk(
-    <table.primaryKey:{ attr | <attribute_declaration(attribute=attr, C=C)>}; separator=",\n">)
+    <table.primaryKey:{ attr | <attribute_method_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
 {
     deleteNoFk(
         <table.primaryKey:{ attr | <attr.name.uncapitalized>}; separator=",\n">,
@@ -1768,7 +1768,7 @@ fk_delete_method(foreignKey, table) ::= <<
  <foreignKey.attributes:{ attr | <attribute_javadoc(attr=attr)>}; separator="\n">
  */
 public void deleteBy<foreignKey.attributes:{attr |<attr.name.capitalized>}>(
-    <foreignKey.attributes:{ attr | <attribute_declaration(attribute=attr, C=C)>}; separator=",\n">)
+    <foreignKey.attributes:{ attr | <attribute_method_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
 {
     // TODO: not refactored yet. Removed till then.
     throw new IllegalArgumentException("Not implemented yet");
