@@ -619,8 +619,8 @@ find_by_primary_key2(table, parent, repository, C) ::= <<
 !>
 /**
 <if(table.voDecorated)
- >* Retrieves {@link <table.name.voName>Decorator} (table <table.name>) information
-<else
+ >* Retrieves {@link <table.name.voName>Decorator} (table <table.name>) information<
+else
  >* Retrieves {@link <table.name.voName>} information
 <endif>
  * filtering by its primary key.
