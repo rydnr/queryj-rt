@@ -617,7 +617,8 @@ find_by_primary_key2(table, parent, repository, C) ::= <<
  @param repository the repository.
  @param C the context.
 !>
-/**<
+/**
+<
 if(table.voDecorated)
  >* Retrieves {@link <table.name.voName>Decorator} (table <table.name>) information<
 else
