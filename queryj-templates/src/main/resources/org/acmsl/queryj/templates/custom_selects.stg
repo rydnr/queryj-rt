@@ -100,6 +100,7 @@ public <custom_select_return(cs=cs, table=table, result=cs.result, C=C)> <cs.nam
  * specific for this operation.
  * @param params the query parameters.
  * @param transactionTemplate the {@link TransactionTemplate} instance.
+ * @param daoListener the {@link DAOListener} instance.
 <if(cs.resultRef)>
  * @return the {@link <cs.resultClass>} information retrieved.
 <else>
