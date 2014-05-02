@@ -812,6 +812,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
                         if (isInDevMode(t_Group))
                         {
                             synchronized (AbstractTemplate.class)
+                            {
                             try
                             {
                                 t_Template.inspect().waitForClose();
