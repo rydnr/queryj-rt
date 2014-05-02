@@ -734,7 +734,7 @@ find_by_primary_key4(table, parent, repository, C) ::= <<
     <table.primaryKey:{ attr | <attribute_method_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">,
     <notnull(C=C)>final String query,
     <notnull(C=C)>final TransactionTemplate transactionTemplate,
-    <nullable(C=C)>final <repository.capitalized>DAOListener daoListener)
+    <nullable(C=C)>final DAOListener daoListener)
 {
     return
 <if(table.voDecorated)>
