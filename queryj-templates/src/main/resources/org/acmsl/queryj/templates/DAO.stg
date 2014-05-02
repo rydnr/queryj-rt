@@ -1292,7 +1292,7 @@ protected int update(
 <if(parent)>
     <notnull(C=C)>final <parent.name.voName>DAO parentDAO,
 <endif>
-    <notnull(C=C)>final <repository.capitalized>DAOListener daoListener)
+    <notnull(C=C)>final DAOListener daoListener)
 {
     int result = -10;
 
