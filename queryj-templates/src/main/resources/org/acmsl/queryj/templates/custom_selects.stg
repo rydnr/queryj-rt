@@ -316,7 +316,7 @@ implicit_custom_select_attribute_declaration(sql, attr) ::= <<
  @param attr the implicit property.
 !>
 <if(attr.nullable)>
-@Nullable <sql.resultClass> result = null;
+<nullable(C=C)> <sql.resultClass> result = null;
 <else>
 <attr.javaType> result = null;
 <endif>
