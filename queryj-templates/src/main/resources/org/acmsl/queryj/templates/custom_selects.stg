@@ -261,7 +261,7 @@ public <cs.resultClass> <cs.name.uncapitalized>(
 public void <cs.name.uncapitalized>(
 <endif>
 
-    <cs.parameters:{ p | <attribute_declaration(attr=p, C=C)>}; separator=",\n">)
+    <cs.parameters:{ p | <attribute_method_parameter_declaration(attr=p, C=C)>}; separator=",\n">)
   throws DataAccessException
 {
 <if(cs.resultClass)>
