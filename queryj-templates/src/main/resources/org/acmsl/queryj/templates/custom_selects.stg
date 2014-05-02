@@ -113,7 +113,7 @@ protected <custom_select_return(cs=cs, table=table, result=cs.result, C=C)> <cs.
     <notnull(C=C)>final PreparedStatementCreatorFactory preparedStatementCreatorFactory,
     <nullable(C=C)>final Object[] params,
     <notnull(C=C)>final TransactionTemplate transactionTemplate,
-    <nullable(C=C)>final DAOListener)
+    <nullable(C=C)>final DAOListener daoListener)
   throws DataAccessException
 {
     <custom_select_result_declaration(sql=cs, result=cs.result, table=table, C=C)>
