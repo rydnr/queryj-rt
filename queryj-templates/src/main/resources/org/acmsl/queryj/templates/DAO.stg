@@ -247,7 +247,7 @@ foreignkey_statementsetter_import(
   statement setter.
   @param foreignKey the foreign key.
 !>
-<!//import <basePackageName>.<fkssSubpackageName>.<foreignKey.targetVoName>By<foreignKey.sourceVoName>StatementSetter;!>
+<!//import <basePackageName>.<fkssSubpackageName>.<foreignKey.target.name.name>By<foreignKey.source.name.voName>StatementSetter;!>
 >>
 
 foreignkey_dao_import(
