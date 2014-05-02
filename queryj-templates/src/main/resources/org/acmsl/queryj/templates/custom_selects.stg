@@ -154,7 +154,7 @@ custom_select_parameter_value(p) ::= <<
 custom_update_or_insert(cs) ::= <<
 <!
  Writes the subtemplate for custom updates or inserts.
-  @param cs the custom sql.
+ @param cs the custom sql.
 !>
 <if(!cs.dynamic)>
 /**
