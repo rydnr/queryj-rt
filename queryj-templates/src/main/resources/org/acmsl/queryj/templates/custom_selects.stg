@@ -387,9 +387,11 @@ custom_select_return_decorated_explicit_single(cs, result, C) ::= <<
 >>
 
 custom_select_return_nondecorated(cs, result, C) ::= <<
-<if(cs.resultRef)>
-<custom_select_return_nondecorated_explicit(cs=cs, result=result, C=C)>
-<else><custom_select_return_nondecorated_implicit(cs=cs, result=result, C=C)><endif>
+<
+if(cs.resultRef)><
+  custom_select_return_nondecorated_explicit(cs=cs, result=result, C=C)><
+else><
+  custom_select_return_nondecorated_implicit(cs=cs, result=result, C=C)><endif>
 >>
 
 custom_select_return_nondecorated_explicit(cs, result, C) ::= <<
