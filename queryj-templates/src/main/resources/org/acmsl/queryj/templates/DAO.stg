@@ -1731,7 +1731,7 @@ fk_dao_delete_call(foreignKey, table) ::= <<
   @param foreignKey the foreign key.
 !>
 <if(foreignKey.nullable)>
-//<foreignKey.targetTableName.voName>DAO.discardRelationTo<foreignKey.sourceTableName.voName>(
+//<foreignKey.targetTableName.voName>DAO.discardRelationTo<foreignKey.source.name.voName>(
 <else>
 //<foreignKey.targetTableName.voName>DAO.deleteBy<foreignKey.source.name.voName>(
 <endif>
