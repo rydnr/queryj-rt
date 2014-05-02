@@ -558,7 +558,7 @@ constructor(table, repository, engine, C) ::= <<
  * instance.
  */
 public <engine.name><table.name.voName>DAO(
-    final DataSource dataSource, final DAOListener daoListener)
+    <notnull(C=C)>final DataSource dataSource, final DAOListener daoListener)
 {
     super(dataSource, daoListener);
 }
