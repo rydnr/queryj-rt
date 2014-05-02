@@ -1641,7 +1641,8 @@ public List\<<table.name.voName>\> findConstantsBy<attribute.name.capitalized>(<
       else><
         if(attribute.nullable)
          ><notnull(C=C)><
-        endif><endif><endif>final <attribute.primitiveType> <attribute.name.lowercased.uncapitalized>)
+        endif><
+      endif><endif>final <attribute.primitiveType> <attribute.name.lowercased.uncapitalized>)
 {
     <notnull(C=C)>final List\<<table.name.voName>\> result = new ArrayList\<<table.name.voName>\>(FIXED_CONSTANTS.size());
 
