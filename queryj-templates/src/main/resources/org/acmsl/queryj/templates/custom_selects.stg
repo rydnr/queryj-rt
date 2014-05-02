@@ -414,7 +414,7 @@ if(result.wrappingASingleProperty)><
   custom_select_return_explicit_property_single(cs=cs, result=result, C=C)><
 else><
   result.classValue><
-<endif>
+endif>
 >>
 
 custom_select_return_explicit_property_multiple(cs, result, C) ::= <<
