@@ -371,8 +371,9 @@ custom_select_return_decorated(cs, result, C) ::= <<
 >>
 
 custom_select_decorated_explicit(cs, result, C) ::= <<
-<if(cs.multiple)>
-<custom_select_return_decorated_explicit_multiple(cs=cs, result=result, C=C)>
+<
+if(cs.multiple)><
+ custom_select_return_decorated_explicit_multiple(cs=cs, result=result, C=C)>
 <else>
 <custom_select_return_decorated_explicit_single(cs=cs, result=result, C=C)>
 <endif>
