@@ -425,7 +425,8 @@ custom_select_return_explicit_property_single(select, result, C) ::= <<
 >>
 
 custom_select_return_decorated_implicit(cs, result, C) ::= <<
-<if(cs.multiple)>
+<
+if(cs.multiple)>
 <custom_select_return_decorated_implicit_multiple(cs=cs, result=result, C=C)>
 <else>
 <custom_select_return_decorated_implicit_single(cs=cs, result=result, C=C)><endif>
