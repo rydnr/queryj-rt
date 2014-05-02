@@ -405,7 +405,7 @@ custom_select_return_nondecorated_explicit_multiple(cs, result, C) ::= <<
 if(result.wrappingASingleProperty)><
   custom_select_return_property_explicit_multiple(cs=cs, result=result, C=C)><
 else
- >List\<<result.classValue>\>
+ >List\<<result.classValue>\><
 <endif>
 >>
 
