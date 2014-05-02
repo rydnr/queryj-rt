@@ -717,7 +717,7 @@ find_by_primary_key4(table, parent, repository, C) ::= <<
  * @param query the query to find by primary key.
  * @param transactionTemplate the {@link TransactionTemplate}
  * instance.
- * @param daoListener the {@link <repository.capitalized>DAOListener} instance.
+ * @param daoListener the {@link DAOListener} instance.
 <if(table.voDecorated)>
  * @return the {@link <table.name.voName>Decorator} (table <table.name>) matching given
 <else>
