@@ -589,7 +589,7 @@ find_by_primary_key(table, parent, repository, C) ::= <<
  */
 <nullable(C=C)>
 <if(table.voDecorated)
->public <table.name.voName>Decorator findByPrimaryKey(
+ >public <table.name.voName>Decorator findByPrimaryKey(
 <else>
 public <table.name.voName> findByPrimaryKey(
 <endif>
