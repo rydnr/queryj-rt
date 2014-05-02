@@ -813,15 +813,16 @@ public abstract class AbstractTemplate<C extends TemplateContext>
                         {
                             synchronized (AbstractTemplate.class)
                             {
-                            try
-                            {
-                                t_Template.inspect().waitForClose();
+                                try
+                                {
+                                    t_Template.inspect().waitForClose();
+                                }
+                                catch (InterruptedException e)
+                                {
+                                    e.printStackTrace();
+                                }
+                                throw new DevelopmentModeException(t_Group);
                             }
-                            catch (InterruptedException e)
-                            {
-                                e.printStackTrace();
-                            }
-                            throw new DevelopmentModeException(t_Group);
                         }
                     }
                     catch (@NotNull final DevelopmentModeException debugging)
