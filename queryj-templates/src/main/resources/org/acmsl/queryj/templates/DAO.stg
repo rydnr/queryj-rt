@@ -641,7 +641,7 @@ protected <table.name.voName>Decorator findByPrimaryKey(
 <else>
 protected <table.name.voName> findByPrimaryKey(
 <endif>
-    <table.primaryKey:{ attr | <attribute_declaration(attribute=attr, C=C)>}; separator=",\n">,
+    <table.primaryKey:{ attr | <attribute_method_parameter_declaration(attribute=attr, C=C)>}; separator=",\n">,
     <notnull(C=C)>final String query,
     <notnull(C=C)>final DataSource dataSource)
 {
