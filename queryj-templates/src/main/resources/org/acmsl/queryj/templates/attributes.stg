@@ -55,7 +55,9 @@ attribute_method_parameter_declaration(attribute, usePrefix, prefix, C) ::= <<
 endif>final <attribute.javaType> <
 if(usePrefix)
  ><prefix><attribute.name.capitalized><
-else><attribute.name.uncapitalized><endif>
+else
+ ><attribute.name.uncapitalized><
+endif>
 >>
 
 attribute_declaration(attribute, C) ::= <<
