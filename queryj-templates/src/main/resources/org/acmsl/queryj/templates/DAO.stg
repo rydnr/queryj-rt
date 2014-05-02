@@ -1444,7 +1444,7 @@ delete4(table, parent, repository, C) ::= <<
 <if(parent)>
  * @param parentDAO the {@link <parent.name.voName>DAO} instance.
 <endif>
- * @param daoListener the {@link <repository.capitalized>DAOListener} instance.
+ * @param daoListener the {@link DAOListener} instance.
  */
 protected void deleteNoFk(
     <table.primaryKey:{ attr | <attribute_method_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">,
@@ -1453,7 +1453,7 @@ protected void deleteNoFk(
 <if(parent)>
     <notnull(C=C)>final <parent.name.voName>DAO parentDAO,
 <endif>
-    <nullable(C=C)>final <repository.capitalized>DAOListener daoListener)
+    <nullable(C=C)>final DAOListener daoListener)
 {
     transactionTemplate.execute(
         new UpdateTransactionCallback(
@@ -1490,7 +1490,7 @@ public static class <table.name.voName>PkResultSetExtractor
     */
     public <table.name.voName>PkResultSetExtractor(
         <notnull(C=C)>final String sql,
-        <notnull(C=C)>final <repository.capitalized>DAOListener daoListener)
+        <notnull(C=C)>final DAOListener daoListener)
     {
         super(sql, daoListener);
     }
@@ -1499,8 +1499,8 @@ public static class <table.name.voName>PkResultSetExtractor
      * Extracts \<i><table.name.voName>\</i> information from given result set.
      * @param resultSet the result set.
      * @param sql the original SQL.
-     * @param daoListener the {@link <repository.capitalized>DAOListener} instance.
-     * @return the {@link <table.name.voName>} or \<code>null\<code>
+     * @param daoListener the {@link DAOListener} instance.
+     * @return the {@link <table.name.voName>} or {@code null}
      * if the operation returned no data.
      * custom exception.
      */
