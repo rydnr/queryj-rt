@@ -589,8 +589,8 @@ find_by_primary_key(table, parent, repository, C) ::= <<
  */
 <nullable(C=C)>
 <if(table.voDecorated)
- >public <table.name.voName>Decorator findByPrimaryKey(
-<else>
+ >public <table.name.voName>Decorator findByPrimaryKey(<
+else>
 public <table.name.voName> findByPrimaryKey(
 <endif>
     <table.primaryKey:{ attr | <attribute_method_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
