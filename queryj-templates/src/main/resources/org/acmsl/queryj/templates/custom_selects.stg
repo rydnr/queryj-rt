@@ -432,7 +432,7 @@ custom_select_return_decorated_implicit(cs, result, C) ::= <<
 >>
 
 custom_select_return_decorated_implicit_multiple(cs, result, C) ::= <<
-List\<<cs.dao.voName>Decorator\>
+List\<<cs.dao.voName>Decorator>
 >>
 
 custom_select_return_decorated_implicit_single(cs, result, C) ::= <<
