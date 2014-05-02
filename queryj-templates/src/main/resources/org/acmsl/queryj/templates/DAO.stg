@@ -1630,7 +1630,6 @@ find_constant_methods(attribute, table, C) ::= <<
  * Loads \<i><table.name>\</i> information from the pre-existing constants,
  * filtering by \<i><attribute.name>\</i>.
  <attribute_javadoc(attr=attribute)>
- * to filter.
  * @return the {@link <table.name.voName>} instance.
  */
 <notnull(C=C)>
