@@ -1482,7 +1482,7 @@ extractors(table, parent, repository, C) ::= <<
  <class_common_javadoc(template="org/acmsl/queryj/dao/DAO.stg", C=C)>
  */
 public static class <table.name.voName>PkResultSetExtractor
-    extends  <repository.capitalized>ResultSetExtractor
+    extends V24ResultSetExtractor\<<
 {
     /**
     * Constructs a new {@link <table.name.voName>PkResultSetExtractor}.
