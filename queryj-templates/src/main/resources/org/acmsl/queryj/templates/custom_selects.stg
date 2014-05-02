@@ -394,11 +394,11 @@ custom_select_return_nondecorated(cs, result, C) ::= <<
 
 custom_select_return_nondecorated_explicit(cs, result, C) ::= <<
 <
-if(cs.multiple)>
-<custom_select_return_nondecorated_explicit_multiple(cs=cs, result=result, C=C)>
-<else>
-<custom_select_return_nondecorated_explicit_single(cs=cs, result=result, C=C)>
-<endif>
+if(cs.multiple)><
+  custom_select_return_nondecorated_explicit_multiple(cs=cs, result=result, C=C)><
+else><
+  custom_select_return_nondecorated_explicit_single(cs=cs, result=result, C=C)><
+endif>
 >>
 
 custom_select_return_nondecorated_explicit_multiple(cs, result, C) ::= <<
