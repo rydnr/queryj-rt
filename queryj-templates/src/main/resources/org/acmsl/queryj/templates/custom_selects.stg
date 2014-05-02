@@ -441,7 +441,8 @@ custom_select_return_decorated_implicit_single(cs, result, C) ::= <<
 
 custom_select_return_nondecorated_implicit(cs, result, C) ::= <<
 <
-if(cs.multiple)><custom_select_return_nondecorated_implicit_multiple(cs=cs, result=result, C=C)><else><custom_select_return_nondecorated_implicit_single(cs=cs, result=result, C=C)><endif>
+if(cs.multiple)><
+  custom_select_return_nondecorated_implicit_multiple(cs=cs, result=result, C=C)><else><custom_select_return_nondecorated_implicit_single(cs=cs, result=result, C=C)><endif>
 >>
 
 custom_select_return_nondecorated_implicit_multiple(cs, result, C) ::= <<
