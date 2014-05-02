@@ -48,9 +48,9 @@ attribute_method_parameter_declaration(attribute, usePrefix, prefix, C) ::= <<
   if(attribute.nullable)
    ><nullable(C=C)><
   else><
-      if(attribute.nullable)
-       ><notnull(C=C)><
-      endif><
+    if(attribute.nullable)
+     ><notnull(C=C)><
+    endif><
     endif><
   endif>final <attribute.javaType> <if(usePrefix)><prefix><attribute.name.capitalized><else><attribute.name.uncapitalized><endif>
 >>
