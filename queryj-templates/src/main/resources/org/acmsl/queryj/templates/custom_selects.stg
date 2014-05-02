@@ -99,7 +99,7 @@ public <custom_select_return(cs=cs, table=table, result=cs.result, C=C)> <cs.nam
  * {@link PreparedStatementCreatorFactory} instance
  * specific for this operation.
  * @param params the query parameters.
- * @param transactionTemplate the {@link TransactionTemplate instance.
+ * @param transactionTemplate the {@link TransactionTemplate} instance.
 <if(cs.resultRef)>
  * @return the {@link <cs.resultClass>} information retrieved.
 <else>
