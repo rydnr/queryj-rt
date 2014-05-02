@@ -282,7 +282,7 @@ public void <cs.name.uncapitalized>(
             getDataSource(), <cs.normalized.uppercased>_SQL);
 
 <if(cs.resultClass)>
-    @Nullable final List\<<cs.resultClass>\> t_lResult = (List\<<cs.resultClass>\>) t_Query.execute();
+    <nullable(C=C)>final List\<<cs.resultClass>\> t_lResult = (List\<<cs.resultClass>\>) t_Query.execute();
 
     if  (   (t_lResult != null)
          && (t_lResult.size() > 0))
