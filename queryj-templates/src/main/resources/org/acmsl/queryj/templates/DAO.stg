@@ -1490,8 +1490,7 @@ public static class <table.name.voName>PkResultSetExtractor
     * @param daoListener the dao listener.
     */
     public <table.name.voName>PkResultSetExtractor(
-        <notnull(C=C)>final String sql,
-        <notnull(C=C)>final DAOListener daoListener)
+        <notnull(C=C)>final String sql, <notnull(C=C)>final DAOListener daoListener)
     {
         super(sql, daoListener);
     }
