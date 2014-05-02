@@ -592,7 +592,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
             + ", \"name\": \"" + m__Name + '"'
             + ", \"comment\": \"" + m__Comment + '"'
             + ", \"parentTable\": " + m__ParentTable
-            + ", \"primaryKey\": " + ToStringUtils.getInstance().toJson(m__lPrimaryKey)
+//            + ", \"primaryKey\": " + ToStringUtils.getInstance().toJson(m__lPrimaryKey)
             + ", \"attributes\": " + ToStringUtils.getInstance().toJson(m__lAttributes)
             + ", \"foreignKeys\": " + ToStringUtils.getInstance().toJson(m__lForeignKeys)
             + ", \"static\": " + m__Static
