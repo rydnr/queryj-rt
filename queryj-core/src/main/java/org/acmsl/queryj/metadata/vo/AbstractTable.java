@@ -379,6 +379,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
     /**
      * {@inheritDoc}
      */
+    @Override
     @NotNull
     public List<ForeignKey<V>> getForeignKeys()
     {
