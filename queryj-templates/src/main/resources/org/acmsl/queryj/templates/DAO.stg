@@ -1064,7 +1064,7 @@ protected <table.name.voName> create(
 <if(parent)>
     <notnull(C=C)>final <parent.name.voName>DAO <parent.name.lowercased>DAO,
 <endif>
-    <notnull(C=C)>final <repository.capitalized>DAOListener daoListener)
+    <notnull(C=C)>final DAOListener daoListener)
 {
 <if(table.voDecorated)>
     <notnull(C=C)>final <table.name.voName>Decorator result;
