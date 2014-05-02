@@ -413,7 +413,7 @@ custom_select_return_nondecorated_explicit_single(cs, result, C) ::= <<
 if(result.wrappingASingleProperty)><
   custom_select_return_explicit_property_single(cs=cs, result=result, C=C)><
 else><
-  result.classValue>
+  result.classValue><
 <endif>
 >>
 
