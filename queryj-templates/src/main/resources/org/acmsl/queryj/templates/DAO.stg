@@ -553,11 +553,11 @@ constructor(table, repository, engine, C) ::= <<
  * Builds a {@link <engine.name><table.name.voName>DAO} instance
  * with given data source.
  * @param dataSource the required {@link javax.sql.DataSource data source}.
- * @param daoListener the {@link <repository.capitalized>DAOListener}
+ * @param daoListener the {@link DAOListener}
  * instance.
  */
 public <engine.name><table.name.voName>DAO(
-    final DataSource dataSource, final <repository.capitalized>DAOListener daoListener)
+    final DataSource dataSource, final DAOListener daoListener)
 {
     super(dataSource, daoListener);
 }
