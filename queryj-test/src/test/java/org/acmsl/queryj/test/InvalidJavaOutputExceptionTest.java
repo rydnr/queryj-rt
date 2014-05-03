@@ -70,10 +70,10 @@ public class InvalidJavaOutputExceptionTest
     {
         @NotNull final InvalidJavaOutputException instance =
             new InvalidJavaOutputException(
-                new File(),
+                new File("test"),
                 -1,
                 -1,
-                "msg",
+                "msg");
 
             );
 
