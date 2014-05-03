@@ -60,7 +60,7 @@ public class InvalidJavaOutputException
 {
     /**
      * Creates a new exception.
-     * @param file the output file.
+     * @param file the Java source file.
      * @param
      */
     public InvalidJavaOutputException(
