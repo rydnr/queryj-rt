@@ -39,6 +39,10 @@ package org.acmsl.queryj.test;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.api.exceptions.QueryJNonCheckedException;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
