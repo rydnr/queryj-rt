@@ -38,7 +38,6 @@ package org.acmsl.queryj.test;
 /*
  * Importing JetBrains annotations.
  */
-import org.acmsl.queryj.templates.packaging.exceptions.MissingOutputDirForTestsException;
 import org.antlr.v4.runtime.RecognitionException;
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
