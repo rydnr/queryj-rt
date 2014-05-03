@@ -81,7 +81,7 @@ Feature: <table.name> code compiles
 <if(table.staticContent)>
     And the following contents:
       |    table     |         row          |
-      <table.staticContent:{ r | | <table.name> | <r.attributes:{ a | <if(a.primitive)><a.value><else>"<a.value>"<endif>}; separator=",">}; separator="\n">
+      <table.staticContent:{ r | | <table.name> | <r.attributes:{ a | <if(a.primitive)><a.value><else>"<a.value>"<endif>}; separator=",">}; separator="\n"> |
 <endif>
 <endif>
 
