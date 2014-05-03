@@ -50,6 +50,8 @@ import org.checkthread.annotations.ThreadSafe;
  */
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 /**
  * Tests for {@link TemplatePackagingNonCheckedException}.
@@ -57,9 +59,10 @@ import org.junit.Test;
  * @since 3.0
  * Created: 2014/03/30 20:01
  */
-@ThreadSafe
+@RunWith(JUnit4.class)
 public class TemplatePackagingNonCheckedExceptionTest
 {
+
     @Test
     public void customizes_the_bundle()
     {
