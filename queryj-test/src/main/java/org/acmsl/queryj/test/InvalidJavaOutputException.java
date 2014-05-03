@@ -62,6 +62,7 @@ public class InvalidJavaOutputException
      */
     public InvalidJavaOutputException(
         @NotNull final File file,
-        @NotNull final int line,
+        final int line,
+        final int column,
         )
 }
