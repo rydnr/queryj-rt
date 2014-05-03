@@ -98,7 +98,8 @@ attribute(attr, table) ::= <<
 <!
  Writes the row describing an attribute.
 !>
-| <table.name> | <attr.name> | <attr.type> | true | <attr.nullable> | <attr.readOnly> | <attr.sequence> | <attr.keyword> | <attr.boolean> | <attr.length> | <attr.precision> |>>
+| <table.name> | <attr.name> | <attr.type> | true | <attr.nullable> | <attr.readOnly> | <attr.sequence> | <attr.keyword> | <attr.boolean> | <attr.length> | <attr.precision> |
+>>
 
 query(select) ::= <<
 <!
