@@ -770,7 +770,7 @@ public abstract class AbstractTemplatesTest<G, F>
         @NotNull final JavaLexer t_Lexer =
             new JavaLexer(new ANTLRFileStream(javaFile.getAbsolutePath()));
 
-        @NotNull final ANTLRErrorListener errorListener = new PropagatingErrorListener(javaFile)
+        @NotNull final ANTLRErrorListener errorListener = new PropagatingErrorListener(javaFile);
         t_Lexer.addErrorListener();
 
         @NotNull final CommonTokenStream t_Tokens = new CommonTokenStream(t_Lexer);
