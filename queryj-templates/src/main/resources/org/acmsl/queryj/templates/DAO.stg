@@ -296,7 +296,7 @@ classImpl(foreign_keys, table, parent, repository, engine, C) ::= <<
  */
 <class_annotations(C=C)>
 public <if(table.dynamicQueries)>abstract <endif>class <engine.name><table.name.voName>DAO
-  extends     <repository.capitalized>JdbcTemplate
+  extends     V24JdbcTemplate
   implements  <table.name.voName>DAO
 <!//              <repository.capitalized>TableRepository!>
 {
