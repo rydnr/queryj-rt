@@ -70,7 +70,8 @@ public class InvalidJavaOutputExceptionTest
         @NotNull final
         @NotNull final InvalidJavaOutputException instance =
             new InvalidJavaOutputException(
-                new File()
+                new File(),
+
             );
 
         for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
