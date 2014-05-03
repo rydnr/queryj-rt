@@ -16,4 +16,4 @@ filename  builder : <tableName.singular.camelCase>.feature;
 // The package.
 package: <packageName>;
 
-disabled;
+disabled;vi
