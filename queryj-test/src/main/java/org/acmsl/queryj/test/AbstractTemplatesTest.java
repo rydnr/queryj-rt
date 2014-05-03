@@ -791,7 +791,7 @@ public abstract class AbstractTemplatesTest<G, F>
 
                 if (error == null)
                 {
-                    exception = new InvalidTemplateException(javaFile, line, charPositionInLine, msg);
+                    exception = new InvalidJavaOutputException(javaFile, line, charPositionInLine, msg);
                 }
 
             }
