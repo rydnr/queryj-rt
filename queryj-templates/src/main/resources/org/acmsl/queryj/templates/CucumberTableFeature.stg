@@ -99,7 +99,7 @@ query_parameters(select) ::= <<
  Writes the rows describing all parameter for given query.
  @param select the select.
  !>
-<select.parameters:{ p | <p.id> | <s.id> | <p.index> | <p.type> | <p.name> | <p.validationValue> |}; separator="\n">}; separator="\n">
+<select.parameters:{ p | <query_parameter(}; separator="\n">
 >>
 
 query_parameter(parameter, select) ::= <<
