@@ -778,7 +778,8 @@ public abstract class AbstractTemplatesTest<G, F>
 
         result = new JavaParser(t_Tokens);
 
-        result.addErrorListener();
+        result.addErrorListener(errorListener);
+
         return result;
     }
 
