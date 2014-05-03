@@ -87,7 +87,7 @@ Feature: <table.name> code compiles
 
     When I generate with per-table \<template> for <engine.name>
 
-    Then the generated \<output> file compiles successfully
+    Then the generated per-table \<output> file compiles successfully
 
     Examples:
       | template | output |
