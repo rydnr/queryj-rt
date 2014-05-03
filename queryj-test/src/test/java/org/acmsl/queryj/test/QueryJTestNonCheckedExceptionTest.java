@@ -67,7 +67,7 @@ public class QueryJTestNonCheckedExceptionTest
         @NotNull final QueryJTestNonCheckedException instance =
             new QueryJTestNonCheckedException("bla") {};
 
-        Assert.assertEquals("template-packaging-exceptions", instance.retrieveExceptionsBundleName());
+        Assert.assertEquals("test-exceptions", instance.retrieveExceptionsBundleName());
     }
 
     /**
