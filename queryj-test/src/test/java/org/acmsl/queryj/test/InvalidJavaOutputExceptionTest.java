@@ -73,6 +73,7 @@ public class InvalidJavaOutputExceptionTest
                 new File(),
                 -1,
                 -1,
+                "msg",
 
             );
 
