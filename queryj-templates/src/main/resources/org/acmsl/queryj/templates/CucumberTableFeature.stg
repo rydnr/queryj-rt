@@ -110,3 +110,5 @@ query_parameter(parameter, select) ::= <<
  !>
 | <parameter.id> | <select.id> | <parameter.index> | <parameter.type> | <parameter.name> | <parameter.validationValue> |
 >>
+
+static_row(
