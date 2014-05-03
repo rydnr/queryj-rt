@@ -64,7 +64,6 @@ public class InvalidJavaOutputException
      * @param line the line number.
      * @param column the column.
      * @param msg the error message.
-     * @param exception the {@link RecognitionException exception}.
      */
     public InvalidJavaOutputException(
         @NotNull final File file,
