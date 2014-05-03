@@ -76,7 +76,7 @@ public class QueryJTestNonCheckedExceptionTest
     @Test
     public void customizes_the_system_property()
     {
-        @NotNull final TemplatePackagingNonCheckedException instance =
+        @NotNull final QueryJTestNonCheckedException instance =
             new TemplatePackagingNonCheckedException("bla") {};
 
         Assert.assertEquals(
