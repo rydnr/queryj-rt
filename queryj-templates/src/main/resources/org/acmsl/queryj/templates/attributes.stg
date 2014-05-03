@@ -171,7 +171,7 @@ protected final <attribute.javaType> immutableGet<attribute.name.capitalized>()
  * @return such information.
  */<
 if(override)>@Override<endif><
-<if(attribute.allowsNull)>
+if(attribute.allowsNull)>
 <if(!attribute.primitive)><nullable(C=C)><endif>
 public <attribute.objectType> get<attribute.name.capitalized>()
 <else>
