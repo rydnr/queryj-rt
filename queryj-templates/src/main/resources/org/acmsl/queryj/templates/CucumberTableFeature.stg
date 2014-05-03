@@ -116,4 +116,5 @@ static_row(row, table) ::= <<
  Writes the row declaring static data.
  @param row the row.
  @param table the table.
+ !>
 >>
