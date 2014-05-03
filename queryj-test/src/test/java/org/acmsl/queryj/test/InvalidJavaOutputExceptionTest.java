@@ -36,7 +36,7 @@
 package org.acmsl.queryj.test;
 
 /*
- * Importing JetBrains annotations.
+ * Importing ANTLR 4 classes.
  */
 import org.antlr.v4.runtime.RecognitionException;
 
