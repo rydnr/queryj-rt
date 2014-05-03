@@ -70,10 +70,9 @@ public class InvalidJavaOutputException
         @NotNull final File file,
         final int line,
         final int column,
-        @NotNull final String msg,
-        @NotNull final RecognitionException exception)
+        @NotNull final String msg)
     {
-        super("invalid.java.output", new Object[] { file.getAbsolutePath(), line, column, msg, exception });
+        super("invalid.java.output", new Object[] { file.getAbsolutePath(), line, column, msg });
     }
 
     /**
