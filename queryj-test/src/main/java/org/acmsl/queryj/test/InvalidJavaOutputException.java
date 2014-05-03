@@ -38,6 +38,7 @@ package org.acmsl.queryj.test;
 /*
  * Importing JetBrains annotations.
  */
+import org.antlr.v4.runtime.RecognitionException;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -65,5 +66,5 @@ public class InvalidJavaOutputException
         final int line,
         final int column,
         @NotNull final String msg,
-        @NotNull final )
+        @NotNull final RecognitionException)
 }
