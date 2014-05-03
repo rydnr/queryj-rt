@@ -145,7 +145,7 @@ protected void set<attribute.name.capitalized>(<if(attribute.nullable)><notnull(
 }
 >>
 
-attribute_getter(attribute, C, override) ::= <<
+attribute_getter(attribute, C, override=false) ::= <<
 <!
  Writes the getter for given attribute.
  @param attribute the attribute.
