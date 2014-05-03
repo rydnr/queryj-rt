@@ -64,7 +64,7 @@ Feature: <table.name> code compiles
 <if(table.foreignKeys)>
     And the following foreign keys:
     | source table | source columns | target table | allows null |
-    <table.foreignKeys:{ fk | <foreign_key(fk=fk)> }; separator="\n">
+    <table.foreignKeys:{ fk | <foreign_key(fk=fk)>}; separator="\n">
 <endif>
 
 <if(table.customSelects)>
