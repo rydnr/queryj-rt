@@ -782,7 +782,7 @@ public abstract class AbstractTemplatesTest<G, F>
                 @org.antlr.v4.runtime.misc.NotNull final Recognizer<?, ?> recognizer,
                 @org.antlr.v4.runtime.misc.Nullable final Object offendingSymbol,
                 final int line,
-                final int i2,
+                final int charPositionInLine,
                 @org.antlr.v4.runtime.misc.NotNull final String s,
                 @org.antlr.v4.runtime.misc.Nullable final RecognitionException e)
             {
