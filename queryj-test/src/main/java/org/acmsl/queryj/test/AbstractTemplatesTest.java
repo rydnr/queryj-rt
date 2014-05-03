@@ -784,7 +784,7 @@ public abstract class AbstractTemplatesTest<G, F>
                 final int line,
                 final int charPositionInLine,
                 @org.antlr.v4.runtime.misc.NotNull final String msg,
-                @org.antlr.v4.runtime.misc.Nullable final RecognitionException e)
+                @org.antlr.v4.runtime.misc.Nullable final RecognitionException error)
             {
                 //To change body of implemented methods use File | Settings | File Templates.
             }
