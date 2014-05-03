@@ -38,12 +38,15 @@ package org.acmsl.queryj.test;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.templates.packaging.exceptions.TemplatePackagingNonCheckedException;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Assert;
+import org.junit.Test;
 
 /**
  *
@@ -54,4 +57,30 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public class QueryJTestNonCheckedExceptionTest
 {
+    /**
+     * Checks the bundle name is customized.
+     */
+    @Test
+    public void customizes_the_bundle()
+    {
+        @NotNull final TemplatePackagingNonCheckedException instance =
+            new TemplatePackagingNonCheckedException("bla") {};
+
+        Assert.assertEquals("template-packaging-exceptions", instance.retrieveExceptionsBundleName());
+    }
+
+    /**
+     * Checks the system property is customized.
+     */
+    @Test
+    public void customizes_the_system_property()
+    {
+        @NotNull final TemplatePackagingNonCheckedException instance =
+            new TemplatePackagingNonCheckedException("bla") {};
+
+        Assert.assertEquals(
+            "org.acmsl.queryj.templates.packaging.exceptions",
+            instance.retrieveExceptionsBundleProperty());
+    }
+
 }
