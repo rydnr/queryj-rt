@@ -93,7 +93,8 @@ public class InvalidJavaOutputExceptionTest
                 new File("test"),
                 -1,
                 -1,
-                "msg");
+                "msg",
+                );
 
         for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
         {
