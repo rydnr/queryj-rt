@@ -780,12 +780,6 @@ public abstract class AbstractTemplatesTest<G, F>
         {
             /**
              * {@inheritDoc}
-             * @param recognizer
-             * @param offendingSymbol
-             * @param line
-             * @param charPositionInLine
-             * @param msg
-             * @param error
              */
             @Override
             public void syntaxError(
