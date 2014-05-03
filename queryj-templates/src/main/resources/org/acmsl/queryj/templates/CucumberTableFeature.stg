@@ -102,7 +102,11 @@ attribute(attr, table) ::= <<
 >>
 
 fk(fk, table) ::= <<
-| <fk.source.name> | <fk.attributes:{ attr | <attr.name>}; separator=","> | <fk.targetTableName> | <fk.nullable> |>>
+<!
+ Writes a row defining a foreign key.
+ !>
+| <fk.source.name> | <fk.attributes:{ attr | <attr.name>}; separator=","> | <fk.targetTableName> | <fk.nullable> |
+>>
 
 query(select) ::= <<
 <!
