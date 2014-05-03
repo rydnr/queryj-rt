@@ -89,7 +89,7 @@ public class InvalidJavaOutputExceptionTest
     @Test
     public void error_message_is_defined_in_Spanish_and_English()
     {
-        @NotNull final RecognitionException
+        @NotNull final RecognitionException exception = new RecognitionException()
         @NotNull final InvalidJavaOutputException instance =
             new InvalidJavaOutputException(
                 new File("test"),
