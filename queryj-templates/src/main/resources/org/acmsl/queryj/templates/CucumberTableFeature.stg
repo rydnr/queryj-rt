@@ -74,7 +74,7 @@ Feature: <table.name> code compiles
 
     And the following query parameters:
       |            id            |     sql       | index |  type  |     name    | validation-value |
-      <table.customSelects:{ s |<query_parameters(}; separator="\n">
+      <table.customSelects:{ s |<query_parameters(select=s)>}; separator="\n">
 <endif>
 
 <if(table.static)>
