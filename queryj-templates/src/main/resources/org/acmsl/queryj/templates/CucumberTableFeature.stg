@@ -117,5 +117,5 @@ static_row(row, table) ::= <<
  @param row the row.
  @param table the table.
  !>
-| <table.name> | <row.attributes:{ a | <if(a.primitive)><a.value><else>"<a.value>"<endif>}; separator=",">
+| <table.name> | <row.attributes:{ a | <if(a.primitive)><a.value><else>"<a.value>"<endif>}; separator=","> |
 >>
