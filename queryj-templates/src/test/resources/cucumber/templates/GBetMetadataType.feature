@@ -13,7 +13,7 @@ Feature: G_BET_METADATA_TYPES code compiles
 
     And the following contents:
       |    table     |         row          |
-      | G_BET_METADATA_TYPES | 1,"number_of_bets"
+      | G_BET_METADATA_TYPES | 1,"number_of_bets"  |
 
     When I generate with per-table <template> for Oracle
 
