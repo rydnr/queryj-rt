@@ -90,6 +90,6 @@ public class InvalidJavaOutputException
         @NotNull final String msg,
         @NotNull final RecognitionException exception)
     {
-        super("invalid.java.output", new Object[] { file.getAbsolutePath(), line, column, msg, exception });
+        super("error.java.output", new Object[] { file.getAbsolutePath(), line, column, msg, exception });
     }
 }
