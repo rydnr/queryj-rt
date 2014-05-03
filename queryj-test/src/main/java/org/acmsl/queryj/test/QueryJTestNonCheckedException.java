@@ -107,6 +107,6 @@ public class QueryJTestNonCheckedException
     @Override
     protected String retrieveExceptionsBundleProperty()
     {
-        return "org.acmsl.queryj.templates.packaging.exceptions";
+        return "org.acmsl.queryj.test.exceptions";
     }
 }
