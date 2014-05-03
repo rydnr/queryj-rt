@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Base class for QueryJ Test's non-checked exceptions.
  *
  * Date: 2014/05/03
  * Time: 07:29
