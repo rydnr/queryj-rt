@@ -94,7 +94,7 @@ Feature: <table.name> code compiles
       | DAO | <engine.name.capitalized><table.name.singular.camelCase>DAO.java |
 >>
 
-query_parameters(cs) ::= <<
+query_parameter(parameter) ::= <<
 <!
  Writes a row describing a query parameter.
  !>
