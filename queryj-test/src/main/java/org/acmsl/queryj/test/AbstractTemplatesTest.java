@@ -73,6 +73,7 @@ import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.xml.SqlXmlParserImpl;
+import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.metadata.ColumnDAO;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
