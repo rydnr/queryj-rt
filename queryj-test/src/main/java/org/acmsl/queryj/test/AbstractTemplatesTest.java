@@ -778,33 +778,34 @@ public abstract class AbstractTemplatesTest<G, F>
 
         t_Lexer.addErrorListener(
             new BaseErrorListener()
-        {
-            /**
-             * {@inheritDoc}
-             */
-            @Override
-            public void syntaxError(
-                @org.antlr.v4.runtime.misc.NotNull final Recognizer<?, ?> recognizer,
-                @org.antlr.v4.runtime.misc.Nullable final Object offendingSymbol,
-                final int line,
-                final int charPositionInLine,
-                @org.antlr.v4.runtime.misc.NotNull final String msg,
-                @org.antlr.v4.runtime.misc.Nullable final RecognitionException error)
             {
-                @NotNull final InvalidJavaOutputException exception;
-
-                if (error == null)
+                /**
+                 * {@inheritDoc}
+                 */
+                @Override
+                public void syntaxError(
+                    @org.antlr.v4.runtime.misc.NotNull final Recognizer<?, ?> recognizer,
+                    @org.antlr.v4.runtime.misc.Nullable final Object offendingSymbol,
+                    final int line,
+                    final int charPositionInLine,
+                    @org.antlr.v4.runtime.misc.NotNull final String msg,
+                    @org.antlr.v4.runtime.misc.Nullable final RecognitionException error)
                 {
-                    exception = new InvalidJavaOutputException(javaFile, line, charPositionInLine, msg);
-                }
-                else
-                {
-                    exception = new InvalidJavaOutputException(javaFile, line, charPositionInLine, msg, error);
-                }
+                    @NotNull final InvalidJavaOutputException exception;
 
-                throw exception;
-            }
-        });
+                    if (error == null)
+                    {
+                        exception = new InvalidJavaOutputException(javaFile, line, charPositionInLine, msg);
+                    }
+                    else
+                    {
+                        exception = new InvalidJavaOutputException(javaFile, line, charPositionInLine, msg, error);
+                    }
+
+                    throw exception;
+                }
+            });
+
         @NotNull final CommonTokenStream t_Tokens = new CommonTokenStream(t_Lexer);
 
         result = new JavaParser(t_Tokens);
