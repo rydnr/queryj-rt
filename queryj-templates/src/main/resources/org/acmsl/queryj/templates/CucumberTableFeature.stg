@@ -95,6 +95,11 @@ Feature: <table.name> code compiles
 >>
 
 query_parameters(select) ::= <<
+<!
+ Writes a row describing a query parameter.
+ @param parameter the query parameter.
+ @param select the select.
+ !>
 >>
 
 query_parameter(parameter, select) ::= <<
