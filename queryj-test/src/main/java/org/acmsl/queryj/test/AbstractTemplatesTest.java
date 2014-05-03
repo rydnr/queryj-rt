@@ -57,6 +57,7 @@ import org.acmsl.queryj.test.antlr4.JavaLexer;
 import org.acmsl.queryj.test.antlr4.JavaPackageVisitor;
 import org.acmsl.queryj.test.antlr4.JavaParser;
 import org.acmsl.queryj.test.antlr4.JavaRootClassNameVisitor;
+import org.acmsl.queryj.test.antlr4.PropagatingErrorListener;
 import org.acmsl.queryj.test.sql.CucumberSqlDAO;
 import org.acmsl.queryj.test.sql.CucumberSqlParameterDAO;
 import org.acmsl.queryj.test.sql.CucumberSqlPropertyDAO;
@@ -776,7 +777,7 @@ public abstract class AbstractTemplatesTest<G, F>
         @NotNull final JavaLexer t_Lexer =
             new JavaLexer(new ANTLRFileStream(javaFile.getAbsolutePath()));
 
-        t_Lexer.addErrorListener(
+        t_Lexer.addErrorListener(new PropagatingErrorListener(javaFile));
             new BaseErrorListener()
             {
                 /**
