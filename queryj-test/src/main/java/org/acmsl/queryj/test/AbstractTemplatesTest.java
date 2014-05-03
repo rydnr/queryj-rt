@@ -795,7 +795,7 @@ public abstract class AbstractTemplatesTest<G, F>
                 }
                 else
                 {
-                    exception = new InvalidJavaOutputException(javaFile, line, charPositionInLine, msg);
+                    exception = new InvalidJavaOutputException(javaFile, line, charPositionInLine, msg, error);
                 }
             }
         });
