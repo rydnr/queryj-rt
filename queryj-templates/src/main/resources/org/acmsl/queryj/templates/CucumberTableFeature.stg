@@ -98,5 +98,5 @@ query_parameter(parameter) ::= <<
 <!
  Writes a row describing a query parameter.
  !>
-| <p.id> | <s.id> | <p.index> | <p.type> | <p.name> | <p.validationValue> |
+| <parameter.id> | <s.id> | <p.index> | <p.type> | <p.name> | <p.validationValue> |
 >>
