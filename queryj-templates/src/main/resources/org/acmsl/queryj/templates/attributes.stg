@@ -176,7 +176,7 @@ if(override)>
 if(attribute.allowsNull)><
   if(!attribute.primitive)>
 <   nullable(C=C)><
-< endif>
+endif>
 public <attribute.objectType> get<attribute.name.capitalized>()
 <else>
 <if(!attribute.primitive)><notnull(C=C)><endif>
