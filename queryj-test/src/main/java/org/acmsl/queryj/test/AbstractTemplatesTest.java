@@ -778,6 +778,15 @@ public abstract class AbstractTemplatesTest<G, F>
 
         t_Lexer.addErrorListener(new BaseErrorListener()
         {
+            /**
+             * {@inheritDoc}
+             * @param recognizer
+             * @param offendingSymbol
+             * @param line
+             * @param charPositionInLine
+             * @param msg
+             * @param error
+             */
             @Override
             public void syntaxError(
                 @org.antlr.v4.runtime.misc.NotNull final Recognizer<?, ?> recognizer,
