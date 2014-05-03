@@ -58,7 +58,7 @@ Feature: <table.name> code compiles
 
     And the following columns:
     |     table    |         column        | type      | pk    | allows null | readonly |   sequence    | keyword | boolean | length | precision |
-    <table.primaryKey:{ attr | | <table.name> | <attr.name> | <attr.type> | true | <attr.nullable> | <attr.readOnly> | <attr.sequence> | <attr.keyword> | <attr.boolean> | <attr.length> | <attr.precision> |}; separator="\n">
+    <table.primaryKey:{ attr | }; separator="\n">
     <table.own.minus.primaryKey:{ attr | | <table.name> | <attr.name> | <attr.type> | false | <attr.nullable> | <attr.readOnly> | <attr.sequence> | <attr.keyword> | <attr.boolean> | <attr.length> | <attr.precision> |}; separator="\n">
 
 <if(table.foreignKeys)>
