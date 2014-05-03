@@ -77,7 +77,7 @@ public class QueryJTestNonCheckedExceptionTest
     public void customizes_the_system_property()
     {
         @NotNull final QueryJTestNonCheckedException instance =
-            new TemplatePackagingNonCheckedException("bla") {};
+            new QueryJTestNonCheckedException("bla") {};
 
         Assert.assertEquals(
             "org.acmsl.queryj.templates.packaging.exceptions",
