@@ -75,7 +75,7 @@ public class TemplatePackagingNonCheckedExceptionTest
     }
 
     /**
-     * Checks the bundle name is customized.
+     * Checks the system property is customized.
      */
     @Test
     public void customizes_the_system_property()
