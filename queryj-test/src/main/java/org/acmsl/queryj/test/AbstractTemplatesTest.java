@@ -95,10 +95,15 @@ import org.acmsl.commons.utils.io.FileUtils;
 /*
  * Importing ANTLR classes.
  */
+import org.antlr.v4.runtime.ANTLRErrorListener;
 import org.antlr.v4.runtime.ANTLRFileStream;
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
+import org.antlr.v4.runtime.Parser;
 import org.antlr.v4.runtime.RecognitionException;
+import org.antlr.v4.runtime.Recognizer;
+import org.antlr.v4.runtime.atn.ATNConfigSet;
+import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.tree.ParseTree;
 
 /*
@@ -131,6 +136,7 @@ import java.sql.DatabaseMetaData;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.BitSet;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -768,7 +774,35 @@ public abstract class AbstractTemplatesTest<G, F>
         @NotNull final JavaLexer t_Lexer =
             new JavaLexer(new ANTLRFileStream(javaFile.getAbsolutePath()));
 
-        t_Lexer.addErrorListener(new );
+        t_Lexer.addErrorListener(new ANTLRErrorListener()
+        {
+            @Override
+            public void syntaxError(@org.antlr.v4.runtime.misc.NotNull final Recognizer<?, ?> recognizer, @org.antlr.v4.runtime.misc.Nullable final Object o, final int i, final int i2, @org.antlr.v4.runtime.misc.NotNull final String s, @org.antlr.v4.runtime.misc.Nullable final RecognitionException e)
+            {
+                //To change body of implemented methods use File | Settings | File Templates.
+            }
+
+            @Override
+            public void reportAmbiguity(@org.antlr.v4.runtime.misc.NotNull final Parser parser, @org.antlr.v4.runtime
+                            .misc.NotNull final DFA dfa, final int i, final int i2, final boolean b, @org.antlr.v4.runtime.misc.Nullable final BitSet bitSet, @org.antlr.v4.runtime.misc.NotNull final ATNConfigSet atnConfigs)
+            {
+                //To change body of implemented methods use File | Settings | File Templates.
+            }
+
+            @Override
+            public void reportAttemptingFullContext(@org.antlr.v4.runtime.misc.NotNull final Parser parser, @org.antlr.v4.runtime.misc.NotNull final DFA dfa, final int i, final int i2, @org.antlr.v4.runtime.misc.Nullable final BitSet bitSet, @org.antlr.v4.runtime.misc.NotNull final ATNConfigSet atnConfigs)
+            {
+                //To change body of implemented methods use File | Settings | File Templates.
+            }
+
+            @Override
+            public void reportContextSensitivity(@org.antlr.v4.runtime.misc.NotNull final Parser parser,
+                                                 @org.antlr.v4.runtime.misc.NotNull final DFA dfa, final int i,
+                                                 final int i2, final int i3, @org.antlr.v4.runtime.misc.NotNull final ATNConfigSet atnConfigs)
+            {
+                //To change body of implemented methods use File | Settings | File Templates.
+            }
+        });
         @NotNull final CommonTokenStream t_Tokens = new CommonTokenStream(t_Lexer);
 
         result = new JavaParser(t_Tokens);
