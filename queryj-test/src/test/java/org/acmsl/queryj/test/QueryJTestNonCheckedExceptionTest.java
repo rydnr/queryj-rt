@@ -38,8 +38,6 @@ package org.acmsl.queryj.test;
 /*
  * Importing JetBrains annotations.
  */
-import org.acmsl.commons.NonCheckedException;
-import org.acmsl.queryj.templates.packaging.exceptions.TemplatePackagingNonCheckedException;
 import org.jetbrains.annotations.NotNull;
 
 /*
