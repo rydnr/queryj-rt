@@ -74,6 +74,9 @@ public class TemplatePackagingNonCheckedExceptionTest
         Assert.assertEquals("template-packaging-exceptions", instance.retrieveExceptionsBundleName());
     }
 
+    /**
+     * Checks the bundle name is customized.
+     */
     @Test
     public void customizes_the_system_property()
     {
