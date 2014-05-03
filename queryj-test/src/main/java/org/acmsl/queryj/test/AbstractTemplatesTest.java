@@ -44,7 +44,6 @@ import org.acmsl.commons.utils.StringUtils;
  * Importing QueryJ Template Packaging classes.
  */
 import org.acmsl.queryj.Literals;
-import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.acmsl.queryj.templates.packaging.antlr.TemplateDefLexer;
 import org.acmsl.queryj.templates.packaging.antlr.TemplateDefParser;
