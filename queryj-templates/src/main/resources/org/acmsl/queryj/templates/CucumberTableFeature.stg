@@ -98,7 +98,7 @@ query(select) ::= <<
 <!
  Writes the row describing given query.
 !>
-| <select.id> | <select.name> | <select.dao> | <select.type> | <select.cardinality.name> | <if(select.value)><select.value.singleLine><endif> | <select.validate> |}; separator="\n">
+| <select.id> | <select.name> | <select.dao> | <select.type> | <select.cardinality.name> | <if(select.value)><select.value.singleLine><endif> | <select.validate> |
 >>
 
 query_parameters(select) ::= <<
