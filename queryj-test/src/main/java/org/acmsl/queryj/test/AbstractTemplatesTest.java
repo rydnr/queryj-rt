@@ -787,7 +787,7 @@ public abstract class AbstractTemplatesTest<G, F>
                 @org.antlr.v4.runtime.misc.NotNull final String msg,
                 @org.antlr.v4.runtime.misc.Nullable final RecognitionException error)
             {
-                @NotNull final InvalidJavaOutputException
+                @NotNull final InvalidJavaOutputException exception;
             }
                 if (error == null)
                 {
