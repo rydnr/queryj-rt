@@ -782,27 +782,6 @@ public abstract class AbstractTemplatesTest<G, F>
             {
                 //To change body of implemented methods use File | Settings | File Templates.
             }
-
-            @Override
-            public void reportAmbiguity(@org.antlr.v4.runtime.misc.NotNull final Parser parser, @org.antlr.v4.runtime
-                            .misc.NotNull final DFA dfa, final int i, final int i2, final boolean b, @org.antlr.v4.runtime.misc.Nullable final BitSet bitSet, @org.antlr.v4.runtime.misc.NotNull final ATNConfigSet atnConfigs)
-            {
-                //To change body of implemented methods use File | Settings | File Templates.
-            }
-
-            @Override
-            public void reportAttemptingFullContext(@org.antlr.v4.runtime.misc.NotNull final Parser parser, @org.antlr.v4.runtime.misc.NotNull final DFA dfa, final int i, final int i2, @org.antlr.v4.runtime.misc.Nullable final BitSet bitSet, @org.antlr.v4.runtime.misc.NotNull final ATNConfigSet atnConfigs)
-            {
-                //To change body of implemented methods use File | Settings | File Templates.
-            }
-
-            @Override
-            public void reportContextSensitivity(@org.antlr.v4.runtime.misc.NotNull final Parser parser,
-                                                 @org.antlr.v4.runtime.misc.NotNull final DFA dfa, final int i,
-                                                 final int i2, final int i3, @org.antlr.v4.runtime.misc.NotNull final ATNConfigSet atnConfigs)
-            {
-                //To change body of implemented methods use File | Settings | File Templates.
-            }
         });
         @NotNull final CommonTokenStream t_Tokens = new CommonTokenStream(t_Lexer);
 
