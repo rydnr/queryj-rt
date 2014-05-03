@@ -3,7 +3,7 @@ Feature: G_BET_METADATA_TYPES code compiles
   Scenario Outline: G_BET_METADATA_TYPES-specific templates compile
 
     Given the following tables:
-    |    table     | parent table | decorated | relationship |   static    |
+    |    table             | parent table | decorated | relationship |   static    |
     | G_BET_METADATA_TYPES |  | false | false | true | NAME |
 
     And the following columns:
