@@ -63,7 +63,7 @@ import org.junit.runners.JUnit4;
 public class TemplatePackagingNonCheckedExceptionTest
 {
     /**
-     * Checks
+     * Checks the bundle name is customized.
      */
     @Test
     public void customizes_the_bundle()
