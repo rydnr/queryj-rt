@@ -75,8 +75,6 @@ public class InvalidJavaOutputExceptionTest
                 -1,
                 "msg");
 
-            );
-
         for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
         {
             // throws a MissingResourceException if the key is not declared.
