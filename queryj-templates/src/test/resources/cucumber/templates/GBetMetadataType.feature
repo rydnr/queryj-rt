@@ -3,8 +3,8 @@ Feature: G_BET_METADATA_TYPES code compiles
   Scenario Outline: G_BET_METADATA_TYPES-specific templates compile
 
     Given the following tables:
-    |    table             | parent table | decorated | relationship |   static    |
-    | G_BET_METADATA_TYPES |              |   false   |    false     |    NAME     |
+    |    table     | parent table | decorated | relationship |   static    |
+    | G_BET_METADATA_TYPES |  | false | false | NAME |
 
     And the following columns:
     |     table    |         column        | type      | pk    | allows null | readonly |   sequence    | keyword | boolean | length | precision |
@@ -13,7 +13,7 @@ Feature: G_BET_METADATA_TYPES code compiles
 
     And the following contents:
       |    table     |         row          |
-      | G_BET_METADATA_TYPES | 1,"number_of_bets"  |
+      | G_BET_METADATA_TYPES | 1,"number_of_bets" |
 
     When I generate with per-table <template>.stg for Oracle
 
