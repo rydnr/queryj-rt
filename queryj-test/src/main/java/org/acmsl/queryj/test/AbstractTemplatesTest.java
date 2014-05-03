@@ -791,7 +791,7 @@ public abstract class AbstractTemplatesTest<G, F>
 
                 if (error == null)
                 {
-                    new InvalidTemplateException();
+                    enew InvalidTemplateException();
             }
         });
         @NotNull final CommonTokenStream t_Tokens = new CommonTokenStream(t_Lexer);
