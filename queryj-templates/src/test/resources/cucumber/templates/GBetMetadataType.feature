@@ -4,7 +4,7 @@ Feature: G_BET_METADATA_TYPES code compiles
 
     Given the following tables:
     |    table             | parent table | decorated | relationship |   static    |
-    | G_BET_METADATA_TYPES |              |   false   | false | true | NAME |
+    | G_BET_METADATA_TYPES |              |   false   |   false | true | NAME |
 
     And the following columns:
     |     table    |         column        | type      | pk    | allows null | readonly |   sequence    | keyword | boolean | length | precision |
