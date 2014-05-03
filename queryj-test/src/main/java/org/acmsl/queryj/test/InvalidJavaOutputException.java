@@ -64,5 +64,6 @@ public class InvalidJavaOutputException
         @NotNull final File file,
         final int line,
         final int column,
-        final String m)
+        @NotNull final String msg,
+        @NotNull final )
 }
