@@ -1,5 +1,5 @@
 /*
-                        queryj
+                        QueryJ Test
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
