@@ -150,6 +150,7 @@ attribute_getter(attribute, C, override) ::= <<
  Writes the getter for given attribute.
  @param attribute the attribute.
  @param C the context.
+ @param override whether to add @Override annotations or not.
 !>
 /**
  * Retrieves the \<i><attribute.name>\</i> value.
