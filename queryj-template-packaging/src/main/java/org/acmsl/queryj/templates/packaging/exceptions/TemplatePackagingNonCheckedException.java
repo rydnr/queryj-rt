@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Base class for all template-packaging-related non-checked exceptions.
  *
  * Date: 2014/03/30
  * Time: 20:03
