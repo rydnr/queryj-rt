@@ -305,7 +305,7 @@ public int hashCode()
 {
     final int result;
 
-    final int classHashCode = <engine.name.voName><table.name.voName>.class.hashCode();
+    final int classHashCode = <engine.name.voName><table.name.voName>PkStatementSetter.class.hashCode();
 
     <table.primaryKey:{ a | <attribute_hashCode(attribute=a)>}; separator="\n">
 
