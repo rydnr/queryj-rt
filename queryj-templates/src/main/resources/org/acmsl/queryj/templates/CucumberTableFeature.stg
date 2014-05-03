@@ -93,3 +93,4 @@ Feature: <table.name> code compiles
       | template | output |
       | DAO | <engine.name.capitalized><table.name.singular.camelCase>DAO.java |
 >>
+
