@@ -479,7 +479,7 @@ else><
 <endif><endif>
 >>
 
-custom_select_return_import_property_single(select, result, package, C) ::= <<
+custom_select_return_import_property_single(result, package, C) ::= <<
 <!<result.properties:{property|<if(!property.primitive)>import <property.type>;<endif>}>!>
 >>
 
