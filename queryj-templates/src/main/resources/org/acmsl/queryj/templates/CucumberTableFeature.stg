@@ -96,5 +96,7 @@ Feature: <table.name> code compiles
 
 query_parameters(cs) ::= <<
 <!
- Writes a row in a
+ Writes a row describing a query parameter.
+ !>
+
 >>
