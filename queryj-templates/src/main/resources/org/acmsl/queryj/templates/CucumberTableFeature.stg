@@ -101,6 +101,9 @@ attribute(attr, table) ::= <<
 | <table.name> | <attr.name> | <attr.type> | true | <attr.nullable> | <attr.readOnly> | <attr.sequence> | <attr.keyword> | <attr.boolean> | <attr.length> | <attr.precision> |
 >>
 
+fk(fk, table) ::= <<
+>>
+
 query(select) ::= <<
 <!
  Writes the row describing given query.
