@@ -62,5 +62,6 @@ public class InvalidJavaOutputException
      */
     public InvalidJavaOutputException(
         @NotNull final File file,
-        @NotNull )
+        @NotNull final int line,
+        )
 }
