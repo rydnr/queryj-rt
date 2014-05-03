@@ -44,6 +44,7 @@ import org.acmsl.commons.utils.StringUtils;
  * Importing QueryJ Template Packaging classes.
  */
 import org.acmsl.queryj.Literals;
+import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.acmsl.queryj.templates.packaging.antlr.TemplateDefLexer;
 import org.acmsl.queryj.templates.packaging.antlr.TemplateDefParser;
@@ -786,7 +787,7 @@ public abstract class AbstractTemplatesTest<G, F>
                 @org.antlr.v4.runtime.misc.NotNull final String msg,
                 @org.antlr.v4.runtime.misc.Nullable final RecognitionException error)
             {
-                throw new InvalidJava
+                throw new InvalidTemplateException()
             }
         });
         @NotNull final CommonTokenStream t_Tokens = new CommonTokenStream(t_Lexer);
