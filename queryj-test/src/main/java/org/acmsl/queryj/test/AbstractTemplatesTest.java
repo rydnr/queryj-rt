@@ -786,7 +786,7 @@ public abstract class AbstractTemplatesTest<G, F>
                 @org.antlr.v4.runtime.misc.NotNull final String msg,
                 @org.antlr.v4.runtime.misc.Nullable final RecognitionException error)
             {
-                //To change body of implemented methods use File | Settings | File Templates.
+                throw new
             }
         });
         @NotNull final CommonTokenStream t_Tokens = new CommonTokenStream(t_Lexer);
