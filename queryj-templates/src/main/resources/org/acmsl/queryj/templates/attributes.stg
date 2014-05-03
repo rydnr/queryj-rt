@@ -175,8 +175,7 @@ if(override)>
 <endif><
 if(attribute.allowsNull)><
   if(!attribute.primitive)>
-<
-    nullable(C=C)>
+<  nullable(C=C)>
 < endif>
 public <attribute.objectType> get<attribute.name.capitalized>()
 <else>
