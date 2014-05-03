@@ -38,6 +38,7 @@ package org.acmsl.queryj.test;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.api.exceptions.QueryJNonCheckedException;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -53,5 +54,59 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class QueryJTestNonCheckedException
+    extends QueryJNonCheckedException
 {
+    /**
+     * Creates a {@code TemplatePackagingNonCheckedException} with given message.
+     * @param messageKey the key to build the exception message.
+     */
+    protected TemplatePackagingNonCheckedException(@NotNull final String messageKey)
+    {
+        super(messageKey);
+    }
+
+    /**
+     * Creates a {@code TemplatePackagingNonCheckedException} with given message.
+     * @param messageKey the key to build the exception message.
+     * @param params     the parameters to build the exception message.
+     */
+    protected TemplatePackagingNonCheckedException(
+        @NotNull final String messageKey, @NotNull final Object[] params)
+    {
+        super(messageKey, params);
+    }
+
+    /**
+     * Creates a {@code TemplatePackagingNonCheckedException} with given cause.
+     * @param messageKey the key to build the exception message.
+     * @param params     the parameters to build the exception message.
+     * @param cause      the error cause.
+     */
+    protected TemplatePackagingNonCheckedException(
+        @NotNull final String messageKey, @NotNull final Object[] params, @NotNull final Throwable cause)
+    {
+        super(messageKey, params, cause);
+    }
+
+    /**
+     * Retrieves the exceptions bundle.
+     * @return such bundle name.
+     */
+    @NotNull
+    @Override
+    protected String retrieveExceptionsBundleName()
+    {
+        return "template-packaging-exceptions";
+    }
+
+    /**
+     * Retrieves the exceptions system property.
+     * @return such bundle name.
+     */
+    @NotNull
+    @Override
+    protected String retrieveExceptionsBundleProperty()
+    {
+        return "org.acmsl.queryj.templates.packaging.exceptions";
+    }
 }
