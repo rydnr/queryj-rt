@@ -70,7 +70,7 @@ public class QueryJTestNonCheckedException
      * @param messageKey the key to build the exception message.
      * @param params     the parameters to build the exception message.
      */
-    protected TemplatePackagingNonCheckedException(
+    protected QueryJTestNonCheckedException(
         @NotNull final String messageKey, @NotNull final Object[] params)
     {
         super(messageKey, params);
