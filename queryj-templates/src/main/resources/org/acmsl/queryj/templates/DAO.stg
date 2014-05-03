@@ -346,7 +346,7 @@ public <if(table.dynamicQueries)>abstract <endif>class <engine.name><table.name.
 
     <find_by_primary_key(table=table, parent=parent, repository=repository, C=C)>
 <endif>
-    <!
+
     <insert(table=table, parent=parent, repository=repository, C=C)>
 
     <create(table=table, parent=parent, repository=repository, C=C)>
