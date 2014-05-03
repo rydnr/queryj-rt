@@ -39,6 +39,7 @@ package org.acmsl.queryj.test;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.templates.packaging.exceptions.MissingOutputDirForTestsException;
+import org.antlr.v4.runtime.RecognitionException;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -88,7 +89,7 @@ public class InvalidJavaOutputExceptionTest
     @Test
     public void error_message_is_defined_in_Spanish_and_English()
     {
-
+        @NotNull final RecognitionException
         @NotNull final InvalidJavaOutputException instance =
             new InvalidJavaOutputException(
                 new File("test"),
