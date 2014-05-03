@@ -80,7 +80,7 @@ public class QueryJTestNonCheckedExceptionTest
             new QueryJTestNonCheckedException("bla") {};
 
         Assert.assertEquals(
-            "org.acmsl.queryj.templates.packaging.exceptions",
+            "org.acmsl.queryj.test.exceptions",
             instance.retrieveExceptionsBundleProperty());
     }
 
