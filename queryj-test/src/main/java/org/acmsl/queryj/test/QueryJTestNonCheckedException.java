@@ -96,7 +96,7 @@ public class QueryJTestNonCheckedException
     @Override
     protected String retrieveExceptionsBundleName()
     {
-        return "template-packaging-exceptions";
+        return "test-exceptions";
     }
 
     /**
