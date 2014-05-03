@@ -783,7 +783,8 @@ public abstract class AbstractTemplatesTest<G, F>
                 @org.antlr.v4.runtime.misc.Nullable final Object o,
                 final int i,
                 final int i2,
-                @org.antlr.v4.runtime.misc.NotNull final String s, @org.antlr.v4.runtime.misc.Nullable final RecognitionException e)
+                @org.antlr.v4.runtime.misc.NotNull final String s,
+                @org.antlr.v4.runtime.misc.Nullable final RecognitionException e)
             {
                 //To change body of implemented methods use File | Settings | File Templates.
             }
