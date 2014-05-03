@@ -94,7 +94,7 @@ Feature: <table.name> code compiles
       | DAO | <engine.name.capitalized><table.name.singular.camelCase>DAO.java |
 >>
 
-attr(attribute, table) ::= <<
+attr(attr, table) ::= <<
 | <table.name> | <attr.name> | <attr.type> | true | <attr.nullable> | <attr.readOnly> | <attr.sequence> | <attr.keyword> | <attr.boolean> | <attr.length> | <attr.precision> |>>
 
 query(select) ::= <<
