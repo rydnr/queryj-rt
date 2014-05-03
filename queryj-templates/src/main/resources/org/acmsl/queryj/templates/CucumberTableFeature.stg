@@ -96,7 +96,9 @@ Feature: <table.name> code compiles
 
 query(select) ::= <<
 <!
- Writes the rows describing given query.
+ Writes the row describing given query.
+!>
+
 >>
 
 query_parameters(select) ::= <<
