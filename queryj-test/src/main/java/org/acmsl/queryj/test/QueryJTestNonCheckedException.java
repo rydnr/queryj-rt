@@ -82,7 +82,7 @@ public class QueryJTestNonCheckedException
      * @param params     the parameters to build the exception message.
      * @param cause      the error cause.
      */
-    protected TemplatePackagingNonCheckedException(
+    protected QueryJTestNonCheckedException(
         @NotNull final String messageKey, @NotNull final Object[] params, @NotNull final Throwable cause)
     {
         super(messageKey, params, cause);
