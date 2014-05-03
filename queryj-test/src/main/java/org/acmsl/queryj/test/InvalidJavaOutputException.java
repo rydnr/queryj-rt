@@ -60,8 +60,11 @@ public class InvalidJavaOutputException
 {
     /**
      * Creates a new exception.
-     * @param file the Java source file.
-     * @param
+     * @param file the generated Java source file.
+     * @param line the line number.
+     * @param column the column.
+     * @param msg the error message.
+     * @param exception the {@link RecognitionException}
      */
     public InvalidJavaOutputException(
         @NotNull final File file,
