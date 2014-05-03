@@ -55,5 +55,8 @@ import org.checkthread.annotations.ThreadSafe;
 public class InvalidJavaOutputException
     extends QueryJTestNonCheckedException
 {
-
+    /**
+     * Creates a new exception.
+     *
+     */
 }
