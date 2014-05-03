@@ -86,7 +86,7 @@ public class InvalidJavaOutputExceptionTest
      * Tests the message key is defined for Spanish and English.
      */
     @Test
-    public void exception_message_is_defined_in_Spanish_and_English()
+    public void error_message_is_defined_in_Spanish_and_English()
     {
         @NotNull final InvalidJavaOutputException instance =
             new InvalidJavaOutputException(
