@@ -74,7 +74,7 @@ Feature: <table.name> code compiles
 
     And the following query parameters:
       |            id            |     sql       | index |  type  |     name    | validation-value |
-      <table.customSelects:{ s | | <s.parameters:{ p | <p.id> | <s.id> | <p.index> | <p.type> | <p.name> | <p.validationValue> |}; separator="\n">}; separator="\n">
+      <table.customSelects:{ s | <s.parameters:{ p | <p.id> | <s.id> | <p.index> | <p.type> | <p.name> | <p.validationValue> |}; separator="\n">}; separator="\n">
 <endif>
 
 <if(table.static)>
