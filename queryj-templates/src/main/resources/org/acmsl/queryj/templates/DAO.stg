@@ -1947,7 +1947,7 @@ protected TransactionTemplate createTransactionTemplate(<notnull(C=C)>final Data
  * @return the new transaction template.
  */
 <notnull(C=C)>
-protected TransactionTemplate createTransactionTemplate(<notnull(C=C)>final TransactionManager transactionManager)
+protected TransactionTemplate createTransactionTemplate(<notnull(C=C)>final PlatformTransactionManager transactionManager)
 {
     return new TransactionTemplate(transactionManager);
 }
