@@ -67,7 +67,6 @@ public class InvalidJavaOutputExceptionTest
     @Test
     public void exception_message_is_defined_in_Spanish_and_English()
     {
-        @NotNull final
         @NotNull final InvalidJavaOutputException instance =
             new InvalidJavaOutputException(
                 new File(),
