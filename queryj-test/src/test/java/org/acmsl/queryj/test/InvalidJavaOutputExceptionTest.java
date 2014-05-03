@@ -39,6 +39,10 @@ package org.acmsl.queryj.test;
  * Importing JetBrains annotations.
  */
 import org.antlr.v4.runtime.RecognitionException;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
