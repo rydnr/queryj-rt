@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for QueryJTestNonCheckedException.
  *
  * Date: 2014/05/03
  * Time: 07:27
