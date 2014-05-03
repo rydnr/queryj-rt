@@ -1942,7 +1942,7 @@ protected TransactionTemplate createTransactionTemplate(<notnull(C=C)>final Data
 }
 
 /**
- * Creates a new {@link TransactionTemplate} using given {@link TransactionManager}.
+ * Creates a new {@link TransactionTemplate} using given {@link PlatformTransactionManager}.
  * @param transactionManager the transaction manager.
  * @return the new transaction template.
  */
