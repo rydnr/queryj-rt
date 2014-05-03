@@ -781,7 +781,7 @@ public abstract class AbstractTemplatesTest<G, F>
             public void syntaxError(
                 @org.antlr.v4.runtime.misc.NotNull final Recognizer<?, ?> recognizer,
                 @org.antlr.v4.runtime.misc.Nullable final Object offendingSymbol,
-                final int i,
+                final int line,
                 final int i2,
                 @org.antlr.v4.runtime.misc.NotNull final String s,
                 @org.antlr.v4.runtime.misc.Nullable final RecognitionException e)
