@@ -60,5 +60,7 @@ public class InvalidJavaOutputException
     /**
      * Creates a new exception.
      */
-    public InvalidJavaOutputException(@NotNull final File file, )
+    public InvalidJavaOutputException(
+        @NotNull final File file,
+        @NotNull )
 }
