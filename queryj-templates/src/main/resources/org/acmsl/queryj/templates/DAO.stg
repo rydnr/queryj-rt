@@ -1949,6 +1949,6 @@ protected TransactionTemplate createTransactionTemplate(<notnull(C=C)>final Data
 <notnull(C=C)>
 protected TransactionTemplate createTransactionTemplate(<notnull(C=C)>final PlatformTransactionManager transactionManager)
 {
-    return new TransactionTemplate(transactionManager);
+    return new V24TransactionTemplate(transactionManager);
 }
 >>
