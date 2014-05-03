@@ -40,6 +40,7 @@ package org.acmsl.queryj.test;
  */
 import org.acmsl.queryj.templates.packaging.exceptions.MissingOutputDirForTestsException;
 import org.antlr.v4.runtime.RecognitionException;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -89,7 +90,7 @@ public class InvalidJavaOutputExceptionTest
     @Test
     public void error_message_is_defined_in_Spanish_and_English()
     {
-        @NotNull final RecognitionException exception = new RecognitionException()
+        @NotNull final RecognitionException exception = EasyMock.createNiceMock(RecognitionException)
         @NotNull final InvalidJavaOutputException instance =
             new InvalidJavaOutputException(
                 new File("test"),
