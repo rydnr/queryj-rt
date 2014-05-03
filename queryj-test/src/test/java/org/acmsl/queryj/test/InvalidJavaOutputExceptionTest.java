@@ -71,6 +71,8 @@ public class InvalidJavaOutputExceptionTest
         @NotNull final InvalidJavaOutputException instance =
             new InvalidJavaOutputException(
                 new File(),
+                -1,
+                -1,
 
             );
 
