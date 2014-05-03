@@ -81,4 +81,24 @@ public class InvalidJavaOutputExceptionTest
             instance.getMessage(t_Locale);
         }
     }
+
+    /**
+     * Tests the message key is defined for Spanish and English.
+     */
+    @Test
+    public void exception_message_is_defined_in_Spanish_and_English()
+    {
+        @NotNull final InvalidJavaOutputException instance =
+            new InvalidJavaOutputException(
+                new File("test"),
+                -1,
+                -1,
+                "msg");
+
+        for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
+        {
+            // throws a MissingResourceException if the key is not declared.
+            instance.getMessage(t_Locale);
+        }
+    }
 }
