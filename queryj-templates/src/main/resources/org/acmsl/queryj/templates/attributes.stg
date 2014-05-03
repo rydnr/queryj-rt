@@ -114,7 +114,7 @@ attribute_accessors(attribute, C, override=false) ::= <<
  Writes the accessors for given attribute.
  @param attribute the attribute.
 !>
-<attribute_setter(attribute=attribute, C=C, override=override)>
+<attribute_setter(attribute=attribute, C=C)>
 
 <attribute_getter(attribute=attribute, C=C, override=override)>
 >>
