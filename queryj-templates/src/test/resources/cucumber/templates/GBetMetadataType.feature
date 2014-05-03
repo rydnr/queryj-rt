@@ -15,7 +15,7 @@ Feature: G_BET_METADATA_TYPES code compiles
       |    table     |         row          |
       | G_BET_METADATA_TYPES | 1,"number_of_bets"  |
 
-    When I generate with per-table <template> for Oracle
+    When I generate with per-table <template>.stg for Oracle
 
     Then the generated <output> file compiles successfully
 
