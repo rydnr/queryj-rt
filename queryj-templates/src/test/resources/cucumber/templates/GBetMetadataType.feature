@@ -17,7 +17,7 @@ Feature: G_BET_METADATA_TYPES code compiles
 
     When I generate with per-table <template>.stg for Oracle
 
-    Then the generated <output> file compiles successfully
+    Then the generated per-table <output> file compiles successfully
 
     Examples:
       | template | output |
