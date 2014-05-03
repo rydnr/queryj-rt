@@ -783,7 +783,7 @@ public abstract class AbstractTemplatesTest<G, F>
                 @org.antlr.v4.runtime.misc.Nullable final Object offendingSymbol,
                 final int line,
                 final int charPositionInLine,
-                @org.antlr.v4.runtime.misc.NotNull final String s,
+                @org.antlr.v4.runtime.misc.NotNull final String msg,
                 @org.antlr.v4.runtime.misc.Nullable final RecognitionException e)
             {
                 //To change body of implemented methods use File | Settings | File Templates.
