@@ -45,6 +45,8 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 
+import java.io.File;
+
 /**
  *
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
