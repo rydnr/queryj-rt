@@ -96,5 +96,5 @@ Feature: <table.name> code compiles
 
 query_parameters(cs) ::= <<
 <!
- Writes a
+ Writes a row in a
 >>
