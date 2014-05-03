@@ -66,5 +66,8 @@ public class InvalidJavaOutputException
         final int line,
         final int column,
         @NotNull final String msg,
-        @NotNull final RecognitionException)
+        @NotNull final RecognitionException exception)
+    {
+
+    }
 }
