@@ -475,7 +475,7 @@ custom_select_return_import(result, package, C) ::= <<
   custom_select_return_import_property_single(result=result, package=package)><
 else><
   if(result.classValue)
->import <package>.vo.<result.id.voName>;
+>import <package>.vo.<result.classValue>;
 <endif><endif>
 >>
 
