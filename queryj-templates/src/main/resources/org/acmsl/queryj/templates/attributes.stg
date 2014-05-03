@@ -109,7 +109,7 @@ if (<attribute.name.uncapitalized> != null)
 }<else>immutableSet<attribute.name.capitalized>(<attribute.name.uncapitalized>);<endif>
 >>
 
-attribute_accessors(attribute, C, ) ::= <<
+attribute_accessors(attribute, C, override=false) ::= <<
 <!
  Writes the accessors for given attribute.
  @param attribute the attribute.
