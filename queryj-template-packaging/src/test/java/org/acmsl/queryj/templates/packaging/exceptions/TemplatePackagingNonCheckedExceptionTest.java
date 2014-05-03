@@ -62,7 +62,9 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class TemplatePackagingNonCheckedExceptionTest
 {
-
+    /**
+     * Checks
+     */
     @Test
     public void customizes_the_bundle()
     {
