@@ -38,6 +38,7 @@ package org.acmsl.queryj.test;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.commons.NonCheckedException;
 import org.acmsl.queryj.templates.packaging.exceptions.TemplatePackagingNonCheckedException;
 import org.jetbrains.annotations.NotNull;
 
@@ -63,7 +64,7 @@ public class QueryJTestNonCheckedExceptionTest
     @Test
     public void customizes_the_bundle()
     {
-        @NotNull final TemplatePackagingNonCheckedException instance =
+        @NotNull final QueryJTestNonCheckedException instance =
             new TemplatePackagingNonCheckedException("bla") {};
 
         Assert.assertEquals("template-packaging-exceptions", instance.retrieveExceptionsBundleName());
