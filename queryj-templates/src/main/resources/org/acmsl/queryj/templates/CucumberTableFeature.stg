@@ -81,7 +81,7 @@ Feature: <table.name> code compiles
 <if(table.staticContent)>
     And the following contents:
       |    table     |         row          |
-      <table.staticContent:{ r | <static_row(separator="\n"> |
+      <table.staticContent:{ r | <static_row(row=r, table=table)>} separator="\n"> |
 <endif>
 <endif>
 
