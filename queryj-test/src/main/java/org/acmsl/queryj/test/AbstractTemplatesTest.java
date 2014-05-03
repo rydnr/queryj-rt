@@ -96,6 +96,7 @@ import org.acmsl.commons.utils.io.FileUtils;
 /*
  * Importing ANTLR classes.
  */
+import org.antlr.v4.runtime.ANTLRErrorListener;
 import org.antlr.v4.runtime.ANTLRFileStream;
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
@@ -769,7 +770,7 @@ public abstract class AbstractTemplatesTest<G, F>
         @NotNull final JavaLexer t_Lexer =
             new JavaLexer(new ANTLRFileStream(javaFile.getAbsolutePath()));
 
-        ErrorListener errorListener = new PropagatingErrorListener(javaFile)
+        @NotNull final ANTLRErrorListener errorListener = new PropagatingErrorListener(javaFile)
         t_Lexer.addErrorListener();
 
         @NotNull final CommonTokenStream t_Tokens = new CommonTokenStream(t_Lexer);
