@@ -1043,8 +1043,8 @@ public class CachingTableDecorator
             + ", \"cachedChildAttributes\": " + m__lCachedChildAttributes
             + ", \"cachedForeignKeys\": " + m__lCachedForeignKeys
             + ", \"cachedParentForeignKey\": " + m__CachedParentForeignKey
-            + ", \"cachedExternallyManagedAttributes\": " + ToStringUtils.getInstance().toJson(m__lCachedExternallyManagedAttributes)
-            + ", \"cachedDifferentCustomResults\": " + ToStringUtils.getInstance().toJson(m__lCachedDifferentCustomResults)
+            + ", \"cachedExternallyManagedAttributes\": " + m__lCachedExternallyManagedAttributes
+            + ", \"cachedDifferentCustomResults\": " + m__lCachedDifferentCustomResults
             + " }";
     }
 }
