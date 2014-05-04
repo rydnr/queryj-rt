@@ -1022,7 +1022,7 @@ public abstract class AbstractTableDecorator
     /**
      * Retrieves the parent table.
      * @param parent the parent table.
-     * @param metadataManager the {@link MetadataManager</code> instance.
+     * @param metadataManager the {@link MetadataManager} instance.
      * @return such information.
      */
     @Nullable
