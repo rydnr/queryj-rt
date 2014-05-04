@@ -211,6 +211,6 @@ public class AbstractTableDecoratorTest
     }
 
     /**
-     * Checks if "getAll()" returns al
+     * Checks if "getAll()" returns also the parents
      */
 }
