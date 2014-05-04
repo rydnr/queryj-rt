@@ -2103,7 +2103,7 @@ public abstract class AbstractTableDecorator
 
         if (parent != null)
         {
-            result.addAll(getAllAttributes(new ArrayList<>(0), parent.getParentTable()));
+            result.addAll(getAllAttributes(new ArrayListDe<>(0), parent.getParentTable()));
         }
         return result;
     }
