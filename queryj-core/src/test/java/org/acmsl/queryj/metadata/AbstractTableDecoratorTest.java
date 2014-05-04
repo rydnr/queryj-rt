@@ -209,4 +209,8 @@ public class AbstractTableDecoratorTest
 
         Assert.assertTrue(instance.getContainsClobs());
     }
+
+    /**
+     * Checks if "all
+     */
 }
