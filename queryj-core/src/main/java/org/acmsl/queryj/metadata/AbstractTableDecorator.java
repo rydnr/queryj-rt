@@ -2109,6 +2109,6 @@ public abstract class AbstractTableDecorator
     @NotNull
     public List<Attribute<String>> getAllAttributes()
     {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        return null;
     }
 }
