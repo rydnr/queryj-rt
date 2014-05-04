@@ -1454,6 +1454,7 @@ find_constant_methods(attribute, table, C) ::= <<
  <attribute_javadoc(attr=attribute)>
  * @return the {@link <table.name.voName>} instance.
  */
+@Override
 <notnull(C=C)>
 public List\<<table.name.voName>\> findConstantsBy<attribute.name.capitalized>(<
     if(!attribute.primitive)><
