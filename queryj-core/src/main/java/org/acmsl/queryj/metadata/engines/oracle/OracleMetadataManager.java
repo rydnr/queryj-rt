@@ -271,7 +271,7 @@ public class OracleMetadataManager
                 +                 "and rcol.position = col.position) fks "
                 +           "on c.table_name = fks.source_table and c.column_name = fks.column_name "
                 +  "where not contains(tc.table_name, '$', 1) > 0 "
-                "    "and tc.table_name = c.table_name "
+                +    "and tc.table_name = c.table_name "
                 +    "and tc.table_name = uc.table_name "
                 +    "and c.column_name = uc.column_name ";
             
