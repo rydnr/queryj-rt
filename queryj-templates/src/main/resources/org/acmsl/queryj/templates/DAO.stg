@@ -1072,6 +1072,7 @@ protected <table.name.voName> create(
 <else>
     <notnull(C=C)>final <table.name.voName> result;
 <endif>
+
 <if(parent)>
 
     <parent.name.voName> <parent.name.lowercased> =
