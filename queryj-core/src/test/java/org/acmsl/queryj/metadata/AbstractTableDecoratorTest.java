@@ -94,7 +94,7 @@ public class AbstractTableDecoratorTest
      */
     protected AbstractTableDecorator setupTableDecorator(
         @NotNull final List<Attribute<String>> attributes,
-        @Nullable final )
+        @Nullable final Table<String, Attribute<String>, List<Attribute<String>>> parentTable)
     {
         @NotNull final AbstractTableDecorator result;
 
