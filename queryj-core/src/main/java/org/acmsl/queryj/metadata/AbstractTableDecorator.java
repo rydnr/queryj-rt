@@ -2077,7 +2077,7 @@ public abstract class AbstractTableDecorator
             + ", \"externallyManagedAttributes\": " + m__lExternallyManagedAttributes
             + ", \"foreignKeys\": " + m__lForeignKeys
             + ", \"parentForeignKey\": " + m__ParentForeignKey
-            + ", \"childAttributes\": " + ToStringUtils.getInstance().toJson(m__lChildAttributes)
+            + ", \"childAttributes\": " + m__lChildAttributes
             + ", \"attributesShouldBeCleanedUp\": " + m__bAttributesShouldBeCleanedUp
             + ", \"package\": \"" + AbstractTableDecorator.class.getPackage().getName() + "\" }";
     }
