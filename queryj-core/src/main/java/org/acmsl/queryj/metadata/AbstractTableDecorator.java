@@ -2101,4 +2101,8 @@ public abstract class AbstractTableDecorator
             + ", \"attributesShouldBeCleanedUp\": " + m__bAttributesShouldBeCleanedUp
             + ", \"package\": \"" + AbstractTableDecorator.class.getPackage().getName() + "\" }";
     }
+
+    public List<Attribute<String>> getAllAttributes()
+    {
+    }
 }
