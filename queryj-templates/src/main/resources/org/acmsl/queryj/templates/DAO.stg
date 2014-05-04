@@ -1413,6 +1413,7 @@ find_constant_by_pk(primaryKey, table, C) ::= <<
  <primaryKey:{ attribute | <attribute_javadoc(attr=attribute)>}; separator="\n">
  * @return the {@link <table.name.voName>} instance.
  */
+@Override
 <nullable(C=C)>
 public <table.name.voName> findConstantByPrimaryKey(
     <primaryKey:{ attr | <attribute_method_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
