@@ -1453,6 +1453,7 @@ protected void deleteNoFk(
     <notnull(C=C)>final PlatformTransactionManager transactionManager,
     <notnull(C=C)>final <repository.capitalized>DataAccessManager dataAccessManager)
 <else>
+    <notnull(C=C)>final PlatformTransactionManager transactionManager)
     <notnull(C=C)>final DataSource dataSource)
 <endif>
 {
