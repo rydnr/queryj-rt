@@ -107,7 +107,7 @@ public class AbstractTableDecoratorTest
         @NotNull final DecoratorFactory decoratorFactory = CachingDecoratorFactory.getInstance();
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
 
-        @NotNull final AbstractTableDecorator instance =
+        @NotNull final AbstractTableDecorator result =
             new AbstractTableDecorator(table, metadataManager, decoratorFactory, customSqlProvider)
             {
                 /**
