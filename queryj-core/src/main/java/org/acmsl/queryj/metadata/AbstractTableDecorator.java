@@ -2085,7 +2085,7 @@ public abstract class AbstractTableDecorator
      * @return such attributes.
      */
     @NotNull
-    public List<Attribute<String>> getAllAttributes()
+    public List<Attribute<DecoratedString>> getAllAttributes()
     {
         return getAllAttributes(getAttributes(), getParentTable());
     }
@@ -2095,7 +2095,7 @@ public abstract class AbstractTableDecorator
      * @return such attributes.
      */
     @NotNull
-    protected List<Attribute<String>> getAllAttributes(
+    protected List<Attribute<DecoratedString>> getAllAttributes(
         @NotNull final ListDecorator<Attribute<DecoratedString>> attributes,
         @Nullable final Table<DecoratedString, Attribute<DecoratedString>, List<Attribute<DecoratedString>>> parent)
     {
