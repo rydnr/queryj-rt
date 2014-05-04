@@ -78,7 +78,7 @@ import java.util.List;
 public class AbstractTableDecoratorTest
 {
     /**
-     * Checks whethe getContainsClobs() is correct for tables with no Clob attributes.
+     * Checks whether getContainsClobs() is correct for tables with no Clob attributes.
      */
     @Test
     public void getContainsClobs_is_correct_if_table_does_not_contain_clobs()
