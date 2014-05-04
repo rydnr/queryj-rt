@@ -106,7 +106,7 @@ endif>
 <endif>
  */
 <custom_select_return_nullable_maybe(cs=cs, result=cs.result, C=C)>
-protected <custom_select_return(cs=cs, table=table, result=cs.result, C=C)> <cs.name.uncapitalized>(<
+protected <custom_select_return(cs=cs, table=table, result=cs.result, C=C)> <cs.name.uncapitalized>(
     <notnull(C=C)>final String sql,
     <notnull(C=C)>final PreparedStatementCreatorFactory preparedStatementCreatorFactory,
     <nullable(C=C)>final Object[] params,
