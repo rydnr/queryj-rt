@@ -1598,6 +1598,7 @@ fk_delete_method(foreignKey, table) ::= <<
  * \<br/>\<b>This method is not implemented yet\</b>.
  <foreignKey.attributes:{ attr | <attribute_javadoc(attr=attr)>}; separator="\n">
  */
+@Override
 public void deleteBy<foreignKey.attributes:{attr |<attr.name.capitalized>}>(
     <foreignKey.attributes:{ attr | <attribute_method_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
 {
