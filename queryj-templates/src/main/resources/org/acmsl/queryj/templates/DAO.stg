@@ -1428,7 +1428,7 @@ protected void deleteNoFk(
 }
 >>
 
-delete3(table, parent, repository, C) ::= <<
+delete4(table, parent, repository, C) ::= <<
 <!
   Creates a delete method, overridden 3.
   @param table the table.
