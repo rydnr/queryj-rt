@@ -1048,7 +1048,7 @@ create5(table, parent, repository, C) ::= <<
  * @param daoListener the {@link DAOListener} instance.
  */
 @SuppressWarnings("unchecked")
-<nullable(C=C)>
+<notnull(C=C)>
 <if(table.voDecorated)>
 protected <table.name.voName>Decorator create(
 <else>
