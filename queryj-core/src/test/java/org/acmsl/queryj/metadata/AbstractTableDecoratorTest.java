@@ -203,6 +203,9 @@ public class AbstractTableDecoratorTest
     @Test
     public void getAll_includes_parent_attributes()
     {
+        @NotNull final AbstractTableDecorator instance = setupTableDecorator();
+
+        Assert.assertFalse(instance.getContainsClobs());
 
     }
 }
