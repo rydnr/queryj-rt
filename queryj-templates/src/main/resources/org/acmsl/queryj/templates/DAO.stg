@@ -1422,9 +1422,9 @@ protected void deleteNoFk(
         query,
 <if(parent)>
         new DataSourceTransactionManager(dataSource),
-        dataAccessManager.get<parent.name.voName>DAO(),
+        dataAccessManager.get<parent.name.voName>DAO());
 <else>
-        new DataSourceTransactionManager(dataSource))
+        new DataSourceTransactionManager(dataSource));
 <endif>
         getDAOListener());
 }
