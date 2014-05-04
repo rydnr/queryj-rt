@@ -108,13 +108,15 @@ attribute(attr, table, pk) ::= <<
 foreign_key(fk) ::= <<
 <!
  Writes a row defining a foreign key.
- !>
+ @param fk the foreign key.
+!>
 | <fk.source.name> | <fk.attributes:{ attr | <attr.name>}; separator=","> | <fk.targetTableName> | <fk.nullable> |
 >>
 
 query(select) ::= <<
 <!
  Writes the row describing given query.
+ @param select the custom query.
 !>
 | <select.id> | <select.name> | <select.dao> | <select.type> | <select.cardinality.name> | <if(select.value)><select.value.singleLine><endif> | <select.validate> |
 >>
