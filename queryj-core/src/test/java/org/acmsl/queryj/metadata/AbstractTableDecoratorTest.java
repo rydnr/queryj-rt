@@ -218,7 +218,7 @@ public class AbstractTableDecoratorTest
         final boolean voDecorated = false;
         final boolean isRelationship = false;
 
-        @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table =
+        @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> parentTable =
             new TableValueObject(
                 name,
                 comment,
