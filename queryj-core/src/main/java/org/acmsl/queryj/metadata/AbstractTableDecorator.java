@@ -1129,7 +1129,7 @@ public abstract class AbstractTableDecorator
      */
     @SuppressWarnings("unused")
     @NotNull
-    protected ListDecorator<Attribute<DecoratedString>> getAllAttributes()
+    public ListDecorator<Attribute<DecoratedString>> getAllAttributes()
     {
         return
             sumUpParentAndChildAttributes(
