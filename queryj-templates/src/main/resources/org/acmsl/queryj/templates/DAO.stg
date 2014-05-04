@@ -779,7 +779,7 @@ protected <table.name.voName> create(
 <endif>
             retrieveAfterwards,
             _INSERT_SQL,
-            getDataSource(),
+            createTransactionTemplate(getDataSource()),
             <table.name.voName>ValueObjectFactory.getInstance());
 }
 >>
