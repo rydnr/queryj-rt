@@ -1823,6 +1823,8 @@ public class JdbcMetadataTypeManager
                 {
                     result = Types.BIGINT;
                 }
+                */
+                result = Types.BIGINT;
                 break;
             case Literals.NUMERIC_U:
                 result = Types.NUMERIC;
