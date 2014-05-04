@@ -156,9 +156,6 @@ public class AbstractTableDecoratorTest
     @Test
     public void getContainsClobs_is_correct_if_table_contains_clobs()
     {
-        @NotNull final String name = "name";
-        @NotNull final String comment = "comment";
-        @NotNull final List<Attribute<String>> primaryKey = new ArrayList<>(0);
         @NotNull final List<Attribute<String>> attributes = new ArrayList<>();
         attributes.add(
             new AttributeIncompleteValueObject(
