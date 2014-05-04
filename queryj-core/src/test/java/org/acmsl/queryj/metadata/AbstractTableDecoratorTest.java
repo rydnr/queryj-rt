@@ -225,6 +225,18 @@ public class AbstractTableDecoratorTest
                 voDecorated,
                 isRelationship);
 
+        attributes.add(
+            new AttributeIncompleteValueObject(
+                "name",
+                Types.CLOB,
+                "String",
+                name,
+                "comment",
+                1, // ordinalPosition
+                6222, // length
+                1, // precision
+                false, // allowsNull
+                null)); // value
 
         @NotNull final AbstractTableDecorator instance = setupTableDecorator();
 
