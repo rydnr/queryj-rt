@@ -780,7 +780,8 @@ protected <table.name.voName> create(
             retrieveAfterwards,
             _INSERT_SQL,
             createTransactionTemplate(getDataSource()),
-            <table.name.voName>ValueObjectFactory.getInstance());
+            <table.name.voName>ValueObjectFactory.getInstance(),
+            getDAOListener());
 }
 >>
 
