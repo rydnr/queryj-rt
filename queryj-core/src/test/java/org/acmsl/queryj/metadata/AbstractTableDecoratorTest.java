@@ -207,6 +207,6 @@ public class AbstractTableDecoratorTest
 
         Assert.assertFalse(instance.getContainsClobs());
 
-        @Nullable final Table<String, Attribute<String>, List<Attribute<String>>> parentTable
+        @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> parentTable;
     }
 }
