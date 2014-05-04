@@ -2087,7 +2087,9 @@ public abstract class AbstractTableDecorator
     @NotNull
     public List<Attribute<String>> getAllAttributes()
     {
-        @NotNull final List<Attribute<String>> result
+        @NotNull final List<Attribute<String>> result = new ArrayList<>();
+
+        return result;
     }
 
     /**
