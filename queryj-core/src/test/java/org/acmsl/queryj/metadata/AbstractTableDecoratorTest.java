@@ -214,5 +214,5 @@ public class AbstractTableDecoratorTest
      * Checks if "getAll()" returns also the parent's attributes.
      */
     @Test
-    public void getAll_
+    public void getAll_re
 }
