@@ -1128,7 +1128,7 @@ public abstract class AbstractTableDecorator
      * @return such collection.
      */
     @NotNull
-    public ListDecorator<Attribute<DecoratedString>> getAllAttributes()
+    public ListDecorator<Attribute<DecoratedString>> sumUpParentAndChildAttributes()
     {
         return
             sumUpParentAndChildAttributes(
