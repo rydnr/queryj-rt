@@ -77,7 +77,7 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public class AbstractTableDecoratorTest
 {
-    public void getContainsClobs_is_correct_if_table_does_not_contain_clobs()
+    protected void getContainsClobs_is_correct_if_table_does_not_contain_clobs()
     {
         @NotNull final String name = "name";
         @NotNull final String comment = "comment";
