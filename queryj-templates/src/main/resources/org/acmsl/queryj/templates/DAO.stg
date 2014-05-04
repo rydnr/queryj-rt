@@ -1460,7 +1460,7 @@ protected void deleteNoFk(
         <table.primaryKey:{ attr | <attr.name.uncapitalized>}; separator=",\n">,
         query,
 <if(parent)>
-        new DataSourceTransactionManager(dataSource),
+        new TransactionTemplate(DataSourceTransactionManager(dataSource),
         dataAccessManager.get<parent.name.voName>DAO(),
 <else>
         new DataSourceTransactionManager(dataSource),
