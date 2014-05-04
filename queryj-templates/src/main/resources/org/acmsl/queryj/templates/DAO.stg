@@ -667,6 +667,7 @@ insert(table, parent, repository, C) ::= <<
  <table.own.minus.readOnly.minus.externallyManagedAttributes:{ attr | <attribute_javadoc(attr=attr)>}; separator="\n">
 <endif>
  */
+@Override
 public void insert(
 <if(parent)>
     <table.all.minus.readOnly.minus.externallyManagedAttributes:{ attr | <attribute_method_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
