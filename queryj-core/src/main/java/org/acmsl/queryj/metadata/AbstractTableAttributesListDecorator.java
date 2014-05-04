@@ -423,6 +423,6 @@ public abstract class AbstractTableAttributesListDecorator
               "{ \"class\": " + AbstractTableAttributesListDecorator.class.getSimpleName() + '"'
             + ", \"package\": \"org.acmsl.queryj.metadata\""
             + ", \"table\": \"" + m__Table.getName()
-            + " }";
+            + "\" }";
     }
 }
