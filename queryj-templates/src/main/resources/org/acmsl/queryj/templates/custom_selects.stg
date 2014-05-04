@@ -144,7 +144,7 @@ custom_select_parameter_value(p) ::= <<
   Writes the value for a parameter of a custom select.
   @param p the parameter.
 !>
-<if(p.object)><p.name.uncapitalized><else><if(p.primitive)><p.objectType>.valueOf(<p.name>)<else><if(p.string)><p.name><else>new <p.objectType>(<p.name.uncapitalized>)<endif><endif><endif>
+<if(p.object)><p.name.uncapitalized><else><if(p.primitive)><p.objectType>.valueOf(<p.name>)<else><if(p.string)><p.name.uncapitalized><else>new <p.objectType>(<p.name.uncapitalized>)<endif><endif><endif>
 >>
 
 custom_update_or_insert(cs) ::= <<
