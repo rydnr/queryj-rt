@@ -2104,7 +2104,9 @@ public abstract class AbstractTableDecorator
         if (parent != null)
         {
             result.addAll(getAllAttributes(null, parent.getParentTable()));
+            result.addAll(parent.getAttributes());
         }
+
         return result;
     }
 
