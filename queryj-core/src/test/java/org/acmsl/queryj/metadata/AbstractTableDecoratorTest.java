@@ -255,7 +255,7 @@ public class AbstractTableDecoratorTest
 
         attributes.add(childAttribute);
 
-        @NotNull final AbstractTableDecorator instance = setupTableDecorator();
+        @NotNull final AbstractTableDecorator instance = setupTableDecorator(attributes, parentTable);
 
         @NotNull final List<Attribute<String>> allAttributes = instance.getAllAttributes();
 
