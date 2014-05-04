@@ -77,6 +77,11 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public class AbstractTableDecoratorTest
 {
+    /**
+     * Creates a decorator
+     * @param attributes
+     * @return
+     */
     protected AbstractTableDecorator setupTableDecorator(@NotNull final List<Attribute<String>> attributes)
     {
         @NotNull final AbstractTableDecorator result;
