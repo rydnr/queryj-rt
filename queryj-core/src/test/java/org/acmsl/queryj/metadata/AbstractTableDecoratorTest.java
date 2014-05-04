@@ -80,7 +80,7 @@ public class AbstractTableDecoratorTest
     /**
      * Creates a decorator with the required mock dependencies.
      * @param attributes the attributes.
-     * @return the
+     * @return the table decorator.
      */
     protected AbstractTableDecorator setupTableDecorator(@NotNull final List<Attribute<String>> attributes)
     {
