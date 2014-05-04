@@ -1382,6 +1382,7 @@ public int update(
  * @param setter the {@link PreparedStatementSetter} instance.
  * @param extractor the {@link ResultSetExtractor} instance.
  */
+@Override
 public Object query(
     final PreparedStatementCreator creator,
     final PreparedStatementSetter setter,
