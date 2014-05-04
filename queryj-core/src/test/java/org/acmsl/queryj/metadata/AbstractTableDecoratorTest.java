@@ -254,5 +254,7 @@ public class AbstractTableDecoratorTest
         @NotNull final AbstractTableDecorator instance = setupTableDecorator();
 
         @NotNull final List<Attribute<String>> allAttributes = instance.getAllAttributes();
+
+        Assert.assertEquals(allAttributes.size())
     }
 }
