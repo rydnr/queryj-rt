@@ -605,6 +605,7 @@ endif>
             getDAOListener());
 }
 
+/**
 <if(table.voDecorated)>
  * Retrieves {@link <table.name.voName>Decorator} (table <table.name>) information
 <else>
