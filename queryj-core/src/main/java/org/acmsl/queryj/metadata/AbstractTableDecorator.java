@@ -1130,7 +1130,7 @@ public abstract class AbstractTableDecorator
      * @param attributes the attributes.
      * @param isStatic whether the table contains static values or not.
      * @param voDecorated whether the value-object is decorated.
-     * @param metadataManager the {@link MetadataManager</code> instance.
+     * @param metadataManager the {@link MetadataManager} instance.
      * @param decoratorFactory the <code>DecoratorFactory</code> instance.
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
      * @return such decorator.
