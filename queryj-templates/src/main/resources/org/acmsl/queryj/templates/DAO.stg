@@ -861,7 +861,7 @@ create2(table, parent, repository, C) ::= <<
 <endif>
  * @param retrieveAfterwards whether to retrieve the new instance afterwards or not.
  */
-<nullable(C=C)>
+<notnull(C=C)>
 <if(table.voDecorated)>
 protected <table.name.voName>Decorator create(
 <else>
@@ -914,7 +914,7 @@ create3(table, parent, repository, C) ::= <<
  * @param factory the {@link <table.name.voName>ValueObjectFactory}
  * instance.
  */
-<nullable(C=C)>
+<notnull(C=C)>
 <if(table.voDecorated)>
 protected <table.name.voName>Decorator create(
 <else>
@@ -977,7 +977,7 @@ create4(table, parent, repository, C) ::= <<
  * @param factory the {@link <table.name.voName>ValueObjectFactory}
  * instance.
  */
-<nullable(C=C)>
+<notnull(C=C)>
 <if(table.voDecorated)>
 protected <table.name.voName>Decorator create(
 <else>
