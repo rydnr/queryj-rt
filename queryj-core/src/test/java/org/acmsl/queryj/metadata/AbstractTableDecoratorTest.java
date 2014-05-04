@@ -236,7 +236,9 @@ public class AbstractTableDecoratorTest
                 6222, // length
                 1, // precision
                 false, // allowsNull
-                null)); // value
+                null); // value
+
+        parentAttributes.add(parentAttribute);
 
         attributes.add(
             new AttributeIncompleteValueObject(
