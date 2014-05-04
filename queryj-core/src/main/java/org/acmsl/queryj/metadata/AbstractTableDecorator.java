@@ -2110,6 +2110,7 @@ public abstract class AbstractTableDecorator
         {
             result.addAll(attributes);
         }
+
         return result;
     }
 
