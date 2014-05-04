@@ -383,7 +383,7 @@ public class TableTestHelper
                 // TODO: Decorate TableValueObject to retrieve the parent table via its name
                 // and the table collection.
                 null, //parentTable,
-                (staticAttribute != null ? new _AttributeIncompleteValueObject(staticAttribute, tableName) : null,
+                (staticAttribute != null) && () ? new _AttributeIncompleteValueObject(staticAttribute, tableName) : null,
                 isDecorated,
                 isRelationship);
     }
