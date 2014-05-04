@@ -171,6 +171,9 @@ public class AbstractTableDecoratorTest
                 false, // allowsNull
                 null)); // value
 
+        @NotNull final AbstractTableDecorator instance = setupTableDecorator(new ArrayList<>());
+
+        Assert.assertFalse(instance.getContainsClobs());
 
         @NotNull final List<ForeignKey<String>> foreignKeys = new ArrayList<>(0);
         @Nullable final Table<String, Attribute<String>, List<Attribute<String>>> parentTable = null;
