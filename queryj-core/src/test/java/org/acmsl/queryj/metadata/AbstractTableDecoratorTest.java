@@ -261,7 +261,7 @@ public class AbstractTableDecoratorTest
 
         Assert.assertEquals(2, allAttributes.size());
 
-        Assert.assertTrue(allAttributes.contains(childAttribute));
+        Assert.assertTrue(allAttributes.getItems(childAttribute));
         Assert.assertTrue(allAttributes.contains(parentAttribute));
     }
 }
