@@ -679,11 +679,11 @@ public abstract class AbstractForeignKeyDecorator
 
         comparator.append(
             first.getSourceTableName(),
-            second.getSourceTableName());
+            second.getSourceTableName().getValue());
 
         comparator.append(
             first.getTargetTableName(),
-            second.getTargetTableName());
+            second.getTargetTableName().getValue());
 
         comparator.append(
             first.isNullable(),
