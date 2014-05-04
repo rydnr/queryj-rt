@@ -650,7 +650,7 @@ protected <table.name.voName> findByPrimaryKey(
         findByPrimaryKey(
             <table.primaryKey:{ attr | <attr.name.uncapitalized>}; separator=",\n">,
             query,
-            new DataSourceTransactionManager(dataSource));
+            createTransactionTemplate(new DataSourceTransactionManager(dataSource));
 }
 >>
 
