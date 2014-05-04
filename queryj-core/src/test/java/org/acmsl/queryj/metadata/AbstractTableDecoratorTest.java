@@ -238,6 +238,19 @@ public class AbstractTableDecoratorTest
                 false, // allowsNull
                 null)); // value
 
+        attributes.add(
+            new AttributeIncompleteValueObject(
+                "name",
+                Types.CLOB,
+                "String",
+                name,
+                "comment",
+                1, // ordinalPosition
+                6222, // length
+                1, // precision
+                false, // allowsNull
+                null)); // value
+
         @NotNull final AbstractTableDecorator instance = setupTableDecorator();
 
         Assert.assertFalse(instance.getContainsClobs());
