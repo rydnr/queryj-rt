@@ -225,6 +225,7 @@ public class AbstractTableDecoratorTest
                 voDecorated,
                 isRelationship);
 
+        @NotNull final Attribute<String> parentAttribute()
         parentAttributes.add(
             new AttributeIncompleteValueObject(
                 "myParentId",
