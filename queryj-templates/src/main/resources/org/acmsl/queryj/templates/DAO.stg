@@ -788,7 +788,6 @@ protected <table.name.voName> create(
 }
 >>
 
-
 create5(table, parent, repository, C) ::= <<
 <!
  Generates the JDBC create logic, overloaded 4.
