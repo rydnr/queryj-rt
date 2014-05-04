@@ -2066,6 +2066,17 @@ public abstract class AbstractTableDecorator
         return containClobs(getAttributes(), getMetadataManager().getMetadataTypeManager(), TableDecoratorHelper.getInstance());
     }
 
+
+    /**
+     * Retrieves all attributes, including parent's.
+     * @return such attributes.
+     */
+    @NotNull
+    public List<Attribute<String>> getAllAttributes()
+    {
+        return null;
+    }
+
     /**
      * Checks whether any attribute is a clob.
      * @param attributes the {@link Attribute}s.
