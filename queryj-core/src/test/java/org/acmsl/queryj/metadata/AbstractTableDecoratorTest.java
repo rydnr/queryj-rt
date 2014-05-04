@@ -172,6 +172,7 @@ public class AbstractTableDecoratorTest
                 false, // allowsNull
                 null)); // value
 
+
         @NotNull final List<ForeignKey<String>> foreignKeys = new ArrayList<>(0);
         @Nullable final Table<String, Attribute<String>, List<Attribute<String>>> parentTable = null;
         @Nullable final Attribute<String> staticAttribute = null;
