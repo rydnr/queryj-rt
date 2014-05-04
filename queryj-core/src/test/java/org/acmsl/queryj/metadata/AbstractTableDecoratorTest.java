@@ -207,6 +207,7 @@ public class AbstractTableDecoratorTest
         @NotNull final String comment = "comment";
         @NotNull final List<Attribute<String>> primaryKey = new ArrayList<>(0);
         @NotNull final List<Attribute<String>> parentAttributes = new ArrayList<>(0);
+        @NotNull final List<Attribute<String>> parentAttributes = new ArrayList<>(0);
         @NotNull final List<ForeignKey<String>> foreignKeys = new ArrayList<>(0);
         @Nullable final Attribute<String> staticAttribute = null;
         final boolean voDecorated = false;
