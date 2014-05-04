@@ -144,7 +144,7 @@ public abstract class AbstractTableDecorator
     private ListDecorator<Attribute<DecoratedString>> m__lExternallyManagedAttributes;
 
     /**
-     * Creates an {@link AbstractTableDecorator} with the
+     * Creates an {@code AbstractTableDecorator} with the
      * {@link Table} to decorate.
      * @param table the {@link Table table}.
      * @param metadataManager the {@link MetadataManager metadata manager}.
