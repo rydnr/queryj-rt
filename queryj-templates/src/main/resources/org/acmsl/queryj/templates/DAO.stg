@@ -1450,7 +1450,7 @@ protected void deleteNoFk(
     <table.primaryKey:{ attr | <attribute_method_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">,
     <notnull(C=C)>final String query,
 <if(parent)>
-    <notnull(C=C)>final DataSource dataSource,
+    <notnull(C=C)>final PlatformTransactionManager dataSource,
     <notnull(C=C)>final <repository.capitalized>DataAccessManager dataAccessManager)
 <else>
     <notnull(C=C)>final DataSource dataSource)
