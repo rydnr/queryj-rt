@@ -90,6 +90,7 @@ public class AbstractTableDecoratorTest
     /**
      * Creates a decorator with the required mock dependencies.
      * @param attributes the attributes.
+     * @param parentTable the parent table.
      * @return the table decorator.
      */
     protected AbstractTableDecorator setupTableDecorator(
