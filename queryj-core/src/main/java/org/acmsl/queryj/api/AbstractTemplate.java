@@ -825,14 +825,11 @@ public abstract class AbstractTemplate<C extends TemplateContext>
                                 throw new DevelopmentModeException(t_Group);
                             }
                         }
-*/
                     }
-/*
                     catch (@NotNull final DevelopmentModeException debugging)
                     {
                         throw debugging;
                     }
-*/
                     catch (@NotNull final Throwable throwable)
                     {
                         t_ExceptionToWrap = throwable;
