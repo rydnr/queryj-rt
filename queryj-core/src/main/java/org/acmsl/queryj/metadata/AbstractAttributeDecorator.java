@@ -173,7 +173,7 @@ public abstract class AbstractAttributeDecorator
         @NotNull final MetadataManager metadataManager,
         @NotNull final MetadataTypeManager metadataTypeManager)
     {
-        super(
+         super(
             new DecoratedString(name),
             typeId,
             new DecoratedString(type),
