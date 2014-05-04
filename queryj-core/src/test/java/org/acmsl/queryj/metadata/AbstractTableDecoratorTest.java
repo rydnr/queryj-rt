@@ -225,5 +225,9 @@ public class AbstractTableDecoratorTest
                 staticAttribute,
                 voDecorated,
                 isRelationship);
+
+        @NotNull final AbstractTableDecorator instance = setupTableDecorator();
+
+        Assert.assertFalse(instance.getContainsClobs());
     }
 }
