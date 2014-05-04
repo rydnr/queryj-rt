@@ -251,7 +251,9 @@ public class AbstractTableDecoratorTest
                 6222, // length
                 1, // precision
                 false, // allowsNull
-                null)); // value
+                null); // value
+
+        attributes.add(childAttribute);
 
         @NotNull final AbstractTableDecorator instance = setupTableDecorator();
 
