@@ -808,7 +808,7 @@ public abstract class AbstractTableDecorator
      * Checks whether given attribute lists match.
      * @param first the first attribute list.
      * @param second the second attribute list.
-     * @return {@link true} in such case.
+     * @return {@code true} in such case.
      */
     protected boolean attributeListMatch(
         final List<Attribute<DecoratedString>> first, final List<Attribute<DecoratedString>> second)
@@ -846,7 +846,7 @@ public abstract class AbstractTableDecorator
      * Checks whether given attributes match.
      * @param first the first attribute.
      * @param second the second attribute.
-     * @return {@link true} in such case.
+     * @return {@code true} in such case.
      */
     protected boolean attributesMatch(
         @Nullable final Attribute<DecoratedString> first,
@@ -1918,7 +1918,7 @@ public abstract class AbstractTableDecorator
      * Checks whether given ValueObject classes match.
      * @param classValue the class value.
      * @param voName the ValueObject name.
-     * @return {@link true} in such case.
+     * @return {@code true} in such case.
      */
     protected boolean matches(@Nullable final String classValue, @NotNull final String voName)
     {
