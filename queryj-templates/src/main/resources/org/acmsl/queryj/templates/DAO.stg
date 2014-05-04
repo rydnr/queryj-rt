@@ -1116,6 +1116,7 @@ delete(table, parent, repository, C) ::= <<
  * Deletes {@link <table.name.voName>} information.
  <table.primaryKey:{ attr | <attribute_javadoc(attr=attr)>}; separator="\n">
  */
+@Override
 public void delete(
     <table.primaryKey:{ attr | <attribute_method_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
 {
