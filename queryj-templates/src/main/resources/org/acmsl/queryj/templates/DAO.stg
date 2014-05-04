@@ -729,9 +729,6 @@ public <table.name.voName> create(
 
 <create3(table=table, parent=parent, repository=repository, C=C)>
 
-<create4(table=table, parent=parent, repository=repository, C=C)>
-
-<create5(table=table, parent=parent, repository=repository, C=C)>
 >>
 
 create2(table, parent, repository, C) ::= <<
