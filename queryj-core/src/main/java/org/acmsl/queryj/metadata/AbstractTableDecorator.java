@@ -2111,7 +2111,7 @@ public abstract class AbstractTableDecorator
             result.addAll(attributes);
         }
 
-        return TableAttributesListDecorator();
+        return new TableAttributesListDecorator();
     }
 
     /**
