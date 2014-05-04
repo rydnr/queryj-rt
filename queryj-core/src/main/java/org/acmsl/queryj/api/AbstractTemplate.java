@@ -812,6 +812,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
                         if (   (isInDevMode(t_Group))
                             && (!relevantOnly))
                         {
+
                             synchronized (AbstractTemplate.class)
                             {
                                 try
