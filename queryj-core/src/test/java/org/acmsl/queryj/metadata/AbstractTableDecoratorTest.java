@@ -82,7 +82,7 @@ public class AbstractTableDecoratorTest
      * @param attributes the attributes.
      * @return the table decorator.
      */
-    protected AbstractTableDecorator setupTableDecorator(@NotNull final List<Attribute<String>> attributes)
+    protected AbstractTableDecorator setupTableDecorator()
     {
         return setupTableDecorator(new ArrayList<>(0), null);
     }
