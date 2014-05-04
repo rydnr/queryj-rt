@@ -780,10 +780,10 @@ protected <table.name.voName> create(
             retrieveAfterwards,
             _INSERT_SQL,
             createTransactionTemplate(getDataSource()),
+            <table.name.voName>ValueObjectFactory.getInstance(),
 <if(parent)>
             <repository.capitalized>DataAccessManager.getInstance(),
 <endif>
-            <table.name.voName>ValueObjectFactory.getInstance(),
             getDAOListener());
 }
 >>
