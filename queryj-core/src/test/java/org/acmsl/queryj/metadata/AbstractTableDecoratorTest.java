@@ -78,7 +78,7 @@ import java.util.List;
 public class AbstractTableDecoratorTest
 {
     /**
-     * Creates a decorator with the
+     * Creates a decorator with the required mock
      * @param attributes
      * @return
      */
