@@ -243,7 +243,7 @@ public class AbstractTableDecoratorTest
                 "myChildId",
                 Types.BIGINT,
                 "long",
-                name,
+                "name",
                 "comment",
                 1, // ordinalPosition
                 6222, // length
