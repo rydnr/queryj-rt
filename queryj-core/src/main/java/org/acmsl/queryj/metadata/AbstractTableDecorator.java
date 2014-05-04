@@ -2067,16 +2067,6 @@ public abstract class AbstractTableDecorator
     }
 
     /**
-     * Retrieves all attributes, including parent's.
-     * @return such attributes.
-     */
-    @NotNull
-    public List<Attribute<String>> getAllAttributes()
-    {
-        return null;
-    }
-
-    /**
      * Checks whether any attribute is a clob.
      * @param attributes the {@link Attribute}s.
      * @param metadataTypeManager the {@link MetadataTypeManager} instance.
