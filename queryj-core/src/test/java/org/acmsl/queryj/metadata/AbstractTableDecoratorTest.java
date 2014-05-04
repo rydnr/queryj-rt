@@ -203,10 +203,6 @@ public class AbstractTableDecoratorTest
     @Test
     public void getAll_includes_parent_attributes()
     {
-        @NotNull final AbstractTableDecorator instance = setupTableDecorator();
-
-        Assert.assertFalse(instance.getContainsClobs());
-
         @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> parentTable;
 
         @NotNull final String name = "name";
