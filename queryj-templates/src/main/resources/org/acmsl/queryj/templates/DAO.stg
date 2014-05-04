@@ -1428,7 +1428,48 @@ protected void deleteNoFk(
 }
 >>
 
-delete4(table, parent, repository, C) ::= <<
+delete3(table, parent, repository, C) ::= <<
+<!
+  Creates a delete method, overridden 3.
+  @param table the table.
+  @param parent the parent.
+  @param repository the repository.
+  @param C the context.
+ !>
+/**
+ * Deletes {@link <table.name.voName>} information without considering foreign keys
+ * pointing to the row to delete.
+ <table.primaryKey:{ attr | <attribute_javadoc(attr=attr)>}; separator="\n">
+ * @param query the query used to perform the delete operation.
+ * @param dataSource the {@link DataSource} instance.
+<if(parent)>
+ * @param dataAccessManager the {@link <repository.capitalized>DataAccessManager} instance.
+<endif>
+ */
+protected void deleteNoFk(
+    <table.primaryKey:{ attr | <attribute_method_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">,
+    <notnull(C=C)>final String query,
+<if(parent)>
+    <notnull(C=C)>final DataSource dataSource,
+    <notnull(C=C)>final <repository.capitalized>DataAccessManager dataAccessManager)
+<else>
+    <notnull(C=C)>final DataSource dataSource)
+<endif>
+{
+    deleteNoFk(
+        <table.primaryKey:{ attr | <attr.name.uncapitalized>}; separator=",\n">,
+        query,
+<if(parent)>
+        new DataSourceTransactionManager(dataSource),
+        dataAccessManager.get<parent.name.voName>DAO(),
+<else>
+        new DataSourceTransactionManager(dataSource),
+<endif>
+        getDAOListener());
+}
+>>
+
+delete5(table, parent, repository, C) ::= <<
 <!
   Creates a delete method, overridden 4.
   @param table the table.
