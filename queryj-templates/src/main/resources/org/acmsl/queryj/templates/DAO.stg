@@ -1426,7 +1426,6 @@ protected void deleteNoFk(
 <else>
         new DataSourceTransactionManager(dataSource));
 <endif>
-        getDAOListener());
 }
 >>
 
