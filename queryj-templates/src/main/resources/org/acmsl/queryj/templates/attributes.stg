@@ -46,7 +46,7 @@ attribute_method_parameter_declaration(attribute, usePrefix, prefix, C) ::= <<
 !>
 <if(!attribute.primitive)><
   if(attribute.nullable)><
-   <nullable(C=C)><
+   nullable(C=C)><
   else><
    notnull(C=C)><
   endif><
