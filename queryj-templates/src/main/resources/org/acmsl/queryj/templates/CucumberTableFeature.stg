@@ -59,7 +59,7 @@ Feature: <table.name> code compiles
 
     And the following columns:
     |     table    |         column        | type      | pk    | allows null | readonly |   sequence    | keyword | boolean | length | precision |
-    <table.primaryKey:{ attr | <attribute(attr=attr, table=table)>}; separator="\n">
+    <table.primaryKey:{ attr | <attribute(attr=attr, table=table, pk=)>}; separator="\n">
     <table.own.minus.primaryKey:{ attr | <attribute(attr=attr, table=table)>}; separator="\n">
 
 <if(table.foreignKeys)>
