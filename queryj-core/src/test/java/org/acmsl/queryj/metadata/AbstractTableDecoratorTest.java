@@ -240,7 +240,7 @@ public class AbstractTableDecoratorTest
 
         parentAttributes.add(parentAttribute);
 
-        attributes.add(
+        @NotNull final Attribute<String> childAttribute =
             new AttributeIncompleteValueObject(
                 "myChildId",
                 Types.BIGINT,
