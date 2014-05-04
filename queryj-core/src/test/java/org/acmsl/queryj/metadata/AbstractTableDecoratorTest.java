@@ -77,6 +77,62 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public class AbstractTableDecoratorTest
 {
+    public void getContainsClobs_is_correct_if_table_does_not_contain_clobs()
+    {
+        @NotNull final String name = "name";
+        @NotNull final String comment = "comment";
+        @NotNull final List<Attribute<String>> primaryKey = new ArrayList<>(0);
+        @NotNull final List<Attribute<String>> attributes = new ArrayList<>();
+        @NotNull final List<ForeignKey<String>> foreignKeys = new ArrayList<>(0);
+        @Nullable final Table<String, Attribute<String>, List<Attribute<String>>> parentTable = null;
+        @Nullable final Attribute<String> staticAttribute = null;
+        final boolean voDecorated = false;
+        final boolean isRelationship = false;
+
+        @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table =
+            new TableValueObject(
+                name,
+                comment,
+                primaryKey,
+                attributes,
+                foreignKeys,
+                parentTable,
+                staticAttribute,
+                voDecorated,
+                isRelationship);
+
+        @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
+        @NotNull final MetadataTypeManager metadataTypeManager = new JdbcMetadataTypeManager();
+        EasyMock.expect(metadataManager.getMetadataTypeManager()).andReturn(metadataTypeManager).anyTimes();
+        EasyMock.replay(metadataManager);
+        @NotNull final DecoratorFactory decoratorFactory = CachingDecoratorFactory.getInstance();
+        @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
+
+        @NotNull final AbstractTableDecorator instance =
+            new AbstractTableDecorator(table, metadataManager, decoratorFactory, customSqlProvider)
+            {
+                /**
+                 * {@inheritDoc}
+                 */
+                @Nullable
+                @Override
+                protected Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>> createTableDecorator(
+                    @Nullable final String parentTable,
+                    @NotNull final ListDecorator<Attribute<String>> primaryKey,
+                    @NotNull final ListDecorator<Attribute<String>> attributes,
+                    final boolean isStatic,
+                    final boolean voDecorated,
+                    @NotNull final MetadataManager metadataManager,
+                    @NotNull final DecoratorFactory decoratorFactory,
+                    @NotNull final CustomSqlProvider customSqlProvider)
+                {
+                    return null;
+                }
+            };
+
+        Assert.assertFalse(instance.getContainsClobs());
+    }
+
     /**
      * Checks whether getContainsClobs() is correct for tables with no Clob attributes.
      */
