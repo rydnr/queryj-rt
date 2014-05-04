@@ -240,8 +240,8 @@ public class AbstractTableDecoratorTest
 
         attributes.add(
             new AttributeIncompleteValueObject(
-                "name",
-                Types.CLOB,
+                "myChildId",
+                Types.BIGINT,
                 "String",
                 name,
                 "comment",
