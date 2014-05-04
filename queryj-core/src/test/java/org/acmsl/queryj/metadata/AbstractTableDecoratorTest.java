@@ -265,7 +265,7 @@ public class AbstractTableDecoratorTest
 
         for (@NotNull final Attribute<DecoratedString> attribute : allAttributes)
         {
-        Assert.assertTrue(allAttributes.contains(childAttribute));
+            Assert.assertTrue(allAttributes.contains(childAttribute));
         Assert.assertTrue(allAttributes.contains(parentAttribute));
     }
 }
