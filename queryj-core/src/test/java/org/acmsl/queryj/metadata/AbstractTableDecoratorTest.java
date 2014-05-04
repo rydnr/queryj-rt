@@ -229,7 +229,7 @@ public class AbstractTableDecoratorTest
             new AttributeIncompleteValueObject(
                 "myParentId",
                 Types.BIGINT,
-                "String",
+                "long",
                 name,
                 "comment",
                 1, // ordinalPosition
