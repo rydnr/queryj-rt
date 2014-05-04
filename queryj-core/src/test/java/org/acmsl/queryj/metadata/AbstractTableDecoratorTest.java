@@ -253,6 +253,6 @@ public class AbstractTableDecoratorTest
 
         @NotNull final AbstractTableDecorator instance = setupTableDecorator();
 
-        Assert.assertFalse(instance.());
+        @NotNull final List<Attribute<String>> (instance.());
     }
 }
