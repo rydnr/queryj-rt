@@ -225,7 +225,7 @@ public class AbstractTableDecoratorTest
                 primaryKey,
                 attributes,
                 foreignKeys,
-                parentTable,
+                null,
                 staticAttribute,
                 voDecorated,
                 isRelationship);
