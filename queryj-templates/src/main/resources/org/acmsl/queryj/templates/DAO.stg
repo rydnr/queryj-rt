@@ -1358,6 +1358,8 @@ public void delete(
 <delete3(table=table, parent=parent, repository=repository, C=C)>
 
 <delete4(table=table, parent=parent, repository=repository, C=C)>
+
+<delete5(table=table, parent=parent, repository=repository, C=C)>
 >>
 
 delete2(table, parent, repository, C) ::= <<
