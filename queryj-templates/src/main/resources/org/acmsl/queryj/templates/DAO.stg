@@ -925,6 +925,7 @@ update(table, parent, repository, C) ::= <<
 <endif>
  * @return the number of entities updated.
  */
+@Override
 public int update(
 <if(parent)>
     <table.all.minus.readOnlyAttributes:{ attr | <attribute_declaration_impl(attr=attr, C=C)>}; separator=",\n">)
