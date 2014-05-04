@@ -79,6 +79,8 @@ public class AbstractTableDecoratorTest
 {
     protected AbstractTableDecorator setupTableDecorator(@NotNull final List<Attribute<String>> attributes)
     {
+        @NotNull final AbstractTableDecorator result;
+
         @NotNull final String name = "name";
         @NotNull final String comment = "comment";
         @NotNull final List<Attribute<String>> primaryKey = new ArrayList<>(0);
