@@ -600,7 +600,7 @@ endif>
         findByPrimaryKey(
             <table.primaryKey:{ attr | <attr.name.uncapitalized>}; separator=",\n">,
             auditSql(_FIND_BY_PK_SQL),
-            creategetDataSource());
+            getDataSource());
 }
 
 <find_by_primary_key2(table=table, parent=parent, repository=repository, C=C)>
