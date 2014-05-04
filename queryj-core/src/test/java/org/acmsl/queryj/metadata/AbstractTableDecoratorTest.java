@@ -203,7 +203,7 @@ public class AbstractTableDecoratorTest
     @Test
     public void getAll_includes_parent_attributes()
     {
-        @NotNull final String name = "parent name";
+        @NotNull final String name = "parentTable";
         @NotNull final String comment = "comment";
         @NotNull final List<Attribute<String>> primaryKey = new ArrayList<>(0);
         @NotNull final List<Attribute<String>> attributes = new ArrayList<>(0);
