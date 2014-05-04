@@ -208,5 +208,25 @@ public class AbstractTableDecoratorTest
         Assert.assertFalse(instance.getContainsClobs());
 
         @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> parentTable;
+
+        @NotNull final String name = "name";
+        @NotNull final String comment = "comment";
+        @NotNull final List<Attribute<String>> primaryKey = new ArrayList<>(0);
+        @NotNull final List<ForeignKey<String>> foreignKeys = new ArrayList<>(0);
+        @Nullable final Attribute<String> staticAttribute = null;
+        final boolean voDecorated = false;
+        final boolean isRelationship = false;
+
+        @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table =
+            new TableValueObject(
+                name,
+                comment,
+                primaryKey,
+                attributes,
+                foreignKeys,
+                parentTable,
+                staticAttribute,
+                voDecorated,
+                isRelationship);
     }
 }
