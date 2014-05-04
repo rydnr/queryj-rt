@@ -706,6 +706,7 @@ create(table, parent, repository, C) ::= <<
  <table.own.minus.readOnly.minus.externallyManagedAttributes:{ attr | <attribute_javadoc(attr=attr)>}; separator="\n">
 <endif>
  */
+@Override
 <notnull(C=C)>
 <if(table.voDecorated)>
 public <table.name.voName>Decorator create(
