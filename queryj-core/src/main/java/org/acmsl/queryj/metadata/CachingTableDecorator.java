@@ -1031,13 +1031,13 @@ public class CachingTableDecorator
             + "{ \"package\": \"org.acmsl.queryj.metadata\""
             + ", \"parentForeignKeyAlreadyRetrieved\": " + m__bParentForeignKeyAlreadyRetrieved
             + ", \"cachedPrimaryKey\": " + m__lCachedPrimaryKey
-            + ", \"cachedReadOnlyAttributes\": " + ToStringUtils.getInstance().toJson(m__lCachedReadOnlyAttributes)
+            + ", \"cachedReadOnlyAttributes\": " + m__lCachedReadOnlyAttributes
             + ", \"cachedParentTable\": " + m__CachedParentTable
-            + ", \"cachedAttributes\": " + ToStringUtils.getInstance().toJson(m__lCachedAttributes)
-            + ", \"cachedAllParentTables\": " + ToStringUtils.getInstance().toJson(m__lCachedAllParentTables)
-            + ", \"cachedStaticContents\": " + ToStringUtils.getInstance().toJson(m__lCachedStaticContents)
-            + ", \"cachedDynamicQueries\": " + ToStringUtils.getInstance().toJson(m__lCachedDynamicQueries)
-            + ", \"cachedCustomSelects\": " + ToStringUtils.getInstance().toJson(m__lCachedCustomSelects)
+            + ", \"cachedAttributes\": " + m__lCachedAttributes
+            + ", \"cachedAllParentTables\": " + m__lCachedAllParentTables
+            + ", \"cachedStaticContents\": " + m__lCachedStaticContents
+            + ", \"cachedDynamicQueries\": " + m__lCachedDynamicQueries
+            + ", \"cachedCustomSelects\": " + m__lCachedCustomSelects
             + ", \"cachedCustomUpdatesOrInserts\": " + ToStringUtils.getInstance().toJson(m__lCachedCustomUpdatesOrInserts)
             + ", \"cachedCustomResult\": " + m__CachedCustomResult
             + ", \"cachedChildAttributes\": " + ToStringUtils.getInstance().toJson(m__lCachedChildAttributes)
