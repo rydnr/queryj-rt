@@ -1099,7 +1099,7 @@ public abstract class AbstractTableDecorator
      * @param firstAttributes the child attributes.
      * @param secondAttributes the parent attributes.
      * @param parentTableName the parent table name.
-     * @param metadataManager the {@link MetadataManager</code> instance.
+     * @param metadataManager the {@link MetadataManager} instance.
      * @param tableDecoratorHelper the {@link org.acmsl.queryj.metadata.TableDecoratorHelper} instance.
      * @return the cleaned-up attributes.
      */
