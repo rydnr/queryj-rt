@@ -2075,7 +2075,7 @@ public abstract class AbstractTableDecorator
             + ", \"customSqlProvider\": " + m__CustomSqlProvider
             + ", \"readOnlyAttributes\": " + m__lReadOnlyAttributes
             + ", \"externallyManagedAttributes\": " + m__lExternallyManagedAttributes
-            + ", \"foreignKeys\": " + ToStringUtils.getInstance().toJson(m__lForeignKeys)
+            + ", \"foreignKeys\": " + m__lForeignKeys
             + ", \"parentForeignKey\": " + m__ParentForeignKey
             + ", \"childAttributes\": " + ToStringUtils.getInstance().toJson(m__lChildAttributes)
             + ", \"attributesShouldBeCleanedUp\": " + m__bAttributesShouldBeCleanedUp
