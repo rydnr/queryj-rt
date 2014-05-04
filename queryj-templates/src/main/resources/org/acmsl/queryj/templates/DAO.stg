@@ -1424,7 +1424,7 @@ protected void deleteNoFk(
         new DataSourceTransactionManager(dataSource),
         dataAccessManager.get<parent.name.voName>DAO(),
 <else>
-        new DataSourceTransactionManager(dataSource),
+        new DataSourceTransactionManager(dataSource))
 <endif>
         getDAOListener());
 }
