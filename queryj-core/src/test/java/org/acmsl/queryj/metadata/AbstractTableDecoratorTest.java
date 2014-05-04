@@ -266,7 +266,8 @@ public class AbstractTableDecoratorTest
         for (@NotNull final Attribute<DecoratedString> attribute : allAttributes)
         {
             Assert.assertTrue(
-                attribute.getName().getValue().equals("myChildId") || attribute.getName().getValue().equals("myParentId"));
+                   attribute.getName().getValue().equals("myChildId")
+                || attribute.getName().getValue().equals("myParentId"));
         }
     }
 }
