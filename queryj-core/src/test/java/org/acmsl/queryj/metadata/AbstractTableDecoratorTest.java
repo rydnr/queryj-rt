@@ -138,7 +138,7 @@ public class AbstractTableDecoratorTest
     }
 
     /**
-     * Checks whethe getContainsClobs() is correct for tables with Clob attributes.
+     * Checks whether getContainsClobs() is correct for tables with Clob attributes.
      */
     @Test
     public void getContainsClobs_is_correct_if_table_contains_clobs()
