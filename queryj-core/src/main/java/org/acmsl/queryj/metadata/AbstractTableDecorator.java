@@ -2101,7 +2101,10 @@ public abstract class AbstractTableDecorator
     {
         @NotNull final List<Attribute<DecoratedString>> result = new ArrayList<>();
 
-        @
+        if (parent != null)
+        {
+            result.add(getAllAttributes())
+        }
         return result;
     }
 
