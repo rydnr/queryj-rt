@@ -171,7 +171,7 @@ public class AbstractTableDecoratorTest
                 false, // allowsNull
                 null)); // value
 
-        @NotNull final AbstractTableDecorator instance = setupTableDecorator(new ArrayList<>());
+        @NotNull final AbstractTableDecorator instance = setupTableDecorator();
 
         Assert.assertFalse(instance.getContainsClobs());
 
