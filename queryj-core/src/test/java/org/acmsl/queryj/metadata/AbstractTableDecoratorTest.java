@@ -84,7 +84,7 @@ public class AbstractTableDecoratorTest
      */
     protected AbstractTableDecorator setupTableDecorator(@NotNull final List<Attribute<String>> attributes)
     {
-        return setupTableDecorator(attributes, null);
+        return setupTableDecorator(new ArrayList<>(0), null);
     }
 
     /**
