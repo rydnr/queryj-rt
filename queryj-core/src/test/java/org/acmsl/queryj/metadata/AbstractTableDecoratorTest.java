@@ -175,26 +175,6 @@ public class AbstractTableDecoratorTest
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
 
         @NotNull final AbstractTableDecorator instance = setupTableDecorator(new ArrayList<>());
-            new AbstractTableDecorator(table, metadataManager, decoratorFactory, customSqlProvider)
-            {
-                /**
-                 * {@inheritDoc}
-                 */
-                @Nullable
-                @Override
-                protected Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>> createTableDecorator(
-                    @Nullable final String parentTable,
-                    @NotNull final ListDecorator<Attribute<String>> primaryKey,
-                    @NotNull final ListDecorator<Attribute<String>> attributes,
-                    final boolean isStatic,
-                    final boolean voDecorated,
-                    @NotNull final MetadataManager metadataManager,
-                    @NotNull final DecoratorFactory decoratorFactory,
-                    @NotNull final CustomSqlProvider customSqlProvider)
-                {
-                    return null;
-                }
-            };
 
         Assert.assertFalse(instance.getContainsClobs());
     }
