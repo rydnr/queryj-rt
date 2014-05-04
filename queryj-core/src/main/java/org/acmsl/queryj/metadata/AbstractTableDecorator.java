@@ -1095,7 +1095,7 @@ public abstract class AbstractTableDecorator
 
     }
     /**
-     * Removes the duplicated attributes from {@link secondAttributes}.
+     * Removes the duplicated attributes from {@code secondAttributes}.
      * @param firstAttributes the child attributes.
      * @param secondAttributes the parent attributes.
      * @param parentTableName the parent table name.
