@@ -225,7 +225,7 @@ public class AbstractTableDecoratorTest
                 voDecorated,
                 isRelationship);
 
-        attributes.add(
+        parentAttributes.add(
             new AttributeIncompleteValueObject(
                 "name",
                 Types.CLOB,
