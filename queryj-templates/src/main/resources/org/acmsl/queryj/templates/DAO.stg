@@ -1442,7 +1442,7 @@ delete4(table, parent, repository, C) ::= <<
  * pointing to the row to delete.
  <table.primaryKey:{ attr | <attribute_javadoc(attr=attr)>}; separator="\n">
  * @param query the query used to perform the delete operation.
- * @param dataSource the {@link DataSource} instance.
+ * @param transactionManager the {@link PlatformTransactionManager} instance.
 <if(parent)>
  * @param dataAccessManager the {@link <repository.capitalized>DataAccessManager} instance.
 <endif>
