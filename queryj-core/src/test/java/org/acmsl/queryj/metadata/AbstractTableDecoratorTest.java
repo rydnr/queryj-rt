@@ -78,7 +78,7 @@ import java.util.List;
 public class AbstractTableDecoratorTest
 {
     /**
-     * Creates a decorator
+     * Creates a decorator with the
      * @param attributes
      * @return
      */
