@@ -2101,14 +2101,4 @@ public abstract class AbstractTableDecorator
             + ", \"attributesShouldBeCleanedUp\": " + m__bAttributesShouldBeCleanedUp
             + ", \"package\": \"" + AbstractTableDecorator.class.getPackage().getName() + "\" }";
     }
-
-    /**
-     * Retrieves all attributes, including parent's.
-     * @return such attributes.
-     */
-    @NotNull
-    public List<Attribute<String>> getAllAttributes()
-    {
-        return null;
-    }
 }
