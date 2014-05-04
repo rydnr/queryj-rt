@@ -827,6 +827,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
                         }
 */
                     }
+/*
                     catch (@NotNull final DevelopmentModeException debugging)
                     {
                         throw debugging;
