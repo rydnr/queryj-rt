@@ -77,7 +77,6 @@ endif>
 
     return
         <cs.name.uncapitalized>(
-            <cs.parameters:{p | <p.name.uncapitalized>,}; separator="\n">
             sql,
             preparedStatementCreatorFactory,
             new Object[<if(!cs.parameters)>0],
@@ -93,7 +92,6 @@ endif>
 /**
  * Custom select \<i><cs.id>\</i>:\<br/>
  * \<b><cs.description>\</b>.
- <cs.parameters:{ p | <parameter_javadoc(parameter=p)>}; separator="\n">
  * @param sql the SQL.
  * @param preparedStatementCreatorFactory the
  * {@link PreparedStatementCreatorFactory} instance
@@ -109,9 +107,6 @@ endif>
  */
 <custom_select_return_nullable_maybe(cs=cs, result=cs.result, C=C)>
 protected <custom_select_return(cs=cs, table=table, result=cs.result, C=C)> <cs.name.uncapitalized>(<
-    if(cs.parameters)>
-    <cs.parameters:{ p | <attribute_method_parameter_declaration(attribute=p, usePrefix=false, prefix="", C=C)>}; separator=",\n">,<
-    endif>
     <notnull(C=C)>final String sql,
     <notnull(C=C)>final PreparedStatementCreatorFactory preparedStatementCreatorFactory,
     <nullable(C=C)>final Object[] params,
