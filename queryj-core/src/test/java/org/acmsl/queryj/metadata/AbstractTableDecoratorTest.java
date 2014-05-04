@@ -145,7 +145,6 @@ public class AbstractTableDecoratorTest
     @Test
     public void getContainsClobs_is_correct_if_table_does_not_contain_clobs()
     {
-
         @NotNull final AbstractTableDecorator instance = setupTableDecorator(new ArrayList<>());
 
         Assert.assertFalse(instance.getContainsClobs());
