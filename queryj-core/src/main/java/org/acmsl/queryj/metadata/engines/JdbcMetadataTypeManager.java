@@ -1814,6 +1814,7 @@ public class JdbcMetadataTypeManager
                 result = Types.NULL;
                 break;
             case Literals.NUMBER_U:
+                /*
                 if (precision > 0)
                 {
                     result = Types.DECIMAL;
