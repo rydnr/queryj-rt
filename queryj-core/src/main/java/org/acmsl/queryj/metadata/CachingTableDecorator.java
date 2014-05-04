@@ -1038,10 +1038,10 @@ public class CachingTableDecorator
             + ", \"cachedStaticContents\": " + m__lCachedStaticContents
             + ", \"cachedDynamicQueries\": " + m__lCachedDynamicQueries
             + ", \"cachedCustomSelects\": " + m__lCachedCustomSelects
-            + ", \"cachedCustomUpdatesOrInserts\": " + ToStringUtils.getInstance().toJson(m__lCachedCustomUpdatesOrInserts)
+            + ", \"cachedCustomUpdatesOrInserts\": " + m__lCachedCustomUpdatesOrInserts
             + ", \"cachedCustomResult\": " + m__CachedCustomResult
-            + ", \"cachedChildAttributes\": " + ToStringUtils.getInstance().toJson(m__lCachedChildAttributes)
-            + ", \"cachedForeignKeys\": " + ToStringUtils.getInstance().toJson(m__lCachedForeignKeys)
+            + ", \"cachedChildAttributes\": " + m__lCachedChildAttributes
+            + ", \"cachedForeignKeys\": " + m__lCachedForeignKeys
             + ", \"cachedParentForeignKey\": " + m__CachedParentForeignKey
             + ", \"cachedExternallyManagedAttributes\": " + ToStringUtils.getInstance().toJson(m__lCachedExternallyManagedAttributes)
             + ", \"cachedDifferentCustomResults\": " + ToStringUtils.getInstance().toJson(m__lCachedDifferentCustomResults)
