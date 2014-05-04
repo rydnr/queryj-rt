@@ -2101,6 +2101,7 @@ public abstract class AbstractTableDecorator
     {
         @NotNull final List<Attribute<DecoratedString>> result = new ArrayList<>();
 
+
         return result;
     }
 
