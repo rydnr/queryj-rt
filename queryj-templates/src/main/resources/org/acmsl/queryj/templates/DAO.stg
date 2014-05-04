@@ -782,7 +782,7 @@ protected <table.name.voName> create(
             createTransactionTemplate(getDataSource()),
             <table.name.voName>ValueObjectFactory.getInstance(),
 <if(parent)>
-            <repository.capitalized>DataAccessManager.getInstance(),
+            <repository.capitalized>DataAccessManager.getInstance().get<parent.name.voName>DAO(),,
 <endif>
             getDAOListener());
 }
