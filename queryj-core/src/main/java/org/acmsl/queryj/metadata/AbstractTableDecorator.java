@@ -1127,7 +1127,6 @@ public abstract class AbstractTableDecorator
      * Sums up parent and child's attributes.
      * @return such collection.
      */
-    @SuppressWarnings("unused")
     @NotNull
     public ListDecorator<Attribute<DecoratedString>> getAllAttributes()
     {
