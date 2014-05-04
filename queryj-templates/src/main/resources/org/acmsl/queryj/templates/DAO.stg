@@ -1463,9 +1463,8 @@ protected void deleteNoFk(
         new TransactionTemplate(transactionManager),
         dataAccessManager.get<parent.name.voName>DAO(),
 <else>
-        new DataSourceTransactionManager(dataSource),
-<endif>
         new TransactionTemplate(transactionManager),
+<endif>
         getDAOListener());
 }
 >>
