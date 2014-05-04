@@ -97,7 +97,6 @@ public class AbstractTableDecoratorTest
         return setupTableDecorator(attributes, null);
     }
 
-
     /**
      * Creates a decorator with the required mock dependencies.
      * @param attributes the attributes.
