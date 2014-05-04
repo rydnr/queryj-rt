@@ -774,7 +774,7 @@ public abstract class AbstractAttributeDecorator
     /**
      * Retrieves the Java type of the property.
      * @param type the type.
-     * @param metadataManager the <code>MetadataManager</code>
+     * @param metadataManager the {@link MetadataManager}
      * instance.
      * @return such information.
      */
