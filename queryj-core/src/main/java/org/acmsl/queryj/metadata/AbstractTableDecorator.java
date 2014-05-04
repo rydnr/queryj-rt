@@ -2102,6 +2102,11 @@ public abstract class AbstractTableDecorator
             + ", \"package\": \"" + AbstractTableDecorator.class.getPackage().getName() + "\" }";
     }
 
+    /**
+     * Retrieves all attributes, including parent's.
+     * @return
+     */
+    @NotNull
     public List<Attribute<String>> getAllAttributes()
     {
         return null;  //To change body of created methods use File | Settings | File Templates.
