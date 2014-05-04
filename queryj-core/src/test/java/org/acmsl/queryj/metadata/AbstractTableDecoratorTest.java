@@ -77,7 +77,7 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public class AbstractTableDecoratorTest
 {
-    protected void setupTableDecorator(@NotNull final List )
+    protected void setupTableDecorator(@NotNull final List<Attribute<String>> attributes)
     {
         @NotNull final String name = "name";
         @NotNull final String comment = "comment";
