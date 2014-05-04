@@ -2094,8 +2094,8 @@ public abstract class AbstractTableDecorator
      */
     @NotNull
     protected List<Attribute<String>> getAllAttributes(
-        @NotNull final List<Attribute<String>> attributes, @Nullable final Table<String, Attribute<String>, List<Attribute<String>>> parent)
-                                                        )
+        @NotNull final List<Attribute<String>> attributes,
+        @Nullable final Table<String, Attribute<String>, List<Attribute<String>>> parent)
     {
         @NotNull final List<Attribute<String>> result = new ArrayList<>();
 
