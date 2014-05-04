@@ -2099,7 +2099,7 @@ public abstract class AbstractTableDecorator
         @NotNull final ListDecorator<Attribute<DecoratedString>> attributes,
         @Nullable final Table<DecoratedString, Attribute<DecoratedString>, List<Attribute<DecoratedString>>> parent)
     {
-        @NotNull final List<Attribute<String>> result = new ArrayList<>();
+        @NotNull final List<Attribute<DecoratedString>> result = new ArrayList<>();
 
         return result;
     }
