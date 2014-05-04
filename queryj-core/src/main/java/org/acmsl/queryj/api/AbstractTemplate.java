@@ -832,6 +832,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
                     {
                         throw debugging;
                     }
+*/
                     catch (@NotNull final Throwable throwable)
                     {
                         t_ExceptionToWrap = throwable;
