@@ -2066,7 +2066,6 @@ public abstract class AbstractTableDecorator
         return containClobs(getAttributes(), getMetadataManager().getMetadataTypeManager(), TableDecoratorHelper.getInstance());
     }
 
-
     /**
      * Retrieves all attributes, including parent's.
      * @return such attributes.
