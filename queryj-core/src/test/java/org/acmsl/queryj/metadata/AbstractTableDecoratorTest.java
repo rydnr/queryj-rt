@@ -244,7 +244,7 @@ public class AbstractTableDecoratorTest
                 Types.BIGINT,
                 "long",
                 "name",
-                "comment",
+                "child comment",
                 1, // ordinalPosition
                 6222, // length
                 1, // precision
