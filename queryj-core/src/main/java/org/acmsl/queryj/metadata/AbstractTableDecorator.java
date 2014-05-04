@@ -2108,7 +2108,7 @@ public abstract class AbstractTableDecorator
         }
         if (attributes != null)
         {
-            result.addAll()
+            result.addAll(attributes);
         }
         return result;
     }
