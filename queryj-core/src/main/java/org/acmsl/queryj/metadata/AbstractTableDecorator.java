@@ -2084,7 +2084,7 @@ public abstract class AbstractTableDecorator
      * @return such attributes.
      */
     @NotNull
-    public List<Attribute<DecoratedString>> getAllAttributes()
+    public ListDecorator<Attribute<DecoratedString>> getAllAttributes()
     {
         return getAllAttributes(getAttributes(), getParentTable());
     }
