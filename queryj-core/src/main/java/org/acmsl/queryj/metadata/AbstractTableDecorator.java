@@ -2104,7 +2104,7 @@ public abstract class AbstractTableDecorator
 
     /**
      * Retrieves all attributes, including parent's.
-     * @return
+     * @return such attributes.
      */
     @NotNull
     public List<Attribute<String>> getAllAttributes()
