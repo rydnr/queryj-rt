@@ -131,7 +131,7 @@ public class AbstractTableDecoratorTest
                 }
             };
 
-        Assert.assertFalse(instance.getContainsClobs());
+        return result;
     }
 
     /**
