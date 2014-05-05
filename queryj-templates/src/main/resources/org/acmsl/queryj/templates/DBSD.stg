@@ -44,3 +44,4 @@ source(C) ::= <<
 <!
  Defines the rules to generate DBSD files for a given schema.
  @param C the context.
+!>
