@@ -72,7 +72,7 @@ sourceImpl(table, C) ::= <<
 <project_imports(
   basePackageName=C.project_package,
   voSubpackageName=typeInitMap.voSubpackageName,
-  table=table)>
+  table=table,)>
 
 /*
  * Importing V24-Commons classes.
