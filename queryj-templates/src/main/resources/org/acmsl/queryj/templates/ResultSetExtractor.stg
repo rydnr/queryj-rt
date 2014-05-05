@@ -110,7 +110,7 @@ project_imports(basePackageName, voSubpackageName, table) ::= <<
 <!
   Generates the project imports.
   @param basePackageName the base package name.
-  @param voSubpackageName the subpackage for the value.
+  @param voSubpackageName the subpackage for the value object.
   @param table the table.
 !>
 /*
