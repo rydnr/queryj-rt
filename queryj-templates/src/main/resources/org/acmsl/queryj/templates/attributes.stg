@@ -248,6 +248,7 @@ if(attr.clob)><
 else><
   if(attr.date)
     >resultSet.get<attr.objectType>("<attr.name>")<
+  else>
 endif>
 >>
 
