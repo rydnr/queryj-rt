@@ -47,4 +47,5 @@ source(C) ::= <<
 !>
 OWNER(<C.jdbc_user>)
 USER(<C.jdbc_user>)
+USER_ROLE(ROLE_APP_REF)
 >>
