@@ -69,6 +69,12 @@ sourceImpl(repository, tables, C) ::= <<
 */
 <package_declaration(p=C.package)>
 
+<project_imports(
+  basePackageName=C.project_package,
+  daoSubpackageName=typeInitMap.daoSubpackageName,
+  table=table,
+  repository=C.repository)>
+
 /*
  * Importing project classes.
  */
