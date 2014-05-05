@@ -266,7 +266,7 @@ date_attribute_resultset_retrieval(attribute, C) ::= <<
  Deals with Date attributes
  @param attr the attribute.
  @param C the context.
- !>resultSet.getClob("<attribute.name>")
+ !>resultSet.getTimestamp("<attribute.name>")
 >>
 
 attribute_equals(attribute) ::= <<
