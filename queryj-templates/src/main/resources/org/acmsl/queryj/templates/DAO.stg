@@ -1482,6 +1482,39 @@ public List\<<table.name.voName>\> findConstantsBy<attribute.name.capitalized>(<
     return result;
 }
 
+/**
+ * Loads \<i><table.name>\</i> information from the pre-existing constants,
+ * filtering by \<i><attribute.name>\</i>.
+ <attribute_javadoc(attr=attribute)>
+ * @return the {@link <table.name.voName>} instance.
+ */
+@Override
+<notnull(C=C)>
+public List\<<table.name.voName>\> findConstantsBy<attribute.name.capitalized>(<
+    if(!attribute.primitive)><
+      if(!attribute.primitiveWrapper)
+       ><notnull(C=C)><
+      else><
+        if(attribute.nullable)
+         ><notnull(C=C)><
+        endif><
+      endif><
+    endif>final <attribute.primitiveType> <attribute.name.lowercased.uncapitalized>)
+{
+    <notnull(C=C)>final List\<<table.name.voName>\> result = new ArrayList\<<table.name.voName>\>(FIXED_CONSTANTS.size());
+
+    for  (<nullable(C=C)>final <table.name.voName> item : FIXED_CONSTANTS)
+    {
+        if  (   (item != null)
+             <find_constant_check_attribute(attribute=attribute); separator="\n">)
+        {
+            result.add(item);
+        }
+    }
+
+    return result;
+}
+
 >>
 
 static_attribute_check(attr) ::= <<
