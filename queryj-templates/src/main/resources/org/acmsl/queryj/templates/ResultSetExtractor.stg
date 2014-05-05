@@ -72,6 +72,7 @@ sourceImpl(table, C) ::= <<
 /*
  * Importing C.repository classes.
  */
+import <basePackageName>.<voSubpackageName>.<table.name.voName>;
 
 /*
  * Importing V24-Commons classes.
