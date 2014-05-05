@@ -73,5 +73,5 @@ table_def(table, repostory, C) ::= <<
  @param repository the repository.
  @param C the context.
 !>
-//<<
+//\<<             ------
 >>
