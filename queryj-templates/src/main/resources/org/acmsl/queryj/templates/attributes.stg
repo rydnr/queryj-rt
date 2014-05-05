@@ -247,7 +247,7 @@ if(attr.clob)><
   clob_attribute_resultset_retrieval(attribute=attr, C=C)><
 else><
   if(attr.date)
-  >resultSet.get<attr.objectType>("<attr.name>")<
+    >resultSet.get<attr.objectType>("<attr.name>")<
 endif>
 >>
 
