@@ -1416,7 +1416,7 @@ find_constant_by_pk(primaryKey, table, C) ::= <<
  */
 @Override
 <nullable(C=C)>
-public <table.name.voName> findConstantByPrimaryKey(
+public <table.name.voName> findConstantByPk(
     <primaryKey:{ attr | <attribute_method_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
 {
     <nullable(C=C)><table.name.voName> result;
