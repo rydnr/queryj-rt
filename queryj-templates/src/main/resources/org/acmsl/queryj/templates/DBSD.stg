@@ -68,4 +68,5 @@ TARGET_DBMS(ORACLE)
 
 table_def(table, repostory, C) ::= <<
 <!
+
 >>
