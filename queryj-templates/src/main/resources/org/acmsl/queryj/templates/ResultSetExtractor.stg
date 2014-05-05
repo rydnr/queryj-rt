@@ -68,10 +68,8 @@ sourceImpl(table, C) ::= <<
   C=C)><endif>
 */
 <package_declaration(p=C.package)>
-<checkers_import(C=C)>
-<if(C.implement_markers)>
 
-<endif>
+<checkers_import(C=C)>
 /*
  * Importing JDK classes.
  */
