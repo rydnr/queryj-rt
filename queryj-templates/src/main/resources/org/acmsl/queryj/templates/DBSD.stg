@@ -70,5 +70,6 @@ table_def(table, repostory, C) ::= <<
 <!
  Writes the DDL for a table, in DBSD format.
  @param table the table.
+ @param repository the repository.
  @param
 >>
