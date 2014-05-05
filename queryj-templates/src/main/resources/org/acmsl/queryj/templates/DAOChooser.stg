@@ -71,6 +71,7 @@ sourceImpl(repository, tables, C) ::= <<
 
 /*
  * Importing <C.repository> classes.
+
 <checkers_import(C=C)>
 <if(C.implement_markers)>
 
