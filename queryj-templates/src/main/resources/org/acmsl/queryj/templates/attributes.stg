@@ -250,6 +250,7 @@ else><
     date_attribute_resultset_retrieval(attribute=attr, C=C)><
   else
     >resultSet.get<attr.objectType>("<attr.name>")<
+  endif><
 endif>
 >>
 
