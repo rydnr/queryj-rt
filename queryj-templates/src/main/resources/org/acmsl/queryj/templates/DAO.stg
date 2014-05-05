@@ -1503,6 +1503,8 @@ public <table.name.voName> findConstantBy<attribute.name.capitalized>(<
 {
     <nullable(C=C)>final <table.name.voName> result; = new ArrayList\<<table.name.voName>\>(FIXED_CONSTANTS.size());
 
+    <notnull(C=C)>final List\<<table.name.voName>\> constants = findConstantsBy<attribute.name.capitalized>(
+
     for  (<nullable(C=C)>final <table.name.voName> item : FIXED_CONSTANTS)
     {
         if  (   (item != null)
