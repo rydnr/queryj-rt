@@ -94,15 +94,16 @@ import java.io.Serializable;
 <class(table=table, repository=C.repository, C=C)>
 >>
 
-project_imports(basePackageName, voSubpackageName, table) ::= <<
+project_imports(basePackageName, voSubpackageName, table, repository) ::= <<
 <!
   Generates the project imports.
   @param basePackageName the base package name.
   @param voSubpackageName the subpackage for the value object.
   @param table the table.
+  @param repository the repository name.
 !>
 /*
- * Importing <trName> classes.
+ * Importing <repository> classes.
  */
 import <basePackageName>.<voSubpackageName>.<table.name.voName>;
 >>
