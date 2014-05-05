@@ -163,6 +163,7 @@ defaultExtractor(table, repository, C) ::= <<
  * @throws DataAccessException with information about any
  * custom exception.
  */
+@Override
 <notnull(C=C)>
 protected <table.name.voName> extractData(
     <notnull(C=C)>final ResultSet resultSet,
