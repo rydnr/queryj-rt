@@ -249,6 +249,7 @@ else><
   if(attr.date)
     >resultSet.get<attr.objectType>("<attr.name>")<
   else
+    >resultSet.get<attr.objectType>("<attr.name>")<
 endif>
 >>
 
