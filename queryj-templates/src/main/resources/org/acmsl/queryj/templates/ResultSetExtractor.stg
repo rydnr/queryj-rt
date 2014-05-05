@@ -70,7 +70,9 @@ sourceImpl(table, C) ::= <<
 <package_declaration(p=C.package)>
 
 /*
- * Importing C.
+ * Importing C.repository classes.
+ */
+
 /*
  * Importing V24-Commons classes.
  */
