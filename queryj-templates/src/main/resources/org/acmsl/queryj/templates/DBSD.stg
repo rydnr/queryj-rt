@@ -63,5 +63,5 @@ DEFAULT_TABLE_TABLESPACE(DATA)
 DEFAULT_INDEX_TABLESPACE(INDX)
 TARGET_DBMS(ORACLE)
 
-<tables:{ t | <table_def(
+<tables:{ t | <table_def(table=t, repository=repository, C=C)>}; separator="
 >>
