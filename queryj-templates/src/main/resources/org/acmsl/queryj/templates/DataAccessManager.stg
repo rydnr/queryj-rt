@@ -87,6 +87,21 @@ import org.acmsl.commons.patterns.dao.DataAccessManager;
 <class(repository=repository, tables=tables, C=C)>
 >>
 
+project_imports(basePackageName, voSubpackageName, table, repository) ::= <<
+<!
+  Generates the project imports.
+  @param basePackageName the base package name.
+  @param voSubpackageName the subpackage for the value object.
+  @param table the table.
+  @param repository the repository name.
+!>
+/*
+ * Importing <repository.capitalized> classes.
+ */
+import <basePackageName>.<voSubpackageName>.<table.name.voName>;
+import <basePackageName>.<voSubpackageName>.<table.name.voName>ValueObjectFactory;
+>>
+
 description(repository) ::= <<
 <!
   Generates the first line of the generated file description.
