@@ -1457,7 +1457,7 @@ find_constant_methods(attribute, table, C) ::= <<
  */
 @Override
 <notnull(C=C)>
-public List\<<table.name.voName>\> findConstantBy<attribute.name.capitalized>(<
+public List\<<table.name.voName>\> findConstantsBy<attribute.name.capitalized>(<
     if(!attribute.primitive)><
       if(!attribute.primitiveWrapper)
        ><notnull(C=C)><
