@@ -33,12 +33,13 @@
 //
 // Author: Jose San Leandro Armendariz
 //
-// Description: Defines the rules to generate DBSD database
-//              implementations.
+// Description: Defines the rules to generate DBSD files.
 //
 //
-group FkStatementSetter;
+group DBSD;
 
 import "queryj.stg"
 
 source(C) ::= <<
+<!
+ Defines the rules to generate
