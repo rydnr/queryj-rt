@@ -69,6 +69,11 @@ sourceImpl(table, C) ::= <<
 */
 <package_declaration(p=C.package)>
 
+/*
+ * Importing V24-Commons classes.
+ */
+import com.ventura24.commons.dao.V24ResultSetExtractor;
+
 <checkers_import(C=C)>
 /*
  * Importing JDK classes.
