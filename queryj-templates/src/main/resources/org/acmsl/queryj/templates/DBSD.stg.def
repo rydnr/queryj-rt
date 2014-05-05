@@ -11,7 +11,7 @@ type : per-repository;
 output: Java;
 
 // The filename builder.
-filename  builder : <repository.>DAO.java;
+filename  builder : <repository.capitalized>.dbsd;
 
 // The package.
 package: <packageName>;
