@@ -84,7 +84,7 @@ import com.ventura24.commons.dao.V24ResultSetExtractor;
 /*
  * Importing Spring classes.
  */
-
+import org.springframework.dao.DataAccessException;
 <checkers_import(C=C)>
 
 /*
