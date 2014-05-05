@@ -69,10 +69,23 @@ sourceImpl(table, C) ::= <<
 */
 <package_declaration(p=C.package)>
 
-/*
- * Importing C.repository classes.
- */
-import <basePackageName>.<voSubpackageName>.<table.name.voName>;
+<project_imports(
+  basePackageName=C.project_package,
+  package=C.package,
+  jdbcOperationsSubpackageName=typeInitMap.jdbcOperationsSubpackageName,
+  customResults=table.differentCustomResults,
+  voSubpackageName=typeInitMap.voSubpackageName,
+  voName=table.name.voName,
+  voFactorySubpackageName=typeInitMap.voFactorySubpackageName,
+  rdbSubpackageName=typeInitMap.rdbSubpackageName,
+  trSubpackageName=typeInitMap.tableRepositorySubpackageName,
+  trName=C.repository.capitalized,
+  damSubpackageName=typeInitMap.dataAccessManagerSubpackageName,
+  fkssSubpackageName=typeInitMap.foreignKeyStatementSetterSubpackageName,
+  fkAttributes=table.foreignKeys,
+  baseDAOSubpackageName=typeInitMap.baseDAOSubpackageName,
+  table=table,
+  parent=table.parentTable)>
 
 /*
  * Importing V24-Commons classes.
