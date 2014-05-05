@@ -45,7 +45,9 @@ source(C) ::= <<
  Defines the rules to generate DBSD files for a given schema.
  @param C the context.
 !>
-dbsd(tables=C.tables, repository=C.repository, C=C)>
+<dbsd(tables=C.tables, repository=C.repository, C=C)>
+>>
+
 OWNER(<C.jdbc_user>)
 USER(<C.jdbc_user>)
 USER_ROLE(ROLE_APP_REF)
