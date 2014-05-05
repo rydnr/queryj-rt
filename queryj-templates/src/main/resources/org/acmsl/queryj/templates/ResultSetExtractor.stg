@@ -177,7 +177,7 @@ protected <table.name.voName> extractData(
 /**
  * Extracts {@link <table.name.voName>} information from given result set.
  * @param resultSet the result set.
- * @param listener the {@link <repository.voName>DAOListener} instance.
+ * @param listener the {@link DAOListener} instance.
  * @param factory the {@link <table.name.voName>ValueObjectFactory}
  * instance.
  * @return the {@code <table.name.voName>} or
@@ -189,7 +189,7 @@ protected <table.name.voName> extractData(
 <notnull(C=C)>
 protected <table.name.voName> extractData(
     <notnull(C=C)>final ResultSet resultSet,
-    <nullable(C=C)>final <repository.voName>DAOListener listener,
+    <nullable(C=C)>final DAOListener listener,
     <notnull(C=C)>final <table.name.voName>ValueObjectFactory factory)
   throws  SQLException,
           DataAccessException
