@@ -48,6 +48,11 @@ source(C) ::= <<
 <dbsd(tables=C.tables, repository=C.repository, C=C)>
 >>
 
+source(C) ::= <<
+<!
+ Defines the rules to generate DBSD files for a given schema.
+ @param C the context.
+!>
 OWNER(<C.jdbc_user>)
 USER(<C.jdbc_user>)
 USER_ROLE(ROLE_APP_REF)
