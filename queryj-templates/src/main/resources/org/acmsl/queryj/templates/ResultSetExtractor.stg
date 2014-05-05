@@ -108,9 +108,9 @@ import java.io.Serializable;
 
 project_imports(basePackageName, voSubpackageName, table) ::= <<
 <!
-  Generates the project imports
+  Generates the project imports.
   @param basePackageName the base package name.
-  @param voSubpackageName the subpackage for the value
+  @param voSubpackageName the subpackage for the value.
   @param table the table.
 !>
 /*
