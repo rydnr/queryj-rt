@@ -80,11 +80,18 @@ sourceImpl(table, C) ::= <<
  */
 import com.ventura24.commons.dao.DAOListener;
 import com.ventura24.commons.dao.V24ResultSetExtractor;
+
+/*
+ * Importing Spring classes.
+ */
+
 <checkers_import(C=C)>
+
 /*
  * Importing JDK classes.
  */
 import java.io.Serializable;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 <if(table.attributeTypes)>
 <table.attributeTypes:{ t | import <t>;}; separator="\n">
