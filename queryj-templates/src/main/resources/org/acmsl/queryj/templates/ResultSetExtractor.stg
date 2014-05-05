@@ -69,7 +69,7 @@ sourceImpl(table, C) ::= <<
 */
 <package_declaration(p=C.package)>
 
-<imports
+<imports(
 /*
  * Importing C.repository classes.
  */
