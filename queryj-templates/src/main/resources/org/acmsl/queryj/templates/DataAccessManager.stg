@@ -98,8 +98,8 @@ project_imports(basePackageName, voSubpackageName, table, repository) ::= <<
 /*
  * Importing <repository.capitalized> classes.
  */
+import <basePackageName>.dao.<table.name.voName>DAO;
 import <basePackageName>.dao.impl.<table.name.voName>DAOFactory;
-import <basePackageName>.<voSubpackageName>.<table.name.voName>ValueObjectFactory;
 >>
 
 description(repository) ::= <<
