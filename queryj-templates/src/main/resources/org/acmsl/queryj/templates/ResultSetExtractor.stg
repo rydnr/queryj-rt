@@ -89,7 +89,6 @@ import java.io.Serializable;
 <table.attributeTypes:{ t | import <t>;}; separator="\n">
 <endif>
 
-
 <class(table=table, repository=C.repository, C=C)>
 >>
 
