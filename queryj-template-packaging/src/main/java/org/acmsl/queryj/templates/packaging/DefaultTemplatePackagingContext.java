@@ -142,6 +142,17 @@ public  class DefaultTemplatePackagingContext
                 .toHashCode();
     }
 
+    /**
+     * Retrieves the package name.
+     *
+     * @return such information.
+     */
+    @NotNull
+    @Override
+    public String getPackageName()
+    {
+        return super.getPackageName();
+    }
 
     /**
      * {@inheritDoc}
