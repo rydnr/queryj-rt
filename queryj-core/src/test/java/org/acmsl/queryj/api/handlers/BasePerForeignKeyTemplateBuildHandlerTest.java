@@ -125,15 +125,10 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
                  */
                 @NotNull
                 @Override
-                @NotNull
                 protected abstract String retrievePackage(
                     @NotNull final ForeignKey<String> foreignKey,
                     @NotNull final Engine<String> engineName,
                     @NotNull final String projectPackage);
-                protected String retrievePackage(
-                    @NotNull final ForeignKey<String> foreignKey,
-                    @NotNull final Engine<String> engineName,
-                    @NotNull final String projectPackage)
                 {
                     return null;
                 }
