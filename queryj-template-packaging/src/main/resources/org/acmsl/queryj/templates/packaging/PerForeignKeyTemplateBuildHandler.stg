@@ -144,7 +144,7 @@ public class <C.class_name>
 
     /**
      * Creates a template with required information.
-     * @param templateFactory the {@link org.acmsl.queryj.api.<def.name.noExtension>PerForeignKeyTemplateFactory} instance.
+     * @param templateFactory the {@link org.acmsl.queryj.api.<def.name.noExtension>TemplateFactory} instance.
      * @param foreignKey the {@link ForeignKey}.
      * @param parameters the parameter map.
      * @return the template.
