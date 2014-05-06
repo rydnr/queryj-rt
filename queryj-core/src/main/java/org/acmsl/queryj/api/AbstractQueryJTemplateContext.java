@@ -402,7 +402,7 @@ public abstract class AbstractQueryJTemplateContext
      * @return such information.
      */
     @NotNull
-    protected String getPackageName(@NotNull final TemplateDef<String> templateDef)
+    protected String getPackageName(@NotNull final boolean isJava)
     {
         @NotNull final String result;
 
