@@ -71,7 +71,7 @@ public class PerForeignKeyTemplateBuildHandlerTemplate<C extends TemplatePackagi
 
     /**
      * Retrieves the template name.
-     * @return "PerTableTemplateBuildHandler".
+     * @return "PerForeignKeyTemplateBuildHandler".
      */
     @NotNull
     @Override
