@@ -44,6 +44,7 @@ import org.acmsl.queryj.api.PerCustomResultTemplate;
 import org.acmsl.queryj.api.PerCustomResultTemplateFactory;
 import org.acmsl.queryj.customsql.CustomResultUtils;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
+import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.metadata.CachingDecoratorFactory;
 import org.acmsl.queryj.metadata.DecoratorFactory;
@@ -225,6 +226,8 @@ public abstract class BasePerCustomResultTemplateBuildHandler
 
         storeTemplates(t_lTemplates, parameters);
     }
+
+    protected abstract T createTemplate(final TF templateFactory, final Result<String> t_resultElement, final List<Property<String>> byResult, final QueryJCommand parameters);
 
     /**
      * Checks whether the generation is allowed for given result.
