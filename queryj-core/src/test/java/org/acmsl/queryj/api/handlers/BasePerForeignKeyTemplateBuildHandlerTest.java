@@ -42,6 +42,7 @@ import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.PerForeignKeyTemplate;
 import org.acmsl.queryj.api.PerForeignKeyTemplateFactory;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.metadata.ForeignKeyDecorator;
 import org.acmsl.queryj.metadata.engines.Engine;
 import org.acmsl.queryj.metadata.vo.ForeignKey;
 import org.acmsl.queryj.metadata.vo.ForeignKeyValueObject;
@@ -82,6 +83,8 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
                 new ArrayList<>(0),
                 "target",
                 false);
+
+        @NotNull final ForeignKeyDecorator decorator =
     }
 
     /**
