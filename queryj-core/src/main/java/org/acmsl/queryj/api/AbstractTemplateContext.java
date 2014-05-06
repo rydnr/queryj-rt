@@ -312,14 +312,6 @@ public abstract class AbstractTemplateContext
         {
             result = aux;
         }
-        else
-        {
-        }
-
-        if (result == null)
-        {
-            result = defaultValue;
-        }
 
         return result;
     }
