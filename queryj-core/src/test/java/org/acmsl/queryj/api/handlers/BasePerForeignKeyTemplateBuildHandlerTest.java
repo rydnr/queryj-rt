@@ -67,7 +67,7 @@ import java.util.List;
 public class BasePerForeignKeyTemplateBuildHandlerTest
 {
     /**
-     * Creates a new {@link BasePerForeignKeyTemplateBuildHandler} instance.
+     * Checks
      * @return such instance.
      */
     @Test
