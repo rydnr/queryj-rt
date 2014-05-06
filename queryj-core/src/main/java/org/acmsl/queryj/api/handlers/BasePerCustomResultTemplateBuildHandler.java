@@ -227,6 +227,14 @@ public abstract class BasePerCustomResultTemplateBuildHandler
         storeTemplates(t_lTemplates, parameters);
     }
 
+    /**
+     * Creates a template.
+     * @param templateFactory the template factory.
+     * @param result the result.
+     * @param properties the properties.
+     * @param parameters the parameters.
+     * @return the template.
+     */
     protected abstract T createTemplate(
         @NotNull final TF templateFactory,
         @NotNull final Result<String> result,
