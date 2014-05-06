@@ -155,6 +155,18 @@ public  class DefaultTemplatePackagingContext
     }
 
     /**
+     * Retrieves the package name.
+     *
+     * @return such information.
+     */
+    @NotNull
+    @Override
+    public String getPackageName()
+    {
+        return getPackageName(getTemplateDef());
+    }
+
+    /**
      * {@inheritDoc}
      */
     @Override
