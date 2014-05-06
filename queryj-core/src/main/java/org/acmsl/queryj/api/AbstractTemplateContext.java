@@ -310,7 +310,7 @@ public abstract class AbstractTemplateContext
 
         if (result == null)
         {
-            throw exceptionToThrow;
+            result = defaultValue;
         }
 
         return result;
