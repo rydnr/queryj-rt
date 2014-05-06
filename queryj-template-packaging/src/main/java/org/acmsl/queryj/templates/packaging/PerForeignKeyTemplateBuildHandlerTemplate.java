@@ -64,7 +64,7 @@ public class PerForeignKeyTemplateBuildHandlerTemplate<C extends TemplatePackagi
      * Creates a new instance using given context.
      * @param context the context.
      */
-    public PerTableTemplateBuildHandlerTemplate(@NotNull final C context)
+    public PerForeignKeyTemplateBuildHandlerTemplate(@NotNull final C context)
     {
         super(context);
     }
