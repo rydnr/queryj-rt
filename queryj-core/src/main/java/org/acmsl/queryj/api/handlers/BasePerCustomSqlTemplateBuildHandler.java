@@ -208,9 +208,6 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
                     createTemplate(
                         templateFactory,
                         t_Sql,
-                        /*
-                        retrievePackage(t_Sql, engineName, parameters),
-                        */
                         parameters));
             }
         }
