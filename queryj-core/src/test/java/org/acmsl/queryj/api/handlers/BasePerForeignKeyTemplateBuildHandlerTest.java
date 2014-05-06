@@ -93,7 +93,7 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
                     @NotNull final Engine<String> engineName,
                     @NotNull final String projectPackage)
                 {
-                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                    return null;
                 }
 
                 @Override
