@@ -151,8 +151,7 @@ public  class DefaultTemplatePackagingContext
     @Override
     public String getPackageName()
     {
-        return getPackageName(getTemplateDef())
-        return super.getPackageName();
+        return getPackageName(getTemplateDef());
     }
 
     /**
