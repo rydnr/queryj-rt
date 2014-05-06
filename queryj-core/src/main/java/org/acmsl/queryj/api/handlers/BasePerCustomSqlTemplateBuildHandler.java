@@ -106,40 +106,6 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
     public boolean handle(@NotNull final QueryJCommand parameters)
         throws  QueryJBuildException
     {
-        @NotNull final DatabaseMetaData t_DatabaseMetadata = retrieveDatabaseMetaData(parameters);
-
-        buildTemplates(parameters, t_DatabaseMetadata);
-
-        return false;
-    }
-
-    /**
-     * Builds the templates.
-     * @param parameters the parameters.
-     * @param metaData the database metadata.
-     */
-    protected void buildTemplates(
-        @NotNull final QueryJCommand parameters, @NotNull final DatabaseMetaData metaData)
-      throws  QueryJBuildException
-    {
-        try
-        {
-            buildTemplates(parameters, metaData.getDatabaseProductName());
-        }
-        catch  (@NotNull final SQLException sqlException)
-        {
-            throw
-                new CannotRetrieveDatabaseInformationException(sqlException);
-        }
-    }
-
-    /**
-     * Builds the templates.
-     * @param parameters the parameters.
-     */
-    protected void buildTemplates(@NotNull final QueryJCommand parameters)
-      throws  QueryJBuildException
-    {
         buildTemplates(
             parameters,
             retrieveMetadataManager(parameters),
