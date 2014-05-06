@@ -58,5 +58,5 @@ import org.junit.runners.JUnit4;
 public class BasePerForeignKeyTemplateBuildHandlerTest
 {
     @Test
-    public void decorate
+    public void decorate_creates_a_decor
 }
