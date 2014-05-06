@@ -72,9 +72,9 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
     }
 
 
-    protected BasePerForeignKeyTemplateBuildHandler create()
+    protected BasePerForeignKeyTemplateBuildHandler createHandler()
     {
-        @NotNull final BasePerForeignKeyTemplateBuildHandler instance =
+        return
             new BasePerForeignKeyTemplateBuildHandler()
             {
                 /**
