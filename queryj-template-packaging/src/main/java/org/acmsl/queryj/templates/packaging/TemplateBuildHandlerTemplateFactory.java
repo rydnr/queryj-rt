@@ -101,7 +101,7 @@ public class TemplateBuildHandlerTemplateFactory
                 result = new PerCustomSqlTemplateBuildHandlerTemplate<>(context);
                 break;
             case PER_FOREIGN_KEY:
-                result = new PerForeignKeyTemplateBuildHandlerTemplate<>();
+                result = new PerForeignKeyTemplateBuildHandlerTemplate<>(context);
                 break;
             case PER_TABLE:
             default:
