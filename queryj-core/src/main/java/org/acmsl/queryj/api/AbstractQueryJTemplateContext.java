@@ -398,7 +398,7 @@ public abstract class AbstractQueryJTemplateContext
 
     /**
      * Retrieves the package name.
-     * @param isJava the template def.
+     * @param isJava whether the
      * @return such information.
      */
     @NotNull
