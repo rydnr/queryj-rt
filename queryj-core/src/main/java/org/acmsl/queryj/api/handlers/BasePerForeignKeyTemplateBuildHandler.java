@@ -202,18 +202,6 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
         @NotNull final ForeignKey<String> foreignKey,
         @NotNull final QueryJCommand parameters)
         throws  QueryJBuildException;
-    {
-        @NotNull final PerForeignKeyTemplateContext t_Context =
-            new PerForeignKeyTemplateContext(foreignKey, parameters);
-
-        t_Context.setDecoratorFactory(CachingDecoratorFactory.getInstance());
-
-        t_Context.setPackageName(
-            retrievePackage(
-                foreignKey, retrieveMetadataManager(parameters).getEngine(), parameters));
-
-        return templateFactory.createTemplate(foreignKey, t_Context, parameters);
-    }
 
     /**
      * Retrieves the package name from the attribute map.
