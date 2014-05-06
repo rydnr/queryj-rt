@@ -160,10 +160,13 @@ public  class DefaultTemplatePackagingContext
     @NotNull
     protected String getPackageName(@NotNull final TemplateDef<String> templateDef)
     {
+        @NotNull final String result;
+
         switch (templateDef.getOutput())
         {
             case TemplateDefOutput.JAVA:
-                result = super.getPackageName()
+                result = super.getPackageName();
+                break;
 
         }
     }
