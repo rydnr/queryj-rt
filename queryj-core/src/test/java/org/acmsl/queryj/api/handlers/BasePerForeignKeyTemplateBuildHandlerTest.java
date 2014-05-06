@@ -44,6 +44,7 @@ import org.acmsl.queryj.api.PerForeignKeyTemplateFactory;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.metadata.engines.Engine;
 import org.acmsl.queryj.metadata.vo.ForeignKey;
+import org.acmsl.queryj.metadata.vo.ForeignKeyValueObject;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -74,7 +75,8 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
     {
         @NotNull final BasePerForeignKeyTemplateBuildHandler instance = createHandler();
 
-        @NotNull final ForeignKey<String>
+        @NotNull final ForeignKey<String> foreignKey =
+            new ForeignKeyValueObject()
     }
 
     /**
