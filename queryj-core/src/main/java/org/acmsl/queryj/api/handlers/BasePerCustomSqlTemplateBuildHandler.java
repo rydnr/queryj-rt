@@ -64,8 +64,6 @@ import org.checkthread.annotations.ThreadSafe;
 /*
  * Importing some JDK classes.
  */
-import java.sql.DatabaseMetaData;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
