@@ -99,6 +99,11 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
                     return null;
                 }
 
+                /**
+                 * {@inheritDoc}
+                 * @param templates the templates.
+                 * @param parameters the parameter map.
+                 */
                 @Override
                 protected void storeTemplates(
                     @NotNull final List templates, @NotNull final QueryJCommand parameters)
