@@ -71,7 +71,7 @@ public enum TemplateDefOutput
     /**
      * Properties files.
      */
-    PROPERTIES;
+    PROPERTIES,
 
     /**
      * Properties files.
