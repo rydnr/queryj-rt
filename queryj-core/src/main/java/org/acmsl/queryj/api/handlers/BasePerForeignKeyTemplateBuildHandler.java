@@ -197,11 +197,11 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
      * @return the template.
      */
     @Nullable
-    protected T createTemplate(
+    protected abstract T createTemplate(
         @NotNull final TF templateFactory,
         @NotNull final ForeignKey<String> foreignKey,
         @NotNull final QueryJCommand parameters)
-        throws  QueryJBuildException
+        throws  QueryJBuildException;
     {
         @NotNull final PerForeignKeyTemplateContext t_Context =
             new PerForeignKeyTemplateContext(foreignKey, parameters);
