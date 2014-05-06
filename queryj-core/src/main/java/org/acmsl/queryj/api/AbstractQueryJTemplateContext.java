@@ -406,6 +406,7 @@ public abstract class AbstractQueryJTemplateContext
     {
         @NotNull final String result;
 
+        if (isJava)
         switch (templateDef.getOutput())
         {
             case JAVA:
