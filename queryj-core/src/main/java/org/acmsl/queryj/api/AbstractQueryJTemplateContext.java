@@ -409,10 +409,10 @@ public abstract class AbstractQueryJTemplateContext
         if (isJava)
         {
             result = super.getPackageName();
-            break;
-            default:
-                result = "";
-                break;
+        }
+        else
+        {
+            result = "";
         }
 
         return result;
