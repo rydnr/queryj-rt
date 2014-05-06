@@ -160,7 +160,7 @@ public  class DefaultTemplatePackagingContext
     @NotNull
     protected String getPackageName(@NotNull final TemplateDef<String> templateDef)
     {
-        return getPackageName(getTemplateDef());
+        if (templateDef.getOutput())
     }
 
     /**
