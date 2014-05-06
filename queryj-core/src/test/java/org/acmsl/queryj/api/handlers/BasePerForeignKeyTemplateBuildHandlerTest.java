@@ -38,15 +38,24 @@ package org.acmsl.queryj.api.handlers;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.api.PerForeignKeyTemplate;
+import org.acmsl.queryj.api.PerForeignKeyTemplateFactory;
+import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.metadata.engines.Engine;
+import org.acmsl.queryj.metadata.vo.ForeignKey;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+
+import java.util.List;
 
 /**
  * Tests for {@link BasePerForeignKeyTemplateBuildHandler}.
@@ -61,5 +70,36 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
     public void decorate_creates_a_ForeignKeyDecorator()
     {
         @NotNull final BasePerForeignKeyTemplateBuildHandler instance =
+            new BasePerForeignKeyTemplateBuildHandler()
+            {
+                @NotNull
+                @Override
+                protected PerForeignKeyTemplateFactory retrieveTemplateFactory()
+                {
+                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+
+                @Nullable
+                @Override
+                protected PerForeignKeyTemplate createTemplate(@NotNull final PerForeignKeyTemplateFactory templateFactory, @NotNull final ForeignKey<String> foreignKey, @NotNull final QueryJCommand parameters)
+                    throws QueryJBuildException
+                {
+                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+
+                @NotNull
+                @Override
+                protected String retrievePackage(@NotNull final ForeignKey<String> foreignKey, @NotNull final
+                Engine<String> engineName, @NotNull final String projectPackage)
+                {
+                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+
+                @Override
+                protected void storeTemplates(@NotNull final List templates, @NotNull final QueryJCommand parameters)
+                {
+                    //To change body of implemented methods use File | Settings | File Templates.
+                }
+            }
     }
 }
