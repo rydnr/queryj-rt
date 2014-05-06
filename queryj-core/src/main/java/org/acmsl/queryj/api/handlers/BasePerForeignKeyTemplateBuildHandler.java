@@ -198,7 +198,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
      * @return the template.
      */
     @Nullable
-    protected BaseDAOFactoryTemplate createTemplate(
+    protected TF createTemplate(
         @NotNull final BaseDAOFactoryTemplateFactory templateFactory,
         @NotNull final String tableName,
         @NotNull final List<Row<String>> staticContents,
