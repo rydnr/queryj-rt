@@ -143,9 +143,7 @@ public  class DefaultTemplatePackagingContext
     }
 
     /**
-     * Retrieves the package name.
-     *
-     * @return such information.
+     * {@inheritDoc}.
      */
     @NotNull
     @Override
