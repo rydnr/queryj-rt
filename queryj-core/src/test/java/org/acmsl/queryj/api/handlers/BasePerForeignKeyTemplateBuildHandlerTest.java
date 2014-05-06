@@ -66,6 +66,10 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public class BasePerForeignKeyTemplateBuildHandlerTest
 {
+    /**
+     * Creates a new {@link BasePerForeignKeyTemplateBuildHandler} instance.
+     * @return such instance.
+     */
     @Test
     public void decorate_creates_a_ForeignKeyDecorator()
     {
