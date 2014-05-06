@@ -204,7 +204,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
         @NotNull final QueryJCommand parameters)
         throws  QueryJBuildException
     {
-        @NotNull final PerTableTemplateContext t_Context =
+        @NotNull final PerForeignKeyTemplateContext t_Context =
             new PerTableTemplateContext(tableName, staticContents, parameters);
 
         t_Context.setDecoratorFactory(CachingDecoratorFactory.getInstance());
