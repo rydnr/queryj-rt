@@ -178,7 +178,7 @@ public class <C.class_name>
         @NotNull final Engine\<String> engine,
         @NotNull final String packageName)
     {
-        return buildPackageName(tableName, engine, retrieveProjectPackage(parameters));
+        return buildPackageName(tableName, engine, packageName);
     }
 
     /**
