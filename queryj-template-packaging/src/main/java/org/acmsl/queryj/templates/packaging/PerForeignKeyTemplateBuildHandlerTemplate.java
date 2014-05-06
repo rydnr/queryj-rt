@@ -52,6 +52,34 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2014/05/06 11:40
  */
 @ThreadSafe
-public class PerForeignKeyTemplateBuildHandlerTemplate
+public class PerForeignKeyTemplateBuildHandlerTemplate<C extends TemplatePackagingContext>
+    extends TemplateBuildHandlerTemplate<C>
+{
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = 9122581776783678705L;
+
+    /**
+     * Creates a new instance using given context.
+     * @param context the context.
+     */
+    public PerTableTemplateBuildHandlerTemplate(@NotNull final C context)
+    {
+        super(context);
+    }
+
+    /**
+     * Retrieves the template name.
+     * @return "PerTableTemplateBuildHandler".
+     */
+    @NotNull
+    @Override
+    public String getTemplateName()
+    {
+        return Literals.PER_TABLE_TEMPLATE_BUILD_HANDLER;
+    }
+}
+
 {
 }
