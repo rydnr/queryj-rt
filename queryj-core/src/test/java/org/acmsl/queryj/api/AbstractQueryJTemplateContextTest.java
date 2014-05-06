@@ -222,17 +222,6 @@ public class AbstractQueryJTemplateContextTest
     }
 
     /**
-     * Tests whether it detects if the output is Java or not.
-     */
-    @Test
-    public void isJava_detects_Java_outputs()
-    {
-        @NotNull final AbstractTemplateContext instance = createContext();
-
-        Assert.assertEquals("file.name", instance.getFileName());
-    }
-
-    /**
      * Retrieves an {@link AbstractQueryJTemplateContext}.
      * @return such context.
      */
