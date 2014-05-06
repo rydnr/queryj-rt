@@ -192,7 +192,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
     /**
      * Creates a template with required information.
      * @param templateFactory the {@link org.acmsl.queryj.api.PerTableTemplateFactory} instance.
-     * @param foreignKey the table name.
+     * @param foreignKey the foreign key.
      * @param parameters the parameter map.
      * @return the template.
      */
