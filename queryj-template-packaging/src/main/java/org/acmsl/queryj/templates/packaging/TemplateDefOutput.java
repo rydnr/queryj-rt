@@ -54,7 +54,7 @@ import org.checkthread.annotations.ThreadSafe;
  * The supported outputs in template defs.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
- * Date: 2013/08/14
+ * Created: 2013/08/14
  */
 @ThreadSafe
 public enum TemplateDefOutput
