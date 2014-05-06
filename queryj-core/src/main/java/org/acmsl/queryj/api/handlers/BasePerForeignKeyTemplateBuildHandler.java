@@ -173,7 +173,8 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
                 && (metadataManager.isGenerationAllowedForForeignKey(t_ForeignKey)))
             {
                 t_lTemplates.add(
-                    templateFactory.createTemplate(
+                    createTemplate(
+                        templateFactory,
                         t_ForeignKey,
                         /*
                         retrievePackage(
