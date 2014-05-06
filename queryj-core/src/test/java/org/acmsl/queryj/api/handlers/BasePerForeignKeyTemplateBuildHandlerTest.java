@@ -141,24 +141,6 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
                     @NotNull final List templates, @NotNull final QueryJCommand parameters)
                 {
                 }
-
-                /**
-                 * Retrieves the package name from the attribute map.
-                 *
-                 * @param foreignKey the foreign key.
-                 * @param engine     the engine.
-                 * @param parameters the parameter map.
-                 * @return the package name.
-                 */
-                @NotNull
-                @Override
-                protected String retrievePackage(
-                    @NotNull final ForeignKey<String> foreignKey,
-                    @NotNull final Engine<String> engine,
-                    @NotNull final String package)
-                {
-                    return super.retrievePackage(foreignKey, engine, parameters);
-                }
             };
     }
 }
