@@ -303,6 +303,8 @@ public abstract class AbstractTemplateContext
         {
             aux = new QueryJCommandWrapper<T>(command).getSetting(key);
         }
+
+        if ()
         else
         {
             result = aux;
