@@ -217,7 +217,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
      */
     @NotNull
     protected abstract String retrievePackage(
-        @NotNull final String tableName,
+        @NotNull final ForeignKey<String tableName,
         @NotNull final Engine<String> engineName,
         @NotNull final String projectPackage,
         @NotNull final PackageUtils packageUtils);
