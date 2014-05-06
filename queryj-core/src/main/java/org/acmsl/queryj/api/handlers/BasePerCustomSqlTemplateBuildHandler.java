@@ -74,6 +74,7 @@ import java.util.List;
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  * @since 2.0
  */
+@SuppressWarnings("unused")
 @ThreadSafe
 public abstract class BasePerCustomSqlTemplateBuildHandler
     <T extends PerCustomSqlTemplate<C>, C extends PerCustomSqlTemplateContext>
