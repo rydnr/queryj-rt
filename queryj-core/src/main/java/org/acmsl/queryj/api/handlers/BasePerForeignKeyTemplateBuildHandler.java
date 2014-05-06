@@ -197,7 +197,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
      * @return the template.
      */
     @Nullable
-    protected TF createTemplate(
+    protected T createTemplate(
         @NotNull final TF templateFactory,
         @NotNull final ForeignKey<String> foreignKey,
         @NotNull final QueryJCommand parameters)
