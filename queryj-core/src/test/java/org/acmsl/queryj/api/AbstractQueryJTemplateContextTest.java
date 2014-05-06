@@ -222,6 +222,10 @@ public class AbstractQueryJTemplateContextTest
     }
 
     /**
+     * Tests whether it detects if the output is Java or not.
+     *
+     */
+    /**
      * Retrieves an {@link AbstractQueryJTemplateContext}.
      * @return such context.
      */
