@@ -141,6 +141,8 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
                     @NotNull final List templates, @NotNull final QueryJCommand parameters)
                 {
                 }
+
+
             };
     }
 }
