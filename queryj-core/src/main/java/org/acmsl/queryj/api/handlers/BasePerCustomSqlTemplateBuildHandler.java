@@ -217,8 +217,8 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
 
     /**
      * Creates a template.
-     * @param templateFactory the
-     * @param sql
+     * @param templateFactory the template factory.
+     * @param sql the
      * @param parameters
      * @return
      */
