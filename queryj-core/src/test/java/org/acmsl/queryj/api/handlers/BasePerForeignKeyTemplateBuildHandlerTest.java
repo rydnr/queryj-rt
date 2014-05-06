@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for BasePerForeignKeyTemplateBuildHandler.
  *
  * Date: 2014/05/06
  * Time: 14:56
