@@ -106,7 +106,7 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
                  */
                 @NotNull
                 @Override
-                protected PerForeignKeyTemplateFactory retrieveTemplateFactory()
+                protected PerForeignKeyTemplateFactory<<PerForeignKeyTemplate<PerForeignKeyTemplateContext>, PerForeignKeyTemplateContext >>> retrieveTemplateFactory()
                 {
                     return null;
                 }
