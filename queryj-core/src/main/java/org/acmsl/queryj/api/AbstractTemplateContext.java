@@ -251,7 +251,7 @@ public abstract class AbstractTemplateContext
     protected <T> T getValue(
         @NotNull final String key,
         @NotNull final QueryJCommand command,
-        @NotNull final QueryJNonCheckedException exceptionToThrow)
+        @NotNull final T defaultValue)
     {
         return getValue(key, getPk(), command, exceptionToThrow);
     }
