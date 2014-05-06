@@ -188,7 +188,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
 
     /**
      * Retrieves the package name from the attribute map.
-     * @param tableName the table name.
+     * @param foreignKey the foreign key.
      * @param engine the engine.
      * @param parameters the parameter map.
      * @return the package name.
