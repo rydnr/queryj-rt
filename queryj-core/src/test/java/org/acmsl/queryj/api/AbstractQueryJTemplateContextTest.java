@@ -229,6 +229,7 @@ public class AbstractQueryJTemplateContextTest
     {
 
     }
+
     /**
      * Retrieves an {@link AbstractQueryJTemplateContext}.
      * @return such context.
