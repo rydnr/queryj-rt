@@ -209,7 +209,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
 
     /**
      * Retrieves the package name.
-     * @param tableName the foreign key.
+     * @param foreignKey the foreign key.
      * @param engineName the engine name.
      * @param projectPackage the project package.
      * @param packageUtils the <code>PackageUtils</code> instance.
