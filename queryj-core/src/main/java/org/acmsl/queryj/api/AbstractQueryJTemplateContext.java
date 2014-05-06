@@ -407,11 +407,9 @@ public abstract class AbstractQueryJTemplateContext
         @NotNull final String result;
 
         if (isJava)
-        switch (templateDef.getOutput())
         {
-            case JAVA:
-                result = super.getPackageName();
-                break;
+            result = super.getPackageName();
+            break;
             default:
                 result = "";
                 break;
