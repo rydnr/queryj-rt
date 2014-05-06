@@ -229,7 +229,8 @@ public abstract class BasePerCustomResultTemplateBuildHandler
 
     protected abstract T createTemplate(
         @NotNull final TF templateFactory,
-        @NotNull final Result<String> t_resultElement, final List<Property<String>> byResult, final QueryJCommand parameters);
+        @NotNull final Result<String> t_resultElement,
+        @NotNull final List<Property<String>> byResult, final QueryJCommand parameters);
 
     /**
      * Checks whether the generation is allowed for given result.
