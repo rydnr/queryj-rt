@@ -53,7 +53,6 @@ import org.acmsl.queryj.metadata.SqlResultDAO;
 import org.acmsl.queryj.metadata.engines.Engine;
 import org.acmsl.queryj.tools.DebugUtils;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
-import org.acmsl.queryj.tools.PackageUtils;
 
 /*
  * Importing some JetBrains annotations.
