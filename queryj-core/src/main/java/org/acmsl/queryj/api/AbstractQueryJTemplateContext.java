@@ -393,7 +393,7 @@ public abstract class AbstractQueryJTemplateContext
     @Override
     public String getPackageName()
     {
-        return getPackageName(getTemplateDef());
+        return getPackageName(isJava());
     }
 
     /**
