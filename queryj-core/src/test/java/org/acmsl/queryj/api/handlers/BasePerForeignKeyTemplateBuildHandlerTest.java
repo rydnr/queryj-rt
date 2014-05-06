@@ -70,6 +70,7 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
     public void decorate_creates_a_ForeignKeyDecorator()
     {
         @NotNull final BasePerForeignKeyTemplateBuildHandler instance =
+            Mock
             new BasePerForeignKeyTemplateBuildHandler()
             {
                 @NotNull
