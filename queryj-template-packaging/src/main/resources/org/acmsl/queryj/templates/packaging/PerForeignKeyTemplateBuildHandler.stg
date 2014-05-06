@@ -163,7 +163,7 @@ public class <C.class_name>
 
         t_Context.setPackageName(
             retrievePackage(
-                tableName, retrieveMetadataManager(parameters).getEngine(), parameters));
+                foreignKey, retrieveMetadataManager(parameters).getEngine(), parameters));
 
         return templateFactory.createTemplate(tableName, staticContents, t_Context, parameters);
     }
