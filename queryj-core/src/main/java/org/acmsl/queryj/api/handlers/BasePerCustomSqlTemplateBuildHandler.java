@@ -138,9 +138,7 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
      * @param parameters the parameters.
      * @param engineName the engine name.
      */
-    protected void buildTemplates(
-        @NotNull final QueryJCommand parameters,
-        @NotNull final String engineName)
+    protected void buildTemplates(@NotNull final QueryJCommand parameters)
       throws  QueryJBuildException
     {
         buildTemplates(
