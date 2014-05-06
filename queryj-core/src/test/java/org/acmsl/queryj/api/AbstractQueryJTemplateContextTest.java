@@ -227,7 +227,9 @@ public class AbstractQueryJTemplateContextTest
     @Test
     public void isJava_detects_Java_outputs()
     {
+        @NotNull final AbstractTemplateContext instance = createContext();
 
+        Assert.assertEquals("file.name", instance.getFileName());
     }
 
     /**
