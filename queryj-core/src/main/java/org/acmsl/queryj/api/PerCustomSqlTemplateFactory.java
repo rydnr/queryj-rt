@@ -69,5 +69,6 @@ public interface PerCustomSqlTemplateFactory<T extends PerCustomSqlTemplate<C>, 
     @NotNull
     public T createTemplate(
         @NotNull final Sql<String> sql,
+        @NotNull final C context,
         @NotNull final QueryJCommand command);
 }
