@@ -176,7 +176,7 @@ public class <C.class_name>
     protected String retrievePackage(
         @NotNull final String tableName,
         @NotNull final Engine\<String> engine,
-        @NotNull final QueryJCommand parameters)
+        @NotNull final String packageName)
     {
         return buildPackageName(tableName, engine, retrieveProjectPackage(parameters));
     }
