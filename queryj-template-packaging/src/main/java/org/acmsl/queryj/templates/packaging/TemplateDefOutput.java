@@ -74,9 +74,9 @@ public enum TemplateDefOutput
     PROPERTIES,
 
     /**
-     * Properties files.
+     * DBSD files.
      */
-    PROPERTIES;
+    DBSD;
 
     /**
      * Retrieves the template def output for given value.
