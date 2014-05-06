@@ -215,6 +215,9 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
         storeTemplates(t_lTemplates, parameters);
     }
 
+    protected abstract T createTemplate(final PerCustomSqlTemplateFactory<T,C> templateFactory, final Sql<String>
+        t_sql, final QueryJCommand parameters);
+
     /**
      * Retrieves the package name from the attribute map.
      * @param customSql the custom SQL.
