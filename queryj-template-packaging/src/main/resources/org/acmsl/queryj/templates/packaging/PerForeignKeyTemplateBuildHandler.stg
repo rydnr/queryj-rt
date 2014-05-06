@@ -198,7 +198,7 @@ public class <C.class_name>
 
         @NotNull final ST packageTemplate = new ST("<def.packageName>");
 
-        packageTemplate.add(Literals.FOREIGN_KEY, new DecoratedString(tableName));
+        packageTemplate.add(Literals.FOREIGN_KEY, foreignKey);
         packageTemplate.add(Literals.PACKAGE_NAME, new DecoratedString(projectPackage));
         packageTemplate.add(Literals.ENGINE, new EngineDecorator(engine));
 
