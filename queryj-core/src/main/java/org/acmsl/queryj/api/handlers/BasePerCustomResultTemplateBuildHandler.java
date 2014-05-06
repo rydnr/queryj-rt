@@ -229,7 +229,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
 
     protected abstract T createTemplate(
         @NotNull final TF templateFactory,
-        @NotNull final Result<String> t_resultElement,
+        @NotNull final Result<String> result,
         @NotNull final List<Property<String>> properties,
         @NotNull final QueryJCommand parameters);
 
