@@ -161,6 +161,9 @@ public  class DefaultTemplatePackagingContext
     protected String getPackageName(@NotNull final TemplateDef<String> templateDef)
     {
         switch (templateDef.getOutput())
+        {
+            case TemplateDefOutput.JAVA:
+        }
     }
 
     /**
