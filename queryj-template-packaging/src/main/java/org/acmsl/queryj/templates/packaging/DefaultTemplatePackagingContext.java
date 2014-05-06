@@ -160,7 +160,7 @@ public  class DefaultTemplatePackagingContext
     @NotNull
     protected String getPackageName(@NotNull final TemplateDef<String> templateDef)
     {
-        switch (TemplateDefOutput.getEnumFromString(templateDef.getOutput())
+        switch (templateDef.getOutput())
         {
             case TemplateDefOutput.JAVA:
 
