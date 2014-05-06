@@ -215,7 +215,8 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
         storeTemplates(t_lTemplates, parameters);
     }
 
-    protected abstract T createTemplate(final PerCustomSqlTemplateFactory<T,C> templateFactory, final Sql<String>
+    protected abstract T createTemplate(
+        final PerCustomSqlTemplateFactory<T, C> templateFactory, final Sql<String>
         t_sql, final QueryJCommand parameters);
 
     /**
