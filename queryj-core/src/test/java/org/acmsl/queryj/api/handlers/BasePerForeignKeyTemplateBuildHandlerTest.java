@@ -72,7 +72,7 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
     }
 
 
-    protected BasePerForeignKeyTemplateBuildHandlervoid decorate_creates_a_ForeignKeyDecorator()
+    protected BasePerForeignKeyTemplateBuildHandler create()
     {
         @NotNull final BasePerForeignKeyTemplateBuildHandler instance =
             new BasePerForeignKeyTemplateBuildHandler()
