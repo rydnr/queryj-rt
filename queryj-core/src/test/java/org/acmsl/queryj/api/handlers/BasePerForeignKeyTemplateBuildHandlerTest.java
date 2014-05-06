@@ -90,7 +90,8 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
                 @Override
                 protected String retrievePackage(
                     @NotNull final ForeignKey<String> foreignKey,
-                    @NotNull final Engine<String> engineName, @NotNull final String projectPackage)
+                    @NotNull final Engine<String> engineName,
+                    @NotNull final String projectPackage)
                 {
                     return null;  //To change body of implemented methods use File | Settings | File Templates.
                 }
