@@ -82,9 +82,8 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
                 @Nullable
                 @Override
                 protected PerForeignKeyTemplate createTemplate(@NotNull final PerForeignKeyTemplateFactory templateFactory, @NotNull final ForeignKey<String> foreignKey, @NotNull final QueryJCommand parameters)
-                    throws QueryJBuildException
                 {
-                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                    return null;
                 }
 
                 @NotNull
