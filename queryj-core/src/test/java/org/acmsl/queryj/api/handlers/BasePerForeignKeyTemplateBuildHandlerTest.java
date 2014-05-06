@@ -154,7 +154,8 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
                 @Override
                 protected String retrievePackage(
                     @NotNull final ForeignKey<String> foreignKey,
-                    @NotNull final Engine<String> engine, @NotNull final QueryJCommand parameters)
+                    @NotNull final Engine<String> engine,
+                    @NotNull final QueryJCommand parameters)
                 {
                     return super.retrievePackage(foreignKey, engine, parameters);
                 }
