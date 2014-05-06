@@ -74,6 +74,11 @@ public enum TemplateDefOutput
     PROPERTIES;
 
     /**
+     * Properties files.
+     */
+    PROPERTIES;
+
+    /**
      * Retrieves the template def output for given value.
      * @param type the value.
      * @return the enum.
