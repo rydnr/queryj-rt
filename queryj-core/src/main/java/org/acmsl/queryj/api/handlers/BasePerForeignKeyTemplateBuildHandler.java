@@ -213,7 +213,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
             retrievePackage(
                 foreignKey, retrieveMetadataManager(parameters).getEngine(), parameters));
 
-        return templateFactory.createTemplate(tableName, staticContents, t_Context, parameters);
+        return templateFactory.createTemplate(foreignKey, t_Context, parameters);
     }
 
     /**
