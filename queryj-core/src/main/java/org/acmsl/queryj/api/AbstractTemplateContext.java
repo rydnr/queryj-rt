@@ -253,7 +253,7 @@ public abstract class AbstractTemplateContext
         @NotNull final QueryJCommand command,
         @NotNull final T defaultValue)
     {
-        return getValue(key, getPk(), command, exceptionToThrow);
+        return getValue(key, getPk(), command, defaultValue);
     }
 
     /**
