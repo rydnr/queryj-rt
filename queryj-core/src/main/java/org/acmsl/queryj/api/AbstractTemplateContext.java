@@ -304,7 +304,7 @@ public abstract class AbstractTemplateContext
             aux = new QueryJCommandWrapper<T>(command).getSetting(key);
         }
 
-        if (aux == )
+        if (aux == null)
         else
         {
             result = aux;
