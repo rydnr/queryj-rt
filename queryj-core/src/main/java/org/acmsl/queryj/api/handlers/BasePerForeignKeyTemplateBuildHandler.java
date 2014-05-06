@@ -48,9 +48,7 @@ import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.engines.Engine;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.ForeignKey;
-import org.acmsl.queryj.metadata.vo.Row;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
-import org.acmsl.queryj.tools.PackageUtils;
 import org.acmsl.queryj.metadata.vo.Table;
 
 /*
