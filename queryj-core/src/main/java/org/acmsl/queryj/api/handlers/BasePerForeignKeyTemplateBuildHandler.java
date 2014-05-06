@@ -299,8 +299,13 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
         return result;
     }
 
-
+    /**
+     * Decorates given foreign key.
+     * @param foreignKey the foreign key to decorate.
+     * @return the decorator.
+     */
     public ForeignKeyDecorator decorate(final ForeignKey<String> foreignKey)
     {
+        return null;  //To change body of created methods use File | Settings | File Templates.
     }
 }
