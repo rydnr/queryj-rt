@@ -1,5 +1,5 @@
 * 2014/05/05
-** TODO Fix ResultSetExtractor #508: 2 ->
+** DONE Fix ResultSetExtractor #508: 2 -> 2
 ** TODO Fix DAO template #500: 3 -> 3
 ** Fix BaseDAOFactory template: #497: 3 ->
 ** Fix BaseDAO template: #498: 3 ->
