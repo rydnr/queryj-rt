@@ -192,9 +192,7 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
      */
     protected void buildTemplates(
         @NotNull final QueryJCommand parameters,
-        @NotNull final String engineName,
         @NotNull final PerCustomSqlTemplateFactory<T, C> templateFactory,
-        @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final List<Sql<String>> sqlElements)
       throws  QueryJBuildException
     {
