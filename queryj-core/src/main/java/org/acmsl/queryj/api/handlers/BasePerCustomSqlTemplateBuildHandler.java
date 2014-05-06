@@ -168,9 +168,7 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
         {
             buildTemplates(
                 parameters,
-                engineName,
                 retrieveTemplateFactory(),
-                CachingDecoratorFactory.getInstance(),
                 retrieveCustomSql(parameters, customSqlProvider, metadataManager));
         }
     }
