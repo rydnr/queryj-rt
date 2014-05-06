@@ -68,11 +68,13 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
 {
     /**
      * Checks decorate() works as expected.
-     * @return such instance.
      */
     @Test
     public void decorate_creates_a_ForeignKeyDecorator()
     {
+        @NotNull final BasePerForeignKeyTemplateBuildHandler instance = createHandler();
+
+
     }
 
     /**
