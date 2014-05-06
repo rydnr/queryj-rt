@@ -81,6 +81,3 @@ public class PerForeignKeyTemplateBuildHandlerTemplate<C extends TemplatePackagi
         return Literals.PER_FOREIGN_KEY_TEMPLATE_BUILD_HANDLER;
     }
 }
-
-{
-}
