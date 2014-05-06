@@ -70,6 +70,6 @@ public class PerForeignKeyTemplateBuildHandlerTemplateTest
         @NotNull final PerForeignKeyTemplateBuildHandlerTemplate instance =
             new PerForeignKeyTemplateBuildHandlerTemplate<>(context);
 
-        Assert.assertEquals(Literals.PER_TABLE_TEMPLATE_BUILD_HANDLER, instance.getTemplateName());
+        Assert.assertEquals(Literals.PER_FOREIGN_KEY_TEMPLATE_BUILD_HANDLER, instance.getTemplateName());
     }
 }
