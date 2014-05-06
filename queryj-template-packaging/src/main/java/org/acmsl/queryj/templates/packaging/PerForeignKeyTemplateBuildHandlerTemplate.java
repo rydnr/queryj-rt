@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Template for per-foreign key template build handlers.
  *
  * Date: 2014/05/06
  * Time: 11:40
