@@ -305,6 +305,8 @@ public abstract class AbstractTemplateContext
         }
 
         if (aux == null)
+        {
+            result = aux;
         else
         {
         }
