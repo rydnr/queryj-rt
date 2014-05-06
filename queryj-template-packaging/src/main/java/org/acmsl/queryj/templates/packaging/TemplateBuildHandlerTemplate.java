@@ -68,15 +68,4 @@ public class TemplateBuildHandlerTemplate<C extends TemplatePackagingContext>
     {
         super(context);
     }
-
-    /**
-     * Retrieves the template name.
-     * @return such name.
-     */
-    @NotNull
-    @Override
-    public String getTemplateName()
-    {
-        return Literals.TEMPLATE_BUILD_HANDLER;
-    }
 }
