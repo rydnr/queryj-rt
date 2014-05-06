@@ -105,6 +105,8 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
             parameters,
             retrieveMetadataManager(parameters),
             retrieveCustomSqlProvider(parameters));
+
+        return false;
     }
 
     /**
