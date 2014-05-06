@@ -72,6 +72,7 @@ public interface PerCustomResultTemplateFactory
      * @param command the {@link QueryJCommand}.
      * @param customResult the custom result.
      * @param properties the properties.
+     * @param context the cot
      * @return the template.
      */
     @Nullable
