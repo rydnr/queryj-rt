@@ -71,7 +71,11 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
     {
     }
 
-
+    /**
+     * Creates a new {@link BasePerForeignKeyTemplateBuildHandler} instance.
+     * @return such instance.
+     */
+    @NotNull
     protected BasePerForeignKeyTemplateBuildHandler createHandler()
     {
         return
