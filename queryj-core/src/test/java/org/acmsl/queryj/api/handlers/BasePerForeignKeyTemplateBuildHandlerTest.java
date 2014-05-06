@@ -81,7 +81,9 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
 
                 @Nullable
                 @Override
-                protected PerForeignKeyTemplate createTemplate(@NotNull final PerForeignKeyTemplateFactory templateFactory, @NotNull final ForeignKey<String> foreignKey, @NotNull final QueryJCommand parameters)
+                protected PerForeignKeyTemplate createTemplate(
+                    @NotNull final PerForeignKeyTemplateFactory templateFactory,
+                    @NotNull final ForeignKey<String> foreignKey, @NotNull final QueryJCommand parameters)
                 {
                     return null;
                 }
