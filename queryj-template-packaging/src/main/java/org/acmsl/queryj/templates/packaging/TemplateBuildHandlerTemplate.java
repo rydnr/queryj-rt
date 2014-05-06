@@ -52,7 +52,7 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2013/08/16 09/35
  */
 @ThreadSafe
-public class TemplateBuildHandlerTemplate<C extends TemplatePackagingContext>
+public abstract class TemplateBuildHandlerTemplate<C extends TemplatePackagingContext>
     extends AbstractTemplatePackagingTemplate<C>
 {
     /**
