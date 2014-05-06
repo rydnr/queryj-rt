@@ -158,8 +158,7 @@ public  class DefaultTemplatePackagingContext
      * @return such information.
      */
     @NotNull
-    @Override
-    public String getPackageName()
+    protected String getPackageName(@NotNull final TemplateDef)
     {
         return getPackageName(getTemplateDef());
     }
