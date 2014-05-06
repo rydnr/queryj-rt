@@ -98,7 +98,7 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
         return
             new BasePerForeignKeyTemplateBuildHandler
                 <PerForeignKeyTemplate<PerForeignKeyTemplateContext>,
-                    C extends PerForeignKeyTemplateContext,
+                    PerForeignKeyTemplateContext,
                     TF extends PerForeignKeyTemplateFactory<T, C>>
                 ()
             {
