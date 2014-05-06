@@ -154,7 +154,7 @@ public  class DefaultTemplatePackagingContext
 
     /**
      * Retrieves the package name.
-     *
+     * @param templateDef the template def.
      * @return such information.
      */
     @NotNull
