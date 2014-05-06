@@ -78,5 +78,6 @@ public interface PerCustomResultTemplateFactory
     public T createTemplate(
         @NotNull final Result<String> customResult,
         @NotNull final List<Property<String>> properties,
+        @NotNull final C context,
         @NotNull final QueryJCommand command);
 }
