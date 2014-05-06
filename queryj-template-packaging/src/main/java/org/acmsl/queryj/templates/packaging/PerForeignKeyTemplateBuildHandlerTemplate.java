@@ -77,7 +77,7 @@ public class PerForeignKeyTemplateBuildHandlerTemplate<C extends TemplatePackagi
     @Override
     public String getTemplateName()
     {
-        return Literals.PER_TABLE_TEMPLATE_BUILD_HANDLER;
+        return Literals.PER_FOREIGN_KEY_TEMPLATE_BUILD_HANDLER;
     }
 }
 
