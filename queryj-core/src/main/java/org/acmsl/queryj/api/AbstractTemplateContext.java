@@ -292,7 +292,7 @@ public abstract class AbstractTemplateContext
         @NotNull final String key,
         @NotNull final String pk,
         @NotNull final QueryJCommand command,
-        @NotNull final QueryJNonCheckedException exceptionToThrow)
+        @NotNull final T exceptionToThrow)
     {
         @Nullable final T result;
 
