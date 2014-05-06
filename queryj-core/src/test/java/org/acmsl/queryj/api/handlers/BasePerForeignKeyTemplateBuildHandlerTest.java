@@ -72,6 +72,9 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
         @NotNull final BasePerForeignKeyTemplateBuildHandler instance =
             new BasePerForeignKeyTemplateBuildHandler()
             {
+                /**
+                 * {@inheritDoc}
+                 */
                 @NotNull
                 @Override
                 protected PerForeignKeyTemplateFactory retrieveTemplateFactory()
