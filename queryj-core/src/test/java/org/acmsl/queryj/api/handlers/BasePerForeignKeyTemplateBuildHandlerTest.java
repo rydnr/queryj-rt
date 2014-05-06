@@ -99,7 +99,7 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
             new BasePerForeignKeyTemplateBuildHandler
                 <PerForeignKeyTemplate<PerForeignKeyTemplateContext>,
                     PerForeignKeyTemplateContext,
-                    PerForeignKeyTemplateFactory<PerForeignKeyTemplate<PerForeignKeyTemplateContext>, PerForeignKeyTemplateContext>>>
+                    PerForeignKeyTemplateFactory<PerForeignKeyTemplate<PerForeignKeyTemplateContext>, PerForeignKeyTemplateContext>>
             {
                 /**
                  * {@inheritDoc}
