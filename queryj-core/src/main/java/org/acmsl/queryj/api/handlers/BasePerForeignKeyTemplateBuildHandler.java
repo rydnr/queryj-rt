@@ -306,6 +306,6 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
      */
     public ForeignKeyDecorator decorate(final ForeignKey<String> foreignKey)
     {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        return
     }
 }
