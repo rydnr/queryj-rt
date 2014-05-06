@@ -402,7 +402,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     public String getPackageName()
     {
-        return getValue(buildPackageNameKey(), getCommand(), new PackageNameNotAvailableException());
+        return getValue(buildPackageNameKey(), getCommand(), null);
     }
 
     /**
