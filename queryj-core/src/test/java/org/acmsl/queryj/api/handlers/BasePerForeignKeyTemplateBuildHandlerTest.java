@@ -147,7 +147,8 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
                  */
                 @Override
                 protected void storeTemplates(
-                    @NotNull final List<PerForeignKeyTemplate<PerForeignKeyTemplateContext>> templates, @NotNull final QueryJCommand parameters)
+                    @NotNull final List<PerForeignKeyTemplate<PerForeignKeyTemplateContext>> templates,
+                    @NotNull final QueryJCommand parameters)
                 {
                 }
             };
