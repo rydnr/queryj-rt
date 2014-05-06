@@ -41,6 +41,7 @@ import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.PerForeignKeyTemplate;
 import org.acmsl.queryj.api.PerForeignKeyTemplateContext;
 import org.acmsl.queryj.api.PerForeignKeyTemplateFactory;
+import org.acmsl.queryj.api.PerTableTemplateContext;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.metadata.CachingDecoratorFactory;
 import org.acmsl.queryj.metadata.DecoratorFactory;
@@ -48,6 +49,7 @@ import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.engines.Engine;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.ForeignKey;
+import org.acmsl.queryj.metadata.vo.Row;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
 import org.acmsl.queryj.tools.PackageUtils;
 import org.acmsl.queryj.metadata.vo.Table;
@@ -184,6 +186,34 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
         }
 
         storeTemplates(t_lTemplates, parameters);
+    }
+
+    /**
+     * Creates a template with required information.
+     * @param templateFactory the {@link org.acmsl.queryj.api.PerTableTemplateFactory} instance.
+     * @param tableName the table name.
+     * @param staticContents the table's static contents (optional).
+     * @param parameters the parameter map.
+     * @return the template.
+     */
+    @Nullable
+    protected BaseDAOFactoryTemplate createTemplate(
+        @NotNull final BaseDAOFactoryTemplateFactory templateFactory,
+        @NotNull final String tableName,
+        @NotNull final List<Row<String>> staticContents,
+        @NotNull final QueryJCommand parameters)
+        throws  QueryJBuildException
+    {
+        @NotNull final PerTableTemplateContext t_Context =
+            new PerTableTemplateContext(tableName, staticContents, parameters);
+
+        t_Context.setDecoratorFactory(CachingDecoratorFactory.getInstance());
+
+        t_Context.setPackageName(
+            retrievePackage(
+                tableName, retrieveMetadataManager(parameters).getEngine(), parameters));
+
+        return templateFactory.createTemplate(tableName, staticContents, t_Context, parameters);
     }
 
     /**
