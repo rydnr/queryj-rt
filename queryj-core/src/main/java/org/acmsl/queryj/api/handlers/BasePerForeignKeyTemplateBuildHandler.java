@@ -304,8 +304,9 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
      * @param foreignKey the foreign key to decorate.
      * @return the decorator.
      */
+    @NotNull
     public ForeignKeyDecorator decorate(final ForeignKey<String> foreignKey)
     {
-        return
+        return null;
     }
 }
