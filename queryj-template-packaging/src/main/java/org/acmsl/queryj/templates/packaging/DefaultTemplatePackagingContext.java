@@ -164,7 +164,7 @@ public  class DefaultTemplatePackagingContext
 
         switch (templateDef.getOutput())
         {
-            case TemplateDefOutput.JAVA:
+            case JAVA:
                 result = super.getPackageName();
                 break;
             default:
