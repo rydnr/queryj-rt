@@ -385,37 +385,4 @@ public abstract class AbstractQueryJTemplateContext
         return result.toString();
     }
 
-
-    /**
-     * {@inheritDoc}.
-     */
-    @NotNull
-    @Override
-    public String getPackageName()
-    {
-        return getPackageName(isJava());
-    }
-
-    /**
-     * Retrieves the package name.
-     * @param isJava whether the output is Java or not.
-     * @return such information.
-     */
-    @NotNull
-    protected String getPackageName(final boolean isJava)
-    {
-        @NotNull final String result;
-
-        if (isJava)
-        {
-            result = super.getPackageName();
-        }
-        else
-        {
-            result = "";
-        }
-
-        return result;
-    }
-
 }
