@@ -205,7 +205,8 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
             if (t_Sql != null)
             {
                 t_lTemplates.add(
-                    templateFactory.createTemplate(
+                    createTemplate(
+                        templateFactory,
                         t_Sql,
                         /*
                         retrievePackage(t_Sql, engineName, parameters),
