@@ -79,6 +79,9 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
                     return null;
                 }
 
+                /**
+                 * {@inheritDoc}
+                 */
                 @Nullable
                 @Override
                 protected PerForeignKeyTemplate createTemplate(
@@ -89,6 +92,9 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
                     return null;
                 }
 
+                /**
+                 * {@inheritDoc}
+                 */
                 @NotNull
                 @Override
                 protected String retrievePackage(
