@@ -201,7 +201,6 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
     protected TF createTemplate(
         @NotNull final TF templateFactory,
         @NotNull final ForeignKey<String> foreignKey,
-        @NotNull final List<Row<String>> staticContents,
         @NotNull final QueryJCommand parameters)
         throws  QueryJBuildException
     {
