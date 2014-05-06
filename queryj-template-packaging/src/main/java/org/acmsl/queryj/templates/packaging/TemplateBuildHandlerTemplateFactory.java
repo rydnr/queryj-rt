@@ -104,6 +104,7 @@ public class TemplateBuildHandlerTemplateFactory
                 result = new PerForeignKeyTemplateBuildHandlerTemplate<>();
                 break;
             case PER_TABLE:
+            default:
                 result = new PerTableTemplateBuildHandlerTemplate<>(context);
                 break;
         }
