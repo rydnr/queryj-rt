@@ -218,9 +218,9 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
     /**
      * Creates a template.
      * @param templateFactory the template factory.
-     * @param sql the
-     * @param parameters
-     * @return
+     * @param sql the SQL.
+     * @param parameters the parameters.
+     * @return the new template.
      */
     protected abstract T createTemplate(
         @NotNull final PerCustomSqlTemplateFactory<T, C> templateFactory,
