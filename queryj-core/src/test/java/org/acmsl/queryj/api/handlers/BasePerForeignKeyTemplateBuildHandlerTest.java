@@ -60,6 +60,6 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
     @Test
     public void decorate_creates_a_ForeignKeyDecorator()
     {
-        @NotNull final
+        @NotNull final BasePerForeignKeyTemplateBuildHandler
     }
 }
