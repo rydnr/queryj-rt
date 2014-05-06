@@ -76,7 +76,9 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
     @Test
     public void decorate_creates_a_ForeignKeyDecorator()
     {
-        @NotNull final BasePerForeignKeyTemplateBuildHandler<> instance = createHandler();
+        @NotNull final BasePerForeignKeyTemplateBuildHandler<PerForeignKeyTemplate<PerForeignKeyTemplateContext>,
+            PerForeignKeyTemplateContext,
+            PerForeignKeyTemplateFactory<PerForeignKeyTemplate<PerForeignKeyTemplateContext>, PerForeignKeyTemplateContext>> instance = createHandler();
 
         @NotNull final ForeignKey<String> foreignKey =
             new ForeignKeyValueObject(
