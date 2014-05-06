@@ -211,6 +211,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
      * @param foreignKey the foreign key.
      * @param engineName the engine name.
      * @param projectPackage the project package.
+     * @return the package name.
      */
     @NotNull
     protected abstract String retrievePackage(
