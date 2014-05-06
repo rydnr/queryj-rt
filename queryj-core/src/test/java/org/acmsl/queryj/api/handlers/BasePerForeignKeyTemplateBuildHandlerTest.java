@@ -122,7 +122,7 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
                 @Nullable
                 @Override
                 protected PerForeignKeyTemplate<PerForeignKeyTemplateContext> createTemplate(
-                    @NotNull final PerForeignKeyTemplateFactory templateFactory,
+                    @NotNull final PerForeignKeyTemplateFactory<PerForeignKeyTemplate<PerForeignKeyTemplateContext>, PerForeignKeyTemplateContext> templateFactory,
                     @NotNull final ForeignKey<String> foreignKey,
                     @NotNull final QueryJCommand parameters)
                 {
