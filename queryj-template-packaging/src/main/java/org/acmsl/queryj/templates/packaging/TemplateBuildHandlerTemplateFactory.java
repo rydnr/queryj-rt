@@ -104,7 +104,7 @@ public class TemplateBuildHandlerTemplateFactory
                 result = new PerCustomSqlTemplateBuildHandlerTemplate<>(context);
                 break;
             default:
-                result = new TemplateBuildHandlerTemplate<>(context);
+                result = new PerForeignKeyTemplateBuildHandlerTemplate<DefaultTemplatePackagingContext>()
         }
 
         return result;
