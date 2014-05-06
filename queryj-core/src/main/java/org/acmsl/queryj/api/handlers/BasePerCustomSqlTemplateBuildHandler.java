@@ -159,7 +159,6 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
      */
     protected void buildTemplates(
         @NotNull final QueryJCommand parameters,
-        @NotNull final String engineName,
         @Nullable final MetadataManager metadataManager,
         @NotNull final CustomSqlProvider customSqlProvider)
       throws  QueryJBuildException
