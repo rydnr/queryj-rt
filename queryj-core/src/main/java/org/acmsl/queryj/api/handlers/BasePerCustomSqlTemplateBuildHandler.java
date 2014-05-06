@@ -215,6 +215,13 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
         storeTemplates(t_lTemplates, parameters);
     }
 
+    /**
+     * Creates a template.
+     * @param templateFactory the
+     * @param sql
+     * @param parameters
+     * @return
+     */
     protected abstract T createTemplate(
         @NotNull final PerCustomSqlTemplateFactory<T, C> templateFactory,
         @NotNull final Sql<String> sql,
