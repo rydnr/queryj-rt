@@ -40,6 +40,7 @@ package org.acmsl.queryj.api.handlers;
  */
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.PerForeignKeyTemplate;
+import org.acmsl.queryj.api.PerForeignKeyTemplateContext;
 import org.acmsl.queryj.api.PerForeignKeyTemplateFactory;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.metadata.ForeignKeyDecorator;
@@ -95,7 +96,11 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
     protected BasePerForeignKeyTemplateBuildHandler createHandler()
     {
         return
-            new BasePerForeignKeyTemplateBuildHandler()
+            new BasePerForeignKeyTemplateBuildHandler
+                <T extends PerForeignKeyTemplate<C>,
+                    C extends PerForeignKeyTemplateContext,
+                    TF extends PerForeignKeyTemplateFactory<T, C>>
+                ()
             {
                 /**
                  * {@inheritDoc}
