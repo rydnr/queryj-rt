@@ -186,7 +186,7 @@ public interface Literals
      */
     String PER_TABLE_TEMPLATE_WRITING_HANDLER = "PerTableTemplateWritingHandler";
     /**
-     * String literal:
+     * String literal: "PerForeignKeyTemplateBuildHandler".
      */
     String PER_FOREIGN_KEY_TEMPLATE_BUILD_HANDLER = "PerForeignKeyTemplateBuildHandler";
 }
