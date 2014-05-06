@@ -67,7 +67,7 @@ import java.util.List;
 public class BasePerForeignKeyTemplateBuildHandlerTest
 {
     /**
-     * Checks
+     * Checks decorate() works as expected.
      * @return such instance.
      */
     @Test
