@@ -306,7 +306,12 @@ public abstract class AbstractTemplateContext
 
         if (aux == null)
         {
+            result = defaultValue;
+        }
+        else
+        {
             result = aux;
+        }
         else
         {
         }
