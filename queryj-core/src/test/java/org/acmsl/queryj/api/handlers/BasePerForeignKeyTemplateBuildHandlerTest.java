@@ -93,7 +93,9 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
      * @return such instance.
      */
     @NotNull
-    protected BasePerForeignKeyTemplateBuildHandler createHandler()
+    protected BasePerForeignKeyTemplateBuildHandler<PerForeignKeyTemplate<PerForeignKeyTemplateContext>,
+        PerForeignKeyTemplateContext,
+        PerForeignKeyTemplateFactory<PerForeignKeyTemplate<PerForeignKeyTemplateContext>, PerForeignKeyTemplateContext>> createHandler()
     {
         return
             new BasePerForeignKeyTemplateBuildHandler
