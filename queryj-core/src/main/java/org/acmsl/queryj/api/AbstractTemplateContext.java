@@ -243,7 +243,7 @@ public abstract class AbstractTemplateContext
      * Retrieves the value.
      * @param key the key.
      * @param command the command.
-     * @param exceptionToThrow the exception to throw.
+     * @param defaultValue the default value.
      * @param <T> the value type.
      * @return such information.
      */
