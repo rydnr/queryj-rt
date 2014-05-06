@@ -203,8 +203,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
             retrievePackage(
                 foreignKey,
                 engine,
-                retrieveProjectPackage(parameters),
-                PackageUtils.getInstance());
+                retrieveProjectPackage(parameters));
     }
 
     /**
