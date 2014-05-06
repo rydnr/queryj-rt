@@ -171,6 +171,8 @@ public  class DefaultTemplatePackagingContext
                 result = "";
                 break;
         }
+
+        return result;
     }
 
     /**
