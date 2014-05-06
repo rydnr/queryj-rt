@@ -163,6 +163,7 @@ public  class DefaultTemplatePackagingContext
         switch (templateDef.getOutput())
         {
             case TemplateDefOutput.JAVA:
+
         }
     }
 
