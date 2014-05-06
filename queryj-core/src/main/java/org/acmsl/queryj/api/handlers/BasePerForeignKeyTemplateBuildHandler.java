@@ -201,7 +201,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
     {
         return
             retrievePackage(
-                tableName,
+                foreignKey,
                 engine,
                 retrieveProjectPackage(parameters),
                 PackageUtils.getInstance());
