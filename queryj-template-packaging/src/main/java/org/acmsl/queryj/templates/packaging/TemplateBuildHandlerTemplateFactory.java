@@ -103,7 +103,7 @@ public class TemplateBuildHandlerTemplateFactory
             case PER_CUSTOM_SQL:
                 result = new PerCustomSqlTemplateBuildHandlerTemplate<>(context);
                 break;
-            default:
+            case PER_FOREIGN_KEY:
                 result = new PerForeignKeyTemplateBuildHandlerTemplate<>();
         }
 
