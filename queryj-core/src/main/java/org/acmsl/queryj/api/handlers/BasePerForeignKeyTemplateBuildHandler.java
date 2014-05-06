@@ -199,7 +199,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
      */
     @Nullable
     protected TF createTemplate(
-        @NotNull final BaseDAOFactoryTemplateFactory templateFactory,
+        @NotNull final TF templateFactory,
         @NotNull final String tableName,
         @NotNull final List<Row<String>> staticContents,
         @NotNull final QueryJCommand parameters)
