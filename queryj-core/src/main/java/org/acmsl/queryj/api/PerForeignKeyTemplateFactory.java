@@ -68,5 +68,6 @@ public interface PerForeignKeyTemplateFactory
     @NotNull
     T createTemplate(
         @NotNull final ForeignKey<String> foreignKey,
+        @NotNull final C context,
         @NotNull final QueryJCommand command);
 }
