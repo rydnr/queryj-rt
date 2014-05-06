@@ -155,7 +155,7 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
                 protected String retrievePackage(
                     @NotNull final ForeignKey<String> foreignKey,
                     @NotNull final Engine<String> engine,
-                    @NotNull final String parameters)
+                    @NotNull final String package)
                 {
                     return super.retrievePackage(foreignKey, engine, parameters);
                 }
