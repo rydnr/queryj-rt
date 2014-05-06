@@ -100,7 +100,6 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
                 <PerForeignKeyTemplate<PerForeignKeyTemplateContext>,
                     PerForeignKeyTemplateContext,
                     PerForeignKeyTemplateFactory<PerForeignKeyTemplate<PerForeignKeyTemplateContext>, PerForeignKeyTemplateContext>>
-                ()
             {
                 /**
                  * {@inheritDoc}
