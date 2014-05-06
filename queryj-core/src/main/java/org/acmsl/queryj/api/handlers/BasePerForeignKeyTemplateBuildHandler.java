@@ -217,8 +217,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
     protected abstract String retrievePackage(
         @NotNull final ForeignKey<String> foreignKey,
         @NotNull final Engine<String> engineName,
-        @NotNull final String projectPackage,
-        @NotNull final PackageUtils packageUtils);
+        @NotNull final String projectPackage);
 
     /**
      * Stores the template collection in given attribute map.
