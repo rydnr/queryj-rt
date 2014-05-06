@@ -101,8 +101,6 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
 
                 /**
                  * {@inheritDoc}
-                 * @param templates the templates.
-                 * @param parameters the parameter map.
                  */
                 @Override
                 protected void storeTemplates(
