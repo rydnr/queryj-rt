@@ -79,8 +79,9 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
         @NotNull final ForeignKey<String> foreignKey =
             new ForeignKeyValueObject(
                 "source",
-                new ArrayList<>(0)
-            )
+                new ArrayList<>(0),
+                "target",
+                false);
     }
 
     /**
