@@ -173,12 +173,6 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
                     createTemplate(
                         templateFactory,
                         t_ForeignKey,
-                        /*
-                        retrievePackage(
-                            t_ForeignKey.getSourceTableName(),
-                            metadataManager.getEngine(),
-                            parameters),
-                        */
                         parameters));
             }
         }
