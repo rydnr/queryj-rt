@@ -50,7 +50,6 @@ import org.acmsl.queryj.metadata.engines.Engine;
 /*
  * Importing some JetBrains annotations.
  */
-import org.acmsl.queryj.metadata.vo.ForeignKey;
 import org.jetbrains.annotations.NotNull;
 
 /*
