@@ -111,6 +111,6 @@ public abstract class BasePerForeignKeyTemplateWritingHandler
         @NotNull final Engine<String> engine,
         @NotNull final File projectOutputDir,
         final String projectPackage,
-        @NotNull final ForeignKey f,
+        @NotNull final ForeignKey foreignKey,
         final boolean subFolders);
 }
