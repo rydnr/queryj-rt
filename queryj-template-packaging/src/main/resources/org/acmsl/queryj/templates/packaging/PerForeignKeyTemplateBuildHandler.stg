@@ -184,7 +184,7 @@ public class <C.class_name>
     @Override
     @NotNull
     protected String retrievePackage(
-        @NotNull final ForeignKey\<DecoratedString> foreignKey,
+        @NotNull final ForeignKeyDecorator foreignKey,
         @NotNull final Engine\<String> engine,
         @NotNull final String packageName)
     {
