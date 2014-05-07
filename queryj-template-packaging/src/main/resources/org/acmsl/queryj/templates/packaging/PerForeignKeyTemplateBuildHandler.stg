@@ -191,7 +191,7 @@ public class <C.class_name>
      */
     @NotNull
     static String buildPackageName(
-        @SuppressWarnings("unused") @NotNull final ForeignKey\<String> foreignKey,
+        @SuppressWarnings("unused") @NotNull final ForeignKey\<DecoratedString> foreignKey,
         @SuppressWarnings("unused") @NotNull final Engine\<String> engine,
         @SuppressWarnings("unused") @NotNull final String projectPackage)
     {
