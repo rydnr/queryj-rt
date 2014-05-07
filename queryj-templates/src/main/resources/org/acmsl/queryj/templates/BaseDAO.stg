@@ -223,11 +223,12 @@ public interface <table.name.voName>DAO
 }
 >>
 
-cached_constants(row, voName) ::= <<
+cached_constants(row, voName, C) ::= <<
 <!
  Generates the constant for the cached row.
  @param row the row
  @param voName the value-object name.
+ @param C the context.
 !>
 /**
  * The <row.name> {@link <voName>}.
@@ -279,6 +280,12 @@ attribute_specification(attr) ::= <<
 >>
 
 find_constant_by_pk(primaryKey, table, C) ::= <<
+<!
+ Generates the "findContantByPk()" method.
+ @param primaryKey the primary key.
+ @param table the table.
+ @param C the context.
+!>
 /**
  * Loads \<i><table.name.voName>\</i> information from the constant pool,
  * filtering by the primary key.
@@ -295,6 +302,7 @@ find_constant_methods(attribute, table, C) ::= <<
   Declares the methods to operate directly on defined constants.
   @param attribute the attribute.
   @param table the table.
+  @param C the context.
 !>
 /**
  * Loads \<i><table.name>\</i> information from the constant pool,
