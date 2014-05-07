@@ -175,18 +175,6 @@ public class <C.class_name>
             retrievePackage(
                 decoratedForeignKey, t_MetadataManager.getEngine(), parameters));
 
-        t_Context.setDecoratorFactory(CachingDecoratorFactory.getInstance());
-
-        @NotNull final MetadataManager t_MetadataManager =
-            retrieveMetadataManager(parameters);
-
-        @NotNull final ForeignKey\<DecoratedString> t_DecoratedFk =
-            new CachingForeignKeyDecorator(foreignKey, t_MetadataManager, );
-
-        t_Context.setPackageName(
-            retrievePackage(
-                t_DecoratedFk, t_MetadataManager.getEngine(), parameters));
-
         return templateFactory.createTemplate(foreignKey, t_Context, parameters);
     }
 
