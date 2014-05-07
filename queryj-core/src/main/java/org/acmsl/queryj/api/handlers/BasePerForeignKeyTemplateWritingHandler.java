@@ -101,7 +101,7 @@ public abstract class BasePerForeignKeyTemplateWritingHandler
 
         return
             retrieveOutputDir(
-                t_MetadataManager(parameters).getEngine(),
+                t_MetadataManager.getEngine(),
                 retrieveProjectOutputDir(parameters),
                 retrieveProjectPackage(parameters),
                 new CachingForeignKeyDecorator(context.getForeignKey(), t_MetadataManager, t_DecoratorFactory, t_CustomSqlProvider);
