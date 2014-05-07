@@ -169,7 +169,7 @@ public class <C.class_name>
         @NotNull final Engine\<String> engine,
         @NotNull final File projectOutputDir,
         final String projectPackage,
-        @NotNull final ForeignKey\<String> foreignKey,
+        @NotNull final ForeignKeyDecorator foreignKey,
         final boolean subFolders)
     {
         @NotNull final File result;
