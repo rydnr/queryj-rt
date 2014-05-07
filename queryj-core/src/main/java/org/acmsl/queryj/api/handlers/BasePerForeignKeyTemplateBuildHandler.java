@@ -298,15 +298,4 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
 
         return result;
     }
-
-    /**
-     * Decorates given foreign key.
-     * @param foreignKey the foreign key to decorate.
-     * @return the decorator.
-     */
-    @NotNull
-    public ForeignKeyDecorator decorate(@NotNull final ForeignKey<String> foreignKey)
-    {
-        return null;
-    }
 }
