@@ -62,13 +62,11 @@ public interface PerForeignKeyTemplateFactory
     /**
      * Creates a per-<i>foreign key</i> template.
      * @param foreignKey the foreign key.
-     * @param context the context.
      * @param command the {@link QueryJCommand} instance.
      * @return the new template.
      */
     @NotNull
     T createTemplate(
         @NotNull final ForeignKey<String> foreignKey,
-        @NotNull final C context,
         @NotNull final QueryJCommand command);
 }

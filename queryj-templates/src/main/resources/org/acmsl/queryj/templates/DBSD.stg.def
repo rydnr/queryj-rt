@@ -8,12 +8,10 @@ name : DBSD.stg;
 type : per-repository;
 
 // The output flavor.
-output: DBSD;
+output: Java;
 
 // The filename builder.
 filename  builder : <repository.capitalized>.dbsd;
 
 // The package.
 package: <packageName>;
-
-disabled;

@@ -384,4 +384,5 @@ public abstract class AbstractQueryJTemplateContext
 
         return result.toString();
     }
+
 }

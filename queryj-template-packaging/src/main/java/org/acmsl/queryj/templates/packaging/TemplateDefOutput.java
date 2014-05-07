@@ -54,7 +54,6 @@ import org.checkthread.annotations.ThreadSafe;
  * The supported outputs in template defs.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
- * Created: 2013/08/14
  */
 @ThreadSafe
 public enum TemplateDefOutput
@@ -72,12 +71,7 @@ public enum TemplateDefOutput
     /**
      * Properties files.
      */
-    PROPERTIES,
-
-    /**
-     * DBSD files.
-     */
-    DBSD;
+    PROPERTIES;
 
     /**
      * Retrieves the template def output for given value.

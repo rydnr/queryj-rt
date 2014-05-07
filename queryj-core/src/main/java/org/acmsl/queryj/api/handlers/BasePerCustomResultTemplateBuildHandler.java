@@ -44,7 +44,6 @@ import org.acmsl.queryj.api.PerCustomResultTemplate;
 import org.acmsl.queryj.api.PerCustomResultTemplateFactory;
 import org.acmsl.queryj.customsql.CustomResultUtils;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
-import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.metadata.CachingDecoratorFactory;
 import org.acmsl.queryj.metadata.DecoratorFactory;
@@ -53,6 +52,7 @@ import org.acmsl.queryj.metadata.SqlResultDAO;
 import org.acmsl.queryj.metadata.engines.Engine;
 import org.acmsl.queryj.tools.DebugUtils;
 import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
+import org.acmsl.queryj.tools.PackageUtils;
 
 /*
  * Importing some JetBrains annotations.
@@ -193,8 +193,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
                         t_ResultElement, customSqlProvider, metadataManager, customResultUtils)))
             {
                 t_Template =
-                    createTemplate(
-                        templateFactory,
+                    templateFactory.createTemplate(
                         t_ResultElement,
                         customSqlProvider.getSqlPropertyDAO().findByResult(t_ResultElement.getId()),
                         parameters);
@@ -225,20 +224,6 @@ public abstract class BasePerCustomResultTemplateBuildHandler
 
         storeTemplates(t_lTemplates, parameters);
     }
-
-    /**
-     * Creates a template.
-     * @param templateFactory the template factory.
-     * @param result the result.
-     * @param properties the properties.
-     * @param parameters the parameters.
-     * @return the template.
-     */
-    protected abstract T createTemplate(
-        @NotNull final TF templateFactory,
-        @NotNull final Result<String> result,
-        @NotNull final List<Property<String>> properties,
-        @NotNull final QueryJCommand parameters);
 
     /**
      * Checks whether the generation is allowed for given result.
