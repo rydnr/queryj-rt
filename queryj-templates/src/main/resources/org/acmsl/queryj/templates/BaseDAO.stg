@@ -322,6 +322,7 @@ fk_delete_method(foreignKey, table, C) ::= <<
   Writes the deleteByXX method for a concrete foreign key.
   @param foreignKey the foreign key.
   @param table the table.
+  @param C the context.
 !>
 /**
 <if(foreignKey.allowsNull)>
@@ -350,6 +351,7 @@ custom_select(cs, C) ::= <<
 <!
   Writes the code for a custom select query.
   @param cs the custom select.
+  @param C the context.
 !>
 /**
  * Custom select \<i><cs.id>\</i>:
@@ -367,6 +369,7 @@ custom_update_or_insert(cs, C) ::= <<
 <!
  Writes the subtemplate for custom updates or inserts.
   @param cs the custom sql.
+  @param C the context.
 !>
 /**
  * Custom sql \<i><cs.id>\</i>:\<br/>
@@ -382,6 +385,7 @@ custom_select_for_update(cs, C) ::= <<
 <!
   Writes the code for a custom select for update.
   @param cs the custom sql.
+  @param C the context.
 !>
 /**
  * Custom select for update \<i><cs.id>\</i>:\<br/>
