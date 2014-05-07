@@ -166,7 +166,7 @@ public class <C.class_name>
             retrieveMetadataManager(parameters);
 
         @NotNull final ForeignKey\<DecoratedString> t_DecoratedFk =
-            new CachingForeignKeyDecorator(foreignKey, t_MetadataManager);
+            new CachingForeignKeyDecorator(foreignKey, t_MetadataManager, );
 
         t_Context.setPackageName(
             retrievePackage(
