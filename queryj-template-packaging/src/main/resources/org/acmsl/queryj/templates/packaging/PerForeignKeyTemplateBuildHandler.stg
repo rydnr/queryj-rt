@@ -188,7 +188,7 @@ public class <C.class_name>
         @NotNull final Engine\<String> engine,
         @NotNull final String packageName)
     {
-        return buildPackageName(tableName, engine, packageName);
+        return buildPackageName(foreignKey, engine, packageName);
     }
 
     /**
