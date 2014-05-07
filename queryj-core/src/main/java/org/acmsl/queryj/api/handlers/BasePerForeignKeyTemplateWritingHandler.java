@@ -41,6 +41,7 @@ import org.acmsl.queryj.api.PerForeignKeyTemplateContext;
 import org.acmsl.queryj.api.PerForeignKeyTemplateGenerator;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
+import org.acmsl.queryj.metadata.CachingForeignKeyDecorator;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.ForeignKeyDecorator;
 import org.acmsl.queryj.metadata.MetadataManager;
@@ -103,7 +104,7 @@ public abstract class BasePerForeignKeyTemplateWritingHandler
                 retrieveMetadataManager(parameters).getEngine(),
                 retrieveProjectOutputDir(parameters),
                 retrieveProjectPackage(parameters),
-                context.getForeignKey(),
+                new CachingForeignKeyDecorator()context.getForeignKey(),
                 retrieveUseSubfoldersFlag(parameters));
     }
 
