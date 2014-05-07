@@ -392,7 +392,7 @@ custom_select_for_update(cs, C) ::= <<
 /**
  * Custom select for update \<i><cs.id>\</i>:\<br/>
  * \<b><cs.description>\</b>.
- <cs.parameters:{ a | <attribute_javadoc(name=a)>}; separator="\n">
+ <cs.parameters:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
  * @return the \<i><cs.resultClass>\</i> information retrieved.
  */
 <if(cs.resultNullable)><nullable(C=C)><else><if(cs.result)><if(cs.result.multiple)><notnull(C=C)><endif><endif><endif>
