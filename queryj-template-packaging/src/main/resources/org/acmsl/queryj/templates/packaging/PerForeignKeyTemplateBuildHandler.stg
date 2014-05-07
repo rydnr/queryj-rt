@@ -175,7 +175,7 @@ public class <C.class_name>
     @Override
     @NotNull
     protected String retrievePackage(
-        @NotNull final String tableName,
+        @NotNull final ForeignKey\<String tableName,
         @NotNull final Engine\<String> engine,
         @NotNull final String packageName)
     {
