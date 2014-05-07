@@ -342,11 +342,9 @@ fk_delete_method(foreignKey, table, C) ::= <<
  */
 <
 if(foreignKey.allowsNull)
->void discardRelationTo<foreignKey.target.voName>By<foreignKey.attributes:{attr |<attr.name.capitalized>};
-                                                          separator="And">(<
+>void discardRelationTo<foreignKey.target.voName>By<foreignKey.attributes:{attr |<attr.name.capitalized>}; separator="And">(<
 else
->void deleteBy<foreignKey.attributes:{attr |<attr.name.capitalized>};
-                      separator="And">(<
+>void deleteBy<foreignKey.attributes:{attr |<attr.name.capitalized>}; separator="And">(<
 endif
 >
     <foreignKey.attributes:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">);
