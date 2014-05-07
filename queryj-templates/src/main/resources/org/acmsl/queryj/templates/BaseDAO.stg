@@ -374,11 +374,11 @@ custom_update_or_insert(cs, C) ::= <<
  <cs.parameters:{ a | <attribute_javadoc(name=a)>}; separator="\n">
  */
 public void <cs.nameUncapitalized>(
-    <cs.parameters:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix="", prefixC=C)>}; separator=",\n">)
+    <cs.parameters:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
   throws DataAccessException;
 >>
 
-custom_select_for_update(cs) ::= <<
+custom_select_for_update(cs, C) ::= <<
 <!
   Writes the code for a custom select for update.
   @param cs the custom sql.
@@ -390,6 +390,6 @@ custom_select_for_update(cs) ::= <<
  * @return the \<i><cs.resultClass>\</i> information retrieved.
  */
 <cs.resultClass> <cs.name.uncapitalized>(
-    <cs.parameters:{ a | <attribute_declaration(attr=a, C=C)>}; separator=",\n">)
+    <cs.parameters:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
   throws DataAccessException;
 >>
