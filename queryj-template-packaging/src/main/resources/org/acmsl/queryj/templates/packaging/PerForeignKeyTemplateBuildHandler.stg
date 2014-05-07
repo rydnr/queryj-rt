@@ -162,6 +162,9 @@ public class <C.class_name>
 
         t_Context.setDecoratorFactory(CachingDecoratorFactory.getInstance());
 
+        @NotNull final MetadataManager t_MetadataManager =
+            retrieveMetadataManager(parameters);
+
         @NotNull final ForeignKey\<DecoratedString> t_DecoratedFk =
             decorate(foreignKey, paramete);
 
