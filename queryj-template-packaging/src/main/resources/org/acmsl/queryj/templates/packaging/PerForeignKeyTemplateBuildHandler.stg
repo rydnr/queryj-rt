@@ -160,6 +160,21 @@ public class <C.class_name>
         @NotNull final <def.type.capitalized>TemplateContext t_Context =
             new <def.type.capitalized>TemplateContext(foreignKey, parameters);
 
+        @NotNull final DecoratorFactory t_DecoratorFactory = retrieveDecoratorFactory();
+
+        t_Context.setDecoratorFactory(t_DecoratorFactory);
+
+        @NotNull final MetadataManager t_MetadataManager = retrieveMetadataManager(parameters);
+
+        @NotNull final CustomSqlProvider t_CustomSqlProvider = retrieveCustomSqlProvider(parameters);
+
+        @NotNull final ForeignKeyDecorator decoratedForeignKey =
+            new CachingForeignKeyDecorator(foreignKey, t_MetadataManager, t_DecoratorFactory, t_CustomSqlProvider);
+
+        t_Context.setPackageName(
+            retrievePackage(
+                decoratedForeignKey, t_MetadataManager.getEngine(), parameters));
+
         t_Context.setDecoratorFactory(CachingDecoratorFactory.getInstance());
 
         @NotNull final MetadataManager t_MetadataManager =
