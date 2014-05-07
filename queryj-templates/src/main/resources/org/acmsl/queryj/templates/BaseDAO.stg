@@ -338,7 +338,7 @@ fk_delete_method(foreignKey, table, C) ::= <<
  * Deletes <table.name> information from the persistence layer filtering
  * by given foreign keys.
 <endif>
- <foreignKey.attributes:{ a | <attribute_javadoc(attribute=a)>}; separator="\n">
+ <foreignKey.attributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
  */
 <if(foreignKey.allowsNull)>
 void discardRelationTo<foreignKey.target.voName>By<foreignKey.attributes:{attr |<attr.name.capitalized>};
