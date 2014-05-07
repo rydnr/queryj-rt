@@ -376,7 +376,7 @@ custom_update_or_insert(cs, C) ::= <<
 /**
  * Custom sql \<i><cs.id>\</i>:\<br/>
  * \<b><cs.description>\</b>.
- <cs.parameters:{ a | <attribute_javadoc(name=a)>}; separator="\n">
+ <cs.parameters:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
  */
 public void <cs.nameUncapitalized>(
     <cs.parameters:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
