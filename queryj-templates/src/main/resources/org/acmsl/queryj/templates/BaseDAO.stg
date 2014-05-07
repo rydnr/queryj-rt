@@ -213,13 +213,13 @@ public interface <table.name.voName>DAO
     void delete(<table.primaryKey:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
         throws DataAccessException;
 
-    <table.foreignKeys:{ fk | <fk_delete_method(foreignKey=fk, table=table)>}; separator="\n">
+    <table.foreignKeys:{ fk | <fk_delete_method(foreignKey=fk, table=table, C=C)>}; separator="\n">
 
-    <table.customSelects:{ cs | <custom_select(cs=cs)>}; separator="\n">
+    <table.customSelects:{ cs | <custom_select(cs=cs, C=C)>}; separator="\n">
 
-    <table.customUpdatesOrInserts:{ cs | <custom_update_or_insert(cs=cs)>}; separator="\n">
+    <table.customUpdatesOrInserts:{ cs | <custom_update_or_insert(cs=cs, C=C)>}; separator="\n">
 
-    <table.customSelectsForUpdate:{ cs | <custom_select_for_update(cs=cs)>}; separator="\n">
+    <table.customSelectsForUpdate:{ cs | <custom_select_for_update(cs=cs, C=C)>}; separator="\n">
 }
 >>
 
