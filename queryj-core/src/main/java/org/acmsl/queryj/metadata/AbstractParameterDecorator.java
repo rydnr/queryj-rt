@@ -378,15 +378,6 @@ public abstract class AbstractParameterDecorator<V>
     }
 
     /**
-     * Retrieves whether it allows null or not.
-     * @return such information.
-     */
-    public boolean getAllowsNull()
-    {
-        return false;
-    }
-
-    /**
      * Provides a text representation of the information
      * contained in given instance.
      * @return such information.
