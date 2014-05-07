@@ -61,7 +61,7 @@ public class ForeignKeyValueObject
     private static final long serialVersionUID = 3292464819930780148L;
 
     /**
-     * Creates a <code>ForeignKeyValueObject</code> with given information.
+     * Creates a {@code ForeignKeyValueObject</code> with given information.
      * @param sourceTableName the source table name.
      * @param attributes the attributes.
      * @param targetTableName the target table name.
