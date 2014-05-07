@@ -70,7 +70,6 @@ import org.acmsl.queryj.api.handlers.Base<def.type.capitalized>TemplateWritingHa
 import org.acmsl.queryj.metadata.engines.Engine;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
-import org.acmsl.queryj.tools.PackageUtils;
 
 /*
  * Importing custom templates.
