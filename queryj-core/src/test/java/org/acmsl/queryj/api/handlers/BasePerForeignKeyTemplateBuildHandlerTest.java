@@ -88,7 +88,7 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
                 "target",
                 false);
 
-        @NotNull final ForeignKeyDecorator decorator = instance.decorate(foreignKey);
+//        @NotNull final ForeignKeyDecorator decorator = instance.decorate(foreignKey);
     }
 
     /**
