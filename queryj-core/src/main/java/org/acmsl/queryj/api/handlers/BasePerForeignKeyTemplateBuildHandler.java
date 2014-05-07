@@ -204,7 +204,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
      */
     @NotNull
     protected String retrievePackage(
-        @NotNull final ForeignKey<String> foreignKey,
+        @NotNull final ForeignKeyDecorator foreignKey,
         @NotNull final Engine<String> engine,
         @NotNull final QueryJCommand parameters)
     {
