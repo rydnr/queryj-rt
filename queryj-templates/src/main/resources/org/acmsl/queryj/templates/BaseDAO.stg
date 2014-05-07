@@ -346,7 +346,8 @@ void discardRelationTo<foreignKey.target.voName>By<foreignKey.attributes:{attr |
                                                           separator="And">(<else>
 void deleteBy<foreignKey.attributes:{attr |<attr.name.capitalized>};
                       separator="And">(<
-                      endif>
+                      endif
+>
     <foreignKey.attributes:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">);
 >>
 
