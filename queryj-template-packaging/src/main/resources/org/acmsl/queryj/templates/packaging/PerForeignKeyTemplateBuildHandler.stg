@@ -162,7 +162,7 @@ public class <C.class_name>
 
         t_Context.setDecoratorFactory(CachingDecoratorFactory.getInstance());
 
-        @NotNull final ForeignKey\<DecoratedString>
+        @NotNull final ForeignKey\<DecoratedString> t_DecoratedFk =
         t_Context.setPackageName(
             retrievePackage(
                 foreignKey, retrieveMetadataManager(parameters).getEngine(), parameters));
