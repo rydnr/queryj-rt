@@ -168,7 +168,7 @@ public class <C.class_name>
 
         @NotNull final CustomSqlProvider t_CustomSqlProvider = retrieveCustomSqlProvider(parameters);
 
-        @NotNull final ForeignKeyDecorator decoratedForeignKey =
+        @NotNull final ForeignKeyDecorator t_DecoratedForeignKey =
             new CachingForeignKeyDecorator(foreignKey, t_MetadataManager, t_DecoratorFactory, t_CustomSqlProvider);
 
         t_Context.setPackageName(
