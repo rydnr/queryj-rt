@@ -102,7 +102,7 @@ public abstract class BasePerForeignKeyTemplateWritingHandler
      * @param engine the engine.
      * @param projectOutputDir the project output dir.
      * @param projectPackage the project package.
-     * @param tableName the table name.
+     * @param foreignKey the foreign key.
      * @param subFolders whether to use sub folders or not.
      * @return such folder.
      */
