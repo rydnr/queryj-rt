@@ -124,5 +124,5 @@ public interface Literals
     String TEMPLATE_NAME = "templateName";
     String FILE_NAME = "fileName";
     String RESULT = "result";
-    String FOREIGN_KEY = ;
+    String FOREIGN_KEY = "foreignKey";
 }
