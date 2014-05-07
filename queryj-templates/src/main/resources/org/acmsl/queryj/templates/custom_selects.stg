@@ -220,7 +220,7 @@ public int <cs.name.uncapitalized>(
 <endif>
 >>
 
-custom_select_for_update(cs, table) ::= <<
+custom_select_for_update(cs, table, C) ::= <<
 <!
  Writes the code for a custom select for update.
  @param cs the custom select.
