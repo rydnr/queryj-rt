@@ -158,7 +158,7 @@ public class <C.class_name>
       throws  QueryJBuildException
     {
         @NotNull final <def.type.capitalized>TemplateContext t_Context =
-            new <def.type.capitalized>TemplateContext(foreignKey, staticContents, parameters);
+            new <def.type.capitalized>TemplateContext(foreignKey, parameters);
 
         t_Context.setDecoratorFactory(CachingDecoratorFactory.getInstance());
 
