@@ -343,7 +343,7 @@ void deleteBy<foreignKey.attributes:{attr |<attr.name.capitalized>};
 <endif>
 
 
-    <foreignKey.attributes:{ a | <attribute_method_parameter_declaration(attr=a)>}; separator=",\n">);
+    <foreignKey.attributes:{ a | <attribute_method_parameter_declaration(attribute=a, )>}; separator=",\n">);
 >>
 
 custom_select(cs) ::= <<
