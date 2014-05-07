@@ -184,7 +184,7 @@ public class <C.class_name>
 
     /**
      * Builds the actual package name.
-     * @param tableName the table name.
+     * @param foreignKey the foreign key.
      * @param engine the engine.
      * @param projectPackage the project package.
      * @return the package name.
