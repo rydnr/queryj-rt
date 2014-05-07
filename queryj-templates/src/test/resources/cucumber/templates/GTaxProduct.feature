@@ -47,6 +47,6 @@ Feature: G_TAX_PRODUCTS code compiles
 
     Examples:
       | template | output |
-      | BaseDAO | GTaxProductResultSetExtractor.java |
+      | BaseDAO | .java |
 #      | ResultSetExtractor| GTaxProductResultSetExtractor.java |
 #      | DAO | OracleGTaxProductDAO.java |
