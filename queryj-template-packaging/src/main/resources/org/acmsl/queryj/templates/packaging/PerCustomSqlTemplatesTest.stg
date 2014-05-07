@@ -381,6 +381,11 @@ public class PerCustomSqlTemplatesTest
                 @NotNull final String packageName =
                     resolvePackage(PACKAGE_MAPPINGS.get(templateName), sql.getId(), resolveEngine(engine));
 
+                @NotNull final PerCustomSqlTemplateContext t_Context =
+                    new PerCustomSqlTemplateContext(sql, t_Command);
+
+                t_Context.setPackageName(packageName);
+
                 @Nullable final PerCustomSqlTemplate\<PerCustomSqlTemplateContext> template =
                     templateFactory.createTemplate(sql, t_Command);
 
