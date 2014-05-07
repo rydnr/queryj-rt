@@ -217,9 +217,9 @@ public interface <table.name.voName>DAO
 
     <table.customSelects:{ cs | <custom_select(cs=cs, C=C)>}; separator="\n\n">
 
-    <table.customUpdatesOrInserts:{ cs | <custom_update_or_insert(cs=cs, C=C)>}; separator="\n">
+    <table.customUpdatesOrInserts:{ cs | <custom_update_or_insert(cs=cs, C=C)>}; separator="\n\n">
 
-    <table.customSelectsForUpdate:{ cs | <custom_select_for_update(cs=cs, C=C)>}; separator="\n">
+    <table.customSelectsForUpdate:{ cs | <custom_select_for_update(cs=cs, C=C)>}; separator="\n\n">
 }
 >>
 
