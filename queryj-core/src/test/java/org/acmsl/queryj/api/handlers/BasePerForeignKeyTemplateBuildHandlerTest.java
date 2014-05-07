@@ -135,7 +135,7 @@ public class BasePerForeignKeyTemplateBuildHandlerTest
                 @NotNull
                 @Override
                 protected String retrievePackage(
-                    @NotNull final ForeignKey<String> foreignKey,
+                    @NotNull final ForeignKeyDecorator foreignKey,
                     @NotNull final Engine<String> engineName,
                     @NotNull final String projectPackage)
                 {
