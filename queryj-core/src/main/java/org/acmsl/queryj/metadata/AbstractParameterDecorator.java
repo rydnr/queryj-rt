@@ -368,6 +368,9 @@ public abstract class AbstractParameterDecorator<V>
     }
 
     /**
+     * Retrieves t
+     */
+    /**
      * Provides a text representation of the information
      * contained in given instance.
      * @return such information.
