@@ -45,6 +45,7 @@ import org.acmsl.queryj.metadata.engines.Engine;
 /*
  * Importing some JetBrains annotations.
  */
+import org.acmsl.queryj.metadata.vo.ForeignKey;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -110,6 +111,6 @@ public abstract class BasePerForeignKeyTemplateWritingHandler
         @NotNull final Engine<String> engine,
         @NotNull final File projectOutputDir,
         final String projectPackage,
-        @NotNull final String tableName,
+        @NotNull final ForeignKey f,
         final boolean subFolders);
 }
