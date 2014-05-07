@@ -173,7 +173,7 @@ public class <C.class_name>
 
         t_Context.setPackageName(
             retrievePackage(
-                decoratedForeignKey, t_MetadataManager.getEngine(), parameters));
+                t_DecoratedForeignKey, t_MetadataManager.getEngine(), parameters));
 
         return templateFactory.createTemplate(foreignKey, t_Context, parameters);
     }
