@@ -40,6 +40,7 @@ import org.acmsl.queryj.api.PerForeignKeyTemplate;
 import org.acmsl.queryj.api.PerForeignKeyTemplateContext;
 import org.acmsl.queryj.api.PerForeignKeyTemplateGenerator;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.metadata.ForeignKeyDecorator;
 import org.acmsl.queryj.metadata.engines.Engine;
 
 /*
@@ -111,6 +112,6 @@ public abstract class BasePerForeignKeyTemplateWritingHandler
         @NotNull final Engine<String> engine,
         @NotNull final File projectOutputDir,
         final String projectPackage,
-        @NotNull final ForeignKey foreignKey,
+        @NotNull final ForeignKeyDecorator foreignKey,
         final boolean subFolders);
 }
