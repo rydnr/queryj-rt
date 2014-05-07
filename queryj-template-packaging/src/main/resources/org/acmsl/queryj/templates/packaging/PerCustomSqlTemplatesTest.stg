@@ -134,7 +134,7 @@ import cucumber.api.java.en.When;
 import org.apache.commons.logging.LogFactory;
 
 /*
- * Importing Jetbrains Annotations.
+ * Importing JetBrains Annotations.
  */
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
