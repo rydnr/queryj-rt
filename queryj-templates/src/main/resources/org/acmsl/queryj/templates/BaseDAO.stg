@@ -150,7 +150,7 @@ public interface <table.name.voName>DAO
 
 {
 <if(table.static)>
-    <table.staticContent:{r | <cached_constants(row=r, voName=table.name.voName)>}; separator="\n\n">
+    <table.staticContent:{r | <cached_constants(row=r, voName=table.name.voName, C=C)>}; separator="\n\n">
 
     /**
      * The pre-existing {@link <table.name.voName>} values.
