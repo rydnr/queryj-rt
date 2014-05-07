@@ -417,7 +417,7 @@ public class PerForeignKeyTemplatesTest
                 t_Context.setPackageName(packageName);
 
                 @Nullable final PerForeignKeyTemplate\<PerForeignKeyTemplateContext> template =
-                    templateFactory.createTemplate(foreignKey, t_Command);
+                    templateFactory.createTemplate(foreignKey, t_Context, t_Command);
 
                 Assert.assertNotNull("No template found for " + templateName, template);
 
