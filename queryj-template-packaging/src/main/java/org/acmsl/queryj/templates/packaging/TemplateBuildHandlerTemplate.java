@@ -52,7 +52,7 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2013/08/16 09/35
  */
 @ThreadSafe
-public class TemplateBuildHandlerTemplate<C extends TemplatePackagingContext>
+public abstract class TemplateBuildHandlerTemplate<C extends TemplatePackagingContext>
     extends AbstractTemplatePackagingTemplate<C>
 {
     /**
@@ -67,16 +67,5 @@ public class TemplateBuildHandlerTemplate<C extends TemplatePackagingContext>
     public TemplateBuildHandlerTemplate(@NotNull final C context)
     {
         super(context);
-    }
-
-    /**
-     * Retrieves the template name.
-     * @return such name.
-     */
-    @NotNull
-    @Override
-    public String getTemplateName()
-    {
-        return Literals.TEMPLATE_BUILD_HANDLER;
     }
 }
