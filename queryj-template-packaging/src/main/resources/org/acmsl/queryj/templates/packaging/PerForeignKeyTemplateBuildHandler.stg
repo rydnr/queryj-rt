@@ -75,7 +75,8 @@ import org.acmsl.queryj.metadata.CachingDecoratorFactory;
 import org.acmsl.queryj.metadata.DecoratedString;
 import org.acmsl.queryj.metadata.engines.Engine;
 import org.acmsl.queryj.metadata.engines.EngineDecorator;
-org.acmsl.queryj.metadata.vo
+import org.acmsl.queryj.metadata.vo.ForeignKey;
+
 /*
  * Importing custom templates.
  */
