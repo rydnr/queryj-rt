@@ -340,7 +340,6 @@ fk_delete_method(foreignKey, table, C) ::= <<
  * Deletes <table.name> information from the persistence layer filtering
  * by given foreign keys.
 <endif>
-
  <foreignKey.attributes:{ a | <attribute_javadoc(name=a)>}; separator="\n">
  */
 <if(foreignKey.allowsNull)>
