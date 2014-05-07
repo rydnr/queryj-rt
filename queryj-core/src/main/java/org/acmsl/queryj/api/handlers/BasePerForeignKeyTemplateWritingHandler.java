@@ -104,7 +104,8 @@ public abstract class BasePerForeignKeyTemplateWritingHandler
                 t_MetadataManager.getEngine(),
                 retrieveProjectOutputDir(parameters),
                 retrieveProjectPackage(parameters),
-                new CachingForeignKeyDecorator(context.getForeignKey(), t_MetadataManager, t_DecoratorFactory, t_CustomSqlProvider),
+                new CachingForeignKeyDecorator(
+                    context.getForeignKey(), t_MetadataManager, t_DecoratorFactory, t_CustomSqlProvider),
                 retrieveUseSubfoldersFlag(parameters));
     }
 
