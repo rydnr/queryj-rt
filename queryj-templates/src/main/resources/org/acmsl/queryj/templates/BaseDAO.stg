@@ -317,7 +317,7 @@ List\<<table.name.voName>\> findConstantsBy<attribute.name.capitalized>(<if(!att
 <table.name.voName> findConstantBy<attribute.name.capitalized>(<if(!attribute.primitive)><if(!attribute.primitiveWrapper)><notnull(C=C)><else><if(attribute.nullable)><notnull(C=C)><endif><endif><endif>final <attribute.primitiveType> <attribute.name.lowercased.uncapitalized>);
 >>
 
-fk_delete_method(foreignKey, table) ::= <<
+fk_delete_method(foreignKey, table, C) ::= <<
 <!
   Writes the deleteByXX method for a concrete foreign key.
   @param foreignKey the foreign key.
