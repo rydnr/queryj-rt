@@ -55,7 +55,9 @@ import org.checkthread.annotations.ThreadSafe;
 public class ForeignKeyValueObject
     extends AbstractForeignKey<String>
 {
-
+    /**
+     * The serial version id
+     */
     private static final long serialVersionUID = 3292464819930780148L;
 
     /**
