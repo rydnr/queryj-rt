@@ -296,21 +296,6 @@ public class AbstractTableDecoratorTest
                 voDecorated,
                 isRelationship);
 
-        @NotNull final Attribute<String> parentAttribute =
-            new AttributeIncompleteValueObject(
-                "myParentId",
-                Types.BIGINT,
-                "long",
-                name,
-                "parent comment",
-                1, // ordinalPosition
-                6222, // length
-                1, // precision
-                false, // allowsNull
-                null); // value
-
-        parentAttributes.add(parentAttribute);
-
         @NotNull final Attribute<String> childAttribute =
             new AttributeIncompleteValueObject(
                 "myChildId",
