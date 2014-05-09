@@ -304,7 +304,7 @@ public class AbstractTableDecoratorTest
 
         @NotNull final Attribute<String> childAttribute3 =
             new AttributeIncompleteValueObject(
-                "myChildIdName",
+                "date3",
                 Types.DATE,
                 "Date",
                 "name",
@@ -315,9 +315,23 @@ public class AbstractTableDecoratorTest
                 false, // allowsNull
                 null); // value
 
+        @NotNull final Attribute<String> childAttribute4 =
+            new AttributeIncompleteValueObject(
+                "date4",
+                Types.DATE,
+                "Date",
+                "name",
+                "child comment 4",
+                3, // ordinalPosition
+                6222, // length
+                1, // precision
+                false, // allowsNull
+                null); // value
+
         attributes.add(childAttribute1);
         attributes.add(childAttribute2);
         attributes.add(childAttribute3);
+        attributes.add(childAttribute4);
 
         @NotNull final AbstractTableDecorator instance = setupTableDecorator(attributes, null);
 
