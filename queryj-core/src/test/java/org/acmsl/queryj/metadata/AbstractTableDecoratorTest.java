@@ -270,4 +270,7 @@ public class AbstractTableDecoratorTest
                 || attribute.getName().getValue().equals("myParentId"));
         }
     }
+
+    @Test
+
 }
