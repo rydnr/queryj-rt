@@ -291,7 +291,7 @@ public class AbstractTableDecoratorTest
 
         @NotNull final Attribute<String> childAttribute2 =
             new AttributeIncompleteValueObject(
-                "myChildId2",
+                "time2",
                 Types.TIMESTAMP,
                 "Timestamp",
                 "id2",
