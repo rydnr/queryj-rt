@@ -226,8 +226,8 @@ public interface <table.name.voName>DAO
 <endif>
 <   if(table.customSelectsForUpdate)>
     <table.customSelectsForUpdate:{ cs | <custom_select_for_update(cs=cs, C=C)>}; separator="\n\n">
-<endif>
-}
+<endif
+>}
 >>
 
 cached_constants(row, voName, C) ::= <<
