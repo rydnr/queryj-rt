@@ -274,15 +274,7 @@ public class AbstractTableDecoratorTest
     @Test
     public void getAttributeTypes_does_not_contain_duplicates()
     {
-        @NotNull final String name = "parentTable";
-        @NotNull final String comment = "comment";
-        @NotNull final List<Attribute<String>> primaryKey = new ArrayList<>(0);
         @NotNull final List<Attribute<String>> attributes = new ArrayList<>(0);
-        @NotNull final List<Attribute<String>> parentAttributes = new ArrayList<>(0);
-        @NotNull final List<ForeignKey<String>> foreignKeys = new ArrayList<>(0);
-        @Nullable final Attribute<String> staticAttribute = null;
-        final boolean voDecorated = false;
-        final boolean isRelationship = false;
 
         @NotNull final Attribute<String> childAttribute1 =
             new AttributeIncompleteValueObject(
