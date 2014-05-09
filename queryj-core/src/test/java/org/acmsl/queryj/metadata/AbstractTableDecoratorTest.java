@@ -301,8 +301,8 @@ public class AbstractTableDecoratorTest
                 "myChildId1",
                 Types.BIGINT,
                 "long",
-                "name",
-                "child comment",
+                "id1",
+                "child comment 1",
                 1, // ordinalPosition
                 6222, // length
                 1, // precision
@@ -314,9 +314,9 @@ public class AbstractTableDecoratorTest
                 "myChildId2",
                 Types.BIGINT,
                 "long",
-                "name",
-                "child comment",
-                1, // ordinalPosition
+                "id2",
+                "child comment 2",
+                2, // ordinalPosition
                 6222, // length
                 1, // precision
                 false, // allowsNull
@@ -326,10 +326,10 @@ public class AbstractTableDecoratorTest
             new AttributeIncompleteValueObject(
                 "myChildIdName",
                 Types.VARCHAR,
-                "",
+                "String",
                 "name",
-                "child comment",
-                1, // ordinalPosition
+                "child comment 3",
+                3, // ordinalPosition
                 6222, // length
                 1, // precision
                 false, // allowsNull
