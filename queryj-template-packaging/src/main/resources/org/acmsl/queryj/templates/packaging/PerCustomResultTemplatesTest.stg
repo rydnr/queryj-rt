@@ -1,0 +1,534 @@
+//;-*- mode: antlr -*-
+//
+//                      QueryJ Template Packaging
+//
+//  Copyright (C) 2002-today  ACM-SL
+//                           chous@acm-sl.org
+//
+//  This library is free software; you can redistribute it and/or
+//  modify it under the terms of the GNU General Public
+//  License as published by the Free Software Foundation; either
+//  version 2 of the License, or any later version.
+//
+//  This library is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+//  General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public
+//  License along with this library; if not, write to the Free Software
+//  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//
+//  Thanks to ACM S.L. for distributing this library under the GPL license.
+//  Contact info: jose.sanleandro@acm-sl.com
+//  Postal Address: c/Playa de Lagoa, 1
+//                  Urb. Valdecabanas
+//                  Boadilla del monte
+//                  28660 Madrid
+//                  Spain
+//
+//***************************************************************************
+//
+// Filename: PerCustomResultTemplatesTest.stg
+//
+// Author: Jose San Leandro Armendariz
+//
+// Description: Defines the rules to generate PerCustomResultTemplatesTest
+//              implementations.
+//
+group PerCustomResultTemplatesTest;
+
+import "common.stg"
+
+source(C) ::= <<
+<!
+  Generates PerCustomResultTemplatesTest implementations.
+!>
+<if(C.header)>
+<C.header>
+<else>
+<java_header(
+  description=
+  [
+    description()
+  ],
+  template="org/acmsl/queryj/templates/PerCustomResultTemplatesTest.stg",
+  C=C)><endif>
+
+<package_declaration(packageName="cucumber.templates")>
+<checkers_import()>
+
+/*
+ * Importing QueryJ Core classes.
+ */
+import org.acmsl.queryj.api.AbstractTemplate;
+import org.acmsl.queryj.api.exceptions.DevelopmentModeException;
+import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.api.PerCustomResultTemplate;
+import org.acmsl.queryj.api.PerCustomResultTemplateContext;
+import org.acmsl.queryj.api.PerCustomResultTemplateFactory;
+import org.acmsl.queryj.api.PerCustomResultTemplateGenerator;
+import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
+import org.acmsl.queryj.customsql.CustomSqlProvider;
+import org.acmsl.queryj.customsql.handlers.CustomSqlProviderRetrievalHandler;
+import org.acmsl.queryj.customsql.Property;
+import org.acmsl.queryj.customsql.Result;
+import org.acmsl.queryj.Literals;
+import org.acmsl.queryj.metadata.DecoratedString;
+import org.acmsl.queryj.metadata.DecoratorFactory;
+import org.acmsl.queryj.metadata.engines.Engine;
+import org.acmsl.queryj.metadata.engines.EngineDecorator;
+import org.acmsl.queryj.metadata.engines.UndefinedJdbcEngine;
+import org.acmsl.queryj.metadata.engines.oracle.OracleEngine;
+import org.acmsl.queryj.metadata.MetadataManager;
+import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.QueryJCommandWrapper;
+import org.acmsl.queryj.QueryJSettings;
+import org.acmsl.queryj.SerializablePropertiesConfiguration;
+import org.acmsl.queryj.tools.handlers.DatabaseMetaDataRetrievalHandler;
+
+/*
+ * Importing QueryJ Test classes.
+ */
+import org.acmsl.queryj.test.AbstractTemplatesTest;
+import org.acmsl.queryj.test.CustomResultTestHelper;
+
+/*
+ * Importing project classes.
+ */
+<C.templateDefs:{ d | <def_import(d=d)>}; separator="\n">
+
+/*
+ * Importing StringTemplate classes.
+ */
+import org.stringtemplate.v4.ST;
+
+/*
+ * Importing ACM-SL Commons classes.
+ */
+import org.acmsl.commons.logging.UniqueLogFactory;
+
+/*
+ * Importing Cucumber classes.
+ */
+import cucumber.api.DataTable;
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+/*
+ * Importing Apache Commons Logging classes.
+ */
+import org.apache.commons.logging.LogFactory;
+
+/*
+ * Importing JetBrains Annotations.
+ */
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+/*
+ * Importing JUnit/EasyMock classes.
+ */
+import org.junit.Assert;
+
+/*
+ * Importing JDK classes.
+ */
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.Charset;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+<class(defs=C.templateDefs, C=C)>
+>>
+
+description() ::= <<
+<!
+  Generates a description for the generated file.
+  @param resultName the result name.
+!>
+Cucumber tests for per-result templates.
+>>
+
+def_import(d) ::= <<
+<!
+  Generates the imports for a given TemplateDef.
+  @param d the template def.
+!>
+<if(d.type.perCustomResult)>
+import org.acmsl.queryj.templates.<d.name>TemplateFactory;
+import org.acmsl.queryj.templates.<d.name>TemplateGenerator;<endif>
+>>
+
+class(defs, C) ::= <<
+<!
+ Generates the class body.
+ @param defs the template defs.
+ @param C the context.
+!>
+/**
+ * <description()>
+<class_common_javadoc(
+  template="org/acmsl/queryj/dao/PerCustomResultTemplatesTest.stg",
+  generation_timestamps_enabled=C.generation_timestamps_enabled,
+  timestamp=C.timestamp,
+  version=C.version)>
+ */
+public class PerCustomResultTemplatesTest
+    extends AbstractTemplatesTest\<
+                PerCustomResultTemplateGenerator\<? extends PerCustomResultTemplate\<PerCustomResultTemplateContext>, PerCustomResultTemplateContext>,
+                PerCustomResultTemplateFactory\<? extends PerCustomResultTemplate\<PerCustomResultTemplateContext>, PerCustomResultTemplateContext\>>
+{
+    /**
+     * Creates an instance.
+     */
+    public PerCustomResultTemplatesTest()
+    {
+        super();
+
+        <defs:{ d | <if(!d.disabled)><if(d.type.perCustomResult)><generator_mapping(def=d)><endif><endif>}; separator="\n">
+    }
+
+    /**
+     * Defines the input results based on the information provided by the
+     * feature.
+     * @param resultInfo the information about the results.
+     */
+    @SuppressWarnings("unused")
+    @Given("^the following custom result:$")
+    public void defineInputResults(@NotNull final DataTable resultInfo)
+    {
+        defineInputResults(resultInfo, getResults(), CustomResultTestHelper.getInstance());
+    }
+
+    /**
+     * Defines the input results based on the information provided by the
+     * feature.
+     * @param resultInfo the information about the results.
+     */
+    protected void defineInputResults(
+        @NotNull final DataTable resultInfo,
+        @NotNull final Map\<String, Result\<String\>> results,
+        @NotNull final CustomResultTestHelper helper)
+    {
+        helper.defineInputResults(resultInfo, results);
+    }
+
+    /**
+     * Defines the input properties based on the information provided by the
+     * feature.
+     * @param propertiesInfo the information about the properties.
+     */
+    @SuppressWarnings("unused")
+    @And("^the following custom result properties:$")
+    public void defineInputProperties(@NotNull final DataTable propertiesInfo)
+    {
+        defineInputProperties(propertiesInfo, getResults(), getProperties(), CustomResultTestHelper.getInstance());
+    }
+
+    /**
+     * Defines the input properties based on the information provided by the
+     * feature.
+     * @param propertiesInfo the information about the properties.
+     * @param results the results.
+     * @param properties the properties.
+     * @param helper the {@link CustomResultTestHelper} instance.
+     */
+    protected void defineInputProperties(
+        @NotNull final DataTable propertiesInfo,
+        @NotNull final Map\<String, Result\<String\>> results,
+        @NotNull final Map\<String, List\<Property\<String>\>> properties,
+        @NotNull final CustomResultTestHelper helper)
+    {
+        helper.defineInputProperties(propertiesInfo, results, properties);
+    }
+
+    /**
+     * Generates a file with the information from the feature.
+     * @param template the template.
+     * @param engine the engine.
+     */
+    @SuppressWarnings("unused")
+    @When("^I use the custom result template (.*) for (.*)$")
+    public void generateFile(@NotNull final String template, @NotNull final String engine)
+    {
+        setEngineName(engine);
+
+        generateFile(
+            template,
+            engine,
+            getResults(),
+            getProperties(),
+            getOutputFiles(),
+            retrieveCustomSqlProviderForResults(
+                new ArrayList\<Result\<String\>>(getResults().values()), getProperties()));
+    }
+
+    /**
+     * Generates a file with the information from the feature.
+     * @param templateName the template.
+     * @param engine the engine name.
+     * @param resultMap the result map.
+     * @param propertyMap the property map.
+     * @param outputFiles the output files.
+     * @param sqlProvider the {@link CustomSqlProvider} instance.
+     */
+    @SuppressWarnings("unchecked")
+    protected void generateFile(
+        @NotNull final String templateName,
+        @NotNull final String engine,
+        @NotNull final Map\<String, Result\<String\>> resultMap,
+        @NotNull final Map\<String, List\<Property\<String>\>> propertyMap,
+        @NotNull final Map\<String, File> outputFiles,
+        @NotNull final CustomSqlProvider sqlProvider)
+    {
+        @Nullable final PerCustomResultTemplateGenerator\<PerCustomResultTemplate\<PerCustomResultTemplateContext>, PerCustomResultTemplateContext> generator =
+            (PerCustomResultTemplateGenerator\<PerCustomResultTemplate\<PerCustomResultTemplateContext>, PerCustomResultTemplateContext>) retrieveTemplateGenerator(
+                templateName);
+
+        Assert.assertNotNull(
+            "No template generator found for " + templateName + ". Does " + templateName + ".stg exist?",
+            generator);
+
+        @NotNull final DecoratorFactory decoratorFactory = retrieveDecoratorFactory(generator);
+
+        boolean firstTime = true;
+        boolean restart = false;
+
+        @Nullable String failCause = null;
+
+        while (   (firstTime)
+               || (restart))
+        {
+            firstTime = false;
+
+            @NotNull final QueryJCommand t_Command =
+                new ConfigurationQueryJCommandImpl(new SerializablePropertiesConfiguration());
+
+            new QueryJCommandWrapper\<DecoratorFactory>(t_Command).setSetting(
+                DecoratorFactory.class.getName(), decoratorFactory);
+            new QueryJCommandWrapper\<CustomSqlProvider>(t_Command).setSetting(
+                CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, sqlProvider);
+            new QueryJCommandWrapper\<String>(t_Command).setSetting(
+                QueryJSettings.PACKAGE, BASE_PACKAGE_NAME);
+            new QueryJCommandWrapper\<String>(t_Command).setSetting(
+                Literals.PACKAGE_NAME, BASE_PACKAGE_NAME); // TODO: FIXME (<def.packageName>)
+            new QueryJCommandWrapper\<String>(t_Command).setSetting(
+                QueryJSettings.REPOSITORY, "acme");
+            new QueryJCommandWrapper\<String>(t_Command).setSetting(
+                QueryJSettings.HEADER_FILE, "");
+            new QueryJCommandWrapper\<Boolean>(t_Command).setSetting(
+                QueryJSettings.DISABLE_TIMESTAMPS, false);
+            new QueryJCommandWrapper\<Boolean>(t_Command).setSetting(
+                QueryJSettings.IMPLEMENT_MARKER_INTERFACES, false);
+            new QueryJCommandWrapper\<Boolean>(t_Command).setSetting(
+                QueryJSettings.DISABLE_NOTNULL_ANNOTATIONS, false);
+            new QueryJCommandWrapper\<Boolean>(t_Command).setSetting(
+                QueryJSettings.DISABLE_CHECKTHREAD_ANNOTATIONS, false);
+            new QueryJCommandWrapper\<String>(t_Command).setSetting(
+                QueryJSettings.JNDI_DATASOURCE, "");
+            new QueryJCommandWrapper\<String>(t_Command).setSetting(
+                QueryJSettings.VERSION, "<C.version>");
+
+            @NotNull final List\<Result\<String\>> results = new ArrayList\<>(resultMap.values());
+
+            for (@Nullable final Result\<String> result : results)
+            {
+                if (result == null)
+                {
+                    Assert.fail("Null result found");
+                }
+                else
+                {
+                    @Nullable List\<Property\<String\>> properties = propertyMap.get(result.getId());
+
+                    if (properties == null)
+                    {
+                        properties = new ArrayList\<>(0);
+                    }
+
+                    @NotNull final MetadataManager metadataManager =
+                        retrieveMetadataManager(engine, result, properties, decoratorFactory);
+
+                    new QueryJCommandWrapper\<MetadataManager>(t_Command).setSetting(
+                        DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, metadataManager);
+
+                    @Nullable final PerCustomResultTemplateFactory\<? extends PerCustomResultTemplate\<PerCustomResultTemplateContext>, PerCustomResultTemplateContext> templateFactory =
+                        retrieveTemplateFactory(templateName);
+
+                    Assert.assertNotNull("No template factory found for " + templateName, templateFactory);
+
+                    @NotNull final String packageName =
+                        resolvePackage(PACKAGE_MAPPINGS.get(templateName), result.getId(), resolveEngine(engine));
+
+                    @NotNull final PerCustomResultTemplateContext t_Context =
+                        new PerCustomResultTemplateContext(result, properties, t_Command);
+
+                    t_Context.setPackageName(packageName);
+
+                    @Nullable final PerCustomResultTemplate\<PerCustomResultTemplateContext> template =
+                        templateFactory.createTemplate(result, properties, t_Context, t_Command);
+
+                    Assert.assertNotNull("No template found for " + templateName, template);
+
+                    File outputDir = null;
+
+                    try
+                    {
+                        rootFolder.create();
+
+                        @NotNull final String[] packages = packageName.split("\\\.");
+                        @NotNull final StringBuilder folder = new StringBuilder();
+
+                        for (@NotNull final String pkg : packages)
+                        {
+                            folder.append(File.separator);
+                            folder.append(pkg);
+                        }
+
+                        outputDir = new File(rootFolder.getRoot().getAbsolutePath().concat(folder.toString()));
+
+                        outputDir.mkdirs();
+                    }
+                    catch (@NotNull final IOException ioException)
+                    {
+                        Assert.fail(ioException.getMessage());
+                    }
+
+                    if (!outputDir.exists())
+                    {
+                        Assert.fail("Cannot create folder: " + outputDir.getAbsolutePath());
+                    }
+
+                    UniqueLogFactory.initializeInstance(LogFactory.getLog(PerCustomResultTemplatesTest.class));
+
+                    ((AbstractTemplate) template).setDebugMode(true);
+
+                    try
+                    {
+                        generator.write(
+                            template,
+                            outputDir,
+                            rootFolder.getRoot(),
+                            Charset.defaultCharset());
+                    }
+                    catch (@NotNull final IOException ioException)
+                    {
+                        if (failCause == null)
+                        {
+                            failCause = ioException.getMessage();
+                        }
+                        restart = false;
+                    }
+                    catch (@NotNull final DevelopmentModeException debugging)
+                    {
+                        restart = true;
+                    }
+                    catch (@NotNull final QueryJBuildException queryjBuildException)
+                    {
+                        if (failCause == null)
+                        {
+                            failCause = queryjBuildException.getMessage();
+                        }
+                        restart = false;
+                    }
+
+                    outputFiles.put(
+                        result.getId(),
+                        new File(outputDir, template.getTemplateContext().getFileName()));
+                }
+            }
+        }
+
+        if (failCause != null)
+        {
+            Assert.fail(failCause);
+        }
+    }
+
+    /**
+     * Checks the generated file compiles.
+     * @param outputName the name of the output file.
+     */
+    @SuppressWarnings("unused")
+    @Then("^the generated custom result-specific (.*) file compiles successfully")
+    public void checkGeneratedFileCompiles(@NotNull final String outputName)
+    {
+        checkGeneratedFilesCompile(outputName, getOutputFiles());
+    }
+
+    /**
+     * Retrieves the {@link DecoratorFactory} instance using given generator.
+     * @param generator the generator to use.
+     * @return the decorator factory.
+     */
+    @NotNull
+    @Override
+    protected DecoratorFactory retrieveDecoratorFactory(
+        @NotNull final PerCustomResultTemplateGenerator\<? extends PerCustomResultTemplate\<PerCustomResultTemplateContext>, PerCustomResultTemplateContext> generator)
+    {
+        return generator.getDecoratorFactory();
+    }
+
+    /**
+     * Resolves the engine.
+     * @param name the engine name.
+     * @return the {@link Engine}.
+     */
+    @NotNull
+    protected Engine\<String> resolveEngine(@NotNull final String name)
+    {
+        @NotNull final Engine\<String> result;
+
+        if (name.equalsIgnoreCase(Literals.ORACLE))
+        {
+            result = new OracleEngine("unknown");
+        }
+        else
+        {
+            result = new UndefinedJdbcEngine(name, "unknown");
+        }
+
+        return result;
+    }
+
+    /**
+     * Resolves the package.
+     * @param packageTemplate the package template.
+     * @param resultName the result name.
+     * @param engine the engine.
+     * @return the actual package.
+     */
+    @NotNull
+    protected String resolvePackage(
+        @NotNull final String packageTemplate,
+        @NotNull final String resultName,
+        @NotNull final Engine\<String> engine)
+    {
+        @NotNull final String result;
+
+        @NotNull final ST template = new ST(packageTemplate);
+        template.add(Literals.PACKAGE_NAME, new DecoratedString(BASE_PACKAGE_NAME));
+        template.add(Literals.RESULT_NAME, new DecoratedString(resultName));
+        template.add(Literals.ENGINE, new EngineDecorator(engine));
+
+        result = template.render();
+
+        return result;
+    }
+}
+>>
+
+generator_mapping(def) ::= <<
+<!
+ Generates the call to add the generator and factory of the def to the general mappings.
+ @param def the template def.
+!>
+GENERATOR_MAPPINGS.put("<def.name>", new <def.name>TemplateGenerator(false, 1));
+FACTORY_MAPPINGS.put("<def.name>", <def.name>TemplateFactory.getInstance());
+PACKAGE_MAPPINGS.put("<def.name>", "<def.packageName>");
+>>
