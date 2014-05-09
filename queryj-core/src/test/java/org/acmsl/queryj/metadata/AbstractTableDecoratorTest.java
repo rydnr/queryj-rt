@@ -292,8 +292,8 @@ public class AbstractTableDecoratorTest
         @NotNull final Attribute<String> childAttribute2 =
             new AttributeIncompleteValueObject(
                 "myChildId2",
-                Types.BIGINT,
-                "long",
+                Types.TIMESTAMP,
+                "Timestamp",
                 "id2",
                 "child comment 2",
                 2, // ordinalPosition
@@ -305,8 +305,8 @@ public class AbstractTableDecoratorTest
         @NotNull final Attribute<String> childAttribute3 =
             new AttributeIncompleteValueObject(
                 "myChildIdName",
-                Types.,
-                "String",
+                Types.DATE,
+                "Date",
                 "name",
                 "child comment 3",
                 3, // ordinalPosition
