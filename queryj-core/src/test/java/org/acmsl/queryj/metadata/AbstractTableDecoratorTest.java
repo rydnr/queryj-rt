@@ -296,7 +296,7 @@ public class AbstractTableDecoratorTest
                 voDecorated,
                 isRelationship);
 
-        @NotNull final Attribute<String> childAttribute =
+        @NotNull final Attribute<String> childAttribute1 =
             new AttributeIncompleteValueObject(
                 "myChildId1",
                 Types.BIGINT,
@@ -309,7 +309,7 @@ public class AbstractTableDecoratorTest
                 false, // allowsNull
                 null); // value
 
-        @NotNull final Attribute<String> childAttribute =
+        @NotNull final Attribute<String> childAttribute2 =
             new AttributeIncompleteValueObject(
                 "myChildId2",
                 Types.BIGINT,
@@ -322,7 +322,7 @@ public class AbstractTableDecoratorTest
                 false, // allowsNull
                 null); // value
 
-        @NotNull final Attribute<String> childAttribute =
+        @NotNull final Attribute<String> childAttribute3 =
             new AttributeIncompleteValueObject(
                 "myChildIdName",
                 Types.VARCHAR,
@@ -335,7 +335,9 @@ public class AbstractTableDecoratorTest
                 false, // allowsNull
                 null); // value
 
-        attributes.add(childAttribute);
+        attributes.add(childAttribute1);
+        attributes.add(childAttribute2);
+        attributes.add(childAttribute3);
 
         @NotNull final AbstractTableDecorator instance = setupTableDecorator(attributes, parentTable);
 
@@ -346,8 +348,8 @@ public class AbstractTableDecoratorTest
         for (@NotNull final DecoratedString type: attributeTypes)
         {
             Assert.assertTrue(
-                type.getValue().equals("long")
-                || type.getValue().equals("myParentId"));
+                   type.getValue().equals("long")
+                || type.getValue().equals("String"));
         }
     }
 }
