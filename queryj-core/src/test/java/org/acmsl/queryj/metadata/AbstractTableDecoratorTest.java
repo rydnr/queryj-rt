@@ -305,7 +305,7 @@ public class AbstractTableDecoratorTest
         @NotNull final Attribute<String> childAttribute3 =
             new AttributeIncompleteValueObject(
                 "myChildIdName",
-                Types.VARCHAR,
+                Types.DECIMAL,
                 "String",
                 "name",
                 "child comment 3",
