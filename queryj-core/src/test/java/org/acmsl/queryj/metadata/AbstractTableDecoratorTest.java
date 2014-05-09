@@ -328,14 +328,11 @@ public class AbstractTableDecoratorTest
 
         @NotNull final AbstractTableDecorator instance = setupTableDecorator(attributes, parentTable);
 
-        @NotNull final List<DecoratedString> listDecorator = instance.getAttributeTypes();
+        @NotNull final List<DecoratedString> attributeTypes = instance.getAttributeTypes();
 
+        Assert.assertEquals(2, attributeTypes.size());
 
-        @NotNull final List<Attribute<DecoratedString>> allAttributes = listDecorator.getItems();
-
-        Assert.assertEquals(2, allAttributes.size());
-
-        for (@NotNull final Attribute<DecoratedString> attribute : allAttributes)
+        for (@NotNull final DecoratedString type: attributeTypes)
         {
             Assert.assertTrue(
                 attribute.getName().getValue().equals("myChildId")
