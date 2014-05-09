@@ -328,8 +328,8 @@ public class AbstractTableDecoratorTest
         for (@NotNull final DecoratedString type: attributeTypes)
         {
             Assert.assertTrue(
-                   type.getValue().equals("Date")
-                || type.getValue().equals("Timestamp"));
+                   type.getValue().equals("java.util.Date")
+                || type.getValue().equals("java.sql.Timestamp"));
         }
     }
 }
