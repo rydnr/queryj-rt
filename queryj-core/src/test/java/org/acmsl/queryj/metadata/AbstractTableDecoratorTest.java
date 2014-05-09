@@ -272,5 +272,5 @@ public class AbstractTableDecoratorTest
     }
 
     @Test
-    public void
+    public void getAttributeTypes_
 }
