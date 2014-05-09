@@ -272,5 +272,73 @@ public class AbstractTableDecoratorTest
     }
 
     @Test
-    public void getAttributeTypes_
+    public void getAttributeTypes_does_not_contain_duplicates()
+    {
+        @NotNull final String name = "parentTable";
+        @NotNull final String comment = "comment";
+        @NotNull final List<Attribute<String>> primaryKey = new ArrayList<>(0);
+        @NotNull final List<Attribute<String>> attributes = new ArrayList<>(0);
+        @NotNull final List<Attribute<String>> parentAttributes = new ArrayList<>(0);
+        @NotNull final List<ForeignKey<String>> foreignKeys = new ArrayList<>(0);
+        @Nullable final Attribute<String> staticAttribute = null;
+        final boolean voDecorated = false;
+        final boolean isRelationship = false;
+
+        @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> parentTable =
+            new TableValueObject(
+                name,
+                comment,
+                primaryKey,
+                parentAttributes,
+                foreignKeys,
+                null,
+                staticAttribute,
+                voDecorated,
+                isRelationship);
+
+        @NotNull final Attribute<String> parentAttribute =
+            new AttributeIncompleteValueObject(
+                "myParentId",
+                Types.BIGINT,
+                "long",
+                name,
+                "parent comment",
+                1, // ordinalPosition
+                6222, // length
+                1, // precision
+                false, // allowsNull
+                null); // value
+
+        parentAttributes.add(parentAttribute);
+
+        @NotNull final Attribute<String> childAttribute =
+            new AttributeIncompleteValueObject(
+                "myChildId",
+                Types.BIGINT,
+                "long",
+                "name",
+                "child comment",
+                1, // ordinalPosition
+                6222, // length
+                1, // precision
+                false, // allowsNull
+                null); // value
+
+        attributes.add(childAttribute);
+
+        @NotNull final AbstractTableDecorator instance = setupTableDecorator(attributes, parentTable);
+
+        @NotNull final ListDecorator<Attribute<DecoratedString>> listDecorator = instance.getAllAttributes();
+
+        @NotNull final List<Attribute<DecoratedString>> allAttributes = listDecorator.getItems();
+
+        Assert.assertEquals(2, allAttributes.size());
+
+        for (@NotNull final Attribute<DecoratedString> attribute : allAttributes)
+        {
+            Assert.assertTrue(
+                attribute.getName().getValue().equals("myChildId")
+                || attribute.getName().getValue().equals("myParentId"));
+        }
+    }
 }
