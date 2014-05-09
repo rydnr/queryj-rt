@@ -183,7 +183,7 @@ public interface <table.name.voName>DAO
      <table.own.minus.readOnly.minus.externallyManagedAttributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
      */
     void insert(
-        <table.own.minus.externallyManagedAttributes:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
+        <table.own.minus.readOnly.minus.externallyManagedAttributes:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
       throws DataAccessException;
 
     /**
