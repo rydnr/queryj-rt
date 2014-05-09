@@ -219,8 +219,8 @@ if(table.foreignKeys)>
 if(table.customSelects)>
 
     <table.customSelects:{ cs | <custom_select(cs=cs, C=C)>}; separator="\n\n">
-<endif>
-<   if(table.customUpdatesOrInserts)>
+<endif><
+if(table.customUpdatesOrInserts)>
     <table.customUpdatesOrInserts:{ cs | <custom_update_or_insert(cs=cs, C=C)>}; separator="\n\n">
 
 <endif>
