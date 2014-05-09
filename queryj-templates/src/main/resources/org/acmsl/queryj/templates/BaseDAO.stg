@@ -217,8 +217,8 @@ if(table.foreignKeys)>
     <table.foreignKeys:{ fk | <fk_delete_method(foreignKey=fk, table=table, C=C)>}; separator="\n">
 <endif><
 if(table.customSelects)>
-    <table.customSelects:{ cs | <custom_select(cs=cs, C=C)>}; separator="\n\n">
 
+    <table.customSelects:{ cs | <custom_select(cs=cs, C=C)>}; separator="\n\n">
 <endif>
 <   if(table.customUpdatesOrInserts)>
     <table.customUpdatesOrInserts:{ cs | <custom_update_or_insert(cs=cs, C=C)>}; separator="\n\n">
