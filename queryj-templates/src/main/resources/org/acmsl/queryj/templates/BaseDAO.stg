@@ -212,7 +212,7 @@ public interface <table.name.voName>DAO
      */
     void delete(<table.primaryKey:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=", ">)
         throws DataAccessException;
-
+<   if(table.foreignKeys)>
     <table.foreignKeys:{ fk | <fk_delete_method(foreignKey=fk, table=table, C=C)>}; separator="\n">
     <table.customSelects:{ cs | <custom_select(cs=cs, C=C)>}; separator="\n\n">
     <table.customUpdatesOrInserts:{ cs | <custom_update_or_insert(cs=cs, C=C)>}; separator="\n\n">
