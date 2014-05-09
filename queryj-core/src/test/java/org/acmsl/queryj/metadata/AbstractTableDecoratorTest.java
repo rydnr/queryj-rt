@@ -330,6 +330,7 @@ public class AbstractTableDecoratorTest
 
         @NotNull final List<DecoratedString> listDecorator = instance.getAttributeTypes();
 
+
         @NotNull final List<Attribute<DecoratedString>> allAttributes = listDecorator.getItems();
 
         Assert.assertEquals(2, allAttributes.size());
