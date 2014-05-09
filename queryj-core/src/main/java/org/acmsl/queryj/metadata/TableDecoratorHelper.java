@@ -361,8 +361,10 @@ public class TableDecoratorHelper
                     typeManager.getImport(
                         typeManager.getJavaType(attr.getType().getValue()));
 
-                if (importType != null)
+                if (   (importType != null)
+                    && (!result.contains())
                 {
+
                     result.add(new DecoratedString(importType));
                 }
             }
