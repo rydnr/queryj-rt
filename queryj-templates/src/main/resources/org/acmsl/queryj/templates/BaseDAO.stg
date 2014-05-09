@@ -194,7 +194,7 @@ public interface <table.name.voName>DAO
      */
     <notnull(C=C)>
     <table.name.voName> create(
-        <table.own.minus.externallyManagedAttributes:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
+        <table.own.minus.readOnly.minus.externallyManagedAttributes:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
       throws DataAccessException;
 
     /**
