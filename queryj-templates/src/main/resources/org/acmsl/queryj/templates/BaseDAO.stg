@@ -1,0 +1,402 @@
+//;-*- mode: antlr -*-
+//
+//                      QueryJ
+//
+//  Copyright (C) 2002-today  ACM-SL
+//                           chous@acm-sl.org
+//
+//  This library is free software; you can redistribute it and/or
+//  modify it under the terms of the GNU General Public
+//  License as published by the Free Software Foundation; either
+//  version 2 of the License, or any later version.
+//
+//  This library is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+//  General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public
+//  License along with this library; if not, write to the Free Software
+//  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//
+//  Thanks to ACM S.L. for distributing this library under the GPL license.
+//  Contact info: jose.sanleandro@acm-sl.com
+//  Postal Address: c/Playa de Lagoa, 1
+//                  Urb. Valdecabanas
+//                  Boadilla del monte
+//                  28660 Madrid
+//                  Spain
+//
+//***************************************************************************
+//
+// Filename: BaseDAO.stg
+//
+// Author: Jose San Leandro Armendariz
+//
+// Description: Defines the rules to generate base DAO
+//              implementations.
+//
+//
+group BaseDAO;
+
+import "queryj.stg"
+
+source(C) ::= <<
+<!
+  Generates a DAO database implementation source file.
+!>
+<sourceImpl(table=C.table, C=C)>
+>>
+
+sourceImpl(table, C) ::= <<
+<!
+  Generates a BaseDAO interface source file.
+  @param table the table.
+  @param C the context.
+!>
+/*
+<if(C.header)>
+<C.header>
+<else>
+<java_header(
+  description=
+  [
+    description(tableName=table.name)
+  ],
+  template="org/acmsl/queryj/templates/BaseDAO.stg",
+  C=C)><endif>
+*/
+<package_declaration(p=C.package)>
+
+<project_imports(
+  basePackageName=C.package,
+  voName=table.name.voName)>
+<checkers_import(C=C)>
+/*
+ * Importing Spring classes.
+ */
+import org.springframework.dao.DataAccessException;
+<if(C.implement_markers)>
+
+/*
+ * Importing some ACM-SL Commons classes.
+ */
+import org.acmsl.commons.patterns.dao.DAO;
+
+<endif>
+
+
+/*
+ * Importing JDK classes.
+ */
+<if(table.static)>
+import java.util.Arrays;
+import java.util.Collections;
+<endif>
+import java.util.List;
+
+<if(table.attributeTypes)>
+<table.attributeTypes:{ t | import <t>;}; separator="\n">
+<endif>
+
+<class(table=table, C=C)>
+>>
+
+first_line_description(tableName) ::= <<
+<!
+  Generates the first line of the generated file description.
+  @param tableName the table name.
+!>
+DAO abstract layer responsible of retrieving
+>>
+
+second_line_description(tableName) ::= <<
+<!
+  Generates the second line of the generated file description.
+  @param tableName the table name.
+!>
+<tableName> structures from persistence layers.
+>>
+
+project_imports(basePackageName, voName) ::= <<
+<!
+ Generates the project imports.
+ @param basePackageName the base package name.
+ @param voName the value-object name.
+!>
+/*
+ * Importing project classes.
+ */
+import <basePackageName>.dao.<voName>;
+>>
+
+class(table, C) ::= <<
+<!
+ Generates the class body.
+ @param table the table.
+ @param C the context.
+!>
+/**
+ * <[
+      first_line_description(tableName=table.name),
+      second_line_description(tableName=table.name)
+    ]:{line |<line>}; separator="\n * ">
+<class_common_javadoc(template="org/acmsl/queryj/templates/BaseDAO.stg", C=C)>
+ */
+public interface <table.name.voName>DAO
+<if(C.implement_markers)>
+    extends  DAO
+<endif>
+
+{
+<if(table.static)>
+    <table.staticContent:{r | <cached_constants(row=r, voName=table.name.voName, C=C)>}; separator="\n\n">
+
+    /**
+     * The pre-existing {@link <table.name.voName>} values.
+     */
+    <notnull(C=C)>
+    List\<<table.name.voName>\> FIXED_CONSTANTS =
+        Collections.unmodifiableList(
+            Arrays.asList(
+                <table.staticContent:{ r | <r.name.normalized.uppercased>}; separator=",\n">));
+
+    /**
+     * Retrieves the static (pre-cached) values.
+     * @return such information.
+     */
+    <notnull(C=C)>
+    List\<<table.name.voName\>> getStaticValues();
+
+<if(table.primaryKey)>
+
+    <find_constant_by_pk(primaryKey=table.primaryKey, table=table, C=C)>
+<endif>
+
+    <table.own.minus.primaryKey.minus.readOnlyAttributes:{ attr | <find_constant_methods(attribute=attr, table=table, C=C)>}; separator="\n\n">
+
+    <find_by_primary_key(table=table, parent=table.parentTable, repository=C.repository, C=C)>
+<endif>
+
+    /**
+     * Persists {@link <table.name.voName>} information.
+     <table.own.minus.externallyManagedAttributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
+     */
+    void insert(
+        <table.own.minus.externallyManagedAttributes:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
+      throws DataAccessException;
+
+    /**
+     * Inserts and retrieves the newly-inserted
+     * {@link <table.name.voName>} instance.
+     <table.own.minus.externallyManagedAttributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
+     * @return such instance.
+     */
+    <notnull(C=C)>
+    <table.name.voName> create(
+        <table.own.minus.externallyManagedAttributes:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
+      throws DataAccessException;
+
+    /**
+     * Updates {@link <table.name.voName>} information.
+     <table.attributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
+     * @return the number of {@code <table.name>} rows updated.
+     */
+    int update(
+        <table.attributes:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
+      throws DataAccessException;
+
+    /**
+     * Deletes {@link <table.name.voName>} information.
+     <table.primaryKey:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
+     */
+    void delete(<table.primaryKey:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=", ">)
+        throws DataAccessException;
+
+    <table.foreignKeys:{ fk | <fk_delete_method(foreignKey=fk, table=table, C=C)>}; separator="\n">
+
+    <table.customSelects:{ cs | <custom_select(cs=cs, C=C)>}; separator="\n\n">
+
+    <table.customUpdatesOrInserts:{ cs | <custom_update_or_insert(cs=cs, C=C)>}; separator="\n\n">
+
+    <table.customSelectsForUpdate:{ cs | <custom_select_for_update(cs=cs, C=C)>}; separator="\n\n">
+}
+>>
+
+cached_constants(row, voName, C) ::= <<
+<!
+ Generates the constant for the cached row.
+ @param row the row
+ @param voName the value-object name.
+ @param C the context.
+!>
+/**
+ * The <row.name> {@link <voName>}.
+ */
+<notnull(C=C)>
+static final <voName> <row.name.normalized.uppercased> =
+    new <voName>ValueObject(
+        <row.attributes:{ a | <attribute_specification(attr=a)>}; separator=",\n">);
+>>
+
+find_by_primary_key(table, parent, repository, C) ::= <<
+<!
+ Generates the find-by-primary-key methods.
+ @param table the table.
+ @param parent the parent.
+ @param repository the repository.
+ @param C the context.
+!>
+
+/**
+<if(table.voDecorated)>
+ * Retrieves {@link <table.name.voName>Decorator} (table <table.name>) information
+<else>
+ * Retrieves {@link <table.name.voName>} information
+<endif>
+ * filtering by its primary key.
+ <table.primaryKey:{ attr | <attribute_javadoc(attr=attr)>}; separator="\n">
+<if(table.voDecorated)>
+ * @return the {@link <table.name.voName>Decorator} (table <table.name>) matching given
+<else>
+ * @return the {@link <table.name.voName>} matching given
+<endif>
+ * primary key.
+ */
+<nullable(C=C)>
+<if(table.voDecorated)>
+<table.name.voName>Decorator findByPrimaryKey(<table.primaryKey:{ attr | <attribute_declaration(attr=attr, C=C)>}; separator=",\n">);
+<else>
+<table.name.voName> findByPrimaryKey(<table.primaryKey:{ attr | <attribute_declaration(attr=attr, C=C)>}; separator=",\n">);
+<endif>
+>>
+
+attribute_specification(attr) ::= <<
+<!
+ Prints the value of the attribute, optionally escaping it.
+ @param attr the attribute.
+!>
+<if(attr.string)>"<attr.value>"<else><attr.value><endif>
+>>
+
+find_constant_by_pk(primaryKey, table, C) ::= <<
+<!
+ Generates the "findContantByPk()" method.
+ @param primaryKey the primary key.
+ @param table the table.
+ @param C the context.
+!>
+/**
+ * Loads \<i><table.name.voName>\</i> information from the constant pool,
+ * filtering by the primary key.
+ <primaryKey:{ attribute | <attribute_javadoc(attr=attribute)>}; separator="\n">
+ * @return the {@link <table.name.voName>} instance.
+ */
+<nullable(C=C)>
+<table.name.voName> findConstantByPk(
+    <primaryKey:{ attr | <attribute_declaration(attr=attr, C=C)>}; separator=",\n">);
+>>
+
+find_constant_methods(attribute, table, C) ::= <<
+<!
+  Declares the methods to operate directly on defined constants.
+  @param attribute the attribute.
+  @param table the table.
+  @param C the context.
+!>
+/**
+ * Loads \<i><table.name>\</i> information from the constant pool,
+ * filtering by <attribute.name>.
+ <attribute_javadoc(attr=attribute)>
+ * @return the list of {@link <table.name.voName>} instances with given <attribute.name>.
+ */
+<notnull(C=C)>
+List\<<table.name.voName>\> findConstantsBy<attribute.name.capitalized>(<if(!attribute.primitive)><if(!attribute.primitiveWrapper)><notnull(C=C)><else><if(attribute.nullable)><notnull(C=C)><endif><endif><endif>final <attribute.primitiveType> <attribute.name.lowercased.uncapitalized>);
+
+/**
+ * Loads \<i><table.name>\</i> information from the constant pool,
+ * filtering by <attribute.name>.
+ <attribute_javadoc(attr=attribute)>
+ * @return the list of {@link <table.name.voName>} instances with given <attribute.name>.
+ */
+<nullable(C=C)>
+<table.name.voName> findConstantBy<attribute.name.capitalized>(<if(!attribute.primitive)><if(!attribute.primitiveWrapper)><notnull(C=C)><else><if(attribute.nullable)><notnull(C=C)><endif><endif><endif>final <attribute.primitiveType> <attribute.name.lowercased.uncapitalized>);
+>>
+
+fk_delete_method(foreignKey, table, C) ::= <<
+<!
+  Writes the deleteByXX method for a concrete foreign key.
+  @param foreignKey the foreign key.
+  @param table the table.
+  @param C the context.
+!>
+/**
+<if(foreignKey.allowsNull)>
+ * Discards the relation to \<code><foreignKey.target.voName>\</code> in
+ * {@link <foreignKey.source.voName>}.
+<else>
+ * Deletes <table.name> information from the persistence layer filtering
+ * by given foreign keys.
+<endif>
+ <foreignKey.attributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
+ */
+<
+if(foreignKey.allowsNull)
+>void discardRelationTo<foreignKey.target.voName>By<foreignKey.attributes:{attr |<attr.name.capitalized>}; separator="And">(<
+else
+>void deleteBy<foreignKey.attributes:{attr |<attr.name.capitalized>}; separator="And">(<
+endif
+><foreignKey.attributes:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=", ">);
+>>
+
+custom_select(cs, C) ::= <<
+<!
+  Writes the code for a custom select query.
+  @param cs the custom select.
+  @param C the context.
+!>
+/**
+ * Custom select \<i><cs.id>\</i>:
+ * \<b><cs.description>\</b>.
+ <cs.parameters:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
+ * @return the \<i><cs.resultClass>\</i> information retrieved.
+ */
+<if(cs.resultNullable)><nullable(C=C)><else><if(cs.result)><if(cs.result.multiple)><notnull(C=C)><endif><endif><endif>
+<cs.resultClass> <cs.name.uncapitalized>(
+    <cs.parameters:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
+  throws DataAccessException;
+>>
+
+custom_update_or_insert(cs, C) ::= <<
+<!
+ Writes the subtemplate for custom updates or inserts.
+  @param cs the custom sql.
+  @param C the context.
+!>
+/**
+ * Custom sql \<i><cs.id>\</i>:\<br/>
+ * \<b><cs.description>\</b>.
+ <cs.parameters:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
+ */
+public void <cs.nameUncapitalized>(
+    <cs.parameters:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
+  throws DataAccessException;
+>>
+
+custom_select_for_update(cs, C) ::= <<
+<!
+  Writes the code for a custom select for update.
+  @param cs the custom sql.
+  @param C the context.
+!>
+/**
+ * Custom select for update \<i><cs.id>\</i>:\<br/>
+ * \<b><cs.description>\</b>.
+ <cs.parameters:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
+ * @return the \<i><cs.resultClass>\</i> information retrieved.
+ */
+<if(cs.resultNullable)><nullable(C=C)><else><if(cs.result)><if(cs.result.multiple)><notnull(C=C)><endif><endif><endif>
+<cs.resultClass> <cs.name.uncapitalized>(
+    <cs.parameters:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
+  throws DataAccessException;
+>>
