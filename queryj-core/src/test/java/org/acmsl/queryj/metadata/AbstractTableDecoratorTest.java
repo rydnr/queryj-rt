@@ -298,9 +298,35 @@ public class AbstractTableDecoratorTest
 
         @NotNull final Attribute<String> childAttribute =
             new AttributeIncompleteValueObject(
-                "myChildId",
+                "myChildId1",
                 Types.BIGINT,
                 "long",
+                "name",
+                "child comment",
+                1, // ordinalPosition
+                6222, // length
+                1, // precision
+                false, // allowsNull
+                null); // value
+
+        @NotNull final Attribute<String> childAttribute =
+            new AttributeIncompleteValueObject(
+                "myChildId2",
+                Types.BIGINT,
+                "long",
+                "name",
+                "child comment",
+                1, // ordinalPosition
+                6222, // length
+                1, // precision
+                false, // allowsNull
+                null); // value
+
+        @NotNull final Attribute<String> childAttribute =
+            new AttributeIncompleteValueObject(
+                "myChildIdName",
+                Types.VARCHAR,
+                "",
                 "name",
                 "child comment",
                 1, // ordinalPosition
