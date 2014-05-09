@@ -214,7 +214,7 @@ public interface <table.name.voName>DAO
         throws DataAccessException;<
 if(table.foreignKeys)>
 
-    <table.foreignKeys:{ fk | <fk_delete_method(foreignKey=fk, table=table, C=C)>}; separator="\n">
+    <table.foreignKeys:{ fk | <fk_delete_method(foreignKey=fk, table=table, C=C)>}; separator="\n\n">
 <endif><
 if(table.customSelects)>
 
