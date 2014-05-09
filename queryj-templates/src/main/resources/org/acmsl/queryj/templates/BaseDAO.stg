@@ -199,7 +199,7 @@ public interface <table.name.voName>DAO
 
     /**
      * Updates {@link <table.name.voName>} information.
-     <table.attributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
+     <table.own.minus.attributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
      * @return the number of {@code <table.name>} rows updated.
      */
     int update(
