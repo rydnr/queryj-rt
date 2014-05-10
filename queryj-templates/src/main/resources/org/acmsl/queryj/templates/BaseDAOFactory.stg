@@ -230,11 +230,10 @@ public abstract class <table.name.capitalized>DAOFactory
                     "Cannot instantiate " + factoryClassName + " implementation",
                     invalidClassName);
             }
-            }
-            else
-            {
-                logError("<C.package>.<table.name.capitalized>DAOFactory not specified");
-            }
+        }
+        else
+        {
+            logError("<C.package>.<table.name.capitalized>DAOFactory not specified");
         }
 
         return result;
