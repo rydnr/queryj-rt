@@ -33,7 +33,7 @@
 //
 // Author: Jose San Leandro Armendariz
 //
-// Description: Defines the rules to generate DAOFactory interfaces.
+// Description: Defines the rules to generate DAOFactory implementations.
 //
 group DAOFactory;
 
