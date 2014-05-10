@@ -244,7 +244,7 @@ public abstract class <table.name.capitalized>DAOFactory
      * @param message the error message.
      * @param error the underlying error (optional).
      */
-    protected static void logError(@NotNull final String message, @Nullable final Throwable error)
+    protected static void logError(<notnull(C=C)>final String message, <nullable(C=C)>final Throwable error)
     {
         try
         {
