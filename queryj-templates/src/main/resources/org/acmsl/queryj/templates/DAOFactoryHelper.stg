@@ -202,7 +202,7 @@ public class <table.name.capitalized>DAOFactoryHelper
      * @return such instance.
      */
     <nullable(C=C)>
-    protected static <table.name.capitalized>DAOFactory getInstance(
+    protected static <table.name.capitalized>DAOFactory getDAOFactory(
         <nullable(C=C)>final <table.name.capitalized>DAOFactory lastUsed)
     {
         <nullable(C=C)>final <table.name.capitalized>DAOFactory result;
