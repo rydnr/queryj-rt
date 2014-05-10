@@ -65,6 +65,9 @@ sourceImpl(table, C) ::= <<
   C=C)><endif>
 */
 <package_declaration(p=C.package)>
+
+/*
+ *
 <checkers_import(C=C)>
 <class(table=table, C=C)>
 >>
