@@ -69,7 +69,9 @@ sourceImpl(table, C) ::= <<
 <package_declaration(p=C.package)>
 
 /*
- * Importing <C.repository.capitalized)>
+ * Importing <C.repository.capitalized)> classes.
+ */
+import <typeInitMap.
 <checkers_import(C=C)>
 /*
  * Importing JDK classes.
