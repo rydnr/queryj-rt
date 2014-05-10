@@ -127,7 +127,7 @@ class(table, C) ::= <<
 <classImpl(table=table, repository=C.repository, engine=C.engine, C=C)>
 >>
 
-classImpl(table, repository, C) ::= <<
+classImpl(table, repository, engine, C) ::= <<
 <!
  Generates the interface body.
  @param table the table.
