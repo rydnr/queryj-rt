@@ -68,18 +68,6 @@ sourceImpl(table, C) ::= <<
 
 <project_imports(
   basePackageName=C.project_package,
-  package=C.package,
-  jdbcOperationsSubpackageName=typeInitMap.jdbcOperationsSubpackageName,
-  customResults=table.differentCustomResults,
-  voSubpackageName=typeInitMap.voSubpackageName,
-  voName=table.name.voName,
-  voFactorySubpackageName=typeInitMap.voFactorySubpackageName,
-  rdbSubpackageName=typeInitMap.rdbSubpackageName,
-  trSubpackageName=typeInitMap.tableRepositorySubpackageName,
-  trName=C.repository.capitalized,
-  damSubpackageName=typeInitMap.dataAccessManagerSubpackageName,
-  fkssSubpackageName=typeInitMap.foreignKeyStatementSetterSubpackageName,
-  fkAttributes=table.foreignKeys,
   baseDAOSubpackageName=typeInitMap.baseDAOSubpackageName,
   table=table,
   repository=repository)>
