@@ -14,6 +14,6 @@ output: Java;
 filename  builder : <tableName.capitalized>DAOFactoryHelper.java;
 
 // The package.
-package: <packageName>.dao.impl;
+package: <packageName>.dao.core;
 
 disabled;
