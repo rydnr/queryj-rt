@@ -109,6 +109,7 @@ class(table, C) ::= <<
  */
 <class_annotations(C=C)>
 public class <table.name.voName>Factory
+
 {
     /**
      * Singleton implemented to avoid the double-check locking.
@@ -118,14 +119,14 @@ public class <table.name.voName>Factory
         /**
          * The actual singleton.
          */
-        public static final <table.name.ame>ValueObjectFactory SINGLETON =
-            new <table.name.voName>ValueObjectFactory();
+        public static final <table.name.voName>Factory SINGLETON =
+            new <table.name.voName>Factory();
     }
 
     /**
      * Public constructor to allow reflective instantiation.
      */
-    public <table.name.voName>ValueObjectFactory() {}
+    public <table.name.voName>Factory() {}
 
     /**
      * Retrieves a \<code><table.name.voName>ValueObjectFactory\</code>
