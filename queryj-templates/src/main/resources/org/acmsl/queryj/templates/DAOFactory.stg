@@ -102,7 +102,7 @@ public class <engine.name.voName><table.name.capitalized>DAOFactory
     implements <table.name.capitalized>DAOFactory
 {
     /**
-     * Creates a {<engine.name.voName><table.name.capitalized>DAOFactory<table.name>-specific DAO implementation.
+     * Creates a {<engine.name.voName><table.name.capitalized>DAOFactory}.
      * @return such {@link <table.name.voName>DAO implementation}.
      */
     <nullable(C=C)>
