@@ -179,7 +179,7 @@ public abstract class <table.name.capitalized>DAOFactory
      * @return such instance.
      */
     @Nullable
-    protected static <table.name.capitalized>DAOFactory getInstance()
+    protected static <table.name.capitalized>DAOFactory getInstance(<nullable(C=C)>final <table.name.capitalized>)
     {
     <repository.capitalized>DAOChooser.getInstance());
     }
