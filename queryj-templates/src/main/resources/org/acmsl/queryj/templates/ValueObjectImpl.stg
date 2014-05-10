@@ -99,7 +99,7 @@ class(table, C) ::= <<
     ]:{line |<line>}; separator="\n * ">
 <class_common_javadoc(template="org/acmsl/queryj/templates/ValueObjectImpl.stg", C=C)>
  */
-public interface <table.name.voName>
+public class <table.name.voName>
     extends Serializable
 {
     <table.attributes:getter(); separator="\n\n">
