@@ -204,7 +204,9 @@ public abstract class <table.name.capitalized>DAOFactory
     protected static <table.name.capitalized>DAOFactory getInstance(
         <notnull(C=C)>final <repository.capitalized>DAOChooser daoChooser)
     {
-        @Nullable final String factoryClassName =
+        <nullable(C=C)>final <table.name.capitalized>DAOFactory result;
+
+        <nullable(C=C)>final String factoryClassName =
             daoChooser.get<table.name.capitalized>DAOFactoryClassName();
 
         if (factoryClassName != null)
