@@ -72,7 +72,7 @@ sourceImpl(table, C) ::= <<
  */
 import org.jetbrains.annotations.Nullable;
 
-<interface(table=table, C=C)>
+<class(table=table, C=C)>
 >>
 
 description(tableName) ::= <<
