@@ -116,7 +116,7 @@ public class <table.name.voName>
         <table.attributes:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>};
           separator=",\n">)
     {
-        <table.attributes:{ a | <attribute_immutable_setter_call(attribute=a)>};
+        super(<table.attributes:{ a | <attribute_immutable_setter_call(attribute=a)>};
           separator="\n">
     }
 }
