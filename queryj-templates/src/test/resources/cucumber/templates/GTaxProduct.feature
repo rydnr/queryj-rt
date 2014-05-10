@@ -47,7 +47,7 @@ Feature: G_TAX_PRODUCTS code compiles
 
     Examples:
       | template | output |
-      | ValueObjectImpl | AbstractGTaxProduct.java |
+      | ValueObjectImpl | GTaxProductImpl.java |
 #      | BaseValueObject | AbstractGTaxProduct.java |
 #      | ValueObjectFactory | GTaxProductFactory.java |
 #      | ValueObject | GTaxProduct.java |
