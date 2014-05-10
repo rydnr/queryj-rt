@@ -137,7 +137,7 @@ public class <table.name.voName>Factory
     }
 
     /**
-     * Creates a new {@link <table.name.voName>ValueObject} instance.
+     * Creates a new {@link <table.name.voName>} instance.
      <table.attributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
      * @return the new value object.
      */
