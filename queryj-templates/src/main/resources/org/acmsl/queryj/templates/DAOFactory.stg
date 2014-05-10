@@ -145,7 +145,7 @@ public class <engine.name.voName><table.name.capitalized>DAOFactory
     }
 
     /**
-     * Retrieves the {@link DataSourcedata source.
+     * Retrieves the {@link DataSource data source}.
      * @param jndiUtils the {@link JndiUtils} instance.
      * @param jndiLocation the JNDI path where the {@link DataSource} is available.
      * @return such data source.
