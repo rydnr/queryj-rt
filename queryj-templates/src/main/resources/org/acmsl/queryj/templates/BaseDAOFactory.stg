@@ -103,7 +103,7 @@ public interface <table.name.capitalized>DAOFactory
      * Creates a <table.name>-specific DAO implementation.
      * @return such implementation.
      */
-    @Nullable
+    <nullable(C=C)>
     <table.name.capitalized>DAO createDAO();
 }
 >>
