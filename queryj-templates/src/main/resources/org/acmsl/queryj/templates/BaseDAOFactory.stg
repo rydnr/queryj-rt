@@ -69,7 +69,8 @@ sourceImpl(table, C) ::= <<
 /*
  * Importing <repository> classes.
  *
-import <C.basePackage>.dao.<table.name.voName>
+import <C.basePackage>.dao.<table.name.voName>DAO;
+
 <checkers_import(C=C)>
 <interface(table=table, C=C)>
 >>
