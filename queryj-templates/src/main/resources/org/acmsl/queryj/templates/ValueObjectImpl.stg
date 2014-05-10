@@ -100,6 +100,7 @@ class(table, C) ::= <<
 <class_common_javadoc(template="org/acmsl/queryj/templates/ValueObjectImpl.stg", C=C)>
  */
 public class <table.name.voName>
+    extends Abstract<table.name.voName>
     extends Serializable
 {
     <table.attributes:getter(); separator="\n\n">
