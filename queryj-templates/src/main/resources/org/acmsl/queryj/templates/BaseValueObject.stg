@@ -132,7 +132,7 @@ public abstract class Abstract<table.name.voName>
         <table.attributes:{ a | <attribute_method_parameter_declaration(attribute=a, C=C)>};
           separator=",\n">)
     {
-        <table.attributes:{ a | <immutable_setter_call(attribute=a)>};
+        <table.attributes:{ a | <immutable_setter_call(attribute=a, C=C)>};
           separator="\n">
     }
 
