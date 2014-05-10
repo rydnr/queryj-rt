@@ -194,7 +194,7 @@ public int hashCode()
 }
 >>
 
-tostring_method(table, C) ::= <<
+toString_method(table, C) ::= <<
 <! Generates the toString() method !>
 /**
  * {@inheritdoc}
