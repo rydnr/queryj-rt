@@ -186,7 +186,7 @@ public abstract class <table.name.capitalized>DAOFactory
 
         if (lastUsed == null)
         {
-            result = getInstance(lastUsed, <repository.capitalized>DAOChooser.getInstance());
+            result = getInstance(<repository.capitalized>DAOChooser.getInstance());
             setLastUsed(result);
         }
         else
@@ -197,13 +197,11 @@ public abstract class <table.name.capitalized>DAOFactory
 
     /**
      * Retrieves a {@code <table.name.capitalized>DAOFactory} instance.
-     * @param lastUsed the last
      * @param daoChooser the {@link <repository.capitalized>DAOChooser} instance.
      * @return such instance.
      */
     <nullable(C=C)>
     protected static <table.name.capitalized>DAOFactory getInstance(
-        <nullable(C=C)>final <table.name.capitalized>DAOFactory lastUsed,
         <notnull(C=C)>final <repository.capitalized>DAOChooser daoChooser)
     {
         @Nullable final String factoryClassName =
