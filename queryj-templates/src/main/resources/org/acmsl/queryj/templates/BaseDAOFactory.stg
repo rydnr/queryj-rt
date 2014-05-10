@@ -67,7 +67,9 @@ sourceImpl(table, C) ::= <<
 <package_declaration(p=C.package)>
 
 /*
- * Importing
+ * Importing <repository> classes.
+ *
+
 <checkers_import(C=C)>
 <interface(table=table, C=C)>
 >>
