@@ -65,13 +65,7 @@ sourceImpl(table, C) ::= <<
   C=C)><endif>
 */
 <package_declaration(p=C.package)>
-
 <checkers_import(C=C)>
-/*
- * Importing JetBrains annotations.
- */
-import org.jetbrains.annotations.Nullable;
-
 <class(table=table, C=C)>
 >>
 
