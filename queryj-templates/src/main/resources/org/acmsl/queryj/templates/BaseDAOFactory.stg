@@ -133,14 +133,14 @@ public abstract class <table.name.capitalized>DAOFactory
     /**
      * The cached instance of the most recent implementation.
      */
-    @Nullable
+    <nullable(C=C)>
     private <table.name.capitalized>DAOFactory m__LastUsed;
 
     /**
      * Specifies the last used instance.
      * @param factory the last used {@code <table.name.capitalized>DAOFactory}.
      */
-    protected final void immutableSetLastUsed(@NotNull final <table.name.capitalized>DAOFactory factory)
+    protected final void immutableSetLastUsed(<notnull(C=C)>final <table.name.capitalized>DAOFactory factory)
     {
         this.m__LastUsed = factory;
     }
@@ -149,7 +149,7 @@ public abstract class <table.name.capitalized>DAOFactory
      * Specifies the last used instance.
      * @param factory the last used {@code <table.name.capitalized>DAOFactory}.
      */
-    protected void setLastUsed(@NotNull final <table.name.capitalized>DAOFactory factory)
+    protected void setLastUsed(<notnull(C=C)>final <table.name.capitalized>DAOFactory factory)
     {
         immutableSetLastUsed(factory);
     }
@@ -158,7 +158,7 @@ public abstract class <table.name.capitalized>DAOFactory
      * Specifies the last used instance.
      * @param factory the last used {@code <table.name.capitalized>DAOFactory}.
      */
-    @Nullable
+    <nullable(C=C)>
     protected <table.name.capitalized>DAOFactory getLastUsed()
     {
         return this.m__LastUsed;
@@ -168,7 +168,7 @@ public abstract class <table.name.capitalized>DAOFactory
      * Retrieves a {@code <table.name.capitalized>DAOFactory} instance.
      * @return such instance.
      */
-    @Nullable
+    <nullable(C=C)>
     public static <table.name.capitalized>DAOFactory getInstance()
     {
         return getInstance(getLastUsed());
@@ -178,7 +178,7 @@ public abstract class <table.name.capitalized>DAOFactory
      * Retrieves a {@code <table.name.capitalized>DAOFactory} instance.
      * @return such instance.
      */
-    @Nullable
+    <nullable(C=C)>
     protected static <table.name.capitalized>DAOFactory getInstance(
         <nullable(C=C)>final <table.name.capitalized>DAOFactory lastUsed)
     {
@@ -200,8 +200,10 @@ public abstract class <table.name.capitalized>DAOFactory
      * @param daoChooser the {@link <repository.capitalized>DAOChooser} instance.
      * @return such instance.
      */
-    @Nullable
-    protected static <table.name.capitalized>DAOFactory getInstance(@NotNull final <repository.capitalized>DAOChooser daoChooser)
+    <nullable(C=C)>
+    protected static <table.name.capitalized>DAOFactory getInstance(
+        <nullable(C=C)>final <table.name.capitalized>DAOFactory lastUsed,
+        <notnull(C=C)>final <repository.capitalized>DAOChooser daoChooser)
     {
         @Nullable final String factoryClassName =
             daoChooser.get<table.name.capitalized>DAOFactoryClassName();
