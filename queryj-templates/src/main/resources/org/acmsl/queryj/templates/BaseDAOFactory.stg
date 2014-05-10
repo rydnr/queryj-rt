@@ -66,7 +66,6 @@ sourceImpl(table, C) ::= <<
 */
 <package_declaration(p=C.package)>
 <checkers_import(C=C)>
-
 <interface(table=table, C=C)>
 >>
 
@@ -96,8 +95,7 @@ interfaceImpl(table, repository, C) ::= <<
 !>
 /**
  * <description(tableName=table.name)>
-<class_common_javadoc(
-  template="org/acmsl/queryj/dao/DAOFactory.stg",
+<class_common_javadoc(template="org/acmsl/queryj/dao/DAOFactory.stg",
   generation_timestamps_enabled=C.generation_timestamps_enabled,
   timestamp=C.timestamp)>
  */
