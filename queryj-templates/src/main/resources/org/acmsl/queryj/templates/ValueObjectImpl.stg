@@ -112,7 +112,7 @@ public class <table.name.voName>
      * Creates an {@code <table.name.voName>Impl} instance.
      <table.attributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
      */
-    public Abstract<table.name.voName>(
+    public <table.name.voName>Impl(
         <table.attributes:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>};
           separator=",\n">)
     {
