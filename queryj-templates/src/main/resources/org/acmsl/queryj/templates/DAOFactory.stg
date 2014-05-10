@@ -83,7 +83,7 @@ description(tableName) ::= <<
 <tableName>-specific DAOFactory implementation.
 >>
 
-interface(table, C) ::= <<
+class(table, C) ::= <<
 <!
  Generates the interface body.
  @param table the table.
