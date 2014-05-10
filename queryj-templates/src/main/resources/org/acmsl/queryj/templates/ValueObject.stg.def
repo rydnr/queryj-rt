@@ -11,7 +11,7 @@ type : per-table;
 output: Java;
 
 // The filename builder.
-filename  builder : <tableName.voName>.java;
+filename  builder : <tableName.voName>Impl.java;
 
 // The package.
 package: <packageName>.vo;
