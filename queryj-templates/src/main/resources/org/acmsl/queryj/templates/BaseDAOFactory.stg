@@ -209,8 +209,6 @@ public abstract class <table.name.capitalized>DAOFactory
         if (   (factoryClassName != null)
             && (!factoryClassName.equals(result.getClass().getName()))))
         {
-            if (factoryClassName != null)
-            {
                 try
                 {
                     @NotNull final Class\<<table.name.capitalized>\>DAOFactory factoryClass =
