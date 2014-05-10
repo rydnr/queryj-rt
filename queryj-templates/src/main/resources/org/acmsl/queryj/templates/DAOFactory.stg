@@ -132,7 +132,7 @@ classImpl(table, repository, engine, C) ::= <<
  Generates the interface body.
  @param table the table.
  @param repository the table repository name.
- @param engine the engine.
+ @param engine the database engine.
  @param C the context.
 !>
 /**
