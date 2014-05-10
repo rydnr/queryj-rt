@@ -182,7 +182,9 @@ public abstract class <table.name.capitalized>DAOFactory
     protected static <table.name.capitalized>DAOFactory getInstance(
         <nullable(C=C)>final <table.name.capitalized>DAOFactory lastUsed)
     {
-        <nullable(C=C)><repository.capitalized>DAOChooser.getInstance());
+        <nullable(C=C)>final <table.name.capitalized>DAOFactory result;
+
+        if (<repository.capitalized>DAOChooser.getInstance());
     }
 
     /**
