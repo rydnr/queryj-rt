@@ -113,8 +113,7 @@ project_imports(
   @param basePackageName the base package name.
   @param baseDAOSubpackageName the subpackage of the base DAO interface.
   @param table the table.
-  @param parent the parent table (optional).
-!>
+
 /*
  * Importing <trName> classes.
  */
