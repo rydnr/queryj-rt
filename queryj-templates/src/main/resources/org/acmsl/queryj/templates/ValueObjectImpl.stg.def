@@ -1,8 +1,8 @@
 /*
- * ValueObject template metadata.
+ * ValueObjectImpl template metadata.
  */
 // The template name (the filename).
-name : ValueObject.stg;
+name : ValueObjectImpl.stg;
 
 // The type of template: per-table, per-repository, per-foreign-key, per-custom-result, per-custom-sql.
 type : per-table;
