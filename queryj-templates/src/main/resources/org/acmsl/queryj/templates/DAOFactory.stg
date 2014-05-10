@@ -145,15 +145,6 @@ import <basePackageName>.<voSubpackageName>.<table.name.voName>Decorator;
 import <basePackageName>.<voFactorySubpackageName>.<table.name.voName>ValueObjectFactory;
 import <basePackageName>.<baseDAOSubpackageName>.<table.name.voName>DAO;
 import <basePackageName>.<damSubpackageName>.<trName>DataAccessManager;
-<table.foreignKeys:{ fk| <foreignkey_statementsetter_import(
-  basePackageName=basePackageName,
-  fkssSubpackageName=fkssSubpackageName,
-  foreignKey=fk)>}; separator="\n">
-<table.foreignKeys:{ fk | <foreignkey_dao_import(
-  basePackageName=basePackageName,
-  baseDAOSubpackageName=baseDAOSubpackageName,
-  referredVOName=fk.source.name.voName)>}; separator="\n">
-<table.differentCustomResults:{ cr  | <custom_select_import(result=cr, package=basePackageName, C=C)>}; separator="\n">
 >>
 
 description(tableName) ::= <<
