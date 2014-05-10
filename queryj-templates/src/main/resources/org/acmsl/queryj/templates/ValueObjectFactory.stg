@@ -131,9 +131,9 @@ public class <table.name.voName>Factory
      * Retrieves a {@code <table.name.voName>Factory} instance.
      * @return such instance.
      */
-    public static <table.name.voName>ValueObjectFactory getInstance()
+    public static <table.name.voName>Factory getInstance()
     {
-        return <table.name.voName>ValueObjectFactorySingletonContainer.SINGLETON;
+        return <table.name.voName>FactorySingletonContainer.SINGLETON;
     }
 
     /**
