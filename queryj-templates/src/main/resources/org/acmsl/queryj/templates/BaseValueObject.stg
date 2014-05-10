@@ -199,6 +199,7 @@ toString_method(table, C) ::= <<
 /**
  * {@inheritDoc}
  */
+<notnull(C=C)>
 @Override
 public String toString()
 {
