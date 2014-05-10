@@ -129,7 +129,7 @@ public abstract class Abstract<table.name.voName>
      <table.attributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
      */
     public Abstract<table.name.voName>(
-        <table.attributes:{ a | <attribute_method_declaration(attribute=a, C=C)>};
+        <table.attributes:{ a | <attribute_method_parameter_declaration(attribute=a, C=C)>};
           separator=",\n">)
     {
         <table.attributes:{ a | <immutable_setter_call(attribute=a)>};
