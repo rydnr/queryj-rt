@@ -132,7 +132,6 @@ project_imports(
  * Importing <trName> classes.
  */
 import <basePackageName>.<baseDAOSubpackageName>.<table.name.voName>DAO;
-import <basePackageName>.<damSubpackageName>.<trName>DataAccessManager;
 >>
 
 description(tableName) ::= <<
