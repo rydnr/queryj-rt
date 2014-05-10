@@ -70,7 +70,7 @@ sourceImpl(table, C) ::= <<
   basePackageName=C.project_package,
   baseDAOSubpackageName=typeInitMap.baseDAOSubpackageName,
   table=table,
-  repository=repository)>
+  repository=C.repository)>
 
 /*
  * Importing V24-Commons classes.
