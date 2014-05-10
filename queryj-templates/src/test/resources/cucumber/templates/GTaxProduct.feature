@@ -48,6 +48,7 @@ Feature: G_TAX_PRODUCTS code compiles
     Examples:
       | template | output |
       | ValueObject| GTaxProduct.java |
+#      | ValueObject| GTaxProduct.java |
 #      | DAOFactory | OracleGTaxProductDAOFactory.java |
 #      | BaseDAOFactory | GTaxProductDAOFactory.java |
 #      | BaseDAO | GTaxProductDAO.java |
