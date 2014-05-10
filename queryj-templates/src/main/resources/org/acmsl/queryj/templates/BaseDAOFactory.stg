@@ -197,6 +197,7 @@ public abstract class <table.name.capitalized>DAOFactory
 
     /**
      * Retrieves a {@code <table.name.capitalized>DAOFactory} instance.
+     * @param lastUsed the last
      * @param daoChooser the {@link <repository.capitalized>DAOChooser} instance.
      * @return such instance.
      */
