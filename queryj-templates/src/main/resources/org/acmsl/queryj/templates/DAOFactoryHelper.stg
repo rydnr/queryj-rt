@@ -139,24 +139,24 @@ public class <table.name.capitalized>DAOFactoryHelper
     /**
      * Public constructor to allow reflective access.
      */
-    public <repository.capitalized>DataAccessManager() {}
+    public <table.name.capitalized>DAOFactoryHelper() {}
 
     /**
      * Singleton implementation to avoid double-checked locking.
      */
-    private static final class <repository.capitalized>DataAccessManagerSingletonContainer
+    private static final class <table.name.capitalized>DAOFactoryHelperSingletonContainer
     {
-        private static final <repository.capitalized>DataAccessManager SINGLETON =
-            new <repository.capitalized>DataAccessManager();
+        private static final <table.name.capitalized>DAOFactoryHelper SINGLETON =
+            new <table.name.capitalized>DAOFactoryHelper();
     }
 
     /**
-     * Retrieves a {@code <repository.capitalized>DataAccessManager} instance.
+     * Retrieves a {@code <table.name.capitalized>DAOFactoryHelper} instance.
      * @return such instance.
      */
-    public static <repository.capitalized>DataAccessManager getInstance()
+    public static <table.name.capitalized>DAOFactoryHelper getInstance()
     {
-        return <repository.capitalized>DataAccessManagerSingletonContainer.SINGLETON;
+        return <table.name.capitalized>DAOFactoryHelperSingletonContainer.SINGLETON;
     }
 
     /**
