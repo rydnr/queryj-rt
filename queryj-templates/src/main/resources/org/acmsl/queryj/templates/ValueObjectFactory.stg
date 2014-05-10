@@ -108,7 +108,7 @@ class(table, C) ::= <<
   template="org/acmsl/queryj/templates/ValueObjectFactory.stg", C=C)>
  */
 <class_annotations(C=C)>
-public class <table.name.voName>ValueObjectFactory
+public class <table.name.voName>Factory
 {
     /**
      * Singleton implemented to avoid the double-check locking.
