@@ -151,7 +151,7 @@ public class <engine.name.voName><table.name.capitalized>DAOFactory
      * @return such data source.
      */
     <nullable(C=C)>
-    protected DataSource getDataSource(<notnull(C=C)>final JndiUtils jndiUtils)
+    protected DataSource getDataSource(<notnull(C=C)>final JndiUtils jndiUtils, <notnull(C=C)>final String jndiLocation)
     {
         <nullable(C=C)>DataSource result = null;
 
