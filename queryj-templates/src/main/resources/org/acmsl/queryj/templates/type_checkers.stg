@@ -95,8 +95,21 @@ nullable_import(C) ::= <<
 /*
  * Importing JetBrains annotations.
  */
-import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+<endif>
+>>
+
+notnull_import(C) ::= <<
+<!
+ Generates the import group for NotNull/Nullable annotations.
+ @param C the context.
+ !>
+<if(C.notnull_annotations_enabled)>
+
+/*
+ * Importing JetBrains annotations.
+ */
+import org.jetbrains.annotations.NotNull;
 <endif>
 >>
 
