@@ -217,8 +217,6 @@ public abstract class <table.name.capitalized>DAOFactory
                     Class.forName(factoryClassName);
 
                 result = factoryClass.newInstance();
-
-                setLastUsed(result);
             }
             catch (@NotNull final ClassNotFoundException factoryImplementationMissing)
             {
