@@ -69,7 +69,7 @@ sourceImpl(table, C) ::= <<
 <package_declaration(p=C.package)>
 
 /*
- * Importing <C.repository.capitalized)> classes.
+ * Importing <C.repository.capitalized> classes.
  */
 import <C.package_name>.<typeInitMap.voSubpackageName>.<table.name.voName>;
 <checkers_import(C=C)>
