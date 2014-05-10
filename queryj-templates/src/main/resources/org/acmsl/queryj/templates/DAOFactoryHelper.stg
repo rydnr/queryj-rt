@@ -36,20 +36,20 @@
 // Description: Defines the rules to generate DAOFactory database-based
 //              implementations.
 //
-group DAOFactory;
+group DAOFactoryHelper;
 
 import "queryj.stg"
 
 source(C) ::= <<
 <!
-  Generates a DAOFactory database implementation source file.
+  Generates a DAOFactoryHelper source file.
 !>
 <sourceImpl(table=C.table, C=C)>
 >>
 
 sourceImpl(table, C) ::= <<
 <!
-  Generates a DAOFactory database implementation source file.
+  Generates a DAOFactoryHelper database implementation source file.
   @param table the table.
   @param C the context.
 !>
