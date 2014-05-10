@@ -82,7 +82,7 @@ sourceImpl(table, C) ::= <<
   fkAttributes=table.foreignKeys,
   baseDAOSubpackageName=typeInitMap.baseDAOSubpackageName,
   table=table,
-  parent=table.parentTable)>
+  repository=repository)>
 
 /*
  * Importing V24-Commons classes.
