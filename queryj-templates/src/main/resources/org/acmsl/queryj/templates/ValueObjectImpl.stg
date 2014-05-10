@@ -101,7 +101,7 @@ class(table, C) ::= <<
  */
 public class <table.name.voName>
     extends Abstract<table.name.voName>
-    extends Serializable
+    implements Serializable
 {
     /**
      * The serial version id.
