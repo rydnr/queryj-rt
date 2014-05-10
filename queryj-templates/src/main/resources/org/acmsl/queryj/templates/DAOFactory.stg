@@ -72,7 +72,7 @@ sourceImpl(table, C) ::= <<
 import org.springframework.jdbc.CannotGetJdbcConnectionException;
 
 /*
- * Importing javax classes.
+ * Importing javax.* classes.
 <checkers_import(C=C)>
 <class(table=table, C=C)>
 >>
