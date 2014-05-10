@@ -207,8 +207,7 @@ public abstract class <table.name.capitalized>DAOFactory
         @Nullable final String factoryClassName =
             daoChooser.get<table.name.capitalized>DAOFactoryClassName();
 
-        if (   (factoryClassName != null)
-            && (!factoryClassName.equals(result.getClass().getName()))))
+        if (factoryClassName != null)
         {
                 try
                 {
