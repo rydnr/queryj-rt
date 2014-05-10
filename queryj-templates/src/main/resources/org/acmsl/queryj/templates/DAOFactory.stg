@@ -91,7 +91,7 @@ import org.apache.commons.logging.LogFactory;
 <class(table=table, C=C)>
 >>
 
-project_imports(basePackageName, baseDAOSubpackageName, table) ::= <<
+project_imports(basePackageName, baseDAOSubpackageName, table, repository) ::= <<
 <!
   Generates the project imports
   @param basePackageName the base package name.
