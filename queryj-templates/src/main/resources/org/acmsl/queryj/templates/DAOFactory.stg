@@ -103,7 +103,7 @@ public class <engine.name.voName><table.name.capitalized>DAOFactory
 {
     /**
      * Creates a <table.name>-specific DAO implementation.
-     * @return such {@link <table.name.voName>DAOimplementation.
+     * @return such {@link <table.name.voName>DAO implementation.
      */
     <nullable(C=C)>
     <table.name.capitalized>DAO createDAO()
