@@ -72,7 +72,7 @@ sourceImpl(table, C) ::= <<
 import <C.base_package>.dao.<table.name.voName>DAO;
 
 <checkers_import(C=C)>
-<interface(table=table, C=C)>
+interface(table=table, C=C)
 >>
 
 description(tableName) ::= <<
@@ -89,7 +89,7 @@ interface(table, C) ::= <<
  @param table the table.
  @param C the context.
 !>
-interfaceImpl(table=table, repository=C.repository, C=C)
+<interfaceImpl(table=table, repository=C.repository, C=C)>
 >>
 
 interfaceImpl(table, repository, C) ::= <<
