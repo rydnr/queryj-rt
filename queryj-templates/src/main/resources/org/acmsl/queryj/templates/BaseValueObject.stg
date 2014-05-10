@@ -184,7 +184,7 @@ public int hashCode()
 
     final int classHashCode = Abstract<table.name.voName>.class.hashCode();
 
-    <table.attributes:{ a | <attribute_hashcode(attribute=a)>}; separator="\n">
+    <table.attributes:{ a | <attribute_hashCode(attribute=a)>}; separator="\n">
 
     result =
           classHashCode
