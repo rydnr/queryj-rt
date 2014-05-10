@@ -157,8 +157,7 @@ public class JdbcMetadataTypeManager
      */
     @Override
     @Nullable
-    public String getNativeType(
-        final int dataType, final boolean allowsNull)
+    public String getNativeType(final int dataType, final boolean allowsNull)
     {
         @Nullable final String result;
 
