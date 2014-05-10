@@ -75,19 +75,7 @@ sourceImpl(table, C) ::= <<
 /*
  * Importing V24-Commons classes.
  */
-import com.ventura24.commons.dao.DAOListener;
-import com.ventura24.commons.dao.DAOListenerImpl;
-import com.ventura24.commons.dao.JndiUtils;
-
-/*
- * Importing Spring classes.
- */
-import org.springframework.jdbc.CannotGetJdbcConnectionException;
-
-/*
- * Importing javax classes.
- */
-import javax.sql.DataSource;
+import com.ventura24.commons.dao.DAOFactory;
 
 /*
  * Importing Apache Commons Logging classes.
