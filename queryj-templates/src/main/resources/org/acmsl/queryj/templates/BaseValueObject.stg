@@ -122,7 +122,7 @@ public abstract class Abstract<table.name.voName>
      * Creates an \<code>Abstract<table.name.voName>ValueObject\</code> instance.
      <table.attributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
      */
-    public Abstract<table.name.voName>ValueObject(
+    public Abstract<table.name.voName>(
         <table.attributes:{ a | <attribute_method_declaration(attribute=a, C=C)>};
           separator=",\n">)
     {
