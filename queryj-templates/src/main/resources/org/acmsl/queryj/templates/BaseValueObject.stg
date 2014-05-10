@@ -182,7 +182,7 @@ public int hashCode()
 {
     final int result;
 
-    final int classHashCode = Abstract<table.name.voName>.class.hashCode();
+    final int classHashCode = <table.name.voName>.class.hashCode();
 
     <table.attributes:{ a | <attribute_hashCode(attribute=a)>}; separator="\n">
 
