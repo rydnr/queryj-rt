@@ -131,18 +131,6 @@ project_imports(
 /*
  * Importing <trName> classes.
  */
-import <package>.<table.name.voName>AttributesStatementSetter;
-import <package>.<table.name.voName>PkStatementSetter;
-import <package>.<table.name.voName>ResultSetExtractor;
-import <basePackageName>.<voSubpackageName>.<table.name.voName>;
-<if(parent)>
-import <basePackageName>.<baseDAOSubpackageName>.<parent.name.voName>DAO;
-import <basePackageName>.<voSubpackageName>.<parent.name.voName>;
-<endif>
-<if(table.voDecorated)>
-import <basePackageName>.<voSubpackageName>.<table.name.voName>Decorator;
-<endif>
-import <basePackageName>.<voFactorySubpackageName>.<table.name.voName>ValueObjectFactory;
 import <basePackageName>.<baseDAOSubpackageName>.<table.name.voName>DAO;
 import <basePackageName>.<damSubpackageName>.<trName>DataAccessManager;
 >>
