@@ -62,7 +62,7 @@ java_header(
     description(tableName=table.name)
   ],
   template="org/acmsl/queryj/dao/BaseDAOFactory.stg",
-  C=C)><endif>
+  C=C)<endif>
 */
 <package_declaration(p=C.package)>
 
