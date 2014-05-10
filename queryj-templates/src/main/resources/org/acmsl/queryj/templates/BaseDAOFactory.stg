@@ -74,7 +74,7 @@ description(tableName) ::= <<
   Generates a description for the generated file.
   @param tableName the table name.
 !>
-Is responsible of creating <tableName>-specific DAOFactory implementation.
+Is responsible of creating {@link <tableName>-specific DAOFactory implementation.
 >>
 
 interface(table, C) ::= <<
