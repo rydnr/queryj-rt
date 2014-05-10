@@ -174,6 +174,13 @@ public abstract class <table.name.capitalized>DAOFactory
         return getInstance(getLastUsed());
     }
 
+    /**
+     * Retrieves a {@code <table.name.capitalized>DAOFactory} instance.
+     * @return such instance.
+     */
+    @Nullable
+    protected static <table.name.capitalized>DAOFactory getInstance()
+    {
     <repository.capitalized>DAOChooser.getInstance());
     }
 
