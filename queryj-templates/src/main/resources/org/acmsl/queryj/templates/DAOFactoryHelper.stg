@@ -209,7 +209,7 @@ public class <table.name.capitalized>DAOFactoryHelper
 
         if (lastUsed == null)
         {
-            result = getInstance(<repository.capitalized>DAOChooser.getInstance());
+            result = getDAOFactory(<repository.capitalized>DAOChooser.getInstance());
             setLastUsed(result);
         }
         else
@@ -224,7 +224,7 @@ public class <table.name.capitalized>DAOFactoryHelper
      * @return such instance.
      */
     <nullable(C=C)>
-    protected static <table.name.capitalized>DAOFactory getInstance(
+    protected static <table.name.capitalized>DAOFactory getDAOFactory(
         <notnull(C=C)>final <repository.capitalized>DAOChooser daoChooser)
     {
         <nullable(C=C)><table.name.capitalized>DAOFactory result = null;
