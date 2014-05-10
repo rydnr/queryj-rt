@@ -171,7 +171,7 @@ public abstract class <table.name.capitalized>DAOFactory
     @Nullable
     public static <table.name.capitalized>DAOFactory getInstance()
     {
-        return getInstance(<repository.capitalized>DAOChooser.getInstance());
+        return getInstance(getLastUsed());<repository.capitalized>DAOChooser.getInstance());
     }
 
     /**
