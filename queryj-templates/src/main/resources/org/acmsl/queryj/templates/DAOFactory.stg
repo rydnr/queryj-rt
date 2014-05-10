@@ -71,9 +71,6 @@ sourceImpl(table, C) ::= <<
  */
 import com.ventura24.commons.dao.DAOListener;
 import com.ventura24.commons.dao.V24JndiUtils;
-import com.ventura24.commons.dao.V24PreparedStatementCreator;
-import com.ventura24.commons.dao.V24TransactionManager;
-import com.ventura24.commons.dao.V24ResultSetExtractor;
 
 /*
  * Importing Spring classes.
