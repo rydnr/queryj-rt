@@ -67,7 +67,7 @@ sourceImpl(table, C) ::= <<
   C=C)><endif>
 */
 <package_declaration(p=C.package)>
-<checkers_import(C=C)>
+<notnull_import(C=C)>
 <if(table.attributeTypes)>
 /*
  * Importing JDK classes.
@@ -141,7 +141,7 @@ public class <table.name.voName>Factory
      <table.attributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
      * @return the new value object.
      */
-    <
+    <notnull(C=C)>
     public <table.name.voName> create<table.name.voName>(
         <table.attributes:{ a | <attribute_method_declaration(attribute=a)>};
           separator=",\n">)
