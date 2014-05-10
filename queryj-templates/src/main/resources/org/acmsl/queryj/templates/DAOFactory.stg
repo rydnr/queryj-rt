@@ -99,7 +99,7 @@ project_imports(basePackageName, baseDAOSubpackageName, table, repository) ::= <
   @param table the table.
 !>
 /*
- * Importing <trName> classes.
+ * Importing <repository.> classes.
  */
 import <basePackageName>.<baseDAOSubpackageName>.<table.name.voName>DAO;
 >>
