@@ -66,6 +66,7 @@ sourceImpl(table, C) ::= <<
 */
 <package_declaration(p=C.package)>
 
+<project_imports(
 /*
  * Importing V24-Commons classes.
  */
