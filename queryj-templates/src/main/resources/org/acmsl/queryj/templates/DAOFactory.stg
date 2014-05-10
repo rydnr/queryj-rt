@@ -93,18 +93,6 @@ import org.apache.commons.logging.LogFactory;
 
 project_imports(
   basePackageName,
-  package,
-  jdbcOperationsSubpackageName,
-  customResults,
-  voSubpackageName,
-  voName,
-  voFactorySubpackageName,
-  rdbSubpackageName,
-  trSubpackageName,
-  trName,
-  damSubpackageName,
-  fkssSubpackageName,
-  fkAttributes,
   baseDAOSubpackageName,
   table,
   parent) ::= <<
