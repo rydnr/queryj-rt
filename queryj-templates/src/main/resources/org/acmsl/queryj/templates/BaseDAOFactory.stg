@@ -46,7 +46,7 @@ source(C) ::= <<
 <sourceImpl(table=C.table, C=C)>
 >>
 
-sourceImpl(table, C) ::= <<
+sourceImpl2(table, C) ::= <<
 <!
   Generates a DAOFactory database implementation source file.
   @param table the table.
