@@ -110,6 +110,6 @@ public interface <table.name.capitalized>DAOFactory
      * @return such implementation.
      */
     <nullable(C=C)>
-    <table.name.capitalized>DAO createDAO();
+    <table.name.voName>DAO createDAO();
 }
 >>
