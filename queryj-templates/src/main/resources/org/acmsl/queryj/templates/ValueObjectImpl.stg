@@ -36,7 +36,7 @@
 // Description: Defines the rules to generate value object implementations.
 //
 //
-group ValueObject;
+group ValueObjectImpl;
 
 import "queryj.stg"
 
