@@ -87,7 +87,7 @@ description(table) ::= <<
 <if(table.comment.empty)>ValueObject for <table.name>.<else><table.comment><endif>
 >>
 
-class(table, C) ::= <<
+interface(table, C) ::= <<
 <!
  Generates the class body.
  @param table the table.
