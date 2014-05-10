@@ -141,7 +141,7 @@ classImpl(table, repository, engine, C) ::= <<
   template="org/acmsl/queryj/dao/DAOFactory.stg", C=C)>
  */
 public class <engine.name.voName><table.name.capitalized>DAOFactory
-    implements <table.name.capitalized>DAOFactory
+    implements <table.name.capitalized>DAOFactory\<
 {
     /**
      * Creates a {@link <engine.name.voName><table.name.capitalized>DAO}.
