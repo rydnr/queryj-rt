@@ -128,8 +128,7 @@ public class <table.name.voName>Factory
     public <table.name.voName>Factory() {}
 
     /**
-     * Retrieves a \<code><table.name.voName>ValueObjectFactory\</code>
-     * instance.
+     * Retrieves a {@code <table.name.voName>Factory} instance.
      * @return such instance.
      */
     public static <table.name.voName>ValueObjectFactory getInstance()
