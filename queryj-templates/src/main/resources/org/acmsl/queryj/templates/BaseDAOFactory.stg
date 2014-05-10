@@ -67,7 +67,7 @@ sourceImpl(table, C) ::= <<
 <package_declaration(p=C.package)>
 
 /*
- * Importing <repository> classes.
+ * Importing <C.repository> classes.
  *
 import <C.packageName>.dao.<table.name.voName>DAO;
 
