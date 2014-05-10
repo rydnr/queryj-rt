@@ -248,7 +248,7 @@ public abstract class <table.name.capitalized>DAOFactory
     {
         try
         {
-            @Nullable final Log log = LogFactory.getLog(<table.name.capitalized>DAOFactory.class);
+            <nullable(C=C)>final Log log = LogFactory.getLog(<table.name.capitalized>DAOFactory.class);
 
             if (log != null)
             {
