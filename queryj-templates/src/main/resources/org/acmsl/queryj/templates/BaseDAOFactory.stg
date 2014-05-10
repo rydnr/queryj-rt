@@ -43,7 +43,7 @@ source(C) ::= <<
 <!
   Generates a DAOFactory database implementation source file.
 !>
-<sourceImpl(table=C.table, C=C)>
+sourceImpl(table=C.table, C=C)
 >>
 
 sourceImpl(table, C) ::= <<
@@ -71,7 +71,7 @@ sourceImpl(table, C) ::= <<
  *
 import <C.base_package>.dao.<table.name.voName>DAO;
 
-checkers_import(C=C)
+<checkers_import(C=C)>
 <interface(table=table, C=C)>
 >>
 
