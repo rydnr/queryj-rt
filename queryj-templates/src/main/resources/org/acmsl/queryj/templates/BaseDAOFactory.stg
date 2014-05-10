@@ -126,9 +126,6 @@ classImpl(table, repository, C) ::= <<
 /**
  * <description(tableName=table.name)>
 <class_common_javadoc(template="org/acmsl/queryj/templates/BaseDAOFactory.stg", C=C)>
-<class_common_javadoc(
-  template="org/acmsl/queryj/dao/DAOFactory.stg",
-  C=C)>
  */
 // TODO: Make it @ThreadSafe
 public abstract class <table.name.capitalized>DAOFactory
