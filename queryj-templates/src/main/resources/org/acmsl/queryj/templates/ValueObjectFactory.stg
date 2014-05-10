@@ -147,7 +147,7 @@ public class <table.name.voName>Factory
     {
         return
             new <table.name.voName>ValueObject(
-                <table.attributes:{ a | <a.name.uncapitalized>}; separator=",\n">);
+                <table.oattributes:{ a | <a.name.uncapitalized>}; separator=",\n">);
     }
 }
 >>
