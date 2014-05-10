@@ -92,7 +92,7 @@ interface(table, C) ::= <<
 <interfaceImpl(table=table, repository=C.repository, C=C)>
 >>
 
-interfaceImpl(table, repository, C) ::= <<
+classImpl(table, repository, C) ::= <<
 <!
  Generates the interface body.
  @param table the table.
