@@ -186,7 +186,7 @@ public abstract class <table.name.capitalized>DAOFactory
 
         if (lastUsed == null)
         {
-            result =
+            result = getInstance(<repository.capitalized>DAOChooser.getInstance());
         }
     }
 
