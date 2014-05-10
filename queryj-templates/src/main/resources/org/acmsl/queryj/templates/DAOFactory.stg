@@ -149,7 +149,7 @@ public class <engine.name.voName><table.name.capitalized>DAOFactory
      * @param jndiUtils the {@link JndiUtils} instance.
      * @return such data source.
      */
-    protected DataSource getDataSource(final GamesJndiUtils jndiUtils)
+    protected DataSource getDataSource(<notnull(C=C)>final JndiUtils jndiUtils)
     {
         DataSource result = null;
 
