@@ -103,6 +103,11 @@ public class <table.name.voName>
     extends Abstract<table.name.voName>
     extends Serializable
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = <C.serialVersionUID>L;
+
     <table.attributes:getter(); separator="\n\n">
 }
 >>
