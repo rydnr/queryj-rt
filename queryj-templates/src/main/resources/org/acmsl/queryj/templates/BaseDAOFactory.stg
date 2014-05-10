@@ -263,7 +263,7 @@ public abstract class <table.name.capitalized>DAOFactory
             }
             else
             {
-                @Nullable final PrintStream printer = retrieveFallbackLog();
+                <nullable(C=C)>final PrintStream printer = retrieveFallbackLog();
 
                 if (printer != null)
                 {
@@ -271,7 +271,7 @@ public abstract class <table.name.capitalized>DAOFactory
                 }
             }
         }
-        catch (@NotNull final Throwable throwable)
+        catch (<notnull(C=C)>final Throwable throwable)
         {
             @Nullable final PrintStream printer = retrieveFallbackLog();
 
