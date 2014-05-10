@@ -106,7 +106,7 @@ interfaceImpl(table, repository, C) ::= <<
   generation_timestamps_enabled=C.generation_timestamps_enabled,
   timestamp=C.timestamp)>
  */
-public class <table.name.capitalized>DAOFactory
+public class <engine.name.<table.name.capitalized>DAOFactory
 {
     /**
      * Creates a <table.name>-specific DAO implementation.
