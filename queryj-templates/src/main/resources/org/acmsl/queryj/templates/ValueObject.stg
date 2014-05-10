@@ -76,7 +76,7 @@ import java.io.Serializable;
 <table.attributeTypes:{ t | import <t>;}; separator="\n">
 <endif>
 
-<class(table=table, C=C)>
+<interface(table=table, C=C)>
 >>
 
 description(table) ::= <<
