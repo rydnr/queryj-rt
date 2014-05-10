@@ -273,7 +273,7 @@ public abstract class <table.name.capitalized>DAOFactory
         }
         catch (<notnull(C=C)>final Throwable throwable)
         {
-            @Nullable final PrintStream printer = retrieveFallbackLog();
+            <nullable(C=C)>final PrintStream printer = retrieveFallbackLog();
 
             if (printer != null)
             {
@@ -290,10 +290,10 @@ public abstract class <table.name.capitalized>DAOFactory
      * @return either {@code System.err} or {@code System.out}, or {@code null} if none of them
      * are available.
      */
-    @Nullable
+    <nullable(C=C)>
     protected static PrintStream retrieveFallbackLog()
     {
-        @Nullable final PrintStream result;
+        <nullable(C=C)>final PrintStream result;
 
         if (System.err != null)
         {
@@ -317,7 +317,7 @@ public abstract class <table.name.capitalized>DAOFactory
      * @param message the message.
      */
     protected static void logError(
-        @NotNull final PrintStream printStream, @NotNull final String message)
+        <notnull(C=C)>final PrintStream printStream, NotNull final String message)
     {
         logError(printStream, message, null);
     }
