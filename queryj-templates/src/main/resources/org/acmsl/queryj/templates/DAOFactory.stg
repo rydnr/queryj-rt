@@ -69,7 +69,7 @@ sourceImpl(table, C) ::= <<
 /*
  * Importing V24-Commons classes.
  */
-import com.ventura24.commons.dao.DAOListener;
+import com.ventura24.commons.dao.DAOListenerImpl;
 import com.ventura24.commons.dao.JndiUtils;
 
 /*
