@@ -49,7 +49,7 @@ source(C) ::= <<
 
 sourceImpl(table, C) ::= <<
 <!
-  Generates a DAOFactoryHelper database implementation source file.
+  Generates a DAOFactoryHelper source file.
   @param table the table.
   @param C the context.
 !>
@@ -62,7 +62,7 @@ sourceImpl(table, C) ::= <<
   [
     description(tableName=table.name)
   ],
-  template="org/acmsl/queryj/templates/BaseDAOFactory.stg",
+  template="org/acmsl/queryj/templates/DAOFactoryHelper.stg",
   C=C)><endif>
 */
 <package_declaration(p=C.package)>
