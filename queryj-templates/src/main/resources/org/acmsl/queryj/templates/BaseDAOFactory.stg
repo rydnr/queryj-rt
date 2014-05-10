@@ -317,7 +317,7 @@ public abstract class <table.name.capitalized>DAOFactory
      * @param message the message.
      */
     protected static void logError(
-        <notnull(C=C)>final PrintStream printStream, NotNull final String message)
+        <notnull(C=C)>final PrintStream printStream, <notnull(C=C)>final String message)
     {
         logError(printStream, message, null);
     }
@@ -329,9 +329,9 @@ public abstract class <table.name.capitalized>DAOFactory
      * @param error the cause (optional).
      */
     protected static void logError(
-        @NotNull final PrintStream printStream,
-        @NotNull final String message,
-        @Nullable final Throwable error)
+        <notnull(C=C)>final PrintStream printStream,
+        <notnull(C=C)>final String message,
+        <nullable(C=C)>final Throwable error)
     {
         if (error != null)
         {
