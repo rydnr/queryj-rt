@@ -223,7 +223,7 @@ public class TableDecoratorHelperTest
             instance.containNotNullAttributes(
                 table1.getAttributes(), table1.getMetadataManager().getMetadataTypeManager()));
 
-        @NotNull final List<Attribute<String>> attributes2 = new ArrayList<>(0);
+        @NotNull final List<Attribute<String>> attributes2 = new ArrayList<>(2);
 
         @NotNull final AbstractTableDecorator table2 =
             AbstractTableDecoratorTest.setupTableDecorator(attributes1, null);
