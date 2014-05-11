@@ -46,10 +46,10 @@ Feature: G_TAX_PRODUCTS code compiles
     Then the generated per-table <output> file compiles successfully
 
     Examples:
-      |    template     |         output           |
-      | ValueObject     | GTaxProduct.java         |
-      | BaseValueObject | AbstractGTaxProduct.java |
-      | ValueObjectImpl | GTaxProductImpl.java     |
+      |     template       |         output           |
+      | ValueObject        | GTaxProduct.java         |
+      | BaseValueObject    | AbstractGTaxProduct.java |
+      | ValueObjectImpl    | GTaxProductImpl.java     |
       | ValueObjectFactory | GTaxProductFactory.java |
 #      | DAOFactoryHelper | GTaxProductDAOFactoryHelper.java |
 #      | ValueObjectFactory | GTaxProductFactory.java |
