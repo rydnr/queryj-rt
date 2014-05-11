@@ -93,8 +93,8 @@ nullable_import(C, useHeader=true, blankLineAfter=true) ::= <<
  @param blankLineAfter whether to add a blank line afterwards.
 !>
 <if(C.notnull_annotations_enabled)>
-
-<if(useHeader)>/*
+<if(useHeader)>
+/*
  * Importing JetBrains annotations.
  */
 <endif
