@@ -314,7 +314,7 @@ public class PerRepositoryTemplatesTest
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
                 QueryJSettings.VERSION, "<C.version>");
 
-            @NotNull final List\<Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables =
+            @NotNull final List\<Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> t_lTables =
                 new ArrayList\<>(tableMap.values());
 
             @NotNull final MetadataManager t_MetadataManager =
