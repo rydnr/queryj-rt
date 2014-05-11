@@ -460,7 +460,7 @@ public class TableDecoratorHelper
 
 
     /**
-     * Checks whether any attribute is nullable.
+     * Checks whether any attribute cannot be null.
      * @param attributes the {@link Attribute}s.
      * @return {@code true} in such case.
      */
