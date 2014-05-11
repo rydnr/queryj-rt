@@ -451,7 +451,7 @@ public class TableDecoratorHelper
         for (@Nullable final Attribute<DecoratedString> attribute : attributes)
         {
             if (   (attribute != null)
-                   && (metadataTypeManager.isClob(attribute.getTypeId())))
+                && (metadataTypeManager.isClob(attribute.getTypeId())))
             {
                 result = true;
                 break;
