@@ -206,7 +206,7 @@ protected <table.name.voName> extractData(
     {
         if (listener != null)
         {
-            daoListener.resultSetMovedForward(this);
+            listener.resultSetMovedForward(this);
         }
 
         result =
