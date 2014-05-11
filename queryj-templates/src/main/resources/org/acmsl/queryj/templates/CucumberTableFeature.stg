@@ -92,7 +92,7 @@ Feature: <table.name> code compiles
 
     Examples:
       | template | output |
-      | ResultSetExtractor     | <table.name.singular.camelCase>GTaxProductResultSetExtractor.java |
+      | ResultSetExtractor     | <table.name.singular.camelCase>ResultSetExtractor.java |
       | ValueObject            | <table.name.singular.camelCase>GTaxProduct.java                   |
       | BaseValueObject        | Abstract<table.name.singular.camelCase>GTaxProduct.java           |
       | ValueObjectImpl        | <table.name.singular.camelCase>GTaxProductImpl.java               |
