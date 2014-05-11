@@ -142,7 +142,7 @@ checkers_import_maybe(table, C) ::= <<
  @param table the table.
  @param context the context.
 !>
-if(table.containsNotNullAttributes)><
+<if(table.containsNotNullAttributes)><
   if(table.containsNullableAttributes)><
     checkers_import(C=C)>
 < else><
