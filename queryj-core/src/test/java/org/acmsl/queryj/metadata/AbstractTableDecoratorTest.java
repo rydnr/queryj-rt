@@ -419,5 +419,7 @@ public class AbstractTableDecoratorTest
         @NotNull final AbstractTableDecorator instance = setupTableDecorator(attributes, null);
 
         Assert.assertTrue(instance.getContainsNullableAttributes());
+
+
     }
 }
