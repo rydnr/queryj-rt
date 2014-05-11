@@ -210,7 +210,7 @@ protected <table.name.voName> extractData(
     {
         if (listener != null)
         {
-            listener.resultSetMovedForward(this);
+            listener.resultSetMovedForward(sql, );
         }
 
         result =
