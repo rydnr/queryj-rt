@@ -68,7 +68,7 @@ sourceImpl(table, C) ::= <<
 */
 <package_declaration(p=C.package)>
 <
-if(table.attributeTypes)>
+if(table.attributeTypes)><
 <if(table.containsNullableAttributes)>
 <checkers_import(C=C)>
 <else>
