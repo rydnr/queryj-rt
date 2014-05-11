@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for TableDecoratorHelper.
  *
  * Date: 2014/05/11
  * Time: 07:33
