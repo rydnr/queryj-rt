@@ -190,7 +190,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
     protected abstract String retrievePackage(
         @NotNull final String repository,
         @NotNull final Engine<String> engine,
-        @NotNull final QueryJCommand projectPackage);
+        @NotNull final QueryJCommand parameters);
 
     /**
      * Stores the template in given attribute map.
