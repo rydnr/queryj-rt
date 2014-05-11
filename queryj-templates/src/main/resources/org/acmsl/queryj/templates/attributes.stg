@@ -303,7 +303,9 @@ result.append("\", \"<attribute.name.capitalized>\": \"");
 result.append(this.m__<attribute.name.capitalized>);
 >>
 
-import_attribute_types() ::= <<
+import_attribute_types(table) ::= <<
+<!
+ Impo
 <if(table.attributeTypes)>
 <  table.attributeTypes:{ t | import <t>;}; separator="\n">
 
