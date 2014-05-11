@@ -458,7 +458,6 @@ public class TableDecoratorHelper
         return result;
     }
 
-
     /**
      * Checks whether any attribute cannot be null.
      * @param attributes the {@link Attribute}s.
