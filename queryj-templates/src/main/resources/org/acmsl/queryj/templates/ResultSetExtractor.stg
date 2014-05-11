@@ -185,6 +185,7 @@ protected <table.name.voName> extractData(
 /**
  * Extracts {@link <table.name.voName>} information from given result set.
  * @param resultSet the result set.
+ * @param sql the original SQL query.
  * @param listener the {@link DAOListener} instance.
  * @param factory the {@link <table.name.voName>Factory}
  * instance.
