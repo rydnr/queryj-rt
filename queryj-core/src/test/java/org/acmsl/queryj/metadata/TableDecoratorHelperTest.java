@@ -141,10 +141,6 @@ public class TableDecoratorHelperTest
         attributes.add(childAttribute1);
         attributes.add(childAttribute3);
 
-        Assert.assertTrue(
-            instance.containNullableAttributes(
-                table.getAttributes(),
-                table.getMetadataManager().getMetadataTypeManager()));
+        Assert.assertTrue(instance.containNullableAttributes(table.getAttributes()));
     }
-
 }
