@@ -2069,7 +2069,7 @@ public abstract class AbstractTableDecorator
     public boolean getContainsNullableAttributes()
     {
         return
-            containClobs(
+            containNullableAttributes(
                 getAttributes(), getMetadataManager().getMetadataTypeManager(), TableDecoratorHelper.getInstance());
     }
 
@@ -2079,7 +2079,7 @@ public abstract class AbstractTableDecorator
      * @param metadataTypeManager the {@link MetadataTypeManager} instance.
      * @return {@code true} in such case.
      */
-    protected boolean containClobs(
+    protected boolean containNullableAttributes(
         @NotNull final ListDecorator<Attribute<DecoratedString>> attributes,
         @NotNull final MetadataTypeManager metadataTypeManager,
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
