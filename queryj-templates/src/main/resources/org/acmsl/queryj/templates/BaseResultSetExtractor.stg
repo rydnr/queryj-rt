@@ -147,7 +147,7 @@ public abstract class <repository.capitalized>BaseResultSetExtractor\<V>
      * @param listener the {@link DAOListener} instance.
      */
     <nullable(C=C)>
-    public <repository.capitalized>DAOListener getDAOListener()
+    public DAOListener getDAOListener()
     {
         return this.m__DAOListener;
     }
