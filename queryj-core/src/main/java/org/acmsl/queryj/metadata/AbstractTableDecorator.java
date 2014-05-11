@@ -2094,7 +2094,7 @@ public abstract class AbstractTableDecorator
     {
         return
             containNotNullAttributes(
-                getAttributes(), TableDecoratorHelper.getInstance());
+                getAttributes(), getMetadataManager().getMetadataTypeManager(), TableDecoratorHelper.getInstance());
     }
 
     /**
