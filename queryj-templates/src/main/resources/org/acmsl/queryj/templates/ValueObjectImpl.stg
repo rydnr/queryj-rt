@@ -115,7 +115,7 @@ public class <table.name.voName>Impl
         <table.attributes:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>};
           separator=",\n">)
     {
-        super(<table.attributes:{ a | <a.name.normalized.uncapitalized>}; separator=", ">);
+        super(<table.attributes:{ a | <a.name.uncapitalized>}; separator=", ">);
     }
 }
 >>
