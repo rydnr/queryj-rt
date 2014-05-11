@@ -1,8 +1,8 @@
 * 2014/05/11
-** Fix BaseResultSetExtractor #505: 1
-** Fix ConfigurationProperties #506: 1
-** Fix DAOChooser #507: 1
-** Fix DAO template #500: 3 ->
+** TODO Fix BaseResultSetExtractor #505: 1
+** TODO Fix ConfigurationProperties #506: 1
+** TODO Fix DAOChooser #507: 1
+** TODO Fix DAO template #500: 3 ->
 
 * Package layout:
 ** dao
