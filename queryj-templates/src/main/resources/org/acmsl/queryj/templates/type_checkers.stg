@@ -135,3 +135,15 @@ checkthread_import(C) ::= <<
  */
 import org.checkthread.annotations.ThreadSafe;
 >>
+
+if(table.containsNotNullAttributes)><
+  if(table.containsNullableAttributes)><
+    checkers_import(C=C)>
+< else><
+    notnull_import(C=C)>
+< endif><
+else><
+  if(table.containsNullableAttributes)><
+    nullable_import(C=C)>
+< endif><
+endif>
