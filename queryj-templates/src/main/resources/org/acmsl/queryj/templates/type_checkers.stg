@@ -165,7 +165,7 @@ notnull_import_maybe_nullable(table, C) ::= <<
  @param table the table.
  @param context the context.
 !>
-<notnull_import(C=C, bla)><
+<notnull_import(C=C, blank)><
 if(table.containsNullableAttributes)><
  nullable_import(useHeader=false, C=C)><
 endif>
