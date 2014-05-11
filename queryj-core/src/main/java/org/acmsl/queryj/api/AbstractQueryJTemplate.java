@@ -110,18 +110,6 @@ public abstract class AbstractQueryJTemplate<C extends QueryJTemplateContext>
     }
 
     /**
-     * Retrieves the header.
-     * @param context the template context.
-     * @return such information.
-     */
-    @Override
-    @Nullable
-    protected String getHeader(@NotNull final QueryJTemplateContext context)
-    {
-        return context.getHeader();
-    }
-
-    /**
      * Retrieves the processed header.
      * @param input the input.
      * @return such information.
