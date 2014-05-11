@@ -99,7 +99,7 @@ nullable_import(C, useHeader=true, blankLineAfter=true) ::= <<
  */
 <endif
 >import org.jetbrains.annotations.Nullable;<if(blankLineAfter)>
-<endif><endif>
+<endif><else>b<endif>
 >>
 
 notnull_import(C, useHeader=true, blankLineAfter=true) ::= <<
