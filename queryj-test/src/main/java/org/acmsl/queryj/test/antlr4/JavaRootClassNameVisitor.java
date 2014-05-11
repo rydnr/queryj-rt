@@ -45,6 +45,7 @@ import org.acmsl.queryj.test.antlr4.JavaParser.ClassDeclarationContext;
 /*
  * Importing checkthread.org annotations.
  */
+import org.acmsl.queryj.test.antlr4.JavaParser.NormalInterfaceDeclarationContext;
 import org.checkthread.annotations.ThreadSafe;
 
 /*
@@ -129,7 +130,7 @@ public class JavaRootClassNameVisitor
      */
     @NotNull
     @Override
-    public String visitNormalInterfaceDeclaration(@NotNull final ClassDeclarationContext context)
+    public String visitNormalInterfaceDeclaration(@NotNull final NormalInterfaceDeclarationContext context)
     {
         setRootClass(context.getChild(1).getText());
 
