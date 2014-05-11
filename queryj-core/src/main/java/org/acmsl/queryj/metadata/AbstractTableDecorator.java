@@ -2092,7 +2092,7 @@ public abstract class AbstractTableDecorator
     @SuppressWarnings("unused")
     public boolean getContainsNotNullAttributes()
     {
-        return containNullableAttributes(getAttributes(), TableDecoratorHelper.getInstance());
+        return containNotNullAttributes(getAttributes(), TableDecoratorHelper.getInstance());
     }
 
     /**
