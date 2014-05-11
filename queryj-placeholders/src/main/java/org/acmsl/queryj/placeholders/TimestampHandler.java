@@ -56,7 +56,8 @@ import org.checkthread.annotations.ThreadSafe;
 /**
  * Handler to provide 'timestamp' placeholder in templates.
  * @author <a href="mailto:chous@acm-sl.org">chous</a>
- * @since 2012/06/18
+ * @since 3.0
+ * Created: 2012/06/18
  */
 @ThreadSafe
 @SuppressWarnings("unused")
