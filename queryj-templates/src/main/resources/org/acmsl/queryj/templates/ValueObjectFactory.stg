@@ -111,7 +111,7 @@ public class <table.name.voName>Factory
 {
     /**
      * Singleton implemented to avoid the
-     * <a hrefd="https://en.wikipedia.org/wiki/Double-checked_locking">double-checked locking</a>.
+     * \<a hrefd="https://en.wikipedia.org/wiki/Double-checked_locking">double-checked locking\</a>.
      * This relies on the fact that inner classes are not loaded until they are referenced.
      */
     private static class <table.name.voName>FactorySingletonContainer
