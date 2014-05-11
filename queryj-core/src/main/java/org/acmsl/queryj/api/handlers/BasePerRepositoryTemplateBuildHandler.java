@@ -177,7 +177,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
         @NotNull final String repository,
         @NotNull final List<String> tableNames,
         @NotNull final QueryJCommand parameters)
-      throws  QueryJBuildException
+      throws  QueryJBuildException;
     {
         return
             templateFactory.createTemplate(
