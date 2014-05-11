@@ -114,8 +114,8 @@ class(table, C) ::= <<
  */
 <class_annotations(C=C)>
 public abstract class Abstract<table.name.voName>
-    extends Serializable
-    implements <table.name.voName>
+    implements <table.name.voName>,
+               Serializable
 {
     /**
      * The serial version id.
