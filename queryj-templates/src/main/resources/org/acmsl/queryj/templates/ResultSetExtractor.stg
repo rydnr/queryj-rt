@@ -165,7 +165,7 @@ defaultExtractor(table, repository, C) ::= <<
  * @param listener the {@link DAOListener} instance.
  * @return the {@link <table.name.voName>} or
  * {@code null} if the operation returned no data.
- * @throws SQLException intercepted by \<i>Spring\</i\>.
+ * @throws SQLException intercepted by \<i>Spring\</i>.
  * @throws DataAccessException with information about any
  * custom exception.
  */
