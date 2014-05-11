@@ -2087,10 +2087,6 @@ public abstract class AbstractTableDecorator
         return tableDecoratorHelper.containClobs(attributes, metadataTypeManager);
     }
 
-    return getContainsNullableAttributes(getAttributes());
-    }
-
-
     /**
      * Checks whether some of the given attributes are nullable or not.
      * @param attributes the attributes.
