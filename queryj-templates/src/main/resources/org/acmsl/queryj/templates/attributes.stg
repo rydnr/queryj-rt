@@ -306,7 +306,7 @@ result.append(this.m__<attribute.name.capitalized>);
 import_attribute_types(table) ::= <<
 <!
  Imports the attribute types.
- @param table table.
+ @param table the table.
 !>
 <if(table.attributeTypes)>
 <  table.attributeTypes:{ t | import <t>;}; separator="\n">
