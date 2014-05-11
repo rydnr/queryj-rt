@@ -419,15 +419,5 @@ public class AbstractTableDecoratorTest
         @NotNull final AbstractTableDecorator instance = setupTableDecorator(attributes, null);
 
         Assert.assertTrue(instance.getContainsNullableAttributes());
-        @NotNull final List<DecoratedString> attributeTypes = instance.getAttributeTypes();
-
-        Assert.assertEquals(2, attributeTypes.size());
-
-        for (@NotNull final DecoratedString type: attributeTypes)
-        {
-            Assert.assertTrue(
-                type.getValue().equals("java.util.Date")
-                || type.getValue().equals("java.sql.Timestamp"));
-        }
     }
 }
