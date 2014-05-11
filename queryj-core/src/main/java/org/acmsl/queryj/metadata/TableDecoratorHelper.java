@@ -75,6 +75,10 @@ import org.checkthread.annotations.ThreadSafe;
 public class TableDecoratorHelper
     implements  Singleton
 {
+    public boolean containNotNullAttributes(final ListDecorator<Attribute<DecoratedString>> attributes)
+    {
+    }
+
     /**
      * Singleton implemented to avoid the double-checked locking.
      */
