@@ -54,6 +54,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+/*
+ * Importing JDK classes.
+ */
 import java.sql.Types;
 import java.util.ArrayList;
 import java.util.List;
