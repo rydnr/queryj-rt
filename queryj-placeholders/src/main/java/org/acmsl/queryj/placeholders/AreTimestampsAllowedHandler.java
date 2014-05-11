@@ -58,6 +58,9 @@ import org.checkthread.annotations.ThreadSafe;
 public class AreTimestampsAllowedHandler
     extends AbstractTemplateContextFillHandler<QueryJTemplateContext, Boolean>
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = -3522961683638627590L;
 
     /**
