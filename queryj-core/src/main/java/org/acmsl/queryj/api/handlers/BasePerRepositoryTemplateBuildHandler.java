@@ -172,7 +172,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
      * @return the template.
      */
     @Nullable
-    protected T createTemplate(
+    protected abstract T createTemplate(
         @NotNull final TF templateFactory,
         @NotNull final String repository,
         @NotNull final List<String> tableNames,
