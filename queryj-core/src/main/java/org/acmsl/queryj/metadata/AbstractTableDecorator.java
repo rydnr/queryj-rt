@@ -1998,7 +1998,9 @@ public abstract class AbstractTableDecorator
      */
     public boolean getContainsClobs()
     {
-        return containClobs(getAttributes(), getMetadataManager().getMetadataTypeManager(), TableDecoratorHelper.getInstance());
+        return
+            containClobs(
+                getAttributes(), getMetadataManager().getMetadataTypeManager(), TableDecoratorHelper.getInstance());
     }
 
     /**
