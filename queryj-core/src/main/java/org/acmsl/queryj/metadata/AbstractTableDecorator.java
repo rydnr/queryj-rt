@@ -2096,7 +2096,7 @@ public abstract class AbstractTableDecorator
     }
 
     /**
-     * Checks whether some of the given attributes are not null or not.
+     * Checks whether some of the given attributes cannot be null.
      * @param attributes the {@link Attribute}s.
      * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
      * @return {@code true} in such case.
