@@ -355,7 +355,7 @@ public class AbstractTableDecoratorTest
      * Checks getAttributeTypes() does not return duplicates.
      */
     @Test
-    public void getContainsNullableAttributes_does_not_contain_duplicates()
+    public void getContainsNullableAttributes_wor()
     {
         @NotNull final List<Attribute<String>> attributes = new ArrayList<>(0);
 
