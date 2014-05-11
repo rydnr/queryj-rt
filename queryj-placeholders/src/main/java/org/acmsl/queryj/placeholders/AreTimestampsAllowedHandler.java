@@ -64,7 +64,7 @@ public class AreTimestampsAllowedHandler
     private static final long serialVersionUID = -3522961683638627590L;
 
     /**
-     * Creates a {@link AreTimestampsAllowedHandler} to resolve placeholders
+     * Creates a {@code AreTimestampsAllowedHandler} to resolve placeholders
      * using given {@link org.acmsl.queryj.api.QueryJTemplateContext context}.
      * @param context the {@link org.acmsl.queryj.api.QueryJTemplateContext context}.
      */
