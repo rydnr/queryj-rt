@@ -370,7 +370,7 @@ public class PerRepositoryTemplatesTest
 
             if (!outputDir.exists())
             {
-                Assert.fail("Cannot create folder: " + outputDir.getAbsolutePath());
+                Assert.fail("Cannot create folder: " + t_OutputDir.getAbsolutePath());
             }
 
             UniqueLogFactory.initializeInstance(LogFactory.getLog(PerRepositoryTemplatesTest.class));
