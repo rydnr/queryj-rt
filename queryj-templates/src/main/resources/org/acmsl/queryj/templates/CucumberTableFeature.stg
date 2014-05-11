@@ -99,7 +99,7 @@ Feature: <table.name> code compiles
       | ValueObjectFactory     | GTaxProductFactory.java            |
 #      | DAOFactoryHelper | GTaxProductDAOFactoryHelper.java |
 #      | ValueObjectFactory | GTaxProductFactory.java |
-#      | DAOFactory | OracleGTaxProductDAOFactory.java |
+#      | DAOFactory | <table.name.singular.camelCase>OracleGTaxProductDAOFactory.java |
 #      | BaseDAOFactory | <table.name.singular.camelCase>GTaxProductDAOFactory.java |
 #      | BaseDAO | <table.name.singular.camelCase>GTaxProductDAO.java |
 #      | BaseResultSetExtractor | <table.name.singular.camelCase>ResultSetExtractor.java |
