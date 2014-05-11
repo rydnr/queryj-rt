@@ -2082,6 +2082,10 @@ public abstract class AbstractTableDecorator
             + ", \"package\": \"" + AbstractTableDecorator.class.getPackage().getName() + "\" }";
     }
 
+    /**
+     * Checks whether the
+     * @return
+     */
     public boolean getContainsNullableAttributes()
     {
         return false;  //To change body of created methods use File | Settings | File Templates.
