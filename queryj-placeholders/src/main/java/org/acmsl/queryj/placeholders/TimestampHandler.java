@@ -71,7 +71,7 @@ public class TimestampHandler
     private static final long serialVersionUID = 2312284463910738810L;
 
     /**
-     * Retrieves the placeholder.
+     * Retrieves "timestamp".
      *
      * @return such placeholder.
      */
