@@ -2078,7 +2078,7 @@ public abstract class AbstractTableDecorator
     protected  boolean getContainsNullableAttributes(
         @NotNull final ListDecorator<Attribute<DecoratedString>> attributes)
     {
-        return
+        getContainsClobs()
     }
 
     /**
