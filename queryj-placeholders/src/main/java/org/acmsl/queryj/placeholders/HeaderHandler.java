@@ -57,7 +57,6 @@ import org.checkthread.annotations.ThreadSafe;
  * @author <a href="mailto:jose.sanleandro@ventura24.es">Jose San Leandro</a>
  * @since 2012/05/23
  */
-@SuppressWarnings("unused")
 @ThreadSafe
 public class HeaderHandler
     extends AbstractTemplateContextFillHandler<QueryJTemplateContext, DecoratedString>
