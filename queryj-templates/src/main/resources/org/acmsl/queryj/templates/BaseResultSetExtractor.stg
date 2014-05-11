@@ -139,7 +139,7 @@ public abstract class <repository.capitalized>BaseResultSetExtractor\<V>
     @SuppressWarnings("unused")
     protected void setDAOListener(<nullable(C=C)>final DAOListener listener)
     {
-        this.m__DAOListener = listener;
+        immutableSetDAOListener(listener);
     }
 
     /**
