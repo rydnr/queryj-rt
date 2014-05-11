@@ -384,8 +384,6 @@ public class PerForeignKeyTemplatesTest
                 Literals.PACKAGE_NAME, BASE_PACKAGE_NAME);
             new QueryJCommandWrapper\<String>(t_Command).setSetting(
                 QueryJSettings.REPOSITORY, "acme");
-            new QueryJCommandWrapper\<String>(t_Command).setSetting(
-                QueryJSettings.HEADER_FILE, "");
             new QueryJCommandWrapper\<Boolean>(t_Command).setSetting(
                 QueryJSettings.DISABLE_TIMESTAMPS, false);
             new QueryJCommandWrapper\<Boolean>(t_Command).setSetting(
