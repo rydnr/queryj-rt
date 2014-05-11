@@ -2100,11 +2100,13 @@ public abstract class AbstractTableDecorator
     /**
      * Checks whether some of the given attributes cannot be null.
      * @param attributes the {@link Attribute}s.
+     * @param metadataTypeManager the {@link MetadataTypeManager} instance.
      * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
      * @return {@code true} in such case.
      */
     protected boolean containNotNullAttributes(
         @NotNull final ListDecorator<Attribute<DecoratedString>> attributes,
+        @NotNull final MetadataTypeManager metadataTypeManager,
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
         return tableDecoratorHelper.containNotNullAttributes(attributes);
