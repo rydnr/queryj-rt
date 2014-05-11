@@ -2082,7 +2082,6 @@ public abstract class AbstractTableDecorator
      */
     protected boolean containNullableAttributes(
         @NotNull final ListDecorator<Attribute<DecoratedString>> attributes,
-        @NotNull final MetadataTypeManager metadataTypeManager,
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
         return tableDecoratorHelper.containNullableAttributes(attributes, metadataTypeManager);
