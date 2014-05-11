@@ -72,7 +72,7 @@ sourceImpl(table, C) ::= <<
  * Importing <C.repository.capitalized> classes.
  */
 import <C.project_package>.<typeInitMap.voSubpackageName>.<table.name.voName>;
-<notnull_import_maybe(table=table, C=C)>
+<notnull_import_maybe_nullable(table=table, C=C)>
 /*
  * Importing JDK classes.
  */
