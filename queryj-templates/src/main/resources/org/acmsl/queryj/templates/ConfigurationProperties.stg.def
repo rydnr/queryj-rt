@@ -14,4 +14,4 @@ output: properties;
 filename builder : queryj-<repository.normalized.lowercased>.properties;
 
 // The package.
-package: ;
+package: <"">;
