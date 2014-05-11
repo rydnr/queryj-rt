@@ -278,7 +278,7 @@ public class PerRepositoryTemplatesTest
             "No template generator found for " + templateName + ". Does " + templateName + ".stg exist?",
             t_Generator);
 
-        @NotNull final DecoratorFactory decoratorFactory = retrieveDecoratorFactory(t_Generator);
+        @NotNull final DecoratorFactory t_DecoratorFactory = retrieveDecoratorFactory(t_Generator);
 
         boolean firstTime = true;
         boolean restart = false;
