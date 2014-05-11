@@ -68,7 +68,7 @@ public class AreTimestampsAllowedHandler
      * using given {@link org.acmsl.queryj.api.QueryJTemplateContext context}.
      * @param context the {@link org.acmsl.queryj.api.QueryJTemplateContext context}.
      */
-    @SuppressWarnings("unused")
+
     public AreTimestampsAllowedHandler(@NotNull final QueryJTemplateContext context)
     {
         super(context);
