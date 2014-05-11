@@ -110,7 +110,7 @@ project_imports(basePackageName, voSubpackageName, table, repository) ::= <<
  * Importing <repository.capitalized> classes.
  */
 import <basePackageName>.<voSubpackageName>.<table.name.voName>;
-import <basePackageName>.<voSubpackageName>.core.<table.name.voName>ValueObjectFactory;
+import <basePackageName>.<voSubpackageName>.core.<table.name.voName>Factory;
 >>
 
 description(table) ::= <<
