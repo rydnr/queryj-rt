@@ -85,12 +85,12 @@ import org.jetbrains.annotations.Nullable;
 <endif>
 >>
 
-nullable_import(C, useHeader=true, blank_line_after=true) ::= <<
+nullable_import(C, useHeader=true, blankLineAfter=true) ::= <<
 <!
  Generates the import group for NotNull/Nullable annotations.
  @param C the context.
  @param useHeader whether to include the import header.
- @param blankLineAfter whether to add a n
+ @param blankLineAfter whether to add a blank line afterwards.
 !>
 <if(C.notnull_annotations_enabled)>
 
@@ -102,12 +102,13 @@ import org.jetbrains.annotations.Nullable;
 <endif>
 >>
 
-notnull_import(C, useHeader=true, blank_line_after=true) ::= <<
+notnull_import(C, useHeader=true, blankLineAfter=true) ::= <<
 <!
  Generates the import group for NotNull/Nullable annotations.
  @param C the context.
  @param useHeader whether to use a header.
- !>
+ @param blankLineAfter whether to add a blank line afterwards.
+ !!>
 <if(C.notnull_annotations_enabled)>
 
 <if(useHeader)>/*
@@ -167,7 +168,7 @@ notnull_import_maybe_nullable(table, C) ::= <<
  @param table the table.
  @param context the context.
 !>
-<notnull_import(C=C, blank_line_after=false)><
+<notnull_import(C=C, blankLineAfter=false)><
 if(table.containsNullableAttributes)><
  nullable_import(useHeader=false, C=C)><
 endif>
