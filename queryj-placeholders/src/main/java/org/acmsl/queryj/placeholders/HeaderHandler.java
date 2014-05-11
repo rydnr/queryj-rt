@@ -71,7 +71,6 @@ public class HeaderHandler
      * Creates a handler able to resolve "header" placeholders.
      * @param context the {@link org.acmsl.queryj.api.QueryJTemplateContext context}.
      */
-    @SuppressWarnings("unused")
     public HeaderHandler(@NotNull final QueryJTemplateContext context)
     {
         super(context);
