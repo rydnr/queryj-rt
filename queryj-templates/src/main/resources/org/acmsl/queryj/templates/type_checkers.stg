@@ -156,7 +156,7 @@ else><
 endif>
 >>
 
-checkers_import_maybe(table, C) ::= <<
+notnull_import_maybe(table, C) ::= <<
 <!
  Imports the checkers depending on the table attributes.
  @param table the table.
