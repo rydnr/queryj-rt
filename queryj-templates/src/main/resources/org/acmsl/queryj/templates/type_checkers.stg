@@ -114,8 +114,7 @@ notnull_import(C, useHeader=true, blankLineAfter=true) ::= <<
 <if(useHeader)>/*
  * Importing JetBrains annotations.
  */
-<endif>
-import org.jetbrains.annotations.NotNull;<if(blankLineAfter)>
+<endif>import org.jetbrains.annotations.NotNull;<if(blankLineAfter)>
 <endif><endif>
 >>
 
