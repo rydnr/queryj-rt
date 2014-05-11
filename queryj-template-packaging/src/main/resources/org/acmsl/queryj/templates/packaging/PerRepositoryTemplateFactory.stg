@@ -147,7 +147,7 @@ public class <C.class_name>
     public <def.name.noExtension>Template createTemplate(
         @NotNull final String repository,
         @NotNull final List\<String> tableNames,
-        @NotNull final <def.type.capitalized>TemplateContext> context,
+        @NotNull final <def.type.capitalized>TemplateContext context,
         @NotNull final QueryJCommand command)
     {
         @NotNull final String t_strFileName = retrieveTemplateFileName(repository, t_Context.getMetadataManager());
