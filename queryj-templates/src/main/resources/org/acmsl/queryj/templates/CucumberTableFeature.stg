@@ -100,7 +100,7 @@ Feature: <table.name> code compiles
 #      | DAOFactoryHelper | GTaxProductDAOFactoryHelper.java |
 #      | ValueObjectFactory | GTaxProductFactory.java |
 #      | DAOFactory | OracleGTaxProductDAOFactory.java |
-#      | BaseDAOFactory | GTaxProductDAOFactory.java |
+#      | BaseDAOFactory | <table.name.singular.camelCase>GTaxProductDAOFactory.java |
 #      | BaseDAO | <table.name.singular.camelCase>GTaxProductDAO.java |
 #      | BaseResultSetExtractor | <table.name.singular.camelCase>ResultSetExtractor.java |
 #      | DAO | <engine.name.capitalized><table.name.singular.camelCase>DAO.java |
