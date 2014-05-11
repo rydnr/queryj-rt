@@ -178,6 +178,8 @@ nullable_import_maybe_notnull(table, C) ::= <<
  @param table the table.
  @param context the context.
 !>
+/*
+ * Importing JetBrains annotations
 if(table.containsNotNullAttributes)><
  notnull_import(useHeader=false, C=C)>
 < endif>
