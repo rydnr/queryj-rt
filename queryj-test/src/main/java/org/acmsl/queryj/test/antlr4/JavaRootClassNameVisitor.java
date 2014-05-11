@@ -130,7 +130,7 @@ public class JavaRootClassNameVisitor
     {
         return
             "{ \"class\": \"JavaRootClassNameVisitor\""
-            + ", \"rootClass\": \"" + m__strRootClass + '\'' +
-            ' ", \"package\"" + }';
+            + ", \"rootClass\": \"" + m__strRootClass + '\''
+            ' ", \"package\"" + Ja}';
     }
 }
