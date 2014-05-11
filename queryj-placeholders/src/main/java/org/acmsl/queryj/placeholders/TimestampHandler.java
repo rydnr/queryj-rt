@@ -72,7 +72,6 @@ public class TimestampHandler
 
     /**
      * Retrieves "timestamp".
-     *
      * @return such placeholder.
      */
     @NotNull
