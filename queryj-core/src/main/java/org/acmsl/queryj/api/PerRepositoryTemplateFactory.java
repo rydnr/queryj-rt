@@ -74,5 +74,6 @@ public interface PerRepositoryTemplateFactory
     public T createTemplate(
         @NotNull final String repository,
         @NotNull final List<String> tableNames,
+        @NotNull final
         @NotNull final QueryJCommand command);
 }
