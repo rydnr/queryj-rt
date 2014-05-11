@@ -471,7 +471,7 @@ public class TableDecoratorHelper
         for (@Nullable final Attribute<DecoratedString> attribute : attributes)
         {
             if (   (attribute != null)
-                && (!attribute.isP)
+                && (!attribute)
                 && (!attribute.isNullable()))
             {
                 result = true;
