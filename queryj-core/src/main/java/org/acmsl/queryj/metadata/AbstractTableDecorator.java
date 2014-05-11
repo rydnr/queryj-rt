@@ -2078,7 +2078,7 @@ public abstract class AbstractTableDecorator
      * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
      * @return {@code true} in such case.
      */
-    protected boolean containNullableAttributes(
+    protected boolean containNoullableAttributes(
         @NotNull final ListDecorator<Attribute<DecoratedString>> attributes,
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
