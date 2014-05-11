@@ -155,7 +155,7 @@ public class TableDecoratorHelperTest
     @Test
     public void containNotNullAttributes_detects_notnull_attributes()
     {
-        @NotNull final List<Attribute<String>> attributes1 = new ArrayList<>(0);
+        @NotNull final List<Attribute<String>> attributes1 = new ArrayList<>(4);
 
         @NotNull final Attribute<String> childAttribute1 =
             new AttributeIncompleteValueObject(
