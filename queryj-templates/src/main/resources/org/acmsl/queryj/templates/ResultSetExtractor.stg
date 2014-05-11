@@ -93,9 +93,7 @@ import org.springframework.dao.DataAccessException;
 import java.io.Serializable;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-<if(table.attributeTypes)>
-<table.attributeTypes:{ t | import <t>;}; separator="\n">
-<endif>
+<import_attribute_types(table=table, useHeader=false)>
 
 <class(table=table, repository=C.repository, C=C)>
 >>
