@@ -150,7 +150,7 @@ public class <C.class_name>
         @NotNull final <def.type.capitalized>TemplateContext context,
         @NotNull final QueryJCommand command)
     {
-        @NotNull final String t_strFileName = retrieveTemplateFileName(repository, t_Context.getMetadataManager());
+        @NotNull final String t_strFileName = retrieveTemplateFileName(repository, context.getMetadataManager());
 
         t_Context.setFileName(t_strFileName);
 
