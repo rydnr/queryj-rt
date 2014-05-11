@@ -69,12 +69,6 @@ sourceImpl(table, C) ::= <<
 <package_declaration(p=C.package)>
 <notnull_import(C=C)>
 <import_attribute_types(table=table, useHeader=false)>
-<if(table.attributeTypes)>
-/*
- * Importing JDK classes.
- */
-<table.attributeTypes:{ t | import <t>;}; separator="\n">
-<endif>
 
 <class(table=table, C=C)>
 >>
