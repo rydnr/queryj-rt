@@ -317,7 +317,7 @@ public class PerRepositoryTemplatesTest
             @NotNull final List\<Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables =
                 new ArrayList\<>(tableMap.values());
 
-            @NotNull final MetadataManager metadataManager =
+            @NotNull final MetadataManager t_MetadataManager =
                 retrieveMetadataManager(engine, tables, new ArrayList\<>(0), decoratorFactory);
 
             new QueryJCommandWrapper\<MetadataManager>(t_Command).setSetting(
