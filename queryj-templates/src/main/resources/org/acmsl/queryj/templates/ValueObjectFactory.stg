@@ -69,7 +69,9 @@ sourceImpl(table, C) ::= <<
 <package_declaration(p=C.package)>
 
 /*
- * Importing <C.repository>
+ * Importing <C.repository> classes.
+ */
+import <C.project_package>.
 <notnull_import(C=C)>
 <import_attribute_types(table=table, useHeader=true)>
 
