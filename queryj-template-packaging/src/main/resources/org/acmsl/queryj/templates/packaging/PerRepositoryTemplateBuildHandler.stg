@@ -173,7 +173,7 @@ public class <C.class_name>
     }
 
     /**
-     * {
+     * {@inheritDoc}
      */
     @NotNull
     protected String retrievePackage(
