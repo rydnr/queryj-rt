@@ -115,7 +115,7 @@ notnull_import(C, useHeader=true, blankLineAfter=true) ::= <<
  * Importing JetBrains annotations.
  */
 <endif>import org.jetbrains.annotations.NotNull;<if(blankLineAfter)>
-<endif><endif>
+<endif><else><endif>
 >>
 
 checkers_import_jsr() ::= <<
