@@ -223,6 +223,9 @@ public class TableDecoratorHelperTest
             instance.containNotNullAttributes(
                 table1.getAttributes(), table1.getMetadataManager().getMetadataTypeManager()));
 
+        @NotNull final AbstractTableDecorator table1 =
+            AbstractTableDecoratorTest.setupTableDecorator(attributes, null);
+
         attributes.clear();
         attributes.add(childAttribute1);
         attributes.add(childAttribute4);
