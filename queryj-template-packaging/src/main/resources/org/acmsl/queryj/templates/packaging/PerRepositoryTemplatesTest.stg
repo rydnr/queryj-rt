@@ -380,8 +380,8 @@ public class PerRepositoryTemplatesTest
             try
             {
                 generator.write(
-                    template,
-                    outputDir,
+                    t_Template,
+                    t_OutputDir,
                     rootFolder.getRoot(),
                     Charset.defaultCharset());
             }
