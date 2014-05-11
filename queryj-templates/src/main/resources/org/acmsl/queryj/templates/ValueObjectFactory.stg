@@ -115,7 +115,7 @@ public class <table.name.voName>Factory
     /**
      * Singleton implemented to avoid the double-check locking.
      */
-    private static class <table.name.voName>ValueObjectFactorySingletonContainer
+    private static class <table.name.voName>FactorySingletonContainer
     {
         /**
          * The actual singleton.
