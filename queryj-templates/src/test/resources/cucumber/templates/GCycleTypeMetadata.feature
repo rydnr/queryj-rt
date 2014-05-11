@@ -18,4 +18,4 @@ Feature: G_CYCLE_TYPE_METADATA code compiles
 
     Examples:
       | template | output |
-      | DAO | OracleGCycleTypeMetadataDAO.java |
+      | ValueObjectFactory | GTaxProductFactory.java  |
