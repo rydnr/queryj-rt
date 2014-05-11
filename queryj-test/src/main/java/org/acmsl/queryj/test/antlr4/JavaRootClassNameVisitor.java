@@ -132,7 +132,7 @@ public class JavaRootClassNameVisitor
         return
             "{ \"class\": \"JavaRootClassNameVisitor\""
             + ", \"rootClass\": \"" + m__strRootClass + '\''
-            + ", \"package\"" + JavaRootClassNameVisitor.class.getPackage().getName()
+            + ", \"package\": \"" + JavaRootClassNameVisitor.class.getPackage().getName()
     }';
     }
 }
