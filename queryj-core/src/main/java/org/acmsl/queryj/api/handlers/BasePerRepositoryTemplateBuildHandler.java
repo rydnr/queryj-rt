@@ -184,6 +184,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
             templateFactory.createTemplate(
                 repository,
                 tableNames,
+                context,
                 parameters);
     }
 
