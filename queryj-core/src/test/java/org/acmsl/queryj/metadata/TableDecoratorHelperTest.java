@@ -130,7 +130,7 @@ public class TableDecoratorHelperTest
         attributes.add(childAttribute3);
         attributes.add(childAttribute4);
 
-        @NotNull final AbstractTableDecorator instance =
+        @NotNull final AbstractTableDecorator table =
             AbstractTableDecoratorTest.setupTableDecorator(attributes, null);
 
         Assert.assertTrue(instance.getContainsNullableAttributes());
