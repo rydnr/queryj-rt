@@ -68,6 +68,7 @@ sourceImpl(table, C) ::= <<
 */
 <package_declaration(p=C.package)>
 <if(table.attributeTypes)>
+<if(
 <checkers_import(C=C)>
 /*
  * Importing JDK classes.
