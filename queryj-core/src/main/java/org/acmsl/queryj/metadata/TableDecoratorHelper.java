@@ -75,6 +75,11 @@ import org.checkthread.annotations.ThreadSafe;
 public class TableDecoratorHelper
     implements  Singleton
 {
+    public boolean containNullableAttributes(final ListDecorator<Attribute<DecoratedString>> attributes, final 
+    MetadataTypeManager metadataTypeManager)
+    {
+    }
+
     /**
      * Singleton implemented to avoid the double-checked locking.
      */
