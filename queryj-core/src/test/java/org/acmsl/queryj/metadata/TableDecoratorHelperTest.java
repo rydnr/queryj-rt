@@ -226,7 +226,7 @@ public class TableDecoratorHelperTest
         @NotNull final List<Attribute<String>> attributes2 = new ArrayList<>(2);
 
         @NotNull final AbstractTableDecorator table2 =
-            AbstractTableDecoratorTest.setupTableDecorator(attributes1, null);
+            AbstractTableDecoratorTest.setupTableDecorator(attributes2, null);
 
         attributes1.clear();
         attributes1.add(childAttribute1);
