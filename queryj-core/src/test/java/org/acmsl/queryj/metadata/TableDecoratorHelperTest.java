@@ -227,6 +227,8 @@ public class TableDecoratorHelperTest
         attributes.add(childAttribute1);
         attributes.add(childAttribute3);
 
-        Assert.assertTrue(instance.containNotNullAttributes(table.getAttributes()));
+        Assert.assertTrue(
+            instance.containNotNullAttributes(
+                table.getAttributes(), table.getMetadataManager().getMetadataTypeManager()));
     }
 }
