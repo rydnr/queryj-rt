@@ -463,7 +463,9 @@ public class TableDecoratorHelper
      * @param attributes the {@link Attribute}s.
      * @return {@code true} in such case.
      */
-    public boolean containNotNullAttributes(@NotNull final ListDecorator<Attribute<DecoratedString>> attributes)
+    public boolean containNotNullAttributes(
+        @NotNull final ListDecorator<Attribute<DecoratedString>> attributes,
+        @NotNull final MetadataTypeManager typeManager)
     {
         boolean result = false;
 
