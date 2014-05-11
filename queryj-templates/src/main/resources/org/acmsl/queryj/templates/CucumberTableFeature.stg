@@ -94,8 +94,8 @@ Feature: <table.name> code compiles
       | template | output |
       | ResultSetExtractor     | <table.name.singular.camelCase>ResultSetExtractor.java |
       | ValueObject            | <table.name.singular.camelCase>.java                   |
-      | BaseValueObject        | Abstract<table.name.singular.camelCase>.java           |
-      | ValueObjectImpl        | <table.name.singular.camelCase>Impl.java               |
+      | BaseValueObject | Abstract<table.name.singular.camelCase>.java           |
+      | ValueObjectImpl | <table.name.singular.camelCase>Impl.java               |
       | ValueObjectFactory | <table.name.singular.camelCase>Factory.java            |
 #      | DAOFactoryHelper | <table.name.singular.camelCase>DAOFactoryHelper.java |
 #      | ValueObjectFactory | <table.name.singular.camelCase>Factory.java |
