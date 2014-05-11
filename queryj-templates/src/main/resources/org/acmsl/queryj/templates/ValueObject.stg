@@ -70,6 +70,7 @@ sourceImpl(table, C) ::= <<
 <if(table.attributeTypes)>
 <if(table.containsNullableAttributes)>
 <checkers_import(C=C)>
+<else>
 /*
  * Importing JDK classes.
  */
