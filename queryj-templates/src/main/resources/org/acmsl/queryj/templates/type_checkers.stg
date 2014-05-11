@@ -184,5 +184,5 @@ nullable_import_maybe_notnull(table, C) ::= <<
 if(table.containsNotNullAttributes)><
  notnull_import(useHeader=false, C=C)>
 < endif>
-<notnull_import(C=C, useHeader=false)>
+<nullable_import(C=C, useHeader=false)>
 >>
