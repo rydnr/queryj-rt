@@ -404,7 +404,7 @@ public class PerRepositoryTemplatesTest
 
             outputFiles.put(
                 repository,
-                new File(outputDir, template.getTemplateContext().getFileName()));
+                new File(t_OutputDir, t_Template.getTemplateContext().getFileName()));
         }
 
         if (failCause != null)
