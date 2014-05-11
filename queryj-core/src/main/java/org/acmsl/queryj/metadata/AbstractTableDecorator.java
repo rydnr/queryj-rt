@@ -2069,6 +2069,16 @@ public abstract class AbstractTableDecorator
         return getContainsNullableAttributes(getAttributes());
     }
 
+
+    /**
+     * Checks whether some of the attributes are nullable or not.
+     * @return {@code true} in such case.
+     */
+    public boolean getContainsNullableAttributes()
+    {
+        return getContainsNullableAttributes(getAttributes());
+    }
+
     /**
      * {@inheritDoc}
      */
