@@ -73,7 +73,7 @@ sourceImpl(table, C) ::= <<
  */
 import <C.project_package>.<typeInitMap.voSubpackageName>.<table.name.voName>;
 <checkers_import_maybe(table=table, C=C)>
-jjq/*
+jjqq/*
  * Importing JDK classes.
  */
 import java.io.Serializable;
