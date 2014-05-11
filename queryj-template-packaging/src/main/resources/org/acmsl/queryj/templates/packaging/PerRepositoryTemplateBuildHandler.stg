@@ -169,7 +169,7 @@ public class <C.class_name>
                 repository, tableNames, retrieveMetadataManager(parameters).getEngine(), parameters));
 
         // TODO: check whether generation is allowed or not
-        return templateFactory.createTemplate(templateFactory, repository, tableNames, parameters);
+        return templateFactory.createTemplate(repository, tableNames, t_Context, parameters);
     }
 
     /**
