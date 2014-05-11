@@ -858,6 +858,7 @@ public abstract class AbstractTemplatesTest<G, F>
                 catch (@NotNull final Throwable invalidClass)
                 {
                     // could be an interface
+
                     Assert.fail(PARSER_ERROR + invalidClass.getMessage());
                 }
 
