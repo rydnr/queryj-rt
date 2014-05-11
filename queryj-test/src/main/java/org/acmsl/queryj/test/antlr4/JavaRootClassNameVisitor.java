@@ -109,7 +109,7 @@ public class JavaRootClassNameVisitor
     }
 
     /**
-     * Visits the parser tree within the <pre>packageDeclaration</pre> rule.
+     * Visits the parser tree within the <pre>classDeclaration</pre> rule.
      * @param context the parse context.
      * @return the package name.
      */
