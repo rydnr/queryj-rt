@@ -38,7 +38,6 @@ package org.acmsl.queryj.placeholders;
 /*
  * Importing some project classes.
  */
-import org.acmsl.queryj.api.NonRelevantFillHandler;
 import org.acmsl.queryj.api.QueryJTemplateContext;
 
 /*
