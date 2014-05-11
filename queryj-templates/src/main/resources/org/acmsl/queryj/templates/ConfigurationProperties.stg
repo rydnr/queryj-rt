@@ -80,7 +80,7 @@ sourceImpl(repository, tables, C) ::= <<
                   table=t,
                   repository=repository,
                   engine=C.engine,
-                  package=C.package,
+                  package=C.project_package,
                   daoSubpackage=typeInitMap.baseDAOSubpackageName,
                   C=C)>}; separator="\n\n">
 <endif>
