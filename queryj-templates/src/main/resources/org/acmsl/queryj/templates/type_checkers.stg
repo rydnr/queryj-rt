@@ -166,6 +166,5 @@ notnull_import_maybe_nullable(table, C) ::= <<
 <
 if(table.containsNullableAttributes)><
  nullable_import(C=C)>
-< endif><
-endif>
+< endif>
 >>
