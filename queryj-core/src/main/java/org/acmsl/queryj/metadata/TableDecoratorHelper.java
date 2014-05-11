@@ -458,4 +458,26 @@ public class TableDecoratorHelper
         return result;
     }
 
+
+    /**
+     * Checks whether any attribute is nullable.
+     * @param attributes the {@link Attribute}s.
+     * @return {@code true} in such case.
+     */
+    public boolean containNullableAttributes(@NotNull final ListDecorator<Attribute<DecoratedString>> attributes)
+    {
+        boolean result = false;
+
+        for (@Nullable final Attribute<DecoratedString> attribute : attributes)
+        {
+            if (   (attribute != null)
+                   && (attribute.isNullable()))
+            {
+                result = true;
+                break;
+            }
+        }
+
+        return result;
+    }
 }
