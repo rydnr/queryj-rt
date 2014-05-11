@@ -119,7 +119,7 @@ public abstract class <repository.capitalized>BaseResultSetExtractor\<V>
      * @param listener the {@link <repository.capitalized>DAOListener} instance.
      */
     protected <repository.capitalized>BaseResultSetExtractor(
-        <nullable(C=C)>final <repository.capitalized>DAOListener listener)
+        <nullable(C=C)>final DAOListener listener)
     {
         immutableSetDAOListener(listener);
     }
