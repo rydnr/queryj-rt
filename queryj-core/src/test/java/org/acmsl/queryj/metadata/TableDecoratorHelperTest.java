@@ -159,6 +159,8 @@ public class TableDecoratorHelperTest
     @Test
     public void containNotNullAttributes_detects_notnull_attributes()
     {
+        @NotNull final TableDecoratorHelper instance = TableDecoratorHelper.getInstance();
+
         @NotNull final List<Attribute<String>> attributes1 = new ArrayList<>(4);
 
         @NotNull final Attribute<String> childAttribute1 =
