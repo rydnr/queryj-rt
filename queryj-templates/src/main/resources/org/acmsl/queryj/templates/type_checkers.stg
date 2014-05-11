@@ -100,7 +100,7 @@ import org.jetbrains.annotations.Nullable;
 <endif>
 >>
 
-notnull_import(C, useHeader=true) ::= <<
+notnull_import(C, useHeader=true, blank_lines_after=true) ::= <<
 <!
  Generates the import group for NotNull/Nullable annotations.
  @param C the context.
