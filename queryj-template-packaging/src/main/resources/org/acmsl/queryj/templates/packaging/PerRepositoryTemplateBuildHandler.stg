@@ -176,7 +176,8 @@ public class <C.class_name>
      * Retrieves the package for the template.
      * @param repository the repository.
      * @param engine the engine.
-     * @param parameters the
+     * @param parameters the parameters.
+     * @return the package.
      */
     @NotNull
     protected String retrievePackage(
