@@ -461,7 +461,7 @@ public class TableDecoratorHelper
     /**
      * Checks whether any attribute cannot be null.
      * @param attributes the {@link Attribute}s.
-     *
+     * @param typeManager the {@link MetadataTypeManager} instance.
      * @return {@code true} in such case.
      */
     public boolean containNotNullAttributes(
