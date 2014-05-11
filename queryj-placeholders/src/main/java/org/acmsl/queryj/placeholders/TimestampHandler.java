@@ -79,7 +79,7 @@ public class TimestampHandler
     @Override
     public String getPlaceHolder()
     {
-        return "timestap";
+        return "timestamp";
     }
 
     /**
