@@ -424,6 +424,6 @@ public class AbstractTableDecoratorTest
         attributes.add(childAttribute1);
         attributes.add(childAttribute3);
 
-        Assert.assertTrue(instance.getContainsNullableAttributes());
+        Assert.assertFalse(instance.getContainsNullableAttributes());
     }
 }
