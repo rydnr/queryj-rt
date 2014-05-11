@@ -2090,7 +2090,7 @@ public abstract class AbstractTableDecorator
      * @return {@code true} in such case.
      */
     @SuppressWarnings("unused")
-    public boolean getContainsNullableAttributes()
+    public boolean getContainsNotNullAttributes()
     {
         return containNullableAttributes(getAttributes(), TableDecoratorHelper.getInstance());
     }
