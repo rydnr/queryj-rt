@@ -145,7 +145,7 @@ public class <table.name.voName>ResultSetExtractor
     public <table.name.voName>ResultSetExtractor(
         <notnull(C=C)>final String sql, <nullable(C=C)>final DAOListener listener)
     {
-        super(listener);
+        super(sql, listener);
     }
 
     <defaultExtractor(table=table, repository=repository, C=C)>
