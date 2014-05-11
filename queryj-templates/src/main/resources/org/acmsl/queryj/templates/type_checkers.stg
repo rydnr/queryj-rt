@@ -98,8 +98,8 @@ nullable_import(C, useHeader=true, blankLineAfter=true) ::= <<
  * Importing JetBrains annotations.
  */
 <endif
->import org.jetbrains.annotations.Nullable;
-<endif>
+>import org.jetbrains.annotations.Nullable;<if(blankLineAfter)>
+<endif><endif>
 >>
 
 notnull_import(C, useHeader=true, blankLineAfter=true) ::= <<
@@ -115,7 +115,7 @@ notnull_import(C, useHeader=true, blankLineAfter=true) ::= <<
  * Importing JetBrains annotations.
  */
 <endif>
-import org.jetbrains.annotations.NotNull;<if(blank_line_after)>
+import org.jetbrains.annotations.NotNull;<if(blankLineAfter)>
 <endif><endif>
 >>
 
