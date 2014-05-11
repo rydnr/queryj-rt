@@ -98,7 +98,7 @@ Feature: <table.name> code compiles
       | ValueObjectImpl        | GTaxProductImpl.java               |
       | ValueObjectFactory     | GTaxProductFactory.java            |
 #      | DAOFactoryHelper | GTaxProductDAOFactoryHelper.java |
-#      | ValueObjectFactory | GTaxProductFactory.java |
+#      | ValueObjectFactory | <table.name.singular.camelCase>GTaxProductFactory.java |
 #      | DAOFactory | <table.name.singular.camelCase>OracleGTaxProductDAOFactory.java |
 #      | BaseDAOFactory | <table.name.singular.camelCase>GTaxProductDAOFactory.java |
 #      | BaseDAO | <table.name.singular.camelCase>GTaxProductDAO.java |
