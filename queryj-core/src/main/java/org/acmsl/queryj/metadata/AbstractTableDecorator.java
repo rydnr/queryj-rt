@@ -2060,7 +2060,6 @@ public abstract class AbstractTableDecorator
         return new TableAttributesListDecorator(result, this);
     }
 
-
     /**
      * Checks whether some of the attributes are nullable or not.
      * @return {@code true} in such case.
