@@ -754,8 +754,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
      */
     @Nullable
     protected String generateOutput(
-        @NotNull final C context,
-        final boolean relevantOnly)
+        @NotNull final C context, final boolean relevantOnly)
       throws InvalidTemplateException,
              DevelopmentModeException
     {
