@@ -155,7 +155,7 @@ public class TableDecoratorHelperTest
     @Test
     public void containNotNullAttributes_detects_notnull_attributes()
     {
-        @NotNull final List<Attribute<String>> attributes = new ArrayList<>(0);
+        @NotNull final List<Attribute<String>> attributes1 = new ArrayList<>(0);
 
         @NotNull final Attribute<String> childAttribute1 =
             new AttributeIncompleteValueObject(
@@ -209,26 +209,26 @@ public class TableDecoratorHelperTest
                 true, // allowsNull
                 null); // value
 
-        attributes.add(childAttribute1);
-        attributes.add(childAttribute2);
-        attributes.add(childAttribute3);
-        attributes.add(childAttribute4);
+        attributes1.add(childAttribute1);
+        attributes1.add(childAttribute2);
+        attributes1.add(childAttribute3);
+        attributes1.add(childAttribute4);
 
         @NotNull final TableDecoratorHelper instance = TableDecoratorHelper.getInstance();
 
         @NotNull final AbstractTableDecorator table1 =
-            AbstractTableDecoratorTest.setupTableDecorator(attributes, null);
+            AbstractTableDecoratorTest.setupTableDecorator(attributes1, null);
 
         Assert.assertTrue(
             instance.containNotNullAttributes(
                 table1.getAttributes(), table1.getMetadataManager().getMetadataTypeManager()));
 
         @NotNull final AbstractTableDecorator table2 =
-            AbstractTableDecoratorTest.setupTableDecorator(attributes, null);
+            AbstractTableDecoratorTest.setupTableDecorator(attributes1, null);
 
-        attributes.clear();
-        attributes.add(childAttribute1);
-        attributes.add(childAttribute4);
+        attributes1.clear();
+        attributes1.add(childAttribute1);
+        attributes1.add(childAttribute4);
 
         Assert.assertFalse(
             instance.containNotNullAttributes(
