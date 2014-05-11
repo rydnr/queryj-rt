@@ -55,7 +55,8 @@ import org.checkthread.annotations.ThreadSafe;
 /**
  * Fills "header" placeholder in templates.
  * @author <a href="mailto:jose.sanleandro@ventura24.es">Jose San Leandro</a>
- * @since 2012/05/23
+ * @since 3.0
+ * Created: 2012/05/23
  */
 @ThreadSafe
 public class HeaderHandler
