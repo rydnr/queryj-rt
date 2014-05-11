@@ -382,7 +382,7 @@ public class AbstractTableDecoratorTest
                 2, // ordinalPosition
                 6222, // length
                 1, // precision
-                false, // allowsNull
+                true, // allowsNull
                 null); // value
 
         @NotNull final Attribute<String> childAttribute3 =
