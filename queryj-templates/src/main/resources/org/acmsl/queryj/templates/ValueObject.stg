@@ -73,8 +73,7 @@ if(table.containsNotNullAttributes)><
     checkers_import(C=C)><
   else><
     notnull_import(C=C)>
-<
-  endif><
+< endif><
 else><
   if(table.containsNullableAttributes)><
     nullable_import(C=C)><
