@@ -123,6 +123,20 @@ public class JavaRootClassNameVisitor
     }
 
     /**
+     * Visits the parser tree within the <pre>packageDeclaration</pre> rule.
+     * @param context the parse context.
+     * @return the package name.
+     */
+    @NotNull
+    @Override
+    public String visitClassDeclaration(@NotNull final ClassDeclarationContext context)
+    {
+        setRootClass(context.getChild(1).getText());
+
+        return super.visitClassDeclaration(context);
+    }
+
+    /**
      * {@inheritDoc}
      */
     @NotNull
