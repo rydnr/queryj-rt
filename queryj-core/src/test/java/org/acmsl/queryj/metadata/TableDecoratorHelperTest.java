@@ -237,6 +237,6 @@ public class TableDecoratorHelperTest
 
         Assert.assertFalse(
             instance.containNotNullAttributes(
-                table2.getAttributes(), table1.getMetadataManager().getMetadataTypeManager()));
+                table2.getAttributes(), table2.getMetadataManager().getMetadataTypeManager()));
     }
 }
