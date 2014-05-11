@@ -50,7 +50,7 @@ Feature: G_TAX_PRODUCTS code compiles
 #      | ValueObjectImpl | GTaxProductImpl.java |
 #      | BaseValueObject | AbstractGTaxProduct.java |
 #      | ValueObjectFactory | GTaxProductFactory.java |
-#      | ValueObject | GTaxProduct.java |
+      | ValueObject | GTaxProduct.java |
 #      | DAOFactory | OracleGTaxProductDAOFactory.java |
 #      | BaseDAOFactory | GTaxProductDAOFactory.java |
 #      | BaseDAO | GTaxProductDAO.java |
