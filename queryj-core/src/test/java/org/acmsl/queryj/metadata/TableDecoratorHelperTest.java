@@ -225,7 +225,7 @@ public class TableDecoratorHelperTest
 
         attributes.clear();
         attributes.add(childAttribute1);
-        attributes.add(childAttribute3);
+        attributes.add(childAttribute4);
 
         Assert.assertFalse(
             instance.containNotNullAttributes(
