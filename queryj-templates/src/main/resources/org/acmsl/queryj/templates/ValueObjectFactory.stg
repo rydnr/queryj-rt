@@ -74,7 +74,7 @@ sourceImpl(table, C) ::= <<
 import <C.project_package>.<typeInitMap.voSubpackageName>.<table.name.voName>;
 import <C.project_package>.<typeInitMap.voSubpackageName>.impl.<table.name.voName>Impl;
 <notnull_import_maybe_nullable(table=table, C=C)>
-<import_attribute_types(table=table, useHeader=true)>
+<import_attribute_types(table=table, useHeader=true)>//
 <class(table=table, C=C)>
 >>
 
