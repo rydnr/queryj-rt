@@ -344,7 +344,7 @@ public class PerRepositoryTemplatesTest
 
             Assert.assertNotNull("No template found for " + templateName, t_Template);
 
-            File outputDir = null;
+            File t_OutputDir = null;
 
             try
             {
