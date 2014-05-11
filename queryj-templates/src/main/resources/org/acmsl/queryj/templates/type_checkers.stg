@@ -171,3 +171,16 @@ if(table.containsNullableAttributes)><
  nullable_import(useHeader=false, C=C)>
 < endif>
 >>
+
+notnull_import_maybe_nullable(table, C) ::= <<
+<!
+ Imports the checkers depending on the table attributes.
+ @param table the table.
+ @param context the context.
+!>
+<notnull_import(C=C)>
+<
+if(table.containsNullableAttributes)><
+ nullable_import(useHeader=false, C=C)>
+< endif>
+>>
