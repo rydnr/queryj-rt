@@ -209,7 +209,7 @@ toString_method(table, C) ::= <<
 @Override
 public String toString()
 {
-    <notnull(C=C)>final StringBuilder result = new StringBuilder("{ \class\": \"Abstract<table.name.voName>");
+    <notnull(C=C)>final StringBuilder result = new StringBuilder("{ \"class\": \"Abstract<table.name.voName>");
 
     <table.attributes:{ a | <attribute_toString(attribute=a)>}; separator="\n">
 
