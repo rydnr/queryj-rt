@@ -149,7 +149,7 @@ public class <table.name.voName>Factory
           separator=",\n">)
     {
         return
-            new <table.name.voName>ValueObjectImpl(
+            new <table.name.voName>Impl(
                 <table.attributes:{ a | <a.name.uncapitalized>}; separator=",\n">);
     }
 }
