@@ -49,7 +49,7 @@ java_header(description, template, C, prefix="") ::= <<
   generation_timestamps_enabled=C.generation_timestamps_enabled)>
 >>
 
-java_header_impl(year, fileName, description, template, timestamp, version, prefix) ::= <<
+java_header_impl(year, fileName, description, template, timestamp, version, prefix, generation_timestamps_enabled) ::= <<
 <!
   Generates the copyright header.
   @param year the current year.
