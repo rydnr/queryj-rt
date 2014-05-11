@@ -84,7 +84,7 @@ endif>
  */
 import java.io.Serializable;
 <if(table.attributeTypes)>
-<table.attributeTypes:{ t | import <t>;}; separator="\n">
+<  table.attributeTypes:{ t | import <t>;}; separator="\n">
 <endif>
 
 <interface(table=table, C=C)>
