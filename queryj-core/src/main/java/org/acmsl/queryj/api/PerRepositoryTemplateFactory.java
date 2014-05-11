@@ -67,6 +67,7 @@ public interface PerRepositoryTemplateFactory
      * Creates a {@link T} instance with given information.
      * @param repository the repository name.
      * @param tableNames the table names.
+     * @param
      * @param command the {@link QueryJCommand command}.
      * @return the new template.
      */
