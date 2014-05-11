@@ -152,7 +152,7 @@ public class <C.class_name>
     {
         @NotNull final String t_strFileName = retrieveTemplateFileName(repository, context.getMetadataManager());
 
-        t_Context.setFileName(t_strFileName);
+        context.setFileName(t_strFileName);
 
         return new <def.name.noExtension>Template(t_Context);
     }
