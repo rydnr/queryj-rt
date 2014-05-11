@@ -76,8 +76,8 @@ public class TableDecoratorHelper
     implements  Singleton
 {
     public boolean containNullableAttributes(
-        @NotNull final ListDecorator<Attribute<DecoratedString>> attributes, final
-    MetadataTypeManager metadataTypeManager)
+        @NotNull final ListDecorator<Attribute<DecoratedString>> attributes,
+        @NotNull final MetadataTypeManager metadataTypeManager)
     {
         return false;  //To change body of created methods use File | Settings | File Templates.
     }
