@@ -443,8 +443,7 @@ public class TableDecoratorHelper
      * @return {@code true} in such case.
      */
     public boolean containNullableAttributes(
-        @NotNull final ListDecorator<Attribute<DecoratedString>> attributes,
-        @NotNull final MetadataTypeManager metadataTypeManager)
+        @NotNull final ListDecorator<Attribute<DecoratedString>> attributes)
     {
         boolean result = false;
 
