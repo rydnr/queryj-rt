@@ -2074,7 +2074,7 @@ public abstract class AbstractTableDecorator
      * Checks whether some of the attributes are nullable or not.
      * @return {@code true} in such case.
      */
-    protected  boolean getContainsNullableAttributes(@NotNull final ListDecorator<Attribute>)
+    protected  boolean getContainsNullableAttributes(@NotNull final ListDecorator<Attribute<DecoratedString>>)
     {
         return getContainsNullableAttributes(getAttributes());
     }
