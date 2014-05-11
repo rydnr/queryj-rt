@@ -308,6 +308,7 @@ import_attribute_types(table, useHeader=false, header="") ::= <<
  Imports the attribute types.
  @param table the table.
 !>
+<if
 <if(table.attributeTypes)>
 <  table.attributeTypes:{ t | import <t>;}; separator="\n">
 
