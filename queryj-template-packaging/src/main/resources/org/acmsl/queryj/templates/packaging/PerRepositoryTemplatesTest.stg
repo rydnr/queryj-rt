@@ -321,7 +321,7 @@ public class PerRepositoryTemplatesTest
                 retrieveMetadataManager(engine, t_lTables, new ArrayList\<>(0), t_DecoratorFactory);
 
             new QueryJCommandWrapper\<MetadataManager>(t_Command).setSetting(
-                DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, metadataManager);
+                DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, t_MetadataManager);
 
             @Nullable final PerRepositoryTemplateFactory\<? extends PerRepositoryTemplate\<PerRepositoryTemplateContext>, PerRepositoryTemplateContext> t_TemplateFactory =
                 retrieveTemplateFactory(templateName);
