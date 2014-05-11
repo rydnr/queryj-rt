@@ -97,7 +97,8 @@ nullable_import(C, useHeader=true, blankLineAfter=true) ::= <<
 <if(useHeader)>/*
  * Importing JetBrains annotations.
  */
-<endif>import org.jetbrains.annotations.Nullable;
+<endif
+>import org.jetbrains.annotations.Nullable;
 <endif>
 >>
 
