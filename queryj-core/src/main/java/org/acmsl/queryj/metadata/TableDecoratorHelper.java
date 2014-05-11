@@ -446,7 +446,19 @@ public class TableDecoratorHelper
         @NotNull final ListDecorator<Attribute<DecoratedString>> attributes,
         @NotNull final MetadataTypeManager metadataTypeManager)
     {
-        return false;  //To change body of created methods use File | Settings | File Templates.
+        boolean result = false;
+
+        for (@Nullable final Attribute<DecoratedString> attribute : attributes)
+        {
+            if (   (attribute != null)
+                   && (metadataTypeManager.isClob(attribute.getTypeId())))
+            {
+                result = true;
+                break;
+            }
+        }
+
+        return result;
     }
 
 }
