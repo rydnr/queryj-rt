@@ -111,7 +111,8 @@ class(table, C) ::= <<
 public class <table.name.voName>Factory
 {
     /**
-     * Singleton implemented to avoid the double-check locking.
+     * Singleton implemented to avoid the double-checked locking.
+     *
      */
     private static class <table.name.voName>FactorySingletonContainer
     {
