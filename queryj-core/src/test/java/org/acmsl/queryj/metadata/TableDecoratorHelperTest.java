@@ -78,7 +78,7 @@ public class TableDecoratorHelperTest
     {
         @NotNull final TableDecoratorHelper instance = TableDecoratorHelper.getInstance();
 
-        @NotNull final List<Attribute<String>> attributes = new ArrayList<>(4);
+        @NotNull final List<Attribute<String>> attributes1 = new ArrayList<>(4);
 
         @NotNull final Attribute<String> childAttribute1 =
             new AttributeIncompleteValueObject(
@@ -132,19 +132,19 @@ public class TableDecoratorHelperTest
                 true, // allowsNull
                 null); // value
 
-        attributes.add(childAttribute1);
-        attributes.add(childAttribute2);
-        attributes.add(childAttribute3);
-        attributes.add(childAttribute4);
+        attributes1.add(childAttribute1);
+        attributes1.add(childAttribute2);
+        attributes1.add(childAttribute3);
+        attributes1.add(childAttribute4);
 
         @NotNull final AbstractTableDecorator table =
-            AbstractTableDecoratorTest.setupTableDecorator(attributes, null);
+            AbstractTableDecoratorTest.setupTableDecorator(attributes1, null);
 
         Assert.assertTrue(instance.containNullableAttributes(table.getAttributes()));
 
-        attributes.clear();
-        attributes.add(childAttribute1);
-        attributes.add(childAttribute3);
+        attributes1.clear();
+        attributes1.add(childAttribute1);
+        attributes1.add(childAttribute3);
 
         Assert.assertTrue(instance.containNullableAttributes(table.getAttributes()));
     }
