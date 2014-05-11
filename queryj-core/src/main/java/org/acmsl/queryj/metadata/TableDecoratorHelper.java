@@ -75,7 +75,8 @@ import org.checkthread.annotations.ThreadSafe;
 public class TableDecoratorHelper
     implements  Singleton
 {
-    public boolean containNullableAttributes(final ListDecorator<Attribute<DecoratedString>> attributes, final
+    public boolean containNullableAttributes(
+        @NotNull final ListDecorator<Attribute<DecoratedString>> attributes, final
     MetadataTypeManager metadataTypeManager)
     {
         return false;  //To change body of created methods use File | Settings | File Templates.
