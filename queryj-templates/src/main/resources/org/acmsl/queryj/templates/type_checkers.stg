@@ -151,7 +151,7 @@ if(table.containsNotNullAttributes)><
 < endif><
 else><
   if(table.containsNullableAttributes)><
-    nullable_import(C=C)>
+    nullable_import(C=C, useHeader=useHeader)>
 < endif><
 endif>
 >>
