@@ -338,7 +338,7 @@ public class PerRepositoryTemplatesTest
 
             t_Context.setPackageName(t_strPackageName);
 
-            @Nullable final PerRepositoryTemplate\<PerRepositoryTemplateContext> template =
+            @Nullable final PerRepositoryTemplate\<PerRepositoryTemplateContext> t_Template =
                 templateFactory.createTemplate(
                     repository, t_lTableNames, t_Context, t_Command);
 
