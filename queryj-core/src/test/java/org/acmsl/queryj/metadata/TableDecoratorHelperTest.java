@@ -148,4 +148,83 @@ public class TableDecoratorHelperTest
 
         Assert.assertTrue(instance.containNullableAttributes(table.getAttributes()));
     }
+
+    /**
+     * Checks containNullableAttributes() detects nullable attributes.
+     */
+    @Test
+    public void containNullableAttributes_detects_nullable_attributes()
+    {
+        @NotNull final List<Attribute<String>> attributes = new ArrayList<>(0);
+
+        @NotNull final Attribute<String> childAttribute1 =
+            new AttributeIncompleteValueObject(
+                "myChildId1",
+                Types.BIGINT,
+                "long",
+                "id1",
+                "child comment 1",
+                1, // ordinalPosition
+                6222, // length
+                1, // precision
+                false, // allowsNull
+                null); // value
+
+        @NotNull final Attribute<String> childAttribute2 =
+            new AttributeIncompleteValueObject(
+                "time2",
+                Types.TIMESTAMP,
+                "Timestamp",
+                "id2",
+                "child comment 2",
+                2, // ordinalPosition
+                6222, // length
+                1, // precision
+                true, // allowsNull
+                null); // value
+
+        @NotNull final Attribute<String> childAttribute3 =
+            new AttributeIncompleteValueObject(
+                "date3",
+                Types.DATE,
+                "Date",
+                "name",
+                "child comment 3",
+                3, // ordinalPosition
+                6222, // length
+                1, // precision
+                false, // allowsNull
+                null); // value
+
+        @NotNull final Attribute<String> childAttribute4 =
+            new AttributeIncompleteValueObject(
+                "date4",
+                Types.DATE,
+                "Date",
+                "name",
+                "child comment 4",
+                3, // ordinalPosition
+                6222, // length
+                1, // precision
+                true, // allowsNull
+                null); // value
+
+        attributes.add(childAttribute1);
+        attributes.add(childAttribute2);
+        attributes.add(childAttribute3);
+        attributes.add(childAttribute4);
+
+        @NotNull final AbstractTableDecorator table =
+            AbstractTableDecoratorTest.setupTableDecorator(attributes, null);
+
+        @NotNull final TableDecoratorHelper instance = TableDecoratorHelper.getInstance();
+
+        Assert.assertTrue(instance.containNullableAttributes(table.getAttributes()));
+
+        attributes.clear();
+        attributes.add(childAttribute1);
+        attributes.add(childAttribute3);
+
+        Assert.assertTrue(instance.containNullableAttributes(table.getAttributes()));
+    }
 }
