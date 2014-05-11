@@ -173,7 +173,8 @@ public class <C.class_name>
     }
 
     /**
-     * Retrieves the package
+     * Retrieves the package for the template.
+     * @param
      */
     @NotNull
     protected String retrievePackage(
