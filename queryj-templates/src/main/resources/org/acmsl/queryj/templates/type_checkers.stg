@@ -138,7 +138,7 @@ import org.checkthread.annotations.ThreadSafe;
 
 checkers_import_maybe(table, C) ::= <<
 <!
- Imports the checker
+ Imports the checkers depending on the table attributes.
 if(table.containsNotNullAttributes)><
   if(table.containsNullableAttributes)><
     checkers_import(C=C)>
