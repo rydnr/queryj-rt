@@ -136,7 +136,7 @@ checkthread_import(C) ::= <<
 import org.checkthread.annotations.ThreadSafe;
 >>
 
-checkers_import_maybe(table, C) ::= <<
+checkers_import_maybe(table, C, useHeader=true) ::= <<
 <!
  Imports the checkers depending on the table attributes.
  @param table the table.
