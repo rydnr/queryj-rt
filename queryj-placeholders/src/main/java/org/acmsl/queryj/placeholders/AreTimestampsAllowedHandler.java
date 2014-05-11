@@ -51,7 +51,8 @@ import org.checkthread.annotations.ThreadSafe;
 /**
  * Is able to resolve "timestamps?" placeholders in templates.
  * @author <a href="mailto:chous@acm-sl.org">chous</a>
- * @since 2013/03/18
+ * @since 3.0
+ * Created: 2013/03/18
  */
 @ThreadSafe
 public class AreTimestampsAllowedHandler
