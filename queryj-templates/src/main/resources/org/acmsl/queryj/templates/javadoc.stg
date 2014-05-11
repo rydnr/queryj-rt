@@ -59,6 +59,7 @@ java_header_impl(year, fileName, description, template, timestamp, version, pref
   @param timestamp the timestamp.
   @param version the version.
   @param prefix the prefix.
+  @param generation_timestamps_enabled whether the timestamps are alloved.
 !>
 <prefix>                        QueryJ <version>
 <prefix>
