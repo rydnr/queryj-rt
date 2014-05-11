@@ -359,9 +359,9 @@ public class PerRepositoryTemplatesTest
                     folder.append(pkg);
                 }
 
-                outputDir = new File(rootFolder.getRoot().getAbsolutePath().concat(folder.toString()));
+                t_OutputDir = new File(rootFolder.getRoot().getAbsolutePath().concat(folder.toString()));
 
-                outputDir.mkdirs();
+                t_OutputDir.mkdirs();
             }
             catch (@NotNull final IOException ioException)
             {
