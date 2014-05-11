@@ -435,4 +435,12 @@ public class TableDecoratorHelper
 
         return result;
     }
+
+    public boolean containNullableAttributes(
+        @NotNull final ListDecorator<Attribute<DecoratedString>> attributes,
+        @NotNull final MetadataTypeManager metadataTypeManager)
+    {
+        return false;  //To change body of created methods use File | Settings | File Templates.
+    }
+
 }
