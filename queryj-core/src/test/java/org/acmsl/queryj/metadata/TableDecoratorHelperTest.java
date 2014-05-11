@@ -138,6 +138,7 @@ public class TableDecoratorHelperTest
         Assert.assertTrue(
             instance.containNullableAttributes(
                 table.getAttributes(),
+                table.getMetadataManager().getMetadataTypeManager())
 
             ));
 
