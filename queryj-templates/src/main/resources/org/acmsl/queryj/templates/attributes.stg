@@ -312,7 +312,7 @@ import_attribute_types(table, useHeader=false, header="") ::= <<
 /*
  * Importing JDK classes.
  */
-<endif
+<endif>
 <if(table.attributeTypes)>
 <  table.attributeTypes:{ t | import <t>;}; separator="\n">
 
