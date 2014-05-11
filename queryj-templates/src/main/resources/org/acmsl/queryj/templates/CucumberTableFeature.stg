@@ -94,7 +94,7 @@ Feature: <table.name> code compiles
       | template | output |
       | ResultSetExtractor     | GTaxProductResultSetExtractor.java |
       | ValueObject            | GTaxProduct.java                   |
-      | BaseValueObject        | AbstractGTaxProduct.java           |
+      | BaseValueObject        | Abstract<table.name.singular.camelCase>GTaxProduct.java           |
       | ValueObjectImpl        | <table.name.singular.camelCase>GTaxProductImpl.java               |
       | ValueObjectFactory     | <table.name.singular.camelCase>GTaxProductFactory.java            |
 #      | DAOFactoryHelper | <table.name.singular.camelCase>GTaxProductDAOFactoryHelper.java |
