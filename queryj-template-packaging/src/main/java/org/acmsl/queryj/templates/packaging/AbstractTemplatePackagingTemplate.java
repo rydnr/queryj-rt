@@ -90,7 +90,7 @@ public abstract class AbstractTemplatePackagingTemplate<C extends TemplatePackag
     /**
      * Retrieves the header.
      * @param context the template context.
-     * @return "".
+     * @return {@code ""}.
      */
     @Nullable
     @Override
