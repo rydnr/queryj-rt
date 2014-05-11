@@ -472,7 +472,7 @@ public class TableDecoratorHelper
         for (@Nullable final Attribute<DecoratedString> attribute : attributes)
         {
             if (   (attribute != null)
-                && (typeManager.isPrimitive()attribute)
+                && (typeManager.isPrimitive(attribute))
                 && (!attribute.isNullable()))
             {
                 result = true;
