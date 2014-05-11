@@ -75,7 +75,8 @@ sourceImpl(table, C) ::= <<
 <endif>
 <else>
 <if(table.containsNullableAttributes)>
-<nullable
+<nullable_import(C=C)>
+<endif>
 /*
  * Importing JDK classes.
  */
