@@ -89,7 +89,8 @@ nullable_import(C, useHeader=true, blank_line_after=true) ::= <<
 <!
  Generates the import group for NotNull/Nullable annotations.
  @param C the context.
- @param useHe
+ @param useHeader whether to include the import header.
+ @param blank_line_after whether
 !>
 <if(C.notnull_annotations_enabled)>
 
