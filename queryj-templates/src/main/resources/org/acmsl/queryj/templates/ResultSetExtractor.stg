@@ -161,7 +161,7 @@ defaultExtractor(table, repository, C) ::= <<
 /**
  * Extracts {@link <table.name.voName>} information from given result set.
  * @param resultSet the result set.
- * @param listener the {@link <repository.voName>DAOListener} instance.
+ * @param listener the {@link DAOListener} instance.
  * @return the {@code <table.name.voName>} or
  * {@code null} if the operation returned no data.
  * @throws SQLException intercepted by \<i>Spring\</i\>.
