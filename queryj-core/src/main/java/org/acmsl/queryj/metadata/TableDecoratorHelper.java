@@ -436,6 +436,12 @@ public class TableDecoratorHelper
         return result;
     }
 
+    /**
+     * Checks whether any attribute is a clob.
+     * @param attributes the {@link Attribute}s.
+     * @param metadataTypeManager the {@link MetadataTypeManager} instance.
+     * @return {@code true} in such case.
+     */
     public boolean containNullableAttributes(
         @NotNull final ListDecorator<Attribute<DecoratedString>> attributes,
         @NotNull final MetadataTypeManager metadataTypeManager)
