@@ -62,7 +62,6 @@ import org.jetbrains.annotations.Nullable;
 @ThreadSafe
 public class HeaderHandler
     extends AbstractTemplateContextFillHandler<QueryJTemplateContext, DecoratedString>
-    implements NonRelevantFillHandler
 {
     /**
      * The serial version id.
