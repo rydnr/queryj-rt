@@ -368,7 +368,7 @@ public class PerRepositoryTemplatesTest
                 Assert.fail(ioException.getMessage());
             }
 
-            if (!outputDir.exists())
+            if (!t_OutputDir.exists())
             {
                 Assert.fail("Cannot create folder: " + t_OutputDir.getAbsolutePath());
             }
