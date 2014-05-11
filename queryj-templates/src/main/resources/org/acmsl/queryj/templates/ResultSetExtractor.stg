@@ -195,7 +195,7 @@ protected <table.name.voName> extractData(
 protected <table.name.voName> extractData(
     <notnull(C=C)>final ResultSet resultSet,
     <nullable(C=C)>final DAOListener listener,
-    <notnull(C=C)>final <table.name.voName>ValueObjectFactory factory)
+    <notnull(C=C)>final <table.name.voName>Factory factory)
   throws  SQLException,
           DataAccessException
 {
