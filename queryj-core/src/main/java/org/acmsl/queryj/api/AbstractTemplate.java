@@ -698,14 +698,6 @@ public abstract class AbstractTemplate<C extends TemplateContext>
     }
 
     /**
-     * Retrieves the header.
-     * @param context the template context.
-     * @return such information.
-     */
-    @Nullable
-    protected abstract String getHeader(@NotNull final C context);
-
-    /**
      * Generates the source code.
      * @return such output.
      */
