@@ -134,7 +134,7 @@ public class JavaRootClassNameVisitor
     {
         setRootClass(context.getChild(1).getText());
 
-        return super.visitClassDeclaration(context);
+        return super.visitNormalInterfaceDeclaration(context);
     }
 
     /**
