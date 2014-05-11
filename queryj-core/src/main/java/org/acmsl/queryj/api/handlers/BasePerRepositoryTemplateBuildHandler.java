@@ -183,7 +183,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
      * Retrieves the package name.
      * @param repository the repository.
      * @param engine the engine.
-     * @param projectPackage the project package.
+     * @param parameters the parameters.
      * @return the package name.
      */
     @NotNull
