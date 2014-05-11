@@ -166,7 +166,7 @@ public class <C.class_name>
 
         t_Context.setPackageName(
             retrievePackage(
-                repository, tableNames, retrieveMetadataManager(parameters).getEngine(), parameters));
+                repository, retrieveMetadataManager(parameters).getEngine(), parameters));
 
         // TODO: check whether generation is allowed or not
         return templateFactory.createTemplate(repository, tableNames, t_Context, parameters);
