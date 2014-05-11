@@ -71,9 +71,9 @@ sourceImpl(table, C) ::= <<
 if(table.attributeTypes)><
   if(table.containsNullableAttributes)><
     checkers_import(C=C)><
-  else>
-<notnull_import(C=C)>
-<endif>
+  else><
+    notnull_import(C=C)><
+  endif>
 <else>
 <if(table.containsNullableAttributes)>
 <nullable_import(C=C)>
