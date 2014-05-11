@@ -2068,9 +2068,7 @@ public abstract class AbstractTableDecorator
      */
     public boolean getContainsNullableAttributes()
     {
-        return
-            containNullableAttributes(
-                getAttributes(), TableDecoratorHelper.getInstance());
+        return containNullableAttributes(getAttributes(), TableDecoratorHelper.getInstance());
     }
 
     /**
