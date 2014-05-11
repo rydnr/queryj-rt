@@ -2083,7 +2083,7 @@ public abstract class AbstractTableDecorator
     }
 
     /**
-     * Checks whether there're some
+     * Checks whether som
      * @return
      */
     public boolean getContainsNullableAttributes()
