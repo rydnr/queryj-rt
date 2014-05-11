@@ -176,7 +176,6 @@ public abstract class BasePerRepositoryTemplateBuildHandler
         @NotNull final TF templateFactory,
         @NotNull final String repository,
         @NotNull final List<String> tableNames,
-        @NotNull final C context,
         @NotNull final QueryJCommand parameters)
       throws  QueryJBuildException
     {
