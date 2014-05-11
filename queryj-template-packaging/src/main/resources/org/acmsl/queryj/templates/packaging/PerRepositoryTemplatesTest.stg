@@ -342,7 +342,7 @@ public class PerRepositoryTemplatesTest
                 templateFactory.createTemplate(
                     repository, t_lTableNames, t_Context, t_Command);
 
-            Assert.assertNotNull("No template found for " + templateName, template);
+            Assert.assertNotNull("No template found for " + templateName, t_Template);
 
             File outputDir = null;
 
