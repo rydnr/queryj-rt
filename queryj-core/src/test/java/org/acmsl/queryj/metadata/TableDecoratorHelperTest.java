@@ -74,7 +74,7 @@ public class TableDecoratorHelperTest
      * Checks getContainsNullableAttributes() detects nullable attributes.
      */
     @Test
-    public void containsNullableAttributes_detects_nullable_attributes()
+    public void containNullableAttributes_detects_nullable_attributes()
     {
         @NotNull final List<Attribute<String>> attributes = new ArrayList<>(0);
 
