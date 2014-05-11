@@ -141,7 +141,7 @@ public class <table.name.voName>ResultSetExtractor
      * Creates a new instance.
      * @param listener the {@link DAOListener} instance.
      */
-    public <table.name.voName>ResultSetExtractor(<nullable(C=C)>final DAOListener listener)
+    public <table.name.voName>ResultSetExtractor(<notnull(C=C)>final String sql, <nullable(C=C)>final DAOListener listener)
     {
         super(listener);
     }
