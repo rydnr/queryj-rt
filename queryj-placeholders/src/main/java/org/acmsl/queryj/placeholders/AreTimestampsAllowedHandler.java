@@ -53,7 +53,6 @@ import org.checkthread.annotations.ThreadSafe;
  * @author <a href="mailto:chous@acm-sl.org">chous</a>
  * @since 2013/03/18
  */
-@SuppressWarnings("unused")
 @ThreadSafe
 public class AreTimestampsAllowedHandler
     extends AbstractTemplateContextFillHandler<QueryJTemplateContext, Boolean>
