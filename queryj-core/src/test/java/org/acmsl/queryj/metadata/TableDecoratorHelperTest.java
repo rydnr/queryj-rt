@@ -130,15 +130,15 @@ public class TableDecoratorHelperTest
         attributes.add(childAttribute3);
         attributes.add(childAttribute4);
 
-        @NotNull final TableDecoratorHelper instance = TableDecoratorHelper.getInstance();
+        @NotNull final TableDecoratorHelper instance = setupTableDecorator(attributes, null);
 
-        Assert.assertTrue(instance.containNullableAttributes());
+        Assert.assertTrue(instance.getContainsNullableAttributes());
 
         attributes.clear();
         attributes.add(childAttribute1);
         attributes.add(childAttribute3);
 
-        Assert.assertFalse(instance.containNullableAttributes());
+        Assert.assertFalse(instance.getContainsNullableAttributes());
     }
 
 }
