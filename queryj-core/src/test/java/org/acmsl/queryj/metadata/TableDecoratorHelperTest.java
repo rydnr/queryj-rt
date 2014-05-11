@@ -140,8 +140,6 @@ public class TableDecoratorHelperTest
                 table.getAttributes(),
                 table.getMetadataManager().getMetadataTypeManager()));
 
-            ));
-
         attributes.clear();
         attributes.add(childAttribute1);
         attributes.add(childAttribute3);
