@@ -150,7 +150,7 @@ public class TableDecoratorHelperTest
         attributes2.add(childAttribute1);
         attributes2.add(childAttribute3);
 
-        Assert.assertTrue(instance.containNullableAttributes(table1.getAttributes()));
+        Assert.assertTrue(instance.containNullableAttributes(table2.getAttributes()));
     }
 
     /**
