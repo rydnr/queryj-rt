@@ -754,7 +754,6 @@ public abstract class AbstractTemplate<C extends TemplateContext>
      */
     @Nullable
     protected String generateOutput(
-        @SuppressWarnings("unused") @Nullable final String header,
         @NotNull final C context,
         final boolean relevantOnly)
       throws InvalidTemplateException,
