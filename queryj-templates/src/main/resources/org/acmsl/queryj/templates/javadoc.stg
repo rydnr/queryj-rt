@@ -45,7 +45,8 @@ java_header(description, template, C, prefix="") ::= <<
   template=template,
   timestamp=C.timestamp,
   version=C.version,
-  prefix=prefix, generation_timestamps_enabled)>
+  prefix=prefix,
+  generation_timestamps_enabled)>
 >>
 
 java_header_impl(year, fileName, description, template, timestamp, version, prefix) ::= <<
