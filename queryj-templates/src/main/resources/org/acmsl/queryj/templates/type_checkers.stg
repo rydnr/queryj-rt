@@ -145,7 +145,7 @@ checkers_import_maybe(table, C, useHeader=true) ::= <<
 <
 if(table.containsNotNullAttributes)><
   if(table.containsNullableAttributes)><
-    checkers_import(C=C, useHeader)><
+    checkers_import(C=C, useHeader=useHeader)><
   else><
     notnull_import(C=C)>
 < endif><
