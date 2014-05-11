@@ -159,8 +159,8 @@ public class <C.class_name>
         @NotNull final QueryJCommand parameters)
       throws  QueryJBuildException
     {
-        @NotNull final <def.type.capitalized><def.name.noExtension>TemplateContext t_Context =
-            new <def.name.noExtension>TemplateContext(repository, tableNames, parameters);
+        @NotNull final <def.type.capitalized>TemplateContext t_Context =
+            new TemplateContext(repository, tableNames, parameters);
 
         t_Context.setDecoratorFactory(CachingDecoratorFactory.getInstance());
 
