@@ -273,7 +273,6 @@ public class AbstractTableDecoratorTest
 
     /**
      * Checks getAttributeTypes() does not return duplicates.
-     *
      */
     @Test
     public void getAttributeTypes_does_not_contain_duplicates()
