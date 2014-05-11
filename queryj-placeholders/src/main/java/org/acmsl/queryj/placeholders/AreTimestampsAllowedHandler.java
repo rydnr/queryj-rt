@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz (chous)
  *
- * Description: Is able to resolve "timestamps?" placeholders in
+ * Description: Is able to resolve "generation_timestamps_enabled" placeholders in
  *              templates.
  *
  */
