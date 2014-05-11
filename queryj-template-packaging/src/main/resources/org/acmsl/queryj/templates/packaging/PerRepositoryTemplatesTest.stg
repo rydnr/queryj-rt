@@ -359,7 +359,7 @@ public class PerRepositoryTemplatesTest
                     t_sbFolder.append(t_strPkg);
                 }
 
-                t_OutputDir = new File(rootFolder.getRoot().getAbsolutePath().concat(t_sbFfolder.toString()));
+                t_OutputDir = new File(rootFolder.getRoot().getAbsolutePath().concat(t_sbFolder.toString()));
 
                 t_OutputDir.mkdirs();
             }
