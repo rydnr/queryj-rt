@@ -155,3 +155,23 @@ else><
 < endif><
 endif>
 >>
+
+checkers_import_maybe(table, C) ::= <<
+<!
+ Imports the checkers depending on the table attributes.
+ @param table the table.
+ @param context the context.
+!>
+<
+if(table.containsNotNullAttributes)><
+  if(table.containsNullableAttributes)><
+    checkers_import(C=C)><
+  else><
+    notnull_import(C=C)>
+< endif><
+else><
+  if(table.containsNullableAttributes)><
+    nullable_import(C=C)>
+< endif><
+endif>
+>>
