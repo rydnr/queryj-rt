@@ -2066,7 +2066,7 @@ public abstract class AbstractTableDecorator
      */
     public boolean getContainsNullableAttributes()
     {
-        return getContainsNullableAttributes();
+        return getContainsNullableAttributes(getAttributes());
     }
 
     /**
