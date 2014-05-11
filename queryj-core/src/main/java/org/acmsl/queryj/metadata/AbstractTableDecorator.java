@@ -2073,6 +2073,19 @@ public abstract class AbstractTableDecorator
     }
 
     /**
+     * Checks whether some of the given attributes are nullable or not.
+     * @param attributes the {@link Attribute}s.
+     * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
+     * @return {@code true} in such case.
+     */
+    protected boolean containNullableAttributes(
+        @NotNull final ListDecorator<Attribute<DecoratedString>> attributes,
+        @NotNull final TableDecoratorHelper tableDecoratorHelper)
+    {
+        return tableDecoratorHelper.containNullableAttributes(attributes);
+    }
+
+    /**
      * Checks whether some of the attributes are nullable or not.
      * @return {@code true} in such case.
      */
