@@ -356,7 +356,7 @@ public class PerRepositoryTemplatesTest
                 for (@NotNull final String t_strPkg : packages)
                 {
                     folder.append(File.separator);
-                    folder.append(pkg);
+                    folder.append(t_strPkg);
                 }
 
                 t_OutputDir = new File(rootFolder.getRoot().getAbsolutePath().concat(folder.toString()));
