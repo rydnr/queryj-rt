@@ -103,7 +103,7 @@ Feature: <table.name> code compiles
 #      | BaseDAOFactory | GTaxProductDAOFactory.java |
 #      | BaseDAO | GTaxProductDAO.java |
 #      | BaseResultSetExtractor | GTaxProductResultSetExtractor.java |
-      | DAO | <engine.name.capitalized><table.name.singular.camelCase>DAO.java |
+#      | DAO | <engine.name.capitalized><table.name.singular.camelCase>DAO.java |
 >>
 
 attribute(attr, table, pk) ::= <<
