@@ -309,12 +309,12 @@ import_attribute_types(table, useHeader=true) ::= <<
  @param table the table.
  @param useHeader whether to use the import header or not.
 !>
+if(table.attributeTypes)>
 <if(useHeader)
 >/*
  * Importing JDK classes.
  */
 <endif><
-if(table.attributeTypes)>
 <  table.attributeTypes:{ t | import <t>;}; separator="\n"><
 else>
 <endif>
