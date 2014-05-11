@@ -135,7 +135,7 @@ public class TableDecoratorHelperTest
 
         @NotNull final TableDecoratorHelper instance = TableDecoratorHelper.getInstance();
 
-        Assert.assertTrue(instance.getContainsNullableAttributes());
+        Assert.assertTrue(instance.containNullableAttributes());
 
         attributes.clear();
         attributes.add(childAttribute1);
