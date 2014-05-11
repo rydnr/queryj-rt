@@ -71,7 +71,7 @@ import java.util.List;
 public class TableDecoratorHelperTest
 {
     /**
-     * Checks getContainsNullableAttributes() detects nullable attributes.
+     * Checks containNullableAttributes() detects nullable attributes.
      */
     @Test
     public void containNullableAttributes_detects_nullable_attributes()
