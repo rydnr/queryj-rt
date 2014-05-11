@@ -180,7 +180,7 @@ public class <C.class_name>
     protected String retrievePackage(
         @NotNull final String repository,
         @NotNull final Engine\<String> engine,
-        @NotNull final String projectPackage)
+        @NotNull final QueryJCommand parameters)
     {
         return buildPackageName(repository, engine, projectPackage);
     }
