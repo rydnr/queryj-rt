@@ -353,7 +353,7 @@ public class PerRepositoryTemplatesTest
                 @NotNull final String[] t_astrPackages = t_strPackageName.split("\\\.");
                 @NotNull final StringBuilder t_sbFolder = new StringBuilder();
 
-                for (@NotNull final String pkg : packages)
+                for (@NotNull final String t_strPkg : packages)
                 {
                     folder.append(File.separator);
                     folder.append(pkg);
