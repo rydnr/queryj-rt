@@ -148,7 +148,6 @@ public class <table.name.voName>ResultSetExtractor
     }
 
     <defaultExtractor(table=table, repository=repository, C=C)>
-
 }
 >>
 
