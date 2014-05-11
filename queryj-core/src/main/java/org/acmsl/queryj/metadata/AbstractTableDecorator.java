@@ -2109,7 +2109,7 @@ public abstract class AbstractTableDecorator
         @NotNull final MetadataTypeManager metadataTypeManager,
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
-        return tableDecoratorHelper.containNotNullAttributes(attributes);
+        return tableDecoratorHelper.containNotNullAttributes(attributes, metadataTypeManager);
     }
 
     /**
