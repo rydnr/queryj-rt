@@ -2074,7 +2074,7 @@ public abstract class AbstractTableDecorator
     }
 
     /**
-     * Checks whether some of the attributes are nullable or not.
+     * Checks whether some of the given attributes are nullable or not.
      * @param attributes the {@link Attribute}s.
      * @param metadataTypeManager the {@link MetadataTypeManager} instance.
      * @return {@code true} in such case.
