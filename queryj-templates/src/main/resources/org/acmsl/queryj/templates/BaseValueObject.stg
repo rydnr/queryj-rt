@@ -78,9 +78,6 @@ import <C.project_package>.<typeInitMap.voSubpackageName>.<table.name.voName>;
  */
 import java.io.Serializable;
 <import_attribute_types(table=table, useHeader=false)>
-<if(table.attributeTypes)>
-<table.attributeTypes:{ t | import <t>;}; separator="\n">
-<endif>
 
 <class(table=table, C=C)>
 >>
