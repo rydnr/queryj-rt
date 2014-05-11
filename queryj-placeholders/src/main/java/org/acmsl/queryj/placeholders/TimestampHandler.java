@@ -84,7 +84,6 @@ public class TimestampHandler
 
     /**
      * Retrieves the timestamp.
-     *
      * @return the dynamic value.
      */
     @Override
