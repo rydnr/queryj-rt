@@ -133,6 +133,6 @@ public class JavaRootClassNameVisitor
             "{ \"class\": \"JavaRootClassNameVisitor\""
             + ", \"rootClass\": \"" + m__strRootClass + '\''
             + ", \"package\": \"" + JavaRootClassNameVisitor.class.getPackage().getName()
-    }';
+            + "\" }";
     }
 }
