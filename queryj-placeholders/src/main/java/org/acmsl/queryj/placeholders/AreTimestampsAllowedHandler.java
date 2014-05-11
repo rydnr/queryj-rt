@@ -49,7 +49,7 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
- * Is able to resolve "timestamps?" placeholders in templates.
+ * Is able to resolve "generation_timestamps_enabled" placeholders in templates.
  * @author <a href="mailto:chous@acm-sl.org">chous</a>
  * @since 3.0
  * Created: 2013/03/18
