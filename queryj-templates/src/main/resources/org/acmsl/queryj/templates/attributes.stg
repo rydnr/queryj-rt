@@ -307,6 +307,7 @@ import_attribute_types(table, useHeader=false) ::= <<
 <!
  Imports the attribute types.
  @param table the table.
+ @param useHeader whether to use the import header or not.
 !>
 <if(useHeader)>
 /*
