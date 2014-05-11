@@ -121,6 +121,10 @@ public class JavaRootClassNameVisitor
         return super.visitClassDeclaration(context);
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
     @Override
     public String toString()
     {
