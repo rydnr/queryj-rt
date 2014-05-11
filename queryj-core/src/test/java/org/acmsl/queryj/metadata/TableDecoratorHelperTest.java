@@ -70,7 +70,6 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public class TableDecoratorHelperTest
 {
-
     /**
      * Checks getContainsNullableAttributes() detects nullable attributes.
      */
