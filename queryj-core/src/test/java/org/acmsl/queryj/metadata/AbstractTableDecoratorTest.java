@@ -352,7 +352,7 @@ public class AbstractTableDecoratorTest
 
 
     /**
-     * Checks getContainsNullableAttributes() does not return duplicates.
+     * Checks getContainsNullableAttributes() detects nullable attributes.
      */
     @Test
     public void getContainsNullableAttributes_detects_nullable_attributes()
