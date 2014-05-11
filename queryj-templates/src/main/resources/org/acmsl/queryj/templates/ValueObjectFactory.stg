@@ -72,7 +72,8 @@ sourceImpl(table, C) ::= <<
  * Importing <C.repository> classes.
  */
 import <C.project_package>.vo.<table.name.voName>;
-import <C.project_package>.impl.<table.name.voName>;
+import <C.project_package>.vo.impl.<table.name.voName>Impl;
+
 <notnull_import(C=C)>
 <import_attribute_types(table=table, useHeader=true)>
 
