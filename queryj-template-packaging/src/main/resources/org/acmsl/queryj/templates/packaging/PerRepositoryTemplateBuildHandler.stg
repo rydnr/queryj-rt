@@ -175,6 +175,7 @@ public class <C.class_name>
     /**
      * {@inheritDoc}
      */
+    @Override
     @NotNull
     protected String retrievePackage(
         @NotNull final String repository,
