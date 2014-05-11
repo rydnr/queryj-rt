@@ -439,7 +439,6 @@ public class TableDecoratorHelper
     /**
      * Checks whether any attribute is nullable.
      * @param attributes the {@link Attribute}s.
-     * @param metadataTypeManager the {@link MetadataTypeManager} instance.
      * @return {@code true} in such case.
      */
     public boolean containNullableAttributes(
