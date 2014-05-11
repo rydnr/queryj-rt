@@ -215,7 +215,7 @@ protected <table.name.voName> extractData(
 
         if  (listener != null)
         {
-            daoListener.resultSetClosed(this);
+            listener.resultSetClosed(this);
         }
     }
     else
