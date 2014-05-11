@@ -68,10 +68,10 @@ sourceImpl(def, C) ::= <<
 import org.acmsl.queryj.api.<def.type.capitalized>TemplateContext;
 import org.acmsl.queryj.api.<def.type.capitalized>TemplateFactory;
 import org.acmsl.queryj.Literals;
-import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.metadata.DecoratedString;
 import org.acmsl.queryj.metadata.engines.EngineDecorator;
 import org.acmsl.queryj.metadata.MetadataManager;
+import org.acmsl.queryj.QueryJCommand;
 
 /*
  * Importing some ACM-SL Java Commons classes.
