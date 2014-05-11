@@ -66,7 +66,7 @@ sourceImpl(repository, tables, C) ::= <<
   template="org/acmsl/queryj/templates/ConfigurationProperties.stg",
   C=C,
   prefix="#")>
-  <endif>
+<endif>
 
 <if(C.repository_dao)>
 <  repository_dao_factory_property(
