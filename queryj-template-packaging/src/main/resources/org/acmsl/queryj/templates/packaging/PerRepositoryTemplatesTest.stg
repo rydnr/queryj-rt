@@ -323,7 +323,7 @@ public class PerRepositoryTemplatesTest
             new QueryJCommandWrapper\<MetadataManager>(t_Command).setSetting(
                 DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, metadataManager);
 
-            @Nullable final PerRepositoryTemplateFactory\<? extends PerRepositoryTemplate\<PerRepositoryTemplateContext>, PerRepositoryTemplateContext> templateFactory =
+            @Nullable final PerRepositoryTemplateFactory\<? extends PerRepositoryTemplate\<PerRepositoryTemplateContext>, PerRepositoryTemplateContext> t_TemplateFactory =
                 retrieveTemplateFactory(templateName);
 
             Assert.assertNotNull("No template factory found for " + templateName, templateFactory);
