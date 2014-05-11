@@ -95,7 +95,7 @@ Feature: <table.name> code compiles
       | ResultSetExtractor     | <table.name.singular.camelCase>ResultSetExtractor.java |
       | ValueObject            | <table.name.singular.camelCase>.java                   |
       | BaseValueObject        | Abstract<table.name.singular.camelCase>.java           |
-      | ValueObjectImpl        | <table.name.singular.camelCase>GTaxProductImpl.java               |
+      | ValueObjectImpl        | <table.name.singular.camelCase>Impl.java               |
       | ValueObjectFactory     | <table.name.singular.camelCase>GTaxProductFactory.java            |
 #      | DAOFactoryHelper | <table.name.singular.camelCase>GTaxProductDAOFactoryHelper.java |
 #      | ValueObjectFactory | <table.name.singular.camelCase>GTaxProductFactory.java |
