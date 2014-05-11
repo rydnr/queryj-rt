@@ -56,5 +56,6 @@ Feature: G_TAX_PRODUCTS code compiles
 #      | DAOFactory | OracleGTaxProductDAOFactory.java |
 #      | BaseDAOFactory | GTaxProductDAOFactory.java |
 #      | BaseDAO | GTaxProductDAO.java |
+#      | BaseResultSetExtractor | GTaxProductResultSetExtractor.java |
 #      | ResultSetExtractor| GTaxProductResultSetExtractor.java |
 #      | DAO | OracleGTaxProductDAO.java |
