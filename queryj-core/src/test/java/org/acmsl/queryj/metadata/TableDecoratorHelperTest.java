@@ -214,14 +214,14 @@ public class TableDecoratorHelperTest
         attributes.add(childAttribute3);
         attributes.add(childAttribute4);
 
-        @NotNull final AbstractTableDecorator table =
+        @NotNull final AbstractTableDecorator table1 =
             AbstractTableDecoratorTest.setupTableDecorator(attributes, null);
 
         @NotNull final TableDecoratorHelper instance = TableDecoratorHelper.getInstance();
 
         Assert.assertTrue(
             instance.containNotNullAttributes(
-                table.getAttributes(), table.getMetadataManager().getMetadataTypeManager()));
+                table1.getAttributes(), table1.getMetadataManager().getMetadataTypeManager()));
 
         attributes.clear();
         attributes.add(childAttribute1);
@@ -229,6 +229,6 @@ public class TableDecoratorHelperTest
 
         Assert.assertFalse(
             instance.containNotNullAttributes(
-                table.getAttributes(), table.getMetadataManager().getMetadataTypeManager()));
+                table1.getAttributes(), table1.getMetadataManager().getMetadataTypeManager()));
     }
 }
