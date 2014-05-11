@@ -70,8 +70,8 @@ sourceImpl(table, C) ::= <<
 <
 if(table.containsNotNullAttributes)><
   if(table.containsNullableAttributes)><
-    checkers_import(C=C)><
-  else><
+    checkers_import(C=C)>
+< else><
     notnull_import(C=C)>
 < endif><
 else><
