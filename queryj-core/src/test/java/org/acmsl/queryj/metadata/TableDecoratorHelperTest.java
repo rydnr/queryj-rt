@@ -220,8 +220,6 @@ public class TableDecoratorHelperTest
         attributes1.add(childAttribute3);
         attributes1.add(childAttribute4);
 
-        @NotNull final TableDecoratorHelper instance = TableDecoratorHelper.getInstance();
-
         @NotNull final AbstractTableDecorator table1 =
             AbstractTableDecoratorTest.setupTableDecorator(attributes1, null);
 
