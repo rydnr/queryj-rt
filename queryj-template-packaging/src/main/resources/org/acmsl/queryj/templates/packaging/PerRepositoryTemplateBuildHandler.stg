@@ -182,7 +182,7 @@ public class <C.class_name>
         @NotNull final Engine\<String> engine,
         @NotNull final QueryJCommand parameters)
     {
-        return buildPackageName(repository, engine, projectPackage);
+        return buildPackageName(repository, engine, retrieveProjectPackage(parameters));
     }
 
     /**
