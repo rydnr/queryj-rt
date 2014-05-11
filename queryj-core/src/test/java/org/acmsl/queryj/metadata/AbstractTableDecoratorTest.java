@@ -270,6 +270,7 @@ public class AbstractTableDecoratorTest
                 || attribute.getName().getValue().equals("myParentId"));
         }
     }
+    -
 
     @Test
     public void getAttributeTypes_does_not_contain_duplicates()
