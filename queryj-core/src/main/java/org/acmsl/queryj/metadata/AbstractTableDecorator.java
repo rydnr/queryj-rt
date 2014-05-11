@@ -2060,6 +2060,16 @@ public abstract class AbstractTableDecorator
         return new TableAttributesListDecorator(result, this);
     }
 
+
+    /**
+     * Checks whether some of the attributes are nullable or not.
+     * @return {@code true} in such case.
+     */
+    public boolean getContainsNullableAttributes()
+    {
+        return false;  //To change body of created methods use File | Settings | File Templates.
+    }
+
     /**
      * {@inheritDoc}
      */
