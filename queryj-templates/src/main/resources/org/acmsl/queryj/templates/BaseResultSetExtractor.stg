@@ -137,8 +137,7 @@ public abstract class <repository.capitalized>BaseResultSetExtractor\<V>
      * @param listener the {@link DAOListener} instance.
      */
     @SuppressWarnings("unused")
-    protected void setDAOListener(
-        <nullable(C=C)>final <repository.capitalized>DAOListener listener)
+    protected void setDAOListener(<nullable(C=C)>final DAOListener listener)
     {
         this.m__DAOListener = listener;
     }
