@@ -76,7 +76,7 @@ public class TableDecoratorHelperTest
     @Test
     public void containNullableAttributes_detects_nullable_attributes()
     {
-        @NotNull final List<Attribute<String>> attributes = new ArrayList<>(0);
+        @NotNull final List<Attribute<String>> attributes = new ArrayList<>(4);
 
         @NotNull final Attribute<String> childAttribute1 =
             new AttributeIncompleteValueObject(
