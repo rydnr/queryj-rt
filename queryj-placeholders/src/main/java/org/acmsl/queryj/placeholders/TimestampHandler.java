@@ -60,7 +60,6 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2012/06/18
  */
 @ThreadSafe
-@SuppressWarnings("unused")
 public class TimestampHandler
     extends AbstractFillHandler<String>
     implements NonRelevantFillHandler
