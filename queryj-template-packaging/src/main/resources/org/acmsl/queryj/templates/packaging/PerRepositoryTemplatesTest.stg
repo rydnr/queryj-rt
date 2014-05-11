@@ -270,7 +270,7 @@ public class PerRepositoryTemplatesTest
         @NotNull final Map\<String, File> outputFiles,
         @NotNull final CustomSqlProvider sqlProvider)
     {
-        @Nullable final PerRepositoryTemplateGenerator\<PerRepositoryTemplate\<PerRepositoryTemplateContext>, PerRepositoryTemplateContext> generator =
+        @Nullable final PerRepositoryTemplateGenerator\<PerRepositoryTemplate\<PerRepositoryTemplateContext>, PerRepositoryTemplateContext> t_Generator =
             (PerRepositoryTemplateGenerator\<PerRepositoryTemplate\<PerRepositoryTemplateContext>, PerRepositoryTemplateContext>) retrieveTemplateGenerator(
                 templateName);
 
