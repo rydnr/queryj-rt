@@ -89,9 +89,6 @@ public class TimestampHandler
     @NotNull
     public String getValue()
     {
-        @NotNull final String result;
-
-        !context.getDisableGenerationTimestamps()
         return new SimpleDateFormat("yyyy/MM/dd HH:mm", Locale.US).format(new Date());
     }
 }
