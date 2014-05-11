@@ -77,8 +77,7 @@ if(table.containsNotNullAttributes)><
 else><
   if(table.containsNullableAttributes)><
     nullable_import(C=C)>
-<
-  endif><
+< endif><
 endif>
 /*
  * Importing JDK classes.
