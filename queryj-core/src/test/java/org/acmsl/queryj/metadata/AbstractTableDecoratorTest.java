@@ -408,7 +408,7 @@ public class AbstractTableDecoratorTest
                 3, // ordinalPosition
                 6222, // length
                 1, // precision
-                false, // allowsNull
+                true, // allowsNull
                 null); // value
 
         attributes.add(childAttribute1);
