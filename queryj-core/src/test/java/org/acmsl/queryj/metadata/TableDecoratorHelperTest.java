@@ -40,6 +40,10 @@ package org.acmsl.queryj.metadata;
  */
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.AttributeIncompleteValueObject;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
