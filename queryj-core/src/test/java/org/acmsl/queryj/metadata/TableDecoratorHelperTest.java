@@ -232,8 +232,8 @@ public class TableDecoratorHelperTest
         @NotNull final AbstractTableDecorator table2 =
             AbstractTableDecoratorTest.setupTableDecorator(attributes2, null);
 
-        attributes1.add(childAttribute1);
-        attributes1.add(childAttribute4);
+        attributes2.add(childAttribute1);
+        attributes2.add(childAttribute4);
 
         Assert.assertFalse(
             instance.containNotNullAttributes(
