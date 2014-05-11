@@ -315,7 +315,6 @@ import_attribute_types(table, useHeader=true) ::= <<
  */
 <endif>
 <if(table.attributeTypes)>
-<  table.attributeTypes:{ t | import <t>;}; separator="\n">
-<else>
+<  table.attributeTypes:{ t | import <t>;}; separator="\n"><else>
 <endif>
 >>
