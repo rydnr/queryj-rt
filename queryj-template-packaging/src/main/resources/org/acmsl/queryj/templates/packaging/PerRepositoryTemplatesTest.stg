@@ -326,7 +326,7 @@ public class PerRepositoryTemplatesTest
             @Nullable final PerRepositoryTemplateFactory\<? extends PerRepositoryTemplate\<PerRepositoryTemplateContext>, PerRepositoryTemplateContext> t_TemplateFactory =
                 retrieveTemplateFactory(templateName);
 
-            Assert.assertNotNull("No template factory found for " + templateName, templateFactory);
+            Assert.assertNotNull("No template factory found for " + templateName, t_TemplateFactory);
 
             @NotNull final List\<String> t_lTableNames = metadataManager.getTableDAO().findAllTableNames();
 
