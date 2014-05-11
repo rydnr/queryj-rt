@@ -166,7 +166,7 @@ public class <C.class_name>
 
         t_Context.setPackageName(
             retrievePackage(
-                tableName, retrieveMetadataManager(parameters).getEngine(), parameters));
+                repository, tableNames, retrieveMetadataManager(parameters).getEngine(), parameters));
 
         new QueryJCommandWrapper\<DecoratorFactory>(parameters).setSetting(
             DecoratorFactory.class.getName(), CachingDecoratorFactory.getInstance());
