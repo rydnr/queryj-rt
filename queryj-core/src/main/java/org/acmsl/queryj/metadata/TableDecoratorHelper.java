@@ -77,6 +77,7 @@ public class TableDecoratorHelper
 {
     public boolean containNotNullAttributes(final ListDecorator<Attribute<DecoratedString>> attributes)
     {
+        return false;  //To change body of created methods use File | Settings | File Templates.
     }
 
     /**
