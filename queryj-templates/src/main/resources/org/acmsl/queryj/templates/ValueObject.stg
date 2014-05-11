@@ -73,11 +73,6 @@ sourceImpl(table, C) ::= <<
  */
 import java.io.Serializable;
 <import_attribute_types(table=table, useHeader=false)>
-<if(table.attributeTypes)>
-<  table.attributeTypes:{ t | import <t>;}; separator="\n">
-
-<else>
-<endif>
 
 <interface(table=table, C=C)>
 >>
