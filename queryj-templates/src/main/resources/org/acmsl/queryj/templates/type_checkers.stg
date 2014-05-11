@@ -172,7 +172,7 @@ if(table.containsNullableAttributes)><
 < endif>
 >>
 
-notnull_import_maybe_nullable(table, C) ::= <<
+nullable_import_maybe_notnull(table, C) ::= <<
 <!
  Imports the checkers depending on the table attributes.
  @param table the table.
