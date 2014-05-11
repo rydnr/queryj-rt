@@ -2070,7 +2070,7 @@ public abstract class AbstractTableDecorator
     {
         return
             containNullableAttributes(
-                getAttributes(), getMetadataManager().getMetadataTypeManager(), TableDecoratorHelper.getInstance());
+                getAttributes(), TableDecoratorHelper.getInstance());
     }
 
     /**
