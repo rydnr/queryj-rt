@@ -168,14 +168,6 @@ public class <C.class_name>
             retrievePackage(
                 repository, tableNames, retrieveMetadataManager(parameters).getEngine(), parameters));
 
-        new QueryJCommandWrapper\<DecoratorFactory>(parameters).setSetting(
-            DecoratorFactory.class.getName(), CachingDecoratorFactory.getInstance());
-
-        new QueryJCommandWrapper\<String>(parameters).setSetting(
-            Literals.PACKAGE_NAME,
-            retrievePackage(
-                repository, retrieveMetadataManager(parameters).getEngine(), retrieveProjectPackage(parameters)));
-
         // TODO: check whether generation is allowed or not
         return super.createTemplate(templateFactory, repository, tableNames, parameters);
     }
