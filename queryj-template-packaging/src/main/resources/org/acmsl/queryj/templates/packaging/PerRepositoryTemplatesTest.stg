@@ -379,7 +379,7 @@ public class PerRepositoryTemplatesTest
 
             try
             {
-                generator.write(
+                t_Generator.write(
                     t_Template,
                     t_OutputDir,
                     rootFolder.getRoot(),
