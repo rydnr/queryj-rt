@@ -130,6 +130,8 @@ public class TableDecoratorHelperTest
                 true, // allowsNull
                 null); // value
 
+        @NotNull final List<Attribute<String>> attributes1 = new ArrayList<>(4);
+
         attributes1.add(childAttribute1);
         attributes1.add(childAttribute2);
         attributes1.add(childAttribute3);
