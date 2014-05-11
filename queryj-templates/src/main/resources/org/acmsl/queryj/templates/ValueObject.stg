@@ -74,7 +74,7 @@ if(table.attributeTypes)><
   else><
     notnull_import(C=C)><
   endif><
-<else>
+else>
 <if(table.containsNullableAttributes)>
 <nullable_import(C=C)>
 <endif>
