@@ -128,7 +128,7 @@ public class JavaRootClassNameVisitor
     @Override
     public String toString()
     {
-        return "JavaRootClassNameVisitor{" +
+        return "{ \"class\": \"JavaRootClassNameVisitor{" +
                "rootClass='" + m__strRootClass + '\'' +
                '}';
     }
