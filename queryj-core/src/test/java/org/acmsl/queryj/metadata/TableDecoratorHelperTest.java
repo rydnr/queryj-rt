@@ -150,7 +150,7 @@ public class TableDecoratorHelperTest
     }
 
     /**
-     * Checks containNotNullAttributes() detects nullable attributes.
+     * Checks containNotNullAttributes() detects notnull attributes.
      */
     @Test
     public void containNotNullAttributes_detects_notnull_attributes()
