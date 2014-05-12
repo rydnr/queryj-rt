@@ -93,6 +93,7 @@ public class PerRepositoryTemplateContext
     public PerRepositoryTemplateContext(
         @NotNull final String repositoryName,
         @NotNull final List<String> tableNames,
+        final boolean debug,
         @NotNull final QueryJCommand command)
     {
         super(repositoryName, command);
