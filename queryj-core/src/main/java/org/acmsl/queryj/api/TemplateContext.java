@@ -118,5 +118,5 @@ public interface TemplateContext
      * Checks whether is being debugged or not.
      * @return such behavior.
      */
-
+    boolean isDebugEnabled();
 }
