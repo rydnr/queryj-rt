@@ -95,7 +95,7 @@ public class PerCustomResultTemplateContext
         final boolean debug,
         @NotNull final QueryJCommand command)
     {
-        super(result.getId(), command);
+        super(result.getId(), debug, command);
 
         immutableSetValue(buildResultKey(), result, command);
         immutableSetValue(buildPropertiesKey(), properties, command);
