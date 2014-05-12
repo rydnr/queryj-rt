@@ -346,7 +346,7 @@ public class TemplateDefImpl
      * Specifies whether the template def is disabled.
      * @param disabled whether the template def is disabled.
      */
-    protected final void immutableSetDisabled(final boolean debug)
+    protected final void immutableSetDebug(final boolean debug)
     {
         this.m__bDebug = debug;
     }
