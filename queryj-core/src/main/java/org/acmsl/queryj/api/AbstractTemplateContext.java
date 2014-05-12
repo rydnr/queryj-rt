@@ -163,7 +163,8 @@ public abstract class AbstractTemplateContext
      * Specifies we're debugging or not.
      * @param flag such behavior.
      */
-    protected final void immutableSetDebugEnabled(final boolean flag)
+    @SuppressWarnings("unused")
+    protected void setDebugEnabled(final boolean flag)
     {
         immutableSetDebugEnabled(flag);
     }
