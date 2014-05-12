@@ -112,6 +112,7 @@ public abstract class AbstractTemplateContext
     protected AbstractTemplateContext(@NotNull final String pk, final boolean debug, @NotNull final QueryJCommand command)
     {
         immutableSetPk(pk);
+        immutableSetDebugEnabled(debug);
         immutableSetCommand(command);
     }
 
