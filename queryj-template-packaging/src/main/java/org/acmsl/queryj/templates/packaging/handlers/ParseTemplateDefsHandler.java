@@ -340,7 +340,8 @@ public class ParseTemplateDefsHandler
                 defFilenameBuilder,
                 defPackage,
                 file,
-                disabled);
+                disabled,
+                debug);
 
         return result;
     }
