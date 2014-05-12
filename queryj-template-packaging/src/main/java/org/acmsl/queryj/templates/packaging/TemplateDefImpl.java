@@ -352,8 +352,8 @@ public class TemplateDefImpl
     }
 
     /**
-     * Specifies whether the template def is disabled.
-     * @param disabled whether the template def is disabled.
+     * Specifies whether the template def is being debugged or not.
+     * @param debug such behavior.
      */
     @SuppressWarnings("unused")
     protected void setDebug(final boolean debug)
