@@ -69,7 +69,7 @@ public abstract class AbstractBasePerTableTemplate<C extends PerTableTemplateCon
      * Builds an {@code AbstractBasePerTableTemplate} using given
      * information.
      * @param context the {@link PerTableTemplateContext} instance.
-     * @param debug whether
+     * @param debug whether debugging is enabled.
      */
     protected AbstractBasePerTableTemplate(@NotNull final C context, final boolean debug)
     {
