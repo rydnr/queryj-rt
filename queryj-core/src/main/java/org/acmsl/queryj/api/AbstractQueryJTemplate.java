@@ -77,7 +77,7 @@ public abstract class AbstractQueryJTemplate<C extends QueryJTemplateContext>
      */
     protected AbstractQueryJTemplate(@NotNull final C context, final boolean debug)
     {
-        super(context);
+        super(context, debug);
     }
 
     /**
