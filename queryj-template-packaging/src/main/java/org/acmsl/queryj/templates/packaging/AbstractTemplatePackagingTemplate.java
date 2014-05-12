@@ -35,6 +35,11 @@
  */
 package org.acmsl.queryj.templates.packaging;
 
+import org.checkthread.annotations.ThreadSafe;
+
+/*
+ * Importing
+ */
 /*
  * Importing QueryJ-Core classes.
  */
