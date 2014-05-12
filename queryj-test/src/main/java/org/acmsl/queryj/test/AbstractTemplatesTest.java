@@ -184,7 +184,7 @@ public abstract class AbstractTemplatesTest<G, F>
     /**
      * Templates being debugged.
      */
-    @NotNull protected final Map<String, Boolean> PACKAGE_MAPPINGS = new HashMap<>();
+    @NotNull protected final Map<String, Boolean> DEBUG = new HashMap<>();
 
     /**
      * The package name.
