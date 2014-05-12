@@ -367,6 +367,24 @@ public abstract class AbstractTemplate<C extends TemplateContext>
     }
 
     /**
+     * Specifies whether debugging is enabled for this template.
+     * @param flag the desired behavior.
+     */
+    protected void setDebugEnabled(final boolean flag)
+    {
+        this.m__bDebugEnabled = flag;
+    }
+
+    /**
+     * Whether debugging is enabled for this template.
+     * @return {@code true} in such case.
+     */
+    public boolean isDebugEnabled()
+    {
+        return m__bDebugEnabled;
+    }
+
+    /**
      * Retrieves the string template group.
      * @param path the path.
      * @param lookupPaths the lookup paths.
