@@ -406,6 +406,6 @@ public class TemplateDefImpl
             + ", \"packageName\": \"" + m__strPackageName + '"'
             + ", \"file\": \"" + m__File.getAbsolutePath() + '"'
             + ", \"disabled\": " + m__bDisabled
-            + ", \"debug\": " + m__bDisabled + " }";
+            + ", \"debug\": " + m__bDebug + " }";
     }
 }
