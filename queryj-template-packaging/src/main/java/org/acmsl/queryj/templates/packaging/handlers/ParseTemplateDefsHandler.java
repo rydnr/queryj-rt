@@ -45,6 +45,7 @@ import org.acmsl.queryj.templates.packaging.TemplateDefImpl;
 import org.acmsl.queryj.templates.packaging.TemplateDefOutput;
 import org.acmsl.queryj.templates.packaging.TemplateDefType;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingSettings;
+import org.acmsl.queryj.templates.packaging.antlr.TemplateDefDebugVisitor;
 import org.acmsl.queryj.templates.packaging.antlr.TemplateDefDisabledVisitor;
 import org.acmsl.queryj.templates.packaging.antlr.TemplateDefFilenameBuilderVisitor;
 import org.acmsl.queryj.templates.packaging.antlr.TemplateDefLexer;
