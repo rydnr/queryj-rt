@@ -175,7 +175,7 @@ public int hashCode()
 {
     final int result;
 
-    final int classHashCode = Abstract<result.id.voName>.class.hashCode();
+    final int classHashCode = <result.id.voName>.class.hashCode();
 
     <result.properties:{ p | <property_hashcode(property=p)>}; separator="\n">
 
