@@ -160,6 +160,24 @@ public abstract class AbstractTemplateContext
     }
 
     /**
+     * Specifies we're debugging or not.
+     * @param flag such behavior.
+     */
+    protected final void immutableSetDebugEnabled(final boolean flag)
+    {
+        this.m__bDebugEnabled = flag;
+    }
+
+    /**
+     * Specifies we're debugging or not.
+     * @param flag such behavior.
+     */
+    public boolean isDebugEnabled(final boolean flag)
+    {
+        this.m__bDebugEnabled = flag;
+    }
+
+    /**
      * Specifies the command.
      * @param command the command.
      */
