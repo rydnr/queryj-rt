@@ -362,7 +362,7 @@ public class PerCustomResultTemplatesTest
                         resolvePackage(PACKAGE_MAPPINGS.get(templateName), result.getId(), resolveEngine(engine));
 
                     @NotNull final PerCustomResultTemplateContext t_Context =
-                        new PerCustomResultTemplateContext(result, properties, <def.debug>, t_Command);
+                        new PerCustomResultTemplateContext(result, properties, DEBUG.containsKey(templateName), t_Command);
 
                     t_Context.setPackageName(packageName);
 
