@@ -87,6 +87,7 @@ public class PerRepositoryTemplateContext
      * Creates the template context with required information.
      * @param repositoryName the repository name.
      * @param tableNames the table names.
+     * @param debug whether debugging is enabled.
      * @param command the command.
      */
     public PerRepositoryTemplateContext(
