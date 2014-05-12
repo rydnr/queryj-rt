@@ -87,7 +87,7 @@ public class PerCustomSqlTemplateContext
     public PerCustomSqlTemplateContext(
         @NotNull final Sql<String> sql, final boolean debug, @NotNull final QueryJCommand command)
     {
-        super(sql.getId(), command);
+        super(sql.getId(), debug, command);
 
         immutableSetSql(sql);
     }
