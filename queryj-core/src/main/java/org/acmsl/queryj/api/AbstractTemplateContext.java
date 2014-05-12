@@ -169,8 +169,8 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Specifies we're debugging or not.
-     * @param flag such behavior.
+     * Retrieves we're debugging or not.
+     * @return such behavior.
      */
     public boolean isDebugEnabled()
     {
