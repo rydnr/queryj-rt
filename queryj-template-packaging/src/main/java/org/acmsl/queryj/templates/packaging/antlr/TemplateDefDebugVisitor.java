@@ -40,7 +40,6 @@ import org.acmsl.queryj.templates.packaging.antlr.TemplateDefParser.DebugRuleCon
 /*
  * Importing JetBrains annotations.
  */
-import org.acmsl.queryj.templates.packaging.antlr.TemplateDefParser.DebugRuleContext;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
