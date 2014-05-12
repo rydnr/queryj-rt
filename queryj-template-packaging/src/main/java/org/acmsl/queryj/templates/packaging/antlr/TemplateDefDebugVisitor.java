@@ -63,7 +63,7 @@ public class TemplateDefDebugVisitor
     private boolean m__bDebug;
 
     /**
-     * Specifies whether the template def is marked as debug.
+     * Specifies whether the template def is marked as debugged.
      * @param debug if the template def is debug.
      */
     protected final void immutableSetDebug(final boolean debug)
