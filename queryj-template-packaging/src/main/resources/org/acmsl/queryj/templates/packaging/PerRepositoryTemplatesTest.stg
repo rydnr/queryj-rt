@@ -334,7 +334,10 @@ public class PerRepositoryTemplatesTest
 
             @NotNull final PerRepositoryTemplateContext t_Context =
                 new PerRepositoryTemplateContext(
-                    repository, t_lTableNames, (DEBUG.containsKey(templateName) && DEBUG.get(templateName)), t_Command);
+                    repository,
+                    t_lTableNames,
+                    (DEBUG.containsKey(templateName) && DEBUG.get(templateName)),
+                    t_Command);
 
             @NotNull final String t_strPackageName =
                 resolvePackage(PACKAGE_MAPPINGS.get(templateName), repository, resolveEngine(engine));
