@@ -158,7 +158,7 @@ public class <C.class_name>
                 context.getMetadataManager(),
                 context.getDecoratorFactory());
 
-        t_Context.setFileName(t_strFileName);
+        context.setFileName(t_strFileName);
 
         return new <def.name.noExtension>Template(context);
     }
