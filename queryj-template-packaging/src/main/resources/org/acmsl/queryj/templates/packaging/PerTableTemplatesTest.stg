@@ -800,7 +800,7 @@ PACKAGE_MAPPINGS.put("<def.name>", "<def.packageName>");
 
 debug_mapping(def) ::= <<
 <!
- Generates the call to add the generator and factory of the def to the general mappings.
+ Generates the call to specify add the generator and factory of the def to the general mappings.
  @param def the template def.
 !>
 GENERATOR_MAPPINGS.put("<def.name>", new <def.name>TemplateGenerator(false, 1));
