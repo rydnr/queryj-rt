@@ -165,11 +165,11 @@ public abstract class AbstractTemplateContext
      */
     protected final void immutableSetDebugEnabled(final boolean flag)
     {
-        this.m__bDebugEnabled = flag;
+        immutableSetDebugEnabled(flag);
     }
 
     /**
-     * Retrieves we're debugging or not.
+     * Retrieves whether we're debugging or not.
      * @return such behavior.
      */
     public boolean isDebugEnabled()
