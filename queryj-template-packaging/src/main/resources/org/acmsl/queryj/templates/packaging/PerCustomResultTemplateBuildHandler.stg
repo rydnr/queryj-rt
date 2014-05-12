@@ -169,7 +169,7 @@ public class <C.class_name>
                 t_MetadataManager.getEngine(),
                 parameters));
 
-        return templateFactory.createTemplate(tableName, staticContents, t_Context, parameters);
+        return templateFactory.createTemplate(result, staticContents, t_Context, parameters);
     }
 
     /**
