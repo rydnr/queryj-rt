@@ -86,7 +86,7 @@ public class GlobalTemplateContextImpl
 
     /**
      * Creates a new global context.
-     * @param fileName the file name.
+     * @param templateName the template name.
      * @param packageName the package name.
      * @param fileName the file name.
      * @param outputDir the output dir.
