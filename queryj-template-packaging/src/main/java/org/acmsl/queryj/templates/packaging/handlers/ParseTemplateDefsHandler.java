@@ -317,7 +317,7 @@ public class ParseTemplateDefsHandler
             throw new InvalidTemplateDefException("disabled", file, invalidClass);
         }
 
-        @NotNull final TemplateDefDisabledVisitor disabledVisitor = new TemplateDefDisabledVisitor();
+        @NotNull final TemplateDefDisabledVisitor disabledVisitor = new TemplateDefDebugVisitor();
 
         @Nullable final boolean disabled;
 
