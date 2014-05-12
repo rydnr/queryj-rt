@@ -366,7 +366,7 @@ public class TemplateDefImpl
      * @return such condition.
      */
     @Override
-    public boolean isDisabled()
+    public boolean isDebug()
     {
         return this.m__bDisabled;
     }
