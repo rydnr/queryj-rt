@@ -156,7 +156,7 @@ public class <C.class_name>
         @NotNull final QueryJCommand parameters)
     {
         @NotNull final <def.type.capitalized>PerTableTemplateContext t_Context =
-            new PerTableTemplateContext(result, properties, parameters);
+            new <def.type.capitalized>PerTableTemplateContext(result, properties, parameters);
 
         t_Context.setDecoratorFactory(CachingDecoratorFactory.getInstance());
 
