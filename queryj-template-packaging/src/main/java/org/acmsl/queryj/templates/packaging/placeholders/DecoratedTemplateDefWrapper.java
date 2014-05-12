@@ -302,7 +302,7 @@ public class DecoratedTemplateDefWrapper
     @Override
     public boolean isDisabled()
     {
-        return isDisabled(getTemplateDef());
+        return isDebug(getTemplateDef());
     }
 
     /**
