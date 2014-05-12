@@ -204,6 +204,7 @@ public class PerCustomSqlTemplatesTest
         super();
 
         <defs:{ d | <if(!d.disabled)><if(d.type.perSql)><generator_mapping(def=d)><endif><endif>}; separator="\n">
+        <defs:{ d | <if(!d.disabled)><if(d.type.perSql)><generator_mapping(def=d)><endif><endif>}; separator="\n">
     }
 
     /**
