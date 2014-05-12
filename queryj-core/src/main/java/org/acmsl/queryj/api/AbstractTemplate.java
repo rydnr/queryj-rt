@@ -269,6 +269,21 @@ public abstract class AbstractTemplate<C extends TemplateContext>
     }
 
     /**
+     * Builds a {@link AbstractTemplate} with given context.
+     * @param context the context.
+     * @param placeholderPackage the package of the placeholder classes.
+     */
+    protected AbstractTemplate(
+        @NotNull final C context, @NotNull final String placeholderPackage)
+    {
+        immutableSetTemplateContext(context);
+        immutableSetPlaceholderPackage(placeholderPackage);
+        setSTCache(new HashMap<String, Object>());
+        immutableSetDebugMode(false);
+        //ManagementFactory.getRuntimeMXBean(). getInputArguments().toString().contains(XRUNJDWP_TRANSPORT));
+    }
+
+    /**
      * Specifies the {@link QueryJTemplateContext}.
      * @param context the context.
      */
