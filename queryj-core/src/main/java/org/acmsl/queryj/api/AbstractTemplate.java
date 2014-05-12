@@ -261,7 +261,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
     protected AbstractTemplate(
         @NotNull final C context, @NotNull final String placeholderPackage)
     {
-        immutableSetTemplateContext(context);
+        this(context, placeholderPackage, false);
         immutableSetPlaceholderPackage(placeholderPackage);
         setSTCache(new HashMap<String, Object>());
         immutableSetDebugMode(false);
