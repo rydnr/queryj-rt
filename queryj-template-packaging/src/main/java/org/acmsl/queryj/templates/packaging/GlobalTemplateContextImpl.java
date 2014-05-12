@@ -91,6 +91,7 @@ public class GlobalTemplateContextImpl
      * @param fileName the file name.
      * @param outputDir the output dir.
      * @param templateDefs the template definitions.
+     * @param command the command.
      */
     public GlobalTemplateContextImpl(
         @NotNull final String templateName,
