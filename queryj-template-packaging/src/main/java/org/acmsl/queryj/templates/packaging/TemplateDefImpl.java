@@ -363,6 +363,7 @@ public class TemplateDefImpl
 
     /**
      * Checks whether the template def is disabled.
+     * Specifies whether the template def is being debugged or not.
      * @return such condition.
      */
     @Override
