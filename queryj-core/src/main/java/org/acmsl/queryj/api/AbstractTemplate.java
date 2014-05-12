@@ -797,7 +797,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
                     {
                         result = t_Template.render();
 
-                        if (   (isInDevMode(t_Group))
+                        if (   (isDebugEnabled()isInDevMode(t_Group))
                             && (!relevantOnly))
                         {
                             synchronized (AbstractTemplate.class)
