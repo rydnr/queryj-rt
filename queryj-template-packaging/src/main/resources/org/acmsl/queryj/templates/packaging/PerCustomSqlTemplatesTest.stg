@@ -380,7 +380,7 @@ public class PerCustomSqlTemplatesTest
                     resolvePackage(PACKAGE_MAPPINGS.get(templateName), sql.getId(), resolveEngine(engine));
 
                 @NotNull final PerCustomSqlTemplateContext t_Context =
-                    new PerCustomSqlTemplateContext(sql, <def.debug>, t_Command);
+                    new PerCustomSqlTemplateContext(sql, DEBUG.containsKey(templateName), t_Command);
 
                 t_Context.setPackageName(packageName);
 
