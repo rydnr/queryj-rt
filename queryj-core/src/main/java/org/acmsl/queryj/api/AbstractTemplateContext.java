@@ -151,7 +151,7 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     *
+     * Specifies we're debugging
      */
     /**
      * Specifies the command.
