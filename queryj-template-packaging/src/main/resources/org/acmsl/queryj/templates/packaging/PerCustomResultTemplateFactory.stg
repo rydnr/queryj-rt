@@ -151,15 +151,12 @@ public class <C.class_name>
         @NotNull final <def.type.capitalized>TemplateContext context,
         @NotNull final QueryJCommand command)
     {
-        @NotNull final <def.type.capitalized>TemplateContext t_Context =
-            new <def.type.capitalized>TemplateContext(customResult, properties, command);
-
         @NotNull final String t_strFileName =
             retrieveTemplateFileName(
                 customResult,
-                t_Context.getCustomSqlProvider(),
-                t_Context.getMetadataManager(),
-                t_Context.getDecoratorFactory());
+                context.getCustomSqlProvider(),
+                context.getMetadataManager(),
+                context.getDecoratorFactory());
 
         t_Context.setFileName(t_strFileName);
 
