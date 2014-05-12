@@ -145,12 +145,7 @@ public class <C.class_name>
     }
 
     /**
-     * Creates a template.
-     * @param templateFactory the template factory.
-     * @param result the result.
-     * @param properties the properties.
-     * @param parameters the parameters.
-     * @return the template.
+     * {@inheritDoc}
      */
     @Override
     protected <def.name.noExtension>Template createTemplate(
