@@ -172,7 +172,7 @@ public abstract class AbstractTemplateContext
      * Specifies we're debugging or not.
      * @param flag such behavior.
      */
-    public boolean isDebugEnabled(final boolean flag)
+    public boolean isDebugEnabled()
     {
         this.m__bDebugEnabled = flag;
     }
