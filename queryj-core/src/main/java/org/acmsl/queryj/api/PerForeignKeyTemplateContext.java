@@ -76,6 +76,7 @@ public class PerForeignKeyTemplateContext
     /**
      * Creates a {@code PerForeignKeyTemplateContext} with given information.
      * @param foreignKey the {@link ForeignKey} instance.
+     * @param debug whether debugging is enabled.
      * @param command the {@link QueryJCommand} instance.
      */
     public PerForeignKeyTemplateContext(
