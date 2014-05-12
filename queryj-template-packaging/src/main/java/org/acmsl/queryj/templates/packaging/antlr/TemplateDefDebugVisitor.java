@@ -38,7 +38,7 @@ package org.acmsl.queryj.templates.packaging.antlr;
 /*
  * Importing JetBrains annotations.
  */
-import org.acmsl.queryj.templates.packaging.antlr.TemplateDefParser.DisabledRuleContext;
+import org.acmsl.queryj.templates.packaging.antlr.TemplateDefParser.DebugRuleContext;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -58,36 +58,36 @@ public class TemplateDefDebugVisitor
     extends TemplateDefBaseVisitor<Boolean>
 {
     /**
-     * Whether the template def is disabled or not.
+     * Whether the template def is debug or not.
      */
-    private boolean m__bDisabled;
+    private boolean m__bDebug;
 
     /**
-     * Specifies whether the template def is disabled.
-     * @param disabled if the template def is disabled.
+     * Specifies whether the template def is debug.
+     * @param debug if the template def is debug.
      */
-    protected final void immutableSetDisabled(final boolean disabled)
+    protected final void immutableSetDebug(final boolean debug)
     {
-        this.m__bDisabled = disabled;
+        this.m__bDebug = debug;
     }
 
     /**
-     * Specifies whether the template def is disabled.
-     * @param disabled if the template def is disabled.
+     * Specifies whether the template def is debug.
+     * @param debug if the template def is debug.
      */
     @SuppressWarnings("unused")
-    protected void setDisabled(final boolean disabled)
+    protected void setDebug(final boolean debug)
     {
-        immutableSetDisabled(disabled);
+        immutableSetDebug(debug);
     }
 
     /**
-     * Retrieves whether the template def is disabled.
+     * Retrieves whether the template def is debug.
      * @return such information.
      */
-    public boolean isDisabled()
+    public boolean isDebug()
     {
-        return this.m__bDisabled;
+        return this.m__bDebug;
     }
 
     /**
@@ -97,11 +97,11 @@ public class TemplateDefDebugVisitor
      */
     @Override
     @Nullable
-    public Boolean visitDisabledRule(@NotNull final DisabledRuleContext ctx)
+    public Boolean visitDebugRule(@NotNull final DebugRuleContext ctx)
     {
-        setDisabled(true);
+        setDebug(true);
 
-        return super.visitDisabledRule(ctx);
+        return super.visitDebugRule(ctx);
     }
 
     /**
@@ -112,7 +112,7 @@ public class TemplateDefDebugVisitor
     public String toString()
     {
         return
-            "{ \"class\": \"" + TemplateDefDisabledVisitor.class.getSimpleName() + '"'
-            + ", \"disabled\": " + m__bDisabled + " }";
+            "{ \"class\": \"" + TemplateDefDebugVisitor.class.getSimpleName() + '"'
+            + ", \"debug\": " + m__bDebug + " }";
     }
 }
