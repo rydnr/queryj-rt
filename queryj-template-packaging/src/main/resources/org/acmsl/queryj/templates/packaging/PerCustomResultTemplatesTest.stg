@@ -190,7 +190,7 @@ public class PerCustomResultTemplatesTest
         super();
 
         <defs:{ d | <if(!d.disabled)><if(d.type.perCustomResult)><generator_mapping(def=d)><endif><endif>}; separator="\n">
-        <defs:{ d | <if(!d.disabled)><if(d.type.perCustomResult)><generator_mapping(def=d)><endif><endif>}; separator="\n">
+        <defs:{ d | <if(!d.disabled)><if(d.type.perCustomResult)><debug_mapping(def=d)><endif><endif>}; separator="\n">
     }
 
     /**
