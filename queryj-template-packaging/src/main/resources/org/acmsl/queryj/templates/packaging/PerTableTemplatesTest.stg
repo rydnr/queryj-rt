@@ -527,7 +527,7 @@ public class PerTableTemplatesTest
                     resolvePackage(templateDef.getPackageName(), table.getName(), resolveEngine(engine));
 
                 @NotNull final PerTableTemplateContext t_Context =
-                    new PerTableTemplateContext(table.getName(), tableRows, DEBUG.contains, t_Command);
+                    new PerTableTemplateContext(table.getName(), tableRows, DEBUG.contains(, t_Command);
 
                 t_Context.setPackageName(packageName);
 
