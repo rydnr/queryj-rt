@@ -352,6 +352,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
      * Specifies whether debugging is enabled for this template.
      * @param flag the desired behavior.
      */
+    @SuppressWarnings("unused")
     protected void setDebugEnabled(final boolean flag)
     {
         this.m__bDebugEnabled = flag;
