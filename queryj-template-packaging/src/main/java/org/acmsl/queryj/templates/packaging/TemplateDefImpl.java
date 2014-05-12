@@ -106,7 +106,7 @@ public class TemplateDefImpl
     private boolean m__bDisabled;
 
     /**
-     * Whether the template def is disabled or not.
+     * Whether the template def is being or not.
      */
     private boolean m__bDebug;
 
