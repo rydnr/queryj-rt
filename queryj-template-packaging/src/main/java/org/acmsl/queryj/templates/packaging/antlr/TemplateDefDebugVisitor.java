@@ -35,6 +35,8 @@
  */
 package org.acmsl.queryj.templates.packaging.antlr;
 
+import org.acmsl.queryj.templates.packaging.antlr.TemplateDefParser.DebugRuleContext;
+
 /*
  * Importing JetBrains annotations.
  */
