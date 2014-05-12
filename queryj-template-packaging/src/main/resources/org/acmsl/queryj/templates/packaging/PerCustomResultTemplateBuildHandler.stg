@@ -159,7 +159,16 @@ public class <C.class_name>
         @NotNull final List<Property<String>> properties,
         @NotNull final QueryJCommand parameters)
     {
+        @NotNull final PerTableTemplateContext t_Context =
+            new PerTableTemplateContext(tableName, staticContents, parameters);
 
+        t_Context.setDecoratorFactory(CachingDecoratorFactory.getInstance());
+
+        t_Context.setPackageName(
+            retrievePackage(
+                tableName, retrieveMetadataManager(parameters).getEngine(), parameters));
+
+        return templateFactory.createTemplate(tableName, staticContents, t_Context, parameters);
     }
 
     /**
