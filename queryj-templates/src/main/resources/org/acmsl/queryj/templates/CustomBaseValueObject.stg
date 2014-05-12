@@ -106,7 +106,8 @@ class(result, repository, C) ::= <<
  */
 <class_annotations(C=C)>
 public abstract class Abstract<result.id.voName>
-    implements <result.id.voName>
+    implements <result.id.voName>,
+               Serializable
 {
     <result.properties:{ p | <attribute_declaration(property=p, C=C)>}; separator="\n\n">
 
