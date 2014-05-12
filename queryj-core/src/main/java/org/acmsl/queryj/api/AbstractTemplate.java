@@ -383,7 +383,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
                 lookupPaths,
                 Charset.defaultCharset(),
                 (Map<String, STGroup>) getSTCache(),
-                getDebugMode());
+                isDebugEnabled());
     }
 
     /**
