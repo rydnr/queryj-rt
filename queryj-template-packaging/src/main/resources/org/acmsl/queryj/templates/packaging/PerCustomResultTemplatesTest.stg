@@ -402,8 +402,6 @@ public class PerCustomResultTemplatesTest
 
                     UniqueLogFactory.initializeInstance(LogFactory.getLog(PerCustomResultTemplatesTest.class));
 
-                    ((AbstractTemplate) template).setDebugMode(true);
-
                     try
                     {
                         generator.write(
