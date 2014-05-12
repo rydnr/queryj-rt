@@ -137,6 +137,7 @@ public class TemplateDefImpl
         immutableSetPackageName(packageName);
         immutableSetFile(file);
         immutableSetDisabled(disabled);
+        immutableSetDebug(debug);
     }
 
     /**
