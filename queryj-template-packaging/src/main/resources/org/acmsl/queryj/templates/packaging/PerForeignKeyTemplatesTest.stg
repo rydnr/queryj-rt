@@ -409,7 +409,7 @@ public class PerForeignKeyTemplatesTest
 
                 @NotNull final PerForeignKeyTemplateContext t_Context =
                     new PerForeignKeyTemplateContext(
-                        foreignKey, (DEBUG.containsKey(templateName) && DEBUG.get(templateName)),DEBUG.containsKey(templateName), t_Command);
+                        foreignKey, (DEBUG.containsKey(templateName) && DEBUG.get(templateName)),, t_Command);
 
                 t_Context.setPackageName(packageName);
 
