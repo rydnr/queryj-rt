@@ -358,17 +358,6 @@ public abstract class AbstractTemplate<C extends TemplateContext>
     }
 
     /**
-     * Whether debugging is enabled for this template.
-     * @return {@code true} in such case.
-     * Retrieves the debug mode.
-     * @return such mode.
-     */
-    public boolean getDebugMode()
-    {
-        return this.m__bDebugEnabled;
-    }
-
-    /**
      * Specifies whether debugging is enabled for this template.
      * @param flag the desired behavior.
      */
