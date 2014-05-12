@@ -111,7 +111,7 @@ public abstract class Abstract<result.id.voName>
      */
     private static final long serialVersionUID = <C.serialVersionUID>L;
 
-    <result.properties:{ p | <attribute_declaration(property=p, C=C)>}; separator="\n\n">
+    <result.properties:{ p | <property_declaration(property=p, C=C)>}; separator="\n\n">
 
     /**
      * Creates a new {@code Abstract<result.id.voName>}.
