@@ -349,15 +349,6 @@ public abstract class AbstractTemplate<C extends TemplateContext>
     }
 
     /**
-     * Specifies the debug mode.
-     * @param mode such mode.
-     */
-    public void setDebugMode(final boolean mode)
-    {
-        immutableSetDebugMode(mode);
-    }
-
-    /**
      * Specifies whether debugging is enabled for this template.
      * @param flag the desired behavior.
      */
