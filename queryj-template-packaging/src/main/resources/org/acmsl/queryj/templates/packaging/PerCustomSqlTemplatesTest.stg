@@ -420,8 +420,6 @@ public class PerCustomSqlTemplatesTest
 
                 UniqueLogFactory.initializeInstance(LogFactory.getLog(PerCustomSqlTemplatesTest.class));
 
-                ((AbstractTemplate) template).setDebugMode(true);
-
                 try
                 {
                     generator.write(
