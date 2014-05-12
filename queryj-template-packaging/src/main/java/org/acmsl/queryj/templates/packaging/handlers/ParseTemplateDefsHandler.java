@@ -325,7 +325,7 @@ public class ParseTemplateDefsHandler
         {
             debugVisitor.visit(tree);
 
-            disabled = disabledVisitor.isDisabled();
+            debug = disabledVisitor.isDisabled();
         }
         catch (@NotNull final Throwable invalidClass)
         {
