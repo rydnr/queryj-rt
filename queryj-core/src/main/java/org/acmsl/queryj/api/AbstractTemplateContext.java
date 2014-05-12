@@ -104,6 +104,9 @@ public abstract class AbstractTemplateContext
     private String m__Pk;
 
     /**
+     * Whether we're debugging thi
+     */
+    /**
      * Creates an {@code AbstractTemplateContext} with given information.
      * @param pk something unique to the template.
      * @param debug whether debugging is enabled.
