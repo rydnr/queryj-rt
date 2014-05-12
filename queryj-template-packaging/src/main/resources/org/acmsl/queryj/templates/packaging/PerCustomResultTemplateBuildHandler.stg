@@ -159,6 +159,8 @@ public class <C.class_name>
 
         t_Context.setDecoratorFactory(CachingDecoratorFactory.getInstance());
 
+        @NotNull final MetadataManager t_MetadataManager = retrieveMetadataManager(parameters);
+
         t_Context.setPackageName(
             retrievePackage(
                 result,
