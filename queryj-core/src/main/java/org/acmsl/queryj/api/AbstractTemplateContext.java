@@ -106,6 +106,7 @@ public abstract class AbstractTemplateContext
     /**
      * Creates an {@code AbstractTemplateContext} with given information.
      * @param pk something unique to the template.
+     * @param debug whether debugging is enabled.
      * @param command the {@link org.acmsl.queryj.QueryJCommand} instance.
      */
     protected AbstractTemplateContext(@NotNull final String pk, @NotNull final QueryJCommand command)
