@@ -22,7 +22,7 @@ packageRule:
 disabledRule:
         'disabled' ';';
 
-disabledRule:
+debugRule:
         'disabled' ';';
 
 ID : [a-zA-Z0-9\.\-_,<>]+ ;
