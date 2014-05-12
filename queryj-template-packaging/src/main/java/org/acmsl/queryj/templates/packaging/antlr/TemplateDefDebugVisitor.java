@@ -58,7 +58,7 @@ public class TemplateDefDebugVisitor
     extends TemplateDefBaseVisitor<Boolean>
 {
     /**
-     * Whether the template def is debug or not.
+     * Whether the template def allows debugging or not.
      */
     private boolean m__bDebug;
 
