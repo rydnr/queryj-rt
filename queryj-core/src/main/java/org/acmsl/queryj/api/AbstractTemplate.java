@@ -810,7 +810,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
                     {
                         result = t_Template.render();
 
-                        if (   (isDebugEnabled())
+                        if (   (getTemplateContext().isDebugEnabled())
                             && (isInDevMode(t_Group))
                             && (!relevantOnly))
                         {
