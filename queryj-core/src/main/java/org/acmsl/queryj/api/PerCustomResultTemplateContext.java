@@ -86,6 +86,7 @@ public class PerCustomResultTemplateContext
      * Creates a {@link PerCustomResultTemplateContext} with given information.
      * @param result the {@link Result} instance.
      * @param properties the properties.
+     * @param debug whether debugging is enabled.
      * @param command the command.
      */
     public PerCustomResultTemplateContext(
