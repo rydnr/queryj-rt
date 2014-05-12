@@ -151,7 +151,8 @@ public abstract class AbstractTemplateContext
     }
 
     /**
-     * Specifies we're debugging
+     * Specifies we're debugging or not.
+     * @param flag such flag
      */
     /**
      * Specifies the command.
