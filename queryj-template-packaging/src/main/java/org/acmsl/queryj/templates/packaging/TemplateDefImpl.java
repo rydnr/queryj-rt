@@ -127,7 +127,8 @@ public class TemplateDefImpl
         @NotNull final String filenameBuilder,
         @NotNull final String packageName,
         @NotNull final File file,
-        final boolean disabled)
+        final boolean disabled,
+        final boolean debug)
     {
         immutableSetName(name);
         immutableSetType(type);
