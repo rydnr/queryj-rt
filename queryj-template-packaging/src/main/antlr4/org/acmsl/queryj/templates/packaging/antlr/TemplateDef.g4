@@ -1,7 +1,7 @@
 grammar TemplateDef;
 
 templateDef
-:   nameRule typeRule outputRule filenameBuilderRule packageRule disabledRule?
+:   nameRule typeRule outputRule filenameBuilderRule packageRule disabledRule? debugRule?
     EOF;
 
 nameRule:
