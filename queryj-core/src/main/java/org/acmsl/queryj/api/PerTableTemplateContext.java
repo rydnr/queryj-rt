@@ -97,7 +97,7 @@ public class PerTableTemplateContext
         final boolean debug,
         @NotNull final QueryJCommand command)
     {
-        super(tableName, command);
+        super(tableName, debug, command);
 
         immutableSetValue(buildTableNameKey(), tableName, command);
         immutableSetValue(buildStaticValuesKey(), staticValues, command);
