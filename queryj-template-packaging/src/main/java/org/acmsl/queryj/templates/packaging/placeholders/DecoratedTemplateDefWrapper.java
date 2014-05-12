@@ -310,7 +310,7 @@ public class DecoratedTemplateDefWrapper
      * @param templateDef the template def.
      * @return {@code true} in such case.
      */
-    protected boolean isDisabled(@NotNull final TemplateDef<String> templateDef)
+    protected boolean isDebug(@NotNull final TemplateDef<String> templateDef)
     {
         return templateDef.isDebug();
     }
