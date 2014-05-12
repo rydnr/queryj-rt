@@ -204,6 +204,11 @@ public abstract class AbstractTemplate<C extends TemplateContext>
      */
     private boolean m__bDebug;
 
+    public boolean isDebugEnabled()
+    {
+        return debugEnabled;
+    }
+
     /**
      * A singleton container to avoid the double-checking lock idiom.
      */
