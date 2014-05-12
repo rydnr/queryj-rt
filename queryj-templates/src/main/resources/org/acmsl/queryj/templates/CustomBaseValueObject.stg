@@ -163,7 +163,7 @@ public boolean equals(<nullable(C=C)>final Object other)
 }
 >>
 
-hashcode_method(result, C) ::= <<
+hashCode_method(result, C) ::= <<
 <! Generates the hashcode() method !>
 /**
  * Retrieves the hashcode which identifies this instance
