@@ -296,7 +296,7 @@ public class DecoratedTemplateDefWrapper
     }
 
     /**
-     * Checks whether given template def is disabled.
+     * Checks whether given template def is marked as being debugged or not.
      * @return {@code true} in such case.
      */
     @Override
