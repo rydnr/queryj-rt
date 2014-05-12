@@ -106,7 +106,7 @@ public abstract class AbstractTemplateContext
     /**
      * Whether we're debugging using this context.
      */
-    private boolean m__bDebug;
+    private boolean m__bDebugEnabled;
 
     /**
      * Creates an {@code AbstractTemplateContext} with given information.
