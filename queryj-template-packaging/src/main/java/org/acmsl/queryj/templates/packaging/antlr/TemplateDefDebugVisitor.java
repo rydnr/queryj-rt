@@ -82,8 +82,8 @@ public class TemplateDefDebugVisitor
     }
 
     /**
-     * Retrieves whether the template def is marked as debug.
-     * @return such information.
+     * Retrieves whether the template def is marked as debugged.
+     * @return such .
      */
     public boolean isDebug()
     {
