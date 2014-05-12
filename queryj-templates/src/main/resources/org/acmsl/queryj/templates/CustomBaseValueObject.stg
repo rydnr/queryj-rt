@@ -128,9 +128,9 @@ public abstract class Abstract<result.id.voName>
 
     <equals_method(result=result, C=C)>
 
-    <hashcode_method(result=result, C=C)>
+    <hashCode_method(result=result, C=C)>
 
-    <tostring_method(result=result, C=C)>
+    <toString_method(result=result, C=C)>
 }
 >>
 
