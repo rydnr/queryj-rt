@@ -323,7 +323,7 @@ public class ParseTemplateDefsHandler
 
         try
         {
-            disabledVisitor.visit(tree);
+            debugVisitor.visit(tree);
 
             disabled = disabledVisitor.isDisabled();
         }
