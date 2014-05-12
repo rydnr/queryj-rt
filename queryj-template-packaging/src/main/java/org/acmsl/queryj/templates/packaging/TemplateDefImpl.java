@@ -343,6 +343,35 @@ public class TemplateDefImpl
     }
 
     /**
+     * Specifies whether the template def is disabled.
+     * @param disabled whether the template def is disabled.
+     */
+    protected final void immutableSetDisabled(final boolean disabled)
+    {
+        this.m__bDisabled = disabled;
+    }
+
+    /**
+     * Specifies whether the template def is disabled.
+     * @param disabled whether the template def is disabled.
+     */
+    @SuppressWarnings("unused")
+    protected void setDisabled(final boolean disabled)
+    {
+        immutableSetDisabled(disabled);
+    }
+
+    /**
+     * Checks whether the template def is disabled.
+     * @return such condition.
+     */
+    @Override
+    public boolean isDisabled()
+    {
+        return this.m__bDisabled;
+    }
+
+    /**
      * Retrieves the filename rule.
      * @return such rule.
      */
