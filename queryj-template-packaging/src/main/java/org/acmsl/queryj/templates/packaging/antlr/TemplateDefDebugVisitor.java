@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Visitor for "debug" rule.
  *
  * Date: 2014/05/12
  * Time: 05:14
