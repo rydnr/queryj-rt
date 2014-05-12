@@ -219,7 +219,7 @@ final boolean <property.id.voName.uncapitalized>Match = this.m__<property.id.voN
 >>
 
 property_hashCode(property) ::= <<
-<! Generates the hashcode contribution for each property. !>
+<! Generates the hashCode contribution for each property. !>
 <if(property.strictlyPrimitive)>
 final int <property.id.voName.uncapitalized>HashCode = ("" + this.m__<property.id.voName.capitalized>).hashCode();<else>
 <if(property.allowsNull)>final int <property.id.voName.uncapitalized>HashCode;
