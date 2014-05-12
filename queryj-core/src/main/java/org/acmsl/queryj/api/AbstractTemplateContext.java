@@ -114,7 +114,8 @@ public abstract class AbstractTemplateContext
      * @param debug whether debugging is enabled.
      * @param command the {@link org.acmsl.queryj.QueryJCommand} instance.
      */
-    protected AbstractTemplateContext(@NotNull final String pk, final boolean debug, @NotNull final QueryJCommand command)
+    protected AbstractTemplateContext(
+        @NotNull final String pk, final boolean debug, @NotNull final QueryJCommand command)
     {
         immutableSetPk(pk);
         immutableSetDebugEnabled(debug);
