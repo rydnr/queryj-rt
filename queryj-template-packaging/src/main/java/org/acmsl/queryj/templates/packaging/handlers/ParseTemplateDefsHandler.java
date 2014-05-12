@@ -319,7 +319,7 @@ public class ParseTemplateDefsHandler
 
         @NotNull final TemplateDefDisabledVisitor debugVisitor = new TemplateDefDebugVisitor();
 
-        @Nullable final boolean disabled;
+        @Nullable final boolean debug;
 
         try
         {
