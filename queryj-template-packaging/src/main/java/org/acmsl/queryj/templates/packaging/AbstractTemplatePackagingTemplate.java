@@ -43,7 +43,7 @@ import org.checkthread.annotations.ThreadSafe;
 import org.acmsl.queryj.templates.packaging.exceptions.InvalidTemplatePackagingTemplateException;
 
 /*
- * Importing QueryJ-Core classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.api.AbstractTemplate;
 import org.acmsl.queryj.api.STTemplate;
