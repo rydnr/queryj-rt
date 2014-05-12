@@ -84,7 +84,7 @@ public class PerForeignKeyTemplateContext
         final boolean debug,
         @NotNull final QueryJCommand command)
     {
-        super("fk" + foreignKey.getFkName(), command);
+        super("fk" + foreignKey.getFkName(), debug, command);
 
         immutableSetValue(buildForeignKeyKey(), foreignKey, command);
     }
