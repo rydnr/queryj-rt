@@ -92,6 +92,7 @@ public class PerCustomResultTemplateContext
     public PerCustomResultTemplateContext(
         @NotNull final Result<String> result,
         @NotNull final List<Property<String>> properties,
+        final boolean debug,
         @NotNull final QueryJCommand command)
     {
         super(result.getId(), command);
