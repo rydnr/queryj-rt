@@ -151,6 +151,9 @@ public abstract class AbstractTemplateContext
     }
 
     /**
+     *
+     */
+    /**
      * Specifies the command.
      * @param command the command.
      */
