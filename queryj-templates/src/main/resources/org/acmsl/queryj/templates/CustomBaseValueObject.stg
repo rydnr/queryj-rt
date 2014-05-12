@@ -107,6 +107,10 @@ public abstract class Abstract<result.id.voName>
     implements <result.id.voName>,
                Serializable
 {
+     * The serial version id.
+     */
+    private static final long serialVersionUID = <C.serialVersionUID>L;
+
     <result.properties:{ p | <attribute_declaration(property=p, C=C)>}; separator="\n\n">
 
     /**
