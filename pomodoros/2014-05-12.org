@@ -1,6 +1,8 @@
 * 2014/05/12
 ** TODO Fix CustomBaseValueObject #487: 3 ->
 ** TODO Fix CustomValueObject #486: 3 ->
+** TODO Fix CustomValueObjectImpl #488: 3 ->
+** TODO Fix CustomValueObjectFactory #489: 3 ->
 * Package layout:
 ** dao
 - DataAccessManager
