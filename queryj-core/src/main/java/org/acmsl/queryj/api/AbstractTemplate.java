@@ -353,7 +353,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
      * @param flag the desired behavior.
      */
     @SuppressWarnings("unused")
-    protected void setDebugEnabled(final boolean flag)
+    public void setDebugEnabled(final boolean flag)
     {
         immutableSetDebugEnabled(flag);
     }
