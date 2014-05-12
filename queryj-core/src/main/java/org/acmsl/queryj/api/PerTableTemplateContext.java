@@ -88,6 +88,7 @@ public class PerTableTemplateContext
      * Creates a {@code PerTableTemplateContext} with given information.
      * @param tableName the table name.
      * @param staticValues the static values.
+     * @param debug whether debugging is enabled.
      * @param command the {@link QueryJCommand}.
      */
     public PerTableTemplateContext(
