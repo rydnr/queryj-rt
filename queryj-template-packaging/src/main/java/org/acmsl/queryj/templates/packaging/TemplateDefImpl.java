@@ -356,7 +356,7 @@ public class TemplateDefImpl
      * @param disabled whether the template def is disabled.
      */
     @SuppressWarnings("unused")
-    protected void setDisabled(final boolean disabled)
+    protected void setDisabled(final boolean debug)
     {
         immutableSetDebug(debug);
     }
