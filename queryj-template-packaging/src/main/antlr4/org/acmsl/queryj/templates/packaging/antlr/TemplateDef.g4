@@ -23,7 +23,7 @@ disabledRule:
         'disabled' ';';
 
 debugRule:
-        'disabled' ';';
+        'debug' ';';
 
 ID : [a-zA-Z0-9\.\-_,<>]+ ;
 
