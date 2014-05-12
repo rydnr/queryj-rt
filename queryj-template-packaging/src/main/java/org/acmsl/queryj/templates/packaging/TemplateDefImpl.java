@@ -106,6 +106,11 @@ public class TemplateDefImpl
     private boolean m__bDisabled;
 
     /**
+     * Whether the template def is disabled or not.
+     */
+    private boolean m__bDebug;
+
+    /**
      * Creates an instance using given information.
      * @param name the name.
      * @param type the type.
