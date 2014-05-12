@@ -203,7 +203,6 @@ public abstract class AbstractTemplate<C extends TemplateContext>
      * Whether we are in debug mode.
      */
     private boolean m__bDebug;
-    private boolean debugEnabled;
 
     public boolean isDebugEnabled()
     {
