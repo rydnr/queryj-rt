@@ -97,6 +97,7 @@ public abstract class AbstractQueryJTemplateContext
     /**
      * Creates an {@code AbstractTemplateContext} with given information.
      * @param pk the pk.
+     * @param debug whether debugging is enabled.
      * @param command the {@link org.acmsl.queryj.QueryJCommand} instance.
      */
     protected AbstractQueryJTemplateContext(
