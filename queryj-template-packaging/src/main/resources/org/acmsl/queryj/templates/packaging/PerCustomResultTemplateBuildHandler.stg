@@ -165,7 +165,7 @@ public class <C.class_name>
             retrievePackage(
                 result,
                 retrieveCustomSqlProvider(parameters),
-                retrieveMetadataManager(parameters).getEngine(), parameters));
+                t_MetadataManager(parameters).getEngine(), parameters));
 
         return templateFactory.createTemplate(tableName, staticContents, t_Context, parameters);
     }
