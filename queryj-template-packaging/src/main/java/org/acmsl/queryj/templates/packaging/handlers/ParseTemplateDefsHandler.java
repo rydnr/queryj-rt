@@ -317,6 +317,21 @@ public class ParseTemplateDefsHandler
             throw new InvalidTemplateDefException("disabled", file, invalidClass);
         }
 
+        @NotNull final TemplateDefDisabledVisitor disabledVisitor = new TemplateDefDisabledVisitor();
+
+        @Nullable final boolean disabled;
+
+        try
+        {
+            disabledVisitor.visit(tree);
+
+            disabled = disabledVisitor.isDisabled();
+        }
+        catch (@NotNull final Throwable invalidClass)
+        {
+            throw new InvalidTemplateDefException("disabled", file, invalidClass);
+        }
+
         result =
             new TemplateDefImpl(
                 defName,
