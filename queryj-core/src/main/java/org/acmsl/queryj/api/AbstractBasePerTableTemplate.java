@@ -72,7 +72,7 @@ public abstract class AbstractBasePerTableTemplate<C extends PerTableTemplateCon
      */
     protected AbstractBasePerTableTemplate(@NotNull final C context, final boolean debug)
     {
-        super(context);
+        super(context, debug);
     }
 
     /**
