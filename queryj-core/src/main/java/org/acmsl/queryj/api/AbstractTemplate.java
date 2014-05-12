@@ -204,6 +204,10 @@ public abstract class AbstractTemplate<C extends TemplateContext>
      */
     private boolean m__bDebug;
 
+    /**
+     *
+     * @return
+     */
     public boolean isDebugEnabled()
     {
         return m__bDebug;
