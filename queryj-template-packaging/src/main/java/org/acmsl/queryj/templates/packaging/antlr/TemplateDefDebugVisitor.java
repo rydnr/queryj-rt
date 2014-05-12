@@ -38,12 +38,14 @@ package org.acmsl.queryj.templates.packaging.antlr;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.templates.packaging.antlr.TemplateDefParser.DisabledRuleContext;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
 
 /**
  *
@@ -53,5 +55,64 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class TemplateDefDebugVisitor
+    extends TemplateDefBaseVisitor<Boolean>
 {
+    /**
+     * Whether the template def is disabled or not.
+     */
+    private boolean m__bDisabled;
+
+    /**
+     * Specifies whether the template def is disabled.
+     * @param disabled if the template def is disabled.
+     */
+    protected final void immutableSetDisabled(final boolean disabled)
+    {
+        this.m__bDisabled = disabled;
+    }
+
+    /**
+     * Specifies whether the template def is disabled.
+     * @param disabled if the template def is disabled.
+     */
+    @SuppressWarnings("unused")
+    protected void setDisabled(final boolean disabled)
+    {
+        immutableSetDisabled(disabled);
+    }
+
+    /**
+     * Retrieves whether the template def is disabled.
+     * @return such information.
+     */
+    public boolean isDisabled()
+    {
+        return this.m__bDisabled;
+    }
+
+    /**
+     * {@inheritDoc}
+     * The default implementation returns the result of calling
+     * {@link #visitChildren} on {@code ctx}.
+     */
+    @Override
+    @Nullable
+    public Boolean visitDisabledRule(@NotNull final DisabledRuleContext ctx)
+    {
+        setDisabled(true);
+
+        return super.visitDisabledRule(ctx);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public String toString()
+    {
+        return
+            "{ \"class\": \"" + TemplateDefDisabledVisitor.class.getSimpleName() + '"'
+            + ", \"disabled\": " + m__bDisabled + " }";
+    }
 }
