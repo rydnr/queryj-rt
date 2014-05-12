@@ -81,6 +81,7 @@ public class PerForeignKeyTemplateContext
      */
     public PerForeignKeyTemplateContext(
         @NotNull final ForeignKey<String> foreignKey,
+        final boolean debug,
         @NotNull final QueryJCommand command)
     {
         super("fk" + foreignKey.getFkName(), command);
