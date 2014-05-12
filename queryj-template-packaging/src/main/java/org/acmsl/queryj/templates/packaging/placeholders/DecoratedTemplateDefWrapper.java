@@ -296,6 +296,26 @@ public class DecoratedTemplateDefWrapper
     }
 
     /**
+     * Checks whether given template def is disabled.
+     * @return {@code true} in such case.
+     */
+    @Override
+    public boolean isDisabled()
+    {
+        return isDisabled(getTemplateDef());
+    }
+
+    /**
+     * Checks whether given template def is disabled.
+     * @param templateDef the template def.
+     * @return {@code true} in such case.
+     */
+    protected boolean isDisabled(@NotNull final TemplateDef<String> templateDef)
+    {
+        return templateDef.isDisabled();
+    }
+
+    /**
      * Retrieves the filename rule.
      * @return such rule.
      */
