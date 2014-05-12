@@ -192,7 +192,7 @@ public class PerForeignKeyTemplatesTest
         super();
 
         <defs:{ d | <if(!d.disabled)><if(d.type.perForeignKey)><generator_mapping(def=d)><endif><endif>}; separator="\n">
-        <defs:{ d | <if(!d.disabled)><if(d.type.perForeignKey)><generator_mapping(def=d)><endif><endif>}; separator="\n">
+        <defs:{ d | <if(!d.disabled)><if(d.type.perForeignKey)><debug_mapping(def=d)><endif><endif>}; separator="\n">
     }
 
     /**
