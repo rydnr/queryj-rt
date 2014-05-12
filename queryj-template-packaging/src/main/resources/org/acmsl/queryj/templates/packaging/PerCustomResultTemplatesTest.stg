@@ -363,7 +363,10 @@ public class PerCustomResultTemplatesTest
 
                     @NotNull final PerCustomResultTemplateContext t_Context =
                         new PerCustomResultTemplateContext(
-                            result, properties, (DEBUG.containsKey(templateName) && DEBUG.get(templateName)), t_Command);
+                            result,
+                            properties,
+                            (DEBUG.containsKey(templateName) && DEBUG.get(templateName)),
+                            t_Command);
 
                     t_Context.setPackageName(packageName);
 
