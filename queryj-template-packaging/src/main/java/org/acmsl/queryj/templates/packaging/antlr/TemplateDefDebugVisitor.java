@@ -35,6 +35,9 @@
  */
 package org.acmsl.queryj.templates.packaging.antlr;
 
+/*
+ * Importing QueryJ Template Packaging classes.
+ */
 import org.acmsl.queryj.templates.packaging.antlr.TemplateDefParser.DebugRuleContext;
 
 /*
