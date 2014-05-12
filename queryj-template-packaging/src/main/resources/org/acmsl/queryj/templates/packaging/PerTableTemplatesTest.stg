@@ -526,7 +526,8 @@ public class PerTableTemplatesTest
                     resolvePackage(templateDef.getPackageName(), table.getName(), resolveEngine(engine));
 
                 @NotNull final PerTableTemplateContext t_Context =
-                    new PerTableTemplateContext(table.getName(), tableRows, DEBUG.containsKey(templateName), t_Command);
+                    new PerTableTemplateContext(table.getName(), tableRows,         <defs:{ d | <if(!d.disabled)><if(d.type.perTable)><debug_mapping(def=d)><endif><endif>}; separator="\n">
+DEBUG.containsKey(templateName), t_Command);
 
                 t_Context.setPackageName(packageName);
 
