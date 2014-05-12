@@ -348,7 +348,7 @@ public class TemplateDefImpl
      */
     protected final void immutableSetDisabled(final boolean disabled)
     {
-        this.m__bDisabled = disabled;
+        this.m__bDebug = debug;
     }
 
     /**
