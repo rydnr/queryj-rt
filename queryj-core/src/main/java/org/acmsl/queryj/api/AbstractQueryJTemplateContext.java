@@ -103,7 +103,7 @@ public abstract class AbstractQueryJTemplateContext
     protected AbstractQueryJTemplateContext(
         @NotNull final String pk, final boolean debug, @NotNull final QueryJCommand command)
     {
-        super(pk, command);
+        super(pk, debug, command);
     }
 
     /**
