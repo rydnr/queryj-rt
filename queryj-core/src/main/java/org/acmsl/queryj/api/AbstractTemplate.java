@@ -279,7 +279,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
         immutableSetTemplateContext(context);
         immutableSetPlaceholderPackage(placeholderPackage);
         setSTCache(new HashMap<String, Object>());
-        immutableSetDebugMode(false);
+        immutableSetDebugMode(debugEnabled);
         //ManagementFactory.getRuntimeMXBean(). getInputArguments().toString().contains(XRUNJDWP_TRANSPORT));
     }
 
