@@ -72,8 +72,8 @@ public class TemplateDefDebugVisitor
     }
 
     /**
-     * Specifies whether the template def is debug.
-     * @param debug if the template def is debug.
+     * Specifies whether the template def is marked as debugged.
+     * @param debug if the template def is being debugged.
      */
     @SuppressWarnings("unused")
     protected void setDebug(final boolean debug)
