@@ -206,7 +206,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
 
     /**
      * Whether debugging is enabled for this template.
-     * @return
+     * @return {@code true} in such case.
      */
     public boolean isDebugEnabled()
     {
