@@ -258,8 +258,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
      * @param context the context.
      * @param placeholderPackage the package of the placeholder classes.
      */
-    protected AbstractTemplate(
-        @NotNull final C context, @NotNull final String placeholderPackage)
+    protected AbstractTemplate(@NotNull final C context, @NotNull final String placeholderPackage)
     {
         this(context, placeholderPackage, false);
     }
