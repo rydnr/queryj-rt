@@ -96,7 +96,7 @@ public class PerRepositoryTemplateContext
         final boolean debug,
         @NotNull final QueryJCommand command)
     {
-        super(repositoryName, command);
+        super(repositoryName, debug, command);
 
         immutableSetTableNames(tableNames);
     }
