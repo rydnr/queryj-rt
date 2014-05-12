@@ -153,7 +153,7 @@ public class <C.class_name>
      * @return the template.
      */
     protected abstract <def.name.noExtension>Template createTemplate(
-        @NotNull final <def.name.noExtension>TemplateFactoryTF templateFactory,
+        @NotNull final <def.name.noExtension>TemplateFactory templateFactory,
         @NotNull final Result<String> result,
         @NotNull final List<Property<String>> properties,
         @NotNull final QueryJCommand parameters);
