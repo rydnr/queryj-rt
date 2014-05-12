@@ -202,7 +202,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
     /**
      * Whether we are in debug mode.
      */
-    private boolean m__bDebug;
+    private boolean m__bDebugEnabled;
 
     /**
      * Whether debugging is enabled for this template.
@@ -210,7 +210,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
      */
     public boolean isDebugEnabled()
     {
-        return m__bDebug;
+        return m__bDebugEnabled;
     }
 
     /**
@@ -343,7 +343,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
      */
     protected final void immutableSetDebugMode(final boolean mode)
     {
-        this.m__bDebug = mode;
+        this.m__bDebugEnabled = mode;
     }
 
     /**
@@ -361,7 +361,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
      */
     public boolean getDebugMode()
     {
-        return this.m__bDebug;
+        return this.m__bDebugEnabled;
     }
 
     /**
@@ -1037,7 +1037,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
               "{ \"class\": \"AbstractTemplate" + '"'
             + ", \"templateContext\": " + this.m__TemplateContext
             + ", \"placeholderPackage\": \"" + this.m__strPlaceholderPackage + '"'
-            + ", \"debug\": " + this.m__bDebug
+            + ", \"debug\": " + this.m__bDebugEnabled
             + ", \"package\": \"org.acmsl.queryj.api\" }";
     }
 }
