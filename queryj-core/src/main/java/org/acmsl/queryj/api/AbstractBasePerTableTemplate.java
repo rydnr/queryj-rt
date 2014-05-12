@@ -66,6 +66,16 @@ public abstract class AbstractBasePerTableTemplate<C extends PerTableTemplateCon
     }
 
     /**
+     * Builds an {@code AbstractBasePerTableTemplate} using given
+     * information.
+     * @param context the {@link PerTableTemplateContext} instance.
+     */
+    protected AbstractBasePerTableTemplate(@NotNull final C context, final boolean debug)
+    {
+        super(context);
+    }
+
+    /**
      * Builds the header for logging purposes.
      * @return such header.
      */
