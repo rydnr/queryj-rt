@@ -362,9 +362,8 @@ public class TemplateDefImpl
     }
 
     /**
-     * Checks whether the template def is disabled.
      * Checks whether the template def is being debugged or not.
-     * @return such condition.
+     * @return such behavior.
      */
     @Override
     public boolean isDebug()
