@@ -118,7 +118,7 @@ public class TemplateDefDisabledVisitor
     public String toString()
     {
         return
-              "{ \"class\": \"" + TemplateDefDisabledVisitor.class.getName() + '"'
+              "{ \"class\": \"" + TemplateDefDisabledVisitor.class.getSimpleName() + '"'
             + ", \"disabled\": " + m__bDisabled + " }";
     }
 }
