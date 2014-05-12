@@ -85,7 +85,7 @@ public class PerCustomSqlTemplateContext
      * @param command the {@link QueryJCommand} instance.
      */
     public PerCustomSqlTemplateContext(
-        @NotNull final Sql<String> sql, @NotNull final QueryJCommand command)
+        @NotNull final Sql<String> sql, final boolean debug, @NotNull final QueryJCommand command)
     {
         super(sql.getId(), command);
 
