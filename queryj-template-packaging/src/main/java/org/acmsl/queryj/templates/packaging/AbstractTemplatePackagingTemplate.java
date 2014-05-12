@@ -71,6 +71,7 @@ import java.util.Arrays;
 
 /**
  * Abstract template for Template Packaging.
+ * @param <C> the context type.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2013/08/15 08/34
