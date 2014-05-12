@@ -300,7 +300,7 @@ public class DecoratedTemplateDefWrapper
      * @return {@code true} in such case.
      */
     @Override
-    public boolean isDisabled()
+    public boolean isDebug()
     {
         return isDebug(getTemplateDef());
     }
