@@ -329,7 +329,7 @@ public class ParseTemplateDefsHandler
         }
         catch (@NotNull final Throwable invalidClass)
         {
-            throw new InvalidTemplateDefException("disabled", file, invalidClass);
+            throw new InvalidTemplateDefException("debug", file, invalidClass);
         }
 
         result =
