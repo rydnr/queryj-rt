@@ -119,6 +119,7 @@ public class TemplateDefImpl
      * @param packageName the package name.
      * @param file the file.
      * @param disabled whether the template def is marked as disabled.
+     * @param debug whether the template def is
      */
     public TemplateDefImpl(
         @NotNull final String name,
