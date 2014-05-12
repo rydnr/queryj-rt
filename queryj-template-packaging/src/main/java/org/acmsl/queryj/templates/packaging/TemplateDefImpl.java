@@ -344,7 +344,7 @@ public class TemplateDefImpl
 
     /**
      * Specifies whether the template def is being debugged or not.
-     * @param disabled whether the template def is disabled.
+     * @param debug such behavior.
      */
     protected final void immutableSetDebug(final boolean debug)
     {
