@@ -448,8 +448,6 @@ public class PerForeignKeyTemplatesTest
 
                 UniqueLogFactory.initializeInstance(LogFactory.getLog(PerTableTemplatesTest.class));
 
-                ((AbstractTemplate) template).setDebugMode(true);
-
                 try
                 {
                     generator.write(
