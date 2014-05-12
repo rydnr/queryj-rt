@@ -312,7 +312,7 @@ public class DecoratedTemplateDefWrapper
      */
     protected boolean isDisabled(@NotNull final TemplateDef<String> templateDef)
     {
-        return templateDef.isDisabled();
+        return templateDef.isDebug();
     }
 
     /**
