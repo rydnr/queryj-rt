@@ -203,7 +203,6 @@ public class <C.class_name>
      * @param engine the engine.
      * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @param projectPackage the project package.
-     * @param parameters the parameter map.
      * @return the package name.
      */
     @NotNull
