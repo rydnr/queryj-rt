@@ -83,7 +83,8 @@ public abstract class AbstractTemplatePackagingContext
      * @param pk the pk.
      * @param command the command.
      */
-    public AbstractTemplatePackagingContext(@NotNull final String pk, @NotNull final QueryJCommand command)
+    public AbstractTemplatePackagingContext(
+        @NotNull final String pk, @NotNull final QueryJCommand command)
     {
         super(pk, command);
     }
