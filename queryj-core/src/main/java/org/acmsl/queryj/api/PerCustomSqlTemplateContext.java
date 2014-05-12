@@ -81,6 +81,7 @@ public class PerCustomSqlTemplateContext
     /**
      * Creates a {@code PerCustomSqlTemplateContext} with given information.
      * @param sql the {@link Sql} instance.
+     * @param debug whether debugging is enabled.
      * @param command the {@link QueryJCommand} instance.
      */
     public PerCustomSqlTemplateContext(@NotNull final Sql<String> sql, @NotNull final QueryJCommand command)
