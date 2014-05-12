@@ -358,7 +358,7 @@ public class TemplateDefImpl
     @SuppressWarnings("unused")
     protected void setDisabled(final boolean disabled)
     {
-        immutableSetDisabled(disabled);
+        immutableSetDebug(debug);
     }
 
     /**
