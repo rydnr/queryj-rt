@@ -84,7 +84,8 @@ public class PerCustomSqlTemplateContext
      * @param debug whether debugging is enabled.
      * @param command the {@link QueryJCommand} instance.
      */
-    public PerCustomSqlTemplateContext(@NotNull final Sql<String> sql, @NotNull final QueryJCommand command)
+    public PerCustomSqlTemplateContext(
+        @NotNull final Sql<String> sql, @NotNull final QueryJCommand command)
     {
         super(sql.getId(), command);
 
