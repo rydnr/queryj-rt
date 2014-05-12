@@ -38,8 +38,10 @@ package org.acmsl.queryj.templates.packaging;
 import org.checkthread.annotations.ThreadSafe;
 
 /*
- * Importing
+ * Importing QueryJ Template Packaging classes.
  */
+import org.acmsl.queryj.templates.packaging.exceptions.InvalidTemplatePackagingTemplateException;
+
 /*
  * Importing QueryJ-Core classes.
  */
