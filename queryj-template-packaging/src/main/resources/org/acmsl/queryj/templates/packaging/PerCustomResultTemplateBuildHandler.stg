@@ -151,7 +151,7 @@ public class <C.class_name>
     protected <def.name.noExtension>Template createTemplate(
         @NotNull final <def.name.noExtension>TemplateFactory templateFactory,
         @NotNull final Result<String> result,
-        @NotNull final List\<Property<String>> properties,
+        @NotNull final List\<Property\<String\>> properties,
         @NotNull final QueryJCommand parameters)
     {
         @NotNull final PerTableTemplateContext t_Context =
