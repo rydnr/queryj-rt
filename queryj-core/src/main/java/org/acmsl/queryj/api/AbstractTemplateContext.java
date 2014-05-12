@@ -174,6 +174,7 @@ public abstract class AbstractTemplateContext
      * Retrieves whether we're debugging or not.
      * @return such behavior.
      */
+    @Override
     public boolean isDebugEnabled()
     {
         return this.m__bDebugEnabled;
