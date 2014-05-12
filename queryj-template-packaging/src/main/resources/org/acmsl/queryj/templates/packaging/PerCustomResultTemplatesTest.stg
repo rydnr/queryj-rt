@@ -61,7 +61,6 @@ source(C) ::= <<
 /*
  * Importing QueryJ Core classes.
  */
-import org.acmsl.queryj.api.AbstractTemplate;
 import org.acmsl.queryj.api.exceptions.DevelopmentModeException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.api.PerCustomResultTemplate;
