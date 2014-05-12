@@ -81,6 +81,7 @@ public abstract class AbstractTemplatePackagingContext
     /**
      * Creates a new instance.
      * @param pk the pk.
+    final boolean debug,
      * @param command the command.
      */
     public AbstractTemplatePackagingContext(
