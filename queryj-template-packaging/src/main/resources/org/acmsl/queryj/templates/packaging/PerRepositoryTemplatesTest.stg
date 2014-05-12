@@ -377,8 +377,6 @@ public class PerRepositoryTemplatesTest
 
             UniqueLogFactory.initializeInstance(LogFactory.getLog(PerRepositoryTemplatesTest.class));
 
-            ((AbstractTemplate) t_Template).setDebugMode(true);
-
             try
             {
                 t_Generator.write(
