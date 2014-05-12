@@ -174,7 +174,7 @@ public abstract class AbstractTemplateContext
      */
     public boolean isDebugEnabled()
     {
-        this.m__bDebugEnabled = flag;
+        return this.m__bDebugEnabled;
     }
 
     /**
