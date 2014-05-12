@@ -368,7 +368,7 @@ public class TemplateDefImpl
     @Override
     public boolean isDebug()
     {
-        return this.m__bDisabled;
+        return this.m__bDebug;
     }
 
     /**
