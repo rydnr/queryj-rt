@@ -157,6 +157,7 @@ public class <C.class_name>
         @NotNull final Result<String> result,
         @NotNull final List<Property<String>> properties,
         @NotNull final QueryJCommand parameters);
+
     /**
      * {@inheritDoc}
      */
