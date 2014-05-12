@@ -48,7 +48,6 @@ import org.acmsl.queryj.templates.packaging.exceptions.InvalidTemplatePackagingT
 import org.acmsl.queryj.api.AbstractTemplate;
 import org.acmsl.queryj.api.STTemplate;
 import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
-import org.acmsl.queryj.templates.packaging.exceptions.InvalidTemplatePackagingTemplateException;
 
 /*
  * Importing JetBrains annotations.
