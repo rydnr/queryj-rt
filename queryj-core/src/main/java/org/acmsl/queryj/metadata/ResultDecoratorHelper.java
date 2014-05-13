@@ -62,11 +62,6 @@ public class ResultDecoratorHelper
      */
     public ResultDecoratorHelper() {}
 
-    public boolean containNullableProperties(final List<Property<DecoratedString>> properties)
-    {
-        return false;  //To change body of created methods use File | Settings | File Templates.
-    }
-
     /**
      * Singleton to avoid double-check locking.
      */
@@ -86,4 +81,15 @@ public class ResultDecoratorHelper
     {
         return ResultDecoratorHelperSingletonContainer.SINGLETON;
     }
+
+    /**
+     * Checks whether given
+     * @param properties
+     * @return
+     */
+    public boolean containNullableProperties(final List<Property<DecoratedString>> properties)
+    {
+        return false;  //To change body of created methods use File | Settings | File Templates.
+    }
+
 }
