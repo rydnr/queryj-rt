@@ -68,7 +68,7 @@ sourceImpl(result, C) ::= <<
   C=C)><endif>
 */
 <package_declaration(p=C.package)>
-<checkers_import_maybe(container=C=C)>
+<checkers_import_maybe(container=result, C=C)>
 /*
  * Importing JDK classes.
  */
