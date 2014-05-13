@@ -38,6 +38,8 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.metadata.vo.Attribute;
+import org.acmsl.queryj.metadata.vo.AttributeIncompleteValueObject;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -47,6 +49,10 @@ import org.checkthread.annotations.ThreadSafe;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+
+import java.sql.Types;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
