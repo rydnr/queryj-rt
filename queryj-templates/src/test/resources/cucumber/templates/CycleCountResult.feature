@@ -21,6 +21,4 @@ Feature: Classes associated to custom results compile
     | CustomBaseValueObject    | AbstractGCycleCount.java           |
 #    | CustomValueObjectFactory | GCycleCountFactory.java            |
 #    | CustomValueObjectImpl    | GCycleCountImpl.java               |
-    | CustomBaseValueObject    | AbstractGCycleCount.java           |
-    | CustomValueObject        | GCycleCount.java                   |
 #    | CustomResultSetExtractor | GCycleCountResultSetExtractor.java |
