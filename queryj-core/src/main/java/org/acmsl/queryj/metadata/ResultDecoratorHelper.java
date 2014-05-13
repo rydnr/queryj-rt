@@ -58,6 +58,7 @@ public class ResultDecoratorHelper
      * Default constructor.
      */
     public ResultDecoratorHelper() {}
+
     /**
      * Singleton to avoid double-check locking.
      */
