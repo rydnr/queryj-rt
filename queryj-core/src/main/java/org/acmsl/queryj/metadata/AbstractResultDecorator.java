@@ -639,7 +639,7 @@ public abstract class AbstractResultDecorator
     @SuppressWarnings("unused")
     public boolean getContainsNullableItems()
     {
-        return getContainsNullableAttributes();
+        return getContainsNullableProperties();
     }
 
     /**
