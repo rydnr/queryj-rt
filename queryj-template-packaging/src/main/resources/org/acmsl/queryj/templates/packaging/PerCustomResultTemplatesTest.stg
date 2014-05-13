@@ -497,19 +497,18 @@ public class PerCustomResultTemplatesTest
     /**
      * Resolves the package.
      * @param packageTemplate the package template.
-     * @param resultName the result name.
+     * @param customResult the result.
      * @param engine the engine.
      * @return the actual package.
      */
     @NotNull
     protected String resolvePackage(
         @NotNull final String packageTemplate,
+        @NotNull final Result\<String> customResult,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
-        @NotNull final Engine<String> engine,
-        @NotNull final DecoratorFactory decoratorFactory,
-        @NotNull final Result customResult,
-        @NotNull final Engine\<String> engine)
+        @NotNull final Engine\<String> engine,
+        @NotNull final DecoratorFactory decoratorFactory)
     {
         @NotNull final String result;
 
