@@ -142,7 +142,7 @@ public class <result.id.voName>Factory
                 <result.properties:{ p | <p.id.voName.uncapitalized>}; separator=", ">);
     }
 
-    <tostring_method(result=result, C=C)>
+    <toString_method(result=result, C=C)>
 }
 >>
 
