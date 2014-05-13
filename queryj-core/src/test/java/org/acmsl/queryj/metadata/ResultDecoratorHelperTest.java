@@ -122,7 +122,6 @@ public class ResultDecoratorHelperTest
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final SqlPropertyDAO propertyDAO = EasyMock.createNiceMock(SqlPropertyDAO.class);
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
-
         @NotNull final DecoratorFactory decoratorFactory = CachingDecoratorFactory.getInstance();
 
         for (@NotNull final PropertyRef propertyRef : wrappedResult.getPropertyRefs())
