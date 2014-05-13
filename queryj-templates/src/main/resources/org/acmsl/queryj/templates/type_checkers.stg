@@ -149,7 +149,7 @@ checkers_import_maybe(container, C, useHeader=true) ::= <<
 !>
 <
 if(container.containsNotNullItems)><
-  if(table.containsNullableAttributes)><
+  if(container.containsNullableItems)><
     checkers_import(C=C)><
   else><
     notnull_import(C=C, useHeader=useHeader)>
