@@ -71,7 +71,7 @@ public class ResultDecoratorHelperTest
         @NotNull final ResultDecoratorHelper instance = ResultDecoratorHelper.getInstance();
 
         @NotNull final Property<String> property1 =
-            new PropertyElement<>("prop1", "myChild1", 1, "long", false);
+            new PropertyElement<>("prop1", "p", 1, "long", false);
 
         @NotNull final Property<String> property2 =
             new PropertyElement<>("prop2", "name", 2, "String", false);
