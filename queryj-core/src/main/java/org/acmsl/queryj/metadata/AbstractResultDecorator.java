@@ -685,7 +685,7 @@ public abstract class AbstractResultDecorator
      * @return {@code true} in such case.
      */
     protected boolean containNotNullProperties(
-        @NotNull final ListDecorator<Property<DecoratedString>> properties,
+        @NotNull final List<Property<DecoratedString>> properties,
         @NotNull final MetadataTypeManager metadataTypeManager,
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
