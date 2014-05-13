@@ -353,6 +353,7 @@ public class PerCustomResultTemplatesTest
                     new QueryJCommandWrapper\<MetadataManager>(t_Command).setSetting(
                         DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, metadataManager);
 
+
                     @Nullable final PerCustomResultTemplateFactory\<? extends PerCustomResultTemplate\<PerCustomResultTemplateContext>, PerCustomResultTemplateContext> templateFactory =
                         retrieveTemplateFactory(templateName);
 
