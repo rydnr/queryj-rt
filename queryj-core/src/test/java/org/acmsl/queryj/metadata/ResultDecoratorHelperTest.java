@@ -118,8 +118,9 @@ public class ResultDecoratorHelperTest
 
         @NotNull final Result<String> wrappedResult = new ResultElement<>("my.result", "MyResult");
 
-        @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(Cus
-        )
+        @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
+
+        @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock()
         result =
             new AbstractResultDecorator(wrappedResult, customSqlProvider, metadataManager, decoratorFactory) {};
 
