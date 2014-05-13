@@ -125,7 +125,7 @@ public class ResultDecoratorHelperTest
         @NotNull final DecoratorFactory decoratorFactory = CachingDecoratorFactory.getInstance();
         EasyMock.expect(customSqlProvider.getSqlPropertyDAO()).andReturn(propertyDAO).anyTimes();
 
-        for (@NotNull final Property property : properties)
+        for (@NotNull final Property<> property : properties)
         {
             EasyMock.expect(propertyDAO.findByPrimaryKey(property.getId())).andReturn(property);
         }
