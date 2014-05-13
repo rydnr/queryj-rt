@@ -71,6 +71,6 @@ public class ResultDecoratorHelper
      */
     public static ResultDecoratorHelper getInstance()
     {
-        retun
+        return ResultDecoratorHelperSingletonContainer.SINGLETON;
     }
 }
