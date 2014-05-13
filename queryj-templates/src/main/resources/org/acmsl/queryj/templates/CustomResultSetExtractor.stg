@@ -146,6 +146,7 @@ defaultExtractor(result, repository, C) ::= <<
 <notnull(C=C)>
 protected <result.id.voName> extractData(
     <notnull(C=C)>final ResultSet resultSet,
+    <notnull(C=C)>final String sql,
     <nullable(C=C)>final DAOListener listener)
     throws  SQLException,
             DataAccessException
