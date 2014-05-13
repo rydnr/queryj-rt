@@ -2114,7 +2114,7 @@ public abstract class AbstractTableDecorator
     @SuppressWarnings("unused")
     public boolean getContainsNotNullItems()
     {
-
+        return getContainsNotNullAttributes();
     }
     /**
      * Checks whether some of the given attributes cannot be null.
