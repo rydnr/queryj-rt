@@ -93,7 +93,7 @@ public class ResultDecoratorHelper
     }
 
     /**
-     * Checks whether given {@link Property} list contains nullable items or not.
+     * Checks whether given {@link Property} list contains not-null items or not.
      * @param properties the properties.
      * @return {@code true} in such case.
      */
