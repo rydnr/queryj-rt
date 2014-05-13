@@ -116,7 +116,17 @@ public class ResultDecoratorHelper
         @NotNull final List<Property<DecoratedString>> properties,
         @NotNull final MetadataTypeManager metadataTypeManager)
     {
-        return false;
-    }
+        boolean result = false;
 
+        for (@Nullable final Property<DecoratedString> property : properties)
+        {
+            if (   (property != null)
+                   && (property.isNullable()))
+            {
+                result = true;
+                break;
+            }
+        }
+        return result;
+    }
 }
