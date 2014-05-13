@@ -348,6 +348,8 @@ public class CachingResultDecorator
         return result;
     }
 
-    /==
+    /**
+     * {@inheritDoc}
+     */
 
 }
