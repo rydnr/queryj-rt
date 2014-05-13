@@ -121,10 +121,10 @@ public class ResultDecoratorHelper
 
         for (@Nullable final Property<V> property : properties)
         {
-            @NotNull final String type = "" + property.getType();
-
             if (property != null)
             {
+                @NotNull final String type = "" + property.getType();
+
 
             }
                 && (!property.isNullable())
