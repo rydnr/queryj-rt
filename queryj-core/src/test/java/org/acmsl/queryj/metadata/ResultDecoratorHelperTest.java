@@ -127,7 +127,7 @@ public class ResultDecoratorHelperTest
 
         for (@NotNull final PropertyRef propertyRef : wrappedResult.getPropertyRefs())
         {
-            EasyMock.expect(propertyDAO.findByPrimaryKey())
+            EasyMock.expect(propertyDAO.findByPrimaryKey(propertyRef.getId()))
         }
         result =
             new AbstractResultDecorator(wrappedResult, customSqlProvider, metadataManager, decoratorFactory) {};
