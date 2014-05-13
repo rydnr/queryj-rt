@@ -89,8 +89,8 @@ public class ResultDecoratorHelper
      * @return {@code true} in such case.
      */
     public boolean containNullableProperties(
-        final List<Property<DecoratedString>> properties,
-        )
+        @NotNull final List<Property<DecoratedString>> properties,
+        @NotNull final MetadataTypeManager metadataTypeManager)
     {
         boolean result = false;
 
