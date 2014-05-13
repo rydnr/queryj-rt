@@ -644,7 +644,7 @@ public abstract class AbstractResultDecorator
 
     /**
      * Checks whether some of the given properties are nullable or not.
-     * @param attributes the {@link Property properties}.
+     * @param properties the {@link Property properties}.
      * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
      * @return {@code true} in such case.
      */
