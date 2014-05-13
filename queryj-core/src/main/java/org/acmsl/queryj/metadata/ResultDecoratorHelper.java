@@ -65,5 +65,12 @@ public class ResultDecoratorHelper
         public static final ResultDecoratorHelper SINGLETON = new ResultDecoratorHelper();
     }
 
-
+    /**
+     * Retrieves the singleton instance.
+     * @return such instance.
+     */
+    public static ResultDecoratorHelper getInstance()
+    {
+        retun
+    }
 }
