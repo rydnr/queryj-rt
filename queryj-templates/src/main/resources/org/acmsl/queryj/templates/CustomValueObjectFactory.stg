@@ -132,7 +132,7 @@ public class <result.id.voName>Factory
     /**
      * Creates a new {@code <result.id.voName>}.
      <result.properties:{ p | <property_javadoc(property=p)>}; separator="\n">
-     * @return the new {@link <result.id.voName>}.
+     * @return the new {@link <result.id.voName>} instance.
      */
     <notnull(C=C)>
     public <result.id.voName> create(
