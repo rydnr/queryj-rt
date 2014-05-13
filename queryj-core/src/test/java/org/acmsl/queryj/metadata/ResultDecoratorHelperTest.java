@@ -103,4 +103,7 @@ public class ResultDecoratorHelperTest
     }
 
     protected AbstractResultDecorator setupResultDecorator(@NotNull final List<Property<String>> properties)
+    {
+
+    }
 }
