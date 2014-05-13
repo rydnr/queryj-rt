@@ -78,6 +78,7 @@ sourceImpl(result, C) ::= <<
 import java.io.Serializable;
 <if(result.propertyTypes)>
 <result.propertyTypes:{ t | import <t>;}; separator="\n">
+<else>
 <endif>
 
 <class(result=result, repository=C.repository, C=C)>
