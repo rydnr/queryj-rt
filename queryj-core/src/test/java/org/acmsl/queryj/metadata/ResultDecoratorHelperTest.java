@@ -137,7 +137,7 @@ public class ResultDecoratorHelperTest
 
         @NotNull final AbstractResultDecorator result = setupResultDecorator(properties);
 
-        Assert.assertTrue(instance.containNotNullProperties(result.getProperties()));
+        Assert.assertTrue(instance.containNotNullProperties(result.getProperties(), ));
     }
 
     /**
