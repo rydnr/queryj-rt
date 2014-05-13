@@ -94,16 +94,5 @@ public class ResultDecoratorHelperTest
             setupResultDecorator(properties, null);
 
         Assert.assertTrue(instance.containNullableProperties(result.getProperties()));
-
-        @NotNull final List<Property<String>> attributes2 = new ArrayList<>(2);
-
-        @NotNull final AbstractTableDecorator table2 =
-            AbstractTableDecoratorTest.setupTableDecorator(attributes1, null);
-
-        attributes2.add(childAttribute1);
-        attributes2.add(childAttribute3);
-
-        Assert.assertTrue(instance.containNullableAttributes(table2.getAttributes()));
-
     }
 }
