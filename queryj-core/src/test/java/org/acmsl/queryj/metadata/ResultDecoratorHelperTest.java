@@ -76,6 +76,9 @@ public class ResultDecoratorHelperTest
         @NotNull final Property<String> property2 =
             new PropertyElement<>("prop2", "name", 2, "String", false);
 
+        @NotNull final Property<String> property2 =
+            new PropertyElement<>("prop2", "name", 2, "String", false);
+
         @NotNull final List<Property<String>> properties = new ArrayList<>(4);
 
         properties.add(property1);
