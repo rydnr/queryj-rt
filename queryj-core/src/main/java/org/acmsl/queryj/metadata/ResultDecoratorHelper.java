@@ -134,6 +134,7 @@ public class ResultDecoratorHelper
                 }
             }
         }
+
         return result;
     }
 }
