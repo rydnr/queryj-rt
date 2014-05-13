@@ -62,6 +62,8 @@ public class ResultDecoratorHelper
         /**
          * The singleton instance.
          */
-
+        public static final ResultDecoratorHelper SINGLETON = new ResultDecoratorHelper();
     }
+
+
 }
