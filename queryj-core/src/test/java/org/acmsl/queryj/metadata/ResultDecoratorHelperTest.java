@@ -102,4 +102,6 @@ public class ResultDecoratorHelperTest
 
         Assert.assertTrue(instance.containNullableProperties(result.getProperties()));
     }
+
+    protected
 }
