@@ -348,4 +348,6 @@ public class CachingResultDecorator
         return result;
     }
 
+    l==
+
 }
