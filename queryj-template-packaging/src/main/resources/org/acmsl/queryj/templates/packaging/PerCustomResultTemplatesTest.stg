@@ -504,6 +504,10 @@ public class PerCustomResultTemplatesTest
     @NotNull
     protected String resolvePackage(
         @NotNull final String packageTemplate,
+        @NotNull final CustomSqlProvider customSqlProvider,
+        @NotNull final MetadataManager metadataManager,
+        @NotNull final Engine<String> engine,
+        @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final Result customResult,
         @NotNull final Engine\<String> engine)
     {
