@@ -68,7 +68,7 @@ public class ResultDecoratorHelperTest
     {
         @NotNull final ResultDecoratorHelper instance = ResultDecoratorHelper.getInstance();
 
-        @NotNull final Attribute<String> childAttribute1 =
+        @NotNull final Property<String> childAttribute1 =
             new AttributeIncompleteValueObject(
                 "myChildId1",
                 Types.BIGINT,
