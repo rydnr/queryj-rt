@@ -112,7 +112,7 @@ public class ResultDecoratorHelper
      * @param metadataTypeManager the {@link MetadataTypeManager} instance.
      * @return {@code true} in such case.
      */
-    public boolean containNotNullProperties(
+    public <V> boolean containNotNullProperties(
         @NotNull final List<Property<V>> properties,
         @NotNull final MetadataTypeManager metadataTypeManager)
     {
