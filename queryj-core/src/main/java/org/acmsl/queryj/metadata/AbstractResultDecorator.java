@@ -678,7 +678,7 @@ public abstract class AbstractResultDecorator
     }
 
     /**
-     * Checks whether some of the given attributes cannot be null.
+     * Checks whether some of the given properties cannot be null.
      * @param properties the {@link Property properties}.
      * @param metadataTypeManager the {@link MetadataTypeManager} instance.
      * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
