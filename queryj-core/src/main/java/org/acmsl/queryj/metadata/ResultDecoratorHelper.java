@@ -108,10 +108,10 @@ public class ResultDecoratorHelper
 
     /**
      * Checks whether given {@link Property} list contains not-null items or not.
-     * @param <V> the type.
      * @param properties the properties.
      * @param metadataTypeManager the {@link MetadataTypeManager} instance.
      * @return {@code true} in such case.
+     * @param <V> the type.
      */
     public <V> boolean containNotNullProperties(
         @NotNull final List<Property<V>> properties,
