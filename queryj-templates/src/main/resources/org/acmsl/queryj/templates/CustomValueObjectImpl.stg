@@ -134,6 +134,7 @@ toString_method(result, C) ::= <<
 public String toString()
 {
     <notnull(C=C)>final StringBuilder result = new StringBuilder(
-        "{ \"class\": \"<result.id.voName>Impl\", \"super\": " + super.toString() + ", \"package\": \"<C.package>\" }";
+        "{ \"class\": \"<result.id.voName>Impl\", \"super\": ");
+         + super.toString() + ", \"package\": \"<C.package>\" }";
 }
 >>
