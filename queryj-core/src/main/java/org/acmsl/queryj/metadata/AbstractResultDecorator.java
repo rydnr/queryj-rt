@@ -681,7 +681,7 @@ public abstract class AbstractResultDecorator
      * Checks whether some of the given properties cannot be null.
      * @param properties the {@link Property properties}.
      * @param metadataTypeManager the {@link MetadataTypeManager} instance.
-     * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
+     * @param resultDecoratorHelper the {@link ResultDecoratorHelper} instance.
      * @return {@code true} in such case.
      */
     protected boolean containNotNullProperties(
