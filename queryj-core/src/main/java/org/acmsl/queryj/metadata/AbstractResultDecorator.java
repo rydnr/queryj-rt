@@ -623,6 +623,76 @@ public abstract class AbstractResultDecorator
     }
 
     /**
+     * Checks whether some of the attributes are nullable or not.
+     * @return {@code true} in such case.
+     */
+    @SuppressWarnings("unused")
+    public boolean getContainsNullableAttributes()
+    {
+        return containNullableAttributes(getAttributes(), TableDecoratorHelper.getInstance());
+    }
+
+    /**
+     * Checks whether some of the attributes are nullable or not.
+     * @return {@code true} in such case.
+     */
+    @SuppressWarnings("unused")
+    public boolean getContainsNullableItems()
+    {
+        return getContainsNullableAttributes();
+    }
+
+    /**
+     * Checks whether some of the given attributes are nullable or not.
+     * @param attributes the {@link Attribute}s.
+     * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
+     * @return {@code true} in such case.
+     */
+    protected boolean containNullableAttributes(
+        @NotNull final ListDecorator<Attribute<DecoratedString>> attributes,
+        @NotNull final TableDecoratorHelper tableDecoratorHelper)
+    {
+        return tableDecoratorHelper.containNullableAttributes(attributes);
+    }
+
+    /**
+     * Checks whether some of the attributes cannot be null.
+     * @return {@code true} in such case.
+     */
+    @SuppressWarnings("unused")
+    public boolean getContainsNotNullAttributes()
+    {
+        return
+            containNotNullAttributes(
+                getAttributes(), getMetadataManager().getMetadataTypeManager(), TableDecoratorHelper.getInstance());
+    }
+
+    /**
+     * Checks whether some of the attributes cannot be null.
+     * @return {@code true} in such case.
+     */
+    @SuppressWarnings("unused")
+    public boolean getContainsNotNullItems()
+    {
+        return getContainsNotNullAttributes();
+    }
+
+    /**
+     * Checks whether some of the given attributes cannot be null.
+     * @param attributes the {@link Attribute}s.
+     * @param metadataTypeManager the {@link MetadataTypeManager} instance.
+     * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
+     * @return {@code true} in such case.
+     */
+    protected boolean containNotNullAttributes(
+        @NotNull final ListDecorator<Attribute<DecoratedString>> attributes,
+        @NotNull final MetadataTypeManager metadataTypeManager,
+        @NotNull final TableDecoratorHelper tableDecoratorHelper)
+    {
+        return tableDecoratorHelper.containNotNullAttributes(attributes, metadataTypeManager);
+    }
+
+    /**
      * Provides a text representation of the information
      * contained in given instance.
      * @return such information.
