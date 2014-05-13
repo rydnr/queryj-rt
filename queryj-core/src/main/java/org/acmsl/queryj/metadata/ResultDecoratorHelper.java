@@ -94,7 +94,7 @@ public class ResultDecoratorHelper
 
         for (@Nullable final Property<DecoratedString> property : properties)
         {
-
+            if (property.getType())
         }
         return result;
     }
