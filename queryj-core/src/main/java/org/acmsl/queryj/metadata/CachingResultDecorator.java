@@ -360,7 +360,8 @@ public class CachingResultDecorator
         result.append(CachingResultDecorator.class.getSimpleName());
         result.append("\", \"super\": ");
         result.append(super.toString());
-        result.append(", \"cachedProperties\": ")
+        result.append(", \"cachedProperties\": \"");
+        result.append()
         result.append(", \"package\": \"org.acmsl.queryj.metadata\" }");
 
         return result.toString();
