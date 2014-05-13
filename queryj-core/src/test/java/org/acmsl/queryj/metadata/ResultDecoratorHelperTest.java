@@ -112,8 +112,6 @@ public class ResultDecoratorHelperTest
     {
         @NotNull final AbstractResultDecorator result =
             new AbstractResultDecorator(wrappedResult, customSqlProvider, metadataManager, decoratorFactory) {};
-        {
-        };
 
         return result;
     }
