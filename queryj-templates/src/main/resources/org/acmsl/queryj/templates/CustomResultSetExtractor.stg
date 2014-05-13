@@ -155,8 +155,8 @@ protected <result.id.voName> extractData(
 /**
  * Extracts {@link <result.id.voName>} information from given result set.
  * @param resultSet the result set.
- * @param listener the {@link <repository.voName>DAOListener} instance.
- * @param factory the {@link <result.id.voName>ValueObjectFactory}
+ * @param listener the {@link DAOListener} instance.
+ * @param factory the {@link <result.id.voName>Factory}
  * instance.
  * @return the {@code <result.id.voName>} or
  * {@code null} if the operation returned no data.
