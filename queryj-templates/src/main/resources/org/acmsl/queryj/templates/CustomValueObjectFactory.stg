@@ -101,7 +101,7 @@ class(result, repository, C) ::= <<
     ]:{line |<line>}; separator="\n * ">
 <class_common_javadoc(template="org/acmsl/queryj/templates/CustomValueObjectFactory.stg", C=C)>
  */
-<common_class_annotations(C=C)>
+<class_annotations(C=C)>
 public class <result.id.voName>Factory
 {
     /**
