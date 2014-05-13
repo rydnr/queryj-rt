@@ -60,6 +60,8 @@ public class ResultDecoratorHelperTest
     @Test
     public void containsNullableProperties_detects_nullable_properties()
     {
-        @NotNull final ResultDecoratorHelper instance =
+        @NotNull final ResultDecoratorHelper instance = ResultDecoratorHelper.getInstance();
+
+
     }
 }
