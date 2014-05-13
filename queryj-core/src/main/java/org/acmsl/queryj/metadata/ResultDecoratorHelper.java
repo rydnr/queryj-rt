@@ -57,7 +57,7 @@ public class ResultDecoratorHelper
     /**
      * Singleton to avoid double-check locking.
      */
-    private static final ResultDecoratorHelperSingletonContainer
+    private static final class ResultDecoratorHelperSingletonContainer
     {
         /**
          * The singleton instance.
