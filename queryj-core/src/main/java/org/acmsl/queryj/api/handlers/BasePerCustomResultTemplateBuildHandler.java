@@ -189,7 +189,6 @@ public abstract class BasePerCustomResultTemplateBuildHandler
         for  (@Nullable final Result<String> t_ResultElement: resultElements)
         {
             if (   (t_ResultElement != null)
-                && (!)
                 && (isGenerationAllowedForResult(
                         t_ResultElement, customSqlProvider, metadataManager, customResultUtils)))
             {
