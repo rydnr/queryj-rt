@@ -26,9 +26,11 @@
 - CustomValueObject
 ** vo/core
 - ValueObjectFactory
+- CustomValueObjectFactory
 ** vo/impl
 - ValueObjectImpl
 - ValueObjectFactoryImpl
 - BaseValueObject
 - CustomValueObjectImpl
+- CustomValueObjectFactoryImpl
 - CustomBaseValueObject
