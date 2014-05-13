@@ -80,7 +80,7 @@ public class ResultDecoratorHelperTest
 
         @NotNull final List<Property<String>> properties = new ArrayList<>(4);
 
-        attributes1.add(childAttribute1);
+        properties.add(childAttribute1);
         attributes1.add(childAttribute2);
         attributes1.add(childAttribute3);
         attributes1.add(childAttribute4);
