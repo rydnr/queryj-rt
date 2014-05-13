@@ -159,7 +159,7 @@ public class ResultDecoratorHelperTest
         @NotNull final MetadataTypeManager metadataTypeManager = JdbcMetadataTypeManager.getInstance();
         @NotNull final DecoratorFactory decoratorFactory = CachingDecoratorFactory.getInstance();
         EasyMock.expect(customSqlProvider.getSqlPropertyDAO()).andReturn(propertyDAO).anyTimes();
-        EasyMock.expect()
+        EasyMock.expect(meta)
 
         for (@NotNull final Property<String> property : properties)
         {
