@@ -39,6 +39,7 @@ package org.acmsl.queryj.metadata;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.customsql.Property;
+import org.acmsl.queryj.customsql.PropertyElement;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.AttributeIncompleteValueObject;
 import org.jetbrains.annotations.NotNull;
@@ -70,7 +71,7 @@ public class ResultDecoratorHelperTest
         @NotNull final ResultDecoratorHelper instance = ResultDecoratorHelper.getInstance();
 
         @NotNull final Property<String> property1 =
-            new AttributeIncompleteValueObject(
+            new PropertyElement<String>(
                 "myChildId1",
                 Types.BIGINT,
                 "long",
