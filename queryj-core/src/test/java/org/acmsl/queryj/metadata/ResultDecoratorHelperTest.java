@@ -58,5 +58,8 @@ import org.junit.runners.JUnit4;
 public class ResultDecoratorHelperTest
 {
     @Test
-    public void
+    public void containsNullableProperties_detects_nullable_properties()
+    {
+
+    }
 }
