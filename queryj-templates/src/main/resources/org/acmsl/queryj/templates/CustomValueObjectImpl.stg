@@ -68,7 +68,7 @@ sourceImpl(result, C) ::= <<
   C=C)><endif>
  */
 <package_declaration(p=C.package)>
-<checkers_import(C=C)>
+<notnull_import_maybe_nullable(container=result, C=C)>
 <if(C.implement_markers)>
 
 <endif>
