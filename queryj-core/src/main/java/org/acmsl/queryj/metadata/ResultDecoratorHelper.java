@@ -125,8 +125,7 @@ public class ResultDecoratorHelper
             {
                 @NotNull final String type = "" + property.getType();
 
-
-            }
+                if (
                 && (!property.isNullable())
                 && (   (metadataTypeManager.isPrimitiveWrapper(type)
                     || (!metadataTypeManager.isPrimitive(type)
