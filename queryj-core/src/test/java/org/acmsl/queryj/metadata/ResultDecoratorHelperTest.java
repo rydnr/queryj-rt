@@ -112,7 +112,7 @@ public class ResultDecoratorHelperTest
      * for a given {@link org.acmsl.queryj.customsql.Result}.
      */
     @Test
-    public void containsNullableProperties_detects_nullable_properties()
+    public void containsNotNullProperties_detects_nullable_properties()
     {
         @NotNull final ResultDecoratorHelper instance = ResultDecoratorHelper.getInstance();
 
