@@ -83,9 +83,9 @@ public class ResultDecoratorHelper
     }
 
     /**
-     * Checks whether given lis
-     * @param properties
-     * @return
+     * Checks whether given {@link Property} list contains nullable items or not.
+     * @param properties the properties.
+     * @return {@code true} in such case.
      */
     public boolean containNullableProperties(final List<Property<DecoratedString>> properties)
     {
