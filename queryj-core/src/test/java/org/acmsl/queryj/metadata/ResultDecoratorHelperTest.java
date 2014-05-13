@@ -81,9 +81,9 @@ public class ResultDecoratorHelperTest
         @NotNull final List<Property<String>> properties = new ArrayList<>(4);
 
         properties.add(childAttribute1);
-        attributes1.add(childAttribute2);
-        attributes1.add(childAttribute3);
-        attributes1.add(childAttribute4);
+        properties.add(childAttribute2);
+        properties.add(childAttribute3);
+        properties.add();
 
         @NotNull final AbstractTableDecorator table1 =
             AbstractTableDecoratorTest.setupTableDecorator(attributes1, null);
