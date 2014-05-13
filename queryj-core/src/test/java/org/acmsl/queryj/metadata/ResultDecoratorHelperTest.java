@@ -73,6 +73,9 @@ public class ResultDecoratorHelperTest
         @NotNull final Property<String> property1 =
             new PropertyElement<>("myChildId1", "myChild1", 1, "long", false); // allowsNull
 
+        @NotNull final Property<String> property1 =
+            new PropertyElement<>("myChildId1", "myChild1", 1, "long", false); // allowsNull
+
         @NotNull final List<Property<String>> properties = new ArrayList<>(4);
 
         properties.add(property1);
