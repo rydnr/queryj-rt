@@ -111,7 +111,7 @@ public class ResultDecoratorHelperTest
     protected AbstractResultDecorator setupResultDecorator(@NotNull final List<Property<String>> properties)
     {
         @NotNull final AbstractResultDecorator result =
-            new AbstractResultDecorator()
+            new AbstractResultDecorator(wrappedResult, )
         {
         };
 
