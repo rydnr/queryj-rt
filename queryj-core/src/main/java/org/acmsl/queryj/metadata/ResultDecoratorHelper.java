@@ -127,10 +127,11 @@ public class ResultDecoratorHelper
 
                 if (   (!property.isNullable())
                     && (   (metadataTypeManager.isPrimitiveWrapper(type))
-                        || (!metadataTypeManager.isPrimitive(type))
-            {
-                result = true;
-                break;
+                        || (!metadataTypeManager.isPrimitive(type))))
+                {
+                    result = true;
+                    break;
+                }
             }
         }
         return result;
