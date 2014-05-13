@@ -78,7 +78,7 @@ import java.io.Serializable;
 <else>
 <endif>
 
-<class(result=result, repository=C.repository, C=C)>
+<interface(result=result, repository=C.repository, C=C)>
 >>
 
 description(result) ::= <<
