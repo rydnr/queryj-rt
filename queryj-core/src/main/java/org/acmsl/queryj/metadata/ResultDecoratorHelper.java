@@ -102,6 +102,7 @@ public class ResultDecoratorHelper
                 break;
             }
         }
+
         return result;
     }
 
