@@ -69,6 +69,7 @@ sourceFactory(result, C) ::= <<
  */
 <package_declaration(p=C.package)>
 <checkers_import(C=C)>
+
 <if(result.propertyTypes)>
 /*
  * Importing JDK classes.
