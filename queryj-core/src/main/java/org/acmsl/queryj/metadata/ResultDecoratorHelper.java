@@ -96,7 +96,11 @@ public class ResultDecoratorHelper
 
         for (@Nullable final Property<DecoratedString> property : properties)
         {
-            if (property.
+            if (property.isNullable())
+            {
+                result = true;
+                break;
+            }
         }
         return result;
     }
