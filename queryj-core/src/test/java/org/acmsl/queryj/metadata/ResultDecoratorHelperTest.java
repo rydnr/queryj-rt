@@ -44,6 +44,8 @@ import org.acmsl.queryj.customsql.PropertyElement;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.customsql.Result;
+import org.acmsl.queryj.customsql.ResultElement;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -112,7 +114,7 @@ public class ResultDecoratorHelperTest
     {
         @NotNull final AbstractResultDecorator result;
 
-        @NotNull final
+        @NotNull final Result<String> wrappedResult = new ResultElement()
         result =
             new AbstractResultDecorator(wrappedResult, customSqlProvider, metadataManager, decoratorFactory) {};
 
