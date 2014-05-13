@@ -660,7 +660,7 @@ public abstract class AbstractResultDecorator
      * @return {@code true} in such case.
      */
     @SuppressWarnings("unused")
-    public boolean getContainsNotNullAttributes()
+    public boolean getContainsNotNullProperties()
     {
         return
             containNotNullProperties(
