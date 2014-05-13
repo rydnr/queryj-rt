@@ -73,7 +73,7 @@ public class ResultDecoratorHelperTest
         @NotNull final Property<String> property1 =
             new PropertyElement<String>(
                 "myChildId1",
-                Types.BIGINT,
+                "myChild1",
                 "long",
                 "id1",
                 "child comment 1",
