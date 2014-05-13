@@ -57,7 +57,7 @@ public class ResultDecoratorHelper
     /**
      * Default constructor.
      */
-    public ResultDecoratorHelper
+    public ResultDecoratorHelper() {}
     /**
      * Singleton to avoid double-check locking.
      */
