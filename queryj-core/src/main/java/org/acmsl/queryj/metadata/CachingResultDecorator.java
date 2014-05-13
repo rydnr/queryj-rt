@@ -362,7 +362,7 @@ public class CachingResultDecorator
         result.append(super.toString());
         result.append(", \"cachedProperties\": \"");
         result.append(this.m__lCachedProperties);
-        result.append(", \"cachedProperties\": \"");
+        result.append("\", \"cachedProperties\": \"");
         result.append(this.m__lCachedProperties);
         result.append(", \"package\": \"org.acmsl.queryj.metadata\" }");
 
