@@ -99,7 +99,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
     public static final String CUSTOM_RESULTS_NO_DUPLICATES = CUSTOM_RESULTS + "..NoDuplic4tes;";
 
     /**
-     * Creates a <code>BasePerCustomResultTemplateBuildHandler</code> instance.
+     * Creates a {@code BasePerCustomResultTemplateBuildHandler} instance.
      */
     @SuppressWarnings("unused")
     public BasePerCustomResultTemplateBuildHandler() {}
@@ -107,7 +107,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
     /**
      * Handles given information.
      * @param parameters the parameters.
-     * @return <code>true</code> if the chain should be stopped.
+     * @return {@code true} if the chain should be stopped.
      */
     @Override
     public boolean handle(@NotNull final QueryJCommand parameters)
