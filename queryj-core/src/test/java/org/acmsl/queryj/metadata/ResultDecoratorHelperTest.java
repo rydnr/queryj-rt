@@ -62,6 +62,79 @@ public class ResultDecoratorHelperTest
     {
         @NotNull final ResultDecoratorHelper instance = ResultDecoratorHelper.getInstance();
 
+        @NotNull final Attribute<String> childAttribute1 =
+            new AttributeIncompleteValueObject(
+                "myChildId1",
+                Types.BIGINT,
+                "long",
+                "id1",
+                "child comment 1",
+                1, // ordinalPosition
+                6222, // length
+                1, // precision
+                false, // allowsNull
+                null); // value
+
+        @NotNull final Attribute<String> childAttribute2 =
+            new AttributeIncompleteValueObject(
+                "time2",
+                Types.TIMESTAMP,
+                "Timestamp",
+                "id2",
+                "child comment 2",
+                2, // ordinalPosition
+                6222, // length
+                1, // precision
+                true, // allowsNull
+                null); // value
+
+        @NotNull final Attribute<String> childAttribute3 =
+            new AttributeIncompleteValueObject(
+                "date3",
+                Types.DATE,
+                "Date",
+                "name",
+                "child comment 3",
+                3, // ordinalPosition
+                6222, // length
+                1, // precision
+                false, // allowsNull
+                null); // value
+
+        @NotNull final Attribute<String> childAttribute4 =
+            new AttributeIncompleteValueObject(
+                "date4",
+                Types.DATE,
+                "Date",
+                "name",
+                "child comment 4",
+                3, // ordinalPosition
+                6222, // length
+                1, // precision
+                true, // allowsNull
+                null); // value
+
+        @NotNull final List<Attribute<String>> attributes1 = new ArrayList<>(4);
+
+        attributes1.add(childAttribute1);
+        attributes1.add(childAttribute2);
+        attributes1.add(childAttribute3);
+        attributes1.add(childAttribute4);
+
+        @NotNull final AbstractTableDecorator table1 =
+            AbstractTableDecoratorTest.setupTableDecorator(attributes1, null);
+
+        Assert.assertTrue(instance.containNullableAttributes(table1.getAttributes()));
+
+        @NotNull final List<Attribute<String>> attributes2 = new ArrayList<>(2);
+
+        @NotNull final AbstractTableDecorator table2 =
+            AbstractTableDecoratorTest.setupTableDecorator(attributes1, null);
+
+        attributes2.add(childAttribute1);
+        attributes2.add(childAttribute3);
+
+        Assert.assertTrue(instance.containNullableAttributes(table2.getAttributes()));
 
     }
 }
