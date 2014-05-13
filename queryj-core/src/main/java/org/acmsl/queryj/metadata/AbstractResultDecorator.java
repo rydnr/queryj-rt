@@ -663,7 +663,7 @@ public abstract class AbstractResultDecorator
     public boolean getContainsNotNullAttributes()
     {
         return
-            containNotNullAttributes(
+            containNotNullProperties(
                 getProperties(), getMetadataManager().getMetadataTypeManager(), TableDecoratorHelper.getInstance());
     }
 
