@@ -45,6 +45,7 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
@@ -92,6 +93,9 @@ public class ResultDecoratorHelper
         boolean result = false;
 
         for (@Nullable final Property<DecoratedString> property : properties)
+        {
+
+        }
         return result;
     }
 
