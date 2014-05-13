@@ -114,7 +114,7 @@ public class ResultDecoratorHelperTest
     {
         @NotNull final AbstractResultDecorator result;
 
-        @NotNull final Result<String> wrappedResult = new ResultElement<>("my.result", );
+        @NotNull final Result<String> wrappedResult = new ResultElement<>("my.result", "MyResult");
         result =
             new AbstractResultDecorator(wrappedResult, customSqlProvider, metadataManager, decoratorFactory) {};
 
