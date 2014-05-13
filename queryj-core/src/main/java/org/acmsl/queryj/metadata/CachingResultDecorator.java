@@ -368,7 +368,7 @@ public class CachingResultDecorator
         result.append(this.m__bCachedImplicit);
         result.append("\", \"cachedImplicitProperties\": \"");
         result.append(this.m__lCachedImplicitProperties);
-        result.append("\", \"cachedWrappingASinglePropert\": \"");
+        result.append("\", \"cachedWrappingASingleProperty\": \"");
         result.append(this.m__bCachedWrappingASingleProperty);
         result.append(", \"package\": \"org.acmsl.queryj.metadata\" }");
 
