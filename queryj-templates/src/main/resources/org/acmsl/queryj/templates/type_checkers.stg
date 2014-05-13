@@ -144,7 +144,7 @@ import org.checkthread.annotations.ThreadSafe;
 checkers_import_maybe(container, C, useHeader=true) ::= <<
 <!
  Imports the checkers depending on the container.
- @param table the container (table or result).
+ @param container the container (table or result).
  @param context the context.
 !>
 <
