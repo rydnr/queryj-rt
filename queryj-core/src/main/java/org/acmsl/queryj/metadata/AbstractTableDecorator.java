@@ -2114,6 +2114,8 @@ public abstract class AbstractTableDecorator
     @SuppressWarnings("unused")
     public boolean getContainsNotNullAttributes()
     {
+    }
+    }
     /**
      * Checks whether some of the given attributes cannot be null.
      * @param attributes the {@link Attribute}s.
