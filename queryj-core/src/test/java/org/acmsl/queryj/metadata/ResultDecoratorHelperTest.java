@@ -132,6 +132,7 @@ public class ResultDecoratorHelperTest
             wrappedResult.add(new PropertyRefElement(property.getId()));
         }
 
+        EasyMock.replay(customSqlProvider);
         EasyMock.replay();
         result =
             new AbstractResultDecorator(wrappedResult, customSqlProvider, metadataManager, decoratorFactory) {};
