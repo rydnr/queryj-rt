@@ -134,6 +134,8 @@ public class ResultDecoratorHelperTest
 
         EasyMock.replay(customSqlProvider);
         EasyMock.replay(propertyDAO);
+        EasyMock.replay(metadataManager);
+        EasyMock.replay();
         result =
             new AbstractResultDecorator(wrappedResult, customSqlProvider, metadataManager, decoratorFactory) {};
 
