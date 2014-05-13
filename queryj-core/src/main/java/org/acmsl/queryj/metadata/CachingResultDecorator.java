@@ -362,7 +362,7 @@ public class CachingResultDecorator
         result.append(super.toString());
         result.append(", \"package\": \"org.acmsl.queryj.metadata\" }");
 
-        return result;
+        return result.toString();
     }
 
 }
