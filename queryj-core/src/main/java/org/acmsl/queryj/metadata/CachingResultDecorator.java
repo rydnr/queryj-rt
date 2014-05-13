@@ -355,7 +355,7 @@ public class CachingResultDecorator
     @Override
     public String toString()
     {
-        @NotNull final StringBuilder result = new StringBuilder("{ \"class\": ")
+        @NotNull final StringBuilder result = new StringBuilder("{ \"class\": \"" + CachingResultDecorator.class.getSimpleName()
     }
 
 }
