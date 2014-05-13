@@ -52,7 +52,7 @@ import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing JUnit classes.
+ * Importing JUnit/EasyMock classes.
  */
 import org.easymock.EasyMock;
 import org.junit.Assert;
