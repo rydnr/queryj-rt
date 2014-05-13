@@ -108,11 +108,11 @@ public class ResultDecoratorHelperTest
     }
 
     /**
-     * Checks whether {@link ResultDecoratorHelper} detects nullable properties
+     * Checks whether {@link ResultDecoratorHelper} detects not null properties
      * for a given {@link org.acmsl.queryj.customsql.Result}.
      */
     @Test
-    public void containsNotNullProperties_detects_nullable_properties()
+    public void containsNotNullProperties_detects_notNull_properties()
     {
         @NotNull final ResultDecoratorHelper instance = ResultDecoratorHelper.getInstance();
 
