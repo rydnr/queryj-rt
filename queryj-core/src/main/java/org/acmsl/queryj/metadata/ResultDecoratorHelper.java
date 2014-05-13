@@ -119,7 +119,7 @@ public class ResultDecoratorHelper
     {
         boolean result = false;
 
-        for (@Nullable final Property<DecoratedString> property : properties)
+        for (@Nullable final Property<V> property : properties)
         {
             if (   (property != null)
                 && (!property.isNullable())
