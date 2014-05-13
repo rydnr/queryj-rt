@@ -159,6 +159,6 @@ toString_method(result, C) ::= <<
 @Override
 public String toString()
 {
-    return "{ \"class\": \"<result.id.voName>Factory\", \"package\": \"<C.package>\" }");
+    return "{ \"class\": \"<result.id.voName>Factory\", \"package\": \"<C.package>\" }";
 }
 >>
