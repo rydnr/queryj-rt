@@ -133,7 +133,7 @@ toString_method(result, C) ::= <<
 @Override
 public String toString()
 {
-    return
+    <not
         "{ \"class\": \"<result.id.voName>Impl\", \"super\": " + super.toString() + ", \"package\": \"<C.package>\" }";
 }
 >>
