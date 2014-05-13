@@ -2079,7 +2079,7 @@ public abstract class AbstractTableDecorator
     @SuppressWarnings("unused")
     public boolean getContainsNullableItems()
     {
-        return containNullableAttributes(getAttributes(), TableDecoratorHelper.getInstance());
+        return getContainsNullableAttributes();
     }
 
     /**
@@ -2107,6 +2107,13 @@ public abstract class AbstractTableDecorator
                 getAttributes(), getMetadataManager().getMetadataTypeManager(), TableDecoratorHelper.getInstance());
     }
 
+    /**
+     * Checks whether some of the attributes cannot be null.
+     * @return {@code true} in such case.
+     */
+    @SuppressWarnings("unused")
+    public boolean getContainsNotNullAttributes()
+    {
     /**
      * Checks whether some of the given attributes cannot be null.
      * @param attributes the {@link Attribute}s.
