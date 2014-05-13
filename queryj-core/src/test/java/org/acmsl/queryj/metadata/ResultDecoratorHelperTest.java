@@ -78,7 +78,7 @@ public class ResultDecoratorHelperTest
                 "long",
                 false); // allowsNull
 
-        @NotNull final List<Property<String>> attributes1 = new ArrayList<>(4);
+        @NotNull final List<Property<String>> properties = new ArrayList<>(4);
 
         attributes1.add(childAttribute1);
         attributes1.add(childAttribute2);
