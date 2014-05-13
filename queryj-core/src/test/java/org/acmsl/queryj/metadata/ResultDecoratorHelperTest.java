@@ -45,7 +45,6 @@ import org.acmsl.queryj.customsql.PropertyElement;
 /*
  * Importing JetBrains annotations.
  */
-import org.acmsl.queryj.customsql.PropertyRef;
 import org.acmsl.queryj.customsql.PropertyRefElement;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.ResultElement;
