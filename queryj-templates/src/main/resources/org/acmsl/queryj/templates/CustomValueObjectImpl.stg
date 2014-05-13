@@ -135,6 +135,7 @@ public String toString()
 {
     <notnull(C=C)>final StringBuilder result =
         new StringBuilder("{ \"class\": \"<result.id.voName>Impl\", \"super\": ");
-    result.append(super.toString() + ", \"package\": \"<C.package>\" }";
+    result.append(super.toString());
+    result.append(", \"package\": \"<C.package>\" }";
 }
 >>
