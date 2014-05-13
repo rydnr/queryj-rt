@@ -91,7 +91,7 @@ public class ResultDecoratorHelper
     {
         boolean result = false;
 
-        for (@Nullable final Property<>)
+        for (@Nullable final Property<> property : properties)
         return result;
     }
 
