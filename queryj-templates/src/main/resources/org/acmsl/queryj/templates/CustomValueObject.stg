@@ -89,7 +89,7 @@ description(result) ::= <<
 {@link <result.id.voName>} value objects as required by some custom queries.
 >>
 
-class(result, repository, C) ::= <<
+interface(result, repository, C) ::= <<
 <!
  Generates the class body.
  @param result the result.
