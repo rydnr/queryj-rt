@@ -355,7 +355,7 @@ public class CachingResultDecorator
     @Override
     public String toString()
     {
-        @NotNull final StringBuilder
+        @NotNull final StringBuilder result = new StringBuilder()
     }
 
 }
