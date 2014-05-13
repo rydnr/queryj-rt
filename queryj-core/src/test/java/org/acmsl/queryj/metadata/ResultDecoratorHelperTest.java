@@ -105,7 +105,7 @@ public class ResultDecoratorHelperTest
     /**
      * Sets up an {@link AbstractResultDecorator} instance, for testing purposes.
      * @param properties the {@link Property properties}.
-     * @return
+     * @return the decorator.
      */
     @NotNull
     protected AbstractResultDecorator setupResultDecorator(@NotNull final List<Property<String>> properties)
