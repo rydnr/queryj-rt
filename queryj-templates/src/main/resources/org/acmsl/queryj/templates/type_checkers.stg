@@ -155,7 +155,7 @@ if(container.containsNotNullItems)><
     notnull_import(C=C, useHeader=useHeader)>
 < endif><
 else><
-  if(table.containsNullableItems)><
+  if(container.containsNullableItems)><
     nullable_import(C=C, useHeader=useHeader)>
 < endif><
 endif>
