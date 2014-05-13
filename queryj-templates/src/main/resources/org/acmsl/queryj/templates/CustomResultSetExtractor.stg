@@ -136,6 +136,7 @@ defaultExtractor(result, repository, C) ::= <<
 /**
  * Extracts {@link <result.id.voName>} information from given result set.
  * @param resultSet the result set.
+ * @param sql the SQL query.
  * @param listener the {@link DAOListener} instance.
  * @return the {@code <result.id.voName>} or
  * {@code null} if the operation returned no data.
@@ -151,12 +152,13 @@ protected <result.id.voName> extractData(
     throws  SQLException,
             DataAccessException
 {
-    return extractData(resultSet, listener, <result.id.voName>Factory.getInstance());
+    return extractData(resultSet, sql, listener, <result.id.voName>Factory.getInstance());
 }
 
 /**
  * Extracts {@link <result.id.voName>} information from given result set.
  * @param resultSet the result set.
+ * @param sql the SQL query.
  * @param listener the {@link DAOListener} instance.
  * @param factory the {@link <result.id.voName>Factory}
  * instance.
@@ -169,6 +171,7 @@ protected <result.id.voName> extractData(
 <notnull(C=C)>
 protected <result.id.voName> extractData(
     <notnull(C=C)>final ResultSet resultSet,
+    <notnull(C=C)>final String sql,
     <nullable(C=C)>final DAOListener listener,
     <notnull(C=C)>final <result.id.voName>Factory factory)
   throws  SQLException,
