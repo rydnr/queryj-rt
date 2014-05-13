@@ -68,7 +68,7 @@ public class ResultDecoratorHelperTest
 {
     /**
      * Checks whether {@link ResultDecoratorHelper} detects nullable properties
-     * for a given {@lisk Result}
+     * for a given {@lisk Result}.
      */
     @Test
     public void containsNullableProperties_detects_nullable_properties()
