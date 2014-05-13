@@ -708,7 +708,7 @@ public abstract class AbstractResultDecorator
             + ", \"customSqlProvider\": " + m__CustomSqlProvider
             + ", \"metadataManager\": " + m__MetadataManager
             + ", \"decoratorFactory\": " + m__DecoratorFactory
-
+*/
             + " }";
     }
 
