@@ -133,7 +133,9 @@ toString_method(result, C) ::= <<
 @Override
 public String toString()
 {
-    <notnull(C=C)>final StringBuilder result = new StringBuilder("{ \"class\": \"<result.id.voName>Impl\", \"super\": ");
+    <notnull(C=C)>final StringBuilder result =
+        new StringBuilder("{ \"class\": \"<result.id.voName>Impl\", \"super\": ");
+
          + super.toString() + ", \"package\": \"<C.package>\" }";
 }
 >>
