@@ -108,6 +108,39 @@ public class ResultDecoratorHelperTest
     }
 
     /**
+     * Checks whether {@link ResultDecoratorHelper} detects nullable properties
+     * for a given {@link org.acmsl.queryj.customsql.Result}.
+     */
+    @Test
+    public void containsNullableProperties_detects_nullable_properties()
+    {
+        @NotNull final ResultDecoratorHelper instance = ResultDecoratorHelper.getInstance();
+
+        @NotNull final Property<String> property1 =
+            new PropertyElement<>("prop1", "propertyId", 1, "long", false);
+
+        @NotNull final Property<String> property2 =
+            new PropertyElement<>("prop2", "name", 2, "String", false);
+
+        @NotNull final Property<String> property3 =
+            new PropertyElement<>("prop3", "date", 3, "Date", true);
+
+        @NotNull final Property<String> property4 =
+            new PropertyElement<>("prop4", "registration", 4, "Date", false);
+
+        @NotNull final List<Property<String>> properties = new ArrayList<>(4);
+
+        properties.add(property1);
+        properties.add(property2);
+        properties.add(property3);
+        properties.add(property4);
+
+        @NotNull final AbstractResultDecorator result = setupResultDecorator(properties);
+
+        Assert.assertTrue(instance.containNullableProperties(result.getProperties()));
+    }
+
+    /**
      * Sets up an {@link AbstractResultDecorator} instance, for testing purposes.
      * @param properties the {@link Property properties}.
      * @return the decorator.
