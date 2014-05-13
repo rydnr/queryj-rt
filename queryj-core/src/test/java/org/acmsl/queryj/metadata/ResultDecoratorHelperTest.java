@@ -79,7 +79,7 @@ public class ResultDecoratorHelperTest
         @NotNull final Property<String> property3 =
             new PropertyElement<>("prop3", "date", 3, "Date", true);
 
-        @NotNull final Property<String> property3 =
+        @NotNull final Property<String> property4 =
             new PropertyElement<>("prop4", "registration", 4, "Date", false);
 
         @NotNull final List<Property<String>> properties = new ArrayList<>(4);
