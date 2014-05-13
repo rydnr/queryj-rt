@@ -360,7 +360,8 @@ public class CachingResultDecorator
         result.append(CachingResultDecorator.class.getSimpleName());
         result.append("\", \"super\": ");
         result.append(super.toString());
-        result.append(", p")
+        result.append(", \"package\": \"");
+        result.append()
 
     }
 
