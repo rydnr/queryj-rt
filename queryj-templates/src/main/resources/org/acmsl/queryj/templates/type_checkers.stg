@@ -148,7 +148,7 @@ checkers_import_maybe(container, C, useHeader=true) ::= <<
  @param context the context.
 !>
 <
-if(table.containsNotNullAttributes)><
+if(.containsNotNullAttributes)><
   if(table.containsNullableAttributes)><
     checkers_import(C=C)><
   else><
