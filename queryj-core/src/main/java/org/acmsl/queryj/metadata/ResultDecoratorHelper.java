@@ -55,6 +55,6 @@ import org.checkthread.annotations.ThreadSafe;
 public class ResultDecoratorHelper
 {
     /**
-     * Singleton to
+     * Singleton to avoid double-check locking.
      */
 }
