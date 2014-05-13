@@ -73,7 +73,6 @@ sourceImpl(result, C) ::= <<
  * Importing JDK classes.
  */
 import java.io.Serializable;
-<import_property_types(table=table, useHeader=false)>
 <if(result.propertyTypes)>
 <result.propertyTypes:{ t | import <t>;}; separator="\n">
 <else>
