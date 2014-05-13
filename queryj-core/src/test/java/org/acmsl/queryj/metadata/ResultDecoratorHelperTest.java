@@ -124,7 +124,7 @@ public class ResultDecoratorHelperTest
 
         @NotNull final DecoratorFactory decoratorFactory = CachingDecoratorFactory.getInstance();
 
-        for (wrappedResult.getPropertyRefs()
+        for (@NotNull final PropertyRef<String> wrappedResult.getPropertyRefs()
         result =
             new AbstractResultDecorator(wrappedResult, customSqlProvider, metadataManager, decoratorFactory) {};
 
