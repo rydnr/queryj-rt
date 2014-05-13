@@ -129,6 +129,7 @@ public class ResultDecoratorHelperTest
         {
             EasyMock.expect(propertyDAO.findByPrimaryKey(property.getId())).andReturn(property);
         }
+
         result =
             new AbstractResultDecorator(wrappedResult, customSqlProvider, metadataManager, decoratorFactory) {};
 
