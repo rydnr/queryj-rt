@@ -351,5 +351,11 @@ public class CachingResultDecorator
     /**
      * {@inheritDoc}
      */
+    @NotNull
+    @Override
+    public String toString()
+    {
+
+    }
 
 }
