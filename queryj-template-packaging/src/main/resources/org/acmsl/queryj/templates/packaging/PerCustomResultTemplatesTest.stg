@@ -353,9 +353,6 @@ public class PerCustomResultTemplatesTest
                     new QueryJCommandWrapper\<MetadataManager>(t_Command).setSetting(
                         DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, metadataManager);
 
-                    @NotNull final CustomSqlProvider customSqlProvider =
-                        retrieveCustomSqlProvider(getSqlList(), getParameters());
-
                     @Nullable final PerCustomResultTemplateFactory\<? extends PerCustomResultTemplate\<PerCustomResultTemplateContext>, PerCustomResultTemplateContext> templateFactory =
                         retrieveTemplateFactory(templateName);
 
@@ -364,7 +361,7 @@ public class PerCustomResultTemplatesTest
                     @NotNull final String packageName =
                         resolvePackage(PACKAGE_MAPPINGS.get(templateName),
                         result,
-                        customSqlProvider,
+                        sqlProvider,
                         metadataManager,
                         resolveEngine(engine),
                         decoratorFactory);
