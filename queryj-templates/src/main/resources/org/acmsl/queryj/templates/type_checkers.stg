@@ -161,7 +161,7 @@ else><
 endif>
 >>
 
-notnull_import_maybe_nullable(table, C) ::= <<
+notnull_import_maybe_nullable(container, C) ::= <<
 <!
  Imports the checkers depending on the table attributes.
  @param table the table.
