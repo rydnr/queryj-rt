@@ -126,7 +126,7 @@ public class ResultDecoratorHelper
             if (   (property != null)
                 && (!property.isNullable())
                 && (   (metadataTypeManager.isPrimitiveWrapper("" + property.getType()))
-                    || (!metadataTypeManager.isPrimitive("" + property.getType()))
+                    || (!metadataTypeManager.isPrimitive(type)
             {
                 result = true;
                 break;
