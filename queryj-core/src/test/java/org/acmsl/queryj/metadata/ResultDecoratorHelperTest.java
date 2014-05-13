@@ -40,8 +40,6 @@ package org.acmsl.queryj.metadata;
  */
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.PropertyElement;
-import org.acmsl.queryj.metadata.vo.Attribute;
-import org.acmsl.queryj.metadata.vo.AttributeIncompleteValueObject;
 import org.jetbrains.annotations.NotNull;
 
 /*
