@@ -122,7 +122,7 @@ public class ResultDecoratorHelper
         {
             if (   (property != null)
                 && (!property.isNullable())
-                && ()
+                && (metadataTypeManager.isPrimitiveWrapper())
             {
                 result = true;
                 break;
