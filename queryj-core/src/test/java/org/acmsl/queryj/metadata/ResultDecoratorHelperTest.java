@@ -86,8 +86,8 @@ public class ResultDecoratorHelperTest
 
         properties.add(property1);
         properties.add(property2);
-        properties.add(childAttribute3);
-        properties.add();
+        properties.add(property3);
+        properties.add(property4);
 
         @NotNull final AbstractTableDecorator table1 =
             AbstractTableDecoratorTest.setupTableDecorator(attributes1, null);
