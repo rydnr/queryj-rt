@@ -124,6 +124,7 @@ public class <result.id.voName>Factory
      * Retrieves a {@code <result.id.voName>Factory} instance.
      * @return such instance.
      */
+    <notnull(C=C)>
     public static <result.id.voName>Factory getInstance()
     {
         return <result.id.voName>FactorySingletonContainer.SINGLETON;
