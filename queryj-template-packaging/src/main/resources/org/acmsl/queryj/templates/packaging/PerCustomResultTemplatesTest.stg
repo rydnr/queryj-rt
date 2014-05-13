@@ -362,6 +362,7 @@ public class PerCustomResultTemplatesTest
                         resolvePackage(PACKAGE_MAPPINGS.get(templateName),
                         result,
                         metadataManager,
+
                         resolveEngine(engine));
 
                     @NotNull final PerCustomResultTemplateContext t_Context =
