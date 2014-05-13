@@ -64,6 +64,7 @@ public class ResultDecoratorHelper
 
     public boolean containNotNullProperties(final List<Property<DecoratedString>> properties)
     {
+        return false;  //To change body of created methods use File | Settings | File Templates.
     }
 
     /**
