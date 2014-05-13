@@ -674,7 +674,7 @@ public abstract class AbstractResultDecorator
     @SuppressWarnings("unused")
     public boolean getContainsNotNullItems()
     {
-        return getContainsNotNullAttributes();
+        return getContainsNotNullProperties();
     }
 
     /**
