@@ -83,7 +83,7 @@ public class ResultDecoratorHelper
     }
 
     /**
-     * Checks whether given
+     * Checks whether given lis
      * @param properties
      * @return
      */
