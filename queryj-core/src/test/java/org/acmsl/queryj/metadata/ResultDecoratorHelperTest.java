@@ -76,7 +76,7 @@ public class ResultDecoratorHelperTest
                 "myChild1",
                 1,
                 "long",
-                false, // allowsNull
+                false); // allowsNull
                 null); // value
 
         @NotNull final Attribute<String> childAttribute2 =
