@@ -652,7 +652,7 @@ public abstract class AbstractResultDecorator
         @NotNull final List<Property<DecoratedString>> properties,
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
-        return tableDecoratorHelper.containNullableProperties(properties);
+        return resultDecoratorHelper.containNullableProperties(properties);
     }
 
     /**
