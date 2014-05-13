@@ -103,5 +103,5 @@ public class ResultDecoratorHelperTest
         Assert.assertTrue(instance.containNullableProperties(result.getProperties()));
     }
 
-    protected AbstractResultDecorator setupResultDecorator(@NotNull final List<Property<String>> )
+    protected AbstractResultDecorator setupResultDecorator(@NotNull final List<Property<String>> properties)
 }
