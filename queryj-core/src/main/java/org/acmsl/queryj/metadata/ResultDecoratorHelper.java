@@ -62,12 +62,6 @@ public class ResultDecoratorHelper
      */
     public ResultDecoratorHelper() {}
 
-
-    public boolean containNotNullProperties(final List<Property<DecoratedString>> properties)
-    {
-        return false;
-    }
-
     /**
      * Singleton to avoid double-check locking.
      */
@@ -94,6 +88,12 @@ public class ResultDecoratorHelper
      * @return {@code true} in such case.
      */
     public boolean containNullableProperties(final List<Property<DecoratedString>> properties)
+    {
+        return false;
+    }
+
+
+    public boolean containNotNullProperties(final List<Property<DecoratedString>> properties)
     {
         return false;
     }
