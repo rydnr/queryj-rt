@@ -368,6 +368,8 @@ public class CachingResultDecorator
         result.append(this.m__bCachedImplicit);
         result.append("\", \"cachedImplicitProperties\": \"");
         result.append(this.m__lCachedImplicitProperties);
+        result.append("\", \"cachedImplicitProperties\": \"");
+        result.append(this.m__lCachedImplicitProperties);
         result.append(", \"package\": \"org.acmsl.queryj.metadata\" }");
 
         return result.toString();
