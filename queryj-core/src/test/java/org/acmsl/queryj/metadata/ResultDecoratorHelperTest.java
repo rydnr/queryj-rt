@@ -41,6 +41,9 @@ package org.acmsl.queryj.metadata;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.PropertyElement;
+import org.acmsl.queryj.customsql.PropertyRefElement;
+import org.acmsl.queryj.customsql.Result;
+import org.acmsl.queryj.customsql.ResultElement;
 
 /*
  * Importing JetBrains annotations.
