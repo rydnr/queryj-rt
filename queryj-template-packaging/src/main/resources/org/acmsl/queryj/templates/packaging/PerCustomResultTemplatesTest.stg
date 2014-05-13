@@ -500,8 +500,8 @@ public class PerCustomResultTemplatesTest
      * @param customResult the result.
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
      * @param metadataManager the {@link MetadataManager} instance.
-     * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @param engine the engine.
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @return the actual package.
      */
     @NotNull
