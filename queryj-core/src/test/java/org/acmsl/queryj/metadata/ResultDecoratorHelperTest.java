@@ -71,7 +71,7 @@ public class ResultDecoratorHelperTest
 {
     /**
      * Checks whether {@link ResultDecoratorHelper} detects nullable properties
-     * for a given {@link Result}.
+     * for a given {@link org.acmsl.queryj.customsql.Result}.
      */
     @Test
     public void containsNullableProperties_detects_nullable_properties()
