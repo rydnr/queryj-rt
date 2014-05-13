@@ -48,7 +48,6 @@ import org.acmsl.queryj.customsql.ResultElement;
 /*
  * Importing JetBrains annotations.
  */
-import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
