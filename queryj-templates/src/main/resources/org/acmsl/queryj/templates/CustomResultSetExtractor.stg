@@ -104,7 +104,7 @@ class(result, repository, C) ::= <<
  */
 <class_annotations(C=C)>
 public class <result.id.voName>ResultSetExtractor
-    extends <repository.voName>ResultSetExtractor\<<result.id.voName>\>
+    extends V24ResultSetExtractor\<<result.id.voName>\>
 {
     /**
      * Creates a new instance.
