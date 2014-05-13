@@ -69,6 +69,7 @@ sourceImpl(result, C) ::= <<
  */
 <package_declaration(p=C.package)>
 <notnull_import_maybe_nullable(container=result, C=C)>
+
 <if(result.propertyTypes)>
 /*
  * Importing JDK classes.
