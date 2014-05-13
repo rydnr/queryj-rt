@@ -629,7 +629,7 @@ public abstract class AbstractResultDecorator
     @SuppressWarnings("unused")
     public boolean getContainsNullableAttributes()
     {
-        return containNullabl(getProperties(), TableDecoratorHelper.getInstance());
+        return containNullableProperties(getProperties(), TableDecoratorHelper.getInstance());
     }
 
     /**
