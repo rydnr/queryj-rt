@@ -627,7 +627,7 @@ public abstract class AbstractResultDecorator
      * @return {@code true} in such case.
      */
     @SuppressWarnings("unused")
-    public boolean getContainsNullableAttributes()
+    public boolean getContainsNullableProperties()
     {
         return containNullableProperties(getProperties(), TableDecoratorHelper.getInstance());
     }
