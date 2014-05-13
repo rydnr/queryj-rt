@@ -46,6 +46,7 @@ import org.acmsl.queryj.customsql.PropertyElement;
  */
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.ResultElement;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -115,6 +116,9 @@ public class ResultDecoratorHelperTest
         @NotNull final AbstractResultDecorator result;
 
         @NotNull final Result<String> wrappedResult = new ResultElement<>("my.result", "MyResult");
+
+        @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(Cus
+        )
         result =
             new AbstractResultDecorator(wrappedResult, customSqlProvider, metadataManager, decoratorFactory) {};
 
