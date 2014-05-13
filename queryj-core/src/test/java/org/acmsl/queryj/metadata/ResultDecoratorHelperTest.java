@@ -48,6 +48,7 @@ import org.acmsl.queryj.customsql.ResultElement;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -155,6 +156,7 @@ public class ResultDecoratorHelperTest
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final SqlPropertyDAO propertyDAO = EasyMock.createNiceMock(SqlPropertyDAO.class);
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
+        @NotNull final MetadataTypeManager metadataTypeManager = JdbcMetadataTypeManager.getInstance();
         @NotNull final DecoratorFactory decoratorFactory = CachingDecoratorFactory.getInstance();
         EasyMock.expect(customSqlProvider.getSqlPropertyDAO()).andReturn(propertyDAO).anyTimes();
 
