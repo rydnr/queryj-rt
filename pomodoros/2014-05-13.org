@@ -14,11 +14,12 @@
 *** dao/impl
 *** dao/rdb -> X
 *** dao/[table]
-- CustomResultSetExtractor
 - FkStatementSetter
 - PkStatementSetter
 - ResultSetExtractor
 - AttributesStatementSetter
+*** dao/[result]
+- CustomResultSetExtractor
 **** dao/[table]/oracle
 - DAO
 - DAOFactory
