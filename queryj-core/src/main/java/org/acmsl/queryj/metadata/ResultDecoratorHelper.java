@@ -89,7 +89,10 @@ public class ResultDecoratorHelper
      */
     public boolean containNullableProperties(final List<Property<DecoratedString>> properties)
     {
-        return false;
+        boolean result = false;
+
+        for ()
+        return result;
     }
 
     /**
