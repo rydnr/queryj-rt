@@ -124,6 +124,8 @@ public class <result.id.voName>Impl
 toString_method(result, C) ::= <<
 <!
  Generates the toString() method
+ @param result the result.
+ @param C the context.
  !>
 /**
  * {@inheritDoc}
