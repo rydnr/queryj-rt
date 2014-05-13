@@ -689,7 +689,7 @@ public abstract class AbstractResultDecorator
         @NotNull final MetadataTypeManager metadataTypeManager,
         @NotNull final ResultDecoratorHelper resultDecoratorHelper)
     {
-        return resultDecoratorHelper.containNotNullProperties(properties, metadataTypeManager);
+        return resultDecoratorHelper.containNotNullProperties(properties);
     }
 
     /**
