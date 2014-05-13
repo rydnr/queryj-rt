@@ -363,7 +363,8 @@ public class PerCustomResultTemplatesTest
                         result,
                         metadataManager,
 
-                        resolveEngine(engine));
+                        resolveEngine(engine),
+                        decoratorFactory);
 
                     @NotNull final PerCustomResultTemplateContext t_Context =
                         new PerCustomResultTemplateContext(
