@@ -120,7 +120,7 @@ public class ResultDecoratorHelperTest
         @NotNull final Result<String> wrappedResult = new ResultElement<>("my.result", "MyResult");
 
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
-
+        @NotNull final SqlPropertyDAO propertyDAO = EasyMock.createNiceMock(SqlPropertyDAO.class);
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
 
         @NotNull final DecoratorFactory decoratorFactory = CachingDecoratorFactory.getInstance();
