@@ -110,7 +110,9 @@ public class <result.id.voName>Factory
     public <result.id.voName>Factory() {}
 
     /**
-     * Singleton implementation to avoid double-checked locking.
+     * Singleton implemented to avoid the
+     * \<a href="https://en.wikipedia.org/wiki/Double-checked_locking">double-checked locking\</a>.
+     * This relies on the fact that inner classes are not loaded until they are referenced.
      */
     private static final class <result.id.voName>FactorySingletonContainer
     {
