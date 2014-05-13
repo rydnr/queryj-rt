@@ -122,7 +122,9 @@ public class <result.id.voName>Impl
 >>
 
 toString_method(result, C) ::= <<
-<! Generates the toString() method !>
+<!
+ Generates the toString() method
+ !>
 /**
  * {@inheritDoc}
  */
