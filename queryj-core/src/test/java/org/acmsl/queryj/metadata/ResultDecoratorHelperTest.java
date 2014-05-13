@@ -90,7 +90,7 @@ public class ResultDecoratorHelperTest
         properties.add(property4);
 
         @NotNull final AbstractTableDecorator result =
-            setupResultDecorator(attributes1, null);
+            setupResultDecorator(p, null);
 
         Assert.assertTrue(instance.containNullableAttributes(table1.getAttributes()));
 
