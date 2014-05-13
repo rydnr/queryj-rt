@@ -129,7 +129,7 @@ public class ResultDecoratorHelperTest
         for (@NotNull final Property<String> property : properties)
         {
             EasyMock.expect(propertyDAO.findByPrimaryKey(property.getId())).andReturn(property);
-            wrappedResult.add(new PropertyRefElement())
+            wrappedResult.add(new PropertyRefElement(property.getId()));
         }
 
         result =
