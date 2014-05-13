@@ -121,7 +121,7 @@ public class ResultDecoratorHelper
         for (@Nullable final Property<DecoratedString> property : properties)
         {
             if (   (property != null)
-                   && (property.isNullable()))
+                && (property.isNullable()))
             {
                 result = true;
                 break;
