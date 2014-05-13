@@ -127,7 +127,7 @@ public class ResultDecoratorHelperTest
 
         for (@NotNull final PropertyRef propertyRef : wrappedResult.getPropertyRefs())
         {
-
+            customSqlProvider.getSqlPropertyDAO()
         }
         result =
             new AbstractResultDecorator(wrappedResult, customSqlProvider, metadataManager, decoratorFactory) {};
