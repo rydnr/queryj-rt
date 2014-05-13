@@ -38,12 +38,15 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.customsql.Property;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+
+import java.util.List;
 
 /**
  *
@@ -58,6 +61,10 @@ public class ResultDecoratorHelper
      * Default constructor.
      */
     public ResultDecoratorHelper() {}
+
+    public boolean containNullableProperties(final List<Property<DecoratedString>> properties)
+    {
+    }
 
     /**
      * Singleton to avoid double-check locking.
