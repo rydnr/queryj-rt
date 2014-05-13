@@ -116,9 +116,10 @@ public class <result.id.voName>ResultSetExtractor
      * Creates a new instance.
      * @param listener the {@link DAOListener} instance.
      */
-    public <result.id.voName>ResultSetExtractor(<notnull(C=C)>final String sql, <nullable(C=C)>final DAOListener listener)
+    public <result.id.voName>ResultSetExtractor(
+        <notnull(C=C)>final String sql, <nullable(C=C)>final DAOListener listener)
     {
-        super(listener);
+        super(sql, listener);
     }
 
     <defaultExtractor(result=result, repository=repository, C=C)>
