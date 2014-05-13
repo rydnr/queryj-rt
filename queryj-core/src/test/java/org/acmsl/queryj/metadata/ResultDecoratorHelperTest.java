@@ -76,11 +76,6 @@ public class ResultDecoratorHelperTest
                 "myChild1",
                 1,
                 "long",
-                "id1",
-                "child comment 1",
-                1, // ordinalPosition
-                6222, // length
-                1, // precision
                 false, // allowsNull
                 null); // value
 
