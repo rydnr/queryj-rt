@@ -78,45 +78,6 @@ public class ResultDecoratorHelperTest
                 "long",
                 false); // allowsNull
 
-        @NotNull final Attribute<String> childAttribute2 =
-            new AttributeIncompleteValueObject(
-                "time2",
-                Types.TIMESTAMP,
-                "Timestamp",
-                "id2",
-                "child comment 2",
-                2, // ordinalPosition
-                6222, // length
-                1, // precision
-                true, // allowsNull
-                null); // value
-
-        @NotNull final Attribute<String> childAttribute3 =
-            new AttributeIncompleteValueObject(
-                "date3",
-                Types.DATE,
-                "Date",
-                "name",
-                "child comment 3",
-                3, // ordinalPosition
-                6222, // length
-                1, // precision
-                false, // allowsNull
-                null); // value
-
-        @NotNull final Attribute<String> childAttribute4 =
-            new AttributeIncompleteValueObject(
-                "date4",
-                Types.DATE,
-                "Date",
-                "name",
-                "child comment 4",
-                3, // ordinalPosition
-                6222, // length
-                1, // precision
-                true, // allowsNull
-                null); // value
-
         @NotNull final List<Attribute<String>> attributes1 = new ArrayList<>(4);
 
         attributes1.add(childAttribute1);
