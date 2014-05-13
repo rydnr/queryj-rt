@@ -77,7 +77,6 @@ public class ResultDecoratorHelperTest
                 1,
                 "long",
                 false); // allowsNull
-                null); // value
 
         @NotNull final Attribute<String> childAttribute2 =
             new AttributeIncompleteValueObject(
