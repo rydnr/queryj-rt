@@ -183,7 +183,7 @@ protected <result.id.voName> extractData(
     {
         if (listener != null)
         {
-            daoListener.resultSetMovedForward(sql, 2);
+            daoListener.resultSetMovedForward(sql, 1);
         }
 
         result =
