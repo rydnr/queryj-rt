@@ -668,7 +668,7 @@ public abstract class AbstractResultDecorator
     }
 
     /**
-     * Checks whether some of the attributes cannot be null.
+     * Checks whether some of the properties cannot be null.
      * @return {@code true} in such case.
      */
     @SuppressWarnings("unused")
