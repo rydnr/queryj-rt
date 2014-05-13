@@ -74,7 +74,7 @@ public class ResultDecoratorHelperTest
             new PropertyElement<String>(
                 "myChildId1",
                 "myChild1",
-                1
+                1,
                 "long",
                 "id1",
                 "child comment 1",
