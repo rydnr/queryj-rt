@@ -354,7 +354,8 @@ public class PerCustomResultTemplatesTest
                         DatabaseMetaDataRetrievalHandler.METADATA_MANAGER, metadataManager);
 
                     @NotNull final CustomSqlProvider customSqlProvider =
-                        retrieve
+                        retrieveCustomSqlProvider(getSqlList(), getParameters());
+
                     @Nullable final PerCustomResultTemplateFactory\<? extends PerCustomResultTemplate\<PerCustomResultTemplateContext>, PerCustomResultTemplateContext> templateFactory =
                         retrieveTemplateFactory(templateName);
 
