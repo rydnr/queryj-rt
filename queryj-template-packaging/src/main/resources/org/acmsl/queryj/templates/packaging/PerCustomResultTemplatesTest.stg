@@ -498,6 +498,8 @@ public class PerCustomResultTemplatesTest
      * Resolves the package.
      * @param packageTemplate the package template.
      * @param customResult the result.
+     * @param customSqlProvider the {@link CustomSqlProvider} instance.
+     * @param
      * @param engine the engine.
      * @return the actual package.
      */
