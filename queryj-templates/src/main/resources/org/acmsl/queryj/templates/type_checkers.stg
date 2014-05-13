@@ -189,11 +189,3 @@ if(table.containsNotNullAttributes)><
 endif>
 <nullable_import(C=C, useHeader=false)>
 >>
-
-checkers_import_maybe_for_result(result, C) ::= <<
-<!
- Imports the checkers only if given result contain nullable or not-null properties.
- !>
-<
-if(result.containsNonNullAttributes)><
->>
