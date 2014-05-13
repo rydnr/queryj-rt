@@ -649,7 +649,7 @@ public abstract class AbstractResultDecorator
      * @return {@code true} in such case.
      */
     protected boolean containNullableProperties(
-        @NotNull final ListDecorator<Property<DecoratedString>> properties,
+        @NotNull final List<Property<DecoratedString>> properties,
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
         return tableDecoratorHelper.containNullableProperties(attributes);
