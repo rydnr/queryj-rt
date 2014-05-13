@@ -112,7 +112,7 @@ public class ResultDecoratorHelper
      */
     public boolean containNotNullProperties(
         @NotNull final List<Property<DecoratedString>> properties,
-                                            @NotNull final MetadataTypeManager metadataTypeManager)
+        @NotNull final MetadataTypeManager metadataTypeManager)
     {
         return false;
     }
