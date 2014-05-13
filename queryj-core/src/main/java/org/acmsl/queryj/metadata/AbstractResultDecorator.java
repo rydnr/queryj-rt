@@ -648,8 +648,8 @@ public abstract class AbstractResultDecorator
      * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
      * @return {@code true} in such case.
      */
-    protected boolean containNullableAttributes(
-        @NotNull final ListDecorator<Attribute<DecoratedString>> attributes,
+    protected boolean containNullableProperties(
+        @NotNull final ListDecorator<Property<DecoratedString>> attributes,
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
         return tableDecoratorHelper.containNullableAttributes(attributes);
