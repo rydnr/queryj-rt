@@ -664,7 +664,7 @@ public abstract class AbstractResultDecorator
     {
         return
             containNotNullAttributes(
-                getAttributes(), getMetadataManager().getMetadataTypeManager(), TableDecoratorHelper.getInstance());
+                getProperties(), getMetadataManager().getMetadataTypeManager(), TableDecoratorHelper.getInstance());
     }
 
     /**
