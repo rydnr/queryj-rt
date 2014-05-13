@@ -71,7 +71,7 @@ public class ResultDecoratorHelperTest
         @NotNull final ResultDecoratorHelper instance = ResultDecoratorHelper.getInstance();
 
         @NotNull final Property<String> property1 =
-            new PropertyElement<String>(
+            new PropertyElement<>(
                 "myChildId1",
                 "myChild1",
                 1,
