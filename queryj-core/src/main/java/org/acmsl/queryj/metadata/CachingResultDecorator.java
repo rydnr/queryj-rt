@@ -364,7 +364,7 @@ public class CachingResultDecorator
         result.append(this.m__lCachedProperties);
         result.append("\", \"cachedLobProperties\": \"");
         result.append(this.m__lCachedLobProperties);
-        result.append("\", \"cachedImplicitProperties\": \"");
+        result.append("\", \"cachedImplicit\": \"");
         result.append(this.m__lCachedImplicitProperties);
         result.append("\", \"cachedImplicitProperties\": \"");
         result.append(this.m__lCachedImplicitProperties);
