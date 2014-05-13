@@ -358,7 +358,9 @@ public class CachingResultDecorator
         @NotNull final StringBuilder result = new StringBuilder("{ \"class\": \"");
 
         result.append(CachingResultDecorator.class.getSimpleName());
-        result.append("\", \"super\": ")
+        result.append("\", \"super\": ");
+        result.append(super.toString());
+        result.append("")
 
     }
 
