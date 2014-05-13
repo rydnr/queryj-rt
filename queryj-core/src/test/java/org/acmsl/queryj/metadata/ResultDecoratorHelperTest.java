@@ -74,7 +74,7 @@ public class ResultDecoratorHelperTest
             new PropertyElement<>("myChildId1", "myChild1", 1, "long", false); // allowsNull
 
         @NotNull final Property<String> property2 =
-            new PropertyElement<>("prop2", "myChild1", 1, "long", false); // allowsNull
+            new PropertyElement<>("prop2", "name", 2, "String", false); // allowsNull
 
         @NotNull final List<Property<String>> properties = new ArrayList<>(4);
 
