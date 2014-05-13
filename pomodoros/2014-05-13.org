@@ -2,6 +2,7 @@
 ** DONE Fix CustomValueObject #486: 3 -> 3
 ** DONE Fix CustomValueObjectImpl #488: 1 ->
 ** DONE Fix CustomValueObjectFactory #489: 1 -> 1
+** TODO Fix CustomResultSetExtractor #485: 1 ->
 
 * Package layout:
 ** dao
