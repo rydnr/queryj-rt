@@ -66,6 +66,9 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public class ResultDecoratorHelperTest
 {
+    /**
+     * Checks whether
+     */
     @Test
     public void containsNullableProperties_detects_nullable_properties()
     {
