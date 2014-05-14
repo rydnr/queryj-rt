@@ -60,6 +60,7 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class AbstractPropertyDecoratorTest
 {
+    @SuppressWarnings("unu")
     @Test
     public void getJavaType_supports_boolean_properties()
     {
@@ -67,7 +68,7 @@ public class AbstractPropertyDecoratorTest
         @NotNull final MetadataTypeManager metadataTypeManager = JdbcMetadataTypeManager.getInstance();
         EasyMock.expect(metadataManager.getMetadataTypeManager()).andReturn(metadataTypeManager).anyTimes();
 
-        @NotNull final Property<String> property = EasyMock.createNiceMock(Property.class)
+        @NotNull final Property<String> property = EasyMock.createNiceMock(Property.class);
         @NotNull final AbstractPropertyDecorator instance =
             new AbstractPropertyDecorator()
             {
