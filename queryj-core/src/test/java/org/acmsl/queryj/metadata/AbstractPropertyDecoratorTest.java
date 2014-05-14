@@ -39,6 +39,7 @@ package org.acmsl.queryj.metadata;
  * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.customsql.Property;
+import org.acmsl.queryj.customsql.PropertyElement;
 import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
 
 /*
@@ -72,7 +73,13 @@ public class AbstractPropertyDecoratorTest
         @NotNull final MetadataTypeManager metadataTypeManager = JdbcMetadataTypeManager.getInstance();
         EasyMock.expect(metadataManager.getMetadataTypeManager()).andReturn(metadataTypeManager).anyTimes();
 
-        @NotNull final Property<String> property = EasyMock.createNiceMock(Property.class);
+        @NotNull final Property<String> property =
+            new PropertyElement<>(
+        @NotNull final T id,
+        @NotNull final T columnName,
+        final int index,
+        @NotNull final T type,
+        final boolean nullable)EasyMock.createNiceMock(Property.class);
         EasyMock.expect(property.getType()).andReturn("boolean").anyTimes();
 
         @NotNull final AbstractPropertyDecorator instance =
