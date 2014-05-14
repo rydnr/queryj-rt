@@ -36,6 +36,9 @@
 package org.acmsl.queryj.metadata;
 
 /*
+ * Importing checkthread.org annotations.
+ */
+/*
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.customsql.Property;
