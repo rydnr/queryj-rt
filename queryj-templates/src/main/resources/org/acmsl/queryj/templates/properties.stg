@@ -117,7 +117,7 @@ property_setter(property, C) ::= <<
  * Specifies the \<i><property.id.voName>\</i> value.
  * @param value such information.
  */
-protected final void immutableSet<property.id.voName.capitalized>(<if(!property.strictlyPrimitive)><notnull(C=C)><endif>final <property.javaType> value)
+protected final void immutableSet<property.id.capitalized>(<if(!property.strictlyPrimitive)><notnull(C=C)><endif>final <property.javaType> value)
 {
     this.m__<property.id.capitalized> = value;
 }
