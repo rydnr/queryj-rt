@@ -136,7 +136,7 @@ protected void set<property.id.voName.capitalized>(<if(!property.strictlyPrimiti
 property_to_primitive(property) ::= <<
 <! Generates the code to convert given property's value to a primitive !>
 <if(property.numeric)
-    ><property.id.voName.uncapitalized><
+    ><property.id.uncapitalized><
  else><if(property.string)
     ><property.id.uncapitalized><endif><endif>
 >>
