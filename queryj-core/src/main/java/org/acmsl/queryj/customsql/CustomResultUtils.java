@@ -300,27 +300,6 @@ public class CustomResultUtils
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager)
     {
-        @Nullable final String result;
-
-        result = retrieveTable(resultElement.getId(), customSqlProvider, metadataManager);
-
-        return result;
-    }
-
-    /**
-     * Retrieves the table associated to the result.
-     * @param resultId the result id.
-     * @param customSqlProvider the <code>CustomSqlProvider</code> instance.
-     * @param metadataManager the database metadata manager.
-     * @return the table name.
-     * @param <T> the resultId type.
-     */
-    @Nullable
-    public <T> String retrieveTable(
-        @NotNull final T resultId,
-        @NotNull final CustomSqlProvider customSqlProvider,
-        @NotNull final MetadataManager metadataManager)
-    {
         @Nullable String result = retrieveCachedEntry("" + resultId);
 
         if (result == null)
