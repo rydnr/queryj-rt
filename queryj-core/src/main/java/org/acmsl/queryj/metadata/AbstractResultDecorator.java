@@ -371,7 +371,6 @@ public abstract class AbstractResultDecorator
                 @Nullable final String t_strTable =
                     customResultUtils.retrieveTable(
                         resultElement,
-                        customSqlProvider,
                         metadataManager);
 
                 if  (t_strTable != null)
