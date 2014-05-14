@@ -445,8 +445,8 @@ public class CustomResultUtils
 
         if (result)
         {
-        */
             result = false;
+        */
 
             @Nullable final String t_strResultVoClass = extractVoName(resultElement);
             @Nullable final String t_strDaoVoClass = extractVoName(t_strDao);
