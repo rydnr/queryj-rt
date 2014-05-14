@@ -82,22 +82,16 @@ public class CustomResultUtilsTest
 
         @NotNull final Result<String> result = new ResultElement<>("myResultId", "MyTable");
         @NotNull final String tableName = "my_table";
-        @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
         @NotNull final TableDAO tableDAO = EasyMock.createNiceMock(TableDAO.class);
-        @NotNull final SqlDAO sqlDAO = EasyMock.createNiceMock(SqlDAO.class);
 
         EasyMock.expect(metadataManager.getTableDAO()).andReturn(tableDAO).anyTimes();
         EasyMock.expect(tableDAO.findAllTableNames()).andReturn(Arrays.asList(tableName)).anyTimes();
-        EasyMock.expect(customSqlProvider.getSqlDAO()).andReturn(sqlDAO).anyTimes();
-        EasyMock.expect(sqlDAO.findByResultId(result.getId())).andReturn(new ArrayList<>(0)).anyTimes();
 
         EasyMock.replay(metadataManager);
         EasyMock.replay(tableDAO);
-        EasyMock.replay(customSqlProvider);
-        EasyMock.replay(sqlDAO);
 
-        @Nullable final String retrievedTableName = instance.retrieveTable(result, customSqlProvider, metadataManager);
+        @Nullable final String retrievedTableName = instance.retrieveTable(result, metadataManager);
 
         Assert.assertNotNull(retrievedTableName);
         Assert.assertEquals(tableName, retrievedTableName);
