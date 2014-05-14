@@ -38,8 +38,6 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing JetBrains annotations.
  */
-import com.sun.org.apache.xalan.internal.xsltc.dom.ExtendedSAX;
-import junit.framework.Assert;
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
 import org.easymock.EasyMock;
@@ -48,7 +46,6 @@ import org.jetbrains.annotations.NotNull;
 /*
  * Importing checkthread.org annotations.
  */
-import org.checkthread.annotations.ThreadSafe;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
