@@ -47,7 +47,7 @@ import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
 import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing checkthread.org annotations.
+ * Importing JUnit/EasyMock classes.
  */
 import org.easymock.EasyMock;
 import org.junit.Assert;
