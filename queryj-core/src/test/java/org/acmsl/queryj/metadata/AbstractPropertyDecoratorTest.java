@@ -72,6 +72,7 @@ public class AbstractPropertyDecoratorTest
         @NotNull final AbstractPropertyDecorator instance =
             new AbstractPropertyDecorator(property, metadataManager) {};
 
+
         EasyMock.replay(metadataManager);
 
 
