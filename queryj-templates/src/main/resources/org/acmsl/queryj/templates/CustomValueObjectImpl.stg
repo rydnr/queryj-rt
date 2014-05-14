@@ -138,6 +138,6 @@ public String toString()
     result.append(super.toString());
     result.append(", \"package\": \"<C.package>\" }");
 
-    return result;
+    return result.toString();
 }
 >>
