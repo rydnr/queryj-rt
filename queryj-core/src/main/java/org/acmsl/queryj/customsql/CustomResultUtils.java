@@ -455,6 +455,7 @@ public class CustomResultUtils
             {
                 result = t_strResultVoClass.equalsIgnoreCase(t_strDaoVoClass);
             }
+        else
         /*
         }
         */
