@@ -704,16 +704,14 @@ public abstract class AbstractResultDecorator
         return
               "{ \"class\": \"AbstractResultDecorator\""
             + ", \"result\": " + m__Result
-/*
             + ", \"customSqlProvider\": " + m__CustomSqlProvider
             + ", \"metadataManager\": " + m__MetadataManager
             + ", \"decoratorFactory\": " + m__DecoratorFactory
-*/
             + " }";
     }
 
     /**
-     * Retrieves the hashCode.
+     * Retrieves the hashcode.
      * @return such value.
      */
     @Override

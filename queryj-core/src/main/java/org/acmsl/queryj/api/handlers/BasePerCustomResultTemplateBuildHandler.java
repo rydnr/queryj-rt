@@ -1,5 +1,5 @@
 /*
-                        QueryJ Core
+                        QueryJ
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -77,7 +77,7 @@ import java.util.List;
  * @param <T> the template type.
  * @param <C> the context type.
  * @param <TF> the template factory type.
- * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro Armendariz</a>
+ * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  */
 @ThreadSafe
 @SuppressWarnings("unused")
@@ -99,7 +99,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
     public static final String CUSTOM_RESULTS_NO_DUPLICATES = CUSTOM_RESULTS + "..NoDuplic4tes;";
 
     /**
-     * Creates a {@code BasePerCustomResultTemplateBuildHandler} instance.
+     * Creates a <code>BasePerCustomResultTemplateBuildHandler</code> instance.
      */
     @SuppressWarnings("unused")
     public BasePerCustomResultTemplateBuildHandler() {}
@@ -107,7 +107,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
     /**
      * Handles given information.
      * @param parameters the parameters.
-     * @return {@code true} if the chain should be stopped.
+     * @return <code>true</code> if the chain should be stopped.
      */
     @Override
     public boolean handle(@NotNull final QueryJCommand parameters)

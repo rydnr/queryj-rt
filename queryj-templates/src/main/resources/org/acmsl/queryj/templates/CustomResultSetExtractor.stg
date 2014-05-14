@@ -68,13 +68,10 @@ sourceImpl(result, C) ::= <<
   C=C)><endif>
  */
 <package_declaration(p=C.package)>
-
-/*
- * Importing V24-Commons classes.
- */
-import com.ventura24.commons.dao.DAOListener;
-import com.ventura24.commons.dao.V24ResultSetExtractor;
 <checkers_import(C=C)>
+<if(C.implement_markers)>
+
+<endif>
 /*
  * Importing JDK classes.
  */
@@ -106,20 +103,19 @@ class(result, repository, C) ::= <<
  * <[
       description(result=result)
     ]:{line |<line>}; separator="\n * ">
-<class_common_javadoc(template="org/acmsl/queryj/templates/CustomResultSetExtractor.stg", C=C)>
+<class_common_javadoc(
+  template="org/acmsl/queryj/templates/CustomResultSetExtractor.stg", C=C)>
  */
-<class_annotations(C=C)>
 public class <result.id.voName>ResultSetExtractor
-    extends V24ResultSetExtractor\<<result.id.voName>\>
+    extends <repository.voName>ResultSetExtractor\<<result.id.voName>\>
 {
     /**
      * Creates a new instance.
-     * @param listener the {@link DAOListener} instance.
+     * @param listener the {@link <repository.voName>DAOListener} instance.
      */
-    public <result.id.voName>ResultSetExtractor(
-        <notnull(C=C)>final String sql, <nullable(C=C)>final DAOListener listener)
+    public <result.id.voName>ResultSetExtractor(<nullable(C=C)>final <repository.voName>DAOListener listener)
     {
-        super(sql, listener);
+        super(listener);
     }
 
     <defaultExtractor(result=result, repository=repository, C=C)>
@@ -136,8 +132,7 @@ defaultExtractor(result, repository, C) ::= <<
 /**
  * Extracts {@link <result.id.voName>} information from given result set.
  * @param resultSet the result set.
- * @param sql the SQL query.
- * @param listener the {@link DAOListener} instance.
+ * @param listener the {@link <repository.voName>DAOListener} instance.
  * @return the {@code <result.id.voName>} or
  * {@code null} if the operation returned no data.
  * @throws SQLException intercepted by \<i>Spring\</i\>.
@@ -147,20 +142,18 @@ defaultExtractor(result, repository, C) ::= <<
 <notnull(C=C)>
 protected <result.id.voName> extractData(
     <notnull(C=C)>final ResultSet resultSet,
-    <notnull(C=C)>final String sql,
-    <nullable(C=C)>final DAOListener listener)
+    <nullable(C=C)>final <repository.voName>DAOListener listener)
     throws  SQLException,
             DataAccessException
 {
-    return extractData(resultSet, sql, listener, <result.id.voName>Factory.getInstance());
+    return extractData(resultSet, listener, <result.id.voName>ValueObjectFactory.getInstance());
 }
 
 /**
  * Extracts {@link <result.id.voName>} information from given result set.
  * @param resultSet the result set.
- * @param sql the SQL query.
- * @param listener the {@link DAOListener} instance.
- * @param factory the {@link <result.id.voName>Factory}
+ * @param listener the {@link <repository.voName>DAOListener} instance.
+ * @param factory the {@link <result.id.voName>ValueObjectFactory}
  * instance.
  * @return the {@code <result.id.voName>} or
  * {@code null} if the operation returned no data.
@@ -171,9 +164,8 @@ protected <result.id.voName> extractData(
 <notnull(C=C)>
 protected <result.id.voName> extractData(
     <notnull(C=C)>final ResultSet resultSet,
-    <notnull(C=C)>final String sql,
-    <nullable(C=C)>final DAOListener listener,
-    <notnull(C=C)>final <result.id.voName>Factory factory)
+    <nullable(C=C)>final <repository.voName>DAOListener listener,
+    <notnull(C=C)>final <result.id.voName>ValueObjectFactory factory)
   throws  SQLException,
           DataAccessException
 {
@@ -183,7 +175,7 @@ protected <result.id.voName> extractData(
     {
         if (listener != null)
         {
-            daoListener.resultSetMovedForward(sql, 1);
+            daoListener.resultSetMovedForward(this);
         }
 
         result =

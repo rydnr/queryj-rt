@@ -347,32 +347,4 @@ public class CachingResultDecorator
 
         return result;
     }
-
-    /**
-     * {@inheritDoc}
-     */
-    @NotNull
-    @Override
-    public String toString()
-    {
-        @NotNull final StringBuilder result = new StringBuilder("{ \"class\": \"");
-
-        result.append(CachingResultDecorator.class.getSimpleName());
-        result.append("\", \"super\": ");
-        result.append(super.toString());
-        result.append(", \"cachedProperties\": \"");
-        result.append(this.m__lCachedProperties);
-        result.append("\", \"cachedLobProperties\": \"");
-        result.append(this.m__lCachedLobProperties);
-        result.append("\", \"cachedImplicit\": \"");
-        result.append(this.m__bCachedImplicit);
-        result.append("\", \"cachedImplicitProperties\": \"");
-        result.append(this.m__lCachedImplicitProperties);
-        result.append("\", \"cachedWrappingASingleProperty\": \"");
-        result.append(this.m__bCachedWrappingASingleProperty);
-        result.append(", \"package\": \"org.acmsl.queryj.metadata\" }");
-
-        return result.toString();
-    }
-
 }
