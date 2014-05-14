@@ -309,6 +309,7 @@ public class CustomResultUtils
                 @SuppressWarnings("unused") final int a = 1;
             }
 
+
             for (@Nullable final Sql<String> t_Sql :
                     retrieveSqlElementsByResultId(customSqlProvider, "" + resultElement.getId()))
             {
