@@ -300,16 +300,17 @@ public class CustomResultUtils
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager)
     {
-        @Nullable String result = retrieveCachedEntry("" + resultId);
+        @Nullable String result = retrieveCachedEntry("" + resultElement.getId());
 
         if (result == null)
         {
-            if (DebugUtils.getInstance().debugEnabledForResultId(resultId))
+            if (DebugUtils.getInstance().debugEnabledForResultId(resultElement.getId()))
             {
                 @SuppressWarnings("unused") final int a = 1;
             }
 
-            for (@Nullable final Sql<String> t_Sql : retrieveSqlElementsByResultId(customSqlProvider, "" + resultId))
+            for (@Nullable final Sql<String> t_Sql :
+                    retrieveSqlElementsByResultId(customSqlProvider, "" + resultElement.getId()))
             {
                 if (t_Sql != null)
                 {
@@ -317,7 +318,7 @@ public class CustomResultUtils
 
                     if (result != null)
                     {
-                        cacheEntry("" + resultId, result);
+                        cacheEntry("" + resultElement.getId(), result);
                         break;
                     }
                 }
