@@ -89,7 +89,7 @@ public abstract class BasePerCustomResultTemplateWritingHandler
     {
         final File result;
 
-
+        if ()
          @NotNull final MetadataManager t_MetadataManager =
             retrieveMetadataManager(parameters);
 
