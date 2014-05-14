@@ -92,7 +92,7 @@ public class CustomResultUtilsTest
         EasyMock.expect(customSqlProvider.getSqlDAO()).andReturn(sqlDAO);
         EasyMock.replay(metadataManager);
         EasyMock.replay(tableDAO);
-        ExtendedSAX
+        EasyMock.replay(customSqlProvider);
 
         @Nullable final String retrievedTableName = instance.retrieveTable(result, customSqlProvider, metadataManager);
 
