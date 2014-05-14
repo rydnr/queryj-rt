@@ -69,7 +69,7 @@ public class AbstractPropertyDecoratorTest
         EasyMock.expect(metadataManager.getMetadataTypeManager()).andReturn(metadataTypeManager).anyTimes();
 
         @NotNull final Property<String> property = EasyMock.createNiceMock(Property.class);
-
+        EasyMock.expect(property.getType())
         @NotNull final AbstractPropertyDecorator instance =
             new AbstractPropertyDecorator(property, metadataManager) {};
 
