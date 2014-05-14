@@ -92,7 +92,7 @@ immutable_property_setter_call(property) ::= <<
 <if(!property.strictlyPrimitive)><if(property.nullable)>
 if (<property.id.voName.uncapitalized> != null)
 {
-    immutableSet<property.id.capitalized>(<property.id.voName.uncapitalized>);
+    immutableSet<property.id.capitalized>(<property.id.uncapitalized>);
 }<else>immutableSet<property.id.capitalized>(<property.id.uncapitalized>);<endif>
 <else>immutableSet<property.id.capitalized>(<property.id.uncapitalized>);<endif>
 >>
