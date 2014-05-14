@@ -38,6 +38,8 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -60,7 +62,9 @@ public class AbstractPropertyDecoratorTest
     @Test
     public void getJavaType_supports_boolean_properties()
     {
-
+        @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
+        @NotNull final MetadataTypeManager metadataTypeManager = JdbcMetadataTypeManager.getInstance();
+        EasyMock.expect()
         @NotNull final AbstractPropertyDecorator instance =
             new AbstractPropertyDecorator()
             {
