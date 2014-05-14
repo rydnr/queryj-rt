@@ -38,7 +38,6 @@ package org.acmsl.queryj.customsql;
 /*
  * Importing QueryJ Core classes.
  */
-import com.sun.org.apache.xalan.internal.xsltc.dom.ExtendedSAX;
 import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.SqlDAO;
 import org.acmsl.queryj.metadata.TableDAO;
@@ -91,7 +90,7 @@ public class CustomResultUtilsTest
         EasyMock.expect(metadataManager.getTableDAO()).andReturn(tableDAO).anyTimes();
         EasyMock.expect(tableDAO.findAllTableNames()).andReturn(Arrays.asList(tableName)).anyTimes();
         EasyMock.expect(customSqlProvider.getSqlDAO()).andReturn(sqlDAO).anyTimes();
-        EasyMock.expect(sqlDAO.findByResultId(result.getId())).andReturn(new ArrayList<>(0));
+        EasyMock.expect(sqlDAO.findByResultId(result.getId())).andReturn(new ArrayList<>(0)).anyTimes();
 
         EasyMock.replay(metadataManager);
         EasyMock.replay(tableDAO);
