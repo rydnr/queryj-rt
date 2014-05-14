@@ -70,6 +70,9 @@ import java.util.Arrays;
 @RunWith(JUnit4.class)
 public class CustomResultUtilsTest
 {
+    /**
+     * Checks whether retrieveTable() uses the
+     */
     @Test
     public void retrieveTable_uses_the_result_class_name()
     {
