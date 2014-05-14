@@ -491,7 +491,7 @@ public abstract class AbstractResultDecorator
         @Nullable List<Property<DecoratedString>> result = null;
 
         @Nullable final String t_strTable =
-            customResultUtils.retrieveTable(sqlResult, customSqlProvider, metadataManager);
+            customResultUtils.retrieveTable(sqlResult, metadataManager);
 
         if (t_strTable != null)
         {
