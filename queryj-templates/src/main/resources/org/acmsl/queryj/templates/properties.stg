@@ -138,7 +138,7 @@ property_to_primitive(property) ::= <<
 <if(property.numeric)
     ><property.id.voName.uncapitalized><
  else><if(property.string)
-    ><property.id.voName.uncapitalized><endif><endif>
+    ><property.id.uncapitalized><endif><endif>
 >>
 
 property_resultset_retrieval(property, C) ::= <<
