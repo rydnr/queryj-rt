@@ -95,6 +95,7 @@ public class CustomResultUtilsTest
         EasyMock.replay(metadataManager);
         EasyMock.replay(tableDAO);
         EasyMock.replay(customSqlProvider);
+        EasyMock.replay();
 
         @Nullable final String retrievedTableName = instance.retrieveTable(result, customSqlProvider, metadataManager);
 
