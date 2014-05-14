@@ -314,7 +314,7 @@ public class CustomResultUtils
             {
                 if (tableName != null)
                 {
-                    if (matches(resultElement, tableName, customSqlProvider))
+                    if (matches(resultElement, tableName))
                     {
                         result = tableName;
                     }
@@ -394,26 +394,10 @@ public class CustomResultUtils
      * included in the DAO layer associated to a concrete table.
      * @param resultElement the result.
      * @param tableName the table name.
-     * @param customSqlProvider the {@link CustomSqlProvider} instance.
-     * @return <code>true</code> if it should be included.
-     */
-    public <T> boolean matches(
-        @NotNull final Result<T> resultElement, @NotNull final String tableName)
-    {
-        return matches(resultElement, tableName);
-    }
-
-    /**
-     * Checks whether given result element is suitable of being
-     * included in the DAO layer associated to a concrete table.
-     * @param resultElement the result.
-     * @param tableName the table name.
      * @return {@code true} if it should be included.
      * @param <T> the Result type.
      */
-    protected <T> boolean matches(
-        @NotNull final Result<T> resultElement,
-        @NotNull final String tableName)
+    protected <T> boolean matches(@NotNull final Result<T> resultElement, @NotNull final String tableName)
     {
         final boolean result;
 
