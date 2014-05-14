@@ -90,7 +90,7 @@ public abstract class BasePerCustomResultTemplateWritingHandler
     {
         final File result;
 
-        if (DebugUtils.getInstance())
+        if (DebugUtils.getInstance().debugEnabledForResultId())
          @NotNull final MetadataManager t_MetadataManager =
             retrieveMetadataManager(parameters);
 
