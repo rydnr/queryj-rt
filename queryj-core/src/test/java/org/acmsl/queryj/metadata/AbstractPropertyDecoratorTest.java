@@ -38,6 +38,7 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing JetBrains annotations.
  */
+import com.sun.org.apache.xalan.internal.xsltc.dom.ExtendedSAX;
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
 import org.easymock.EasyMock;
@@ -69,12 +70,13 @@ public class AbstractPropertyDecoratorTest
         EasyMock.expect(metadataManager.getMetadataTypeManager()).andReturn(metadataTypeManager).anyTimes();
 
         @NotNull final Property<String> property = EasyMock.createNiceMock(Property.class);
-        EasyMock.expect(property.getType())
+        EasyMock.expect(property.getType()).andReturn("boolean").anyTimes();
+
         @NotNull final AbstractPropertyDecorator instance =
             new AbstractPropertyDecorator(property, metadataManager) {};
 
-
         EasyMock.replay(metadataManager);
+        ExtendedSAX
 
 
     }
