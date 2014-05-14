@@ -60,6 +60,7 @@ public class AbstractPropertyDecoratorTest
     @Test
     public void getJavaType_supports_boolean_properties()
     {
+
         @NotNull final AbstractPropertyDecorator instance =
             new AbstractPropertyDecorator()
             {
