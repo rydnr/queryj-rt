@@ -117,8 +117,7 @@ public class CustomResultUtils
 
         if (t_strTable != null)
         {
-            result =
-                matches(customResult, t_strTable, customSqlProvider, MetadataUtils.getInstance());
+            result = matches(customResult, t_strTable);
         }
 
         return result;
@@ -399,11 +398,9 @@ public class CustomResultUtils
      * @return <code>true</code> if it should be included.
      */
     public <T> boolean matches(
-        @NotNull final Result<T> resultElement,
-        @NotNull final String tableName,
-        @NotNull final CustomSqlProvider customSqlProvider)
+        @NotNull final Result<T> resultElement, @NotNull final String tableName)
     {
-        return matches(resultElement, tableName, customSqlProvider, MetadataUtils.getInstance());
+        return matches(resultElement, tableName);
     }
 
     /**
@@ -411,8 +408,6 @@ public class CustomResultUtils
      * included in the DAO layer associated to a concrete table.
      * @param resultElement the result.
      * @param tableName the table name.
-     * @param customSqlProvider the {@link CustomSqlProvider} instance.
-     * @param metadataUtils the {@link MetadataUtils} instance.
      * @return {@code true} if it should be included.
      * @param <T> the Result type.
      */
