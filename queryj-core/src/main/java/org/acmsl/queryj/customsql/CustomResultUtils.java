@@ -296,7 +296,6 @@ public class CustomResultUtils
     @Nullable
     public <T> String retrieveTable(
         @NotNull final Result<T> resultElement,
-        @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager)
     {
         @Nullable String result = retrieveCachedEntry("" + resultElement.getId());
