@@ -113,7 +113,7 @@ public class CustomResultUtils
     {
         boolean result = false;
 
-        @Nullable final String t_strTable = retrieveTable(customResult, customSqlProvider, metadataManager);
+        @Nullable final String t_strTable = retrieveTable(customResult, metadataManager);
 
         if (t_strTable != null)
         {
@@ -288,7 +288,6 @@ public class CustomResultUtils
     /**
      * Retrieves the table associated to the result.
      * @param resultElement the result element.
-     * @param customSqlProvider the <code>CustomSqlProvider</code> instance.
      * @param metadataManager the database metadata manager.
      * @return the table name.
      * @param <T> the result type.
