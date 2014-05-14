@@ -129,7 +129,7 @@ protected final void immutableSet<property.id.voName.capitalized>(<if(!property.
 @SuppressWarnings("unused")
 protected void set<property.id.voName.capitalized>(<if(!property.strictlyPrimitive)><notnull(C=C)><endif>final <property.javaType> value)
 {
-    immutableSet<property.id.voName.capitalized>(value);
+    immutableSet<property.id.capitalized>(value);
 }
 >>
 
