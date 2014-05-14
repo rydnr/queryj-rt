@@ -58,5 +58,8 @@ import org.junit.runners.JUnit4;
 public class AbstractPropertyDecoratorTest
 {
     @Test
-    public void getJavaType_supports_boolean
+    public void getJavaType_supports_boolean_properties()
+    {
+        @NotNull final AbstractPropertyDecorator instance =
+    }
 }
