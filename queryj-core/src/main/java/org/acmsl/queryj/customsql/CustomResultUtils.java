@@ -418,9 +418,7 @@ public class CustomResultUtils
      */
     protected <T> boolean matches(
         @NotNull final Result<T> resultElement,
-        @NotNull final String tableName,
-        @NotNull final CustomSqlProvider customSqlProvider,
-        @NotNull final MetadataUtils metadataUtils)
+        @NotNull final String tableName)
     {
         final boolean result;
 
