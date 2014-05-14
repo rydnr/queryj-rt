@@ -72,6 +72,7 @@ public class AbstractPropertyDecoratorTest
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
         @NotNull final MetadataTypeManager metadataTypeManager = JdbcMetadataTypeManager.getInstance();
         EasyMock.expect(metadataManager.getMetadataTypeManager()).andReturn(metadataTypeManager).anyTimes();
+        EasyMock.replay(metadataManager);
 
         @NotNull final Property<String> property =
             new PropertyElement<>("id", "columnName", 1, "boolean", true);
@@ -79,7 +80,6 @@ public class AbstractPropertyDecoratorTest
         @NotNull final AbstractPropertyDecorator instance =
             new AbstractPropertyDecorator(property, metadataManager) {};
 
-        EasyMock.replay(metadataManager);
 
         Assert.assertEquals("boolean", instance.getJavaType().getValue());
 
