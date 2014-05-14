@@ -202,10 +202,6 @@ public abstract class AbstractPropertyDecorator
     protected String retrieveType(
         @NotNull final String type, @NotNull final MetadataTypeManager metadataTypeManager)
     {
-        if (type.equals("boolean"))
-        {
-
-        }
         final int t_iJavaType = metadataTypeManager.getJavaType(type);
 
         // TODO: support boolean properties.
