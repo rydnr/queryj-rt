@@ -230,7 +230,7 @@ if (this.m__<property.id.voName.capitalized> == null)
 else
 {
      <property.id.uncapitalized>HashCode = this.m__<property.id.capitalized>.hashCode();
-}<else>final int <property.id.uncapitalized>HashCode = this.m__<property.id.voName.capitalized>.hashCode();<endif><endif>
+}<else>final int <property.id.uncapitalized>HashCode = this.m__<property.id.capitalized>.hashCode();<endif><endif>
 >>
 
 property_toString(property) ::= <<
