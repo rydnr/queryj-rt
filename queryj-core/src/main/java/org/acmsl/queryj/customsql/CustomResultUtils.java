@@ -309,7 +309,8 @@ public class CustomResultUtils
                 @SuppressWarnings("unused") final int a = 1;
             }
 
-            List<String> tableNames =
+            List<String> tableNames = metadataManager.getTableDAO().findAllTableNames();
+
             for (@Nullable final Sql<String> t_Sql :
                     retrieveSqlElementsByResultId(customSqlProvider, "" + resultElement.getId()))
             {
