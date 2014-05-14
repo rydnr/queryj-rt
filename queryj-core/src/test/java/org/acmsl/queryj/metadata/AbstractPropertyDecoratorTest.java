@@ -74,7 +74,7 @@ public class AbstractPropertyDecoratorTest
         EasyMock.expect(metadataManager.getMetadataTypeManager()).andReturn(metadataTypeManager).anyTimes();
 
         @NotNull final Property<String> property =
-            new PropertyElement<>("id"
+            new PropertyElement<>("id", "columnName",
         @NotNull final T id,
         @NotNull final T columnName,
         final int index,
