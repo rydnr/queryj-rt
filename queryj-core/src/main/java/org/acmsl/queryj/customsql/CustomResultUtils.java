@@ -427,10 +427,10 @@ public class CustomResultUtils
         @Nullable String t_strDao = null;
 
         @Nullable final String t_strResultVoClass = extractVoName(resultElement);
-        @Nullable final String t_strDaoVoClass = extractVoName(t_strDao);
 
         if (t_strResultVoClass != null)
         {
+            @Nullable final String t_strDaoVoClass = extractVoName(t_strDao);
             result = t_strResultVoClass.equalsIgnoreCase(t_strDaoVoClass);
         }
         else
