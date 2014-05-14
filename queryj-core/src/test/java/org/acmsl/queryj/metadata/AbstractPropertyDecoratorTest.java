@@ -81,7 +81,7 @@ public class AbstractPropertyDecoratorTest
         EasyMock.replay(metadataManager);
         EasyMock.expect(property);
 
-        Assert.assertEquals("boolean", instance.getJavaType());
+        Assert.assertEquals("boolean", instance.getJavaType().getValue());
 
 
     }
