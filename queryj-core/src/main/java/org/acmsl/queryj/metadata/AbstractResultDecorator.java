@@ -369,9 +369,7 @@ public abstract class AbstractResultDecorator
             else
             {
                 @Nullable final String t_strTable =
-                    customResultUtils.retrieveTable(
-                        resultElement,
-                        metadataManager);
+                    customResultUtils.retrieveTable(resultElement, metadataManager);
 
                 if  (t_strTable != null)
                 {
