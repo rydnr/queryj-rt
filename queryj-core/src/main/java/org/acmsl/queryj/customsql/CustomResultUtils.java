@@ -422,7 +422,7 @@ public class CustomResultUtils
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataUtils metadataUtils)
     {
-        final boolean result = false;
+        final boolean result; // = false;
 
         @Nullable String t_strDao = null;
 
