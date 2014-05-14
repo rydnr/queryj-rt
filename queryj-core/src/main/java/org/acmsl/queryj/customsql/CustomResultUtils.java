@@ -316,7 +316,7 @@ public class CustomResultUtils
                 if (tableName != null)
                 {
                     if (matches(resultElement, tableName))
-
+                    {}
                     if (result != null)
                     {
                         cacheEntry("" + resultElement.getId(), result);
