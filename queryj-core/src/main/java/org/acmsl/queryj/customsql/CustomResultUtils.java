@@ -397,8 +397,8 @@ public class CustomResultUtils
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
      * @return <code>true</code> if it should be included.
      */
-    public boolean matches(
-        @NotNull final Result<String> resultElement,
+    public <T> boolean matches(
+        @NotNull final Result<T> resultElement,
         @NotNull final String tableName,
         @NotNull final CustomSqlProvider customSqlProvider)
     {
