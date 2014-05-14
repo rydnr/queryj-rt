@@ -67,7 +67,7 @@ public class AbstractPropertyDecoratorTest
         @NotNull final MetadataTypeManager metadataTypeManager = JdbcMetadataTypeManager.getInstance();
         EasyMock.expect(metadataManager.getMetadataTypeManager()).andReturn(metadataTypeManager).anyTimes();
 
-        @NotNull final Property property = EasyMock.createNiceMock(Property.class)
+        @NotNull final Property<String> property = EasyMock.createNiceMock(Property.class)
         @NotNull final AbstractPropertyDecorator instance =
             new AbstractPropertyDecorator()
             {
