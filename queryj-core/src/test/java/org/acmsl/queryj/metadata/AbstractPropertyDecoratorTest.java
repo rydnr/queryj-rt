@@ -36,14 +36,14 @@
 package org.acmsl.queryj.metadata;
 
 /*
- * Importing checkthread.org annotations.
- */
-/*
- * Importing JetBrains annotations.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
-import org.easymock.EasyMock;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
