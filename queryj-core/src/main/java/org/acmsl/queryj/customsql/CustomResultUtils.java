@@ -311,8 +311,7 @@ public class CustomResultUtils
 
             List<String> tableNames = metadataManager.getTableDAO().findAllTableNames();
 
-            for (@Nullable final String tableName :
-                    retrieveSqlElementsByResultId(customSqlProvider, "" + resultElement.getId()))
+            for (@Nullable final String tableName : tableNames)
             {
                 if (t_Sql != null)
                 {
