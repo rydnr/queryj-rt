@@ -424,13 +424,11 @@ public class CustomResultUtils
     {
         final boolean result;
 
-        @Nullable String t_strDao = null;
-
         @Nullable final String t_strResultVoClass = extractVoName(resultElement);
 
         if (t_strResultVoClass != null)
         {
-            @Nullable final String t_strDaoVoClass = extractVoName(t_strDao);
+            @Nullable final String t_strDaoVoClass = extractVoName(tableName);
             result = t_strResultVoClass.equalsIgnoreCase(t_strDaoVoClass);
         }
         else
