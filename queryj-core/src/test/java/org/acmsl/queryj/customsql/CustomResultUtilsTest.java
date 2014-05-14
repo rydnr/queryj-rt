@@ -87,9 +87,9 @@ public class CustomResultUtilsTest
         @NotNull final TableDAO tableDAO = EasyMock.createNiceMock(TableDAO.class);
         @NotNull final SqlDAO sqlDAO = EasyMock.createNiceMock(SqlDAO.class);
 
-        EasyMock.expect(metadataManager.getTableDAO()).andReturn(tableDAO);
-        EasyMock.expect(tableDAO.findAllTableNames()).andReturn(Arrays.asList(tableName));
-        EasyMock.expect(customSqlProvider.getSqlDAO()).andReturn(sqlDAO);
+        EasyMock.expect(metadataManager.getTableDAO()).andReturn(tableDAO).anyTimes();
+        EasyMock.expect(tableDAO.findAllTableNames()).andReturn(Arrays.asList(tableName)).anyTimes();
+        EasyMock.expect(customSqlProvider.getSqlDAO()).andReturn(sqlDAO).anyTimes();
         EasyMock.replay(metadataManager);
         EasyMock.replay(tableDAO);
         EasyMock.replay(customSqlProvider);
