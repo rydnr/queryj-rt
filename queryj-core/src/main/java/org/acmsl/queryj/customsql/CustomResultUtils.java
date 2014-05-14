@@ -319,6 +319,7 @@ public class CustomResultUtils
                     {
                         result = tableName;
                     }
+
                     if (result != null)
                     {
                         cacheEntry("" + resultElement.getId(), result);
