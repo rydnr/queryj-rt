@@ -315,7 +315,7 @@ public class CustomResultUtils
             {
                 if (tableName != null)
                 {
-                    if (matches(resultElement, tableName))
+                    if (matches(resultElement, tableName, customSqlProvider))
                     {
                         result = tableName;
                     }
