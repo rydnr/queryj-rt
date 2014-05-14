@@ -92,10 +92,11 @@ public class CustomResultUtilsTest
         EasyMock.expect(tableDAO.findAllTableNames()).andReturn(Arrays.asList(tableName)).anyTimes();
         EasyMock.expect(customSqlProvider.getSqlDAO()).andReturn(sqlDAO).anyTimes();
         EasyMock.expect(sqlDAO.findByResultId(result.getId())).andReturn(new ArrayList<>(0));
+
         EasyMock.replay(metadataManager);
         EasyMock.replay(tableDAO);
         EasyMock.replay(customSqlProvider);
-        EasyMock.replay();
+        EasyMock.replay(sqlDAO);
 
         @Nullable final String retrievedTableName = instance.retrieveTable(result, customSqlProvider, metadataManager);
 
