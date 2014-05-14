@@ -61,6 +61,7 @@ import org.junit.runners.JUnit4;
 /*
  * Importing JDK classes.
  */
+import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -90,7 +91,7 @@ public class CustomResultUtilsTest
         EasyMock.expect(metadataManager.getTableDAO()).andReturn(tableDAO).anyTimes();
         EasyMock.expect(tableDAO.findAllTableNames()).andReturn(Arrays.asList(tableName)).anyTimes();
         EasyMock.expect(customSqlProvider.getSqlDAO()).andReturn(sqlDAO).anyTimes();
-        EasyMock.expect(sqlDAO.findByResultId(result.getId()))
+        EasyMock.expect(sqlDAO.findByResultId(result.getId())).andReturn(new ArrayList<>)
         EasyMock.replay(metadataManager);
         EasyMock.replay(tableDAO);
         EasyMock.replay(customSqlProvider);
