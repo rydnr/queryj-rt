@@ -60,7 +60,7 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class AbstractPropertyDecoratorTest
 {
-    @SuppressWarnings("unu")
+    @SuppressWarnings("unchecked")
     @Test
     public void getJavaType_supports_boolean_properties()
     {
@@ -70,8 +70,6 @@ public class AbstractPropertyDecoratorTest
 
         @NotNull final Property<String> property = EasyMock.createNiceMock(Property.class);
         @NotNull final AbstractPropertyDecorator instance =
-            new AbstractPropertyDecorator()
-            {
-            }
+            new AbstractPropertyDecorator(property, metadataManager) {};
     }
 }
