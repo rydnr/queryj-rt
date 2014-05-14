@@ -127,7 +127,7 @@ protected final void immutableSet<property.id.voName.capitalized>(<if(!property.
  * @param value such information.
  */
 @SuppressWarnings("unused")
-protected void set<property.id.voName.capitalized>(<if(!property.strictlyPrimitive)><notnull(C=C)><endif>final <property.javaType> value)
+protected void set<property.id.capitalized>(<if(!property.strictlyPrimitive)><notnull(C=C)><endif>final <property.javaType> value)
 {
     immutableSet<property.id.capitalized>(value);
 }
