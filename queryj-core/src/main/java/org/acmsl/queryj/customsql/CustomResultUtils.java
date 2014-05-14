@@ -426,6 +426,8 @@ public class CustomResultUtils
 
         @Nullable String t_strDao = null;
 
+        /*
+         * Check not actually needed.
         for (@Nullable final Sql<String> t_Sql : findSqlElementsByResultId("" + resultElement.getId(), customSqlProvider))
         {
             if (t_Sql != null)
