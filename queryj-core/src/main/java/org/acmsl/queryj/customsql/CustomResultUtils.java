@@ -313,7 +313,7 @@ public class CustomResultUtils
 
             for (@Nullable final String tableName : tableNames)
             {
-                if (t_Sql != null)
+                if (tableName != null)
                 {
                     result = retrieveTable(t_Sql, metadataManager);
 
