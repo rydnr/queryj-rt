@@ -315,7 +315,7 @@ public class CustomResultUtils
             {
                 if (tableName != null)
                 {
-                    result = retrieveTable(t_Sql, metadataManager);
+                    if (matches(resultElement, tableName))
 
                     if (result != null)
                     {
