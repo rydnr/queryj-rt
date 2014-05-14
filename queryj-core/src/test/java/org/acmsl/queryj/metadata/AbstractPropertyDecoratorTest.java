@@ -38,6 +38,7 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
@@ -66,7 +67,7 @@ public class AbstractPropertyDecoratorTest
         @NotNull final MetadataTypeManager metadataTypeManager = JdbcMetadataTypeManager.getInstance();
         EasyMock.expect(metadataManager.getMetadataTypeManager()).andReturn(metadataTypeManager).anyTimes();
 
-        @NotNull final Property property = Ea
+        @NotNull final Property property = EasyMock.createNiceMock(Property.class)
         @NotNull final AbstractPropertyDecorator instance =
             new AbstractPropertyDecorator()
             {
