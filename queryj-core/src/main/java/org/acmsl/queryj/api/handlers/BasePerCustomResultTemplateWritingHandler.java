@@ -92,7 +92,7 @@ public abstract class BasePerCustomResultTemplateWritingHandler
 
         if (DebugUtils.getInstance().debugEnabledForResultId(context.getResult().getId()))
         {
-            final int a = 0;
+            int a = 0;
         }
          @NotNull final MetadataManager t_MetadataManager =
             retrieveMetadataManager(parameters);
