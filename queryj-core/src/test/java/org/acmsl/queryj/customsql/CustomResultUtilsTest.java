@@ -39,6 +39,7 @@ package org.acmsl.queryj.customsql;
  * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.metadata.MetadataManager;
+import org.acmsl.queryj.metadata.SqlDAO;
 import org.acmsl.queryj.metadata.TableDAO;
 
 /*
@@ -83,10 +84,11 @@ public class CustomResultUtilsTest
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
         @NotNull final TableDAO tableDAO = EasyMock.createNiceMock(TableDAO.class);
+        @NotNull final SqlDAO sqlDAO = EasyMock.createNiceMock(SqlDAO.class);
 
         EasyMock.expect(metadataManager.getTableDAO()).andReturn(tableDAO);
         EasyMock.expect(tableDAO.findAllTableNames()).andReturn(Arrays.asList(tableName));
-        EasyMock.expect(customSqlProvider.getSqlDAO()).andReturn()
+        EasyMock.expect(customSqlProvider.getSqlDAO()).andReturn(sqlDAO);
         EasyMock.replay(metadataManager);
         EasyMock.replay(tableDAO);
 
