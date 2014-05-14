@@ -209,13 +209,13 @@ endif>;
 property_equals(property) ::= <<
 <! Generates the contribution of each property to the equals method. !>
 <if(property.strictlyPrimitive)>
-final boolean <property.id.uncapitalized>Match = (this.m__<property.id.voName.capitalized> == candidate.get<property.id.voName.capitalized>());
+final boolean <property.id.uncapitalized>Match = (this.m__<property.id.capitalized> == candidate.get<property.id.capitalized>());
 <else><if(property.allowsNull)>
 final boolean <property.id.uncapitalized>Match =
     (   (this.m__<property.id.capitalized> != null)
      && (this.m__<property.id.capitalized>.equals(candidate.get<property.id.capitalized>())));
 <else>
-final boolean <property.id.voName.uncapitalized>Match = this.m__<property.id.voName.capitalized>.equals(candidate.get<property.id.voName.capitalized>());<endif><endif>
+final boolean <property.id.uncapitalized>Match = this.m__<property.id.capitalized>.equals(candidate.get<property.id.capitalized>());<endif><endif>
 >>
 
 property_hashCode(property) ::= <<
