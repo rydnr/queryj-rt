@@ -225,7 +225,7 @@ final int <property.id.voName.uncapitalized>HashCode = ("" + this.m__<property.i
 <if(property.allowsNull)>final int <property.id.voName.uncapitalized>HashCode;
 if (this.m__<property.id.voName.capitalized> == null)
 {
-    <property.id.voName.uncapitalized>HashCode = 0;
+    <property.id.uncapitalized>HashCode = 0;
 }
 else
 {
