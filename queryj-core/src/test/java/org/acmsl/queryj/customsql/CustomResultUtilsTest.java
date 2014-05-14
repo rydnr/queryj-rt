@@ -86,6 +86,7 @@ public class CustomResultUtilsTest
 
         EasyMock.expect(metadataManager.getTableDAO()).andReturn(tableDAO);
         EasyMock.expect(tableDAO.findAllTableNames()).andReturn(Arrays.asList(tableName));
+        EasyMock.expect(customSqlProvider.getSqlDAO())
         EasyMock.replay(metadataManager);
         EasyMock.replay(tableDAO);
 
