@@ -76,7 +76,7 @@ public class AbstractPropertyDecoratorTest
             new AbstractPropertyDecorator(property, metadataManager) {};
 
         EasyMock.replay(metadataManager);
-        EasyMock.expect()
+        EasyMock.expect(property);
 
 
     }
