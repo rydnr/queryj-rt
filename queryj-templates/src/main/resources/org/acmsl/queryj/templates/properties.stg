@@ -57,7 +57,7 @@ property_declaration(property, C) ::= <<
  * The \<i><property.id.voName>\</i> value.
  */
 <if(!property.strictlyPrimitive)><if(property.nullable)><nullable(C=C)><else><notnull(C=C)><endif><endif>
-private <property.javaType> m__<property.id.voName.capitalized>;
+private <property.javaType> m__<property.id.capitalized>;
 >>
 
 property_declaration_impl(attr, C) ::= <<
