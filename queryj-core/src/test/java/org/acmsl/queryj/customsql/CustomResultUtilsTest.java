@@ -39,7 +39,6 @@ package org.acmsl.queryj.customsql;
  * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.metadata.MetadataManager;
-import org.acmsl.queryj.metadata.SqlDAO;
 import org.acmsl.queryj.metadata.TableDAO;
 
 /*
@@ -60,7 +59,6 @@ import org.junit.runners.JUnit4;
 /*
  * Importing JDK classes.
  */
-import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
