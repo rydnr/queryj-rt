@@ -422,43 +422,21 @@ public class CustomResultUtils
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataUtils metadataUtils)
     {
-        final boolean result; // = false;
+        final boolean result;
 
         @Nullable String t_strDao = null;
 
-        /*
-         * Check not actually needed.
-        for (@Nullable final Sql<String> t_Sql : findSqlElementsByResultId("" + resultElement.getId(), customSqlProvider))
+        @Nullable final String t_strResultVoClass = extractVoName(resultElement);
+        @Nullable final String t_strDaoVoClass = extractVoName(t_strDao);
+
+        if (t_strResultVoClass != null)
         {
-            if (t_Sql != null)
-            {
-                t_strDao = t_Sql.getDao();
-            }
-
-            if (   (t_strDao != null)
-                && (metadataUtils.matches(tableName, t_strDao)))
-            {
-                result = true;
-                break;
-            }
+            result = t_strResultVoClass.equalsIgnoreCase(t_strDaoVoClass);
         }
-
-        if (result)
+        else
         {
             result = false;
-        */
-
-            @Nullable final String t_strResultVoClass = extractVoName(resultElement);
-            @Nullable final String t_strDaoVoClass = extractVoName(t_strDao);
-
-            if (t_strResultVoClass != null)
-            {
-                result = t_strResultVoClass.equalsIgnoreCase(t_strDaoVoClass);
-            }
-        else
-        /*
         }
-        */
 
         return result;
     }
