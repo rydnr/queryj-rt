@@ -71,7 +71,7 @@ import java.util.Arrays;
 public class CustomResultUtilsTest
 {
     /**
-     * Checks whether retrieveTable() uses the
+     * Checks whether retrieveTable() uses the result's class name.
      */
     @Test
     public void retrieveTable_uses_the_result_class_name()
