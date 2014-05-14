@@ -33,7 +33,7 @@
 package org.acmsl.queryj.customsql;
 
 /*
- * Importing some project-specific classes.
+ * Importing some QueryJ Core classes.
  */
 import org.acmsl.queryj.QueryJSettings;
 import org.acmsl.queryj.metadata.CachingResultDecorator;
