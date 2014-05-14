@@ -317,7 +317,7 @@ public class CustomResultUtils
                 {
                     if (matches(resultElement, tableName))
                     {
-
+                        result = tableName;
                     }
                     if (result != null)
                     {
