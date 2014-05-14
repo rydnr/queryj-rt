@@ -81,7 +81,6 @@ public class CustomResultUtilsTest
         @NotNull final Result<String> result = new ResultElement<>("myResultId", "MyTable");
         @NotNull final String tableName = "my_table";
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
-
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
         @NotNull final TableDAO tableDAO = EasyMock.createNiceMock(TableDAO.class);
 
