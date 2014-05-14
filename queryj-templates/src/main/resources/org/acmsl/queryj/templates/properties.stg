@@ -229,7 +229,7 @@ if (this.m__<property.id.voName.capitalized> == null)
 }
 else
 {
-     <property.id.voName.uncapitalized>HashCode = this.m__<property.id.voName.capitalized>.hashCode();
+     <property.id.uncapitalized>HashCode = this.m__<property.id.voName.capitalized>.hashCode();
 }<else>final int <property.id.voName.uncapitalized>HashCode = this.m__<property.id.voName.capitalized>.hashCode();<endif><endif>
 >>
 
