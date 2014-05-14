@@ -679,6 +679,7 @@ public class CustomResultUtils
      * @param object the object to compare to.
      * @return the result of such comparison.
      */
+    @Override
     public boolean equals(@Nullable final Object object)
     {
         boolean result = false;
