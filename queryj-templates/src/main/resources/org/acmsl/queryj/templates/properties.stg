@@ -94,7 +94,7 @@ if (<property.id.voName.uncapitalized> != null)
 {
     immutableSet<property.id.capitalized>(<property.id.voName.uncapitalized>);
 }<else>immutableSet<property.id.capitalized>(<property.id.voName.uncapitalized>);<endif>
-<else>immutableSet<property.id.voName.capitalized>(<property.id.voName.uncapitalized>);<endif>
+<else>immutableSet<property.id.capitalized>(<property.id.voName.uncapitalized>);<endif>
 >>
 
 property_accessors(property, C) ::= <<
