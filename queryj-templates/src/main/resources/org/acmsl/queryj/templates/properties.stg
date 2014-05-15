@@ -223,7 +223,7 @@ property_hashCode(property) ::= <<
 <if(property.strictlyPrimitive)>
 final int <property.id.uncapitalized>HashCode = ("" + this.m__<property.id.capitalized>).hashCode();<else>
 <if(property.allowsNull)>final int <property.id.uncapitalized>HashCode;
-if (this.m__<property.id.voName.capitalized> == null)
+if (this.m__<property.id.capitalized> == null)
 {
     <property.id.uncapitalized>HashCode = 0;
 }
