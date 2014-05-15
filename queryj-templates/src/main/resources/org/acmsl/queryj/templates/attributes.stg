@@ -214,7 +214,8 @@ attribute_preparedstatement_specification(attr, C) ::= <<
 !>
 
 <
-if(!attr.clob)><if(attr.allowsNull)>if  (<attr.name.uncapitalized> == null)
+if(!attr.clob)><
+  if(attr.allowsNull)>if  (<attr.name.uncapitalized> == null)
 {
     preparedStatement.setNull(index++, Types.<attr.constantName>);
 }
