@@ -304,7 +304,10 @@ final boolean <attribute.name.uncapitalized>Match = this.m__<attribute.name.capi
 >>
 
 attribute_hashCode(attribute) ::= <<
-<! Generates the hashCode contribution for each attribute. !>
+<!
+ Generates the hashCode contribution for each attribute.
+ @param attribute the attribute.
+!>
 <if(attribute.primitive)>
 final int <attribute.name.uncapitalized>HashCode = ("" + this.m__<attribute.name.capitalized>).hashCode();<else>
 <if(attribute.allowsNull)>final int <attribute.name.uncapitalized>HashCode;
