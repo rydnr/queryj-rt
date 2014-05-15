@@ -68,6 +68,11 @@ sourceFactory(result, C) ::= <<
   C=C)><endif>
  */
 <package_declaration(p=C.package)>
+
+/*
+ * Importing <C.repository.capitalized> classes.
+ */
+import
 <notnull_import_maybe_nullable(container=result, C=C)>
 
 <if(result.propertyTypes)>
