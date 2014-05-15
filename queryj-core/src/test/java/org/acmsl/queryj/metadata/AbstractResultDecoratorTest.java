@@ -152,7 +152,7 @@ public class AbstractResultDecoratorTest
      * Checks getPackage() retrieves the package name.
      */
     @Test
-    public void getPackage_removes_the_package_name()
+    public void getPackage_retrieves_the_package_name()
     {
         @NotNull final AbstractResultDecorator result =
             AbstractResultDecoratorTest.setupResultDecorator("my.id", "com.foo.bar.MyResult", new ArrayList<>(0));
