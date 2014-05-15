@@ -294,6 +294,28 @@ public abstract class AbstractPropertyDecorator
     }
 
     /**
+     * Retrieves whether this attribute can be modelled as a primitive or not.
+     * @return <code>false</code> if no primitive matches.
+     */
+    @SuppressWarnings("unused")
+    public boolean isPrimitive()
+    {
+        return isPrimitive(getType().getValue(), getMetadataTypeManager());
+    }
+
+    /**
+     * Retrieves whether this attribute can be modelled as a primitive or not.
+     * @param type the attribute type.
+     * @param metadataTypeManager the metadata type manager.
+     * @return <code>false</code> if no primitive matches.
+     */
+    protected boolean isPrimitive(
+        @NotNull final String type, @NotNull final MetadataTypeManager metadataTypeManager)
+    {
+        return metadataTypeManager.isPrimitive(type);
+    }
+
+    /**
      * Retrieves whether the type means the attribute is a
      * number smaller than an int.
      * @return such condition.
