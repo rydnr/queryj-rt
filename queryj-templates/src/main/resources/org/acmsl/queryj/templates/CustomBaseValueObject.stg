@@ -72,7 +72,7 @@ sourceImpl(result, C) ::= <<
 /*
  * Importing <C.repository> classes.
  */
-import <C.project_package>.<typeInitMap.voSubpackageName>.<result.id.voName>;
+import <result.id.voName>;
 <checkers_import(C=C)>
 /*
  * Importing JDK classes.
