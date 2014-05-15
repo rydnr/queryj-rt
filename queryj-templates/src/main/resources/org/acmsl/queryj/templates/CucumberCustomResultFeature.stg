@@ -74,7 +74,7 @@ Feature: Classes associated to custom result <result.id> compile
     | CustomResultSetExtractor | <result.id.voName>ResultSetExtractor.java |
 >>
 
-cucumber_definition(property) ::= <<
+cucumber_property_definition(property) ::= <<
 <!
  Writes the row describing a property.
  @param property the property.
