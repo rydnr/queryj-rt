@@ -221,4 +221,5 @@ protected <result.id.voName> extractData(
 >>
 
 nullable_property_resultset_retrieval(property, C) ::= <<
+<if(p.nullable)><nullable(C=C)>final <p.objectType> <p.id.uncapitalized> = <property_resultset_retrieval(property=p, C=C)>;<endif>
 >>
