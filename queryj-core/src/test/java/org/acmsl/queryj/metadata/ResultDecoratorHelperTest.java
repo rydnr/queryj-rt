@@ -147,8 +147,6 @@ public class ResultDecoratorHelperTest
     @Test
     public void getPropertyTypes_do_not_include_duplicates()
     {
-        @NotNull final ResultDecoratorHelper instance = ResultDecoratorHelper.getInstance();
-
         @NotNull final Property<String> property1 =
             new PropertyElement<>("prop1", "propertyId", 1, "long", false);
 
