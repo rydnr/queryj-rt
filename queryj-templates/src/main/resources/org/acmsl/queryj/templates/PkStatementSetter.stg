@@ -226,7 +226,7 @@ public class <table.name.voName>PkStatementSetter
     }
 
     /**
-     * Specifies the values on given {@link PreparedStatement}
+     * Specifies the values on given {@link PreparedStatement}.
      * @param preparedStatement the prepared statement.
      * @throws SQLException intercepted by \<i>Spring\</i>.
      */
