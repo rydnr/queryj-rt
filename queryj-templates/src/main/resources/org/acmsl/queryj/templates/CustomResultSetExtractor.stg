@@ -239,4 +239,6 @@ nullable_property_resultset_retrieval(property, C) ::= <<
 >>
 
 nullable_date_property_resultset_retrieval(property, C) ::= <<
+<!
+!>
 >>
