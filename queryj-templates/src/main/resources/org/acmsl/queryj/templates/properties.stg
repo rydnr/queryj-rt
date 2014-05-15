@@ -155,7 +155,7 @@ else><
    >resultSet.get<property.objectType>("<property.name>")<
   else>
    resultSet.get<property.objectType>("<property.name>")<
-   endif>
+  endif>
 >>
 
 clob_property_resultset_retrieval(property, C) ::= <<
