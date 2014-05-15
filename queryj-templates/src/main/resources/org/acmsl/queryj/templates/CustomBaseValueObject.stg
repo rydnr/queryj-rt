@@ -151,7 +151,7 @@ public boolean equals(<nullable(C=C)>final Object other)
 {
     final boolean result;
 
-    if (other instanceof <result.id.voName>)
+    if (other instanceof <result.classValue>)
     {
         <notnull(C=C)>final <result.classValue> candidate = (<result.id.voName>) other;
 
