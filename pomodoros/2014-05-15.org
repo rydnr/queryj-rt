@@ -1,5 +1,6 @@
 * 2014/05/15
 ** DONE Fix CustomValueObjectImpl #487: 3 -> 1
+** Implement per-custom result Cucumber features #516: 2 ->
 * Package layout:
 ** dao
 - DataAccessManager
