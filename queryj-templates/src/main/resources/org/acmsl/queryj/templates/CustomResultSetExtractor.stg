@@ -72,8 +72,8 @@ sourceImpl(result, C) ::= <<
 /*
  * Importing <C.repository.capitalized> classes.
  */
-import <C.project_package>.<typeInitMap.voSubpackageName>.<result.id.voName>;
-import <C.project_package>.<typeInitMap.voSubpackageName>.core.<result.id.voName>Factory;
+import <C.project_package>.<typeInitMap.voSubpackageName>.<result.classValue>;
+import <C.project_package>.<typeInitMap.voSubpackageName>.core.<result.classValue>Factory;
 
 /*
  * Importing V24-Commons classes.
@@ -125,7 +125,7 @@ public class <result.classValue>ResultSetExtractor
     extends V24ResultSetExtractor\<<result.classValue>\>
 {
     /**
-     * Creates a new {@code <result.id.voName>ResultSetExtractor} instance.
+     * Creates a new {@code <result.classValue>ResultSetExtractor} instance.
      * @param sql the SQL query.
      * @param listener the {@link <repository.voName>DAOListener} instance.
      */
@@ -169,20 +169,20 @@ protected <result.classValue> extractData(
 }
 
 /**
- * Extracts {@link <result.id.voName>} information from given result set.
+ * Extracts {@link <result.classValue>} information from given result set.
  * @param resultSet the result set.
  * @param sql the SQL query.
  * @param listener the {@link <repository.voName>DAOListener} instance.
- * @param factory the {@link <result.id.voName>ValueObjectFactory}
+ * @param factory the {@link <result.classValue>ValueObjectFactory}
  * instance.
- * @return the {@code <result.id.voName>} or
+ * @return the {@code <result.classValue>} or
  * {@code null} if the operation returned no data.
  * @throws SQLException intercepted by \<i>Spring\</i>.
  * @throws DataAccessException with information about any
  * custom exception.
  */
 <notnull(C=C)>
-protected <result.id.voName> extractData(
+protected <result.classValue> extractData(
     <notnull(C=C)>final ResultSet resultSet,
     <notnull(C=C)>final String sql,
     <nullable(C=C)>final DAOListener listener,
