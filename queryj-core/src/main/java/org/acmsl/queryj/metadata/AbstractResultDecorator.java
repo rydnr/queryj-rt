@@ -704,7 +704,7 @@ public abstract class AbstractResultDecorator
      * @return such properties.
      */
     @NotNull
-    public List<Property<DecoratedString>> getNullableProperties()
+    protected List<Property<DecoratedString>> getNullableProperties(@NotNull final List<Property<DecoratedString>> properties)
     {
         return null;
     }
