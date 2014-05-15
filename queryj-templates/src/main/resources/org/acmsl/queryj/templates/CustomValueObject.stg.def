@@ -14,4 +14,4 @@ output: Java;
 filename builder : <result.simpleClassValue>.java;
 
 // The package.
-package: <packageName>.vo;
+package: <simp;
