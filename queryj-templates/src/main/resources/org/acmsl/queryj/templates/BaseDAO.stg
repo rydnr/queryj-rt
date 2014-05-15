@@ -116,7 +116,7 @@ project_imports(basePackageName, voName) ::= <<
 /*
  * Importing project classes.
  */
-import <basePackageName>.<vo.<voName>;
+import <basePackageName>.<voSubpackageName>.<voName>;
 >>
 
 class(table, C) ::= <<
