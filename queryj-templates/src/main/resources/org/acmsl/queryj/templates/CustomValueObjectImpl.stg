@@ -72,7 +72,6 @@ sourceImpl(result, C) ::= <<
  * Importing project classes.
  */
 import <result.classValue>;
-
 <notnull_import_maybe_nullable(container=result, C=C)>
 
 <if(result.propertyTypes)>
