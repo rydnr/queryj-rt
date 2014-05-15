@@ -1,0 +1,342 @@
+//;-*- mode: antlr -*-
+//
+//                      QueryJ
+//
+//  Copyright (C) 2002-today  ACM-SL
+//                           chous@acm-sl.org
+//
+//  This library is free software; you can redistribute it and/or
+//  modify it under the terms of the GNU General Public
+//  License as published by the Free Software Foundation; either
+//  version 2 of the License, or any later version.
+//
+//  This library is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+//  General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public
+//  License along with this library; if not, write to the Free Software
+//  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//
+//  Thanks to ACM S.L. for distributing this library under the GPL license.
+//  Contact info: jose.sanleandro@acm-sl.com
+//  Postal Address: c/Playa de Lagoa, 1
+//                  Urb. Valdecabanas
+//                  Boadilla del monte
+//                  28660 Madrid
+//                  Spain
+//
+//***************************************************************************
+//
+// Filename: attributes.stg
+//
+// Author: Jose San Leandro Armendariz
+//
+// Description: Defines common templates for attributes.
+//
+group attributes;
+
+attribute_method_parameter_declaration(attribute, usePrefix, prefix, C) ::= <<
+<!
+ Writes the method parameter declaration for given attribute.
+ @param attribute the attribute.
+ @param usePrefix whether to use a prefix or not.
+ @param prefix the prefix.
+!>
+<if(!attribute.primitive)><
+  if(attribute.nullable)><
+   nullable(C=C)><
+  else><
+   notnull(C=C)><
+  endif><
+endif>final <attribute.javaType> <
+if(usePrefix)
+ ><prefix><attribute.name.capitalized><
+else
+ ><attribute.name.uncapitalized><
+endif>
+>>
+
+attribute_declaration(attribute, C) ::= <<
+<!
+ Writes the declaration for given attribute.
+ @param attribute the attribute.
+ @param context the context.
+!>
+/**
+ * The \<i><attribute.name>\</i> value.
+ */
+<if(!attribute.primitive)><if(attribute.nullable)><nullable(C=C)><else><if(attribute.nullable)><notnull(C=C)><endif><endif><endif>
+private <attribute.javaType> m__<attribute.name.capitalized>;
+>>
+
+attribute_declaration_impl(attr, C) ::= <<
+<!
+  Writes the parameter declaration for a concrete attribute.
+  @param attr the attribute.
+!>
+<type_checker(attribute=attr, C=C)>final <if(attr.clob)>String<else><attr.javaType><endif> <attr.name.uncapitalized>
+>>
+
+attribute_isolated_declaration(attr, C) ::= <<
+<!
+  Writes the parameter declaration for a concrete attribute, isolated.
+  @param attr the attribute.
+!>
+<attribute_declaration(attribute=attr, C=C)>,
+>>
+
+attribute_isolated_declaration_impl(attr, C) ::= <<
+<!
+  Writes the parameter declaration for a concrete attribute.
+  @param attr the attribute.
+!>
+<type_checker(attribute=attr, C=C)>final <if(attr.clob)>String<else><attr.javaType><endif> <attr.name.lowercased>,
+>>
+
+attribute_immutable_setter_call(attribute) ::= <<
+<!
+ Writes the method call for the immutable setter of given attribute.
+ @param attribute the attribute.
+!>
+<if(attribute.nullable)>
+if (<attribute.name.uncapitalized> != null)
+{
+    immutableSet<attribute.name.capitalized>(<attribute.name.uncapitalized>);
+}<else>immutableSet<attribute.name.capitalized>(<attribute.name.uncapitalized>);<endif>
+>>
+
+attribute_accessors(attribute, C, override=true) ::= <<
+<!
+ Writes the accessors for given attribute.
+ @param attribute the attribute.
+!>
+<attribute_setter(attribute=attribute, C=C)>
+
+<attribute_getter(attribute=attribute, C=C, override=override)>
+>>
+
+attribute_setter(attribute, C) ::= <<
+<!
+ Writes the setter for given attribute.
+ @param attribute the attribute.
+ @param C the context.
+!>
+/**
+ * Specifies the \<i><attribute.name>\</i> value.
+ * @param value such information.
+ */
+protected final void immutableSet<attribute.name.capitalized>(<if(!attribute.primitive)><if(attribute.nullable)><nullable(C=C)><else><notnull(C=C)><endif><endif>final <attribute.javaType> value)
+{
+    this.m__<attribute.name.capitalized> = value;
+}
+
+/**
+ * Specifies the \<i><attribute.name>\</i> value.
+ * @param value such information.
+ */
+@SuppressWarnings("unused")
+protected void set<attribute.name.capitalized>(<if(!attribute.primitive)><if(attribute.nullable)><nullable(C=C)><else><notnull(C=C)><endif><endif>final <attribute.javaType> value)
+{
+    immutableSet<attribute.name.capitalized>(value);
+}
+>>
+
+attribute_getter(attribute, C, override=false) ::= <<
+<!
+ Writes the getter for given attribute.
+ @param attribute the attribute.
+ @param C the context.
+ @param override whether to add @Override annotations or not.
+!>
+/**
+ * Retrieves the \<i><attribute.name>\</i> value.
+ * @return such information.
+ */
+<if(attribute.allowsNull)>
+<if(!attribute.primitive)><nullable(C=C)><endif>
+protected final <attribute.objectType> immutableGet<attribute.name.capitalized>()
+<else>
+<if(!attribute.primitive)><notnull(C=C)><endif>
+protected final <attribute.javaType> immutableGet<attribute.name.capitalized>()
+<endif>
+{
+    return m__<attribute.name.capitalized>;
+}
+
+/**
+ * Retrieves the \<i><attribute.name>\</i> value.
+ * @return such information.
+ */<
+if(override)>
+@Override
+<endif><
+if(attribute.allowsNull)><
+  if(!attribute.primitive)>
+<   nullable(C=C)><
+endif>
+public <attribute.objectType> get<attribute.name.capitalized>()
+<else>
+<if(!attribute.primitive)><notnull(C=C)><endif>
+public <attribute.javaType> get<attribute.name.capitalized>()
+<endif>
+{
+<if(attribute.date)>
+    Date result = immutableGet<attribute.name.capitalized>();
+
+    if  (result != null)
+    {
+        result = new Date(result.getTime());
+    }
+
+    return result;
+<else>
+    return immutableGet<attribute.name.capitalized>();
+<endif>
+}
+>>
+
+attribute_to_primitive(attribute) ::= <<
+<! Generates the code to convert given attribute's value to a primitive !>
+<if(attribute.date)
+  >new java.sql.Timestamp(<attribute.name.uncapitalized>.getTime())<
+ else
+  ><attribute.name.uncapitalized><
+ endif>
+>>
+
+attribute_preparedstatement_specification(attr, C) ::= <<
+<!
+ Generates the code to specify the attribute into the PreparedStatement.
+ @param attr the attribute.
+ @param C the context.
+!>
+
+<
+if(!attr.clob)><
+  if(attr.allowsNull)
+   >if  (<attr.name.uncapitalized> == null)
+{
+    preparedStatement.setNull(index++, Types.<attr.constantName>);
+}
+else
+{<
+    if(attr.date)>
+    preparedStatement.setTimestamp(index++, <attribute_to_primitive(attribute=attr)>);<
+    else>
+    preparedStatement.set<attr.objectType>(index++, <attribute_to_primitive(attribute=attr)>);<
+    endif>
+
+}<else>
+preparedStatement.set<attr.objectType>(index++, <attr.name.uncapitalized>);<endif
+><else><clob_preparedstatement_specification(attribute=attr, C=C)><endif>
+>>
+
+attribute_preparedstatement_setter_call(attr, C) ::= <<
+<
+if(attr.date)
+ >preparedStatement.setTimestamp(index++, <attribute_to_primitive(attribute=attr)>);<
+else>
+    preparedStatement.set<attr.objectType>(index++, <attribute_to_primitive(attribute=attr)>);<
+    endif>
+
+
+>>
+
+clob_preparedstatement_specification(attribute, C) ::= <<
+<!
+ Deals with Clob attributes
+ @param attr the attribute.
+ @param C the context.
+ !>
+<notnull(C=C)>final Clob <attribute.name.uncapitalized>Clob = preparedStatement.getConnection().createClob();
+<notnull(C=C)>final Writer clobWriter = <attribute.name.uncapitalized>Clob.setCharacterStream(1);
+clobWriter.write(<attribute.name.uncapitalized>);
+preparedStatement.setClob(index++, <attribute.name.uncapitalized>Clob);
+>>
+
+attribute_resultset_retrieval(attr, C) ::= <<
+<!
+ Generates the code to retrieve the attribute value from the ResultSet.
+ @param attr the attribute.
+ @param C the context.
+!><
+if(attr.clob)><
+  clob_attribute_resultset_retrieval(attribute=attr, C=C)><
+else><
+  if(attr.date)><
+    date_attribute_resultset_retrieval(attribute=attr, C=C)><
+  else
+    >resultSet.get<attr.objectType>("<attr.name>")<
+  endif><
+endif>
+>>
+
+clob_attribute_resultset_retrieval(attribute, C) ::= <<
+<!
+ Deals with Clob attributes
+ @param attr the attribute.
+ @param C the context.
+ !>resultSet.getClob("<attribute.name>")
+>>
+
+date_attribute_resultset_retrieval(attribute, C) ::= <<
+<!
+ Deals with Date attributes
+ @param attr the attribute.
+ @param C the context.
+ !>resultSet.getTimestamp("<attribute.name>")
+>>
+
+attribute_equals(attribute) ::= <<
+<! Generates the contribution of each attribute to the equals method. !>
+<if(attribute.primitive)>
+final boolean <attribute.name.uncapitalized>Match = (this.m__<attribute.name.capitalized> == candidate.get<attribute.name.capitalized>());
+<else><if(attribute.allowsNull)>
+final boolean <attribute.name.uncapitalized>Match =
+    (   (this.m__<attribute.name.capitalized> != null)
+     && (this.m__<attribute.name.capitalized>.equals(candidate.get<attribute.name.capitalized>())));
+<else>
+final boolean <attribute.name.uncapitalized>Match = this.m__<attribute.name.capitalized>.equals(candidate.get<attribute.name.capitalized>());<endif><endif>
+>>
+
+attribute_hashCode(attribute) ::= <<
+<! Generates the hashCode contribution for each attribute. !>
+<if(attribute.primitive)>
+final int <attribute.name.uncapitalized>HashCode = ("" + this.m__<attribute.name.capitalized>).hashCode();<else>
+<if(attribute.allowsNull)>final int <attribute.name.uncapitalized>HashCode;
+if (this.m__<attribute.name.capitalized> == null)
+{
+    <attribute.name.uncapitalized>HashCode = 0;
+}
+else
+{
+     <attribute.name.uncapitalized>HashCode = this.m__<attribute.name.capitalized>.hashCode();
+}<else>final int <attribute.name.uncapitalized>HashCode = this.m__<attribute.name.capitalized>.hashCode();<endif><endif>
+>>
+
+attribute_toString(attribute) ::= <<
+<! Generates the code to include given attribute within the toString() method. !>
+result.append("\", \"<attribute.name.capitalized>\": \"");
+result.append(this.m__<attribute.name.capitalized>);
+>>
+
+import_attribute_types(table, useHeader=true) ::= <<
+<!
+ Imports the attribute types.
+ @param table the table.
+ @param useHeader whether to use the import header or not.
+!>
+<
+if(table.attributeTypes)><
+  if(useHeader)>
+/*
+ * Importing JDK classes.
+ */
+<  endif><
+  table.attributeTypes:{ t | import <t>;}; separator="\n">
+<
+else>
+<endif>
+>>
