@@ -149,7 +149,7 @@ public class AbstractResultDecoratorTest
     @NotNull
     protected static AbstractResultDecorator setupResultDecorator(@NotNull final List<Property<String>> properties)
     {
-        return setupResultDecorator("MyResult")
+        return setupResultDecorator("MyResult", properties);
     }
 
     /**
