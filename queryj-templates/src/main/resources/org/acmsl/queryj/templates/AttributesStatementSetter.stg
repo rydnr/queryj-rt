@@ -345,9 +345,9 @@ public boolean equals(<nullable(C=C)>final Object other)
  * @return {@code true} if and only if both sets are equivalent.
  */
 protected boolean equals(
-    <notnull(C=C)>final <table.name.voName> myValues,
+    <notnull(C=C)>final <table.name.voName> myValue,
     final boolean myUpdate,
-    <notnull(C=C)>final <table.name.voName> hisValues,
+    <notnull(C=C)>final <table.name.voName> hisValue,
     final boolean hisUpdate)
 {
     return
