@@ -765,7 +765,10 @@ public abstract class AbstractResultDecorator
         return result;
     }
 
-
+    /**
+     * Retrieves the package information from the class name.
+     * @return such information.
+     */
     @NotNull
     public DecoratedString getPackage()
     {
