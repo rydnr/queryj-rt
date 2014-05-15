@@ -11,7 +11,7 @@ type : per-custom-result;
 output: Java;
 
 // The filename builder.
-filename builder : Abstract<result.classValue>.java;
+filename builder : Abstract<result.simpleClassValue>.java;
 
 // The package.
 package: <result.package>;
