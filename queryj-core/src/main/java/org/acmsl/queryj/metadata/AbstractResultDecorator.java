@@ -798,5 +798,8 @@ public abstract class AbstractResultDecorator
         return result;
     }
 
-
+    public List<Property<DecoratedString>> getNullableProperties()
+    {
+        return null;  //To change body of created methods use File | Settings | File Templates.
+    }
 }
