@@ -689,6 +689,12 @@ public abstract class AbstractResultDecorator
         return resultDecoratorHelper.containNotNullProperties(properties, metadataTypeManager);
     }
 
+
+    public List<Property<DecoratedString>> getNullableProperties()
+    {
+        return null;  //To change body of created methods use File | Settings | File Templates.
+    }
+
     /**
      * Provides a text representation of the information
      * contained in given instance.
