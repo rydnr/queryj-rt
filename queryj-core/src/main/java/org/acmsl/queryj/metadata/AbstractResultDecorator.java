@@ -753,7 +753,8 @@ public abstract class AbstractResultDecorator
         }
         else
         {
-            result = stringUtils.retrieveLastWord(classValue.getValue(), new String[] { "." });
+            result =
+                new DecoratedString(stringUtils.retrieveLastWord(classValue.getValue(), new String[] { "." });
     }
 
     /**
