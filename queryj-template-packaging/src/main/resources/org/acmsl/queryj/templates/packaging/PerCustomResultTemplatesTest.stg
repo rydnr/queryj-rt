@@ -504,7 +504,7 @@ public class PerCustomResultTemplatesTest
     @NotNull
     protected String resolvePackage(
         @NotNull final String packageTemplate,
-        @NotNull final String resultName,
+        @NotNull final Result\<String> result,
         @NotNull final Engine\<String> engine)
     {
         @NotNull final String result;
