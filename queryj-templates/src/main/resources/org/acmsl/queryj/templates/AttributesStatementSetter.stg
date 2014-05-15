@@ -357,7 +357,11 @@ protected boolean equals(
 >>
 
 hashCode_method(table, C) ::= <<
-<! Generates the hashCode() method !>
+<!
+ Generates the hashCode() method.
+ @param table the table.
+ @param C the context.
+!>
 /**
  * Retrieves the hashCode which identifies this instance
  * from any other one.
