@@ -783,7 +783,19 @@ public abstract class AbstractResultDecorator
     @NotNull
     protected DecoratedString getPackage()
     {
-        return getPackage(getClassValue(), StringUtils.getInstance());
+        @NotNull final DecoratedString result;
+
+        if (classValue == null)
+        {
+            result = new DecoratedString("");
+        }
+        else
+        {
+            result =
+                new DecoratedString(stringUtils.retrieveLastWord(classValue.getValue(), new String[] { "\\." }));
+        }
+
+        return result;
     }
 
     /**
