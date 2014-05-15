@@ -388,7 +388,7 @@ public abstract class AbstractPropertyDecorator
     @SuppressWarnings("unused")
     public boolean isBoolean()
     {
-        return isBoolean(getType().getValue(), getMetadataTypeManager());
+        return isBoolean(getType().getValue());
     }
 
     /**
