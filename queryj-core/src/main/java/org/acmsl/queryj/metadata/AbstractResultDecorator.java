@@ -715,9 +715,10 @@ public abstract class AbstractResultDecorator
             if (   (property != null)
                 && (!property.isNullable()))
             {
-
+                result.add(property);
             }
         }
+
         return result;
     }
 
