@@ -103,7 +103,7 @@ public class AbstractResultDecoratorTest
 
         @NotNull final AbstractResultDecorator result = AbstractResultDecoratorTest.setupResultDecorator(properties);
 
-        Assert.assertEquals(3, result.getPropertyTypes().size());
+        Assert.assertEquals(1, result.getPropertyTypes().size());
     }
 
     /**
