@@ -49,7 +49,7 @@ source_impl(result, engine, C) ::= <<
 <!
   Generates CucumberResult.feature files.
 !>
-Feature: Classes associated to custom result <result.id> code compiles
+Feature: Classes associated to custom result <result.id> compile
 
   Scenario Outline: <result.id>-specific templates compile
 
