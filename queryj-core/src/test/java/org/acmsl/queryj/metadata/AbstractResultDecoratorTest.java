@@ -75,7 +75,6 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public class AbstractResultDecoratorTest
 {
-
     /**
      * Checks getPropertyTypes() don't include duplicates.
      */
