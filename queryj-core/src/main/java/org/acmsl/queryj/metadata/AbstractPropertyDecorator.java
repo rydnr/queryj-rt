@@ -312,7 +312,7 @@ public abstract class AbstractPropertyDecorator
     protected boolean isBoolean(
         @NotNull final String type, @NotNull final MetadataTypeManager metadataTypeManager)
     {
-        return metadataTypeManager.isPrimitive(type);
+        return metadataTypeManager.isBoolean(type);
     }
 
     /**
