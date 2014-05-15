@@ -35,7 +35,6 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing QueryJ Core classes.
  */
-import org.acmsl.commons.utils.StringUtils;
 import org.acmsl.queryj.api.exceptions.NullAttributeWhenConvertingToPropertyException;
 import org.acmsl.queryj.customsql.CustomResultUtils;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
