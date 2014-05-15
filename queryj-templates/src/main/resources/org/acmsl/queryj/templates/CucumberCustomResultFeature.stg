@@ -59,7 +59,7 @@ Feature: Classes associated to custom result <result.id> compile
 
     And the following custom result properties:
       | name       | type | nullable |
-      | g_cycle_id | int  | false    |
+      | <resug_cycle_id | int  | false    |
       | count      | long | false    |
 
     When I use the custom result template <template> for Oracle
