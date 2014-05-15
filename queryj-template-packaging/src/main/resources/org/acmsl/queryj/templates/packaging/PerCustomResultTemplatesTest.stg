@@ -366,8 +366,6 @@ public class PerCustomResultTemplatesTest
                             sqlProvider,
                             metadataManager,
                             decoratorFactory);
-                    @NotNull final String packageName =
-                        resolvePackage(PACKAGE_MAPPINGS.get(templateName), result.getId(), resolveEngine(engine));
 
                     @NotNull final PerCustomResultTemplateContext t_Context =
                         new PerCustomResultTemplateContext(
