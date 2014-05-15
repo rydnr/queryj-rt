@@ -399,7 +399,7 @@ public abstract class AbstractPropertyDecorator
      */
     protected boolean isBoolean(@NotNull final String type)
     {
-        return metadataTypeManager.isBoolean(metadataTypeManager.getJavaType(type));
+        return "boolean".equalsIgnoreCase(type);
     }
 
     /**
