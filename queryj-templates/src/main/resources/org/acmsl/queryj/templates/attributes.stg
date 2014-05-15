@@ -233,6 +233,7 @@ preparedStatement.set<attr.objectType>(index++, <attr.name.uncapitalized>);<endi
 ><else><clob_preparedstatement_specification(attribute=attr, C=C)><endif>
 >>
 
+
 clob_preparedstatement_specification(attribute, C) ::= <<
 <!
  Deals with Clob attributes
