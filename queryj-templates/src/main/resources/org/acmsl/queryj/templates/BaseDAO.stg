@@ -306,6 +306,7 @@ find_constant_by_pk(primaryKey, table, C) ::= <<
 
 find_constant_methods(attribute, table, C) ::= <<
 <!
+  Declares the methods to operate directly on defined constants.
   @param attribute the attribute.
   @param table the table.
   @param C the context.
