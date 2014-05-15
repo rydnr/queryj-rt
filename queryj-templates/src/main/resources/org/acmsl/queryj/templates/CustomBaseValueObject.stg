@@ -72,7 +72,7 @@ sourceImpl(result, C) ::= <<
 /*
  * Importing <C.repository> classes.
  */
-import <result.id.voName>;
+import <result.classValue>;
 <checkers_import(C=C)>
 /*
  * Importing JDK classes.
