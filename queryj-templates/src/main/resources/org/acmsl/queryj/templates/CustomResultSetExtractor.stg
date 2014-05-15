@@ -202,7 +202,7 @@ protected <result.id.voName> extractData(
 
         <result.properties:{p | <nullable_property_resultset_retrieval_declaration(property=p, C=C)>}; separator="\n">
         result =
-            factory.create<result.id.voName>(
+            factory.create(
                 <result.properties:{p | <nullable_property_resultset_retrieval(property=p, C=C)>}; separator=",\n">);
 
         if  (listener != null)
