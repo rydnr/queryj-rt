@@ -162,8 +162,8 @@ public class ResultDecoratorHelper
 
                 if (importType != null)
                 {
-                    @NotNull final type = new De
-                }
+                    @NotNull final DecoratedString type = new DecoratedString(importType);
+
                     && (!result.contains())
                 {
                     result.add(new DecoratedString(importType));
