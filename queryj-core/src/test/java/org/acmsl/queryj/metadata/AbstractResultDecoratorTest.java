@@ -165,7 +165,7 @@ public class AbstractResultDecoratorTest
     {
         @NotNull final AbstractResultDecorator result;
 
-        @NotNull final Result<String> wrappedResult = new ResultElement<>("my.result", "MyResult");
+        @NotNull final Result<String> wrappedResult = new ResultElement<>(id, classValue);
 
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final SqlPropertyDAO propertyDAO = EasyMock.createNiceMock(SqlPropertyDAO.class);
