@@ -97,5 +97,7 @@ public class DecoratedStringTest
     public void normalize_preserves_camelCase()
     {
         @NotNull final DecoratedString instance = new DecoratedString("test.with.CamelCase.example");
+
+        Assert.assertEquals();
     }
 }
