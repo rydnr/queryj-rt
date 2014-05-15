@@ -186,7 +186,7 @@ protected <result.id.voName> extractData(
     <notnull(C=C)>final ResultSet resultSet,
     <notnull(C=C)>final String sql,
     <nullable(C=C)>final DAOListener listener,
-    <notnull(C=C)>final <result.id.voName>Factory factory)
+    <notnull(C=C)>final <result.classValue>Factory factory)
   throws  SQLException,
           DataAccessException
 {
