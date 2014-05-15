@@ -199,7 +199,7 @@ protected <result.id.voName> extractData(
             listener.resultSetMovedForward(sql, 1);
         }
 
-        <result.properties:{p | <nullable_property_resultset_retrieval_declaration(property=p, C=C)>;<endif>}; separator="\n">
+        <result.properties:{p | <nullable_property_resultset_retrieval_declaration(property=p, C=C)>}; separator="\n">
         result =
             factory.create<result.id.voName>(
                 <result.properties:{p | <if(p.nullable)>(<p.id.uncapitalized> == null) ? null : <p.objectType>.valueOf(<p.id.uncapitalized>)<else><property_resultset_retrieval(property=p, C=C)><endif>}; separator=",\n">);
