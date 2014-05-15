@@ -113,6 +113,7 @@ public class <result.id.voName>ResultSetExtractor
 {
     /**
      * Creates a new instance.
+     * @param sql the SQL query.
      * @param listener the {@link <repository.voName>DAOListener} instance.
      */
     public <result.id.voName>ResultSetExtractor(
