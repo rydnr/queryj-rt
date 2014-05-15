@@ -154,7 +154,7 @@ else><
   if(property.boolean)
    >resultSet.getBoolean("<property.name>")<
   else>
-   resultSet.get<property.objectType>("<property.name>")<
+    resultSet.get<property.objectType>("<property.name>")<
   endif><
 endif>
 >>
