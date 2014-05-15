@@ -396,7 +396,7 @@ public String toString()
     result.append("\", \"values\": ");
     result.append(this.m__Values);
     result.append(", \"update\": ");
-    result.append(this.m__UpdateOperation);
+    result.append(this.m__bUpdateOperation);
 
     result.append(", \"package\": \"");
     result.append(<table.name.voName>Setter.class.getPackage().getName());
