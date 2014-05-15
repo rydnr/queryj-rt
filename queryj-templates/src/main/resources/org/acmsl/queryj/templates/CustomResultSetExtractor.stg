@@ -190,7 +190,7 @@ protected <result.id.voName> extractData(
   throws  SQLException,
           DataAccessException
 {
-    <nullable(C=C)>final <result.id.voName> result;
+    <nullable(C=C)>final <result.classValue> result;
 
     if  (resultSet.next())
     {
