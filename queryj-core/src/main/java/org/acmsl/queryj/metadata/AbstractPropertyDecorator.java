@@ -398,7 +398,7 @@ public abstract class AbstractPropertyDecorator
      */
     protected boolean isBoolean(@NotNull final String type)
     {
-        return Literals.BOOLEAN"boolean".equalsIgnoreCase(type);
+        return Literals.BOOLEAN.equalsIgnoreCase(type);
     }
 
     /**
