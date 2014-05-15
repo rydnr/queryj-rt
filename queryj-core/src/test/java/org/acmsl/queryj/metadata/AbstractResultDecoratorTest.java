@@ -135,6 +135,9 @@ public class AbstractResultDecoratorTest
         Assert.assertEquals(2, result.getNullableProperties().size());
     }
 
+    /**
+     * Checks getSimpleClassValue() removes the package name.
+     */
     @Test
     public void getSimpleClassValue_removes_the_package_name()
     {
