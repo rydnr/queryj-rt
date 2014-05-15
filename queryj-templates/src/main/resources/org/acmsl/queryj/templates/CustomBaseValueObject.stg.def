@@ -14,4 +14,4 @@ output: Java;
 filename builder : Abstract<result.simpleClassValue>.java;
 
 // The package.
-package: <result.package>;
+package: <result.package>.impl;
