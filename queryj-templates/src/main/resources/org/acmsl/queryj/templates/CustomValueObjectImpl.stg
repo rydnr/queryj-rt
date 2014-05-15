@@ -107,9 +107,10 @@ public class <result.id.voName>Impl
     extends Abstract<result.id.voName>
 {
     /**
-     * The serial version uid.
+     * The serial version id.
      */
-    private static final
+    private static final long serialVersionUID = <C.serialVersionUID>L;
+
     /**
      * Creates a new {@code <result.id.voName>}.
      <result.properties:{ p | <property_javadoc(property=p)>}; separator="\n">
