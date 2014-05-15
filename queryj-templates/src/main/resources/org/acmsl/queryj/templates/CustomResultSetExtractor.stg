@@ -220,4 +220,4 @@ protected <result.id.voName> extractData(
 }
 >>
 
-property_nullable
+nullableSproperty_nullable
