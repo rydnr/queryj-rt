@@ -72,8 +72,8 @@ sourceImpl(result, C) ::= <<
 /*
  * Importing <C.repository.capitalized> classes.
  */
-import <C.project_package>.<typeInitMap.voSubpackageName>.<result.classValue>;
-import <C.project_package>.<typeInitMap.voSubpackageName>.core.<result.classValue>Factory;
+import <C.project_package>.<typeInitMap.voSubpackageName>.<result.simpleClassValue>;
+import <C.project_package>.<typeInitMap.voSubpackageName>.core.<result.simpleClassValue>Factory;
 
 /*
  * Importing V24-Commons classes.
@@ -105,7 +105,7 @@ description(result) ::= <<
   Generates the first line of the generated file description.
   @param result the custom result.
 !>
-{@link V24ResultSetExtractor} implementation for {@link <result.classValue> <result.id>} result.
+{@link V24ResultSetExtractor} implementation for {@link <result.simpleClassValue> <result.id>} result.
 >>
 
 class(result, repository, C) ::= <<
@@ -121,15 +121,15 @@ class(result, repository, C) ::= <<
     ]:{line |<line>}; separator="\n * ">
 <class_common_javadoc(template="org/acmsl/queryj/templates/CustomResultSetExtractor.stg", C=C)>
  */
-public class <result.classValue>ResultSetExtractor
-    extends V24ResultSetExtractor\<<result.classValue>\>
+public class <result.simpleClassValue>ResultSetExtractor
+    extends V24ResultSetExtractor\<<result.simpleClassValue>\>
 {
     /**
-     * Creates a new {@code <result.classValue>ResultSetExtractor} instance.
+     * Creates a new {@code <result.simpleClassValue>ResultSetExtractor} instance.
      * @param sql the SQL query.
      * @param listener the {@link <repository.voName>DAOListener} instance.
      */
-    public <result.classValue>ResultSetExtractor(
+    public <result.simpleClassValue>ResultSetExtractor(
         <notnull(C=C)>final String sql, <nullable(C=C)>final DAOListener listener)
     {
         super(sql, listener);
@@ -147,50 +147,50 @@ defaultExtractor(result, repository, C) ::= <<
  @param C the context.
 !>
 /**
- * Extracts {@link <result.classValue>} information from given result set.
+ * Extracts {@link <result.simpleClassValue>} information from given result set.
  * @param resultSet the result set.
  * @param sql the SQL query.
  * @param listener the {@link DAOListener} instance.
- * @return the {@code <result.classValue>} or
+ * @return the {@code <result.simpleClassValue>} or
  * {@code null} if the operation returned no data.
  * @throws SQLException intercepted by \<i>Spring\</i>.
  * @throws DataAccessException with information about any
  * custom exception.
  */
 <notnull(C=C)>
-protected <result.classValue> extractData(
+protected <result.simpleClassValue> extractData(
     <notnull(C=C)>final ResultSet resultSet,
     <notnull(C=C)>final String sql,
     <nullable(C=C)>final DAOListener listener)
     throws  SQLException,
             DataAccessException
 {
-    return extractData(resultSet, sql, listener, <result.classValue>Factory.getInstance());
+    return extractData(resultSet, sql, listener, <result.simpleClassValue>Factory.getInstance());
 }
 
 /**
- * Extracts {@link <result.classValue>} information from given result set.
+ * Extracts {@link <result.simpleClassValue>} information from given result set.
  * @param resultSet the result set.
  * @param sql the SQL query.
  * @param listener the {@link <repository.voName>DAOListener} instance.
- * @param factory the {@link <result.classValue>ValueObjectFactory}
+ * @param factory the {@link <result.simpleClassValue>ValueObjectFactory}
  * instance.
- * @return the {@code <result.classValue>} or
+ * @return the {@code <result.simpleClassValue>} or
  * {@code null} if the operation returned no data.
  * @throws SQLException intercepted by \<i>Spring\</i>.
  * @throws DataAccessException with information about any
  * custom exception.
  */
 <notnull(C=C)>
-protected <result.classValue> extractData(
+protected <result.simpleClassValue> extractData(
     <notnull(C=C)>final ResultSet resultSet,
     <notnull(C=C)>final String sql,
     <nullable(C=C)>final DAOListener listener,
-    <notnull(C=C)>final <result.classValue>Factory factory)
+    <notnull(C=C)>final <result.simpleClassValue>Factory factory)
   throws  SQLException,
           DataAccessException
 {
-    <nullable(C=C)>final <result.classValue> result;
+    <nullable(C=C)>final <result.simpleClassValue> result;
 
     if  (resultSet.next())
     {
