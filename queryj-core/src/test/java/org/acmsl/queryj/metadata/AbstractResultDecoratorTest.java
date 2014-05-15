@@ -149,6 +149,19 @@ public class AbstractResultDecoratorTest
     }
 
     /**
+     * Checks getSimpleClassValue() removes the package name.
+     */
+    @Test
+    public void getSimpleClassValue_removes_the_package_name()
+    {
+        @NotNull final AbstractResultDecorator result =
+            AbstractResultDecoratorTest.setupResultDecorator("my.id", "com.foo.bar.MyResult", new ArrayList<>(0));
+
+        Assert.assertEquals("MyResult", result.getSimpleClassValue().getValue());
+
+    }
+
+    /**
      * Sets up an {@link AbstractResultDecorator} instance, for testing purposes.
      * @param properties the {@link org.acmsl.queryj.customsql.Property properties}.
      * @return the decorator.
