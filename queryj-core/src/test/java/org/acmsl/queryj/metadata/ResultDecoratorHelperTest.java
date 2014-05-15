@@ -38,23 +38,17 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing QueryJ Core classes.
  */
-import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.PropertyElement;
-import org.acmsl.queryj.customsql.PropertyRefElement;
-import org.acmsl.queryj.customsql.Result;
-import org.acmsl.queryj.customsql.ResultElement;
 
 /*
  * Importing JetBrains annotations.
  */
-import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
 import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing JUnit/EasyMock classes.
+ * Importing JUnit classes.
  */
-import org.easymock.EasyMock;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -103,7 +97,7 @@ public class ResultDecoratorHelperTest
         properties.add(property3);
         properties.add(property4);
 
-        @NotNull final AbstractResultDecorator result = setupResultDecorator(properties);
+        @NotNull final AbstractResultDecorator result = AbstractResultDecoratorTest.setupResultDecorator(properties);
 
         Assert.assertTrue(instance.containNullableProperties(result.getProperties()));
     }
@@ -136,7 +130,7 @@ public class ResultDecoratorHelperTest
         properties.add(property3);
         properties.add(property4);
 
-        @NotNull final AbstractResultDecorator result = AbstractResultDecorator.setupResultDecorator(properties);
+        @NotNull final AbstractResultDecorator result = AbstractResultDecoratorTest.setupResultDecorator(properties);
 
         Assert.assertTrue(instance.containNotNullProperties(result.getProperties(), result.getMetadataTypeManager()));
     }
@@ -166,7 +160,7 @@ public class ResultDecoratorHelperTest
         properties.add(property3);
         properties.add(property4);
 
-        @NotNull final AbstractResultDecorator result = AbstractResultDecorator.setupResultDecorator(properties);
+        @NotNull final AbstractResultDecorator result = AbstractResultDecoratorTest.setupResultDecorator(properties);
 
         Assert.assertEquals(3, result.getPropertyTypes().size());
     }
