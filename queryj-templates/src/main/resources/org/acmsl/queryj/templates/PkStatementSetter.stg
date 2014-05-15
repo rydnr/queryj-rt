@@ -192,7 +192,7 @@ public class <table.name.voName>PkStatementSetter
     public <table.name.voName>PkStatementSetter(
         <table.primaryKey:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
     {
-        this(<table.primaryKey:{ a | <a.name.uncapitalized>}; separator=", ">);
+        this(<table.primaryKey:{ a | <a.name.uncapitalized>}; separator=", ">, false);
     }
 
     <table.primaryKey:{ a | <attribute_accessors(attribute=a, C=C, override=false)>}; separator="\n">
