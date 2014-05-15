@@ -109,7 +109,7 @@ class(result, repository, C) ::= <<
  */
 <class_annotations(C=C)>
 public abstract class Abstract<result.classValue>
-    implements <result.id.voName>,
+    implements <result.classValue>,
                Serializable
 {
     /**
