@@ -739,6 +739,7 @@ public abstract class AbstractResultDecorator
     /**
      * Retrieves the class name, with no package information.
      * @param classValue the class value.
+     * @param stringUtils the {@link StringUtils} instance.
      * @return such information.
      */
     @NotNull
