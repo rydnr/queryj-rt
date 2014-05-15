@@ -399,7 +399,7 @@ public String toString()
     result.append(this.m__bUpdateOperation);
 
     result.append(", \"package\": \"");
-    result.append(<table.name.voName>Setter.class.getPackage().getName());
+    result.append(<table.name.voName>StatemeSetter.class.getPackage().getName());
     result.append("\" }");
 
     return result.toString();
