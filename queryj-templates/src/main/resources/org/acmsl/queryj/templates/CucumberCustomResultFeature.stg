@@ -70,7 +70,7 @@ Feature: Classes associated to custom result <result.id> compile
     | CustomValueObjectFactory | <result.id.voName>Factory.java            |
     | CustomValueObject        | <result.id.voName>GCycleCount.java                   |
     | CustomBaseValueObject    | <result.id.voName>AbstractGCycleCount.java           |
-    | CustomValueObjectImpl    | <result.id.voName>GCycleCountImpl.java               |
+    | CustomValueObjectImpl    | <result.id.voName>Impl.java               |
     | CustomResultSetExtractor | <result.id.voName>ResultSetExtractor.java |
 
     Given the following tables:
