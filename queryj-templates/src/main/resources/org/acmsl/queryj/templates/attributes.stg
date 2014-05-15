@@ -235,8 +235,8 @@ preparedStatement.set<attr.objectType>(index++, <attr.name.uncapitalized>);<endi
 
 attribute_preparedstatement_setter_call(attr, C) ::= <<
 <
-if(attr.date)>
-preparedStatement.setTimestamp(index++, <attribute_to_primitive(attribute=attr)>);<
+if(attr.date)
+>  preparedStatement.setTimestamp(index++, <attribute_to_primitive(attribute=attr)>);<
     else>
     preparedStatement.set<attr.objectType>(index++, <attribute_to_primitive(attribute=attr)>);<
     endif>
