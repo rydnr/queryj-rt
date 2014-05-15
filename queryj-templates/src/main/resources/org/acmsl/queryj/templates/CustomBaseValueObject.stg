@@ -153,7 +153,7 @@ public boolean equals(<nullable(C=C)>final Object other)
 
     if (other instanceof <result.id.voName>)
     {
-        <notnull(C=C)>final <result.id.voName> candidate = (<result.id.voName>) other;
+        <notnull(C=C)>final <result.classValue> candidate = (<result.id.voName>) other;
 
         <result.properties:{ p | <property_equals(property=p)>}; separator="">
         result =
