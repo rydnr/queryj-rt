@@ -234,6 +234,11 @@ preparedStatement.set<attr.objectType>(index++, <attr.name.uncapitalized>);<endi
 >>
 
 attribute_preparedstatement_setter_call(attr, C) ::= <<
+<!
+ Generates the code to specify the attribute into the PreparedStatement.
+ @param attr the attribute.
+ @param C the context.
+!>
 <
 if(attr.date)
  >preparedStatement.setTimestamp(index++, <attribute_to_primitive(attribute=attr)>);<
