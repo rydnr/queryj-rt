@@ -1,5 +1,5 @@
 * 2014/05/15
-** TODO Fix CustomValueObjectImpl #487: 3 -> 
+** DONE Fix CustomValueObjectImpl #487: 3 -> 1
 * Package layout:
 ** dao
 - DataAccessManager
