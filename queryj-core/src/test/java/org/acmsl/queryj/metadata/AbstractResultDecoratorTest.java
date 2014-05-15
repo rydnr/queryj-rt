@@ -158,7 +158,8 @@ public class AbstractResultDecoratorTest
      * @return the decorator.
      */
     @NotNull
-    protected static AbstractResultDecorator setupResultDecorator(@NotNull final List<Property<String>> properties)
+    protected static AbstractResultDecorator setupResultDecorator(
+        @NotNull final List<Property<String>> properties)
     {
         @NotNull final AbstractResultDecorator result;
 
