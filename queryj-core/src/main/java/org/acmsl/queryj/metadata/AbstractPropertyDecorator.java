@@ -35,6 +35,8 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.queryj.*;
+import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.customsql.IdentifiableElement;
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.PropertyElement;
@@ -398,7 +400,7 @@ public abstract class AbstractPropertyDecorator
      */
     protected boolean isBoolean(@NotNull final String type)
     {
-        return Literals. .equalsIgnoreCase(type);
+        return Literals.BOOLEAN .equalsIgnoreCase(type);
     }
 
     /**
