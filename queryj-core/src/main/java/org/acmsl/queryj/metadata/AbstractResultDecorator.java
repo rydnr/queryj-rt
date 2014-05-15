@@ -780,7 +780,7 @@ public abstract class AbstractResultDecorator
     }
 
     /**
-     * Retrieves the hashcode.
+     * Retrieves the hashCode.
      * @return such value.
      */
     @Override
