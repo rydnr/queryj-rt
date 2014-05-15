@@ -138,6 +138,9 @@ public class AbstractResultDecoratorTest
     @Test
     public void getSimpleClassValue_removes_the_package_name()
     {
+        @NotNull final AbstractResultDecorator result = AbstractResultDecoratorTest.setupResultDecorator(properties);
+
+        Assert.assertEquals(2, result.getNullableProperties().size());
 
     }
 
