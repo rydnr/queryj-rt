@@ -106,7 +106,7 @@ public class AbstractResultDecoratorTest
     }
 
     /**
-     * Checks getPropertyTypes() don't include duplicates.
+     * Checks getNullableProperties() only include nullable properties.
      */
     @Test
     public void getNullableProperties_only_include_nullable_properties()
