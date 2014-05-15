@@ -35,7 +35,6 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing QueryJ Core classes.
  */
-import org.acmsl.queryj.*;
 import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.customsql.IdentifiableElement;
 import org.acmsl.queryj.customsql.Property;
