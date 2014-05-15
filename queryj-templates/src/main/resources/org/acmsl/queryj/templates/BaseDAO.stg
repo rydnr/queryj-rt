@@ -275,7 +275,7 @@ find_by_primary_key(table, parent, repository, C) ::= <<
 <if(table.voDecorated)>
 <table.name.voName>Decorator findByPrimaryKey(<table.primaryKey:{ attr | <attribute_method_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">);
 <else>
-<table.name.voName> findByPrimaryKey(<table.primaryKey:{ attr | <attribute_parameter_method_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">);
+<table.name.voName> findByPrimaryKey(<table.primaryKey:{ attr | <attribute_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">);
 <endif>
 >>
 
