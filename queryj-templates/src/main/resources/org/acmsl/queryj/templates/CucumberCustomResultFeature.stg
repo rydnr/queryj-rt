@@ -42,7 +42,7 @@ source(C) ::= <<
 <!
   Generates CucumberResult.feature files.
 !>
-<source_impl(table=C.table, engine=C.engine, C=C)>
+<source_impl(result=C.table, engine=C.engine, C=C)>
 >>
 
 source_impl(table, engine, C) ::= <<
