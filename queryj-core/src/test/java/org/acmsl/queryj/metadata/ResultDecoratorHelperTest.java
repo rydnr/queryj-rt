@@ -136,7 +136,7 @@ public class ResultDecoratorHelperTest
         properties.add(property3);
         properties.add(property4);
 
-        @NotNull final AbstractResultDecorator result = setupResultDecorator(properties);
+        @NotNull final AbstractResultDecorator result = AbstractResultDecorator.setupResultDecorator(properties);
 
         Assert.assertTrue(instance.containNotNullProperties(result.getProperties(), result.getMetadataTypeManager()));
     }
@@ -166,44 +166,8 @@ public class ResultDecoratorHelperTest
         properties.add(property3);
         properties.add(property4);
 
-        @NotNull final AbstractResultDecorator result = setupResultDecorator(properties);
+        @NotNull final AbstractResultDecorator result = AbstractResultDecorator.setupResultDecorator(properties);
 
         Assert.assertEquals(3, result.getPropertyTypes().size());
-    }
-
-    /**
-     * Sets up an {@link AbstractResultDecorator} instance, for testing purposes.
-     * @param properties the {@link Property properties}.
-     * @return the decorator.
-     */
-    @NotNull
-    protected AbstractResultDecorator setupResultDecorator(@NotNull final List<Property<String>> properties)
-    {
-        @NotNull final AbstractResultDecorator result;
-
-        @NotNull final Result<String> wrappedResult = new ResultElement<>("my.result", "MyResult");
-
-        @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
-        @NotNull final SqlPropertyDAO propertyDAO = EasyMock.createNiceMock(SqlPropertyDAO.class);
-        @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
-        @NotNull final MetadataTypeManager metadataTypeManager = JdbcMetadataTypeManager.getInstance();
-        @NotNull final DecoratorFactory decoratorFactory = CachingDecoratorFactory.getInstance();
-        EasyMock.expect(customSqlProvider.getSqlPropertyDAO()).andReturn(propertyDAO).anyTimes();
-        EasyMock.expect(metadataManager.getMetadataTypeManager()).andReturn(metadataTypeManager).anyTimes();
-
-        for (@NotNull final Property<String> property : properties)
-        {
-            EasyMock.expect(propertyDAO.findByPrimaryKey(property.getId())).andReturn(property);
-            wrappedResult.add(new PropertyRefElement(property.getId()));
-        }
-
-        EasyMock.replay(customSqlProvider);
-        EasyMock.replay(propertyDAO);
-        EasyMock.replay(metadataManager);
-
-        result =
-            new AbstractResultDecorator(wrappedResult, customSqlProvider, metadataManager, decoratorFactory) {};
-
-        return result;
     }
 }
