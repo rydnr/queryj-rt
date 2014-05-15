@@ -147,7 +147,7 @@ defaultExtractor(result, repository, C) ::= <<
  @param C the context.
 !>
 /**
- * Extracts {@link <result.id.voName>} information from given result set.
+ * Extracts {@link <result.classValue>} information from given result set.
  * @param resultSet the result set.
  * @param sql the SQL query.
  * @param listener the {@link DAOListener} instance.
