@@ -254,4 +254,5 @@ generic_nullable_property_resultset_retrieval(property, C) ::= <<
  @param C the context.
 !>
 <
-if(p.date)><nullable_date_property_resultset_retrieval(property=property, C=C)><else><p.objectType>.valueOf(<p.id.uncapitalized>)<endif>
+if(p.date)
+  ><nullable_date_property_resultset_retrieval(property=property, C=C)><else><p.objectType>.valueOf(<p.id.uncapitalized>)<endif>
