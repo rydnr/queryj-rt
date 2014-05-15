@@ -223,6 +223,7 @@ if(!attr.clob)><
 else
 {<
     if(attr.date)><
+    else><
     preparedStatement.set<attr.objectType>(index++, <attribute_to_primitive(attribute=attr)>);
 }<else>
 preparedStatement.set<attr.objectType>(index++, <attr.name.uncapitalized>);<endif
