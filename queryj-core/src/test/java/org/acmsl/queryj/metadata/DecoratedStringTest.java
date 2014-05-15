@@ -98,6 +98,6 @@ public class DecoratedStringTest
     {
         @NotNull final DecoratedString instance = new DecoratedString("test.with.CamelCase.example");
 
-        Assert.assertEquals("TestWithCamelCaseExample", instance.capitalize());
+        Assert.assertEquals("TestWithCamelCaseExample", instance.getCapitalized());
     }
 }
