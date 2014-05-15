@@ -166,7 +166,8 @@ public class ResultDecoratorHelper
 
                     if (!result.contains(type))
                     {
-                        result.add(new DecoratedString(importType));
+                        result.add(type);
+                    }
                 }
             }
         }
