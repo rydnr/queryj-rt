@@ -76,15 +76,6 @@ sourceImpl(table, C) ::= <<
  * Importing Spring classes.
  */
 import org.springframework.dao.DataAccessException;
-<if(C.implement_markers)>
-
-/*
- * Importing some ACM-SL Commons classes.
- */
-import org.acmsl.commons.patterns.dao.DAO;
-
-<endif>
-
 
 /*
  * Importing JDK classes.
