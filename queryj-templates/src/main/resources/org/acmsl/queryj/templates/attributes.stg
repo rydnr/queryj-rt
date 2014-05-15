@@ -224,7 +224,7 @@ else
 {<
     if(attr.date)>
     preparedStatement.setTimestamp(index++, <attribute_to_primitive(attribute=attr)>);<
-    else><
+    else>
     preparedStatement.set<attr.objectType>(index++, <attribute_to_primitive(attribute=attr)>);<
     endif>
 }<else>
