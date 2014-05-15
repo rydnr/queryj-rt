@@ -91,6 +91,6 @@ public class DecoratedStringTest
     }
 
     /**
-     * Capitalize
+     * Normalize preserves camel case.
      */
 }
