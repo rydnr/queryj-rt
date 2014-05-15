@@ -136,7 +136,7 @@ public class AbstractResultDecoratorTest
     }
 
     @Test
-    public void
+    public void getClassValue
     /**
      * Sets up an {@link AbstractResultDecorator} instance, for testing purposes.
      * @param properties the {@link org.acmsl.queryj.customsql.Property properties}.
