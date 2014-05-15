@@ -240,7 +240,6 @@ if(attr.date)
 else
  >preparedStatement.set<attr.objectType>(index++, <attribute_to_primitive(attribute=attr)>);<
 endif>
-
 >>
 
 clob_preparedstatement_specification(attribute, C) ::= <<
