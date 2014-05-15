@@ -126,7 +126,7 @@ Feature: Classes associated to custom result <result.id> compile
       | DAO | <engine.name.capitalized><table.name.singular.camelCase>DAO.java |
 >>
 
-attribute(attr, table, pk) ::= <<
+property_cucumber_definition(property, table, pk) ::= <<
 <!
  Writes the row describing an attribute.
  @param attr the attribute.
