@@ -397,7 +397,7 @@ public abstract class AbstractPropertyDecorator
      * @param metadataTypeManager the {@link MetadataTypeManager} instance.
      * @return such information.
      */
-    protected boolean isBoolean(@NotNull final String type, @NotNull final MetadataTypeManager metadataTypeManager)
+    protected boolean isBoolean(@NotNull final String type)
     {
         return metadataTypeManager.isBoolean(metadataTypeManager.getJavaType(type));
     }
