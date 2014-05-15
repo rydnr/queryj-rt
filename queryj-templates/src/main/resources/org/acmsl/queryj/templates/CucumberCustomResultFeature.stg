@@ -61,7 +61,7 @@ Feature: Classes associated to custom result <result.id> compile
       | name | type | nullable |
       <result.properties:{ p | <cucumber_property_definition(property=p)>}; separator="\n">
 
-    When I use the custom result template <template> for Oracle
+    When I use the custom result template \<template> for Oracle
 
     Then the generated custom result-specific <output> file compiles successfully
 
