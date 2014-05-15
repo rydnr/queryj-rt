@@ -249,5 +249,8 @@ nullable_date_property_resultset_retrieval(property, C) ::= <<
 
 generic_nullable_property_resultset_retrieval(property, C) ::= <<
 <!
- R
+ Writes the piece of code to retrieve the value of a nullable property from a ResultSet.
+ @param property the property.
+ @param C the context.
+!>
 <if(p.date)><nullable_date_property_resultset_retrieval(property=property, C=C)><else><p.objectType>.valueOf(<p.id.uncapitalized>)<endif>
