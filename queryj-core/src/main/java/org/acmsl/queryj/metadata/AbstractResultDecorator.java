@@ -793,7 +793,7 @@ public abstract class AbstractResultDecorator
         else
         {
             result =
-                new DecoratedString(stringUtils.extractPackageName(classValue.getValue(), new String[] { "\\." }));
+                new DecoratedString(stringUtils.extractPackageName(classValue.getValue());
         }
 
         return result;
