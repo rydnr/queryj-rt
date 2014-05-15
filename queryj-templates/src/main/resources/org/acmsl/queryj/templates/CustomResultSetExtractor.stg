@@ -254,7 +254,7 @@ if(property.date)
   ><nullable_date_property_resultset_retrieval(property=property, C=C)><
 else><
   if(property.primitive)
-   ><property.objectType>.valueOf(<p.id.uncapitalized>)<
+   ><property.objectType>.valueOf(<property.id.uncapitalized>)<
   else
    ><property.id.uncapitalized>)<
   endif><
