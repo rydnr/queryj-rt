@@ -55,7 +55,7 @@ Feature: Classes associated to custom result <result.id> compile
 
     Given the following custom result:
       | id | class |
-      | <result.id>g.cycle.count | GCycle |
+      | <result.id> | GCycle |
 
     And the following custom result properties:
       | name       | type | nullable |
