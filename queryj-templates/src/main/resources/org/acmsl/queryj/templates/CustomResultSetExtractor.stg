@@ -72,7 +72,7 @@ sourceImpl(result, C) ::= <<
 /*
  * Importing V24-Commons classes.
  */
-import com.ventura24.commons.dao.V24ResultSetExtractor;
+import com.ventura24.commons.dao.DAOListener;
 import com.ventura24.commons.dao.V24ResultSetExtractor;
 <checkers_import(C=C)>
 /*
