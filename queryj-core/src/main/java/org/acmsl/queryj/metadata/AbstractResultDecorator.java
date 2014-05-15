@@ -772,7 +772,7 @@ public abstract class AbstractResultDecorator
     @NotNull
     public DecoratedString getPackage()
     {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        return getPackage(getClassValue(), StringUtils.getInstance());
     }
 
     /**
