@@ -256,7 +256,7 @@ else><
   if(property.primitive)
    ><property.objectType>.valueOf(<property.id.uncapitalized>)<
   else
-   ><property.id.uncapitalized>)<
+   ><property.id.uncapitalized><
   endif><
 endif>
 >>
