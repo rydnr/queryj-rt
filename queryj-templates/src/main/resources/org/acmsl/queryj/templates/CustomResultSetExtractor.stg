@@ -228,3 +228,12 @@ nullable_property_resultset_retrieval_declaration(property, C) ::= <<
 !>
 <if(p.nullable)><nullable(C=C)>final <p.objectType> <p.id.uncapitalized> = <property_resultset_retrieval(property=p, C=C)>;<endif>
 >>
+
+nullable_property_resultset_retrieval_declaration(property, C) ::= <<
+<!
+ Writes the piece of code to retrieve the value of a nullable property from a ResultSet.
+ @param property the property.
+ @param C the context.
+!>
+<if(p.nullable)><nullable(C=C)>final <p.objectType> <p.id.uncapitalized> = <property_resultset_retrieval(property=p, C=C)>;<endif>
+>>
