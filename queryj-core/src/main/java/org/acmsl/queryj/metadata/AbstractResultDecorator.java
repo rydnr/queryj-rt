@@ -719,7 +719,7 @@ public abstract class AbstractResultDecorator
 
     /**
      * Retrieves the hashCode of given instance.
-     * @param result the decoreated result.
+     * @param result the decorated result.
      * @return such value.
      */
     protected final int hashCode(@NotNull final Result<String> result)
