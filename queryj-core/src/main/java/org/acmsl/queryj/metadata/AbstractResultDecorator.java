@@ -732,7 +732,7 @@ public abstract class AbstractResultDecorator
     @NotNull
     public String getSimpleClassValue()
     {
-        return getSimpleClassValue(getClassValue());
+        return getSimpleClassValue(getClassValue(), StringUtils.getInstance());
     }
 
 
