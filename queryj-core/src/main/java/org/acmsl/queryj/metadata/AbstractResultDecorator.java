@@ -833,5 +833,6 @@ public abstract class AbstractResultDecorator
 
     public String getSimpleClassValue()
     {
+        return null;  //To change body of created methods use File | Settings | File Templates.
     }
 }
