@@ -700,7 +700,7 @@ public abstract class AbstractResultDecorator
     }
 
     /**
-     * Retrieves the nullable properties.
+     * Filters the nullable properties.
      * @return such properties.
      */
     @NotNull
