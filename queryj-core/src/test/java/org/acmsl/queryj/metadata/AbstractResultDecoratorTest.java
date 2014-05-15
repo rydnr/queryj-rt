@@ -149,6 +149,17 @@ public class AbstractResultDecoratorTest
     @NotNull
     protected static AbstractResultDecorator setupResultDecorator(@NotNull final List<Property<String>> properties)
     {
+
+    }
+
+    /**
+     * Sets up an {@link AbstractResultDecorator} instance, for testing purposes.
+     * @param properties the {@link org.acmsl.queryj.customsql.Property properties}.
+     * @return the decorator.
+     */
+    @NotNull
+    protected static AbstractResultDecorator setupResultDecorator(@NotNull final List<Property<String>> properties)
+    {
         @NotNull final AbstractResultDecorator result;
 
         @NotNull final Result<String> wrappedResult = new ResultElement<>("my.result", "MyResult");
