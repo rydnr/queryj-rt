@@ -33,7 +33,7 @@
 //
 // Author: Jose San Leandro Armendariz
 //
-// Description: Defines the rules to generate [Table].feature
+// Description: Defines the rules to generate [result].feature
 //              Cucumber tests
 //
 group CucumberTableFeature;
