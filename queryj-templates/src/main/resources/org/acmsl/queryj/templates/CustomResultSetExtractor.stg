@@ -121,7 +121,7 @@ class(result, repository, C) ::= <<
     ]:{line |<line>}; separator="\n * ">
 <class_common_javadoc(template="org/acmsl/queryj/templates/CustomResultSetExtractor.stg", C=C)>
  */
-public class <result.id.normalized.camelCase>ResultSetExtractor
+public class <result.classValue>ResultSetExtractor
     extends V24ResultSetExtractor\<<result.classValue>\>
 {
     /**
