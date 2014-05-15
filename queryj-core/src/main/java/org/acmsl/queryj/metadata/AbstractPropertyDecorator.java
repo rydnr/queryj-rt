@@ -309,8 +309,7 @@ public abstract class AbstractPropertyDecorator
      * @param metadataTypeManager the metadata type manager.
      * @return <code>false</code> if no primitive matches.
      */
-    protected boolean isBoolean(
-        @NotNull final String type, @NotNull final MetadataTypeManager metadataTypeManager)
+    protected boolean isBoolean(@NotNull final String type)
     {
         return metadataTypeManager.isBoolean(type);
     }
