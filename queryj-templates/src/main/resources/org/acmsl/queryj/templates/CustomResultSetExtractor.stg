@@ -220,4 +220,5 @@ protected <result.id.voName> extractData(
 }
 >>
 
-nullable_property_resultset_retrieval(
+nullable_property_resultset_retrieval(property, C) ::= <<
+>>
