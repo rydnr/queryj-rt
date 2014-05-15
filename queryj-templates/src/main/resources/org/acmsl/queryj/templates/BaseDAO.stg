@@ -118,7 +118,7 @@ project_imports(basePackageName, voSubpackageName, table) ::= <<
  * Importing project classes.
  */
 import <basePackageName>.<voSubpackageName>.<table.name.voName>;
-<if(table.static
+<if(table.
 >>
 
 class(table, C) ::= <<
