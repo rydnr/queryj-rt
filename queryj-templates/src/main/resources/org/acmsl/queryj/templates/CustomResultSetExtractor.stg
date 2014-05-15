@@ -70,6 +70,10 @@ sourceImpl(result, C) ::= <<
 <package_declaration(p=C.package)>
 
 /*
+ * Importing <C.repository.capitalized> classes.
+ */
+import
+/*
  * Importing V24-Commons classes.
  */
 import com.ventura24.commons.dao.DAOListener;
