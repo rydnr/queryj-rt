@@ -115,7 +115,7 @@ public class AbstractResultDecoratorTest
             new PropertyElement<>("prop1", "propertyId", 1, "long", false);
 
         @NotNull final Property<String> property2 =
-            new PropertyElement<>("prop2", "name", 2, "String", false);
+            new PropertyElement<>("prop2", "name", 2, "String", true);
 
         @NotNull final Property<String> property3 =
             new PropertyElement<>("prop3", "date", 3, "Date", true);
