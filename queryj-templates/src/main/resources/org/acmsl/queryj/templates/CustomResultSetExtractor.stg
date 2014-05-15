@@ -249,6 +249,7 @@ if(p.date)
   ><nullable_date_property_resultset_retrieval(property=property, C=C)><
 else><
   if(p.primitive)><
+    p.objectType>.valueOf(<p.id.uncapitalized>)<
     <p.id.uncapitalized>)<
   else><
     p.objectType>.valueOf(<p.id.uncapitalized>)<
