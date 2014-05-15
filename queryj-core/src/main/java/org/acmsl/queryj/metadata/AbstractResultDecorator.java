@@ -49,6 +49,11 @@ import org.acmsl.queryj.metadata.vo.Table;
 import org.acmsl.queryj.tools.DebugUtils;
 
 /*
+ * Importing ACM S.L. Java Commons classes.
+ */
+import org.acmsl.commons.utils.StringUtils;
+
+/*
  * Importing Apache Commons Logging classes.
  */
 import org.apache.commons.logging.LogFactory;
