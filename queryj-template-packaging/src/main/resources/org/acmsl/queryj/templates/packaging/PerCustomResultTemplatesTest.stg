@@ -497,7 +497,7 @@ public class PerCustomResultTemplatesTest
     /**
      * Resolves the package.
      * @param packageTemplate the package template.
-     * @param resultName the result name.
+     * @param customResult the custom result.
      * @param engine the engine.
      * @return the actual package.
      */
