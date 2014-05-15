@@ -51,7 +51,7 @@ source_impl(result, engine, C) ::= <<
 !>
 Feature: Classes associated to custom result <result.id> compile
 
-  Scenario Outline: Custom result <result.id>'s work
+  Scenario Outline: Custom result <result.id>'s sources work
 
     Given the following tables:
     |    table     | parent table | decorated | relationship |   static    |
