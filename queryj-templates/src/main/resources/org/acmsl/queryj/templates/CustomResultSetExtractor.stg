@@ -112,7 +112,7 @@ public class <result.id.voName>ResultSetExtractor
     extends V24ResultSetExtractor\<<result.id.voName>\>
 {
     /**
-     * Creates a new instance.
+     * Creates a new {@instance.
      * @param sql the SQL query.
      * @param listener the {@link <repository.voName>DAOListener} instance.
      */
