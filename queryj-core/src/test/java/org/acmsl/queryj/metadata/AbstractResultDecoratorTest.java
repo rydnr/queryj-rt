@@ -141,7 +141,7 @@ public class AbstractResultDecoratorTest
         @NotNull final AbstractResultDecorator result =
             AbstractResultDecoratorTest.setupResultDecorator("my.id", "com.foo.bar.MyResult", new ArrayList<>(0));
 
-        Assert.assertEquals(2, result.getNullableProperties().size());
+        Assert.assertEquals(2, result.getSimpleClassValue().size());
 
     }
 
