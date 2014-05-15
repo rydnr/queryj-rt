@@ -74,6 +74,7 @@ sourceImpl(result, C) ::= <<
  */
 import <C.project_package>.<typeInitMap.voSubpackageName>.<result.id.voName>;
 import <C.project_package>.<typeInitMap.voSubpackageName>.core.<result.id.voName>Factory;
+
 /*
  * Importing V24-Commons classes.
  */
