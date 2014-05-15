@@ -149,7 +149,7 @@ public class AbstractResultDecoratorTest
     }
 
     /**
-     * Checks getSimpleClassValue() removes the package name.
+     * Checks getPackage() retrieves the package name.
      */
     @Test
     public void getSimpleClassValue_removes_the_package_name()
