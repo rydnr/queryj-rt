@@ -616,7 +616,7 @@ public abstract class AbstractResultDecorator
         @NotNull final MetadataTypeManager typeManager,
         @NotNull final ResultDecoratorHelper resultDecoratorHelper)
     {
-        return tableDecoratorHelper.getPropertyTypes(properties, typeManager);
+        return resultDecoratorHelper.getPropertyTypes(properties, typeManager);
     }
 
     /**
