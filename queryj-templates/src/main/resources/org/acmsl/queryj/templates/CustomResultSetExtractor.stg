@@ -85,7 +85,7 @@ description(result) ::= <<
   Generates the first line of the generated file description.
   @param result the custom result.
 !>
-{@link ResultSetExtractor} implementation for {@link <result.id.voName> <result.id>} result.
+{@link V24ResultSetExtractor} implementation for {@link <result.id.voName> <result.id>} result.
 >>
 
 class(result, repository, C) ::= <<
