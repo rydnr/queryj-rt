@@ -394,7 +394,6 @@ public abstract class AbstractPropertyDecorator
     /**
      * Retrieves whether the attribute is boolean or not.
      * @param type the attribute type.
-     * @param metadataTypeManager the {@link MetadataTypeManager} instance.
      * @return such information.
      */
     protected boolean isBoolean(@NotNull final String type)
