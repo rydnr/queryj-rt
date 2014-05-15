@@ -830,14 +830,4 @@ public abstract class AbstractResultDecorator
 
         return result;
     }
-
-    /**
-     * Retrieves the class name, with no package information.
-     * @return such information.
-     */
-    @NotNull
-    public String getSimpleClassValue()
-    {
-        return getSimpleClassValue(getClassValue());
-    }
 }
