@@ -223,7 +223,8 @@ if(!attr.clob)><
 else
 {
     <attribute_preparedstatement_setter_call(attr=attr, C=C)>
-}<else>
+}<
+  else>
 <attribute_preparedstatement_setter_call(attr=attr, C=C)><endif
 ><else><clob_preparedstatement_specification(attribute=attr, C=C)><endif>
 >>
