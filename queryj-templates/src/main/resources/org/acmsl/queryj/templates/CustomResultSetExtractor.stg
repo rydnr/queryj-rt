@@ -258,4 +258,4 @@ if(p.date)
   ><nullable_date_property_resultset_retrieval(property=property, C=C)><
 else><
   if(p.boolean)><
-  ><p.objectType>.valueOf(<p.id.uncapitalized>)<endif>
+  >><p.objectType>.valueOf(<p.id.uncapitalized>)<endif>
