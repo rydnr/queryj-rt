@@ -775,6 +775,17 @@ public abstract class AbstractResultDecorator
         return getPackage(getClassValue(), StringUtils.getInstance());
     }
 
+
+    /**
+     * Retrieves the package information from the class name.
+     * @return such information.
+     */
+    @NotNull
+    public DecoratedString getPackage()
+    {
+        return getPackage(getClassValue(), StringUtils.getInstance());
+    }
+
     /**
      * Provides a text representation of the information
      * contained in given instance.
