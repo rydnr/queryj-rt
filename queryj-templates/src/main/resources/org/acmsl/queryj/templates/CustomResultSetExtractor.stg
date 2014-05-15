@@ -151,7 +151,7 @@ defaultExtractor(result, repository, C) ::= <<
  * @param resultSet the result set.
  * @param sql the SQL query.
  * @param listener the {@link DAOListener} instance.
- * @return the {@code <result.id.voName>} or
+ * @return the {@code <result.classValue>} or
  * {@code null} if the operation returned no data.
  * @throws SQLException intercepted by \<i>Spring\</i>.
  * @throws DataAccessException with information about any
