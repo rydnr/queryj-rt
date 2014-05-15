@@ -742,7 +742,7 @@ public abstract class AbstractResultDecorator
     @NotNull
     protected String getSimpleClassValue(@NotNull final String classValue)
     {
-        return getSimpleClassValue(getClassValue());
+        return
     }
 
     /**
