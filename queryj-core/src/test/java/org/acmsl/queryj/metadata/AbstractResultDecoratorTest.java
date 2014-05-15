@@ -136,7 +136,7 @@ public class AbstractResultDecoratorTest
     }
 
     @Test
-    public void getSimpleClass
+    public void getSimpleClassValue_removes_the_
     /**
      * Sets up an {@link AbstractResultDecorator} instance, for testing purposes.
      * @param properties the {@link org.acmsl.queryj.customsql.Property properties}.
