@@ -139,7 +139,7 @@ public class AbstractResultDecoratorTest
     public void getSimpleClassValue_removes_the_package_name()
     {
         @NotNull final AbstractResultDecorator result =
-            AbstractResultDecoratorTest.setupResultDecorator("my.id");
+            AbstractResultDecoratorTest.setupResultDecorator("my.id", "com.foo.bar.MyResult", new ArrayList<>(0));
 
         Assert.assertEquals(2, result.getNullableProperties().size());
 
