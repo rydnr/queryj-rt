@@ -224,6 +224,7 @@ else
 {
     <attribute_preparedstatement_setter_call(attr=attr, C=C)>
 }<else>
+<attribute_preparedstatement_setter_call(attr=attr, C=C)>
 preparedStatement.set<attr.objectType>(index++, <attr.name.uncapitalized>);<endif
 ><else><clob_preparedstatement_specification(attribute=attr, C=C)><endif>
 >>
