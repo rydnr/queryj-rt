@@ -701,7 +701,7 @@ public abstract class AbstractResultDecorator
 
     /**
      * Filters the nullable properties.
-     * @param
+     * @param properties the {@link Property properties}.
      * @return such properties.
      */
     @NotNull
