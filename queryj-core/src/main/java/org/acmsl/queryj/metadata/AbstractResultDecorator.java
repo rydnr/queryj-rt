@@ -830,4 +830,8 @@ public abstract class AbstractResultDecorator
 
         return result;
     }
+
+    public String getSimpleClassValue()
+    {
+    }
 }
