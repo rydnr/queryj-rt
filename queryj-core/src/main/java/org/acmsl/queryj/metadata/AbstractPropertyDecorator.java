@@ -298,7 +298,7 @@ public abstract class AbstractPropertyDecorator
      * @return <code>false</code> if no primitive matches.
      */
     @SuppressWarnings("unused")
-    public boolean isPrimitive()
+    public boolean isBoolean()
     {
         return isPrimitive(getType().getValue(), getMetadataTypeManager());
     }
