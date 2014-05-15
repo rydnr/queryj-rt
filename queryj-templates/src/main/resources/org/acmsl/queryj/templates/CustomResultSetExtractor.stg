@@ -220,7 +220,7 @@ protected <result.id.voName> extractData(
 }
 >>
 
-nullable_property_resultset_retrieval(property, C) ::= <<
+nullable_property_resultset_retrieval_declaration(property, C) ::= <<
 <!
  Writes the piece of code to retrieve the value of a nullable property from a ResultSet.
  @param property the property.
