@@ -72,7 +72,6 @@ Feature: Classes associated to custom result <result.id> compile
     | CustomBaseValueObject    | Abstract<result.id.voName>.java           |
     | CustomValueObjectImpl    | <result.id.voName>Impl.java               |
     | CustomResultSetExtractor | <result.id.voName>ResultSetExtractor.java |
-
 >>
 
 property_cucumber_definition(property) ::= <<
