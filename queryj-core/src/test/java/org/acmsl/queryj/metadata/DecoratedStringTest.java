@@ -94,7 +94,7 @@ public class DecoratedStringTest
      * Checks whether normalize() preserves camel case.
      */
     @Test
-    public void normalize_preserves_camelCase()
+    public void capitalize_preserves_camelCase()
     {
         @NotNull final DecoratedString instance = new DecoratedString("test.with.CamelCase.example");
 
