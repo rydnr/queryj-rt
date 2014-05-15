@@ -352,7 +352,7 @@ protected boolean equals(
 {
     return
            (myUpdate == hisUpdate)
-        && (myValues.equals(hisValue));
+        && (myValue.equals(hisValue));
 }
 >>
 
