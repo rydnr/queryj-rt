@@ -385,7 +385,11 @@ public int hashCode()
 >>
 
 toString_method(table, C) ::= <<
-<! Generates the toString() method !>
+<!
+ Generates the toString() method.
+ @param table the table.
+ @param C the context.
+!>
 /**
  * Generates a JSON-compatible representation of this instance.
  * @return such text.
