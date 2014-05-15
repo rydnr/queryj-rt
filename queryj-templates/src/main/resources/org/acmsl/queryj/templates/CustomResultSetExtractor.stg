@@ -250,9 +250,8 @@ if(p.date)
 else><
   if(p.primitive)><
     p.objectType>.valueOf(<p.id.uncapitalized>)<
-    <p.id.uncapitalized>)<
   else><
-    p.objectType>.valueOf(<p.id.uncapitalized>)<
+    <p.id.uncapitalized>)<
 endif>
 >>
 
