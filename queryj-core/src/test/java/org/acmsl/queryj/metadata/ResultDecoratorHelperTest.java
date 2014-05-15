@@ -144,6 +144,11 @@ public class ResultDecoratorHelperTest
     /**
      * Checks getPropertyTypes() don't include duplicates.
      */
+    @Test
+    public void getPropertyTypes_do_not_include_duplicates()
+    {
+
+    }
     /**
      * Sets up an {@link AbstractResultDecorator} instance, for testing purposes.
      * @param properties the {@link Property properties}.
