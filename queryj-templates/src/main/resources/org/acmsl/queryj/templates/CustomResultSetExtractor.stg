@@ -196,7 +196,7 @@ protected <result.id.voName> extractData(
     {
         if (listener != null)
         {
-            listener.resultSetMovedForward(1, sql);
+            listener.resultSetMovedForward(sql, sql);
         }
 
         <result.properties:{p | <if(p.nullable)><nullable(C=C)>final <p.objectType> <p.id.uncapitalized> = <property_resultset_retrieval(property=p, C=C)>;<endif>}; separator="\n">
