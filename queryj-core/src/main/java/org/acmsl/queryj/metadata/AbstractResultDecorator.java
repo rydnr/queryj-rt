@@ -614,7 +614,7 @@ public abstract class AbstractResultDecorator
     protected List<DecoratedString> getPropertyTypes(
         @NotNull final List<Property<DecoratedString>> properties,
         @NotNull final MetadataTypeManager typeManager,
-        @NotNull final ResultDecoratorHelper tableDecoratorHelper)
+        @NotNull final ResultDecoratorHelper resultDecoratorHelper)
     {
         return tableDecoratorHelper.getPropertyTypes(properties, typeManager);
     }
