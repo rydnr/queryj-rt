@@ -55,7 +55,7 @@ Feature: Classes associated to custom result <result.id> compile
 
     Given the following custom result:
       | id | class |
-      | <result.id> | <result.id|
+      | <result.id> | <result.classValue> |
 
     And the following custom result properties:
       | name       | type | nullable |
