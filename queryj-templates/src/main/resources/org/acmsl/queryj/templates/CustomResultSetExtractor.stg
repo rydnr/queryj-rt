@@ -130,7 +130,7 @@ public class <result.id.normalized.camelCase>ResultSetExtractor
      * @param sql the SQL query.
      * @param listener the {@link <repository.voName>DAOListener} instance.
      */
-    public <result.id.voName>ResultSetExtractor(
+    public <result.id.normalized.camelCase>ResultSetExtractor(
         <notnull(C=C)>final String sql, <nullable(C=C)>final DAOListener listener)
     {
         super(sql, listener);
