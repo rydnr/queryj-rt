@@ -875,6 +875,7 @@ public abstract class AbstractResultDecorator
         return result;
     }
 
+    @NotNull
     public DecoratedString getPackage()
     {
         return null;  //To change body of created methods use File | Settings | File Templates.
