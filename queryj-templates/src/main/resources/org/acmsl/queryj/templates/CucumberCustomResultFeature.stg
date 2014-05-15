@@ -128,7 +128,7 @@ Feature: Classes associated to custom result <result.id> compile
 
 property_cucumber_definition(property) ::= <<
 <!
- Writes the row describing an attribute.
+ Writes the row describing a property.
  @param attr the attribute.
  @param table the table.
  @param pk whether if it's part of the primary key.
