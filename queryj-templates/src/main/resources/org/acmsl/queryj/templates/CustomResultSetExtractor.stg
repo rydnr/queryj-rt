@@ -247,5 +247,5 @@ nullable_date_property_resultset_retrieval(property, C) ::= <<
 <if(p.nullable)>new Date(<p.id.uncapitalized>.getTime())<endif>
 >>
 
-generic_nulla
+generic_nullable_
 <if(p.date)><nullable_date_property_resultset_retrieval(property=property, C=C)><else><p.objectType>.valueOf(<p.id.uncapitalized>)<endif>
