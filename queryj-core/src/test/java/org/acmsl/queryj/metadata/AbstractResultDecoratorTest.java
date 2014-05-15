@@ -109,7 +109,7 @@ public class AbstractResultDecoratorTest
      * Checks getPropertyTypes() don't include duplicates.
      */
     @Test
-    public void getNullableProperties_do_not_include_()
+    public void getNullableProperties_only_include_()
     {
         @NotNull final Property<String> property1 =
             new PropertyElement<>("prop1", "propertyId", 1, "long", false);
