@@ -310,7 +310,11 @@ public class <table.name.voName>StatementSetter
 >>
 
 equals_method(table, C) ::= <<
-<! Generates the equals(Object) method !>
+<!
+ Generates the equals(Object) method.
+ @param table the table.-
+
+!>
 /**
  * Checks whether given object is semantically equivalent to this one.
  * @param other the other object to compare to.
