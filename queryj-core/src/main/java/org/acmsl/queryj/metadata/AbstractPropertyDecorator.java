@@ -294,27 +294,6 @@ public abstract class AbstractPropertyDecorator
     }
 
     /**
-     * Retrieves whether this attribute can be modelled as a boolean or not.
-     * @return <code>false</code> if no primitive matches.
-     */
-    @SuppressWarnings("unused")
-    public boolean isBoolean()
-    {
-        return isBoolean(getType());
-    }
-
-    /**
-     * Retrieves whether this attribute can be modelled as a primitive or not.
-     * @param type the attribute type.
-     * @param metadataTypeManager the metadata type manager.
-     * @return <code>false</code> if no primitive matches.
-     */
-    protected boolean isBoolean(@NotNull final String type)
-    {
-        return metadataTypeManager.isBoolean(type);
-    }
-
-    /**
      * Retrieves whether the type means the attribute is a
      * number smaller than an int.
      * @return such condition.
