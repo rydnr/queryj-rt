@@ -152,7 +152,7 @@ if(property.clob)><
   clob_property_resultset_retrieval(property=attr, C=C)><
 else><
   if(property.boolean)
-   >resultSet.getBoolean("<property.name>")<
+   >resultSet.getBoolean("<property.columnName>")<
   else
    >resultSet.get<property.objectType>("<property.name>")<
   endif><
