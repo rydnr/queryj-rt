@@ -235,5 +235,5 @@ nullable_property_resultset_retrieval(property, C) ::= <<
  @param property the property.
  @param C the context.
 !>
-<if(p.nullable)>(<p.id.uncapitalized> == null) ? null : <if(p.date)><<p.objectType>.valueOf(<p.id.uncapitalized>)<else><property_resultset_retrieval(property=p, C=C)><endif>
+<if(p.nullable)>(<p.id.uncapitalized> == null) ? null : <if(p.date)><nullable_date_prope<p.objectType>.valueOf(<p.id.uncapitalized>)<else><property_resultset_retrieval(property=p, C=C)><endif>
 >>
