@@ -153,8 +153,8 @@ if(property.clob)><
 else><
   if(property.boolean)
    >resultSet.getBoolean("<property.name>")<
-  else>
-    resultSet.get<property.objectType>("<property.name>")<
+  else
+   >resultSet.get<property.objectType>("<property.name>")<
   endif><
 endif>
 >>
