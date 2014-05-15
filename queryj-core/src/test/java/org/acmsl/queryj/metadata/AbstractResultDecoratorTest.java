@@ -135,6 +135,8 @@ public class AbstractResultDecoratorTest
         Assert.assertEquals(2, result.getNullableProperties().size());
     }
 
+    @Test
+    public void
     /**
      * Sets up an {@link AbstractResultDecorator} instance, for testing purposes.
      * @param properties the {@link org.acmsl.queryj.customsql.Property properties}.
