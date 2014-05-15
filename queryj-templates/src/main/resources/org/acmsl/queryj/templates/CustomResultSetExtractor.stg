@@ -149,7 +149,7 @@ protected <result.id.voName> extractData(
     throws  SQLException,
             DataAccessException
 {
-    return extractData(resultSet, listener, <result.id.voName>Factory.getInstance());
+    return extractData(resultSet, sql, listener, <result.id.voName>Factory.getInstance());
 }
 
 /**
