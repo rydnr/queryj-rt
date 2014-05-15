@@ -708,7 +708,16 @@ public abstract class AbstractResultDecorator
     protected List<Property<DecoratedString>> filterNullableProperties(
         @NotNull final List<Property<DecoratedString>> properties)
     {
-        return null;
+        @NotNull final List<Property<DecoratedString>> result = new ArrayList<>(properties.size());
+
+        for (@Nullable final Property<DecoratedString> property : properties)
+        {
+            if (property != null)
+            {
+
+            }
+        }
+        return result;
     }
 
     /**
