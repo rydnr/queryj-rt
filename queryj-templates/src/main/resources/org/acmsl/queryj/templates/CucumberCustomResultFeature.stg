@@ -69,7 +69,7 @@ Feature: Classes associated to custom result <result.id> compile
     | template                 | output                             |
     | CustomValueObjectFactory | <result.id.voName>Factory.java            |
     | CustomValueObject        | <result.id.voName>GCycleCount.java                   |
-    | CustomBaseValueObject    | AbstractGCycleCount.java           |
+    | CustomBaseValueObject    | <result.id.voName>AbstractGCycleCount.java           |
     | CustomValueObjectImpl    | GCycleCountImpl.java               |
     | CustomResultSetExtractor | GCycleCountResultSetExtractor.java |
 
