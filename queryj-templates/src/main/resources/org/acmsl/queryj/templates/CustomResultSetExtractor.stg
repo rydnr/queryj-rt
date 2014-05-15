@@ -202,7 +202,7 @@ protected <result.id.voName> extractData(
         <result.properties:{p | <if(p.nullable)><nullable(C=C)>final <p.objectType> <p.id.uncapitalized> = <property_resultset_retrieval(property=p, C=C)>;<endif>}; separator="\n">
         result =
             factory.create<result.id.voName>(
-                <result.properties:{p | <if(p.nullable>)(<p.id.uncapitalized> == null) ? null : <p.objectType>.valueOf(<p.id.uncapitalized>)<else><property_resultset_retrieval(property=p, C=C)><endif>}; separator=",\n">);
+                <result.properties:{p | <if(p.nullable)>(<p.id.uncapitalized> == null) ? null : <p.objectType>.valueOf(<p.id.uncapitalized>)<else><property_resultset_retrieval(property=p, C=C)><endif>}; separator=",\n">);
 
         if  (listener != null)
         {
