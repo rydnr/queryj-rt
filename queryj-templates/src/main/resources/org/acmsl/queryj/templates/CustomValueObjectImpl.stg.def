@@ -14,4 +14,4 @@ output: Java;
 filename builder : <result.simpleClassValue>Impl.java;
 
 // The package.
-package: <packageName>.vo.impl;
+package: <result.package>.impl;
