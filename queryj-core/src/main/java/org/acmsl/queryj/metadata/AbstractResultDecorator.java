@@ -849,7 +849,8 @@ public abstract class AbstractResultDecorator
      * object prevents it from being compared to this Object.
      */
     @SuppressWarnings("unchecked")
-    protected int compareTo(@NotNull final Result<String> resultElement, @Nullable final Result<DecoratedString> object)
+    protected int compareTo(
+        @NotNull final Result<String> resultElement, @Nullable final Result<DecoratedString> object)
         throws  ClassCastException
     {
         final int result;
