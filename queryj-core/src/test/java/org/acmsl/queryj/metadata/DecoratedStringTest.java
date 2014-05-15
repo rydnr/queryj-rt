@@ -91,7 +91,7 @@ public class DecoratedStringTest
     }
 
     /**
-     * Checks whether normalize() preserves camel case.
+     * Checks whether capitalize() preserves camel case.
      */
     @Test
     public void capitalize_preserves_camelCase()
