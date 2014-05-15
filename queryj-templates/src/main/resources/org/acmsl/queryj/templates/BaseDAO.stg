@@ -96,7 +96,6 @@ import java.util.Collections;
 import java.util.List;
 <if(table.attributeTypes)>
 <table.attributeTypes:{ t | import <t>;}; separator="\n">
-<else>
 <endif>
 
 <class(table=table, C=C)>
