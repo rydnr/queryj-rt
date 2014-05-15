@@ -119,7 +119,7 @@ project_imports(basePackageName, voSubpackageName, table) ::= <<
  */
 import <basePackageName>.<voSubpackageName>.<table.name.voName>;
 <if(table.staticContent)>
-import <basePackageName>.<voSubpackageName>,
+import <basePackageName>.<voSubpackageName>.impl.<
 >>
 
 class(table, C) ::= <<
