@@ -206,7 +206,7 @@ public abstract class AbstractPropertyDecorator
     {
         final int t_iJavaType = metadataTypeManager.getJavaType(type);
 
-        return metadataTypeManager.getFieldType(t_iJavaType, isNullable(), "boolean".equals(type));
+        return metadataTypeManager.getFieldType(t_iJavaType, isNullable(), Literals.BOOLEAN.equals(type));
     }
 
     /**
