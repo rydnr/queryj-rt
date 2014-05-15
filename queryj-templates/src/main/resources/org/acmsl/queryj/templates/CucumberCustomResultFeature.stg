@@ -129,9 +129,7 @@ Feature: Classes associated to custom result <result.id> compile
 property_cucumber_definition(property) ::= <<
 <!
  Writes the row describing a property.
- @param attr the attribute.
- @param table the table.
- @param pk whether if it's part of the primary key.
+ @param property the property.
 !>
 | <table.name> | <attr.name> | <attr.type> | <pk> | <attr.nullable> | <attr.readOnly> | <attr.sequence> | <attr.keyword> | <attr.boolean> | <attr.length> | <attr.precision> |
 >>
