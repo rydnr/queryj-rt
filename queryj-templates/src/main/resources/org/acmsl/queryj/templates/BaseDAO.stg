@@ -339,7 +339,7 @@ fk_delete_method(foreignKey, table, C) ::= <<
 !>
 /**
 <if(foreignKey.allowsNull)>
- * Discards the relation to \<code><foreignKey.target.voName>\</code> in
+ * Discards the relation to {@code <foreignKey.target.voName>\</code> in
  * {@link <foreignKey.source.voName>}.
 <else>
  * Deletes <table.name> information from the persistence layer filtering
