@@ -161,7 +161,7 @@ class(table, C) ::= <<
   template="org/acmsl/queryj/templates/AttributesStatementSetter.stg", C=C)>
  */
 <class_annotations(C=C)>
-public class <table.name.voName>AttributesStatementSetter
+public class <table.name.voName>StatementSetter
     implements  PreparedStatementSetter
 {
     /**
