@@ -80,6 +80,10 @@ import <C.project_package>.<typeInitMap.voSubpackageName>.core.<result.id.voName
  */
 import com.ventura24.commons.dao.DAOListener;
 import com.ventura24.commons.dao.V24ResultSetExtractor;
+/*
+ * Importing Spring classes.
+ */
+import org.springframework.dao.DataAccessException;
 <checkers_import(C=C)>
 /*
  * Importing JDK classes.
