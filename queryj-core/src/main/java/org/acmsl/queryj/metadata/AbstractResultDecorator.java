@@ -35,6 +35,7 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.commons.utils.StringUtils;
 import org.acmsl.queryj.api.exceptions.NullAttributeWhenConvertingToPropertyException;
 import org.acmsl.queryj.customsql.CustomResultUtils;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
@@ -742,7 +743,7 @@ public abstract class AbstractResultDecorator
     @NotNull
     protected String getSimpleClassValue(@NotNull final String classValue)
     {
-        return
+        return StringUtils.getInstance().retrieveLastWord()
     }
 
     /**
