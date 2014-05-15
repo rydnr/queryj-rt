@@ -696,7 +696,7 @@ public abstract class AbstractResultDecorator
     @NotNull
     public List<Property<DecoratedString>> getNullableProperties()
     {
-        return null;
+        return filterNullableProperties(getProperties());
     }
 
     /**
