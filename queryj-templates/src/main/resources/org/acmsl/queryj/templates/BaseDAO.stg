@@ -107,7 +107,7 @@ second_line_description(tableName) ::= <<
 <tableName> structures from persistence layers.
 >>
 
-project_imports(basePackageName, voName) ::= <<
+project_imports(basePackageName, table) ::= <<
 <!
  Generates the project imports.
  @param basePackageName the base package name.
