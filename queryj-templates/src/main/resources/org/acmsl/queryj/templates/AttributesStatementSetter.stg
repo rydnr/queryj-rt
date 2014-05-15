@@ -368,7 +368,7 @@ public int hashCode()
 {
     final int result;
 
-    final int classHashCode = <table.name.voName>AttributesStatementSetter.class.hashCode();
+    final int classHashCode = <table.name.voName>StatementSetter.class.hashCode();
 
     final int valuesHashCode = this.m__Values.hashCode();
 
