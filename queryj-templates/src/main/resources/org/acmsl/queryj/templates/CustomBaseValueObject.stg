@@ -70,7 +70,7 @@ sourceImpl(result, C) ::= <<
 <package_declaration(p=C.package)>
 
 /*
- * Importing <C.repository> classes.
+ * Importing <C.repository.capitalized> classes.
  */
 import <result.classValue>;
 <checkers_import(C=C)>
