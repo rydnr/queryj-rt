@@ -53,7 +53,26 @@ Feature: Classes associated to custom result <result.id> compile
 
   Scenario Outline: Custom result <result.id>'s sources work
 
-    Given the following tables:
+    Given the following custom result:
+      | id | class |
+      | g.cycle.count | GCycle |
+
+    And the following custom result properties:
+      | name       | type | nullable |
+      | g_cycle_id | int  | false    |
+      | count      | long | false    |
+
+    When I use the custom result template <template> for Oracle
+
+    Then the generated custom result-specific <output> file compiles successfully
+
+  Examples:
+    | template                 | output                             |
+    | CustomValueObjectFactory | GCycleCountFactory.java            |
+    | CustomValueObject        | GCycleCount.java                   |
+    | CustomBaseValueObject    | AbstractGCycleCount.java           |
+    | CustomValueObjectImpl    | GCycleCountImpl.java               |
+#    | CustomResultSetExtractor | GCycleCountResultSetExtractor.java |    Given the following tables:
     |    table     | parent table | decorated | relationship |   static    |
     | <table.name> | <table.parentTableName> | <table.voDecorated> | <table.relationship> | <if(table.static)><table.staticAttribute.name><endif> |
 
