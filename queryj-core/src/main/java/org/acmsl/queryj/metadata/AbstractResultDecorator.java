@@ -700,6 +700,16 @@ public abstract class AbstractResultDecorator
     }
 
     /**
+     * Retrieves the nullable properties.
+     * @return such properties.
+     */
+    @NotNull
+    public List<Property<DecoratedString>> getNullableProperties()
+    {
+        return null;
+    }
+
+    /**
      * Provides a text representation of the information
      * contained in given instance.
      * @return such information.
