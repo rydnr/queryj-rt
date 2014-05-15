@@ -252,6 +252,7 @@ else><
    ><p.objectType>.valueOf(<p.id.uncapitalized>)<
   else>
    ><p.id.uncapitalized>)<
+  endif><
 endif>
 >>
 
