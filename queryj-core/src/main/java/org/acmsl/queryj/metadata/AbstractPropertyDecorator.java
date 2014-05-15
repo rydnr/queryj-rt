@@ -294,7 +294,7 @@ public abstract class AbstractPropertyDecorator
     }
 
     /**
-     * Retrieves whether this attribute can be modelled as a primitive or not.
+     * Retrieves whether this attribute can be modelled as a boolean or not.
      * @return <code>false</code> if no primitive matches.
      */
     @SuppressWarnings("unused")
