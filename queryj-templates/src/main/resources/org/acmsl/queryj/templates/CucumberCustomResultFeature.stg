@@ -67,7 +67,7 @@ Feature: Classes associated to custom result <result.id> compile
 
   Examples:
     | template                 | output                             |
-    | CustomValueObjectFactory | GCycleCountFactory.java            |
+    | CustomValueObjectFactory | <result.id.voName>Factory.java            |
     | CustomValueObject        | GCycleCount.java                   |
     | CustomBaseValueObject    | AbstractGCycleCount.java           |
     | CustomValueObjectImpl    | GCycleCountImpl.java               |
