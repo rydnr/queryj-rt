@@ -160,7 +160,10 @@ public class ResultDecoratorHelper
                     typeManager.getImport(
                         typeManager.getJavaType(property.getType().getValue()));
 
-                if (   (importType != null)
+                if (importType != null)
+                {
+                    @NotNull final type = new De
+                }
                     && (!result.contains())
                 {
                     result.add(new DecoratedString(importType));
