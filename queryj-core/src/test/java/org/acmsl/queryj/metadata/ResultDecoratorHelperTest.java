@@ -170,7 +170,7 @@ public class ResultDecoratorHelperTest
 
         @NotNull final AbstractResultDecorator result = setupResultDecorator(properties);
 
-        Assert.assertTrue(result.getPropertyTypes().size())
+        Assert.assertEquals(3, result.getPropertyTypes().size());
     }
     /**
      * Sets up an {@link AbstractResultDecorator} instance, for testing purposes.
