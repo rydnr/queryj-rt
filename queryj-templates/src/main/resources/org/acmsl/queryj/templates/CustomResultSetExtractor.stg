@@ -148,7 +148,7 @@ protected <result.id.voName> extractData(
     throws  SQLException,
             DataAccessException
 {
-    return extractData(resultSet, listener, <result.id.voName>ValueObjectFactory.getInstance());
+    return extractData(resultSet, listener, <result.id.voName>Factory.getInstance());
 }
 
 /**
