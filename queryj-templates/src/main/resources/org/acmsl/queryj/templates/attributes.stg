@@ -221,7 +221,8 @@ if(!attr.clob)><
     preparedStatement.setNull(index++, Types.<attr.constantName>);
 }
 else
-{<
+{
+    <attribute_preparedstatement_setter_call(attr=attr, C=C)>
     if(attr.date)>
     preparedStatement.setTimestamp(index++, <attribute_to_primitive(attribute=attr)>);<
     else>
