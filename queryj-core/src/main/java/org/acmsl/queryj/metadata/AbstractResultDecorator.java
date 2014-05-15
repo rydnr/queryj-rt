@@ -781,7 +781,7 @@ public abstract class AbstractResultDecorator
      * @return such information.
      */
     @NotNull
-    public DecoratedString getPackage()
+    protected DecoratedString getPackage()
     {
         return getPackage(getClassValue(), StringUtils.getInstance());
     }
