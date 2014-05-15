@@ -66,7 +66,7 @@ Feature: Classes associated to custom result <result.id> compile
     Then the generated custom result-specific \<output> file compiles successfully
 
   Examples:
-    | template                 | output                             |
+    | template                 | output |
     | CustomValueObjectFactory | <result.id.voName>Factory.java            |
     | CustomValueObject        | <result.id.voName>.java                   |
     | CustomBaseValueObject    | Abstract<result.id.voName>.java           |
