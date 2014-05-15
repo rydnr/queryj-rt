@@ -312,7 +312,7 @@ attribute_hashCode(attribute) ::= <<
 if(attribute.primitive)>
 final int <attribute.name.uncapitalized>HashCode = ("" + this.m__<attribute.name.capitalized>).hashCode();<
 else><
-<if(attribute.allowsNull)>final int <attribute.name.uncapitalized>HashCode;
+  if(attribute.allowsNull)>final int <attribute.name.uncapitalized>HashCode;
 if (this.m__<attribute.name.capitalized> == null)
 {
     <attribute.name.uncapitalized>HashCode = 0;
