@@ -284,7 +284,7 @@ attribute_specification(attr) ::= <<
  Prints the value of the attribute, optionally escaping it.
  @param attr the attribute.
 !>
-<if(attr.string)>"<attr.value>"<else><if(attr.value)><attr.value><else>null<endif><endif>
+<if(attr.value)><if(attr.string)>"<attr.value>"<else><attr.value><else>null<endif><endif>
 >>
 
 find_constant_by_pk(primaryKey, table, C) ::= <<
