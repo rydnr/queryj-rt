@@ -112,7 +112,7 @@ project_imports(basePackageName, voSubpackageName, table) ::= <<
  Generates the project imports.
  @param basePackageName the base package name.
  @param voSubpackageName the value-object subpackage name.
- @param voName the value-object name.
+ @param table the table.
 !>
 /*
  * Importing project classes.
