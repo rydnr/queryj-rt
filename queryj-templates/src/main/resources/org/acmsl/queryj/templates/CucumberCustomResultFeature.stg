@@ -71,7 +71,7 @@ Feature: Classes associated to custom result <result.id> compile
     | CustomValueObject        | <result.id.voName>GCycleCount.java                   |
     | CustomBaseValueObject    | <result.id.voName>AbstractGCycleCount.java           |
     | CustomValueObjectImpl    | <result.id.voName>GCycleCountImpl.java               |
-    | CustomResultSetExtractor | GCycleCountResultSetExtractor.java |
+    | CustomResultSetExtractor | <result.id.voName>GCycleCountResultSetExtractor.java |
 
     Given the following tables:
     |    table     | parent table | decorated | relationship |   static    |
