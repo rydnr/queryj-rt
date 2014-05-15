@@ -123,7 +123,7 @@ protected final void immutableSet<property.id.capitalized>(<if(!property.strictl
 }
 
 /**
- * Specifies the \<i><property.id.voName>\</i> value.
+ * Specifies the \<i><property.id>\</i> value.
  * @param value such information.
  */
 @SuppressWarnings("unused")
