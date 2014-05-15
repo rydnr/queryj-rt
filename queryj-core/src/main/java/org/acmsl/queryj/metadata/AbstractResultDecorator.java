@@ -793,7 +793,7 @@ public abstract class AbstractResultDecorator
         }
         else
         {
-            result = new DecoratedString(stringUtils.extractPackageName(classValue.getValue()));
+            result = new DecoratedString(stringUtils.extractClassName(classValue.getValue()));
         }
 
         return result;
