@@ -149,7 +149,7 @@ property_resultset_retrieval(property, C) ::= <<
 !>
 <
 if(!property.clob)><
-  ig
+  if(
   >resultSet.get<property.objectType>("<property.name>")<else><clob_property_resultset_retrieval(property=attr, C=C)><endif>
 >>
 
