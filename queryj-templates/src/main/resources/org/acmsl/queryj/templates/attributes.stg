@@ -296,7 +296,8 @@ attribute_equals(attribute) ::= <<
  Generates the contribution of each attribute to the equals method.
  @param attribute the attribute.
 !>
-<if(attribute.primitive)>
+<
+if(attribute.primitive)>
 final boolean <attribute.name.uncapitalized>Match = (this.m__<attribute.name.capitalized> == candidate.get<attribute.name.capitalized>());
 <else><if(attribute.allowsNull)>
 final boolean <attribute.name.uncapitalized>Match =
