@@ -14,4 +14,4 @@ output: Java;
 filename builder : <result.simpleClassValue>Factory.java;
 
 // The package.
-package: <packageName>.vo.core;
+package: <result.>.vo.core;
