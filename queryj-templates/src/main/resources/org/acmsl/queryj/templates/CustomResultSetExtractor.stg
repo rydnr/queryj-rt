@@ -72,7 +72,7 @@ sourceImpl(result, C) ::= <<
 /*
  * Importing <C.repository.capitalized> classes.
  */
-import <result.simpleClassValue>;
+import <result.classValue>;
 import <C.project_package>.<typeInitMap.voSubpackageName>.core.<result.simpleClassValue>Factory;
 
 /*
