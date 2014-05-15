@@ -184,7 +184,7 @@ public class <table.name.voName>PkStatementSetter
         immutableSetUpdateOperation(updateOperation);
     }
 
-     /**
+    /**
      * Creates a {@code <table.name.voName>PkStatementSetter}
      * instance.
      <table.primaryKey:{ a |<attribute_javadoc(attr=a)>}; separator="\n">
