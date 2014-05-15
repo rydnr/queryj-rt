@@ -154,6 +154,8 @@ public class AbstractResultDecoratorTest
 
     /**
      * Sets up an {@link AbstractResultDecorator} instance, for testing purposes.
+     * @param id the result id.
+     * @param classValue the class value.
      * @param properties the {@link org.acmsl.queryj.customsql.Property properties}.
      * @return the decorator.
      */
