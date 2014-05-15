@@ -1,0 +1,159 @@
+//;-*- mode: antlr -*-
+//
+//                      QueryJ Template Packaging
+//
+//  Copyright (C) 2002-today  ACM-SL
+//                           chous@acm-sl.org
+//
+//  This library is free software; you can redistribute it and/or
+//  modify it under the terms of the GNU General Public
+//  License as published by the Free Software Foundation; either
+//  version 2 of the License, or any later version.
+//
+//  This library is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+//  General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public
+//  License along with this library; if not, write to the Free Software
+//  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//
+//  Thanks to ACM S.L. for distributing this library under the GPL license.
+//  Contact info: jose.sanleandro@acm-sl.com
+//  Postal Address: c/Playa de Lagoa, 1
+//                  Urb. Valdecabanas
+//                  Boadilla del monte
+//                  28660 Madrid
+//                  Spain
+//
+//***************************************************************************
+//
+// Filename: CucumberTableFeature.stg
+//
+// Author: Jose San Leandro Armendariz
+//
+// Description: Defines the rules to generate [Table].feature
+//              Cucumber tests
+//
+group CucumberTableFeature;
+
+source(C) ::= <<
+<!
+  Generates CucumberTable.feature files.
+!>
+<source_impl(table=C.table, engine=C.engine, C=C)>
+>>
+
+source_impl(table, engine, C) ::= <<
+<!
+  Generates CucumberTable.feature files.
+!>
+Feature: <table.name> code compiles
+
+  Scenario Outline: <table.name>-specific templates compile
+
+    Given the following tables:
+    |    table     | parent table | decorated | relationship |   static    |
+    | <table.name> | <table.parentTableName> | <table.voDecorated> | <table.relationship> | <if(table.static)><table.staticAttribute.name><endif> |
+
+    And the following columns:
+    |     table    |         column        | type      | pk    | allows null | readonly |   sequence    | keyword | boolean | length | precision |
+    <table.primaryKey:{ attr | <attribute(attr=attr, table=table, pk=true)>}; separator="\n">
+    <table.own.minus.primaryKey:{ attr | <attribute(attr=attr, table=table, pk=false)>}; separator="\n">
+
+<if(table.foreignKeys)>
+    And the following foreign keys:
+    | source table | source columns | target table | allows null |
+    <table.foreignKeys:{ fk | <foreign_key(fk=fk)>}; separator="\n">
+<endif>
+
+<if(table.customSelects)>
+    And the following queries:
+      |       id      |     name      |     dao      |  type  | matches  |                        value                           | validate |
+      <table.customSelects:{ s | <query(select=s)>}; separator="\n">
+
+    And the following query parameters:
+      |            id            |     sql       | index |  type  |     name    | validation-value |
+      <table.customSelects:{ s |<query_parameters(select=s)>}; separator="\n">
+<endif>
+
+<if(table.static)>
+<if(table.staticContent)>
+    And the following contents:
+      |    table     |         row          |
+      <table.staticContent:{ r | <static_row(row=r, table=table)>}; separator="\n">
+<endif>
+<endif>
+
+    When I generate with per-table \<template>.stg for <engine.name>
+
+    Then the generated per-table \<output> file compiles successfully
+
+    Examples:
+      | template | output |
+      | ResultSetExtractor | <table.name.singular.camelCase>ResultSetExtractor.java |
+      | ValueObject | <table.name.singular.camelCase>.java                   |
+      | BaseValueObject | Abstract<table.name.singular.camelCase>.java           |
+      | ValueObjectImpl | <table.name.singular.camelCase>Impl.java               |
+      | ValueObjectFactory | <table.name.singular.camelCase>Factory.java            |
+      | DAOFactoryHelper | <table.name.singular.camelCase>DAOFactoryHelper.java |
+      | ValueObjectFactory | <table.name.singular.camelCase>Factory.java |
+      | DAOFactory | <engine.name.capitalized><table.name.singular.camelCase>DAOFactory.java |
+      | BaseDAOFactory | <table.name.singular.camelCase>DAOFactory.java |
+      | BaseDAO | <table.name.singular.camelCase>DAO.java |
+      | BaseResultSetExtractor | <table.name.singular.camelCase>ResultSetExtractor.java |
+      | DAO | <engine.name.capitalized><table.name.singular.camelCase>DAO.java |
+>>
+
+attribute(attr, table, pk) ::= <<
+<!
+ Writes the row describing an attribute.
+ @param attr the attribute.
+ @param table the table.
+ @param pk whether if it's part of the primary key.
+!>
+| <table.name> | <attr.name> | <attr.type> | <pk> | <attr.nullable> | <attr.readOnly> | <attr.sequence> | <attr.keyword> | <attr.boolean> | <attr.length> | <attr.precision> |
+>>
+
+foreign_key(fk) ::= <<
+<!
+ Writes a row defining a foreign key.
+ @param fk the foreign key.
+!>
+| <fk.source.name> | <fk.attributes:{ attr | <attr.name>}; separator=","> | <fk.targetTableName> | <fk.nullable> |
+>>
+
+query(select) ::= <<
+<!
+ Writes the row describing given query.
+ @param select the custom query.
+!>
+| <select.id> | <select.name> | <select.dao> | <select.type> | <select.cardinality.name> | <if(select.value)><select.value.singleLine><endif> | <select.validate> |
+>>
+
+query_parameters(select) ::= <<
+<!
+ Writes the rows describing all parameter for given query.
+ @param select the select.
+ !>
+<select.parameters:{ p |<query_parameter(parameter=p, select=select)>}; separator="\n">
+>>
+
+query_parameter(parameter, select) ::= <<
+<!
+ Writes a row describing a query parameter.
+ @param parameter the query parameter.
+ @param select the select.
+ !>
+| <parameter.id> | <select.id> | <parameter.index> | <parameter.type> | <parameter.name> | <parameter.validationValue> |
+>>
+
+static_row(row, table) ::= <<
+<!
+ Writes the row declaring static data.
+ @param row the row.
+ @param table the table.
+ !>
+| <table.name> | <row.attributes:{ a | <if(a.primitive)><a.value><else>"<a.value>"<endif>}; separator=","> |
+>>
