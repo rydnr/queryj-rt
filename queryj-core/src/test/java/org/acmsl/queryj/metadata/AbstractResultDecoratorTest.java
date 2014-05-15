@@ -40,6 +40,7 @@ package org.acmsl.queryj.metadata;
  */
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Property;
+import org.acmsl.queryj.customsql.PropertyElement;
 import org.acmsl.queryj.customsql.PropertyRefElement;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.ResultElement;
@@ -51,9 +52,12 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Assert;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -66,6 +70,35 @@ import java.util.List;
 public class AbstractResultDecoratorTest
 {
 
+    /**
+     * Checks getPropertyTypes() don't include duplicates.
+     */
+    @Test
+    public void getPropertyTypes_do_not_include_duplicates()
+    {
+        @NotNull final Property<String> property1 =
+            new PropertyElement<>("prop1", "propertyId", 1, "long", false);
+
+        @NotNull final Property<String> property2 =
+            new PropertyElement<>("prop2", "name", 2, "String", false);
+
+        @NotNull final Property<String> property3 =
+            new PropertyElement<>("prop3", "date", 3, "Date", true);
+
+        @NotNull final Property<String> property4 =
+            new PropertyElement<>("prop4", "registration", 4, "Date", false);
+
+        @NotNull final List<Property<String>> properties = new ArrayList<>(4);
+
+        properties.add(property1);
+        properties.add(property2);
+        properties.add(property3);
+        properties.add(property4);
+
+        @NotNull final AbstractResultDecorator result = AbstractResultDecoratorTest.setupResultDecorator(properties);
+
+        Assert.assertEquals(3, result.getPropertyTypes().size());
+    }
     /**
      * Sets up an {@link AbstractResultDecorator} instance, for testing purposes.
      * @param properties the {@link org.acmsl.queryj.customsql.Property properties}.
