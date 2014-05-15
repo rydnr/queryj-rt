@@ -513,8 +513,8 @@ public class PerCustomResultTemplatesTest
     @NotNull
     protected String resolvePackage(
         @NotNull final String packageTemplate,
-        @NotNull final Result<String> customResult,
-        @NotNull final Engine<String> engine,
+        @NotNull final Result\<String> customResult,
+        @NotNull final Engine\<String> engine,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
         @NotNull final DecoratorFactory decoratorFactory)
