@@ -53,7 +53,7 @@ Feature: G_TAX_PRODUCTS code compiles
       | ValueObjectImpl           | GTaxProductImpl.java               |
       | ValueObjectFactory        | GTaxProductFactory.java            |
       | AttributesStatementSetter | GTaxProductResultSetExtractor.java |
-      | PkStatementSetter         | GTaxProductPk
+      | PkStatementSetter         | GTaxProductPkS
 #      | DAOFactoryHelper | GTaxProductDAOFactoryHelper.java |
 #      | ValueObjectFactory | GTaxProductFactory.java |
 #      | DAOFactory | OracleGTaxProductDAOFactory.java |
