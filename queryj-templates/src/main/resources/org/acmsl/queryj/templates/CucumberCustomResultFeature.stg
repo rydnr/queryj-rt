@@ -49,7 +49,7 @@ source_impl(result, engine, C) ::= <<
 <!
   Generates CucumberResult.feature files.
 !>
-Feature: <table.name> code compiles
+Feature: <result.id> code compiles
 
   Scenario Outline: <table.name>-specific templates compile
 
