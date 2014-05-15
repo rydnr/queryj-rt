@@ -522,6 +522,7 @@ public class PerCustomResultTemplatesTest
         @NotNull final String result;
 
         @NotNull final ST template = new ST(packageTemplate);
+
         template.add(Literals.PACKAGE_NAME, new DecoratedString(BASE_PACKAGE_NAME));
         template.add(
             Literals.RESULT,
