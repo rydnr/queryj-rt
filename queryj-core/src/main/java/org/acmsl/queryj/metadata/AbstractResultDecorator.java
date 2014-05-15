@@ -743,7 +743,7 @@ public abstract class AbstractResultDecorator
     @NotNull
     protected String getSimpleClassValue(@NotNull final String classValue)
     {
-        return StringUtils.getInstance().retrieveLastWord()
+        return StringUtils.getInstance().retrieveLastWord(classValue, ".")
     }
 
     /**
