@@ -227,6 +227,7 @@ else
     else>
     preparedStatement.set<attr.objectType>(index++, <attribute_to_primitive(attribute=attr)>);<
     endif>
+
 }<else>
 preparedStatement.set<attr.objectType>(index++, <attr.name.uncapitalized>);<endif
 ><else><clob_preparedstatement_specification(attribute=attr, C=C)><endif>
