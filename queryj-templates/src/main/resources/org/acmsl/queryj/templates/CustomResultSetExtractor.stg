@@ -238,8 +238,8 @@ nullable_property_resultset_retrieval(property, C) ::= <<
 <
 if(property.nullable)
   >(<property.id.uncapitalized> == null) ? null : <generic_nullable_property_resultset_retrieval(property=property, C=C)><
-else><
-  >property_resultset_retrieval(property=property, C=C)><
+else
+  ><property_resultset_retrieval(property=property, C=C)><
 endif>
 >>
 
