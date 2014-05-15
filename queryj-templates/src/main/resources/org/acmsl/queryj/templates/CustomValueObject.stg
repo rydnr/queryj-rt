@@ -103,7 +103,7 @@ interface(result, repository, C) ::= <<
     ]:{line |<line>}; separator="\n * ">
 <class_common_javadoc(template="org/acmsl/queryj/templates/CustomValueObject.stg", C=C)>
  */
-public interface <result.classValue>
+public interface <result.simpleClassValue>
     extends Serializable
 {
     <result.properties:{ p | <property_getter_interface(property=p, C=C)>}; separator="\n\n">
