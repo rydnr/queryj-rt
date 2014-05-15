@@ -221,7 +221,7 @@ if(!attr.clob)><
     preparedStatement.setNull(index++, Types.<attr.constantName>);
 }
 else
-{
+{<
 
     preparedStatement.set<attr.objectType>(index++, <attribute_to_primitive(attribute=attr)>);
 }<else>
