@@ -743,7 +743,7 @@ public abstract class AbstractResultDecorator
      */
     @NotNull
     protected DecoratedString getSimpleClassValue(
-        @Nullable final String classValue, @NotNull final StringUtils stringUtils)
+        @Nullable final DecoratedString classValue, @NotNull final StringUtils stringUtils)
     {
         @NotNull final DecoratedString result;
 
