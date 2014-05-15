@@ -116,7 +116,7 @@ project_imports(
  @param voName the value-object name.
 !>
 /*
- * Importing project classes.
+ * Importing <C.repository. classes.
  */
 import <basePackageName>.<voSubpackageName>.<voName>;
 >>
