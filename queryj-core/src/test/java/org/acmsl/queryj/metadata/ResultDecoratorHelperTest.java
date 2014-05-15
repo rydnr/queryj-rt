@@ -172,6 +172,7 @@ public class ResultDecoratorHelperTest
 
         Assert.assertEquals(3, result.getPropertyTypes().size());
     }
+
     /**
      * Sets up an {@link AbstractResultDecorator} instance, for testing purposes.
      * @param properties the {@link Property properties}.
