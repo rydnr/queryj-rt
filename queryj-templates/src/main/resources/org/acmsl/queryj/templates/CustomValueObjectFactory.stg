@@ -72,7 +72,7 @@ sourceFactory(result, C) ::= <<
 /*
  * Importing <C.repository.capitalized> classes.
  */
-import <C.project_package>.<typeInitMap.voSubpackageName>.<result.simpleClassValue>;
+import <result.simpleClassValue>;
 import <C.project_package>.<typeInitMap.voSubpackageName>.impl.<result.simpleClassValue>Impl;
 <notnull_import_maybe_nullable(container=result, C=C)>
 
