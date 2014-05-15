@@ -248,8 +248,8 @@ generic_nullable_property_resultset_retrieval(property, C) ::= <<
 if(p.date)
   ><nullable_date_property_resultset_retrieval(property=property, C=C)><
 else><
-  if(p.primitive)><
-    p.objectType>.valueOf(<p.id.uncapitalized>)<
+  if(p.primitive)
+   ><p.objectType>.valueOf(<p.id.uncapitalized>)<
   else><
     <p.id.uncapitalized>)<
 endif>
