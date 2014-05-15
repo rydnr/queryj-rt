@@ -300,7 +300,7 @@ public abstract class AbstractPropertyDecorator
     @SuppressWarnings("unused")
     public boolean isBoolean()
     {
-        return isPrimitive(getType().getValue(), getMetadataTypeManager());
+        return isBoolean(getType());
     }
 
     /**
