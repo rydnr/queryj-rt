@@ -151,7 +151,8 @@ property_resultset_retrieval(property, C) ::= <<
 if(property.clob)><
   clob_property_resultset_retrieval(property=attr, C=C)><
 else><
-  if(property.boolean)>
+  if(property.boolean)
+  >
   resultSet.get<property.objectType>("<property.name>")<endif>
 >>
 
