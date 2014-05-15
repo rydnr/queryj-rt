@@ -225,7 +225,7 @@ else
     <attribute_preparedstatement_setter_call(attr=attr, C=C)>
 }<
   else
-    ><attribute_preparedstatement_setter_call(attr=attr, C=C)><
+   ><attribute_preparedstatement_setter_call(attr=attr, C=C)><
   endif><
 else
  ><clob_preparedstatement_specification(attribute=attr, C=C)><endif>
