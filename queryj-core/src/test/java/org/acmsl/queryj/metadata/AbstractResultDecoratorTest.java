@@ -1,5 +1,5 @@
 /*
-                        queryj
+                        QueryJ Core
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for AbstractResultDecorator.
  *
  * Date: 2014/05/15
  * Time: 10:59
@@ -57,7 +57,7 @@ import org.junit.runners.JUnit4;
 import java.util.List;
 
 /**
- *
+ * Tests for {@link AbstractResultDecorator}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/05/15 10:59
