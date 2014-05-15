@@ -712,7 +712,8 @@ public abstract class AbstractResultDecorator
 
         for (@Nullable final Property<DecoratedString> property : properties)
         {
-            if (property != null)
+            if (   (property != null)
+                && (!property.isNullable()))
             {
 
             }
