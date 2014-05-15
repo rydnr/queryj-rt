@@ -782,7 +782,7 @@ public abstract class AbstractResultDecorator
      */
     @NotNull
     protected DecoratedString getPackage(
-        @NotNull final DecoratedString classValue, @NotNull final StringUtils stringUtils)
+        @Nullable final DecoratedString classValue, @NotNull final StringUtils stringUtils)
     {
         @NotNull final DecoratedString result;
 
