@@ -47,7 +47,7 @@ source(C) ::= <<
 
 source_impl(result, engine, C) ::= <<
 <!
-  Generates CucumberTable.feature files.
+  Generates CucumberResult.feature files.
 !>
 Feature: <table.name> code compiles
 
