@@ -718,7 +718,7 @@ public abstract class AbstractResultDecorator
     }
 
     /**
-     * Retrieves the hashcode of given instance.
+     * Retrieves the hashCode of given instance.
      * @param result the decoreated result.
      * @return such value.
      */
