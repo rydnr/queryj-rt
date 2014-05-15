@@ -203,9 +203,9 @@ protected <result.id.voName> extractData(
             factory.create<result.id.voName>(
                 <result.properties:{p | <property_resultset_retrieval(property=p, C=C)>}; separator=",\n">);
 
-        if  (daoListener != null)
+        if  (listener != null)
         {
-            daoListener.resultSetClosed(this);
+            listener.resultSetClosed(this);
         }
     }
     else
