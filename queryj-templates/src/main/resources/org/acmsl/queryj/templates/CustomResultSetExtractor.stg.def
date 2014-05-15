@@ -14,6 +14,6 @@ output: Java;
 filename builder : <result.id.normalized.camelCase>ResultSetExtractor.java;
 
 // The package.
-package: <packageName>.dao.<result.id.voName.lowercased>;
+package: <packageName>.dao.<result.id.normalized.lowercased>;
 
 package: <packageName>.dao.<tableName.normalized.lowercased>;
