@@ -59,7 +59,7 @@ Feature: Classes associated to custom result <result.id> compile
 
     And the following custom result properties:
       | name       | type | nullable |
-      <result.properties:{ p | <cucumber_property_definition(property=p)>}; separator="\n">| g_cycle_id | int  | false    |
+      <result.properties:{ p | <cucumber_property_definition(property=p)>}; separator="\n">
       | count      | long | false    |
 
     When I use the custom result template <template> for Oracle
