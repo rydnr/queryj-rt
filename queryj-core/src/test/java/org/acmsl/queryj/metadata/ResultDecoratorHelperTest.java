@@ -142,7 +142,7 @@ public class ResultDecoratorHelperTest
     }
 
     /**
-     * Checks
+     * Checks getPropertyTypes() don't include duplicates.
      */
     /**
      * Sets up an {@link AbstractResultDecorator} instance, for testing purposes.
