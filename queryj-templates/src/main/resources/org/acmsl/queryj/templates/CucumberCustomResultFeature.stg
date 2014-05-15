@@ -131,7 +131,7 @@ property_cucumber_definition(property) ::= <<
  Writes the row describing a property.
  @param property the property.
 !>
-| <property.id> | <attr.name> | <attr.type> | <pk> | <attr.nullable> | <attr.readOnly> | <attr.sequence> | <attr.keyword> | <attr.boolean> | <attr.length> | <attr.precision> |
+| <property.id> | <property.type> | <attr.type> | <pk> | <attr.nullable> | <attr.readOnly> | <attr.sequence> | <attr.keyword> | <attr.boolean> | <attr.length> | <attr.precision> |
 >>
 
 foreign_key(fk) ::= <<
