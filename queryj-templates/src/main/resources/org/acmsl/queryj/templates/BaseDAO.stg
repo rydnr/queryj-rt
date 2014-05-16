@@ -293,7 +293,8 @@ if(attr.value)><
           if(attr.nullable)
            >Float.valueOf(<attr.value>f)<
           else
-         ><attr.value>f<
+            ><attr.value>f<
+          endif><
         else><
           if(attr.decimal)
             >new BigDecimal("<attr.value>")<
