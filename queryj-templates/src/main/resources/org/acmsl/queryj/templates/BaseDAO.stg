@@ -279,7 +279,7 @@ attribute_specification(attr) ::= <<
  @param attr the attribute.
 !>
 <! <if(attr.value)><if(attr.string)>"<attr.value>"<else><attr.value><endif><else>null<endif> !>
-<if(attr.string)>"<attr<attribute_to_primitive(attribute=attr)>
+<if(attr.string)>"<attr.value>"<else><attribute_to_primitive(attribute=attr)><endif>
 >>
 
 find_constant_by_pk(primaryKey, table, C) ::= <<
