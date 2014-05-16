@@ -278,8 +278,9 @@ attribute_specification(attr) ::= <<
  Prints the value of the attribute, optionally escaping it.
  @param attr the attribute.
 !>
-<! <if(attr.value)><if(attr.string)>"<attr.value>"<else><attr.value><endif><else>null<endif> !>
-<if(attr.string)>"<attr.value>"<else><attribute_to_primitive(attribute=attr)><endif>
+<
+if(attr.value)><if(attr.string)>"<attr.value>"<else><attr.value><endif><else>null<endif> !>
+
 >>
 
 find_constant_by_pk(primaryKey, table, C) ::= <<
