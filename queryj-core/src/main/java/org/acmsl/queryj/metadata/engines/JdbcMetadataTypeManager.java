@@ -1814,13 +1814,13 @@ public class JdbcMetadataTypeManager
      * @return {@code true} in such case.
      */
     @Override
-    public boolean isInt(final int dataType)
+    public boolean isLong(final int dataType)
     {
         final boolean result;
 
         switch (dataType)
         {
-            case Types.INTEGER:
+            case Types.BIGINT:
                 result = true;
                 break;
             default:
