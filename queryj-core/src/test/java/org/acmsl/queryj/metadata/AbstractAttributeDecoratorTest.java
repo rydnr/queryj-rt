@@ -322,6 +322,6 @@ public class AbstractAttributeDecoratorTest
         @NotNull final AbstractAttributeDecorator instance =
             new AbstractAttributeDecorator(attribute, metadataManager) {};
 
-        Assert.assertTrue(instance.isStrictlyPrimitive());
+        Assert.assertFalse(instance.isStrictlyPrimitive());
     }
 }
