@@ -286,11 +286,11 @@ if(attr.value)><
     if(attr.date)
      >new SimpleDateFormat("dd/mm/yyyy").parse("<attr.value>")<
     else><
-      if(attr.float)
+      if(attr.double)
+       ><attr.value>d<
+       if(attr.float)
        ><attr.value>f<
       else><
-        if(attr.double)
-         ><attr.value>d<
         else><
           if(attr.decimal)
             >new BigDecimal("<attr.value>")<
