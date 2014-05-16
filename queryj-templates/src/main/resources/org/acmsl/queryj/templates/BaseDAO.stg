@@ -292,12 +292,12 @@ if(attr.value)><
     else><
       if(attr.double)
        >d<
-
-      if(attr.numeric)
-        >new BigDecimal("<attr.value>")<
-      else
-        ><attr.value><
-      endif><
+      else><
+        if(attr.numeric)
+          >new BigDecimal("<attr.value>")<
+        else
+          ><attr.value><
+        endif><
       endif><
     endif><
   endif><
