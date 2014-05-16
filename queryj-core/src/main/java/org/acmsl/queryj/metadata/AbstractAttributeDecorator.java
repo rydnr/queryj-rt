@@ -979,7 +979,7 @@ public abstract class AbstractAttributeDecorator
      * @param typeId the type id.
      * @return {@code true} in such case.
      */
-    protected boolean isDecimal(@NotNull final String type)
+    protected boolean isDecimal(final int typeId, @NotNull final MetadataTypeManager metadataTypeManager)
     {
         return type.equals("BigDecimal") || type.equals("java.math.BigDecimal");
     }
