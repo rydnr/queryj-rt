@@ -935,6 +935,15 @@ public abstract class AbstractAttributeDecorator
     }
 
     /**
+     * Checks whether this attribute is a float.
+     * @return {@code true} in such case.
+     */
+    public boolean isFloat()
+    {
+        return isFloat(getType());
+    }
+
+    /**
      * {@inheritDoc}
      */
     @NotNull
