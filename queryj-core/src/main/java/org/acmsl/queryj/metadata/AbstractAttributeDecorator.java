@@ -1015,6 +1015,15 @@ public abstract class AbstractAttributeDecorator
     }
 
     /**
+     * Checks whether this attribute is long or not.
+     * @return {@code true} in such case.
+     */
+    public boolean isLong()
+    {
+        return isLong(getTypeId(), getMetadataTypeManager());
+    }
+
+    /**
      * {@inheritDoc}
      */
     @NotNull
