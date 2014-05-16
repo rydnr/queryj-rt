@@ -490,7 +490,7 @@ public class AbstractAttributeDecoratorTest
     }
 
     /**
-     * Checks whether isInt() returns true for longs.
+     * Checks whether isLong() returns true for longs.
      */
     @Test
     public void isLong_returns_true_for_longs()
