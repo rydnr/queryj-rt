@@ -1750,8 +1750,7 @@ public class JdbcMetadataTypeManager
 
         switch (dataType)
         {
-            case Types.FLOAT:
-            case Types.REAL:
+            case Types.DOUBLE:
                 result = true;
                 break;
             default:
