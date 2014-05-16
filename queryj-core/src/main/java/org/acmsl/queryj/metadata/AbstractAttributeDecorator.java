@@ -971,7 +971,7 @@ public abstract class AbstractAttributeDecorator
      */
     public boolean isDecimal()
     {
-        return isDecimal(getType().getValue());
+        return isDecimal(getTypeId(), getMetadataTypeManager());
     }
 
     /**
