@@ -292,7 +292,7 @@ if(attr.value)><
         if(attr.double)
          ><attr.value>d<
         else><
-          if(attr.numeric)
+          if(attr.decimal)
             >new BigDecimal("<attr.value>")<
           else
             ><attr.value><
