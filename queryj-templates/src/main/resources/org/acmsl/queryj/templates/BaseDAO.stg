@@ -309,7 +309,8 @@ if(attr.value)><
               else><
                if(attr.int)><
                  if(attr.nullable)
-                  >Integer.valueOf(<attr.value>)
+                  >Integer.valueOf(<attr.value>)<
+                 else
             ><attr.value><
           endif><
         endif><
