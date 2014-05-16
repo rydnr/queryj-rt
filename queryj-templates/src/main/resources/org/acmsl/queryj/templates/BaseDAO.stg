@@ -294,6 +294,7 @@ if(attr.value)><
       if(attr.double)
        >d<
       else><
+        if(attr.numeric)><
 
   endif><
 else
