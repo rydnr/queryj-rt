@@ -1011,7 +1011,7 @@ public abstract class AbstractAttributeDecorator
      */
     public boolean isLong()
     {
-        return false;
+        return isLong(getTypeId(), getMetadataTypeManager());
     }
 
     /**
