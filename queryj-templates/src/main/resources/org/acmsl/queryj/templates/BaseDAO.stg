@@ -295,7 +295,7 @@ if(attr.value)><
        >d<
       else><
         if(attr.numeric)><
-
+          >new BigDecimal
   endif><
 else
  >null<
