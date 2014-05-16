@@ -1807,7 +1807,6 @@ public class JdbcMetadataTypeManager
         return result;
     }
 
-
     /**
      * Checks whether given data type is long or not.
      * @param dataType the data type.
