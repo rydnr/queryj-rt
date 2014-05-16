@@ -408,7 +408,7 @@ public class AbstractAttributeDecoratorTest
     }
 
     /**
-     * Checks whether isDouble() returns true for doubles.
+     * Checks whether isDouble() returns true for BigDecimals.
      */
     @Test
     public void isDouble_returns_true_for_doubles()
