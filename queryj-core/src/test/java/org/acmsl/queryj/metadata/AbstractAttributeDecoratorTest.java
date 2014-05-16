@@ -283,5 +283,31 @@ public class AbstractAttributeDecoratorTest
                 attribute, metadataManager) {};
 
         Assert.assertTrue(instance.isFloat());
+
+        @NotNull final Attribute<String> attribute =
+            new AttributeValueObject(
+                "name",
+                Types.DOUBLE,
+                "double",
+                "tableName",
+                "comment",
+                1,
+                10, // length
+                1, // precision
+                null, // keyword
+                null, // retrieval query
+                null, // sequence
+                false, // nullable
+                null, // value
+                false, // read-only
+                false, // is-bool
+                null, // boolean-true
+                null, // boolean-false
+                null); // boolean-null
+
+        @NotNull final AbstractAttributeDecorator instance =
+            new AbstractAttributeDecorator(attribute, metadataManager) {};
+
+        Assert.assertTrue(instance.isStrictlyPrimitive());
     }
 }
