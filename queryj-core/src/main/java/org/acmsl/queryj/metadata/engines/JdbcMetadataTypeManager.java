@@ -1715,7 +1715,7 @@ public class JdbcMetadataTypeManager
     }
 
     /**
-     * Checks whether given data type is numeric or not.
+     * Checks whether given data type is float or not.
      * @param dataType the data type.
      * @return <code>true</code> in such case.
      */
