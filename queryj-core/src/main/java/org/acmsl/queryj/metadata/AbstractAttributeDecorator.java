@@ -941,7 +941,7 @@ public abstract class AbstractAttributeDecorator
      */
     protected boolean isFloat(final int typeId, @NotNull final MetadataTypeManager metadataTypeManager)
     {
-        return metadataTypeManager.isF
+        return metadataTypeManager.isFloat(typeId);
     }
 
     /**
