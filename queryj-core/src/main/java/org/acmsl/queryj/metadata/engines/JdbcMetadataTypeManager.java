@@ -1809,7 +1809,7 @@ public class JdbcMetadataTypeManager
 
 
     /**
-     * Checks whether given data type is integer or not.
+     * Checks whether given data type is long or not.
      * @param dataType the data type.
      * @return {@code true} in such case.
      */
