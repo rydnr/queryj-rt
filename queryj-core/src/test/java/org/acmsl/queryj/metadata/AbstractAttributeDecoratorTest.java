@@ -298,7 +298,6 @@ public class AbstractAttributeDecoratorTest
 
         EasyMock.replay(metadataManager);
 
-
         @NotNull final Attribute<String> attribute =
             new AttributeValueObject(
                 "name",
