@@ -288,6 +288,8 @@ if(attr.value)><
     else
      ><attr.value><
     endif><
+    if(attr.float)
+     >
   endif><
 else
  >null<
