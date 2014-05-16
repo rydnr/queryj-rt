@@ -959,7 +959,7 @@ public abstract class AbstractAttributeDecorator
      */
     protected boolean isDouble(@NotNull final String type)
     {
-        return isDouble(getType().getValue());
+        return type.equalsIgnoreCase("double");
     }
 
     /**
