@@ -282,7 +282,8 @@ attribute_specification(attr) ::= <<
 if(attr.value)><
   if(attr.string)
    >"<attr.value>"<
-  else><attr.value><endif><else>null<endif> !>
+  else><
+    if(attr.float)><attr.value><endif><else>null<endif> !>
 
 >>
 
