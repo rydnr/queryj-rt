@@ -247,7 +247,7 @@ public class AbstractAttributeDecoratorTest
      * Checks whether isFloat() returns true for floats.
      */
     @Test
-    public void isFloat_works_for_floats()
+    public void isFloat_returns_true_for_floats()
     {
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
 
