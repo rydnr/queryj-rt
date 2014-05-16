@@ -450,7 +450,7 @@ public class AbstractAttributeDecoratorTest
 
 
     /**
-     * Checks whether isDecimal() returns true for integers.
+     * Checks whether isInt() returns true for integers.
      */
     @Test
     public void isInt_returns_true_for_integers()
