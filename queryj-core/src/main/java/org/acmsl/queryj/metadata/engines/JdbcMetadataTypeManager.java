@@ -1762,7 +1762,7 @@ public class JdbcMetadataTypeManager
     }
 
     /**
-     * Checks whether given data type is double or not.
+     * Checks whether given data type is decimal or not.
      * @param dataType the data type.
      * @return {@code true} in such case.
      */
