@@ -506,7 +506,7 @@ public class AbstractAttributeDecoratorTest
         @NotNull final Attribute<String> attribute =
             new AttributeValueObject(
                 "name",
-                Types.INTEGER,
+                Types.BIGINT,
                 "int",
                 "tableName",
                 "comment",
