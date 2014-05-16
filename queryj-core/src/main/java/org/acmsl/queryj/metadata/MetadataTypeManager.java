@@ -491,7 +491,6 @@ public interface MetadataTypeManager
      */
     boolean isInt(final int typeId);
 
-
     /**
      * Checks whether given id matches a long type.
      * @param typeId the type id.
