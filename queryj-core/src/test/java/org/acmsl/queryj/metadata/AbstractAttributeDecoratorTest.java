@@ -453,7 +453,7 @@ public class AbstractAttributeDecoratorTest
      * Checks whether isDecimal() returns true for BigDecimals.
      */
     @Test
-    public void isDecimal_returns_true_for_BigDecimals()
+    public void isInt_returns_true_for_BigDecimals()
     {
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
 
