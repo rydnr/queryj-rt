@@ -1785,6 +1785,29 @@ public class JdbcMetadataTypeManager
     }
 
     /**
+     * Checks whether given data type is double or not.
+     * @param dataType the data type.
+     * @return {@code true} in such case.
+     */
+    @Override
+    public boolean isDouble(final int dataType)
+    {
+        final boolean result;
+
+        switch (dataType)
+        {
+            case Types.DOUBLE:
+                result = true;
+                break;
+            default:
+                result = false;
+                break;
+        }
+
+        return result;
+    }
+
+    /**
      * Checks whether given type belongs to <code>java.lang</code> package or not.
      * @param type the type.
      * @return <code>true</code> in such case.
