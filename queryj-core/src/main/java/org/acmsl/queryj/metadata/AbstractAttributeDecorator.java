@@ -953,7 +953,7 @@ public abstract class AbstractAttributeDecorator
      * {@inheritDoc}
      */
     @Override
-    public boolean equals(final Object obj)
+    public boolean equals(@Nullable final Object obj)
     {
         if (obj == null)
         {
