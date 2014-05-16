@@ -265,7 +265,7 @@ public class AbstractAttributeDecoratorTest
         @NotNull final Attribute<String> attribute =
             new AttributeValueObject(
                 "name",
-                Types.DOUBLE,
+                Types.FLOAT,
                 "double",
                 "tableName",
                 "comment",
