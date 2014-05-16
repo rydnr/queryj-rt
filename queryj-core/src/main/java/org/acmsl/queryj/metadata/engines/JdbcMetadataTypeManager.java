@@ -1715,6 +1715,38 @@ public class JdbcMetadataTypeManager
     }
 
     /**
+     * Checks whether given data type is numeric or not.
+     * @param dataType the data type.
+     * @return <code>true</code> in such case.
+     */
+    @Override
+    public boolean isNumeric(final int dataType)
+    {
+        final boolean result;
+
+        switch (dataType)
+        {
+            case Types.DECIMAL:
+            case Types.BIT:
+            case Types.TINYINT:
+            case Types.SMALLINT:
+            case Types.INTEGER:
+            case Types.BIGINT:
+            case Types.NUMERIC:
+            case Types.FLOAT:
+            case Types.REAL:
+            case Types.DOUBLE:
+                result = true;
+                break;
+            default:
+                result = false;
+                break;
+        }
+
+        return result;
+    }
+
+    /**
      * Checks whether given type belongs to <code>java.lang</code> package or not.
      * @param type the type.
      * @return <code>true</code> in such case.
