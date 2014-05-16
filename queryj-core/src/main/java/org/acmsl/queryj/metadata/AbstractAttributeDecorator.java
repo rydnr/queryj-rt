@@ -939,7 +939,7 @@ public abstract class AbstractAttributeDecorator
      * @param type the type.
      * @return {@code true} in such case.
      */
-    protected boolean isFloat(@NotNull final MetadataTypeManager metadataTypeManager)
+    protected boolean isFloat(final int typeId, @NotNull final MetadataTypeManager metadataTypeManager)
     {
         return type.equalsIgnoreCase("float");
     }
