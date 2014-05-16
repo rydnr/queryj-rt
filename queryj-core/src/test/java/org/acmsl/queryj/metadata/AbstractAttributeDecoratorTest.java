@@ -252,8 +252,7 @@ public class AbstractAttributeDecoratorTest
     @Test
     public void isFloat_works_for_floats()
     {
-        @NotNull final MetadataManager metadataManager =
-            EasyMock.createNiceMock(MetadataManager.class);
+        @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
 
         @NotNull final MetadataTypeManager metadataTypeManager = new JdbcMetadataTypeManager();
 
