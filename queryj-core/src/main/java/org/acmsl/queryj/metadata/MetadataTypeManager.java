@@ -463,5 +463,10 @@ public interface MetadataTypeManager
      */
     public int toJdbcType(@NotNull final String type, final int length, final int precision);
 
-    boolean isFloat(int typeId);
+    /**
+     * Checks whether given id matches a float type.
+     * @param typeId the type id.
+     * @return {@code true} if it's a float.
+     */
+    boolean isFloat(final int typeId);
 }
