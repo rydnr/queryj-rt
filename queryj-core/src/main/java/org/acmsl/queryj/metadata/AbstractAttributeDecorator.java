@@ -995,10 +995,10 @@ public abstract class AbstractAttributeDecorator
     }
 
     /**
-     * Checks whether this attribute is int or not.
+     * Checks whether this attribute is long or not.
      * @return {@code true} in such case.
      */
-    public boolean isInt()
+    public boolean isLong()
     {
         return false;
     }
