@@ -931,7 +931,7 @@ public abstract class AbstractAttributeDecorator
      */
     public boolean isFloat()
     {
-        return false;
+        return isFloat(getType();
     }
 
     /**
