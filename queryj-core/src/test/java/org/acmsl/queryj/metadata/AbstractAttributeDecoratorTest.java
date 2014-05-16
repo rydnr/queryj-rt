@@ -466,8 +466,8 @@ public class AbstractAttributeDecoratorTest
         @NotNull final Attribute<String> attribute =
             new AttributeValueObject(
                 "name",
-                Types.DECIMAL,
-                "BigDecimal",
+                Types.INTEGER,
+                "int",
                 "tableName",
                 "comment",
                 1,
