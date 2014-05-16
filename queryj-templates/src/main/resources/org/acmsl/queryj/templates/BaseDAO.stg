@@ -311,15 +311,15 @@ if(attr.value)><
               endif><
             else><
               if(attr.int)><
-                  if(attr.nullable)
-                   >Integer.valueOf(<attr.value>)<
-                  else
-                   ><attr.value><
-                  endif><
+                if(attr.nullable)
+                 >Integer.valueOf(<attr.value>)<
                 else
                  ><attr.value><
                 endif><
+              else
+               ><attr.value><
               endif><
+            endif><
           endif><
         endif><
       endif><
