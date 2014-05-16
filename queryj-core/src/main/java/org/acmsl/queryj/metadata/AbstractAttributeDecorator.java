@@ -943,7 +943,10 @@ public abstract class AbstractAttributeDecorator
         return type.getValue().equalsIgnoreCase("float");
     }
 
-
+    /**
+     * Checks whether this attribute is a float.
+     * @return {@code true} in such case.
+     */
     public boolean isDouble()
     {
         return false;  //To change body of created methods use File | Settings | File Templates.
