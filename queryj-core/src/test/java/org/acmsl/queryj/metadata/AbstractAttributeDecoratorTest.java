@@ -245,4 +245,8 @@ public class AbstractAttributeDecoratorTest
 
         Assert.assertTrue(instance.isStrictlyPrimitive());
     }
+
+    /**
+     * Checks whether isFloat() works for floats.
+     */
 }
