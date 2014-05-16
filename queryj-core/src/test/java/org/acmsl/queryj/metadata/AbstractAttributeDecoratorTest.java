@@ -248,5 +248,6 @@ public class AbstractAttributeDecoratorTest
 
     /**
      * Checks whether isFloat() works for floats.
+     *
      */
 }
