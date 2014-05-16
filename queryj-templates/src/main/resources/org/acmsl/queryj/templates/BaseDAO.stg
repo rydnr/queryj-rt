@@ -291,8 +291,7 @@ if(attr.value)><
   endif><
 else
  >null<
-endif> !>
-
+endif>
 >>
 
 find_constant_by_pk(primaryKey, table, C) ::= <<
