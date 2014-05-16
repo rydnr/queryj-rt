@@ -1020,7 +1020,7 @@ public abstract class AbstractAttributeDecorator
      */
     protected boolean isLong(final int typeId, @NotNull final MetadataTypeManager metadataTypeManager)
     {
-        return isLong(getTypeId(), getMetadataTypeManager());
+        return metadataTypeManager,isLong(getTypeId(), getMetadataTypeManager());
     }
 
     /**
