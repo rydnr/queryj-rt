@@ -959,7 +959,7 @@ public abstract class AbstractAttributeDecorator
      * @param type the type.
      * @return {@code true} in such case.
      */
-    protected boolean isDouble(@NotNull final int typeId, @NotNull final MetadataTypeManager metadataTypeManager)
+    protected boolean isDouble(final int typeId, @NotNull final MetadataTypeManager metadataTypeManager)
     {
         return type.equalsIgnoreCase("double");
     }
