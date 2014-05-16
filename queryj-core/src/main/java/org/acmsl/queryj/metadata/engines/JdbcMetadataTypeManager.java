@@ -1717,7 +1717,7 @@ public class JdbcMetadataTypeManager
     /**
      * Checks whether given data type is float or not.
      * @param dataType the data type.
-     * @return {@code true</code> in such case.
+     * @return {@code true} in such case.
      */
     @Override
     public boolean isFloat(final int dataType)
