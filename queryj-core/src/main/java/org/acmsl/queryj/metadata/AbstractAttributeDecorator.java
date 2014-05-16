@@ -974,6 +974,7 @@ public abstract class AbstractAttributeDecorator
 
     /**
      * Checks whether this attribute is decimal or not.
+     * @param value the value.
      * @return {@code true in such case.}
      */
     protected boolean isDecimal(@NotNull final String value)
