@@ -279,8 +279,7 @@ public class AbstractAttributeDecoratorTest
                 null); // boolean-null
 
         @NotNull final AbstractAttributeDecorator instance =
-            new AbstractAttributeDecorator(
-                attribute, metadataManager) {};
+            new AbstractAttributeDecorator(attribute, metadataManager) {};
 
         Assert.assertTrue(instance.isFloat());
 
