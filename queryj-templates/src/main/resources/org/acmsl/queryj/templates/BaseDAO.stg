@@ -292,6 +292,7 @@ if(attr.value)><
         if(attr.float)><
           if(attr.nullable)
            >Float.valueOf(<attr.value>f)<
+          else
          ><attr.value>f<
         else><
           if(attr.decimal)
