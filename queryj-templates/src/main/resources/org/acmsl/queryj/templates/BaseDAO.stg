@@ -289,7 +289,7 @@ if(attr.value)><
       if(attr.double)
        ><attr.value>d<
       else><
-            if(attr.float)
+        if(attr.float)
          ><attr.value>f<
         else><
           if(attr.decimal)
