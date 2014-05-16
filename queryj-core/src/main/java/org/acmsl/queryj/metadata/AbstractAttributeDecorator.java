@@ -961,7 +961,7 @@ public abstract class AbstractAttributeDecorator
      */
     protected boolean isDouble(final int typeId, @NotNull final MetadataTypeManager metadataTypeManager)
     {
-        return metadataTypeManager.isDouble(type.equalsIgnoreCase("double");
+        return metadataTypeManager.isDouble(typeId);
     }
 
     /**
