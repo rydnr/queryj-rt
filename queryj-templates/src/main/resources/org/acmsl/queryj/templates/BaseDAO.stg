@@ -284,7 +284,7 @@ if(attr.value)><
    >"<attr.value>"<
   else><
     if(attr.date)
-     >new SimpleDateFormat("dd/mm/yyyy", "<attr.value>"<attr.value><endif><else>null<endif> !>
+     >new SimpleDateFormat("dd/mm/yyyy")."<attr.value>"<attr.value><endif><else>null<endif> !>
 
 >>
 
