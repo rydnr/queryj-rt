@@ -325,7 +325,6 @@ public class AbstractAttributeDecoratorTest
         Assert.assertFalse(instance.isFloat());
     }
 
-
     /**
      * Checks whether isDouble() returns true for doubles.
      */
