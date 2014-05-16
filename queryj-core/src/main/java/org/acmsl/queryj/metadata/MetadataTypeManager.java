@@ -469,4 +469,11 @@ public interface MetadataTypeManager
      * @return {@code true} if it's a float.
      */
     boolean isFloat(final int typeId);
+
+    /**
+     * Checks whether given id matches a float type.
+     * @param typeId the type id.
+     * @return {@code true} if it's a float.
+     */
+    boolean isFloat(final int typeId);
 }
