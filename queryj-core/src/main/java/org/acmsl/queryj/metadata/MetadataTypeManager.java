@@ -462,4 +462,6 @@ public interface MetadataTypeManager
      * @return the associated {@link java.sql.Types} constant.
      */
     public int toJdbcType(@NotNull final String type, final int length, final int precision);
+
+    boolean isFloat(int typeId);
 }
