@@ -291,7 +291,7 @@ if(attr.value)><
       else><
         if(attr.float)><
           if(attr.nullable)
-           >Float.valueOf(<attr.value>
+           >Float.valueOf(<attr.value>f)
          ><attr.value>f<
         else><
           if(attr.decimal)
