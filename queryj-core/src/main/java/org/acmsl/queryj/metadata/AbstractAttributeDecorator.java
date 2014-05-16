@@ -978,7 +978,7 @@ public abstract class AbstractAttributeDecorator
      */
     protected boolean isDecimal(@NotNull final String value)
     {
-        return value.equals("BigDecimal") || value.equals(java.math.BigDecimal"");
+        return value.equals("BigDecimal") || value.equals("java.math.BigDecimal");
     }
 
     /**
