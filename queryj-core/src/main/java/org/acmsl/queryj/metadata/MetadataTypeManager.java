@@ -497,5 +497,5 @@ public interface MetadataTypeManager
      * @param typeId the type id.
      * @return {@code true} if it's an integer.
      */
-    boolean isIn(final int typeId);
+    boolean isLong(final int typeId);
 }
