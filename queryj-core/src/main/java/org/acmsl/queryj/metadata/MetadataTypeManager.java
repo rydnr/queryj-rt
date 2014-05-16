@@ -490,4 +490,12 @@ public interface MetadataTypeManager
      * @return {@code true} if it's an integer.
      */
     boolean isInt(final int typeId);
+
+
+    /**
+     * Checks whether given id matches an integer type.
+     * @param typeId the type id.
+     * @return {@code true} if it's an integer.
+     */
+    boolean isIn(final int typeId);
 }
