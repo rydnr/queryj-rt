@@ -1005,13 +1005,4 @@ public abstract class AbstractAttributeDecorator
         return new EqualsBuilder().appendSuper(super.equals(obj)).append(this.m__Attribute, other.m__Attribute)
             .isEquals();
     }
-
-    /**
-     * Checks whether this attribute is decimal or not.
-     * @return {@code true in such case.}
-     */
-    public boolean isDecimal()
-    {
-        return false;
-    }
 }
