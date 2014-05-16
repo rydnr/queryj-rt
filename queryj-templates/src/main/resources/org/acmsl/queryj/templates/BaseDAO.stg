@@ -297,7 +297,7 @@ if(attr.value)><
           if(attr.nullable)
            >Double.valueOf(<attr.value>d)<
           else
-            ><attr.value>f<
+            ><attr.value>d<
           endif><
         else><
           if(attr.decimal)
