@@ -484,7 +484,7 @@ public interface MetadataTypeManager
      */
     boolean isDecimal(final int typeId);
     /**
-     * Checks whether given id matches a double type.
+     * Checks whether given id matches an integer type.
      * @param typeId the type id.
      * @return {@code true} if it's a double.
      */
