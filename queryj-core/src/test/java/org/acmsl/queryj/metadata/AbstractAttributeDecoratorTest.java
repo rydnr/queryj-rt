@@ -368,7 +368,7 @@ public class AbstractAttributeDecoratorTest
     }
 
     /**
-     * Checks whether isFloat() returns false for doubles.
+     * Checks whether isFloat() returns false for floats.
      */
     @Test
     public void isFloat_returns_false_for_doubles()
