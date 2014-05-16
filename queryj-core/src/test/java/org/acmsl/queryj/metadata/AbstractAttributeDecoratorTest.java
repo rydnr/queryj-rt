@@ -266,7 +266,7 @@ public class AbstractAttributeDecoratorTest
             new AttributeValueObject(
                 "name",
                 Types.FLOAT,
-                "double",
+                "float",
                 "tableName",
                 "comment",
                 1,
