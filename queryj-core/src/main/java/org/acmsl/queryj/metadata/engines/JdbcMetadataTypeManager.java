@@ -1796,7 +1796,7 @@ public class JdbcMetadataTypeManager
 
         switch (dataType)
         {
-            case Types.DOUBLE:
+            case Types.INTEGER:
                 result = true;
                 break;
             default:
