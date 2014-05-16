@@ -936,7 +936,8 @@ public abstract class AbstractAttributeDecorator
 
     /**
      * Checks whether this attribute is a float.
-     * @param type the type id.
+     * @param typeId the type id.
+     * @param metadataTypeManager the {@link MetadataTypeManager}
      * @return {@code true} in such case.
      */
     protected boolean isFloat(final int typeId, @NotNull final MetadataTypeManager metadataTypeManager)
