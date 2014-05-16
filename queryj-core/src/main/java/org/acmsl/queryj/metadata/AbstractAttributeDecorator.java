@@ -967,13 +967,4 @@ public abstract class AbstractAttributeDecorator
         return new EqualsBuilder().appendSuper(super.equals(obj)).append(this.m__Attribute, other.m__Attribute)
             .isEquals();
     }
-
-    /**
-     * Checks whether this attribute is a float.
-     * @return {@code true} in such case.
-     */
-    public boolean isFloat()
-    {
-        return false;
-    }
 }
