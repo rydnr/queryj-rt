@@ -1000,7 +1000,7 @@ public abstract class AbstractAttributeDecorator
      */
     protected boolean isInt(final int typeId, @NotNull final MetadataTypeManager metadataTypeManager)
     {
-        return metadataTypeManager.isInt(getTypeId(), getMetadataTypeManager());
+        return metadataTypeManager.isInt(typeId);
     }
 
     /**
