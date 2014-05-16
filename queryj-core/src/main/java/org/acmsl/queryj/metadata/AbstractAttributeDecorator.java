@@ -993,6 +993,15 @@ public abstract class AbstractAttributeDecorator
     {
         return false;
     }
+
+    /**
+     * Checks whether this attribute is int or not.
+     * @return {@code true} in such case.
+     */
+    public boolean isInt()
+    {
+        return false;
+    }
     /**
      * {@inheritDoc}
      */
