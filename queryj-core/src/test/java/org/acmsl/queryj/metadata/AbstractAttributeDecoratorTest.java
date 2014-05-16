@@ -371,7 +371,7 @@ public class AbstractAttributeDecoratorTest
      * Checks whether isDouble() returns false for floats.
      */
     @Test
-    public void isDouble_returns_false_for_doubles()
+    public void isDouble_returns_false_for_floats()
     {
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
 
