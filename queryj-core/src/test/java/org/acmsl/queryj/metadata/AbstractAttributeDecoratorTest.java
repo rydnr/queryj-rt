@@ -448,7 +448,6 @@ public class AbstractAttributeDecoratorTest
         Assert.assertTrue(instance.isDecimal());
     }
 
-
     /**
      * Checks whether isInt() returns true for integers.
      */
