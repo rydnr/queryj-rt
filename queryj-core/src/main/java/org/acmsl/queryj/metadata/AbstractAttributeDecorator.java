@@ -939,9 +939,9 @@ public abstract class AbstractAttributeDecorator
      * @param type the type.
      * @return {@code true} in such case.
      */
-    protected boolean isFloat(@NotNull final DecoratedString type)
+    protected boolean isFloat(@NotNull final String type)
     {
-        return type.getValue().equalsIgnoreCase("float");
+        return type.equalsIgnoreCase("float");
     }
 
     /**
