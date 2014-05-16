@@ -940,7 +940,7 @@ public abstract class AbstractAttributeDecorator
      */
     protected boolean isFloat(@NotNull final DecoratedString type)
     {
-        return type.equalsIgnoreCase("float");
+        return type.getValue().equalsIgnoreCase("float");
     }
 
     /**
