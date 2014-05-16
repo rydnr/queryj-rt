@@ -475,5 +475,5 @@ public interface MetadataTypeManager
      * @param typeId the type id.
      * @return {@code true} if it's a float.
      */
-    boolean isFloat(final int typeId);
+    boolean isDouble(final int typeId);
 }
