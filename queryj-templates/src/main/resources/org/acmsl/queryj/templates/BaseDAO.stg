@@ -283,7 +283,7 @@ if(attr.value)><
   if(attr.string)
    >"<attr.value>"<
   else><
-    if(attr.float)
+    if(attr.date)
      ><attr.value><endif><else>null<endif> !>
 
 >>
