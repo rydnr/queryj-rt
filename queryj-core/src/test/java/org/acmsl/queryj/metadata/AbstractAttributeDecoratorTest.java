@@ -285,6 +285,6 @@ public class AbstractAttributeDecoratorTest
             new AbstractAttributeDecorator(
                 attribute, metadataManager) {};
 
-        Assert.assertTrue(instance.isStrictlyPrimitive());
+        Assert.assertTrue(instance.isFloat());
     }
 }
