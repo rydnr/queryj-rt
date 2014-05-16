@@ -286,7 +286,8 @@ if(attr.value)><
     if(attr.date)
      >new SimpleDateFormat("dd/mm/yyyy").parse("<attr.value>")<
     else
-     ><attr.value><endif><else>null<endif> !>
+     ><attr.value><
+    endif><else>null<endif> !>
 
 >>
 
