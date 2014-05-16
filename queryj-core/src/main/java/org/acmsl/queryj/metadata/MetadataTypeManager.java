@@ -493,9 +493,9 @@ public interface MetadataTypeManager
 
 
     /**
-     * Checks whether given id matches an integer type.
+     * Checks whether given id matches a long type.
      * @param typeId the type id.
-     * @return {@code true} if it's an integer.
+     * @return {@code true} if it's a long.
      */
     boolean isLong(final int typeId);
 }
