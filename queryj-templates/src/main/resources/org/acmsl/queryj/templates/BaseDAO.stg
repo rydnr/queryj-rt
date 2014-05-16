@@ -314,6 +314,8 @@ if(attr.value)><
                   ><attr.value><
                  endif><
                else
+                ><attr.value><
+               endif><
           endif><
         endif><
       endif><
