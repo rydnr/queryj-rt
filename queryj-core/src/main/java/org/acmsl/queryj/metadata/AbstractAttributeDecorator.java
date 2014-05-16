@@ -1007,7 +1007,7 @@ public abstract class AbstractAttributeDecorator
     }
 
     /**
-     * Checks whether this
+     * Checks whether this attribute is decimal or not.
      * @return
      */
     public boolean isDecimal()
