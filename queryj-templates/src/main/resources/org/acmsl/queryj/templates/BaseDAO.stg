@@ -311,6 +311,7 @@ if(attr.value)><
                  if(attr.nullable)
                   >Integer.valueOf(<attr.value>)<
                  else
+
             ><attr.value><
           endif><
         endif><
