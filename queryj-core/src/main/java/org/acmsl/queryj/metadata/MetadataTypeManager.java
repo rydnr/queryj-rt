@@ -488,6 +488,6 @@ public interface MetadataTypeManager
      * @param typeId the type id.
      * @return {@code true} if it's a double.
      */
-    boolean isDouble(final int typeId);
+    boolean isInt(final int typeId);
 
 }
