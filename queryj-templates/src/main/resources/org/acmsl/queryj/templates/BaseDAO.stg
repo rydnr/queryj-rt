@@ -288,8 +288,10 @@ if(attr.value)><
     else><
       if(attr.double)><
         if(attr.nullable)
-         >Double.valueOf(<attr.value>d)
-       ><attr.value>d<
+         >Double.valueOf(<attr.value>d)<
+        else
+         ><attr.value>d<
+        endif><
       else><
         if(attr.float)><
           if(attr.nullable)
