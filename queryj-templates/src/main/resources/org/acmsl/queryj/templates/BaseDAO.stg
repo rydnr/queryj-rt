@@ -308,7 +308,7 @@ if(attr.value)><
                >Long.valueOf(<attr.value>L)<
               else><
                ><attr.value>L<
-
+              endif>
                 if(attr.int)><
                   if(attr.nullable)
                    >Integer.valueOf(<attr.value>)<
