@@ -956,7 +956,8 @@ public abstract class AbstractAttributeDecorator
 
     /**
      * Checks whether this attribute is a double.
-     * @param type the type.
+     * @param typeId the type id.
+     * @param metadataTypeManager the {@link MetadataTypeManager} instance.
      * @return {@code true} in such case.
      */
     protected boolean isDouble(final int typeId, @NotNull final MetadataTypeManager metadataTypeManager)
