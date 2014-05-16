@@ -1726,13 +1726,6 @@ public class JdbcMetadataTypeManager
 
         switch (dataType)
         {
-            case Types.DECIMAL:
-            case Types.BIT:
-            case Types.TINYINT:
-            case Types.SMALLINT:
-            case Types.INTEGER:
-            case Types.BIGINT:
-            case Types.NUMERIC:
             case Types.FLOAT:
             case Types.REAL:
             case Types.DOUBLE:
