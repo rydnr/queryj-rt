@@ -1744,7 +1744,7 @@ public class JdbcMetadataTypeManager
      * @return {@code true} in such case.
      */
     @Override
-    public boolean isFloat(final int dataType)
+    public boolean isDouble(final int dataType)
     {
         final boolean result;
 
