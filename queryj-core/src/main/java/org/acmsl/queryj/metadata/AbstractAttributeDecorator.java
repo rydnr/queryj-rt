@@ -945,7 +945,7 @@ public abstract class AbstractAttributeDecorator
     }
 
     /**
-     * Checks whether this attribute is a float.
+     * Checks whether this attribute is a hou.
      * @return {@code true} in such case.
      */
     public boolean isDouble()
