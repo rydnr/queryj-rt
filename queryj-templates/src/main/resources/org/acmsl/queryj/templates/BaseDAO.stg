@@ -292,7 +292,7 @@ if(attr.value)><
      >f<
     else><
       if(attr.double)
-       >
+       >d
   endif><
 else
  >null<
