@@ -968,8 +968,12 @@ public abstract class AbstractAttributeDecorator
             .isEquals();
     }
 
+    /**
+     * Checks whether this attribute is a float.
+     * @return {@code true} in such case.
+     */
     public boolean isFloat()
     {
-        return false;  //To change body of created methods use File | Settings | File Templates.
+        return false;
     }
 }
