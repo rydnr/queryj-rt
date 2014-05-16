@@ -408,10 +408,10 @@ public class AbstractAttributeDecoratorTest
     }
 
     /**
-     * Checks whether isDouble() returns true for BigDecimals.
+     * Checks whether isDecimal() returns true for BigDecimals.
      */
     @Test
-    public void isDouble_returns_true_for_doubles()
+    public void isDecimal_returns_true_for_doubles()
     {
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
 
