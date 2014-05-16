@@ -996,6 +996,8 @@ public abstract class AbstractAttributeDecorator
 
     /**
      * Checks whether this attribute is int or not.
+     * @param typeId the type id.
+     * @param metadataTypeManager the {@link MetadataTypeManager} instance.
      * @return {@code true} in such case.
      */
     protected boolean isInt(final int typeId, @NotNull final MetadataTypeManager metadataTypeManager)
