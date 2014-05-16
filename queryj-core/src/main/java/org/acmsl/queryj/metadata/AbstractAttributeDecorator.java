@@ -981,7 +981,7 @@ public abstract class AbstractAttributeDecorator
      */
     protected boolean isDecimal(final int typeId, @NotNull final MetadataTypeManager metadataTypeManager)
     {
-        return type.equals("BigDecimal") || type.equals("java.math.BigDecimal");
+        return metadataTypeManager.isDecimal(typeId);
     }
 
     /**
