@@ -250,5 +250,8 @@ public class AbstractAttributeDecoratorTest
      * Checks whether isFloat() works for floats.
      */
     @Test
-    public void
+    public void isFloat_works_for_floats()
+    {
+
+    }
 }
