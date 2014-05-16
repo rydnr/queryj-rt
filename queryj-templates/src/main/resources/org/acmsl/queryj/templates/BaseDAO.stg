@@ -289,7 +289,7 @@ if(attr.value)><
      ><attr.value><
     endif><
     if(attr.float)
-     >
+     >f<
   endif><
 else
  >null<
