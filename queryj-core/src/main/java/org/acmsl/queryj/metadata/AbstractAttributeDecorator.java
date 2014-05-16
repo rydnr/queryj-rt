@@ -954,6 +954,15 @@ public abstract class AbstractAttributeDecorator
     }
 
     /**
+     * Checks whether this attribute is a double.
+     * @return {@code true} in such case.
+     */
+    public boolean isDouble()
+    {
+        return isDouble(getType().getValue());
+    }
+
+    /**
      * {@inheritDoc}
      */
     @NotNull
