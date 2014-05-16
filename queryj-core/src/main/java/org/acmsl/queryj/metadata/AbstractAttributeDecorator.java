@@ -969,7 +969,7 @@ public abstract class AbstractAttributeDecorator
      */
     public boolean isDecimal()
     {
-        return false;
+        return isDecimal(getType().getValue());
     }
 
     /**
