@@ -991,7 +991,7 @@ public abstract class AbstractAttributeDecorator
      */
     public boolean isInt()
     {
-        return false;
+        return isInt(getTypeId(), getMetadataTypeManager());
     }
 
     /**
