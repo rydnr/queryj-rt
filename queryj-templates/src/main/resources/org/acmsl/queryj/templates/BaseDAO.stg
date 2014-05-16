@@ -83,7 +83,7 @@ import java.util.Arrays;
 import java.util.Collections;
 <endif>
 import java.util.List;
-<import_attribute_typeif(table.attributeTypes)>
+<import_attribute_types(table=table, useHeader=false)>
 <table.attributeTypes:{ t | import <t>;}; separator="\n">
 <else>
 <endif>
