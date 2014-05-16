@@ -288,9 +288,9 @@ if(attr.value)><
     else><
       if(attr.double)
        ><attr.value>d<
-        if(attr.float)
-         ><attr.value>f<
       else><
+            if(attr.float)
+         ><attr.value>f<
         else><
           if(attr.decimal)
             >new BigDecimal("<attr.value>")<
