@@ -1006,6 +1006,10 @@ public abstract class AbstractAttributeDecorator
             .isEquals();
     }
 
+    /**
+     * Checks whether this
+     * @return
+     */
     public boolean isDecimal()
     {
         return false;  //To change body of created methods use File | Settings | File Templates.
