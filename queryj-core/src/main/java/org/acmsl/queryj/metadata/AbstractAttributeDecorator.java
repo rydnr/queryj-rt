@@ -1027,10 +1027,4 @@ public abstract class AbstractAttributeDecorator
         return new EqualsBuilder().appendSuper(super.equals(obj)).append(this.m__Attribute, other.m__Attribute)
             .isEquals();
     }
-
-    public boolean isInt()
-    {
-
-
-    }
 }
