@@ -490,10 +490,10 @@ public class AbstractAttributeDecoratorTest
     }
 
     /**
-     * Checks whether isInt() returns true for integers.
+     * Checks whether isInt() returns true for longs.
      */
     @Test
-    public void isInt_returns_true_for_integers()
+    public void isLong_returns_true_for_longs()
     {
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
 
