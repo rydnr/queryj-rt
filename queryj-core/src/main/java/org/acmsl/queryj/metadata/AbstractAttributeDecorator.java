@@ -951,7 +951,7 @@ public abstract class AbstractAttributeDecorator
      */
     public boolean isDouble()
     {
-        return isDouble(getTypeId(), getMetadataManager());
+        return isDouble(getTypeId(), getMetadataTypeManager());
     }
 
     /**
