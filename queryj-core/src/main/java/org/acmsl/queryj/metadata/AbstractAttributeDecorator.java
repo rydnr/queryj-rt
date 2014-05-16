@@ -955,6 +955,7 @@ public abstract class AbstractAttributeDecorator
 
     /**
      * Checks whether this attribute is a double.
+     * @param type the type.
      * @return {@code true} in such case.
      */
     protected boolean isDouble(@NotNull final String type)
