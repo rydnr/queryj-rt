@@ -284,6 +284,20 @@ public class AbstractAttributeDecoratorTest
         Assert.assertTrue(instance.isFloat());
     }
 
+    /**
+     * Checks whether isFloat() works for floats.
+     */
+    @Test
+    public void isFloat_works_for_floats()
+    {
+        @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
+
+        @NotNull final MetadataTypeManager metadataTypeManager = new JdbcMetadataTypeManager();
+
+        EasyMock.expect(metadataManager.getMetadataTypeManager()).andReturn(metadataTypeManager).anyTimes();
+
+        EasyMock.replay(metadataManager);
+
 
         @NotNull final Attribute<String> attribute =
             new AttributeValueObject(
