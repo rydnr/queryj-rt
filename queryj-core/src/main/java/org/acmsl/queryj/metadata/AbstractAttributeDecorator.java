@@ -1018,7 +1018,7 @@ public abstract class AbstractAttributeDecorator
      * Checks whether this attribute is long or not.
      * @return {@code true} in such case.
      */
-    public boolean isLong()
+    protected boolean isLong(final int typeId, @NotNull final MetadataTypeManager metadataTypeManager)
     {
         return isLong(getTypeId(), getMetadataTypeManager());
     }
