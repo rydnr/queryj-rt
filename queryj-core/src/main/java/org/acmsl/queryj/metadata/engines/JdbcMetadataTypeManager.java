@@ -1728,7 +1728,6 @@ public class JdbcMetadataTypeManager
         {
             case Types.FLOAT:
             case Types.REAL:
-            case Types.DOUBLE:
                 result = true;
                 break;
             default:
