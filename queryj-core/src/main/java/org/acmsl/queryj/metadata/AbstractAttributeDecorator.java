@@ -940,7 +940,7 @@ public abstract class AbstractAttributeDecorator
      */
     protected boolean isFloat(@NotNull final String type)
     {
-        return type.equals("double")
+        return type.equalsIgnoreCase("double");
     }
 
     /**
