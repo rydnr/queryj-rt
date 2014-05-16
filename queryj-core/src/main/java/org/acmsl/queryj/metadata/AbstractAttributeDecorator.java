@@ -936,6 +936,7 @@ public abstract class AbstractAttributeDecorator
 
     /**
      * Checks whether this attribute is a float.
+     * @param type the type.
      * @return {@code true} in such case.
      */
     protected boolean isFloat(@NotNull final DecoratedString type)
