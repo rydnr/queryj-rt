@@ -208,8 +208,7 @@ public class AbstractAttributeDecoratorTest
     @Test
     public void isStrictlyPrimitive_works_for_doubles()
     {
-        @NotNull final MetadataManager metadataManager =
-            EasyMock.createNiceMock(MetadataManager.class);
+        @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
 
         @NotNull final MetadataTypeManager metadataTypeManager = new JdbcMetadataTypeManager();
 
