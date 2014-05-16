@@ -1773,7 +1773,7 @@ public class JdbcMetadataTypeManager
 
         switch (dataType)
         {
-            case Types.DOUBLE:
+            case Types.DECIMAL:
                 result = true;
                 break;
             default:
