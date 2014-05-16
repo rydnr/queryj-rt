@@ -288,6 +288,7 @@ if(attr.value)><
     else><
       if(attr.double)><
         if(attr.nullable)
+         >
        ><attr.value>d<
       else><
         if(attr.float)><
