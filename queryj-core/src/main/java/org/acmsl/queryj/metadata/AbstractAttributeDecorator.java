@@ -1002,6 +1002,7 @@ public abstract class AbstractAttributeDecorator
     {
         return false;
     }
+
     /**
      * {@inheritDoc}
      */
