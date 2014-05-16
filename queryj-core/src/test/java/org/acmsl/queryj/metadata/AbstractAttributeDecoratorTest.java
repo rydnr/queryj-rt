@@ -282,6 +282,8 @@ public class AbstractAttributeDecoratorTest
             new AbstractAttributeDecorator(attribute, metadataManager) {};
 
         Assert.assertTrue(instance.isFloat());
+    }
+
 
         @NotNull final Attribute<String> attribute =
             new AttributeValueObject(
