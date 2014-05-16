@@ -492,5 +492,5 @@ import_custom_select_types(cs, C) ::= <<
  @param cs the custom select.
  @param C the context.
 !>
-<cs.parameterTypes
+<cs.parameterTypes:
 >>
