@@ -303,7 +303,8 @@ if(attr.value)><
           if(attr.decimal)
             >new BigDecimal("<attr.value>")<
           else><
-            if(attr.numeric)>
+            if(attr.numeric)
+             >
             ><attr.value><
           endif><
         endif><
