@@ -957,7 +957,7 @@ public abstract class AbstractAttributeDecorator
      * Checks whether this attribute is a double.
      * @return {@code true} in such case.
      */
-    public boolean isDouble()
+    protected boolean isDouble(@NotNull final String type)
     {
         return isDouble(getType().getValue());
     }
