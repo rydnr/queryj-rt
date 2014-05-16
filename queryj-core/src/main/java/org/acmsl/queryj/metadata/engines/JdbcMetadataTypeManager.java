@@ -1720,7 +1720,7 @@ public class JdbcMetadataTypeManager
      * @return <code>true</code> in such case.
      */
     @Override
-    public boolean isNumeric(final int dataType)
+    public boolean isFloat(final int dataType)
     {
         final boolean result;
 
