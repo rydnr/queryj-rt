@@ -384,15 +384,16 @@ public abstract class AbstractParameterDecorator<V>
      */
     public boolean isDate()
     {
-        return isDate(getMetadataTypeManager());
+        return isDate(getType(), getMetadataTypeManager());
     }
 
     /**
      * Checks whether this parameter is a Date.
+     * @param type the type.
      * @param metadataTypeManager the {@link MetadataTypeManager} instance.
      * @return {@code true} in such case.
      */
-    protected boolean isDate(@NotNull final MetadataTypeManager metadataTypeManager)
+    protected boolean isDate(@NotNull final String type, @NotNull final MetadataTypeManager metadataTypeManager)
     {
         return metadataTypeManager.isDate()
     }
