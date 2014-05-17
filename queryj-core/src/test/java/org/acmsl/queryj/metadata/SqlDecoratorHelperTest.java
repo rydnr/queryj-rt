@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for SqlDecoratorHelper.
  *
  * Date: 2014/05/17
  * Time: 10:25
