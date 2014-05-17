@@ -184,7 +184,7 @@ public class <table.name.capitalized>DAOFactoryHelper
      * @param factory the last used {@link <table.name.voName>DAOFactory}.
      */
     <nullable(C=C)>
-    protected <table.name.capitalized>DAOFactory getLastUsed()
+    protected <table.name.voName>DAOFactory getLastUsed()
     {
         return this.m__LastUsed;
     }
