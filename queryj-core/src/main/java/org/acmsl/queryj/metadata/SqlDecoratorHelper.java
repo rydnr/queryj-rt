@@ -100,7 +100,7 @@ public class SqlDecoratorHelper
             {
                 @Nullable final String importType =
                     metadataTypeManager.getImport(
-                        typeManager.getJavaType(attr.getType().getValue()));
+                        metadataTypeManager.getJavaType(attr.getType().getValue()));
 
                 if (importType != null)
                 {
