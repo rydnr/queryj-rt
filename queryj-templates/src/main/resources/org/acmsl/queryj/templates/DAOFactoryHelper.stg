@@ -205,7 +205,7 @@ public class <table.name.capitalized>DAOFactoryHelper
      */
     <nullable(C=C)>
     protected <table.name.voName>DAOFactory getDAOFactory(
-        <nullable(C=C)>final <table.name.capitalized>DAOFactory lastUsed)
+        <nullable(C=C)>final <table.name.voName>DAOFactory lastUsed)
     {
         <nullable(C=C)>final <table.name.capitalized>DAOFactory result;
 
