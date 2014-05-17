@@ -636,7 +636,7 @@ public abstract class AbstractSqlDecorator
     @NotNull
     public List<DecoratedString> getParameterTypes()
     {
-        return getParameterTypes(getParameters(), getMetadataTypeManager(), );
+        return getParameterTypes(getParameters(), getMetadataTypeManager(), SqlDecoratorHelper.getInstance());
     }
 
     /**
