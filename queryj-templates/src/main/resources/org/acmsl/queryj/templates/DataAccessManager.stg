@@ -239,7 +239,7 @@ protected <table.name.voName>DAO get<table.name.voName>DAO(<notnull(C=C)>final <
 
     <nullable(C=C)><table.name.voName>DAO aux = get<table.name.voName>DAOReference();
 
-    if  (result == null)
+    if  (aux == null)
     {
         <notnull(C=C)>final <table.name.voName>DAOFactory <table.name.voName.uncapitalized>DAOFactory =
             daoFactoryHelper.getDAOFactory();
