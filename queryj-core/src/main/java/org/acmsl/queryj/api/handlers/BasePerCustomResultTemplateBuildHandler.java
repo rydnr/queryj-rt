@@ -360,7 +360,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
             if (   (customResult != null)
                 && (!resultsByClass.containsKey(customResult.getClassValue())))
             {
-                resultsByClass.put()
+                resultsByClass.put(customResult.getClassValue(), customResult);
             }
         }
         @NotNull final HashSet<Result<String>> t_Aux = new HashSet<>(results.size());
