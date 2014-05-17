@@ -73,7 +73,7 @@ public class BasePerCustomResultTemplateBuildHandlerTest
         @NotNull final BasePerCustomResultTemplateBuildHandler instance = createInstance();
     }
 
-    protected <C, T, TF> BasePerCustomResultTemplateBuildHandler<C, T, TF> createInstance()
+    protected <C, T, TF> BasePerCustomResultTemplateBuildHandler<C<T>, T, TF> createInstance()
     {
         return
             new BasePerCustomResultTemplateBuildHandler()
