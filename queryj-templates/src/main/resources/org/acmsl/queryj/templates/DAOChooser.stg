@@ -68,11 +68,11 @@ sourceImpl(repository, tables, C) ::= <<
   C=C)><endif>
  */
 <package_declaration(p=C.package)>
-<checkers_import(C=C)>
 /*
  * Importing Apache Commons Logging classes.
  */
 import org.apache.commons.logging.LogFactory;
+<checkers_import(C=C)>
 
 <class(repository=repository, tables=tables, C=C)>
 >>
