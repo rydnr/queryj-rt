@@ -271,7 +271,6 @@ public class <table.name.voName>DAOFactoryHelper
 
     /**
      * Logs an error if Commons-Logging is not available, using given {@code PrintStream}.
-     * @param printStream the {@link PrintStream}.
      * @param message the message.
      */
     protected void logError(<notnull(C=C)>final String message)
