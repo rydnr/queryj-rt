@@ -108,6 +108,10 @@ class(repository, tables, C) ::= <<
 public class <repository.capitalized>DAOChooser
     extends Serializable
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = <C.serialVersionUID>L;
 
     /**
      * Public constructor to allow reflective access.
