@@ -200,7 +200,7 @@ public class <table.name.capitalized>DAOFactoryHelper
     }
 
     /**
-     * Retrieves a {@link <table.name.capitalized>DAOFactory} instance.
+     * Retrieves a {@link <table.name.voName>DAOFactory} instance.
      * @return such instance.
      */
     <nullable(C=C)>
