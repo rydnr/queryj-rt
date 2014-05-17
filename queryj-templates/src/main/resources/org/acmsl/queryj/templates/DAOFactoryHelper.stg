@@ -139,7 +139,7 @@ public class <table.name.capitalized>DAOFactoryHelper
     /**
      * Public constructor to allow reflection/deserialization.
      */
-    public <table.name.capitalized>DAOFactoryHelper() {}
+    public <table.name.voName>DAOFactoryHelper() {}
 
     /**
      * Singleton implemented to avoid the
