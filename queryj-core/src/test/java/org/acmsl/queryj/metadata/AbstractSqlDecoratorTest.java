@@ -139,6 +139,6 @@ public class AbstractSqlDecoratorTest
     }
 
     /**
-     * Tests getParameterTypes()
+     * Tests getParameterTypes() returns no duplicates.
      */
 }
