@@ -82,9 +82,6 @@ sourceImpl(repository, tables, C) ::= <<
  */
 import java.io.Serializable;
 
-<endif>
-
-
 <class(repository=repository, tables=tables, C=C)>
 >>
 
