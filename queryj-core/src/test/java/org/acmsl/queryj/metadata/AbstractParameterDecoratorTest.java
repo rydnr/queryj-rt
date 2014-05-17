@@ -70,8 +70,7 @@ public class AbstractParameterDecoratorTest
         @NotNull final AbstractParameterDecorator<String> instance =
             new AbstractParameterDecorator<>(
                 new ParameterElement<String, String>("p1", 1, "p1", "Date", null),
-                metadataManager
-            ) {};
+                metadataManager) {};
 
     }
 }
