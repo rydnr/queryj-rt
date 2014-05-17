@@ -146,7 +146,7 @@ public class <table.name.capitalized>DAOFactoryHelper
      * \<a href="https://en.wikipedia.org/wiki/Double-checked_locking">double-checked locking\</a>.
      * This relies on the fact that inner classes are not loaded until they are referenced.
      */
-    private static final class <table.name.capitalized>DAOFactoryHelperSingletonContainer
+    private static final class <table.name.voName>DAOFactoryHelperSingletonContainer
     {
         private static final <table.name.voName>DAOFactoryHelper SINGLETON =
             new <table.name.voName>DAOFactoryHelper();
