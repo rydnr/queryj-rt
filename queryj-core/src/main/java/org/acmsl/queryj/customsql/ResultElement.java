@@ -126,6 +126,7 @@ public class ResultElement<T>
      * Retrieves the hashcode.
      * @return such value.
      */
+    @Override
     public int hashCode()
     {
         return hashCode(getId(), getPropertyRefs());
