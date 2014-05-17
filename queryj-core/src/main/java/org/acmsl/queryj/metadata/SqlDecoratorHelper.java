@@ -38,12 +38,15 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.customsql.Parameter;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+
+import java.util.List;
 
 /**
  * Provides some logic useful for {@link SqlDecorator}s.
@@ -54,6 +57,11 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public class SqlDecoratorHelper
 {
+    public List<DecoratedString> getParameterTypes(final List<Parameter<DecoratedString, ?>> parameters, final MetadataTypeManager 
+        metadataTypeManager)
+    {
+    }
+
     /**
      * Singleton implemented to avoid double-check locking.
      */
