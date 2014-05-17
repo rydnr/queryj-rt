@@ -352,7 +352,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
     {
         @NotNull final List<Result<String>> result = new ArrayList<>(results.size());
 
-        @NotNull final Map<String, Result<String>>
+        @NotNull final Map<String, Result<String>> resultsBy
         for (@Nullable final Result<String> customResult : results)
         {
             if (customResult != null)
