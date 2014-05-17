@@ -394,7 +394,7 @@ public abstract class AbstractParameterDecorator<V>
      */
     protected boolean isDate(@NotNull final MetadataTypeManager metadataTypeManager)
     {
-        return isDate(getMetadataTypeManager());
+        return metadataTypeManager.isDate()
     }
 
     /**
