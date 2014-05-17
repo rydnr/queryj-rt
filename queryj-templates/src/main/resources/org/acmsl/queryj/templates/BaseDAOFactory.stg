@@ -103,7 +103,7 @@ interfaceImpl(table, repository, C) ::= <<
  * <description(tableName=table.name)>
 <class_common_javadoc(template="org/acmsl/queryj/dao/BaseDAOFactory.stg", C=C)>
  */
-public interface <table.name.capitalized>DAOFactory
+public interface <table.name.voName>DAOFactory
 {
     /**
      * Creates a <table.name>-specific DAO implementation.
