@@ -118,5 +118,6 @@ public class SqlDecoratorHelperTest
 
         EasyMock.verify(customSqlProvider);
         EasyMock.verify(parameterDAO);
+        EasyMock.verify(metadataManager);
     }
 }
