@@ -38,13 +38,13 @@ package org.acmsl.queryj.api.handlers;
 /*
  * Importing JetBrains annotations.
  */
-import junit.framework.Test;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
