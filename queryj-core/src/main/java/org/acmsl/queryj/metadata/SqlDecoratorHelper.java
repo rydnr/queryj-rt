@@ -81,6 +81,7 @@ public class SqlDecoratorHelper
     /**
      * Retrieves the parameter types.
      * @param parameters the parameters.
+     * @param metadataTypeManager the {@link MetadataTypeManager} instance.
      */
     @NotNull
     public List<DecoratedString> getParameterTypes(
