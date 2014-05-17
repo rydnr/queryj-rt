@@ -263,6 +263,12 @@ public class <table.name.voName>DAOFactoryHelper
                     "Cannot instantiate " + factoryClassName + " implementation",
                     invalidClassName);
             }
+            catch (@NotNull final InstantiationException invalidClassName)
+            {
+                logError(
+                    "Cannot instantiate " + factoryClassName + " implementation",
+                    invalidClassName);
+            }
         }
         else
         {
