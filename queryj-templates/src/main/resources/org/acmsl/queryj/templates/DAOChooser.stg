@@ -69,8 +69,6 @@ sourceImpl(repository, tables, C) ::= <<
  */
 <package_declaration(p=C.package)>
 <checkers_import(C=C)>
-<if(C.implement_markers)>
-
 /*
  * Importing some ACM-SL Commons classes.
  */
