@@ -105,8 +105,7 @@ public class BasePerCustomResultTemplateBuildHandlerTest
             new BasePerCustomResultTemplateBuildHandler
                 <PerCustomResultTemplate<PerCustomResultTemplateContext>,
                     PerCustomResultTemplateContext,
-                    PerCustomResultTemplateFactory<PerCustomResultTemplate<PerCustomResultTemplateContext>,
-                        PerCustomResultTemplateContext,
+                    PerCustomResultTemplateFactory<PerCustomResultTemplate<PerCustomResultTemplateContext>, PerCustomResultTemplateContext>
                 ()
             {
                 /**
