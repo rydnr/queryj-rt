@@ -276,7 +276,7 @@ public class <table.name.voName>DAOFactoryHelper
      */
     protected void logError(<notnull(C=C)>final String message)
     {
-        logError(printStream, message, null);
+        logError(message, null);
     }
 
     /**
