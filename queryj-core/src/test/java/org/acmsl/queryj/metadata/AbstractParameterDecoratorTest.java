@@ -49,8 +49,6 @@ import org.jetbrains.annotations.NotNull;
 /*
  * Importing JUnit classes.
  */
-import org.acmsl.queryj.customsql.ParameterElement;
-import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
