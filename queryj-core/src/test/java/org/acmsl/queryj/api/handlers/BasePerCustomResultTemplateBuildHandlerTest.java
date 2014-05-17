@@ -101,7 +101,8 @@ public class BasePerCustomResultTemplateBuildHandlerTest
     protected BasePerCustomResultTemplateBuildHandler createInstance()
     {
         return
-            new BasePerCustomResultTemplateBuildHandler()
+            new BasePerCustomResultTemplateBuildHandler
+                <PerCustomResultTemplate()
             {
                 /**
                  * {@inheritDoc}
