@@ -80,7 +80,7 @@ public class AbstractParameterDecoratorTest
     }
 
     /**
-     * Tests whether isDate() detects Date parameters.
+     * Tests whether isDate() detects non-Date parameters.
      */
     @SuppressWarnings("unchecked")
     @Test
