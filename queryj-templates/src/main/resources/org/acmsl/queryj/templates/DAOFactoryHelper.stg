@@ -353,7 +353,7 @@ public class <table.name.capitalized>DAOFactoryHelper
      * @param message the message.
      * @param error the cause (optional).
      */
-    protected static void logError(
+    protected void logError(
         <notnull(C=C)>final PrintStream printStream,
         <notnull(C=C)>final String message,
         <nullable(C=C)>final Throwable error)
