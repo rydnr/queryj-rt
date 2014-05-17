@@ -43,6 +43,7 @@ package org.acmsl.queryj.metadata;
  * Importing JUnit classes.
  */
 import org.acmsl.queryj.customsql.ParameterElement;
+import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -70,7 +71,7 @@ public class AbstractParameterDecoratorTest
         @NotNull final AbstractParameterDecorator<String> instance =
             new AbstractParameterDecorator(
                 new ParameterElement<String, String>("p1", 1, "p1", "Date", null),
-                metadataManager) {};
+                new JdbcMetadataTypeManager()) {};
 
     }
 }
