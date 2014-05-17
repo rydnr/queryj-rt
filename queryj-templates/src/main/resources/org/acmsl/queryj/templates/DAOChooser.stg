@@ -274,7 +274,7 @@ public class <repository.capitalized>DAOChooser
                      }
                 }
             }
-            catch  (final IOException ioException)
+            catch  (<notnull(C=C)>final IOException ioException)
             {
                 try
                 {
