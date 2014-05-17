@@ -283,7 +283,7 @@ protected void set<repository.capitalized>DAOReference(<notnull(C=C)>final <repo
 }
 
 /**
- * Retrieves the existing {@code <repository.capitalized>DAO} reference.
+ * Retrieves the existing {@link <repository.capitalized>DAO} reference.
  * @return a DAO instance for accessing the <repository>-wide DAO.
  */
 <nullable(C=C)>
