@@ -221,7 +221,7 @@ public class <table.name.capitalized>DAOFactoryHelper
     }
 
     /**
-     * Retrieves a {@code <table.name.capitalized>DAOFactory} instance.
+     * Retrieves a {@code <table.name.voName>DAOFactory} instance.
      * @param daoChooser the {@link <repository.capitalized>DAOChooser} instance.
      * @return such instance.
      */
