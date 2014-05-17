@@ -59,4 +59,7 @@ public class BasePerCustomResultTemplateBuildHandlerTest
 {
     @Test
     public void fixDuplicated_removes_extra_results_differing_only_in_cardinality
+    {
+
+    }
 }
