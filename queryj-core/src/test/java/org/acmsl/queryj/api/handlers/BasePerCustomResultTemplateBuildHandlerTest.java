@@ -75,7 +75,7 @@ public class BasePerCustomResultTemplateBuildHandlerTest
 
     protected BasePerCustomResultTemplateBuildHandler createInstance()
     {
-        @NotNull final BasePerCustomResultTemplateBuildHandler instance =
+        return
             new BasePerCustomResultTemplateBuildHandler()
             {
                 /**
