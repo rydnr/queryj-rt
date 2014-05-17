@@ -681,7 +681,7 @@ public class TableTestHelper
     {
         @Nullable Date result = null;
 
-        if (validationValue.trim().equals())
+        if (validationValue.trim().equals("[now]"))
         try
         {
             result = new SimpleDateFormat(DATE_FORMAT_ES).parse(validationValue);
