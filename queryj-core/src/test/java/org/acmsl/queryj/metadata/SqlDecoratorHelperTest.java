@@ -81,9 +81,6 @@ public class SqlDecoratorHelperTest
         @NotNull final Sql<String> sql =
             new SqlElement<>("id1", "name1", "select", Cardinality.SINGLE, "all", false, false, "none", "desc1");
 
-        @NotNull final Result<String> result =
-            new ResultElement<>("r1", String.class.getSimpleName());
-
         @NotNull final Parameter parameter =
             new ParameterElement<String, String>("pid", 1, "paramName", "Date", null);
 
