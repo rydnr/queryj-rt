@@ -75,10 +75,6 @@ sourceImpl(repository, tables, C) ::= <<
   table=table,
   repository=C.repository)>
 
-/*
- * Importing project classes.
- */
-import
 <checkers_import(C=C)>
 
 /*
