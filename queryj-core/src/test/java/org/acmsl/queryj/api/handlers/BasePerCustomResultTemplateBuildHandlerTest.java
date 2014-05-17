@@ -109,6 +109,9 @@ public class BasePerCustomResultTemplateBuildHandlerTest
                     return null;
                 }
 
+                /**
+                 * {@inheritDoc}
+                 */
                 @Override
                 protected void storeTemplates(
                     @NotNull final List templates, @NotNull final QueryJCommand parameters)
