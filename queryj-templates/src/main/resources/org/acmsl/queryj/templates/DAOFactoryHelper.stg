@@ -158,7 +158,7 @@ public class <table.name.capitalized>DAOFactoryHelper
      */
     public static <table.name.capitalized>DAOFactoryHelper getInstance()
     {
-        return <table.name.capitalized>DAOFactoryHelperSingletonContainer.SINGLETON;
+        return <table.name.voName>DAOFactoryHelperSingletonContainer.SINGLETON;
     }
 
     /**
