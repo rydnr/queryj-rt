@@ -364,12 +364,6 @@ public abstract class BasePerCustomResultTemplateBuildHandler
             }
         }
 
-        @NotNull final HashSet<Result<String>> t_Aux = new HashSet<>(results.size());
-
-        t_Aux.addAll(results);
-
-        result.addAll(t_Aux);
-
         return result;
     }
 
