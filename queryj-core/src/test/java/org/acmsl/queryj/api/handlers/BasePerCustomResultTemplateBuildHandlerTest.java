@@ -41,7 +41,7 @@ package org.acmsl.queryj.api.handlers;
 import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing checkthread.org annotations.
+ * Importing JUnit classes.
  */
 import org.checkthread.annotations.ThreadSafe;
 import org.junit.Test;
