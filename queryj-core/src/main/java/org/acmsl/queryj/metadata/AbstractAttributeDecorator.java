@@ -808,7 +808,7 @@ public abstract class AbstractAttributeDecorator
      * only a primitive Java type if the attribute type matches,
      * and the column allows nulls.
      * @param type the type.
-     * @param metadataManager the <code>MetadataManager</code> instance.
+     * @param metadataManager the {@link MetadataManager</code> instance.
      * @param allowsNull whether the attribute allows null.
      * @param isBool whether the attribute is declared as boolean.
      * @return such information.
