@@ -56,6 +56,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -72,7 +73,7 @@ public class BasePerCustomResultTemplateBuildHandlerTest
     {
         @NotNull final BasePerCustomResultTemplateBuildHandler instance = createInstance();
 
-        @NotNull final List<Result<String>> results
+        @NotNull final List<Result<String>> results = new ArrayList<>
         Assert.assertEquals(3, instance.fixDuplicated(results));
     }
 
