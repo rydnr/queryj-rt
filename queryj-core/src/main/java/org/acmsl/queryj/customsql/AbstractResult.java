@@ -217,7 +217,7 @@ public abstract class AbstractResult<T>
      */
     @NotNull
     protected String toString(
-        final T id, final Collection<PropertyRef> propertyRefs)
+        @NotNull final T id, @NotNull final Collection<PropertyRef> propertyRefs)
     {
         return
               getClass().getName()
