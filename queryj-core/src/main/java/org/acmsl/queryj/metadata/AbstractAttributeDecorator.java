@@ -837,7 +837,7 @@ public abstract class AbstractAttributeDecorator
      * @param metadataTypeManager the {@link MetadataTypeManager} instance.
      * @param allowsNull whether the attribute allows null.
      * @param isBool whether the attribute is declared as boolean.
-     * @param metadataTypeUtils the <code>MetadataTypeUtils</code> instance.
+     * @param metadataTypeUtils the {@link MetadataTypeUtils} instance.
      * @return such information.
      */
     @NotNull
