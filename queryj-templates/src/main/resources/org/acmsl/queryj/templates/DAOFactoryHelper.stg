@@ -125,7 +125,7 @@ classImpl(table, repository, C) ::= <<
 !>
 /**
  * <description(tableName=table.name)>
-<class_common_javadoc(template="org/acmsl/queryj/templates/BaseDAOFactory.stg", C=C)>
+<class_common_javadoc(template="org/acmsl/queryj/templates/DAOFactoryHelper.stg", C=C)>
  */
 <class_annotations(C=C)>
 public class <table.name.voName>DAOFactoryHelper
