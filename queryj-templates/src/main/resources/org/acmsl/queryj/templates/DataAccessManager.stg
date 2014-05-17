@@ -69,9 +69,7 @@ sourceImpl(repository, tables, C) ::= <<
  */
 <package_declaration(p=C.package)>
 
-<C.tables:{ t | <project_imports(
-  basePackageName=C.project_package,
-  daoSubpackageName=typeInitMap.daoSubpackageName,
+<C.tables:{ t | <project_imports(basePackageName=C.project_package, daoSubpackageName=typeInitMap.daoSubpackageName,
   table=table,
   repository=C.repository)>
 <checkers_import(C=C)>
