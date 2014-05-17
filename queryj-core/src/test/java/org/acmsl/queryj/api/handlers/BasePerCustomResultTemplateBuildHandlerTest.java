@@ -103,7 +103,7 @@ public class BasePerCustomResultTemplateBuildHandlerTest
     {
         return
             new BasePerCustomResultTemplateBuildHandler
-                <PerCustomResultTemplate<PerCustomResultTemplateContext()
+                <PerCustomResultTemplate<PerCustomResultTemplateContext>()
             {
                 /**
                  * {@inheritDoc}
