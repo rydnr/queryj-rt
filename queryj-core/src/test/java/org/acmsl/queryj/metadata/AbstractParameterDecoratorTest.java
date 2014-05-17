@@ -56,7 +56,7 @@ import org.junit.runners.JUnit4;
 public class AbstractParameterDecoratorTest
 {
     /**
-     * Tests whether isDate()
+     * Tests whether isDate() detects Date parameters.
      */
     @Test
     public void isDate_detects_dates_parameters()
