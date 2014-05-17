@@ -131,7 +131,6 @@ public class <repository.capitalized>DAOChooser
     public <repository.capitalized>DAOChooser() {};
 
     /**
-    /**
      * Singleton implemented to avoid the
      * \<a href="https://en.wikipedia.org/wiki/Double-checked_locking">double-checked locking\</a>.
      * This relies on the fact that inner classes are not loaded until they are referenced.
