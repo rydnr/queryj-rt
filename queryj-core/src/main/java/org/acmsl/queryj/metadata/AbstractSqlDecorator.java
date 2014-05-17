@@ -646,7 +646,7 @@ public abstract class AbstractSqlDecorator
     @NotNull
     protected List<DecoratedString> getParameterTypes(@NotNull final List<Parameter<DecoratedString, ?>> parameters)
     {
-        return getParameterTypes(getParameters());
+        return
     }
 
     /**
