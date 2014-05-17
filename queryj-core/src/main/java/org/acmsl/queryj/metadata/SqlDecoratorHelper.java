@@ -57,13 +57,6 @@ import java.util.List;
 @ThreadSafe
 public class SqlDecoratorHelper
 {
-    public List<DecoratedString> getParameterTypes(final List<Parameter<DecoratedString, ?>> parameters, final MetadataTypeManager
-
-        metadataTypeManager)
-    {
-        return null;  //To change body of created methods use File | Settings | File Templates.
-    }
-
     /**
      * Singleton implemented to avoid double-check locking.
      */
