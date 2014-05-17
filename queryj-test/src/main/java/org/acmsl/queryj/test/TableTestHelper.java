@@ -681,6 +681,7 @@ public class TableTestHelper
     {
         @Nullable Date result = null;
 
+        if (validationValue.trim().equals())
         try
         {
             result = new SimpleDateFormat(DATE_FORMAT_ES).parse(validationValue);
