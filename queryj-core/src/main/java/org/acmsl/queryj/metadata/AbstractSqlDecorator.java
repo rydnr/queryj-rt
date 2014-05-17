@@ -641,6 +641,7 @@ public abstract class AbstractSqlDecorator
 
     /**
      * Retrieves the parameter types.
+     * @param
      * @return such list.
      */
     @NotNull
