@@ -72,7 +72,7 @@ public class BasePerCustomResultTemplateBuildHandlerTest
     {
         @NotNull final BasePerCustomResultTemplateBuildHandler instance = createInstance();
 
-
+        @NotNull final List<Result<String>> results
         Assert.assertEquals(3, instance.fixDuplicated(results));
     }
 
