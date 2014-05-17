@@ -93,6 +93,7 @@ project_imports(basePackageName, daoSubpackageName, table, repository) ::= <<
  */
 import <basePackageName>.<daoSubpackageName>.<table.name.voName>DAO;
 import <basePackageName>.<daoSubpackageName>.core.<table.name.voName>DAOFactory;
+import <basePackageName>.<daoSubpackageName>.core.<table.name.voName>DAOFactoryHelper;
 >>
 
 description(repository) ::= <<
