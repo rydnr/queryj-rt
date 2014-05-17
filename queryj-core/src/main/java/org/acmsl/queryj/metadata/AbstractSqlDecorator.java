@@ -766,5 +766,6 @@ public abstract class AbstractSqlDecorator
 
     public List<DecoratedString> getParameterTypes()
     {
+        return null;  //To change body of created methods use File | Settings | File Templates.
     }
 }
