@@ -76,6 +76,6 @@ public class SqlDecoratorHelper
 
     /**
      * Retrieves the parameter types.
-     * @param
+     * @param parameters the parameters.
      */
 }
