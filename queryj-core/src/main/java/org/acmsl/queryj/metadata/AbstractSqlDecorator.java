@@ -653,6 +653,11 @@ public abstract class AbstractSqlDecorator
             if (parameter != null)
             {
                 @NotNull final DecoratedString type = parameter.getType();
+
+                if (!result.contains(type))
+                {
+                    result.add(type);
+                }
             }
         }
         return result;
