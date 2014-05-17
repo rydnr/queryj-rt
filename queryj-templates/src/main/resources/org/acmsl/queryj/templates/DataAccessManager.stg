@@ -129,6 +129,7 @@ class(repository, tables, C) ::= <<
     ]:{line |<line>}; separator="\n * ">
 <class_common_javadoc(template="org/acmsl/queryj/templates/DataAccessManager.stg", C=C)>
  */
+<class_annotations(C=C)>
 public class <repository.capitalized>DataAccessManager
 <if(C.implement_markers)>
     extends  DataAccessManager,
