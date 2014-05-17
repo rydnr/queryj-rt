@@ -243,7 +243,7 @@ public class <table.name.voName>DAOFactoryHelper
         {
             try
             {
-                <notnull(C=C)>final Class\<<table.name.voName>DAOFactory> factoryClass =
+                <notnull(C=C)>final Class\<?> factoryClass =
                     Class.forName(factoryClassName);
 
                 result = factoryClass.newInstance();
