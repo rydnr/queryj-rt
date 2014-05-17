@@ -74,8 +74,6 @@ sourceImpl(repository, tables, C) ::= <<
  */
 import org.acmsl.commons.patterns.dao.DAOChooser;
 
-<endif>
-
 <class(repository=repository, tables=tables, C=C)>
 >>
 
