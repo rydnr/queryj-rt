@@ -296,7 +296,7 @@ public class <repository.capitalized>DAOChooser
                 LogFactory.getLog(<repository.capitalized>DAOChooser.class).warn(
                     "Properties object not valid!");
             }
-            catch  (final Throwable throwable)
+            catch  (<notnull(C=C)>final Throwable throwable)
             {
                 // class-loading problem.
             }
