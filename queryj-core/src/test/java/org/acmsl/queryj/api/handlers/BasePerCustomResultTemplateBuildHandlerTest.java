@@ -92,7 +92,7 @@ public class BasePerCustomResultTemplateBuildHandlerTest
         results.add(new ResultElement<>("r3", "Class3"));
         results.add(new ResultElement<>("r4", "Class4"));
 
-        Assert.assertEquals(3, instance.fixDuplicated(results)py;
+        Assert.assertEquals(3, instance.fixDuplicated(results).size());
     }
 
     /**
