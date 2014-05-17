@@ -189,7 +189,7 @@ public class AbstractSqlDecoratorTest
         Assert.assertEquals(1, parameterTypes.size());
 
         EasyMock.verify(customSqlProvider);
-
+        EasyMock.verify(metadataManager);
         EasyMock.verify(parameterDAO);
 
     }
