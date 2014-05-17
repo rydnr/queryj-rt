@@ -70,6 +70,9 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public class BasePerCustomResultTemplateBuildHandlerTest
 {
+    /**
+     * Checkes if fixDuplicated() actually removes results with
+     */
     @Test
     public void fixDuplicated_removes_extra_results_differing_only_in_cardinality()
     {
