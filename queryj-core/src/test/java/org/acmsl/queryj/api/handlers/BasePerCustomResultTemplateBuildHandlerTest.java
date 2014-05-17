@@ -94,7 +94,7 @@ public class BasePerCustomResultTemplateBuildHandlerTest
                     @NotNull final Result<String> customResult,
                     @NotNull final CustomSqlProvider customSqlProvider,
                     @NotNull final MetadataManager metadataManager,
-                                                 @NotNull final Engine<String> engine, @NotNull final QueryJCommand
+                    @NotNull final Engine<String> engine, @NotNull final QueryJCommand
                     parameters)
                     throws QueryJBuildException
                 {
