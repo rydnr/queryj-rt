@@ -49,6 +49,7 @@ import java.util.Locale;
 /**
  * Commons logic for all &lt;result&gt; elements in <i>custom-sql</i> models.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
+ * @param <T> the type.
  */
 public abstract class AbstractResult<T>
     extends  AbstractIdElement<T>
