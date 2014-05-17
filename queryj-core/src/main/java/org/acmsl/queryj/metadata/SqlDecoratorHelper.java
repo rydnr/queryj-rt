@@ -81,4 +81,11 @@ public class SqlDecoratorHelper
      * Retrieves the parameter types.
      * @param parameters the parameters.
      */
+    public List<DecoratedString> getParameterTypes(final List<Parameter<DecoratedString, ?>> parameters, final MetadataTypeManager
+
+        metadataTypeManager)
+    {
+        return null;  //To change body of created methods use File | Settings | File Templates.
+    }
+
 }
