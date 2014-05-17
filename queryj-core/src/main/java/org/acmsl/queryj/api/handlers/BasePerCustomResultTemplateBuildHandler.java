@@ -351,6 +351,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
     {
         @NotNull final List<Result<String>> result = new ArrayList<>(results.size());
 
+
         @NotNull final HashSet<Result<String>> t_Aux = new HashSet<>(results.size());
 
         t_Aux.addAll(results);
