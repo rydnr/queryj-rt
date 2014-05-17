@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for BasePerCustomResultTemplateBuildHandler.
  *
  * Date: 2014/05/17
  * Time: 12:30
