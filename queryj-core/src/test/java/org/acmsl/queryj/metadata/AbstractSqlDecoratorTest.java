@@ -182,7 +182,7 @@ public class AbstractSqlDecoratorTest
 
         @NotNull final List<DecoratedString> parameterTypes = instance.getParameterTypes();
 
-        Assert.assertEquals(instance.isResultNullable());
+        Assert.assertEquals(1);
 
         EasyMock.verify(customSqlProvider);
 
