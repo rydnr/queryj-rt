@@ -114,7 +114,6 @@ public class <repository.capitalized>DAOChooser
      */
     private static final long serialVersionUID = <C.serialVersionUID>L;
 
-
     /**
      * The configuration settings.
      */
