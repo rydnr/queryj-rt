@@ -139,6 +139,6 @@ public class AbstractSqlDecoratorTest
     }
 
     /**
-     * Tests get
+     * Tests getParameterTypes()
      */
 }
