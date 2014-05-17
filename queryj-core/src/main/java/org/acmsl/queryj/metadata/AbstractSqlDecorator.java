@@ -641,7 +641,9 @@ public abstract class AbstractSqlDecorator
 
     /**
      * Retrieves the parameter types.
-     * @param
+     * @param parameters the parameters.
+     * @param metadataTypeManager the {@link MetadataTypeManager} instance.
+     * @param sqlDecoratorHelper the {@link SqlDecoratorHelper} instance.
      * @return such list.
      */
     @NotNull
