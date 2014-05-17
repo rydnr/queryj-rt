@@ -117,6 +117,6 @@ public class BasePerCustomResultTemplateBuildHandlerTest
                     @NotNull final List templates, @NotNull final QueryJCommand parameters)
                 {
                 }
-            }
+            };
     }
 }
