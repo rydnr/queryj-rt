@@ -629,7 +629,6 @@ public abstract class AbstractSqlDecorator
         return result;
     }
 
-
     /**
      * Retrieves the parameter types.
      * @return such list.
