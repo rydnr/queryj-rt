@@ -107,7 +107,7 @@ class(repository, tables, C) ::= <<
  */
 <class_annotations(C=C)>
 public class <repository.capitalized>DAOChooser
-    extends Serializable
+    implements Serializable
 {
     /**
      * The serial version id.
