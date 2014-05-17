@@ -114,6 +114,18 @@ public class <repository.capitalized>DAOChooser
      */
     private static final long serialVersionUID = <C.serialVersionUID>L;
 
+
+    /**
+     * The configuration settings.
+     */
+    <notnull(C=C)>
+    private static final String PROPERTIES_FILE = "queryj-<repository.lowercased>.properties";
+
+    /**
+     * The configuration settings.
+     */
+    private Properties m__Properties;
+
     /**
      * Public constructor to allow reflective access.
      */
