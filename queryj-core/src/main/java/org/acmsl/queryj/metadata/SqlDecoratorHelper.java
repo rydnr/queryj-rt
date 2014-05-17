@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description:  Provides some logic useful for SqlDecorators.
  *
  * Date: 2014/05/17
  * Time: 10:30
