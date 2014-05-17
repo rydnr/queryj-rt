@@ -687,18 +687,19 @@ public class TableTestHelper
         }
         else
         {
-        try
-        {
-            result = new SimpleDateFormat(DATE_FORMAT_ES).parse(validationValue);
-        }
-        catch (@NotNull final ParseException invalidDate)
-        {
             try
             {
-                result = new SimpleDateFormat(DATE_FORMAT_EN).parse(validationValue);
+                result = new SimpleDateFormat(DATE_FORMAT_ES).parse(validationValue);
             }
-            catch (@NotNull final ParseException invalidEnglishDate)
+            catch (@NotNull final ParseException invalidDate)
             {
+                try
+                {
+                    result = new SimpleDateFormat(DATE_FORMAT_EN).parse(validationValue);
+                }
+                catch (@NotNull final ParseException invalidEnglishDate)
+                {
+                }
             }
         }
 
