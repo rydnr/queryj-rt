@@ -81,7 +81,8 @@ public class SqlDecoratorHelperTest
             new SqlElement<>("id1", "name1", "select", Cardinality.SINGLE, "all", false, false, "none", "desc1");
 
         @NotNull final SqlDecorator sqlDecorator =
-            new CachingSqlDecorator()
+            new CachingSqlDecorator(sql, customSqlPro
+            )
         @NotNull final Result<String> result =
             new ResultElement<>("r1", String.class.getSimpleName());
 
