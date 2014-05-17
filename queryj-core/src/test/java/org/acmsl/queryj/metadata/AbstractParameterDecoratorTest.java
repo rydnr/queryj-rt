@@ -43,6 +43,7 @@ package org.acmsl.queryj.metadata;
  * Importing JUnit classes.
  */
 import org.acmsl.queryj.customsql.ParameterElement;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.junit.Test;
@@ -64,6 +65,8 @@ public class AbstractParameterDecoratorTest
     @Test
     public void isDate_detects_dates_parameters()
     {
+        @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
+
         @NotNull final AbstractParameterDecorator<String> instance =
             new AbstractParameterDecorator<>(
                 new ParameterElement<String, String>("p1", 1, "p1", "Date", null),
