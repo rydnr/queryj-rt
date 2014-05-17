@@ -149,7 +149,7 @@ query_parameter(parameter, select) ::= <<
 if(parameter.date)
 >| <parameter.id> | <select.id> | <parameter.index> | <parameter.type> | <parameter.name> | <parameter.validationValue> |<
 else
-
+>| <parameter.id> | <select.id> | <parameter.index> | <parameter.type> | <parameter.name> | <parameter.validationValue> |<
 >>
 
 static_row(row, table) ::= <<
