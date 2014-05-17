@@ -150,6 +150,7 @@ if(parameter.date)
 >| <parameter.id> | <select.id> | <parameter.index> | <parameter.type> | <parameter.name> | <parameter.validationValue> |<
 else
 >| <parameter.id> | <select.id> | <parameter.index> | <parameter.type> | <parameter.name> | [now] |<
+endif>
 >>
 
 static_row(row, table) ::= <<
