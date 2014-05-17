@@ -206,7 +206,7 @@ public abstract class AbstractResult<T>
     @Override
     public String toString()
     {
-        return toString( getId(), getPropertyRefs());
+        return toString(getId(), getPropertyRefs());
     }
 
     /**
