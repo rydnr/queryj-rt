@@ -81,7 +81,8 @@ public class BasePerCustomResultTemplateBuildHandlerTest
 
                 @Override
                 protected PerCustomResultTemplate createTemplate(
-                    @NotNull final PerCustomResultTemplateFactory templateFactory, @NotNull final Result<String> result, @NotNull final List<Property<String>> properties, @NotNull final QueryJCommand parameters)
+                    @NotNull final PerCustomResultTemplateFactory templateFactory,
+                    @NotNull final Result<String> result, @NotNull final List<Property<String>> properties, @NotNull final QueryJCommand parameters)
                 {
                     return null;  //To change body of implemented methods use File | Settings | File Templates.
                 }
