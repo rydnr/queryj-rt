@@ -264,7 +264,7 @@ public class <table.name.voName>DAOFactoryHelper
         }
         else
         {
-            logError("<C.package>.<table.name.capitalized>DAOFactory not specified");
+            logError("<C.package>.<table.name.voName>DAOFactory not specified");
         }
 
         return result;
