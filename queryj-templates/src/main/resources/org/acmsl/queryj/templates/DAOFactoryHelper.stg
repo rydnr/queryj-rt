@@ -156,7 +156,7 @@ public class <table.name.capitalized>DAOFactoryHelper
      * Retrieves a {@code <table.name.capitalized>DAOFactoryHelper} instance.
      * @return such instance.
      */
-    public static <table.name.capitalized>DAOFactoryHelper getInstance()
+    public static <table.name.voName>DAOFactoryHelper getInstance()
     {
         return <table.name.voName>DAOFactoryHelperSingletonContainer.SINGLETON;
     }
