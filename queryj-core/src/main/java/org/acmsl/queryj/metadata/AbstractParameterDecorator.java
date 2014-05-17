@@ -444,5 +444,6 @@ public abstract class AbstractParameterDecorator<V>
 
     public boolean isDate()
     {
+        return false;  //To change body of created methods use File | Settings | File Templates.
     }
 }
