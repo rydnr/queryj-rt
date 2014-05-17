@@ -131,12 +131,7 @@ class(repository, tables, C) ::= <<
  */
 <class_annotations(C=C)>
 public class <repository.capitalized>DataAccessManager
-<if(C.implement_markers)>
-    extends  DataAccessManager,
-             Serializable
-<else>
-    extends Serializable
-<endif>
+    implements Serializable
 {
     <tables:{ t | <dao_attribute_declaration(table=t, C=C)>}; separator="\n\n">
 
