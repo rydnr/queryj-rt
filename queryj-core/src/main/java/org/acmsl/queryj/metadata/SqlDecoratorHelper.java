@@ -60,6 +60,6 @@ public class SqlDecoratorHelper
     @NotNull
     public static SqlDecoratorHelper getInstance()
     {
-        return SqlDecoratorHelperSingletonContai
+        return SqlDecoratorHelperSingletonContainer
     }
 }
