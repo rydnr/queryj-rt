@@ -652,21 +652,6 @@ public abstract class AbstractSqlDecorator
         @NotNull final SqlDecoratorHelper sqlDecoratorHelper)
     {
         return sqlDecoratorHelper.getParameterTypes(parameters, metadataTypeManager);
-
-        for (@Nullable final Parameter<DecoratedString, ?> parameter : parameters)
-        {
-            if (parameter != null)
-            {
-                @NotNull final DecoratedString type = parameter.getType();
-
-                if (!result.contains(type))
-                {
-                    result.add(type);
-                }
-            }
-        }
-
-        return result;
     }
 
     /**
