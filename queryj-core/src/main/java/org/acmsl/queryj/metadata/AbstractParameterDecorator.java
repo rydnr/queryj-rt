@@ -388,6 +388,15 @@ public abstract class AbstractParameterDecorator<V>
     }
 
     /**
+     * Checks whether this parameter is a Date.
+     * @return {@code true} in such case.
+     */
+    public boolean isDate()
+    {
+        return isDate(getMetadataTypeManager());
+    }
+
+    /**
      * Provides a text representation of the information
      * contained in given instance.
      * @return such information.
