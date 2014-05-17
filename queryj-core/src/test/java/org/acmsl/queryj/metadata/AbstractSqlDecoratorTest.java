@@ -148,6 +148,7 @@ public class AbstractSqlDecoratorTest
     /**
      * Tests getParameterTypes() returns no duplicates.
      */
+    @SuppressWarnings("unchecked")
     @Test
     public void getParameterTypes_returns_no_duplicates()
     {
