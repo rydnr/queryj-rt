@@ -51,7 +51,7 @@ import org.checkthread.annotations.ThreadSafe;
 
 /**
  * Decorates &lt;parameter&gt; elements in <i>custom-sql</i> models.
- * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
+ * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro Armendariz</a>
  * @param <V> the type.
  */
 @ThreadSafe
