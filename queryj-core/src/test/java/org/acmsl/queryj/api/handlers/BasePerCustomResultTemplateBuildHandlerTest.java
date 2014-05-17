@@ -127,7 +127,7 @@ public class BasePerCustomResultTemplateBuildHandlerTest
                  */
                 @Override
                 protected PerCustomResultTemplate<PerCustomResultTemplateContext> createTemplate(
-                    @NotNull final PerCustomResultTemplateFactory templateFactory,
+                    @NotNull final PerCustomResultTemplateFactory<PerCustomResultTemplate<PerCustomResultTemplateContext>, PerCustomResultTemplateContext>>PerCustomResultTemplateFactory templateFactory,
                     @NotNull final Result<String> result,
                     @NotNull final List<Property<String>> properties,
                     @NotNull final QueryJCommand parameters)
