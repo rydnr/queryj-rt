@@ -763,4 +763,8 @@ public abstract class AbstractSqlDecorator
 
         return result;
     }
+
+    public List<DecoratedString> getParameterTypes()
+    {
+    }
 }
