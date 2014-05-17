@@ -76,7 +76,7 @@ public class BasePerCustomResultTemplateBuildHandlerTest
                 @Override
                 protected PerCustomResultTemplateFactory retrieveTemplateFactory()
                 {
-                    return
+                    return null;
                 }
 
                 @Override
