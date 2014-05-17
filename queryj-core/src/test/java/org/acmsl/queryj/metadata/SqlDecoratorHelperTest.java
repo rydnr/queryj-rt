@@ -95,7 +95,6 @@ public class SqlDecoratorHelperTest
         @NotNull final MetadataTypeManager metadataTypeManager = new JdbcMetadataTypeManager();
         @NotNull final SqlParameterDAO parameterDAO = EasyMock.createNiceMock(SqlParameterDAO.class);
 
-        EasyMock.expect(customSqlProvider.getSqlResultDAO()).andReturn(resultDAO);
         EasyMock.expect(customSqlProvider.getSqlParameterDAO()).andReturn(parameterDAO).anyTimes();
         EasyMock.expect(metadataManager.getMetadataTypeManager()).andReturn(metadataTypeManager).anyTimes();
         EasyMock.expect(parameterDAO.findByPrimaryKey("pid")).andReturn(parameter).anyTimes();
