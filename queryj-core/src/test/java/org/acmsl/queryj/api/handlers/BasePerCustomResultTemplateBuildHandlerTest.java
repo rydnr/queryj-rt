@@ -82,7 +82,7 @@ public class BasePerCustomResultTemplateBuildHandlerTest
                  * {@inheritDoc}
                  */
                 @Override
-                protected PerCustomResultTemplateFactory retrieveTemplateFactory()
+                protected TF retrieveTemplateFactory()
                 {
                     return null;
                 }
