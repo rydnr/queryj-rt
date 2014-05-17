@@ -146,8 +146,8 @@ query_parameter(parameter, select) ::= <<
  @param select the select.
  !>
 <
-if(parameter.date)>
-| <parameter.id> | <select.id> | <parameter.index> | <parameter.type> | <parameter.name> | <parameter.validationValue> |
+if(parameter.date)
+>| <parameter.id> | <select.id> | <parameter.index> | <parameter.type> | <parameter.name> | <parameter.validationValue> |
 >>
 
 static_row(row, table) ::= <<
