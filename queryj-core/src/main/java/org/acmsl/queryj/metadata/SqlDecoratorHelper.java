@@ -39,14 +39,17 @@ package org.acmsl.queryj.metadata;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.customsql.Parameter;
+import org.acmsl.queryj.metadata.vo.Attribute;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -89,7 +92,31 @@ public class SqlDecoratorHelper
         final List<Parameter<DecoratedString, ?>> parameters,
         final MetadataTypeManager metadataTypeManager)
     {
-        return new ArrayList<>(0);
+        @NotNull final List<DecoratedString> result = new ArrayList<>(attrs.size());
+
+        for (@Nullable final Attribute<DecoratedString> attr: attrs)
+        {
+            if (attr != null)
+            {
+                @Nullable final String importType =
+                    typeManager.getImport(
+                        typeManager.getJavaType(attr.getType().getValue()));
+
+                if (importType != null)
+                {
+                    @NotNull final DecoratedString value = new DecoratedString(importType);
+
+                    if (!result.contains(value))
+                    {
+                        result.add(value);
+                    }
+                }
+            }
+        }
+
+        Collections.sort(result);
+
+        return result;
     }
 
 }
