@@ -441,4 +441,8 @@ public abstract class AbstractParameterDecorator<V>
 
         return result;
     }
+
+    public boolean isDate()
+    {
+    }
 }
