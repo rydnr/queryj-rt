@@ -55,6 +55,6 @@ import org.checkthread.annotations.ThreadSafe;
 public class SqlDecoratorHelper
 {
     /**
-     * Retrieves the singlenot
+     * Retrieves the singleton instance.
      */
 }
