@@ -94,7 +94,7 @@ public class SqlDecoratorHelper
     {
         @NotNull final List<DecoratedString> result = new ArrayList<>(parameters.size());
 
-        for (@Nullable final Attribute<DecoratedString> attr: parameters)
+        for (@Nullable final Parameter<DecoratedString, ?> attr: parameters)
         {
             if (attr != null)
             {
