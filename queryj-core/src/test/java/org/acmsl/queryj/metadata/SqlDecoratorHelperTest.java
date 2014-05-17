@@ -70,6 +70,10 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public class SqlDecoratorHelperTest
 {
+    /**
+     * Tests getParameterTypes() returns no duplicates.
+     */
+    @SuppressWarnings("unchecked")
     @Test
     public void getParameterTypes_returns_no_duplicates()
     {
