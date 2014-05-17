@@ -363,6 +363,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
                 resultsByClass.put(customResult.getClassValue(), customResult);
             }
         }
+
         @NotNull final HashSet<Result<String>> t_Aux = new HashSet<>(results.size());
 
         t_Aux.addAll(results);
