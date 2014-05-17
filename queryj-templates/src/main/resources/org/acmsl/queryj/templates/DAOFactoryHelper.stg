@@ -70,7 +70,7 @@ sourceImpl(table, C) ::= <<
 /*
  * Importing <C.repository.capitalized> classes.
  */
-import <C.project_package>.<typeInitMap.baseDAOSubpackageName>.<C.repository.capitalized>DAOChooser;
+import <C.project_package>.<typeInitMap.baseDAOSubpackageName>.core.<C.repository.capitalized>DAOChooser;
 
 <checkers_import(C=C)>
 /*
