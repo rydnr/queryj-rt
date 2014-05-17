@@ -226,7 +226,7 @@ public class <table.name.capitalized>DAOFactoryHelper
      * @return such instance.
      */
     <nullable(C=C)>
-    protected static <table.name.capitalized>DAOFactory getDAOFactory(
+    protected <table.name.capitalized>DAOFactory getDAOFactory(
         <notnull(C=C)>final <repository.capitalized>DAOChooser daoChooser)
     {
         <nullable(C=C)><table.name.capitalized>DAOFactory result = null;
