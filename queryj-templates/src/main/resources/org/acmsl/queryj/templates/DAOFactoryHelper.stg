@@ -267,7 +267,7 @@ public class <table.name.voName>DAOFactoryHelper
             {
                 logError(
                     "Insufficient rights to instantiate " + factoryClassName,
-                    invalidClassName);
+                    illegalAccess);
             }
         }
         else
