@@ -384,7 +384,7 @@ public abstract class AbstractParameterDecorator<V>
      */
     public boolean isDate()
     {
-        return false;
+        return isDate(getMetadataTypeManager());
     }
 
     /**
