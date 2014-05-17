@@ -650,7 +650,10 @@ public abstract class AbstractSqlDecorator
 
         for (@Nullable final Parameter<DecoratedString, ?> parameter : parameters)
         {
+            if (parameter != null)
+            {
 
+            }
         }
         return result;
     }
