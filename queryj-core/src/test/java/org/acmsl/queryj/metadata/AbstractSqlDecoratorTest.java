@@ -141,4 +141,6 @@ public class AbstractSqlDecoratorTest
     /**
      * Tests getParameterTypes() returns no duplicates.
      */
+    @Test
+    public void
 }
