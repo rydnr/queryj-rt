@@ -58,5 +58,8 @@ public class SqlDecoratorHelper
      * Retrieves the singleton instance.
      */
     @NotNull
-    public static SqlDecoratorHelper get
+    public static SqlDecoratorHelper getInstance()
+    {
+
+    }
 }
