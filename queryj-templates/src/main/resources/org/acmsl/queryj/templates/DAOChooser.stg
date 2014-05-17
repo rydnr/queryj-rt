@@ -145,18 +145,6 @@ public class <repository.capitalized>DAOChooser
 <if(C.repository_dao)>
     <repository_dao_constant(repository=repository, C=C)>
 <endif>
-
-    /**
-     * The configuration settings.
-     */
-    <notnull(C=C)>
-    private static final String PROPERTIES_FILE = "queryj-<repository.lowercased>.properties";
-
-    /**
-     * The configuration settings.
-     */
-    private Properties m__Properties;
-
     /**
      * Specifies the properties.
      * @param properties the new properties.
