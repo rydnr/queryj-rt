@@ -56,5 +56,5 @@ import org.junit.runners.JUnit4;
 public class AbstractParameterDecoratorTest
 {
     @Test
-    public void
+    public void isDate_detects_date
 }
