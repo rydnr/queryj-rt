@@ -87,7 +87,7 @@ public class BasePerCustomResultTemplateBuildHandlerTest
         @NotNull final List<Result<String>> results = new ArrayList<>(4);
 
         results.add(new ResultElement<>("single.r1", "Class1"));
-        results.add(new ResultElement<>("r2", "Class2"));
+        results.add(new ResultElement<>("multiple.r1", "Class2"));
         results.add(new ResultElement<>("r3", "Class3"));
         results.add(new ResultElement<>("r4", "Class4"));
 
