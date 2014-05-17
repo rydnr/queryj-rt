@@ -269,7 +269,7 @@ public class <table.name.capitalized>DAOFactoryHelper
      * @param message the error message.
      * @param error the underlying error (optional).
      */
-    protected static void logError(<notnull(C=C)>final String message, <nullable(C=C)>final Throwable error)
+    protected void logError(<notnull(C=C)>final String message, <nullable(C=C)>final Throwable error)
     {
         try
         {
