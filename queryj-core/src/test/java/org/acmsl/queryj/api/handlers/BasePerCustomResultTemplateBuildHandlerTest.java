@@ -58,5 +58,5 @@ import org.junit.runners.JUnit4;
 public class BasePerCustomResultTemplateBuildHandlerTest
 {
     @Test
-    public void fixDuplicated_removes_single_
+    public void fixDuplicated_removes_extra_results_
 }
