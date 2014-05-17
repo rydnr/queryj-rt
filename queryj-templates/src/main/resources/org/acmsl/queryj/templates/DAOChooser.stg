@@ -155,6 +155,7 @@ public class <repository.capitalized>DAOChooser
 <if(C.repository_dao)>
     <repository_dao_constant(repository=repository, C=C)>
 <endif>
+
     /**
      * Specifies the properties.
      * @param properties the new properties.
