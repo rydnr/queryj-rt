@@ -116,7 +116,6 @@ public class SqlDecoratorHelperTest
 
         Assert.assertEquals(1, parameterTypes.size());
 
-        EasyMock.verify(customSqlProvider);
         EasyMock.verify(parameterDAO);
         EasyMock.verify(metadataManager);
     }
