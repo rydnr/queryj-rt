@@ -364,7 +364,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
             }
         }
 
-        return resultsByClass.values();
+        return new ArrayList<>(resultsByClass.values());
     }
 
     /**
