@@ -55,8 +55,9 @@ import org.checkthread.annotations.ThreadSafe;
 public class SqlDecoratorHelper
 {
     /**
-     * Singleton implemented to avoid double-check locking
+     * Singleton implemented to avoid double-check locking.
      */
+    protected final class SqlDecoratorHelperSingletonInstance()
     /**
      * Retrieves the singleton instance.
      */
