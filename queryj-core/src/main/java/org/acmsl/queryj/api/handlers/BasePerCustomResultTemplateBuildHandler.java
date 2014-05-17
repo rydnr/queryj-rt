@@ -246,7 +246,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
      * @param metadataManager the {@link MetadataManager} instance.
      * @param customResultUtils the {@link CustomResultUtils} instance.
-     * @return {@code true</code> in such case.
+     * @return {@code true} in such case.
      */
     @ThreadSafe
     protected boolean isGenerationAllowedForResult(
