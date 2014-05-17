@@ -78,6 +78,7 @@ import org.apache.commons.logging.LogFactory;
  * Importing JDK classes.
  */
 import java.io.IOException;
+import java.io.IOException;
 import java.io.Serializable;
 import java.util.Properties;
 
