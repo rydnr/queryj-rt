@@ -341,7 +341,7 @@ public class <table.name.capitalized>DAOFactoryHelper
      * @param printStream the {@link PrintStream}.
      * @param message the message.
      */
-    protected static void logError(
+    protected void logError(
         <notnull(C=C)>final PrintStream printStream, <notnull(C=C)>final String message)
     {
         logError(printStream, message, null);
