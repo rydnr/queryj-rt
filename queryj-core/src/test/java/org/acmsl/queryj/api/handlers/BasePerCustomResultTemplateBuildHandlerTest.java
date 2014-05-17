@@ -73,6 +73,9 @@ public class BasePerCustomResultTemplateBuildHandlerTest
         @NotNull final BasePerCustomResultTemplateBuildHandler instance =
             new BasePerCustomResultTemplateBuildHandler()
             {
+                /**
+                 * {@inheritDoc}
+                 */
                 @Override
                 protected PerCustomResultTemplateFactory retrieveTemplateFactory()
                 {
