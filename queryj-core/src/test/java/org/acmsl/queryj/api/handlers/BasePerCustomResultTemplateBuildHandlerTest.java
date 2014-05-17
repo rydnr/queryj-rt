@@ -82,6 +82,9 @@ public class BasePerCustomResultTemplateBuildHandlerTest
                     return null;
                 }
 
+                /**
+                 * {@inheritDoc}
+                 */
                 @Override
                 protected PerCustomResultTemplate createTemplate(
                     @NotNull final PerCustomResultTemplateFactory templateFactory,
