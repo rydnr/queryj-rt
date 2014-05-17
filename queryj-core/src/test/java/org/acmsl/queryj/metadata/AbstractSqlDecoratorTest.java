@@ -138,4 +138,7 @@ public class AbstractSqlDecoratorTest
         EasyMock.verify(customSqlProvider);
     }
 
+    /**
+     * Tests
+     */
 }
