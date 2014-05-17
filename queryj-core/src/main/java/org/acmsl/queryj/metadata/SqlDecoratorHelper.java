@@ -87,7 +87,7 @@ public class SqlDecoratorHelper
         final List<Parameter<DecoratedString, ?>> parameters,
         final MetadataTypeManager metadataTypeManager)
     {
-        return new ArrayList<>
+        return new ArrayList<>(0);
     }
 
 }
