@@ -644,7 +644,10 @@ public abstract class AbstractSqlDecorator
      * @return such list.
      */
     @NotNull
-    protected List<DecoratedString> getParameterTypes(@NotNull final List<Parameter<DecoratedString, ?>> parameters)
+    protected List<DecoratedString> getParameterTypes(
+        @NotNull final List<Parameter<DecoratedString, ?>> parameters,
+        @NotNull final MetadataTypeManager metadataTypeManager,
+        @NotNull final SqlDecoratorHelper sqlDecoratorHelper)
     {
         @NotNull final List<DecoratedString> result = new ArrayList<>(parameters.size());
 
