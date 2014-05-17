@@ -42,6 +42,7 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing JUnit classes.
  */
+import org.acmsl.queryj.customsql.ParameterElement;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.junit.Test;
@@ -64,7 +65,9 @@ public class AbstractParameterDecoratorTest
     public void isDate_detects_dates_parameters()
     {
         @NotNull final AbstractParameterDecorator<String> instance =
-            new AbstractParameterDecorator<String>() {};
+            new AbstractParameterDecorator<>(
+                new ParameterElement<String, String>()
+            ) {};
 
     }
 }
