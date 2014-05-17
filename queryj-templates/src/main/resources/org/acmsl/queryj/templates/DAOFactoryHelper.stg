@@ -257,7 +257,7 @@ public class <table.name.voName>DAOFactoryHelper
                     "Cannot find " + factoryClassName + " implementation",
                     factoryImplementationMissing);
             }
-            catch (@NotNull final InstantiationException invalidClassName)
+            catch (<notnull(C=C)>final InstantiationException invalidClassName)
             {
                 logError(
                     "Cannot instantiate " + factoryClassName + " implementation",
