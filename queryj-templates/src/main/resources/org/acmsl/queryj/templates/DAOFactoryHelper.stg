@@ -231,6 +231,7 @@ public class <table.name.voName>DAOFactoryHelper
      * @return such instance.
      */
     <nullable(C=C)>
+    @SuppressWarnings("unchecked")
     protected <table.name.voName>DAOFactory getDAOFactory(
         <notnull(C=C)>final <repository.capitalized>DAOChooser daoChooser)
     {
