@@ -105,12 +105,7 @@ class(repository, tables, C) ::= <<
  */
 <class_annotations(C=C)>
 public class <repository.capitalized>DAOChooser
-<if(C.implement_markers)>
-    extends  DAOChooser,
-             Serializable
-<else>
     extends Serializable
-<endif>
 {
 
     /**
