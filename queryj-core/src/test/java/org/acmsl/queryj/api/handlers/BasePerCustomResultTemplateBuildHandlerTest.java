@@ -47,6 +47,10 @@ import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.ResultElement;
 import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.engines.Engine;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -57,6 +61,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+/*
+ * Importing JetBrains annotations.
+ */
 import java.util.ArrayList;
 import java.util.List;
 
