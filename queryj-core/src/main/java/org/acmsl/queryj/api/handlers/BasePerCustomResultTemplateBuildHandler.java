@@ -351,18 +351,18 @@ public abstract class BasePerCustomResultTemplateBuildHandler
     @NotNull
     protected List<Result<String>> fixDuplicated(@NotNull final List<Result<String>> results)
     {
-        @NotNull final Map<String, Result<String>> resultsByClass = new HashMap<>(results.size());
+        @NotNull final Map<String, Result<String>> result = new HashMap<>(results.size());
 
         for (@Nullable final Result<String> customResult : results)
         {
             if (   (customResult != null)
-                && (!resultsByClass.containsKey(customResult.getClassValue())))
+                && (!result.containsKey(customResult.getClassValue())))
             {
-                resultsByClass.put(customResult.getClassValue(), customResult);
+                result.put(customResult.getClassValue(), customResult);
             }
         }
 
-        return new ArrayList<>(resultsByClass.values());
+        return new ArrayList<>(result.values());
     }
 
     /**
