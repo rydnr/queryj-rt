@@ -53,7 +53,9 @@ import org.checkthread.annotations.ThreadSafe;
  *    id ID #REQUIRED
  *    index CDATA #IMPLIED
  *    type CDATA #REQUIRED&gt;
- * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
+ * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro Armendariz</a>
+ * @param <T> the type.
+ * @param <V> the type of the value.
  */
 @ThreadSafe
 public class ParameterElement<T, V>
