@@ -102,7 +102,7 @@ public class SqlDecoratorHelperTest
         EasyMock.replay(parameterDAO);
         EasyMock.replay(resultDAO);
 
-        @NotNull final AbstractSqlDecorator instance =
+        @NotNull final SqlDecorator instance =
             new AbstractSqlDecorator(sql, customSqlProvider, metadataManager) {};
 
         @NotNull final List<DecoratedString> parameterTypes = instance.getParameterTypes();
