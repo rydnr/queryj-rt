@@ -757,7 +757,7 @@ public class TableTestHelper
             else
             {
 
-                List<Attribute<String>> rowValues = fillValues(contents, table.getAttributes());
+                final List<Attribute<String>> rowValues = fillValues(contents, table.getAttributes());
 
                 @Nullable final String rowName = retrieveRowName(rowValues, table);
 
