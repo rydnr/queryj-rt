@@ -95,6 +95,9 @@ public class BasePerCustomResultTemplateBuildHandlerTest
                     return null;
                 }
 
+                /**
+                 * {@inheritDoc}
+                 */
                 @Override
                 protected String retrievePackage(
                     @NotNull final Result<String> customResult,
