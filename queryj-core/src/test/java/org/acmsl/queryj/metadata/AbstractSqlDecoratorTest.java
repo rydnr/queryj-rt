@@ -175,6 +175,8 @@ public class AbstractSqlDecoratorTest
         EasyMock.expect(resultDAO.findBySqlId(sql.getId())).andReturn(result);
 
         EasyMock.replay(customSqlProvider);
+        EasyMock.replay(parameterDAO);
+        EasyMock.replay(resultDAO);
 
         @NotNull final AbstractSqlDecorator instance =
             new AbstractSqlDecorator(sql, customSqlProvider, metadataManager) {};
