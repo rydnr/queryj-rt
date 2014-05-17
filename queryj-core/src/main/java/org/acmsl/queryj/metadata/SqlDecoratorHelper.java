@@ -57,7 +57,7 @@ public class SqlDecoratorHelper
     /**
      * Singleton implemented to avoid double-check locking.
      */
-    protected final class SqlDecoratorHelperSingletonInstance
+    protected static final class SqlDecoratorHelperSingletonInstance
     {
         /**
          * The singleton instance.
