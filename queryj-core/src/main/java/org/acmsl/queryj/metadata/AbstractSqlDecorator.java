@@ -652,7 +652,7 @@ public abstract class AbstractSqlDecorator
         {
             if (parameter != null)
             {
-
+                parameter.getType()
             }
         }
         return result;
