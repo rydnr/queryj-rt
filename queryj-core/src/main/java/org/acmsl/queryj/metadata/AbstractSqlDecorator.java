@@ -651,7 +651,7 @@ public abstract class AbstractSqlDecorator
         @NotNull final MetadataTypeManager metadataTypeManager,
         @NotNull final SqlDecoratorHelper sqlDecoratorHelper)
     {
-        @NotNull final List<DecoratedString> result = new ArrayList<>(parameters.size());
+        return
 
         for (@Nullable final Parameter<DecoratedString, ?> parameter : parameters)
         {
