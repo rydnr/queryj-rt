@@ -134,7 +134,7 @@ public class <table.name.capitalized>DAOFactoryHelper
      * The cached instance of the most recent implementation.
      */
     <nullable(C=C)>
-    private <table.name.capitalized>DAOFactory m__LastUsed;
+    private <table.name.voName>DAOFactory m__LastUsed;
 
     /**
      * Public constructor to allow reflection/deserialization.
