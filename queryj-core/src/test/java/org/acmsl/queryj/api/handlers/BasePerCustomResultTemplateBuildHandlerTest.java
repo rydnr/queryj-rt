@@ -100,9 +100,8 @@ public class BasePerCustomResultTemplateBuildHandlerTest
      * @return such instance.
      */
     protected BasePerCustomResultTemplateBuildHandler
-    new BasePerCustomResultTemplateBuildHandler
-    <PerCustomResultTemplate<PerCustomResultTemplateContext>,
-        PerCustomResultTemplateContext,
+                <PerCustomResultTemplate<PerCustomResultTemplateContext>,
+                PerCustomResultTemplateContext,
         PerCustomResultTemplateFactory<PerCustomResultTemplate<PerCustomResultTemplateContext>, PerCustomResultTemplateContext>> createInstance()
     {
         return
