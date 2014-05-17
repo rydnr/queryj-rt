@@ -154,8 +154,6 @@ public class ParameterElement<T, V>
 
     /**
      * {@inheritDoc}
-     * @param parameter
-     * @return
      */
     @Override
     public int compareTo(final Parameter<T, V> parameter)
