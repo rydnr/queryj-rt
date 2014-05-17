@@ -377,6 +377,16 @@ public abstract class AbstractParameterDecorator<V>
         return "";
     }
 
+
+    /**
+     * Checks whether this parameter is a Date.
+     * @return {@code true} in such case.
+     */
+    public boolean isDate()
+    {
+        return false;
+    }
+
     /**
      * Provides a text representation of the information
      * contained in given instance.
