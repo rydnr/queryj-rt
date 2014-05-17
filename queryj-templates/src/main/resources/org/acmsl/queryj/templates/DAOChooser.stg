@@ -103,6 +103,7 @@ class(repository, tables, C) ::= <<
     ]:{line |<line>}; separator="\n * ">
 <class_common_javadoc(template="org/acmsl/queryj/templates/DAOChooser.stg", C=C)>
  */
+<class_annotations(C=C)>
 public class <repository.capitalized>DAOChooser
 <if(C.implement_markers)>
     extends  DAOChooser,
