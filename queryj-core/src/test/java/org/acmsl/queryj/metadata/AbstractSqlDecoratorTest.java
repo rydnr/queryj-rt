@@ -59,6 +59,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.powermock.modules.junit4.PowerMockRunner;
 
+import java.util.List;
+
 /**
  * Tests for {@link AbstractSqlDecorator}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
@@ -161,7 +163,7 @@ public class AbstractSqlDecoratorTest
         @NotNull final AbstractSqlDecorator instance =
             new AbstractSqlDecorator(sql, customSqlProvider, metadataManager) {};
 
-        @NotNull final List<>
+        @NotNull final List<DecoratedString> parameterTypes =
         Assert.assertTrue(instance.isResultNullable());
 
         EasyMock.verify(customSqlProvider);
