@@ -73,7 +73,7 @@ public class BasePerCustomResultTemplateBuildHandlerTest
         @NotNull final BasePerCustomResultTemplateBuildHandler instance = createInstance();
     }
 
-    protected void fixDuplicated_removes_extra_results_differing_only_in_cardinality()
+    protected BasePerCustomResultTemplateBuildHandler  fixDuplicated_removes_extra_results_differing_only_in_cardinality()
     {
         @NotNull final BasePerCustomResultTemplateBuildHandler instance =
             new BasePerCustomResultTemplateBuildHandler()
