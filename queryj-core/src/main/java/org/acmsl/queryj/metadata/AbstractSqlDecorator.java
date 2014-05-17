@@ -660,6 +660,7 @@ public abstract class AbstractSqlDecorator
                 }
             }
         }
+
         return result;
     }
 
