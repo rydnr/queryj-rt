@@ -288,7 +288,7 @@ public class <table.name.voName>DAOFactoryHelper
     {
         try
         {
-            <nullable(C=C)>final Log log = LogFactory.getLog(<table.name.voName>DAOFactory.class);
+            <nullable(C=C)>final Log log = LogFactory.getLog(<table.name.voName>DAOFactoryHelper.class);
 
             if (log != null)
             {
