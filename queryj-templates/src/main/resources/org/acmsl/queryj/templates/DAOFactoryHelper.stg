@@ -263,7 +263,7 @@ public class <table.name.voName>DAOFactoryHelper
                     "Cannot instantiate " + factoryClassName + " implementation",
                     invalidClassName);
             }
-            catch (@NotNull final IllegalAccessException illegalAccess)
+            catch (<notnull(C=C)>final IllegalAccessException illegalAccess)
             {
                 logError(
                     "Insufficient rights to instantiate " + factoryClassName,
