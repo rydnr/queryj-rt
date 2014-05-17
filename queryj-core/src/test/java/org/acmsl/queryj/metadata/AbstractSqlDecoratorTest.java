@@ -137,10 +137,10 @@ public class AbstractSqlDecoratorTest
         EasyMock.expect(customSqlProvider.getSqlResultDAO()).andReturn(resultDAO).anyTimes();
         EasyMock.expect(customSqlProvider.getSqlParameterDAO()).andReturn(parameterDAO).anyTimes();
         EasyMock.expect(parameterDAO.findByPrimaryKey("pid")).andReturn(parameter).anyTimes();
+        EasyMock.expect(resultDAO.findBySqlId(sql.getId())).andReturn(result);
 
         EasyMock.replay(customSqlProvider);
         EasyMock.replay(parameterDAO);
-        EasyMock.expect(resultDAO.findBySqlId(sql.getId())).andReturn(result);
 
         @NotNull final AbstractSqlDecorator instance =
             new AbstractSqlDecorator(sql, customSqlProvider, metadataManager) {};
