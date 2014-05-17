@@ -376,7 +376,7 @@ public class <table.name.voName>DAOFactoryHelper
         if (error != null)
         {
             printStream.println(message + " (" + error.getMessage() + ")");
-            error.printStacktrace(printStream);
+            error.printStackTrace(printStream);
         }
         else
         {
