@@ -243,7 +243,7 @@ protected <table.name.voName>DAO get<table.name.voName>DAO(<notnull(C=C)>final <
         <notnull(C=C)>final <table.name.voName>DAOFactory <table.name.voName.uncapitalized>DAOFactory =
             <table.name.voName>DAOFactoryHelper.getDAOFactory();
 
-        if  (<table.name.voName>DAOFactory != null)
+        if  (<table.name.voName.uncapitalized>DAOFactory != null)
         {
             aux = t_<table.name.voName>DAOFactory.createDAO();
 
