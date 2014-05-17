@@ -106,7 +106,8 @@ public class SqlDecoratorHelperTest
 
         (sql, customSqlProvider, metadataManager) {};
 
-        @NotNull final List<DecoratedString> parameterTypes = instance.getParameterTypes(sql.getParameters());
+        @NotNull final List<DecoratedString> parameterTypes =
+            instance.getParameterTypes(sql.getParameters(), metadataTypeManager);
 
         Assert.assertEquals(1, parameterTypes.size());
 
