@@ -389,7 +389,7 @@ public abstract class AbstractParameterDecorator<V>
 
     /**
      * Checks whether this parameter is a Date.
-     *
+     * @param metadataTypeManager the {@link MetadataTypeManager} instance.
      * @return {@code true} in such case.
      */
     protected boolean isDate(@NotNull final MetadataTypeManager metadataTypeManager)
