@@ -69,6 +69,7 @@ import org.checkthread.annotations.ThreadSafe;
  * Importing some JDK classes.
  */
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -352,7 +353,8 @@ public abstract class BasePerCustomResultTemplateBuildHandler
     {
         @NotNull final List<Result<String>> result = new ArrayList<>(results.size());
 
-        @NotNull final Map<String, Result<String>> resultsByClass = new
+        @NotNull final Map<String, Result<String>> resultsByClass = new HashMap<>(results.size());
+
         for (@Nullable final Result<String> customResult : results)
         {
             if (customResult != null)
