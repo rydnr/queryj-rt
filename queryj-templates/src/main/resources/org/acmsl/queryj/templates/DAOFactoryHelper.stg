@@ -271,7 +271,7 @@ public class <table.name.voName>DAOFactoryHelper
 
     /**
      * Logs an error.
-     * @param message the message.
+     * @param message the message to log.
      */
     protected void logError(<notnull(C=C)>final String message)
     {
