@@ -107,8 +107,6 @@ public class SqlDecoratorHelperTest
 
         @NotNull final SqlDecoratorHelper instance = SqlDecoratorHelper.getInstance();
 
-        (sql, customSqlProvider, metadataManager) {};
-
         @NotNull final List<DecoratedString> parameterTypes =
             instance.getParameterTypes(sqlDecorator.getParameters(), metadataManager.getMetadataTypeManager());
 
