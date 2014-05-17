@@ -251,7 +251,7 @@ public class <table.name.voName>DAOFactoryHelper
 
                 result = (<table.name.voName>DAOFactory) factoryClass.newInstance();
             }
-            catch (@NotNull final ClassNotFoundException factoryImplementationMissing)
+            catch (<notnull(C=C)>final ClassNotFoundException factoryImplementationMissing)
             {
                 logError(
                     "Cannot find " + factoryClassName + " implementation",
