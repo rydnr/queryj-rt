@@ -223,6 +223,8 @@ public class <table.name.voName>DAOFactoryHelper
         {
             result = lastUsed;
         }
+
+        return result;
     }
 
     /**
