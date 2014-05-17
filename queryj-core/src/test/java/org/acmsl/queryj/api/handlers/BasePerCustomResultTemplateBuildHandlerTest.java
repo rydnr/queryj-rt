@@ -38,6 +38,15 @@ package org.acmsl.queryj.api.handlers;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.api.PerCustomResultTemplate;
+import org.acmsl.queryj.api.PerCustomResultTemplateFactory;
+import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.customsql.CustomSqlProvider;
+import org.acmsl.queryj.customsql.Property;
+import org.acmsl.queryj.customsql.Result;
+import org.acmsl.queryj.metadata.MetadataManager;
+import org.acmsl.queryj.metadata.engines.Engine;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -46,6 +55,8 @@ import org.jetbrains.annotations.NotNull;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+
+import java.util.List;
 
 /**
  *
@@ -59,6 +70,36 @@ public class BasePerCustomResultTemplateBuildHandlerTest
     @Test
     public void fixDuplicated_removes_extra_results_differing_only_in_cardinality()
     {
-        @NotNull final BasePerCustomResultTemplateBuildHandler
+        @NotNull final BasePerCustomResultTemplateBuildHandler instance =
+            new BasePerCustomResultTemplateBuildHandler()
+            {
+                @Override
+                protected PerCustomResultTemplateFactory retrieveTemplateFactory()
+                {
+                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+
+                @Override
+                protected PerCustomResultTemplate createTemplate(@NotNull final PerCustomResultTemplateFactory templateFactory, @NotNull final Result<String> result, @NotNull final List<Property<String>> properties, @NotNull final QueryJCommand parameters)
+                {
+                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+
+                @Override
+                protected String retrievePackage(@NotNull final Result<String> customResult, @NotNull final
+                CustomSqlProvider customSqlProvider, @NotNull final MetadataManager metadataManager,
+                                                 @NotNull final Engine<String> engine, @NotNull final QueryJCommand
+                    parameters)
+                    throws QueryJBuildException
+                {
+                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+
+                @Override
+                protected void storeTemplates(@NotNull final List templates, @NotNull final QueryJCommand parameters)
+                {
+                    //To change body of implemented methods use File | Settings | File Templates.
+                }
+            }
     }
 }
