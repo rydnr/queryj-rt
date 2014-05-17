@@ -43,6 +43,7 @@ package org.acmsl.queryj.metadata;
  * Importing JUnit classes.
  */
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -62,7 +63,21 @@ public class AbstractParameterDecoratorTest
     @Test
     public void isDate_detects_dates_parameters()
     {
-        @NotNull final AbstractParameterDecorator<>
+        @NotNull final AbstractParameterDecorator<String> instance =
+            new AbstractParameterDecorator<String>()
+            {
+                /**
+                 * Checks whether given object is semantically equal to this instance.
+                 *
+                 * @param object the object to compare to.
+                 * @return the result of such comparison.
+                 */
+                @Override
+                public boolean equals(@Nullable final Object object)
+                {
+                    return super.equals(object);
+                }
+            }
 
     }
 }
