@@ -51,7 +51,7 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Decorates &lt;parameter&gt; elements in <i>custom-sql</i> models.
- * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
+ * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro Armendariz</a>
  * @param <V> the type.
  */
 public interface ParameterDecorator<V>
