@@ -71,6 +71,7 @@ import org.checkthread.annotations.ThreadSafe;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Builds all templates to generate sources for each custom result.
