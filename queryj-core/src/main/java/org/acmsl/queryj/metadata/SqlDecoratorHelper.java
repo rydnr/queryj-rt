@@ -46,6 +46,7 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -86,7 +87,7 @@ public class SqlDecoratorHelper
         final List<Parameter<DecoratedString, ?>> parameters,
         final MetadataTypeManager metadataTypeManager)
     {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        return new ArrayList<>
     }
 
 }
