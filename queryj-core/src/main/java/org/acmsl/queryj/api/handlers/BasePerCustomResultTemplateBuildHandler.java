@@ -355,6 +355,8 @@ public abstract class BasePerCustomResultTemplateBuildHandler
         {
             if (customResult != null)
             {
+
+            }
         }
         @NotNull final HashSet<Result<String>> t_Aux = new HashSet<>(results.size());
 
