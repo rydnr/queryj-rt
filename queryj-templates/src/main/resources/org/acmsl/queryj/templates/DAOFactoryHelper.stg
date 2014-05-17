@@ -131,6 +131,11 @@ classImpl(table, repository, C) ::= <<
 public class <table.name.capitalized>DAOFactoryHelper
 {
     /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = <C.serialVersionUID>L;
+
+    /**
      * The cached instance of the most recent implementation.
      */
     <nullable(C=C)>
