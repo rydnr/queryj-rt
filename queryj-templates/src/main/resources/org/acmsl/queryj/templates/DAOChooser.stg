@@ -158,21 +158,6 @@ public class <repository.capitalized>DAOChooser
     private Properties m__Properties;
 
     /**
-     * Public constructor to allow reflective access.
-     */
-    public <repository.capitalized>DAOChooser() {};
-
-    /**
-     * Retrieves a {@code <repository.capitalized>DAOChooser} instance.
-     * @return such instance.
-     */
-    <notnull(C=C)>
-    public static <repository.capitalized>DAOChooser getInstance()
-    {
-        return <repository.capitalized>DAOChooserSingletonContainer.SINGLETON;
-    }
-
-    /**
      * Specifies the properties.
      * @param properties the new properties.
      */
