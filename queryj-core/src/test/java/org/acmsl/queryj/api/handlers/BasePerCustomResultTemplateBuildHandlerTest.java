@@ -41,7 +41,6 @@ package org.acmsl.queryj.api.handlers;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.PerCustomResultTemplate;
 import org.acmsl.queryj.api.PerCustomResultTemplateFactory;
-import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.Result;
