@@ -163,7 +163,7 @@ public class <table.name.capitalized>DAOFactoryHelper
 
     /**
      * Specifies the last used instance.
-     * @param factory the last used {@code <table.name.capitalized>DAOFactory}.
+     * @param factory the last used {@code <table.name.voName>DAOFactory}.
      */
     protected final void immutableSetLastUsed(<notnull(C=C)>final <table.name.voName>DAOFactory factory)
     {
