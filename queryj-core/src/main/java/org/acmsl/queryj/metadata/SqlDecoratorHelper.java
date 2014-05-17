@@ -92,7 +92,7 @@ public class SqlDecoratorHelper
         final List<Parameter<DecoratedString, ?>> parameters,
         final MetadataTypeManager metadataTypeManager)
     {
-        @NotNull final List<DecoratedString> result = new ArrayList<>(attrs.size());
+        @NotNull final List<DecoratedString> result = new ArrayList<>(parameters.size());
 
         for (@Nullable final Attribute<DecoratedString> attr: attrs)
         {
