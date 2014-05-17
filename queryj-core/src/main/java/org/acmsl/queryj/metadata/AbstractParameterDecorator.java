@@ -393,7 +393,7 @@ public abstract class AbstractParameterDecorator<V>
      * @param metadataTypeManager the {@link MetadataTypeManager} instance.
      * @return {@code true} in such case.
      */
-    protected boolean isDate(@NotNull final String type, @NotNull final MetadataTypeManager metadataTypeManager)
+    protected boolean isDate(@NotNull final DecoratedString type, @NotNull final MetadataTypeManager metadataTypeManager)
     {
         return metadataTypeManager.isDate()
     }
