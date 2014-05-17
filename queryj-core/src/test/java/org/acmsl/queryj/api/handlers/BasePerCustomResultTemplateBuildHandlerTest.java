@@ -45,6 +45,7 @@ import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.Result;
+import org.acmsl.queryj.customsql.ResultElement;
 import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.engines.Engine;
 import org.jetbrains.annotations.NotNull;
@@ -76,7 +77,7 @@ public class BasePerCustomResultTemplateBuildHandlerTest
 
         @NotNull final List<Result<String>> results = new ArrayList<>(4);
 
-
+        results.add(new ResultElement<String>())
         Assert.assertEquals(3, instance.fixDuplicated(results));
     }
 
