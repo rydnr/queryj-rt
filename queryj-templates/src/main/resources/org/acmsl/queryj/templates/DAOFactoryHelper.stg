@@ -247,7 +247,7 @@ public class <table.name.voName>DAOFactoryHelper
                 <notnull(C=C)>final Class\<?> factoryClass =
                     Class.forName(factoryClassName);
 
-                result = factoryClass.newInstance();
+                result = (Class<factoryClass.newInstance();
             }
             catch (@NotNull final ClassNotFoundException factoryImplementationMissing)
             {
