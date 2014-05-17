@@ -194,7 +194,7 @@ public class <table.name.capitalized>DAOFactoryHelper
      * @return such instance.
      */
     <nullable(C=C)>
-    public <table.name.capitalized>DAOFactory getDAOFactory()
+    public <table.name.voName>DAOFactory getDAOFactory()
     {
         return getDAOFactory(getLastUsed());
     }
