@@ -145,6 +145,7 @@ query_parameter(parameter, select) ::= <<
  @param parameter the query parameter.
  @param select the select.
  !>
+<if(parameter.date)>
 | <parameter.id> | <select.id> | <parameter.index> | <parameter.type> | <parameter.name> | <parameter.validationValue> |
 >>
 
