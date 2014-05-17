@@ -389,9 +389,10 @@ public abstract class AbstractParameterDecorator<V>
 
     /**
      * Checks whether this parameter is a Date.
+     *
      * @return {@code true} in such case.
      */
-    public boolean isDate()
+    protected boolean isDate(@NotNull final MetadataTypeManager metadataTypeManager)
     {
         return isDate(getMetadataTypeManager());
     }
