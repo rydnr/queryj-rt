@@ -38,6 +38,9 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.queryj.customsql.ParameterElement;
+import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
+
 /*
  * Importing JetBrains annotations.
  */
