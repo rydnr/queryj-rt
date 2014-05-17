@@ -101,9 +101,9 @@ public class BasePerCustomResultTemplateBuildHandlerTest
                 }
 
                 @Override
-                protected void storeTemplates(@NotNull final List templates, @NotNull final QueryJCommand parameters)
+                protected void storeTemplates(
+                    @NotNull final List templates, @NotNull final QueryJCommand parameters)
                 {
-                    //To change body of implemented methods use File | Settings | File Templates.
                 }
             }
     }
