@@ -149,7 +149,7 @@ public class <table.name.capitalized>DAOFactoryHelper
     private static final class <table.name.capitalized>DAOFactoryHelperSingletonContainer
     {
         private static final <table.name.capitalized>DAOFactoryHelper SINGLETON =
-            new <table.name.capitalized>DAOFactoryHelper();
+            new <table.name.voName>DAOFactoryHelper();
     }
 
     /**
