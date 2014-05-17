@@ -245,7 +245,7 @@ protected <table.name.voName>DAO get<table.name.voName>DAO(<notnull(C=C)>final <
 
         if  (<table.name.voName.uncapitalized>DAOFactory != null)
         {
-            aux = t_<table.name.voName.uncapitalized>DAOFactory.createDAO();
+            aux = <table.name.voName.uncapitalized>DAOFactory.createDAO();
 
             if (aux != null)
             {
