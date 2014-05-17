@@ -82,7 +82,8 @@ public class SqlDecoratorHelper
      * @param parameters the parameters.
      */
     @NotNull
-    public List<DecoratedString> getParameterTypes(final List<Parameter<DecoratedString, ?>> parameters, final MetadataTypeManager
+    public List<DecoratedString> getParameterTypes(
+        final List<Parameter<DecoratedString, ?>> parameters, final MetadataTypeManager
 
         metadataTypeManager)
     {
