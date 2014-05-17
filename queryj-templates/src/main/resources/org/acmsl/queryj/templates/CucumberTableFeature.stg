@@ -103,7 +103,6 @@ Feature: <table.name> code compiles
       | BaseDAOFactory | <table.name.singular.camelCase>DAOFactory.java |
       | BaseDAO | <table.name.singular.camelCase>DAO.java |
       | DAO | <engine.name.capitalized><table.name.singular.camelCase>DAO.java |
-      | DAOChooser | <engine.name.capitalized><table.name.singular.camelCase>DAOChooser.java |
 >>
 
 attribute(attr, table, pk) ::= <<
