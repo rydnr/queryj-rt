@@ -131,6 +131,7 @@ public class AbstractSqlDecoratorTest
 
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final SqlResultDAO resultDAO = EasyMock.createNiceMock(SqlResultDAO.class);
+        @NotNull final
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
 
         EasyMock.expect(customSqlProvider.getSqlResultDAO()).andReturn(resultDAO);
