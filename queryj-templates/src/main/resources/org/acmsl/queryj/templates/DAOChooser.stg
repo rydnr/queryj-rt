@@ -68,6 +68,7 @@ sourceImpl(repository, tables, C) ::= <<
   C=C)><endif>
  */
 <package_declaration(p=C.package)>
+
 /*
  * Importing Apache Commons Logging classes.
  */
