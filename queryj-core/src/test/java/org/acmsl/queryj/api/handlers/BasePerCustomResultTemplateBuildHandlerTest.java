@@ -71,7 +71,7 @@ import java.util.List;
 public class BasePerCustomResultTemplateBuildHandlerTest
 {
     /**
-     * Checkes if fixDuplicated() actually removes results differing only in cardinality.
+     * Checks if fixDuplicated() actually removes results differing only in cardinality.
      */
     @Test
     public void fixDuplicated_removes_extra_results_differing_only_in_cardinality()
