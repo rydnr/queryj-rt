@@ -39,7 +39,6 @@ package org.acmsl.queryj.metadata;
  * Importing JetBrains annotations.
  */
 import org.junit.Test;
-import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing JUnit classes.
