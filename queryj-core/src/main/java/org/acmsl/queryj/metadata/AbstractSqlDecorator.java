@@ -629,6 +629,17 @@ public abstract class AbstractSqlDecorator
         return result;
     }
 
+
+    /**
+     * Retrieves the parameter types.
+     * @return such list.
+     */
+    @NotNull
+    public List<DecoratedString> getParameterTypes()
+    {
+        return new ArrayList<>(0);
+    }
+
     /**
      * Provides a text representation of the information
      * contained in this instance.
