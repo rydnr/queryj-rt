@@ -156,7 +156,7 @@ public class ParameterElement<T, V>
      * {@inheritDoc}
      */
     @Override
-    public int compareTo(final Parameter<T, V> parameter)
+    public int compareTo(@Nullable final Parameter<T, V> parameter)
     {
         return super.<IdentifiableElement<T>>compareTo(parameter);
     }
