@@ -316,7 +316,7 @@ public class <table.name.capitalized>DAOFactoryHelper
      * are available.
      */
     <nullable(C=C)>
-    protected static PrintStream retrieveFallbackLog()
+    protected PrintStream retrieveFallbackLog()
     {
         <nullable(C=C)>final PrintStream result;
 
