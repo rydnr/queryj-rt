@@ -78,4 +78,20 @@ public class AbstractParameterDecoratorTest
         Assert.assertTrue(instance.isDate());
 
     }
+
+    /**
+     * Tests whether isDate() detects Date parameters.
+     */
+    @SuppressWarnings("unchecked")
+    @Test
+    public void isDate_detects_date_parameters()
+    {
+        @NotNull final AbstractParameterDecorator<String> instance =
+            new AbstractParameterDecorator(
+                new ParameterElement<String, String>("p1", 1, "p1", "Date", null),
+                new JdbcMetadataTypeManager()) {};
+
+        Assert.assertTrue(instance.isDate());
+
+    }
 }
