@@ -62,7 +62,7 @@ public class SqlDecoratorHelper
         /**
          * The singleton instance.
          */
-
+        public
     }
     /**
      * Retrieves the singleton instance.
