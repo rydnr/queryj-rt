@@ -73,4 +73,9 @@ public class SqlDecoratorHelper
     {
         return SqlDecoratorHelperSingletonContainer.SINGLETON;
     }
+
+    /**
+     * Retrieves the parameter types.
+     * @param
+     */
 }
