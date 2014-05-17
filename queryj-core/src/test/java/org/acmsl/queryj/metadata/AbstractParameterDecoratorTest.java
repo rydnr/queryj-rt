@@ -38,6 +38,7 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing JetBrains annotations.
  */
+import junit.framework.Test;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -55,4 +56,5 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class AbstractParameterDecoratorTest
 {
+    @Test
 }
