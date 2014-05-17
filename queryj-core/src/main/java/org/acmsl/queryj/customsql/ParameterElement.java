@@ -34,9 +34,8 @@
 package org.acmsl.queryj.customsql;
 
 /*
- * Importing QueryJ Core classes.
+ * Importing JetBrains annotations.
  */
-
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
