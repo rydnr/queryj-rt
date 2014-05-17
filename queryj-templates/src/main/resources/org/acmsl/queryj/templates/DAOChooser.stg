@@ -101,8 +101,7 @@ class(repository, tables, C) ::= <<
  * <[
       description(repository=repository)
     ]:{line |<line>}; separator="\n * ">
-<class_common_javadoc(
-  template="org/acmsl/queryj/templates/DAOChooser.stg", C=C)>
+<class_common_javadoc(template="org/acmsl/queryj/templates/DAOChooser.stg", C=C)>
  */
 public class <repository.capitalized>DAOChooser
 <if(C.implement_markers)>
