@@ -238,7 +238,7 @@ public class <table.name.capitalized>DAOFactoryHelper
         {
             try
             {
-                <notnull(C=C)>final Class\<<table.name.capitalized>\>DAOFactory factoryClass =
+                <notnull(C=C)>final Class\<<table.name.capitalized>DAOFactory> factoryClass =
                     Class.forName(factoryClassName);
 
                 result = factoryClass.newInstance();
