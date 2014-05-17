@@ -126,7 +126,7 @@ public class BasePerCustomResultTemplateBuildHandlerTest
                  * {@inheritDoc}
                  */
                 @Override
-                protected PerCustomResultTemplate<> createTemplate(
+                protected PerCustomResultTemplate<PerCustomResultTemplateContext> createTemplate(
                     @NotNull final PerCustomResultTemplateFactory templateFactory,
                     @NotNull final Result<String> result,
                     @NotNull final List<Property<String>> properties,
