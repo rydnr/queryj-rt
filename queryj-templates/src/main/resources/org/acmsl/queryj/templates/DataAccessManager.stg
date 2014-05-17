@@ -80,7 +80,7 @@ sourceImpl(repository, tables, C) ::= <<
 /*
  * Importing JDK classes.
  */
-import org.acmsl.commons.patterns.dao.DataAccessManager;
+import java.io.Serializable;
 
 <endif>
 
