@@ -351,8 +351,6 @@ public abstract class BasePerCustomResultTemplateBuildHandler
     @NotNull
     protected List<Result<String>> fixDuplicated(@NotNull final List<Result<String>> results)
     {
-        @NotNull final List<Result<String>> result = new ArrayList<>(results.size());
-
         @NotNull final Map<String, Result<String>> resultsByClass = new HashMap<>(results.size());
 
         for (@Nullable final Result<String> customResult : results)
