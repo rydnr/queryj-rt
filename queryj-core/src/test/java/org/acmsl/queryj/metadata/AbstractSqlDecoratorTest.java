@@ -139,6 +139,6 @@ public class AbstractSqlDecoratorTest
     }
 
     /**
-     * Tests
+     * Tests the
      */
 }
