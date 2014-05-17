@@ -84,7 +84,7 @@ public class AbstractParameterDecoratorTest
      */
     @SuppressWarnings("unchecked")
     @Test
-    public void isDate_detects_date_parameters()
+    public void isDate_detects_nodate_parameters()
     {
         @NotNull final AbstractParameterDecorator<String> instance =
             new AbstractParameterDecorator(
