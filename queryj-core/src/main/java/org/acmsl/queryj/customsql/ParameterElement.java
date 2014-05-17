@@ -152,6 +152,11 @@ public class ParameterElement<T, V>
         immutableSetValidationValue(validationValue);
     }
 
+    /**
+     * {@inheritDoc}
+     * @param parameter
+     * @return
+     */
     @Override
     public int compareTo(final Parameter<T, V> parameter)
     {
