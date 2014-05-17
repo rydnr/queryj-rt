@@ -85,6 +85,10 @@ public class BasePerCustomResultTemplateBuildHandlerTest
         Assert.assertEquals(3, instance.fixDuplicated(results));
     }
 
+    /**
+     * Creates a new instance.
+     * @return such instance.
+     */
     protected BasePerCustomResultTemplateBuildHandler createInstance()
     {
         return
