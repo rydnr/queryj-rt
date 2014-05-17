@@ -126,8 +126,8 @@ public class AbstractSqlDecoratorTest
         @NotNull final Result<String> result =
             new ResultElement<>("r1", String.class.getSimpleName());
 
-        @NotNull final Parameter parameter = new
-            ParameterElement<String, String>("pid", 1, "paramName", "Date", null);
+        @NotNull final Parameter parameter =
+            new ParameterElement<String, String>("pid", 1, "paramName", "Date", null);
 
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final SqlResultDAO resultDAO = EasyMock.createNiceMock(SqlResultDAO.class);
