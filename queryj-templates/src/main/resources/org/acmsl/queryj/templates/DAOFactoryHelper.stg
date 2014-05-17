@@ -229,7 +229,7 @@ public class <table.name.capitalized>DAOFactoryHelper
     protected <table.name.capitalized>DAOFactory getDAOFactory(
         <notnull(C=C)>final <repository.capitalized>DAOChooser daoChooser)
     {
-        <nullable(C=C)><table.name.capitalized>DAOFactory result = null;
+        <nullable(C=C)><table.name.voName>DAOFactory result = null;
 
         <nullable(C=C)>final String factoryClassName =
             daoChooser.get<table.name.capitalized>DAOFactoryClassName();
