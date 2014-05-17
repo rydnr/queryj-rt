@@ -764,6 +764,11 @@ public abstract class AbstractSqlDecorator
         return result;
     }
 
+    /**
+     * Retrieves the parameter types.
+     * @return such list.
+     */
+    @NotNull
     public List<DecoratedString> getParameterTypes()
     {
         return null;  //To change body of created methods use File | Settings | File Templates.
