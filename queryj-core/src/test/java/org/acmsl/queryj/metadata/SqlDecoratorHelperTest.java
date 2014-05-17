@@ -102,6 +102,7 @@ public class SqlDecoratorHelperTest
         EasyMock.expect(resultDAO.findBySqlId(sql.getId())).andReturn(result);
 
         EasyMock.replay(customSqlProvider);
+        EasyMock.replay(metadataManager);
         EasyMock.replay(parameterDAO);
         EasyMock.replay(resultDAO);
 
