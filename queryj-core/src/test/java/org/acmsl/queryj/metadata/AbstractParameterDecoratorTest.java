@@ -63,11 +63,10 @@ public class AbstractParameterDecoratorTest
     /**
      * Tests whether isDate() detects Date parameters.
      */
+    @SuppressWarnings("unchecked")
     @Test
     public void isDate_detects_dates_parameters()
     {
-        @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
-
         @NotNull final AbstractParameterDecorator<String> instance =
             new AbstractParameterDecorator(
                 new ParameterElement<String, String>("p1", 1, "p1", "Date", null),
