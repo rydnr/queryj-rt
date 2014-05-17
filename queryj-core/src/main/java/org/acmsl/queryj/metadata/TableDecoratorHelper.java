@@ -39,8 +39,6 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing project classes.
  */
-import org.acmsl.commons.patterns.Decorator;
-import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.metadata.vo.Attribute;
 
 /*
