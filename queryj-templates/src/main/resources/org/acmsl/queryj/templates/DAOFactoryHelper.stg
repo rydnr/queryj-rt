@@ -104,7 +104,7 @@ description(tableName) ::= <<
   Generates a description for the generated file.
   @param tableName the table name.
 !>
-Helper methods <tableName>-specific DAOFactoryHelper implementation.
+Helper methods to <tableName>-specific DAOFactoryHelper implementation.
 >>
 
 class(table, C) ::= <<
