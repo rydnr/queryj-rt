@@ -78,6 +78,9 @@ public class BasePerCustomResultTemplateBuildHandlerTest
         @NotNull final List<Result<String>> results = new ArrayList<>(4);
 
         results.add(new ResultElement<>("r1", "Class1"));
+        results.add(new ResultElement<>("r1", "Class1"));
+        results.add(new ResultElement<>("r1", "Class1"));
+
         Assert.assertEquals(3, instance.fixDuplicated(results));
     }
 
