@@ -47,6 +47,7 @@ import org.acmsl.queryj.customsql.ResultElement;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.Sql.Cardinality;
 import org.acmsl.queryj.customsql.SqlElement;
+import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
@@ -91,7 +92,7 @@ public class SqlDecoratorHelperTest
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final SqlResultDAO resultDAO = EasyMock.createNiceMock(SqlResultDAO.class);
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
-        @NotNull final MetadataTypeManager metadataTypeManager = EasyMock.createNiceMock(MetadataTypeManager.class);
+        @NotNull final MetadataTypeManager metadataTypeManager = new JdbcMetadataTypeManager();
         @NotNull final SqlParameterDAO parameterDAO = EasyMock.createNiceMock(SqlParameterDAO.class);
 
         EasyMock.expect(customSqlProvider.getSqlResultDAO()).andReturn(resultDAO);
