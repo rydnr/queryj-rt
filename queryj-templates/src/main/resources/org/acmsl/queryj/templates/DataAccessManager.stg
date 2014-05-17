@@ -234,7 +234,7 @@ public <table.name.voName>DAO get<table.name.voName>DAO()
 
         if  (t_<table.name.voName>DAOFactory != null)
         {
-            aux = t_<table.name.voName>DAOFactory.create<table.name.voName>DAO();
+            aux = t_<table.name.voName>DAOFactory.createDAO();
 
             if (aux != null)
             {
