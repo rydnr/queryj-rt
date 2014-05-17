@@ -41,6 +41,7 @@ package org.acmsl.queryj.metadata;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Parameter;
 import org.acmsl.queryj.customsql.ParameterElement;
+import org.acmsl.queryj.customsql.ParameterRefElement;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.ResultElement;
 import org.acmsl.queryj.customsql.Sql;
@@ -130,6 +131,7 @@ public class AbstractSqlDecoratorTest
         @NotNull final Parameter parameter =
             new ParameterElement<String, String>("pid", 1, "paramName", "Date", null);
 
+        sql.add(new ParameterRefElement());
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final SqlResultDAO resultDAO = EasyMock.createNiceMock(SqlResultDAO.class);
         @NotNull final SqlParameterDAO parameterDAO = EasyMock.createNiceMock(SqlParameterDAO.class);
