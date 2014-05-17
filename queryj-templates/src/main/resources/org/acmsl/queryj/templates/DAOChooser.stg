@@ -74,6 +74,11 @@ sourceImpl(repository, tables, C) ::= <<
 import org.apache.commons.logging.LogFactory;
 <checkers_import(C=C)>
 
+/*
+ * Importing JDK classes.
+ */
+import java.util.Properties;
+
 <class(repository=repository, tables=tables, C=C)>
 >>
 
