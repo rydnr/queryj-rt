@@ -266,8 +266,7 @@ public abstract class AbstractSqlDecorator
      * @return such manager.
      */
     @NotNull
-    protected MetadataTypeManager getMetadataTypeManager(
-        @NotNull final MetadataManager metadataManager)
+    protected MetadataTypeManager getMetadataTypeManager(@NotNull final MetadataManager metadataManager)
     {
         return metadataManager.getMetadataTypeManager();
     }
