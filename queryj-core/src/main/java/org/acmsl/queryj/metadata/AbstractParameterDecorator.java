@@ -442,6 +442,10 @@ public abstract class AbstractParameterDecorator<V>
         return result;
     }
 
+    /**
+     * Checks whether this parameter is a Date.
+     * @return {@code true} in such case.
+     */
     public boolean isDate()
     {
         return false;  //To change body of created methods use File | Settings | File Templates.
