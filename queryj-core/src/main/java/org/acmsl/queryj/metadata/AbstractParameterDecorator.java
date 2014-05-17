@@ -362,7 +362,8 @@ public abstract class AbstractParameterDecorator<V>
      * @param metadataTypeManager the {@link MetadataTypeManager} instance.
      * @return such information.
      */
-    protected boolean isPrimitiveWrapper(@NotNull final DecoratedString type, @NotNull final MetadataTypeManager metadataTypeManager)
+    protected boolean isPrimitiveWrapper(
+        @NotNull final DecoratedString type, @NotNull final MetadataTypeManager metadataTypeManager)
     {
         return metadataTypeManager.isPrimitiveWrapper(type.getValue());
     }
