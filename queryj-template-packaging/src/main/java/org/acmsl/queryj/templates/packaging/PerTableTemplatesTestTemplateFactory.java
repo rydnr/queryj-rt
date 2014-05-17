@@ -103,7 +103,6 @@ public class PerTableTemplatesTestTemplateFactory
     @Override
     public PerTableTemplatesTestTemplate createTemplate(@NotNull final GlobalTemplateContext context)
     {
-        new Throwable().pr
         return new PerTableTemplatesTestTemplate(context);
     }
 }
