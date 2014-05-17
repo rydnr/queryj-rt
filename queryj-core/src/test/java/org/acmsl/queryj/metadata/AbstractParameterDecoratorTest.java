@@ -91,7 +91,7 @@ public class AbstractParameterDecoratorTest
                 new ParameterElement<String, String>("p1", 1, "p1", "String", null),
                 new JdbcMetadataTypeManager()) {};
 
-        Assert.assertTrue(instance.isDate());
+        Assert.assertFalse(instance.isDate());
 
     }
 }
