@@ -62,7 +62,7 @@ public class SqlDecoratorHelper
         /**
          * The singleton instance.
          */
-        public
+        public static final SqlDecoratorHelper SINGLETON = new SqlDecoratorHelper();
     }
     /**
      * Retrieves the singleton instance.
