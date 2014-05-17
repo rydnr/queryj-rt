@@ -103,7 +103,8 @@ public class BasePerCustomResultTemplateBuildHandlerTest
                 <PerCustomResultTemplate<PerCustomResultTemplateContext>,
                 PerCustomResultTemplateContext,
                 PerCustomResultTemplateFactory
-                    <PerCustomResultTemplate<PerCustomResultTemplateContext>, PerCustomResultTemplateContext>> createInstance()
+                    <PerCustomResultTemplate<
+                        PerCustomResultTemplateContext>, PerCustomResultTemplateContext>> createInstance()
     {
         return
             new BasePerCustomResultTemplateBuildHandler
