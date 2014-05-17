@@ -40,6 +40,7 @@ package org.acmsl.queryj.metadata;
  */
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Parameter;
+import org.acmsl.queryj.customsql.ParameterElement;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.ResultElement;
 import org.acmsl.queryj.customsql.Sql;
@@ -125,7 +126,8 @@ public class AbstractSqlDecoratorTest
         @NotNull final Result<String> result =
             new ResultElement<>("r1", String.class.getSimpleName());
 
-        @NotNull final Parameter<String> parameter =
+        @NotNull final Parameter<String> parameter = new
+            ParameterElement()
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final SqlResultDAO resultDAO = EasyMock.createNiceMock(SqlResultDAO.class);
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
