@@ -78,7 +78,7 @@ sourceImpl(repository, tables, C) ::= <<
 <checkers_import(C=C)>
 
 /*
- * Importing some ACM-SL Commons classes.
+ * Importing JDK classes.
  */
 import org.acmsl.commons.patterns.dao.DataAccessManager;
 
