@@ -105,7 +105,7 @@ public class BasePerCustomResultTemplateBuildHandlerTest
             new BasePerCustomResultTemplateBuildHandler
                 <PerCustomResultTemplate<PerCustomResultTemplateContext>,
                     PerCustomResultTemplateContext,
-                ()
+                    PerCustomResultTemplateFactory()
             {
                 /**
                  * {@inheritDoc}
