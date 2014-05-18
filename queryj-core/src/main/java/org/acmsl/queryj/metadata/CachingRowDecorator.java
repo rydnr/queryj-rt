@@ -34,7 +34,7 @@
 package org.acmsl.queryj.metadata;
 
 /*
- * Importing project classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.Row;
@@ -54,12 +54,15 @@ import org.checkthread.annotations.ThreadSafe;
 /**
  * Adds a simple caching mechanism while decorating <code>Row</code>
  * instances.
- * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
+ * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro Armendariz</a>
  */
 @ThreadSafe
 public class CachingRowDecorator
     extends  AbstractRowDecorator
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = 7506582704616898824L;
 
     /**
