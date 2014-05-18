@@ -34,7 +34,7 @@
 package org.acmsl.queryj.metadata;
 
 /*
- * Importing project classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.metadata.vo.Attribute;
@@ -60,7 +60,7 @@ import org.checkthread.annotations.ThreadSafe;
 /**
  * Adds a simple caching mechanism while decorating <code>ForeignKey</code>
  * instances.
- * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
+ * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro Armendariz</a>
  */
 @SuppressWarnings("unused")
 @ThreadSafe
