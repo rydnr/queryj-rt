@@ -236,6 +236,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
      * @param parameters the parameters.
      * @return the template.
      */
+    @Nullable
     protected abstract T createTemplate(
         @NotNull final TF templateFactory,
         @NotNull final Result<String> result,
