@@ -102,7 +102,7 @@ Feature: <table.name> code compiles
       | BaseDAO | <table.name.singular.camelCase>DAO.java |
       | DAOFactory | <engine.name.capitalized><table.name.singular.camelCase>DAOFactory.java |
       | AttributesStatementSetter | <table.name.singular.camelCase>StatementSetter.java |
-      | PkStatementSetter | <table.name.singular.camelCase>StatementSetter.java |
+      | PkStatementSetter | <table.name.singular.camelCase>PkStatementSetter.java |
       | ResultSetExtractor | <table.name.singular.camelCase>ResultSetExtractor.java |
       | DAO | <engine.name.capitalized><table.name.singular.camelCase>DAO.java |
 >>
