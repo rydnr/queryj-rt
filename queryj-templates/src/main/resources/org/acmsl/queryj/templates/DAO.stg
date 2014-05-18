@@ -781,7 +781,7 @@ protected <table.name.voName> create(
             retrieveAfterwards,
             _INSERT_SQL,
             createTransactionTemplate(getDataSource()),
-            <table.name.voName>ValueObjectFactory.getInstance(),
+            <table.name.voName>Factory.getInstance(),
 <if(parent)>
             <repository.capitalized>DataAccessManager.getInstance().get<parent.name.voName>DAO(),,
 <endif>
