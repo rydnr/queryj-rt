@@ -504,4 +504,17 @@ import_custom_select_types(cs, C) ::= <<
 <if(cs.parameterTypes)><cs.parameterTypes:{ t | import <t>;}; separator="\n"><endif>
 >>
 
-import_custom_select_res
+import_custom_select_resultsetextractors(cs, C) ::= <<
+if(sql.resultRef)
+ ><if(sql.result.wrappingASingleProperty)
+   >/* single property */<sql.result.properties:{ p |
+        new <p.type.capitalized>ResultSetExtractor(sql, daoListener),}; separator=""
+ ><else>
+        new <sql.result.simpleClassValue>ResultSetExtractor(sql, daoListener),
+<  endif><
+else>
+        new <sql.dao.voName>ResultSetExtractor(sql, daoListener),
+<
+endif>
+
+>>
