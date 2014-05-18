@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz (chous)
  *
- * Description: 
+ * Description: MetadataManager-backed ForeignKeyDAO implementation.
  *
  * Date: 6/6/12
  * Time: 6:46 AM
@@ -36,7 +36,7 @@
 package org.acmsl.queryj.metadata.engines;
 
 /*
- * Importing some project classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.metadata.ForeignKeyDAO;
 import org.acmsl.queryj.metadata.MetadataManager;
@@ -63,7 +63,8 @@ import org.checkthread.annotations.ThreadSafe;
 /**
  * {@link MetadataManager}-backed {@link ForeignKeyDAO} implementation.
  * @author <a href="mailto:chous@acm-sl.org">chous</a>
- * @since 2012/06/06
+ * @since 3.0
+ * Created: 2012/06/06
  */
 @ThreadSafe
 public class MetadataManagerForeignKeyDAO
@@ -162,12 +163,15 @@ public class MetadataManagerForeignKeyDAO
         // TODO
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     @NotNull
     public String toString()
     {
         return
               "{ \"class\": \"" + MetadataManagerForeignKeyDAO.class.getName() + '"'
-            + ", \"metadataManager\": " + m__MetadataManager + " }";
+            + ", \"metadataManager\": " + m__MetadataManager.hashCode() + " }";
     }
 }
