@@ -151,7 +151,7 @@ public interface DecoratorFactory
         @NotNull final CustomSqlProvider customSqlProvider);
 
     /**
-     * Retrieves the decorated list of attributes of given table.
+     * Retrieves the decorated list of {@link Attribute attributes} of given table.
      * @param table the table name.
      * @param metadataManager the {@link MetadataManager} instance.
      * @return the attribute list
@@ -161,9 +161,9 @@ public interface DecoratorFactory
         @NotNull final String table, @NotNull final MetadataManager metadataManager);
 
     /**
-     * Retrieves the decorated list of attributes.
-     * @param attributes the attributes.
-     * @param metadataManager the <code>MetadataManager</code> instance.
+     * Retrieves the decorated list of {@link Attribute attributes}.
+     * @param attributes the {@link Attribute attributes}.
+     * @param metadataManager the {@link MetadataManager} instance.
      * @return the decorated version of the attribute list.
      */
     @NotNull
