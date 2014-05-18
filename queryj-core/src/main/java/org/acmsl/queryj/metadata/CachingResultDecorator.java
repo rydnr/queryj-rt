@@ -347,4 +347,16 @@ public class CachingResultDecorator
 
         return result;
     }
+
+    @Override
+    public String toString()
+    {
+        return "CachingResultDecorator{" +
+               "m__bCachedImplicit=" + m__bCachedImplicit +
+               ", m__lCachedProperties=" + m__lCachedProperties +
+               ", m__lCachedLobProperties=" + m__lCachedLobProperties +
+               ", m__lCachedImplicitProperties=" + m__lCachedImplicitProperties +
+               ", m__bCachedWrappingASingleProperty=" + m__bCachedWrappingASingleProperty +
+               '}';
+    }
 }
