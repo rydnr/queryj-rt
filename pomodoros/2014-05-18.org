@@ -1,0 +1,40 @@
+* 2014/05/17
+** DONE Review BaseDAO #514: 3 -> 3
+** DONE Per custom result templates generated only once, regardless of multiplicity
+** DONE Find out why certain per-table features get generated over and over again
+** DONE Review BaseDAOFactory #497: 1 -> 1
+** DONE Review DAOChooser #507: 1 -> 1
+** Review DataAccessManager #493 : 2 -> 2
+** REVIEW TODOs!!!
+
+* Package layout:
+** dao
+- DataAccessManager
+- BaseDAO
+*** dao/core
+- DAOChooser
+- BaseDAOFactory
+*** dao/impl
+*** dao/rdb -> X
+*** dao/[table]
+- CustomResultSetExtractor
+- FkStatementSetter
+- PkStatementSetter
+- ResultSetExtractor
+- AttributesStatementSetter
+**** dao/[table]/oracle
+- DAO
+- DAOFactory
+** vo
+- ValueObject
+- CustomValueObject
+** vo/core
+- ValueObjectFactory
+- CustomValueObjectFactory
+** vo/impl
+- ValueObjectImpl
+- ValueObjectFactoryImpl
+- BaseValueObject
+- CustomValueObjectImpl
+- CustomValueObjectFactoryImpl
+- CustomBaseValueObject
