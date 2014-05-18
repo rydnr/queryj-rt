@@ -1025,6 +1025,7 @@ public class CachingTableDecorator
     public String toString()
     {
         return
+              "{ "
               "{ \"class\": \"" + CachingTableDecorator.class.getSimpleName() + "\""
             + "{ \"package\": \"org.acmsl.queryj.metadata\""
             + ", \"parentForeignKeyAlreadyRetrieved\": " + m__bParentForeignKeyAlreadyRetrieved
