@@ -148,7 +148,7 @@ public abstract class AbstractAttributeDecorator
      * @param booleanFalse the symbol for {@code false} values in boolean attributes.
      * @param booleanNull the symbol for {@code null} values in boolean attributes.
      * @param metadataManager the {@link MetadataManager metadata manager}.
-     * @param metadataTypeManager the metadata type manager.
+     * @param metadataTypeManager the {@link MetadataTypeManager metadata type manager}.
      */
     public AbstractAttributeDecorator(
         @NotNull final String name,
