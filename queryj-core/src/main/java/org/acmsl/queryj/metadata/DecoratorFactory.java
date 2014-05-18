@@ -82,10 +82,10 @@ public interface DecoratorFactory
         @NotNull final Attribute<V> attribute, @NotNull final MetadataManager metadataManager);
 
     /**
-     * Creates an <code>ParameterDecorator</code> for given
+     * Creates an {@code ParameterDecorator} for given
      * parameter instance.
-     * @param parameter the parameter.
-     * @param metadataManager the <code>MetadataManager</code> instance.
+     * @param parameter the {@link Parameter parameter}.
+     * @param metadataManager the {@link MetadataManager} instance.
      * @return the decorated attribute for the concrete template.
      */
     @SuppressWarnings("unused")
