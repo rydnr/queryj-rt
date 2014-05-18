@@ -351,10 +351,12 @@ public class CachingResultDecorator
     /**
      * {@inheritDoc}
      */
+    @NotNull
     @Override
     public String toString()
     {
-        return "CachingResultDecorator{" +
+        return
+            "{ CachingResultDecorator{" +
                "m__bCachedImplicit=" + m__bCachedImplicit +
                ", m__lCachedProperties=" + m__lCachedProperties +
                ", m__lCachedLobProperties=" + m__lCachedLobProperties +
