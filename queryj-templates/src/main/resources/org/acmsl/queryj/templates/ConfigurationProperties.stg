@@ -93,6 +93,7 @@ repository_dao_factory_property(repository, engine, package, daoSubpackage, C) :
  @param engine the engine.
  @param package the package.
  @param daoSubpackage the DAO subpackage.
+ @param C the context.
 !>
 <repository.lowercased>.dao=<package>.<daoSubpackage>.<repository.normalized.lowercased>.<engine.name.capitalized><repository.capitalized>DAOFactory
 >>
