@@ -171,7 +171,7 @@ public class MetadataManagerForeignKeyDAO
     public String toString()
     {
         return
-              "{ \"class\": \"" + MetadataManagerForeignKeyDAO.class.getName() + '"'
+              "{ \"class\": \"MetadataManagerForeignKeyDAO.class.getName() + '"'
             + ", \"metadataManager\": " + m__MetadataManager.hashCode()
             + " }";
     }
