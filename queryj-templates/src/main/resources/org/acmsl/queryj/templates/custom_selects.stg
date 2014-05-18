@@ -507,6 +507,9 @@ import_custom_select_types(cs, C) ::= <<
 import_custom_select_resultsetextractors(sql, C) ::= <<
 <!
  Imports the ResultSetExtractor for given custom query.
+ @param sql the custom query.
+ @param C the context.
+!>
 if(sql.resultRef)
  ><if(sql.result.wrappingASingleProperty)
    >/* single property */<sql.result.properties:{ p |
