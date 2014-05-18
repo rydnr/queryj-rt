@@ -357,7 +357,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
         {
             if (customResult != null)
             {
-
+                @Nullable final Result<String> previous =
             }
                 && (!result.containsKey(customResult.getClassValue())))
             {
