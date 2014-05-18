@@ -189,9 +189,10 @@ public abstract class AbstractAttributeDecorator
             isNullOrEmpty(value) ? null : new DecoratedString("" + value),
             readOnly,
             isBool,
-            isNullOrEmpty(booleanTrue) ? null : new DecoratedString(booleanTrue),
-            isNullOrEmpty(booleanFalse) ? null : new DecoratedString(booleanFalse),
-            isNullOrEmpty(booleanNull) ? null : new DecoratedString(booleanNull));
+            isNullOrEmpty(booleanTrue) ? null : new DecoratedString("" + booleanTrue),
+            isNullOrEmpty(booleanFalse) ? null : new DecoratedString("" + booleanFalse),
+            isNullOrEmpty(booleanNull) ? null : new DecoratedString("" +
+                                                                    booleanNull));
 
         immutableSetAttribute(attribute);
         immutableSetMetadataManager(metadataManager);
