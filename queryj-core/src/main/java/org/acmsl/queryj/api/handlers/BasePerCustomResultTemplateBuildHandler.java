@@ -365,7 +365,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
                 }
                 else
                 {
-                    if (customResult.compareTo())
+                    if (customResult.compareTo(previous) > 0)
                 }
             }
         }
