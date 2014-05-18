@@ -128,7 +128,7 @@ classImpl(table, repository, engine, C) ::= <<
 <class_common_javadoc(template="org/acmsl/queryj/dao/DAOFactory.stg", C=C)>
  */
 <class_annotations(C=C)>
-public class <engine.name.voName><table.name.capitalized>DAOFactory
+public class <engine.name.voName><table.name.voName>DAOFactory
     extends DAOFactory\<<table.name.voName>DAO>
     implements <table.name.voName>DAOFactory
 {
