@@ -154,7 +154,7 @@ custom_update_or_insert(cs, C) ::= <<
 !>
 <if(!cs.dynamic)>
 /**
- * Custom sql \<i><cs.id>\</i>:\<br/>
+ * Custom sql \<i><cs.id>\</i>:
  * \<b><cs.description>\</b>.
  <cs.parameters:{ p | <parameter_javadoc(parameter=p)>}; separator="\n">
  * @return the number of entities updated.
