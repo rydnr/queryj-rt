@@ -354,7 +354,8 @@ if(sql.resultRef)
 <  endif><
 else>
         new <sql.dao.voName>Extractor(sql, daoListener),
-<endif>
+<
+endif>
         this))
 >>
 
