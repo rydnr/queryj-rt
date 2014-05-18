@@ -407,7 +407,6 @@ custom_select(cs, C) ::= <<
   @param cs the custom select.
   @param C the context.
 !>
-<if(!cs.dynamic)>
 /**
  * Custom select \<i><cs.id>\</i>:\<br/>
  * \<b><cs.description>\</b>.
