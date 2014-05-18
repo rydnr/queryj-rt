@@ -220,8 +220,6 @@ public class SqlXmlParserSqlDAO
 
     /**
      * {@inheritDoc}
-     * @param tableName the name of the table.
-     * @return
      */
     @Override
     public List<Sql<String>> findDynamic(@NotNull final String tableName)
