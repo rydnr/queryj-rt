@@ -418,7 +418,6 @@ custom_select(cs, C) ::= <<
  * @return the {@link <cs.dao.voName>} information retrieved.
 <endif>
  */
-@Override
 <custom_select_return_nullable_maybe(cs=cs, result=cs.result, C=C)>
 public <custom_select_return(cs=cs, table=table, result=cs.result, C=C)> <cs.name.uncapitalized>(
     <if(!cs.parametersShouldBeWrapped)><cs.parameters:{ p | <attribute_method_parameter_declaration(attribute=p, usePrefix=false, prefix="", C=C)>}; separator=", ">)
