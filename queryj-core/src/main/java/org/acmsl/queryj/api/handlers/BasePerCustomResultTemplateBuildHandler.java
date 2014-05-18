@@ -273,7 +273,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
 
         }
 
-        return result;
+''        return result;
     }
 
     /**
