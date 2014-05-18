@@ -835,7 +835,7 @@ protected <table.name.voName> create(
     final boolean retrieveAfterwards,
     <notnull(C=C)>final String query,
     <notnull(C=C)>final TransactionTemplate transactionTemplate,
-    <notnull(C=C)>final <table.name.voName>ValueObjectFactory factory,
+    <notnull(C=C)>final <table.name.voName>Factory factory,
 <if(parent)>
     <notnull(C=C)>final <parent.name.voName>DAO <parent.name.lowercased>DAO,
 <endif>
