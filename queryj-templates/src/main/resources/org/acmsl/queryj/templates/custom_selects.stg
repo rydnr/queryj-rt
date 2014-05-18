@@ -507,23 +507,3 @@ import_custom_select_types(cs, C) ::= <<
 !>
 <if(cs.parameterTypes)><cs.parameterTypes:{ t | import <t>;}; separator="\n"><endif>
 >>
-
-import_custom_select_resultsetextractors(sql, C) ::= <<
-<!
- Imports the ResultSetExtractor for given custom query.
- @param sql the custom query.
- @param C the context.
-!>
-<
-if(sql.resultRef)
- ><if(sql.result.wrappingASingleProperty)
-   ><sql.result.properties:{ p |
-import com.ventura24.commons.dao.<p.type.capitalized>ResultSetExtractor;}; separator=""
- ><else>
-import <C.project_package>.<typeInitMap.daoSubpackageName>.<sql.result.simpleClassValue.lowercased>.<sql.result.simpleClassValue>ResultSetExtractor;
-<  endif><
-else>
-import <C.project_package>.<typeInitMap.daoSubpackageName>.<sql.dao.voName.lowercased>.<sql.dao.voName>ResultSetExtractor;
-<
-endif>
->>
