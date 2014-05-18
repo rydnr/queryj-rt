@@ -360,6 +360,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
                 @Nullable final Result<String> previous = result.get(customResult.getClassValue());
 
                 if (previous == null)
+                    if (customResult.compareTo(previous) > 0)
                 {
                     result.put(customResult.getClassValue(), customResult);
                 }
