@@ -99,9 +99,9 @@ Feature: <table.name> code compiles
       | ValueObjectFactory | <table.name.singular.camelCase>Factory.java            |
       | DAOFactoryHelper | <table.name.singular.camelCase>DAOFactoryHelper.java |
       | ValueObjectFactory | <table.name.singular.camelCase>Factory.java |
-      | DAOFactory | <engine.name.capitalized><table.name.singular.camelCase>DAOFactory.java |
       | BaseDAOFactory | <table.name.singular.camelCase>DAOFactory.java |
       | BaseDAO | <table.name.singular.camelCase>DAO.java |
+      | DAOFactory | <engine.name.capitalized><table.name.singular.camelCase>DAOFactory.java |
       | DAO | <engine.name.capitalized><table.name.singular.camelCase>DAO.java |
 >>
 
