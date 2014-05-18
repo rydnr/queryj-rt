@@ -206,6 +206,7 @@ import <basePackageName>.<baseDAOSubpackageName>.<table.name.normalized.lowercas
 import <basePackageName>.<baseDAOSubpackageName>.<table.name.normalized.lowercased>.<table.name.voName>ResultSetExtractor;
 <if(parent)>
 import <basePackageName>.<baseDAOSubpackageName>.<parent.name.voName>DAO;
+<endif>
 import <basePackageName>.<voSubpackageName>.<table.name.voName>;
 import <basePackageName>.<voFactorySubpackageName>.core.<table.name.voName>Factory;
 <if(parent)>
