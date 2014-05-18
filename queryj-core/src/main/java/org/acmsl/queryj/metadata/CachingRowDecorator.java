@@ -161,7 +161,6 @@ public class CachingRowDecorator
     {
         return
             "{ \"cachedAttributes\": \"" + m__lCachedAttributes
-            + " \"super\""
             + " \"class\": \"CachingRowDecorator\""
             + " \"package\": \"org.acmsl.queryj.metadata\""
             + '"'+ "\" }";
