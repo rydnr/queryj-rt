@@ -516,7 +516,7 @@ if(sql.resultRef)
    ><sql.result.properties:{ p |
 import com.ventura24.commons.dao.<p.type.capitalized>ResultSetExtractor;}; separator=""
  ><else>
-import <C.project_package>.<typeInitMap.voSubpackageName>.<sql.result.simpleClassValue.lowercased>.<sql.result.simpleClassValue>ResultSetExtractor;
+import <C.project_package>.<typeInitMap.daoSubpackageName>.<sql.result.simpleClassValue.lowercased>.<sql.result.simpleClassValue>ResultSetExtractor;
 <  endif><
 else>
 import <sql.dao.voName>ResultSetExtractor(sql, daoListener),
