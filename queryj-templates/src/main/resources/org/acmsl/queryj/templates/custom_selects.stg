@@ -351,7 +351,7 @@ if(sql.resultRef)
         new <t>Extractor(sql, daoListener),};
   ><else>
         new <sql.result.id.voName>Extractor(sql, daoListener),
-
+<   endif>
 <else>
         new <sql.dao.voName>Extractor(sql, daoListener),
 <endif>
