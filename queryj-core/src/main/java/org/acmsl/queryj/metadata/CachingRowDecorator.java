@@ -95,6 +95,7 @@ public class CachingRowDecorator
      * @param metadataManager the metadata manager.
      * @param decoratorFactory the {@link DecoratorFactory} instance.
      */
+    @SuppressWarnings("unused")
     public CachingRowDecorator(
         @NotNull final String name,
         @NotNull final String tableName,
