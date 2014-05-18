@@ -471,8 +471,9 @@ if(result.wrappingASingleProperty)><
   custom_select_return_import_property_single(result=result, package=package)><
 else><
   if(result.classValue)
-   >import <result.classValue>;
-<endif><endif>
+   >import <result.classValue>;<
+  endif><
+endif>
 >>
 
 custom_select_return_import_property_single(result, package) ::= <<
