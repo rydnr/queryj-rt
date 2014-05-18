@@ -350,7 +350,7 @@ if(sql.resultRef)
    >/* single property */<sql.result.properties:{ p |
         new <p.type.capitalized>ResultSetExtractor(sql, daoListener),}; separator=""
  ><else>
-        new <sql.result.classValue>ResultSetExtractor(sql, daoListener),
+        new <sql.result.classValue.extract>ResultSetExtractor(sql, daoListener),
 <  endif><
 else>
         new <sql.dao.voName>ResultSetExtractor(sql, daoListener),
