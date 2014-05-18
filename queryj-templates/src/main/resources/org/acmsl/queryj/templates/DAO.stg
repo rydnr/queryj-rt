@@ -1386,8 +1386,8 @@ public int update(
 @Override
 public Object query(
     <notnull(C=C)>final PreparedStatementCreator creator,
-    final PreparedStatementSetter setter,
-    final ResultSetExtractor extractor)
+    <notnull(C=C)>final PreparedStatementSetter setter,
+    <notnull(C=C)>final ResultSetExtractor extractor)
 {
     return super.query(creator, setter, extractor);
 }
