@@ -173,7 +173,7 @@ public class MetadataManagerForeignKeyDAO
         return
               "{ \"class\": \"MetadataManagerForeignKeyDAO\""
             + ", \"metadataManager\": " + m__MetadataManager.hashCode()
-            + ", \"package\": \"org.acmsl.queryj.metadata.engines
+            + ", \"package\": \"org.acmsl.queryj.metadata.engines\"
             + " }";
     }
 }
