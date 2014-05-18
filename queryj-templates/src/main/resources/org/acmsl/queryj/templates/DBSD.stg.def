@@ -14,4 +14,4 @@ output: DBSD;
 filename  builder : <repository.capitalized>.dbsd;
 
 // The package.
-package: <packageName>;
+package: <nothing>;
