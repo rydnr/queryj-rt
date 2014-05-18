@@ -514,7 +514,7 @@ import_custom_select_resultsetextractors(sql, C) ::= <<
 if(sql.resultRef)
  ><if(sql.result.wrappingASingleProperty)
    ><sql.result.properties:{ p |
-import com.ventura24.commons.dao.<p.type.capitalized>ResultSetExtractor;
+import com.ventura24.commons.dao.<p.type.capitalized>ResultSetExtractor;}; separator=""
  ><else>
         new <sql.result.simpleClassValue>ResultSetExtractor(sql, daoListener),
 <  endif><
