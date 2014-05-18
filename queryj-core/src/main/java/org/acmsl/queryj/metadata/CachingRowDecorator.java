@@ -160,7 +160,7 @@ public class CachingRowDecorator
     public String toString()
     {
         return
-            "{ \"cachedAttributes\": \"" + m__lCachedAttributes
+              "{ \"cachedAttributes\": \"" + m__lCachedAttributes
             + " \"class\": \"CachingRowDecorator\""
             + " \"package\": \"org.acmsl.queryj.metadata\""
             + " \"super\": " + super.toString()
