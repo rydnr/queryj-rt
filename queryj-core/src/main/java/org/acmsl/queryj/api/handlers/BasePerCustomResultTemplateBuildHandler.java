@@ -364,13 +364,6 @@ public abstract class BasePerCustomResultTemplateBuildHandler
                 {
                     result.put(customResult.getClassValue(), customResult);
                 }
-                else
-                {
-                    if (customResult.compareTo(previous) > 0)
-                    {
-
-                    }
-                }
             }
         }
 
