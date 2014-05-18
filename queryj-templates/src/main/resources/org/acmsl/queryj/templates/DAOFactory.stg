@@ -148,7 +148,7 @@ public class <engine.name.voName><table.name.voName>DAOFactory
 
         if (dataSource != null)
         {
-            result = new <engine.name.voName><table.name.capitalized>DAO(dataSource, daoListener);
+            result = new <engine.name.voName><table.name.voName>DAO(dataSource, daoListener);
         }
         else
         {
