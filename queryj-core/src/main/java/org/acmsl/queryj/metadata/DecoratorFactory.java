@@ -71,7 +71,7 @@ public interface DecoratorFactory
     extends  Factory
 {
     /**
-     * Creates an <code>AttributeDecorator</code> for given
+     * Creates an {@code AttributeDecorator} for given
      * attribute instance.
      * @param attribute the attribute.
      * @param metadataManager the <code>MetadataManager</code> instance.
