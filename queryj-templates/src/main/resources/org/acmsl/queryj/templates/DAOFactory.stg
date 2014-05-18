@@ -140,7 +140,7 @@ public class <engine.name.voName><table.name.capitalized>DAOFactory
      */
     <nullable(C=C)>
     @Override
-    protected <table.name.capitalized>DAO createDAO(
+    protected <table.name.voName>DAO createDAO(
         <nullable(C=C)>final DataSource dataSource,
         <nullable(C=C)>final DAOListener daoListener)
     {
