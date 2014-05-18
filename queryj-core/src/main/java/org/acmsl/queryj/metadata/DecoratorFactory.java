@@ -96,8 +96,8 @@ public interface DecoratorFactory
     /**
      * Creates a {@link PropertyDecorator} for given
      * property instance.
-     * @param property the property.
-     * @param result the result.
+     * @param property the {@link Property property}.
+     * @param result the {@link Result result}.
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
      * @param metadataManager the {@link MetadataManager} instance.
      * @return the decorated property for the concrete template.
@@ -112,7 +112,7 @@ public interface DecoratorFactory
     /**
      * Creates a {@link ResultDecorator} for given
      * result instance.
-     * @param result the custom result.
+     * @param result the {@link Result custom result}.
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
      * @param metadataManager the {@link MetadataManager} instance.
      * @return the decorated result for the concrete template.
@@ -125,8 +125,8 @@ public interface DecoratorFactory
         @NotNull final MetadataManager metadataManager);
 
     /**
-     * Creates a {@linknSqlDecorator}.
-     * @param sql the custom sql.
+     * Creates a {@link SqlDecorator}.
+     * @param sql the {@link Sql custom sql}.
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
      * @param metadataManager the {@link MetadataManager} instance.
      * @return the decorated sql for the concrete template.
@@ -138,8 +138,7 @@ public interface DecoratorFactory
         @NotNull final MetadataManager metadataManager);
 
     /**
-     * Creates a <code>TableDecorator</code>.
-     *
+     * Creates a {@link TableDecorator}.
      * @param table the table name.
      * @param metadataManager the <code>MetadataManager</code> instance.
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
