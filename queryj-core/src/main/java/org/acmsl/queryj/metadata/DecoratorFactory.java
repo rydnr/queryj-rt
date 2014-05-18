@@ -171,10 +171,10 @@ public interface DecoratorFactory
         @NotNull final List<Attribute<V>> attributes, @NotNull final MetadataManager metadataManager);
 
     /**
-     * Retrieves the decorated list of attributes of given table.
+     * Retrieves the decorated list of {@link Attribute attributes} of given table.
      * @param table the table.
-     * @param metadataManager the <code>MetadataManager</code> instance.
-     * @return the attribute list
+     * @param metadataManager the {@link MetadataManager} instance.
+     * @return the attribute list.
      */
     @SuppressWarnings("unused")
     @NotNull
@@ -182,7 +182,7 @@ public interface DecoratorFactory
         @NotNull final String table, @NotNull final MetadataManager metadataManager);
 
     /**
-     * Creates a <code>ForeignKeyDecorator</code>.
+     * Creates a {@link ForeignKeyDecorator}.
      * @param sourceTableName the name of the source table.
      * @param attributes the foreign key attributes.
      * @param targetTableName the name of the target table.
