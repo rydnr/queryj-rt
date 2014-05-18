@@ -94,12 +94,12 @@ public interface DecoratorFactory
         @NotNull final Parameter<String, ?> parameter, @NotNull final MetadataManager metadataManager);
 
     /**
-     * Creates a <code>PropertyDecorator</code> for given
+     * Creates a {@code PropertyDecorator} for given
      * property instance.
      * @param property the property.
      * @param result the result.
-     * @param customSqlProvider the <code>CustomSqlProvider</code> instance.
-     * @param metadataManager the <code>MetadataManager</code> instance.
+     * @param customSqlProvider the {@link CustomSqlProvider} instance.
+     * @param metadataManager the {@link MetadataManager} instance.
      * @return the decorated property for the concrete template.
      */
     @NotNull
@@ -110,11 +110,11 @@ public interface DecoratorFactory
         @NotNull final MetadataManager metadataManager);
 
     /**
-     * Creates a <code>ResultDecorator</code> for given
+     * Creates a {@code ResultDecorator} for given
      * result instance.
      * @param result the custom result.
-     * @param customSqlProvider the <code>CustomSqlProvider</code> instance.
-     * @param metadataManager the <code>MetadataManager</code> instance.
+     * @param customSqlProvider the {@link CustomSqlProvider} instance.
+     * @param metadataManager the {@link MetadataManager} instance.
      * @return the decorated result for the concrete template.
      */
     @SuppressWarnings("unused")
