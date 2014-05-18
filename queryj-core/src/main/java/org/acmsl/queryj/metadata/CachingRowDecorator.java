@@ -160,7 +160,7 @@ public class CachingRowDecorator
     public String toString()
     {
         return
-              "{ \"class\": \"" + CachingRowDecorator.class.getName() + '"'
-            + ", \"cachedAttributes\": \"" + m__lCachedAttributes + "\" }";
+            "{ \"cachedAttributes\": \"" + m__lCachedAttributes
+            + " \"class\": \"CachingRowDecorator.class.getName() + '"'+ "\" }";
     }
 }
