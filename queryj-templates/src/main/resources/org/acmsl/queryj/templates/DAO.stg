@@ -236,8 +236,8 @@ import com.ventura24.commons.dao.V24ResultSetExtractor;
 
 >>
 
-custom_select_import(result, package, C) ::= <<
-<custom_select_return_import(result=result, package=package, C=C)>
+custom_select_import(result, package, baseDAOSubpackageName, C) ::= <<
+<custom_select_return_import(result=result, package=package, baseDAOSubpackageName=baseDAOSubpackageName, C=C)>
 >>
 
 foreignkey_statementsetter_import(
