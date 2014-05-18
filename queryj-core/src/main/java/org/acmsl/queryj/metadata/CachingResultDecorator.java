@@ -362,7 +362,7 @@ public class CachingResultDecorator
             + ", \"cachedImplicitProperties\": " + m__lCachedImplicitProperties
             + ", \"cachedWrappingASingleProperty\": " + m__bCachedWrappingASingleProperty
             + ", \"class\": \"CachingResultDecorator\""
-            + ", \"package\": \"org.acmsl.queryj"
+            + ", \"package\": \"org.acmsl.queryj.metadata\""
             + ", \"super\": " + super.toString()
             + '}';
     }
