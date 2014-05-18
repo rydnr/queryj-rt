@@ -349,7 +349,7 @@ if(sql.resultRef)
  ><if(sql.result.wrappingASingleProperty)
   ><sql.result.propertyTypes:{ t |
         new <t>Extractor(sql, daoListener),};
-  ><else>
+ ><else>
         new <sql.result.id.voName>Extractor(sql, daoListener),
 <   endif>
 <else>
