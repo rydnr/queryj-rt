@@ -667,8 +667,8 @@ public abstract class AbstractSqlDecorator
             new org.apache.commons.lang.builder.ToStringBuilder(this)
                 .appendSuper(super.toString())
                 .append("sql", getSql())
-                .append("customSqlProvider", getCustomSqlProvider())
-                .append("metadataManager", getMetadataManager())
+                .append("customSqlProvider", getCustomSqlProvider().hashCode())
+                .append("metadataManager", getMetadataManager().hashCode())
                 .toString();
     }
 
