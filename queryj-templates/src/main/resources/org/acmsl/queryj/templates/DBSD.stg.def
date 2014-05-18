@@ -1,5 +1,5 @@
 /*
- * BaseDAO template metadata.
+ * DBSD template metadata.
  */
 // The template name (the filename).
 name : DBSD.stg;
