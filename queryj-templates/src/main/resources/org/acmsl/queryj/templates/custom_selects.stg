@@ -486,7 +486,8 @@ endif>
 custom_select_return_import_property_single(result, package) ::= <<
 <!<result.properties:{property|<
   if(!property.primitive)
-  >import <property.type>;<endif>}>!>
+  >import <property.type>;<
+  endif>}>!>
 >>
 
 custom_select_return_cast(cs, table, result, C) ::= <<
