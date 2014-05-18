@@ -1501,7 +1501,7 @@ public <table.name.voName> findConstantBy<attribute.name.capitalized>(<
       endif><
     endif>final <attribute.primitiveType> <attribute.name.lowercased.uncapitalized>)
 {
-    <nullable(C=C)>final <table.name.voName> result; = new ArrayList\<<table.name.voName>\>(FIXED_CONSTANTS.size());
+    <nullable(C=C)>final <table.name.voName> result;
 
     <notnull(C=C)>final List\<<table.name.voName>\> constants = findConstantsBy<attribute.name.capitalized>(<attribute.name.lowercased.uncapitalized>);
 
