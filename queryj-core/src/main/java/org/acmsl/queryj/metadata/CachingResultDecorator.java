@@ -364,6 +364,6 @@ public class CachingResultDecorator
             + ", \"class\": \"CachingResultDecorator\""
             + ", \"package\": \"org.acmsl.queryj.metadata\""
             + ", \"super\": " + super.toString()
-            + '}';
+            + " }";
     }
 }
