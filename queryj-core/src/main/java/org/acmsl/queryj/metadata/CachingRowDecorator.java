@@ -161,6 +161,8 @@ public class CachingRowDecorator
     {
         return
             "{ \"cachedAttributes\": \"" + m__lCachedAttributes
-            + " \"class\": \"CachingRowDecorator + '"'+ "\" }";
+            + " \"class\": \"CachingRowDecorator\""
+            + ""
+            + '"'+ "\" }";
     }
 }
