@@ -513,7 +513,7 @@ import_custom_select_resultsetextractors(sql, C) ::= <<
 <
 if(sql.resultRef)
  ><if(sql.result.wrappingASingleProperty)
-   >/* single property */<sql.result.properties:{ p |
+   ><sql.result.properties:{ p |
         new <p.type.capitalized>ResultSetExtractor(sql, daoListener),}; separator=""
  ><else>
         new <sql.result.simpleClassValue>ResultSetExtractor(sql, daoListener),
