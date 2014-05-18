@@ -878,7 +878,7 @@ protected <table.name.voName> create(
 <else>
                 <table.own.minus.readOnlyAttributes:{ attr | <attr.name.uncapitalized>}; separator=",\n">,
 <endif>
-                <table.name.voName>AttributesStatementSetter.INSERT),
+                <table.name.voName>StatementSetter.INSERT),
             this));
 
     if (retrieveAfterwards)
