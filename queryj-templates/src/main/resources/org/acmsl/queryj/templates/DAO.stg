@@ -1385,7 +1385,7 @@ public int update(
  */
 @Override
 public Object query(
-    final PreparedStatementCreator creator,
+    <notnull(C=C)>final PreparedStatementCreator creator,
     final PreparedStatementSetter setter,
     final ResultSetExtractor extractor)
 {
