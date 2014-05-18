@@ -73,8 +73,8 @@ public interface DecoratorFactory
     /**
      * Creates an {@code AttributeDecorator} for given
      * attribute instance.
-     * @param attribute the attribute.
-     * @param metadataManager the <code>MetadataManager</code> instance.
+     * @param attribute the {@link Attribute attribute}.
+     * @param metadataManager the {@link MetadataManager} instance.
      * @return the decorated attribute for the concrete template.
      */
     @NotNull
