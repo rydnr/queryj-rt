@@ -350,10 +350,10 @@ if(sql.resultRef)
    ><sql.result.propertyTypes:{ t |
         new <t>ResultSetExtractor(sql, daoListener),}; separator=""
  ><else>
-        new <sql.result.id.voName>Extractor(sql, daoListener),
+        new <sql.result.id.voName>ResultSetExtractor(sql, daoListener),
 <  endif><
 else>
-        new <sql.dao.voName>Extractor(sql, daoListener),
+        new <sql.dao.voName>ResultSetExtractor(sql, daoListener),
 <
 endif>
         this))
