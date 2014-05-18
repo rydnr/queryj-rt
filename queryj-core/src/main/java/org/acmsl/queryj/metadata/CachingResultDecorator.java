@@ -361,7 +361,7 @@ public class CachingResultDecorator
             + ", \"cachedLobProperties\": " + m__lCachedLobProperties
             + ", \"cachedImplicitProperties\": " + m__lCachedImplicitProperties
             + ", \"cachedWrappingASingleProperty\": " + m__bCachedWrappingASingleProperty
-            + ", \"super\": "
+            + ", \"super\": " + super.toString()
             + '}';
     }
 }
