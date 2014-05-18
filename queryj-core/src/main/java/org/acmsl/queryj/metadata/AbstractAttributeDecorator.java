@@ -144,7 +144,7 @@ public abstract class AbstractAttributeDecorator
      * @param readOnly whether the attribute is marked as read-only.
      * @param isBool whether the attribute is marked as boolean.
      * @param attribute the attribute.
-     * @param booleanTrue the symbol for {@code true</code> values in boolean attributes.
+     * @param booleanTrue the symbol for {@code true} values in boolean attributes.
      * @param booleanFalse the symbol for <code>false</code> values in boolean attributes.
      * @param booleanNull the symbol for <code>null</code> values in boolean attributes.
      * @param metadataManager the metadata manager.
