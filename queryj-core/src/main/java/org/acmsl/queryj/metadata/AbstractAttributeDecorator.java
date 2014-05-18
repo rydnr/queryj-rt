@@ -186,7 +186,7 @@ public abstract class AbstractAttributeDecorator
             isNullOrEmpty(retrievalQuery) ? null : new DecoratedString("" + retrievalQuery),
             isNullOrEmpty(sequence) ? null : new DecoratedString("" + sequence),
             allowsNull,
-            isNullOrEmpty(value) ? null : new DecoratedString(value),
+            isNullOrEmpty(value) ? null : new DecoratedString("" + value),
             readOnly,
             isBool,
             isNullOrEmpty(booleanTrue) ? null : new DecoratedString(booleanTrue),
