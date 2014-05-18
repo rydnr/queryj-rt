@@ -218,6 +218,11 @@ public class SqlXmlParserSqlDAO
         return filterSelects(findByDAO(table));
     }
 
+    /**
+     * {@inheritDoc}
+     * @param tableName the name of the table.
+     * @return
+     */
     @Override
     public List<Sql<String>> findDynamic(@NotNull final String tableName)
     {
