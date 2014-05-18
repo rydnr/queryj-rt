@@ -348,6 +348,9 @@ public class CachingResultDecorator
         return result;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public String toString()
     {
