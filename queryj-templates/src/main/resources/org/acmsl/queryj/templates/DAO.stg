@@ -210,7 +210,7 @@ import <basePackageName>.<voSubpackageName>.<parent.name.voName>;
 <if(table.voDecorated)>
 import <basePackageName>.<voSubpackageName>.<table.name.voName>Decorator;
 <endif>
-import <basePackageName>.<voFactorySubpackageName>.<table.name.voName>Factory;
+import <basePackageName>.<voFactorySubpackageName>.core.<table.name.voName>Factory;
 import <basePackageName>.<baseDAOSubpackageName>.<table.name.voName>DAO;
 import <basePackageName>.<damSubpackageName>.<trName>DataAccessManager;
 <table.foreignKeys:{ fk| <foreignkey_statementsetter_import(
