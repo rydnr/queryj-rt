@@ -474,7 +474,11 @@ custom_select_return_nondecorated_implicit_single(cs, result, C) ::= <<
 
 custom_select_return_import(result, package, C) ::= <<
 <!
- Generates the import for the ResultSet associated to the
+ Generates the import for the ResultSet associated to the custom result.
+ @param result the custom result.
+ @param package the package.
+ @param C the context.
+!>
 <
 if(result.wrappingASingleProperty)><
   custom_select_return_import_property_single(result=result, package=package)><
