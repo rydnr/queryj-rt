@@ -1083,7 +1083,7 @@ protected int update(
         transactionTemplate.execute(
             new UpdateTransactionCallback(
                 new V24PreparedStatementCreator(query, daoListener),
-                new <table.name.voName>AttributesStatementSetter(
+                new <table.name.voName>StatementSetter(
 <if(parent)>
                     <table.all.minus.readOnlyAttributes:{ attr | <attr.name.uncapitalized>}; separator=",\n">,
 <else>
