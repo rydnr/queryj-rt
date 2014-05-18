@@ -348,7 +348,7 @@ transactionTemplate.execute(
 if(sql.resultRef)
  ><if(sql.result.wrappingASingleProperty)
   ><sql.result.propertyTypes:{ t |
-        new <sql.result.id.voName>Extractor(sql, daoListener),
+        new <t>Extractor(sql, daoListener),
         new <sql.result.id.voName>Extractor(sql, daoListener),
 <else>
         new <sql.dao.voName>Extractor(sql, daoListener),
