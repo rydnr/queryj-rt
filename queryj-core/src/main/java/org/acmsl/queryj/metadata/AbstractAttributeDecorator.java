@@ -178,7 +178,7 @@ public abstract class AbstractAttributeDecorator
             typeId,
             new DecoratedString(type),
             new DecoratedString(tableName),
-            isNullOrEmpty(comment) ? null : new DecoratedString(comment),
+            isNullOrEmpty(comment) ? null : new DecoratedString("" + comment),
             ordinalPosition,
             length,
             precision,
