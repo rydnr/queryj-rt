@@ -426,17 +426,7 @@ public <custom_select_return(cs=cs, table=table, result=cs.result, C=C)> <cs.nam
     <cs.parameters:{ p | <attribute_method_parameter_declaration(attribute=p, usePrefix=false, prefix="", C=C)>}; separator=",\n">)<
 endif>
 
-    throws DataAccessException
-/**
- * Custom select \<i><cs.id>\</i>:
- * \<b><cs.description>\</b>.
- <cs.parameters:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
- * @return the \<i><cs.resultClass>\</i> information retrieved.
- */
-<if(cs.resultNullable)><nullable(C=C)><else><if(cs.multiple)><notnull(C=C)><endif><endif>
-<cs.resultClass> <cs.name.uncapitalized>(
-    <cs.parameters:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
-  throws DataAccessException;
+    throws DataAccessException;
 >>
 
 custom_update_or_insert(cs, C) ::= <<
