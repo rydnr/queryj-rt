@@ -346,7 +346,7 @@ transactionTemplate.execute(
         //     .newPreparedStatementSetter(params),
 <
 if(sql.resultRef)
- ><if(
+ ><if(sql.result.
         new <sql.result.id.voName>Extractor(sql, daoListener),
 <else>
         new <sql.dao.voName>Extractor(sql, daoListener),
