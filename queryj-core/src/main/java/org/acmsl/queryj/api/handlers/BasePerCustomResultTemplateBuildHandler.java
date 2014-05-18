@@ -355,7 +355,10 @@ public abstract class BasePerCustomResultTemplateBuildHandler
 
         for (@Nullable final Result<String> customResult : results)
         {
-            if (   (customResult != null)
+            if (customResult != null)
+            {
+
+            }
                 && (!result.containsKey(customResult.getClassValue())))
             {
                 result.put(customResult.getClassValue(), customResult);
