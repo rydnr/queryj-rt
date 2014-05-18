@@ -126,7 +126,7 @@ public class MetadataManagerForeignKeyDAO
         @NotNull final String table, @Nullable final String catalog, @Nullable final String schema)
     {
         // TODO
-        return new ArrayList<ForeignKey<String>>(0);
+        return new ArrayList<>(0);
     }
 
     /**
