@@ -173,6 +173,7 @@ public class MetadataManagerForeignKeyDAO
         return
               "{ \"class\": \"MetadataManagerForeignKeyDAO\""
             + ", \"metadataManager\": " + m__MetadataManager.hashCode()
+            + ", \"package\": "
             + " }";
     }
 }
