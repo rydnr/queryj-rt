@@ -15,5 +15,3 @@ filename  builder : <repository.capitalized>.dbsd;
 
 // The package.
 package: <packageName>;
-
-disabled;
