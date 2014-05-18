@@ -133,7 +133,7 @@ public class <engine.name.voName><table.name.capitalized>DAOFactory
     implements <table.name.voName>DAOFactory
 {
     /**
-     * Creates a {@link <engine.name.voName><table.name.capitalized>DAO}.
+     * Creates a {@link <engine.name.voName><table.name.voName>DAO}.
      * @param dataSource the required {@link DataSource}.
      * @param daoListener the {@link DAOListener} (optional).
      * @return such {@link <table.name.voName>DAO} implementation.
