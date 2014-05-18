@@ -357,10 +357,10 @@ public class CachingResultDecorator
     {
         return
             "{ \"cachedImplicit\": " + m__bCachedImplicit
-            + "\", m__lCachedProperties=" + m__lCachedProperties
-            + ", m__lCachedLobProperties=" + m__lCachedLobProperties
-            + ", m__lCachedImplicitProperties=" + m__lCachedImplicitProperties
-            + ", m__bCachedWrappingASingleProperty=" + m__bCachedWrappingASingleProperty
+            + ", cachedProperties=" + m__lCachedProperties
+            + ", cachedLobProperties=" + m__lCachedLobProperties
+            + ", cachedImplicitProperties=" + m__lCachedImplicitProperties
+            + ", cachedWrappingASingleProperty=" + m__bCachedWrappingASingleProperty
             + '}';
     }
 }
