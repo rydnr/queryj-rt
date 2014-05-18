@@ -1371,8 +1371,8 @@ public static class <table.name.voName>PkResultSetExtractor
  */
 @Override
 public int update(
-    final PreparedStatementCreator creator,
-    final PreparedStatementSetter setter)
+    <notnull(C=C)>final PreparedStatementCreator creator,
+    <notnull(C=C)>final PreparedStatementSetter setter)
 {
     return super.update(creator, setter);
 }
