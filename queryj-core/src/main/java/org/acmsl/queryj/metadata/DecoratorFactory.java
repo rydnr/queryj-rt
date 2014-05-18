@@ -65,8 +65,7 @@ import java.util.List;
 
 /**
  * Abstract factory for template-specific decorators.
- * @author <a href="mailto:chous@acm-sl.org"
- *         >Jose San Leandro</a>
+ * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  */
 public interface DecoratorFactory
     extends  Factory
