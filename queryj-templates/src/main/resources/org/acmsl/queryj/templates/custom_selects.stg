@@ -519,7 +519,7 @@ import com.ventura24.commons.dao.<p.type.capitalized>ResultSetExtractor;}; separ
 import <C.project_package>.<typeInitMap.voSubpackageName>.<sql.result.simpleClassValue.lowercased>.<sql.result.simpleClassValue>ResultSetExtractor;
 <  endif><
 else>
-        new <sql.dao.voName>ResultSetExtractor(sql, daoListener),
+import         new <sql.dao.voName>ResultSetExtractor(sql, daoListener),
 <
 endif>
 
