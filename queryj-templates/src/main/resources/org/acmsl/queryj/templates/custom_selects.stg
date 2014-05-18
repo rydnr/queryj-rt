@@ -344,7 +344,9 @@ transactionTemplate.execute(
         // calls setXXX twice
         // preparedStatementCreatorFactory
         //     .newPreparedStatementSetter(params),
-<if(sql.resultRef)>
+<
+if(sql.resultRef)
+ ><if(
         new <sql.result.id.voName>Extractor(sql, daoListener),
 <else>
         new <sql.dao.voName>Extractor(sql, daoListener),
