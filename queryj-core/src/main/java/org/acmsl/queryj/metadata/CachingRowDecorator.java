@@ -163,6 +163,7 @@ public class CachingRowDecorator
             "{ \"cachedAttributes\": \"" + m__lCachedAttributes
             + " \"class\": \"CachingRowDecorator\""
             + " \"package\": \"org.acmsl.queryj.metadata\""
+            + " \"super\": " + super.toString()
             + '"'+ "\" }";
     }
 }
