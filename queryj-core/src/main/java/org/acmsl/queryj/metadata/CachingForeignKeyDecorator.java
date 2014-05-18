@@ -83,8 +83,8 @@ public class CachingForeignKeyDecorator
     private Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>> m__CachedTarget;
 
     /**
-     * Creates a <code>CachingForeignKeyDecorator</code> with the
-     * <code>ForeignKey</code> information to decorate.
+     * Creates a {@code CachingForeignKeyDecorator} with the
+     * {@link ForeignKey} information to decorate.
      * @param foreignKey the foreign key.
      * @param metadataManager the {@link MetadataManager} instance.
      * @param decoratorFactory the {@link DecoratorFactory} implementation.
@@ -101,7 +101,7 @@ public class CachingForeignKeyDecorator
     }
 
     /**
-     * Creates a <code>CachingForeignKeyDecorator</code> with the following
+     * Creates a {@code CachingForeignKeyDecorator} with the following
      * information.
      * @param sourceTableName the source table name.
      * @param attributes the attributes.
