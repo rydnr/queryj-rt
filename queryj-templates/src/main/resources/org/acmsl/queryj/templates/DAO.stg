@@ -199,6 +199,7 @@ project_imports(
 /*
  * Importing <trName> classes.
  */
+import <basePackageName>.<damSubpackageName>.<trName>DataAccessManager;
 import <basePackageName>.<baseDAOSubpackageName>.<table.name.voName>DAO;
 import <basePackageName>.<baseDAOSubpackageName>.<table.name.normalized.lowercased>.<table.name.voName>StatementSetter;
 import <basePackageName>.<baseDAOSubpackageName>.<table.name.normalized.lowercased>.<table.name.voName>PkStatementSetter;
