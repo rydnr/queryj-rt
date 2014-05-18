@@ -299,11 +299,11 @@ public class CachingSqlDecorator
     public String toString()
     {
         return
-            + ", \"wrappedParametersCheck\": " + m__bWrappedParametersCheck
+              ", \"wrappedParametersCheck\": " + m__bWrappedParametersCheck
             + ", \"cachedParameters\": [ " + m__cCachedParameters + ']'
             + ", \"resultClass\": \"" + m__strCachedResultClass + '"'
             + ", \"isResultNullable\": " + m__bIsResultNullable
-            "{ \"class\": \"" + CachingSqlDecorator.class.getSimpleName() + '"'
+            + "{ \"class\": \"" + CachingSqlDecorator.class.getSimpleName() + '"'
             + ", \"package\": \"" + CachingSqlDecorator.class.getPackage().getName() + '"'
             + " }";
     }
