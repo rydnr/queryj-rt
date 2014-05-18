@@ -1384,6 +1384,7 @@ public int update(
  * @param extractor the {@link ResultSetExtractor} instance.
  */
 @Override
+<notnull(C=C)>
 public Object query(
     <notnull(C=C)>final PreparedStatementCreator creator,
     <notnull(C=C)>final PreparedStatementSetter setter,
