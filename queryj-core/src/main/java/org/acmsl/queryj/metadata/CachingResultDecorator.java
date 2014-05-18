@@ -356,7 +356,7 @@ public class CachingResultDecorator
     public String toString()
     {
         return
-            "{ \"cachedImplicit\": " + m__bCachedImplicit
+              "{ \"cachedImplicit\": " + m__bCachedImplicit
             + ", cachedProperties=" + m__lCachedProperties
             + ", cachedLobProperties=" + m__lCachedLobProperties
             + ", cachedImplicitProperties=" + m__lCachedImplicitProperties
