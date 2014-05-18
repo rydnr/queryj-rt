@@ -1350,7 +1350,6 @@ public static class <table.name.voName>PkResultSetExtractor
 
             int index = 1;
 
-            <table.primaryKey:{ attr | <resultset_extractor_parameter_retrieval(
               name=attr.name.lowercased,
               getterMethod=attr.getterMethod,
               objectType=attr.objectType,
