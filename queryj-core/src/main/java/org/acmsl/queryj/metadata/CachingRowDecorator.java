@@ -152,6 +152,9 @@ public class CachingRowDecorator
         return result;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public String toString()
