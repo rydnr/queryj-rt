@@ -479,6 +479,7 @@ if(result.wrappingASingleProperty)><
 else><
   if(result.classValue)
    >import <result.classValue>;<
+import <C.project_package>.<typeInitMap.daoSubpackageName>.<sql.dao.voName.lowercased>.<sql.dao.voName>ResultSetExtractor;
   endif><
 endif>
 >>>>
