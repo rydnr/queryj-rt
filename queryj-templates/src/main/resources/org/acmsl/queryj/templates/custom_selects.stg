@@ -481,7 +481,18 @@ else><
    >import <result.classValue>;<
   endif><
 endif>
->>
+if(sql.resultRef)
+ ><if(sql.result.wrappingASingleProperty)
+   ><sql.result.properties:{ p |
+import com.ventura24.commons.dao.<p.type.capitalized>ResultSetExtractor;}; separator=""
+ ><else>
+import <C.project_package>.<typeInitMap.daoSubpackageName>.<sql.result.simpleClassValue.lowercased>.<sql.result.simpleClassValue>ResultSetExtractor;
+<  endif><
+else>
+import <C.project_package>.<typeInitMap.daoSubpackageName>.<sql.dao.voName.lowercased>.<sql.dao.voName>ResultSetExtractor;
+<
+endif>
+>>>>
 
 custom_select_return_import_property_single(result, package) ::= <<
 <!<result.properties:{property|<if(!property.primitive)>import <property.type>;<endif>}>!>
