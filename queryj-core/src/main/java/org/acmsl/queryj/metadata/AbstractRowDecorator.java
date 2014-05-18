@@ -281,6 +281,9 @@ public abstract class AbstractRowDecorator
         return result;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public String toString()
@@ -289,7 +292,7 @@ public abstract class AbstractRowDecorator
               "{ \"class\": \"" + AbstractRowDecorator.class.getName() + '"'
             + ", \"decoratorFactory\": " + m__DecoratorFactory.hashCode()
             + ", \"row\": " + m__Row
-            + ", \"metadataManager\": " + m__MetadataManager
-            + ", \"metadataTypeManager\": " + m__MetadataTypeManager + " }";
+            + ", \"metadataManager\": " + m__MetadataManager.hashCode()
+            + ", \"metadataTypeManager\": " + m__MetadataTypeManager.hashCode() + " }";
     }
 }
