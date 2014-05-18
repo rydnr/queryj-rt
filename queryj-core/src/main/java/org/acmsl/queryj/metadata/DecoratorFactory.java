@@ -71,7 +71,7 @@ public interface DecoratorFactory
     extends  Factory
 {
     /**
-     * Creates an {@code AttributeDecorator} for given
+     * Creates an {@link AttributeDecorator} for given
      * attribute instance.
      * @param attribute the {@link Attribute attribute}.
      * @param metadataManager the {@link MetadataManager} instance.
@@ -82,7 +82,7 @@ public interface DecoratorFactory
         @NotNull final Attribute<V> attribute, @NotNull final MetadataManager metadataManager);
 
     /**
-     * Creates an {@code ParameterDecorator} for given
+     * Creates an {@link ParameterDecorator} for given
      * parameter instance.
      * @param parameter the {@link Parameter parameter}.
      * @param metadataManager the {@link MetadataManager} instance.
@@ -94,7 +94,7 @@ public interface DecoratorFactory
         @NotNull final Parameter<String, ?> parameter, @NotNull final MetadataManager metadataManager);
 
     /**
-     * Creates a {@code PropertyDecorator} for given
+     * Creates a {@link PropertyDecorator} for given
      * property instance.
      * @param property the property.
      * @param result the result.
@@ -110,7 +110,7 @@ public interface DecoratorFactory
         @NotNull final MetadataManager metadataManager);
 
     /**
-     * Creates a {@code ResultDecorator} for given
+     * Creates a {@link ResultDecorator} for given
      * result instance.
      * @param result the custom result.
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
@@ -125,7 +125,7 @@ public interface DecoratorFactory
         @NotNull final MetadataManager metadataManager);
 
     /**
-     * Creates a {@linkn SqlDecorator}.
+     * Creates a {@linknSqlDecorator}.
      * @param sql the custom sql.
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
      * @param metadataManager the {@link MetadataManager} instance.
