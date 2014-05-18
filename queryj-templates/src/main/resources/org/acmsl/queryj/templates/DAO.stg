@@ -208,10 +208,10 @@ import <basePackageName>.<baseDAOSubpackageName>.<table.name.normalized.lowercas
 import <basePackageName>.<baseDAOSubpackageName>.<parent.name.voName>DAO;
 <endif>
 import <basePackageName>.<voSubpackageName>.<table.name.voName>;
-import <basePackageName>.<voFactorySubpackageName>.core.<table.name.voName>Factory;
 <if(parent)>
 import <basePackageName>.<voSubpackageName>.<parent.name.voName>;
 <endif>
+import <basePackageName>.<voFactorySubpackageName>.core.<table.name.voName>Factory;
 <if(table.voDecorated)>
 import <basePackageName>.<voSubpackageName>.<table.name.voName>Decorator;
 <endif>
