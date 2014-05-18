@@ -274,6 +274,7 @@ public class CachingPropertyDecorator
      * Retrieves whether the property is a Date or not.
      * @return such information.
      */
+    @Override
     public boolean isDate()
     {
         Boolean result = getCachedDate();
@@ -288,7 +289,9 @@ public class CachingPropertyDecorator
         return result;
     }
 
-    /*
+    /**
+     * {@inheritDoc}
+     */
     @Override
     @NotNull
     public String toString()
