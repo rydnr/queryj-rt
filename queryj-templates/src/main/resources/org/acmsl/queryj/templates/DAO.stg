@@ -115,10 +115,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.PreparedStatement;
 import java.sql.Types;
+import java.util.ArrayList;
 <if(table.static)>
 import java.util.Arrays;
 <endif>
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
