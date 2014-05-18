@@ -102,6 +102,7 @@ project_imports(basePackageName, baseDAOSubpackageName, table, repository) ::= <
  * Importing <repository.capitalized> classes.
  */
 import <basePackageName>.<baseDAOSubpackageName>.<table.name.voName>DAO;
+import <basePackageName>.<baseDAOSubpackageName>.<table.name.voName>DAO;
 >>
 
 description(tableName) ::= <<
