@@ -145,8 +145,8 @@ public abstract class AbstractAttributeDecorator
      * @param isBool whether the attribute is marked as boolean.
      * @param attribute the attribute.
      * @param booleanTrue the symbol for {@code true} values in boolean attributes.
-     * @param booleanFalse the symbol for <code>false} values in boolean attributes.
-     * @param booleanNull the symbol for <code>null</code> values in boolean attributes.
+     * @param booleanFalse the symbol for {@code false} values in boolean attributes.
+     * @param booleanNull the symbol for {@code null} values in boolean attributes.
      * @param metadataManager the metadata manager.
      * @param metadataTypeManager the metadata type manager.
      */
