@@ -1094,7 +1094,7 @@ protected int update(
                     false,
                     false),
 <else>
-                    <table.name.voName>AttributesStatementSetter.UPDATE),
+                    <table.name.voName>StatementSetter.UPDATE),
 <endif>
                 this));
 
