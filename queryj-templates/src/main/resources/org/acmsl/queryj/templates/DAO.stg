@@ -199,7 +199,7 @@ project_imports(
 /*
  * Importing <trName> classes.
  */
-import <basePackageName>.<baseDAOSubpackageName>.<parent.name.voName>DAO;
+import <basePackageName>.<baseDAOSubpackageName>.<<parent.name.voName>DAO;
 import <package>.<table.name.voName>StatementSetter;
 import <package>.<table.name.voName>PkStatementSetter;
 import <package>.<table.name.voName>ResultSetExtractor;
