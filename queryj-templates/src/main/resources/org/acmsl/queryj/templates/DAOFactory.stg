@@ -144,7 +144,7 @@ public class <engine.name.voName><table.name.voName>DAOFactory
         <nullable(C=C)>final DataSource dataSource,
         <nullable(C=C)>final DAOListener daoListener)
     {
-        <nullable(C=C)>final <table.name.capitalized>DAO result;
+        <nullable(C=C)>final <table.name.voName>DAO result;
 
         if (dataSource != null)
         {
