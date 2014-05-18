@@ -125,10 +125,10 @@ public interface DecoratorFactory
         @NotNull final MetadataManager metadataManager);
 
     /**
-     * Creates a <code>SqlDecorator</code>.
+     * Creates a {@SqlDecorator}.
      * @param sql the custom sql.
-     * @param customSqlProvider the <code>CustomSqlProvider</code> instance.
-     * @param metadataManager the <code>MetadataManager</code> instance.
+     * @param customSqlProvider the {@link CustomSqlProvider} instance.
+     * @param metadataManager the {@link MetadataManager} instance.
      * @return the decorated sql for the concrete template.
      */
     @NotNull
