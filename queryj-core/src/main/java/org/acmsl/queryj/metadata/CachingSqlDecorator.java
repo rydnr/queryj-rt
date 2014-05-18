@@ -305,6 +305,7 @@ public class CachingSqlDecorator
             + ", \"isResultNullable\": " + m__bIsResultNullable
             + ", \"class\": \"" + CachingSqlDecorator.class.getSimpleName() + '"'
             + ", \"package\": \"" + CachingSqlDecorator.class.getPackage().getName() + '"'
+            + ", \"super\": " + super.toString()
             + " }";
     }
 }
