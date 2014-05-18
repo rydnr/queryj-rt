@@ -152,7 +152,7 @@ public interface DecoratorFactory
 
     /**
      * Retrieves the decorated list of attributes of given table.
-     * @param table the {@link Table table}.
+     * @param table the table name.
      * @param metadataManager the {@link MetadataManager} instance.
      * @return the attribute list
      */
