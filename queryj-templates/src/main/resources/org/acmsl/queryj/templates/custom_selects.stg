@@ -522,5 +522,4 @@ else>
 import <C.project_package>.<typeInitMap.daoSubpackageName>.<sql.dao.voName.lowercased>.<sql.dao.voName>ResultSetExtractor;
 <
 endif>
-
 >>
