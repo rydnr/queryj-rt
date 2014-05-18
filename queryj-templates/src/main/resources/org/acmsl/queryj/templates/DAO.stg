@@ -205,6 +205,7 @@ import <basePackageName>.<baseDAOSubpackageName>.<table.name.normalized.lowercas
 import <basePackageName>.<baseDAOSubpackageName>.<table.name.normalized.lowercased>.<table.name.voName>PkStatementSetter;
 import <basePackageName>.<baseDAOSubpackageName>.<table.name.normalized.lowercased>.<table.name.voName>ResultSetExtractor;
 import <basePackageName>.<voSubpackageName>.<table.name.voName>;
+import <basePackageName>.<voFactorySubpackageName>.core.<table.name.voName>Factory;
 <if(parent)>
 import <basePackageName>.<baseDAOSubpackageName>.<parent.name.voName>DAO;
 import <basePackageName>.<voSubpackageName>.<parent.name.voName>;
@@ -212,7 +213,6 @@ import <basePackageName>.<voSubpackageName>.<parent.name.voName>;
 <if(table.voDecorated)>
 import <basePackageName>.<voSubpackageName>.<table.name.voName>Decorator;
 <endif>
-import <basePackageName>.<voFactorySubpackageName>.core.<table.name.voName>Factory;
 <table.foreignKeys:{ fk| <foreignkey_statementsetter_import(
   basePackageName=basePackageName,
   fkssSubpackageName=fkssSubpackageName,
