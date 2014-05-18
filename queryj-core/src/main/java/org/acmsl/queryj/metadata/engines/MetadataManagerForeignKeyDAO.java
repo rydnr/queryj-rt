@@ -172,6 +172,7 @@ public class MetadataManagerForeignKeyDAO
     {
         return
               "{ \"class\": \"" + MetadataManagerForeignKeyDAO.class.getName() + '"'
-            + ", \"metadataManager\": " + m__MetadataManager.hashCode() + " }";
+            + ", \"metadataManager\": " + m__MetadataManager.hashCode()
+            + " }";
     }
 }
