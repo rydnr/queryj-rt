@@ -486,8 +486,8 @@ endif>
 custom_select_return_import_property_single(result, package) ::= <<
 <!<result.properties:{property|<
   if(!property.primitive)
-    >import <property.type>;<
-import com.ventura24.commons.dao.<p.type.capitalized>ResultSetExtractor;}; separator=""
+   >import <property.type>;
+    import com.ventura24.commons.dao.<p.type.capitalized>ResultSetExtractor;}; separator=""
   endif>}>!>
 >>
 
