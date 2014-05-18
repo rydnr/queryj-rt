@@ -201,7 +201,7 @@ project_imports(
  */
 import <basePackageName>.<damSubpackageName>.<trName>DataAccessManager;
 import <basePackageName>.<baseDAOSubpackageName>.<table.name.voName>DAO;
-import <basePackageName>.<baseDAOSubpackageName>.<table.name.normalized.lowercased>.<table.name.voName>StatementSetter;
+import <basePackageName>.<baseDAOSubpackageName>.<table.name.voName.lowercased>.<table.name.voName>StatementSetter;
 import <basePackageName>.<baseDAOSubpackageName>.<table.name.normalized.lowercased>.<table.name.voName>PkStatementSetter;
 import <basePackageName>.<baseDAOSubpackageName>.<table.name.normalized.lowercased>.<table.name.voName>ResultSetExtractor;
 <if(parent)>
