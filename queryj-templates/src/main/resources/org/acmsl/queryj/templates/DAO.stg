@@ -211,10 +211,10 @@ import <basePackageName>.<voSubpackageName>.<table.name.voName>;
 <if(parent)>
 import <basePackageName>.<voSubpackageName>.<parent.name.voName>;
 <endif>
-import <basePackageName>.<voFactorySubpackageName>.core.<table.name.voName>Factory;
 <if(table.voDecorated)>
 import <basePackageName>.<voSubpackageName>.<table.name.voName>Decorator;
 <endif>
+import <basePackageName>.<voFactorySubpackageName>.core.<table.name.voName>Factory;
 <table.foreignKeys:{ fk| <foreignkey_statementsetter_import(
   basePackageName=basePackageName,
   fkssSubpackageName=fkssSubpackageName,
