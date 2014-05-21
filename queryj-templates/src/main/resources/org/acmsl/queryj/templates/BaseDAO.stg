@@ -164,8 +164,7 @@ if(table.static)>
     <notnull(C=C)>
     List\<<table.name.voName\>> getStaticValues();
 
-<
-if(table.primaryKey)>
+< if(table.primaryKey)>
     <find_constant_by_pk(primaryKey=table.primaryKey, table=table, C=C)>
 <endif>
 
