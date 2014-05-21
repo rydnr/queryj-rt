@@ -254,7 +254,7 @@ public boolean equals(<nullable(C=C)>final Object other)
         <notnull(C=C)>final <table.name.voName>StatementSetter candidate =
             (<table.name.voName>StatementSetter) other;
 
-        result = equals(getValues(), isUpdateOperation(), candidate.getValues(), candidate.isUpdateOperation());
+        result = equals(getValues(), isUpdateOperation(), candidate.getValues(), candidate.getOperation());
     }
     else
     {
