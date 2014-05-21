@@ -1103,7 +1103,7 @@ protected int update(
                     false,
                     false),
 <else>
-                    <table.name.voName>StatementSetter.UPDATE),
+                    V24Prepared<table.name.voName>StatementSetter.UPDATE),
 <endif>
                 this));
 
