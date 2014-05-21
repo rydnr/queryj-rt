@@ -209,6 +209,7 @@ import <basePackageName>.<baseDAOSubpackageName>.<table.name.voName.lowercased>.
 import <basePackageName>.<baseDAOSubpackageName>.<parent.name.voName>DAO;
 <endif>
 import <basePackageName>.<voSubpackageName>.<table.name.voName>;
+import <basePackageName>.<voSubpackageName>.<table.name.voName>Impl;
 <if(parent)>
 import <basePackageName>.<voSubpackageName>.<parent.name.voName>;
 <endif>
