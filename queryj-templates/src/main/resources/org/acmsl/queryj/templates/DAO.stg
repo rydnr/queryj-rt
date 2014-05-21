@@ -883,11 +883,11 @@ protected <table.name.voName> create(
         new UpdateTransactionCallback(
             new V24PreparedStatementCreator(query, daoListener),
             new <table.name.voName>StatementSetter(
-                new <table.name.voName>State
+                new <table.name.voName>Impl(
 <if(parent)>
-                <table.all.minus.readOnlyAttributes:{ attr | <attr.name.uncapitalized>}; separator=",\n">,
+                    <table.all.minus.readOnlyAttributes:{ attr | <attr.name.uncapitalized>}; separator=",\n">),
 <else>
-                <table.own.minus.readOnlyAttributes:{ attr | <attr.name.uncapitalized>}; separator=",\n">,
+                    <table.own.minus.readOnlyAttributes:{ attr | <attr.name.uncapitalized>}; separator=",\n">),
 <endif>
                 <table.name.voName>StatementSetter.INSERT),
             this));
