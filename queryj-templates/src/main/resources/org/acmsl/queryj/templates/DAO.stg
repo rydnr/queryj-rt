@@ -1092,8 +1092,8 @@ protected int update(
             new UpdateTransactionCallback(
                 new V24PreparedStatementCreator(query, daoListener),
                 new <table.name.voName>StatementSetter(
-<if(parent)>
                     new <table.name.voName>Impl(
+<if(parent)>
                         <table.all.minus.readOnlyAttributes:{ attr | <attr.name.uncapitalized>}; separator=",\n">),
 <else>
                     <table.own.minus.readOnlyAttributes:{ attr | <attr.name.uncapitalized>}; separator=",\n">,
