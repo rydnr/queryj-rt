@@ -1096,7 +1096,7 @@ protected int update(
 <if(parent)>
                         <table.all.minus.readOnlyAttributes:{ attr | <attr.name.uncapitalized>}; separator=",\n">),
 <else>
-                    <table.own.minus.readOnlyAttributes:{ attr | <attr.name.uncapitalized>}; separator=",\n">,
+                    <table.own.minus.readOnlyAttributes:{ attr | <attr.name.uncapitalized>}; separator=",\n">),
 <endif>
 <if(C.lob_handling_required)>
                     true,
