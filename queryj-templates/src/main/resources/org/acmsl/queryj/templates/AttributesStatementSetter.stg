@@ -74,6 +74,7 @@ sourceImpl(table, C) ::= <<
   voSubpackageName=typeInitMap.voSubpackageName,
   voName=table.name.voName)>
 
+
 /*
  * Importing Spring classes.
  */
