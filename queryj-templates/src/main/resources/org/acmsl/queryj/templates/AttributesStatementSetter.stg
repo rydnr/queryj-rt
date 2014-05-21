@@ -302,7 +302,7 @@ public int hashCode()
 
     final int classHashCode = <table.name.voName>StatementSetter.class.hashCode();
 
-    final int superHashCode = this.m__Values.hashCode();
+    final int superHashCode = super.hashCode();
 
     final int operationHashCode = this.m__Operation.hashCode();
 
