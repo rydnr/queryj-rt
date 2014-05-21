@@ -331,8 +331,6 @@ public String toString()
 
     result.append("\", \"super\": ");
     result.append(super.toString());
-    result.append(", \"operation\": \"");
-    result.append(this.m__Operation);
 
     result.append("\", \"package\": \"<C.package>\" }");
 
