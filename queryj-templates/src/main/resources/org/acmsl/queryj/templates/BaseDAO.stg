@@ -170,7 +170,7 @@ if(table.primaryKey)>
 
     <table.own.minus.primaryKey.minus.readOnlyAttributes:{ attr | <find_constant_methods(attribute=attr, table=table, C=C)>}; separator="\n\n">
 
-endif>
+<endif>
 
 if(table.primaryKey)>
     <find_by_primary_key(table=table, parent=table.parentTable, repository=C.repository, C=C)><
