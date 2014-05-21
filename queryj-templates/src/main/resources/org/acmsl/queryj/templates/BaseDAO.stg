@@ -173,7 +173,7 @@ if(table.static)>
 <
 endif>
 < if(table.primaryKey)>
-    <find_by_primary_key(table=table, parent=table.parentTable, repository=C.repository, C=C)><
+    <find_by_primary_key(table=table, parent=table.parentTable, repository=C.repository, C=C)>
 < endif>
 
     /**
