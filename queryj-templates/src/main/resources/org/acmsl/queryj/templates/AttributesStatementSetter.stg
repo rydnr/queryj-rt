@@ -326,7 +326,7 @@ public String toString()
 
     result.append("\", \"super\": ");
     result.append(super.toString());
-    result.append(\"package\": \"<C.package>\" }");
+    result.append(", \"package\": \"<C.package>\" }");
 
     return result.toString();
 }
