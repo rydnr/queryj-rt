@@ -334,7 +334,7 @@ public String toString()
     result.append(", \"update\": \"");
     result.append(this.m__bUpdateOperation);
 
-    result.append(", \"package\": \"");
+    result.append("\", \"package\": \"");
     result.append(<table.name.voName>StatementSetter.class.getPackage().getName());
     result.append("\" }");
 
