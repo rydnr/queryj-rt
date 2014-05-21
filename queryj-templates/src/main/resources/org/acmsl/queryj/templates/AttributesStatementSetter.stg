@@ -331,7 +331,7 @@ public String toString()
 
     result.append("\", \"values\": ");
     result.append(this.m__Values);
-    result.append(", \"update\": \"");
+    result.append(", \"operation\": \"");
     result.append(this.m__bUpdateOperation);
 
     result.append("\", \"package\": \"");
