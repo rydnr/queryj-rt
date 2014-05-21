@@ -251,7 +251,7 @@ public boolean equals(<nullable(C=C)>final Object other)
 
     if (other instanceof <table.name.voName>StatementSetter)
     {
-        result = super.hashCode(equals(getValues(), isUpdateOperation(), candidate.getValues(), candidate.getOperation());
+        result = super.equals(equals(getValues(), isUpdateOperation(), candidate.getValues(), candidate.getOperation());
     }
     else
     {
