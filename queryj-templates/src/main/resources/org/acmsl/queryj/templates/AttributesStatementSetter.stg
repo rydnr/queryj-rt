@@ -330,7 +330,7 @@ public String toString()
         new StringBuilder("{ \"class\": \"<table.name.voName>StatementSetter");
 
     result.append("\", \"values\": ");
-    result.append(this.m__Values);
+    result.append(getValues());
     result.append(", \"operation\": \"");
     result.append(this.m__Operation);
 
