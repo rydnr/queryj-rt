@@ -168,11 +168,11 @@ public class <table.name.voName>StatementSetter
      * Creates a {@code <table.name.voName>StatementSetter}
      * instance.
      * @param values the {@link <table.name.voName>} instance.
-     * @param updateOperation whether the operation is an update.
+     * @param operation whether the operation is an update.
      */
     public <table.name.voName>StatementSetter(
         <notnull(C=C)>final <table.name.voName> values,
-        final Operation updateOperation)
+        final Operation operation)
     {
         immutableSetValues(values);
         immutableSetUpdateOperation(updateOperation);
