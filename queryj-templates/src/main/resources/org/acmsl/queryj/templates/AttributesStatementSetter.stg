@@ -279,7 +279,7 @@ protected boolean equals(
     final V24PreparedStatementSetter.Operation  hisOperation)
 {
     return
-           (myUpdate == hisUpdate)
+           (myOperation.equals(hisOperation))
         && (myValue.equals(hisValue));
 }
 >>
