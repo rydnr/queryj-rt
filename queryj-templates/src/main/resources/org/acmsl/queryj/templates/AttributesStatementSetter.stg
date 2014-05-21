@@ -185,7 +185,7 @@ public class <table.name.voName>StatementSetter
      * Specifies the values on given {@link PreparedStatement}
      * @param preparedStatement the prepared statement.
      * @param values the {@link <table.name.voName>} instance.
-     * @param update whether it's an update operation.
+     * @param operation the {@link V24PreparedStatement.Operation operation}.
      * @throws SQLException intercepted by \<i>Spring\</i>.
      */
     protected void setValues(
