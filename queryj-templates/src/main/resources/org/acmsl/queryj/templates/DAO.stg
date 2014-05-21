@@ -1093,7 +1093,7 @@ protected int update(
                 new V24PreparedStatementCreator(query, daoListener),
                 new <table.name.voName>StatementSetter(
 <if(parent)>
-                    new <table.all.minus.readOnlyAttributes:{ attr | <attr.name.uncapitalized>}; separator=",\n">,
+                    new <table.name.voName>Impl(<table.all.minus.readOnlyAttributes:{ attr | <attr.name.uncapitalized>}; separator=",\n">,
 <else>
                     <table.own.minus.readOnlyAttributes:{ attr | <attr.name.uncapitalized>}; separator=",\n">,
 <endif>
