@@ -165,17 +165,6 @@ public class <table.name.voName>StatementSetter
     extends  V24PreparedStatementSetter
 {
     /**
-     * An attribute container.
-     */
-    <notnull(C=C)>
-    private <table.name.voName> m__Values;
-
-    /**
-     * The \<i>update\</i> operation.
-     */
-    private boolean m__bUpdateOperation;
-
-    /**
      * Creates a {@code <table.name.voName>StatementSetter}
      * instance.
      * @param values the {@link <table.name.voName>} instance.
