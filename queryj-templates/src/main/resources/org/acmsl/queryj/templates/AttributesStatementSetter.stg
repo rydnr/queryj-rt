@@ -168,7 +168,7 @@ public class <table.name.voName>StatementSetter
      * Creates a {@code <table.name.voName>StatementSetter}
      * instance.
      * @param values the {@link <table.name.voName>} instance.
-     * @param operation the kind of {@link V24Preoperation is an update.
+     * @param operation the kind of {@link V24PreparedStatementSetter.Ooperation is an update.
      */
     public <table.name.voName>StatementSetter(
         <notnull(C=C)>final <table.name.voName> values,
