@@ -198,7 +198,7 @@ public class <table.name.voName>StatementSetter
         setValues(
             preparedStatement,
             <table.attributes:{ attr | values.get<attr.name.capitalized>()}; separator=",\n">,
-            isUpdateOperation());
+            Operation.UPDATE.equals(getOperation())isUpdateOperation());
      }
 
     /**
