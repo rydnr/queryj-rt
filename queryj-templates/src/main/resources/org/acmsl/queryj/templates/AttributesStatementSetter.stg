@@ -304,7 +304,7 @@ public int hashCode()
 
     final int valuesHashCode = this.m__Values.hashCode();
 
-    final int operationHashCode = this.m__Operation).hashCode();
+    final int operationHashCode = this.m__Operation.hashCode();
 
     result = classHashCode + valuesHashCode + updateHashCode;
 
