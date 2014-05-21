@@ -166,7 +166,7 @@ if(table.static)>
 
 < if(table.primaryKey)>
     <find_constant_by_pk(primaryKey=table.primaryKey, table=table, C=C)>
-<endif>
+< endif>
 
     <table.own.minus.primaryKey.minus.readOnlyAttributes:{ attr | <find_constant_methods(attribute=attr, table=table, C=C)>}; separator="\n\n">
 
