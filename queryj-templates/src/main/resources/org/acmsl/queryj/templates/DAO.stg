@@ -883,6 +883,7 @@ protected <table.name.voName> create(
         new UpdateTransactionCallback(
             new V24PreparedStatementCreator(query, daoListener),
             new <table.name.voName>StatementSetter(
+                new
 <if(parent)>
                 <table.all.minus.readOnlyAttributes:{ attr | <attr.name.uncapitalized>}; separator=",\n">,
 <else>
