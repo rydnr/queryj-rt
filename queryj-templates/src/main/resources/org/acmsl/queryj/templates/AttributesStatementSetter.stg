@@ -267,7 +267,7 @@ public boolean equals(<nullable(C=C)>final Object other)
 /**
  * Checks whether the state information provided match.
  * @param myValue my {@code <table.name.voName>} value.
- * @param myOperatino my operation.
+ * @param myOperation my operation.
  * @param hisValue his {@code <table.name.voName>} value.
  * @param hisOperation his operation.
  * @return {@code true} if and only if both sets are equivalent.
