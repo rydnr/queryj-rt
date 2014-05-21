@@ -330,9 +330,9 @@ public String toString()
         new StringBuilder("{ \"class\": \"<table.name.voName>StatementSetter");
 
     result.append("\", \"values\": ");
-    result.append(getValues());
+    result.append(this.m__Values);
     result.append(", \"operation\": \"");
-    result.append(getOperation());
+    result.append(this.m__Operation);
 
     result.append("\", \"package\": \"<C.package>\" }");
 
