@@ -144,7 +144,8 @@ public interface <table.name.voName>DAO
 <endif>
 
 {
-<if(table.static)>
+<
+if(table.static)>
     <table.staticContent:{r | <cached_constants(row=r, voName=table.name.voName, C=C)>}; separator="\n\n">
 
     /**
