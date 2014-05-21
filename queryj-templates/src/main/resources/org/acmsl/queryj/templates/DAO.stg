@@ -889,7 +889,7 @@ protected <table.name.voName> create(
 <else>
                     <table.own.minus.readOnlyAttributes:{ attr | <attr.name.uncapitalized>}; separator=",\n">),
 <endif>
-                <table.name.voName>StatementSetter.INSERT),
+                V24PreparedStatementSetter.Operation.INSERT),
             this));
 
     if (retrieveAfterwards)
