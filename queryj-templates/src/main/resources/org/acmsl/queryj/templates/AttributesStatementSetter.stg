@@ -172,7 +172,7 @@ public class <table.name.voName>StatementSetter
      */
     public <table.name.voName>StatementSetter(
         <notnull(C=C)>final <table.name.voName> values,
-        final boolean updateOperation)
+        final Operation updateOperation)
     {
         immutableSetValues(values);
         immutableSetUpdateOperation(updateOperation);
