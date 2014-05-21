@@ -180,16 +180,17 @@ public class <table.name.voName>StatementSetter
     {
         super(values, operation);
     }
--    /**
--     * Specifies the values on given {@link PreparedStatement}
--     * @param preparedStatement the prepared statement.
--     * @param values the {@link <table.name.voName>} instance.
--     * @param update whether it's an update operation.
--     * @throws SQLException intercepted by \<i>Spring\</i>.
--     */
--    protected void setValues(
--        <notnull(C=C)>final PreparedStatement preparedStatement,
--        <notnull(C=C)>final <table.name.voName> values,
+
+    /**
+     * Specifies the values on given {@link PreparedStatement}
+     * @param preparedStatement the prepared statement.
+     * @param values the {@link <table.name.voName>} instance.
+     * @param update whether it's an update operation.
+     * @throws SQLException intercepted by \<i>Spring\</i>.
+     */
+    protected void setValues(
+        <notnull(C=C)>final PreparedStatement preparedStatement,
+        <notnull(C=C)>final <table.name.voName> values,
         final boolean update)
         throws  SQLException
      {
