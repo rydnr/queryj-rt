@@ -192,7 +192,7 @@ public class <table.name.voName>StatementSetter
     protected void setValues(
         <notnull(C=C)>final PreparedStatement preparedStatement,
         <notnull(C=C)>final <table.name.voName> values,
-        final boolean update)
+        final V24PreparedStatement.Operation operation)
         throws  SQLException
      {
         setValues(
