@@ -1094,7 +1094,7 @@ protected int update(
                 new <table.name.voName>StatementSetter(
 <if(parent)>
                     new <table.name.voName>Impl(
-                        <table.all.minus.readOnlyAttributes:{ attr | <attr.name.uncapitalized>}; separator=",\n">,
+                        <table.all.minus.readOnlyAttributes:{ attr | <attr.name.uncapitalized>}; separator=",\n">),
 <else>
                     <table.own.minus.readOnlyAttributes:{ attr | <attr.name.uncapitalized>}; separator=",\n">,
 <endif>
