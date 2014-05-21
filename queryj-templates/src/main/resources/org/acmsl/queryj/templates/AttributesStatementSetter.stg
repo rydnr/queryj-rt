@@ -276,7 +276,7 @@ protected boolean equals(
     <notnull(C=C)>final <table.name.voName> myValue,
     final V24PreparedStatementSetter.Operation myOperation,
     <notnull(C=C)>final <table.name.voName> hisValue,
-    final boolean hisUpdate)
+    final V24PreparedStatementSetter.Operation  hisUpdate)
 {
     return
            (myUpdate == hisUpdate)
