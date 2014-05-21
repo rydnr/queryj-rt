@@ -190,15 +190,14 @@ public class <table.name.voName>StatementSetter
 -    protected void setValues(
 -        <notnull(C=C)>final PreparedStatement preparedStatement,
 -        <notnull(C=C)>final <table.name.voName> values,
--        final boolean update)
--        throws  SQLException
-+        final V24PreparedStatementSetter.Operation operation)
+        final boolean update)
+        throws  SQLException
+        final V24PreparedStatementSetter.Operation operation)
      {
--        setValues(
--            preparedStatement,
--            <table.attributes:{ attr | values.get<attr.name.capitalized>()}; separator=",\n">,
--            isUpdateOperation());
-+        super(values, operation);
+        setValues(
+            preparedStatement,
+            <table.attributes:{ attr | values.get<attr.name.capitalized>()}; separator=",\n">,
+            isUpdateOperation());
      }
 
     /**
