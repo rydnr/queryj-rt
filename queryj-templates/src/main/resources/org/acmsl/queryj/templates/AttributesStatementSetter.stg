@@ -329,7 +329,7 @@ public String toString()
     <notnull(C=C)>final StringBuilder result =
         new StringBuilder("{ \"class\": \"<table.name.voName>StatementSetter");
 
-    result.append("\", \"values\": ");
+    result.append("\", \"super\": ");
     result.append(this.m__Values);
     result.append(", \"operation\": \"");
     result.append(this.m__Operation);
