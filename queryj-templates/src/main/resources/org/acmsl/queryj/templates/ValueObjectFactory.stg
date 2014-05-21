@@ -144,7 +144,7 @@ public class <table.name.voName>Factory
      * @return the new value object.
      */
     <notnull(C=C)>
-    public <table.name.voName> create<table.name.voName>(
+    public <table.name.voName> create(
         <table.attributes:{ a | <attribute_method_declaration(attribute=a)>};
           separator=",\n">)
     {
