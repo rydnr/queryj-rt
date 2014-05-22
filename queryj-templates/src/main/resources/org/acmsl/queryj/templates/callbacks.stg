@@ -52,7 +52,8 @@ inner_transaction_callbacks(table, parent, repository, engine, C) ::= <<
  * {@link JdbcTemplate#update(PreparedStatementCreator, PreparedStatementSetter)}.
  */
 protected static class UpdateTransactionCallback
-V24{
+    extends AbstractTransactionCallback
+{
     /**
      * Creates a transaction callback.
      * @param creator the {@link PreparedStatementCreator} instance.
