@@ -409,7 +409,7 @@ protected static class QueryTransactionCallback
         <notnull(C=C)>final ResultSetExtractor extractor,
         <notnull(C=C)>final <engine.name><table.name.voName>DAO dao)
     {
-        Object result = null;
+        Object result;
 
         if  (sql == null)
         {
