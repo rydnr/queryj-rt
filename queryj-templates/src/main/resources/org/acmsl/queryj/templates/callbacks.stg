@@ -54,39 +54,6 @@ inner_transaction_callbacks(table, parent, repository, engine, C) ::= <<
 protected static class UpdateTransactionCallback
     extends V24TransactionCallback\<<engine.name><table.name.voName>DAO, Integer>
 {
-    /**
-     * Creates a transaction callback.
-     * @param creator the {@link PreparedStatementCreator} instance.
-     * @param setter the {@link PreparedStatementSetter} instance.
-     * @param dao the {@link <engine.name><table.name.voName>DAO} instance.
-     */
-    public UpdateTransactionCallback(
-        <notnull(C=C)>final PreparedStatementCreator creator,
-        <notnull(C=C)>final PreparedStatementSetter setter,
-        <notnull(C=C)>final <engine.name><table.name.voName>DAO dao)
-    {
-        super(creator, setter, dao);
-    }
-
-    /**
-     * Executes the transactional operation.
-     * @param status the transaction status.
-     * @param creator the {@link PreparedStatementCreator} instance.
-     * @param setter the {@link PreparedStatementSetter} instance.
-     * @param dao the {@link <engine.name><table.name.voName>DAO} instance.
-     * @return the transaction result.
-     */
-    @Override
-    <nullable(C=C)>
-    protected Integer doInTransaction(
-        <notnull(C=C)>final TransactionStatus status,
-        <notnull(C=C)>final PreparedStatementCreator creator,
-        <notnull(C=C)>final PreparedStatementSetter setter,
-        <notnull(C=C)>final <engine.name><table.name.voName>DAO dao)
-    {
-        return Integer.valueOf(dao.update(creator, setter));
-    }
-}
 
 <if(C.lob_handling_required)>
 <if(voName)>
