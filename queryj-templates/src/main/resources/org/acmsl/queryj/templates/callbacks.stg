@@ -38,7 +38,7 @@ group callbacks;
 
 import "type_checkers.stg"
 
-inner_transaction_callbacks(table, parent, repository, C) ::= <<
+inner_transaction_callbacks(table, parent, repository, engine, C) ::= <<
 <!
  Generates the inner classes for transaction callbacks.
  @param table the table.
