@@ -254,7 +254,6 @@ protected static class UpdateTransactionCallback
 
 /**
  * Transaction callback implementation to perform a query.
- * {@link JdbcTemplate.query(PreparedStatementCreator, PreparedStatementSetter)}.
  */
 protected static class QueryTransactionCallback
     extends AbstractTransactionCallback
