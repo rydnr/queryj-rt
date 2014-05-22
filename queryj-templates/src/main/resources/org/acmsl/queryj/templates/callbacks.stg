@@ -65,7 +65,7 @@ protected static class AbstractTransactionCallback
     private PreparedStatementSetter m__PreparedStatementSetter;
 
     /**
-     * The {@link <engine_name><table.name.voName>DAO}.
+     * The {@link <engine.name><table.name.voName>DAO}.
      */
     private <C.engine_name><table.name.voName>DAO m__<C.engine_name><table.name.voName>DAO;
 
