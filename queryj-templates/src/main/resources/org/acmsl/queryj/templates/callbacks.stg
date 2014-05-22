@@ -398,7 +398,7 @@ protected static class QueryTransactionCallback
      * @param sql the sql (optional).
      * @param extractor the {@link ResultSetExtractor} instance.
      * @param dao the {@link <engine.name><table.name.voName>DAO} instance.
-     * @result the transaction result.
+     * @return the transaction result.
      */
     <nullable(C=C)>
     protected Object doInTransaction(
