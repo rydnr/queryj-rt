@@ -47,14 +47,6 @@ inner_transaction_callbacks(table, parent, repository, engine, C) ::= <<
  @param engine the engine.
  @param C the context.
 !>
-/**
- * Transaction callback implementation to perform
- * {@link JdbcTemplate#update(PreparedStatementCreator, PreparedStatementSetter)}.
- */
-protected static class UpdateTransactionCallback
-    extends V24TransactionCallback\<<engine.name><table.name.voName>DAO, Integer>
-{
-
 <if(C.lob_handling_required)>
 <if(voName)>
 
