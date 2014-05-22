@@ -42,6 +42,9 @@ inner_transaction_callbacks(table, parent, repository, engine, C) ::= <<
 <!
  Generates the inner classes for transaction callbacks.
  @param table the table.
+ @param parent the parent.
+ @param repository the repository.
+ @param engine the engine.
  @param C the context.
 !>
 /**
