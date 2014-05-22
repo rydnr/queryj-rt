@@ -1418,7 +1418,7 @@ resultset_extractor_parameter_retrieval(name, getterMethod, objectType, isPrimit
 !>
 index = index + 1;
 
-result.put("<name>", <if(isPrimitive)>resultSet.<getterMethod>(index));
+result.put("<name>", resultSet.<getterMethod>(index));
 >>
 
 find_constant_by_pk(primaryKey, table, C) ::= <<
