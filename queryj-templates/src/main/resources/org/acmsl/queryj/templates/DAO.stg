@@ -903,15 +903,6 @@ protected <table.name.voName> create(
                 <table.attributes:{ attr |<attr.name.uncapitalized>}; separator=",\n">);
 
 <endif>
-
-        if (result == null)
-        {
-            throw
-                new RuntimeException(
-                      "Just inserted a new <table.name.voName> ("
-                    + "<table.primaryKey:{ attr |<attr.name> -> " + <attr.name.uncapitalized>}; separator="\n                    + \", ">
-                    + "), but it's not retrievable afterwards");
-        }
     }
     else
     {
