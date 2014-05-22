@@ -402,7 +402,7 @@ protected static class QueryTransactionCallback
      */
     <nullable(C=C)>
     protected Object doInTransaction(
-        <notnull(C=C)>final TransactionStatus status,
+        <notnull(C=C)>@SuppressWarnings("unused") final TransactionStatus status,
         <notnull(C=C)>final PreparedStatementCreator creator,
         <notnull(C=C)>final PreparedStatementSetter setter,
         <nullable(C=C)>final String sql,
