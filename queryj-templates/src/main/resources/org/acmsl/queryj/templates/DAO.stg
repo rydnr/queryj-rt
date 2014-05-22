@@ -382,7 +382,7 @@ public <if(table.dynamicQueries)>abstract <endif>class <engine.name><table.name.
 
     <extractors(table=table, parent=parent, repository=repository, C=C)>
 
-    <inner_transaction_callbacks(table=table, parent=parent, repository=repository, engine=C=C)>
+    <inner_transaction_callbacks(table=table, parent=parent, repository=repository, engine=engine, C=C)>
 
     <helper_methods()>
 }
