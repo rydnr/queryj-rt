@@ -119,7 +119,6 @@ import java.util.Map;
  */
 import javax.sql.DataSource;
 <checkers_import(C=C)>
-<checkthread_import(C=C)>
 
 <class(foreign_keys=table.foreignKeys, table=table, engine=engine, C=C)>
 >>
