@@ -1063,7 +1063,7 @@ update4(table, parent, repository, C) ::= <<
  <table.own.minus.readOnlyAttributes:{ attr | <attribute_javadoc(attr=attr)>}; separator="\n">
 <endif>
  * @param query the query used to perform the update operation.
- * @param transactionManager the {@link PlatformTransactionManager}
+ * @param transactionTemplate the {@link PlatformTransactionManager}
  * instance.
 <if(parent)>
  * @param parentDAO the {@link <parent.name.voName>DAO} instance.
