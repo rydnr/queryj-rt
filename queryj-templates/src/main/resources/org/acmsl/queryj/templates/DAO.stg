@@ -200,6 +200,7 @@ project_imports(
 /*
  * Importing <trName> classes.
  */
+<if(table
 import <basePackageName>.<damSubpackageName>.<trName>DataAccessManager;
 import <basePackageName>.<baseDAOSubpackageName>.<table.name.voName>DAO;
 import <basePackageName>.<baseDAOSubpackageName>.<table.name.voName.lowercased>.<table.name.voName>StatementSetter;
