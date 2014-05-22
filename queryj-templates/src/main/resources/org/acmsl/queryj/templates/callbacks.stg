@@ -92,7 +92,7 @@ protected static class UpdateTransactionCallback
  * Transaction callback implementation to perform a query.
  */
 protected static class QueryTransactionCallback
-    extends AbstracTransactionCallback
+    extends AbstractTransactionCallback
 {
     /**
      * The optional SQL.
