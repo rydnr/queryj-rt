@@ -200,8 +200,9 @@ project_imports(
 /*
  * Importing <trName> classes.
  */
-<if(table
+<if(table.foreignKeys)>
 import <basePackageName>.<damSubpackageName>.<trName>DataAccessManager;
+<endif>
 import <basePackageName>.<baseDAOSubpackageName>.<table.name.voName>DAO;
 import <basePackageName>.<baseDAOSubpackageName>.<table.name.voName.lowercased>.<table.name.voName>StatementSetter;
 import <basePackageName>.<baseDAOSubpackageName>.<table.name.voName.lowercased>.<table.name.voName>PkStatementSetter;
