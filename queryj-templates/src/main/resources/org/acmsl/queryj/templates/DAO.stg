@@ -897,6 +897,14 @@ protected <table.name.voName> create(
 <if(table.readOnlyAttributes)>
         result = findByPrimaryKey(<table.primaryKey:{ attr |<attr.name.uncapitalized>}; separator=", ">);
 
+        if (result == null)
+        {
+            throw
+                new RuntimeException(
+                      "Just inserted a new <table.name.voName> ("
+                    + "<table.primaryKey:{ attr |<attr.name> -> " + <attr.name.uncapitalized>}; separator="\n                    + \", ">
+                    + "), but it's not retrievable afterwards");
+        }
 <else>
         result =
             factory.create<table.name.voName>(
