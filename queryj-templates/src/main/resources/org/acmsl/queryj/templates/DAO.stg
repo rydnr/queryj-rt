@@ -106,8 +106,6 @@ import org.springframework.transaction.TransactionStatus;
 <imports(table=table)>
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.PreparedStatement;
-import java.sql.Types;
 import java.util.ArrayList;
 <if(table.static)>
 import java.util.Arrays;
