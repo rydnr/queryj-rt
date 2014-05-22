@@ -78,7 +78,7 @@ protected static class UpdateTransactionCallback
      */
     @Override
     <nullable(C=C)>
-    protected Object doInTransaction(
+    protected Integer doInTransaction(
         <notnull(C=C)>final TransactionStatus status,
         <notnull(C=C)>final PreparedStatementCreator creator,
         <notnull(C=C)>final PreparedStatementSetter setter,
