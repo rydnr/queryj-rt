@@ -909,7 +909,6 @@ protected <table.name.voName> create(
         result =
             factory.create<table.name.voName>(
                 <table.attributes:{ attr |<attr.name.uncapitalized>}; separator=",\n">);
-
 <endif>
     }
     else
