@@ -221,7 +221,7 @@ import <basePackageName>.<voFactorySubpackageName>.core.<table.name.voName>Facto
  * Importing V24-Commons classes.
  */
 import com.ventura24.commons.dao.DAOListener;
-import com.ventura24.commons.dao.LongResultSetExtractor;
+import com.ventura24.commons.dao.IntegerResultSetExtractor;
 import com.ventura24.commons.dao.LongResultSetExtractor;
 import com.ventura24.commons.dao.DateResultSetExtractor;
 import com.ventura24.commons.dao.BigDecimalResultSetExtractor;
