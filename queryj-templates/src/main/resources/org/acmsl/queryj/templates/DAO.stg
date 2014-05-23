@@ -646,7 +646,6 @@ protected <table.name.voName> findByPrimaryKey(
 {
     return
 <if(table.voDecorated)>
-        (<table.name.voName>Decorator)
             transactionTemplate.execute(
                 new V24QueryTransactionCallback\<<engine.name><table.name.voName>DAO>(
 <else>
