@@ -194,7 +194,7 @@ public int <cs.name.uncapitalized>(
 
     <notnull(C=C)>final Object t_Result =
         transactionTemplate.execute(
-            new V24UpdateTransactionCallback<(
+            new V24UpdateTransactionCallback\<<engine.name><table.name.voName>DAO>(
                 preparedStatementCreatorFactory
                     .newPreparedStatementCreator(params),
                 preparedStatementCreatorFactory
