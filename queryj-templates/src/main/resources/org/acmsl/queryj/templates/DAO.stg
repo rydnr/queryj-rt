@@ -1281,7 +1281,7 @@ protected void deleteNoFk(
     <nullable(C=C)>final DAOListener daoListener)
 {
     transactionTemplate.execute(
-        new V24UpdateTransactionCallback(
+        new V24UpdateTransactionCallback\<<table.name.voName>\>(
             new V24PreparedStatementCreator(query, daoListener),
             new <table.name.voName>PkStatementSetter(
                 <table.primaryKey:{ attr | <attr.name.uncapitalized>}; separator=",\n">),
