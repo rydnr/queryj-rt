@@ -650,7 +650,7 @@ protected <table.name.voName> findByPrimaryKey(
                 new V24QueryTransactionCallback\<<engine.name><table.name.voName>DAO, <table.name.voName>Decorator>(
 <else>
             transactionTemplate.execute(
-                new V24QueryTransactionCallback\<<engine.name><table.name.voName>DAO, <table.name.voName>(
+                new V24QueryTransactionCallback\<<engine.name><table.name.voName>DAO, <table.name.voName>\>(
         (<table.name.voName>)
 <endif>
                     new V24PreparedStatementCreator(query, daoListener),
