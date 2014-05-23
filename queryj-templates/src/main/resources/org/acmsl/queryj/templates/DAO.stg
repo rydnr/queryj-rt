@@ -230,7 +230,7 @@ import com.ventura24.commons.dao.V24QueryTransactionCallback;
 import com.ventura24.commons.dao.V24SelectForUpdateTransactionCallback;
 import com.ventura24.commons.dao.V24TransactionCallback;
 import com.ventura24.commons.dao.V24TransactionManager;
-import com.ventura24.commons.dao.V24SelectForUpdateTransactionCallback;
+import com.ventura24.commons.dao.V24UpdateTransactionCallback;
 import com.ventura24.commons.dao.V24ResultSetExtractor;
 
 >>
