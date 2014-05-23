@@ -1588,7 +1588,7 @@ em_attribute_value_retrieval(attr, table, C) ::= <<
 <notnull(C=C)>final Map\<String, <attr.objectType>\> <attr.name.uncapitalized>Map =
    (Map\<String, <attr.objectType>\>)
        transactionTemplate.execute(
-           new V24QueryTransactionCallback(
+           new V24QueryTransactionCallback\<<engine.name><table.name.voName>DAO>(
                <attr.name.uncapitalized>Sql,
                new <attr.name.capitalized>ResultSetExtractor(<attr.name.uncapitalized>Sql, daoListener),
                this));
