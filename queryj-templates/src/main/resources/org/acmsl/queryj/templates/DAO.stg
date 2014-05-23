@@ -649,7 +649,7 @@ protected <table.name.voName> findByPrimaryKey(
         (<table.name.voName>)
 <endif>
             transactionTemplate.execute(
-                new QueryTransactionCallback(
+                new QueryTransactionCallback\<<table.name.voName>DAO>(
                     new V24PreparedStatementCreator(query, daoListener),
                     new <table.name.voName>PkStatementSetter(
                         <table.primaryKey:{ attr | <attr.name.uncapitalized>}; separator=",\n">),
