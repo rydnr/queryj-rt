@@ -651,7 +651,6 @@ protected <table.name.voName> findByPrimaryKey(
 <else>
             transactionTemplate.execute(
                 new V24QueryTransactionCallback\<<engine.name><table.name.voName>DAO, <table.name.voName>\>(
-        (<table.name.voName>)
 <endif>
                     new V24PreparedStatementCreator(query, daoListener),
                     new <table.name.voName>PkStatementSetter(
