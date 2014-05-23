@@ -1083,7 +1083,7 @@ protected int update(
 <endif>
     Object t_Result =
         transactionTemplate.execute(
-            new V24UpdateTransactionCallback(
+            new V24UpdateTransactionCallbackUpdateTransactionCall(
                 new V24PreparedStatementCreator(query, daoListener),
                 new <table.name.voName>StatementSetter(
                     new <table.name.voName>Impl(
