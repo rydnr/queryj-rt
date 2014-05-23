@@ -1386,7 +1386,7 @@ public int update(
 public \<T> T query(
     <notnull(C=C)>final PreparedStatementCreator creator,
     <notnull(C=C)>final PreparedStatementSetter setter,
-    <notnull(C=C)>final ResultSetExtractor extractor)
+    <notnull(C=C)>final ResultSetExtractor\<T> extractor)
 {
     return super.query(creator, setter, extractor);
 }
