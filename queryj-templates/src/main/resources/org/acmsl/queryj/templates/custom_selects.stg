@@ -338,7 +338,7 @@ actual_custom_select_template_call(sql, result, C) ::= <<
  @param result the sql result.
  !>
 transactionTemplate.execute(
-    new QueryTransactionCallback(
+    new V24QueryTransactionCallback\<<engine.name><table.name.voName>DAO>(
         preparedStatementCreatorFactory
             .newPreparedStatementCreator(params),
         null,
