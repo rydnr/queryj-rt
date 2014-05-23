@@ -1588,11 +1588,11 @@ em_attribute_value_retrieval(attr, table, C) ::= <<
 
 
 <notnull(C=C)>final Map\<String, <attr.objectType>\> <attr.name.uncapitalized>Map =
-       transactionTemplate.execute(
-           new V24QueryTransactionCallback\<<engine.name><table.name.voName>DAO, Map\<String, <attr.objectType>\>(
-               <attr.name.uncapitalized>Sql,
-               new <attr.name.capitalized>ResultSetExtractor(<attr.name.uncapitalized>Sql, daoListener),
-               this));
+   transactionTemplate.execute(
+       new V24QueryTransactionCallback\<<engine.name><table.name.voName>DAO, Map\<String, <attr.objectType>\>(
+           <attr.name.uncapitalized>Sql,
+           new <attr.name.capitalized>ResultSetExtractor(<attr.name.uncapitalized>Sql, daoListener),
+           this));
 
 final <attr.javaType> <attr.name.uncapitalized> = <attr.name.uncapitalized>Map.get("<attr.name.lowercased>");
 >>
