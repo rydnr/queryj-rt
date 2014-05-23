@@ -646,12 +646,14 @@ protected <table.name.voName> findByPrimaryKey(
 {
     return
 <if(table.voDecorated)>
-        (<table.name.voName>Decorator)
-<else>
-        (<table.name.voName>)
-<endif>
             transactionTemplate.execute(
                 new V24QueryTransactionCallback\<<engine.name><table.name.voName>DAO>(
+        (<table.name.voName>Decorator)
+<else>
+            transactionTemplate.execute(
+                new V24QueryTransactionCallback\<<engine.name><table.name.voName>DAO>(
+        (<table.name.voName>)
+<endif>
                     new V24PreparedStatementCreator(query, daoListener),
                     new <table.name.voName>PkStatementSetter(
                         <table.primaryKey:{ attr | <attr.name.uncapitalized>}; separator=",\n">),
