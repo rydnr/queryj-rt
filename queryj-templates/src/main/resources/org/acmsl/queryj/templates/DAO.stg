@@ -1424,7 +1424,7 @@ find_constant_by_pk(primaryKey, table, C) ::= <<
 public <table.name.voName> findConstantByPk(
     <primaryKey:{ attr | <attribute_method_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
 {
-    <nullable(C=C)><table.name.voName> result;
+    <nullable(C=C)><table.name.voName> result = null;
 
     boolean found = false;
 
