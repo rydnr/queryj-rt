@@ -155,6 +155,7 @@ public class <engine.name.voName><table.name.voName>DAOFactory
 
         if (dataSource != null)
         {
+<if(
             result = new <engine.name.voName><table.name.voName>DAO(dataSource, daoListener);
         }
         else
