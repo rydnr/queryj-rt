@@ -106,6 +106,7 @@ endif>
 <endif>
  */
 <custom_select_return_nullable_maybe(cs=cs, result=cs.result, C=C)>
+@SuppressWarnings("unchecked")
 protected <custom_select_return(cs=cs, table=table, result=cs.result, C=C)> <cs.name.uncapitalized>(
     <notnull(C=C)>final String sql,
     <notnull(C=C)>final PreparedStatementCreatorFactory preparedStatementCreatorFactory,
