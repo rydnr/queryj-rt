@@ -1434,8 +1434,7 @@ public <table.name.voName> findConstantByPk(
         {
             found = true;
 
-            <primaryKey:{ attr | <static_attribute_check(attr=attr)>};
-              separator="\n">
+            <primaryKey:{ attr | <static_attribute_check(attr=attr)>}; separator="\n">
             if  (found)
             {
                 result = item;
