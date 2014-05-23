@@ -558,7 +558,7 @@ constructor(table, repository, engine, C) ::= <<
  * @param daoListener the {@link DAOListener}
  * instance.
  */
-public <engine.name><table.name.voName>DAO(
+protected <engine.name><table.name.voName>DAO(
     <notnull(C=C)>final DataSource dataSource, <nullable(C=C)>final DAOListener daoListener)
 {
     super(dataSource, daoListener);
