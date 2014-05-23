@@ -227,6 +227,7 @@ import com.ventura24.commons.dao.V24JdbcTemplate;
 import com.ventura24.commons.dao.V24PreparedStatementCreator;
 import com.ventura24.commons.dao.V24PreparedStatementSetter;
 import com.ventura24.commons.dao.V24TransactionCallback;
+import com.ventura24.commons.dao.V24TransactionCallback;
 import com.ventura24.commons.dao.V24TransactionManager;
 import com.ventura24.commons.dao.V24ResultSetExtractor;
 
