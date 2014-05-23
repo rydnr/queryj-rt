@@ -873,7 +873,7 @@ protected <table.name.voName> create(
 <endif>
 
     transactionTemplate.execute(
-        new UpdateTransactionCallback(
+        new V24UpdateTransactionCallback(
             new V24PreparedStatementCreator(query, daoListener),
             new <table.name.voName>StatementSetter(
                 new <table.name.voName>Impl(
