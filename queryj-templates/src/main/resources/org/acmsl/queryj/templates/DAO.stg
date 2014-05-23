@@ -225,6 +225,7 @@ import com.ventura24.commons.dao.IntegerResultSetExtractor;
 import com.ventura24.commons.dao.LongResultSetExtractor;
 import com.ventura24.commons.dao.DateResultSetExtractor;
 import com.ventura24.commons.dao.BigDecimalResultSetExtractor;
+import com.ventura24.commons.dao.IntegerResultSetExtractor;
 import com.ventura24.commons.dao.DoubleResultSetExtractor;
 import com.ventura24.commons.dao.V24JdbcTemplate;
 import com.ventura24.commons.dao.V24PreparedStatementCreator;
