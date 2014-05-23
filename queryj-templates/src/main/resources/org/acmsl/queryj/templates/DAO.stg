@@ -1390,7 +1390,7 @@ public int update(
  */
 @Override
 <notnull(C=C)>
-public Object query(
+public \<T> T query(
     <notnull(C=C)>final PreparedStatementCreator creator,
     <notnull(C=C)>final PreparedStatementSetter setter,
     <notnull(C=C)>final ResultSetExtractor extractor)
