@@ -344,8 +344,8 @@ public class TemplateDefImpl
     }
 
     /**
-     * Specifies additional metadata.
-     * @param metadata such metadata.
+     * Retrieves additional metadata.
+     * @return such information.
      */
     public Map<String, String> getMetadata()
     {
