@@ -110,5 +110,6 @@ public class TemplateDefMetadataVisitor
     public String toString()
     {
         return
+            "{ \"metadata\": "
     }
 }
