@@ -51,6 +51,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 import java.io.File;
 import java.io.Serializable;
+import java.util.Map;
 
 /**
  * Represents template definitions: all additional metadata associated to
