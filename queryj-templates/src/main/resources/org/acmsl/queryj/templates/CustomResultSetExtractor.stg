@@ -191,9 +191,9 @@ protected <if(C.multiple)>List\<<result.simpleClassValue>\><else><result.simpleC
     <result.nullableProperties:{p | <nullable_property_resultset_retrieval_declaration(property=p, C=C)>}; separator="\n">
 
 <endif>
-        result =
-            factory.create(
-                <result.properties:{p | <nullable_property_resultset_retrieval(property=p, C=C)>}; separator=",\n">);
+    result =
+        factory.create(
+            <result.properties:{p | <nullable_property_resultset_retrieval(property=p, C=C)>}; separator=",\n">);
 
     return result;
 }
