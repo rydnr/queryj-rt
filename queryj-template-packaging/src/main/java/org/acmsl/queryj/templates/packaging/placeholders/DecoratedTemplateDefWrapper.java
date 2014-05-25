@@ -62,6 +62,7 @@ import org.checkthread.annotations.ThreadSafe;
  * Importing JDK classes.
  */
 import java.io.File;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -358,7 +359,7 @@ public class DecoratedTemplateDefWrapper
     @NotNull
     protected Map<DecoratedString, DecoratedString> getMetadata(@NotNull final TemplateDef<String> templateDef)
     {
-        return getMetadata(getTemplateDef());
+        Map<DecoratedString, DecoratedString> result = new HashMap<>()
     }
 
     /**
