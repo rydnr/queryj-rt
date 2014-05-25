@@ -55,7 +55,7 @@ import java.util.Map;
  */
 @ThreadSafe
 public class TemplateDefMetadataVisitor
-    extends TemplateDefBaseVisitor<String>
+    extends TemplateDefBaseVisitor<Map<String, String>>
 {
 
     private Map<String, String> metadata;
