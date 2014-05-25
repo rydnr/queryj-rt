@@ -310,7 +310,7 @@ public class ParseTemplateDefsHandler
 
         try
         {
-            disabledVisitor.visit(tree);
+            metadataVisitor.visit(tree);
 
             disabled = disabledVisitor.isDisabled();
         }
