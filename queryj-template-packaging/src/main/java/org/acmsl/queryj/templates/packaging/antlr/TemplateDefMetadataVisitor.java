@@ -76,7 +76,9 @@ public class TemplateDefMetadataVisitor
     public Map<String, String> visitMetadataRule(
         @NotNull final TemplateDefParser.MetadataRuleContext ctx)
     {
-        @NotNull final Map<String, String> result = new HashMap<>(ctx.getChild(3).getChildCount() / 2);
+        @NotNull final Map<String, String> result;
+
+        = new HashMap<>(ctx.getChild(3).getChildCount() / 2);
 
         for (int index = 4; index <= ctx.getChildCount(); index += 2)
         {
