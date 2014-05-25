@@ -142,7 +142,7 @@ public class <table.name.voName>ResultSet<if(C.multiple)>Multiple<else>Single<en
      * @param sql the SQL query.
      * @param listener the {@link DAOListener} instance.
      */
-    public <table.name.voName>ResultSet<if(C.multiple)>Multiple<else>Single<endif>Extractor(
+    public <table.name.voName>ResultSet<if(C.templateDef.metadata.multiple)>Multiple<else>Single<endif>Extractor(
         <notnull(C=C)>final String sql, <nullable(C=C)>final DAOListener listener)
     {
         super(sql, listener);
