@@ -38,6 +38,7 @@ package org.acmsl.queryj.templates.packaging.antlr;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.templates.packaging.antlr.TemplateDefParser.MetadataRuleContext;
 import org.jetbrains.annotations.NotNull;
 
 /*
