@@ -1308,7 +1308,7 @@ extractors(table, parent, repository, C) ::= <<
  <class_common_javadoc(template="org/acmsl/queryj/templates/dao/DAO.stg", C=C)>
  */
 public static class <table.name.voName>PkResultSetExtractor
-    extends V24ResultSetExtractor\<Map\<String, ?\>>
+    extends V24ResultSetSingleExtractor\<Map\<String, ?\>>
 {
     /**
     * Constructs a new {@link <table.name.voName>PkResultSetExtractor}.
