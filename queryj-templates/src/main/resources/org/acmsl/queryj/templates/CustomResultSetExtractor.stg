@@ -181,8 +181,6 @@ protected <if(C.multiple)>List\<<result.simpleClassValue>\><else><result.simpleC
 <notnull(C=C)>
 protected <if(C.multiple)>List\<<result.simpleClassValue>\><else><result.simpleClassValue><endif> extractValue(
     <notnull(C=C)>final ResultSet resultSet,
-    <notnull(C=C)>final String sql,
-    <nullable(C=C)>final DAOListener listener,
     <notnull(C=C)>final <result.simpleClassValue>Factory factory)
   throws  SQLException,
           DataAccessException
