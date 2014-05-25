@@ -122,7 +122,7 @@ class(result, repository, C) ::= <<
 <class_common_javadoc(template="org/acmsl/queryj/templates/CustomResultSetExtractor.stg", C=C)>
  */
 public class <result.simpleClassValue>ResultSet<if(C.multiple)>Multiple<else>Single<endif>Extractor
-    extends V24ResultSetExtractor\<<result.simpleClassValue>\>
+    extends V24ResultSet<if(C.multiple)>Multiple<else>Single<endif>Extractor\<<result.simpleClassValue>\>
 {
     /**
      * Creates a new {@code <result.simpleClassValue>ResultSetExtractor} instance.
