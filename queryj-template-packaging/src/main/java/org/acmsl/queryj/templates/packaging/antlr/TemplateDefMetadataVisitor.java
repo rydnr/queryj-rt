@@ -57,8 +57,10 @@ import java.util.Map;
 public class TemplateDefMetadataVisitor
     extends TemplateDefBaseVisitor<Map<String, String>>
 {
-
-    private Map<String, String> metadata;
+    /**
+     * The metadata.
+     */
+    private Map<String, String> m__mMetadata;
 
     /**
      * {@inheritDoc}
