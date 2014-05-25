@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Tests for MissingTemplatesException.
+ * Description: Tests for InvalidTempltaeDefException.
  *
  * Date: 2014/05/25
  * Time: 20:00
