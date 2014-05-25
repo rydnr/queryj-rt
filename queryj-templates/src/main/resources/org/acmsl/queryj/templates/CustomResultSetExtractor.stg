@@ -129,7 +129,7 @@ public class <result.simpleClassValue>ResultSetExtractor
      * @param sql the SQL query.
      * @param listener the {@link <repository.voName>DAOListener} instance.
      */
-    public <result.simpleClassValue>ResultSetExtractor(
+    public <result.simpleClassValue>ResultSet<if(C.multiple)>Multiple<else>Single<endif>Extractor(
         <notnull(C=C)>final String sql, <nullable(C=C)>final DAOListener listener)
     {
         super(sql, listener);
