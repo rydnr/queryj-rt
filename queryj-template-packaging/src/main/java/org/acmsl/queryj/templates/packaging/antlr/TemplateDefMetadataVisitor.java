@@ -85,7 +85,6 @@ public class TemplateDefMetadataVisitor
 
         setMetadata(result);
 
-
         return visitChildren(ctx);
     }
 
