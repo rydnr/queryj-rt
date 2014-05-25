@@ -27,15 +27,10 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description:
+ * Description: Tests for MissingTemplatesException.
  *
  * Date: 2014/05/25
  * Time: 20:00
- * Filename: MissingTemplatesExceptionTest.java
- *
- * Author: Jose San Leandro Armendariz
- *
- * Description: Tests for MissingTemplatesException.
  *
  * Date: 2014/04/15
  * Time: 18:21
