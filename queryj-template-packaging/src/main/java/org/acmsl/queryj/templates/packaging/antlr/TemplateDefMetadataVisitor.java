@@ -82,9 +82,4 @@ public class TemplateDefMetadataVisitor
     {
         return m__mMetadata;
     }
-
-    protected final void immutableSetMetadata(final Map<String, String> metadata)
-    {
-        this.m__mMetadata = metadata;
-    }
 }
