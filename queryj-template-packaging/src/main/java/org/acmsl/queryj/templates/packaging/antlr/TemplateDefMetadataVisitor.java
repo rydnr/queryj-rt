@@ -87,7 +87,7 @@ public class TemplateDefMetadataVisitor
      * Specifies the metadata.
      * @param metadata such metadata.
      */
-    protected void setMetadata(final Map<String, String> metadata)
+    protected void setMetadata(@NotNull final Map<String, String> metadata)
     {
         immutableSetMetadata(metadata);
     }
