@@ -345,7 +345,7 @@ public class DecoratedTemplateDefWrapper
     public String toString()
     {
         return
-            + "{ \"templateDef\": " + this.m__TemplateDef + " }";
+              "{ \"templateDef\": " + this.m__TemplateDef + " }";
             + ", \"class\": \"" + DecoratedTemplateDefWrapper.class.getName() + '"'
     }
 }
