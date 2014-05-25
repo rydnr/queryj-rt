@@ -125,7 +125,7 @@ public class <result.simpleClassValue>ResultSet<if(C.templateDef.metadata.multip
     extends V24ResultSet<if(C.multiple)>Multiple<else>Single<endif>Extractor\<<result.simpleClassValue>\>
 {
     /**
-     * Creates a new {@code <result.simpleClassValue>ResultSet<if(C.templateDef.metadata.multipleC.multiple)>Multiple<else>Single<endif>Extractor} instance.
+     * Creates a new {@code <result.simpleClassValue>ResultSet<if(C.templateDef.metadata.multiple)>Multiple<else>Single<endif>Extractor} instance.
      * @param sql the SQL query.
      * @param listener the {@link <repository.voName>DAOListener} instance.
      */
