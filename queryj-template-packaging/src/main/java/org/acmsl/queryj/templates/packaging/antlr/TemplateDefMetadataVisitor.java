@@ -72,7 +72,8 @@ public class TemplateDefMetadataVisitor
      * <p>The default implementation returns the result of calling
      * {@link #visitChildren} on {@code ctx}.</p>
      */
-    @Override public Map<String, String> visitMetadataRule(
+    @Override
+    public Map<String, String> visitMetadataRule(
         @NotNull final TemplateDefParser.MetadataRuleContext ctx)
     {
         @NotNull final Map<String, String> result = new HashMap<>(ctx.getChildCount() / 2);
