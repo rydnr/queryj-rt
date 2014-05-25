@@ -442,7 +442,7 @@ public class TemplateDefImpl
             + ", \"filenameBuilder\": \"" + m__strFilenameBuilder + '"'
             + ", \"packageName\": \"" + m__strPackageName + '"'
             + ", \"file\": \"" + m__File.getAbsolutePath() + '"'
-            + "."
+            + ", \"
             + ", \"disabled\": " + m__bDisabled
             + ", \"debug\": " + m__bDebug + " }";
     }
