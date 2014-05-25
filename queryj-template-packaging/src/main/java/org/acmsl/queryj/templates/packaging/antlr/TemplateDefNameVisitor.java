@@ -114,7 +114,7 @@ public class TemplateDefNameVisitor
     public String toString()
     {
         return
-            "{ \"name": \""
+            "{ \"name\": \""
                             + m__strName + \", \"class\": \"TemplateDefNameVisitor\", " +
                "
     }
