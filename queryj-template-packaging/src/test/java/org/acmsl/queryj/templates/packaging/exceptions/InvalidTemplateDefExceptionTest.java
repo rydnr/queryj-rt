@@ -85,7 +85,8 @@ public class InvalidTemplateDefExceptionTest
     }
 
     /**
-     * Tests the "per-table-templates-feature" exception is defined for Spanish and English.
+     * Tests the template def parser errors due to invalid "name" values
+     * are defined for Spanish and English.
      */
     @Test
     public void per_table_templates_feature_message_is_defined_in_Spanish_and_English()
