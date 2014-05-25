@@ -111,6 +111,7 @@ public class TemplateDefMetadataVisitor
     {
         return
             "{ \"metadata\": " + this.m__mMetadata
-            + ", \"class\": \"TemplateDefMetadataVisitor"
+            + ", \"class\": \"TemplateDefMetadataVisitor\""
+            + ", \"package\": \"org.acmsl.queryj.templates.packaging"
     }
 }
