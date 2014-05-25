@@ -179,7 +179,7 @@ public class ParseTemplateDefsHandler
         @NotNull final File templateDefFile = templateDef.getFile();
 
         @NotNull final File templateFile =
-            new File(stringUtils.getInstance().removeFirstAndLastBlankLines() templateDefFile.getAbsolutePath().replace
+            new File(stringUtils.extractPackageName() templateDefFile.getAbsolutePath().replace
 
         result = templateFile.exists();
 
