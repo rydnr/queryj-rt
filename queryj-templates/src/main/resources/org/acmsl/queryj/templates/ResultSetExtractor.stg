@@ -172,8 +172,7 @@ defaultExtractor(table, repository, C) ::= <<
  */
 @Override
 <notnull(C=C)>
-protected <table.name.voName> extractValue(
-    <notnull(C=C)>final ResultSet resultSet,
+protected <table.name.voName> extractValue(<notnull(C=C)>final ResultSet resultSet,
     <notnull(C=C)>final String sql,
     <nullable(C=C)>final DAOListener listener)
     throws  SQLException,
