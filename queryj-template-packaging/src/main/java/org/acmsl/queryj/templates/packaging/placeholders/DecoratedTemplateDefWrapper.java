@@ -336,6 +336,7 @@ public class DecoratedTemplateDefWrapper
         return templateDef.getFilenameRule();
     }
 
+
     /**
      * {@inheritDoc}
      */
