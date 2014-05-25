@@ -78,7 +78,7 @@ public class TemplateDefMetadataVisitor
      */
     public Map<String, String> getMetadata()
     {
-        return metadata;
+        return m__mMetadata;
     }
 
     public void setMetadata(final Map<String, String> metadata)
