@@ -123,4 +123,11 @@ public interface TemplateDef<S>
      */
     @NotNull
     public String getFilenameRule();
+
+    /**
+     * Retrieves additional metadata.
+     * @return such information.
+     */
+    @NotNull
+    public Map<String, String> getMetadata();
 }
