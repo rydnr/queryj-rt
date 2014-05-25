@@ -168,10 +168,6 @@ protected <if(C.multiple)>List\<<result.simpleClassValue>\><else><result.simpleC
 /**
  * Extracts {@link <result.simpleClassValue>} information from given result set.
  * @param resultSet the result set.
- * @param sql the SQL query.
- * @param listener the {@link <repository.voName>DAOListener} instance.
- * @param factory the {@link <result.simpleClassValue>ValueObjectFactory}
- * instance.
  * @return the {@code <result.simpleClassValue>} or
  * {@code null} if the operation returned no data.
  * @throws SQLException intercepted by \<i>Spring\</i>.
