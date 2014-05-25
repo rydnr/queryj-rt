@@ -62,6 +62,7 @@ import org.checkthread.annotations.ThreadSafe;
  * Importing JDK classes.
  */
 import java.io.File;
+import java.util.Map;
 
 /**
  * Wraps a {@link TemplateDef} to provide decorated versions of its information, to be used in templates.
@@ -336,6 +337,17 @@ public class DecoratedTemplateDefWrapper
         return templateDef.getFilenameRule();
     }
 
+    /**
+     * Retrieves additional metadata.
+     *
+     * @return such information.
+     */
+    @NotNull
+    @Override
+    public Map<DecoratedString, DecoratedString> getMetadata()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
 
     /**
      * {@inheritDoc}
