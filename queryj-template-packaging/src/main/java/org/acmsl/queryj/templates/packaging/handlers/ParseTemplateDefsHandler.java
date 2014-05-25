@@ -133,6 +133,7 @@ public class ParseTemplateDefsHandler
      * represents.
      *
      * @param command the command to process (or not).
+     * @param stringUtils the {@link StringUtils} instance.
      * @return <code>true</code> if the handler actually process the command,
      *         or maybe because it's not desirable to continue the chain.
      */
