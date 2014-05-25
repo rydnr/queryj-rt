@@ -202,7 +202,7 @@ public class ParseTemplateDefsHandler
 
         return
             new File(
-                stringUtils.extractPackageName(
+                stringUtils.extractClassName(
                     templateDefFile.getAbsolutePath().replaceAll("\\.stg\\.def$", "").replaceAll(File.separator, "."))
                 + File.separator
                 + templateDef.getName());
