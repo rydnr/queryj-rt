@@ -1331,8 +1331,7 @@ public static class <table.name.voName>PkResultSetExtractor
     @Override
     @SuppressWarnings("unchecked")
     <notnull(C=C)>
-    protected Map\<String, ?> extractValue(
-        <notnull(C=C)>final ResultSet resultSet)
+    protected Map\<String, ?> extractValue(<notnull(C=C)>final ResultSet resultSet)
     throws  SQLException,
             DataAccessException
     {
