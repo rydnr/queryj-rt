@@ -65,7 +65,7 @@ import java.util.Locale;
 public class InvalidTemplateDefExceptionTest
 {
     /**
-     * Tests the "name" exception is defined for Spanish and English.
+     * Tests the invalid template def "name" exception is defined for Spanish and English.
      */
     @Test
     public void template_chain_provider_message_is_defined_in_Spanish_and_English()
