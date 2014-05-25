@@ -104,7 +104,7 @@ public class InvalidTemplateDefExceptionTest
     @Test
     public void template_build_handler_message_is_defined_in_Spanish_and_English()
     {
-        checkExceptionMessageIsDefinedInSpanishAndEnglish("template-build-handler");
+        checkExceptionMessageIsDefinedInSpanishAndEnglish("metadata");
     }
 
     /**
