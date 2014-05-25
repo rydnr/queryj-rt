@@ -170,6 +170,7 @@ public class ParseTemplateDefsHandler
     /**
      * Checks whether the template def is valid.
      * @param templateDef the {@link TemplateDef} to check.
+     * @param stringUtils the {@link StringUtils} instance.
      * @return {@code true} in such case.
      */
     protected boolean isValid(@NotNull final TemplateDef<String> templateDef, @NotNull final StringUtils stringUtils)
