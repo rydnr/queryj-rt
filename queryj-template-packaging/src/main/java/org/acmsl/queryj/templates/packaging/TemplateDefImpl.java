@@ -435,7 +435,6 @@ public class TemplateDefImpl
     public String toString()
     {
         return
-              "{ \"class\": \"" + TemplateDefImpl.class.getName() + '"'
             + ", \"output\": \"" + m__Output + '"'
             + ", \"name\": \"" + m__strName + '"'
             + ", \"type\": \"" + m__Type  + '"'
