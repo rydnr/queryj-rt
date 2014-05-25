@@ -348,6 +348,18 @@ public class DecoratedTemplateDefWrapper
         return getMetadata(getTemplateDef());
     }
 
+
+    /**
+     * Retrieves additional metadata.
+     * @return such information.
+     */
+    @NotNull
+    @Override
+    public Map<DecoratedString, DecoratedString> getMetadata()
+    {
+        return getMetadata(getTemplateDef());
+    }
+
     /**
      * {@inheritDoc}
      */
