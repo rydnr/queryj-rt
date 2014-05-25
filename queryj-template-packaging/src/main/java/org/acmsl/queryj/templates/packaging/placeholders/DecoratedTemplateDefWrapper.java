@@ -64,6 +64,7 @@ import org.checkthread.annotations.ThreadSafe;
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
 
 /**
  * Wraps a {@link TemplateDef} to provide decorated versions of its information, to be used in templates.
@@ -363,7 +364,9 @@ public class DecoratedTemplateDefWrapper
 
         @NotNull final Map<String, String> metadata = templateDef.getMetadata();
 
-        result = new HashMap<>();
+        result = new HashMap<>(metadata.size());
+
+        for (@NotNull final Entry)
     }
 
     /**
