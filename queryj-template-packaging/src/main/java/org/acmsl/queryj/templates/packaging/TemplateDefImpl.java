@@ -353,6 +353,8 @@ public class TemplateDefImpl
      * Retrieves additional metadata.
      * @return such information.
      */
+    @NotNull
+    @Override
     public Map<String, String> getMetadata()
     {
         return this.m__mMetadata;
