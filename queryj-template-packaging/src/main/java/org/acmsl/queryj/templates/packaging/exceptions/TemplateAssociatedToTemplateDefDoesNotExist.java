@@ -78,7 +78,7 @@ public class TemplateAssociatedToTemplateDefDoesNotExist
             "template.associated.to.templatedef.does.not.exist",
             new Object[]
             {
-                templateDef.getFile().getAbsolutePath().replaceAll("\\.def$", ""),
+                templateFile,
                 templateDef.getName(),
                 templateDef.getFile().getAbsolutePath()
             });
