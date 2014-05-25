@@ -351,7 +351,6 @@ public class DecoratedTemplateDefWrapper
         return getMetadata(getTemplateDef());
     }
 
-
     /**
      * Retrieves additional metadata.
      * @param templateDef the wrapped {@link TemplateDef}.
