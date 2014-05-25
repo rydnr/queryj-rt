@@ -26,7 +26,7 @@ debugRule:
         'debug' ';';
 
 metadataRule:
-        'metadata' ':' '{' keyValueRule
+        'metadata' ':' '{' keyValueRule+
 
 ID : [a-zA-Z0-9\.\-_,<>]+ ;
 
