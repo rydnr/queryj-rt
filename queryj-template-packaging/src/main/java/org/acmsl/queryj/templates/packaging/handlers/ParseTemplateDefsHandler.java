@@ -281,7 +281,7 @@ public class ParseTemplateDefsHandler
         {
             filenameBuilderVisitor.visit(tree);
 
-            defFilenameBuilder= filenameBuilderVisitor.getFilenameBuilder();
+            defFilenameBuilder = filenameBuilderVisitor.getFilenameBuilder();
         }
         catch (@NotNull final Throwable invalidClass)
         {
