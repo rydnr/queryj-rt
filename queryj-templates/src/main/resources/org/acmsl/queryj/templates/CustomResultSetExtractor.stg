@@ -179,7 +179,7 @@ protected <if(C.multiple)>List\<<result.simpleClassValue>\><else><result.simpleC
  * custom exception.
  */
 <notnull(C=C)>
-protected <result.simpleClassValue> extractData(
+protected <if(C.multiple)>List\<<result.simpleClassValue>\><else><result.simpleClassValue><endif> extractValue(
     <notnull(C=C)>final ResultSet resultSet,
     <notnull(C=C)>final String sql,
     <nullable(C=C)>final DAOListener listener,
