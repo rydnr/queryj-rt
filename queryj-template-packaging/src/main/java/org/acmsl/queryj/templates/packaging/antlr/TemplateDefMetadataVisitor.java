@@ -76,7 +76,7 @@ public class TemplateDefMetadataVisitor
 
         for (int index = 1; index <= ctx.getChildCount(); index++)
         {
-
+            result.put(ctx.getChild(index), ctx.getChild())
         }
         setMetadata(result);
 
