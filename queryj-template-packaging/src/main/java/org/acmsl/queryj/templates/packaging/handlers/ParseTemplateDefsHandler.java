@@ -138,7 +138,6 @@ public class ParseTemplateDefsHandler
      * @return {@code true} if the handler actually process the command,
      *         or maybe because it's not desirable to continue the chain.
      */
-    @Override
     protected boolean handle(@NotNull final QueryJCommand command, @NotNull final StringUtils stringUtils)
         throws QueryJBuildException
     {
