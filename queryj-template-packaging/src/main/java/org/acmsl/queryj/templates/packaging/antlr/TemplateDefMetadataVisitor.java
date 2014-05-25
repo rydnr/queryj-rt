@@ -111,6 +111,6 @@ public class TemplateDefMetadataVisitor
     {
         return
             "{ \"metadata\": " + this.m__mMetadata
-            + ", \"class\": \""
+            + ", \"class\": \"TemplateDefMetadataVisitor"
     }
 }
