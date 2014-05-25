@@ -162,7 +162,7 @@ protected <if(C.multiple)>List\<<result.simpleClassValue>\><else><result.simpleC
     throws  SQLException,
             DataAccessException
 {
-    return extractData(resultSet, sql, listener, <result.simpleClassValue>Factory.getInstance());
+    return extractValue(resultSet, sql, listener, <result.simpleClassValue>Factory.getInstance());
 }
 
 /**
