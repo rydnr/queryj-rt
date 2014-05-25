@@ -354,7 +354,7 @@ public class DecoratedTemplateDefWrapper
      * @return such information.
      */
     @NotNull
-    protected Map<DecoratedString, DecoratedString> getMetadata(@NotNull TemplateDef<DecoratedString>)
+    protected Map<DecoratedString, DecoratedString> getMetadata(@NotNull TemplateDef<String> templateDef)
     {
         return getMetadata(getTemplateDef());
     }
