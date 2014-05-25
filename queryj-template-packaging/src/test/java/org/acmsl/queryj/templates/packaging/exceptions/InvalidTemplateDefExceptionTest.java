@@ -64,7 +64,7 @@ import java.util.Locale;
  * Created: 2014/05/25 20:00
  */
 @RunWith(JUnit4.class)
-public class InvalidTemplateDefExc
+public class InvalidTemplateDefExceptionTest
 {
     /**
      * Tests the "default-template-chain-provider" exception is defined for Spanish and English.
