@@ -329,6 +329,7 @@ public class DecoratedTemplateDefWrapper
 
     /**
      * Retrieves the filename rule.
+     * @param templateDef the wrapped {@link TemplateDef}.
      * @return such rule.
      */
     @NotNull
