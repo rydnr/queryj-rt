@@ -66,7 +66,8 @@ public class TemplateDefMetadataVisitor
      * <p>The default implementation returns the result of calling
      * {@link #visitChildren} on {@code ctx}.</p>
      */
-    @Override public Map<String, String> visitMetadataRule(@NotNull TemplateDefParser.MetadataRuleContext ctx) { return visitChildren(ctx); }
+    @Override public Map<String, String> visitMetadataRule(
+        @NotNull TemplateDefParser.MetadataRuleContext ctx) { return visitChildren(ctx); }
 
     public Map<String, String> getMetadata()
     {
