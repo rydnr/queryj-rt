@@ -444,5 +444,6 @@ public class TemplateDefImpl
             + ", \"metadata\": \"" + m__mMetadata + '"'
             + ", \"disabled\": " + m__bDisabled
             + ", \"debug\": " + m__bDebug + " }";
+        "{ \"class\": \"" + TemplateDefImpl.class.getSimpleName() + '"'
     }
 }
