@@ -132,7 +132,6 @@ public class ParseTemplateDefsHandler
      * command handler decides if such command is suitable of being
      * processed, and if so perform the concrete actions the command
      * represents.
-     *
      * @param command the command to process (or not).
      * @param stringUtils the {@link StringUtils} instance.
      * @return {@code true} if the handler actually process the command,
