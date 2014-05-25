@@ -186,7 +186,13 @@ public class ParseTemplateDefsHandler
     protected File retrieveTemplateFile(
         @NotNull final TemplateDef<String> templateDef, @NotNull final StringUtils stringUtils)
     {
+        @NotNull final File templateDefFile = templateDef.getFile();
 
+        @NotNull final File templateFile =
+            new File(
+                stringUtils.extractPackageName(templateDefFile.getAbsolutePath().replaceAll(File.separator, "."))
+                + File.separator
+                + templateDef.getName());
     }
     /**
      * Checks whether the template def is valid.
