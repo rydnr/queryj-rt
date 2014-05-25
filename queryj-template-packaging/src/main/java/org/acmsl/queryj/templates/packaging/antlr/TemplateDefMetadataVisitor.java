@@ -71,6 +71,9 @@ public class TemplateDefMetadataVisitor
     @Override public Map<String, String> visitMetadataRule(
         @NotNull final TemplateDefParser.MetadataRuleContext ctx)
     {
+        setName(context.getChild(2).getText());
+
+
         return visitChildren(ctx);
     }
 
