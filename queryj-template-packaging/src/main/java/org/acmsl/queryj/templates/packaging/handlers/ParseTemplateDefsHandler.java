@@ -214,7 +214,7 @@ public class ParseTemplateDefsHandler
 
         @NotNull final File templateDefFile = templateDef.getFile();
 
-        @NotNull final File templateFile = retrieveTemplateFile()
+        @NotNull final File templateFile = retrieveTemplateFile(templateDef)
             new File(
                   stringUtils.extractPackageName(templateDefFile.getAbsolutePath().replaceAll(File.separator, "."))
                 + File.separator
