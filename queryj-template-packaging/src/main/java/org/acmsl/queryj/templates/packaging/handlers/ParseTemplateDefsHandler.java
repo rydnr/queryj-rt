@@ -357,6 +357,7 @@ public class ParseTemplateDefsHandler
                 defFilenameBuilder,
                 defPackage,
                 file,
+                metadata,
                 disabled,
                 debug);
 
