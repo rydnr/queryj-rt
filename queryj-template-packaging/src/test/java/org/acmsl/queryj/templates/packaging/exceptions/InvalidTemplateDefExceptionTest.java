@@ -32,9 +32,6 @@
  * Date: 2014/05/25
  * Time: 20:00
  *
- * Date: 2014/04/15
- * Time: 18:21
- *
  */
 package org.acmsl.queryj.templates.packaging.exceptions;
 
