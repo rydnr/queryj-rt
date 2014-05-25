@@ -125,7 +125,7 @@ public class InvalidTemplateDefExceptionTest
     }
 
     /**
-     * Tests the template def parser errors due to invalid "debuc" values
+     * Tests the template def parser errors due to invalid "debug" values
      * are defined for Spanish and English.
      */
     @Test
