@@ -137,7 +137,7 @@ public class ParseTemplateDefsHandler
      *         or maybe because it's not desirable to continue the chain.
      */
     @Override
-    public boolean handle(@NotNull final QueryJCommand command)
+    protected boolean handle(@NotNull final QueryJCommand command, @NotNull final StringUtils stringUtils)
         throws QueryJBuildException
     {
         @Nullable final List<File> templateDefFiles =
