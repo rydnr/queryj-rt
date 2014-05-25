@@ -1337,20 +1337,7 @@ public static class <table.name.voName>PkResultSetExtractor
     {
         <notnull(C=C)>final Map\<String, ?> result = new HashMap\<String, Object>();
 
-        int t_iRowCount = 0;
-
-        if  (resultSet.next())
-        {
-            t_iRowCount++;
-
-            if (daoListener != null)
-            {
-                daoListener.resultSetMovedForward(sql, t_iRowCount);
-            }
-
-            int index = 1;
-
-            <table.primaryKey:{ attr | <resultset_extractor_parameter_retrieval(
+        <table.primaryKey:{ attr | <resultset_extractor_parameter_retrieval(
               name=attr.name.lowercased,
               getterMethod=attr.getterMethod,
               objectType=attr.objectType,
