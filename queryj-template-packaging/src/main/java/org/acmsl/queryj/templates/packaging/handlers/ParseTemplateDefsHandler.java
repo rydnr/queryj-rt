@@ -124,7 +124,7 @@ public class ParseTemplateDefsHandler
     public boolean handle(@NotNull final QueryJCommand command)
         throws QueryJBuildException
     {
-        return
+        return handle(command, StringUtils.getInstance());
     }
 
     /**
