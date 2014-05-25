@@ -172,7 +172,7 @@ defaultExtractor(table, repository, C) ::= <<
  */
 @Override
 <notnull(C=C)>
-protected <if(C.multiple)>List\<<table.name.voName>\>Multiple<else>Single<endif> extractValue(<notnull(C=C)>final ResultSet resultSet)
+protected <if(C.multiple)>List\<<table.name.voName>\><else><table.name.voName><endif> extractValue(<notnull(C=C)>final ResultSet resultSet)
     throws  SQLException,
             DataAccessException
 {
