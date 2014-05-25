@@ -358,7 +358,7 @@ if(sql.resultRef)
    >/* single property */<sql.result.properties:{ p |
         new <p.type.capitalized>ResultSet<if(sql.multiple)>Multiple<else>Single<endif>Extractor("<p.columnName>", sql, daoListener),}; separator=""
  ><else>
-        new <sql.result.simpleClassValue>ResultSetExtractor(sql, daoListener),
+        new <sql.result.simpleClassValue>ResultSet<if(sql.multiple)>Multiple<else>Single<endif>Extractor(sql, daoListener),
 <  endif><
 else>
         new <sql.dao.voName>ResultSetExtractor(sql, daoListener),
