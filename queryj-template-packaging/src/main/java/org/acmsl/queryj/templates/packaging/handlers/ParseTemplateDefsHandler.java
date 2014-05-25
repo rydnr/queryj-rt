@@ -117,7 +117,7 @@ public class ParseTemplateDefsHandler
      * represents.
      *
      * @param command the command to process (or not).
-     * @return <code>true</code> if the handler actually process the command,
+     * @return {@code true} if the handler actually process the command,
      *         or maybe because it's not desirable to continue the chain.
      */
     @Override
