@@ -653,7 +653,7 @@ protected <table.name.voName> findByPrimaryKey(
                     new V24PreparedStatementCreator(query, daoListener),
                     new <table.name.voName>PkStatementSetter(
                         <table.primaryKey:{ attr | <attr.name.uncapitalized>}; separator=",\n">),
-                    new <table.name.voName>ResultSetExtractor(query, daoListener),
+                    new <table.name.voName>ResultSetSingleExtractor(query, daoListener),
                     this));
 }
 >>
