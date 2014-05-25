@@ -40,7 +40,6 @@ package org.acmsl.queryj.templates.packaging.handlers;
  * Importing project classes.
  */
 import org.acmsl.commons.utils.StringUtils;
-import org.acmsl.commons.utils.io.FileUtils;
 import org.acmsl.queryj.templates.packaging.Literals;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.acmsl.queryj.templates.packaging.TemplateDefImpl;
