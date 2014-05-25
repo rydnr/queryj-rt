@@ -348,9 +348,6 @@ endif>
 
         preparedStatementCreatorFactory.newPreparedStatementCreator(params),
         null,
-        // calls setXXX twice
-        // preparedStatementCreatorFactory
-        //     .newPreparedStatementSetter(params),
 <
 if(sql.resultRef)
  ><if(sql.result.wrappingASingleProperty)
