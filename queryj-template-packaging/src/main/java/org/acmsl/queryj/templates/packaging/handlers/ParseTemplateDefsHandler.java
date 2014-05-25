@@ -312,7 +312,7 @@ public class ParseTemplateDefsHandler
         {
             metadataVisitor.visit(tree);
 
-            disabled = disabledVisitor.isDisabled();
+            metadata = metadataVisitor.isDisabled();
         }
         catch (@NotNull final Throwable invalidClass)
         {
