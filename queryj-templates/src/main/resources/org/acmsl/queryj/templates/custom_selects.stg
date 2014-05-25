@@ -339,6 +339,7 @@ actual_custom_select_template_call(sql, result, C) ::= <<
  !>
 transactionTemplate.execute(
 <
+if(sql.resultRef)
 if(sql.result.wrappingASingleProperty)
    >/* single property */<sql.result.properties:{ p |
     new V24QueryTransactionCallback\<<engine.name><table.name.voName>DAO, <p.type.capitalized>\>(}; separator=""><
