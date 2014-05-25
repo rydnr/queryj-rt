@@ -71,7 +71,8 @@ public class TemplateAssociatedToTemplateDefDoesNotExist
      * @param templateDef the {@link TemplateDef}.
      */
     public TemplateAssociatedToTemplateDefDoesNotExist(
-        @NotNull final TemplateDef<String> templateDef)
+        @NotNull final TemplateDef<String> templateDef,
+        @NotNull final File templateFile)
     {
         super(
             "template.associated.to.templatedef.does.not.exist",
