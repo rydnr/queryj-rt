@@ -130,5 +130,5 @@ public interface TemplateDef<S>
      * @return such information.
      */
     @NotNull
-    public Map<S, String> getMetadata();
+    public Map<S, S> getMetadata();
 }
