@@ -188,7 +188,7 @@ protected <if(C.multiple)>List\<<result.simpleClassValue>\><else><result.simpleC
     <nullable(C=C)>final <result.simpleClassValue> result;
 
 <if(result.nullableProperties)>
-        <result.nullableProperties:{p | <nullable_property_resultset_retrieval_declaration(property=p, C=C)>}; separator="\n">
+    <result.nullableProperties:{p | <nullable_property_resultset_retrieval_declaration(property=p, C=C)>}; separator="\n">
 
 <endif>
         result =
