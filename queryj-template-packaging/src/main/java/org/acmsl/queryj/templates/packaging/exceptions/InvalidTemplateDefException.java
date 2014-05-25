@@ -56,7 +56,7 @@ import java.io.File;
  */
 @ThreadSafe
 public class InvalidTemplateDefException
-    extends QueryJNonCheckedException
+    extends TemplatePackagingNonCheckedException
 {
     /**
      * The serial version id.
