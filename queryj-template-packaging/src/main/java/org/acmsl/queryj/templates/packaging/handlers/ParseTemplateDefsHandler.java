@@ -125,6 +125,7 @@ public class ParseTemplateDefsHandler
         throws QueryJBuildException
     {
     }
+
     /**
      * Asks the handler to process the command. The idea is that each
      * command handler decides if such command is suitable of being
