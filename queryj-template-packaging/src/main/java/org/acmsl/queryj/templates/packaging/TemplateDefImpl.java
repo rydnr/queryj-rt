@@ -338,9 +338,10 @@ public class TemplateDefImpl
      * Specifies additional metadata.
      * @param metadata such metadata.
      */
-    protected final void immutableSetMetadata(@NotNull final Map<String, String> metadata)
+    @SuppressWarnings("unused")
+    protected void setMetadata(@NotNull final Map<String, String> metadata)
     {
-        this.m__mMetadata = metadata;
+        immutableSetMetadata(metadata);
     }
 
     /**
