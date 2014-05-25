@@ -95,7 +95,7 @@ public class InvalidTemplateDefExceptionTest
     }
 
     /**
-     * Tests the template def parser errors due to invalid "filenameBuildre" values
+     * Tests the template def parser errors due to invalid "filenameBuilder" values
      * are defined for Spanish and English.
      */
     @Test
