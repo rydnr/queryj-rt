@@ -361,7 +361,7 @@ if(sql.resultRef)
         new <sql.result.simpleClassValue>ResultSet<if(sql.multiple)>Multiple<else>Single<endif>Extractor(sql, daoListener),
 <  endif><
 else>
-        new <sql.dao.voName>ResultSetExtractor(sql, daoListener),
+        new <sql.dao.voName>ResultSet<if(sql.multiple)>Multiple<else>Single<endif>Extractor(sql, daoListener),
 <
 endif>
         this))
