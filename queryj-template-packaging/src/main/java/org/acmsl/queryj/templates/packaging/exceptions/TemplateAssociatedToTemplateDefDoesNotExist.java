@@ -51,6 +51,8 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 
+import java.io.File;
+
 /**
  * Error when the template described in a TemplateDef does not exist.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
@@ -78,7 +80,7 @@ public class TemplateAssociatedToTemplateDefDoesNotExist
             "template.associated.to.templatedef.does.not.exist",
             new Object[]
             {
-                templateFile,
+                templateFile.getAbsolutePath(),
                 templateDef.getName(),
                 templateDef.getFile().getAbsolutePath()
             });
