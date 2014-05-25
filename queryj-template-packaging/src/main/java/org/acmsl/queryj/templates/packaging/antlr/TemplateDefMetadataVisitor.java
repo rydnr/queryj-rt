@@ -105,6 +105,10 @@ public class TemplateDefMetadataVisitor
     /**
      * {@inheritDoc}
      */
-    @Override\
+    @Override
+    @NotNull
+    public String toString()
+    {
 
+    }
 }
