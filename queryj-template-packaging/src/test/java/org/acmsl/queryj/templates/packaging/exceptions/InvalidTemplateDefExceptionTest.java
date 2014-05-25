@@ -51,6 +51,7 @@ import org.junit.runners.JUnit4;
 /*
  * Importing JDK classes.
  */
+import java.io.File;
 import java.util.Arrays;
 import java.util.Locale;
 
