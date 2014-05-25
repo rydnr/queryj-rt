@@ -105,7 +105,7 @@ public class InvalidTemplateDefExceptionTest
     }
 
     /**
-     * Tests the template def parser errors due to invalid "name" values
+     * Tests the template def parser errors due to invalid "metadata" sections
      * are defined for Spanish and English.
      */
     @Test
