@@ -122,7 +122,7 @@ public class InvalidTemplateDefExceptionTest
     @Test
     public void template_generator_message_is_defined_in_Spanish_and_English()
     {
-        checkExceptionMessageIsDefinedInSpanishAndEnglish("template-generator");
+        checkExceptionMessageIsDefinedInSpanishAndEnglish("debug");
     }
 
     /**
