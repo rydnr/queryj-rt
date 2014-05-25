@@ -95,7 +95,7 @@ public class InvalidTemplateDefExceptionTest
     @Test
     public void per_table_templates_test_message_is_defined_in_Spanish_and_English()
     {
-        checkExceptionMessageIsDefinedInSpanishAndEnglish("per-table-templates-test");
+        checkExceptionMessageIsDefinedInSpanishAndEnglish("filenameBuilder");
     }
 
     /**
