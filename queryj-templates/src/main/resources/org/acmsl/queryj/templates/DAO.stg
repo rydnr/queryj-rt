@@ -1746,7 +1746,7 @@ public static class <attr.name.capitalized>ResultSetExtractor
     /**
      * Extracts \<i><table.name><attr.name>\</i> information from given result set.
      * @param resultSet the result set.
-     * @return the {@link <table.name.voName>} or {@code null}
+     * @return the informatior retrieved from the databaseor {@code null}
      * if the operation returned no data.
      * custom exception.
      */
