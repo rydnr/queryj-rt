@@ -48,7 +48,7 @@ custom_select(cs, table, C) ::= <<
 !>
 <if(!cs.dynamic)>
 /**
- * Custom select \<i><cs.id>\</i>:\<br/>
+ * Custom select \<i><cs.id>\</i>:
  * \<b><cs.description>\</b>.
  <cs.parameters:{ p | <parameter_javadoc(parameter=p)>}; separator="\n">
 <if(cs.resultRef)>
@@ -90,7 +90,7 @@ endif>
 }
 
 /**
- * Custom select \<i><cs.id>\</i>:\<br/>
+ * Custom select \<i><cs.id>\</i>:
  * \<b><cs.description>\</b>.
  * @param sql the SQL.
  * @param preparedStatementCreatorFactory the
@@ -229,7 +229,7 @@ custom_select_for_update(cs, table, C) ::= <<
 !>
 <if(!cs.dynamic)>
 /**
- * Custom select for update \<i><cs.id>\</i>:\<br/>
+ * Custom select for update \<i><cs.id>\</i>:
  * \<b><cs.description>\</b>.
  <cs.parameters:{ p | <parameter_javadoc(parameter=p)>}; separator=",\n">
 <if(cs.resultRef)>
