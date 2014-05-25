@@ -39,6 +39,8 @@ package org.acmsl.queryj.templates.packaging.handlers;
 /*
  * Importing project classes.
  */
+import org.acmsl.commons.utils.StringUtils;
+import org.acmsl.commons.utils.io.FileUtils;
 import org.acmsl.queryj.templates.packaging.Literals;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.acmsl.queryj.templates.packaging.TemplateDefImpl;
@@ -177,7 +179,7 @@ public class ParseTemplateDefsHandler
         @NotNull final File templateDefFile = templateDef.getFile();
 
         @NotNull final File templateFile =
-            new File(templateDefFile.getAbsolutePath().replace
+            new File(StringUtils.getInstance().removeFirstAndLastBlankLines() templateDefFile.getAbsolutePath().replace
 
         result = templateFile.exists();
 
