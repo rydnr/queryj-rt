@@ -126,24 +126,6 @@ public class InvalidTemplateDefExceptionTest
     }
 
     /**
-     * Tests the "template-handler-bundle" exception is defined for Spanish and English.
-     */
-    @Test
-    public void template_handler_bundle_message_is_defined_in_Spanish_and_English()
-    {
-        checkExceptionMessageIsDefinedInSpanishAndEnglish("template-handler-bundle");
-    }
-
-    /**
-     * Tests the "template" exception is defined for Spanish and English.
-     */
-    @Test
-    public void template_message_is_defined_in_Spanish_and_English()
-    {
-        checkExceptionMessageIsDefinedInSpanishAndEnglish("template");
-    }
-
-    /**
      * Tests the "template-writing-handler" exception is defined for Spanish and English.
      */
     @Test
