@@ -38,6 +38,7 @@ package org.acmsl.queryj.templates.packaging.exceptions;
 /*
  * Importing JetBrains annotations.
  */
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -130,6 +131,7 @@ public class InvalidTemplateDefExceptionTest
      */
     protected void checkExceptionMessageIsDefinedInSpanishAndEnglish(@NotNull final String type)
     {
+        @NotNull final File file = EasyMock.createNiceMock(File.class);
         @NotNull final InvalidTemplateDefException instance = new InvalidTemplateDefException(type);
 
         for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
