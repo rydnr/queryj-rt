@@ -45,6 +45,8 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 
+import java.util.Map;
+
 /**
  *
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
@@ -63,4 +65,8 @@ public class TemplateDefMetadataVisitor
      */
     @Override public T visitMetadataRule(@org.antlr.v4.runtime.misc.NotNull TemplateDefParser.MetadataRuleContext ctx) { return visitChildren(ctx); }
 
+    public Map<String,String> getMetadata()
+    {
+        return metadata;
+    }
 }
