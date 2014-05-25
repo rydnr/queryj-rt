@@ -1,0 +1,45 @@
+* 2014/05/21
+** Review DAO #500: 2 -> 1
+*** DONE Fix UPDATE/INSERT constanst
+*** DONE Missing findByPrimaryKey method in BaseDAO.stg
+*** DONE Fix call to ValueObjectFactory
+*** TODO Cannot find symbol query(PreparedStatementCreator, PreparedStatementSetter, ResultSetExtractor)
+*** TODO Fix invalid override of update() methods
+
+* Delayed list
+** Generate per-fk Cucumber feature: 2 ->
+** Generate per-sql Cucumber feature: 2 ->
+** Generate per-repository Cucumber feature: 2 ->
+** REVIEW TODOs!!!
+
+* Package layout:
+** dao
+- DataAccessManager
+- BaseDAO
+*** dao/core
+- DAOChooser
+- BaseDAOFactory
+*** dao/impl
+*** dao/rdb -> X
+*** dao/[table]
+- CustomResultSetExtractor
+- FkStatementSetter
+- PkStatementSetter
+- ResultSetExtractor
+- AttributesStatementSetter
+**** dao/[table]/oracle
+- DAO
+- DAOFactory
+** vo
+- ValueObject
+- CustomValueObject
+** vo/core
+- ValueObjectFactory
+- CustomValueObjectFactory
+** vo/impl
+- ValueObjectImpl
+- ValueObjectFactoryImpl
+- BaseValueObject
+- CustomValueObjectImpl
+- CustomValueObjectFactoryImpl
+- CustomBaseValueObject
