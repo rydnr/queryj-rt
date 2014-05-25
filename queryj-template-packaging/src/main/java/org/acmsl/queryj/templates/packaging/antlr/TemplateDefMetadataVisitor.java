@@ -54,4 +54,13 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public class TemplateDefMetadataVisitor
 {
+
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation returns the result of calling
+     * {@link #visitChildren} on {@code ctx}.</p>
+     */
+    @Override public T visitMetadataRule(@org.antlr.v4.runtime.misc.NotNull TemplateDefParser.MetadataRuleContext ctx) { return visitChildren(ctx); }
+
 }
