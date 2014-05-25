@@ -101,6 +101,12 @@ public class TemplateDefImpl
      */
     private File m__File;
 
+
+    /**
+     * Additional information to the templates.
+     */
+    private Map<String, String> m__mMetadata;
+
     /**
      * Whether the template def is disabled or not.
      */
