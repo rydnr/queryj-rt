@@ -67,7 +67,7 @@ public class TemplateDefMetadataVisitor
      * {@link #visitChildren} on {@code ctx}.</p>
      */
     @Override public Map<String, String> visitMetadataRule(
-        @NotNull TemplateDefParser.MetadataRuleContext ctx) { return visitChildren(ctx); }
+        @NotNull final TemplateDefParser.MetadataRuleContext ctx) { return visitChildren(ctx); }
 
     public Map<String, String> getMetadata()
     {
