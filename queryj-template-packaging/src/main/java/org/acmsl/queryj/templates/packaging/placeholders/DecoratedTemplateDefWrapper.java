@@ -363,7 +363,7 @@ public class DecoratedTemplateDefWrapper
 
         @NotNull final Map<String, String> metadata = templateDef.getMetadata();
 
-        Map<DecoratedString, DecoratedString> result = new HashMap<>();
+        result = new HashMap<>();
     }
 
     /**
