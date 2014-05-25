@@ -23,6 +23,14 @@
 
  ******************************************************************************
  *
+ * Filename: InvalidTemplateDefExceptionTest.java
+ *
+ * Author: Jose San Leandro Armendariz
+ *
+ * Description:
+ *
+ * Date: 2014/05/25
+ * Time: 20:00
  * Filename: MissingTemplatesExceptionTest.java
  *
  * Author: Jose San Leandro Armendariz
