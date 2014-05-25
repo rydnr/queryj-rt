@@ -326,6 +326,14 @@ public class TemplateDefImpl
     }
 
     /**
+     * Specifies additional metadata.
+     * @param metadata such metadata.
+     */
+    protected final void immutableSetMetadata(@NotNull final Map<String, String> metadata)
+    {
+        this.m__mMetadata = metadata;
+    }
+    /**
      * Specifies whether the template def is disabled.
      * @param disabled whether the template def is disabled.
      */
