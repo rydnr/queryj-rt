@@ -28,6 +28,8 @@ debugRule:
 metadataRule:
         'metadata' ':' '{' keyValueRule+ '}' ';';
 
+keyValueRule:
+
 ID : [a-zA-Z0-9\.\-_,<>]+ ;
 
 COMMENT
