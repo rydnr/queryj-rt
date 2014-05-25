@@ -36,7 +36,7 @@
 package org.acmsl.queryj.templates.packaging.antlr;
 
 /*
- * Importing ANTLR-generated classes..
+ * Importing ANTLR-generated classes.
  */
 import org.acmsl.queryj.templates.packaging.antlr.TemplateDefParser.NameRuleContext;
 
