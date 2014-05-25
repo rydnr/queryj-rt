@@ -101,7 +101,6 @@ public class TemplateDefImpl
      */
     private File m__File;
 
-
     /**
      * Additional information to the templates.
      */
