@@ -112,11 +112,6 @@ public class TemplateDefImpl
     private boolean m__bDebug;
 
     /**
-     * Additional information to the templates.
-     */
-    private Map<String, String> m__mMetadata;
-
-    /**
      * Creates an instance using given information.
      * @param name the name.
      * @param type the type.
