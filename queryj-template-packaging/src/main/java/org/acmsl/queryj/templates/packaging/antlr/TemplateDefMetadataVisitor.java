@@ -101,4 +101,8 @@ public class TemplateDefMetadataVisitor
     {
         return m__mMetadata;
     }
+
+    /**
+     *
+     */
 }
