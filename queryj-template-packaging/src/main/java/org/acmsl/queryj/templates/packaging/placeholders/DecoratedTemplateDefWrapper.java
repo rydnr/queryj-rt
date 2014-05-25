@@ -288,7 +288,7 @@ public class DecoratedTemplateDefWrapper
 
     /**
      * Checks whether given template def is disabled.
-     * @param templateDef the template def.
+     * @param templateDef the wrapped {@link TemplateDef}.
      * @return {@code true} in such case.
      */
     protected boolean isDisabled(@NotNull final TemplateDef<String> templateDef)
