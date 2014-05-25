@@ -1729,7 +1729,6 @@ public static class <attr.name.capitalized>ResultSetExtractor
      * @param daoListener the {@link DAOListener} instance.
      * @return the {@link <table.name.voName>} or {@code null}
      * if the operation returned no data.
-     * custom exception.
      */
     @Override
     <notnull(C=C)>
