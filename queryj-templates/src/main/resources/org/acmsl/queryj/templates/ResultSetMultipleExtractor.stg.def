@@ -17,5 +17,5 @@ filename  builder : <tableName.voName>ResultSetMultipleExtractor.java;
 package: <packageName>.dao.<tableName.voName.lowercased>;
 
 metadata: {
-  multiple: true
+  multiple: true;
 }
