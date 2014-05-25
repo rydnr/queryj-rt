@@ -130,7 +130,7 @@ public class InvalidTemplateDefExceptionTest
      */
     protected void checkExceptionMessageIsDefinedInSpanishAndEnglish(@NotNull final String type)
     {
-        @NotNull final MissingTemplatesException instance = new MissingTemplatesException(templateName);
+        @NotNull final MissingTemplatesException instance = new MissingTemplatesException(type);
 
         for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
         {
