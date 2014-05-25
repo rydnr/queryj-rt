@@ -39,7 +39,6 @@ package org.acmsl.queryj.templates.packaging.handlers;
 /*
  * Importing QueryJ Template Packaging classes.
  */
-import org.acmsl.commons.utils.StringUtils;
 import org.acmsl.queryj.templates.packaging.Literals;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.acmsl.queryj.templates.packaging.TemplateDefImpl;
