@@ -80,10 +80,13 @@ public class TemplateDefMetadataVisitor
         this.m__mMetadata = metadata;
     }
 
-
+    /**
+     * Specifies the metadata.
+     * @param metadata such metadata.
+     */
     protected void setMetadata(final Map<String, String> metadata)
     {
-        this.m__mMetadata = metadata;
+        immutableSetMetadata(metadata);
     }
 
     /**
