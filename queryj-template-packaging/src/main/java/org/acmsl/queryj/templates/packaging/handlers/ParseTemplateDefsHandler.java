@@ -201,6 +201,7 @@ public class ParseTemplateDefsHandler
                 + File.separator
                 + templateDef.getName());
     }
+
     /**
      * Checks whether the template def is valid.
      * @param templateDef the {@link TemplateDef} to check.
