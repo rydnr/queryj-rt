@@ -84,7 +84,7 @@ public class TemplateDefMetadataVisitor
 
         result = new HashMap<>(metadata.getChildCount() / 2);
 
-        for (int index = 0; index <= ctx.getChildCount(); index += 2)
+        for (int index = 0; index < ctx.getChildCount(); index += 2)
         {
             result.put(ctx.getChild(index).getText(), ctx.getChild(index+1).getText());
         }
