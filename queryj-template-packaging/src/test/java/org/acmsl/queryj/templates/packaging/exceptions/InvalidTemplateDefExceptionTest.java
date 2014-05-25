@@ -58,7 +58,7 @@ import java.util.Arrays;
 import java.util.Locale;
 
 /**
- * Tests for {@link MissingTemplatesException}.
+ * Tests for {@link org.acmsl.queryj.templates.packaging.exceptions.InvalidTemplateDefException}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/05/25 20:00
