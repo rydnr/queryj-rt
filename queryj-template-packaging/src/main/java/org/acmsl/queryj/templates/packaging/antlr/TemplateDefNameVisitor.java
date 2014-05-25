@@ -116,7 +116,7 @@ public class TemplateDefNameVisitor
         return
             "{ \"name\": \""
             + m__strName
-            + "\", \"class\": \"TemplateDefNameVisitor\", " +
+            + "\", \"class\": \"TemplateDefNameVisitor\", "+
                "
     }
 }
