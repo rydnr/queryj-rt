@@ -304,7 +304,8 @@ public class ParseTemplateDefsHandler
             throw new InvalidTemplateDefException(Literals.PACKAGE, file, invalidClass);
         }
 
-        @NotNull final TemplateDefMetadataVisitor metadataVisitor = new TemplateDefMetadataVisitor()
+        @NotNull final TemplateDefMetadataVisitor metadataVisitor = new TemplateDefMetadataVisitor();
+
         @NotNull final TemplateDefDisabledVisitor disabledVisitor = new TemplateDefDisabledVisitor();
 
         @Nullable final boolean disabled;
