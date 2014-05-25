@@ -77,7 +77,7 @@ public class InvalidTemplateDefExceptionTest
     @Test
     public void per_foreign_key_templates_test_message_is_defined_in_Spanish_and_English()
     {
-        checkExceptionMessageIsDefinedInSpanishAndEnglish("per-foreign-key-templates-test");
+        checkExceptionMessageIsDefinedInSpanishAndEnglish("type");
     }
 
     /**
