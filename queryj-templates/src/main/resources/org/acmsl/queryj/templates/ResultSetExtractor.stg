@@ -134,7 +134,7 @@ class(table, repository, C) ::= <<
 <class_common_javadoc(
   template="org/acmsl/queryj/templates/ResultSetExtractor.stg", C=C)>
  */
-public class <table.name.voName>ResultSet<if(C.multiple)>Multiple<else>Single<endif>Extractor
+public class <table.name.voName>ResultSet<if(C.templateDef.metadata.multiple)>Multiple<else>Single<endif>Extractor
     extends V24ResultSet<if(C.multiple)>Multiple<else>Single<endif>Extractor\<<table.name.voName>\>
 {
     /**
