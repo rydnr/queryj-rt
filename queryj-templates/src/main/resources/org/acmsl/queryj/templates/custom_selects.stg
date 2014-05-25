@@ -347,6 +347,7 @@ if(sql.resultRef)
     new V24QueryTransactionCallback\<<engine.name><table.name.voName>DAO, <sql.result.simpleClassValue>\>(<
   endif><
 else>
+    new V24QueryTransactionCallback\<<engine.name><table.name.voName>DAO, <sql.result.simpleClassValue>\>(<
 
         preparedStatementCreatorFactory.newPreparedStatementCreator(params),
         null,
