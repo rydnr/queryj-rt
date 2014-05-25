@@ -308,6 +308,17 @@ public class ParseTemplateDefsHandler
         @NotNull final TemplateDefMetadataVisitor metadataVisitor = new TemplateDefMetadataVisitor();
         @NotNull final Map<String, String> metadata;
 
+        try
+        {
+            disabledVisitor.visit(tree);
+
+            disabled = disabledVisitor.isDisabled();
+        }
+        catch (@NotNull final Throwable invalidClass)
+        {
+            throw new InvalidTemplateDefException("disabled", file, invalidClass);
+        }
+
         @NotNull final TemplateDefDisabledVisitor disabledVisitor = new TemplateDefDisabledVisitor();
 
         @Nullable final boolean disabled;
