@@ -25,6 +25,9 @@ disabledRule:
 debugRule:
         'debug' ';';
 
+metadataRule:
+        'metadata'
+
 ID : [a-zA-Z0-9\.\-_,<>]+ ;
 
 COMMENT
