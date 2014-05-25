@@ -78,6 +78,7 @@ public class TemplateDefMetadataVisitor
         {
             result.put(ctx.getChild(index).getText(), ctx.getChild(index+1).getText());
         }
+
         setMetadata(result);
 
 
