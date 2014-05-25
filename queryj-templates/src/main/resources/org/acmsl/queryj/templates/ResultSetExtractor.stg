@@ -201,13 +201,6 @@ protected <if(C.multiple)>List\<<table.name.voName>\><else><table.name.voName><e
 {
     <nullable(C=C)>final <table.name.voName> result;
 
-    if  (resultSet.next())
-    {
-        if (listener != null)
-        {
-            listener.resultSetMovedForward(sql, 1);
-        }
-
         result =
             factory.create<table.name.voName>(
                 <table.attributes:{a | <attribute_resultset_retrieval(attr=a, C=C)>}; separator=",\n">);
