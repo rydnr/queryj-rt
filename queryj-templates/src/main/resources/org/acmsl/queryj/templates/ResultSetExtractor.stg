@@ -176,7 +176,7 @@ protected <table.name.voName> extractValue(<notnull(C=C)>final ResultSet resultS
     throws  SQLException,
             DataAccessException
 {
-    return extractData(resultSet, <table.name.voName>Factory.getInstance());
+    return extractValue(resultSet, <table.name.voName>Factory.getInstance());
 }
 
 /**
