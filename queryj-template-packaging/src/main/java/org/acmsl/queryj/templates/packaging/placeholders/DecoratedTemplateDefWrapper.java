@@ -359,7 +359,9 @@ public class DecoratedTemplateDefWrapper
     @NotNull
     protected Map<DecoratedString, DecoratedString> getMetadata(@NotNull final TemplateDef<String> templateDef)
     {
-        Map<DecoratedString, DecoratedString> result = new HashMap<>()
+        @NotNull final Map<String, String> metadata = templateDef.getMetadata();
+
+        Map<DecoratedString, DecoratedString> result = new HashMap<>();
     }
 
     /**
