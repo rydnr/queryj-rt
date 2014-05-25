@@ -379,8 +379,6 @@ public <if(table.dynamicQueries)>abstract <endif>class <engine.name><table.name.
       table=table, repository=repository, attr=attr, C=C)>}; separator="\n\n">
 
     <extractors(table=table, parent=parent, repository=repository, C=C)>
-
-    <helper_methods()>
 }
 >>
 
