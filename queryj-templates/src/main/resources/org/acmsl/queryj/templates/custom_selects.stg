@@ -346,8 +346,7 @@ else>
     new V24QueryTransactionCallback\<<engine.name><table.name.voName>DAO, <sql.result.simpleClassValue>\>(<
 endif>
 
-        preparedStatementCreatorFactory
-            .newPreparedStatementCreator(params),
+        preparedStatementCreatorFactory.newPreparedStatementCreator(params),
         null,
         // calls setXXX twice
         // preparedStatementCreatorFactory
