@@ -183,7 +183,7 @@ public class ParseTemplateDefsHandler
         return false;
     }
 
-    protected
+    protected File
     /**
      * Checks whether the template def is valid.
      * @param templateDef the {@link TemplateDef} to check.
