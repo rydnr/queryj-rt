@@ -68,7 +68,7 @@ public class InvalidTemplateDefExceptionTest
     @Test
     public void template_chain_provider_message_is_defined_in_Spanish_and_English()
     {
-        checkExceptionMessageIsDefinedInSpanishAndEnglish("default-template-chain-provider");
+        checkExceptionMessageIsDefinedInSpanishAndEnglish("name");
     }
 
     /**
