@@ -124,6 +124,21 @@ public class ParseTemplateDefsHandler
     public boolean handle(@NotNull final QueryJCommand command)
         throws QueryJBuildException
     {
+    }
+    /**
+     * Asks the handler to process the command. The idea is that each
+     * command handler decides if such command is suitable of being
+     * processed, and if so perform the concrete actions the command
+     * represents.
+     *
+     * @param command the command to process (or not).
+     * @return <code>true</code> if the handler actually process the command,
+     *         or maybe because it's not desirable to continue the chain.
+     */
+    @Override
+    public boolean handle(@NotNull final QueryJCommand command)
+        throws QueryJBuildException
+    {
         @Nullable final List<File> templateDefFiles =
             new QueryJCommandWrapper<File>(command).getListSetting(DEF_FILES);
 
