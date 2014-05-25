@@ -45,6 +45,7 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -71,7 +72,8 @@ public class TemplateDefMetadataVisitor
     @Override public Map<String, String> visitMetadataRule(
         @NotNull final TemplateDefParser.MetadataRuleContext ctx)
     {
-        @NotNull final Map<String, String> result
+        @NotNull final Map<String, String> result = new HashMap<String, String>();
+
         setName(context.getChild(2).getText());
 
 
