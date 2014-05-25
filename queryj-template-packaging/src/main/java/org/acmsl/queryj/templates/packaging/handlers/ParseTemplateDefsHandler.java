@@ -180,7 +180,9 @@ public class ParseTemplateDefsHandler
 
         @NotNull final File templateFile =
             new File(
-                stringUtils.extractPackageName(templateDefFile.getAbsolutePath().replaceAll(File.separator, ".")) + File.separator + templateDef.getName();
+                stringUtils.extractPackageName(templateDefFile.getAbsolutePath().replaceAll(File.separator, "."))
+                + File.separator
+                + templateDef.getName());
 
         result = templateFile.exists();
 
