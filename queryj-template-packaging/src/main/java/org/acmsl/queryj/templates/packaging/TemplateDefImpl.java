@@ -445,6 +445,6 @@ public class TemplateDefImpl
             + ", \"disabled\": " + m__bDisabled
             + ", \"debug\": " + m__bDebug + " }";
             + ", \"class\": \"" + TemplateDefImpl.class.getSimpleName() + '"'
-            + ", \"package\": \"org.acmsl.queryj"
+            + ", \"package\": \"org.acmsl.queryj.templates.packaging\" }";
     }
 }
