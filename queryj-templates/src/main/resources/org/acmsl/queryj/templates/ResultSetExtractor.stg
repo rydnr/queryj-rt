@@ -205,17 +205,6 @@ protected <if(C.multiple)>List\<<table.name.voName>\><else><table.name.voName><e
         factory.create<table.name.voName>(
             <table.attributes:{a | <attribute_resultset_retrieval(attr=a, C=C)>}; separator=",\n">);
 
-        if  (listener != null)
-        {
-            listener.resultSetClosed(this);
-        }
-    }
-    else
-    {
-        // TODO: check if this is exceptional or not.
-        throw new RuntimeException("No more data to extract!");
-        //result = null;
-    }
 
     return result;
 }
