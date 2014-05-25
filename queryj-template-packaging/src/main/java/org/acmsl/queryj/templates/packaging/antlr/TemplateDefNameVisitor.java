@@ -113,7 +113,8 @@ public class TemplateDefNameVisitor
     @Override
     public String toString()
     {
-        return "{ \"name": \""
+        return
+            "{ \"name": \""
                             + m__strName + \", \"class\": \"TemplateDefNameVisitor\", " +
                "
     }
