@@ -435,7 +435,7 @@ public class TemplateDefImpl
     public String toString()
     {
         return
-            + ", \"output\": \"" + m__Output + '"'
+              ", \"output\": \"" + m__Output + '"'
             + ", \"name\": \"" + m__strName + '"'
             + ", \"type\": \"" + m__Type  + '"'
             + ", \"filenameBuilder\": \"" + m__strFilenameBuilder + '"'
