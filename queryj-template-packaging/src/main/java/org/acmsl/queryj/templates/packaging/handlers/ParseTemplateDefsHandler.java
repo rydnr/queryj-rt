@@ -172,7 +172,7 @@ public class ParseTemplateDefsHandler
      * @param templateDef the {@link TemplateDef} to check.
      * @return {@code true} in such case.
      */
-    protected boolean isValid(@NotNull final TemplateDef<String> templateDef)
+    protected boolean isValid(@NotNull final TemplateDef<String> templateDef, @NotNull final StringUtils stringUtils)
     {
         final boolean result;
 
