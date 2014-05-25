@@ -356,7 +356,7 @@ endif>
 if(sql.resultRef)
  ><if(sql.result.wrappingASingleProperty)
    >/* single property */<sql.result.properties:{ p |
-        new <p.type.capitalized>ResultSetExtractor("<p.columnName>", sql, daoListener),}; separator=""
+        new <p.type.capitalized>ResultSet<ifExtractor("<p.columnName>", sql, daoListener),}; separator=""
  ><else>
         new <sql.result.simpleClassValue>ResultSetExtractor(sql, daoListener),
 <  endif><
