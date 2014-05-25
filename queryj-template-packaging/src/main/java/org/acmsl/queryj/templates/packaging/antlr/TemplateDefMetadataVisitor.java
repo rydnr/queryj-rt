@@ -110,7 +110,7 @@ public class TemplateDefMetadataVisitor
     public String toString()
     {
         return
-            "{ \"metadata\": " + this.m__mMetadata
+              "{ \"metadata\": " + this.m__mMetadata
             + ", \"class\": \"TemplateDefMetadataVisitor\""
             + ", \"package\": \"org.acmsl.queryj.templates.packaging.antlr\" }";
     }
