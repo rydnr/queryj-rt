@@ -212,8 +212,6 @@ public class ParseTemplateDefsHandler
     {
         final boolean result;
 
-        @NotNull final File templateDefFile = templateDef.getFile();
-
         @NotNull final File templateFile = retrieveTemplateFile(templateDef, stringUtils);
 
         result = templateFile.exists();
