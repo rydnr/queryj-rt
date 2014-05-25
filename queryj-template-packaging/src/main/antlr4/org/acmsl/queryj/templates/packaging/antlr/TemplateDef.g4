@@ -26,7 +26,7 @@ debugRule:
         'debug' ';';
 
 metadataRule:
-        'metadata' ':'
+        'metadata' ':' '
 
 ID : [a-zA-Z0-9\.\-_,<>]+ ;
 
