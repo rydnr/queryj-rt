@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Visits metadata rules.
  *
  * Date: 2014/05/25
  * Time: 12:01
