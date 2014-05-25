@@ -366,7 +366,10 @@ public class DecoratedTemplateDefWrapper
 
         result = new HashMap<>(metadata.size());
 
-        for (@NotNull final Entry<String, String>)
+        for (@NotNull final Entry<String, String> entry : metadata.keySet())
+        {
+
+        }
     }
 
     /**
