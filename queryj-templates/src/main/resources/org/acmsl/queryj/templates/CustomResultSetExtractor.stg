@@ -195,18 +195,6 @@ protected <if(C.multiple)>List\<<result.simpleClassValue>\><else><result.simpleC
             factory.create(
                 <result.properties:{p | <nullable_property_resultset_retrieval(property=p, C=C)>}; separator=",\n">);
 
-        if  (listener != null)
-        {
-            listener.resultSetClosed(this);
-        }
-    }
-    else
-    {
-        // TODO: check it this is exceptional or not.
-        throw new RuntimeException("No more data to extract!");
-        //result = null;
-    }
-
     return result;
 }
 >>
