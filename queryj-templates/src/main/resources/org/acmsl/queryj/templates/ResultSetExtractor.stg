@@ -201,9 +201,9 @@ protected <if(C.multiple)>List\<<table.name.voName>\><else><table.name.voName><e
 {
     <nullable(C=C)>final <table.name.voName> result;
 
-        result =
-            factory.create<table.name.voName>(
-                <table.attributes:{a | <attribute_resultset_retrieval(attr=a, C=C)>}; separator=",\n">);
+    result =
+        factory.create<table.name.voName>(
+            <table.attributes:{a | <attribute_resultset_retrieval(attr=a, C=C)>}; separator=",\n">);
 
         if  (listener != null)
         {
