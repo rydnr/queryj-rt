@@ -96,6 +96,7 @@ public class TemplateDefMetadataVisitor
      * Retrieves the metadata.
      * @return such metadata.
      */
+    @NotNull
     public Map<String, String> getMetadata()
     {
         return m__mMetadata;
