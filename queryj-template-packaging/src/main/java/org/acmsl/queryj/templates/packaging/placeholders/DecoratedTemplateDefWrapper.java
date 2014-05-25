@@ -308,7 +308,7 @@ public class DecoratedTemplateDefWrapper
 
     /**
      * Checks whether given template def is marked as being debugged or not.
-     * @param templateDef the template def.
+     * @param templateDef the wrapped {@link TemplateDef}.
      * @return {@code true} in such case.
      */
     protected boolean isDebug(@NotNull final TemplateDef<String> templateDef)
