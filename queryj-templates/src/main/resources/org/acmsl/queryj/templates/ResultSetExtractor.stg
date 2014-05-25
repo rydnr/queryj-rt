@@ -193,7 +193,7 @@ protected <if(C.multiple)>List\<<table.name.voName>\><else><table.name.voName><e
  * custom exception.
  */
 <notnull(C=C)>
-protected <table.name.voName> extractData(
+protected <if(C.multiple)>List\<<table.name.voName>\><else><table.name.voName><endif> extractValue(<notnull(C=C)>final ResultSet resultSet)
     <notnull(C=C)>final ResultSet resultSet,
     <notnull(C=C)>final String sql,
     <nullable(C=C)>final DAOListener listener,
