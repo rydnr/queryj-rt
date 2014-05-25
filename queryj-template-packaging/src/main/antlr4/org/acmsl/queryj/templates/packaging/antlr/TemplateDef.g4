@@ -29,7 +29,7 @@ metadataRule:
         'metadata' ':' '{' keyValueRule+ '}' ';';
 
 keyValueRule:
-        ID
+        ID ':'
 ID : [a-zA-Z0-9\.\-_,<>]+ ;
 
 COMMENT
