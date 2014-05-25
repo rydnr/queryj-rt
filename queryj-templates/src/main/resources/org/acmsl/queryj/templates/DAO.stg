@@ -1768,12 +1768,6 @@ public static class <attr.name.capitalized>ResultSetExtractor
               getterMethod=attr.getterMethod,
               objectType=attr.objectType,
               isPrimitive=attr.primitive)>
-        }
-
-        if (daoListener != null)
-        {
-            daoListener.resultSetClosed(sql, t_iRowCount);
-        }
 
         return result;
     }
