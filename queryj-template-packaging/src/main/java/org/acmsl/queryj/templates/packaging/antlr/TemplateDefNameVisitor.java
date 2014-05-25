@@ -116,6 +116,7 @@ public class TemplateDefNameVisitor
         return
             "{ \"name\": \""
             + m__strName
-            + "\", \"class\": \"TemplateDefNameVisitor\", \"package\": \"org.acmsl.queryj.template.packaging.antlr\" }";
+            + "\", \"class\": \"TemplateDefNameVisitor\", "
+            + "\"package\": \"org.acmsl.queryj.template.packaging.antlr\" }";
     }
 }
