@@ -74,7 +74,7 @@ public class TemplateDefMetadataVisitor
     {
         @NotNull final Map<String, String> result = new HashMap<String, String>();
 
-        for (int index = 0; ctx.getChildCount()
+        for (int index = 1; index <= ctx.getChildCount()
         setMetadata(result);
 
 
