@@ -1342,12 +1342,6 @@ public static class <table.name.voName>PkResultSetExtractor
               getterMethod=attr.getterMethod,
               objectType=attr.objectType,
               isPrimitive=attr.primitive)> }; separator="\n">
-        }
-
-        if (daoListener != null)
-        {
-            daoListener.resultSetClosed(sql, t_iRowCount);
-        }
 
         return result;
     }
