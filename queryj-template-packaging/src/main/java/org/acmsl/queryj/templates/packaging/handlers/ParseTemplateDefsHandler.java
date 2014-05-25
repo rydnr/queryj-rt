@@ -316,7 +316,7 @@ public class ParseTemplateDefsHandler
         }
         catch (@NotNull final Throwable invalidClass)
         {
-            throw new InvalidTemplateDefException("disabled", file, invalidClass);
+            throw new InvalidTemplateDefException("metadata", file, invalidClass);
         }
 
         @NotNull final TemplateDefDisabledVisitor disabledVisitor = new TemplateDefDisabledVisitor();
