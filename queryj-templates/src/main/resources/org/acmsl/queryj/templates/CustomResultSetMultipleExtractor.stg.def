@@ -17,5 +17,5 @@ filename builder : <result.simpleClassValue>ResultSetMultipleExtractor.java;
 package: <packageName>.dao.<result.simpleClassValue.lowercased>;
 
 metadata: {
-  multiple: true
+  multiple: true;
 }
