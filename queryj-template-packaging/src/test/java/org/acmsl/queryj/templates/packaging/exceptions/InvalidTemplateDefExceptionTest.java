@@ -133,7 +133,7 @@ public class InvalidTemplateDefExceptionTest
     protected void checkExceptionMessageIsDefinedInSpanishAndEnglish(@NotNull final String type)
     {
         @NotNull final File file = EasyMock.createNiceMock(File.class);
-
+        @NotNull final Throwable cause = EasyMock.createNiceMock()
         @NotNull final InvalidTemplateDefException instance = new InvalidTemplateDefException(type, file);
 
         for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
