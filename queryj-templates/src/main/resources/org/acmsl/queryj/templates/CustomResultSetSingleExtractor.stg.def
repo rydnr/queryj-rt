@@ -17,5 +17,5 @@ filename builder : <result.simpleClassValue>ResultSetSingleExtractor.java;
 package: <packageName>.dao.<result.simpleClassValue.lowercased>;
 
 metadata: {
-  multiple: false
+  multiple: false;
 }
