@@ -128,7 +128,7 @@ public class InvalidTemplateDefExceptionTest
     /**
      * Tests the message key is defined for Spanish and English.
      */
-    protected void checkExceptionMessageIsDefinedInSpanishAndEnglish(@NotNull final String templateName)
+    protected void checkExceptionMessageIsDefinedInSpanishAndEnglish(@NotNull final String type)
     {
         @NotNull final MissingTemplatesException instance = new MissingTemplatesException(templateName);
 
