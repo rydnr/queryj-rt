@@ -54,6 +54,7 @@ import org.checkthread.annotations.ThreadSafe;
  * Importing JDK classes.
  */
 import java.io.File;
+import java.util.Map;
 
 /**
  * Trivial TemplateDef implementation as a pojo.
@@ -118,6 +119,7 @@ public class TemplateDefImpl
      * @param filenameBuilder the builder.
      * @param packageName the package name.
      * @param file the file.
+     * @param metadata any additional metadata to provide to the template.
      * @param disabled whether the template def is marked as disabled.
      * @param debug whether the template def is being debugged or not.
      */
