@@ -1746,8 +1746,6 @@ public static class <attr.name.capitalized>ResultSetExtractor
     /**
      * Extracts \<i><table.name><attr.name>\</i> information from given result set.
      * @param resultSet the result set.
-     * @param sql the SQL used.
-     * @param daoListener the {@link DAOListener} instance.
      * @return the {@link <table.name.voName>} or {@code null}
      * if the operation returned no data.
      * custom exception.
