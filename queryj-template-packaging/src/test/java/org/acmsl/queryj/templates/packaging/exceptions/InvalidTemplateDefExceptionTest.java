@@ -126,15 +126,6 @@ public class InvalidTemplateDefExceptionTest
     }
 
     /**
-     * Tests the "template-writing-handler" exception is defined for Spanish and English.
-     */
-    @Test
-    public void template_writing_handler_message_is_defined_in_Spanish_and_English()
-    {
-        checkExceptionMessageIsDefinedInSpanishAndEnglish("template-writing-handler");
-    }
-
-    /**
      * Tests the message key is defined for Spanish and English.
      */
     protected void checkExceptionMessageIsDefinedInSpanishAndEnglish(@NotNull final String templateName)
