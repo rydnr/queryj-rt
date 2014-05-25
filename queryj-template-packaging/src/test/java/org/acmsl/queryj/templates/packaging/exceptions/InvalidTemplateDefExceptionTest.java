@@ -115,7 +115,8 @@ public class InvalidTemplateDefExceptionTest
     }
 
     /**
-     * Tests the "template-factory" exception is defined for Spanish and English.
+     * Tests the template def parser errors due to invalid "name" values
+     * are defined for Spanish and English.
      */
     @Test
     public void template_factory_message_is_defined_in_Spanish_and_English()
