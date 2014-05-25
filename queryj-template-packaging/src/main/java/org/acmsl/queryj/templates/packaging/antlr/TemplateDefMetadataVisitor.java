@@ -57,6 +57,8 @@ import java.util.Map;
 public class TemplateDefMetadataVisitor
 {
 
+    private Map<String, String> metadata;
+
     /**
      * {@inheritDoc}
      *
@@ -65,8 +67,13 @@ public class TemplateDefMetadataVisitor
      */
     @Override public T visitMetadataRule(@org.antlr.v4.runtime.misc.NotNull TemplateDefParser.MetadataRuleContext ctx) { return visitChildren(ctx); }
 
-    public Map<String,String> getMetadata()
+    public Map<String, String> getMetadata()
     {
         return metadata;
+    }
+
+    public void setMetadata(final Map<String, String> metadata)
+    {
+        this.metadata = metadata;
     }
 }
