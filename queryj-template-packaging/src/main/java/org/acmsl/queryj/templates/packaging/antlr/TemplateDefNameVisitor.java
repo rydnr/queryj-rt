@@ -106,6 +106,9 @@ public class TemplateDefNameVisitor
         return super.visitNameRule(context);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public String toString()
