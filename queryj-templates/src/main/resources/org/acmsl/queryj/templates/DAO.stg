@@ -1332,9 +1332,7 @@ public static class <table.name.voName>PkResultSetExtractor
     @SuppressWarnings("unchecked")
     <notnull(C=C)>
     protected Map\<String, ?> extractValue(
-        <notnull(C=C)>final ResultSet resultSet,
-        <notnull(C=C)>final String sql,
-        <nullable(C=C)>final DAOListener daoListener)
+        <notnull(C=C)>final ResultSet resultSet)
     throws  SQLException,
             DataAccessException
     {
