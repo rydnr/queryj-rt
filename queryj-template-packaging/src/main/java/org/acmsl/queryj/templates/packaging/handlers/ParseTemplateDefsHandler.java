@@ -161,7 +161,7 @@ public class ParseTemplateDefsHandler
                 {
                     @NotNull final TemplateDef<String> templateDef = parseDefFile(defFile);
 
-                    if (isValid(templateDef))
+                    if (isValid(templateDef, stringUtils))
                     {
                         if (!templateDef.isDisabled())
                         {
