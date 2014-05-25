@@ -17,5 +17,5 @@ filename  builder : <tableName.voName>ResultSetSingleExtractor.java;
 package: <packageName>.dao.<tableName.voName.lowercased>;
 
 metadata: {
-  multiple: false
+  multiple: false;
 }
