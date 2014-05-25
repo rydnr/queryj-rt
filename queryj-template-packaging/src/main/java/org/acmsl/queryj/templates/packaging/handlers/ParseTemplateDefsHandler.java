@@ -183,7 +183,11 @@ public class ParseTemplateDefsHandler
         return false;
     }
 
-    protected File retrieveTemplateFile(@NotNull final TemplateDef<String> templateDef, @NotNull final StringUtils stringUtils)
+    protected File retrieveTemplateFile(
+        @NotNull final TemplateDef<String> templateDef, @NotNull final StringUtils stringUtils)
+    {
+
+    }
     /**
      * Checks whether the template def is valid.
      * @param templateDef the {@link TemplateDef} to check.
