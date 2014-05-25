@@ -49,7 +49,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- *
+ * Visits metadata rules.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/05/25 12:01
