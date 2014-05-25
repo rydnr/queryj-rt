@@ -368,7 +368,7 @@ public class DecoratedTemplateDefWrapper
 
         for (@NotNull final Entry<String, String> entry : metadata.entrySet())
         {
-            result.put(new DecoratedString(entry.getKey()), new DecoratedString())
+            result.put(new DecoratedString(entry.getKey()), new DecoratedString(entry.getValue()))
         }
     }
 
