@@ -39,6 +39,7 @@ package org.acmsl.queryj.templates.packaging.antlr;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.templates.packaging.antlr.TemplateDefParser.MetadataRuleContext;
+import org.antlr.v4.runtime.tree.ParseTree;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -79,7 +80,7 @@ public class TemplateDefMetadataVisitor
     {
         @NotNull final Map<String, String> result;
 
-        @NotNull final MetadataRuleContext metadata = ctx.getChild(3);
+        @NotNull final ParseTree metadata = ctx.getChild(3);
 
         result = new HashMap<>(metadata.getChildCount() / 2);
 
