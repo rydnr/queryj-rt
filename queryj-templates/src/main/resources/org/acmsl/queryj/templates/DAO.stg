@@ -1323,7 +1323,6 @@ public static class <table.name.voName>PkResultSetExtractor
      * Extracts \<i><table.name.voName>\</i> information from given result set.
      * @param resultSet the result set.
      * @return the primary key or {@code null} if the operation returned no data.
-     * custom exception.
      */
     @Override
     @SuppressWarnings("unchecked")
