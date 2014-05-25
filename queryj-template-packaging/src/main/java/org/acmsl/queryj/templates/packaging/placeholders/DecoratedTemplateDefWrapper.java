@@ -339,7 +339,6 @@ public class DecoratedTemplateDefWrapper
 
     /**
      * Retrieves additional metadata.
-     *
      * @return such information.
      */
     @NotNull
