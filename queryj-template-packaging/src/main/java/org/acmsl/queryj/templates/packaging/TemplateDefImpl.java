@@ -349,7 +349,7 @@ public class TemplateDefImpl
      */
     protected final void immutableSetMetadata(@NotNull final Map<String, String> metadata)
     {
-        return this.m__mMetadata = metadata;
+        return this.m__mMetadata;
     }
 
     /**
