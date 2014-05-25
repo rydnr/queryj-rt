@@ -341,8 +341,8 @@ transactionTemplate.execute(
 <
 if(sql.result.wrappingASingleProperty)
    >/* single property */<sql.result.properties:{ p |
-    new V24QueryTransactionCallback\<<engine.name><table.name.voName>DAO, <p.type.capitalized>\>(}; separator=""
- ><else>
+    new V24QueryTransactionCallback\<<engine.name><table.name.voName>DAO, <p.type.capitalized>\>(}; separator=""><
+else>
     new V24QueryTransactionCallback\<<engine.name><table.name.voName>DAO>(
         new <sql.result.simpleClassValue>ResultSetExtractor(sql, daoListener),
 <  endif><
