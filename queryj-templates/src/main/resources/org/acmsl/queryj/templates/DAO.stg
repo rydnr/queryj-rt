@@ -1721,8 +1721,7 @@ public static class <attr.name.capitalized>ResultSetExtractor
      */
     @SuppressWarnings("unchecked")
     <notnull(C=C)>
-    protected Map\<String, ?> extractValue(
-        <notnull(C=C)>final ResultSet resultSet)
+    protected Map\<String, ?> extractValue(<notnull(C=C)>final ResultSet resultSet)
     throws  SQLException,
             DataAccessException
     {
