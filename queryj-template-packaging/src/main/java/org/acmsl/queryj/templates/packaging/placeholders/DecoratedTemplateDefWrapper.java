@@ -346,7 +346,7 @@ public class DecoratedTemplateDefWrapper
     @Override
     public Map<DecoratedString, DecoratedString> getMetadata()
     {
-        return getMetadata()
+        return getMetadata(getTemplateDef());
     }
 
     /**
