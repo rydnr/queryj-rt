@@ -345,6 +345,7 @@ if(sql.result.wrappingASingleProperty)
 else>
     new V24QueryTransactionCallback\<<engine.name><table.name.voName>DAO, <sql.result.simpleClassValue>\>(<
 endif>
+
         preparedStatementCreatorFactory
             .newPreparedStatementCreator(params),
         null,
