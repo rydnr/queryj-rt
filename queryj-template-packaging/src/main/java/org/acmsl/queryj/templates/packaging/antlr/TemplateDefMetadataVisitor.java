@@ -74,7 +74,10 @@ public class TemplateDefMetadataVisitor
         return visitChildren(ctx);
     }
 
-
+    /**
+     * Specifies the metadata.
+     * @param metadata such metadata.
+     */
     protected final void immutableSetMetadata(final Map<String, String> metadata)
     {
         this.m__mMetadata = metadata;
