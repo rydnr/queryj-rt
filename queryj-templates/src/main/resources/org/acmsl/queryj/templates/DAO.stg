@@ -1708,7 +1708,7 @@ attribute_resultset_extractor_class(table, repository, attr, C) ::= <<
 <class_common_javadoc(template="org/acmsl/queryj/templates/DAO.stg", C=C)>
  */
 public static class <attr.name.capitalized>ResultSetExtractor
-    extends  V24ResultSetExtractor\<Map\<String, ?\>>
+    extends  V24ResultSetSingleExtractor\<Map\<String, ?\>>
 {
     /**
      * Constructs a new {@code <attr.name.capitalized>ResultSetExtractor}.
