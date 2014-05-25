@@ -1322,8 +1322,6 @@ public static class <table.name.voName>PkResultSetExtractor
     /**
      * Extracts \<i><table.name.voName>\</i> information from given result set.
      * @param resultSet the result set.
-     * @param sql the original SQL.
-     * @param daoListener the {@link DAOListener} instance.
      * @return the {@link <table.name.voName>} or {@code null}
      * if the operation returned no data.
      * custom exception.
