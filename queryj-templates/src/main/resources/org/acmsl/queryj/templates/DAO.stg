@@ -1766,28 +1766,3 @@ public static class <attr.name.capitalized>ResultSetExtractor
     }
 }
 >>
-
-helper_methods() ::= <<
-<! Some helper methods !>
-/**
- * Creates a new {@link TransactionTemplate} using given {@link DataSource}.
- * @param dataSource the database data source.
- * @return the new transaction template.
- */
-<notnull(C=C)>
-protected TransactionTemplate createTransactionTemplate(<notnull(C=C)>final DataSource dataSource)
-{
-    return createTransactionTemplate(new DataSourceTransactionManager(dataSource));
-}
-
-/**
- * Creates a new {@link TransactionTemplate} using given {@link PlatformTransactionManager}.
- * @param transactionManager the transaction manager.
- * @return the new transaction template.
- */
-<notnull(C=C)>
-protected TransactionTemplate createTransactionTemplate(<notnull(C=C)>final PlatformTransactionManager transactionManager)
-{
-    return new TransactionTemplate(transactionManager);
-}
->>
