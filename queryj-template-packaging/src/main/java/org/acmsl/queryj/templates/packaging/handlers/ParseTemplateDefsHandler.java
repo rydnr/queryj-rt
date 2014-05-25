@@ -305,7 +305,8 @@ public class ParseTemplateDefsHandler
         }
 
         @NotNull final TemplateDefMetadataVisitor metadataVisitor = new TemplateDefMetadataVisitor();
-        @NotNull final Map<String, String> metadata
+        @NotNull final Map<String, String> metadata;
+
         @NotNull final TemplateDefDisabledVisitor disabledVisitor = new TemplateDefDisabledVisitor();
 
         @Nullable final boolean disabled;
