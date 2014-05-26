@@ -48,6 +48,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.util.HashMap;
+
 /**
  * Tests for {@link TemplateDefImpl}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
@@ -67,6 +69,7 @@ public class TemplateDefImplTest
                 TemplateDefOutput.JAVA,
                 "<result.id.normalized>Sample.java",
                 "com.foo.bar",
+                new HashMap<>(0),
 
             )
     }
