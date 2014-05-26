@@ -64,7 +64,8 @@ public class TemplateDefImplTest
             new TemplateDefImpl(
                 "name",
                 TemplateDefType.PER_CUSTOM_RESULT,
-                TemplateDefOutput.valueOf("")
+                TemplateDefOutput.JAVA,
+
             )
     }
 }
