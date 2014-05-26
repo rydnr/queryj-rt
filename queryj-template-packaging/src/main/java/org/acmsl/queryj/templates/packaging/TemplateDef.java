@@ -134,6 +134,8 @@ public interface TemplateDef<S>
 
     /**
      * Retrieves the name of the template def itself.
-     * @return such
+     * @return such information.
      */
+    @NotNull
+    public String getDef
 }
