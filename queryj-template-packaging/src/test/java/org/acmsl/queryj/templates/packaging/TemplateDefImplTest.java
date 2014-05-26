@@ -44,6 +44,9 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 /**
  * Tests for {@link TemplateDefImpl}.
@@ -51,7 +54,9 @@ import org.checkthread.annotations.ThreadSafe;
  * @since 3.0
  * Created: 2014/05/26 07:32
  */
-@ThreadSafe
+@RunWith(JUnit4.class)
 public class TemplateDefImplTest
 {
+    @Test
+    public void
 }
