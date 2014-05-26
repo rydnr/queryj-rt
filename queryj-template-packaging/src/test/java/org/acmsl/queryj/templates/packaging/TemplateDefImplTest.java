@@ -62,6 +62,7 @@ public class TemplateDefImplTest
     @Test
     public void getDefName_is_based_on_the_filename()
     {
+
         @NotNull final TemplateDef<String> instance =
             new TemplateDefImpl(
                 "name",
