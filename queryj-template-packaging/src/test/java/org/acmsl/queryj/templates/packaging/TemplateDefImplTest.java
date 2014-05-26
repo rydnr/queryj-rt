@@ -70,7 +70,7 @@ public class TemplateDefImplTest
                 "<result.id.normalized>Sample.java",
                 "com.foo.bar",
                 new HashMap<>(0),
-
-            )
+                false,
+                false);
     }
 }
