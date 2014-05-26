@@ -429,6 +429,15 @@ public class TemplateDefImpl
         return new DecoratedString(getName()).getNormalized().getLowercased().getValue();
     }
 
+    /**
+     * Retrieves the name of the template def itself.
+     * @return such information.
+     */
+    @NotNull
+    public String getDefName()
+    {
+        return null;
+    }
 
     /**
      * {@inheritDoc}
