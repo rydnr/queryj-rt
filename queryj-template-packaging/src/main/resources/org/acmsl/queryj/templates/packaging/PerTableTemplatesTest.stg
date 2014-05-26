@@ -795,8 +795,8 @@ generator_mapping(def) ::= <<
  @param def the template def.
 !>
 GENERATOR_MAPPINGS.put("<def.defName>", new <def.name>TemplateGenerator(false, 1));
-FACTORY_MAPPINGS.put("<def.name>", <def.name>TemplateFactory.getInstance());
-PACKAGE_MAPPINGS.put("<def.name>", "<def.packageName>");
+FACTORY_MAPPINGS.put("<def.defName>", <def.name>TemplateFactory.getInstance());
+PACKAGE_MAPPINGS.put("<def.defName>", "<def.packageName>");
 >>
 
 debug_mapping(def) ::= <<
