@@ -804,5 +804,5 @@ debug_mapping(def) ::= <<
  Generates the call to specify which template defs are market for debugging.
  @param def the template def.
 !>
-DEBUG.put("<def.name>", <def.debug>);
+DEBUG.put("<def.defName>", <def.debug>);
 >>
