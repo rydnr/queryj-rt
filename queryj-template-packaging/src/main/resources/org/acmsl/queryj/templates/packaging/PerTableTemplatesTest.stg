@@ -794,7 +794,7 @@ generator_mapping(def) ::= <<
  Generates the call to add the generator and factory of the def to the general mappings.
  @param def the template def.
 !>
-GENERATOR_MAPPINGS.put("<def.name>", new <def.name>TemplateGenerator(false, 1));
+GENERATOR_MAPPINGS.put("<def.defName>", new <def.name>TemplateGenerator(false, 1));
 FACTORY_MAPPINGS.put("<def.name>", <def.name>TemplateFactory.getInstance());
 PACKAGE_MAPPINGS.put("<def.name>", "<def.packageName>");
 >>
