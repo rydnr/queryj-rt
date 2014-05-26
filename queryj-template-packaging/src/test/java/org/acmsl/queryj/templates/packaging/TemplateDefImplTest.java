@@ -87,5 +87,7 @@ public class TemplateDefImplTest
                 false);
 
         Assert.assertEquals("name", instance.getDefName());
+
+        EasyMock.verify(file);
     }
 }
