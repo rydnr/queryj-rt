@@ -208,7 +208,7 @@ public class DecoratedTemplateDefWrapper
     @NotNull
     protected String getDefName(@NotNull final TemplateDef<String> templateDef)
     {
-        return getDefName(getTemplateDef());
+        return templateDef.getDefName();
     }
 
     /**
