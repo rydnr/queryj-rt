@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for TemplateDefImpl.
  *
  * Date: 2014/05/26
  * Time: 07:32
