@@ -455,6 +455,7 @@ public class TemplateDefImpl
         @NotNull final String absolutePath = file.getAbsolutePath();
 
         @NotNull final String fileName = fileUtils.getFileName(absolutePath);
+
         return result;
     }
 
