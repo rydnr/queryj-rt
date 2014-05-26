@@ -448,7 +448,10 @@ public class TemplateDefImpl
     @NotNull
     protected String getDefName(@NotNull final File file)
     {
-        return getDefName(getFile());
+        String result;
+
+
+        return result;
     }
 
     /**
