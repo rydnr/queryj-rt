@@ -436,7 +436,7 @@ public class TemplateDefImpl
     @NotNull
     public String getDefName()
     {
-        return getDefName();
+        return getDefName(getFile());
     }
 
     /**
