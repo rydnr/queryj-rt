@@ -429,6 +429,7 @@ public class TemplateDefImpl
         return new DecoratedString(getName()).getNormalized().getLowercased().getValue();
     }
 
+
     /**
      * {@inheritDoc}
      */
