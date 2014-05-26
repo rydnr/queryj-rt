@@ -63,6 +63,7 @@ public class TemplateDefImplTest
         @NotNull final TemplateDef<String> instance =
             new TemplateDefImpl(
                 "name",
+                TemplateDefType.PER_CUSTOM_RESULT,
 
             )
     }
