@@ -440,6 +440,16 @@ public class TemplateDefImpl
     }
 
     /**
+     * Retrieves the name of the template def itself.
+     * @return such information.
+     */
+    @NotNull
+    public String getDefName()
+    {
+        return getDefName(getFile());
+    }
+
+    /**
      * {@inheritDoc}
      */
     @NotNull
