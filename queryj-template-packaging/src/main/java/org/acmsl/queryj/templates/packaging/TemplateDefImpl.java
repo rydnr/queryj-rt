@@ -456,7 +456,8 @@ public class TemplateDefImpl
 
         @NotNull final String fileName = fileUtils.getFileName(absolutePath);
 
-        result =
+        result = fileUtils.stripExtensions(fileName);
+
         return result;
     }
 
