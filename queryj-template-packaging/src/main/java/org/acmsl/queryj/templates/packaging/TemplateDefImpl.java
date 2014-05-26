@@ -38,6 +38,7 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.commons.utils.io.FileUtils;
 import org.acmsl.queryj.metadata.DecoratedString;
 
 /*
@@ -437,7 +438,7 @@ public class TemplateDefImpl
     @NotNull
     public String getDefName()
     {
-        return getDefName(getFile());
+        return getDefName(getFile(), FileUtils.getInstance());
     }
 
     /**
