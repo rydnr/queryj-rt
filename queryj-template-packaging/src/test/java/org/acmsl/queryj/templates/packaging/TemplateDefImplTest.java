@@ -65,7 +65,7 @@ public class TemplateDefImplTest
     public void getDefName_is_based_on_the_filename()
     {
         @NotNull final File file = EasyMock.createNiceMock(File.class);
-        EasyMock.expect(file.getAbsolutePath()).andReturn(File.separator + "tmp" + File.separator + "templatedefs" + File.separator + )
+        EasyMock.expect(file.getAbsolutePath()).andReturn(File.separator + "tmp" + File.separator + "templatedefs" + File.separator + "")
         @NotNull final TemplateDef<String> instance =
             new TemplateDefImpl(
                 "name",
