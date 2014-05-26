@@ -197,7 +197,7 @@ public class DecoratedTemplateDefWrapper
     @NotNull
     public String getDefName()
     {
-        return null;
+        return getDefName()
     }
 
     /**
