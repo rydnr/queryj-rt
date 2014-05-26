@@ -450,7 +450,7 @@ public class TemplateDefImpl
     {
         String result;
 
-        @NotNull final String absoluteP
+        @NotNull final String absolutePath = file.getAbsolutePath();
         return result;
     }
 
