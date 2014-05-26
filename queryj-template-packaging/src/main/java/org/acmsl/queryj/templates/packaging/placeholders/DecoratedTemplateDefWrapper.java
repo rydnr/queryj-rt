@@ -196,6 +196,10 @@ public class DecoratedTemplateDefWrapper
      */
     @NotNull
     public String getDefName()
+    {
+        return null;
+    }
+
     /**
      * Retrieves the filename builder expression.
      * @return such expression.
