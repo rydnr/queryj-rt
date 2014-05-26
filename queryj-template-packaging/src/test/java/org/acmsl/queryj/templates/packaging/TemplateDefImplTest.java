@@ -58,5 +58,5 @@ import org.junit.runners.JUnit4;
 public class TemplateDefImplTest
 {
     @Test
-    public void getDefName_retrieves_the_
+    public void getDefName_retrieves_the_filename_
 }
