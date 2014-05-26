@@ -194,6 +194,7 @@ public class DecoratedTemplateDefWrapper
      * Retrieves the name of the template def itself.
      * @return such information.
      */
+    @Override
     @NotNull
     public String getDefName()
     {
