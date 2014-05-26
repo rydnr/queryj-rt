@@ -65,7 +65,7 @@ public class TemplateDefImplTest
                 "name",
                 TemplateDefType.PER_CUSTOM_RESULT,
                 TemplateDefOutput.JAVA,
-                "<result>Sample.java",
+                "<result.id>Sample.java",
             )
     }
 }
