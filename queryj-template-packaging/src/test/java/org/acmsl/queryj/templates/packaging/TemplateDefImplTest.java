@@ -38,6 +38,7 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -48,6 +49,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.io.File;
 import java.util.HashMap;
 
 /**
@@ -62,7 +64,8 @@ public class TemplateDefImplTest
     @Test
     public void getDefName_is_based_on_the_filename()
     {
-        @NotNull final File
+        @NotNull final File file = EasyMock.createNiceMock(File.class);
+
         @NotNull final TemplateDef<String> instance =
             new TemplateDefImpl(
                 "name",
