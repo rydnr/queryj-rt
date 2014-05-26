@@ -205,7 +205,7 @@ public class DecoratedTemplateDefWrapper
      * @return such information.
      */
     @NotNull
-    public String getDefName()
+    protected String getDefName()
     {
         return getDefName(getTemplateDef());
     }
