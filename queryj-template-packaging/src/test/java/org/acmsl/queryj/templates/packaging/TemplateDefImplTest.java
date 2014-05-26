@@ -66,6 +66,7 @@ public class TemplateDefImplTest
                 TemplateDefType.PER_CUSTOM_RESULT,
                 TemplateDefOutput.JAVA,
                 "<result.id.normalized>Sample.java",
+                "com.foo.bar",
 
             )
     }
