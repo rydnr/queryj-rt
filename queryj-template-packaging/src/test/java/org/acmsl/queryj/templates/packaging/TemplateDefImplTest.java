@@ -38,6 +38,7 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import junit.framework.Assert;
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
@@ -81,6 +82,6 @@ public class TemplateDefImplTest
                 false,
                 false);
 
-
+        Assert.assertEquals();
     }
 }
