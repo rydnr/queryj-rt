@@ -82,6 +82,6 @@ public class TemplateDefImplTest
                 false,
                 false);
 
-        Assert.assertEquals();
+        Assert.assertEquals("name");
     }
 }
