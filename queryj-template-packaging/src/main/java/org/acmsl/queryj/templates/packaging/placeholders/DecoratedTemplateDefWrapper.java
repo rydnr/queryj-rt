@@ -191,7 +191,8 @@ public class DecoratedTemplateDefWrapper
     }
 
     /**
-     * Retrieves the name of the template def
+     * Retrieves the name of the template def itself.
+     * @return such information.
      */
     /**
      * Retrieves the filename builder expression.
