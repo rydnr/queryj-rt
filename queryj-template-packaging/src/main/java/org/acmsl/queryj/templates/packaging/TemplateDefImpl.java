@@ -444,10 +444,11 @@ public class TemplateDefImpl
     /**
      * Retrieves the name of the template def itself.
      * @param file the def file.
+     * @param fileUtils the {@link FileUtils} instance.
      * @return such information.
      */
     @NotNull
-    protected String getDefName(@NotNull final File file)
+    protected String getDefName(@NotNull final File file, @NotNull final FileUtils fileUtils)
     {
         String result;
 
