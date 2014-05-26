@@ -76,6 +76,7 @@ public class TemplateDefImplTest
                 TemplateDefOutput.JAVA,
                 "<result.id.normalized>Sample.java",
                 "com.foo.bar",
+                file,
                 new HashMap<>(0),
                 false,
                 false);
