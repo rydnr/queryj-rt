@@ -442,6 +442,7 @@ public class TemplateDefImpl
 
     /**
      * Retrieves the name of the template def itself.
+     * @param file the def file.
      * @return such information.
      */
     @NotNull
