@@ -72,7 +72,7 @@ public class TemplateDefImplTest
 
         @NotNull final TemplateDef<String> instance =
             new TemplateDefImpl(
-                "name",
+                "name2.stg",
                 TemplateDefType.PER_CUSTOM_RESULT,
                 TemplateDefOutput.JAVA,
                 "<result.id.normalized>Sample.java",
