@@ -66,7 +66,8 @@ public class TemplateDefImplTest
     {
         @NotNull final File file = EasyMock.createNiceMock(File.class);
         EasyMock.expect(file.getAbsolutePath())
-            .andReturn(File.separator + "tmp" + File.separator + "templatedefs" + File.separator + "name.def").anyTimes();
+            .andReturn(File.separator + "tmp" + File.separator + "templatedefs" + File.separator + "name.def")
+            .anyTimes();
         @NotNull final TemplateDef<String> instance =
             new TemplateDefImpl(
                 "name",
