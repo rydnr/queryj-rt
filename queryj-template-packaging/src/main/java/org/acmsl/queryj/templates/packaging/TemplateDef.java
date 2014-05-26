@@ -137,5 +137,5 @@ public interface TemplateDef<S>
      * @return such information.
      */
     @NotNull
-    public String getDef
+    public String getDefName();
 }
