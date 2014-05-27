@@ -77,7 +77,7 @@ public class TemplateDefPerCustomResultTemplateContext
 
     /**
      * Creates a new context.
-     * @param templateDef the {@link TemplateDef}
+     * @param templateDef the {@link TemplateDef}.
      * @param result the {@link Result result}.
      * @param properties the list of {@link Property properties}.
      * @param debug whether we're debugging or not.
