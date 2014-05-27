@@ -73,4 +73,17 @@ public class InvalidTemplateDefException
     {
         super("invalid.templatedef." + type, new Object[] { file.getAbsolutePath() }, cause);
     }
+
+
+    /**
+     * Creates a new instance.
+     * @param type the type.
+     * @param file the file.
+     * @param cause the cause.
+     */
+    public InvalidTemplateDefException(
+        @NotNull final String type, @NotNull final File file, @NotNull final Throwable cause)
+    {
+        super("invalid.templatedef." + type, new Object[] { file.getAbsolutePath() }, cause);
+    }
 }
