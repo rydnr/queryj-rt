@@ -430,7 +430,7 @@ public class ParseTemplateDefsHandler
             }
             else
             {
-                throw new InvalidTemplateDefException(Literals.PACKAGE, file, invalidClass);
+                throw new InvalidTemplateDefException("metadata", file, invalidClass);
             }
         }
 
