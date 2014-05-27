@@ -162,9 +162,6 @@ public class <C.class_name>
                 getClass().getResourceAsStream("<def.defName>.stg.def"));
 
         @NotNull final <def.type.capitalized>TemplateContext t_Context =
-            new TemplateDef<def.type.capitalized>TemplateContext(templateDef, tableName, staticContents, <def.debug>, parameters);
-
-        @NotNull final <def.type.capitalized>TemplateContext t_Context =
             new TemplateDef<def.type.capitalized>TemplateContext(templateDef, result, properties, <def.debug>, parameters);
 
         t_Context.setDecoratorFactory(CachingDecoratorFactory.getInstance());
