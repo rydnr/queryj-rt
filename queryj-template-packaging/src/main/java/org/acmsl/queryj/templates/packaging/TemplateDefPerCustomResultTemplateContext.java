@@ -81,4 +81,45 @@ public class TemplateDefPerCustomResultTemplateContext
     {
         super(result, properties, debug, command);
     }
+    /**
+     * Specifies the template def.
+     * @param templateDef the template def.
+     */
+    protected final void immutableSetTemplateDef(@NotNull final TemplateDef<String> templateDef)
+    {
+        m__TemplateDef = templateDef;
+    }
+
+    /**
+     * Specifies the template def.
+     * @param templateDef the template def.
+     */
+    @SuppressWarnings("unused")
+    protected void setTemplateDef(@NotNull final TemplateDef<String> templateDef)
+    {
+        immutableSetTemplateDef(templateDef);
+    }
+
+    /**
+     * Retrieves the template def.
+     * @return such information.
+     */
+    @NotNull
+    public TemplateDef<String> getTemplateDef()
+    {
+        return this.m__TemplateDef;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    @NotNull
+    public String toString()
+    {
+        return
+            "{ \"templateDef\": " + this.m__TemplateDef
+            + ", \"class\": \"TemplateDefPerTableTemplateContext\""
+            + ", \"package\": \"org.acmsl.queryj.templates.packaging\" }";
+    }
 }
