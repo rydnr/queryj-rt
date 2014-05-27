@@ -145,7 +145,7 @@ public class TemplateDefImpl
         immutableSetOutput(output);
         immutableSetFilenameBuilder(filenameBuilder);
         immutableSetPackageName(packageName);
-        immutableSetFile(file);
+        if(immutableSetFile(file);
         immutableSetMetadata(metadata);
         immutableSetDisabled(disabled);
         immutableSetDebug(debug);
