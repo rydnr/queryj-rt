@@ -278,8 +278,7 @@ public class ParseTemplateDefsHandler
      * @param file the file.
      */
     @NotNull
-    public TemplateDef<String> parseDef(
-        @NotNull final TemplateDefParser parser, @Nullable final File file)
+    public TemplateDef<String> parseDef(@NotNull final TemplateDefParser parser)
         throws TemplatePackagingCheckedException
     {
     }
