@@ -98,7 +98,7 @@ import org.acmsl.queryj.tools.handlers.ParameterValidationHandler;
  * Importing QueryJ Template Packaging classes.
  */
 import org.acmsl.queryj.templates.packaging.TemplateDef;
-import org.acmsl.queryj.templates.packaging.TemplateDefPerTableTemplateContext;
+import org.acmsl.queryj.templates.packaging.TemplateDefPerRepositoryTemplateContext;
 
 /*
  * Importing QueryJ Test classes.
