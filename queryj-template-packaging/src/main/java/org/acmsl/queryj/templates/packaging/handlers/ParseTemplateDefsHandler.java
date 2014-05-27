@@ -423,7 +423,7 @@ public class ParseTemplateDefsHandler
 
     /**
      * Sets up the template definition parser.
-     * @param file the template def contents to parse.
+     * @param inputStream the template def contents to parse.
      * @return the {@link TemplateDefParser} instance.
      */
     @NotNull
