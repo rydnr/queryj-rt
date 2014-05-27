@@ -89,6 +89,7 @@ public class TemplateDefPerCustomResultTemplateContext
         @NotNull final QueryJCommand command)
     {
         super(result, properties, debug, command);
+        immutableSetTemplateDef(templateDef);
     }
 
     /**
