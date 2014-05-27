@@ -38,13 +38,18 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.PerCustomResultTemplateContext;
+import org.acmsl.queryj.customsql.Property;
+import org.acmsl.queryj.customsql.Result;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+
+import java.util.List;
 
 /**
  *
@@ -56,5 +61,9 @@ import org.checkthread.annotations.ThreadSafe;
 public class TemplateDefPerCustomResultTemplateContext
     extends PerCustomResultTemplateContext
 {
-
+    public TemplateDefPerCustomResultTemplateContext(@NotNull final Result<String> result, @NotNull final
+    List<Property<String>> properties, final boolean debug, @NotNull final QueryJCommand command)
+    {
+        super(result, properties, debug, command);
+    }
 }
