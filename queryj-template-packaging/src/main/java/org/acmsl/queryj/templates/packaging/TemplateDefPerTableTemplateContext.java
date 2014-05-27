@@ -101,6 +101,6 @@ public class TemplateDefPerTableTemplateContext
     @SuppressWarnings("unused")
     protected void setTemplateDef(@NotNull final TemplateDef<String> templateDef)
     {
-        m__TemplateDef = templateDef;
+        immutableSetTemplateDef(templateDef);
     }
 }
