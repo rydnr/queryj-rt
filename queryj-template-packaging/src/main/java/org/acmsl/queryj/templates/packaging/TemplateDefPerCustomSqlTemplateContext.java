@@ -63,6 +63,13 @@ public class TemplateDefPerCustomSqlTemplateContext
      */
     private TemplateDef<String> m__TemplateDef;
 
+    /**
+     * Creates a new context.
+     * @param templateDef the {@link TemplateDef}.
+     * @param sql the custom
+     * @param debug
+     * @param command
+     */
     public TemplateDefPerCustomSqlTemplateContext(
         @NotNull final TemplateDef<String> templateDef,
         @NotNull final Sql<String> sql,
