@@ -65,6 +65,7 @@ import java.util.List;
  * Created: 2014/05/27 06:06
  */
 @ThreadSafe
+@SuppressWarnings("unused")
 public class TemplateDefPerTableTemplateContext
     extends PerTableTemplateContext
 {
