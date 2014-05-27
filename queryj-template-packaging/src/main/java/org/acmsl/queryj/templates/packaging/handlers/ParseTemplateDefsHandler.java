@@ -251,7 +251,7 @@ public class ParseTemplateDefsHandler
     }
 
     /**
-     * Parses a template def file.
+     * Parses a template def stream.
      * @param inputStream the stream to parse.
      */
     @NotNull
