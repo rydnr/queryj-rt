@@ -262,7 +262,7 @@ public class ParseTemplateDefsHandler
 
         try
         {
-            t_Parser = setUpParser(file);
+            t_Parser = setUpParser(inputStream);
         }
         catch (final IOException missingFile)
         {
