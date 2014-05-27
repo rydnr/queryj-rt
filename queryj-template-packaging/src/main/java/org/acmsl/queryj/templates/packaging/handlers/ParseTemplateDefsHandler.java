@@ -412,7 +412,6 @@ public class ParseTemplateDefsHandler
      * @param file the template def contents to parse.
      * @return the {@link TemplateDefParser} instance.
      */
-    @SuppressWarnings("unchecked")
     @NotNull
     protected TemplateDefParser setUpParser(@NotNull final File file)
     throws RecognitionException,
