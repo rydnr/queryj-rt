@@ -983,7 +983,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
 
                 if (t_Log != null)
                 {
-                    t_Log.info("Template context " + contextName + " not supported", secondAttemptFailed);
+                    t_Log.info("Template context " + contextName + " not supported", classNotFound);
                 }
             }
             @Nullable final Log t_Log =
