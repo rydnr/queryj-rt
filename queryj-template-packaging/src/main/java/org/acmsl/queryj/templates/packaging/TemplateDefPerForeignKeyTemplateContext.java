@@ -58,7 +58,8 @@ import org.checkthread.annotations.ThreadSafe;
 public class TemplateDefPerForeignKeyTemplateContext
     extends PerForeignKeyTemplateContext
 {
-    public TemplateDefPerForeignKeyTemplateContext(@NotNull final ForeignKey<String> foreignKey, final boolean debug, @NotNull final QueryJCommand command)
+    public TemplateDefPerForeignKeyTemplateContext(
+        @NotNull final ForeignKey<String> foreignKey, final boolean debug, @NotNull final QueryJCommand command)
     {
         super(foreignKey, debug, command);
     }
