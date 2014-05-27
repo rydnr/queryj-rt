@@ -968,13 +968,13 @@ public abstract class AbstractTemplate<C extends TemplateContext>
 
         try
         {
-            result = (Class<FillTemplateChainFactory<C>>) Class.forName(baseName);
+            result = (Class<FillTemplateChainFactory<C>>) Class.forName(baseName.replaceAll("^TemplateDef", ""));
         }
         catch (@NotNull final ClassNotFoundException classNotFound)
         {
             try
             {
-                result = (Class<FillTemplateChainFactory<C>>) Class.forName(baseName.replaceAll("^TemplateDef", ""));
+                result = (Class<FillTemplateChainFactory<C>>) Class.forName(baseName);
             }
             catch (@NotNull final ClassNotFoundException secondAttemptFailed)
             {
@@ -983,7 +983,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
 
                 if (t_Log != null)
                 {
-                    t_Log.info("Template context " + contextName + " not supported", classNotFound);
+                    t_Log.info("Template context " + contextName + " not supported", secondAttemptFailed);
                 }
             }
             @Nullable final Log t_Log =
