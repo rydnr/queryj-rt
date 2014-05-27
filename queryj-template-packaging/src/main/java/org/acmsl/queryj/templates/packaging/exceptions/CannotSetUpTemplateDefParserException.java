@@ -84,8 +84,7 @@ public class CannotSetUpTemplateDefParserException
      * @param file the template def file.
      * @param cause the cause.
      */
-    public CannotSetUpTemplateDefParserException(
-        @NotNull final File file, @NotNull final Throwable cause)
+    public CannotSetUpTemplateDefParserException(@NotNull final Throwable cause)
     {
         super("cannot.setup.templatedef.parser.for.stream", new Object[] { file.getAbsolutePath() }, cause);
     }
