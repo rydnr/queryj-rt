@@ -158,7 +158,7 @@ public class <C.class_name>
     @Nullable
     protected <def.name.noExtension>Template createTemplate(
         @NotNull final <def.name.noExtension>TemplateFactory templateFactory,
-        @NotNull final ForeignKey\<String> foreignKey,
+        @NotNull final Sql\<String> sql,
         @NotNull final QueryJCommand parameters)
       throws  QueryJBuildException
     {
