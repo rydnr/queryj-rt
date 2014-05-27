@@ -65,8 +65,8 @@ public class TemplateDefPerCustomResultTemplateContext
      * Creates a new context.
      * @param result the {@link Result result}.
      * @param properties the list of {@link Property properties}.
-     * @param debug
-     * @param command
+     * @param debug whether we're debugging or not.
+     * @param command the {@link QueryJCommand command}.
      */
     public TemplateDefPerCustomResultTemplateContext(
         @NotNull final Result<String> result,
