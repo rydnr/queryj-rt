@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Enhances {@link PerRepositoryTemplateContext} with the {@link TemplateDef} reference.
  *
  * Date: 2014/05/27
  * Time: 20:50
