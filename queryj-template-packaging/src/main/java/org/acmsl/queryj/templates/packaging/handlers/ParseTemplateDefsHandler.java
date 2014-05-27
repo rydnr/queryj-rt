@@ -282,6 +282,17 @@ public class ParseTemplateDefsHandler
         @NotNull final TemplateDefParser parser, @Nullable final File file)
         throws TemplatePackagingCheckedException
     {
+    }
+    /**
+     * Parses a template def file.
+     * @param parser the parser.
+     * @param file the file.
+     */
+    @NotNull
+    public TemplateDef<String> parseDef(
+        @NotNull final TemplateDefParser parser, @Nullable final File file)
+        throws TemplatePackagingCheckedException
+    {
         @NotNull final TemplateDef<String> result;
 
         @Nullable final ParseTree tree;
