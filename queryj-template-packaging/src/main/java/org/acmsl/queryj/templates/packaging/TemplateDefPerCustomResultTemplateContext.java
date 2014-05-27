@@ -62,6 +62,11 @@ public class TemplateDefPerCustomResultTemplateContext
     extends PerCustomResultTemplateContext
 {
     /**
+     * The template def.
+     */
+    private TemplateDef<String> m__TemplateDef;
+
+    /**
      * Creates a new context.
      * @param result the {@link Result result}.
      * @param properties the list of {@link Property properties}.
