@@ -66,9 +66,9 @@ public class TemplateDefPerCustomSqlTemplateContext
     /**
      * Creates a new context.
      * @param templateDef the {@link TemplateDef}.
-     * @param sql the custom
-     * @param debug
-     * @param command
+     * @param sql the custom {@link Sql}.
+     * @param debug whether we're debugging or not.
+     * @param command the {@link QueryJCommand}.
      */
     public TemplateDefPerCustomSqlTemplateContext(
         @NotNull final TemplateDef<String> templateDef,
