@@ -972,19 +972,12 @@ public abstract class AbstractTemplate<C extends TemplateContext>
         }
         catch (@NotNull final ClassNotFoundException classNotFound)
         {
-            try
-            {
-                result = (Class<FillTemplateChainFactory<C>>) Class.forName(baseName);
-            }
-            catch (@NotNull final ClassNotFoundException secondAttemptFailed)
-            {
-                @Nullable final Log t_Log =
-                    UniqueLogFactory.getLog(AbstractQueryJTemplate.class);
+            @Nullable final Log t_Log =
+                UniqueLogFactory.getLog(AbstractQueryJTemplate.class);
 
-                if (t_Log != null)
-                {
-                    t_Log.info("Template context " + contextName + " not supported", classNotFound);
-                }
+            if (t_Log != null)
+            {
+                t_Log.info("Template context " + contextName + " not supported", classNotFound);
             }
         }
 
