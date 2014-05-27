@@ -58,6 +58,13 @@ import org.checkthread.annotations.ThreadSafe;
 public class TemplateDefPerForeignKeyTemplateContext
     extends PerForeignKeyTemplateContext
 {
+    /**
+     * Creates a new context.
+     * @param templateDef the {@link TemplateDef}.
+     * @param foreignKey the {@link ForeignKey}.
+     * @param debug whether we're debugging or not.
+     * @param command the {@link QueryJCommand}.
+     */
     public TemplateDefPerForeignKeyTemplateContext(
         @NotNull final TemplateDef<String> templateDef,
         @NotNull final ForeignKey<String> foreignKey,
