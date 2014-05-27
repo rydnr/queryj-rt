@@ -83,4 +83,9 @@ public class TemplateDefPerTableTemplateContext
         super(tableName, staticValues, debug, command);
         immutableSetTemplateDef(templateDef);
     }
+
+    /**
+     * Specifies the template def.
+     * @param def the tem
+     */
 }
