@@ -112,7 +112,7 @@ public class TemplateDefPerCustomSqlTemplateContext
         return
             "{ \"templateDef\": " + this.m__TemplateDef
             + ", \"super\": " + super.toString()
-            + ", \"class\": \"TemplateDefPerRepositoryTemplateContext\""
+            + ", \"class\": \"TemplateDefPerCustomSqlTemplateContext\""
             + ", \"package\": \"org.acmsl.queryj.templates.packaging\" }";
     }
 }
