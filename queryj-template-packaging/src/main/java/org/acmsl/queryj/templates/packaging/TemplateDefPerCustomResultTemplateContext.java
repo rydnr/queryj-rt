@@ -63,8 +63,8 @@ public class TemplateDefPerCustomResultTemplateContext
 {
     /**
      * Creates a new context.
-     * @param result the {@link Result}
-     * @param properties
+     * @param result the {@link Result result}.
+     * @param properties the list of {@link Property properties}.
      * @param debug
      * @param command
      */
