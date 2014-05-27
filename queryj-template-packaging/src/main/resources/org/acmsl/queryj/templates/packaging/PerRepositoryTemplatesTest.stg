@@ -333,7 +333,7 @@ public class PerRepositoryTemplatesTest
             @NotNull final List\<String> t_lTableNames = t_MetadataManager.getTableDAO().findAllTableNames();
 
             @NotNull final PerRepositoryTemplateContext t_Context =
-                new PerRepositoryTemplateContext(
+                new TemplateDefPerRepositoryTemplateContext(
                     repository,
                     t_lTableNames,
                     (DEBUG.containsKey(templateName) && DEBUG.get(templateName)),
