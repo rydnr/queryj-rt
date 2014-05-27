@@ -435,8 +435,7 @@ public class ParseTemplateDefsHandler
     {
         @NotNull final TemplateDefParser result;
 
-        @NotNull final TemplateDefLexer t_Lexer =
-            new TemplateDefLexer(stream);
+        @NotNull final TemplateDefLexer t_Lexer = new TemplateDefLexer(stream);
 
         @NotNull final CommonTokenStream t_Tokens = new CommonTokenStream(t_Lexer);
 
