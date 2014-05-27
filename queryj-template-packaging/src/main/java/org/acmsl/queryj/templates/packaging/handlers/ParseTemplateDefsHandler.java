@@ -476,7 +476,6 @@ public class ParseTemplateDefsHandler
             {
                 throw new InvalidTemplateDefException("debug", file, invalidClass);
             }
-            throw new InvalidTemplateDefException("debug", file, invalidClass);
         }
 
         result =
