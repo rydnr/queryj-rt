@@ -79,7 +79,7 @@ public class TemplateAssociatedToTemplateDefDoesNotExist
      */
     public TemplateAssociatedToTemplateDefDoesNotExist(
         @NotNull final TemplateDef<String> templateDef,
-        @Nullable final File templateFile)
+        @NotNull final File templateFile)
     {
         super(
             "template.associated.to.templatedef.does.not.exist",
