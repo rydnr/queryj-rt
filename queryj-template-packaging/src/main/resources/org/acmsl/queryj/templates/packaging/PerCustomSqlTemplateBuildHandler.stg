@@ -149,6 +149,45 @@ public class <C.class_name>
     }
 
     /**
+     * Creates a template with required information.
+     * @param templateFactory the {@link <def.name.noExtension>TemplateFactory} instance.
+     * @param foreignKey the {@link ForeignKey}.
+     * @param parameters the parameter map.
+     * @return the template.
+     */
+    @Nullable
+    protected <def.name.noExtension>Template createTemplate(
+        @NotNull final <def.name.noExtension>TemplateFactory templateFactory,
+        @NotNull final ForeignKey\<String> foreignKey,
+        @NotNull final QueryJCommand parameters)
+      throws  QueryJBuildException
+    {
+        @NotNull final TemplateDef\<String> t_TemplateDef =
+            new ParseTemplateDefsHandler().parseDefStream(
+                getClass().getResourceAsStream("<def.defName>.stg.def"));
+
+        @NotNull final <def.type.capitalized>TemplateContext t_Context =
+            new TemplateDef<def.type.capitalized>TemplateContext(t_TemplateDef, foreignKey, <def.debug>, parameters);
+
+        @NotNull final DecoratorFactory t_DecoratorFactory = retrieveDecoratorFactory();
+
+        t_Context.setDecoratorFactory(t_DecoratorFactory);
+
+        @NotNull final MetadataManager t_MetadataManager = retrieveMetadataManager(parameters);
+
+        @NotNull final CustomSqlProvider t_CustomSqlProvider = retrieveCustomSqlProvider(parameters);
+
+        @NotNull final ForeignKeyDecorator t_DecoratedForeignKey =
+            new CachingForeignKeyDecorator(foreignKey, t_MetadataManager, t_DecoratorFactory, t_CustomSqlProvider);
+
+        t_Context.setPackageName(
+            retrievePackage(
+                t_DecoratedForeignKey, t_MetadataManager.getEngine(), parameters));
+
+        return templateFactory.createTemplate(foreignKey, t_Context, parameters);
+    }
+
+    /**
      * {@inheritDoc}
      */
     @Override
