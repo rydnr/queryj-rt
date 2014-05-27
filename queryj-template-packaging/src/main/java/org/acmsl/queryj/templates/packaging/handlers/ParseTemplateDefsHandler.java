@@ -470,11 +470,11 @@ public class ParseTemplateDefsHandler
         {
             if (file == null)
             {
-                throw new InvalidTemplateDefException("disabled", invalidClass);
+                throw new InvalidTemplateDefException("debug", invalidClass);
             }
             else
             {
-                throw new InvalidTemplateDefException("disabled", file, invalidClass);
+                throw new InvalidTemplateDefException("debug", file, invalidClass);
             }
             throw new InvalidTemplateDefException("debug", file, invalidClass);
         }
