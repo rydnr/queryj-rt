@@ -124,7 +124,7 @@ public class TemplateDefPerTableTemplateContext
         return
             "{ \"templateDef\": " + this.m__TemplateDef
             + ", \"class\": \"TemplateDefPerTableTemplateContext\""
-               "m__TemplateDef=" + m__TemplateDef +
+            + ", \"package\": \"org.acmsl.queryj.templates.packaging"
                '}';
     }
 }
