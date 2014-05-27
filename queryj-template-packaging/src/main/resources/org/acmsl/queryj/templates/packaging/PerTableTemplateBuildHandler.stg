@@ -163,8 +163,6 @@ public class <C.class_name>
             new ParseTemplateDefsHandler().parseDefStream(
                 getClass().getResourceAsStream("<def.defName>"));
 
-        @NotNull final PerTableTemplateContext t_Context =
-            new TemplateDefPerTableTemplateContext(templateDef, tableName, staticContents, false, parameters);
         @NotNull final <def.type.capitalized>TemplateContext t_Context =
             new TemplateDef<def.type.capitalized>TemplateContext(templateDef, tableName, staticContents, <def.debug>, parameters);
 
