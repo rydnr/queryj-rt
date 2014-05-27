@@ -255,7 +255,7 @@ public class ParseTemplateDefsHandler
      * @param file the file to parse.
      */
     @NotNull
-    public TemplateDef<String> parseDefFile(@NotNull final File file)
+    public TemplateDef<String> parseDefStream(@NotNull final InputStream inputStream)
         throws TemplatePackagingCheckedException
     {
         @Nullable final TemplateDefParser t_Parser;
