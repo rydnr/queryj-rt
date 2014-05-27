@@ -429,7 +429,7 @@ public class ParseTemplateDefsHandler
      */
     @SuppressWarnings("unchecked")
     @NotNull
-    protected TemplateDefParser setUpParser(@NotNull final ANTLRInputStream file)
+    protected TemplateDefParser setUpParser(@NotNull final ANTLRInputStream stream)
         throws RecognitionException,
         IOException
     {
