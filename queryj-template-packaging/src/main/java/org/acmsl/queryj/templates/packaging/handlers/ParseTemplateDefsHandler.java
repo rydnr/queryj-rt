@@ -211,6 +211,13 @@ public class ParseTemplateDefsHandler
                     .replaceAll("\\.", File.separator).replaceAll("\126", ".")
                     + File.separator
                     + templateDef.getName());
+        }
+        else
+        {
+            result = null;
+        }
+
+        return result;
     }
 
     /**
