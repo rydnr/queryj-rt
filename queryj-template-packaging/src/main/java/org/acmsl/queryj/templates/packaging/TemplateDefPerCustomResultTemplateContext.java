@@ -61,6 +61,13 @@ import java.util.List;
 public class TemplateDefPerCustomResultTemplateContext
     extends PerCustomResultTemplateContext
 {
+    /**
+     * Creates a new context.
+     * @param result
+     * @param properties
+     * @param debug
+     * @param command
+     */
     public TemplateDefPerCustomResultTemplateContext(
         @NotNull final Result<String> result,
         @NotNull final List<Property<String>> properties,
