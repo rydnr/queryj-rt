@@ -27,7 +27,8 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Enhances PerCustomSqlTemplateContext with the TemplateDef
+ *              reference.
  *
  * Date: 2014/05/27
  * Time: 20:55
