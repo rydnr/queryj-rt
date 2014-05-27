@@ -243,7 +243,7 @@ public class ParseTemplateDefsHandler
 
         @Nullable final File templateFile = retrieveTemplateFile(templateDef, stringUtils);
 
-        if (templateFile == null)
+        if (templateFile != null)
         {
             result = templateFile.exists();
         }
