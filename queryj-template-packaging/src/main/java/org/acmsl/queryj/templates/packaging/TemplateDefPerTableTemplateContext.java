@@ -81,5 +81,6 @@ public class TemplateDefPerTableTemplateContext
         @NotNull final QueryJCommand command)
     {
         super(tableName, staticValues, debug, command);
+        immutableSetTemplateDef(templateDef);
     }
 }
