@@ -66,6 +66,9 @@ import java.io.File;
 public class CannotSetUpTemplateDefParserException
     extends QueryJNonCheckedException
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = -618063241782514710L;
 
     /**
