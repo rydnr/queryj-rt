@@ -112,7 +112,7 @@ public class TemplateDefPerRepositoryTemplateContext
     {
         return
             "{ \"templateDef\": " + this.m__TemplateDef
-            + ", \"class\": \"TemplateDefPerCustomResultTemplateContext\""
+            + ", \"class\": \"TemplateDefPerRepositoryTemplateContext\""
             + ", \"package\": \"org.acmsl.queryj.templates.packaging\" }";
     }
 }
