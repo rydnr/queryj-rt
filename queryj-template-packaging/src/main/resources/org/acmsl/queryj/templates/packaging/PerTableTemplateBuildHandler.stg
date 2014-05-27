@@ -161,7 +161,7 @@ public class <C.class_name>
     {
         @NotNull final TemplateDef\<String> templateDef =
             new ParseTemplateDefsHandler().parseDefStream(
-                getClass().getResourceAsStream("<def.AttributesStatementSetter.stg.def"));
+                getClass().getResourceAsStream("<def.defName>AttributesStatementSetter.stg.def"));
 
         @NotNull final PerTableTemplateContext t_Context =
             new TemplateDefPerTableTemplateContext(templateDef, tableName, staticContents, false, parameters);
