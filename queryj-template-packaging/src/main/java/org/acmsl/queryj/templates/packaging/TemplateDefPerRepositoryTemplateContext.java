@@ -64,6 +64,7 @@ import java.util.List;
  * Created: 2014/05/27 20:50
  */
 @ThreadSafe
+@SuppressWarnings("unused")
 public class TemplateDefPerRepositoryTemplateContext
     extends PerRepositoryTemplateContext
 {
