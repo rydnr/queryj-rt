@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Enhances {@link PerForeignKeyTemplateContext} with the {@link TemplateDef} reference.
  *
  * Date: 2014/05/27
  * Time: 20:59
