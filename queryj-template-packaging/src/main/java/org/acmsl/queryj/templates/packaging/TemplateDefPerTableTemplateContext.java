@@ -123,7 +123,7 @@ public class TemplateDefPerTableTemplateContext
     {
         return
             "{ \"templateDef\": " + this.m__TemplateDef
-            + TemplateDefPerTableTemplateContext {" +
+            + "TemplateDefPerTableTemplateContext {" +
                "m__TemplateDef=" + m__TemplateDef +
                '}';
     }
