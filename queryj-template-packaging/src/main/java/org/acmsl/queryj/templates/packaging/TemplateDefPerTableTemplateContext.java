@@ -38,13 +38,17 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.PerTableTemplateContext;
+import org.acmsl.queryj.metadata.vo.Row;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+
+import java.util.List;
 
 /**
  *
@@ -56,5 +60,8 @@ import org.checkthread.annotations.ThreadSafe;
 public class TemplateDefPerTableTemplateContext
     extends PerTableTemplateContext
 {
-
+    public TemplateDefPerTableTemplateContext(@NotNull final String tableName, @NotNull final List<Row<String>> staticValues, final boolean debug, @NotNull final QueryJCommand command)
+    {
+        super(tableName, staticValues, debug, command);
+    }
 }
