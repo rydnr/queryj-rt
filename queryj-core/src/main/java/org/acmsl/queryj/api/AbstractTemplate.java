@@ -986,13 +986,6 @@ public abstract class AbstractTemplate<C extends TemplateContext>
                     t_Log.info("Template context " + contextName + " not supported", classNotFound);
                 }
             }
-            @Nullable final Log t_Log =
-                UniqueLogFactory.getLog(AbstractQueryJTemplate.class);
-
-            if (t_Log != null)
-            {
-                t_Log.info("Template context " + contextName + " not supported", classNotFound);
-            }
         }
 
         return result;
