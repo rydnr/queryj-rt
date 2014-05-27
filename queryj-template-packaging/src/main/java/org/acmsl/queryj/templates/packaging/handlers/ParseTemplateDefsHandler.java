@@ -269,7 +269,7 @@ public class ParseTemplateDefsHandler
             throw new CannotSetUpTemplateDefParserException(invalidStream);
         }
 
-        return parseDef(t_Parser, file);
+        return parseDef(t_Parser);
     }
 
     /**
