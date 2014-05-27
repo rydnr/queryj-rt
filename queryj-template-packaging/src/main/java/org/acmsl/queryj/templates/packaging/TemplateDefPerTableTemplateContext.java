@@ -90,6 +90,6 @@ public class TemplateDefPerTableTemplateContext
      */
     protected final void immutableSetTemplateDef(@NotNull final TemplateDef<String> templateDef)
     {
-
+        m__TemplateDef = templateDef;
     }
 }
