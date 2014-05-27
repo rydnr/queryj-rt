@@ -151,7 +151,7 @@ public class <C.class_name>
     /**
      * Creates a template with required information.
      * @param templateFactory the {@link <def.name.noExtension>TemplateFactory} instance.
-     * @param foreignKey the {@link ForeignKey}.
+     * @param sql the {@link Sql}.
      * @param parameters the parameter map.
      * @return the template.
      */
