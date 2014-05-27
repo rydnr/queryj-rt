@@ -383,7 +383,7 @@ public class ParseTemplateDefsHandler
         {
             if (file == null)
             {
-                throw new InvalidTemplateDefException("output", invalidClass);
+                throw new InvalidTemplateDefException("filenameBuilder", invalidClass);
             }
             else
             {
