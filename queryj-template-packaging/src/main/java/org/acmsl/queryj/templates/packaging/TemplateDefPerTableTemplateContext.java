@@ -61,7 +61,7 @@ public class TemplateDefPerTableTemplateContext
     extends PerTableTemplateContext
 {
     public TemplateDefPerTableTemplateContext(
-        @NotNull final TemplateDef<String>
+        @NotNull final TemplateDef<String> templateDef,
         @NotNull final String tableName,
         @NotNull final List<Row<String>> staticValues,
         final boolean debug,
