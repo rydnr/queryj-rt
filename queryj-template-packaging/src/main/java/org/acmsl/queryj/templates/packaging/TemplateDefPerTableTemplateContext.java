@@ -98,7 +98,8 @@ public class TemplateDefPerTableTemplateContext
      * Specifies the template def.
      * @param templateDef the template def.
      */
-    protected final void immutableSetTemplateDef(@NotNull final TemplateDef<String> templateDef)
+    @SuppressWarnings("unused")
+    protected void setTemplateDef(@NotNull final TemplateDef<String> templateDef)
     {
         m__TemplateDef = templateDef;
     }
