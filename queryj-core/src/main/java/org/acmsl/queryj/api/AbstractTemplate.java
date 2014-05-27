@@ -974,7 +974,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
         {
             try
             {
-                result = (Class<FillTemplateChainFactory<C>>) Class.forName(baseName);
+                result = (Class<FillTemplateChainFactory<C>>) Class.forName(baseName.replaceAll("TemplateDef"));
             }
             catch (@NotNull final ClassNotFoundException secondAttemptFailed)
             {
