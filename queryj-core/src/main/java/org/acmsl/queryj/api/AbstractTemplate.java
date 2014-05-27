@@ -976,7 +976,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
             {
                 result = (Class<FillTemplateChainFactory<C>>) Class.forName(baseName);
             }
-            catch (@NotNull final ClassNotFoundException classNotFound)
+            catch (@NotNull final ClassNotFoundException secondAttemptFailed)
             {
                 @Nullable final Log t_Log =
                     UniqueLogFactory.getLog(AbstractQueryJTemplate.class);
