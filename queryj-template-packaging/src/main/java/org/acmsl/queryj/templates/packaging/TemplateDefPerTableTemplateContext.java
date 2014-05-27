@@ -114,5 +114,11 @@ public class TemplateDefPerTableTemplateContext
         return this.m__TemplateDef;
     }
 
-
+    @Override
+    public String toString()
+    {
+        return "TemplateDefPerTableTemplateContext{" +
+               "m__TemplateDef=" + m__TemplateDef +
+               '}';
+    }
 }
