@@ -334,6 +334,7 @@ public class PerRepositoryTemplatesTest
 
             @NotNull final PerRepositoryTemplateContext t_Context =
                 new TemplateDefPerRepositoryTemplateContext(
+                    templateDef,
                     repository,
                     t_lTableNames,
                     (DEBUG.containsKey(templateName) && DEBUG.get(templateName)),
