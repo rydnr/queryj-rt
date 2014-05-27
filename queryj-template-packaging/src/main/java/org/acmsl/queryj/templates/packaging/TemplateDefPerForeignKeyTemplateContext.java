@@ -59,7 +59,10 @@ public class TemplateDefPerForeignKeyTemplateContext
     extends PerForeignKeyTemplateContext
 {
     public TemplateDefPerForeignKeyTemplateContext(
-        @NotNull final ForeignKey<String> foreignKey, final boolean debug, @NotNull final QueryJCommand command)
+        @NotNull final TemplateDef<String> templateDef,
+        @NotNull final ForeignKey<String> foreignKey,
+        final boolean debug,
+        @NotNull final QueryJCommand command)
     {
         super(foreignKey, debug, command);
     }
