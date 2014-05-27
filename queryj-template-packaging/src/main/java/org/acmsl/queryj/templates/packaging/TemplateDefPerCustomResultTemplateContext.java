@@ -119,7 +119,7 @@ public class TemplateDefPerCustomResultTemplateContext
     public String toString()
     {
         return
-            "{ \"templateDef\": " + this.m__TemplateDef
+              "{ \"templateDef\": " + this.m__TemplateDef
             + ", \"class\": \"TemplateDefPerCustomResultTemplateContext\""
             + ", \"package\": \"org.acmsl.queryj.templates.packaging\" }";
     }
