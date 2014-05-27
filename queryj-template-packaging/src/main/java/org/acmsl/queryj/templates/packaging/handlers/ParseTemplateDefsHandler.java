@@ -360,11 +360,11 @@ public class ParseTemplateDefsHandler
         {
             if (file == null)
             {
-                throw new InvalidTemplateDefException("type", invalidClass);
+                throw new InvalidTemplateDefException("output", invalidClass);
             }
             else
             {
-                throw new InvalidTemplateDefException("type", file, invalidClass);
+                throw new InvalidTemplateDefException("output", file, invalidClass);
             }
         }
 
