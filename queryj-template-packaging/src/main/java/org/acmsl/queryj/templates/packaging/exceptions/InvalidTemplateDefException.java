@@ -77,7 +77,6 @@ public class InvalidTemplateDefException
     /**
      * Creates a new instance.
      * @param type the type.
-     * @param file the file.
      * @param cause the cause.
      */
     public InvalidTemplateDefException(@NotNull final String type, @NotNull final Throwable cause)
