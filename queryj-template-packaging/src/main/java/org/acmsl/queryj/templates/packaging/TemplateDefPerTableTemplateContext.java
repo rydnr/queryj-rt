@@ -92,4 +92,14 @@ public class TemplateDefPerTableTemplateContext
     {
         m__TemplateDef = templateDef;
     }
+
+
+    /**
+     * Specifies the template def.
+     * @param templateDef the template def.
+     */
+    protected final void immutableSetTemplateDef(@NotNull final TemplateDef<String> templateDef)
+    {
+        m__TemplateDef = templateDef;
+    }
 }
