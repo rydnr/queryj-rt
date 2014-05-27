@@ -448,11 +448,11 @@ public class ParseTemplateDefsHandler
         {
             if (file == null)
             {
-                throw new InvalidTemplateDefException("metadata", invalidClass);
+                throw new InvalidTemplateDefException("disabled", invalidClass);
             }
             else
             {
-                throw new InvalidTemplateDefException("metadata", file, invalidClass);
+                throw new InvalidTemplateDefException("disabled", file, invalidClass);
             }
         }
 
