@@ -428,4 +428,28 @@ public class ParseTemplateDefsHandler
 
         return result;
     }
+
+
+    /**
+     * Sets up the template definition parser.
+     * @param file the template def contents to parse.
+     * @return the {@link TemplateDefParser} instance.
+     */
+    @SuppressWarnings("unchecked")
+    @NotNull
+    protected TemplateDefParser setUpParser(@NotNull final File file)
+        throws RecognitionException,
+        IOException
+    {
+        @NotNull final TemplateDefParser result;
+
+        @NotNull final TemplateDefLexer t_Lexer =
+            new TemplateDefLexer(new ANTLRFileStream(file.getAbsolutePath()));
+
+        @NotNull final CommonTokenStream t_Tokens = new CommonTokenStream(t_Lexer);
+
+        result = new TemplateDefParser(t_Tokens);
+
+        return result;
+    }
 }
