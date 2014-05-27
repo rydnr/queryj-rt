@@ -110,6 +110,6 @@ public class TemplateDefPerTableTemplateContext
     @NotNull
     public TemplateDef<String> getTemplateDef()
     {
-
+        return this.m__TemplateDef;
     }
 }
