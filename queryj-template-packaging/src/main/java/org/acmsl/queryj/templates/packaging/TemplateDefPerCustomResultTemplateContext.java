@@ -52,7 +52,7 @@ import org.checkthread.annotations.ThreadSafe;
 import java.util.List;
 
 /**
- *
+ * Enhances {@link org.acmsl.queryj.api.PerTableTemplateContext} with the {@link TemplateDef} reference.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/05/27 20:44
