@@ -181,7 +181,6 @@ public class PerTableTemplateContext
         return result.toString();
     }
 
-
     /**
      * {@inheritDoc}
      */
