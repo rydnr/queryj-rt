@@ -183,7 +183,8 @@ public class ParseTemplateDefsHandler
                         }
                         else
                         {
-
+                            throw
+                                new TemplateAssociatedToTemplateDefDoesNotExist(templateDef);
                         }
                     }
 
