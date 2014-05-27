@@ -60,7 +60,8 @@ import java.util.List;
 public class TemplateDefPerTableTemplateContext
     extends PerTableTemplateContext
 {
-    public TemplateDefPerTableTemplateContext(@NotNull final String tableName, @NotNull final List<Row<String>> staticValues, final boolean debug, @NotNull final QueryJCommand command)
+    public TemplateDefPerTableTemplateContext(
+        @NotNull final String tableName, @NotNull final List<Row<String>> staticValues, final boolean debug, @NotNull final QueryJCommand command)
     {
         super(tableName, staticValues, debug, command);
     }
