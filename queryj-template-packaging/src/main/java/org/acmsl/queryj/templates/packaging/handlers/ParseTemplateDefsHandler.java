@@ -431,7 +431,7 @@ public class ParseTemplateDefsHandler
         throws RecognitionException,
         IOException
     {
-        return setUpParser(new ANTLRInputStream(file.getAbsolutePath()));
+        return setUpParser(new ANTLRInputStream(inputStream);
     }
 
     /**
