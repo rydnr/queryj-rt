@@ -56,6 +56,7 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2014/05/27 20:59
  */
 @ThreadSafe
+@SuppressWarnings("unused")
 public class TemplateDefPerForeignKeyTemplateContext
     extends PerForeignKeyTemplateContext
 {
