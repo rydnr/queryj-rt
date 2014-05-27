@@ -961,14 +961,14 @@ public abstract class AbstractTemplate<C extends TemplateContext>
     {
         @Nullable Class<FillTemplateChainFactory<C>> result = null;
 
-        @NotNull final String contextName = context.getClass().getSimpleName();
+        @NotNull final String contextName = context.getClass().getSimpleName().replaceAll("^TemplateDef", "");
 
         @NotNull final String baseName =
             buildFillTemplateChainFactoryClass(contextName, placeholderPackage);
 
         try
         {
-            result = (Class<FillTemplateChainFactory<C>>) Class.forName(baseName.replaceAll("^TemplateDef", ""));
+            result = (Class<FillTemplateChainFactory<C>>) Class.forName(baseName);
         }
         catch (@NotNull final ClassNotFoundException classNotFound)
         {
