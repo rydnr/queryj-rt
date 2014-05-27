@@ -292,7 +292,12 @@ public class ParseTemplateDefsHandler
         }
         catch (@NotNull final Throwable invalidClass)
         {
-            throw new CannotProcessTemplateDefException(file, invalidClass);
+            if (file == null)
+            {
+                throw new CannotProcessTemplateDefException(file, invalidClass);
+            }
+            else
+            {
         }
 
         @NotNull final TemplateDefNameVisitor nameVisitor = new TemplateDefNameVisitor();
