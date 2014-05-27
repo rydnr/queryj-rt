@@ -58,6 +58,11 @@ import org.checkthread.annotations.ThreadSafe;
 public class TemplateDefPerCustomSqlTemplateContext
     extends PerCustomSqlTemplateContext
 {
+    /**
+     * The template def.
+     */
+    private TemplateDef<String> m__TemplateDef;
+
     public TemplateDefPerCustomSqlTemplateContext(
         @NotNull final TemplateDef<String> templateDef,
         @NotNull final Sql<String> sql,
