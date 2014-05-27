@@ -49,7 +49,7 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
- * Enhances {@link org.acmsl.queryj.api.PerRepositoryTemplateContext} with the {@link TemplateDef} reference.
+ * Enhances {@link PerRepositoryTemplateContext} with the {@link TemplateDef} reference.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/05/27 20:55
