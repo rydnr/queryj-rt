@@ -84,7 +84,7 @@ public class TemplateDefPerCustomResultTemplateContext
      * @param command the {@link QueryJCommand command}.
      */
     public TemplateDefPerCustomResultTemplateContext(
-        @NotNull final TemplateDef templateDef,
+        @NotNull final TemplateDef<String> templateDef,
         @NotNull final Result<String> result,
         @NotNull final List<Property<String>> properties,
         final boolean debug,
