@@ -163,8 +163,9 @@ public class <C.class_name>
 
         @NotNull final <def.type.capitalized>TemplateContext t_Context =
             new TemplateDef<def.type.capitalized>TemplateContext(templateDef, tableName, staticContents, <def.debug>, parameters);
+
         @NotNull final <def.type.capitalized>TemplateContext t_Context =
-            new <def.type.capitalized>TemplateContext(result, properties, <def.debug>, parameters);
+            new TemplateDef<def.type.capitalized>TemplateContext(result, properties, <def.debug>, parameters);
 
         t_Context.setDecoratorFactory(CachingDecoratorFactory.getInstance());
 
