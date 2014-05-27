@@ -84,6 +84,6 @@ public class InvalidTemplateDefException
     public InvalidTemplateDefException(
         @NotNull final String type, @NotNull final File file, @NotNull final Throwable cause)
     {
-        super("invalid.templatedef." + type, new Object[] { file.getAbsolutePath() }, cause);
+        super("invalid.templatedef." + type + ".from.stream", new Object[] { file.getAbsolutePath() }, cause);
     }
 }
