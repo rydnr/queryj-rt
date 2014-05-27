@@ -87,6 +87,13 @@ import org.acmsl.queryj.templates.<def.name.noExtension>TemplateFactory;
  * Importing QueryJ Template Packaging classes.
  */
 import org.acmsl.queryj.templates.packaging.TemplateDef;
+/*
+ * Importing QueryJ Template Packaging classes.
+ */
+import org.acmsl.queryj.templates.packaging.TemplateDef;
+import org.acmsl.queryj.templates.packaging.TemplateDefPerTableTemplateContext;
+import org.acmsl.queryj.templates.packaging.handlers.ParseTemplateDefsHandler;
+
 import org.acmsl.queryj.templates.packaging.TemplateDefPerTableTemplateContext;
 import org.acmsl.queryj.templates.packaging.handlers.ParseTemplateDefsHandler;
 
