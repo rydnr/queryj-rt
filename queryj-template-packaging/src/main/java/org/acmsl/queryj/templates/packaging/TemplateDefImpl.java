@@ -135,7 +135,7 @@ public class TemplateDefImpl
         @NotNull final TemplateDefOutput output,
         @NotNull final String filenameBuilder,
         @NotNull final String packageName,
-        @NotNull final File file,
+        @Nullable final File file,
         @NotNull final Map<String, String> metadata,
         final boolean disabled,
         final boolean debug)
