@@ -132,7 +132,7 @@ public class TemplateDefPerCustomResultTemplateContext
     {
         return
               "{ \"templateDef\": " + this.m__TemplateDef
-            + ""
+            + ", \"super\": " + super.toString()
             + ", \"class\": \"TemplateDefPerCustomResultTemplateContext\""
             + ", \"package\": \"org.acmsl.queryj.templates.packaging\" }";
     }
