@@ -99,7 +99,7 @@ import org.acmsl.queryj.tools.handlers.ParameterValidationHandler;
  * Importing QueryJ Template Packaging classes.
  */
 import org.acmsl.queryj.templates.packaging.TemplateDef;
-import org.acmsl.queryj.templates.packaging.TemplateDefPerForeignKeyTemplateContext;
+import org.acmsl.queryj.templates.packaging.TemplateDefPerCustomSqlTemplateContext;
 
 /*
  * Importing QueryJ Test classes.
@@ -300,6 +300,7 @@ public class PerCustomSqlTemplatesTest
         generateFile(
             template,
             engine,
+            retrieveTemplateDef(templateDef),
             getTables(),
             getSqlList(),
             getOutputFiles(),
