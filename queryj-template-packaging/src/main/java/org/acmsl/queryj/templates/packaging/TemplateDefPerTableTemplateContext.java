@@ -114,7 +114,11 @@ public class TemplateDefPerTableTemplateContext
         return this.m__TemplateDef;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
+    @NotNull
     public String toString()
     {
         return "TemplateDefPerTableTemplateContext{" +
