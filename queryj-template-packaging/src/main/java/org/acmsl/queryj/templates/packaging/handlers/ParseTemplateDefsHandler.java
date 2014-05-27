@@ -252,7 +252,7 @@ public class ParseTemplateDefsHandler
 
     /**
      * Parses a template def file.
-     * @param inputStream the file to parse.
+     * @param inputStream the stream to parse.
      */
     @NotNull
     public TemplateDef<String> parseDefStream(@NotNull final InputStream inputStream)
