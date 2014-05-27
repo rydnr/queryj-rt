@@ -83,11 +83,10 @@ public class CannotProcessTemplateDefException
 
     /**
      * Creates a new instance.
-     * @param file the {@link org.acmsl.queryj.templates.packaging.TemplateDef} file.
      * @param cause the cause.
      */
     public CannotProcessTemplateDefException(@NotNull final Throwable cause)
     {
-        super("cannot.process.templatedef.from.stream", new Object[0] { file.getAbsolutePath() }, cause);
+        super("cannot.process.templatedef.from.stream", new Object[0], cause);
     }
 }
