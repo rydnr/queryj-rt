@@ -93,7 +93,6 @@ public class TemplateDefPerTableTemplateContext
         m__TemplateDef = templateDef;
     }
 
-
     /**
      * Specifies the template def.
      * @param templateDef the template def.
