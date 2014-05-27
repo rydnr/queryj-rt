@@ -86,8 +86,7 @@ public class CannotProcessTemplateDefException
      * @param file the {@link org.acmsl.queryj.templates.packaging.TemplateDef} file.
      * @param cause the cause.
      */
-    public CannotProcessTemplateDefException(
-        @NotNull final File file, @NotNull final Throwable cause)
+    public CannotProcessTemplateDefException(@NotNull final Throwable cause)
     {
         super("cannot.process.templatedef.from.stream", new Object[] { file.getAbsolutePath() }, cause);
     }
