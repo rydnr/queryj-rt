@@ -102,4 +102,14 @@ public class TemplateDefPerTableTemplateContext
     {
         immutableSetTemplateDef(templateDef);
     }
+
+    /**
+     * Retrieves the template def.
+     * @return such information.
+     */
+    @NotNull
+    public TemplateDef<String> getTemplateDef()
+    {
+
+    }
 }
