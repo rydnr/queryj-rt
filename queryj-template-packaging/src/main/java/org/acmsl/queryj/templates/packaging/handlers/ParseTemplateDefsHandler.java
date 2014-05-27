@@ -266,7 +266,7 @@ public class ParseTemplateDefsHandler
         }
         catch (final IOException missingFile)
         {
-            throw new CannotSetUpTemplateDefParserException(file, missingFile);
+            throw new CannotSetUpTemplateDefParserException(missingFile);
         }
 
         return parseDef(t_Parser, file);
