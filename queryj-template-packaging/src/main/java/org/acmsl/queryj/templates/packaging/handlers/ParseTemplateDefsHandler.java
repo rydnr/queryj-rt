@@ -176,7 +176,7 @@ public class ParseTemplateDefsHandler
                         @Nullable final File templateFile = retrieveTemplateFile(templateDef, stringUtils);
                         throw
                             new TemplateAssociatedToTemplateDefDoesNotExist(
-                                templateDef, retrieveTemplateFile(templateDef, stringUtils));
+                                templateDef, templateFile);
                     }
 
 //                    if (templateDefs.size() == 1)
