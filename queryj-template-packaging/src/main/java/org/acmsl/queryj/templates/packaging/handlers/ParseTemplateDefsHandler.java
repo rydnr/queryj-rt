@@ -314,8 +314,14 @@ public class ParseTemplateDefsHandler
         }
         catch (@NotNull final Throwable invalidClass)
         {
-            if (file )
-            throw new InvalidTemplateDefException("name", file, invalidClass);
+            if (file == null)
+            {
+                throw new InvalidTemplateDefException("name", file, invalidClass);
+            }
+            else
+            {
+
+            }
         }
 
         @NotNull final TemplateDefTypeVisitor typeVisitor = new TemplateDefTypeVisitor();
