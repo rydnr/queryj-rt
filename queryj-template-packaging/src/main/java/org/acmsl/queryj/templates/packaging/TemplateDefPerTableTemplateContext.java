@@ -53,6 +53,6 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class TemplateDefPerTableTemplateContext
-    extends PerTableTemplatesTestTemplate
+    extends PerTableTemplateTemplateContext
 {
 }
