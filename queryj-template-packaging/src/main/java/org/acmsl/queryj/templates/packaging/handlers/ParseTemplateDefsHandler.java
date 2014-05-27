@@ -403,6 +403,14 @@ public class ParseTemplateDefsHandler
         }
         catch (@NotNull final Throwable invalidClass)
         {
+            if (file == null)
+            {
+                throw new InvalidTemplateDefException("filenameBuilder", invalidClass);
+            }
+            else
+            {
+                throw new InvalidTemplateDefException("filenameBuilder", file, invalidClass);
+            }
             throw new InvalidTemplateDefException(Literals.PACKAGE, file, invalidClass);
         }
 
