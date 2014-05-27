@@ -64,6 +64,13 @@ public class TemplateDefPerRepositoryTemplateContext
      */
     private TemplateDef<String> m__TemplateDef;
 
+    /**
+     * Creates a new context.
+     * @param templateDef the {@link TemplateDef}.
+     * @param repositoryName the repository name.
+     * @param tableNames the table names.
+     * @param debug whether we're debugging or not.
+     * @param command                                   */
     public TemplateDefPerRepositoryTemplateContext(
         @NotNull final TemplateDef<String> templateDef,
         @NotNull final String repositoryName,
