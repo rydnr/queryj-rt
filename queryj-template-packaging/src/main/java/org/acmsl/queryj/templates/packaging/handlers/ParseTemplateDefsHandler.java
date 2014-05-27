@@ -409,7 +409,7 @@ public class ParseTemplateDefsHandler
             }
             else
             {
-                throw new InvalidTemplateDefException("filenameBuilder", file, invalidClass);
+                throw new InvalidTemplateDefException(Literals.PACKAGE, file, invalidClass);
             }
             throw new InvalidTemplateDefException(Literals.PACKAGE, file, invalidClass);
         }
