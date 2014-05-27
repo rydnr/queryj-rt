@@ -78,4 +78,15 @@ public class CannotSetUpTemplateDefParserException
     {
         super("cannot.setup.templatedef.parser", new Object[] { file.getAbsolutePath() }, cause);
     }
+
+    /**
+     * Creates a new instance.
+     * @param file the template def file.
+     * @param cause the cause.
+     */
+    public CannotSetUpTemplateDefParserException(
+        @NotNull final File file, @NotNull final Throwable cause)
+    {
+        super("cannot.setup.templatedef.parser", new Object[] { file.getAbsolutePath() }, cause);
+    }
 }
