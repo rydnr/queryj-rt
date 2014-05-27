@@ -168,7 +168,7 @@ public class <C.class_name>
         @NotNull final QueryJCommand parameters)
       throws  QueryJBuildException
     {
-        @NotNull final TemplateDef\<String> templateDef =
+        @NotNull final TemplateDef\<String> t_TemplateDef =
             new ParseTemplateDefsHandler().parseDefStream(
                 getClass().getResourceAsStream("<def.defName>.stg.def"));
 
