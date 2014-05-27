@@ -298,6 +298,8 @@ public class ParseTemplateDefsHandler
             }
             else
             {
+                throw new CannotProcessTemplateDefException(file, invalidClass);
+            }
         }
 
         @NotNull final TemplateDefNameVisitor nameVisitor = new TemplateDefNameVisitor();
