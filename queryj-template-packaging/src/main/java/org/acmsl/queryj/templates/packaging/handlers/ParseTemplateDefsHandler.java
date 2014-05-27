@@ -288,6 +288,7 @@ public class ParseTemplateDefsHandler
      * Parses a template def file.
      * @param parser the parser.
      * @param file the file.
+     * @return the {@link TemplateDef}.
      */
     @NotNull
     public TemplateDef<String> parseDef(
