@@ -65,6 +65,7 @@ public class TemplateDefPerRepositoryTemplateContext
     private TemplateDef<String> m__TemplateDef;
 
     public TemplateDefPerRepositoryTemplateContext(
+        @NotNull final TemplateDef<String> templateDef,
         @NotNull final String repositoryName,
         @NotNull final List<String> tableNames,
         final boolean debug,
