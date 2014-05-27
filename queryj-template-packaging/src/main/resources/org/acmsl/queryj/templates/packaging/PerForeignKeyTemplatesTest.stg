@@ -321,6 +321,7 @@ public class PerForeignKeyTemplatesTest
         generateFile(
             template,
             engine,
+            retrieveTemplateDef(template),
             getForeignKeys(),
             getTables(),
             getOutputFiles());
@@ -338,6 +339,7 @@ public class PerForeignKeyTemplatesTest
     protected void generateFile(
         @NotNull final String templateName,
         @NotNull final String engine,
+        @NotNull final TemplateDef\<String> templateDef,
         @NotNull final List\<ForeignKey\<String\>> foreignKeys,
         @NotNull final Map\<String, Table\<String, Attribute\<String>, List\<Attribute\<String\>>\>> tables,
         @NotNull final Map\<String, File> outputFiles)
