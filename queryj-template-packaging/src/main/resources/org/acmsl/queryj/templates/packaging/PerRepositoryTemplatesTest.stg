@@ -257,6 +257,7 @@ public class PerRepositoryTemplatesTest
      * Generates a file with the information from the feature.
      * @param templateName the template.
      * @param engine the engine name.
+     * @param templateDef the {@link TemplateDef}.
      * @param repository the repository.
      * @param tableMap the table map.
      * @param outputFiles the output files.
