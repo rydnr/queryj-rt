@@ -42,6 +42,10 @@ package org.acmsl.queryj.templates.packaging;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.PerTableTemplateContext;
 import org.acmsl.queryj.metadata.vo.Row;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
