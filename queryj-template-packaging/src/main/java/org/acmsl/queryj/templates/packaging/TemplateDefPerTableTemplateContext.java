@@ -62,11 +62,11 @@ public class TemplateDefPerTableTemplateContext
 {
     /**
      * Creates a new {@code TemplateDefPerTableTemplateContext}.
-     * @param templateDef
-     * @param tableName
-     * @param staticValues
-     * @param debug
-     * @param command
+     * @param templateDef the {@link TemplateDef}.
+     * @param tableName the table name.
+     * @param staticValues the static values, if any.
+     * @param debug whether we're debugging.
+     * @param command the command.
      */
     public TemplateDefPerTableTemplateContext(
         @NotNull final TemplateDef<String> templateDef,
