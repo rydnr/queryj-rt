@@ -60,6 +60,14 @@ import java.util.List;
 public class TemplateDefPerTableTemplateContext
     extends PerTableTemplateContext
 {
+    /**
+     * Creates a new {@code TemplateDefPerTableTemplateContext}
+     * @param templateDef
+     * @param tableName
+     * @param staticValues
+     * @param debug
+     * @param command
+     */
     public TemplateDefPerTableTemplateContext(
         @NotNull final TemplateDef<String> templateDef,
         @NotNull final String tableName,
