@@ -264,7 +264,7 @@ public class ParseTemplateDefsHandler
         {
             t_Parser = setUpParser(inputStream);
         }
-        catch (final IOException missingFile)
+        catch (final IOException invalidStream)
         {
             throw new CannotSetUpTemplateDefParserException(missingFile);
         }
