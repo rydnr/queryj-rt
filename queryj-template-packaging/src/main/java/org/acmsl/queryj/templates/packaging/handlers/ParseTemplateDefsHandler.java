@@ -205,12 +205,12 @@ public class ParseTemplateDefsHandler
         if (templateDefFile != null)
         {
             result =
-            new File(
-                stringUtils.extractClassName(
-                    templateDefFile.getAbsolutePath().replaceAll("\\.", "\126").replaceAll("\\.stg\\.def$", "").replaceAll(File.separator, "."))
-                .replaceAll("\\.", File.separator).replaceAll("\126", ".")
-                + File.separator
-                + templateDef.getName());
+                new File(
+                    stringUtils.extractClassName(
+                        templateDefFile.getAbsolutePath().replaceAll("\\.", "\126").replaceAll("\\.stg\\.def$", "").replaceAll(File.separator, "."))
+                    .replaceAll("\\.", File.separator).replaceAll("\126", ".")
+                    + File.separator
+                    + templateDef.getName());
     }
 
     /**
