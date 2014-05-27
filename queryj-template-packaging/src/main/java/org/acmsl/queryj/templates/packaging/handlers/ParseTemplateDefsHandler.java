@@ -200,7 +200,7 @@ public class ParseTemplateDefsHandler
     protected File retrieveTemplateFile(
         @NotNull final TemplateDef<String> templateDef, @NotNull final StringUtils stringUtils)
     {
-        @NotNull final File templateDefFile = templateDef.getFile();
+        @Nullable final File templateDefFile = templateDef.getFile();
 
         return
             new File(
