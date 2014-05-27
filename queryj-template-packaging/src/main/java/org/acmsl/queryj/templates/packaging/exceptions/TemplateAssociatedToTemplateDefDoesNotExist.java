@@ -101,7 +101,7 @@ public class TemplateAssociatedToTemplateDefDoesNotExist
             "template.associated.to.classloaded.templatedef.does.not.exist",
             new Object[]
                 {
-                    templateDef.getFile().getAbsolutePath()
+                    templateDef.getDefName()
                 });
     }
 }
