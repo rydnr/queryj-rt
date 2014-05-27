@@ -65,6 +65,7 @@ sourceImpl(def, C) ::= <<
 /*
  * Importing QueryJ-Core classes.
  */
+import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.api.handlers.Base<def.type.capitalized>TemplateBuildHandler;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Property;
