@@ -103,7 +103,7 @@ public interface TemplateDef<S>
      * Retrieves the actual template definition file.
      * @return the file.
      */
-    @NotNull
+    @Nullable
     File getFile();
 
     /**
