@@ -122,9 +122,8 @@ public class TemplateDefPerTableTemplateContext
     public String toString()
     {
         return
-            "{ \"templateDef\": " + this.m__TemplateDef
+              "{ \"templateDef\": " + this.m__TemplateDef
             + ", \"class\": \"TemplateDefPerTableTemplateContext\""
-            + ", \"package\": \"org.acmsl.queryj.templates.packaging"
-               '}';
+            + ", \"package\": \"org.acmsl.queryj.templates.packaging\" }";
     }
 }
