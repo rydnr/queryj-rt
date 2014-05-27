@@ -41,6 +41,10 @@ package org.acmsl.queryj.templates.packaging;
  */
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.PerRepositoryTemplateContext;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -48,6 +52,9 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 
+/*
+ * Importing JetBrains annotations.
+ */
 import java.util.List;
 
 /**
