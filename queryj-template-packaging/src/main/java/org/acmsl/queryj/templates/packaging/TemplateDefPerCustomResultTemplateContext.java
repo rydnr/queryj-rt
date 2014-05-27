@@ -27,7 +27,8 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Enhances {@link PerCustomResultTemplateContext} with the {@link TemplateDef} reference.
+ * Description: Enhances PerCustomResultTemplateContext with the TemplateDef
+ *              reference.
  *
  * Date: 2014/05/27
  * Time: 20:44
