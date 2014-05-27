@@ -98,7 +98,7 @@ public class TemplateAssociatedToTemplateDefDoesNotExist
         @NotNull final TemplateDef<String> templateDef)
     {
         super(
-            "template.associated.to.templatedef.does.not.exist",
+            "template.associated.to.classloadtemplatedef.does.not.exist",
             new Object[]
                 {
                     templateDef.getFile().getAbsolutePath()
