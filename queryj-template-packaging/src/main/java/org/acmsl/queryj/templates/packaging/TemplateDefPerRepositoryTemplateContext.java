@@ -120,7 +120,8 @@ public class TemplateDefPerRepositoryTemplateContext
     public String toString()
     {
         return
-            "{ \"templateDef\": " + this.m__TemplateDef
+              "{ \"templateDef\": " + this.m__TemplateDef
+            + ", \"super\": " + super.toString()
             + ", \"class\": \"TemplateDefPerRepositoryTemplateContext\""
             + ", \"package\": \"org.acmsl.queryj.templates.packaging\" }";
     }
