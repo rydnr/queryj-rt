@@ -66,6 +66,7 @@ import java.util.List;
  * Created: 2014/05/27 20:44
  */
 @ThreadSafe
+@SuppressWarnings("unused")
 public class TemplateDefPerCustomResultTemplateContext
     extends PerCustomResultTemplateContext
 {
