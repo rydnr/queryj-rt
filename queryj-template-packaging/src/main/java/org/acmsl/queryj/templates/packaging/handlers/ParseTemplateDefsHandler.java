@@ -421,7 +421,6 @@ public class ParseTemplateDefsHandler
         return setUpParser(new ANTLRFileStream(file.getAbsolutePath()));
     }
 
-
     /**
      * Sets up the template definition parser.
      * @param stream the {@link ANTLRInputStream}.
