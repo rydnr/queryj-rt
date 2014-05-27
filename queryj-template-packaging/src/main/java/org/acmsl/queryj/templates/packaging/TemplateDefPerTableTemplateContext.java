@@ -63,7 +63,8 @@ public class TemplateDefPerTableTemplateContext
     /**
      * The template def.
      */
-    private TemplateDef<String>
+    private TemplateDef<String> m__TemplateDef;
+
     /**
      * Creates a new {@code TemplateDefPerTableTemplateContext}.
      * @param templateDef the {@link TemplateDef}.
