@@ -281,7 +281,9 @@ public class ParseTemplateDefsHandler
     public TemplateDef<String> parseDef(@NotNull final TemplateDefParser parser)
         throws TemplatePackagingCheckedException
     {
+        return parseDef(parser, null);
     }
+
     /**
      * Parses a template def file.
      * @param parser the parser.
