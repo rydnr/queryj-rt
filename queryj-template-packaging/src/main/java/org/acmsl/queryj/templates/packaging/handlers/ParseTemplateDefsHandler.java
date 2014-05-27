@@ -252,6 +252,28 @@ public class ParseTemplateDefsHandler
 
     /**
      * Parses a template def file.
+     * @param file the file to parse.
+     */
+    @NotNull
+    public TemplateDef<String> parseDefFile(@NotNull final File file)
+        throws TemplatePackagingCheckedException
+    {
+        @Nullable final TemplateDefParser t_Parser;
+
+        try
+        {
+            t_Parser = setUpParser(file);
+        }
+        catch (final IOException missingFile)
+        {
+            throw new CannotSetUpTemplateDefParserException(file, missingFile);
+        }
+
+        return parseDef(t_Parser, file);
+    }
+
+    /**
+     * Parses a template def file.
      * @param parser the parser.
      * @param file the file.
      */
