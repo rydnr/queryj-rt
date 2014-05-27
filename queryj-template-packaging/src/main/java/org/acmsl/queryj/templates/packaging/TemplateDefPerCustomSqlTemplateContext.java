@@ -116,4 +116,3 @@ public class TemplateDefPerCustomSqlTemplateContext
             + ", \"package\": \"org.acmsl.queryj.templates.packaging\" }";
     }
 }
-}    }
