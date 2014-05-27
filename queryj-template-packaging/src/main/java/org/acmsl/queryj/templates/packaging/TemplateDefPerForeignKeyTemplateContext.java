@@ -119,7 +119,7 @@ public class TemplateDefPerForeignKeyTemplateContext
         return
             "{ \"templateDef\": " + this.m__TemplateDef
             + ", \"super\": " + super.toString()
-            + ", \"class\": \"TemplateDefPerRepositoryTemplateContext\""
+            + ", \"class\": \"TemplateDefPerForeignKeyTemplateContext\""
             + ", \"package\": \"org.acmsl.queryj.templates.packaging\" }";
     }
 }
