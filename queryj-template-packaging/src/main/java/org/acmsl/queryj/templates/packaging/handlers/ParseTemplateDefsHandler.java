@@ -181,6 +181,10 @@ public class ParseTemplateDefsHandler
                                 new TemplateAssociatedToTemplateDefDoesNotExist(
                                     templateDef, templateFile);
                         }
+                        else
+                        {
+
+                        }
                     }
 
 //                    if (templateDefs.size() == 1)
