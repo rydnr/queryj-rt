@@ -426,7 +426,7 @@ public class ParseTemplateDefsHandler
      * @return the {@link TemplateDefParser} instance.
      */
     @NotNull
-    protected TemplateDefParser setUpParser(@NotNull final File file)
+    protected TemplateDefParser setUpParser(@NotNull final InputStream file)
         throws RecognitionException,
         IOException
     {
