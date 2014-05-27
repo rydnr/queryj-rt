@@ -329,7 +329,7 @@ public class TemplateDefImpl
      * @return such file.
      */
     @Override
-    @NotNull
+    @Nullable
     public File getFile()
     {
         return this.m__File;
