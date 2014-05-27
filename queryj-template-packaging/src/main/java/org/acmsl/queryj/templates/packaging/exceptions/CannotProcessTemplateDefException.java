@@ -88,6 +88,6 @@ public class CannotProcessTemplateDefException
      */
     public CannotProcessTemplateDefException(@NotNull final Throwable cause)
     {
-        super("cannot.process.templatedef.from.stream", new Object[] { file.getAbsolutePath() }, cause);
+        super("cannot.process.templatedef.from.stream", new Object[0] { file.getAbsolutePath() }, cause);
     }
 }
