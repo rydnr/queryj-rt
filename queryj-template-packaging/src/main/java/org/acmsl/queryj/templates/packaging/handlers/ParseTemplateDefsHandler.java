@@ -196,7 +196,7 @@ public class ParseTemplateDefsHandler
      * @param stringUtils the {@link StringUtils} instance.
      * @return the template {@link File file}.
      */
-    @NotNull
+    @Nullable
     protected File retrieveTemplateFile(
         @NotNull final TemplateDef<String> templateDef, @NotNull final StringUtils stringUtils)
     {
