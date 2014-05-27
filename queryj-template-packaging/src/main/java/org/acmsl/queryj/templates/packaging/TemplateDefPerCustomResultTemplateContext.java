@@ -38,6 +38,7 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.api.PerCustomResultTemplateContext;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -53,5 +54,6 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class TemplateDefPerCustomResultTemplateContext
+    extends PerCustomResultTemplateContext
 {
 }
