@@ -81,6 +81,7 @@ public class TemplateDefPerCustomResultTemplateContext
     {
         super(result, properties, debug, command);
     }
+
     /**
      * Specifies the template def.
      * @param templateDef the template def.
