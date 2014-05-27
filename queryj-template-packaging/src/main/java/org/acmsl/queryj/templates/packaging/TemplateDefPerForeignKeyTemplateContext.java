@@ -122,5 +122,4 @@ public class TemplateDefPerForeignKeyTemplateContext
             + ", \"class\": \"TemplateDefPerRepositoryTemplateContext\""
             + ", \"package\": \"org.acmsl.queryj.templates.packaging\" }";
     }
-}    }
 }
