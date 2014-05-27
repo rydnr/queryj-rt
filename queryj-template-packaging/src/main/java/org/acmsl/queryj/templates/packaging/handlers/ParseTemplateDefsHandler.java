@@ -422,6 +422,19 @@ public class ParseTemplateDefsHandler
 
     /**
      * Sets up the template definition parser.
+     * @param file the template def contents to parse.
+     * @return the {@link TemplateDefParser} instance.
+     */
+    @NotNull
+    protected TemplateDefParser setUpParser(@NotNull final File file)
+        throws RecognitionException,
+        IOException
+    {
+        return setUpParser(new ANTLRFileStream(file.getAbsolutePath()));
+    }
+
+    /**
+     * Sets up the template definition parser.
      * @param stream the {@link ANTLRInputStream}.
      * @return the {@link TemplateDefParser} instance.
      */
