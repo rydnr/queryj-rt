@@ -424,7 +424,7 @@ public class ParseTemplateDefsHandler
 
     /**
      * Sets up the template definition parser.
-     * @param file the template def contents to parse.
+     * @param stream the {@link ANTLRInputStream}.
      * @return the {@link TemplateDefParser} instance.
      */
     @SuppressWarnings("unchecked")
