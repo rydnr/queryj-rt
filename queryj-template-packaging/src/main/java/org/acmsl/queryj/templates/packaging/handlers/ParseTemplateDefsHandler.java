@@ -294,7 +294,7 @@ public class ParseTemplateDefsHandler
         {
             if (file == null)
             {
-                throw new CannotProcessTemplateDefException(file, invalidClass);
+                throw new CannotProcessTemplateDefException(invalidClass);
             }
             else
             {
