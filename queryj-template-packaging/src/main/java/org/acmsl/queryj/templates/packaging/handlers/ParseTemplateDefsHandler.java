@@ -314,7 +314,7 @@ public class ParseTemplateDefsHandler
         }
         catch (@NotNull final Throwable invalidClass)
         {
-            if ()
+            if (file )
             throw new InvalidTemplateDefException("name", file, invalidClass);
         }
 
