@@ -81,7 +81,6 @@ public class CannotSetUpTemplateDefParserException
 
     /**
      * Creates a new instance.
-     * @param file the template def file.
      * @param cause the cause.
      */
     public CannotSetUpTemplateDefParserException(@NotNull final Throwable cause)
