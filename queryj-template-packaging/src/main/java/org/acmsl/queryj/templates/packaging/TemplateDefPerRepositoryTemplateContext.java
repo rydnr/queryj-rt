@@ -70,8 +70,8 @@ public class TemplateDefPerRepositoryTemplateContext
      * @param repositoryName the repository name.
      * @param tableNames the table names.
      * @param debug whether we're debugging or not.
-     * @param command                                   */
-
+     * @param command the {@link QueryJCommand}.
+     */
      public TemplateDefPerRepositoryTemplateContext(
         @NotNull final TemplateDef<String> templateDef,
         @NotNull final String repositoryName,
