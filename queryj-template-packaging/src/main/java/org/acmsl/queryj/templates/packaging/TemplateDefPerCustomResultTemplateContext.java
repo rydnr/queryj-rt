@@ -63,7 +63,9 @@ public class TemplateDefPerCustomResultTemplateContext
 {
     public TemplateDefPerCustomResultTemplateContext(
         @NotNull final Result<String> result,
-        @NotNull final List<Property<String>> properties, final boolean debug, @NotNull final QueryJCommand command)
+        @NotNull final List<Property<String>> properties,
+        final boolean debug,
+        @NotNull final QueryJCommand command)
     {
         super(result, properties, debug, command);
     }
