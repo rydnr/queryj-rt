@@ -202,6 +202,10 @@ public class ParseTemplateDefsHandler
     {
         @Nullable final File templateDefFile = templateDef.getFile();
 
+        if (templateDefFile != null)
+        {
+            result =
+        }
         return
             new File(
                 stringUtils.extractClassName(
