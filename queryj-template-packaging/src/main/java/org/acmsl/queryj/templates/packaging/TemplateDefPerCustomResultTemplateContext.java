@@ -43,6 +43,10 @@ import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.PerCustomResultTemplateContext;
 import org.acmsl.queryj.customsql.Property;
 import org.acmsl.queryj.customsql.Result;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -50,6 +54,9 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 
+/*
+ * Importing JetBrains annotations.
+ */
 import java.util.List;
 
 /**
