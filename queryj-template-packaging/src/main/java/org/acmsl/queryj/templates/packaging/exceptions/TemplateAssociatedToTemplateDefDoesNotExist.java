@@ -50,6 +50,7 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
 
 /*
  * Importing JDK classes.
@@ -78,7 +79,7 @@ public class TemplateAssociatedToTemplateDefDoesNotExist
      */
     public TemplateAssociatedToTemplateDefDoesNotExist(
         @NotNull final TemplateDef<String> templateDef,
-        @NotNull final File templateFile)
+        @Nullable final File templateFile)
     {
         super(
             "template.associated.to.templatedef.does.not.exist",
