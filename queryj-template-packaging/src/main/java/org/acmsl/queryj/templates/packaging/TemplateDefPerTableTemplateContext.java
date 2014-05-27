@@ -121,7 +121,9 @@ public class TemplateDefPerTableTemplateContext
     @NotNull
     public String toString()
     {
-        return "{ \"templateDef\": " + this.m__TemplateDef + TemplateDefPerTableTemplateContext {" +
+        return
+            "{ \"templateDef\": " + this.m__TemplateDef
+            + TemplateDefPerTableTemplateContext {" +
                "m__TemplateDef=" + m__TemplateDef +
                '}';
     }
