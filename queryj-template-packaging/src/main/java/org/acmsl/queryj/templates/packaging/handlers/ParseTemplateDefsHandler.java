@@ -418,12 +418,6 @@ public class ParseTemplateDefsHandler
            IOException
     {
         return setUpParser(new ANTLRFileStream(file.getAbsolutePath()));
-
-        @NotNull final CommonTokenStream t_Tokens = new CommonTokenStream(t_Lexer);
-
-        result = new TemplateDefParser(t_Tokens);
-
-        return result;
     }
 
 
