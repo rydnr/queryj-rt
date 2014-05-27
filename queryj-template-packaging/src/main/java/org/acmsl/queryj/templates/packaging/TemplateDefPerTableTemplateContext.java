@@ -61,6 +61,10 @@ public class TemplateDefPerTableTemplateContext
     extends PerTableTemplateContext
 {
     /**
+     * The template def.
+     */
+    private TemplateDef<String>
+    /**
      * Creates a new {@code TemplateDefPerTableTemplateContext}.
      * @param templateDef the {@link TemplateDef}.
      * @param tableName the table name.
