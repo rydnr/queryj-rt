@@ -89,6 +89,6 @@ public class CannotProcessTemplateDefException
     public CannotProcessTemplateDefException(
         @NotNull final File file, @NotNull final Throwable cause)
     {
-        super("cannot.process.templatedef", new Object[] { file.getAbsolutePath() }, cause);
+        super("cannot.process.templatedef.for.str", new Object[] { file.getAbsolutePath() }, cause);
     }
 }
