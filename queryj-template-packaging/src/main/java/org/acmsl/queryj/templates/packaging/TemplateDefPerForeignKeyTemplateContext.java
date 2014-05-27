@@ -59,6 +59,11 @@ public class TemplateDefPerForeignKeyTemplateContext
     extends PerForeignKeyTemplateContext
 {
     /**
+     * The template def.
+     */
+    private TemplateDef<String> m__TemplateDef;
+
+    /**
      * Creates a new context.
      * @param templateDef the {@link TemplateDef}.
      * @param foreignKey the {@link ForeignKey}.
