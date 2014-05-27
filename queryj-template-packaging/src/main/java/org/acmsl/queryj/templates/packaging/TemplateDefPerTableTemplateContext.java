@@ -51,7 +51,7 @@ import org.checkthread.annotations.ThreadSafe;
 import java.util.List;
 
 /**
- * Enhances {@link PerTableTemplateContext} with {@link }
+ * Enhances {@link PerTableTemplateContext} with the {@link }
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/05/27 06:06
