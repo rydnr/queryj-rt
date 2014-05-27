@@ -73,6 +73,7 @@ import org.acmsl.queryj.tools.handlers.AbstractQueryJCommandHandler;
  * Importing ANTLR classes.
  */
 import org.antlr.v4.runtime.ANTLRFileStream;
+import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.RecognitionException;
 import org.antlr.v4.runtime.tree.ParseTree;
@@ -428,7 +429,7 @@ public class ParseTemplateDefsHandler
      */
     @SuppressWarnings("unchecked")
     @NotNull
-    protected TemplateDefParser setUpParser(@NotNull final File file)
+    protected TemplateDefParser setUpParser(@NotNull final ANTLRInputStream file)
         throws RecognitionException,
         IOException
     {
