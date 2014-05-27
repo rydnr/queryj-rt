@@ -178,8 +178,7 @@ public class ParseTemplateDefsHandler
                         if (templateFile != null)
                         {
                             throw
-                                new TemplateAssociatedToTemplateDefDoesNotExist(
-                                    templateDef, templateFile);
+                                new TemplateAssociatedToTemplateDefDoesNotExist(templateDef, templateFile);
                         }
                         else
                         {
