@@ -338,11 +338,11 @@ public class ParseTemplateDefsHandler
         {
             if (file == null)
             {
-                throw new InvalidTemplateDefException("name", invalidClass);
+                throw new InvalidTemplateDefException("type", invalidClass);
             }
             else
             {
-                throw new InvalidTemplateDefException("name", file, invalidClass);
+                throw new InvalidTemplateDefException("type", file, invalidClass);
             }
         }
 
