@@ -405,13 +405,12 @@ public class ParseTemplateDefsHandler
         {
             if (file == null)
             {
-                throw new InvalidTemplateDefException("filenameBuilder", invalidClass);
+                throw new InvalidTemplateDefException(Literals.PACKAGE, invalidClass);
             }
             else
             {
                 throw new InvalidTemplateDefException(Literals.PACKAGE, file, invalidClass);
             }
-            throw new InvalidTemplateDefException(Literals.PACKAGE, file, invalidClass);
         }
 
         @NotNull final TemplateDefMetadataVisitor metadataVisitor = new TemplateDefMetadataVisitor();
