@@ -155,6 +155,7 @@ public class <C.class_name>
         @NotNull final Result\<String> result,
         @NotNull final List\<Property\<String\>> properties,
         @NotNull final QueryJCommand parameters)
+      throws  QueryJBuildException
     {
         @NotNull final <def.type.capitalized>TemplateContext t_Context =
             new <def.type.capitalized>TemplateContext(result, properties, <def.debug>, parameters);
