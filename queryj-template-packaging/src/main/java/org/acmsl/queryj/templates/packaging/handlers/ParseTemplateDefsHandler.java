@@ -417,7 +417,7 @@ public class ParseTemplateDefsHandler
     throws RecognitionException,
            IOException
     {
-        return @NotNull final TemplateDefParser result;
+        return setUpParser()@NotNull final TemplateDefParser result;
 
         @NotNull final TemplateDefLexer t_Lexer =
             new TemplateDefLexer(new ANTLRFileStream(file.getAbsolutePath()));
