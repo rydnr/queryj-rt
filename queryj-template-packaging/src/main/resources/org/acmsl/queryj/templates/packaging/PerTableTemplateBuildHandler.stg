@@ -159,7 +159,7 @@ public class <C.class_name>
         @NotNull final QueryJCommand parameters)
       throws  QueryJBuildException
     {
-        @NotNull final TemplateDef templateDef =
+        @NotNull final TemplateDef\<String> templateDef =
             new ParseTemplateDefsHandler().parseDefStream(
                 getClass().getResourceAsStream("AttributesStatementSetter.stg.def"));
 
