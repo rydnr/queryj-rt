@@ -40,7 +40,6 @@ package org.acmsl.queryj.templates.packaging.placeholders;
  */
 import org.acmsl.queryj.api.TemplateContext;
 import org.acmsl.queryj.metadata.DecoratedString;
-import org.acmsl.queryj.templates.packaging.DefaultTemplatePackagingContext;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
 
 /*
@@ -52,6 +51,7 @@ import org.acmsl.queryj.placeholders.AbstractTemplateContextFillHandler;
  */
 import org.acmsl.queryj.templates.packaging.TemplateDefPerTableTemplateContext;
 import org.acmsl.queryj.templates.packaging.TemplateDefTemplateContext;
+import org.acmsl.queryj.templates.packaging.TemplatePackagingContext;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -106,11 +106,11 @@ public class TemplateDefHandler
 
         if (context instanceof TemplateDefTemplateContext)
         {
-            result = new DecoratedTemplateDefWrapper(((DefaultTemplatePackagingContext) context).getTemplateDef());
+            result = new DecoratedTemplateDefWrapper(((TemplateDefTemplateContext) context).getTemplateDef());
         }
-        else if (context instanceof TemplateDefPerTableTemplateContext)
+        else
         {
-            result = new DecoratedTemplateDefWrapper(((TemplateDefPerTableTemplateContext) context).getTemplateDef());
+            result = null;
         }
 
         return result;
