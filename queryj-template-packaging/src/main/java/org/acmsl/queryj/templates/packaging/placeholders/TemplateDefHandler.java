@@ -50,6 +50,7 @@ import org.acmsl.queryj.placeholders.AbstractTemplateContextFillHandler;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.templates.packaging.TemplateDefPerTableTemplateContext;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -106,6 +107,9 @@ public class TemplateDefHandler
         {
             result = new DecoratedTemplateDefWrapper((DefaultTemplatePackagingContext context).getTemplateDef());
         }
-        else if (context instanceof )
+        else if (context instanceof TemplateDefPerTableTemplateContext)
+        {
+            result = new DecoratedTemplateDefWrapper()
+        }
     }
 }
