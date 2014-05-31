@@ -114,49 +114,6 @@ public class TemplateDefPerTableFillTemplateChain
             new TemplateContextFillAdapterHandler<>(
                 new TemplateDefHandler(context)));
 
-        result.add(
-            new TemplateContextFillAdapterHandler<>(
-                new DAOClassNameHandler(context)));
-
-        result.add(
-            new TemplateContextFillAdapterHandler<>(
-                new DAOImplementationClassNameHandler(context)));
-
-        result.add(
-            new TemplateContextFillAdapterHandler<>(
-                new DAOFactoryClassNameHandler(context)));
-
-        result.add(
-            new TemplateContextFillAdapterHandler<>(
-                new ForeignKeyListHandler(context)));
-
-        result.add(
-            new TemplateContextFillAdapterHandler<>(
-                new NonPrimaryKeyAttributesHandler(context)));
-
-        result.add(
-            new TemplateContextFillAdapterHandler<>(
-                new PrimaryKeyHandler(context)));
-
-        result.add(
-            new TemplateContextFillAdapterHandler<>(
-                new TableHandler(context)));
-
-        result.add(
-            new TemplateContextFillAdapterHandler<>(
-                new TableNameHandler(context)));
-
-        result.add(
-            new TemplateContextFillAdapterHandler<>(
-                new ValueObjectNameHandler(context)));
-
-        result.add(
-            new TemplateContextFillAdapterHandler<>(
-                new TableAttributeTypeImportsHandler(context)));
-
-        result.add(
-            new TemplateContextFillAdapterHandler<>(
-                new StaticValuesHandler(context)));
 
         return result;
     }
