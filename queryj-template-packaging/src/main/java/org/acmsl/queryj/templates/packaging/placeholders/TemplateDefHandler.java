@@ -111,5 +111,7 @@ public class TemplateDefHandler
         {
             result = new DecoratedTemplateDefWrapper(((TemplateDefPerTableTemplateContext) context).getTemplateDef());
         }
+
+        return result;
     }
 }
