@@ -65,8 +65,7 @@ public class PerTableFillTemplateChainFactoryImpl<C extends PerTableTemplateCont
      */
     @Nullable
     @Override
-    public FillTemplateChain<C> createFillChain(
-        @NotNull final C context)
+    public FillTemplateChain<C> createFillChain(@NotNull final C context)
     {
         return
             new FillTemplateChainWrapper<>(
