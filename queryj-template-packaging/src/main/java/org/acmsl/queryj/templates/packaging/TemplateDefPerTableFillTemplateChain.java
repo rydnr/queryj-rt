@@ -79,7 +79,7 @@ public class TemplateDefPerTableFillTemplateChain
     extends AbstractFillTemplateChain<TemplateDefPerTableTemplateContext>
 {
     /**
-     * Creates a {@link PerTableFillTemplateChain} using given context.
+     * Creates a {@code TemplateDefPerTableFillTemplateChain} using given context.
      * @param context the {@link org.acmsl.queryj.api.PerTableTemplateContext context}.
      */
     public TemplateDefPerTableFillTemplateChain(@NotNull final TemplateDefPerTableTemplateContext context)
