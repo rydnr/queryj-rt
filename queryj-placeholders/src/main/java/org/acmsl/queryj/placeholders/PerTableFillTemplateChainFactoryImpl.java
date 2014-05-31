@@ -1,5 +1,5 @@
 /*
-                        QueryJ
+                        QueryJ Placeholders
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -36,7 +36,7 @@
 package org.acmsl.queryj.placeholders;
 
 /*
- * Importing queryj-core classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.api.PerTableTemplateContext;
 import org.acmsl.queryj.api.FillTemplateChain;
