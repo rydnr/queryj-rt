@@ -103,6 +103,7 @@ public class TemplateDefHandler
         @Nullable final result;
 
         if (context instanceof DefaultTemplatePackagingContext)
-        return new DecoratedTemplateDefWrapper(context.getTemplateDef());
+        {
+            result = new DecoratedTemplateDefWrapper((context.getTemplateDef());
     }
 }
