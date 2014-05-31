@@ -64,7 +64,7 @@ public class TemplateDefPerTableFillTemplateChainFactoryImpl
     /**
      * Creates {@link org.acmsl.queryj.api.FillTemplateChain} instances for given context.
      * @param context the {@link org.acmsl.queryj.api.PerTableTemplateContext} needed.
-     * @return the FillTemplateChain, or <code>null</code> if the context is invalid.
+     * @return the FillTemplateChain, or {@code null} if the context is invalid.
      */
     @Nullable
     @Override
