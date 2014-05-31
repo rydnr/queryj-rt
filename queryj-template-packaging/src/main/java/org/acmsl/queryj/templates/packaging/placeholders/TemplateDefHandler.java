@@ -100,10 +100,11 @@ public class TemplateDefHandler
     @Override
     protected TemplateDef<DecoratedString> getValue(@NotNull final TemplateContext context)
     {
-        @Nullable final result;
+        @Nullable final TemplateDef<DecoratedString> result;
 
         if (context instanceof DefaultTemplatePackagingContext)
         {
             result = new DecoratedTemplateDefWrapper((DefaultTemplatePackagingContext context).getTemplateDef());
+
     }
 }
