@@ -55,8 +55,8 @@ import org.jetbrains.annotations.Nullable;
  * Created: 2013/06/08
  */
 @SuppressWarnings("unused")
-public class PerTableFillTemplateChainFactoryImpl
-    implements PerTableFillTemplateChainFactory
+public class PerTableFillTemplateChainFactoryImpl<C extends PerTableTemplateContext>
+    implements PerTableFillTemplateChainFactory<C>
 {
     /**
      * Creates {@link FillTemplateChain} instances for given context.
@@ -65,8 +65,8 @@ public class PerTableFillTemplateChainFactoryImpl
      */
     @Nullable
     @Override
-    public FillTemplateChain<PerTableTemplateContext> createFillChain(
-        @NotNull final PerTableTemplateContext context)
+    public FillTemplateChain<C> createFillChain(
+        @NotNull final C context)
     {
         return
             new FillTemplateChainWrapper<>(
