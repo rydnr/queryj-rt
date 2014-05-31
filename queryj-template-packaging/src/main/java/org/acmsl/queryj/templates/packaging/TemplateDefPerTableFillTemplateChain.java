@@ -38,15 +38,19 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.FillTemplateChain;
 import org.acmsl.queryj.api.PerTableTemplateContext;
 import org.acmsl.queryj.api.TemplateContext;
+import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+
+import java.util.List;
 
 /**
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
@@ -62,5 +66,42 @@ public class TemplateDefPerTableFillTemplateChain
         super(context);
     }
 
+    /**
+     * Retrieves the handlers.
+     *
+     * @return such handlers.
+     */
+    @NotNull
+    @Override
+    public List<?> getHandlers()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
 
+    /**
+     * Retrieves the template context.
+     *
+     * @return such information.
+     */
+    @NotNull
+    @Override
+    public TemplateDefPerTableTemplateContext getTemplateContext()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
+     * Performs the required processing.
+     *
+     * @param relevantOnly to include only the relevant ones: the ones that are necessary to
+     *                     be able to find out if two template realizations are equivalent. Usually,
+     *                     generation timestamps,
+     *                     documentation, etc. can be considered not relevant.
+     */
+    @NotNull
+    @Override
+    public QueryJCommand providePlaceholders(final boolean relevantOnly) throws QueryJBuildException
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
 }
