@@ -60,8 +60,8 @@ public class PerTableFillTemplateChainFactoryImpl<C extends PerTableTemplateCont
 {
     /**
      * Creates {@link FillTemplateChain} instances for given context.
-     * @param context the {@link org.acmsl.queryj.api.PerTableTemplateContext} needed.
-     * @return the FillTemplateChain, or <code>null</code> if the context is invalid.
+     * @param context the {@link PerTableTemplateContext} needed.
+     * @return the FillTemplateChain, or {@code null} if the context is invalid.
      */
     @Nullable
     @Override
