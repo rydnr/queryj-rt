@@ -36,11 +36,16 @@
 package org.acmsl.queryj.templates.packaging.placeholders;
 
 /*
- * Importing QueryJ Template Packaging classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.api.TemplateContext;
 import org.acmsl.queryj.metadata.DecoratedString;
+
+/*
+ * Importing QueryJ Template Packaging classes.
+ */
 import org.acmsl.queryj.templates.packaging.TemplateDef;
+import org.acmsl.queryj.templates.packaging.TemplateDefTemplateContext;
 
 /*
  * Importing QueryJ-Placeholder classes.
@@ -49,9 +54,6 @@ import org.acmsl.queryj.placeholders.AbstractTemplateContextFillHandler;
 /*
  * Importing JetBrains annotations.
  */
-import org.acmsl.queryj.templates.packaging.TemplateDefPerTableTemplateContext;
-import org.acmsl.queryj.templates.packaging.TemplateDefTemplateContext;
-import org.acmsl.queryj.templates.packaging.TemplatePackagingContext;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
