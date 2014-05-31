@@ -80,7 +80,7 @@ public class TemplateDefPerTableFillTemplateChain
 {
     /**
      * Creates a {@code TemplateDefPerTableFillTemplateChain} using given context.
-     * @param context the {@link org.acmsl.queryj.api.PerTableTemplateContext context}.
+     * @param context the {@link TemplateDefPerTableTemplateContext context}.
      */
     public TemplateDefPerTableFillTemplateChain(@NotNull final TemplateDefPerTableTemplateContext context)
     {
