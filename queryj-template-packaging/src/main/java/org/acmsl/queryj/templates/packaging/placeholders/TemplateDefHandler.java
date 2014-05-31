@@ -69,8 +69,8 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2013/09/02 07:20
  */
 @ThreadSafe
-public class TemplateDefHandler
-    extends AbstractTemplateContextFillHandler<TemplateContext, TemplateDef<DecoratedString>>
+public class TemplateDefHandler<C extends TemplateContext>
+    extends AbstractTemplateContextFillHandler<C, TemplateDef<DecoratedString>>
 {
     /**
      * The serial version id.
