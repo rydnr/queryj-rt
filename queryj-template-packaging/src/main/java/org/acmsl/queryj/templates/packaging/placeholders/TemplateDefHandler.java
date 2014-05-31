@@ -64,6 +64,7 @@ import org.checkthread.annotations.ThreadSafe;
 
 /**
  * Handler to resolve "templateDef" placeholder in templates.
+ * @param <C> the context type.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2013/09/02 07:20
@@ -81,7 +82,7 @@ public class TemplateDefHandler<C extends TemplateContext>
      * Creates a new instance.
      * @param context the context.
      */
-    public TemplateDefHandler(@NotNull final TemplateContext context)
+    public TemplateDefHandler(@NotNull final C context)
     {
         super(context);
     }
@@ -102,7 +103,7 @@ public class TemplateDefHandler<C extends TemplateContext>
      */
     @Nullable
     @Override
-    protected TemplateDef<DecoratedString> getValue(@NotNull final TemplateContext context)
+    protected TemplateDef<DecoratedString> getValue(@NotNull final C context)
     {
         @Nullable final TemplateDef<DecoratedString> result;
 
