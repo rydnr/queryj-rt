@@ -46,6 +46,7 @@ import org.acmsl.queryj.api.TemplateContext;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.api.handlers.TemplateContextFillAdapterHandler;
 import org.acmsl.queryj.api.handlers.fillhandlers.FillHandler;
+import org.acmsl.queryj.placeholders.BasePerTableFillTemplateChain;
 import org.acmsl.queryj.placeholders.CustomResultsHandler;
 import org.acmsl.queryj.placeholders.DAOClassNameHandler;
 import org.acmsl.queryj.placeholders.DAOFactoryClassNameHandler;
@@ -77,7 +78,7 @@ import java.util.List;
  */
 @ThreadSafe
 public class TemplateDefPerTableFillTemplateChain
-    extends AbstractFillTemplateChain<TemplateDefPerTableTemplateContext>
+    extends BasePerTableFillTemplateChain
 {
     /**
      * Creates a {@code TemplateDefPerTableFillTemplateChain} using given context.
