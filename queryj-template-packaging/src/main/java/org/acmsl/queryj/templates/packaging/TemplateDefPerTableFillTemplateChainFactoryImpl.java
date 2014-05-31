@@ -73,6 +73,6 @@ public class TemplateDefPerTableFillTemplateChainFactoryImpl
     {
         return
             new FillTemplateChainWrapper<>(
-                new BasePerTableFillTemplateChain(context));
+                new TemplateDefPerTableFillTemplateChain(context));
     }
 }
