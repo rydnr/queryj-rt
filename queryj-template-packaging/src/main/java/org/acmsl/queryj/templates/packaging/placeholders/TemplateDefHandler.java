@@ -67,6 +67,9 @@ import org.checkthread.annotations.ThreadSafe;
 public class TemplateDefHandler
     extends AbstractTemplateContextFillHandler<DefaultTemplatePackagingContext, TemplateDef<DecoratedString>>
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = 6682126485145582404L;
 
     /**
