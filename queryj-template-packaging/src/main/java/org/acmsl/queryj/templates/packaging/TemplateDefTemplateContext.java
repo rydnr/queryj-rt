@@ -38,6 +38,7 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.queryj.api.QueryJTemplateContext;
 import org.acmsl.queryj.api.TemplateContext;
 
 /*
@@ -58,7 +59,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public interface TemplateDefTemplateContext
-    extends TemplateContext
+    extends QueryJTemplateContext
 {
     /**
      * Retrieves the {@link TemplateDef}.
