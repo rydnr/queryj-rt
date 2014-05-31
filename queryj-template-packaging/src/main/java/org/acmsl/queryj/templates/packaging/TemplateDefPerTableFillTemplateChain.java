@@ -105,7 +105,7 @@ public class TemplateDefPerTableFillTemplateChain
      */
     @NotNull
     @Override
-    protected List<FillHandler<?>> getHandlers(@NotNull final PerTableTemplateContext context)
+    protected List<FillHandler<?>> getHandlers(@NotNull final TemplateDefPerTableTemplateContext context)
     {
         @NotNull final List<FillHandler<?>> result = new ArrayList<>(12);
 
