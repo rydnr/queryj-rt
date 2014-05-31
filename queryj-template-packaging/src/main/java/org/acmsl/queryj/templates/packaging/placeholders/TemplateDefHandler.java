@@ -105,11 +105,11 @@ public class TemplateDefHandler
 
         if (context instanceof DefaultTemplatePackagingContext)
         {
-            result = new DecoratedTemplateDefWrapper((DefaultTemplatePackagingContext context).getTemplateDef());
+            result = new DecoratedTemplateDefWrapper(((DefaultTemplatePackagingContext) context).getTemplateDef());
         }
         else if (context instanceof TemplateDefPerTableTemplateContext)
         {
-            result = new DecoratedTemplateDefWrapper((TemplateDefPerTableTemplateContext context).getTemplateDef());
+            result = new DecoratedTemplateDefWrapper(((TemplateDefPerTableTemplateContext) context).getTemplateDef());
         }
     }
 }
