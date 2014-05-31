@@ -79,7 +79,7 @@ public class QueryJVersionHandlerTest
             EasyMock.createNiceMock(PerTableTemplateContext.class);
 
         @NotNull final QueryJVersionHandler instance =
-            new QueryJVersionHandler(t_Context);
+            new QueryJVersionHandler<>(t_Context);
 
         Assert.assertEquals("version", instance.getPlaceHolder());
     }
