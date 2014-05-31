@@ -59,6 +59,7 @@ import org.acmsl.queryj.placeholders.TableAttributeTypeImportsHandler;
 import org.acmsl.queryj.placeholders.TableHandler;
 import org.acmsl.queryj.placeholders.TableNameHandler;
 import org.acmsl.queryj.placeholders.ValueObjectNameHandler;
+import org.acmsl.queryj.templates.packaging.placeholders.TemplateDefHandler;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -111,7 +112,7 @@ public class TemplateDefPerTableFillTemplateChain
 
         result.add(
             new TemplateContextFillAdapterHandler<>(
-                new CustomResultsHandler(context)));
+                new TemplateDefHandler(context)));
 
         result.add(
             new TemplateContextFillAdapterHandler<>(
