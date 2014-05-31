@@ -78,7 +78,7 @@ import java.util.List;
  */
 @ThreadSafe
 public class TemplateDefPerTableFillTemplateChain
-    extends BasePerTableFillTemplateChain
+    extends BasePerTableFillTemplateChain<TemplateDefPerTableTemplateContext>
 {
     /**
      * Creates a {@code TemplateDefPerTableFillTemplateChain} using given context.
