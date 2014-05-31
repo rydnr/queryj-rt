@@ -38,6 +38,10 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.api.FillTemplateChain;
+import org.acmsl.queryj.api.PerTableTemplateContext;
+import org.acmsl.queryj.placeholders.BasePerTableFillTemplateChain;
+import org.acmsl.queryj.placeholders.FillTemplateChainWrapper;
 import org.acmsl.queryj.placeholders.PerTableFillTemplateChainFactoryImpl;
 import org.jetbrains.annotations.NotNull;
 
@@ -45,6 +49,7 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
 
 /**
  *
@@ -56,4 +61,18 @@ import org.checkthread.annotations.ThreadSafe;
 public class TemplateDefPerTableFillTemplateChainFactoryImpl
     extends PerTableFillTemplateChainFactoryImpl
 {
+    /**
+     * Creates {@link org.acmsl.queryj.api.FillTemplateChain} instances for given context.
+     * @param context the {@link org.acmsl.queryj.api.PerTableTemplateContext} needed.
+     * @return the FillTemplateChain, or <code>null</code> if the context is invalid.
+     */
+    @Nullable
+    @Override
+    public FillTemplateChain<PerTableTemplateContext> createFillChain(
+        @NotNull final PerTableTemplateContext context)
+    {
+        return
+            new FillTemplateChainWrapper<>(
+                new BasePerTableFillTemplateChain(context));
+    }
 }
