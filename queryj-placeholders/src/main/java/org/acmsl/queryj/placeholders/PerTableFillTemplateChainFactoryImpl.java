@@ -70,6 +70,6 @@ public class PerTableFillTemplateChainFactoryImpl
     {
         return
             new FillTemplateChainWrapper<PerTableTemplateContext>(
-                new BasePerTableFillTemplateChain(context));
+                new BasePerTableFillTemplateChain<PerTableTemplateContext>(context));
     }
 }
