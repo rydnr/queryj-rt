@@ -81,7 +81,7 @@ public class QueryJVersionHandlerTest
         @NotNull final QueryJVersionHandler instance =
             new QueryJVersionHandler<>(t_Context);
 
-        Assert.assertEquals(Literals"version", instance.getPlaceHolder());
+        Assert.assertEquals("version", instance.getPlaceHolder());
     }
 
     /**
