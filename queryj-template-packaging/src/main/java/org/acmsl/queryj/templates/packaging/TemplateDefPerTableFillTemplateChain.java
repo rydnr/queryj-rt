@@ -39,10 +39,26 @@ package org.acmsl.queryj.templates.packaging;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.api.AbstractFillTemplateChain;
 import org.acmsl.queryj.api.FillTemplateChain;
 import org.acmsl.queryj.api.PerTableTemplateContext;
 import org.acmsl.queryj.api.TemplateContext;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.api.handlers.TemplateContextFillAdapterHandler;
+import org.acmsl.queryj.api.handlers.fillhandlers.FillHandler;
+import org.acmsl.queryj.placeholders.CustomResultsHandler;
+import org.acmsl.queryj.placeholders.DAOClassNameHandler;
+import org.acmsl.queryj.placeholders.DAOFactoryClassNameHandler;
+import org.acmsl.queryj.placeholders.DAOImplementationClassNameHandler;
+import org.acmsl.queryj.placeholders.FillTemplateChainWrapper;
+import org.acmsl.queryj.placeholders.ForeignKeyListHandler;
+import org.acmsl.queryj.placeholders.NonPrimaryKeyAttributesHandler;
+import org.acmsl.queryj.placeholders.PrimaryKeyHandler;
+import org.acmsl.queryj.placeholders.StaticValuesHandler;
+import org.acmsl.queryj.placeholders.TableAttributeTypeImportsHandler;
+import org.acmsl.queryj.placeholders.TableHandler;
+import org.acmsl.queryj.placeholders.TableNameHandler;
+import org.acmsl.queryj.placeholders.ValueObjectNameHandler;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -50,6 +66,7 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -59,49 +76,87 @@ import java.util.List;
  */
 @ThreadSafe
 public class TemplateDefPerTableFillTemplateChain
-    implements FillTemplateChain<TemplateDefPerTableTemplateContext>
+    extends AbstractFillTemplateChain<TemplateDefPerTableTemplateContext>
 {
-    public TemplateDefPerTableFillTemplateChain(final TemplateDefPerTableTemplateContext context)
+    /**
+     * Creates a {@link PerTableFillTemplateChain} using given context.
+     * @param context the {@link org.acmsl.queryj.api.PerTableTemplateContext context}.
+     */
+    public TemplateDefPerTableFillTemplateChain(@NotNull final TemplateDefPerTableTemplateContext context)
     {
         super(context);
     }
 
     /**
-     * Retrieves the handlers.
-     *
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public QueryJCommand providePlaceholders(final boolean relevantOnly)
+        throws QueryJBuildException
+    {
+        return new FillTemplateChainWrapper<>(this).providePlaceholders(relevantOnly);
+    }
+
+    /**
+     * Retrieves the additional per-table handlers.
+     * @param context the {@link org.acmsl.queryj.api.PerTableTemplateContext context}.
      * @return such handlers.
      */
     @NotNull
     @Override
-    public List<?> getHandlers()
+    protected List<FillHandler<?>> getHandlers(@NotNull final PerTableTemplateContext context)
     {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
-    }
+        @NotNull final List<FillHandler<?>> result = new ArrayList<>(12);
 
-    /**
-     * Retrieves the template context.
-     *
-     * @return such information.
-     */
-    @NotNull
-    @Override
-    public TemplateDefPerTableTemplateContext getTemplateContext()
-    {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
-    }
+        result.add(
+            new TemplateContextFillAdapterHandler<>(
+                new CustomResultsHandler(context)));
 
-    /**
-     * Performs the required processing.
-     *
-     * @param relevantOnly to include only the relevant ones: the ones that are necessary to
-     *                     be able to find out if two template realizations are equivalent. Usually,
-     *                     generation timestamps,
-     *                     documentation, etc. can be considered not relevant.
-     */
-    @NotNull
-    @Override
-    public QueryJCommand providePlaceholders(final boolean relevantOnly) throws QueryJBuildException
-    {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        result.add(
+            new TemplateContextFillAdapterHandler<>(
+                new DAOClassNameHandler(context)));
+
+        result.add(
+            new TemplateContextFillAdapterHandler<>(
+                new DAOImplementationClassNameHandler(context)));
+
+        result.add(
+            new TemplateContextFillAdapterHandler<>(
+                new DAOFactoryClassNameHandler(context)));
+
+        result.add(
+            new TemplateContextFillAdapterHandler<>(
+                new ForeignKeyListHandler(context)));
+
+        result.add(
+            new TemplateContextFillAdapterHandler<>(
+                new NonPrimaryKeyAttributesHandler(context)));
+
+        result.add(
+            new TemplateContextFillAdapterHandler<>(
+                new PrimaryKeyHandler(context)));
+
+        result.add(
+            new TemplateContextFillAdapterHandler<>(
+                new TableHandler(context)));
+
+        result.add(
+            new TemplateContextFillAdapterHandler<>(
+                new TableNameHandler(context)));
+
+        result.add(
+            new TemplateContextFillAdapterHandler<>(
+                new ValueObjectNameHandler(context)));
+
+        result.add(
+            new TemplateContextFillAdapterHandler<>(
+                new TableAttributeTypeImportsHandler(context)));
+
+        result.add(
+            new TemplateContextFillAdapterHandler<>(
+                new StaticValuesHandler(context)));
+
+        return result;
     }
 }
