@@ -70,7 +70,7 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2012/06/03
  */
 @ThreadSafe
-public class BasePerTableFillTemplateChain
+public class BasePerTableFillTemplateChain<C>
     extends AbstractFillTemplateChain<PerTableTemplateContext>
 {
     /**
