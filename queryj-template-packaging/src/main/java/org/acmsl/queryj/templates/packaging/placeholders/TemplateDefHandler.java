@@ -51,6 +51,7 @@ import org.acmsl.queryj.placeholders.AbstractTemplateContextFillHandler;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.templates.packaging.TemplateDefPerTableTemplateContext;
+import org.acmsl.queryj.templates.packaging.TemplateDefTemplateContext;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -103,7 +104,7 @@ public class TemplateDefHandler
     {
         @Nullable final TemplateDef<DecoratedString> result;
 
-        if (context instanceof DefaultTemplatePackagingContext)
+        if (context instanceof TemplateDefTemplateContext)
         {
             result = new DecoratedTemplateDefWrapper(((DefaultTemplatePackagingContext) context).getTemplateDef());
         }
