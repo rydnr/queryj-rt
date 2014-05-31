@@ -65,7 +65,7 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 /*
- * Importing JetBrains annotations.
+ * Importing JDK classes.
  */
 import java.util.ArrayList;
 import java.util.List;
