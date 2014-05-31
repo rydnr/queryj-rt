@@ -77,8 +77,8 @@ public class TemplateDefPerTableFillTemplateChainFactoryImpl
      */
     @Nullable
     @Override
-    public FillTemplateChain<PerTableTemplateContext> createFillChain(
-        @NotNull final PerTableTemplateContext context)
+    public FillTemplateChain<TemplateDefPerTableTemplateContext> createFillChain(
+        @NotNull final TemplateDefPerTableTemplateContext context)
     {
         return
             new FillTemplateChainWrapper<>(
