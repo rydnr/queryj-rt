@@ -1,5 +1,5 @@
 /*
-                        queryj
+                        QueryJ Template Packaging
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -27,7 +27,8 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Creates the chain to provide all per-table placeholders, with
+ *              access to the TemplateDef information.
  *
  * Date: 2014/05/31
  * Time: 08:35
@@ -36,24 +37,31 @@
 package org.acmsl.queryj.templates.packaging;
 
 /*
- * Importing JetBrains annotations.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.api.FillTemplateChain;
 import org.acmsl.queryj.api.PerTableTemplateContext;
-import org.acmsl.queryj.placeholders.BasePerTableFillTemplateChain;
+
+/*
+ * Importing QueryJ Placeholders classes.
+ */
 import org.acmsl.queryj.placeholders.FillTemplateChainWrapper;
 import org.acmsl.queryj.placeholders.PerTableFillTemplateChainFactoryImpl;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * Creates the chain to provide all per-table placeholders, with access to the
- * {@link TemplateDef}.
+ * {@link TemplateDef} information.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/05/31 08:35
