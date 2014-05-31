@@ -36,21 +36,27 @@
 package org.acmsl.queryj.templates.packaging;
 
 /*
- * Importing JetBrains annotations.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.api.handlers.TemplateContextFillAdapterHandler;
 import org.acmsl.queryj.api.handlers.fillhandlers.FillHandler;
+
 /*
- * Importing JetBrains annotations.
+ * Importing QueryJ Placeholders.
  */
 import org.acmsl.queryj.placeholders.BasePerTableFillTemplateChain;
 import org.acmsl.queryj.placeholders.FillTemplateChainWrapper;
+
+/*
+ * Importing QueryJ Template Packaging classes.
+ */
+import org.acmsl.queryj.templates.packaging.placeholders.TemplateDefHandler;
+
 /*
  * Importing JetBrains annotations.
  */
-import org.acmsl.queryj.templates.packaging.placeholders.TemplateDefHandler;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -58,6 +64,9 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 
+/*
+ * Importing JetBrains annotations.
+ */
 import java.util.ArrayList;
 import java.util.List;
 
