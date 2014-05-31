@@ -69,6 +69,9 @@ import org.junit.Test;
 @ThreadSafe
 public class QueryJVersionHandlerTest
 {
+    /**
+     * Checks whether the handler returns the expected placeholder.
+     */
     @Test
     public void returns_the_expected_placeholder()
     {
@@ -81,6 +84,9 @@ public class QueryJVersionHandlerTest
         Assert.assertEquals("version", instance.getPlaceHolder());
     }
 
+    /**
+     * Checks whether the handler returns the expected value.
+     */
     @Test
     public void returns_the_expected_values()
         throws QueryJBuildException
