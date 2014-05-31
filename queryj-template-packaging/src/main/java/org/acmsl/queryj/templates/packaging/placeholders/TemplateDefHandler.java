@@ -38,6 +38,7 @@ package org.acmsl.queryj.templates.packaging.placeholders;
 /*
  * Importing QueryJ Template Packaging classes.
  */
+import org.acmsl.queryj.api.TemplateContext;
 import org.acmsl.queryj.metadata.DecoratedString;
 import org.acmsl.queryj.templates.packaging.DefaultTemplatePackagingContext;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
@@ -65,7 +66,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class TemplateDefHandler
-    extends AbstractTemplateContextFillHandler<DefaultTemplatePackagingContext, TemplateDef<DecoratedString>>
+    extends AbstractTemplateContextFillHandler<TemplateContext, TemplateDef<DecoratedString>>
 {
     /**
      * The serial version id.
@@ -76,7 +77,7 @@ public class TemplateDefHandler
      * Creates a new instance.
      * @param context the context.
      */
-    public TemplateDefHandler(@NotNull final DefaultTemplatePackagingContext context)
+    public TemplateDefHandler(@NotNull final TemplateContext context)
     {
         super(context);
     }
@@ -97,8 +98,9 @@ public class TemplateDefHandler
      */
     @Nullable
     @Override
-    protected TemplateDef<DecoratedString> getValue(@NotNull final DefaultTemplatePackagingContext context)
+    protected TemplateDef<DecoratedString> getValue(@NotNull final TemplateContext context)
     {
+        @Nullable final result
         return new DecoratedTemplateDefWrapper(context.getTemplateDef());
     }
 }
