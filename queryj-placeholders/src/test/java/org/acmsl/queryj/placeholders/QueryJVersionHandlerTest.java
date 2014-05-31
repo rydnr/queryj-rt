@@ -100,7 +100,7 @@ public class QueryJVersionHandlerTest
         EasyMock.replay(t_Context);
 
         @NotNull final QueryJVersionHandler<PerTableTemplateContext> instance =
-            new QueryJVersionHandler(t_Context);
+            new QueryJVersionHandler<>(t_Context);
 
         @Nullable final DecoratedString t_Value = instance.getValue();
 
