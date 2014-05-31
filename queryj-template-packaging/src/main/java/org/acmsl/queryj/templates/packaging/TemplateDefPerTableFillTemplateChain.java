@@ -39,27 +39,11 @@ package org.acmsl.queryj.templates.packaging;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.QueryJCommand;
-import org.acmsl.queryj.api.AbstractFillTemplateChain;
-import org.acmsl.queryj.api.FillTemplateChain;
-import org.acmsl.queryj.api.PerTableTemplateContext;
-import org.acmsl.queryj.api.TemplateContext;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.api.handlers.TemplateContextFillAdapterHandler;
 import org.acmsl.queryj.api.handlers.fillhandlers.FillHandler;
 import org.acmsl.queryj.placeholders.BasePerTableFillTemplateChain;
-import org.acmsl.queryj.placeholders.CustomResultsHandler;
-import org.acmsl.queryj.placeholders.DAOClassNameHandler;
-import org.acmsl.queryj.placeholders.DAOFactoryClassNameHandler;
-import org.acmsl.queryj.placeholders.DAOImplementationClassNameHandler;
 import org.acmsl.queryj.placeholders.FillTemplateChainWrapper;
-import org.acmsl.queryj.placeholders.ForeignKeyListHandler;
-import org.acmsl.queryj.placeholders.NonPrimaryKeyAttributesHandler;
-import org.acmsl.queryj.placeholders.PrimaryKeyHandler;
-import org.acmsl.queryj.placeholders.StaticValuesHandler;
-import org.acmsl.queryj.placeholders.TableAttributeTypeImportsHandler;
-import org.acmsl.queryj.placeholders.TableHandler;
-import org.acmsl.queryj.placeholders.TableNameHandler;
-import org.acmsl.queryj.placeholders.ValueObjectNameHandler;
 import org.acmsl.queryj.templates.packaging.placeholders.TemplateDefHandler;
 import org.jetbrains.annotations.NotNull;
 
