@@ -27,7 +27,8 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Builds the list of fill handlers to extend
+ *              BasePerTableFillTemplateChain's with TemplateDef-related ones.
  *
  * Date: 2014/05/31
  * Time: 08:39
@@ -72,7 +73,7 @@ import java.util.List;
 
 /**
  * Builds the list of fill handlers to extend {@link BasePerTableFillTemplateChain}'s
- * with {@link TemplateDef}-
+ * with {@link TemplateDef}-related ones.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/05/31 08:39
