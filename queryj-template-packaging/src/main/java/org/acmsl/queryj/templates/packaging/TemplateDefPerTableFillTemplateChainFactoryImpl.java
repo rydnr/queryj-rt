@@ -68,7 +68,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class TemplateDefPerTableFillTemplateChainFactoryImpl
-    extends PerTableFillTemplateChainFactoryImpl
+    extends PerTableFillTemplateChainFactoryImpl<TemplateDefPerTableTemplateContext>
 {
     /**
      * Creates {@link org.acmsl.queryj.api.FillTemplateChain} instances for given context.
