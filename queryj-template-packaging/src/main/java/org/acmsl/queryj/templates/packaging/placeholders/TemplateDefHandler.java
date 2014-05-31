@@ -105,6 +105,7 @@ public class TemplateDefHandler
         if (context instanceof DefaultTemplatePackagingContext)
         {
             result = new DecoratedTemplateDefWrapper((DefaultTemplatePackagingContext context).getTemplateDef());
-
+        }
+        else
     }
 }
