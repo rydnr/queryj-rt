@@ -44,6 +44,7 @@ import org.acmsl.queryj.metadata.DecoratedString;
 /*
  * Importing QueryJ Template Packaging classes.
  */
+import org.acmsl.queryj.templates.packaging.PerTemplateDefTemplateContext;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.acmsl.queryj.templates.packaging.TemplateDefTemplateContext;
 
@@ -111,7 +112,7 @@ public class TemplateDefHandler<C extends TemplateContext>
         {
             result = new DecoratedTemplateDefWrapper(((TemplateDefTemplateContext) context).getTemplateDef());
         }
-        else if (context instanceof TemplateDefTemplateContext)
+        else if (context instanceof PerTemplateDefTemplateContext)
         {
             result = new DecoratedTemplateDefWrapper(((TemplateDefTemplateContext) context).getTemplateDef());
         }
