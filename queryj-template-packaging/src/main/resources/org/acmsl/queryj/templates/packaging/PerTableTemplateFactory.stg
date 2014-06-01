@@ -148,7 +148,8 @@ public class <C.class_name>
         @NotNull final TemplateDef<def.type.capitalized>TemplateContext context,
         @NotNull final QueryJCommand command)
     {
-        @NotNull final String t_strFileName = retrieveTemplateFileName(tableName, context.getTemplateDef(), context.getMetadataManager());
+        @NotNull final String t_strFileName =
+        retrieveTemplateFileName(tableName, context.getTemplateDef(), context.getMetadataManager());
 
         context.setFileName(t_strFileName);
 
