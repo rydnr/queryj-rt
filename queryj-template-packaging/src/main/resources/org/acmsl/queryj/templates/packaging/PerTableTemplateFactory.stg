@@ -145,11 +145,10 @@ public class <C.class_name>
     public <def.name.noExtension>Template createTemplate(
         @NotNull final String tableName,
         @NotNull final List\<Row\<String\>> staticContents,
-        @NotNull final TemplateDef<def.type.capitalized>TemplateContext context,
+        @NotNull final <def.type.capitalized>TemplateContext context,
         @NotNull final QueryJCommand command)
     {
-        @NotNull final String t_strFileName =
-        retrieveTemplateFileName(tableName, context.getTemplateDef(), context.getMetadataManager());
+        @NotNull final String t_strFileName = retrieveTemplateFileName(tableName, context.getMetadataManager());
 
         context.setFileName(t_strFileName);
 
