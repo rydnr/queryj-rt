@@ -111,8 +111,7 @@ public class TemplateDefHandler<C extends TemplateContext>
         {
             result = new DecoratedTemplateDefWrapper(((TemplateDefTemplateContext) context).getTemplateDef());
         }
-        else
-        if (context instanceof TemplateDefTemplateContext)
+        else if (context instanceof TemplateDefTemplateContext)
         {
             result = new DecoratedTemplateDefWrapper(((TemplateDefTemplateContext) context).getTemplateDef());
         }
