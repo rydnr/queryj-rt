@@ -629,7 +629,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
             return
                   "{ \"new\": " + m__bNew
                 + ", \"class\": \"" + FinalizingThread.class.getSimpleName() + "\""
-                + ", \"package\": \"" + FinalizingThread.class.getPackage()}";
+                + ", \"package\": \"" + FinalizingThread.class.getPackage() + "\" }";
         }
     }
 
