@@ -76,8 +76,7 @@ import java.io.File;
 @ThreadSafe
 public  class DefaultTemplatePackagingContext
     extends AbstractTemplatePackagingContext
-    implements PerTemplateDefTemplateContext,
-               TemplateDefTemplateContext
+    implements PerTemplateDefTemplateContext
 {
     /**
      * The serial version id.
