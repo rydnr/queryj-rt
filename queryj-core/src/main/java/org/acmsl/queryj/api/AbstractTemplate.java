@@ -628,7 +628,8 @@ public abstract class AbstractTemplate<C extends TemplateContext>
         {
             return
                   "{ \"new\": " + m__bNew
-                + ", \"class\": \"" + FinalizingThread.class.getSimpleName() + "\" }";
+                + ", \"class\": \"" + FinalizingThread.class.getSimpleName() + "\""
+                + ", \"package\": \"}";
         }
     }
 
