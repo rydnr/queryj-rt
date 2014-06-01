@@ -77,7 +77,7 @@ import java.io.File;
 public  class DefaultTemplatePackagingContext
     extends AbstractTemplatePackagingContext
     implements PerTemplateDefTemplateContext,
-
+               TemplateDefTemplateContext
 {
     /**
      * The serial version id.
