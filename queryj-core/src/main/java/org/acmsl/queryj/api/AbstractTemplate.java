@@ -627,7 +627,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
         public String toString()
         {
             return
-                  "{ \"new\": " + m__bNew + "\"\"class\": \"" + FinalizingThread.class.getName() + "\""
+                  "{ \"new\": " + m__bNew + \"\"class\": \"" + FinalizingThread.class.getName() + "\""
                 + ",  }";
         }
     }
