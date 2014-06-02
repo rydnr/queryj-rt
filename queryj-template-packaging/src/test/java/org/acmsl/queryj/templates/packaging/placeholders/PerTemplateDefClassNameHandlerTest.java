@@ -105,6 +105,6 @@ public class PerTemplateDefClassNameHandlerTest
         @NotNull final PerTemplateDefClassNameHandler instance =
             new PerTemplateDefClassNameHandler(context);
 
-        Assert.assertEquals("DefNameTemplateName.java", );
+        Assert.assertEquals("DefNameTemplateName", instance.resolveContextValue());
     }
 }
