@@ -97,7 +97,7 @@ public class PerTemplateDefClassNameHandlerTest
             new DefaultTemplatePackagingContext(
                 "TemplateName",
                 "com.foo.bar",
-                "DefNameTemplateName",
+                "DefNameTemplateName.java",
                 outputDir,
                 templateDef,
                 command);
