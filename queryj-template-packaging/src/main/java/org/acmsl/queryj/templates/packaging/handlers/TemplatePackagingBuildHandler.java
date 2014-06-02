@@ -196,7 +196,7 @@ public abstract class TemplatePackagingBuildHandler
 
         switch (templateDef.getOutput())
         {
-            case TemplateDefOutput.JAVA:
+            case JAVA:
                 extension = ".java";
                 break;
 
