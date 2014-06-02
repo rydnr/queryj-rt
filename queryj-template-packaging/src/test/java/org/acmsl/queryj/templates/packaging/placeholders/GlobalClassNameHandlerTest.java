@@ -75,7 +75,7 @@ import java.util.HashMap;
 public class GlobalClassNameHandlerTest
 {
     /**
-     * Checks whether the class name is correct
+     * Checks whether the class name is
      * @throws Exception
      */
     @Test
