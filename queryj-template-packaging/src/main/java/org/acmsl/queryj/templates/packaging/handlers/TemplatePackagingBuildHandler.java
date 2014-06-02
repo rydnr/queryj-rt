@@ -192,7 +192,10 @@ public abstract class TemplatePackagingBuildHandler
     {
         @NotNull final String result;
 
-        switch (templateDef.getOutput()) templateDef.getOutput())
+        switch (templateDef.getOutput())
+        {
+            case
+        }
         @NotNull final String templateDefPart;
 
         @Nullable final File defFile = templateDef.getFile();
