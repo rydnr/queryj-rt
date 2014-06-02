@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for TemplatePackagingBuildHandler.
  *
  * Date: 2014/06/02
  * Time: 06:29
