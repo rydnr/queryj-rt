@@ -124,7 +124,7 @@ public class PerTemplateDefClassNameHandlerTest
 
     /**
      * Checks whether resolveContextValue() uses TemplateDef's name,
-     * if it's not null.
+     * if its file is null.
      */
     @Test
     public void resolveContextValue_uses_TemplateDef_name_if_file_not_available()
