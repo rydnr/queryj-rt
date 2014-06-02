@@ -46,7 +46,6 @@ import org.acmsl.queryj.templates.packaging.TemplateDefType;
 import org.acmsl.queryj.templates.packaging.TemplateFactoryTemplate;
 import org.acmsl.queryj.templates.packaging.TemplateFactoryTemplateFactory;
 
-import org.easymock.EasyMock;
 /*
  * Importing JetBrains annotations.
  */
@@ -55,6 +54,7 @@ import org.jetbrains.annotations.NotNull;
 /*
  * Importing JUnit classes.
  */
+import org.easymock.EasyMock;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
