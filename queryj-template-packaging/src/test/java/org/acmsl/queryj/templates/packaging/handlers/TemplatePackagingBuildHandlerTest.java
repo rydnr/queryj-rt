@@ -68,6 +68,9 @@ import java.util.HashMap;
 @RunWith(JUnit4.class)
 public class TemplatePackagingBuildHandlerTest
 {
+    /**
+     * Checks buildFileName() uses TemplateDef's file instead of
+     */
     @Test
     public void buildFileName_uses_templateDef_file()
     {
