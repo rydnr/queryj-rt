@@ -41,6 +41,7 @@ package org.acmsl.queryj.templates.packaging.handlers;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.handlers.TemplateBuildHandler;
+import org.acmsl.queryj.templates.packaging.TemplateDefOutput;
 import org.acmsl.queryj.tools.exceptions.MissingJdbcDriverAtRuntimeException;
 import org.acmsl.queryj.tools.exceptions.MissingJdbcPasswordAtRuntimeException;
 import org.acmsl.queryj.tools.exceptions.MissingJdbcUrlAtRuntimeException;
@@ -191,7 +192,7 @@ public abstract class TemplatePackagingBuildHandler
     {
         @NotNull final String result;
 
-        if ( templateDef.getOutput())
+        if (TemplateDefOutput.getEnumFromString() templateDef.getOutput())
         @NotNull final String templateDefPart;
 
         @Nullable final File defFile = templateDef.getFile();
