@@ -41,7 +41,7 @@ package org.acmsl.queryj.templates.packaging.placeholders;
 import org.acmsl.queryj.QueryJCommand;
 
 /*
- * Importing Query
+ * Importing Query Template Packaging
  */
 import org.acmsl.queryj.templates.packaging.DefaultTemplatePackagingContext;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
