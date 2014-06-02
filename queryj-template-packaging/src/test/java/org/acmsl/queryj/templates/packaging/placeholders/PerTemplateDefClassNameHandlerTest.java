@@ -57,7 +57,7 @@ import org.junit.runners.JUnit4;
 public class PerTemplateDefClassNameHandlerTest
 {
     /**
-     * Checks whether
+     * Checks whether resolveContextValue() uses TemplateDef
      */
     @Test
     public void resolveContextValue_uses_TemplateDef_file_if_available()
