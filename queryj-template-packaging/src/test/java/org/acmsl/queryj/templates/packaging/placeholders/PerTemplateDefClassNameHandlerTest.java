@@ -38,6 +38,7 @@ package org.acmsl.queryj.templates.packaging.placeholders;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 
 /*
@@ -52,6 +53,7 @@ import org.acmsl.queryj.templates.packaging.TemplateDefType;
 /*
  * Importing JetBrains annotations.
  */
+import org.apache.commons.configuration.PropertiesConfiguration;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -102,7 +104,8 @@ public class PerTemplateDefClassNameHandlerTest
                 false);
 
         @NotNull final File outputDir = EasyMock.createNiceMock(File.class);
-        @NotNull final QueryJCommand command = EasyMock.createNiceMock(QueryJCommand.class);
+        @NotNull final QueryJCommand command =
+            new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
 
         @NotNull final DefaultTemplatePackagingContext context =
             new DefaultTemplatePackagingContext(
