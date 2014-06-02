@@ -41,7 +41,7 @@ package org.acmsl.queryj.templates.packaging.placeholders;
 import org.acmsl.queryj.QueryJCommand;
 
 /*
- * Importing JetBrains annotations.
+ * Importing Query
  */
 import org.acmsl.queryj.templates.packaging.DefaultTemplatePackagingContext;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
