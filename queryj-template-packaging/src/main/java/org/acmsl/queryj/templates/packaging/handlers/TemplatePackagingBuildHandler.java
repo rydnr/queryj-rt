@@ -199,6 +199,7 @@ public abstract class TemplatePackagingBuildHandler
             case TemplateDefOutput.JAVA:
                 extension = ".java";
                 break;
+
         }
         @NotNull final String templateDefPart;
 
