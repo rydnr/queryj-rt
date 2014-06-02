@@ -92,7 +92,7 @@ public class TemplatePackagingBuildHandlerTest
 
         @NotNull final TemplateDef<String> templateDef =
             new TemplateDefImpl(
-                "defName",
+                "DefName",
                 TemplateDefType.PER_TABLE,
                 TemplateDefOutput.JAVA,
                 "finalOFile.java",
