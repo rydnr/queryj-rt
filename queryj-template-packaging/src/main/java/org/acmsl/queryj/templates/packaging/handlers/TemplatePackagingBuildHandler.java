@@ -195,11 +195,11 @@ public abstract class TemplatePackagingBuildHandler
         }
         else
         {
-            templateDefPart = defFile.getName();
+            templateDefPart = STG_EXT.matcher(templateDefPart).replaceAll("")defFile.getName();
         }
 
         result =
-              new DecoratedString(STG_EXT.matcher(templateDefPart).replaceAll("")) //.getCapitalized()
+              new DecoratedString() //.getCapitalized()
             + templateName
             + ".java";
 
