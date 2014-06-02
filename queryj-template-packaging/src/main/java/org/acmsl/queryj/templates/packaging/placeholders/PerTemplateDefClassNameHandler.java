@@ -80,6 +80,9 @@ public class PerTemplateDefClassNameHandler
     @NotNull
     public static final Pattern STG_EXT = Pattern.compile("\\.stg$");
 
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = 7668827891857653722L;
 
     /**
