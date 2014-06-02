@@ -123,7 +123,7 @@ public class TemplatePackagingBuildHandlerTest
                 TemplateDefOutput.JAVA,
                 "finalOFile.java",
                 "com.foo.bar",
-                file,
+                null,
                 new HashMap<>(0),
                 false,
                 false);
