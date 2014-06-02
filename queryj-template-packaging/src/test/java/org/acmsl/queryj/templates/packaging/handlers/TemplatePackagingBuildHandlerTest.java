@@ -52,7 +52,7 @@ import org.acmsl.queryj.templates.packaging.TemplateFactoryTemplateFactory;
 import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing JUnit classes.
+ * Importing JUnit/EasyMock classes.
  */
 import org.easymock.EasyMock;
 import org.junit.Test;
