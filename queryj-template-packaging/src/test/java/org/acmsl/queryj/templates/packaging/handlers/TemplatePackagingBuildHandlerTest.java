@@ -41,6 +41,7 @@ package org.acmsl.queryj.templates.packaging.handlers;
 import org.acmsl.queryj.templates.packaging.DefaultTemplatePackagingContext;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.acmsl.queryj.templates.packaging.TemplateDefImpl;
+import org.acmsl.queryj.templates.packaging.TemplateDefOutput;
 import org.acmsl.queryj.templates.packaging.TemplateDefType;
 import org.acmsl.queryj.templates.packaging.TemplateFactoryTemplate;
 import org.acmsl.queryj.templates.packaging.TemplateFactoryTemplateFactory;
@@ -82,6 +83,7 @@ public class TemplatePackagingBuildHandlerTest
             new TemplateDefImpl(
                 "defName",
                 TemplateDefType.PER_TABLE,
+                TemplateDefOutput.JAVA,
                 "finalOFile.java",
                 "com.foo.bar",
                 file,
