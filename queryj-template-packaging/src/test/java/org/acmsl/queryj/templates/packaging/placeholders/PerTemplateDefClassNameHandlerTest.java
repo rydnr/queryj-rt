@@ -136,7 +136,7 @@ public class PerTemplateDefClassNameHandlerTest
                 TemplateDefOutput.JAVA,
                 "FinalFile.java",
                 "com.foo.bar",
-                file,
+                null,
                 new HashMap<>(0),
                 false,
                 false);
