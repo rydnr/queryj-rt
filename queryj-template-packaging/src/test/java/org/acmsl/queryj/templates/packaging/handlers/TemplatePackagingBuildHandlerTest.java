@@ -73,7 +73,7 @@ public class TemplatePackagingBuildHandlerTest
                 DefaultTemplatePackagingContext> instance =
             new TemplateFactoryTemplateBuildHandler();
 
-        @NotNull final File file = EasyMock.createNiceMock(File.cl)
+        @NotNull final File file = EasyMock.createNiceMock(File.class)
         @NotNull final TemplateDef<String> templateDef =
             new TemplateDefImpl(
                 "defName",
