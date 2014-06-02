@@ -44,7 +44,6 @@ import org.acmsl.queryj.metadata.DecoratedString;
  * Importing QueryJ Template Packaging classes.
  */
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
-import org.easymock.EasyMock;
 
 /*
  * Importing JetBrains annotations.
