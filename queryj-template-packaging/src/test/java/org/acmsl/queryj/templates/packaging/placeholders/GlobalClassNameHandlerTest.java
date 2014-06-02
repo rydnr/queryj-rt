@@ -41,15 +41,6 @@ package org.acmsl.queryj.templates.packaging.placeholders;
 import org.acmsl.queryj.metadata.DecoratedString;
 import org.acmsl.queryj.templates.packaging.DefaultTemplatePackagingContext;
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
-import org.acmsl.queryj.templates.packaging.TemplateDef;
-import org.acmsl.queryj.templates.packaging.TemplateDefImpl;
-import org.acmsl.queryj.templates.packaging.TemplateDefOutput;
-import org.acmsl.queryj.templates.packaging.TemplateDefType;
-import org.acmsl.queryj.templates.packaging.TemplateFactoryTemplate;
-import org.acmsl.queryj.templates.packaging.TemplateFactoryTemplateFactory;
-import org.acmsl.queryj.templates.packaging.handlers.TemplateFactoryTemplateBuildHandler;
-import org.acmsl.queryj.templates.packaging.handlers.TemplatePackagingBuildHandler;
-import org.antlr.v4.codegen.model.TestSetInline;
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
