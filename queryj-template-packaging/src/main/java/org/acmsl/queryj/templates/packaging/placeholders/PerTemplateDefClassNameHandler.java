@@ -75,7 +75,7 @@ public class PerTemplateDefClassNameHandler
     extends AbstractDecoratedStringHandler<DefaultTemplatePackagingContext>
 {
     /**
-     * The
+     * The regex to remove the trailing .stg extension.
      */
     @NotNull
     public static final Pattern STG_EXT = Pattern.compile("\\.stg$");
