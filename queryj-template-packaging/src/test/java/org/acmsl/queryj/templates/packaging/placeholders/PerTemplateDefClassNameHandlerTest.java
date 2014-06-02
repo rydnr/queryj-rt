@@ -39,6 +39,11 @@ package org.acmsl.queryj.templates.packaging.placeholders;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.templates.packaging.DefaultTemplatePackagingContext;
+import org.acmsl.queryj.templates.packaging.TemplateDef;
+import org.acmsl.queryj.templates.packaging.TemplateDefImpl;
+import org.acmsl.queryj.templates.packaging.TemplateDefOutput;
+import org.acmsl.queryj.templates.packaging.TemplateDefType;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -47,6 +52,9 @@ import org.jetbrains.annotations.NotNull;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+
+import java.io.File;
+import java.util.HashMap;
 
 /**
  * Tests for {@link PerTemplateDefClassNameHandler}.
@@ -64,6 +72,21 @@ public class PerTemplateDefClassNameHandlerTest
     @Test
     public void resolveContextValue_uses_TemplateDef_file_if_available()
     {
+        @NotNull final File file = EasyMock.createNiceMock(File.class);
+        EasyMock.expect(file.getName()).andReturn("DefFileName.stg.def");
+        EasyMock.replay(file);
+
+        @NotNull final TemplateDef<String> templateDef =
+            new TemplateDefImpl(
+                "DefName",
+                TemplateDefType.PER_TABLE,
+                TemplateDefOutput.JAVA,
+                "finalOFile.java",
+                "com.foo.bar",
+                file,
+                new HashMap<>(0),
+                false,
+                false);
         @NotNull final DefaultTemplatePackagingContext context =
             new DefaultTemplatePackagingContext();
 
