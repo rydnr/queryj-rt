@@ -41,7 +41,7 @@ package org.acmsl.queryj.templates.packaging.placeholders;
 import org.acmsl.queryj.metadata.DecoratedString;
 
 /*
- * Importing QueryJ Core classes.
+ * Importing QueryJ Template Packaging classes.
  */
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
 import org.easymock.EasyMock;
