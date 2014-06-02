@@ -69,7 +69,7 @@ import java.util.HashMap;
 public class TemplatePackagingBuildHandlerTest
 {
     /**
-     * Checks buildFileName() uses TemplateDef's file instead of
+     * Checks buildFileName() uses TemplateDef's file instead of its name, if available.
      */
     @Test
     public void buildFileName_uses_templateDef_file()
