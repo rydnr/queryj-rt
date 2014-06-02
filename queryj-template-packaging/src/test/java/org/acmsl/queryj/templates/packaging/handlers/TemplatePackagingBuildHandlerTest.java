@@ -59,8 +59,8 @@ public class TemplatePackagingBuildHandlerTest
     @Test
     public void buildFileName_uses_templateDef_file()
     {
-        @NotNull final TemplatePackagingBuildHandler instance =
-            new TemplateFactoryTemplateBuildHandler()
+        @NotNull final TemplatePackagingBuildHandler<> instance =
+            new TemplateFactoryTemplateBuildHandler();
 
     }
 }
