@@ -79,6 +79,8 @@ public class TemplatePackagingBuildHandlerTest
                 "finalOFile.java",
                 "com.foo.bar",
                 file,
-                new HashMap<>(0))
+                new HashMap<>(0),
+                false,
+                false);
     }
 }
