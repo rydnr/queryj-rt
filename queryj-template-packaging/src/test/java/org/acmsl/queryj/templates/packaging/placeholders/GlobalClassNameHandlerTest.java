@@ -39,6 +39,7 @@ package org.acmsl.queryj.templates.packaging.placeholders;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.templates.packaging.DefaultTemplatePackagingContext;
+import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.acmsl.queryj.templates.packaging.TemplateDefImpl;
 import org.acmsl.queryj.templates.packaging.TemplateDefOutput;
@@ -75,6 +76,8 @@ public class GlobalClassNameHandlerTest
     @Test
     public void getValue_uses_the_templateDef_file_if_available()
     {
+        @NotNull final GlobalTemplateContext context = EasyMock.createNiceMock(GlobalTemplateContext.class);
+
         @NotNull final GlobalClassNameHandler instance =
             new GlobalClassNameHandler(context);
 
