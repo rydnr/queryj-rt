@@ -81,7 +81,7 @@ public class PerTemplateDefClassNameHandlerTest
                 "DefName",
                 TemplateDefType.PER_TABLE,
                 TemplateDefOutput.JAVA,
-                "finalOFile.java",
+                "FinalFile.java",
                 "com.foo.bar",
                 file,
                 new HashMap<>(0),
