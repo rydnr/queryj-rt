@@ -65,6 +65,7 @@ public class PerTemplateDefClassNameHandlerTest
     public void resolveContextValue_uses_TemplateDef_file_if_available()
     {
         @NotNull final DefaultTemplatePackagingContext context =
+            new DefaultTemplatePackagingContext()
         @NotNull final PerTemplateDefClassNameHandler instance =
             new PerTemplateDefClassNameHandler(context);
     }
