@@ -74,6 +74,9 @@ import java.util.regex.Pattern;
 public class PerTemplateDefClassNameHandler
     extends AbstractDecoratedStringHandler<DefaultTemplatePackagingContext>
 {
+    /**
+     * The
+     */
     @NotNull
     public static final Pattern STG_EXT = Pattern.compile("\\.stg$");
 
