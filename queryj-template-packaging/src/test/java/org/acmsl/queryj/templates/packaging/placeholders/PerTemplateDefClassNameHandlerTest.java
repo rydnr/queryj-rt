@@ -89,7 +89,9 @@ public class PerTemplateDefClassNameHandlerTest
                 false);
 
         @NotNull final DefaultTemplatePackagingContext context =
-            new DefaultTemplatePackagingContext();
+            new DefaultTemplatePackagingContext(
+                ""
+            );
 
         @NotNull final PerTemplateDefClassNameHandler instance =
             new PerTemplateDefClassNameHandler(context);
