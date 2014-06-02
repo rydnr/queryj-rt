@@ -70,6 +70,7 @@ public class TemplatePackagingBuildHandlerTest
                 DefaultTemplatePackagingContext> instance =
             new TemplateFactoryTemplateBuildHandler();
 
-        @NotNull final TemplateDef<String> templateDef = new TemplateDefImpl("defName", TemplateDefType.PER_TABLE)
+        @NotNull final TemplateDef<String> templateDef =
+            new TemplateDefImpl("defName", TemplateDefType.PER_TABLE, )
     }
 }
