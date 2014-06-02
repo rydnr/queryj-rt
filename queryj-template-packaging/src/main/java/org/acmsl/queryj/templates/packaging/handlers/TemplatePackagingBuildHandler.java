@@ -192,12 +192,13 @@ public abstract class TemplatePackagingBuildHandler
     {
         @NotNull final String result;
 
-        @NotNull final String output;
+        @NotNull final String extension;
 
         switch (templateDef.getOutput())
         {
             case TemplateDefOutput.JAVA:
                 extension = ".java";
+                break;
         }
         @NotNull final String templateDefPart;
 
