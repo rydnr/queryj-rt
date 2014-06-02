@@ -38,12 +38,14 @@ package org.acmsl.queryj.templates.packaging.placeholders;
 /*
  * Importing JetBrains annotations.
  */
+import org.antlr.v4.codegen.model.TestSetInline;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
@@ -56,5 +58,6 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class GlobalClassNameHandlerTest
 {
-
+    @Test
+    public void
 }
