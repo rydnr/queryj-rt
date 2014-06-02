@@ -106,7 +106,7 @@ public class TemplatePackagingBuildHandlerTest
     }
 
     /**
-     * Checks buildFileName() uses TemplateDef's file instead of its name, if available.
+     * Checks buildFileName() uses TemplateDef's name, if no associated file is  instead of its name, if available.
      */
     @Test
     public void buildFileName_uses_templateDef_file()
