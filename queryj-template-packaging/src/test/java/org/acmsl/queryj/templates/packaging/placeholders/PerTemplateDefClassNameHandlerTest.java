@@ -45,7 +45,6 @@ import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.acmsl.queryj.templates.packaging.TemplateDefImpl;
 import org.acmsl.queryj.templates.packaging.TemplateDefOutput;
 import org.acmsl.queryj.templates.packaging.TemplateDefType;
-import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
