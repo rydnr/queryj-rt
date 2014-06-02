@@ -81,14 +81,6 @@ public class GlobalClassNameHandlerTest
 
         @NotNull final GlobalClassNameHandler instance =
             new GlobalClassNameHandler(context);
-            {
-                @Override
-                public DecoratedString getValue(@NotNull final GlobalTemplateContext ctx)
-                {
-                    return super.getValue(ctx);
-                }
-            }
-        ];
 
         @NotNull final File file = EasyMock.createNiceMock(File.class);
         EasyMock.expect(file.getName()).andReturn("DefFileName.stg.def");
