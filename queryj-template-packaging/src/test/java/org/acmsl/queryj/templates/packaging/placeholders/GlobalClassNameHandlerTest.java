@@ -81,7 +81,9 @@ public class GlobalClassNameHandlerTest
 
         @NotNull final GlobalClassNameHandler instance =
             new GlobalClassNameHandler(context)
-            [
+            {
+
+            }
         ];
 
         @NotNull final File file = EasyMock.createNiceMock(File.class);
