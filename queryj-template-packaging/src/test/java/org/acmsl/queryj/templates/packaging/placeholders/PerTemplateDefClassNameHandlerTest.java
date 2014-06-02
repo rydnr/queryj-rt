@@ -88,6 +88,7 @@ public class PerTemplateDefClassNameHandlerTest
                 false,
                 false);
 
+        @NotNull final File outputDir = EasyMock.createNiceMock(File.class);
         @NotNull final DefaultTemplatePackagingContext context =
             new DefaultTemplatePackagingContext(
                 "TemplateName",
