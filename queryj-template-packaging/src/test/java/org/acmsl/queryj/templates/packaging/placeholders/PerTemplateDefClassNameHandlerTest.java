@@ -121,4 +121,46 @@ public class PerTemplateDefClassNameHandlerTest
 
         Assert.assertEquals("DefFileNameTemplateName", instance.resolveContextValue(context));
     }
+
+    /**
+     * Checks whether resolveContextValue() uses TemplateDef's file,
+     * if it's not null.
+     */
+    @Test
+    public void resolveContextValue_uses_TemplateDef_file_if_available()
+    {
+        @NotNull final File file = EasyMock.createNiceMock(File.class);
+        EasyMock.expect(file.getName()).andReturn("DefFileName.stg.def");
+        EasyMock.replay(file);
+
+        @NotNull final TemplateDef<String> templateDef =
+            new TemplateDefImpl(
+                "DefName",
+                TemplateDefType.PER_TABLE,
+                TemplateDefOutput.JAVA,
+                "FinalFile.java",
+                "com.foo.bar",
+                file,
+                new HashMap<>(0),
+                false,
+                false);
+
+        @NotNull final File outputDir = EasyMock.createNiceMock(File.class);
+        @NotNull final QueryJCommand command =
+            new ConfigurationQueryJCommandImpl(new PropertiesConfiguration());
+
+        @NotNull final DefaultTemplatePackagingContext context =
+            new DefaultTemplatePackagingContext(
+                "TemplateName",
+                "com.foo.bar",
+                "DefNameTemplateName.java",
+                outputDir,
+                templateDef,
+                command);
+
+        @NotNull final PerTemplateDefClassNameHandler instance =
+            new PerTemplateDefClassNameHandler(context);
+
+        Assert.assertEquals("DefFileNameTemplateName", instance.resolveContextValue(context));
+    }
 }
