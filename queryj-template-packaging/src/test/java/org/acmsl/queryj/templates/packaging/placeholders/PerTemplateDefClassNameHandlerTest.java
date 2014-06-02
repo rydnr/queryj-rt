@@ -64,6 +64,6 @@ public class PerTemplateDefClassNameHandlerTest
     public void resolveContextValue_uses_TemplateDef_file_if_available()
     {
         @NotNull final PerTemplateDefClassNameHandler instance =
-            new PerTemplateDefClassNameHandler()
+            new PerTemplateDefClassNameHandler(context);
     }
 }
