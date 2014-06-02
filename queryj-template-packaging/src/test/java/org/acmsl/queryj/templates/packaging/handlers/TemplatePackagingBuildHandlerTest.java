@@ -44,6 +44,7 @@ import org.acmsl.queryj.templates.packaging.TemplateDefImpl;
 import org.acmsl.queryj.templates.packaging.TemplateDefType;
 import org.acmsl.queryj.templates.packaging.TemplateFactoryTemplate;
 import org.acmsl.queryj.templates.packaging.TemplateFactoryTemplateFactory;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -72,6 +73,7 @@ public class TemplatePackagingBuildHandlerTest
                 DefaultTemplatePackagingContext> instance =
             new TemplateFactoryTemplateBuildHandler();
 
+        @NotNull final File file = EasyMock.createNiceMock(File.cl)
         @NotNull final TemplateDef<String> templateDef =
             new TemplateDefImpl(
                 "defName",
