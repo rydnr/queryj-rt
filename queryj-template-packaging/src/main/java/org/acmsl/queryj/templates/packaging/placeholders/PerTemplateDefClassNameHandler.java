@@ -40,6 +40,10 @@ package org.acmsl.queryj.templates.packaging.placeholders;
  * Importing QueryJ Placeholders classes.
  */
 import org.acmsl.queryj.placeholders.AbstractDecoratedStringHandler;
+
+/*
+ * Importing QueryJ Core classes.
+ */
 import org.acmsl.queryj.metadata.DecoratedString;
 
 /*
