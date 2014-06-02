@@ -92,7 +92,7 @@ public class PerTemplateDefClassNameHandlerTest
             new DefaultTemplatePackagingContext(
                 "TemplateName",
                 "com.foo.bar",
-                "D"
+                "DefNameTemplateName",
             );
 
         @NotNull final PerTemplateDefClassNameHandler instance =
