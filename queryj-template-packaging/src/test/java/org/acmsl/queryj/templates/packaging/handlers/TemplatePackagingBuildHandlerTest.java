@@ -77,6 +77,8 @@ public class TemplatePackagingBuildHandlerTest
                 "defName",
                 TemplateDefType.PER_TABLE,
                 "finalOFile.java",
-                "com.foo.bar", file, new HashMap<>(0))
+                "com.foo.bar",
+                file,
+                new HashMap<>(0))
     }
 }
