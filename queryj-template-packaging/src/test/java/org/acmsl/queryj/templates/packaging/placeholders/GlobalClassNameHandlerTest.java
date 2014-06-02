@@ -84,6 +84,9 @@ public class GlobalClassNameHandlerTest
             {
                 @Override
                 public DecoratedString getValue(@NotNull final GlobalTemplateContext ctx)
+                {
+                    return super.getValue()
+                }
             }
         ];
 
