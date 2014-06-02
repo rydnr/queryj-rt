@@ -41,6 +41,10 @@ package org.acmsl.queryj.templates.packaging.placeholders;
 import org.acmsl.queryj.metadata.DecoratedString;
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
 import org.easymock.EasyMock;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
