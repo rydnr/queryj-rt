@@ -92,6 +92,6 @@ public class TemplatePackagingBuildHandlerTest
                 false,
                 false);
 
-        Assert.assertEquals(instance.buildFilename(templateDef, "te"));
+        Assert.assertEquals(instance.buildFilename(templateDef, "TemplateName"));
     }
 }
