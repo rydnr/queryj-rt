@@ -71,6 +71,6 @@ public class TemplatePackagingBuildHandlerTest
             new TemplateFactoryTemplateBuildHandler();
 
         @NotNull final TemplateDef<String> templateDef =
-            new TemplateDefImpl("defName", TemplateDefType.PER_TABLE, "finalOFile.java", "com.foo.bar", file, )
+            new TemplateDefImpl("defName", TemplateDefType.PER_TABLE, "finalOFile.java", "com.foo.bar", file, metadata, )
     }
 }
