@@ -41,7 +41,7 @@ package org.acmsl.queryj.templates.packaging.handlers;
 import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing checkthread.org annotations.
+ * Importing JUnit classes.
  */
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
