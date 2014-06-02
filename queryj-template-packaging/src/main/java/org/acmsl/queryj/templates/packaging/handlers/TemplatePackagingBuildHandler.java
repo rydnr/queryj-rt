@@ -221,7 +221,8 @@ public abstract class TemplatePackagingBuildHandler
     @NotNull
     public String buildFilename(
         @NotNull final TemplateDef<String> templateDef,
-        @NotNull final String templateName)
+        @NotNull final String templateName,
+        @NotNull final String extension)
     {
         @NotNull final String result;
 
