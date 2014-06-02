@@ -186,7 +186,7 @@ public abstract class TemplatePackagingBuildHandler
         @NotNull final String result;
 
         result =
-              new DecoratedString(STG_EXT.matcher(templateDef.getName()).replaceAll("")) //.getCapitalized()
+              new DecoratedString(STG_EXT.matcher(templateDef.getFile().getName()).replaceAll("")) //.getCapitalized()
             + templateName
             + ".java";
 
