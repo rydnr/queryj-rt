@@ -64,9 +64,7 @@ public class TemplatePackagingBuildHandlerTest
     {
         @NotNull final TemplatePackagingBuildHandler<TemplateFactoryTemplate<DefaultTemplatePackagingContext>,
                 TemplateFactoryTemplateFactory,
-                DefaultTemplatePackagingContext>
-
-        instance =
+                DefaultTemplatePackagingContext> instance =
             new TemplateFactoryTemplateBuildHandler();
 
     }
