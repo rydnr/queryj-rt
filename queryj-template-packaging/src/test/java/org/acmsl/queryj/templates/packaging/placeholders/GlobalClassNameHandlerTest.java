@@ -74,6 +74,10 @@ import java.util.HashMap;
 @RunWith(JUnit4.class)
 public class GlobalClassNameHandlerTest
 {
+    /**
+     * Checks whether the class name is correct
+     * @throws Exception
+     */
     @Test
     public void getValue_uses_the_templateDef_file_if_available()
         throws Exception
