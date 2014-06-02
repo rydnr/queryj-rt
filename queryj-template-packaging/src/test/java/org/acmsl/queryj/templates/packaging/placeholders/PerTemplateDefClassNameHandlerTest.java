@@ -38,7 +38,6 @@ package org.acmsl.queryj.templates.packaging.placeholders;
 /*
  * Importing JetBrains annotations.
  */
-import junit.framework.Assert;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.templates.packaging.DefaultTemplatePackagingContext;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
