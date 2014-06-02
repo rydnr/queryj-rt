@@ -82,7 +82,8 @@ public class GlobalClassNameHandlerTest
         @NotNull final GlobalClassNameHandler instance =
             new GlobalClassNameHandler(context)
             {
-
+                @Override
+            public
             }
         ];
 
