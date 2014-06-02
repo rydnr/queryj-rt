@@ -43,6 +43,7 @@ import org.jetbrains.annotations.NotNull;
 /*
  * Importing JUnit/EasyMock classes.
  */
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
@@ -55,4 +56,6 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class PerTemplateDefClassNameHandlerTest
 {
+    @Test
+    public void
 }
