@@ -75,9 +75,7 @@ public class GlobalClassNameHandlerTest
     @Test
     public void getValue_uses_the_templateDef_file_if_available()
     {
-        @NotNull final GlobalClassNameHandler<TemplateFactoryTemplate<DefaultTemplatePackagingContext>,
-            TemplateFactoryTemplateFactory,
-            DefaultTemplatePackagingContext> instance =
+        @NotNull final GlobalClassNameHandler instance =
             new TemplateFactoryTemplateBuildHandler();
 
         @NotNull final File file = EasyMock.createNiceMock(File.class);
