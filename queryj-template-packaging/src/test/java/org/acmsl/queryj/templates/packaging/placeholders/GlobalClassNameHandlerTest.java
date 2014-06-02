@@ -80,7 +80,7 @@ public class GlobalClassNameHandlerTest
         @NotNull final GlobalTemplateContext context = EasyMock.createNiceMock(GlobalTemplateContext.class);
 
         @NotNull final GlobalClassNameHandler instance =
-            new GlobalClassNameHandler(context)
+            new GlobalClassNameHandler(context);
             {
                 @Override
                 public DecoratedString getValue(@NotNull final GlobalTemplateContext ctx)
