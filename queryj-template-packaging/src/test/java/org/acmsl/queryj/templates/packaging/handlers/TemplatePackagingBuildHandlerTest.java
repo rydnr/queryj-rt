@@ -39,6 +39,7 @@ package org.acmsl.queryj.templates.packaging.handlers;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.templates.packaging.DefaultTemplatePackagingContext;
+import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.acmsl.queryj.templates.packaging.TemplateFactoryTemplate;
 import org.acmsl.queryj.templates.packaging.TemplateFactoryTemplateFactory;
 import org.jetbrains.annotations.NotNull;
@@ -67,6 +68,6 @@ public class TemplatePackagingBuildHandlerTest
                 DefaultTemplatePackagingContext> instance =
             new TemplateFactoryTemplateBuildHandler();
 
-
+        @NotNull final TemplateDef<String>
     }
 }
