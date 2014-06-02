@@ -38,6 +38,9 @@ package org.acmsl.queryj.templates.packaging.handlers;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.templates.packaging.DefaultTemplatePackagingContext;
+import org.acmsl.queryj.templates.packaging.TemplateFactoryTemplate;
+import org.acmsl.queryj.templates.packaging.TemplateFactoryTemplateFactory;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -59,7 +62,12 @@ public class TemplatePackagingBuildHandlerTest
     @Test
     public void buildFileName_uses_templateDef_file()
     {
-        @NotNull final TemplatePackagingBuildHandler<> instance =
+        @NotNull final TemplatePackagingBuildHandler
+            <TemplateFactoryTemplate<DefaultTemplatePackagingContext>,
+                TemplateFactoryTemplateFactory,
+                DefaultTemplatePackagingContext>
+
+        <> instance =
             new TemplateFactoryTemplateBuildHandler();
 
     }
