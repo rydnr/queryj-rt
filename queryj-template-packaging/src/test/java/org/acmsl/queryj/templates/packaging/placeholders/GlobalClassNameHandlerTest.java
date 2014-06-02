@@ -75,7 +75,7 @@ import java.util.HashMap;
 public class GlobalClassNameHandlerTest
 {
     /**
-     * Checks whether the class name is built using the TemplateDef's filename.
+     * Checks whether the class name is built using the template name.
      * @throws Exception
      */
     @Test
