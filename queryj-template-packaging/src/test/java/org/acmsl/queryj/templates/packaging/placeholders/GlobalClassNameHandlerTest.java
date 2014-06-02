@@ -83,7 +83,7 @@ public class GlobalClassNameHandlerTest
             new GlobalClassNameHandler(context)
             {
                 @Override
-                public DecoratedString getValue(@NotNull final GlobalTemplateContext )
+                public DecoratedString getValue(@NotNull final GlobalTemplateContext ctx)
             }
         ];
 
