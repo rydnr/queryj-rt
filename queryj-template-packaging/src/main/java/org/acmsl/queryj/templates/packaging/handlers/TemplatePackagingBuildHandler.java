@@ -112,7 +112,7 @@ public abstract class TemplatePackagingBuildHandler
      * The regex to match .stg.def extensions.
      */
     @NotNull
-    private static final Pattern STG_DEF_EXT = Pattern.compile("\\.stg$");
+    private static final Pattern STG_DEF_EXT = Pattern.compile("\\.stg\\.def$");
 
     /**
      * Creates a {@link TemplatePackagingBuildHandler} instance.
