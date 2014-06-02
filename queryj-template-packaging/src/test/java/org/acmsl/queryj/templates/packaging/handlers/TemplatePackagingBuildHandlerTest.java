@@ -109,7 +109,7 @@ public class TemplatePackagingBuildHandlerTest
      * Checks buildFileName() uses TemplateDef's name, if no associated file is available.
      */
     @Test
-    public void buildFileName_uses_templateDef_file()
+    public void buildFileName_uses_templateDef_name()
     {
         @NotNull final TemplatePackagingBuildHandler<TemplateFactoryTemplate<DefaultTemplatePackagingContext>,
             TemplateFactoryTemplateFactory,
