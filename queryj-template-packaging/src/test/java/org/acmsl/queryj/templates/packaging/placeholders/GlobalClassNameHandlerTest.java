@@ -76,6 +76,7 @@ public class GlobalClassNameHandlerTest
 {
     @Test
     public void getValue_uses_the_templateDef_file_if_available()
+        throws Exception
     {
         @NotNull final GlobalTemplateContext context = EasyMock.createNiceMock(GlobalTemplateContext.class);
 
