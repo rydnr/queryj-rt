@@ -242,7 +242,7 @@ public abstract class TemplatePackagingBuildHandler
         result =
               new DecoratedString(templateDefPart) //.getCapitalized()
             + templateName
-            + ".java";
+            + extension;
 
         return result;
     }
