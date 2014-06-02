@@ -91,6 +91,7 @@ public class PerTemplateDefClassNameHandlerTest
         @NotNull final DefaultTemplatePackagingContext context =
             new DefaultTemplatePackagingContext(
                 "TemplateName",
+                "com.foo.bar",
 
             );
 
