@@ -57,5 +57,5 @@ import org.junit.runners.JUnit4;
 public class PerTemplateDefClassNameHandlerTest
 {
     @Test
-    public void resolveContextValue_uses_TemplateDef_file()
+    public void resolveContextValue_uses_TemplateDef_file_if_available()
 }
