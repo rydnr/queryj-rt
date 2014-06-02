@@ -59,5 +59,5 @@ import org.junit.runners.JUnit4;
 public class GlobalClassNameHandlerTest
 {
     @Test
-    public void getValue_uses_the_templateDef
+    public void getValue_uses_the_templateDef_file_if
 }
