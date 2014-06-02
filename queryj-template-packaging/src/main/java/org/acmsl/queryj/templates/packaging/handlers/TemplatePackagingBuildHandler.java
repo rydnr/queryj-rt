@@ -199,7 +199,7 @@ public abstract class TemplatePackagingBuildHandler
         }
 
         result =
-              new DecoratedString() //.getCapitalized()
+              new DecoratedString(templateDefPart) //.getCapitalized()
             + templateName
             + ".java";
 
