@@ -85,6 +85,5 @@ public class GlobalClassNameHandlerTest
         EasyMock.replay(context);
 
         Assert.assertEquals(new DecoratedString("TemplateName"), instance.getValue());
-
     }
 }
