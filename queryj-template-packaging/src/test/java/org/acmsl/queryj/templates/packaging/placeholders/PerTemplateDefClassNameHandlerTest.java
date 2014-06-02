@@ -123,7 +123,7 @@ public class PerTemplateDefClassNameHandlerTest
     }
 
     /**
-     * Checks whether resolveContextValue() uses TemplateDef's file,
+     * Checks whether resolveContextValue() uses TemplateDef's name,
      * if it's not null.
      */
     @Test
