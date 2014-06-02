@@ -54,6 +54,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.io.File;
 import java.util.HashMap;
 
 /**
@@ -73,7 +74,8 @@ public class TemplatePackagingBuildHandlerTest
                 DefaultTemplatePackagingContext> instance =
             new TemplateFactoryTemplateBuildHandler();
 
-        @NotNull final File file = EasyMock.createNiceMock(File.class)
+        @NotNull final File file = EasyMock.createNiceMock(File.class);
+
         @NotNull final TemplateDef<String> templateDef =
             new TemplateDefImpl(
                 "defName",
