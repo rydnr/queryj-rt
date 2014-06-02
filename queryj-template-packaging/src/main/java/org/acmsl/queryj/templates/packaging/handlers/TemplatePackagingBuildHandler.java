@@ -335,6 +335,7 @@ public abstract class TemplatePackagingBuildHandler
      * @param parameters the parameters.
      * @return the information.
      */
+    @SuppressWarnings("unused")
     @NotNull
     public String retrieveJdbcUsername(@NotNull final QueryJCommand parameters)
     {
