@@ -53,6 +53,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.util.HashMap;
+
 /**
  * Tests for {@link TemplatePackagingBuildHandler}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
@@ -71,6 +73,6 @@ public class TemplatePackagingBuildHandlerTest
             new TemplateFactoryTemplateBuildHandler();
 
         @NotNull final TemplateDef<String> templateDef =
-            new TemplateDefImpl("defName", TemplateDefType.PER_TABLE, "finalOFile.java", "com.foo.bar", file, metadata, )
+            new TemplateDefImpl("defName", TemplateDefType.PER_TABLE, "finalOFile.java", "com.foo.bar", file, new HashMap<>(0))
     }
 }
