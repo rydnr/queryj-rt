@@ -36,7 +36,7 @@
 package org.acmsl.queryj.templates.packaging.placeholders;
 
 /*
- * Importing JetBrains annotations.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.metadata.DecoratedString;
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
