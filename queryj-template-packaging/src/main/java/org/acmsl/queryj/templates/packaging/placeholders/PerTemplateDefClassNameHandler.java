@@ -37,7 +37,7 @@
 package org.acmsl.queryj.templates.packaging.placeholders;
 
 /*
- * Importing QueryJ-Placeholders classes.
+ * Importing QueryJ Placeholders classes.
  */
 import org.acmsl.queryj.placeholders.AbstractDecoratedStringHandler;
 import org.acmsl.queryj.metadata.DecoratedString;
