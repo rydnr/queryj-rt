@@ -75,7 +75,7 @@ public class GlobalClassNameHandlerTest
     @Test
     public void getValue_uses_the_templateDef_file_if_available()
     {
-        @NotNull final TemplatePackagingBuildHandler<TemplateFactoryTemplate<DefaultTemplatePackagingContext>,
+        @NotNull final GlobalClassNameHandler<TemplateFactoryTemplate<DefaultTemplatePackagingContext>,
             TemplateFactoryTemplateFactory,
             DefaultTemplatePackagingContext> instance =
             new TemplateFactoryTemplateBuildHandler();
