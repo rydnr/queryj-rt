@@ -191,7 +191,7 @@ public abstract class TemplatePackagingBuildHandler
 
         if (defFile == null)
         {
-            templateDefPart = templateDef.getName();
+            templateDefPart = STG_EXT.matcher(templateDefPart).replaceAll("")templateDef.getName();
         }
         else
         {
