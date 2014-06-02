@@ -91,6 +91,7 @@ public class PerTemplateDefClassNameHandlerTest
 
         @NotNull final File outputDir = EasyMock.createNiceMock(File.class);
         @NotNull final QueryJCommand command = EasyMock.createNiceMock(QueryJCommand.class);
+
         @NotNull final DefaultTemplatePackagingContext context =
             new DefaultTemplatePackagingContext(
                 "TemplateName",
