@@ -66,7 +66,7 @@ public class TemplatePackagingBuildHandlerTest
                 TemplateFactoryTemplateFactory,
                 DefaultTemplatePackagingContext>
 
-        <> instance =
+        instance =
             new TemplateFactoryTemplateBuildHandler();
 
     }
