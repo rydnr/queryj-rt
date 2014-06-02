@@ -36,12 +36,12 @@
 package org.acmsl.queryj.templates.packaging.placeholders;
 
 /*
- * Importing JetBrains annotations.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.QueryJCommand;
 
 /*
- * Importing Query Template Packaging
+ * Importing Query Template Packaging classes.
  */
 import org.acmsl.queryj.templates.packaging.DefaultTemplatePackagingContext;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
