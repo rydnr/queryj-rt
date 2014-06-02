@@ -97,7 +97,7 @@ public class GlobalClassNameHandlerTest
                 false,
                 false);
 
-        Assert.assertEquals("DefFileNameTemplateName.java", instance.getValue(context);
+        Assert.assertEquals("DefFileNameTemplateName.java", instance.getValue(context));
 
     }
 }
