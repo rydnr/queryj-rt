@@ -87,6 +87,7 @@ public class PerTemplateDefClassNameHandlerTest
                 new HashMap<>(0),
                 false,
                 false);
+
         @NotNull final DefaultTemplatePackagingContext context =
             new DefaultTemplatePackagingContext();
 
