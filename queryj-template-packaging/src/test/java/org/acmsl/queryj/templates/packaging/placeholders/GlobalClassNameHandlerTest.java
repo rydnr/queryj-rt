@@ -87,7 +87,7 @@ public class GlobalClassNameHandlerTest
         @NotNull final GlobalClassNameHandler instance =
             new GlobalClassNameHandler(context);
 
-        EasyMock.expect(context.getTemplateDefs())
+        EasyMock.expect(context.getTemplateName()).andReturn("")
         Assert.assertEquals(new DecoratedString("DefFileNameTemplateName.java"), instance.getValue());
 
     }
