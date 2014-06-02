@@ -194,7 +194,7 @@ public abstract class TemplatePackagingBuildHandler
 
         switch (templateDef.getOutput())
         {
-            case
+            case TemplateDefOu
         }
         @NotNull final String templateDefPart;
 
