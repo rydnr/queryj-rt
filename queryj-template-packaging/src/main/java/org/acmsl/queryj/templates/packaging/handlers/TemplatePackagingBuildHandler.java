@@ -192,7 +192,7 @@ public abstract class TemplatePackagingBuildHandler
     {
         @NotNull final String result;
 
-        if (TemplateDefOutput.getEnumFromString() templateDef.getOutput())
+        if (TemplateDefOutput.getEnumFromString(templateDef.getOutput()) templateDef.getOutput())
         @NotNull final String templateDefPart;
 
         @Nullable final File defFile = templateDef.getFile();
