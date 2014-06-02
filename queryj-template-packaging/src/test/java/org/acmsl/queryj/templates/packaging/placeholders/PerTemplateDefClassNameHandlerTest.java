@@ -127,7 +127,7 @@ public class PerTemplateDefClassNameHandlerTest
      * if it's not null.
      */
     @Test
-    public void resolveContextValue_uses_TemplateDef_file_if_fileavailable()
+    public void resolveContextValue_uses_TemplateDef_name_if_file_not_available()
     {
         @NotNull final File file = EasyMock.createNiceMock(File.class);
         EasyMock.expect(file.getName()).andReturn("DefFileName.stg.def");
