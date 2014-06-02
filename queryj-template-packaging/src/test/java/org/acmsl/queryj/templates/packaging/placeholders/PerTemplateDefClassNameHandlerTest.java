@@ -38,6 +38,7 @@ package org.acmsl.queryj.templates.packaging.placeholders;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.templates.packaging.DefaultTemplatePackagingContext;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -63,6 +64,7 @@ public class PerTemplateDefClassNameHandlerTest
     @Test
     public void resolveContextValue_uses_TemplateDef_file_if_available()
     {
+        @NotNull final DefaultTemplatePackagingContext context =
         @NotNull final PerTemplateDefClassNameHandler instance =
             new PerTemplateDefClassNameHandler(context);
     }
