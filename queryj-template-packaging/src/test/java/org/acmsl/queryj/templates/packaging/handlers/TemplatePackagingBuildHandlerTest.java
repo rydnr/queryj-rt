@@ -92,6 +92,6 @@ public class TemplatePackagingBuildHandlerTest
                 false,
                 false);
 
-        Assert.assertEquals("Minstance.buildFilename(templateDef, "TemplateName"));
+        Assert.assertEquals("MyTemplateDefinstance.buildFilename(templateDef, "TemplateName"));
     }
 }
