@@ -129,10 +129,6 @@ public class PerTemplateDefClassNameHandlerTest
     @Test
     public void resolveContextValue_uses_TemplateDef_name_if_file_not_available()
     {
-        @NotNull final File file = EasyMock.createNiceMock(File.class);
-        EasyMock.expect(file.getName()).andReturn("DefFileName.stg.def");
-        EasyMock.replay(file);
-
         @NotNull final TemplateDef<String> templateDef =
             new TemplateDefImpl(
                 "DefName",
