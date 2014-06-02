@@ -70,7 +70,7 @@ public class GlobalClassNameHandlerTest
 {
     /**
      * Checks whether the class name is built using the template name.
-     * @throws Exception
+     * @throws Exception if the value cannot be retrieved.
      */
     @Test
     public void getValue_uses_the_templateDef_file_if_available()
