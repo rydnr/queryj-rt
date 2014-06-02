@@ -75,7 +75,7 @@ public class TemplatePackagingBuildHandlerTest
             new TemplateFactoryTemplateBuildHandler();
 
         @NotNull final File file = EasyMock.createNiceMock(File.class);
-
+        EasyMock.expect(file.getNa)
         @NotNull final TemplateDef<String> templateDef =
             new TemplateDefImpl(
                 "defName",
