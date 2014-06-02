@@ -189,7 +189,10 @@ public abstract class TemplatePackagingBuildHandler
 
         @Nullable final File defFile = templateDef.getFile();
 
-        if (templateDef.getFile() != )
+        if (defFile == null)
+        {
+            templateDefPart = templateDef.getName()
+        }
         result =
               new DecoratedString(STG_EXT.matcher(templateDef.getFile().getName()).replaceAll("")) //.getCapitalized()
             + templateName
