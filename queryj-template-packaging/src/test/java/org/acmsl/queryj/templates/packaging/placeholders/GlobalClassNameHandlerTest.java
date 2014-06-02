@@ -87,22 +87,6 @@ public class GlobalClassNameHandlerTest
         @NotNull final GlobalClassNameHandler instance =
             new GlobalClassNameHandler(context);
 
-        @NotNull final File file = EasyMock.createNiceMock(File.class);
-        EasyMock.expect(file.getName()).andReturn("DefFileName.stg.def");
-        EasyMock.replay(file);
-
-        @NotNull final TemplateDef<String> templateDef =
-            new TemplateDefImpl(
-                "DefName",
-                TemplateDefType.PER_TABLE,
-                TemplateDefOutput.JAVA,
-                "finalOFile.java",
-                "com.foo.bar",
-                file,
-                new HashMap<>(0),
-                false,
-                false);
-
         EasyMock.expect(context.getTemplateDefs())
         Assert.assertEquals(new DecoratedString("DefFileNameTemplateName.java"), instance.getValue());
 
