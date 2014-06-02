@@ -59,6 +59,6 @@ public class TemplatePackagingBuildHandlerTest
     @Test
     public void buildFileName_uses_templateDef_file()
     {
-        @NotNull final
+        @NotNull final TemplatePackagingBuildHandler<>
     }
 }
