@@ -38,16 +38,30 @@ package org.acmsl.queryj.templates.packaging.placeholders;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.templates.packaging.DefaultTemplatePackagingContext;
+import org.acmsl.queryj.templates.packaging.TemplateDef;
+import org.acmsl.queryj.templates.packaging.TemplateDefImpl;
+import org.acmsl.queryj.templates.packaging.TemplateDefOutput;
+import org.acmsl.queryj.templates.packaging.TemplateDefType;
+import org.acmsl.queryj.templates.packaging.TemplateFactoryTemplate;
+import org.acmsl.queryj.templates.packaging.TemplateFactoryTemplateFactory;
+import org.acmsl.queryj.templates.packaging.handlers.TemplateFactoryTemplateBuildHandler;
+import org.acmsl.queryj.templates.packaging.handlers.TemplatePackagingBuildHandler;
 import org.antlr.v4.codegen.model.TestSetInline;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+
+import java.io.File;
+import java.util.HashMap;
 
 /**
  * Tests for {@link GlobalClassNameHandler}.
@@ -61,6 +75,28 @@ public class GlobalClassNameHandlerTest
     @Test
     public void getValue_uses_the_templateDef_file_if_available()
     {
+        @NotNull final TemplatePackagingBuildHandler<TemplateFactoryTemplate<DefaultTemplatePackagingContext>,
+            TemplateFactoryTemplateFactory,
+            DefaultTemplatePackagingContext> instance =
+            new TemplateFactoryTemplateBuildHandler();
+
+        @NotNull final File file = EasyMock.createNiceMock(File.class);
+        EasyMock.expect(file.getName()).andReturn("DefFileName.stg.def");
+        EasyMock.replay(file);
+
+        @NotNull final TemplateDef<String> templateDef =
+            new TemplateDefImpl(
+                "DefName",
+                TemplateDefType.PER_TABLE,
+                TemplateDefOutput.JAVA,
+                "finalOFile.java",
+                "com.foo.bar",
+                file,
+                new HashMap<>(0),
+                false,
+                false);
+
+        Assert.assertEquals("DefFileNameTemplateName.java", instance.buildFilename(templateDef, "TemplateName"));
 
     }
 }
