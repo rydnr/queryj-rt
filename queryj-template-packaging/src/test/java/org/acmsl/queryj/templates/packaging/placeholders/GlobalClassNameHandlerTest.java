@@ -76,7 +76,7 @@ public class GlobalClassNameHandlerTest
     public void getValue_uses_the_templateDef_file_if_available()
     {
         @NotNull final GlobalClassNameHandler instance =
-            new TemplateFactoryTemplateBuildHandler();
+            new GlobalClassNameHandler();
 
         @NotNull final File file = EasyMock.createNiceMock(File.class);
         EasyMock.expect(file.getName()).andReturn("DefFileName.stg.def");
