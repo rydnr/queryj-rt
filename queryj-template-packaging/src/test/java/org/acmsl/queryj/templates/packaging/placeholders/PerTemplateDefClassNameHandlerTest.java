@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for PerTemplateDefClassNameHandler.
  *
  * Date: 2014/06/03
  * Time: 00:28
