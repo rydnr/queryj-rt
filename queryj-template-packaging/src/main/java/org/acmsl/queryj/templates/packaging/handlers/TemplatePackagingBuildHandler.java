@@ -185,7 +185,7 @@ public abstract class TemplatePackagingBuildHandler
     {
         @NotNull final String result;
 
-        @NotNull final String
+        @NotNull final String templateDefPart
         result =
               new DecoratedString(STG_EXT.matcher(templateDef.getFile().getName()).replaceAll("")) //.getCapitalized()
             + templateName
