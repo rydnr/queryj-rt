@@ -185,7 +185,7 @@ public abstract class TemplatePackagingBuildHandler
      * @return such file name.
      */
     @NotNull
-    protected String buildFilename(
+    public String buildFilename(
         @NotNull final TemplateDef<String> templateDef,
         @NotNull final String templateName)
     {
