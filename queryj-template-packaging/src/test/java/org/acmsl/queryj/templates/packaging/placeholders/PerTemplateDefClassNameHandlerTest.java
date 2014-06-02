@@ -58,6 +58,7 @@ public class PerTemplateDefClassNameHandlerTest
 {
     /**
      * Checks whether resolveContextValue() uses TemplateDef's file
+     *
      */
     @Test
     public void resolveContextValue_uses_TemplateDef_file_if_available()
