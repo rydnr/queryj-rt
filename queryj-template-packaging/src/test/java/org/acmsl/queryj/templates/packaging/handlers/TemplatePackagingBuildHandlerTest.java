@@ -57,5 +57,8 @@ import org.junit.runners.JUnit4;
 public class TemplatePackagingBuildHandlerTest
 {
     @Test
-    public void buildFileName_uses_templateDef_file
+    public void buildFileName_uses_templateDef_file()
+    {
+
+    }
 }
