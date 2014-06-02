@@ -104,4 +104,34 @@ public class TemplatePackagingBuildHandlerTest
 
         Assert.assertEquals("MyTemplateDefTemplateName.java", instance.buildFilename(templateDef, "TemplateName"));
     }
+
+    /**
+     * Checks buildFileName() uses TemplateDef's file instead of its name, if available.
+     */
+    @Test
+    public void buildFileName_uses_templateDef_file()
+    {
+        @NotNull final TemplatePackagingBuildHandler<TemplateFactoryTemplate<DefaultTemplatePackagingContext>,
+            TemplateFactoryTemplateFactory,
+            DefaultTemplatePackagingContext> instance =
+            new TemplateFactoryTemplateBuildHandler();
+
+        @NotNull final File file = EasyMock.createNiceMock(File.class);
+        EasyMock.expect(file.getName()).andReturn("MyTemplateDef");
+        EasyMock.replay(file);
+
+        @NotNull final TemplateDef<String> templateDef =
+            new TemplateDefImpl(
+                "defName",
+                TemplateDefType.PER_TABLE,
+                TemplateDefOutput.JAVA,
+                "finalOFile.java",
+                "com.foo.bar",
+                file,
+                new HashMap<>(0),
+                false,
+                false);
+
+        Assert.assertEquals("MyTemplateDefTemplateName.java", instance.buildFilename(templateDef, "TemplateName"));
+    }
 }
