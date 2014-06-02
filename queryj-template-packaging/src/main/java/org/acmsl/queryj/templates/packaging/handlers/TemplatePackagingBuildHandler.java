@@ -191,7 +191,7 @@ public abstract class TemplatePackagingBuildHandler
     {
         @NotNull final String result;
 
-        if (templateDef.getOutput())
+        if ( templateDef.getOutput())
         @NotNull final String templateDefPart;
 
         @Nullable final File defFile = templateDef.getFile();
