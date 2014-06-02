@@ -80,7 +80,9 @@ public class GlobalClassNameHandlerTest
         @NotNull final GlobalTemplateContext context = EasyMock.createNiceMock(GlobalTemplateContext.class);
 
         @NotNull final GlobalClassNameHandler instance =
-            new GlobalClassNameHandler(context);
+            new GlobalClassNameHandler(context)
+            [
+        ];
 
         @NotNull final File file = EasyMock.createNiceMock(File.class);
         EasyMock.expect(file.getName()).andReturn("DefFileName.stg.def");
