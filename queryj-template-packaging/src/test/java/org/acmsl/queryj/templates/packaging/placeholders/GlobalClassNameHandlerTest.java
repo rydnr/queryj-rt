@@ -38,6 +38,7 @@ package org.acmsl.queryj.templates.packaging.placeholders;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.metadata.DecoratedString;
 import org.acmsl.queryj.templates.packaging.DefaultTemplatePackagingContext;
 import org.acmsl.queryj.templates.packaging.GlobalTemplateContext;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
@@ -97,7 +98,7 @@ public class GlobalClassNameHandlerTest
                 false,
                 false);
 
-        Assert.assertEquals("DefFileNameTemplateName.java", instance.getValue(context));
+        Assert.assertEquals(new DecoratedString("DefFileNameTemplateName.java", instance.getValue(context));
 
     }
 }
