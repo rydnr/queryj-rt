@@ -39,11 +39,19 @@ package org.acmsl.queryj.templates.packaging.placeholders;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.QueryJCommand;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.acmsl.queryj.templates.packaging.DefaultTemplatePackagingContext;
 import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.acmsl.queryj.templates.packaging.TemplateDefImpl;
 import org.acmsl.queryj.templates.packaging.TemplateDefOutput;
 import org.acmsl.queryj.templates.packaging.TemplateDefType;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
