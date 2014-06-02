@@ -96,6 +96,7 @@ public class PerTemplateDefClassNameHandlerTest
                 "DefNameTemplateName",
                 outputDir,
                 templateDef,
+
             );
 
         @NotNull final PerTemplateDefClassNameHandler instance =
