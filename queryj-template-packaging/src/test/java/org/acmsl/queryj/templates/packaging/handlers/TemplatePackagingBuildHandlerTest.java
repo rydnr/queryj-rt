@@ -62,8 +62,7 @@ public class TemplatePackagingBuildHandlerTest
     @Test
     public void buildFileName_uses_templateDef_file()
     {
-        @NotNull final TemplatePackagingBuildHandler
-            <TemplateFactoryTemplate<DefaultTemplatePackagingContext>,
+        @NotNull final TemplatePackagingBuildHandler<TemplateFactoryTemplate<DefaultTemplatePackagingContext>,
                 TemplateFactoryTemplateFactory,
                 DefaultTemplatePackagingContext>
 
