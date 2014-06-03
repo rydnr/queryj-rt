@@ -127,7 +127,7 @@ public class PerTemplateDefClassNameHandler
             new TemplatePackagingBuildHandler<
                 TemplatePackagingTemplate<TemplatePackagingContext>,
                 TemplatePackagingTemplateFactory<TemplatePackagingTemplate<TemplatePackagingContext>, TemplatePackagingContext>,
-                TemplatePackagingContext>().buildFilename(context.getTemplateDef())
+                TemplatePackagingContext>().buildFilename(context.getTemplateDef(), context.getTemplateName());
 
               new DecoratedString(STG_EXT.matcher(context.getTemplateDef().getName()).replaceAll("")).getValue(); //getCapitalized().getValue();
 
