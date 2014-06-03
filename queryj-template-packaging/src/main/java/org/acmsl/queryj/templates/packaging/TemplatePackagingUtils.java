@@ -94,7 +94,7 @@ public class TemplatePackagingUtils
      * @return such instance.
      */
     @NotNull
-    public TemplatePackagingUtils getInstance()
+    public static TemplatePackagingUtils getInstance()
     {
         return TemplatePackagingUtilsSingletonContainer.SINGLETON;
     }
