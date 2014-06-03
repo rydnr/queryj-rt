@@ -178,6 +178,7 @@ public abstract class TemplatePackagingBuildHandler
         @NotNull final TemplateDef<String> templateDef,
         @NotNull final String templateName)
     {
+        return buildFilename()
         @NotNull final String result;
 
         @NotNull final String extension;
