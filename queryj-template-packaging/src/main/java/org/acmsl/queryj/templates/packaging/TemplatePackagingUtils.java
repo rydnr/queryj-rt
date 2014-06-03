@@ -39,12 +39,16 @@ package org.acmsl.queryj.templates.packaging;
  * Importing JetBrains annotations.
  */
 import org.acmsl.commons.patterns.Singleton;
+import org.acmsl.queryj.metadata.DecoratedString;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
+
+import java.io.File;
 
 /**
  *
@@ -80,6 +84,80 @@ public class TemplatePackagingUtils
     public TemplatePackagingUtils getInstance()
     {
         return TemplatePackagingUtilsSingletonContainer.SINGLETON;
+    }
+
+    /**
+     * Builds the final file name.
+     * @param templateDef the {@link TemplateDef} instance.
+     * @param templateName the template name.
+     * @return such file name.
+     */
+    @NotNull
+    public String buildFilename(
+        @NotNull final TemplateDef<String> templateDef,
+        @NotNull final String templateName)
+    {
+        @NotNull final String result;
+
+        @NotNull final String extension;
+
+        switch (templateDef.getOutput())
+        {
+            case JAVA:
+                extension = ".java";
+                break;
+            case PROPERTIES:
+                extension = ".properties";
+                break;
+            case CUCUMBER:
+                extension = ".feature";
+                break;
+            case DBSD:
+                extension = ".dbsd";
+                break;
+            default:
+                extension = "";
+                break;
+        }
+
+        result = buildFilename(templateDef, templateName, extension);
+
+        return result;
+    }
+
+    /**
+     * Builds the final file name.
+     * @param templateDef the {@link TemplateDef} instance.
+     * @param templateName the template name.
+     * @return such file name.
+     */
+    @NotNull
+    public String buildFilename(
+        @NotNull final TemplateDef<String> templateDef,
+        @NotNull final String templateName,
+        @NotNull final String extension)
+    {
+        @NotNull final String result;
+
+        @NotNull final String templateDefPart;
+
+        @Nullable final File defFile = templateDef.getFile();
+
+        if (defFile == null)
+        {
+            templateDefPart = STG_EXT.matcher(templateDef.getName()).replaceAll("");
+        }
+        else
+        {
+            templateDefPart = STG_DEF_EXT.matcher(defFile.getName()).replaceAll("");
+        }
+
+        result =
+            new DecoratedString(templateDefPart) //.getCapitalized()
+            + templateName
+            + extension;
+
+        return result;
     }
 
 
