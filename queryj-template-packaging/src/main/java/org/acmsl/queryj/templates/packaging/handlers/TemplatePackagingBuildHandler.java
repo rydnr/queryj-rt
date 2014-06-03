@@ -195,7 +195,7 @@ public abstract class TemplatePackagingBuildHandler
         @NotNull final String templateName,
         @NotNull final TemplatePackagingUtils templatePackagingUtils)
     {
-        return templatePackagingUtils.buildFilename(templateDef, templateName, TemplatePackagingUtils.getInstance());
+        return templatePackagingUtils.buildFilename(templateDef, templateName);
     }
 
     /**
