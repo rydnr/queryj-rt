@@ -131,7 +131,7 @@ public class PerTemplateDefClassNameHandler
     }
     /**
      * Resolves "class_name" values.
-     * @param context the {@link DefaultTemplatePackagingContext context}.
+     * @param
      * @return such value.
      */
     @NotNull
