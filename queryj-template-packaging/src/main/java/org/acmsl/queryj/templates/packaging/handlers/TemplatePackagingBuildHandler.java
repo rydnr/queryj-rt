@@ -214,23 +214,6 @@ public abstract class TemplatePackagingBuildHandler
         }
 
         result = buildFilename(templateDef, templateName, extension);
-        @NotNull final String templateDefPart;
-
-        @Nullable final File defFile = templateDef.getFile();
-
-        if (defFile == null)
-        {
-            templateDefPart = STG_EXT.matcher(templateDef.getName()).replaceAll("");
-        }
-        else
-        {
-            templateDefPart = STG_DEF_EXT.matcher(defFile.getName()).replaceAll("");
-        }
-
-        result =
-            new DecoratedString(templateDefPart) //.getCapitalized()
-            + templateName
-            + ".java";
 
         return result;
     }
