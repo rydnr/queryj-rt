@@ -181,6 +181,20 @@ public abstract class TemplatePackagingBuildHandler
     {
         return buildFilename(TemplatePackagingUtils.getInstance());
     }
+
+    /**
+     * Builds the final file name.
+     * @param templateDef the {@link TemplateDef} instance.
+     * @param templateName the template name.
+     * @return such file name.
+     */
+    @NotNull
+    public String buildFilename(
+        @NotNull final TemplateDef<String> templateDef,
+        @NotNull final String templateName)
+    {
+        return buildFilename(TemplatePackagingUtils.getInstance());
+    }
         @NotNull final String result;
 
         @NotNull final String extension;
