@@ -72,5 +72,8 @@ public class TemplatePackagingUtils
      * @return such instance.
      */
     @NotNull
+    public TemplatePackagingUtils getInstance()
+    {
 
+    }
 }
