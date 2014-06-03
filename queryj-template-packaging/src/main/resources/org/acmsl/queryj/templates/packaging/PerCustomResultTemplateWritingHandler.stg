@@ -80,7 +80,9 @@ import org.acmsl.queryj.QueryJCommandWrapper;
 <if(def.file)>
 import org.acmsl.queryj.templates.<def.name.noExtension>Template;
 import org.acmsl.queryj.templates.<def.name.noExtension>TemplateGenerator;
-
+import org.acmsl.queryj.templates.<def.name.noExtension>Template;
+import org.acmsl.queryj.templates.<def.name.noExtension>TemplateGenerator;
+<endif>
 /*
  * Importing some JetBrains annotations.
  */
