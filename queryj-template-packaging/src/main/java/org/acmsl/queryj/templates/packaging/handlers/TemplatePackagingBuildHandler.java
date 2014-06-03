@@ -189,7 +189,7 @@ public abstract class TemplatePackagingBuildHandler
      * @return such file name.
      */
     @NotNull
-    public String buildFilename(
+    protected String buildFilename(
         @NotNull final TemplateDef<String> templateDef,
         @NotNull final String templateName)
     {
