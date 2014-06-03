@@ -180,7 +180,7 @@ public abstract class TemplatePackagingBuildHandler
         @NotNull final String templateName)
     {
         return buildFilename(TemplatePackagingUtils.getInstance());
-
+    }
         @NotNull final String result;
 
         @NotNull final String extension;
