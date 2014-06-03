@@ -213,7 +213,6 @@ public abstract class TemplatePackagingBuildHandler
                 break;
         }
 
-        }
         @NotNull final String templateDefPart;
 
         @Nullable final File defFile = templateDef.getFile();
