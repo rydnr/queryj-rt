@@ -49,6 +49,7 @@ import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.Nullable;
 
 import java.io.File;
+import java.util.regex.Pattern;
 
 /**
  *
@@ -60,6 +61,18 @@ import java.io.File;
 public class TemplatePackagingUtils
     implements Singleton
 {
+    /**
+     * The regex to match .stg extensions.
+     */
+    @NotNull
+    private static final Pattern STG_EXT = Pattern.compile("\\.stg$");
+
+    /**
+     * The regex to match .stg.def extensions.
+     */
+    @NotNull
+    private static final Pattern STG_DEF_EXT = Pattern.compile("\\.stg\\.def$");
+
     /**
      * Singleton implemented to avoid the double check locking.
      */
