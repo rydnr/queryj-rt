@@ -123,6 +123,16 @@ public class PerTemplateDefClassNameHandler
     @Override
     protected String resolveContextValue(@NotNull final DefaultTemplatePackagingContext context)
     {
+    }
+    /**
+     * Resolves "class_name" values.
+     * @param context the {@link DefaultTemplatePackagingContext context}.
+     * @return such value.
+     */
+    @NotNull
+    @Override
+    protected String resolveContextValue(@NotNull final DefaultTemplatePackagingContext context)
+    {
         @NotNull final String result =
             new TemplatePackagingBuildHandler<
                 TemplatePackagingTemplate<TemplatePackagingContext>,
