@@ -59,11 +59,13 @@ public class TemplatePackagingUtils
     /**
      * Singleton implemented to avoid the double check locking.
      */
-    private final class TemplatePackagingUtilsSingletonContainer
+    private static final class TemplatePackagingUtilsSingletonContainer
     {
         /**
          * The singleton.
          */
         public static final TemplatePackagingUtils SINGLETON = new TemplatePackagingUtils();
     }
+
+    return
 }
