@@ -131,7 +131,9 @@ public class PerTemplateDefClassNameHandler
     }
     /**
      * Resolves "class_name" values.
-     * @param templateDef the {@link TemplateDef}
+     * @param templateDef the {@link TemplateDef}.
+     * @param templateName the template name.
+     * @param templatePackagingUtils the {@link TemplatePackagingUtils} instance.
      * @return such value.
      */
     @NotNull
