@@ -129,6 +129,7 @@ public class PerTemplateDefClassNameHandler
             resolveContextValue(
                 context.getTemplateDef(), context.getTemplateName(), TemplatePackagingUtils.getInstance());
     }
+
     /**
      * Resolves "class_name" values.
      * @param templateDef the {@link TemplateDef}.
