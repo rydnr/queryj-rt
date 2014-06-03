@@ -151,6 +151,7 @@ public abstract class TemplatePackagingBuildHandler
         @NotNull final List<TemplateDef<String>> templateDefs,
         @NotNull final QueryJCommand parameters)
     {
+        return bui
         @NotNull final String templateName = retrieveTemplateName(parameters);
         @NotNull final String outputPackage = retrieveOutputPackage(parameters);
 
