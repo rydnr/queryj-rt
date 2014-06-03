@@ -70,8 +70,8 @@ public class TemplatePackagingUtils
     /**
      * Default constructor.
      */
-    public TemplatePackagingUtils
-    {}
+    public TemplatePackagingUtils() {}
+
     /**
      * Retrieves the singleton instance.
      * @return such instance.
