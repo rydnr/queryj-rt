@@ -127,7 +127,7 @@ public class PerTemplateDefClassNameHandler
             new TemplatePackagingBuildHandler<
                 TemplatePackagingTemplate<TemplatePackagingContext>,
                 TemplatePackagingTemplateFactory<TemplatePackagingTemplate<TemplatePackagingContext>, TemplatePackagingContext>,
-                TemplatePackagingContext>().buildFilename(context.getTemplateDef(), context.getTemplateName());
+                TemplatePackagingContext>() {}.buildFilename(context.getTemplateDef(), context.getTemplateName());
 
         return result;
     }
