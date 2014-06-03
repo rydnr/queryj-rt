@@ -58,6 +58,7 @@ import org.acmsl.queryj.templates.packaging.DefaultTemplatePackagingContext;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingContext;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplate;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplateFactory;
+import org.acmsl.queryj.templates.packaging.TemplatePackagingUtils;
 import org.acmsl.queryj.templates.packaging.handlers.TemplatePackagingBuildHandler;
 import org.jetbrains.annotations.NotNull;
 
@@ -123,6 +124,9 @@ public class PerTemplateDefClassNameHandler
     @Override
     protected String resolveContextValue(@NotNull final DefaultTemplatePackagingContext context)
     {
+        return
+            resolveContextValue(
+                context.getTemplateDef(), context.getTemplateName(), TemplatePackagingUtils.getInstance());
     }
     /**
      * Resolves "class_name" values.
