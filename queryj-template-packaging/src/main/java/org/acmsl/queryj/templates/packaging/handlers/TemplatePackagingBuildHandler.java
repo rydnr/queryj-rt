@@ -186,6 +186,7 @@ public abstract class TemplatePackagingBuildHandler
      * Builds the final file name.
      * @param templateDef the {@link TemplateDef} instance.
      * @param templateName the template name.
+     * @param templatePackagingUtils the {@link TemplatePackagingUtils} instance.
      * @return such file name.
      */
     @NotNull
