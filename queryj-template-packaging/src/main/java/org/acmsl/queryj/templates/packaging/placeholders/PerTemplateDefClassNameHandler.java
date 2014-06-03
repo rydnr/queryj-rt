@@ -124,7 +124,7 @@ public class PerTemplateDefClassNameHandler
     protected String resolveContextValue(@NotNull final DefaultTemplatePackagingContext context)
     {
         @NotNull final String result =
-            new TemplatePackagingBuildHandler<>
+            new TemplatePackagingBuildHandler<
         <T extends TemplatePackagingTemplate<C>,
         TF extends TemplatePackagingTemplateFactory<T, C>,
         C extends TemplatePackagingContext >
