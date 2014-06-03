@@ -56,5 +56,7 @@ import org.checkthread.annotations.ThreadSafe;
 public class TemplatePackagingUtils
     implements Singleton
 {
-
+    /**
+     * Singleton i
+     */
 }
