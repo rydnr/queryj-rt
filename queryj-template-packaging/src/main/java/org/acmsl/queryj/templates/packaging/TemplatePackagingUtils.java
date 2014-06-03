@@ -59,4 +59,5 @@ public class TemplatePackagingUtils
     /**
      * Singleton implemented to avoid the double check locking.
      */
+    private
 }
