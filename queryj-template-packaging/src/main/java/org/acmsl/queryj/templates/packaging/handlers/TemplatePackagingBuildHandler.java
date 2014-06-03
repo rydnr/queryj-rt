@@ -42,6 +42,7 @@ import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.api.handlers.TemplateBuildHandler;
 import org.acmsl.queryj.templates.packaging.TemplateDefOutput;
+import org.acmsl.queryj.templates.packaging.TemplatePackagingUtils;
 import org.acmsl.queryj.tools.exceptions.MissingJdbcDriverAtRuntimeException;
 import org.acmsl.queryj.tools.exceptions.MissingJdbcPasswordAtRuntimeException;
 import org.acmsl.queryj.tools.exceptions.MissingJdbcUrlAtRuntimeException;
@@ -178,7 +179,7 @@ public abstract class TemplatePackagingBuildHandler
         @NotNull final TemplateDef<String> templateDef,
         @NotNull final String templateName)
     {
-        return buildFilename()
+        return buildFilename(TemplatePackagingUtils.g)
         @NotNull final String result;
 
         @NotNull final String extension;
