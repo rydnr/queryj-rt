@@ -139,7 +139,7 @@ public class PerTemplateDefClassNameHandler
     protected String resolveContextValue(
         @NotNull final TemplateDef<String> templateDef,
         @NotNull final String templateName,
-        @NotNull final TemplatePackagingUtils templatePackagingUtils
+        @NotNull final TemplatePackagingUtils templatePackagingUtils)
     {
         @NotNull final String result =
             new TemplatePackagingBuildHandler<
