@@ -57,6 +57,6 @@ public class TemplatePackagingUtils
     implements Singleton
 {
     /**
-     * Singleton i
+     * Singleton implemented to avoid the double check locking.
      */
 }
