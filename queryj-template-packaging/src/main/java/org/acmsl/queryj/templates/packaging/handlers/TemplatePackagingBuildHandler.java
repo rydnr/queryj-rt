@@ -199,6 +199,7 @@ public abstract class TemplatePackagingBuildHandler
             case JAVA:
                 extension = ".java";
                 break;
+            case PROPERTIES:
             case CUCUMBER:
                 extension = ".feature";
                 break;
