@@ -208,7 +208,7 @@ public abstract class TemplatePackagingBuildHandler
             case DBSD:
                 extension = ".dbsd";
                 break;
-            case
+            default:
 
         }
         @NotNull final String templateDefPart;
