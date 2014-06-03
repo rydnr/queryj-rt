@@ -135,7 +135,6 @@ public class PerTemplateDefClassNameHandler
      * @return such value.
      */
     @NotNull
-    @Override
     protected String resolveContextValue(
         @NotNull final TemplateDef<String> templateDef,
         @NotNull final String templateName,
