@@ -202,7 +202,7 @@ public abstract class TemplatePackagingBuildHandler
             case CUCUMBER:
                 extension = ".feature";
                 break;
-            case
+            case DBSD:
 
         }
         @NotNull final String templateDefPart;
