@@ -125,7 +125,7 @@ public class PerTemplateDefClassNameHandler
     {
         @NotNull final String result =
             new TemplatePackagingBuildHandler<
-        <T extends TemplatePackagingTemplate<C>,
+                <T extends TemplatePackagingTemplate<C>,
         TF extends TemplatePackagingTemplateFactory<T, C>,
         C extends TemplatePackagingContext >
 
