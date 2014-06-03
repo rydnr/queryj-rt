@@ -199,6 +199,8 @@ public abstract class TemplatePackagingBuildHandler
             case JAVA:
                 extension = ".java";
                 break;
+            case CUCUMBER::\
+
 
         }
         @NotNull final String templateDefPart;
