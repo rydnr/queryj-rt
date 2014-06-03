@@ -142,7 +142,7 @@ public class PerTemplateDefClassNameHandler
         @NotNull final TemplatePackagingUtils templatePackagingUtils)
     {
         @NotNull final String result =
-            templatePackagingUtils.buildFilename()
+            templatePackagingUtils.buildFilename(templateDef, templateName);
             {
 
             }.buildFilename(context.getTemplateDef(), context.getTemplateName());
