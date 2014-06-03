@@ -55,6 +55,7 @@ import org.acmsl.queryj.templates.packaging.DefaultTemplatePackagingContext;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.templates.packaging.TemplateDef;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingContext;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplate;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingTemplateFactory;
@@ -135,7 +136,10 @@ public class PerTemplateDefClassNameHandler
      */
     @NotNull
     @Override
-    protected String resolveContextValue(@NotNull final DefaultTemplatePackagingContext context)
+    protected String resolveContextValue(
+        @NotNull final TemplateDef<String> templateDef,
+        @NotNull final String templateName,
+        @NotNull final TemplatePackagingUtils templatePackagingUtils
     {
         @NotNull final String result =
             new TemplatePackagingBuildHandler<
