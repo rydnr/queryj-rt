@@ -78,7 +78,7 @@ import org.acmsl.queryj.QueryJCommandWrapper;
  * Importing custom templates.
  */
 <if(def.file)>
-import org.acmsl.queryj.templates.<def.file.noExtension>Template;
+import org.acmsl.queryj.templates.<def.file.name.noExtension>Template;
 import org.acmsl.queryj.templates.<def.name.noExtension>TemplateGenerator;
 <else>
 import org.acmsl.queryj.templates.<def.name.noExtension>Template;
