@@ -213,7 +213,7 @@ public abstract class TemplatePackagingBuildHandler
                 break;
         }
 
-        result = buildFilename(templateDef, templateName)
+        result = buildFilename(templateDef, templateName, extension);
         @NotNull final String templateDefPart;
 
         @Nullable final File defFile = templateDef.getFile();
