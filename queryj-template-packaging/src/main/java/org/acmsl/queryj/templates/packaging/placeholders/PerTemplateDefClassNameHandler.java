@@ -55,6 +55,7 @@ import org.acmsl.queryj.templates.packaging.DefaultTemplatePackagingContext;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.templates.packaging.handlers.TemplatePackagingBuildHandler;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -120,7 +121,7 @@ public class PerTemplateDefClassNameHandler
     protected String resolveContextValue(@NotNull final DefaultTemplatePackagingContext context)
     {
         @NotNull final String result =
-
+            new TemplatePackagingBuildHandler<>()
               new DecoratedString(STG_EXT.matcher(context.getTemplateDef().getName()).replaceAll("")).getValue(); //getCapitalized().getValue();
 
         return result + context.getTemplateName();
