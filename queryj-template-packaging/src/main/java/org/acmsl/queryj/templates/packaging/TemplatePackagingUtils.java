@@ -67,5 +67,8 @@ public class TemplatePackagingUtils
         public static final TemplatePackagingUtils SINGLETON = new TemplatePackagingUtils();
     }
 
-    return
+    /**
+     * Retrieves the singleton instance.
+     * @return such instance.
+     */
 }
