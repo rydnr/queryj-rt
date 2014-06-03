@@ -68,6 +68,8 @@ public class TemplatePackagingUtils
     }
 
     /**
+     *
+     */
     /**
      * Retrieves the singleton instance.
      * @return such instance.
