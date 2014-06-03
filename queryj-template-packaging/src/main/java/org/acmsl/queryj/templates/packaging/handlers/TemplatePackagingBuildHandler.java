@@ -203,6 +203,9 @@ public abstract class TemplatePackagingBuildHandler
                 extension = ".feature";
                 break;
             case DBSD:
+                extension = ".dbsd";
+                break;
+            case
 
         }
         @NotNull final String templateDefPart;
