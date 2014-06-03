@@ -74,6 +74,6 @@ public class TemplatePackagingUtils
     @NotNull
     public TemplatePackagingUtils getInstance()
     {
-
+        return TemplatePackagingUtilsSingletonContainer.SINGLETON;
     }
 }
