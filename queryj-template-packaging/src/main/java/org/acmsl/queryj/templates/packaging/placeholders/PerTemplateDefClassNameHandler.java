@@ -131,7 +131,7 @@ public class PerTemplateDefClassNameHandler
     }
     /**
      * Resolves "class_name" values.
-     * @param
+     * @param templateDef the
      * @return such value.
      */
     @NotNull
