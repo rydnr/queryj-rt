@@ -199,8 +199,10 @@ public abstract class TemplatePackagingBuildHandler
             case JAVA:
                 extension = ".java";
                 break;
-            case CUCUMBER::\
-
+            case CUCUMBER:
+                extension = ".feature";
+                break;
+            case
 
         }
         @NotNull final String templateDefPart;
