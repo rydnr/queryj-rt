@@ -104,6 +104,8 @@ public class DecoratedStringTest
     @Test
     public void isTrue_works()
     {
+        @NotNull final DecoratedString instance = new DecoratedString("true");
 
+        Assert.assertTrue(instance.isTrue());
     }
 }
