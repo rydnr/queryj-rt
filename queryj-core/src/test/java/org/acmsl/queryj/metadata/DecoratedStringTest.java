@@ -101,8 +101,11 @@ public class DecoratedStringTest
         Assert.assertEquals("TestWithCamelCaseExample", instance.getCapitalized().getValue());
     }
 
+    /**
+     * Checks whether isTrue works for "true".
+     */
     @Test
-    public void isTrue_works()
+    public void isTrue_works_for_true_literals()
     {
         @NotNull final DecoratedString instance = new DecoratedString("true");
 
