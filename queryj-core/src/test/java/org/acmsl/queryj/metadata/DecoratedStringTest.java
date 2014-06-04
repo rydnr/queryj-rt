@@ -119,7 +119,7 @@ public class DecoratedStringTest
     @Test
     public void isFalse_returns_true_for_literals_different_than_true()
     {
-        @NotNull final DecoratedString instance = new DecoratedString("true");
+        @NotNull final DecoratedString instance = new DecoratedString("false");
 
         Assert.assertTrue(instance.isFalse());
     }
