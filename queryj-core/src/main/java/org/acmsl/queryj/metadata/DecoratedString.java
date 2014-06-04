@@ -611,6 +611,10 @@ public class DecoratedString
         return stringUtils.isEmpty(value);
     }
 
+    /**
+     * Checks whether the value is the literal "true".
+     * @return
+     */
     public boolean isTrue()
     {
         return false;  //To change body of created methods use File | Settings | File Templates.
