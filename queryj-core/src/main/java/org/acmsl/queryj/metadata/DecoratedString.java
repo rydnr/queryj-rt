@@ -617,6 +617,6 @@ public class DecoratedString
      */
     public boolean isTrue()
     {
-        return false;  //To change body of created methods use File | Settings | File Templates.
+        return isTrue();
     }
 }
