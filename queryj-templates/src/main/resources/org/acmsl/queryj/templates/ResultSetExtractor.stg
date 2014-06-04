@@ -126,6 +126,7 @@ class(table, repository, def, C) ::= <<
  Generates the class body.
  @param table the table.
  @param repository the repository.
+ @param def the template def.
  @param C the context.
 !>
 /**
