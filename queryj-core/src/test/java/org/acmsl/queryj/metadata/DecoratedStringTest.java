@@ -112,7 +112,6 @@ public class DecoratedStringTest
         Assert.assertTrue(instance.isTrue());
     }
 
-
     /**
      * Checks whether isFalse returns true for anything but "true".
      */
