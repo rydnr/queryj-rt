@@ -102,5 +102,8 @@ public class DecoratedStringTest
     }
 
     @Test
-    public void isTrue_works_for_
+    public void isTrue_works()
+    {
+
+    }
 }
