@@ -610,4 +610,8 @@ public class DecoratedString
     {
         return stringUtils.isEmpty(value);
     }
+
+    public boolean isTrue()
+    {
+    }
 }
