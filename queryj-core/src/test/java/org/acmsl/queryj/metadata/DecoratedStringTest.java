@@ -114,7 +114,7 @@ public class DecoratedStringTest
 
 
     /**
-     * Checks whether isTrue works for "true".
+     * Checks whether isTrue returns false for anything but "true".
      */
     @Test
     public void isTrue_works_for_true_literals()
