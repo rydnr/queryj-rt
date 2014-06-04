@@ -632,7 +632,7 @@ public class DecoratedString
 
     /**
      * Checks whether the value is not the literal "true".
-     * @return {@code } in such case.
+     * @return {@code f} in such case.
      */
     public boolean isFalse()
     {
