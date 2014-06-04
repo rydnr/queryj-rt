@@ -617,6 +617,6 @@ public class DecoratedString
      */
     public boolean isTrue()
     {
-        return isTrue();
+        return isTrue(getValue());
     }
 }
