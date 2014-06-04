@@ -192,7 +192,7 @@ protected <if(C.templateDef.metadata.multiple.true)>List\<<table.name.voName>\><
  * custom exception.
  */
 <notnull(C=C)>
-protected <if(C.templateDef.metadata.multiple)>List\<<table.name.voName>\><else><table.name.voName><endif> extractValue(
+protected <if(C.templateDef.metadata.multiple.true)>List\<<table.name.voName>\><else><table.name.voName><endif> extractValue(
     <notnull(C=C)>final ResultSet resultSet,
     <notnull(C=C)>final <table.name.voName>Factory factory)
   throws  SQLException,
