@@ -622,9 +622,10 @@ public class DecoratedString
 
     /**
      * Checks whether the value is the literal "true".
+     * @param value the value.
      * @return {@code true} in such case.
      */
-    public boolean isTrue()
+    protected boolean isTrue(@NotNull final String value)
     {
         return isTrue(getValue());
     }
