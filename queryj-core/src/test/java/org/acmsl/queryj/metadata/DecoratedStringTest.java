@@ -122,5 +122,9 @@ public class DecoratedStringTest
         @NotNull final DecoratedString instance = new DecoratedString("false");
 
         Assert.assertTrue(instance.isFalse());
+
+        @NotNull final DecoratedString instance = new DecoratedString("false");
+
+        Assert.assertTrue(instance.isFalse());
     }
 }
