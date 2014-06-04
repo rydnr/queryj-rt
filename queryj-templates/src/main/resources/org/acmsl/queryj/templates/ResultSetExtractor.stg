@@ -136,7 +136,7 @@ class(table, repository, def, C) ::= <<
 <class_common_javadoc(template="org/acmsl/queryj/templates/ResultSetExtractor.stg", C=C)>
  */
 public class <table.name.voName>ResultSet<if(def.metadata.multiple.meansTrue)>Multiple<else>Single<endif>Extractor
-    extends V24ResultSet<if(def.metadata.multiple.true)>Multiple<else>Single<endif>Extractor\<<table.name.voName>\>
+    extends V24ResultSet<if(def.metadata.multiple.meansTrue)>Multiple<else>Single<endif>Extractor\<<table.name.voName>\>
 {
     /**
      * Creates a new instance.
