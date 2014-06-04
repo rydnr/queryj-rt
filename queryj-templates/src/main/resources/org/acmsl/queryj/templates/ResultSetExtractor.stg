@@ -80,7 +80,7 @@ sourceImpl(table, def, C) ::= <<
  * Importing V24-Commons classes.
  */
 import com.ventura24.commons.dao.DAOListener;
-import com.ventura24.commons.dao.V24ResultSet<if(C.templateDef.metadata.multiple.true)>Multiple<else>Single<endif>Extractor;
+import com.ventura24.commons.dao.V24ResultSet<if(def.metadata.multiple.true)>Multiple<else>Single<endif>Extractor;
 
 /*
  * Importing Spring classes.
