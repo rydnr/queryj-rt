@@ -634,7 +634,7 @@ public class DecoratedString
      * Checks whether the value is the literal "true".
      * @return {@code true} in such case.
      */
-    public boolean isTrue()
+    public boolean isMeansTrue()
     {
         return isTrue(getValue());
     }
