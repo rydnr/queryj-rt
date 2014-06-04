@@ -114,7 +114,7 @@ public class DecoratedStringTest
 
 
     /**
-     * Checks whether isTrue returns false for anything but "true".
+     * Checks whether isFalse returns true for anything but "true".
      */
     @Test
     public void isFalse_returns_true_for_literals_different_than_true()
