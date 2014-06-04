@@ -111,4 +111,16 @@ public class DecoratedStringTest
 
         Assert.assertTrue(instance.isTrue());
     }
+
+
+    /**
+     * Checks whether isTrue works for "true".
+     */
+    @Test
+    public void isTrue_works_for_true_literals()
+    {
+        @NotNull final DecoratedString instance = new DecoratedString("true");
+
+        Assert.assertTrue(instance.isTrue());
+    }
 }
