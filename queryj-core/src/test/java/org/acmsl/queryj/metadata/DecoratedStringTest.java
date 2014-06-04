@@ -100,4 +100,7 @@ public class DecoratedStringTest
 
         Assert.assertEquals("TestWithCamelCaseExample", instance.getCapitalized().getValue());
     }
+
+    @Test
+    public void
 }
