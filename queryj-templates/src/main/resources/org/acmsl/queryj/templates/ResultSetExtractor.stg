@@ -49,7 +49,7 @@ source(C) ::= <<
 <sourceImpl(table=C.table, C=C)>
 >>
 
-sourceImpl(table, C) ::= <<
+sourceImpl(table, def, C) ::= <<
 <!
   Defines the rules to generate ResultSetExtractor implementations.
   @param table the table.
