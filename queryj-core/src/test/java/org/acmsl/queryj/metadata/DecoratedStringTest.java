@@ -123,7 +123,7 @@ public class DecoratedStringTest
 
         Assert.assertTrue(instance.isFalse());
 
-        @NotNull final DecoratedString instance = new DecoratedString("false");
+        @NotNull final DecoratedString instance = new DecoratedString("something else");
 
         Assert.assertTrue(instance.isFalse());
     }
