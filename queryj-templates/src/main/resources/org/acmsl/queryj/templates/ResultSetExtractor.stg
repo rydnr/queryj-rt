@@ -174,7 +174,7 @@ defaultExtractor(table, repository, def, C) ::= <<
  */
 @Override
 <notnull(C=C)>
-protected <if(def.metadata.multiple.true)>List\<<table.name.voName>\><else><table.name.voName><endif> extractValue(<notnull(C=C)>final ResultSet resultSet)
+protected <if(def.metadata.multiple.meansTrue)>List\<<table.name.voName>\><else><table.name.voName><endif> extractValue(<notnull(C=C)>final ResultSet resultSet)
     throws  SQLException,
             DataAccessException
 {
