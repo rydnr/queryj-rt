@@ -619,4 +619,13 @@ public class DecoratedString
     {
         return isTrue(getValue());
     }
+
+    /**
+     * Checks whether the value is the literal "true".
+     * @return {@code true} in such case.
+     */
+    public boolean isTrue()
+    {
+        return isTrue(getValue());
+    }
 }
