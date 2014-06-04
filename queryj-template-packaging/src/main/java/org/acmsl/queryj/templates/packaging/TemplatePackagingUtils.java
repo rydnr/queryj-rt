@@ -110,32 +110,7 @@ public class TemplatePackagingUtils
         @NotNull final TemplateDef<String> templateDef,
         @NotNull final String templateName)
     {
-        @NotNull final String result;
-
-        @NotNull final String extension;
-
-        switch (templateDef.getOutput())
-        {
-            case JAVA:
-                extension = ".java";
-                break;
-            case PROPERTIES:
-                extension = ".properties";
-                break;
-            case CUCUMBER:
-                extension = ".feature";
-                break;
-            case DBSD:
-                extension = ".dbsd";
-                break;
-            default:
-                extension = "";
-                break;
-        }
-
-        result = buildFilename(templateDef, templateName, extension);
-
-        return result;
+        return buildFilename(templateDef, templateName, ".java");
     }
 
     /**
