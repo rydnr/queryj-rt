@@ -636,7 +636,7 @@ public class DecoratedString
      */
     public boolean isMeansTrue()
     {
-        return isTrue(getValue());
+        return isTrue();
     }
 
     /**
