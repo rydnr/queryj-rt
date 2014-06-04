@@ -125,6 +125,6 @@ public class DecoratedStringTest
 
         @NotNull final DecoratedString somethingElse = new DecoratedString("something else");
 
-        Assert.assertTrue(instance.isFalse());
+        Assert.assertTrue(somethingElse.isFalse());
     }
 }
