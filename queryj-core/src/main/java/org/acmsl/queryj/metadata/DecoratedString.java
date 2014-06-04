@@ -629,4 +629,14 @@ public class DecoratedString
     {
         return "true".equals(value);
     }
+
+    /**
+     * Checks whether the value is the literal "true".
+     * @return {@code true} in such case.
+     */
+    public boolean isTrue()
+    {
+        return isTrue(getValue());
+    }
+
 }
