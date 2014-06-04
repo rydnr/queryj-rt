@@ -117,7 +117,7 @@ public class DecoratedStringTest
      * Checks whether isTrue returns false for anything but "true".
      */
     @Test
-    public void isTrue_works_for_true_literals()
+    public void isTrue_returns_false_for_true_literals()
     {
         @NotNull final DecoratedString instance = new DecoratedString("true");
 
