@@ -53,6 +53,7 @@ sourceImpl(table, def, C) ::= <<
 <!
   Defines the rules to generate ResultSetExtractor implementations.
   @param table the table.
+  @param def the template def.
   @param C the context.
 !>
 /*
