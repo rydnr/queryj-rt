@@ -627,6 +627,6 @@ public class DecoratedString
      */
     protected boolean isTrue(@NotNull final String value)
     {
-        return isTrue(getValue());
+        return "true".equals(value);
     }
 }
