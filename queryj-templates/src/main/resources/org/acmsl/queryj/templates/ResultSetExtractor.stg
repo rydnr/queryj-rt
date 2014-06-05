@@ -95,7 +95,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 <import_attribute_types(table=table, useHeader=false)>
 
-<class(table=table, repository=C.repository, def=def, C=C)>
+<class(table=table, repository=C.repository, def=C.templateDef, C=C)>
 >>
 
 project_imports(basePackageName, voSubpackageName, table, repository) ::= <<
