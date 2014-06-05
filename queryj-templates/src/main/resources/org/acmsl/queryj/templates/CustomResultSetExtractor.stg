@@ -114,6 +114,7 @@ class(result, repository, def, C) ::= <<
  Generates the class body.
  @param result the result.
  @param repository the repository.
+ @param def the template def.
  @param C the context.
 !>
 /**
