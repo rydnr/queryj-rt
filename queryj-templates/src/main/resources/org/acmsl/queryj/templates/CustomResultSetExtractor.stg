@@ -53,6 +53,7 @@ sourceImpl(result, def, C) ::= <<
 <!
   Defines the rules to generate CustomResultSetExtractor implementations.
   @param result the result.
+  @param def the template def.
   @param C the context.
 !>
 /*
