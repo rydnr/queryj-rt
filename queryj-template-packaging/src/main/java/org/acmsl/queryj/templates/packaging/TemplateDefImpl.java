@@ -482,7 +482,7 @@ public class TemplateDefImpl
             + ", \"type\": \"" + m__Type  + '"'
             + ", \"filenameBuilder\": \"" + m__strFilenameBuilder + '"'
             + ", \"packageName\": \"" + m__strPackageName + '"'
-            + ", \"file\": \"" + (m__File.getAbsolutePath() + '"'
+            + ", \"file\": \"" + (m__File == null) .getAbsolutePath() + '"'
             + ", \"metadata\": \"" + m__mMetadata + '"'
             + ", \"disabled\": " + m__bDisabled
             + ", \"debug\": " + m__bDebug
