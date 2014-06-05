@@ -49,7 +49,7 @@ source(C) ::= <<
 <sourceImpl(result=C.result, C=C)>
 >>
 
-sourceImpl(result, defC) ::= <<
+sourceImpl(result, def, C) ::= <<
 <!
   Defines the rules to generate CustomResultSetExtractor implementations.
   @param result the result.
