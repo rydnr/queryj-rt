@@ -118,7 +118,7 @@ public class TemplateDefPerTableFillTemplateChain
             new TemplateContextFillAdapterHandler<>(
                 new TemplateDefHandler<>(context)));
 
-        result.addAll(super.getHandlers((PerTableTemplateContext) context));
+        result.addAll(super.getHandlers(context));
 
         return result;
     }
