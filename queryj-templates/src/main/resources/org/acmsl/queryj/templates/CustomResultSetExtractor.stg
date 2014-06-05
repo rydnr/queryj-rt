@@ -109,7 +109,7 @@ description(result) ::= <<
 {@link V24ResultSetExtractor} implementation for {@link <result.simpleClassValue> <result.id>} result.
 >>
 
-class(result, repository, C) ::= <<
+class(result, repository, def, C) ::= <<
 <!
  Generates the class body.
  @param result the result.
