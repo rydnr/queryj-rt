@@ -46,7 +46,7 @@ source(C) ::= <<
   Defines the rules to generate CustomResultSetExtractor implementations.
   @param C the context.
 !>
-<sourceImpl(result=C.result, C=C)>
+<sourceImpl(result=C.result, def=C.templateDef, C=C)>
 >>
 
 sourceImpl(result, def, C) ::= <<
