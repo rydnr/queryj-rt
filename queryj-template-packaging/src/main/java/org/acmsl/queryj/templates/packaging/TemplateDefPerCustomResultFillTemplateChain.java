@@ -44,8 +44,16 @@ import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.api.handlers.TemplateContextFillAdapterHandler;
 import org.acmsl.queryj.api.handlers.fillhandlers.FillHandler;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.acmsl.queryj.placeholders.FillTemplateChainWrapper;
 import org.acmsl.queryj.placeholders.BasePerCustomResultFillTemplateChain;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.acmsl.queryj.templates.packaging.placeholders.TemplateDefHandler;
 
 /*
