@@ -97,5 +97,9 @@ public class AbstractTemplateDefFillTemplateChainTest<
         Assert.assertTrue(found);
     }
 
-    protected abstract C mockContext()
+    /**
+     * Mocks a C context.
+     * @return such context.
+     */
+    protected abstract C mockContext();
 }
