@@ -39,6 +39,7 @@ package org.acmsl.queryj.templates.packaging;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.api.PerCustomResultTemplateContext;
 import org.acmsl.queryj.api.PerTableTemplateContext;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.api.handlers.TemplateContextFillAdapterHandler;
@@ -103,7 +104,7 @@ public class TemplateDefPerCustomResultFillTemplateChain
             new TemplateContextFillAdapterHandler<>(
                 new TemplateDefHandler<>(context)));
 
-        result.addAll(super.getHandlers((PerTableTemplateContext) context));
+        result.addAll(super.getHandlers((PerCustomResultTemplateContext) context));
 
         return result;
     }
