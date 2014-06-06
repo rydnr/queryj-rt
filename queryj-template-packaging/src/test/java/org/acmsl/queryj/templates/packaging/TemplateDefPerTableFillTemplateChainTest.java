@@ -47,7 +47,7 @@ import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing checkthread.org annotations.
+ * Importing JUnit classes.
  */
 import org.jetbrains.annotations.Nullable;
 import org.junit.Assert;
