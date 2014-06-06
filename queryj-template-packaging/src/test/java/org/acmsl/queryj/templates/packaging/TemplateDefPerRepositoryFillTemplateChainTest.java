@@ -45,12 +45,14 @@ import org.acmsl.queryj.api.handlers.fillhandlers.FillHandler;
 import org.acmsl.queryj.placeholders.BasePerRepositoryFillTemplateChain;
 import org.acmsl.queryj.placeholders.FillTemplateChainWrapper;
 import org.acmsl.queryj.templates.packaging.placeholders.TemplateDefHandler;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -63,46 +65,22 @@ import java.util.List;
  */
 @ThreadSafe
 public class TemplateDefPerRepositoryFillTemplateChainTest
-    extends BasePerRepositoryFillTemplateChain<TemplateDefPerRepositoryTemplateContext>
+    extends AbstractTemplateDefFillTemplateChainTest<
+    TemplateDefPerCustomResultTemplateContext, TemplateDefPerCustomResultFillTemplateChain>
 {
     /**
-     * Creates a {@code TemplateDefPerCustomResultFillTemplateChain} using given context.
-     * @param context the {@link TemplateDefPerCustomResultTemplateContext context}.
+     * Checks getHandlers() include the handler to resolve
+     * "templateDef" placeholder.
      */
-    public TemplateDefPerRepositoryFillTemplateChain(@NotNull final TemplateDefPerRepositoryTemplateContext context)
+    @Test
+    public void getHandlers_include_templateDef_placeholder()
     {
-        super(context);
-    }
+        @NotNull final TemplateDefPerCustomResultTemplateContext context =
+            EasyMock.createNiceMock(TemplateDefPerCustomResultTemplateContext.class);
 
-    /**
-     * {@inheritDoc}
-     */
-    @NotNull
-    @Override
-    public QueryJCommand providePlaceholders(final boolean relevantOnly)
-        throws QueryJBuildException
-    {
-        return new FillTemplateChainWrapper<>(this).providePlaceholders(relevantOnly);
-    }
+        @NotNull final TemplateDefPerCustomResultFillTemplateChain instance =
+            new TemplateDefPerCustomResultFillTemplateChain(context);
 
-    /**
-     * Retrieves the additional per-table handlers.
-     * @param context the {@link TemplateDefPerCustomResultTemplateContext context}.
-     * @return such handlers.
-     */
-    @NotNull
-    @Override
-    protected List<FillHandler<?>> getHandlers(
-        @NotNull final TemplateDefPerRepositoryTemplateContext context)
-    {
-        @NotNull final List<FillHandler<?>> result = new ArrayList<>(12);
-
-        result.add(
-            new TemplateContextFillAdapterHandler<>(
-                new TemplateDefHandler<>(context)));
-
-        result.addAll(super.getHandlers(context));
-
-        return result;
+        testGetHandlers(instance);
     }
 }
