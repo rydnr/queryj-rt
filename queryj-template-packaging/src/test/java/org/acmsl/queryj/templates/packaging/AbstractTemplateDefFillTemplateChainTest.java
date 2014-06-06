@@ -72,8 +72,7 @@ public abstract class AbstractTemplateDefFillTemplateChainTest<
     {
         @NotNull final C context = mockContext();
 
-        @NotNull final CH instance =
-            createChain(context);
+        @NotNull final CH instance = createChain(context);
 
         @NotNull final List<?> handlers = instance.getHandlers();
 
