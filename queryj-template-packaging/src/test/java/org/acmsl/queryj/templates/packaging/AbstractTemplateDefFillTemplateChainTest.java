@@ -54,7 +54,7 @@ import org.junit.Test;
 import java.util.List;
 
 /**
- *
+ * Common logic for
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/06/06 06:59
