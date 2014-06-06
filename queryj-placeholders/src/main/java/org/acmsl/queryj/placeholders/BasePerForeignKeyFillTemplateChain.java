@@ -70,9 +70,8 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2012/06/18
  */
 @ThreadSafe
-public class BasePerForeignKeyFillTemplateChain
-    extends AbstractFillTemplateChain<PerForeignKeyTemplateContext>
-{
+public class BasePerForeignKeyFillTemplateChain<C extends PerForeignKeyTemplateContext>
+C{
     /**
      * Creates a {@link BasePerForeignKeyFillTemplateChain} using given context.
      * @param context the {@link org.acmsl.queryj.api.PerForeignKeyTemplateContext context}.
