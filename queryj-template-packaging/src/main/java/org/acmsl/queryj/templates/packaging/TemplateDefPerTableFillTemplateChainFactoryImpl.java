@@ -75,7 +75,7 @@ public class TemplateDefPerTableFillTemplateChainFactoryImpl
      * @param context the {@link PerTableTemplateContext} needed.
      * @return the FillTemplateChain, or {@code null} if the context is invalid.
      */
-    @Nullable
+    @NotNull
     @Override
     public FillTemplateChain<TemplateDefPerTableTemplateContext> createFillChain(
         @NotNull final TemplateDefPerTableTemplateContext context)
