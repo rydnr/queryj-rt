@@ -38,6 +38,9 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.api.FillTemplateChain;
+import org.acmsl.queryj.placeholders.FillTemplateChainWrapper;
+import org.acmsl.queryj.placeholders.PerRepositoryFillTemplateChainFactoryImpl;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -53,5 +56,22 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class TemplateDefPerCustomResultFillTemplateChainFactoryImpl
+    extends PerRepositoryFillTemplateChainFactoryImpl<TemplateDefPerRepositoryTemplateContext>
+{
+    /**
+     * Creates {@link org.acmsl.queryj.api.FillTemplateChain} instances for given context.
+     * @param context the {@link org.acmsl.queryj.api.PerRepositoryTemplateContext} needed.
+     * @return the FillTemplateChain, or {@code null} if the context is invalid.
+     */
+    @NotNull
+    @Override
+    public FillTemplateChain<TemplateDefPerRepositoryTemplateContext> createFillChain(
+        @NotNull final TemplateDefPerRepositoryTemplateContext context)
+    {
+        return
+            new FillTemplateChainWrapper<>(
+                new TemplateDefPerRepositoryFillTemplateChain(context));
+    }
+}
 {
 }
