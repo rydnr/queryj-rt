@@ -59,6 +59,7 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2013/06/08
  */
 @SuppressWarnings("unused")
+@ThreadSafe
 public class PerTableFillTemplateChainFactoryImpl<C extends PerTableTemplateContext>
     implements PerTableFillTemplateChainFactory<C>
 {
