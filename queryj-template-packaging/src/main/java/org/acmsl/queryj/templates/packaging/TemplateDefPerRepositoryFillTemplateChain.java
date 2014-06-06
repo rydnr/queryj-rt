@@ -28,8 +28,7 @@
  * Author: Jose San Leandro Armendariz
  *
  * Description: Builds the list of fill handlers to extend
- *              BasePerRepositoryFillTemplateChain's
- * with {@link TemplateDef}-related ones.
+ *              BasePerRepositoryFillTemplateChain's  with {@link TemplateDef}-related ones.
 
  *
  * Date: 2014/06/06
