@@ -69,7 +69,7 @@ public abstract class AbstractTemplateDefFillTemplateChainTest<
      */
     public void getHandlers_include_templateDef_placeholder(@NotNull final CH chain)
     {
-        @NotNull final List<?> handlers = instance.getHandlers();
+        @NotNull final List<?> handlers = chain.getHandlers();
 
         boolean found = false;
 
