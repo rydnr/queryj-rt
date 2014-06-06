@@ -75,8 +75,8 @@ public class TemplateDefPerRepositoryFillTemplateChainTest
     @Test
     public void getHandlers_include_templateDef_placeholder()
     {
-        @NotNull final TemplateDefPerCustomResultTemplateContext context =
-            EasyMock.createNiceMock(TemplateDefPerCustomResultTemplateContext.class);
+        @NotNull final TemplateDefPerRepositoryTemplateContext context =
+            EasyMock.createNiceMock(TemplateDefPerRepositoryTemplateContext.class);
 
         @NotNull final TemplateDefPerCustomResultFillTemplateChain instance =
             new TemplateDefPerCustomResultFillTemplateChain(context);
