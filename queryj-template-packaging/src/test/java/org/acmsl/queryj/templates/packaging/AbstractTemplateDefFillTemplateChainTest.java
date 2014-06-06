@@ -97,5 +97,5 @@ public class AbstractTemplateDefFillTemplateChainTest<
         Assert.assertTrue(found);
     }
 
-    protected abstract
+    protected abstract C mockContext()
 }
