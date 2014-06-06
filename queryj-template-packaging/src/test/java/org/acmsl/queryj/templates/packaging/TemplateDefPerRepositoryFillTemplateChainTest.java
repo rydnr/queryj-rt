@@ -79,7 +79,7 @@ public class TemplateDefPerRepositoryFillTemplateChainTest
             EasyMock.createNiceMock(TemplateDefPerRepositoryTemplateContext.class);
 
         @NotNull final TemplateDefPerRepositoryFillTemplateChain instance =
-            new TemplateDefPerCustomResultFillTemplateChain(context);
+            new TemplateDefPerRepositoryFillTemplateChain(context);
 
         testGetHandlers(instance);
     }
