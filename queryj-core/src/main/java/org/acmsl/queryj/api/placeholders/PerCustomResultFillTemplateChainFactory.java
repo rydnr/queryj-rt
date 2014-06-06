@@ -50,7 +50,7 @@ import org.checkthread.annotations.ThreadSafe;
  * JDK 6 Services'-compatible per-custom-result {@link FillTemplateChainFactory}
  * implementation.
  * @param <C> the template context.
- * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
+ * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2013/06/08
  */
