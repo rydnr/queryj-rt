@@ -71,7 +71,7 @@ public class TemplateDefPerCustomResultFillTemplateChain
      * Creates a {@code TemplateDefPerTableFillTemplateChain} using given context.
      * @param context the {@link TemplateDefPerTableTemplateContext context}.
      */
-    public TemplateDefPerCustomResultFillTemplateChain(@NotNull final TemplateDefPerTableTemplateContext context)
+    public TemplateDefPerCustomResultFillTemplateChain(@NotNull final TemplateDefPerCustomResultTemplateContext context)
     {
         super(context);
     }
