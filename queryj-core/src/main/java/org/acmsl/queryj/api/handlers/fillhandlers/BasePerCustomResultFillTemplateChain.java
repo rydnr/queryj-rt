@@ -90,56 +90,5 @@ public class BasePerCustomResultFillTemplateChain<BC extends PerCustomResultTemp
     protected List<FillHandler<?>> getHandlers(@NotNull final PerTableTemplateContext context)
     {
         return new ArrayList<>(0);
-
-        result.add(
-            new TemplateContextFillAdapterHandler<>(
-                new CustomResultsHandler(context)));
-
-        result.add(
-            new TemplateContextFillAdapterHandler<>(
-                new DAOClassNameHandler(context)));
-
-        result.add(
-            new TemplateContextFillAdapterHandler<>(
-                new DAOImplementationClassNameHandler(context)));
-
-        result.add(
-            new TemplateContextFillAdapterHandler<>(
-                new DAOFactoryClassNameHandler(context)));
-
-        result.add(
-            new TemplateContextFillAdapterHandler<>(
-                new ForeignKeyListHandler(context)));
-
-        result.add(
-            new TemplateContextFillAdapterHandler<>(
-                new NonPrimaryKeyAttributesHandler(context)));
-
-        result.add(
-            new TemplateContextFillAdapterHandler<>(
-                new PrimaryKeyHandler(context)));
-
-        result.add(
-            new TemplateContextFillAdapterHandler<>(
-                new TableHandler(context)));
-
-        result.add(
-            new TemplateContextFillAdapterHandler<>(
-                new TableNameHandler(context)));
-
-        result.add(
-            new TemplateContextFillAdapterHandler<>(
-                new ValueObjectNameHandler(context)));
-
-        result.add(
-            new TemplateContextFillAdapterHandler<>(
-                new TableAttributeTypeImportsHandler(context)));
-
-        result.add(
-            new TemplateContextFillAdapterHandler<>(
-                new StaticValuesHandler(context)));
-
-        return result;
     }
-
 }
