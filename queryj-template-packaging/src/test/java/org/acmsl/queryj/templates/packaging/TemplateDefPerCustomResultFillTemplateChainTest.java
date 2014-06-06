@@ -63,7 +63,7 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public abstract class TemplateDefPerCustomResultFillTemplateChainTest
     extends AbstractTemplateDefFillTemplateChainTest<
-                TemplateDefPerTableTemplateContext, TemplateDefPerTableFillTemplateChain>
+                TemplateDefPerCustomResultTemplateContext, TemplateDefPerTableFillTemplateChain>
 {
     /**
      * Checks getHandlers() include the handler to resolve
