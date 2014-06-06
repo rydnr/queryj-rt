@@ -84,7 +84,7 @@ public class TemplateDefPerTableFillTemplateChainTest
         @NotNull final TemplateDefPerTableFillTemplateChain instance =
             new TemplateDefPerTableFillTemplateChain(context);
 
-        testGetHandlers();
+        testGetHandlers(instance);
         @NotNull final List<?> handlers = instance.getHandlers();
 
         boolean found = false;
