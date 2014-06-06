@@ -27,7 +27,8 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Creates the chain to provide all per-custom-result
+ *              placeholders, with access to the TemplateDef information.
  *
  * Date: 2014/06/06
  * Time: 20:45
