@@ -55,6 +55,7 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2014/06/06 20:45
  */
 @ThreadSafe
+@SuppressWarnings("unused")
 public class TemplateDefPerCustomSqlFillTemplateChainFactoryImpl
     extends PerCustomSqlFillTemplateChainFactoryImpl<TemplateDefPerCustomSqlTemplateContext>
 {
