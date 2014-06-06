@@ -48,6 +48,11 @@ import org.acmsl.queryj.api.placeholders.PerTableFillTemplateChainFactory;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+/*
+ * Importing checkthread.org annotations.
+ */
+import org.checkthread.annotations.ThreadSafe;
+
 /**
  * Creates the chain to provide all per-table placeholders.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
