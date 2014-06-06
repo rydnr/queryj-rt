@@ -73,7 +73,7 @@ public abstract class AbstractTemplateDefFillTemplateChainTest<
         @NotNull final C context = mockContext();
 
         @NotNull final TemplateDefPerTableFillTemplateChain instance =
-            createChain()
+            createChain(context);
 
         @NotNull final List<?> handlers = instance.getHandlers();
 
