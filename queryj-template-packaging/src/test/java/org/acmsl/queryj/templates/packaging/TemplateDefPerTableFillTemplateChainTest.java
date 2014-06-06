@@ -65,7 +65,7 @@ public class TemplateDefPerTableFillTemplateChainTest
     public void getHandlers_include_templateDef_placeholder()
     {
         @NotNull final TemplateDefPerTableTemplateContext context =
-
+            new TemplateDefPerTableTemplateContext()
         @NotNull final TemplateDefPerTableFillTemplateChain instance =
             new TemplateDefPerTableFillTemplateChain(context);
     }
