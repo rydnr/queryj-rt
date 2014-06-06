@@ -55,11 +55,11 @@ import org.acmsl.queryj.placeholders.FillTemplateChainWrapper;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.templates.packaging.placeholders.TemplateDefHandler;
-import org.jetbrains.annotations.NotNull;
+
 /*
  * Importing JetBrains annotations.
  */
-
+import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
