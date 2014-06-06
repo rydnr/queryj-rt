@@ -47,6 +47,7 @@ import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 /*
  * Importing JetBrains annotations.
  */
+import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -62,6 +63,7 @@ import java.util.List;
  * @since 3.0
  * Created: 2012/06/17
  */
+@ThreadSafe
 public class BasePerCustomResultFillTemplateChain<BC extends PerCustomResultTemplateContext>
     implements FillTemplateChain<BC>
 {
