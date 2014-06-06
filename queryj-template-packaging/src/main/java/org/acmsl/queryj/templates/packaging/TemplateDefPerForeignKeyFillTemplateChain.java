@@ -28,7 +28,7 @@
  * Author: Jose San Leandro Armendariz
  *
  * Description: Builds the list of fill handlers to extend
- *              BasePerRepositoryFillTemplateChain's with TemplateDef-related
+ *              BasePerForeignKeyFillTemplateChain's with TemplateDef-related
  *              ones.
  *
  * Date: 2014/06/06
@@ -44,7 +44,7 @@ import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.api.handlers.TemplateContextFillAdapterHandler;
 import org.acmsl.queryj.api.handlers.fillhandlers.FillHandler;
-import org.acmsl.queryj.placeholders.BasePerRepositoryFillTemplateChain;
+import org.acmsl.queryj.placeholders.BasePerForeignKeyFillTemplateChain;
 import org.acmsl.queryj.placeholders.FillTemplateChainWrapper;
 import org.acmsl.queryj.templates.packaging.placeholders.TemplateDefHandler;
 import org.jetbrains.annotations.NotNull;
@@ -58,7 +58,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Builds the list of fill handlers to extend {@link BasePerRepositoryFillTemplateChain}'s
+ * Builds the list of fill handlers to extend {@link BasePerForeignKeyFillTemplateChain}'s
  * with {@link TemplateDef}-related ones.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
@@ -66,13 +66,13 @@ import java.util.List;
  */
 @ThreadSafe
 public class TemplateDefPerForeignKeyFillTemplateChain
-    extends BasePerRepositoryFillTemplateChain<TemplateDefPerRepositoryTemplateContext>
+    extends BasePerForeignKeyFillTemplateChain<TemplateDefPerForeignKeyTemplateContext>
 {
     /**
-     * Creates a {@code TemplateDefPerRepositoryFillTemplateChain} using given context.
-     * @param context the {@link TemplateDefPerRepositoryTemplateContext context}.
+     * Creates a {@code TemplateDefPerForeignKeyFillTemplateChain} using given context.
+     * @param context the {@link TemplateDefPerForeignKeyTemplateContext context}.
      */
-    public TemplateDefPerRepositoryFillTemplateChain(@NotNull final TemplateDefPerRepositoryTemplateContext context)
+    public TemplateDefPerForeignKeyFillTemplateChain(@NotNull final TemplateDefPerForeignKeyTemplateContext context)
     {
         super(context);
     }
@@ -90,13 +90,13 @@ public class TemplateDefPerForeignKeyFillTemplateChain
 
     /**
      * Retrieves the additional per-table handlers.
-     * @param context the {@link TemplateDefPerRepositoryTemplateContext context}.
+     * @param context the {@link TemplateDefPerForeignKeyTemplateContext context}.
      * @return such handlers.
      */
     @NotNull
     @Override
     protected List<FillHandler<?>> getHandlers(
-        @NotNull final TemplateDefPerRepositoryTemplateContext context)
+        @NotNull final TemplateDefPerForeignKeyTemplateContext context)
     {
         @NotNull final List<FillHandler<?>> result = new ArrayList<>(12);
 
