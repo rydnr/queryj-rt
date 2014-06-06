@@ -61,7 +61,7 @@ import java.util.List;
  * Created: 2014/06/06 06:58
  */
 @RunWith(JUnit4.class)
-public class TemplateDefPerCustomResultFillTemplateChainTest
+public class TemplateDefPerCustomResultFillTemplateChainTest<C>
 {
     @Test
     /**
