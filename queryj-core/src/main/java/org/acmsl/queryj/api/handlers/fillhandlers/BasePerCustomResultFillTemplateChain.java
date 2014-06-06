@@ -52,4 +52,5 @@ import org.acmsl.queryj.api.PerCustomResultTemplateContext;
 public class BasePerCustomResultFillTemplateChain<BC extends PerCustomResultTemplateContext>
     implements FillTemplateChain<BC>
 {
+
 }
