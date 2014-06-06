@@ -58,5 +58,5 @@ import org.junit.runners.JUnit4;
 public class TemplateDefPerTableFillTemplateChainTest
 {
     @Test
-    public void
+    public void getHandlers_include_templateDef_placeholder
 }
