@@ -69,7 +69,7 @@ public class PerCustomResultFillTemplateChainFactoryImpl
      * @param context the {@link org.acmsl.queryj.api.PerCustomResultTemplateContext} needed.
      * @return the FillTemplateChain, or <code>null</code> if the context is invalid.
      */
-    @Nullable
+    @NotNull
     @Override
     public FillTemplateChain<PerCustomResultTemplateContext> createFillChain(
         @NotNull final PerCustomResultTemplateContext context)
