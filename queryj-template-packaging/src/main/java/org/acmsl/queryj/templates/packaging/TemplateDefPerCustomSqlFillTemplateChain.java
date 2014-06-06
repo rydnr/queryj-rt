@@ -27,8 +27,8 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description:  * Builds the list of fill handlers to extend {@link BasePerCustomResultFillTemplateChain}'s
- * with {@link TemplateDef}-related ones.
+ * Description: Builds the list of fill handlers to extend
+ *              BasePerCustomResultFillTemplateChain's with {@link TemplateDef}-related ones.
 
  *
  * Date: 2014/06/06
