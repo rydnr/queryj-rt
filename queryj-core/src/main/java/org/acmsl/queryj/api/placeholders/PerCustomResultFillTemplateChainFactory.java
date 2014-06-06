@@ -37,7 +37,7 @@
 package org.acmsl.queryj.api.placeholders;
 
 /*
- * Importing project classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.api.PerCustomResultTemplateContext;
 import org.checkthread.annotations.ThreadSafe;
