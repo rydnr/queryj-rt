@@ -87,7 +87,7 @@ public class BasePerCustomResultFillTemplateChain<BC extends PerCustomResultTemp
      */
     @NotNull
     @Override
-    protected List<FillHandler<?>> getHandlers(@NotNull final PerTableTemplateContext context)
+    protected List<FillHandler<?>> getHandlers(@NotNull final PerCustomResultTemplateContext context)
     {
         return new ArrayList<>(0);
     }
