@@ -49,6 +49,7 @@ import org.acmsl.queryj.api.handlers.fillhandlers.FillHandler;
  * Importing some ACM-SL Commons classes.
  */
 import org.acmsl.commons.patterns.Chain;
+import org.acmsl.commons.patterns.CommandHandler;
 
 /*
  * Importing some JetBrains annotations.
