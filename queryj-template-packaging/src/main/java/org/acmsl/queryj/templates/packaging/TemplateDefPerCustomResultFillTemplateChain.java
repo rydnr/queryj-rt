@@ -68,8 +68,8 @@ public class TemplateDefPerCustomResultFillTemplateChain
     extends BasePerCustomResultFillTemplateChain<TemplateDefPerCustomResultTemplateContext>
 {
     /**
-     * Creates a {@code TemplateDefPerTableFillTemplateChain} using given context.
-     * @param context the {@link TemplateDefPerTableTemplateContext context}.
+     * Creates a {@code TemplateDefPerCustomResultFillTemplateChain} using given context.
+     * @param context the {@link TemplateDefPerCustomResultTemplateContext context}.
      */
     public TemplateDefPerCustomResultFillTemplateChain(@NotNull final TemplateDefPerCustomResultTemplateContext context)
     {
@@ -89,7 +89,7 @@ public class TemplateDefPerCustomResultFillTemplateChain
 
     /**
      * Retrieves the additional per-table handlers.
-     * @param context the {@link TemplateDefPerTableTemplateContext context}.
+     * @param context the {@link TemplateDefPerCustomResultTemplateContext context}.
      * @return such handlers.
      */
     @NotNull
