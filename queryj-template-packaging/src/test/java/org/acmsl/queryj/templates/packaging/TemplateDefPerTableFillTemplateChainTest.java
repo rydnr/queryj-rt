@@ -50,6 +50,7 @@ import org.jetbrains.annotations.Nullable;
 /*
  * Importing JUnit classes.
  */
+import org.easymock.EasyMock;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
