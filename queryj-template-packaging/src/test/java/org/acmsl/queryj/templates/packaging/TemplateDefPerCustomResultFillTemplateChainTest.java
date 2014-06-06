@@ -63,4 +63,22 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public abstract class TemplateDefPerCustomResultFillTemplateChainTest<C, CH>
 {
+    extends AbstractTemplateDefFillTemplateChainTest<
+    TemplateDefPerTableTemplateContext, TemplateDefPerTableFillTemplateChain>
+    {
+        /**
+         * Checks getHandlers() include the handler to resolve
+         * "templateDef" placeholder.
+         */
+        @Test
+        public void getHandlers_include_templateDef_placeholder()
+        {
+            @NotNull final TemplateDefPerTableTemplateContext context =
+                EasyMock.createNiceMock(TemplateDefPerTableTemplateContext.class);
+
+            @NotNull final TemplateDefPerTableFillTemplateChain instance =
+                new TemplateDefPerTableFillTemplateChain(context);
+
+            testGetHandlers(instance);
+        }
 }
