@@ -41,7 +41,6 @@ package org.acmsl.queryj.placeholders;
  */
 import org.acmsl.queryj.api.PerRepositoryTemplateContext;
 import org.acmsl.queryj.api.FillTemplateChain;
-import org.acmsl.queryj.api.PerTableTemplateContext;
 import org.acmsl.queryj.api.placeholders.PerRepositoryFillTemplateChainFactory;
 
 /*
