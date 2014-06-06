@@ -71,7 +71,7 @@ public class PerCustomSqlFillTemplateChainFactoryImpl<C extends PerCustomSqlTemp
      * @param context the {@link org.acmsl.queryj.api.PerCustomSqlTemplateContext} needed.
      * @return the FillTemplateChain, or <code>null</code> if the context is invalid.
      */
-    @Nullable
+    @NotNull
     @Override
     public FillTemplateChain<C> createFillChain(@NotNull final C context)
     {
