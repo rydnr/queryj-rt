@@ -39,8 +39,16 @@ package org.acmsl.queryj.api.handlers.fillhandlers;
 /*
  *Importing project classes.
 */
+import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.FillTemplateChain;
 import org.acmsl.queryj.api.PerCustomResultTemplateContext;
+import org.acmsl.queryj.api.PerTableTemplateContext;
+import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.api.handlers.TemplateContextFillAdapterHandler;
+import org.jetbrains.annotations.NotNull;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Sets up the chain required to provide placeholder replacements for
@@ -52,5 +60,86 @@ import org.acmsl.queryj.api.PerCustomResultTemplateContext;
 public class BasePerCustomResultFillTemplateChain<BC extends PerCustomResultTemplateContext>
     implements FillTemplateChain<BC>
 {
+    /**
+     * Creates a {@code BasePerTableFillTemplateChain} using given context.
+     * @param context the {@link org.acmsl.queryj.api.PerTableTemplateContext context}.
+     */
+    public BasePerTableFillTemplateChain(@NotNull final C context)
+    {
+        super(context);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public QueryJCommand providePlaceholders(final boolean relevantOnly)
+        throws QueryJBuildException
+    {
+        return new FillTemplateChainWrapper<>(this).providePlaceholders(relevantOnly);
+    }
+
+    /**
+     * Retrieves the additional per-table handlers.
+     * @param context the {@link org.acmsl.queryj.api.PerTableTemplateContext context}.
+     * @return such handlers.
+     */
+    @NotNull
+    @Override
+    protected List<FillHandler<?>> getHandlers(@NotNull final PerTableTemplateContext context)
+    {
+        @NotNull final List<FillHandler<?>> result = new ArrayList<>(12);
+
+        result.add(
+            new TemplateContextFillAdapterHandler<>(
+                new CustomResultsHandler(context)));
+
+        result.add(
+            new TemplateContextFillAdapterHandler<>(
+                new DAOClassNameHandler(context)));
+
+        result.add(
+            new TemplateContextFillAdapterHandler<>(
+                new DAOImplementationClassNameHandler(context)));
+
+        result.add(
+            new TemplateContextFillAdapterHandler<>(
+                new DAOFactoryClassNameHandler(context)));
+
+        result.add(
+            new TemplateContextFillAdapterHandler<>(
+                new ForeignKeyListHandler(context)));
+
+        result.add(
+            new TemplateContextFillAdapterHandler<>(
+                new NonPrimaryKeyAttributesHandler(context)));
+
+        result.add(
+            new TemplateContextFillAdapterHandler<>(
+                new PrimaryKeyHandler(context)));
+
+        result.add(
+            new TemplateContextFillAdapterHandler<>(
+                new TableHandler(context)));
+
+        result.add(
+            new TemplateContextFillAdapterHandler<>(
+                new TableNameHandler(context)));
+
+        result.add(
+            new TemplateContextFillAdapterHandler<>(
+                new ValueObjectNameHandler(context)));
+
+        result.add(
+            new TemplateContextFillAdapterHandler<>(
+                new TableAttributeTypeImportsHandler(context)));
+
+        result.add(
+            new TemplateContextFillAdapterHandler<>(
+                new StaticValuesHandler(context)));
+
+        return result;
+    }
 
 }
