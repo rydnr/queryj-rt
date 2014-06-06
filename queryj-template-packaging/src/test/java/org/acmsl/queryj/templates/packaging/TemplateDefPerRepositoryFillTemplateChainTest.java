@@ -46,6 +46,8 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -56,7 +58,7 @@ import java.util.List;
  * @since 3.0
  * Created: 2014/06/06 17:42
  */
-@ThreadSafe
+@RunWith(JUnit4.class)
 public class TemplateDefPerRepositoryFillTemplateChainTest
     extends AbstractTemplateDefFillTemplateChainTest<
     TemplateDefPerRepositoryTemplateContext, TemplateDefPerRepositoryFillTemplateChain>
