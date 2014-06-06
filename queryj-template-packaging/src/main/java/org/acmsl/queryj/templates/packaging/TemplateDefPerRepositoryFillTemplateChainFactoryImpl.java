@@ -75,7 +75,7 @@ public class TemplateDefPerRepositoryFillTemplateChainFactoryImpl
      * @param context the {@link org.acmsl.queryj.api.PerRepositoryTemplateContext} needed.
      * @return the FillTemplateChain, or {@code null} if the context is invalid.
      */
-    @Nullable
+    @NotNull
     @Override
     public FillTemplateChain<TemplateDefPerRepositoryTemplateContext> createFillChain(
         @NotNull final TemplateDefPerRepositoryTemplateContext context)
