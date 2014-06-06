@@ -42,9 +42,7 @@ package org.acmsl.queryj.api.handlers.fillhandlers;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.FillTemplateChain;
 import org.acmsl.queryj.api.PerCustomResultTemplateContext;
-import org.acmsl.queryj.api.PerTableTemplateContext;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
-import org.acmsl.queryj.api.handlers.TemplateContextFillAdapterHandler;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
