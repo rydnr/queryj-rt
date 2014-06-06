@@ -69,10 +69,6 @@ public abstract class AbstractTemplateDefFillTemplateChainTest<
      */
     public void getHandlers_include_templateDef_placeholder(@NotNull final CH chain)
     {
-        @NotNull final C context = mockContext();
-
-        @NotNull final CH instance = createChain(context);
-
         @NotNull final List<?> handlers = instance.getHandlers();
 
         boolean found = false;
