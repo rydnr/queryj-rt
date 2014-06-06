@@ -49,7 +49,7 @@ import org.acmsl.queryj.api.PerForeignKeyTemplateContext;
  * Created: 2013/06/08
  */
 @SuppressWarnings("unused")
-public interface PerForeignKeyFillTemplateChainFactory
+public interface PerForeignKeyFillTemplateChainFactory<C extends >
     extends FillTemplateChainFactory<PerForeignKeyTemplateContext>
 {
 }
