@@ -49,6 +49,11 @@ import org.acmsl.queryj.api.placeholders.PerCustomResultFillTemplateChainFactory
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+/*
+ * Importing checkthread.org annotations.
+ */
+import org.checkthread.annotations.ThreadSafe;
+
 /**
  * Creates the chain to provide all per-custom-result placeholders.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
