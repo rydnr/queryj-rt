@@ -43,8 +43,15 @@ import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.FillTemplateChain;
 import org.acmsl.queryj.api.PerCustomResultTemplateContext;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
+/*
+ * Importing JDK classes.
+ */
 import java.util.ArrayList;
 import java.util.List;
 
