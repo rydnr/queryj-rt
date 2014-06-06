@@ -49,8 +49,7 @@ import org.acmsl.queryj.api.PerCustomResultTemplateContext;
  * @since 3.0
  * Created: 2012/06/17
  */
-@SuppressWarnings("unused")
-public interface BasePerCustomResultFillTemplateChain<BC extends PerCustomResultTemplateContext>
+public class BasePerCustomResultFillTemplateChain<BC extends PerCustomResultTemplateContext>
     extends FillTemplateChain<BC>
 {
 }
