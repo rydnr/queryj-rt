@@ -98,7 +98,7 @@ public class BasePerCustomResultFillTemplateChain<C extends PerCustomResultTempl
 
     /**
      * Retrieves the additional per-custom-result handlers.
-     * @param context the {@link org.acmsl.queryj.api.PerCustomResultTemplateContext context}.
+     * @param context the {@link PerCustomResultTemplateContext context}.
      * @return such handlers.
      */
     @NotNull
