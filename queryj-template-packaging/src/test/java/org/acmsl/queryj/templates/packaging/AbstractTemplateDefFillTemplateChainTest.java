@@ -53,6 +53,6 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2014/06/06 06:59
  */
 @ThreadSafe
-public class AbstractTemplateDefFillTemplateChainTest<C, CH extends AbstractFillTemplateChain<C>>
+public class AbstractTemplateDefFillTemplateChainTest<C extends TemplatePackagingContext, CH extends AbstractFillTemplateChain<C>>
 {
 }
