@@ -56,7 +56,7 @@ import org.jetbrains.annotations.Nullable;
  * @since 2013/06/08
  */
 @SuppressWarnings("unused")
-public class PerRepositoryFillTemplateChainFactoryImpl<C extends PerTableTemplateContext>
+public class PerRepositoryFillTemplateChainFactoryImpl<C extends PerRepositoryTemplateContext>
     implements PerRepositoryFillTemplateChainFactory<C>
 {
     /**
