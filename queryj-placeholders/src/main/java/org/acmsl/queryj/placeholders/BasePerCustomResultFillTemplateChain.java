@@ -73,7 +73,7 @@ import java.util.List;
  */
 @ThreadSafe
 @SuppressWarnings("unused")
-public class BasePerCustomResultFillTemplateChain<C extends PerTableTemplateContext>
+public class BasePerCustomResultFillTemplateChain<C extends PerCustomResultTemplateContext>
     extends AbstractFillTemplateChain<PerCustomResultTemplateContext>
 {
     /**
