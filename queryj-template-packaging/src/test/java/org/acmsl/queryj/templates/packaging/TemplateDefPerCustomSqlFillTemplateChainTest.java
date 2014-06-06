@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for TemplateDefPerCustomSqlFillTemplateChain.
  *
  * Date: 2014/06/06
  * Time: 18:03
