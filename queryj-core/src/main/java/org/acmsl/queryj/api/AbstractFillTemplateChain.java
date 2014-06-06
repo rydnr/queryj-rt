@@ -36,7 +36,7 @@
 package org.acmsl.queryj.api;
 
 /*
- * Importing project classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.commons.patterns.CommandHandler;
 import org.acmsl.queryj.AbstractQueryJChain;
