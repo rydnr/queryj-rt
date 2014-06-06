@@ -67,6 +67,7 @@ public class TemplateDefPerTableFillTemplateChainTest
     {
         @NotNull final TemplateDefPerTableTemplateContext context =
             EasyMock.createNiceMock(TemplateDefPerTableTemplateContext.class);
+
         @NotNull final TemplateDefPerTableFillTemplateChain instance =
             new TemplateDefPerTableFillTemplateChain(context);
     }
