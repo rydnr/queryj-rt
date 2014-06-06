@@ -47,6 +47,7 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -79,7 +80,7 @@ public class TemplateDefPerTableFillTemplateChainTest
 
         boolean found = false;
 
-        for (Object handler : handlers)
+        for (@Nullable Object handler : handlers)
         {
             if (handler instanceof TemplateContextFillAdapterHandler)
             {
