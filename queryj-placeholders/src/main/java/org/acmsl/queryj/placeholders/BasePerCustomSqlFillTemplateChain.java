@@ -99,7 +99,7 @@ public class BasePerCustomSqlFillTemplateChain<C extends PerCustomSqlTemplateCon
      */
     @NotNull
     @Override
-    protected List<FillHandler<?>> getHandlers(@NotNull final PerCustomSqlTemplateContext context)
+    protected List<FillHandler<?>> getHandlers(@NotNull final C context)
     {
         @NotNull final List<FillHandler<?>> result = new ArrayList<>(0);
 
