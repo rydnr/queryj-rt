@@ -68,7 +68,7 @@ public class PerForeignKeyFillTemplateChainFactoryImpl<C extends PerForeignKeyTe
     public FillTemplateChain<C> createFillChain(@NotNull final C context)
     {
         return
-            new FillTemplateChainWrapper<PerForeignKeyTemplateContext>(
-                new BasePerForeignKeyFillTemplateChain(context));
+            new FillTemplateChainWrapper<>(
+                new BasePerForeignKeyFillTemplateChain<>(context));
     }
 }
