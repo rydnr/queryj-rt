@@ -71,7 +71,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class BasePerForeignKeyFillTemplateChain<C extends PerForeignKeyTemplateContext>
-    extends AbstractFillTemplateChain<>
+    extends AbstractFillTemplateChain<C>
 {
     /**
      * Creates a {@link BasePerForeignKeyFillTemplateChain} using given context.
