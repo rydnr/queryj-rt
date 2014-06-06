@@ -57,7 +57,7 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class TemplateDefPerRepositoryFillTemplateChainTest
     extends AbstractTemplateDefFillTemplateChainTest<
-    TemplateDefPerRepositoryTemplateContext, TemplateDefPerRepositoryFillTemplateChain>
+                TemplateDefPerRepositoryTemplateContext, TemplateDefPerRepositoryFillTemplateChain>
 {
     /**
      * Checks getHandlers() include the handler to resolve
