@@ -74,7 +74,7 @@ import java.util.List;
 @ThreadSafe
 @SuppressWarnings("unused")
 public class BasePerCustomResultFillTemplateChain<C extends PerCustomResultTemplateContext>
-    extends AbstractFillTemplateChain<PerCustomResultTemplateContext>
+    extends AbstractFillTemplateChain<C>
 {
     /**
      * Creates a {@link BasePerCustomResultFillTemplateChain} using given context.
