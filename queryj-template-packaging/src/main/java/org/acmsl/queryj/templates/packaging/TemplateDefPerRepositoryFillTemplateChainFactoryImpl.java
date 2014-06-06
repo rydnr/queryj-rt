@@ -58,6 +58,7 @@ import org.jetbrains.annotations.Nullable;
  * Created: 2014/06/06 18:21
  */
 @ThreadSafe
+@SuppressWarnings("unused")
 public class TemplateDefPerRepositoryFillTemplateChainFactoryImpl
     extends PerRepositoryFillTemplateChainFactoryImpl<TemplateDefPerRepositoryTemplateContext>
 {
