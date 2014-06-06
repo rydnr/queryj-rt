@@ -68,7 +68,7 @@ public class PerCustomResultFillTemplateChainFactoryImpl<C extends PerCustomResu
     /**
      * Creates {@link FillTemplateChain} instances for given context.
      * @param context the {@link org.acmsl.queryj.api.PerCustomResultTemplateContext} needed.
-     * @return the FillTemplateChain, or <code>null</code> if the context is invalid.
+     * @return the FillTemplateChain, or {@code null} if the context is invalid.
      */
     @NotNull
     @Override
