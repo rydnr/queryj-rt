@@ -36,7 +36,7 @@
 package org.acmsl.queryj.templates.packaging;
 
 /*
- * Importing Query
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.api.AbstractFillTemplateChain;
 import org.acmsl.queryj.api.TemplateContext;
