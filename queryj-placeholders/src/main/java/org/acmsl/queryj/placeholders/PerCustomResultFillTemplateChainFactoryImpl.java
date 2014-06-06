@@ -60,8 +60,8 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @SuppressWarnings("unused")
 @ThreadSafe
-public class PerCustomResultFillTemplateChainFactoryImpl
-    implements PerCustomResultFillTemplateChainFactory
+public class PerCustomResultFillTemplateChainFactoryImpl<C extends PerCustomResultTemplateContext>
+    implements PerCustomResultFillTemplateChainFactory<C>
 {
     /**
      * Creates {@link FillTemplateChain} instances for given context.
