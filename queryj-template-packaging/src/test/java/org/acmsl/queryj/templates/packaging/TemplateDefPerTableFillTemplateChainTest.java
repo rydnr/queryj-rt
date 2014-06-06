@@ -101,6 +101,6 @@ public class TemplateDefPerTableFillTemplateChainTest
             }
         }
 
-        Assert.assertFalse(found);
+        Assert.assertTrue(found);
     }
 }
