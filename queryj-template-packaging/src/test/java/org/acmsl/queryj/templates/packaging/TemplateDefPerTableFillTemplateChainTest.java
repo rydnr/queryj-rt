@@ -85,25 +85,5 @@ public class TemplateDefPerTableFillTemplateChainTest
             new TemplateDefPerTableFillTemplateChain(context);
 
         testGetHandlers(instance);
-        @NotNull final List<?> handlers = instance.getHandlers();
-
-        boolean found = false;
-
-        for (@Nullable final Object handler : handlers)
-        {
-            if (handler instanceof TemplateContextFillAdapterHandler)
-            {
-                @NotNull final TemplateContextFillAdapterHandler fillAdapterHandler =
-                    (TemplateContextFillAdapterHandler) handler;
-
-                if (fillAdapterHandler.getPlaceHolder().equals("templateDef"))
-                {
-                    found = true;
-                    break;
-                }
-            }
-        }
-
-        Assert.assertTrue(found);
     }
 }
