@@ -72,7 +72,7 @@ public abstract class TemplateDefPerCustomResultFillTemplateChainTest
     @Test
     public void getHandlers_include_templateDef_placeholder()
     {
-        @NotNull final TemplateDefPerCustomResultTemplateContextTemplateContext context =
+        @NotNull final TemplateDefPerCustomResultTemplateContext context =
             EasyMock.createNiceMock(TemplateDefPerTableTemplateContext.class);
 
         @NotNull final TemplateDefPerTableFillTemplateChain instance =
