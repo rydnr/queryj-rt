@@ -76,9 +76,9 @@ public class BasePerForeignKeyFillTemplateChain<C extends PerForeignKeyTemplateC
 {
     /**
      * Creates a {@link BasePerForeignKeyFillTemplateChain} using given context.
-     * @param context the {@link org.acmsl.queryj.api.PerForeignKeyTemplateContext context}.
+     * @param context the {@link PerForeignKeyTemplateContext context}.
      */
-    public BasePerForeignKeyFillTemplateChain(@NotNull final PerForeignKeyTemplateContext context)
+    public BasePerForeignKeyFillTemplateChain(@NotNull final C context)
     {
         super(context);
     }
