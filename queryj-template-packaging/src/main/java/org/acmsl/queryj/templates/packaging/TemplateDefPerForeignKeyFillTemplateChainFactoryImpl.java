@@ -50,7 +50,8 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
- *
+ * Creates the chain to provide all per-repository placeholders, with access to the
+ * {@link TemplateDef} information.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/06/06 20:48
