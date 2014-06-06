@@ -44,6 +44,7 @@ import org.acmsl.queryj.api.PerCustomSqlTemplateContext;
 /**
  * JDK 6 Services'-compatible per-custom-sql {@link org.acmsl.queryj.api.placeholders.FillTemplateChainFactory}
  * implementation.
+ * @param <C> the template context.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2013/06/08
