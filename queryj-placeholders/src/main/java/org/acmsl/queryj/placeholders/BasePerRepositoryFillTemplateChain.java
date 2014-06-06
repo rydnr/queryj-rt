@@ -71,7 +71,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class BasePerRepositoryFillTemplateChain
-    extends AbstractFillTemplateChain<PerRepositoryTemplateContext>
+    extends AbstractFillTemplateChain<C>
 {
     /**
      * Creates a {@link BasePerRepositoryFillTemplateChain} using given context.
