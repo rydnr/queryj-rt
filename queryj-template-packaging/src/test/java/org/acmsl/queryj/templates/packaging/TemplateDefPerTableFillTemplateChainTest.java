@@ -93,8 +93,9 @@ public class TemplateDefPerTableFillTemplateChainTest
                     found = true;
                     break;
                 }
-                TemplateDefHandler
             }
         }
+
+        Assert.assertTrue(found);
     }
 }
