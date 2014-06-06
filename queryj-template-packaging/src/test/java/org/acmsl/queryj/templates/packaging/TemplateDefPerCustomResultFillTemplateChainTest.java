@@ -63,7 +63,6 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public class TemplateDefPerCustomResultFillTemplateChainTest<C, CH>
 {
-    @Test
     /**
      * Checks getHandlers() include the handler to resolve
      * "templateDef" placeholder.
