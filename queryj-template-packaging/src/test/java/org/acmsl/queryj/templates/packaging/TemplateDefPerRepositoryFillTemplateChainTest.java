@@ -93,7 +93,7 @@ public class TemplateDefPerRepositoryFillTemplateChainTest
     @NotNull
     @Override
     protected List<FillHandler<?>> getHandlers(
-        @NotNull final TemplateDefPerCustomResultTemplateContext context)
+        @NotNull final TemplateDefPerRepositoryTemplateContext context)
     {
         @NotNull final List<FillHandler<?>> result = new ArrayList<>(12);
 
