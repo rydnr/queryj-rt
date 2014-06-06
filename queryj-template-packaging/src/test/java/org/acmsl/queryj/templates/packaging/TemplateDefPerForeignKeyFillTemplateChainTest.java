@@ -46,6 +46,7 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 /**
  *
@@ -53,7 +54,7 @@ import org.junit.Test;
  * @since 3.0
  * Created: 2014/06/06 18:10
  */
-@ThreadSafe
+@RunWith(Junit4.class)
 public class TemplateDefPerForeignKeyFillTemplateChainTest
     extends AbstractTemplateDefFillTemplateChainTest<
     TemplateDefPerRepositoryTemplateContext, TemplateDefPerRepositoryFillTemplateChain>
