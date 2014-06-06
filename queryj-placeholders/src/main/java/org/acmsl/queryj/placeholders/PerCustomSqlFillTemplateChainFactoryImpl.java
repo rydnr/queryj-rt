@@ -67,7 +67,7 @@ public class PerCustomSqlFillTemplateChainFactoryImpl<C extends PerCustomSqlTemp
      */
     @Nullable
     @Override
-    public FillTemplateChain<PerCustomSqlTemplateContext> createFillChain(
+    public FillTemplateChain<C> createFillChain(
         @NotNull final PerCustomSqlTemplateContext context)
     {
         return
