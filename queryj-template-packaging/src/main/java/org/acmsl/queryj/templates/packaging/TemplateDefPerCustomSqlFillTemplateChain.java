@@ -52,7 +52,7 @@ import org.acmsl.queryj.placeholders.BasePerCustomSqlFillTemplateChain;
 import org.acmsl.queryj.placeholders.FillTemplateChainWrapper;
 
 /*
- * Importing QueryJ Template Packaging annotations.
+ * Importing QueryJ Template Packaging classes.
  */
 import org.acmsl.queryj.templates.packaging.placeholders.TemplateDefHandler;
 
