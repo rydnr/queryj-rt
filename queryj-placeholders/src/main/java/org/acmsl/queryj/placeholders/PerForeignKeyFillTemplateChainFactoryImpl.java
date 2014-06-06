@@ -65,8 +65,7 @@ public class PerForeignKeyFillTemplateChainFactoryImpl<C extends PerForeignKeyTe
      */
     @Nullable
     @Override
-    public FillTemplateChain<C> createFillChain(
-        @NotNull final PerForeignKeyTemplateContext context)
+    public FillTemplateChain<C> createFillChain(@NotNull final C context)
     {
         return
             new FillTemplateChainWrapper<PerForeignKeyTemplateContext>(
