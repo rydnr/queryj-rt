@@ -38,6 +38,7 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.api.handlers.fillhandlers.FillHandler;
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
@@ -48,6 +49,8 @@ import org.checkthread.annotations.ThreadSafe;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+
+import java.util.List;
 
 /**
  * Tests for {@link TemplateDefPerTableFillTemplateChain}.
@@ -71,6 +74,6 @@ public class TemplateDefPerTableFillTemplateChainTest
         @NotNull final TemplateDefPerTableFillTemplateChain instance =
             new TemplateDefPerTableFillTemplateChain(context);
 
-
+        @NotNull final List<FillHandler<?>> handlers =
     }
 }
