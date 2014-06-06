@@ -95,7 +95,7 @@ public class TemplateDefPerCustomResultFillTemplateChain
     @NotNull
     @Override
     protected List<FillHandler<?>> getHandlers(
-        @NotNull final TemplateDefPerTableTemplateContext context)
+        @NotNull final TemplateDefPerCustomResultTemplateContext context)
     {
         @NotNull final List<FillHandler<?>> result = new ArrayList<>(12);
 
