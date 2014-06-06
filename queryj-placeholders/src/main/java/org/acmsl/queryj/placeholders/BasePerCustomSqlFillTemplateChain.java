@@ -76,7 +76,7 @@ public class BasePerCustomSqlFillTemplateChain<C extends PerCustomSqlTemplateCon
      * Creates a {@link BasePerCustomSqlFillTemplateChain} using given context.
      * @param context the {@link PerCustomSqlTemplateContext context}.
      */
-    public BasePerCustomSqlFillTemplateChain(@NotNull final PerCustomSqlTemplateContext context)
+    public BasePerCustomSqlFillTemplateChain(@NotNull final C context)
     {
         super(context);
     }
