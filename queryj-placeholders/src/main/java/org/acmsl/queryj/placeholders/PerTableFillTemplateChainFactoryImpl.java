@@ -68,7 +68,7 @@ public class PerTableFillTemplateChainFactoryImpl<C extends PerTableTemplateCont
      * @param context the {@link PerTableTemplateContext} needed.
      * @return the FillTemplateChain, or {@code null} if the context is invalid.
      */
-    @Nullable
+    @NotNull
     @Override
     public FillTemplateChain<C> createFillChain(@NotNull final C context)
     {
