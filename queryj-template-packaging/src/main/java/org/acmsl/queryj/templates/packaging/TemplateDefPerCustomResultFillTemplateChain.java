@@ -38,12 +38,23 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.api.PerTableTemplateContext;
+import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.api.handlers.TemplateContextFillAdapterHandler;
+import org.acmsl.queryj.api.handlers.fillhandlers.FillHandler;
+import org.acmsl.queryj.placeholders.BasePerTableFillTemplateChain;
+import org.acmsl.queryj.placeholders.FillTemplateChainWrapper;
+import org.acmsl.queryj.templates.packaging.placeholders.TemplateDefHandler;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -53,5 +64,46 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class TemplateDefPerCustomResultFillTemplateChain
+    extends BasePerTableFillTemplateChain<TemplateDefPerTableTemplateContext>
 {
+    /**
+     * Creates a {@code TemplateDefPerTableFillTemplateChain} using given context.
+     * @param context the {@link TemplateDefPerTableTemplateContext context}.
+     */
+    public TemplateDefPerTableFillTemplateChain(@NotNull final TemplateDefPerTableTemplateContext context)
+    {
+        super(context);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public QueryJCommand providePlaceholders(final boolean relevantOnly)
+        throws QueryJBuildException
+    {
+        return new FillTemplateChainWrapper<>(this).providePlaceholders(relevantOnly);
+    }
+
+    /**
+     * Retrieves the additional per-table handlers.
+     * @param context the {@link TemplateDefPerTableTemplateContext context}.
+     * @return such handlers.
+     */
+    @NotNull
+    @Override
+    protected List<FillHandler<?>> getHandlers(
+        @NotNull final TemplateDefPerTableTemplateContext context)
+    {
+        @NotNull final List<FillHandler<?>> result = new ArrayList<>(12);
+
+        result.add(
+            new TemplateContextFillAdapterHandler<>(
+                new TemplateDefHandler<>(context)));
+
+        result.addAll(super.getHandlers((PerTableTemplateContext) context));
+
+        return result;
+    }
 }
