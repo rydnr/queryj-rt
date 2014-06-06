@@ -108,5 +108,6 @@ public abstract class AbstractTemplateDefFillTemplateChainTest<
      * @param context the context.
      * @return the chain.
      */
-    protected abstract
+    @NotNull
+    protected abstract CH createChain(@NotNull final C context);
 }
