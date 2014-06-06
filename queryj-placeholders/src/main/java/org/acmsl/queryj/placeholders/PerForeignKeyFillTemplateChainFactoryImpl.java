@@ -70,7 +70,7 @@ public class PerForeignKeyFillTemplateChainFactoryImpl<C extends PerForeignKeyTe
      * @param context the {@link org.acmsl.queryj.api.PerForeignKeyTemplateContext} needed.
      * @return the FillTemplateChain, or <code>null</code> if the context is invalid.
      */
-    @Nullable
+    @NotNull
     @Override
     public FillTemplateChain<C> createFillChain(@NotNull final C context)
     {
