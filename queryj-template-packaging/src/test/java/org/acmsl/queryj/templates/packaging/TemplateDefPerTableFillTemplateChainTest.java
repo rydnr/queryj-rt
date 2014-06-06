@@ -88,7 +88,10 @@ public class TemplateDefPerTableFillTemplateChainTest
                 @NotNull final TemplateContextFillAdapterHandler fillAdapterHandler =
                     (TemplateContextFillAdapterHandler) handler;
 
-                if (fillAdapterHandler.getPlaceHolder()
+                if (fillAdapterHandler.getPlaceHolder().equals("templateDef"))
+                {
+                    found = true;
+                }
                 TemplateDefHandler
             }
         }
