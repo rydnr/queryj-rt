@@ -41,6 +41,7 @@ package org.acmsl.queryj.placeholders;
  */
 import org.acmsl.queryj.api.PerRepositoryTemplateContext;
 import org.acmsl.queryj.api.FillTemplateChain;
+import org.acmsl.queryj.api.PerTableTemplateContext;
 import org.acmsl.queryj.api.placeholders.PerRepositoryFillTemplateChainFactory;
 
 /*
@@ -56,7 +57,8 @@ import org.jetbrains.annotations.Nullable;
  */
 @SuppressWarnings("unused")
 public class PerRepositoryFillTemplateChainFactoryImpl
-    implements PerRepositoryFillTemplateChainFactory
+    implements PerRepositoryFillTemplateChainFactory<C extends PerTableTemplateContext>
+    implements PerTableFillTemplateChainFactory<C>
 {
     /**
      * Creates {@link FillTemplateChain} instances for given context.
