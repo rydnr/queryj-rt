@@ -58,7 +58,8 @@ import org.junit.runners.JUnit4;
 public class TemplateDefPerTableFillTemplateChainTest
 {
     /**
-     * Checks getHandlers() include the handler to
+     * Checks getHandlers() include the handler to resolve
+     *
      */
     @Test
     public void getHandlers_include_templateDef_placeholder()
