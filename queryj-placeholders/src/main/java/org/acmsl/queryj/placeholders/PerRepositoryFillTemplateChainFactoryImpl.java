@@ -66,7 +66,7 @@ public class PerRepositoryFillTemplateChainFactoryImpl<C extends PerTableTemplat
      */
     @Nullable
     @Override
-    public FillTemplateChain<PerRepositoryTemplateContext> createFillChain(
+    public FillTemplateChain<C> createFillChain(
         @NotNull final PerRepositoryTemplateContext context)
     {
         return
