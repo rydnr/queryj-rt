@@ -40,7 +40,7 @@ package org.acmsl.queryj.templates.packaging;
  */
 import org.acmsl.queryj.api.FillTemplateChain;
 import org.acmsl.queryj.placeholders.FillTemplateChainWrapper;
-import org.acmsl.queryj.placeholders.PerCustomResultFillTemplateChainFactoryImpl;
+import org.acmsl.queryj.placeholders.PerCustomSqlFillTemplateChainFactoryImpl;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -56,21 +56,21 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class TemplateDefPerCustomSqlFillTemplateChainFactoryImpl
-    extends PerCustomResultFillTemplateChainFactoryImpl<TemplateDefPerCustomResultTemplateContext>
+    extends PerCustomSqlFillTemplateChainFactoryImpl<TemplateDefPerCustomSqlTemplateContext>
 {
     /**
      * Creates {@link org.acmsl.queryj.api.FillTemplateChain} instances for given context.
-     * @param context the {@link org.acmsl.queryj.api.PerCustomResultTemplateContext} needed.
+     * @param context the {@link org.acmsl.queryj.api.PerCustomSqlTemplateContext} needed.
      * @return the FillTemplateChain, or {@code null} if the context is invalid.
      */
     @NotNull
     @Override
-    public FillTemplateChain<TemplateDefPerCustomResultTemplateContext> createFillChain(
-        @NotNull final TemplateDefPerCustomResultTemplateContext context)
+    public FillTemplateChain<TemplateDefPerCustomSqlTemplateContext> createFillChain(
+        @NotNull final TemplateDefPerCustomSqlTemplateContext context)
     {
         return
             new FillTemplateChainWrapper<>(
-                new TemplateDefPerCustomResultFillTemplateChain(context));
+                new TemplateDefPerCustomSqlFillTemplateChain(context));
     }
 }
 {
