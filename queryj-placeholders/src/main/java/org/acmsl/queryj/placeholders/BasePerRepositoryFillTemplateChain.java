@@ -101,7 +101,7 @@ public class BasePerRepositoryFillTemplateChain<C extends PerRepositoryTemplateC
      */
     @NotNull
     @Override
-    protected List<FillHandler<?>> getHandlers(@NotNull final PerRepositoryTemplateContext context)
+    protected List<FillHandler<?>> getHandlers(@NotNull final C context)
     {
         @NotNull final List<FillHandler<?>> result = new ArrayList<>(1);
 
