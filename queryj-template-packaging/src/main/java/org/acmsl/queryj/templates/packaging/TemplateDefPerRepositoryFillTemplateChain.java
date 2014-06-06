@@ -52,7 +52,7 @@ import org.acmsl.queryj.placeholders.BasePerRepositoryFillTemplateChain;
 import org.acmsl.queryj.placeholders.FillTemplateChainWrapper;
 
 /*
- * Importing JetBrains annotations.
+ * Importing QueryJ Template Packaging classes.
  */
 import org.acmsl.queryj.templates.packaging.placeholders.TemplateDefHandler;
 
