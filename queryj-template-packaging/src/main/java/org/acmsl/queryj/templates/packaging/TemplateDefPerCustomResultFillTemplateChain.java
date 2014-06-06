@@ -96,6 +96,9 @@ public class TemplateDefPerCustomResultFillTemplateChain
      */
     @NotNull
     @Override
+    @NotNull
+    @Override
+    protected List<FillHandler<?>> getHandlers(@NotNull final C context)
     protected List<FillHandler<?>> getHandlers(
         @NotNull final TemplateDefPerCustomResultTemplateContext context)
     {
