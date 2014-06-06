@@ -71,7 +71,7 @@ public class TemplateDefPerCustomResultFillTemplateChainFactoryImpl
     {
         return
             new FillTemplateChainWrapper<>(
-                new TemplateDefPerRepositoryFillTemplateChain(context));
+                new TemplateDefPerCustomResultFillTemplateChain(context));
     }
 }
 {
