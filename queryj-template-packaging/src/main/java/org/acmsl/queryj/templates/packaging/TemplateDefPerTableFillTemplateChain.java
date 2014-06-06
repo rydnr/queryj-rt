@@ -105,7 +105,7 @@ public class TemplateDefPerTableFillTemplateChain
 
     /**
      * Retrieves the additional per-table handlers.
-     * @param context the {@link org.acmsl.queryj.api.PerTableTemplateContext context}.
+     * @param context the {@link TemplateDefPerTableTemplateContext context}.
      * @return such handlers.
      */
     @NotNull
