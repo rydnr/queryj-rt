@@ -50,6 +50,6 @@ import org.acmsl.queryj.api.PerForeignKeyTemplateContext;
  */
 @SuppressWarnings("unused")
 public interface PerForeignKeyFillTemplateChainFactory<C extends PerForeignKeyTemplateContext>
-    extends FillTemplateChainFactory<PerForeignKeyTemplateContext>
+    extends FillTemplateChainFactory<C>
 {
 }
