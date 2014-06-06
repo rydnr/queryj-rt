@@ -70,5 +70,7 @@ public class TemplateDefPerTableFillTemplateChainTest
 
         @NotNull final TemplateDefPerTableFillTemplateChain instance =
             new TemplateDefPerTableFillTemplateChain(context);
+
+
     }
 }
