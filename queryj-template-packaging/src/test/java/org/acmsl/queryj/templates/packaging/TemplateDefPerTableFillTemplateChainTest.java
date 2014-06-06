@@ -85,7 +85,9 @@ public class TemplateDefPerTableFillTemplateChainTest
             if (handler instanceof TemplateContextFillAdapterHandler)
             {
                 @NotNull final TemplateContextFillAdapterHandler fillAdapterHandler =
-                    (TemplateContextFillAdapterHandler)
+                    (TemplateContextFillAdapterHandler) handler;
+
+
             }
         }
     }
