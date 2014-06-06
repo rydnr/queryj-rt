@@ -76,7 +76,7 @@ public abstract class TemplateDefPerCustomResultFillTemplateChainTest
             EasyMock.createNiceMock(TemplateDefPerCustomResultTemplateContext.class);
 
         @NotNull final TemplateDefPerCustomResultFillTemplateChain instance =
-            new TemplateDefPerTableFillTemplateChain(context);
+            new TemplateDefPerCustomResultFillTemplateChain(context);
 
         testGetHandlers(instance);
     }
