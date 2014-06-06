@@ -63,7 +63,7 @@ import java.util.List;
  */
 @ThreadSafe
 public class TemplateDefPerRepositoryFillTemplateChainTest
-    extends BasePerCustomResultFillTemplateChain<TemplateDefPerRepositoryTemplateContext>
+    extends BasePerRepositoryFillTemplateChain<TemplateDefPerRepositoryTemplateContext>
 {
     /**
      * Creates a {@code TemplateDefPerCustomResultFillTemplateChain} using given context.
