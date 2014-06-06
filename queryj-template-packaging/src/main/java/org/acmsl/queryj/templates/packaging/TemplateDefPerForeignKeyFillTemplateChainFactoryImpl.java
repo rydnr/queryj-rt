@@ -73,5 +73,3 @@ public class TemplateDefPerForeignKeyFillTemplateChainFactoryImpl
                 new TemplateDefPerRepositoryFillTemplateChain(context));
     }
 }
-{
-}
