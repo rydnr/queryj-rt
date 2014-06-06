@@ -59,7 +59,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Builds the list of fill handlers to extend {@link BasePerTableFillTemplateChain}'s
+ * Builds the list of fill handlers to extend {@link BasePerCustomResultFillTemplateChain}'s
  * with {@link TemplateDef}-related ones.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
