@@ -69,7 +69,7 @@ import java.util.List;
  * Created: 2012/07/07
  */
 @ThreadSafe
-public class BasePerCustomSqlFillTemplateChain
+public class BasePerCustomSqlFillTemplateChain<C extends PerCustomSqlTemplateContext>
     extends AbstractFillTemplateChain<PerCustomSqlTemplateContext>
 {
     /**
