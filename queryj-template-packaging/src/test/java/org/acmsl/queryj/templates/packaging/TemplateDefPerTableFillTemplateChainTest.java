@@ -38,6 +38,7 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.api.handlers.TemplateContextFillAdapterHandler;
 import org.acmsl.queryj.api.handlers.fillhandlers.FillHandler;
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
@@ -80,7 +81,10 @@ public class TemplateDefPerTableFillTemplateChainTest
 
         for (Object handler : handlers)
         {
-            if (handler instanceof )
+            if (handler instanceof TemplateContextFillAdapterHandler)
+            {
+
+            }
         }
     }
 }
