@@ -80,7 +80,7 @@ public class TemplateDefPerTableFillTemplateChainTest
 
         boolean found = false;
 
-        for (@Nullable Object handler : handlers)
+        for (@Nullable final Object handler : handlers)
         {
             if (handler instanceof TemplateContextFillAdapterHandler)
             {
