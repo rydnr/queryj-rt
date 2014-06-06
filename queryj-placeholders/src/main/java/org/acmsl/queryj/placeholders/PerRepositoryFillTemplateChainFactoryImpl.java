@@ -46,6 +46,7 @@ import org.acmsl.queryj.api.placeholders.PerRepositoryFillTemplateChainFactory;
 /*
  * Importing JetBrains annotations.
  */
+import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -54,7 +55,7 @@ import org.jetbrains.annotations.Nullable;
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
  * @since 2013/06/08
  */
-@SuppressWarnings("unused")
+@ThreadSafe
 public class PerRepositoryFillTemplateChainFactoryImpl<C extends PerRepositoryTemplateContext>
     implements PerRepositoryFillTemplateChainFactory<C>
 {
