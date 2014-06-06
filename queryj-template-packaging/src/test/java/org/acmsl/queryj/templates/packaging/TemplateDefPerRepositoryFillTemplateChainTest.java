@@ -66,7 +66,7 @@ import java.util.List;
 @ThreadSafe
 public class TemplateDefPerRepositoryFillTemplateChainTest
     extends AbstractTemplateDefFillTemplateChainTest<
-    TemplateDefPerCustomResultTemplateContext, TemplateDefPerCustomResultFillTemplateChain>
+    TemplateDefPerRepositoryTemplateContext, TemplateDefPerCustomResultFillTemplateChain>
 {
     /**
      * Checks getHandlers() include the handler to resolve
