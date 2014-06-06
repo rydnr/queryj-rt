@@ -49,7 +49,7 @@ import org.acmsl.queryj.api.PerRepositoryTemplateContext;
  * Created: 2013/06/08
  */
 @SuppressWarnings("unused")
-public interface PerRepositoryFillTemplateChainFactory
+public interface PerRepositoryFillTemplateChainFactory<C extends >
     extends FillTemplateChainFactory<PerRepositoryTemplateContext>
 {
 }
