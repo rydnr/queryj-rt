@@ -39,7 +39,6 @@ package org.acmsl.queryj.templates.packaging;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.api.handlers.TemplateContextFillAdapterHandler;
-import org.easymock.EasyMock;
 
 /*
  * Importing JetBrains annotations.
