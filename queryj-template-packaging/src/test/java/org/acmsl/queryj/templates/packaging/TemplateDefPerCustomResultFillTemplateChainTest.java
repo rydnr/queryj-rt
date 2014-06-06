@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for TemplateDefPerCustomResultFillTemplateChain.
  *
  * Date: 2014/06/06
  * Time: 06:58
