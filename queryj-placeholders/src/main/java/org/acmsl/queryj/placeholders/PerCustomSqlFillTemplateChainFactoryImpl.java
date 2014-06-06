@@ -55,7 +55,7 @@ import org.jetbrains.annotations.Nullable;
  * @since 2013/06/08
  */
 @SuppressWarnings("unused")
-public class PerCustomSqlFillTemplateChainFactoryImpl
+public class PerCustomSqlFillTemplateChainFactoryImpl<C extends PerCustomSqlTemplateContext>
     implements PerCustomSqlFillTemplateChainFactory<C>
 {
     /**
