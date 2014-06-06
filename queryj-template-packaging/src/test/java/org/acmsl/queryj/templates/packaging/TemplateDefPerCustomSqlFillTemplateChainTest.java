@@ -58,7 +58,7 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class TemplateDefPerCustomSqlFillTemplateChainTest
     extends AbstractTemplateDefFillTemplateChainTest<
-    TemplateDefPerCustomResultTemplateContext, TemplateDefPerCustomResultFillTemplateChain>
+    TemplateDefPerCustomSqlTemplateContext, TemplateDefPerCustomSqlFillTemplateChain>
 {
     /**
      * Checks getHandlers() include the handler to resolve
@@ -67,7 +67,7 @@ public class TemplateDefPerCustomSqlFillTemplateChainTest
     @Test
     public void getHandlers_include_templateDef_placeholder()
     {
-        @NotNull final TemplateDefPerCustomResultTemplateContext context =
+        @NotNull final TemplateDefPerCustomSqlTemplateContext context =
             EasyMock.createNiceMock(TemplateDefPerCustomResultTemplateContext.class);
 
         @NotNull final TemplateDefPerCustomResultFillTemplateChain instance =
