@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for TemplateDefPerForeignKeyFillTemplateChain.
  *
  * Date: 2014/06/06
  * Time: 18:10
