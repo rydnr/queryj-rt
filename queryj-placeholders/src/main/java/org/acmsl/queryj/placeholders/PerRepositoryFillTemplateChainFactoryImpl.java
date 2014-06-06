@@ -68,7 +68,7 @@ public class PerRepositoryFillTemplateChainFactoryImpl<C extends PerRepositoryTe
      * @param context the {@link org.acmsl.queryj.api.PerRepositoryTemplateContext} needed.
      * @return the FillTemplateChain, or {@code null} if the context is invalid.
      */
-    @Nullable
+    @NotNull
     @Override
     public FillTemplateChain<C> createFillChain(@NotNull final C context)
     {
