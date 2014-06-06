@@ -37,7 +37,7 @@
 package org.acmsl.queryj.placeholders;
 
 /*
- * Importing Queryj Core classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.api.PerCustomSqlTemplateContext;
 import org.acmsl.queryj.api.FillTemplateChain;
