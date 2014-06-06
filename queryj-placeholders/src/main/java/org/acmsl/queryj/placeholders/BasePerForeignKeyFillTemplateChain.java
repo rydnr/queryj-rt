@@ -65,7 +65,8 @@ import org.checkthread.annotations.ThreadSafe;
 /**
  * Sets up the chain required to provide placeholder replacements for
  * {@link org.acmsl.queryj.api.PerForeignKeyTemplate per-foreign-key templates}.
- * @author <a href="mailto:chous@acm-sl.org">chous</a>
+ * @param <C> the template context.
+ * @author <a href="mailto:queryj@acm-sl.org">chous</a>
  * @since 3.0
  * Created: 2012/06/18
  */
