@@ -38,12 +38,14 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
@@ -55,5 +57,22 @@ import org.junit.runners.JUnit4;
  */
 @RunWith(JUnit4.class)
 public class TemplateDefPerCustomSqlFillTemplateChainTest
+    extends AbstractTemplateDefFillTemplateChainTest<
+    TemplateDefPerCustomResultTemplateContext, TemplateDefPerCustomResultFillTemplateChain>
 {
+    /**
+     * Checks getHandlers() include the handler to resolve
+     * "templateDef" placeholder.
+     */
+    @Test
+    public void getHandlers_include_templateDef_placeholder()
+    {
+        @NotNull final TemplateDefPerCustomResultTemplateContext context =
+            EasyMock.createNiceMock(TemplateDefPerCustomResultTemplateContext.class);
+
+        @NotNull final TemplateDefPerCustomResultFillTemplateChain instance =
+            new TemplateDefPerCustomResultFillTemplateChain(context);
+
+        testGetHandlers(instance);
+    }
 }
