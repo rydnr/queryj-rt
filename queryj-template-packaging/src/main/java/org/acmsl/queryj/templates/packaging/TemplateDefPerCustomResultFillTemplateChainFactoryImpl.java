@@ -57,7 +57,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class TemplateDefPerCustomResultFillTemplateChainFactoryImpl
-    extends PerCustomResultFillTemplateChainFactoryImpl<TemplateDefPerRepositoryTemplateContext>
+    extends PerCustomResultFillTemplateChainFactoryImpl<TemplateDefPerCustomResultTemplateContext>
 {
     /**
      * Creates {@link org.acmsl.queryj.api.FillTemplateChain} instances for given context.
