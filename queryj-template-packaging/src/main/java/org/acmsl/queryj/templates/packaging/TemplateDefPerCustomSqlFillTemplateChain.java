@@ -28,7 +28,7 @@
  * Author: Jose San Leandro Armendariz
  *
  * Description: Builds the list of fill handlers to extend
- *              BasePerCustomResultFillTemplateChain's with TemplateDef-related
+ *              BasePerCustomSqlFillTemplateChain's with TemplateDef-related
  *              ones.
  *
  * Date: 2014/06/06
@@ -44,7 +44,7 @@ import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.api.handlers.TemplateContextFillAdapterHandler;
 import org.acmsl.queryj.api.handlers.fillhandlers.FillHandler;
-import org.acmsl.queryj.placeholders.BasePerCustomResultFillTemplateChain;
+import org.acmsl.queryj.placeholders.BasePerCustomSqlFillTemplateChain;
 import org.acmsl.queryj.placeholders.FillTemplateChainWrapper;
 import org.acmsl.queryj.templates.packaging.placeholders.TemplateDefHandler;
 import org.jetbrains.annotations.NotNull;
@@ -58,7 +58,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Builds the list of fill handlers to extend {@link BasePerCustomResultFillTemplateChain}'s
+ * Builds the list of fill handlers to extend {@link BasePerCustomSqlFillTemplateChain}'s
  * with {@link TemplateDef}-related ones.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
@@ -66,13 +66,13 @@ import java.util.List;
  */
 @ThreadSafe
 public class TemplateDefPerCustomSqlFillTemplateChain
-    extends BasePerCustomResultFillTemplateChain<TemplateDefPerCustomResultTemplateContext>
+    extends BasePerCustomSqlFillTemplateChain<TemplateDefPerCustomSqlTemplateContext>
 {
     /**
-     * Creates a {@code TemplateDefPerCustomResultFillTemplateChain} using given context.
-     * @param context the {@link TemplateDefPerCustomResultTemplateContext context}.
+     * Creates a {@code TemplateDefPerCustomSqlFillTemplateChain} using given context.
+     * @param context the {@link TemplateDefPerCustomSqlTemplateContext context}.
      */
-    public TemplateDefPerCustomResultFillTemplateChain(@NotNull final TemplateDefPerCustomResultTemplateContext context)
+    public TemplateDefPerCustomSqlFillTemplateChain(@NotNull final TemplateDefPerCustomSqlTemplateContext context)
     {
         super(context);
     }
@@ -90,13 +90,13 @@ public class TemplateDefPerCustomSqlFillTemplateChain
 
     /**
      * Retrieves the additional per-table handlers.
-     * @param context the {@link TemplateDefPerCustomResultTemplateContext context}.
+     * @param context the {@link TemplateDefPerCustomSqlTemplateContext context}.
      * @return such handlers.
      */
     @NotNull
     @Override
     protected List<FillHandler<?>> getHandlers(
-        @NotNull final TemplateDefPerCustomResultTemplateContext context)
+        @NotNull final TemplateDefPerCustomSqlTemplateContext context)
     {
         @NotNull final List<FillHandler<?>> result = new ArrayList<>(12);
 
