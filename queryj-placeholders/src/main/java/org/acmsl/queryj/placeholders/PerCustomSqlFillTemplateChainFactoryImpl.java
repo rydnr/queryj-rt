@@ -51,7 +51,8 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Creates the chain to provide all per-custom-sql placeholders.
- * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
+ * @param <C> the template context.
+ * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2013/06/08
  */
