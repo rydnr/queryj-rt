@@ -70,7 +70,7 @@ public class TemplateDefPerCustomSqlFillTemplateChainTest
         @NotNull final TemplateDefPerCustomSqlTemplateContext context =
             EasyMock.createNiceMock(TemplateDefPerCustomSqlTemplateContext.class);
 
-        @NotNull final TemplateDefPerCustomResultFillTemplateChain instance =
+        @NotNull final TemplateDefPerCustomSqlFillTemplateChain instance =
             new TemplateDefPerCustomSqlFillTemplateChain(context);
 
         testGetHandlers(instance);
