@@ -70,7 +70,7 @@ import java.util.List;
  */
 @ThreadSafe
 public class BasePerCustomSqlFillTemplateChain<C extends PerCustomSqlTemplateContext>
-    extends AbstractFillTemplateChain<PerCustomSqlTemplateContext>
+    extends AbstractFillTemplateChain<C>
 {
     /**
      * Creates a {@link BasePerCustomSqlFillTemplateChain} using given context.
