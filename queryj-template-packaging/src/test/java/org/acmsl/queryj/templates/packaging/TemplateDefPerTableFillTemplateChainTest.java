@@ -59,7 +59,7 @@ public class TemplateDefPerTableFillTemplateChainTest
 {
     /**
      * Checks getHandlers() include the handler to resolve
-     *
+     * "templateDef" placeholder.
      */
     @Test
     public void getHandlers_include_templateDef_placeholder()
