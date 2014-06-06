@@ -56,7 +56,8 @@ import org.checkthread.annotations.ThreadSafe;
 /**
  * Creates the chain to provide all per-custom-result placeholders.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
- * @since 2013/06/08
+ * @since 3.0
+ * Created: 2013/06/08
  */
 @SuppressWarnings("unused")
 @ThreadSafe
