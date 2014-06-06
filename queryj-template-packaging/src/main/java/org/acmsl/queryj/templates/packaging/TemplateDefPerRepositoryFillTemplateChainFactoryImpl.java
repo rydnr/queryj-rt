@@ -51,7 +51,6 @@ import org.acmsl.queryj.placeholders.PerRepositoryFillTemplateChainFactoryImpl;
  * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 /*
  * Importing checkthread.org annotations.
