@@ -56,7 +56,7 @@ import org.jetbrains.annotations.Nullable;
  */
 @SuppressWarnings("unused")
 public class PerCustomSqlFillTemplateChainFactoryImpl
-    implements PerCustomSqlFillTemplateChainFactory
+    implements PerCustomSqlFillTemplateChainFactory<C>
 {
     /**
      * Creates {@link FillTemplateChain} instances for given context.
