@@ -102,4 +102,8 @@ public abstract class AbstractTemplateDefFillTemplateChainTest<
      * @return such context.
      */
     protected abstract C mockContext();
+
+    /**
+     *
+     */
 }
