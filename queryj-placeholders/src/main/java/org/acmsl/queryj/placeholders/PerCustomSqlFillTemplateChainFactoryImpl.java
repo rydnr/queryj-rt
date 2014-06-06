@@ -46,6 +46,7 @@ import org.acmsl.queryj.api.placeholders.PerCustomSqlFillTemplateChainFactory;
 /*
  * Importing JetBrains annotations.
  */
+import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -57,6 +58,7 @@ import org.jetbrains.annotations.Nullable;
  * Created: 2013/06/08
  */
 @SuppressWarnings("unused")
+@ThreadSafe
 public class PerCustomSqlFillTemplateChainFactoryImpl<C extends PerCustomSqlTemplateContext>
     implements PerCustomSqlFillTemplateChainFactory<C>
 {
