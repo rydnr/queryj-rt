@@ -40,7 +40,7 @@ package org.acmsl.queryj.templates.packaging;
  */
 import org.acmsl.queryj.api.FillTemplateChain;
 import org.acmsl.queryj.placeholders.FillTemplateChainWrapper;
-import org.acmsl.queryj.placeholders.PerRepositoryFillTemplateChainFactoryImpl;
+import org.acmsl.queryj.placeholders.PerForeignKeyFillTemplateChainFactoryImpl;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -56,20 +56,20 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class TemplateDefPerForeignKeyFillTemplateChainFactoryImpl
-    extends PerRepositoryFillTemplateChainFactoryImpl<TemplateDefPerRepositoryTemplateContext>
+    extends PerForeignKeyFillTemplateChainFactoryImpl<TemplateDefPerForeignKeyTemplateContext>
 {
     /**
      * Creates {@link org.acmsl.queryj.api.FillTemplateChain} instances for given context.
-     * @param context the {@link org.acmsl.queryj.api.PerRepositoryTemplateContext} needed.
+     * @param context the {@link org.acmsl.queryj.api.PerForeignKeyTemplateContext} needed.
      * @return the FillTemplateChain, or {@code null} if the context is invalid.
      */
     @NotNull
     @Override
-    public FillTemplateChain<TemplateDefPerRepositoryTemplateContext> createFillChain(
-        @NotNull final TemplateDefPerRepositoryTemplateContext context)
+    public FillTemplateChain<TemplateDefPerForeignKeyTemplateContext> createFillChain(
+        @NotNull final TemplateDefPerForeignKeyTemplateContext context)
     {
         return
             new FillTemplateChainWrapper<>(
-                new TemplateDefPerRepositoryFillTemplateChain(context));
+                new TemplateDefPerForeignKeyFillTemplateChain(context));
     }
 }
