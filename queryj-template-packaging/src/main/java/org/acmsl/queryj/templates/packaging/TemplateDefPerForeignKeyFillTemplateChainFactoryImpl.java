@@ -46,11 +46,11 @@ import org.acmsl.queryj.api.FillTemplateChain;
  */
 import org.acmsl.queryj.placeholders.FillTemplateChainWrapper;
 import org.acmsl.queryj.placeholders.PerForeignKeyFillTemplateChainFactoryImpl;
-import org.jetbrains.annotations.NotNull;
+
 /*
  * Importing JetBrains annotations.
  */
-
+import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
