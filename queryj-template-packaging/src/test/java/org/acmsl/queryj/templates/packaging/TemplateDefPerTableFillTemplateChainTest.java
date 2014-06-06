@@ -44,7 +44,6 @@ import org.acmsl.queryj.api.handlers.TemplateContextFillAdapterHandler;
  * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 /*
  * Importing JUnit/EasyMock classes.
