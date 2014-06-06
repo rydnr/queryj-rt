@@ -54,7 +54,7 @@ import org.jetbrains.annotations.Nullable;
 import org.checkthread.annotations.ThreadSafe;
 
 /*
- * Importing JetBrains annotations.
+ * Importing JUnit classes.
  */
 import org.junit.Assert;
 
