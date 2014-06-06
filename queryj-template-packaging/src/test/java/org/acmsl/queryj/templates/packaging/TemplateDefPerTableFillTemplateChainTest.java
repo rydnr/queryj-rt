@@ -38,6 +38,7 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -65,7 +66,7 @@ public class TemplateDefPerTableFillTemplateChainTest
     public void getHandlers_include_templateDef_placeholder()
     {
         @NotNull final TemplateDefPerTableTemplateContext context =
-            new TemplateDefPerTableTemplateContext();
+            EasyMock.createNiceMock(TemplateDefTemplateContext.class);
         @NotNull final TemplateDefPerTableFillTemplateChain instance =
             new TemplateDefPerTableFillTemplateChain(context);
     }
