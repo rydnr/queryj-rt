@@ -40,6 +40,7 @@ package org.acmsl.queryj.api.placeholders;
  * Importing project classes.
  */
 import org.acmsl.queryj.api.PerCustomResultTemplateContext;
+import org.checkthread.annotations.ThreadSafe;
 
 /**
  * JDK 6 Services'-compatible per-custom-result {@link FillTemplateChainFactory}
@@ -49,6 +50,7 @@ import org.acmsl.queryj.api.PerCustomResultTemplateContext;
  * Created: 2013/06/08
  */
 @SuppressWarnings("unused")
+@ThreadSafe
 public interface PerCustomResultFillTemplateChainFactory<C extends PerCustomResultTemplateContext>
     extends FillTemplateChainFactory<C>
 {
