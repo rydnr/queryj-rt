@@ -39,6 +39,7 @@ package org.acmsl.queryj.templates.packaging;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.api.AbstractFillTemplateChain;
+import org.acmsl.queryj.api.TemplateContext;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -53,6 +54,6 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2014/06/06 06:59
  */
 @ThreadSafe
-public class AbstractTemplateDefFillTemplateChainTest<C extends TemplatePackagingContext, CH extends AbstractFillTemplateChain<C>>
+public class AbstractTemplateDefFillTemplateChainTest<C extends TemplateContext, CH extends AbstractFillTemplateChain<C>>
 {
 }
