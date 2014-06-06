@@ -68,7 +68,8 @@ import java.util.List;
  */
 @RunWith(JUnit4.class)
 public class TemplateDefPerTableFillTemplateChainTest
-    extends AbstractTemplateDefFillTemplateChainTest<TemplateDefPerTableTemplateContext, TemplateDefPerTableFillTemplateChain<TemplateDefPerTableTemplateContext>>
+    extends AbstractTemplateDefFillTemplateChainTest<
+    TemplateDefPerTableTemplateContext, TemplateDefPerTableFillTemplateChain>
 {
     /**
      * Checks getHandlers() include the handler to resolve
