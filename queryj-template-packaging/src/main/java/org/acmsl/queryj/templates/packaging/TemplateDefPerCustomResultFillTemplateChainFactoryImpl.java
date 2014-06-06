@@ -42,7 +42,6 @@ package org.acmsl.queryj.templates.packaging;
 import org.acmsl.queryj.api.FillTemplateChain;
 import org.acmsl.queryj.placeholders.FillTemplateChainWrapper;
 import org.acmsl.queryj.placeholders.PerCustomResultFillTemplateChainFactoryImpl;
-import org.acmsl.queryj.placeholders.PerRepositoryFillTemplateChainFactoryImpl;
 import org.jetbrains.annotations.NotNull;
 
 /*
