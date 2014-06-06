@@ -54,6 +54,7 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2014/06/06 06:59
  */
 @ThreadSafe
-public class AbstractTemplateDefFillTemplateChainTest<C extends TemplateContext, CH extends AbstractFillTemplateChain<C>>
+public class AbstractTemplateDefFillTemplateChainTest<
+    C extends TemplateContext, CH extends AbstractFillTemplateChain<C>>
 {
 }
