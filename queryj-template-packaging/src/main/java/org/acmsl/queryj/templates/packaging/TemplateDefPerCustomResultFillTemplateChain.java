@@ -105,7 +105,7 @@ public class TemplateDefPerCustomResultFillTemplateChain
             new TemplateContextFillAdapterHandler<>(
                 new TemplateDefHandler<>(context)));
 
-        result.addAll(super.getHandlers((PerCustomResultTemplateContext) context));
+        result.addAll(super.getHandlers(context));
 
         return result;
     }
