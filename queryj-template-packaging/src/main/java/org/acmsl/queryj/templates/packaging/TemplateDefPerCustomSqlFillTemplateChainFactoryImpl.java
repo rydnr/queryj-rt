@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Creates the chain to provide all per-custom-result
+ * Description: Creates the chain to provide all per-custom-sql
  *              placeholders, with access to the TemplateDef information.
  *
  * Date: 2014/06/06
