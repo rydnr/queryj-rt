@@ -63,37 +63,4 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public abstract class TemplateDefPerCustomResultFillTemplateChainTest<C, CH>
 {
-    /**
-     * Checks getHandlers() include the handler to resolve
-     * "templateDef" placeholder.
-     */
-    @Test
-    public void getHandlers_include_templateDef_placeholder()
-    {
-        @NotNull final C context = mockContext();
-
-        @NotNull final TemplateDefPerTableFillTemplateChain instance =
-            new TemplateDefPerTableFillTemplateChain(context);
-
-        @NotNull final List<?> handlers = instance.getHandlers();
-
-        boolean found = false;
-
-        for (@Nullable final Object handler : handlers)
-        {
-            if (handler instanceof TemplateContextFillAdapterHandler)
-            {
-                @NotNull final TemplateContextFillAdapterHandler fillAdapterHandler =
-                    (TemplateContextFillAdapterHandler) handler;
-
-                if (fillAdapterHandler.getPlaceHolder().equals("templateDef"))
-                {
-                    found = true;
-                    break;
-                }
-            }
-        }
-
-        Assert.assertTrue(found);
-    }
 }
