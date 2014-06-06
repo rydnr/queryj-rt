@@ -51,7 +51,8 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Creates the chain to provide all per-foreign-key placeholders.
- * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
+ * @param <C> the template context.
+ * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 2013/06/08
  */
 @SuppressWarnings("unused")
