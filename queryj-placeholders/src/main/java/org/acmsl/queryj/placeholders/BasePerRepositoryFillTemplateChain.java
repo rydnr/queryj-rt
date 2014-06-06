@@ -75,7 +75,7 @@ public class BasePerRepositoryFillTemplateChain<C extends PerRepositoryTemplateC
     extends AbstractFillTemplateChain<C>
 {
     /**
-     * Creates a {@link BasePerRepositoryFillTemplateChain} using given context.
+     * Creates a {@code BasePerRepositoryFillTemplateChain} using given context.
      * @param context the {@link org.acmsl.queryj.api.PerRepositoryTemplateContext context}.
      */
     public BasePerRepositoryFillTemplateChain(@NotNull final C context)
