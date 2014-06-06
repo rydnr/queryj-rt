@@ -76,6 +76,8 @@ public class TemplateDefPerTableFillTemplateChainTest
 
         @NotNull final List<?> handlers = instance.getHandlers();
 
+        boolean found = false;
 
+        for ()
     }
 }
