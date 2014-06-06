@@ -27,7 +27,8 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Creates the chain to provide all per-foreign key placeholders,
+ * Description: Creates the chain to provide all per-foreign-
+ * key placeholders,
  *              with access to the TemplateDef information.
  *
  * Date: 2014/06/06
