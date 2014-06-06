@@ -52,7 +52,8 @@ import org.jetbrains.annotations.Nullable;
 /**
  * Creates the chain to provide all per-custom-sql placeholders.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
- * @since 2013/06/08
+ * @since 3.0
+ * Created: 2013/06/08
  */
 @SuppressWarnings("unused")
 public class PerCustomSqlFillTemplateChainFactoryImpl<C extends PerCustomSqlTemplateContext>
