@@ -60,7 +60,7 @@ import java.util.List;
  * Created: 2014/06/06 06:59
  */
 @ThreadSafe
-public class AbstractTemplateDefFillTemplateChainTest<
+public abstract class AbstractTemplateDefFillTemplateChainTest<
     C extends TemplateContext, CH extends AbstractFillTemplateChain<C>>
 {
     /**
