@@ -56,7 +56,7 @@ import org.jetbrains.annotations.Nullable;
  */
 @SuppressWarnings("unused")
 public class PerForeignKeyFillTemplateChainFactoryImpl
-    implements PerForeignKeyFillTemplateChainFactory
+    implements PerForeignKeyFillTemplateChainFactory<C>
 {
     /**
      * Creates {@link FillTemplateChain} instances for given context.
