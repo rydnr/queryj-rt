@@ -30,7 +30,6 @@
  * Description: Builds the list of fill handlers to extend
  *              BasePerCustomResultFillTemplateChain's with TemplateDef-related
  *              ones.
-
  *
  * Date: 2014/06/06
  * Time: 18:05
