@@ -64,7 +64,7 @@ import java.util.List;
 /**
  * Sets up the chain required to provide placeholder replacements for
  * {@link org.acmsl.queryj.api.PerCustomSqlTemplate per-custom-sql templates}.
- * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
+ * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2012/07/07
  */
