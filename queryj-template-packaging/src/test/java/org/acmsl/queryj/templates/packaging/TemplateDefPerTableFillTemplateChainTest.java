@@ -88,6 +88,7 @@ public class TemplateDefPerTableFillTemplateChainTest
                 @NotNull final TemplateContextFillAdapterHandler fillAdapterHandler =
                     (TemplateContextFillAdapterHandler) handler;
 
+
                 TemplateDefHandler
             }
         }
