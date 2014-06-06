@@ -75,7 +75,7 @@ public class BasePerForeignKeyFillTemplateChain<C extends PerForeignKeyTemplateC
     extends AbstractFillTemplateChain<C>
 {
     /**
-     * Creates a {@link BasePerForeignKeyFillTemplateChain} using given context.
+     * Creates a {@code BasePerForeignKeyFillTemplateChain} using given context.
      * @param context the {@link PerForeignKeyTemplateContext context}.
      */
     public BasePerForeignKeyFillTemplateChain(@NotNull final C context)
