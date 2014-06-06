@@ -89,7 +89,7 @@ public class BasePerCustomResultFillTemplateChain<BC extends PerCustomResultTemp
     @Override
     protected List<FillHandler<?>> getHandlers(@NotNull final PerTableTemplateContext context)
     {
-        @NotNull final List<FillHandler<?>> result = new ArrayList<>(12);
+        return new ArrayList<>(0);
 
         result.add(
             new TemplateContextFillAdapterHandler<>(
