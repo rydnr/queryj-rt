@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Common logic for TemplateDefPerXXXFillTemplateChain tests.
  *
  * Date: 2014/06/06
  * Time: 06:59
