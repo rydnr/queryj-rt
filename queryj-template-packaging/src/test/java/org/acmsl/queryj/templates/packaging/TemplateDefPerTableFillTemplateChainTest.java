@@ -36,7 +36,7 @@
 package org.acmsl.queryj.templates.packaging;
 
 /*
- * Importing JetBrains annotations.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.api.handlers.TemplateContextFillAdapterHandler;
 
