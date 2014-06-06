@@ -58,6 +58,7 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2014/06/06 20:42
  */
 @ThreadSafe
+@SuppressWarnings("unused")
 public class TemplateDefPerCustomResultFillTemplateChainFactoryImpl
     extends PerCustomResultFillTemplateChainFactoryImpl<TemplateDefPerCustomResultTemplateContext>
 {
