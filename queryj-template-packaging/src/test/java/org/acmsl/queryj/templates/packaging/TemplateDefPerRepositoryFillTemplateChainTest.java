@@ -69,7 +69,7 @@ public class TemplateDefPerRepositoryFillTemplateChainTest
      * Creates a {@code TemplateDefPerCustomResultFillTemplateChain} using given context.
      * @param context the {@link TemplateDefPerCustomResultTemplateContext context}.
      */
-    public TemplateDefPerRepositoryFillTemplateChain(@NotNull final TemplateDefPerCustomResultTemplateContext context)
+    public TemplateDefPerRepositoryFillTemplateChain(@NotNull final TemplateDefPerRepositoryTemplateContext context)
     {
         super(context);
     }
