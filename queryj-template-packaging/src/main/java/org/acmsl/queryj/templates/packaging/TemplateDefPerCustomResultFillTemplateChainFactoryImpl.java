@@ -40,6 +40,7 @@ package org.acmsl.queryj.templates.packaging;
  */
 import org.acmsl.queryj.api.FillTemplateChain;
 import org.acmsl.queryj.placeholders.FillTemplateChainWrapper;
+import org.acmsl.queryj.placeholders.PerCustomResultFillTemplateChainFactoryImpl;
 import org.acmsl.queryj.placeholders.PerRepositoryFillTemplateChainFactoryImpl;
 import org.jetbrains.annotations.NotNull;
 
@@ -56,7 +57,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class TemplateDefPerCustomResultFillTemplateChainFactoryImpl
-    extends PerRepositoryFillTemplateChainFactoryImpl<TemplateDefPerRepositoryTemplateContext>
+    extends PerCustomResultFillTemplateChainFactoryImpl<TemplateDefPerRepositoryTemplateContext>
 {
     /**
      * Creates {@link org.acmsl.queryj.api.FillTemplateChain} instances for given context.
