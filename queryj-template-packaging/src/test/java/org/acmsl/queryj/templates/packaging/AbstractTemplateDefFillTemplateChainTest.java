@@ -67,7 +67,7 @@ public abstract class AbstractTemplateDefFillTemplateChainTest<
      * Checks getHandlers() include the handler to resolve
      * "templateDef" placeholder.
      */
-    public void getHandlers_include_templateDef_placeholder(@NotNull final )
+    public void getHandlers_include_templateDef_placeholder(@NotNull final CH chain)
     {
         @NotNull final C context = mockContext();
 
