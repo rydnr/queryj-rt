@@ -73,7 +73,7 @@ public class PerCustomResultFillTemplateChainFactoryImpl<C extends PerCustomResu
     public FillTemplateChain<C> createFillChain(@NotNull final C context)
     {
         return
-            new FillTemplateChainWrapper<PerCustomResultTemplateContext>(
-                new BasePerCustomResultFillTemplateChain(context));
+            new FillTemplateChainWrapper<>(
+                new BasePerCustomResultFillTemplateChain<>(context));
     }
 }
