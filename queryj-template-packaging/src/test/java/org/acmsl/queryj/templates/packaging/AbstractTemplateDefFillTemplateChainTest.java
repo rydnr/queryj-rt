@@ -36,7 +36,7 @@
 package org.acmsl.queryj.templates.packaging;
 
 /*
- * Importing JetBrains annotations.
+ * Importing Query
  */
 import org.acmsl.queryj.api.AbstractFillTemplateChain;
 import org.acmsl.queryj.api.TemplateContext;
