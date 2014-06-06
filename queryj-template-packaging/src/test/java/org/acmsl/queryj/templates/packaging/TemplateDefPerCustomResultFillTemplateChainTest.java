@@ -98,5 +98,4 @@ public class TemplateDefPerCustomResultFillTemplateChainTest
 
         Assert.assertTrue(found);
     }
-
 }
