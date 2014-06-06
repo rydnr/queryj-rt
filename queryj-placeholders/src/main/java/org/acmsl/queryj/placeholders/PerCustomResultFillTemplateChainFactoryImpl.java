@@ -60,6 +60,7 @@ import org.checkthread.annotations.ThreadSafe;
  * @since 2013/06/08
  */
 @SuppressWarnings("unused")
+@ThreadSafe
 public class PerCustomResultFillTemplateChainFactoryImpl
     implements PerCustomResultFillTemplateChainFactory
 {
