@@ -28,8 +28,7 @@
  * Author: Jose San Leandro Armendariz
  *
  * Description: Creates the chain to provide all per-repository placeholders,
- *              with
- *              access to the TemplateDef information.
+ *              with access to the TemplateDef information.
  *
  * Date: 2014/06/06
  * Time: 18:21
