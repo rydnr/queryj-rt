@@ -40,8 +40,16 @@ package org.acmsl.queryj.templates.packaging;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.api.FillTemplateChain;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.acmsl.queryj.placeholders.FillTemplateChainWrapper;
 import org.acmsl.queryj.placeholders.PerCustomResultFillTemplateChainFactoryImpl;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
