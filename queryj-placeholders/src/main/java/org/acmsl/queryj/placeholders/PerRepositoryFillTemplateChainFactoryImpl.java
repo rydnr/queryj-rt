@@ -69,7 +69,7 @@ public class PerRepositoryFillTemplateChainFactoryImpl<C extends PerRepositoryTe
     public FillTemplateChain<C> createFillChain(@NotNull final C context)
     {
         return
-            new FillTemplateChainWrapper<PerRepositoryTemplateContext>(
+            new FillTemplateChainWrapper<>(
                 new BasePerRepositoryFillTemplateChain(context));
     }
 }
