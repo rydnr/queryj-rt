@@ -66,7 +66,7 @@ public class TemplateDefPerCustomResultFillTemplateChainFactoryImpl
      */
     @NotNull
     @Override
-    public FillTemplateChain<TemplateDefPerRepositoryTemplateContext> createFillChain(
+    public FillTemplateChain<TemplateDefPerCustomResultTemplateContext> createFillChain(
         @NotNull final TemplateDefPerRepositoryTemplateContext context)
     {
         return
