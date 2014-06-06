@@ -46,7 +46,7 @@ import org.acmsl.queryj.api.handlers.TemplateContextFillAdapterHandler;
 import org.acmsl.queryj.api.handlers.fillhandlers.FillHandler;
 
 /*
- * Importing JetBrains annotations.
+ * Importing QueryJ Placeholders classes..
  */
 import org.acmsl.queryj.placeholders.BasePerRepositoryFillTemplateChain;
 import org.acmsl.queryj.placeholders.FillTemplateChainWrapper;
