@@ -42,7 +42,7 @@ import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.api.handlers.TemplateContextFillAdapterHandler;
 import org.acmsl.queryj.api.handlers.fillhandlers.FillHandler;
-import org.acmsl.queryj.placeholders.BasePerCustomResultFillTemplateChain;
+import org.acmsl.queryj.placeholders.BasePerRepositoryFillTemplateChain;
 import org.acmsl.queryj.placeholders.FillTemplateChainWrapper;
 import org.acmsl.queryj.templates.packaging.placeholders.TemplateDefHandler;
 import org.jetbrains.annotations.NotNull;
@@ -63,13 +63,13 @@ import java.util.List;
  */
 @ThreadSafe
 public class TemplateDefPerRepositoryFillTemplateChain
-    extends BasePerCustomResultFillTemplateChain<TemplateDefPerCustomResultTemplateContext>
+    extends BasePerRepositoryFillTemplateChain<TemplateDefPerRepositoryTemplateContext>
 {
     /**
-     * Creates a {@code TemplateDefPerCustomResultFillTemplateChain} using given context.
-     * @param context the {@link TemplateDefPerCustomResultTemplateContext context}.
+     * Creates a {@code TemplateDefPerRepositoryFillTemplateChain} using given context.
+     * @param context the {@link TemplateDefPerRepositoryTemplateContext context}.
      */
-    public TemplateDefPerCustomResultFillTemplateChain(@NotNull final TemplateDefPerCustomResultTemplateContext context)
+    public TemplateDefPerRepositoryFillTemplateChain(@NotNull final TemplateDefPerRepositoryTemplateContext context)
     {
         super(context);
     }
@@ -87,13 +87,13 @@ public class TemplateDefPerRepositoryFillTemplateChain
 
     /**
      * Retrieves the additional per-table handlers.
-     * @param context the {@link TemplateDefPerCustomResultTemplateContext context}.
+     * @param context the {@link TemplateDefPerRepositoryTemplateContext context}.
      * @return such handlers.
      */
     @NotNull
     @Override
     protected List<FillHandler<?>> getHandlers(
-        @NotNull final TemplateDefPerCustomResultTemplateContext context)
+        @NotNull final TemplateDefPerRepositoryTemplateContext context)
     {
         @NotNull final List<FillHandler<?>> result = new ArrayList<>(12);
 
