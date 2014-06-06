@@ -90,19 +90,4 @@ public abstract class AbstractTemplateDefFillTemplateChainTest<
 
         Assert.assertTrue(found);
     }
-
-    /**
-     * Mocks a C context.
-     * @return such context.
-     */
-    @NotNull
-    protected abstract C mockContext();
-
-    /**
-     * Creates a chain for given context.
-     * @param context the context.
-     * @return the chain.
-     */
-    @NotNull
-    protected abstract CH createChain(@NotNull final C context);
 }
