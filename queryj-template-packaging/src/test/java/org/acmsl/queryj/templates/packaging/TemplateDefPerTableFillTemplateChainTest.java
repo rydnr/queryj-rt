@@ -78,6 +78,9 @@ public class TemplateDefPerTableFillTemplateChainTest
 
         boolean found = false;
 
-        for ()
+        for (Object handler : handlers)
+        {
+            if (handler instanceof )
+        }
     }
 }
