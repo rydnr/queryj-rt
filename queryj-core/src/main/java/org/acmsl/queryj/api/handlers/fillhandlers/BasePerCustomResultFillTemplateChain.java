@@ -62,7 +62,7 @@ public class BasePerCustomResultFillTemplateChain<BC extends PerCustomResultTemp
 {
     /**
      * Creates a {@code BasePerCustomResultFillTemplateChain} using given context.
-     * @param context the {@link org.acmsl.queryj.api.PerTableTemplateContext context}.
+     * @param context the {@link org.acmsl.queryj.api.PerCustomResultTemplateContext context}.
      */
     public BasePerCustomResultFillTemplateChain(@NotNull final C context)
     {
