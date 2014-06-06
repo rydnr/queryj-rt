@@ -52,11 +52,11 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.Nullable;
+
 /*
  * Importing JetBrains annotations.
  */
 import org.junit.Assert;
-import org.junit.Test;
 
 /*
  * Importing JetBrains annotations.
