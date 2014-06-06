@@ -61,7 +61,7 @@ public class TemplateDefPerCustomResultFillTemplateChainFactoryImpl
 {
     /**
      * Creates {@link org.acmsl.queryj.api.FillTemplateChain} instances for given context.
-     * @param context the {@link org.acmsl.queryj.api.PerRepositoryTemplateContext} needed.
+     * @param context the {@link org.acmsl.queryj.api.PerCustomResultTemplateContext} needed.
      * @return the FillTemplateChain, or {@code null} if the context is invalid.
      */
     @NotNull
