@@ -57,7 +57,6 @@ import org.jetbrains.annotations.Nullable;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * Creates the chain to provide all per-table placeholders, with access to the
