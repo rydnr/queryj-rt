@@ -58,7 +58,7 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class TemplateDefPerForeignKeyFillTemplateChainTest
     extends AbstractTemplateDefFillTemplateChainTest<
-    TemplateDefPerRepositoryTemplateContext, TemplateDefPerRepositoryFillTemplateChain>
+    TemplateDefPerForeignKeyTemplateContext, TemplateDefPerForeignKeyFillTemplateChain>
 {
     /**
      * Checks getHandlers() include the handler to resolve
@@ -67,11 +67,11 @@ public class TemplateDefPerForeignKeyFillTemplateChainTest
     @Test
     public void getHandlers_include_templateDef_placeholder()
     {
-        @NotNull final TemplateDefPerRepositoryTemplateContext context =
-            EasyMock.createNiceMock(TemplateDefPerRepositoryTemplateContext.class);
+        @NotNull final TemplateDefPerForeignKeyTemplateContext context =
+            EasyMock.createNiceMock(TemplateDefPerForeignKeyTemplateContext.class);
 
-        @NotNull final TemplateDefPerRepositoryFillTemplateChain instance =
-            new TemplateDefPerRepositoryFillTemplateChain(context);
+        @NotNull final TemplateDefPerForeignKeyFillTemplateChain instance =
+            new TemplateDefPerForeignKeyFillTemplateChain(context);
 
         testGetHandlers(instance);
     }
