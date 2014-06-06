@@ -40,6 +40,10 @@ package org.acmsl.queryj.templates.packaging;
  */
 import org.acmsl.queryj.api.handlers.TemplateContextFillAdapterHandler;
 import org.easymock.EasyMock;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
