@@ -47,6 +47,10 @@ import org.acmsl.queryj.api.handlers.fillhandlers.FillHandler;
 import org.acmsl.queryj.placeholders.FillTemplateChainWrapper;
 import org.acmsl.queryj.placeholders.BasePerCustomResultFillTemplateChain;
 import org.acmsl.queryj.templates.packaging.placeholders.TemplateDefHandler;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
