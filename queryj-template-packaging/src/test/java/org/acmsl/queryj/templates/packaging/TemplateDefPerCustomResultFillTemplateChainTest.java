@@ -38,15 +38,21 @@ package org.acmsl.queryj.templates.packaging;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.api.handlers.TemplateContextFillAdapterHandler;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+
+import java.util.List;
 
 /**
  *
@@ -58,4 +64,39 @@ import org.junit.runners.JUnit4;
 public class TemplateDefPerCustomResultFillTemplateChainTest
 {
     @Test
+    /**
+     * Checks getHandlers() include the handler to resolve
+     * "templateDef" placeholder.
+     */
+    @Test
+    public void getHandlers_include_templateDef_placeholder()
+    {
+        @NotNull final TemplateDefPerTableTemplateContext context =
+            EasyMock.createNiceMock(TemplateDefPerTableTemplateContext.class);
+
+        @NotNull final TemplateDefPerTableFillTemplateChain instance =
+            new TemplateDefPerTableFillTemplateChain(context);
+
+        @NotNull final List<?> handlers = instance.getHandlers();
+
+        boolean found = false;
+
+        for (@Nullable final Object handler : handlers)
+        {
+            if (handler instanceof TemplateContextFillAdapterHandler)
+            {
+                @NotNull final TemplateContextFillAdapterHandler fillAdapterHandler =
+                    (TemplateContextFillAdapterHandler) handler;
+
+                if (fillAdapterHandler.getPlaceHolder().equals("templateDef"))
+                {
+                    found = true;
+                    break;
+                }
+            }
+        }
+
+        Assert.assertTrue(found);
+    }
+
 }
