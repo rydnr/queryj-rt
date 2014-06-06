@@ -67,7 +67,7 @@ public abstract class AbstractTemplateDefFillTemplateChainTest<
      * Checks getHandlers() include the handler to resolve
      * "templateDef" placeholder.
      */
-    public void testGetHand(@NotNull final CH chain)
+    public void testGetHandlers(@NotNull final CH chain)
     {
         @NotNull final List<?> handlers = chain.getHandlers();
 
