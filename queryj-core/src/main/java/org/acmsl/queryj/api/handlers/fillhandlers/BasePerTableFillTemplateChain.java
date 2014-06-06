@@ -50,7 +50,6 @@ import org.acmsl.queryj.api.PerTableTemplateContext;
  * @since 3.0
  * Created: 2012/06/03
  */
-@SuppressWarnings("unused")
 public interface BasePerTableFillTemplateChain<BC extends PerTableTemplateContext>
     extends FillTemplateChain<BC>
 {
