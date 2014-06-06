@@ -60,6 +60,7 @@ import java.util.List;
  * @since 3.0
  * Created: 2014/06/06 06:58
  */
+@SuppressWarnings("unused")
 @RunWith(JUnit4.class)
 public abstract class TemplateDefPerCustomResultFillTemplateChainTest
     extends AbstractTemplateDefFillTemplateChainTest<
