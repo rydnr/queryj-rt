@@ -101,7 +101,7 @@ public class BasePerForeignKeyFillTemplateChain<C extends PerForeignKeyTemplateC
      */
     @NotNull
     @Override
-    protected List<FillHandler<?>> getHandlers(@NotNull final PerForeignKeyTemplateContext context)
+    protected List<FillHandler<?>> getHandlers(@NotNull final C context)
     {
         @NotNull final List<FillHandler<?>> result = new ArrayList<>(2);
 
