@@ -91,6 +91,7 @@ public class TemplateDefPerTableFillTemplateChainTest
                 if (fillAdapterHandler.getPlaceHolder().equals("templateDef"))
                 {
                     found = true;
+                    break;
                 }
                 TemplateDefHandler
             }
