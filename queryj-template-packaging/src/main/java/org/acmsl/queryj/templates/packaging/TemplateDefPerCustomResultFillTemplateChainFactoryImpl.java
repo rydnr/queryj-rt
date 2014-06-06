@@ -74,5 +74,3 @@ public class TemplateDefPerCustomResultFillTemplateChainFactoryImpl
                 new TemplateDefPerCustomResultFillTemplateChain(context));
     }
 }
-{
-}
