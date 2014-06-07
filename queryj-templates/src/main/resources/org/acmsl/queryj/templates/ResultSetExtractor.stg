@@ -135,7 +135,7 @@ class(table, repository, def, C) ::= <<
 !>
 /**
  * <[
-      description(table=table)
+      description(table=table, def=def)
     ]:{line |<line>}; separator="\n * ">
 <class_common_javadoc(template="org/acmsl/queryj/templates/ResultSetExtractor.stg", C=C)>
  */
