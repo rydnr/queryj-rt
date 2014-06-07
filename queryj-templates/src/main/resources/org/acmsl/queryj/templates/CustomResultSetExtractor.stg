@@ -181,7 +181,7 @@ protected <if(C.multiple)>List\<<result.simpleClassValue>\><else><result.simpleC
  * custom exception.
  */
 <notnull(C=C)>
-protected <result.simpleClassValue><endif> extractValue(
+protected <result.simpleClassValue> extractValue(
     <notnull(C=C)>final ResultSet resultSet,
     <notnull(C=C)>final <result.simpleClassValue>Factory factory)
   throws  SQLException,
