@@ -121,7 +121,7 @@ description(table) ::= <<
   Generates the first line of the generated file description.
   @param result the custom result.
 !>
-{@link ResultSetExtractor} implementation for <table.name>.
+{@link ResultSetExtractor} implementation for extracting <table.name>.
 >>
 
 class(table, repository, def, C) ::= <<
