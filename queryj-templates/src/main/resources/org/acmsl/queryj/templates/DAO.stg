@@ -230,7 +230,7 @@ import com.ventura24.commons.dao.DateResultSetMultipleExtractor;
 import com.ventura24.commons.dao.DateResultSetSingleExtractor;
 import com.ventura24.commons.dao.BigDecimalResultSetMultipleExtractor;
 import com.ventura24.commons.dao.BigDecimalResultSetSingleExtractor;
-import com.ventura24.commons.dao.StringResultSetExtractor;
+import com.ventura24.commons.dao.StringResultSetMultipleExtractor;
 import com.ventura24.commons.dao.StringResultSetSingleExtractor;
 import com.ventura24.commons.dao.DoubleResultSetExtractor;
 import com.ventura24.commons.dao.DoubleResultSetSingleExtractor;
