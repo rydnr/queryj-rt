@@ -225,6 +225,7 @@ import com.ventura24.commons.dao.DAOListener;
 import com.ventura24.commons.dao.IntegerResultSetSingleExtractor;
 import com.ventura24.commons.dao.IntegerResultSetSingleExtractor;
 import com.ventura24.commons.dao.LongResultSetExtractor;
+import com.ventura24.commons.dao.LongResultSetExtractor;
 import com.ventura24.commons.dao.DateResultSetExtractor;
 import com.ventura24.commons.dao.BigDecimalResultSetExtractor;
 import com.ventura24.commons.dao.StringResultSetExtractor;
