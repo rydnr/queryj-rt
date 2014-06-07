@@ -162,6 +162,7 @@ defaultExtractor(result, repository, C) ::= <<
  * custom exception.
  */
 <notnull(C=C)>
+@Override
 protected <result.simpleClassValue> extractValue(<notnull(C=C)>final ResultSet resultSet)
     throws  SQLException,
             DataAccessException
