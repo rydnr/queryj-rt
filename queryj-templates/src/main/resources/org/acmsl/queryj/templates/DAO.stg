@@ -228,7 +228,7 @@ import com.ventura24.commons.dao.LongResultSetMultipleExtractor;
 import com.ventura24.commons.dao.LongResultSetSingleExtractor;
 import com.ventura24.commons.dao.DateResultSetMultipleExtractor;
 import com.ventura24.commons.dao.DateResultSetSingleExtractor;
-import com.ventura24.commons.dao.BigDecimalResultSetExtractor;
+import com.ventura24.commons.dao.BigDecimalResultSetMultipleExtractor;
 import com.ventura24.commons.dao.BigDecimalResultSetSingleExtractor;
 import com.ventura24.commons.dao.StringResultSetExtractor;
 import com.ventura24.commons.dao.StringResultSetSingleExtractor;
