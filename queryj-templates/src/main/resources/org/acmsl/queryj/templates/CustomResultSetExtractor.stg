@@ -97,7 +97,8 @@ import java.sql.SQLException;
 <result.propertyTypes:{ t | import <t>;}; separator="\n">
 <else>
 <endif>
-<if(def.metadata.multiple.meansTrue)>Multiple<else>Single<endif>
+<if(def.metadata.multiple.meansTrue)
+><else>Single<endif>
 
 <class(result=result, repository=C.repository, def=def, C=C)>
 >>
