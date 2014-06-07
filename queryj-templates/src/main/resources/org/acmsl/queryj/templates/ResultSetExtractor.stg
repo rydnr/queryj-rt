@@ -116,7 +116,7 @@ import <basePackageName>.<voSubpackageName>.<table.name.voName>;
 import <basePackageName>.<voSubpackageName>.core.<table.name.voName>Factory;
 >>
 
-description(table) ::= <<
+description(table, def) ::= <<
 <!
   Generates the first line of the generated file description.
   @param result the custom result.
