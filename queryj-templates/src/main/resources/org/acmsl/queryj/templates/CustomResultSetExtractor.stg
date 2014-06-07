@@ -172,7 +172,7 @@ protected <result.simpleClassValue> extractValue(<notnull(C=C)>final ResultSet r
 /**
  * Extracts {@link <result.simpleClassValue>} information from given result set.
  * @param resultSet the result set.
- * @param factory the {@link <result.simpleClassValue>
+ * @param factory the {@link <result.simpleClassValue>Factory} instance.
  * @return the {@code <result.simpleClassValue>} or
  * {@code null} if the operation returned no data.
  * @throws SQLException intercepted by \<i>Spring\</i>.
