@@ -164,7 +164,7 @@ defaultExtractor(result, repository, C) ::= <<
  * custom exception.
  */
 <notnull(C=C)>
-protected <result.simpleClassValue> extractValue(<notnull(C=C)>final ResultSet resultSet, <notnull(C=C)>final ResultSet resultSet))
+protected <result.simpleClassValue> extractValue(<notnull(C=C)>final ResultSet resultSet, <notnull(C=C)>final ResultSet resultSet)
     throws  SQLException,
             DataAccessException
 {
