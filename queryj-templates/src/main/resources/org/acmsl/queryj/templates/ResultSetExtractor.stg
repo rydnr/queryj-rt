@@ -95,8 +95,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 <import_attribute_types(table=table, useHeader=false)>
 <if(def.metadata.multiple.meansTrue)
-  >import java.util.List;<
-endif>
+  >import java.util.List;
+<endif>
 
 <class(table=table, repository=C.repository, def=def, C=C)>
 >>
