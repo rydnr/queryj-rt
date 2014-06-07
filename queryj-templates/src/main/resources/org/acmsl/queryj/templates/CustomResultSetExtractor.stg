@@ -109,7 +109,7 @@ description(result) ::= <<
   Generates the first line of the generated file description.
   @param result the custom result.
 !>
-{@link V24ResultSetExtractor} implementation for extracting <if(def.metadata.multiple.meansTrue)>multiple<{@link <result.simpleClassValue> <result.id>} result.
+{@link V24ResultSetExtractor} implementation for extracting <if(def.metadata.multiple.meansTrue)>multiple<e{@link <result.simpleClassValue> <result.id>} result.
 >>
 
 class(result, repository, def, C) ::= <<
