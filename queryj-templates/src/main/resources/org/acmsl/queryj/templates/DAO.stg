@@ -1735,6 +1735,7 @@ public static class <attr.name.capitalized>ResultSetExtractor
     {
         <notnull(C=C)>final Map\<String, ?> result = new HashMap\<String, Object>();
 
+        int index = 0;
         <resultset_extractor_parameter_retrieval(
               name=attr.name.uncapitalized,
               getterMethod=attr.getterMethod,
