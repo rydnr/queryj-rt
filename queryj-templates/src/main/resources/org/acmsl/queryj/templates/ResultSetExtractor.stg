@@ -201,7 +201,7 @@ protected <table.name.voName> extractValue(
   throws  SQLException,
           DataAccessException
 {
-    <nullable(C=C)>final <table.name.voName> result;
+    <notnull(C=C)>final <table.name.voName> result;
 
     result =
         factory.create<table.name.voName>(
