@@ -232,7 +232,7 @@ import com.ventura24.commons.dao.BigDecimalResultSetMultipleExtractor;
 import com.ventura24.commons.dao.BigDecimalResultSetSingleExtractor;
 import com.ventura24.commons.dao.StringResultSetMultipleExtractor;
 import com.ventura24.commons.dao.StringResultSetSingleExtractor;
-import com.ventura24.commons.dao.DoubleResultSetExtractor;
+import com.ventura24.commons.dao.DoubleResultSetMultipleExtractor;
 import com.ventura24.commons.dao.DoubleResultSetSingleExtractor;
 import com.ventura24.commons.dao.V24JdbcTemplate;
 import com.ventura24.commons.dao.V24PreparedStatementCreator;
