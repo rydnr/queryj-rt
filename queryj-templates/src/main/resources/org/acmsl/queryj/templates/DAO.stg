@@ -224,7 +224,7 @@ import <basePackageName>.<voFactorySubpackageName>.core.<table.name.voName>Facto
 import com.ventura24.commons.dao.DAOListener;
 import com.ventura24.commons.dao.IntegerResultSetMultipleExtractor;
 import com.ventura24.commons.dao.IntegerResultSetSingleExtractor;
-import com.ventura24.commons.dao.LongResultSetExtractor;
+import com.ventura24.commons.dao.LongResultSetMultipleExtractor;
 import com.ventura24.commons.dao.LongResultSetSingleExtractor;
 import com.ventura24.commons.dao.DateResultSetExtractor;
 import com.ventura24.commons.dao.DateResultSetSingleExtractor;
