@@ -104,10 +104,11 @@ import java.sql.SQLException;
 <class(result=result, repository=C.repository, def=def, C=C)>
 >>
 
-description(result) ::= <<
+description(result, def) ::= <<
 <!
   Generates the first line of the generated file description.
   @param result the custom result.
+  @param def the template def.
 !>
 {@link V24ResultSetExtractor} implementation for extracting <if(def.metadata.multiple.meansTrue)>multiple<endif> {@link <result.simpleClassValue> <result.id>} results.
 >>
