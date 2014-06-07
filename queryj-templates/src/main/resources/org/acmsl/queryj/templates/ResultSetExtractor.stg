@@ -186,8 +186,6 @@ protected <table.name.voName> extractValue(<notnull(C=C)>final ResultSet resultS
 /**
  * Extracts {@link <table.name.voName>} information from given result set.
  * @param resultSet the result set.
- * @param sql the original SQL query.
- * @param listener the {@link DAOListener} instance.
  * @param factory the {@link <table.name.voName>Factory}
  * instance.
  * @return the {@code <table.name.voName>} or
