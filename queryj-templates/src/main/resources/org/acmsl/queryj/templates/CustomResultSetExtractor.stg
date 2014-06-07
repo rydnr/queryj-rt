@@ -98,7 +98,8 @@ import java.sql.SQLException;
 <else>
 <endif>
 <if(def.metadata.multiple.meansTrue)
-  >import java.util.List;<
+  >import java.util.List;
+  <
 endif>
 
 <class(result=result, repository=C.repository, def=def, C=C)>
