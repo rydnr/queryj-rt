@@ -177,7 +177,7 @@ defaultExtractor(table, repository, def, C) ::= <<
  */
 @Override
 <notnull(C=C)>
-protected <table.name.voName><endif> extractValue(<notnull(C=C)>final ResultSet resultSet)
+protected <table.name.voName> extractValue(<notnull(C=C)>final ResultSet resultSet)
     throws  SQLException,
             DataAccessException
 {
