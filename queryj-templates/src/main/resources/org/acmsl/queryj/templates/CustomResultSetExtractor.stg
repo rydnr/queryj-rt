@@ -123,7 +123,7 @@ class(result, repository, def, C) ::= <<
 !>
 /**
  * <[
-      description(result=result)
+      description(result=result, def=def)
     ]:{line |<line>}; separator="\n * ">
 <class_common_javadoc(template="org/acmsl/queryj/templates/CustomResultSetExtractor.stg", C=C)>
  */
