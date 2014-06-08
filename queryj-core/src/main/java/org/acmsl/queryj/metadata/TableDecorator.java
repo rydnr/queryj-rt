@@ -164,4 +164,12 @@ public interface TableDecorator
     @SuppressWarnings("unused")
     @Nullable
     public Result<DecoratedString> getCustomResult();
+
+    /**
+     * Retrieves the custom updates or inserts.
+     * @return such information.
+     */
+    @NotNull
+    List<Sql<DecoratedString>> getCustomUpdatesOrInserts();
+
 }
