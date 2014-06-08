@@ -127,4 +127,11 @@ public interface TableDecorator
      * @return {@code true} in such case.
      */
     boolean getContainsClobs();
+
+    /**
+     * Retrieves all attributes, including parent's.
+     * @return such attributes.
+     */
+    @NotNull
+    ListDecorator<Attribute<DecoratedString>> getAllAttributes();
 }
