@@ -136,11 +136,6 @@ public class <table.name.voName>PkStatementSetter
     <table.primaryKey:{ a | <attribute_declaration(attribute=a, C=C)>}; separator="\n">
 
     /**
-     * The \<i>update\</i> operation.
-     */
-    private boolean m__bUpdateOperation;
-
-    /**
      * Creates a {@code <table.name.voName>PkStatementSetter}
      * instance.
      <table.primaryKey:{ a |<attribute_javadoc(attr=a)>}; separator="\n">
