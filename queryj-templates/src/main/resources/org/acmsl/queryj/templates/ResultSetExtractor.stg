@@ -262,7 +262,7 @@ generic_nullable_attribute_resultset_retrieval(attr, C) ::= <<
  @param C the context.
 !>
 <
-if(property.date)
+if(attr.date)
   ><nullable_date_property_resultset_retrieval(property=property, C=C)><
 else><
   if(property.primitive)
