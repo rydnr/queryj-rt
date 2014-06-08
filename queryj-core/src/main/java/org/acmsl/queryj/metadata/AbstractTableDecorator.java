@@ -2013,7 +2013,8 @@ public abstract class AbstractTableDecorator
      * @return such list.
      */
     @NotNull
-    protected List<DecoratedString> getNullableAttributeTypes(@NotNull final TableDecoratorHelper tableDecoratorHelper)
+    protected List<DecoratedString> getNullableAttributeTypes(
+        @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
         return
             getAttributeTypes(
