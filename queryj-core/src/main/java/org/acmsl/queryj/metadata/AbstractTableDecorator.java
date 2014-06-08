@@ -2030,7 +2030,7 @@ public abstract class AbstractTableDecorator
     public List<DecoratedString> getNullableAttributeTypes()
     {
         return
-            getAttributeTypes(
+            getNullableAttributeTypes(
                 getAttributes(),
                 getMetadataManager().getMetadataTypeManager(),
                 TableDecoratorHelper.getInstance());
