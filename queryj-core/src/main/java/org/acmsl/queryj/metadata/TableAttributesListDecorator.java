@@ -242,7 +242,7 @@ public class TableAttributesListDecorator
     @Override
     public List<Sql<DecoratedString>> getCustomSelectsForUpdate()
     {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        throw new RuntimeException(INVALID_OPERATION);
     }
 
     /**
