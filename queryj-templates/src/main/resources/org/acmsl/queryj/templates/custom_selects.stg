@@ -227,7 +227,6 @@ custom_select_for_update(cs, table, C) ::= <<
  */
 <custom_select_for_update_nullable(cs=cs, table=table, rs=cs.result)>
 public <custom_select_for_update_return(cs=cs, table=table, rs=cs.result)> <cs.name.uncapitalized>(
-
     <cs.parameters:{ p | <attribute_method_parameter_declaration(attr=p, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
   throws DataAccessException
 {
