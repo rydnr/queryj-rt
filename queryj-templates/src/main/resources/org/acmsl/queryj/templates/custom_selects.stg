@@ -523,7 +523,7 @@ if(cs.resultClass)><
     if(rs.implicitProperties)>
 * @return the {@link <cs.resultClass>} information retrieved.
 <   else><
-if(cs.multiple)>
+      if(cs.multiple)>
  * @return the {@link <cs.resultClass>} information retrieved.
 <else>
  * @return the {@link <cs.resultClass>Decorator} information retrieved.
