@@ -302,10 +302,11 @@ public abstract class AbstractTableAttributesListDecorator
     }
 
     /**
-     * {@inheritDoc}
+     * Retrieves the nullable attributes.
+     * @param attributes the attributes.
+     * @param
      */
     @NotNull
-    @Override
     public List<Attribute<DecoratedString>> getNullableAttributes(
         @NotNull final List<Attribute<DecoratedString>> attributes,
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
