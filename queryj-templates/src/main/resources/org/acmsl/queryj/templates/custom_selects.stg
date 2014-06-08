@@ -56,6 +56,11 @@ custom_select(cs, table, C) ::= <<
 <else>
  * @return the {@link <cs.dao.voName>} information retrieved.
 <endif>
+<if(cs.resultRef)>
+ * @return the {@link <cs.resultClass>} information retrieved.
+<else>
+ * @return the {@link <cs.dao.voName>} information retrieved.
+<endif>
  */
 @Override
 <custom_select_return_nullable_maybe(cs=cs, result=cs.result, C=C)>
