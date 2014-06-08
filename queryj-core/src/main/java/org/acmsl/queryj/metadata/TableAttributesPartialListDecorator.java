@@ -798,7 +798,7 @@ public class TableAttributesPartialListDecorator
     @Override
     public List<Attribute<DecoratedString>> getNullableAttributes()
     {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return getTable().getNullableAttributes();
     }
 
     /**
