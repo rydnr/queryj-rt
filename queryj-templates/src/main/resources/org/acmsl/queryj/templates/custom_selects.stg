@@ -327,8 +327,7 @@ custom_select_template_call(sql, result, table, C) ::= <<
  @param result the sql result.
  @param table the table.
  !>
-<custom_select_return_cast(cs=sql, table=table, result=result, C=C)>
-    <actual_custom_select_template_call(sql=sql, result=result, C=C)>;
+<actual_custom_select_template_call(sql=sql, result=result, C=C)>;
 >>
 
 actual_custom_select_template_call(sql, result, C) ::= <<
