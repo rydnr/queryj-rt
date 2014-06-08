@@ -1653,6 +1653,7 @@ public abstract class AbstractTableDecorator
      * Retrieves the custom updates or inserts.
      * @return such information.
      */
+    @Override
     @NotNull
     public List<Sql<DecoratedString>> getCustomUpdatesOrInserts()
     {
