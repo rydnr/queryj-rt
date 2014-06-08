@@ -79,11 +79,6 @@ import <C.project_package>.<typeInitMap.baseDAOSubpackageName>.impl.<C.repositor
 import java.io.PrintStream;
 
 /*
- * Importing some JDK extension classes
- */
-import javax.sql.DataSource;
-
-/*
  * Importing Jakarta Commons Logging classes
  */
 import org.apache.commons.logging.Log;
