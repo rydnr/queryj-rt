@@ -523,7 +523,7 @@ custom_select_return_javadoc(cs, table, C) ::= <<
 <!
  Generates the Javadoc @return tag when documenting custom-select methods.
  @param cs the custom select.
- @param result the table.
+ @param table the table.
  @param C the context.
 !>
 <if(cs.resultClass)>
