@@ -254,7 +254,7 @@ public class TableAttributesListDecorator
     @Override
     public DecoratedString getParentTableName()
     {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        throw new RuntimeException(INVALID_OPERATION);
     }
 
     /**
