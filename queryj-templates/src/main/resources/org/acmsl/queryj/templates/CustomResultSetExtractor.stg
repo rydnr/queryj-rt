@@ -209,7 +209,7 @@ if(property.nullable)>
 <nullable(C=C)>final <p.objectType> <p.id.uncapitalized>;
 if (resultSet.wasNull())
 {
-    <p.id.uncapitalized> = ;
+    <p.id.uncapitalized> = null;
 }
 else
 {
