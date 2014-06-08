@@ -2184,9 +2184,7 @@ public abstract class AbstractTableDecorator
      */
     @NotNull
     protected List<Attribute<DecoratedString>> getNullableAttributes(
-        @NotNull final ListDecorator<Attribute<DecoratedString>> attributes,
-        @NotNull final MetadataTypeManager metadataTypeManager,
-        @NotNull final TableDecoratorHelper tableDecoratorHelper)
+        @NotNull final ListDecorator<Attribute<DecoratedString>> attributes)
     {
         return filterNullableAttributes(attributes);
     }
