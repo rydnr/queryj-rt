@@ -473,7 +473,7 @@ public abstract class AbstractTableAttributesListDecorator
     @Override
     public ListDecorator<Attribute<DecoratedString>> getAllAttributes()
     {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return getTable().getAllAttributes();
     }
 
     /**
