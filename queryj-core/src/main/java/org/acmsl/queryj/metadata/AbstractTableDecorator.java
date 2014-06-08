@@ -2022,7 +2022,7 @@ public abstract class AbstractTableDecorator
 
     /**
      * Retrieves the ordered list of the fully-qualified attribute types,
-     *
+     * only for the nullable attributes.
      * @return such list.
      */
     @Override
