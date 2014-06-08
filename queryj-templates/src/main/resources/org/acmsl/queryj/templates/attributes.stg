@@ -343,7 +343,7 @@ result.append("\", \"<attribute.name.capitalized>\": \"");
 result.append(this.m__<attribute.name.capitalized>);
 >>
 
-import_attribute_types(table, useHeader=true) ::= <<
+import_attribute_types(table, useHeader=true, nullableOnly) ::= <<
 <!
  Imports the attribute types.
  @param table the table.
