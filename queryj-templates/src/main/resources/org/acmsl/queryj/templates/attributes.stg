@@ -360,7 +360,8 @@ if(nullableOnly)><
     table.attributeTypes:{ t | import <t>;}; separator="\n">
 <
   else>
-< endif>
+< endif><
+else>
   if(table.attributeTypes)><
     if(useHeader)>
 /*
