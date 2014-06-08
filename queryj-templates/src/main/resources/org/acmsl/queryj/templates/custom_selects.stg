@@ -528,7 +528,7 @@ if(cs.resultClass)><
 <     else>
  * @return the {@link <cs.resultClass>Decorator} information retrieved.
 <     endif>
-<  endif>
+<   endif>
 <else>
  * @return the {@link <cs.resultClass>} information retrieved.
 <endif>}>
