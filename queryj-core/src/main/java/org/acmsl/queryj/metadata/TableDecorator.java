@@ -141,4 +141,12 @@ public interface TableDecorator
      */
     @NotNull
     ListDecorator<Attribute<DecoratedString>> getAll();
+
+    /**
+     * Checks whether some of the attributes are nullable or not.
+     * @return {@code true} in such case.
+     */
+    @SuppressWarnings("unused")
+    public boolean getContainsNullableAttributes()
+
 }
