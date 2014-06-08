@@ -531,7 +531,7 @@ if(cs.resultClass)><
 <   endif>
 < else>
  * @return the {@link <cs.resultClass>} information retrieved.
-<endif>}>
+<endif>
 <endif>
 >>
 
