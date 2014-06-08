@@ -193,7 +193,7 @@ public int <cs.name.uncapitalized>(
                 this));
 
 
-    if  (t_Result instanceof Integer)
+    if  (t_Result != null)
     {
         result = ((Integer) t_Result).intValue();
     }
