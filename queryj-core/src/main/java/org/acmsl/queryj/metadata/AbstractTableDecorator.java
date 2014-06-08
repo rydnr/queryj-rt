@@ -2162,8 +2162,8 @@ public abstract class AbstractTableDecorator
         @NotNull final MetadataTypeManager metadataTypeManager,
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
-        return
-            filterExternallyManagedAttributes()
+        return filterNullableAttributes(attributes);
+
                 getAttributes(), getMetadataManager().getMetadataTypeManager(), TableDecoratorHelper.getInstance());
     }
 
