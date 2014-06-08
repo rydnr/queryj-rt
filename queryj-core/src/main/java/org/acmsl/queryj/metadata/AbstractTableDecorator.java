@@ -82,7 +82,7 @@ import java.util.List;
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  */
 public abstract class AbstractTableDecorator
-    extends     AbstractTable<
+    extends AbstractTable<
                     DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>>
     implements  TableDecorator
 {
