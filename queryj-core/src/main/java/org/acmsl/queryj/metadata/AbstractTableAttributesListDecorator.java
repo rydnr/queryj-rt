@@ -298,6 +298,14 @@ public abstract class AbstractTableAttributesListDecorator
     @Override
     public List<Attribute<DecoratedString>> getNullableAttributes()
     {
+    }
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public List<Attribute<DecoratedString>> getNullableAttributes()
+    {
         return
             getAttributeTypes(
                 getNullableAttributes(),
