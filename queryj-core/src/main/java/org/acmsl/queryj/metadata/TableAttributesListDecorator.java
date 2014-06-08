@@ -230,7 +230,7 @@ public class TableAttributesListDecorator
     @Override
     public List<Sql<DecoratedString>> getCustomUpdatesOrInserts()
     {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        throw new RuntimeException(INVALID_OPERATION);
     }
 
     /**
