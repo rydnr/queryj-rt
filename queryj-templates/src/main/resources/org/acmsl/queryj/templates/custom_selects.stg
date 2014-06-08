@@ -531,8 +531,8 @@ if(cs.resultClass)><
 <   endif>
 < else>
  * @return the {@link <cs.resultClass>} information retrieved.
-< endif>
-<endif>
+< endif><
+endif>
 >>
 
 custom_select_for_update_return(cs, table, C) ::= <<
