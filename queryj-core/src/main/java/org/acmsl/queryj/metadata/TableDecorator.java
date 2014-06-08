@@ -166,6 +166,14 @@ public interface TableDecorator
     Result<DecoratedString> getCustomResult();
 
     /**
+     * Retrieves the custom selects.
+     * @return such list of {@link Sql} elements.
+     */
+    @SuppressWarnings("unused")
+    @NotNull
+    List<Sql<DecoratedString>> getCustomSelects();
+
+    /**
      * Retrieves the custom updates or inserts.
      * @return such information.
      */
