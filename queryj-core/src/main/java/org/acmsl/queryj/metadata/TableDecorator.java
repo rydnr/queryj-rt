@@ -121,4 +121,10 @@ public interface TableDecorator
      */
     @NotNull
     MetadataManager getMetadataManager();
+
+    /**
+     * Checks whether any attribute is a clob.
+     * @return {@code true} in such case.
+     */
+    public boolean getContainsClobs();
 }
