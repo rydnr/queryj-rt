@@ -563,8 +563,8 @@ if(cs.resultClass)><
        ><nullable(C=C)>
 <     endif>
 <   endif>
-< else>
-<nullable(C=C)>
+< else
+   ><nullable(C=C)>
 public <cs.resultClass> <cs.name.uncapitalized>(
 <endif>}>
 <else>
