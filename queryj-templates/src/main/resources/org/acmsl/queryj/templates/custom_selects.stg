@@ -521,7 +521,7 @@ custom_select_return_javadoc(cs, table) ::= <<
 if(cs.resultClass)><
   if(table.voDecorated)><
     if(rs.implicitProperties)>
- * @return the {@link <cs.resultClass>} information retrieved.
+* @return the {@link <cs.resultClass>} information retrieved.
 <else>
 <if(cs.multiple)>
  * @return the {@link <cs.resultClass>} information retrieved.
