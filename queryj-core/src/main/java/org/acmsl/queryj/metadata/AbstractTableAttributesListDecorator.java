@@ -286,7 +286,7 @@ public abstract class AbstractTableAttributesListDecorator
     {
         return
             getAttributeTypes(
-                filgetItems(),
+                getNullableAttributes(),
                 getMetadataManager().getMetadataTypeManager(),
                 TableDecoratorHelper.getInstance());
     }
