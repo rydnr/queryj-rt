@@ -248,8 +248,6 @@ custom_select_for_update(cs, table, C) ::= <<
 <nullable(C=C)>
  * @return the {@link <cs.resultClass>} information retrieved.
 <endif>}>
-<else>
-public void <cs.name.uncapitalized>(
 <endif>
 <if(cs.resultRef)>
  * @return the {@link <cs.resultClass>} information retrieved.
