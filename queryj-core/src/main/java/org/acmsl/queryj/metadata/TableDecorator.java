@@ -140,5 +140,5 @@ public interface TableDecorator
      * @return such attributes.
      */
     @NotNull
-    public ListDecorator<Attribute<DecoratedString>> getAll()
+    ListDecorator<Attribute<DecoratedString>> getAll();
 }
