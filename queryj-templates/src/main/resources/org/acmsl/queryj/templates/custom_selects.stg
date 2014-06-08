@@ -561,7 +561,6 @@ if(cs.resultClass)><
 <notnull(C=C)>
 <else>
 <nullable(C=C)>
-public <cs.resultClass>Decorator <cs.name.uncapitalized>(
 <endif>
 <endif>
 <else>
