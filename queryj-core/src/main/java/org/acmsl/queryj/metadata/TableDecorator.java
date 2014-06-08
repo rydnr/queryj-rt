@@ -220,4 +220,12 @@ public interface TableDecorator
     @SuppressWarnings("unused")
     @Nullable
     ListDecorator<Attribute<DecoratedString>> getChild();
+
+    /**
+     * Retrieves the nullable attributes.
+     * @return such list.
+     */
+    @SuppressWarnings("unused")
+    @NotNull
+    List<Attribute<DecoratedString>> getNullableAttributes();
 }
