@@ -579,7 +579,7 @@ public abstract class AbstractTableAttributesListDecorator
     @Override
     public ListDecorator<Attribute<DecoratedString>> getChild()
     {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return getTable().getChild();
     }
 
     /**
