@@ -242,7 +242,6 @@ custom_select_for_update(cs, table, C) ::= <<
 <else>
 <nullable(C=C)>
  * @return the {@link <cs.resultClass>} information retrieved.
-public <cs.resultClass>Decorator <cs.name.uncapitalized>(
 <endif>
 <endif>
 <else>
