@@ -122,7 +122,7 @@ public interface TableDecorator
      * @return such list.
      */
     @NotNull
-    List<DecoratedString> getAttributeTypes();
+    List<DecoratedString> getNullableAttributeTypes();
 
     /**
      * Retrieves the metadata manager.
