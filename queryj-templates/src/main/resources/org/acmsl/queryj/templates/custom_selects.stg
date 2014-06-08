@@ -225,7 +225,7 @@ custom_select_for_update(cs, table, C) ::= <<
  <cs.parameters:{ p | <parameter_javadoc(parameter=p)>}; separator=",\n">
  <custom_select_return_javadoc(cs=cs, table=table, rs=cs.result)>
  */
-<custom_select_for_update_return_nullable(cs=cs, table=table, rs=cs.result)>
+<custom_select_for_update_return_nullable_maybe(cs=cs, table=table, rs=cs.result)>
 public <custom_select_for_update_return(cs=cs, table=table, rs=cs.result)> <cs.name.uncapitalized>(
     <cs.parameters:{ p | <attribute_method_parameter_declaration(attr=p, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
   throws DataAccessException
