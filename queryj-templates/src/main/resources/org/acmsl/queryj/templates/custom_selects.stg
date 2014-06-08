@@ -522,7 +522,7 @@ if(cs.resultClass)><
   if(table.voDecorated)><
     if(rs.implicitProperties)>
 * @return the {@link <cs.resultClass>} information retrieved.
-  <else>
+<   else>
 <if(cs.multiple)>
  * @return the {@link <cs.resultClass>} information retrieved.
 <else>
