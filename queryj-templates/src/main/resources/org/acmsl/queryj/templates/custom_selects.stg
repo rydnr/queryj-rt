@@ -532,3 +532,5 @@ custom_select_return_javadoc(cs, table) ::= <<
 <endif>}>
 <endif>
 >>
+
+custom_select_for_update_return(cs, table, C)
