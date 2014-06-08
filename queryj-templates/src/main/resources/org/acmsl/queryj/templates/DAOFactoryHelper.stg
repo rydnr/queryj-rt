@@ -200,7 +200,11 @@ public class <table.name.voName>DAOFactoryHelper
         if (lastUsed == null)
         {
             result = getDAOFactory(<repository.capitalized>DAOChooser.getInstance());
-            setLastUsed(result);
+
+            if (result != null)
+            {
+                setLastUsed(result);
+            }
         }
         else
         {
