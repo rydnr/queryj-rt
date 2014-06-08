@@ -172,4 +172,13 @@ public interface TableDecorator
     @NotNull
     List<Sql<DecoratedString>> getCustomUpdatesOrInserts();
 
+    /**
+     * Retrieves the custom select-for-update queries.
+     * @return such list of {@link Sql} elements.
+     */
+    @SuppressWarnings("unused")
+    @NotNull
+    public List<Sql<DecoratedString>> getCustomSelectsForUpdate();
+
+
 }
