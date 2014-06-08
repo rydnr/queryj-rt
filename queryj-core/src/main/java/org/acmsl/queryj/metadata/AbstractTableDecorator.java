@@ -810,7 +810,7 @@ public abstract class AbstractTableDecorator
      * @return {@code true} in such case.
      */
     protected boolean attributeListMatch(
-        final List<Attribute<DecoratedString>> first, final List<Attribute<DecoratedString>> second)
+        @NotNull final List<Attribute<DecoratedString>> first, final List<Attribute<DecoratedString>> second)
     {
         boolean result =
             (   (first != null)
