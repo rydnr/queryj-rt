@@ -495,7 +495,7 @@ public abstract class AbstractTableAttributesListDecorator
     @Override
     public boolean getContainsNotNullAttributes()
     {
-        return false;  //To change body of implemented methods use File | Settings | File Templates.
+        return getTable().getContainsNotNullAttributes();
     }
 
     /**
