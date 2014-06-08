@@ -525,6 +525,7 @@ custom_select_return_javadoc(cs, result, C) ::= <<
  @param result the custom result.
  @param C the context.
 !>
+@retur
 <if(cs.resultClass)>
 <cs.result:{rs|<if(table.voDecorated)><if(rs.implicitProperties)>
  * @return the {@link <cs.resultClass>} information retrieved.
