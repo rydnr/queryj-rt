@@ -310,11 +310,7 @@ public abstract class AbstractTableAttributesListDecorator
         @NotNull final List<Attribute<DecoratedString>> attributes,
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
-        return tableDecoratorHelper.filterNullableAttributes()
-            getAttributeTypes(
-                getNullableAttributes(),
-                getMetadataManager().getMetadataTypeManager(),
-                TableDecoratorHelper.getInstance());
+        return tableDecoratorHelper.filterNullableAttributes(attributes);
     }
 
 
