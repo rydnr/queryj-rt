@@ -92,7 +92,7 @@ import org.springframework.dao.DataAccessException;
  */
 import java.sql.ResultSet;
 import java.sql.SQLException;
-<import_attribute_types(table=table, useHeader=false)>
+<import_attribute_types(table=table, useHeader=false, )>
 
 <class(table=table, repository=C.repository, def=def, C=C)>
 >>
