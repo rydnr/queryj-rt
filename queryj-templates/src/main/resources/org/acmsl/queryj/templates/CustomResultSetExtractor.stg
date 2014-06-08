@@ -133,7 +133,7 @@ public class <result.simpleClassValue>ResultSet<if(def.metadata.multiple.meansTr
     /**
      * Creates a new {@code <result.simpleClassValue>ResultSet<if(def.metadata.multiple.meansTrue)>Multiple<else>Single<endif>Extractor} instance.
      * @param sql the SQL query.
-     * @param listener the {@link <repository.voName>DAOListener} instance.
+     * @param listener the {@link DAOListener} instance.
      */
     public <result.simpleClassValue>ResultSet<if(def.metadata.multiple.meansTrue)>Multiple<else>Single<endif>Extractor(
         <notnull(C=C)>final String sql, <nullable(C=C)>final DAOListener listener)
