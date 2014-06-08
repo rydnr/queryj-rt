@@ -559,8 +559,8 @@ if(cs.resultClass)><
     if(!rs.implicitProperties)><
       if(cs.multiple)>
 <notnull(C=C)>
-<     else>
-<nullable(C=C)>
+<     else
+      ><nullable(C=C)>
 <     endif>
 <endif>
 <else>
