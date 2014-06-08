@@ -169,7 +169,7 @@ public class <table.name.voName>DAOFactoryHelper
 
     /**
      * Specifies the last used instance.
-     * @param factory the last used {@link <table.name.voName>DAOFactory}.
+     * @return factory the last used {@link <table.name.voName>DAOFactory}.
      */
     <nullable(C=C)>
     protected <table.name.voName>DAOFactory getLastUsed()
