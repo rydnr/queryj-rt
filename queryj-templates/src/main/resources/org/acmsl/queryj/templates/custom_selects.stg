@@ -554,8 +554,8 @@ custom_select_for_update_return(cs, table, C) ::= <<
       endif><
     else
      ><cs.resultClass><
-    endif>}>
-<else>
+    endif>}><
+else>
 void
 <endif>
 >>
