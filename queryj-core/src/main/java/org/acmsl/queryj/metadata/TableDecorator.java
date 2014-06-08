@@ -187,4 +187,12 @@ public interface TableDecorator
     @SuppressWarnings("unused")
     @NotNull
     List<Sql<DecoratedString>> getCustomSelectsForUpdate();
+
+    /**
+     * Retrieves the name of the parent table, or {@code null} if no parent exists.
+     * @return such information.
+     */
+    @SuppressWarnings("unused")
+    @Nullable
+    DecoratedString getParentTableName();
 }
