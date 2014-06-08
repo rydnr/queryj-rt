@@ -547,12 +547,11 @@ custom_select_for_update_return(cs, table, C) ::= <<
 <if(cs.multiple)>
 <cs.resultClass>
 <else>
-<cs.resultClass>Decorator <cs.name.uncapitalized>(
+<cs.resultClass>Decorator
 <endif>
 <endif>
 <else>
-<nullable(C=C)>
-public <cs.resultClass> <cs.name.uncapitalized>(
+<cs.resultClass> <cs.name.uncapitalized>(
 <endif>}>
 <else>
 public void <cs.name.uncapitalized>(
