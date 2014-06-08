@@ -2139,8 +2139,13 @@ public abstract class AbstractTableDecorator
 
     /**
      * Retrieves the nullable attributes.
-     * @return such
+     * @return such list.
      */
+    @NotNull
+    public List<Attribute<DecoratedString>> getNullableAttributes()
+    {
+
+    }
     /**
      * {@inheritDoc}
      */
