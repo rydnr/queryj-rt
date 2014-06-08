@@ -2021,6 +2021,37 @@ public abstract class AbstractTableDecorator
     }
 
     /**
+     * Retrieves the ordered list of the fully-qualified attribute types.
+     * @return such list.
+     */
+    @Override
+    @NotNull
+    public List<DecoratedString> getAttributeTypes()
+    {
+        return
+            getAttributeTypes(
+                getAttributes(),
+                getMetadataManager().getMetadataTypeManager(),
+                TableDecoratorHelper.getInstance());
+    }
+
+    /**
+     * Retrieves the ordered list of the fully-qualified types of given attributes.
+     * @param attrs such attributes.
+     * @param typeManager the {@link MetadataTypeManager} instance.
+     * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
+     * @return such list.
+     */
+    @NotNull
+    protected List<DecoratedString> getAttributeTypes(
+        @NotNull final List<Attribute<DecoratedString>> attrs,
+        @NotNull final MetadataTypeManager typeManager,
+        @NotNull final TableDecoratorHelper tableDecoratorHelper)
+    {
+        return tableDecoratorHelper.getAttributeTypes(attrs, typeManager);
+    }
+
+    /**
      * Checks whether any attribute is a clob.
      * @return {@code true} in such case.
      */
