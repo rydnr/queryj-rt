@@ -1943,7 +1943,8 @@ public abstract class AbstractTableDecorator
      * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @return the list of decorated rows.
      */
-    @NotNull protected List<Row<DecoratedString>> decorate(
+    @NotNull
+    protected List<Row<DecoratedString>> decorate(
         @NotNull final List<Row<String>> rows,
         @NotNull final MetadataManager metadataManager,
         @NotNull final DecoratorFactory decoratorFactory)
