@@ -210,6 +210,7 @@ nullable_property_resultset_retrieval_declaration(property, C) ::= <<
 <nullable(C=C)>final <p.objectType> <p.id.uncapitalized> = <property_resultset_retrieval(property=p, C=C)>;
 <if(property.nullable)>
   if (resultSet.wasNull())
+  {
 >>
 
 nullable_property_resultset_retrieval(property, C) ::= <<
