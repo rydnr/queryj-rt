@@ -254,11 +254,6 @@ public class <table.name.voName>DAOFactoryHelper
                 "Insufficient rights to instantiate " + factoryClassName,
                 illegalAccess);
         }
-        }
-        else
-        {
-            logError("<C.package>.<table.name.voName>DAOFactory not specified");
-        }
 
         return result;
     }
