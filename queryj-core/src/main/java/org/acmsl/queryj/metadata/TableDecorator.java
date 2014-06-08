@@ -203,5 +203,5 @@ public interface TableDecorator
      */
     @SuppressWarnings("unused")
     @Nullable
-    public ForeignKey<DecoratedString> getParentForeignKey();
+    ForeignKey<DecoratedString> getParentForeignKey();
 }
