@@ -249,11 +249,6 @@ custom_select_for_update(cs, table, C) ::= <<
  * @return the {@link <cs.resultClass>} information retrieved.
 <endif>}>
 <endif>
-<if(cs.resultRef)>
- * @return the {@link <cs.resultClass>} information retrieved.
-<else>
- * @return the {@link <cs.dao.voName>} information retrieved.
-<endif>
  */
 <if(cs.resultClass)>
 <cs.result:{rs|<if(table.voDecorated)><if(rs.implicitProperties)>
