@@ -539,7 +539,7 @@ public abstract class AbstractTableDecorator
      * Alias to make templates more readable.
      * @return the table's own attributes.
      */
-    @SuppressWarnings("unused")
+    @Override
     @Nullable
     public ListDecorator<Attribute<DecoratedString>> getOwn()
     {
