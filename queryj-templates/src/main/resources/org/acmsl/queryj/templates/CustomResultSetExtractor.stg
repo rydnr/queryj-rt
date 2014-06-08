@@ -90,7 +90,6 @@ import org.springframework.dao.DataAccessException;
 /*
  * Importing JDK classes.
  */
-import java.io.Serializable;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 <if(result.propertyTypes)>
