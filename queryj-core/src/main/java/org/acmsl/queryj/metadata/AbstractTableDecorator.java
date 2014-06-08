@@ -2163,8 +2163,6 @@ public abstract class AbstractTableDecorator
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
         return filterNullableAttributes(attributes);
-
-                getAttributes(), getMetadataManager().getMetadataTypeManager(), TableDecoratorHelper.getInstance());
     }
 
     /**
