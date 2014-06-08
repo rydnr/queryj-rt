@@ -1341,6 +1341,8 @@ public static class <table.name.voName>PkResultSetExtractor
     {
         <notnull(C=C)>final Map\<String, ?> result = new HashMap\<String, Object>();
 
+        int index = 0;
+
         <table.primaryKey:{ attr | <resultset_extractor_parameter_retrieval(
               name=attr.name.lowercased,
               getterMethod=attr.getterMethod,
@@ -1390,7 +1392,7 @@ resultset_extractor_parameter_retrieval(name, getterMethod, objectType, isPrimit
   @param isPrimitive whether the attribute is modelled as an instance or as
   a primitive type.
 !>
-index = index + 1;
+index = index + 1;//
 
 ((Map\<String, <objectType>\>) result).put("<name>", <if(isPrimitive)><objectType>.valueOf(<endif>resultSet.<getterMethod>(index)<if(isPrimitive)>)<endif>);
 >>
@@ -1722,7 +1724,7 @@ public static class <attr.name.capitalized>ResultSetExtractor
     }
 
     /**
-     * Extracts \<i><table.name><attr.name>\</i> information from given result set.
+     * Extracts \<i><table.name>.<attr.name>\</i> information from given result set.
      * @param resultSet the result set.
      * @return the information retrieved from the database.
      */
