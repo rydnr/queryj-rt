@@ -546,7 +546,7 @@ endif>
 
 custom_select_for_update_return_nullable_maybe(cs, table, rs, C)> ::= <<
 <!
- Prints the correct
+ Prints the correct not-null/nullable
 <if(cs.resultClass)>
 <cs.result:{rs|<if(table.voDecorated)><if(rs.implicitProperties)>
 public <cs.resultClass> <cs.name.uncapitalized>(
