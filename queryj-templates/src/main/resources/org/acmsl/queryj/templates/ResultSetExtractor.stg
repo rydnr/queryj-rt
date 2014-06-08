@@ -204,7 +204,6 @@ protected <table.name.voName> extractValue(
         factory.create<table.name.voName>(
             <table.attributes:{a | <attribute_resultset_retrieval(attr=a, C=C)>}; separator=",\n">);
 
-
     return result;
 }
 >>
