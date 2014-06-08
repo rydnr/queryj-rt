@@ -182,8 +182,7 @@ protected <table.name.voName> extractValue(<notnull(C=C)>final ResultSet resultS
  * @param resultSet the result set.
  * @param factory the {@link <table.name.voName>Factory}
  * instance.
- * @return the {@code <table.name.voName>} or
- * {@code null} if the operation returned no data.
+ * @return the {@code <table.name.voName>}.
  * @throws SQLException intercepted by \<i>Spring\</i>.
  * @throws DataAccessException with information about any
  * custom exception.
