@@ -541,7 +541,8 @@ custom_select_for_update_return(cs, table, C) ::= <<
  @param C the context.
 !>
 <if(cs.resultClass)><
-  cs.result:{rs|<if(table.voDecorated)><if(rs.implicitProperties)>
+  cs.result:{rs|<
+    if(table.voDecorated)><if(rs.implicitProperties)>
 <cs.resultClass>
 <else>
 <if(cs.multiple)>
