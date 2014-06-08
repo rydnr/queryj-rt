@@ -83,7 +83,7 @@ import java.util.List;
  */
 public abstract class AbstractTableDecorator
     extends AbstractTable<
-                    DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>>
+                DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>>
     implements  TableDecorator
 {
     /**
