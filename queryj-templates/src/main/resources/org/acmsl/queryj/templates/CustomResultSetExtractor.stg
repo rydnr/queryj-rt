@@ -209,7 +209,7 @@ nullable_property_resultset_retrieval_declaration(property, C) ::= <<
 !>
 <if(property.nullable)>
 <nullable(C=C)>final <p.objectType> <p.id.uncapitalized>Aux = <property_resultset_retrieval(property=p, C=C)>;
-<nullable(C=C)>final <p.objectType> <p.id.uncapitalized> = <property_resultset_retrieval(property=p, C=C)>;
+    <nullable(C=C)>final <p.objectType> <p.id.uncapitalized> = <property_resultset_retrieval(property=p, C=C)>;
 if (resultSet.wasNull())
 {
 
