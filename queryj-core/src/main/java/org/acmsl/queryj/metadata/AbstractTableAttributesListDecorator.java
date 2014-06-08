@@ -519,7 +519,7 @@ public abstract class AbstractTableAttributesListDecorator
     @Override
     public List<Sql<DecoratedString>> getCustomSelects()
     {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return getTable().getCustomSelects();
     }
 
     /**
