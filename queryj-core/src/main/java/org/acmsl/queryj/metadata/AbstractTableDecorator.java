@@ -1694,7 +1694,7 @@ public abstract class AbstractTableDecorator
      * Retrieves the custom result.
      * @return such {@link ResultDecorator} element.
      */
-    @SuppressWarnings("unused")
+    @Override
     @Nullable
     public Result<DecoratedString> getCustomResult()
     {
