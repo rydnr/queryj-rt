@@ -220,7 +220,7 @@ else
 }
 else
 {
-<not(C=C)>final <p.objectType> <p.id.uncapitalized> = <property_resultset_retrieval(property=p, C=C)>;
+<notnull(C=C)>final <p.objectType> <p.id.uncapitalized> = <property_resultset_retrieval(property=p, C=C)>;
 }
 >>
 
