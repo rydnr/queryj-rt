@@ -2068,6 +2068,7 @@ public abstract class AbstractTableDecorator
      * Checks whether some of the attributes are nullable or not.
      * @return {@code true} in such case.
      */
+    @Override
     @SuppressWarnings("unused")
     public boolean getContainsNullableAttributes()
     {
