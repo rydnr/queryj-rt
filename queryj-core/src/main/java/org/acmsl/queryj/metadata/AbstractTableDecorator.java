@@ -2166,6 +2166,7 @@ public abstract class AbstractTableDecorator
             getNullableAttributes(
                 getAttributes(), getMetadataManager().getMetadataTypeManager(), TableDecoratorHelper.getInstance());
     }
+
     /**
      * {@inheritDoc}
      */
