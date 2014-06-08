@@ -211,6 +211,8 @@ nullable_property_resultset_retrieval_declaration(property, C) ::= <<
 <if(property.nullable)>
 if (resultSet.wasNull())
 {
+
+}
 >>
 
 nullable_property_resultset_retrieval(property, C) ::= <<
