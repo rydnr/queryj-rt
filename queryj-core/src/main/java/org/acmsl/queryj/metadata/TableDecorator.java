@@ -212,4 +212,12 @@ public interface TableDecorator
     @SuppressWarnings("unused")
     @Nullable
     ListDecorator<Attribute<DecoratedString>> getOwn();
+
+    /**
+     * Alias to make templates more readable.
+     * @return the child attributes.
+     */
+    @SuppressWarnings("unused")
+    @Nullable
+    ListDecorator<Attribute<DecoratedString>> getChild();
 }
