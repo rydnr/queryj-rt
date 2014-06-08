@@ -51,7 +51,7 @@ custom_select(cs, table, C) ::= <<
  * Custom select \<i><cs.id>\</i>:
  * \<b><cs.description>\</b>.
  <cs.parameters:{ p | <parameter_javadoc(parameter=p)>}; separator="\n">
- <custom_select_return_javadoc(cs=cs, table=table)>
+ <custom_select_return_javadoc(cs=cs, table=table, rs=cs.result)>
  */
 @Override
 <custom_select_return_nullable_maybe(cs=cs, result=cs.result, C=C)>
