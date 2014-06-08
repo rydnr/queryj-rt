@@ -194,6 +194,9 @@ public class QueryJCommandWrapper<T>
         command.setSetting(key, value);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     @NotNull
     public String toString()
