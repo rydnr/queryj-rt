@@ -2148,6 +2148,18 @@ public abstract class AbstractTableDecorator
             getNullableAttributes(
                 getAttributes(), getMetadataManager().getMetadataTypeManager(), TableDecoratorHelper.getInstance());
     }
+
+    /**
+     * Retrieves the nullable attributes.
+     * @return such list.
+     */
+    @NotNull
+    public List<Attribute<DecoratedString>> getNullableAttributes()
+    {
+        return
+            getNullableAttributes(
+                getAttributes(), getMetadataManager().getMetadataTypeManager(), TableDecoratorHelper.getInstance());
+    }
     /**
      * {@inheritDoc}
      */
