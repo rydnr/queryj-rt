@@ -80,10 +80,6 @@ sourceImpl(table, C) ::= <<
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.PreparedStatementSetter;
 <checkers_import(C=C)>
-/*
- * Importing JDK extension classes
- */
-import javax.sql.DataSource;
 
 /*
  * Importing JDK classes.
