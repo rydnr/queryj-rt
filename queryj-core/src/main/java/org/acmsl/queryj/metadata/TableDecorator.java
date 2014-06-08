@@ -134,4 +134,11 @@ public interface TableDecorator
      */
     @NotNull
     ListDecorator<Attribute<DecoratedString>> getAllAttributes();
+
+    /**
+     * Retrieves all attributes, including parent's.
+     * @return such attributes.
+     */
+    @NotNull
+    public ListDecorator<Attribute<DecoratedString>> getAll()
 }
