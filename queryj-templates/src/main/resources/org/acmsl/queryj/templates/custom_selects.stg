@@ -530,15 +530,12 @@ custom_select_return_javadoc(cs, result, C) ::= <<
  * @return the {@link <cs.resultClass>} information retrieved.
 <else>
 <if(cs.multiple)>
-<notnull(C=C)>
  * @return the {@link <cs.resultClass>} information retrieved.
 <else>
-<nullable(C=C)>
  * @return the {@link <cs.resultClass>Decorator} information retrieved.
 <endif>
 <endif>
 <else>
-<nullable(C=C)>
  * @return the {@link <cs.resultClass>} information retrieved.
 <endif>}>
 <endif>
