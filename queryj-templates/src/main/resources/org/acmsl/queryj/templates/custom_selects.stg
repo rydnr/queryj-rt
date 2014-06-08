@@ -548,15 +548,15 @@ if(cs.resultClass)><
     if(rs.implicitProperties)
      ><cs.resultClass><
     else><
-        if(cs.multiple)
-         ><cs.resultClass><
-        else
-         ><cs.resultClass>Decorator<
-        endif><
+      if(cs.multiple)
+       ><cs.resultClass><
+      else
+       ><cs.resultClass>Decorator<
       endif><
-    else
-     ><cs.resultClass><
-    endif>}><
+    endif><
+  else
+   ><cs.resultClass><
+  endif>}><
 else
  >void<
 endif>
