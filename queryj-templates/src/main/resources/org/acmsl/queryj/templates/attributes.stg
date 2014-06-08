@@ -352,7 +352,7 @@ import_attribute_types(table, useHeader=true, nullableOnly=false) ::= <<
 <
 if(nullableOnly)><
   if(table.attributeTypes)><
-  if(useHeader)>
+    if(useHeader)>
 /*
  * Importing JDK classes.
  */
