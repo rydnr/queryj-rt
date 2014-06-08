@@ -454,7 +454,6 @@ public class TableDecoratorHelper
      * @param attributes the attribute list.
      * @return the nullable subset.
      */
-    @SuppressWarnings("unused")
     @NotNull
     public List<Attribute<DecoratedString>> filterNullableAttributes(
         @NotNull final List<Attribute<DecoratedString>> attributes)
