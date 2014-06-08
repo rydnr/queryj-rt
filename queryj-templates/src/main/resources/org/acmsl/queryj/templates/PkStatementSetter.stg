@@ -139,11 +139,9 @@ public class <table.name.voName>PkStatementSetter
      * Creates a {@code <table.name.voName>PkStatementSetter}
      * instance.
      <table.primaryKey:{ a |<attribute_javadoc(attr=a)>}; separator="\n">
-     * @param updateOperation whether the operation is an update.
      */
     public <table.name.voName>PkStatementSetter(
-        <table.primaryKey:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">,
-        final boolean updateOperation)
+        <table.primaryKey:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
     {
         <table.primaryKey:{ a | immutableSet<a.name.capitalized>(<a.name.uncapitalized>);}; separator="\n">
     }
