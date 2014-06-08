@@ -2032,6 +2032,7 @@ public abstract class AbstractTableDecorator
      * Retrieves all attributes, including parent's.
      * @return such attributes.
      */
+    @Override
     @NotNull
     public ListDecorator<Attribute<DecoratedString>> getAll()
     {
