@@ -2163,7 +2163,7 @@ public abstract class AbstractTableDecorator
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
         return
-
+            filterExternallyManagedAttributes()
                 getAttributes(), getMetadataManager().getMetadataTypeManager(), TableDecoratorHelper.getInstance());
     }
 
