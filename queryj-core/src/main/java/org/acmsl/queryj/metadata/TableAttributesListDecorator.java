@@ -290,7 +290,7 @@ public class TableAttributesListDecorator
     @Override
     public List<Attribute<DecoratedString>> getNullableAttributes()
     {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        throw new RuntimeException(INVALID_OPERATION);
     }
 
     /**
