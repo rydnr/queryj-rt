@@ -197,7 +197,7 @@ protected <table.name.voName> extractValue(
 {
     <notnull(C=C)>final <table.name.voName> result;
 
-<if(table.nullableAttributes)>
+<if(table.containsNullableAttributes)>
     <result.nullableProperties:{a | <nullable_attribute_resultset_retrieval_declaration(attr=a, C=C)>}; separator="\n">
 
 <endif>
