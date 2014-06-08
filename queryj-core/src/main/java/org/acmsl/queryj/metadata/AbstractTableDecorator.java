@@ -1995,6 +1995,7 @@ public abstract class AbstractTableDecorator
      * Checks whether any attribute is a clob.
      * @return {@code true} in such case.
      */
+    @Override
     public boolean getContainsClobs()
     {
         return
