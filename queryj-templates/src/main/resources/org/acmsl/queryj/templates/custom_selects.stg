@@ -559,7 +559,6 @@ if(cs.resultClass)><
     if(!rs.implicitProperties)><
       if(cs.multiple)>
 <notnull(C=C)>
-public <cs.resultClass> <cs.name.uncapitalized>(
 <else>
 <nullable(C=C)>
 public <cs.resultClass>Decorator <cs.name.uncapitalized>(
