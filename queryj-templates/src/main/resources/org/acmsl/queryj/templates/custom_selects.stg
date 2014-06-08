@@ -232,23 +232,6 @@ custom_select_for_update(cs, table, C) ::= <<
  * Custom select for update \<i><cs.id>\</i>:
  * \<b><cs.description>\</b>.
  <cs.parameters:{ p | <parameter_javadoc(parameter=p)>}; separator=",\n">
-<if(cs.resultClass)>
-<cs.result:{rs|<if(table.voDecorated)><if(rs.implicitProperties)>
- * @return the {@link <cs.resultClass>} information retrieved.
-<else>
-<if(cs.multiple)>
-<notnull(C=C)>
- * @return the {@link <cs.resultClass>} information retrieved.
-<else>
-<nullable(C=C)>
- * @return the {@link <cs.resultClass>Decorator} information retrieved.
-<endif>
-<endif>
-<else>
-<nullable(C=C)>
- * @return the {@link <cs.resultClass>} information retrieved.
-<endif>}>
-<endif>
  */
 <if(cs.resultClass)>
 <cs.result:{rs|<if(table.voDecorated)><if(rs.implicitProperties)>
@@ -534,3 +517,4 @@ import_custom_select_types(cs, C) ::= <<
 !>
 <if(cs.parameterTypes)><cs.parameterTypes:{ t | import <t>;}; separator="\n"><endif>
 >>
+
