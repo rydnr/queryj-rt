@@ -121,6 +121,7 @@ public interface TableDecorator
      * Retrieves the ordered list of the fully-qualified attribute types.
      * @return such list.
      */
+    @SuppressWarnings("unused")
     @NotNull
     List<DecoratedString> getNullableAttributeTypes();
 
