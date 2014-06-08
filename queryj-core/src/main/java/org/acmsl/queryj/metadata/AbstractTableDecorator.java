@@ -2174,7 +2174,7 @@ public abstract class AbstractTableDecorator
     @NotNull
     public List<Attribute<DecoratedString>> getNullableAttributes()
     {
-        return getNullableAttributes(getAttributes());
+        return getNullableAttributes(getAttributes(), TableDecoratorHelper.getInstance());
     }
 
     /**
