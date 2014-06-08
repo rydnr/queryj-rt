@@ -84,11 +84,6 @@ import java.io.PrintStream;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-/*
- * Importing checkthread.org annotations.
- */
-import org.checkthread.annotations.ThreadSafe;
-
 <class(table=table, C=C)>
 >>
 
