@@ -238,7 +238,7 @@ custom_select_for_update(cs, table, C) ::= <<
 <else>
 <if(cs.multiple)>
 <notnull(C=C)>
-public <cs.resultClass> <cs.name.uncapitalized>(
+ * @return the {@link <cs.resultClass>} information retrieved.
 <else>
 <nullable(C=C)>
 public <cs.resultClass>Decorator <cs.name.uncapitalized>(
