@@ -2003,6 +2003,8 @@ public abstract class AbstractTableDecorator
     @NotNull
     public List<DecoratedString> getNullableAttributeTypes()
     {
+        return
+            getNullableAttributeTypes(TableDecoratorHelper.getInstance());
     }
 
     /**
