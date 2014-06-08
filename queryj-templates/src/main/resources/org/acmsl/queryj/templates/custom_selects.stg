@@ -225,7 +225,7 @@ custom_select_for_update(cs, table, C) ::= <<
  <cs.parameters:{ p | <parameter_javadoc(parameter=p)>}; separator=",\n">
  <custom_select_return_javadoc(cs=cs, table=table, rs=cs.result)>
  */
-<custom_select_for_update_return(cs=cs, table=table, rs=cs.result
+<custom_select_for_update_return(cs=cs, table=table, rs=cs.result)>
 <if(cs.resultClass)>
 <cs.result:{rs|<if(table.voDecorated)><if(rs.implicitProperties)>
 public <cs.resultClass> <cs.name.uncapitalized>(
