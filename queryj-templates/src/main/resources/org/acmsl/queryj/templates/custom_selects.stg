@@ -543,7 +543,8 @@ custom_select_for_update_return(cs, table, C) ::= <<
 <if(cs.resultClass)><
   cs.result:{rs|<
     if(table.voDecorated)><
-      if(rs.implicitProperties)>
+      if(rs.implicitProperties)
+      >
 <cs.resultClass>
 <else>
 <if(cs.multiple)>
