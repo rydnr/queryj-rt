@@ -668,7 +668,7 @@ public class TableAttributesPartialListDecorator
     @Override
     public ListDecorator<Attribute<DecoratedString>> getAllAttributes()
     {
-        return getAll();
+        return getTable().getAll();
     }
 
     /**
