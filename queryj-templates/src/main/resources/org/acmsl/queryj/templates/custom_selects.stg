@@ -552,7 +552,8 @@ custom_select_for_update_return(cs, table, C) ::= <<
          ><cs.resultClass>Decorator<
         endif><
       endif><
-    else>
+    else
+    >
 <cs.resultClass>
 <endif>}>
 <else>
