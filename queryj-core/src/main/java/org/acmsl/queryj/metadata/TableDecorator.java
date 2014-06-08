@@ -204,4 +204,12 @@ public interface TableDecorator
     @SuppressWarnings("unused")
     @Nullable
     ForeignKey<DecoratedString> getParentForeignKey();
+
+    /**
+     * Alias to make templates more readable.
+     * @return the table's own attributes.
+     */
+    @SuppressWarnings("unused")
+    @Nullable
+    ListDecorator<Attribute<DecoratedString>> getOwn();
 }
