@@ -235,7 +235,6 @@ custom_select_for_update(cs, table, C) ::= <<
 <if(cs.resultClass)>
 <cs.result:{rs|<if(table.voDecorated)><if(rs.implicitProperties)>
  * @return the {@link <cs.resultClass>} information retrieved.
-public <cs.resultClass> <cs.name.uncapitalized>(
 <else>
 <if(cs.multiple)>
 <notnull(C=C)>
