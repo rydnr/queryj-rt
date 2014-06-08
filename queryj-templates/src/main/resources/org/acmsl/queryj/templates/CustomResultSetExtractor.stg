@@ -218,9 +218,6 @@ else
 {
     <p.id.uncapitalized> = null;
 }
-else
-{
-}
 <else>
 <notnull(C=C)>final <p.objectType> <p.id.uncapitalized> = <property_resultset_retrieval(property=p, C=C)>;
 <endif>
