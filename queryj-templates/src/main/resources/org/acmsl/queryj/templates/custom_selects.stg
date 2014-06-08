@@ -556,7 +556,7 @@ if(cs.resultClass)><
     endif><
   else
    ><cs.resultClass><
-  endif>}><
+  endif>
 else
  >void<
 endif>
