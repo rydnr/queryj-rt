@@ -161,7 +161,7 @@ public class <table.name.voName>PkStatementSetter
     {
         setValues(
             preparedStatement,
-            <table.primaryKey:{ a | get<a.name.capitalized>(),}; separator="\n">);
+            <table.primaryKey:{ a | get<a.name.capitalized>()}; separator=",\n">);
     }
 
     /**
