@@ -1420,6 +1420,32 @@ public abstract class AbstractTableDecorator
      */
     @SuppressWarnings("unused")
     @NotNull
+    protected List<Attribute<DecoratedString>> filterReadOnlyAttributes(
+        @NotNull final List<Attribute<DecoratedString>> attributes)
+    {
+        @NotNull final List<Attribute<DecoratedString>> result = new ArrayList<>(0);
+
+        for (@Nullable final Attribute<DecoratedString> t_Attribute : attributes)
+        {
+            if (   (t_Attribute != null)
+                   && (t_Attribute.isReadOnly()))
+            {
+                result.add(t_Attribute);
+            }
+        }
+
+        Collections.sort(result);
+
+        return result;
+    }
+
+    /**
+     * Retrieves the read-only attributes from given list.
+     * @param attributes the attribute list.
+     * @return the read-only subset.
+     */
+    @SuppressWarnings("unused")
+    @NotNull
     protected List<Attribute<DecoratedString>> filterExternallyManagedAttributes(
         @NotNull final List<Attribute<DecoratedString>> attributes)
     {
