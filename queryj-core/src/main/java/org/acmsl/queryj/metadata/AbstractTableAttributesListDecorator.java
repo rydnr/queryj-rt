@@ -440,6 +440,169 @@ public abstract class AbstractTableAttributesListDecorator
         return result;
     }
 
+    /**
+     * Retrieves all attributes, including parent's.
+     *
+     * @return such attributes.
+     */
+    @NotNull
+    @Override
+    public ListDecorator<Attribute<DecoratedString>> getAll()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
+     * Retrieves the metadata manager.
+     *
+     * @return such instance.
+     */
+    @NotNull
+    @Override
+    public MetadataManager getMetadataManager()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
+     * Retrieves all attributes, including parent's.
+     *
+     * @return such attributes.
+     */
+    @NotNull
+    @Override
+    public ListDecorator<Attribute<DecoratedString>> getAllAttributes()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
+     * Checks whether some of the attributes are nullable or not.
+     *
+     * @return {@code true} in such case.
+     */
+    @Override
+    public boolean getContainsNullableAttributes()
+    {
+        return false;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
+     * Checks whether some of the attributes cannot be null.
+     *
+     * @return {@code true} in such case.
+     */
+    @Override
+    public boolean getContainsNotNullAttributes()
+    {
+        return false;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
+     * Retrieves the custom result.
+     *
+     * @return such {@link org.acmsl.queryj.metadata.ResultDecorator} element.
+     */
+    @Nullable
+    @Override
+    public Result<DecoratedString> getCustomResult()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
+     * Retrieves the custom selects.
+     *
+     * @return such list of {@link org.acmsl.queryj.customsql.Sql} elements.
+     */
+    @NotNull
+    @Override
+    public List<Sql<DecoratedString>> getCustomSelects()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
+     * Retrieves the custom updates or inserts.
+     *
+     * @return such information.
+     */
+    @NotNull
+    @Override
+    public List<Sql<DecoratedString>> getCustomUpdatesOrInserts()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
+     * Retrieves the custom select-for-update queries.
+     *
+     * @return such list of {@link org.acmsl.queryj.customsql.Sql} elements.
+     */
+    @NotNull
+    @Override
+    public List<Sql<DecoratedString>> getCustomSelectsForUpdate()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
+     * Retrieves the name of the parent table, or {@code null} if no parent exists.
+     *
+     * @return such information.
+     */
+    @Nullable
+    @Override
+    public DecoratedString getParentTableName()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
+     * Retrieves the parent foreign-key.
+     *
+     * @return such foreign key.
+     */
+    @Nullable
+    @Override
+    public ForeignKey<DecoratedString> getParentForeignKey()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
+     * Alias to make templates more readable.
+     *
+     * @return the child attributes.
+     */
+    @Nullable
+    @Override
+    public ListDecorator<Attribute<DecoratedString>> getChild()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
+     * Retrieves the attribute used to label the static rows in the table.
+     *
+     * @return such attribute.
+     */
+    @Override
+    public Attribute<DecoratedString> getStaticAttribute()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
+     * Retrieves whether is a relationship table.
+     *
+     * @return such information.
+     */
+    @Override
+    public boolean isRelationship()
+    {
+        return false;  //To change body of implemented methods use File | Settings | File Templates.
+    }
 
     /**
      * Compares given instance with the one wrapped by this instance.
