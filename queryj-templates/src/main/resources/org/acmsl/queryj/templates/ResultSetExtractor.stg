@@ -198,6 +198,7 @@ protected <table.name.voName> extractValue(
     <notnull(C=C)>final <table.name.voName> result;
 
 <if(table.nullableAttributes)>
+
     result =
         factory.create<table.name.voName>(
             <table.attributes:{a | <attribute_resultset_retrieval(attr=a, C=C)>}; separator=",\n">);
