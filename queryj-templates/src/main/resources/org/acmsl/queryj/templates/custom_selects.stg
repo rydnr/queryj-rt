@@ -510,7 +510,7 @@ import_custom_select_types(cs, C) ::= <<
 <if(cs.parameterTypes)><cs.parameterTypes:{ t | import <t>;}; separator="\n"><endif>
 >>
 
-custom_select_return_javadoc(cs, table) ::= <<
+custom_select_return_javadoc(cs, table, rs) ::= <<
 <!
  Generates the Javadoc @return tag when documenting custom-select methods.
  @param cs the custom select.
