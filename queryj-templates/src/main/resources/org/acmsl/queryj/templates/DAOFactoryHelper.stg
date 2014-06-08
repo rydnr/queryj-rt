@@ -229,8 +229,6 @@ public class <table.name.voName>DAOFactoryHelper
         <notnull(C=C)>final String factoryClassName =
             daoChooser.get<table.name.voName>DAOFactoryClassName();
 
-        if (factoryClassName != null)
-        {
             try
             {
                 <notnull(C=C)>final Class\<?> factoryClass =
