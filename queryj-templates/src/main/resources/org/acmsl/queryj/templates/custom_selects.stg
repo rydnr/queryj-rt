@@ -232,6 +232,25 @@ custom_select_for_update(cs, table, C) ::= <<
  * Custom select for update \<i><cs.id>\</i>:
  * \<b><cs.description>\</b>.
  <cs.parameters:{ p | <parameter_javadoc(parameter=p)>}; separator=",\n">
+<if(cs.resultClass)>
+<cs.result:{rs|<if(table.voDecorated)><if(rs.implicitProperties)>
+public <cs.resultClass> <cs.name.uncapitalized>(
+<else>
+<if(cs.multiple)>
+<notnull(C=C)>
+public <cs.resultClass> <cs.name.uncapitalized>(
+<else>
+<nullable(C=C)>
+public <cs.resultClass>Decorator <cs.name.uncapitalized>(
+<endif>
+<endif>
+<else>
+<nullable(C=C)>
+public <cs.resultClass> <cs.name.uncapitalized>(
+<endif>}>
+<else>
+public void <cs.name.uncapitalized>(
+<endif>
 <if(cs.resultRef)>
  * @return the {@link <cs.resultClass>} information retrieved.
 <else>
