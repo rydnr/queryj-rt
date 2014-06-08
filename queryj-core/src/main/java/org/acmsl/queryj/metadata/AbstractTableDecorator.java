@@ -2179,8 +2179,8 @@ public abstract class AbstractTableDecorator
 
     /**
      * Retrieves the nullable attributes.
-     * @param attributes the {@link Attribute}s.\
-     *
+     * @param attributes the {@link Attribute}s.
+     * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
      * @return such list.
      */
     @NotNull
