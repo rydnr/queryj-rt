@@ -2021,7 +2021,8 @@ public abstract class AbstractTableDecorator
     }
 
     /**
-     * Retrieves the ordered list of the fully-qualified attribute types.
+     * Retrieves the ordered list of the fully-qualified attribute types,
+     *
      * @return such list.
      */
     @Override
