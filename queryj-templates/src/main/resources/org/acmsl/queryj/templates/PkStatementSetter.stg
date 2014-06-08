@@ -238,12 +238,9 @@ public int hashCode()
 
     <table.primaryKey:{ a | <attribute_hashCode(attribute=a)>}; separator="\n">
 
-    final int updateHashCode = Boolean.valueOf(isUpdateOperation()).hashCode();
-
     result =
           classHashCode
-        <table.primaryKey:{ a |+ <a.name.uncapitalized>HashCode}; separator="\n">
-        + updateHashCode;
+        <table.primaryKey:{ a |+ <a.name.uncapitalized>HashCode}; separator="\n">;
 
     return result;
 }
