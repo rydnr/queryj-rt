@@ -554,6 +554,6 @@ custom_select_for_update_return(cs, table, C) ::= <<
 <cs.resultClass>
 <endif>}>
 <else>
-public void <cs.name.uncapitalized>(
+<cs.name.uncapitalized>
 <endif>
 >>
