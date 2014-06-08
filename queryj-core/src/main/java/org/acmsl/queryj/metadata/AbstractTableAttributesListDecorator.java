@@ -507,7 +507,7 @@ public abstract class AbstractTableAttributesListDecorator
     @Override
     public Result<DecoratedString> getCustomResult()
     {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return getTable().getCustomResult();
     }
 
     /**
