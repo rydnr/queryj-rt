@@ -226,8 +226,8 @@ nullable_attribute_resultset_retrieval_declaration(attr, C) ::= <<
 !>
 <
 if(attr.nullable)>
-<nullable(C=C)>final <attr.objectType> <attr.id.uncapitalized>Aux = <attribute_resultset_retrieval(attr=attr, C=C)>;
-<nullable(C=C)>final <attr.objectType> <attr.id.uncapitalized>;
+<nullable(C=C)>final <attr.objectType> <attr.name.uncapitalized>Aux = <attribute_resultset_retrieval(attr=attr, C=C)>;
+<nullable(C=C)>final <attr.objectType> <attr.name.uncapitalized>;
 if (resultSet.wasNull())
 {
     <attr.id.uncapitalized> = null;
