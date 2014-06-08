@@ -230,7 +230,7 @@ if(attr.nullable)>
 <nullable(C=C)>final <attr.objectType> <attr.name.uncapitalized>;
 if (resultSet.wasNull())
 {
-    <attr.id.uncapitalized> = null;
+    <attr.name.uncapitalized> = null;
 }
 else
 {
