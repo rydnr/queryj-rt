@@ -221,7 +221,7 @@ attribute_extraction(attr, table, repository, C) ::= <<
 nullable_attribute_resultset_retrieval_declaration(attr, C) ::= <<
 <!
  Writes the piece of code to retrieve the value of a nullable attribute from a ResultSet.
- @param property the property.
+ @param attr the attribute.
  @param C the context.
 !>
 <
