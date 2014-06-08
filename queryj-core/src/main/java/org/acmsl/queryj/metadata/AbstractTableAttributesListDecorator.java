@@ -484,7 +484,7 @@ public abstract class AbstractTableAttributesListDecorator
     @Override
     public boolean getContainsNullableAttributes()
     {
-        return false;  //To change body of implemented methods use File | Settings | File Templates.
+        return getTable().getContainsNullableAttributes();
     }
 
     /**
