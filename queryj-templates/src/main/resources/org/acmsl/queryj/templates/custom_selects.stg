@@ -561,7 +561,7 @@ if(cs.resultClass)><
 <notnull(C=C)>
 <     else>
 <nullable(C=C)>
-<    endif>
+<     endif>
 <endif>
 <else>
 <nullable(C=C)>
