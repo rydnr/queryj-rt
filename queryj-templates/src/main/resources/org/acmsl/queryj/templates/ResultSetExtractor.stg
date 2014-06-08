@@ -276,9 +276,9 @@ endif>
 nullable_date_attribute_resultset_retrieval(attr, C) ::= <<
 <!
  Writes the piece of code to retrieve the value of a nullable Date attribute from a ResultSet.
- @param property the property.
+ @param attr the attribute.
  @param C the context.
 !>
-<if(property.nullable)>new Date(<property.id.uncapitalized>.getTime())<endif>
+<if(attr.nullable)>new Date(<property.id.uncapitalized>.getTime())<endif>
 >>
 
