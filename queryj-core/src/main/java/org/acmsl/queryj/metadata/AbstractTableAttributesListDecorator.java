@@ -291,6 +291,21 @@ public abstract class AbstractTableAttributesListDecorator
                 TableDecoratorHelper.getInstance());
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public List<DecoratedString> getNullableAttributeTypes()
+    {
+        return
+            getAttributeTypes(
+                getNullableAttributes(),
+                getMetadataManager().getMetadataTypeManager(),
+                TableDecoratorHelper.getInstance());
+    }
+
+
     // Table implementation
     /**
      * {@inheritDoc}
