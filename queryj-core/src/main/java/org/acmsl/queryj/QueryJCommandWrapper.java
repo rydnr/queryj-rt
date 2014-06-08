@@ -54,6 +54,7 @@ import java.util.List;
 /**
  * Wraps a {@link QueryJCommand} to provide type-safe access
  * to its settings.
+ * @param <T> the type.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  */
