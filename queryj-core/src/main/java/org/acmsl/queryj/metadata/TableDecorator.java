@@ -126,5 +126,5 @@ public interface TableDecorator
      * Checks whether any attribute is a clob.
      * @return {@code true} in such case.
      */
-    public boolean getContainsClobs();
+    boolean getContainsClobs();
 }
