@@ -148,4 +148,11 @@ public interface TableDecorator
      */
     @SuppressWarnings("unused")
     boolean getContainsNullableAttributes();
+
+    /**
+     * Checks whether some of the attributes cannot be null.
+     * @return {@code true} in such case.
+     */
+    @SuppressWarnings("unused")
+    public boolean getContainsNotNullAttributes();
 }
