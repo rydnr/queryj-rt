@@ -163,8 +163,7 @@ defaultExtractor(table, repository, def, C) ::= <<
 /**
  * Extracts {@link <table.name.voName>} information from given result set.
  * @param resultSet the result set.
- * @return the {@link <table.name.voName>} or
- * {@code null} if the operation returned no data.
+ * @return the {@link <table.name.voName>}.
  * @throws SQLException intercepted by \<i>Spring\</i>.
  * @throws DataAccessException with information about any
  * custom exception.
