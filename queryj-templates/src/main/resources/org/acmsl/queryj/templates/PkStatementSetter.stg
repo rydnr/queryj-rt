@@ -220,7 +220,7 @@ public class <table.name.voName>PkStatementSetter
     protected void setValues(
         <notnull(C=C)>final PreparedStatement preparedStatement,
         <table.primaryKey:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">,
-        @SuppressWarningsfinal boolean update)
+        @SuppressWarnings("unused"final boolean update)
         throws  SQLException
     {
         int index = 1;
