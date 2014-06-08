@@ -306,7 +306,9 @@ public abstract class AbstractTableAttributesListDecorator
      */
     @NotNull
     @Override
-    public List<Attribute<DecoratedString>> getNullableAttributes(@NotNull final List<Attribute<DecoratedString>> attributes)
+    public List<Attribute<DecoratedString>> getNullableAttributes(
+        @NotNull final List<Attribute<DecoratedString>> attributes,
+        @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
         return
             getAttributeTypes(
