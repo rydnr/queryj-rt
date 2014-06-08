@@ -51,6 +51,7 @@ import org.acmsl.queryj.metadata.vo.Table;
  * Importing some JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /*
  * Importing some JDK classes.
@@ -155,4 +156,12 @@ public interface TableDecorator
      */
     @SuppressWarnings("unused")
     boolean getContainsNotNullAttributes();
+
+    /**
+     * Retrieves the custom result.
+     * @return such {@link ResultDecorator} element.
+     */
+    @SuppressWarnings("unused")
+    @Nullable
+    public Result<DecoratedString> getCustomResult();
 }
