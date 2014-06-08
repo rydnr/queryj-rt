@@ -361,4 +361,14 @@ if(nullableOnly)><
 <
   else>
 <endif>
+  if(table.attributeTypes)><
+    if(useHeader)>
+/*
+ * Importing JDK classes.
+ */
+<   endif><
+    table.attributeTypes:{ t | import <t>;}; separator="\n">
+<
+  else>
+<endif>
 >>
