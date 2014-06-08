@@ -226,7 +226,7 @@ public class <table.name.voName>DAOFactoryHelper
     {
         <nullable(C=C)><table.name.voName>DAOFactory result = null;
 
-        <nullable(C=C)>final String factoryClassName =
+        <notnull(C=C)>final String factoryClassName =
             daoChooser.get<table.name.voName>DAOFactoryClassName();
 
         if (factoryClassName != null)
