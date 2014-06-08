@@ -273,7 +273,7 @@ else><
 endif>
 >>
 
-nullable_date_attribute_resultset_retrieval(property, C) ::= <<
+nullable_date_attribute_resultset_retrieval(attr, C) ::= <<
 <!
  Writes the piece of code to retrieve the value of a nullable Date property from a ResultSet.
  @param property the property.
