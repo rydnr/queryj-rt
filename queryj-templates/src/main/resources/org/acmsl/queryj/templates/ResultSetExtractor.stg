@@ -249,7 +249,7 @@ nullable_attribute_resultset_retrieval(attr, C) ::= <<
 !>
 <
 if(attribute.nullable)
-  >(<attr.id.uncapitalized> == null) ? null : <generic_nullable_attribute_resultset_retrieval(property=property, C=C)><
+  >(<attr.id.uncapitalized> == null) ? null : <generic_nullable_attribute_resultset_retrieval(attr=attr, C=C)><
 else
   ><property_resultset_retrieval(property=property, C=C)><
 endif>
