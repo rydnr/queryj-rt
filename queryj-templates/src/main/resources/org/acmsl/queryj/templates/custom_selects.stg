@@ -560,7 +560,7 @@ if(cs.resultClass)><
       if(cs.multiple)
        ><notnull(C=C)>
 <     else
-      ><nullable(C=C)>
+       ><nullable(C=C)>
 <     endif>
 <endif>
 <else>
