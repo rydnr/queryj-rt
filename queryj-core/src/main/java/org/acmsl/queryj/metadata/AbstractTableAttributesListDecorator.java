@@ -587,10 +587,11 @@ public abstract class AbstractTableAttributesListDecorator
      *
      * @return such attribute.
      */
+    @Nullable
     @Override
     public Attribute<DecoratedString> getStaticAttribute()
     {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return getTable().getStaticAttribute();
     }
 
     /**
