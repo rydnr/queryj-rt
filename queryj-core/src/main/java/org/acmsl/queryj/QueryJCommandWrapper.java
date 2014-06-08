@@ -201,6 +201,6 @@ public class QueryJCommandWrapper<T>
     @NotNull
     public String toString()
     {
-        return "{ \"class\": \"QueryJCommandWrapper', 'command': '" + m__Command + "' }";
+        return "{ \"class\": \"QueryJCommandWrapper\", \"command\": " + m__Command + " }";
     }
 }
