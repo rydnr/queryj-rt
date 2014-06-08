@@ -51,11 +51,7 @@ custom_select(cs, table, C) ::= <<
  * Custom select \<i><cs.id>\</i>:
  * \<b><cs.description>\</b>.
  <cs.parameters:{ p | <parameter_javadoc(parameter=p)>}; separator="\n">
-<if(cs.resultRef)>
- * @return the {@link <cs.resultClass>} information retrieved.
-<else>
- * @return the {@link <cs.dao.voName>} information retrieved.
-<endif>
+ <custom_select_return_javadoc(cs=cs, table=table)>
  */
 @Override
 <custom_select_return_nullable_maybe(cs=cs, result=cs.result, C=C)>
