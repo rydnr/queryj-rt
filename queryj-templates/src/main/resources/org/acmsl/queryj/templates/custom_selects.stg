@@ -553,8 +553,7 @@ custom_select_for_update_return(cs, table, C) ::= <<
         endif><
       endif><
     else
-    >
-<cs.resultClass>
+     ><cs.resultClass>
 <endif>}>
 <else>
 void
