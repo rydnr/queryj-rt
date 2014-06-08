@@ -277,6 +277,20 @@ public abstract class AbstractTableAttributesListDecorator
         return tableDecoratorHelper.getAttributeTypes(items, metadataTypeManager);
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public List<DecoratedString> getAttributeTypes()
+    {
+        return
+            getAttributeTypes(
+                getItems(),
+                getMetadataManager().getMetadataTypeManager(),
+                TableDecoratorHelper.getInstance());
+    }
+
     // Table implementation
     /**
      * {@inheritDoc}
