@@ -300,6 +300,7 @@ public abstract class AbstractTableAttributesListDecorator
     {
         return getNullableAttributes(getAttributes(), TableDecoratorHelper.getInstance());
     }
+
     /**
      * {@inheritDoc}
      */
