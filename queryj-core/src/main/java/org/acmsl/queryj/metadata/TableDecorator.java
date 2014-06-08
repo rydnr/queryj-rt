@@ -163,7 +163,7 @@ public interface TableDecorator
      */
     @SuppressWarnings("unused")
     @Nullable
-    public Result<DecoratedString> getCustomResult();
+    Result<DecoratedString> getCustomResult();
 
     /**
      * Retrieves the custom updates or inserts.
