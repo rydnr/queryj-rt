@@ -748,7 +748,7 @@ public abstract class AbstractTableDecorator
      * Retrieves the parent foreign-key.
      * @return such foreign key.
      */
-    @SuppressWarnings("unused")
+    @Override
     @Nullable
     public ForeignKey<DecoratedString> getParentForeignKey()
     {
