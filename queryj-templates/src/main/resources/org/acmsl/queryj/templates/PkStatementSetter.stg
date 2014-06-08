@@ -265,8 +265,6 @@ public String toString()
 
     <table.primaryKey:{ a | <attribute_toString(attribute=a)>}; separator="\n">
 
-    result.append(", \"update\": ");
-    result.append(this.m__bUpdateOperation);
     result.append(", \"package\": \"<C.package>\" }");
 
     return result.toString();
