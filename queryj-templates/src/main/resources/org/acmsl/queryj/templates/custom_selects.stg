@@ -565,7 +565,7 @@ if(cs.resultClass)><
 <   endif>
 < else
    ><nullable(C=C)>
-<endif>}>
+< endif>
 <else>
 public void <cs.name.uncapitalized>(
 <endif>
