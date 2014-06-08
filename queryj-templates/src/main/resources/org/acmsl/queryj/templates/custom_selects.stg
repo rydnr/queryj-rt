@@ -99,6 +99,7 @@ endif>
  * @param params the query parameters.
  * @param transactionTemplate the {@link TransactionTemplate} instance.
  * @param daoListener the {@link DAOListener} instance.
+ <custom_select_return_javadoc(cs=cs, table=table)>
 <if(cs.resultRef)>
  * @return the {@link <cs.resultClass>} information retrieved.
 <else>
