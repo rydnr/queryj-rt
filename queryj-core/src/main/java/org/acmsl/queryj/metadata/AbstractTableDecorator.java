@@ -1428,7 +1428,7 @@ public abstract class AbstractTableDecorator
         for (@Nullable final Attribute<DecoratedString> t_Attribute : attributes)
         {
             if (   (t_Attribute != null)
-                   && (t_Attribute.isReadOnly()))
+                && (t_Attribute.isNullable()))
             {
                 result.add(t_Attribute);
             }
