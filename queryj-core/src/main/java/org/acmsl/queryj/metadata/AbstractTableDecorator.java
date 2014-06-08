@@ -2003,6 +2003,16 @@ public abstract class AbstractTableDecorator
     @NotNull
     public List<DecoratedString> getNullableAttributeTypes()
     {
+    }
+    /**
+     * Retrieves the ordered list of the fully-qualified attribute types,
+     * only for the nullable attributes.
+     * @return such list.
+     */
+    @Override
+    @NotNull
+    public List<DecoratedString> getNullableAttributeTypes()
+    {
         return
             getAttributeTypes(
                 TableDecoratorHelper.getInstance().filterNullableAttributes(getAttributes()),
