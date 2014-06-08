@@ -151,34 +151,6 @@ public class <table.name.voName>PkStatementSetter
     <table.primaryKey:{ a | <attribute_accessors(attribute=a, C=C, override=false)>}; separator="\n">
 
     /**
-     * Specifies whether the operation is an update or not.
-     * @param updateOperation such information.
-     */
-    protected final void immutableSetUpdateOperation(
-        final boolean updateOperation)
-    {
-        m__bUpdateOperation = updateOperation;
-    }
-
-    /**
-     * Specifies whether the operation is an update or not.
-     * @param updateOperation such information.
-     */
-    protected void setUpdateOperation(final boolean updateOperation)
-    {
-        immutableSetUpdateOperation(updateOperation);
-    }
-
-    /**
-     * Retrieves whether the operation is an update or not.
-     * @return such information.
-     */
-    public boolean isUpdateOperation()
-    {
-        return m__bUpdateOperation;
-    }
-
-    /**
      * Specifies the values on given {@link PreparedStatement}.
      * @param preparedStatement the prepared statement.
      * @throws SQLException intercepted by \<i>Spring\</i>.
