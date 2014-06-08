@@ -456,7 +456,7 @@ public class TableDecoratorHelper
      */
     @SuppressWarnings("unused")
     @NotNull
-    protected List<Attribute<DecoratedString>> filterNullableAttributes(
+    public List<Attribute<DecoratedString>> filterNullableAttributes(
         @NotNull final List<Attribute<DecoratedString>> attributes)
     {
         @NotNull final List<Attribute<DecoratedString>> result = new ArrayList<>(0);
