@@ -154,5 +154,5 @@ public interface TableDecorator
      * @return {@code true} in such case.
      */
     @SuppressWarnings("unused")
-    public boolean getContainsNotNullAttributes();
+    boolean getContainsNotNullAttributes();
 }
