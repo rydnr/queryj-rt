@@ -1414,7 +1414,7 @@ public abstract class AbstractTableDecorator
     }
 
     /**
-     * Retrieves the read-only attributes from given list.
+     * Retrieves the nullable attributes from given list.
      * @param attributes the attribute list.
      * @return the read-only subset.
      */
