@@ -440,6 +440,7 @@ public abstract class AbstractTableAttributesListDecorator
         return result;
     }
 
+
     /**
      * Compares given instance with the one wrapped by this instance.
      * @param table the table to compare with.
