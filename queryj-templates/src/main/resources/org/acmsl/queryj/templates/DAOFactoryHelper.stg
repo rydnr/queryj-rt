@@ -77,7 +77,6 @@ import <C.project_package>.<typeInitMap.baseDAOSubpackageName>.impl.<C.repositor
  * Importing some JDK classes.
  */
 import java.io.PrintStream;
-import java.util.Map;
 
 /*
  * Importing some JDK extension classes
