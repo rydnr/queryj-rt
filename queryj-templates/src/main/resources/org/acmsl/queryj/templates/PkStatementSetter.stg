@@ -69,11 +69,6 @@ sourceImpl(table, C) ::= <<
  */
 <package_declaration(p=C.package)>
 
-<project_imports(
-  basePackageName=C.project_package,
-  voSubpackageName=typeInitMap.voSubpackageName,
-  voName=table.name.voName)>
-
 /*
  * Importing Spring classes.
  */
