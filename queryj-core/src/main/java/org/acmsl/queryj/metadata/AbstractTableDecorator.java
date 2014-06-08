@@ -1464,7 +1464,7 @@ public abstract class AbstractTableDecorator
      * Retrieves the custom selects.
      * @return such list of {@link Sql} elements.
      */
-    @SuppressWarnings("unused")
+    @Override
     @NotNull
     public List<Sql<DecoratedString>> getCustomSelects()
     {
