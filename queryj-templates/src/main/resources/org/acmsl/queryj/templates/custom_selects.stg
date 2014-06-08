@@ -100,11 +100,6 @@ endif>
  * @param transactionTemplate the {@link TransactionTemplate} instance.
  * @param daoListener the {@link DAOListener} instance.
  <custom_select_return_javadoc(cs=cs, table=table)>
-<if(cs.resultRef)>
- * @return the {@link <cs.resultClass>} information retrieved.
-<else>
- * @return the {@link <cs.dao.voName>} information retrieved.
-<endif>
  */
 <custom_select_return_nullable_maybe(cs=cs, result=cs.result, C=C)>
 protected <custom_select_return(cs=cs, table=table, result=cs.result, C=C)> <cs.name.uncapitalized>(
