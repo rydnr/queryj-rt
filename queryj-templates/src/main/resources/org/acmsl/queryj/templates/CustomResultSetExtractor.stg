@@ -207,6 +207,7 @@ nullable_property_resultset_retrieval_declaration(property, C) ::= <<
  @param property the property.
  @param C the context.
 !>
+<if(property.nullable)>
 <nullable(C=C)>final <p.objectType> <p.id.uncapitalized> = <property_resultset_retrieval(property=p, C=C)>;
 <if(property.nullable)>
 if (resultSet.wasNull())
