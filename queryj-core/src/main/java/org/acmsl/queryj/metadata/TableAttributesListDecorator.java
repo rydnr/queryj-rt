@@ -278,7 +278,7 @@ public class TableAttributesListDecorator
     @Override
     public ListDecorator<Attribute<DecoratedString>> getChild()
     {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        throw new RuntimeException(INVALID_OPERATION);
     }
 
     /**
