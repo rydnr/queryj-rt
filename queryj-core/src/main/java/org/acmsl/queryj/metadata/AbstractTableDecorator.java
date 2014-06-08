@@ -2017,7 +2017,7 @@ public abstract class AbstractTableDecorator
     {
         return
             getAttributeTypes(
-                TableDecoratorHelper.getInstance().filterNullableAttributes(getAttributes()),
+                tableDecoratorHelper.filterNullableAttributes(getAttributes()),
                 getMetadataManager().getMetadataTypeManager(),
                 TableDecoratorHelper.getInstance());
     }
