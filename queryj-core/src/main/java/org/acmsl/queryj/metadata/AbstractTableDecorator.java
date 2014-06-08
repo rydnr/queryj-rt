@@ -1420,7 +1420,7 @@ public abstract class AbstractTableDecorator
      */
     @SuppressWarnings("unused")
     @NotNull
-    protected List<Attribute<DecoratedString>> filterReadOnlyAttributes(
+    protected List<Attribute<DecoratedString>> filterNullableAttributes(
         @NotNull final List<Attribute<DecoratedString>> attributes)
     {
         @NotNull final List<Attribute<DecoratedString>> result = new ArrayList<>(0);
