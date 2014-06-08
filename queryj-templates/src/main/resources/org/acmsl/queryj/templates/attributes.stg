@@ -359,6 +359,6 @@ if(nullableOnly)><
 <  endif><
     table.attributeTypes:{ t | import <t>;}; separator="\n">
 <
-else>
-<endif>
+  else><
+endif>
 >>
