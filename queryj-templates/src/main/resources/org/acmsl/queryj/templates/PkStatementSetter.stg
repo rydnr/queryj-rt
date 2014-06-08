@@ -148,17 +148,6 @@ public class <table.name.voName>PkStatementSetter
         <table.primaryKey:{ a | immutableSet<a.name.capitalized>(<a.name.uncapitalized>);}; separator="\n">
     }
 
-    /**
-     * Creates a {@code <table.name.voName>PkStatementSetter}
-     * instance.
-     <table.primaryKey:{ a |<attribute_javadoc(attr=a)>}; separator="\n">
-     */
-    public <table.name.voName>PkStatementSetter(
-        <table.primaryKey:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
-    {
-        this(<table.primaryKey:{ a | <a.name.uncapitalized>}; separator=", ">, false);
-    }
-
     <table.primaryKey:{ a | <attribute_accessors(attribute=a, C=C, override=false)>}; separator="\n">
 
     /**
