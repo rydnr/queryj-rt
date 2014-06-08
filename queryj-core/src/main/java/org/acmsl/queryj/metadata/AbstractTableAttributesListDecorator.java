@@ -304,7 +304,8 @@ public abstract class AbstractTableAttributesListDecorator
     /**
      * Retrieves the nullable attributes.
      * @param attributes the attributes.
-     * @param
+     * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
+     * @return the nullable attributes.
      */
     @NotNull
     public List<Attribute<DecoratedString>> getNullableAttributes(
