@@ -257,7 +257,7 @@ endif>
 
 generic_nullable_attribute_resultset_retrieval(attr, C) ::= <<
 <!
- Writes the piece of code to retrieve the value of a nullable property from a ResultSet.
+ Writes the piece of code to retrieve the value of a nullable attribute from a ResultSet.
  @param property the property.
  @param C the context.
 !>
