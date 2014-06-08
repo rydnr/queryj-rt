@@ -178,5 +178,5 @@ public interface TableDecorator
      */
     @SuppressWarnings("unused")
     @NotNull
-    public List<Sql<DecoratedString>> getCustomSelectsForUpdate();
+    List<Sql<DecoratedString>> getCustomSelectsForUpdate();
 }
