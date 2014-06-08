@@ -531,7 +531,7 @@ public abstract class AbstractTableAttributesListDecorator
     @Override
     public List<Sql<DecoratedString>> getCustomUpdatesOrInserts()
     {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return getTable().getCustomUpdatesOrInserts();
     }
 
     /**
