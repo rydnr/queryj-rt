@@ -2187,7 +2187,7 @@ public abstract class AbstractTableDecorator
         @NotNull final ListDecorator<Attribute<DecoratedString>> attributes,
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
-        return filterNullableAttributes(attributes);
+        return tableDecoratorHelper.filterNullableAttributes(attributes);
     }
 
     /**
