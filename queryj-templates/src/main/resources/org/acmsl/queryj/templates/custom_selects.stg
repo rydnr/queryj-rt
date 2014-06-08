@@ -520,7 +520,7 @@ import_custom_select_types(cs, C) ::= <<
 
 custom_select_return_javadoc(cs, result, C) ::= <<
 <!
- Generates the Javadoc @return tag in Javadoc
+ Generates the Javadoc @return tag in method documentation.
 >>
 <if(cs.resultClass)>
 <cs.result:{rs|<if(table.voDecorated)><if(rs.implicitProperties)>
