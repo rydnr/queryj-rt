@@ -281,4 +281,3 @@ nullable_date_attribute_resultset_retrieval(attr, C) ::= <<
 !>
 <if(attr.nullable)>new Date(<attr.id.uncapitalized>.getTime())<endif>
 >>
-
