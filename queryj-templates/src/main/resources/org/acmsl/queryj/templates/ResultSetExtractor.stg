@@ -279,6 +279,6 @@ nullable_date_attribute_resultset_retrieval(attr, C) ::= <<
  @param attr the attribute.
  @param C the context.
 !>
-<if(attr.nullable)>new Date(<property.id.uncapitalized>.getTime())<endif>
+<if(attr.nullable)>new Date(<attr.id.uncapitalized>.getTime())<endif>
 >>
 
