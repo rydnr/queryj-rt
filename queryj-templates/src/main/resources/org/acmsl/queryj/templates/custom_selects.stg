@@ -540,7 +540,7 @@ custom_select_for_update_return(cs, table, rs) ::= <<
  Generates the return value for a custom select-for-update.
  @param cs the custom select.
  @param table the table.
- @param C the context.
+ @param rs the result.
 !>
 <
 if(cs.resultClass)><
