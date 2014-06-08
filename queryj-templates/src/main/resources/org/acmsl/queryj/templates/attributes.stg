@@ -356,7 +356,7 @@ if(table.attributeTypes)><
  * Importing JDK classes.
  */
 <  endif><
-  table.attributeTypes:{ t | <if(nullableOnly)import <t>;}; separator="\n">
+  table.attributeTypes:{ t | <if(nullableOnly)>import <t>;}; separator="\n">
 <
 else>
 <endif>
