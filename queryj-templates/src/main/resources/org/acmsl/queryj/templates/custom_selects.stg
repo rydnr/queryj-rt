@@ -533,4 +533,24 @@ custom_select_return_javadoc(cs, table) ::= <<
 <endif>
 >>
 
-custom_select_for_update_return(cs, table, C)
+custom_select_for_update_return(cs, table, C) ::= <<
+<if(cs.resultClass)>
+<cs.result:{rs|<if(table.voDecorated)><if(rs.implicitProperties)>
+public <cs.resultClass> <cs.name.uncapitalized>(
+<else>
+<if(cs.multiple)>
+<notnull(C=C)>
+public <cs.resultClass> <cs.name.uncapitalized>(
+<else>
+<nullable(C=C)>
+public <cs.resultClass>Decorator <cs.name.uncapitalized>(
+<endif>
+<endif>
+<else>
+<nullable(C=C)>
+public <cs.resultClass> <cs.name.uncapitalized>(
+<endif>}>
+<else>
+public void <cs.name.uncapitalized>(
+<endif>
+>>
