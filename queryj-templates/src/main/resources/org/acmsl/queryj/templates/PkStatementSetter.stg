@@ -213,13 +213,11 @@ public class <table.name.voName>PkStatementSetter
      * Specifies the values on given {@link PreparedStatement}
      * @param preparedStatement the prepared statement.
      <table.primaryKey:{ a |<attribute_javadoc(attr=a)>}; separator="\n">
-     * @param update whether it's an update operation.
      * @throws SQLException intercepted by \<i>Spring\</i>.
      */
     protected void setValues(
         <notnull(C=C)>final PreparedStatement preparedStatement,
         <table.primaryKey:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
-        @SuppressWarnings("unused") final boolean update)
         throws  SQLException
     {
         int index = 1;
