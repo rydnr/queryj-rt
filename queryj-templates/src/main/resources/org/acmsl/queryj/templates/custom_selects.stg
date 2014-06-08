@@ -344,7 +344,7 @@ if(sql.resultRef)
    >/* single property */<sql.result.properties:{ p |
     new V24QueryTransactionCallback\<<engine.name><table.name.voName>DAO, <if(sql.multiple)>List\<<p.type.capitalized><else><p.type.capitalized><endif>\>(}; separator=""><
   else>
-    new V24QueryTransactionCallback\<<engine.name><table.name.voName>DAO, <if(sql.multiple)>List\<<sql.result.simpleClassValue><else><sql.result.simpleClassValue>\>(<
+    new V24QueryTransactionCallback\<<engine.name><table.name.voName>DAO, <if(sql.multiple)>List\<<sql.result.simpleClassValue><else><sql.result.simpleClassValue><e\>(<
   endif><
 else>
     new V24QueryTransactionCallback\<<engine.name><table.name.voName>DAO, <sql.dao.voName>\>(<
