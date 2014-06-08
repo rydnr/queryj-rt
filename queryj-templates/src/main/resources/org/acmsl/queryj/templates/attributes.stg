@@ -361,7 +361,7 @@ if(nullableOnly)><
 <
   else>
 < endif><
-else>
+else><
   if(table.attributeTypes)><
     if(useHeader)>
 /*
