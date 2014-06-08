@@ -762,7 +762,7 @@ public class TableAttributesPartialListDecorator
     @Override
     public ForeignKey<DecoratedString> getParentForeignKey()
     {
-        return getParentForeignKey();
+        return getTable().getParentForeignKey();
     }
 
     /**
