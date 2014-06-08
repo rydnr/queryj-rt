@@ -177,12 +177,6 @@ public class <table.name.voName>PkStatementSetter
     {
         int index = 1;
 
-<  if(table.externallyManaged.only.primaryKey)>
-        if (update)
-        {
-            <table.externallyManaged.only.primaryKey:{ a | <attribute_preparedstatement_specification(attr=a, C=C)>}; separator="\n">
-        }<
-   endif>
         <table.primaryKey.minus.externallyManaged:{ a | <attribute_preparedstatement_specification(attr=a, C=C)>}; separator="\n">
     }
 
