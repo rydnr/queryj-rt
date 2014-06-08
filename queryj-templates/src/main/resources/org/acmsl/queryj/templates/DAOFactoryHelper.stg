@@ -229,31 +229,31 @@ public class <table.name.voName>DAOFactoryHelper
         <notnull(C=C)>final String factoryClassName =
             daoChooser.get<table.name.voName>DAOFactoryClassName();
 
-            try
-            {
-                <notnull(C=C)>final Class\<?> factoryClass =
-                    Class.forName(factoryClassName);
+        try
+        {
+            <notnull(C=C)>final Class\<?> factoryClass =
+                Class.forName(factoryClassName);
 
-                result = (<table.name.voName>DAOFactory) factoryClass.newInstance();
-            }
-            catch (<notnull(C=C)>final ClassNotFoundException factoryImplementationMissing)
-            {
-                logError(
-                    "Cannot find " + factoryClassName + " implementation",
-                    factoryImplementationMissing);
-            }
-            catch (<notnull(C=C)>final InstantiationException invalidClassName)
-            {
-                logError(
-                    "Cannot instantiate " + factoryClassName + " implementation",
-                    invalidClassName);
-            }
-            catch (<notnull(C=C)>final IllegalAccessException illegalAccess)
-            {
-                logError(
-                    "Insufficient rights to instantiate " + factoryClassName,
-                    illegalAccess);
-            }
+            result = (<table.name.voName>DAOFactory) factoryClass.newInstance();
+        }
+        catch (<notnull(C=C)>final ClassNotFoundException factoryImplementationMissing)
+        {
+            logError(
+                "Cannot find " + factoryClassName + " implementation",
+                factoryImplementationMissing);
+        }
+        catch (<notnull(C=C)>final InstantiationException invalidClassName)
+        {
+            logError(
+                "Cannot instantiate " + factoryClassName + " implementation",
+                invalidClassName);
+        }
+        catch (<notnull(C=C)>final IllegalAccessException illegalAccess)
+        {
+            logError(
+                "Insufficient rights to instantiate " + factoryClassName,
+                illegalAccess);
+        }
         }
         else
         {
