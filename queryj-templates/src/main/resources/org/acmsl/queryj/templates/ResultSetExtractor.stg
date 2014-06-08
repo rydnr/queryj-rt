@@ -217,3 +217,68 @@ nullable_attribute_extraction(attr, table, repository, C) ::= <<
 attribute_extraction(attr, table, repository, C) ::= <<
 <attr.name>
 >>
+
+nullable_property_resultset_retrieval_declaration(property, C) ::= <<
+<!
+ Writes the piece of code to retrieve the value of a nullable property from a ResultSet.
+ @param property the property.
+ @param C the context.
+!>
+<
+if(property.nullable)>
+<nullable(C=C)>final <p.objectType> <p.id.uncapitalized>Aux = <property_resultset_retrieval(property=p, C=C)>;
+<nullable(C=C)>final <p.objectType> <p.id.uncapitalized>;
+if (resultSet.wasNull())
+{
+    <p.id.uncapitalized> = null;
+}
+else
+{
+    <p.id.uncapitalized> = <p.id.uncapitalized>Aux;
+}<
+else>
+<notnull(C=C)>final <p.objectType> <p.id.uncapitalized> = <property_resultset_retrieval(property=p, C=C)>;
+<endif>
+>>
+
+nullable_property_resultset_retrieval(property, C) ::= <<
+<!
+ Writes the piece of code to retrieve the value of a nullable property from a ResultSet.
+ @param property the property.
+ @param C the context.
+!>
+<
+if(property.nullable)
+  >(<property.id.uncapitalized> == null) ? null : <generic_nullable_property_resultset_retrieval(property=property, C=C)><
+else
+  ><property_resultset_retrieval(property=property, C=C)><
+endif>
+>>
+
+generic_nullable_property_resultset_retrieval(property, C) ::= <<
+<!
+ Writes the piece of code to retrieve the value of a nullable property from a ResultSet.
+ @param property the property.
+ @param C the context.
+!>
+<
+if(property.date)
+  ><nullable_date_property_resultset_retrieval(property=property, C=C)><
+else><
+  if(property.primitive)
+   ><property.objectType>.valueOf(<property.id.uncapitalized>)<
+  else
+   ><property.id.uncapitalized><
+  endif><
+endif>
+>>
+
+nullable_date_property_resultset_retrieval(property, C) ::= <<
+<!
+ Writes the piece of code to retrieve the value of a nullable Date property from a ResultSet.
+ @param property the property.
+ @param C the context.
+!>
+<if(property.nullable)>new Date(<property.id.uncapitalized>.getTime())<endif>
+>>
+
