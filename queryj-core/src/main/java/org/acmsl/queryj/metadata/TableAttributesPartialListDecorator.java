@@ -464,11 +464,7 @@ public class TableAttributesPartialListDecorator
     @Override
     public List<DecoratedString> getNullableAttributeTypes()
     {
-        return
-            getAttributeTypes(
-                getNullableAttributes(),
-                getMetadataManager().getMetadataTypeManager(),
-                TableDecoratorHelper.getInstance());
+        return getTable().getNullableAttributeTypes();
     }
 
     // Table implementation
