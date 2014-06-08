@@ -553,7 +553,8 @@ custom_select_for_update_return_nullable_maybe(cs, table, rs, C)> ::= <<
  @param rs the result.
  @param C the context.
 !>
-<if(cs.resultClass)>
+<
+if(cs.resultClass)><
 <cs.result:{rs|<if(table.voDecorated)><if(rs.implicitProperties)>
 public <cs.resultClass> <cs.name.uncapitalized>(
 <else>
