@@ -201,6 +201,8 @@ public class QueryJCommandWrapper<T>
     @NotNull
     public String toString()
     {
-        return "{ \"command\": " + m__Command + " \"class\": \"QueryJCommandWrapper\", \"package\": \"org.acmsl.queryj\" }";
+        return
+              "{ \"command\": " + m__Command
+            + ", \"class\": \"QueryJCommandWrapper\", \"package\": \"org.acmsl.queryj\" }";
     }
 }
