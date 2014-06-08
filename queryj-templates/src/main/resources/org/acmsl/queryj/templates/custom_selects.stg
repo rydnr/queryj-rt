@@ -544,7 +544,7 @@ else
 endif>
 >>
 
-custom_select_for_update_return_nullable_maybe(cs, table, rs, C)> ::= <<
+custom_select_for_update_return_nullable_maybe(cs, table, rs, C) ::= <<
 <!
  Prints the correct not-null/nullable annotation depending on the
  custom select-for-update.
