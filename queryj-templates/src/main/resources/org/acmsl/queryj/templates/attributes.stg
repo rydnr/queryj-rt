@@ -392,7 +392,7 @@ attribute_compareTo(attr, table, C) ::= <<
  @param C the context.
 !>
 final boolean <attr.name.uncapitalized>Greater;
-<if(attr.nullable)><nullable(C=C)><endif>final boolean <attr.name.uncapitalized>Lower;
+final boolean <attr.name.uncapitalized>Lower;
 <if(attr.nullable)><nullable(C=C)><endif>final boolean <attr.name.uncapitalized>Equal;
 
 <if(attr.nullable)>
