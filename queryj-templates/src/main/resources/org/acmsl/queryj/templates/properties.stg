@@ -182,7 +182,7 @@ property_getter(property, C) ::= <<
     ><nullable(C=C)><
     endif
   >
-public <property.objectType> get<property.columnName.voName>()<
+public <property.objectType> get<property.columnName.capitalized>()<
 else
   ><if(!property.strictlyPrimitive)
     ><notnull(C=C)><
