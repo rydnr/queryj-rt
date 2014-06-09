@@ -1404,7 +1404,7 @@ public <table.name.voName> findConstantByPk(
 {
     <nullable(C=C)><table.name.voName> result = null;
 
-    boolean found = false;
+    boolean found;
 
     for (<nullable(C=C)>final <table.name.voName> item : FIXED_CONSTANTS)
     {
