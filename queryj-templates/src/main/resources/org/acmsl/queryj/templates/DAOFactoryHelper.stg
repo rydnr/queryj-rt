@@ -317,7 +317,7 @@ public class <table.name.voName>DAOFactoryHelper
      * @return either {@code System.err} or {@code System.out}, or {@code null} if none of them
      * are available.
      */
-    <nullable(C=C)>
+    <notnull(C=C)>
     protected PrintStream retrieveFallbackLog()
     {
         return System.err;
