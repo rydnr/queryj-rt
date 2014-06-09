@@ -396,6 +396,7 @@ final <attr.name.uncapitalized> = this.get<attr.name.capitalized>();
 
 final <attr.name.uncapitalized>Greater;
 final <attr.name.uncapitalized>Lower;
+final <attr.name.uncapitalized>Equal;
 
 if (<attr.name.uncapitalized> != null)
 {
