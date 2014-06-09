@@ -113,7 +113,6 @@ public class <table.name.voName>Impl
         super(<table.attributes:{ a | <a.name.uncapitalized>}; separator=", ">);
     }
 
-
 }
 >>
 
