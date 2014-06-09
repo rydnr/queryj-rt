@@ -148,7 +148,7 @@ public abstract class Abstract<table.name.voName>
 }
 >>
 
-equals_method(table, C) ::= <<
+compareTo_method(table, C) ::= <<
 <! Generates the equals(Object) method !>
 /**
  * Checks whether given object is semantically equivalent to this one.
