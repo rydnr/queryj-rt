@@ -444,7 +444,7 @@ else><
 final <attr.type> <attr.name.uncapitalized>Mine = this.get<attr.name.capitalized>();
 final <attr.type> <attr.name.uncapitalized>His = other.get<attr.name.capitalized>();
 final <attr.name.uncapitalized>Greater = <attr.name.uncapitalized>Mine > <attr.name.uncapitalized>His;
-final <attr.name.uncapitalized>Lower = <attr.name.uncapitalized>Mine < <attr.name.uncapitalized>His;
+final <attr.name.uncapitalized>Lower = <attr.name.uncapitalized>Mine \< <attr.name.uncapitalized>His;
 final <attr.name.uncapitalized>Equal = <attr.name.uncapitalized>Mine == <attr.name.uncapitalized>His;
 < else>
 <notnull(C=C)>final <attr.type> <attr.name.uncapitalized>Mine = this.get<attr.name.capitalized>();
