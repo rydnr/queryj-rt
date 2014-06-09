@@ -417,8 +417,8 @@ if (<attr.name.uncapitalized>Mine != null)
     else
     {
         <attr.name.uncapitalized>Greater = true;
-        <attr.name.uncapitalized>Lower = (<attr.name.uncapitalized>Check < 0);
-        <attr.name.uncapitalized>Equal = (<attr.name.uncapitalized>Check == 0);
+        <attr.name.uncapitalized>Lower = false;
+        <attr.name.uncapitalized>Equal = false;
 
     }
 }
