@@ -153,7 +153,7 @@ if (   (<attribute.name.uncapitalized>Aux != null)
     && (<attribute.name.uncapitalized>Aux.equals(<attribute.name.uncapitalized>)))<
   else
      >if (<attribute.name.uncapitalized>Aux.equals(<attribute.name.uncapitalized>))<
-  endif><
+  endif>
 
 if (   (<attribute.name.uncapitalized>Aux != null)
     && (<attribute.name.uncapitalized>Aux.equals(<attribute.name.uncapitalized>)))<
