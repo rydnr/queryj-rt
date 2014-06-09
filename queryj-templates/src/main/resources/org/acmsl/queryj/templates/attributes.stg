@@ -391,5 +391,5 @@ attribute_compareTo(attr, table, C) ::= <<
  @param table the table.
  @param C the context.
 !>
-<if(
+<if(attr.nullable)>
 final <attr.name.uncapitalized>Greater = this.get<attr.name.capitalized>()
