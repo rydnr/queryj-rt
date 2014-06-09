@@ -441,7 +441,7 @@ else
 < endif><
 else><
   if(attr.primitive)>
-
+  else>
 <nullable(C=C)>final <attr.type> <attr.name.uncapitalized>Mine = this.get<attr.name.capitalized>();
 <nullable(C=C)>final <attr.type> <attr.name.uncapitalized>His = other.get<attr.name.capitalized>();
 endif>
