@@ -145,7 +145,7 @@ find_constant_check_attribute(attribute, C) ::= <<
 <
 if(attribute.primitive)>
 if (item.get<attribute.name.capitalized>() == <attribute.name.uncapitalized>)<
-  else><
+else><
     if(attribute.nullable)
      ><nullable(C=C)>final <attribute.objectType> <attribute.name.uncapitalized>Aux = item.get<attribute.name.capitalized>();
 
