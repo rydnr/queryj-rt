@@ -109,7 +109,8 @@ import java.sql.Types;
 import java.util.HashMap;
 import java.util.List;
 <if(table.nullableAttributes)
- ><table.nullableAttributes:{p | import <t.objectType>
+ ><table.nullableAttributes:{p | import <t.objectType>}; separator="\n">
+<endif>
 import java.util.Map;
 
 /*
