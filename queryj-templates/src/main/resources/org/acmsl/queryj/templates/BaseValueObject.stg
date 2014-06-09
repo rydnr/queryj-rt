@@ -157,7 +157,7 @@ compareTo_method(table, C) ::= <<
  * is lower, equal or greater than this instance.
  */
 @Override
-public int compareTo(<nullable(C=C)>final <table,other)
+public int compareTo(<nullable(C=C)>final <table.name.voName> other)
 {
     final boolean result;
 
