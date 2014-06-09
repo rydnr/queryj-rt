@@ -425,6 +425,9 @@ else
 {
     if (<attr.name.uncapitalized>His != null)
     {
+        <attr.name.uncapitalized>Greater = true;
+        <attr.name.uncapitalized>Lower = false;
+        <attr.name.uncapitalized>Equal = false;
     }
     else
     {
