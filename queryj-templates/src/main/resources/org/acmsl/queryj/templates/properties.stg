@@ -190,7 +190,7 @@ endif>
 
 {
 <if(property.date)><
-  ig
+  if(property.allowsNull)>
     return new Date(this.m__<property.id.capitalized>.getTime());
 <else>
     return this.m__<property.id.capitalized>;
