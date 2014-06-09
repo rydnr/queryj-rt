@@ -71,7 +71,6 @@ sourceImpl(table, C) ::= <<
 /*
  * Importing JDK classes.
  */
-import java.io.Serializable;
 <import_attribute_types(table=table, useHeader=false)>
 
 <class(table=table, C=C)>
