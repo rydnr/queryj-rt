@@ -512,8 +512,8 @@ if(cs.resultClass)><
       endif><
     endif><
   else>
-* @return the {@code <cs.resultClass>} information retrieved.
-< endif><
+* @return the {@code <cs.resultClass>} information retrieved.<
+  endif><
 endif>
 >>
 
