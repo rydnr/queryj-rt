@@ -222,7 +222,8 @@ import <basePackageName>.<voFactorySubpackageName>.core.<table.name.voName>Facto
  * Importing V24-Commons classes.
  */
 import com.ventura24.commons.dao.DAOListener;
-<if(table.attributeTypes)><
+<if(table.attributeTypes)
+><
   table.
 import com.ventura24.commons.dao.IntegerResultSetMultipleExtractor;
 import com.ventura24.commons.dao.IntegerResultSetSingleExtractor;
