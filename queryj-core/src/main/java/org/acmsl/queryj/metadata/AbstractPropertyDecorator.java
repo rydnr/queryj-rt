@@ -237,7 +237,7 @@ public abstract class AbstractPropertyDecorator
     /**
      * Retrieves the Object type of the property.
      * @param type the declared type.
-     * @param metadataManager the <code>MetadataManager</code> instance.
+     * @param metadataManager the {@link }code>MetadataManager</code> instance.
      * @param allowsNull whether it allows nulls.
      * @return such information.
      */
