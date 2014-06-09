@@ -165,6 +165,9 @@ public int compareTo(<nullable(C=C)>final <table.name.voName> other)
 
         final boolean greater =
             <table.primaryKey:{ a |<a.name.uncapitalized>Greater}; separator="\n&& ">;
+
+        final boolean greater =
+            <table.primaryKey:{ a |<a.name.uncapitalized>Greater}; separator="\n&& ">;
     }
     else
     {
