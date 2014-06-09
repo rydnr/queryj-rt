@@ -194,9 +194,9 @@ endif>
 <
 if(property.date)><
   if(property.allowsNull)>
-    return this.m__<property.id.capitalized> == null ? null : new Date(this.m__<property.id.capitalized>.getTime());
+    return this.m__<property.columnName.capitalized> == null ? null : new Date(this.m__<property.id.capitalized>.getTime());
 < else>
-    return new Date(this.m__<property.id.capitalized>.getTime());
+    return new Date(this.m__<property.columnName.capitalized>.getTime());
 < endif><
 else>
     return this.m__<property.id.capitalized>;
