@@ -85,5 +85,7 @@ public interface PropertyDecorator
     @NotNull
     public DecoratedString getJavaType();
 
-
+    /**
+     *
+     */
 }
