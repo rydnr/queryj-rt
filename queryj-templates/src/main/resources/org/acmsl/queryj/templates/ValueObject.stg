@@ -99,10 +99,10 @@ interface(table, C) ::= <<
  */
 public interface <table.name.voName>
 <if(table.primaryKey)>
-    extends Serializable
-<else>
     extends Serializable,
-
+            Comparable\<<table.name.voName>\>
+<else>
+    extends Serializable
 <endif>
 {
     <table.attributes:getter(); separator="\n\n">
