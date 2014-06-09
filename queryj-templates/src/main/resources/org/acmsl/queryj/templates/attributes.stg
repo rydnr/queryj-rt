@@ -396,7 +396,7 @@ attribute_compareTo(attr, table, C) ::= <<
 <if(attr.nullable)><nullable(C=C)><endif>final <attr.name.uncapitalized>Equal;
 
 <if(attr.nullable)>
-<nullable(C=C)>final <attr.name.uncapitalized> = this.get<attr.name.capitalized>();
+<nullable(C=C)>final <attr.name.uncapitalized>Mine = this.get<attr.name.capitalized>();
 <nullable(C=C)>final <attr.name.uncapitalized> = this.get<attr.name.capitalized>();
 
 if (<attr.name.uncapitalized> != null)
