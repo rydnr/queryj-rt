@@ -150,7 +150,7 @@ if (item.get<attribute.name.capitalized>() == <attribute.name.uncapitalized>)<
 >final <attribute.objectType> <attribute.name.uncapitalized> = item.get<attribute.name.capitalized>();
 
 if (   (<attribute.name.uncapitalized> != null)
-    && (<attribute.name.uncapitalized>item.get<attribute.name.capitalized>().equals(<attribute.name.uncapitalized>))<endif>
+    && (<attribute.name.uncapitalized>.equals(<attribute.name.uncapitalized>))<endif>
 >>
 
 import_template(type) ::= <<
