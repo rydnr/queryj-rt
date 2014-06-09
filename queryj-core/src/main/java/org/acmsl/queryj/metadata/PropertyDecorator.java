@@ -86,6 +86,6 @@ public interface PropertyDecorator
     public DecoratedString getJavaType();
 
     /**
-     * Checks whether its type is
+     * Checks whether its type is one of the "default
      */
 }
