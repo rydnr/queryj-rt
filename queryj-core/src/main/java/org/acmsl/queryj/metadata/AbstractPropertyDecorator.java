@@ -503,6 +503,16 @@ public abstract class AbstractPropertyDecorator
         return !nullable && metadataTypeManager.isPrimitive(type);
     }
 
+    /**
+     * Checks whether its type is supported out-of-the-box.
+     *
+     * @return {@code true} in such case.
+     */
+    @Override
+    public boolean isTypeSupportedOutOfTheBox()
+    {
+        return false;  //To change body of implemented methods use File | Settings | File Templates.
+    }
 
     /**
      * {@inheritDoc}
