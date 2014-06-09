@@ -320,6 +320,7 @@ public class <table.name.voName>DAOFactoryHelper
     <nullable(C=C)>
     protected PrintStream retrieveFallbackLog()
     {
+        return
         <nullable(C=C)>final PrintStream result;
 
         if (System.err != null)
