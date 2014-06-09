@@ -150,7 +150,7 @@ if (item.get<attribute.name.capitalized>() == <attribute.name.uncapitalized>)<
 >final <attribute.objectType> <attribute.name.uncapitalized>Aux = item.get<attribute.name.capitalized>();
 
 if (   (<attribute.name.uncapitalized>Aux != null)
-    && (<attribute.name.uncapitalized>Aux.equals(<attribute.name.uncapitalized>))<
+    && (<attribute.name.uncapitalized>Aux.equals(<attribute.name.uncapitalized>)))<
 endif>
 >>
 
