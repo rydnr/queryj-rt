@@ -391,4 +391,4 @@ attribute_compareTo(attr, table, C) ::= <<
  @param table the table.
  @param C the context.
 !>
-final <attr.name.uncapitalized>
+final <attr.name.uncapitalized>Greater =
