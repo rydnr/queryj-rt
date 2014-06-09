@@ -403,4 +403,4 @@ if (<attr.name.uncapitalized>Mine != null)
 {
     if (<attr.name.uncapitalized>His != null)
     {
-        <attr.name.uncapitalized>Greater = <attr.name.uncapitalized> > other.get<attr.name.us
+        <attr.name.uncapitalized>Greater = <attr.name.uncapitalized> > <attr.name.us
