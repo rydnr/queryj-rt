@@ -81,7 +81,7 @@ property_isolated_declaration_impl(property, C) ::= <<
   Writes the parameter declaration for a concrete property.
   @param property the property.
 !>
-<type_checker(property=property, C=C)>final <if(property.clob)>String<else><property.javaType><endif> <property.id.lowercased>,
+<type_checker(property=property, C=C)>final <if(property.clob)>String<else><property.javaType><endif> <property.columnName.uncapitalized>,
 >>
 
 immutable_property_setter_call(property) ::= <<
