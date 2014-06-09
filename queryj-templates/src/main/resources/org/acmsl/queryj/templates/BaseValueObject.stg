@@ -159,7 +159,7 @@ compareTo_method(table, C) ::= <<
 @Override
 public int compareTo(<nullable(C=C)>final <table.name.voName> other)
 {
-    final boolean result;
+    final int result;
 
     if (other instanceof <table.name.voName>)
     {
