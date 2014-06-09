@@ -223,7 +223,7 @@ import <basePackageName>.<voFactorySubpackageName>.core.<table.name.voName>Facto
  */
 import com.ventura24.commons.dao.DAOListener;
 <if(table.differentCustomResults)
- ><table.differentCustomResults:{ cr  | <if(cr.wrappingASingleProperty)><cr.properties:{p | <if(p.typeSupportedOutOfTheBox)>import com.ventura24.commons.dao.<p.objectType>ResultSetMultipleExtractor;<endif>}; separator="\n">
+ ><table.differentCustomResults:{ cr  | <if(cr.wrappingASingleProperty)><cr.properties:{p | <if(p.typeSupportedOutOfTheBox)>import com.ventura24.commons.dao.<p.objectType>ResultSetMultipleExtractor;<endif>}; separator="\n"><endif>
 <endif>
 import com.ventura24.commons.dao.IntegerResultSetMultipleExtractor;
 import com.ventura24.commons.dao.IntegerResultSetSingleExtractor;
