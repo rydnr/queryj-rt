@@ -138,7 +138,8 @@ public abstract class Abstract<table.name.voName>
      separator="\n\n">
 
 <if(table.primaryKey)>
-    <compareTo
+    <compareTo_method(table=table, C=C)>
+<endif>
     <equals_method(table=table, C=C)>
 
     <hashCode_method(table=table, C=C)>
