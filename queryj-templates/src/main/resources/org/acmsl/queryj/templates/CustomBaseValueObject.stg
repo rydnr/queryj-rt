@@ -120,7 +120,7 @@ public abstract class Abstract<result.simpleClassValue>
     <result.properties:{ p | <property_declaration(property=p, C=C)>}; separator="\n\n">
 
     /**
-     * Creates a new {@code Abstract<result.id.voName>}.
+     * Creates a new {@code Abstract<result.simpleClassValue>}.
      <result.properties:{ p | <property_javadoc(property=p)>}; separator="\n">
      */
     public Abstract<result.simpleClassValue>(
