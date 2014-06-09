@@ -511,7 +511,7 @@ public abstract class AbstractPropertyDecorator
     @Override
     public boolean isTypeSupportedOutOfTheBox()
     {
-        return false;  //To change body of implemented methods use File | Settings | File Templates.
+        return isPrimitive() || isDate() ||
     }
 
     /**
