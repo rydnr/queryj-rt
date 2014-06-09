@@ -1435,7 +1435,7 @@ find_constant_methods(attribute, table, C) ::= <<
  * Loads \<i><table.name>\</i> information from the pre-existing constants,
  * filtering by \<i><attribute.name>\</i>.
  <attribute_javadoc(attr=attribute)>
- * @return the {@link <table.name.voName>} instances.
+ * @return the {@link <table.name.voName>} instances matching the.
  */
 @Override
 <notnull(C=C)>
