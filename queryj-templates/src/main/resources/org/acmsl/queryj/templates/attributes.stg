@@ -449,11 +449,11 @@ final <attr.type> <attr.name.uncapitalized>His = other.get<attr.name.capitalized
 < else>
 <notnull(C=C)>final <attr.type> <attr.name.uncapitalized>Mine = this.get<attr.name.capitalized>();
 <notnull(C=C)>final <attr.type> <attr.name.uncapitalized>His = other.get<attr.name.capitalized>();
-        final int <attr.name.uncapitalized>Check = <attr.name.uncapitalized>Mine.compareTo(<attr.name.uncapitalized>His);
+final int <attr.name.uncapitalized>Check = <attr.name.uncapitalized>Mine.compareTo(<attr.name.uncapitalized>His);
 
-        <attr.name.uncapitalized>Greater = (<attr.name.uncapitalized>Check > 0);
-        <attr.name.uncapitalized>Lower = (<attr.name.uncapitalized>Check < 0);
-        <attr.name.uncapitalized>Equal = (<attr.name.uncapitalized>Check == 0);
+<attr.name.uncapitalized>Greater = (<attr.name.uncapitalized>Check > 0);
+<attr.name.uncapitalized>Lower = (<attr.name.uncapitalized>Check < 0);
+<attr.name.uncapitalized>Equal = (<attr.name.uncapitalized>Check == 0);
 < endif>
 endif>
 >>
