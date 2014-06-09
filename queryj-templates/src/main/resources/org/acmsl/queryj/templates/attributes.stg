@@ -393,7 +393,7 @@ attribute_compareTo(attr, table, C) ::= <<
 !>
 final boolean <attr.name.uncapitalized>Greater;
 final boolean <attr.name.uncapitalized>Lower;
-<if(attr.nullable)><nullable(C=C)><endif>final boolean <attr.name.uncapitalized>Equal;
+final boolean <attr.name.uncapitalized>Equal;
 
 <if(attr.nullable)>
 <nullable(C=C)>final <attr.type> <attr.name.uncapitalized>Mine = this.get<attr.name.capitalized>();
