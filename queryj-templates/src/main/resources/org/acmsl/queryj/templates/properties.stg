@@ -186,7 +186,7 @@ else
   ><if(!property.strictlyPrimitive)
     ><notnull(C=C)><
     endif
-  >public <property.javaType> get<property.id.capitalized>()<
+  >@Overridepublic <property.javaType> get<property.id.capitalized>()<
 endif>
 
 {
