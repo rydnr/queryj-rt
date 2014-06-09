@@ -509,9 +509,9 @@ if(cs.resultClass)><
 * @return the {@link <cs.resultClass>} information retrieved.
 <     else>
 * @return the {@link <cs.resultClass>Decorator} information retrieved.
-<     endif>
-<   endif>
-< else>
+<     endif><
+    endif><
+  else>
 * @return the {@code <cs.resultClass>} information retrieved.
 < endif><
 endif>
