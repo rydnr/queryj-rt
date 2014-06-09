@@ -44,7 +44,7 @@ property_method_parameter_declaration(property, usePrefix, prefix, C) ::= <<
  @param usePrefix whether to use a prefix or not.
  @param prefix the prefix.
 !>
-<if(!property.strictlyPrimitive)><if(property.nullable)><nullable(C=C)><else><notnull(C=C)><endif><endif>final <property.javaType> <if(usePrefix)><prefix><property.id.capitalized><else><property.id.uncapitalized><endif>
+<if(!property.strictlyPrimitive)><if(property.nullable)><nullable(C=C)><else><notnull(C=C)><endif><endif>final <property.javaType> <if(usePrefix)><prefix><property.columnName.capitalized><else><property.id.uncapitalized><endif>
 >>
 
 property_declaration(property, C) ::= <<
@@ -57,7 +57,7 @@ property_declaration(property, C) ::= <<
  * The \<i><property.id>\</i> value.
  */
 <if(!property.strictlyPrimitive)><if(property.nullable)><nullable(C=C)><else><notnull(C=C)><endif><endif>
-private <property.javaType> m__<property.id.capitalized>;
+private <property.javaType> m__<property.columnName.capitalized>;
 >>
 
 property_declaration_impl(attr, C) ::= <<
@@ -92,9 +92,9 @@ immutable_property_setter_call(property) ::= <<
 <if(!property.strictlyPrimitive)><if(property.nullable)>
 if (<property.id.uncapitalized> != null)
 {
-    immutableSet<property.id.capitalized>(<property.id.uncapitalized>);
-}<else>immutableSet<property.id.capitalized>(<property.id.uncapitalized>);<endif>
-<else>immutableSet<property.id.capitalized>(<property.id.uncapitalized>);<endif>
+    immutableSet<property.columnName.capitalized>(<property.id.uncapitalized>);
+}<else>immutableSet<property.columnName.capitalized>(<property.id.uncapitalized>);<endif>
+<else>immutableSet<property.columnName.capitalized>(<property.id.uncapitalized>);<endif>
 >>
 
 property_accessors(property, C) ::= <<
@@ -117,9 +117,9 @@ property_setter(property, C) ::= <<
  * Specifies the \<i><property.id>\</i> value.
  * @param value such information.
  */
-protected final void immutableSet<property.id.capitalized>(<if(!property.strictlyPrimitive)><notnull(C=C)><endif>final <property.javaType> value)
+protected final void immutableSet<property.columnName.capitalized>(<if(!property.strictlyPrimitive)><notnull(C=C)><endif>final <property.javaType> value)
 {
-    this.m__<property.id.capitalized> = value;
+    this.m__<property.columnName.capitalized> = value;
 }
 
 /**
@@ -127,9 +127,9 @@ protected final void immutableSet<property.id.capitalized>(<if(!property.strictl
  * @param value such information.
  */
 @SuppressWarnings("unused")
-protected void set<property.id.capitalized>(<if(!property.strictlyPrimitive)><notnull(C=C)><endif>final <property.javaType> value)
+protected void set<property.columnName.capitalized>(<if(!property.strictlyPrimitive)><notnull(C=C)><endif>final <property.javaType> value)
 {
-    immutableSet<property.id.capitalized>(value);
+    immutableSet<property.columnName.capitalized>(value);
 }
 >>
 
@@ -218,44 +218,44 @@ property_getter_interface(property, C) ::= <<
   ><if(!property.strictlyPrimitive)
     ><nullable(C=C)><
     endif
-  ><property.objectType> get<property.id.capitalized>()<
+  ><property.objectType> get<property.columnName.capitalized>()<
 else
   ><if(!property.strictlyPrimitive)
     ><notnull(C=C)><
     endif
-  ><property.javaType> get<property.id.capitalized>()<
+  ><property.javaType> get<property.columnName.capitalized>()<
 endif>;
 >>
 
 property_equals(property) ::= <<
 <! Generates the contribution of each property to the equals method. !>
 <if(property.strictlyPrimitive)>
-final boolean <property.id.uncapitalized>Match = (this.m__<property.id.capitalized> == candidate.get<property.id.capitalized>());
+final boolean <property.id.uncapitalized>Match = (this.m__<property.columnName.capitalized> == candidate.get<property.columnName.capitalized>());
 <else><if(property.allowsNull)>
 final boolean <property.id.uncapitalized>Match =
-    (   (this.m__<property.id.capitalized> != null)
-     && (this.m__<property.id.capitalized>.equals(candidate.get<property.id.capitalized>())));
+    (   (this.m__<property.columnName.capitalized> != null)
+     && (this.m__<property.columnName.capitalized>.equals(candidate.get<property.columnName.capitalized>())));
 <else>
-final boolean <property.id.uncapitalized>Match = this.m__<property.id.capitalized>.equals(candidate.get<property.id.capitalized>());<endif><endif>
+final boolean <property.id.uncapitalized>Match = this.m__<property.columnName.capitalized>.equals(candidate.get<property.columnName.capitalized>());<endif><endif>
 >>
 
 property_hashCode(property) ::= <<
 <! Generates the hashCode contribution for each property. !>
 <if(property.strictlyPrimitive)>
-final int <property.id.uncapitalized>HashCode = ("" + this.m__<property.id.capitalized>).hashCode();<else>
+final int <property.id.uncapitalized>HashCode = ("" + this.m__<property.columnName.capitalized>).hashCode();<else>
 <if(property.allowsNull)>final int <property.id.uncapitalized>HashCode;
-if (this.m__<property.id.capitalized> == null)
+if (this.m__<property.columnName.capitalized> == null)
 {
     <property.id.uncapitalized>HashCode = 0;
 }
 else
 {
-     <property.id.uncapitalized>HashCode = this.m__<property.id.capitalized>.hashCode();
-}<else>final int <property.id.uncapitalized>HashCode = this.m__<property.id.capitalized>.hashCode();<endif><endif>
+     <property.id.uncapitalized>HashCode = this.m__<property.columnName.capitalized>.hashCode();
+}<else>final int <property.id.uncapitalized>HashCode = this.m__<property.columnName.capitalized>.hashCode();<endif><endif>
 >>
 
 property_toString(property) ::= <<
 <! Generates the code to include given property within the toString() method. !>
-result.append("\", \"<property.id.capitalized>\": \"");
-result.append(this.m__<property.id.capitalized>);
+result.append("\", \"<property.columnName.capitalized>\": \"");
+result.append(this.m__<property.columnName.capitalized>);
 >>
