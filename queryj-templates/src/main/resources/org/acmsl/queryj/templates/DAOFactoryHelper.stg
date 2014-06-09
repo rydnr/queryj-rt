@@ -321,22 +321,6 @@ public class <table.name.voName>DAOFactoryHelper
     protected PrintStream retrieveFallbackLog()
     {
         return System.err;
-        <nullable(C=C)>final PrintStream result;
-
-        if (System.err != null)
-        {
-            result = System.err;
-        }
-        else if (System.out != null)
-        {
-            result = System.out;
-        }
-        else
-        {
-            result = null;
-        }
-
-        return result;
     }
 
     /**
