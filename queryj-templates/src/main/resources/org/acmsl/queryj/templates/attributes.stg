@@ -386,4 +386,4 @@ endif>
 
 attribute_compareTo(table, C) ::= <<
 <!
- Generates the code for
+ Generates the code for the compareTo
