@@ -151,7 +151,7 @@ if (item.get<attribute.name.capitalized>() == <attribute.name.uncapitalized>)<
 
 if (   (<attribute.name.uncapitalized>Aux != null)
     && (<attribute.name.uncapitalized>Aux.equals(<attribute.name.uncapitalized>)))<
- else><notnull(C=C)><endif
+     else><notnull(C=C)><endif
 >
 
 if (   (<attribute.name.uncapitalized>Aux != null)
