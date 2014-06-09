@@ -1454,7 +1454,8 @@ public List\<<table.name.voName>\> findConstantsBy<attribute.name.capitalized>(<
 
     for  (<nullable(C=C)>final <table.name.voName> item : FIXED_CONSTANTS)
     {
-        if  (   (item != null)
+        if  (item != null)
+        {
              <find_constant_check_attribute(attribute=attribute); separator="\n">)
         {
             result.add(item);
