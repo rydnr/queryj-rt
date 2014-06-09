@@ -138,7 +138,10 @@ class_annotations(C) ::= <<
 
 find_constant_check_attribute(attribute, C) ::= <<
 <!
-
+ Generates a check for given attribute.
+ @param attribute the attribute.
+ @param C the context.
+!>
 <
 if(attribute.primitive)>
 if (item.get<attribute.name.capitalized>() == <attribute.name.uncapitalized>)<
