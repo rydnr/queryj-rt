@@ -231,7 +231,6 @@ import com.ventura24.commons.dao.V24PreparedStatementSetter;
 import com.ventura24.commons.dao.V24QueryTransactionCallback;
 //import com.ventura24.commons.dao.V24SelectForUpdateTransactionCallback;
 import com.ventura24.commons.dao.V24UpdateTransactionCallback;
-import com.ventura24.commons.dao.V24ResultSetMultipleExtractor;
 import com.ventura24.commons.dao.V24ResultSetSingleExtractor;
 
 >>
