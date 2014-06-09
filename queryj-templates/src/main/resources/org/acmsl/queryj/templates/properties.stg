@@ -192,9 +192,10 @@ endif>
 <if(property.date)><
   if(property.allowsNull)>
     return new Date(this.m__<property.id.capitalized>.getTime());
-<
+< else>
     return new Date(this.m__<property.id.capitalized>.getTime());
-<else>
+< endif><else>
+
     return this.m__<property.id.capitalized>;
 <endif>
 }
