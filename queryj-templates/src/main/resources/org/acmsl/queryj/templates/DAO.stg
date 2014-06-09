@@ -1100,7 +1100,7 @@ protected int update(
 
     if  (t_Result != null)
     {
-        result = ((Integer) t_Result).intValue();
+        result = t_Result.intValue();
     }
 
     return result;
