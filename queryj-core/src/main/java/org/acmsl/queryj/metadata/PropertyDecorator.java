@@ -86,6 +86,8 @@ public interface PropertyDecorator
     public DecoratedString getJavaType();
 
     /**
-     * Checks whether its type is one of the
+     * Checks whether its type is supported out-of-the-box.
+     * @return {@code true} in such case.
      */
+    public
 }
