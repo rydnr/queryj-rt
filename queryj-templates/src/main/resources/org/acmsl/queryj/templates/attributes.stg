@@ -401,4 +401,4 @@ attribute_compareTo(attr, table, C) ::= <<
 
 if (<attr.name.uncapitalized>Mine != null)
 {
-    <attr.name.uncapitalized>Greater = <attr.name.uncapitalized> > other.get<attr.name.
+    if (<attr.name.uncapitalized>His != null)<attr.name.uncapitalized>Greater = <attr.name.uncapitalized> > other.get<attr.name.
