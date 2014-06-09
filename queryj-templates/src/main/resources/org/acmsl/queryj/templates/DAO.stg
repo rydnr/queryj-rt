@@ -1098,7 +1098,7 @@ protected int update(
 <endif>
                 this));
 
-    if  (t_Result instanceof Integer)
+    if  (t_Result != null)
     {
         result = ((Integer) t_Result).intValue();
     }
