@@ -503,6 +503,7 @@ public abstract class AbstractPropertyDecorator
         return !nullable && metadataTypeManager.isPrimitive(type);
     }
 
+
     /**
      * {@inheritDoc}
      */
