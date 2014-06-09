@@ -268,7 +268,8 @@ if(attr.date)
 else><
   if(attr.primitive)><
     if(attr.nullable)><
-   ><attr.objectType>.valueOf(<attr.name.uncapitalized>)<
+    else
+     ><attr.objectType>.valueOf(<attr.name.uncapitalized>)<
   else
    ><attr.name.uncapitalized><
   endif><
