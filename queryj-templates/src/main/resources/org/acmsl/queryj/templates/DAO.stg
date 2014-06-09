@@ -1078,7 +1078,7 @@ protected int update(
     parentDAO.update(
         <parent.all.minus.readOnly.minus.externallyManagedAttributes:{ attr | <attr.name.uncapitalized>}; separator=",\n">);
 <endif>
-    <nullable(C=C)>Integer t_Result =
+    <nullable(C=C)>final Integer t_Result =
         transactionTemplate.execute(
             new V24UpdateTransactionCallback\<<engine.name><table.name.voName>DAO>(
                 new V24PreparedStatementCreator(query, daoListener),
