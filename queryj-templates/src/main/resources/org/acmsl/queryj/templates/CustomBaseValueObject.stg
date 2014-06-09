@@ -186,7 +186,7 @@ public int hashCode()
 
     result =
           classHashCode
-        <result.properties:{ p |+ <p.id.uncapitalized>HashCode}; separator="\n">;
+        <result.properties:{ p |+ <p.columnName.uncapitalized>HashCode}; separator="\n">;
 
     return result;
 }
