@@ -163,7 +163,8 @@ protected final <attribute.javaType> immutableGet<attribute.name.capitalized>()
 <endif>
 {
 <if(attribute.date)><
-  if(attribute.allowsNull)>
+  if(attribute.allowsNull)><
+    else
     return new Date(m__<attribute.name.capitalized>.getTime());
 <else>
     return m__<attribute.name.capitalized>;
