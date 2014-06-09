@@ -189,7 +189,7 @@ else
 endif>
 
 {
-
+<if(property
     return this.m__<property.id.capitalized>;
 }
 >>
