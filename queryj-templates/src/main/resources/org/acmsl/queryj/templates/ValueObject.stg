@@ -101,7 +101,8 @@ public interface <table.name.voName>
 <if(table.primaryKey)>
     extends Serializable
 <else>
-    extends Serializable
+    extends Serializable,
+
 <endif>
 {
     <table.attributes:getter(); separator="\n\n">
