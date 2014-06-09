@@ -163,7 +163,7 @@ public int compareTo(<nullable(C=C)>final <table.name.voName> other)
 
         <table.primaryKey:{ a | <attribute_compareTo(attribute=a)>}; separator="">
 
-        result =
+        final boolean result =
             <table.attributes:{ a |<a.name.uncapitalized>Check}; separator="\n&& ">;
     }
     else
