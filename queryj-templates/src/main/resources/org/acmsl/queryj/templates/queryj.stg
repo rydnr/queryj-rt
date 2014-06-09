@@ -148,7 +148,7 @@ if (item.get<attribute.name.capitalized>() == <attribute.name.uncapitalized>)<
   else>
 <if(attribute.nullable)
  ><nullable(C=C)><else><notnull(C=C)><endif
->final <attribute.objectType> <attribute.name.uncapitalized>Aux = item.get<attribute.name.capitalized>();
+>
 
 if (   (<attribute.name.uncapitalized>Aux != null)
     && (<attribute.name.uncapitalized>Aux.equals(<attribute.name.uncapitalized>)))<
