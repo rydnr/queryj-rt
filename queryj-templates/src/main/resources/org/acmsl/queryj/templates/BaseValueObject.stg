@@ -161,6 +161,10 @@ public int compareTo(<nullable(C=C)>final <table.name.voName> other)
 {
     final int result;
 
+    if (other == null)
+    {
+
+    }
     <table.primaryKey:{ a | <attribute_compareTo(attr=a, table=table, C=C)>}; separator="">
 
     final boolean greater =
