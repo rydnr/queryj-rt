@@ -85,10 +85,6 @@ import com.ventura24.commons.dao.V24PreparedStatementSetter;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.PreparedStatementSetter;
 <checkers_import(C=C)>
-/*
- * Importing JDK extension classes
- */
-import javax.sql.DataSource;
 
 /*
  * Importing JDK classes.
