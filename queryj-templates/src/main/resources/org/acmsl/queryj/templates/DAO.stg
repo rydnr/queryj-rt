@@ -1302,6 +1302,7 @@ extractors(table, parent, repository, C) ::= <<
  * Extracts \<i><table.name.voName>\</i> value objects from result sets.
  <class_common_javadoc(template="org/acmsl/queryj/templates/dao/DAO.stg", C=C)>
  */
+@SuppressWarnings("unused")
 public static class <table.name.voName>PkResultSetExtractor
     extends V24ResultSetSingleExtractor\<Map\<String, ?\>>
 {
