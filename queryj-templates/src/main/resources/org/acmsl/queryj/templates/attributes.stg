@@ -162,6 +162,7 @@ protected final <attribute.objectType> immutableGet<attribute.name.capitalized>(
 protected final <attribute.javaType> immutableGet<attribute.name.capitalized>()
 <endif>
 {
+<if(attribute.
     return m__<attribute.name.capitalized>;
 }
 
