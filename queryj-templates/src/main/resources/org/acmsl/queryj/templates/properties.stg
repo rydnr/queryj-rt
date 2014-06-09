@@ -189,7 +189,7 @@ else
 endif>
 
 {
-<if(property
+<if(property.date)>
     return this.m__<property.id.capitalized>;
 }
 >>
