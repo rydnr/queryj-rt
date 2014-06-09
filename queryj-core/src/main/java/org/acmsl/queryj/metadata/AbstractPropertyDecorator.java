@@ -511,7 +511,7 @@ public abstract class AbstractPropertyDecorator
     @Override
     public boolean isTypeSupportedOutOfTheBox()
     {
-        return isPrimitive() || isDate() || isBigDecimal() ||
+        return isPrimitive() || isDate() || isBigDecimal();
     }
 
     /**
