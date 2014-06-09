@@ -92,7 +92,10 @@ import java.sql.Clob;
 <endif>
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-<if(
+<if(table.nullableAttributes)>
+import java.sql.Types;
+<endif>
+
 <class(table=table, C=C)>
 >>
 
