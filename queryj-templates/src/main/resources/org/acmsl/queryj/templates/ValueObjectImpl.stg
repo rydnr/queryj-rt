@@ -68,9 +68,6 @@ sourceImpl(table, C) ::= <<
  */
 <package_declaration(p=C.package)>
 <checkers_import_maybe(container=table, C=C)>
-/*
- * Importing JDK classes.
- */
 <import_attribute_types(table=table, useHeader=true)>
 
 <class(table=table, C=C)>
