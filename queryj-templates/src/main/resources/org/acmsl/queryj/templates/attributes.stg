@@ -439,6 +439,6 @@ else
 }
 < endif><
 else><
-  if(attr(primitive)
+  if(attr.primitive)
 endif>
 >>
