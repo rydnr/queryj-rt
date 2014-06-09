@@ -396,8 +396,8 @@ final boolean <attr.name.uncapitalized>Greater;
 final boolean <attr.name.uncapitalized>Lower;
 final boolean <attr.name.uncapitalized>Equal;
 
-<nullable(C=C)>final <attr.javaType> <attr.name.uncapitalized>Mine = this.get<attr.name.capitalized>();
-<nullable(C=C)>final <attr.javaType> <attr.name.uncapitalized>His = other.get<attr.name.capitalized>();
+<nullable(C=C)>final <attr.objectType> <attr.name.uncapitalized>Mine = this.get<attr.name.capitalized>();
+<nullable(C=C)>final <attr.objectType> <attr.name.uncapitalized>His = other.get<attr.name.capitalized>();
 
 <if(attr.nullable)>
 if (<attr.name.uncapitalized>Mine != null)
