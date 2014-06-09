@@ -113,7 +113,7 @@ import java.util.HashMap;
 import java.util.List;
 <import_attribute_types(table=table, useHeader=false, nullableOnly=true)>
 import_custom_select_types
-<table.differentCustomResults:{ cr  | <import_custom_select_typescustom_select_import(result=cr, package=basePackageName, baseDAOSubpackageName=baseDAOSubpackageName, C=C)>}; separator="\n">
+<table.differentCustomResults:{ cr  | <import_custom_select_types(result=cr, package=basePackageName, baseDAOSubpackageName=baseDAOSubpackageName, C=C)>}; separator="\n">
 <import_property_types(table=table, useHeader=false, nullableOnly=true)>
 import java.util.Map;
 
