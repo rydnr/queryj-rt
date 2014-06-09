@@ -197,9 +197,9 @@ if(property.date)><
     return new Date(this.m__<property.id.capitalized>.getTime());
 < endif><
 else>
-
     return this.m__<property.id.capitalized>;
-<endif>
+<
+endif>
 }
 >>
 
