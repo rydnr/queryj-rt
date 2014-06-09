@@ -396,4 +396,4 @@ final <attr.name.uncapitalized> = this.get<attr.name.capitalized>();
 
 if (<attr.name.uncapitalized> != null)
 {
-final <attr.name.uncapitalized>Greater = this.get<attr.name.capitalized>()
+    final <attr.name.uncapitalized>Greater = this.get<attr.name.capitalized>()
