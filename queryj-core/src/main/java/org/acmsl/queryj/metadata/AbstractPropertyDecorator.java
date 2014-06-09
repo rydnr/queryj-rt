@@ -505,7 +505,6 @@ public abstract class AbstractPropertyDecorator
 
     /**
      * Checks whether its type is supported out-of-the-box.
-     *
      * @return {@code true} in such case.
      */
     @Override
