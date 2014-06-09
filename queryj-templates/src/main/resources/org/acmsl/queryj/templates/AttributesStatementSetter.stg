@@ -102,7 +102,6 @@ import java.sql.Clob;
 <endif>
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.sql.Types;
 
 /*
  * Importing Apache Commons Logging classes
