@@ -161,15 +161,15 @@ public int compareTo(<nullable(C=C)>final <table.name.voName> other)
 {
     final int result;
 
-        <table.primaryKey:{ a | <attribute_compareTo(attribute=a)>}; separator="">
+    <table.primaryKey:{ a | <attribute_compareTo(attribute=a)>}; separator="">
 
-        final boolean greater =
-            <table.primaryKey:{ a |<a.name.uncapitalized>Greater}; separator="\n&& ">;
+    final boolean greater =
+        <table.primaryKey:{ a |<a.name.uncapitalized>Greater}; separator="\n&& ">;
 
-        final boolean lower =
-            <table.primaryKey:{ a |<a.name.uncapitalized>Lower}; separator="\n&& ">;
+    final boolean lower =
+        <table.primaryKey:{ a |<a.name.uncapitalized>Lower}; separator="\n&& ">;
 
-        if (greater
+    if (greater
     }
     else
     {
