@@ -266,7 +266,7 @@ generic_nullable_attribute_resultset_retrieval(attr, C) ::= <<
 if(attr.date)
   ><nullable_date_attribute_resultset_retrieval(attr=attr, C=C)><
 else><
-  if(attr.primitive)
+  if(attr.primitive)><
    ><attr.objectType>.valueOf(<attr.name.uncapitalized>)<
   else
    ><attr.name.uncapitalized><
