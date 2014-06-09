@@ -137,6 +137,8 @@ public abstract class Abstract<table.name.voName>
     <table.attributes:{ a | <attribute_accessors(attribute=a, C=C)>};
      separator="\n\n">
 
+<if(table.primaryKey)>
+    <
     <equals_method(table=table, C=C)>
 
     <hashCode_method(table=table, C=C)>
