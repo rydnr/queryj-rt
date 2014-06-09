@@ -84,4 +84,6 @@ public interface PropertyDecorator
     @SuppressWarnings("unused")
     @NotNull
     public DecoratedString getJavaType();
+
+
 }
