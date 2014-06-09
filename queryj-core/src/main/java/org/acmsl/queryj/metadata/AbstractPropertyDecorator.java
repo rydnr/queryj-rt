@@ -259,7 +259,7 @@ public abstract class AbstractPropertyDecorator
      * @param type the declared type.
      * @param metadataTypeManager the {@link MetadataTypeManager} instance.
      * @param allowsNull whether it allows nulls.
-     * @param metadataTypeUtils the <code>MetadataTypeUtils</code> instance.
+     * @param metadataTypeUtils the {@link MetadataTypeUtils} instance.
      * @return such information.
      */
     @SuppressWarnings("unused")
