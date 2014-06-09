@@ -1471,7 +1471,7 @@ public List\<<table.name.voName>\> findConstantsBy<attribute.name.capitalized>(<
  * @return the {@link <table.name.voName>} instance.
  */
 @Override
-<notnull(C=C)>
+<nullable(C=C)>
 public <table.name.voName> findConstantBy<attribute.name.capitalized>(<
     if(!attribute.primitive)><
       if(!attribute.primitiveWrapper)
