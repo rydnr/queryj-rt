@@ -176,6 +176,7 @@ property_getter(property, C) ::= <<
  * Retrieves the \<i><property.id>\</i> value.
  * @return such information.
  */
+@Override
 <if(property.allowsNull)
   ><if(!property.strictlyPrimitive)
     ><nullable(C=C)><
