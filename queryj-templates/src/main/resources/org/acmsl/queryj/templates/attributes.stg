@@ -410,7 +410,7 @@ if (<attr.name.uncapitalized>Mine != null)
     {
         final int check = <attr.name.uncapitalized>Mine.compareTo(<attr.name.uncapitalized>His);
 
-        <attr.name.uncapitalized>Greater = check > 0);
+        <attr.name.uncapitalized>Greater = (<attr.name.uncapitalized>Check > 0);
         <attr.name.uncapitalized>Lower = <attr.name.uncapitalized>Mine < <attr.name.uncapitalized>His;
         <attr.name.uncapitalized>Equal = <attr.name.uncapitalized>Mine == <attr.name.uncapitalized>His;
 <endif>
