@@ -386,4 +386,8 @@ endif>
 
 attribute_compareTo(attr, table, C) ::= <<
 <!
- Generates the code for the compareTo
+ Generates the code for the compareTo method.
+ @param attr the attribute.
+ @param table the table.
+ @param C the context.
+!>
