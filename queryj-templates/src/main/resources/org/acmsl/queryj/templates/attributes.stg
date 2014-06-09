@@ -403,8 +403,7 @@ if (<attr.name.uncapitalized>Mine != null)
 {
     if (<attr.name.uncapitalized>His != null)
     {
-<
-  if(attr.primitive)>
+< if(attr.primitive)>
         <attr.name.uncapitalized>Greater = <attr.name.uncapitalized>Mine > <attr.name.uncapitalized>His;
         <attr.name.uncapitalized>Lower = <attr.name.uncapitalized>Mine < <attr.name.uncapitalized>His;
         <attr.name.uncapitalized>Equal = <attr.name.uncapitalized>Mine == <attr.name.uncapitalized>His;
