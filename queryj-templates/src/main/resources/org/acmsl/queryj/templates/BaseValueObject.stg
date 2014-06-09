@@ -151,7 +151,7 @@ public abstract class Abstract<table.name.voName>
 compareTo_method(table, C) ::= <<
 <! Generates the compareTo(Object) method !>
 /**
- * Checks whether given object is semantically equivalent to this one.
+ * Compares whether given object is semantically equivalent to this one.
  * @param other the other object to compare to.
  * @return {@code true} if and only if they're equivalent.
  */
