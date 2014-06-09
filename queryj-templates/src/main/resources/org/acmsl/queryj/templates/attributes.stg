@@ -399,15 +399,15 @@ attribute_compareTo(attr, table, C) ::= <<
 <nullable(C=C)>final <attr.type> <attr.name.uncapitalized>Mine = this.get<attr.name.capitalized>();
 <nullable(C=C)>final <attr.type> <attr.name.uncapitalized>His = other.get<attr.name.capitalized>();
 
-if (<attr.name.uncapitalized>Mine != null)
-{
-    if (<attr.name.uncapitalized>His != null)
-    {
 <if(attr.primitive)>
         <attr.name.uncapitalized>Greater = <attr.name.uncapitalized>Mine > <attr.name.uncapitalized>His;
         <attr.name.uncapitalized>Lower = <attr.name.uncapitalized>Mine < <attr.name.uncapitalized>His;
         <attr.name.uncapitalized>Equal = <attr.name.uncapitalized>Mine == <attr.name.uncapitalized>His;
 <else>
+if (<attr.name.uncapitalized>Mine != null)
+{
+    if (<attr.name.uncapitalized>His != null)
+    {
         <attr.name.uncapitalized>Greater = <attr.name.uncapitalized>Mine.compareTo(<attr.name.uncapitalized>His;
         <attr.name.uncapitalized>Lower = <attr.name.uncapitalized>Mine < <attr.name.uncapitalized>His;
         <attr.name.uncapitalized>Equal = <attr.name.uncapitalized>Mine == <attr.name.uncapitalized>His;
