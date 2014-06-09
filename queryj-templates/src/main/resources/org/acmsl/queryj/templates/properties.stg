@@ -190,7 +190,7 @@ endif>
 
 {
 <if(property.date)>
-    return this.m__<property.id.capitalized>;
+    return new Date(this.m__<property.id.capitalized>;
 <else>
     return this.m__<property.id.capitalized>;
 <endif>
