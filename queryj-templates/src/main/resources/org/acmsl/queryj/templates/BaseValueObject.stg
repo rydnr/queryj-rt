@@ -153,8 +153,8 @@ compareTo_method(table, C) ::= <<
 /**
  * Compares given object to this instance.
  * @param other the other object to compare to.
- * @return {@code -1}, {@code 0}, or {@code 1} if this object
- * is lower, equal or greater than this instance.
+ * @return {@code -1}, {@code 0}, or {@code 1} if this instance
+ * is lower, equal or greater than given object.
  */
 @Override
 public int compareTo(<nullable(C=C)>final <table.name.voName> other)
