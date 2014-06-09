@@ -1438,7 +1438,7 @@ find_constant_methods(attribute, table, C) ::= <<
  * @return the {@link <table.name.voName>} instances matching the criteria.
  */
 @Override
-<nullable(C=C)>
+<nulla(C=C)>
 public List\<<table.name.voName>\> findConstantsBy<attribute.name.capitalized>(<
     if(!attribute.primitive)><
       if(!attribute.primitiveWrapper)
