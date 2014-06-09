@@ -44,7 +44,7 @@ property_method_parameter_declaration(property, usePrefix, prefix, C) ::= <<
  @param usePrefix whether to use a prefix or not.
  @param prefix the prefix.
 !>
-<if(!property.strictlyPrimitive)><if(property.nullable)><nullable(C=C)><else><notnull(C=C)><endif><endif>final <property.javaType> <if(usePrefix)><prefix><property.columnName.capitalized><else><property.id.uncapitalized><endif>
+<if(!property.strictlyPrimitive)><if(property.nullable)><nullable(C=C)><else><notnull(C=C)><endif><endif>final <property.javaType> <if(usePrefix)><prefix><property.columnName.capitalized><else><property.columnName.uncapitalized><endif>
 >>
 
 property_declaration(property, C) ::= <<
@@ -90,11 +90,11 @@ immutable_property_setter_call(property) ::= <<
  @param property the property.
 !>
 <if(!property.strictlyPrimitive)><if(property.nullable)>
-if (<property.id.uncapitalized> != null)
+if (<property.columnName.uncapitalized> != null)
 {
-    immutableSet<property.columnName.capitalized>(<property.id.uncapitalized>);
-}<else>immutableSet<property.columnName.capitalized>(<property.id.uncapitalized>);<endif>
-<else>immutableSet<property.columnName.capitalized>(<property.id.uncapitalized>);<endif>
+    immutableSet<property.columnName.capitalized>(<property.columnName.uncapitalized>);
+}<else>immutableSet<property.columnName.capitalized>(<property.columnName.uncapitalized>);<endif>
+<else>immutableSet<property.columnName.capitalized>(<property.columnName.uncapitalized>);<endif>
 >>
 
 property_accessors(property, C) ::= <<
@@ -136,9 +136,9 @@ protected void set<property.columnName.capitalized>(<if(!property.strictlyPrimit
 property_to_primitive(property) ::= <<
 <! Generates the code to convert given property's value to a primitive !>
 <if(property.numeric)
-    ><property.id.uncapitalized><
+    ><property.columnName.uncapitalized><
  else><if(property.string)
-    ><property.id.uncapitalized><endif><endif>
+    ><property.columnName.uncapitalized><endif><endif>
 >>
 
 property_resultset_retrieval(property, C) ::= <<
@@ -230,28 +230,28 @@ endif>;
 property_equals(property) ::= <<
 <! Generates the contribution of each property to the equals method. !>
 <if(property.strictlyPrimitive)>
-final boolean <property.id.uncapitalized>Match = (this.m__<property.columnName.capitalized> == candidate.get<property.columnName.capitalized>());
+final boolean <property.columnName.uncapitalized>Match = (this.m__<property.columnName.capitalized> == candidate.get<property.columnName.capitalized>());
 <else><if(property.allowsNull)>
-final boolean <property.id.uncapitalized>Match =
+final boolean <property.columnName.uncapitalized>Match =
     (   (this.m__<property.columnName.capitalized> != null)
      && (this.m__<property.columnName.capitalized>.equals(candidate.get<property.columnName.capitalized>())));
 <else>
-final boolean <property.id.uncapitalized>Match = this.m__<property.columnName.capitalized>.equals(candidate.get<property.columnName.capitalized>());<endif><endif>
+final boolean <property.columnName.uncapitalized>Match = this.m__<property.columnName.capitalized>.equals(candidate.get<property.columnName.capitalized>());<endif><endif>
 >>
 
 property_hashCode(property) ::= <<
 <! Generates the hashCode contribution for each property. !>
 <if(property.strictlyPrimitive)>
-final int <property.id.uncapitalized>HashCode = ("" + this.m__<property.columnName.capitalized>).hashCode();<else>
-<if(property.allowsNull)>final int <property.id.uncapitalized>HashCode;
+final int <property.columnName.uncapitalized>HashCode = ("" + this.m__<property.columnName.capitalized>).hashCode();<else>
+<if(property.allowsNull)>final int <property.columnName.uncapitalized>HashCode;
 if (this.m__<property.columnName.capitalized> == null)
 {
-    <property.id.uncapitalized>HashCode = 0;
+    <property.columnName.uncapitalized>HashCode = 0;
 }
 else
 {
-     <property.id.uncapitalized>HashCode = this.m__<property.columnName.capitalized>.hashCode();
-}<else>final int <property.id.uncapitalized>HashCode = this.m__<property.columnName.capitalized>.hashCode();<endif><endif>
+     <property.columnName.uncapitalized>HashCode = this.m__<property.columnName.capitalized>.hashCode();
+}<else>final int <property.columnName.uncapitalized>HashCode = this.m__<property.columnName.capitalized>.hashCode();<endif><endif>
 >>
 
 property_toString(property) ::= <<
