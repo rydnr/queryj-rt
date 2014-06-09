@@ -147,7 +147,7 @@ if(attribute.primitive)>
 if (item.get<attribute.name.capitalized>() == <attribute.name.uncapitalized>)<
   else>
 <if(attribute.nullable)><nullable(C=C)><else><notnull(C=C)><endif
->final <attribute.objectType> <attribute.name.uncapitalized> =
+>final <attribute.objectType> <attribute.name.uncapitalized> = item.get<attribute.name.capitalized>();
 && (item.get<attribute.name.capitalized>() != null)
 && (item.get<attribute.name.capitalized>().equals(<attribute.name.uncapitalized>))<endif>
 >>
