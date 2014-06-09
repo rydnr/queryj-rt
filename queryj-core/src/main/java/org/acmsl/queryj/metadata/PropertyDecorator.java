@@ -89,5 +89,5 @@ public interface PropertyDecorator
      * Checks whether its type is supported out-of-the-box.
      * @return {@code true} in such case.
      */
-    public boolean isS
+    public boolean isTypeSupportedOutOfTheBox();
 }
