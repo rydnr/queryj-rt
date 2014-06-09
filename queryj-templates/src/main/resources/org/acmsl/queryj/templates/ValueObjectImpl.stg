@@ -100,7 +100,6 @@ class(table, C) ::= <<
 <class_annotations(C=C)>
 public class <table.name.voName>Impl
     extends Abstract<table.name.voName>
-    implements Serializable
 {
     /**
      * The serial version id.
