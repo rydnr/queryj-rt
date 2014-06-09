@@ -441,6 +441,8 @@ else
 < endif><
 else><
   if(attr.primitive)>
+<notnull(C=C)>final <attr.type> <attr.name.uncapitalized>Mine = this.get<attr.name.capitalized>();
+<notnull(C=C)>final <attr.type> <attr.name.uncapitalized>His = other.get<attr.name.capitalized>();
 < else>
 <notnull(C=C)>final <attr.type> <attr.name.uncapitalized>Mine = this.get<attr.name.capitalized>();
 <notnull(C=C)>final <attr.type> <attr.name.uncapitalized>His = other.get<attr.name.capitalized>();
