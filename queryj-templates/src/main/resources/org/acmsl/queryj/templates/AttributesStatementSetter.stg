@@ -181,8 +181,7 @@ public class <table.name.voName>StatementSetter
      {
         setValues(
             preparedStatement,
-            <table.attributes:{ attr | values.get<attr.name.capitalized>()}; separator=",\n">,
-            Operation.UPDATE.equals(getOperation()));
+            <table.attributes:{ attr | values.get<attr.name.capitalized>()}; separator=",\n">);
      }
 
     /**
