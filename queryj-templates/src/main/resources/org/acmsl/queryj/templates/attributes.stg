@@ -431,9 +431,9 @@ else
     }
     else
     {
-        <attr.name.uncapitalized>Greater = true;
+        <attr.name.uncapitalized>Greater = false;
         <attr.name.uncapitalized>Lower = false;
-        <attr.name.uncapitalized>Equal = false;
+        <attr.name.uncapitalized>Equal = true;
     }
 }
 <endif>
