@@ -452,7 +452,7 @@ final <attr.name.uncapitalized>Equal = <attr.name.uncapitalized>Mine == <attr.na
 final int <attr.name.uncapitalized>Check = <attr.name.uncapitalized>Mine.compareTo(<attr.name.uncapitalized>His);
 
 final <attr.name.uncapitalized>Greater = (<attr.name.uncapitalized>Check > 0);
-final <attr.name.uncapitalized>Lower = (<attr.name.uncapitalized>Check < 0);
+final <attr.name.uncapitalized>Lower = (<attr.name.uncapitalized>Check \< 0);
 final <attr.name.uncapitalized>Equal = (<attr.name.uncapitalized>Check == 0);
 < endif><
 endif>
