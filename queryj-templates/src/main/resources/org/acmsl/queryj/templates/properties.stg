@@ -180,7 +180,8 @@ property_getter(property, C) ::= <<
   ><if(!property.strictlyPrimitive)
     ><nullable(C=C)><
     endif
-  >public <property.objectType> get<property.id.capitalized>()<
+  >@Override
+public <property.objectType> get<property.id.capitalized>()<
 else
   ><if(!property.strictlyPrimitive)
     ><notnull(C=C)><
