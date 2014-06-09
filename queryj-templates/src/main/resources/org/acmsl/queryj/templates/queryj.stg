@@ -152,8 +152,7 @@ if (item.get<attribute.name.capitalized>() == <attribute.name.uncapitalized>)<
 if (   (<attribute.name.uncapitalized>Aux != null)
     && (<attribute.name.uncapitalized>Aux.equals(<attribute.name.uncapitalized>)))<
     else
-     >if (   (<attribute.name.uncapitalized>Aux != null)
-    && (<attribute.name.uncapitalized>Aux.equals(<attribute.name.uncapitalized>)))<
+     >if (<attribute.name.uncapitalized>Aux.equals(<attribute.name.uncapitalized>))<
     endif
 >
 
