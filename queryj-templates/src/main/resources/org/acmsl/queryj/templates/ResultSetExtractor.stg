@@ -267,7 +267,7 @@ if(attr.date)
   ><nullable_date_attribute_resultset_retrieval(attr=attr, C=C)><
 else><
   if(attr.primitive)><
-    if(attr.nullable)><
+    if(attr.nullable)
     else
      ><attr.objectType>.valueOf(<attr.name.uncapitalized>)<
   else
