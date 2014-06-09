@@ -136,12 +136,12 @@ class_annotations(C) ::= <<
 <if(C.checkthread_annotations_enabled)>@org.checkthread.annotations.ThreadSafe<endif>
 >>
 
-find_constant_check_attribute(attribute) ::= <<
+find_constant_check_attribute(attribute, C) ::= <<
 <
 if(attribute.primitive)>
 if (item.get<attribute.name.capitalized>() == <attribute.name.uncapitalized>)<
   else>
-<if(attribute.nullable)><nulla
+<if(attribute.nullable)><nullable(C=C)>
 && (item.get<attribute.name.capitalized>() != null)
 && (item.get<attribute.name.capitalized>().equals(<attribute.name.uncapitalized>))<endif>
 >>
