@@ -163,35 +163,37 @@ public int compareTo(<nullable(C=C)>final <table.name.voName> other)
 
     if (other == null)
     {
-        result = -1
-    }
-    <table.primaryKey:{ a | <attribute_compareTo(attr=a, table=table, C=C)>}; separator="">
-
-    final boolean greater =
-        <table.primaryKey:{ a |<a.name.uncapitalized>Greater}; separator="\n&& ">;
-
-    final boolean lower =
-        <table.primaryKey:{ a |<a.name.uncapitalized>Lower}; separator="\n&& ">;
-
-    final boolean equal =
-        <table.primaryKey:{ a |<a.name.uncapitalized>Equal}; separator="\n&& ">;
-
-    if (greater)
-    {
         result = 1;
-    }
-    else if (lower)
-    {
-        result = -1;
-    }
-    else if (equal)
-    {
-        result = 0;
     }
     else
     {
-        result = -1;
-    }
+        <table.primaryKey:{ a | <attribute_compareTo(attr=a, table=table, C=C)>}; separator="">
+
+        final boolean greater =
+            <table.primaryKey:{ a |<a.name.uncapitalized>Greater}; separator="\n&& ">;
+
+        final boolean lower =
+            <table.primaryKey:{ a |<a.name.uncapitalized>Lower}; separator="\n&& ">;
+
+        final boolean equal =
+            <table.primaryKey:{ a |<a.name.uncapitalized>Equal}; separator="\n&& ">;
+
+        if (greater)
+        {
+            result = 1;
+        }
+        else if (lower)
+        {
+            result = -1;
+        }
+        else if (equal)
+        {
+            result = 0;
+        }
+        else
+        {
+            result = -1;
+        }
 
     return result;
 }
