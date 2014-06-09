@@ -182,7 +182,6 @@ public int compareTo(<nullable(C=C)>final <table.name.voName> other)
     }
     else if (equal)
     {
-        // could be anything
         result = 0;
     }
     else if (equal)
