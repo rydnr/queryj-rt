@@ -78,12 +78,6 @@ sourceImpl(table, C) ::= <<
  * Importing V24-Commons classes.
  */
 import com.ventura24.commons.dao.V24PreparedStatementSetter;
-
-/*
- * Importing Spring classes.
- */
-import org.springframework.dao.DataAccessException;
-import org.springframework.jdbc.core.PreparedStatementSetter;
 <checkers_import(C=C)>
 
 /*
