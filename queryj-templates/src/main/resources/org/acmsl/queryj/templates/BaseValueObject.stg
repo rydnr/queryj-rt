@@ -162,6 +162,7 @@ public int compareTo(<nullable(C=C)>final <table.name.voName> other)
     final int result;
 
         <table.primaryKey:{ a | <attribute_compareTo(attribute=a)>}; separator="">
+
         result =
             <table.attributes:{ a |<a.name.uncapitalized>Match}; separator="\n&& ">;
     }
