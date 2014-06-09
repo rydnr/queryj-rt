@@ -414,5 +414,9 @@ if (<attr.name.uncapitalized>Mine != null)
         <attr.name.uncapitalized>Lower = (<attr.name.uncapitalized>Check < 0);
         <attr.name.uncapitalized>Equal = (<attr.name.uncapitalized>Check == 0);
     }
+    else
+    {
+
+    }
 }
 <endif>
