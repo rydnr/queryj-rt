@@ -161,10 +161,6 @@ public int compareTo(<nullable(C=C)>final <table.name.voName> other)
 {
     final int result;
 
-    if (other instanceof <table.name.voName>)
-    {
-        <notnull(C=C)>final <table.name.voName> candidate = (<table.name.voName>) other;
-
         <table.attributes:{ a | <attribute_equals(attribute=a)>}; separator="">
         result =
             <table.attributes:{ a |<a.name.uncapitalized>Match}; separator="\n&& ">;
