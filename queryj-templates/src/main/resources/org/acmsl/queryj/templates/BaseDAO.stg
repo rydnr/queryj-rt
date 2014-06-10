@@ -240,7 +240,7 @@ cached_constants(row, voName, C) ::= <<
  * The <row.name> {@link <voName>}.
  */
 <notnull(C=C)>
-static final <voName> <row.name.normalized.uppercased> =
+static final <voName> <row.name.uppercased> =
     new <voName>Impl(
         <row.attributes:{ a | <attribute_specification(attr=a)>}; separator=",\n">);
 >>
