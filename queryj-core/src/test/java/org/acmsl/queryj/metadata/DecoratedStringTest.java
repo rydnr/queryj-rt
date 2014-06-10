@@ -138,7 +138,7 @@ public class DecoratedStringTest
 
         Assert.assertEquals("A_Constant", instance.getNormalized().getValue());
 
-        @NotNull final DecoratedString instance = new DecoratedString("A-Constant");
+        @NotNull final DecoratedString instance2 = new DecoratedString("A-Constant");
 
         Assert.assertEquals("A_Constant", instance.getNormalized().getValue());
     }
