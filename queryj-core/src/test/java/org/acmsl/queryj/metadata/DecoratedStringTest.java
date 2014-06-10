@@ -128,6 +128,9 @@ public class DecoratedStringTest
     }
 
     /**
-     * Checks whether normalize() replaces non-alpha
+     * Checks whether normalize() replaces non-alphanumeric characters
+     * with underscores.
      */
+    @Test
+    public void normalize_
 }
