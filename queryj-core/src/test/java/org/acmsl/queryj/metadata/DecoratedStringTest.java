@@ -126,4 +126,8 @@ public class DecoratedStringTest
 
         Assert.assertTrue(somethingElse.isFalse());
     }
+
+    /**
+     * Normalizes
+     */
 }
