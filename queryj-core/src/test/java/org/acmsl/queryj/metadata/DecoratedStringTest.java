@@ -132,5 +132,8 @@ public class DecoratedStringTest
      * with underscores.
      */
     @Test
-    public void normalize_
+    public void normalize_replaces_nonalphanumeric_with_underscores()
+    {
+        @NotNull final DecoratedString instance = new DecoratedString("")
+    }
 }
