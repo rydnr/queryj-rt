@@ -341,7 +341,6 @@ public <if(table.dynamicQueries)>abstract <endif>class <engine.name><table.name.
      * Retrieves the static (pre-cached) values.
      * @return such information.
      */
-    <notnull(C=C)>
     @Override
     public List\<<table.name.voName\>> getStaticValues()
     {
