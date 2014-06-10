@@ -136,6 +136,6 @@ public class DecoratedStringTest
     {
         @NotNull final DecoratedString instance = new DecoratedString("A-Constant");
 
-        Assert.assertEquals();
+        Assert.assertEquals("A_Constant", instance.normalize());
     }
 }
