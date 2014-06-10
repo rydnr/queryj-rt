@@ -2,6 +2,6 @@
 ** DONE Fix AttributesStatementSetter.stg warnings #521: 1 -> 1
 ** DONE Fix DAOFactory.stg warnings #522: 1 -> 1
 ** DONE Fix DAO.stg warnings #523: 3 -> 2
-** TODO Fix Findbugs bugs #524: 2 -> 2
+** DONE Fix Findbugs bugs #524: 2 -> 2
 * Implement a way to specify the package of the TemplateDefs: 2 ->
 ** In DAO.stg, avoid importing unused ResultSetExtractors for default types.
