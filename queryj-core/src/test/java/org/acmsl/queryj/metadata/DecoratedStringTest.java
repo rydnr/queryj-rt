@@ -134,6 +134,8 @@ public class DecoratedStringTest
     @Test
     public void normalize_replaces_nonalphanumeric_with_underscores()
     {
-        @NotNull final DecoratedString instance = new DecoratedString("")
+        @NotNull final DecoratedString instance = new DecoratedString("A-Constant");
+
+        Assert.assertEquals();
     }
 }
