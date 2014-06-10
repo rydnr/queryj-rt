@@ -128,6 +128,6 @@ public class DecoratedStringTest
     }
 
     /**
-     * Checks whether normalize() replaces
+     * Checks whether normalize() replaces non
      */
 }
