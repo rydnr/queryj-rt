@@ -128,6 +128,6 @@ public class DecoratedStringTest
     }
 
     /**
-     * Normalizes
+     * Normalize()
      */
 }
