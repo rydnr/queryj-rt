@@ -548,7 +548,7 @@ public class AbstractAttributeDecoratorTest
             new AttributeValueObject(
                 "name",
                 Types.BIGINT,
-                "long",
+                "Long",
                 "tableName",
                 "comment",
                 1,
