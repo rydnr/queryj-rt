@@ -318,7 +318,7 @@ public String toString()
     <notnull(C=C)>final StringBuilder result =
         new StringBuilder("{
 
-    result.append("\", \"super\": ");
+    result.append("\", \"class\": \"<table.name.voName>StatementSetter");\"super\": ");
     result.append(super.toString());
     result.append(", \"package\": \"<C.package>\" }");
 
