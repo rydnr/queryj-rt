@@ -531,7 +531,7 @@ public class AbstractAttributeDecoratorTest
     }
 
     /**
-     * Checks whether isLong() returns true for longs.
+     * Checks whether getPrimitiveType() returns long for Longs.
      */
     @Test
     public void getPrimitiveType_returns_long_for_longs()
