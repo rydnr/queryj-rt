@@ -206,7 +206,7 @@ public class <table.name.voName>StatementSetter
 <  if(table.primaryKey)>
         if (update)
         {
-            <table.externallyManagedAttributes:{ a | <attribute_preparedstatement_specification(attr=a, C=C)>}; separator="\n">
+            <table.primaryKey:{ a | <attribute_preparedstatement_specification(attr=a, C=C)>}; separator="\n">
         }<
    endif>
         <table.own.minus.externallyManagedAttributes:{ a | <attribute_preparedstatement_specification(attr=a, C=C)>}; separator="\n">
