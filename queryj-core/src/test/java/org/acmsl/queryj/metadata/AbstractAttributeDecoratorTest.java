@@ -568,7 +568,7 @@ public class AbstractAttributeDecoratorTest
         @NotNull final AbstractAttributeDecorator instance =
             new AbstractAttributeDecorator(attribute, metadataManager) {};
 
-        Assert.assertTrue(instance.isLong());
+        Assert.assertTrue(instance.getPrimitiveType());
     }
 
 }
