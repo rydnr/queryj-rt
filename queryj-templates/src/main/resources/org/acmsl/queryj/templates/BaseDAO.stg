@@ -465,6 +465,7 @@ custom_select_for_update(cs, C) ::= <<
  <cs.parameters:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
  * @return the \<i><cs.resultClass>\</i> information retrieved.
  */
+@SuppressWarnings("unused")
 <if(cs.resultNullable)><nullable(C=C)><else><if(cs.result)><if(cs.result.multiple)><notnull(C=C)><endif><endif><endif>
 <cs.resultClass> <cs.name.uncapitalized>(
     <cs.parameters:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
