@@ -320,6 +320,7 @@ public boolean equals(<nullable(C=C)>final Object other)
 
     return result;
 }
+>>
 
 hashCode_method(table, C) ::= <<
 <!
