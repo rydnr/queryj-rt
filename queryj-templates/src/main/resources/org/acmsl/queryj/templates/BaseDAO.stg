@@ -415,12 +415,8 @@ custom_select(cs, C) ::= <<
  * \<b><cs.description>\</b>.
  <cs.parameters:{ p | <parameter_javadoc(parameter=p)>}; separator="\n">
 <
-if(cs.resultRef)><
-  if(cs.multiple)>
+if(cs.resultRef)>
  * @return the {@code <cs.resultClass>} information retrieved.
-< else>
- * @return the {@code <cs.resultClass>} information retrieved.
-< endif>
 <else><
   if(cs.multiple)>
  * @return the <if(cs.multiple)>list of {@link <cs.dao.voName>}<endif> information retrieved.
