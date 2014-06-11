@@ -197,7 +197,8 @@ public class <table.name.voName>StatementSetter
      */
     protected void setValues(
         <notnull(C=C)>final PreparedStatement preparedStatement,
-        <table.attributes:{a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
+        <table.attributes:{a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">
+        <notnull(C=C)>final V24PreparedStatementSetter.Operation operation)
         throws  SQLException
     {
         int index = 1;
