@@ -183,7 +183,7 @@ public int <cs.name.uncapitalized>(
     <notnull(C=C)>final TransactionTemplate transactionTemplate =
         new TransactionTemplate(transactionManager);
 
-    <notnull(C=C)>final Object t_Result =
+    <notnull(C=C)>final Integer t_Result =
         transactionTemplate.execute(
             new V24UpdateTransactionCallback\<<engine.name><table.name.voName>DAO>(
                 preparedStatementCreatorFactory
