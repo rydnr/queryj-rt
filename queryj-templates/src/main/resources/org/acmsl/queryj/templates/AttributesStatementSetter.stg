@@ -163,7 +163,7 @@ public class <table.name.voName>StatementSetter
      */
     public <table.name.voName>StatementSetter(
         <notnull(C=C)>final <table.name.voName> values,
-        final V24PreparedStatementSetter.Operation operation)
+        <notnull(C=C)>final V24PreparedStatementSetter.Operation operation)
     {
         super(values, operation);
     }
