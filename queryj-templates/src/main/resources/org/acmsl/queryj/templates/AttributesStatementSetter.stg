@@ -319,7 +319,7 @@ public String toString()
         new StringBuilder("{ \"super\": ");
 
     result.append(super.toString());
-    result.append(", \"class\": \"<table.name.voName>StatementSetter");
+    result.append(", \"class\": \"<table.name.voName>StatementSetter\"");
     result.append(", \"package\": \"<C.package>\" }");
 
     return result.toString();
