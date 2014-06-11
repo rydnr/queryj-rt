@@ -422,7 +422,7 @@ if(cs.resultRef)><
  * @return the {@code <cs.resultClass>} information retrieved.
 < endif>
 <else>
- * @return the <if(cs.multiple)>list of {@link <cs.dao.voName>} information retrieved.
+ * @return the <if(cs.multiple)>list of {@link <cs.dao.voName>}<endif> information retrieved.
 <endif>
  */
 @SuppressWarnings("unused")
