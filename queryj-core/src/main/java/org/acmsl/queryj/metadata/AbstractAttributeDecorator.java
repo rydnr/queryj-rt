@@ -732,7 +732,6 @@ public abstract class AbstractAttributeDecorator
             getPrimitiveType(
                 getTypeId(),
                 retrieveType(),
-                isNullable(),
                 isBoolean(),
                 getPrecision(),
                 getMetadataTypeManager());
