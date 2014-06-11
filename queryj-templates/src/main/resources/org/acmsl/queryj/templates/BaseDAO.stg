@@ -447,7 +447,7 @@ custom_update_or_insert(cs, C) ::= <<
  * \<b><cs.description>\</b>.
  <cs.parameters:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
  */
-@SuppressWarnings("
+@SuppressWarnings("unused")
 public int <cs.name.uncapitalized>(
     <cs.parameters:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
   throws DataAccessException;
