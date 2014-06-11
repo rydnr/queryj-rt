@@ -156,7 +156,7 @@ public class <table.name.voName>ResultSet<if(def.metadata.multiple.meansTrue)>Mu
 
     <hashCode(table=table, C=C)>
 
-    <toString(table=table, repository=repository, def=def, C=C)>
+    <toString(table=table, C=C)>
 }
 >>
 
