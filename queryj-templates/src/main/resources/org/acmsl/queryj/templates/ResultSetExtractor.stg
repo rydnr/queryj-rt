@@ -309,7 +309,7 @@ public boolean equals(<nullable(C=C)>final Object other)
 {
     final boolean result;
 
-    if (other instanceof <table.name.voName>StatementSetter)
+    if (other instanceof <table.name.voName>ResultSet<if(def.metadata.multiple.meansTrue)>Multiple<else>Single<endif>Extractor)
     {
         result = super.equals(other);
     }
