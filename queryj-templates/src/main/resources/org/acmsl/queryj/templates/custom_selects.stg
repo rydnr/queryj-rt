@@ -195,7 +195,7 @@ public int <cs.name.uncapitalized>(
 
     if  (t_Result != null)
     {
-        result = t_Result).intValue();
+        result = t_Result.intValue();
     }
 
     /*
