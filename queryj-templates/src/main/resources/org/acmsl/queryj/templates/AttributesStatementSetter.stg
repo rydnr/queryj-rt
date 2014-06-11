@@ -263,6 +263,7 @@ public boolean equals(<nullable(C=C)>final Object other)
  * @param hisOperation his operation.
  * @return {@code true} if and only if both sets are equivalent.
  */
+@Override
 protected boolean equals(
     <notnull(C=C)>final <table.name.voName> myValue,
     <notnull(C=C)>final V24PreparedStatementSetter.Operation myOperation,
