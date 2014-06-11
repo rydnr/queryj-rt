@@ -538,7 +538,7 @@ custom_updates_or_inserts_sql(table, repository, C) ::= <<
 // custom updates or inserts
 <table.customUpdatesOrInserts:{sql|
 <if(!sql.dynamic)>
-<if(sql.splitAndSurroundByDoubleQuotes)>
+<if(sql.value.splitAndSurroundByDoubleQuotes)>
 
 /**
  * The <sql.id> SQL.
