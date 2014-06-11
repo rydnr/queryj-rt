@@ -179,7 +179,7 @@ public class <table.name.voName>StatementSetter
     protected void setValues(
         <notnull(C=C)>final PreparedStatement preparedStatement,
         <notnull(C=C)>final <table.name.voName> values,
-        final V24PreparedStatementSetter.Operation operation)
+        <notnull(C=C)>final V24PreparedStatementSetter.Operation operation)
         throws  SQLException
      {
         setValues(
