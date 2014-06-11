@@ -316,9 +316,9 @@ toString_method(table, C) ::= <<
 public String toString()
 {
     <notnull(C=C)>final StringBuilder result =
-        new StringBuilder("{
+        new StringBuilder("{ \"super\": ");
 
-    result.append("\", \"class\": \"<table.name.voName>StatementSetter");\"super\": ");
+    result.append("\", \"class\": \"<table.name.voName>StatementSetter");
     result.append(super.toString());
     result.append(", \"package\": \"<C.package>\" }");
 
