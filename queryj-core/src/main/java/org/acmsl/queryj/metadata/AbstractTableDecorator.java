@@ -1687,6 +1687,7 @@ public abstract class AbstractTableDecorator
     {
         @NotNull final List<Sql<String>> result = sqlDAO.findUpdates(tableName);
 
+        result.addAll(sqlDAO.findIns)
         Collections.sort(result);
 
         return result;
