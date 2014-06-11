@@ -161,7 +161,7 @@ public int <cs.name.uncapitalized>(
         preparedStatementCreatorFactory =
             new PreparedStatementCreatorFactory(
                 auditSql(<cs.idAsConstant>_SQL));
-
+<!
     /*
     t_PreparedStatementCreatorFactory.setResultSetType(..);
     t_PreparedStatementCreatorFactory.setUpdatableResults(..);
