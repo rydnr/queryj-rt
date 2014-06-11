@@ -1685,7 +1685,7 @@ public abstract class AbstractTableDecorator
     protected List<Sql<String>> getCustomUpdatesOrInserts(
         @NotNull final String tableName, @NotNull final SqlDAO sqlDAO)
     {
-        @NotNull final List<Sql<String>> result = sqlDAO.findInserts(tableName);
+        @NotNull final List<Sql<String>> result = sqlDAO.findC(tableName);
 
         Collections.sort(result);
 
