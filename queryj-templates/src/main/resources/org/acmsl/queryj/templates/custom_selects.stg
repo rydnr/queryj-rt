@@ -152,7 +152,7 @@ custom_update_or_insert(cs, C) ::= <<
  * @return the number of entities updated.
  */
 public int <cs.name.uncapitalized>(
-    <cs.parameters:{ p | <attribute_method_parameter_declaration(attr=p, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
+    <cs.parameters:{ p | <attribute_method_parameter_declaration(attribute=p, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
   throws DataAccessException
 {
     int result = -10;
