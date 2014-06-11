@@ -104,6 +104,7 @@ Feature: <table.name> code compiles
       | AttributesStatementSetter | <table.name.singular.camelCase>StatementSetter.java |
       | PkStatementSetter | <table.name.singular.camelCase>PkStatementSetter.java |
       | ResultSetExtractor | <table.name.singular.camelCase>ResultSetMultipleExtractor.java |
+      | ResultSetExtractor | <table.name.singular.camelCase>ResultSetMultipleExtractor.java |
       | DAO | <engine.name.capitalized><table.name.singular.camelCase>DAO.java |
 >>
 
