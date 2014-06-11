@@ -534,7 +534,7 @@ public class AbstractAttributeDecoratorTest
      * Checks whether isLong() returns true for longs.
      */
     @Test
-    public void getPrimitiveType_returns_true_for_longs()
+    public void getPrimitiveType_returns_long_for_longs()
     {
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
 
