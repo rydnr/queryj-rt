@@ -152,7 +152,7 @@ public class <table.name.voName>ResultSet<if(def.metadata.multiple.meansTrue)>Mu
 
     <defaultExtractor(table=table, repository=repository, def=def, C=C)>
 
-    <equals(table=table, C=C)>
+    <equals_method(table=table, C=C)>
 
     <hashCode(table=table, C=C)>
 
