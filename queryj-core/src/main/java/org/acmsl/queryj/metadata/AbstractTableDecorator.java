@@ -1658,7 +1658,7 @@ public abstract class AbstractTableDecorator
     @NotNull
     public List<Sql<DecoratedString>> getCustomUpdatesOrInserts()
     {
-        return decorateSql(getCustomUpdatesOrInserts(getTable(), getCustomSqlProvider()));
+m        return decorateSql(getCustomUpdatesOrInserts(getTable(), getCustomSqlProvider()));
     }
 
     /**
