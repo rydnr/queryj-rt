@@ -337,7 +337,7 @@ public int hashCode()
 {
     final int result;
 
-    final int classHashCode = <table.name.voName>StatementSetter<table.name.voName>StatementSetter.class.hashCode();
+    final int classHashCode = <table.name.voName>ResultSet<if(def.metadata.multiple.meansTrue)>Multiple<else>Single<endif>Extractor<table.name.voName>StatementSetter<table.name.voName>StatementSetter.class.hashCode();
 
     final int superHashCode = super.hashCode();
 
