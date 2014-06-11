@@ -422,6 +422,7 @@ if(cs.resultRef)><
  * @return the {@code <cs.resultClass>} information retrieved.
 < endif>
 <else><
+  if(cs.multiple)>
  * @return the <if(cs.multiple)>list of {@link <cs.dao.voName>}<endif> information retrieved.
 <endif>
  */
