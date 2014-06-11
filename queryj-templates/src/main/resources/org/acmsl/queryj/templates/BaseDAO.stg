@@ -424,6 +424,7 @@ if(cs.resultRef)><
 <else><
   if(cs.multiple)>
  * @return the <if(cs.multiple)>list of {@link <cs.dao.voName>}<endif> information retrieved.
+ * @return the <if(cs.multiple)>list of {@link <cs.dao.voName>}<endif> information retrieved.
 <endif>
  */
 @SuppressWarnings("unused")
