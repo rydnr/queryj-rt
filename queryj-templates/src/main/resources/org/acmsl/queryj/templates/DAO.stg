@@ -531,7 +531,7 @@ custom_selects_for_update_sql(table, repository, C) ::= <<
  * The <sql.id> SQL.
  */
 public static final String <sql.id.normalized.uppercased>_SQL =
-    <sql.splitAndSurroundByDoubleQuotes; separator=" +\n"><endif>;}; separator="\n">
+    <sql.value.splitAndSurroundByDoubleQuotes; separator=" +\n"><endif>;}; separator="\n">
 >>
 
 custom_updates_or_inserts_sql(table, repository, C) ::= <<
