@@ -1670,7 +1670,7 @@ find_by_pk_sql_join_fk(parentForeignKey, parentPrimaryKey) ::= <<
  @param parentPrimaryKey the parent's primary key.
 !>
 <parentForeignKey.attributes,parentPrimaryKey:{ pk, parentPk |
-+   " AND <pk.table.NameUppercased>.<pk.name.uppercased> = <parentPk.tableNameUppercased>.<parentPk.name.uppercased> "}; separator="\n">
++   " AND <pk.table.name.uppercased>.<pk.name.uppercased> = <parentPk.tableNameUppercased>.<parentPk.name.uppercased> "}; separator="\n">
 >>
 
 attribute_resultset_extractor_class(table, repository, attr, C) ::= <<
