@@ -292,3 +292,81 @@ nullable_date_attribute_resultset_retrieval(attr, C) ::= <<
 !>
 <if(attr.nullable)>new Date(<attr.name.uncapitalized>.getTime())<endif>
 >>
+
+equals_method(table, C) ::= <<
+<!
+ Generates the equals(Object) method.
+ @param table the table.
+ @param C the context.
+!>
+/**
+ * Checks whether given object is semantically equivalent to this one.
+ * @param other the other object to compare to.
+ * @return {@code true} if and only if they're equivalent.
+ */
+@Override
+public boolean equals(<nullable(C=C)>final Object other)
+{
+    final boolean result;
+
+    if (other instanceof <table.name.voName>StatementSetter)
+    {
+        result = super.equals(other);
+    }
+    else
+    {
+        result = false;
+    }
+
+    return result;
+}
+
+hashCode_method(table, C) ::= <<
+<!
+ Generates the hashCode() method.
+ @param table the table.
+ @param C the context.
+!>
+/**
+ * Retrieves the hashCode which identifies this instance
+ * from any other one.
+ * @return the unique (among instances of this class) value.
+ */
+@Override
+public int hashCode()
+{
+    final int result;
+
+    final int classHashCode = <table.name.voName>StatementSetter.class.hashCode();
+
+    final int superHashCode = super.hashCode();
+
+    result = classHashCode + superHashCode;
+
+    return result;
+}
+>>
+
+toString_method(table, C) ::= <<
+<!
+ Generates the toString() method.
+ @param table the table.
+ @param C the context.
+!>
+/**
+ * Generates a JSON-compatible representation of this instance.
+ * @return such text.
+ */
+<notnull(C=C)>
+@Override
+public String toString()
+{
+    <notnull(C=C)>final StringBuilder result = new StringBuilder("{ \"super\": ");
+
+    result.append(super.toString());
+    result.append(", \"class\": \"<table.name.voName>StatementSetter\"");
+    result.append(", \"package\": \"<C.package>\" }");
+
+    return result.toString();
+}
+>>
