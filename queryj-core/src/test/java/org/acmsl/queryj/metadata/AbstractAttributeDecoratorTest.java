@@ -557,7 +557,7 @@ public class AbstractAttributeDecoratorTest
                 null, // keyword
                 null, // retrieval query
                 null, // sequence
-                false, // nullable
+                true, // nullable
                 null, // value
                 false, // read-only
                 false, // is-bool
