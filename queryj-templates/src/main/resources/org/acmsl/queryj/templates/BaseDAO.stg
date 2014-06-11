@@ -421,7 +421,7 @@ if(cs.resultRef)>
   if(cs.multiple)>
  * @return the list of matching {@link <cs.dao.voName>} entities.
 < else>
- * @return the <if(cs.multiple)>list of {@link <cs.dao.voName>}<endif> information retrieved.
+ * @return the {@link <cs.dao.voName>}<endif> information retrieved.
 < endif>
 <endif>
  */
