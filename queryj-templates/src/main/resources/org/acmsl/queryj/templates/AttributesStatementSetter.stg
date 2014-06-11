@@ -180,7 +180,7 @@ public class <table.name.voName>StatementSetter
         <notnull(C=C)>final PreparedStatement preparedStatement,
         <notnull(C=C)>final <table.name.voName> values,
         <notnull(C=C)>final V24PreparedStatementSetter.Operation operation)
-        throws  SQLException
+      throws  SQLException
      {
         setValues(
             preparedStatement,
