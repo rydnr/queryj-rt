@@ -151,6 +151,7 @@ custom_update_or_insert(cs, C) ::= <<
  <cs.parameters:{ p | <parameter_javadoc(parameter=p)>}; separator="\n">
  * @return the number of entities updated.
  */
+@Override
 public int <cs.name.uncapitalized>(
     <cs.parameters:{ p | <attribute_method_parameter_declaration(attribute=p, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
   throws DataAccessException
