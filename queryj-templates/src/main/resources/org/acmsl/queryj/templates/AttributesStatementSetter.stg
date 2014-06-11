@@ -255,27 +255,6 @@ public boolean equals(<nullable(C=C)>final Object other)
     return result;
 }
 
-/**
- * Checks whether the state information provided match.
- * @param myValue my {@code <table.name.voName>} value.
- * @param myOperation my operation.
- * @param hisValue his {@code <table.name.voName>} value.
- * @param hisOperation his operation.
- * @return {@code true} if and only if both sets are equivalent.
- */
-@Override
-protected boolean equals(
-    <notnull(C=C)>final <table.name.voName> myValue,
-    <notnull(C=C)>final V24PreparedStatementSetter.Operation myOperation,
-    <notnull(C=C)>final <table.name.voName> hisValue,
-    <notnull(C=C)>final V24PreparedStatementSetter.Operation  hisOperation)
-{
-    return
-           (myOperation.equals(hisOperation))
-        && (myValue.equals(hisValue));
-}
->>
-
 hashCode_method(table, C) ::= <<
 <!
  Generates the hashCode() method.
