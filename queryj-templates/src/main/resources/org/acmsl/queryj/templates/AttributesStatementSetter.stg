@@ -210,6 +210,13 @@ public class <table.name.voName>StatementSetter
         }<
    endif>
         <table.own.minus.externallyManagedAttributes:{ a | <attribute_preparedstatement_specification(attr=a, C=C)>}; separator="\n">
+
+<  if(table.primaryKey)>
+        if (update)
+        {
+            <table.primaryKey:{ a | <attribute_preparedstatement_specification(attr=a, C=C)>}; separator="\n">
+        }<
+   endif>
     }
 
     <equals_method(table=table, C=C)>
