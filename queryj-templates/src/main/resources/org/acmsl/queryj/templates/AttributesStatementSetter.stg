@@ -212,7 +212,7 @@ public class <table.name.voName>StatementSetter
         <table.own.minus.primaryKey:{ a | <attribute_preparedstatement_specification(attr=a, C=C)>}; separator="\n">
 
 <  if(table.primaryKey)>
-        if (operation.equals(V24PreparedStatementSetter.Operation.INSERT))
+        if (operation.equals(V24PreparedStatementSetter.Operation.UPDATE))
         {
             <table.primaryKey:{ a | <attribute_preparedstatement_specification(attr=a, C=C)>}; separator="\n">
         }<
