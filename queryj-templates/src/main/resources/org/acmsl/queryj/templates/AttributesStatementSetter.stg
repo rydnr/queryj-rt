@@ -267,7 +267,7 @@ protected boolean equals(
     <notnull(C=C)>final <table.name.voName> myValue,
     <notnull(C=C)>final V24PreparedStatementSetter.Operation myOperation,
     <notnull(C=C)>final <table.name.voName> hisValue,
-    final V24PreparedStatementSetter.Operation  hisOperation)
+    <notnull(C=C)>final V24PreparedStatementSetter.Operation  hisOperation)
 {
     return
            (myOperation.equals(hisOperation))
