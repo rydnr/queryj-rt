@@ -417,7 +417,7 @@ custom_select(cs, C) ::= <<
 <
 if(cs.resultRef)><
   if(cs.multiple)>
- * @return the <if(cs.multiple){@code <cs.resultClass>} information retrieved.
+ * @return the {@code <cs.resultClass>} information retrieved.
 < else>
  * @return the {@code <cs.resultClass>} information retrieved.
 < endif>
