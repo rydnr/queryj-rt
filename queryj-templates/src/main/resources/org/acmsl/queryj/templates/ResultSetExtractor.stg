@@ -290,7 +290,7 @@ nullable_date_attribute_resultset_retrieval(attr, C) ::= <<
  @param attr the attribute.
  @param C the context.
 !>
-<if(attr.nullable)>new Date(<attr.name.uncapitalized>.getTime())<endif>
+<if(attr.nullable)>(<attr.name.uncapitalized> == null) ? null :new Date(<attr.name.uncapitalized>.getTime())<endif>
 >>
 
 equals_method(table, C) ::= <<
