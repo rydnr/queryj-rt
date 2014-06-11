@@ -416,7 +416,7 @@ custom_select(cs, C) ::= <<
  <cs.parameters:{ p | <parameter_javadoc(parameter=p)>}; separator="\n">
 <
 if(cs.resultRef)><
-  if(cs.multiple)
+  if(cs.multiple)>
 
  * @return the {@code <cs.resultClass>} information retrieved.
 <else>
