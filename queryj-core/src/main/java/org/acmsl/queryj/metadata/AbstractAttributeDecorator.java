@@ -741,7 +741,6 @@ public abstract class AbstractAttributeDecorator
      * Retrieves the primitive type of the attribute, converting to a primitive if possible, even if it's nullable.
      * @param typeId the id of the type.
      * @param type the type.
-     * @param isNullable whether the attribute allows nulls.
      * @param isBool whether is a boolean attribute.
      * @param precision the precision.
      * @param metadataTypeManager the {@link MetadataTypeManager}.
