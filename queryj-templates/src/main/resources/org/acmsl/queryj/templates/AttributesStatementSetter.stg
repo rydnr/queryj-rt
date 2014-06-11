@@ -203,7 +203,7 @@ public class <table.name.voName>StatementSetter
     {
         int index = 1;
 
-<  if(table.externallyManagedAttributes)>
+<  if(table.primaryKey)>
         if (update)
         {
             <table.externallyManagedAttributes:{ a | <attribute_preparedstatement_specification(attr=a, C=C)>}; separator="\n">
