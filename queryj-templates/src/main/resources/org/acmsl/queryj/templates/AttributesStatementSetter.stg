@@ -204,7 +204,7 @@ public class <table.name.voName>StatementSetter
         int index = 1;
 
 <  if(table.primaryKey)>
-        if (operation.equals(V)
+        if (operation.equals(V24PreparedStatementSetter.Operation.)
         {
             <table.primaryKey:{ a | <attribute_preparedstatement_specification(attr=a, C=C)>}; separator="\n">
         }<
