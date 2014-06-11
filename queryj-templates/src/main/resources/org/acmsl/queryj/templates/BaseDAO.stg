@@ -414,7 +414,8 @@ custom_select(cs, C) ::= <<
  * Custom select \<i><cs.id>\</i>:\<br/>
  * \<b><cs.description>\</b>.
  <cs.parameters:{ p | <parameter_javadoc(parameter=p)>}; separator="\n">
-<if(cs.resultRef)>
+<
+if(cs.resultRef)>
 
  * @return the {@code <cs.resultClass>} information retrieved.
 <else>
