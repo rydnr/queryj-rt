@@ -67,11 +67,11 @@ Feature: Classes associated to custom result <result.id> compile
 
   Examples:
     | template                       | output |
-    | CustomValueObjectFactory       | <result.id.voName>Factory.java            |
-    | CustomValueObject              | <result.id.voName>.java                   |
-    | CustomBaseValueObject          | Abstract<result.id.voName>.java           |
-    | CustomValueObjectImpl          | <result.id.voName>Impl.java               |
-    | CustomResultSetSingleExtractor | <result.id.voName>ResultSetSingleExtractor.java  |
+    | CustomValueObjectFactory       | <result.id.voName>Factory.java                    |
+    | CustomValueObject              | <result.id.voName>.java                           |
+    | CustomBaseValueObject          | Abstract<result.id.voName>.java                   |
+    | CustomValueObjectImpl          | <result.id.voName>Impl.java                       |
+    | CustomResultSetSingleExtractor | <result.id.voName>ResultSetSingleExtractor.java   |
     | CustomResultSetSingleExtractor | <result.id.voName>ResultSetMultipleExtractor.java |
 >>
 
