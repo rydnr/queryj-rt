@@ -274,9 +274,9 @@ if(attr.date)
 else><
   if(attr.primitive)><
     if(attr.nullable)
-     ><attr.name.uncapitalized><
+     >(<attr.name.uncapitalized> == null) ? null : <attr.name.uncapitalized><
     else
-     >(<attr.name.uncapitalized> == null) ? null : <attr.objectType>.valueOf(<attr.name.uncapitalized>)<
+     ><attr.objectType>.valueOf(<attr.name.uncapitalized>)<
     endif><
   else
    ><attr.name.uncapitalized><
