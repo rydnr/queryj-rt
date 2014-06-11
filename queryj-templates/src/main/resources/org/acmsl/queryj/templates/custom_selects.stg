@@ -160,7 +160,7 @@ public int <cs.name.uncapitalized>(
     final PreparedStatementCreatorFactory
         preparedStatementCreatorFactory =
             new PreparedStatementCreatorFactory(
-                auditSql(<cs.idAsConstant>_SQL));
+                auditSql(<cs.id.Constant>_SQL));
 <!
     /*
     t_PreparedStatementCreatorFactory.setResultSetType(..);
