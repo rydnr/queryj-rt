@@ -419,6 +419,8 @@ if(cs.resultRef)><
   if(cs.multiple)>
  * @return the {@code <cs.resultClass>} information retrieved.
 < else>
+ * @return the {@code <cs.resultClass>} information retrieved.
+
 <else>
  * @return the {@link <cs.dao.voName>} information retrieved.
 <endif>
