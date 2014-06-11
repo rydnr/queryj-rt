@@ -420,7 +420,7 @@ if(cs.resultRef)><
  * @return the {@code <cs.resultClass>} information retrieved.
 < else>
  * @return the {@code <cs.resultClass>} information retrieved.
-
+< endif>
 <else>
  * @return the {@link <cs.dao.voName>} information retrieved.
 <endif>
