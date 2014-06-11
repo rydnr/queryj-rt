@@ -72,7 +72,7 @@ Feature: Classes associated to custom result <result.id> compile
     | CustomBaseValueObject          | Abstract<result.id.voName>.java                   |
     | CustomValueObjectImpl          | <result.id.voName>Impl.java                       |
     | CustomResultSetSingleExtractor | <result.id.voName>ResultSetSingleExtractor.java   |
-    | CustomResultSetSingleExtractor | <result.id.voName>ResultSetMultipleExtractor.java |
+    | CustomResultSetMultipleExtractor | <result.id.voName>ResultSetMultipleExtractor.java |
 >>
 
 cucumber_property_definition(property) ::= <<
