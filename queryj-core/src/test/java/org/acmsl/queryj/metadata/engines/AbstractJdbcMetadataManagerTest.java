@@ -62,5 +62,8 @@ public class AbstractJdbcMetadataManagerTest
      * if it uses a sequence or not.
      */
     @Test
-    public void cloneAttribute_parses_column_comment
+    public void cloneAttribute_parses_column_comment_looking_for_sequence()
+    {
+        @NotNull final
+    }
 }
