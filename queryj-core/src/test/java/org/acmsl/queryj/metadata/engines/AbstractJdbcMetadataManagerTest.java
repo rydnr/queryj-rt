@@ -73,8 +73,8 @@ public class AbstractJdbcMetadataManagerTest
     {
         @NotNull final AbstractJdbcMetadataManager instance =
             new JdbcMetadataManager(
-        @NotNull final String name,
-        @Nullable final DatabaseMetaData metadata,
+                "name",
+                metadata,
         @NotNull final MetadataExtractionListener metadataExtractionListener,
         @Nullable final String catalog,
         @Nullable final String schema,
