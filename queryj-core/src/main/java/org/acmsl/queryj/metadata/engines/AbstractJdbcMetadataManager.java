@@ -1835,7 +1835,7 @@ public abstract class AbstractJdbcMetadataManager
     @NotNull
     public Attribute<String> cloneAttribute(@NotNull final Attribute<String> attribute)
     {
-        @
+        @Nullable
     }
 
     /**
