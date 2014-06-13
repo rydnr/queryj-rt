@@ -986,6 +986,9 @@ public abstract class AbstractJdbcMetadataManager
         {
             t_strSequence = metaLanguageUtils.retrieveColumnOraseq(t_strComment);
         }
+        else {
+
+        }
 
 
         return
