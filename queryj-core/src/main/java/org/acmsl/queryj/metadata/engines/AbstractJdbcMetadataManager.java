@@ -984,10 +984,11 @@ public abstract class AbstractJdbcMetadataManager
 
         if (t_strComment == null)
         {
-            t_strSequence = metaLanguageUtils.retrieveColumnOraseq(t_strComment);
+            t_strSequence = null;
         }
-        else {
-
+        else
+        {
+            t_strSequence = metaLanguageUtils.retrieveColumnOraseq(t_strComment);
         }
 
 
