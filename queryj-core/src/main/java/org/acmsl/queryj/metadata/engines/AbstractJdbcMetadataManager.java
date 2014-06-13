@@ -1828,6 +1828,17 @@ public abstract class AbstractJdbcMetadataManager
     }
 
     /**
+     * Clones given attribute.
+     * @param attribute the {@link Attribute} to clone.
+     * @return the cloned attribute.
+     */
+    @NotNull
+    public Attribute<String> cloneAttribute(@NotNull final Attribute<String> attribute)
+    {
+        return null;  //To change body of created methods use File | Settings | File Templates.
+    }
+
+    /**
      * Checks whether given exception identifies an "Invalid column name".
      * @param exception the exception.
      * @return {@code true} in such case.
