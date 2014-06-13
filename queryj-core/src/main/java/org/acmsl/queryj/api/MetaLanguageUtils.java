@@ -605,7 +605,8 @@ public class MetaLanguageUtils
      * @return the sequence name, or {@code null} otherwise.
      */
     @SuppressWarnings("unused")
-    public boolean retrieveColumnSequence(@NotNull final String columnComment)
+    @Nullable
+    public String retrieveColumnSequence(@NotNull final String columnComment)
     {
         boolean result = false;
 
