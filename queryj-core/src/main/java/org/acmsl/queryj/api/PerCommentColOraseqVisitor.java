@@ -39,6 +39,7 @@ package org.acmsl.queryj.api;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.tools.antlr.PerCommentBaseVisitor;
+import org.acmsl.queryj.tools.antlr.PerCommentParser.ColOraseqContext;
 import org.acmsl.queryj.tools.antlr.PerCommentParser.ColReadonlyContext;
 import org.jetbrains.annotations.NotNull;
 
