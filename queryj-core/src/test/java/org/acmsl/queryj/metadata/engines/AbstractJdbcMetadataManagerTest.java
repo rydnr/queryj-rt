@@ -75,7 +75,7 @@ public class AbstractJdbcMetadataManagerTest
             new JdbcMetadataManager(
                 "name",
                 metadata,
-        @NotNull final MetadataExtractionListener metadataExtractionListener,
+                metadataExtractionListener,
         @Nullable final String catalog,
         @Nullable final String schema,
         @NotNull final List<String> tableNames,
