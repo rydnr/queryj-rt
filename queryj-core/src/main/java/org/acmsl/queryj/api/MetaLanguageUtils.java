@@ -606,7 +606,7 @@ public class MetaLanguageUtils
      * @return such condition.
      */
     @SuppressWarnings("unused")
-    public boolean retrieveColumnReadOnly(@NotNull final String columnComment)
+    public boolean retrieveColumnSequence(@NotNull final String columnComment)
     {
         boolean result = false;
 
