@@ -1770,7 +1770,7 @@ public abstract class AbstractJdbcMetadataManager
             underlying = underlying.getCause();
         }
 
-        if (underlying instanceof SQLException)
+        if (underlying != null)
         {
             result = (SQLException) underlying;
         }
