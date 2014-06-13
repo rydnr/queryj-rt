@@ -88,7 +88,9 @@ public class PerCommentColOraseqVisitor
             }
             else
             {
-                @Nullable final String result = secondChild.getText();
+                @Nullable final String text = secondChild.getText();
+
+                if (text != )
             }
         }
         else
