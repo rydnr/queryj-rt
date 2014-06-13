@@ -75,7 +75,7 @@ public class AbstractJdbcMetadataManagerTest
     public void cloneAttribute_parses_column_comment_looking_for_sequence()
     {
         @NotNull final DatabaseMetaData metadata = EasyMock.createNiceMock(DatabaseMetaData.class);
-        @NotNull final MetadataExtractionListener metadataExtractionListener = EasyMock.createNiceMock()
+        @NotNull final MetadataExtractionListener metadataExtractionListener = EasyMock.createNiceMock(MetadataExtractionListener.class);
         @NotNull final AbstractJdbcMetadataManager instance =
             new JdbcMetadataManager(
                 "name",
