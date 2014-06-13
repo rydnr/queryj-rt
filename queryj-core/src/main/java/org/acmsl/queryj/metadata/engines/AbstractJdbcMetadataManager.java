@@ -1004,7 +1004,7 @@ public abstract class AbstractJdbcMetadataManager
                 attribute.getPrecision(),
                 attribute.getKeyword(),
                 attribute.getRetrievalQuery(),
-                attribute.getSequence(),
+                t_strSequence,
                 attribute.isNullable(),
                 attribute.getValue(),
                 attribute.isBoolean(),
