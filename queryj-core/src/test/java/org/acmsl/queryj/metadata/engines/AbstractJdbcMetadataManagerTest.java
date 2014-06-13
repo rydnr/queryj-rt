@@ -77,6 +77,7 @@ public class AbstractJdbcMetadataManagerTest
         @NotNull final DatabaseMetaData metadata = EasyMock.createNiceMock(DatabaseMetaData.class);
         @NotNull final MetadataExtractionListener metadataExtractionListener =
             EasyMock.createNiceMock(MetadataExtractionListener.class);
+
         @NotNull final AbstractJdbcMetadataManager instance =
             new JdbcMetadataManager(
                 "name",
