@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Visits colOraseq rules in PerComment.g4 grammar.
  *
  * Date: 2014/06/13
  * Time: 19:57
