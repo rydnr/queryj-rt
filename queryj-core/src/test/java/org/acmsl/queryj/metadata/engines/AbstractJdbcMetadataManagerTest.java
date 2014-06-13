@@ -103,6 +103,7 @@ public class AbstractJdbcMetadataManagerTest
                 "The pk of the table. @oraseq MYSEQ",
                 1,
                 10,
+                1,
                 false,
                 null);
     }
