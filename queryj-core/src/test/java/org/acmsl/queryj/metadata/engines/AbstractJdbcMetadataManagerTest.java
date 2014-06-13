@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for AbstractJdbcMetadataManager.
  *
  * Date: 2014/06/13
  * Time: 19:40
