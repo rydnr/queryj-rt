@@ -98,7 +98,7 @@ public class AbstractJdbcMetadataManagerTest
             new AttributeIncompleteValueObject(
                 "name",
                 Types.BIGINT,
-
+                "table",
             )
     }
 }
