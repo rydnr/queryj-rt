@@ -70,7 +70,7 @@ public class PerCommentColOraseqVisitor
     {
         @Nullable String result;
 
-        @Nullable context.getChild(2).getText();
+        @Nullable ParseTree context.getChild(2).getText();
     }
 }
 
