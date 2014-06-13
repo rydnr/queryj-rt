@@ -643,7 +643,9 @@ public class MetaLanguageUtils
         return result;
     }
 
-
+    /**
+     * {@inheritDoc}
+     */
     @Override
     @NotNull
     public String toString()
