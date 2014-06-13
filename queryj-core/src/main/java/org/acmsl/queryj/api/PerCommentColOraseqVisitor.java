@@ -75,7 +75,21 @@ public class PerCommentColOraseqVisitor
         {
             @Nullable final ParseTree secondChild = context.getChild(2);
 
-            result =
+            if (secondChild == null)
+            {
+                result = null;
+            }
+            else
+            {
+                result = secondChild.getText();
+            }
+        }
+        else
+        {
+            result = null;
+        }
+
+        return result;
     }
 }
 
