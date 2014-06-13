@@ -983,7 +983,7 @@ public abstract class AbstractJdbcMetadataManager
         @Nullable final String t_strComment = attribute.getComment();
 
         new AttributeValueObject(
-            t_Attribute.getName(),
+            attribute.getName(),
             t_Attribute.getTypeId(),
             t_Attribute.getType(),
             t_Attribute.getTableName(),
