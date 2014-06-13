@@ -600,8 +600,7 @@ public class MetaLanguageUtils
     }
 
     /**
-     * Retrieves whether the column is meant to be read-only from the
-     * Java side (i.e. a last-modified or creation-date timestamp).
+     * Retrieves whether the column is bound to a sequence.
      * @param columnComment the column comment.
      * @return such condition.
      */
