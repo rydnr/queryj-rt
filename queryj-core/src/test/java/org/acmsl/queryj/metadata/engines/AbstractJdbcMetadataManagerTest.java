@@ -92,6 +92,6 @@ public class AbstractJdbcMetadataManagerTest
                 true, // final boolean caseSensitive,
                 new OracleEngine("12"));
 
-        @NotNull final
+        @NotNull final Attribute<String>
     }
 }
