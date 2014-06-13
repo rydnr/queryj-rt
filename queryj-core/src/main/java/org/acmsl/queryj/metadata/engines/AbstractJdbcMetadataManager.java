@@ -954,6 +954,27 @@ public abstract class AbstractJdbcMetadataManager
     }
 
     /**
+     * Clones given attributes.
+     * @param attributes the attributes to clone.
+     * @return such attributes.
+     */
+    @NotNull
+    protected List<Attribute<String>> cloneAttributes(@NotNull final List<Attribute<String>> attributes)
+    {
+        @NotNull final List<Attribute<String>> result = new ArrayList<>(attributes.size());
+
+        for (@Nullable final Attribute<String> t_Attribute : attributes)
+        {
+            if (t_Attribute != null)
+            {
+                result.add(cloneAttribute(t_Attribute));
+            }
+        }
+
+        return result;
+    }
+
+    /**
      * Clones given attribute.
      * @param attribute the {@link Attribute} to clone.
      * @return the cloned attribute.
