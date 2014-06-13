@@ -78,7 +78,7 @@ public class PerCommentColOraseqVisitor
     {
         @Nullable final String result;
 
-        if (context.getChildCount() > 1)
+        if (context.getChildCount() > 0)
         {
             @Nullable final ParseTree secondChild = context.getChild(1);
 
