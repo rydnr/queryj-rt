@@ -91,5 +91,7 @@ public class AbstractJdbcMetadataManagerTest
                 true, // final boolean lazyTableExtraction,
                 true, // final boolean caseSensitive,
                 new OracleEngine("12"));
+
+        @NotNull final
     }
 }
