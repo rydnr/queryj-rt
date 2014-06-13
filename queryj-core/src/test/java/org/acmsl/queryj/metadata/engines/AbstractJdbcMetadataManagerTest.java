@@ -94,6 +94,8 @@ public class AbstractJdbcMetadataManagerTest
                 new OracleEngine("12"));
 
         @NotNull final Attribute<String> attribute =
-            new AttributeIncompleteValueObject()
+            new AttributeIncompleteValueObject(
+                "name"
+            )
     }
 }
