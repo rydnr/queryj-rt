@@ -617,7 +617,7 @@ public class MetaLanguageUtils
 
                 @NotNull final ParseTree tree = t_Parser.columnComment();
 
-                @NotNull final PerCommentVisitor<Boolean> visitor = new PerCommentColOraseqVisitor();
+                @NotNull final PerCommentVisitor<String> visitor = new PerCommentColOraseqVisitor();
 
                 @Nullable final String resultValue = visitor.visit(tree);
 
