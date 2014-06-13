@@ -59,7 +59,7 @@ public class AbstractJdbcMetadataManagerTest
 {
     /**
      * Checks whether cloneAttribute() parses the column comment to check
-     * if it uses a
+     * if it uses a sequence or not.
      */
     @Test
     public void cloneAttribute_parses_column_comment
