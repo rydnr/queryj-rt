@@ -946,7 +946,7 @@ public abstract class AbstractJdbcMetadataManager
     /**
      * Clones given attributes.
      * @param attributes the attributes to clone.
-     * @param metalanguageUtils the {@link MetaLanguageUtils} instance.
+     * @param metaLanguageUtils the {@link MetaLanguageUtils} instance.
      * @return such attributes.
      */
     @NotNull
