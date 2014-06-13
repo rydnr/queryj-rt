@@ -941,22 +941,12 @@ public abstract class AbstractJdbcMetadataManager
     protected List<Attribute<String>> cloneAttributes(@NotNull final List<Attribute<String>> attributes)
     {
         return cloneAttributes(attributes, MetaLanguageUtils.getInstance());
-        @NotNull final List<Attribute<String>> result = new ArrayList<>(attributes.size());
-
-        for (@Nullable final Attribute<String> t_Attribute : attributes)
-        {
-            if (t_Attribute != null)
-            {
-                result.add(cloneAttribute(t_Attribute));
-            }
-        }
-
-        return result;
     }
 
     /**
      * Clones given attributes.
      * @param attributes the attributes to clone.
+     * @param metalanguageUtils the {@link MetaLanguageUtils} instance.
      * @return such attributes.
      */
     @NotNull
