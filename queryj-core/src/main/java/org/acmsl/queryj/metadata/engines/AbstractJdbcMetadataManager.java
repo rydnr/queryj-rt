@@ -960,7 +960,7 @@ public abstract class AbstractJdbcMetadataManager
         {
             if (t_Attribute != null)
             {
-                result.add(cloneAttribute(t_Attribute));
+                result.add(cloneAttribute(t_Attribute, metaLanguageUtils));
             }
         }
 
