@@ -69,7 +69,7 @@ public class PerCommentColOraseqVisitor
     @Override
     public String visitColOraseq(@NotNull final ColOraseqContext context)
     {
-        @Nullable String result;
+        @Nullable final String result;
 
         if (context.getChildCount() > 1)
         {
