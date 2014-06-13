@@ -58,7 +58,8 @@ import org.junit.runners.JUnit4;
 public class AbstractJdbcMetadataManagerTest
 {
     /**
-     * Checks whether cloneAttribute() parses the column comment or not.
+     * Checks whether cloneAttribute() parses the column comment to check
+     * if it uses a
      */
     @Test
     public void cloneAttribute_parses_column_comment
