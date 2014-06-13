@@ -980,7 +980,8 @@ public abstract class AbstractJdbcMetadataManager
     {
         @Nullable final String t_strComment = attribute.getComment();
 
-        @Nullable final String t_strSequence = metaLanguageUtils.retrieveColumnOraseq(t_strComment)
+        if (t_strComment != null)
+        @Nullable final String t_strSequence = metaLanguageUtils.retrieveColumnOraseq(t_strComment);
 
 
         return
