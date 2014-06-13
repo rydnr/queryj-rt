@@ -950,7 +950,9 @@ public abstract class AbstractJdbcMetadataManager
      * @return such attributes.
      */
     @NotNull
-    protected List<Attribute<String>> cloneAttributes(@NotNull final List<Attribute<String>> attributes)
+    protected List<Attribute<String>> cloneAttributes(
+        @NotNull final List<Attribute<String>> attributes,
+        @NotNull final MetaLanguageUtils metaLanguageUtils)
     {
         @NotNull final List<Attribute<String>> result = new ArrayList<>(attributes.size());
 
