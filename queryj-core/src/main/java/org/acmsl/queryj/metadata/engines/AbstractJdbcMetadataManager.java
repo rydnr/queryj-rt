@@ -984,9 +984,9 @@ public abstract class AbstractJdbcMetadataManager
 
         new AttributeValueObject(
             attribute.getName(),
-            ttribute.getTypeId(),
-            ttribute.getType(),
-            ttribute.getTableName(),
+            attribute.getTypeId(),
+            attribute.getType(),
+            attribute.getTableName(),
             ttribute.getComment(),
             ttribute.getOrdinalPosition(),
             ttribute.getLength(),
