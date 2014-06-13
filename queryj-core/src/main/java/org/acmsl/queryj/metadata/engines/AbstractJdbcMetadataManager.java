@@ -984,23 +984,23 @@ public abstract class AbstractJdbcMetadataManager
 
         new AttributeValueObject(
             attribute.getName(),
-            t_Attribute.getTypeId(),
-            t_Attribute.getType(),
-            t_Attribute.getTableName(),
-            t_Attribute.getComment(),
-            t_Attribute.getOrdinalPosition(),
-            t_Attribute.getLength(),
-            t_Attribute.getPrecision(),
-            t_Attribute.getKeyword(),
-            t_Attribute.getRetrievalQuery(),
-            t_Attribute.getSequence(),
-            t_Attribute.isNullable(),
-            t_Attribute.getValue(),
-            t_Attribute.isBoolean(),
-            t_Attribute.isReadOnly(),
-            t_Attribute.getBooleanTrue(),
-            t_Attribute.getBooleanFalse(),
-            t_Attribute.getBooleanNull()));
+            ttribute.getTypeId(),
+            ttribute.getType(),
+            ttribute.getTableName(),
+            ttribute.getComment(),
+            ttribute.getOrdinalPosition(),
+            ttribute.getLength(),
+            ttribute.getPrecision(),
+            ttribute.getKeyword(),
+            ttribute.getRetrievalQuery(),
+            ttribute.getSequence(),
+            ttribute.isNullable(),
+            ttribute.getValue(),
+            ttribute.isBoolean(),
+            ttribute.isReadOnly(),
+            ttribute.getBooleanTrue(),
+            ttribute.getBooleanFalse(),
+            ttribute.getBooleanNull()));
 
     }
 
