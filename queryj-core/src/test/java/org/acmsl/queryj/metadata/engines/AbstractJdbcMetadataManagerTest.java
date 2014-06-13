@@ -80,8 +80,8 @@ public class AbstractJdbcMetadataManagerTest
                 null, //catalog,
                 null, //schema,
                 new ArrayList<String>(0),
-                new ArrayList<Table<String, Attribute<String>, List<Attribute<String>>>> tables,
-        final boolean disableTableExtraction,
+                new ArrayList<Table<String, Attribute<String>, List<Attribute<String>>>>(0),
+                final boolean disableTableExtraction,
         final boolean lazyTableExtraction,
         final boolean caseSensitive,
         @NotNull final Engine<String> engine)
