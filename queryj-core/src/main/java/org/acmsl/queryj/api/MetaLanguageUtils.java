@@ -599,6 +599,51 @@ public class MetaLanguageUtils
         return result;
     }
 
+    /**
+     * Retrieves whether the column is meant to be read-only from the
+     * Java side (i.e. a last-modified or creation-date timestamp).
+     * @param columnComment the column comment.
+     * @return such condition.
+     */
+    @SuppressWarnings("unused")
+    public boolean retrieveColumnReadOnly(@NotNull final String columnComment)
+    {
+        boolean result = false;
+
+        if  (!isEmpty(columnComment))
+        {
+            try
+            {
+                @NotNull final PerCommentParser t_Parser = setUpParser(columnComment);
+
+                @NotNull final ParseTree tree = t_Parser.columnComment();
+
+                @NotNull final PerCommentVisitor<Boolean> visitor = new PerCommentColReadonlyVisitor();
+
+                @Nullable final Boolean resultValue = visitor.visit(tree);
+
+                if (resultValue != null)
+                {
+                    result = resultValue;
+                }
+            }
+            catch  (@NotNull final RecognitionException recognitionException)
+            {
+                @Nullable final Log t_Log = UniqueLogFactory.getLog(MetaLanguageUtils.class);
+
+                if  (t_Log != null)
+                {
+                    t_Log.error(
+                        Literals.INVALID_COLUMN_COMMENT + columnComment,
+                        recognitionException);
+                }
+            }
+        }
+
+        return result;
+    }
+
+
     @Override
     @NotNull
     public String toString()
