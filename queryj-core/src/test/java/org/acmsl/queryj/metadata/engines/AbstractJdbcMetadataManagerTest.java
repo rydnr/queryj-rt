@@ -103,6 +103,6 @@ public class AbstractJdbcMetadataManagerTest
                 1,
                 10,
                 false,
-            )
+                null);
     }
 }
