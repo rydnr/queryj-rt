@@ -608,7 +608,7 @@ public class MetaLanguageUtils
     @Nullable
     public String retrieveColumnSequence(@NotNull final String columnComment)
     {
-        @Nullable String result;
+        @Nullable String result = null;
 
         if  (!isEmpty(columnComment))
         {
