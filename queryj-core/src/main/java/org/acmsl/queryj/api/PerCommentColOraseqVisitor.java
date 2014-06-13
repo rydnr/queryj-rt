@@ -41,6 +41,7 @@ package org.acmsl.queryj.api;
 import org.acmsl.queryj.tools.antlr.PerCommentBaseVisitor;
 import org.acmsl.queryj.tools.antlr.PerCommentParser.ColOraseqContext;
 import org.acmsl.queryj.tools.antlr.PerCommentParser.ColReadonlyContext;
+import org.antlr.v4.runtime.tree.ParseTree;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -70,7 +71,7 @@ public class PerCommentColOraseqVisitor
     {
         @Nullable String result;
 
-        @Nullable ParseTree context.getChild(2).getText();
+        @Nullable ParseTree context.getChild(2);
     }
 }
 
