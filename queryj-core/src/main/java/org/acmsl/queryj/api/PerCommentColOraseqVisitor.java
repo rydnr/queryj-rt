@@ -55,7 +55,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class PerCommentColOraseqVisitor
-    extends PerCommentBaseVisitor<Boolean>
+    extends PerCommentBaseVisitor<String>
 {
     /**
      * Visits the parser tree within the <pre>colReadonly</pre> rule.
