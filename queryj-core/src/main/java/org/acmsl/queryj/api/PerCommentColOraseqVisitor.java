@@ -67,7 +67,7 @@ public class PerCommentColOraseqVisitor
     @Override
     public String visitColOraseq(@NotNull final ColOraseqContext context)
     {
-        return context.READONLY() != null;
+        return context.getText();
     }
 }
 
