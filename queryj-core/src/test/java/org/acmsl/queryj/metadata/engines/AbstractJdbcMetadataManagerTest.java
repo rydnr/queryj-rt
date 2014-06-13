@@ -72,7 +72,7 @@ public class AbstractJdbcMetadataManagerTest
     public void cloneAttribute_parses_column_comment_looking_for_sequence()
     {
         @NotNull final AbstractJdbcMetadataManager instance =
-            new JdbcMetadataManager()
+            new JdbcMetadataManager(
         @NotNull final String name,
         @Nullable final DatabaseMetaData metadata,
         @NotNull final MetadataExtractionListener metadataExtractionListener,
