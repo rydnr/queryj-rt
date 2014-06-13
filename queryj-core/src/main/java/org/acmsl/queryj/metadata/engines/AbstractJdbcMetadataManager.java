@@ -983,25 +983,25 @@ public abstract class AbstractJdbcMetadataManager
         @Nullable final String t_strComment = attribute.getComment();
 
         return
-        new AttributeValueObject(
-            attribute.getName(),
-            attribute.getTypeId(),
-            attribute.getType(),
-            attribute.getTableName(),
-            attribute.getComment(),
-            attribute.getOrdinalPosition(),
-            attribute.getLength(),
-            attribute.getPrecision(),
-            attribute.getKeyword(),
-            attribute.getRetrievalQuery(),
-            attribute.getSequence(),
-            attribute.isNullable(),
-            attribute.getValue(),
-            attribute.isBoolean(),
-            attribute.isReadOnly(),
-            attribute.getBooleanTrue(),
-            attribute.getBooleanFalse(),
-            attribute.getBooleanNull()));
+            new AttributeValueObject(
+                attribute.getName(),
+                attribute.getTypeId(),
+                attribute.getType(),
+                attribute.getTableName(),
+                attribute.getComment(),
+                attribute.getOrdinalPosition(),
+                attribute.getLength(),
+                attribute.getPrecision(),
+                attribute.getKeyword(),
+                attribute.getRetrievalQuery(),
+                attribute.getSequence(),
+                attribute.isNullable(),
+                attribute.getValue(),
+                attribute.isBoolean(),
+                attribute.isReadOnly(),
+                attribute.getBooleanTrue(),
+                attribute.getBooleanFalse(),
+                attribute.getBooleanNull());
 
     }
 
