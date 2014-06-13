@@ -38,6 +38,8 @@ package org.acmsl.queryj.api;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.tools.antlr.PerCommentBaseVisitor;
+import org.acmsl.queryj.tools.antlr.PerCommentParser.ColReadonlyContext;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -53,5 +55,18 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class PerCommentColOraseqVisitor
+    extends PerCommentBaseVisitor<Boolean>
 {
+    /**
+     * Visits the parser tree within the <pre>colReadonly</pre> rule.
+     * @param context the parse context.
+     * @return {@code true} if the comment declares the column is read-only.
+     */
+    @NotNull
+    @Override
+    public Boolean visitColReadonly(@NotNull final ColReadonlyContext context)
+    {
+        return context.READONLY() != null;
+    }
 }
+
