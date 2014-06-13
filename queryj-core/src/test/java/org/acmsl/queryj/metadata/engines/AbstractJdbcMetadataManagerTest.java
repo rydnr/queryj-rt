@@ -53,6 +53,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 import java.sql.DatabaseMetaData;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -78,7 +79,7 @@ public class AbstractJdbcMetadataManagerTest
                 metadataExtractionListener,
                 null, //catalog,
                 null, //schema,
-                tableNames,
+                new ArrayList<String>(0),
         @NotNull final List<Table<String, Attribute<String>, List<Attribute<String>>>> tables,
         final boolean disableTableExtraction,
         final boolean lazyTableExtraction,
