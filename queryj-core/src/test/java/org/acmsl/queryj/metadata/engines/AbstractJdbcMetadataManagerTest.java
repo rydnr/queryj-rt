@@ -38,15 +38,22 @@ package org.acmsl.queryj.metadata.engines;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.metadata.MetadataExtractionListener;
+import org.acmsl.queryj.metadata.vo.Attribute;
+import org.acmsl.queryj.metadata.vo.Table;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+
+import java.sql.DatabaseMetaData;
+import java.util.List;
 
 /**
  *
@@ -66,5 +73,16 @@ public class AbstractJdbcMetadataManagerTest
     {
         @NotNull final AbstractJdbcMetadataManager instance =
             new JdbcMetadataManager()
+        @NotNull final String name,
+        @Nullable final DatabaseMetaData metadata,
+        @NotNull final MetadataExtractionListener metadataExtractionListener,
+        @Nullable final String catalog,
+        @Nullable final String schema,
+        @NotNull final List<String> tableNames,
+        @NotNull final List<Table<String, Attribute<String>, List<Attribute<String>>>> tables,
+        final boolean disableTableExtraction,
+        final boolean lazyTableExtraction,
+        final boolean caseSensitive,
+        @NotNull final Engine<String> engine)
     }
 }
