@@ -95,7 +95,7 @@ public class AbstractJdbcMetadataManagerTest
 
         @NotNull final Attribute<String> attribute =
             new AttributeIncompleteValueObject(
-                "name"
+                "name",
 
             )
     }
