@@ -946,7 +946,7 @@ public abstract class AbstractJdbcMetadataManager
         {
             if (t_Attribute != null)
             {
-                result.add(cloneAttribute()
+                result.add(cloneAttribute(t_Attribute)
                     new AttributeValueObject(
                         t_Attribute.getName(),
                         t_Attribute.getTypeId(),
