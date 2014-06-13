@@ -80,7 +80,7 @@ public class AbstractJdbcMetadataManagerTest
                 metadataExtractionListener,
                 null, //catalog,
                 null, //schema,
-                new ArrayList<String>(0),
+                new ArrayList<>(0),
                 new ArrayList<Table<String, Attribute<String>, List<Attribute<String>>>>(0),
                 true, // disableTableExtraction,
                 true, // final boolean lazyTableExtraction,
