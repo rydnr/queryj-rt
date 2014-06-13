@@ -1865,4 +1865,8 @@ public abstract class AbstractJdbcMetadataManager
             + ", \"engine\": " + m__Engine
             + " }";
     }
+
+    public Attribute<String> cloneAttribute(final Attribute<String> attribute)
+    {
+    }
 }
