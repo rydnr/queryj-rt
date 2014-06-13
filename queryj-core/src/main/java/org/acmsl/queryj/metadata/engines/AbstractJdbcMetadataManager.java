@@ -973,7 +973,9 @@ public abstract class AbstractJdbcMetadataManager
      * @return the cloned attribute.
      */
     @NotNull
-    public Attribute<String> cloneAttribute(@NotNull final Attribute<String> attribute)
+    public Attribute<String> cloneAttribute(
+        @NotNull final Attribute<String> attribute,
+        @NotNull final MetaLanguageUtils metaLanguageUtils)
     {
         @Nullable final String t_strComment = attribute.getComment();
 
