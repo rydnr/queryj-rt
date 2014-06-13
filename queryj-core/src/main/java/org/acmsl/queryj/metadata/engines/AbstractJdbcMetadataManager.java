@@ -980,6 +980,8 @@ public abstract class AbstractJdbcMetadataManager
     {
         @Nullable final String t_strComment = attribute.getComment();
 
+        @Nullable final String t_strSequence = attribute.getSequence();
+
 
         return
             new AttributeValueObject(
