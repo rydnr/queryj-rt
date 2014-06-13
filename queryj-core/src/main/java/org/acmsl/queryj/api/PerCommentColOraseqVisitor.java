@@ -41,13 +41,16 @@ package org.acmsl.queryj.api;
 import org.acmsl.queryj.tools.antlr.PerCommentBaseVisitor;
 import org.acmsl.queryj.tools.antlr.PerCommentParser.ColOraseqContext;
 
-/
+/*
+ * Importing ANTLR classes.
+ */
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
+import org.antlr.v4.runtime.tree.ParseTree;
 import org.checkthread.annotations.ThreadSafe;
 import org.jetbrains.annotations.Nullable;
 
