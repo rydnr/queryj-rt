@@ -606,7 +606,7 @@ public class MetaLanguageUtils
      */
     @SuppressWarnings("unused")
     @Nullable
-    public String retrieveColumnSequence(@NotNull final String columnComment)
+    public String retrieveColumnOraseq(@NotNull final String columnComment)
     {
         @Nullable String result = null;
 
