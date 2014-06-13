@@ -1002,7 +1002,6 @@ public abstract class AbstractJdbcMetadataManager
                 attribute.getBooleanTrue(),
                 attribute.getBooleanFalse(),
                 attribute.getBooleanNull());
-
     }
 
     /**
