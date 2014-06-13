@@ -1835,7 +1835,7 @@ public abstract class AbstractJdbcMetadataManager
     @NotNull
     public Attribute<String> cloneAttribute(@NotNull final Attribute<String> attribute)
     {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        @
     }
 
     /**
