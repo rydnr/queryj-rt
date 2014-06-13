@@ -56,6 +56,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 import java.sql.DatabaseMetaData;
+import java.sql.Types;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -96,6 +97,7 @@ public class AbstractJdbcMetadataManagerTest
         @NotNull final Attribute<String> attribute =
             new AttributeIncompleteValueObject(
                 "name",
+                Types.BIGINT,
 
             )
     }
