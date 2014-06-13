@@ -619,7 +619,7 @@ public class MetaLanguageUtils
 
                 @NotNull final PerCommentVisitor<Boolean> visitor = new PerCommentColOraseqVisitor();
 
-                @Nullable final Boolean resultValue = visitor.visit(tree);
+                @Nullable final String resultValue = visitor.visit(tree);
 
                 if (resultValue != null)
                 {
