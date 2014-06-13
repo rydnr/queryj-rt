@@ -78,7 +78,7 @@ public class AbstractJdbcMetadataManagerTest
                 metadataExtractionListener,
                 null, //catalog,
                 null, //schema,
-            @NotNull final List<String> tableNames,
+                tableNames,
         @NotNull final List<Table<String, Attribute<String>, List<Attribute<String>>>> tables,
         final boolean disableTableExtraction,
         final boolean lazyTableExtraction,
