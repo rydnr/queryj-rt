@@ -84,6 +84,6 @@ public class AbstractJdbcMetadataManagerTest
                 true, // disableTableExtraction,
                 true, // final boolean lazyTableExtraction,
                 true, // final boolean caseSensitive,
-                @NotNull final Engine<String> engine)
+                Engine.@NotNull final Engine<String> engine)
     }
 }
