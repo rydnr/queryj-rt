@@ -1868,8 +1868,8 @@ public abstract class AbstractJdbcMetadataManager
 
     /**
      * Clones given attribute.
-     * @param attribute the {@link Attribute}
-     * @return
+     * @param attribute the {@link Attribute} to clone.
+     * @return the cloned attribute.
      */
     public Attribute<String> cloneAttribute(@NotNull final Attribute<String> attribute)
     {
