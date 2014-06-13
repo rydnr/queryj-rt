@@ -99,6 +99,7 @@ public class AbstractJdbcMetadataManagerTest
                 "name",
                 Types.BIGINT,
                 "table",
+                "The px of the table. @oraseq "
             )
     }
 }
