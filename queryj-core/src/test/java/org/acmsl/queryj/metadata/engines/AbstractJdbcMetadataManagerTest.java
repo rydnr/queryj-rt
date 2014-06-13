@@ -41,6 +41,7 @@ package org.acmsl.queryj.metadata.engines;
 import org.acmsl.queryj.metadata.MetadataExtractionListener;
 import org.acmsl.queryj.metadata.engines.oracle.OracleEngine;
 import org.acmsl.queryj.metadata.vo.Attribute;
+import org.acmsl.queryj.metadata.vo.AttributeIncompleteValueObject;
 import org.acmsl.queryj.metadata.vo.Table;
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
@@ -92,6 +93,7 @@ public class AbstractJdbcMetadataManagerTest
                 true, // final boolean caseSensitive,
                 new OracleEngine("12"));
 
-        @NotNull final Attribute<String>
+        @NotNull final Attribute<String> attribute =
+            new AttributeIncompleteValueObject()
     }
 }
