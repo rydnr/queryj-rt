@@ -39,6 +39,7 @@ package org.acmsl.queryj.metadata.engines;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.metadata.MetadataExtractionListener;
+import org.acmsl.queryj.metadata.engines.oracle.OracleEngine;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.Table;
 import org.jetbrains.annotations.NotNull;
@@ -84,6 +85,6 @@ public class AbstractJdbcMetadataManagerTest
                 true, // disableTableExtraction,
                 true, // final boolean lazyTableExtraction,
                 true, // final boolean caseSensitive,
-                Engine.@NotNull final Engine<String> engine)
+                new OracleEngine()
     }
 }
