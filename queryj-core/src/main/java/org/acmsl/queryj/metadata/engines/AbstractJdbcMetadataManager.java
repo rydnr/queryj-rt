@@ -973,6 +973,19 @@ public abstract class AbstractJdbcMetadataManager
     }
 
     /**
+     * Clones given attribute.
+     * @param attribute the {@link Attribute} to clone.
+     * @return the cloned attribute.
+     */
+    @NotNull
+    public Attribute<String> cloneAttribute(@NotNull final Attribute<String> attribute)
+    {
+        @Nullable final String t_strComment = attribute.getComment();
+
+
+    }
+
+    /**
      * Clones given foreign keys.
      * @param foreignKeys the {@link org.acmsl.queryj.metadata.vo.AbstractForeignKey foreign keys}.
      * @return the cloned foreign keys.
