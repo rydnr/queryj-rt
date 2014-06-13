@@ -112,8 +112,9 @@ public class AbstractJdbcMetadataManagerTest
         @NotNull final Attribute<String> clonedAttribute =
             instance.cloneAttribute(attribute, MetaLanguageUtils.getInstance());
 
-        @NotNull final String sequence = clonedAttribute.getSequence();
+        @Nullable final String sequence = clonedAttribute.getSequence();
 
+        Assert.assertNotNull();
         Assert.assertEquals("MYSEQ", sequence);
     }
 }
