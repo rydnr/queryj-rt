@@ -38,6 +38,7 @@ package org.acmsl.queryj.metadata.engines;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.api.MetaLanguageUtils;
 import org.acmsl.queryj.metadata.MetadataExtractionListener;
 import org.acmsl.queryj.metadata.engines.oracle.OracleEngine;
 import org.acmsl.queryj.metadata.vo.Attribute;
@@ -109,7 +110,7 @@ public class AbstractJdbcMetadataManagerTest
                 null);
 
         @NotNull final Attribute<String> clonedAttribute =
-            instance.cloneAttribute(attribute);
+            instance.cloneAttribute(attribute, MetaLanguageUtils.getInstance());
 
         @NotNull final String sequence = clonedAttribute.getSequence();
 
