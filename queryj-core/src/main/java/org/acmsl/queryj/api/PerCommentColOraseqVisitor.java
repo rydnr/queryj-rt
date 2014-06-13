@@ -90,7 +90,14 @@ public class PerCommentColOraseqVisitor
             {
                 @Nullable final String text = secondChild.getText();
 
-                if (text != )
+                if (text == null)
+                {
+                    result = null;
+                }
+                else
+                {
+                    result = text.toString().trim();
+                }
             }
         }
         else
