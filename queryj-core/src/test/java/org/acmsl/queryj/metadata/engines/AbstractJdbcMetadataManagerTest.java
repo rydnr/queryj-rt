@@ -44,6 +44,7 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
@@ -57,6 +58,8 @@ import org.junit.runners.JUnit4;
 public class AbstractJdbcMetadataManagerTest
 {
     /**
-     * Checks whether cloneAttribute() parses the
+     * Checks whether cloneAttribute() parses the column comment or not.
      */
+    @Test
+    public void cloneAttribute_parses_column_comment
 }
