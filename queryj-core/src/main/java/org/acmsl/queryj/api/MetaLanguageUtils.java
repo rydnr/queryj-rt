@@ -602,7 +602,7 @@ public class MetaLanguageUtils
     /**
      * Retrieves whether the column is bound to a sequence.
      * @param columnComment the column comment.
-     * @return such condition.
+     * @return the sequence name, or {@code null} otherwise.
      */
     @SuppressWarnings("unused")
     public boolean retrieveColumnSequence(@NotNull final String columnComment)
