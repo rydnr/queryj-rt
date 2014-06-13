@@ -100,7 +100,8 @@ public class AbstractJdbcMetadataManagerTest
                 Types.BIGINT,
                 "table",
                 "The pk of the table. @oraseq MYSEQ",
-                1
+                1,
+                10,
             )
     }
 }
