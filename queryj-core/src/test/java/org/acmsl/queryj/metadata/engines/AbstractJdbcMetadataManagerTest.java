@@ -57,6 +57,6 @@ import org.junit.runners.JUnit4;
 public class AbstractJdbcMetadataManagerTest
 {
     /**
-     * Checks whether cloneAttribute()
+     * Checks whether cloneAttribute() parses the
      */
 }
