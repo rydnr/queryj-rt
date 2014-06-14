@@ -68,7 +68,8 @@ public class AbstractPartialListDecoratorTest
 
         try
         {
-            instance.
+            instance.plus();
         }
+        catch ()
     }
 }
