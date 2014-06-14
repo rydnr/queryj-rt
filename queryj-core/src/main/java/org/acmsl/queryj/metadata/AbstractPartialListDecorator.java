@@ -106,7 +106,6 @@ public class AbstractPartialListDecorator
     /**
      * Creates a new instance.
      * @param listDecorator the {@link ListDecorator}.
-     * @param table the {@link TableDecorator}.
      * @param operation the {@link Operation}.
      */
     public AbstractPartialListDecorator(
