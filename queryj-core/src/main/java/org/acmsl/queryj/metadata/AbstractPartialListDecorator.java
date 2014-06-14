@@ -113,7 +113,6 @@ public class AbstractPartialListDecorator
         @NotNull final Operation operation)
     {
         immutableSetListDecorator(listDecorator);
-        immutableSetTable(table);
         immutableSetOperation(operation);
     }
 
