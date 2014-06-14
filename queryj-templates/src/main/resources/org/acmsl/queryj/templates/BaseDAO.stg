@@ -206,7 +206,6 @@ endif>
 <else>
     <table.own.minus.readOnlyAttributes:{ attr | <attribute_method_parameter_declaration(attr=attr, C=C)>}; separator=",\n">)
 <endif>
-        <table.own.minus.readOnly.minus.externallyManagedAttributes:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
       throws DataAccessException;
 
     /**
