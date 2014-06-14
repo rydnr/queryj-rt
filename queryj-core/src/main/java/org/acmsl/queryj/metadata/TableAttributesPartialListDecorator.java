@@ -90,7 +90,6 @@ public class TableAttributesPartialListDecorator
         @NotNull final Operation operation)
     {
         super(listDecorator, operation, table);
-        immutableSetTable(table);
     }
 
     /**
