@@ -825,10 +825,9 @@ public class AbstractPartialListDecorator
     {
         return
             "{ \"class\": \"" + AbstractPartialListDecorator.class.getSimpleName() + '"'
-            + ", \"package\": \"org.acmsl.queryj.metadata\""
             + ", \"listDecorator\": " + m__ListDecorator
             + ", \"operation\": " + m__Operation
             + " \"class\": \"" + AbstractPartialListDecorator.class.getSimpleName() + '"'
-    }";
+            + ", \"package\": \"org.acmsl.queryj.metadata\" }";
     }
 }
