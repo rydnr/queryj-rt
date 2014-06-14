@@ -96,5 +96,5 @@ public interface ListDecorator<T>
      */
     @NotNull
     @SuppressWarnings("unused")
-    PartialListDecorator getOnly();
+    PartialListDecorator getDifferent();
 }
