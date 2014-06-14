@@ -79,11 +79,6 @@ public class TableAttributesPartialListDecorator
     private static final long serialVersionUID = 3942968754043772227L;
 
     /**
-     * The table decorator.
-     */
-    private TableDecorator m__Table;
-
-    /**
      * Creates a new instance.
      * @param listDecorator the {@link ListDecorator}.
      * @param table the {@link TableDecorator}.
