@@ -1705,6 +1705,7 @@ public static class <attr.name.capitalized>ResultSetSingleExtractor
      * @param resultSet the result set.
      * @return the information retrieved from the database.
      */
+    @Override
     @SuppressWarnings("unchecked")
     <notnull(C=C)>
     protected Map\<String, ?> extractValue(<notnull(C=C)>final ResultSet resultSet)
