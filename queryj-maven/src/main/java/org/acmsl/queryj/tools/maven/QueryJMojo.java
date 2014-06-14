@@ -199,12 +199,6 @@ public class QueryJMojo
     private File m__HeaderFile;
 
     /**
-     * The list of external managed fields
-     * @parameter
-     */
-    private ExternallyManagedField[] externallyManagedFields = new ExternallyManagedField[0];
-
-    /**
      * The grammar folder.
      * @parameter property="grammarFolder"
      */
