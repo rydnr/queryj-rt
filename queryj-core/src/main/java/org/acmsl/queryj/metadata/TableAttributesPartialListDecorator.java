@@ -99,35 +99,6 @@ public class TableAttributesPartialListDecorator
     }
 
     /**
-     * Specifies the list decorator.
-     * @param listDecorator such instance.
-     */
-    protected final void immutableSetListDecorator(@NotNull final ListDecorator<Attribute<DecoratedString>> listDecorator)
-    {
-        this.m__ListDecorator = listDecorator;
-    }
-
-    /**
-     * Specifies the list decorator.
-     * @param listDecorator such instance.
-     */
-    @SuppressWarnings("unused")
-    protected void setListDecorator(@NotNull final ListDecorator<Attribute<DecoratedString>> listDecorator)
-    {
-        immutableSetListDecorator(listDecorator);
-    }
-
-    /**
-     * Retrieves the list decorator.
-     * @return such instance.
-     */
-    @SuppressWarnings("unused")
-    public ListDecorator<Attribute<DecoratedString>> getListDecorator()
-    {
-        return this.m__ListDecorator;
-    }
-
-    /**
      * Specifies the table.
      * @param table the table.
      */
