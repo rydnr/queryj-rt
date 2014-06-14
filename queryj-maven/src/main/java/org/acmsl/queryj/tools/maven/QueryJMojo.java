@@ -1499,7 +1499,11 @@ public class QueryJMojo
                                             "name", field.getName());
                                         fieldElement.setDynamicAttribute(
                                             "type", field.getType());
-                                        fieldElement.setDynamicAttribute(
+                                        @Nullable final String t_strPk = field.getPk();
+
+                                        if (t_strPk != null)
+                                        {
+                                            fieldElement.setDynamicAttribute(
                                             "pk", field.getPk());
                                     }
                                 }
