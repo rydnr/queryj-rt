@@ -449,7 +449,7 @@ custom_select_return_nondecorated_implicit_single(cs, result, C) ::= <<
 <cs.dao.voName>
 >>
 
-custom_select_return_import(result, tablepackage, baseDAOSubpackageName, C) ::= <<
+custom_select_return_import(result, table, package, baseDAOSubpackageName, C) ::= <<
 <!
  Generates the import for the ResultSet associated to the custom result.
  @param result the custom result.
