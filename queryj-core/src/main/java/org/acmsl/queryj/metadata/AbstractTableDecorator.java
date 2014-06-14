@@ -1848,7 +1848,7 @@ public abstract class AbstractTableDecorator
     @SuppressWarnings("unused")
     @NotNull
     @Override
-    public List<Result<DecoratedString>> getDifferentCustomResults()
+    public List<Result<DecoratedString>> getCustomResults()
     {
         return decorate(getDifferentCustomResults(getTable(), getCustomSqlProvider()));
     }
