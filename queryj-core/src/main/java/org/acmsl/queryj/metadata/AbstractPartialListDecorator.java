@@ -185,7 +185,7 @@ public abstract class AbstractPartialListDecorator<V>
     @NotNull
     public List<Attribute<DecoratedString>> getItems()
     {
-        throw new RuntimeException(AbstractTableAttributesListDecorator.INVALID_OPERATION);
+        throw new RuntimeException(AbstractTableListDecorator.INVALID_OPERATION);
     }
 
     /**
@@ -195,7 +195,7 @@ public abstract class AbstractPartialListDecorator<V>
     @NotNull
     public PartialListDecorator plus()
     {
-        throw new RuntimeException(AbstractTableAttributesListDecorator.INVALID_OPERATION);
+        throw new RuntimeException(AbstractTableListDecorator.INVALID_OPERATION);
     }
 
     /**
@@ -205,7 +205,7 @@ public abstract class AbstractPartialListDecorator<V>
     @NotNull
     public PartialListDecorator minus()
     {
-        throw new RuntimeException(AbstractTableAttributesListDecorator.INVALID_OPERATION);
+        throw new RuntimeException(AbstractTableListDecorator.INVALID_OPERATION);
     }
 
     /**
