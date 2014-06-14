@@ -66,7 +66,8 @@ public class AbstractPartialListDecoratorTest
     public void plus_throws_exception()
     {
         @SuppressWarnings("unchecked")
-        @NotNull final ListDecorator<Object> listDecorator = (ListDecorator<Object>) EasyMock.createNiceMock(ListDecorator.class);
+        @NotNull final ListDecorator<Object> listDecorator =
+            (ListDecorator<Object>) EasyMock.createNiceMock(ListDecorator.class);
 
         @NotNull final AbstractPartialListDecorator<Object> instance =
             new AbstractPartialListDecorator<Object>(
