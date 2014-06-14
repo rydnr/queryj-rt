@@ -464,7 +464,7 @@ if(result.wrappingASingleProperty)><
 else><
   if(result.classValue)
    >import <result.classValue>;<
-     if(table
+     if(table.
 import <C.project_package>.<baseDAOSubpackageName>.<result.simpleClassValue.lowercased>.<result.simpleClassValue>ResultSetSingleExtractor;
 import <C.project_package>.<baseDAOSubpackageName>.<result.simpleClassValue.lowercased>.<result.simpleClassValue>ResultSetMultipleExtractor;<
   endif><
