@@ -61,7 +61,7 @@ public class TablePartialListDecoratorTest
     @Test
     public void isListOfAttributes_detects_types_correctly()
     {
-        @NotNull final TablePartialListDecorator<Attribute<DecoratedString>> instance
-            = new TablePartialListDecorator<Attribute<DecoratedString>>()
+        @NotNull final TablePartialListDecorator<Attribute<DecoratedString>> instance =
+            new TablePartialListDecorator<Attribute<DecoratedString>>()
     }
 }
