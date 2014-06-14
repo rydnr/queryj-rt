@@ -59,6 +59,9 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class AbstractPartialListDecoratorTest
 {
+    /**
+     * Checks calling
+     */
     @Test
     public void plus_throws_exception()
     {
