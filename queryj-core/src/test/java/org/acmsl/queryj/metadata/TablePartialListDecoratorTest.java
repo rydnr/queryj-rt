@@ -68,7 +68,7 @@ public class TablePartialListDecoratorTest
         @NotNull final TableDecorator tableDecorator = EasyMock.createNiceMock(TableDecorator.class);
 
         @NotNull final List<Attribute<DecoratedString>> list = new ArrayList<>(1);
-        list.add(new )
+        list.add()
         @NotNull final ListDecorator<Attribute<DecoratedString>> listDecorator =
             new TableAttributesListDecorator(list, table);
 
