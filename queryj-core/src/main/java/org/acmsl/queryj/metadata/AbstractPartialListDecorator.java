@@ -109,7 +109,7 @@ public class AbstractPartialListDecorator
      * @param table the {@link TableDecorator}.
      * @param operation the {@link Operation}.
      */
-    public TableAttributesPartialListDecorator(
+    public AbstractPartialListDecorator(
         @NotNull final ListDecorator<Attribute<DecoratedString>> listDecorator,
         @NotNull final TableDecorator table,
         @NotNull final Operation operation)
