@@ -1703,25 +1703,6 @@ public static class <attr.name.capitalized>ResultSetSingleExtractor
     /**
      * Extracts \<i><table.name>.<attr.name>\</i> information from given result set.
      * @param resultSet the result set.
-     * @param sql the SQL used.
-     * @param daoListener the {@link DAOListener} instance.
-     * @return the data extracted.
-     */
-    @Override
-    <notnull(C=C)>
-    protected Map\<String, ?> extractData(
-        <notnull(C=C)>final ResultSet resultSet,
-        <notnull(C=C)>final String sql,
-        <notnull(C=C)>final DAOListener daoListener)
-    throws  SQLException,
-            DataAccessException
-    {
-        return extractData(resultSet, getSql(), daoListener);
-    }
-
-    /**
-     * Extracts \<i><table.name>.<attr.name>\</i> information from given result set.
-     * @param resultSet the result set.
      * @return the information retrieved from the database.
      */
     @SuppressWarnings("unchecked")
