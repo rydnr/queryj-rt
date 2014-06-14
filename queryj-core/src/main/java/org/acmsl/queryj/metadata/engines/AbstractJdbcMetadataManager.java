@@ -940,78 +940,36 @@ public abstract class AbstractJdbcMetadataManager
     @NotNull
     protected List<Attribute<String>> cloneAttributes(@NotNull final List<Attribute<String>> attributes)
     {
-        return cloneAttributes(attributes, MetaLanguageUtils.getInstance());
-    }
-
-    /**
-     * Clones given attributes.
-     * @param attributes the attributes to clone.
-     * @param metaLanguageUtils the {@link MetaLanguageUtils} instance.
-     * @return such attributes.
-     */
-    @NotNull
-    protected List<Attribute<String>> cloneAttributes(
-        @NotNull final List<Attribute<String>> attributes,
-        @NotNull final MetaLanguageUtils metaLanguageUtils)
-    {
         @NotNull final List<Attribute<String>> result = new ArrayList<>(attributes.size());
 
         for (@Nullable final Attribute<String> t_Attribute : attributes)
         {
             if (t_Attribute != null)
             {
-                result.add(cloneAttribute(t_Attribute, metaLanguageUtils));
+                result.add(
+                    new AttributeValueObject(
+                        t_Attribute.getName(),
+                        t_Attribute.getTypeId(),
+                        t_Attribute.getType(),
+                        t_Attribute.getTableName(),
+                        t_Attribute.getComment(),
+                        t_Attribute.getOrdinalPosition(),
+                        t_Attribute.getLength(),
+                        t_Attribute.getPrecision(),
+                        t_Attribute.getKeyword(),
+                        t_Attribute.getRetrievalQuery(),
+                        t_Attribute.getSequence(),
+                        t_Attribute.isNullable(),
+                        t_Attribute.getValue(),
+                        t_Attribute.isBoolean(),
+                        t_Attribute.isReadOnly(),
+                        t_Attribute.getBooleanTrue(),
+                        t_Attribute.getBooleanFalse(),
+                        t_Attribute.getBooleanNull()));
             }
         }
 
         return result;
-    }
-
-    /**
-     * Clones given attribute.
-     * @param attribute the {@link Attribute} to clone.
-     * @param metaLanguageUtils the {@link MetaLanguageUtils} instance.
-     * @return the cloned attribute.
-     */
-    @NotNull
-    public Attribute<String> cloneAttribute(
-        @NotNull final Attribute<String> attribute,
-        @NotNull final MetaLanguageUtils metaLanguageUtils)
-    {
-        @Nullable final String t_strComment = attribute.getComment();
-
-        @Nullable final String t_strSequence;
-
-        if (t_strComment == null)
-        {
-            t_strSequence = null;
-        }
-        else
-        {
-            t_strSequence = metaLanguageUtils.retrieveColumnOraseq(t_strComment);
-        }
-
-
-        return
-            new AttributeValueObject(
-                attribute.getName(),
-                attribute.getTypeId(),
-                attribute.getType(),
-                attribute.getTableName(),
-                attribute.getComment(),
-                attribute.getOrdinalPosition(),
-                attribute.getLength(),
-                attribute.getPrecision(),
-                attribute.getKeyword(),
-                attribute.getRetrievalQuery(),
-                t_strSequence,
-                attribute.isNullable(),
-                attribute.getValue(),
-                attribute.isBoolean(),
-                attribute.isReadOnly(),
-                attribute.getBooleanTrue(),
-                attribute.getBooleanFalse(),
-                attribute.getBooleanNull());
     }
 
     /**
@@ -1812,7 +1770,7 @@ public abstract class AbstractJdbcMetadataManager
             underlying = underlying.getCause();
         }
 
-        if (underlying != null)
+        if (underlying instanceof SQLException)
         {
             result = (SQLException) underlying;
         }
