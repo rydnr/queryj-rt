@@ -51,7 +51,6 @@ import org.acmsl.queryj.tools.handlers.JdbcMetaDataRetrievalHandler;
 import org.acmsl.queryj.tools.handlers.DatabaseMetaDataLoggingHandler;
 import org.acmsl.queryj.tools.handlers.JdbcConnectionOpeningHandler;
 import org.acmsl.queryj.tools.handlers.JdbcConnectionClosingHandler;
-import org.acmsl.queryj.tools.handlers.ExternallyManagedFieldsRetrievalHandler;
 import org.acmsl.queryj.tools.handlers.QueryJCommandHandler;
 import org.acmsl.queryj.tools.handlers.mysql.MySQL4xMetaDataRetrievalHandler;
 import org.acmsl.queryj.tools.handlers.oracle.OracleMetaDataRetrievalHandler;
