@@ -68,6 +68,7 @@ public abstract class AbstractPartialListDecorator<V>
     implements PartialListDecorator,
                Serializable
 {
+    private static final long serialVersionUID = -151276253995754647L;
     /**
      * The serial version id.
      */
