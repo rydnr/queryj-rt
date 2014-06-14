@@ -73,7 +73,7 @@ public class TablePartialListDecoratorTest
 
         @NotNull final Attribute<DecoratedString> attribute =
             new AttributeValueObject(
-                new DecoratedString("name"),
+                "name"),
                 Types.BIGINT,
                 new DecoratedString("long"),
                 new DecoratedString("table"),
