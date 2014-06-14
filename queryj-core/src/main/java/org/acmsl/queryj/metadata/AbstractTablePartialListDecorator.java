@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Base class for partial list decorators, wrapping a table.
  *
  * Date: 2014/06/14
  * Time: 18:42
