@@ -1914,7 +1914,7 @@ public abstract class AbstractTableDecorator
 
         Collections.sort(result);
 
-        return new TableCustomResultsLisresult;
+        return new TableCustomResultsListDecorator(result;
     }
 
     /**
