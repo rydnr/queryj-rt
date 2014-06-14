@@ -1881,7 +1881,7 @@ public abstract class AbstractTableDecorator
      * @return such list.
      */
     @NotNull
-    protected List<Result<String>> getDifferentCustomResults(
+    protected List<Result<String>> getCustomResults(
         @NotNull final String table,
         @NotNull final String voName,
         @NotNull final SqlDAO sqlDAO,
