@@ -824,46 +824,6 @@ public class QueryJMojo
     }
 
     /**
-     * Specifies the externally managed fields.
-     * @param fields such fields.
-     */
-    protected final void immutableSetExternallyManagedFields(
-        @NotNull final ExternallyManagedField[] fields)
-    {
-        externallyManagedFields = fields;
-    }
-
-    /**
-     * Specifies the externally managed fields.
-     * @param fields such fields.
-     */
-    public void setExternallyManagedFields(@NotNull final ExternallyManagedField[] fields)
-    {
-        immutableSetExternallyManagedFields(fields);
-    }
-
-    /**
-     * Returns the externally managed fields.
-     * @return such fields.
-     */
-    @NotNull
-    protected final ExternallyManagedField[] immutableGetExternallyManagedFields()
-    {
-//        return m__aExternallyManagedFields;
-        return externallyManagedFields;
-    }
-
-    /**
-     * Returns the externally managed fields.
-     * @return such fields.
-     */
-    @NotNull
-    protected ExternallyManagedField[] getExternallyManagedFields()
-    {
-        return immutableGetExternallyManagedFields();
-    }
-
-    /**
      * Specifies the grammar folder.
      * @param folder such folder.
      */
