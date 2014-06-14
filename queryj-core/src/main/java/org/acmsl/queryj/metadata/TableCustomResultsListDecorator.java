@@ -60,7 +60,7 @@ import java.util.List;
  */
 @ThreadSafe
 public class TableCustomResultsListDecorator
-    extends AbstractTableDecorator
+    extends AbstractTableListDecorator
 {
     /**
      * Creates an {@code AbstractTableDecorator} with the following
