@@ -1685,7 +1685,7 @@ attribute_resultset_extractor_class(table, repository, attr, C) ::= <<
  * Extracts \<i><table.name>.<attr.name>\</i> information using a {@link ResultSet}.
 <class_common_javadoc(template="org/acmsl/queryj/templates/DAO.stg", C=C)>
  */
-public static class <attr.name.capitalized>ResultSetExtractor
+public static class <attr.name.capitalized>SingleColumnResultSetSingleExtractor
     extends  V24ResultSetSingleExtractor\<Map\<String, ?\>>
 {
     /**
