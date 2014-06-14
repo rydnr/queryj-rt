@@ -175,6 +175,16 @@ public abstract class AbstractTableAttributesListDecorator
     }
 
     /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public ListDecorator<Attribute<DecoratedString>> getReadOnlyAttributes()
+    {
+        throw new RuntimeException(INVALID_OPERATION);
+    }
+
+    /**
      * Alias to make templates more readable.
      * @return the read-only attributes.
      */
