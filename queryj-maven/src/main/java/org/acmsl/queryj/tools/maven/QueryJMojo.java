@@ -1437,60 +1437,6 @@ public class QueryJMojo
         return result;
     }
 
-    /**
-     * Builds the external managed fields list.
-     * @param task the task.
-     */
-    @SuppressWarnings("unchecked")
-    protected void buildExternallyManagedFields(
-        @NotNull final QueryJTask task)
-    {
-        @NotNull final ExternallyManagedField[] array = getExternallyManagedFields();
-
-        final int count = array.length;
-        @Nullable final AntExternallyManagedFieldsElement element;
-        ExternallyManagedField field;
-        @Nullable AntFieldElement fieldElement;
-
-        if  (count > 0)
-        {
-            element =
-                (AntExternallyManagedFieldsElement) task.createDynamicElement(
-                    QueryJTask.EXTERNALLY_MANAGED_FIELDS);
-
-            if (element != null)
-            {
-                for (@Nullable final ExternallyManagedField anArray : array)
-                {
-                    field = anArray;
-
-                    if (field != null)
-                    {
-                        fieldElement =
-                            (AntFieldElement)
-                                element.createDynamicElement(
-                                    AntExternallyManagedFieldsElement.FIELD_LITERAL);
-
-                        if (fieldElement != null)
-                        {
-                            fieldElement.setDynamicAttribute("name", field.getName());
-
-                            fieldElement.setDynamicAttribute(
-                                AntFieldElement.TABLE_NAME_LITERAL, field.getTableName());
-
-                            fieldElement.setDynamicAttribute(
-                                AntFieldElement.KEYWORD_LITERAL, field.getKeyword());
-
-                            fieldElement.setDynamicAttribute(
-                                AntFieldElement.RETRIEVAL_QUERY_LITERAL, field.getRetrievalQuery());
-                        }
-                    }
-                }
-
-                task.setExternallyManagedFields(element);
-            }
-        }
-    }
 
     /**
      * Builds the table list.
