@@ -51,6 +51,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.sql.Types;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -71,7 +72,11 @@ public class TablePartialListDecoratorTest
         @NotNull final List<Attribute<DecoratedString>> list = new ArrayList<>(1);
 
         @NotNull final Attribute<DecoratedString> attribute =
-            new AttributeValueObject()
+            new AttributeValueObject(
+                "name",
+                Types.BIGINT,
+                "long"
+            )
         list.add()
         @NotNull final ListDecorator<Attribute<DecoratedString>> listDecorator =
             new TableAttributesListDecorator(list, table);
