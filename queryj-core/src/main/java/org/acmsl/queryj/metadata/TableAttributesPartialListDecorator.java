@@ -104,7 +104,10 @@ public class TableAttributesPartialListDecorator
         /**
          * The "only" operation.
          */
-        ONLY
+        ONLY,
+        /**
+         * The different
+         */
     }
 
     /**
