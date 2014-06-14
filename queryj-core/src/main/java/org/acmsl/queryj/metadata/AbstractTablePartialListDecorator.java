@@ -65,7 +65,7 @@ public abstract class AbstractTablePartialListDecorator<V>
     protected AbstractTablePartialListDecorator(
         @NotNull final ListDecorator<V> listDecorator,
         @NotNull final Operation operation,
-        @NotNull final Table<Attribute<String>>)
+        @NotNull final TableDecorator table)
     {
         super(listDecorator, operation);
     }
