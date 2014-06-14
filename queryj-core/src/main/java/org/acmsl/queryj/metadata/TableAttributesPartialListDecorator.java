@@ -70,7 +70,7 @@ import java.util.List;
  */
 @ThreadSafe
 public class TableAttributesPartialListDecorator
-    extends AbstractPartialListDecorator
+    extends AbstractPartialListDecorator<Attribute<String>>
     implements PartialListDecorator,
                TableDecorator
 {
