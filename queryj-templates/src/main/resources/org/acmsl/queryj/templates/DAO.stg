@@ -112,7 +112,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 <import_attribute_types(table=table, useHeader=false, nullableOnly=true)>
-<table.customSelects:{ cs| <import_custom_select_types(cs=cs, C=C)>}; separator="\n">
+<table.customSelects:{ cs| <import_custom_select_types(cs=cs, C=C)>}; separator="">
 import java.util.Map;
 
 /*
