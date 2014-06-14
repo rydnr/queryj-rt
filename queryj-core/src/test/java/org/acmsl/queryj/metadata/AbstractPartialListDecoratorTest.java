@@ -72,6 +72,9 @@ public class AbstractPartialListDecoratorTest
             instance.plus();
             Assert.fail("plus() didn't throw an exception");
         }
-        catch (@NotNull final RuntimeException runtimeException);
+        catch (@NotNull final RuntimeException runtimeException)
+        {
+
+        }
     }
 }
