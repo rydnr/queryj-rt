@@ -76,7 +76,7 @@ public class TablePartialListDecoratorTest
                 "name",
                 Types.BIGINT,
                 "long",
-                "table",
+                new DecoratedString("table"),
                 "comment",
                 1,
                 10,
