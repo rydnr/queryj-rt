@@ -744,7 +744,7 @@ public class TableAttributesPartialListDecorator
     public String toString()
     {
         return
-              "{ \"class\": \"" + TableAttributesPartialListDecorator.class.getSimpleName() + '"'
+              "{ \"table\": \" + m__Table\"class\": \"" + TableAttributesPartialListDecorator.class.getSimpleName() + '"'
             + ", \"package\": \"org.acmsl.queryj.metadata\""
             + ", \"listDecorator\": " + m__ListDecorator
             + ", \"table\": " + m__Table
