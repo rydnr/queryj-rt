@@ -70,7 +70,7 @@ public class AbstractPartialListDecoratorTest
         try
         {
             instance.plus();
-            Assert.fail();
+            Assert.fail("");
         }
         catch (@NotNull final RuntimeException runtimeException);
     }
