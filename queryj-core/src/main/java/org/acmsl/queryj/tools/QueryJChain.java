@@ -127,8 +127,6 @@ public class QueryJChain<CH extends QueryJCommandHandler<QueryJCommand>>
         chain.add((CH) new OracleMetaDataRetrievalHandler());
         chain.add((CH) new JdbcMetaDataRetrievalHandler());
 
-        chain.add((CH) new ExternallyManagedFieldsRetrievalHandler());
-
         chain.add((CH) new CustomSqlValidationHandler());
         chain.add((CH) new CustomSqlCacheWritingHandler());
 
