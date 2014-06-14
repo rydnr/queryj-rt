@@ -60,7 +60,7 @@ import org.junit.runners.JUnit4;
 public class AbstractPartialListDecoratorTest
 {
     /**
-     * Checks calling
+     * Checks calling "plus()" throws a
      */
     @Test
     public void plus_throws_exception()
