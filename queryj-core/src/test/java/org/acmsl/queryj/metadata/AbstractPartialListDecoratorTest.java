@@ -60,7 +60,7 @@ import org.junit.runners.JUnit4;
 public class AbstractPartialListDecoratorTest
 {
     /**
-     * Checks calling "plus()" throws a
+     * Checks calling "plus()" throws a {@link RuntimeException}.
      */
     @Test
     public void plus_throws_exception()
