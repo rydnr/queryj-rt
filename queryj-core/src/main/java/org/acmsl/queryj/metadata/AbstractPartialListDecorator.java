@@ -62,7 +62,7 @@ import java.util.List;
  * Created: 2014/06/14 17:54
  */
 @ThreadSafe
-public class AbstractPartialListDecorator
+public abstract class AbstractPartialListDecorator
     implements PartialListDecorator
 {
     /**
