@@ -55,4 +55,5 @@ import org.checkthread.annotations.ThreadSafe;
 public class TableCustomResultsListDecorator
     extends AbstractTableDecorator
 {
+
 }
