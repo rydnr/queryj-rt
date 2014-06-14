@@ -205,29 +205,6 @@ public class AbstractPartialListDecorator
         throw new RuntimeException(AbstractTableAttributesListDecorator.INVALID_OPERATION);
     }
 
-     * Retrieves the nullable attributes.
-     *
-     * @return such list.
-     */
-    @NotNull
-    @Override
-    public List<Attribute<DecoratedString>> getNullableAttributes()
-    {
-        return getTable().getNullableAttributes();
-    }
-
-    /**
-     * Compares the wrapped table to given one.
-     * @param table the table to compare with.
-     * @return the result of comparing them.
-     */
-    @Override
-    public int compareTo(
-        @Nullable final Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>> table)
-    {
-        return getTable().compareTo(table);
-    }
-
     /**
      * {@inheritDoc}
      */
