@@ -52,7 +52,7 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2014/06/14 18:42
  */
 @ThreadSafe
-public abstract class AbstractTablePartialListDecorator
+public abstract class AbstractTablePartialListDecorator<V>
     extends AbstractPartialListDecorator<V>
 {
 }
