@@ -162,16 +162,6 @@ public abstract class AbstractTableAttributesListDecorator
                 this, getTable(), Operation.ONLY);
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    @NotNull
-    @Override
-    public ListDecorator<Attribute<DecoratedString>> getDifferent()
-    {
-        throw new RuntimeException(INVALID_OPERATION);
-    }
-
     // TableDecorator implementation
 
     /**

@@ -112,7 +112,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 <import_attribute_types(table=table, useHeader=false, nullableOnly=true)>
-<table.customSelects:{ cs| <import_custom_select_types(cs=cs, C=C)>}; separator="">
+<table.customSelects:{ cs| <import_custom_select_types(cs=cs, C=C)>}; separator="\n">
 import java.util.Map;
 
 /*
@@ -1685,7 +1685,7 @@ attribute_resultset_extractor_class(table, repository, attr, C) ::= <<
  * Extracts \<i><table.name>.<attr.name>\</i> information using a {@link ResultSet}.
 <class_common_javadoc(template="org/acmsl/queryj/templates/DAO.stg", C=C)>
  */
-public static class <attr.name.capitalized>ResultSetSingleExtractor
+public static class <attr.name.capitalized>ResultSetExtractor
     extends  V24ResultSetSingleExtractor\<Map\<String, ?\>>
 {
     /**
@@ -1693,7 +1693,7 @@ public static class <attr.name.capitalized>ResultSetSingleExtractor
      * @param sql the original SQL.
      * @param daoListener the dao listener.
      */
-    public <attr.name.capitalized>ResultSetSingleExtractor(
+    public <attr.name.capitalized>SingleColumnResultSetSingleExtractor(
         <notnull(C=C)>final String sql,
         <nullable(C=C)>final DAOListener daoListener)
     {
@@ -1703,9 +1703,27 @@ public static class <attr.name.capitalized>ResultSetSingleExtractor
     /**
      * Extracts \<i><table.name>.<attr.name>\</i> information from given result set.
      * @param resultSet the result set.
-     * @return the information retrieved from the database.
+     * @param sql the SQL used.
+     * @param daoListener the {@link DAOListener} instance.
+     * @return the data extracted.
      */
     @Override
+    <notnull(C=C)>
+    protected Map\<String, ?> extractData(
+        <notnull(C=C)>final ResultSet resultSet,
+        <notnull(C=C)>final String sql,
+        <notnull(C=C)>final DAOListener daoListener)
+    throws  SQLException,
+            DataAccessException
+    {
+        return extractData(resultSet, getSql(), daoListener);
+    }
+
+    /**
+     * Extracts \<i><table.name>.<attr.name>\</i> information from given result set.
+     * @param resultSet the result set.
+     * @return the information retrieved from the database.
+     */
     @SuppressWarnings("unchecked")
     <notnull(C=C)>
     protected Map\<String, ?> extractValue(<notnull(C=C)>final ResultSet resultSet)

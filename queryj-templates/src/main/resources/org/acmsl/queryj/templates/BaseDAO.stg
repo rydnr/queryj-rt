@@ -197,19 +197,11 @@ endif>
 
     /**
      * Updates {@link <table.name.voName>} information.
-<if(table.parentTable)>
-    <table.all.minus.readOnlyAttributes:{ attr | <attribute_javadoc(attr=attr)>}; separator="\n">
-<else>
-    <table.own.minus.readOnlyAttributes:{ attr | <attribute_javadoc(attr=attr)>}; separator="\n">
-<endif>
+     <table.own.minus.readOnly.minus.externallyManagedAttributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
      * @return the number of {@code <table.name>} rows updated.
      */
     int update(
-<if(table.parentTable)>
-        <table.all.minus.readOnlyAttributes:{ attr | <attribute_method_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
-<else>
-        <table.own.minus.readOnlyAttributes:{ attr | <attribute_method_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
-<endif>
+        <table.own.minus.readOnly.minus.externallyManagedAttributes:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
       throws DataAccessException;
 
     /**
