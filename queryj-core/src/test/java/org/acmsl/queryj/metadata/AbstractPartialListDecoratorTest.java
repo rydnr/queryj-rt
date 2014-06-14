@@ -38,7 +38,6 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing JetBrains annotations.
  */
-import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
