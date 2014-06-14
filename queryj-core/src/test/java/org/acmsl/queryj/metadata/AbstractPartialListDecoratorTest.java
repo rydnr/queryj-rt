@@ -45,6 +45,7 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -69,7 +70,8 @@ public class AbstractPartialListDecoratorTest
         try
         {
             instance.plus();
+            Assert.fail();
         }
-        catch (@NotNull final RuntimeException )
+        catch (@NotNull final RuntimeException runtimeException);
     }
 }
