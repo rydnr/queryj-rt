@@ -89,7 +89,6 @@ public interface ListDecorator<T>
     @SuppressWarnings("unused")
     PartialListDecorator getOnly();
 
-
     /**
      * Retains certain items from the list.
      * @return a partial decorator expecting a new set, and would then represent
