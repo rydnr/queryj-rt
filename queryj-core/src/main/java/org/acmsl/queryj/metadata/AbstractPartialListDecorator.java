@@ -69,12 +69,6 @@ public class AbstractPartialListDecorator
     /**
      * The serial version id.
      */
-    private static final long serialVersionUID = 3942968754043772227L;
-
-    /**
-     * The table decorator.
-     */
-    private TableDecorator m__Table;
 
     /**
      * The list decorator.
