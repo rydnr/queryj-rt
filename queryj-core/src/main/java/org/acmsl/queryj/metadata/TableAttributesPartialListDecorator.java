@@ -106,7 +106,7 @@ public class TableAttributesPartialListDecorator
          */
         ONLY,
         /**
-         * The different
+         * The "different" operation.
          */
     }
 
