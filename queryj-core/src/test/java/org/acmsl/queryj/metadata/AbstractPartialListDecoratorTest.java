@@ -69,7 +69,7 @@ public class AbstractPartialListDecoratorTest
 
         @NotNull final AbstractPartialListDecorator instance =
             new AbstractPartialListDecorator(
-                listDecorator, AbstractPartialListDecorator.Operation.PLUS);
+                listDecorator, AbstractPartialListDecorator.Operation.PLUS) {};
 
         try
         {
