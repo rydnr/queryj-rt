@@ -75,7 +75,8 @@ public class TablePartialListDecoratorTest
             new AttributeValueObject(
                 "name",
                 Types.BIGINT,
-                "long"
+                "long",
+
             )
         list.add()
         @NotNull final ListDecorator<Attribute<DecoratedString>> listDecorator =
