@@ -62,6 +62,12 @@ public abstract class AbstractTablePartialListDecorator<V>
      */
     private TableDecorator m__Table;
 
+    /**
+     * Creates a new instance.
+     * @param listDecorator the list decorator.
+     * @param operation the operation.
+     * @param table the table.
+     */
     protected AbstractTablePartialListDecorator(
         @NotNull final ListDecorator<V> listDecorator,
         @NotNull final Operation operation,
