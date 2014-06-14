@@ -39,6 +39,7 @@ package org.acmsl.queryj.metadata;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.metadata.vo.Attribute;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -61,7 +62,9 @@ public class TablePartialListDecoratorTest
     @Test
     public void isListOfAttributes_detects_types_correctly()
     {
+        @NotNull final TableDecorator tableDecorator = EasyMock.createNiceMock(TableDecorator.class);
+
         @NotNull final TablePartialListDecorator<Attribute<DecoratedString>> instance =
-            new TablePartialListDecorator<Attribute<DecoratedString>>()
+            new TablePartialListDecorator<Attribute<DecoratedString>>();
     }
 }
