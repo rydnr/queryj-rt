@@ -57,7 +57,7 @@ import java.util.List;
 
 /**
  * Base class for partial list decorators.
- * @param <V> the
+ * @param <V> the items in the list.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/06/14 17:54
