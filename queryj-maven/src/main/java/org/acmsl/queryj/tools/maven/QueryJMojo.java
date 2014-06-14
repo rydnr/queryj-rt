@@ -1400,7 +1400,6 @@ public class QueryJMojo
         result.setGrammarName(getGrammarName());
         result.setGrammarSuffix(getGrammarSuffix());
 
-        buildExternallyManagedFields(result);
         buildTables(result);
 
         @Nullable final String encoding = getEncoding();
