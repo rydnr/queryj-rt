@@ -38,6 +38,7 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.metadata.vo.Attribute;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -60,6 +61,6 @@ public class TablePartialListDecoratorTest
     @Test
     public void isListOfAttributes_detects_types_correctly()
     {
-        @NotNull final TablePartialListDecorator<>
+        @NotNull final TablePartialListDecorator<Attribute<DecoratedString>>
     }
 }
