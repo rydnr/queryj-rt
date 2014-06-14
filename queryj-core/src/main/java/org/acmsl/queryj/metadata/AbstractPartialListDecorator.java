@@ -110,7 +110,6 @@ public class AbstractPartialListDecorator
      */
     public AbstractPartialListDecorator(
         @NotNull final ListDecorator<Attribute<DecoratedString>> listDecorator,
-        @NotNull final TableDecorator table,
         @NotNull final Operation operation)
     {
         immutableSetListDecorator(listDecorator);
