@@ -252,7 +252,7 @@ public abstract class AbstractTableAttributesListDecorator
      */
     @NotNull
     @Override
-    public List<Result<DecoratedString>> getDifferentCustomResults()
+    public ListDecorator<Result<DecoratedString>> getCustomResults()
     {
         throw new RuntimeException(INVALID_OPERATION);
     }
