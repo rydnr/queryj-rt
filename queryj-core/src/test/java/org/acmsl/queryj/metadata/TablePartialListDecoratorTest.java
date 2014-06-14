@@ -94,6 +94,7 @@ public class TablePartialListDecoratorTest
 
         list.add(attribute);
 
+
         @NotNull final ListDecorator<Attribute<String>> listDecorator =
             new TableAttributesListDecorator(list, tableDecorator);
 
