@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Base class for partial list decorators.
  *
  * Date: 2014/06/14
  * Time: 17:54
