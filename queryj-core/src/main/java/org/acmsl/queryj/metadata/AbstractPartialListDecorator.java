@@ -139,7 +139,7 @@ public abstract class AbstractPartialListDecorator<V>
      * @return such instance.
      */
     @SuppressWarnings("unused")
-    public ListDecorator<Attribute<DecoratedString>> getListDecorator()
+    public ListDecorator<V> getListDecorator()
     {
         return this.m__ListDecorator;
     }
