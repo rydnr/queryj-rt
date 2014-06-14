@@ -828,6 +828,6 @@ public class AbstractPartialListDecorator
             + ", \"package\": \"org.acmsl.queryj.metadata\""
             + ", \"listDecorator\": " + m__ListDecorator
             + ", \"operation\": " + m__Operation
-            + " \"class\": \"\" + AbstractPartialListDecorator.class.getSimpleName() + '\"' }";
+            + " \"class\": \"" + AbstractPartialListDecorator.class.getSimpleName() + '\"' }";
     }
 }
