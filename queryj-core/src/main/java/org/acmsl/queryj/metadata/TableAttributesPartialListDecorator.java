@@ -89,25 +89,6 @@ public class TableAttributesPartialListDecorator
     private ListDecorator<Attribute<DecoratedString>> m__ListDecorator;
 
     /**
-     * The operation types.
-     */
-    public static enum Operation
-    {
-        /**
-         * The plus operation.
-         */
-        PLUS,
-        /**
-         * The minus operation.
-         */
-        MINUS,
-        /**
-         * The "only" operation.
-         */
-        ONLY
-    }
-
-    /**
      * The operation.
      */
     private Operation m__Operation;
