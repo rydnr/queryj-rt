@@ -108,7 +108,7 @@ public abstract class AbstractPartialListDecorator<V>
      * @param operation the {@link Operation}.
      */
     public AbstractPartialListDecorator(
-        @NotNull final ListDecorator<Attribute<DecoratedString>> listDecorator,
+        @NotNull final ListDecorator<V> listDecorator,
         @NotNull final Operation operation)
     {
         immutableSetListDecorator(listDecorator);
