@@ -99,4 +99,19 @@ public abstract class AbstractTablePartialListDecorator<V>
     {
         return this.m__Table;
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public String toString()
+    {
+        return
+              "{ \"table\": \"" + m__Table
+            + ", \"super\": " + super.toString()
+            + ", \"class\": \"" + TableAttributesPartialListDecorator.class.getSimpleName() + '"'
+            + ", \"package\": \"org.acmsl.queryj.metadata\""
+            + " }";
+    }
 }
