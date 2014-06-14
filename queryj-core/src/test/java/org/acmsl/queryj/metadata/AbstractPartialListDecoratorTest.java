@@ -38,6 +38,7 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing JetBrains annotations.
  */
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -60,7 +61,7 @@ public class AbstractPartialListDecoratorTest
     @Test
     public void plus_throws_exception()
     {
-        @NotNull final ListDecorator<?>
+        @NotNull final ListDecorator<?> listDecorator = EasyMock.createNiceMock(ListDecorator)
         @NotNull final AbstractPartialListDecorator instance =
             new AbstractPartialListDecorator(AbstractPartialListDecorator.Operation.PLUS, listDecorator);
     }
