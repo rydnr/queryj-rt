@@ -1437,7 +1437,6 @@ public class QueryJMojo
         return result;
     }
 
-
     /**
      * Builds the table list.
      * @param task the task.
