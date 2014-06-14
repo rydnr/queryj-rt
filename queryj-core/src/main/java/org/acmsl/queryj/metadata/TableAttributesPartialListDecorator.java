@@ -709,8 +709,7 @@ public class TableAttributesPartialListDecorator
     public String toString()
     {
         return
-              "{ \"table\": \"" + m__Table
-            + ", \"super\": " + super.toString()
+              "{ \"super\": " + super.toString()
             + ", \"class\": \"" + TableAttributesPartialListDecorator.class.getSimpleName() + '"'
             + ", \"package\": \"org.acmsl.queryj.metadata\""
             + " }";
