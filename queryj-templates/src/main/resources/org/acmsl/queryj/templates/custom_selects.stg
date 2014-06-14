@@ -453,6 +453,7 @@ custom_select_return_import(result, table, package, baseDAOSubpackageName, C) ::
 <!
  Generates the import for the ResultSet associated to the custom result.
  @param result the custom result.
+ @param table the table.
  @param package the package.
  @param baseDAOSubpackageName the base DAO subpackage name.
  @param C the context.
