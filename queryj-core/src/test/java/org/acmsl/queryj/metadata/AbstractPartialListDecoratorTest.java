@@ -58,5 +58,5 @@ import org.junit.runners.JUnit4;
 public class AbstractPartialListDecoratorTest
 {
     @Test
-    public void
+    public void p
 }
