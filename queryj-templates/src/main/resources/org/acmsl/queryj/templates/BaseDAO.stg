@@ -204,7 +204,7 @@ endif>
 <if(parent)>
     <table.all.minus.readOnlyAttributes:{ attr | <attribute_declaration_impl(attr=attr, C=C)>}; separator=",\n">)
 <else>
-    <table.own.minus.readOnlyAttributes:{ attr | <attribute_declaration_impl(attr=attr, C=C)>}; separator=",\n">)
+    <table.own.minus.readOnlyAttributes:{ attr | <attribute_method_parameter_declarationattribute_declaration_impl(attr=attr, C=C)>}; separator=",\n">)
 <endif>
         <table.own.minus.readOnly.minus.externallyManagedAttributes:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
       throws DataAccessException;
