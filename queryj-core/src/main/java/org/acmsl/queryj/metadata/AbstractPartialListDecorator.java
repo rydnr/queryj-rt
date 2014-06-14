@@ -119,7 +119,7 @@ public abstract class AbstractPartialListDecorator<V>
      * Specifies the list decorator.
      * @param listDecorator such instance.
      */
-    protected final void immutableSetListDecorator(@NotNull final ListDecorator<Attribute<DecoratedString>> listDecorator)
+    protected final void immutableSetListDecorator(@NotNull final ListDecorator<V> listDecorator)
     {
         this.m__ListDecorator = listDecorator;
     }
