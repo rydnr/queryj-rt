@@ -68,7 +68,7 @@ public class AbstractPartialListDecoratorTest
 
         try
         {
-
+            instance.
         }
     }
 }
