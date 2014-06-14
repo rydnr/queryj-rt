@@ -34,7 +34,6 @@ package org.acmsl.queryj.tools.maven;
 /*
  * Importing QueryJ Core classes.
  */
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.acmsl.queryj.QueryJSettings;
 import org.acmsl.queryj.tools.ant.AntExternallyManagedFieldsElement;
 import org.acmsl.queryj.tools.ant.AntFieldElement;
