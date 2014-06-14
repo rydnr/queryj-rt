@@ -110,7 +110,7 @@ public abstract class AbstractTablePartialListDecorator<V>
         return
               "{ \"table\": \"" + m__Table
             + ", \"super\": " + super.toString()
-            + ", \"class\": \"" + TableAttributesPartialListDecorator.class.getSimpleName() + '"'
+            + ", \"class\": \"" + AbstractTablePartialListDecorator.class.getSimpleName() + '"'
             + ", \"package\": \"org.acmsl.queryj.metadata\""
             + " }";
     }
