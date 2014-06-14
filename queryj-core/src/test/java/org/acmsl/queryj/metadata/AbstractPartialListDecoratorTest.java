@@ -65,5 +65,7 @@ public class AbstractPartialListDecoratorTest
 
         @NotNull final AbstractPartialListDecorator instance =
             new AbstractPartialListDecorator(AbstractPartialListDecorator.Operation.PLUS, listDecorator);
+
+
     }
 }
