@@ -53,5 +53,6 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public abstract class AbstractTablePartialListDecorator
+    extends AbstractPartialListDecorator<V>
 {
 }
