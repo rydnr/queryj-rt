@@ -72,7 +72,7 @@ public abstract class AbstractPartialListDecorator<V>
     /**
      * The list decorator.
      */
-    private ListDecorator<Attribute<DecoratedString>> m__ListDecorator;
+    private ListDecorator<V> m__ListDecorator;
 
     /**
      * The operation types.
