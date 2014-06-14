@@ -76,6 +76,7 @@ public class TableAttributesPartialListDecorator
     /**
      * The serial version id.
      */
+    private static final long serialVersionUID = -7540355104418964835L;
 
     /**
      * Creates a new instance.
