@@ -63,7 +63,7 @@ import java.util.List;
  */
 @ThreadSafe
 public abstract class AbstractPartialListDecorator<V>
-    implements PartialListDecorator
+    implements PartialListDecorator<V>
 {
     /**
      * The serial version id.
