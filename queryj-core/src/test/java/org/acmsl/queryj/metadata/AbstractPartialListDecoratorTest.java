@@ -79,7 +79,6 @@ public class AbstractPartialListDecoratorTest
         }
         catch (@NotNull final RuntimeException runtimeException)
         {
-
         }
     }
 }
