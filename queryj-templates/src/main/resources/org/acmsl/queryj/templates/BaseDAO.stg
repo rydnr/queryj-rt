@@ -202,7 +202,6 @@ endif>
 <else>
     <table.own.minus.readOnlyAttributes:{ attr | <attribute_javadoc(attr=attr, C=C)>}; separator=",\n">)
 <endif>
-     <table.own.minus.readOnly.minus.externallyManagedAttributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
      * @return the number of {@code <table.name>} rows updated.
      */
     int update(
