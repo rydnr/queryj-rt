@@ -84,16 +84,6 @@ public class TableAttributesPartialListDecorator
     private TableDecorator m__Table;
 
     /**
-     * The list decorator.
-     */
-    private ListDecorator<Attribute<DecoratedString>> m__ListDecorator;
-
-    /**
-     * The operation.
-     */
-    private Operation m__Operation;
-
-    /**
      * Creates a new instance.
      * @param listDecorator the {@link ListDecorator}.
      * @param table the {@link TableDecorator}.
