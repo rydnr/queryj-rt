@@ -36,11 +36,6 @@
 package org.acmsl.queryj.metadata;
 
 /*
- * Importing ACM-SL Commons classes.
- */
-import org.acmsl.commons.utils.ToStringUtils;
-
-/*
  * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
