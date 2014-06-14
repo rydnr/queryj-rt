@@ -53,6 +53,7 @@ import org.checkthread.annotations.ThreadSafe;
 /*
  * Importing JDK classes.
  */
+import java.io.Serializable;
 import java.util.List;
 
 /**
