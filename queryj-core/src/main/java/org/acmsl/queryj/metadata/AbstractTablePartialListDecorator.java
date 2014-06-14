@@ -56,7 +56,8 @@ public abstract class AbstractTablePartialListDecorator<V>
     extends AbstractPartialListDecorator<V>
 {
     protected AbstractTablePartialListDecorator(
-        @NotNull final ListDecorator<V> listDecorator, @NotNull final Operation operation,
+        @NotNull final ListDecorator<V> listDecorator,
+        @NotNull final Operation operation,
         )
     {
         super(listDecorator, operation);
