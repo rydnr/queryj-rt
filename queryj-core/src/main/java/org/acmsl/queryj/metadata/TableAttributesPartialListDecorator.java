@@ -96,7 +96,6 @@ public class TableAttributesPartialListDecorator
     {
         super(listDecorator, operation);
         immutableSetTable(table);
-        immutableSetOperation(operation);
     }
 
     /**
