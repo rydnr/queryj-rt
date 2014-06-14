@@ -70,4 +70,34 @@ public abstract class AbstractTablePartialListDecorator<V>
         super(listDecorator, operation);
         immutableSetTable(table);
     }
+
+    /**
+     * Specifies the table.
+     * @param table the table.
+     */
+    protected final void immutableSetTable(@NotNull final TableDecorator table)
+    {
+        this.m__Table = table;
+    }
+
+    /**
+     * Specifies the table.
+     * @param table the table.
+     */
+    @SuppressWarnings("unused")
+    protected void setTable(@NotNull final TableDecorator table)
+    {
+        immutableSetTable(table);
+    }
+
+    /**
+     * Retrieves the table.
+     * @return such instance.
+     */
+    @NotNull
+    public TableDecorator getTable()
+    {
+        return this.m__Table;
+    }
+
 }
