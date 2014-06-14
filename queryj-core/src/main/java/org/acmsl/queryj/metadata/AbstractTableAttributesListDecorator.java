@@ -41,7 +41,6 @@ package org.acmsl.queryj.metadata;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.metadata.AbstractPartialListDecorator.Operation;
-import org.acmsl.queryj.metadata.TableAttributesPartialListDecorator.Operation;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.ForeignKey;
 import org.acmsl.queryj.metadata.vo.Row;
