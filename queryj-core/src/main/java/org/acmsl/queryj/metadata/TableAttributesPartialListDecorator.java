@@ -127,34 +127,6 @@ public class TableAttributesPartialListDecorator
         return this.m__Table;
     }
 
-    /**
-     * Specifies the operation.
-     * @param operation such operation.
-     */
-    protected final void immutableSetOperation(@NotNull final Operation operation)
-    {
-        this.m__Operation = operation;
-    }
-
-    /**
-     * Specifies the operation.
-     * @param operation such operation.
-     */
-    @SuppressWarnings("unused")
-    protected void setOperation(@NotNull final Operation operation)
-    {
-        immutableSetOperation(operation);
-    }
-
-    /**
-     * Retrieves the operation.
-     * @return such operation.
-     */
-    public Operation getOperation()
-    {
-        return this.m__Operation;
-    }
-
     // ListDecorator implementation
     /**
      * Retrieves the items.
