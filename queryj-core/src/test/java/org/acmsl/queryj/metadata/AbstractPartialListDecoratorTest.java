@@ -60,7 +60,8 @@ public class AbstractPartialListDecoratorTest
     @Test
     public void plus_throws_exception()
     {
+        @NotNull final ListDecorator<>
         @NotNull final AbstractPartialListDecorator instance =
-            new AbstractPartialListDecorator(AbstractPartialListDecorator.Operation.PLUS, )
+            new AbstractPartialListDecorator(AbstractPartialListDecorator.Operation.PLUS, listDecorator);
     }
 }
