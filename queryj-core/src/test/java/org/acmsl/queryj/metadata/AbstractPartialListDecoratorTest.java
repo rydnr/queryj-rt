@@ -68,7 +68,7 @@ public class AbstractPartialListDecoratorTest
         @NotNull final ListDecorator<?> listDecorator = EasyMock.createNiceMock(ListDecorator.class);
 
         @NotNull final AbstractPartialListDecorator<?> instance =
-            new AbstractPartialListDecorator<Object>(
+            new AbstractPartialListDecorator<>(
                 listDecorator, AbstractPartialListDecorator.Operation.PLUS) {};
 
         try
