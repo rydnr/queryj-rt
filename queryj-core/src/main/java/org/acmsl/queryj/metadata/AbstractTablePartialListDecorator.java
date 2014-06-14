@@ -55,6 +55,10 @@ import org.checkthread.annotations.ThreadSafe;
 public abstract class AbstractTablePartialListDecorator<V>
     extends AbstractPartialListDecorator<V>
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = 8290862520868390047L;
 
     /**
      * The table decorator.
