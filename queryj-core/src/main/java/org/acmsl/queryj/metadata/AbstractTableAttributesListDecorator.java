@@ -179,7 +179,7 @@ public abstract class AbstractTableAttributesListDecorator
      */
     @NotNull
     @Override
-    public ListDecorator<Attribute<DecoratedString>> getReadOnlyAttributes()
+    public ListDecorator<Attribute<DecoratedString>> getDifferent()
     {
         throw new RuntimeException(INVALID_OPERATION);
     }
