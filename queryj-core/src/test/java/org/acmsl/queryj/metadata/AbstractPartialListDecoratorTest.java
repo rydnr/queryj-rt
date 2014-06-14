@@ -58,5 +58,8 @@ import org.junit.runners.JUnit4;
 public class AbstractPartialListDecoratorTest
 {
     @Test
-    public void
+    public void plus_throws_exception()
+    {
+        @NotNull final
+    }
 }
