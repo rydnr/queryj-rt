@@ -68,6 +68,6 @@ public abstract class AbstractTablePartialListDecorator<V>
         @NotNull final TableDecorator table)
     {
         super(listDecorator, operation);
-
+        immutableSetTable(table);
     }
 }
