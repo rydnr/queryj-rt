@@ -91,7 +91,11 @@ public class AbstractPartialListDecorator
         /**
          * The "only" operation.
          */
-        ONLY
+        ONLY,
+        /**
+         * The "different" operation.
+         */
+        DIFFERENT
     }
 
     /**
