@@ -198,7 +198,7 @@ endif>
     /**
      * Updates {@link <table.name.voName>} information.
 <if(parent)>
-    <table.all.minus.readOnlyAttributes:{ attr | <attribute_javadocattribute_declaration_impl(attr=attr, C=C)>}; separator=",\n">)
+    <table.all.minus.readOnlyAttributes:{ attr | <attribute_javadoc(attr=attr, C=C)>}; separator=",\n">)
 <else>
     <table.own.minus.readOnlyAttributes:{ attr | <attribute_javadoc(attr=attr, C=C)>}; separator=",\n">)
 <endif>
