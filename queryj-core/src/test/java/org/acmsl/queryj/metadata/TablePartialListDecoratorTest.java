@@ -82,7 +82,7 @@ public class TablePartialListDecoratorTest
                 10,
                 1,
                 null,
-
+                null,
             )
         list.add()
         @NotNull final ListDecorator<Attribute<DecoratedString>> listDecorator =
