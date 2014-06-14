@@ -221,6 +221,7 @@ import <basePackageName>.<voFactorySubpackageName>.core.<table.name.voName>Facto
   referredVOName=fk.source.name.voName)>}; separator="\n">
 <table.differentCustomSingleResults:{ cr  | <custom_select_import(result=cr, package=basePackageName, baseDAOSubpackageName=baseDAOSubpackageName, C=C)>}; separator="\n">
 <table.customResults.different.single:{ cr  | <custom_select_import(result=cr, package=basePackageName, baseDAOSubpackageName=baseDAOSubpackageName, C=C)>}; separator="\n">
+<table.customResults.different.single:{ cr  | <custom_select_import(result=cr, package=basePackageName, baseDAOSubpackageName=baseDAOSubpackageName, C=C)>}; separator="\n">
 
 /*
  * Importing V24-Commons classes.
