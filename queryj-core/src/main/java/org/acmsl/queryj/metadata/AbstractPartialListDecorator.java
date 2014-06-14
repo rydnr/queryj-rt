@@ -129,7 +129,7 @@ public abstract class AbstractPartialListDecorator<V>
      * @param listDecorator such instance.
      */
     @SuppressWarnings("unused")
-    protected void setListDecorator(@NotNull final ListDecorator<Attribute<DecoratedString>> listDecorator)
+    protected void setListDecorator(@NotNull final ListDecorator<V> listDecorator)
     {
         immutableSetListDecorator(listDecorator);
     }
