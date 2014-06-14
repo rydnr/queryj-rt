@@ -58,5 +58,8 @@ import org.junit.runners.JUnit4;
 public class TablePartialListDecoratorTest
 {
     @Test
-    public void isListOfAttributes_detects_
+    public void isListOfAttributes_detects_types_correctly()
+    {
+
+    }
 }
