@@ -1865,7 +1865,7 @@ public abstract class AbstractTableDecorator
         @NotNull final CustomSqlProvider customSqlProvider)
     {
         return
-            getDifferentCustomResults(
+            getCustomResults(
                 table.getName(),
                 getName().getVoName().getValue(),
                 customSqlProvider.getSqlDAO(),
