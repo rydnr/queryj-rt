@@ -123,7 +123,7 @@ public class TableAttributesPartialListDecorator
         @NotNull final TableDecorator table,
         @NotNull final Operation operation)
     {
-        super(listDecorator);
+        super(listDecorator, operation);
         immutableSetTable(table);
         immutableSetOperation(operation);
     }
