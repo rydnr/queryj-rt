@@ -168,7 +168,7 @@ public abstract class AbstractTableAttributesListDecorator
      */
     @NotNull
     @Override
-    public ListDecorator<Attribute<DecoratedString>> getDifferent()
+    public PartialListDecorator<Attribute<DecoratedString>> getDifferent()
     {
         throw new RuntimeException(INVALID_OPERATION);
     }
