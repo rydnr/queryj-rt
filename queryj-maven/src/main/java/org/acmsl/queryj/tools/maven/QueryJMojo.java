@@ -1503,7 +1503,7 @@ public class QueryJMojo
                                         @Nullable final String t_strPk = field.getPk();
 
                                         fieldElement.setDynamicAttribute(
-                                            "pk", String.valueOf(Boolean.valueOf(t_strPk == null))
+                                            "pk", String.valueOf(Boolean.valueOf(t_strPk == null));
                                     }
                                 }
                             }
