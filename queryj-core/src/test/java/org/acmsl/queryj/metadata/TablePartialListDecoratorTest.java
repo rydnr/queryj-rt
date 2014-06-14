@@ -64,7 +64,7 @@ public class TablePartialListDecoratorTest
     {
         @NotNull final TableDecorator tableDecorator = EasyMock.createNiceMock(TableDecorator.class);
 
-        @NotNull final ListDecorator<Attribute<DecoratedString>> listDecorator = new
+        @NotNull final ListDecorator<Attribute<DecoratedString>> listDecorator =
         @NotNull final TablePartialListDecorator<Attribute<DecoratedString>> instance =
             new TablePartialListDecorator<Attribute<DecoratedString>>(listDecorator, tableDecorator);
     }
