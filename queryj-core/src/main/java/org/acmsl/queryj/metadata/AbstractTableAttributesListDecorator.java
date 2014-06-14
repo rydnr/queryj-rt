@@ -162,7 +162,6 @@ public abstract class AbstractTableAttributesListDecorator
                 this, getTable(), Operation.ONLY);
     }
 
-
     /**
      * {@inheritDoc}
      */
