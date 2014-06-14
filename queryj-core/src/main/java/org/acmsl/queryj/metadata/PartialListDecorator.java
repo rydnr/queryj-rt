@@ -50,6 +50,6 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2013/12/30 10:21
  */
 @ThreadSafe
-public interface PartialListDecorator
+public interface PartialListDecorator<T>
 {
 }
