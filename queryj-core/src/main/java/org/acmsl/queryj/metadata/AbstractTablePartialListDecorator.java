@@ -99,5 +99,4 @@ public abstract class AbstractTablePartialListDecorator<V>
     {
         return this.m__Table;
     }
-
 }
