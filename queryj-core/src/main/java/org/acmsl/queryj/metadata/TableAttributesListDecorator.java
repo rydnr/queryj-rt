@@ -146,7 +146,7 @@ public class TableAttributesListDecorator
      */
     @NotNull
     @Override
-    public List<Result<DecoratedString>> getCustomResults()
+    public ListDecorator<Result<DecoratedString>> getCustomResults()
     {
         throw new RuntimeException(INVALID_OPERATION);
     }
