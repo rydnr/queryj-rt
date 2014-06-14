@@ -198,9 +198,9 @@ endif>
     /**
      * Updates {@link <table.name.voName>} information.
 <if(parent)>
-    <table.all.minus.readOnlyAttributes:{ attr | <attribute_javadoc(attr=attr, C=C)>}; separator=",\n">)
+    <table.all.minus.readOnlyAttributes:{ attr | <attribute_javadoc(attr=attr, C=C)>}; separator="\n">
 <else>
-    <table.own.minus.readOnlyAttributes:{ attr | <attribute_javadoc(attr=attr, C=C)>}; separator=",\n">)
+    <table.own.minus.readOnlyAttributes:{ attr | <attribute_javadoc(attr=attr, C=C)>}; separator="\n">
 <endif>
      * @return the number of {@code <table.name>} rows updated.
      */
