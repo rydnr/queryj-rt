@@ -1636,7 +1636,6 @@ public class QueryJMojo
                ", \"jndiDataSource\": \"" + m__strJndiDataSource + '"' +
                ", \"sqlXmlFile\": \"" + m__SqlXmlFile + '"' +
                ", \"headerFile\": \"" + m__HeaderFile + '"' +
-               ", \"externallyManagedFields\": \"" + Arrays.toString(externallyManagedFields) + '"' +
                ", \"grammarFolder\": \"" + m__GrammarFolder + '"' +
                ", \"grammarName\": \"" + m__strGrammarName + '"' +
                ", \"grammarSuffix\": \"" + m__strGrammarSuffix + '"' +
