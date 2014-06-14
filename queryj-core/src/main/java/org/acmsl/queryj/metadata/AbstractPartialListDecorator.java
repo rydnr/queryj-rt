@@ -826,7 +826,7 @@ public class AbstractPartialListDecorator
         return
               "{ \"listDecorator\": " + m__ListDecorator
             + ", \"operation\": " + m__Operation
-            + " \"class\": \"" + AbstractPartialListDecorator.class.getSimpleName() + '"'
+            + ", \"class\": \"" + AbstractPartialListDecorator.class.getSimpleName() + '"'
             + ", \"package\": \"org.acmsl.queryj.metadata\" }";
     }
 }
