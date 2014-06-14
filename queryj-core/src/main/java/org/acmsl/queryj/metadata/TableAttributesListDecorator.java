@@ -70,7 +70,7 @@ import java.util.List;
  */
 @ThreadSafe
 public class TableAttributesListDecorator
-    extends AbstractTableListDecorator
+    extends AbstractTableListDecorator<Attribute<DecoratedString>>
 {
     /**
      * The serial version id.
