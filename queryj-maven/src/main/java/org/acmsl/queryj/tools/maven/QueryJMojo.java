@@ -34,6 +34,7 @@ package org.acmsl.queryj.tools.maven;
 /*
  * Importing QueryJ Core classes.
  */
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.acmsl.queryj.QueryJSettings;
 import org.acmsl.queryj.tools.ant.AntExternallyManagedFieldsElement;
 import org.acmsl.queryj.tools.ant.AntFieldElement;
@@ -1502,7 +1503,7 @@ public class QueryJMojo
                                         @Nullable final String t_strPk = field.getPk();
 
                                         fieldElement.setDynamicAttribute(
-                                            "pk", t_strPk == null ? Bool
+                                            "pk", String.valueOf(Boolean.valueOf()t_strPk == null ? Bool
                                     }
                                 }
                             }
