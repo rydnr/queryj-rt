@@ -112,8 +112,12 @@ public class TableResultDecoratorImpl
         return this.m__Result;
     }
 
+    /**
+     * Specifies the {@link TableDecorator table}.
+     * @param table such table.
+     */
     protected final void immutableSetTable(@NotNull final TableDecorator table)
     {
-
+        this.m__Table = table;
     }
 }
