@@ -391,7 +391,7 @@ public abstract class AbstractListDecorator<T>
     protected List<Result<DecoratedString>> retrieveCustomResults(
         @NotNull final List<T> items, @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
-        @NotNull final List<Attribute<DecoratedString>> result;
+        @NotNull final List<Result<DecoratedString>> result;
 
         if (tableDecoratorHelper.isListOfAttributes(items))
         {
