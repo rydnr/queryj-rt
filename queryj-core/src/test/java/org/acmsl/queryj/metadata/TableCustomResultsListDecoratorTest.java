@@ -80,7 +80,14 @@ public class TableCustomResultsListDecoratorTest
         @NotNull final List<Result<DecoratedString>> list = new ArrayList<>(2);
 
         @NotNull final Result<DecoratedString> result1 =
-            new ResultElement<DecoratedString>("id1", null);
+            new ResultElement<>(new DecoratedString("id1"), null);
+
+        @NotNull final Result<DecoratedString> result2 =
+            new ResultElement<>(new DecoratedString("id2"), null);
+
+        list.add(result1);
+        list.add(result2);
+
         @NotNull final TableDecorator tableDecorator = EasyMock.createNiceMock(TableDecorator.class);
 
         @NotNull final TableCustomResultsListDecorator instance =
