@@ -175,14 +175,6 @@ public interface TableDecorator
     Result<DecoratedString> getCustomResult();
 
     /**
-     * Retrieves the custom results (referred indirectly by the custom queries).
-     * @return such information.
-     */
-    @SuppressWarnings("unused")
-    @Nullable
-    ListDecorator<Result<DecoratedString>> getCustomResults();
-
-    /**
      * Retrieves the custom selects.
      * @return such list of {@link Sql} elements.
      */
