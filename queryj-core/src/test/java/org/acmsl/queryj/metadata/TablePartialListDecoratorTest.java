@@ -98,7 +98,7 @@ public class TablePartialListDecoratorTest
 
         @NotNull final Attribute<DecoratedString> attribute2 =
             new AbstractAttribute<DecoratedString>(
-                new DecoratedString("name1"),
+                new DecoratedString("name2"),
                 Types.BIGINT,
                 new DecoratedString("long"),
                 new DecoratedString("table"),
