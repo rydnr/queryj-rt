@@ -722,7 +722,7 @@ public class TablePartialListDecorator<V>
      * @return such list.
      */
     @NotNull
-    public ListDecorator<Attribute<DecoratedString>> getDifferent()
+    public ListDecorator<V> getDifferent()
     {
         @NotNull final ListDecorator<Attribute<DecoratedString>> items = getItems();
     }
