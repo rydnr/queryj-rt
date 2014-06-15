@@ -75,12 +75,4 @@ public class TableCustomResultsListDecorator
     {
         super(list, table);
     }
-
-    /**
-     * Retrieves the custom results.
-     * @param items the items.
-     * @return such results, or an empty list if the items are of a different kind.
-     */
-    @NotNull
-    protected List<Result<DecoratedString>> retrieveCustomResults(@NotNull final List<V> items)
 }
