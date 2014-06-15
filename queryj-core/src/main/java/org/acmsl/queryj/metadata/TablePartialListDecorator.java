@@ -737,7 +737,7 @@ public class TablePartialListDecorator<V>
     @SuppressWarnings("unchecked")
     @NotNull
     protected ListDecorator<V> getDifferent(
-        @NotNull final List<V> items,
+        @NotNull final ListDecorator<V> items,
         @NotNull final TableDecorator table,
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
