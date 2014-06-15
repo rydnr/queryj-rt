@@ -487,7 +487,7 @@ public abstract class AbstractResultDecorator<V>
      */
     @NotNull
     public List<Property<DecoratedString>> getImplicitProperties(
-        @NotNull final Result<String> sqlResult,
+        @NotNull final Result<V> sqlResult,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
         @NotNull final DecoratorFactory decoratorFactory,
