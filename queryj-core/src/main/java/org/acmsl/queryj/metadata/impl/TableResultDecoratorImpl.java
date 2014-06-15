@@ -82,6 +82,10 @@ public class TableResultDecoratorImpl
         immutableSetTable(table);
     }
 
+    /**
+     * Specifies the {@link Result result} to decorate.
+     * @param result the result.
+     */
     protected final void immutableSetResult(@NotNull final Result<DecoratedString> result)
     {
         this.m__Result = result;
