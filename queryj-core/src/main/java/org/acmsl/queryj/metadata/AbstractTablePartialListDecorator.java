@@ -50,7 +50,7 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Base class for partial list decorators, wrapping a table.
- * @param <V> the
+ * @param <V> the type of the items.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/06/14 18:42
