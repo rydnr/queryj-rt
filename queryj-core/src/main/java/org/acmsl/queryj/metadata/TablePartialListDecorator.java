@@ -736,7 +736,9 @@ public class TablePartialListDecorator<V>
      */
     @NotNull
     protected ListDecorator<V> getDifferent(
-        @NotNull final List<V> items, @NotNull final TableDecoratorHelper tableDecoratorHelper)
+        @NotNull final List<V> items,
+        @NotNull final TableDecorator table,
+        @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
         @NotNull final ListDecorator<V> result;
 
