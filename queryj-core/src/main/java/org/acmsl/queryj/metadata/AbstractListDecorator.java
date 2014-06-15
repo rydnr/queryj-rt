@@ -372,7 +372,7 @@ public abstract class AbstractListDecorator<T>
 
         if (list.size() > 0)
         {
-            @Nullable final V item = list.get(0);
+            @Nullable final T item = list.get(0);
 
             if (item instanceof Result)
             {
