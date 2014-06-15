@@ -831,7 +831,7 @@ public abstract class AbstractResultDecorator<V>
      * @param result the decorated result.
      * @return such value.
      */
-    protected final int hashCode(@NotNull final Result<String> result)
+    protected final int hashCode(@NotNull final Result<V> result)
     {
         return result.hashCode();
     }
