@@ -822,7 +822,7 @@ public abstract class AbstractResultDecorator<V>
      * @return such value.
      */
     @Override
-    public final int hashCode()
+    public int hashCode()
     {
         return hashCode(getResult());
     }
