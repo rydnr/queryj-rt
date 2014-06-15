@@ -99,6 +99,9 @@ public class TableCustomResultsListDecorator
     @NotNull
     public List<Result<DecoratedString>> decorate(@NotNull final List<Result<DecoratedString>> items)
     {
-        @NotNull final List<Result<DecoratedString>> result = new ArrayList<>()
+        @NotNull final List<Result<DecoratedString>> result = new ArrayList<>(items.size());
+
+        for (@Nullable final )
+        return result;
     }
 }
