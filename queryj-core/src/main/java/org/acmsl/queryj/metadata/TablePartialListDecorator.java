@@ -340,7 +340,7 @@ public class TablePartialListDecorator<V>
      */
     @NotNull
     @Override
-    public List<Result<DecoratedString>> getCustomResults()
+    public ListDe<Result<DecoratedString>> getCustomResults()
     {
         return getTable().getCustomResults();
     }
