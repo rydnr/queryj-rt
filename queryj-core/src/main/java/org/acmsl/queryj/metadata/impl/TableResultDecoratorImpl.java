@@ -111,4 +111,9 @@ public class TableResultDecoratorImpl
     {
         return this.m__Result;
     }
+
+    protected final void immutableSetTable(@NotNull final TableDecorator table)
+    {
+
+    }
 }
