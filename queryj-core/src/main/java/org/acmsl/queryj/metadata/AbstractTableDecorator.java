@@ -1866,10 +1866,10 @@ public abstract class AbstractTableDecorator
         @NotNull final MetadataManager metadataManager,
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final CustomSqlProvider customSqlProvider)
-    )
     {
         return createTableDecorator(getTable(), getMetadataManager(), getDecoratorFactory(), getCustomSqlProvider());
     }
+
     /**
      * Retrieves the list of different results defined for this table (using the referring custom-selects).
      * @return such list.
