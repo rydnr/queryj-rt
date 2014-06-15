@@ -1869,7 +1869,7 @@ public abstract class AbstractTableDecorator
     {
         return
             decoratorFactory.createDecorator(
-                table, metadataManager, decoratorFactory, customSqlProvider));
+                table, metadataManager, customSqlProvider));
     }
 
     /**
