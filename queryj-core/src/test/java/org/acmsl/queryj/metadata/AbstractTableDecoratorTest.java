@@ -351,6 +351,9 @@ public class AbstractTableDecoratorTest
         }
     }
 
+    /**
+     * Checks whether isListOfAttributes detects types correctly.
+     */
     @Test
     public void isListOfAttributes_detects_types_correctly()
     {
