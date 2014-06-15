@@ -332,66 +332,6 @@ public abstract class AbstractListDecorator<T>
     }
 
     /**
-     * Checks whether given list is composed of {@link org.acmsl.queryj.metadata.vo.Attribute attributes} or not.
-     * @param list such list.
-     * @return {@code true} in such case.
-     */
-    protected boolean isListOfAttributes(@NotNull final List<T> list)
-    {
-        final boolean result;
-
-        if (list.size() > 0)
-        {
-            @Nullable final T item = list.get(0);
-
-            if (item instanceof Attribute)
-            {
-                result = true;
-            }
-            else
-            {
-                result = false;
-            }
-        }
-        else
-        {
-            result = true;
-        }
-
-        return result;
-    }
-
-    /**
-     * Checks whether given list is composed of {@link Attribute attributes} or not.
-     * @param list such list.
-     * @return {@code true} in such case.
-     */
-    protected boolean isListOfCustomResults(@NotNull final List<T> list)
-    {
-        final boolean result;
-
-        if (list.size() > 0)
-        {
-            @Nullable final T item = list.get(0);
-
-            if (item instanceof Result)
-            {
-                result = true;
-            }
-            else
-            {
-                result = false;
-            }
-        }
-        else
-        {
-            result = true;
-        }
-
-        return result;
-    }
-
-    /**
      * Writes a textual representation of the instance.
      * @return such text.
      */
