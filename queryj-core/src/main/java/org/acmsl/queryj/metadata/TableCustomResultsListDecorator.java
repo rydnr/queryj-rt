@@ -53,6 +53,7 @@ import org.checkthread.annotations.ThreadSafe;
 /*
  * Importing JDK classes.
  */
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -98,6 +99,6 @@ public class TableCustomResultsListDecorator
     @NotNull
     public List<Result<DecoratedString>> decorate(@NotNull final List<Result<DecoratedString>> items)
     {
-        return super.getItems();
+        @NotNull final List<Result<DecoratedString>> result = new ArrayList<>()
     }
 }
