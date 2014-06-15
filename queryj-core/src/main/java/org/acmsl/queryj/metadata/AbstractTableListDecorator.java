@@ -291,7 +291,7 @@ public abstract class AbstractTableListDecorator<V>
     protected List<Attribute<DecoratedString>> retrieveAttributes(
         @NotNull final List<V> items, @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
-        @NotNull final List<DecoratedString> result;
+        @NotNull final List<Attribute<DecoratedString>> result;
 
         if (tableDecoratorHelper.isListOfAttributes(items))
         {
