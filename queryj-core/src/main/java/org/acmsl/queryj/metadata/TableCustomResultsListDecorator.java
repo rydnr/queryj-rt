@@ -90,7 +90,7 @@ public class TableCustomResultsListDecorator
     @Override
     public List<Result<DecoratedString>> getItems()
     {
-        return decorate(super.getItems());
+        return decorate(super.getItems(), getTable());
     }
 
     /**
