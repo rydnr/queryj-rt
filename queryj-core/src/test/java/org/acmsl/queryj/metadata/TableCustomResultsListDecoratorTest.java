@@ -60,6 +60,7 @@ public class TableCustomResultsListDecoratorTest
     @Test
     public void getItems_returns_decorated_results()
     {
-        @NotNull final
+        @NotNull final TableCustomResultsListDecorator instance =
+            new TableCustomResultsListDecorator()
     }
 }
