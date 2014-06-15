@@ -395,7 +395,7 @@ public abstract class AbstractListDecorator<T>
 
         if (tableDecoratorHelper.isListOfAttributes(items))
         {
-            result = (List<Attribute<DecoratedString>>) items;
+            result = (List<Result<DecoratedString>>) items;
         }
         else
         {
