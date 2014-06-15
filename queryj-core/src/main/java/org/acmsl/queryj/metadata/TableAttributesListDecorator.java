@@ -231,16 +231,6 @@ public class TableAttributesListDecorator
         throw new RuntimeException(INVALID_OPERATION);
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    @NotNull
-    @Override
-    public List<DecoratedString> getAttributeTypes()
-    {
-        return super.getAttributeTypes();
-    }
-
     // Table implementation
     /**
      * {@inheritDoc}
