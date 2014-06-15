@@ -62,5 +62,8 @@ import java.util.List;
 public class TableCustomResultsListDecorator
     extends AbstractTableListDecorator
 {
-
+    public TableCustomResultsListDecorator(@NotNull final List list, @NotNull final TableDecorator table)
+    {
+        super(list, table);
+    }
 }
