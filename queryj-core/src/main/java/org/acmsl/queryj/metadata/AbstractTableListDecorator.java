@@ -281,7 +281,7 @@ public abstract class AbstractTableListDecorator<V>
         @NotNull final MetadataTypeManager metadataTypeManager,
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
-        if (isListOfAttributes(items))
+        if (tableDecoratorHelper.isListOfAttributes(items))
         {
         return tableDecoratorHelper.getAttributeTypes(items, metadataTypeManager);
     }
