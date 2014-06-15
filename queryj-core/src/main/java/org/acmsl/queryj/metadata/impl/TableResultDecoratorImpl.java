@@ -142,5 +142,37 @@ public class TableResultDecoratorImpl
         return this.m__Table;
     }
 
+    @Override
+    public boolean equals(final Object o)
+    {
+        if (this == o)
+        {
+            return true;
+        }
+        if (!(o instanceof TableResultDecoratorImpl))
+        {
+            return false;
+        }
 
+        TableResultDecoratorImpl that = (TableResultDecoratorImpl) o;
+
+        if (!m__Result.equals(that.m__Result))
+        {
+            return false;
+        }
+        if (!m__Table.equals(that.m__Table))
+        {
+            return false;
+        }
+
+        return true;
+    }
+
+    @Override
+    public int hashCode()
+    {
+        int result = m__Result.hashCode();
+        result = 31 * result + m__Table.hashCode();
+        return result;
+    }
 }
