@@ -38,6 +38,7 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.customsql.Result;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -65,7 +66,7 @@ public class TableCustomResultsListDecorator
      * @param list the list.
      * @param table the {@link TableDecorator table}.
      */
-    public TableCustomResultsListDecorator(@NotNull final List<> list, @NotNull final TableDecorator table)
+    public TableCustomResultsListDecorator(@NotNull final List<Result<DecoratedString>> list, @NotNull final TableDecorator table)
     {
         super(list, table);
     }
