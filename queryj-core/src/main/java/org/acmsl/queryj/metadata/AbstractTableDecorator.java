@@ -1602,6 +1602,7 @@ public abstract class AbstractTableDecorator
 
     /**
      * Decorates given {@link Result results}.
+     * @param tableDecorator the {@link TableDecorator table}.
      * @param results the results to decorate.
      * @return the decorated results.
      */
