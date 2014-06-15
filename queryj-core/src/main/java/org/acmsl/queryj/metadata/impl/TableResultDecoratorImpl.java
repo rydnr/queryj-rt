@@ -139,11 +139,7 @@ public class TableResultDecoratorImpl<V>
         {
             @NotNull final TableResultDecoratorImpl that = (TableResultDecoratorImpl) o;
 
-            if (!m__Result.equals(that.m__Result))
-            {
-                result = false;
-            }
-            else if (!m__Table.equals(that.m__Table))
+            if (!m__Table.equals(that.m__Table))
             {
                 result = false;
             }
