@@ -966,7 +966,7 @@ public class CachingTableDecorator
     }
 
     /**
-     * Retrieves the list of different results defined for this table (using the referring custom-selects).
+     * Retrieves the list of results defined for this table (using the referring custom-selects).
      * @return such list.
      */
     @NotNull
