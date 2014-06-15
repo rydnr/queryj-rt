@@ -168,7 +168,7 @@ public class TableResultDecoratorImpl<V>
     @Override
     public int hashCode()
     {
-        int result = m__Result.hashCode();
+        int result = super.hashCode();
 
         result = 31 * result + m__Table.hashCode();
 
