@@ -51,6 +51,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -65,8 +66,11 @@ public class TableCustomResultsListDecoratorTest
     @Test
     public void getItems_returns_decorated_results()
     {
+        @NotNull final List<Result<DecoratedString>> list = new ArrayList<>(2);
+
         @NotNull final TableCustomResultsListDecorator instance =
-            new TableCustomResultsListDecorator();
+            new TableCustomResultsListDecorator(
+                list, tableDecorator);
 
         @NotNull final List<Result<DecoratedString>> items =
             instance.getItems();
