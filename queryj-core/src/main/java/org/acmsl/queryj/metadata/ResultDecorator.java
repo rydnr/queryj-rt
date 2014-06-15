@@ -66,7 +66,7 @@ public interface ResultDecorator<V>
      * @return such element.
      */
     @NotNull
-    Result<String> getResult();
+    Result<V> getResult();
 
     /**
      * Retrieves the properties.
