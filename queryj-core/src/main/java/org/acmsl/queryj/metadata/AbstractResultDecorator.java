@@ -902,7 +902,7 @@ public abstract class AbstractResultDecorator<V>
                 resultElement.compareTo(
                     new ResultElement<>(
                         ("" + object.getId()),
-                        (object.getClassValue() != null ? object.getClassValue().getValue() : null)));
+                        (object.getClassValue() != null ? "" + object.getClassValue() : null)));
         }
 
         return result;
