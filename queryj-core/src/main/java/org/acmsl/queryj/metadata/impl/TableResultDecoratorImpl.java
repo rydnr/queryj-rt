@@ -107,7 +107,7 @@ public class TableResultDecoratorImpl
      * @return such instance.
      */
     @NotNull
-    public ResultDecorator getResult()
+    public Result getResult()
     {
         return this.m__Result;
     }
