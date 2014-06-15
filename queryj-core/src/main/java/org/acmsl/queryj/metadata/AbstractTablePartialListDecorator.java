@@ -146,7 +146,7 @@ public abstract class AbstractTablePartialListDecorator<V>
      * @param list such list.
      * @return {@code true} in such case.
      */
-    protected boolean isListOfAttributes(@NotNull final ListDecorator<V> list)
+    protected boolean isListOfCustomResults(@NotNull final ListDecorator<V> list)
     {
         final boolean result;
 
