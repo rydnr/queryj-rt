@@ -86,7 +86,7 @@ public class TableResultDecoratorImpl<V>
      * @param table the {@link TableDecorator table}.
      */
     public TableResultDecoratorImpl(
-        @NotNull final Result<DecoratedString> item,
+        @NotNull final Result<V> item,
         @NotNull final TableDecorator table,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final DecoratorFactory decoratorFactory)
