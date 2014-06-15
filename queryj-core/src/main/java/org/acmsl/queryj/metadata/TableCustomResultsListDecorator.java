@@ -43,6 +43,7 @@ import org.acmsl.queryj.customsql.Result;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.metadata.impl.TableResultDecoratorImpl;
 import org.jetbrains.annotations.NotNull;
 
 /*
