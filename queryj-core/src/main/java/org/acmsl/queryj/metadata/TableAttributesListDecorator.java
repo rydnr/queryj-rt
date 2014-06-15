@@ -236,16 +236,6 @@ public class TableAttributesListDecorator
     /**
      * {@inheritDoc}
      */
-    @NotNull
-    @Override
-    public MetadataManager getMetadataManager()
-    {
-        return getTable().getMetadataManager();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int compareTo(final Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>> table)
     {
