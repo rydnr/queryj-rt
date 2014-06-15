@@ -109,7 +109,7 @@ public class TableCustomResultsListDecorator
         {
             if (item != null)
             {
-                result.add(decorate(item))
+                result.add(decorate(item, table));
             }
         }
         return result;
