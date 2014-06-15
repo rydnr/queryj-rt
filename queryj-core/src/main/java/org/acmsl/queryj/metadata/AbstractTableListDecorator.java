@@ -360,13 +360,6 @@ public abstract class AbstractTableListDecorator<V>
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
         return tableDecoratorHelper.filterNullableAttributes(items);
-        }
-        else
-        {
-            result = new ArrayList<>(0);
-        }
-
-        return result;
     }
 
     // Table implementation
