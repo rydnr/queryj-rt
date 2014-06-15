@@ -82,5 +82,8 @@ public class TableResultDecoratorImpl
         immutableSetTable(table);
     }
 
-
+    protected final void immutableSetResult(@NotNull final Result<DecoratedString> result)
+    {
+        this.m__Result = result;
+    }
 }
