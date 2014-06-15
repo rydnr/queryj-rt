@@ -1971,7 +1971,7 @@ public abstract class AbstractTableDecorator
                         && (!matches(t_Result.getClassValue(), voName))
                         && (!result.contains(t_Result)))
                     {
-                        result.add(t_Result);
+                        result.add(decorate(t_Result);
                     }
                 }
             }
