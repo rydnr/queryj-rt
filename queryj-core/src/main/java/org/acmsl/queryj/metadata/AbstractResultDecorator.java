@@ -88,7 +88,7 @@ public abstract class AbstractResultDecorator<V>
     /**
      * The result element.
      */
-    private Result<String> m__Result;
+    private Result<V> m__Result;
 
     /**
      * The custom sql provider.
