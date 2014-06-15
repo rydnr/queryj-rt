@@ -59,7 +59,7 @@ import java.util.List;
  */
 @ThreadSafe
 public class TableCustomResultsListDecorator
-    extends AbstractTableListDecorator
+    extends AbstractTableListDecorator<Result<DecoratedString>>
 {
     /**
      * Creates a new instance.
