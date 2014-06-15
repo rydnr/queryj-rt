@@ -96,17 +96,6 @@ public class TableAttributesListDecorator
      */
     @NotNull
     @Override
-    public List<Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>>>
-    getAllParentTables()
-    {
-        throw new RuntimeException(INVALID_OPERATION);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @NotNull
-    @Override
     public ListDecorator<Attribute<DecoratedString>> getExternallyManagedAttributes()
     {
         throw new RuntimeException(INVALID_OPERATION);
