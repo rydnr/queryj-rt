@@ -119,27 +119,6 @@ public class TablePartialListDecoratorTest
             {
             };
 
-        @NotNull final Attribute<String> attribute2 =
-            new AttributeValueObject(
-                "name2",
-                Types.BIGINT,
-                "long",
-                "table",
-                "comment 2",
-                1,
-                10,
-                1,
-                null,
-                null,
-                null,
-                false,
-                null,
-                false,
-                false,
-                null,
-                null,
-                null);
-
         @NotNull final TableDecorator tableDecorator = EasyMock.createNiceMock(TableDecorator.class);
 
         @NotNull final ListDecorator<Attribute<DecoratedString>> listDecorator =
