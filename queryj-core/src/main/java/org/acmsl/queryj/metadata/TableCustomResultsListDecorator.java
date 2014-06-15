@@ -53,7 +53,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 /**
- *
+ * {@link ListDecorator} for custom results.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/06/14 18:55
