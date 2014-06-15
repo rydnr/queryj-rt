@@ -724,6 +724,6 @@ public class TablePartialListDecorator<V>
     @NotNull
     public ListDecorator<V> getDifferent()
     {
-        @NotNull final ListDecorator<V> items = getItems();
+        @NotNull final List<V> items = getItems();
     }
 }
