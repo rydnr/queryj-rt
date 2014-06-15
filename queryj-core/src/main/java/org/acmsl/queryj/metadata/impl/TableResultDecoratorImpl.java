@@ -60,8 +60,8 @@ public class TableResultDecoratorImpl
 {
     /**
      * Creates a new decorator.
-     * @param item
-     * @param table
+     * @param item the {@link Result} to decorate.
+     * @param table the {@link TableDecorator table}.
      */
     public TableResultDecoratorImpl(
         @NotNull final Result<DecoratedString> item, @NotNull final TableDecorator table)
