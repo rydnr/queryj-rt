@@ -115,4 +115,7 @@ public class TableCustomResultsListDecorator
 
         return result;
     }
+
+    @NotNull
+    protected
 }
