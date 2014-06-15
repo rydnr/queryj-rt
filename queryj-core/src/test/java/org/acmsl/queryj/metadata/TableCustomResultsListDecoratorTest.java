@@ -40,6 +40,10 @@ package org.acmsl.queryj.metadata;
  */
 import org.acmsl.queryj.customsql.Result;
 import org.easymock.EasyMock;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
