@@ -1869,7 +1869,7 @@ public abstract class AbstractTableDecorator
     }
     /**
      * Retrieves a {@link TableDecorator}.
-     * @param table the {@link Table}.
+     * @param tableName the table name..
      * @return such decorator.
      */
     @NotNull
