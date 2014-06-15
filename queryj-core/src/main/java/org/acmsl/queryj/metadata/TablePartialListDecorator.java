@@ -114,8 +114,6 @@ public class TablePartialListDecorator<V>
     public ListDecorator<Attribute<DecoratedString>> getReadOnly()
     {
         return getReadOnlyAttributes();
-
-        return result;
     }
 
     /**
