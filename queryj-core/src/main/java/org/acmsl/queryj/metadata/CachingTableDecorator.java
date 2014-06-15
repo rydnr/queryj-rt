@@ -364,29 +364,6 @@ public class CachingTableDecorator
     }
 
     /**
-     * Creates a table decorator.
-     * @param parentTable the table name.
-     * @param metadataManager the {@link MetadataManager} instance.
-     * @param decoratorFactory the {@link DecoratorFactory} instance.
-     * @param customSqlProvider the {@link CustomSqlProvider} instance.
-     * @return such decorator.
-     */
-    @SuppressWarnings("unused")
-    protected TableDecorator createTableDecorator(
-        @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> parentTable,
-        @NotNull final MetadataManager metadataManager,
-        @NotNull final DecoratorFactory decoratorFactory,
-        @NotNull final CustomSqlProvider customSqlProvider)
-    {
-        return
-            new CachingTableDecorator(
-                parentTable,
-                metadataManager,
-                decoratorFactory,
-                customSqlProvider);
-    }
-
-    /**
      * Specifies the cached all parent tables.
      * @param list such list.
      */
