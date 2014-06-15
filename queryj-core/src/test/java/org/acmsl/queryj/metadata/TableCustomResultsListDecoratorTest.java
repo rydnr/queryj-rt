@@ -64,6 +64,9 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public class TableCustomResultsListDecoratorTest
 {
+    /**
+     * Checks whether getItems() returns decorated results.
+     */
     @Test
     public void getItems_returns_decorated_results()
     {
