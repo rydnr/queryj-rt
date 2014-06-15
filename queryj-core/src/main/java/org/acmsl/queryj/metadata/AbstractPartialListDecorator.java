@@ -223,7 +223,7 @@ public abstract class AbstractPartialListDecorator<V>
      * @return the partial result.
      */
     @NotNull
-    public PartialListDecorator minus()
+    public PartialListDecorator different()
     {
         throw new RuntimeException(AbstractTableListDecorator.INVALID_OPERATION);
     }
