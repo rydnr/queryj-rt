@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Obvious implementation of TableResultDecorator.
  *
  * Date: 2014/06/15
  * Time: 19:27
