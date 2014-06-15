@@ -724,9 +724,12 @@ public class TablePartialListDecorator<V>
     @NotNull
     public ListDecorator<V> getDifferent()
     {
+        return getDifferent(getItems());
     }
+
     /**
      * Retrieves the items, after removing duplicates.
+     * @param items the items.
      * @return such list.
      */
     @NotNull
