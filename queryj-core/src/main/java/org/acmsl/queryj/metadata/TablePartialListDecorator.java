@@ -116,17 +116,6 @@ public class TablePartialListDecorator<V>
         throw new RuntimeException(AbstractTableListDecorator.INVALID_OPERATION);
     }
 
-    /**
-     * Applies the "minus" operation to the items.
-     * @return the partial result.
-     */
-    @Override
-    @NotNull
-    public PartialListDecorator minus()
-    {
-        throw new RuntimeException(AbstractTableListDecorator.INVALID_OPERATION);
-    }
-
     // TableDecorator implementation
 
     /**
