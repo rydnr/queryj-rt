@@ -58,5 +58,5 @@ import org.junit.runners.JUnit4;
 public class TableCustomResultsListDecoratorTest
 {
     @Test
-    public void
+    public void getItems_returns_decora
 }
