@@ -179,9 +179,7 @@ public class TablePartialListDecorator<V>
     @NotNull
     public ListDecorator<Attribute<DecoratedString>> getExternallyManaged()
     {
-        @NotNull final ListDecorator<Attribute<DecoratedString>> result = getExternallyManagedAttributes();
-
-        return result;
+        return getExternallyManagedAttributes();
     }
 
     /**
