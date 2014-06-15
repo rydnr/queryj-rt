@@ -72,7 +72,10 @@ public class TablePartialListDecoratorTest
         @NotNull final ListDecorator<Attribute<DecoratedString>> listDecorator =
             new TableAttributesListDecorator(list, tableDecorator);
         @NotNull final TablePartialListDecorator<Attribute<DecoratedString>> instance =
-            new TablePartialListDecorator<Attribute<DecoratedString>>(
+            new TablePartialListDecorator<>(
                 listDecorator, tableDecorator, Operation.DIFFERENT);
+
+        @NotNull final ListDecorator<Attribute<DecoratedString>>
+        Assert.assertEquals()
     }
 }
