@@ -1869,7 +1869,7 @@ public abstract class AbstractTableDecorator
     {
         return
             new CachingTableDecorator(
-                getTable(), getMetadataManager(), getDecoratorFactory(), getCustomSqlProvider()),
+                table, metadataManager,
     }
 
     /**
