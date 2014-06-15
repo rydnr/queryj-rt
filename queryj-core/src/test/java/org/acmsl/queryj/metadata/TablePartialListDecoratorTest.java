@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for TablePartialListDecorator.
  *
  * Date: 2014/06/15
  * Time: 11:21
