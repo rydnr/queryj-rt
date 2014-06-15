@@ -92,7 +92,8 @@ public class TableCustomResultsListDecorator
     }
 
     /**
-     * {@inheritDoc}
+     * Decorates the items.
+     * @param items the items to decorate.
      */
     @NotNull
     public List<Result<DecoratedString>> decorate(@NotNull final List<Result<DecoratedString>> items)
