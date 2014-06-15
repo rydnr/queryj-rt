@@ -155,7 +155,7 @@ public class TableResultDecoratorImpl
         {
             result = true;
         }
-        else if (!(o instanceof TableResultDecoratorImpl))
+        else if (!o instanceof TableResultDecoratorImpl))
         {
             result = false;
         }
