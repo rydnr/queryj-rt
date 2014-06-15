@@ -236,17 +236,6 @@ public class TableAttributesListDecorator
     /**
      * {@inheritDoc}
      */
-    @Nullable
-    @Override
-    public Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>>
-    getParentTable()
-    {
-        return getTable().getParentTable();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean isStatic()
     {
