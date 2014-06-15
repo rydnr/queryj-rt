@@ -38,10 +38,6 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing JetBrains annotations.
  */
-import org.acmsl.queryj.customsql.CustomSqlProvider;
-import org.acmsl.queryj.metadata.vo.Attribute;
-import org.acmsl.queryj.metadata.vo.ForeignKey;
-import org.acmsl.queryj.metadata.vo.Table;
 import org.jetbrains.annotations.NotNull;
 
 /*
