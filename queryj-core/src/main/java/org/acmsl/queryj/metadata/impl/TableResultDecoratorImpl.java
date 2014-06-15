@@ -100,4 +100,9 @@ public class TableResultDecoratorImpl
     {
         immutableSetResult(result);
     }
+
+    /**
+     * Retrieves the decorated {@link Result result}.
+     * @return such
+     */
 }
