@@ -209,7 +209,7 @@ public abstract class AbstractPartialListDecorator<V>
     }
 
     /**
-     * Applies the "minus" operation to the items.
+     * Applies the "" operation to the items.
      * @return the partial result.
      */
     @NotNull
@@ -219,7 +219,7 @@ public abstract class AbstractPartialListDecorator<V>
     }
 
     /**
-     * Applies the "minus" operation to the items.
+     * Applies the "different" operation to the items.
      * @return the partial result.
      */
     @NotNull
