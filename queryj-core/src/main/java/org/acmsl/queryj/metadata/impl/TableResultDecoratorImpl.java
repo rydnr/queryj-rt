@@ -69,12 +69,6 @@ public class TableResultDecoratorImpl<V>
     implements TableResultDecorator<V>
 {
     /**
-     * The result.
-     */
-    @NotNull
-    private Result<DecoratedString> m__Result;
-
-    /**
      * The table.
      */
     @NotNull
