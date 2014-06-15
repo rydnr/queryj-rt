@@ -421,7 +421,7 @@ public abstract class AbstractResultDecorator<V>
     /**
      * Retrieves the large-object-block properties.
      * @param properties the properties.
-     * @param metadataTypeManager the {@link MetadataTypeManager</code> instance.
+     * @param metadataTypeManager the {@link MetadataTypeManager} instance.
      * @param metadataUtils the <code>MetadataUtils</code> instance.
      * @return such collection.
      */
