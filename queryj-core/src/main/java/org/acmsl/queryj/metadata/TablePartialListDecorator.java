@@ -718,7 +718,7 @@ public class TablePartialListDecorator<V>
     }
 
     /**
-     *
+     * Retrieves the
      * @return
      */
     @NotNull
