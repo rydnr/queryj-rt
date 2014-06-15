@@ -69,6 +69,9 @@ public class TableCustomResultsListDecoratorTest
         @NotNull final List<Result<DecoratedString>> items =
             instance.getItems();
 
-        for (@Nullable final Result<DecoratedString>)
+        for (@Nullable final Result<DecoratedString> item : items)
+        {
+
+        }
     }
 }
