@@ -144,6 +144,10 @@ public class TableResultDecoratorImpl<V>
                 result = true;
             }
         }
+        else
+        {
+            result = super.equals()
+        }
 
         return result;
     }
