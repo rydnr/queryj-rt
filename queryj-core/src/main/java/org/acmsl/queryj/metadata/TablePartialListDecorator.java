@@ -94,16 +94,6 @@ public class TablePartialListDecorator<V>
     }
 
     // ListDecorator implementation
-    /**
-     * Retrieves the items.
-     * @return such information.
-     */
-    @Override
-    @NotNull
-    public List<Attribute<DecoratedString>> getItems()
-    {
-        throw new RuntimeException(AbstractTableListDecorator.INVALID_OPERATION);
-    }
 
     // TableDecorator implementation
 
