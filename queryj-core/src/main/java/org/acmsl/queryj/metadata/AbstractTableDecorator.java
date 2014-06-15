@@ -1862,7 +1862,7 @@ public abstract class AbstractTableDecorator
      * @param metadataManager the {@link MetadataManager}.
      * @param decoratorFactory the {@link DecoratorFactory}.
      * @param customSqlProvider the {@link CustomSqlProvider}.
-     * @return a
+     * @return a {@link TableDecorator}.
      */
     @NotNull
     protected TableDecorator createTableDecorator(
