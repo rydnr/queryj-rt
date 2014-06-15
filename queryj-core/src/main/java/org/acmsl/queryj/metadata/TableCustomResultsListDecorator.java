@@ -96,10 +96,12 @@ public class TableCustomResultsListDecorator
     /**
      * Decorates the items.
      * @param items the items to decorate.
+     * @param table the {@link TableDecorator table}.
+     * @return the decorated items.
      */
     @NotNull
     public List<Result<DecoratedString>> decorate(
-        @NotNull final List<Result<DecoratedString>> items, )
+        @NotNull final List<Result<DecoratedString>> items, @NotNull final TableDecorator table)
     {
         @NotNull final List<Result<DecoratedString>> result = new ArrayList<>(items.size());
 
