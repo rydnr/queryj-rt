@@ -75,4 +75,8 @@ public class TableCustomResultsListDecorator
     {
         super(list, table);
     }
+
+    /**
+     * Retrieves the
+     */
 }
