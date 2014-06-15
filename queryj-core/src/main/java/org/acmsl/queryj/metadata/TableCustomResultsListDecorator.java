@@ -88,6 +88,7 @@ public class TableCustomResultsListDecorator
     @Override
     public List<Result<DecoratedString>> getItems()
     {
+
         return super.getItems();
     }
 }
