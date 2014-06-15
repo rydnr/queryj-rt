@@ -62,7 +62,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public class TableResultDecoratorImpl
-    implements TableResultDecorator
+    implements TableResultDecorator<>
 {
     /**
      * The result.
