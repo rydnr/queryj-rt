@@ -79,6 +79,8 @@ public class TablePartialListDecoratorTest
         @NotNull final ListDecorator<Attribute<DecoratedString>> unique =
             instance.getDifferent();
 
-        Assert.assertEquals(unique.size())
+        Assert.assertEquals(2, unique.size());
+        Assert.assertTrue(unique.contains(attribute1));
+        Assert.assertTrue(unique.contains(attribute2));
     }
 }
