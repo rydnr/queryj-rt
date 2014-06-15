@@ -64,6 +64,7 @@ import java.util.List;
 
 /**
  * Partial list decorator for table attributes.
+ * @param <V> the type of the items.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2013/12/30 10:25
