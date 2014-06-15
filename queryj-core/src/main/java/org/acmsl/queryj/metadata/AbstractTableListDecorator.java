@@ -339,7 +339,9 @@ public abstract class AbstractTableListDecorator<V>
 
         if (tableDecoratorHelper.isListOfAttributes(items))
         {
-            result = tableDecoratorHelper.filterNullableAttributes(items);
+            result =
+                tableDecoratorHelper.filterNullableAttributes(
+                    (List<Attribute< DecoratedString >>) items);
         }
         else
         {
