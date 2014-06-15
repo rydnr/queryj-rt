@@ -88,4 +88,8 @@ public interface ListDecorator<T>
     @NotNull
     @SuppressWarnings("unused")
     PartialListDecorator getOnly();
+
+    /**
+     *
+     */
 }
