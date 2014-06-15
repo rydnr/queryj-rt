@@ -59,7 +59,7 @@ public class TableResultDecoratorImpl
     implements TableResultDecorator
 {
     /**
-     * Creates a new
+     * Creates a new decorator.
      * @param item
      * @param table
      */
