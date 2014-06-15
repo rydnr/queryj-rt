@@ -285,9 +285,9 @@ public abstract class AbstractTableListDecorator<V>
 
         if (tableDecoratorHelper.isListOfAttributes(items))
         {
-            @SuppressWarnings("unchecked")
             result =
                 tableDecoratorHelper.getAttributeTypes(
+                    @SuppressWarnings("unchecked")
                     (List<Attribute<DecoratedString>>) items, metadataTypeManager);
         }
         else
