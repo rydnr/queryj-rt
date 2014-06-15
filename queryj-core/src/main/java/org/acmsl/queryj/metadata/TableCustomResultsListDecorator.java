@@ -117,5 +117,5 @@ public class TableCustomResultsListDecorator
     }
 
     @NotNull
-    protected
+    protected TableResultDecorator decorate(@NotNull final )
 }
