@@ -137,7 +137,6 @@ public class TableAttributesListDecorator
 
     /**
      * Retrieves the custom result.
-     *
      * @return such {@link org.acmsl.queryj.metadata.ResultDecorator} element.
      */
     @Nullable
