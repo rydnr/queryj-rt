@@ -279,7 +279,7 @@ public abstract class AbstractTableListDecorator<V>
     @SuppressWarnings("unchecked")
     @NotNull
     protected List<DecoratedString> getAttributeTypes(
-        @NotNull final List<Attribute<DecoratedString>> items,
+        @NotNull final List<V> items,
         @NotNull final MetadataTypeManager metadataTypeManager,
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
