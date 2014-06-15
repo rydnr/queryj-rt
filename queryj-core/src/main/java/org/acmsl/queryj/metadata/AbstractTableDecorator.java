@@ -1609,7 +1609,7 @@ public abstract class AbstractTableDecorator
     @NotNull
     protected ListDecorator<Result<DecoratedString>> decorate(
         @NotNull final TableDecorator tableDecorator,
-        @NotNull final ListDecorator<Result<String>> results)
+        @NotNull final ListDecorator<Result<DecoratedString>> results)
     {
         return decorate(tableDecorator, results, getCustomSqlProvider(), getMetadataManager(), getDecoratorFactory());
     }
