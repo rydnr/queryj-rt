@@ -66,6 +66,9 @@ public class TableCustomResultsListDecoratorTest
         @NotNull final TableCustomResultsListDecorator instance =
             new TableCustomResultsListDecorator();
 
-        @NotNull final List<Result<DecoratedString>>
+        @NotNull final List<Result<DecoratedString>> items =
+            instance.getItems();
+
+
     }
 }
