@@ -77,6 +77,7 @@ public class TableCustomResultsListDecorator
     }
 
     /**
-     * Retrieves the
+     * Retrieves the custom results.
+     * @return such
      */
 }
