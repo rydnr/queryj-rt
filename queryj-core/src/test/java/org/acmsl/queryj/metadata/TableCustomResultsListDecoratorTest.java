@@ -38,6 +38,7 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.customsql.Result;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -47,6 +48,8 @@ import org.checkthread.annotations.ThreadSafe;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+
+import java.util.List;
 
 /**
  *
@@ -63,6 +66,6 @@ public class TableCustomResultsListDecoratorTest
         @NotNull final TableCustomResultsListDecorator instance =
             new TableCustomResultsListDecorator();
 
-        @NotNull final List<Result<>>
+        @NotNull final List<Result<DecoratedString>>
     }
 }
