@@ -90,6 +90,7 @@ public interface ListDecorator<T>
     PartialListDecorator getOnly();
 
     /**
-     *
+     * The "invalid operation" message.
      */
+
 }
