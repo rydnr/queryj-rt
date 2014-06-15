@@ -950,7 +950,7 @@ public class CachingTableDecorator
      * Specifies the cached different custom results.
      * @param results such results.
      */
-    protected void setCachedDifferentCustomResults(@NotNull final List<Result<DecoratedString>> results)
+    protected void setCachedCustomResults(@NotNull final List<Result<DecoratedString>> results)
     {
         immutableSetCachedDifferentCustomResults(results);
     }
@@ -978,7 +978,7 @@ public class CachingTableDecorator
         if (result == null)
         {
             result = super.getCustomResults();
-            setCachedDifferentCustomResults(result);
+            setCachedCustomResults(result);
         }
 
         return result;
