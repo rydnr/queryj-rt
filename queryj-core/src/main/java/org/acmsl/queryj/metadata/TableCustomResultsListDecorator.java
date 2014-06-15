@@ -96,7 +96,6 @@ public class TableCustomResultsListDecorator
      * {@inheritDoc}
      */
     @NotNull
-    @Override
     public List<Result<DecoratedString>> decorate(@NotNull final List<Result<DecoratedString>> rawItems)
     {
 
