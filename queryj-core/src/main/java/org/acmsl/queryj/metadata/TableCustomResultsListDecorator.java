@@ -66,6 +66,11 @@ public class TableCustomResultsListDecorator
     extends AbstractTableListDecorator<Result<DecoratedString>>
 {
     /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = 6374510951489078749L;
+
+    /**
      * Creates a new instance.
      * @param list the list.
      * @param table the {@link TableDecorator table}.
