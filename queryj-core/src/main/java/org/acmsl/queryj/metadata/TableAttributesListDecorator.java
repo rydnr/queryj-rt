@@ -221,7 +221,6 @@ public class TableAttributesListDecorator
 
     /**
      * Retrieves the nullable attributes.
-     *
      * @return such list.
      */
     @NotNull
