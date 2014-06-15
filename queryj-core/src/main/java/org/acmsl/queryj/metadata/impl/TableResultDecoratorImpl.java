@@ -59,8 +59,10 @@ public class TableResultDecoratorImpl
     implements TableResultDecorator
 {
     /**
-     * The item
+     * The result.
      */
+    @NotNull
+    private
     /**
      * Creates a new decorator.
      * @param item the {@link Result} to decorate.
