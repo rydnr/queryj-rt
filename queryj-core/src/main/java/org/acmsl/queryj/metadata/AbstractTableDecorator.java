@@ -1955,7 +1955,7 @@ public abstract class AbstractTableDecorator
 
         Collections.sort(result);
 
-        return new TableCustomResultsListDecorator(result, createTableDecorator());
+        return new TableCustomResultsListDecorator(result, createTableDecorator(table));
     }
 
     /**
