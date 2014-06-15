@@ -420,7 +420,7 @@ public abstract class AbstractTableListDecorator<V>
      */
     public boolean getContainsClobs()
     {
-        return contains(getItems(), Types.CLOB);
+        return contains(getAttributes(), Types.CLOB);
     }
 
     /**
