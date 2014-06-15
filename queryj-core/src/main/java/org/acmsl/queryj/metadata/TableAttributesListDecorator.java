@@ -197,7 +197,6 @@ public class TableAttributesListDecorator
 
     /**
      * Retrieves the parent foreign-key.
-     *
      * @return such foreign key.
      */
     @Nullable
