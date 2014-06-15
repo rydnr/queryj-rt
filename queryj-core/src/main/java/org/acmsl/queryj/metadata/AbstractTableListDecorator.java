@@ -278,6 +278,20 @@ public abstract class AbstractTableListDecorator<V>
     @NotNull
     protected List<Attribute<DecoratedString>> retrieveAttributes(@NotNull final List<V> items)
     {
+        @NotNull final List<DecoratedString> result;
+
+        if (tableDecoratorHelper.isListOfAttributes(items))
+        {
+            result =
+                tableDecoratorHelper.getAttributeTypes(
+                    (List<Attribute<DecoratedString>>) items, metadataTypeManager);
+        }
+        else
+        {
+            result = new ArrayList<>(0);
+        }
+
+        return result;
 
     }
     /**
