@@ -382,6 +382,8 @@ public class AbstractTableDecoratorTest
 
         list.add(attribute);
 
+        @NotNull final AbstractTableDecorator instance = setupTableDecorator(list, null);
+
         @NotNull final ListDecorator<Attribute<String>> listDecorator =
             new TableAttributesListDecorator(list, tableDecorator);
 
