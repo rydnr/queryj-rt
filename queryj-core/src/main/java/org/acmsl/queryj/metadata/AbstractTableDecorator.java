@@ -1621,6 +1621,7 @@ public abstract class AbstractTableDecorator
      */
     @NotNull
     protected ListDecorator<Result<DecoratedString>> decorate(
+        @NotNull final TableDecorator tableDecorator,
         @NotNull final ListDecorator<Result<String>> results,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
