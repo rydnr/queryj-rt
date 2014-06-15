@@ -59,7 +59,7 @@ public class TableResultDecoratorImpl
     implements TableResultDecorator
 {
     public TableResultDecoratorImpl(
-        final Result<DecoratedString> item, final TableDecorator table)
+        @NotNull final Result<DecoratedString> item, final TableDecorator table)
     {
     }
 }
