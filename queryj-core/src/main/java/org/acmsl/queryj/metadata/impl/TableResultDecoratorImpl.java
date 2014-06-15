@@ -62,7 +62,7 @@ public class TableResultDecoratorImpl
      * The result.
      */
     @NotNull
-    private Result<DecoratedString>
+    private Result<DecoratedString> result;
     /**
      * Creates a new decorator.
      * @param item the {@link Result} to decorate.
