@@ -275,6 +275,6 @@ public class TableDecoratorHelperTest
         @NotNull final AbstractTableDecorator instance =
             AbstractTableDecoratorTest.setupTableDecorator(list, null);
 
-        Assert.assertTrue(instance.isListOfAttributes(list));
+        Assert.assertTrue(instance.<>isListOfAttributes(list));
     }
 }
