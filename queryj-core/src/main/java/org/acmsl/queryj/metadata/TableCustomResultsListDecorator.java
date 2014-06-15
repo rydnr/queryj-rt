@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: {@link ListDecorator} for custom results.
  *
  * Date: 2014/06/14
  * Time: 18:55
