@@ -265,7 +265,7 @@ public abstract class AbstractTableListDecorator<V>
     {
         return
             getAttributeTypes(
-                ensuregetItems(),
+                retrieveAttributes(getItems()),
                 getMetadataManager().getMetadataTypeManager(),
                 TableDecoratorHelper.getInstance());
     }
