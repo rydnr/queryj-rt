@@ -111,7 +111,7 @@ public abstract class AbstractResultDecorator<V>
      * @param customSqlProvider the {@code CustomSqlProvider}, required
      * to decorate referred parameters.
      * @param metadataManager the <code>MetadataManager} instance.
-     * @param decoratorFactory the <code>DecoratorFactory</code> instance.
+     * @param decoratorFactory the {@code DecoratorFactory} instance.
      */
     public AbstractResultDecorator(
         @NotNull final Result<V> result,
