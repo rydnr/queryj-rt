@@ -63,6 +63,6 @@ public class TableCustomResultsListDecoratorTest
         @NotNull final TableCustomResultsListDecorator instance =
             new TableCustomResultsListDecorator();
 
-
+        @NotNull final List<Result<>>
     }
 }
