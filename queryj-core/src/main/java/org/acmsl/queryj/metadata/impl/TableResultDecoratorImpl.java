@@ -103,6 +103,6 @@ public class TableResultDecoratorImpl
 
     /**
      * Retrieves the decorated {@link Result result}.
-     * @return such
+     * @return such instance.
      */
 }
