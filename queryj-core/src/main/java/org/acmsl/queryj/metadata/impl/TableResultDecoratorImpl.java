@@ -175,6 +175,7 @@ public class TableResultDecoratorImpl
             {
                 result = true;
             }
+        }
 
         return true;
     }
