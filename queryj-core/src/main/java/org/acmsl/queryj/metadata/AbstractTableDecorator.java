@@ -1946,7 +1946,7 @@ public abstract class AbstractTableDecorator
      * @return such list.
      */
     @NotNull
-    protected ListDecorator<Result<String>> getCustomResults(
+    protected ListDecorator<Result<DecoratedString>> getCustomResults(
         @NotNull final String table,
         @NotNull final String voName,
         @NotNull final SqlDAO sqlDAO,
