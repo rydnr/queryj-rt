@@ -356,7 +356,7 @@ public abstract class AbstractTableListDecorator<V>
     @SuppressWarnings("unchecked")
     @NotNull
     public List<Attribute<DecoratedString>> getNullableAttributes(
-        @NotNull final List<V> items,
+        @NotNull final List<Attribute<DecoratedString>> items,
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
         @NotNull final List<Attribute<DecoratedString>> result;
