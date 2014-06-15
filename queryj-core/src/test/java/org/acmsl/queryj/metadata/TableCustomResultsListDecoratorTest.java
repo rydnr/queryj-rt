@@ -43,6 +43,7 @@ import org.acmsl.queryj.customsql.Result;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.customsql.ResultElement;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -78,7 +79,8 @@ public class TableCustomResultsListDecoratorTest
     {
         @NotNull final List<Result<DecoratedString>> list = new ArrayList<>(2);
 
-        @NotNull final Result<DecoratedString>
+        @NotNull final Result<DecoratedString> result1 =
+            new ResultElement<DecoratedString>()
         @NotNull final TableDecorator tableDecorator = EasyMock.createNiceMock(TableDecorator.class);
 
         @NotNull final TableCustomResultsListDecorator instance =
