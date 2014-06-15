@@ -72,6 +72,9 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public class TablePartialListDecoratorTest
 {
+    /**
+     * Checks getDifferent() removes duplicates.
+     */
     @Test
     public void getDifferent_removes_duplicates()
     {
