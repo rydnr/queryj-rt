@@ -754,7 +754,7 @@ public class TablePartialListDecorator<V>
 
         if (tableDecoratorHelper.isListOfAttributes(items))
         {
-            result = new TableAttributesListDecorator((List<Attribute<DecoratedString>>) aux, table);
+            result = (ListDecorator <V>) new TableAttributesListDecorator((List<Attribute<DecoratedString>>) aux, table);
         }
         return
     }
