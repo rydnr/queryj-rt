@@ -160,6 +160,7 @@ public class TableResultDecoratorImpl
             result = false;
         }
         else
+        {
         TableResultDecoratorImpl that = (TableResultDecoratorImpl) o;
 
         if (!m__Result.equals(that.m__Result))
