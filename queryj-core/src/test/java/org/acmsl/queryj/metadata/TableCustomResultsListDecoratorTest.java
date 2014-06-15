@@ -88,11 +88,11 @@ public class TableCustomResultsListDecoratorTest
         list.add(result1);
         list.add(result2);
 
-        @NotNull final TableDecorator tableDecorator = EasyMock.createNiceMock(TableDecorator.class);
+        @NotNull final TableDecorator tableDecorator =
+            EasyMock.createNiceMock(TableDecorator.class);
 
         @NotNull final TableCustomResultsListDecorator instance =
-            new TableCustomResultsListDecorator(
-                list, tableDecorator);
+            new TableCustomResultsListDecorator(list, tableDecorator);
 
         @NotNull final List<Result<DecoratedString>> items =
             instance.getItems();
