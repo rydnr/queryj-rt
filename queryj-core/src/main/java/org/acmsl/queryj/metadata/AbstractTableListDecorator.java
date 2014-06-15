@@ -323,7 +323,6 @@ public abstract class AbstractTableListDecorator<V>
         return tableDecoratorHelper.filterNullableAttributes(attributes);
     }
 
-
     // Table implementation
     /**
      * {@inheritDoc}
