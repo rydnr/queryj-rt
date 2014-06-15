@@ -157,7 +157,7 @@ public class TableResultDecoratorImpl
         }
         else if (!(o instanceof TableResultDecoratorImpl))
         {
-            return false;
+            result = false;
         }
 
         TableResultDecoratorImpl that = (TableResultDecoratorImpl) o;
