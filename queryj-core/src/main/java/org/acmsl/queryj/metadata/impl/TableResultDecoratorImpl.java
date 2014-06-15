@@ -55,9 +55,10 @@ import org.jetbrains.annotations.Nullable;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
+ *
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
- *        Created: 2014/06/15 19:27
+ * Created: 2014/06/15 19:27
  */
 @ThreadSafe
 public class TableResultDecoratorImpl
