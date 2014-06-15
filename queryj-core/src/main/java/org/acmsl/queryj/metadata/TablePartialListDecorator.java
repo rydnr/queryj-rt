@@ -105,17 +105,6 @@ public class TablePartialListDecorator<V>
         throw new RuntimeException(AbstractTableListDecorator.INVALID_OPERATION);
     }
 
-    /**
-     * Applies the "plus" operation to the items.
-     * @return the partial result.
-     */
-    @Override
-    @NotNull
-    public PartialListDecorator plus()
-    {
-        throw new RuntimeException(AbstractTableListDecorator.INVALID_OPERATION);
-    }
-
     // TableDecorator implementation
 
     /**
