@@ -201,6 +201,8 @@ public class TableResultDecoratorImpl
     public String toString()
     {
         return
-            "{ "
+            "{ \"result\": " + this.m__Result
+            + ", \"table\": " + this.m__Table
+            + ", \"class\" : \""
     }
 }
