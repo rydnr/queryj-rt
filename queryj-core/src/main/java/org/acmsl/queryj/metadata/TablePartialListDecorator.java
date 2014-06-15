@@ -749,7 +749,10 @@ public class TablePartialListDecorator<V>
             }
         }
 
-        if (tableDecoratorHelper.isListOfAttributes())
+        if (tableDecoratorHelper.isListOfAttributes(items))
+        {
+            result = new TableAttributesListDecorator()
+        }
         return
     }
 }
