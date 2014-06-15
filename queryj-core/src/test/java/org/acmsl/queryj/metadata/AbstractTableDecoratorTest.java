@@ -357,7 +357,7 @@ public class AbstractTableDecoratorTest
     @Test
     public void isListOfAttributes_detects_types_correctly()
     {
-        @NotNull final TableDecorator tableDecorator = EasyMock.createNiceMock(TableDecorator.class);
+        @NotNull final TableDecorator tableDecorator = crea
 
         @NotNull final List<Attribute<String>> list = new ArrayList<>(1);
 
