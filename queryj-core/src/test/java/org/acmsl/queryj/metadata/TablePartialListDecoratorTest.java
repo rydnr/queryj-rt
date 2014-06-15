@@ -39,6 +39,7 @@ package org.acmsl.queryj.metadata;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.metadata.AbstractPartialListDecorator.Operation;
+import org.acmsl.queryj.metadata.vo.AbstractAttribute;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.AttributeValueObject;
 import org.easymock.EasyMock;
@@ -73,7 +74,7 @@ public class TablePartialListDecoratorTest
         @NotNull final List<Attribute<String>> list = new ArrayList<>(3);
 
         @NotNull final Attribute<String> attribute1 =
-            new AttributeValueObject(
+            new AbstractAttribute<String>(
                 "name1",
                 Types.BIGINT,
                 "long",
@@ -91,7 +92,9 @@ public class TablePartialListDecoratorTest
                 false,
                 null,
                 null,
-                null);
+                null)
+            {
+            };
 
         @NotNull final Attribute<String> attribute2 =
             new AttributeValueObject(
