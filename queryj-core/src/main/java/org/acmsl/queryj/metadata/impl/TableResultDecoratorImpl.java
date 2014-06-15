@@ -161,16 +161,16 @@ public class TableResultDecoratorImpl
         }
         else
         {
-        TableResultDecoratorImpl that = (TableResultDecoratorImpl) o;
+            TableResultDecoratorImpl that = (TableResultDecoratorImpl) o;
 
-        if (!m__Result.equals(that.m__Result))
-        {
-            return false;
-        }
-        if (!m__Table.equals(that.m__Table))
-        {
-            return false;
-        }
+            if (!m__Result.equals(that.m__Result))
+            {
+                return false;
+            }
+            if (!m__Table.equals(that.m__Table))
+            {
+                return false;
+            }
 
         return true;
     }
