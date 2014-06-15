@@ -1853,7 +1853,7 @@ public abstract class AbstractTableDecorator
     @NotNull
     protected TableDecorator createTableDecorator()
     {
-        return createTableDecorator(getTable(), getMetadataManager(), getDecoratorFactory(), getCustomSqlProvider());
+        return createTableDecorator(getTable());
     }
 
     /**
