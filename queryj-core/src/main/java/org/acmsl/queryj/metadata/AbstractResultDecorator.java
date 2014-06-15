@@ -324,7 +324,7 @@ public abstract class AbstractResultDecorator<V>
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
      * @param sqlPropertyDAO the {@link SqlPropertyDAO} instance.
      * @param metadataManager the {@link }MetadataManager</code> instance.
-     * @param decoratorFactory the {@link DecoratorFactory</code> instance.
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @param customResultUtils the {@link CustomResultUtils} instance.
      * @return such information.
      */
