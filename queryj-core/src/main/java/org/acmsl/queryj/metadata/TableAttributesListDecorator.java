@@ -93,7 +93,6 @@ public class TableAttributesListDecorator
 
     /**
      * Retrieves all attributes, including parent's.
-     *
      * @return such attributes.
      */
     @NotNull
