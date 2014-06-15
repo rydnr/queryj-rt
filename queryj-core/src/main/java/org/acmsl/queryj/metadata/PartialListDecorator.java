@@ -52,4 +52,5 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public interface PartialListDecorator
 {
+    throw new RuntimeException(INVALID_OPERATION);
 }
