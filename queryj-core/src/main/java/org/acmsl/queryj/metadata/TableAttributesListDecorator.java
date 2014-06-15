@@ -231,8 +231,6 @@ public class TableAttributesListDecorator
         throw new RuntimeException(INVALID_OPERATION);
     }
 
-    // Table implementation
-
     /**
      * {@inheritDoc}
      */
