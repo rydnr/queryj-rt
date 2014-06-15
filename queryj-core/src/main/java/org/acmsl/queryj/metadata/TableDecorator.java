@@ -180,7 +180,7 @@ public interface TableDecorator
      */
     @SuppressWarnings("unused")
     @Nullable
-    ListDecorator<Result<DecoratedString> getCustomResult();
+    ListDecorator<Result<DecoratedString>> getCustomResults();
 
     /**
      * Retrieves the custom selects.
