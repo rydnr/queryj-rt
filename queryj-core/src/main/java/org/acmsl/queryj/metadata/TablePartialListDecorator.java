@@ -761,6 +761,10 @@ public class TablePartialListDecorator<V>
         {
             result = (ListDecorator<V>) new TableCustomResultsListDecorator((List<Result<DecoratedString>>) aux, table);
         }
+        else
+        {
+            throw new RuntimeException()
+        }
         return
     }
 }
