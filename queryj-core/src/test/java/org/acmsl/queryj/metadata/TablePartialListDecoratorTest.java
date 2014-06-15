@@ -40,6 +40,7 @@ package org.acmsl.queryj.metadata;
  */
 import org.acmsl.queryj.metadata.AbstractPartialListDecorator.Operation;
 import org.acmsl.queryj.metadata.vo.Attribute;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -66,7 +67,8 @@ public class TablePartialListDecoratorTest
     public void getDifferent_removes_duplicates()
     {
         @NotNull final List<Attribute<DecoratedString>> list = new ArrayList<>(3);
-        @NotNull final TableDecorator
+        @NotNull final TableDecorator tableDecorator = EasyMock.createNiceMock(TableDecorator.class);
+
         @NotNull final ListDecorator<Attribute<DecoratedString>> listDecorator =
             new TableAttributesListDecorator(list, tableDecorator);
         @NotNull final TablePartialListDecorator<Attribute<DecoratedString>> instance =
