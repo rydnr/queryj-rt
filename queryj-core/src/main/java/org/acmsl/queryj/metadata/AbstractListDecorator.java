@@ -372,7 +372,7 @@ public abstract class AbstractListDecorator<T>
     /**
      * Retrieves the attributes.
      * @param items the items.
-     * @return the items, if they're the attributes. An empty list otherwise.
+     * @return the items, if they're the custom results. An empty list otherwise.
      */
     @NotNull
     protected List<Result<DecoratedString>> retrieveCustomResults(@NotNull final List<T> items)
