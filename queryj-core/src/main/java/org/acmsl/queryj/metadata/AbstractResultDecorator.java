@@ -872,7 +872,7 @@ public abstract class AbstractResultDecorator<V>
      * object prevents it from being compared to this Object.
      */
     @Override
-    public int compareTo(@Nullable final Result<DecoratedString> object)
+    public int compareTo(@Nullable final Result<V> object)
         throws  ClassCastException
     {
         return compareTo(getResult(), object);
