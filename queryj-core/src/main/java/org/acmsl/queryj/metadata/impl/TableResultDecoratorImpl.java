@@ -92,7 +92,6 @@ public class TableResultDecoratorImpl<V>
         @NotNull final DecoratorFactory decoratorFactory)
     {
         super(item, customSqlProvider, table.getMetadataManager(), decoratorFactory);
-        immutableSetResult(item);
         immutableSetTable(table);
     }
 
