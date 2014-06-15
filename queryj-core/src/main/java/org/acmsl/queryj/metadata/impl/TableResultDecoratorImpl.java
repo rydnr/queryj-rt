@@ -131,5 +131,12 @@ public class TableResultDecoratorImpl
         immutableSetTable(table);
     }
 
-    public
+    /**
+     *
+     * @return
+     */
+    public TableDecorator getTable()
+    {
+        return this.m__Table;
+    }
 }
