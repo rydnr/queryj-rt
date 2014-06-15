@@ -53,7 +53,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @ThreadSafe
 public interface TableResultDecorator
-    extends
+    extends ResultDecorator
 {
     /**
      * Retrieves the table.
