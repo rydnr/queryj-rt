@@ -119,6 +119,7 @@ public class TablePartialListDecoratorTest
             {
             };
 
+        list.add(attribute1)
         @NotNull final TableDecorator tableDecorator = EasyMock.createNiceMock(TableDecorator.class);
 
         @NotNull final ListDecorator<Attribute<DecoratedString>> listDecorator =
