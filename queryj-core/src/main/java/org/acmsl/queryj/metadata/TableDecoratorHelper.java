@@ -477,6 +477,7 @@ public class TableDecoratorHelper
 
     /**
      * Checks whether given list is composed of {@link org.acmsl.queryj.metadata.vo.Attribute attributes} or not.
+     * @param <T> the type of the items.
      * @param list such list.
      * @return {@code true} in such case.
      */
