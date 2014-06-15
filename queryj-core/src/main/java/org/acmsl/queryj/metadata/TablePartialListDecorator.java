@@ -93,8 +93,6 @@ public class TablePartialListDecorator<V>
         super(listDecorator, operation, table);
     }
 
-    // ListDecorator implementation
-
     // TableDecorator implementation
 
     /**
