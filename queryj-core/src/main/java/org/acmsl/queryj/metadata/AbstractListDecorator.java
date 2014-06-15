@@ -403,7 +403,6 @@ public abstract class AbstractListDecorator<T>
         }
 
         return result;
-
     }
 
     /**
