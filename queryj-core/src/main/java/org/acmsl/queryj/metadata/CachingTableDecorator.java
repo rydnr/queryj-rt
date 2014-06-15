@@ -947,7 +947,7 @@ public class CachingTableDecorator
     }
 
     /**
-     * Specifies the cached different custom results.
+     * Specifies the cached custom results.
      * @param results such results.
      */
     protected void setCachedCustomResults(@NotNull final List<Result<DecoratedString>> results)
