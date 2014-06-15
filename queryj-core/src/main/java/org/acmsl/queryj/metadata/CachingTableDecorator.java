@@ -977,7 +977,7 @@ public class CachingTableDecorator
 
         if (result == null)
         {
-            result = super.getDifferentCustomResults();
+            result = super.getCustomResults();
             setCachedDifferentCustomResults(result);
         }
 
