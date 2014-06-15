@@ -112,7 +112,7 @@ public class TableResultDecoratorImpl
      * @return such instance.
      */
     @NotNull
-    public Result<String> getResult()
+    public Result<?> getResult()
     {
         return this.m__Result;
     }
