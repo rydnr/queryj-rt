@@ -177,7 +177,7 @@ public class TableResultDecoratorImpl
             }
         }
 
-        return true;
+        return result;
     }
 
     @Override
