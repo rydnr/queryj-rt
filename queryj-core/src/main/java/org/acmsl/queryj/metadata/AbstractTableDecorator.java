@@ -1858,6 +1858,16 @@ public abstract class AbstractTableDecorator
 
     /**
      * Retrieves a {@link TableDecorator}.
+     *
+     */
+    @NotNull
+    protected TableDecorator createTableDecorator()
+    {
+        return createTableDecorator(getTable(), getMetadataManager(), getDecoratorFactory(), getCustomSqlProvider());
+    }
+
+    /**
+     * Retrieves a {@link TableDecorator}.
      * @param table the {@link Table}.
      * @param metadataManager the {@link MetadataManager}.
      * @param decoratorFactory the {@link DecoratorFactory}.
