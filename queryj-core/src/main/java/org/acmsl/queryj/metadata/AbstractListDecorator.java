@@ -388,7 +388,7 @@ public abstract class AbstractListDecorator<T>
      */
     @SuppressWarnings("unchecked")
     @NotNull
-    protected List<Result<DecoratedString>> retrieveAttributes(
+    protected List<Result<DecoratedString>> retrieveCustomResults(
         @NotNull final List<T> items, @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
         @NotNull final List<Attribute<DecoratedString>> result;
