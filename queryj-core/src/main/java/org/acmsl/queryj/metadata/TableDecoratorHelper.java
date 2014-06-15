@@ -510,7 +510,7 @@ public class TableDecoratorHelper
      * @param list such list.
      * @return {@code true} in such case.
      */
-    protected boolean isListOfCustomResults(@NotNull final List<T> list)
+    protected <T> boolean isListOfCustomResults(@NotNull final List<T> list)
     {
         final boolean result;
 
