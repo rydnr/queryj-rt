@@ -92,16 +92,6 @@ public class TableAttributesListDecorator
     // TableDecorator implementation
 
     /**
-     * {@inheritDoc}
-     */
-    @NotNull
-    @Override
-    public ListDecorator<Result<DecoratedString>> getCustomResults()
-    {
-        throw new RuntimeException(INVALID_OPERATION);
-    }
-
-    /**
      * Retrieves all attributes, including parent's.
      *
      * @return such attributes.
