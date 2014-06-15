@@ -952,7 +952,7 @@ public class CachingTableDecorator
      */
     protected void setCachedCustomResults(@NotNull final List<Result<DecoratedString>> results)
     {
-        immutableSetCachedDifferentCustomResults(results);
+        immutableSetCachedCustomResults(results);
     }
 
     /**
