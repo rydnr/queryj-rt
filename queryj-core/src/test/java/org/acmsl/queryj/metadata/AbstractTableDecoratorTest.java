@@ -359,8 +359,6 @@ public class AbstractTableDecoratorTest
     {
         @NotNull final AbstractTableDecorator instance = setupTableDecorator(attributes, null);
 
-        @NotNull final TableDecorator tableDecorator =
-
         @NotNull final List<Attribute<String>> list = new ArrayList<>(1);
 
         @NotNull final Attribute<String> attribute =
