@@ -42,6 +42,10 @@ import org.acmsl.queryj.metadata.AbstractPartialListDecorator.Operation;
 import org.acmsl.queryj.metadata.vo.AbstractAttribute;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.easymock.EasyMock;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
