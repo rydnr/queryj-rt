@@ -865,46 +865,4 @@ public abstract class AbstractResultDecorator<V>
         return result.equals(object);
     }
 
-    /**
-     * Compares given object with this instance.
-     * @param object the object to compare to.
-     * @return the result of such comparison.
-     * object prevents it from being compared to this Object.
-     */
-    @Override
-    public int compareTo(@Nullable final Result<V> object)
-        throws  ClassCastException
-    {
-        return compareTo(getResult(), object);
-    }
-
-    /**
-     * Compares given object with given instance.
-     * @param resultElement the decorated result.
-     * @param object the object to compare to.
-     * @return the result of such comparison.
-     * object prevents it from being compared to this Object.
-     */
-    @SuppressWarnings("unchecked")
-    protected int compareTo(
-        @NotNull final Result<V> resultElement, @Nullable final Result<V> object)
-        throws  ClassCastException
-    {
-        final int result;
-
-        if (object == null)
-        {
-            result = 1;
-        }
-        else
-        {
-            result =
-                resultElement.compareTo(
-                    new ResultElement<>(
-                        ("" + object.getId()),
-                        (object.getClassValue() != null ? "" + object.getClassValue() : null)));
-        }
-
-        return result;
-    }
 }
