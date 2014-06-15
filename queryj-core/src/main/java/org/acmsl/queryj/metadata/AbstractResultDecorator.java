@@ -539,7 +539,7 @@ public abstract class AbstractResultDecorator<V>
     @NotNull
     protected List<Property<DecoratedString>> convert(
         @NotNull final List<Attribute<String>> attributes,
-        @NotNull final Result<String> sqlResult,
+        @NotNull final Result<V> sqlResult,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
         @NotNull final DecoratorFactory decoratorFactory)
