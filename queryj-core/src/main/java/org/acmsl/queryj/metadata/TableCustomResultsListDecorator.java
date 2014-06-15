@@ -95,7 +95,7 @@ public class TableCustomResultsListDecorator
      * {@inheritDoc}
      */
     @NotNull
-    public List<Result<DecoratedString>> decorate(@NotNull final List<Result<DecoratedString>> rawItems)
+    public List<Result<DecoratedString>> decorate(@NotNull final List<Result<DecoratedString>> items)
     {
         return super.getItems();
     }
