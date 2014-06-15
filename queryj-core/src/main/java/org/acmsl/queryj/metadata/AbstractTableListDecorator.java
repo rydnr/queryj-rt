@@ -283,7 +283,7 @@ public abstract class AbstractTableListDecorator<V>
         @NotNull final MetadataTypeManager metadataTypeManager,
         @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
-        List<DecoratedString>
+        List<DecoratedString> result
         return tableDecoratorHelper.getAttributeTypes(items, metadataTypeManager);
     }
 
