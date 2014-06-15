@@ -1855,6 +1855,18 @@ public abstract class AbstractTableDecorator
     {
         return createTableDecorator(getTable(), getMetadataManager(), getDecoratorFactory(), getCustomSqlProvider());
     }
+
+    /**
+     * Retrieves a {@link TableDecorator}.
+     *
+     */
+    @NotNull
+    protected TableDecorator createTableDecorator(
+        @NotNull final Table<>
+    )
+    {
+        return createTableDecorator(getTable(), getMetadataManager(), getDecoratorFactory(), getCustomSqlProvider());
+    }
     /**
      * Retrieves the list of different results defined for this table (using the referring custom-selects).
      * @return such list.
