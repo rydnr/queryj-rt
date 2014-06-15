@@ -183,7 +183,7 @@ public abstract class AbstractPartialListDecorator<V>
      */
     @SuppressWarnings("unused")
     @NotNull
-    public List<Attribute<DecoratedString>> getItems()
+    public List<V> getItems()
     {
         throw new RuntimeException(AbstractTableListDecorator.INVALID_OPERATION);
     }
