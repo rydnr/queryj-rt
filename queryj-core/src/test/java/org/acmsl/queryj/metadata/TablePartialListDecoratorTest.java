@@ -75,11 +75,11 @@ public class TablePartialListDecoratorTest
 
         @NotNull final Attribute<DecoratedString> attribute1 =
             new AbstractAttribute<DecoratedString>(
-                "name1",
+                new DecoratedString("name1"),
                 Types.BIGINT,
-                "long",
-                "table",
-                "comment 1",
+                new DecoratedString("long"),
+                new DecoratedString("table"),
+                new DecoratedString("comment 1"),
                 1,
                 10,
                 1,
