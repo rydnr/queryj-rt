@@ -1872,8 +1872,10 @@ public abstract class AbstractTableDecorator
 
         if (result == null)
         {
-            throw new RuntimeException("Cannot create a TableDecorator for ")
+            throw new RuntimeException("Cannot create a TableDecorator for " + table.getName());
         }
+
+        return result;
     }
 
     /**
