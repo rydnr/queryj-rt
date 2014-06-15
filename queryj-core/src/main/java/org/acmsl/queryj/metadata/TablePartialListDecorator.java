@@ -730,10 +730,12 @@ public class TablePartialListDecorator<V>
     /**
      * Retrieves the items, after removing duplicates.
      * @param items the items.
+     * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
      * @return such list.
      */
     @NotNull
-    protected ListDecorator<V> getDifferent(@NotNull final List<V> items)
+    protected ListDecorator<V> getDifferent(
+        @NotNull final List<V> items, @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
         @NotNull
         @NotNull final List<V> aux = new ArrayList<>(items.size());
