@@ -1857,7 +1857,8 @@ public abstract class AbstractTableDecorator
     {
         return
             decorate(
-                new CachingTableDecorator(getTable(), getMetadataManager(), getDecoratorFactory(), getCustomSqlProvider()), getCustomResults(getTable(), getCustomSqlProvider()));
+                new CachingTableDecorator(getTable(), getMetadataManager(), getDecoratorFactory(), getCustomSqlProvider()),
+                getCustomResults(getTable(), getCustomSqlProvider()));
     }
 
     /**
