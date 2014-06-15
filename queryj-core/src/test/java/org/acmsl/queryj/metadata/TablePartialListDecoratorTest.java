@@ -63,6 +63,7 @@ public class TablePartialListDecoratorTest
     public void getDifferent_removes_duplicates()
     {
         @NotNull final TablePartialListDecorator<Attribute<DecoratedString>> instance =
-            new TablePartialListDecorator<Attribute<DecoratedString>>(listDecorator, tableDecorator, Operation.DIFFERENT);
+            new TablePartialListDecorator<Attribute<DecoratedString>>(
+                listDecorator, tableDecorator, Operation.DIFFERENT);
     }
 }
