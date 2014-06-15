@@ -104,7 +104,10 @@ public class TableCustomResultsListDecorator
 
         for (@Nullable final Result<DecoratedString> item : items)
         {
+            if (item != null)
+            {
 
+            }
         }
         return result;
     }
