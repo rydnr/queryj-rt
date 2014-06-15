@@ -1637,7 +1637,7 @@ public abstract class AbstractTableDecorator
             }
         }
 
-        return new TableCustomResultsListDecorator(result, results.getTable());
+        return new TableCustomResultsListDecorator(result, tableDecorator);
     }
 
     /**
