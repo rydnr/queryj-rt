@@ -1873,8 +1873,7 @@ public abstract class AbstractTableDecorator
      * @return such decorator.
      */
     @NotNull
-    protected TableDecorator createTableDecorator(
-        @NotNull final String tableName)
+    protected TableDecorator createTableDecorator(@NotNull final String tableName)
     {
         return
             createTableDecorator(table.getName(), getMetadataManager(), getDecoratorFactory(), getCustomSqlProvider());
