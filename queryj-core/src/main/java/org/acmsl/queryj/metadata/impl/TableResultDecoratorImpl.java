@@ -146,7 +146,7 @@ public class TableResultDecoratorImpl<V>
         }
         else
         {
-            result = super.equals()
+            result = super.equals(o);
         }
 
         return result;
