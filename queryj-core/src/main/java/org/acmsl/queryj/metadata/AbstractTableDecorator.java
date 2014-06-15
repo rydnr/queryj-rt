@@ -1867,6 +1867,7 @@ public abstract class AbstractTableDecorator
     {
         return createTableDecorator(table.getName());
     }
+
     /**
      * Retrieves a {@link TableDecorator}.
      * @param tableName the table name..
