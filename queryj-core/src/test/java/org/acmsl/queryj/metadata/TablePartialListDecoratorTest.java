@@ -78,7 +78,7 @@ public class TablePartialListDecoratorTest
                 Types.BIGINT,
                 "long",
                 "table",
-                "comment",
+                "comment 1",
                 1,
                 10,
                 1,
