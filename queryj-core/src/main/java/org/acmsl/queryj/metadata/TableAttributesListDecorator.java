@@ -161,7 +161,6 @@ public class TableAttributesListDecorator
 
     /**
      * Retrieves the custom updates or inserts.
-     *
      * @return such information.
      */
     @NotNull
