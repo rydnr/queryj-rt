@@ -96,16 +96,6 @@ public class TableAttributesListDecorator
      */
     @NotNull
     @Override
-    public List<Sql<DecoratedString>> getDynamicQueries()
-    {
-        throw new RuntimeException(INVALID_OPERATION);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @NotNull
-    @Override
     public List<Row<DecoratedString>> getStaticContent()
     {
         throw new RuntimeException(INVALID_OPERATION);
