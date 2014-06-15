@@ -80,7 +80,7 @@ import java.util.List;
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  */
 @ThreadSafe
-public abstract class AbstractResultDecorator
+public abstract class AbstractResultDecorator<V>
     extends  ResultElement<DecoratedString>
     implements  Result<DecoratedString>,
                 ResultDecorator
