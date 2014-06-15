@@ -730,6 +730,7 @@ public class TablePartialListDecorator<V>
     /**
      * Retrieves the items, after removing duplicates.
      * @param items the items.
+     *
      * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
      * @return such list.
      */
