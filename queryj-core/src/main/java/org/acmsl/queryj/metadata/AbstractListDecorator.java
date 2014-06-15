@@ -393,7 +393,7 @@ public abstract class AbstractListDecorator<T>
     {
         @NotNull final List<Result<DecoratedString>> result;
 
-        if (tableDecoratorHelper.isListOfAttributes(items))
+        if (tableDecoratorHelper.isListOfCustomResults(items))
         {
             result = (List<Result<DecoratedString>>) items;
         }
