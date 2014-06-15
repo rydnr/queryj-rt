@@ -370,6 +370,43 @@ public abstract class AbstractListDecorator<T>
     }
 
     /**
+     * Retrieves the attributes.
+     * @param items the items.
+     * @return the items, if they're the attributes. An empty list otherwise.
+     */
+    @NotNull
+    protected List<Attribute<DecoratedString>> retrieveAttributes(@NotNull final List<T> items)
+    {
+        return retrieveAttributes(items, TableDecoratorHelper.getInstance());
+    }
+
+    /**
+     * Retrieves the attributes.
+     * @param items the items.
+     * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
+     * @return the items, if they're the attributes. An empty list otherwise.
+     */
+    @SuppressWarnings("unchecked")
+    @NotNull
+    protected List<Attribute<DecoratedString>> retrieveAttributes(
+        @NotNull final List<T> items, @NotNull final TableDecoratorHelper tableDecoratorHelper)
+    {
+        @NotNull final List<Attribute<DecoratedString>> result;
+
+        if (tableDecoratorHelper.isListOfAttributes(items))
+        {
+            result = (List<Attribute<DecoratedString>>) items;
+        }
+        else
+        {
+            result = new ArrayList<>(0);
+        }
+
+        return result;
+
+    }
+
+    /**
      * Writes a textual representation of the instance.
      * @return such text.
      */
