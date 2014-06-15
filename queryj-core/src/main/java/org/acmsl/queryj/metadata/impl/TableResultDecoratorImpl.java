@@ -180,6 +180,9 @@ public class TableResultDecoratorImpl
         return result;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public int hashCode()
     {
