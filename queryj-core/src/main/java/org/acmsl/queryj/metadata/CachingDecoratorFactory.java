@@ -221,7 +221,7 @@ public class CachingDecoratorFactory
     @Override
     public <V> PropertyDecorator createDecorator(
         @NotNull final Property<String> property,
-        @NotNull final Result<String> result,
+        @NotNull final Result<V> result,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager)
     {
