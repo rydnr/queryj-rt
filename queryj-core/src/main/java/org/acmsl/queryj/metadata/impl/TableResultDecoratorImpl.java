@@ -58,6 +58,11 @@ import org.checkthread.annotations.ThreadSafe;
 public class TableResultDecoratorImpl
     implements TableResultDecorator
 {
+    /**
+     * Creates a new
+     * @param item
+     * @param table
+     */
     public TableResultDecoratorImpl(
         @NotNull final Result<DecoratedString> item, @NotNull final TableDecorator table)
     {
