@@ -230,13 +230,4 @@ public class TableAttributesListDecorator
     {
         throw new RuntimeException(INVALID_OPERATION);
     }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public int compareTo(final Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>> table)
-    {
-        return getTable().compareTo(table);
-    }
 }
