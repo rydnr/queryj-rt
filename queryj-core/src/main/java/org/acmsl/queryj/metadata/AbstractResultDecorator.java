@@ -121,7 +121,7 @@ public abstract class AbstractResultDecorator<V>
     {
         super(
             new DecoratedString("" + result.getId()),
-            result.getClassValue() != null ? new DecoratedString(result.getClassValue()) : null);
+            result.getClassValue() != null ? new DecoratedString("" + result.getClassValue()) : null);
         immutableSetResult(result);
         immutableSetPropertyRefs(result.getPropertyRefs());
         immutableSetCustomSqlProvider(customSqlProvider);
