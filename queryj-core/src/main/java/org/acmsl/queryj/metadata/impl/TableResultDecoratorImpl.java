@@ -201,9 +201,9 @@ public class TableResultDecoratorImpl
     public String toString()
     {
         return
-            "{ \"result\": " + this.m__Result
+              "{ \"result\": " + this.m__Result
             + ", \"table\": " + this.m__Table
             + ", \"class\": \"TableResultDecoratorImpl\""
-        + ", \"package\": \"org.acmsl.queryj.metadata.impl\""
+            + ", \"package\": \"org.acmsl.queryj.metadata.impl\" }";
     }
 }
