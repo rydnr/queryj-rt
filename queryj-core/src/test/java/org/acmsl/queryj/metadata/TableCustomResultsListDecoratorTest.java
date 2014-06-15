@@ -39,7 +39,6 @@ package org.acmsl.queryj.metadata;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.customsql.Result;
-import org.easymock.EasyMock;
 
 /*
  * Importing JetBrains annotations.
