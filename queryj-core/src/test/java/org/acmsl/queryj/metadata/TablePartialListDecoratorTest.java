@@ -88,6 +88,7 @@ public class TablePartialListDecoratorTest
                 false,
                 null,
                 false,
+                false,
                 null,
                 null,
                 null);
