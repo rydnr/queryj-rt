@@ -276,7 +276,10 @@ public abstract class AbstractTableListDecorator<V>
      * @return the items, if they're the attributes. An empty list otherwise.
      */
     @NotNull
-    protected List<DecoratedString>
+    protected List<Attribute<DecoratedString>> retrieveAttributes(@NotNull final List<V> items)
+    {
+
+    }
     /**
      * Retrieves the types of the attributes.
      * @param items such items.
