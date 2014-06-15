@@ -887,7 +887,7 @@ public abstract class AbstractResultDecorator<V>
      */
     @SuppressWarnings("unchecked")
     protected int compareTo(
-        @NotNull final Result<V> resultElement, @Nullable final Result<DecoratedString> object)
+        @NotNull final Result<V> resultElement, @Nullable final Result<V> object)
         throws  ClassCastException
     {
         final int result;
