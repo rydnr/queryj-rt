@@ -38,6 +38,7 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.metadata.AbstractPartialListDecorator.Operation;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.jetbrains.annotations.NotNull;
 
@@ -62,6 +63,6 @@ public class TablePartialListDecoratorTest
     public void getDifferent_removes_duplicates()
     {
         @NotNull final TablePartialListDecorator<Attribute<DecoratedString>> instance =
-            new TablePartialListDecorator<Attribute<DecoratedString>>(listDecorator, tableDecorator, )
+            new TablePartialListDecorator<Attribute<DecoratedString>>(listDecorator, tableDecorator, Operation.DIFFERENT);
     }
 }
