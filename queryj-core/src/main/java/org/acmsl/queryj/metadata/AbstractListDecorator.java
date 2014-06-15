@@ -46,6 +46,7 @@ import org.jetbrains.annotations.Nullable;
 /*
  * Importing JDK classes.
  */
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
@@ -329,6 +330,43 @@ public abstract class AbstractListDecorator<T>
     public Object[] toArray()
     {
         return getItems().toArray();
+    }
+
+    /**
+     * Retrieves the attributes.
+     * @param items the items.
+     * @return the items, if they're the attributes. An empty list otherwise.
+     */
+    @NotNull
+    protected List<Attribute<DecoratedString>> retrieveAttributes(@NotNull final List<V> items)
+    {
+        return retrieveAttributes(items, TableDecoratorHelper.getInstance());
+    }
+
+    /**
+     * Retrieves the attributes.
+     * @param items the items.
+     * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
+     * @return the items, if they're the attributes. An empty list otherwise.
+     */
+    @SuppressWarnings("unchecked")
+    @NotNull
+    protected List<Attribute<DecoratedString>> retrieveAttributes(
+        @NotNull final List<V> items, @NotNull final TableDecoratorHelper tableDecoratorHelper)
+    {
+        @NotNull final List<Attribute<DecoratedString>> result;
+
+        if (tableDecoratorHelper.isListOfAttributes(items))
+        {
+            result = (List<Attribute<DecoratedString>>) items;
+        }
+        else
+        {
+            result = new ArrayList<>(0);
+        }
+
+        return result;
+
     }
 
     /**
