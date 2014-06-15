@@ -365,7 +365,7 @@ public abstract class AbstractListDecorator<T>
      * @param list such list.
      * @return {@code true} in such case.
      */
-    protected boolean isListOfCustomResults(@NotNull final ListDecorator<T> list)
+    protected boolean isListOfCustomResults(@NotNull final List<T> list)
     {
         final boolean result;
 
