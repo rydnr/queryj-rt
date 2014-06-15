@@ -724,7 +724,7 @@ public class TablePartialListDecorator<V>
     @NotNull
     public ListDecorator<V> getDifferent()
     {
-        return getDifferent(getItems(), getTable(), TableDecoratorHelper.getInstance());
+        return getDifferent(getListDecorator(), getTable(), TableDecoratorHelper.getInstance());
     }
 
     /**
