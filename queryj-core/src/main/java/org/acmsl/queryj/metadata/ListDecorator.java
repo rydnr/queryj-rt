@@ -91,8 +91,10 @@ public interface ListDecorator<T>
 
     /**
      * Removes duplicates from the list.
-     * @return
+     * @return the list, with no duplicates.
      */
+    @NotNull
+    /
     /**
      * The "invalid operation" message.
      */
