@@ -734,6 +734,7 @@ public class TablePartialListDecorator<V>
      * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
      * @return such list.
      */
+    @SuppressWarnings("unchecked")
     @NotNull
     protected ListDecorator<V> getDifferent(
         @NotNull final List<V> items,
