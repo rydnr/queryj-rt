@@ -727,6 +727,7 @@ public class TablePartialListDecorator<V>
         return getTable().getNullableAttributes();
     }
 
+
     /**
      * Compares the wrapped table to given one.
      * @param table the table to compare with.
