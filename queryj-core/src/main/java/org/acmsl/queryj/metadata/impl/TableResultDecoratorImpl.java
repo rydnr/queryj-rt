@@ -149,6 +149,8 @@ public class TableResultDecoratorImpl
     @Override
     public boolean equals(@Nullable final Object o)
     {
+        final boolean result;
+
         if (this == o)
         {
             return true;
