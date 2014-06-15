@@ -331,7 +331,7 @@ public abstract class AbstractResultDecorator<V>
     @NotNull
     public List<Property<DecoratedString>> getProperties(
         @NotNull final List<PropertyRef> propertyRefs,
-        @NotNull final Result<W> resultElement,
+        @NotNull final Result<V> resultElement,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final SqlPropertyDAO sqlPropertyDAO,
         @NotNull final MetadataManager metadataManager,
