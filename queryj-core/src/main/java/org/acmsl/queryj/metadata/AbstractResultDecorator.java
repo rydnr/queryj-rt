@@ -143,7 +143,7 @@ public abstract class AbstractResultDecorator<V>
      * @param result the result.
      */
     @SuppressWarnings("unused")
-    protected void setResult(@NotNull final Result<String> result)
+    protected void setResult(@NotNull final Result<V> result)
     {
         immutableSetResult(result);
     }
