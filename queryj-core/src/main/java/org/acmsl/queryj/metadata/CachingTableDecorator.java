@@ -973,7 +973,7 @@ public class CachingTableDecorator
     @Override
     public ListDecorator<Result<DecoratedString>> getCustomResults()
     {
-        ListDecorator<Result<DecoratedString>> result = getCachedDifferentCustomResults();
+        ListDecorator<Result<DecoratedString>> result = getCachedCustomResults();
 
         if (result == null)
         {
