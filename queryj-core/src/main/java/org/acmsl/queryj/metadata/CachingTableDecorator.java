@@ -956,7 +956,7 @@ public class CachingTableDecorator
     }
 
     /**
-     * Retrieves the cached different custom results.
+     * Retrieves the cached custom results.
      * @return such results.
      A*/
     @Nullable
