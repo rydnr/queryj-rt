@@ -120,4 +120,13 @@ public class TableResultDecoratorImpl
     {
         this.m__Table = table;
     }
+
+    /**
+     * Specifies the {@link TableDecorator table}.
+     * @param table such table.
+     */
+    protected void setTable(@NotNull final TableDecorator table)
+    {
+        this.m__Table = table;
+    }
 }
