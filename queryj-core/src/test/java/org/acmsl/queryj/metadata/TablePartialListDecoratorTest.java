@@ -40,6 +40,7 @@ package org.acmsl.queryj.metadata;
  */
 import org.acmsl.queryj.metadata.AbstractPartialListDecorator.Operation;
 import org.acmsl.queryj.metadata.vo.Attribute;
+import org.acmsl.queryj.metadata.vo.AttributeValueObject;
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
