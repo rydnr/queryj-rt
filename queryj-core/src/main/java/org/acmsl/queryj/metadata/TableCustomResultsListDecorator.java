@@ -120,6 +120,6 @@ public class TableCustomResultsListDecorator
     protected TableResultDecorator decorate(
         @NotNull final Result<DecoratedString> item, @NotNull final TableDecorator table)
     {
-
+        return new TableResultDecoratorImpl(item, table);
     }
 }
