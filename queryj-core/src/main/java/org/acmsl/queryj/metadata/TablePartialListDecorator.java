@@ -113,7 +113,7 @@ public class TablePartialListDecorator<V>
     @NotNull
     public ListDecorator<Attribute<DecoratedString>> getReadOnly()
     {
-        @NotNull final ListDecorator<Attribute<DecoratedString>> result = getReadOnlyAttributes();
+        return getReadOnlyAttributes();
 
         return result;
     }
