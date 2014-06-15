@@ -1609,9 +1609,9 @@ public abstract class AbstractTableDecorator
     @NotNull
     protected ListDecorator<Result<DecoratedString>> decorate(
         @NotNull final TableDecorator tableDecorator,
-        @NotNull final ListDecorator<Result<DecoratedString>> results)
+        @NotNull final ListDecorator<Result<String>> results)
     {
-        return decorate(tableDecorator, results);
+        return decorate(tableDecorator, results, getCustomSqlProvider(), getMetadataManager(), getDecoratorFactory());
     }
 
     /**
@@ -1626,18 +1626,18 @@ public abstract class AbstractTableDecorator
     @NotNull
     protected ListDecorator<Result<DecoratedString>> decorate(
         @NotNull final TableDecorator tableDecorator,
-        @NotNull final ListDecorator<Result<DecoratedString>> results,
+        @NotNull final ListDecorator<Result<String>> results,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
         @NotNull final DecoratorFactory decoratorFactory)
     {
         @NotNull final List<Result<DecoratedString>> result = new ArrayList<>(results.size());
 
-        for (@Nullable final Result<DecoratedString> t_Result : results)
+        for (@Nullable final Result<String> t_Result : results)
         {
             if (t_Result != null)
             {
-                result.add(t_Result);
+                result.add(decorate(t_Result, customSqlProvider, metadataManager, decoratorFactory));
             }
         }
 
