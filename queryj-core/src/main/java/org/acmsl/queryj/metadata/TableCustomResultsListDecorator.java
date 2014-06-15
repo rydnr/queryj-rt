@@ -81,5 +81,13 @@ public class TableCustomResultsListDecorator
         super(list, table);
     }
 
-
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public List<Result<DecoratedString>> getItems()
+    {
+        return super.getItems();
+    }
 }
