@@ -57,6 +57,8 @@ public interface TableResultDecorator
 {
     /**
      * Retrieves the table.
-     * @return such instance.
+     * @return such {@link TableDecorator instance}.
      */
+    @NotNull
+    TableDecorator getTable();
 }
