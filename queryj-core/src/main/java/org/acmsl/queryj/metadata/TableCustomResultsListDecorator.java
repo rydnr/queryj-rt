@@ -82,5 +82,5 @@ public class TableCustomResultsListDecorator
      * @return such results, or an empty list if the items are of a different kind.
      */
     @NotNull
-    protected List<Result<DecoratedString>> retrieve
+    protected List<Result<DecoratedString>> retrieveCustomResults(@NotNull final )
 }
