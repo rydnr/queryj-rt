@@ -96,7 +96,7 @@ public interface DecoratorFactory
     /**
      * Creates a {@link PropertyDecorator} for given
      * property instance.
-     * @param <V> the
+     * @param <V> the result type.
      * @param property the {@link Property property}.
      * @param result the {@link Result result}.
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
