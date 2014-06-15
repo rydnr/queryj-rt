@@ -209,7 +209,7 @@ public abstract class AbstractPartialListDecorator<V>
     }
 
     /**
-     * Applies the "" operation to the items.
+     * Applies the "only" operation to the items.
      * @return the partial result.
      */
     @NotNull
