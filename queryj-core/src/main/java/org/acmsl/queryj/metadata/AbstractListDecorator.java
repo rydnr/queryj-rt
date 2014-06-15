@@ -377,7 +377,7 @@ public abstract class AbstractListDecorator<T>
     @NotNull
     protected List<Result<DecoratedString>> retrieveCustomResults(@NotNull final List<T> items)
     {
-        return retrieveAttributes(items, TableDecoratorHelper.getInstance());
+        return retrieveCustomResults(items, TableDecoratorHelper.getInstance());
     }
 
     /**
