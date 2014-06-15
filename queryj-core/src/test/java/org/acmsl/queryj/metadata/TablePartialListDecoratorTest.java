@@ -71,7 +71,7 @@ public class TablePartialListDecoratorTest
         @NotNull final List<Attribute<DecoratedString>> list = new ArrayList<>(3);
 
         @NotNull final Attribute<DecoratedString> attribute1 =
-            new Attribute<DecoratedString>()
+            new AttributeValueObject<DecoratedString>()
             {
                 @NotNull
                 @Override
