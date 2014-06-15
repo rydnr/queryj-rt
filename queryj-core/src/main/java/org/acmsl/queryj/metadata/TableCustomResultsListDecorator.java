@@ -98,7 +98,6 @@ public class TableCustomResultsListDecorator
     @NotNull
     public List<Result<DecoratedString>> decorate(@NotNull final List<Result<DecoratedString>> rawItems)
     {
-
         return super.getItems();
     }
 }
