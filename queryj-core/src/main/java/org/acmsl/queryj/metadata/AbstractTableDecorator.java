@@ -1636,7 +1636,7 @@ public abstract class AbstractTableDecorator
             }
         }
 
-        return result;
+        return new result;
     }
 
     /**
