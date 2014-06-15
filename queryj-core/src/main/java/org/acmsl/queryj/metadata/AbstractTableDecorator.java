@@ -1867,9 +1867,9 @@ public abstract class AbstractTableDecorator
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final CustomSqlProvider customSqlProvider)
     {
-        return createTableDecorator(getTable(), getMetadataManager(), getDecoratorFactory(), getCustomSqlProvider());
-        new CachingTableDecorator(
-            getTable(), getMetadataManager(), getDecoratorFactory(), getCustomSqlProvider()),
+        return
+            new CachingTableDecorator(
+                getTable(), getMetadataManager(), getDecoratorFactory(), getCustomSqlProvider()),
     }
 
     /**
