@@ -742,8 +742,10 @@ public class TablePartialListDecorator<V>
         {
             if (!aux.contains(item))
             {
-                result.add(item);
+                aux.add(item);
             }
         }
+
+        return new
     }
 }
