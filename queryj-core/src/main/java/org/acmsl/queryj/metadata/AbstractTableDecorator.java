@@ -1865,7 +1865,7 @@ public abstract class AbstractTableDecorator
         @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table,
         @NotNull final MetadataManager metadataManager,
         @NotNull final DecoratorFactory decoratorFactory,
-        @NotNull final CustomSqlProvider customSqlProvider,
+        @NotNull final CustomSqlProvider customSqlProvider)
     )
     {
         return createTableDecorator(getTable(), getMetadataManager(), getDecoratorFactory(), getCustomSqlProvider());
