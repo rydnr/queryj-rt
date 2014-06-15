@@ -40,6 +40,7 @@ package org.acmsl.queryj.metadata.impl;
  */
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.metadata.DecoratedString;
+import org.acmsl.queryj.metadata.ResultDecorator;
 import org.acmsl.queryj.metadata.TableDecorator;
 import org.acmsl.queryj.metadata.TableResultDecorator;
 import org.jetbrains.annotations.NotNull;
@@ -106,7 +107,7 @@ public class TableResultDecoratorImpl
      * @return such instance.
      */
     @NotNull
-    public ResultDecorator<DecoratedString> getResult()
+    public ResultDecorator getResult()
     {
         return this.m__Result;
     }
