@@ -1871,7 +1871,7 @@ public abstract class AbstractTableDecorator
 
     /**
      * Retrieves a {@link TableDecorator}.
-     * @param table the {@link Table}.
+     * @param tableName the table name..
      * @param metadataManager the {@link MetadataManager}.
      * @param decoratorFactory the {@link DecoratorFactory}.
      * @param customSqlProvider the {@link CustomSqlProvider}.
