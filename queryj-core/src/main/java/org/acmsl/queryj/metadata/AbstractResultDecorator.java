@@ -120,7 +120,7 @@ public abstract class AbstractResultDecorator<V>
         @NotNull final DecoratorFactory decoratorFactory)
     {
         super(
-            new DecoratedString(result.getId()),
+            new DecoratedString("" + result.getId()),
             result.getClassValue() != null ? new DecoratedString(result.getClassValue()) : null);
         immutableSetResult(result);
         immutableSetPropertyRefs(result.getPropertyRefs());
