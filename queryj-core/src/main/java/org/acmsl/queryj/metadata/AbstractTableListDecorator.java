@@ -275,6 +275,7 @@ public abstract class AbstractTableListDecorator<V>
      * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
      * @return their types.
      */
+    @SuppressWarnings("unchecked")
     @NotNull
     protected List<DecoratedString> getAttributeTypes(
         @NotNull final List<V> items,
