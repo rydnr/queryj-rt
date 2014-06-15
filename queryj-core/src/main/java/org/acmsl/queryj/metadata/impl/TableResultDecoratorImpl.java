@@ -167,7 +167,7 @@ public class TableResultDecoratorImpl
             {
                 result = false;
             }
-            if (!m__Table.equals(that.m__Table))
+            else if (!m__Table.equals(that.m__Table))
             {
                 return false;
             }
