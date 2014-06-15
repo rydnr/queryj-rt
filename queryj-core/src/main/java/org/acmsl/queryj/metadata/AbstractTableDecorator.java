@@ -1847,6 +1847,12 @@ public abstract class AbstractTableDecorator
     }
 
     /**
+     * Retrieves a {@link TableDecorator}.
+     *
+     */
+    @NotNull
+
+    /**
      * Retrieves the list of different results defined for this table (using the referring custom-selects).
      * @return such list.
      */
