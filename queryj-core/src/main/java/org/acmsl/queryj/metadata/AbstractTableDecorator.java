@@ -1861,7 +1861,7 @@ public abstract class AbstractTableDecorator
      */
     @NotNull
     protected ListDecorator<Result<String>> getCustomResults(
-        @NotNull final Table<String, Attribute<String>, List<Result<String>> table,
+        @NotNull final Table<String, Attribute<String>, List<Result<String>>> table,
         @NotNull final CustomSqlProvider customSqlProvider)
     {
         return
