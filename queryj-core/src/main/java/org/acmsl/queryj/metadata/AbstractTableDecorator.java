@@ -1620,7 +1620,7 @@ public abstract class AbstractTableDecorator
      * @return the decorated results.
      */
     @NotNull
-    protected List<Result<DecoratedString>> decorate(
+    protected ListDecorator<Result<DecoratedString>> decorate(
         @NotNull final List<Result<String>> results,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
