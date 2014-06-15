@@ -147,7 +147,7 @@ public class CachingTableDecorator
     /**
      * The cached list of different results.
      */
-    private List<Result<DecoratedString>> m__lCachedDifferentCustomResults;
+    private List<Result<DecoratedString>> m__lCachedCustomResults;
 
     /**
      * The cached list of read-only attributes.
@@ -943,7 +943,7 @@ public class CachingTableDecorator
      */
     protected final void immutableSetCachedDifferentCustomResults(@NotNull final List<Result<DecoratedString>> results)
     {
-        this.m__lCachedDifferentCustomResults = results;
+        this.m__lCachedCustomResults = results;
     }
 
     /**
@@ -962,7 +962,7 @@ public class CachingTableDecorator
     @Nullable
     public ListDecorator<Result<DecoratedString>> getCachedCustomResults()
     {
-        return this.m__lCachedDifferentCustomResults;
+        return this.m__lCachedCustomResults;
     }
 
     /**
@@ -1020,7 +1020,7 @@ public class CachingTableDecorator
             + ", \"cachedForeignKeys\": " + m__lCachedForeignKeys
             + ", \"cachedParentForeignKey\": " + m__CachedParentForeignKey
             + ", \"cachedExternallyManagedAttributes\": " + m__lCachedExternallyManagedAttributes
-            + ", \"cachedDifferentCustomResults\": " + m__lCachedDifferentCustomResults
+            + ", \"cachedDifferentCustomResults\": " + m__lCachedCustomResults
             + " }";
     }
 }
