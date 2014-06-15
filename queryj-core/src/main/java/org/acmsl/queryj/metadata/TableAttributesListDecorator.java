@@ -237,15 +237,6 @@ public class TableAttributesListDecorator
      * {@inheritDoc}
      */
     @Override
-    public boolean isVoDecorated()
-    {
-        return getTable().isVoDecorated();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
     public boolean isRelationship()
     {
         return getTable().isRelationship();
