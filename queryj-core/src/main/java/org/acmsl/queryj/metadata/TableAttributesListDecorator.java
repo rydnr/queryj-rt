@@ -96,16 +96,6 @@ public class TableAttributesListDecorator
      */
     @NotNull
     @Override
-    public ListDecorator<Attribute<DecoratedString>> getReadOnlyAttributes()
-    {
-        throw new RuntimeException(INVALID_OPERATION);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @NotNull
-    @Override
     public List<Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>>>
     getAllParentTables()
     {
