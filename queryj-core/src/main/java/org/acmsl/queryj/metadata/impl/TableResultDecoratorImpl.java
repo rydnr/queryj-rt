@@ -184,7 +184,7 @@ public class TableResultDecoratorImpl<V>
     {
         return
               "{ \"table\": " + this.m__Table
-            + ", \"table\": " + super.toString()
+            + ", \"super\": " + super.toString()
             + ", \"class\": \"TableResultDecoratorImpl\""
             + ", \"package\": \"org.acmsl.queryj.metadata.impl\" }";
     }
