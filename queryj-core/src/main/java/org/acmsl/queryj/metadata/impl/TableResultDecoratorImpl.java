@@ -203,6 +203,7 @@ public class TableResultDecoratorImpl
         return
             "{ \"result\": " + this.m__Result
             + ", \"table\": " + this.m__Table
-            + ", \"class\": \"" +
+            + ", \"class\": \"TableResultDecoratorImpl\""
+        + ", \"package\": \"org.acmsl.queryj"
     }
 }
