@@ -52,7 +52,7 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2014/06/15 19:17
  */
 @ThreadSafe
-public interface TableResultDecorator
+public interface TableResultDecorator<V>
     extends ResultDecorator
 {
     /**
