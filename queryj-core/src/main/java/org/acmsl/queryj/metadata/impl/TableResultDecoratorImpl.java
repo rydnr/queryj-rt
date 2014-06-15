@@ -95,6 +95,7 @@ public class TableResultDecoratorImpl
      * Specifies the {@link Result result} to decorate.
      * @param result the result.
      */
+    @SuppressWarnings("unused")
     protected void setResult(@NotNull final Result<DecoratedString> result)
     {
         immutableSetResult(result);
