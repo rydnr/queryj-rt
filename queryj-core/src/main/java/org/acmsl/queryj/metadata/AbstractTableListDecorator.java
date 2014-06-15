@@ -271,6 +271,11 @@ public abstract class AbstractTableListDecorator<V>
     }
 
     /**
+     * Retrieves the attributes.
+     * @param items the items.
+     * @return the
+     */
+    /**
      * Retrieves the types of the attributes.
      * @param items such items.
      * @param metadataTypeManager the {@link MetadataTypeManager} instance.
