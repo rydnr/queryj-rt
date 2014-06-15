@@ -1879,9 +1879,7 @@ public abstract class AbstractTableDecorator
     @Override
     public ListDecorator<Result<DecoratedString>> getCustomResults()
     {
-        return
-            decorate(
-                getCustomResults(getTable(), getCustomSqlProvider()));
+        return decorate(createTableDecorator(), getCustomResults(getTable(), getCustomSqlProvider()));
     }
 
     /**
