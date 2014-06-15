@@ -343,6 +343,10 @@ public abstract class AbstractTableListDecorator<V>
         }
         else
         {
+            result = new ArrayList<>(0);
+        }
+
+        return result;
     }
 
     // Table implementation
