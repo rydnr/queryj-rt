@@ -58,5 +58,8 @@ import org.junit.runners.JUnit4;
 public class TablePartialListDecoratorTest
 {
     @Test
-    public void getDifferent
+    public void getDifferent_removes_duplicates()
+    {
+        @NotNull final TablePartialListDecorator
+    }
 }
