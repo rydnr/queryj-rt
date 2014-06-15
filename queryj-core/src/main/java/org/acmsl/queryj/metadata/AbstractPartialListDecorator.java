@@ -209,6 +209,26 @@ public abstract class AbstractPartialListDecorator<V>
     }
 
     /**
+     * Applies the "minus" operation to the items.
+     * @return the partial result.
+     */
+    @NotNull
+    public PartialListDecorator minus()
+    {
+        throw new RuntimeException(AbstractTableListDecorator.INVALID_OPERATION);
+    }
+
+    /**
+     * Applies the "minus" operation to the items.
+     * @return the partial result.
+     */
+    @NotNull
+    public PartialListDecorator minus()
+    {
+        throw new RuntimeException(AbstractTableListDecorator.INVALID_OPERATION);
+    }
+
+    /**
      * {@inheritDoc}
      */
     @NotNull
