@@ -88,6 +88,7 @@ public class TableAttributesListDecorator
     {
         super(list, table);
     }
+
     // TableDecorator implementation
 
     /**
