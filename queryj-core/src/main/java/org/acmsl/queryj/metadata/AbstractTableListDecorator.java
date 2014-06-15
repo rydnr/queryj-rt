@@ -294,6 +294,8 @@ public abstract class AbstractTableListDecorator<V>
         {
             result = new ArrayList<>(0);
         }
+
+        return result;
     }
 
     /**
