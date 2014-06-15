@@ -1861,7 +1861,7 @@ public abstract class AbstractTableDecorator
      *
      */
     @NotNull
-    protected TableDecorator createTableDecorator()
+    protected TableDecorator createTableDecorator(@NotNull final String tableName)
     {
         return createTableDecorator(getTable(), getMetadataManager(), getDecoratorFactory(), getCustomSqlProvider());
     }
