@@ -58,5 +58,8 @@ import org.junit.runners.JUnit4;
 public class TableCustomResultsListDecoratorTest
 {
     @Test
-    public void getItems_returns_decora
+    public void getItems_returns_decorated_results()
+    {
+        @NotNull final
+    }
 }
