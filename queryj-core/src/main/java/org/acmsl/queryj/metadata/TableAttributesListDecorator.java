@@ -236,16 +236,6 @@ public class TableAttributesListDecorator
     /**
      * {@inheritDoc}
      */
-    @Nullable
-    @Override
-    public DecoratedString getComment()
-    {
-        return getTable().getComment();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public ListDecorator<Attribute<DecoratedString>> getPrimaryKey()
