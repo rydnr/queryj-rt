@@ -273,7 +273,7 @@ public abstract class AbstractTableListDecorator<V>
     /**
      * Retrieves the attributes.
      * @param items the items.
-     * @return the
+     * @return the items, if they
      */
     /**
      * Retrieves the types of the attributes.
