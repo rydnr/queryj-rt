@@ -97,6 +97,6 @@ public class TableResultDecoratorImpl
      */
     protected void setResult(@NotNull final Result<DecoratedString> result)
     {
-        this.m__Result = result;
+        immutableSetResult(result);
     }
 }
