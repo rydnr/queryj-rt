@@ -276,7 +276,7 @@ public class CachingDecoratorFactory
     /**
      * Retrieves the decorated list of attributes.
      * @param attributes the attributes to decorate.
-     * @param metadataManager the <code>MetadataManager</code> instance.
+     * @param metadataManager the {@link MetadataManager} instance.
      * @return the decorated version of the attribute list.
      * @param <V> the original attribute type.
      */
