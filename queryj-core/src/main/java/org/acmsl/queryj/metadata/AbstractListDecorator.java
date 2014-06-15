@@ -59,6 +59,7 @@ import java.util.ListIterator;
  * Created: 2013/12/29
  */
 public abstract class AbstractListDecorator<T>
+
 {
     /**
      * The actual list.
