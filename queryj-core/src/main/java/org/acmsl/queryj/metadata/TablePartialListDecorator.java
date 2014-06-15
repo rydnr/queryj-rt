@@ -724,6 +724,6 @@ public class TablePartialListDecorator<V>
     @NotNull
     public ListDecorator<Attribute<DecoratedString>> getDifferent()
     {
-        @NotNull final ListDecorator<Attribute<DecoratedString>>
+        @NotNull final ListDecorator<Attribute<DecoratedString>> items = getItems()
     }
 }
