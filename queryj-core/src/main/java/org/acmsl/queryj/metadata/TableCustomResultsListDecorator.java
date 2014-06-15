@@ -97,7 +97,7 @@ public class TableCustomResultsListDecorator
      */
     @NotNull
     @Override
-    public List<Result<DecoratedString>> getItems()
+    public List<Result<DecoratedString>> getItems(@NotNull final List<Result<DecoratedString>> )
     {
 
         return super.getItems();
