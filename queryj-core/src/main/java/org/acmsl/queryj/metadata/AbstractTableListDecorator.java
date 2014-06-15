@@ -295,7 +295,7 @@ public abstract class AbstractTableListDecorator<V>
 
         if (tableDecoratorHelper.isListOfAttributes(items))
         {
-            result = (List<Attribute<DecoratedString>>) items, metadataTypeManager);
+            result = (List<Attribute<DecoratedString>>) items;
         }
         else
         {
