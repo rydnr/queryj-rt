@@ -201,6 +201,6 @@ public class TableResultDecoratorImpl
     public String toString()
     {
         return
-
+            "{ "
     }
 }
