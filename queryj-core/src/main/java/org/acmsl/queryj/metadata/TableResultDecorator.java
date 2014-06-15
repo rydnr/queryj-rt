@@ -55,4 +55,8 @@ import org.checkthread.annotations.ThreadSafe;
 public interface TableResultDecorator
     extends ResultDecorator
 {
+    /**
+     * Retrieves the table.
+     * @return such instance.
+     */
 }
