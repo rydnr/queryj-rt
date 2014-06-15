@@ -1865,6 +1865,16 @@ public abstract class AbstractTableDecorator
     protected TableDecorator createTableDecorator(
         @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table)
     {
+    }
+    /**
+     * Retrieves a {@link TableDecorator}.
+     * @param table the {@link Table}.
+     * @return such decorator.
+     */
+    @NotNull
+    protected TableDecorator createTableDecorator(
+        @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table)
+    {
         return
             createTableDecorator(table.getName(), getMetadataManager(), getDecoratorFactory(), getCustomSqlProvider());
     }
