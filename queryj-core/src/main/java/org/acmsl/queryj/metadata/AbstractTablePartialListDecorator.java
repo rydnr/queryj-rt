@@ -154,7 +154,7 @@ public abstract class AbstractTablePartialListDecorator<V>
         {
             @Nullable final V item = list.get(0);
 
-            if (item instanceof Attribute)
+            if (item instanceof Result)
             {
                 result = true;
             }
