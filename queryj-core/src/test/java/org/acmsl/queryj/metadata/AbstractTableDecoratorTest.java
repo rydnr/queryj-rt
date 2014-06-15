@@ -42,6 +42,7 @@ import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.AttributeIncompleteValueObject;
+import org.acmsl.queryj.metadata.vo.AttributeValueObject;
 import org.acmsl.queryj.metadata.vo.ForeignKey;
 import org.acmsl.queryj.metadata.vo.Table;
 import org.acmsl.queryj.metadata.vo.TableValueObject;
@@ -348,5 +349,42 @@ public class AbstractTableDecoratorTest
                    type.getValue().equals("java.util.Date")
                 || type.getValue().equals("java.sql.Timestamp"));
         }
+    }
+
+    @Test
+    public void isListOfAttributes_detects_types_correctly()
+    {
+        @NotNull final TableDecorator tableDecorator = EasyMock.createNiceMock(TableDecorator.class);
+
+        @NotNull final List<Attribute<String>> list = new ArrayList<>(1);
+
+        @NotNull final Attribute<String> attribute =
+            new AttributeValueObject(
+                "name",
+                Types.BIGINT,
+                "long",
+                "table",
+                "comment",
+                1,
+                10,
+                1,
+                null,
+                null,
+                null,
+                false,
+                null,
+                false,
+                false,
+                null,
+                null,
+                null);
+
+        list.add(attribute);
+
+        @NotNull final ListDecorator<Attribute<String>> listDecorator =
+            new TableAttributesListDecorator(list, tableDecorator);
+
+        @NotNull final TablePartialListDecorator<Attribute<DecoratedString>> instance =
+            new TablePartialListDecorator<Attribute<DecoratedString>>(listDecorator, tableDecorator);
     }
 }
