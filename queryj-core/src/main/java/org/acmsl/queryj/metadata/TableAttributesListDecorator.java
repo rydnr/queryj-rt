@@ -126,7 +126,6 @@ public class TableAttributesListDecorator
 
     /**
      * Checks whether some of the attributes cannot be null.
-     *
      * @return {@code true} in such case.
      */
     @Override
