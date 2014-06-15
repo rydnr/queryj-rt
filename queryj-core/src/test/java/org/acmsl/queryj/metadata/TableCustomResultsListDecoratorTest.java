@@ -39,6 +39,7 @@ package org.acmsl.queryj.metadata;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.customsql.Result;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -67,6 +68,8 @@ public class TableCustomResultsListDecoratorTest
     public void getItems_returns_decorated_results()
     {
         @NotNull final List<Result<DecoratedString>> list = new ArrayList<>(2);
+
+        @NotNull final TableDecorator tableDecorator = EasyMock.createNiceMock(TableDecorator.class);
 
         @NotNull final TableCustomResultsListDecorator instance =
             new TableCustomResultsListDecorator(
