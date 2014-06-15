@@ -69,10 +69,10 @@ public class TablePartialListDecoratorTest
     @Test
     public void getDifferent_removes_duplicates()
     {
-        @NotNull final List<Attribute<DecoratedString>> list = new ArrayList<>(3);
+        @NotNull final List<Attribute<String>> list = new ArrayList<>(3);
 
-        @NotNull final Attribute<DecoratedString> attribute1 =
-            new AttributeValueObject<>()
+        @NotNull final Attribute<String> attribute1 =
+            new AttributeValueObject()
             {
                 @NotNull
                 @Override
