@@ -73,7 +73,7 @@ public class TablePartialListDecoratorTest
     {
         @NotNull final List<Attribute<String>> list = new ArrayList<>(3);
 
-        @NotNull final Attribute<String> attribute1 =
+        @NotNull final Attribute<DecoratedString> attribute1 =
             new AbstractAttribute<DecoratedString>(
                 "name1",
                 Types.BIGINT,
