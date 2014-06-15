@@ -95,7 +95,7 @@ public class TablePartialListDecoratorTest
 
         @NotNull final Attribute<String> attribute2 =
             new AttributeValueObject(
-                "name1",
+                "name2",
                 Types.BIGINT,
                 "long",
                 "table",
