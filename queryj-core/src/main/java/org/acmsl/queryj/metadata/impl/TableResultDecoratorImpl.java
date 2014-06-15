@@ -86,6 +86,7 @@ public class TableResultDecoratorImpl<V>
     public TableResultDecoratorImpl(
         @NotNull final Result<DecoratedString> item, @NotNull final TableDecorator table)
     {
+        super(item, table.getMetadataManager(), table.getDe)
         immutableSetResult(item);
         immutableSetTable(table);
     }
