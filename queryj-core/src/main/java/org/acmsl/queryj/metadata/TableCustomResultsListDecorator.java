@@ -112,6 +112,7 @@ public class TableCustomResultsListDecorator
                 result.add(decorate(item, table));
             }
         }
+
         return result;
     }
 }
