@@ -737,6 +737,8 @@ public class TablePartialListDecorator<V>
     protected ListDecorator<V> getDifferent(
         @NotNull final List<V> items, @NotNull final TableDecoratorHelper tableDecoratorHelper)
     {
+        @NotNull final ListDecorator<V> result;
+
         @NotNull final List<V> aux = new ArrayList<>(items.size());
 
         for (@Nullable final V item : items)
