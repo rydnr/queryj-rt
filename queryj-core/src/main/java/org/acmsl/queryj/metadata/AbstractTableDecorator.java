@@ -1868,7 +1868,7 @@ public abstract class AbstractTableDecorator
         @NotNull final CustomSqlProvider customSqlProvider)
     {
         @NotNull final TableDecorator result =
-            decoratorFactory.createTableDecorator(table.getName(), metadataManager, customSqlProvider));
+            decoratorFactory.createTableDecorator(table.getName(), metadataManager, customSqlProvider);
 
         if (result == null)
         {
