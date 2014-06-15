@@ -187,7 +187,9 @@ public class TableResultDecoratorImpl
     public int hashCode()
     {
         int result = m__Result.hashCode();
+
         result = 31 * result + m__Table.hashCode();
+
         return result;
     }
 }
