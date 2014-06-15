@@ -94,7 +94,9 @@ public interface ListDecorator<T>
      * @return the list, with no duplicates.
      */
     @NotNull
-    /
+    @SuppressWarnings("unused")
+    PartialListDecorator getDifferent();
+
     /**
      * The "invalid operation" message.
      */
