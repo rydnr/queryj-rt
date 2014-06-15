@@ -344,7 +344,7 @@ public abstract class AbstractTableListDecorator<V>
     @Override
     public List<Attribute<DecoratedString>> getNullableAttributes()
     {
-        return getNullableAttributes(getItems(), TableDecoratorHelper.getInstance());
+        return getNullableAttributes(retrieveAttributes(getItems()), TableDecoratorHelper.getInstance());
     }
 
     /**
