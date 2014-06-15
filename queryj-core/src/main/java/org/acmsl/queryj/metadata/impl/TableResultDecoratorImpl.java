@@ -131,7 +131,7 @@ public class TableResultDecoratorImpl<V>
         {
             result = true;
         }
-        else
+        else if ()
         {
             @NotNull final TableResultDecoratorImpl that = (TableResultDecoratorImpl) o;
 
