@@ -78,5 +78,9 @@ public class TableResultDecoratorImpl
     public TableResultDecoratorImpl(
         @NotNull final Result<DecoratedString> item, @NotNull final TableDecorator table)
     {
+        immutableSetResult(item);
+        immutableSetTable(table);
     }
+
+
 }
