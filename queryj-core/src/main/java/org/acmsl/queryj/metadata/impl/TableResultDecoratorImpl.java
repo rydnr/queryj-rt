@@ -68,7 +68,8 @@ public class TableResultDecoratorImpl
      * The table.
      */
     @NotNull
-    private TableDecorator m__TableDe
+    private TableDecorator m__Table;
+
     /**
      * Creates a new decorator.
      * @param item the {@link Result} to decorate.
