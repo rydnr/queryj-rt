@@ -102,7 +102,7 @@ public class TablePartialListDecoratorTest
                 Types.BIGINT,
                 new DecoratedString("long"),
                 new DecoratedString("table"),
-                new DecoratedString("comment 1"),
+                new DecoratedString("comment 2"),
                 1,
                 10,
                 1,
