@@ -287,6 +287,7 @@ public abstract class AbstractTableListDecorator<V>
      * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
      * @return the items, if they're the attributes. An empty list otherwise.
      */
+    @SuppressWarnings("unchecked")
     @NotNull
     protected List<Attribute<DecoratedString>> retrieveAttributes(
         @NotNull final List<V> items, @NotNull final TableDecoratorHelper tableDecoratorHelper)
@@ -295,7 +296,6 @@ public abstract class AbstractTableListDecorator<V>
 
         if (tableDecoratorHelper.isListOfAttributes(items))
         {
-            @SuppressWarnings("unchecked")
             result = (List<Attribute<DecoratedString>>) items;
         }
         else
