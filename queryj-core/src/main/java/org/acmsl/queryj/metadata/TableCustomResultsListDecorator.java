@@ -65,7 +65,7 @@ public class TableCustomResultsListDecorator
      * @param list the list.
      * @param table the {@link TableDecorator table}.
      */
-    public TableCustomResultsListDecorator(@NotNull final List list, @NotNull final TableDecorator table)
+    public TableCustomResultsListDecorator(@NotNull final List<> list, @NotNull final TableDecorator table)
     {
         super(list, table);
     }
