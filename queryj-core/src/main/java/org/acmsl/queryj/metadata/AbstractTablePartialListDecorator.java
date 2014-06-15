@@ -38,12 +38,14 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.metadata.vo.Attribute;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Base class for partial list decorators, wrapping a table.
@@ -107,6 +109,36 @@ public abstract class AbstractTablePartialListDecorator<V>
     public TableDecorator getTable()
     {
         return this.m__Table;
+    }
+
+    /**
+     * Checks whether given list is composed of {@link org.acmsl.queryj.metadata.vo.Attribute attributes} or not.
+     * @param list such list.
+     * @return {@code true} in such case.
+     */
+    protected boolean isListOfAttributes(@NotNull final ListDecorator<V> list)
+    {
+        final boolean result;
+
+        if (list.size() > 0)
+        {
+            @Nullable final V item = list.get(0);
+
+            if (item instanceof Attribute)
+            {
+                result = true;
+            }
+            else
+            {
+                result = false;
+            }
+        }
+        else
+        {
+            result = true;
+        }
+
+        return result;
     }
 
     /**
