@@ -96,16 +96,6 @@ public class TableAttributesListDecorator
      */
     @NotNull
     @Override
-    public List<Row<DecoratedString>> getStaticContent()
-    {
-        throw new RuntimeException(INVALID_OPERATION);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @NotNull
-    @Override
     public ListDecorator<Result<DecoratedString>> getCustomResults()
     {
         throw new RuntimeException(INVALID_OPERATION);
