@@ -1848,16 +1848,6 @@ public abstract class AbstractTableDecorator
 
     /**
      * Retrieves a {@link TableDecorator}.
-     * @return such decorator.
-     */
-    @NotNull
-    protected TableDecorator createTableDecorator()
-    {
-        return createTableDecorator(getTable());
-    }
-
-    /**
-     * Retrieves a {@link TableDecorator}.
      * @param table the {@link Table}.
      * @return such decorator.
      */
