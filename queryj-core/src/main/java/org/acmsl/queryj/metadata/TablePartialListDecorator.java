@@ -739,7 +739,10 @@ public class TablePartialListDecorator<V>
 
         for (@Nullable final V item : items)
         {
-            if (!)
+            if (!aux.contains(item))
+            {
+                result.add(item);
+            }
         }
     }
 }
