@@ -960,7 +960,7 @@ public class CachingTableDecorator
      * @return such results.
      A*/
     @Nullable
-    public List<Result<DecoratedString>> getCachedDifferentCustomResults()
+    public ListDecorator<Result<DecoratedString>> getCachedDifferentCustomResults()
     {
         return this.m__lCachedDifferentCustomResults;
     }
