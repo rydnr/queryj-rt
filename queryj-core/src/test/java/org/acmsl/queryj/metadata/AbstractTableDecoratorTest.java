@@ -350,40 +350,4 @@ public class AbstractTableDecoratorTest
                 || type.getValue().equals("java.sql.Timestamp"));
         }
     }
-
-    /**
-     * Checks whether isListOfAttributes detects types correctly.
-     */
-    @Test
-    public void isListOfAttributes_detects_types_correctly()
-    {
-        @NotNull final List<Attribute<String>> list = new ArrayList<>(1);
-
-        @NotNull final Attribute<String> attribute =
-            new AttributeValueObject(
-                "name",
-                Types.BIGINT,
-                "long",
-                "table",
-                "comment",
-                1,
-                10,
-                1,
-                null,
-                null,
-                null,
-                false,
-                null,
-                false,
-                false,
-                null,
-                null,
-                null);
-
-        list.add(attribute);
-
-        @NotNull final AbstractTableDecorator instance = setupTableDecorator(list, null);
-
-        Assert.assertTrue(instance.isListOfAttributes(list));
-    }
 }
