@@ -55,7 +55,8 @@ import org.checkthread.annotations.ThreadSafe;
  *        Created: 2014/06/15 19:27
  */
 @ThreadSafe
-public class TableResultDecoratorImpl implements TableResultDecorator
+public class TableResultDecoratorImpl
+    implements TableResultDecorator
 {
     public TableResultDecoratorImpl(final Result<DecoratedString> item, final TableDecorator table)
     {
