@@ -175,7 +175,7 @@ public interface TableDecorator
     Result<DecoratedString> getCustomResult();
 
     /**
-     * Retrieves the custom results (.
+     * Retrieves the custom results (referred indirectly by the .
      * @return such {@link ResultDecorator} element.
      */
     @SuppressWarnings("unused")
