@@ -384,7 +384,7 @@ public abstract class AbstractListDecorator<T>
      * Retrieves the attributes.
      * @param items the items.
      * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
-     * @return the items, if they're the attributes. An empty list otherwise.
+     * @return the items, if they're the custom results. An empty list otherwise.
      */
     @SuppressWarnings("unchecked")
     @NotNull
