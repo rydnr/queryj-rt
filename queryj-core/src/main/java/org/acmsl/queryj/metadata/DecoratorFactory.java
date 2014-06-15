@@ -103,7 +103,7 @@ public interface DecoratorFactory
      * @return the decorated property for the concrete template.
      */
     @NotNull
-    public PropertyDecorator createDecorator(
+    public <V> PropertyDecorator createDecorator(
         @NotNull final Property<String> property,
         @NotNull final Result<String> result,
         @NotNull final CustomSqlProvider customSqlProvider,
