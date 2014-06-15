@@ -749,7 +749,7 @@ public class TablePartialListDecorator<V>
             }
         }
 
-        if ()
+        if (tableDecoratorHelper.isListOfAttributes())
         return
     }
 }
