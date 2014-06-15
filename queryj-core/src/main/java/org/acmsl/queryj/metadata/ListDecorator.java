@@ -90,7 +90,8 @@ public interface ListDecorator<T>
     PartialListDecorator getOnly();
 
     /**
-     * Retrieves onl
+     * Removes duplicates from the list.
+     * @return
      */
     /**
      * The "invalid operation" message.
