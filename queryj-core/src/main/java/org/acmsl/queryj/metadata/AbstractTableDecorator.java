@@ -1865,6 +1865,7 @@ public abstract class AbstractTableDecorator
     protected TableDecorator createTableDecorator(
         @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table)
     {
+        return createTableDecorator()
     }
     /**
      * Retrieves a {@link TableDecorator}.
