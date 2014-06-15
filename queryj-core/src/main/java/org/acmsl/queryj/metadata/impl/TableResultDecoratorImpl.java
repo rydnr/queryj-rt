@@ -38,9 +38,11 @@ package org.acmsl.queryj.metadata.impl;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.metadata.AbstractResultDecorator;
 import org.acmsl.queryj.metadata.DecoratedString;
+import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.TableDecorator;
 import org.acmsl.queryj.metadata.TableResultDecorator;
 
@@ -84,7 +86,10 @@ public class TableResultDecoratorImpl<V>
      * @param table the {@link TableDecorator table}.
      */
     public TableResultDecoratorImpl(
-        @NotNull final Result<DecoratedString> item, @NotNull final TableDecorator table)
+        @NotNull final Result<DecoratedString> item,
+        @NotNull final TableDecorator table,
+        @NotNull final CustomSqlProvider customSqlProvider,
+        @NotNull final DecoratorFactory decoratorFactory)
     {
             super(item  , table.getMetadataManager(), table.getDecoratorFactory())
         immutableSetResult(item);
