@@ -77,6 +77,7 @@ import java.util.List;
 
 /**
  * Decorates &lt;result&gt; elements in <i>custom-sql</i> models.
+ * @param <V> the result type.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  */
 @ThreadSafe
