@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for TableCustomResultsListDecorator.
  *
  * Date: 2014/06/15
  * Time: 19:11
