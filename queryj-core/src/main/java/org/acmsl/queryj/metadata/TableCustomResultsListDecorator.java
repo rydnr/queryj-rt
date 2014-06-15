@@ -106,7 +106,7 @@ public class TableCustomResultsListDecorator
         {
             if (item != null)
             {
-                result.add()
+                result.add(decorate(item))
             }
         }
         return result;
