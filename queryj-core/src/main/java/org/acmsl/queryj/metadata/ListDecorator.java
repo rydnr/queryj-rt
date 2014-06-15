@@ -90,6 +90,9 @@ public interface ListDecorator<T>
     PartialListDecorator getOnly();
 
     /**
+     * Retrieves onl
+     */
+    /**
      * The "invalid operation" message.
      */
     @NotNull
