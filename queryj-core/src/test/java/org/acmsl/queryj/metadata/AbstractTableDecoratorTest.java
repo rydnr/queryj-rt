@@ -384,10 +384,6 @@ public class AbstractTableDecoratorTest
 
         @NotNull final AbstractTableDecorator instance = setupTableDecorator(list, null);
 
-        @NotNull final ListDecorator<Attribute<String>> listDecorator =
-            new TableAttributesListDecorator(list, tableDecorator);
-
-        @NotNull final TablePartialListDecorator<Attribute<DecoratedString>> instance =
-            new TablePartialListDecorator<Attribute<DecoratedString>>(listDecorator, tableDecorator);
+        Assert.assertTrue(instance.isListOfAttributes())
     }
 }
