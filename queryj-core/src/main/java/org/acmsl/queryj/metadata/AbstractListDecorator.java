@@ -40,6 +40,10 @@ package org.acmsl.queryj.metadata;
  */
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.metadata.vo.Attribute;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
