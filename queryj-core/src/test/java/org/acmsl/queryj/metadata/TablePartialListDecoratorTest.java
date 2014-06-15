@@ -79,6 +79,7 @@ public class TablePartialListDecoratorTest
                 "long",
                 "table",
                 "comment",
+                1,
 
             );
         @NotNull final TableDecorator tableDecorator = EasyMock.createNiceMock(TableDecorator.class);
