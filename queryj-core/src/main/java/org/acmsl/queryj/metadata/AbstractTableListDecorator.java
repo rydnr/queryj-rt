@@ -326,7 +326,7 @@ public abstract class AbstractTableListDecorator<V>
 
     /**
      * Retrieves the nullable attributes.
-     * @param attributes the attributes.
+     * @param items the attributes.
      * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
      * @return the nullable attributes.
      */
