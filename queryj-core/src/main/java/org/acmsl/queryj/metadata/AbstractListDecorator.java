@@ -338,7 +338,7 @@ public abstract class AbstractListDecorator<T>
      * @return the items, if they're the attributes. An empty list otherwise.
      */
     @NotNull
-    protected List<Attribute<DecoratedString>> retrieveAttributes(@NotNull final List<V> items)
+    protected List<Attribute<DecoratedString>> retrieveAttributes(@NotNull final List<T> items)
     {
         return retrieveAttributes(items, TableDecoratorHelper.getInstance());
     }
