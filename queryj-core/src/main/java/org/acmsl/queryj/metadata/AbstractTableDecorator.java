@@ -1952,7 +1952,7 @@ public abstract class AbstractTableDecorator
         @NotNull final SqlDAO sqlDAO,
         @NotNull final SqlResultDAO resultDAO)
     {
-        @NotNull final List<Result<String>> result = new ArrayList<>();
+        @NotNull final List<Result<DecoratedString>> result = new ArrayList<>();
 
         @NotNull final List<Sql<String>> t_lSql = sqlDAO.findSelects(table);
         t_lSql.addAll(sqlDAO.findSelectsForUpdate(table));
