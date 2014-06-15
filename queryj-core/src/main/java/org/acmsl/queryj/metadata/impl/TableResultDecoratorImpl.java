@@ -169,7 +169,11 @@ public class TableResultDecoratorImpl
             }
             else if (!m__Table.equals(that.m__Table))
             {
-                return false;
+                result = false;
+            }
+            else
+            {
+                result = true;
             }
 
         return true;
