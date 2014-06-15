@@ -1637,7 +1637,7 @@ public abstract class AbstractTableDecorator
         {
             if (t_Result != null)
             {
-                result.add(t_Result, customSqlProvider, metadataManager, decoratorFactory));
+                result.add(t_Result);
             }
         }
 
