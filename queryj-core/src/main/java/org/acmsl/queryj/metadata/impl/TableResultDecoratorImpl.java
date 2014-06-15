@@ -204,6 +204,6 @@ public class TableResultDecoratorImpl
             "{ \"result\": " + this.m__Result
             + ", \"table\": " + this.m__Table
             + ", \"class\": \"TableResultDecoratorImpl\""
-        + ", \"package\": \"org.acmsl.queryj"
+        + ", \"package\": \"org.acmsl.queryj.metadata.impl\""
     }
 }
