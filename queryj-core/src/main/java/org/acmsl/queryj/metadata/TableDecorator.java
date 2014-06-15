@@ -176,7 +176,7 @@ public interface TableDecorator
 
     /**
      * Retrieves the custom results (referred indirectly by the custom queries).
-     * @return such {@link ResultDecorator} element.
+     * @return such information.
      */
     @SuppressWarnings("unused")
     @Nullable
