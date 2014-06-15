@@ -284,6 +284,7 @@ public abstract class AbstractTableListDecorator<V>
     /**
      * Retrieves the attributes.
      * @param items the items.
+     * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
      * @return the items, if they're the attributes. An empty list otherwise.
      */
     @NotNull
