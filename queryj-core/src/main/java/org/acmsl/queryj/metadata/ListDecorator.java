@@ -93,5 +93,5 @@ public interface ListDecorator<T>
      * The "invalid operation" message.
      */
     @NotNull
-    String INVALID_OPERATION
+    String INVALID_OPERATION = "invalid operation";
 }
