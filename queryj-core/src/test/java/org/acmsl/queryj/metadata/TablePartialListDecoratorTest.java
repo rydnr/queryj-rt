@@ -36,7 +36,7 @@
 package org.acmsl.queryj.metadata;
 
 /*
- * Importing QueryJ Core classes
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.metadata.AbstractPartialListDecorator.Operation;
 import org.acmsl.queryj.metadata.vo.AbstractAttribute;
