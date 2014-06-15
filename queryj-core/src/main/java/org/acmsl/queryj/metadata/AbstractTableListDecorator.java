@@ -74,7 +74,8 @@ import java.util.List;
 public abstract class AbstractTableListDecorator<V>
     extends AbstractListDecorator<V>
     implements ListDecorator<V>,
-               TableDecorator
+               TableDecorator,
+               TableListDecorator
 {
     /**
      * The table decorator.
