@@ -370,7 +370,7 @@ public abstract class AbstractListDecorator<T>
     }
 
     /**
-     * Retrieves the attributes.
+     * Retrieves the custom results.
      * @param items the items.
      * @return the items, if they're the custom results. An empty list otherwise.
      */
