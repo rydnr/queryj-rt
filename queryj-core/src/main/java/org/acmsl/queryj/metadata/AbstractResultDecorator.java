@@ -106,7 +106,7 @@ public abstract class AbstractResultDecorator<V>
     private DecoratorFactory m__DecoratorFactory;
 
     /**
-     * Creates a {ResultElementDecorator} with given instance.
+     * Creates a {@code ResultElementDecorator} with given instance.
      * @param result the result element.
      * @param customSqlProvider the {@code CustomSqlProvider}, required
      * to decorate referred parameters.
