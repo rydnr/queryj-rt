@@ -285,8 +285,14 @@ public abstract class AbstractTableListDecorator<V>
     {
         @NotNull final List<DecoratedString> result;
 
-        if ()
-        return tableDecoratorHelper.getAttributeTypes(items, metadataTypeManager);
+        if (tableDecoratorHelper.isListOfAttributes(items))
+        {
+            result = tableDecoratorHelper.getAttributeTypes(items, metadataTypeManager);
+        }
+        else
+        {
+            result = new ArrayList<>(0);
+        }
     }
 
     /**
