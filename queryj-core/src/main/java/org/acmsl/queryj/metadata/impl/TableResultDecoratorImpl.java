@@ -153,7 +153,7 @@ public class TableResultDecoratorImpl
 
         if (this == o)
         {
-            return true;
+            result = true;
         }
         if (!(o instanceof TableResultDecoratorImpl))
         {
