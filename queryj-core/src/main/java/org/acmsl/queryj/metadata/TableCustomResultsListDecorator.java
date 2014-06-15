@@ -116,6 +116,12 @@ public class TableCustomResultsListDecorator
         return result;
     }
 
+    /**
+     * Decorates given item.
+     * @param item the result to decorate.
+     * @param table the {@link TableDecorator table}.
+     * @return the decorated item.
+     */
     @NotNull
     protected TableResultDecorator decorate(
         @NotNull final Result<DecoratedString> item, @NotNull final TableDecorator table)
