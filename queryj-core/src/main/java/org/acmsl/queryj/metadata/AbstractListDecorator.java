@@ -335,7 +335,7 @@ public abstract class AbstractListDecorator<T>
      * @param list such list.
      * @return {@code true} in such case.
      */
-    protected boolean isListOfAttributes(@NotNull final ListDecorator<T> list)
+    protected boolean isListOfAttributes(@NotNull final List<T> list)
     {
         final boolean result;
 
