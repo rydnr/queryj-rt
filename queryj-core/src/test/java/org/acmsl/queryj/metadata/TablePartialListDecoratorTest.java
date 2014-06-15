@@ -75,7 +75,9 @@ public class TablePartialListDecoratorTest
             new TablePartialListDecorator<>(
                 listDecorator, tableDecorator, Operation.DIFFERENT);
 
-        @NotNull final ListDecorator<Attribute<DecoratedString>>
+        @NotNull final ListDecorator<Attribute<DecoratedString>> unique =
+            instance.getDifferent();
+
         Assert.assertEquals()
     }
 }
