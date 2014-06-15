@@ -1968,7 +1968,7 @@ public abstract class AbstractTableDecorator
                     @Nullable final Result<String> t_Result = resultDAO.findByPrimaryKey(t_ResultRef.getId());
 
                     if (   (t_Result != null)
-                        && (!matches(t_Result.getClassValue(), voName))
+                        && (!matches(t_Result.getClassValue(), voName)))
                         && (!result.contains(t_Result)))
                     {
                         result.add(decorate(t_Result));
