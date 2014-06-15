@@ -238,16 +238,6 @@ public class TableAttributesListDecorator
      */
     @NotNull
     @Override
-    public ListDecorator<Attribute<DecoratedString>> getPrimaryKey()
-    {
-        return getTable().getPrimaryKey();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @NotNull
-    @Override
     public List<ForeignKey<DecoratedString>> getForeignKeys()
     {
         return getTable().getForeignKeys();
