@@ -357,7 +357,7 @@ public class AbstractTableDecoratorTest
     @Test
     public void isListOfAttributes_detects_types_correctly()
     {
-        @NotNull final TableDecorator tableDecorator = crea
+        @NotNull final TableDecorator tableDecorator =
 
         @NotNull final List<Attribute<String>> list = new ArrayList<>(1);
 
