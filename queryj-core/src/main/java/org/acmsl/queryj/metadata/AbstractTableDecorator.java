@@ -1872,7 +1872,7 @@ public abstract class AbstractTableDecorator
 
         if (result == null)
         {
-            throw new RuntimeException("")
+            throw new RuntimeException("Cannot create a TableDecorator for ")
         }
     }
 
