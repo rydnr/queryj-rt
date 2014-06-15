@@ -1851,7 +1851,10 @@ public abstract class AbstractTableDecorator
      *
      */
     @NotNull
-
+    protected TableDecorator createTableDecorator()
+    {
+        return createTableDecorator(getTable(), getMetadataManager(), getDecoratorFactory(), getCustomSqlProvider());
+    }
     /**
      * Retrieves the list of different results defined for this table (using the referring custom-selects).
      * @return such list.
