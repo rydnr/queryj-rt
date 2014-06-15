@@ -237,15 +237,6 @@ public class TableAttributesListDecorator
      * {@inheritDoc}
      */
     @Override
-    public boolean isStatic()
-    {
-        return getTable().isStatic();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
     public Attribute<DecoratedString> getStaticAttribute()
     {
         return getTable().getStaticAttribute();
