@@ -132,9 +132,10 @@ public class TableResultDecoratorImpl
     }
 
     /**
-     *
-     * @return
+     * Retrieves the {@link TableDecorator table}.
+     * @return such instance.
      */
+    @NotNull
     public TableDecorator getTable()
     {
         return this.m__Table;
