@@ -65,7 +65,7 @@ public class TableCustomResultsListDecorator
     /**
      * Creates a new instance.
      * @param list the list.
-     * @param table the table
+     * @param table the {@link TableDecorator}
      */
     public TableCustomResultsListDecorator(@NotNull final List list, @NotNull final TableDecorator table)
     {
