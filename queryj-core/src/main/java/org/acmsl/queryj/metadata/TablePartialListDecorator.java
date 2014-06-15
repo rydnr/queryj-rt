@@ -719,5 +719,6 @@ public class TablePartialListDecorator<V>
 
     public ListDecorator<Attribute<DecoratedString>> getDifferent()
     {
+        return null;  //To change body of created methods use File | Settings | File Templates.
     }
 }
