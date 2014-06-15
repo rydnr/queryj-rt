@@ -860,7 +860,7 @@ public abstract class AbstractResultDecorator<V>
      * @param object the object to compare to.
      * @return the result of such comparison.
      */
-    protected boolean equals(@NotNull final Result<String> result, @Nullable final Object object)
+    protected boolean equals(@NotNull final Result<V> result, @Nullable final Object object)
     {
         return result.equals(object);
     }
