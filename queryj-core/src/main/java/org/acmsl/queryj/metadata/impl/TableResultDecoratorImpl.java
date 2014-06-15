@@ -130,4 +130,6 @@ public class TableResultDecoratorImpl
     {
         immutableSetTable(table);
     }
+
+    public
 }
