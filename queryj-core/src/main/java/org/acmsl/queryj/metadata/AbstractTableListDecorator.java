@@ -341,6 +341,8 @@ public abstract class AbstractTableListDecorator<V>
         {
             result = tableDecoratorHelper.filterNullableAttributes(items);
         }
+        else
+        {
     }
 
     // Table implementation
