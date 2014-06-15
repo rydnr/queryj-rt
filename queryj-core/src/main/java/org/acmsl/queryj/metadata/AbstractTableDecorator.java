@@ -1633,7 +1633,7 @@ public abstract class AbstractTableDecorator
     {
         @NotNull final List<Result<DecoratedString>> result = new ArrayList<>(results.size());
 
-        for (@Nullable final Result<String> t_Result : results)
+        for (@Nullable final Result<DecoratedString> t_Result : results)
         {
             if (t_Result != null)
             {
