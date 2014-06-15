@@ -73,7 +73,7 @@ public class TableCustomResultsListDecoratorTest
 
         for (@Nullable final Result<DecoratedString> item : items)
         {
-            Assert.assertTrue(item instanceof ResultDecorator);
+            Assert.assertTrue(item instanceof TableResultDecorator);
         }
     }
 }
