@@ -96,35 +96,6 @@ public class TableResultDecoratorImpl<V>
     }
 
     /**
-     * Specifies the {@link Result result} to decorate.
-     * @param result the result.
-     */
-    protected final void immutableSetResult(@NotNull final Result<DecoratedString> result)
-    {
-        this.m__Result = result;
-    }
-
-    /**
-     * Specifies the {@link Result result} to decorate.
-     * @param result the result.
-     */
-    @SuppressWarnings("unused")
-    protected void setResult(@NotNull final Result<DecoratedString> result)
-    {
-        immutableSetResult(result);
-    }
-
-    /**
-     * Retrieves the decorated {@link Result result}.
-     * @return such instance.
-     */
-    @NotNull
-    public Result<?> getResult()
-    {
-        return this.m__Result;
-    }
-
-    /**
      * Specifies the {@link TableDecorator table}.
      * @param table such table.
      */
