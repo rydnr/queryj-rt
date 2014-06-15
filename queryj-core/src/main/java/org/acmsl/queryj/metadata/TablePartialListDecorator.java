@@ -716,4 +716,8 @@ public class TablePartialListDecorator<V>
             + ", \"package\": \"org.acmsl.queryj.metadata\""
             + " }";
     }
+
+    public ListDecorator<Attribute<DecoratedString>> getDifferent()
+    {
+    }
 }
