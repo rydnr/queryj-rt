@@ -50,6 +50,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
@@ -62,6 +65,8 @@ public class TablePartialListDecoratorTest
     @Test
     public void getDifferent_removes_duplicates()
     {
+        @NotNull final List<Attribute<DecoratedString>> list = new ArrayList<>(3);
+
         @NotNull final ListDecorator<Attribute<DecoratedString>> listDecorator =
             new TableAttributesListDecorator(list, tableDecorator);
         @NotNull final TablePartialListDecorator<Attribute<DecoratedString>> instance =
