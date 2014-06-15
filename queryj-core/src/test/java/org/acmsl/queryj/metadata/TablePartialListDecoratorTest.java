@@ -54,6 +54,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.sql.Types;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -74,6 +75,7 @@ public class TablePartialListDecoratorTest
         @NotNull final Attribute<String> attribute1 =
             new AttributeValueObject(
                 "name1",
+                Types.BIGINT,
 
             );
         @NotNull final TableDecorator tableDecorator = EasyMock.createNiceMock(TableDecorator.class);
