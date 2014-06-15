@@ -718,8 +718,8 @@ public class TablePartialListDecorator<V>
     }
 
     /**
-     * Retrieves the
-     * @return
+     * Retrieves the items, after removing duplicates.
+     * @return such list.
      */
     @NotNull
     public ListDecorator<Attribute<DecoratedString>> getDifferent()
