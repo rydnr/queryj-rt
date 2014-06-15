@@ -236,15 +236,6 @@ public class TableAttributesListDecorator
     /**
      * {@inheritDoc}
      */
-    @Override
-    public boolean isRelationship()
-    {
-        return getTable().isRelationship();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public MetadataManager getMetadataManager()
