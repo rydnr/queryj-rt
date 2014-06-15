@@ -271,42 +271,6 @@ public abstract class AbstractTableListDecorator<V>
     }
 
     /**
-     * Retrieves the attributes.
-     * @param items the items.
-     * @return the items, if they're the attributes. An empty list otherwise.
-     */
-    @NotNull
-    protected List<Attribute<DecoratedString>> retrieveAttributes(@NotNull final List<V> items)
-    {
-        return retrieveAttributes(items, TableDecoratorHelper.getInstance());
-    }
-
-    /**
-     * Retrieves the attributes.
-     * @param items the items.
-     * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
-     * @return the items, if they're the attributes. An empty list otherwise.
-     */
-    @SuppressWarnings("unchecked")
-    @NotNull
-    protected List<Attribute<DecoratedString>> retrieveAttributes(
-        @NotNull final List<V> items, @NotNull final TableDecoratorHelper tableDecoratorHelper)
-    {
-        @NotNull final List<Attribute<DecoratedString>> result;
-
-        if (tableDecoratorHelper.isListOfAttributes(items))
-        {
-            result = (List<Attribute<DecoratedString>>) items;
-        }
-        else
-        {
-            result = new ArrayList<>(0);
-        }
-
-        return result;
-
-    }
-    /**
      * Retrieves the types of the attributes.
      * @param items such items.
      * @param metadataTypeManager the {@link MetadataTypeManager} instance.
