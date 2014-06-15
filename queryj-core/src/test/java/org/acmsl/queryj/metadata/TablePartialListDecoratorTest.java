@@ -77,6 +77,7 @@ public class TablePartialListDecoratorTest
                 "name1",
                 Types.BIGINT,
                 "long",
+                "table";
 
             );
         @NotNull final TableDecorator tableDecorator = EasyMock.createNiceMock(TableDecorator.class);
