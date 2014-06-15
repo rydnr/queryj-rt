@@ -173,7 +173,6 @@ public class TableAttributesListDecorator
 
     /**
      * Retrieves the custom select-for-update queries.
-     *
      * @return such list of {@link org.acmsl.queryj.customsql.Sql} elements.
      */
     @NotNull
@@ -185,7 +184,6 @@ public class TableAttributesListDecorator
 
     /**
      * Retrieves the name of the parent table, or {@code null} if no parent exists.
-     *
      * @return such information.
      */
     @Nullable
