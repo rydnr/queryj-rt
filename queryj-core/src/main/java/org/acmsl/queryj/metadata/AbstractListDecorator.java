@@ -60,6 +60,11 @@ public abstract class AbstractListDecorator<T>
     implements ListDecorator<T>
 {
     /**
+     * The serial version id.
+     */
+    public static final String INVALID_OPERATION = "Invalid operation";
+
+    /**
      * The actual list.
      */
     @NotNull
