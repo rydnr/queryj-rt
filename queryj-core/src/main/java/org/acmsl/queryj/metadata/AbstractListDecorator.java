@@ -60,11 +60,6 @@ public abstract class AbstractListDecorator<T>
     implements ListDecorator<T>
 {
     /**
-     * The invalid operation message.
-     */
-    public static final String INVALID_OPERATION = "Invalid operation";
-
-    /**
      * The actual list.
      */
     @NotNull
