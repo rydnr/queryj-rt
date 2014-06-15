@@ -763,7 +763,7 @@ public class TablePartialListDecorator<V>
         }
         else
         {
-            throw new RuntimeException()
+            throw new RuntimeException("invalid operation");
         }
         return
     }
