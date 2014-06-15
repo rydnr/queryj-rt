@@ -57,7 +57,7 @@ import java.util.List;
  * Decorates &lt;result&gt; elements in <i>custom-sql</i> models.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  */
-public interface ResultDecorator
+public interface ResultDecorator<V>
     extends  Result<DecoratedString>,
              Decorator
 {
