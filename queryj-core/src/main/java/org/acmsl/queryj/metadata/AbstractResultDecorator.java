@@ -114,7 +114,7 @@ public abstract class AbstractResultDecorator<V>
      * @param decoratorFactory the <code>DecoratorFactory</code> instance.
      */
     public AbstractResultDecorator(
-        @NotNull final Result<String> result,
+        @NotNull final Result<V> result,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
         @NotNull final DecoratorFactory decoratorFactory)
