@@ -384,6 +384,6 @@ public class AbstractTableDecoratorTest
 
         @NotNull final AbstractTableDecorator instance = setupTableDecorator(list, null);
 
-        Assert.assertTrue(instance.isListOfAttributes())
+        Assert.assertTrue(instance.isListOfAttributes(list));
     }
 }
