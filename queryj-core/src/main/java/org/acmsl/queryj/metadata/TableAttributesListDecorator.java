@@ -149,7 +149,6 @@ public class TableAttributesListDecorator
 
     /**
      * Retrieves the custom selects.
-     *
      * @return such list of {@link org.acmsl.queryj.customsql.Sql} elements.
      */
     @NotNull
