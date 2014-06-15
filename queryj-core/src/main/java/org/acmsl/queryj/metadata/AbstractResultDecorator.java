@@ -133,7 +133,7 @@ public abstract class AbstractResultDecorator<V>
      * Specifies the result.
      * @param result the result.
      */
-    protected final void immutableSetResult(@NotNull final Result<String> result)
+    protected final void immutableSetResult(@NotNull final Result<V> result)
     {
         m__Result = result;
     }
