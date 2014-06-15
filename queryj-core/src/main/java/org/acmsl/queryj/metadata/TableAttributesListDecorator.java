@@ -209,7 +209,6 @@ public class TableAttributesListDecorator
 
     /**
      * Alias to make templates more readable.
-     *
      * @return the child attributes.
      */
     @Nullable
