@@ -147,7 +147,7 @@ public class CachingTableDecorator
     /**
      * The cached list of different results.
      */
-    private List<Result<DecoratedString>> m__lCachedCustomResults;
+    private ListDecorator<Result<DecoratedString>> m__lCachedCustomResults;
 
     /**
      * The cached list of read-only attributes.
