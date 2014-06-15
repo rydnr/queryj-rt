@@ -730,7 +730,7 @@ public class TablePartialListDecorator<V>
      * @return such list.
      */
     @NotNull
-    public ListDecorator<V> getDifferent()
+    protected ListDecorator<V> getDifferent(@NotNull final List<V> items)
     {
         @NotNull final List<V>
         @NotNull final List<V> items = getItems();
