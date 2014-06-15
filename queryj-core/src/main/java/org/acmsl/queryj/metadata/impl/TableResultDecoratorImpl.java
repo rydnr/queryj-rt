@@ -61,7 +61,7 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2014/06/15 19:27
  */
 @ThreadSafe
-public class TableResultDecoratorImpl
+public class TableResultDecoratorImpl<V>
     implements TableResultDecorator<V>
 {
     /**
