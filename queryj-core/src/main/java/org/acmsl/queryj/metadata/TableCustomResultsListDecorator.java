@@ -218,8 +218,8 @@ public class TableCustomResultsListDecorator
 
     /**
      * {@inheritDoc}
-     * @return
      */
+    @NotNull
     @Override
     public String toString()
     {
