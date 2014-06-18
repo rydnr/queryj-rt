@@ -227,8 +227,7 @@ public class TableCustomResultsListDecorator
             "{ \"super\": "
             + super.toString()
             + ", \"customSqlProvider\": " + m__CustomSqlProvider
-            + ", \"
-               ", m__DecoratorFactory=" + m__DecoratorFactory +
+            + ", \"decoratorFactory\": " + m__DecoratorFactory +
                '}';
     }
 }
