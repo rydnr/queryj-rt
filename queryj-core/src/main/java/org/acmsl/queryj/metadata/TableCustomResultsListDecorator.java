@@ -132,7 +132,7 @@ public class TableCustomResultsListDecorator
      * @return the decorated item.
      */
     @NotNull
-    protected TableResultDecorator decorate(
+    protected TableResultDecorator<DecoratedString> decorate(
         @NotNull final Result<DecoratedString> item,
         @NotNull final TableDecorator table,
         @NotNull final CustomSqlProvider customSqlProvider,
