@@ -92,7 +92,7 @@ public class TableCustomResultsListDecorator
     @Override
     public List<Result<DecoratedString>> getItems()
     {
-        return decorate(super.getItems(), getTable());
+        return decorate(super.getItems(), getTable(), getCustomSqlProvider(), );
     }
 
     /**
