@@ -157,7 +157,7 @@ public class TableCustomResultsListDecorator
     @NotNull
     public DecoratorFactory getDecoratorFactory(@NotNull final DecoratorFactory factory)
     {
-        immutableSetDecoratorFactory(factory);
+        return this.m__DecoratorFactory;
     }
 
     /**
