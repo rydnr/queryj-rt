@@ -117,7 +117,7 @@ public class TableCustomResultsListDecorator
      */
     protected void setCustomSqlProvider(@NotNull final CustomSqlProvider provider)
     {
-        this.m__CustomSqlProvider = provider;
+        immutableSetCustomSqlProvider(provider);
     }
 
     /**
