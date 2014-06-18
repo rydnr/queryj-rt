@@ -38,6 +38,7 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Result;
 
 /*
@@ -91,6 +92,8 @@ public class TableCustomResultsListDecoratorTest
         @NotNull final TableDecorator tableDecorator =
             EasyMock.createNiceMock(TableDecorator.class);
 
+        @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
+        @NotNull final
         @NotNull final TableCustomResultsListDecorator instance =
             new TableCustomResultsListDecorator(list, tableDecorator);
 
