@@ -41,7 +41,6 @@ package org.acmsl.queryj.metadata.impl;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.metadata.AbstractResultDecorator;
-import org.acmsl.queryj.metadata.DecoratedString;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.TableDecorator;
 import org.acmsl.queryj.metadata.TableResultDecorator;
