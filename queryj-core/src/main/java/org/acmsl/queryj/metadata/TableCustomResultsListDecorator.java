@@ -151,7 +151,7 @@ public class TableCustomResultsListDecorator
     }
 
     /**
-     * Specifies the decorator factory.
+     * Retrieves the decorator factory.
      * @return the {@link DecoratorFactory} instance.
      */
     @NotNull
