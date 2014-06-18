@@ -228,6 +228,6 @@ public class TableCustomResultsListDecorator
             + super.toString()
             + ", \"customSqlProvider\": " + m__CustomSqlProvider
             + ", \"decoratorFactory\": " + m__DecoratorFactory
-            + "'}';
+            + "};
     }
 }
