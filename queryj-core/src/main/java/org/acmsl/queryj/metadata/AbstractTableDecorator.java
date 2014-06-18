@@ -1778,7 +1778,7 @@ public abstract class AbstractTableDecorator
      * @return the decorated version.
      */
     @NotNull
-    protected ResultDecorator decorate(
+    protected ResultDecorator<DecoratedString> decorate(
         @NotNull final Result<String> customResult,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
