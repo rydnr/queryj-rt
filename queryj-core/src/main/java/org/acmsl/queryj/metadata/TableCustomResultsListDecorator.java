@@ -216,5 +216,12 @@ public class TableCustomResultsListDecorator
         return new TableResultDecoratorImpl<>(item, table, customSqlProvider, decoratorFactory);
     }
 
-
+    @Override
+    public String toString()
+    {
+        return "TableCustomResultsListDecorator{" +
+               "m__CustomSqlProvider=" + m__CustomSqlProvider +
+               ", m__DecoratorFactory=" + m__DecoratorFactory +
+               '}';
+    }
 }
