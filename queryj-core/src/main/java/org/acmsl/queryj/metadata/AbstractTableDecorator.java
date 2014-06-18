@@ -1975,7 +1975,9 @@ public abstract class AbstractTableDecorator
 
         Collections.sort(result);
 
-        return new TableCustomResultsListDecorator(result, createTableDecorator(table), customSqlProvider, decoratorFactory);
+        return
+            new TableCustomResultsListDecorator(
+                result, createTableDecorator(table), customSqlProvider, decoratorFactory);
     }
 
     /**
