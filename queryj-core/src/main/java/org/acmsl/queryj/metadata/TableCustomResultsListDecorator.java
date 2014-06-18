@@ -80,7 +80,9 @@ public class TableCustomResultsListDecorator
      * @param table the {@link TableDecorator table}.
      */
     public TableCustomResultsListDecorator(
-        @NotNull final List<Result<DecoratedString>> list, @NotNull final TableDecorator table)
+        @NotNull final List<Result<DecoratedString>> list,
+        @NotNull final TableDecorator table,)
+
     {
         super(list, table);
     }
