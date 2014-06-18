@@ -1784,7 +1784,7 @@ public abstract class AbstractTableDecorator
         @NotNull final MetadataManager metadataManager,
         @NotNull final DecoratorFactory decoratorFactory)
     {
-        return new CachingResultDecorator(customResult, customSqlProvider, metadataManager, decoratorFactory);
+        return new CachingResultDecorator<>(customResult, customSqlProvider, metadataManager, decoratorFactory);
     }
 
     /**
