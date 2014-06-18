@@ -38,6 +38,7 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Result;
 
 /*
@@ -121,6 +122,7 @@ public class TableCustomResultsListDecorator
      * Decorates given item.
      * @param item the result to decorate.
      * @param table the {@link TableDecorator table}.
+     * @param
      * @return the decorated item.
      */
     @NotNull
