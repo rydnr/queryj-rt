@@ -125,7 +125,10 @@ public class TableCustomResultsListDecorator
      */
     @NotNull
     protected TableResultDecorator decorate(
-        @NotNull final Result<DecoratedString> item, @NotNull final TableDecorator table)
+        @NotNull final Result<DecoratedString> item,
+        @NotNull final TableDecorator table,
+        @NotNull final CustomSqlProvider customSqlProvider,
+        @NotNull final DecoratorFactory decoratorFactory)
     {
         return new TableResultDecoratorImpl(item, table, customSqlProvider, decoratorFactory);
     }
