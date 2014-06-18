@@ -155,7 +155,7 @@ public class TableCustomResultsListDecorator
      * @param factory the {@link DecoratorFactory} instance.
      */
     @NotNull
-    public DecoratorFactory getDecoratorFactory(@NotNull final DecoratorFactory factory)
+    public DecoratorFactory getDecoratorFactory()
     {
         return this.m__DecoratorFactory;
     }
