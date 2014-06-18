@@ -150,6 +150,15 @@ public class TableCustomResultsListDecorator
         immutableSetDecoratorFactory(factory);
     }
 
+    /**
+     * Specifies the decorator factory.
+     * @param factory the {@link DecoratorFactory} instance.
+     */
+    @NotNull
+    public DecoratorFactory getDecoratorFactory(@NotNull final DecoratorFactory factory)
+    {
+        immutableSetDecoratorFactory(factory);
+    }
 
     /**
      * {@inheritDoc}
