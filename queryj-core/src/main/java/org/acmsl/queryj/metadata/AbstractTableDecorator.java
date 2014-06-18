@@ -1641,7 +1641,7 @@ public abstract class AbstractTableDecorator
             }
         }
 
-        return new TableCustomResultsListDecorator(result, tableDecorator);
+        return new TableCustomResultsListDecorator(result, tableDecorator, customSqlProvider, decoratorFactory);
     }
 
     /**
