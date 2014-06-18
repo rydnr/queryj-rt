@@ -1935,6 +1935,7 @@ public abstract class AbstractTableDecorator
      * @param voName the ValueObject name.
      * @param sqlDAO the {@link SqlDAO} instance.
      * @param resultDAO the {@link SqlResultDAO} instance.
+     * @param deco
      * @return such list.
      */
     @NotNull
