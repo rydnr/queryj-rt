@@ -132,6 +132,9 @@ public class TableCustomResultsListDecorator
     }
 
     /**
+     * Specifies the
+     */
+    /**
      * {@inheritDoc}
      */
     @NotNull
