@@ -84,7 +84,7 @@ import java.util.List;
 public abstract class AbstractResultDecorator<V>
     extends  ResultElement<DecoratedString>
     implements  Result<DecoratedString>,
-                ResultDecorator
+                ResultDecorator<V>
 {
     /**
      * The result element.
