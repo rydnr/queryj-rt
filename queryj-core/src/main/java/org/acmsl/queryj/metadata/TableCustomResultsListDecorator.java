@@ -122,8 +122,8 @@ public class TableCustomResultsListDecorator
     }
 
     /**
-     * Specifies the custom sql provider.
-     * @param provider such {@link CustomSqlProvider instance}.
+     * Retrieves the custom sql provider.
+     * @return such {@link CustomSqlProvider instance}.
      */
     @NotNull
     public CustomSqlProvider getCustomSqlProvider()
