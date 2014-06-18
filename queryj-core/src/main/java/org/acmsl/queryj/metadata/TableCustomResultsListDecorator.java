@@ -132,7 +132,8 @@ public class TableCustomResultsListDecorator
     }
 
     /**
-     * Specifies the decorator factory
+     * Specifies the decorator factory.
+     * @param de
      */
     /**
      * {@inheritDoc}
