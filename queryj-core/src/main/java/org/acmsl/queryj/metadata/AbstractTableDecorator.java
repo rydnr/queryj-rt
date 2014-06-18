@@ -1972,7 +1972,7 @@ public abstract class AbstractTableDecorator
 
         Collections.sort(result);
 
-        return new TableCustomResultsListDecorator(result, createTableDecorator(table), customSqlProvider);
+        return new TableCustomResultsListDecorator(result, createTableDecorator(table), customSqlProvider,);
     }
 
     /**
