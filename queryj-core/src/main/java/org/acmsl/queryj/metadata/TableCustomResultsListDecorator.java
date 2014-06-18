@@ -78,6 +78,8 @@ public class TableCustomResultsListDecorator
      * Creates a new instance.
      * @param list the list.
      * @param table the {@link TableDecorator table}.
+     * @param customSqlProvider the {@link CustomSqlProvider} instance.
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
      */
     public TableCustomResultsListDecorator(
         @NotNull final List<Result<DecoratedString>> list,
