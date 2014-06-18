@@ -83,7 +83,7 @@ public class TableCustomResultsListDecorator
         @NotNull final List<Result<DecoratedString>> list,
         @NotNull final TableDecorator table,
         @NotNull final CustomSqlProvider customSqlProvider,
-        @NotNull
+        @NotNull final DecoratorFactory decoratorFactory)
     {
         super(list, table);
     }
