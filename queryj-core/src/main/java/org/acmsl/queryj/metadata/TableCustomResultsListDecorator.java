@@ -125,8 +125,8 @@ public class TableCustomResultsListDecorator
      * Specifies the custom sql provider.
      * @param provider such {@link CustomSqlProvider instance}.
      */
-    @SuppressWarnings("unused")
-    protected void setCustomSqlProvider(@NotNull final CustomSqlProvider provider)
+    @NotNull
+    public CustomSqlProvider getCustomSqlProvider(@NotNull final CustomSqlProvider provider)
     {
         immutableSetCustomSqlProvider(provider);
     }
