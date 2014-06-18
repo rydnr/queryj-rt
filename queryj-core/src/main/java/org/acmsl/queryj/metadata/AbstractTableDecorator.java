@@ -1925,7 +1925,8 @@ public abstract class AbstractTableDecorator
                 table.getName(),
                 getName().getVoName().getValue(),
                 customSqlProvider.getSqlDAO(),
-                customSqlProvider.getSqlResultDAO());
+                customSqlProvider.getSqlResultDAO(),
+                customSqlProvider);
     }
 
     /**
