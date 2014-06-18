@@ -123,7 +123,7 @@ public class TableCustomResultsListDecorator
      * @param item the result to decorate.
      * @param table the {@link TableDecorator table}.
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
-     * @param decoratorFactory the {@link DecoratorFactory}
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @return the decorated item.
      */
     @NotNull
