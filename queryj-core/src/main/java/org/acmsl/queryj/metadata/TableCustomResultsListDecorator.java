@@ -223,7 +223,7 @@ public class TableCustomResultsListDecorator
     @Override
     public String toString()
     {
-        return "TableCustomResultsListDecorator{" +
+        return "{ TableCustomResultsListDecorator{" +
                "m__CustomSqlProvider=" + m__CustomSqlProvider +
                ", m__DecoratorFactory=" + m__DecoratorFactory +
                '}';
