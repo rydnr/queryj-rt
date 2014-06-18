@@ -222,6 +222,7 @@ public class Log4JInitializerHandler
         /**
          * Creates a new instance for given log.
          * @param log the {@link Log}.
+         * @param level the level.
          */
         public WriterAdapter(@NotNull final Log log, @NotNull final Level level)
         {
