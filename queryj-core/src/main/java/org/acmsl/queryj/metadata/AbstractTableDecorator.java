@@ -1936,6 +1936,7 @@ public abstract class AbstractTableDecorator
      * @param sqlDAO the {@link SqlDAO} instance.
      * @param resultDAO the {@link SqlResultDAO} instance.
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @return such list.
      */
     @NotNull
