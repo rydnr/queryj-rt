@@ -1944,7 +1944,8 @@ public abstract class AbstractTableDecorator
         @NotNull final String voName,
         @NotNull final SqlDAO sqlDAO,
         @NotNull final SqlResultDAO resultDAO,
-        @NotNull final CustomSqlProvider customSqlProvider)
+        @NotNull final CustomSqlProvider customSqlProvider,
+        @NotNull final DecoratorFactory decoratorFactory)
     {
         @NotNull final List<Result<DecoratedString>> result = new ArrayList<>();
 
