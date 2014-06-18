@@ -168,7 +168,8 @@ public class Log4JInitializerHandler
          * <p>The <code>writer</code> must have been previously opened by
          * the user.
          * @param layout the layout.
-         * @param
+         * @param writer the writer.
+         * @param priority the priority.
          */
         public WriterAppenderImpl(final Layout layout, final Writer writer, final Priority priority)
         {
