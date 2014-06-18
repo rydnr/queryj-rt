@@ -75,6 +75,16 @@ public class TableCustomResultsListDecorator
     private static final long serialVersionUID = 6374510951489078749L;
 
     /**
+     * The custom SQL provider.
+     */
+    private CustomSqlProvider m__CustomSqlProvider;
+
+    /**
+     * The decorator factory.
+     */
+    private DecoratorFactory m__DecoratorFactory;
+
+    /**
      * Creates a new instance.
      * @param list the list.
      * @param table the {@link TableDecorator table}.
