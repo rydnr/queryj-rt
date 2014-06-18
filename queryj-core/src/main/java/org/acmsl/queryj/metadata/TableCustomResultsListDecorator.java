@@ -115,7 +115,7 @@ public class TableCustomResultsListDecorator
      * Specifies the custom sql provider.
      * @param provider such {@link CustomSqlProvider instance}.
      */
-    protected final void immutableSetCustomSqlProvider(@NotNull final CustomSqlProvider provider)
+    protected void setCustomSqlProvider(@NotNull final CustomSqlProvider provider)
     {
         this.m__CustomSqlProvider = provider;
     }
