@@ -103,6 +103,10 @@ public class TableCustomResultsListDecorator
     }
 
     /**
+     * Specifies the custom sql provider.
+     * @param provider such {@link CustomSqlProvider
+     */
+    /**
      * {@inheritDoc}
      */
     @NotNull
