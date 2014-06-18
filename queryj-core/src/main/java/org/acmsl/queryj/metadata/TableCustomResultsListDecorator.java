@@ -132,7 +132,7 @@ public class TableCustomResultsListDecorator
     }
 
     /**
-     * Specifies the
+     * Specifies the decorator factory
      */
     /**
      * {@inheritDoc}
