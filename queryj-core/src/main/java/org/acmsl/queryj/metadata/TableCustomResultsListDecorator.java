@@ -124,7 +124,7 @@ public class TableCustomResultsListDecorator
      * @return the decorated item.
      */
     @NotNull
-    protected TableResultDecorator<V> decorate(
+    protected TableResultDecorator decorate(
         @NotNull final Result<DecoratedString> item, @NotNull final TableDecorator table)
     {
         return new TableResultDecoratorImpl(item, table);
