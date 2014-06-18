@@ -103,7 +103,10 @@ public class TableCustomResultsListDecorator
      */
     @NotNull
     public List<Result<DecoratedString>> decorate(
-        @NotNull final List<Result<DecoratedString>> items, @NotNull final TableDecorator table)
+        @NotNull final List<Result<DecoratedString>> items,
+        @NotNull final TableDecorator table,
+        @NotNull final CustomSqlProvider customSqlProvider,
+        @NotNull final DecoratorFactory decoratorFactory)
     {
         @NotNull final List<Result<DecoratedString>> result = new ArrayList<>(items.size());
 
@@ -111,7 +114,7 @@ public class TableCustomResultsListDecorator
         {
             if (item != null)
             {
-                result.add(decorate(item, table));
+                result.add(decorate(item, table, customSqlProvider, decoratorFactory));
             }
         }
 
