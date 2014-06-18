@@ -144,7 +144,7 @@ public class TableCustomResultsListDecorator
      * Specifies the decorator factory.
      * @param factory the {@link DecoratorFactory} instance.
      */
-    protected void immutableSetDecoratorFactory(@NotNull final DecoratorFactory factory)
+    protected void setDecoratorFactory(@NotNull final DecoratorFactory factory)
     {
         this.m__DecoratorFactory = factory;
     }
