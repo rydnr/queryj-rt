@@ -81,8 +81,9 @@ public class TableCustomResultsListDecorator
      */
     public TableCustomResultsListDecorator(
         @NotNull final List<Result<DecoratedString>> list,
-        @NotNull final TableDecorator table,)
-
+        @NotNull final TableDecorator table,
+        @NotNull final CustomSqlProvider customSqlProvider,
+        @NotNull
     {
         super(list, table);
     }
