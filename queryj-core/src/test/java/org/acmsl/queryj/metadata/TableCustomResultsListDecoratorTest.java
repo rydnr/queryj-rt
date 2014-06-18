@@ -93,9 +93,10 @@ public class TableCustomResultsListDecoratorTest
             EasyMock.createNiceMock(TableDecorator.class);
 
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
-        @NotNull final DecoratorFactory decoratorFactory = EasyMock.createNiceMock(D)
+        @NotNull final DecoratorFactory decoratorFactory = EasyMock.createNiceMock(DecoratorFactory.class);
+
         @NotNull final TableCustomResultsListDecorator instance =
-            new TableCustomResultsListDecorator(list, tableDecorator);
+            new TableCustomResultsListDecorator(list, tableDecorator, customSqlProvider, decoratorFactory);
 
         @NotNull final List<Result<DecoratedString>> items =
             instance.getItems();
