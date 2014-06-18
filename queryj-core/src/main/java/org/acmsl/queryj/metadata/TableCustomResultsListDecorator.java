@@ -224,7 +224,7 @@ public class TableCustomResultsListDecorator
     public String toString()
     {
         return
-            "{ \"super\": "
+              "{ \"super\": "
             + super.toString()
             + ", \"customSqlProvider\": " + m__CustomSqlProvider
             + ", \"decoratorFactory\": " + m__DecoratorFactory
