@@ -126,7 +126,7 @@ public class TableCustomResultsListDecorator
      * @param provider such {@link CustomSqlProvider instance}.
      */
     @NotNull
-    public CustomSqlProvider getCustomSqlProvider(@NotNull final CustomSqlProvider provider)
+    public CustomSqlProvider getCustomSqlProvider()
     {
         immutableSetCustomSqlProvider(provider);
     }
