@@ -97,7 +97,7 @@ public class TableCustomResultsListDecorator
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final DecoratorFactory decoratorFactory)
     {
-        super(list, table);
+        super(list, table, customSqlProvider, decoratorFactory);
         immutableSetCustomSqlProvider(customSqlProvider);
         immutableSetDecoratorFactory(decoratorFactory);
     }
