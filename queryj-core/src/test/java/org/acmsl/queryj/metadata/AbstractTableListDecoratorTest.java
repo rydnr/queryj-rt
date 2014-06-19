@@ -392,10 +392,10 @@ public class AbstractTableListDecoratorTest
         @NotNull
         @Override
         protected ListDecorator<Attribute<DecoratedString>> createListDecorator(
-        @NotNull final List<Attribute<DecoratedString>> items,
-        @NotNull final TableDecorator table,
-        @NotNull final CustomSqlProvider customSqlProvider,
-        @NotNull final DecoratorFactory decoratorFactory)
+            @NotNull final List<Attribute<DecoratedString>> items,
+            @NotNull final TableDecorator table,
+            @NotNull final CustomSqlProvider customSqlProvider,
+            @NotNull final DecoratorFactory decoratorFactory)
         {
             return new MyTableListDecorator();
         }
