@@ -557,7 +557,7 @@ public abstract class AbstractSqlDecorator
      * @return the decorated instance.
      */
     @NotNull
-    protected ResultDecorator decorate(
+    protected ResultDecorator<DecoratedString> decorate(
         @NotNull final Result<String> result,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
