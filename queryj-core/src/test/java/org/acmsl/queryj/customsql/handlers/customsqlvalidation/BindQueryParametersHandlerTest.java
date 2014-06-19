@@ -89,7 +89,7 @@ import java.util.Arrays;
 public class BindQueryParametersHandlerTest
 {
     /**
-     * Tests whether retrieveStatementSetterMethod() works for boolean parameters.
+     * Tests whether the handler binds the parameters to the query correctly.
      * @throws Exception if the test fails.
      */
     @Test
