@@ -188,7 +188,7 @@ public abstract class AbstractResultDecorator<V>
         else
         {
             result =
-                new ResultElement<DecoratedString>(customResult.getId())
+                new ResultElement<DecoratedString>(new DecoratedString(customResult.getId())
         }
 
         return result;
