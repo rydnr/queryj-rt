@@ -711,7 +711,7 @@ public abstract class AbstractTableListDecorator<V>
 
         for (@Nullable final V item: items)
         {
-            if (   (customResult != null)
+            if (   (item != null)
                    && (!list.contains(customResult)))
             {
                 list.add(customResult);
