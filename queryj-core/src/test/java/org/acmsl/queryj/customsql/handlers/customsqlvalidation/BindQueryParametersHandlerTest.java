@@ -255,7 +255,7 @@ public class BindQueryParametersHandlerTest
     }
 
     /**
-     * Tests whether retrieveStatementSetterMethod() works for boolean parameters.
+     * Tests whether retrieveStatementSetterMethod() works for Float parameters.
      * @throws Exception if the test fails.
      */
     @Test
