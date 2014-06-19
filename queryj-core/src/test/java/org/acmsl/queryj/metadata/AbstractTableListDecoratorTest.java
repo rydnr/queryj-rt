@@ -288,7 +288,26 @@ public class AbstractTableListDecoratorTest
                     return metadataManager;
                 }
 
-
+                /**
+                 * Creates a new list decorator instance.
+                 *
+                 * @param items             the items.
+                 * @param table             the {@link org.acmsl.queryj.metadata.TableDecorator table}.
+                 * @param customSqlProvider the {@link org.acmsl.queryj.customsql.CustomSqlProvider} instance.
+                 * @param decoratorFactory  the {@link org.acmsl.queryj.metadata.DecoratorFactory} instance.
+                 * @return the new list decorator.
+                 */
+                @NotNull
+                @Override
+                protected ListDecorator<Attribute<DecoratedString>> createListDecorator(@NotNull final List<Attribute
+                    <DecoratedString>> items, @NotNull final TableDecorator table,
+                                                                                        @NotNull final
+                                                                                        CustomSqlProvider
+                                                                                            customSqlProvider,
+                                                                                        @NotNull final DecoratorFactory decoratorFactory)
+                {
+                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                }
             };
     }
 }
