@@ -44,7 +44,6 @@ import org.acmsl.queryj.customsql.PropertyElement;
 /*
  * Importing JetBrains annotations.
  */
-import org.acmsl.queryj.metadata.vo.Attribute;
 import org.jetbrains.annotations.NotNull;
 
 /*
