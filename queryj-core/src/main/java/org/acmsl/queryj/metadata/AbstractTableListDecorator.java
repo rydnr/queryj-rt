@@ -38,6 +38,7 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.metadata.AbstractPartialListDecorator.Operation;
@@ -81,6 +82,16 @@ public abstract class AbstractTableListDecorator<V>
      * The table decorator.
      */
     private TableDecorator m__Table;
+
+    /**
+     * The custom SQL provider.
+     */
+    private CustomSqlProvider m__CustomSqlProvider;
+
+    /**
+     * The decorator factory.
+     */
+    private DecoratorFactory m__DecoratorFactory;
 
     /**
      * Creates a new instance.
