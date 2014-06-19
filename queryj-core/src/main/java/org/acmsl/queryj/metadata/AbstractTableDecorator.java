@@ -1317,6 +1317,7 @@ public abstract class AbstractTableDecorator
      * @param tableDAO the {@link TableDAO} instance.
      * @param decoratorFactory the decorator factory.
      * @return such information.
+     *
      */
     @NotNull
     protected List<Row<DecoratedString>> retrieveStaticContent(
