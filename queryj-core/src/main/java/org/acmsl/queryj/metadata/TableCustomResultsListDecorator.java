@@ -183,7 +183,8 @@ public class TableCustomResultsListDecorator
                 list.add(customResult);
             }
         }
-        result = new TableCustomResultsListDecorator(list, table, c);
+
+        result = new TableCustomResultsListDecorator(list, table, customSqlProvider, decoratorFactory);
 
         return result;
     }
