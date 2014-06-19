@@ -171,19 +171,6 @@ public class TableCustomResultsListDecorator
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final DecoratorFactory decoratorFactory)
     {
-        @NotNull final ListDecorator<Result<DecoratedString>> result;
-
-        @NotNull final List<Result<DecoratedString>> list = new ArrayList<>(items.size());
-
-        for (@Nullable final Result<DecoratedString> customResult : items)
-        {
-            if (   (customResult != null)
-                && (!list.contains(customResult)))
-            {
-                list.add(customResult);
-            }
-        }
-
         result = new TableCustomResultsListDecorator(list, table, customSqlProvider, decoratorFactory);
 
         return result;
