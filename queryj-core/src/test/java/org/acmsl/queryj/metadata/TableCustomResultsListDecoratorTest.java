@@ -110,4 +110,8 @@ public class TableCustomResultsListDecoratorTest
             Assert.assertTrue(item instanceof TableResultDecorator);
         }
     }
+
+    /**
+     * Checks getDifferent() returns the different custom results.
+     */
 }
