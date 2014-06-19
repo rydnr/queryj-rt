@@ -607,6 +607,7 @@ public abstract class DatabaseMetaDataRetrievalHandler
      * @param parameters the parameters to handle.
      * @param metaData the database metadata.
      * @return <code>true</code> if the chain should be stopped.
+     * throws QueryJBuildException if the process fails.
      */
     protected boolean handle(
         @NotNull final QueryJCommand parameters,
