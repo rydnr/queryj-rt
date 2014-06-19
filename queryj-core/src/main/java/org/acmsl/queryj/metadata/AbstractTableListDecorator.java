@@ -242,7 +242,7 @@ public abstract class AbstractTableListDecorator<V>
     @Override
     public ListDecorator<V> getDifferent()
     {
-        return getDifferent(getItems());
+        return throw new
     }
 
     /**
