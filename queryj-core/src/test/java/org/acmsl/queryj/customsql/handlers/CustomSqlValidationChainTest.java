@@ -106,6 +106,10 @@ public class CustomSqlValidationChainTest
         Assert.assertTrue(contains(GlobalValidationEnabledHandler.class, t_Chain));
     }
 
+    /**
+     * Checks whether it includes the required handlers.
+     * throws QueryJBuildException
+     */
     protected boolean contains(
         @NotNull final Class<?> handlerClass,
         @NotNull final Chain<QueryJCommand, QueryJBuildException, QueryJCommandHandler<QueryJCommand>> chain)
