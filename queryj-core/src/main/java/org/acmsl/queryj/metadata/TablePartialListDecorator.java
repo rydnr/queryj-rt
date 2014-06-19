@@ -225,7 +225,7 @@ public class TablePartialListDecorator<V>
                 aux.retainAll(table.getReadOnlyAttributes());
             }
 
-            result = new TableAttributesListDecorator(aux, table);
+            result = new TableAttributesListDecorator(aux, table, getCustomSqlProvider(), getDecoratorFactory());
         }
         else
         {
