@@ -514,6 +514,7 @@ public abstract class AbstractForeignKeyDecorator
      * @return such list.
      */
     @NotNull
+    @SuppressWarnings("unused")
     public List<DecoratedString> getAttributeTypes()
     {
         return
