@@ -215,16 +215,30 @@ public abstract class AbstractTableDecorator
         immutableSetTable(table);
         immutableSetPrimaryKey(
             new TableAttributesListDecorator(
-                decorateAttributes(primaryKey, metadataManager, decoratorFactory), this));
+                decorateAttributes(primaryKey, metadataManager, decoratorFactory),
+                this,
+                customSqlProvider,
+                decoratorFactory));
         immutableSetAttributes(
             new TableAttributesListDecorator(
-                decorateAttributes(attributes, metadataManager, decoratorFactory), this));
+                decorateAttributes(attributes, metadataManager, decoratorFactory),
+                this,
+                customSqlProvider,
+                decoratorFactory));
         immutableSetReadOnlyAttributes(
             new TableAttributesListDecorator(
-                filterReadOnlyAttributes(decorateAttributes(attributes, metadataManager, decoratorFactory)), this));
+                filterReadOnlyAttributes(
+                    decorateAttributes(attributes, metadataManager, decoratorFactory)),
+                this,
+                customSqlProvider,
+                decoratorFactory));
         immutableSetExternallyManagedAttributes(
             new TableAttributesListDecorator(
-                filterExternallyManagedAttributes(decorateAttributes(attributes, metadataManager, decoratorFactory)), this));
+                filterExternallyManagedAttributes(
+                    decorateAttributes(attributes, metadataManager, decoratorFactory)),
+                this,
+                customSqlProvider,
+                decoratorFactory));
         immutableSetForeignKeys(
             decorate(foreignKeys, metadataManager, decoratorFactory, customSqlProvider));
         immutableSetMetadataManager(metadataManager);
@@ -927,7 +941,7 @@ public abstract class AbstractTableDecorator
             result = new ArrayList<>(0);
         }
 
-        return new TableAttributesListDecorator(result, this);
+        return new TableAttributesListDecorator(result, this, getCustomSqlProvider(), getDecoratorFactory());
     }
 
     /**
@@ -1120,7 +1134,7 @@ public abstract class AbstractTableDecorator
 
         Collections.sort(result);
 
-        return new TableAttributesListDecorator(result, this);
+        return new TableAttributesListDecorator(result, this, getCustomSqlProvider(), getDecoratorFactory());
     }
 
     /**
@@ -1186,7 +1200,7 @@ public abstract class AbstractTableDecorator
     {
         return
             new TableAttributesListDecorator(
-                tableDecoratorHelper.removeReadOnly(attributes), this);
+                tableDecoratorHelper.removeReadOnly(attributes), this, getCustomSqlProvider(), getDecoratorFactory());
     }
 
     /**
@@ -1314,8 +1328,10 @@ public abstract class AbstractTableDecorator
      * Retrieves the static values of given table.
      * @param tableName the table name.
      * @param metadataManager the {@link MetadataManager} instance.
+     * @param tableDAO the {@link TableDAO} instance.
      * @param decoratorFactory the decorator factory.
      * @return such information.
+     * throws SQLException if the static content cannot be retrieved.
      */
     @NotNull
     protected List<Row<DecoratedString>> retrieveStaticContent(
@@ -1641,7 +1657,8 @@ public abstract class AbstractTableDecorator
             }
         }
 
-        return new TableCustomResultsListDecorator(result, tableDecorator);
+        return
+            new TableCustomResultsListDecorator(result, tableDecorator, customSqlProvider, decoratorFactory);
     }
 
     /**
@@ -1777,7 +1794,7 @@ public abstract class AbstractTableDecorator
      * @return the decorated version.
      */
     @NotNull
-    protected ResultDecorator decorate(
+    protected ResultDecorator<DecoratedString> decorate(
         @NotNull final Result<String> customResult,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
@@ -1924,7 +1941,9 @@ public abstract class AbstractTableDecorator
                 table.getName(),
                 getName().getVoName().getValue(),
                 customSqlProvider.getSqlDAO(),
-                customSqlProvider.getSqlResultDAO());
+                customSqlProvider.getSqlResultDAO(),
+                customSqlProvider,
+                getDecoratorFactory());
     }
 
     /**
@@ -1933,6 +1952,8 @@ public abstract class AbstractTableDecorator
      * @param voName the ValueObject name.
      * @param sqlDAO the {@link SqlDAO} instance.
      * @param resultDAO the {@link SqlResultDAO} instance.
+     * @param customSqlProvider the {@link CustomSqlProvider} instance.
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @return such list.
      */
     @NotNull
@@ -1940,7 +1961,9 @@ public abstract class AbstractTableDecorator
         @NotNull final String table,
         @NotNull final String voName,
         @NotNull final SqlDAO sqlDAO,
-        @NotNull final SqlResultDAO resultDAO)
+        @NotNull final SqlResultDAO resultDAO,
+        @NotNull final CustomSqlProvider customSqlProvider,
+        @NotNull final DecoratorFactory decoratorFactory)
     {
         @NotNull final List<Result<DecoratedString>> result = new ArrayList<>();
 
@@ -1968,7 +1991,9 @@ public abstract class AbstractTableDecorator
 
         Collections.sort(result);
 
-        return new TableCustomResultsListDecorator(result, createTableDecorator(table));
+        return
+            new TableCustomResultsListDecorator(
+                result, createTableDecorator(table), customSqlProvider, decoratorFactory);
     }
 
     /**
@@ -2095,6 +2120,7 @@ public abstract class AbstractTableDecorator
      * Checks whether any attribute is a clob.
      * @param attributes the {@link Attribute}s.
      * @param metadataTypeManager the {@link MetadataTypeManager} instance.
+     * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
      * @return {@code true} in such case.
      */
     protected boolean containClobs(
@@ -2129,6 +2155,8 @@ public abstract class AbstractTableDecorator
 
     /**
      * Retrieves all attributes, including parent's.
+     * @param attributes the {@link Attribute attributes}.
+     * @param parent the {@link Table parent table}.
      * @return such attributes.
      */
     @NotNull
@@ -2149,7 +2177,7 @@ public abstract class AbstractTableDecorator
             result.addAll(attributes);
         }
 
-        return new TableAttributesListDecorator(result, this);
+        return new TableAttributesListDecorator(result, this, getCustomSqlProvider(), getDecoratorFactory());
     }
 
     /**
