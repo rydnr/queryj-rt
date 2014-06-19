@@ -845,7 +845,10 @@ public class TablePartialListDecorator<V>
             result =
                 (ListDecorator<V>)
                     new TableAttributesListDecorator(
-                        (List<Attribute<DecoratedString>>) aux, table);
+                        (List<Attribute<DecoratedString>>) aux,
+                        table,
+                        customSqlProvider,
+                        decoratorFactory);
         }
         else if (tableDecoratorHelper.isListOfCustomResults(items))
         {
