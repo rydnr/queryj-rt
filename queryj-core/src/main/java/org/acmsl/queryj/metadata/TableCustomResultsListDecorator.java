@@ -163,7 +163,11 @@ public class TableCustomResultsListDecorator
      * @return the original items, discarding duplicates.
      */
     @NotNull
-    protected ListDecorator<V> getDifferent(@NotNull final List<V> items)
+    protected ListDecorator<V> getDifferent(
+        @NotNull final List<V> items,
+        @NotNull final TableDecorator table,
+        @NotNull final CustomSqlProvider customSqlProvider,
+        @NotNull final DecoratorFactory decoratorFactory)
     {
         @NotNull final ListDecorator<V> result = new TableCustomResultsListDecorator(list, table, c);
 
