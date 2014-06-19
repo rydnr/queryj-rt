@@ -320,6 +320,9 @@ public class AbstractTableListDecoratorTest
             @NotNull final TableDecorator tableDecorator,
             @NotNull final CustomSqlProvider customSqlProvider,
             @NotNull final DecoratorFactory decoratorFactory)
+        {
+            super(attributes, tableDecorator, customSqlProvider, decoratorFactory);
+        }
         )
     }
     attributes, tableDecorator, customSqlProvider, decoratorFactory)
