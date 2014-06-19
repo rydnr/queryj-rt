@@ -230,7 +230,7 @@ public class TableAttributesListDecorator
      */
     @NotNull
     @Override
-    public ListDecorator<Attribute<DecoratedString>> getDi()
+    public ListDecorator<Attribute<DecoratedString>> getDifferent()
     {
         throw new RuntimeException(INVALID_OPERATION);
     }
