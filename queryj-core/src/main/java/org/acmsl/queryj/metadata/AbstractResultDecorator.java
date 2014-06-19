@@ -183,7 +183,11 @@ public abstract class AbstractResultDecorator<V>
 
         if (customResult.getId() instanceof DecoratedString)
         {
-
+            result = customResult;
+        }
+        else
+        {
+            result =
         }
 
         return result;
