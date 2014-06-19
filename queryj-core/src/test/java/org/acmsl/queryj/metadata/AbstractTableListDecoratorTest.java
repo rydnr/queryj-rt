@@ -356,6 +356,7 @@ public class AbstractTableListDecoratorTest
         {
             this.m__MetadataManager = metadataManager;
         }
+
         /**
          * {@inheritDoc}
          */
