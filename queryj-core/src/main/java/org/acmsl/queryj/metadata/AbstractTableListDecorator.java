@@ -245,6 +245,16 @@ public abstract class AbstractTableListDecorator<V>
         return getDifferent(getItems());
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public ListDecorator<V> getDifferent()
+    {
+        return getDifferent(getItems());
+    }
+
     // TableDecorator implementation
 
     /**
