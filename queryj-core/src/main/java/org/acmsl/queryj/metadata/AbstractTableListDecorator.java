@@ -707,7 +707,7 @@ public abstract class AbstractTableListDecorator<V>
     {
         @NotNull final ListDecorator<Result<DecoratedString>> result;
 
-        @NotNull final List<Result<DecoratedString>> list = new ArrayList<>(items.size());
+        @NotNull final List<V> list = new ArrayList<>(items.size());
 
         for (@Nullable final V item: items)
         {
