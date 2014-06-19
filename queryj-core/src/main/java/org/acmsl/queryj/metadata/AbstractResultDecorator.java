@@ -170,8 +170,9 @@ public abstract class AbstractResultDecorator<V>
     {
         return decorate(immutableGetResult());
     }
+
     /**
-     * Retrieves the result.
+     * Decorates given result.
      * @return such element.
      */
     @Override
