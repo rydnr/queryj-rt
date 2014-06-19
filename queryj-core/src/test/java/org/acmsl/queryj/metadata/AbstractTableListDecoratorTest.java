@@ -340,6 +340,9 @@ public class AbstractTableListDecoratorTest
         }
 
         /**
+         * Specifies the metadata manager.
+         */
+        /**
          * {@inheritDoc}
          */
         @Override
