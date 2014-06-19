@@ -231,6 +231,10 @@ public class BindQueryParametersHandlerTest
         testPrimitiveBody(boolean.class);
     }
 
+    /**
+     *
+     * @throws Exception
+     */
     @Test
     public void retrieve_statement_setter_method_works_for_Boolean_parameter()
         throws Exception
