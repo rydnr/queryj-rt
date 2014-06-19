@@ -95,7 +95,8 @@ public class TablePartialListDecorator<V>
      * @param listDecorator the {@link ListDecorator}.
      * @param table the {@link TableDecorator}.
      * @param operation the {@link Operation}.
-     * @param
+     * @param customSqlProvider the {@link CustomSqlProvider} instance.
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
      */
     public TablePartialListDecorator(
         @NotNull final ListDecorator<V> listDecorator,
