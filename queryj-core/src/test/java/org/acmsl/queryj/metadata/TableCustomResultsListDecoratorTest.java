@@ -142,5 +142,7 @@ public class TableCustomResultsListDecoratorTest
             new TableCustomResultsListDecorator(list, tableDecorator, customSqlProvider, decoratorFactory);
 
         @NotNull final PartialListDecorator different = instance.getDifferent();
+
+        Assert.assertEquals()
     }
 }
