@@ -349,7 +349,7 @@ public class AbstractTableListDecoratorTest
             @NotNull final CustomSqlProvider customSqlProvider,
             @NotNull final DecoratorFactory decoratorFactory)
         {
-            return new MyTableListDecorator(items, table, customSqlProvider, decoratorFactory);
+            return new MyTableListDecorator(items, table, customSqlProvider, decoratorFactory, getMetadataManager());
         }
     };
 }
