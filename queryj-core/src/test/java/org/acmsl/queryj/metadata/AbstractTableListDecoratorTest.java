@@ -354,7 +354,7 @@ public class AbstractTableListDecoratorTest
          */
         protected void setMetadataManager(@NotNull final MetadataManager metadataManager)
         {
-            this.m__MetadataManager = metadataManager;
+            immutableSetMetadataManager((metadataManager));
         }
 
         /**
