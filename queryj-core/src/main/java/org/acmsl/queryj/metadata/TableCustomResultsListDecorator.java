@@ -172,8 +172,6 @@ public class TableCustomResultsListDecorator
         @NotNull final DecoratorFactory decoratorFactory)
     {
         return new TableCustomResultsListDecorator(list, table, customSqlProvider, decoratorFactory);
-
-        return result;
     }
 
     /**
