@@ -139,7 +139,8 @@ public class TableResultDecoratorImpl<V>
             if (getId().equals(that.getId()))
             {
                 if (   (getClassValue() == null)
-                    && ()
+                    && (thot.getC
+                )
             }
             result = getId().equals(that.getId());
             m__Table.equals(that.m__Table);
