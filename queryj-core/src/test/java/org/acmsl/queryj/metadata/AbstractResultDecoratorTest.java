@@ -100,7 +100,8 @@ public class AbstractResultDecoratorTest
         properties.add(property3);
         properties.add(property4);
 
-        @NotNull final AbstractResultDecorator<String> result = AbstractResultDecoratorTest.setupResultDecorator(properties);
+        @NotNull final AbstractResultDecorator<String> result =
+            AbstractResultDecoratorTest.setupResultDecorator(properties);
 
         Assert.assertEquals(1, result.getPropertyTypes().size());
     }
