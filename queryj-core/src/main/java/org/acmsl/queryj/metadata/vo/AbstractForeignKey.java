@@ -408,6 +408,7 @@ public abstract class AbstractForeignKey<V>
             + ", \"sourceTableName\": \"" + m__strSourceTableName + '"'
             + ", \"attributes\": [" + Arrays.toString(m__lAttributes.toArray(new Attribute<?>[m__lAttributes.size()])) + ']'
             + ", \"targetTableName\": \"" + m__strTargetTableName + "\" "
-            + ", \"class\": \"AbstractForeignKey\" }";
+            + ", \"class\": \"AbstractForeignKey\""
+        + ", \"package\": \"org.acm}";
     }
 }
