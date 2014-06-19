@@ -156,8 +156,6 @@ public class TableCustomResultsListDecorator
         return
               "{ \"super\": "
             + super.toString()
-            + ", \"customSqlProvider\": " + m__CustomSqlProvider.hashCode()
-            + ", \"decoratorFactory\": " + m__DecoratorFactory.hashCode()
             + ", \"class\": \"TableCustomResultsListDecorator\""
             + ", \"package\": \"org.acmsl.queryj.metadata\" }";
     }
