@@ -147,7 +147,7 @@ public class BindQueryParametersHandlerTest
 
     /**
      * The common part of all tests.
-     * @throws Exception if the test fails.
+     * throws Exception if the test fails.
      */
     @SuppressWarnings("unchecked")
     public void testPrimitiveBody(@NotNull final Class<?> type)
