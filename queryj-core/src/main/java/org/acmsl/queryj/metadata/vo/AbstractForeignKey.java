@@ -402,7 +402,7 @@ public abstract class AbstractForeignKey<V>
     public String toString()
     {
         return
-              "{ \"class\": \"" + AbstractForeignKey.class.getName() + '"'
+              "{
             + ", \"nullable\": " + m__bNullable
             + ", \"fkName\": \"" + m__strFkName + '"'
             + ", \"sourceTableName\": \"" + m__strSourceTableName + '"'
