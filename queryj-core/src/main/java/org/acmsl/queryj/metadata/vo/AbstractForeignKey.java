@@ -407,6 +407,7 @@ public abstract class AbstractForeignKey<V>
             + ", \"fkName\": \"" + m__strFkName + '"'
             + ", \"sourceTableName\": \"" + m__strSourceTableName + '"'
             + ", \"attributes\": [" + Arrays.toString(m__lAttributes.toArray(new Attribute<?>[m__lAttributes.size()])) + ']'
-            + ", \"targetTableName\": \"" + m__strTargetTableName + "\" }";
+            + ", \"targetTableName\": \"" + m__strTargetTableName + "\" "
+    + "\"class\": \"\" + AbstractForeignKey.class.getName() + '\"'}";
     }
 }
