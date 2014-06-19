@@ -87,7 +87,7 @@ import org.junit.runners.JUnit4;
 public class CustomSqlValidationChainTest
 {
     /**
-     *
+     * Checks whether it includes the required handlers.
      * @throws QueryJBuildException
      */
     @SuppressWarnings("unchecked")
