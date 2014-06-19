@@ -323,9 +323,7 @@ public class AbstractTableListDecoratorTest
         {
             super(attributes, tableDecorator, customSqlProvider, decoratorFactory);
         }
-    }
-    attributes, tableDecorator, customSqlProvider, decoratorFactory)
-    {
+
         /**
          * {@inheritDoc}
          */
