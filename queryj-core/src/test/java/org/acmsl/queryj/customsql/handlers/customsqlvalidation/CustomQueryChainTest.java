@@ -101,10 +101,10 @@ public class CustomQueryChainTest
     }
 
     /**
-     * Checks whether given chain contains a handler
-     * @param handlerClass
-     * @param chain
-     * @return
+     * Checks whether given chain contains a handler class.
+     * @param handlerClass the handler class.
+     * @param chain the chain.
+     * @return {@code true} in such case.
      */
     public boolean contains(
         @NotNull final Class<?> handlerClass,
