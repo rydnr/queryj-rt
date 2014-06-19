@@ -180,7 +180,7 @@ public class TableCustomResultsListDecorator
             if (   (customResult != null)
                 && (!list.contains(customResult)))
             {
-
+                list.add(customResult);
             }
         }
         result = new TableCustomResultsListDecorator(list, table, c);
