@@ -278,7 +278,7 @@ public abstract class AbstractForeignKeyDecorator
     /**
      * Decorates given attributes.
      * @param <V> the type of the attributes.
-     * @param
+     * @param <K> the type of the decorated attributes.
      * @param attributes the attributes to decorate.
      * @param metadataManager the {@link MetadataManager} instance.
      * @param decoratorFactory the {@link DecoratorFactory} implementation.
