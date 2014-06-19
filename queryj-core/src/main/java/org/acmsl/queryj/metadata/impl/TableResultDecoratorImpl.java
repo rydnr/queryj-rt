@@ -66,7 +66,7 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public class TableResultDecoratorImpl<V>
     extends AbstractResultDecorator<V>
-    implements TableResultDecorator<V>
+    implements TableResultDecorator<Decorator>
 {
     /**
      * The table.
