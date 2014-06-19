@@ -1200,7 +1200,7 @@ public abstract class AbstractTableDecorator
     {
         return
             new TableAttributesListDecorator(
-                tableDecoratorHelper.removeReadOnly(attributes), this);
+                tableDecoratorHelper.removeReadOnly(attributes), this, getCustomSqlProvider(), getDecoratorFactory());
     }
 
     /**
