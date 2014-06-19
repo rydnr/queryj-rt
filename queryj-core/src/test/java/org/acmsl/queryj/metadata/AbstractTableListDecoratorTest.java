@@ -319,7 +319,7 @@ public class AbstractTableListDecoratorTest
             @NotNull final List<Attribute<DecoratedString>> attributes,
             @NotNull final TableDecorator tableDecorator,
             @NotNull final CustomSqlProvider customSqlProvider,
-            @NotNull final
+            @NotNull final DecoratorFactory decoratorFactory)
         )
     }
     attributes, tableDecorator, customSqlProvider, decoratorFactory)
