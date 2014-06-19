@@ -38,6 +38,7 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.metadata.AbstractPartialListDecorator.Operation;
 import org.acmsl.queryj.metadata.vo.AbstractAttribute;
 import org.acmsl.queryj.metadata.vo.Attribute;
@@ -133,6 +134,8 @@ public class TablePartialListDecoratorTest
         Assert.assertEquals(3, list.size());
 
         @NotNull final TableDecorator tableDecorator = EasyMock.createNiceMock(TableDecorator.class);
+        @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
+        @NotNull final DecoratorFactory decoratorFactory = EasyMock.createNiceMock(DecoratorFactory.class);
 
         @NotNull final ListDecorator<Attribute<DecoratedString>> listDecorator =
             new TableAttributesListDecorator(list, tableDecorator, customSqlProvider, decoratorFactory);
