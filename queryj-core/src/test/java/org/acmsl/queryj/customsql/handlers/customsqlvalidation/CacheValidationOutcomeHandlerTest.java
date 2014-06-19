@@ -97,7 +97,7 @@ public class CacheValidationOutcomeHandlerTest
     public TemporaryFolder tempFolder = new TemporaryFolder();
 
     /**
-     * Checks
+     * Checks whether it caches the outcome of the validation, to disk.
      * @throws QueryJBuildException
      */
     @Test
