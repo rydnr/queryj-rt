@@ -145,7 +145,7 @@ public class BindQueryParametersHandlerTest
     }
 
     /**
-     * The common part of all tests
+     * The common part of all tests.
      * @throws Exception if the test fails.
      */
     @SuppressWarnings("unchecked")
