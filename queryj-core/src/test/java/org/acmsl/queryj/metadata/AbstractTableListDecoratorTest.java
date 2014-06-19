@@ -191,7 +191,7 @@ public class AbstractTableListDecoratorTest
             new ArrayList<>();
 
         @NotNull final String name = "name";
-        @NotNull final String comment = "comment";
+        @NotNull final String comment = "comment3";
         @NotNull final List<Attribute<String>> primaryKey = new ArrayList<>(0);
         @NotNull final List<ForeignKey<String>> foreignKeys = new ArrayList<>(0);
         @Nullable final Table<String, Attribute<String>, List<Attribute<String>>> parentTable = null;
