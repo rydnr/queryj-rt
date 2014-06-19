@@ -543,7 +543,7 @@ public abstract class AbstractSqlDecorator
      * @return the decorated instance.
      */
     @NotNull
-    protected ResultDecorator decorate(@NotNull final Result<String> result)
+    protected ResultDecorator<DecoratedString> decorate(@NotNull final Result<String> result)
     {
         return decorate(result, getCustomSqlProvider(), getMetadataManager(), CachingDecoratorFactory.getInstance());
     }
