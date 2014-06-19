@@ -92,6 +92,7 @@ public class TableCustomResultsListDecoratorTest
         @NotNull final TableDecorator tableDecorator =
             EasyMock.createNiceMock(TableDecorator.class);
 
+
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final DecoratorFactory decoratorFactory = EasyMock.createNiceMock(DecoratorFactory.class);
 
