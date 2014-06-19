@@ -71,6 +71,10 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class CustomQueryChainTest
 {
+    /**
+     * Checks whether it includes the required handlers.
+     * @throws QueryJBuildException
+     */
     @SuppressWarnings("unchecked")
     @Test
     public void includes_required_handlers()
