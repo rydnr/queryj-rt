@@ -90,7 +90,7 @@ public class BindQueryParametersHandlerTest
 {
     /**
      * Tests whether the handler binds the parameters to the query correctly.
-     * @throws Exception if the test fails.
+     * @throws SQLException if the test fails.
      */
     @SuppressWarnings("unchecked")
     @Test
