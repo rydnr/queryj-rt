@@ -73,7 +73,7 @@ sourceImpl(table, engine, C) ::= <<
   basePackageName=C.project_package,
   package=C.package,
   jdbcOperationsSubpackageName=typeInitMap.jdbcOperationsSubpackageName,
-  customResults=table.differentCustomResults,
+  customResults=table.customResults.different,
   voSubpackageName=typeInitMap.voSubpackageName,
   voName=table.name.voName,
   voFactorySubpackageName=typeInitMap.voFactorySubpackageName,
@@ -219,15 +219,13 @@ import <basePackageName>.<voFactorySubpackageName>.core.<table.name.voName>Facto
   basePackageName=basePackageName,
   baseDAOSubpackageName=baseDAOSubpackageName,
   referredVOName=fk.source.name.voName)>}; separator="\n">
-<table.differentCustomResults:{ cr  | <custom_select_import(result=cr, package=basePackageName, baseDAOSubpackageName=baseDAOSubpackageName, C=C)>}; separator="\n">
+<table.customResults.different:{ cr  | <custom_select_import(result=cr, package=basePackageName, baseDAOSubpackageName=baseDAOSubpackageName, C=C)>}; separator="\n">
 
 /*
  * Importing V24-Commons classes.
  */
 import com.ventura24.commons.dao.DAOListener;
-<if(table.differentCustomResults)
- ><table.differentCustomResults:{ cr  | <if(cr.wrappingASingleProperty)><cr.properties:{p | <if(p.typeSupportedOutOfTheBox)>import com.ventura24.commons.dao.<p.objectType>ResultSetMultipleExtractor;<endif>}; separator="\n"><endif>}; separator="\n">
-<endif>
+<table.customResults.different:{ cr  | <if(cr.wrappingASingleProperty)><cr.properties:{p | <if(p.typeSupportedOutOfTheBox)>import com.ventura24.commons.dao.<p.objectType>ResultSetMultipleExtractor;<endif>}; separator="\n"><endif>}; separator="\n">
 import com.ventura24.commons.dao.V24JdbcTemplate;
 import com.ventura24.commons.dao.V24PreparedStatementCreator;
 import com.ventura24.commons.dao.V24PreparedStatementSetter;
@@ -1569,7 +1567,7 @@ em_attribute_value_retrieval(attr, table, C) ::= <<
    transactionTemplate.execute(
        new V24QueryTransactionCallback\<<engine.name><table.name.voName>DAO, Map\<String, <attr.objectType>\>>(
            <attr.name.uncapitalized>Sql,
-           new <attr.name.capitalized>ResultSetSingleExtractor(<attr.name.uncapitalized>Sql, daoListener),
+           new <attr.name.capitalized>ResultSetExtractor(<attr.name.uncapitalized>Sql, daoListener),
            this));
 
 final <attr.javaType> <attr.name.uncapitalized> = <attr.name.uncapitalized>Map.get("<attr.name.lowercased>");
@@ -1689,11 +1687,15 @@ public static class <attr.name.capitalized>ResultSetSingleExtractor
     extends  V24ResultSetSingleExtractor\<Map\<String, ?\>>
 {
     /**
-     * Constructs a new {@code <attr.name.capitalized>ResultSetSingleExtractor}.
+     * Constructs a new {@code <attr.name.capitalized>ResultSetExtractor}.
      * @param sql the original SQL.
      * @param daoListener the dao listener.
      */
+<<<<<<< Updated upstream
     public <attr.name.capitalized>ResultSetSingleExtractor(
+=======
+    public <attr.name.capitalized>ResultSetExtractor(
+>>>>>>> Stashed changes
         <notnull(C=C)>final String sql,
         <nullable(C=C)>final DAOListener daoListener)
     {

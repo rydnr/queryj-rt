@@ -198,17 +198,29 @@ endif>
     /**
      * Updates {@link <table.name.voName>} information.
 <if(table.parentTable)>
+<<<<<<< Updated upstream
     <table.all.minus.readOnlyAttributes:{ attr | <attribute_javadoc(attr=attr)>}; separator="\n">
 <else>
     <table.own.minus.readOnlyAttributes:{ attr | <attribute_javadoc(attr=attr)>}; separator="\n">
+=======
+     <table.all.minus.readOnly:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
+<else>
+     <table.own.minus.readOnly:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
+>>>>>>> Stashed changes
 <endif>
      * @return the number of {@code <table.name>} rows updated.
      */
     int update(
 <if(table.parentTable)>
+<<<<<<< Updated upstream
         <table.all.minus.readOnlyAttributes:{ attr | <attribute_method_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
 <else>
         <table.own.minus.readOnlyAttributes:{ attr | <attribute_method_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
+=======
+        <table.all.minus.readOnly:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
+<else>
+        <table.own.minus.readOnly:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
+>>>>>>> Stashed changes
 <endif>
       throws DataAccessException;
 
