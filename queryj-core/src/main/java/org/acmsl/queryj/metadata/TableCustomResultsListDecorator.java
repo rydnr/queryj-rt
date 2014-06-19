@@ -178,7 +178,7 @@ public class TableCustomResultsListDecorator
         for (@Nullable final Result<DecoratedString> customResult : items)
         {
             if (   (customResult != null)
-                && (!list.contains(customResult))
+                && (!list.contains(customResult)))
         }
         result = new TableCustomResultsListDecorator(list, table, c);
 
