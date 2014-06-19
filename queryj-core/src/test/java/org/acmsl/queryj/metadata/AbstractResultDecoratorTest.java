@@ -167,7 +167,7 @@ public class AbstractResultDecoratorTest
      * @return the decorator.
      */
     @NotNull
-    protected static AbstractResultDecorator setupResultDecorator(@NotNull final List<Property<String>> properties)
+    protected static AbstractResultDecorator<String> setupResultDecorator(@NotNull final List<Property<String>> properties)
     {
         return setupResultDecorator("my.result", "MyResult", properties);
     }
