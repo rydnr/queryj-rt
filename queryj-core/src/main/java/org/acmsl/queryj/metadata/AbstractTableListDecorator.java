@@ -705,7 +705,7 @@ public abstract class AbstractTableListDecorator<V>
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final DecoratorFactory decoratorFactory)
     {
-        @NotNull final ListDecorator<Result<DecoratedString>> result;
+        @NotNull final ListDecorator<V> result;
 
         @NotNull final List<V> list = new ArrayList<>(items.size());
 
