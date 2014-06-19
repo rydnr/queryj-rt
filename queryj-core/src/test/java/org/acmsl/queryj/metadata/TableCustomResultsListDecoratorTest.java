@@ -117,6 +117,29 @@ public class TableCustomResultsListDecoratorTest
     @Test
     public void getDifferent_returns_no_duplicates()
     {
+        @NotNull final List<Result<DecoratedString>> list = new ArrayList<>(2);
+
+        @NotNull final Result<DecoratedString> result1 =
+            new ResultElement<>(new DecoratedString("id1"), null);
+
+        @NotNull final Result<DecoratedString> result2 =
+            new ResultElement<>(new DecoratedString("id2"), null);
+
+        list.add(result1);
+        list.add(result2);
+
+        @NotNull final TableDecorator tableDecorator =
+            EasyMock.createNiceMock(TableDecorator.class);
+
+        @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
+        EasyMock.expect(tableDecorator.getMetadataManager()).andReturn(metadataManager).anyTimes();
+        EasyMock.replay(tableDecorator);
+
+        @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
+        @NotNull final DecoratorFactory decoratorFactory = EasyMock.createNiceMock(DecoratorFactory.class);
+
+        @NotNull final TableCustomResultsListDecorator instance =
+            new TableCustomResultsListDecorator(list, tableDecorator, customSqlProvider, decoratorFactory);
 
     }
 }
