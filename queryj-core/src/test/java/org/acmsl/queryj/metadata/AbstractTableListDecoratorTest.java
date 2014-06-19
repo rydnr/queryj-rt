@@ -362,7 +362,7 @@ public class AbstractTableListDecoratorTest
          * @return the {@link MetadataManager} instance.
          */
         @NotNull
-        protected MetadataManager getMetadataManager()
+        public MetadataManager getMetadataManager()
         {
             return this.m__MetadataManager;
         }
