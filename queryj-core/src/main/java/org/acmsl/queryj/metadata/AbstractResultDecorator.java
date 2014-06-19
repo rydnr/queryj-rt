@@ -153,7 +153,6 @@ public abstract class AbstractResultDecorator<V>
      * Retrieves the result.
      * @return such element.
      */
-    @Override
     @NotNull
     protected final Result<V> immutableGetResult()
     {
