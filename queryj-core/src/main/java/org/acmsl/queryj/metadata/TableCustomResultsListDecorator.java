@@ -159,7 +159,7 @@ public class TableCustomResultsListDecorator
     /**
      * Removes any duplicates in given collection.
      * @param items the items.
-     * @
+     * @param table the {@link TableDecorator}
      * @return the original items, discarding duplicates.
      */
     @NotNull
