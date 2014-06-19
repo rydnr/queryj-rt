@@ -213,7 +213,7 @@ public class BindQueryParametersHandlerTest
 
     /**
      * Tests whether retrieveStatementSetterMethod() works for Long parameters.
-     * @throws Exception if the test fails.
+     * throws Exception if the test fails.
      */
     @Test
     public void retrieve_statement_setter_method_works_for_Long_parameter()
@@ -224,7 +224,7 @@ public class BindQueryParametersHandlerTest
 
     /**
      * Tests whether retrieveStatementSetterMethod() works for double parameters.
-     * @throws Exception if the test fails.
+     * throws Exception if the test fails.
      */
     @Test
     public void retrieve_statement_setter_method_works_for_double_parameter()
