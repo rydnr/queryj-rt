@@ -74,6 +74,7 @@ import java.util.MissingResourceException;
 @RunWith(JUnit4.class)
 public class InvalidColumnNameInCustomResultExceptionTest
 {
+
     @Test
     public void the_message_is_internationalized_for_implicit_results()
         throws MissingResourceException
