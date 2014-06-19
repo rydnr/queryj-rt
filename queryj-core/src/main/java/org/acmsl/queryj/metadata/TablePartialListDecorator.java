@@ -738,6 +738,8 @@ public class TablePartialListDecorator<V>
      * Retrieves the items, after removing duplicates.
      * @param items the items.
      * @param table the {@link TableDecorator table}.
+     * @param customSqlProvider the {@link CustomSqlProvider} instance.
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
      * @return such list.
      */
