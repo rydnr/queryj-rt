@@ -105,7 +105,7 @@ public class OracleMetadataManagerTest
     }
 
     /**
-     * Checks whether it identifies "invalid column name" exceptions.
+     * Checks whether it identifies "invalid column type" exceptions.
      */
     @Test
     public void identifies_invalid_column_type_exceptions()
