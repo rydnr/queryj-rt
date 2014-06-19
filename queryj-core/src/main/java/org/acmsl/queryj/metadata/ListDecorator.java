@@ -95,7 +95,7 @@ public interface ListDecorator<T>
      */
     @NotNull
     @SuppressWarnings("unused")
-    PartialListDecorator getDifferent();
+    ListDecorator getDifferent();
 
     /**
      * The "invalid operation" message.
