@@ -147,16 +147,6 @@ public class TableCustomResultsListDecorator
     }
 
     /**
-     * {@inheritDoc}
-     */
-    @NotNull
-    @Override
-    public ListDecorator<Result<DecoratedString>> getDifferent()
-    {
-        return getDifferent(getItems(), getTable(), getCustomSqlProvider(), getDecoratorFactory());
-    }
-
-    /**
      * Removes any duplicates in given collection.
      * @param items the items.
      * @param table the {@link TableDecorator table}.
