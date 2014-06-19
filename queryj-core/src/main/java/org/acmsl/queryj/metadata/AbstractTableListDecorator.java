@@ -732,7 +732,8 @@ public abstract class AbstractTableListDecorator<V>
      * @return the new list decorator.
      */
     @NotNull
-    protected ListDecorator<V> createListDecorator(@NotNull final List<V> items, @NotNull final TableDecorator table)
+    protected ListDecorator<V> createListDecorator(
+        @NotNull final List<V> items, @NotNull final TableDecorator table)
     /**
      * Compares given instance with the one wrapped by this instance.
      * @param table the table to compare with.
