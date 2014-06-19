@@ -139,6 +139,10 @@ public class BindQueryParametersHandlerTest
         EasyMock.verify(t_Statement);
     }
 
+    /**
+     * Tests whether retrieveStatementSetterMethod() works for boolean parameters.
+     * @throws Exception if the test fails.
+     */
     @SuppressWarnings("unchecked")
     public void testPrimitiveBody(@NotNull final Class<?> type)
         throws Exception
