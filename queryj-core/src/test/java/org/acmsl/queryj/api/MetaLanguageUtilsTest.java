@@ -67,6 +67,9 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public class MetaLanguageUtilsTest
 {
+    /**
+     * String literal
+     */
     public static final String NULL_META_LANGUAGE_UTILS_INSTANCE = "Null MetaLanguageUtils instance";
     public static final String TABLE_BLA = "Table BLA.";
     protected static final String IS_PARSED_AS_STATIC = "' is parsed as static";
