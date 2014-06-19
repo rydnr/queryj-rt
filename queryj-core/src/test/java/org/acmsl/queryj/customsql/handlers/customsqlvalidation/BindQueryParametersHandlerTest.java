@@ -88,6 +88,10 @@ import java.util.Arrays;
 @RunWith(JUnit4.class)
 public class BindQueryParametersHandlerTest
 {
+    /**
+     * Tests whether retrieveStatementSetterMethod() works for boolean parameters.
+     * @throws Exception if the test fails.
+     */
     @Test
     public void binds_the_parameters_to_the_query()
         throws QueryJBuildException, SQLException
