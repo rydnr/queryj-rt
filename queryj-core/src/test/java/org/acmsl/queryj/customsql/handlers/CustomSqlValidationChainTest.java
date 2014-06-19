@@ -107,8 +107,9 @@ public class CustomSqlValidationChainTest
     }
 
     /**
-     * Checks whether it includes the required handlers.
-     * throws QueryJBuildException
+     * Checks whether given chain contains the handler class.
+     * @param handlerClass the handler class.
+     * /param chain the chain.
      */
     protected boolean contains(
         @NotNull final Class<?> handlerClass,
