@@ -2177,7 +2177,7 @@ public abstract class AbstractTableDecorator
             result.addAll(attributes);
         }
 
-        return new TableAttributesListDecorator(result, this);
+        return new TableAttributesListDecorator(result, this, getCustomSqlProvider(), getDecoratorFactory());
     }
 
     /**
