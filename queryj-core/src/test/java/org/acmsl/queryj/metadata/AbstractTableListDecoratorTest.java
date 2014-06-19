@@ -261,6 +261,9 @@ public class AbstractTableListDecoratorTest
                 attributes, tableDecorator, customSqlProvider, decoratorFactory, metadataManager);
     }
 
+    /**
+     * A dummy implementation of {@link AbstractTableListDecorator}
+     */
     public static class MyTableListDecorator
         extends AbstractTableListDecorator<Attribute<DecoratedString>>
     {
