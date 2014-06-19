@@ -189,7 +189,8 @@ public abstract class AbstractResultDecorator<V>
         {
             result =
                 new ResultElement<>(
-                    new DecoratedString("" + customResult.getId())
+                    new DecoratedString("" + customResult.getId()),
+                    new DecoratedString("" + customResult.)
         }
 
         return result;
