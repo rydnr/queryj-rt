@@ -787,6 +787,7 @@ public class TablePartialListDecorator<V>
     {
         return
               "{ \"super\": " + super.toString()
+            + ", \"customSqlProvider:"
             + ", \"class\": \"" + TablePartialListDecorator.class.getSimpleName() + '"'
             + ", \"package\": \"org.acmsl.queryj.metadata\""
             + " }";
