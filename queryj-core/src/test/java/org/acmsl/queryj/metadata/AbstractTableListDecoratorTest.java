@@ -316,6 +316,11 @@ public class AbstractTableListDecoratorTest
         extends AbstractTableListDecorator<Attribute<DecoratedString>>
     {
         /**
+         * The metadata manager.
+         */
+        pro
+
+        /**
          * Creates a new instance.
          * @param attributes the attributes.
          * @param tableDecorator the table decorator.
