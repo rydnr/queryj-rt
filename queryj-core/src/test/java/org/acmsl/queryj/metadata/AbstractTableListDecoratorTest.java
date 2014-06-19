@@ -317,7 +317,8 @@ public class AbstractTableListDecoratorTest
     {
         /**
          * Creates a new instance.
-         * @param
+         * @param attributes the attributes.
+         * /param
          */
         public MyTableListDecorator(
             @NotNull final List<Attribute<DecoratedString>> attributes,
