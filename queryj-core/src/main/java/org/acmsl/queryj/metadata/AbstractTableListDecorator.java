@@ -709,6 +709,7 @@ public abstract class AbstractTableListDecorator<V>
     {
         return
               "{ \"super\": " + super.toString()
+            + ", \"customSqlProvider"
             + ", \"class\": " + AbstractTableListDecorator.class.getSimpleName() + '"'
             + ", \"package\": \"org.acmsl.queryj.metadata\""
             + ", \"table\": \"" + m__Table.getName()
