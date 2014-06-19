@@ -151,7 +151,7 @@ public class TableCustomResultsListDecorator
      */
     @NotNull
     @Override
-    public ListDecorator<DecoratedString> getDifferent()
+    public ListDecorator<Result<DecoratedString>> getDifferent()
     {
         return getDifferent(getItems(), getTable(), getCustomSqlProvider(), getDecoratorFactory());
     }
