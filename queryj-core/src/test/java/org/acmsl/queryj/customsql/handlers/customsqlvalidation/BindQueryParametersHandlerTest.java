@@ -180,7 +180,7 @@ public class BindQueryParametersHandlerTest
 
     /**
      * Tests whether retrieveStatementSetterMethod() works for int parameters.
-     * @throws Exception if the test fails.
+     * throws Exception if the test fails.
      */
     @Test
     public void retrieve_statement_setter_method_works_for_int_parameter()
