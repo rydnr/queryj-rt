@@ -145,7 +145,7 @@ public class BindQueryParametersHandlerTest
     }
 
     /**
-     * Tests whether retrieveStatementSetterMethod() works for boolean parameters.
+     * The common part of all tests
      * @throws Exception if the test fails.
      */
     @SuppressWarnings("unchecked")
