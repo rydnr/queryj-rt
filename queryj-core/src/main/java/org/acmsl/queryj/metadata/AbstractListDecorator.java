@@ -36,21 +36,16 @@
 package org.acmsl.queryj.metadata;
 
 /*
- * Importing QueryJ Core classes.
+ * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.metadata.vo.Attribute;
-
-/*
- * Importing JetBrains annotations.
- */
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /*
  * Importing JDK classes.
  */
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
@@ -334,79 +329,6 @@ public abstract class AbstractListDecorator<T>
     public Object[] toArray()
     {
         return getItems().toArray();
-    }
-
-    /**
-     * Retrieves the attributes.
-     * @param items the items.
-     * @return the items, if they're the attributes. An empty list otherwise.
-     */
-    @NotNull
-    protected List<Attribute<DecoratedString>> retrieveAttributes(@NotNull final List<T> items)
-    {
-        return retrieveAttributes(items, TableDecoratorHelper.getInstance());
-    }
-
-    /**
-     * Retrieves the attributes.
-     * @param items the items.
-     * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
-     * @return the items, if they're the attributes. An empty list otherwise.
-     */
-    @SuppressWarnings("unchecked")
-    @NotNull
-    protected List<Attribute<DecoratedString>> retrieveAttributes(
-        @NotNull final List<T> items, @NotNull final TableDecoratorHelper tableDecoratorHelper)
-    {
-        @NotNull final List<Attribute<DecoratedString>> result;
-
-        if (tableDecoratorHelper.isListOfAttributes(items))
-        {
-            result = (List<Attribute<DecoratedString>>) items;
-        }
-        else
-        {
-            result = new ArrayList<>(0);
-        }
-
-        return result;
-
-    }
-
-    /**
-     * Retrieves the custom results.
-     * @param items the items.
-     * @return the items, if they're the custom results. An empty list otherwise.
-     */
-    @NotNull
-    protected List<Result<DecoratedString>> retrieveCustomResults(@NotNull final List<T> items)
-    {
-        return retrieveCustomResults(items, TableDecoratorHelper.getInstance());
-    }
-
-    /**
-     * Retrieves the attributes.
-     * @param items the items.
-     * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
-     * @return the items, if they're the custom results. An empty list otherwise.
-     */
-    @SuppressWarnings("unchecked")
-    @NotNull
-    protected List<Result<DecoratedString>> retrieveCustomResults(
-        @NotNull final List<T> items, @NotNull final TableDecoratorHelper tableDecoratorHelper)
-    {
-        @NotNull final List<Result<DecoratedString>> result;
-
-        if (tableDecoratorHelper.isListOfCustomResults(items))
-        {
-            result = (List<Result<DecoratedString>>) items;
-        }
-        else
-        {
-            result = new ArrayList<>(0);
-        }
-
-        return result;
     }
 
     /**

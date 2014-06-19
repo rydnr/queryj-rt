@@ -154,8 +154,7 @@ public class BasePerCustomResultTemplateBuildHandlerTest
                  */
                 @Override
                 protected void storeTemplates(
-                    @NotNull final List<PerCustomResultTemplate<PerCustomResultTemplateContext>> templates,
-                    @NotNull final QueryJCommand parameters)
+                    @NotNull final List templates, @NotNull final QueryJCommand parameters)
                 {
                 }
             };

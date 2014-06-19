@@ -77,19 +77,18 @@ import java.util.List;
 
 /**
  * Decorates &lt;result&gt; elements in <i>custom-sql</i> models.
- * @param <V> the result type.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  */
 @ThreadSafe
-public abstract class AbstractResultDecorator<V>
+public abstract class AbstractResultDecorator
     extends  ResultElement<DecoratedString>
     implements  Result<DecoratedString>,
-                ResultDecorator<DecoratedString>
+                ResultDecorator
 {
     /**
      * The result element.
      */
-    private Result<V> m__Result;
+    private Result<String> m__Result;
 
     /**
      * The custom sql provider.
@@ -107,22 +106,22 @@ public abstract class AbstractResultDecorator<V>
     private DecoratorFactory m__DecoratorFactory;
 
     /**
-     * Creates a {@code AbstractResultDecorator} with given instance.
+     * Creates a <code>ResultElementDecorator</code> with given instance.
      * @param result the result element.
-     * @param customSqlProvider the {@link CustomSqlProvider}, required
+     * @param customSqlProvider the <code>CustomSqlProvider</code>, required
      * to decorate referred parameters.
-     * @param metadataManager the {@link MetadataManager} instance.
-     * @param decoratorFactory the {@link  DecoratorFactory} instance.
+     * @param metadataManager the <code>MetadataManager</code> instance.
+     * @param decoratorFactory the <code>DecoratorFactory</code> instance.
      */
     public AbstractResultDecorator(
-        @NotNull final Result<V> result,
+        @NotNull final Result<String> result,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
         @NotNull final DecoratorFactory decoratorFactory)
     {
         super(
-            new DecoratedString("" + result.getId()),
-            result.getClassValue() != null ? new DecoratedString("" + result.getClassValue()) : null);
+            new DecoratedString(result.getId()),
+            result.getClassValue() != null ? new DecoratedString(result.getClassValue()) : null);
         immutableSetResult(result);
         immutableSetPropertyRefs(result.getPropertyRefs());
         immutableSetCustomSqlProvider(customSqlProvider);
@@ -134,7 +133,7 @@ public abstract class AbstractResultDecorator<V>
      * Specifies the result.
      * @param result the result.
      */
-    protected final void immutableSetResult(@NotNull final Result<V> result)
+    protected final void immutableSetResult(@NotNull final Result<String> result)
     {
         m__Result = result;
     }
@@ -144,7 +143,7 @@ public abstract class AbstractResultDecorator<V>
      * @param result the result.
      */
     @SuppressWarnings("unused")
-    protected void setResult(@NotNull final Result<V> result)
+    protected void setResult(@NotNull final Result<String> result)
     {
         immutableSetResult(result);
     }
@@ -153,55 +152,11 @@ public abstract class AbstractResultDecorator<V>
      * Retrieves the result.
      * @return such element.
      */
-    @NotNull
-    protected final Result<V> immutableGetResult()
-    {
-        return m__Result;
-    }
-
-    /**
-     * Retrieves the result.
-     * @return such element.
-     */
     @Override
     @NotNull
-    public Result<DecoratedString> getResult()
+    public Result<String> getResult()
     {
-        return decorate(immutableGetResult());
-    }
-
-    /**
-     * Decorates given result.
-     * @param customResult the {@link Result} to decorate.
-     * @return such element.
-     */
-    @SuppressWarnings("unchecked")
-    @NotNull
-    protected Result<DecoratedString> decorate(@NotNull final Result<V> customResult)
-    {
-        @NotNull final Result<DecoratedString> result;
-
-        if (customResult.getId() instanceof DecoratedString)
-        {
-            result = (Result<DecoratedString>) customResult;
-        }
-        else
-        {
-            result =
-                new ResultElement<>(
-                    new DecoratedString("" + customResult.getId()),
-                    new DecoratedString("" + customResult.getClassValue()));
-
-            for (@Nullable final PropertyRef propertyRef : customResult.getPropertyRefs())
-            {
-                if (propertyRef != null)
-                {
-                    result.add(propertyRef);
-                }
-            }
-        }
-
-        return result;
+        return m__Result;
     }
 
     /**
@@ -325,7 +280,7 @@ public abstract class AbstractResultDecorator<V>
         return
             getProperties(
                 getPropertyRefs(),
-                immutableGetResult(),
+                getResult(),
                 getCustomSqlProvider(),
                 getMetadataManager(),
                 getDecoratorFactory(),
@@ -345,7 +300,7 @@ public abstract class AbstractResultDecorator<V>
     @NotNull
     public List<Property<DecoratedString>> getProperties(
         @NotNull final List<PropertyRef> propertyRefs,
-        @NotNull final Result<V> resultElement,
+        @NotNull final Result<String> resultElement,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
         @NotNull final DecoratorFactory decoratorFactory,
@@ -368,15 +323,15 @@ public abstract class AbstractResultDecorator<V>
      * @param resultElement the result element.
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
      * @param sqlPropertyDAO the {@link SqlPropertyDAO} instance.
-     * @param metadataManager the {@link }MetadataManager} instance.
-     * @param decoratorFactory the {@link DecoratorFactory} instance.
-     * @param customResultUtils the {@link CustomResultUtils} instance.
+     * @param metadataManager the <code>MetadataManager</code> instance.
+     * @param decoratorFactory the <code>DecoratorFactory</code> instance.
+     * @param customResultUtils the <code>CustomResultUtils</code> instance.
      * @return such information.
      */
     @NotNull
     public List<Property<DecoratedString>> getProperties(
         @NotNull final List<PropertyRef> propertyRefs,
-        @NotNull final Result<V> resultElement,
+        @NotNull final Result<String> resultElement,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final SqlPropertyDAO sqlPropertyDAO,
         @NotNull final MetadataManager metadataManager,
@@ -466,8 +421,8 @@ public abstract class AbstractResultDecorator<V>
     /**
      * Retrieves the large-object-block properties.
      * @param properties the properties.
-     * @param metadataTypeManager the {@link MetadataTypeManager} instance.
-     * @param metadataUtils the {@link MetadataUtils} instance.
+     * @param metadataTypeManager the <code>MetadataTypeManager</code> instance.
+     * @param metadataUtils the <code>MetadataUtils</code> instance.
      * @return such collection.
      */
     @NotNull
@@ -514,7 +469,7 @@ public abstract class AbstractResultDecorator<V>
     {
         return
             getImplicitProperties(
-                immutableGetResult(),
+                getResult(),
                 getCustomSqlProvider(),
                 getMetadataManager(),
                 getDecoratorFactory(),
@@ -532,7 +487,7 @@ public abstract class AbstractResultDecorator<V>
      */
     @NotNull
     public List<Property<DecoratedString>> getImplicitProperties(
-        @NotNull final Result<V> sqlResult,
+        @NotNull final Result<String> sqlResult,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
         @NotNull final DecoratorFactory decoratorFactory,
@@ -584,7 +539,7 @@ public abstract class AbstractResultDecorator<V>
     @NotNull
     protected List<Property<DecoratedString>> convert(
         @NotNull final List<Attribute<String>> attributes,
-        @NotNull final Result<V> sqlResult,
+        @NotNull final Result<String> sqlResult,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager,
         @NotNull final DecoratorFactory decoratorFactory)
@@ -866,9 +821,9 @@ public abstract class AbstractResultDecorator<V>
      * @return such value.
      */
     @Override
-    public int hashCode()
+    public final int hashCode()
     {
-        return hashCode(immutableGetResult());
+        return hashCode(getResult());
     }
 
     /**
@@ -876,7 +831,7 @@ public abstract class AbstractResultDecorator<V>
      * @param result the decorated result.
      * @return such value.
      */
-    protected final int hashCode(@NotNull final Result<V> result)
+    protected final int hashCode(@NotNull final Result<String> result)
     {
         return result.hashCode();
     }
@@ -893,7 +848,7 @@ public abstract class AbstractResultDecorator<V>
 
         if (object instanceof Result)
         {
-            result = equals(immutableGetResult(), object);
+            result = equals(getResult(), object);
         }
 
         return result;
@@ -905,8 +860,51 @@ public abstract class AbstractResultDecorator<V>
      * @param object the object to compare to.
      * @return the result of such comparison.
      */
-    protected boolean equals(@NotNull final Result<V> result, @Nullable final Object object)
+    protected boolean equals(@NotNull final Result<String> result, @Nullable final Object object)
     {
         return result.equals(object);
+    }
+
+    /**
+     * Compares given object with this instance.
+     * @param object the object to compare to.
+     * @return the result of such comparison.
+     * object prevents it from being compared to this Object.
+     */
+    @Override
+    public int compareTo(@Nullable final Result<DecoratedString> object)
+        throws  ClassCastException
+    {
+        return compareTo(getResult(), object);
+    }
+
+    /**
+     * Compares given object with given instance.
+     * @param resultElement the decorated result.
+     * @param object the object to compare to.
+     * @return the result of such comparison.
+     * object prevents it from being compared to this Object.
+     */
+    @SuppressWarnings("unchecked")
+    protected int compareTo(
+        @NotNull final Result<String> resultElement, @Nullable final Result<DecoratedString> object)
+        throws  ClassCastException
+    {
+        final int result;
+
+        if (object == null)
+        {
+            result = 1;
+        }
+        else
+        {
+            result =
+                resultElement.compareTo(
+                    new ResultElement<>(
+                        object.getId().getValue(),
+                        (object.getClassValue() != null ? object.getClassValue().getValue() : null)));
+        }
+
+        return result;
     }
 }
