@@ -118,6 +118,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
      * @param parameters the parameters.
      * @param metadataManager the database metadata manager.
      * @param templateFactory the template factory.
+     * throws QueryJBuildException if the hash cannot be computed.
      */
     protected void buildTemplates(
         @NotNull final QueryJCommand parameters,
