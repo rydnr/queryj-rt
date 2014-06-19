@@ -94,7 +94,8 @@ public class TableCustomResultsListDecoratorTest
 
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
         EasyMock.expect(tableDecorator.getMetadataManager()).andReturn(metadataManager);
-        EasyMock.replay();
+        EasyMock.replay(tableDecorator);
+
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final DecoratorFactory decoratorFactory = EasyMock.createNiceMock(DecoratorFactory.class);
 
