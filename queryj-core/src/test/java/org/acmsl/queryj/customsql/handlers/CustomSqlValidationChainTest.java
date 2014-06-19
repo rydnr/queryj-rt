@@ -88,7 +88,7 @@ public class CustomSqlValidationChainTest
 {
     /**
      * Checks whether it includes the required handlers.
-     * @throws QueryJBuildException
+     * throws QueryJBuildException
      */
     @SuppressWarnings("unchecked")
     @Test
