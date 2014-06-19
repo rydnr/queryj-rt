@@ -221,7 +221,10 @@ public abstract class AbstractTableDecorator
                 decoratorFactory));
         immutableSetAttributes(
             new TableAttributesListDecorator(
-                decorateAttributes(attributes, metadataManager, decoratorFactory), this));
+                decorateAttributes(attributes, metadataManager, decoratorFactory),
+                this,
+                customSqlProvider,
+                decoratorFactory));
         immutableSetReadOnlyAttributes(
             new TableAttributesListDecorator(
                 filterReadOnlyAttributes(decorateAttributes(attributes, metadataManager, decoratorFactory)), this));
