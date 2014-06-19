@@ -81,6 +81,16 @@ public class TablePartialListDecorator<V>
     private static final long serialVersionUID = -7540355104418964835L;
 
     /**
+     * The custom SQL provider.
+     */
+    private CustomSqlProvider m__CustomSqlProvider;
+
+    /**
+     * The decorator factory.
+     */
+    private DecoratorFactory m__DecoratorFactory;
+
+    /**
      * Creates a new instance.
      * @param listDecorator the {@link ListDecorator}.
      * @param table the {@link TableDecorator}.
