@@ -91,64 +91,6 @@ public class TableCustomResultsListDecorator
     }
 
     /**
-     * Specifies the custom sql provider.
-     * @param provider such {@link CustomSqlProvider instance}.
-     */
-    protected final void immutableSetCustomSqlProvider(@NotNull final CustomSqlProvider provider)
-    {
-        this.m__CustomSqlProvider = provider;
-    }
-
-    /**
-     * Specifies the custom sql provider.
-     * @param provider such {@link CustomSqlProvider instance}.
-     */
-    @SuppressWarnings("unused")
-    protected void setCustomSqlProvider(@NotNull final CustomSqlProvider provider)
-    {
-        immutableSetCustomSqlProvider(provider);
-    }
-
-    /**
-     * Retrieves the custom sql provider.
-     * @return such {@link CustomSqlProvider instance}.
-     */
-    @NotNull
-    public CustomSqlProvider getCustomSqlProvider()
-    {
-        return this.m__CustomSqlProvider;
-    }
-
-    /**
-     * Specifies the decorator factory.
-     * @param factory the {@link DecoratorFactory} instance.
-     */
-    protected final void immutableSetDecoratorFactory(@NotNull final DecoratorFactory factory)
-    {
-        this.m__DecoratorFactory = factory;
-    }
-
-    /**
-     * Specifies the decorator factory.
-     * @param factory the {@link DecoratorFactory} instance.
-     */
-    @SuppressWarnings("unused")
-    protected void setDecoratorFactory(@NotNull final DecoratorFactory factory)
-    {
-        immutableSetDecoratorFactory(factory);
-    }
-
-    /**
-     * Retrieves the decorator factory.
-     * @return the {@link DecoratorFactory} instance.
-     */
-    @NotNull
-    public DecoratorFactory getDecoratorFactory()
-    {
-        return this.m__DecoratorFactory;
-    }
-
-    /**
      * {@inheritDoc}
      */
     @NotNull
