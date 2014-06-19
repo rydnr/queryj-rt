@@ -189,6 +189,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
      * @param foreignKey the foreign key.
      * @param parameters the parameter map.
      * @return the template.
+     * throws QueryJBuildException if the templates cannot be built.
      */
     @Nullable
     protected abstract T createTemplate(
