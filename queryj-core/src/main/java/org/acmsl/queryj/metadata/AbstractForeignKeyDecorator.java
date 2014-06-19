@@ -97,7 +97,7 @@ public abstract class AbstractForeignKeyDecorator
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
      */
     public AbstractForeignKeyDecorator(
-        @NotNull final ForeignKey<String> foreignKey,
+        @NotNull final ForeignKey<DecoratedString> foreignKey,
         @NotNull final MetadataManager metadataManager,
         @NotNull final DecoratorFactory decoratorFactory,
         @NotNull final CustomSqlProvider customSqlProvider)
