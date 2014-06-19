@@ -168,6 +168,7 @@ public abstract class AbstractResultDecorator<V>
     @NotNull
     public Result<V> getResult()
     {
+    }
         @NotNull Result<V> result;
 
         if ()
