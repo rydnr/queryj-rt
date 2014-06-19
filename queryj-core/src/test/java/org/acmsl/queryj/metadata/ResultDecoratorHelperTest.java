@@ -131,7 +131,7 @@ public class ResultDecoratorHelperTest
         properties.add(property3);
         properties.add(property4);
 
-        @NotNull final AbstractResultDecorator<Attribute<DecoratedString>> result =
+        @NotNull final AbstractResultDecorator<DecoratedString> result =
             AbstractResultDecoratorTest.setupResultDecorator(properties);
 
         Assert.assertTrue(instance.containNotNullProperties(result.getProperties(), result.getMetadataTypeManager()));
