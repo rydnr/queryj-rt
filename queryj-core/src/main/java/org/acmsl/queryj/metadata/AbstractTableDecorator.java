@@ -215,7 +215,10 @@ public abstract class AbstractTableDecorator
         immutableSetTable(table);
         immutableSetPrimaryKey(
             new TableAttributesListDecorator(
-                decorateAttributes(primaryKey, metadataManager, decoratorFactory), this, customSqlProvider, decoratorFactory));
+                decorateAttributes(primaryKey, metadataManager, decoratorFactory),
+                this,
+                customSqlProvider,
+                decoratorFactory));
         immutableSetAttributes(
             new TableAttributesListDecorator(
                 decorateAttributes(attributes, metadataManager, decoratorFactory), this));
