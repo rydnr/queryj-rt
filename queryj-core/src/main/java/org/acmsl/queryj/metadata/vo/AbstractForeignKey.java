@@ -396,7 +396,6 @@ public abstract class AbstractForeignKey<V>
 
     /**
      * {@inheritDoc}
-     * @return
      */
     @NotNull
     @Override
