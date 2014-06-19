@@ -180,7 +180,7 @@ public class AbstractResultDecoratorTest
      * @return the decorator.
      */
     @NotNull
-    protected static AbstractResultDecorator setupResultDecorator(
+    protected static AbstractResultDecorator<String> setupResultDecorator(
         @NotNull final String id,
         @NotNull final String classValue,
         @NotNull final List<Property<String>> properties)
