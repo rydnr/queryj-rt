@@ -376,8 +376,8 @@ public abstract class MetadataManagerTableDAO<M extends MetadataManager>
      * Queries the contents of given table.
      * @param tableName the table name.
      * @param metadataManager the metadata manager.
-     * @param metaLanguageUtils the <code>MetaLanguageUtils</code> instance.
-     * @param metadataUtils the <code>MetadataUtils</code> instance.
+     * @param metaLanguageUtils the {@link MetaLanguageUtils}  instance.
+     * @param metadataUtils the {@link MetadataUtils} instance.
      * @return the retrieved rows.
      */
     @NotNull
