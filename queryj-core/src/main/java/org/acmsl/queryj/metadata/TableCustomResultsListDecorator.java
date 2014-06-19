@@ -93,7 +93,9 @@ public class TableCustomResultsListDecorator
      */
     public TableCustomResultsListDecorator(
         @NotNull final List<Result<DecoratedString>> list,
-        @NotNull final TableDecorator table)
+        @NotNull final TableDecorator table,
+        @NotNull final CustomSqlProvider customSqlProvider,
+        @NotNull final DecoratorFactory decoratorFactory)
     {
         super(list, table, customSqlProvider, decoratorFactory);
     }
