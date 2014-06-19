@@ -244,6 +244,8 @@ public class AbstractTableListDecoratorTest
      * @param attributes the attributes.
      * @param tableDecorator the {@link TableDecorator}.
      * @param metadataManager the {@link MetadataManager}.
+     * @param customSqlProvider the {@link CustomSqlProvider}.
+     * @param decoratorFactory the {@link DecoratorFactory}.
      * @return the new instance.
      */
     @NotNull
