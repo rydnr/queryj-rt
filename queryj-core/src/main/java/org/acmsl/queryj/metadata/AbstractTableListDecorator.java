@@ -709,7 +709,7 @@ public abstract class AbstractTableListDecorator<V>
 
         @NotNull final List<Result<DecoratedString>> list = new ArrayList<>(items.size());
 
-        for (@Nullable final Result<DecoratedString> customResult : items)
+        for (@Nullable final V item: items)
         {
             if (   (customResult != null)
                    && (!list.contains(customResult)))
