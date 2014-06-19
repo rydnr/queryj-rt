@@ -136,7 +136,7 @@ public class TableResultDecoratorImpl<V>
         {
             @NotNull final TableResultDecoratorImpl that = (TableResultDecoratorImpl) o;
 
-            result = that.getId().equals(m__Table.equals(that.m__Table);
+            result = that.getId())m__Table.equals(that.m__Table);
         }
         else
         {
