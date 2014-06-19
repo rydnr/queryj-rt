@@ -894,7 +894,7 @@ public abstract class AbstractResultDecorator<V>
 
         if (object instanceof Result)
         {
-            result = equals(immutableSetResult(), object);
+            result = equals(immutableGetResult(), object);
         }
 
         return result;
