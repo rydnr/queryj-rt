@@ -193,6 +193,9 @@ public abstract class AbstractResultDecorator<V>
                     new DecoratedString("" + customResult.getClassValue()));
 
             for (@Nullable final PropertyRef propertyRef : customResult.getPropertyRefs())
+            {
+
+            }
             result.add();
         }
 
