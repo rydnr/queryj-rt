@@ -205,7 +205,7 @@ endif>
      * @return the number of {@code <table.name>} rows updated.
      */
     int update(
-<if(parent)>
+<if(table.parent)>
         <table.all.minus.readOnlyAttributes:{ attr | <attribute_declaration_impl(attr=attr, C=C)>}; separator=",\n">)
 <else>
         <table.own.minus.readOnlyAttributes:{ attr | <attribute_declaration_impl(attr=attr, C=C)>}; separator=",\n">)
