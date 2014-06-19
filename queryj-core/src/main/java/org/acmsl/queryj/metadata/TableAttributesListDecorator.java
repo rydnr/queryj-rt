@@ -80,6 +80,8 @@ public class TableAttributesListDecorator
      * Creates a new instance.
      * @param list the attributes.
      * @param table the wrapped table.
+     * @param customSqlProvider the {@link CustomSqlProvider} instance.
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
      */
     public TableAttributesListDecorator(
         @NotNull final List<Attribute<DecoratedString>> list,
@@ -87,7 +89,7 @@ public class TableAttributesListDecorator
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final DecoratorFactory decoratorFactory)
     {
-        super(list, table, );
+        super(list, table, customSqlProvider, decoratorFactory);
     }
 
     // TableDecorator implementation
