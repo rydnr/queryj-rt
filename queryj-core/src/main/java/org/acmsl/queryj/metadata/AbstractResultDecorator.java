@@ -177,7 +177,7 @@ public abstract class AbstractResultDecorator<V>
      * @return such element.
      */
     @NotNull
-    protected Result<DecoratedString> getResult()
+    protected Result<DecoratedString> decorate(@NotNull final Result<V> customResult)
     {
         @NotNull Result<V> result;
 
