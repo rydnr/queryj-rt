@@ -240,7 +240,7 @@ public abstract class AbstractTableListDecorator<V>
      */
     @NotNull
     @Override
-    public ListDecorator getDifferent()
+    public ListDecorator<V> getDifferent()
     {
         throw new RuntimeException(INVALID_OPERATION);
     }
