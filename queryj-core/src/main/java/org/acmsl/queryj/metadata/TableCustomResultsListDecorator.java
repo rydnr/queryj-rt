@@ -171,7 +171,10 @@ public class TableCustomResultsListDecorator
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final DecoratorFactory decoratorFactory)
     {
-        @NotNull final ListDecorator<V> result;
+        @NotNull final ListDecorator<Result<DecoratedString>> result;
+
+        @NotNull final List<Result<DecoratedString>> list = new ArrayList<>(items.size());
+
 
         result = new TableCustomResultsListDecorator(list, table, c);
 
