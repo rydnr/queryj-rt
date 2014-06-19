@@ -409,6 +409,6 @@ public abstract class AbstractForeignKey<V>
             + ", \"attributes\": [" + Arrays.toString(m__lAttributes.toArray(new Attribute<?>[m__lAttributes.size()])) + ']'
             + ", \"targetTableName\": \"" + m__strTargetTableName + "\" "
             + ", \"class\": \"AbstractForeignKey\""
-        + ", \"package\": \"org.acmsl.queryj.metadata}";
+            + ", \"package\": \"org.acmsl.queryj.metadata\" }";
     }
 }
