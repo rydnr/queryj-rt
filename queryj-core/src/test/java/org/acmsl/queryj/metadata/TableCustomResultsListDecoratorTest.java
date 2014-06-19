@@ -143,6 +143,6 @@ public class TableCustomResultsListDecoratorTest
 
         @NotNull final PartialListDecorator different = instance.getDifferent();
 
-        Assert.assertEquals(2, different.si)
+        Assert.assertEquals(2, different.size());
     }
 }
