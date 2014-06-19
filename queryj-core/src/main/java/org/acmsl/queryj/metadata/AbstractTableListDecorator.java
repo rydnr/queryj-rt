@@ -100,7 +100,9 @@ public abstract class AbstractTableListDecorator<V>
      */
     public AbstractTableListDecorator(
         @NotNull final List<V> list,
-        @NotNull final TableDecorator table)
+        @NotNull final TableDecorator table,
+        @NotNull final CustomSqlProvider customSqlProvider,
+        @NotNull final DecoratorFactory decoratorFactory)
     {
         super(list);
         immutableSetTable(table);
