@@ -175,7 +175,10 @@ public class TableCustomResultsListDecorator
 
         @NotNull final List<Result<DecoratedString>> list = new ArrayList<>(items.size());
 
-        for (@Nullable final Result<DecoratedString> )
+        for (@Nullable final Result<DecoratedString> customResult : items)
+        {
+            if (customResult != null)
+        }
         result = new TableCustomResultsListDecorator(list, table, c);
 
         return result;
