@@ -154,7 +154,7 @@ public class AbstractResultDecoratorTest
     @Test
     public void getPackage_retrieves_the_package_name()
     {
-        @NotNull final AbstractResultDecorator result =
+        @NotNull final AbstractResultDecorator<String> result =
             AbstractResultDecoratorTest.setupResultDecorator("my.id", "com.foo.bar.MyResult", new ArrayList<>(0));
 
         Assert.assertEquals("com.foo.bar", result.getPackage().getValue());
