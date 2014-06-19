@@ -171,7 +171,7 @@ public class AbstractTableListDecoratorTest
         @NotNull final TableDecorator tableDecorator =
             new CachingTableDecorator(table, metadataManager, decoratorFactory, customSqlProvider);
 
-        @NotNull final AbstractTableListDecorator instance =
+        @NotNull final AbstractTableListDecorator<Attribute<DecoratedString>> instance =
             createInstance(attributes, tableDecorator, metadataManager, customSqlProvider, decoratorFactory);
 
         Assert.assertTrue(instance.getContainsClobs());
