@@ -253,7 +253,9 @@ public abstract class AbstractTableListDecorator<V>
     @NotNull
     protected ListDecorator<V> getDifferent(@NotNull final List<V> items)
     {
-        return getDifferent(getItems());
+        @NotNull final ListDecorator<V> result;
+
+
     }
 
     // TableDecorator implementation
