@@ -80,7 +80,7 @@ public abstract class AbstractQueryJChain
      */
     public AbstractQueryJChain()
     {
-        immutableSetChain(new ArrayListChainAdapter<G, QueryJBuildException, CH>());
+        immutableSetChain(new ArrayListChainAdapter<C, QueryJBuildException, CH>());
     }
 
     /**
