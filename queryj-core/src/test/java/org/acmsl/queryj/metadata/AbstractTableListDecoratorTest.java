@@ -297,7 +297,7 @@ public class AbstractTableListDecoratorTest
                     @NotNull final List<Attribute<DecoratedString>> items,
                     @NotNull final TableDecorator table,
                     @NotNull final CustomSqlProvider customSqlProvider,
-                                                                                        @NotNull final DecoratorFactory decoratorFactory)
+                    @NotNull final DecoratorFactory decoratorFactory)
                 {
                     return null;  //To change body of implemented methods use File | Settings | File Templates.
                 }
