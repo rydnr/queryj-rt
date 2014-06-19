@@ -225,9 +225,7 @@ import <basePackageName>.<voFactorySubpackageName>.core.<table.name.voName>Facto
  * Importing V24-Commons classes.
  */
 import com.ventura24.commons.dao.DAOListener;
-<if(table.customResults)
- ><table.customResults.different:{ cr  | <if(cr.wrappingASingleProperty)><cr.properties:{p | <if(p.typeSupportedOutOfTheBox)>import com.ventura24.commons.dao.<p.objectType>ResultSetMultipleExtractor;<endif>}; separator="\n"><endif>}; separator="\n">
-<endif>
+<table.customResults.different:{ cr  | <if(cr.wrappingASingleProperty)><cr.properties:{p | <if(p.typeSupportedOutOfTheBox)>import com.ventura24.commons.dao.<p.objectType>ResultSetMultipleExtractor;<endif>}; separator="\n"><endif>}; separator="\n">
 import com.ventura24.commons.dao.V24JdbcTemplate;
 import com.ventura24.commons.dao.V24PreparedStatementCreator;
 import com.ventura24.commons.dao.V24PreparedStatementSetter;
