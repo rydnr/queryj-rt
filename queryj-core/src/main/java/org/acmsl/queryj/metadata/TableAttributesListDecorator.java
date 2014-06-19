@@ -234,7 +234,7 @@ public class TableAttributesListDecorator
      */
     @Override
     @NotNull
-    protected ListDecorator<Result<DecoratedString>> createListDecorator(
+    protected ListDecorator<Attribute<DecoratedString>> createListDecorator(
         @NotNull final List<Result<DecoratedString>> items,
         @NotNull final TableDecorator table,
         @NotNull final CustomSqlProvider customSqlProvider,
