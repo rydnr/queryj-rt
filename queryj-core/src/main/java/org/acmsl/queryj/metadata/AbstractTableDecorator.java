@@ -1134,7 +1134,7 @@ public abstract class AbstractTableDecorator
 
         Collections.sort(result);
 
-        return new TableAttributesListDecorator(result, this);
+        return new TableAttributesListDecorator(result, this, getCustomSqlProvider(), getDecoratorFactory());
     }
 
     /**
