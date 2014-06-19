@@ -674,7 +674,7 @@ public abstract class AbstractForeignKeyDecorator
      * @return a positive number if the first is considered 'greater' than the second;
      * 0 if they are equal; a negative number otherwise.
      */
-//    @SuppressWarnings("unchecked")
+    @SuppressWarnings("unchecked")
     protected int compareFks(@NotNull final ForeignKey<String> first, @NotNull final ForeignKey<DecoratedString> second)
     {
         final int result;
