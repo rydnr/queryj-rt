@@ -724,6 +724,11 @@ public abstract class AbstractTableListDecorator<V>
     }
 
     /**
+     * Creates a new list decorator instance.
+     * @param items the items.
+     *
+     */
+    /**
      * Compares given instance with the one wrapped by this instance.
      * @param table the table to compare with.
      * @return the result of comparing given instance with the wrapped one.
