@@ -88,8 +88,8 @@ public class ExecuteQueryHandlerTest
 {
     /**
      * Tests whether a valid query executes correctly.
-     * @throws QueryJBuildException
-     * @throws SQLException
+     * throws QueryJBuildException if the test fails.
+     * throws SQLException
      */
     @SuppressWarnings("unchecked")
     @Test
