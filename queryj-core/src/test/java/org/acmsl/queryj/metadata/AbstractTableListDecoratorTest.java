@@ -312,7 +312,7 @@ public class AbstractTableListDecoratorTest
             };
     }
 
-    new AbstractTableListDecorator<Attribute<DecoratedString>>(
+    public static class AbstractTableListDecorator<Attribute<DecoratedString>>(
     attributes, tableDecorator, customSqlProvider, decoratorFactory)
     {
         /**
