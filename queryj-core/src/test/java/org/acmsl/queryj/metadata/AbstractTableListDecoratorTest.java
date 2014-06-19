@@ -249,7 +249,7 @@ public class AbstractTableListDecoratorTest
      * @return the new instance.
      */
     @NotNull
-    protected AbstractTableListDecorator<> createInstance(
+    protected AbstractTableListDecorator<Attribute<DecoratedString>> createInstance(
         @NotNull final List<Attribute<DecoratedString>> attributes,
         @NotNull final TableDecorator tableDecorator,
         @NotNull final MetadataManager metadataManager,
