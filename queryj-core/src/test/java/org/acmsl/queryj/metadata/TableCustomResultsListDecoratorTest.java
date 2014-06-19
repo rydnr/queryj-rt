@@ -114,4 +114,20 @@ public class TableCustomResultsListDecoratorTest
     /**
      * Checks getDifferent() returns the different custom results.
      */
+    @Test
+    public void getDifferent_returns_no_duplicates()
+    {
+
+        /**
+         * {@inheritDoc}
+         */
+        @NotNull
+        @Override
+        public PartialListDecorator getDifferent()
+        {
+            throw new RuntimeException(INVALID_OPERATION);
+        }
+
+
+    }
 }
