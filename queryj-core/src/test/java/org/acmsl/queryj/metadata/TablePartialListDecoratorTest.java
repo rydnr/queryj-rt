@@ -141,7 +141,7 @@ public class TablePartialListDecoratorTest
             new TableAttributesListDecorator(list, tableDecorator, customSqlProvider, decoratorFactory);
         @NotNull final TablePartialListDecorator<Attribute<DecoratedString>> instance =
             new TablePartialListDecorator<>(
-                listDecorator, tableDecorator, Operation.DIFFERENT, );
+                listDecorator, tableDecorator, Operation.DIFFERENT, customSqlProvider, decoratorFactory);
 
         @NotNull final ListDecorator<Attribute<DecoratedString>> unique =
             instance.getDifferent();
