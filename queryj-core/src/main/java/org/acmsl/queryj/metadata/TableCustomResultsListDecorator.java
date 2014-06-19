@@ -151,6 +151,29 @@ public class TableCustomResultsListDecorator
      */
     @NotNull
     @Override
+    public ListDecorator<V> getDifferent()
+    {
+        return getDifferent(getItems());
+    }
+
+    /**
+     * Removes any duplicates in given collection.
+     * @param items the items.
+     * @return the original items, discarding duplicates.
+     */
+    @NotNull
+    protected ListDecorator<V> getDifferent(@NotNull final List<V> items)
+    {
+        @NotNull final ListDecorator<V> result;
+
+
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
     public String toString()
     {
         return
