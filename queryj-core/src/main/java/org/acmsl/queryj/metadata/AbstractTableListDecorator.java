@@ -251,8 +251,7 @@ public abstract class AbstractTableListDecorator<V>
      * @return the original items, discarding duplicates.
      */
     @NotNull
-    @Override
-    public ListDecorator<V> getDifferent()
+    protected ListDecorator<V> getDifferent(@NotNull final )
     {
         return getDifferent(getItems());
     }
