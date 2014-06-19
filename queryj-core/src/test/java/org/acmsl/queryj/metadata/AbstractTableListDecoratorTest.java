@@ -397,7 +397,7 @@ public class AbstractTableListDecoratorTest
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final DecoratorFactory decoratorFactory)
         {
-            return new AbstractTableListDecorator<Attribute<DecoratedString>>()
+            return new MyTableListDecorator<Attribute<DecoratedString>>()
             {
                 @NotNull
                 @Override
