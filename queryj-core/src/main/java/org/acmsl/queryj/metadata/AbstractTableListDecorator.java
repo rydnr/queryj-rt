@@ -246,7 +246,8 @@ public abstract class AbstractTableListDecorator<V>
     }
 
     /**
-     * {@inheritDoc}
+     * Removes any duplicates in given collection.
+     * @param items the items.
      */
     @NotNull
     @Override
