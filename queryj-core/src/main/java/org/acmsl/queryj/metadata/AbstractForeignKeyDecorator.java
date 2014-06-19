@@ -554,6 +554,7 @@ public abstract class AbstractForeignKeyDecorator
      * Checks whether any attribute is a clob.
      * @param attributes the {@link Attribute}s.
      * @param metadataTypeManager the {@link MetadataTypeManager} instance.
+     * @param tableDecoratorHelper the {@link TableDecoratorHelper} instance.
      * @return {@code true} in such case.
      */
     protected boolean containClobs(
