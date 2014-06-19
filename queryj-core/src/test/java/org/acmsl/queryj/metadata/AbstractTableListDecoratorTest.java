@@ -341,10 +341,11 @@ public class AbstractTableListDecoratorTest
 
         /**
          * Specifies the metadata manager.
+         * @param metadataManager the {@link MetadataManager} instance.
          */
         protected final void immutableSetMetadataManager(@NotNull final MetadataManager metadataManager)
         {
-            this.m__MetadataManager = metadataManager
+            this.m__MetadataManager = metadataManager;
         }
         /**
          * {@inheritDoc}
