@@ -121,7 +121,7 @@ public class AbstractTableListDecoratorTest
             new CachingTableDecorator(table, metadataManager, decoratorFactory, customSqlProvider);
 
         @NotNull final AbstractTableListDecorator instance =
-            createInstance(attributes, tableDecorator, metadataManager);
+            createInstance(attributes, tableDecorator, metadataManager, customSqlProvider, decoratorFactory);
 
         Assert.assertTrue(instance.getContainsClobs());
         EasyMock.verify(attribute);
