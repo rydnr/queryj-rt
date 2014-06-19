@@ -929,7 +929,7 @@ update(table, parent, repository, C) ::= <<
  <table.own.minus.ReadOnlyAttributes:{ attr | <attribute_javadoc(attr=attr)>}; separator="\n">
 <endif>
  * @return the number of entities updated.
- */                                                                       F
+ */
 @Override
 public int update(
 <if(parent)>
