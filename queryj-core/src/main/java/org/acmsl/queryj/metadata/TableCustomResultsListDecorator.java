@@ -154,8 +154,7 @@ public class TableCustomResultsListDecorator
     public String toString()
     {
         return
-              "{ \"super\": "
-            + super.toString()
+              "{ \"super\": " + super.toString()
             + ", \"class\": \"TableCustomResultsListDecorator\""
             + ", \"package\": \"org.acmsl.queryj.metadata\" }";
     }
