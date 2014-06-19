@@ -544,6 +544,7 @@ public abstract class AbstractForeignKeyDecorator
      * Checks whether any attribute is a clob.
      * @return {@code true} in such case.
      */
+    @SuppressWarnings("unused")
     public boolean getContainsClobs()
     {
         return containClobs(getAttributes(), getMetadataManager().getMetadataTypeManager(), TableDecoratorHelper.getInstance());
