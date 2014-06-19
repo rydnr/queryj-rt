@@ -289,7 +289,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
      * @param engine the engine.
      * @param parameters the parameter map.
      * @return the package name.
-     * throws QueryJBuildException if the template cannot be created.
+     * throws QueryJBuildException if the packac
      */
     @ThreadSafe
     protected abstract String retrievePackage(
