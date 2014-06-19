@@ -714,7 +714,7 @@ public abstract class AbstractTableListDecorator<V>
             if (   (item != null)
                    && (!list.contains(item)))
             {
-                list.add(customResult);
+                list.add(item);
             }
         }
 
