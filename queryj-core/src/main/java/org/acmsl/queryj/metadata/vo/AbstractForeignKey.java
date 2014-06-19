@@ -402,7 +402,7 @@ public abstract class AbstractForeignKey<V>
     public String toString()
     {
         return
-              "{\"nullable\": " + m__bNullable
+              "{ \"nullable\": " + m__bNullable
             + ", \"fkName\": \"" + m__strFkName + '"'
             + ", \"sourceTableName\": \"" + m__strSourceTableName + '"'
             + ", \"attributes\": [" + Arrays.toString(m__lAttributes.toArray(new Attribute<?>[m__lAttributes.size()])) + ']'
