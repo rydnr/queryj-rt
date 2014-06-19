@@ -733,7 +733,10 @@ public abstract class AbstractTableListDecorator<V>
      */
     @NotNull
     protected ListDecorator<V> createListDecorator(
-        @NotNull final List<V> items, @NotNull final TableDecorator table)
+        @NotNull final List<V> items,
+        @NotNull final TableDecorator table,
+        @NotNull final CustomSqlProvider customSqlProvider,
+        @NotNull final DecoratorFactory decoratorFactory);
     /**
      * Compares given instance with the one wrapped by this instance.
      * @param table the table to compare with.
