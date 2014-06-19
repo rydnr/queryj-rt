@@ -141,7 +141,7 @@ public class TableCustomResultsListDecoratorTest
         @NotNull final TableCustomResultsListDecorator instance =
             new TableCustomResultsListDecorator(list, tableDecorator, customSqlProvider, decoratorFactory);
 
-        @NotNull final ListDecorator<DecoratedString> different = instance.getDifferent();
+        @NotNull final ListDecorator<Result<DecoratedString>> different = instance.getDifferent();
 
         Assert.assertEquals(2, different.size());
     }
