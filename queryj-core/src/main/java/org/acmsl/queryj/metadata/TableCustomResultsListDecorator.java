@@ -171,9 +171,11 @@ public class TableCustomResultsListDecorator
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final DecoratorFactory decoratorFactory)
     {
-        @NotNull final ListDecorator<V> result = new TableCustomResultsListDecorator(list, table, c);
+        @NotNull final ListDecorator<V> result;
 
+        result = new TableCustomResultsListDecorator(list, table, c);
 
+        return result;
     }
 
     /**
