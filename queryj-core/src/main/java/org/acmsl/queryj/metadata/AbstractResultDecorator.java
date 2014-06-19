@@ -161,6 +161,17 @@ public abstract class AbstractResultDecorator<V>
     }
 
     /**
+     * Retrieves the result.
+     * @return such element.
+     */
+    @Override
+    @NotNull
+    public Result<V> getResult()
+    {
+        return m__Result;
+    }
+
+    /**
      * Specifies the custom SQL provider.
      * @param customSqlProvider such provider.
      */
