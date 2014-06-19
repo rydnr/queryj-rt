@@ -97,6 +97,8 @@ public abstract class AbstractTableListDecorator<V>
      * Creates a new instance.
      * @param list the {@link List}.
      * @param table the {@link TableDecorator}.
+     * @param customSqlProvider the {@link CustomSqlProvider} instance.
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
      */
     public AbstractTableListDecorator(
         @NotNull final List<V> list,
