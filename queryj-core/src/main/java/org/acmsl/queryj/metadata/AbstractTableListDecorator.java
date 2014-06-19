@@ -732,7 +732,7 @@ public abstract class AbstractTableListDecorator<V>
      * @return the new list decorator.
      */
     @NotNull
-    protected ListDecorator<V> createListDecorator(
+    protected abstract ListDecorator<V> createListDecorator(
         @NotNull final List<V> items,
         @NotNull final TableDecorator table,
         @NotNull final CustomSqlProvider customSqlProvider,
