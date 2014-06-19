@@ -141,6 +141,6 @@ public class TableCustomResultsListDecoratorTest
         @NotNull final TableCustomResultsListDecorator instance =
             new TableCustomResultsListDecorator(list, tableDecorator, customSqlProvider, decoratorFactory);
 
-        @NotNull final PartialListDecorator
+        @NotNull final PartialListDecorator different =
     }
 }
