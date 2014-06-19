@@ -383,6 +383,7 @@ public class CustomSqlProviderTest
     public static final class SemiMockedAbstractCustomSqlProvider
         extends AbstractCustomSqlProvider
     {
+
         /**
          * The connection flags DAO.
          */
