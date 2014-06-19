@@ -315,6 +315,8 @@ public class AbstractTableListDecoratorTest
     public static class MyTableListDecorator
         extends AbstractTableListDecorator<Attribute<DecoratedString>>
     {
+        public MyTableListDecorator()
+    }
     attributes, tableDecorator, customSqlProvider, decoratorFactory)
     {
         /**
