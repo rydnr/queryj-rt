@@ -176,6 +176,7 @@ public abstract class AbstractResultDecorator<V>
      * @param customResult the {@link Result} to decorate.
      * @return such element.
      */
+    @SuppressWarnings("unchecked")
     @NotNull
     protected Result<DecoratedString> decorate(@NotNull final Result<V> customResult)
     {
