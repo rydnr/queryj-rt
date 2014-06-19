@@ -208,7 +208,7 @@ public class AbstractResultDecoratorTest
         EasyMock.replay(metadataManager);
 
         result =
-            new AbstractResultDecorator(wrappedResult, customSqlProvider, metadataManager, decoratorFactory) {};
+            new AbstractResultDecorator<>(wrappedResult, customSqlProvider, metadataManager, decoratorFactory) {};
 
         return result;
     }
