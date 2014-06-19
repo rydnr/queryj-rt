@@ -909,7 +909,7 @@ public abstract class DatabaseMetaDataRetrievalHandler
      * @param metaData the {@link DatabaseMetaData} instance.
      * @param parameters the parameter map.
      * @return the metadata manager instance.
-     */
+    </code>     */
     @Nullable
     @SuppressWarnings("unchecked")
     protected MetadataManager buildMetadataManager(
