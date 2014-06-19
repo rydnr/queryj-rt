@@ -315,8 +315,9 @@ public class AbstractTableListDecoratorTest
     public static class MyTableListDecorator
         extends AbstractTableListDecorator<Attribute<DecoratedString>>
     {
-        /*
-
+        /**
+         * Creates a new instance.
+         * @param
          */
         public MyTableListDecorator(
             @NotNull final List<Attribute<DecoratedString>> attributes,
