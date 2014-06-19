@@ -326,7 +326,7 @@ public abstract class AbstractResultDecorator<V>
         return
             getProperties(
                 getPropertyRefs(),
-                getResult(),
+                immutableGetResult(),
                 getCustomSqlProvider(),
                 getMetadataManager(),
                 getDecoratorFactory(),
