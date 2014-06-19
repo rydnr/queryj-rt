@@ -869,7 +869,7 @@ public abstract class AbstractResultDecorator<V>
     @Override
     public int hashCode()
     {
-        return hashCode(getResult());
+        return hashCode(immutableGetResult());
     }
 
     /**
