@@ -92,6 +92,7 @@ public class BindQueryParametersHandlerTest
      * Tests whether the handler binds the parameters to the query correctly.
      * @throws Exception if the test fails.
      */
+    @SuppressWarnings("unchecked")
     @Test
     public void binds_the_parameters_to_the_query()
         throws QueryJBuildException, SQLException
