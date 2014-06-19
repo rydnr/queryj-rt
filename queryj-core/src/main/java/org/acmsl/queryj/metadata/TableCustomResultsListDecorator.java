@@ -151,16 +151,6 @@ public class TableCustomResultsListDecorator
      */
     @NotNull
     @Override
-    public ListDecorator<Result<DecoratedString>> getDifferent()
-    {
-        return super.getDifferent();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @NotNull
-    @Override
     public String toString()
     {
         return
