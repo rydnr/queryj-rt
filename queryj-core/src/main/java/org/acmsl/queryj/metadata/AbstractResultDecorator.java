@@ -196,7 +196,6 @@ public abstract class AbstractResultDecorator<V>
             {
                 result.add(propertyRef);
             }
-            result.add();
         }
 
         return result;
