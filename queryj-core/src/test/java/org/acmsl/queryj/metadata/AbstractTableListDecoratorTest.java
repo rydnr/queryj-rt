@@ -227,7 +227,7 @@ public class AbstractTableListDecoratorTest
             new CachingTableDecorator(table, metadataManager, decoratorFactory, customSqlProvider);
 
         @NotNull final AbstractTableListDecorator instance =
-            createInstance(attributes, tableDecorator, metadataManager);
+            createInstance(attributes, tableDecorator, metadataManager, customSqlProvider, decoratorFactory);
 
         @NotNull final List<DecoratedString> types = instance.getAttributeTypes();
         Assert.assertFalse(types.isEmpty());
