@@ -99,7 +99,7 @@ import java.util.List;
 public class CheckResultSetGettersWorkForDefinedPropertiesHandlerTest
 {
     /**
-     * Checks whether it executes the resultSet getters for defined properies.
+     * Checks whether it executes the resultSet getters for defined properties.
      * @throws QueryJBuildException
      * @throws SQLException
      */
