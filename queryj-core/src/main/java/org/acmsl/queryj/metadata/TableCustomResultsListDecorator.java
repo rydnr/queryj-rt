@@ -179,6 +179,9 @@ public class TableCustomResultsListDecorator
         {
             if (   (customResult != null)
                 && (!list.contains(customResult)))
+            {
+
+            }
         }
         result = new TableCustomResultsListDecorator(list, table, c);
 
