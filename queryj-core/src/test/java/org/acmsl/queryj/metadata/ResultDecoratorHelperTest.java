@@ -44,6 +44,7 @@ import org.acmsl.queryj.customsql.PropertyElement;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.metadata.vo.Attribute;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -130,7 +131,8 @@ public class ResultDecoratorHelperTest
         properties.add(property3);
         properties.add(property4);
 
-        @NotNull final AbstractResultDecorator result = AbstractResultDecoratorTest.setupResultDecorator(properties);
+        @NotNull final AbstractResultDecorator<Attribute<DecoratedString>> result =
+            AbstractResultDecoratorTest.setupResultDecorator(properties);
 
         Assert.assertTrue(instance.containNotNullProperties(result.getProperties(), result.getMetadataTypeManager()));
     }
