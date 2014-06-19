@@ -225,7 +225,7 @@ public class TableAttributesListDecorator
     }
 
     /**
-     * Removes any duplicates in given collection.
+     * {@inheritDoc}
      * @param items the items.
      * @param table the {@link TableDecorator table}.
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
