@@ -235,16 +235,6 @@ public abstract class AbstractTableListDecorator<V>
                 this, getTable(), Operation.ONLY, getCustomSqlProvider(), getDecoratorFactory());
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    @NotNull
-    @Override
-    public ListDecorator<V> getDifferent()
-    {
-        throw new RuntimeException(INVALID_OPERATION);
-    }
-
     // TableDecorator implementation
 
     /**
