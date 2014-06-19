@@ -311,4 +311,58 @@ public class AbstractTableListDecoratorTest
                 }
             };
     }
+
+    new AbstractTableListDecorator<Attribute<DecoratedString>>(
+    attributes, tableDecorator, customSqlProvider, decoratorFactory)
+    {
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public Attribute<DecoratedString> getStaticAttribute()
+        {
+            return null;
+        }
+
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public boolean isRelationship()
+        {
+            return false;
+        }
+
+        /**
+         * {@inheritDoc}
+         */
+        @NotNull
+        @Override
+        public MetadataManager getMetadataManager()
+        {
+            return metadataManager;
+        }
+
+        /**
+         * {@inheritDoc}
+         */
+        @NotNull
+        @Override
+        protected ListDecorator<Attribute<DecoratedString>> createListDecorator(
+        @NotNull final List<Attribute<DecoratedString>> items,
+        @NotNull final TableDecorator table,
+        @NotNull final CustomSqlProvider customSqlProvider,
+        @NotNull final DecoratorFactory decoratorFactory)
+        {
+            return new AbstractTableListDecorator<Attribute<DecoratedString>>()
+            {
+                @NotNull
+                @Override
+                protected ListDecorator<Attribute<DecoratedString>> createListDecorator(@NotNull final List<Attribute<DecoratedString>> items, @NotNull final TableDecorator table, @NotNull final CustomSqlProvider customSqlProvider, @NotNull final DecoratorFactory decoratorFactory)
+                {
+                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+            };
+        }
+    };
 }
