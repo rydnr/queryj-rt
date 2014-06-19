@@ -96,6 +96,10 @@ public class CacheValidationOutcomeHandlerTest
     @Rule
     public TemporaryFolder tempFolder = new TemporaryFolder();
 
+    /**
+     * Checks
+     * @throws QueryJBuildException
+     */
     @Test
     public void caches_validation_outcome_to_disk()
         throws QueryJBuildException
