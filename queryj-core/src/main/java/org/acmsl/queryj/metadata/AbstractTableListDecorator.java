@@ -700,7 +700,7 @@ public abstract class AbstractTableListDecorator<V>
      */
     @NotNull
     protected ListDecorator<Result<DecoratedString>> getDifferent(
-        @NotNull final List<Result<DecoratedString>> items,
+        @NotNull final List<V> items,
         @NotNull final TableDecorator table,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final DecoratorFactory decoratorFactory)
