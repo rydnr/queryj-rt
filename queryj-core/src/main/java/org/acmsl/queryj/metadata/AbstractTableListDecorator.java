@@ -245,19 +245,6 @@ public abstract class AbstractTableListDecorator<V>
         throw new RuntimeException(INVALID_OPERATION);
     }
 
-    /**
-     * Removes any duplicates in given collection.
-     * @param items the items.
-     * @return the original items, discarding duplicates.
-     */
-    @NotNull
-    protected ListDecorator<V> getDifferent(@NotNull final List<V> items)
-    {
-        @NotNull final ListDecorator<V> result;
-
-
-    }
-
     // TableDecorator implementation
 
     /**
