@@ -460,7 +460,7 @@ public class CachingDecoratorFactory
      * @param object the object to compare to.
      * @return the result of such comparison.
      * object prevents it from being compared to this Object.
-     *
+     * thows
      */
     public int compareTo(@Nullable final Object object)
         throws  ClassCastException
