@@ -941,7 +941,7 @@ public abstract class AbstractTableDecorator
             result = new ArrayList<>(0);
         }
 
-        return new TableAttributesListDecorator(result, this);
+        return new TableAttributesListDecorator(result, this, getCustomSqlProvider(), getDecoratorFactory());
     }
 
     /**
