@@ -232,7 +232,7 @@ public class BindQueryParametersHandlerTest
     }
 
     /**
-     * Tests whether
+     * Tests whether retrieveStatementSetterMethod() works for boolean parameters.
      * @throws Exception
      */
     @Test
