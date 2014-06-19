@@ -228,7 +228,7 @@ public abstract class AbstractTableDecorator
         immutableSetReadOnlyAttributes(
             new TableAttributesListDecorator(
                 filterReadOnlyAttributes(
-                    decorateAttributes(attributes, metadataManager, decoratorFactory)), this));
+                    decorateAttributes(attributes, metadataManager, decoratorFactory)),this));
         immutableSetExternallyManagedAttributes(
             new TableAttributesListDecorator(
                 filterExternallyManagedAttributes(decorateAttributes(attributes, metadataManager, decoratorFactory)), this));
