@@ -88,18 +88,4 @@ public interface ListDecorator<T>
     @NotNull
     @SuppressWarnings("unused")
     PartialListDecorator getOnly();
-
-    /**
-     * Removes duplicates from the list.
-     * @return the list, with no duplicates.
-     */
-    @NotNull
-    @SuppressWarnings("unused")
-    ListDecorator<T> getDifferent();
-
-    /**
-     * The "invalid operation" message.
-     */
-    @NotNull
-    String INVALID_OPERATION = "invalid operation";
 }
