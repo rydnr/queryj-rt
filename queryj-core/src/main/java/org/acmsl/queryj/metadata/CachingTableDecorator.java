@@ -691,7 +691,9 @@ public class CachingTableDecorator
             result = super.getChildAttributes();
             if (result == null)
             {
-                result = new TableAttributesListDecorator(new ArrayList<>(0), this);
+                result =
+                    new TableAttributesListDecorator(
+                        new ArrayList<>(0), this, getCustomSqlProvider(), getDecoratorFactory());
             }
 
             setCachedChildAttributes(result);
