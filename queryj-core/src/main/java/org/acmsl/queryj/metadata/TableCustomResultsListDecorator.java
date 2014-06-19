@@ -154,6 +154,7 @@ public class TableCustomResultsListDecorator
      * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @return the original items, discarding duplicates.
      */
+    @Override
     @NotNull
     protected ListDecorator<Result<DecoratedString>> createListDecorator(
         @NotNull final List<Result<DecoratedString>> items,
