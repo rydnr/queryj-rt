@@ -299,7 +299,15 @@ public class AbstractTableListDecoratorTest
                     @NotNull final CustomSqlProvider customSqlProvider,
                     @NotNull final DecoratorFactory decoratorFactory)
                 {
-                    return new
+                    return new AbstractTableListDecorator<Attribute<DecoratedString>>()
+                    {
+                        @NotNull
+                        @Override
+                        protected ListDecorator<Attribute<DecoratedString>> createListDecorator(@NotNull final List<Attribute<DecoratedString>> items, @NotNull final TableDecorator table, @NotNull final CustomSqlProvider customSqlProvider, @NotNull final DecoratorFactory decoratorFactory)
+                        {
+                            return null;  //To change body of implemented methods use File | Settings | File Templates.
+                        }
+                    }
                 }
             };
     }
