@@ -240,6 +240,6 @@ public class TableAttributesListDecorator
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final DecoratorFactory decoratorFactory)
     {
-        return new TableCustomResultsListDecorator(items, table, customSqlProvider, decoratorFactory);
+        return new TableAttributesListDecorator(items, table, customSqlProvider, decoratorFactory);
     }
 }
