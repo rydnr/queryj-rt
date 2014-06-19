@@ -87,7 +87,7 @@ import java.sql.SQLException;
 public class ExecuteQueryHandlerTest
 {
     /**
-     * Tests whether a
+     * Tests whether a valid query executes correctly.
      * @throws QueryJBuildException
      * @throws SQLException
      */
