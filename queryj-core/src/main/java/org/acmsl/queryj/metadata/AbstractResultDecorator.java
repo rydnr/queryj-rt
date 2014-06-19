@@ -188,7 +188,7 @@ public abstract class AbstractResultDecorator<V>
         else
         {
             result =
-                new
+                new ResultElement<DecoratedString>()
         }
 
         return result;
