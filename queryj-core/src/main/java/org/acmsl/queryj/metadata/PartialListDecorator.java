@@ -1,5 +1,5 @@
 /*
-                        queryj
+                        QueryJ Core
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -42,7 +42,7 @@ import org.checkthread.annotations.ThreadSafe;
 
 /**
  * Identifies partial list decorators, i.e. {@link ListDecorator}s
- * linked with a certain operation in {@ListDecorator} and expecting
+ * linked with a certain operation in {@link ListDecorator} and expecting
  * a call to another method of the collection-container class to
  * fully define the final list.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>

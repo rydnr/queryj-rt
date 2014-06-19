@@ -73,7 +73,7 @@ sourceImpl(table, engine, C) ::= <<
   basePackageName=C.project_package,
   package=C.package,
   jdbcOperationsSubpackageName=typeInitMap.jdbcOperationsSubpackageName,
-  customResults=table.customResults.different,
+  customResults=table.differentCustomResults,
   voSubpackageName=typeInitMap.voSubpackageName,
   voName=table.name.voName,
   voFactorySubpackageName=typeInitMap.voFactorySubpackageName,
@@ -112,7 +112,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 <import_attribute_types(table=table, useHeader=false, nullableOnly=true)>
-<table.customSelects:{ cs| <import_custom_select_types(cs=cs, C=C)>}; separator="">
+<table.customSelects:{ cs| <import_custom_select_types(cs=cs, C=C)>}; separator="\n">
 import java.util.Map;
 
 /*
@@ -219,13 +219,15 @@ import <basePackageName>.<voFactorySubpackageName>.core.<table.name.voName>Facto
   basePackageName=basePackageName,
   baseDAOSubpackageName=baseDAOSubpackageName,
   referredVOName=fk.source.name.voName)>}; separator="\n">
-<table.customResults.different:{ cr  | <custom_select_import(result=cr, package=basePackageName, baseDAOSubpackageName=baseDAOSubpackageName, C=C)>}; separator="\n">
+<table.differentCustomResults:{ cr  | <custom_select_import(result=cr, package=basePackageName, baseDAOSubpackageName=baseDAOSubpackageName, C=C)>}; separator="\n">
 
 /*
  * Importing V24-Commons classes.
  */
 import com.ventura24.commons.dao.DAOListener;
-<table.customResults.different:{ cr  | <if(cr.wrappingASingleProperty)><cr.properties:{p | <if(p.typeSupportedOutOfTheBox)>import com.ventura24.commons.dao.<p.objectType>ResultSetMultipleExtractor;<endif>}; separator="\n"><endif>}; separator="\n">
+<if(table.differentCustomResults)
+ ><table.differentCustomResults:{ cr  | <if(cr.wrappingASingleProperty)><cr.properties:{p | <if(p.typeSupportedOutOfTheBox)>import com.ventura24.commons.dao.<p.objectType>ResultSetMultipleExtractor;<endif>}; separator="\n"><endif>}; separator="\n">
+<endif>
 import com.ventura24.commons.dao.V24JdbcTemplate;
 import com.ventura24.commons.dao.V24PreparedStatementCreator;
 import com.ventura24.commons.dao.V24PreparedStatementSetter;
@@ -1567,7 +1569,7 @@ em_attribute_value_retrieval(attr, table, C) ::= <<
    transactionTemplate.execute(
        new V24QueryTransactionCallback\<<engine.name><table.name.voName>DAO, Map\<String, <attr.objectType>\>>(
            <attr.name.uncapitalized>Sql,
-           new <attr.name.capitalized>ResultSetExtractor(<attr.name.uncapitalized>Sql, daoListener),
+           new <attr.name.capitalized>ResultSetSingleExtractor(<attr.name.uncapitalized>Sql, daoListener),
            this));
 
 final <attr.javaType> <attr.name.uncapitalized> = <attr.name.uncapitalized>Map.get("<attr.name.lowercased>");
@@ -1683,15 +1685,15 @@ attribute_resultset_extractor_class(table, repository, attr, C) ::= <<
  * Extracts \<i><table.name>.<attr.name>\</i> information using a {@link ResultSet}.
 <class_common_javadoc(template="org/acmsl/queryj/templates/DAO.stg", C=C)>
  */
-public static class <attr.name.capitalized>ResultSetSingleExtractor
+public static class <attr.name.capitalized>ResultSetExtractor
     extends  V24ResultSetSingleExtractor\<Map\<String, ?\>>
 {
     /**
-     * Constructs a new {@code <attr.name.capitalized>ResultSetExtractor}.
+     * Constructs a new {@code <attr.name.capitalized>ResultSetSingleExtractor}.
      * @param sql the original SQL.
      * @param daoListener the dao listener.
      */
-    public <attr.name.capitalized>ResultSetExtractor(
+    public <attr.name.capitalized>SingleColumnResultSetSingleExtractor(
         <notnull(C=C)>final String sql,
         <nullable(C=C)>final DAOListener daoListener)
     {
@@ -1701,9 +1703,27 @@ public static class <attr.name.capitalized>ResultSetSingleExtractor
     /**
      * Extracts \<i><table.name>.<attr.name>\</i> information from given result set.
      * @param resultSet the result set.
-     * @return the information retrieved from the database.
+     * @param sql the SQL used.
+     * @param daoListener the {@link DAOListener} instance.
+     * @return the data extracted.
      */
     @Override
+    <notnull(C=C)>
+    protected Map\<String, ?> extractData(
+        <notnull(C=C)>final ResultSet resultSet,
+        <notnull(C=C)>final String sql,
+        <notnull(C=C)>final DAOListener daoListener)
+    throws  SQLException,
+            DataAccessException
+    {
+        return extractData(resultSet, getSql(), daoListener);
+    }
+
+    /**
+     * Extracts \<i><table.name>.<attr.name>\</i> information from given result set.
+     * @param resultSet the result set.
+     * @return the information retrieved from the database.
+     */
     @SuppressWarnings("unchecked")
     <notnull(C=C)>
     protected Map\<String, ?> extractValue(<notnull(C=C)>final ResultSet resultSet)
