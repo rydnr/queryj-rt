@@ -361,6 +361,7 @@ public class AbstractTableListDecoratorTest
          * Retrieves the metadata manager.
          * @return the {@link MetadataManager} instance.
          */
+        @NotNull
         protected MetadataManager getMetadataManager()
         {
             return this.m__MetadataManager;
