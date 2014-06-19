@@ -289,13 +289,7 @@ public class AbstractTableListDecoratorTest
                 }
 
                 /**
-                 * Creates a new list decorator instance.
-                 *
-                 * @param items             the items.
-                 * @param table             the {@link org.acmsl.queryj.metadata.TableDecorator table}.
-                 * @param customSqlProvider the {@link org.acmsl.queryj.customsql.CustomSqlProvider} instance.
-                 * @param decoratorFactory  the {@link org.acmsl.queryj.metadata.DecoratorFactory} instance.
-                 * @return the new list decorator.
+                 * {@inheritDoc}
                  */
                 @NotNull
                 @Override
