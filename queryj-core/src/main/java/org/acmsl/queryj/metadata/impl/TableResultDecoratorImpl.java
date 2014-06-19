@@ -152,6 +152,7 @@ public class TableResultDecoratorImpl<V>
                 {
                     result = false;
                 }
+            }
             else
                 {
                     result = false;
