@@ -164,7 +164,7 @@ public class TableCustomResultsListDecorator
     @NotNull
     protected ListDecorator<V> getDifferent(@NotNull final List<V> items)
     {
-        @NotNull final ListDecorator<V> result = new TableCustomResultsListDecorator();
+        @NotNull final ListDecorator<V> result = new TableCustomResultsListDecorator(list, table, c);
 
 
     }
