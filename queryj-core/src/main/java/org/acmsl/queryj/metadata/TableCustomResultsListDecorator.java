@@ -165,7 +165,7 @@ public class TableCustomResultsListDecorator
      * @return the original items, discarding duplicates.
      */
     @NotNull
-    protected ListDecorator<Result<DecoratedString>> getDifferent(
+    protected ListDecorator<Result<DecoratedString>> createListDecorator(
         @NotNull final List<Result<DecoratedString>> items,
         @NotNull final TableDecorator table,
         @NotNull final CustomSqlProvider customSqlProvider,
