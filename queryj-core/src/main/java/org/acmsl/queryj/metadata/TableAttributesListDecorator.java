@@ -242,16 +242,4 @@ public class TableAttributesListDecorator
     {
         return new TableCustomResultsListDecorator(items, table, customSqlProvider, decoratorFactory);
     }
-
-    /**
-     * Retrieves all attributes, including parent's.
-     * @return such attributes.
-     */
-    @NotNull
-    @Override
-    public ListDecorator<Attribute<DecoratedString>> getDifferent()
-    {
-        throw new RuntimeException(INVALID_OPERATION);
-    }
-
 }
