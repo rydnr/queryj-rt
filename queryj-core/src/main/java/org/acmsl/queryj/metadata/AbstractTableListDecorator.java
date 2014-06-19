@@ -726,8 +726,13 @@ public abstract class AbstractTableListDecorator<V>
     /**
      * Creates a new list decorator instance.
      * @param items the items.
-     *
+     * @param table the {@link TableDecorator table}.
+     * @param customSqlProvider the {@link CustomSqlProvider} instance.
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
+     * @return the new list decorator.
      */
+    @NotNull
+    protected ListDecorator<V> createListDecorator(@NotNull final List<V> items, )
     /**
      * Compares given instance with the one wrapped by this instance.
      * @param table the table to compare with.
