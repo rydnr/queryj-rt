@@ -315,6 +315,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
      * @param allowDuplicates whether to remove duplicates.
      * @return such templates.
      * reason.
+     * throws QueryJBuildException if the package is unavailable.
      */
     @NotNull
     protected List<Result<String>> retrieveCustomResults(
