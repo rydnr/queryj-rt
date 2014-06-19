@@ -242,7 +242,7 @@ public abstract class AbstractTableListDecorator<V>
     @Override
     public ListDecorator<V> getDifferent()
     {
-        throw new RuntimeException(INVALID_OPERATION);
+        return getDifferent(getItems());
     }
 
     // TableDecorator implementation
