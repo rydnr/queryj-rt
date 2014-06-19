@@ -685,7 +685,7 @@ public abstract class AbstractTableListDecorator<V>
      */
     @NotNull
     @Override
-    public ListDecorator<Result<DecoratedString>> getDifferent()
+    public ListDecorator<V> getDifferent()
     {
         return getDifferent(getItems(), getTable(), getCustomSqlProvider(), getDecoratorFactory());
     }
