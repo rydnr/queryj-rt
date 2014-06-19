@@ -760,7 +760,8 @@ public class TablePartialListDecorator<V>
         else if (tableDecoratorHelper.isListOfCustomResults(items))
         {
             result =
-                (ListDecorator<V>) new TableCustomResultsListDecorator((List<Result<DecoratedString>>) aux, table);
+                (ListDecorator<V>)
+                    new TableCustomResultsListDecorator((List<Result<DecoratedString>>) aux, table);
         }
         else
         {
