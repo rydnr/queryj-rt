@@ -318,7 +318,7 @@ public class AbstractTableListDecoratorTest
         /**
          * The metadata manager.
          */
-        private
+        private MetadataManager m__MetadataManager;
 
         /**
          * Creates a new instance.
