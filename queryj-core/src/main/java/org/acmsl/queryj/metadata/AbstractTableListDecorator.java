@@ -133,7 +133,7 @@ public abstract class AbstractTableListDecorator<V>
     {
         return
             new TablePartialListDecorator<>(
-                this, getTable(), Operation.PLUS, getCustomSqlProvider());
+                this, getTable(), Operation.PLUS, getCustomSqlProvider(), getDecoratorFac);
     }
 
     /**
