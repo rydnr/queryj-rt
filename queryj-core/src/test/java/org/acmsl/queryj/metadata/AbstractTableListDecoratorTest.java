@@ -315,6 +315,9 @@ public class AbstractTableListDecoratorTest
     public static class MyTableListDecorator
         extends AbstractTableListDecorator<Attribute<DecoratedString>>
     {
+        /*
+
+         */
         public MyTableListDecorator(
             @NotNull final List<Attribute<DecoratedString>> attributes,
             @NotNull final TableDecorator tableDecorator,
