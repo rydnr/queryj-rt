@@ -223,4 +223,16 @@ public class TableAttributesListDecorator
     {
         throw new RuntimeException(INVALID_OPERATION);
     }
+
+    /**
+     * Retrieves all attributes, including parent's.
+     * @return such attributes.
+     */
+    @NotNull
+    @Override
+    public ListDecorator<Attribute<DecoratedString>> getAllAttributes()
+    {
+        throw new RuntimeException(INVALID_OPERATION);
+    }
+
 }
