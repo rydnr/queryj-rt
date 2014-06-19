@@ -107,7 +107,6 @@ public class BindQueryParametersHandlerTest
 
         sql.setValue("select sysdate from dual where ? = 'A'");
 
-        @SuppressWarnings("unchecked")
         @NotNull final Parameter parameter = new ParameterElement<String, String>("id", 1, "id", "String", "1");
         sql.add(new ParameterRefElement("id"));
 
