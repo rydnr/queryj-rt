@@ -98,6 +98,11 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public class CheckResultSetGettersWorkForDefinedPropertiesHandlerTest
 {
+    /**
+     * Checks whether it executes
+     * @throws QueryJBuildException
+     * @throws SQLException
+     */
     @Test
     public void executes_resultset_getters_for_defined_properties()
         throws QueryJBuildException,
