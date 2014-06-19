@@ -168,7 +168,7 @@ public class CachingDecoratorFactory
         @NotNull final MetadataManager metadataManager)
     {
         return
-            new CachingResultDecorator<V>(
+            new CachingResultDecorator(
                 result, customSqlProvider, metadataManager, this);
     }
 
