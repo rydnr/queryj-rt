@@ -185,6 +185,8 @@ public abstract class AbstractResultDecorator<V>
         {
 
         }
+
+        return result;
     }
 
     /**
