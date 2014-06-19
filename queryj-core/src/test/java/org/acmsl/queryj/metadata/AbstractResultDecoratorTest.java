@@ -185,7 +185,7 @@ public class AbstractResultDecoratorTest
         @NotNull final String classValue,
         @NotNull final List<Property<String>> properties)
     {
-        @NotNull final AbstractResultDecorator result;
+        @NotNull final AbstractResultDecorator<String> result;
 
         @NotNull final Result<String> wrappedResult = new ResultElement<>(id, classValue);
 
