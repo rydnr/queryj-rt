@@ -775,7 +775,8 @@ public class TablePartialListDecorator<V>
                     new TableCustomResultsListDecorator(
                         (List<Result<DecoratedString>>) aux,
                         table,
-                        customS);
+                        customSqlProvider,
+                        decoratorFactory);
         }
         else
         {
