@@ -327,9 +327,11 @@ public class AbstractTableListDecoratorTest
             @NotNull final List<Attribute<DecoratedString>> attributes,
             @NotNull final TableDecorator tableDecorator,
             @NotNull final CustomSqlProvider customSqlProvider,
-            @NotNull final DecoratorFactory decoratorFactory)
+            @NotNull final DecoratorFactory decoratorFactory,
+            @NotNull final MetadataManager metadataManager)
         {
             super(attributes, tableDecorator, customSqlProvider, decoratorFactory);
+            immutableSetMetadataManager(metadataManager);
         }
 
         /**
