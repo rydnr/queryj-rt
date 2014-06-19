@@ -1691,7 +1691,7 @@ public static class <attr.name.capitalized>ResultSetExtractor
      * @param sql the original SQL.
      * @param daoListener the dao listener.
      */
-    public <attr.name.capitalized>ResultSetSingleExtractor(
+    public <attr.name.capitalized>ResultSetExtractor(
         <notnull(C=C)>final String sql,
         <nullable(C=C)>final DAOListener daoListener)
     {
