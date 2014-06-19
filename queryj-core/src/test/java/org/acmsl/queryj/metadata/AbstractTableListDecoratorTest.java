@@ -262,7 +262,7 @@ public class AbstractTableListDecoratorTest
     }
 
     /**
-     * A dummy implementation of {@link AbstractTableListDecorator}
+     * A dummy implementation of {@link AbstractTableListDecorator}.
      */
     public static class MyTableListDecorator
         extends AbstractTableListDecorator<Attribute<DecoratedString>>
