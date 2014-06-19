@@ -361,6 +361,7 @@ public class AbstractTableListDecoratorTest
          * Retrieves the metadata manager.
          * @return the {@link MetadataManager} instance.
          */
+        @Override
         @NotNull
         public MetadataManager getMetadataManager()
         {
@@ -383,16 +384,6 @@ public class AbstractTableListDecoratorTest
         public boolean isRelationship()
         {
             return false;
-        }
-
-        /**
-         * {@inheritDoc}
-         */
-        @NotNull
-        @Override
-        public MetadataManager getMetadataManager()
-        {
-            return metadataManager;
         }
 
         /**
