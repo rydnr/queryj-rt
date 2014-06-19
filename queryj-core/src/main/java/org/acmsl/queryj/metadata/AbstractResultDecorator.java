@@ -183,7 +183,6 @@ public abstract class AbstractResultDecorator<V>
 
         if (customResult.getId() instanceof DecoratedString)
         {
-            @SuppressWarnings("unchecked")
             result = (Result<DecoratedString>) customResult;
         }
         else
