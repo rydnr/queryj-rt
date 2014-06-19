@@ -153,7 +153,7 @@ public class TableCustomResultsListDecorator
     @Override
     public ListDecorator<V> getDifferent()
     {
-        return getDifferent(getItems());
+        return getDifferent(getItems(), getTable(), getCustomSqlProvider(), getDecoratorFactory());
     }
 
     /**
