@@ -62,6 +62,7 @@ import org.checkthread.annotations.ThreadSafe;
  * Importing JDK classes.
  */
 import java.sql.Types;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -677,6 +678,49 @@ public abstract class AbstractTableListDecorator<V>
     public boolean isRelationship()
     {
         return getTable().isRelationship();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public ListDecorator<Result<DecoratedString>> getDifferent()
+    {
+        return getDifferent(getItems(), getTable(), getCustomSqlProvider(), getDecoratorFactory());
+    }
+
+    /**
+     * Removes any duplicates in given collection.
+     * @param items the items.
+     * @param table the {@link TableDecorator table}.
+     * @param customSqlProvider the {@link CustomSqlProvider} instance.
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
+     * @return the original items, discarding duplicates.
+     */
+    @NotNull
+    protected ListDecorator<Result<DecoratedString>> getDifferent(
+        @NotNull final List<Result<DecoratedString>> items,
+        @NotNull final TableDecorator table,
+        @NotNull final CustomSqlProvider customSqlProvider,
+        @NotNull final DecoratorFactory decoratorFactory)
+    {
+        @NotNull final ListDecorator<Result<DecoratedString>> result;
+
+        @NotNull final List<Result<DecoratedString>> list = new ArrayList<>(items.size());
+
+        for (@Nullable final Result<DecoratedString> customResult : items)
+        {
+            if (   (customResult != null)
+                   && (!list.contains(customResult)))
+            {
+                list.add(customResult);
+            }
+        }
+
+        result = new TableCustomResultsListDecorator(list, table, customSqlProvider, decoratorFactory);
+
+        return result;
     }
 
     /**
