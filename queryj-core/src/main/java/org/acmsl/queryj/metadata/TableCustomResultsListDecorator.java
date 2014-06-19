@@ -173,7 +173,7 @@ public class TableCustomResultsListDecorator
     {
         @NotNull final ListDecorator<Result<DecoratedString>> result;
 
-        @NotNull final List<Result<DecoratedString>> list = new ArrayList<>(items.size());
+        @NotNull final List<Result<DecoratedString>> list = new ArrayList<>;
 
         for ()
         result = new TableCustomResultsListDecorator(list, table, c);
