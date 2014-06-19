@@ -173,6 +173,7 @@ public abstract class AbstractResultDecorator<V>
 
     /**
      * Decorates given result.
+     * @param customResult the {@link Result} to decorate.
      * @return such element.
      */
     @Override
