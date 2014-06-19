@@ -394,6 +394,10 @@ public abstract class AbstractForeignKey<V>
         return result;
     }
 
+    /**
+     * {@inheritDoc}
+     * @return
+     */
     @NotNull
     @Override
     public String toString()
