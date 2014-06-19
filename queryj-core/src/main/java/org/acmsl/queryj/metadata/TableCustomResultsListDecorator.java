@@ -146,6 +146,7 @@ public class TableCustomResultsListDecorator
         return new TableResultDecoratorImpl<>(item, table, customSqlProvider, decoratorFactory);
     }
 
+
     /**
      * {@inheritDoc}
      */
