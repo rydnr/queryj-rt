@@ -699,7 +699,7 @@ public abstract class AbstractTableListDecorator<V>
      * @return the original items, discarding duplicates.
      */
     @NotNull
-    protected ListDecorator<Result<DecoratedString>> getDifferent(
+    protected ListDecorator<V> getDifferent(
         @NotNull final List<V> items,
         @NotNull final TableDecorator table,
         @NotNull final CustomSqlProvider customSqlProvider,
