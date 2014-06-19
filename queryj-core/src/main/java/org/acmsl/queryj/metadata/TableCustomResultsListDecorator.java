@@ -159,7 +159,9 @@ public class TableCustomResultsListDecorator
     /**
      * Removes any duplicates in given collection.
      * @param items the items.
-     * @param table the {@link TableDecorator}
+     * @param table the {@link TableDecorator table}.
+     * @param customSqlProvider the {@link CustomSqlProvider} instance.
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @return the original items, discarding duplicates.
      */
     @NotNull
