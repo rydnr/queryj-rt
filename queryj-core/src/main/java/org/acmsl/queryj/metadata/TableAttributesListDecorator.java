@@ -38,6 +38,7 @@ package org.acmsl.queryj.metadata;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.metadata.vo.Attribute;
@@ -82,9 +83,11 @@ public class TableAttributesListDecorator
      */
     public TableAttributesListDecorator(
         @NotNull final List<Attribute<DecoratedString>> list,
-        @NotNull final TableDecorator table)
+        @NotNull final TableDecorator table,
+        @NotNull final CustomSqlProvider customSqlProvider,
+        @NotNull final DecoratorFactory decoratorFactory)
     {
-        super(list, table);
+        super(list, table, );
     }
 
     // TableDecorator implementation
