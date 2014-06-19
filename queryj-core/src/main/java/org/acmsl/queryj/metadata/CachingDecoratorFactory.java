@@ -162,7 +162,7 @@ public class CachingDecoratorFactory
      */
     @NotNull
     @Override
-    public ResultDecorator createDecorator(
+    public ResultDecorator<V> createDecorator(
         @NotNull final Result<String> result,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager)
