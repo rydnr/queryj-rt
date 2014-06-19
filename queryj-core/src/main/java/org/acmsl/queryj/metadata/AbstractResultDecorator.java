@@ -179,7 +179,7 @@ public abstract class AbstractResultDecorator<V>
     @NotNull
     protected Result<DecoratedString> decorate(@NotNull final Result<V> customResult)
     {
-        @NotNull Result<DecoratedString> result;
+        @NotNull final Result<DecoratedString> result;
 
         if (customResult.getId() instanceof DecoratedString)
         {
