@@ -710,8 +710,8 @@ public abstract class AbstractTableListDecorator<V>
         return
               "{ \"super\": " + super.toString()
             + ", \"table\": \"" + m__Table.getName()
-            + ", \"customSqlProvider\": " + this.m__CustomSqlProvider
-            + ", \"decoratorFactory\": " + this.m__DecoratorFactory
+            + ", \"customSqlProvider\": " + this.m__CustomSqlProvider.hashCode()
+            + ", \"decoratorFactory\": " + this.m__DecoratorFactory.hashCode()
             + ", \"class\": " + AbstractTableListDecorator.class.getSimpleName() + '"'
             + ", \"package\": \"org.acmsl.queryj.metadata\""
             + "\" }";
