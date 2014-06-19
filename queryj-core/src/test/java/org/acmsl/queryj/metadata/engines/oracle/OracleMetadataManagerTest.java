@@ -104,6 +104,9 @@ public class OracleMetadataManagerTest
         Assert.assertTrue(instance.isInvalidColumnNameException(new RuntimeException("wrapper", invalidColumnName)));
     }
 
+    /**
+     * Checks whether it identifies "invalid column name" exceptions.
+     */
     @Test
     public void identifies_invalid_column_type_exceptions()
     {
