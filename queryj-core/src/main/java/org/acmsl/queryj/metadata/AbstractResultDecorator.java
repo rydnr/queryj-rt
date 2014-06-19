@@ -176,7 +176,6 @@ public abstract class AbstractResultDecorator<V>
      * @param customResult the {@link Result} to decorate.
      * @return such element.
      */
-    @Override
     @NotNull
     public Result<V> getResult()
     {
