@@ -143,6 +143,7 @@ public class TableCustomResultsListDecorator
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final DecoratorFactory decoratorFactory)
     {
+        this.getDifferent();
         return new TableResultDecoratorImpl<>(item, table, customSqlProvider, decoratorFactory);
     }
 
