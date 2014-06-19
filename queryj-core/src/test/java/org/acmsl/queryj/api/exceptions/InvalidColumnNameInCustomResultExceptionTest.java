@@ -108,7 +108,7 @@ public class InvalidColumnNameInCustomResultExceptionTest
     }
 
     /**
-     * Tests whether the message is internationalized for implicit results.
+     * Tests whether the message is internationalized for explicit results.
      * throws MissingResourceException
      */
     @Test
