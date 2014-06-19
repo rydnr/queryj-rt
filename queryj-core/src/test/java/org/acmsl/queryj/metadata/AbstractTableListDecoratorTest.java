@@ -318,7 +318,10 @@ public class AbstractTableListDecoratorTest
         /**
          * Creates a new instance.
          * @param attributes the attributes.
-         * /param
+         * @param tableDecorator the table decorator.
+         * @param customSqlProvider the {@link CustomSqlProvider} instance.
+         * @param decoratorFactory the {@link DecoratorFactory} instance.
+         * @param metadataManager the {@link MetadataManager} instance.
          */
         public MyTableListDecorator(
             @NotNull final List<Attribute<DecoratedString>> attributes,
