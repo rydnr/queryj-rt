@@ -209,11 +209,6 @@ endif>
         <table.all.minus.readOnlyAttributes:{ attr | <attribute_method_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
 <else>
         <table.own.minus.readOnlyAttributes:{ attr | <attribute_method_parameter_declaration(attribute=attr, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
-=======
-        <table.all.minus.readOnly:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
-<else>
-        <table.own.minus.readOnly:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
->>>>>>> Stashed changes
 <endif>
       throws DataAccessException;
 
