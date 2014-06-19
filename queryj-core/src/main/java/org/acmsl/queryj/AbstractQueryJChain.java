@@ -65,7 +65,7 @@ import org.checkthread.annotations.ThreadSafe;
 /**
  * Manages a sequential chain of actions within QueryJ.
  * @param <C> the command type.
- * @param <CH> che </CH>
+ * @param <CH> che command handler type</CH>
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro Armendariz</a>
  */
 @ThreadSafe
