@@ -181,7 +181,7 @@ public abstract class AbstractResultDecorator<V>
     {
         @NotNull Result<V> result;
 
-        if ()
+        if (customResult.getId() instanceof DecoratedString)
     }
 
     /**
