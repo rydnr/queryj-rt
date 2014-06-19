@@ -1687,7 +1687,7 @@ public static class <attr.name.capitalized>ResultSetExtractor
     extends  V24ResultSetSingleExtractor\<Map\<String, ?\>>
 {
     /**
-     * Constructs a new {@code <attr.name.capitalized>ResultSetSingleExtractor}.
+     * Constructs a new {@code <attr.name.capitalized>ResultSetExtractor}.
      * @param sql the original SQL.
      * @param daoListener the dao listener.
      */
