@@ -234,7 +234,8 @@ public abstract class AbstractTableDecorator
                 decoratorFactory));
         immutableSetExternallyManagedAttributes(
             new TableAttributesListDecorator(
-                filterExternallyManagedAttributes(decorateAttributes(attributes, metadataManager, decoratorFactory)), this));
+                filterExternallyManagedAttributes(
+                    decorateAttributes(attributes, metadataManager, decoratorFactory)), this));
         immutableSetForeignKeys(
             decorate(foreignKeys, metadataManager, decoratorFactory, customSqlProvider));
         immutableSetMetadataManager(metadataManager);
