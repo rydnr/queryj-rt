@@ -236,6 +236,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
      * @param result the result.
      * @param properties the properties.
      * @param parameters the parameters.
+     * throws QueryJBuildException if the templates cannot be built.
      * @return the template.
      */
     @Nullable
