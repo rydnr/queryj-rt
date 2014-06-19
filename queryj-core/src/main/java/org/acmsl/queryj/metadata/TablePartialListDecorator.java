@@ -99,9 +99,13 @@ public class TablePartialListDecorator<V>
     public TablePartialListDecorator(
         @NotNull final ListDecorator<V> listDecorator,
         @NotNull final TableDecorator table,
-        @NotNull final Operation operation)
+        @NotNull final Operation operation,
+        @NotNull final CustomSqlProvider customSqlProvider,
+        @NotNull final DecoratorFactory decoratorFactory)
     {
         super(listDecorator, operation, table);
+        immutableSetCustomSqlProvider(customSqlProvider);
+        immutableSetDecoratorFactory(decoratorFactory);
     }
 
     /**
