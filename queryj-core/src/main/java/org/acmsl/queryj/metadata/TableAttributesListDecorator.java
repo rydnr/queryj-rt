@@ -225,6 +225,25 @@ public class TableAttributesListDecorator
     }
 
     /**
+     * Removes any duplicates in given collection.
+     * @param items the items.
+     * @param table the {@link TableDecorator table}.
+     * @param customSqlProvider the {@link CustomSqlProvider} instance.
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
+     * @return the original items, discarding duplicates.
+     */
+    @Override
+    @NotNull
+    protected ListDecorator<Result<DecoratedString>> createListDecorator(
+        @NotNull final List<Result<DecoratedString>> items,
+        @NotNull final TableDecorator table,
+        @NotNull final CustomSqlProvider customSqlProvider,
+        @NotNull final DecoratorFactory decoratorFactory)
+    {
+        return new TableCustomResultsListDecorator(items, table, customSqlProvider, decoratorFactory);
+    }
+
+    /**
      * Retrieves all attributes, including parent's.
      * @return such attributes.
      */
