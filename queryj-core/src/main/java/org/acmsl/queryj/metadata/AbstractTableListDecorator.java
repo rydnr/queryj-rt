@@ -718,7 +718,7 @@ public abstract class AbstractTableListDecorator<V>
             }
         }
 
-        result = new TableCustomResultsListDecorator(list, table, customSqlProvider, decoratorFactory);
+        result = createListDecorator()new TableCustomResultsListDecorator(list, table, customSqlProvider, decoratorFactory);
 
         return result;
     }
