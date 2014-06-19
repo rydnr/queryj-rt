@@ -226,11 +226,6 @@ public class TableAttributesListDecorator
 
     /**
      * {@inheritDoc}
-     * @param items the items.
-     * @param table the {@link TableDecorator table}.
-     * @param customSqlProvider the {@link CustomSqlProvider} instance.
-     * @param decoratorFactory the {@link DecoratorFactory} instance.
-     * @return the original items, discarding duplicates.
      */
     @Override
     @NotNull
