@@ -155,7 +155,7 @@ public abstract class AbstractResultDecorator<V>
      */
     @Override
     @NotNull
-    protected Result<V> getResult()
+    protected final Result<V> immutableGetResult()
     {
         return m__Result;
     }
