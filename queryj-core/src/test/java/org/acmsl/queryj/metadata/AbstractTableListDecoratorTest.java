@@ -258,7 +258,7 @@ public class AbstractTableListDecoratorTest
     {
         return
             new MyTableListDecorator(
-                attributes, tableDecorator, customSqlProvider, decoratorFactory)
+                attributes, tableDecorator, customSqlProvider, decoratorFactory, metadataManager);
             {
                 /**
                  * {@inheritDoc}
