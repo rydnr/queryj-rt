@@ -196,6 +196,10 @@ public class BindQueryParametersHandlerTest
         testPrimitiveBody(Long.class);
     }
 
+    /**
+     * Tests whether retrieveStatementSetterMethod() works for boolean parameters.
+     * @throws Exception if the test fails.
+     */
     @Test
     public void retrieve_statement_setter_method_works_for_double_parameter()
         throws Exception
