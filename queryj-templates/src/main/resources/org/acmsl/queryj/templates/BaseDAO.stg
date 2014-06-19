@@ -206,7 +206,7 @@ endif>
      */
     int update(
 <if(table.parent)>
-        <table.own.minus.readOnly.minus.externallyManagedAttributes:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
+        <table.own.minus.readOnly:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
 <else>
         <table.own.minus.readOnly.minus.externallyManagedAttributes:{ a | <attribute_method_parameter_declaration(attribute=a, usePrefix=false, prefix="", C=C)>}; separator=",\n">)
 <endif>
