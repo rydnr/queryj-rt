@@ -146,6 +146,15 @@ public class TableCustomResultsListDecorator
         return new TableResultDecoratorImpl<>(item, table, customSqlProvider, decoratorFactory);
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public ListDecorator<Result<DecoratedString>> getDifferent()
+    {
+        return super.getDifferent();
+    }
 
     /**
      * {@inheritDoc}
