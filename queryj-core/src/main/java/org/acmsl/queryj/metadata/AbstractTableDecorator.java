@@ -1314,6 +1314,7 @@ public abstract class AbstractTableDecorator
      * Retrieves the static values of given table.
      * @param tableName the table name.
      * @param metadataManager the {@link MetadataManager} instance.
+     * @param tableDAO the {@link TableDAO} instance.
      * @param decoratorFactory the decorator factory.
      * @return such information.
      */
