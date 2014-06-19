@@ -168,7 +168,7 @@ public abstract class AbstractResultDecorator<V>
     @NotNull
     public Result<DecoratedString> getResult()
     {
-        return getResult(immutableGetResult());
+        return decorate(immutableGetResult());
     }
     /**
      * Retrieves the result.
