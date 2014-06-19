@@ -248,7 +248,7 @@ public abstract class AbstractTableListDecorator<V>
     /**
      * Removes any duplicates in given collection.
      * @param items the items.
-     * @return the original items,
+     * @return the original items, discarding duplicates.
      */
     @NotNull
     @Override
