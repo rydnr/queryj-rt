@@ -200,7 +200,7 @@ endif>
 <if(parent)>
      <table.all.minus.readOnly:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
 <else>
-     <table.own.minus.readOnly.minus.externallyManagedAttributes:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
+     <table.own.minus.readOnly:{ a | <attribute_javadoc(attr=a)>}; separator="\n">
 <endif>
      * @return the number of {@code <table.name>} rows updated.
      */
