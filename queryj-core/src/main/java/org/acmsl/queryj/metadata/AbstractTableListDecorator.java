@@ -106,6 +106,8 @@ public abstract class AbstractTableListDecorator<V>
     {
         super(list);
         immutableSetTable(table);
+        immutableSetCustomSqlProvider(customSqlProvider);
+        immutableSetDecoratorFactory(decoratorFactory);
     }
 
     /**
