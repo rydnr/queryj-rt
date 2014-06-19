@@ -354,6 +354,7 @@ public abstract class AbstractQueryJCommandHandler
      * Retrieves the {@link Connection} instance.
      * @param parameters the parameter map.
      * @return such instance.
+     * throws QueryJBuildException if the
      */
     @NotNull
     protected Connection retrieveConnection(@NotNull final QueryJCommand parameters)
