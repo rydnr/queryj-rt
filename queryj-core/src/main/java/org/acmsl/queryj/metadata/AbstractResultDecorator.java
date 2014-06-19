@@ -169,6 +169,14 @@ public abstract class AbstractResultDecorator<V>
     public Result<V> getResult()
     {
     }
+    /**
+     * Retrieves the result.
+     * @return such element.
+     */
+    @Override
+    @NotNull
+    public Result<V> getResult()
+    {
         @NotNull Result<V> result;
 
         if ()
