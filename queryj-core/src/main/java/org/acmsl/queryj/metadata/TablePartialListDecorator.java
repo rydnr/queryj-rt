@@ -468,7 +468,7 @@ public class TablePartialListDecorator<V>
                 aux.retainAll(table.getPrimaryKey());
             }
 
-            result = new TableAttributesListDecorator(aux, table);
+            result = new TableAttributesListDecorator(aux, table, getCustomSqlProvider(), getDecoratorFactory());
         }
         else
         {
