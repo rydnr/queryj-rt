@@ -194,7 +194,7 @@ public abstract class AbstractResultDecorator<V>
 
             for (@Nullable final PropertyRef propertyRef : customResult.getPropertyRefs())
             {
-                result.add()
+                result.add(propertyRef);
             }
             result.add();
         }
