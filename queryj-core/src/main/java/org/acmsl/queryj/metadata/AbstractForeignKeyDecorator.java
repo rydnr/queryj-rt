@@ -104,7 +104,7 @@ public abstract class AbstractForeignKeyDecorator
     {
         super(
             new DecoratedString(foreignKey.getSourceTableName()),
-            new ArrayList<>(0),
+            new ArrayList<Attribute<DecoratedString>>(0),
             new DecoratedString(foreignKey.getTargetTableName()),
             foreignKey.isNullable());
         immutableSetAttributes(
