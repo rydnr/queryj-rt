@@ -154,10 +154,7 @@ public class TableAttributesListDecoratorTest
 
         @NotNull final TableAttributesListDecorator instance =
             new TableAttributesListDecorator(
-                Arrays.asList(intAttribute, dateAttribute),
-                tableDecorator,
-                customSqlProvider,
-                CachingDecoratorFactory.getInstance()) {};
+                Arrays.asList(intAttribute, dateAttribute), tableDecorator) {};
 
         @NotNull final List<DecoratedString> types = instance.getAttributeTypes();
 

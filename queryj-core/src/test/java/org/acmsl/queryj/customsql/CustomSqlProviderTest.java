@@ -384,11 +384,6 @@ public class CustomSqlProviderTest
         extends AbstractCustomSqlProvider
     {
         /**
-         * The serial version id.
-         */
-        private static final long serialVersionUID = -6681507565441668149L;
-
-        /**
          * The connection flags DAO.
          */
         private SqlConnectionFlagsDAO m__ConnectionFlagsDAO;

@@ -50,15 +50,11 @@ import java.util.List;
 
 /**
  * Provides the common logic for foreign key implementations.
- * @param <V> the type of the foreign key.
- * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro Armendariz</a>
+ * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  */
 public abstract class AbstractForeignKey<V>
     implements ForeignKey<V>
 {
-    /**
-     * The serial version id.
-     */
     private static final long serialVersionUID = -671217258820687779L;
 
     /**
@@ -395,20 +391,16 @@ public abstract class AbstractForeignKey<V>
         return result;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String toString()
     {
         return
-              "{ \"nullable\": " + m__bNullable
+              "{ \"class\": \"" + AbstractForeignKey.class.getName() + '"'
+            + ", \"nullable\": " + m__bNullable
             + ", \"fkName\": \"" + m__strFkName + '"'
             + ", \"sourceTableName\": \"" + m__strSourceTableName + '"'
             + ", \"attributes\": [" + Arrays.toString(m__lAttributes.toArray(new Attribute<?>[m__lAttributes.size()])) + ']'
-            + ", \"targetTableName\": \"" + m__strTargetTableName + "\" "
-            + ", \"class\": \"AbstractForeignKey\""
-            + ", \"package\": \"org.acmsl.queryj.metadata\" }";
+            + ", \"targetTableName\": \"" + m__strTargetTableName + "\" }";
     }
 }

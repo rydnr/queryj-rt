@@ -90,16 +90,11 @@ public interface ListDecorator<T>
     PartialListDecorator getOnly();
 
     /**
-     * Removes duplicates from the list.
-     * @return the list, with no duplicates.
+     * Retains certain items from the list.
+     * @return a partial decorator expecting a new set, and would then represent
+     * the items retained in given list.
      */
     @NotNull
     @SuppressWarnings("unused")
-    ListDecorator<T> getDifferent();
-
-    /**
-     * The "invalid operation" message.
-     */
-    @NotNull
-    String INVALID_OPERATION = "invalid operation";
+    PartialListDecorator getDifferent();
 }

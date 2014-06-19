@@ -162,7 +162,7 @@ public class CachingDecoratorFactory
      */
     @NotNull
     @Override
-    public ResultDecorator<DecoratedString> createDecorator(
+    public ResultDecorator createDecorator(
         @NotNull final Result<String> result,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager)
@@ -219,9 +219,9 @@ public class CachingDecoratorFactory
      */
     @NotNull
     @Override
-    public <V> PropertyDecorator createDecorator(
+    public PropertyDecorator createDecorator(
         @NotNull final Property<String> property,
-        @NotNull final Result<V> result,
+        @NotNull final Result<String> result,
         @NotNull final CustomSqlProvider customSqlProvider,
         @NotNull final MetadataManager metadataManager)
     {
@@ -276,7 +276,7 @@ public class CachingDecoratorFactory
     /**
      * Retrieves the decorated list of attributes.
      * @param attributes the attributes to decorate.
-     * @param metadataManager the {@link MetadataManager} instance.
+     * @param metadataManager the <code>MetadataManager</code> instance.
      * @return the decorated version of the attribute list.
      * @param <V> the original attribute type.
      */
@@ -460,7 +460,6 @@ public class CachingDecoratorFactory
      * @param object the object to compare to.
      * @return the result of such comparison.
      * object prevents it from being compared to this Object.
-     * thows ClassCastException if both objects are incompatible.
      */
     public int compareTo(@Nullable final Object object)
         throws  ClassCastException

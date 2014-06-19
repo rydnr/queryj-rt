@@ -147,7 +147,7 @@ public class CachingTableDecorator
     /**
      * The cached list of different results.
      */
-    private ListDecorator<Result<DecoratedString>> m__lCachedCustomResults;
+    private List<Result<DecoratedString>> m__lCachedDifferentCustomResults;
 
     /**
      * The cached list of read-only attributes.
@@ -361,6 +361,29 @@ public class CachingTableDecorator
         }
 
         return result;
+    }
+
+    /**
+     * Creates a table decorator.
+     * @param parentTable the table name.
+     * @param metadataManager the {@link MetadataManager} instance.
+     * @param decoratorFactory the {@link DecoratorFactory} instance.
+     * @param customSqlProvider the {@link CustomSqlProvider} instance.
+     * @return such decorator.
+     */
+    @SuppressWarnings("unused")
+    protected TableDecorator createTableDecorator(
+        @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> parentTable,
+        @NotNull final MetadataManager metadataManager,
+        @NotNull final DecoratorFactory decoratorFactory,
+        @NotNull final CustomSqlProvider customSqlProvider)
+    {
+        return
+            new CachingTableDecorator(
+                parentTable,
+                metadataManager,
+                decoratorFactory,
+                customSqlProvider);
     }
 
     /**
@@ -691,9 +714,7 @@ public class CachingTableDecorator
             result = super.getChildAttributes();
             if (result == null)
             {
-                result =
-                    new TableAttributesListDecorator(
-                        new ArrayList<>(0), this, getCustomSqlProvider(), getDecoratorFactory());
+                result = new TableAttributesListDecorator(new ArrayList<>(0), this);
             }
 
             setCachedChildAttributes(result);
@@ -940,47 +961,47 @@ public class CachingTableDecorator
     }
 
     /**
-     * Specifies the cached custom results.
+     * Specifies the cached different custom results.
      * @param results such results.
      */
-    protected final void immutableSetCachedCustomResults(@NotNull final ListDecorator<Result<DecoratedString>> results)
+    protected final void immutableSetCachedDifferentCustomResults(@NotNull final List<Result<DecoratedString>> results)
     {
-        this.m__lCachedCustomResults = results;
+        this.m__lCachedDifferentCustomResults = results;
     }
 
     /**
-     * Specifies the cached custom results.
+     * Specifies the cached different custom results.
      * @param results such results.
      */
-    protected void setCachedCustomResults(@NotNull final ListDecorator<Result<DecoratedString>> results)
+    protected void setCachedDifferentCustomResults(@NotNull final List<Result<DecoratedString>> results)
     {
-        immutableSetCachedCustomResults(results);
+        immutableSetCachedDifferentCustomResults(results);
     }
 
     /**
-     * Retrieves the cached custom results.
+     * Retrieves the cached different custom results.
      * @return such results.
      A*/
     @Nullable
-    public ListDecorator<Result<DecoratedString>> getCachedCustomResults()
+    public List<Result<DecoratedString>> getCachedDifferentCustomResults()
     {
-        return this.m__lCachedCustomResults;
+        return this.m__lCachedDifferentCustomResults;
     }
 
     /**
-     * Retrieves the list of results defined for this table (using the referring custom-selects).
+     * Retrieves the list of different results defined for this table (using the referring custom-selects).
      * @return such list.
      */
     @NotNull
     @Override
-    public ListDecorator<Result<DecoratedString>> getCustomResults()
+    public List<Result<DecoratedString>> getDifferentCustomResults()
     {
-        ListDecorator<Result<DecoratedString>> result = getCachedCustomResults();
+        List<Result<DecoratedString>> result = getCachedDifferentCustomResults();
 
         if (result == null)
         {
-            result = super.getCustomResults();
-            setCachedCustomResults(result);
+            result = super.getDifferentCustomResults();
+            setCachedDifferentCustomResults(result);
         }
 
         return result;
@@ -1022,7 +1043,7 @@ public class CachingTableDecorator
             + ", \"cachedForeignKeys\": " + m__lCachedForeignKeys
             + ", \"cachedParentForeignKey\": " + m__CachedParentForeignKey
             + ", \"cachedExternallyManagedAttributes\": " + m__lCachedExternallyManagedAttributes
-            + ", \"cachedDifferentCustomResults\": " + m__lCachedCustomResults
+            + ", \"cachedDifferentCustomResults\": " + m__lCachedDifferentCustomResults
             + " }";
     }
 }
