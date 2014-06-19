@@ -232,7 +232,7 @@ public class BindQueryParametersHandlerTest
     }
 
     /**
-     *
+     * Tests whether
      * @throws Exception
      */
     @Test
