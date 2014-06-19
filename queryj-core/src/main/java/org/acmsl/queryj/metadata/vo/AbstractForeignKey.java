@@ -52,7 +52,6 @@ import java.util.List;
  * Provides the common logic for foreign key implementations.
  * @param <V> the type of the foreign key.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro Armendariz</a>
- *
  */
 public abstract class AbstractForeignKey<V>
     implements ForeignKey<V>
