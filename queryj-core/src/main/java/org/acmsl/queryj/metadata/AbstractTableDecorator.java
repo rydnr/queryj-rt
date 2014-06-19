@@ -2141,6 +2141,7 @@ public abstract class AbstractTableDecorator
 
     /**
      * Retrieves all attributes, including parent's.
+     * @param attributes the {@link }
      * @return such attributes.
      */
     @NotNull
