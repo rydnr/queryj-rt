@@ -74,6 +74,7 @@ import org.junit.runners.JUnit4;
 /*
  * Importing JDK classes.
  */
+import java.sql.Types;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -160,7 +161,7 @@ public class TableResultDecoratorImplTest
                 customSqlProvider);
 
         @NotNull final Attribute<String> attribute1 =
-            new AttributeIncompleteValueObject()
+            new AttributeIncompleteValueObject("name", Types.BIGINT)
         @NotNull final Sql<String> sql =
             new SqlElement<>(
                 "sqlId",
