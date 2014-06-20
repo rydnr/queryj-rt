@@ -260,7 +260,7 @@ public class TableResultDecoratorImplTest
                 "table",
                 "name",
                 "select",
-                Cardinality.SINGLE,
+                Cardinality.MULTIPLE,
                 "oracle",
                 false,
                 false,
