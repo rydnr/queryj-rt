@@ -168,11 +168,12 @@ public class TableResultDecoratorImplTest
                 false,
                 "description");
 
-        List<Sql<String>> queries = Arrays.asList(sql);
-        queries.add()
+        @NotNull final List<Sql<String>> queries = Arrays.asList(sql);
+
         @NotNull final SqlDAO sqlDAO = EasyMock.createNiceMock(SqlDAO.class);
-        EasyMock.expect(sqlDAO.findByResultId("resultId")).andReturn(Arrays.asList(sql));
-        EasyMock.expect(sqlDAO.findByDAO("table")).andRe
+        EasyMock.expect(sqlDAO.findByResultId("resultId")).andReturn(queries);
+        EasyMock.expect(sqlDAO.findByDAO("table")).andReturn(queries);
+
         EasyMock.expect(customSqlProvider.getSqlDAO()).andReturn(sqlDAO);
         EasyMock.replay(sqlDAO);
         EasyMock.replay(customSqlProvider);
