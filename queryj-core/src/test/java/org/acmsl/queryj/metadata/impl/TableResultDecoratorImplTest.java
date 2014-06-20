@@ -135,7 +135,7 @@ public class TableResultDecoratorImplTest
 
         @NotNull final TableDecorator table =
             new MyTableDecorator(
-                new TableIncompleteValueObject()
+                new TableIncompleteValueObject("table", "comment"),
             )
             {
                 @Nullable
