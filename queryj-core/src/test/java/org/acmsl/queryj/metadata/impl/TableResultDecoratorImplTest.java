@@ -41,7 +41,7 @@ package org.acmsl.queryj.metadata.impl;
 import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing checkthread.org annotations.
+ * Importing JUnit/EasyMock classes.
  */
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
