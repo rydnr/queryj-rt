@@ -52,11 +52,11 @@ import org.acmsl.queryj.metadata.vo.Table;
 import org.acmsl.queryj.metadata.vo.TableIncompleteValueObject;
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /*
  * Importing JUnit/EasyMock classes.
  */
-import org.jetbrains.annotations.Nullable;
 import org.easymock.EasyMock;
 import org.junit.Test;
 import org.junit.runner.RunWith;
