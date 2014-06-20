@@ -185,6 +185,6 @@ public class TableResultDecoratorImplTest
                 customSqlProvider,
                 decoratorFactory);
 
-        instance.
+        instance.isSingleBeingUsed()
     }
 }
