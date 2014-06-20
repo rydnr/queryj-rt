@@ -89,10 +89,6 @@ public class TableResultDecoratorImplTest
         {
             super(
                 table,
-                primaryKey,
-                attributes,
-                isStatic,
-                voDecorated,
                 metadataManager,
                 decoratorFactory,
                 customSqlProvider);
