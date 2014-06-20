@@ -41,6 +41,7 @@ package org.acmsl.queryj.metadata.impl;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.ResultElement;
+import org.acmsl.queryj.customsql.ResultRefElement;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.Sql.Cardinality;
 import org.acmsl.queryj.customsql.SqlElement;
@@ -192,7 +193,7 @@ public class TableResultDecoratorImplTest
                 false,
                 "description");
 
-        sql.setResultRef();
+        sql.setResultRef(new ResultRefElement());
         @NotNull final List<Sql<String>> queries = Arrays.asList(sql);
 
         @NotNull final SqlDAO sqlDAO = EasyMock.createNiceMock(SqlDAO.class);
