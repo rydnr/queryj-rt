@@ -141,8 +141,8 @@ public class TableResultDecoratorImplTest
             new MyTableDecorator(
                 new TableIncompleteValueObject("table", "comment"),
                 metadataManager,
-                customSqlProvider,
-                decoratorFactory);
+                decoratorFactory,
+        customSqlProvider,
 
         @NotNull final TableResultDecoratorImpl<String> instance =
             new TableResultDecoratorImpl<String>(
