@@ -72,6 +72,7 @@ public class TableResultDecoratorImplTest
     /**
      *
      */
+    public static
     /**
      * Checks whether isSingleBeingUsed() is correct depending on whether
      * the associated table has queries returning one sole instance of
