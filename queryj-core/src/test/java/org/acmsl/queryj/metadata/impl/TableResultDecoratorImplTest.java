@@ -161,7 +161,7 @@ public class TableResultDecoratorImplTest
                 customSqlProvider);
 
         @NotNull final Attribute<String> attribute1 =
-            new AttributeIncompleteValueObject("name", Types.BIGINT, "long")
+            new AttributeIncompleteValueObject("name", Types.BIGINT, "long", "table")
         @NotNull final Sql<String> sql =
             new SqlElement<>(
                 "sqlId",
