@@ -76,7 +76,7 @@ public class TableResultDecoratorImplTest
     public static class MyTableDecorator
         extends AbstractTableDecorator
     {
-
+        public MyTableDecorator()
         /**
          * {@inheritDoc}
          */
