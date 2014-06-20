@@ -1,0 +1,4 @@
+* 2014/06/20
+** ListDecorator refactoring:
+*** Implement TableResultDecorator.isSingleBeingUsed : 1 ->
+*** Implement TableResultDecorator.isMultipleBeingUsed : 1 ->
