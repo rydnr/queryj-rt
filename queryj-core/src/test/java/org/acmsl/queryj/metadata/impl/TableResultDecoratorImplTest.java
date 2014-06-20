@@ -153,7 +153,8 @@ public class TableResultDecoratorImplTest
                 customSqlProvider);
 
         @NotNull final Sql sql =
-            new SqlElement("sqlId")
+            new SqlElement(
+                "sqlId",)
         @NotNull final TableResultDecoratorImpl<String> instance =
             new TableResultDecoratorImpl<>(
                 result,
