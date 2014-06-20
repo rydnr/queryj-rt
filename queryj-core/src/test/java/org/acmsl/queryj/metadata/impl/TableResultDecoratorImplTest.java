@@ -85,7 +85,8 @@ public class TableResultDecoratorImplTest
             final boolean isStatic,
             final boolean voDecorated,
             @NotNull final MetadataManager metadataManager,
-            @NotNull final DecoratorFactory decoratorFactory, @NotNull final CustomSqlProvider customSqlProvider)
+            @NotNull final DecoratorFactory decoratorFactory,
+            @NotNull final CustomSqlProvider customSqlProvider)
         {
             return new MyTableDecorator()
         }
