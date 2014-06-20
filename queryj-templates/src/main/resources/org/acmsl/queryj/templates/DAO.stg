@@ -238,17 +238,6 @@ import com.ventura24.commons.dao.V24ResultSetSingleExtractor;
 
 >>
 
-custom_select_import(result, package, baseDAOSubpackageName, C) ::= <<
-<!
- Generates the imports for given result.
- @param result the custom result.
- @param package the base package.
- @param baseDAOSubpackageName the base DAO subpackage name.
- @param C the context.
-!>
-<custom_select_return_import(result=result, package=package, baseDAOSubpackageName=baseDAOSubpackageName, C=C)>
->>
-
 foreignkey_statementsetter_import(
   basePackageName,
   fkssSubpackageName,
