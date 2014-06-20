@@ -53,6 +53,7 @@ import org.acmsl.queryj.metadata.SqlDAO;
 import org.acmsl.queryj.metadata.TableDecorator;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.AttributeIncompleteValueObject;
+import org.acmsl.queryj.metadata.vo.ForeignKey;
 import org.acmsl.queryj.metadata.vo.Table;
 import org.acmsl.queryj.metadata.vo.TableIncompleteValueObject;
 
@@ -156,8 +157,9 @@ public class TableResultDecoratorImplTest
 
         @NotNull final List<Attribute<String>> primaryKey = new ArrayList<>(1);
         @NotNull final List<Attribute<String>> attributes = primaryKey;
+        @NotNull final List<ForeignKey<String>> foreignKeys = new ArrayList<>()(0)
         @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> wrappedTable =
-            new TableValueObject("table", "comment", pk, attributes, foreignKeys, null, null, false, false);
+            new TableValueObject("table", "comment", primaryKey, attributes, foreignKeys, null, null, false, false);
 
         @NotNull final TableDecorator table =
             new MyTableDecorator(
