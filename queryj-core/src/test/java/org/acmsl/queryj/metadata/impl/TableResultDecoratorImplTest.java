@@ -61,6 +61,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.util.List;
+
 /**
  * Tests for {@link TableResultDecoratorImpl}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
@@ -80,6 +82,7 @@ public class TableResultDecoratorImplTest
          * {@inheritDoc}
          */
         public MyTableDecorator(
+            @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table,
             @Nullable final String parentTable,
             @NotNull final ListDecorator<Attribute<String>> primaryKey,
             @NotNull final ListDecorator<Attribute<String>> attributes,
