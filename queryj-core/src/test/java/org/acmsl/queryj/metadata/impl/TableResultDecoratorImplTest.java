@@ -82,7 +82,8 @@ public class TableResultDecoratorImplTest
             @Nullable final String parentTable,
             @NotNull final ListDecorator<Attribute<String>> primaryKey,
             @NotNull final ListDecorator<Attribute<String>> attributes,
-            final boolean isStatic,final boolean voDecorated, @NotNull final MetadataManager metadataManager, @NotNull final DecoratorFactory decoratorFactory, @NotNull final CustomSqlProvider customSqlProvider)
+            final boolean isStatic,
+            final boolean voDecorated, @NotNull final MetadataManager metadataManager, @NotNull final DecoratorFactory decoratorFactory, @NotNull final CustomSqlProvider customSqlProvider)
         {
             return new MyTableDecorator()
         }
