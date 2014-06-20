@@ -79,7 +79,7 @@ public class TableResultDecoratorImplTest
         extends AbstractTableDecorator
     {
         /**
-         * {@inheritDoc}
+         * Creates a new instance.
          */
         public MyTableDecorator(
             @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table,
