@@ -111,7 +111,7 @@ public class TableResultDecoratorImplTest
         {
             return
                 new MyTableDecorator(
-                    parentTable,
+                    getTable(),
                     primaryKey,
                     attributes,
                     isStatic,
