@@ -463,7 +463,7 @@ if(result.wrappingASingleProperty)><
 else><
   if(result.classValue)
    >import <result.classValue>;
-<  if(result.singleBeingUsed)>import <C.project_package>.<baseDAOSubpackageName>.<result.simpleClassValue.lowercased>.<result.simpleClassValue>ResultSetSingleExtractor;<end
+<  if(result.singleBeingUsed)>import <C.project_package>.<baseDAOSubpackageName>.<result.simpleClassValue.lowercased>.<result.simpleClassValue>ResultSetSingleExtractor;<endif>
 import <C.project_package>.<baseDAOSubpackageName>.<result.simpleClassValue.lowercased>.<result.simpleClassValue>ResultSetMultipleExtractor;<
   endif><
 endif>
