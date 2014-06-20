@@ -464,7 +464,7 @@ else><
   if(result.classValue)
    >import <result.classValue>;
 <  if(result.singleBeingUsed)>import <C.project_package>.<baseDAOSubpackageName>.<result.simpleClassValue.lowercased>.<result.simpleClassValue>ResultSetSingleExtractor;
-<endif>
+<  endif>
 <  if(result.multipleBeingUsed)>import <C.project_package>.<baseDAOSubpackageName>.<result.simpleClassValue.lowercased>.<result.simpleClassValue>ResultSetMultipleExtractor;
 <endif><
   endif><
