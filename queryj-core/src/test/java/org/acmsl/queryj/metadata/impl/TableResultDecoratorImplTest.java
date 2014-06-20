@@ -112,10 +112,6 @@ public class TableResultDecoratorImplTest
             return
                 new MyTableDecorator(
                     getTable(),
-                    primaryKey,
-                    attributes,
-                    isStatic,
-                    voDecorated,
                     metadataManager,
                     decoratorFactory,
                     customSqlProvider);
