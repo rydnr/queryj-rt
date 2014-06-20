@@ -72,7 +72,7 @@ public class TableResultDecoratorImplTest
         @NotNull final Result<String> result;
         @NotNull final TableDecorator table;
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
-        @NotNull final DecoratorFactory decoratorFactory;
+        @NotNull final DecoratorFactory decoratorFactory = EasyMock.createNiceMock(DecoratorFactory.class);
 
         @NotNull final TableResultDecoratorImpl<String> instance =
             new TableResultDecoratorImpl<String>(
