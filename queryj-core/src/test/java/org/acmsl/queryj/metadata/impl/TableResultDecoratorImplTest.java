@@ -76,6 +76,7 @@ public class TableResultDecoratorImplTest
     public static class MyTableDecorator
         extends AbstractTableDecorator
     {
+
         @Nullable
         @Override
         protected Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>> createTableDecorator(
