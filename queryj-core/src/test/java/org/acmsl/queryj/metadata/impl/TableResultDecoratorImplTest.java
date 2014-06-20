@@ -80,7 +80,7 @@ public class TableResultDecoratorImplTest
         @Override
         protected Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>> createTableDecorator(@Nullable final String parentTable, @NotNull final ListDecorator<Attribute<String>> primaryKey, @NotNull final ListDecorator<Attribute<String>> attributes, final boolean isStatic, final boolean voDecorated, @NotNull final MetadataManager metadataManager, @NotNull final DecoratorFactory decoratorFactory, @NotNull final CustomSqlProvider customSqlProvider)
         {
-            return null;  //To change body of implemented methods use File | Settings | File Templates.
+            return new MyTableDecorator()
         }
     }
     /**
