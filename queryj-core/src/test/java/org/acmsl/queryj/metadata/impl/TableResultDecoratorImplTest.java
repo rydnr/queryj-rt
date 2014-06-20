@@ -214,4 +214,77 @@ public class TableResultDecoratorImplTest
 
         Assert.assertTrue(instance.isSingleBeingUsed());
     }
+
+
+    /**
+     * Checks whether isSingleBeingUsed() is correct depending on whether
+     * the associated table has queries returning one sole instance of
+     * the custom result.
+     */
+    @Test
+    public void isSingleBeingUsed_returns_true_if_it_is_being_used_by_the_table_custom_selects()
+    {
+        @NotNull final Result<String> result =
+            new ResultElement<>("resultId", "com.foo.bar.MyResult");
+
+        @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
+        EasyMock.expect(metadataManager.getMetadataTypeManager()).andReturn(JdbcMetadataTypeManager.getInstance());
+        EasyMock.replay(metadataManager);
+
+        @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
+        @NotNull final DecoratorFactory decoratorFactory = CachingDecoratorFactory.getInstance();
+
+        @NotNull final List<Attribute<String>> primaryKey = new ArrayList<>(1);
+        @NotNull final List<Attribute<String>> attributes = primaryKey;
+        @NotNull final List<ForeignKey<String>> foreignKeys = new ArrayList<>(0);
+
+        @NotNull final Attribute<String> attribute1 =
+            new AttributeIncompleteValueObject(
+                "name", Types.BIGINT, "long", "table", "comment", 1, 10, 1, false, null);
+
+        primaryKey.add(attribute1);
+
+        @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> wrappedTable =
+            new TableValueObject("table", "comment", primaryKey, attributes, foreignKeys, null, null, false, false);
+
+        @NotNull final TableDecorator table =
+            new MyTableDecorator(
+                wrappedTable,
+                metadataManager,
+                decoratorFactory,
+                customSqlProvider);
+
+        @NotNull final Sql<String> sql =
+            new SqlElement<>(
+                "sqlId",
+                "table",
+                "name",
+                "select",
+                Cardinality.SINGLE,
+                "oracle",
+                false,
+                false,
+                "description");
+
+        ((SqlElement <String>) sql).setResultRef(new ResultRefElement("resultId"));
+
+        @NotNull final List<Sql<String>> queries = Arrays.asList(sql);
+
+        @NotNull final SqlDAO sqlDAO = EasyMock.createNiceMock(SqlDAO.class);
+        EasyMock.expect(sqlDAO.findByResultId("resultId")).andReturn(queries);
+        EasyMock.expect(sqlDAO.findByDAO("table")).andReturn(queries);
+        EasyMock.expect(customSqlProvider.getSqlDAO()).andReturn(sqlDAO);
+
+        EasyMock.replay(sqlDAO);
+        EasyMock.replay(customSqlProvider);
+
+        @NotNull final TableResultDecoratorImpl<String> instance =
+            new TableResultDecoratorImpl<>(
+                result,
+                table,
+                customSqlProvider,
+                decoratorFactory);
+
+        Assert.assertTrue(instance.isSingleBeingUsed());
+    }
 }
