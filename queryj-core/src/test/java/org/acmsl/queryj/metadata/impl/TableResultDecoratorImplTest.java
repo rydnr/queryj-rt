@@ -65,6 +65,8 @@ public class TableResultDecoratorImplTest
     public void isSingleBeingUsed_returns_true_if_it_is_being_used_by_the_table_custom_selects()
     {
         @NotNull final TableResultDecoratorImpl<String> instance =
-            new TableResultDecoratorImpl<String>()
+            new TableResultDecoratorImpl<String>(
+
+            )
     }
 }
