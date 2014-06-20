@@ -71,7 +71,8 @@ public class TableResultDecoratorImplTest
     public void isSingleBeingUsed_returns_true_if_it_is_being_used_by_the_table_custom_selects()
     {
         @NotNull final Result<String> result =
-            new ResultElement<String>("id", "MyResult");
+            new ResultElement<String>("id", "com.foo.bar.MyResult");
+
         @NotNull final TableDecorator table;
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final DecoratorFactory decoratorFactory = EasyMock.createNiceMock(DecoratorFactory.class);
