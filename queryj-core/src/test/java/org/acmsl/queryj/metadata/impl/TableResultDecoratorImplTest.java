@@ -88,7 +88,16 @@ public class TableResultDecoratorImplTest
             @NotNull final DecoratorFactory decoratorFactory,
             @NotNull final CustomSqlProvider customSqlProvider)
         {
-            return new MyTableDecorator()
+            return
+                new MyTableDecorator(
+                    parentTable,
+                    primaryKey,
+                    attributes,
+                    isStatic,
+                    voDecorated,
+                    metadataManager,
+                    decoratorFactory,
+                    customSqlProvider);
         }
     }
     /**
