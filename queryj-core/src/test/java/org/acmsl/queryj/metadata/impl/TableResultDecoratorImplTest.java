@@ -86,7 +86,6 @@ public class TableResultDecoratorImplTest
             @NotNull final DecoratorFactory decoratorFactory,
             @NotNull final CustomSqlProvider customSqlProvider)
         {
-            super()
             super(
                 parentTable,
                 primaryKey,
