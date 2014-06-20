@@ -95,7 +95,6 @@ public class TableResultDecoratorImplTest
                 metadataManager,
                 decoratorFactory,
                 customSqlProvider);
-
         }
 
         /**
