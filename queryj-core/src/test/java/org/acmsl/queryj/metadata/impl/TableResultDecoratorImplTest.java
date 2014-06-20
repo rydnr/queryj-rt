@@ -157,6 +157,7 @@ public class TableResultDecoratorImplTest
             new SqlElement<>(
                 "sqlId",
                 "table",
+                "name",
                 "select",
                 Cardinality.SINGLE,
                 "oracle",
