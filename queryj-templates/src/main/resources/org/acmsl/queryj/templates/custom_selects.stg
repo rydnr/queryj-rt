@@ -108,7 +108,7 @@ protected <custom_select_return(cs=cs, table=table, result=cs.result, C=C)> <cs.
 {
     <custom_select_result_declaration(sql=cs, result=cs.result, table=table, C=C)>
 
-    /*
+<!    /*
     preparedStatementCreatorFactory.setResultSetType(..);
     preparedStatementCreatorFactory.setUpdatableResults(..);
     preparedStatementCreatorFactory.setReturnGeneratedKeys(..);
