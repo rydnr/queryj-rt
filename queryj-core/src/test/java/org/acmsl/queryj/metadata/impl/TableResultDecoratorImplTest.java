@@ -159,6 +159,10 @@ public class TableResultDecoratorImplTest
         @NotNull final List<Attribute<String>> attributes = primaryKey;
         @NotNull final List<ForeignKey<String>> foreignKeys = new ArrayList<>(0);
 
+        @NotNull final Attribute<String> attribute1 =
+            new AttributeIncompleteValueObject(
+                "name", Types.BIGINT, "long", "table", "comment", 1, 10, 1, false, null);
+
         @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> wrappedTable =
             new TableValueObject("table", "comment", primaryKey, attributes, foreignKeys, null, null, false, false);
 
@@ -168,10 +172,6 @@ public class TableResultDecoratorImplTest
                 metadataManager,
                 decoratorFactory,
                 customSqlProvider);
-
-        @NotNull final Attribute<String> attribute1 =
-            new AttributeIncompleteValueObject(
-                "name", Types.BIGINT, "long", "table", "comment", 1, 10, 1, false, null);
 
         table
         @NotNull final Sql<String> sql =
