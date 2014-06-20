@@ -222,7 +222,7 @@ public class TableResultDecoratorImplTest
      * the custom result.
      */
     @Test
-    public void isSingleBeingUsed_returns_true_if_it_is_being_used_by_the_table_custom_selects()
+    public void isMultipleBeingUsed_returns_true_if_it_is_being_used_by_the_table_custom_selects()
     {
         @NotNull final Result<String> result =
             new ResultElement<>("resultId", "com.foo.bar.MyResult");
