@@ -180,7 +180,7 @@ public class TableResultDecoratorImplTest
                 decoratorFactory,
                 customSqlProvider);
 
-        @NotNull final Sql<String> sql =
+        @NotNull final SqlElement<String> sql =
             new SqlElement<>(
                 "sqlId",
                 "table",
@@ -192,7 +192,7 @@ public class TableResultDecoratorImplTest
                 false,
                 "description");
 
-
+        sql.setRe
         @NotNull final List<Sql<String>> queries = Arrays.asList(sql);
 
         @NotNull final SqlDAO sqlDAO = EasyMock.createNiceMock(SqlDAO.class);
