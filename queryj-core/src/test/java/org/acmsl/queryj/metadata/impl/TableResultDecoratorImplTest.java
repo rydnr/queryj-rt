@@ -162,6 +162,7 @@ public class TableResultDecoratorImplTest
                 "oracle",
                 false,
                 false,
+                "description");
 /*
         @NotNull final T type,
         @NotNull final Cardinality cardinality,
