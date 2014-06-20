@@ -66,7 +66,10 @@ public class TableResultDecoratorImplTest
     {
         @NotNull final TableResultDecoratorImpl<String> instance =
             new TableResultDecoratorImpl<String>(
-
+                result,
+                table,
+                customSqlProvider,
+                decoratorFactory);
             )
     }
 }
