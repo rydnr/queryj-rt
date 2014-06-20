@@ -61,7 +61,7 @@ public aspect ToStringAudit
      * The pointcut for "toString()"
      */
     pointcut toStringCall(final Object instance):
-           execution(public String Object.toString())
+           execution(public String *.toString())
         && target(instance);
 
     /**
