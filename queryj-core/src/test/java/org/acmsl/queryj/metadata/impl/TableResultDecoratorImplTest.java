@@ -88,7 +88,7 @@ public class TableResultDecoratorImplTest
             @NotNull final CustomSqlProvider customSqlProvider)
         {
             super(
-                parentTable,
+                table,
                 primaryKey,
                 attributes,
                 isStatic,
