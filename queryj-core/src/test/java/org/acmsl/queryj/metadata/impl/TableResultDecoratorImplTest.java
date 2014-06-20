@@ -164,6 +164,7 @@ public class TableResultDecoratorImplTest
             new AttributeIncompleteValueObject(
                 "name", Types.BIGINT, "long", "table", "comment", 1, 10, 1, false, null);
 
+        table.add
         @NotNull final Sql<String> sql =
             new SqlElement<>(
                 "sqlId",
