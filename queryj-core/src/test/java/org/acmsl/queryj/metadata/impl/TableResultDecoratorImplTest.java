@@ -163,6 +163,8 @@ public class TableResultDecoratorImplTest
             new AttributeIncompleteValueObject(
                 "name", Types.BIGINT, "long", "table", "comment", 1, 10, 1, false, null);
 
+        primaryKey.add(attribute1);
+
         @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> wrappedTable =
             new TableValueObject("table", "comment", primaryKey, attributes, foreignKeys, null, null, false, false);
 
