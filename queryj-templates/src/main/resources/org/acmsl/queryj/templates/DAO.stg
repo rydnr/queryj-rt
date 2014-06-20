@@ -173,7 +173,6 @@ project_imports(
   @param basePackageName the base package name.
   @param package the package.
   @param jdbcOperationsSubpackageName the subpackage for the JDBC operations.
-  @param customResults the results of the custom queries.
   @param voSubpackageName the subpackage for the value
   @param voName the class name of the value-object.
   @param voFactorySubpackageName the subpackage of the value object factories.
