@@ -45,6 +45,7 @@ import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.Sql.Cardinality;
 import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.metadata.AbstractTableDecorator;
+import org.acmsl.queryj.metadata.CachingDecoratorFactory;
 import org.acmsl.queryj.metadata.DecoratedString;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.ListDecorator;
@@ -153,7 +154,7 @@ public class TableResultDecoratorImplTest
 
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
-        @NotNull final DecoratorFactory decoratorFactory = EasyMock.createNiceMock(DecoratorFactory.class);
+        @NotNull final DecoratorFactory decoratorFactory = CachingDecoratorFactory.getInstance();
 
         @NotNull final List<Attribute<String>> primaryKey = new ArrayList<>(1);
         @NotNull final List<Attribute<String>> attributes = primaryKey;
