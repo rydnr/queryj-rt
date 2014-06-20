@@ -52,6 +52,7 @@ import org.acmsl.queryj.metadata.ListDecorator;
 import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.SqlDAO;
 import org.acmsl.queryj.metadata.TableDecorator;
+import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.AttributeIncompleteValueObject;
 import org.acmsl.queryj.metadata.vo.ForeignKey;
@@ -153,7 +154,9 @@ public class TableResultDecoratorImplTest
             new ResultElement<>("id", "com.foo.bar.MyResult");
 
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
-        EasyMock.expect(metadataManager.getMetadataTypeManager()).andReturn()
+        EasyMock.expect(metadataManager.getMetadataTypeManager()).andReturn(JdbcMetadataTypeManager.getInstance());
+        EasyMock.replay(metadataManager);
+
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final DecoratorFactory decoratorFactory = CachingDecoratorFactory.getInstance();
 
