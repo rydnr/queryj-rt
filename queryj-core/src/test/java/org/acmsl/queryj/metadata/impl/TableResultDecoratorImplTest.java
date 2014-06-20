@@ -154,7 +154,8 @@ public class TableResultDecoratorImplTest
 
         @NotNull final Sql sql =
             new SqlElement(
-                "sqlId",)
+                "sqlId",
+                )
         @NotNull final TableResultDecoratorImpl<String> instance =
             new TableResultDecoratorImpl<>(
                 result,
