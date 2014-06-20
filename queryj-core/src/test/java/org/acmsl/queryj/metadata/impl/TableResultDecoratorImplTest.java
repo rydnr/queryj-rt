@@ -175,7 +175,6 @@ public class TableResultDecoratorImplTest
                 decoratorFactory,
                 customSqlProvider);
 
-        table
         @NotNull final Sql<String> sql =
             new SqlElement<>(
                 "sqlId",
