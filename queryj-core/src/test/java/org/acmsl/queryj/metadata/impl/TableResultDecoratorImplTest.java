@@ -136,7 +136,6 @@ public class TableResultDecoratorImplTest
         @NotNull final TableDecorator table =
             new MyTableDecorator(
                 new TableIncompleteValueObject("table", "comment"),
-            };
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final DecoratorFactory decoratorFactory = EasyMock.createNiceMock(DecoratorFactory.class);
 
