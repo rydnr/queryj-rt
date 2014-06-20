@@ -142,7 +142,7 @@ public class TableResultDecoratorImplTest
                 new TableIncompleteValueObject("table", "comment"),
                 metadataManager,
                 decoratorFactory,
-        customSqlProvider,
+                customSqlProvider);
 
         @NotNull final TableResultDecoratorImpl<String> instance =
             new TableResultDecoratorImpl<String>(
