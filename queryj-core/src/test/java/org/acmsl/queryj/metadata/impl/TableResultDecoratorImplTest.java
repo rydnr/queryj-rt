@@ -157,7 +157,7 @@ public class TableResultDecoratorImplTest
                 "sqlId",
                 "table",
 
-                )
+                );
         @NotNull final TableResultDecoratorImpl<String> instance =
             new TableResultDecoratorImpl<>(
                 result,
