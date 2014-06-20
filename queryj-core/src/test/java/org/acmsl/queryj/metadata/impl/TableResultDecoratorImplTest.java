@@ -156,7 +156,7 @@ public class TableResultDecoratorImplTest
             new SqlElement<>(
                 "sqlId",
                 "table",
-
+                "select"
 /*
         @NotNull final T type,
         @NotNull final Cardinality cardinality,
