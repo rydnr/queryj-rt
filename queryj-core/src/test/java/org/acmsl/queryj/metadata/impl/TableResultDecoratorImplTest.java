@@ -80,7 +80,7 @@ import java.util.List;
 public class TableResultDecoratorImplTest
 {
     /**
-     *
+     * Ad-hoc class used for testing purposes.
      */
     public static class MyTableDecorator
         extends AbstractTableDecorator
