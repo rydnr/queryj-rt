@@ -41,14 +41,21 @@ package org.acmsl.queryj.metadata.impl;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.ResultElement;
+import org.acmsl.queryj.metadata.AbstractTableDecorator;
+import org.acmsl.queryj.metadata.DecoratedString;
 import org.acmsl.queryj.metadata.DecoratorFactory;
+import org.acmsl.queryj.metadata.ListDecorator;
+import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.TableDecorator;
+import org.acmsl.queryj.metadata.vo.Attribute;
+import org.acmsl.queryj.metadata.vo.Table;
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing JUnit/EasyMock classes.
  */
+import org.jetbrains.annotations.Nullable;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -73,7 +80,16 @@ public class TableResultDecoratorImplTest
         @NotNull final Result<String> result =
             new ResultElement<>("id", "com.foo.bar.MyResult");
 
-        @NotNull final TableDecorator table;
+        @NotNull final TableDecorator table =
+            new AbstractTableDecorator()
+            {
+                @Nullable
+                @Override
+                protected Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>> createTableDecorator(@Nullable final String parentTable, @NotNull final ListDecorator<Attribute<String>> primaryKey, @NotNull final ListDecorator<Attribute<String>> attributes, final boolean isStatic, final boolean voDecorated, @NotNull final MetadataManager metadataManager, @NotNull final DecoratorFactory decoratorFactory, @NotNull final CustomSqlProvider customSqlProvider)
+                {
+                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+            };
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final DecoratorFactory decoratorFactory = EasyMock.createNiceMock(DecoratorFactory.class);
 
