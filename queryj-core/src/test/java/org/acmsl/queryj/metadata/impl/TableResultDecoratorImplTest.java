@@ -43,6 +43,7 @@ import org.jetbrains.annotations.NotNull;
 /*
  * Importing JUnit/EasyMock classes.
  */
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
@@ -60,5 +61,6 @@ public class TableResultDecoratorImplTest
      * the associated table has queries returning one sole instance of
      * the custom result.
      */
+    @Test
 
 }
