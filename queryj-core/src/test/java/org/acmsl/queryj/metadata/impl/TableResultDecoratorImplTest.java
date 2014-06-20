@@ -152,7 +152,7 @@ public class TableResultDecoratorImplTest
     public void isSingleBeingUsed_returns_true_if_it_is_being_used_by_the_table_custom_selects()
     {
         @NotNull final Result<String> result =
-            new ResultElement<>("id", "com.foo.bar.MyResult");
+            new ResultElement<>("resultId", "com.foo.bar.MyResult");
 
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
         EasyMock.expect(metadataManager.getMetadataTypeManager()).andReturn(JdbcMetadataTypeManager.getInstance());
