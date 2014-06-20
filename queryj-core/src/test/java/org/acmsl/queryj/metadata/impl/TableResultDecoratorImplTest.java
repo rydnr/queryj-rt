@@ -42,6 +42,7 @@ import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.TableDecorator;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -70,7 +71,7 @@ public class TableResultDecoratorImplTest
     {
         @NotNull final Result<String> result;
         @NotNull final TableDecorator table;
-        @NotNull final CustomSqlProvider customSqlProvider;
+        @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final DecoratorFactory decoratorFactory;
 
         @NotNull final TableResultDecoratorImpl<String> instance =
