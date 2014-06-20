@@ -42,6 +42,7 @@ import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.ResultElement;
 import org.acmsl.queryj.customsql.Sql;
+import org.acmsl.queryj.customsql.Sql.Cardinality;
 import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.metadata.AbstractTableDecorator;
 import org.acmsl.queryj.metadata.DecoratedString;
@@ -156,7 +157,8 @@ public class TableResultDecoratorImplTest
             new SqlElement<>(
                 "sqlId",
                 "table",
-                "select"
+                "select",
+                Cardinality.SINGLE,
 /*
         @NotNull final T type,
         @NotNull final Cardinality cardinality,
