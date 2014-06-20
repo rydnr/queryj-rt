@@ -77,7 +77,7 @@ public class TableResultDecoratorImplTest
         extends AbstractTableDecorator
     {
         /**
-         * {@ni
+         * {@inheritDoc
          * }
          * @param parentTable
          * @param primaryKey
