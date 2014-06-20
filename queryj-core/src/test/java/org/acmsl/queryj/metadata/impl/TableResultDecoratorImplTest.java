@@ -157,7 +157,15 @@ public class TableResultDecoratorImplTest
                 "sqlId",
                 "table",
 
+/*
+        @NotNull final T type,
+        @NotNull final Cardinality cardinality,
+        @Nullable final T implementation,
+        final boolean validate,
+        final boolean dynamic,
+        @NotNull final T description)
 
+ */
                 );
         @NotNull final TableResultDecoratorImpl<String> instance =
             new TableResultDecoratorImpl<>(
