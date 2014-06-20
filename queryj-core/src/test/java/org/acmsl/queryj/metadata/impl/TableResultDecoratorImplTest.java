@@ -72,6 +72,7 @@ import org.junit.runners.JUnit4;
 /*
  * Importing JDK classes.
  */
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -167,9 +168,11 @@ public class TableResultDecoratorImplTest
                 false,
                 "description");
 
+        List<Sql<String>> queries = new ArrayList<>(1);
+        queries.add()
         @NotNull final SqlDAO sqlDAO = EasyMock.createNiceMock(SqlDAO.class);
         EasyMock.expect(sqlDAO.findByResultId("resultId")).andReturn(Arrays.asList(sql));
-        EasyMock.expect(sqlDAO.findByDAO())
+        EasyMock.expect(sqlDAO.findByDAO("table")).andRe
         EasyMock.expect(customSqlProvider.getSqlDAO()).andReturn(sqlDAO);
         EasyMock.replay(sqlDAO);
         EasyMock.replay(customSqlProvider);
