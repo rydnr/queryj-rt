@@ -55,55 +55,14 @@ import java.util.Map;
  * @since 3.0
  * Created: 2014/06/20 18:36
  */
-public aspect PerCommentParsingCache
+public aspect ToStringAudit
 {
     /**
-     * The static-attribute cache.
+     * The pointcut for "toString()"
      */
-    private static final Map<String, String> STATIC_ATTRIBUTE_CACHE = new HashMap<>();
-
-    /**
-     * The declared parent cache.
-     */
-    private static final Map<String, String> DECLARED_PARENT_CACHE = new HashMap<>();
-
-    /**
-     * The discriminating parent cache.
-     */
-    private static final Map<String, String> DISCRIMINATING_PARENT_CACHE = new HashMap<>();
-
-    /**
-     * The column bool cache.
-     */
-    private static final Map<String, String[]> COLUMN_BOOL_CACHE = new HashMap<>();
-
-    /**
-     * The column readonly cache.
-     */
-    private static final Map<String, Boolean> COLUMN_READONLY_CACHE= new HashMap<>();
-
-    /**
-     * The column discriminated tables cache.
-     */
-    private static final Map<String, List<List<String>>> COLUMN_DISCRIMINATED_TABLES_CACHE= new HashMap<>();
-
-    /**
-     * The table decorator cache.
-     */
-    private static final Map<String, Boolean> TABLE_DECORATOR_CACHE = new HashMap<>();
-
-    /**
-     * The table relationship cache.
-     */
-    private static final Map<String, List<List<String>>> TABLE_RELATIONSHIP_CACHE = new HashMap<>();
-
-    /**
-     * The pointcut for "retrieveStaticAttribute(String)"
-     */
-    pointcut cacheStaticAttribute(final MetaLanguageUtils instance, final String comment):
-           execution(public String org.acmsl.queryj.api.MetaLanguageUtils.retrieveStaticAttribute(String))
-        && target(instance)
-        && args(comment);
+    pointcut toStringCall(final Object instance):
+           execution(public String Object.toString())
+        && target(instance);
 
     /**
      * The pointcut for "retrieveDeclaredParent(String)"
