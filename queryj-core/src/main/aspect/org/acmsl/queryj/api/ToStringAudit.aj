@@ -65,123 +65,12 @@ public aspect ToStringAudit
         && target(instance);
 
     /**
-     * The pointcut for "retrieveDeclaredParent(String)"
+     * Auditing the toString() pointcut.
      */
-    pointcut cacheDeclaredParent(final MetaLanguageUtils instance, final String comment):
-        execution(public String org.acmsl.queryj.api.MetaLanguageUtils.retrieveDeclaredParent(String))
-            && target(instance)
-            && args(comment);
-
-    /**
-     * The pointcut for "retrieveDiscriminatingParent(String)"
-     */
-    pointcut cacheDiscriminatingParent(final MetaLanguageUtils instance, final String comment):
-        execution(public String org.acmsl.queryj.api.MetaLanguageUtils.retrieveDiscriminatingParent(String))
-            && target(instance)
-            && args(comment);
-
-    /**
-     * The pointcut for "retrieveColumnBool(String)"
-     */
-    pointcut cacheColumnBool(final MetaLanguageUtils instance, final String comment):
-        execution(public String[] org.acmsl.queryj.api.MetaLanguageUtils.retrieveColumnBool(String))
-            && target(instance)
-            && args(comment);
-
-    /**
-     * The pointcut for "retrieveColumnReadOnly(String)"
-     */
-    pointcut cacheColumnReadOnly(final MetaLanguageUtils instance, final String comment):
-        execution(public boolean org.acmsl.queryj.api.MetaLanguageUtils.retrieveColumnReadOnly(String))
-            && target(instance)
-            && args(comment);
-
-    /**
-     * The pointcut for "retrieveColumnDiscriminatedTables(String)"
-     */
-    pointcut cacheColumnDiscriminatedTables(final MetaLanguageUtils instance, final String comment):
-        execution(public boolean org.acmsl.queryj.api.MetaLanguageUtils.retrieveColumnDiscriminatedTables(String))
-            && target(instance)
-            && args(comment);
-
-    /**
-     * The pointcut for "retrieveTableDecorator(String)"
-     */
-    pointcut cacheTableDecorator(final MetaLanguageUtils instance, final String comment):
-        execution(public boolean org.acmsl.queryj.api.MetaLanguageUtils.retrieveTableDecorator(String))
-            && target(instance)
-            && args(comment);
-
-    /**
-     * The pointcut for "retrieveTableDecorator(String)"
-     */
-    pointcut cacheTableRelationship(final MetaLanguageUtils instance, final String comment):
-        execution(public boolean org.acmsl.queryj.api.MetaLanguageUtils.retrieveTableRelationship(String))
-            && target(instance)
-            && args(comment);
-
-    /**
-     * Caching the "retrieveStaticAttribute(String) pointcut.
-     */
-    String around(final MetaLanguageUtils instance, final String comment) :
-    cacheStaticAttribute(comment)
+    String around(final Object instance) :
+        toStringCall(instance)
     {
-        @Nullable String result;
-        @NotNull final String key = "[comment/static]" + comment;
-
-        result = STATIC_ATTRIBUTE_CACHE.get(key);
-
-        if (result == null)
-        {
-            result = proceed(instance, comment);
-
-            if (result == null)
-            {
-                STATIC_ATTRIBUTE_CACHE.put(key, key);
-            }
-            else
-            {
-                STATIC_ATTRIBUTE_CACHE.put(key, result);
-            }
-        }
-        else if (result.equals(key))
-        {
-            result = null;
-        }
-
-        return result;
-    }
-
-    /**
-     * Caching the "retrieveDeclaredParent(String) pointcut.
-     */
-    String around(final MetaLanguageUtils instance, final String comment) :
-        cacheDeclaredParent(comment)
-    {
-        @Nullable String result;
-        @NotNull final String key = "[comment/declared-parent]" + comment;
-
-        result = DECLARED_PARENT_CACHE.get(key);
-
-        if (result == null)
-        {
-            result = proceed(instance, comment);
-
-            if (result == null)
-            {
-                DECLARED_PARENT_CACHE.put(key, key);
-            }
-            else
-            {
-                DECLARED_PARENT_CACHE.put(key, result);
-            }
-        }
-        else if (result.equals(key))
-        {
-            result = null;
-        }
-
-        return result;
+        return ToStringUtils.getInstance().auditToString(instance);
     }
 
     /**
