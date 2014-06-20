@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for TableResultDecoratorImpl.
  *
  * Date: 2014/06/20
  * Time: 05:37
