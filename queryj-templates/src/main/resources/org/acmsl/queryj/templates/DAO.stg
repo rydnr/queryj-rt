@@ -73,7 +73,6 @@ sourceImpl(table, engine, C) ::= <<
   basePackageName=C.project_package,
   package=C.package,
   jdbcOperationsSubpackageName=typeInitMap.jdbcOperationsSubpackageName,
-  customResults=table.customResults.different,
   voSubpackageName=typeInitMap.voSubpackageName,
   voName=table.name.voName,
   voFactorySubpackageName=typeInitMap.voFactorySubpackageName,
