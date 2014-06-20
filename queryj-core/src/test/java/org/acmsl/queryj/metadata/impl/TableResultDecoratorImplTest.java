@@ -169,6 +169,7 @@ public class TableResultDecoratorImplTest
 
         @NotNull final SqlDAO sqlDAO = EasyMock.createNiceMock(SqlDAO.class);
         EasyMock.expect(sqlDAO.findByResultId("resultId")).andReturn(Arrays.asList(sql));
+        EasyMock.expect()
 
         @NotNull final TableResultDecoratorImpl<String> instance =
             new TableResultDecoratorImpl<>(
