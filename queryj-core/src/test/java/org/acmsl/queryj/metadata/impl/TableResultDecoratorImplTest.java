@@ -159,6 +159,9 @@ public class TableResultDecoratorImplTest
                 "table",
                 "select",
                 Cardinality.SINGLE,
+                "oracle",
+                false,
+                false,
 /*
         @NotNull final T type,
         @NotNull final Cardinality cardinality,
