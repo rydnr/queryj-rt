@@ -227,7 +227,7 @@ import <basePackageName>.<voFactorySubpackageName>.core.<table.name.voName>Facto
  */
 import com.ventura24.commons.dao.DAOListener;
 <if(table.customResults)
- ><table.customResults.different:{ cr  | <if(cr.wrappingASingleProperty)><cr.properties:{p | <if(p.typeSupportedOutOfTheBox)>import com.ventura24.commons.dao.<p.objectType>ResultSetMultipleExtractor;<endif>}; separator="\n"><endif>}; separator="\n">
+ ><table.customResults:{ cr  | <if(cr.wrappingASingleProperty)><cr.properties:{p | <if(p.typeSupportedOutOfTheBox)>import com.ventura24.commons.dao.<p.objectType>ResultSetMultipleExtractor;<endif>}; separator="\n"><endif>}; separator="\n">
 <endif>
 import com.ventura24.commons.dao.V24JdbcTemplate;
 import com.ventura24.commons.dao.V24PreparedStatementCreator;
