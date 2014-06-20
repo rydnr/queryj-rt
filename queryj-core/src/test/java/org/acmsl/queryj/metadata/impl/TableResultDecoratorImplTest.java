@@ -56,4 +56,10 @@ import org.junit.runners.JUnit4;
 public class TableResultDecoratorImplTest
 {
 
+    /**
+     * Checks whether isSingleBeingUsed() is correct depending on whether
+     * the associated table has queries returning one sole instance of
+     * the custom result.
+     */
+
 }
