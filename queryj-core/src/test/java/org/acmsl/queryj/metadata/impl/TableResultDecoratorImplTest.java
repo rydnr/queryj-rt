@@ -86,6 +86,15 @@ public class TableResultDecoratorImplTest
             @NotNull final DecoratorFactory decoratorFactory,
             @NotNull final CustomSqlProvider customSqlProvider)
         {
+            new MyTableDecorator(
+                parentTable,
+                primaryKey,
+                attributes,
+                isStatic,
+                voDecorated,
+                metadataManager,
+                decoratorFactory,
+                customSqlProvider);
 
         }
 
