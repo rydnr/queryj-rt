@@ -164,7 +164,7 @@ public class TableResultDecoratorImplTest
 
         @NotNull final TableDecorator table =
             new MyTableDecorator(
-                new TableIncompleteValueObject("table", "comment"),
+                wrappedTable,
                 metadataManager,
                 decoratorFactory,
                 customSqlProvider);
