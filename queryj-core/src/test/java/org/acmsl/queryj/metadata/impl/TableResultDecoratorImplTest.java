@@ -38,6 +38,10 @@ package org.acmsl.queryj.metadata.impl;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.customsql.CustomSqlProvider;
+import org.acmsl.queryj.customsql.Result;
+import org.acmsl.queryj.metadata.DecoratorFactory;
+import org.acmsl.queryj.metadata.TableDecorator;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -64,12 +68,16 @@ public class TableResultDecoratorImplTest
     @Test
     public void isSingleBeingUsed_returns_true_if_it_is_being_used_by_the_table_custom_selects()
     {
+        @NotNull final Result<String> result;
+        @NotNull final TableDecorator table;
+        @NotNull final CustomSqlProvider customSqlProvider;
+        @NotNull final DecoratorFactory decoratorFactory;
+
         @NotNull final TableResultDecoratorImpl<String> instance =
             new TableResultDecoratorImpl<String>(
                 result,
                 table,
                 customSqlProvider,
                 decoratorFactory);
-            )
     }
 }
