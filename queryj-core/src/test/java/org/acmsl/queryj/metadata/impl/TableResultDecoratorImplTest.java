@@ -76,7 +76,18 @@ public class TableResultDecoratorImplTest
     public static class MyTableDecorator
         extends AbstractTableDecorator
     {
-
+        /**
+         * {@inheritDoc}
+         * @param parentTable the parent table name.
+         * @param primaryKey the primary key.
+         * @param attributes the attributes.
+         * @param isStatic whether the table contains static values or not.
+         * @param voDecorated whether the value-object is decorated.
+         * @param metadataManager the {@link MetadataManager} instance.
+         * @param decoratorFactory the {@link DecoratorFactory} instance.
+         * @param customSqlProvider the {@link CustomSqlProvider} instance.
+         * @return
+         */
         @Nullable
         @Override
         protected Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>> createTableDecorator(
