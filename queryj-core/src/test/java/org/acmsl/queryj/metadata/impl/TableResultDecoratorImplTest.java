@@ -81,7 +81,7 @@ public class TableResultDecoratorImplTest
             new ResultElement<>("id", "com.foo.bar.MyResult");
 
         @NotNull final TableDecorator table =
-            new AbstractTableDecorator()
+            new MyTableDecorator()
             {
                 @Nullable
                 @Override
