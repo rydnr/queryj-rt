@@ -40,7 +40,6 @@ import org.acmsl.queryj.metadata.CachingResultDecorator;
 import org.acmsl.queryj.metadata.DecorationUtils;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.MetadataManager;
-import org.acmsl.queryj.metadata.MetadataUtils;
 import org.acmsl.queryj.metadata.ResultDecorator;
 import org.acmsl.queryj.metadata.SqlDAO;
 import org.acmsl.queryj.metadata.TableDAO;
