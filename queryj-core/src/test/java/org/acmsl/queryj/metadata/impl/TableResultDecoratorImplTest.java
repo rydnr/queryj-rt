@@ -172,6 +172,7 @@ public class TableResultDecoratorImplTest
         EasyMock.expect(customSqlProvider.getSqlDAO()).andReturn(sqlDAO);
         EasyMock.replay(sqlDAO);
         EasyMock.replay(customSqlProvider);
+
         @NotNull final TableResultDecoratorImpl<String> instance =
             new TableResultDecoratorImpl<>(
                 result,
