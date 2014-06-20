@@ -393,7 +393,7 @@ public class CustomResultUtils
      * @return {@code true} if it should be included.
      * @param <T> the Result type.
      */
-    protected <T> boolean matches(@NotNull final Result<T> resultElement, @NotNull final String tableName)
+    public  <T> boolean matches(@NotNull final Result<T> resultElement, @NotNull final String tableName)
     {
         final boolean result;
 
