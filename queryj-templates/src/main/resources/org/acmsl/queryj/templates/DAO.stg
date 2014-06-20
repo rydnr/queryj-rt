@@ -155,7 +155,6 @@ project_imports(
   basePackageName,
   package,
   jdbcOperationsSubpackageName,
-  customResults,
   voSubpackageName,
   voName,
   voFactorySubpackageName,
