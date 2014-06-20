@@ -62,5 +62,5 @@ public class TableResultDecoratorImplTest
      * the custom result.
      */
     @Test
-    public void isSingleBeingUsed_works_for
+    public void isSingleBeingUsed_returns_true_
 }
