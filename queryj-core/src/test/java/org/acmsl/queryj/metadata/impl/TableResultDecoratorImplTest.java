@@ -40,6 +40,7 @@ package org.acmsl.queryj.metadata.impl;
  */
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Result;
+import org.acmsl.queryj.customsql.ResultElement;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.TableDecorator;
 import org.easymock.EasyMock;
@@ -69,7 +70,8 @@ public class TableResultDecoratorImplTest
     @Test
     public void isSingleBeingUsed_returns_true_if_it_is_being_used_by_the_table_custom_selects()
     {
-        @NotNull final Result<String> result;
+        @NotNull final Result<String> result =
+            new ResultElement<String>();
         @NotNull final TableDecorator table;
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final DecoratorFactory decoratorFactory = EasyMock.createNiceMock(DecoratorFactory.class);
