@@ -157,7 +157,8 @@ public class TableResultDecoratorImplTest
 
         @NotNull final List<Attribute<String>> primaryKey = new ArrayList<>(1);
         @NotNull final List<Attribute<String>> attributes = primaryKey;
-        @NotNull final List<ForeignKey<String>> foreignKeys = new ArrayList<>()(0)
+        @NotNull final List<ForeignKey<String>> foreignKeys = new ArrayList<>(0);
+
         @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> wrappedTable =
             new TableValueObject("table", "comment", primaryKey, attributes, foreignKeys, null, null, false, false);
 
