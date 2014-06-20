@@ -150,6 +150,7 @@ public class TableResultDecoratorImplTest
                 decoratorFactory,
                 customSqlProvider);
 
+        @NotNull final
         @NotNull final TableResultDecoratorImpl<String> instance =
             new TableResultDecoratorImpl<>(
                 result,
