@@ -155,7 +155,7 @@ public class TableResultDecoratorImplTest
         @NotNull final DecoratorFactory decoratorFactory = EasyMock.createNiceMock(DecoratorFactory.class);
 
         @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> wrappedTable =
-            new TableValueObject("name")
+            new TableValueObject("table", "comment", pk)
         @NotNull final TableDecorator table =
             new MyTableDecorator(
                 new TableIncompleteValueObject("table", "comment"),
