@@ -80,6 +80,10 @@ public class TableResultDecoratorImplTest
     {
         /**
          * Creates a new instance.
+         * @param table the table.
+         * @param metadataManager the {@link MetadataManager} instance.
+         * @param decoratorFactory the {@link DecoratorFactory} instance.
+         * @param customSqlProvider the {@link CustomSqlProvider} instance.
          */
         public MyTableDecorator(
             @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table,
