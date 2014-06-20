@@ -153,6 +153,7 @@ public class TableResultDecoratorImplTest
             new ResultElement<>("id", "com.foo.bar.MyResult");
 
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
+        EasyMock.expect(metadataManager.getMetadataTypeManager()).andReturn()
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final DecoratorFactory decoratorFactory = CachingDecoratorFactory.getInstance();
 
