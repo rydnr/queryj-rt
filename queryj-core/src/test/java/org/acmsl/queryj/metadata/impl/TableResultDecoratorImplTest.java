@@ -162,6 +162,7 @@ public class TableResultDecoratorImplTest
 
         @NotNull final Attribute<String> attribute1 =
             new AttributeIncompleteValueObject("name", Types.BIGINT, "long", "table", "comment", 1, 10, 1, false, null);
+
         @NotNull final Sql<String> sql =
             new SqlElement<>(
                 "sqlId",
