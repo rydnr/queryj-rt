@@ -185,5 +185,6 @@ public class TableResultDecoratorImplTest
                 customSqlProvider,
                 decoratorFactory);
 
+        instance.
     }
 }
