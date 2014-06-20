@@ -285,6 +285,6 @@ public class TableResultDecoratorImplTest
                 customSqlProvider,
                 decoratorFactory);
 
-        Assert.assertTrue(instance.isSingleBeingUsed());
+        Assert.assertTrue(instance.isMultipleBeingUsed());
     }
 }
