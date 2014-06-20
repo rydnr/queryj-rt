@@ -151,7 +151,7 @@ public class TableResultDecoratorImplTest
                 customSqlProvider);
 
         @NotNull final TableResultDecoratorImpl<String> instance =
-            new TableResultDecoratorImpl<String>(
+            new TableResultDecoratorImpl<>(
                 result,
                 table,
                 customSqlProvider,
