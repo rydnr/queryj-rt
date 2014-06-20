@@ -193,7 +193,7 @@ public class TableResultDecoratorImplTest
                 false,
                 "description");
 
-        (SqlElement <String> sql).setResultRef(new ResultRefElement("resultId"));
+        ((SqlElement <String>) sql).setResultRef(new ResultRefElement("resultId"));
 
         @NotNull final List<Sql<String>> queries = Arrays.asList(sql);
 
