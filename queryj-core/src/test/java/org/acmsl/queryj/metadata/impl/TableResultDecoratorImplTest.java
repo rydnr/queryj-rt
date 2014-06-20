@@ -154,7 +154,7 @@ public class TableResultDecoratorImplTest
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final DecoratorFactory decoratorFactory = EasyMock.createNiceMock(DecoratorFactory.class);
 
-        @NotNull final
+        @NotNull final List<Attribute<String>> primaryKey
         @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> wrappedTable =
             new TableValueObject("table", "comment", pk, attributes, foreignKeys, null, null, false, false);
 
