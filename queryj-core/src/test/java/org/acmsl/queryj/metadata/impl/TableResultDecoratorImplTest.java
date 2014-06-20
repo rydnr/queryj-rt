@@ -76,6 +76,18 @@ public class TableResultDecoratorImplTest
     public static class MyTableDecorator
         extends AbstractTableDecorator
     {
+        /**
+         * {@ni
+         * }
+         * @param parentTable
+         * @param primaryKey
+         * @param attributes
+         * @param isStatic
+         * @param voDecorated
+         * @param metadataManager
+         * @param decoratorFactory
+         * @param customSqlProvider
+         */
         public MyTableDecorator(
             @Nullable final String parentTable,
             @NotNull final ListDecorator<Attribute<String>> primaryKey,
