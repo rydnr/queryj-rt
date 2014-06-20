@@ -59,6 +59,7 @@ import org.acmsl.queryj.metadata.vo.TableIncompleteValueObject;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.metadata.vo.TableValueObject;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -154,7 +155,7 @@ public class TableResultDecoratorImplTest
         @NotNull final DecoratorFactory decoratorFactory = EasyMock.createNiceMock(DecoratorFactory.class);
 
         @NotNull final Table<String, Attribute<String>, List<Attribute<String>>> wrappedTable =
-
+            new TableValueObject()
         @NotNull final TableDecorator table =
             new MyTableDecorator(
                 new TableIncompleteValueObject("table", "comment"),
