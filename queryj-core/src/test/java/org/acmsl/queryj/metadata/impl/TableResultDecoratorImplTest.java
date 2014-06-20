@@ -85,6 +85,10 @@ public class TableResultDecoratorImplTest
             @NotNull final MetadataManager metadataManager,
             @NotNull final DecoratorFactory decoratorFactory,
             @NotNull final CustomSqlProvider customSqlProvider)
+        {
+
+        }
+
         /**
          * {@inheritDoc}
          */
