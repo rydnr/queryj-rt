@@ -194,6 +194,7 @@ public class TableResultDecoratorImplTest
                 "description");
 
         sql.setResultRef(new ResultRefElement("resultId"));
+
         @NotNull final List<Sql<String>> queries = Arrays.asList(sql);
 
         @NotNull final SqlDAO sqlDAO = EasyMock.createNiceMock(SqlDAO.class);
