@@ -192,6 +192,7 @@ public class TableResultDecoratorImplTest
                 false,
                 "description");
 
+        sql.add
         @NotNull final List<Sql<String>> queries = Arrays.asList(sql);
 
         @NotNull final SqlDAO sqlDAO = EasyMock.createNiceMock(SqlDAO.class);
