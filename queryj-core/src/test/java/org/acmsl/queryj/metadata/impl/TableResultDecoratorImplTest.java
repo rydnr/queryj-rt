@@ -156,6 +156,7 @@ public class TableResultDecoratorImplTest
             new SqlElement<>(
                 "sqlId",
                 "table",
+
                 )
         @NotNull final TableResultDecoratorImpl<String> instance =
             new TableResultDecoratorImpl<>(
