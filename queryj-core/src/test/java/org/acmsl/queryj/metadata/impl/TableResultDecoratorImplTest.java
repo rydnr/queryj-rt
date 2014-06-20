@@ -50,6 +50,7 @@ import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.TableDecorator;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.Table;
+import org.acmsl.queryj.metadata.vo.TableIncompleteValueObject;
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
@@ -133,7 +134,9 @@ public class TableResultDecoratorImplTest
             new ResultElement<>("id", "com.foo.bar.MyResult");
 
         @NotNull final TableDecorator table =
-            new MyTableDecorator()
+            new MyTableDecorator(
+                new TableIncompleteValueObject()
+            )
             {
                 @Nullable
                 @Override
