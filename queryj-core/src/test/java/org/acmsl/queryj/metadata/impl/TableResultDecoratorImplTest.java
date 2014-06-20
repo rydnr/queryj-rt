@@ -52,6 +52,7 @@ import org.acmsl.queryj.metadata.MetadataManager;
 import org.acmsl.queryj.metadata.SqlDAO;
 import org.acmsl.queryj.metadata.TableDecorator;
 import org.acmsl.queryj.metadata.vo.Attribute;
+import org.acmsl.queryj.metadata.vo.AttributeIncompleteValueObject;
 import org.acmsl.queryj.metadata.vo.Table;
 import org.acmsl.queryj.metadata.vo.TableIncompleteValueObject;
 
@@ -158,6 +159,8 @@ public class TableResultDecoratorImplTest
                 decoratorFactory,
                 customSqlProvider);
 
+        @NotNull final Attribute<String> attribute1 =
+            new AttributeIncompleteValueObject()
         @NotNull final Sql<String> sql =
             new SqlElement<>(
                 "sqlId",
