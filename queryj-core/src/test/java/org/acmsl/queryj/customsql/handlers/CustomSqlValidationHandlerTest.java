@@ -48,7 +48,7 @@ import org.acmsl.queryj.customsql.Parameter;
 import org.acmsl.queryj.customsql.ParameterElement;
 import org.acmsl.queryj.customsql.ParameterRefElement;
 import org.acmsl.queryj.customsql.Sql;
-import org.acmsl.queryj.customsql.Sql.Cardinality;
+import org.acmsl.queryj.customsql.SqlCardinality;
 import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.customsql.handlers.customsqlvalidation.RetrieveQueryHandler;
 import org.acmsl.queryj.metadata.ColumnDAO;
