@@ -49,7 +49,7 @@ import org.acmsl.queryj.customsql.CustomSqlProviderTest.SemiMockedAbstractCustom
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.ResultElement;
 import org.acmsl.queryj.customsql.Sql;
-import org.acmsl.queryj.customsql.Sql.Cardinality;
+import org.acmsl.queryj.customsql.SqlCardinality;
 import org.acmsl.queryj.customsql.SqlConnectionFlagsDAO;
 import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.customsql.SqlResultSetFlagsDAO;
