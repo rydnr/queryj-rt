@@ -113,7 +113,7 @@ public class RetrieveResultPropertiesHandlerTest
 
         @NotNull final SqlElement<String> t_Sql =
             new SqlElement<>(
-                "id", "dao", "name", "String", Cardinality.SINGLE, "all", true /* validation */, false, "description");
+                "id", "dao", "name", "String", SqlCardinality.SINGLE, "all", true /* validation */, false, "description");
 
         @NotNull final List<Property<String>> t_lProperties = new ArrayList<>(2);
         t_lProperties.add(new PropertyElement<>("name", "name", 1, String.class.getSimpleName(), false));
