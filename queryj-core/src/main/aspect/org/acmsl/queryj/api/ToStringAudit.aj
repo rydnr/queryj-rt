@@ -75,6 +75,6 @@ public aspect ToStringAudit
     String around(final Object instance) :
         toStringCall(instance)
     {
-        return ToStringUtils.getInstance().auditToString(instance);
+        if (ToStringUtils.getInstance().auditToString(instance);
     }
 }
