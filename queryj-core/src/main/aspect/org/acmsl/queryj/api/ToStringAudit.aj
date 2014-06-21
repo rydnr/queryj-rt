@@ -67,6 +67,7 @@ public aspect ToStringAudit
      * Auditing the toString() pointcut.
      * @param instance the instance.
      * @return the result of calling toString() on given instance, or {@code ""} if
+     * a recursive call has been detected.
      */
     String around(final Object instance) :
         toStringCall(instance)
