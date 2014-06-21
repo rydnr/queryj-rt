@@ -38,6 +38,11 @@
 package aspects.org.acmsl.queryj;
 
 /*
+ * Importing Apache Commons Logging classes.
+ */
+import org.apache.commons.logging.LogFactory;
+
+/*
  * Importing JDK classes.
  */
 import java.util.HashMap;
