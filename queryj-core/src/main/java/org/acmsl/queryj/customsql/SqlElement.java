@@ -370,7 +370,7 @@ public class SqlElement<T>
      * Specifies the cardinality.
      * @param value such information.
      */
-    protected final void immutableSetCardinality(@NotNull final Cardinality value)
+    protected final void immutableSetCardinality(@NotNull final SqlCardinality value)
     {
         this.cardinality = value;
     }
