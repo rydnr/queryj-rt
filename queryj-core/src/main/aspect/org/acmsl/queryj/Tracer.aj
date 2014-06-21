@@ -1,9 +1,8 @@
 /*
-                        QueryJ
+                        QueryJ Core
 
-    Copyright (C) 2002  Jose San Leandro Armend�riz
-                        jsanleandro@yahoo.es
-                        chousz@yahoo.com
+    Copyright (C) 2002-today  Jose San Leandro Armendariz
+                        queryj@acm-sl.org
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU General Public
@@ -20,28 +19,20 @@
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
     Thanks to ACM S.L. for distributing this library under the GPL license.
-    Contact info: jsanleandro@yahoo.es
+    Contact info: jose.sanleandro@acm-sl.com
     Postal Address: c/Playa de Lagoa, 1
-                    Urb. Valdecaba�as
+                    Urb. Valdecabanas
                     Boadilla del monte
                     28660 Madrid
                     Spain
 
  ******************************************************************************
  *
- * Filename: $RCSfile$
+ * Filename: Tracer.aj
  *
- * Author: Jose San Leandro Armend�riz
+ * Author: Jose San Leandro Armendariz
  *
  * Description: Traces method calls.
- *
- * Last modified by: $Author$ at $Date$
- *
- * File version: $Revision$
- *
- * Project version: $Name$
- *
- * $Id$
  *
  */
 package aspects.org.acmsl.queryj;
