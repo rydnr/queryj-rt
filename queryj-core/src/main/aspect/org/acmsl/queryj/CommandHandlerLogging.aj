@@ -41,7 +41,7 @@ package aspects.org.acmsl.queryj;
 /*
  * Importing project classes.
  */
-import org.acmsl.queryj.tools.QueryJCommand;
+import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.tools.handlers.QueryJCommandHandler;
 
 /*
