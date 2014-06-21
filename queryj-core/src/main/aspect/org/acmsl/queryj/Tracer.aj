@@ -102,11 +102,11 @@ public aspect Tracer
      */
     before(Object obj) : tracePoint(obj)
     {
-        Map t_mStackDepths = getStackDepths();
+        Map<Thread, Integer> t_mStackDepths = getStackDepths();
 
         if  (t_mStackDepths == null)
         {
-            t_mStackDepths = new HashMap();
+            t_mStackDepths = new HashMap<>();
             setStackDepths(t_mStackDepths);
         }
 
