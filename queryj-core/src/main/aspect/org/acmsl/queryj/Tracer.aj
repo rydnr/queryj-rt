@@ -38,15 +38,15 @@
 package aspects.org.acmsl.queryj;
 
 /*
- * Importing project classes.
+ * Importing JDK classes.
  */
-import org.acmsl.queryj.tools.OracleMetaDataManager;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Traces method calls.
  * @author <a href="http://www.samspublishing.com/catalog/product.asp?product_id={681277AC-6106-4C7D-B71A-59D04871EE89}"
    >Ivan Kiselev (from Aspect-Oriented Programming with AspectJ)</a>
- * @version $Revision$
  */
 public aspect Tracer
 {
