@@ -114,13 +114,7 @@ public aspect Tracer
      */
     after(Object obj) : tracePoint(obj)
     {
-        Map t_mStackDepths = getStackDepths();
-
-        if  (t_mStackDepths == null)
-        {
-            t_mStackDepths = new HashMap();
-            setStackDepths(t_mStackDepths);
-        }
+        Map<Thread, Integer> t_mStackDepths = getStackDepths();
 
         Integer t_Depth = t_mStackDepths.get(Thread.currentThread());
 
