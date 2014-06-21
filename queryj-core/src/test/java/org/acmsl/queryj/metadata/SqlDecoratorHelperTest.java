@@ -43,6 +43,7 @@ import org.acmsl.queryj.customsql.Parameter;
 import org.acmsl.queryj.customsql.ParameterElement;
 import org.acmsl.queryj.customsql.ParameterRefElement;
 import org.acmsl.queryj.customsql.Sql;
+import org.acmsl.queryj.customsql.SqlCardinality;
 import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
 
@@ -82,7 +83,7 @@ public class SqlDecoratorHelperTest
     public void getParameterTypes_returns_no_duplicates()
     {
         @NotNull final Sql<String> sql =
-            new SqlElement<>("id1", "name1", "select", Cardinality.SINGLE, "all", false, false, "none", "desc1");
+            new SqlElement<>("id1", "name1", "select", SqlCardinality.SINGLE, "all", false, false, "none", "desc1");
 
         @NotNull final Parameter parameter =
             new ParameterElement<String, String>("pid", 1, "paramName", "Date", null);
