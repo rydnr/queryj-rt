@@ -131,29 +131,32 @@ public aspect Tracer
      */
     after(Object obj) : tracePoint(obj)
     {
-        Map<Thread, Integer> t_mStackDepths = getStackDepths();
-
-        Integer t_Depth = t_mStackDepths.get(Thread.currentThread());
-
-        if  (t_Depth == null)
+        if (isEnabled())
         {
-            t_Depth = 0;
-        }
+            final Map<Thread, Integer> t_mStackDepths = getStackDepths();
 
-        t_Depth = t_Depth - 1;
+            Integer t_Depth = t_mStackDepths.get(Thread.currentThread());
 
-        if  (t_Depth == 0)
-        {
-            t_mStackDepths.remove(Thread.currentThread());
-        }
-        else
-        {
-            t_mStackDepths.put(Thread.currentThread(), t_Depth);
-        }
+            if  (t_Depth == null)
+            {
+                t_Depth = 0;
+            }
 
-        //LogFactory.getLog("tracer-out").info(
-        System.out.println(
-            indent(t_Depth.intValue()) + " << " + thisJoinPointStaticPart.getSignature());
+            t_Depth = t_Depth - 1;
+
+            if  (t_Depth == 0)
+            {
+                t_mStackDepths.remove(Thread.currentThread());
+            }
+            else
+            {
+                t_mStackDepths.put(Thread.currentThread(), t_Depth);
+            }
+
+            //System.out.println(
+            LogFactory.getLog("tracer-out").debug(
+                indent(t_Depth.intValue()) + " << " + thisJoinPointStaticPart.getSignature());
+        }
     }
 
     /**
