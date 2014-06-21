@@ -102,7 +102,7 @@ public class RetrieveResultSetColumnsHandlerTest
 
         @NotNull final SqlElement<String> sql =
             new SqlElement<>(
-                "id", "dao", "name", Sql.SELECT, Cardinality.SINGLE, "all", true /* validation */, false, "description");
+                "id", "dao", "name", Sql.SELECT, SqlCardinality.SINGLE, "all", true /* validation */, false, "description");
 
         sql.setValue("select sysdate from dual where ? = 'A'");
 
