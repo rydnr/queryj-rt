@@ -76,5 +76,6 @@ public aspect ToStringAudit
         toStringCall(instance)
     {
         if (ToStringUtils.getInstance().stackTraceContainsRecursiveToStringCalls(instance.getClass()))
+        {}
     }
 }
