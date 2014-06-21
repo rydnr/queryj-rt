@@ -159,9 +159,9 @@ public aspect Tracer
      * @param num the amount to indent.
      * @return such indentation.
      */
-    protected static StringBuffer indent(int num)
+    protected static String indent(int num)
     {
-        StringBuffer result = new StringBuffer();
+        StringBuilder result = new StringBuilder();
 
         for  (int t_iIndex = 0;
                   t_iIndex < num;
@@ -175,6 +175,6 @@ public aspect Tracer
         result.append(Thread.currentThread().hashCode());
         result.append("]");
 
-        return result;
+        return result.toString();
     }
 }
