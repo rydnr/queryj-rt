@@ -193,7 +193,7 @@ public class CacheValidationOutcomeHandlerTest
             };
 
         @NotNull final Sql<String> t_Sql =
-            new SqlElement<>("sql-id", "dao", "sql-name", "select", Cardinality.SINGLE, "all", true, false, "fake sql");
+            new SqlElement<>("sql-id", "dao", "sql-name", "select", SqlCardinality.SINGLE, "all", true, false, "fake sql");
 
         @NotNull final Result<String> t_Result = new ResultElement<>("r1", "Whatever");
 
