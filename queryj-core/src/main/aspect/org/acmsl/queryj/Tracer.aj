@@ -51,6 +51,11 @@ import java.util.Map;
 public aspect Tracer
 {
     /**
+     * The System property to enable it.
+     */
+    public static final String SYSTEM_PROPERTY = "queryj.tracer";
+
+    /**
      * The stack depth.
      */
     private final Map<Thread, Integer> m__mStackDepths = new HashMap<>();
@@ -62,6 +67,15 @@ public aspect Tracer
     public Map<Thread, Integer> getStackDepths()
     {
         return m__mStackDepths;
+    }
+
+    /**
+     * Checks whether it's enabled.
+     * @return {@code true} in such case.
+     */
+    public String isEnabled()
+    {
+        return System.getProperty(SYSTEM_PROPERTY) != null;
     }
 
     /**
@@ -93,20 +107,23 @@ public aspect Tracer
      */
     before(Object obj) : tracePoint(obj)
     {
-        Map<Thread, Integer> t_mStackDepths = getStackDepths();
-
-        Integer t_Depth = t_mStackDepths.get(Thread.currentThread());
-
-        if  (t_Depth == null)
+        if (isEnabled())
         {
-            t_Depth = 0;
+            Map<Thread, Integer> t_mStackDepths = getStackDepths();
+
+            Integer t_Depth = t_mStackDepths.get(Thread.currentThread());
+
+            if  (t_Depth == null)
+            {
+                t_Depth = 0;
+            }
+
+            //System.out.println(
+            LogFactory.getLog("tracer-in").debug(
+                indent(t_Depth.intValue()) + " >> "  + thisJoinPointStaticPart.getSignature());
+
+            t_mStackDepths.put(Thread.currentThread(), t_Depth + 1);
         }
-
-        //LogFactory.getLog("tracer-in").info(
-        System.out.println(
-            indent(t_Depth.intValue()) + " >> "  + thisJoinPointStaticPart.getSignature());
-
-        t_mStackDepths.put(Thread.currentThread(), t_Depth + 1);
     }
 
     /**
