@@ -47,6 +47,7 @@ import org.acmsl.queryj.customsql.ResultSetFlagsRef;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.Parameter;
 import org.acmsl.queryj.customsql.IdentifiableElement;
+import org.acmsl.queryj.customsql.SqlCardinality;
 import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Result;
