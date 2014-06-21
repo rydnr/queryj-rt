@@ -404,7 +404,7 @@ public abstract class AbstractSqlDecorator
     {
         @NotNull final StringBuilder result = new StringBuilder();
 
-        final boolean multiple = cardinality.equals(Cardinality.MULTIPLE);
+        final boolean multiple = cardinality.equals(SqlCardinality.MULTIPLE);
 
         if (multiple)
         {
