@@ -818,7 +818,6 @@ public class SqlElement<T>
             + "[" + "repositoryScope=" + repositoryScope + "]"
             + "[" + "name=" + name + "]"
             + "[" + "cardinality=" + cardinality + "]"
-            + "[" + "name=" + name + "]"
             + "[" + "type=" + type + "]"
             + "[" + "value=" + value + "]"
             + "[" + "validate=" + validate + "]"
