@@ -1,7 +1,7 @@
 /*
                         QueryJ Core
 
-    Copyright (C) 2002-today Jose San Leandro Armend�riz
+    Copyright (C) 2002-today Jose San Leandro Armendariz
                         queryj@acm-sl.org
 
     This library is free software; you can redistribute it and/or
