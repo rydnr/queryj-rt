@@ -528,14 +528,14 @@
             <source>1.7</source>
             <target>1.7</target>
             <warn>constructorName,packageDefaultMethod,deprecation,maskedCatchBlocks,unusedLocals,unusedArguments,unusedImports</warn>
-            <dependencies>
-              <dependency>
-                <groupId>org.aspectj</groupId>
-                <artifactId>aspectjrt</artifactId>
-                <version>1.8.0</version>
-              </dependency>
-            </dependencies>
-          </configuration>
+	  </configuration>
+          <dependencies>
+            <dependency>
+              <groupId>org.aspectj</groupId>
+              <artifactId>aspectjrt</artifactId>
+              <version>1.8.0</version>
+            </dependency>
+          </dependencies>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
