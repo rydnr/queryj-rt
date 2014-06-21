@@ -380,7 +380,7 @@ public class SqlElement<T>
      * @param cardinality such information.
      */
     @SuppressWarnings("unused")
-    protected void setCardinality(@NotNull final Cardinality cardinality)
+    protected void setCardinality(@NotNull final SqlCardinality cardinality)
     {
         immutableSetCardinality(cardinality);
     }
