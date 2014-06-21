@@ -107,7 +107,8 @@ public class CustomSqlCacheWritingHandlerTest
         @NotNull final CustomSqlCacheWritingHandler instance = new CustomSqlCacheWritingHandler();
 
         @NotNull final Sql<String> t_Sql =
-            new SqlElement<>("sql-id", "dao", "sql-name", "select", SqlCardinality.SINGLE, "all", true, false, "fake sql");
+            new SqlElement<>(
+                "sql-id", "dao", "sql-name", "select", SqlCardinality.SINGLE, "all", true, false, "fake sql");
 
         @NotNull final Result<String> t_Result1 = new ResultElement<>("p1", "class1");
 
