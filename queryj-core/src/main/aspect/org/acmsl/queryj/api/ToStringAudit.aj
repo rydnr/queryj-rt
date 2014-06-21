@@ -75,9 +75,17 @@ public aspect ToStringAudit
     String around(final Object instance) :
         toStringCall(instance)
     {
+        @NotNull final String result;
+
         if (ToStringUtils.getInstance().stackTraceContainsRecursiveToStringCalls(instance.getClass()))
         {
-
+            result = "";
         }
+        else
+        {
+            result = proceed(instance);
+        }
+
+        return result;
     }
 }
