@@ -39,6 +39,10 @@ package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
  * Importing JetBrains annotations.
  */
 import org.acmsl.commons.utils.io.FileUtils;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
