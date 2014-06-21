@@ -62,6 +62,9 @@ import org.xml.sax.SAXException;
  */
 import org.checkthread.annotations.ThreadSafe;
 
+/*
+ * Importing JDK classes.
+ */
 import java.util.Locale;
 
 /**
