@@ -53,7 +53,7 @@ public aspect Tracer
     /**
      * The stack depth.
      */
-    private final static Map<Thread, Integer> m__mStackDepths = new HashMap<>();
+    private final Map<Thread, Integer> m__mStackDepths = new HashMap<>();
 
     /**
      * Specifies the stack depths.
