@@ -165,7 +165,7 @@ public aspect PerCommentParsingCache
      * Caching the "retrieveStaticAttribute(String) pointcut.
      */
     String around(final MetaLanguageUtils instance, final String comment) :
-    cacheStaticAttribute(comment)
+    cacheStaticAttribute(instance, comment)
     {
         @Nullable String result;
         @NotNull final String key = "[comment/static]" + comment;
