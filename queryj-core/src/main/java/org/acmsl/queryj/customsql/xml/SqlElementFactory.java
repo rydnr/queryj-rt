@@ -36,7 +36,7 @@ package org.acmsl.queryj.customsql.xml;
 /*
  * Importing some project classes.
  */
-import org.acmsl.queryj.customsql.Sql.SqlCardinality;
+import org.acmsl.queryj.customsql.SqlCardinality;
 import org.acmsl.queryj.customsql.SqlElement;
 
 /*
