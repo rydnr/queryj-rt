@@ -46,7 +46,6 @@ import org.acmsl.commons.utils.ToStringUtils;
  * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 /*
  * Importing JDK classes.
