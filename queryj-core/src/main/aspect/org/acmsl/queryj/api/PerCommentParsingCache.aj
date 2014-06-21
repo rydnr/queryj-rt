@@ -296,7 +296,7 @@ public aspect PerCommentParsingCache
     boolean around(final MetaLanguageUtils instance, final String comment) :
         cacheColumnReadOnly(instance, comment)
     {
-        boolean result;
+        Boolean result;
         @NotNull final String key = "[comment/column-readonly]" + comment;
 
         result = COLUMN_READONLY_CACHE.get(key);
