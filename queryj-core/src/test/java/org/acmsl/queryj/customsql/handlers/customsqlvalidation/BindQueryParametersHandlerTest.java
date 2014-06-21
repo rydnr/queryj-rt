@@ -158,7 +158,7 @@ public class BindQueryParametersHandlerTest
         @NotNull final Parameter t_Parameter = new ParameterElement<>("id", 1, "id", type, "1");
 
         @NotNull final Sql<String> t_Sql =
-            new SqlElement<>("id", "DAO", "name", "select", Cardinality.SINGLE, "oracle", true, false, "description");
+            new SqlElement<>("id", "DAO", "name", "select", SqlCardinality.SINGLE, "oracle", true, false, "description");
 
         @NotNull final Class<?> t_ParameterType;
 
