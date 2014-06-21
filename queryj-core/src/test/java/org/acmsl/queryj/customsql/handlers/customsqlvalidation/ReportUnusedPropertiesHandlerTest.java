@@ -126,7 +126,7 @@ public class ReportUnusedPropertiesHandlerTest
                 "dao",
                 "name",
                 String.class.getSimpleName(),
-                Cardinality.SINGLE,
+                SqlCardinality.SINGLE,
                 "all",
                 true,
                 false,
