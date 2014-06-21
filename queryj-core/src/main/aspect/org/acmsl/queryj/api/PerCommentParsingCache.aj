@@ -349,7 +349,7 @@ public aspect PerCommentParsingCache
     boolean around(final MetaLanguageUtils instance, final String comment) :
         cacheTableDecorator(instance, comment)
     {
-        boolean result;
+        Boolean result;
         @NotNull final String key = "[comment/table-decorator]" + comment;
 
         result = TABLE_DECORATOR_CACHE.get(key);
