@@ -110,7 +110,7 @@ public aspect Tracer
             setStackDepths(t_mStackDepths);
         }
 
-        Integer t_Depth = (Integer) t_mStackDepths.get(Thread.currentThread());
+        Integer t_Depth = t_mStackDepths.get(Thread.currentThread());
 
         if  (t_Depth == null)
         {
