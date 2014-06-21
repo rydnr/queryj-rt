@@ -53,13 +53,13 @@ public aspect Tracer
     /**
      * The stack depth.
      */
-    private static Map m__mStackDepths = new HashMap();
+    private final static Map<Thread, Integer> m__mStackDepths = new HashMap<>();
 
     /**
      * Specifies the stack depths.
      * @param map the new map.
      */
-    protected void setStackDepths(Map map)
+    protected void setStackDepths(Map<Thread, Integer> map)
     {
         m__mStackDepths = map;
     }
@@ -68,7 +68,7 @@ public aspect Tracer
      * Retrieves the stack depths map.
      * @return such map.
      */
-    public Map getStackDepths()
+    public Map<Thread, Integer> getStackDepths()
     {
         return m__mStackDepths;
     }
