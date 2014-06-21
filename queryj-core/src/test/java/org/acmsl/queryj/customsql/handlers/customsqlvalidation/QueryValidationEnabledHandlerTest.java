@@ -84,7 +84,7 @@ public class QueryValidationEnabledHandlerTest
 
         @NotNull final Sql<String> sql =
             new SqlElement<>(
-                "id", "dao", "name", "String", Cardinality.SINGLE, "all", false /* validation */, false, "description");
+                "id", "dao", "name", "String", SqlCardinality.SINGLE, "all", false /* validation */, false, "description");
 
         new QueryJCommandWrapper<Sql<String>>(parameters).setSetting(RetrieveQueryHandler.CURRENT_SQL, sql);
 
