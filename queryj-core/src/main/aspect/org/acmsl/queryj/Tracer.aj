@@ -73,7 +73,7 @@ public aspect Tracer
      * Checks whether it's enabled.
      * @return {@code true} in such case.
      */
-    public String isEnabled()
+    public boolean isEnabled()
     {
         return System.getProperty(SYSTEM_PROPERTY) != null;
     }
