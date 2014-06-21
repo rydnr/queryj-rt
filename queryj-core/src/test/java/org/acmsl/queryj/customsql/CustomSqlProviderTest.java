@@ -338,9 +338,9 @@ public class CustomSqlProviderTest
     public void equal_sql_give_equal_hashes()
     {
         @NotNull final Sql<String> t_Sql1 =
-            new SqlElement<>("id1", "dao", null, "name1", "select", Cardinality.SINGLE, "all", true, false, "desc1");
+            new SqlElement<>("id1", "dao", null, "name1", "select", SqlCardinality.SINGLE, "all", true, false, "desc1");
         @NotNull final Sql<String> t_Sql2 =
-            new SqlElement<>("id2", "dao", null, "name1", "select", Cardinality.SINGLE, "all", true, false, "desc1");
+            new SqlElement<>("id2", "dao", null, "name1", "select", SqlCardinality.SINGLE, "all", true, false, "desc1");
 
         @NotNull final Result<String> t_Result1 = new ResultElement<>("p1", "class1");
         @NotNull final Result<String> t_Result2 = new ResultElement<>("p2", "class1");
