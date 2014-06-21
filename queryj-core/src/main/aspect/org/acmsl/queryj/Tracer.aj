@@ -104,12 +104,6 @@ public aspect Tracer
     {
         Map<Thread, Integer> t_mStackDepths = getStackDepths();
 
-        if  (t_mStackDepths == null)
-        {
-            t_mStackDepths = new HashMap<>();
-            setStackDepths(t_mStackDepths);
-        }
-
         Integer t_Depth = t_mStackDepths.get(Thread.currentThread());
 
         if  (t_Depth == null)
