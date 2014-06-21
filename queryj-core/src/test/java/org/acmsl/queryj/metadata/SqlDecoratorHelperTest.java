@@ -50,7 +50,7 @@ import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing checkthread.org annotations.
+ * Importing JUniannotations.
  */
 import org.junit.Assert;
 import org.junit.Test;
