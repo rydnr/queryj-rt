@@ -531,8 +531,8 @@
             <XaddSerialVersionUID>true</XaddSerialVersionUID>
             <encoding>UTF-8</encoding>
 	    <complianceLevel>1.8</complianceLevel>
-            <source>1.7</source>
-            <target>1.7</target>
+            <source>1.8</source>
+            <target>1.8</target>
             <warn>constructorName,packageDefaultMethod,deprecation,maskedCatchBlocks,unusedLocals,unusedArguments,unusedImports</warn>
 	  </configuration>
           <dependencies>
