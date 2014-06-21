@@ -220,7 +220,7 @@ public class SqlElement<T>
         @Nullable final T repositoryScope,
         @NotNull final T name,
         @NotNull final T type,
-        @NotNull final Cardinality cardinality,
+        @NotNull final SqlCardinality cardinality,
         @Nullable final T implementation,
         final boolean validate,
         final boolean dynamic,
