@@ -56,7 +56,8 @@ import org.jetbrains.annotations.NotNull;
 public aspect ToStringAudit
 {
     /**
-     * The pointcut for "toString()"
+     * The pointcut for "toString()".
+     * @param instance the instance.
      */
     pointcut toStringCall(final Object instance):
            execution(public String *.toString())
