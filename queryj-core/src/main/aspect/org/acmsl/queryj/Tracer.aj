@@ -108,7 +108,7 @@ public aspect Tracer
 
         if  (t_Depth == null)
         {
-            t_Depth = Integer.valueOf(0);
+            t_Depth = 0;
         }
 
         //LogFactory.getLog("tracer-in").info(
