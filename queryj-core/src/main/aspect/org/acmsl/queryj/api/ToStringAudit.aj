@@ -65,6 +65,7 @@ public aspect ToStringAudit
 
     /**
      * Auditing the toString() pointcut.
+     * @param instance the instance.
      */
     String around(final Object instance) :
         toStringCall(instance)
