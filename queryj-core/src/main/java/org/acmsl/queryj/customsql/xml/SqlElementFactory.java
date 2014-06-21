@@ -52,8 +52,6 @@ import org.apache.commons.digester.Digester;
 /*
  * Importing some SAX classes.
  */
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 
