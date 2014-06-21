@@ -56,15 +56,6 @@ public aspect Tracer
     private final Map<Thread, Integer> m__mStackDepths = new HashMap<>();
 
     /**
-     * Specifies the stack depths.
-     * @param map the new map.
-     */
-    protected void setStackDepths(Map<Thread, Integer> map)
-    {
-        m__mStackDepths = map;
-    }
-
-    /**
      * Retrieves the stack depths map.
      * @return such map.
      */
