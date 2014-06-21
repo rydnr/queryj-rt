@@ -105,7 +105,7 @@ public class AbstractSqlDecoratorTest
     public void isResultNullable_is_correct_for_multiple_queries()
     {
         @NotNull final Sql<String> sql =
-            new SqlElement<>("id1", "name1", "select", Cardinality.MULTIPLE, "all", false, false, "none", "desc1");
+            new SqlElement<>("id1", "name1", "select", SqlCardinality.MULTIPLE, "all", false, false, "none", "desc1");
 
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
