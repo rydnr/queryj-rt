@@ -327,7 +327,7 @@ public aspect PerCommentParsingCache
 
             if (result == null)
             {
-                COLUMN_DISCRIMINATED_TABLES_CACHE.put(key, key);
+                COLUMN_DISCRIMINATED_TABLES_CACHE.put(key, new ArrayList<>(0);
             }
             else
             {
