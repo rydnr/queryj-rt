@@ -589,7 +589,7 @@ public class TableTestHelper
             @NotNull final String type = sqlRow.get("type");
             @NotNull final String matches = sqlRow.get("matches");
             @NotNull final String validate = sqlRow.get("validate");
-            @NotNull final Cardinality cardinality = Cardinality.fromString(matches.toLowerCase(Locale.US));
+            @NotNull final SqlCardinality cardinality = SqlCardinality.fromString(matches.toLowerCase(Locale.US));
             @NotNull final String value = sqlRow.get(VALUE);
 
             @NotNull final SqlElement<String> sql =
