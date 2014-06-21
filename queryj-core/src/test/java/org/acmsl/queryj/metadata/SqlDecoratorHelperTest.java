@@ -45,7 +45,7 @@ import org.acmsl.queryj.customsql.ParameterRefElement;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.ResultElement;
 import org.acmsl.queryj.customsql.Sql;
-import org.acmsl.queryj.customsql.Sql.Cardinality;
+import org.acmsl.queryj.customsql.SqlCardinality;
 import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
 import org.easymock.EasyMock;
