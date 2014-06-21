@@ -298,13 +298,13 @@ public aspect PerCommentParsingCache
         boolean result;
         @NotNull final String key = "[comment/column-readonly]" + comment;
 
-        result = COLUMN_BOOL_CACHE.get(key);
+        result = COLUMN_READONLY_CACHE.get(key);
 
         if (result == null)
         {
             result = proceed(instance, comment);
 
-            COLUMN_BOOL_CACHE.put(key, result);
+            COLUMN_READONLY_CACHE.put(key, result);
         }
 
         return result;
