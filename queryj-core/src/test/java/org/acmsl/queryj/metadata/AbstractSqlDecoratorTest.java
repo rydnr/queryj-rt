@@ -123,7 +123,7 @@ public class AbstractSqlDecoratorTest
     public void isResultNullable_is_correct_for_explicit_results_and_single_queries()
     {
         @NotNull final Sql<String> sql =
-            new SqlElement<>("id1", "name1", "select", Cardinality.SINGLE, "all", false, false, "none", "desc1");
+            new SqlElement<>("id1", "name1", "select", SqlCardinality.SINGLE, "all", false, false, "none", "desc1");
 
         @NotNull final Result<String> result =
             new ResultElement<>("r1", String.class.getSimpleName());
