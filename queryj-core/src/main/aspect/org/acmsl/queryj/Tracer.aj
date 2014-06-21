@@ -140,7 +140,7 @@ public aspect Tracer
 
         t_Depth = t_Depth - 1;
 
-        if  (t_Depth.intValue() == 0)
+        if  (t_Depth == 0)
         {
             t_mStackDepths.remove(Thread.currentThread());
         }
