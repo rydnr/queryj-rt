@@ -402,7 +402,7 @@ public class SqlElement<T>
     @Override
     public boolean isMultiple()
     {
-        return getCardinality().equals(Cardinality.MULTIPLE);
+        return getCardinality().equals(SqlCardinality.MULTIPLE);
     }
 
     /**
