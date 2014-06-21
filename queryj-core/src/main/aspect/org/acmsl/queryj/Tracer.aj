@@ -135,7 +135,7 @@ public aspect Tracer
 
         if  (t_Depth == null)
         {
-            t_Depth = new Integer(0);
+            t_Depth = 0;
         }
 
         t_Depth = new Integer(t_Depth.intValue() - 1);
