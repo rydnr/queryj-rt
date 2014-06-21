@@ -47,12 +47,6 @@ import org.acmsl.commons.utils.ToStringUtils;
  */
 import org.jetbrains.annotations.NotNull;
 
-/*
- * Importing JDK classes.
- */
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * Audits recursive calls on toString().
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
