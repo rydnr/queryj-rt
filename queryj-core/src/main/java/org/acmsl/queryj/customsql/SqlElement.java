@@ -391,7 +391,7 @@ public class SqlElement<T>
      */
     @Override
     @NotNull
-    public Cardinality getCardinality()
+    public SqlCardinality getCardinality()
     {
         return this.cardinality;
     }
