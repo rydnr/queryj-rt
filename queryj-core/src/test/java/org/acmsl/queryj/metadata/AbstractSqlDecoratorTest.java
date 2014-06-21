@@ -154,7 +154,7 @@ public class AbstractSqlDecoratorTest
     public void getParameterTypes_returns_no_duplicates()
     {
         @NotNull final Sql<String> sql =
-            new SqlElement<>("id1", "name1", "select", Cardinality.SINGLE, "all", false, false, "none", "desc1");
+            new SqlElement<>("id1", "name1", "select", SqlCardinality.SINGLE, "all", false, false, "none", "desc1");
 
         @SuppressWarnings("unchecked")
         @NotNull final Parameter parameter =
