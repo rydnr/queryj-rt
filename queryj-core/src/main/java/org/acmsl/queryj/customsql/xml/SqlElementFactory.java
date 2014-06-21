@@ -36,7 +36,7 @@ package org.acmsl.queryj.customsql.xml;
 /*
  * Importing some project classes.
  */
-import org.acmsl.queryj.customsql.Sql.Cardinality;
+import org.acmsl.queryj.customsql.Sql.SqlCardinality;
 import org.acmsl.queryj.customsql.SqlElement;
 
 /*
@@ -108,14 +108,14 @@ public class SqlElementFactory
 
         @Nullable final String t_strMatches = attributes.getValue("matches");
 
-        @NotNull final Cardinality t_Cardinality;
+        @NotNull final SqlCardinality t_SqlCardinality;
         if (t_strMatches == null)
         {
-            t_Cardinality = Cardinality.MULTIPLE;
+            t_SqlCardinality = SqlCardinality.MULTIPLE;
         }
         else
         {
-            t_Cardinality = Cardinality.fromString(t_strMatches.toLowerCase(Locale.US));
+            t_SqlCardinality = SqlCardinality.fromString(t_strMatches.toLowerCase(Locale.US));
         }
 
         boolean t_bValidate = false;
@@ -144,7 +144,7 @@ public class SqlElementFactory
                     t_strDAO,
                     t_strName,
                     t_strType,
-                    t_Cardinality,
+                    t_SqlCardinality,
                     t_strImplementation,
                     t_bValidate,
                     t_bDynamic,
@@ -157,7 +157,7 @@ public class SqlElementFactory
                     t_strId,
                     t_strName,
                     t_strType,
-                    t_Cardinality,
+                    t_SqlCardinality,
                     t_strImplementation,
                     t_bValidate,
                     t_bDynamic,
