@@ -178,7 +178,19 @@
         </configuration>
       </plugin>
       <plugin>
-        <groupId>org.codehaus.mojo</groupId>                                                                                  <artifactId>aspectj-maven-plugin</artifactId>                                                                         <configuration>                                                                                                         <warn />                                                                                                            </configuration>                                                                                                    </plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>aspectj-maven-plugin</artifactId>
+        <configuration>
+          <warn />
+        </configuration>
+        <executions>
+	  <execution>
+	    <goals>
+	      <goal>compile</goal>
+	    </goals>
+	  </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
 </project>
