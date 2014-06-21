@@ -799,7 +799,7 @@ public class SqlElement<T>
         final T repositoryScope,
         final T name,
         final T type,
-        @NotNull final Cardinality cardinality,
+        @NotNull final SqlCardinality cardinality,
         final T implementation,
         final T value,
         final boolean validate,
