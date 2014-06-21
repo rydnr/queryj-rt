@@ -533,7 +533,7 @@
 	    <complianceLevel>1.8</complianceLevel>
             <source>1.8</source>
             <target>1.8</target>
-            <warn>constructorName,packageDefaultMethod,deprecation,maskedCatchBlocks,unusedLocals,unusedArguments,unusedImports</warn>
+            <warn>constructorName,packageDefaultMethod,deprecation,maskedCatchBlocks,unusedLocals,unusedArguments,unusedImports,all</warn>
 	  </configuration>
           <dependencies>
             <dependency>
