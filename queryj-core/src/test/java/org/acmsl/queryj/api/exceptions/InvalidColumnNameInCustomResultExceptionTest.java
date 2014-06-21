@@ -121,7 +121,7 @@ public class InvalidColumnNameInCustomResultExceptionTest
                 "dao",
                 "name",
                 String.class.getSimpleName(),
-                Cardinality.SINGLE,
+                SqlCardinality.SINGLE,
                 "all",
                 true,
                 false,
