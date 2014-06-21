@@ -38,7 +38,7 @@ package org.acmsl.queryj.customsql;
 /*
  * Importing QueryJ Core classes.
  */
-import org.acmsl.queryj.customsql.Sql.Cardinality;
+import org.acmsl.queryj.customsql.SqlCardinality;
 import org.acmsl.queryj.metadata.SqlDAO;
 import org.acmsl.queryj.metadata.SqlParameterDAO;
 import org.acmsl.queryj.metadata.SqlPropertyDAO;
