@@ -197,7 +197,7 @@ public aspect PerCommentParsingCache
      * Caching the "retrieveDeclaredParent(String) pointcut.
      */
     String around(final MetaLanguageUtils instance, final String comment) :
-        cacheDeclaredParent(comment)
+        cacheDeclaredParent(instance, comment)
     {
         @Nullable String result;
         @NotNull final String key = "[comment/declared-parent]" + comment;
@@ -229,7 +229,7 @@ public aspect PerCommentParsingCache
      * Caching the "retrieveDiscriminatingParent(String) pointcut.
      */
     String around(final MetaLanguageUtils instance, final String comment) :
-        cacheDiscriminatingParent(comment)
+        cacheDiscriminatingParent(instance, comment)
     {
         @Nullable String result;
         @NotNull final String key = "[comment/discriminating-parent]" + comment;
@@ -261,7 +261,7 @@ public aspect PerCommentParsingCache
      * Caching the "retrieveColumnBool(String) pointcut.
      */
     String[] around(final MetaLanguageUtils instance, final String comment) :
-        cacheColumnBool(comment)
+        cacheColumnBool(instance, comment)
     {
         @Nullable String[] result;
         @NotNull final String key = "[comment/column-bool]" + comment;
@@ -293,7 +293,7 @@ public aspect PerCommentParsingCache
      * Caching the "retrieveColumnReadOnly(String) pointcut.
      */
     boolean around(final MetaLanguageUtils instance, final String comment) :
-        cacheColumnReadOnly(comment)
+        cacheColumnReadOnly(instance, comment)
     {
         boolean result;
         @NotNull final String key = "[comment/column-readonly]" + comment;
@@ -314,7 +314,7 @@ public aspect PerCommentParsingCache
      * Caching the "retrieveColumnDiscriminatedTables(String) pointcut.
      */
     List<List<String>> around(final MetaLanguageUtils instance, final String comment) :
-        cacheColumnDiscriminatedTables(comment)
+        cacheColumnDiscriminatedTables(instance, comment)
     {
         @Nullable List<List<String>> result;
         @NotNull final String key = "[comment/column-discriminated-tables]" + comment;
@@ -346,7 +346,7 @@ public aspect PerCommentParsingCache
      * Caching the "retrieveTableDecorator(String) pointcut.
      */
     boolean around(final MetaLanguageUtils instance, final String comment) :
-        cacheTableDecorator(comment)
+        cacheTableDecorator(instance, comment)
     {
         boolean result;
         @NotNull final String key = "[comment/table-decorator]" + comment;
@@ -367,7 +367,7 @@ public aspect PerCommentParsingCache
      * Caching the "retrieveTableRelationship(String) pointcut.
      */
     List<List<String>> around(final MetaLanguageUtils instance, final String comment) :
-        cacheTableRelationship(comment)
+        cacheTableRelationship(instance, comment)
     {
         @Nullable List<List<String>> result;
         @NotNull final String key = "[comment/table-relationship]" + comment;
