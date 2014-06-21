@@ -295,7 +295,7 @@ public class CustomSqlValidationHandlerTest
         @NotNull final String t_strSql = "select 1 from dual where ? = 1";
 
         @NotNull final SqlElement<String> t_Sql =
-            new SqlElement<>("id", "DAO", "name", "select", Cardinality.SINGLE, "oracle", true, false, "description");
+            new SqlElement<>("id", "DAO", "name", "select", SqlCardinality.SINGLE, "oracle", true, false, "description");
 
         t_Sql.setValue(t_strSql);
 
