@@ -381,7 +381,7 @@ public aspect PerCommentParsingCache
 
             if (result == null)
             {
-                TABLE_RELATIONSHIP_CACHE.put(key, key);
+                TABLE_RELATIONSHIP_CACHE.put(key, new ArrayList<>(0));
             }
             else
             {
