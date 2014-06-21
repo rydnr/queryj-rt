@@ -114,14 +114,14 @@ public aspect Tracer
 
         if  (t_Depth == null)
         {
-            t_Depth = new Integer(0);
+            t_Depth = Integer.valueOf(0);
         }
 
         //LogFactory.getLog("tracer-in").info(
         System.out.println(
             indent(t_Depth.intValue()) + " >> "  + thisJoinPointStaticPart.getSignature());
 
-        t_mStackDepths.put(Thread.currentThread(), new Integer(t_Depth.intValue() + 1));
+        t_mStackDepths.put(Thread.currentThread(), (t_Depth.intValue() + 1);
     }
 
     /**
