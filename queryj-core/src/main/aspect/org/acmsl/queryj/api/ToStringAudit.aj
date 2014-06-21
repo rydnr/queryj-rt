@@ -21,7 +21,7 @@
     Thanks to ACM S.L. for distributing this library under the GPL license.
     Contact info: jose.sanleandro@acm-sl.com
     Postal Address: c/Playa de Lagoa, 1
-                    Urb. Valdecaba�as
+                    Urb. Valdecabanas
                     Boadilla del monte
                     28660 Madrid
                     Spain
