@@ -530,7 +530,7 @@
             <warn>constructorName,packageDefaultMethod,deprecation,maskedCatchBlocks,unusedLocals,unusedArguments,unusedImports</warn>
             <dependencies>
               <dependency>
-                <groupId>aspectj</groupId>
+                <groupId>org.aspectj</groupId>
                 <artifactId>aspectjrt</artifactId>
                 <version>1.8.0</version>
               </dependency>
