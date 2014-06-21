@@ -64,6 +64,7 @@ import org.jetbrains.annotations.NotNull;
 /*
  * Importing JUnit classes.
  */
+import org.jetbrains.annotations.Nullable;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -162,7 +163,7 @@ public class BindQueryParametersHandlerTest
 
         @NotNull final Class<?> t_ParameterType;
 
-        @NotNull final TypeManager t_TypeManager = new JdbcTypeManager();
+        @Nullable final TypeManager t_TypeManager = new JdbcTypeManager();
 
         if (t_TypeManager.isPrimitiveWrapper(type))
         {
