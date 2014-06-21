@@ -133,7 +133,7 @@ public class RetrieveQueryHandlerTest
 
         @NotNull final List<Sql<String>> list = new ArrayList<>(1);
         list.add(
-            new SqlElement<>("id", "dao", "name", "String", Cardinality.SINGLE, "all", true, false, "description"));
+            new SqlElement<>("id", "dao", "name", "String", SqlCardinality.SINGLE, "all", true, false, "description"));
         new QueryJCommandWrapper<List<Sql<String>>>(parameters).setSetting(RetrieveQueryHandler.SQL_LIST, list);
 
         Assert.assertEquals(list, instance.retrieveSqlList(parameters));
