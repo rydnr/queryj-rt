@@ -58,6 +58,12 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 
 /*
+ * Importing JetBrains annotations.
+ */
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+/*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
