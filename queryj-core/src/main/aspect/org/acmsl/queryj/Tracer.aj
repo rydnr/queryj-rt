@@ -161,7 +161,7 @@ public aspect Tracer
      */
     protected static String indent(int num)
     {
-        StringBuilder result = new StringBuilder();
+        final StringBuilder result = new StringBuilder();
 
         for  (int t_iIndex = 0;
                   t_iIndex < num;
