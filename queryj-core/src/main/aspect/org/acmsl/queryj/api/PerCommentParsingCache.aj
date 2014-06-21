@@ -394,5 +394,4 @@ public aspect PerCommentParsingCache
 
         return result;
     }
-
 }
