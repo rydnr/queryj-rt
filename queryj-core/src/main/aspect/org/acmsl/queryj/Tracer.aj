@@ -115,7 +115,7 @@ public aspect Tracer
         System.out.println(
             indent(t_Depth.intValue()) + " >> "  + thisJoinPointStaticPart.getSignature());
 
-        t_mStackDepths.put(Thread.currentThread(), t_Depth.intValue() + 1);
+        t_mStackDepths.put(Thread.currentThread(), t_Depth + 1);
     }
 
     /**
@@ -131,14 +131,14 @@ public aspect Tracer
             setStackDepths(t_mStackDepths);
         }
 
-        Integer t_Depth = (Integer) t_mStackDepths.get(Thread.currentThread());
+        Integer t_Depth = t_mStackDepths.get(Thread.currentThread());
 
         if  (t_Depth == null)
         {
             t_Depth = 0;
         }
 
-        t_Depth = new Integer(t_Depth.intValue() - 1);
+        t_Depth = t_Depth - 1;
 
         if  (t_Depth.intValue() == 0)
         {
