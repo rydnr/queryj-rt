@@ -275,7 +275,7 @@ public aspect PerCommentParsingCache
 
             if (result == null)
             {
-                COLUMN_BOOL_CACHE.put(key, key);
+                COLUMN_BOOL_CACHE.put(key, new String[0]);
             }
             else
             {
