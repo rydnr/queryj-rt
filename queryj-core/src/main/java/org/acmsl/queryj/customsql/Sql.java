@@ -171,7 +171,7 @@ public interface Sql<T>
      * @return such information.
      */
     @NotNull
-    Cardinality getCardinality();
+    SqlCardinality getCardinality();
 
     /**
      * Retrieves the <i>implementation</i> attribute.
