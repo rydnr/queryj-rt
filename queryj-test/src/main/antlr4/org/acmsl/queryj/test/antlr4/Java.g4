@@ -1,5 +1,5 @@
 //;-*- mode: antlr -*-
-// From
+// From https://raw.githubusercontent.com/antlr/grammars-v4/master/java/Java.g4
 /*
  [The "BSD licence"]
  Copyright (c) 2013 Terence Parr, Sam Harwell
