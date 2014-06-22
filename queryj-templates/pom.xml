@@ -54,7 +54,7 @@
       <artifactId>acmsl-commons</artifactId>
       <exclusions>
         <exclusion>
-          <groupId>commons-beanutils</groupId>
+          <groupId>org.apache.commons</groupId>
           <artifactId>commons-beanutils</artifactId>
         </exclusion>
         <exclusion>
@@ -116,7 +116,7 @@
       <optional>true</optional>
     </dependency>
     <dependency>
-      <groupId>commons-logging</groupId>
+      <groupId>org.apache.commons</groupId>
       <artifactId>commons-logging</artifactId>
       <scope>runtime</scope>
       <optional>true</optional>
@@ -227,7 +227,22 @@
           </execution-->
         </executions>
       </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>aspectj-maven-plugin</artifactId>
+        <configuration>
+          <warn />
+        </configuration>
+        <executions>
+	  <execution>
+	    <goals>
+	      <goal>compile</goal>
+	    </goals>
+	  </execution>
+        </executions>
+      </plugin>
    </plugins>
+
    <testResources>
      <testResource>
        <directory>${project.basedir}/src/main/resources/</directory>
