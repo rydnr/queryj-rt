@@ -307,7 +307,7 @@ public class TableTestHelper
             int precision;
             String[] booleanInfo;
 
-            for (@NotNull final Map<String, String> columnEntry: columnInfo.asMaps())
+            for (@NotNull final Map<String, String> columnEntry: columnInfo.asMaps(String.class, String.class))
             {
                 if (table.getName().equals(columnEntry.get(AntTablesElement.TABLE)))
                 {
