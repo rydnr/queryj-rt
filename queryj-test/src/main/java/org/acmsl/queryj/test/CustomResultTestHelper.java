@@ -110,7 +110,7 @@ public class CustomResultTestHelper
         @NotNull final DataTable tableInfo,
         @NotNull final Map<String, Result<String>> results)
     {
-        @NotNull final List<Map<String, String>> tableEntries = tableInfo.asMaps();
+        @NotNull final List<Map<String, String>> tableEntries = tableInfo.asMaps(String.class, String.class);
 
         @Nullable Result<String> result;
 
