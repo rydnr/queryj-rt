@@ -737,7 +737,7 @@ public class TableTestHelper
     {
         @NotNull final Map<String, List<Row<String>>> result = new HashMap<>();
 
-        for (@NotNull final Map<String, String> tableRow: values.asMaps())
+        for (@NotNull final Map<String, String> tableRow: values.asMaps(String.class, String.class))
         {
             @NotNull final String tableName = tableRow.get("table");
             @Nullable List<Row<String>> rows = result.get(tableName);
