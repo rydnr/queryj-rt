@@ -40,11 +40,11 @@ package org.acmsl.queryj.test.antlr4;
  * Importing QueryJ Test classes.
  */
 import org.acmsl.queryj.test.antlr4.JavaParser.ClassDeclarationContext;
+import org.acmsl.queryj.test.antlr4.JavaParser.InterfaceDeclarationContext;
 
 /*
  * Importing checkthread.org annotations.
  */
-import org.acmsl.queryj.test.antlr4.JavaParser.InterfaceDeclarationContext;
 import org.checkthread.annotations.ThreadSafe;
 
 /*
