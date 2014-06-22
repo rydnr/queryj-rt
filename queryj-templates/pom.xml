@@ -150,7 +150,7 @@
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
       <scope>runtime</scope>
-      <!--optional>true</optional-->
+      <optional>true</optional>
     </dependency>
   </dependencies>
 
@@ -233,7 +233,22 @@
           </execution-->
         </executions>
       </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>aspectj-maven-plugin</artifactId>
+        <configuration>
+          <warn />
+        </configuration>
+        <executions>
+	  <execution>
+	    <goals>
+	      <goal>compile</goal>
+	    </goals>
+	  </execution>
+        </executions>
+      </plugin>
    </plugins>
+
    <testResources>
      <testResource>
        <directory>${project.basedir}/src/main/resources/</directory>
