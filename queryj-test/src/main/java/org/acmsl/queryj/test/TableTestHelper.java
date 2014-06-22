@@ -513,7 +513,7 @@ public class TableTestHelper
 
         for (@NotNull final Table<String, Attribute<String>, List<Attribute<String>>> table : tables.values())
         {
-            for (@NotNull final Map<String, String> fkEntry: fkInfo.asMaps())
+            for (@NotNull final Map<String, String> fkEntry: fkInfo.asMaps(String.class, String.class))
             {
                 @Nullable final String sourceTable;
                 @Nullable final String sourceColumnsField;
