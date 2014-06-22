@@ -46,7 +46,6 @@ import org.acmsl.queryj.test.antlr4.JavaParser.ClassDeclarationContext;
  * Importing checkthread.org annotations.
  */
 import org.acmsl.queryj.test.antlr4.JavaParser.InterfaceDeclarationContext;
-import org.acmsl.queryj.test.antlr4.JavaParser.NormalInterfaceDeclarationContext;
 import org.checkthread.annotations.ThreadSafe;
 
 /*
