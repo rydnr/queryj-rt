@@ -36,13 +36,9 @@
 package org.acmsl.queryj.customsql.handlers.customsqlvalidation;
 
 /*
- * Importing ACM S.L. Java Commons classes.
+ * Importing JetBrains annotations.
  */
 import org.acmsl.commons.utils.io.FileUtils;
-
-/*
- * Importing QueryJ Core classes.
- */
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.QueryJCommandWrapper;
@@ -53,7 +49,7 @@ import org.acmsl.queryj.customsql.CustomSqlProviderTest.SemiMockedAbstractCustom
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.ResultElement;
 import org.acmsl.queryj.customsql.Sql;
-import org.acmsl.queryj.customsql.SqlCardinality;
+import org.acmsl.queryj.customsql.Sql.Cardinality;
 import org.acmsl.queryj.customsql.SqlConnectionFlagsDAO;
 import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.customsql.SqlResultSetFlagsDAO;
@@ -64,16 +60,14 @@ import org.acmsl.queryj.metadata.SqlDAO;
 import org.acmsl.queryj.metadata.SqlParameterDAO;
 import org.acmsl.queryj.metadata.SqlPropertyDAO;
 import org.acmsl.queryj.metadata.SqlResultDAO;
-
-/*
- * Importing JetBrains annotations.
- */
+import org.apache.commons.configuration.PropertiesConfiguration;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing JUnit/EasyMock classes.
+ * Importing checkthread.org annotations.
  */
-import org.easymock.EasyMock;
+import org.checkthread.annotations.ThreadSafe;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
@@ -81,9 +75,6 @@ import org.junit.rules.TemporaryFolder;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
-/*
- * Importing JDK classes.
- */
 import java.io.File;
 import java.nio.charset.Charset;
 
@@ -114,7 +105,7 @@ public class SkipValidationIfCacheExistsHandlerTest
             new SkipValidationIfCacheExistsHandler();
 
         @NotNull final Sql<String> t_Sql =
-            new SqlElement<>("sql-id", "dao", "sql-name", "select", SqlCardinality.SINGLE, "all", true, false, "fake sql");
+            new SqlElement<>("sql-id", "dao", "sql-name", "select", Cardinality.SINGLE, "all", true, false, "fake sql");
 
         @NotNull final Result<String> t_Result = new ResultElement<>("r1", "Whatever");
 
