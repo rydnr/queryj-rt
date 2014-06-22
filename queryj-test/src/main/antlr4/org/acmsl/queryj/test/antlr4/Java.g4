@@ -1,4 +1,5 @@
 //;-*- mode: antlr -*-
+// From
 /*
  [The "BSD licence"]
  Copyright (c) 2013 Terence Parr, Sam Harwell
