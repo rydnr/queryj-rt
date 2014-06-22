@@ -43,15 +43,15 @@ import org.acmsl.queryj.test.antlr4.JavaParser.ClassDeclarationContext;
 import org.acmsl.queryj.test.antlr4.JavaParser.InterfaceDeclarationContext;
 
 /*
- * Importing checkthread.org annotations.
- */
-import org.checkthread.annotations.ThreadSafe;
-
-/*
  * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+
+/*
+ * Importing checkthread.org annotations.
+ */
+import org.checkthread.annotations.ThreadSafe;
 
 /**
  * Visits classDeclaration rules in Java.g4 grammar.
