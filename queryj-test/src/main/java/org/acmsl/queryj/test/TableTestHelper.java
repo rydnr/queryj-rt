@@ -964,7 +964,7 @@ public class TableTestHelper
     {
         @Nullable String result = null;
 
-        for (@NotNull final Map<String, String> tableRow: values.asMaps())
+        for (@NotNull final Map<String, String> tableRow: values.asMaps(String.class, String.class))
         {
             result = tableRow.get(key);
             break;
