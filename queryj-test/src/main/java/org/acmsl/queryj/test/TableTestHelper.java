@@ -624,7 +624,7 @@ public class TableTestHelper
     {
         @NotNull final Map<String, List<Parameter<String, ?>>> result = new HashMap<>();
 
-        for (@NotNull final Map<String, String> sqlRow: parameterInfo.asMaps())
+        for (@NotNull final Map<String, String> sqlRow: parameterInfo.asMaps(String.class, String.class))
         {
             @NotNull final String id = sqlRow.get("id");
             @NotNull final String sqlRef = sqlRow.get("sql");
