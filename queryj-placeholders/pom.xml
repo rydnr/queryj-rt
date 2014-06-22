@@ -44,7 +44,7 @@
       <artifactId>acmsl-commons</artifactId>
       <exclusions>
         <exclusion>
-          <groupId>commons-beanutils</groupId>
+          <groupId>org.apache.commons</groupId>
           <artifactId>commons-beanutils</artifactId>
         </exclusion>
         <exclusion>
@@ -80,7 +80,7 @@
       <optional>true</optional>
     </dependency>
     <dependency>
-      <groupId>commons-lang</groupId>
+      <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang</artifactId>
     </dependency>
     <dependency>
