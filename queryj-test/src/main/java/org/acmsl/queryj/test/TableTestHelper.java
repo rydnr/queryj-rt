@@ -223,7 +223,7 @@ public class TableTestHelper
         @NotNull final DataTable tableInfo,
         @NotNull final Map<String, Table<String, Attribute<String>, List<Attribute<String>>>> tables)
     {
-        @NotNull final List<Map<String, String>> tableEntries = tableInfo.asMaps();
+        @NotNull final List<Map<String, String>> tableEntries = tableInfo.asMaps(String.class, String.class);
 
         @Nullable Table<String, Attribute<String>, List<Attribute<String>>> table;
 
