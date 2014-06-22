@@ -49,7 +49,7 @@ import org.acmsl.queryj.customsql.ParameterElement;
 import org.acmsl.queryj.customsql.ParameterRef;
 import org.acmsl.queryj.customsql.ParameterRefElement;
 import org.acmsl.queryj.customsql.Sql;
-import org.acmsl.queryj.customsql.SqlCardinality;
+import org.acmsl.queryj.customsql.Sql.Cardinality;
 import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
 import org.acmsl.queryj.metadata.vo.Attribute;
@@ -589,7 +589,7 @@ public class TableTestHelper
             @NotNull final String type = sqlRow.get("type");
             @NotNull final String matches = sqlRow.get("matches");
             @NotNull final String validate = sqlRow.get("validate");
-            @NotNull final SqlCardinality cardinality = SqlCardinality.fromString(matches.toLowerCase(Locale.US));
+            @NotNull final Cardinality cardinality = Cardinality.fromString(matches.toLowerCase(Locale.US));
             @NotNull final String value = sqlRow.get(VALUE);
 
             @NotNull final SqlElement<String> sql =
