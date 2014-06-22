@@ -170,7 +170,7 @@ public class CustomResultTestHelper
         @NotNull final Map<String, Result<String>> results,
         @NotNull final Map<String, List<Property<String>>> properties)
     {
-        @NotNull final List<Map<String, String>> propertyEntries = tableInfo.asMaps();
+        @NotNull final List<Map<String, String>> propertyEntries = tableInfo.asMaps(String.class, String.class);
 
         @Nullable Property<String> property;
 
