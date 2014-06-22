@@ -39,7 +39,6 @@ package org.acmsl.queryj.test.antlr4;
 /*
  * Importing QueryJ Test classes.
  */
-import gherkin.lexer.Ja;
 import org.acmsl.queryj.test.antlr4.JavaParser.ClassDeclarationContext;
 
 /*
