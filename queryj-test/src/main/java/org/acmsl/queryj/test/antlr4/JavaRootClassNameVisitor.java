@@ -131,7 +131,7 @@ public class JavaRootClassNameVisitor
      */
     @NotNull
     @Override
-    public String visitNormalInterfaceDeclaration(@NotNull final InterfaceDeclarationContext context)
+    public String visitInterfaceDeclaration(@NotNull final InterfaceDeclarationContext context)
     {
         setRootClass(context.getChild(1).getText());
 
