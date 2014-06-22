@@ -1,8 +1,9 @@
 /*
-                        QueryJ Core
+                        QueryJ-Core
 
     Copyright (C) 2002-today Jose San Leandro Armend�riz
-                        queryj@acm-sl.org
+                        jsanleandro@yahoo.es
+                        chousz@yahoo.com
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU General Public
@@ -19,7 +20,7 @@
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
     Thanks to ACM S.L. for distributing this library under the GPL license.
-    Contact info: jose.sanleandro@acm-sl.com
+    Contact info: jsanleandro@yahoo.es
     Postal Address: c/Playa de Lagoa, 1
                     Urb. Valdecaba�as
                     Boadilla del monte
@@ -46,9 +47,7 @@ import org.jetbrains.annotations.Nullable;
 /*
  * Importing JDK classes.
  */
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -166,7 +165,7 @@ public aspect PerCommentParsingCache
      * Caching the "retrieveStaticAttribute(String) pointcut.
      */
     String around(final MetaLanguageUtils instance, final String comment) :
-    cacheStaticAttribute(instance, comment)
+    cacheStaticAttribute(comment)
     {
         @Nullable String result;
         @NotNull final String key = "[comment/static]" + comment;
@@ -198,7 +197,7 @@ public aspect PerCommentParsingCache
      * Caching the "retrieveDeclaredParent(String) pointcut.
      */
     String around(final MetaLanguageUtils instance, final String comment) :
-        cacheDeclaredParent(instance, comment)
+        cacheDeclaredParent(comment)
     {
         @Nullable String result;
         @NotNull final String key = "[comment/declared-parent]" + comment;
@@ -230,7 +229,7 @@ public aspect PerCommentParsingCache
      * Caching the "retrieveDiscriminatingParent(String) pointcut.
      */
     String around(final MetaLanguageUtils instance, final String comment) :
-        cacheDiscriminatingParent(instance, comment)
+        cacheDiscriminatingParent(comment)
     {
         @Nullable String result;
         @NotNull final String key = "[comment/discriminating-parent]" + comment;
@@ -262,7 +261,7 @@ public aspect PerCommentParsingCache
      * Caching the "retrieveColumnBool(String) pointcut.
      */
     String[] around(final MetaLanguageUtils instance, final String comment) :
-        cacheColumnBool(instance, comment)
+        cacheColumnBool(comment)
     {
         @Nullable String[] result;
         @NotNull final String key = "[comment/column-bool]" + comment;
@@ -275,7 +274,7 @@ public aspect PerCommentParsingCache
 
             if (result == null)
             {
-                COLUMN_BOOL_CACHE.put(key, new String[0]);
+                COLUMN_BOOL_CACHE.put(key, key);
             }
             else
             {
@@ -294,28 +293,28 @@ public aspect PerCommentParsingCache
      * Caching the "retrieveColumnReadOnly(String) pointcut.
      */
     boolean around(final MetaLanguageUtils instance, final String comment) :
-        cacheColumnReadOnly(instance, comment)
+        cacheColumnReadOnly(comment)
     {
-        Boolean result;
+        boolean result;
         @NotNull final String key = "[comment/column-readonly]" + comment;
 
-        result = COLUMN_READONLY_CACHE.get(key);
+        result = COLUMN_BOOL_CACHE.get(key);
 
         if (result == null)
         {
             result = proceed(instance, comment);
 
-            COLUMN_READONLY_CACHE.put(key, result);
+            COLUMN_BOOL_CACHE.put(key, result);
         }
 
-        return result.booleanValue();
+        return result;
     }
 
     /**
      * Caching the "retrieveColumnDiscriminatedTables(String) pointcut.
      */
     List<List<String>> around(final MetaLanguageUtils instance, final String comment) :
-        cacheColumnDiscriminatedTables(instance, comment)
+        cacheColumnDiscriminatedTables(comment)
     {
         @Nullable List<List<String>> result;
         @NotNull final String key = "[comment/column-discriminated-tables]" + comment;
@@ -328,7 +327,7 @@ public aspect PerCommentParsingCache
 
             if (result == null)
             {
-                COLUMN_DISCRIMINATED_TABLES_CACHE.put(key, new ArrayList<>(0));
+                COLUMN_DISCRIMINATED_TABLES_CACHE.put(key, key);
             }
             else
             {
@@ -347,9 +346,9 @@ public aspect PerCommentParsingCache
      * Caching the "retrieveTableDecorator(String) pointcut.
      */
     boolean around(final MetaLanguageUtils instance, final String comment) :
-        cacheTableDecorator(instance, comment)
+        cacheTableDecorator(comment)
     {
-        Boolean result;
+        boolean result;
         @NotNull final String key = "[comment/table-decorator]" + comment;
 
         result = TABLE_DECORATOR_CACHE.get(key);
@@ -361,14 +360,14 @@ public aspect PerCommentParsingCache
             TABLE_DECORATOR_CACHE.put(key, result);
         }
 
-        return result.booleanValue();
+        return result;
     }
 
     /**
      * Caching the "retrieveTableRelationship(String) pointcut.
      */
     List<List<String>> around(final MetaLanguageUtils instance, final String comment) :
-        cacheTableRelationship(instance, comment)
+        cacheTableRelationship(comment)
     {
         @Nullable List<List<String>> result;
         @NotNull final String key = "[comment/table-relationship]" + comment;
@@ -381,7 +380,7 @@ public aspect PerCommentParsingCache
 
             if (result == null)
             {
-                TABLE_RELATIONSHIP_CACHE.put(key, new ArrayList<>(0));
+                TABLE_RELATIONSHIP_CACHE.put(key, key);
             }
             else
             {
@@ -395,4 +394,5 @@ public aspect PerCommentParsingCache
 
         return result;
     }
+
 }

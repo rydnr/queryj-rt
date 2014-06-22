@@ -47,7 +47,6 @@ import org.acmsl.queryj.customsql.ResultSetFlagsRef;
 import org.acmsl.queryj.customsql.Sql;
 import org.acmsl.queryj.customsql.Parameter;
 import org.acmsl.queryj.customsql.IdentifiableElement;
-import org.acmsl.queryj.customsql.SqlCardinality;
 import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Result;
@@ -378,7 +377,7 @@ public abstract class AbstractSqlDecorator
     protected String getResultClass(
         @Nullable final DecoratedString dao,
         @Nullable final DecoratedString repository,
-        @NotNull final SqlCardinality cardinality,
+        @NotNull final Cardinality cardinality,
         @Nullable final ResultRef resultRef,
         @NotNull final CustomSqlProvider customSqlProvider)
     {
@@ -398,13 +397,13 @@ public abstract class AbstractSqlDecorator
     protected String getResultClass(
         @Nullable final DecoratedString dao,
         @Nullable final DecoratedString repository,
-        @NotNull final SqlCardinality cardinality,
+        @NotNull final Cardinality cardinality,
         @Nullable final ResultRef resultRef,
         @NotNull final SqlResultDAO resultDAO)
     {
         @NotNull final StringBuilder result = new StringBuilder();
 
-        final boolean multiple = cardinality.equals(SqlCardinality.MULTIPLE);
+        final boolean multiple = cardinality.equals(Cardinality.MULTIPLE);
 
         if (multiple)
         {

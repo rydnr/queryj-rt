@@ -34,9 +34,9 @@
 package org.acmsl.queryj.customsql.xml;
 
 /*
- * Importing QueryJ Core classes.
+ * Importing some project classes.
  */
-import org.acmsl.queryj.customsql.SqlCardinality;
+import org.acmsl.queryj.customsql.Sql.Cardinality;
 import org.acmsl.queryj.customsql.SqlElement;
 
 /*
@@ -52,23 +52,16 @@ import org.apache.commons.digester.Digester;
 /*
  * Importing some SAX classes.
  */
-import org.xml.sax.Attributes;
-import org.xml.sax.SAXException;
-
-/*
- * Importing JetBrains annotations.
- */
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import org.xml.sax.Attributes;
+import org.xml.sax.SAXException;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
 
-/*
- * Importing JDK classes.
- */
 import java.util.Locale;
 
 /**
@@ -115,14 +108,14 @@ public class SqlElementFactory
 
         @Nullable final String t_strMatches = attributes.getValue("matches");
 
-        @NotNull final SqlCardinality t_SqlCardinality;
+        @NotNull final Cardinality t_Cardinality;
         if (t_strMatches == null)
         {
-            t_SqlCardinality = SqlCardinality.MULTIPLE;
+            t_Cardinality = Cardinality.MULTIPLE;
         }
         else
         {
-            t_SqlCardinality = SqlCardinality.fromString(t_strMatches.toLowerCase(Locale.US));
+            t_Cardinality = Cardinality.fromString(t_strMatches.toLowerCase(Locale.US));
         }
 
         boolean t_bValidate = false;
@@ -151,7 +144,7 @@ public class SqlElementFactory
                     t_strDAO,
                     t_strName,
                     t_strType,
-                    t_SqlCardinality,
+                    t_Cardinality,
                     t_strImplementation,
                     t_bValidate,
                     t_bDynamic,
@@ -164,7 +157,7 @@ public class SqlElementFactory
                     t_strId,
                     t_strName,
                     t_strType,
-                    t_SqlCardinality,
+                    t_Cardinality,
                     t_strImplementation,
                     t_bValidate,
                     t_bDynamic,
