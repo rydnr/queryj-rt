@@ -581,7 +581,7 @@ public class TableTestHelper
     {
         @NotNull final List<Sql<String>> result = new ArrayList<>();
 
-        for (@NotNull final Map<String, String> sqlRow: sqlInfo.asMaps())
+        for (@NotNull final Map<String, String> sqlRow: sqlInfo.asMaps(String.class, String.class))
         {
             @NotNull final String id = sqlRow.get("id");
             @NotNull final String name = sqlRow.get("name");
