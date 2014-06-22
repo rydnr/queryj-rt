@@ -100,4 +100,22 @@
     </dependency>
   </dependencies>
 
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>aspectj-maven-plugin</artifactId>
+        <configuration>
+          <warn />
+        </configuration>
+        <executions>
+	  <execution>
+	    <goals>
+	      <goal>compile</goal>
+	    </goals>
+	  </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 </project>
