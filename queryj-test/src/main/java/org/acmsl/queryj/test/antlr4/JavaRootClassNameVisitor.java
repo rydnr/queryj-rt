@@ -146,8 +146,8 @@ public class JavaRootClassNameVisitor
     public String toString()
     {
         return
-              "{ \"class\": \"JavaRootClassNameVisitor\""
-            + ", \"rootClass\": \"" + m__strRootClass + '\''
+              "{ " "rootClass": "" + m__strRootClass + '\'' \"class\": \"JavaRootClassNameVisitor\""
+            + ",
             + ", \"package\": \"" + JavaRootClassNameVisitor.class.getPackage().getName()
             + "\" }";
     }
