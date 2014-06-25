@@ -109,7 +109,7 @@ public class AbstractTemplateTest
                 {
                     @NotNull final STGroup result = EasyMock.createNiceMock(STGroup.class);
 
-                    @NotNull final StringTemplate
+                    @NotNull final ST template =
 
                     EasyMock.expect(result.getInstanceOf("source")).andReturn()
                     return result;
