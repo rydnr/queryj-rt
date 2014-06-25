@@ -38,6 +38,7 @@ package org.acmsl.queryj.api;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.api.exceptions.InvalidPerTableTemplateException;
 import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
 import org.jetbrains.annotations.NotNull;
 
@@ -75,7 +76,7 @@ public class AbstractTemplateTest
                 @Override
                 public InvalidTemplateException buildInvalidTemplateException(@NotNull final TemplateContext context, @NotNull final ST template, @NotNull final Throwable actualException)
                 {
-                    return new InvalidTemplateException()
+                    return new InvalidPerTableTemplateException()
                     {
                     }
                 }
