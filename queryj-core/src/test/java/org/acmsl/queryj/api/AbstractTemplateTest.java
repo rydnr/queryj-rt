@@ -56,6 +56,10 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+
+/*
+ * Importing JUnit4 classes.
+ */
 import org.stringtemplate.v4.ST;
 import org.stringtemplate.v4.STGroup;
 
