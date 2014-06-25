@@ -95,7 +95,7 @@ public class AbstractTemplateTest
                  * An empty array list.
                  */
                 @NotNull
-                public List<FillTemplateChain<? extends FillHandler<?>>> emptyList = new ArrayList<>(0);
+                public final List<FillTemplateChain<? extends FillHandler<?>>> emptyList = new ArrayList<>(0);
 
                 /**
                  * {@inheritDoc}
