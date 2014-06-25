@@ -351,7 +351,12 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
         return result;
     }
 
-    /
+    /**
+     * Checks whether we're under deve
+     * @param context
+     * @param debuggingService
+     * @return
+     */
     protected boolean debugging(
         @NotNull final TemplateContext context, @Nullable final TemplateDebuggingService debuggingService)
     {
