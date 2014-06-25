@@ -98,7 +98,6 @@ public class AbstractTemplateGeneratorTest
     {
         /**
          * Debugs given template.
-         *
          * @param template the template to debug.
          * @param context  the context.
          */
