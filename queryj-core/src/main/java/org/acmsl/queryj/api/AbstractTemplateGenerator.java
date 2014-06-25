@@ -64,7 +64,6 @@ import org.jetbrains.annotations.Nullable;
  */
 import org.checkthread.annotations.ThreadSafe;
 import org.stringtemplate.v4.ST;
-import org.stringtemplate.v4.STGroup;
 
 /*
  * Importing some JDK classes.
