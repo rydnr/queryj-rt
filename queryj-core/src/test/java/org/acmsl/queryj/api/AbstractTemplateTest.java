@@ -120,7 +120,7 @@ public class AbstractTemplateTest
                     EasyMock.expect(result.getInstanceOf("source")).andReturn(template);
                     EasyMock.replay(result);
 
-                    EasyMock.expect(template.add("C"))
+                    EasyMock.expect(template.add(TEMPLATE_NAME))
                     return result;
                 }
 
