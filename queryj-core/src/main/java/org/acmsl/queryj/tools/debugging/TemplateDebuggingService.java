@@ -41,6 +41,11 @@ package org.acmsl.queryj.tools.debugging;
 import org.acmsl.queryj.api.TemplateContext;
 
 /*
+ * Importing StringTemplate classes.
+ */
+import org.stringtemplate.v4.ST;
+
+/*
  * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
