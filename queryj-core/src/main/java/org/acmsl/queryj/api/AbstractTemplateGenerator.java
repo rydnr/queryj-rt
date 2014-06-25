@@ -533,6 +533,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
      * @return such instance, or {@code null} if none is found.
      */
     @Nullable
+    @SuppressWarnings("unchecked")
     public TemplateDebuggingService<C> resolveTemplateDebuggingService()
     {
         @Nullable TemplateDebuggingService<C> result = null;
