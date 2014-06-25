@@ -1,5 +1,5 @@
 /*
-                        QueryJ Core
+                        QueryJ-Core
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -37,11 +37,11 @@ package org.acmsl.queryj.api;
  */
 import org.acmsl.queryj.api.exceptions.DevelopmentModeException;
 import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
-import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
 
 /*
  * Importing some JetBrains annotations.
  */
+import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -70,11 +70,10 @@ public interface Template<T extends TemplateContext>
     /**
      * Generates the output source code.
      * @param relevantOnly whether to include only relevant placeholders.
-     * @param templateDebuggingService the {@link TemplateDebuggingService} instance.
      * @return such output.
      */
     @Nullable
-    String generate(final boolean relevantOnly, @Nullable final TemplateDebuggingService<T> templateDebuggingService)
+    String generate(final boolean relevantOnly)
         throws InvalidTemplateException,
                DevelopmentModeException;
 
