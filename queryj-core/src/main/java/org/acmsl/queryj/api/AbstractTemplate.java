@@ -804,22 +804,6 @@ public abstract class AbstractTemplate<C extends TemplateContext>
                     try
                     {
                         result = t_Template.render();
-
-                        if (   (getTemplateContext().isDebugEnabled())
-                            && (isInDevMode(t_Group))
-                            && (!relevantOnly)
-                            && (templateDebuggingService != null))
-                        {
-                            synchronized (AbstractTemplate.class)
-                            {
-                                templateDebuggingService.debugTemplate(t_Template, context);
-                                //t_Template.inspect().waitForClose();
-                            }
-                            if (false)
-                            {
-                                throw new DevelopmentModeException(t_Group);
-                            }
-                        }
                     }
                     catch (@NotNull final DevelopmentModeException debugging)
                     {
