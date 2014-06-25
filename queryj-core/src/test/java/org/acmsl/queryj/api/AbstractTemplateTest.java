@@ -107,8 +107,9 @@ public class AbstractTemplateTest
                 @Override
                 public STGroup retrieveGroup()
                 {
-                    EasyMock.
-                    return ;
+                    @NotNull final STGroup result = EasyMock.createNiceMock(STGroup.class);
+
+                    return result;
                 }
 
                 /**
