@@ -70,7 +70,7 @@ public class AbstractTemplateTest
     public void generateOutput_calls_TemplateDebuggingService_when_debugging()
     {
         @NotNull final AbstractTemplate<TemplateContext> instance = new
-            AbstractTemplate<TemplateContext>()
+            AbstractTemplate<TemplateContext>(templateContext, "org.acmsl.queryj.placeholders")
             {
                 /**
                  * {@inheritDoc}
