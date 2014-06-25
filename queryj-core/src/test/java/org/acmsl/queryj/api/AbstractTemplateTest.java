@@ -36,7 +36,7 @@
 package org.acmsl.queryj.api;
 
 /*
- * Importing JetBrains annotations.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.api.AbstractTemplateGeneratorTest.DoNothingDebuggingService;
 import org.acmsl.queryj.api.exceptions.InvalidPerTableTemplateException;
