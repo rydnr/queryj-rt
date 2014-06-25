@@ -1,5 +1,5 @@
 /*
-                        queryj
+                        QueryJ Core
 
     Copyright (C) 2002-today  Jose San Leandro Armendariz
                               chous@acm-sl.org
@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for AbstractTemplate.
  *
  * Date: 2014/06/25
  * Time: 15:29
