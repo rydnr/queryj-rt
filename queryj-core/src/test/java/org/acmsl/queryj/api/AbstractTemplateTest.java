@@ -137,7 +137,7 @@ public class AbstractTemplateTest
                 public List<FillTemplateChain<? extends FillHandler<?>>> buildFillTemplateChains(@NotNull final C context)
                     throws QueryJBuildException
                 {
-                }
+
                 }
             };
 
