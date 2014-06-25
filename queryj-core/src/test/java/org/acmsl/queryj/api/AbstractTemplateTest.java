@@ -124,7 +124,7 @@ public class AbstractTemplateTest
                     @NotNull final ST template = EasyMock.createNiceMock(ST.class);
 
                     EasyMock.expect(result.getInstanceOf(TEMPLATE_NAME)).andReturn(template);
-                    template.add(CONTEXT, emptyList);
+                    template.add(CONTEXT, emptyList).andReturn();
                     EasyMock.expectLastCall();
 
                     EasyMock.replay(result);
