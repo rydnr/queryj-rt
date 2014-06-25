@@ -450,6 +450,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
                                 e.printStackTrace();
                             }
                         }*/
+        }
 
         return result;
     }
