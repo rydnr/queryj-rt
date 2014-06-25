@@ -62,8 +62,6 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
-import org.stringtemplate.v4.ST;
-import org.stringtemplate.v4.STGroup;
 
 /**
  * Tests for {@link AbstractTemplate}.
