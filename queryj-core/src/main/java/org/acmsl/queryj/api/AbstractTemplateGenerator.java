@@ -358,6 +358,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
      * @return {@code true} if the debug takes place.
      */
     protected boolean debugging(
+        @NotNull final Template<C> template,
         @NotNull final TemplateContext context, @Nullable final TemplateDebuggingService debuggingService)
     {
         final boolean result;
