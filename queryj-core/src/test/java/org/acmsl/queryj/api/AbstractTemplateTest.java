@@ -97,7 +97,8 @@ public class AbstractTemplateTest
                     @NotNull final Throwable actualException)
                 {
                     return
-                        new InvalidPerTableTemplateException("name", "tableName", "repository", EasyMock.createNiceMock(Throwable.class)) {};
+                        new InvalidPerTableTemplateException(
+                            "name", "tableName", "repository", EasyMock.createNiceMock(Throwable.class)) {};
                 }
 
                 /**
