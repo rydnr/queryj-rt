@@ -38,14 +38,8 @@ package org.acmsl.queryj.tools.debugging;
 /*
  * Importing QueryJ Core classes.
  */
-import org.acmsl.queryj.api.exceptions.DevelopmentModeException;
 import org.acmsl.queryj.api.Template;
 import org.acmsl.queryj.api.TemplateContext;
-
-/*
- * Importing StringTemplate classes.
- */
-import org.stringtemplate.v4.ST;
 
 /*
  * Importing JetBrains annotations.
@@ -64,15 +58,12 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2014/06/25 12:31
  */
 @ThreadSafe
-public interface TemplateDebuggingService<C extends TemplateContext>
+public interface TemplateDebuggingService<T extends Template<C>, C extends TemplateContext>
 {
     /**
      * Debugs given template.
      * @param template the template to debug.
      * @param context the context.
-     * @param output the current template output.
-     * throws DevelopmentModeException if the debug session must stop.
      */
-    void debugTemplate(@NotNull final ST template, @NotNull final C context, @NotNull final String output)
-        throws DevelopmentModeException;
+    void debugTemplate(@NotNull final T template, @NotNull final C context);
 }
