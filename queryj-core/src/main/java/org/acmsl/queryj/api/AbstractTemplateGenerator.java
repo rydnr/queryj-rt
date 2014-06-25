@@ -517,6 +517,9 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
         return result.toString();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public String toString()
