@@ -50,8 +50,6 @@ import org.acmsl.commons.utils.io.FileUtils;
 /*
  * Importing some Apache Commons-Logging classes.
  */
-import org.acmsl.queryj.api.handlers.fillhandlers.FillHandler;
-import org.acmsl.queryj.api.placeholders.FillTemplateChainFactory;
 import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
 import org.apache.commons.logging.Log;
 
