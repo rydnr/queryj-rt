@@ -363,7 +363,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
         @NotNull final String output,
         @NotNull final Template<C> template,
         @NotNull final C context,
-        @Nullable final TemplateDebuggingService debuggingService)
+        @Nullable final TemplateDebuggingService<C> debuggingService)
     {
         final boolean result;
 
