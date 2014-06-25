@@ -712,8 +712,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
     }
 
     /**
-     * Generates the source code.
-     * @return such output.
+     * {@inheritDoc}
      */
     @Nullable
     @Override
