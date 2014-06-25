@@ -743,7 +743,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
 
         //traceClassLoaders();
 
-        result = generateOutput(context, relevantOnly, templateDebuggingService);
+        result = generateOutput(context, relevantOnly);
 
         //cleanUpClassLoaderTracing();
 
