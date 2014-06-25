@@ -315,6 +315,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
         return result;
     }
 
+    protected
     /**
      * Tries to read the hash from disk.
      * @param fileName  the file name.
