@@ -434,7 +434,6 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
                 debuggingService.debugTemplate(template, context, output);
                 //t_Template.inspect().waitForClose();
             }
-        }
     /*                    @Nullable final STTreeView debugTool =
                             new StringTemplateTreeView("Debugging " + getTemplateName(), t_Template);
 
