@@ -58,12 +58,12 @@ import org.checkthread.annotations.ThreadSafe;
  * Created: 2014/06/25 12:31
  */
 @ThreadSafe
-public interface TemplateDebuggingService<T extends Template<C>, C extends TemplateContext>
+public interface TemplateDebuggingService<C extends TemplateContext>
 {
     /**
      * Debugs given template.
      * @param template the template to debug.
      * @param context the context.
      */
-    void debugTemplate(@NotNull final T template, @NotNull final C context);
+    void debugTemplate(@NotNull final Template<C> template, @NotNull final C context);
 }

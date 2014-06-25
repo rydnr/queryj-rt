@@ -37,6 +37,7 @@ package org.acmsl.queryj.api;
 /*
  * Importing some project-specific classes.
  */
+import org.acmsl.queryj.api.exceptions.CannotFindPlaceholderImplementationException;
 import org.acmsl.queryj.api.exceptions.Sha256NotSupportedException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 
@@ -49,6 +50,9 @@ import org.acmsl.commons.utils.io.FileUtils;
 /*
  * Importing some Apache Commons-Logging classes.
  */
+import org.acmsl.queryj.api.handlers.fillhandlers.FillHandler;
+import org.acmsl.queryj.api.placeholders.FillTemplateChainFactory;
+import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
 import org.apache.commons.logging.Log;
 
 /*
@@ -72,9 +76,14 @@ import java.io.ObjectOutputStream;
 import java.nio.charset.Charset;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ServiceLoader;
 
 /**
  * Common logic for template generators.
+ * @param <N> the template.
+ * @param <C> the template context.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  * @since 3.0
  * Created: 2013/08/17 10:26
@@ -191,6 +200,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
                 outputDir,
                 rootFolder,
                 charset,
+                resolveTemplateDebuggingService(),
                 FileUtils.getInstance(),
                 UniqueLogFactory.getLog(AbstractQueryJTemplateGenerator.class));
     }
@@ -203,6 +213,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
      * @param outputDir the output folder.
      * @param rootFolder the root folder.
      * @param charset the {@link Charset} to use.
+     * @param templateDebuggingService the {@link TemplateDebuggingService} instance.
      * @param fileUtils the {@link FileUtils} instance.
      * @param log the {@link Log} instance.
      * @return whether it gets written to disk.
@@ -216,13 +227,14 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
         @NotNull final File outputDir,
         @NotNull final File rootFolder,
         @NotNull final Charset charset,
+        @Nullable final TemplateDebuggingService<C> templateDebuggingService,
         @NotNull final FileUtils fileUtils,
         @Nullable final Log log)
         throws IOException, QueryJBuildException
     {
         boolean result = false;
 
-         @Nullable final String relevantContent = template.generate(true);
+         @Nullable final String relevantContent = template.generate(true, null);
 
         if (relevantContent != null)
         {
@@ -251,7 +263,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
                             .getAbsolutePath() + File.separator + "." + fileName + ".ser");
                 }
 
-                @Nullable final String t_strFileContents = template.generate(false);
+                @Nullable final String t_strFileContents = template.generate(false, templateDebuggingService);
 
                 if (!"".equals(t_strFileContents))
                 {
@@ -515,6 +527,41 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
         return result.toString();
     }
 
+
+    /**
+     * Resolves the {@link TemplateDebuggingService} at runtime.
+     * @return such instance, or {@code null} if none is found.
+     */
+    @Nullable
+    @SuppressWarnings("unchecked")
+    public TemplateDebuggingService<C> resolveTemplateDebuggingService()
+    {
+        @Nullable TemplateDebuggingService<C> result = null;
+
+        @Nullable final Class<TemplateDebuggingService> serviceClass =
+            TemplateDebuggingService.class;
+
+        if (serviceClass != null)
+        {
+            @Nullable final ServiceLoader<TemplateDebuggingService> loader =
+                ServiceLoader.load(serviceClass);
+
+            if (loader != null)
+            {
+                for (@NotNull final TemplateDebuggingService<C> service : loader)
+                {
+                    result = service;
+                    break;
+                }
+            }
+        }
+
+        return result;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public String toString()
