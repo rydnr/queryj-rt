@@ -44,6 +44,7 @@
     <module>queryj-test</module>
     <module>queryj-template-packaging</module>
     <module>queryj-maven</module>
+    <module>queryj-template-debugging</module>
     <module>queryj-template-packaging-maven-plugin</module>
     <module>queryj-templates</module>
   </modules>
