@@ -93,12 +93,15 @@ public class AbstractTemplateGeneratorTest
         Assert.assertNotNull(service);
     }
 
+    /**
+     *
+     * @param <C>
+     */
     public static class DoNothingDebuggingService<C extends TemplateContext>
     implements TemplateDebuggingService<C>
     {
         /**
-         * {@is
-         * }
+         * {@inheritDoc}
          */
         @Override
         public void debugTemplate(@NotNull final Template<C> template, @NotNull final C context)
