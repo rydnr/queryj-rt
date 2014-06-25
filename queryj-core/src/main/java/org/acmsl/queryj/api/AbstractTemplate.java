@@ -829,7 +829,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
                                 templateDebuggingService.debugTemplate(this, context);
                                 //t_Template.inspect().waitForClose();
                             }
-//                            throw new DevelopmentModeException(t_Group);
+                            throw new DevelopmentModeException(t_Group);
                         }
                     }
                     catch (@NotNull final DevelopmentModeException debugging)
