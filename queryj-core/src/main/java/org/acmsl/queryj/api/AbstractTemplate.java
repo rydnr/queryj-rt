@@ -756,7 +756,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
         throws InvalidTemplateException,
         DevelopmentModeException
     {
-        @Nullable String result = null;
+        @Nullable ST result = null;
 
         @Nullable Throwable t_ExceptionToWrap = null;
 
