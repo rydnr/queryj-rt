@@ -73,8 +73,7 @@ public class AbstractTemplateTest
         @NotNull final TemplateContext templateContext = EasyMock.createNiceMock(TemplateContext.class);
 
         @NotNull final AbstractTemplate<TemplateContext> instance =
-            new
-            AbstractTemplate<TemplateContext>(templateContext, "org.acmsl.queryj.placeholders", true)
+            new AbstractTemplate<TemplateContext>(templateContext, "org.acmsl.queryj.placeholders", true)
             {
                 /**
                  * {@inheritDoc}
