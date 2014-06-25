@@ -54,7 +54,6 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
-import org.stringtemplate.v4.ST;
 
 /**
  * Services able to debug templates.
