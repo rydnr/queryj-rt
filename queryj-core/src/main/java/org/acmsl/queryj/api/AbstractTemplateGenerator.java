@@ -535,19 +535,6 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
     @Nullable
     public TemplateDebuggingService<C> resolveTemplateDebuggingService()
     {
-        return null;
-    }
-
-    /**
-     * Builds the correct chain.
-     * @param context the context.
-     * @return the specific {@link FillTemplateChain}.
-     */
-    @SuppressWarnings("unchecked")
-    @NotNull
-    public List<FillTemplateChain<? extends FillHandler<?>>> buildFillTemplateChains(@NotNull final C context)
-        throws QueryJBuildException
-    {
         @NotNull final List<FillTemplateChain<? extends FillHandler<?>>> result = new ArrayList<>();
 
         @Nullable final Class<FillTemplateChainFactory<C>> factoryClass =
