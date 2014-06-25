@@ -159,9 +159,11 @@ public class AbstractTemplateTest
                  * @param template the {@link STGroup template group}.
                  * @return {@code true} in such case.
                  */
+                @Override
                 protected boolean isInDevMode(@NotNull final STGroup template)
                 {
-
+                    return true;
+                }
             };
 
         @NotNull final DoNothingDebuggingService<TemplateContext> templateDebuggingService =
