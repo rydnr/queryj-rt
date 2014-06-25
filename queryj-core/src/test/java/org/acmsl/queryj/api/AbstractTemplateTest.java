@@ -112,6 +112,6 @@ public class AbstractTemplateTest
                 }
             };
 
-        instance.generate(false, new DoNothingDebuggingService<>())
+        instance.generate(false, new DoNothingDebuggingService<TemplateContext>())
     }
 }
