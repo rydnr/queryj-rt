@@ -826,7 +826,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
                         {
                             synchronized (AbstractTemplate.class)
                             {
-                                templateDebuggingService.debugTemplate(this, context);
+                                templateDebuggingService.debugTemplate(t_Template, context);
                                 //t_Template.inspect().waitForClose();
                             }
                             if (false)
