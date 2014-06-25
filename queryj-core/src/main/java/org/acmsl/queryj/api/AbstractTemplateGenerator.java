@@ -353,7 +353,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
 
     /**
      * Checks whether we're in a debugging session.
-     * @param context
+     * @param context the co
      * @param debuggingService
      * @return
      */
