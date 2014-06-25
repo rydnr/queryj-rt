@@ -80,9 +80,7 @@ public class AbstractTemplateTest
                 public InvalidTemplateException buildInvalidTemplateException(@NotNull final TemplateContext context, @NotNull final ST template, @NotNull final Throwable actualException)
                 {
                     return
-                        new InvalidPerTableTemplateException("name", "tableName", "repository", null)
-                    {
-                    };
+                        new InvalidPerTableTemplateException("name", "tableName", "repository", null) {};
                 }
 
                 @Nullable
