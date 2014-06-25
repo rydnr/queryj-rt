@@ -155,9 +155,7 @@ public class AbstractTemplateTest
                 }
 
                 /**
-                 * {@inheritDoc}Checks whether we're in dev mode.
-                 * @param template the {@link STGroup template group}.
-                 * @return {@code true} in such case.
+                 * {@inheritDoc}
                  */
                 @Override
                 protected boolean isInDevMode(@NotNull final STGroup template)
