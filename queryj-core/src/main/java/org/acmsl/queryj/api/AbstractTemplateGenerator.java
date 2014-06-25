@@ -353,9 +353,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
                             charset);
                     }
 
-                    debugging(stTemplate, TemplateContext, templateDebuggingService, t_strFileContents);
-                    templateDebuggingService.debugTemplate(
-                        template, template.getTemplateContext(), t_strFileContents);
+                    debugging(stTemplate, template.getTemplateContext(), templateDebuggingService, t_strFileContents);
 
                     writeHash(newHash, fileName, outputDir, rootFolder, charset, fileUtils);
                 }
