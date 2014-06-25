@@ -821,7 +821,8 @@ public abstract class AbstractTemplate<C extends TemplateContext>
 
                         if (   (getTemplateContext().isDebugEnabled())
                             && (isInDevMode(t_Group))
-                            && (!relevantOnly))
+                            && (!relevantOnly)
+                            && (templateDebuggingService != null))
                         {
                             synchronized (AbstractTemplate.class)
                             {
