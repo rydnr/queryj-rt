@@ -353,6 +353,8 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
 
     /**
      * Manages the debugging session.
+     * @param output the current output from the template.
+     * @param template the {@link Template}.
      * @param context the context.
      * @param debuggingService the {@link TemplateDebuggingService} instance.
      * @return {@code true} if the debug takes place.
