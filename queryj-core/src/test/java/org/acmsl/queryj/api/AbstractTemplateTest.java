@@ -136,14 +136,10 @@ public class AbstractTemplateTest
 
                 /**
                  * {@inheritDoc}
-                 * @param context the context.
-                 * @return
-                 * @throws QueryJBuildException
                  */
                 @Override
                 public List<FillTemplateChain<? extends FillHandler<?>>> buildFillTemplateChains(
                     @NotNull final TemplateContext context)
-                    throws QueryJBuildException
                 {
                     return new ArrayList<>(0);
                 }
