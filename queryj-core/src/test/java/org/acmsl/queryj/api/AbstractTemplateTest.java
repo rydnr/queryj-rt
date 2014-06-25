@@ -72,6 +72,9 @@ public class AbstractTemplateTest
         @NotNull final AbstractTemplate<TemplateContext> instance = new
             AbstractTemplate<TemplateContext>()
             {
+                /**
+                 * {@inheritDoc}
+                 */
                 @NotNull
                 @Override
                 public InvalidTemplateException buildInvalidTemplateException(@NotNull final TemplateContext context, @NotNull final ST template, @NotNull final Throwable actualException)
