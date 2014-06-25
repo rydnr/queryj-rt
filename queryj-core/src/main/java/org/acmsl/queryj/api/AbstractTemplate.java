@@ -729,7 +729,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
         throws  InvalidTemplateException,
                 DevelopmentModeException
     {
-        final ST result;
+        @Nullable final ST result;
 
         if (!relevantOnly)
         {
