@@ -563,7 +563,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
         else
         {
             throw
-                new CannotFindPlaceholderImplementationException(context.getClass().getName());
+                new CannotFindTemplateDebuggingServiceImplementationException(context.getClass().getName());
         }
 
         return result;
