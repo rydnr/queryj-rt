@@ -93,5 +93,5 @@ public class AbstractTemplateGeneratorTest
         Assert.assertNotNull(service);
     }
 
-    public static class
+    public static class DoNothingDebuggingService
 }
