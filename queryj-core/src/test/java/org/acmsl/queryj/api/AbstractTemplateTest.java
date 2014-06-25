@@ -127,6 +127,7 @@ public class AbstractTemplateTest
                     EasyMock.replay(result);
 
                     EasyMock.expect(template.add(CONTEXT, emptyList));
+
                     return result;
                 }
 
