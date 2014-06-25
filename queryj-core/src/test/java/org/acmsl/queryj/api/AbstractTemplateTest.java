@@ -154,6 +154,13 @@ public class AbstractTemplateTest
                     return emptyList;
                 }
 
+                /**
+                 * Checks whether we're in dev mode.
+                 * @param template the {@link STGroup template group}.
+                 * @return {@code true} in such case.
+                 */
+                protected boolean isInDevMode(@NotNull final STGroup template)
+                {
 
             };
 
