@@ -286,7 +286,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
                     if (t_Log != null)
                     {
                         t_Log.error(
-                            "Error in template " + getTemplateName(), throwable);
+                            "Error in template " + template.getTemplateName(), throwable);
                     }
     /*                    @Nullable final STTreeView debugTool =
                             new StringTemplateTreeView("Debugging " + getTemplateName(), t_Template);
