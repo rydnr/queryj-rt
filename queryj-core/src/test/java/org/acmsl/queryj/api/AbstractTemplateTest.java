@@ -40,6 +40,7 @@ package org.acmsl.queryj.api;
  */
 import org.acmsl.queryj.api.exceptions.InvalidPerTableTemplateException;
 import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
@@ -69,8 +70,10 @@ public class AbstractTemplateTest
     @Test
     public void generateOutput_calls_TemplateDebuggingService_when_debugging()
     {
+        @NotNull final TemplateContext templateContext = EasyMock.createNiceMock(TemplateContext.class);
+
         @NotNull final AbstractTemplate<TemplateContext> instance = new
-            AbstractTemplate<TemplateContext>(templateContext, "org.acmsl.queryj.placeholders")
+            AbstractTemplate<TemplateContext>(templateContext, "org.acmsl.queryj.placeholders", true)
             {
                 /**
                  * {@inheritDoc}
