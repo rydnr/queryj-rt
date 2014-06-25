@@ -827,7 +827,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
                             {
                                 try
                                 {
-                                    t_Template.inspect().waitForClose();
+                                    //t_Template.inspect().waitForClose();
                                 }
                                 catch (@NotNull final InterruptedException e)
                                 {
