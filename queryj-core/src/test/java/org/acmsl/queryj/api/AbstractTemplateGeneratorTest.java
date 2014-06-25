@@ -97,7 +97,7 @@ public class AbstractTemplateGeneratorTest
      * A stub class to get resolved via ServiceLoader.
      * @param <C> the context.
      */
-    @SuppressWarnings("unu")
+    @SuppressWarnings("unused")
     public static class DoNothingDebuggingService<C extends TemplateContext>
     implements TemplateDebuggingService<C>
     {
