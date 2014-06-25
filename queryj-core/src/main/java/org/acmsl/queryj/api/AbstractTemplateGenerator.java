@@ -538,13 +538,13 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
     {
         @NotNull final TemplateDebuggingService<? extends TemplateContext> result;
 
-        @Nullable final Class<TemplateDebuggingService> factoryClass =
+        @Nullable final Class<TemplateDebuggingService> serviceClass =
             TemplateDebuggingService.class;
 
-        if (factoryClass != null)
+        if (serviceClass != null)
         {
             @Nullable final ServiceLoader<TemplateDebuggingService> loader =
-                ServiceLoader.load(factoryClass);
+                ServiceLoader.load(serviceClass);
 
             if (loader != null)
             {
@@ -557,7 +557,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
             else
             {
                 throw
-                    new CannotFindTemplateDebuggingServiceImplementationException(factoryClass);
+                    new CannotFindTemplateDebuggingServiceImplementationException(serviceClass);
             }
         }
         else
