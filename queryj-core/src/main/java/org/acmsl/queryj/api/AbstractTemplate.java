@@ -732,7 +732,9 @@ public abstract class AbstractTemplate<C extends TemplateContext>
      */
     @Nullable
     protected String generate(
-        @NotNull final C context, final boolean relevantOnly)
+        @NotNull final C context,
+        final boolean relevantOnly,
+        @Nullable final TemplateDebuggingService templateDebuggingService)
         throws  InvalidTemplateException,
                 DevelopmentModeException
     {
