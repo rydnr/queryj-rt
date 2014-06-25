@@ -304,8 +304,6 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
                         }*/
                 }
 
-                @Nullable final String t_strFileContents = template.generate(false);
-
                 if (!"".equals(t_strFileContents))
                 {
                     @NotNull final File t_FinalDir = new File(t_strOutputFile).getParentFile();
