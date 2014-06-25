@@ -535,6 +535,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
      * Resolves the {@link TemplateDebuggingService} at runtime.
      * @return such instance, or {@code null} if none is found.
      */
+    @Nullable
     public TemplateDebuggingService<?> resolveTemplateDebuggingService()
     {
         return null;  //To change body of created methods use File | Settings | File Templates.
