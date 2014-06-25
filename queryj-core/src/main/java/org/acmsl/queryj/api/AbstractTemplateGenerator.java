@@ -296,6 +296,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
                             charset);
                     }
 
+
                     writeHash(newHash, fileName, outputDir, rootFolder, charset, fileUtils);
                 }
                 else
