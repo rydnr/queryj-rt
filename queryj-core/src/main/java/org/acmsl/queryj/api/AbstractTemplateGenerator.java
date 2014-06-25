@@ -425,10 +425,6 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
                 debuggingService.debugTemplate(template, context, output);
                 //t_Template.inspect().waitForClose();
             }
-            if (false)
-            {
-                throw new DevelopmentModeException(t_Group);
-            }
         }
     }
     catch (@NotNull final DevelopmentModeException debugging)
