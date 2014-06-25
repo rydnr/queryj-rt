@@ -249,7 +249,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
 
         if (relevantStTemplate != null)
         {
-            relevantContent = relevantStTemplate.generate(true);
+            relevantContent = relevantStTemplate.render(true);
 
         if (relevantContent != null)
         {
