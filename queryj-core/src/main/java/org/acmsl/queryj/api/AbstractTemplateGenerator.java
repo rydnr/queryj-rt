@@ -352,7 +352,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
     }
 
     /**
-     * Manages the we're in a debugging session.
+     * Manages the debugging session.
      * @param context the co
      * @param debuggingService
      * @return
