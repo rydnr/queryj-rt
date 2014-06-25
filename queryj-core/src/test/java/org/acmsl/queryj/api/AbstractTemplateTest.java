@@ -151,7 +151,7 @@ public class AbstractTemplateTest
                 public List<FillTemplateChain<? extends FillHandler<?>>> buildFillTemplateChains(
                     @NotNull final TemplateContext context)
                 {
-                    return new ArrayList<>(0);
+                    return emptyList;
                 }
             };
 
