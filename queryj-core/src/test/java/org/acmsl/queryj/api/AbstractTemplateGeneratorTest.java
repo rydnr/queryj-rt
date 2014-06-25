@@ -104,7 +104,7 @@ public class AbstractTemplateGeneratorTest
         /**
          * Flag to check whether it has been called or not.
          */
-        public static boolean called;
+        public boolean called;
 
         /**
          * {@inheritDoc}
