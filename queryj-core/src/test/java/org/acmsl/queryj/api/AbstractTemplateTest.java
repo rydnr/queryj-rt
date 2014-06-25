@@ -107,7 +107,8 @@ public class AbstractTemplateTest
                 @Override
                 public STGroup retrieveGroup()
                 {
-                    return null;
+                    EasyMock.
+                    return ;
                 }
 
                 /**
