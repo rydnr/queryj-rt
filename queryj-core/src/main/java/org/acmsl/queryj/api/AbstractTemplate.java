@@ -762,7 +762,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
 
         @Nullable final STGroup t_Group = retrieveGroup();
 
-        @Nullable final ST t_Template;
+        @Nullable final ST result;
 
         if (t_Group == null)
         {
@@ -770,9 +770,9 @@ public abstract class AbstractTemplate<C extends TemplateContext>
         }
         else
         {
-            t_Template = retrieveTemplate(t_Group);
+            result = retrieveTemplate(t_Group);
 
-            if (t_Template != null)
+            if (result != null)
             {
                 try
                 {
@@ -791,7 +791,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
                         }
                     }
 
-                    t_Template.add(CONTEXT, placeHolders);
+                    result.add(CONTEXT, placeHolders);
 
                 }
                 catch (@NotNull final QueryJBuildException invalidTemplate)
@@ -803,7 +803,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
                 {
                     try
                     {
-                        result = t_Template.render();
+                        result = result.render();
                     }
                     catch (@NotNull final Throwable throwable)
                     {
@@ -836,7 +836,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
                 }
                 if (t_ExceptionToWrap != null)
                 {
-                    throw buildInvalidTemplateException(context, t_Template, t_ExceptionToWrap);
+                    throw buildInvalidTemplateException(context, result, t_ExceptionToWrap);
                 }
             }
             else
