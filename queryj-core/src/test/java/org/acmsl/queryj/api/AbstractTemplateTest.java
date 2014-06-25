@@ -63,6 +63,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.util.List;
+
 /**
  * Tests for {@link AbstractTemplate}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
@@ -130,7 +132,7 @@ public class AbstractTemplateTest
                 }
 
                 @Override
-                protected List buildT
+                protected List buildTe
             };
 
         @NotNull final DoNothingDebuggingService<TemplateContext> templateDebuggingService =
