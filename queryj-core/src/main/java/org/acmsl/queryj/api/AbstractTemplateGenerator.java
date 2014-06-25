@@ -271,6 +271,38 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
                             .getAbsolutePath() + File.separator + "." + fileName + ".ser");
                 }
 
+                try
+                {
+                    result = result.render();
+                }
+                catch (@NotNull final Throwable throwable)
+                {
+                    t_ExceptionToWrap = throwable;
+
+                    @Nullable final Log t_Log = UniqueLogFactory.getLog(AbstractQueryJTemplate.class);
+
+                    if (t_Log != null)
+                    {
+                        t_Log.error(
+                            "Error in template " + getTemplateName(), throwable);
+                    }
+    /*                    @Nullable final STTreeView debugTool =
+                            new StringTemplateTreeView("Debugging " + getTemplateName(), t_Template);
+
+                        debugTool.setVisible(true);
+
+                        while (debugTool.isVisible())
+                        {
+                            try
+                            {
+                                Thread.sleep(1000);
+                            }
+                            catch (InterruptedException e)
+                            {
+                                e.printStackTrace();
+                            }
+                        }*/
+                }
 
                 @Nullable final String t_strFileContents = template.generate(false);
 
