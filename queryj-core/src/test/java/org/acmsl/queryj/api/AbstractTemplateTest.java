@@ -41,6 +41,7 @@ package org.acmsl.queryj.api;
 import org.acmsl.queryj.api.AbstractTemplateGeneratorTest.DoNothingDebuggingService;
 import org.acmsl.queryj.api.exceptions.InvalidPerTableTemplateException;
 import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
+import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
@@ -112,6 +113,7 @@ public class AbstractTemplateTest
                 }
             };
 
+        @NotNull final TemplateDebuggingService<TemplateContext> = new DoNothingDebuggingService<>()
         instance.generate(false, new DoNothingDebuggingService<TemplateContext>())
     }
 }
