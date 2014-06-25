@@ -138,6 +138,7 @@ public class AbstractTemplateTest
                  * {@inheritDoc}
                  */
                 @Override
+                @NotNull
                 public List<FillTemplateChain<? extends FillHandler<?>>> buildFillTemplateChains(
                     @NotNull final TemplateContext context)
                 {
