@@ -93,6 +93,6 @@ public class AbstractTemplateGeneratorTest
         Assert.assertNotNull(service);
     }
 
-    public static class DoNothingDebuggingService
+    public static class DoNothingDebuggingService<C>
     implements TemplateDebuggingService
 }
