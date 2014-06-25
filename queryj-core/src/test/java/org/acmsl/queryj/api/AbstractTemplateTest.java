@@ -99,11 +99,15 @@ public class AbstractTemplateTest
                     return null;
                 }
 
+                /**
+                 * {@inheritDoc}
+                 * @return
+                 */
                 @NotNull
                 @Override
                 public String getTemplateName()
                 {
-                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                    return "test";
                 }
             }
     }
