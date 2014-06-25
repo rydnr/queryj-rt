@@ -366,7 +366,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
             && (context.isDebugEnabled())
             && (isInDevMode(context.getFileName())))
         {
-            synchronized (AbstractTemplate.class)
+            synchronized (AbstractTemplateGenerator.class)
             {
                 templateDebuggingService.debugTemplate(t_Template, context);
                 //t_Template.inspect().waitForClose();
