@@ -536,7 +536,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
     @SuppressWarnings("unchecked")
     public TemplateDebuggingService<C> resolveTemplateDebuggingService()
     {
-        @Nullable TemplateDebuggingService<? extends TemplateContext> result = null;
+        @Nullable TemplateDebuggingService<C> result = null;
 
         @Nullable final Class<TemplateDebuggingService> serviceClass =
             TemplateDebuggingService.class;
