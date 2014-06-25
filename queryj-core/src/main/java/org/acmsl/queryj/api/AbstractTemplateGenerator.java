@@ -38,6 +38,7 @@ package org.acmsl.queryj.api;
  * Importing some project-specific classes.
  */
 import org.acmsl.queryj.api.exceptions.CannotFindPlaceholderImplementationException;
+import org.acmsl.queryj.api.exceptions.DevelopmentModeException;
 import org.acmsl.queryj.api.exceptions.Sha256NotSupportedException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 
@@ -315,7 +316,58 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
         return result;
     }
 
-    protected
+    protected boolean debugging()
+    {
+        if (   (getTemplateContext().isDebugEnabled())
+               && (isInDevMode(t_Group))
+               && (!relevantOnly)
+               && (templateDebuggingService != null))
+        {
+            synchronized (AbstractTemplate.class)
+            {
+                templateDebuggingService.debugTemplate(t_Template, context);
+                //t_Template.inspect().waitForClose();
+            }
+            if (false)
+            {
+                throw new DevelopmentModeException(t_Group);
+            }
+        }
+    }
+    catch (@NotNull final DevelopmentModeException debugging)
+    {
+        throw debugging;
+    }
+    catch (@NotNull final Throwable throwable)
+    {
+        t_ExceptionToWrap = throwable;
+
+        @Nullable final Log t_Log = UniqueLogFactory.getLog(AbstractQueryJTemplate.class);
+
+        if (t_Log != null)
+        {
+            t_Log.error(
+                "Error in template " + getTemplateName(), throwable);
+        }
+    /*                    @Nullable final STTreeView debugTool =
+                            new StringTemplateTreeView("Debugging " + getTemplateName(), t_Template);
+
+                        debugTool.setVisible(true);
+
+                        while (debugTool.isVisible())
+                        {
+                            try
+                            {
+                                Thread.sleep(1000);
+                            }
+                            catch (InterruptedException e)
+                            {
+                                e.printStackTrace();
+                            }
+                        }*/
+    }
+
+    }
     /**
      * Tries to read the hash from disk.
      * @param fileName  the file name.
