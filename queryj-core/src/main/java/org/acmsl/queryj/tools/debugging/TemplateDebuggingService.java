@@ -43,7 +43,7 @@ import org.acmsl.queryj.api.Template;
 import org.acmsl.queryj.api.TemplateContext;
 
 /*
-* Importing StringTemplate classes.
+ * Importing StringTemplate classes.
  */
 import org.stringtemplate.v4.ST;
 
