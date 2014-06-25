@@ -805,10 +805,6 @@ public abstract class AbstractTemplate<C extends TemplateContext>
                     {
                         result = t_Template.render();
                     }
-                    catch (@NotNull final DevelopmentModeException debugging)
-                    {
-                        throw debugging;
-                    }
                     catch (@NotNull final Throwable throwable)
                     {
                         t_ExceptionToWrap = throwable;
