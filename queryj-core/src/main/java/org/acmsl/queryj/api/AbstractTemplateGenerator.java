@@ -281,8 +281,6 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
                 }
                 catch (@NotNull final Throwable throwable)
                 {
-                    t_ExceptionToWrap = throwable;
-
                     @Nullable final Log t_Log = UniqueLogFactory.getLog(AbstractQueryJTemplate.class);
 
                     if (t_Log != null)
