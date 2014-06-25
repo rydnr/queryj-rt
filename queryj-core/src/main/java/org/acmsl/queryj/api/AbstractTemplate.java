@@ -62,6 +62,7 @@ import org.acmsl.commons.utils.ClassLoaderUtils;
 /*
  * Importing ANTLR classes.
  */
+import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
 import org.antlr.v4.parse.ANTLRParser;
 
 /*
@@ -716,7 +717,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
      */
     @Nullable
     @Override
-    public String generate(final boolean relevantOnly)
+    public String generate(final boolean relevantOnly, @NotNull final TemplateDebuggingService)
         throws InvalidTemplateException,
                DevelopmentModeException
     {
