@@ -95,7 +95,8 @@ public class AbstractTemplateTest
                  * An empty array list.
                  */
                 @NotNull
-                public List<?>
+                public List<?> emptyList = new ArrayList<>(0);
+
                 /**
                  * {@inheritDoc}
                  */
