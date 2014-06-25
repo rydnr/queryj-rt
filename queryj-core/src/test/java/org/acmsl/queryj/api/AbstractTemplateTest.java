@@ -57,6 +57,10 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class AbstractTemplateTest
 {
+    /**
+     * Checks generateOutput() calls TemplateDebuggingService.debug() in
+     * a debugging session.
+     */
     @Test
     public void generateOutput_calls_TemplateDebuggingService_when_debugging()
     {
