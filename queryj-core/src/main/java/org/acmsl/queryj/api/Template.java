@@ -72,7 +72,7 @@ public interface Template<T extends TemplateContext>
      * @return such output.
      */
     @Nullable
-    String generate(final boolean relevantOnly)
+    ST generate(final boolean relevantOnly)
         throws InvalidTemplateException,
                DevelopmentModeException;
 
