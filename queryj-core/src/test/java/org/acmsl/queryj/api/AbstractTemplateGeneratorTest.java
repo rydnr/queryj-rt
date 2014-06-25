@@ -94,7 +94,7 @@ public class AbstractTemplateGeneratorTest
     }
 
     /**
-     * A stub class to
+     * A stub class to get
      * @param <C>
      */
     public static class DoNothingDebuggingService<C extends TemplateContext>
