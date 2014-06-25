@@ -65,6 +65,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -138,7 +139,7 @@ public class AbstractTemplateTest
                     @NotNull final TemplateContext context)
                     throws QueryJBuildException
                 {
-
+                    return new ArrayList<>(0);
                 }
             };
 
