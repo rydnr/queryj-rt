@@ -549,7 +549,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
             {
                 for (@NotNull final TemplateDebuggingService<C> factory : loader)
                 {
-                    result.add(
+                    result =
                         (FillTemplateChain <? extends FillHandler<?>>)
                             factory.createFillChain(context));
                 }
