@@ -112,7 +112,8 @@ public class AbstractTemplateTest
                     @NotNull final ST template = EasyMock.createNiceMock(ST.class);
 
                     EasyMock.expect(result.getInstanceOf("source")).andReturn(template);
-                    EasyMock.replay()
+                    EasyMock.replay(result);
+
                     return result;
                 }
 
