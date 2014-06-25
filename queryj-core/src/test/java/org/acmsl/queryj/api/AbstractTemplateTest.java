@@ -126,7 +126,7 @@ public class AbstractTemplateTest
                     EasyMock.expect(result.getInstanceOf("source")).andReturn(template);
                     EasyMock.replay(result);
 
-                    EasyMock.expect(template.add(CONTEXT, emptyList));
+                    EasyMock.expect(template.add(CONTEXT, emptyList)).asStub();
                     EasyMock.replay(template);
 
                     return result;
