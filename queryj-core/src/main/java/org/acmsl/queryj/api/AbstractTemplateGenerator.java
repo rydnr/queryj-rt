@@ -360,6 +360,8 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
     protected boolean debugging(
         @NotNull final TemplateContext context, @Nullable final TemplateDebuggingService debuggingService)
     {
+        final result;
+
         if (   (context.isDebugEnabled())
                && (isInDevMode(context.getFileName()))
                && (debuggingService != null))
