@@ -191,6 +191,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
                 outputDir,
                 rootFolder,
                 charset,
+                resolveTemplateDebuggingService()
                 FileUtils.getInstance(),
                 UniqueLogFactory.getLog(AbstractQueryJTemplateGenerator.class));
     }
