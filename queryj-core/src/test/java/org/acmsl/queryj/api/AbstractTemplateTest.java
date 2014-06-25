@@ -80,7 +80,8 @@ public class AbstractTemplateTest
                  */
                 @NotNull
                 @Override
-                public InvalidTemplateException buildInvalidTemplateException(@NotNull final TemplateContext context, @NotNull final ST template, @NotNull final Throwable actualException)
+                public InvalidTemplateException buildInvalidTemplateException(
+                    @NotNull final TemplateContext context, @NotNull final ST template, @NotNull final Throwable actualException)
                 {
                     return
                         new InvalidPerTableTemplateException("name", "tableName", "repository", null) {};
