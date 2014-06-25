@@ -105,7 +105,7 @@ public class AbstractTemplateGeneratorTest
         @Override
         public void debugTemplate(@NotNull final Template<C> template, @NotNull final C context)
         {
-            //To change body of implemented methods use File | Settings | File Templates
+
         }
     }
 }
