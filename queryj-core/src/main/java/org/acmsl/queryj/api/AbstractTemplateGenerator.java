@@ -410,7 +410,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
      */
     protected boolean debugging(
         @NotNull final String output,
-        @NotNull final Template<C> template,
+        @NotNull final ST template,
         @NotNull final C context,
         @Nullable final TemplateDebuggingService<C> debuggingService)
     {
