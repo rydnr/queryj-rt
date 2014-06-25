@@ -92,4 +92,6 @@ public class AbstractTemplateGeneratorTest
 
         Assert.assertNotNull(service);
     }
+
+
 }
