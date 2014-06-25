@@ -68,6 +68,6 @@ public interface TemplateDebuggingService<C extends TemplateContext>
      * @param output the current template output.
      * throws DevelopmentModeException if the debug session must stop.
      */
-    void debugTemplate(@NotNull final Template<C> template, @NotNull final C context, @NotNull final String output)
+    void debugTemplate(@NotNull final ST template, @NotNull final C context, @NotNull final String output)
         throws DevelopmentModeException;
 }
