@@ -71,10 +71,11 @@ public interface Template<T extends TemplateContext>
     /**
      * Generates the output source code.
      * @param relevantOnly whether to include only relevant placeholders.
+     * @param templateDebuggingService the {@link TemplateDebuggingService} instance.
      * @return such output.
      */
     @Nullable
-    String generate(final boolean relevantOnly, , @NotNull final TemplateDebuggingService templateDebuggingService)
+    String generate(final boolean relevantOnly, @NotNull final TemplateDebuggingService templateDebuggingService)
         throws InvalidTemplateException,
                DevelopmentModeException;
 
