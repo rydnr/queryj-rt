@@ -42,6 +42,7 @@ import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
  * Importing some JetBrains annotations.
  */
 import org.acmsl.queryj.metadata.DecoratorFactory;
+import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -73,7 +74,7 @@ public interface Template<T extends TemplateContext>
      * @return such output.
      */
     @Nullable
-    String generate(final boolean relevantOnly)
+    String generate(final boolean relevantOnly, , @NotNull final TemplateDebuggingService templateDebuggingService)
         throws InvalidTemplateException,
                DevelopmentModeException;
 
