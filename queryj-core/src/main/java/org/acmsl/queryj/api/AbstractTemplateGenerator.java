@@ -532,8 +532,8 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
     }
 
     /**
-     * Resolves the {@link TemplateDebuggingService} fr
-     * @return
+     * Resolves the {@link TemplateDebuggingService} at runtime.
+     * @return such instance, or {@code null} if none is found.
      */
     public TemplateDebuggingService<?> resolveTemplateDebuggingService()
     {
