@@ -756,11 +756,11 @@ public abstract class AbstractTemplate<C extends TemplateContext>
         throws InvalidTemplateException,
         DevelopmentModeException
     {
+        @Nullable final ST result;
+
         @Nullable Throwable t_ExceptionToWrap = null;
 
         @Nullable final STGroup t_Group = retrieveGroup();
-
-        @Nullable final ST result;
 
         if (t_Group == null)
         {
