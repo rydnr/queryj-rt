@@ -38,15 +38,19 @@ package org.acmsl.queryj.api;
 /*
  * Importing JetBrains annotations.
  */
+import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
 import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.jetbrains.annotations.Nullable;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+import org.stringtemplate.v4.ST;
+import org.stringtemplate.v4.STGroup;
 
 /**
  * Tests for {@link AbstractTemplate}.
@@ -64,6 +68,29 @@ public class AbstractTemplateTest
     @Test
     public void generateOutput_calls_TemplateDebuggingService_when_debugging()
     {
+        @NotNull final AbstractTemplate<TemplateContext> instance = new
+            AbstractTemplate<TemplateContext>()
+            {
+                @NotNull
+                @Override
+                public InvalidTemplateException buildInvalidTemplateException(@NotNull final TemplateContext context, @NotNull final ST template, @NotNull final Throwable actualException)
+                {
+                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                }
 
+                @Nullable
+                @Override
+                public STGroup retrieveGroup()
+                {
+                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+
+                @NotNull
+                @Override
+                public String getTemplateName()
+                {
+                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                }
+            }
     }
 }
