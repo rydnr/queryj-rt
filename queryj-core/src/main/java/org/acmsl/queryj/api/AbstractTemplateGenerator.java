@@ -66,6 +66,7 @@ import org.jetbrains.annotations.Nullable;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.stringtemplate.v4.STGroup;
 
 /*
  * Importing some JDK classes.
@@ -74,6 +75,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
+import java.lang.management.ManagementFactory;
 import java.nio.charset.Charset;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -315,6 +317,35 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
 
         return result;
     }
+
+    /**
+     * Checks whether we're in dev mode.
+     * @param template the {@link org.stringtemplate.v4.STGroup template group}.
+     * @return {@code true} in such case.
+     */
+    protected boolean isInDevMode(@NotNull final STGroup template)
+    {
+        final boolean result;
+
+        final boolean devModeDisabled = System.getProperty("queryj.devMode.disabled") != null;
+
+        if (devModeDisabled)
+        {
+            result = false;
+        }
+        else
+        {
+            final boolean debug =
+                ManagementFactory.getRuntimeMXBean(). getInputArguments().toString().contains(XRUNJDWP_TRANSPORT);
+
+            result =
+                (   (debug)
+                    && (!template.getFileName().startsWith("org/acmsl/queryj/templates/packaging")));
+        }
+
+        return result;
+    }
+
 
     protected boolean debugging(@NotNull final TemplateContext context)
     {
