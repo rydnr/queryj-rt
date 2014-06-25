@@ -555,11 +555,6 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
                 }
             }
         }
-        else
-        {
-            throw
-                new CannotFindTemplateDebuggingServiceImplementationException();
-        }
 
         return result;
     }
