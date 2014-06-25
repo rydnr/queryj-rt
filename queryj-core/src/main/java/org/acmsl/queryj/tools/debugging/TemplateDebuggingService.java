@@ -38,7 +38,6 @@ package org.acmsl.queryj.tools.debugging;
 /*
  * Importing QueryJ Core classes.
  */
-import org.acmsl.queryj.api.Template;
 import org.acmsl.queryj.api.TemplateContext;
 
 /*
