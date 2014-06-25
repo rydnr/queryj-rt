@@ -279,35 +279,36 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
 
                 if (stTemplate != null)
                 {
-                try
-                {
-                    t_strFileContents = stTemplate.render();
-                }
-                catch (@NotNull final Throwable throwable)
-                {
-                    @Nullable final Log t_Log = UniqueLogFactory.getLog(AbstractQueryJTemplate.class);
-
-                    if (t_Log != null)
+                    try
                     {
-                        t_Log.error(
-                            "Error in template " + template.getTemplateName(), throwable);
+                        t_strFileContents = stTemplate.render();
                     }
-    /*                    @Nullable final STTreeView debugTool =
-                            new StringTemplateTreeView("Debugging " + getTemplateName(), t_Template);
+                    catch (@NotNull final Throwable throwable)
+                    {
+                        @Nullable final Log t_Log = UniqueLogFactory.getLog(AbstractQueryJTemplate.class);
 
-                        debugTool.setVisible(true);
-
-                        while (debugTool.isVisible())
+                        if (t_Log != null)
                         {
-                            try
+                            t_Log.error(
+                                "Error in template " + template.getTemplateName(), throwable);
+                        }
+        /*                    @Nullable final STTreeView debugTool =
+                                new StringTemplateTreeView("Debugging " + getTemplateName(), t_Template);
+
+                            debugTool.setVisible(true);
+
+                            while (debugTool.isVisible())
                             {
-                                Thread.sleep(1000);
-                            }
-                            catch (InterruptedException e)
-                            {
-                                e.printStackTrace();
-                            }
-                        }*/
+                                try
+                                {
+                                    Thread.sleep(1000);
+                                }
+                                catch (InterruptedException e)
+                                {
+                                    e.printStackTrace();
+                                }
+                            }*/
+                    }
                 }
 
                 if (!"".equals(t_strFileContents))
