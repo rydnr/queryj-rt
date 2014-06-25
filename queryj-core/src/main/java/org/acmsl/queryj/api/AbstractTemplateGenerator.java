@@ -538,7 +538,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
         @NotNull final TemplateDebuggingService<? extends TemplateContext> result;
 
         @Nullable final Class<TemplateDebuggingService<C>> factoryClass =
-            TemplateDebuggingService.class;
+            TemplateDebuggingService.<C>class;
 
         if (factoryClass != null)
         {
