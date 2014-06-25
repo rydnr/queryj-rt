@@ -37,7 +37,6 @@ package org.acmsl.queryj.api;
 /*
  * Importing some project-specific classes.
  */
-import org.acmsl.queryj.api.exceptions.CannotFindPlaceholderImplementationException;
 import org.acmsl.queryj.api.exceptions.DevelopmentModeException;
 import org.acmsl.queryj.api.exceptions.Sha256NotSupportedException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
