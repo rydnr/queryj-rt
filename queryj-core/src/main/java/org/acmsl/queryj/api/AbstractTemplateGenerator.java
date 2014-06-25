@@ -557,7 +557,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
             else
             {
                 throw
-                    new CannotFindPlaceholderImplementationException(factoryClass);
+                    new CannotFindTemplateDebuggingServiceImplementationException(factoryClass);
             }
         }
         else
