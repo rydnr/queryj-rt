@@ -727,7 +727,6 @@ public abstract class AbstractTemplate<C extends TemplateContext>
      * Generates the source code.
      * @param context the {@link QueryJTemplateContext} instance.
      * @param relevantOnly whether to include only relevant placeholders.
-     * @param templateDebuggingService the {@link TemplateDebuggingService}, if available.
      * @return such output.
      */
     @Nullable
