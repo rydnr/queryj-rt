@@ -43,6 +43,12 @@ import org.acmsl.queryj.api.exceptions.InvalidPerTableTemplateException;
 import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
 
 /*
+ * Importing JUnit4 classes.
+ */
+import org.stringtemplate.v4.ST;
+import org.stringtemplate.v4.STGroup;
+
+/*
  * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
