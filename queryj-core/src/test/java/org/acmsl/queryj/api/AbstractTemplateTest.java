@@ -78,7 +78,7 @@ public class AbstractTemplateTest
                 {
                     return new InvalidPerTableTemplateException("name", "tableName", "repository", null)
                     {
-                    }
+                    };
                 }
 
                 @Nullable
