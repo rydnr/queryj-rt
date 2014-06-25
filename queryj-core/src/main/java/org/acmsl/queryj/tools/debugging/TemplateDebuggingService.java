@@ -43,6 +43,11 @@ import org.acmsl.queryj.api.Template;
 import org.acmsl.queryj.api.TemplateContext;
 
 /*
+* Importing StringTemplate classes.
+ */
+import org.stringtemplate.v4.ST;
+
+/*
  * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
