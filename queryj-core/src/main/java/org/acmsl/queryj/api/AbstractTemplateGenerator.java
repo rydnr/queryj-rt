@@ -245,6 +245,8 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
 
         @Nullable final ST relevantStTemplate = template.generate(true);
 
+        @Nullable final String relevantContent;
+
         if (relevantStTemplate != null)
         {
          @Nullable final String relevantContent = template.generate(true);
