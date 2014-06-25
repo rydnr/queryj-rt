@@ -54,6 +54,9 @@ import org.checkthread.annotations.ThreadSafe;
 public class InvalidPerTableTemplateException
     extends InvalidTemplateException
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = -6205112274174273041L;
 
     /**
