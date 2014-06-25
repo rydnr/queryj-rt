@@ -130,7 +130,7 @@ public class AbstractTemplateTest
                 }
 
                 @Override
-                protected List build
+                protected List buildT
             };
 
         @NotNull final DoNothingDebuggingService<TemplateContext> templateDebuggingService =
