@@ -54,6 +54,11 @@ import org.acmsl.commons.utils.io.FileUtils;
 import org.apache.commons.logging.Log;
 
 /*
+ * Importing StringTemplate classes.
+ */
+import org.stringtemplate.v4.ST;
+
+/*
  * Importing some JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
