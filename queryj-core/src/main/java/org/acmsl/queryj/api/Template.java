@@ -43,6 +43,7 @@ import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
  */
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import org.stringtemplate.v4.ST;
 
 /**
  * Represents any kind of templates.
