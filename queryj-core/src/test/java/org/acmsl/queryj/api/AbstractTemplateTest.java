@@ -119,5 +119,7 @@ public class AbstractTemplateTest
             new DoNothingDebuggingService<>();
 
         instance.generate(false, templateDebuggingService);
+
+        Assert.assertTrue(templateDebuggingService.called);
     }
 }
