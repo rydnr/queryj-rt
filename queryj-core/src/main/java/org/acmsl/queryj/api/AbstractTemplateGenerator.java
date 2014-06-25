@@ -535,7 +535,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
     @Nullable
     public TemplateDebuggingService<C> resolveTemplateDebuggingService()
     {
-        @NotNull final List<FillTemplateChain<? extends FillHandler<?>>> result = new ArrayList<>();
+        @NotNull final TemplateDebuggingService<? extends FillHandler<?>>> result = new ArrayList<>();
 
         @Nullable final Class<FillTemplateChainFactory<C>> factoryClass =
             retrieveFillTemplateChainFactoryClass(context, getPlaceholderPackage());
