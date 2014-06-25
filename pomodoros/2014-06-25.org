@@ -1,7 +1,7 @@
 * 2014/06/25
 ** Implement interpreter #530:
 *** DONE Implement TemplateDevelopmentService: 1 -> 2
-*** Refactor AbstractTemplate + Implement LocalTemplateInspectService : 1 ->
+*** TODO Refactor AbstractTemplate + Implement LocalTemplateInspectService : 1 ->
 *** Make TemplateDevelopmentService implementations resolvable: 1 ->
 *** Implement RestTemplateDevService using netty: 3 ->
 *** Implement a command-line client:
