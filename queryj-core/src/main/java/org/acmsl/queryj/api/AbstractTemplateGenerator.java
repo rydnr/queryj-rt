@@ -355,7 +355,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
      * Manages the debugging session.
      * @param context the context.
      * @param debuggingService the {@link TemplateDebuggingService} instance.
-     * @return {@code true} if the template is be
+     * @return {@code true} if the template
      */
     protected boolean debugging(
         @NotNull final TemplateContext context, @Nullable final TemplateDebuggingService debuggingService)
