@@ -134,7 +134,8 @@ public class AbstractTemplateTest
                 }
 
                 @Override
-                public List<FillTemplateChain<? extends FillHandler<?>>> buildFillTemplateChains(@NotNull final TemplateContext context)
+                public List<FillTemplateChain<? extends FillHandler<?>>> buildFillTemplateChains(
+                    @NotNull final TemplateContext context)
                     throws QueryJBuildException
                 {
 
