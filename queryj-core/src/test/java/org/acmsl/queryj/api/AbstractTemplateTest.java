@@ -75,7 +75,9 @@ public class AbstractTemplateTest
                 @Override
                 public InvalidTemplateException buildInvalidTemplateException(@NotNull final TemplateContext context, @NotNull final ST template, @NotNull final Throwable actualException)
                 {
-                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                    return new InvalidTemplateException()
+                    {
+                    }
                 }
 
                 @Nullable
