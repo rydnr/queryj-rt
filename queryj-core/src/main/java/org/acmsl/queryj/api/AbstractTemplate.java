@@ -720,7 +720,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
         throws InvalidTemplateException,
                DevelopmentModeException
     {
-        return generate(getTemplateContext(), relevantOnly, templateDebuggingService);
+        return generate(getTemplateContext(), relevantOnly);
     }
 
     /**
