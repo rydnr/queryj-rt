@@ -44,7 +44,7 @@
       <artifactId>acmsl-commons</artifactId>
       <exclusions>
         <exclusion>
-          <groupId>commons-beanutils</groupId>
+          <groupId>org.apache.commons</groupId>
           <artifactId>commons-beanutils</artifactId>
         </exclusion>
         <exclusion>
@@ -80,6 +80,10 @@
       <optional>true</optional>
     </dependency>
     <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang</artifactId>
+    </dependency>
+    <dependency>
       <groupId>commons-lang</groupId>
       <artifactId>commons-lang</artifactId>
     </dependency>
@@ -100,22 +104,4 @@
     </dependency>
   </dependencies>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>aspectj-maven-plugin</artifactId>
-        <configuration>
-          <warn />
-        </configuration>
-        <executions>
-	  <execution>
-	    <goals>
-	      <goal>compile</goal>
-	    </goals>
-	  </execution>
-        </executions>
-      </plugin>
-    </plugins>
-  </build>
 </project>
