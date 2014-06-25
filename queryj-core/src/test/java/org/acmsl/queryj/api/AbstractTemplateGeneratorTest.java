@@ -94,4 +94,5 @@ public class AbstractTemplateGeneratorTest
     }
 
     public static class DoNothingDebuggingService
+    implements TemplateDebuggingService
 }
