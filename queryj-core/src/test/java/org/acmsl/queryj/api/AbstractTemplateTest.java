@@ -92,6 +92,11 @@ public class AbstractTemplateTest
             new AbstractTemplate<TemplateContext>(templateContext, "org.acmsl.queryj.placeholders", true)
             {
                 /**
+                 * An empty array list.
+                 */
+                @NotNull
+                public List<?>
+                /**
                  * {@inheritDoc}
                  */
                 @NotNull
