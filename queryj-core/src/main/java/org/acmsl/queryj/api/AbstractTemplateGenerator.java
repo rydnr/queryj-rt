@@ -556,7 +556,6 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
             }
         }
 
-        if (result == null)
         return result;
     }
 
