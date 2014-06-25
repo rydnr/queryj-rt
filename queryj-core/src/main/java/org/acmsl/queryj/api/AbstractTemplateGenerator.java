@@ -273,11 +273,11 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
                 }
 
 
-                @Nullable final String t_strFileContents = template.generate(false);
+                = template.generate(false);
 
                 try
                 {
-                    = result.render();
+                    @Nullable final String t_strFileContents = result.render();
                 }
                 catch (@NotNull final Throwable throwable)
                 {
