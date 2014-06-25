@@ -37,6 +37,7 @@ package org.acmsl.queryj.api;
 /*
  * Importing some project-specific classes.
  */
+import org.acmsl.queryj.api.exceptions.CannotFindPlaceholderImplementationException;
 import org.acmsl.queryj.api.exceptions.Sha256NotSupportedException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 
@@ -49,6 +50,8 @@ import org.acmsl.commons.utils.io.FileUtils;
 /*
  * Importing some Apache Commons-Logging classes.
  */
+import org.acmsl.queryj.api.handlers.fillhandlers.FillHandler;
+import org.acmsl.queryj.api.placeholders.FillTemplateChainFactory;
 import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
 import org.apache.commons.logging.Log;
 
@@ -73,6 +76,9 @@ import java.io.ObjectOutputStream;
 import java.nio.charset.Charset;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ServiceLoader;
 
 /**
  * Common logic for template generators.
@@ -530,6 +536,50 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
     public TemplateDebuggingService<C> resolveTemplateDebuggingService()
     {
         return null;
+    }
+
+    /**
+     * Builds the correct chain.
+     * @param context the context.
+     * @return the specific {@link FillTemplateChain}.
+     */
+    @SuppressWarnings("unchecked")
+    @NotNull
+    public List<FillTemplateChain<? extends FillHandler<?>>> buildFillTemplateChains(@NotNull final C context)
+        throws QueryJBuildException
+    {
+        @NotNull final List<FillTemplateChain<? extends FillHandler<?>>> result = new ArrayList<>();
+
+        @Nullable final Class<FillTemplateChainFactory<C>> factoryClass =
+            retrieveFillTemplateChainFactoryClass(context, getPlaceholderPackage());
+
+        if (factoryClass != null)
+        {
+            @Nullable final ServiceLoader<FillTemplateChainFactory<C>> loader =
+                ServiceLoader.load(factoryClass);
+
+            if (loader != null)
+            {
+                for (@NotNull final FillTemplateChainFactory<C> factory : loader)
+                {
+                    result.add(
+                        (FillTemplateChain <? extends FillHandler<?>>)
+                            factory.createFillChain(context));
+                }
+            }
+            else
+            {
+                throw
+                    new CannotFindPlaceholderImplementationException(factoryClass);
+            }
+        }
+        else
+        {
+            throw
+                new CannotFindPlaceholderImplementationException(context.getClass().getName());
+        }
+
+        return result;
     }
 
     /**
