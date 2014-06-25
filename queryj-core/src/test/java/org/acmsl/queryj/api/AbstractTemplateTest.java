@@ -153,6 +153,8 @@ public class AbstractTemplateTest
                 {
                     return emptyList;
                 }
+
+
             };
 
         @NotNull final DoNothingDebuggingService<TemplateContext> templateDebuggingService =
