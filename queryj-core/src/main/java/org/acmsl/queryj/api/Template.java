@@ -37,6 +37,7 @@ package org.acmsl.queryj.api;
  */
 import org.acmsl.queryj.api.exceptions.DevelopmentModeException;
 import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
+import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
 
 /*
  * Importing some JetBrains annotations.
