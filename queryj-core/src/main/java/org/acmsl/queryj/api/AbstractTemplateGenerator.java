@@ -273,7 +273,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
                 }
 
 
-                = template.generate(false);
+                @Nullable final ST = template.generate(false);
 
                 try
                 {
