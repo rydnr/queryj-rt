@@ -352,7 +352,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
     }
 
     /**
-     * Checks whether we're under deve
+     * Checks whether we're under
      * @param context
      * @param debuggingService
      * @return
