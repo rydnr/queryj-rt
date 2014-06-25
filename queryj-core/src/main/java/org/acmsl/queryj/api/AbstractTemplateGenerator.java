@@ -271,6 +271,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
                             .getAbsolutePath() + File.separator + "." + fileName + ".ser");
                 }
 
+
                 @Nullable final String t_strFileContents = template.generate(false);
 
                 if (!"".equals(t_strFileContents))
