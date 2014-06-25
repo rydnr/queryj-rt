@@ -113,7 +113,8 @@ public class AbstractTemplateTest
                 }
             };
 
-        @NotNull final TemplateDebuggingService<TemplateContext> = new DoNothingDebuggingService<>();
+        @NotNull final TemplateDebuggingService<TemplateContext> templateDebuggingService =
+            new DoNothingDebuggingService<>();
 
         instance.generate(false, new DoNothingDebuggingService<TemplateContext>())
     }
