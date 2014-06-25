@@ -277,7 +277,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
 
                 try
                 {
-                    ST template = result.render();
+                    = result.render();
                 }
                 catch (@NotNull final Throwable throwable)
                 {
