@@ -413,6 +413,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
         @NotNull final ST template,
         @NotNull final C context,
         @Nullable final TemplateDebuggingService<C> debuggingService)
+        throws DevelopmentModeException
     {
         final boolean result;
 
