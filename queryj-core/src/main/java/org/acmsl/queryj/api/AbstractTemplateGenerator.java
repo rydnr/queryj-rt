@@ -275,7 +275,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
 
                 @Nullable final ST stTemplate = template.generate(false);
 
-                @Nullable final String
+                @Nullable final String t_strFileContents;
 
                 try
                 {
