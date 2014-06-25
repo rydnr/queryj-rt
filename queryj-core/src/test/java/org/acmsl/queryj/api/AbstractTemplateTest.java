@@ -155,7 +155,7 @@ public class AbstractTemplateTest
                 }
 
                 /**
-                 * Checks whether we're in dev mode.
+                 * {@inheritDoc}Checks whether we're in dev mode.
                  * @param template the {@link STGroup template group}.
                  * @return {@code true} in such case.
                  */
