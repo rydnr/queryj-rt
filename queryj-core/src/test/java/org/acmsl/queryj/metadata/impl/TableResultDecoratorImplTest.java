@@ -154,7 +154,7 @@ public class TableResultDecoratorImplTest
             new ResultElement<>("resultId", "com.foo.bar.MyResult");
 
         @NotNull final MetadataManager metadataManager = EasyMock.createNiceMock(MetadataManager.class);
-        EasyMock.expect(metadataManager.getMetadataTypeManager()).andReturn(JdbcMetadataTypeManager.getInstance());
+        EasyMock.expect(metadataManager.getMetadataTypeManager()).andReturn(JdbcMetadataTypeManager.getInstance()).anyTimes();
         EasyMock.replay(metadataManager);
 
         @NotNull final CustomSqlProvider customSqlProvider = EasyMock.createNiceMock(CustomSqlProvider.class);
