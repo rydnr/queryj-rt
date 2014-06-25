@@ -353,7 +353,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
                             charset);
                     }
 
-                    debugging(stTemplate, TemplateContext,)
+                    debugging(stTemplate, TemplateContext, )
                     templateDebuggingService.debugTemplate(
                         template, template.getTemplateContext(), t_strFileContents);
 
