@@ -58,5 +58,5 @@ import org.junit.runners.JUnit4;
 public class AbstractTemplateTest
 {
     @Test
-    public void generateOutput_calls_TemplateDebuggingService_if_
+    public void generateOutput_calls_TemplateDebuggingService_if_availabl
 }
