@@ -95,4 +95,7 @@ public class AbstractTemplateGeneratorTest
 
     public static class DoNothingDebuggingService<C extends TemplateContext>
     implements TemplateDebuggingService<C>
+    {
+
+    }
 }
