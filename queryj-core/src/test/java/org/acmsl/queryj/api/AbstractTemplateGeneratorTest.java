@@ -97,9 +97,8 @@ public class AbstractTemplateGeneratorTest
     implements TemplateDebuggingService<C>
     {
         /**
-         * Debugs given template.
-         * @param template the template to debug.
-         * @param context  the context.
+         * {@is
+         * }
          */
         @Override
         public void debugTemplate(@NotNull final Template<C> template, @NotNull final C context)
