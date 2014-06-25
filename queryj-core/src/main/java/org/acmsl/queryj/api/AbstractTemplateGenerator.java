@@ -542,7 +542,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
 
         if (factoryClass != null)
         {
-            @Nullable final ServiceLoader<TemplateDebuggingService<C>> loader =
+            @Nullable final ServiceLoader<TemplateDebuggingService> loader =
                 ServiceLoader.load(factoryClass);
 
             if (loader != null)
