@@ -340,7 +340,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
 
             result =
                 (   (debug)
-                    && (!template.getFileName.startsWith("org/acmsl/queryj/templates/packaging")));
+                    && (!templateFileName.startsWith("org/acmsl/queryj/templates/packaging")));
         }
 
         return result;
