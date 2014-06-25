@@ -443,8 +443,6 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
                             }
                         }*/
     }
-
-    }
     /**
      * Tries to read the hash from disk.
      * @param fileName  the file name.
