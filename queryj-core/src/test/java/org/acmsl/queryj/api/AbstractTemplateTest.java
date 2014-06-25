@@ -111,6 +111,6 @@ public class AbstractTemplateTest
                 }
             };
 
-        instance.generate()
+        instance.generate(false, )
     }
 }
