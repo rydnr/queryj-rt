@@ -128,6 +128,9 @@ public class AbstractTemplateTest
                 {
                     return "test";
                 }
+
+                @Override
+                protected
             };
 
         @NotNull final DoNothingDebuggingService<TemplateContext> templateDebuggingService =
