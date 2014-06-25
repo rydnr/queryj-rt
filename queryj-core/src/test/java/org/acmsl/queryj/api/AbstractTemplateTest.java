@@ -89,11 +89,14 @@ public class AbstractTemplateTest
                         new InvalidPerTableTemplateException("name", "tableName", "repository", null) {};
                 }
 
+                /**
+                 * {@inheritDoc}
+                 */
                 @Nullable
                 @Override
                 public STGroup retrieveGroup()
                 {
-                    return null;  //To change body of implemented methods use File | Settings | File Templates.
+                    return null;
                 }
 
                 @NotNull
