@@ -547,9 +547,9 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
 
             if (loader != null)
             {
-                for (@NotNull final TemplateDebuggingService<C> factory : loader)
+                for (@NotNull final TemplateDebuggingService<C> service : loader)
                 {
-                    result.add(
+                    result =
                         (FillTemplateChain <? extends FillHandler<?>>)
                             factory.createFillChain(context));
                 }
