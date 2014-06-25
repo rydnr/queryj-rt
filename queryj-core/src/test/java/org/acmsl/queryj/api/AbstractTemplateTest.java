@@ -68,9 +68,11 @@ public class AbstractTemplateTest
     /**
      * Checks generateOutput() calls TemplateDebuggingService.debug() in
      * a debugging session.
+     * @throws Exception if the test fails.
      */
     @Test
     public void generateOutput_calls_TemplateDebuggingService_when_debugging()
+    throws  Exception
     {
         @NotNull final TemplateContext templateContext = EasyMock.createNiceMock(TemplateContext.class);
 
