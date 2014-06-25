@@ -442,6 +442,8 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
                                 e.printStackTrace();
                             }
                         }*/
+
+        return result;
     }
     /**
      * Tries to read the hash from disk.
