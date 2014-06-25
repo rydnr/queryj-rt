@@ -320,7 +320,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
 
     /**
      * Checks whether we're in dev mode.
-     * @param templateFileName the {@link org.stringtemplate.v4.STGroup template group}.
+     * @param templateFileName the template file name.
      * @return {@code true} in such case.
      */
     protected boolean isInDevMode(@NotNull final String templateFileName)
