@@ -41,7 +41,6 @@ package org.acmsl.queryj.api;
 import org.acmsl.queryj.api.AbstractTemplateGeneratorTest.DoNothingDebuggingService;
 import org.acmsl.queryj.api.exceptions.InvalidPerTableTemplateException;
 import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
-import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
