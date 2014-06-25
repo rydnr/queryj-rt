@@ -76,6 +76,8 @@ import java.security.NoSuchAlgorithmException;
 
 /**
  * Common logic for template generators.
+ * @param <N> the template.
+ * @param <C> the template context.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  * @since 3.0
  * Created: 2013/08/17 10:26
