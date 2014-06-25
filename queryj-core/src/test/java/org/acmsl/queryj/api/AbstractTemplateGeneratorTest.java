@@ -96,6 +96,16 @@ public class AbstractTemplateGeneratorTest
     public static class DoNothingDebuggingService<C extends TemplateContext>
     implements TemplateDebuggingService<C>
     {
-
+        /**
+         * Debugs given template.
+         *
+         * @param template the template to debug.
+         * @param context  the context.
+         */
+        @Override
+        public void debugTemplate(@NotNull final Template<C> template, @NotNull final C context)
+        {
+            //To change body of implemented methods use File | Settings | File Templates
+        }
     }
 }
