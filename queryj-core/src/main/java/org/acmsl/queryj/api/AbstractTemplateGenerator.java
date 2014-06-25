@@ -316,7 +316,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
         return result;
     }
 
-    protected boolean debugging()
+    protected boolean debugging(@NotNull final )
     {
         if (   (getTemplateContext().isDebugEnabled())
                && (isInDevMode(t_Group))
