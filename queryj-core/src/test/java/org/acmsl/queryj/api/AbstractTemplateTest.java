@@ -89,7 +89,8 @@ public class AbstractTemplateTest
         @NotNull final TemplateContext templateContext = EasyMock.createNiceMock(TemplateContext.class);
 
         EasyMock.expect(templateContext.isDebugEnabled()).andReturn(true);
-        EasyMock.replay();
+        EasyMock.replay(templateContext);
+
         @NotNull final AbstractTemplate<TemplateContext> instance =
             new AbstractTemplate<TemplateContext>(templateContext, "org.acmsl.queryj.placeholders", true)
             {
