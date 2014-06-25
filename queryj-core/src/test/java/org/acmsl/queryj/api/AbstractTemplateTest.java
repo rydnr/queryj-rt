@@ -58,5 +58,8 @@ import org.junit.runners.JUnit4;
 public class AbstractTemplateTest
 {
     @Test
-    public void generateOutput_calls_TemplateDebuggingService_if_c
+    public void generateOutput_calls_TemplateDebuggingService_when_debugging()
+    {
+
+    }
 }
