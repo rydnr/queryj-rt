@@ -323,7 +323,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
      * @param template the {@link org.stringtemplate.v4.STGroup template group}.
      * @return {@code true} in such case.
      */
-    protected boolean isInDevMode(@NotNull final STGroup template)
+    protected boolean isInDevMode(@NotNull final String templateFile)
     {
         final boolean result;
 
