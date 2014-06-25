@@ -530,14 +530,4 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
             + ", \"threadCount\": " + m__iThreadCount
             + " }";
     }
-
-    /**
-     * Resolves the {@link TemplateDebuggingService} at runtime.
-     * @return such instance, or {@code null} if none is found.
-     */
-    @Nullable
-    public TemplateDebuggingService<?> resolveTemplateDebuggingService()
-    {
-        return null;
-    }
 }
