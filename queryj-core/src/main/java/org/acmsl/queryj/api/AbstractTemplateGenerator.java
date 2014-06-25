@@ -49,6 +49,7 @@ import org.acmsl.commons.utils.io.FileUtils;
 /*
  * Importing some Apache Commons-Logging classes.
  */
+import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
 import org.apache.commons.logging.Log;
 
 /*
@@ -525,5 +526,9 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
             + ", \"caching\": " + m__bCaching
             + ", \"threadCount\": " + m__iThreadCount
             + " }";
+    }
+
+    public TemplateDebuggingService<?> resolveTemplateDebuggingService()
+    {
     }
 }
