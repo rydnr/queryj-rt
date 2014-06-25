@@ -66,6 +66,7 @@ import org.jetbrains.annotations.Nullable;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+import org.stringtemplate.v4.ST;
 import org.stringtemplate.v4.STGroup;
 
 /*
@@ -276,7 +277,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
 
                 try
                 {
-                    result = result.render();
+                    ST temp= result.render();
                 }
                 catch (@NotNull final Throwable throwable)
                 {
