@@ -74,7 +74,7 @@ public interface Template<T extends TemplateContext>
      * @return such output.
      */
     @Nullable
-    String generate(final boolean relevantOnly, @Nullable final TemplateDebuggingService templateDebuggingService)
+    String generate(final boolean relevantOnly, @Nullable final TemplateDebuggingService<C> templateDebuggingService)
         throws InvalidTemplateException,
                DevelopmentModeException;
 
