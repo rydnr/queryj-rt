@@ -45,6 +45,8 @@ import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
 /*
  * Importing JUnit4 classes.
  */
+import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.api.handlers.fillhandlers.FillHandler;
 import org.stringtemplate.v4.ST;
 import org.stringtemplate.v4.STGroup;
 
@@ -132,6 +134,9 @@ public class AbstractTemplateTest
                 }
 
                 @Override
+                public List<FillTemplateChain<? extends FillHandler<?>>> buildFillTemplateChains(@NotNull final C context)
+                    throws QueryJBuildException
+                {
                 protected List buildTem
 
             };
