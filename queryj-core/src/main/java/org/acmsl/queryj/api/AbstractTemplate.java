@@ -825,10 +825,8 @@ public abstract class AbstractTemplate<C extends TemplateContext>
                         {
                             synchronized (AbstractTemplate.class)
                             {
-                                try
-                                {
-                                    templateDebuggingService.debugTemplate(this, context);
-                                    //t_Template.inspect().waitForClose();
+                                templateDebuggingService.debugTemplate(this, context);
+                                //t_Template.inspect().waitForClose();
                                 }
                                 catch (@NotNull final InterruptedException e)
                                 {
