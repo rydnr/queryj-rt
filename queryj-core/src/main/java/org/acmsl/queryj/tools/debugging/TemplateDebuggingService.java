@@ -65,5 +65,5 @@ public interface TemplateDebuggingService<C extends TemplateContext>
      * @param template the template to debug.
      * @param context the context.
      */
-    void debugTemplate(@NotNull final Template<C> template, @NotNull final C context);
+    void debugTemplate(@NotNull final ST template, @NotNull final C context);
 }
