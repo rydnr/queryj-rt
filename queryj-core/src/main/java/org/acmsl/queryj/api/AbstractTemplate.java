@@ -717,7 +717,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
      */
     @Nullable
     @Override
-    public String generate(final boolean relevantOnly, @NotNull final TemplateDebuggingService)
+    public String generate(final boolean relevantOnly, @NotNull final TemplateDebuggingService templateDebuggingService)
         throws InvalidTemplateException,
                DevelopmentModeException
     {
