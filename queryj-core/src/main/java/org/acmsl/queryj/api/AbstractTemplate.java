@@ -877,34 +877,6 @@ public abstract class AbstractTemplate<C extends TemplateContext>
     }
 
     /**
-     * Checks whether we're in dev mode.
-     * @param template the {@link STGroup template group}.
-     * @return {@code true} in such case.
-     */
-    protected boolean isInDevMode(@NotNull final STGroup template)
-    {
-        final boolean result;
-
-        final boolean devModeDisabled = System.getProperty("queryj.devMode.disabled") != null;
-
-        if (devModeDisabled)
-        {
-            result = false;
-        }
-        else
-        {
-            final boolean debug =
-                ManagementFactory.getRuntimeMXBean(). getInputArguments().toString().contains(XRUNJDWP_TRANSPORT);
-
-            result =
-                (   (debug)
-                 && (!template.getFileName().startsWith("org/acmsl/queryj/templates/packaging")));
-        }
-
-        return result;
-    }
-
-    /**
      * Builds the correct chain.
      * @param context the context.
      * @return the specific {@link FillTemplateChain}.
