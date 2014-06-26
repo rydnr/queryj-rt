@@ -66,7 +66,7 @@ public class NettyServerDebuggingServiceTest
 
         // Simulate the server receives a reload command:
         // Create a client
-        instance.reload();
+        //
 
         // check the generator restarts the generation for that template.
     }
