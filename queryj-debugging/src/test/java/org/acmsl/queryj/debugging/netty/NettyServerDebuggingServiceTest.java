@@ -64,7 +64,8 @@ public class NettyServerDebuggingServiceTest
 
         // setup an AbstractTemplateGenerator
 
-        // Simulate the server receives a reload command.
+        // Simulate the server receives a reload command:
+        // Create
         instance.reload();
 
         // check the generator restarts the generation for that template.
