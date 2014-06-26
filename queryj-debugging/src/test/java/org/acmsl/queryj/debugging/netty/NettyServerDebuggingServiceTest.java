@@ -91,7 +91,7 @@ public class NettyServerDebuggingServiceTest
             new STInspectorDebuggingService<>();
 
         @SuppressWarnings("unchecked")
-        @NotNull final AbstractTemplateGenerator<MyTestableAbstractTemplate<TemplateContext>, TemplateContext> instance =
+        @NotNull final AbstractTemplateGenerator<MyTestableAbstractTemplate<TemplateContext>, TemplateContext> generator =
             new AbstractTemplateGenerator(false, 1)
             {
                 /**
