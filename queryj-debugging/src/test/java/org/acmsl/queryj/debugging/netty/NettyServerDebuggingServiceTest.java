@@ -58,7 +58,7 @@ public class NettyServerDebuggingServiceTest
 {
     /**
      * Checks a reload makes the server request
-     * a re
+     * a template reload.
      */
     @Test
     public reload_makes_returns_a_reload_command()
