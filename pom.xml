@@ -97,7 +97,7 @@
     </pluginRepository>
   </pluginRepositories>
 
-  <distributionnanagement>
+  <distributionManagement>
     <repository>
       <id>acmsl-plugins-releases</id>
       <name>acmsl-plugin-releases</name>
