@@ -68,7 +68,6 @@ public class NettyServerDebuggingServiceTest
         // Create a client
         // Send the "reload" command
 
-
         // check the generator restarts the generation for that template.
     }
 }
