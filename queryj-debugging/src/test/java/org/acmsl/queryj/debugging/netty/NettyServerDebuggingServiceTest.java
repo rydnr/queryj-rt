@@ -77,6 +77,7 @@ public class NettyServerDebuggingServiceTest
     public void reload_makes_returns_a_reload_command()
     {
         // Start the service
+        System.setProperty()
         @NotNull final NettyServerDebuggingService instance =
             new NettyServerDebuggingService();
 
