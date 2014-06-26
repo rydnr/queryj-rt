@@ -120,7 +120,7 @@ public class NettyServerDebuggingServiceTest
                 @Override
                 public TemplateDebuggingService resolveTemplateDebuggingService()
                 {
-                    return service;
+                    return instance;
                 }
 
                 /**
