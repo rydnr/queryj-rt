@@ -57,7 +57,7 @@ import org.junit.runners.JUnit4;
 public class NettyServerDebuggingServiceTest
 {
     /**
-     * Checks t
+     * Checks
      */
     @Test
     public reload_makes_returns_a_reload_command()
