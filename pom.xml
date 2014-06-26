@@ -36,6 +36,7 @@
     <version.checkthread>1.0.9</version.checkthread>
     <version.powermock>1.5.5</version.powermock>
     <version.oracle-driver>1.4</version.oracle-driver>
+    <version.netty>5.0.0.Alpha1</version.netty>
   </properties>
 
   <modules>
@@ -96,7 +97,7 @@
     </pluginRepository>
   </pluginRepositories>
 
-  <distributionManagement>
+  <distributionnanagement>
     <repository>
       <id>acmsl-plugins-releases</id>
       <name>acmsl-plugin-releases</name>
@@ -403,6 +404,16 @@
         <version>1.8.0</version>
       </dependency>
 
+      <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-transport</artifactId>
+        <version>${version.netty}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-buffer</artifactId>
+        <version>${version.netty}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
