@@ -76,9 +76,9 @@ public class NettyServerDebuggingServiceTest
     @Test
     public void reload_makes_returns_a_reload_command()
     {
+        // Start the service
         @NotNull final NettyServerDebuggingService instance =
             new NettyServerDebuggingService();
-        // Start the service
 
         // setup an AbstractTemplateGenerator
         @NotNull final TemplateContext templateContext = EasyMock.createNiceMock(TemplateContext.class);
