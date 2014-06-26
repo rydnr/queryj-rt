@@ -61,7 +61,7 @@ public class NettyServerDebuggingServiceTest
      * a template reload.
      */
     @Test
-    public reload_makes_returns_a_reload_command()
+    public void reload_makes_returns_a_reload_command()
     {
         @NotNull final NettyServerDebuggingService instance =
             new NettyServerDebuggingService();
