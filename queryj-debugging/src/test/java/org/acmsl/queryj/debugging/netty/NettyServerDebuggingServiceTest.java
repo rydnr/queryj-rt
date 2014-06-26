@@ -148,7 +148,7 @@ public class NettyServerDebuggingServiceTest
         EasyMock.expect(rootFolder.exists()).andReturn(true).anyTimes();
         EasyMock.replay(rootFolder);
 
-        instance.write(template, outputDir, rootFolder, Charset.defaultCharset());
+        .write(template, outputDir, rootFolder, Charset.defaultCharset());
 
         EasyMock.verify(template.template);
 
