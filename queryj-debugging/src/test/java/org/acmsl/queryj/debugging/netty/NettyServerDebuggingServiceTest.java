@@ -87,9 +87,6 @@ public class NettyServerDebuggingServiceTest
 
         @NotNull final DecoratorFactory decoratorFactory = EasyMock.createNiceMock(DecoratorFactory.class);
 
-        @NotNull final STInspectorDebuggingService<TemplateContext> service =
-            new STInspectorDebuggingService<>();
-
         @SuppressWarnings("unchecked")
         @NotNull final AbstractTemplateGenerator<MyTestableAbstractTemplate<TemplateContext>, TemplateContext> generator =
             new AbstractTemplateGenerator(false, 1)
