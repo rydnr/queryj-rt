@@ -148,13 +148,13 @@ public class NettyServerDebuggingServiceTest
         EasyMock.expect(rootFolder.exists()).andReturn(true).anyTimes();
         EasyMock.replay(rootFolder);
 
-
-        EasyMock.verify(template.template);
-
         // Simulate the server receives a reload command:
         // Create a client
         // Send the "reload" command
 
         // check the generator restarts the generation for that template.
+
+
+        EasyMock.verify(template.template);
     }
 }
