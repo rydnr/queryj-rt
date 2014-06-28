@@ -252,7 +252,7 @@ public class NettyServerDebuggingServiceTest
 
             while (buffer.readableBytes() > 0)
             {
-                aux.append(buffer.readByte());
+                aux[.append(buffer.readByte());
             }
 
             this.m__strCommand = aux.toString();
