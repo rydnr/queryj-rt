@@ -186,6 +186,7 @@ public class NettyServerDebuggingServiceTest
         {
             @NotNull final ServerBootstrap sb = new ServerBootstrap();
             sb.group(group).channel(NioServerSocketChannel.class);
+            @NotNull final MyChannelHandlerAdapter
             sb.childHandler(new MyChannelHandlerAdapter());
 
             @NotNull final SocketAddress address = sb.bind(0).sync().channel().localAddress();
