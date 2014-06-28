@@ -131,7 +131,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
 
     /**
      * Launches the server.
-     * @return
+     * @return the group
      * @throws InterruptedException
      * @throws IOException
      */
