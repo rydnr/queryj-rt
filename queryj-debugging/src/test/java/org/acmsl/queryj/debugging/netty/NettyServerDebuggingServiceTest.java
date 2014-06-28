@@ -196,8 +196,8 @@ public class NettyServerDebuggingServiceTest
                     public void channelActive(final ChannelHandlerContext ctx)
                         throws Exception
                     {
-                        ctx.read()Unpooled.wrappedBuffer("reload".getBytes(CharsetUtil.US_ASCII));
-                        ctx.flush();
+                        ctx.read();
+
                     }
                 });
 
