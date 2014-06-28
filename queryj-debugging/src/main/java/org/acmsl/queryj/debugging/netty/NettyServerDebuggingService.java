@@ -220,7 +220,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     /**
      * Stop the server.
      */
-    public
+    public void stopServer
     /**
      * {@inheritDoc}
      */
