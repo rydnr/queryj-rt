@@ -255,7 +255,14 @@ public class NettyServerDebuggingService<C extends TemplateContext>
             @Override
             public void run()
             {
-                stopServer();
+                try
+                {
+                    stopServer();
+                }
+                catch (@NotNull final InterruptedException interrupted)
+                {
+
+                }
             }
         });
         return result;
