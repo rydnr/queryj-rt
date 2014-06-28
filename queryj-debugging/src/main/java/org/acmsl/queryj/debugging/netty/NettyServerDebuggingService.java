@@ -132,7 +132,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     /**
      * Launches the server.
      * @return the {@link NioEventLoopGroup} group.
-     * @throws InterruptedException th
+     * @throws InterruptedException if the
      * @throws IOException
      */
     public NioEventLoopGroup launchServer()
