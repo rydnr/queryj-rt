@@ -269,7 +269,7 @@ public class NettyServerDebuggingServiceTest
         /**
          * The
          */
-
+        private
         /**
          * {@inheritDoc}
          */
