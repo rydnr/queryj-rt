@@ -173,8 +173,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         IOException
     {
         @NotNull final NioEventLoopGroup group = new NioEventLoopGroup(1);
-        @NotNull final ServerBootstrap result = new ServerBootstrap();
-
+        @
         try
         {
             result.group(group).channel(NioServerSocketChannel.class);
