@@ -197,7 +197,7 @@ public class NettyServerDebuggingServiceTest
             @NotNull final byte[] buf = "reload".getBytes(CharsetUtil.US_ASCII);
             out.write(buf);
 
-            Assert.assertEquals("reload", new String(buf, CharsetUtil.US_ASCII));
+            Assert.assertEquals("reload", myChannelHandlerAdapter.m__strCommand);
 
             s.close();
         }
