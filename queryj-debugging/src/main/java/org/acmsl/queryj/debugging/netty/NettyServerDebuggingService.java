@@ -90,7 +90,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     /**
      * Thu NioEventLoopGroup.
      */
-    private EventLoopGroup m__EventLoopGroup;
+    private ServerBootstrap m__EventLoopGroup;
 
     /**
      * Specifies the {@link NioEventLoopGroup}.
