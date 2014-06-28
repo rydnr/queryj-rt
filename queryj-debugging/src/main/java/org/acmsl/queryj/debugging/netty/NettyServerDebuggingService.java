@@ -102,8 +102,8 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     }
 
     /**
-     * Specifies the {@link NioEventLoopGroup}.
-     * @param group the group.
+     * Specifies the {@link ServerBootstrap}.
+     * @param bootstrap the bootstrap.
      */
     protected void setServerBootstrap(@NotNull final ServerBootstrap bootstrap)
     {
