@@ -202,7 +202,7 @@ public class NettyServerDebuggingServiceTest
             byte[] buf = new byte[3];
             in.readFully(buf);
 
-            Assert.a--(new String(buf, CharsetUtil.US_ASCII), is("abc"));
+            Assert.assertEquals(new String(buf, CharsetUtil.US_ASCII), is("abc"));
 
             s.close();
         } finally {
