@@ -172,13 +172,13 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         throws InterruptedException,
         IOException
     {
-        @NotNull final NioEventLoopGroup result = new NioEventLoopGroup(1);
-        setNioEventLoopGroup(result);
+        @NotNull final NioEventLoopGroup group = new NioEventLoopGroup(1);
+        setNioEventLoopGroup(group);
 
         try
         {
             @NotNull final ServerBootstrap serverBootstrap = new ServerBootstrap();
-            serverBootstrap.group(result).channel(NioServerSocketChannel.class);
+            serverBootstrap.group(group).channel(NioServerSocketChannel.class);
             serverBootstrap.childHandler(this);
             serverBootstrap
             @NotNull final SocketAddress address = serverBootstrap.bind(0).sync().channel().localAddress();
@@ -192,7 +192,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         }
         finally
         {
-            result.shutdownGracefully().sync();
+            group.shutdownGracefully().sync();
         }
 
     }
