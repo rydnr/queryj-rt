@@ -184,7 +184,7 @@ public class NettyServerDebuggingServiceTest
     {
         @NotNull final NettyServerDebuggingService<TemplateContext> instance = new NettyServerDebuggingService<>();
 
-
+        instance.launchServer()
         final NioEventLoopGroup group = new NioEventLoopGroup(1);
 
         try
