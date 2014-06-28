@@ -242,7 +242,8 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     {
         @NotNull final EventLoopGroup bossGroup = new NioEventLoopGroup(); // (1)
         @NotNull final EventLoopGroup workerGroup = new NioEventLoopGroup();
-        try {
+        try
+        {
             ServerBootstrap b = new ServerBootstrap(); // (2)
             b.group(bossGroup, workerGroup)
                 .channel(NioServerSocketChannel.class) // (3)
