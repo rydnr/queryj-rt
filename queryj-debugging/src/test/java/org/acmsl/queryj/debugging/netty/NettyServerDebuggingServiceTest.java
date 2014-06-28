@@ -202,7 +202,10 @@ public class NettyServerDebuggingServiceTest
         out.write(buf);
         socket.close();
 
-        while (future.isDone())
+        while (!future.isDone())
+        {
+
+        }
         future.await();
     }
 
