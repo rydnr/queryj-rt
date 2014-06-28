@@ -290,7 +290,7 @@ public class NettyServerDebuggingServiceTest
         public String toString()
         {
             return
-                  "{ \"command\": \"" + m__strCommand + '"'
+                  "{ \"service\": \"" + service + '"'
                 + ", \"reloadCalled\": " + m__bReloadCalled
                 + ", \"class\": \"" + MyNettyServerDebuggingService.class.getSimpleName() + '"'
                 + ", \"package\": \"" + MyNettyServerDebuggingService.class.getPackage().getName() + "\" }";
