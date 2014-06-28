@@ -69,6 +69,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 import java.io.DataInput;
+import java.io.DataInputStream;
 import java.io.File;
 import java.net.InetSocketAddress;
 import java.net.Socket;
