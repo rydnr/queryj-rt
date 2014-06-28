@@ -177,10 +177,10 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         try
         {
             @NotNull final ServerBootstrap result = new ServerBootstrap();
+            setServerBootstrap(result);
 
             result.group(group).channel(NioServerSocketChannel.class);
             result.childHandler(this);
-            result
             @NotNull final SocketAddress address = result.bind(0).sync().channel().localAddress();
 
             @NotNull final Socket socket = new Socket(NetUtil.LOCALHOST, ((InetSocketAddress) address).getPort());
