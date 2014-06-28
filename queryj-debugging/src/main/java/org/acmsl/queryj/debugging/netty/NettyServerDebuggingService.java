@@ -325,6 +325,9 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      */
     public void processCommand(@NotNull final String command)
     {
-
+        if (command.equals("reload"))
+        {
+            reload();
+        }
     }
 }
