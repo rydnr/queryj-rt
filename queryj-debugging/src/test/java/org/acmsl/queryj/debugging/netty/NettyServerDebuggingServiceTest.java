@@ -263,8 +263,6 @@ public class NettyServerDebuggingServiceTest
         }
     }
 
-    new GenericFutureListener<ChannelFuture>()
-        extends
     public static class MyChannelListener
     {
         /**
@@ -276,5 +274,7 @@ public class NettyServerDebuggingServiceTest
             Assert.assertTrue(instance.m__bReloadCalled);
         }
     });
+    new GenericFutureListener<ChannelFuture>()
+        extends
 
 }
