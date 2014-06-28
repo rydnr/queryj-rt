@@ -275,8 +275,8 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         }
         finally
         {
-//            workerGroup.shutdownGracefully();
-//            bossGroup.shutdownGracefully();
+            workerGroup.shutdownGracefully();
+            bossGroup.shutdownGracefully();
         }
 
         return result;
