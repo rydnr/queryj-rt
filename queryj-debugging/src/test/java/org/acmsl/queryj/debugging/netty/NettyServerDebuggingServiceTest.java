@@ -264,4 +264,17 @@ public class NettyServerDebuggingServiceTest
     }
 
     public static class MyChannelListener
+    extends
+    new GenericFutureListener<ChannelFuture>()
+    {
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public void operationComplete(final Future<?> future) throws Exception
+        {
+            Assert.assertTrue(instance.m__bReloadCalled);
+        }
+    });
+
 }
