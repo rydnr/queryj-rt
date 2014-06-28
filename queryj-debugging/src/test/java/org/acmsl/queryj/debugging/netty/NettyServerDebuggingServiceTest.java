@@ -200,7 +200,7 @@ public class NettyServerDebuggingServiceTest
                     }
 
                     @Override
-                    public void
+                    public void channelRead()
                 });
 
             @NotNull final SocketAddress address = sb.bind(0).sync().channel().localAddress();
