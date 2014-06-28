@@ -95,7 +95,8 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     }
 
     public void launchServer()
-        throws InterruptedException
+        throws InterruptedException,
+                IOException
     {
         final NioEventLoopGroup group = new NioEventLoopGroup(1);
 
