@@ -184,7 +184,7 @@ public class NettyServerDebuggingServiceTest
 
         try
         {
-            final ServerBootstrap sb = new ServerBootstrap();
+            @NotNull final ServerBootstrap sb = new ServerBootstrap();
             sb.group(group).channel(NioServerSocketChannel.class);
             sb.childHandler(new MyChannelHandlerAdapter());
 
