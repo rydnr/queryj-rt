@@ -68,6 +68,7 @@ import org.checkthread.annotations.ThreadSafe;
 
 import java.io.DataOutput;
 import java.io.DataOutputStream;
+import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.net.SocketAddress;
