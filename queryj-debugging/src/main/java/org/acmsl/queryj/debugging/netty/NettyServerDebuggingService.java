@@ -129,7 +129,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         // launch the server
     }
 
-    public void launchServer()
+    public NioEventLoopGroup launchServer()
         throws InterruptedException,
                 IOException
     {
