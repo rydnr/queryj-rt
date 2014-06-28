@@ -195,7 +195,7 @@ public class NettyServerDebuggingServiceTest
                         throws Exception
                     {
                         // Trigger a gathering write by writing two buffers.
-                        ctx.write(Unpooled.wrappedBuffer("reload".toByteArray());
+                        ctx.write(Unpooled.wrappedBuffer("reload".getBytes());
                         final ChannelFuture f = ctx.write(Unpooled.wrappedBuffer(new byte[] { 'b' }));
                         f.addListener(
                             future -> {
