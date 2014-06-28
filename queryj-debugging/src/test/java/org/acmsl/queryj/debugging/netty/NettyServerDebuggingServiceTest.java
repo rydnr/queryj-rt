@@ -217,7 +217,7 @@ public class NettyServerDebuggingServiceTest
         /**
          * Whether it's alive.
          */
-        public boolean m__bAlive;
+        public boolean m__bAlive = true;
 
         /**
          * The command received.
