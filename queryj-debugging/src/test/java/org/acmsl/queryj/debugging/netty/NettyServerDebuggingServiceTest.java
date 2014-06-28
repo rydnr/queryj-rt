@@ -201,7 +201,7 @@ public class NettyServerDebuggingServiceTest
 
             while (myChannelHandlerAdapter.m__bAlive)
             {
-                Thread.sleep(1);
+                Thread.sleep(100);
             }
             Assert.assertEquals("reload", myChannelHandlerAdapter.m__strCommand);
 
