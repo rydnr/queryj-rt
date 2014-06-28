@@ -105,9 +105,12 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      */
     protected void setNioEventLoopGroup(@NotNull final NioEventLoopGroup group)
     {
-        this.m__EventLoopGroup = group;
+        immutableSetNioEventLoopGroup(group);
     }
 
+    /**
+     * Retrieves the {@link NioEventLoopGroup}
+     */
     /**
      * {@inheritDoc}
      */
