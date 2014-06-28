@@ -177,6 +177,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
 
         try
         {
+            @NotNull final SocketAddress address = serverBootstrap.bind(0).sync().channel().localAddress();
             result.group(group).channel(NioServerSocketChannel.class);
             result.childHandler(this);
             setServerBootstrap(result);
