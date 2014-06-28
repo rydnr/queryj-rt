@@ -203,7 +203,7 @@ public class NettyServerDebuggingServiceTest
                                  * {@inheritDoc}
                                  */
                                 @Override
-                                public void operationComplete(ChannelFuture future)
+                                public void operationComplete(@NotNull final ChannelFuture future)
                                     throws Exception
                                 {
                                     // This message must be flushed
