@@ -162,7 +162,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
             @NotNull final ServerBootstrap serverBootstrap = new ServerBootstrap();
             serverBootstrap.group(result).channel(NioServerSocketChannel.class);
             serverBootstrap.childHandler(this);
-
+            serverBootstrap
             @NotNull final SocketAddress address = serverBootstrap.bind(0).sync().channel().localAddress();
 
             @NotNull final Socket socket = new Socket(NetUtil.LOCALHOST, ((InetSocketAddress) address).getPort());
