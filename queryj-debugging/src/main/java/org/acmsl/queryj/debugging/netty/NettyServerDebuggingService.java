@@ -251,22 +251,22 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         Runtime.getRuntime().addShutdownHook(
             new Thread()
             {
-            /**
-             * {@inheritDoc}
-             */
-            @Override
-            public void run()
-            {
-                try
+                /**
+                 * {@inheritDoc}
+                 */
+                @Override
+                public void run()
                 {
-                    stopServer();
+                    try
+                    {
+                        stopServer();
+                    }
+                    catch (@NotNull final InterruptedException interrupted)
+                    {
+                        // Nothing to do
+                    }
                 }
-                catch (@NotNull final InterruptedException interrupted)
-                {
-                    // Nothing to do
-                }
-            }
-        });
+            });
 
         return result;
     }
