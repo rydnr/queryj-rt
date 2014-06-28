@@ -96,7 +96,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      * Specifies the {@link NioEventLoopGroup}.
      * @param group the group.
      */
-    protected final void immutableSetEventLoopGroup(@NotNull final EventLoopGroup group)
+    protected final void immutableSetServerBootstrap(@NotNull final EventLoopGroup group)
     {
         this.m__ServerBootstrap = group;
     }
