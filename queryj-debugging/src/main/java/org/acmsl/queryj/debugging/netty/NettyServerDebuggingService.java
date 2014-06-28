@@ -321,6 +321,8 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         }
 
         processCommand(new String(aux, CharsetUtil.US_ASCII));
+
+        buffer.release();
     }
 
     /**
