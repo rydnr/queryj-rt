@@ -142,7 +142,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     {
         int t_iPort = 0;
 
-
+        if (System.getProperty(""))
         launchServer(t_iPort);
     }
     /**
