@@ -251,6 +251,10 @@ public class NettyServerDebuggingServiceTest
             this.m__strCommand = "" + msg;
         }
 
+        /**
+         * {@inheritDoc}
+         * @return
+         */
         @NotNull
         @Override
         public String toString()
