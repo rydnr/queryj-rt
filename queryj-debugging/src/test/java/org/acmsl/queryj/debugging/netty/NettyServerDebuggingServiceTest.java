@@ -177,7 +177,7 @@ public class NettyServerDebuggingServiceTest
     }
 
     /**
-     * Tests the reload command gets received successfully.
+     * Checks the reload command gets received successfully.
      */
     @Test
     public void reload_command_gets_received_correctly()
