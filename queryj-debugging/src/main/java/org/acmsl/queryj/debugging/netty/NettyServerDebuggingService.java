@@ -248,7 +248,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
 
         result = serverBootstrap.bind(port);
 
-        Runtime.getRuntime().addShutdownHook();
+        Runtime.getRuntime().addShutdownHook(new Thread());
         return result;
     }
 
