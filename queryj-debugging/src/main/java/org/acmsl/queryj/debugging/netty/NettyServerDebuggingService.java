@@ -107,7 +107,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      */
     protected void setServerBootstrap(@NotNull final ServerBootstrap bootstrap)
     {
-        immutableSetNioEventLoopGroup(group);
+        immutableSetNioEventLoopGroup(bootstrap);
     }
 
     /**
