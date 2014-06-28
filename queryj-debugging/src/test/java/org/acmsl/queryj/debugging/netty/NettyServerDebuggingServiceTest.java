@@ -204,6 +204,7 @@ public class NettyServerDebuggingServiceTest
 
         Assert.assertTrue(future.isDone());
 
+        while ()
         Assert.assertTrue(instance.m__bReloadCalled);
 
         instance.stopServer();
