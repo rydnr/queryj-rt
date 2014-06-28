@@ -129,6 +129,12 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         // launch the server
     }
 
+    /**
+     * Launches the server.
+     * @return
+     * @throws InterruptedException
+     * @throws IOException
+     */
     public NioEventLoopGroup launchServer()
         throws InterruptedException,
                 IOException
