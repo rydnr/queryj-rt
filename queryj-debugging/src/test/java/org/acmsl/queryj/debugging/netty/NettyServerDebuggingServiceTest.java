@@ -203,7 +203,8 @@ public class NettyServerDebuggingServiceTest
         future.await();
 
         future.addListener(
-            new GenericFutureListener() {
+            new GenericFutureListener()
+            {
             /**
              * {@inheritDoc}
              */
