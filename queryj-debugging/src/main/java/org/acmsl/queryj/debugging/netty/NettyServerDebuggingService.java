@@ -226,6 +226,14 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     }
 
     /**
+     * Stop the server.
+     */
+    public void stopServer()
+    {
+        return stopServer(getChannelFuture());
+    }
+
+    /**
      * {@inheritDoc}
      */
     @Override
