@@ -139,6 +139,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         throws InterruptedException,
                 IOException
     {
+        launchServer()
     }
     /**
      * Launches the server.
