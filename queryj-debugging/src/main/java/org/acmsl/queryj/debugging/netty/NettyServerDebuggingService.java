@@ -88,7 +88,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     implements TemplateDebuggingService<C>
 {
     /**
-     * Thu NioEventLoopGroup.
+     * The server bootstrap.
      */
     private ServerBootstrap m__ServerBootstrap;
 
