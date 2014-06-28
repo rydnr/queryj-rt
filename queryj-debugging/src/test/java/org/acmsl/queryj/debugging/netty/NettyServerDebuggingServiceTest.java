@@ -264,7 +264,7 @@ public class NettyServerDebuggingServiceTest
     }
 
     public static class MyChannelListener
-        extends GenericFutureListener<ChannelFuture>()
+        extends GenericFutureListener<ChannelFuture>
     {
         /**
          * {@inheritDoc}
