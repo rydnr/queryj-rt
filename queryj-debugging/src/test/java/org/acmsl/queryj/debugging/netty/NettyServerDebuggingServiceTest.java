@@ -177,7 +177,7 @@ public class NettyServerDebuggingServiceTest
     }
 
     @Test
-    public void reload_command_gets_received_()
+    public void reload_command_gets_received_correctly()
         throws Exception
     {
         final NioEventLoopGroup group = new NioEventLoopGroup(1);
