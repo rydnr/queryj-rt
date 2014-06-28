@@ -184,12 +184,12 @@ public class NettyServerDebuggingServiceTest
 
         try
         {
-            @NotNull final ServerBootstrap sb = new ServerBootstrap();
-            sb.group(group).channel(NioServerSocketChannel.class);
+            @NotNull final ServerBootstrap serverBootstrap = new ServerBootstrap();
+            serverBootstrap.group(group).channel(NioServerSocketChannel.class);
             @NotNull final MyChannelHandlerAdapter myChannelHandlerAdapter = new MyChannelHandlerAdapter();
-            sb.childHandler(myChannelHandlerAdapter);
+            serverBootstrap.childHandler(myChannelHandlerAdapter);
 
-            @NotNull final SocketAddress address = sb.bind(0).sync().channel().localAddress();
+            @NotNull final SocketAddress address = serverBootstrap.bind(0).sync().channel().localAddress();
 
             @NotNull final Socket s = new Socket(NetUtil.LOCALHOST, ((InetSocketAddress) address).getPort());
 
