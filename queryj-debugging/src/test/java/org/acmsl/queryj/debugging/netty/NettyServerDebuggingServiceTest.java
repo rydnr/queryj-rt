@@ -186,6 +186,11 @@ public class NettyServerDebuggingServiceTest
             sb.childHandler(
                 new ChannelHandlerAdapter()
                 {
+                    /**
+                     * {@inheritDoc}
+                     * @param ctx
+                     * @throws Exception
+                     */
                     @Override
                     public void channelActive(final ChannelHandlerContext ctx)
                         throws Exception
