@@ -194,7 +194,7 @@ public class NettyServerDebuggingServiceTest
                 {
                     super.reload();
                 }
-            }
+            };
 
         @NotNull final ChannelFuture future = instance.launchServer();
 
