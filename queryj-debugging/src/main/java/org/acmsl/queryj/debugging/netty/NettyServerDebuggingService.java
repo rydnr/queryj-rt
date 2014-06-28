@@ -318,4 +318,8 @@ public class NettyServerDebuggingService<C extends TemplateContext>
 
         processCommand(new String(aux, CharsetUtil.US_ASCII));
     }
+
+    private void processCommand(final String s)
+    {
+    }
 }
