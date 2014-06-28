@@ -281,5 +281,19 @@ public class NettyServerDebuggingServiceTest
         {
             Assert.assertTrue(service.m__bReloadCalled);
         }
+
+        /**
+         * {@inheritDoc}
+         */
+        @NotNull
+        @Override
+        public String toString()
+        {
+            return
+                "{ \"command\": \"" + m__strCommand + '"'
+                + ", \"reloadCalled\": " + m__bReloadCalled
+                + ", \"class\": \"" + MyNettyServerDebuggingService.class.getSimpleName() + '"'
+                + ", \"package\": \"" + MyNettyServerDebuggingService.class.getPackage().getName() + "\" }";
+        }
     }
 }
