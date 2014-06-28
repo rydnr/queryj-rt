@@ -244,7 +244,7 @@ public class NettyServerDebuggingServiceTest
         /**
          * Whether reload has been called.
          */
-        public boolean m__bAlive = true;
+        public boolean m__ReloadCalled = false;
 
         /**
          * The command received.
