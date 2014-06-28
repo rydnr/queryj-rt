@@ -197,18 +197,9 @@ public class NettyServerDebuggingServiceTest
                         ctx.write(Unpooled.wrappedBuffer(new byte[]{'a'}));
                         final ChannelFuture f = ctx.write(Unpooled.wrappedBuffer(new byte[] { 'b' }));
                         f.addListener(
-                            new ChannelFutureListener()
-                            {
-                                /**
-                                 * {@inheritDoc}
-                                 */
-                                @Override
-                                public void operationComplete(@NotNull final ChannelFuture future)
-                                    throws Exception
-                                {
-                                    // This message must be flushed
-                                    ctx.writeAndFlush(Unpooled.wrappedBuffer(new byte[]{'c'}));
-                                }
+                            future -> {
+                                // This message must be flushed
+                                ctx.writeAndFlush(Unpooled.wrappedBuffer(new byte[]{'c'}));
                             });
                         ctx.flush();
                     }
