@@ -149,7 +149,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      * Specifies the event loop group.
      * @param group such {@link EventLoopGroup}.
      */
-    protected final void immutableSetEventLoopGroup(@NotNull final EventLoopGroup group)
+    protected void setEventLoopGroup(@NotNull final EventLoopGroup group)
     {
         this.m__EventLoopGroup = group;
     }
