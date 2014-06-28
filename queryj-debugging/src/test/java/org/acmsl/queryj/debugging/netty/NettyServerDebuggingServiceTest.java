@@ -202,7 +202,7 @@ public class NettyServerDebuggingServiceTest
 
         future.await();
 
-        future.addListener(
+        future.addListener(new MyChannelListener(instance));
             new GenericFutureListener<ChannelFuture>()
             {
                 /**
