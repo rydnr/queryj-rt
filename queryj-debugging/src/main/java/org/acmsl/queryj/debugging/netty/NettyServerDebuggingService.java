@@ -164,7 +164,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     /**
      * Launches the server.
      * @param port the port.
-     * @return the {@link NioEventLoopGroup} group.
+     * @return the {@link ServerBootstrap}.
      * @throws InterruptedException if the server gets interrupted.
      * @throws IOException if the socket cannot be bound.
      */
