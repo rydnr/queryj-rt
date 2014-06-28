@@ -263,5 +263,5 @@ public class NettyServerDebuggingServiceTest
         }
     }
 
-    public static class My
+    public static class MyChannelListener
 }
