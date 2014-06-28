@@ -223,4 +223,6 @@ public class NettyServerDebuggingServiceTest
             group.shutdownGracefully().sync();
         }
     }
+
+    public static class MyChannel
 }
