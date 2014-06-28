@@ -272,7 +272,8 @@ public class NettyServerDebuggingServiceTest
         private final MyNettyServerDebuggingService service;
 
         /**
-         *
+         * Creates a new listener.
+         * @param service the {@link MyNettyServerDebuggingService} instance.
          */
         public MyChannelListener(@NotNull final MyNettyServerDebuggingService service)
         {
