@@ -49,6 +49,7 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.util.CharsetUtil;
 import io.netty.util.NetUtil;
+import io.netty.util.concurrent.GenericFutureListener;
 import org.acmsl.commons.utils.io.FileUtils;
 import org.acmsl.queryj.api.AbstractTemplateGenerator;
 import org.acmsl.queryj.api.TemplateContext;
@@ -200,7 +201,7 @@ public class NettyServerDebuggingServiceTest
 
         future.await();
 
-        future.addListener(new GenericFutureListener
+        future.addListener(new GenericFutureListener()
         )
         Assert.assertTrue(instance.m__bReloadCalled);
 
