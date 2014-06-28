@@ -181,14 +181,6 @@ public class NettyServerDebuggingService<C extends TemplateContext>
             result.group(group).channel(NioServerSocketChannel.class);
             result.childHandler(this);
             setServerBootstrap(result);
-            @NotNull final SocketAddress address = result.bind(0).sync().channel().localAddress();
-
-            @NotNull final Socket socket = new Socket(NetUtil.LOCALHOST, ((InetSocketAddress) address).getPort());
-
-            @NotNull final DataOutput out = new DataOutputStream(socket.getOutputStream());
-            @NotNull final byte[] buf = "reload".getBytes(CharsetUtil.US_ASCII);
-            out.write(buf);
-            socket.close();
         }
         finally
         {
