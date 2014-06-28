@@ -200,8 +200,6 @@ public class NettyServerDebuggingServiceTest
         out.write(buf);
         socket.close();
 
-        future.addListener(new MyChannelListener(instance));
-
         future.await();
 
         instance.stopServer();
