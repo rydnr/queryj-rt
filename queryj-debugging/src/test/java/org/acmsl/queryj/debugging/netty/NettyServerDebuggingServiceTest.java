@@ -187,7 +187,7 @@ public class NettyServerDebuggingServiceTest
             new NettyServerDebuggingService()
             {
                 /**
-                 * Reloads the template.
+                 * {@inheritDoc}
                  */
                 @Override
                 protected void reload()
