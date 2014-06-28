@@ -218,7 +218,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     }
 
     /**
-     * Stop the server.
+     * Stops the server.
      */
     public void stopServer()
     {
