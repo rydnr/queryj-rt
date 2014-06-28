@@ -287,7 +287,7 @@ public class NettyServerDebuggingServiceTest
         public void operationComplete(final Future<ChannelFuture> future)
             throws Exception
         {
-            Assert.assertTrue(instance.m__bReloadCalled);
+            Assert.assertTrue(service.m__bReloadCalled);
         }
     });
 
