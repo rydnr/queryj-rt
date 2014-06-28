@@ -176,6 +176,9 @@ public class NettyServerDebuggingServiceTest
         EasyMock.verify(template.template);
     }
 
+    /**
+     * Tests the reload command gets received successfully.
+     */
     @Test
     public void reload_command_gets_received_correctly()
         throws Exception
