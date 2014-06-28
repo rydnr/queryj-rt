@@ -238,7 +238,7 @@ public class NettyServerDebuggingServiceTest
     /**
      * A testable context handler adapter.
      */
-    public static class MyNettyServerDebuggingService
+    public static class MyNettyServerDebuggingService<C extends TemplateContext>
         extends NettyServerDebuggingService<C>
     {
         /**
