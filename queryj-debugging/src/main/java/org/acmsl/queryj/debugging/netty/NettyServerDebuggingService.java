@@ -229,7 +229,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
 
     /**
      * Stops the server.
-     * @param group the {@link EventLoopGroup}
+     * @param group the {@link EventLoopGroup group}.
      */
     protected void stopServer(@NotNull final EventLoopGroup group)
         throws InterruptedException
