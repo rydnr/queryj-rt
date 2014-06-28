@@ -276,8 +276,9 @@ public class NettyServerDebuggingServiceTest
          */
         public MyChannelListener(@NotNull final MyNettyServerDebuggingService service)
         {
-
+            this.service = service;
         }
+
         /**
          * {@inheritDoc}
          */
