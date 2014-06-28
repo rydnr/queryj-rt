@@ -292,7 +292,7 @@ public class NettyServerDebuggingServiceTest
             return
                   "{ \"service\": \"" + service + '"'
                 + ", \"class\": \"" + MyChannelListener.class.getSimpleName() + '"'
-                + ", \"package\": \"" + MyNettyServerDebuggingService.class.getPackage().getName() + "\" }";
+                + ", \"package\": \"" + MyChannelListener.class.getPackage().getName() + "\" }";
         }
     }
 }
