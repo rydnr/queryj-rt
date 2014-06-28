@@ -197,8 +197,10 @@ public class NettyServerDebuggingServiceTest
                         throws Exception
                     {
                         ctx.read();
-
                     }
+
+                    @Override
+                    public void
                 });
 
             @NotNull final SocketAddress address = sb.bind(0).sync().channel().localAddress();
