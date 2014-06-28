@@ -241,6 +241,7 @@ public class NettyServerDebuggingServiceTest
         public void channelRead(@NotNull final ChannelHandlerContext ctx, @NotNull final Object msg)
         {
             this.m__strCommand = "" + msg;
+            this.m__bAlive = false;
         }
 
         /**
