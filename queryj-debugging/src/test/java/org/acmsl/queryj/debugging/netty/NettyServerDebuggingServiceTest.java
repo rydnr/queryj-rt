@@ -204,8 +204,6 @@ public class NettyServerDebuggingServiceTest
 
         future.addListener(new MyChannelListener(instance));
 
-        Assert.assertTrue(instance.m__bReloadCalled);
-
         instance.stopServer();
 
         future.await();
