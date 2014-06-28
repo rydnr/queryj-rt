@@ -153,6 +153,10 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         {
             t_iPort = Integer.valueOf(t_strPort);
         }
+        else
+        {
+            t_iPort = 0;
+        }
 
         launchServer(t_iPort);
     }
