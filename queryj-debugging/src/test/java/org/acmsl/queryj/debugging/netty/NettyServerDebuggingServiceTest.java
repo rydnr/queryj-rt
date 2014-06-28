@@ -183,7 +183,7 @@ public class NettyServerDebuggingServiceTest
         throws Exception
     {
         @NotNull final NettyServerDebuggingService<TemplateContext> instance =
-            new MyNettyServerDebuggingService();
+            new MyNettyServerDebuggingService<>();
 
         @NotNull final ChannelFuture future = instance.launchServer();
 
