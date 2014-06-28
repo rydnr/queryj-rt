@@ -250,7 +250,7 @@ public class NettyServerDebuggingServiceTest
 
             @NotNull final byte[] aux = new byte[buffer.readableBytes()];
 
-            for (int index = 0; index < buffer.readableBytes(); index++)
+            for (int index = 0; index < aux.length; index++)
             {
                 aux[index] = buffer.readByte();
             }
