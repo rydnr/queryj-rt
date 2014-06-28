@@ -194,7 +194,7 @@ public class NettyServerDebuggingServiceTest
                 @Override
                 protected void reload()
                 {
-                    super.reload();
+                    reloadCalled = true;
                 }
             };
 
