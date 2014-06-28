@@ -202,7 +202,7 @@ public class NettyServerDebuggingServiceTest
         out.write(buf);
         socket.close();
 
-        future.channel().closeFuture().sync();
+//        future.channel().closeFuture().sync();
 
         Assert.assertTrue(future.isDone());
 
