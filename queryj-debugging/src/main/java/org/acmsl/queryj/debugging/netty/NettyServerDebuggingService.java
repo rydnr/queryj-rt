@@ -115,7 +115,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      * @return such bootstrap.
      */
     @Nullable
-    protected ServerBootstrap getNioEventLoopGroup()
+    protected ServerBootstrap getServerBootstrap()
     {
         return this.m__ServerBootstrap;
     }
