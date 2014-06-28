@@ -239,7 +239,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     {
         @NotNull final ChannelFuture result;
         @NotNull final ServerBootstrap serverBootstrap = new ServerBootstrap();
-
+        serverBootstrap.option()
         setServerBootstrap(serverBootstrap);
         @NotNull final EventLoopGroup group = new NioEventLoopGroup(1);
         setEventLoopGroup(group);
