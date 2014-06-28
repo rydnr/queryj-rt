@@ -217,8 +217,8 @@ public class NettyServerDebuggingServiceTest
     /**
      * A testable context handler adapter.
      */
-    public static class MyNettyServerDebuggingService<C extends TemplateContext>
-        extends NettyServerChannelHandler<C>
+    public static class MyNettyServerDebuggingService
+        extends NettyServerChannelHandler
     {
         /**
          * Whether reload has been called.
