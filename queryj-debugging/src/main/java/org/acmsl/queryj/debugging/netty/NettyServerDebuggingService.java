@@ -337,6 +337,10 @@ public class NettyServerDebuggingService<C extends TemplateContext>
             ReferenceCountUtil.release(msg);
         }
 
+        try
+        {
+
+        }
         ctx.channel().closeFuture().sync();
     }
 
