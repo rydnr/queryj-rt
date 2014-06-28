@@ -289,6 +289,5 @@ public class NettyServerDebuggingServiceTest
         {
             Assert.assertTrue(service.m__bReloadCalled);
         }
-    });
-
+    }
 }
