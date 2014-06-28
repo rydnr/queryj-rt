@@ -339,9 +339,9 @@ public class NettyServerDebuggingService<C extends TemplateContext>
 
         try
         {
-
+            ctx.channel().closeFuture().sync();
         }
-        ctx.channel().closeFuture().sync();
+
     }
 
     /**
