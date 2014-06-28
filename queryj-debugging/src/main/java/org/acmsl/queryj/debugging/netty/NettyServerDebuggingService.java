@@ -88,6 +88,11 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     implements TemplateDebuggingService<C>
 {
     /**
+     * The system property for debugging templates.
+     */
+    public static final String QUERYJ_TEMPLATE_DEBUG_PORT = "queryj.template.debug.port";
+
+    /**
      * The server bootstrap.
      */
     private ServerBootstrap m__ServerBootstrap;
