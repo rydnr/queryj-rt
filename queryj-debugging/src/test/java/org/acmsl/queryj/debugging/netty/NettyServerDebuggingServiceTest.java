@@ -230,7 +230,7 @@ public class NettyServerDebuggingServiceTest
         /**
          * The command received.
          */
-
+        public String
         /**
          * {@inheritDoc}
          */
