@@ -257,7 +257,7 @@ public class NettyServerDebuggingServiceTest
         @Override
         public void reload()
         {
-            m__ReloadCalled = true;
+            m__bReloadCalled = true;
         }
 
         /**
