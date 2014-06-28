@@ -99,6 +99,11 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     private ServerBootstrap m__ServerBootstrap;
 
     /**
+     * The event loop group.
+     */
+    private EventLoopGroup m__EventLoopGroup;
+
+    /**
      * The channel future.
      */
     private ChannelFuture m__ChannelFuture;
