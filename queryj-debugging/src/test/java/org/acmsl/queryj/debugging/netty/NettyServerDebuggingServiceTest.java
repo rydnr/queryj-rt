@@ -203,8 +203,6 @@ public class NettyServerDebuggingServiceTest
         socket.close();
 
         future.await();
-
-        instance.stopServer();
     }
 
     /**
