@@ -98,7 +98,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      */
     protected final void immutableSetServerBootstrap(@NotNull final ServerBootstrap bootstrap)
     {
-        this.m__ServerBootstrap = group;
+        this.m__ServerBootstrap = bootstrap;
     }
 
     /**
