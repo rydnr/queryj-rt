@@ -225,7 +225,9 @@ public class NettyServerDebuggingServiceTest
             Assert.assertEquals("abc", new String(buf, CharsetUtil.US_ASCII), "abc");
 
             s.close();
-        } finally {
+        }
+        finally
+        {
             group.shutdownGracefully().sync();
         }
     }
