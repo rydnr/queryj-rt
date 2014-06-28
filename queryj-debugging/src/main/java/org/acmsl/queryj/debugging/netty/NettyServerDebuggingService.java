@@ -139,7 +139,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         throws InterruptedException,
                 IOException
     {
-
+        int t_iPort = 0;
         launchServer(t_iPort);
     }
     /**
