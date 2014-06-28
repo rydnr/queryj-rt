@@ -206,7 +206,7 @@ public class NettyServerDebuggingServiceTest
 
         while (!instance.m__bReloadCalled)
         {
-
+            Thread.sleep(1000);
         }
         Assert.assertTrue(instance.m__bReloadCalled);
 
