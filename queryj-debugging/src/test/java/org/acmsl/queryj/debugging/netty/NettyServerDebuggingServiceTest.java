@@ -205,16 +205,16 @@ public class NettyServerDebuggingServiceTest
         future.addListener(
             new GenericFutureListener()
             {
-            /**
-             * {@inheritDoc}
-             */
-            @Override
-            public void operationComplete(final Future<?> future) throws Exception
-            {
-                Assert.assertTrue(instance.m__bReloadCalled);
-            }
-        }
-        )
+                /**
+                 * {@inheritDoc}
+                 */
+                @Override
+                public void operationComplete(final Future<?> future) throws Exception
+                {
+                    Assert.assertTrue(instance.m__bReloadCalled);
+                }
+            });
+
         Assert.assertTrue(instance.m__bReloadCalled);
 
         instance.stopServer();
