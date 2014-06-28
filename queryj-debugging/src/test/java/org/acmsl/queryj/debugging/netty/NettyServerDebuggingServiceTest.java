@@ -256,7 +256,6 @@ public class NettyServerDebuggingServiceTest
          */
         @Override
         public void reload()
-        throws Exception
         {
             ctx.read();
         }
