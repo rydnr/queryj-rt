@@ -271,7 +271,7 @@ public class NettyServerDebuggingServiceTest
                   "{ \"command\": \"" + m__strCommand + '"'
                 + ", \"reloadCalled\": " + m__bReloadCalled
                 + ", \"class\": \"" + MyNettyServerDebuggingService.class.getSimpleName() + '"'
-                + ", \"package\": \"" + MyChannelHandlerAdapter.class.getPackage().getName() + "\" }";
+                + ", \"package\": \"" + MyNettyServerDebuggingService.class.getPackage().getName() + "\" }";
         }
     }
 }
