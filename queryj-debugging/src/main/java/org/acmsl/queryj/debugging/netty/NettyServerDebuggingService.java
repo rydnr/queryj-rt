@@ -115,7 +115,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     @NotNull
     protected NioEventLoopGroup getNioEventLoopGroup()
     {
-        return this.m__EventLoopGroup;
+        if (this.m__EventLoopGroup);
     }
 
     /**
