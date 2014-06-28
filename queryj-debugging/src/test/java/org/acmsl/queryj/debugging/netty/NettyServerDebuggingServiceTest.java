@@ -248,6 +248,8 @@ public class NettyServerDebuggingServiceTest
         {
             @NotNull final ByteBuf buffer = (ByteBuf) msg;
 
+            @NotNull final StringBuilder aux = new StringBuilder();
+
             while (buffer.readableBytes() > 0)
             {
 
