@@ -147,7 +147,9 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     {
         int t_iPort = 0;
 
-        @Nullable final String t_strPort = System.getProperty(QUERYJ_TEMPLATE_DEBUG_PORT) != null)
+        @Nullable final String t_strPort = System.getProperty(QUERYJ_TEMPLATE_DEBUG_PORT);
+
+        if (t_strPort != null)
         {
             t_iPort = Integer.valueOf(System.getProperty(QUERYJ_TEMPLATE_DEBUG_PORT))
         }
