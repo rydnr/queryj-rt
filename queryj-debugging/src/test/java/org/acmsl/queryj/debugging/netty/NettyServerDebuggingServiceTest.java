@@ -196,12 +196,6 @@ public class NettyServerDebuggingServiceTest
                     {
                         // Trigger a gathering write by writing two buffers.
                         ctx.write(Unpooled.wrappedBuffer("reload".getBytes(CharsetUtil.US_ASCII));
-                        final ChannelFuture f = ctx.write(Unpooled.wrappedBuffer(new byte[] { 'b' }));
-                        f.addListener(
-                            future -> {
-                                // This message must be flushed
-                                ctx.writeAndFlush(Unpooled.wrappedBuffer(new byte[]{'c'}));
-                            });
                         ctx.flush();
                     }
                 });
