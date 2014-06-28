@@ -253,7 +253,6 @@ public class NettyServerDebuggingServiceTest
 
         /**
          * {@inheritDoc}
-         * @return
          */
         @NotNull
         @Override
