@@ -137,6 +137,9 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     }
 
     /**
+     * Specifies the event loop group.
+     */
+    /**
      * Specifies the channel future.
      * @param future such {@link ChannelFuture}.
      */
