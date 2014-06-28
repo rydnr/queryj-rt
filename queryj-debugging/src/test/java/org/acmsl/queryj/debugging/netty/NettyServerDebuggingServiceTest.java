@@ -242,7 +242,5 @@ public class NettyServerDebuggingServiceTest
         {
 
         }
-    });
-
     }
 }
