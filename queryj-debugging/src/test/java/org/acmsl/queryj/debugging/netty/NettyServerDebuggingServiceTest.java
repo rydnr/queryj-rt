@@ -187,16 +187,6 @@ public class NettyServerDebuggingServiceTest
         @SuppressWarnings("unchecked")
         @NotNull final NettyServerDebuggingService<TemplateContext> instance =
             new MyNettyServerDebuggingService();
-            {
-                /**
-                 * {@inheritDoc}
-                 */
-                @Override
-                protected void reload()
-                {
-                    reloadCalled = true;
-                }
-            };
 
         @NotNull final ChannelFuture future = instance.launchServer();
 
