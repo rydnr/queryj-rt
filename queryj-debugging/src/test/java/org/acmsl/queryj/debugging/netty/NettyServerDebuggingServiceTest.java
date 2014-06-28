@@ -264,7 +264,7 @@ public class NettyServerDebuggingServiceTest
     }
 
     public static class MyChannelListener
-        extends GenericFutureListener<ChannelFuture>
+        implements GenericFutureListener<ChannelFuture>
     {
         /**
          * The MyNettyServerDebuggingService instance.
