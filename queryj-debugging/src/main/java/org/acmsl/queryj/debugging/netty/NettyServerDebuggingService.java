@@ -88,7 +88,8 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     /**
      * Thu NioEventLoopGroup.
      */
-    private NioEventLoopGroup
+    private NioEventLoopGroup m__EventLoopGroup;
+
     /**
      * {@inheritDoc}
      */
