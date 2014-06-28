@@ -183,7 +183,7 @@ public class NettyServerDebuggingServiceTest
         throws Exception
     {
         @NotNull final NettyServerDebuggingService<TemplateContext> instance =
-            new NettyServerDebuggingService<>()
+            new NettyServerDebuggingService()
             {
                 /**
                  * Reloads the template.
