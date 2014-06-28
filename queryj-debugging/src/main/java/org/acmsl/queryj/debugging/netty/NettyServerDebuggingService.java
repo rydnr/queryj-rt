@@ -250,8 +250,11 @@ public class NettyServerDebuggingService<C extends TemplateContext>
                 .channel(NioServerSocketChannel.class) // (3)
                 .childHandler(new ChannelInitializer<SocketChannel>()
                 { // (4)
+                    /**
+                     * {@inheritDoc}
+                     */
                     @Override
-                    public void initChannel(SocketChannel ch)
+                    public void initChannel(@NotNull final SocketChannel ch)
                         throws Exception
                     {
                         ch.pipeline().addLast(new DiscardServerHandler());
