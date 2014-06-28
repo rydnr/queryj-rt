@@ -39,6 +39,11 @@ package org.acmsl.queryj.debugging.netty;
 /*
  * Importing QueryJ Core classes.
  */
+import io.netty.bootstrap.ServerBootstrap;
+import io.netty.channel.nio.NioEventLoopGroup;
+import io.netty.channel.socket.nio.NioServerSocketChannel;
+import io.netty.util.CharsetUtil;
+import io.netty.util.NetUtil;
 import org.acmsl.queryj.api.TemplateContext;
 import org.acmsl.queryj.api.exceptions.DevelopmentModeException;
 import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
@@ -57,6 +62,12 @@ import org.jetbrains.annotations.NotNull;
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
+
+import java.io.DataOutput;
+import java.io.DataOutputStream;
+import java.net.InetSocketAddress;
+import java.net.Socket;
+import java.net.SocketAddress;
 
 /**
  * Netty-based TCP/IP server which drives the
@@ -79,5 +90,38 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         // launch the server
     }
 
-    public void listen
+    public void launchServer()
+    {
+        final NioEventLoopGroup group = new NioEventLoopGroup(1);
+
+        try
+        {
+            @NotNull final ServerBootstrap serverBootstrap = new ServerBootstrap();
+            serverBootstrap.group(group).channel(NioServerSocketChannel.class);
+            @NotNull final MyChannelHandlerAdapter myChannelHandlerAdapter = new MyChannelHandlerAdapter();
+            serverBootstrap.childHandler(myChannelHandlerAdapter);
+
+            @NotNull final SocketAddress address = serverBootstrap.bind(0).sync().channel().localAddress();
+
+            @NotNull final Socket socket = new Socket(NetUtil.LOCALHOST, ((InetSocketAddress) address).getPort());
+
+            @NotNull final DataOutput out = new DataOutputStream(socket.getOutputStream());
+            @NotNull final byte[] buf = "reload".getBytes(CharsetUtil.US_ASCII);
+            out.write(buf);
+            socket.close();
+
+            while (myChannelHandlerAdapter.m__bAlive)
+            {
+                Thread.sleep(100);
+            }
+
+            Assert.assertEquals("reload", myChannelHandlerAdapter.m__strCommand);
+
+        }
+        finally
+        {
+            group.shutdownGracefully().sync();
+        }
+
+    }
 }
