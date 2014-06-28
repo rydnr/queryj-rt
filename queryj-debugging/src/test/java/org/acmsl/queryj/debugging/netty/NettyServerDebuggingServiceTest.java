@@ -187,23 +187,6 @@ public class NettyServerDebuggingServiceTest
             final ServerBootstrap sb = new ServerBootstrap();
             sb.group(group).channel(NioServerSocketChannel.class);
             sb.childHandler(new MyChannelHandlerAdapter());
-                {
-                    /**
-                     * {@inheritDoc}
-                     */
-                    @Override
-                    public void channelActive(final ChannelHandlerContext ctx)
-                        throws Exception
-                    {
-                        ctx.read();
-                    }
-
-                    @Override
-                    public void channelRead(@NotNull final ChannelHandlerContext ctx)
-                    {
-
-                    }
-                });
 
             @NotNull final SocketAddress address = sb.bind(0).sync().channel().localAddress();
 
