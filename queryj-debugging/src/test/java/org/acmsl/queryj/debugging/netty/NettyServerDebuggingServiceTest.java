@@ -255,7 +255,7 @@ public class NettyServerDebuggingServiceTest
                 aux[index] = buffer.readByte();
             }
 
-            this.m__strCommand = aux.toString();
+            this.m__strCommand = new String(aux, CharsetUtil.US_ASCII);
             this.m__bAlive = false;
         }
 
