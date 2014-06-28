@@ -240,7 +240,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         throws InterruptedException,
         IOException
     {
-        EventLoopGroup bossGroup = new NioEventLoopGroup(); // (1)
+        @NotNull final EventLoopGroup bossGroup = new NioEventLoopGroup(); // (1)
         EventLoopGroup workerGroup = new NioEventLoopGroup();
         try {
             ServerBootstrap b = new ServerBootstrap(); // (2)
