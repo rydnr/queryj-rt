@@ -40,7 +40,9 @@ package org.acmsl.queryj.debugging.netty;
  * Importing QueryJ Core classes.
  */
 import io.netty.bootstrap.ServerBootstrap;
+import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerAdapter;
+import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.util.CharsetUtil;
@@ -127,5 +129,32 @@ public class NettyServerDebuggingService<C extends TemplateContext>
 
     }
 
-    public
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void channelActive(final ChannelHandlerContext ctx)
+        throws Exception
+    {
+        ctx.read();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void channelRead(@NotNull final ChannelHandlerContext ctx, @NotNull final Object msg)
+    {
+        @NotNull final ByteBuf buffer = (ByteBuf) msg;
+
+        @NotNull final byte[] aux = new byte[buffer.readableBytes()];
+
+        for (int index = 0; index < aux.length; index++)
+        {
+            aux[index] = buffer.readByte();
+        }
+
+        this.m__strCommand = new String(aux, CharsetUtil.US_ASCII);
+        this.m__bAlive = false;
+    }
 }
