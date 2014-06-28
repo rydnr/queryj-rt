@@ -325,6 +325,6 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      */
     public void processCommand(@NotNull final String command)
     {
-        //To change body of created methods use File | Settings | File Templates.
+
     }
 }
