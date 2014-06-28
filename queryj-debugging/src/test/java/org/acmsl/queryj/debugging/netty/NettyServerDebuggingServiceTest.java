@@ -224,6 +224,9 @@ public class NettyServerDebuggingServiceTest
         }
     }
 
+    /**
+     * A testable context handler adapter.
+     */
     public static class MyChannelHandlerAdapter
         extends ChannelHandlerAdapter
     {
