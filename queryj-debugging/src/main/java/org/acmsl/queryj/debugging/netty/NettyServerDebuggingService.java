@@ -313,16 +313,17 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     {
         try
         {
-        @NotNull final ByteBuf buffer = (ByteBuf) msg;
+            @NotNull final ByteBuf buffer = (ByteBuf) msg;
 
-        @NotNull final byte[] aux = new byte[buffer.readableBytes()];
+            @NotNull final byte[] aux = new byte[buffer.readableBytes()];
 
-        for (int index = 0; index < aux.length; index++)
-        {
-            aux[index] = buffer.readByte();
+            for (int index = 0; index < aux.length; index++)
+            {
+                aux[index] = buffer.readByte();
+            }
+
+            processCommand(new String(aux, CharsetUtil.US_ASCII));
         }
-
-        processCommand(new String(aux, CharsetUtil.US_ASCII));
 
         buffer.release();
     }
