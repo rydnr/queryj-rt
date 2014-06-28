@@ -202,7 +202,8 @@ public class NettyServerDebuggingServiceTest
         out.write(buf);
         socket.close();
 
-        future.awain
+        future.awaitUninterruptibly();
+
         while (!future.isDone())
         {
             future.await();
