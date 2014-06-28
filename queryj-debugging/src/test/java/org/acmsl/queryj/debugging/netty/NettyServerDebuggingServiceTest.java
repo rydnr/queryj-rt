@@ -187,7 +187,7 @@ public class NettyServerDebuggingServiceTest
             final ServerBootstrap sb = new ServerBootstrap();
             sb.group(group).channel(NioServerSocketChannel.class);
             sb.childHandler(
-                new ChannelHandlerAdapter()
+                new MyChannelHandlerAdapter()
                 {
                     /**
                      * {@inheritDoc}
