@@ -218,7 +218,7 @@ public class NettyServerDebuggingServiceTest
 
             @NotNull final Socket s = new Socket(NetUtil.LOCALHOST, ((InetSocketAddress) address).getPort());
 
-            DataInput in = new DataInputStream(s.getInputStream());
+            @NotNull final DataInput in = new DataInputStream(s.getInputStream());
             byte[] buf = new byte[3];
             in.readFully(buf);
 
