@@ -262,7 +262,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
                         ch.pipeline().addLast(this);
                     }
                 })
-                .option(ChannelOption.SO_BACKLOG, 128)          // (5)
+                .option(ChannelOption.SO_BACKLOG, 128);          // (5)
                 //.childOption(ChannelOption.SO_KEEPALIVE, true); // (6)
 
             // Bind and start to accept incoming connections.
