@@ -186,23 +186,23 @@ public class NettyServerDebuggingServiceTest
             sb.childHandler(
                 new ChannelHandlerAdapter()
                 {
-                @Override
-                public void channelActive(final ChannelHandlerContext ctx)
-                    throws Exception
-                {
-                    // Trigger a gathering write by writing two buffers.
-                    ctx.write(Unpooled.wrappedBuffer(new byte[]{'a'}));
-                    ChannelFuture f = ctx.write(Unpooled.wrappedBuffer(new byte[] { 'b' }));
-                    f.addListener(new ChannelFutureListener() {
-                        @Override
-                        public void operationComplete(ChannelFuture future) throws Exception {
-                            // This message must be flushed
-                            ctx.writeAndFlush(Unpooled.wrappedBuffer(new byte[]{'c'}));
-                        }
-                    });
-                    ctx.flush();
-                }
-            });
+                    @Override
+                    public void channelActive(final ChannelHandlerContext ctx)
+                        throws Exception
+                    {
+                        // Trigger a gathering write by writing two buffers.
+                        ctx.write(Unpooled.wrappedBuffer(new byte[]{'a'}));
+                        ChannelFuture f = ctx.write(Unpooled.wrappedBuffer(new byte[] { 'b' }));
+                        f.addListener(new ChannelFutureListener() {
+                            @Override
+                            public void operationComplete(ChannelFuture future) throws Exception {
+                                // This message must be flushed
+                                ctx.writeAndFlush(Unpooled.wrappedBuffer(new byte[]{'c'}));
+                            }
+                        });
+                        ctx.flush();
+                    }
+                });
 
             SocketAddress address = sb.bind(0).sync().channel().localAddress();
 
