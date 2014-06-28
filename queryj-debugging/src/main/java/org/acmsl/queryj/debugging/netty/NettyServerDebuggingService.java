@@ -180,7 +180,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         {
             serverBootstrap.channel().localAddress();
 
-            @NotNull final SocketAddress address = serverBootstrap.bind(port);
+            @NotNull final SocketAddress result= serverBootstrap.bind(port);
 
             serverBootstrap.group(group).channel(NioServerSocketChannel.class);
             serverBootstrap.childHandler(this);
