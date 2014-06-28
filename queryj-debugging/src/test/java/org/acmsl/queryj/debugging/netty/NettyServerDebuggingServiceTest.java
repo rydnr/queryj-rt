@@ -200,7 +200,7 @@ public class NettyServerDebuggingServiceTest
 
         future.await();
 
-        future.addListener()
+        future.addListener(new )
         Assert.assertTrue(instance.m__bReloadCalled);
 
         instance.stopServer();
