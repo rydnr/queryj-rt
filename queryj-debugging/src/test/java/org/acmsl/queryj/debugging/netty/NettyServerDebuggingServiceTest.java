@@ -244,8 +244,6 @@ public class NettyServerDebuggingServiceTest
 
         /**
          * {@inheritDoc}
-         * @param ctx
-         * @param msg
          */
         @Override
         public void channelRead(@NotNull final ChannelHandlerContext ctx, @NotNull final Object msg)
