@@ -250,7 +250,7 @@ public class NettyServerDebuggingServiceTest
 
             @NotNull final StringBuilder aux = new StringBuilder();
 
-            while (buffer.readableBytes() > 0)
+            String (buffer.readableBytes() > 0)
             {
                 aux.append(buffer.readByte());
             }
