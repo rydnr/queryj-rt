@@ -40,6 +40,7 @@ package org.acmsl.queryj.debugging.netty;
  * Importing QueryJ Core classes.
  */
 import io.netty.bootstrap.ServerBootstrap;
+import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.util.CharsetUtil;
@@ -78,6 +79,7 @@ import java.net.SocketAddress;
  */
 @ThreadSafe
 public class NettyServerDebuggingService<C extends TemplateContext>
+    extends ChannelHandlerAdapter
     implements TemplateDebuggingService<C>
 {
     /**
