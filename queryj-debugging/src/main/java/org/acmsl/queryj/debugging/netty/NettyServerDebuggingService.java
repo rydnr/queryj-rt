@@ -116,9 +116,6 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     protected NioEventLoopGroup getNioEventLoopGroup()
     {
         return this.m__EventLoopGroup;
-        {
-            thro
-        };
     }
 
     /**
