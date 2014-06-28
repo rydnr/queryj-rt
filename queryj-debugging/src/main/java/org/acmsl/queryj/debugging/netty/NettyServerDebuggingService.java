@@ -135,6 +135,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     {
         @NotNull final NioEventLoopGroup result = new NioEventLoopGroup(1);
         setNioEventLoopGroup(result);
+
         try
         {
             @NotNull final ServerBootstrap serverBootstrap = new ServerBootstrap();
