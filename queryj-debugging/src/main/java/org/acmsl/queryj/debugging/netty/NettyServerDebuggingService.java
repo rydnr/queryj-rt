@@ -109,8 +109,10 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     }
 
     /**
-     * Retrieves the {@link NioEventLoopGroup}
+     * Retrieves the {@link NioEventLoopGroup}.
+     * @return such group.
      */
+    protected
     /**
      * {@inheritDoc}
      */
