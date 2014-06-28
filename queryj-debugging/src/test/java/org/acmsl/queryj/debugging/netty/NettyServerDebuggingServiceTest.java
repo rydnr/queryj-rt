@@ -200,7 +200,7 @@ public class NettyServerDebuggingServiceTest
         out.write(buf);
         socket.close();
 
-        future.sync();
+        future.await();
 
         Assert.assertTrue(future.isDone());
 
