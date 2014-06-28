@@ -284,7 +284,7 @@ public class NettyServerDebuggingServiceTest
          * {@inheritDoc}
          */
         @Override
-        public void operationComplete(@NotNull final Future<ChannelFuture> future)
+        public void operationComplete(@NotNull final Future<?> future)
             throws Exception
         {
             Assert.assertTrue(service.m__bReloadCalled);
