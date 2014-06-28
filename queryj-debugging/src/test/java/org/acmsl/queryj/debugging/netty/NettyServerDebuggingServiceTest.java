@@ -191,8 +191,6 @@ public class NettyServerDebuggingServiceTest
 
         future.addListener(new MyChannelListener(instance));
 
-        future.await();
-
         @NotNull final SocketAddress address = future.channel().localAddress();
 
         @NotNull final Socket socket = new Socket(NetUtil.LOCALHOST, ((InetSocketAddress) address).getPort());
