@@ -228,9 +228,9 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     /**
      * Stops the server.
      */
-    protected void stopServer(@NotNull final ServerBootstrap bootstrap)
+    protected void stopServer(@NotNull final )
     {
-
+        gro
     }
 
     /**
