@@ -263,6 +263,9 @@ public class NettyServerDebuggingServiceTest
         }
     }
 
+    /**
+     * A testable listener.
+     */
     public static class MyChannelListener
         implements GenericFutureListener<ChannelFuture>
     {
