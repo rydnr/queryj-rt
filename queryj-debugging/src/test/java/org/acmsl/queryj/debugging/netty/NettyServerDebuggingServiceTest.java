@@ -179,6 +179,7 @@ public class NettyServerDebuggingServiceTest
         throws Exception
     {
         final NioEventLoopGroup group = new NioEventLoopGroup(1);
+
         try
         {
             final ServerBootstrap sb = new ServerBootstrap();
