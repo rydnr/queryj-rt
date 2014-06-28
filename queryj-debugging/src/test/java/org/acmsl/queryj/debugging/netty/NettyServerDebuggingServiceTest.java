@@ -250,5 +250,12 @@ public class NettyServerDebuggingServiceTest
         {
             this.m__strCommand = "" + msg;
         }
+
+        @NotNull
+        @Override
+        public String toString()
+        {
+            return
+        }
     }
 }
