@@ -175,7 +175,9 @@ public class NettyServerDebuggingServiceTest
     }
 
     @Test
-    public void testFlushAfterGatheredFlush() throws Exception {
+    public void testFlushAfterGatheredFlush()
+        throws Exception
+    {
         NioEventLoopGroup group = new NioEventLoopGroup(1);
         try {
             ServerBootstrap sb = new ServerBootstrap();
