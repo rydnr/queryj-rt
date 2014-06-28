@@ -177,6 +177,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         try
         {
             @NotNull final ServerBootstrap serverBootstrap = new ServerBootstrap();
+
             serverBootstrap.group(group).channel(NioServerSocketChannel.class);
             serverBootstrap.childHandler(this);
             serverBootstrap
