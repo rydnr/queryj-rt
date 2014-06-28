@@ -205,7 +205,7 @@ public class NettyServerDebuggingServiceTest
             @NotNull final Socket s = new Socket(NetUtil.LOCALHOST, ((InetSocketAddress) address).getPort());
 
             @NotNull final DataInput in = new DataInputStream(s.getInputStream());
-            @NotNull final byte[] buf = new byte[3];
+            @NotNull final byte[] buf = new byte[6;
             in.readFully(buf);
 
             Assert.assertEquals("reload", new String(buf, CharsetUtil.US_ASCII), "abc");
