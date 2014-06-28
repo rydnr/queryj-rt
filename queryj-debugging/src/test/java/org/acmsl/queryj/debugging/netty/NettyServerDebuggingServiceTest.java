@@ -204,11 +204,6 @@ public class NettyServerDebuggingServiceTest
 
         future.awaitUninterruptibly();
 
-        while (!future.isDone())
-        {
-            future.await();
-        }
-
         Assert.assertTrue(instance.m__bReloadCalled);
 
         instance.stopServer();
