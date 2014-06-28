@@ -228,7 +228,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     /**
      * Stops the server.
      */
-    protected void stopServer(@NotNull final ChannelFuture channelFuture)
+    protected void stopServer(@NotNull final ServerBootstrap bootstrap)
     {
         channelFuture.
     }
