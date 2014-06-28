@@ -204,7 +204,7 @@ public class NettyServerDebuggingServiceTest
 
         future.channel().closeFuture().sync();
 
-//        Assert.assertTrue(future.isDone());
+        Assert.assertTrue(future.isDone());
 
         Assert.assertTrue(instance.m__bReloadCalled);
 
