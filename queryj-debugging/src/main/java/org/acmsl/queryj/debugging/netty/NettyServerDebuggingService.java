@@ -209,9 +209,9 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         @NotNull final ServerBootstrap serverBootstrap = new ServerBootstrap();
         @NotNull final NioEventLoopGroup group = new NioEventLoopGroup(1);
 
-            serverBootstrap.group(group).channel(NioServerSocketChannel.class);
-            serverBootstrap.childHandler(this);
-            result = serverBootstrap.bind(port);
+        serverBootstrap.group(group).channel(NioServerSocketChannel.class);
+        serverBootstrap.childHandler(this);
+        result = serverBootstrap.bind(port);
 
         return result;
     }
