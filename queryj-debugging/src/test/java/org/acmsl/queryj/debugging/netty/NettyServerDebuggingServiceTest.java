@@ -269,7 +269,7 @@ public class NettyServerDebuggingServiceTest
         /**
          * The
          */
-        private
+        private MyNettyServerDebuggingService service.
         /**
          * {@inheritDoc}
          */
