@@ -274,7 +274,5 @@ public class NettyServerDebuggingServiceTest
             Assert.assertTrue(instance.m__bReloadCalled);
         }
     });
-    new GenericFutureListener<ChannelFuture>()
-        extends
 
 }
