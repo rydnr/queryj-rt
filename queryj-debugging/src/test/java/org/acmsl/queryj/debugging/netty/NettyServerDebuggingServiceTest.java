@@ -270,7 +270,7 @@ public class NettyServerDebuggingServiceTest
          * {@inheritDoc}
          */
         @Override
-        public void operationComplete(final Future<?> future) throws Exception
+        public void operationComplete(final Future<ChannelFuture> future) throws Exception
         {
             Assert.assertTrue(instance.m__bReloadCalled);
         }
