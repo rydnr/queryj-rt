@@ -193,6 +193,8 @@ public class NettyServerDebuggingServiceTest
 
         @NotNull final SocketAddress address = future.channel().localAddress();
 
+        future.await();
+
         @NotNull final Socket socket = new Socket(NetUtil.LOCALHOST, ((InetSocketAddress) address).getPort());
 
         @NotNull final DataOutput out = new DataOutputStream(socket.getOutputStream());
