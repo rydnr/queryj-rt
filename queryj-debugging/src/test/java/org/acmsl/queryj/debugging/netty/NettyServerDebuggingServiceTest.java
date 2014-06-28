@@ -185,7 +185,14 @@ public class NettyServerDebuggingServiceTest
         @NotNull final NettyServerDebuggingService<TemplateContext> instance =
             new NettyServerDebuggingService<>()
             {
-
+                /**
+                 * Reloads the template.
+                 */
+                @Override
+                protected void reload()
+                {
+                    super.reload();
+                }
             }
 
         @NotNull final ChannelFuture future = instance.launchServer();
