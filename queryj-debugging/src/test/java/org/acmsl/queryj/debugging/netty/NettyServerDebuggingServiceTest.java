@@ -252,6 +252,7 @@ public class NettyServerDebuggingServiceTest
         {
             return
                   "{ \"command\": \"" + m__strCommand + '"'
+            "{ \"command\": \"" + m__strCommand + '"'
                 + ", \"class\": \"" + MyChannelHandlerAdapter.class.getSimpleName() + '"'
                 + ", \"package\": \"" + MyChannelHandlerAdapter.class.getPackage().getName() + "\" }";
         }
