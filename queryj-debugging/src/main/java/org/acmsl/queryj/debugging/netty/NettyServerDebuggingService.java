@@ -319,7 +319,8 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         processCommand(new String(aux, CharsetUtil.US_ASCII));
     }
 
-    private void processCommand(final String s)
+    private void processCommand(final String command)
     {
+        //To change body of created methods use File | Settings | File Templates.
     }
 }
