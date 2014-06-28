@@ -155,8 +155,8 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     }
 
     /**
-     * Specifies the event loop group.
-     * @param group such {@link EventLoopGroup}.
+     * Retrieves the event loop group.
+     * @return such {@link EventLoopGroup}.
      */
     protected EventLoopGroup getEventLoopGroup()
     {
