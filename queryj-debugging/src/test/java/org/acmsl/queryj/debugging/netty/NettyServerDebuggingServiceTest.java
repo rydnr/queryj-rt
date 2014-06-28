@@ -239,7 +239,7 @@ public class NettyServerDebuggingServiceTest
      * A testable context handler adapter.
      */
     public static class MyNettyServerDebuggingService
-        extends ChannelHandlerAdapter
+        extends NettyServerDebuggingService<C>
     {
         /**
          * Whether it's alive.
