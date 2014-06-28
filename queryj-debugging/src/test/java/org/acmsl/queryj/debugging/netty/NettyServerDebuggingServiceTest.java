@@ -228,6 +228,10 @@ public class NettyServerDebuggingServiceTest
         extends ChannelHandlerAdapter
     {
         /**
+         * The command received.
+         */
+
+        /**
          * {@inheritDoc}
          */
         @Override
