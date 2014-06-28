@@ -201,6 +201,8 @@ public class NettyServerDebuggingServiceTest
             out.write(buf);
             socket.close();
 
+        future.await();
+
             while (myChannelHandlerAdapter.m__bAlive)
             {
                 Thread.sleep(100);
