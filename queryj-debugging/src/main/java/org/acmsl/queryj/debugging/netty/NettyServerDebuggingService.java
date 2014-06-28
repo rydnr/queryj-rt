@@ -316,7 +316,6 @@ public class NettyServerDebuggingService<C extends TemplateContext>
             aux[index] = buffer.readByte();
         }
 
-        processCommand(new String(aux, CharsetUtil.US_ASCII);
-        this.m__bAlive = false;
+        processCommand(new String(aux, CharsetUtil.US_ASCII));
     }
 }
