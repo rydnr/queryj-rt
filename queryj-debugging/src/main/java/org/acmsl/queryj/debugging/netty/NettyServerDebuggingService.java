@@ -274,7 +274,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
 
     /**
      * Stops the server.
-     * throw InterruptedException if the serve
+     * throw InterruptedException if the
      */
     public void stopServer()
         throws InterruptedException
