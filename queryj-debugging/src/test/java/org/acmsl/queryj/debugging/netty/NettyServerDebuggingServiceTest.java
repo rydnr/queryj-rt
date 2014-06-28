@@ -267,7 +267,7 @@ public class NettyServerDebuggingServiceTest
         extends GenericFutureListener<ChannelFuture>
     {
         /**
-         * The
+         * The MyNettyServerDebuggingService instance.
          */
         private MyNettyServerDebuggingService service.
         /**
