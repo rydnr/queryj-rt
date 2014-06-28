@@ -257,7 +257,8 @@ public class NettyServerDebuggingServiceTest
         {
             return
                 "{ \"command\": \"" + m__strCommand + "\""
-                + ", \"class\": \"" + MyChannelHandlerAdapter.class.getSimpleName() + "\", \"package\": \"" + MyChannelHandlerAdapter.class.getPackage().getName() + "\" }";
+                + ", \"class\": \"" + MyChannelHandlerAdapter.class.getSimpleName() + "\""
+            + "", \"package\": \"" + MyChannelHandlerAdapter.class.getPackage().getName() + "\" }";
         }
     }
 }
