@@ -142,7 +142,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      * @throws InterruptedException if the server gets interrupted.
      * @throws IOException if the socket cannot be bound.
      */
-    public ServerBootstrap launchServer()
+    public ChannelFuture launchServer()
         throws InterruptedException,
                 IOException
     {
