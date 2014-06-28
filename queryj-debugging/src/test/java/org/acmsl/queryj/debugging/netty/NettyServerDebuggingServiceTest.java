@@ -291,7 +291,6 @@ public class NettyServerDebuggingServiceTest
         {
             return
                   "{ \"service\": \"" + service + '"'
-                + ", \"reloadCalled\": " + m__bReloadCalled
                 + ", \"class\": \"" + MyNettyServerDebuggingService.class.getSimpleName() + '"'
                 + ", \"package\": \"" + MyNettyServerDebuggingService.class.getPackage().getName() + "\" }";
         }
