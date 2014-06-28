@@ -151,7 +151,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      */
     protected void setEventLoopGroup(@NotNull final EventLoopGroup group)
     {
-        this.m__EventLoopGroup = group;
+        immutableSetEventLoopGroup(group);
     }
 
     /**
