@@ -208,7 +208,7 @@ public class NettyServerDebuggingServiceTest
             @NotNull final byte[] buf = new byte[6];
             in.readFully(buf);
 
-            Assert.assertEquals("reload", new String(buf, CharsetUtil.US_ASCII), "");
+            Assert.assertEquals("reload", new String(buf, CharsetUtil.US_ASCII));
 
             s.close();
         }
