@@ -246,7 +246,7 @@ public class NettyServerDebuggingServiceTest
         @Override
         public void channelRead(@NotNull final ChannelHandlerContext ctx, @NotNull final Object msg)
         {
-
+            @NotNull final ByteBuf
             this.m__strCommand = ((ByteBuf) msg).readableBytes();
             this.m__bAlive = false;
         }
