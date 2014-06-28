@@ -266,7 +266,8 @@ public class NettyServerDebuggingService<C extends TemplateContext>
                         // Nothing to do
                     }
                 }
-            });
+            }
+        );
 
         return result;
     }
