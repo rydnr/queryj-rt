@@ -134,7 +134,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
                 IOException
     {
         @NotNull final NioEventLoopGroup group = new NioEventLoopGroup(1);
-
+        setNioEventLoopGroup(group);
         try
         {
             @NotNull final ServerBootstrap serverBootstrap = new ServerBootstrap();
