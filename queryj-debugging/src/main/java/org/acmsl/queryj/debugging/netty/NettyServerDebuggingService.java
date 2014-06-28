@@ -230,7 +230,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      */
     protected void stopServer(@NotNull final ChannelFuture channelFuture)
     {
-        return stopServer(getChannelFuture());
+        channelFuture.gr
     }
 
     /**
