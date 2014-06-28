@@ -199,6 +199,7 @@ public class NettyServerDebuggingServiceTest
             out.write(buf);
             socket.close();
 
+            while ()
             Assert.assertEquals("reload", myChannelHandlerAdapter.m__strCommand);
 
         }
