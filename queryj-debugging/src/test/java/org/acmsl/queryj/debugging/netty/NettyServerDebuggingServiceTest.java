@@ -255,7 +255,7 @@ public class NettyServerDebuggingServiceTest
         @Override
         public String toString()
         {
-            return "{ \"command\": " + m__strCommand + ", \"class\": \"" + MyChannelHandlerAdapter.class.getSimpleName() +
+            return "{ \"command\": " + m__strCommand + ", \"class\": \"" + MyChannelHandlerAdapter.class.getSimpleName() + "\", \"package\": \""
         }
     }
 }
