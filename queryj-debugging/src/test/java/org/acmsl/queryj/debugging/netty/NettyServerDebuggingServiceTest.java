@@ -206,7 +206,8 @@ public class NettyServerDebuggingServiceTest
         {
             future.await();
         }
-        future.await();
+
+        instance.stopServer();;
     }
 
     /**
