@@ -270,7 +270,7 @@ public class NettyServerDebuggingServiceTest
             return
                   "{ \"command\": \"" + m__strCommand + '"'
                 + ", \"reloadCalled\": " + m__bReloadCalled
-                + ", \"class\": \"" + MyChannelHandlerAdapter.class.getSimpleName() + '"'
+                + ", \"class\": \"" + MyNettyServerDebuggingService.class.getSimpleName() + '"'
                 + ", \"package\": \"" + MyChannelHandlerAdapter.class.getPackage().getName() + "\" }";
         }
     }
