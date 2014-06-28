@@ -216,7 +216,7 @@ public class NettyServerDebuggingServiceTest
 
             @NotNull final SocketAddress address = sb.bind(0).sync().channel().localAddress();
 
-            Socket s = new Socket(NetUtil.LOCALHOST, ((InetSocketAddress) address).getPort());
+            @NotNull final Socket s = new Socket(NetUtil.LOCALHOST, ((InetSocketAddress) address).getPort());
 
             DataInput in = new DataInputStream(s.getInputStream());
             byte[] buf = new byte[3];
