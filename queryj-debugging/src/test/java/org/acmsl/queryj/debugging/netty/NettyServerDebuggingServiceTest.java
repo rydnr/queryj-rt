@@ -259,26 +259,6 @@ public class NettyServerDebuggingServiceTest
         {
             m__ReloadCalled = true;
         }
-
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public void channelRead(@NotNull final ChannelHandlerContext ctx, @NotNull final Object msg)
-        {
-            @NotNull final ByteBuf buffer = (ByteBuf) msg;
-
-            @NotNull final byte[] aux = new byte[buffer.readableBytes()];
-
-            for (int index = 0; index < aux.length; index++)
-            {
-                aux[index] = buffer.readByte();
-            }
-
-            this.m__strCommand = new String(aux, CharsetUtil.US_ASCII);
-            this.m__bAlive = false;
-        }
-
         /**
          * {@inheritDoc}
          */
