@@ -183,7 +183,9 @@ public class NettyServerDebuggingServiceTest
         {
             final ServerBootstrap sb = new ServerBootstrap();
             sb.group(group).channel(NioServerSocketChannel.class);
-            sb.childHandler(new ChannelHandlerAdapter() {
+            sb.childHandler(
+                new ChannelHandlerAdapter()
+                {
                 @Override
                 public void channelActive(final ChannelHandlerContext ctx) throws Exception {
                     // Trigger a gathering write by writing two buffers.
