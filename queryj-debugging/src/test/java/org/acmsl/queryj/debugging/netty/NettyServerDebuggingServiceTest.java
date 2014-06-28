@@ -182,7 +182,11 @@ public class NettyServerDebuggingServiceTest
     public void reload_command_gets_received_correctly()
         throws Exception
     {
-        @NotNull final NettyServerDebuggingService<TemplateContext> instance = new NettyServerDebuggingService<>();
+        @NotNull final NettyServerDebuggingService<TemplateContext> instance =
+            new NettyServerDebuggingService<>()
+            {
+
+            }
 
         @NotNull final ChannelFuture future = instance.launchServer();
 
