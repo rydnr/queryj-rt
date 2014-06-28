@@ -207,7 +207,9 @@ public class NettyServerDebuggingServiceTest
             future.await();
         }
 
-        instance.stopServer();;
+        Assert.assertTrue(instance.m__bReloadCalled);
+
+        instance.stopServer();
     }
 
     /**
