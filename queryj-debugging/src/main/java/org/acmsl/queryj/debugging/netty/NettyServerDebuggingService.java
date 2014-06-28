@@ -330,4 +330,8 @@ public class NettyServerDebuggingService<C extends TemplateContext>
             reload();
         }
     }
+
+    private void reload()
+    {
+    }
 }
