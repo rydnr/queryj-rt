@@ -115,14 +115,6 @@ public class NettyServerDebuggingService<C extends TemplateContext>
             @NotNull final byte[] buf = "reload".getBytes(CharsetUtil.US_ASCII);
             out.write(buf);
             socket.close();
-
-            while (myChannelHandlerAdapter.m__bAlive)
-            {
-                Thread.sleep(100);
-            }
-
-            Assert.assertEquals("reload", myChannelHandlerAdapter.m__strCommand);
-
         }
         finally
         {
