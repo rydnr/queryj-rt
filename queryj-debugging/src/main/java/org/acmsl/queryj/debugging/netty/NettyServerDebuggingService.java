@@ -146,7 +146,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      */
     protected final void setChannelFuture(@NotNull final ChannelFuture future)
     {
-        this.m__ChannelFuture = future;
+        immutableSetChannelFuture(future);
     }
 
     /**
