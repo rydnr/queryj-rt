@@ -273,7 +273,8 @@ public class NettyServerDebuggingServiceTest
             throws Exception
         {
             Assert.assertTrue(service.m__bReloadCalled);
-            instance.stopServer();
+
+            service.stopServer();
         }
 
         /**
