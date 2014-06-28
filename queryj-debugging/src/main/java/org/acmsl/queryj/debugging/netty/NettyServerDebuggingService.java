@@ -279,27 +279,6 @@ public class NettyServerDebuggingService<C extends TemplateContext>
             bossGroup.shutdownGracefully();
         }
 
-        Runtime.getRuntime().addShutdownHook(
-            new Thread()
-            {
-                /**
-                 * {@inheritDoc}
-                 */
-                @Override
-                public void run()
-                {
-                    try
-                    {
-                        stopServer();
-                    }
-                    catch (@NotNull final InterruptedException interrupted)
-                    {
-                        // Nothing to do
-                    }
-                }
-            }
-        );
-
         return result;
     }
 
