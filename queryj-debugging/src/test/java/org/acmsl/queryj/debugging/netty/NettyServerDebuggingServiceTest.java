@@ -187,7 +187,9 @@ public class NettyServerDebuggingServiceTest
                 new ChannelHandlerAdapter()
                 {
                 @Override
-                public void channelActive(final ChannelHandlerContext ctx) throws Exception {
+                public void channelActive(final ChannelHandlerContext ctx)
+                    throws Exception
+                {
                     // Trigger a gathering write by writing two buffers.
                     ctx.write(Unpooled.wrappedBuffer(new byte[]{'a'}));
                     ChannelFuture f = ctx.write(Unpooled.wrappedBuffer(new byte[] { 'b' }));
