@@ -229,7 +229,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      * Stops the server.
      */
     protected void stopServer(@NotNull final EventLoopGroup group)
-
+        throws InterruptedException
     {
         group.shutdownGracefully().sync();
     }
