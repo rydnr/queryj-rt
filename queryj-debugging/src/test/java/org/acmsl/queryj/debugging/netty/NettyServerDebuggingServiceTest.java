@@ -70,6 +70,7 @@ import org.junit.runners.JUnit4;
 
 import java.io.DataInput;
 import java.io.DataInputStream;
+import java.io.DataOutput;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.net.InetSocketAddress;
@@ -204,7 +205,7 @@ public class NettyServerDebuggingServiceTest
 
             @NotNull final Socket s = new Socket(NetUtil.LOCALHOST, ((InetSocketAddress) address).getPort());
 
-            @NotNull final DataInput in = new DataOutputStream(s.getOutputStream());
+            @NotNull final DataOutput out = new DataOutputStream(s.getOutputStream());
             @NotNull final byte[] buf = new byte[6];
             in.readFully(buf);
 
