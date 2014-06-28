@@ -227,8 +227,6 @@ public class NettyServerDebuggingServiceTest
     public static class MyChannelHandlerAdapter
         extends ChannelHandlerAdapter
     {
-        new ChannelHandlerAdapter()
-    {
         /**
          * {@inheritDoc}
          */
