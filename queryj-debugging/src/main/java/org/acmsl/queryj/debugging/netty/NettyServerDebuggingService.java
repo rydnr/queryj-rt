@@ -155,6 +155,15 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     }
 
     /**
+     * Specifies the event loop group.
+     * @param group such {@link EventLoopGroup}.
+     */
+    protected void setEventLoopGroup(@NotNull final EventLoopGroup group)
+    {
+        immutableSetEventLoopGroup(group);
+    }
+
+    /**
      * Specifies the channel future.
      * @param future such {@link ChannelFuture}.
      */
