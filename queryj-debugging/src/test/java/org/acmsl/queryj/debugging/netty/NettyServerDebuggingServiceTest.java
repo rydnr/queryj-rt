@@ -200,7 +200,10 @@ public class NettyServerDebuggingServiceTest
                     }
 
                     @Override
-                    public void channelRead()
+                    public void channelRead(@NotNull final ChannelHandlerContext ctx)
+                    {
+
+                    }
                 });
 
             @NotNull final SocketAddress address = sb.bind(0).sync().channel().localAddress();
