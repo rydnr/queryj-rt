@@ -274,6 +274,10 @@ public class NettyServerDebuggingServiceTest
         /**
          *
          */
+        public MyChannelListener(@NotNull final MyNettyServerDebuggingService service)
+        {
+
+        }
         /**
          * {@inheritDoc}
          */
