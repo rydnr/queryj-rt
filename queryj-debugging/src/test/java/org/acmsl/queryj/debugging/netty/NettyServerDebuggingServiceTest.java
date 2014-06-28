@@ -198,6 +198,8 @@ public class NettyServerDebuggingServiceTest
         out.write(buf);
         socket.close();
 
+        future.await();
+
         Assert.assertTrue(instance.m__bReloadCalled);
 
         instance.stopServer();
