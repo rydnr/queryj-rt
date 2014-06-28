@@ -199,12 +199,12 @@ public class NettyServerDebuggingServiceTest
                         f.addListener(
                             new ChannelFutureListener()
                             {
-                            @Override
-                            public void operationComplete(ChannelFuture future) throws Exception {
-                                // This message must be flushed
-                                ctx.writeAndFlush(Unpooled.wrappedBuffer(new byte[]{'c'}));
-                            }
-                        });
+                                @Override
+                                public void operationComplete(ChannelFuture future) throws Exception {
+                                    // This message must be flushed
+                                    ctx.writeAndFlush(Unpooled.wrappedBuffer(new byte[]{'c'}));
+                                }
+                            });
                         ctx.flush();
                     }
                 });
