@@ -240,7 +240,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     {
         @NotNull final ChannelFuture result;
         @NotNull final ServerBootstrap serverBootstrap = new ServerBootstrap();
-        serverBootstrap.option(ChannelOption.ALLOCATOR)
+        serverBootstrap.option(ChannelOption.CONNECT_TIMEOUT_MILLIS, 10000);
         setServerBootstrap(serverBootstrap);
         @NotNull final EventLoopGroup group = new NioEventLoopGroup(1);
         setEventLoopGroup(group);
