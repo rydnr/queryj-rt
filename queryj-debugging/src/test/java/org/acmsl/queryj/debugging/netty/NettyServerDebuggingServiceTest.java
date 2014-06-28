@@ -212,7 +212,7 @@ public class NettyServerDebuggingServiceTest
             @Override
             public void operationComplete(final Future<?> future) throws Exception
             {
-                //To change body of implemented methods use File | Settings | File Templates.
+                Assert.assertTrue(instance.m__bReloadCalled);
             }
         }
         )
