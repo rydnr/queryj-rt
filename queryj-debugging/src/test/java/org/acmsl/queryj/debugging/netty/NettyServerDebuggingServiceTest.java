@@ -191,15 +191,15 @@ public class NettyServerDebuggingServiceTest
 
             @NotNull final SocketAddress address = serverBootstrap.bind(0).sync().channel().localAddress();
 
-            @NotNull final Socket s = new Socket(NetUtil.LOCALHOST, ((InetSocketAddress) address).getPort());
+            @NotNull final Socket socket = new Socket(NetUtil.LOCALHOST, ((InetSocketAddress) address).getPort());
 
-            @NotNull final DataOutput out = new DataOutputStream(s.getOutputStream());
+            @NotNull final DataOutput out = new DataOutputStream(socket.getOutputStream());
             @NotNull final byte[] buf = "reload".getBytes(CharsetUtil.US_ASCII);
             out.write(buf);
 
             Assert.assertEquals("reload", myChannelHandlerAdapter.m__strCommand);
 
-            s.close();
+            socket.close();
         }
         finally
         {
