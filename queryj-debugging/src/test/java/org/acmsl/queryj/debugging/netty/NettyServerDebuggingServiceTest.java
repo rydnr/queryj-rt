@@ -192,16 +192,6 @@ public class NettyServerDebuggingServiceTest
 
         future.await();
 
-
-        final NioEventLoopGroup group = new NioEventLoopGroup(1);
-
-        try
-        {
-            @NotNull final ServerBootstrap serverBootstrap = new ServerBootstrap();
-            serverBootstrap.group(group).channel(NioServerSocketChannel.class);
-            @NotNull final MyChannelHandlerAdapter myChannelHandlerAdapter = new MyChannelHandlerAdapter();
-            serverBootstrap.childHandler(myChannelHandlerAdapter);
-
             @NotNull final SocketAddress address = serverBootstrap.bind(0).sync().channel().localAddress();
 
             @NotNull final Socket socket = new Socket(NetUtil.LOCALHOST, ((InetSocketAddress) address).getPort());
