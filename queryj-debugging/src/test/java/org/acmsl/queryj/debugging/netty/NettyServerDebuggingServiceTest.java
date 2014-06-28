@@ -269,7 +269,7 @@ public class NettyServerDebuggingServiceTest
         /**
          * The MyNettyServerDebuggingService instance.
          */
-        private MyNettyServerDebuggingService service;
+        private final MyNettyServerDebuggingService service;
 
         /**
          *
