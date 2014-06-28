@@ -217,6 +217,7 @@ public class NettyServerDebuggingServiceTest
         /**
          * Whether it's alive.
          */
+
         /**
          * The command received.
          */
