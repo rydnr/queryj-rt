@@ -177,7 +177,7 @@ public class NettyServerDebuggingServiceTest
     }
 
     @Test
-    public void testFlushAfterGatheredFlush()
+    public void reload_comm()
         throws Exception
     {
         final NioEventLoopGroup group = new NioEventLoopGroup(1);
