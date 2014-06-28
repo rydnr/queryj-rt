@@ -241,6 +241,8 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         throws InterruptedException,
         IOException
     {
+        ChannelFuture f = b.bind(port).sync(); // (7)
+
         @NotNull final EventLoopGroup bossGroup = new NioEventLoopGroup(); // (1)
         @NotNull final EventLoopGroup workerGroup = new NioEventLoopGroup();
         try
