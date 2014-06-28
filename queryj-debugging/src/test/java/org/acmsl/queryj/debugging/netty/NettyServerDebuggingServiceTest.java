@@ -214,7 +214,7 @@ public class NettyServerDebuggingServiceTest
                     }
                 });
 
-            SocketAddress address = sb.bind(0).sync().channel().localAddress();
+            @NotNull final SocketAddress address = sb.bind(0).sync().channel().localAddress();
 
             Socket s = new Socket(NetUtil.LOCALHOST, ((InetSocketAddress) address).getPort());
 
