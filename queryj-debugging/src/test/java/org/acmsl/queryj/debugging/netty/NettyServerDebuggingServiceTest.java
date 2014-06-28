@@ -224,5 +224,27 @@ public class NettyServerDebuggingServiceTest
         }
     }
 
-    public static class MyChannel
+    public static class MyChannelHandlerAdapter
+        extends ChannelHandlerAdapter
+    {
+        new ChannelHandlerAdapter()
+    {
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public void channelActive(final ChannelHandlerContext ctx)
+        throws Exception
+        {
+            ctx.read();
+        }
+
+        @Override
+        public void channelRead(@NotNull final ChannelHandlerContext ctx)
+        {
+
+        }
+    });
+
+    }
 }
