@@ -341,7 +341,10 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         {
             ctx.channel().closeFuture().sync();
         }
+        catch (@NotNull final InterruptedException ex)
+        {
 
+        }
     }
 
     /**
