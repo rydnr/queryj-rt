@@ -44,6 +44,7 @@ import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
@@ -239,7 +240,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     {
         @NotNull final ChannelFuture result;
         @NotNull final ServerBootstrap serverBootstrap = new ServerBootstrap();
-        serverBootstrap.option()
+        serverBootstrap.option(ChannelOption.ALLOCATOR)
         setServerBootstrap(serverBootstrap);
         @NotNull final EventLoopGroup group = new NioEventLoopGroup(1);
         setEventLoopGroup(group);
