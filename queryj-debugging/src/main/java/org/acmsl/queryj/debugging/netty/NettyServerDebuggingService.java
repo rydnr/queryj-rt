@@ -99,6 +99,11 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     private ServerBootstrap m__ServerBootstrap;
 
     /**
+     * The channel future.
+     */
+    private ChannelFuture m__ChannelFuture;
+
+    /**
      * Specifies the {@link ServerBootstrap}.
      * @param bootstrap the bootstrap.
      */
