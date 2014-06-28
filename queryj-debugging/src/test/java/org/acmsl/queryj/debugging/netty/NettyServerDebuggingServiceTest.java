@@ -207,7 +207,7 @@ public class NettyServerDebuggingServiceTest
 
             @NotNull final DataOutput out = new DataOutputStream(s.getOutputStream());
             @NotNull final byte[] buf = new byte[6];
-            in.readFully(buf);
+            out.write();readFully(buf);
 
             Assert.assertEquals("reload", new String(buf, CharsetUtil.US_ASCII));
 
