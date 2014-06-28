@@ -255,7 +255,7 @@ public class NettyServerDebuggingServiceTest
         @Override
         public String toString()
         {
-            return "{ \"command\": "
+            return "{ \"command\": " + m__strCommand + ", \"class\": \""
         }
     }
 }
