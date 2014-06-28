@@ -150,7 +150,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     }
 
     /**
-     * Specifies the channel future.
+     * Retrieves the channel future.
      * @return such {@link ChannelFuture}.
      */
     protected ChannelFuture getChannelFuture()
