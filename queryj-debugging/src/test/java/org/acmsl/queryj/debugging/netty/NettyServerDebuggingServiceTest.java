@@ -91,7 +91,6 @@ public class NettyServerDebuggingServiceTest
      * Checks a reload makes the server request
      * a template reload.
      */
-    @Test
     public void reload_makes_returns_a_reload_command()
     {
         // Start the service
