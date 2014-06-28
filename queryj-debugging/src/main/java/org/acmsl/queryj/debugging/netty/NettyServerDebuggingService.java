@@ -221,8 +221,9 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      * Stops the server.
      */
     public void stopServer()
+        throws InterruptedException
     {
-        return stopServer(getServerBootstrap());
+        return stopServer(getEventLoopGroup());
     }
 
     /**
