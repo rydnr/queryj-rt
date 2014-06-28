@@ -49,6 +49,7 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.util.CharsetUtil;
 import io.netty.util.NetUtil;
+import io.netty.util.concurrent.Future;
 import io.netty.util.concurrent.GenericFutureListener;
 import org.acmsl.commons.utils.io.FileUtils;
 import org.acmsl.queryj.api.AbstractTemplateGenerator;
@@ -202,7 +203,17 @@ public class NettyServerDebuggingServiceTest
         future.await();
 
         future.addListener(new GenericFutureListener() {
-
+            /**
+             * Invoked when the operation associated with the {@link io.netty.util.concurrent.Future} has been
+             * completed.
+             *
+             * @param future the source {@link io.netty.util.concurrent.Future} which called this callback
+             */
+            @Override
+            public void operationComplete(final Future<?> future) throws Exception
+            {
+                //To change body of implemented methods use File | Settings | File Templates.
+            }
         }
         )
         Assert.assertTrue(instance.m__bReloadCalled);
