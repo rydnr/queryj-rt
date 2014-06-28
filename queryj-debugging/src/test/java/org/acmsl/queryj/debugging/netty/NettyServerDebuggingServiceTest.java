@@ -197,6 +197,7 @@ public class NettyServerDebuggingServiceTest
             @NotNull final DataOutput out = new DataOutputStream(socket.getOutputStream());
             @NotNull final byte[] buf = "reload".getBytes(CharsetUtil.US_ASCII);
             out.write(buf);
+            out.flush();
 
             Assert.assertEquals("reload", myChannelHandlerAdapter.m__strCommand);
 
