@@ -145,7 +145,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         throws InterruptedException,
                 IOException
     {
-        int t_iPort = 0;
+        final int t_iPort;
 
         @Nullable final String t_strPort = System.getProperty(QUERYJ_TEMPLATE_DEBUG_PORT);
 
