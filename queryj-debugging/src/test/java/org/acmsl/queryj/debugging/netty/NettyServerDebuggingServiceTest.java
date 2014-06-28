@@ -39,6 +39,7 @@ package org.acmsl.queryj.debugging.netty;
  * Importing JetBrains annotations.
  */
 import io.netty.bootstrap.ServerBootstrap;
+import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelFutureListener;
@@ -245,7 +246,7 @@ public class NettyServerDebuggingServiceTest
         @Override
         public void channelRead(@NotNull final ChannelHandlerContext ctx, @NotNull final Object msg)
         {
-            this.m__strCommand = "" + msg;
+            this.m__strCommand = (ByteBuf) msg;
             this.m__bAlive = false;
         }
 
