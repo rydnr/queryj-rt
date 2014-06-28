@@ -255,7 +255,7 @@ public class NettyServerDebuggingServiceTest
          * {@inheritDoc}
          */
         @Override
-        public void channelActive(final ChannelHandlerContext ctx)
+        public void reload()
         throws Exception
         {
             ctx.read();
