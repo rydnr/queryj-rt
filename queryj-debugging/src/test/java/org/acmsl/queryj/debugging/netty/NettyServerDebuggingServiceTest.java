@@ -200,8 +200,6 @@ public class NettyServerDebuggingServiceTest
         out.write(buf);
         socket.close();
 
-        future.await();
-
         Assert.assertTrue(future.isDone());
 
         Assert.assertTrue(instance.m__bReloadCalled);
