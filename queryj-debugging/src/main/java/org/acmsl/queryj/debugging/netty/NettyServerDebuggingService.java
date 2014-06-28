@@ -133,7 +133,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      * Launches the server.
      * @return the {@link NioEventLoopGroup} group.
      * @throws InterruptedException if the server gets interrupted.
-     * @throws IOException if the socket canno
+     * @throws IOException if the socket cannot be bound.
      */
     public NioEventLoopGroup launchServer()
         throws InterruptedException,
