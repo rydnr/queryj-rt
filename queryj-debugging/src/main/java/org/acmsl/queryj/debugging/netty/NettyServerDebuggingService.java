@@ -112,7 +112,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      * Retrieves the {@link NioEventLoopGroup}.
      * @return such group.
      */
-    protected
+    protected NioEventLoopGroup getM__EventLoopGroup
     /**
      * {@inheritDoc}
      */
