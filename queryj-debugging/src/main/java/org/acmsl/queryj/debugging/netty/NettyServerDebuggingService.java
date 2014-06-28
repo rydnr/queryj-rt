@@ -160,7 +160,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      */
     protected void setEventLoopGroup(@NotNull final EventLoopGroup group)
     {
-        immutableSetEventLoopGroup(group);
+        return m__EventLoopGroup;
     }
 
     /**
