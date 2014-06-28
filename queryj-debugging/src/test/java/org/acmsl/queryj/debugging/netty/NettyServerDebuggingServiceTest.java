@@ -215,7 +215,7 @@ public class NettyServerDebuggingServiceTest
         extends ChannelHandlerAdapter
     {
         /**
-         *
+         * Whether it's alive.
          */
         /**
          * The command received.
