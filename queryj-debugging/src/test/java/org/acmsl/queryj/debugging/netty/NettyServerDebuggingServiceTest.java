@@ -186,7 +186,7 @@ public class NettyServerDebuggingServiceTest
 
         @SuppressWarnings("unchecked")
         @NotNull final NettyServerDebuggingService<TemplateContext> instance =
-            new NettyServerDebuggingService()
+            new MyNettyServerDebuggingService();
             {
                 /**
                  * {@inheritDoc}
