@@ -256,7 +256,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     public void stopServer()
         throws InterruptedException
     {
-        return stopServer(getEventLoopGroup());
+        stopServer(getEventLoopGroup());
     }
 
     /**
