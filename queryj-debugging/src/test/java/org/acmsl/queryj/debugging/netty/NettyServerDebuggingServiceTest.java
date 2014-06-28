@@ -248,7 +248,7 @@ public class NettyServerDebuggingServiceTest
         {
             @NotNull final ByteBuf buffer = (ByteBuf) msg;
 
-            @NotNull final StringBuilder aux = new StringBuilder();
+            @NotNull final byte[] aux = new StringBuilder();
 
             this.m__strCommand = new (buffer.readableBytes() > 0)
             {
