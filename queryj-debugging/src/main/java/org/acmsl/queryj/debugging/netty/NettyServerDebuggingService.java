@@ -187,6 +187,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
             group.shutdownGracefully().sync();
         }
 
+        return result;
     }
 
     /**
