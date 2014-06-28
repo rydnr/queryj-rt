@@ -157,4 +157,43 @@ public class NettyServerDebuggingServiceTest
         // check the generator restarts the generation for that template.
         EasyMock.verify(template.template);
     }
-}
+
+    @Test
+    public void testFlushAfterGatheredFlush() throws Exception {
+        NioEventLoopGroup group = new NioEventLoopGroup(1);
+        try {
+            ServerBootstrap sb = new ServerBootstrap();
+            sb.group(group).channel(NioServerSocketChannel.class);
+            sb.childHandler(new ChannelHandlerAdapter() {
+                @Override
+                public void channelActive(final ChannelHandlerContext ctx) throws Exception {
+                    // Trigger a gathering write by writing two buffers.
+                    ctx.write(Unpooled.wrappedBuffer(new byte[] { 'a' }));
+                    ChannelFuture f = ctx.write(Unpooled.wrappedBuffer(new byte[] { 'b' }));
+                    f.addListener(new ChannelFutureListener() {
+                        @Override
+                        public void operationComplete(ChannelFuture future) throws Exception {
+                            // This message must be flushed
+                            ctx.writeAndFlush(Unpooled.wrappedBuffer(new byte[]{'c'}));
+                        }
+                    });
+                    ctx.flush();
+                }
+            });
+
+            SocketAddress address = sb.bind(0).sync().channel().localAddress();
+
+            Socket s = new Socket(NetUtil.LOCALHOST, ((InetSocketAddress) address).getPort());
+
+            DataInput in = new DataInputStream(s.getInputStream());
+            byte[] buf = new byte[3];
+            in.readFully(buf);
+
+            assertThat(new String(buf, CharsetUtil.US_ASCII), is("abc"));
+
+            s.close();
+        } finally {
+            group.shutdownGracefully().sync();
+        }
+    }
+}}
