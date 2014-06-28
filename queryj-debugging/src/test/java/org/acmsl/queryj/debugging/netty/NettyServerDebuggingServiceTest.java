@@ -179,8 +179,9 @@ public class NettyServerDebuggingServiceTest
         throws Exception
     {
         final NioEventLoopGroup group = new NioEventLoopGroup(1);
-        try {
-            ServerBootstrap sb = new ServerBootstrap();
+        try
+        {
+            final ServerBootstrap sb = new ServerBootstrap();
             sb.group(group).channel(NioServerSocketChannel.class);
             sb.childHandler(new ChannelHandlerAdapter() {
                 @Override
