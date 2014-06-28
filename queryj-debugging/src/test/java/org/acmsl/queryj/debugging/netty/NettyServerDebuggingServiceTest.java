@@ -215,6 +215,9 @@ public class NettyServerDebuggingServiceTest
         extends ChannelHandlerAdapter
     {
         /**
+         *
+         */
+        /**
          * The command received.
          */
         public String m__strCommand;
