@@ -194,7 +194,6 @@ public class NettyServerDebuggingServiceTest
                     public void channelActive(final ChannelHandlerContext ctx)
                         throws Exception
                     {
-                        // Trigger a gathering write by writing two buffers.
                         ctx.write(Unpooled.wrappedBuffer("reload".getBytes(CharsetUtil.US_ASCII));
                         ctx.flush();
                     }
