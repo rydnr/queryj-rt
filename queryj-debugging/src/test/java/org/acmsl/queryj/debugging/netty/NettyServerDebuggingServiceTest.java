@@ -202,6 +202,7 @@ public class NettyServerDebuggingServiceTest
             socket.close();
 
         instance.stopServer();
+
         future.await();
 
     }
