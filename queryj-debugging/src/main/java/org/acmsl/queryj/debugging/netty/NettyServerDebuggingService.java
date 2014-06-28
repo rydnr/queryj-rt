@@ -142,7 +142,10 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     {
         int t_iPort = 0;
 
-        if (System.getProperty("queryj.template.debug.port"))
+        if (System.getProperty("queryj.template.debug.port") != null)
+        {
+
+        }
         launchServer(t_iPort);
     }
     /**
