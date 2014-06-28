@@ -38,6 +38,16 @@ package org.acmsl.queryj.debugging.netty;
 /*
  * Importing JetBrains annotations.
  */
+import io.netty.bootstrap.ServerBootstrap;
+import io.netty.buffer.Unpooled;
+import io.netty.channel.ChannelFuture;
+import io.netty.channel.ChannelFutureListener;
+import io.netty.channel.ChannelHandlerAdapter;
+import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.nio.NioEventLoopGroup;
+import io.netty.channel.socket.nio.NioServerSocketChannel;
+import io.netty.util.CharsetUtil;
+import io.netty.util.NetUtil;
 import org.acmsl.commons.utils.io.FileUtils;
 import org.acmsl.queryj.api.AbstractTemplateGenerator;
 import org.acmsl.queryj.api.TemplateContext;
@@ -57,7 +67,10 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.io.DataInput;
 import java.io.File;
+import java.net.InetSocketAddress;
+import java.net.SocketAddress;
 import java.nio.charset.Charset;
 
 /**
@@ -168,7 +181,7 @@ public class NettyServerDebuggingServiceTest
                 @Override
                 public void channelActive(final ChannelHandlerContext ctx) throws Exception {
                     // Trigger a gathering write by writing two buffers.
-                    ctx.write(Unpooled.wrappedBuffer(new byte[] { 'a' }));
+                    ctx.write(Unpooled.wrappedBuffer(new byte[]{'a'}));
                     ChannelFuture f = ctx.write(Unpooled.wrappedBuffer(new byte[] { 'b' }));
                     f.addListener(new ChannelFutureListener() {
                         @Override
@@ -196,4 +209,4 @@ public class NettyServerDebuggingServiceTest
             group.shutdownGracefully().sync();
         }
     }
-}}
+}
