@@ -222,7 +222,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      */
     public void stopServer()
     {
-        return stopServer(getServerBootstrap()
+        return stopServer(getServerBootstrap());
     }
 
     /**
