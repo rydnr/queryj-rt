@@ -226,7 +226,7 @@ public class NettyServerDebuggingServiceTest
                 Thread.sleep(100);
             }
 
-            Assert.assertTrue(myChannelHandlerAdapter.m__strCommand);
+            Assert.assertTrue(myServer..m__strCommand);
 
         }
         finally
