@@ -173,7 +173,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         throws InterruptedException,
         IOException
     {
-        @NotNull final ChannelFuture result = serverBootstrap.bind(port);
+        @NotNull final ChannelFuture result;
         @NotNull final ServerBootstrap serverBootstrap = new ServerBootstrap();
         @NotNull final NioEventLoopGroup group = new NioEventLoopGroup(1);
 
