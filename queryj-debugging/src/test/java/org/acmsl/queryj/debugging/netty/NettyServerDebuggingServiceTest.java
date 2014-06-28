@@ -178,7 +178,7 @@ public class NettyServerDebuggingServiceTest
     public void testFlushAfterGatheredFlush()
         throws Exception
     {
-        NioEventLoopGroup group = new NioEventLoopGroup(1);
+        final NioEventLoopGroup group = new NioEventLoopGroup(1);
         try {
             ServerBootstrap sb = new ServerBootstrap();
             sb.group(group).channel(NioServerSocketChannel.class);
