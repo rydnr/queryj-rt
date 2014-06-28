@@ -230,7 +230,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      */
     protected void stopServer(@NotNull final EventLoopGroup group)
     {
-        gro
+        group.shutdownGracefully().sync();
     }
 
     /**
