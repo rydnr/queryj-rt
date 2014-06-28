@@ -291,7 +291,7 @@ public class NettyServerDebuggingServiceTest
         {
             return
                   "{ \"service\": \"" + service + '"'
-                + ", \"class\": \"" + MyNettyServerDebuggingService.class.getSimpleName() + '"'
+                + ", \"class\": \"" + MyChannelListener.class.getSimpleName() + '"'
                 + ", \"package\": \"" + MyNettyServerDebuggingService.class.getPackage().getName() + "\" }";
         }
     }
