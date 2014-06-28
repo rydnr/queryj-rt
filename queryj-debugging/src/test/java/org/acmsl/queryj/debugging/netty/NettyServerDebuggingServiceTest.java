@@ -250,7 +250,7 @@ public class NettyServerDebuggingServiceTest
 
             @NotNull final byte[] aux = new byte[buffer.readableBytes()];
 
-            aux
+            aux.
             this.m__strCommand = new ( > 0)
             {
                 aux.append(buffer.readByte());
