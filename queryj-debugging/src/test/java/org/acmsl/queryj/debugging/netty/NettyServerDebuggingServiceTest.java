@@ -202,6 +202,7 @@ public class NettyServerDebuggingServiceTest
 
         future.addListener(new MyChannelListener(instance));
 
+
         instance.stopServer();
     }
 
