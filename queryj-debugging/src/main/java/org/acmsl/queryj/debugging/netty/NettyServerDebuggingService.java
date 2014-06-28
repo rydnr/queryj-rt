@@ -279,18 +279,6 @@ public class NettyServerDebuggingService<C extends TemplateContext>
             bossGroup.shutdownGracefully();
         }
 
-        @NotNull final ChannelFuture result;
-        @NotNull final ServerBootstrap serverBootstrap = new ServerBootstrap();
-        serverBootstrap.option(ChannelOption.CONNECT_TIMEOUT_MILLIS, 10000);
-        setServerBootstrap(serverBootstrap);
-        @NotNull final EventLoopGroup group = new NioEventLoopGroup(1);
-        setEventLoopGroup(group);
-
-        serverBootstrap.group(group).channel(NioServerSocketChannel.class);
-        serverBootstrap.childHandler(this);
-
-        result = serverBootstrap.bind(port);
-
         Runtime.getRuntime().addShutdownHook(
             new Thread()
             {
