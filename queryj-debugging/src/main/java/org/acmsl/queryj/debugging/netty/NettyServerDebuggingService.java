@@ -255,7 +255,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
             @Override
             public void run()
             {
-
+                stopServer();
             }
         });
         return result;
