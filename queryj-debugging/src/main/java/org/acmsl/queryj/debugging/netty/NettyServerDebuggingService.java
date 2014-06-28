@@ -311,6 +311,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     @Override
     public void channelRead(@NotNull final ChannelHandlerContext ctx, @NotNull final Object msg)
     {
+        try
         @NotNull final ByteBuf buffer = (ByteBuf) msg;
 
         @NotNull final byte[] aux = new byte[buffer.readableBytes()];
