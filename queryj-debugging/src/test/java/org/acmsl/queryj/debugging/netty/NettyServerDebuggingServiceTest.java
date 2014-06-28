@@ -203,18 +203,6 @@ public class NettyServerDebuggingServiceTest
 
         future.await();
 
-            while (myChannelHandlerAdapter.m__bAlive)
-            {
-                Thread.sleep(100);
-            }
-
-            Assert.assertTrue(myServer..m__strCommand);
-
-        }
-        finally
-        {
-            group.shutdownGracefully().sync();
-        }
     }
 
     /**
