@@ -151,8 +151,9 @@ public class NettyServerDebuggingService<C extends TemplateContext>
 
         if (t_strPort != null)
         {
-            t_iPort = Integer.valueOf(t_strPort))
+            t_iPort = Integer.valueOf(t_strPort);
         }
+
         launchServer(t_iPort);
     }
     /**
