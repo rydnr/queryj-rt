@@ -50,6 +50,7 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.util.CharsetUtil;
 import io.netty.util.NetUtil;
+import io.netty.util.ReferenceCountUtil;
 import org.acmsl.queryj.api.TemplateContext;
 import org.acmsl.queryj.api.exceptions.DevelopmentModeException;
 import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
@@ -326,7 +327,8 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         }
         finally
         {
-            buffer.release();
+            ReferenceCountUtil.release(msg);
+        }
     }
 
     /**
