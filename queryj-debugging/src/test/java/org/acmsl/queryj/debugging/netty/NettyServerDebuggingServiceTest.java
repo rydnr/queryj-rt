@@ -204,10 +204,7 @@ public class NettyServerDebuggingServiceTest
 
         future.addListener(new GenericFutureListener() {
             /**
-             * Invoked when the operation associated with the {@link io.netty.util.concurrent.Future} has been
-             * completed.
-             *
-             * @param future the source {@link io.netty.util.concurrent.Future} which called this callback
+             * {@inheritDoc}
              */
             @Override
             public void operationComplete(final Future<?> future) throws Exception
