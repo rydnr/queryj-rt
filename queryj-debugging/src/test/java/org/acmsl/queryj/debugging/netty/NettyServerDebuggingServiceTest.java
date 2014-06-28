@@ -204,7 +204,7 @@ public class NettyServerDebuggingServiceTest
 
         while (!future.isDone())
         {
-
+            future.await();
         }
         future.await();
     }
