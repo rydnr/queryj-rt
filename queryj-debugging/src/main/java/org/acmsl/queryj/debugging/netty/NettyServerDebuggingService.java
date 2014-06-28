@@ -111,11 +111,11 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     }
 
     /**
-     * Retrieves the {@link NioEventLoopGroup}.
-     * @return such group.
+     * Retrieves the {@link ServerBootstrap}.
+     * @return such bootstrap.
      */
     @Nullable
-    protected NioEventLoopGroup getNioEventLoopGroup()
+    protected ServerBootstrap getNioEventLoopGroup()
     {
         return this.m__ServerBootstrap;
     }
