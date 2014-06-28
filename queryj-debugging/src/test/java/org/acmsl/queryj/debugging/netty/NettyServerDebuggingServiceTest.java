@@ -201,8 +201,6 @@ public class NettyServerDebuggingServiceTest
                             {
                                 /**
                                  * {@inheritDoc}
-                                 * @param future
-                                 * @throws Exception
                                  */
                                 @Override
                                 public void operationComplete(ChannelFuture future)
