@@ -182,8 +182,6 @@ public class NettyServerDebuggingService<C extends TemplateContext>
             serverBootstrap.group(group).channel(NioServerSocketChannel.class);
             serverBootstrap.childHandler(this);
             result = serverBootstrap.bind(port);
-
-            setServerBootstrap(serverBootstrap);
         }
         finally
         {
