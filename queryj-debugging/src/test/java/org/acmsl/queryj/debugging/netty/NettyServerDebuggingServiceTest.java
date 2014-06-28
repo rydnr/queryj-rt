@@ -242,7 +242,7 @@ public class NettyServerDebuggingServiceTest
         extends NettyServerDebuggingService<C>
     {
         /**
-         * Whether it's alive.
+         * Whether reload has been called.
          */
         public boolean m__bAlive = true;
 
