@@ -182,8 +182,6 @@ public class NettyServerDebuggingServiceTest
     public void reload_command_gets_received_correctly()
         throws Exception
     {
-        final boolean reloadCalled;
-
         @SuppressWarnings("unchecked")
         @NotNull final NettyServerDebuggingService<TemplateContext> instance =
             new MyNettyServerDebuggingService();
