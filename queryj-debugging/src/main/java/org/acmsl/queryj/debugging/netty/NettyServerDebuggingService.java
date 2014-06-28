@@ -261,7 +261,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
                 }
                 catch (@NotNull final InterruptedException interrupted)
                 {
-
+                    // Nothing to do
                 }
             }
         });
