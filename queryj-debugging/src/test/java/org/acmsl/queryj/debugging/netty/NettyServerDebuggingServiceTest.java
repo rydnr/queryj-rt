@@ -278,8 +278,6 @@ public class NettyServerDebuggingServiceTest
             throws Exception
         {
             Assert.assertTrue(service.m__bReloadCalled);
-
-            service.stopServer();
         }
 
         /**
