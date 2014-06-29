@@ -273,7 +273,7 @@ public class NettyServerDebuggingServiceTest
 
 //        future.await();
 
-        @NotNull final EventLoopGroup workerGroup = new NioEventLoopGroup();
+        @NotNull final EventLoopGroup clientGroup = new NioEventLoopGroup();
 
         @NotNull final ChannelFuture client =
             sendTextToServer("localhost", ((InetSocketAddress) address).getPort(), "reload");
