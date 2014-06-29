@@ -244,7 +244,10 @@ public class NettyServerDebuggingServiceTest
         {
             workerGroup.shutdownGracefully();
         }
+
+        return result;
     }
+
     /**
      * Checks the reload command gets received successfully.
      */
