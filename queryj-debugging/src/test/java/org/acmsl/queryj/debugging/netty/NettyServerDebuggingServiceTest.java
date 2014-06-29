@@ -272,7 +272,7 @@ public class NettyServerDebuggingServiceTest
         // Wait until the connection is closed.
         client.channel().closeFuture().sync();
 
-        future.sync();
+        server.sync();
 
         Assert.assertTrue(future.isDone());
 
