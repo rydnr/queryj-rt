@@ -266,7 +266,7 @@ public class NettyServerDebuggingServiceTest
 
 //        future.await();
 
-        sendTextToServer("localhost", ((InetSocketAddress) address).getPort(), "reload");
+        \Socket sendTextToServer("localhost", ((InetSocketAddress) address).getPort(), "reload");
 
 
         // Wait until the connection is closed.
