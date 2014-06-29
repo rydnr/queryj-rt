@@ -212,7 +212,7 @@ public class NettyServerDebuggingServiceTest
                                 public void channelRead(
                                     @NotNull final ChannelHandlerContext ctx, @NotNull final Object buf)
                                 {
-                                    ByteBuf buffer = (ByteBuf) buf;
+                                    @NotNull final ByteBuf buffer = (ByteBuf) buf;
 
                                     try
                                     {
