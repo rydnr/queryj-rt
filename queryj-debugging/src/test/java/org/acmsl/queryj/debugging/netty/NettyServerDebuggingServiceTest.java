@@ -225,7 +225,7 @@ public class NettyServerDebuggingServiceTest
 
                                     try
                                     {
-                                        buffer.writeBytes(msg.getBytes("ASCII"));
+                                        buffer.writeBytes(msg.getBytes(CharsetUtil.US_ASCII"ASCII"));
                                     }
                                     catch (@NotNull final UnsupportedEncodingException invalidEncoding)
                                     {
