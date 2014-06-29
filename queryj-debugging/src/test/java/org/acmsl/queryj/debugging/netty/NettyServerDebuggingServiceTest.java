@@ -205,7 +205,7 @@ public class NettyServerDebuggingServiceTest
                             new ChannelHandlerAdapter()
                             {
                                 @Override
-                            public void channelRead()
+                            public void channelRead(@NotNull final ChannelHandlerAdapter)
                             });
                     }
                 });
