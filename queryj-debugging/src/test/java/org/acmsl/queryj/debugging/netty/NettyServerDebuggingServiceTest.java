@@ -191,7 +191,7 @@ public class NettyServerDebuggingServiceTest
      * @param port the port.
      * @param msg the text to send.
      * @param workerGroup the {@link NioEventLoopGroup} to manage when to shutdown the connection.
-     * @return the
+     * @return the future
      */
     @NotNull
     protected ChannelFuture sendTextToServer(
