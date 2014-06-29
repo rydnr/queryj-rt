@@ -37,7 +37,7 @@
 package org.acmsl.queryj.debugging.netty;
 
 /*
- * Importing QueryJ Core classes.
+ * Importing Netty classes.
  */
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -48,6 +48,10 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+
+/*
+ * Importing QueryJ Core classes.
+ */
 import org.acmsl.queryj.api.TemplateContext;
 import org.acmsl.queryj.api.exceptions.DevelopmentModeException;
 import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
@@ -68,12 +72,10 @@ import org.jetbrains.annotations.NotNull;
  */
 import org.checkthread.annotations.ThreadSafe;
 
-import java.io.DataOutput;
-import java.io.DataOutputStream;
+/*
+ * Importing JDK classes.
+ */
 import java.io.IOException;
-import java.net.InetSocketAddress;
-import java.net.Socket;
-import java.net.SocketAddress;
 
 /**
  * Netty-based TCP/IP server which drives the
