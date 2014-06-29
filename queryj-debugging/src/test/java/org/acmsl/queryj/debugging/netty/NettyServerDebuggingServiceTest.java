@@ -294,7 +294,7 @@ public class NettyServerDebuggingServiceTest
                   "{ \"command\": \"" + m__strCommand + '"'
                 + ", \"reloadCalled\": " + m__bReloadCalled
                 + ", \"class\": \"" + MyNettyServerChannelHandler.class.getSimpleName() + '"'
-                + ", \"package\": \"" + MyNettyServerDebuggingService.class.getPackage().getName() + "\" }";
+                + ", \"package\": \"" + MyNettyServerChannelHandler.class.getPackage().getName() + "\" }";
         }
     }
 
