@@ -186,7 +186,8 @@ public class NettyServerDebuggingServiceTest
     {
         EventLoopGroup workerGroup = new NioEventLoopGroup();
 
-        try {
+        try
+        {
             Bootstrap b = new Bootstrap(); // (1)
             b.group(workerGroup); // (2)
             b.channel(NioSocketChannel.class); // (3)
