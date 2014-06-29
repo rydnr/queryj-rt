@@ -254,7 +254,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      */
     protected ChannelFuture launchServer(final int port, @NotNull final ChannelHandlerAdapter handler)
         throws InterruptedException,
-        IOException
+               IOException
     {
         @NotNull ChannelFuture result;
 
