@@ -234,7 +234,7 @@ public class NettyServerDebuggingServiceTest
                                     ctx.write(msg);
                                     ctx.flush();
                                     ctx.close();
-                                    buffer.release();
+                                    //buffer.release();
                                 }
                             });
                     }
