@@ -286,7 +286,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
             // shut down your server.
             result.channel().closeFuture().sync();
         }
-        finally
+        catch (@NotNull final Throwable throwable)
         {
             workerGroup.shutdownGracefully();
             bossGroup.shutdownGracefully();
