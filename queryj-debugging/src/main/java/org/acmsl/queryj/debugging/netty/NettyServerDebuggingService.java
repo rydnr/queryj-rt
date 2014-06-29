@@ -59,6 +59,7 @@ import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
 /*
  * Importing StringTemplate classes.
  */
+import org.apache.commons.logging.LogFactory;
 import org.stringtemplate.v4.ST;
 
 /*
@@ -292,6 +293,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         }
         catch (@NotNull final Throwable throwable)
         {
+            LogFactory.getLog()
             workerGroup.shutdownGracefully();
             bossGroup.shutdownGracefully();
         }
