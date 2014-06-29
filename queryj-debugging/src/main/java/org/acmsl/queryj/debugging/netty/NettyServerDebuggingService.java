@@ -293,7 +293,9 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         }
         catch (@NotNull final Throwable throwable)
         {
-            LogFactory.getLog()
+            LogFactory.getLog(NettyServerDebuggingService.class).fatal(
+
+            )
             workerGroup.shutdownGracefully();
             bossGroup.shutdownGracefully();
         }
