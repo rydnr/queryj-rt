@@ -185,8 +185,11 @@ public class NettyServerDebuggingServiceTest
     public void reload_command_gets_received_correctly()
         throws Exception
     {
+        @NotNull final MyNettyServerChannelHandler handler =
+            new MyNettyServerChannelHandler();
+
         @NotNull final MyNettyServerDebuggingService instance =
-            new MyNettyServerDebuggingService<>();
+            new MyNettyServerDebuggingService();
 
         @NotNull final ChannelFuture future = instance.launchServer();
 
