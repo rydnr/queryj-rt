@@ -198,6 +198,11 @@ public class NettyServerDebuggingServiceTest
             b.handler(
                 new ChannelInitializer<SocketChannel>()
                 {
+                    /**
+                     * {@inheritDoc}
+                     * @param ch
+                     * @throws Exception
+                     */
                     @Override
                     public void initChannel(@NotNull final SocketChannel ch)
                         throws Exception
