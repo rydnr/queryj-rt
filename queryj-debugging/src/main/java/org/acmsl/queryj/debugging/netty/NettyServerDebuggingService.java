@@ -299,6 +299,10 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         {
             throw new RuntimeException("Cannot run server");
         }
+        else
+        {
+
+        }
         return aux;
     }
 
