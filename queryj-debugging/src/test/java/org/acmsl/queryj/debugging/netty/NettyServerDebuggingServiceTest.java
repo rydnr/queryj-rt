@@ -230,7 +230,10 @@ public class NettyServerDebuggingServiceTest
          * Creates a new instance.
          * @param handler the handler to use.
          */
-        public MyNettyServerDebuggingService
+        public MyNettyServerDebuggingService(@NotNull final ChannelHandlerAdapter handler)
+        {
+            this.m__Handler = handler;
+        }
         /**
          * {@inheritDoc}
          */
