@@ -197,7 +197,8 @@ public class NettyServerDebuggingServiceTest
 
         try
         {
-            Bootstrap b = new Bootstrap(); // (1)
+            Bootstrap j
+            b = new Bootstrap(); // (1)
             b.group(workerGroup); // (2)
             b.channel(NioSocketChannel.class); // (3)
             b.option(ChannelOption.SO_KEEPALIVE, true); // (4)
