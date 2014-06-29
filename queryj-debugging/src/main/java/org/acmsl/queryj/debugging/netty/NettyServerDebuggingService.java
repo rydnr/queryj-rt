@@ -59,13 +59,13 @@ import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
 /*
  * Importing StringTemplate classes.
  */
-import org.jetbrains.annotations.Nullable;
 import org.stringtemplate.v4.ST;
 
 /*
  * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /*
  * Importing checkthread.org annotations.
