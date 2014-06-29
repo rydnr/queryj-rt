@@ -234,6 +234,7 @@ public class NettyServerDebuggingServiceTest
         {
             this.m__Handler = handler;
         }
+
         /**
          * {@inheritDoc}
          */
