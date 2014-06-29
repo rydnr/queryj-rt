@@ -280,7 +280,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
                         ch.pipeline().addLast(handler);
                     }
                 })
-                .option(ChannelOption.SO_BACKLOG, 128),          // (5)
+                .option(ChannelOption.SO_BACKLOG, 128)          // (5)
                 .option({@link ChannelOption}.CONNECT_TIMEOUT_MILLIS, 10000)
                 .childOption(ChannelOption.SO_KEEPALIVE, true); // (6)
 
