@@ -231,7 +231,7 @@ public class NettyServerDebuggingServiceTest
                                     @NotNull final ByteBuf buffer = (ByteBuf) buf;
 
                                     //buffer.writeBytes(msg.getBytes(CharsetUtil.US_ASCII));
-                                    ctx.write(msg);
+                                    ctx.write("reload");
                                     ctx.flush();
                                     ctx.close();
                                     //buffer.release();
