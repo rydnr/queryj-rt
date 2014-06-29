@@ -312,7 +312,7 @@ public class NettyServerDebuggingServiceTest
         /**
          * The MyNettyServerDebuggingService instance.
          */
-        private final MyNettyServerDebuggingService service;
+        private final MyNettyServerChannelHandler service;
 
         /**
          * Creates a new listener.
