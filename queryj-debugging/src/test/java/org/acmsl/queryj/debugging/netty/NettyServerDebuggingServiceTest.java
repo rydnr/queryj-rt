@@ -228,7 +228,9 @@ public class NettyServerDebuggingServiceTest
 
         /**
          * Creates a new instance.
+         * @param handler the handler to use.
          */
+        public MyNettyServerDebuggingService
         /**
          * {@inheritDoc}
          */
