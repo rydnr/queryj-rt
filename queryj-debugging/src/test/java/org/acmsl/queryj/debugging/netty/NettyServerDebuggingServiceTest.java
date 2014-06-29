@@ -280,6 +280,7 @@ public class NettyServerDebuggingServiceTest
 
         // Wait until the connections are closed.
         client.channel().closeFuture().sync();
+        instance.stopServer();
 
         Assert.assertTrue(client.isDone());
         Assert.assertTrue(server.isDone());
@@ -290,7 +291,6 @@ public class NettyServerDebuggingServiceTest
 
         Assert.assertTrue(handler.m__bReloadCalled);
 
-        instance.stopServer();
     }
 
     /**
