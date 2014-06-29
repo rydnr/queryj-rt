@@ -235,9 +235,6 @@ public class NettyServerDebuggingServiceTest
 
             // Start the client.
             result = b.connect(host, port).sync(); // (5)
-
-            // Wait until the connection is closed.
-            result.channel().closeFuture().sync();
         }
         catch (@NotNull final InterruptedException interruptedException)
         {
