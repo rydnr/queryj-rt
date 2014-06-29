@@ -228,7 +228,7 @@ public class NettyServerDebuggingServiceTest
                                 public void channelRead(
                                     @NotNull final ChannelHandlerContext ctx, @NotNull final Object buf)
                                 {
-                                    @NotNull final ByteBuf buffer = (ByteBuf) buf;
+                                    //@NotNull final ByteBuf buffer = (ByteBuf) buf;
 
                                     //buffer.writeBytes(msg.getBytes(CharsetUtil.US_ASCII));
                                     ctx.writeAndFlush(msg);
