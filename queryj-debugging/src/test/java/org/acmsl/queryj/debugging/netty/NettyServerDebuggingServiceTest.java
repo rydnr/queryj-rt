@@ -193,7 +193,7 @@ public class NettyServerDebuggingServiceTest
 
         @NotNull final ChannelFuture future = instance.launchServer();
 
-        future.addListener(new MyChannelListener(instance));
+        future.addListener(new MyChannelListener(handler));
 
         @NotNull final SocketAddress address = future.channel().localAddress();
 
