@@ -206,7 +206,7 @@ public class NettyServerDebuggingServiceTest
                             {
                                 @Override
                                 public void channelRead(
-                                    @NotNull final ChannelHandlerContext ctx, @NotNull final Object msg)
+                                    @NotNull final ChannelHandlerContext ctx, @NotNull final Object buf)
                                 {
                                     ByteBuf buffer = (ByteBuf) msg;
 
