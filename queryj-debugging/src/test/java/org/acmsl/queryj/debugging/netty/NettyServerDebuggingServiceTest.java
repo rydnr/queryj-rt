@@ -288,16 +288,12 @@ public class NettyServerDebuggingServiceTest
 
         clientGroup.shutdownGracefully();
 
-        Assert.assertTrue(handler.m__bReloadCalled);
-
-        /*
         while (!handler.m__bReloadCalled)
         {
             Thread.sleep(1000);
         }
-        */
 
-//        Assert.assertTrue(handler.m__bReloadCalled);
+        Assert.assertTrue(handler.m__bReloadCalled);
 
         instance.stopServer();
     }
