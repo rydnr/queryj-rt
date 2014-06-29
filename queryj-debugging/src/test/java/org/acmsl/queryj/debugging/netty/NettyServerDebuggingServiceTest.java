@@ -293,7 +293,7 @@ public class NettyServerDebuggingServiceTest
             return
                   "{ \"command\": \"" + m__strCommand + '"'
                 + ", \"reloadCalled\": " + m__bReloadCalled
-                + ", \"class\": \"" + MyNettyServerDebuggingService.class.getSimpleName() + '"'
+                + ", \"class\": \"" + MyNettyServerChannelHandler.class.getSimpleName() + '"'
                 + ", \"package\": \"" + MyNettyServerDebuggingService.class.getPackage().getName() + "\" }";
         }
     }
