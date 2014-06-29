@@ -234,7 +234,7 @@ public class NettyServerDebuggingServiceTest
                 });
 
             // Start the client.
-            ChannelFuture f = b.connect(host, port).sync(); // (5)
+            result = b.connect(host, port).sync(); // (5)
 
             // Wait until the connection is closed.
             f.channel().closeFuture().sync();
