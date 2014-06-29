@@ -225,6 +225,10 @@ public class NettyServerDebuggingServiceTest
          * The handler adapter to use.
          */
         private ChannelHandlerAdapter m__Handler;
+
+        /**
+         * Creates a new instance.
+         */
         /**
          * {@inheritDoc}
          */
