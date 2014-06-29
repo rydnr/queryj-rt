@@ -210,7 +210,7 @@ public class NettyServerDebuggingServiceTest
                                 {
                                     ByteBuf buffer = (ByteBuf) buf;
 
-                                    msg.writeBytes()
+                                    buf.writeBytes(msg.getBytes(""))
                                 }
                             });
                     }
