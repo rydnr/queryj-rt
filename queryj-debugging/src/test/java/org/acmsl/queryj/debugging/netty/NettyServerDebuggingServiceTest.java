@@ -202,8 +202,8 @@ public class NettyServerDebuggingServiceTest
                         throws Exception
                     {
                         ch.pipeline().addLast(new TimeClientHandler());
-                }
-            });
+                    }
+                });
 
             // Start the client.
             ChannelFuture f = b.connect(host, port).sync(); // (5)
