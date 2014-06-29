@@ -185,6 +185,12 @@ public class NettyServerDebuggingServiceTest
         EasyMock.verify(template.template);
     }
 
+    /**
+     * Sends a text to the server.
+     * @param host the host.
+     * @param port the port.
+     * @param msg the text to send.
+     */
     protected void sendTextToServer(final String host, final int port, final String msg)
     {
         EventLoopGroup workerGroup = new NioEventLoopGroup();
