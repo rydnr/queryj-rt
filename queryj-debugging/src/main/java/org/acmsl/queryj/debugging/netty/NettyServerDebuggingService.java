@@ -294,7 +294,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         catch (@NotNull final Throwable throwable)
         {
             LogFactory.getLog(NettyServerDebuggingService.class).fatal(
-                "Cannot run the template debugging server"
+                "Cannot run the template debugging server", throwable);
             )
             workerGroup.shutdownGracefully();
             bossGroup.shutdownGracefully();
