@@ -83,6 +83,7 @@ import java.io.DataOutput;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.net.SocketAddress;
@@ -210,7 +211,11 @@ public class NettyServerDebuggingServiceTest
                                 {
                                     ByteBuf buffer = (ByteBuf) buf;
 
-                                    buffer.writeBytes(msg.getBytes("ASCII"));
+                                    try
+                                    {
+                                        buffer.writeBytes(msg.getBytes("ASCII"));
+                                    }
+                                    catch (@NotNull final UnsupportedEncodingException invalid)
                                 }
                             });
                     }
