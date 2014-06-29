@@ -202,7 +202,10 @@ public class NettyServerDebuggingServiceTest
                         throws Exception
                     {
                         ch.pipeline().addLast(
-                            new ChannelHandlerAdapter());
+                            new ChannelHandlerAdapter()
+                            {
+
+                            });
                     }
                 });
 
