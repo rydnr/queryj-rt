@@ -247,10 +247,11 @@ public class NettyServerDebuggingServiceTest
         {
 
         }
+        /*
         finally
         {
             workerGroup.shutdownGracefully();
-        }
+        }*/
 
         return result;
     }
