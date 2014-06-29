@@ -241,7 +241,7 @@ public class NettyServerDebuggingServiceTest
         @Override
         public ChannelFuture launchServer(final int port) throws InterruptedException, IOException
         {
-            return launchServer(port, );
+            return launchServer(port, this.m__Handler);
         }
     }
     /**
