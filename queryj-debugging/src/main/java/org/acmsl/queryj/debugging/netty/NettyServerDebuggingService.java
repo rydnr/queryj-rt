@@ -295,6 +295,10 @@ public class NettyServerDebuggingService<C extends TemplateContext>
             bossGroup.shutdownGracefully();
         }
 
+        if (aux == null)
+        {
+            throw new RuntimeException("Cannot run server");
+        }
         return aux;
     }
 
