@@ -254,7 +254,9 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         throws InterruptedException,
                IOException
     {
-        @NotNull ChannelFuture result;
+        @NotNull final ChannelFuture result;
+
+        @NotNull ChannelFuture aux;
 
         @NotNull final EventLoopGroup bossGroup = new NioEventLoopGroup(); // (1)
         @NotNull final EventLoopGroup workerGroup = new NioEventLoopGroup();
@@ -280,7 +282,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
 //                .childOption(ChannelOption.SO_KEEPALIVE, true); // (6)
 
             // Bind and start to accept incoming connections.
-            result = b.bind(port).sync(); // (7)
+            aux = b.bind(port).sync(); // (7)
 
             // Wait until the server socket is closed.
             // In this example, this does not happen, but you can do that to gracefully
@@ -293,7 +295,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
             bossGroup.shutdownGracefully();
         }
 
-        return result;
+        return aux;
     }
 
     /**
