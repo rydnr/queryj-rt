@@ -217,7 +217,7 @@ public class NettyServerDebuggingServiceTest
 
 //        Assert.assertTrue(handler.m__bReloadCalled);
 
-        instance.stopServer();
+//        instance.stopServer();
     }
 
     /**
