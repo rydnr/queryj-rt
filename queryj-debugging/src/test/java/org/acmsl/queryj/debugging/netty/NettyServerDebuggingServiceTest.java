@@ -274,7 +274,7 @@ public class NettyServerDebuggingServiceTest
 
         server.sync();
 
-        Assert.assertTrue(future.isDone());
+        Assert.assertTrue(server.isDone());
 
         Assert.assertTrue(handler.m__bReloadCalled);
 
