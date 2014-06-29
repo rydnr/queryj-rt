@@ -215,7 +215,10 @@ public class NettyServerDebuggingServiceTest
                                     {
                                         buffer.writeBytes(msg.getBytes("ASCII"));
                                     }
-                                    catch (@NotNull final UnsupportedEncodingException invalid)
+                                    catch (@NotNull final UnsupportedEncodingException invalidEncoding)
+                                    {
+
+                                    }
                                 }
                             });
                     }
