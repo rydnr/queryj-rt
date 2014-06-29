@@ -89,7 +89,6 @@ import java.net.SocketAddress;
  */
 @ThreadSafe
 public class NettyServerDebuggingService<C extends TemplateContext>
-    extends ChannelHandlerAdapter
     implements TemplateDebuggingService<C>
 {
     /**
