@@ -240,6 +240,7 @@ public class NettyServerDebuggingServiceTest
             // Wait until the connection is closed.
             f.channel().closeFuture().sync();
         }
+
         finally
         {
             workerGroup.shutdownGracefully();
