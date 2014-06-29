@@ -204,7 +204,8 @@ public class NettyServerDebuggingServiceTest
                         ch.pipeline().addLast(
                             new ChannelHandlerAdapter()
                             {
-
+                                @Override
+                            public void cha
                             });
                     }
                 });
