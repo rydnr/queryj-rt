@@ -218,6 +218,7 @@ public class NettyServerDebuggingServiceTest
      * A testable debugging service.
      */
     public static class MyNettyServerDebuggingService
+        extends
     {
 
     }
