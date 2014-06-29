@@ -191,7 +191,7 @@ public class NettyServerDebuggingServiceTest
         @NotNull final MyNettyServerDebuggingService instance =
             new MyNettyServerDebuggingService(handler);
 
-        instance.launchServer();
+        @NotNull final ChannelFuture future = instance.launchServer();
 
         future.addListener(new MyChannelListener(handler));
 
