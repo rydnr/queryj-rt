@@ -184,7 +184,7 @@ public class NettyServerDebuggingServiceTest
 
     protected void sendTextToServer(final int port, final String msg)
     {
-         EventLoopGroup workerGroup = new NioEventLoopGroup();
+        EventLoopGroup workerGroup = new NioEventLoopGroup();
 
         try {
             Bootstrap b = new Bootstrap(); // (1)
