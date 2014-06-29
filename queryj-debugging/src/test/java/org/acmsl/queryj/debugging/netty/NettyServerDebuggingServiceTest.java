@@ -288,11 +288,6 @@ public class NettyServerDebuggingServiceTest
 
         server.channel().closeFuture().sync();
 
-        while (!handler.m__bReloadCalled)
-        {
-            Thread.sleep(1000);
-        }
-
         Assert.assertTrue(handler.m__bReloadCalled);
 
         instance.stopServer();
