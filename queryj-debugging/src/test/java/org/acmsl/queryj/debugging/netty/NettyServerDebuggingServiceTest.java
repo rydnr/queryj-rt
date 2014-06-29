@@ -207,7 +207,9 @@ public class NettyServerDebuggingServiceTest
                                 @Override
                                 public void channelRead(
                                     @NotNull final ChannelHandlerContext ctx, @NotNull final Object msg)
-                                {}
+                                {
+
+                                }
                             });
                     }
                 });
