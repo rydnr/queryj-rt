@@ -224,7 +224,7 @@ public class NettyServerDebuggingServiceTest
         /**
          * The handler adapter to use.
          */
-        private
+        private ChannelHandlerAdapter
         /**
          * {@inheritDoc}
          */
