@@ -243,7 +243,22 @@ public class NettyServerDebuggingServiceTest
         {
             return launchServer(port, this.m__Handler);
         }
+
+        /**
+         * {@inheritDoc}
+         */
+        @NotNull
+        @Override
+        public String toString()
+        {
+            return
+                  "{ \"command\": \"" + m__strCommand + '"'
+                + ", \"reloadCalled\": " + m__bReloadCalled
+                + ", \"class\": \"" + MyNettyServerDebuggingService.class.getSimpleName() + '"'
+                + ", \"package\": \"" + MyNettyServerDebuggingService.class.getPackage().getName() + "\" }";
+        }
     }
+
     /**
      * A testable context handler adapter.
      */
