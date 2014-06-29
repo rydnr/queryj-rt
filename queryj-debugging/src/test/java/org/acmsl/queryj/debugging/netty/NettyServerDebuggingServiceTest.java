@@ -192,7 +192,8 @@ public class NettyServerDebuggingServiceTest
      * @param msg the text to send.
      */
     @NotNull
-    protected ChannelFuture sendTextToServer(final String host, final int port, final String msg, @NotNull final EventLoopGroup workerGroup)
+    protected ChannelFuture sendTextToServer(
+        @NotNull final String host, final int port, final String msg, @NotNull final EventLoopGroup workerGroup)
     {
         @NotNull final EventLoopGroup workerGroup = new NioEventLoopGroup();
 
