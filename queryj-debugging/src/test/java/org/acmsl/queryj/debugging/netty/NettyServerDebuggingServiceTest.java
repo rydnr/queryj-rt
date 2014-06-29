@@ -209,6 +209,8 @@ public class NettyServerDebuggingServiceTest
                                     @NotNull final ChannelHandlerContext ctx, @NotNull final Object msg)
                                 {
                                     ByteBuf buffer = (ByteBuf) msg;
+
+                                    msg.write
                                 }
                             });
                     }
