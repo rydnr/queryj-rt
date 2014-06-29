@@ -274,6 +274,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
                     public void initChannel(@NotNull final SocketChannel ch)
                         throws Exception
                     {
+                        System.out.println();
                         ch.pipeline().addLast(handler);
                     }
                 })
