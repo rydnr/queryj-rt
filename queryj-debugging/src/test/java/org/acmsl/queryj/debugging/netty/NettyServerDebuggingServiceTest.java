@@ -232,7 +232,7 @@ public class NettyServerDebuggingServiceTest
         @Override
         public ChannelFuture launchServer(final int port) throws InterruptedException, IOException
         {
-            return super.launchServer(port);
+            return launchServer(port, );
         }
     }
     /**
