@@ -195,6 +195,8 @@ public class NettyServerDebuggingServiceTest
     {
         @NotNull final EventLoopGroup workerGroup = new NioEventLoopGroup();
 
+        ChannelFuture f = b.connect(host, port).sync(); // (5)
+
         try
         {
             @NotNull final Bootstrap b = new Bootstrap(); // (1)
