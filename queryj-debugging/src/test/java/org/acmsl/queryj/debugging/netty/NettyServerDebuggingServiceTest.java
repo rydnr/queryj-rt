@@ -222,12 +222,11 @@ public class NettyServerDebuggingServiceTest
         extends NettyServerDebuggingService
     {
         /**
-         * Launches the server.
-         *
-         * @param port the port.
-         * @return the {@link io.netty.channel.ChannelFuture}.
-         *         throws InterruptedException if the server gets interrupted.
-         *         throws IOException if the socket cannot be bound.
+         * The handler adapter to use.
+         */
+        private
+        /**
+         * {@inheritDoc}
          */
         @Override
         public ChannelFuture launchServer(final int port) throws InterruptedException, IOException
