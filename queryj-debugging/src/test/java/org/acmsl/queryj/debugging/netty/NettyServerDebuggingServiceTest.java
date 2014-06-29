@@ -210,6 +210,7 @@ public class NettyServerDebuggingServiceTest
 
         Assert.assertTrue(future.isDone());
 
+        Assert.assertTrue();
         /*
         while (!handler.m__bReloadCalled)
         {
