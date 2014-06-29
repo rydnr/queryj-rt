@@ -224,7 +224,7 @@ public class NettyServerDebuggingServiceTest
                                     }
                                     finally
                                     {
-
+                                        buffer.release();
                                     }
                                 }
                             });
