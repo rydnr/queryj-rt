@@ -190,6 +190,7 @@ public class NettyServerDebuggingServiceTest
      * @param host the host.
      * @param port the port.
      * @param msg the text to send.
+     * @param workerGroup the {@link NioEventLoopGroup}
      */
     @NotNull
     protected ChannelFuture sendTextToServer(
