@@ -207,8 +207,6 @@ public class NettyServerDebuggingServiceTest
                             {
                                 /**
                                  * {@inheritDoc}
-                                 * @param ctx
-                                 * @param buf
                                  */
                                 @Override
                                 public void channelRead(
