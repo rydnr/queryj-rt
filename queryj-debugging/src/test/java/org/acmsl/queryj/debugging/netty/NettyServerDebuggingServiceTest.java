@@ -184,7 +184,7 @@ public class NettyServerDebuggingServiceTest
         EasyMock.verify(template.template);
     }
 
-    protected void sendTextToServer(final int port, final String msg)
+    protected void sendTextToServer(final String host, final int port, final String msg)
     {
         EventLoopGroup workerGroup = new NioEventLoopGroup();
 
