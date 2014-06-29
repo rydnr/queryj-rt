@@ -38,6 +38,7 @@ package org.acmsl.queryj.debugging.netty;
 /*
  * Importing JetBrains annotations.
  */
+import io.netty.bootstrap.Bootstrap;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
