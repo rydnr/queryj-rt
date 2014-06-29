@@ -200,8 +200,6 @@ public class NettyServerDebuggingServiceTest
         @NotNull final String msg,
         @NotNull final EventLoopGroup workerGroup)
     {
-        @NotNull final EventLoopGroup workerGroup = new NioEventLoopGroup();
-
         ChannelFuture result = null;
 
         try
