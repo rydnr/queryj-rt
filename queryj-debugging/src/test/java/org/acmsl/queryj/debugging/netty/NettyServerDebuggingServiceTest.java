@@ -178,7 +178,7 @@ public class NettyServerDebuggingServiceTest
         EasyMock.verify(template.template);
     }
 
-    protected void clientSe
+    protected void sendText
     /**
      * Checks the reload command gets received successfully.
      */
