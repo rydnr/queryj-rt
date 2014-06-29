@@ -76,6 +76,7 @@ import java.io.DataInputStream;
 import java.io.DataOutput;
 import java.io.DataOutputStream;
 import java.io.File;
+import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.net.SocketAddress;
@@ -220,7 +221,19 @@ public class NettyServerDebuggingServiceTest
     public static class MyNettyServerDebuggingService
         extends NettyServerDebuggingService
     {
-
+        /**
+         * Launches the server.
+         *
+         * @param port the port.
+         * @return the {@link io.netty.channel.ChannelFuture}.
+         *         throws InterruptedException if the server gets interrupted.
+         *         throws IOException if the socket cannot be bound.
+         */
+        @Override
+        public ChannelFuture launchServer(final int port) throws InterruptedException, IOException
+        {
+            return super.launchServer(port);
+        }
     }
     /**
      * A testable context handler adapter.
