@@ -252,8 +252,7 @@ public class NettyServerDebuggingServiceTest
         public String toString()
         {
             return
-                  "{ \"handler\": " + m__strCommand + '"'
-                + ", \"reloadCalled\": " + m__bReloadCalled
+                  "{ \"handler\": " + m__Handler + '"'
                 + ", \"class\": \"" + MyNettyServerDebuggingService.class.getSimpleName() + '"'
                 + ", \"package\": \"" + MyNettyServerDebuggingService.class.getPackage().getName() + "\" }";
         }
