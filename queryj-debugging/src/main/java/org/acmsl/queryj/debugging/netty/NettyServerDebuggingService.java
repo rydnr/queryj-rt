@@ -245,7 +245,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     /**
      * Launches the server.
      * @param port the port.
-     * @param handler the {@link ChannelHandlerAdapter hanl}
+     * @param handler the {@link ChannelHandlerAdapter handler} to
      * @return the {@link ChannelFuture}.
      * throws InterruptedException if the server gets interrupted.
      * throws IOException if the socket cannot be bound.
