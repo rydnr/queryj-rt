@@ -205,6 +205,11 @@ public class NettyServerDebuggingServiceTest
                         ch.pipeline().addLast(
                             new ChannelHandlerAdapter()
                             {
+                                /**
+                                 * {@inheritDoc}
+                                 * @param ctx
+                                 * @param buf
+                                 */
                                 @Override
                                 public void channelRead(
                                     @NotNull final ChannelHandlerContext ctx, @NotNull final Object buf)
