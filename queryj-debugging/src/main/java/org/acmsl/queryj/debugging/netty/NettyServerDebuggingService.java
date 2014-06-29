@@ -281,7 +281,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
                     }
                 })
                 .option(ChannelOption.SO_BACKLOG, 128),          // (5)
-                .option({@link ChannelOption}.CONNECT_TIMEOUT_MILLIS, 10000);</b>
+                .option({@link ChannelOption}.CONNECT_TIMEOUT_MILLIS, 10000)
                 .childOption(ChannelOption.SO_KEEPALIVE, true); // (6)
 
             // Bind and start to accept incoming connections.
