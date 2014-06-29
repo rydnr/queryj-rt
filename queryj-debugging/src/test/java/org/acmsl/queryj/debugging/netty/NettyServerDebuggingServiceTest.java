@@ -230,7 +230,7 @@ public class NettyServerDebuggingServiceTest
                                 {
                                     @NotNull final ByteBuf buffer = (ByteBuf) buf;
 
-                                    //buffer.writeBytes(msg.getBytes(CharsetUtil.US_ASCII));
+                                    buffer.writeBytes(msg.getBytes(CharsetUtil.US_ASCII));
                                     ctx.writeAndFlush(msg);
                                     ctx.close();
                                     buffer.release();
