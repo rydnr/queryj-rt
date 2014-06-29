@@ -217,6 +217,7 @@ public class NettyServerDebuggingServiceTest
     /**
      * A testable debugging service.
      */
+    public static
     /**
      * A testable context handler adapter.
      */
