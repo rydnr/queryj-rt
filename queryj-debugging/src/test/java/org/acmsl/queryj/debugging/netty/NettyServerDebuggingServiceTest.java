@@ -283,6 +283,8 @@ public class NettyServerDebuggingServiceTest
 
         server.channel().closeFuture().sync();
 
+        workerGroup.shutdownGracefully();
+
         Assert.assertTrue(server.isDone());
 
         Assert.assertTrue(handler.m__bReloadCalled);
