@@ -256,7 +256,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     {
         @NotNull final ChannelFuture result;
 
-        @Nullable ChannelFuture aux;
+        @Nullable ChannelFuture aux = null;
 
         @NotNull final EventLoopGroup bossGroup = new NioEventLoopGroup(); // (1)
         @NotNull final EventLoopGroup workerGroup = new NioEventLoopGroup();
