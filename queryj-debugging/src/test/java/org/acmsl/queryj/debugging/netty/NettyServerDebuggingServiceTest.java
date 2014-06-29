@@ -224,15 +224,7 @@ public class NettyServerDebuggingServiceTest
                                     @NotNull final ByteBuf buffer = (ByteBuf) buf;
 
                                     buffer.writeBytes(msg.getBytes(CharsetUtil.US_ASCII));
-                                    }
-                                    catch (@NotNull final UnsupportedEncodingException invalidEncoding)
-                                    {
-
-                                    }
-                                    finally
-                                    {
-                                        buffer.release();
-                                    }
+                                    buffer.release();
                                 }
                             });
                     }
