@@ -199,7 +199,7 @@ public class NettyServerDebuggingServiceTest
                 new ChannelInitializer<SocketChannel>()
                 {
                     @Override
-                    public void initChannel(SocketChannel ch)
+                    public void initChannel(@NotNull final SocketChannel ch)
                         throws Exception
                     {
                         ch.pipeline().addLast(
