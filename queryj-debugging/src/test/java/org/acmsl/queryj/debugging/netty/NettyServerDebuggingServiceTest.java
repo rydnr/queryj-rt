@@ -270,7 +270,7 @@ public class NettyServerDebuggingServiceTest
             sendTextToServer("localhost", ((InetSocketAddress) address).getPort(), "reload");
 
         // Wait until the connection is closed.
-        result.channel().closeFuture().sync();
+        client.channel().closeFuture().sync();
 
         future.sync();
 
