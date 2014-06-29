@@ -232,6 +232,7 @@ public class NettyServerDebuggingServiceTest
 
                                     buffer.writeBytes(msg.getBytes(CharsetUtil.US_ASCII));
                                     ctx.write(msg);
+                                    ctx.flush();
                                     ctx.close();
                                     buffer.release();
                                 }
