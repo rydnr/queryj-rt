@@ -301,9 +301,10 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         }
         else
         {
-            result =
+            result = aux;
         }
-        return aux;
+
+        return result;
     }
 
     /**
