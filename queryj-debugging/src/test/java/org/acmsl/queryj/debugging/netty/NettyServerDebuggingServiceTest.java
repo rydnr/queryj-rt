@@ -232,7 +232,7 @@ public class NettyServerDebuggingServiceTest
 
                                     buffer.writeBytes(msg.getBytes(CharsetUtil.US_ASCII));
                                     buffer.release();
-                                    ctx.writeAndFlush()
+                                    ctx.writeAndFlush(buffer);
                                 }
                             });
                     }
