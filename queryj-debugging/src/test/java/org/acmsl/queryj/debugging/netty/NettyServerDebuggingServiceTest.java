@@ -267,12 +267,6 @@ public class NettyServerDebuggingServiceTest
 //        future.await();
 
         sendTextToServer("localhost", ((InetSocketAddress) address).getPort(), "reload");
-        @NotNull final Socket socket = new Socket(NetUtil.LOCALHOST, ((InetSocketAddress) address).getPort());
-
-        @NotNull final DataOutput out = new DataOutputStream(socket.getOutputStream());
-        @NotNull final byte[] buf = "reload".getBytes(CharsetUtil.US_ASCII);
-        out.write(buf);
-        socket.close();
 
         future.sync();
 
