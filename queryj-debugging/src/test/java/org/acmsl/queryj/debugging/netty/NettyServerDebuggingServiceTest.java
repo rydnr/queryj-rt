@@ -286,6 +286,7 @@ public class NettyServerDebuggingServiceTest
         clientGroup.shutdownGracefully();
 
         Assert.assertTrue(server.isDone());
+        Assert.assertTrue(server.isDone());
 
         Assert.assertTrue(handler.m__bReloadCalled);
 
