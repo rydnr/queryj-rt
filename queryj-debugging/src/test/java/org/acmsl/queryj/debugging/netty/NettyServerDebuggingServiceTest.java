@@ -634,7 +634,7 @@ public class NettyServerDebuggingServiceTest
         @Override
         public void channelRead(final ChannelHandlerContext ctx, final Object msg) throws Exception
         {
-            System.out.println("Client received: " + )
+            System.out.println("Client received: " + msg);
         }
 
         /**
