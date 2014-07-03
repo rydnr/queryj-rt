@@ -584,8 +584,6 @@ public class NettyServerDebuggingServiceTest
          */
         public NettyClient(@NotNull final String host, final int port, @NotNull final String msg)
         {
-            immutableSetHost(host);
-            immutableSetPort(port);
             immutableSetMessage(msg);
         }
 
