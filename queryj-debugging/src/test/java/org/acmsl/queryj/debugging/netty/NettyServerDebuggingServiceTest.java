@@ -194,8 +194,7 @@ public class NettyServerDebuggingServiceTest
      * @param msg the text to send.
      */
     protected void sendTextToServer(
-        @NotNull final String host,
-        final int port,
+        @NotNull final String host,final int port,
         @NotNull final String msg)
       throws Exception
     {
