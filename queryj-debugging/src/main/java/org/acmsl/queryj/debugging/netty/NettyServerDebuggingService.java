@@ -353,8 +353,9 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     @Override
     public String toString()
     {
-        return "NettyServerDebuggingService{" +
-               "m__ChannelFuture=" + m__ChannelFuture +
+        return
+            "{ \"class\": \"" + NettyServerDebuggingService.class.getSimpleName() + '"'
+            + """m__ChannelFuture=" + m__ChannelFuture +
                ", m__ServerBootstrap=" + m__ServerBootstrap +
                ", m__EventLoopGroup=" + m__EventLoopGroup +
                '}';
