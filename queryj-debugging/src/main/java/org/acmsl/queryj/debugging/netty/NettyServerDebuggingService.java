@@ -359,6 +359,6 @@ public class NettyServerDebuggingService<C extends TemplateContext>
             + ", \"serverBootstrap\": \"" + m__ServerBootstrap.hashCode() + '"'
             + ", \"eventLoopGroup\": \"" + m__EventLoopGroup.hashCode() + '"'
             + ", \"class\": \"" + NettyServerDebuggingService.class.getSimpleName() + '"'
-            + ", \"package\": \"" + NettyServerDebuggingService.class.getSimpleName() + '"'
+            + ", \"package\": \"" + NettyServerDebuggingService.class.getPackage() + '"'
     }
 }
