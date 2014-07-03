@@ -355,7 +355,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     {
         return
             "{ \"class\": \"" + NettyServerDebuggingService.class.getSimpleName() + '"'
-            + ", \"channelFuture\": \"" + m__ChannelFuture +
+            + ", \"channelFuture\": \"" + m__ChannelFuture.hashCode() +
                ", m__ServerBootstrap=" + m__ServerBootstrap +
                ", m__EventLoopGroup=" + m__EventLoopGroup +
                '}';
