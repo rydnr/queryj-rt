@@ -203,6 +203,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         {
             launchServer();
         }
+        catch ()
     }
 
     /**
