@@ -491,32 +491,32 @@ public class NettyServerDebuggingServiceTest
 
 
         /**
-         * Specifies the host.
-         * @param host the host.
+         * Specifies the message.
+         * @param message the message.
          */
-        protected final void immutableSetHost(@NotNull final String host)
+        protected final void immutableSetmessage(@NotNull final String message)
         {
-            this.m__strHost = host;
+            this.m__strmessage = message;
         }
 
         /**
-         * Specifies the host.
-         * @param host the host.
+         * Specifies the message.
+         * @param message the message.
          */
         @SuppressWarnings("unused")
-        protected void setHost(@NotNull final String host)
+        protected void setmessage(@NotNull final String message)
         {
-            immutableSetHost(host);
+            immutableSetmessage(message);
         }
 
         /**
-         * Retrieves the host.
-         * @return the host.
+         * Retrieves the message.
+         * @return the message.
          */
         @NotNull
-        public String getHost()
+        public String getmessage()
         {
-            return m__strHost;
+            return m__strmessage;
         }
     }
 }
