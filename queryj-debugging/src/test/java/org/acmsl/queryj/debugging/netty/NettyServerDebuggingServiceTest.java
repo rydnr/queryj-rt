@@ -572,6 +572,11 @@ public class NettyServerDebuggingServiceTest
         extends SimpleChannelInboundHandler<ByteBuf>
     {
         /**
+         * The message.
+         */
+        private String m__strMessage;
+
+        /**
          * {@inheritDoc}
          */
         @Override
