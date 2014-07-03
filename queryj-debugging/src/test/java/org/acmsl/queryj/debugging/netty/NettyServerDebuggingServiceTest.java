@@ -559,7 +559,7 @@ public class NettyServerDebuggingServiceTest
         /**
          * Connects to the server.
          */
-        public void connect()
+        protected void connect(@NotNull final String host, @NotNull final int port, @NotNull final String message)
             throws Exception
         {
             @NotNull final EventLoopGroup group = new NioEventLoopGroup();
