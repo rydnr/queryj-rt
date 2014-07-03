@@ -432,6 +432,7 @@ public class NettyServerDebuggingServiceTest
      */
     public static class NettyClient
     {
-        private final String
+        private String m__strHost;
+        private int
     }
 }
