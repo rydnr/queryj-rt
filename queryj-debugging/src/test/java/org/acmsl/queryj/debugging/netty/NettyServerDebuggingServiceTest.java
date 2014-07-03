@@ -646,14 +646,7 @@ public class NettyServerDebuggingServiceTest
             //To change body of implemented methods use File | Settings | File Templates.
         }
 
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public void messageReceived(final ChannelHandlerContext ctx, final Object msg) throws Exception
-        {
-            System.out.println("Client received: " + msg);
-        }
+//            System.out.println("Client received: " + msg);
 
         /**
          * {@inheritDoc}
