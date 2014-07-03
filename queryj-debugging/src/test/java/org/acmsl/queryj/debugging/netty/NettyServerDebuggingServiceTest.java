@@ -576,10 +576,11 @@ public class NettyServerDebuggingServiceTest
                 .handler(new ChannelInitializer<SocketChannel>()
                 {
                     @Override
-                    public void initChannel(SocketChannel ch)
-throws Exception {
-ch.pipeline().addLast(
-new EchoClientHandler());
+                    public void initChannel(@NotNull final SocketChannel ch)
+                        throws Exception
+                    {
+                        ch.pipeline().addLast(
+                            new NettyClientHandler());
 }
 });
 ChannelFuture f = b.connect().sync();
