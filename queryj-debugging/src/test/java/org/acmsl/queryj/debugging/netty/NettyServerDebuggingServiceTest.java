@@ -218,7 +218,7 @@ public class NettyServerDebuggingServiceTest
 
         @NotNull final ChannelFuture server = instance.launchServer();
 
-        sendTextToServer("localhost", 7777, "reload");
+        sendTextToServer("localhost", port, "reload");
 
         // Wait until the connections are closed.
         Assert.assertTrue(server.isDone());
