@@ -514,7 +514,7 @@ public class NettyServerDebuggingServiceTest
          * @return the message.
          */
         @NotNull
-        public String getmessage()
+        public String getMessage()
         {
             return m__strmessage;
         }
