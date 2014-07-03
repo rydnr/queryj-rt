@@ -489,7 +489,6 @@ public class NettyServerDebuggingServiceTest
             return m__strHost;
         }
 
-
         /**
          * Specifies the port.
          * @param port the port.
