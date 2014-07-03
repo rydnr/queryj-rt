@@ -476,7 +476,17 @@ public class NettyServerDebuggingServiceTest
         @SuppressWarnings("unused")
         protected void setHost(@NotNull final String host)
         {
-            this.m__strHost = host;
+            immutableSetHost(host);
+        }
+
+        /**
+         * Retrieves the host.
+         * @return the host.
+         */
+        @NotNull
+        public String getHost()
+        {
+            return m__strHost;
         }
     }
 }
