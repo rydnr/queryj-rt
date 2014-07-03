@@ -640,8 +640,6 @@ public class NettyServerDebuggingServiceTest
             System.out.println("Client received: " + msg);
         }
 
-//            System.out.println("Client received: " + msg);
-
         /**
          * {@inheritDoc}
          */
