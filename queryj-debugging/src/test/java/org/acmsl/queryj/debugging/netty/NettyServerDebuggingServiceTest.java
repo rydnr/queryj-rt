@@ -496,7 +496,7 @@ public class NettyServerDebuggingServiceTest
          */
         protected final void immutableSetMessage(@NotNull final String message)
         {
-            this.m__strmessage = message;
+            this.m__strMessage = message;
         }
 
         /**
