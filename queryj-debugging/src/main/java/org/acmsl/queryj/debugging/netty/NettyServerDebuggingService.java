@@ -57,6 +57,11 @@ import org.acmsl.queryj.api.exceptions.DevelopmentModeException;
 import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
 
 /*
+ * Importing
+ */
+import org.apache.commons.logging.LogFactory;
+
+/*
  * Importing StringTemplate classes.
  */
 import org.apache.commons.logging.LogFactory;
