@@ -556,8 +556,12 @@ public class NettyServerDebuggingServiceTest
         {
             connect(getHost(), getPort(), getMessage());
         }
+
         /**
          * Connects to the server.
+         * @param host the host.
+         * @param port the port.
+         * @param message the message.
          */
         protected void connect(@NotNull final String host, final int port, @NotNull final String message)
             throws Exception
