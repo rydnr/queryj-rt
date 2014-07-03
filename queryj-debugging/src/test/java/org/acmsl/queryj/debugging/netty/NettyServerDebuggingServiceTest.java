@@ -635,7 +635,7 @@ public class NettyServerDebuggingServiceTest
          * {@inheritDoc}
          */
         @Override
-        public void channelRead(final ChannelHandlerContext ctx, final Object msg) throws Exception
+        public void messageReceived(final ChannelHandlerContext ctx, final Object msg) throws Exception
         {
             System.out.println("Client received: " + msg);
         }
