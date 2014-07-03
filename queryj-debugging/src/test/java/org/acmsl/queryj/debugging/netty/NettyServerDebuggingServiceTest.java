@@ -432,9 +432,19 @@ public class NettyServerDebuggingServiceTest
      */
     public static class NettyClient
     {
-        /*
+        /**
+         * The host.
+         */
         private String m__strHost;
+
+        /**
+         * The port.
+         */
         private int m__iPort;
+
+        /**
+         * The message.
+         */
         private String m__strMessage;
 
         /**
