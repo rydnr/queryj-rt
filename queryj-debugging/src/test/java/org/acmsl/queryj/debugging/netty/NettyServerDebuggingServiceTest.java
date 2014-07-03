@@ -632,13 +632,7 @@ public class NettyServerDebuggingServiceTest
         }
 
         /**
-         * Is called for each message of type {@link I}.
-         *
-         * @param ctx the {@link io.netty.channel.ChannelHandlerContext} which this {@link io.netty.channel
-         * .SimpleChannelInboundHandler}
-         *            belongs to
-         * @param msg the message to handle
-         * @throws Exception is thrown if an error occurred
+         * {@inheritDoc}
          */
         @Override
         protected void messageReceived(final ChannelHandlerContext ctx, final ByteBuf msg) throws Exception
