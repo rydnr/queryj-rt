@@ -426,4 +426,8 @@ public class NettyServerDebuggingServiceTest
                 + ", \"package\": \"" + MyChannelListener.class.getPackage().getName() + "\" }";
         }
     }
+
+    /**
+     *
+     */
 }
