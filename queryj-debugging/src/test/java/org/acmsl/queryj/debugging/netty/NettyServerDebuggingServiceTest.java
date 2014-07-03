@@ -637,8 +637,7 @@ public class NettyServerDebuggingServiceTest
         @Override
         protected void messageReceived(final ChannelHandlerContext ctx, final ByteBuf msg) throws Exception
         {
-//            System.out.println("Client received: " + msg);
-            //To change body of implemented methods use File | Settings | File Templates.
+            System.out.println("Client received: " + msg);
         }
 
 //            System.out.println("Client received: " + msg);
