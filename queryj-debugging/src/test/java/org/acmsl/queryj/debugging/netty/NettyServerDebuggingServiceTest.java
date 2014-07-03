@@ -220,11 +220,7 @@ public class NettyServerDebuggingServiceTest
 
 //        future.addListener(new MyChannelListener(handler));
 
-        @NotNull final SocketAddress address = server.channel().localAddress();
-
 //        future.await();
-
-        @NotNull final EventLoopGroup clientGroup = new NioEventLoopGroup();
 
         sendTextToServer("localhost", 7777, "reload");
 
