@@ -199,8 +199,7 @@ public class NettyServerDebuggingServiceTest
     protected void sendTextToServer(
         @NotNull final String host,
         final int port,
-        @NotNull final String msg,
-        @NotNull final EventLoopGroup workerGroup)
+        @NotNull final String msg)
     {
         new NettyClient(host, port, msg).connect();
     }
