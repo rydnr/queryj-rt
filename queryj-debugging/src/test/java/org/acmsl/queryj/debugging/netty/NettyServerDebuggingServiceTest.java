@@ -585,9 +585,11 @@ public class NettyServerDebuggingServiceTest
                 });
                 @NotNull final ChannelFuture f = b.connect().sync();
                 f.channel().closeFuture().sync();
-        } finally {
-group.shutdownGracefully().sync();
-}
+            }
+            finally
+            {
+                group.shutdownGracefully().sync();
+            }
         }
 
         /**
