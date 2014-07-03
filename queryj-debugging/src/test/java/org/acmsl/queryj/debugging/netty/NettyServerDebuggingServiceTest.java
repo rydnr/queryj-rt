@@ -582,7 +582,7 @@ public class NettyServerDebuggingServiceTest
          * @param port the port.
          * @param msg the message.
          */
-        public NettyClient(@NotNull final String host, final int port, @NotNull final String msg)
+        public NettyClientHandler(@NotNull final String host, final int port, @NotNull final String msg)
         {
             immutableSetMessage(msg);
         }
