@@ -552,7 +552,7 @@ public class NettyServerDebuggingServiceTest
          * Connects to the server.
          */
         public void connect()
-                                   throws Exception {
+        throws Exception {
 EventLoopGroup group = new NioEventLoopGroup();
 try {
 Bootstrap b = new Bootstrap();
