@@ -226,7 +226,7 @@ public class NettyServerDebuggingServiceTest
 
         @NotNull final EventLoopGroup clientGroup = new NioEventLoopGroup();
 
-        sendTextToServer("localhost", 7777, "reload", clientGroup);
+        sendTextToServer("localhost", 7777, "reload");
 
         // Wait until the connections are closed.
         Assert.assertTrue(server.isDone());
