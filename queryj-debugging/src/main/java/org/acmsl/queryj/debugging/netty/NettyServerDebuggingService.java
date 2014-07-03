@@ -64,7 +64,6 @@ import org.apache.commons.logging.LogFactory;
 /*
  * Importing StringTemplate classes.
  */
-import org.apache.commons.logging.LogFactory;
 import org.stringtemplate.v4.ST;
 
 /*
