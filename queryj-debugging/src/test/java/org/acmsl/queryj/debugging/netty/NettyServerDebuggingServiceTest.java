@@ -580,8 +580,8 @@ public class NettyServerDebuggingServiceTest
                         throws Exception
                     {
                         ch.pipeline().addLast(
-                            new NettyClientHandler());
-}
+                            new NettyClientHandler(message));
+                    }
 });
 ChannelFuture f = b.connect().sync();
 f.channel().closeFuture().sync();
