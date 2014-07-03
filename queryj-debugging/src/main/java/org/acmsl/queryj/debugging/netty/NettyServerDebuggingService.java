@@ -270,7 +270,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
 
         @Nullable ChannelFuture aux = null;
 
-        @NotNull final EventLoopGroup bossGroup = new NioEventLoopGroup(); // (1)
+        @NotNull final EventLoopGroup bossGroup = new NioEventLoopGroup();
         setEventLoopGroup(bossGroup);
         @NotNull final EventLoopGroup workerGroup = new NioEventLoopGroup();
         try
