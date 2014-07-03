@@ -432,7 +432,7 @@ public class NettyServerDebuggingServiceTest
     /**
      * A test client.
      */
-    public static class NettyClientHandler
+    public static class NettyClient
     {
         /**
          * The host.
@@ -634,8 +634,8 @@ public class NettyServerDebuggingServiceTest
         {
             return
                   "{ \"message\": \"" + m__strMessage + '"'
-                + ", \"class\": \"" + org.acmsl.queryj.debugging.netty.NettyServerDebuggingServiceTest.NettyClientHandler.class.getSimpleName() + '"'
-                + ", \"package\": \"" + NettyClient.class.getPackage() + "\" }";
+                + ", \"class\": \"" + NettyClientHandler.class.getSimpleName() + '"'
+                + ", \"package\": \"" + NettyClientHandler.class.getPackage() + "\" }";
         }
     }
 }
