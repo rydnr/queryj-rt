@@ -228,9 +228,7 @@ public class NettyServerDebuggingServiceTest
 
         @NotNull final EventLoopGroup clientGroup = new NioEventLoopGroup();
 
-        @NotNull final ChannelFuture client =
-//            sendTextToServer("localhost", ((InetSocketAddress) address).getPort(), "reload", clientGroup);
-            sendTextToServer("localhost", 7777, "reload", clientGroup);
+        sendTextToServer("localhost", 7777, "reload", clientGroup);
 
         // Wait until the connections are closed.
         client.channel().closeFuture().sync();
