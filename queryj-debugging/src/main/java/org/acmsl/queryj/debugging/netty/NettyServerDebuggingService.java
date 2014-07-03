@@ -354,10 +354,10 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     public String toString()
     {
         return
-            "{ \"class\": \"" + NettyServerDebuggingService.class.getSimpleName() + '"'
+            "{
             + ", \"channelFuture\": \"" + m__ChannelFuture.hashCode() + '"'
             + ", \"serverBootstrap\": \"" + m__ServerBootstrap.hashCode() + '"'
             + ", \"eventLoopGroup\": \"" + m__EventLoopGroup.hashCode() + '"'
-            + ", \"class\": \""'}';
+            + ", \"class\": \"" + Nett'}';
     }
 }
