@@ -432,8 +432,10 @@ public class NettyServerDebuggingServiceTest
      */
     public static class NettyClient
     {
+        /*
         private String m__strHost;
         private int m__iPort;
+        private String m__strMessage;
 
         /**
          * Creates a new instance.
