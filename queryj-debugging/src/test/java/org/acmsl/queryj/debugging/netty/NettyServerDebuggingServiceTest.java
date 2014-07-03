@@ -554,7 +554,7 @@ public class NettyServerDebuggingServiceTest
         public String toString()
         {
             return
-                "{ \"host\": \"" + m__strHost + '"'
+                  "{ \"host\": \"" + m__strHost + '"'
                 + ", \"port\": " + m__iPort
                 + ", \"message\": \"" + m__strMessage + '"'
                 + ", \"class\": \"" + NettyClient.class.getSimpleName() + '"'
