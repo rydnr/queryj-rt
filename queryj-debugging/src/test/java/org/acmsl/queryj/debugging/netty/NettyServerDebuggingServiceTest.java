@@ -192,7 +192,6 @@ public class NettyServerDebuggingServiceTest
      * @param host the host.
      * @param port the port.
      * @param msg the text to send.
-     * @return the future to manage when the client has sent the text.
      */
     protected void sendTextToServer(
         @NotNull final String host,
