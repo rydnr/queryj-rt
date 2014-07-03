@@ -557,7 +557,8 @@ public class NettyServerDebuggingServiceTest
                 "{ \"host\": \"" + m__strHost + '"'
                 + ", \"port\": " + m__iPort
                 + ", \"message\": \"" + m__strMessage + '"'
-                + ", \"class\": \""
+                + ", \"class\": \"" + NettyClient.class.getSimpleName() + '"'
+                + ", \"package\": \"" + NettyClient.class.getPackage() + "\" }";
         }
     }
 }
