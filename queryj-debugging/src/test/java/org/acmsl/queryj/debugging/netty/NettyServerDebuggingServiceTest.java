@@ -555,6 +555,12 @@ public class NettyServerDebuggingServiceTest
             throws Exception
         {
         }
+        /**
+         * Connects to the server.
+         */
+        public void connect()
+            throws Exception
+        {
             @NotNull final EventLoopGroup group = new NioEventLoopGroup();
             try
             {
