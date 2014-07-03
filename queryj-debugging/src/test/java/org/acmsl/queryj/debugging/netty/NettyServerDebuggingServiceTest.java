@@ -491,6 +491,15 @@ public class NettyServerDebuggingServiceTest
 
 
         /**
+         * Specifies the port.
+         * @param port the port.
+         */
+        protected final void immutableSetPort(final int port)
+        {
+            this.m__iPort = port;
+        }
+
+        /**
          * Specifies the message.
          * @param message the message.
          */
