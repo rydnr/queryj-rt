@@ -563,5 +563,7 @@ public class NettyServerDebuggingServiceTest
         }
     }
 
-
+    /**
+     * The netty client.
+     */
 }
