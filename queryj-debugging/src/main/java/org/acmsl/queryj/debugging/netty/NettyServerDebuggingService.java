@@ -199,7 +199,10 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     public void debugTemplate(@NotNull final ST template, @NotNull final C context, @NotNull final String output)
         throws DevelopmentModeException
     {
-        launchServer();
+        try
+        {
+            launchServer();
+        }
     }
 
     /**
