@@ -207,6 +207,10 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         {
 
         }
+        catch (@NotNull final IOException ioException)
+        {
+
+        }
     }
 
     /**
