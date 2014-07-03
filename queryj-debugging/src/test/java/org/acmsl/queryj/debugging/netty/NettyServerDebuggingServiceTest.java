@@ -634,7 +634,7 @@ public class NettyServerDebuggingServiceTest
         {
             return
                   "{ \"message\": \"" + m__strMessage + '"'
-                + ", \"class\": \"" + NettyClient.class.getSimpleName() + '"'
+                + ", \"class\": \"" + org.acmsl.queryj.debugging.netty.NettyServerDebuggingServiceTest.NettyClientHandler.class.getSimpleName() + '"'
                 + ", \"package\": \"" + NettyClient.class.getPackage() + "\" }";
         }
     }
