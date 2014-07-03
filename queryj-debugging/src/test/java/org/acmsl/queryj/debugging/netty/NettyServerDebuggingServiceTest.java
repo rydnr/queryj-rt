@@ -494,7 +494,7 @@ public class NettyServerDebuggingServiceTest
          * Specifies the message.
          * @param message the message.
          */
-        protected final void immutableSetmessage(@NotNull final String message)
+        protected final void immutableSetMessage(@NotNull final String message)
         {
             this.m__strmessage = message;
         }
