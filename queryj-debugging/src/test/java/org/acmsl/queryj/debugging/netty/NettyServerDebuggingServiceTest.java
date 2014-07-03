@@ -624,7 +624,7 @@ public class NettyServerDebuggingServiceTest
          * Creates a new instance.
          * @param msg the message.
          */
-        public NettyClientHandler(@NotNull final String host, final int port, @NotNull final String msg)
+        public NettyClientHandler(@NotNull final String msg)
         {
             immutableSetMessage(msg);
         }
