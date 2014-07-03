@@ -428,6 +428,7 @@ public class NettyServerDebuggingServiceTest
     }
 
     /**
-     *
+     * A test client.
      */
+    public static final
 }
