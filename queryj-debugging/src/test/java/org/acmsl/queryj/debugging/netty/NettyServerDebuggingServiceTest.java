@@ -211,7 +211,7 @@ public class NettyServerDebuggingServiceTest
 
         final int port = 7777;
 
-        System.setProperty(MyNettyServerDebuggingService.QUERYJ_TEMPLATE_DEBUG_PORT, String.valueOf(7777));
+        System.setProperty(MyNettyServerDebuggingService.QUERYJ_TEMPLATE_DEBUG_PORT, String.valueOf(port));
 
         @NotNull final MyNettyServerDebuggingService instance =
             new MyNettyServerDebuggingService(handler);
