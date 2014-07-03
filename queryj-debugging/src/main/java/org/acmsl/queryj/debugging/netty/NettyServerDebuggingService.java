@@ -358,6 +358,6 @@ public class NettyServerDebuggingService<C extends TemplateContext>
             + ", \"channelFuture\": \"" + m__ChannelFuture.hashCode() + '"'
             + ", \"serverBootstrap\": \"" + m__ServerBootstrap.hashCode() + '"'
             + ", \"eventLoopGroup\": \"" + m__EventLoopGroup.hashCode() + '"'
-            + ", \"class\": \"\" + NettyServerDebuggingService.class.getSimpleName() + '"'
+            + ", \"class\": \"" + NettyServerDebuggingService.class.getSimpleName() + '"'
     }
 }
