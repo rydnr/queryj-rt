@@ -516,7 +516,7 @@ public class NettyServerDebuggingServiceTest
         @NotNull
         public String getMessage()
         {
-            return m__strmessage;
+            return m__strMessage;
         }
     }
 }
