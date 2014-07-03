@@ -209,6 +209,7 @@ public class NettyServerDebuggingServiceTest
         @NotNull final MyNettyServerChannelHandler handler =
             new MyNettyServerChannelHandler();
 
+        System.setProperty()
         @NotNull final MyNettyServerDebuggingService instance =
             new MyNettyServerDebuggingService(handler);
 
