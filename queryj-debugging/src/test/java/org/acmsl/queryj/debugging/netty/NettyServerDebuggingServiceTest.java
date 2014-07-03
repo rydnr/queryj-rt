@@ -431,5 +431,7 @@ public class NettyServerDebuggingServiceTest
      * A test client.
      */
     public static class NettyClient
-    {}
+    {
+        private final String
+    }
 }
