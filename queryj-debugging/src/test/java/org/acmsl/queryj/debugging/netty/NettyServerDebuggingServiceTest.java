@@ -504,7 +504,7 @@ public class NettyServerDebuggingServiceTest
          * @param message the message.
          */
         @SuppressWarnings("unused")
-        protected void setmessage(@NotNull final String message)
+        protected void setMessage(@NotNull final String message)
         {
             immutableSetmessage(message);
         }
