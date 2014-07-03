@@ -435,6 +435,11 @@ public class NettyServerDebuggingServiceTest
         private String m__strHost;
         private int m__iPort;
 
-        public NettyClient(@NotNull final String host, final int port, )
+        public NettyClient(@NotNull final String host, final int port, @NotNull final String msg)
+        {
+            immutableSetHost(host);
+            immutableSetPort(port);
+            immutableSetMessage()
+        }
     }
 }
