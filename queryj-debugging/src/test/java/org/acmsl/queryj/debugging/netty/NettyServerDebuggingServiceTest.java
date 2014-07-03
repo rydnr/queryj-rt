@@ -431,7 +431,7 @@ public class NettyServerDebuggingServiceTest
      * A test client.
      */
     public static class NettyClientHandler
-
+        SimpleChannelInboundHandler<ByteBuf>
     {
         /**
          * The host.
