@@ -631,6 +631,11 @@ public class NettyServerDebuggingServiceTest
             ctx.writeAndFlush(Unpooled.copiedBuffer(getMessage(), CharsetUtil.UTF_8));
         }
 
+        @Override
+        public void channelRead(final ChannelHandlerContext ctx, final Object msg) throws Exception
+        {
+            super.channelRead(ctx, msg);
+        }
 
         /**
          * {@inheritDoc}
