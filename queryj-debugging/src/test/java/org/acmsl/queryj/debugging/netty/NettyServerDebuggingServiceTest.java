@@ -633,7 +633,7 @@ public class NettyServerDebuggingServiceTest
         public String toString()
         {
             return
-                "{  \"message\": \"" + m__strMessage + '"'
+                  "{ \"message\": \"" + m__strMessage + '"'
                 + ", \"class\": \"" + NettyClient.class.getSimpleName() + '"'
                 + ", \"package\": \"" + NettyClient.class.getPackage() + "\" }";
         }
