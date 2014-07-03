@@ -571,6 +571,16 @@ public class NettyServerDebuggingServiceTest
     public static class NettyClientHandler
         extends SimpleChannelInboundHandler<ByteBuf>
     {
-
+        /**
+         * Calls {@link io.netty.channel.ChannelHandlerContext#fireChannelActive()} to forward
+         * to the next {@link io.netty.channel.ChannelHandler} in the {@link io.netty.channel.ChannelPipeline}.
+         * <p/>
+         * Sub-classes may override this method to change behavior.
+         */
+        @Override
+        public void channelActive(final ChannelHandlerContext ctx) throws Exception
+        {
+            super.channelActive(ctx);
+        }
     }
 }
