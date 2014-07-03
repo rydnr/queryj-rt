@@ -347,5 +347,13 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         group.shutdownGracefully().sync();
     }
 
-
+    @Override
+    public String toString()
+    {
+        return "NettyServerDebuggingService{" +
+               "m__ChannelFuture=" + m__ChannelFuture +
+               ", m__ServerBootstrap=" + m__ServerBootstrap +
+               ", m__EventLoopGroup=" + m__EventLoopGroup +
+               '}';
+    }
 }
