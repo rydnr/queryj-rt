@@ -202,7 +202,7 @@ public class NettyServerDebuggingServiceTest
         @NotNull final String msg,
         @NotNull final EventLoopGroup workerGroup)
     {
-        new
+        new NettyClient(host, port, msg).connect();
         ChannelFuture result = null;
 
         try
