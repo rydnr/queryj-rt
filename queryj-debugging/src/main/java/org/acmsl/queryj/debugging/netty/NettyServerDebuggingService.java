@@ -222,7 +222,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         }
         else
         {
-            t_iPort = 9999;
+            t_iPort = 0;
         }
 
         return launchServer(t_iPort);
