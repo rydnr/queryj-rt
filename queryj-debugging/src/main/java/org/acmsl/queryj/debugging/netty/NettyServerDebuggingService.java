@@ -203,7 +203,10 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         {
             launchServer();
         }
-        catch ()
+        catch (@NotNull final InterruptedException interruption)
+        {
+
+        }
     }
 
     /**
