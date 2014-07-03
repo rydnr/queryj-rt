@@ -430,7 +430,8 @@ public class NettyServerDebuggingServiceTest
     /**
      * A test client.
      */
-    public static class NettyClient
+    public static class NettyClientHandler
+
     {
         /**
          * The host.
