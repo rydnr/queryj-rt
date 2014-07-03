@@ -551,7 +551,11 @@ public class NettyServerDebuggingServiceTest
         /**
          * Connects to the server.
          */
-        public
+        public void connect()
+        {
+
+            new
+        }
         /**
          * {@inheritDoc}
          */
