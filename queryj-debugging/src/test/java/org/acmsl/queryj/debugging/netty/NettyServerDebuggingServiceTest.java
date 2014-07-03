@@ -231,10 +231,6 @@ public class NettyServerDebuggingServiceTest
         sendTextToServer("localhost", 7777, "reload", clientGroup);
 
         // Wait until the connections are closed.
-        client.channel().closeFuture().sync();
-        instance.stopServer();
-
-        Assert.assertTrue(client.isDone());
         Assert.assertTrue(server.isDone());
 
         clientGroup.shutdownGracefully();
