@@ -585,6 +585,36 @@ public class NettyServerDebuggingServiceTest
             immutableSetMessage(msg);
         }
 
+
+        /**
+         * Specifies the message.
+         * @param message the message.
+         */
+        protected final void immutableSetMessage(@NotNull final String message)
+        {
+            this.m__strMessage = message;
+        }
+
+        /**
+         * Specifies the message.
+         * @param message the message.
+         */
+        @SuppressWarnings("unused")
+        protected void setMessage(@NotNull final String message)
+        {
+            immutableSetMessage(message);
+        }
+
+        /**
+         * Retrieves the message.
+         * @return the message.
+         */
+        @NotNull
+        public String getMessage()
+        {
+            return m__strMessage;
+        }
+
         /**
          * {@inheritDoc}
          */
