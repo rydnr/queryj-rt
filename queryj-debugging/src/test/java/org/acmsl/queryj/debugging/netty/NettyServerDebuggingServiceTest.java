@@ -193,8 +193,7 @@ public class NettyServerDebuggingServiceTest
      * @param port the port.
      * @param msg the text to send.
      */
-    protected void sendTextToServer(
-        @NotNull final String host, final int port, @NotNull final String msg)
+    protected void sendTextToServer(@NotNull final String host, final int port, @NotNull final String msg)
       throws Exception
     {
         new NettyClient(host, port, msg).connect();
