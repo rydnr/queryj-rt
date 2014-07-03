@@ -198,7 +198,7 @@ public class NettyServerDebuggingServiceTest
         @NotNull final String host,
         final int port,
         @NotNull final String msg)
-        throws Exception
+      throws Exception
     {
         new NettyClient(host, port, msg).connect();
     }
