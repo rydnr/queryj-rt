@@ -506,7 +506,7 @@ public class NettyServerDebuggingServiceTest
         @SuppressWarnings("unused")
         protected void setMessage(@NotNull final String message)
         {
-            immutableSetmessage(message);
+            immutableSetMessage(message);
         }
 
         /**
