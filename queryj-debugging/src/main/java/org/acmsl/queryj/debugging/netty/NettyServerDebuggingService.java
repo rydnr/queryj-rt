@@ -209,7 +209,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         }
         catch (@NotNull final IOException ioException)
         {
-
+            throw new DevelopmentModeException(template.groupThatCreatedThisInstance);
         }
     }
 
