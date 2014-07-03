@@ -350,6 +350,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     /**
      * {@inheritDoc}
      */
+    @NotNull
     @Override
     public String toString()
     {
