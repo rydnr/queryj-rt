@@ -203,62 +203,6 @@ public class NettyServerDebuggingServiceTest
         @NotNull final EventLoopGroup workerGroup)
     {
         new NettyClient(host, port, msg).connect();
-        ChannelFuture result = null;
-
-        try
-        {
-            @NotNull final Bootstrap b = new Bootstrap(); // (1)
-            b.group(workerGroup); // (2)
-            b.channel(NioSocketChannel.class); // (3)
-            b.option(ChannelOption.SO_KEEPALIVE, true); // (4)
-            b.handler(
-                new ChannelInitializer<SocketChannel>()
-                {
-                    /**
-                     * {@inheritDoc}
-                     */
-                    @Override
-                    public void initChannel(@NotNull final SocketChannel ch)
-                        throws Exception
-                    {
-                        ch.pipeline().addLast(
-                            new ChannelHandlerAdapter()
-                            {
-                                /**
-                                 * {@inheritDoc}
-                                 */
-                                @Override
-                                public void channelRead(
-                                    @NotNull final ChannelHandlerContext ctx, @NotNull final Object buf)
-                                {
-                                    @NotNull final ByteBuf buffer = (ByteBuf) buf;
-
-                                    //buffer.writeBytes(msg.getBytes(CharsetUtil.US_ASCII));
-                                    ctx.write("reload");
-                                    ctx.flush();
-                                    ctx.close();
-                                    //buffer.release();
-                                    workerGroup.shutdownGracefully();
-
-                                }
-                            });
-                    }
-                });
-
-            // Start the client.
-            result = b.connect(host, port).sync(); // (5)
-        }
-        catch (@NotNull final InterruptedException interruptedException)
-        {
-
-        }
-        /*
-        finally
-        {
-            workerGroup.shutdownGracefully();
-        }*/
-
-        return result;
     }
 
     /**
