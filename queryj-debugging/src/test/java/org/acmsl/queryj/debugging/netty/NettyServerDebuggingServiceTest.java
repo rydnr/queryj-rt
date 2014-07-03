@@ -545,5 +545,18 @@ public class NettyServerDebuggingServiceTest
         {
             return m__strMessage;
         }
+
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        @NotNull
+        public String toString()
+        {
+            return
+                "{ \"host\": \"" + m__strHost + '"'
+                + ", \"port\": " + m__iPort
+                + ", \"message\": + "
+        }
     }
 }
