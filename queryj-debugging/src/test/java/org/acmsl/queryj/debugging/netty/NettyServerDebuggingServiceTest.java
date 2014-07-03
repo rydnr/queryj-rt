@@ -196,7 +196,7 @@ public class NettyServerDebuggingServiceTest
      * @return the future to manage when the client has sent the text.
      */
     @NotNull
-    protected ChannelFuture sendTextToServer(
+    protected void sendTextToServer(
         @NotNull final String host,
         final int port,
         @NotNull final String msg,
