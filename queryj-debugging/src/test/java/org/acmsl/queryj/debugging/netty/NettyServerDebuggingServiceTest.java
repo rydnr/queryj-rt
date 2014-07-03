@@ -566,4 +566,7 @@ public class NettyServerDebuggingServiceTest
     /**
      * The netty client.
      */
+    public static class NettyClientHandler
+        extends SimpleChannelInboundHandler<ByteBuf>
+
 }
