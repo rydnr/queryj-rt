@@ -623,5 +623,21 @@ public class NettyServerDebuggingServiceTest
         {
             ctx.writeAndFlush(Unpooled.copiedBuffer(getMessage()), CharsetUtil.UTF_8);
         }
+
+
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        @NotNull
+        public String toString()
+        {
+            return
+                "{ \"host\": \"" + m__strHost + '"'
+                + ", \"port\": " + m__iPort
+                + ", \"message\": \"" + m__strMessage + '"'
+                + ", \"class\": \"" + NettyClient.class.getSimpleName() + '"'
+                + ", \"package\": \"" + NettyClient.class.getPackage() + "\" }";
+        }
     }
 }
