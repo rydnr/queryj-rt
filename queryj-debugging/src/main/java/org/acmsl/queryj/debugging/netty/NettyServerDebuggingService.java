@@ -57,7 +57,7 @@ import org.acmsl.queryj.api.exceptions.DevelopmentModeException;
 import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
 
 /*
- * Importing
+ * Importing Apache Commons Logging classes.
  */
 import org.apache.commons.logging.LogFactory;
 
