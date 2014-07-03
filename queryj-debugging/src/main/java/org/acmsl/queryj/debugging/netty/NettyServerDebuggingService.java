@@ -205,7 +205,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         }
         catch (@NotNull final InterruptedException interruption)
         {
-            throw new DevelopmentModeException(template);
+            throw new DevelopmentModeException(template, );
         }
         catch (@NotNull final IOException ioException)
         {
