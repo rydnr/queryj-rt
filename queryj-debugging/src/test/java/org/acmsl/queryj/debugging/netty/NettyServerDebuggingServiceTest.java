@@ -433,6 +433,6 @@ public class NettyServerDebuggingServiceTest
     public static class NettyClient
     {
         private String m__strHost;
-        private int
+        private int m__iPort;
     }
 }
