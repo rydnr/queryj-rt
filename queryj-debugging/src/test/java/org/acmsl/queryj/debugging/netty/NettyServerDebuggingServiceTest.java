@@ -578,8 +578,6 @@ public class NettyServerDebuggingServiceTest
 
         /**
          * Creates a new instance.
-         * @param host the host.
-         * @param port the port.
          * @param msg the message.
          */
         public NettyClientHandler(@NotNull final String host, final int port, @NotNull final String msg)
