@@ -488,5 +488,35 @@ public class NettyServerDebuggingServiceTest
         {
             return m__strHost;
         }
+
+
+        /**
+         * Specifies the host.
+         * @param host the host.
+         */
+        protected final void immutableSetHost(@NotNull final String host)
+        {
+            this.m__strHost = host;
+        }
+
+        /**
+         * Specifies the host.
+         * @param host the host.
+         */
+        @SuppressWarnings("unused")
+        protected void setHost(@NotNull final String host)
+        {
+            immutableSetHost(host);
+        }
+
+        /**
+         * Retrieves the host.
+         * @return the host.
+         */
+        @NotNull
+        public String getHost()
+        {
+            return m__strHost;
+        }
     }
 }
