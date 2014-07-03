@@ -582,8 +582,8 @@ public class NettyServerDebuggingServiceTest
                         ch.pipeline().addLast(
                             new NettyClientHandler(message));
                     }
-});
-ChannelFuture f = b.connect().sync();
+                });
+                ChannelFuture f = b.connect().sync();
 f.channel().closeFuture().sync();
 } finally {
 group.shutdownGracefully().sync();
