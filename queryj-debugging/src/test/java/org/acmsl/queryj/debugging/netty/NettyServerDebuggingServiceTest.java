@@ -573,7 +573,7 @@ public class NettyServerDebuggingServiceTest
                 b.group(group)
                  .channel(NioSocketChannel.class)
                 .remoteAddress(new InetSocketAddress(host, port))
-.handler(new ChannelInitializer<SocketChannel>() {
+                .handler(new ChannelInitializer<SocketChannel>() {
 @Override
 public void initChannel(SocketChannel ch)
 throws Exception {
