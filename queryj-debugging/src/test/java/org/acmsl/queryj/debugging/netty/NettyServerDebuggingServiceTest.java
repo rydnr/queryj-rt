@@ -509,6 +509,15 @@ public class NettyServerDebuggingServiceTest
         }
 
         /**
+         * Retrieves the port.
+         * @return such port.
+         */
+        public int getPort()
+        {
+            return m__iPort;
+        }
+
+        /**
          * Specifies the message.
          * @param message the message.
          */
