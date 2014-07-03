@@ -554,6 +554,7 @@ public class NettyServerDebuggingServiceTest
         public void connect()
             throws Exception
         {
+            connect();
         }
         /**
          * Connects to the server.
