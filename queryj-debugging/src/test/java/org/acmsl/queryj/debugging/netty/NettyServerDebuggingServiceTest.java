@@ -556,7 +556,7 @@ public class NettyServerDebuggingServiceTest
             return
                 "{ \"host\": \"" + m__strHost + '"'
                 + ", \"port\": " + m__iPort
-                + ", \"message\": \"" + m__strMessage +
+                + ", \"message\": \"" + m__strMessage + ''
         }
     }
 }
