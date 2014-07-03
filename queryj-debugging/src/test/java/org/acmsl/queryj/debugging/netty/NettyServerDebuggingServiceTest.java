@@ -577,7 +577,7 @@ public class NettyServerDebuggingServiceTest
         @Override
         public void channelActive(final ChannelHandlerContext ctx) throws Exception
         {
-            ctx.writeAndFlush(Unpooled.copiedBuffer(getMessage()), CharsetUtil.UTF_8)
+            ctx.writeAndFlush(Unpooled.copiedBuffer(getMessage()), CharsetUtil.UTF_8);
         }
     }
 }
