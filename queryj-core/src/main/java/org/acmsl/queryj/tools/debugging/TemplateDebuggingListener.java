@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Receives notifications for asynchronous debugging services.
  *
  * Date: 2014/07/06
  * Time: 19:12
