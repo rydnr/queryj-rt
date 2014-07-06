@@ -69,17 +69,6 @@ public class NettyServerChannelHandler
      * {@inheritDoc}
      */
     @Override
-    public void channelActive(final ChannelHandlerContext ctx)
-        throws Exception
-    {
-        System.out.println("channelActive");
-        super.channelActive(ctx);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
     public void channelRead(@NotNull final ChannelHandlerContext ctx, @NotNull final Object msg)
     {
         try
