@@ -216,6 +216,8 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         {
             throw new DevelopmentModeException(template.groupThatCreatedThisInstance);
         }
+
+        retur
     }
 
     /**
