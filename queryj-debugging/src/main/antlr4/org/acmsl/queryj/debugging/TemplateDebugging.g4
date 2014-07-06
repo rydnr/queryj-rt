@@ -112,7 +112,7 @@ grammar TemplateDebigging;
 
  ******************************************************************************
  *
- * Generated from PerComment.g4 by ANTLR.
+ * Generated from TemplateDebugging.g4 by ANTLR.
  *
  * Author: Jose San Leandro Armendariz
  *
