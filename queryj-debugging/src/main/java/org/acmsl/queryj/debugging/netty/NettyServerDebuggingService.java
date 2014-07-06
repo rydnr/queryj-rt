@@ -55,6 +55,7 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import org.acmsl.queryj.api.TemplateContext;
 import org.acmsl.queryj.api.exceptions.DevelopmentModeException;
 import org.acmsl.queryj.tools.debugging.TemplateDebuggingCommand;
+import org.acmsl.queryj.tools.debugging.TemplateDebuggingListener;
 import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
 
 /*
