@@ -58,5 +58,5 @@ public interface TemplateDebuggingListener
      * Gets notified whenever a "reload" operation has been
      * requested.
      */
-    public
+    public void re
 }
