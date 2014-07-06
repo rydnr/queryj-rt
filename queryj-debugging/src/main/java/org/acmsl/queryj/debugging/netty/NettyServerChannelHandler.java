@@ -82,7 +82,7 @@ public class NettyServerChannelHandler
                 aux[index] = buffer.readByte();
             }
 
-            System.out.println("Received " + new String(aux, CharsetUtil.US_ASCII));
+//            System.out.println("Received " + new String(aux, CharsetUtil.US_ASCII));
 
             processCommand(new String(aux, CharsetUtil.US_ASCII));
         }
