@@ -75,7 +75,7 @@ grammar TemplateDebigging;
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: ANTLR parser for PerComment.g4
+ * Description: ANTLR parser for TemplateDebugging.g4
  *
  */
 }
