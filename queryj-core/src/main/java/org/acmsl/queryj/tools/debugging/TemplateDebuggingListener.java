@@ -36,11 +36,6 @@
 package org.acmsl.queryj.tools.debugging;
 
 /*
- * Importing JetBrains annotations.
- */
-import org.jetbrains.annotations.NotNull;
-
-/*
  * Importing checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
