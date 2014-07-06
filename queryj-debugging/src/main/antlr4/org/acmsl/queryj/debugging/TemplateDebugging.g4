@@ -116,7 +116,7 @@ grammar TemplateDebigging;
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: ANTLR lexer for PerComment.g4
+ * Description: ANTLR lexer for TemplateDebugging.g4
  *
  */
 }
