@@ -600,7 +600,7 @@ public class NettyServerDebuggingServiceTest
         @Override
         protected void messageReceived(final ChannelHandlerContext ctx, final ByteBuf msg) throws Exception
         {
-            LogFactory.getLog(NettyServerDebuggingServiceTest.MyNettyServerChannelHandler.class).info(
+            LogFactory.getLog(NettyServerDebuggingServiceTest.MyNettyClientHandler.class).info(
                 "Client received: " + msg);
         }
 
