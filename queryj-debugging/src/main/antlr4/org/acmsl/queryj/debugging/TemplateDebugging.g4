@@ -127,7 +127,10 @@ grammar TemplateDebigging;
 
 command : reload | nextTable | prevTable;
 
-reload :
+reload : RELOAD;
+nextTable: NEXT;
+prevTable: PREV;
+
 columnComment : freeText ( colAnnotation )*;
 
 tabAnnotation
