@@ -54,6 +54,7 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
  */
 import org.acmsl.queryj.api.TemplateContext;
 import org.acmsl.queryj.api.exceptions.DevelopmentModeException;
+import org.acmsl.queryj.tools.debugging.TemplateDebuggingCommand;
 import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
 
 /*
@@ -200,7 +201,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      * {@inheritDoc}
      */
     @Override
-    public TemplateDebuggingService debugTemplate(@NotNull final ST template, @NotNull final C context, @NotNull final String output)
+    public TemplateDebuggingCommand debugTemplate(@NotNull final ST template, @NotNull final C context, @NotNull final String output)
         throws DevelopmentModeException
     {
         try
