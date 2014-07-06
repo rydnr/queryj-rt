@@ -118,7 +118,8 @@ public class AbstractTemplateGeneratorTest
          * {@inheritDoc}
          */
         @Override
-        public TemplateDebuggingCommand debugTemplate(@NotNull final ST template, @NotNull final C context, @NotNull final String output)
+        public TemplateDebuggingCommand debugTemplate(
+            @NotNull final ST template, @NotNull final C context, @NotNull final String output)
         {
             this.called = true;
         }
