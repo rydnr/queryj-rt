@@ -67,6 +67,7 @@ import org.acmsl.queryj.debugging.AbstractTemplateTest.MyTestableAbstractTemplat
 import org.acmsl.queryj.debugging.STInspectorDebuggingService;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
+import org.apache.commons.logging.LogFactory;
 import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
@@ -599,7 +600,7 @@ public class NettyServerDebuggingServiceTest
         @Override
         protected void messageReceived(final ChannelHandlerContext ctx, final ByteBuf msg) throws Exception
         {
-            System.out.println("Client received: " + msg);
+            LogFactory.getLog(("Client received: " + msg);
         }
 
         /**
