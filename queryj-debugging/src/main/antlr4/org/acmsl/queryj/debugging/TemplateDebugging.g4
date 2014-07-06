@@ -33,7 +33,8 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Defines the ANTLR parser rules for template debugging in QueryJ.
+ * Description: Defines the ANTLR parser rules for template debugging in
+ *              QueryJ.
  *
  */
 grammar PerComment;
