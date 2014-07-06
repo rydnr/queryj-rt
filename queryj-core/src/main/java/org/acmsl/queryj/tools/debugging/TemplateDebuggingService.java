@@ -74,6 +74,7 @@ public interface TemplateDebuggingService<C extends TemplateContext>
      * @return the {@link TemplateDebuggingCommand}.
      * throws DevelopmentModeException if the debug session must stop.
      */
-    TemplateDebuggingCommand debugTemplate(@NotNull final ST template, @NotNull final C context, @NotNull final String output)
+    TemplateDebuggingCommand debugTemplate(
+        @NotNull final ST template, @NotNull final C context, @NotNull final String output)
         throws DevelopmentModeException;
 }
