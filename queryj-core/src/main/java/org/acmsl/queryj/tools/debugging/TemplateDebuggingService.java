@@ -71,6 +71,7 @@ public interface TemplateDebuggingService<C extends TemplateContext>
      * @param template the template to debug.
      * @param context the context.
      * @param output the current template output.
+     * @return the {@link TemplateDebuggingCommand}.
      * throws DevelopmentModeException if the debug session must stop.
      */
     TemplateDebuggingCommand debugTemplate(@NotNull final ST template, @NotNull final C context, @NotNull final String output)
