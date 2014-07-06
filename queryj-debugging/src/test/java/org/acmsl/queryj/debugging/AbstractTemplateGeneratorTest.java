@@ -41,6 +41,7 @@ package org.acmsl.queryj.debugging;
 import org.acmsl.queryj.api.AbstractTemplateGenerator;
 import org.acmsl.queryj.api.TemplateContext;
 import org.acmsl.queryj.metadata.DecoratorFactory;
+import org.acmsl.queryj.tools.debugging.TemplateDebuggingCommand;
 import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
 
 /*
@@ -117,7 +118,7 @@ public class AbstractTemplateGeneratorTest
          * {@inheritDoc}
          */
         @Override
-        public void debugTemplate(@NotNull final ST template, @NotNull final C context, @NotNull final String output)
+        public TemplateDebuggingCommand debugTemplate(@NotNull final ST template, @NotNull final C context, @NotNull final String output)
         {
             this.called = true;
         }
