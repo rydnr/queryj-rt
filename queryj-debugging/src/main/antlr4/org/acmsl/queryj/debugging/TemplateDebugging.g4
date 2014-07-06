@@ -33,7 +33,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: Defines the ANTLR parser rules for physical e/r comments.
+ * Description: Defines the ANTLR parser rules for template debugging
  *
  */
 grammar PerComment;
