@@ -37,7 +37,7 @@
  *              QueryJ.
  *
  */
-grammar PerComment;
+grammar TemplateDebigging;
 
 @parser::header
 {
