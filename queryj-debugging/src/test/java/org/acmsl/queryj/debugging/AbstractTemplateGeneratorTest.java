@@ -122,6 +122,7 @@ public class AbstractTemplateGeneratorTest
             @NotNull final ST template, @NotNull final C context, @NotNull final String output)
         {
             this.called = true;
+            return
         }
 
         /**
