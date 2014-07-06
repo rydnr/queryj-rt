@@ -54,4 +54,7 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public interface TemplateDebuggingListener
 {
+    /**
+     * Gets notified whenever a "reload" command has been
+     */
 }
