@@ -208,7 +208,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
 
         try
         {
-            launchServer();
+            ChannelFuture future = launchServer();
         }
         catch (@NotNull final InterruptedException interruption)
         {
