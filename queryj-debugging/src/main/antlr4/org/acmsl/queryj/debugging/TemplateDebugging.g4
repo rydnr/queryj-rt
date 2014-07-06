@@ -125,7 +125,7 @@ grammar TemplateDebigging;
  * PARSER RULES
  *------------------------------------------------------------------*/
 
-tableComment : freeText ( tabAnnotation )*;
+command : freeText ( tabAnnotation )*;
 
 columnComment : freeText ( colAnnotation )*;
 
