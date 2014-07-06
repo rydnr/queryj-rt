@@ -138,7 +138,7 @@ prevTable: PREV;
 WS : ( '\t' | ' ' | '\r' | '\n'| '\u000C' )+ -> skip;
 
 // keywords
-STATIC : '@static';
+RELOAD: 'reload';
 ISATYPE : '@isatype';
 ISAREFS : '@isarefs';
 ISA : '@isa';
