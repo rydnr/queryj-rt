@@ -93,7 +93,8 @@ import java.io.IOException;
  */
 @ThreadSafe
 public class NettyServerDebuggingService<C extends TemplateContext>
-    implements TemplateDebuggingService<C>
+    implements TemplateDebuggingService<C>,
+               TemplateDebuggingListener
 {
     /**
      * The system property for debugging templates.
