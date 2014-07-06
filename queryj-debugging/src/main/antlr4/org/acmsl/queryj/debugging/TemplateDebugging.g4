@@ -139,7 +139,7 @@ WS : ( '\t' | ' ' | '\r' | '\n'| '\u000C' )+ -> skip;
 
 // keywords
 RELOAD: 'reload';
-NEXT: '@isatype';
+NEXT: 'next';
 ISAREFS : '@isarefs';
 ISA : '@isa';
 DECORATOR : '@decorator';
