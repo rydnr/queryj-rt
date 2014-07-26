@@ -351,6 +351,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      * Stops the server.
      * throws InterruptedException if the server cannot be stopped.
      */
+    @SuppressWarnings("unused")
     public void stopServer()
         throws InterruptedException
     {
