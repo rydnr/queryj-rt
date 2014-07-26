@@ -77,7 +77,8 @@ public class NettyServerChannelHandler
      */
     public NettyServerChannelHandler(@NotNull final TemplateDebuggingListener listener)
     {
-
+        //TODO
+        this.m__Listener = listener;
     }
 
     /**
