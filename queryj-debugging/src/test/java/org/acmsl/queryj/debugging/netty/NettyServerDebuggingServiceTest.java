@@ -302,7 +302,7 @@ public class NettyServerDebuggingServiceTest
          * {@inheritDoc}
          */
         @Override
-        public void reload()
+        public void processCommand()
         {
             m__bReloadCalled = true;
         }
