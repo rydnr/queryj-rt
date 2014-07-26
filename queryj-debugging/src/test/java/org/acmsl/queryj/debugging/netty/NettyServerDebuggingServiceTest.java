@@ -279,6 +279,10 @@ public class NettyServerDebuggingServiceTest
     public static class MyNettyServerChannelHandler
         extends NettyServerChannelHandler
     {
+        /**
+         * Creates a new server
+         * @param listener
+         */
         public MyNettyServerChannelHandler(@NotNull final TemplateDebuggingListener listener)
         {
             super(listener);
