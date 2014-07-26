@@ -210,7 +210,7 @@ public class NettyServerDebuggingServiceTest
     {
 
         @NotNull final MyNettyServerChannelHandler handler =
-            new MyNettyServerChannelHandler(instance);
+            new MyNettyServerChannelHandler(null);
 
         final int port = 7777;
 
