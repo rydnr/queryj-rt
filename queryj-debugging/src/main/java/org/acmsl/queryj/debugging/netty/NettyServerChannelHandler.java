@@ -156,14 +156,4 @@ public class NettyServerChannelHandler
             listener.reloadRequested();
         }
     }
-
-    /**
-     *
-     * Reloads the template.
-     */
-    protected void reload()
-    {
-        // TODO
-    }
-
 }
