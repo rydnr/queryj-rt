@@ -256,7 +256,7 @@ public class NettyServerDebuggingServiceTest
         public ChannelFuture launchServer(@NotNull final TemplateDebuggingListener listener, final int port)
             throws InterruptedException, IOException
         {
-            return launchServer(listener, port);
+            return launchServer(, port);
         }
 
         /**
