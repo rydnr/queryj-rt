@@ -130,6 +130,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      * Specifies the {@link ServerBootstrap}.
      * @param bootstrap the bootstrap.
      */
+    @SuppressWarnings("unused")
     protected void setServerBootstrap(@NotNull final ServerBootstrap bootstrap)
     {
         immutableSetServerBootstrap(bootstrap);
