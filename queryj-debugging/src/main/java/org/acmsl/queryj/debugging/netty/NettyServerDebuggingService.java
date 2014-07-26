@@ -217,8 +217,6 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         @NotNull final ST template, @NotNull final C context, @NotNull final String output)
         throws DevelopmentModeException
     {
-        TemplateDebuggingCommand result;
-
         try
         {
             final ChannelFuture future = launchServer(this);
