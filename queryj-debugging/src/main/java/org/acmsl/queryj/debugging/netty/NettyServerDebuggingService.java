@@ -120,7 +120,8 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     /**
      * The last command received.
      */
-    private Template
+    private TemplateDebuggingCommand m__Command;
+
     /**
      * Specifies the {@link ServerBootstrap}.
      * @param bootstrap the bootstrap.
