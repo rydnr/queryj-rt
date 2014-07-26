@@ -72,8 +72,10 @@ public class STInspectorDebuggingService<C extends TemplateContext>
      * {@inheritDoc}
      */
     @Override
+    @NotNull
     public TemplateDebuggingCommand debugTemplate(@NotNull final ST template, @NotNull final C context, @NotNull final String output)
     {
         template.inspect();
+        return TemplateDebuggingCommand.RELOAD;
     }
 }
