@@ -187,6 +187,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      * Specifies the channel future.
      * @param future such {@link ChannelFuture}.
      */
+    @SuppressWarnings("unused")
     protected void setChannelFuture(@NotNull final ChannelFuture future)
     {
         immutableSetChannelFuture(future);
