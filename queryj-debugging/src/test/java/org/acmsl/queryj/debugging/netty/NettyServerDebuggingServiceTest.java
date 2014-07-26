@@ -208,6 +208,9 @@ public class NettyServerDebuggingServiceTest
     public void reload_command_gets_received_correctly()
         throws Exception
     {
+        @NotNull final MyNettyServerDebuggingService instance =
+            new MyNettyServerDebuggingService(handler);
+
         @NotNull final MyNettyServerChannelHandler handler =
             new MyNettyServerChannelHandler(instance);
 
