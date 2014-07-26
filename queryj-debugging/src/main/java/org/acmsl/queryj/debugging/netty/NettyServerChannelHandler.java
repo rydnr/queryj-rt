@@ -159,9 +159,6 @@ public class NettyServerChannelHandler
 
     /**
      *
-     *
-     *
-     *
      * Reloads the template.
      */
     protected void reload()
