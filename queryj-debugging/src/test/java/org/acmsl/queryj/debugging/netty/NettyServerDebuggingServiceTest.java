@@ -66,6 +66,7 @@ import org.acmsl.queryj.debugging.AbstractTemplateTest;
 import org.acmsl.queryj.debugging.AbstractTemplateTest.MyTestableAbstractTemplate;
 import org.acmsl.queryj.debugging.STInspectorDebuggingService;
 import org.acmsl.queryj.metadata.DecoratorFactory;
+import org.acmsl.queryj.tools.debugging.TemplateDebuggingListener;
 import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
 import org.apache.commons.logging.LogFactory;
 import org.easymock.EasyMock;
@@ -252,7 +253,8 @@ public class NettyServerDebuggingServiceTest
          * {@inheritDoc}
          */
         @Override
-        public ChannelFuture launchServer(final int port) throws InterruptedException, IOException
+        public ChannelFuture launchServer(final int port, @NotNull final TemplateDebuggingListener listener)
+            throws InterruptedException, IOException
         {
             return launchServer(port, this.m__Handler);
         }
