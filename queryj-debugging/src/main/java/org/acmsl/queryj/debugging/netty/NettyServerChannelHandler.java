@@ -147,8 +147,8 @@ public class NettyServerChannelHandler
 
     /**
      * Processes given command.
-     * @param
      * @param command the command.
+     * @param listener the {@link TemplateDebuggingListener listener}.
      */
     public void processCommand(@NotNull final String command, @NotNull final TemplateDebuggingListener listener)
     {
