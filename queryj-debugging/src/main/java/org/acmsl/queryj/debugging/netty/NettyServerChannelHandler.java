@@ -66,6 +66,14 @@ public class NettyServerChannelHandler
     extends ChannelHandlerAdapter
 {
     /**
+     * The listener.
+     */
+    private TemplateDebuggingListener m__Listener;
+
+    /**
+     *
+     */
+    /**
      * {@inheritDoc}
      */
     @Override
