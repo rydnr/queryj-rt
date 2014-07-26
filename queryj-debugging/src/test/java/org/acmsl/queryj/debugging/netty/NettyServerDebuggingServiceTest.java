@@ -279,6 +279,7 @@ public class NettyServerDebuggingServiceTest
     public static class MyNettyServerChannelHandler
         extends NettyServerChannelHandler
     {
+
         /**
          * Whether reload has been called.
          */
