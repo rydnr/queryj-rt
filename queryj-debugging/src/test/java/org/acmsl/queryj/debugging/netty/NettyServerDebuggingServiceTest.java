@@ -207,12 +207,12 @@ public class NettyServerDebuggingServiceTest
     @Test
     public void reload_command_gets_received_correctly()
         throws Exception
+    @NotNull final MyNettyServerDebuggingService instance =
+        new MyNettyServerDebuggingService(handler);
+
     {
         @NotNull final MyNettyServerChannelHandler handler =
             new MyNettyServerChannelHandler(instance);
-
-        @NotNull final MyNettyServerDebuggingService instance =
-            new MyNettyServerDebuggingService(handler);
 
         final int port = 7777;
 
