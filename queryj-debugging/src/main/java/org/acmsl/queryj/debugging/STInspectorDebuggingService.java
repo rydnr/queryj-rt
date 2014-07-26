@@ -39,6 +39,7 @@ package org.acmsl.queryj.debugging;
  * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.api.TemplateContext;
+import org.acmsl.queryj.tools.debugging.TemplateDebuggingCommand;
 import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
 
 /*
@@ -71,7 +72,7 @@ public class STInspectorDebuggingService<C extends TemplateContext>
      * {@inheritDoc}
      */
     @Override
-    public void debugTemplate(@NotNull final ST template, @NotNull final C context, @NotNull final String output)
+    public TemplateDebuggingCommand debugTemplate(@NotNull final ST template, @NotNull final C context, @NotNull final String output)
     {
         template.inspect();
     }
