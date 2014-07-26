@@ -75,7 +75,9 @@ public class NettyServerChannelHandler
      * Creates a new instance.
      * @param listener the {@link TemplateDebuggingListener listener}.
      */
-    public NettyServerChannelHandler(@NotNull final )
+    public NettyServerChannelHandler(@NotNull final TemplateDebuggingListener listener)
+}
+
     /**
      * {@inheritDoc}
      */
