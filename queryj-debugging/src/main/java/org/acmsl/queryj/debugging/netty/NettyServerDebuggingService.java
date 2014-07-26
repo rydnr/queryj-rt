@@ -197,6 +197,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      * Retrieves the channel future.
      * @return such {@link ChannelFuture}.
      */
+    @SuppressWarnings("unused")
     protected ChannelFuture getChannelFuture()
     {
         return this.m__ChannelFuture;
