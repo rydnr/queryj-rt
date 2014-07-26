@@ -212,7 +212,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      * {@inheritDoc}
      */
     @Override
-    @No
+    @NotNull
 
     public TemplateDebuggingCommand debugTemplate(
         @NotNull final ST template, @NotNull final C context, @NotNull final String output)
