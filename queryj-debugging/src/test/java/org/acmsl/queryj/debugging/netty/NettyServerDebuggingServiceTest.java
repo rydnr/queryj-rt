@@ -302,7 +302,7 @@ public class NettyServerDebuggingServiceTest
          * {@inheritDoc}
          */
         @Override
-        public void processCommand()
+        public void processCommand(@NotNull final String command, @NotNull final TemplateDebuggingListener listener))
         {
             m__bReloadCalled = true;
         }
