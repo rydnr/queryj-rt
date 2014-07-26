@@ -140,6 +140,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      * Retrieves the {@link ServerBootstrap}.
      * @return such bootstrap.
      */
+    @SuppressWarnings("unused")
     @Nullable
     protected ServerBootstrap getServerBootstrap()
     {
