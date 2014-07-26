@@ -374,7 +374,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     @Override
     public void reloadRequested()
     {
-        //To change body of implemented methods use File | Settings | File Templates.
+        this.m__Command = TemplateDebuggingCommand.RELOAD;
     }
 
     /**
