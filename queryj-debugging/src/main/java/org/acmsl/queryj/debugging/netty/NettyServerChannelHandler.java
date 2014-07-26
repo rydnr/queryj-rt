@@ -76,7 +76,9 @@ public class NettyServerChannelHandler
      * @param listener the {@link TemplateDebuggingListener listener}.
      */
     public NettyServerChannelHandler(@NotNull final TemplateDebuggingListener listener)
-}
+    {
+
+    }
 
     /**
      * {@inheritDoc}
