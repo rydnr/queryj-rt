@@ -100,7 +100,7 @@ public class NettyServerChannelHandler
 
 //            System.out.println("Received " + new String(aux, CharsetUtil.US_ASCII));
 
-            processCommand(new String(aux, CharsetUtil.US_ASCII));
+            processCommand(new String(aux, CharsetUtil.US_ASCII), this.m__Listener);
         }
         finally
         {
