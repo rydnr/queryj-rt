@@ -76,10 +76,7 @@ import org.junit.runners.JUnit4;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import java.net.InetSocketAddress;
-import java.net.Socket;
-import java.net.SocketAddress;
 import java.nio.charset.Charset;
 
 /**
