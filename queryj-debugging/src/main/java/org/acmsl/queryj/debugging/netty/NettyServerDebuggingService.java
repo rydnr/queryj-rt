@@ -388,7 +388,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     {
         return
               "{ \"lastCommand\": \"" + m__Command + '"'
-            + "\"channelFuture\": \"" + m__ChannelFuture.hashCode() + '"'
+            + ", \"channelFuture\": \"" + m__ChannelFuture.hashCode() + '"'
             + ", \"serverBootstrap\": \"" + m__ServerBootstrap.hashCode() + '"'
             + ", \"eventLoopGroup\": \"" + m__EventLoopGroup.hashCode() + '"'
             + ", \"class\": \"" + NettyServerDebuggingService.class.getSimpleName() + '"'
