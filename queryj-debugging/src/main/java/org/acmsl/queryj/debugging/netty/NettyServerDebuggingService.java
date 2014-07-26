@@ -266,7 +266,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      * throws InterruptedException if the server gets interrupted.
      * throws IOException if the socket cannot be bound.
      */
-    public ChannelFuture launchServer(final int port)
+    public ChannelFuture launchServer(@NotNull final TemplateDebuggingListener listener, final int port)
         throws InterruptedException,
         IOException
     {
