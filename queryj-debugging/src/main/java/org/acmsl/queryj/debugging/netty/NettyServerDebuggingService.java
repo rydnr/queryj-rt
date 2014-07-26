@@ -215,6 +215,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
 
         try
         {
+            final TemplateDebuggingListener listener = new
             final ChannelFuture future = launchServer();
 
 
