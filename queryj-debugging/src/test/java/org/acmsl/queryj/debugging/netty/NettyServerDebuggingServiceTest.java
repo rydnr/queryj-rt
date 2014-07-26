@@ -209,7 +209,7 @@ public class NettyServerDebuggingServiceTest
         throws Exception
     {
         @NotNull final MyNettyServerChannelHandler handler =
-            new MyNettyServerChannelHandler();
+            new MyNettyServerChannelHandler(instance);
 
         final int port = 7777;
 
