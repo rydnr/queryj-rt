@@ -149,7 +149,7 @@ public class NettyServerChannelHandler
      * Processes given command.
      * @param command the command.
      */
-    public void processCommand(@NotNull final String command)
+    public void processCommand(@NotNull final String command, @NotNull final TemplateDebuggingListener listener)
     {
         if (command.equals("reload"))
         {
