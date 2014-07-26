@@ -501,8 +501,6 @@ public class NettyServerDebuggingServiceTest
                 {
                     /**
                      * {@inheritDoc}
-                     * @param ch
-                     * @throws Exception
                      */
                     @Override
                     public void initChannel(@NotNull final SocketChannel ch)
