@@ -211,12 +211,12 @@ public class NettyServerDebuggingServiceTest
         @NotNull final MyNettyServerChannelHandler handler =
             new MyNettyServerChannelHandler(instance);
 
+        @NotNull final MyNettyServerDebuggingService instance =
+            new MyNettyServerDebuggingService(handler);
+
         final int port = 7777;
 
         System.setProperty(MyNettyServerDebuggingService.QUERYJ_TEMPLATE_DEBUG_PORT, String.valueOf(port));
-
-        @NotNull final MyNettyServerDebuggingService instance =
-            new MyNettyServerDebuggingService(handler);
 
         @NotNull final ChannelFuture server = instance.launchServer(instance);
 
