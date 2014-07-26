@@ -254,7 +254,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
             t_iPort = 0;
         }
 
-        return launchServer(t_iPort);
+        return launchServer(listener, t_iPort);
     }
 
     /**
