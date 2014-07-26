@@ -499,6 +499,11 @@ public class NettyServerDebuggingServiceTest
                 .remoteAddress(new InetSocketAddress(host, port))
                 .handler(new ChannelInitializer<SocketChannel>()
                 {
+                    /**
+                     * {@inheritDoc}
+                     * @param ch
+                     * @throws Exception
+                     */
                     @Override
                     public void initChannel(@NotNull final SocketChannel ch)
                         throws Exception
