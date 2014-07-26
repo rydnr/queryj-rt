@@ -207,7 +207,8 @@ public class NettyServerDebuggingService<C extends TemplateContext>
      * {@inheritDoc}
      */
     @Override
-    public TemplateDebuggingCommand debugTemplate(@NotNull final ST template, @NotNull final C context, @NotNull final String output)
+    public TemplateDebuggingCommand debugTemplate(
+        @NotNull final ST template, @NotNull final C context, @NotNull final String output)
         throws DevelopmentModeException
     {
         TemplateDebuggingCommand result;
