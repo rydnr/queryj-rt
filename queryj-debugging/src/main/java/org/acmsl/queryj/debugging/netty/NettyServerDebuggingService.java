@@ -271,7 +271,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
         IOException
     {
 
-        return launchServer(port, new NettyServerChannelHandler());
+        return launchServer(port, new NettyServerChannelHandler(listener));
     }
 
     /**
