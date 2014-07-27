@@ -261,55 +261,6 @@ public class NettyServerDebuggingServiceTest
     }
 
     /**
-     * A testable context handler adapter.
-     */
-    public static class MyNettyServerChannelHandler
-        extends NettyServerChannelHandler
-    {
-        /**
-         * Creates a new instance.
-         * @param listener the listener.
-         */
-        public MyNettyServerChannelHandler(@NotNull final TemplateDebuggingListener listener)
-        {
-            super(listener);
-        }
-
-        /**
-         * Whether reload has been called.
-         */
-        public boolean m__bReloadCalled = false;
-
-        /**
-         * The command received.
-         */
-        public String m__strCommand;
-
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public void processCommand(@NotNull final String command, @NotNull final TemplateDebuggingListener listener)
-        {
-            m__bReloadCalled = true;
-        }
-
-        /**
-         * {@inheritDoc}
-         */
-        @NotNull
-        @Override
-        public String toString()
-        {
-            return
-                  "{ \"command\": \"" + m__strCommand + '"'
-                + ", \"reloadCalled\": " + m__bReloadCalled
-                + ", \"class\": \"" + MyNettyServerChannelHandler.class.getSimpleName() + '"'
-                + ", \"package\": \"" + MyNettyServerChannelHandler.class.getPackage().getName() + "\" }";
-        }
-    }
-
-    /**
      * A testable listener.
      */
     public static class MyChannelListener
