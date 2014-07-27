@@ -196,7 +196,7 @@ public class NettyServerDebuggingServiceTest
     {
         // TODO
         @NotNull final NettyServerChannelHandler handler =
-            new NettyServerChannelHandler(null);
+            new NettyServerChannelHandler();
 
         final int port = 7777;
 
