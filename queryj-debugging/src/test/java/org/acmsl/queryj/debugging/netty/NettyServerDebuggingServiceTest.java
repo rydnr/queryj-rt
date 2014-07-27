@@ -234,6 +234,7 @@ public class NettyServerDebuggingServiceTest
         @Override
         public void reloadRequested()
         {
+            this.m__bReloadReceived = true;
             super.reloadRequested();
         }
 
