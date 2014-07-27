@@ -219,7 +219,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     {
         try
         {
-            final ChannelFuture future = launchServer(this);
+            final ChannelFuture future = launchServer();
 
             future.sync();
         }
