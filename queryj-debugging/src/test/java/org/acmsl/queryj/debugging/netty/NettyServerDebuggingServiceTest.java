@@ -203,7 +203,7 @@ public class NettyServerDebuggingServiceTest
         System.setProperty(MyNettyServerDebuggingService.QUERYJ_TEMPLATE_DEBUG_PORT, String.valueOf(port));
 
         @NotNull final MyNettyServerDebuggingService instance =
-            new MyNettyServerDebuggingService(handler);
+            new MyNettyServerDebuggingService();
 
         @NotNull final ChannelFuture server = instance.launchServer();
 
