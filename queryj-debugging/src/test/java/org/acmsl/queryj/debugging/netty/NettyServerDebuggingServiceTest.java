@@ -195,9 +195,6 @@ public class NettyServerDebuggingServiceTest
         throws Exception
     {
         // TODO
-        @NotNull final NettyServerChannelHandler handler =
-            new NettyServerChannelHandler();
-
         final int port = 7777;
 
         System.setProperty(MyNettyServerDebuggingService.QUERYJ_TEMPLATE_DEBUG_PORT, String.valueOf(port));
