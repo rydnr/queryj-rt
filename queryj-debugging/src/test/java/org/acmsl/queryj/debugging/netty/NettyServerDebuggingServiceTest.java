@@ -53,7 +53,7 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.util.CharsetUtil;
 
 /*
- * Importing JetBrains annotations.
+ * Importing ACM-SL Java Commons classes.
  */
 import org.acmsl.commons.utils.io.FileUtils;
 
