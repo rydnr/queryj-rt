@@ -240,7 +240,7 @@ public class NettyServerDebuggingServiceTest
          * {@inheritDoc}
          */
         @Override
-        public ChannelFuture launchServer(@NotNull final TemplateDebuggingListener listener, final int port)
+        public ChannelFuture launchServer(final int port)
             throws InterruptedException, IOException
         {
             return launchServer(port, this.m__Handler);
