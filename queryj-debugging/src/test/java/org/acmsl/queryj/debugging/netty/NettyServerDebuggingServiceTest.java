@@ -212,7 +212,7 @@ public class NettyServerDebuggingServiceTest
         // Wait until the connections are closed.
         Assert.assertTrue(server.isDone());
 
-        Assert.assertTrue(instance.m__bReloadCalled);
+        Assert.assertTrue(instance.m__bReloadReceived);
 
     }
 
