@@ -203,7 +203,7 @@ public class NettyServerDebuggingServiceTest
             new MyNettyServerDebuggingService();
 
         @NotNull final NettyServerChannelHandler handler =
-            new NettyServerChannelHandler();
+            new NettyServerChannelHandler(instance);
 
         @NotNull final ChannelFuture server = instance.launchServer();
 
