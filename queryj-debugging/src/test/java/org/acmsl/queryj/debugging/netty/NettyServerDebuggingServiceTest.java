@@ -246,7 +246,8 @@ public class NettyServerDebuggingServiceTest
         public String toString()
         {
             return
-                  "{ \"reloadRequested\": " + m__bReloadReceived + '"'
+                  "{ \"reloadReceived\": " + m__bReloadReceived + '"'
+                + ", \"super\": "
                 + ", \"class\": \"" + MyNettyServerDebuggingService.class.getSimpleName() + '"'
                 + ", \"package\": \"" + MyNettyServerDebuggingService.class.getPackage().getName() + "\" }";
         }
