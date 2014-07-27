@@ -261,50 +261,6 @@ public class NettyServerDebuggingServiceTest
     }
 
     /**
-     * A testable listener.
-     */
-    public static class MyChannelListener
-        implements GenericFutureListener<ChannelFuture>
-    {
-        /**
-         * The MyNettyServerDebuggingService instance.
-         */
-        private final MyNettyServerChannelHandler service;
-
-        /**
-         * Creates a new listener.
-         * @param service the {@link MyNettyServerDebuggingService} instance.
-         */
-        public MyChannelListener(@NotNull final MyNettyServerChannelHandler service)
-        {
-            this.service = service;
-        }
-
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public void operationComplete(@NotNull final ChannelFuture future)
-            throws Exception
-        {
-//            Assert.assertTrue(service.m__bReloadCalled);
-        }
-
-        /**
-         * {@inheritDoc}
-         */
-        @NotNull
-        @Override
-        public String toString()
-        {
-            return
-                  "{ \"service\": \"" + service + '"'
-                + ", \"class\": \"" + MyChannelListener.class.getSimpleName() + '"'
-                + ", \"package\": \"" + MyChannelListener.class.getPackage().getName() + "\" }";
-        }
-    }
-
-    /**
      * A test client.
      */
     public static class NettyClient
