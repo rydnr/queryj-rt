@@ -75,11 +75,6 @@ import org.apache.commons.logging.LogFactory;
 /*
  * Importing JetBrains annotations.
  */
-import org.easymock.EasyMock;
-
-/*
- * Importing JetBrains annotations.
- */
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
