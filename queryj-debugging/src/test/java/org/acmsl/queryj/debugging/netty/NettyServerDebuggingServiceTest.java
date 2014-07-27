@@ -205,7 +205,7 @@ public class NettyServerDebuggingServiceTest
         @NotNull final MyNettyServerDebuggingService instance =
             new MyNettyServerDebuggingService(handler);
 
-        @NotNull final ChannelFuture server = instance.launchServer(instance);
+        @NotNull final ChannelFuture server = instance.launchServer();
 
         sendTextToServer("localhost", port, "reload");
 
