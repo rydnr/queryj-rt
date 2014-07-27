@@ -195,7 +195,7 @@ public class NettyServerDebuggingServiceTest
         throws Exception
     {
         // TODO
-        @NotNull final MyNettyServerChannelHandler handler =
+        @NotNull final NettyServerChannelHandler handler =
             new MyNettyServerChannelHandler(null);
 
         final int port = 7777;
