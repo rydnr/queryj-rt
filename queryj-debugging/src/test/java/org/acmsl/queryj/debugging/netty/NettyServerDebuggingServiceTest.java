@@ -222,6 +222,9 @@ public class NettyServerDebuggingServiceTest
     public static class MyNettyServerDebuggingService
         extends NettyServerDebuggingService
     {
+        /**
+         * Whether the reload has been received.
+         */
 
         /**
          * Gets notified whenever a "reload" operation has been
