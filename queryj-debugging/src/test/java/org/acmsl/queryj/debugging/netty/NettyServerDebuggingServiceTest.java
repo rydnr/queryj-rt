@@ -57,7 +57,6 @@ import org.acmsl.queryj.api.TemplateContext;
 import org.acmsl.queryj.debugging.AbstractTemplateTest;
 import org.acmsl.queryj.debugging.AbstractTemplateTest.MyTestableAbstractTemplate;
 import org.acmsl.queryj.metadata.DecoratorFactory;
-import org.acmsl.queryj.tools.debugging.TemplateDebuggingListener;
 import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
 import org.apache.commons.logging.LogFactory;
 import org.easymock.EasyMock;
