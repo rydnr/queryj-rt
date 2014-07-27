@@ -225,6 +225,7 @@ public class NettyServerDebuggingServiceTest
         /**
          * Whether the reload has been received.
          */
+        private boolean m__bReloadReceived;
 
         /**
          * Gets notified whenever a "reload" operation has been
