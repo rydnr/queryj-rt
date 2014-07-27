@@ -237,7 +237,6 @@ public class NettyServerDebuggingService<C extends TemplateContext>
 
     /**
      * Launches the server.
-     * @param listener the {@link TemplateDebuggingListener listener}.
      * @return the {@link ChannelFuture}.
      * throws InterruptedException if the server gets interrupted.
      * throws IOException if the socket cannot be bound.
