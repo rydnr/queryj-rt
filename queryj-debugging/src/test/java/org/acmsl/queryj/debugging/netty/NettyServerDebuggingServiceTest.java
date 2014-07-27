@@ -222,6 +222,7 @@ public class NettyServerDebuggingServiceTest
     public static class MyNettyServerDebuggingService
         extends NettyServerDebuggingService
     {
+
         /**
          * The handler adapter to use.
          */
