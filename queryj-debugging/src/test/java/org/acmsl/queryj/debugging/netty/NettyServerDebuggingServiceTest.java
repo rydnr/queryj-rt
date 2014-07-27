@@ -81,11 +81,11 @@ import org.easymock.EasyMock;
  * Importing JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /*
  * Importing JUnit/EasyMock classes.
  */
-import org.jetbrains.annotations.Nullable;
 import org.easymock.EasyMock;
 import org.junit.Assert;
 import org.junit.Test;
