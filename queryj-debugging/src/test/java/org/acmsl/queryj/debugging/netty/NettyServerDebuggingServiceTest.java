@@ -68,7 +68,7 @@ import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
 
 /*
- * Importing Apache Commons annotations.
+ * Importing Apache Commons Logging annotations.
  */
 import org.apache.commons.logging.LogFactory;
 
