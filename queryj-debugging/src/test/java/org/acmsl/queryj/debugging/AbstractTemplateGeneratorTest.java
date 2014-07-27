@@ -117,6 +117,7 @@ public class AbstractTemplateGeneratorTest
         /**
          * {@inheritDoc}
          */
+        @NotNull
         @Override
         public TemplateDebuggingCommand debugTemplate(
             @NotNull final ST template, @NotNull final C context, @NotNull final String output)
