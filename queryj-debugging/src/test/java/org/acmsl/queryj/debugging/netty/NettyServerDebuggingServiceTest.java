@@ -66,8 +66,20 @@ import org.acmsl.queryj.debugging.AbstractTemplateTest;
 import org.acmsl.queryj.debugging.AbstractTemplateTest.MyTestableAbstractTemplate;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.apache.commons.logging.LogFactory;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.easymock.EasyMock;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
