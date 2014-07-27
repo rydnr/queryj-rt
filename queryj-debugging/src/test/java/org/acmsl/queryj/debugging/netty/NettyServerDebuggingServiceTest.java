@@ -123,8 +123,6 @@ public class NettyServerDebuggingServiceTest
         EasyMock.expect(templateContext.isDebugEnabled()).andReturn(true);
         EasyMock.replay(templateContext);
 
-        @NotNull final DecoratorFactory decoratorFactory = EasyMock.createNiceMock(DecoratorFactory.class);
-
         @NotNull final AbstractTemplateTest.MyTestableAbstractTemplate<TemplateContext> template =
             new AbstractTemplateTest.MyTestableAbstractTemplate<>(templateContext);
 
