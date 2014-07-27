@@ -91,8 +91,10 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+/*
+ * Importing JetBrains annotations.
+ */
 import java.io.File;
-import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.charset.Charset;
 
