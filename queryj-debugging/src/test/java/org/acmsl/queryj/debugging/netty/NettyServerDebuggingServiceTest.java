@@ -58,7 +58,7 @@ import io.netty.util.CharsetUtil;
 import org.acmsl.commons.utils.io.FileUtils;
 
 /*
- * Importing QueryJ
+ * Importing QueryJ-Core classes.
  */
 import org.acmsl.queryj.api.AbstractTemplateGenerator;
 import org.acmsl.queryj.api.TemplateContext;
