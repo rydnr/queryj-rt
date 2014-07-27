@@ -51,7 +51,6 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.util.CharsetUtil;
-import io.netty.util.concurrent.GenericFutureListener;
 import org.acmsl.commons.utils.io.FileUtils;
 import org.acmsl.queryj.api.AbstractTemplateGenerator;
 import org.acmsl.queryj.api.TemplateContext;
