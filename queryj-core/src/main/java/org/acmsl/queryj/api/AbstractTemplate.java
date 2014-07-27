@@ -116,8 +116,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
      * The default StringTemplate error listener.
      */
     @NotNull
-    protected static final STErrorListener
-        DEFAULT_ST_ERROR_LISTENER =
+    protected static final STErrorListener DEFAULT_ST_ERROR_LISTENER =
         new STErrorListener()
         {
             /**
