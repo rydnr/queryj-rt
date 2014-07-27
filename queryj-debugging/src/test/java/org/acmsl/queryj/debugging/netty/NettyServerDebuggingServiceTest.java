@@ -222,6 +222,15 @@ public class NettyServerDebuggingServiceTest
     public static class MyNettyServerDebuggingService
         extends NettyServerDebuggingService
     {
+        /**
+         * Gets notified whenever a "reload" operation has been
+         * requested.
+         */
+        @Override
+        public void reloadRequested()
+        {
+            super.reloadRequested();
+        }
 
         /**
          * The handler adapter to use.
