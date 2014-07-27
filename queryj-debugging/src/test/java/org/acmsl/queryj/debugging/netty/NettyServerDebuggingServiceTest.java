@@ -238,29 +238,6 @@ public class NettyServerDebuggingServiceTest
             super.reloadRequested();
         }
 
-        /**
-         * The handler adapter to use.
-         */
-        private final ChannelHandlerAdapter m__Handler;
-
-        /**
-         * Creates a new instance.
-         * @param handler the handler to use.
-         */
-        public MyNettyServerDebuggingService(@NotNull final ChannelHandlerAdapter handler)
-        {
-            this.m__Handler = handler;
-        }
-
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public ChannelFuture launchServer(final int port)
-            throws InterruptedException, IOException
-        {
-            return launchServer(port, this.m__Handler);
-        }
 
         /**
          * {@inheritDoc}
