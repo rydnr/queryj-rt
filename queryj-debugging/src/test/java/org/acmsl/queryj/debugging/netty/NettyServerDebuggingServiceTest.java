@@ -215,51 +215,6 @@ public class NettyServerDebuggingServiceTest
         Assert.assertTrue(handler.m__bReloadCalled);
 
     }
-
-    /**
-     * A testable debugging service.
-     */
-    public static class MyNettyServerDebuggingService
-        extends NettyServerDebuggingService
-    {
-        /**
-         * The handler adapter to use.
-         */
-        private final ChannelHandlerAdapter m__Handler;
-
-        /**
-         * Creates a new instance.
-         * @param handler the handler to use.
-         */
-        public MyNettyServerDebuggingService(@NotNull final ChannelHandlerAdapter handler)
-        {
-            this.m__Handler = handler;
-        }
-
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public ChannelFuture launchServer(final int port)
-            throws InterruptedException, IOException
-        {
-            return launchServer(port, this.m__Handler);
-        }
-
-        /**
-         * {@inheritDoc}
-         */
-        @NotNull
-        @Override
-        public String toString()
-        {
-            return
-                  "{ \"handler\": " + m__Handler + '"'
-                + ", \"class\": \"" + MyNettyServerDebuggingService.class.getSimpleName() + '"'
-                + ", \"package\": \"" + MyNettyServerDebuggingService.class.getPackage().getName() + "\" }";
-        }
-    }
-
     /**
      * A test client.
      */
