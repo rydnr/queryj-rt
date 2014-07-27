@@ -59,7 +59,7 @@ import org.checkthread.annotations.ThreadSafe;
 /**
  * Services able to debug templates.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
- *
+ * @param <C> the template context.
  * @since 3.0
  * Created: 2014/06/25 12:31
  */
