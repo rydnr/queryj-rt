@@ -123,6 +123,57 @@ public class NettyServerDebuggingServiceTest
         EasyMock.expect(templateContext.isDebugEnabled()).andReturn(true);
         EasyMock.replay(templateContext);
 
+        @NotNull final DecoratorFactory decoratorFactory = EasyMock.createNiceMock(DecoratorFactory.class);
+
+        @SuppressWarnings("unchecked")
+        @NotNull final AbstractTemplateGenerator<MyTestableAbstractTemplate<TemplateContext>, TemplateContext> generator =
+            new AbstractTemplateGenerator(false, 1)
+            {
+                /**
+                 * {@inheritDoc}
+                 */
+                @NotNull
+                @Override
+                public DecoratorFactory getDecoratorFactory()
+                {
+                    return decoratorFactory;
+                }
+
+                /**
+                 * {@inheritDoc}
+                 */
+                @Override
+                protected boolean isInDevMode(@NotNull final String templateFileName)
+                {
+                    return true;
+                }
+
+                /**
+                 * {@inheritDoc}
+                 */
+                @Nullable
+                @Override
+                public TemplateDebuggingService resolveTemplateDebuggingService()
+                {
+                    return instance;
+                }
+
+                /**
+                 * {@inheritDoc}
+                 */
+                @Nullable
+                @Override
+                protected String retrieveHash(
+                    @NotNull final String fileName,
+                    @NotNull final File outputDir,
+                    @NotNull final File rootFolder,
+                    @NotNull final Charset charset,
+                    @NotNull final FileUtils fileUtils)
+                {
+                    return "";
+                }
+            };
+
         @NotNull final AbstractTemplateTest.MyTestableAbstractTemplate<TemplateContext> template =
             new AbstractTemplateTest.MyTestableAbstractTemplate<>(templateContext);
 
