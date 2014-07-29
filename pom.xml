@@ -36,7 +36,6 @@
     <version.checkthread>1.0.9</version.checkthread>
     <version.powermock>1.5.5</version.powermock>
     <version.oracle-driver>1.4</version.oracle-driver>
-    <version.netty>5.0.0.Alpha1</version.netty>
   </properties>
 
   <modules>
@@ -45,7 +44,6 @@
     <module>queryj-test</module>
     <module>queryj-template-packaging</module>
     <module>queryj-maven</module>
-    <module>queryj-debugging</module>
     <module>queryj-template-packaging-maven-plugin</module>
     <module>queryj-templates</module>
   </modules>
@@ -404,16 +402,6 @@
         <version>1.8.0</version>
       </dependency>
 
-      <dependency>
-        <groupId>io.netty</groupId>
-        <artifactId>netty-transport</artifactId>
-        <version>${version.netty}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.netty</groupId>
-        <artifactId>netty-buffer</artifactId>
-        <version>${version.netty}</version>
-      </dependency>
     </dependencies>
   </dependencyManagement>
 
@@ -532,11 +520,11 @@
             <Xlint>warning</Xlint>
             <XaddSerialVersionUID>true</XaddSerialVersionUID>
             <encoding>UTF-8</encoding>
-            <complianceLevel>1.8</complianceLevel>
+	    <complianceLevel>1.8</complianceLevel>
             <source>1.8</source>
             <target>1.8</target>
             <warn>constructorName,packageDefaultMethod,deprecation,maskedCatchBlocks,unusedLocals,unusedArguments,unusedImports,all</warn>
-          </configuration>
+	  </configuration>
           <dependencies>
             <dependency>
               <groupId>org.aspectj</groupId>
