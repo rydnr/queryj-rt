@@ -43,7 +43,11 @@ import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Result;
 import org.acmsl.queryj.customsql.ResultRef;
 import org.acmsl.queryj.customsql.Sql;
+<<<<<<< HEAD
 import org.acmsl.queryj.customsql.SqlCardinality;
+=======
+import org.acmsl.queryj.customsql.Sql.Cardinality;
+>>>>>>> 654e804... Implemented isSingleBeingUsed() and isMultipleBeingUsed() in TableResultDecorator.
 import org.acmsl.queryj.metadata.AbstractResultDecorator;
 import org.acmsl.queryj.metadata.DecoratedString;
 import org.acmsl.queryj.metadata.DecoratorFactory;
@@ -133,7 +137,11 @@ public class TableResultDecoratorImpl<V>
     @Override
     public boolean isSingleBeingUsed()
     {
+<<<<<<< HEAD
         return isBeingUsed(SqlCardinality.SINGLE, getTable(), getResult(), getCustomSqlProvider());
+=======
+        return isBeingUsed(Cardinality.SINGLE, getTable(), getResult(), getCustomSqlProvider());
+>>>>>>> 654e804... Implemented isSingleBeingUsed() and isMultipleBeingUsed() in TableResultDecorator.
     }
 
     /**
@@ -142,33 +150,53 @@ public class TableResultDecoratorImpl<V>
     @Override
     public boolean isMultipleBeingUsed()
     {
+<<<<<<< HEAD
         return isBeingUsed(SqlCardinality.MULTIPLE, getTable(), getResult(), getCustomSqlProvider());
+=======
+        return isBeingUsed(Cardinality.MULTIPLE, getTable(), getResult(), getCustomSqlProvider());
+>>>>>>> 654e804... Implemented isSingleBeingUsed() and isMultipleBeingUsed() in TableResultDecorator.
     }
 
     /**
      * Checks whether there's any query associated to given table,
      * returning a single/multiple instance of the custom result.
+<<<<<<< HEAD
      * @param SqlCardinality the {@link SqlCardinality single/multiple} check.
+=======
+     * @param cardinality the {@link Cardinality single/multiple} check.
+>>>>>>> 654e804... Implemented isSingleBeingUsed() and isMultipleBeingUsed() in TableResultDecorator.
      * @param table the {@link TableDecorator table}.
      * @param customResult the {@link Result custom result}.
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
      * @return {@code true} in such case.
      */
     protected boolean isBeingUsed(
+<<<<<<< HEAD
         @NotNull final SqlCardinality SqlCardinality,
+=======
+        @NotNull final Cardinality cardinality,
+>>>>>>> 654e804... Implemented isSingleBeingUsed() and isMultipleBeingUsed() in TableResultDecorator.
         @NotNull final TableDecorator table,
         @NotNull final Result<DecoratedString> customResult,
         @NotNull final CustomSqlProvider customSqlProvider)
     {
         return
             isBeingUsed(
+<<<<<<< HEAD
                 SqlCardinality, table, customResult, customSqlProvider.getSqlDAO(), CustomResultUtils.getInstance());
+=======
+                cardinality, table, customResult, customSqlProvider.getSqlDAO(), CustomResultUtils.getInstance());
+>>>>>>> 654e804... Implemented isSingleBeingUsed() and isMultipleBeingUsed() in TableResultDecorator.
     }
 
     /**
      * Checks whether there's any query associated to given table,
      * returning a single/multiple instance of the custom result.
+<<<<<<< HEAD
      * @param SqlCardinality the {@link SqlCardinality single/multiple} check.
+=======
+     * @param cardinality the {@link Cardinality single/multiple} check.
+>>>>>>> 654e804... Implemented isSingleBeingUsed() and isMultipleBeingUsed() in TableResultDecorator.
      * @param table the {@link TableDecorator table}.
      * @param customResult the {@link Result custom result}.
      * @param sqlDAO the {@link SqlDAO} instance.
@@ -176,7 +204,11 @@ public class TableResultDecoratorImpl<V>
      * @return {@code true} in such case.
      */
     protected boolean isBeingUsed(
+<<<<<<< HEAD
         @NotNull final SqlCardinality SqlCardinality,
+=======
+        @NotNull final Cardinality cardinality,
+>>>>>>> 654e804... Implemented isSingleBeingUsed() and isMultipleBeingUsed() in TableResultDecorator.
         @NotNull final TableDecorator table,
         @NotNull final Result<DecoratedString> customResult,
         @NotNull final SqlDAO sqlDAO,
@@ -197,7 +229,11 @@ public class TableResultDecoratorImpl<V>
                     if (   (resultRef != null)
                         && (resultRef.getId().equals(customResult.getId().getValue())))
                     {
+<<<<<<< HEAD
                         result = query.getCardinality().equals(SqlCardinality);
+=======
+                        result = query.getCardinality().equals(cardinality);
+>>>>>>> 654e804... Implemented isSingleBeingUsed() and isMultipleBeingUsed() in TableResultDecorator.
 
                         if (result)
                         {

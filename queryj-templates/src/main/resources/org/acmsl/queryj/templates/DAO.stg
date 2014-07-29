@@ -73,6 +73,10 @@ sourceImpl(table, engine, C) ::= <<
   basePackageName=C.project_package,
   package=C.package,
   jdbcOperationsSubpackageName=typeInitMap.jdbcOperationsSubpackageName,
+<<<<<<< HEAD
+=======
+  customResults=table.customResults.different,
+>>>>>>> 654e804... Implemented isSingleBeingUsed() and isMultipleBeingUsed() in TableResultDecorator.
   voSubpackageName=typeInitMap.voSubpackageName,
   voName=table.name.voName,
   voFactorySubpackageName=typeInitMap.voFactorySubpackageName,
@@ -111,7 +115,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 <import_attribute_types(table=table, useHeader=false, nullableOnly=true)>
-<table.customSelects:{ cs| <import_custom_select_types(cs=cs, C=C)>}; separator="\n">
+<table.customSelects.different:{ cs| <import_custom_select_types(cs=cs, C=C)>}; separator="\n">
 import java.util.Map;
 
 /*
@@ -216,15 +220,23 @@ import <basePackageName>.<voFactorySubpackageName>.core.<table.name.voName>Facto
   basePackageName=basePackageName,
   baseDAOSubpackageName=baseDAOSubpackageName,
   referredVOName=fk.source.name.voName)>}; separator="\n">
+<<<<<<< HEAD
 //<table.customResults>
 <table.customResults:{ cr  | <custom_select_return_import(result=cr, package=basePackageName, baseDAOSubpackageName=baseDAOSubpackageName, C=C)>}; separator="\n">
+=======
+<table.customResults.different:{ cr  | <custom_select_return_import(result=cr, package=basePackageName, baseDAOSubpackageName=baseDAOSubpackageName, C=C)>}; separator="\n">
+>>>>>>> 654e804... Implemented isSingleBeingUsed() and isMultipleBeingUsed() in TableResultDecorator.
 
 /*
  * Importing V24-Commons classes.
  */
 import com.ventura24.commons.dao.DAOListener;
 <if(table.customResults)
+<<<<<<< HEAD
  ><table.customResults:{ cr  | <if(cr.wrappingASingleProperty)><cr.properties:{p | <if(p.typeSupportedOutOfTheBox)>import com.ventura24.commons.dao.<p.objectType>ResultSetMultipleExtractor;<endif>}; separator="\n"><endif>}; separator="\n">
+=======
+ ><table.customResults.different:{ cr  | <if(cr.wrappingASingleProperty)><cr.properties:{p | <if(p.typeSupportedOutOfTheBox)>import com.ventura24.commons.dao.<p.objectType>ResultSetMultipleExtractor;<endif>}; separator="\n"><endif>}; separator="\n">
+>>>>>>> 654e804... Implemented isSingleBeingUsed() and isMultipleBeingUsed() in TableResultDecorator.
 <endif>
 import com.ventura24.commons.dao.V24JdbcTemplate;
 import com.ventura24.commons.dao.V24PreparedStatementCreator;
