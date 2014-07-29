@@ -36,34 +36,30 @@
 package org.acmsl.queryj.metadata;
 
 /*
- * Importing QueryJ Core classes.
+ * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.customsql.CustomSqlProvider;
 import org.acmsl.queryj.customsql.Parameter;
 import org.acmsl.queryj.customsql.ParameterElement;
 import org.acmsl.queryj.customsql.ParameterRefElement;
+import org.acmsl.queryj.customsql.Result;
+import org.acmsl.queryj.customsql.ResultElement;
 import org.acmsl.queryj.customsql.Sql;
-import org.acmsl.queryj.customsql.SqlCardinality;
+import org.acmsl.queryj.customsql.Sql.Cardinality;
 import org.acmsl.queryj.customsql.SqlElement;
 import org.acmsl.queryj.metadata.engines.JdbcMetadataTypeManager;
-
-/*
- * Importing JetBrains annotations.
- */
+import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing JUnit/EasyMock classes.
+ * Importing checkthread.org annotations.
  */
-import org.easymock.EasyMock;
+import org.checkthread.annotations.ThreadSafe;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
-/*
- * Importing JDK classes.
- */
 import java.util.List;
 
 /**
@@ -83,7 +79,7 @@ public class SqlDecoratorHelperTest
     public void getParameterTypes_returns_no_duplicates()
     {
         @NotNull final Sql<String> sql =
-            new SqlElement<>("id1", "name1", "select", SqlCardinality.SINGLE, "all", false, false, "none", "desc1");
+            new SqlElement<>("id1", "name1", "select", Cardinality.SINGLE, "all", false, false, "none", "desc1");
 
         @NotNull final Parameter parameter =
             new ParameterElement<String, String>("pid", 1, "paramName", "Date", null);

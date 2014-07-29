@@ -1,8 +1,9 @@
 /*
-                        QueryJ Core
+                        QueryJ-Core
 
-    Copyright (C) 2002-today Jose San Leandro Armendariz
-                        queryj@acm-sl.org
+    Copyright (C) 2002-today Jose San Leandro Armend�riz
+                        jsanleandro@yahoo.es
+                        chousz@yahoo.com
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU General Public
@@ -19,21 +20,29 @@
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
     Thanks to ACM S.L. for distributing this library under the GPL license.
-    Contact info: jose.sanleandro@acm-sl.com
+    Contact info: jsanleandro@yahoo.es
     Postal Address: c/Playa de Lagoa, 1
-                    Urb. Valdecabanas
+                    Urb. Valdecaba�as
                     Boadilla del monte
                     28660 Madrid
                     Spain
 
  ******************************************************************************
  *
- * Filename: CommandHandlerLogging.aj
+ * Filename: $RCSfile$
  *
  * Author: Jose San Leandro Armendariz
  *
  * Description: Prints out when a handler starts and finishes in the process
  *              flow.
+ *
+ * Last modified by: $Author$ at $Date$
+ *
+ * File version: $Revision$
+ *
+ * Project version: $Name$
+ *
+ * $Id$
  *
  */
 package aspects.org.acmsl.queryj;
@@ -41,8 +50,8 @@ package aspects.org.acmsl.queryj;
 /*
  * Importing project classes.
  */
-import org.acmsl.queryj.QueryJCommand;
-import org.acmsl.queryj.tools.handlers.QueryJCommandHandler;
+import org.acmsl.queryj.tools.AntCommand;
+import org.acmsl.queryj.tools.AntCommandHandler;
 
 /*
  * Importing Jakarta Commons classes.
@@ -61,7 +70,7 @@ public aspect CommandHandlerLogging
      * The tracing pointcut.
      */
     pointcut tracePoint(Object obj):
-           execution(boolean QueryJCommandHandler.handle(QueryJCommand))
+           execution(boolean AntCommandHandler.handle(AntCommand))
         && this(obj);
 
     /**

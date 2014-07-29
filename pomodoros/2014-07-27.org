@@ -1,4 +1,0 @@
-* 2014/07/27:
-** TODO Implement parent pom: 1 ->
-** TODO Implement AbstractTemplateGenerator#resolveTemplate(): 1 ->
-** Test netty debugging service: 3 ->

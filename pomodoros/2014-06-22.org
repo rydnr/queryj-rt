@@ -1,6 +1,0 @@
-* 2014/06/22
-** Fix template debugging memory leak #510:
-*** DONE Make recursive toString throw an exception: 1 -> 1
-*** DONE Copy ToStringAudit aspect to remaining modules: 1 -> 1
-** ListDecorator refactoring #528:
-*** Fix ArrayList.different: 3 ->
