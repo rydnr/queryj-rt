@@ -73,7 +73,7 @@
       <artifactId>ST4</artifactId>
     </dependency>
     <dependency>
-      <groupId>com.jetbrains</groupId>
+      <groupId>org.jetbrains</groupId>
       <artifactId>annotations</artifactId>
     </dependency>
     <dependency>
