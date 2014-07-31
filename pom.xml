@@ -422,20 +422,20 @@
   </dependencyManagement>
 
   <scm>                                                                                     
-    <connection>scm:git:http://github.com/rydnr/acmsl-pom.git</connection> 
-    <developerConnection>scm:git:http://github.com/rydnr/acmsl-pom.git</developerConnection> 
-    <url>scm:git:http://github.com/rydnr/acmsl-pom.git</url> 
+    <connection>scm:git:http://github.com/rydnr/queryj.git</connection> 
+    <developerConnection>scm:git:http://github.com/rydnr/queryj.git</developerConnection> 
+    <url>scm:git:http://github.com/rydnr/queryj.git</url> 
     <tag>HEAD</tag>                                                                         
   </scm>                                                                                    
                                                                                             
   <issueManagement>                                                                         
     <system>github</system>                                                                   
-    <url>http://github.com/rydnr/acmsl-pom.git/</url>                                                                 
+    <url>http://github.com/rydnr/queryj.git/</url>                                                                 
   </issueManagement>                                                                        
                                                                                             
   <ciManagement>                                                                            
     <system>Hudson</system>                                                                 
-    <url>http://jenkins.acm-sl.org/</url>                                   
+    <url>http://jenkins.acm-sl.org/job/queryj</url>                                   
     <notifiers>                                                                             
       <notifier>                                                                            
         <type>mail</type>                                                                   
