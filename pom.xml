@@ -421,12 +421,6 @@
     </dependencies>
   </dependencyManagement>
 
-  <organization>                                                                            
-    <name>Ventura24</name>                                                                  
-    <url>http://www.ventura24.es</url>                                                      
-  </organization>                                                                           
-  <url>http://trac.v24es.tipp24.net/browser/${project.artifactId}</url>                     
-                                                                                            
   <scm>                                                                                     
     <connection>scm:git:http://github.com/rydnr/acmsl-pom.git</connection> 
     <developerConnection>scm:git:http://github.com/rydnr/acmsl-pom.git</developerConnection> 
