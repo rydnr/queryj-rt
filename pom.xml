@@ -28,10 +28,6 @@
     <version>latest-SNAPSHOT</version>
   </parent>
 
-  <prerequisites>
-    <maven>2.2.1</maven>
-  </prerequisites>
-
   <properties>
     <version.major>3</version.major>
     <version.minor>0</version.minor>
@@ -424,6 +420,41 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+
+  <organization>                                                                            
+    <name>Ventura24</name>                                                                  
+    <url>http://www.ventura24.es</url>                                                      
+  </organization>                                                                           
+  <url>http://trac.v24es.tipp24.net/browser/${project.artifactId}</url>                     
+                                                                                            
+  <scm>                                                                                     
+    <connection>scm:git:http://github.com/rydnr/acmsl-pom.git</connection> 
+    <developerConnection>scm:git:http://github.com/rydnr/acmsl-pom.git</developerConnection> 
+    <url>scm:git:http://github.com/rydnr/acmsl-pom.git</url> 
+    <tag>HEAD</tag>                                                                         
+  </scm>                                                                                    
+                                                                                            
+  <issueManagement>                                                                         
+    <system>github</system>                                                                   
+    <url>http://github.com/rydnr/acmsl-pom.git/</url>                                                                 
+  </issueManagement>                                                                        
+                                                                                            
+  <ciManagement>                                                                            
+    <system>Hudson</system>                                                                 
+    <url>http://jenkins.acm-sl.org/</url>                                   
+    <notifiers>                                                                             
+      <notifier>                                                                            
+        <type>mail</type>                                                                   
+        <sendOnError>true</sendOnError>                                                     
+        <sendOnFailure>true</sendOnFailure>                                                 
+        <sendOnSuccess>true</sendOnSuccess>                                                 
+        <sendOnWarning>true</sendOnWarning>                                                 
+        <configuration>                                                                     
+          <address>jenkins@acm-sl.org</address>                                       
+        </configuration>                                                                    
+      </notifier>                                                                           
+    </notifiers>                                                                            
+  </ciManagement>
 
   <build>
     <pluginManagement>
