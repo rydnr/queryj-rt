@@ -50,7 +50,7 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.jetbrains</groupId>
+      <groupId>org.jetbrains</groupId>
       <artifactId>annotations</artifactId>
     </dependency>
     <dependency>
