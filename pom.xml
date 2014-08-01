@@ -29,18 +29,8 @@
   </parent>
 
   <properties>
-    <version.major>3</version.major>
-    <version.minor>0</version.minor>
-    <version.queryj>latest-SNAPSHOT</version.queryj>
-    <!-- to ensure encoding is not platform-dependent -->
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <antlr4.visitor>true</antlr4.visitor>
     <antlr4.listener>true</antlr4.listener>
-    <version.antlr4>4.3</version.antlr4>
-    <version.checkthread>1.0.9</version.checkthread>
-    <version.powermock>1.5.5</version.powermock>
-    <version.oracle-driver>1.4</version.oracle-driver>
-    <version.netty>5.0.0.Alpha1</version.netty>
   </properties>
 
   <modules>
@@ -153,7 +143,7 @@
           <dependencies>
             <dependency>
               <groupId>com.oracle</groupId>
-              <artifactId>oracle-driver</artifactId>
+              <artifactId>ojdbc14</artifactId>
               <version>${version.oracle-driver}</version>
             </dependency>
           </dependencies>
