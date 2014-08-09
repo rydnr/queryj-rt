@@ -471,4 +471,13 @@ public class QueryJCLILog
             log(message, throwable, getPrintStream());
         }
     }
+
+    @Override
+    public String toString()
+    {
+        return "QueryJCLILog{" +
+               "m__iThreshold=" + m__iThreshold +
+               ", m__PrintStream=" + m__PrintStream +
+               '}';
+    }
 }
