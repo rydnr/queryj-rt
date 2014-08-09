@@ -212,6 +212,9 @@ public class CachingDecoratorFactory
     }
 
     /**
+     * {@inheritDoc}
+     */
+    /**
      * Creates a {@link TableDecorator}.
      * @param table the table name.
      * @param metadataManager the {@link MetadataManager} instance.
