@@ -115,6 +115,7 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
      * @param parameters the parameters.
      * @param metadataManager the database metadata manager.
      * @param customSqlProvider the custom SQL provider.
+     * @throws QueryJBuildException if the output dir is unavailable.
      */
     protected void buildTemplates(
         @NotNull final QueryJCommand parameters,
