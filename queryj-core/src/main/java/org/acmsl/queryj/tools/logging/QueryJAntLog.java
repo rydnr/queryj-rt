@@ -290,6 +290,7 @@ public class QueryJAntLog
      * <p>Logs a message with info log level.</p>
      * @param message the message.
      */
+    @Override
     public void info(@Nullable final Object message)
     {
         info(message, getProject());
