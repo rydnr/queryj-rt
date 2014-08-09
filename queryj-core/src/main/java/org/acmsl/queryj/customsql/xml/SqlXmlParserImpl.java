@@ -33,7 +33,7 @@
 package org.acmsl.queryj.customsql.xml;
 
 /*
- * Importing project-specific classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.api.exceptions.CannotReadCustomSqlXmlFileException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
