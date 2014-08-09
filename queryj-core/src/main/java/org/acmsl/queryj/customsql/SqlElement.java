@@ -782,6 +782,7 @@ public class SqlElement<T>
      * @param repositoryScope the <i>repositoryScope</i> attribute.
      * @param name the <i>name</i> attribute.
      * @param type the <i>type</i> attribute.
+     * @param cardinality the <i>cardinality</i> attribute.
      * @param implementation the <i>implementation</i> attribute.
      * @param value the <i>value</i> element.
      * @param parameterRefs the <i>parameter-ref</i> elements.
