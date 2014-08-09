@@ -233,7 +233,7 @@ public class QueryJMojo
      * The list of tables.
      * @parameter
      */
-    @Parameter (property = "driver", required = true)
+    @Parameter (required = false)
     private Table[] m__aTables = new Table[0];
     // @*** parameter property="tables"
 
