@@ -150,7 +150,7 @@ public class CustomSqlProviderRetrievalHandler
      * @param xmlFile the XML file.
      * @param factory the <code>SqlXmlParserFactory</code> instance.
      * @return such provider.
-     * throws QueryJBuildException if the {@link CustomSqlProvider} cannot be built.
+     * @throws QueryJBuildException if the {@link CustomSqlProvider} cannot be built.
      */
     @Nullable
     protected CustomSqlProvider buildCustomSqlProvider(
