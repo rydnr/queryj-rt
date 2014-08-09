@@ -99,7 +99,6 @@ import org.checkthread.annotations.ThreadSafe;
 @org.apache.maven.plugins.annotations.Mojo( name = "queryj", defaultPhase = LifecyclePhase.GENERATE_SOURCES, threadSafe = true)
 public class QueryJMojo
     extends AbstractMojo
-    implements Mojo
 {
     /**
      * The location of pom.properties within the jar file.
