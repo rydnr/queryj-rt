@@ -176,6 +176,6 @@ public abstract class AbstractTemplateContextFillHandler<C extends TemplateConte
     {
         return
             "{ \"templateContext\": \"" + templateContext.hashCode() + '"'
-            + " }";
+            + ", \"class\": \"AbstractTemplateContextFillHandler\" }";
     }
 }
