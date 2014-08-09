@@ -234,6 +234,7 @@ public class BindQueryParametersHandler
      * @param typeManager the metadata type manager.
      * @param conversionUtils the <code>ConversionUtils</code> instance.
      * @param <T> the type.
+     * @throws QueryJBuildException if the binding fails.
      */
     @SuppressWarnings("unchecked")
     protected <T> void bindParameter(
