@@ -345,14 +345,7 @@ public class CachingDecoratorFactory
     }
 
     /**
-     * Creates a <code>ForeignKeyDecorator</code>.
-     * @param sourceTableName the name of the source table.
-     * @param attributes the foreign key attributes.
-     * @param targetTableName the name of the target table.
-     * @param allowsNull whether the fk can be null as a whole.
-     * @param metadataManager the {@link MetadataManager} instance.
-     * @param customSqlProvider the {@link CustomSqlProvider} instance.
-     * @return the decorator instance.
+     * {@inheritDoc}
      */
     @NotNull
     @Override
