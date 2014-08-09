@@ -334,8 +334,7 @@ public abstract class AbstractForeignKeyDecorator
     @Nullable
     public Table<DecoratedString, Attribute<DecoratedString>, ListDecorator<Attribute<DecoratedString>>> getTable(
         @NotNull final String sourceTableName, @NotNull final MetadataManager metadataManager)
-    {                                            git status
-        git status
+    {
         return getTable(sourceTableName, metadataManager.getTableDAO());
     }
 
