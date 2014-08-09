@@ -583,6 +583,7 @@ public class CommonsLoggingMavenLogAdapter
     /**
      * Checks whether the debug level is enabled.
      * @param mavenLog the underlying {@link Log}.
+     * @return {@code true} in such case.
      */
     protected boolean isFatalEnabled(@NotNull final Log mavenLog)
     {
