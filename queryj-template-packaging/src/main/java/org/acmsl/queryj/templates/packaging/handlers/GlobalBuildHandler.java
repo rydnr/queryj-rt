@@ -110,7 +110,6 @@ public abstract class GlobalBuildHandler
      * @param factory the TF instance.
      * @return the template.
      * @throws QueryJBuildException if the template cannot be built.
-     *
      */
     @NotNull
     protected T buildTemplate(@NotNull final QueryJCommand parameters, @NotNull final TF factory)
