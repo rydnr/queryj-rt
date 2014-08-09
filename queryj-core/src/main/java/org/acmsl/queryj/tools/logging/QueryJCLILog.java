@@ -356,7 +356,7 @@ public class QueryJCLILog
      * {@inheritDoc}
      */
     @Override
-    public void debug(final Object message)
+    public void debug(@NotNull final Object message)
     {
         if  (isDebugEnabled())
         {
