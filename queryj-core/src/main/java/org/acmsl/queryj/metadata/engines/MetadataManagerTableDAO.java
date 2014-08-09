@@ -751,6 +751,6 @@ public abstract class MetadataManagerTableDAO<M extends MetadataManager>
               "{ "
             + ", \"metadataManager\": \"" + m__MetadataManager.hashCode() + "\" "
             + ", \"class\": \"MetadataManagerTableDAO\""
-            + ", \"package\": \"org.acmsl.queryj}";
+            + ", \"package\": \"org.acmsl.queryj.metadata.engines\" }";
     }
 }
