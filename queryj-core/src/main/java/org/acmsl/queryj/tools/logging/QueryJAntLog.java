@@ -147,6 +147,9 @@ public class QueryJAntLog
     }
 
     /**
+     * {inheritDoc}
+     */
+    /**
      * <p> Is fatal logging currently enabled? </p>
      *
      * <p> Call this method to prevent having to perform expensive operations
