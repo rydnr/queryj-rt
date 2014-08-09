@@ -107,6 +107,7 @@ public abstract class AbstractFillHandler<P>
      * @param placeHolder the placeholder.
      * model.
      * @return {@code false} if the handler processes the chain correctly.
+     * @throws InvalidTemplateException if the template is invalid.
      */
     @SuppressWarnings("unchecked")
     public boolean handle(@NotNull final Map<String, P> map, @NotNull final String placeHolder)
