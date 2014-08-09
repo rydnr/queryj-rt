@@ -158,6 +158,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
      * @param templateFactory the template factory.
      * @param foreignKeys the foreign keys.
      * throws QueryJBuildException if the templates cannot be built.
+     * @throws QueryJBuildException if the templates cannot be built.
      */
     protected void buildTemplates(
         @NotNull final QueryJCommand parameters,
