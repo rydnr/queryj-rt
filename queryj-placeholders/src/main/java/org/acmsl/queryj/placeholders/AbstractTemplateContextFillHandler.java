@@ -134,7 +134,7 @@ public abstract class AbstractTemplateContextFillHandler<C extends TemplateConte
      * Retrieves the template value for this placeholder.
      * @param context the context.
      * @return such value.
-     * @throws QueryJBuildException if the
+     * @throws QueryJBuildException if the value is unavailable.
      */
     @Nullable
     protected abstract P getValue(@NotNull final C context)
