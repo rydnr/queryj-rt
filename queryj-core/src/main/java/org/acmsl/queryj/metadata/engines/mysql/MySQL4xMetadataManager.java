@@ -86,6 +86,9 @@ public class MySQL4xMetadataManager
      * @param catalog the database catalog.
      * @param schema the database schema.
      * @param caseSensitive whether the database engine is case sensitive or not.
+     * @param engineName the engine name.
+     * @param engineVersion the engine version.
+     * @param quote the quote character.
      * @throws SQLException if the extraction fails.
      * @throws QueryJException if any other error occurs.
      */
