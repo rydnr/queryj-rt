@@ -1310,6 +1310,7 @@ public abstract class AbstractTemplatesTest<G, F>
      * Configures a parser for given stream.
      * @param stream the stream to parse.
      * @return the {@link TemplateDefParser}.
+     * @throws
      */
     @NotNull
     protected TemplateDefParser setupParser(@NotNull final InputStream stream)
