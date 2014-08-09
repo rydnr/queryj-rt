@@ -763,6 +763,8 @@ public abstract class AbstractTemplatesTest<G, F>
      * Sets up the Java parser.
      * @param javaFile the Java contents to parse.
      * @return the {@link JavaParser} instance.
+     * @throws RecognitionException if the format is invalid.
+     * @throws
      */
     @SuppressWarnings("unchecked")
     @NotNull
