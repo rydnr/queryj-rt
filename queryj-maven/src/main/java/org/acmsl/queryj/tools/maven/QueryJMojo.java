@@ -271,7 +271,7 @@ public class QueryJMojo
      * @required
      * @readonly
      */
-    @Parameter (defaultValue = "${session}", required = true)
+    @Parameter (defaultValue = "${session}")
     private MavenSession session;
 
     /**
