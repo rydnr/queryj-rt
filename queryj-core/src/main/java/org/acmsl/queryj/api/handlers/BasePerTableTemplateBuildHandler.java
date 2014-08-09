@@ -339,6 +339,7 @@ public abstract class BasePerTableTemplateBuildHandler
      * @param tableName the table name.
      * @param tableDAO the {@link TableDAO} instance.
      * @return such information.
+     * @throws SQLException if the content is unavailable.
      */
     @Nullable
     protected List<Row<String>> retrieveStaticContent(
