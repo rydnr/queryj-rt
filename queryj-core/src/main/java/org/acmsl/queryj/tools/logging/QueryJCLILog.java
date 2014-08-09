@@ -293,9 +293,9 @@ public class QueryJCLILog
     }
 
     /**
-     * <p>Logs a message with trace log level.</p>
-     * @param message the message.
+     * {@inheritDoc}
      */
+    @Override
     public void trace(final Object message)
     {
         if  (isTraceEnabled())
