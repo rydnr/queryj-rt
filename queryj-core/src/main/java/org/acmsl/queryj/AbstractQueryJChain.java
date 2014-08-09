@@ -117,6 +117,7 @@ public abstract class AbstractQueryJChain
     /**
      * Requests the chained logic to be performed.
      * @param settings the command.
+     * @throws QueryJBuildException if the provisioning fails.
     */
     public void process(@NotNull final C settings)
         throws QueryJBuildException
