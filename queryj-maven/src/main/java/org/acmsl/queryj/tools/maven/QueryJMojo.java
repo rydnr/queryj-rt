@@ -253,9 +253,8 @@ public class QueryJMojo
 
     /**
      * Whether to disable NotNull annotations.
-     * @parameter property="disableNotNullAnnotations"
      */
-    @Parameter (property = "disableNotNullAnnotations", required = true)
+    @Parameter (property = "disableNotNullAnnotations", required = false)
     private Boolean m__bDisableNotNullAnnotations = false;
 
     /**
