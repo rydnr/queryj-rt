@@ -437,7 +437,7 @@ public class TemplatePackagingMojo
     /**
      * Executes Template Packaging via Maven2.
      * @param log the Maven log.
-     * @throws MojoExecutionException
+     * @throws MojoExecutionException if the process fails.
      */
     protected void execute(@NotNull final Log log)
         throws MojoExecutionException
