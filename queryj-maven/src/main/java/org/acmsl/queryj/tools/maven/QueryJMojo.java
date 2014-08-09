@@ -1219,6 +1219,7 @@ public class QueryJMojo
     /**
      * Executes QueryJ via Maven2.
      * @param log the Maven log.
+     * @throws MojoExecutionException
      */
     protected void execute(@NotNull final Log log)
         throws MojoExecutionException
