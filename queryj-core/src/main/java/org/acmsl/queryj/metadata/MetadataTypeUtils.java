@@ -150,6 +150,8 @@ public class MetadataTypeUtils
      * contained in this instance.
      * @return such information.
      */
+    @Override
+    @NotNull
     public String toString()
     {
         return
