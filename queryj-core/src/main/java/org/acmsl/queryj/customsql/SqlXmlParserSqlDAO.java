@@ -197,7 +197,6 @@ public class SqlXmlParserSqlDAO
 
     /**
      * Retrieves all {@link Sql} associated to a given DAO (table).
-     *
      * @param table the table.
      * @return the associated {@link Sql} instances.
      */
