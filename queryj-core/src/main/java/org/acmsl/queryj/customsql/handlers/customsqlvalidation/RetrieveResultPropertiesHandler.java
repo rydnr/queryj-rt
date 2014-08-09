@@ -181,6 +181,7 @@ public class RetrieveResultPropertiesHandler
      * @param metadataManager the <code>MetadataManager</code> instance.
      * @param typeManager the <code>MetadataTypeManager</code> instance.
      * @return the properties.
+     * @throws QueryJBuildException if the operation fails.
      */
     protected List<Property<String>> retrieveProperties(
         @NotNull final Sql<String> sql,
