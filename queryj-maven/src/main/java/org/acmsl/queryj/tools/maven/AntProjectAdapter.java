@@ -272,6 +272,7 @@ public class AntProjectAdapter
     /**
      * Creates a subproject.
      * @param project the {@link Project} instance.
+     * @return the sub project.
      */
     @NotNull
     protected Project createSubProject(@NotNull final Project project)
