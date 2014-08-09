@@ -1140,6 +1140,7 @@ public class QueryJTask
 
     /**
      * Retrieves whether to include timestamps in the generated code.
+     * @param delegee the command.
      * @return such information.
      */
     protected final boolean getDisableGenerationTimestamps(@NotNull final QueryJCommand delegee)
