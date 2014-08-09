@@ -199,6 +199,8 @@ public class QueryJLogFactory
      * returned (the meaning of this name is only known to the underlying
      * logging implementation that is being wrapped)
      * @param log the possibly cached log instance.
+     * @return the {@link Log} instance.
+     *
      */
     @Nullable
     public Log getInstance(@NotNull final String name, @Nullable final Log log)
