@@ -241,7 +241,7 @@ public class QueryJMojo
      * The file encoding.
      * @parameter property="encoding" default-value="${project.build.sourceEncoding}"
      */
-    @Parameter (property = "driver", required = true)
+    @Parameter (property = "encoding", required = true)
     private String m__strEncoding;
 
     /**
