@@ -156,7 +156,7 @@ public class QueryJMojo
      * The catalog.
      * @parameter property="catalog"
      */
-    @Parameter (property = "driver", required = true)
+    @Parameter (property = "catalog", required = true)
     private String catalog;
 
     /**
