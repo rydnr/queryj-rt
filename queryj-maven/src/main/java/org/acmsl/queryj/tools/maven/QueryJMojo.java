@@ -168,7 +168,6 @@ public class QueryJMojo
 
     /**
      * The repository.
-     * @parameter property="repository" @required
      */
     @Parameter (property = "repository", required = true)
     private String m__strRepository;
