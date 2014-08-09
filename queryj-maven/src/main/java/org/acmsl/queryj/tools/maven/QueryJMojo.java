@@ -210,7 +210,6 @@ public class QueryJMojo
 
     /**
      * The grammar folder.
-     * @parameter property="grammarFolder"
      */
     @Parameter (property = "grammarFolder", required = false)
     private File m__GrammarFolder;
