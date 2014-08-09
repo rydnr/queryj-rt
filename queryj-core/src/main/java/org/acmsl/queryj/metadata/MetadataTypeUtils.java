@@ -88,7 +88,7 @@ public class MetadataTypeUtils
      * @return such class name (not fully-qualified).
      */
     @NotNull
-    public String getWrapperClass(final String type)
+    public String getWrapperClass(@NotNull final String type)
     {
         String result = type;
 
