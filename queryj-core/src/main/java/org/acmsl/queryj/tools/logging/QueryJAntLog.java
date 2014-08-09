@@ -227,6 +227,7 @@ public class QueryJAntLog
      * <p>Logs an error with trace log level.</p>
      * @param message the message.
      * @param throwable the cause.
+     * @param project the project.
      */
     protected void trace(
         @Nullable final Object message,
