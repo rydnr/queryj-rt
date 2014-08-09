@@ -406,6 +406,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
      * @param context the context.
      * @param debuggingService the {@link TemplateDebuggingService} instance.
      * @return {@code true} if the debug takes place.
+     * @throws DevelopmentModeException in case of dub
      */
     protected boolean debugging(
         @NotNull final String output,
