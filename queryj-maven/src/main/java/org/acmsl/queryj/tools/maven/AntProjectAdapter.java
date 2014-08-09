@@ -353,7 +353,7 @@ public class AntProjectAdapter
      * Creates a class loader.
      * @param path the path.
      * @param project the {@link Project} instance.
-     * @return the ANT
+     * @return the ANT-specific class loader.
      */
     @NotNull
     protected AntClassLoader createClassLoader(@NotNull final Path path, @NotNull final Project project)
