@@ -106,6 +106,8 @@ public abstract class PerTemplateDefBuildHandler
      * Builds the template.
      * @param parameters the parameters.
      * @param factory the TF instance.
+     * @return the templates.
+     * @throws QueryJBuildException if the templates cannot be built.
      */
     @NotNull
     protected List<T> buildTemplates(@NotNull final QueryJCommand parameters, @NotNull final TF factory)
