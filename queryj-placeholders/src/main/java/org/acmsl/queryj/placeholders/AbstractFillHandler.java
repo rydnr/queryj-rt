@@ -111,8 +111,6 @@ public abstract class AbstractFillHandler<P>
      */
     @SuppressWarnings("unchecked")
     public boolean handle(@NotNull final Map<String, P> map, @NotNull final String placeHolder)
-        throws InvalidTemplateException,
-               QueryJBuildException
     {
         final boolean result = true;
 
