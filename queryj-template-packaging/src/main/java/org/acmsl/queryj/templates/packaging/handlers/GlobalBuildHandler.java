@@ -72,6 +72,9 @@ import java.util.List;
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2013/09/15 07:34
+ * @param <T> the template type.
+ * @param <TF> the template factory type.
+ * @param <C> the context type.
  */
 @ThreadSafe
 public abstract class GlobalBuildHandler
