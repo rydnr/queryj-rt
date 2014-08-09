@@ -62,7 +62,7 @@ import java.util.Map.Entry;
  * Abstract implementation to simplify fill handlers.
  * @author <a href="jose@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
- * 2010/05/13
+ * Created: 2010/05/13
  */
 @SuppressWarnings("unused")
 public abstract class AbstractFillHandler<P>
