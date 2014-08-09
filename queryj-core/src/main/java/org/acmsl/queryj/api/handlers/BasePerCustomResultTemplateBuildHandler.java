@@ -314,7 +314,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
      * @param customSqlProvider the custom RESULT provider.
      * @param allowDuplicates whether to remove duplicates.
      * @return such templates.
-     * throws QueryJBuildException if the custom results are unavailable.
+     * @throws QueryJBuildException if the custom results are unavailable.
      */
     @NotNull
     protected List<Result<String>> retrieveCustomResults(
