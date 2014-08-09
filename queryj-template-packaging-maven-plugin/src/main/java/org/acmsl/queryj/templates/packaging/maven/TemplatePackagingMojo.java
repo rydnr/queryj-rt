@@ -82,9 +82,6 @@ import org.checkthread.annotations.ThreadSafe;
 /**
  * Generates required QueryJ boilerplate from user-provided templates, via Maven.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
- * @goal package-templates
- * @execute phase="generate-sources"
- * @threadSafe
  * @since 3.0
  * Created: 2013/06/16
  */
