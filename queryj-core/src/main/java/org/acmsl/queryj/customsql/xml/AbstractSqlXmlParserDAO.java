@@ -146,6 +146,8 @@ public abstract class AbstractSqlXmlParserDAO
     /**
      * Retrieves the element matching given id.
      * @param id the id.
+     * @param type the type.
+     * @param collection the collection.
      * @return the element, if any.
      */
     @SuppressWarnings("unchecked")
