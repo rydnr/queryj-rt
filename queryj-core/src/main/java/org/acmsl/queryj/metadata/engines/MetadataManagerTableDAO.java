@@ -379,7 +379,7 @@ public abstract class MetadataManagerTableDAO<M extends MetadataManager>
      * @param metaLanguageUtils the {@link MetaLanguageUtils}  instance.
      * @param metadataUtils the {@link MetadataUtils} instance.
      * @return the retrieved rows.
-     * throws SQLException if the contents cannot be retrieved.
+     * @throws SQLException if the contents cannot be retrieved.
      */
     @NotNull
     protected List<Row<String>> queryContents(
