@@ -368,6 +368,7 @@ public class QueryJAntLog
      * <p>Logs an error with warn log level.</p>
      * @param message the message.
      * @param throwable the cause.
+     * @param project the <code>Project</code> instance.
      */
     protected void warn(
         @Nullable final Object message,
