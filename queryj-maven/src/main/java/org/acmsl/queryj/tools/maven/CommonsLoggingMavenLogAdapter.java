@@ -120,7 +120,7 @@ public class CommonsLoggingMavenLogAdapter
     /**
      * Checks whether the debug level is enabled.
      * @param mavenLog the underlying {@link Log}.
-     * @return the
+     * @return {@code true} in such case.
      */
     protected boolean isTraceEnabled(@NotNull final Log mavenLog)
     {
