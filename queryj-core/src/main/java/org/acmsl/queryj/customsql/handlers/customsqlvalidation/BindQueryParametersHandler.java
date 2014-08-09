@@ -510,6 +510,7 @@ public class BindQueryParametersHandler
      * @param parameter the {@link Parameter}.
      * @param sql the {@link Sql}.
      * @return the {@link Date} value if it's a Date.
+     * @throws QueryJBuildException if the binding fails.
      */
     protected Date assumeIsADate(
         @NotNull final Parameter<String, ?> parameter,
