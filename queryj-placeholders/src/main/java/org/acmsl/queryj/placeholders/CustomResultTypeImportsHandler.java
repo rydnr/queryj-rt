@@ -115,6 +115,7 @@ public class CustomResultTypeImportsHandler
     /**
      * Retrieves the list of JDK imports associated to the result properties.
      * @param customResult the custom result.
+     * @param customSqlProvider the {@link CustomSqlProvider} instance.
      * @param metadataManager the {@link MetadataManager} instance.
      * @return such list.
      */
