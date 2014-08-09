@@ -36,7 +36,7 @@
 package org.acmsl.queryj.api;
 
 /*
- * Importing project classes classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
 
