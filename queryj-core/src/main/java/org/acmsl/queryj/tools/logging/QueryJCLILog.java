@@ -389,10 +389,9 @@ public class QueryJCLILog
     }
     
     /**
-     * <p>Logs an error with info log level.</p>
-     * @param message the message.
-     * @param throwable the cause.
+     * {@inheritDoc}
      */
+    @Override
     public void info(final Object message, final Throwable throwable)
     {
         if  (isInfoEnabled())
