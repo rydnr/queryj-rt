@@ -389,6 +389,7 @@ public abstract class AbstractForeignKeyDecorator
 
     /**
      * Checks whether this foreign key allows null or not.
+     * @param attributes the attributes.
      * @param <V> the attribute type.
      * @return such condition.
      */
