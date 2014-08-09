@@ -164,6 +164,7 @@ public class QueryJAntLog
      * (for example, <code>String</code> concatenation)
      * when the log level is more than info. </p>
      */
+    @Override
     public boolean isInfoEnabled()
     {
         return true;
