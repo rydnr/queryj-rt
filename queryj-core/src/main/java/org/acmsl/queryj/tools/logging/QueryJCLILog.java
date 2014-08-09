@@ -224,13 +224,9 @@ public class QueryJCLILog
     }
 
     /**
-     * <p> Is warn logging currently enabled? </p>
-     *
-     * <p> Call this method to prevent having to perform expensive operations
-     * (for example, <code>String</code> concatenation)
-     * when the log level is more than warn. </p>
-     * @return <code>true</code> in such case.
+     * {@inheritDoc}
      */
+    @Override
     public boolean isWarnEnabled()
     {
         return isWarnEnabled(getThreshold());
