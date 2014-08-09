@@ -100,7 +100,7 @@ public class EngineHandler
     }
 
     /**
-     * Retrieves the engine name.
+     * Retrieves the {@link Engine}.
      * @param metadataManager the {@link MetadataManager} instance.
      * @return the engine.
      */
