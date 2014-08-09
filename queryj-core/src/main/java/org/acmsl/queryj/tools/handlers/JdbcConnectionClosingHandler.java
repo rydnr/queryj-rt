@@ -251,10 +251,8 @@ public class JdbcConnectionClosingHandler
     /**
      * Removes the JDBC connection in given attribute map.
      * @param parameters the parameter map.
-     * @throws QueryJBuildException if the connection cannot be remobe.
      */
     protected void removeConnection(@NotNull final QueryJCommand parameters)
-        throws  QueryJBuildException
     {
         new QueryJCommandWrapper<Connection>(parameters)
             .setSetting(JdbcConnectionOpeningHandler.JDBC_CONNECTION, null);
