@@ -106,7 +106,7 @@ public class SqlXmlParserParameterDAO
      * Retrieves all {@link Parameter parameters} used in given {@link org.acmsl.queryj.customsql.Sql}.
      *
      * @param sqlId the {@link Sql} identifier.
-     * @return the list of parameters required by given {@link org.acmsl.queryj.customsql.Sql}.
+     * @return the list of parameters required by given {@link Sql}.
      */
     @NotNull
     @Override
