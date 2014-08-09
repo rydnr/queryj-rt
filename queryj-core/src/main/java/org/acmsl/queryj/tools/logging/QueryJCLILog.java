@@ -480,7 +480,7 @@ public class QueryJCLILog
     public String toString()
     {
         return
-            "{ \"threshold\": " + m__iThreshold
+              "{ \"threshold\": " + m__iThreshold
             + ", \"printStream\": \"" + m__PrintStream.hashCode() + '"'
             + ", \"class\": \"QueryJCLILog\""
             + ", \"package\": \"org.acmsl.queryj.tools.logging\" }";
