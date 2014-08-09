@@ -301,6 +301,7 @@ public abstract class AbstractCustomSqlProvider
      * @param type the parameter type.
      * @param charset the charset.
      * @param separator the hash separator.
+     * @return the hash.
      * @param <T> the type.
      */
     @NotNull
