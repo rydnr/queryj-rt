@@ -95,7 +95,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @SuppressWarnings("unused")
 @ThreadSafe
-@Mojo( name = "queryj", defaultPhase = LifecyclePhase.GENERATE_SOURCES, thread)
+@Mojo( name = "queryj", defaultPhase = LifecyclePhase.GENERATE_SOURCES, threadSafe)
 public class QueryJMojo
     extends AbstractMojo
     implements Mojo
