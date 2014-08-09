@@ -148,12 +148,7 @@ public class CachingDecoratorFactory
     }
 
     /**
-     * Creates a <code>ResultDecorator</code> for given
-     * result instance.
-     * @param result the result.
-     * @param customSqlProvider the <code>CustomSqlProvider</code> instance.
-     * @param metadataManager the <code>MetadataManager</code> instance.
-     * @return the decorated result for the concrete template.
+     * {@inheritDoc}
      */
     @NotNull
     @Override
