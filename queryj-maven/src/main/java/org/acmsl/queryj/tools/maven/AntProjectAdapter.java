@@ -1078,7 +1078,7 @@ public class AntProjectAdapter
      */
     @Override
     @NotNull
-    public Hashtable getTaskDefinitions()
+    public Hashtable<String, Class<?>> getTaskDefinitions()
     {
         return getTaskDefinitions(getProject());
     }
