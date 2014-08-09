@@ -103,7 +103,7 @@ public class JdbcConnectionOpeningHandler
      * attribute map.
      * @param parameters the parameter map.
      * @return the JDBC connection.
-     * @throws QueryJBuildException if the connection cannot be closed.
+     * @throws QueryJBuildException if the connection cannot be opened.
      */
     @NotNull
     protected Connection openConnection(@NotNull final QueryJCommand parameters)
