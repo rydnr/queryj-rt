@@ -1099,6 +1099,7 @@ public class QueryJTask
 
     /**
      * Retrieves the thread count.
+     * @param delegee the command.
      * @return such value.
      */
     @SuppressWarnings("unused")
