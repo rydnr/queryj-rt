@@ -92,6 +92,7 @@ public abstract class AbstractCustomSqlProvider
     /**
      * Computes the hash of given String.
      * @param value the value.
+     * @param charset the charset.
      * @return the hash.
      */
     @NotNull
