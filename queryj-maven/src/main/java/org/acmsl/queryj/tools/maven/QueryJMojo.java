@@ -155,7 +155,7 @@ public class QueryJMojo
     /**
      * The catalog.
      */
-    @Parameter (property = "catalog", required = true)
+    @Parameter (property = "catalog", required = false)
     private String catalog;
 
     /**
