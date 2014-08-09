@@ -315,7 +315,10 @@ public class QueryJAntLog
             message + "(" + throwable.getMessage() + ")",
             Project.MSG_DEBUG);
     }
-    
+
+    /**
+     * {inheritDoc}
+     */
     /**
      * <p>Logs a message with info log level.</p>
      * @param message the message.
