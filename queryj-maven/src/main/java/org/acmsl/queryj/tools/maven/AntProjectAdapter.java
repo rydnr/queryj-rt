@@ -94,6 +94,7 @@ public class AntProjectAdapter
      * Creates a {@link AntProjectAdapter} with given Ant {@link Project}
      * instance.
      * @param project the project.
+     * @param log the log.
      */
     public AntProjectAdapter(@NotNull final Project project, @NotNull final Log log)
     {
