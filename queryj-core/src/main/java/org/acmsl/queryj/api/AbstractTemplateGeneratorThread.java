@@ -400,6 +400,7 @@ public abstract class AbstractTemplateGeneratorThread
     /**
      * Runs the template generation process.
      * @param templateGenerator the template generator.
+     * @param template the template.
      * @param outputDir the output folder.
      * @param rootFolder the root folder.
      * @param charset the {@link Charset} to use.
