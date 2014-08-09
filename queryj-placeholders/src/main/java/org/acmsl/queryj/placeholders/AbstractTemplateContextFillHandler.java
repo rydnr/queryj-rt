@@ -175,7 +175,7 @@ public abstract class AbstractTemplateContextFillHandler<C extends TemplateConte
     public String toString()
     {
         return
-            "{ \"templateContext=" + templateContext +
+            "{ \"templateContext\": " + templateContext +
                " }";
     }
 }
