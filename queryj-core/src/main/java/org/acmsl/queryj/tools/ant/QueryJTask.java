@@ -1288,7 +1288,7 @@ public class QueryJTask
      */
     @Override
     @Nullable
-    public Object createDynamicElement(final String name)
+    public Object createDynamicElement(@NotNull final String name)
     {
         @Nullable final Object result;
 
