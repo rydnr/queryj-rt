@@ -479,8 +479,9 @@ public class QueryJCLILog
     @NotNull
     public String toString()
     {
-        return "{ \"threshold\": " + m__iThreshold +
-               ", m__PrintStream=" + m__PrintStream +
+        return
+            "{ \"threshold\": " + m__iThreshold +
+            + ", m__PrintStream=" + m__PrintStream +
                '}';
     }
 }
