@@ -226,6 +226,7 @@ public class QueryJMojo
      * The grammar suffix.
      * @parameter property="grammarSuffix"
      */
+    @Parameter (property = "driver", required = true)
     private String m__strGrammarSuffix;
 
     /**
