@@ -499,6 +499,9 @@ public class QueryJAntLog
     }
 
     /**
+     * {inheritDoc}
+     */
+    /**
      * <p>Logs an error with fatal log level.</p>
      * @param message the message.
      * @param throwable the cause.
