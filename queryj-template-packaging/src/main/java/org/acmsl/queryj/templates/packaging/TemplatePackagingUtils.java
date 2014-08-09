@@ -117,6 +117,7 @@ public class TemplatePackagingUtils
      * Builds the final file name.
      * @param templateDef the {@link TemplateDef} instance.
      * @param templateName the template name.
+     * @param extension the filename extension.
      * @return such file name.
      */
     @NotNull
