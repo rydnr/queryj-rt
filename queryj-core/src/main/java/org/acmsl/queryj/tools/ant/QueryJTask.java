@@ -1321,7 +1321,6 @@ public class QueryJTask
 
     /**
      * {@inheritDoc}
-     * @return
      */
     @NotNull
     @Override
