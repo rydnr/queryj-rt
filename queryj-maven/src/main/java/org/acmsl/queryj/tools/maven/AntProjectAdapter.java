@@ -1683,7 +1683,7 @@ public class AntProjectAdapter
      */
     @Override
     @NotNull
-    public Map getCopyOfReferences()
+    public Map<String, Object> getCopyOfReferences()
     {
         return getCopyOfReferences(getProject());
     }
