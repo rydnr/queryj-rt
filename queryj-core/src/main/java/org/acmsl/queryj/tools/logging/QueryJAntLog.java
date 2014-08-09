@@ -198,6 +198,7 @@ public class QueryJAntLog
      * <p>Logs a message with trace log level.</p>
      * @param message the message.
      */
+    @Override
     public void trace(@Nullable final Object message)
     {
         trace(message, getProject());
