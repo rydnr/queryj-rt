@@ -147,9 +147,8 @@ public class QueryJMojo
 
     /**
      * The password.
-     * @parameter property="password" @required
      */
-    @Parameter (property = "driver", required = true)
+    @Parameter (property = "password", required = true)
     private String m__strPassword;
 
     /**
