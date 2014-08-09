@@ -207,8 +207,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
     }
 
     /**
-     * Retrieves the table name.
-     * @return such name.
+     * {@inheritDoc}
      */
     @NotNull
     @Override
