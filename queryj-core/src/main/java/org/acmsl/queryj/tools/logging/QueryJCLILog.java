@@ -141,6 +141,7 @@ public class QueryJCLILog
      * Retrieves the <code>PrintStream</code> instance.
      * @return the print stream.
      */
+    @NotNull
     public PrintStream getPrintStream()
     {
         return m__PrintStream;
