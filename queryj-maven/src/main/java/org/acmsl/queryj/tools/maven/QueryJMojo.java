@@ -43,7 +43,7 @@ import org.acmsl.queryj.tools.ant.QueryJTask;
 import org.acmsl.queryj.tools.handlers.ParameterValidationHandler;
 
 /*
- * Importing some ACM-SL Commons classes.
+ * Importing some ACM-SL Java Commons classes.
  */
 import org.acmsl.commons.logging.UniqueLogFactory;
 
