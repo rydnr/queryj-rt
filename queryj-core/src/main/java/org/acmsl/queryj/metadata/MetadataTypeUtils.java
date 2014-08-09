@@ -39,7 +39,6 @@ package org.acmsl.queryj.metadata;
 import org.acmsl.commons.patterns.Singleton;
 import org.acmsl.commons.patterns.Utils;
 import org.acmsl.queryj.Literals;
-import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing NotNull annotations.
