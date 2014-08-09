@@ -59,6 +59,7 @@ import java.io.Serializable;
  * @author <a href="mailto:jose@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2012/05/13
+ * @param <P> the placeholder type.
  */
 public interface FillHandler<P>
     extends TemplateHandler<QueryJCommand>,
