@@ -405,6 +405,7 @@ public class QueryJAntLog
      * @param message the message.
      * @param throwable the cause.
      */
+    @Override
     public void error(@Nullable final Object message, @NotNull final Throwable throwable)
     {
         error(message, throwable, getProject());
