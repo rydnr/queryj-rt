@@ -182,7 +182,7 @@ public class BindQueryParametersHandler
      * @param customSqlProvider the {@link CustomSqlProvider}.
      * @param typeManager the {@link TypeManager}.
      * @param conversionUtils the {@link ConversionUtils}.
-     * @
+     * @throws QueryJBuildException if the binding fails.
      */
     protected void bindParameters(
         @NotNull final Sql<String> sql,
