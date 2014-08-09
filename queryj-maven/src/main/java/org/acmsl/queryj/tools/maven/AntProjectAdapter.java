@@ -1704,7 +1704,7 @@ public class AntProjectAdapter
      */
     @Override
     @Nullable
-    public Object getReference(@NotNull final String key)
+    public <T> T getReference(@NotNull final String key)
     {
         return getReference(key, getProject());
     }
