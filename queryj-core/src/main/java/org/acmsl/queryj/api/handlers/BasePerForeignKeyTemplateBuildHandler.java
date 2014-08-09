@@ -119,6 +119,7 @@ public abstract class BasePerForeignKeyTemplateBuildHandler
      * @param metadataManager the database metadata manager.
      * @param templateFactory the template factory.
      * throws QueryJBuildException if the templates cannot be built.
+     * @throws QueryJBuildException if the templates cannot be built.
      */
     protected void buildTemplates(
         @NotNull final QueryJCommand parameters,
