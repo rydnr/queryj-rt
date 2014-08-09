@@ -1080,6 +1080,7 @@ public class QueryJTask
     /**
      * Specifies the thread count.
      * @param threadCount such value.
+     * @param delegee the command.
      */
     protected void setThreadCount(final int threadCount, @NotNull final QueryJCommand delegee)
     {
