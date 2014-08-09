@@ -92,6 +92,7 @@ public abstract class GlobalBuildHandler
      * Handles given information.
      * @param parameters the parameters.
      * @return <code>true</code> if the chain should be stopped.
+     * @throws QueryJBuildException if the template cannot be built.
      */
     @Override
     public boolean handle(@NotNull final QueryJCommand parameters)
