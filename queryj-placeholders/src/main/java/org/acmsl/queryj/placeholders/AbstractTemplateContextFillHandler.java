@@ -152,7 +152,7 @@ public abstract class AbstractTemplateContextFillHandler<C extends TemplateConte
      * {@inheritDoc}
      */
     @Override
-    public boolean equals(final Object obj)
+    public boolean equals(@Nullable final Object obj)
     {
         if (obj == null)
         {
