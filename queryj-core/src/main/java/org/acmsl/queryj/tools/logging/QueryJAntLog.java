@@ -252,6 +252,7 @@ public class QueryJAntLog
      * <p>Logs a message with debug log level.</p>
      * @param message the message.
      * @param project the <code>Project</code> instance.
+     * @param project the project.
      */
     protected void debug(@Nullable final Object message, @NotNull final Project project)
     {
