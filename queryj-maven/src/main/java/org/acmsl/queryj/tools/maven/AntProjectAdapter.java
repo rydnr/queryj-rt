@@ -855,6 +855,7 @@ public class AntProjectAdapter
 
     /**
      * Specifies the description.
+     * @param description the description.
      * @param project the {@link Project} instance.
      */
     protected void setDescription(@NotNull final String description, @NotNull final Project project)
