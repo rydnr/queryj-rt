@@ -600,6 +600,7 @@ public class MetadataUtils
      * @param properties the properties.
      * @param metadataTypeManager the {@link MetadataTypeManager} instance.
      * @return such collection.
+     * @param <T> the type.
      */
     @NotNull
     public <T> List<Property<T>> filterLobProperties(
