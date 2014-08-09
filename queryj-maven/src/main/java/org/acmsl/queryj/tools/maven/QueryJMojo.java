@@ -96,7 +96,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @SuppressWarnings("unused")
 @ThreadSafe
-
+@Mojo()
 public class QueryJMojo
     extends AbstractMojo
     implements Mojo
