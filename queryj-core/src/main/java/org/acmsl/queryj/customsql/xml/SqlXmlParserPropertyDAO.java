@@ -181,6 +181,7 @@ public class SqlXmlParserPropertyDAO
      * @param columnName the column name.
      * @param index the property index.
      * @param type the type.
+     * @param nullable whether the property is nullable.
      * @param parser the {@link SqlXmlParser} instance.
      */
     protected void insert(
