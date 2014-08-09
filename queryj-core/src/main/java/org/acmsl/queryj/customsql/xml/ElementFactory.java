@@ -89,7 +89,7 @@ public abstract class ElementFactory
     }
 
     /**
-     * Creates a Customer value object from given SAX attributes.
+     * Creates an object from given SAX attributes.
      * @param attributes the attributes.
      * @return the Customer information.
      */
