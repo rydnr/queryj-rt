@@ -170,6 +170,7 @@ public class QueryJCLILog
      * <p> Call this method to prevent having to perform expensive operations
      * (for example, <code>String</code> concatenation)
      * when the log level is more than trace. </p>
+     * @param
      * @return <code>true</code> in such case.
      */
     protected boolean isTraceEnabled(final int threshold)
