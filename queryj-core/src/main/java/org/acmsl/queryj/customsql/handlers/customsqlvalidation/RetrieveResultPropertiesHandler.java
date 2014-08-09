@@ -399,6 +399,7 @@ public class RetrieveResultPropertiesHandler
      * @param methodName the method name.
      * @param parameterClasses the parameter classes.
      * @return the <code>Method</code> instance.
+     * @throws QueryJBuildException if the getter information is unavailable.
      */
     @NotNull
     protected Method retrieveMethod(
