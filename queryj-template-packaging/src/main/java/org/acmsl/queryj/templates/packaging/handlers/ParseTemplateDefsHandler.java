@@ -545,7 +545,7 @@ public class ParseTemplateDefsHandler
      * @param file the template def contents to parse.
      * @return the {@link TemplateDefParser} instance.
      * @throws RecognitionException if the format is invalid.
-     * @throws IOException if the
+     * @throws IOException if the source cannot be read.
      */
     @NotNull
     protected TemplateDefParser setUpParser(@NotNull final File file)
