@@ -1089,7 +1089,7 @@ public class AntProjectAdapter
      * @return the hash table.
      */
     @NotNull
-    protected Hashtable getTaskDefinitions(@NotNull final Project project)
+    protected Hashtable<String, Class<?>> getTaskDefinitions(@NotNull final Project project)
     {
         return project.getTaskDefinitions();
     }
