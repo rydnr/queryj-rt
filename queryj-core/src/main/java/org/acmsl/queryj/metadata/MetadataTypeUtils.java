@@ -178,7 +178,7 @@ public class MetadataTypeUtils
      * @param object the object to compare to.
      * @return the result of such comparison.
      */
-    public boolean equals(final Object object)
+    public boolean equals(@Nullable final Object object)
     {
         return
             new org.apache.commons.lang.builder.EqualsBuilder()
