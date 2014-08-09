@@ -194,7 +194,7 @@ public class RetrieveResultPropertiesHandler
 
         if (sql.getId().equalsIgnoreCase("find-product-types-by-draw-type-id"))
         {
-            int debug = 1;
+            final int debug = 1;
         }
 
         @Nullable final String t_strTable =
