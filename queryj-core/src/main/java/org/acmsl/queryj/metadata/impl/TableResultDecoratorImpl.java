@@ -86,6 +86,7 @@ public class TableResultDecoratorImpl<V>
      * Creates a new decorator.
      * @param item the {@link Result} to decorate.
      * @param table the {@link TableDecorator table}.
+     * @param customSqlProvider the {@link CustomSqlProvider}
      */
     public TableResultDecoratorImpl(
         @NotNull final Result<V> item,
