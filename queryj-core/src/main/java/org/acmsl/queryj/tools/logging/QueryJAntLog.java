@@ -321,6 +321,7 @@ public class QueryJAntLog
      * <p>Logs an error with info log level.</p>
      * @param message the message.
      * @param throwable the cause.
+     * @param project the project.
      */
     protected void info(
         @Nullable final Object message,
