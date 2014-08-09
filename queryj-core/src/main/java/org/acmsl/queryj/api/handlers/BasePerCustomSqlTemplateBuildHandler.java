@@ -144,6 +144,7 @@ public abstract class BasePerCustomSqlTemplateBuildHandler
      * @param parameters the parameters.
      * @param templateFactory the template factory.
      * @param sqlElements the custom SQL elements.
+     * @throws QueryJBuildException if the templates cannot be built.
      */
     protected void buildTemplates(
         @NotNull final QueryJCommand parameters,
