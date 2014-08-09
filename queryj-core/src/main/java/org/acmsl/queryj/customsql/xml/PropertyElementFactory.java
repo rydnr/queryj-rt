@@ -35,7 +35,7 @@
 package org.acmsl.queryj.customsql.xml;
 
 /*
- * Importing some project classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.customsql.PropertyElement;
