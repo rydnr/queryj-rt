@@ -865,6 +865,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
      * @param context the context.
      * @param placeholderPackage the placeholder package.
      * @return the {@link org.acmsl.queryj.tools.PlaceholderChainProvider} class.
+     * @throws QueryJBuildException if the template chain cannot be built.
      */
     @Nullable
     @SuppressWarnings("unchecked")
