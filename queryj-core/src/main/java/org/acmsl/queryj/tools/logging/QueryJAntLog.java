@@ -29,8 +29,8 @@
  * Author: Jose San Leandro Armendariz
  *
  * Description: Minimal logging helper to avoid using Ant-specific
- *              API. It implements *Log* only to make the
- * developer confortable with the API, which just means
+ *              API. It implements *Log* only to make the developer comfortable
+ *              with the API, which just means
  * replacing *LogFactory.getLog(..)* with
  * using the *UniqueLogFactory.getLog(..)*.
  *
