@@ -305,10 +305,9 @@ public class QueryJCLILog
     }
     
     /**
-     * <p>Logs an error with trace log level.</p>
-     * @param message the message.
-     * @param throwable the cause.
+     * {@inheritDoc}
      */
+    @Override
     public void trace(final Object message, final Throwable throwable)
     {
         if  (isTraceEnabled())
