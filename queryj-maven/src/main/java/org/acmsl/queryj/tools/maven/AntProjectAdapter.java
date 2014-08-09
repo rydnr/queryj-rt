@@ -212,6 +212,7 @@ public class AntProjectAdapter
     /**
      * Retrieves the input handler.
      * @param project the {@link Project} instance.
+     * @return the input handler.
      */
     @NotNull
     protected InputHandler getInputHandler(@NotNull final Project project)
