@@ -1057,6 +1057,7 @@ public class QueryJTask
 
     /**
      * Retrieves the "externally-managed-fields" nested element.
+     * @param command the command.
      * @return such information.
      */
     @Nullable
