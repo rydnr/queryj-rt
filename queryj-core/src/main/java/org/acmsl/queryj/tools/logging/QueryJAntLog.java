@@ -31,7 +31,7 @@
  * Description: Minimal logging helper to avoid using Ant-specific
  *              API. It implements *Log* only to make the developer comfortable
  *              with the API, which just meansreplacing *LogFactory.getLog(..)*
- *              with the *UniqueLogFactory.getLog(..)*.
+ *              with *UniqueLogFactory.getLog(..)*.
  *
  * Version: $Revision$ ($Author$ at $Date$)
  *
