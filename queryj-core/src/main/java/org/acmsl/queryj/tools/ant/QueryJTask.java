@@ -1200,6 +1200,7 @@ public class QueryJTask
     /**
      * Specifies whether to include Checkthread.org annotations in the generated code.
      * @param disableCheckthreadAnnotations such choice.
+     * @param delegee the command.
      */
     @SuppressWarnings("unused")
     protected void setDisableCheckthreadAnnotations(
