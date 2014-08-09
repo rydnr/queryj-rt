@@ -1653,7 +1653,7 @@ public class AntProjectAdapter
      * @return such references.
      */
     @NotNull
-    protected Hashtable getReferences(@NotNull final Project project)
+    protected Hashtable<String, Object> getReferences(@NotNull final Project project)
     {
         return project.getReferences();
     }
