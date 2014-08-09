@@ -35,7 +35,7 @@
  */
 package org.acmsl.queryj;
 
-/**
+/*
  * Importing Apache Commons Configuration classes.
  */
 import org.apache.commons.configuration.Configuration;
