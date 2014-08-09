@@ -457,6 +457,7 @@ public class MetadataUtils
      * @param sourceTableName the name of the source table.
      * @param targetTableName the name of the target table..
      * @param metadataManager the {@link MetadataManager} instance.
+     * @return
      */
     @NotNull
     @SuppressWarnings("unused")
