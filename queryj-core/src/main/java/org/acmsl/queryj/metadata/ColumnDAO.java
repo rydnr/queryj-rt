@@ -85,6 +85,7 @@ public interface ColumnDAO
     /**
      * Retrieves the columns for given table, including parent's, if any.
      * @param table the table name.
+     * @return the columns.
      */
     @NotNull
     List<Attribute<String>> findAllColumns(@NotNull final String table);
