@@ -95,6 +95,7 @@ public class SkipValidationIfCacheExistsHandler
      * @param handler the {@link CacheValidationOutcomeHandler} instance (for using some of its
      * methods).
      * @return {@code true} in such case.
+     *
      */
     protected boolean validationCacheFound(
         @NotNull final Sql<String> sql,
