@@ -75,8 +75,7 @@ public interface FillHandler<P>
     /**
      * Retrieves the template value for that placeholder.
      * @return the dynamic value.
-     * @tho
-
+     * @throws QueryJBuildException
      */
     @Nullable
     P getValue()
