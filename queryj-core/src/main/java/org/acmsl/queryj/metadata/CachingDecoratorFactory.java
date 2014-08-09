@@ -126,7 +126,7 @@ public class CachingDecoratorFactory
         }
         else
         {
-            result = (Attribute<DecoratedString>) attribute;
+            result = (Attribute<K>) attribute;
         }
 
         return result;
