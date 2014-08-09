@@ -401,9 +401,9 @@ public class QueryJCLILog
     }
     
     /**
-     * <p>Logs a message with warn log level.</p>
-     * @param message the message.
+     * {@inheritDoc}
      */
+    @Override
     public void warn(final Object message)
     {
         if  (isWarnEnabled())
