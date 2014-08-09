@@ -1331,6 +1331,6 @@ public class QueryJTask
             + ", \"command\": " + m__QueryJCommand
             + ", \"tables\": " + m__Tables +
             + ", \"class\": \"QueryJTask\""
-            + ", \"package\": \"org.acmsl.queryj.'}';
+            + ", \"package\": \"org.acmsl.queryj.tools.ant'}';
     }
 }
