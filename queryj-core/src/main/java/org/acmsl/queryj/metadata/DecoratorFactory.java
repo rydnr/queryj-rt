@@ -80,7 +80,7 @@ public interface DecoratorFactory
      * @param <K> the target type.
      */
     @NotNull
-    public <V, K> Attribute<K> createDecorator(
+    public <V> Attribute<K> createDecorator(
         @NotNull final Attribute<V> attribute, @NotNull final MetadataManager metadataManager);
 
     /**
