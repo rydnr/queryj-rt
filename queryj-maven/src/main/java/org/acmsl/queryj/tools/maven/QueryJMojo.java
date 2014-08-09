@@ -262,6 +262,7 @@ public class QueryJMojo
      * Whether to disable checkthread.org annotations.
      * @parameter property="disableCheckthreadAnnotations"
      */
+    @Parameter (property = "driver", required = true)
     private Boolean m__bDisableCheckthreadAnnotations = false;
 
     /**
