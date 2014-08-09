@@ -101,6 +101,7 @@ public class JdbcConnectionClosingHandler
      * Handles given information.
      * @param parameters the parameters.
      * @return <code>true</code> if the chain should be stopped.
+     * @throws QueryJBuildException if the connection cannot be closed.
      */
     @Override
     public boolean handle(@NotNull final QueryJCommand parameters)
