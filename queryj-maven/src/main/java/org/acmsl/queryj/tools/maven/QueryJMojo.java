@@ -203,7 +203,6 @@ public class QueryJMojo
 
     /**
      * The header file.
-     * @parameter property="headerFile"
      */
     @Parameter (property = "headerFile", required = false)
     private File m__HeaderFile;
