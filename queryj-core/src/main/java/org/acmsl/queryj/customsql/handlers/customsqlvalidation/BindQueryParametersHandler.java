@@ -351,6 +351,7 @@ public class BindQueryParametersHandler
      * @param sql the sql.
      * @param parameterClasses the parameter classes.
      * @return the method.
+     * @throws QueryJBuildException if the binding fails.
      */
     @NotNull
     protected Method retrievePreparedStatementMethod(
