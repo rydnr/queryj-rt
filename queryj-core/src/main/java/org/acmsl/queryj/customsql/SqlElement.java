@@ -786,6 +786,7 @@ public class SqlElement<T>
      * @param implementation the <i>implementation</i> attribute.
      * @param value the <i>value</i> element.
      * @param validate the <i>validate</i> element.
+     * @param dynamic the <i>dynamic</i> element.
      * @param parameterRefs the <i>parameter-ref</i> elements.
      * @param resultRef the <i>result-ref</i> element.
      * @param connectionFlagsRef the <i>connection-flags-ref</i> element.
