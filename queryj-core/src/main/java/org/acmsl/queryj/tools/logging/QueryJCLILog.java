@@ -102,6 +102,7 @@ public class QueryJCLILog
      * Specifies the threshold.
      * @param threshold such value.
      */
+    @SuppressWarnings("unused")
     protected void setThreshold(final int threshold)
     {
         immutableSetThreshold(threshold);
