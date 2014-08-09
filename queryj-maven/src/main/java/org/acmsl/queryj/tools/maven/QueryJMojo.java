@@ -59,6 +59,7 @@ import org.apache.maven.plugin.logging.Log;
 /*
  * Importing some Ant classes.
  */
+import org.apache.maven.plugins.annotations.LifecyclePhase;
 import org.apache.tools.ant.Project;
 import org.apache.tools.ant.types.Path;
 
