@@ -135,9 +135,7 @@ public class QueryJLogFactory
     }
 
     /**
-     * Convenience method to derive a name from the specified class and
-     * call <code>getInstance(String)</code> with it.
-     * @param clazz Class for which a suitable Log name will be derived
+     * {@inheritDoc}
      */
     @Nullable
     @Override
