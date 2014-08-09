@@ -382,8 +382,7 @@ public class CachingDecoratorFactory
     }
 
     /**
-     * Retrieves the hash code associated to this instance.
-     * @return such information.
+     * {@inheritDoc}
      */
     @Override
     public int hashCode()
