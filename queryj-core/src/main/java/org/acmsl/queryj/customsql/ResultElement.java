@@ -136,6 +136,7 @@ public class ResultElement<T>
      * @param propertyRefs the <i>property-ref</i> elements.
      * @return such value.
      */
+    @Override
     protected int hashCode(
         @NotNull final T id,
         @NotNull final Collection<PropertyRef> propertyRefs)
