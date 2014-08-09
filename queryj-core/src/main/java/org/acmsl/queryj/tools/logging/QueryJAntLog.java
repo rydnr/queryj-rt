@@ -368,7 +368,10 @@ public class QueryJAntLog
             message + "(" + throwable.getMessage() + ")",
             Project.MSG_INFO);
     }
-    
+
+    /**
+     * {inheritDoc}
+     */
     /**
      * <p>Logs a message with warn log level.</p>
      * @param message the message.
