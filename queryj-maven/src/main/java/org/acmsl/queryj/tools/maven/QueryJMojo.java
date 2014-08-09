@@ -205,12 +205,14 @@ public class QueryJMojo
      * The header file.
      * @parameter property="headerFile"
      */
+    @Parameter (property = "driver", required = true)
     private File m__HeaderFile;
 
     /**
      * The grammar folder.
      * @parameter property="grammarFolder"
      */
+    @Parameter (property = "driver", required = true)
     private File m__GrammarFolder;
 
     /**
