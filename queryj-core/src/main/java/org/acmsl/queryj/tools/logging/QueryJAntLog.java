@@ -176,11 +176,11 @@ public class QueryJAntLog
      * (for example, <code>String</code> concatenation)
      * when the log level is more than trace. </p>
      */
+    @Override
     public boolean isTraceEnabled()
     {
         return true;
     }
-
 
     /**
      * <p> Is warn logging currently enabled? </p>
