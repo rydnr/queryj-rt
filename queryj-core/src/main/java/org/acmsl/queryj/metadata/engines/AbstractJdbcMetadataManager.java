@@ -843,6 +843,7 @@ public abstract class AbstractJdbcMetadataManager
     /**
      * Converts between given lists.
      * @param list the list to convert.
+     * @return the list.
      */
     @NotNull
     protected List<Attribute<String>> toAttributeList(@NotNull final List<AttributeIncompleteValueObject> list)
