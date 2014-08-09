@@ -325,6 +325,7 @@ public class TemplateUtils
      * @param daoTemplateUtils the {@link DAOTemplateUtils} instance.
      * @return the custom results.
      * model.
+     *
      */
     @SuppressWarnings("unused")
     @NotNull
