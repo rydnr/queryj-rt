@@ -33,7 +33,7 @@
 package org.acmsl.queryj.metadata.engines.mysql;
 
 /*
- * Importing project-specific classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.metadata.MetadataTypeManager;
 import org.acmsl.queryj.api.exceptions.QueryJException;
