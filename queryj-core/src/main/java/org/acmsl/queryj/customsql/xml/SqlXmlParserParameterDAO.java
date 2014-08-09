@@ -92,8 +92,8 @@ public class SqlXmlParserParameterDAO
 
     /**
      * Retrieves the {@link Parameter} associated to given id.
-     *
      * @param id the parameter id.
+     * @param parser the parser.
      * @return the {@link Parameter}, or <code>null</code> if not found.
      */
     @Nullable
