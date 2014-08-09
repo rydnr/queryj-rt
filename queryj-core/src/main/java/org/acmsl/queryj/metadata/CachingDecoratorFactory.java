@@ -283,10 +283,7 @@ public class CachingDecoratorFactory
     }
 
     /**
-     * Retrieves the decorated list of attributes of given table.
-     * @param table the table.
-     * @param metadataManager the <code>MetadataManager</code> instance.
-     * @return the attribute list
+     * {@inheritDoc}
      */
     @NotNull
     @Override
