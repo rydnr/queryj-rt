@@ -369,9 +369,7 @@ public class CachingDecoratorFactory
     }
 
     /**
-     * Provides a text representation of the information
-     * contained in this instance.
-     * @return such information.
+     * {@inheritDoc}
      */
     @Override
     @NotNull
