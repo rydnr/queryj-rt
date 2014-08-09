@@ -415,6 +415,7 @@ public class QueryJAntLog
      * <p>Logs an error with error log level.</p>
      * @param message the message.
      * @param throwable the cause.
+     * @param project the <code>Project</code> instance.
      */
     protected void error(
         @Nullable final Object message,
