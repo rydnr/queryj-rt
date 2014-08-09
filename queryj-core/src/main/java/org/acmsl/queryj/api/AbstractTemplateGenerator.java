@@ -624,7 +624,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
      * @param relevantContent the content.
      * @param charset the charset.
      * @return the hash.
-     * throws QueryJBuildException if the hash cannot be computed.
+     * @throws QueryJBuildException if the hash cannot be computed.
      */
     @NotNull
     protected String computeHash(
