@@ -441,6 +441,7 @@ public abstract class AbstractTemplateWritingHandler
      * Retrieves the templates from the command.
      * @param parameters the parameters.
      * @return the template.
+     * @throws QueryJBuildException if the templates cannot be written.
      */
     @NotNull
     public abstract List<T> retrieveTemplates(@NotNull final QueryJCommand parameters)
