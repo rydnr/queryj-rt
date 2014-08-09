@@ -71,6 +71,8 @@ import org.checkthread.annotations.ThreadSafe;
  * of handlers, to which the logic is delegated to, following GoF's
  * <b>Composite pattern</b>.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
+ * @param <C> the command type.
+ * @param <CH> the command handler type.
  */
 @ThreadSafe
 public class CompositeQueryJCommandHandler<C extends QueryJCommand, CH extends QueryJCommandHandler<C>>
