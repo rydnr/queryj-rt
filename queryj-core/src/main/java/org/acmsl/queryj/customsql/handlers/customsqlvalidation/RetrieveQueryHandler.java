@@ -114,7 +114,7 @@ public class RetrieveQueryHandler
      * @param command the command.
      * @param chain the chain.
      * @return {@code false} if everything went fine.
-     * @throws
+     * @throws QueryJBuildException if the
      */
     protected boolean handle(@NotNull final QueryJCommand command, @NotNull final CustomQueryChain chain)
         throws QueryJBuildException
