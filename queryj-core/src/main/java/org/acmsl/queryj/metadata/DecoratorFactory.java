@@ -76,7 +76,8 @@ public interface DecoratorFactory
      * @param attribute the {@link Attribute attribute}.
      * @param metadataManager the {@link MetadataManager} instance.
      * @return the decorated attribute for the concrete template.
-     *
+     * @param <V> the value type.
+     * @param
      */
     @NotNull
     public <V, DecoratedString> Attribute<DecoratedString> createDecorator(
