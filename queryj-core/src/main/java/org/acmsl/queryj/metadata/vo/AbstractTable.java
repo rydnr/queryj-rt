@@ -555,8 +555,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
     public String toString()
     {
         return
-              "{
-            + ", \"name\": \"" + m__Name + '"'
+              "{ \"name\": \"" + m__Name + '"'
             + ", \"comment\": \"" + m__Comment + '"'
             + ", \"parentTable\": " + m__ParentTable
 //            + ", \"primaryKey\": " + ToStringUtils.getInstance().toJson(m__lPrimaryKey)
