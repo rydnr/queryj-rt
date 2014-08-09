@@ -246,6 +246,8 @@ public final class QueryJCLI
      * Executes QueryJ using given options.
      * @param configurationSettings the configuration settings.
      * @param logThreshold the log threshold.
+     * @param customSqlFile the file.
+     * @throws
      */
     @SuppressWarnings("unused")
     protected static void executeQueryJ(
