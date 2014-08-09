@@ -264,6 +264,7 @@ public class QueryJAntLog
      * @param message the message.
      * @param throwable the cause.
      */
+    @Override
     public void debug(@Nullable final Object message, @NotNull final Throwable throwable)
     {
         debug(message, throwable, getProject());
