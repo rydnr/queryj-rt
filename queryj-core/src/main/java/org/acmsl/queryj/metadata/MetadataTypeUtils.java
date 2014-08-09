@@ -34,7 +34,7 @@
 package org.acmsl.queryj.metadata;
 
 /*
- * Importing ACM-SL Commons classes.
+ * Importing ACM-SL Java Commons classes.
  */
 import org.acmsl.commons.patterns.Singleton;
 import org.acmsl.commons.patterns.Utils;
