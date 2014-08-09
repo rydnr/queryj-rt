@@ -271,7 +271,7 @@ public class QueryJMojo
      * @required
      * @readonly
      */
-    @Parameter (defaultValue = "driver", required = true)
+    @Parameter (defaultValue = "${session}", required = true)
     private MavenSession session;
 
     /**
