@@ -1716,7 +1716,7 @@ public class AntProjectAdapter
      * @return the reference value.
      */
     @Nullable
-    protected Object getReference(@NotNull final String key, @NotNull final Project project)
+    protected <T> T getReference(@NotNull final String key, @NotNull final Project project)
     {
         return project.getReference(key);
     }
