@@ -324,8 +324,7 @@ public class TemplateUtils
      * @param decoratorFactory the {@link DecoratorFactory} instance.
      * @param daoTemplateUtils the {@link DAOTemplateUtils} instance.
      * @return the custom results.
-     * model.
-     *
+     * @throws
      */
     @SuppressWarnings("unused")
     @NotNull
