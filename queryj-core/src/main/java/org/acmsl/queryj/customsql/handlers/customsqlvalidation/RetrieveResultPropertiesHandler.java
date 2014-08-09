@@ -257,7 +257,7 @@ public class RetrieveResultPropertiesHandler
      * @param sqlResult the custom sql result.
      * @param propertyDAO the {@link org.acmsl.queryj.metadata.SqlPropertyDAO} instance.
      * @return such properties.
-     * @throws QueryJBuildExceptionif the property information is unavailable.
+     * @throws QueryJBuildException if the property information is unavailable.
      */
     @NotNull
     protected List<Property<String>> retrieveExplicitProperties(
