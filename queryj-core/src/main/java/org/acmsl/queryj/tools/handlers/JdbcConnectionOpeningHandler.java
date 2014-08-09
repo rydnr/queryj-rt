@@ -162,6 +162,7 @@ public class JdbcConnectionOpeningHandler
      * @param username the username.
      * @param password the password.
      * @return the JDBC connection.
+     * @throws QueryJBuildException if the connection cannot be opened.
      */
     @NotNull
     protected Connection proceed(
