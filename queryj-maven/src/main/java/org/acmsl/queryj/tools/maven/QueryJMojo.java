@@ -142,6 +142,7 @@ public class QueryJMojo
      * The user name.
      * @parameter property="username" @required
      */
+    @Parameter (property = "driver", required = true)
     private String m__strUsername;
 
     /**
