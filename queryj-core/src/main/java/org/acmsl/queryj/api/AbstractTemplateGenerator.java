@@ -237,7 +237,8 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
         @Nullable final TemplateDebuggingService<C> templateDebuggingService,
         @NotNull final FileUtils fileUtils,
         @Nullable final Log log)
-        throws IOException, QueryJBuildException
+        throws IOException,
+              QueryJBuildException
     {
         boolean result = false;
 
