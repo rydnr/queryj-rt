@@ -132,7 +132,7 @@ public class QueryJCLILog
      * @param printStream the print stream.
      */
     @SuppressWarnings("unused")
-    protected void setPrintStream(final PrintStream printStream)
+    protected void setPrintStream(@NotNull final PrintStream printStream)
     {
         immutableSetPrintStream(printStream);
     }
