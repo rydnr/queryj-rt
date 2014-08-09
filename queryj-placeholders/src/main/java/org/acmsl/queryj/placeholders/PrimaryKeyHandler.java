@@ -68,7 +68,9 @@ import org.checkthread.annotations.ThreadSafe;
 public class PrimaryKeyHandler
     extends AbstractTemplateContextFillHandler<PerTableTemplateContext, List<Attribute<String>>>
 {
-
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = -8692058693572483344L;
 
     /**
