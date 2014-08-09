@@ -544,6 +544,7 @@ public class ParseTemplateDefsHandler
      * Sets up the template definition parser.
      * @param file the template def contents to parse.
      * @return the {@link TemplateDefParser} instance.
+     * @throws RecognitionException if the
      */
     @NotNull
     protected TemplateDefParser setUpParser(@NotNull final File file)
