@@ -169,7 +169,8 @@ public abstract class AbstractCustomSqlProvider
      * @param validate whether to validate or not.
      * @param dynamic whether it's dynamic or not.
      * @param value the value.
-     * @param repositoryScoped whether it's repository-scoped or not
+     * @param repositoryScoped whether it's repository-scoped or not.
+     * @param implementation the implementation value.
      * @param parameterRefs the parameter refs.
      * @param charset the charset.
      * @param parameterDAO the {@link org.acmsl.queryj.metadata.SqlParameterDAO} instance.
