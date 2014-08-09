@@ -309,10 +309,7 @@ public class CachingDecoratorFactory
     }
 
     /**
-     * Retrieves the decorated list of attributes composing the primary key of given table.
-     * @param table the table.
-     * @param metadataManager the {@link MetadataManager} instance.
-     * @return the primary key.
+     * {@inheritDoc}
      */
     @NotNull
     @Override
