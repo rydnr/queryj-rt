@@ -143,6 +143,7 @@ public class QueryJChain<CH extends QueryJCommandHandler<QueryJCommand>>
     /**
      * Fills given chain with external template bundles.
      * @param chain the chain.
+     * @throws QueryJBuildException if the handlers
      */
     @SuppressWarnings("unchecked")
     protected void fillTemplateHandlers(@NotNull final Chain<QueryJCommand, QueryJBuildException, CH> chain)
