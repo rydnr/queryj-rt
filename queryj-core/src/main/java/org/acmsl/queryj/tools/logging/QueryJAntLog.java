@@ -358,6 +358,7 @@ public class QueryJAntLog
      * @param message the message.
      * @param throwable the cause.
      */
+    @Override
     public void warn(@Nullable final Object message, @NotNull final Throwable throwable)
     {
         warn(message, throwable, getProject());
