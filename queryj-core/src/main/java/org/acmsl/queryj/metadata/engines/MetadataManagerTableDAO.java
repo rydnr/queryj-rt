@@ -748,7 +748,7 @@ public abstract class MetadataManagerTableDAO<M extends MetadataManager>
     public String toString()
     {
         return
-              "{ \"metadataManager\": \"" + m__MetadataManager.hashCode() + "\" "
+              "{ \"metadataManager\": \"" + m__MetadataManager.hashCode() + '"'
             + ", \"class\": \"MetadataManagerTableDAO\""
             + ", \"package\": \"org.acmsl.queryj.metadata.engines\" }";
     }
