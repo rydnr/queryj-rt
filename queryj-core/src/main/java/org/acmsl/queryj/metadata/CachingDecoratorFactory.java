@@ -110,12 +110,7 @@ public class CachingDecoratorFactory
     }
 
     /**
-     * Creates an <code>AttributeDecorator</code> for given
-     * attribute instance.
-     * @param attribute the attribute.
-     * @param metadataManager the <code>MetadataManager</code> instance.
-     * @return the decorated attribute for the concrete template.
-     * @param <V> the value type.
+     * {@inheritDoc}
      */
     @Override
     @NotNull
