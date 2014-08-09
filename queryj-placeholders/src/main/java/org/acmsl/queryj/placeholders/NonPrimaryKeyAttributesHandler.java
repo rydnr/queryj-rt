@@ -114,7 +114,7 @@ public class NonPrimaryKeyAttributesHandler
      * @param tableName the table name.
      * @param metadataManager the {@link MetadataManager} instance.
      * @param metadataUtils the {@link MetadataUtils} instance.
-     * @return th
+     * @return the non-pk attributes.
      */
     @NotNull
     protected List<Attribute<String>> retrieveNonPkAttributes(
