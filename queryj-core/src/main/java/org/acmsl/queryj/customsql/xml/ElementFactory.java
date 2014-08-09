@@ -102,7 +102,7 @@ public abstract class ElementFactory
     }
 
     /**
-     * Creates a Customer value object from given SAX attributes.
+     * Creates an object from given SAX attributes.
      * @param attributes the attributes.
      * @param digester the Digester instance.
      * @param conversionUtils the ConversionUtils instance.
