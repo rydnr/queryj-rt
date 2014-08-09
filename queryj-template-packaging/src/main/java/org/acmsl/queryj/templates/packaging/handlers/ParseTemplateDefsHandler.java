@@ -574,12 +574,14 @@ public class ParseTemplateDefsHandler
      * Sets up the template definition parser.
      * @param stream the {@link ANTLRInputStream}.
      * @return the {@link TemplateDefParser} instance.
+     * @throws RecognitionException if the format is invalid.
+     * @throws IOException if the source cannot be read.
      */
     @SuppressWarnings("unchecked")
     @NotNull
     protected TemplateDefParser setUpParser(@NotNull final ANTLRInputStream stream)
         throws RecognitionException,
-        IOException
+               IOException
     {
         @NotNull final TemplateDefParser result;
 
