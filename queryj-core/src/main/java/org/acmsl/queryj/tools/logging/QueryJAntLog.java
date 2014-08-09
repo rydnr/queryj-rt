@@ -218,6 +218,7 @@ public class QueryJAntLog
      * @param message the message.
      * @param throwable the cause.
      */
+    @Override
     public void trace(@Nullable final Object message, @NotNull final Throwable throwable)
     {
         trace(message, throwable, getProject());
