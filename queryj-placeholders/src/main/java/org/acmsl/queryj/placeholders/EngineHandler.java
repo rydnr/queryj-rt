@@ -102,6 +102,7 @@ public class EngineHandler
     /**
      * Retrieves the engine name.
      * @param metadataManager the {@link MetadataManager} instance.
+     * @return the engine.
      */
     @NotNull
     protected Engine<String> getEngine(@NotNull final MetadataManager metadataManager)
