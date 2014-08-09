@@ -425,9 +425,9 @@ public class QueryJCLILog
     }
     
     /**
-     * <p>Logs a message with error log level.</p>
-     * @param message the message.
+     * {@inheritDoc}
      */
+    @Override
     public void error(final Object message)
     {
         if  (isErrorEnabled())
