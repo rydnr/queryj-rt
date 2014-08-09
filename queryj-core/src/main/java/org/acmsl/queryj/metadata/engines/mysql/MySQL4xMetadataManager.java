@@ -89,6 +89,7 @@ public class MySQL4xMetadataManager
      * @throws SQLException if the extraction fails.
      * @throws QueryJException if any other error occurs.
      */
+    @SuppressWarnings("unused")
     public MySQL4xMetadataManager(
         @NotNull final String[] tableNames,
         @NotNull final String[] procedureNames,
