@@ -189,6 +189,7 @@ public class QueryJAntLog
      * (for example, <code>String</code> concatenation)
      * when the log level is more than warn. </p>
      */
+    @Override
     public boolean isWarnEnabled()
     {
         return true;
