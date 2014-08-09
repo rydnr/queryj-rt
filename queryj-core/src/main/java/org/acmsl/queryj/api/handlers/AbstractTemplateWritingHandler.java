@@ -332,7 +332,7 @@ public abstract class AbstractTemplateWritingHandler
         @NotNull final TG templateGenerator,
         final int threadCount,
         @NotNull final File rootDir)
-        throws  QueryJBuildException
+      throws  QueryJBuildException
     {
         @NotNull final List<Future<?>> result;
 
