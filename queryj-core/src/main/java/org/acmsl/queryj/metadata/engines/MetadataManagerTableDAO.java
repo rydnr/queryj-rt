@@ -750,6 +750,6 @@ public abstract class MetadataManagerTableDAO<M extends MetadataManager>
         return
               "{ "
             + ", \"metadataManager\": \"" + m__MetadataManager.hashCode() + "\" "
-            + ", \"class\": \"MetadataManagerTableDAO\" }";
+            + ", \"class\": \"MetadataManagerTableDAO\"}";
     }
 }
