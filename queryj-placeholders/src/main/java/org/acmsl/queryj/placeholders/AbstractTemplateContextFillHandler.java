@@ -36,7 +36,7 @@
 package org.acmsl.queryj.placeholders;
 
 /*
- * Importing some project classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.api.TemplateContext;
 import org.acmsl.queryj.api.handlers.fillhandlers.TemplateContextFillHandler;
