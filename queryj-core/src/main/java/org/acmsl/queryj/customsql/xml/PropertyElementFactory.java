@@ -146,6 +146,8 @@ public class PropertyElementFactory
 
     /**
      * Checks whether given value starts with upper case.
+     * @param type the type.
+     * @return {@code true} in such case.
      */
     protected boolean startsWithUpperCase(@NotNull final String type)
     {
