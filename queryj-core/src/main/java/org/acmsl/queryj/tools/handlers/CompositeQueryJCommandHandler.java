@@ -219,7 +219,7 @@ public class CompositeQueryJCommandHandler<C extends QueryJCommand, CH extends Q
      * @param handler the concrete handler.
      * @return <code>true</code> to avoid further processing of such command
      * by different handlers.
-     * @throws QueryJBuildException if the wrapped handlers fail.
+     * @throws QueryJBuildException if the handler fail.
      */
     protected boolean handle(
         @NotNull final C command, @NotNull final CH handler)
