@@ -205,7 +205,7 @@ public class QueryJMojo
      * The header file.
      * @parameter property="headerFile"
      */
-    @Parameter (property = "driver", required = true)
+    @Parameter (property = "headerFile", required = false)
     private File m__HeaderFile;
 
     /**
