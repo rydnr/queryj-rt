@@ -255,6 +255,7 @@ public class QueryJMojo
      * Whether to disable NotNull annotations.
      * @parameter property="disableNotNullAnnotations"
      */
+    @Parameter (property = "driver", required = true)
     private Boolean m__bDisableNotNullAnnotations = false;
 
     /**
