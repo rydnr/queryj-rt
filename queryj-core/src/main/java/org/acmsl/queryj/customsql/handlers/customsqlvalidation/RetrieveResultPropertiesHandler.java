@@ -239,6 +239,7 @@ public class RetrieveResultPropertiesHandler
      * @param metadata the result set metadata.
      * @param index the index.
      * @return the associated {@link Property}.
+     * @throws SQLException if the
      */
     @NotNull
     protected Property<String> createPropertyFrom(@NotNull final ResultSetMetaData metadata, final int index)
