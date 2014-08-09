@@ -141,7 +141,7 @@ public class ParseTemplateDefsHandler
      * @param stringUtils the {@link StringUtils} instance.
      * @return {@code true} if the handler actually process the command,
      *         or maybe because it's not desirable to continue the chain.
-     * @throws QueryJBuildException if the template cannot be built.
+     * @throws QueryJBuildException if the template defs cannot be parsed.
      */
     protected boolean handle(@NotNull final QueryJCommand command, @NotNull final StringUtils stringUtils)
         throws QueryJBuildException
