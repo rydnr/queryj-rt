@@ -472,7 +472,11 @@ public class QueryJCLILog
         }
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
+    @NotNull
     public String toString()
     {
         return "QueryJCLILog{" +
