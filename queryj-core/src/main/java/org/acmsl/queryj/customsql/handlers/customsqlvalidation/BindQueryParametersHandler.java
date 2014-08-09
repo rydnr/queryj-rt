@@ -403,6 +403,7 @@ public class BindQueryParametersHandler
      * @param conversionUtils the {@link ConversionUtils} instance.
      * @param <T> the type.
      * @return the validation value.
+     * @throws QueryJBuildException if the binding fails.
      */
     @SuppressWarnings("unchecked")
     protected <T> T retrieveParameterValue(
