@@ -259,7 +259,7 @@ public class ParseTemplateDefsHandler
     /**
      * Parses a template def file.
      * @param file the file to parse.
-     * @return the Template def.
+     * @return the template def.
      * @throws TemplatePackagingCheckedException if the template def file cannot be parsed.
      */
     @NotNull
