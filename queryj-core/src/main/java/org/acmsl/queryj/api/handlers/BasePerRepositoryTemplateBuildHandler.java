@@ -171,6 +171,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
      * @param tableNames the table names.
      * @param parameters the command.
      * @return the template.
+     * @throws QueryJBuildException if the template cannot be built.
      */
     @Nullable
     protected abstract T createTemplate(
