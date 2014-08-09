@@ -482,6 +482,6 @@ public class QueryJCLILog
         return
             "{ \"threshold\": " + m__iThreshold
             + ", \"printStream\": \"" + m__PrintStream.hashCode() + '"'
-            + ", \"class\": \""'}';
+            + ", \"class\": \"'}';
     }
 }
