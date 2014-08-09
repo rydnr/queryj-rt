@@ -1037,7 +1037,8 @@ public class QueryJTask
      * @param command the command.
      */
     protected void setExternallyManagedFields(
-        @NotNull final AntExternallyManagedFieldsElement externallyManagedFields, @NotNull final QueryJCommand command)
+        @NotNull final AntExternallyManagedFieldsElement externallyManagedFields,
+        @NotNull final QueryJCommand command)
     {
         new QueryJCommandWrapper<AntExternallyManagedFieldsElement>(command)
             .setSetting(EXTERNALLY_MANAGED_FIELDS, externallyManagedFields);
