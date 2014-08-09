@@ -1160,6 +1160,7 @@ public class QueryJTask
     /**
      * Specifies whether to include NotNull annotations in the generated code.
      * @param disableNotNullAnnotations such choice.
+     * @param delegee the command.
      */
     protected void setDisableNotNullAnnotations(
         final boolean disableNotNullAnnotations, @NotNull final QueryJCommand delegee)
