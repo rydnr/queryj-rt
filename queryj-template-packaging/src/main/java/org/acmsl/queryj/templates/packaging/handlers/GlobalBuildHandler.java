@@ -109,7 +109,7 @@ public abstract class GlobalBuildHandler
      * @param parameters the parameters.
      * @param factory the TF instance.
      * @return the template.
-     * @tho
+     * @throws QueryJBuildException if the template cannot be built.
      *
      */
     @NotNull
