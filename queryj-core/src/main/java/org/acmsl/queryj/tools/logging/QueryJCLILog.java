@@ -201,13 +201,9 @@ public class QueryJCLILog
     }
 
     /**
-     * <p> Is info logging currently enabled? </p>
-     *
-     * <p> Call this method to prevent having to perform expensive operations
-     * (for example, <code>String</code> concatenation)
-     * when the log level is more than info. </p>
-     * @return <code>true</code> in such case.
+     * {@inheritDoc}
      */
+    @Override
     public boolean isInfoEnabled()
     {
         return isInfoEnabled(getThreshold());
