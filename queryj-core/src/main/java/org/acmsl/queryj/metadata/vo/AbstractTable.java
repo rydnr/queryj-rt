@@ -566,6 +566,6 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
             + ", \"voDecorated\": " + m__bVoDecorated
             + ", \"relationship\": " + m__bRelationship
             + ", \"class\": \"" + AbstractTable.class.getSimpleName()
-            + ", \"package\": \"org.acmsl.queryj.metadata.vo\" }"            + '}';
+            + ", \"package\": \"org.acmsl.queryj.metadata.vo\" }";
     }
 }
