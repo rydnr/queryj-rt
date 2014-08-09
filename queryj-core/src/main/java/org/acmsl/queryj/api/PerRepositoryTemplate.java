@@ -64,6 +64,7 @@ public interface PerRepositoryTemplate<C extends PerRepositoryTemplateContext>
      * Builds a context-specific exception.
      * @param context  the context.
      * @param template the {@link ST} instance.
+     * @param actualException the actual exception.
      * @return the specific {@link InvalidTemplateException} for the template.
      */
     @NotNull
