@@ -34,7 +34,7 @@
 package org.acmsl.queryj.metadata.vo;
 
 /*
- * Importing some QueryJ classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.tools.ant.AntFieldElement;
 import org.acmsl.queryj.tools.ant.AntFieldFkElement;
