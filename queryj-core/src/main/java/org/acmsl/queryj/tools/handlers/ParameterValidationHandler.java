@@ -500,7 +500,7 @@ public class ParameterValidationHandler
      * @param file the file.
      * @return the file contents.
      * @throws SecurityException if reading the file is not permitted.
-     * @throws IOException if reading the file
+     * @throws IOException if the file cannot be read.
      */
     @NotNull
     protected String readFile(@NotNull final File file, @NotNull final Charset charset)
