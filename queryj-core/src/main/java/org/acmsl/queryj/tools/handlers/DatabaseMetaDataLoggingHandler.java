@@ -98,6 +98,7 @@ public class DatabaseMetaDataLoggingHandler
      * Handles given information.
      * @param metaData the database metadata.
      * @return <code>true</code> if the chain should be stopped.
+     * @throws QueryJBuildException if th
      */
     protected boolean handle(@NotNull final DatabaseMetaData metaData)
         throws  QueryJBuildException
