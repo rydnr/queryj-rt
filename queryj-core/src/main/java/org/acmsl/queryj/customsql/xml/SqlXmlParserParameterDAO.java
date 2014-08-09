@@ -94,7 +94,7 @@ public class SqlXmlParserParameterDAO
      * Retrieves the {@link org.acmsl.queryj.customsql.Parameter} associated to given id.
      *
      * @param id the parameter id.
-     * @return the {@link org.acmsl.queryj.customsql.Parameter}, or <code>null</code> if not found.
+     * @return the {@link Parameter}, or <code>null</code> if not found.
      */
     @Nullable
     protected Parameter<String, ?> findByPrimaryKey(@NotNull final String id, @NotNull final SqlXmlParser parser)
