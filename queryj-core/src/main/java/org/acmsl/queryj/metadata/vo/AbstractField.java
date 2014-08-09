@@ -75,6 +75,7 @@ public abstract class AbstractField
      * @param type the type.
      * @param tableName the name of the table.
      * @param ordinalPosition the ordinal position.
+     * @param length the length.
      * @param comment the field comment.
      * @param keyword the keyword used to retrieve the value, if any.
      * @param retrievalQuery the query used to retrieve the value, if any.
