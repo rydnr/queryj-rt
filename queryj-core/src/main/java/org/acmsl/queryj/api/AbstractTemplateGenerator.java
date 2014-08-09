@@ -225,7 +225,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
      * @param log the {@link Log} instance.
      * @return whether it gets written to disk.
      * @throws IOException if the template cannot be written to disk.
-     * throws QueryJBuildException if the template cannot be generated.
+     * @throws QueryJBuildException if the template cannot be generated.
      */
     protected boolean generate(
         @NotNull final N template,
