@@ -394,9 +394,7 @@ public class CachingDecoratorFactory
     }
 
     /**
-     * Checks whether given object is semantically equal to this instance.
-     * @param object the object to compare to.
-     * @return the result of such comparison.
+     * {@inheritDoc}
      */
     @Override
     public boolean equals(@Nullable final Object object)
