@@ -156,14 +156,14 @@ public class QueryJMojo
      * The catalog.
      * @parameter property="catalog"
      */
-    @Parameter (property = "catalog", required = true)
+    @Parameter (property = "driver", required = true)
     private String catalog;
 
     /**
      * The schema.
-     * @parameter property="driver" @required
+     * @parameter property="schema" @required
      */
-    @Parameter (property = "driver", required = true)
+    @Parameter (property = "schema", required = true)
     private String schema;
 
     /**
