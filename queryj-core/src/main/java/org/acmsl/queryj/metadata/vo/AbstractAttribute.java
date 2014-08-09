@@ -523,7 +523,7 @@ public abstract class AbstractAttribute<T>
      * Checks whether given value is null or empty.
      * @param value the value.
      * @return {@code true} in such case.
-     * @param <V> the
+     * @param <V> the type.
      */
     protected static final <V> boolean isNullOrEmpty(@Nullable final V value)
     {
