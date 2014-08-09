@@ -449,10 +449,10 @@ public class QueryJCLILog
     }
     
     /**
-     * <p>Logs a message with fatal log level.</p>
-     * @param message the message.
+     * {@inheritDoc}
      */
-    public void fatal(final Object message)
+    @Override
+    public void fatal(@Override final Object message)
     {
         if  (isFatalEnabled())
         {
