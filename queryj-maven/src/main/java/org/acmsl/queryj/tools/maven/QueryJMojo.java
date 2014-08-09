@@ -154,12 +154,14 @@ public class QueryJMojo
 
     /**
      * The catalog.
+     * @parameter property="catalog"
      */
     @Parameter (property = "catalog", required = true)
     private String catalog;
 
     /**
      * The schema.
+     * @parameter property="driver" @required
      */
     @Parameter (property = "driver", required = true)
     private String schema;
