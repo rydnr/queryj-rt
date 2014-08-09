@@ -57,6 +57,7 @@ import org.checkthread.annotations.ThreadSafe;
 /**
  * Abstract logic-less implementation of {@link Attribute} interface.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
+ * @param <T> the type.
  */
 @ThreadSafe
 public abstract class AbstractAttribute<T>
