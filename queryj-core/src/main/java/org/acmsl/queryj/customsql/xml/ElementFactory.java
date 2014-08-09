@@ -107,7 +107,7 @@ public abstract class ElementFactory
      * @param digester the Digester instance.
      * @param conversionUtils the ConversionUtils instance.
      * @return the Customer information.
-     * @throws SAXException if the object cann
+     * @throws SAXException if the object cannot be created.
      */
     @Nullable
     protected abstract Object createObject(
