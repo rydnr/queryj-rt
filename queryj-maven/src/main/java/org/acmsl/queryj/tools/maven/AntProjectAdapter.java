@@ -1642,7 +1642,7 @@ public class AntProjectAdapter
      */
     @Override
     @NotNull
-    public Hashtable getReferences()
+    public Hashtable<String, Object> getReferences()
     {
         return getReferences(getProject());
     }
