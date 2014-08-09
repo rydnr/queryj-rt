@@ -39,7 +39,7 @@
 package org.acmsl.queryj.tools.logging;
 
 /*
- * Importing Commons-Logging classes.
+ * Importing Apache Commons-Logging classes.
  */
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogConfigurationException;
