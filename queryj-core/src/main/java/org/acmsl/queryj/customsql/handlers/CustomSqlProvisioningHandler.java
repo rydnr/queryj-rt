@@ -127,6 +127,7 @@ public class CustomSqlProvisioningHandler
      * @param metadataManager the <code>MetadataManager</code> instance.
      * @param metadataTypeManager the <code>MetadataTypeManager</code> instance.
      * @return <code>true</code> if the chain should be stopped.
+     * @throws QueryJBuildException if the provisioning fails.
      */
     protected boolean handle(
         @NotNull final SqlPropertyDAO sqlPropertyDAO,
