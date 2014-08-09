@@ -391,6 +391,7 @@ public class SqlXmlParserSqlDAO
     /**
      * Filters given {@link Sql} list to get only the ones matching given type.
      * @param list the list of queries.
+     * @param type the type.
      * @return the matching ones.
      */
     @NotNull
