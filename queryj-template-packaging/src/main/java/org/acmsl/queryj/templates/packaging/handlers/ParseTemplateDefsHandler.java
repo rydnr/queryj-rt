@@ -283,7 +283,7 @@ public class ParseTemplateDefsHandler
     /**
      * Parses a template def stream.
      * @param inputStream the stream to parse.
-     * @return the Template def.
+     * @return the template def.
      * @throws TemplatePackagingCheckedException if the template def stream cannot be parsed.
      */
     @NotNull
