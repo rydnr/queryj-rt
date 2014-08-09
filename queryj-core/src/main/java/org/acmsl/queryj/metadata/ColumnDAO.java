@@ -60,7 +60,7 @@ import java.util.List;
  * Provides methods to access {@link Attribute column} information.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
- * Created 2012/06/06
+ * Created: 2012/06/06
  */
 public interface ColumnDAO
     extends DAO
