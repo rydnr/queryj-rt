@@ -69,7 +69,8 @@ public class InvalidTemplatePackagingTemplateException
 
     /**
      * Creates an instance.
-     * @param
+     * @param group the group.
+     * @param cause the cause.
      */
     public InvalidTemplatePackagingTemplateException(@NotNull final String group, @NotNull final Throwable cause)
     {
