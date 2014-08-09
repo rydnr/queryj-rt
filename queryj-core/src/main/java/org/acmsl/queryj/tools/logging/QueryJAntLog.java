@@ -478,10 +478,6 @@ public class QueryJAntLog
     /**
      * {inheritDoc}
      */
-    /**
-     * <p>Logs a message with fatal log level.</p>
-     * @param message the message.
-     */
     @Override
     public void fatal(@Nullable final Object message)
     {
