@@ -504,7 +504,7 @@ public abstract class DatabaseMetaDataRetrievalHandler
      * @param parameters the parameters to handle.
      * @param metadataManager the {@link MetadataManager} instance.
      * @return {@code true} if the chain should be stopped.
-     * throws QueryJBuildException if the process fails.
+     * @throws QueryJBuildException if the process fails.
      */
     @SuppressWarnings("unchecked")
     protected boolean handle(
