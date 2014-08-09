@@ -72,6 +72,7 @@ public class CannotAnalyzeResultSetForValidationException
 
     /**
      * Creates a new instance associated to given {@link Sql}.
+     * @param cause the cause.
      * @param sql the SQL.
      */
     public CannotAnalyzeResultSetForValidationException(
