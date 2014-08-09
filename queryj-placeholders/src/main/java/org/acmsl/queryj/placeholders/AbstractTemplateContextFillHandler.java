@@ -175,7 +175,7 @@ public abstract class AbstractTemplateContextFillHandler<C extends TemplateConte
     public String toString()
     {
         return
-            "{ \"templateContext\": \"" + templateContext.hashCode() + '"'
+              "{ \"templateContext\": \"" + templateContext.hashCode() + '"'
             + ", \"class\": \"AbstractTemplateContextFillHandler\""
             + ", \"package\": \"org.acmsl.queryj.placeholders\" }";
     }
