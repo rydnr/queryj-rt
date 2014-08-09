@@ -1694,7 +1694,7 @@ public class AntProjectAdapter
      * @return such references.
      */
     @NotNull
-    protected Map getCopyOfReferences(@NotNull final Project project)
+    protected Map<String, Object> getCopyOfReferences(@NotNull final Project project)
     {
         return project.getCopyOfReferences();
     }
