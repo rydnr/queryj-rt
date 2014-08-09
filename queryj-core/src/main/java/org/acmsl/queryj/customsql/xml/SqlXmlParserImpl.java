@@ -59,7 +59,7 @@ import org.acmsl.queryj.metadata.SqlPropertyDAO;
 import org.acmsl.queryj.metadata.SqlResultDAO;
 
 /*
- * Importing some ACM-SL Commons classes.
+ * Importing some ACM-SL Java Commons classes.
  */
 import org.acmsl.commons.logging.UniqueLogFactory;
 import org.acmsl.commons.utils.io.FileUtils;
