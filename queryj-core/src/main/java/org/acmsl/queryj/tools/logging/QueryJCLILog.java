@@ -82,7 +82,7 @@ public class QueryJCLILog
      * @param threshold the threshold.
      * @param printStream the print stream.
      */
-    public QueryJCLILog(final int threshold, final PrintStream printStream)
+    public QueryJCLILog(final int threshold, @NotNull final PrintStream printStream)
     {
         immutableSetThreshold(threshold);
         immutableSetPrintStream(printStream);
