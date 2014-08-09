@@ -274,6 +274,7 @@ public class QueryJAntLog
      * <p>Logs an error with debug log level.</p>
      * @param message the message.
      * @param throwable the cause.
+     * @param project the project.
      */
     protected void debug(
         @Nullable final Object message,
