@@ -1326,7 +1326,7 @@ public class QueryJTask
     @Override
     public String toString()
     {
-        return "{ \"class\": \"QueryJTask\", \"classpath\": \"" + m__Classpath + '"'
+        return "{ \"classpath\": \"" + m__Classpath + '"'
                "', 'queryJCommand': '" + m__QueryJCommand +
                "', 'tables': " + m__Tables +
                '}';
