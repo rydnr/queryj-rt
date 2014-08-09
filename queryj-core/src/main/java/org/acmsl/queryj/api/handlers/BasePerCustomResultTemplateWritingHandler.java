@@ -114,6 +114,7 @@ public abstract class BasePerCustomResultTemplateWritingHandler
      * @param metadataManager the metadata manager.
      * @param parameters the parameter map.
      * @return such folder.
+     * @throws
      */
     @NotNull
     @SuppressWarnings("unchecked")
