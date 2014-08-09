@@ -122,6 +122,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
      * @param templateFactory the template factory.
      * @param repository the repository.
      * @param metadataManager the {@link MetadataManager} instance.
+     * @throws QueryJBuildException if the templates cannot be built.
      */
     @SuppressWarnings("unchecked")
     protected void buildTemplate(
