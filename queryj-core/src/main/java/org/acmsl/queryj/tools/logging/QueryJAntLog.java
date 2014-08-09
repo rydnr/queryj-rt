@@ -395,11 +395,6 @@ public class QueryJAntLog
     /**
      * {inheritDoc}
      */
-    /**
-     * <p>Logs an error with warn log level.</p>
-     * @param message the message.
-     * @param throwable the cause.
-     */
     @Override
     public void warn(@Nullable final Object message, @NotNull final Throwable throwable)
     {
