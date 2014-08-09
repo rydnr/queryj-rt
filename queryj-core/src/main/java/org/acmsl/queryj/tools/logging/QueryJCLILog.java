@@ -415,7 +415,8 @@ public class QueryJCLILog
     /**
      * {@inheritDoc}
      */
-    public void warn(final Object message, final Throwable throwable)
+    @Override
+    public void warn(@NotNull final Object message, @NotNull final Throwable throwable)
     {
         if  (isWarnEnabled())
         {
