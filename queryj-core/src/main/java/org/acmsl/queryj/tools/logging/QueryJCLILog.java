@@ -440,7 +440,7 @@ public class QueryJCLILog
      * {@inheritDoc}
      */
     @Override
-    public void error(@Override final Object message, @Override final Throwable throwable)
+    public void error(@NotNull final Object message, @Override final Throwable throwable)
     {
         if  (isErrorEnabled())
         {
