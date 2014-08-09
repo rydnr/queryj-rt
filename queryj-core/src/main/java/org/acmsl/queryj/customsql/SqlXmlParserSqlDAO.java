@@ -598,6 +598,7 @@ public class SqlXmlParserSqlDAO
 
     /**
      * Retrieves all repository-scoped SQL.
+     * @param breakAtFirstOccurrence whether to return just the first match.
      * @return such list.
      */
     @NotNull
