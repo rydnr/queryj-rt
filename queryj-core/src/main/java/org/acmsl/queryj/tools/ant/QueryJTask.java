@@ -1222,6 +1222,7 @@ public class QueryJTask
 
     /**
      * Retrieves whether to include Checkthread.org annotations in the generated code.
+     * @param delegee the command.
      * @return such information.
      */
     @SuppressWarnings("unused")
