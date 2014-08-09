@@ -98,7 +98,7 @@ public class SqlXmlParserStatementFlagsDAO
 
     /**
      * Finds the connection flags for given primary key operation.
-     *
+     * @param parser the parser.
      * @return such information.
      */
     @NotNull
