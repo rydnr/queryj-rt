@@ -31,8 +31,8 @@
  *
  * Description: Minimal logging helper to integrate with UniqueLogFactory
  *              API. It implements *Log* only to make the developer comfortable
- *              with the API, which just means
- * replacing *LogFactory.getLog(..)* with
+ *              with the API, which just means replacing *LogFactory.getLog(..)*
+ *              with
  * using the *UniqueLogLogFactory.getLog(..)*.
  *
  * Version: $Revision$ ($Author$ at $Date$)
