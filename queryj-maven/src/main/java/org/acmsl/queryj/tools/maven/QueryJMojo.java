@@ -198,6 +198,7 @@ public class QueryJMojo
      * The sql xml file.
      * @parameter property="sqlXmlFile"
      */
+    @Parameter (property = "driver", required = true)
     private File m__SqlXmlFile;
 
     /**
