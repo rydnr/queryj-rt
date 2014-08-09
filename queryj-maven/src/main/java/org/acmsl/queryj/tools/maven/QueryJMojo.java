@@ -161,7 +161,6 @@ public class QueryJMojo
 
     /**
      * The schema.
-     * @parameter property="schema" @required
      */
     @Parameter (property = "schema", required = true)
     private String schema;
