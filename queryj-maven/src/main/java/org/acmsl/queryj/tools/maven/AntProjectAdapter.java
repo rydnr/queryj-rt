@@ -1546,7 +1546,7 @@ public class AntProjectAdapter
      * See {@link Project#executeSortedTargets(Vector)}.
      * @param sortedTargets the target list.
      * @param project the {@link Project} instance.
-     * @throws BuildException if the target fails.
+     * @throws BuildException if the targets fail.
      */
     protected void executeSortedTargets(@NotNull final Vector sortedTargets, @NotNull final Project project)
         throws BuildException
