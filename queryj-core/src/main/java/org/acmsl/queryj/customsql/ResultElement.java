@@ -170,6 +170,7 @@ public class ResultElement<T>
 
     /**
      * Checks whether given instance is semantically equal to this one.
+     * @param candidate the candidate.
      * @param id the <i>id</i> attribute.
      * @param classValue the <i>class</i> attribute.
      * @param propertyRefs the <i>property-ref</i> elements.
