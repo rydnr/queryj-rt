@@ -161,7 +161,6 @@ public class QueryJMojo
 
     /**
      * The schema.
-     * @parameter property="driver" @required
      */
     @Parameter (property = "driver", required = true)
     private String schema;
