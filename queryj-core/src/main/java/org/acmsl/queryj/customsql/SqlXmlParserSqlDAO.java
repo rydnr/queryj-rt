@@ -184,7 +184,7 @@ public class SqlXmlParserSqlDAO
     }
 
     /**
-     * Retrieves all {@link SqlElement SQL elements}.
+     * Retrieves {@link SqlElement SQL elements}.
      * @param id the id to filter.
      * @param parser the parser.
      * @return such list.
