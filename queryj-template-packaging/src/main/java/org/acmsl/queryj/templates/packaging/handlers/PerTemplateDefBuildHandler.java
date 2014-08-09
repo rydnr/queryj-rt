@@ -73,6 +73,9 @@ import java.util.List;
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2013/09/15 07:18
+ * @param <T> the template type.
+ * @param <TF> the template factory type.
+ * @param <C> the context.
  */
 @ThreadSafe
 public abstract class PerTemplateDefBuildHandler
