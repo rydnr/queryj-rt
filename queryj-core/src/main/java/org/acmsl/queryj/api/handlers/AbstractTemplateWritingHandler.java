@@ -479,6 +479,7 @@ public abstract class AbstractTemplateWritingHandler
      * @param rootDir the root dir.
      * @param parameters the parameter map.
      * @return such folder.
+     * @throws QueryJBuildException if the templates cannot be written.
      */
     @NotNull
     protected abstract File retrieveOutputDir(
