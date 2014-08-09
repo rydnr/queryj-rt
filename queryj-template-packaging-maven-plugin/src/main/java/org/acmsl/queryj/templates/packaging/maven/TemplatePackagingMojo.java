@@ -497,6 +497,7 @@ public class TemplatePackagingMojo
      * @param command the command.
      * @param log the log.
      * @param version the version.
+     * @throws MojoExecutionException if the process fails.
      */
     protected void execute(
         @NotNull final QueryJCommand command, @NotNull final Log log, final String version)
