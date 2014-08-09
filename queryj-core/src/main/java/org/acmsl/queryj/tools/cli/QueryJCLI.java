@@ -67,7 +67,7 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Allows executing QueryJ from the command-line.
- * @since Thu Jul 13 18:21:23 2006
+ * @since
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  */
 public final class QueryJCLI
