@@ -1272,9 +1272,7 @@ public class QueryJTask
     }
 
     /**
-     * Specifies a dynamic attribute.
-     * @param name the attribute name.
-     * @param value the attribute value.
+     * {@inheritDoc}
      */
     @Override
     public void setDynamicAttribute(final String name, final String value)
