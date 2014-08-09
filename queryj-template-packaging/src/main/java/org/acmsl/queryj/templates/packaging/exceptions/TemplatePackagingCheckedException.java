@@ -86,6 +86,7 @@ public class TemplatePackagingCheckedException
     /**
      * Builds a QueryJ exception to wrap given one.
      * @param message the message.
+     * @param params the parameters.
      * @param cause the exception to wrap.
      */
     public TemplatePackagingCheckedException(
