@@ -155,7 +155,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
      * @param parameters the command.
      * @return <code>true</code> in such case.
      */
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings("unchecked, unused")
     protected boolean isGenerationEnabled(
         @NotNull final CustomSqlProvider customSqlProvider, @NotNull final QueryJCommand parameters)
     {
