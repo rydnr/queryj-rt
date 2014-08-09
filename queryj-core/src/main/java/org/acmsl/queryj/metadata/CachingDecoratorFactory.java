@@ -189,14 +189,6 @@ public class CachingDecoratorFactory
     /**
      * {@inheritDoc}
      */
-    /**
-     * Creates an <code>ParameterDecorator</code> for given
-     * parameter instance.
-     *
-     * @param parameter       the parameter.
-     * @param metadataManager the <code>MetadataManager</code> instance.
-     * @return the decorated attribute for the concrete template.
-     */
     @NotNull
     @Override
     public ParameterDecorator<?> createDecorator(
