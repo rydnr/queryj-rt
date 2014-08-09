@@ -112,6 +112,9 @@ public class PrimaryKeyHandler
 
     /**
      * Retrieves the primary key attributes.
+     * @param tableName the table name.
+     * @param metadataManager the metadata manager.
+     * @param metadataUtils the {@link MetadataUtils}
      * @return such attributes.
      */
     @NotNull
