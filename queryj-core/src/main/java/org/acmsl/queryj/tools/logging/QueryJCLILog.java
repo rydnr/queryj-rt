@@ -296,7 +296,7 @@ public class QueryJCLILog
      * {@inheritDoc}
      */
     @Override
-    public void trace(final Object message)
+    public void trace(@NotNull final Object message)
     {
         if  (isTraceEnabled())
         {
