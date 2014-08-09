@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Utility class for template packaging.
  *
  * Date: 2014/06/03
  * Time: 01:17
