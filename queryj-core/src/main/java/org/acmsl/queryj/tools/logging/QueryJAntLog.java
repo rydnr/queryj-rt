@@ -342,11 +342,6 @@ public class QueryJAntLog
     /**
      * {inheritDoc}
      */
-    /**
-     * <p>Logs an error with info log level.</p>
-     * @param message the message.
-     * @param throwable the cause.
-     */
     @Override
     public void info(@Nullable final Object message, @NotNull final Throwable throwable)
     {
