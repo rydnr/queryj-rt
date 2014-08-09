@@ -131,7 +131,7 @@ public class QueryJCLILog
      * Specifies the <code>PrintStream</code> instance.
      * @param printStream the print stream.
      */
-    @SuppressWarnings()
+    @SuppressWarnings("unused")
     protected void setPrintStream(final PrintStream printStream)
     {
         immutableSetPrintStream(printStream);
