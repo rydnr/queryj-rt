@@ -437,11 +437,10 @@ public class QueryJCLILog
     }
     
     /**
-     * <p>Logs an error with error log level.</p>
-     * @param message the message.
-     * @param throwable the cause.
+     * {@inheritDoc}
      */
-    public void error(final Object message, final Throwable throwable)
+    @Override
+    public void error(@Override final Object message, @Override final Throwable throwable)
     {
         if  (isErrorEnabled())
         {
