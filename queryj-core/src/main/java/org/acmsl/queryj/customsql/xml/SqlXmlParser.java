@@ -131,7 +131,7 @@ public interface SqlXmlParser
 
     /**
      * Parses the sql.xml associated to this instance.
-     * @throws QueryJBuildException if the par
+     * @throws QueryJBuildException if the parsing fails.
      */
     void parse()
         throws  QueryJBuildException;
