@@ -243,6 +243,7 @@ public class QueryJAntLog
      * <p>Logs a message with debug log level.</p>
      * @param message the message.
      */
+    @Override
     public void debug(@Nullable final Object message)
     {
         debug(message, getProject());
