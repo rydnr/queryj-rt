@@ -1329,7 +1329,7 @@ public class QueryJTask
         return
             "{ \"classpath\": \"" + m__Classpath + '"'
             + ", \"command\": " + m__QueryJCommand
-            + ", \"tables': " + m__Tables +
-               + "class": "QueryJTask", '}';
+            + ", \"tables\": " + m__Tables +
+            + "class": "QueryJTask", '}';
     }
 }
