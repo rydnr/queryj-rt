@@ -376,7 +376,7 @@ public abstract class AbstractQueryJCommandHandler
      * Retrieves the {@link Charset} instance.
      * @param parameters the parameter map.
      * @return such instance.
-     * throws QueryJBuildException if the charset is unavailable.
+     * @throws QueryJBuildException if the charset is unavailable.
      */
     protected Charset retrieveCharset(@NotNull final QueryJCommand parameters)
       throws  QueryJBuildException
