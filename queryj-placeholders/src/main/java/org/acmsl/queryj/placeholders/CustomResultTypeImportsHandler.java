@@ -69,7 +69,8 @@ import org.checkthread.annotations.ThreadSafe;
  * Resolves "property_type_imports" placeholders, to avoid declaring
  * unused imports.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
- * @since 2012/06/20
+ * @since 3.0
+ * Created: 2012/06/20
  */
 @ThreadSafe
 public class CustomResultTypeImportsHandler
