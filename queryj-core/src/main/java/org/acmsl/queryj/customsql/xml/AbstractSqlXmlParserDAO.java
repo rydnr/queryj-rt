@@ -182,7 +182,6 @@ public abstract class AbstractSqlXmlParserDAO
      * @return such list.
      * @param <T> the element type.
      */
-    @SuppressWarnings("unchecked")
     @NotNull
     protected <T> List<T> findAll(@NotNull final SqlXmlParser parser, @NotNull final Class<?> type)
     {
