@@ -170,6 +170,7 @@ public class ParameterValidationHandler
      * @param command the command to handle.
      * @param log the log.
      * @return <code>true</code> if the chain should be stopped.
+     *
      */
     protected boolean handle(@NotNull final QueryJCommand command, @Nullable final Log log)
         throws  QueryJBuildException
