@@ -187,6 +187,9 @@ public class CachingDecoratorFactory
     }
 
     /**
+     * {@inheritDoc}
+     */
+    /**
      * Creates an <code>ParameterDecorator</code> for given
      * parameter instance.
      *
