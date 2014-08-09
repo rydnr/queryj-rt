@@ -498,6 +498,7 @@ public class ParameterValidationHandler
     /**
      * Reads the contents of given file.
      * @param file the file.
+     * @param charset the charset.
      * @return the file contents.
      * @throws SecurityException if reading the file is not permitted.
      * @throws IOException if the file cannot be read.
