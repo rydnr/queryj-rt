@@ -140,6 +140,8 @@ public class QueryJAntLog
      * (for example, <code>String</code> concatenation)
      * when the log level is more than error. </p>
      */
+    @Ov
+
     public boolean isErrorEnabled()
     {
         return true;
