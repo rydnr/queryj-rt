@@ -36,7 +36,7 @@
 package org.acmsl.queryj.templates.packaging.handlers;
 
 /*
- * Importing QueryJ-Template-Packaging classes.
+ * Importing QueryJ Template Packaging classes.
  */
 import org.acmsl.queryj.templates.packaging.TemplatePackagingSettings;
 import org.acmsl.queryj.templates.packaging.exceptions.MissingSourcesException;
