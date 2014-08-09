@@ -111,6 +111,7 @@ public class QueryJTask
 
     /**
      * Creates a {@link QueryJTask} instance.
+     * @param log the log.
      */
     public QueryJTask(@NotNull final Log log)
     {
