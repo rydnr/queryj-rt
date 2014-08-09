@@ -130,6 +130,7 @@ public class CustomResultsHandler
      * @param daoTemplateUtils the <code>DAOTemplateUtils</code> instance.
      * @param templateUtils the <code>TemplateUtils</code> instance.
      * @return the custom results.
+     * @throws
      */
     @NotNull
     protected List<Result<String>> retrieveCustomResults(
