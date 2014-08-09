@@ -296,7 +296,7 @@ public abstract class AbstractForeignKeyDecorator
         {
             if (t_Attribute != null)
             {
-                result.add(decoratorFactory.<V>createDecorator(t_Attribute, metadataManager));
+                result.add(decoratorFactory.<V, K>createDecorator(t_Attribute, metadataManager));
             }
         }
 
