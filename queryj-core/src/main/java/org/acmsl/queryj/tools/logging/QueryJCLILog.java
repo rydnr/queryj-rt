@@ -483,6 +483,6 @@ public class QueryJCLILog
             "{ \"threshold\": " + m__iThreshold
             + ", \"printStream\": \"" + m__PrintStream.hashCode() + '"'
             + ", \"class\": \"QueryJCLILog\""
-            + ", \"package\": \"org.acmsl.queryj.tools.logging\"'}';
+            + ", \"package\": \"org.acmsl.queryj.tools.logging\" }";
     }
 }
