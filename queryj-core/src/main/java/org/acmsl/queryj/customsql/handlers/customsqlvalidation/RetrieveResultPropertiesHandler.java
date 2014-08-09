@@ -136,6 +136,7 @@ public class RetrieveResultPropertiesHandler
      * @param command the command to process (or not).
      * @return <code>true</code> if the handler actually process the command,
      *         or maybe because it's not desirable to continue the chain.
+     * @throws QueryJBuildException if the operation fails.
      */
     @Override
     public boolean handle(@NotNull final QueryJCommand command)
