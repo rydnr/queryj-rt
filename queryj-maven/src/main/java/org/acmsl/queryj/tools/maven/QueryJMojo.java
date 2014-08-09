@@ -65,7 +65,7 @@ import org.apache.tools.ant.Project;
 import org.apache.tools.ant.types.Path;
 
 /*
- * Importing some Jetbrains annotations.
+ * Importing NotNull annotations.
  */
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
