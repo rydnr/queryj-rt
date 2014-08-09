@@ -80,7 +80,7 @@ public interface DecoratorFactory
      * @param
      */
     @NotNull
-    public <V, DecoratedString> Attribute<DecoratedString> createDecorator(
+    public <V> Attribute<DecoratedString> createDecorator(
         @NotNull final Attribute<V> attribute, @NotNull final MetadataManager metadataManager);
 
     /**
