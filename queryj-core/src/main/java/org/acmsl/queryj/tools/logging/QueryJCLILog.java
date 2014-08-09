@@ -452,7 +452,7 @@ public class QueryJCLILog
      * {@inheritDoc}
      */
     @Override
-    public void fatal(@Override final Object message)
+    public void fatal(@NotNull final Object message)
     {
         if  (isFatalEnabled())
         {
