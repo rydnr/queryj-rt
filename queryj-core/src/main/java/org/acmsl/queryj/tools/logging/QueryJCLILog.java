@@ -377,9 +377,9 @@ public class QueryJCLILog
     }
     
     /**
-     * <p>Logs a message with info log level.</p>
-     * @param message the message.
+     * {@inheritDoc}
      */
+    @Override
     public void info(final Object message)
     {
         if  (isInfoEnabled())
