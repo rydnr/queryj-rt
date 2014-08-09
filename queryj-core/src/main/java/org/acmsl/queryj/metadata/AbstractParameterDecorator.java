@@ -415,6 +415,7 @@ public abstract class AbstractParameterDecorator<V>
      * Provides a text representation of the information
      * contained in given instance.
      * @param parameter the decorated parameter.
+     * @param typeManager the {@link MetadataTypeManager} instance.
      * @return such information.
      */
     @NotNull
