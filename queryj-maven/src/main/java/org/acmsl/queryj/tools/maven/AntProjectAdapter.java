@@ -251,6 +251,7 @@ public class AntProjectAdapter
     /**
      * Retrieves the default input stream.
      * @param project the {@link Project} instance.
+     * @return the input stream.
      */
     @NotNull
     protected InputStream getDefaultInputStream(@NotNull final Project project)
