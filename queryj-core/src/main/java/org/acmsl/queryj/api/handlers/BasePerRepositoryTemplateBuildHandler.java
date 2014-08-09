@@ -100,6 +100,7 @@ public abstract class BasePerRepositoryTemplateBuildHandler
      * Handles given command.
      * @param command the command to handle.
      * @return <code>true</code> if the chain should be stopped.
+     * @throws QueryJBuildException if the template cannot be built.
      */
     @Override
     public boolean handle(@NotNull final QueryJCommand command)
