@@ -148,7 +148,7 @@ public abstract class AbstractDatabaseMetaDataCacheHandler
      * @param outputDir the output dir.
      * @return {@link MetadataManager} instance from disk.
      * @throws IOException if the cache is unavailable.
-     * @throws IOException if the manager cannot be cached.
+     * @throws ClassNotFoundException
      */
     @Nullable
     @SuppressWarnings("unused")
