@@ -140,7 +140,6 @@ public class QueryJMojo
 
     /**
      * The user name.
-     * @parameter property="username" @required
      */
     @Parameter (property = "username", required = true)
     private String m__strUsername;
