@@ -87,8 +87,7 @@ public class MySQL4xMetadataManager
      * @param schema the database schema.
      * @param caseSensitive whether the database engine is case sensitive or not.
      * @throws SQLException if the extraction fails.
-     * @tho
-     *
+     * @throws  QueryJException if any other error occurs.
      */
     public MySQL4xMetadataManager(
         @NotNull final String[] tableNames,
