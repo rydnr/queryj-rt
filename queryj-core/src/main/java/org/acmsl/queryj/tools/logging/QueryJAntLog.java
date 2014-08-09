@@ -337,6 +337,7 @@ public class QueryJAntLog
      * <p>Logs a message with warn log level.</p>
      * @param message the message.
      */
+    @Override
     public void warn(@Nullable final Object message)
     {
         warn(message, getProject());
