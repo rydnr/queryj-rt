@@ -177,7 +177,7 @@ public class QueryJMojo
      * The package name.
      * @parameter property="packageName" @required
      */
-    @Parameter (property = "driver", required = true)
+    @Parameter (property = "packageName", required = true)
     private String m__strPackageName;
 
     /**
