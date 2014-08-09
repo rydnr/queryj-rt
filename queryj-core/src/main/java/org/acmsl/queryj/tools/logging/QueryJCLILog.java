@@ -392,7 +392,7 @@ public class QueryJCLILog
      * {@inheritDoc}
      */
     @Override
-    public void info(final Object message, final Throwable throwable)
+    public void info(@NotNull final Object message, @NotNull final Throwable throwable)
     {
         if  (isInfoEnabled())
         {
