@@ -1120,6 +1120,7 @@ public class QueryJTask
     /**
      * Specifies whether to include timestamps in the generated code.
      * @param disableGenerateTimestamps such choice.
+     * @param delegee the command.
      */
     protected void setDisableGenerationTimestamps(
         final boolean disableGenerateTimestamps, @NotNull final QueryJCommand delegee)
