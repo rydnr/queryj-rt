@@ -363,6 +363,7 @@ public class ConfigurationQueryJCommandImpl
     /**
      * Retrieves the setting for given key.
      * @param key the key.
+     * @param configuration the configuration.
      * @param <T> the type.
      * @return the value for such key.
      */
