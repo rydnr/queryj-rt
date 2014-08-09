@@ -229,6 +229,7 @@ public abstract class AbstractTemplateWritingHandler
      * @param threadCount the number of threads to use.
      * @param rootDir the root dir.
      * @return the list if {@link Future} to keep track of the progress.
+     * @throws QueryJBuildException if the templates cannot be written.
      */
     @NotNull
     protected List<Future<T>> writeTemplatesMultithread(
