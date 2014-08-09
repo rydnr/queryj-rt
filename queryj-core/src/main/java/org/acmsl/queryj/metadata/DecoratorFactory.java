@@ -167,6 +167,7 @@ public interface DecoratorFactory
      * @param attributes the {@link Attribute attributes}.
      * @param metadataManager the {@link MetadataManager} instance.
      * @return the decorated version of the attribute list.
+     * @paa
      */
     @NotNull
     public <V> List<Attribute<DecoratedString>> decorateAttributes(
