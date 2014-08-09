@@ -1277,8 +1277,7 @@ public class QueryJTask
      * @param value the attribute value.
      */
     @Override
-    public void setDynamicAttribute(
-        final String name, final String value)
+    public void setDynamicAttribute(final String name, final String value)
     {
         throw
             new BuildException(
