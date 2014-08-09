@@ -167,7 +167,7 @@ public class ImplicitDAOResult<T>
 
     /**
      * Checks whether given instance is semantically equal to this one.
-     * @param instance the i
+     * @param instance the candi
      * @param id the <i>id</i> attribute.
      * @param daoRef the <i>daoRef</i> attribute.
      * @param propertyRefs the <i>property-ref</i> elements.
