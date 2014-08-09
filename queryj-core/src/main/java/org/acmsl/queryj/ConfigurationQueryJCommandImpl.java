@@ -377,6 +377,7 @@ public class ConfigurationQueryJCommandImpl
      * @param conf the instance to represent.
      * @return the JSON string.
      */
+    @SuppressWarnings("unused")
     @NotNull
     protected String confToString(@NotNull final Configuration conf)
     {
