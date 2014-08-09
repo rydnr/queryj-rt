@@ -1226,7 +1226,7 @@ public abstract class AbstractJdbcMetadataManager
      * @param metaData the metadata.
      * @param catalog the catalog.
      * @param schema the schema.
-     * @param tables the table.s
+     * @param tables the tables.
      * @param caseSensitiveness whether the table names are case sensitive or not.
      * @param metadataExtractionListener the metadata extraction listener.
      * @throws SQLException if the extraction fails.
