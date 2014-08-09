@@ -154,7 +154,7 @@ public class QueryJLogFactory
      * @param log the cached log instance.
      */
     @Nullable
-    protected Log getInstance(@NotNull final Class clazz, @Nullable final Log log)
+    protected Log getInstance(@NotNull final Class<?> clazz, @Nullable final Log log)
         throws LogConfigurationException
     {
         @Nullable Log result = log;
