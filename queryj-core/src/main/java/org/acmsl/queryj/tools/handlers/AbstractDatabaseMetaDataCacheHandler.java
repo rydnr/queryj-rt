@@ -89,6 +89,7 @@ public abstract class AbstractDatabaseMetaDataCacheHandler
      * Caches given {@link MetadataManager database information} to disk.
      * @param manager the {@link MetadataManager} instance.
      * @param outputDir the output dir.
+     * @throws IOException if th
      */
     protected void cache(@NotNull final MetadataManager manager, @NotNull final File outputDir)
         throws IOException
