@@ -222,7 +222,7 @@ public abstract class AbstractSqlXmlParserDAO
      * @param contents such contents.
      * @param itemClass the class to filter.
      * @param idFilter the id filter (optional).
-     @SuppressWarnings("unchecked")
+     * @param <T> the eleme</T>
      */
     @SuppressWarnings("unchecked")
     @NotNull
