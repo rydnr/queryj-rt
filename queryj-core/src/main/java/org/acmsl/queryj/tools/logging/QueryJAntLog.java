@@ -62,7 +62,7 @@ import org.jetbrains.annotations.Nullable;
  * API. It implements <code>Log</code> only to make the
  * developer comfortable with the API, which just means
  * replacing <code>LogFactory.getLog(..)</code> with
- * using the <code>UniqueLogFactory.getLog(..)</code>.
+ * <code>UniqueLogFactory.getLog(..)</code>.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  */
 @ThreadSafe
