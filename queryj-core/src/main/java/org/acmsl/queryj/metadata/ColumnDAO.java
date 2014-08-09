@@ -69,6 +69,7 @@ public interface ColumnDAO
      * Retrieves a concrete column in a given table.
      * @param table the table name.
      * @param columnName the column name.
+     * @return the column.
      */
     @Nullable
     Attribute<String> findColumn(@NotNull final String table, @NotNull final String columnName);
