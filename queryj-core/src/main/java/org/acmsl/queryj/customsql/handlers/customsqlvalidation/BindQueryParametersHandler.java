@@ -581,6 +581,7 @@ public class BindQueryParametersHandler
      * @param sql the {@link Sql}.
      * @param <T> the type.
      * @return the parameter value.
+     * @throws QueryJBuildException if the binding fails.
      */
     protected <T> T createViaConstructor(
         @NotNull final Parameter<String, T> parameter,
