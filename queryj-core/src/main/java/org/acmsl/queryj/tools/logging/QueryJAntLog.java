@@ -211,6 +211,9 @@ public class QueryJAntLog
     }
 
     /**
+     * {inheritDoc}
+     */
+    /**
      * <p>Logs a message with trace log level.</p>
      * @param message the message.
      */
