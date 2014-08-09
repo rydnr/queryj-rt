@@ -772,7 +772,8 @@ public abstract class AbstractJdbcMetadataManager
      * <code>MetadataExtractionListener</code> instance.
      * @param metaLanguageUtils the {@link MetaLanguageUtils} instance.
      * @return the list of tables.
-     * @throws
+     * @throws SQLException if the extraction fais.
+     *
      */
     @NotNull
     protected List<Table<String, Attribute<String>, List<Attribute<String>>>> extractTableMetadata(
