@@ -139,7 +139,7 @@ public class SqlXmlParserSqlDAO
     /**
      * Checks whether given primary key was already retrieved or not.
      * @param id the id to check.
-     * @return
+     * @return {@code true} in such case.
      */
     protected synchronized boolean isPrimaryKeyAlreadyRetrieved(@NotNull final String id)
     {
