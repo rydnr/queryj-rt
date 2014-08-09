@@ -265,8 +265,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
     }
 
     /**
-     * Retrieves the parent table.
-     * @return such table.
+     * {@inheritDoc}
      */
     @Nullable
     @Override
