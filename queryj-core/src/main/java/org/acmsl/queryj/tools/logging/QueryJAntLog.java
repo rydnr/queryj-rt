@@ -128,6 +128,7 @@ public class QueryJAntLog
      * (for example, <code>String</code> concatenation)
      * when the log level is more than debug. </p>
      */
+    @Override
     public boolean isDebugEnabled()
     {
         return true;
