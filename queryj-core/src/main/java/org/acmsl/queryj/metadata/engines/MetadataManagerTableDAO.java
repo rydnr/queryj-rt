@@ -748,7 +748,7 @@ public abstract class MetadataManagerTableDAO<M extends MetadataManager>
     public String toString()
     {
         return
-              "{ \"class\": \"MetadataManagerTableDAO\""
+              "{ "
             + ", \"metadataManager\": \"" + m__MetadataManager.hashCode() + "\" }";
     }
 }
