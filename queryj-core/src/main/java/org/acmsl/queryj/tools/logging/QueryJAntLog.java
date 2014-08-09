@@ -165,13 +165,6 @@ public class QueryJAntLog
     /**
      * {inheritDoc}
      */
-    /**
-     * <p> Is info logging currently enabled? </p>
-     *
-     * <p> Call this method to prevent having to perform expensive operations
-     * (for example, <code>String</code> concatenation)
-     * when the log level is more than info. </p>
-     */
     @Override
     public boolean isInfoEnabled()
     {
