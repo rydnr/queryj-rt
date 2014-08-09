@@ -59,6 +59,7 @@ public interface TemplateGenerator<T extends Template<C>, C extends TemplateCont
      * @param rootFolder the root folder.
      * @param charset the file encoding.
      * @return <code>true</code> if it actually generated the file.
+     * @throws IOException
      */
     boolean write(
         @NotNull final T template,
