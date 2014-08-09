@@ -515,6 +515,8 @@ public class ParameterValidationHandler
      * @param file the file.
      * @param fileUtils the {@link FileUtils} instance.
      * @return the file contents.
+     * @throws SecurityException if reading the file is not permitted.
+     * @throws IOException if the file cannot be read.
      */
     @NotNull
     protected String readFile(
