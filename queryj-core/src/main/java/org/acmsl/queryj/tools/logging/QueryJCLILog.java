@@ -180,6 +180,7 @@ public class QueryJCLILog
     /**
      * {@inheritDoc}
      */
+    @Override
     public boolean isDebugEnabled()
     {
         return isDebugEnabled(getThreshold());
