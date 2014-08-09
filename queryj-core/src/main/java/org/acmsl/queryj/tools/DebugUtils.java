@@ -47,7 +47,7 @@ import org.acmsl.commons.patterns.Utils;
 import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing some checktrhead.org annotations.
+ * Importing some checkthread.org annotations.
  */
 import org.checkthread.annotations.ThreadSafe;
 
