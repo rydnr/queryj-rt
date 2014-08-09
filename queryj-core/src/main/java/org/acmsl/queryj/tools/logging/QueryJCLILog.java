@@ -333,7 +333,7 @@ public class QueryJCLILog
      * @param printStream the print stream.
      */
     protected void log(
-        final Object message,
+        @NotNull final Object message,
         @Nullable final Throwable throwable,
         @NotNull final PrintStream printStream)
     {
