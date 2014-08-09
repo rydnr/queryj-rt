@@ -1714,6 +1714,7 @@ public class AntProjectAdapter
      * @param key the reference key.
      * @param project the {@link Project} instance.
      * @return the reference value.
+     * @param <T> the type.
      */
     @Nullable
     protected <T> T getReference(@NotNull final String key, @NotNull final Project project)
