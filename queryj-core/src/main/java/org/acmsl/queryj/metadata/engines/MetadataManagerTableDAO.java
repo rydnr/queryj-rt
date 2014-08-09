@@ -749,6 +749,6 @@ public abstract class MetadataManagerTableDAO<M extends MetadataManager>
     {
         return
               "{ \"class\": \"" + MetadataManagerTableDAO.class.getName() + "\""
-            + ", \"metadataManager\": \"" + m__MetadataManager + "\" }";
+            + ", \"metadataManager\": \"" + m__MetadataManager.dand + "\" }";
     }
 }
