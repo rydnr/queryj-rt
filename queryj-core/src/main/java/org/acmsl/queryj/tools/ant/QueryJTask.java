@@ -1034,6 +1034,7 @@ public class QueryJTask
      * Specifies the "externally-managed-fields" nested element.
      * @param externallyManagedFields the externally-managed-fields xml
      * element.
+     * @param command the command.
      */
     protected void setExternallyManagedFields(
         @NotNull final AntExternallyManagedFieldsElement externallyManagedFields, @NotNull final QueryJCommand command)
