@@ -322,6 +322,7 @@ public class ParseTemplateDefsHandler
      * @param parser the parser.
      * @param file the file.
      * @return the {@link TemplateDef}.
+     * @throws TemplatePackagingCheckedException if the template def cannot be parsed.
      */
     @NotNull
     public TemplateDef<String> parseDef(
