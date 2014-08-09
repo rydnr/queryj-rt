@@ -77,7 +77,9 @@ public abstract class AbstractEngine<T>
 
     /**
      * Creates a new instance.
-     *
+     * @param name the name.
+     * @param version the version.
+     * @param lobHandling whether it requires special
      */
     protected AbstractEngine(
         @NotNull final T name, @NotNull final T version, final boolean lobHandling, final boolean supportsSequences)
