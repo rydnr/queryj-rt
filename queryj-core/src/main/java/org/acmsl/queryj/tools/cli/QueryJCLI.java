@@ -34,7 +34,7 @@
 package org.acmsl.queryj.tools.cli;
 
 /*
- * Importing some project-specific classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.ConfigurationQueryJCommandImpl;
 import org.acmsl.queryj.SerializablePropertiesConfiguration;
