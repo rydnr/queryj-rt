@@ -42,7 +42,7 @@ import org.acmsl.queryj.Literals;
 import org.jetbrains.annotations.NotNull;
 
 /*
- * Importing checkthread.org annotations.
+ * Importing NotNull annotations.
  */
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
