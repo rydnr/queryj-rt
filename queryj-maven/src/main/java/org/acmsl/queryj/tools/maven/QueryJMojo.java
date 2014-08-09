@@ -241,7 +241,7 @@ public class QueryJMojo
      * The file encoding.
      * @parameter property="encoding" default-value="${project.build.sourceEncoding}"
      */
-    @Parameter (property = "encoding", required = false, defaultValue = )
+    @Parameter (property = "encoding", required = false, defaultValue = "${project.build.sourceEncoding}")
     private String m__strEncoding;
 
     /**
