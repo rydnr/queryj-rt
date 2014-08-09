@@ -282,8 +282,9 @@ public abstract class AbstractCustomSqlProvider
     /**
      * Computes the hash for given {@link Parameter parameter}.
      * @param parameter the parameter.
-     * @param separator the hash separator.
      * @param charset the charset.
+     * @param separator the hash separator.
+     * @return the hash.
      * @param <T> the type.
      * @param <V> the type of the value.
      */
