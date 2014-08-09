@@ -188,7 +188,8 @@ public class OracleMetadataManager
      * @param metaLanguageUtils the {@link MetaLanguageUtils} instance.
      * @param metadataTypeManager the {@link MetadataTypeManager} instance.
      * @return the list of all table names.
-     * @throws
+     * @throws SQLException if the extraction fails.
+     * @throws QueryJException if any other error occurs.
      */
     @NotNull
     @SuppressWarnings("unused")
