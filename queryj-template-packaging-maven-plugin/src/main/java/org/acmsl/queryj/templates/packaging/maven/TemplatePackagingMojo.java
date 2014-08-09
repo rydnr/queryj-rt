@@ -440,7 +440,6 @@ public class TemplatePackagingMojo
      * @throws MojoExecutionException
      */
     protected void execute(@NotNull final Log log)
-        throws MojoExecutionException
     {
         execute(getQueryJCommand(), log, retrieveVersion(retrievePomProperties(log)));
     }
