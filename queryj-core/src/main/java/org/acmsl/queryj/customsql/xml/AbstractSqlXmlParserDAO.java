@@ -194,6 +194,7 @@ public abstract class AbstractSqlXmlParserDAO
      * @param type the type.
      * @param collection the collection.
      * @return such list.
+     * @param <T> the element type.
      */
     @SuppressWarnings("unchecked")
     @NotNull
