@@ -200,7 +200,7 @@ public class QueryJLogFactory
      * logging implementation that is being wrapped)
      * @param log the possibly cached log instance.
      * @return the {@link Log} instance.
-     *
+     * @throws LogConfigurationException if
      */
     @Nullable
     public Log getInstance(@NotNull final String name, @Nullable final Log log)
