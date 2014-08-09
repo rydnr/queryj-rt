@@ -120,6 +120,7 @@ public interface MetadataManager
 
     /**
      * Retrieves the metadata.
+     * @throws SQLException if the metadata extraction fails
      */
     public void eagerlyFetchMetadata()
       throws SQLException,
