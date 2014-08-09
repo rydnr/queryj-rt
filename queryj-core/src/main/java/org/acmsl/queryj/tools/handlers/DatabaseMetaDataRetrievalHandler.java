@@ -1254,7 +1254,7 @@ public abstract class DatabaseMetaDataRetrievalHandler
      * Retrieves the product name.
      * @param metaData the database metadata.
      * @return the product name.
-     * @throws QueryJBuildException if the metadata manager cannot be built.
+     * @throws QueryJBuildException if the product name is not
      */
     @NotNull
     protected String retrieveProductName(@NotNull final DatabaseMetaData metaData)
