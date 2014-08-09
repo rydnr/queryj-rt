@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz (chous)
  *
- * Description: 
+ * Description: Provides simple stuff to help with debugging.
  *
  * Date: 7/29/12
  * Time: 7:55 AM
