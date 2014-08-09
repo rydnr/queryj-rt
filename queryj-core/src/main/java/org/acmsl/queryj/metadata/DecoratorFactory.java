@@ -79,7 +79,7 @@ public interface DecoratorFactory
      * @param <V> the value type.
      */
     @NotNull
-    public <V, K> Attribute<DecoratedString> createDecorator(
+    public <V, K> Attribute<K> createDecorator(
         @NotNull final Attribute<V> attribute, @NotNull final MetadataManager metadataManager);
 
     /**
