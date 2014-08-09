@@ -295,7 +295,7 @@ public abstract class AbstractParameterDecorator<V>
      * @param type the type.
      * @param metadataTypeManager the <code>MetadataTypeManager</code>
      * instance.
-     * return such information.
+     * @return such information.
      */
     protected boolean isClob(
         @NotNull final DecoratedString type, @NotNull final MetadataTypeManager metadataTypeManager)
