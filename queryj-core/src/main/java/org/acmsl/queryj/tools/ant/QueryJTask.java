@@ -1327,7 +1327,7 @@ public class QueryJTask
     public String toString()
     {
         return
-            "{ \"classpath\": \"" + m__Classpath + '"'
+              "{ \"classpath\": \"" + m__Classpath + '"'
             + ", \"command\": " + m__QueryJCommand
             + ", \"tables\": " + m__Tables
             + ", \"class\": \"QueryJTask\""
