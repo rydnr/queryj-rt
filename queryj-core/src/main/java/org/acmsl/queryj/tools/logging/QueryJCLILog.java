@@ -480,7 +480,7 @@ public class QueryJCLILog
     public String toString()
     {
         return
-            "{ \"threshold\": " + m__iThreshold +
+            "{ \"threshold\": " + m__iThreshold
             + ", m__PrintStream=" + m__PrintStream +
                '}';
     }
