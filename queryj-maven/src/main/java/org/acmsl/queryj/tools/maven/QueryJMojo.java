@@ -219,6 +219,7 @@ public class QueryJMojo
      * The grammar bundle.
      * @parameter property="grammarName"
      */
+    @Parameter (property = "driver", required = true)
     private String m__strGrammarName;
 
     /**
