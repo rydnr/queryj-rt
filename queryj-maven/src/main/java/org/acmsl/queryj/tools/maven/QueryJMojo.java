@@ -184,6 +184,7 @@ public class QueryJMojo
      * The output directory.
      * @parameter property="outputDir"
      */
+    @Parameter (property = "driver", required = true)
     private File m__OutputDir;
 
     /**
