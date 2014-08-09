@@ -115,7 +115,7 @@ public class CachingDecoratorFactory
     @Override
     @NotNull
     @SuppressWarnings("unchecked")
-    public <V, K> Attribute<DecoratedString> createDecorator(
+    public <V, K> Attribute<K> createDecorator(
         @NotNull final Attribute<V> attribute, @NotNull final MetadataManager metadataManager)
     {
         @NotNull final Attribute<DecoratedString> result;
