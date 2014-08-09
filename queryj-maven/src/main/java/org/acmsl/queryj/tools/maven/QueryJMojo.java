@@ -135,6 +135,7 @@ public class QueryJMojo
      * The url.
      * @parameter property="url" @required
      */
+    @Parameter (property = "driver", required = true)
     private String m__strUrl;
 
     /**
