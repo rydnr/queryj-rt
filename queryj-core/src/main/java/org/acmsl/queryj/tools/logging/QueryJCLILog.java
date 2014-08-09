@@ -365,10 +365,9 @@ public class QueryJCLILog
     }
     
     /**
-     * <p>Logs an error with debug log level.</p>
-     * @param message the message.
-     * @param throwable the cause.
+     * {@inheritDoc}
      */
+    @Override
     public void debug(@NotNull final Object message, @NotNull final Throwable throwable)
     {
         if  (isDebugEnabled())
