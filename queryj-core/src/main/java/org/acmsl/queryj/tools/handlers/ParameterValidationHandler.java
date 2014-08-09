@@ -499,6 +499,7 @@ public class ParameterValidationHandler
      * Reads the contents of given file.
      * @param file the file.
      * @return the file contents.
+     * @throws QueryJBuildException if any parameter fails to validate.
      */
     @NotNull
     protected String readFile(@NotNull final File file, @NotNull final Charset charset)
