@@ -111,6 +111,8 @@
         <artifactId>maven-plugin-plugin</artifactId>
         <configuration>
           <goalPrefix>queryj</goalPrefix>
+           <!-- see http://jira.codehaus.org/browse/MNG-5346 -->
+           <skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>
         </configuration>
         <executions>
           <execution>
