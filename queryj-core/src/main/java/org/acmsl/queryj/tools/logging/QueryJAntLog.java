@@ -340,6 +340,9 @@ public class QueryJAntLog
     }
 
     /**
+     * {inheritDoc}
+     */
+    /**
      * <p>Logs an error with info log level.</p>
      * @param message the message.
      * @param throwable the cause.
