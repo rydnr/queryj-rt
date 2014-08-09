@@ -51,7 +51,6 @@ import java.io.File;
 /*
  * Importing some Ant classes.
  */
-import org.apache.commons.configuration.PropertiesConfiguration;
 import org.apache.commons.logging.Log;
 import org.apache.tools.ant.BuildException;
 import org.apache.tools.ant.DynamicConfigurator;
