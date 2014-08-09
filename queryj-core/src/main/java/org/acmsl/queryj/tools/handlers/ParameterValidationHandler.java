@@ -468,6 +468,7 @@ public class ParameterValidationHandler
      * information.
      * @param classpath the classpath.
      * such as the header contents.
+     * @throws QueryJBuildException if any parameter fails to validate.
      */
     protected void validateAntParameters(
         @Nullable final AntTablesElement tables,
