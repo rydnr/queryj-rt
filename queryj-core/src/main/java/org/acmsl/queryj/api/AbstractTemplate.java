@@ -819,7 +819,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
      * Builds the correct chain.
      * @param context the context.
      * @return the specific {@link FillTemplateChain}.
-     * @throws QueryJBuildException if the template chain cannot be built
+     * @throws QueryJBuildException if the template chain cannot be built.
      */
     @SuppressWarnings("unchecked")
     @NotNull
