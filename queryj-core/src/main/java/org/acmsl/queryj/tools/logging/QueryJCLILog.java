@@ -369,7 +369,7 @@ public class QueryJCLILog
      * @param message the message.
      * @param throwable the cause.
      */
-    public void debug(final Object message, final Throwable throwable)
+    public void debug(@NotNull final Object message, @NotNull final Throwable throwable)
     {
         if  (isDebugEnabled())
         {
