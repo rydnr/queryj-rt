@@ -237,7 +237,7 @@ public abstract class BasePerCustomResultTemplateBuildHandler
      * @param properties the properties.
      * @param parameters the parameters.
      * @return the template.
-     * throws QueryJBuildException if the template cannot be created.
+     * @throws QueryJBuildException if the template cannot be created.
      */
     @Nullable
     protected abstract T createTemplate(
