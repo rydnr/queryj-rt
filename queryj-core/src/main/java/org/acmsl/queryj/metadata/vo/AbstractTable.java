@@ -555,8 +555,7 @@ public abstract class AbstractTable<V, A extends Attribute<V>, L extends List<A>
     public String toString()
     {
         return
-              "{ \"class\": \"" + AbstractTable.class.getSimpleName()
-            + ", \"package\": \"org.acmsl.queryj.metadata.vo\""
+              "{
             + ", \"name\": \"" + m__Name + '"'
             + ", \"comment\": \"" + m__Comment + '"'
             + ", \"parentTable\": " + m__ParentTable
