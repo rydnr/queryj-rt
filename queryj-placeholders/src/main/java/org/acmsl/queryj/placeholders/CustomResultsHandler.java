@@ -130,7 +130,7 @@ public class CustomResultsHandler
      * @param daoTemplateUtils the <code>DAOTemplateUtils</code> instance.
      * @param templateUtils the <code>TemplateUtils</code> instance.
      * @return the custom results.
-     * @throws QueryJBuildException if {@code TemplateUtils#retrieveCustomResults)}
+     * @throws QueryJBuildException if {@code TemplateUtils#retrieveCustomResults()} throws it.
      */
     @NotNull
     protected List<Result<String>> retrieveCustomResults(
