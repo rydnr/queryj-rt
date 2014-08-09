@@ -1099,7 +1099,7 @@ public class AntProjectAdapter
      */
     @Override
     @NotNull
-    public Map getCopyOfTaskDefinitions()
+    public Map<String, Class<?>> getCopyOfTaskDefinitions()
     {
         return getCopyOfTaskDefinitions(getProject());
     }
