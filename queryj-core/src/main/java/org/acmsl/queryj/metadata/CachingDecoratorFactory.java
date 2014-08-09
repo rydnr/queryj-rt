@@ -122,7 +122,7 @@ public class CachingDecoratorFactory
 
         if (attribute.getName() instanceof String)
         {
-            result = new CachingAttributeDecorator((Attribute<String>) attribute, metadataManager);
+            result = (Attribute<K>) new CachingAttributeDecorator((Attribute<String>) attribute, metadataManager);
         }
         else
         {
