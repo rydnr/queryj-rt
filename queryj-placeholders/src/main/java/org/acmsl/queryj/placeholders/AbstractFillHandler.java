@@ -106,7 +106,7 @@ public abstract class AbstractFillHandler<P>
      * @param map the command map.
      * @param placeHolder the placeholder.
      * model.
-     * @return {@code false} if the handler passes.
+     * @return {@code false} if the handler processes the chain correctly.
      */
     @SuppressWarnings("unchecked")
     public boolean handle(@NotNull final Map<String, P> map, @NotNull final String placeHolder)
