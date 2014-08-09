@@ -122,7 +122,7 @@ public class QueryJCLILog
      * @param printStream the print stream.
      */
     protected final void immutableSetPrintStream(
-        final PrintStream printStream)
+        @NotNull final PrintStream printStream)
     {
         m__PrintStream = printStream;
     }
