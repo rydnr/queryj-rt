@@ -1328,7 +1328,7 @@ public class QueryJTask
     {
         return
             "{ \"classpath\": \"" + m__Classpath + '"'
-            + ", \"commandqueryJCommand': '" + m__QueryJCommand +
+            + ", \"command\": '" + m__QueryJCommand +
                "', 'tables': " + m__Tables +
                + "class": "QueryJTask", '}';
     }
