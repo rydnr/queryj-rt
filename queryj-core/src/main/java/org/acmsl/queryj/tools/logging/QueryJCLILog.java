@@ -404,7 +404,7 @@ public class QueryJCLILog
      * {@inheritDoc}
      */
     @Override
-    public void warn(final Object message)
+    public void warn(@NotNull final Object message)
     {
         if  (isWarnEnabled())
         {
