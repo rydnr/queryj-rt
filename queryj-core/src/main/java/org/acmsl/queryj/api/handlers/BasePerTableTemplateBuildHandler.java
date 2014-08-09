@@ -116,6 +116,7 @@ public abstract class BasePerTableTemplateBuildHandler
      * @param parameters the parameters.
      * @param metadataManager the {@link MetadataManager} instance.
      * @param tableDAO the {@link TableDAO} instance.
+     * @throws QueryJBuildException if the template cannot be built.
      */
     protected void buildTemplate(
         @NotNull final QueryJCommand parameters,
