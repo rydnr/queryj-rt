@@ -290,6 +290,7 @@ public class RetrieveResultPropertiesHandler
      * @param metadataManager the <code>MetadataManager</code> instance.
      * @param typeManager the <code>MetadataTypeManager</code> instance.
      * @return such properties.
+     * @throws QueryJBuildException if the property information is unavailable.
      */
     @NotNull
     protected List<Property<String>> retrieveImplicitProperties(
