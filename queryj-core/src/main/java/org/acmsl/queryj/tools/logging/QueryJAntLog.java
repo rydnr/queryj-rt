@@ -60,7 +60,7 @@ import org.jetbrains.annotations.Nullable;
 /**
  * Minimal logging helper to avoid using Ant-specific
  * API. It implements <code>Log</code> only to make the
- * developer confortable with the API, which just means
+ * developer comfortable with the API, which just means
  * replacing <code>LogFactory.getLog(..)</code> with
  * using the <code>UniqueLogFactory.getLog(..)</code>.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
