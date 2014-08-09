@@ -118,7 +118,7 @@ public class CachingDecoratorFactory
     public <V, K> Attribute<K> createDecorator(
         @NotNull final Attribute<V> attribute, @NotNull final MetadataManager metadataManager)
     {
-        @NotNull final Attribute<DecoratedString> result;
+        @NotNull final Attribute<K> result;
 
         if (attribute.getName() instanceof String)
         {
