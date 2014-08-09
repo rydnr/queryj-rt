@@ -198,7 +198,8 @@ public class OracleMetadataManager
         @NotNull final MetadataExtractionListener metadataExtractionListener,
         @NotNull final MetaLanguageUtils metaLanguageUtils,
         @NotNull final MetadataTypeManager metadataTypeManager)
-        throws SQLException, QueryJException
+      throws SQLException,
+             QueryJException
     {
         @NotNull final List<Table<String, Attribute<String>, List<Attribute<String>>>> result;
 
