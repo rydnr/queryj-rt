@@ -243,6 +243,7 @@ public abstract class BasePerTableTemplateBuildHandler
      * @param staticContents the table's static contents (optional).
      * @param parameters the parameter map.
      * @return the template.
+     * @throws QueryJBuildException if the template cannot be built.
      */
     @Nullable
     protected abstract T createTemplate(
