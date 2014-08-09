@@ -33,10 +33,6 @@
  *              with the API, which just meansreplacing *LogFactory.getLog(..)*
  *              with *UniqueLogFactory.getLog(..)*.
  *
- * Version: $Revision$ ($Author$ at $Date$)
- *
- * $Id$
- *
  */
 package org.acmsl.queryj.tools.logging;
 
