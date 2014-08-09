@@ -135,6 +135,7 @@ public abstract class BasePerTableTemplateWritingHandler
      * @param parameters the parameter map.
      * @param packageUtils the <code>PackageUtils</code> instance.
      * @return such folder.
+     * @throws QueryJBuildException if the output dir is unavailable.
      */
     @NotNull
     protected abstract File retrieveOutputDir(
