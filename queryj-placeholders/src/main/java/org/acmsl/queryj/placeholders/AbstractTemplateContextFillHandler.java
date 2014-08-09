@@ -41,6 +41,10 @@ package org.acmsl.queryj.placeholders;
 import org.acmsl.queryj.api.TemplateContext;
 import org.acmsl.queryj.api.handlers.fillhandlers.TemplateContextFillHandler;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+
+/*
+ * Importing Apache Commons Lang classes.
+ */
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 
