@@ -321,7 +321,7 @@ public class QueryJCLILog
      * @param message the message.
      * @param printStream the <code>PrintStream</code> instance.
      */
-    protected void log(final Object message, @NotNull final PrintStream printStream)
+    protected void log(@NotNull final Object message, @NotNull final PrintStream printStream)
     {
         printStream.println("" + message);
     }
