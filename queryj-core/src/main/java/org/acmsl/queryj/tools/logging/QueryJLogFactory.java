@@ -29,8 +29,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: *LogFactory* implementation that uses a
- * cached Ant-based *Log* instance if pre-cached.
+ * Description: *LogFactory* implementation that uses a cached Ant-based *Log* instance if pre-cached.
  *
  * Important Note: This class implements Apache Commons-Logging's Log
  * interface. License details are copied verbatim below.
