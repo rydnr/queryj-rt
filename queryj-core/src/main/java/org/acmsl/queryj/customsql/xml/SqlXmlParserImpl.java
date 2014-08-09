@@ -719,6 +719,7 @@ public class SqlXmlParserImpl
      * Loads the information from the XML resource.
      * @param digester the Digester instance.
      * @param input the input stream.
+     * @throws QueryJBuildException if the parsing operation fails.
      */
     protected synchronized void load(
         @Nullable final Digester digester, @Nullable final InputStream input)
