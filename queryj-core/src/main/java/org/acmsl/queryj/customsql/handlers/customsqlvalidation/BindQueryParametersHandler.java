@@ -456,6 +456,7 @@ public class BindQueryParametersHandler
      * @param stringUtils the {@link StringUtils} instance.
      * @param <T> the type.
      * @return the validation value.
+     * @throws QueryJBuildException if the binding fails.
      */
     @SuppressWarnings("unchecked")
     protected <T> T retrieveParameterValue(
