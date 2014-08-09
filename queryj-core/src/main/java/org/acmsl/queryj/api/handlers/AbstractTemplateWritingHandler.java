@@ -181,6 +181,7 @@ public abstract class AbstractTemplateWritingHandler
      * @param charset the file encoding.
      * @param templateGenerator the template generator.
      * @param rootDir the root dir.
+     * @throws QueryJBuildException if the templates cannot be written.
      */
     @SuppressWarnings("unused")
     protected void writeTemplatesSequentially(
