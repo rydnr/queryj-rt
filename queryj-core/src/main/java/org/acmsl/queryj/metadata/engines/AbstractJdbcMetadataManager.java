@@ -1247,6 +1247,8 @@ public abstract class AbstractJdbcMetadataManager
      * @param schema the schema.
      * @param caseSensitiveness whether the table names are case sensitive or not.
      * @param metadataExtractionListener the metadata extraction listener.
+     * @throws SQLException if the extraction fails.
+     * @throws QueryJException if any other error occurs.
      */
     protected abstract void extractPrimaryKeys(
         @NotNull final DatabaseMetaData metaData,
