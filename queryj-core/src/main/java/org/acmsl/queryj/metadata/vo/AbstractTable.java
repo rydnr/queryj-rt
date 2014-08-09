@@ -38,11 +38,6 @@
 package org.acmsl.queryj.metadata.vo;
 
 /*
- * Importing ACM SL Commons classes.
- */
-import org.acmsl.commons.utils.ToStringUtils;
-
-/*
  * Importing Apache Commons Lang classes.
  */
 import org.apache.commons.lang.builder.EqualsBuilder;
