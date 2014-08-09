@@ -861,6 +861,7 @@ public abstract class AbstractJdbcMetadataManager
     /**
      * Converts between given lists.
      * @param list the list to convert.
+     * @return the foreign keys.
      */
     @NotNull
     protected List<ForeignKey<String>> toForeignKeyList(@NotNull final List<ForeignKeyIncompleteValueObject> list)
