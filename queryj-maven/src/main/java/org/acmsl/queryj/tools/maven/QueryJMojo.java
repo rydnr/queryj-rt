@@ -191,6 +191,7 @@ public class QueryJMojo
      * The data source.
      * @parameter property="jndiDataSource"
      */
+    @Parameter (property = "driver", required = true)
     private String m__strJndiDataSource;
 
     /**
