@@ -214,13 +214,6 @@ public class CachingDecoratorFactory
     /**
      * {@inheritDoc}
      */
-    /**
-     * Creates a {@link TableDecorator}.
-     * @param table the table name.
-     * @param metadataManager the {@link MetadataManager} instance.
-     * @param customSqlProvider the {@link CustomSqlProvider} instance.
-     * @return the decorated table for the concrete template.
-     */
     @Override
     @Nullable
     public TableDecorator createTableDecorator(
