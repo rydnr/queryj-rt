@@ -1110,7 +1110,7 @@ public class AntProjectAdapter
      * @return such information.
      */
     @NotNull
-    protected Map getCopyOfTaskDefinitions(@NotNull final Project project)
+    protected Map<String, Class<?>> getCopyOfTaskDefinitions(@NotNull final Project project)
     {
         return project.getCopyOfTaskDefinitions();
     }
