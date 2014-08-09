@@ -217,7 +217,6 @@ public class QueryJMojo
 
     /**
      * The grammar bundle.
-     * @parameter property="grammarName"
      */
     @Parameter (property = "grammarName", required = false)
     private String m__strGrammarName;
