@@ -143,6 +143,7 @@ public abstract class BasePerTableTemplateBuildHandler
      * @param metadataManager the database metadata manager.
      * @param templateFactory the template factory.
      * @param tables the tables.
+     * @throws QueryJBuildException if the template cannot be built.
      */
     @SuppressWarnings("unchecked")
     protected void buildTemplate(
