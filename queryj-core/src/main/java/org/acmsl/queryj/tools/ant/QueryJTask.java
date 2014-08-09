@@ -1284,9 +1284,7 @@ public class QueryJTask
     }
 
     /**
-     * Creates a dynamic element.
-     * @param name the element's name.
-     * @return the object.
+     * {@inheritDoc}
      */
     @Override
     @Nullable
