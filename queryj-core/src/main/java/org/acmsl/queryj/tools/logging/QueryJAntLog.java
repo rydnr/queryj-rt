@@ -384,6 +384,7 @@ public class QueryJAntLog
      * <p>Logs a message with error log level.</p>
      * @param message the message.
      */
+    @Override
     public void error(@Nullable final Object message)
     {
         error(message, getProject());
