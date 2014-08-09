@@ -90,9 +90,6 @@ import org.checkthread.annotations.ThreadSafe;
 /**
  * Executes QueryJ.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
- * @goal queryj
- * @execute phase="generate-sources"
- * @threadSafe
  */
 @SuppressWarnings("unused")
 @ThreadSafe
