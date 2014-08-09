@@ -428,7 +428,7 @@ public class QueryJCLILog
      * {@inheritDoc}
      */
     @Override
-    public void error(final Object message)
+    public void error(@NotNull final Object message)
     {
         if  (isErrorEnabled())
         {
