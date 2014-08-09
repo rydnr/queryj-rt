@@ -464,7 +464,7 @@ public class QueryJCLILog
      * {@inheritDoc}
      */
     @Override
-    public void fatal(@final Object message, final Throwable throwable)
+    public void fatal(@NotNull final Object message, @NotNull final Throwable throwable)
     {
         if  (isFatalEnabled())
         {
