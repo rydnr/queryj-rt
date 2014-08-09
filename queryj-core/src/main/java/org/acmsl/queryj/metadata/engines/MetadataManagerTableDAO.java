@@ -485,7 +485,7 @@ public abstract class MetadataManagerTableDAO<M extends MetadataManager>
      * @param attributes the attributes.
      * @param connection the connection.
      * @return the retrieved rows.
-     * throws SQLException if the contents cannot be retrieved.
+     * @throws SQLException if the contents cannot be retrieved.
      */
     @NotNull
     protected List<Row<String>> queryContents(
