@@ -1330,6 +1330,6 @@ public class QueryJTask
             "{ \"classpath\": \"" + m__Classpath + '"'
             + ", \"command\": " + m__QueryJCommand
             + ", \"tables\": " + m__Tables +
-            + ", \"class\": \"QueryJTask", '}';
+            + ", \"class\": \"QueryJTask\"", '}';
     }
 }
