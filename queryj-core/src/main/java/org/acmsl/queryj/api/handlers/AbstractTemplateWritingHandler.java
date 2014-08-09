@@ -320,7 +320,7 @@ public abstract class AbstractTemplateWritingHandler
      * @param templateGenerator the template generator.
      * @param threadCount the number of threads to use.
      * @param rootDir the root dir.
-     * @return the futures for the threads.
+     * @return the futures for the concurrent threads.
      * @throws QueryJBuildException if the templates cannot be written.
      */
     @NotNull
