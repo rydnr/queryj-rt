@@ -168,11 +168,7 @@ public class CachingDecoratorFactory
     }
 
     /**
-     * Creates a <code>SqlDecorator</code>.
-     * @param sql the custom sql.
-     * @param customSqlProvider the <code>CustomSqlProvider</code> instance.
-     * @param metadataManager the <code>MetadataManager</code> instance.
-     * @return the decorated sql for the concrete template.
+     * {@inheritDoc}
      */
     @NotNull
     @Override
