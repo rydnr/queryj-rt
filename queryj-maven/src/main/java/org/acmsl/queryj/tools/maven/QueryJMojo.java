@@ -60,6 +60,7 @@ import org.apache.maven.plugin.logging.Log;
  * Importing some Ant classes.
  */
 import org.apache.maven.plugins.annotations.LifecyclePhase;
+import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.tools.ant.Project;
 import org.apache.tools.ant.types.Path;
 
@@ -129,7 +130,7 @@ public class QueryJMojo
      * The driver.
      * @parameter property="driver" @required
      */
-    @pa
+    @Parameter
     private String m__strDriver;
 
     /**
