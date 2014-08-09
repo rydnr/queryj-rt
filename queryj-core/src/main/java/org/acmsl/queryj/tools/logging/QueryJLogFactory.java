@@ -150,7 +150,7 @@ public class QueryJLogFactory
      * call <code>getInstance(String)</code> with it.
      * @param clazz Class for which a suitable Log name will be derived
      * @param log the cached log instance.
-     * @return
+     * @return the
      */
     @Nullable
     protected Log getInstance(@NotNull final Class<?> clazz, @Nullable final Log log)
