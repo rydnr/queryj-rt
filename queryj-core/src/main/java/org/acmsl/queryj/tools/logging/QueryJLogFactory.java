@@ -141,7 +141,7 @@ public class QueryJLogFactory
      */
     @Nullable
     @Override
-    public Log getInstance(@NotNull final Class clazz)
+    public Log getInstance(@NotNull final Class<?> clazz)
         throws LogConfigurationException
     {
         return getInstance(clazz, getLog());
