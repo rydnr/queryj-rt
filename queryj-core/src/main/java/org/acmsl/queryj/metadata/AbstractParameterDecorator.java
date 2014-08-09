@@ -283,7 +283,7 @@ public abstract class AbstractParameterDecorator<V>
 
     /**
      * Retrieves whether the attribute is a clob or not.
-     * return such information.
+     * @return such information.
      */
     public boolean isClob()
     {
