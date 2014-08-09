@@ -380,7 +380,7 @@ public class QueryJCLILog
      * {@inheritDoc}
      */
     @Override
-    public void info(final Object message)
+    public void info(@NotNull final Object message)
     {
         if  (isInfoEnabled())
         {
