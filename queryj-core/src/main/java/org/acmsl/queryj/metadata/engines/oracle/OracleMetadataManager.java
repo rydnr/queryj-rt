@@ -540,7 +540,7 @@ public class OracleMetadataManager
      * @param caseSensitiveness whether the engine is case sensitive or not.
      * @param metaLanguageUtils the {@link MetaLanguageUtils} instance.
      * @param metadataTypeManager the {@link MetadataTypeManager} instance.
-     * @throws SQLException if the extraction fails.
+     * @throws SQLException if the process fails.
      */
     @SuppressWarnings("unused,unchecked")
     protected void processRow(
