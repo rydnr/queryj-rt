@@ -1036,7 +1036,7 @@ public abstract class DatabaseMetaDataRetrievalHandler
      * @param caseSensitive whether the engine is case sensitive or not.
      * @param engine the engine.
      * @return the metadata manager instance.
-     * @throws QueryJBuildException if the
+     * @throws QueryJBuildException if the metadata manager cannot be built.
      */
     @NotNull
     protected MetadataManager buildMetadataManager(
