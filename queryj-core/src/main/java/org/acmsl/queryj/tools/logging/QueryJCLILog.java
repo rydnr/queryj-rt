@@ -353,9 +353,9 @@ public class QueryJCLILog
     }
     
     /**
-     * <p>Logs a message with debug log level.</p>
-     * @param message the message.
+     * {@inheritDoc}
      */
+    @Override
     public void debug(final Object message)
     {
         if  (isDebugEnabled())
