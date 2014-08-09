@@ -1086,6 +1086,7 @@ public class AntProjectAdapter
     /**
      * Retrieves the task definitions.
      * @param project the {@link Project} instance.
+     * @return the hash table.
      */
     @NotNull
     protected Hashtable getTaskDefinitions(@NotNull final Project project)
