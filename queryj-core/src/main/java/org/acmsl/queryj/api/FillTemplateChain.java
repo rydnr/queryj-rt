@@ -69,7 +69,7 @@ public interface FillTemplateChain<C extends TemplateContext>
      * be able to find out if two template realizations are equivalent. Usually, generation timestamps,
      * documentation, etc. can be considered not relevant.
      * @return the placeholders.
-     * @throws QueryJBuildException if
+     * @throws QueryJBuildException if the placeholders cannot be provided.
      */
     @NotNull
     QueryJCommand providePlaceholders(final boolean relevantOnly)
