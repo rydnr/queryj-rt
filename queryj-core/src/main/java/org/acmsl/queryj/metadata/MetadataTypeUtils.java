@@ -86,8 +86,8 @@ public class MetadataTypeUtils
      * Retrieves the wrapper class associated to given Java type.
      * @param type the Java type.
      * @return such class name (not fully-qualified).
-     * @precondtion type != null
      */
+    @NotNull
     public String getWrapperClass(final String type)
     {
         String result = type;
