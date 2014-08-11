@@ -48,6 +48,11 @@ public abstract class AbstractIdElement<T>
     implements IdentifiableElement<T>
 {
     /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = -3906756800505246803L;
+
+    /**
      * The <i>id</i> attribute.
      */
     private T m__strId;
