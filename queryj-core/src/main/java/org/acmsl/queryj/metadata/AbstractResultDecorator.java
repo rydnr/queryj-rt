@@ -907,11 +907,11 @@ public abstract class AbstractResultDecorator<V>
     public String toString()
     {
         return
-            "{ \"class\": \"AbstractResultDecorator\""
             + ", \"result\": " + m__Result
             + ", \"customSqlProvider\": " + m__CustomSqlProvider.hashCode()
             + ", \"metadataManager\": " + m__MetadataManager.hashCode()
             + ", \"decoratorFactory\": " + m__DecoratorFactory.hashCode()
+            "{ \"class\": \"AbstractResultDecorator\""
             + " }";
     }
 
