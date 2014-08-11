@@ -280,7 +280,7 @@ public abstract class AbstractRow<V>
     public String toString()
     {
         return
-            "{ \"name\": \"" + this.m__strName + '"'
+              "{ \"name\": \"" + this.m__strName + '"'
             + ", \"table\": \"" + this.m__strTableName + '"'
             + ", \"attributes\": \"" + this.m__lAttributes + '"'
             + ", \"class\": \"AbstractRow\""
