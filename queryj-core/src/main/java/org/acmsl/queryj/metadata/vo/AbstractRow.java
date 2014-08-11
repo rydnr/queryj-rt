@@ -273,9 +273,7 @@ public abstract class AbstractRow<V>
     }
 
     /**
-     * Provides a text representation of the information
-     * contained in this instance.
-     * @return such information.
+     * {@inheritDoc}
      */
     @NotNull
     @Override
