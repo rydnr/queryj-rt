@@ -87,7 +87,7 @@ import org.checkthread.annotations.ThreadSafe;
  */
 @SuppressWarnings("unused")
 @ThreadSafe
-@Mojo( name = "queryj-package-templates", defaultPhase = LifecyclePhase.GENERATE_SOURCES, threadSafe = true )
+@Mojo( name = "package-templates", defaultPhase = LifecyclePhase.GENERATE_SOURCES, threadSafe = true )
 public class TemplatePackagingMojo
     extends AbstractMojo
     implements TemplatePackagingSettings
