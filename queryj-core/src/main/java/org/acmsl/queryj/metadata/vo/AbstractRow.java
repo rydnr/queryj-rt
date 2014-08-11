@@ -281,8 +281,8 @@ public abstract class AbstractRow<V>
     {
         return
             "{ \"name\": \"" + this.m__strName + '"'
-            + ", \"table\": \"" + this.m__strTableName.append(Literals.TABLE_NAME, getTableName())
-                .append("attributes", getAttributes())
+            + ", \"table\": \"" + this.m__strTableName + '"'
+            + ", \"attributes\": \".append("attributes", getAttributes())
                 .toString();
     }
 
