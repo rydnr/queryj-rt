@@ -222,9 +222,8 @@ public abstract class AbstractEngine<T>
     public String toString()
     {
         return
-            "{ AbstractEngine{" +
-               "m__bCustomLobHandling=" + m__bCustomLobHandling +
-               ", m__strName=" + m__strName +
+            "{ \"customLobHandling\": \"" + m__bCustomLobHandling + '"'
+            + ", m__strName=" + m__strName +
                ", m__strVersion=" + m__strVersion +
                ", m__bSupportsSequences=" + m__bSupportsSequences +
                '}';
