@@ -225,7 +225,7 @@ public class CustomSqlValidationHandlerTest
 
         t_Sql.add(new ParameterRefElement("today"));
 
-        @NotNull final Parameter<String> t_Parameter =
+        @NotNull final Parameter<String, String> t_Parameter =
             new ParameterElement<>("today", 0, "today", "Date", new Date());
 
         testBody(t_Sql, t_Parameter);
