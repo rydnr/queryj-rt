@@ -206,8 +206,7 @@ public abstract class AbstractResult<T>
     }
 
     /**
-     * Provides a text information about this instance.
-     * @return such information.
+     * {@inheritDoc}
      */
     @NotNull
     @Override
