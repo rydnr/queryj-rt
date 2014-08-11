@@ -227,7 +227,7 @@ public class TableResultDecoratorImpl<V>
         }
         else if (o instanceof TableResultDecoratorImpl)
         {
-            @NotNull final TableResultDecoratorImpl that = (TableResultDecoratorImpl) o;
+            @NotNull final TableResultDecoratorImpl<?> that = (TableResultDecoratorImpl) o;
 
             if (getId().equals(that.getId()))
             {
