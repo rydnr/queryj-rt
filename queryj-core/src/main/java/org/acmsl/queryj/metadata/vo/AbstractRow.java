@@ -280,7 +280,7 @@ public abstract class AbstractRow<V>
     public String toString()
     {
         return
-            new org.apache.commons.lang.builder.ToStringBuilder(this)
+            ""
                 .append("name", getName())
                 .append(Literals.TABLE_NAME, getTableName())
                 .append("attributes", getAttributes())
