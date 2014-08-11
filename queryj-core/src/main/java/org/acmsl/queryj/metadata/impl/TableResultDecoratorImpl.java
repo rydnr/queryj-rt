@@ -77,6 +77,11 @@ public class TableResultDecoratorImpl<V>
     implements TableResultDecorator<DecoratedString>
 {
     /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = 3669176031601055279L;
+
+    /**
      * The table.
      */
     @NotNull
