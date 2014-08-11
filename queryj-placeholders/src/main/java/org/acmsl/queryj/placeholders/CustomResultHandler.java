@@ -61,7 +61,7 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 @SuppressWarnings("unused")
 public class CustomResultHandler
-    extends AbstractTemplateContextFillHandler<PerCustomResultTemplateContext, ResultDecorator>
+    extends AbstractTemplateContextFillHandler<PerCustomResultTemplateContext, ResultDecorator<?>>
 {
     /**
      * The serial version id.
