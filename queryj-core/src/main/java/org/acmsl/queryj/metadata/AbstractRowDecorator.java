@@ -296,7 +296,7 @@ public abstract class AbstractRowDecorator
         return
               "{ \"row\": \" + m__Row + '"''
             + ", \"decoratorFactory\": " + m__DecoratorFactory.hashCode()
-            + ", \"class\": \"AbstractRowDecorator.class.getName() + '"'
+            + ", \"class\": \"AbstractRowDecorator\""
             + ", \"metadataManager\": " + m__MetadataManager.hashCode()
             + ", \"metadataTypeManager\": " + m__MetadataTypeManager.hashCode() + " }";
     }
