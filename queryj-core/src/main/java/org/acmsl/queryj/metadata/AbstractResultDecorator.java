@@ -912,7 +912,7 @@ public abstract class AbstractResultDecorator<V>
             + ", \"metadataManager\": " + m__MetadataManager.hashCode()
             + ", \"decoratorFactory\": " + m__DecoratorFactory.hashCode()
             + ", \"class\": \"AbstractResultDecorator\""
-            + ", \"package\": \"org.acmsl.queryj.metadata"
+            + ", \"package\": \"org.acmsl.queryj.metadata\""
             + " }";
     }
 
