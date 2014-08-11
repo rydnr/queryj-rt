@@ -92,7 +92,7 @@ public interface DecoratorFactory
      */
     @SuppressWarnings("unused")
     @NotNull
-    public ParameterDecorator createDecorator(
+    public ParameterDecorator<?> createDecorator(
         @NotNull final Parameter<String, ?> parameter, @NotNull final MetadataManager metadataManager);
 
     /**
