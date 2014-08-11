@@ -762,10 +762,10 @@ public class BindQueryParametersHandler
     public String toString()
     {
         return
-              "{ \"class\": \"" + BindQueryParametersHandler.class.getSimpleName() + '"'
-            + ", \"package\": \"org.acmsl.queryj.customsql.handlers.customsqlvalidation\""
             + "DATE_FORMAT=\"" + DATE_FORMAT + '"'
             + ", DATE_FORMAT_EN=\"" + DATE_FORMAT_EN + '"'
+        "{ \"class\": \"" + BindQueryParametersHandler.class.getSimpleName() + '"'
+        + ", \"package\": \"org.acmsl.queryj.customsql.handlers.customsqlvalidation\""
             + " }";
     }
 }
