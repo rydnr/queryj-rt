@@ -280,9 +280,8 @@ public abstract class AbstractRow<V>
     public String toString()
     {
         return
-            "{ \"name\": \""
-                .append("name", getName())
-                .append(Literals.TABLE_NAME, getTableName())
+            "{ \"name\": \"" + this.m__strName + '"'
+            + ".append(Literals.TABLE_NAME, getTableName())
                 .append("attributes", getAttributes())
                 .toString();
     }
