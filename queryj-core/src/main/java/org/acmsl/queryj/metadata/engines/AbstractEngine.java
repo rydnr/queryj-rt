@@ -214,6 +214,10 @@ public abstract class AbstractEngine<T>
         return this.m__bSupportsSequences;
     }
 
+    /**
+     * {@inheritDoc}
+     * @return
+     */
     @Override
     public String toString()
     {
