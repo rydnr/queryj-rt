@@ -62,6 +62,11 @@ public abstract class AbstractRowDecorator
     extends AbstractRow<DecoratedString>
 {
     /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = 2567236507603193966L;
+
+    /**
      * The decorated row.
      */
     private Row<String> m__Row;
