@@ -59,6 +59,11 @@ public class InvalidJavaOutputException
     extends QueryJTestNonCheckedException
 {
     /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = 1417850235404217668L;
+
+    /**
      * Creates a new exception.
      * @param file the generated Java source file.
      * @param line the line number.
