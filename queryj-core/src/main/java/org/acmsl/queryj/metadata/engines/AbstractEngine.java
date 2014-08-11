@@ -56,9 +56,10 @@ public abstract class AbstractEngine<T>
     implements Engine<T>
 {
     /**
-     * T serial version id.
+     * The serial version id.
      */
     private static final long serialVersionUID = 3064466422979555849L;
+
     /**
      * The name.
      */
