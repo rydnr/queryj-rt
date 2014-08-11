@@ -590,7 +590,7 @@ public class TemplatePackagingMojo
             + ", \"jdbcUserName\": \"" + this.m__strJdbcUserName + '"'
             + ", \"jdbcPassword\": \"" + this.m__strJdbcPassword + '"'
             + ", \"class\": \" + TemplatePackagingMojo.class.getSimpleName() + '"'
-            + ", \"package\": \"org.acmsl.queryj.templates.packaging\\\"\"\n" +
+            + ", \"package\": \"org.acmsl.queryj.templates.packaging\"
             "            + \",  }";
     }
 }
