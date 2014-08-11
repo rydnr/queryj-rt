@@ -257,7 +257,7 @@ public abstract class AbstractCustomSqlProvider
             }
         }
 
-        @Nullable final Result t_Result = resultDAO.findBySqlId(id.toString());
+        @Nullable final Result<String> t_Result = resultDAO.findBySqlId(id.toString());
 
         if (t_Result != null)
         {
