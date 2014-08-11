@@ -271,5 +271,23 @@ public abstract class AbstractRow<V>
                     second.getTableName())
                 .toComparison();
     }
+
+    /**
+     * Provides a text representation of the information
+     * contained in this instance.
+     * @return such information.
+     */
+    @NotNull
+    @Override
+    public String toString()
+    {
+        return
+            new org.apache.commons.lang.builder.ToStringBuilder(this)
+                .append("name", getName())
+                .append(Literals.TABLE_NAME, getTableName())
+                .append("attributes", getAttributes())
+                .toString();
+    }
+
 }
 
