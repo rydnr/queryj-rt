@@ -130,14 +130,12 @@ public class TemplatePackagingMojo
 
     /**
      * The JDBC username.
-     * @parameter property="jdbcUserName" @required
      */
     @Parameter(property = JDBC_USERNAME)
     private String m__strJdbcUserName;
 
     /**
      * The JDBC password.
-     * @parameter property="jdbcPassword" @required
      */
     @Parameter(property = JDBC_PASSWORD)
     private String m__strJdbcPassword;
