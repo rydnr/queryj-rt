@@ -297,7 +297,8 @@ public abstract class AbstractRowDecorator
               "{ \"row\": \" + m__Row + '"''
             + ", \"decoratorFactory\": " + m__DecoratorFactory.hashCode()
             + ", \"metadataManager\": " + m__MetadataManager.hashCode()
-            + ", \"metadataTypeManager\": " + m__MetadataTypeManager.hashCode() + " }";
-        + ", \"class\": \"AbstractRowDecorator\""
+            + ", \"metadataTypeManager\": " + m__MetadataTypeManager.hashCode()
+            + ", \"class\": \"AbstractRowDecorator\""
+            + ", \"package\": \"org.acm"
     }
 }
