@@ -283,8 +283,8 @@ public abstract class AbstractRow<V>
             "{ \"name\": \"" + this.m__strName + '"'
             + ", \"table\": \"" + this.m__strTableName + '"'
             + ", \"attributes\": \"" + this.m__lAttributes + '"'
-            + ", \"class\": \"AbstractRow" +
-                .toString();
+            + ", \"class\": \"AbstractRow\""
+            + ", \"package\": \"org.acmsl.queryj"
     }
 
 }
