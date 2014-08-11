@@ -156,7 +156,7 @@ public class BindQueryParametersHandlerTest
     {
         @NotNull final BindQueryParametersHandler t_Handler = new BindQueryParametersHandler();
 
-        @NotNull final Parameter<String, ?> t_Parameter = new ParameterElement<Class<?>, String>("id", 1, "id", type, "1");
+        @NotNull final Parameter<String, ?> t_Parameter = new ParameterElement<String, ?>("id", 1, "id", type, "1");
 
         @NotNull final Sql<String> t_Sql =
             new SqlElement<>("id", "DAO", "name", "select", SqlCardinality.SINGLE, "oracle", true, false, "description");
