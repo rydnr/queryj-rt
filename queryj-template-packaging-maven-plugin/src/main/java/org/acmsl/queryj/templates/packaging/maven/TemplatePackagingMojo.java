@@ -118,7 +118,6 @@ public class TemplatePackagingMojo
 
     /**
      * The JDBC driver.
-     * @parameter property="jdbcDriver" @required
      */
     @Parameter(property = JDBC_DRIVER)
     private String m__strJdbcDriver;
