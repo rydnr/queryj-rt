@@ -83,7 +83,7 @@ public class CustomResultHandler
      * @return such value.
      */
     @Override
-    protected ResultDecorator getValue(@NotNull final PerCustomResultTemplateContext context)
+    protected ResultDecorator<?> getValue(@NotNull final PerCustomResultTemplateContext context)
     {
         return
             new CachingResultDecorator(
