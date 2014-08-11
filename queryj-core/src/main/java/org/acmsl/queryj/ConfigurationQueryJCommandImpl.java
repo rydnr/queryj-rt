@@ -412,7 +412,7 @@ public class ConfigurationQueryJCommandImpl
     public String toString()
     {
         return
-            + ", \"configuration\": "
+              "{ \"configuration\": "
             + "{ \"class\": \"" + m__Configuration.getClass().getSimpleName()
             +    ", \"package\": \"" + m__Configuration.getClass().getPackage().getName() + '"'
 //            +    confToString(m__Configuration)
