@@ -223,8 +223,8 @@ public abstract class AbstractEngine<T>
     {
         return
             "{ \"customLobHandling\": \"" + m__bCustomLobHandling + '"'
-            + ", \"name\": " + m__strName + '"'
-            + ", \"version\": =" + m__strVersion +
+            + ", \"name\": \"" + m__strName + '"'
+            + ", \"version\": \"" + m__strVersion +
                ", m__bSupportsSequences=" + m__bSupportsSequences +
                '}';
     }
