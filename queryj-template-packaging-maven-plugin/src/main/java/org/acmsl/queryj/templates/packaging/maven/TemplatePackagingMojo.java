@@ -586,9 +586,9 @@ public class TemplatePackagingMojo
             + ", \"outputDir\": \"" + this.m__OutputDir.getAbsolutePath() + '"'
             + ", \"outputDirForTests\": \"" + this.m__OutputDirForTests.getAbsolutePath() + '"'
             + ", \"jdbcDriver\": \"" + this.m__strJdbcDriver + '"'
-            + ", \"jdbcUrl\": \"" + this.m__strJdbcUrl + '
+            + ", \"jdbcUrl\": \"" + this.m__strJdbcUrl + '"'
             + ", \"jdbcUserName\": \"" + this.m__strJdbcUserName + '"'
-            + ", \"jdbcPassword\": \"" + this.m__strJdbcPassword + '
+            + ", \"jdbcPassword\": \"" + this.m__strJdbcPassword + '"'
             + ", \"class\": \" + TemplatePackagingMojo.class.getSimpleName() + '"'
             "            + \", \\\"package\\\": \\\"org.acmsl.queryj.templates.packaging\\\"\"\n" +
             "            + \",  }";
