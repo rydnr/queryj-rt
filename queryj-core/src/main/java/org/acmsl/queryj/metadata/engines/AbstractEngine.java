@@ -228,6 +228,6 @@ public abstract class AbstractEngine<T>
             + ", \"supportsSequences\": \"" + m__bSupportsSequences + '"'
             + ", \"class\": \"AbstractEngine\""
             + ", \"package\": \"org.acmsl.queryj.metadata.engines\""
-               '}';
+            '}';
     }
 }
