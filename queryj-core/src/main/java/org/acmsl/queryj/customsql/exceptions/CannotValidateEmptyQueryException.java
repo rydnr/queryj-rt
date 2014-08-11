@@ -58,6 +58,11 @@ public class CannotValidateEmptyQueryException
     extends QueryJNonCheckedException
 {
     /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = 635708850144790366L;
+
+    /**
      * Creates a new instance using given {@link Sql} as context.
      * @param sql the failing SQL.
      */
