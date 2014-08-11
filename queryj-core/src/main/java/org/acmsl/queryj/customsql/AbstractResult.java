@@ -214,7 +214,7 @@ public abstract class AbstractResult<T>
     public String toString()
     {
         return
-            "{ \"id\": \"" + this.id + "]"
+            "{ \"id\": \"" + this.getId() + "]"
             + "[" + "property-refs=" + propertyRefs + "]";
     }
 
