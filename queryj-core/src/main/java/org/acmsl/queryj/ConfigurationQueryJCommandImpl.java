@@ -420,6 +420,6 @@ public class ConfigurationQueryJCommandImpl
             + ", \"log\": \"" + m__Log + '"'
             + ", \"class\": \"ConfigurationQueryJCommandImpl\""
             + ", \"package\": \"org.acmsl.queryj\""
-            + "} }";
+            + "}";
     }
 }
