@@ -104,7 +104,6 @@ public interface DecoratorFactory
      * @param customSqlProvider the {@link CustomSqlProvider} instance.
      * @param metadataManager the {@link MetadataManager} instance.
      * @return the decorated property for the concrete template.
-     * @param <V> the type.
      */
     @NotNull
     public <V> PropertyDecorator createDecorator(
