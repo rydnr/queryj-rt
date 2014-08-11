@@ -217,7 +217,6 @@ public class QueryJMojo
 
     /**
      * The list of tables.
-     * @parameter
      */
     @Parameter (required = false)
     private Table[] m__aTables = new Table[0];
