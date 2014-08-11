@@ -50,6 +50,7 @@ import org.checkthread.annotations.ThreadSafe;
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/01/24 07:12
+ * @param <T> the type.
  */
 @ThreadSafe
 public abstract class AbstractEngine<T>
