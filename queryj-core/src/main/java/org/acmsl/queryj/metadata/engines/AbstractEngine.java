@@ -213,4 +213,15 @@ public abstract class AbstractEngine<T>
     {
         return this.m__bSupportsSequences;
     }
+
+    @Override
+    public String toString()
+    {
+        return "AbstractEngine{" +
+               "m__bCustomLobHandling=" + m__bCustomLobHandling +
+               ", m__strName=" + m__strName +
+               ", m__strVersion=" + m__strVersion +
+               ", m__bSupportsSequences=" + m__bSupportsSequences +
+               '}';
+    }
 }
