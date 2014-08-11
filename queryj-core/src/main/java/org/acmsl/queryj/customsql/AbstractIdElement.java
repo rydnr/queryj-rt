@@ -43,6 +43,7 @@ import org.jetbrains.annotations.Nullable;
  * Common parent to all <i>custom-sql</i> elements with <i>id</i>
  * attributes.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
+ * @param <T> the
  */
 public abstract class AbstractIdElement<T>
     implements IdentifiableElement<T>
