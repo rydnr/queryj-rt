@@ -133,7 +133,6 @@ public class QueryJMojo
 
     /**
      * The url.
-     * @parameter property="url" @required
      */
     @Parameter (property = "url", required = true)
     private String m__strUrl;
