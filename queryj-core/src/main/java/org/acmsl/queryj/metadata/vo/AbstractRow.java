@@ -282,7 +282,7 @@ public abstract class AbstractRow<V>
         return
             "{ \"name\": \"" + this.m__strName + '"'
             + ", \"table\": \"" + this.m__strTableName + '"'
-            + ", \"attributes\": \".append("attributes", getAttributes())
+            + ", \"attributes\": \"" + this.m__lAttributes + '"'
                 .toString();
     }
 
