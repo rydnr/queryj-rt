@@ -748,7 +748,7 @@ public class BindQueryParametersHandler
     protected Method retrieveMethod(
         @NotNull final Class<?> instanceClass,
         @NotNull final String methodName,
-        @NotNull final Class<>[] parameterClasses)
+        @NotNull final Class<Parameter<?>>[] parameterClasses)
         throws  NoSuchMethodException
     {
         return instanceClass.getDeclaredMethod(methodName, parameterClasses);
