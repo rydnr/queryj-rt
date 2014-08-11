@@ -63,6 +63,11 @@ public abstract class AbstractRow<V>
     implements Row<V>
 {
     /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = 2448751869446686328L;
+
+    /**
      * The name.
      */
     private V m__strName;
