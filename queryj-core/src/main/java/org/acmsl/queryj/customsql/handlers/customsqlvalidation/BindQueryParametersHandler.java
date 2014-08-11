@@ -372,7 +372,7 @@ public class BindQueryParametersHandler
                 retrieveMethod(
                     PreparedStatement.class,
                     getSetterMethod(type),
-                    parameterClasses.toArray(new Class<?>[parameterClasses.size()]));
+                    parameterClasses.toArray(new Class<Parameter>[parameterClasses.size()]));
         }
         catch  (@NotNull final NoSuchMethodException noSuchMethodException)
         {
