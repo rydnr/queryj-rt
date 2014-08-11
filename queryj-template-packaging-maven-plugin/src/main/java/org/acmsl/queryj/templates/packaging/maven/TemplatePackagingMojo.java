@@ -124,7 +124,6 @@ public class TemplatePackagingMojo
 
     /**
      * The JDBC url.
-     * @parameter property="jdbcUrl" @required
      */
     @Parameter(property = JDBC_URL)
     private String m__strJdbcUrl;
