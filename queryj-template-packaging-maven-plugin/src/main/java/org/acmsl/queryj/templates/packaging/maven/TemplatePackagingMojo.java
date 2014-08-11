@@ -581,11 +581,11 @@ public class TemplatePackagingMojo
     public String toString()
     {
         return
-              "{ \"queryJCommand\": \"" + this.m__QueryJCommand + "\""
-            + ", \"sources\": \"" + Arrays.toString(this.m__aSources) + "\""
-            + ", \"outputDir\": \"" + this.m__OutputDir.getAbsolutePath() + "\""
-            + ", \"outputDirForTests\": \"" + this.m__OutputDirForTests.getAbsolutePath() + "\""
-            + ", \"jdbcDriver\": \"" + this.m__strJdbcDriver + "\""
+              "{ \"queryJCommand\": \"" + this.m__QueryJCommand + '"'
+            + ", \"sources\": \"" + Arrays.toString(this.m__aSources) + '"'
+            + ", \"outputDir\": \"" + this.m__OutputDir.getAbsolutePath() + '"'
+            + ", \"outputDirForTests\": \"" + this.m__OutputDirForTests.getAbsolutePath() + '"'
+            + ", \"jdbcDriver\": \"" + this.m__strJdbcDriver + '"'
             + ", \"jdbcUrl\": \"" + this.m__strJdbcUrl + '
             + ", \"jdbcUserName\": \"" + this.m__strJdbcUserName + '"'
             + ", \"jdbcPassword\": \"" + this.m__strJdbcPassword + '
