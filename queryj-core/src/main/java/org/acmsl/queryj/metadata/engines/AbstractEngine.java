@@ -227,6 +227,7 @@ public abstract class AbstractEngine<T>
             + ", \"customLobHandling\": \"" + m__bCustomLobHandling + '"'
             + ", \"supportsSequences\": \"" + m__bSupportsSequences + '"'
             + ", \"class\": \"AbstractEngine\""
+            + ", \"package\": \"org.acmsl.queryj"
                '}';
     }
 }
