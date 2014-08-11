@@ -55,6 +55,10 @@ public abstract class AbstractResult<T>
     extends  AbstractIdElement<T>
     implements  Result<T>
 {
+    /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = -9151430656489323601L;
 
     /**
      * The <i>property-ref</i> elements.
