@@ -55,6 +55,7 @@ public abstract class AbstractResult<T>
     extends  AbstractIdElement<T>
     implements  Result<T>
 {
+
     /**
      * The <i>property-ref</i> elements.
      */
