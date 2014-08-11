@@ -247,7 +247,7 @@ public abstract class AbstractCustomSqlProvider
         {
             if (t_ParameterRef != null)
             {
-                @Nullable final Parameter t_Parameter = parameterDAO.findByPrimaryKey(t_ParameterRef.getId());
+                @Nullable final Parameter<String, ?> t_Parameter = parameterDAO.findByPrimaryKey(t_ParameterRef.getId());
 
                 if (t_Parameter != null)
                 {
