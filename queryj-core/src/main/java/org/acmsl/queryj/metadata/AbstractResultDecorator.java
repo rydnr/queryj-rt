@@ -87,6 +87,11 @@ public abstract class AbstractResultDecorator<V>
                 ResultDecorator<DecoratedString>
 {
     /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = 5436116921553920618L;
+
+    /**
      * The result element.
      */
     private Result<V> m__Result;
