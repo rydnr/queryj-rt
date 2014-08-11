@@ -119,7 +119,7 @@ public class CustomSqlValidationHandlerTest
     public TemporaryFolder tempFolder = new TemporaryFolder();
 
     @SuppressWarnings("unchecked")
-    protected void testBody(@NotNull final Sql<String> sql, @NotNull final Parameter<String, > parameter)
+    protected void testBody(@NotNull final Sql<String> sql, @NotNull final Parameter<String, ?> parameter)
         throws Exception
     {
         @NotNull final CustomSqlProvider t_CustomSqlProvider = PowerMock.createNiceMock(CustomSqlProvider.class);
