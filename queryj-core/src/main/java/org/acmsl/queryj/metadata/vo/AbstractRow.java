@@ -284,7 +284,7 @@ public abstract class AbstractRow<V>
             + ", \"table\": \"" + this.m__strTableName + '"'
             + ", \"attributes\": \"" + this.m__lAttributes + '"'
             + ", \"class\": \"AbstractRow\""
-            + ", \"package\": \"org.acmsl.queryj"
+            + ", \"package\": \"org.acmsl.queryj.metadata.vo\" }";
     }
 
 }
