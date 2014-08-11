@@ -217,7 +217,7 @@ public abstract class AbstractResult<T>
             "{ \"id\": \"" + this.getId() + '"'
             + ", \"property-refs\": \"" + this.m__lPropertyRefs + '"'
             + ", \"class\": \"AbstractResult\""
-            + ", \"package\": \"org.acmsl.queryj";
+            + ", \"package\": \"org.acmsl.queryj.customsql";
     }
 
     /**
