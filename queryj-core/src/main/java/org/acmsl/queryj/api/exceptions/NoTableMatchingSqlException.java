@@ -61,7 +61,7 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public class NoTableMatchingSqlException
     extends QueryJNonCheckedException
-{
+${
     /**
      * Creates a new instance blaming the wrong custom SQL.
      * @param sql the {@link Sql}.
