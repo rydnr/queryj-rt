@@ -286,6 +286,5 @@ public abstract class AbstractRow<V>
             + ", \"class\": \"AbstractRow\""
             + ", \"package\": \"org.acmsl.queryj.metadata.vo\" }";
     }
-
 }
 
