@@ -412,7 +412,7 @@ public class ConfigurationQueryJCommandImpl
     public String toString()
     {
         return
-            "{ \"class\": \"" + ConfigurationQueryJCommandImpl.class.getSimpleName()
+              "{ \"class\": \"" + ConfigurationQueryJCommandImpl.class.getSimpleName()
             + ", \"package\": \"org.acmsl.queryj\""
             + ", \"log\": \"" + m__Log + '"'
             + ", \"configuration\": "
