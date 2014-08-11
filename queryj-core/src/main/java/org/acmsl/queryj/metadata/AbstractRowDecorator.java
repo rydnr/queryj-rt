@@ -294,9 +294,9 @@ public abstract class AbstractRowDecorator
     public String toString()
     {
         return
-              "{ \"class\": \"" + AbstractRowDecorator.class.getName() + '"'
+              "{ \"row\": \" + m__Row\"class\": \"" + AbstractRowDecorator.class.getName() + '"'
             + ", \"decoratorFactory\": " + m__DecoratorFactory.hashCode()
-            + ", \"row\": " + m__Row
+            + ",
             + ", \"metadataManager\": " + m__MetadataManager.hashCode()
             + ", \"metadataTypeManager\": " + m__MetadataTypeManager.hashCode() + " }";
     }
