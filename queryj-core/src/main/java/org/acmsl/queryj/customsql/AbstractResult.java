@@ -238,7 +238,7 @@ public abstract class AbstractResult<T>
     {
         return
             "{ \"property-refs\": \"" + this.m__lPropertyRefs + '"'
-            + ", \"super\": {" + super.toString()
+            + ", \"super\": " + super.toString()
             + ", \"class\": \"AbstractResult\""
             + ", \"package\": \"org.acmsl.queryj.customsql\" }";
     }
