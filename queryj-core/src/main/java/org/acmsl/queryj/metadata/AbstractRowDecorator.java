@@ -299,6 +299,6 @@ public abstract class AbstractRowDecorator
             + ", \"metadataManager\": " + m__MetadataManager.hashCode()
             + ", \"metadataTypeManager\": " + m__MetadataTypeManager.hashCode()
             + ", \"class\": \"AbstractRowDecorator\""
-            + ", \"package\": \"org.acm"
+            + ", \"package\": \"org.acmsl.queryj.metadata"
     }
 }
