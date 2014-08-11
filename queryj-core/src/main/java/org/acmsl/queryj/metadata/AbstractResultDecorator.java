@@ -911,7 +911,7 @@ public abstract class AbstractResultDecorator<V>
             + ", \"customSqlProvider\": " + m__CustomSqlProvider.hashCode()
             + ", \"metadataManager\": " + m__MetadataManager.hashCode()
             + ", \"decoratorFactory\": " + m__DecoratorFactory.hashCode()
-            "{ \"class\": \"AbstractResultDecorator\""
+            + "{ \"class\": \"AbstractResultDecorator\""
             + " }";
     }
 
