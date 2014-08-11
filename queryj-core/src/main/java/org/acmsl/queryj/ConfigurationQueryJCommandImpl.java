@@ -76,6 +76,11 @@ public class ConfigurationQueryJCommandImpl
                Serializable
 {
     /**
+     * The serial version id.
+     */
+    private static final long serialVersionUID = -3568357454519731023L;
+
+    /**
      * The attribute collection.
      */
     private Configuration m__Configuration;
