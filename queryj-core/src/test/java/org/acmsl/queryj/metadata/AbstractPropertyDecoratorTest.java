@@ -78,8 +78,7 @@ public class AbstractPropertyDecoratorTest
             new PropertyElement<>("id", "columnName", 1, "boolean", true);
 
         @NotNull final AbstractPropertyDecorator instance =
-            new AbstractPropertyDecorator(property, metadataManager)
-            {
+            new AbstractPropertyDecorator(property, metadataManager) {
 
             };
 
