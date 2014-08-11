@@ -213,19 +213,6 @@ public abstract class AbstractResult<T>
     @Override
     public String toString()
     {
-        return toString(getId(), getPropertyRefs());
-    }
-
-    /**
-     * Provides a text information about this instance.
-     * @param id the <i>id</i> attribute.
-     * @param propertyRefs the <i>property-ref</i> elements.
-     * @return such information.
-     */
-    @NotNull
-    protected String toString(
-        @NotNull final T id, @NotNull final Collection<PropertyRef> propertyRefs)
-    {
         return
               getClass().getName()
             + "[" + "id=" + id + "]"
