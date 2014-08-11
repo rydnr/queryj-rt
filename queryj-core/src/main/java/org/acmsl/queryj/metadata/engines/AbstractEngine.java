@@ -216,12 +216,13 @@ public abstract class AbstractEngine<T>
 
     /**
      * {@inheritDoc}
-     * @return
      */
+    @NotNull
     @Override
     public String toString()
     {
-        return "AbstractEngine{" +
+        return
+            "AbstractEngine{" +
                "m__bCustomLobHandling=" + m__bCustomLobHandling +
                ", m__strName=" + m__strName +
                ", m__strVersion=" + m__strVersion +
