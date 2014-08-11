@@ -282,7 +282,7 @@ public class CustomSqlValidationHandlerTest
 
         t_Sql.add(new ParameterRefElement("userId"));
 
-        @NotNull final Parameter t_Parameter =
+        @NotNull final Parameter<String, String> t_Parameter =
             new ParameterElement<>("userId", 0, "userId", "Long", "1");
 
         testBody(t_Sql, t_Parameter);
