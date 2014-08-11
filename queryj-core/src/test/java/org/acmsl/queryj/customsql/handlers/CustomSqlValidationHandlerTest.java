@@ -244,7 +244,7 @@ public class CustomSqlValidationHandlerTest
 
         t_Sql.add(new ParameterRefElement("text"));
 
-        @NotNull final Parameter t_Parameter =
+        @NotNull final Parameter<String, String> t_Parameter =
             new ParameterElement<>("text", 0, "text", "String", "blah");
 
         testBody(t_Sql, t_Parameter);
