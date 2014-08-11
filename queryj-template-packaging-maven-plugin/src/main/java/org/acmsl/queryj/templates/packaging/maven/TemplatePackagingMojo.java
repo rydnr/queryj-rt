@@ -581,9 +581,7 @@ public class TemplatePackagingMojo
     public String toString()
     {
         return
-              "{ \"class\": \"" + TemplatePackagingMojo.class.getSimpleName() + "\""
-            + ", \"package\": \"org.acmsl.queryj.templates.packaging\""
-            + ", \"queryJCommand\": \"" + this.m__QueryJCommand + "\""
+              "{ \"queryJCommand\": \"" + this.m__QueryJCommand + "\""
             + ", \"sources\": \"" + Arrays.toString(this.m__aSources) + "\""
             + ", \"outputDir\": \"" + this.m__OutputDir.getAbsolutePath() + "\""
             + ", \"outputDirForTests\": \"" + this.m__OutputDirForTests.getAbsolutePath() + "\""
