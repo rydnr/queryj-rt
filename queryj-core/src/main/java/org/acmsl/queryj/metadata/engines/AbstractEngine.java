@@ -55,6 +55,7 @@ import org.checkthread.annotations.ThreadSafe;
 public abstract class AbstractEngine<T>
     implements Engine<T>
 {
+
     /**
      * The name.
      */
