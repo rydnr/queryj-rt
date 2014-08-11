@@ -226,6 +226,7 @@ public abstract class AbstractEngine<T>
             + ", \"version\": \"" + m__strVersion + '"'
             + ", \"customLobHandling\": \"" + m__bCustomLobHandling + '"'
             + ", \"supportsSequences\": \"" + m__bSupportsSequences + '"'
+            + ", \"class\": \""
                '}';
     }
 }
