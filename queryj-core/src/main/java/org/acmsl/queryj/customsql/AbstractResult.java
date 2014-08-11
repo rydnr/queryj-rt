@@ -214,6 +214,7 @@ public abstract class AbstractResult<T>
     public String toString()
     {
         return
+            "{ "
               getClass().getName()
             + "[" + "id=" + id + "]"
             + "[" + "property-refs=" + propertyRefs + "]";
