@@ -153,7 +153,7 @@ public abstract class AbstractFillTemplateChainWrapper<C extends TemplateContext
         throws QueryJBuildException
     {
         // Don't know how to fix the generics warnings
-        @NotNull final List t_lHandlers = getWrappedChain().getHandlers();
+        @NotNull final List<?> t_lHandlers = getWrappedChain().getHandlers();
 
         t_lHandlers.addAll(getHandlers());
 
