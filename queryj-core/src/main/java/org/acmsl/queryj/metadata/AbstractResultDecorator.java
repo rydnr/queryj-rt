@@ -849,24 +849,6 @@ public abstract class AbstractResultDecorator<V>
     }
 
     /**
-     * Provides a text representation of the information
-     * contained in given instance.
-     * @return such information.
-     */
-    @Override
-    @NotNull
-    public String toString()
-    {
-        return
-              "{ \"class\": \"AbstractResultDecorator\""
-            + ", \"result\": " + m__Result
-            + ", \"customSqlProvider\": " + m__CustomSqlProvider.hashCode()
-            + ", \"metadataManager\": " + m__MetadataManager.hashCode()
-            + ", \"decoratorFactory\": " + m__DecoratorFactory.hashCode()
-            + " }";
-    }
-
-    /**
      * Retrieves the hashCode.
      * @return such value.
      */
