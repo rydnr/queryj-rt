@@ -64,7 +64,6 @@ import org.junit.runners.JUnit4;
 /*
  * Importing JDK classes.
  */
-import java.util.Date;
 import java.util.List;
 
 /**
