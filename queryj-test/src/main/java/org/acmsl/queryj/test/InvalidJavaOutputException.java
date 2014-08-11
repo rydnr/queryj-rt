@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: The specified Java output is invalid.
  *
  * Date: 2014/05/03
  * Time: 07:26
