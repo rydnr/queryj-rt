@@ -206,20 +206,6 @@ public abstract class AbstractResult<T>
     }
 
     /**
-     * {@inheritDoc}
-     */
-    @NotNull
-    @Override
-    public String toString()
-    {
-        return
-            "{ \"id\": \"" + this.getId() + '"'
-            + ", \"property-refs\": \"" + this.m__lPropertyRefs + '"'
-            + ", \"class\": \"AbstractResult\""
-            + ", \"package\": \"org.acmsl.queryj.customsql\" }";
-    }
-
-    /**
      * Compares given object with this instance.
      * @param object the object to compare to.
      * @return the result of such comparison.
@@ -241,5 +227,19 @@ public abstract class AbstractResult<T>
         }
 
         return result;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public String toString()
+    {
+        return
+            "{ \"id\": \"" + this.getId() + '"'
+            + ", \"property-refs\": \"" + this.m__lPropertyRefs + '"'
+            + ", \"class\": \"AbstractResult\""
+            + ", \"package\": \"org.acmsl.queryj.customsql\" }";
     }
 }
