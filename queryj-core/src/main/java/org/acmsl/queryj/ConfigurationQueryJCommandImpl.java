@@ -412,7 +412,7 @@ public class ConfigurationQueryJCommandImpl
     public String toString()
     {
         return
-            + ", \"log\": \"" + m__Log + '"'
+            {+ ", \"log\": \"" + m__Log + '"'
             + ", \"configuration\": "
             + "{ \"class\": \"" + m__Configuration.getClass().getSimpleName()
             +    ", \"package\": \"" + m__Configuration.getClass().getPackage().getName() + '"'
