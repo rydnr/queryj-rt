@@ -224,7 +224,7 @@ public abstract class AbstractEngine<T>
         return
               "{ \"name\": \"" + m__strName + '"'
             + ", \"version\": \"" + m__strVersion + '"'
-            + "{ \"customLobHandling\": \"" + m__bCustomLobHandling + '"'
+            + ", \"customLobHandling\": \"" + m__bCustomLobHandling + '"'
             + ", \"supportsSequences\": \"" + m__bSupportsSequences + '"'
                '}';
     }
