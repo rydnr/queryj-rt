@@ -215,7 +215,7 @@ public abstract class AbstractResult<T>
     {
         return
             "{ \"id\": \"" + this.getId() + '"'
-            + "[" + "property-refs=" + propertyRefs + "]";
+            + ", \"property-refs=" + propertyRefs + "]";
     }
 
     /**
