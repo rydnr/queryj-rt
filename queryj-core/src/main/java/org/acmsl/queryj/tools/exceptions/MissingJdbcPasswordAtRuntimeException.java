@@ -39,7 +39,6 @@ package org.acmsl.queryj.tools.exceptions;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.api.exceptions.QueryJNonCheckedException;
-import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
