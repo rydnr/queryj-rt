@@ -66,7 +66,6 @@ public class CannotReadCustomSqlXmlFileException
      */
     private static final long serialVersionUID = -8064000429461780536L;
 
-
     protected static final String CANNOT_READ_CUSTOM_SQL_XML_FILE = "cannot.read.custom-sql.xml.file";
 
     /**
