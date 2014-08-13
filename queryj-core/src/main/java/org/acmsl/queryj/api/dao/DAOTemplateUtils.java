@@ -52,11 +52,6 @@ import org.acmsl.commons.patterns.Utils;
 import java.util.List;
 
 /*
- * Importing some Apache Commons Logging classes.
- */
-import org.apache.commons.logging.Log;
-
-/*
  * Importing some JetBrains annotations.
  */
 import org.jetbrains.annotations.NotNull;
