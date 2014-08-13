@@ -70,10 +70,7 @@ public class TableNameNotAvailableExceptionTest
     {
         @NotNull final TableNameNotAvailableException instance = new TableNameNotAvailableException();
 
-        for (@NotNull final Locale t_Locale : Arrays.asList(new Locale("en"), new Locale("es")))
-        {
-            // throws a MissingResourceException if the key is not declared.
-            instance.getMessage(t_Locale);
-        }
+        // throws a MissingResourceException if the key is not declared.
+        Arrays.asList(new Locale("en"), new Locale("es")).forEach(instance::getMessage);
     }
 }
