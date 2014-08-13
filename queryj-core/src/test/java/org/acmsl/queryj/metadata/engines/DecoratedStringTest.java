@@ -84,10 +84,10 @@ public class DecoratedStringTest
     }
 
     /**
-     * Checks whether re() works for upper-case texts.
+     * Checks whether getNoExtension() works for upper-case texts.
      */
     @Test
-    public void remove_extension_does_nothing_for_texts_with_dots()
+    public void getNoExtension_does_nothing_for_texts_with_dots()
     {
         Assert.assertEquals("bla", new DecoratedString("bla.txt").getNoExtension().getValue());
     }
