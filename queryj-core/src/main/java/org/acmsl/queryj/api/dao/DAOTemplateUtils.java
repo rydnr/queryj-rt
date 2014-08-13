@@ -35,9 +35,6 @@ package org.acmsl.queryj.api.dao;
 /*
  * Importing some project-specific classes.
  */
-import org.acmsl.queryj.customsql.*;
-import org.acmsl.queryj.metadata.MetadataManager;
-import org.acmsl.queryj.metadata.MetadataTypeManager;
 import org.acmsl.queryj.metadata.MetadataUtils;
 import org.acmsl.queryj.metadata.DecoratorFactory;
 import org.acmsl.queryj.metadata.vo.Attribute;
