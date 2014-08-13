@@ -40,7 +40,6 @@ package org.acmsl.queryj.customsql.exceptions;
  */
 import org.acmsl.queryj.api.exceptions.QueryJNonCheckedException;
 import org.acmsl.queryj.customsql.Sql;
-import org.jetbrains.annotations.NotNull;
 
 /*
  * Importing checkthread.org annotations.
