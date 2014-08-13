@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: Tests for OracleMetadataManager.
  *
  * Date: 2014/03/18
  * Time: 09:41
