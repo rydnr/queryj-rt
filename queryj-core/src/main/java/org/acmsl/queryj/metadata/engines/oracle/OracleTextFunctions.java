@@ -390,6 +390,7 @@ public class OracleTextFunctions
          * @return <code>true</code> if both instances represent
          * the same entity.
          */
+        @Override
         public boolean equals(@Nullable final Object other)
         {
             boolean result = false;
