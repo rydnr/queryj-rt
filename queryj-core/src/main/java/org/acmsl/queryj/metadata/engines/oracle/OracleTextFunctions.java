@@ -401,7 +401,7 @@ public class OracleTextFunctions
 
                 final String t_strOtherToString = other.toString();
 
-                result = t_strThisToString.equals(t_strOtherToString);
+                result = (other instanceof t_strThisToString.equals(t_strOtherToString);
             }
 
             return result;
