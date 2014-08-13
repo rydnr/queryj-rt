@@ -162,6 +162,7 @@ public class OracleTextFunctions
          * @param function the variable or function.
          * @param variable <code>true</code> if it is a variable.
          */
+        @SuppressWarnings("unused")
         private _StringFieldWrapper(
             final String function, @SuppressWarnings("unused") final boolean variable)
         {
