@@ -46,7 +46,6 @@ import org.jetbrains.annotations.NotNull;
  */
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
 
 /**
  * Represents parsed Java sources. Defines a subset of {@link Class}, but it cannot be used
