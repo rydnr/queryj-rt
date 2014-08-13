@@ -427,8 +427,7 @@ public class OracleTextFunctions
         {
             int result = (field + function).hashCode();
             
-            int t_iCo
-            unt = (parameters != null) ? parameters.length : 0;
+            int t_iCount = (parameters != null) ? parameters.length : 0;
 
             @Nullable Object t_CurrentParameter;
 
