@@ -80,7 +80,7 @@ public interface JavaSource
      * Returns the Java language modifiers for this class or interface, encoded in an integer.
      * The modifiers consist of the Java Virtual Machine's constants for
      * public, protected, private, final, static, abstract and interface; they should be decoded using the methods of
-     * class {@link Modifier} .
+     * class {@link java.lang.reflect.Modifier} .
      * Retrieves the modifiers.
      * @return a value to be interpreted using {@link Modifier}'s static methods.
      */
