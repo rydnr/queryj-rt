@@ -84,7 +84,7 @@ public class DecoratedStringTest
     }
 
     /**
-     * Checks whether getNoExtension() works for upper-case texts.
+     * Checks whether getNoExtension() does nothing for texts with dots.
      */
     @Test
     public void getNoExtension_does_nothing_for_texts_with_dots()
