@@ -125,7 +125,7 @@ public aspect Tracer
 
             //System.out.println(
             LogFactory.getLog("tracer-in").debug(
-                indent(t_Depth.intValue()) + " >> "  + thisJoinPointStaticPart.getSignature());
+                indent(t_Depth) + " >> "  + thisJoinPointStaticPart.getSignature());
 
             t_mStackDepths.put(Thread.currentThread(), t_Depth + 1);
         }
