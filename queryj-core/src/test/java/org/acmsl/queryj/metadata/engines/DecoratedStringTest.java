@@ -73,7 +73,7 @@ public class DecoratedStringTest
     }
 
     /**
-     * Checks whether capitalize() works for upper-case texts.
+     * Checks whether capitalize() works for mixed-case texts.
      */
     @Test
     public void capitalize_works_for_mixed_cased_strings()
