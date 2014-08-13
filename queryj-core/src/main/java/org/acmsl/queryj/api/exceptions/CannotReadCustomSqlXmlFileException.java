@@ -37,7 +37,7 @@
 package org.acmsl.queryj.api.exceptions;
 
 /*
- * Importing JetBrains annotations.
+ * Importing NotNull annotations.
  */
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
