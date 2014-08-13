@@ -162,7 +162,7 @@ public class OracleTextFunctions
          * @param variable <code>true</code> if it is a variable.
          */
         private _StringFieldWrapper(
-            final String function, final boolean variable)
+            final String function, @SuppressWarnings("unused") final boolean variable)
         {
             this((Field) null, function);
             inmutableSetNoFunction(true);
