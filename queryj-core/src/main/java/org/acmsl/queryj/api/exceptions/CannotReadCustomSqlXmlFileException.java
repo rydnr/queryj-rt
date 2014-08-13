@@ -46,8 +46,6 @@ import org.jetbrains.annotations.Nullable;
  * Importing JDK classes.
  */
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
 
 /*
  * Importing checkthread.org annotations.
