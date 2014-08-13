@@ -140,7 +140,7 @@ public class OracleTextFunctions
                 ((field == null) ? null : field.getTable()));
             inmutableSetWrappedField(field);
             immutableSetFunction(function);
-            inmutableSetNoFunction(false);
+            immutableSetNoFunction(false);
         }
 
         /**
@@ -167,7 +167,7 @@ public class OracleTextFunctions
             final String function, @SuppressWarnings("unused") final boolean variable)
         {
             this((Field) null, function);
-            inmutableSetNoFunction(true);
+            immutableSetNoFunction(true);
         }
 
         /**
@@ -279,7 +279,7 @@ public class OracleTextFunctions
          * Specifies whether the operator is a function or a variable.
          * @param function such flag.
          */
-        private void inmutableSetNoFunction(final boolean function)
+        private void immutableSetNoFunction(final boolean function)
         {
             m__bNoFunction = function;
         }
@@ -290,7 +290,7 @@ public class OracleTextFunctions
          */
         public void setNoFunction(final boolean variable)
         {
-            inmutableSetNoFunction(variable);
+            immutableSetNoFunction(variable);
         }
 
         /**
