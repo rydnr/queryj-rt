@@ -354,8 +354,7 @@ public class OracleTextFunctions
                     for  (int t_iIndex = 1; t_iIndex < t_aArgs.length; t_iIndex++)
                     {
                         t_sbResult.append(",");
-                        t_bQuoted = (   (t_QueryUtils != null)
-                                     && (t_QueryUtils.shouldBeEscaped(t_aArgs[t_iIndex])));
+                        t_bQuoted = (t_QueryUtils.shouldBeEscaped(t_aArgs[t_iIndex]));
                         if  (t_bQuoted)
                         {
                             t_sbResult.append("\"");
