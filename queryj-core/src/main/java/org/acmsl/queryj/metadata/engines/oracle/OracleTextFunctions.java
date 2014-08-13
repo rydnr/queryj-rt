@@ -174,6 +174,7 @@ public class OracleTextFunctions
          * Builds a FieldWrapper for given field and parameters.
          * @param function the function.
          */
+        @SuppressWarnings("unused")
         private _StringFieldWrapper(final String function)
         {
             this((Field) null, function);
