@@ -40,6 +40,7 @@ package org.acmsl.queryj;
 /*
  * Importing Apache Commons Logging classes.
  */
+import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 /*
