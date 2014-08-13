@@ -35,7 +35,7 @@
  * Description: Traces method calls.
  *
  */
-package aspects.org.acmsl.queryj;
+package org.acmsl.queryj;
 
 /*
  * Importing Apache Commons Logging classes.
