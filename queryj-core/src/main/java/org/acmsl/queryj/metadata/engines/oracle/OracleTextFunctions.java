@@ -196,7 +196,7 @@ public class OracleTextFunctions
          * Specifies the wrapped field.
          * @param field the field to wrap.
          */
-        private void inmutableSetWrappedField(final Field field)
+        private void immutableSetWrappedField(final Field field)
         {
             m__WrappedField = field;
         }
@@ -205,6 +205,7 @@ public class OracleTextFunctions
          * Specifies the wrapped field.
          * @param field the field to wrap.
          */
+        @SuppressWarnings("unused")
         public void setWrappedField(final Field field)
         {
             inmutableSetWrappedField(field);
