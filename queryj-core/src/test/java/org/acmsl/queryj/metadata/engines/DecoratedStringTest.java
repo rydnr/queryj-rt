@@ -93,7 +93,7 @@ public class DecoratedStringTest
     }
 
     /**
-     * Checks whether getNoExtension() does nothing for texts with dots.
+     * Checks whether getNoExtension() does nothing for texts with no dots.
      */
     @Test
     public void getNoExtension_does_nothing_for_texts_with_no_dots()
