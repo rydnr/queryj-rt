@@ -233,6 +233,7 @@ public class OracleTextFunctions
          * Specifies the function.
          * @param function such function.
          */
+        @SuppressWarnings("unused")
         public void setFunction(final String function)
         {
             immutableSetFunction(function);
