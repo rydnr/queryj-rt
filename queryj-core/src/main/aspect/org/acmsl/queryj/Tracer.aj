@@ -110,7 +110,7 @@ public aspect Tracer
     /**
      * Before reaching tracing pointcut.
      */
-    before(Object obj) : tracePoint(obj)
+    before() : tracePoint(obj)
     {
         if (isEnabled())
         {
