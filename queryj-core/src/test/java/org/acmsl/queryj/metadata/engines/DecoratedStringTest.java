@@ -72,6 +72,9 @@ public class DecoratedStringTest
         Assert.assertEquals("Name", new DecoratedString("NAME").getCapitalized().getValue());
     }
 
+    /**
+     * Checks whether capitalize() works for upper-case texts.
+     */
     @Test
     public void capitalize_works_for_mixed_cased_strings()
     {
@@ -80,6 +83,9 @@ public class DecoratedStringTest
         Assert.assertEquals("GCycleTypes", instance.getCapitalized().getValue());
     }
 
+    /**
+     * Checks whether capitalize() works for upper-case texts.
+     */
     @Test
     public void remove_extension_does_nothing_for_texts_with_dots()
     {
