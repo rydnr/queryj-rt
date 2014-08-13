@@ -350,7 +350,7 @@ public class OracleTextFunctions
                     {
                         t_sbResult.append("\"");
                     }
-                    boolean t_bQuoted = false;
+                    boolean t_bQuoted;
                     for  (int t_iIndex = 1; t_iIndex < t_aArgs.length; t_iIndex++)
                     {
                         t_sbResult.append(",");
