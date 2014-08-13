@@ -84,6 +84,7 @@ import java.util.List;
 public abstract class AbstractCustomSqlProvider
     implements CustomSqlProvider
 {
+
     /**
      * The default separator when computing hashes.
      */
