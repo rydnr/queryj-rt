@@ -63,6 +63,7 @@ import org.checkthread.annotations.ThreadSafe;
  * Release 8.1.7.0.1 - Production JServer Release 8.1.7.0.1 - Production.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  */
+@SuppressWarnings("unused")
 @ThreadSafe
 public class OracleTextFunctions
     implements  Singleton
