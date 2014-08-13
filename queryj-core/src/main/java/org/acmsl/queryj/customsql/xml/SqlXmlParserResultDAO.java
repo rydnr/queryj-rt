@@ -250,7 +250,7 @@ public class SqlXmlParserResultDAO
 
         if (t_CurrentMatch == null)
         {
-            CACHED_RESULT_BY_TABLE.put(table.toLowerCase(Locale.US), t_CurrentMatch);
+            CACHED_RESULT_BY_TABLE.put(t_CurrentMatch, result);
         }
     }
 
