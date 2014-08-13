@@ -63,6 +63,8 @@ import org.checkthread.annotations.ThreadSafe;
 public abstract class AbstractAttribute<T>
     implements Attribute<T>
 {
+    private static final long serialVersionUID = -1945452522868946003L;
+
     /**
      * The name.
      */
