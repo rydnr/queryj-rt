@@ -55,7 +55,6 @@ public class AbstractBasePerTableTemplate<C extends PerTableTemplateContext>
     extends AbstractQueryJTemplate<C>
     implements PerTableTemplate<C>
 {
-
     /**
      * Builds an {@code AbstractBasePerTableTemplate} using given
      * information.
