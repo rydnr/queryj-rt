@@ -208,7 +208,7 @@ public class OracleTextFunctions
         @SuppressWarnings("unused")
         public void setWrappedField(final Field field)
         {
-            inmutableSetWrappedField(field);
+            immutableSetWrappedField(field);
         }
 
         /**
