@@ -36,7 +36,7 @@
 package org.acmsl.queryj.api;
 
 /*
- * Importing JetBrains annotations.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.metadata.DecoratorFactory;
 
