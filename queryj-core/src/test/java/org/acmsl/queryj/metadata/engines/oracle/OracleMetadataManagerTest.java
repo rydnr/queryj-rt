@@ -36,7 +36,7 @@
 package org.acmsl.queryj.metadata.engines.oracle;
 
 /*
- * Importing JetBrains annotations.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.metadata.MetadataExtractionListener;
 import org.acmsl.queryj.metadata.vo.Attribute;
