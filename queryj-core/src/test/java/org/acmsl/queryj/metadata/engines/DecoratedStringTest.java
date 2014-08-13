@@ -92,6 +92,9 @@ public class DecoratedStringTest
         Assert.assertEquals("bla", new DecoratedString("bla.txt").getNoExtension().getValue());
     }
 
+    /**
+     * Checks whether getNoExtension() does nothing for texts with dots.
+     */
     @Test
     public void getNoExtension_does_nothing_for_texts_with_no_dots()
     {
