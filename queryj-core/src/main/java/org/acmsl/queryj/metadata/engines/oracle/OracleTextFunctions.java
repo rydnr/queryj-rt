@@ -38,6 +38,7 @@ package org.acmsl.queryj.metadata.engines.oracle;
 /*
  * Importing QueryJ Core classes.
  */
+import javafx.beans.binding.When.StringConditionBuilder;
 import org.acmsl.queryj.sql.Field;
 import org.acmsl.queryj.sql.QueryUtils;
 import org.acmsl.queryj.sql.StringField;
@@ -311,7 +312,7 @@ public class OracleTextFunctions
         @NotNull
         public String toString()
         {
-            @NotNull final StringBuffer t_sbResult = new StringBuffer();
+            @NotNull final StringBuilder t_sbResult = new StringBuffer();
 
             @NotNull final QueryUtils t_QueryUtils = QueryUtils.getInstance();
             final boolean t_bVariable = isNotAFunction();
