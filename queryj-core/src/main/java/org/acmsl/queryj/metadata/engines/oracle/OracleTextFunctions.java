@@ -394,7 +394,7 @@ public class OracleTextFunctions
 
             if  (other != null)
             {
-                String t_strThisToString = toString();
+                final String t_strThisToString = toString();
 
                 String t_strOtherToString = other.toString();
 
