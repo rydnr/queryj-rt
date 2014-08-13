@@ -63,7 +63,7 @@ import org.junit.runners.JUnit4;
 public class DecoratedStringTest
 {
     /**
-     * Checks whether capitalize() works for upper-case
+     * Checks whether capitalize() works for upper-case texts.
      */
     @Test
     public void capitalize_works_for_upper_cased_strings()
