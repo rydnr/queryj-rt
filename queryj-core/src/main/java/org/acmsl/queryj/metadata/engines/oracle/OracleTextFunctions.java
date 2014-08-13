@@ -185,6 +185,7 @@ public class OracleTextFunctions
          * @param value the value to wrap.
          * @param function the function.
          */
+        @SuppressWarnings("unused")
         private _StringFieldWrapper(final String value, final String function)
         {
             this((Field) null, function);
