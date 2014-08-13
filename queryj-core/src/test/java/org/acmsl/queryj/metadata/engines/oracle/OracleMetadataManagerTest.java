@@ -41,7 +41,6 @@ package org.acmsl.queryj.metadata.engines.oracle;
 import org.acmsl.queryj.metadata.MetadataExtractionListener;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.Table;
-import org.easymock.EasyMock;
 import org.jetbrains.annotations.NotNull;
 
 /*
