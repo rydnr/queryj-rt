@@ -101,6 +101,9 @@ public class DecoratedStringTest
         Assert.assertEquals("bla", new DecoratedString("bla").getNoExtension().getValue());
     }
 
+    /**
+     * Checks whether getNoExtension() does nothing for texts with no dots.
+     */
     @Test
     public void shrink_removes_all_non_alphanumeric_characters()
     {
