@@ -169,7 +169,7 @@ public aspect Tracer
      * @param num the amount to indent.
      * @return such indentation.
      */
-    protected static String indent(int num)
+    protected static String indent(final int num)
     {
         final StringBuilder result = new StringBuilder();
 
