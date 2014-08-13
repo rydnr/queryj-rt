@@ -51,7 +51,7 @@ import org.jetbrains.annotations.NotNull;
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
  * @param <C> the template context type.
  */
-public abstract class AbstractBasePerTableTemplate<C extends PerTableTemplateContext>
+public class AbstractBasePerTableTemplate<C extends PerTableTemplateContext>
     extends AbstractQueryJTemplate<C>
     implements PerTableTemplate<C>
 {
