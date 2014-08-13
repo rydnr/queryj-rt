@@ -36,7 +36,7 @@
  *              flow.
  *
  */
-package aspects.org.acmsl.queryj;
+package org.acmsl.queryj;
 
 /*
  * Importing project classes.
