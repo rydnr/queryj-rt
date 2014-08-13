@@ -36,7 +36,7 @@
 package org.acmsl.queryj.metadata.engines.oracle;
 
 /*
- * Importing QueryJ Cor classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.sql.Field;
 import org.acmsl.queryj.sql.QueryUtils;
