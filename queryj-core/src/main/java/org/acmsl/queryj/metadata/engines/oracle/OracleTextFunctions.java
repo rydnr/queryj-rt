@@ -288,6 +288,7 @@ public class OracleTextFunctions
          * Specifies whether the operator is a function or a variable.
          * @param variable such flag.
          */
+        @SuppressWarnings("unused")
         public void setNoFunction(final boolean variable)
         {
             immutableSetNoFunction(variable);
