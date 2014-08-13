@@ -91,7 +91,7 @@ public aspect Tracer
            execution(* *.*(..))
         && this(obj)
         && !within(Tracer)
-        && !within(Log)
+        && !within(org.apache.commons.logging.Log)
         && !within(java.io.PrintStream)
         && !execution(String *.toString())
         && !execution(String *.getPrefix())
