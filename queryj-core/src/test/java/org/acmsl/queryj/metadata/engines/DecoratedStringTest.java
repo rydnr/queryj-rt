@@ -84,7 +84,7 @@ public class DecoratedStringTest
     }
 
     /**
-     * Checks whether capitalize() works for upper-case texts.
+     * Checks whether re() works for upper-case texts.
      */
     @Test
     public void remove_extension_does_nothing_for_texts_with_dots()
