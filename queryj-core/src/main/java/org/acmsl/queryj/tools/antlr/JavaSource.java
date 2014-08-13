@@ -41,11 +41,9 @@ package org.acmsl.queryj.tools.antlr;
  */
 import org.jetbrains.annotations.NotNull;
 
-import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
-import java.util.List;
 
 /**
  * Represents parsed Java sources. Defines a subset of {@link Class}, but it cannot be used
