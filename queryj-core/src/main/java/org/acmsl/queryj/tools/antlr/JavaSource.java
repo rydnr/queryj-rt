@@ -37,7 +37,7 @@
 package org.acmsl.queryj.tools.antlr;
 
 /**
- * Importing JDK classes.
+ * Importing NotNull annotations.
  */
 import org.jetbrains.annotations.NotNull;
 
