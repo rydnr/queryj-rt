@@ -308,7 +308,7 @@ public aspect PerCommentParsingCache
             COLUMN_READONLY_CACHE.put(key, result);
         }
 
-        return result.booleanValue();
+        return result;
     }
 
     /**
