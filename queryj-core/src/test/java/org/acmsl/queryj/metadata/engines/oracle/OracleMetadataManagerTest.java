@@ -66,7 +66,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Tests for {@link org.acmsl.queryj.metadata.engines.oracle.OracleMetadataManager}
+ * Tests for {@link org.acmsl.queryj.metadata.engines.oracle.OracleMetadataManager}.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/03/18 09:41
