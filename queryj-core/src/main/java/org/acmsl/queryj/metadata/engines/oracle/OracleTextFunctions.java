@@ -403,7 +403,7 @@ public class OracleTextFunctions
 
                 result =
                     (   (other instanceof OracleTextFunctions)
-                     && (t_strThisToString.equals(t_strOtherToString));
+                     && (t_strThisToString.equals(t_strOtherToString)));
             }
 
             return result;
