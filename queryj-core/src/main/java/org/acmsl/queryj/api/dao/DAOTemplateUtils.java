@@ -43,7 +43,6 @@ import org.acmsl.queryj.metadata.MetadataUtils;
 /*
  * Importing some ACM-SL Commons classes.
  */
-import org.acmsl.commons.logging.UniqueLogFactory;
 import org.acmsl.commons.patterns.Singleton;
 import org.acmsl.commons.patterns.Utils;
 
