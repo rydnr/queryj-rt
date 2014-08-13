@@ -254,7 +254,7 @@ public class SqlXmlParserResultDAO
         }
         else
         {
-
+            CACHED_RESULT_BY_TABLE.put(table.toLowerCase(Locale.US), t_CurrentMatch);
         }
     }
 
