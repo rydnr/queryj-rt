@@ -53,11 +53,17 @@ import org.jetbrains.annotations.Nullable;
 /*
  * Importing checkthread.org annotations.
  */
+import org.easymock.EasyMock;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.sql.DatabaseMetaData;
+
+/*
+ * Importing JDK classes.
+ */
 import java.sql.DatabaseMetaData;
 import java.sql.Types;
 import java.util.ArrayList;
