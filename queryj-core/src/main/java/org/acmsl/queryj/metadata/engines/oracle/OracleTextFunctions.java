@@ -340,8 +340,7 @@ public class OracleTextFunctions
                         t_sbResult.append(",");
 
                     }
-                    if  (   (t_QueryUtils != null)
-                         && (t_QueryUtils.shouldBeEscaped(t_aArgs[0])))
+                    if  (t_QueryUtils.shouldBeEscaped(t_aArgs[0]))
                     {
                         t_sbResult.append("\"");
                     }
