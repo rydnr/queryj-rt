@@ -371,8 +371,7 @@ public class OracleTextFunctions
                 if  (   (t_strFunction != null)
                      && (t_aArgs != null)
                      && (t_aArgs.length > 1)
-                     && (t_QueryUtils.shouldBeEscaped(
-                            t_aArgs[t_aArgs.length - 1])))
+                     && (t_QueryUtils.shouldBeEscaped(t_aArgs[t_aArgs.length - 1])))
                 {
                     t_sbResult.append("\"");
 
