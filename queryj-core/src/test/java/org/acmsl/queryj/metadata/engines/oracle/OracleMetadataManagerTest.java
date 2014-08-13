@@ -57,7 +57,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 /*
- * Importing Q.
+ * Importing JDK classes.
  */
 import java.sql.DatabaseMetaData;
 import java.sql.SQLException;
