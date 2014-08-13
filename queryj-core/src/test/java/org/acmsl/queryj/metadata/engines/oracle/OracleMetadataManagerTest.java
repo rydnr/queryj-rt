@@ -41,6 +41,10 @@ package org.acmsl.queryj.metadata.engines.oracle;
 import org.acmsl.queryj.metadata.MetadataExtractionListener;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.Table;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
