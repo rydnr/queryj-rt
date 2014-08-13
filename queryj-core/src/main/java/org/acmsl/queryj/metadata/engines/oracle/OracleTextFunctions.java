@@ -312,7 +312,7 @@ public class OracleTextFunctions
         {
             @NotNull final StringBuffer t_sbResult = new StringBuffer();
 
-            @NotNull QueryUtils t_QueryUtils = QueryUtils.getInstance();
+            @NotNull final QueryUtils t_QueryUtils = QueryUtils.getInstance();
             boolean t_bVariable = isNotAFunction();
             String t_strFunction = getFunction();
             if  (t_strFunction != null)
