@@ -149,6 +149,7 @@ public class OracleTextFunctions
          * @param function the function.
          * @param parameters the additional parameters.
          */
+        @SuppressWarnings("unused")
         private _StringFieldWrapper(
             final Field field, final String function, final Object[] parameters)
         {
