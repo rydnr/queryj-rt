@@ -330,7 +330,7 @@ public class OracleTextFunctions
 
                 }
 
-                Object[] t_aArgs = getParameters();
+                @Nullable final Object[] t_aArgs = getParameters();
 
                 if  (   (t_aArgs != null)
                      && (t_aArgs.length > 0))
