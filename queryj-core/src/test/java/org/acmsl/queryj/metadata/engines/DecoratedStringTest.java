@@ -102,7 +102,7 @@ public class DecoratedStringTest
     }
 
     /**
-     * Checks whether shrink() does nothing for texts with no dots.
+     * Checks whether shrink() removes all non-alphanumeric characters.
      */
     @Test
     public void shrink_removes_all_non_alphanumeric_characters()
