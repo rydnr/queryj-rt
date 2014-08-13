@@ -323,7 +323,7 @@ public class OracleTextFunctions
             if  (!t_bVariable)
             {
                 t_sbResult.append("(");
-                Field t_strWrappedField = getWrappedField();
+                @Nullable final Field t_strWrappedField = getWrappedField();
                 if  (t_strWrappedField != null)
                 {
                     t_sbResult.append(t_strWrappedField.toString());
