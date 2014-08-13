@@ -84,6 +84,9 @@ import java.util.List;
 public abstract class AbstractCustomSqlProvider
     implements CustomSqlProvider
 {
+    /**
+     * The serial version id.
+     */
 
     /**
      * The default separator when computing hashes.
