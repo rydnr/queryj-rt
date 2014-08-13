@@ -58,7 +58,6 @@ import org.junit.runners.JUnit4;
 import java.sql.DatabaseMetaData;
 import java.sql.Types;
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Tests for {@link AbstractJdbcMetadataManager}.
