@@ -154,7 +154,7 @@ public class OracleTextFunctions
             final Field field, final String function, final Object[] parameters)
         {
             this(field, function);
-            imutableSetParameters(parameters);
+            immutableSetParameters(parameters);
         }
 
         /**
@@ -189,7 +189,7 @@ public class OracleTextFunctions
         private _StringFieldWrapper(final String value, final String function)
         {
             this((Field) null, function);
-            imutableSetParameters(new Object[]{value});
+            immutableSetParameters(new Object[]{value});
         }
 
         /**
@@ -252,7 +252,7 @@ public class OracleTextFunctions
          * Specifies the parameter list.
          * @param parameters the parameters.
          */
-        private void imutableSetParameters(final Object[] parameters)
+        private void immutableSetParameters(final Object[] parameters)
         {
             m__aParameters = parameters;
         }
@@ -263,7 +263,7 @@ public class OracleTextFunctions
          */
         public void setParameters(final Object[] parameters)
         {
-            imutableSetParameters(parameters);
+            immutableSetParameters(parameters);
         }
 
         /**
