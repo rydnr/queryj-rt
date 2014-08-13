@@ -39,7 +39,6 @@ package org.acmsl.queryj.api.exceptions;
 /*
  * Importing JetBrains annotations.
  */
-import org.acmsl.commons.utils.io.FileUtils;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
