@@ -314,7 +314,7 @@ public class OracleTextFunctions
 
             @NotNull final QueryUtils t_QueryUtils = QueryUtils.getInstance();
             final boolean t_bVariable = isNotAFunction();
-            String t_strFunction = getFunction();
+            @NotNull final String t_strFunction = getFunction();
             if  (t_strFunction != null)
             {
                 t_sbResult.append(t_strFunction);
