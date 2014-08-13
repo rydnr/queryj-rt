@@ -39,6 +39,10 @@ package org.acmsl.queryj.metadata.engines;
  * Importing JetBrains annotations.
  */
 import org.acmsl.queryj.metadata.DecoratedString;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
