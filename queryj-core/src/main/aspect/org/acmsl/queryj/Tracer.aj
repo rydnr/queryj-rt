@@ -134,7 +134,7 @@ public aspect Tracer
     /**
      * After reaching tracing pointcut.
      */
-    after() : tracePoint()
+    after(Object object) : tracePoint(object)
     {
         if (isEnabled())
         {
