@@ -87,6 +87,7 @@ public abstract class AbstractCustomSqlProvider
     /**
      * The serial version id.
      */
+    private static final long serialVersionUID = -4395843851323478336L;
 
     /**
      * The default separator when computing hashes.
