@@ -46,13 +46,16 @@ import org.acmsl.queryj.metadata.ForeignKeyDecorator;
 import org.acmsl.queryj.metadata.engines.Engine;
 import org.acmsl.queryj.metadata.vo.ForeignKey;
 import org.acmsl.queryj.metadata.vo.ForeignKeyValueObject;
+
+/*
+ * Importing JetBrains annotations.
+ */
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /*
  * Importing checkthread.org annotations.
  */
-import org.jetbrains.annotations.Nullable;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
