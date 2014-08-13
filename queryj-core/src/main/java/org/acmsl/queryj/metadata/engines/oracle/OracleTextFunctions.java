@@ -139,7 +139,7 @@ public class OracleTextFunctions
                 ((field == null) ? "" : field.getName()),
                 ((field == null) ? null : field.getTable()));
             inmutableSetWrappedField(field);
-            inmutableSetFunction(function);
+            immutableSetFunction(function);
             inmutableSetNoFunction(false);
         }
 
@@ -224,7 +224,7 @@ public class OracleTextFunctions
          * Specifies the function.
          * @param function such function.
          */
-        private void inmutableSetFunction(final String function)
+        private void immutableSetFunction(final String function)
         {
             m__strFunction = function;
         }
@@ -235,7 +235,7 @@ public class OracleTextFunctions
          */
         public void setFunction(final String function)
         {
-            inmutableSetFunction(function);
+            immutableSetFunction(function);
         }
 
         /**
