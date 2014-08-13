@@ -82,7 +82,7 @@ public interface JavaSource
      * public, protected, private, final, static, abstract and interface; they should be decoded using the methods of
      * class {@link java.lang.reflect.Modifier} .
      * Retrieves the modifiers.
-     * @return a value to be interpreted using {@link Modifier}'s static methods.
+     * @return a value to be interpreted using {@link java.lang.reflect.Modifier}'s static methods.
      */
     @SuppressWarnings("unused")
     public int getModifiers();
