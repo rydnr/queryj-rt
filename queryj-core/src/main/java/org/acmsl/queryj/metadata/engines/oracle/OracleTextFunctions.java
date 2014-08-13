@@ -138,7 +138,7 @@ public class OracleTextFunctions
             super(
                 ((field == null) ? "" : field.getName()),
                 ((field == null) ? null : field.getTable()));
-            inmutableSetWrappedField(field);
+            immutableSetWrappedField(field);
             immutableSetFunction(function);
             immutableSetNoFunction(false);
         }
