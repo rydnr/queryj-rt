@@ -36,7 +36,7 @@
 package org.acmsl.queryj.api.handlers;
 
 /*
- * Importing JetBrains annotations.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.PerForeignKeyTemplate;
