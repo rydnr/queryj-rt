@@ -134,7 +134,7 @@ public class OracleTextFunctions
          */
         private _StringFieldWrapper(@Nullable final Field field, final String function)
         {
-            // Example of when ? operator cannot be subsituted by if-else.
+            // Example of when ? operator cannot be substituted by if-else.
             super(
                 ((field == null) ? "" : field.getName()),
                 ((field == null) ? null : field.getTable()));
