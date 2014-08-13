@@ -396,7 +396,7 @@ public class OracleTextFunctions
             {
                 final String t_strThisToString = toString();
 
-                String t_strOtherToString = other.toString();
+                final String t_strOtherToString = other.toString();
 
                 result = t_strThisToString.equals(t_strOtherToString);
             }
