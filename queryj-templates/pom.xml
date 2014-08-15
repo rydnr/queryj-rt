@@ -130,7 +130,7 @@
           <execution>
             <phase>generate-sources</phase>
             <goals>
-              <goal>package-templates</goal>
+              <goal>queryj-package-templates</goal>
             </goals>
           </execution>
         </executions>
