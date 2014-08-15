@@ -118,7 +118,7 @@ public class TemplatePackagingMojo
     /**
      * The output folder for tests.
      */
-    @Parameter(property = OUTPUT_DIR_FOR_TESTS, defaultValue = "${project.build.directory}/generated-test-sources")
+    @Parameter(name = OUTPUT_DIR_FOR_TESTS, property = ENV_PREFIX + OUTPUT_DIR_FOR_TESTS, defaultValue = "${project.build.directory}/generated-test-sources")
     private File m__OutputDirForTests;
 
     /**
