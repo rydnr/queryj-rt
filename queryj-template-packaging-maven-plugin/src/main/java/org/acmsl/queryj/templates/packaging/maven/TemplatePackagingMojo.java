@@ -101,7 +101,7 @@ public class TemplatePackagingMojo
     /**
      * Additional source directories.
      */
-    @Parameter(required = true, property = SOURCES)
+    @Parameter(name = SOURCES, required = true, property = SOURCES)
     private File[] m__aSources;
 
     /**
