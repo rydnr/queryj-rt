@@ -130,7 +130,7 @@ public class TemplatePackagingMojo
     /**
      * The JDBC url.
      */
-    @Parameter(property = JDBC_URL)
+    @Parameter(name = JDBC_URL, property = ENV_PREFIX + JDBC_URL)
     private String m__strJdbcUrl;
 
     /**
