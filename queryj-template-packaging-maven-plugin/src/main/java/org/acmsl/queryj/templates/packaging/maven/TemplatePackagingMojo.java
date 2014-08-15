@@ -112,7 +112,7 @@ public class TemplatePackagingMojo
     /**
      * The output folder.
      */
-    @Parameter(property = ENV_PREFIX + OUTPUT_DIR, defaultValue = "${project.build.directory}/generated-sources")
+    @Parameter(name = OUTPUT_DIR, property = ENV_PREFIX + OUTPUT_DIR, defaultValue = "${project.build.directory}/generated-sources")
     private File m__OutputDir;
 
     /**
