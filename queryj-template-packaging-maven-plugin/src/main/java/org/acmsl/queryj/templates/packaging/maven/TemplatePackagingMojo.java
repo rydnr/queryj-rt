@@ -146,7 +146,7 @@ public class TemplatePackagingMojo
     private QueryJCommand m__QueryJCommand;
 
     /**
-     * Creates a {@link TemplatePackagingMojo} instance.
+     * Creates a {@code TemplatePackagingMojo} instance.
      */
     public TemplatePackagingMojo()
     {
