@@ -97,7 +97,7 @@ public class TemplatePackagingMojo
      */
     protected static final String POM_PROPERTIES_LOCATION =
         "META-INF/maven/org.acmsl.queryj/queryj-template-packaging-maven-plugin/pom.properties";
-    private static final String PREFIX = "queryj.";
+    private static final String PREFIX = "queryj-templates.";
 
     /**
      * Additional source directories.
