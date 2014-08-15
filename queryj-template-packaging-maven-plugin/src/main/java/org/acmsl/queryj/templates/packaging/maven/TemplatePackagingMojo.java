@@ -101,7 +101,7 @@ public class TemplatePackagingMojo
     /**
      * The prefix for environment variables.
      */
-    public static final String PREFIX = "queryj-templates.";
+    public static final String ENV_PREFIX = "queryj-templates.";
 
     /**
      * Additional source directories.
