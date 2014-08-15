@@ -136,7 +136,7 @@ public class TemplatePackagingMojo
     /**
      * The JDBC username.
      */
-    @Parameter(property = JDBC_USERNAME)
+    @Parameter(name = JDBC_USERNAME, property = ENV_PREFIX + JDBC_USERNAME)
     private String m__strJdbcUserName;
 
     /**
