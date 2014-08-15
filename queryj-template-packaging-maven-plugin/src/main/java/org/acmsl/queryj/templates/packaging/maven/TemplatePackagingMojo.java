@@ -142,7 +142,7 @@ public class TemplatePackagingMojo
     /**
      * The JDBC password.
      */
-    @Parameter(property = JDBC_PASSWORD)
+    @Parameter(name = JDBC_PASSWORD, property = ENV_PREFIX + JDBC_PASSWORD)
     private String m__strJdbcPassword;
 
     /**
