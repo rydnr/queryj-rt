@@ -147,6 +147,11 @@ public interface QueryJSettings
     public static final String GRAMMAR_SUFFIX = PREFIX + Literals.GRAMMAR_SUFFIX;
 
     /**
+     * The header file.
+     */
+    public static final String GRAMMAR_SUFFIX = PREFIX + Literals.GRAMMAR_SUFFIX;
+
+    /**
      * Whether to disable custom sql validation completely.
      */
     public static final String DISABLE_CUSTOM_SQL_VALIDATION = PREFIX + Literals.DISABLE_CUSTOM_SQL_VALIDATION;
