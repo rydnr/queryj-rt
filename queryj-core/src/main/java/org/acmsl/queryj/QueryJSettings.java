@@ -108,7 +108,7 @@ public interface QueryJSettings
      */
     @SuppressWarnings("unused")
     public static final String GENERATE_XML_DAO_IMPLEMENTATION =
-        PREFIX + "generateXmlImplementation";
+        PREFIX + Literals.GENERATE_XML_IMPLEMENTATION;
 
     /**
      * Whether to generate test cases.
