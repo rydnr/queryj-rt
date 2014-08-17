@@ -133,7 +133,7 @@ public class QueryJMojo
     /**
      * The driver.
      */
-    @Parameter (name = "driver", property = "driver", required = true)
+    @Parameter (name = "driver", property = ENV_PREFIX + "driver", required = true)
     private String m__strDriver;
 
     /**
