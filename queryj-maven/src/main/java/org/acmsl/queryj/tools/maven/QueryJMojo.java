@@ -711,7 +711,7 @@ public class QueryJMojo
     @Nullable
     protected String getJndiDataSource()
     {
-        String result = System.getProperty("queryj.jndi");
+        String result = System.getProperty(JNDI_DATASOURCE);
 
         if (result == null)
         {
