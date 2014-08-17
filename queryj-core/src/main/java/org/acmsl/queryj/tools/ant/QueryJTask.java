@@ -1312,6 +1312,7 @@ public class QueryJTask
 
                 result = t_aemfeResult;
                 break;
+
             default:
                 throw new BuildException(name + ELEMENTS_ARE_NOT_SUPPORTED);
         }
