@@ -49,6 +49,7 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public interface Literals
 {
+    String QUERYJ_L = "queryj";
     String DRIVER = "driver";
     String URL = "url";
     String USERNAME = "username";
