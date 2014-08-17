@@ -1627,26 +1627,26 @@ public class QueryJMojo
     {
         return
             "{ \"catalog\": \"" + catalog + '"'
-            ", \"driver\": \"" + m__strDriver + '"'
-            ", \"url\": \"" + m__strUrl + '"'
-            ", \"username\": \"" + m__strUsername + '"'
-            ", \"password\": \"" + m__strPassword + '"'
-            ", \"schema\": \"" + schema + '"'
-            ", \"repository\": \"" + m__strRepository + '"'
-            Literals.PACKAGE_NAME + m__strPackageName + '"'
-            Literals.OUTPUT_DIR + m__OutputDir + '"'
-            ", \"jndiDataSource\": \"" + m__strJndiDataSource + '"'
-            ", \"sqlXmlFile\": \"" + m__SqlXmlFile + '"'
-            ", \"headerFile\": \"" + m__HeaderFile + '"'
-            ", \"grammarFolder\": \"" + m__GrammarFolder + '"'
-            ", \"grammarName\": \"" + m__strGrammarName + '"'
-            ", \"grammarSuffix\": \"" + m__strGrammarSuffix + '"'
-            ", \"tables\": " + Arrays.toString(m__aTables) + '"'
-            ", \"encoding\": \"" + m__strEncoding + '"'
-            ", \"disableGenerationTimestamps\": \"" + m__bDisableGenerationTimestamps + '"'
-            ", \"disableNotNullAnnotations\": \"" + m__bDisableNotNullAnnotations + '"'
-            ", \"disableCheckthreadAnnotations\": \"" + m__bDisableCheckthreadAnnotations + '"'
-            ", \"class\": \"QueryJMojo\""
-            ", \"session\": \"" + session + "\" }";
+            + ", \"driver\": \"" + m__strDriver + '"'
+            + ", \"url\": \"" + m__strUrl + '"'
+            + ", \"username\": \"" + m__strUsername + '"'
+            + ", \"password\": \"" + m__strPassword + '"'
+            + ", \"schema\": \"" + schema + '"'
+            + ", \"repository\": \"" + m__strRepository + '"'
+            + Literals.PACKAGE_NAME + m__strPackageName + '"'
+            + Literals.OUTPUT_DIR + m__OutputDir + '"'
+            + ", \"jndiDataSource\": \"" + m__strJndiDataSource + '"'
+            + ", \"sqlXmlFile\": \"" + m__SqlXmlFile + '"'
+            + ", \"headerFile\": \"" + m__HeaderFile + '"'
+            + ", \"grammarFolder\": \"" + m__GrammarFolder + '"'
+            + ", \"grammarName\": \"" + m__strGrammarName + '"'
+            + ", \"grammarSuffix\": \"" + m__strGrammarSuffix + '"'
+            + ", \"tables\": " + Arrays.toString(m__aTables) + '"'
+            + ", \"encoding\": \"" + m__strEncoding + '"'
+            + ", \"disableGenerationTimestamps\": \"" + m__bDisableGenerationTimestamps + '"'
+            + ", \"disableNotNullAnnotations\": \"" + m__bDisableNotNullAnnotations + '"'
+            + ", \"disableCheckthreadAnnotations\": \"" + m__bDisableCheckthreadAnnotations + '"'
+            + ", \"class\": \"QueryJMojo\""
+            + ", \"session\": \"" + session + "\" }";
     }
 }
