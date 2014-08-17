@@ -51,6 +51,7 @@ public interface Literals
 {
     String DRIVER = "driver";
     String URL = "url";
+    String URL = "url";
     String USERNAME = "username";
     String PASSWORD = "password";
     String OUTPUTDIR = "outputdir";
