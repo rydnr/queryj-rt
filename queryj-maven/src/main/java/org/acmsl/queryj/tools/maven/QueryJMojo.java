@@ -142,7 +142,7 @@ public class QueryJMojo
     /**
      * The user name.
      */
-    @Parameter (property = PREFIX + "username", required = true)
+    @Parameter (property = JDBC_USERNAME, required = true)
     private String m__strUsername;
 
     /**
