@@ -190,7 +190,7 @@ public interface QueryJSettings
     /**
      * Whether to enable caching.
      */
-    public static final String CACHING = "caching";
+    public static final String CACHING = PREFIX + Literals.CACHING;
 
     /**
      * The version.
