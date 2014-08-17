@@ -121,7 +121,7 @@ public abstract class AbstractQueryJCommandHandler
     @NotNull
     protected String retrieveProjectPackage(@NotNull final QueryJCommand parameters)
     {
-        @Nullable final String result = parameters.getSetting(ParameterValidationHandler.PACKAGE);
+        @Nullable final String result = parameters.getSetting(ParameterValidationHandler.PACKAGE_NAME);
 
         if (result == null)
         {
