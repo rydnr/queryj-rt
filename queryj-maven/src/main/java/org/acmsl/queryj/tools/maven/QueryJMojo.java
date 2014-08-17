@@ -128,7 +128,7 @@ public class QueryJMojo
     /**
      * The driver.
      */
-    @Parameter (property = "driver", required = true)
+    @Parameter (name = "driver", property = "driver", required = true)
     private String m__strDriver;
 
     /**
