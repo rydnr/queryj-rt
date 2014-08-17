@@ -54,7 +54,7 @@ public interface Literals
     String URL = "url";
     String USERNAME = "username";
     String PASSWORD = "password";
-    String OUTPUTDIR = "outputdir";
+    String OUTPUT_DIR = "outputdir";
     String JNDI_DATASOURCE = "jndiDataSource";
     String GENERATE_MOCK_IMPLEMENTATION = "generateMockImplementation";
     String GENERATE_XML_IMPLEMENTATION = "generateXmlImplementation";
