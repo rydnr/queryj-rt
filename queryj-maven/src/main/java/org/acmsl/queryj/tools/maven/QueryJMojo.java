@@ -1648,6 +1648,6 @@ public class QueryJMojo
             + ", \"disableCheckthreadAnnotations\": \"" + m__bDisableCheckthreadAnnotations + '"'
             + ", \"session\": \"" + session.hashCode() + '"'
             + ", \"class\": \"QueryJMojo\""
-        + ", \"package\": \"org.acmsl.queryj"
+            + ", \"package\": \"org.acmsl.queryj.tools.maven\" }";
     }
 }
