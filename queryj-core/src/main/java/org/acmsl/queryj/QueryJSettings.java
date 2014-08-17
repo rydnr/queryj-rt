@@ -185,7 +185,7 @@ public interface QueryJSettings
     /**
      * Whether to generate JMX support or not.
      */
-    public static final String JMX = "jmx";
+    public static final String JMX = PREFIX + Literals.JMX;
 
     /**
      * Whether to enable caching.
