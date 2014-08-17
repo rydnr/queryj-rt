@@ -160,7 +160,7 @@ public interface QueryJSettings
      * Whether to use template caching.
      */
     @SuppressWarnings("unused")
-    public static final String DISABLE_CACHING = PREFIX + "disableCaching";
+    public static final String DISABLE_CACHING = PREFIX + Literals.DISABLE_CACHING;
 
     /**
      * The thread count.
