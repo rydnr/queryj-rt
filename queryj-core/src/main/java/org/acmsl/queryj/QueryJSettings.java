@@ -124,8 +124,7 @@ public interface QueryJSettings
     /**
      * Whether to implement ACM-SL Commons marker interfaces.
      */
-    public static final String IMPLEMENT_MARKER_INTERFACES =
-        PREFIX + "implementMarkerInterfaces";
+    public static final String IMPLEMENT_MARKER_INTERFACES = PREFIX + Literals.IMPLEMENT_MARKER_INTERFACES;
 
     /**
      * The custom SQL XML file.
