@@ -130,7 +130,7 @@ public class QueryJMojo
     /**
      * The driver.
      */
-    @Parameter (name = Literals.DRIVER, property = QueryJSettings.JDBC_DRIVER, required = true)
+    @Parameter (name = Literals.DRIVER, property = JDBC_DRIVER, required = true)
     private String m__strDriver;
 
     /**
