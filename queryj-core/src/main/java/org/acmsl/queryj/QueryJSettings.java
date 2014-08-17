@@ -79,7 +79,7 @@ public interface QueryJSettings
     /**
      * The output package of the generated classes.
      */
-    public static final String PACKAGE = PREFIX + Literals.PACKAGE;
+    public static final String PACKAGE_NAME = PREFIX + Literals.PACKAGE;
 
     /**
      * The output folder.
