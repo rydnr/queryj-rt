@@ -134,7 +134,7 @@ public interface QueryJSettings
     /**
      * The grammar folder.
      */
-    public static final String GRAMMAR_FOLDER = PREFIX + "grammarFolder";
+    public static final String GRAMMAR_FOLDER = PREFIX + Literals.GRAMMAR_FOLDER;
 
     /**
      * The grammar name.
