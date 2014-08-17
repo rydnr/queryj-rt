@@ -103,7 +103,7 @@ public abstract class AbstractQueryJCommandHandler
     @NotNull
     protected File retrieveProjectOutputDir(@NotNull final QueryJCommand parameters)
     {
-        @Nullable final File result = parameters.getFileSetting(ParameterValidationHandler.OUTPUT_FOLDER);
+        @Nullable final File result = parameters.getFileSetting(ParameterValidationHandler.OUTPUT_DIR);
 
         if (result == null)
         {
