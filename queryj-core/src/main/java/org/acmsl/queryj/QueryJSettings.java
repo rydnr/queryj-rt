@@ -180,7 +180,7 @@ public interface QueryJSettings
     /**
      * Whether to use checkthread.org annotations.
      */
-    public static final String DISABLE_CHECKTHREAD_ANNOTATIONS = PREFIX + Literals.disableCheckthreadAnnotations";
+    public static final String DISABLE_CHECKTHREAD_ANNOTATIONS = PREFIX + Literals.DISABLE_CHECKTHREAD_ANNOTATIONS;
 
     /**
      * Whether to generate JMX support or not.
