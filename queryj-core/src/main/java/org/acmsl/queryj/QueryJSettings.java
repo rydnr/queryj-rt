@@ -170,7 +170,7 @@ public interface QueryJSettings
     /**
      * Whether to use timestamps to indicate when the file was generated.
      */
-    public static final String DISABLE_TIMESTAMPS = PREFIX + Literals.TIMESTAMPS;
+    public static final String DISABLE_TIMESTAMPS = PREFIX + Literals.DISABLE_TIMESTAMPS;
 
     /**
      * Whether to use notnull annotations.
