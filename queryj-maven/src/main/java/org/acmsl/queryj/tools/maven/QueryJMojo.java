@@ -470,7 +470,7 @@ public class QueryJMojo
     @Nullable
     protected String getCatalog()
     {
-        String result = System.getProperty("queryj.catalog");
+        String result = System.getProperty(JDBC_CATALOG);
 
         if (result == null)
         {
