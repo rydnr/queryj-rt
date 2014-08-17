@@ -1633,7 +1633,7 @@ public class QueryJMojo
             + ", \"password\": \"" + m__strPassword + '"'
             + ", \"schema\": \"" + schema + '"'
             + ", \"repository\": \"" + m__strRepository + '"'
-            + ", \""Literals.PACKAGE_NAME + m__strPackageName + '"'
+            + ", \"packageName\": \"" + m__strPackageName + '"'
             + Literals.OUTPUT_DIR + m__OutputDir + '"'
             + ", \"jndiDataSource\": \"" + m__strJndiDataSource + '"'
             + ", \"sqlXmlFile\": \"" + m__SqlXmlFile + '"'
