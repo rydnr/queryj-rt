@@ -758,7 +758,7 @@ public class QueryJMojo
     {
         final File result;
 
-        @Nullable final String aux = System.getProperty("queryj.sqlXmlFile");
+        @Nullable final String aux = System.getProperty(SQL_XML_FILE);
 
         if (aux == null)
         {
