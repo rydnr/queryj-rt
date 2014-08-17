@@ -1626,7 +1626,7 @@ public class QueryJMojo
     public String toString()
     {
         return
-            "{ \"catalog\": \"" + catalog + '"'
+              "{ \"catalog\": \"" + catalog + '"'
             + ", \"driver\": \"" + m__strDriver + '"'
             + ", \"url\": \"" + m__strUrl + '"'
             + ", \"username\": \"" + m__strUsername + '"'
