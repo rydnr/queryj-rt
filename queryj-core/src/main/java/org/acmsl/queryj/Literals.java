@@ -72,6 +72,7 @@ public interface Literals
     String DISABLE_NOTNULL_ANNOTATIONS = "disableNotNullAnnotations";
     String DISABLE_CHECKTHREAD_ANNOTATIONS = "disableCheckthreadAnnotations";
     String JMX = "jmx";
+    String CACHING = "caching";
     String JSON_PARENT_ATTR = " 'parent': ";
     String TEMPLATE = "Template";
     String GENERATING = "Generating ";
