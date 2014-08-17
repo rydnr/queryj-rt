@@ -145,7 +145,7 @@ public class QueryJMojo
     /**
      * The user name.
      */
-    @Parameter (property = "username", required = true)
+    @Parameter (property = ENV_PREFIX + "username", required = true)
     private String m__strUsername;
 
     /**
