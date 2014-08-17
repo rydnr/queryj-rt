@@ -239,7 +239,7 @@ public class QueryJMojo
     /**
      * Whether to disable NotNull annotations.
      */
-    @Parameter (name = Literals.DISABLE_NOTNULL_ANNOTATIONS, property = DISABLE_NOTNULL_ANNOTATIONS, required = false, defaultValue = Literals.FALSE_L)
+    @Parameter (name = Literals.DISABLE_NOTNULL_ANNOTATIONS, property = DISABLE_NOTNULL_ANNOTATIONS, required = false, defaultValue = "false")
     private Boolean m__bDisableNotNullAnnotations = false;
 
     /**
