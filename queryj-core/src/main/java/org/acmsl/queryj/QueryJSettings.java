@@ -59,7 +59,7 @@ public interface QueryJSettings
     /**
      * The JDBC username.
      */
-    public static final String JDBC_USERNAME = PREFIX + "username";
+    public static final String _USERNAME = "username";
 
     /**
      * The JDBC username.
