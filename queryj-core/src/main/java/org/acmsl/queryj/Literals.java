@@ -49,6 +49,8 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 public interface Literals
 {
+    String DRIVER = "driver";
+
     String JSON_PARENT_ATTR = " 'parent': ";
     String TEMPLATE = "Template";
     String GENERATING = "Generating ";
