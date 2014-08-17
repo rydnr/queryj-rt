@@ -172,7 +172,7 @@ public class QueryJMojo
     /**
      * The package name.
      */
-    @Parameter (nproperty = PACKAGE, required = true)
+    @Parameter (name = Literals.PACKAGE, property = PACKAGE, required = true)
     private String m__strPackageName;
 
     /**
