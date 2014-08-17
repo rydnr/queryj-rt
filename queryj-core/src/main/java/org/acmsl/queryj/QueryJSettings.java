@@ -165,7 +165,7 @@ public interface QueryJSettings
     /**
      * The thread count.
      */
-    public static final String THREAD_COUNT = PREFIX + "threadCount";
+    public static final String THREAD_COUNT = PREFIX + Literals.THREAD_COUNT;
 
     /**
      * Whether to use timestamps to indicate when the file was generated.
