@@ -175,7 +175,7 @@ public interface QueryJSettings
     /**
      * Whether to use notnull annotations.
      */
-    public static final String DISABLE_NOTNULL_ANNOTATIONS = PREFIX + "disableNotNullAnnotations";
+    public static final String DISABLE_NOTNULL_ANNOTATIONS = PREFIX + Literals.DISABLE_NOTNULL_ANNOTATIONS;
 
     /**
      * Whether to use checkthread.org annotations.
