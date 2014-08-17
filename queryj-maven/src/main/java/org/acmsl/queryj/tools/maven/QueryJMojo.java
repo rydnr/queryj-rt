@@ -861,7 +861,7 @@ public class QueryJMojo
     {
         final File result;
 
-        @Nullable final String aux = System.getProperty("queryj.grammarFolder");
+        @Nullable final String aux = System.getProperty(GRAMMAR_FOLDER);
 
         if (aux == null)
         {
