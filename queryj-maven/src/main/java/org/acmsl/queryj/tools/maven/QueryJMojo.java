@@ -1054,7 +1054,7 @@ public class QueryJMojo
      * Specifies whether to use generation timestamps.
      * @param flag the choice.
      */
-    protected final void immutableSetDisableGenerationTimestamps(@NotNull final Boolean flag)
+    protected final void immutableSetDisableTimestamps(@NotNull final Boolean flag)
     {
         m__bDisableGenerationTimestamps = flag;
     }
