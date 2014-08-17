@@ -67,6 +67,7 @@ public interface Literals
     String DISABLE_CUSTOM_SQL_VALIDATION = "disableCustomSqlValidation";
     String ENCODING = "encoding";
     String DISABLE_CACHING = "disableCaching";
+    String THREAD_COUNT = PREFIX + "threadCount";
     String JSON_PARENT_ATTR = " 'parent': ";
     String TEMPLATE = "Template";
     String GENERATING = "Generating ";
