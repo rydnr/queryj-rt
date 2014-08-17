@@ -565,7 +565,7 @@ public class QueryJMojo
     @NotNull
     protected String getRepository()
     {
-        String result = System.getProperty("queryj.repository");
+        String result = System.getProperty(REPOSITORY);
 
         if (result == null)
         {
