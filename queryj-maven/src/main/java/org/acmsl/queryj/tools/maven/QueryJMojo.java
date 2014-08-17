@@ -233,7 +233,7 @@ public class QueryJMojo
     /**
      * Whether to generate file timestamps.
      */
-    @Parameter (property = PREFIX + "disableGenerationTimestamps", required = false)
+    @Parameter (property = DISABLE_TIMESTAMPS, required = false)
     private Boolean m__bDisableGenerationTimestamps;
 
     /**
