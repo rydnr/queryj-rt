@@ -544,7 +544,7 @@ public abstract class AbstractTemplateContext
     @NotNull
     protected String buildOutputDirKey()
     {
-        return buildKey("outputDir");
+        return buildKey(Literals.OUTPUT_DIR);
     }
 
     /**
