@@ -1191,7 +1191,7 @@ public class QueryJMojo
     {
         Boolean result = null;
 
-        @Nullable final String aux = System.getProperty("queryj.disableCheckthreadAnnotations");
+        @Nullable final String aux = System.getProperty(DISABLE_CHECKTHREAD_ANNOTATIONS);
 
         if (aux == null)
         {
