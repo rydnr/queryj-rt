@@ -481,7 +481,7 @@ public class QueryJTask
     {
         if (packageName != null)
         {
-            delegee.setSetting(PACKAGE, packageName);
+            delegee.setSetting(PACKAGE_NAME, packageName);
         }
     }
 
