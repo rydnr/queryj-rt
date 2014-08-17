@@ -160,7 +160,7 @@ public class QueryJMojo
     /**
      * The schema.
      */
-    @Parameter (name = property = JDBC_SCHEMA, required = true)
+    @Parameter (name = Literals.SCHEMA, property = JDBC_SCHEMA, required = true)
     private String schema;
 
     /**
