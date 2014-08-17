@@ -526,7 +526,7 @@ public class QueryJTask
     {
         if (outputdir != null)
         {
-            new QueryJCommandWrapper<File>(delegee).setSetting(OUTPUT_FOLDER, outputdir);
+            new QueryJCommandWrapper<File>(delegee).setSetting(OUTPUT_DIR, outputdir);
         }
     }
 
