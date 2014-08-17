@@ -115,7 +115,7 @@ public interface QueryJSettings
      */
     @SuppressWarnings("unused")
     public static final String GENERATE_TESTS =
-        PREFIX + "generateTests";
+        PREFIX + Literals.GENERATE_TESTS;
 
     /**
      * Whether to allow empty repository DAO or not.
