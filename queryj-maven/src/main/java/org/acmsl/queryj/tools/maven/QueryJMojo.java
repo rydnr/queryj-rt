@@ -184,7 +184,7 @@ public class QueryJMojo
     /**
      * The data source.
      */
-    @Parameter (name = Literals.JNDI_DATASOURCE, property = JNDI_DATASOURCE, required = false, defaultValue = "")
+    @Parameter (name = Literals.JNDI_DATASOURCE, property = JNDI_DATASOURCE, required = false, defaultValue = "java:comp/env/")
     private String m__strJndiDataSource;
 
     /**
