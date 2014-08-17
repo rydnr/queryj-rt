@@ -1139,7 +1139,7 @@ public class QueryJMojo
     {
         Boolean result = null;
 
-        @Nullable final String aux = System.getProperty("queryj.disableNotNullAnnotations");
+        @Nullable final String aux = System.getProperty(DISABLE_NOTNULL_ANNOTATIONS);
 
         if (aux == null)
         {
