@@ -196,7 +196,7 @@ public class QueryJMojo
     /**
      * The header file.
      */
-    @Parameter (name = Literals.HEADER_FILE, property = HEADER_FILE, required = false, defaultValue = "")
+    @Parameter (name = Literals.HEADER_FILE, property = HEADER_FILE, required = false, defaultValue = "header.txt")
     private File m__HeaderFile;
 
     /**
