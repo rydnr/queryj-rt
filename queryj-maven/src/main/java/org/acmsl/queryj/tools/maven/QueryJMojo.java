@@ -199,13 +199,13 @@ public class QueryJMojo
     /**
      * The header file.
      */
-    @Parameter (property = "headerFile", required = false)
+    @Parameter (property = ENV_PREFIX + "headerFile", required = false)
     private File m__HeaderFile;
 
     /**
      * The grammar folder.
      */
-    @Parameter (property = "grammarFolder", required = false)
+    @Parameter (property = ENV_PREFIX + "grammarFolder", required = false)
     private File m__GrammarFolder;
 
     /**
