@@ -71,6 +71,7 @@ public interface Literals
     String DISABLE_TIMESTAMPS = "disableTimestamps";
     String DISABLE_NOTNULL_ANNOTATIONS = "disableNotNullAnnotations";
     String DISABLE_CHECKTHREAD_ANNOTATIONS = "disableCheckthreadAnnotations";
+    String JMX = "jmx";
     String JSON_PARENT_ATTR = " 'parent': ";
     String TEMPLATE = "Template";
     String GENERATING = "Generating ";
