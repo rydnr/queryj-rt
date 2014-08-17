@@ -1087,7 +1087,7 @@ public class QueryJMojo
     {
         Boolean result = null;
 
-        @Nullable final String aux = System.getProperty("queryj.disableTimestamps");
+        @Nullable final String aux = System.getProperty(DISABLE_TIMESTAMPS);
 
         if (aux == null)
         {
