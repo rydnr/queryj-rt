@@ -197,7 +197,7 @@ public class ParameterValidationHandler
             command.getStringSetting(JDBC_SCHEMA),
             command.getStringSetting(REPOSITORY),
             command.getStringSetting(PACKAGE),
-            command.getFileSetting(OUTPUT_FOLDER),
+            command.getFileSetting(OUTPUT_DIR),
             command.getFileSetting(HEADER_FILE),
             command.getStringSetting(JNDI_DATASOURCE),
             command.getFileSetting(SQL_XML_FILE),
