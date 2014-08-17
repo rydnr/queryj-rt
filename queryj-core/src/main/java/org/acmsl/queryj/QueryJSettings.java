@@ -144,7 +144,7 @@ public interface QueryJSettings
     /**
      * The grammar suffix.
      */
-    public static final String GRAMMAR_SUFFIX = PREFIX + "grammarSuffix";
+    public static final String GRAMMAR_SUFFIX = PREFIX + Literals.GRAMMAR_SUFFIX;
 
     /**
      * Whether to disable custom sql validation completely.
