@@ -504,7 +504,7 @@ public class QueryJTask
     @Nullable
     protected String getPackage(@NotNull final QueryJCommand delegee)
     {
-        return delegee.getSetting(PACKAGE);
+        return delegee.getSetting(PACKAGE_NAME);
     }
 
     /**
