@@ -1625,8 +1625,8 @@ public class QueryJMojo
     @Override
     public String toString()
     {
-        return "{
-               ", \"catalog\": \"" + catalog + '"' +
+        return
+               "{ \"catalog\": \"" + catalog + '"' +
                ", \"driver\": \"" + m__strDriver + '"' +
                ", \"url\": \"" + m__strUrl + '"' +
                ", \"username\": \"" + m__strUsername + '"' +
