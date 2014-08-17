@@ -72,6 +72,11 @@ public interface QueryJSettings
     public static final String JDBC_PASSWORD = PREFIX + "password";
 
     /**
+     * The JDBC password.
+     */
+    public static final String JDBC_PASSWORD = PREFIX + "password";
+
+    /**
      * The JDBC catalog.
      */
     public static final String JDBC_CATALOG = PREFIX + Literals.CATALOG;
