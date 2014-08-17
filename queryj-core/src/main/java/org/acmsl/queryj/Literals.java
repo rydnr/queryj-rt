@@ -54,7 +54,7 @@ public interface Literals
     String USERNAME = "username";
     String PASSWORD = "password";
     String OUTPUTDIR = "outputdir";
-    String
+    String JNDI_DATASOURCE = "jndiDataSource";
     String JSON_PARENT_ATTR = " 'parent': ";
     String TEMPLATE = "Template";
     String GENERATING = "Generating ";
