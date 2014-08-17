@@ -50,7 +50,9 @@ import org.checkthread.annotations.ThreadSafe;
 public interface Literals
 {
     String DRIVER = "driver";
-
+    String URL = "url";
+    String USERNAME = "username";
+    String PASSWORD = "password";
     String JSON_PARENT_ATTR = " 'parent': ";
     String TEMPLATE = "Template";
     String GENERATING = "Generating ";
