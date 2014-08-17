@@ -108,11 +108,6 @@ public class QueryJMojo
         "META-INF/maven/org.acmsl.queryj/queryj-maven/pom.properties";
 
     /**
-     * The key for the QueryJ package.
-     */
-    protected static final String QUERYJ_PACKAGE = "queryj.package";
-
-    /**
      * String literal: "(unknown)"
      */
     public static final String UNKNOWN_LITERAL = Literals.UNKNOWN_REMARK;
