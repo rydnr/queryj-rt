@@ -911,7 +911,7 @@ public class QueryJMojo
     @Nullable
     protected String getGrammarName()
     {
-        String result = System.getProperty("queryj.grammarName");
+        String result = System.getProperty(GRAMMAR_NAME);
 
         if (result == null)
         {
