@@ -248,7 +248,7 @@ public class QueryJMojo
     /**
      * Whether to disable checkthread.org annotations.
      */
-    @Parameter (property = ENV_PREFIX + "disableCheckthreadAnnotations", required = false)
+    @Parameter (property = ENV_PREFIX + QueryJSettings.DISABLE_CHECKTHREAD_ANNOTATIONS, required = false)
     private Boolean m__bDisableCheckthreadAnnotations = false;
 
     /**
