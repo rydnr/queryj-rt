@@ -114,8 +114,7 @@ public interface QueryJSettings
      * Whether to generate test cases.
      */
     @SuppressWarnings("unused")
-    public static final String GENERATE_TESTS =
-        PREFIX + Literals.GENERATE_TESTS;
+    public static final String GENERATE_TESTS = PREFIX + Literals.GENERATE_TESTS;
 
     /**
      * Whether to allow empty repository DAO or not.
