@@ -195,7 +195,7 @@ public interface QueryJSettings
     /**
      * The version.
      */
-    public static final String VERSION = "version";
+    public static final String VERSION = PREFIX + Literals.VERSION;
 
     /**
      * The default locale.
