@@ -335,7 +335,7 @@ public class QueryJMojo
     @Nullable
     protected String getUrl()
     {
-        String result = System.getProperty("queryj.url");
+        String result = System.getProperty(JDBC_URL);
 
         if (result == null)
         {
