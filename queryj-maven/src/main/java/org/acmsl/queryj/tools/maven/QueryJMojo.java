@@ -380,7 +380,7 @@ public class QueryJMojo
     @Nullable
     protected String getUsername()
     {
-        String result = System.getProperty("queryj.username");
+        String result = System.getProperty(JDBC_USERNAME);
 
         if (result == null)
         {
