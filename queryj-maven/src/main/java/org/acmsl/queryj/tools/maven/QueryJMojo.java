@@ -163,13 +163,13 @@ public class QueryJMojo
     /**
      * The schema.
      */
-    @Parameter (property = "schema", required = true)
+    @Parameter (property = ENV_PREFIX + "schema", required = true)
     private String schema;
 
     /**
      * The repository.
      */
-    @Parameter (property = "repository", required = true)
+    @Parameter (property = ENV_PREFIX + "repository", required = true)
     private String m__strRepository;
 
     /**
