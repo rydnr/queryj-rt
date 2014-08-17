@@ -65,6 +65,7 @@ public interface Literals
     String GRAMMAR_NAME = "grammarName";
     String GRAMMAR_SUFFIX = "grammarSuffix";
     String DISABLE_CUSTOM_SQL_VALIDATION = "disableCustomSqlValidation";
+    String ENCODING = "encoding";
     String JSON_PARENT_ATTR = " 'parent': ";
     String TEMPLATE = "Template";
     String GENERATING = "Generating ";
