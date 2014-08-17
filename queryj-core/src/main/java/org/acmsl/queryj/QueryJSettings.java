@@ -129,7 +129,7 @@ public interface QueryJSettings
     /**
      * The custom SQL XML file.
      */
-    public static final String SQL_XML_FILE = PREFIX + "sqlXml";
+    public static final String SQL_XML_FILE = PREFIX + Literals.SQL_XML_FILE;
 
     /**
      * The grammar folder.
