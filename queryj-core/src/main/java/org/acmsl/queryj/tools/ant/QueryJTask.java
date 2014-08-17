@@ -1304,6 +1304,7 @@ public class QueryJTask
 
                 result = t_ateResult;
                 break;
+
             case EXTERNALLY_MANAGED_FIELDS:
                 @NotNull final AntExternallyManagedFieldsElement t_aemfeResult =
                     new AntExternallyManagedFieldsElement();
