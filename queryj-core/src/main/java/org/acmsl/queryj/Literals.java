@@ -63,6 +63,7 @@ public interface Literals
     String SQL_XML_FILE = "sqlXml";
     String GRAMMAR_FOLDER = "grammarFolder";
     String GRAMMAR_NAME = "grammarName";
+    String GRAMMAR_SUFFIX = PREFIX + "grammarSuffix"
     String JSON_PARENT_ATTR = " 'parent': ";
     String TEMPLATE = "Template";
     String GENERATING = "Generating ";
