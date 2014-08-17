@@ -166,7 +166,7 @@ public class QueryJMojo
     /**
      * The repository.
      */
-    @Parameter (property = REPOSITORY, required = true)
+    @Parameter (name = Literals.REPOSITORY, property = REPOSITORY, required = true)
     private String m__strRepository;
 
     /**
