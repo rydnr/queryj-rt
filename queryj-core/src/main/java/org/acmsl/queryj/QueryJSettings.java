@@ -94,7 +94,7 @@ public interface QueryJSettings
     /**
      * The JNDI location of the DataSource.
      */
-    public static final String JNDI_DATASOURCE = PREFIX + "jndiDataSource";
+    public static final String JNDI_DATASOURCE = PREFIX + Literals.JNDI_DATASOURCE;
 
     /**
      * Whether to generate Mock DAO implementations.
