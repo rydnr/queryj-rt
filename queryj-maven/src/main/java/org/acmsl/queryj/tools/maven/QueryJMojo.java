@@ -129,96 +129,96 @@ public class QueryJMojo
     /**
      * The prefix for environment variables.
      */
-    public static final String ENV_PREFIX = "queryj.";
+    public static final String PREFIX = "queryj.";
 
     /**
      * The driver.
      */
-    @Parameter (name = "driver", property = ENV_PREFIX + "driver", required = true)
+    @Parameter (name = "driver", property = PREFIX + "driver", required = true)
     private String m__strDriver;
 
     /**
      * The url.
      */
-    @Parameter (name = "driver", property = ENV_PREFIX + "url", required = true)
+    @Parameter (name = "driver", property = PREFIX + "url", required = true)
     private String m__strUrl;
 
     /**
      * The user name.
      */
-    @Parameter (property = ENV_PREFIX + "username", required = true)
+    @Parameter (property = PREFIX + "username", required = true)
     private String m__strUsername;
 
     /**
      * The password.
      */
-    @Parameter (property = ENV_PREFIX + "password", required = true)
+    @Parameter (property = PREFIX + "password", required = true)
     private String m__strPassword;
 
     /**
      * The catalog.
      */
-    @Parameter (property = ENV_PREFIX + "catalog", required = false)
+    @Parameter (property = PREFIX + "catalog", required = false)
     private String catalog;
 
     /**
      * The schema.
      */
-    @Parameter (property = ENV_PREFIX + "schema", required = true)
+    @Parameter (property = PREFIX + "schema", required = true)
     private String schema;
 
     /**
      * The repository.
      */
-    @Parameter (property = ENV_PREFIX + "repository", required = true)
+    @Parameter (property = PREFIX + "repository", required = true)
     private String m__strRepository;
 
     /**
      * The package name.
      */
-    @Parameter (property = ENV_PREFIX + "packageName", required = true)
+    @Parameter (property = PREFIX + "packageName", required = true)
     private String m__strPackageName;
 
     /**
      * The output directory.
      */
-    @Parameter (property = ENV_PREFIX + "outputDir", required = false)
+    @Parameter (property = PREFIX + "outputDir", required = false)
     private File m__OutputDir;
 
     /**
      * The data source.
      */
-    @Parameter (property = ENV_PREFIX + "jndiDataSource", required = false)
+    @Parameter (property = PREFIX + "jndiDataSource", required = false)
     private String m__strJndiDataSource;
 
     /**
      * The sql xml file.
      */
-    @Parameter (property = ENV_PREFIX + "sqlXmlFile", required = false)
+    @Parameter (property = PREFIX + "sqlXmlFile", required = false)
     private File m__SqlXmlFile;
 
     /**
      * The header file.
      */
-    @Parameter (property = ENV_PREFIX + "headerFile", required = false)
+    @Parameter (property = PREFIX + "headerFile", required = false)
     private File m__HeaderFile;
 
     /**
      * The grammar folder.
      */
-    @Parameter (property = ENV_PREFIX + "grammarFolder", required = false)
+    @Parameter (property = PREFIX + "grammarFolder", required = false)
     private File m__GrammarFolder;
 
     /**
      * The grammar bundle.
      */
-    @Parameter (property = ENV_PREFIX + "grammarName", required = false)
+    @Parameter (property = PREFIX + "grammarName", required = false)
     private String m__strGrammarName;
 
     /**
      * The grammar suffix.
      */
-    @Parameter (property = ENV_PREFIX + "grammarSuffix", required = false)
+    @Parameter (property = PREFIX + "grammarSuffix", required = false)
     private String m__strGrammarSuffix;
 
     /**
@@ -231,25 +231,25 @@ public class QueryJMojo
     /**
      * The file encoding.
      */
-    @Parameter (property = ENV_PREFIX + "encoding", required = false, defaultValue = "${project.build.sourceEncoding}")
+    @Parameter (property = PREFIX + "encoding", required = false, defaultValue = "${project.build.sourceEncoding}")
     private String m__strEncoding;
 
     /**
      * Whether to generate file timestamps.
      */
-    @Parameter (property = ENV_PREFIX + "disableGenerationTimestamps", required = false)
+    @Parameter (property = PREFIX + "disableGenerationTimestamps", required = false)
     private Boolean m__bDisableGenerationTimestamps;
 
     /**
      * Whether to disable NotNull annotations.
      */
-    @Parameter (property = ENV_PREFIX + "disableNotNullAnnotations", required = false)
+    @Parameter (property = PREFIX + "disableNotNullAnnotations", required = false)
     private Boolean m__bDisableNotNullAnnotations = false;
 
     /**
      * Whether to disable checkthread.org annotations.
      */
-    @Parameter (property = ENV_PREFIX + QueryJSettings.DISABLE_CHECKTHREAD_ANNOTATIONS, required = false)
+    @Parameter (property = PREFIX + QueryJSettings.DISABLE_CHECKTHREAD_ANNOTATIONS, required = false)
     private Boolean m__bDisableCheckthreadAnnotations = false;
 
     /**
