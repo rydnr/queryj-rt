@@ -101,7 +101,7 @@ public interface QueryJSettings
      */
     @SuppressWarnings("unused")
     public static final String GENERATE_MOCK_DAO_IMPLEMENTATION =
-        PREFIX + "generateMockImplementation";
+        PREFIX + Literals.GENERATE_MOCK_IMPLEMENTATION;
 
     /**
      * Whether to generate Xml DAO implementations.
