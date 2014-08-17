@@ -515,7 +515,7 @@ public class QueryJMojo
     @NotNull
     protected String getSchema()
     {
-        String result = System.getProperty("queryj.schema");
+        String result = System.getProperty(JDBC_SCHEMA);
 
         if (result == null)
         {
