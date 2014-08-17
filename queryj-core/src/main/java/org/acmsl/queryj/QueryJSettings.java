@@ -119,8 +119,7 @@ public interface QueryJSettings
     /**
      * Whether to allow empty repository DAO or not.
      */
-    public static final String ALLOW_EMPTY_REPOSITORY_DAO =
-        PREFIX + "allowEmptyRepositoryDAO";
+    public static final String ALLOW_EMPTY_REPOSITORY_DAO = PREFIX + Literals.ALLOW_EMPTY_REPOSITORY_DAO;
 
     /**
      * Whether to implement ACM-SL Commons marker interfaces.
