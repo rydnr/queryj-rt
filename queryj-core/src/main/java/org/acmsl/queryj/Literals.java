@@ -64,6 +64,7 @@ public interface Literals
     String GRAMMAR_FOLDER = "grammarFolder";
     String GRAMMAR_NAME = "grammarName";
     String GRAMMAR_SUFFIX = "grammarSuffix";
+    String SQL_XML_FILE = "sqlXml";
     String DISABLE_CUSTOM_SQL_VALIDATION = "disableCustomSqlValidation";
     String ENCODING = "encoding";
     String DISABLE_CACHING = "disableCaching";
