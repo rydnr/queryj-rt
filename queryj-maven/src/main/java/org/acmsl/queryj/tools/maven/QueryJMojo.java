@@ -115,7 +115,7 @@ public class QueryJMojo
     /**
      * String literal: "(unknown)"
      */
-    public static final String UNKNOWN_LITERAL = Literals.UNKNOWN;
+    public static final String UNKNOWN_LITERAL = Literals.UNKNOWN_REMARK;
 
     /**
      * String literal: "version"
