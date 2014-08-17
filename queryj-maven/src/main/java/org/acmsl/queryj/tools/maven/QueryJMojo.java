@@ -1073,7 +1073,7 @@ public class QueryJMojo
      * @return such setting.
      */
     @Nullable
-    protected final Boolean immutableGetDisableGenerationTimestamps()
+    protected final Boolean immutableGetDisableTimestamps()
     {
         return m__bDisableGenerationTimestamps;
     }
