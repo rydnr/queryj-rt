@@ -154,7 +154,7 @@ public class QueryJMojo
     /**
      * The catalog.
      */
-    @Parameter (property = PREFIX + "catalog", required = false)
+    @Parameter (property = JDBC_CATALOG, required = false)
     private String catalog;
 
     /**
