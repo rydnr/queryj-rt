@@ -84,7 +84,7 @@ public interface QueryJSettings
     /**
      * The output folder.
      */
-    public static final String OUTPUT_FOLDER = PREFIX + Literals.OUTPUTDIR;
+    public static final String OUTPUT_DIR = PREFIX + Literals.OUTPUTDIR;
 
     /**
      * The header file.
