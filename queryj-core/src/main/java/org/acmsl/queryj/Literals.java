@@ -153,5 +153,5 @@ public interface Literals
     String RESULT = "result";
     String FOREIGN_KEY = "foreignKey";
     String NOTHING = "nothing";
-    String UNKNOWN = "(unknown)";
+    String UNKNOWN_REMARK = "(unknown)";
 }
