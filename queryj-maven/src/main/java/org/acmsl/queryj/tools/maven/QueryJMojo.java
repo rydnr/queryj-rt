@@ -148,7 +148,7 @@ public class QueryJMojo
     /**
      * The password.
      */
-    @Parameter (nproperty = JDBC_PASSWORD, required = true)
+    @Parameter (name = Literals.PASSWORD, property = JDBC_PASSWORD, required = true)
     private String m__strPassword;
 
     /**
