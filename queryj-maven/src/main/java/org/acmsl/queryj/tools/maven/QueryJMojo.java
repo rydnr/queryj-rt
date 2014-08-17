@@ -290,7 +290,7 @@ public class QueryJMojo
     @Nullable
     protected String getDriver()
     {
-        String result = System.getProperty("queryj.driver");
+        String result = System.getProperty(JDBC_DRIVER);
 
         if (result == null)
         {
