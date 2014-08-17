@@ -657,7 +657,7 @@ public class QueryJMojo
     {
         final File result;
 
-        final String aux = System.getProperty(QUERYJ_PACKAGE);
+        final String aux = System.getProperty(PACKAGE);
 
         if (aux == null)
         {
