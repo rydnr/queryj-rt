@@ -425,7 +425,7 @@ public class QueryJMojo
     @Nullable
     protected String getPassword()
     {
-        String result = System.getProperty("queryj.password");
+        String result = System.getProperty(JDBC_PASSWORD);
 
         if (result == null)
         {
