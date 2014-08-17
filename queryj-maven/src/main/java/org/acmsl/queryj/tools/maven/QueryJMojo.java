@@ -151,7 +151,7 @@ public class QueryJMojo
     /**
      * The password.
      */
-    @Parameter (property = "password", required = true)
+    @Parameter (property = ENV_PREFIX + "password", required = true)
     private String m__strPassword;
 
     /**
