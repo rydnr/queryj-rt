@@ -957,7 +957,7 @@ public class QueryJMojo
     @Nullable
     protected String getGrammarSuffix()
     {
-        String result = System.getProperty("queryj.grammarSuffix");
+        String result = System.getProperty(GRAMMAR_SUFFIX);
 
         if (result == null)
         {
