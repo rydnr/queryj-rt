@@ -809,7 +809,7 @@ public class QueryJMojo
     {
         final File result;
 
-        final String aux = System.getProperty("queryj.headerFile");
+        final String aux = System.getProperty(HEADER_FILE);
 
         if (aux == null)
         {
