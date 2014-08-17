@@ -1646,7 +1646,7 @@ public class QueryJMojo
             + ", \"disableGenerationTimestamps\": \"" + m__bDisableGenerationTimestamps + '"'
             + ", \"disableNotNullAnnotations\": \"" + m__bDisableNotNullAnnotations + '"'
             + ", \"disableCheckthreadAnnotations\": \"" + m__bDisableCheckthreadAnnotations + '"'
-            + ", \"session\": \"" + session + "\" }";
+            + ", \"session\": \"" + session.hashCode() + "\" }";
             + ", \"class\": \"QueryJMojo\""
     }
 }
