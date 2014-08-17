@@ -1040,7 +1040,7 @@ public class QueryJMojo
     @Nullable
     public String getEncoding()
     {
-        String result = System.getProperty("queryj.enconding");
+        String result = System.getProperty(ENCODING);
 
         if (result == null)
         {
