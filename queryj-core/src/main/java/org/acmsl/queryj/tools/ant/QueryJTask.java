@@ -549,7 +549,7 @@ public class QueryJTask
     @Nullable
     protected File getOutputdir(@NotNull final QueryJCommand delegee)
     {
-        return delegee.getFileSetting(OUTPUT_FOLDER);
+        return delegee.getFileSetting(OUTPUT_DIR);
     }
 
     /**
