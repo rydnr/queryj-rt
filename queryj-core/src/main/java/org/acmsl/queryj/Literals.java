@@ -58,8 +58,7 @@ public interface Literals
     String GENERATE_MOCK_IMPLEMENTATION = "generateMockImplementation";
     String GENERATE_XML_IMPLEMENTATION = "generateXmlImplementation";
     String GENERATE_TESTS = "generateTests";
-    String ALLOW_EMPTY_REPOSITORY_DAO =
-        PREFIX + "allowEmptyRepositoryDAO";
+    String ALLOW_EMPTY_REPOSITORY_DAO = "allowEmptyRepositoryDAO";
     String JSON_PARENT_ATTR = " 'parent': ";
     String TEMPLATE = "Template";
     String GENERATING = "Generating ";
