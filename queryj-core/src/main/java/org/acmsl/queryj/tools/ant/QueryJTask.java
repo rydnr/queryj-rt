@@ -487,7 +487,7 @@ public class QueryJTask
 
     /**
      * Retrieves the package.
-     * @return such information.
+     * @return such information.                                    Q
      */
     @SuppressWarnings("unused")
     @Nullable
