@@ -190,7 +190,7 @@ public class QueryJMojo
     /**
      * The sql xml file.
      */
-    @Parameter (property = PREFIX + "sqlXmlFile", required = false)
+    @Parameter (property = , required = false)
     private File m__SqlXmlFile;
 
     /**
