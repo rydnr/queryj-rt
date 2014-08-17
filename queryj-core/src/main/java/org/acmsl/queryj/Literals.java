@@ -68,7 +68,7 @@ public interface Literals
     String ENCODING = "encoding";
     String DISABLE_CACHING = "disableCaching";
     String THREAD_COUNT = "threadCount";
-    String DISABLE_TIMESTAMPS = "timestamps"
+    String DISABLE_TIMESTAMPS = "timestamps";
     String JSON_PARENT_ATTR = " 'parent': ";
     String TEMPLATE = "Template";
     String GENERATING = "Generating ";
