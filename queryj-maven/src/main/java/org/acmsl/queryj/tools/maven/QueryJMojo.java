@@ -1634,7 +1634,7 @@ public class QueryJMojo
             + ", \"schema\": \"" + schema + '"'
             + ", \"repository\": \"" + m__strRepository + '"'
             + ", \"packageName\": \"" + m__strPackageName + '"'
-            + ", \"outputDir\": \""+ m__OutputDir + '"'
+            + ", \"outputDir\": \"" + m__OutputDir + '"'
             + ", \"jndiDataSource\": \"" + m__strJndiDataSource + '"'
             + ", \"sqlXmlFile\": \"" + m__SqlXmlFile + '"'
             + ", \"headerFile\": \"" + m__HeaderFile + '"'
