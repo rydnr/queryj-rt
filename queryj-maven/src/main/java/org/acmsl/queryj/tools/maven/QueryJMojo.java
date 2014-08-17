@@ -1083,7 +1083,7 @@ public class QueryJMojo
      * @return such setting.
      */
     @NotNull
-    public Boolean getDisableGenerationTimestamps()
+    public Boolean getDisableTimestamps()
     {
         Boolean result = null;
 
