@@ -758,7 +758,7 @@ public class PerTableTemplatesTest
                 .setSetting(CustomSqlProviderRetrievalHandler.CUSTOM_SQL_PROVIDER, provider);
             new QueryJCommandWrapper\<File>(t_Parameters)
                 .setSetting(
-                    ParameterValidationHandler.OUTPUT_FOLDER,
+                    ParameterValidationHandler.OUTPUT_DIR,
                     this.createTempFolder(String.valueOf(new Date().getTime())));
             new QueryJCommandWrapper\<List\<Sql\<String>\>>(t_Parameters)
                 .setSetting(RetrieveQueryHandler.SQL_LIST, sqlList);
