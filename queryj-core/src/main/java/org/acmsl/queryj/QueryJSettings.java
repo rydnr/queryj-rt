@@ -139,7 +139,7 @@ public interface QueryJSettings
     /**
      * The grammar name.
      */
-    public static final String GRAMMAR_NAME = PREFIX + "grammarName";
+    public static final String GRAMMAR_NAME = PREFIX + Literals.GRAMMAR_NAME;
 
     /**
      * The grammar suffix.
