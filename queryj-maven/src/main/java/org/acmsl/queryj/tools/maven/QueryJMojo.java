@@ -98,6 +98,7 @@ import org.checkthread.annotations.ThreadSafe;
 @Mojo( name = "queryj", defaultPhase = LifecyclePhase.GENERATE_SOURCES, threadSafe = true, executionStrategy = "once-per-session")
 public class QueryJMojo
     extends AbstractMojo
+    implements QueryJSettings
 {
     /**
      * The location of pom.properties within the jar file.
