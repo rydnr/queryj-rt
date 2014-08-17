@@ -154,7 +154,7 @@ public class QueryJMojo
     /**
      * The catalog.
      */
-    @Parameter (property = JDBC_CATALOG, required = false)
+    @Parameter (name = Literals.CATALOG, property = JDBC_CATALOG, required = false)
     private String catalog;
 
     /**
