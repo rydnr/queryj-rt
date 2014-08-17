@@ -175,13 +175,13 @@ public class QueryJMojo
     /**
      * The package name.
      */
-    @Parameter (property = "packageName", required = true)
+    @Parameter (property = ENV_PREFIX + "packageName", required = true)
     private String m__strPackageName;
 
     /**
      * The output directory.
      */
-    @Parameter (property = "outputDir", required = false)
+    @Parameter (property = ENV_PREFIX + "outputDir", required = false)
     private File m__OutputDir;
 
     /**
