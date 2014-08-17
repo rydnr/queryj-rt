@@ -44,11 +44,6 @@ public interface QueryJSettings
     /**
      * The JDBC driver.
      */
-    public static final String _DRIVER = "driver";
-
-    /**
-     * The JDBC driver.
-     */
     public static final String JDBC_DRIVER = PREFIX + _DRIVER;
 
     /**
