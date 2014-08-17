@@ -50,7 +50,7 @@ import org.checkthread.annotations.ThreadSafe;
 public interface Literals
 {
     String DRIVER = "driver";
-    String URL = "url";
+    String JDBC_URL = "jdbcUrl";
     String URL = "url";
     String USERNAME = "username";
     String PASSWORD = "password";
