@@ -208,7 +208,7 @@ public class QueryJMojo
     /**
      * The grammar bundle.
      */
-    @Parameter (property = PREFIX + "grammarName", required = false)
+    @Parameter (property = GRAMMAR_NAME, required = false)
     private String m__strGrammarName;
 
     /**
