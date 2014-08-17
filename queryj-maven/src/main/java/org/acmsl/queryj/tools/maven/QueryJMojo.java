@@ -178,7 +178,7 @@ public class QueryJMojo
     /**
      * The output directory.
      */
-    @Parameter (name = Literals.OUTPUT_DIR, property = OUTPUT_DIR, required = false, defaultValue = "${project.dir")
+    @Parameter (name = Literals.OUTPUT_DIR, property = OUTPUT_DIR, required = false, defaultValue = "${project.build.dir}")
     private File m__OutputDir;
 
     /**
