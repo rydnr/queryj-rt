@@ -53,7 +53,7 @@ public interface Literals
     String URL = "url";
     String USERNAME = "username";
     String PASSWORD = "password";
-    String
+    String OUTPUTDIR = "outputdir";
     String JSON_PARENT_ATTR = " 'parent': ";
     String TEMPLATE = "Template";
     String GENERATING = "Generating ";
