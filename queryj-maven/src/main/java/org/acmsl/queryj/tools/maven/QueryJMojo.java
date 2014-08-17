@@ -127,11 +127,6 @@ public class QueryJMojo
     public static final String CANNOT_READ_MY_OWN_POM = "Strange... Cannot read my own ";
 
     /**
-     * The prefix for environment variables.
-     */
-    public static final String PREFIX = "queryj.";
-
-    /**
      * The driver.
      */
     @Parameter (name = "driver", property = PREFIX + "driver", required = true)
