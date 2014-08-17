@@ -1423,7 +1423,7 @@ public class QueryJMojo
         t_Log.info("Using " + threadCount + " threads");
         result.setThreadCount(threadCount);
 
-        final boolean disableGenerationTimestamps = getDisableGenerationTimestamps();
+        final boolean disableGenerationTimestamps = getDisableTimestamps();
 
         result.setDisableGenerationTimestamps(disableGenerationTimestamps);
 
