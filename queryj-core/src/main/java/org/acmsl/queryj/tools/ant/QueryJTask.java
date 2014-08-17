@@ -1293,28 +1293,27 @@ public class QueryJTask
     {
         @Nullable final Object result;
 
-        if  (ParameterValidationHandler.TABLES.equals(name))
+        switch (name)
         {
-            @Nullable final AntTablesElement t_ateResult;
+            case ParameterValidationHandler.TABLES:
+                @Nullable final AntTablesElement t_ateResult;
 
-            t_ateResult = new AntTablesElement();
+                t_ateResult = new AntTablesElement();
 
-            setTables(t_ateResult);
+                setTables(t_ateResult);
 
-            result = t_ateResult;
-        }
-        else if  (EXTERNALLY_MANAGED_FIELDS.equals(name))
-        {
-            @NotNull final AntExternallyManagedFieldsElement t_aemfeResult =
-                new AntExternallyManagedFieldsElement();
+                result = t_ateResult;
+                break;
+            case EXTERNALLY_MANAGED_FIELDS:
+                @NotNull final AntExternallyManagedFieldsElement t_aemfeResult =
+                    new AntExternallyManagedFieldsElement();
 
-            setExternallyManagedFields(t_aemfeResult);
+                setExternallyManagedFields(t_aemfeResult);
 
-            result = t_aemfeResult;
-        }
-        else
-        {
-            throw new BuildException(name + ELEMENTS_ARE_NOT_SUPPORTED);
+                result = t_aemfeResult;
+                break;
+            default:
+                throw new BuildException(name + ELEMENTS_ARE_NOT_SUPPORTED);
         }
 
         return result;
