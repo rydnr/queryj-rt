@@ -178,7 +178,7 @@ public class QueryJMojo
     /**
      * The output directory.
      */
-    @Parameter (property = PREFIX + "outputDir", required = false)
+    @Parameter (property = OUTPUT_FOLDER, required = false)
     private File m__OutputDir;
 
     /**
