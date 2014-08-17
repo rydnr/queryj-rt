@@ -139,7 +139,7 @@ public class QueryJMojo
     /**
      * The url.
      */
-    @Parameter (property = "url", required = true)
+    @Parameter (name = "driver", property = ENV_PREFIX + property = "url", required = true)
     private String m__strUrl;
 
     /**
