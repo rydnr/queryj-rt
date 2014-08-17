@@ -89,7 +89,7 @@ public interface QueryJSettings
     /**
      * The header file.
      */
-    public static final String HEADER_FILE = PREFIX + Literals.HEADER;
+    public static final String HEADER_FILE = PREFIX + Literals.HEADER_FILE;
 
     /**
      * The JNDI location of the DataSource.
