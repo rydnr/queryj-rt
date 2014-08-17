@@ -214,7 +214,7 @@ public class QueryJMojo
     /**
      * The grammar suffix.
      */
-    @Parameter (name = Literals.GRAMMAR_SUFFIX, property = GRAMMAR_SUFFIX, required = false)
+    @Parameter (name = Literals.GRAMMAR_SUFFIX, property = GRAMMAR_SUFFIX, required = false, defaultValue = "")
     private String m__strGrammarSuffix;
 
     /**
