@@ -1091,7 +1091,7 @@ public class QueryJMojo
 
         if (aux == null)
         {
-            result = immutableGetDisableGenerationTimestamps();
+            result = immutableGetDisableTimestamps();
         }
 
         if (result == null)
