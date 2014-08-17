@@ -60,6 +60,7 @@ public interface Literals
     String GENERATE_TESTS = "generateTests";
     String ALLOW_EMPTY_REPOSITORY_DAO = "allowEmptyRepositoryDAO";
     String IMPLEMENT_MARKER_INTERFACES = "implementMarkerInterfaces";
+    String SQL_XML_FILE = PREFIX + "sqlXml";
     String JSON_PARENT_ATTR = " 'parent': ";
     String TEMPLATE = "Template";
     String GENERATING = "Generating ";
