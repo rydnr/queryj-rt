@@ -149,7 +149,7 @@ public interface QueryJSettings
     /**
      * The header file.
      */
-    public static final String HEADER_FILE = PREFIX + Literals.GRAMMAR_SUFFIX;
+    public static final String HEADER_FILE = PREFIX + Literals.HEADER_FILE;
 
     /**
      * Whether to disable custom sql validation completely.
