@@ -129,7 +129,7 @@ public class QueryJMojo
     /**
      * The driver.
      */
-    @Parameter (name = "driver", property = PREFIX + DRIVER, required = true)
+    @Parameter (name = Literals.JD"driver", property = PREFIX + DRIVER, required = true)
     private String m__strDriver;
 
     /**
