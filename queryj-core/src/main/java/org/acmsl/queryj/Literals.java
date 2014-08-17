@@ -69,7 +69,7 @@ public interface Literals
     String DISABLE_CACHING = "disableCaching";
     String THREAD_COUNT = "threadCount";
     String DISABLE_TIMESTAMPS = "disableTimestamps";
-    String DISABLE_NOTNULL_ANNOTATIONS = PREFIX + "disableNotNullAnnotations"
+    String DISABLE_NOTNULL_ANNOTATIONS = "disableNotNullAnnotations";
     String JSON_PARENT_ATTR = " 'parent': ";
     String TEMPLATE = "Template";
     String GENERATING = "Generating ";
