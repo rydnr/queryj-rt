@@ -61,7 +61,7 @@ public interface Literals
     String GENERATE_TESTS = "generateTests";
     String ALLOW_EMPTY_REPOSITORY_DAO = "allowEmptyRepositoryDAO";
     String IMPLEMENT_MARKER_INTERFACES = "implementMarkerInterfaces";
-    String SQL_XML_FILE = "sqlXml";
+    String SQL_XML_FILE = "sqlXmlFile";
     String GRAMMAR_FOLDER = "grammarFolder";
     String GRAMMAR_NAME = "grammarName";
     String GRAMMAR_SUFFIX = "grammarSuffix";
