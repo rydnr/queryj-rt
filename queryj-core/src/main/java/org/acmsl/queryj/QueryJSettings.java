@@ -154,7 +154,7 @@ public interface QueryJSettings
     /**
      * The encoding.
      */
-    public static final String ENCODING = PREFIX + "encoding";
+    public static final String ENCODING = PREFIX + Literals.ENCODING;
 
     /**
      * Whether to use template caching.
