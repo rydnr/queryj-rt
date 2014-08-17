@@ -610,7 +610,7 @@ public class QueryJMojo
     @Nullable
     protected String getPackageName()
     {
-        String result = System.getProperty(PACKAGE_NAMEE);
+        String result = System.getProperty(PACKAGE_NAME);
 
         if (result == null)
         {
