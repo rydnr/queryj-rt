@@ -56,7 +56,7 @@ public interface Literals
     String OUTPUTDIR = "outputdir";
     String JNDI_DATASOURCE = "jndiDataSource";
     String GENERATE_MOCK_IMPLEMENTATION = "generateMockImplementation";
-    String GENERATE_XML_IMPLEMENTATION = "generateMockImplementation";
+    String GENERATE_XML_IMPLEMENTATION = "generateXmlImplementation";
     String JSON_PARENT_ATTR = " 'parent': ";
     String TEMPLATE = "Template";
     String GENERATING = "Generating ";
