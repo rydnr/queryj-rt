@@ -149,8 +149,7 @@ public interface QueryJSettings
     /**
      * Whether to disable custom sql validation completely.
      */
-    public static final String DISABLE_CUSTOM_SQL_VALIDATION =
-        PREFIX + Literals.DISABLE_CUSTOM_SQL_VALIDATION;
+    public static final String DISABLE_CUSTOM_SQL_VALIDATION = PREFIX + Literals.DISABLE_CUSTOM_SQL_VALIDATION;
 
     /**
      * The encoding.
