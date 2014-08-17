@@ -136,7 +136,7 @@ public class QueryJMojo
     /**
      * The url.
      */
-    @Parameter (name = "driver", property = PREFIX + "url", required = true)
+    @Parameter (name = "driver", property = JDBC_URL, required = true)
     private String m__strUrl;
 
     /**
