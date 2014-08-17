@@ -61,6 +61,7 @@ public interface Literals
     String ALLOW_EMPTY_REPOSITORY_DAO = "allowEmptyRepositoryDAO";
     String IMPLEMENT_MARKER_INTERFACES = "implementMarkerInterfaces";
     String SQL_XML_FILE = "sqlXml";
+    String GRAMMAR_FOLDER = PREFIX + "grammarFolder"
     String JSON_PARENT_ATTR = " 'parent': ";
     String TEMPLATE = "Template";
     String GENERATING = "Generating ";
