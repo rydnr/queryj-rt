@@ -71,7 +71,7 @@ import org.checkthread.annotations.ThreadSafe;
 
 /**
  * Generates QueryJ classes using Ant.
- * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro Armendariz</a>
+ * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro Armendariz</a>
  */
 @SuppressWarnings("unused")
 @ThreadSafe
