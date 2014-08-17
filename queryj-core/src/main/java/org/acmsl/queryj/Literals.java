@@ -59,6 +59,8 @@ public interface Literals
     String GENERATE_XML_IMPLEMENTATION = "generateXmlImplementation";
     String GENERATE_TESTS = "generateTests";
     String ALLOW_EMPTY_REPOSITORY_DAO = "allowEmptyRepositoryDAO";
+    String IMPLEMENT_MARKER_INTERFACES =
+        PREFIX + "implementMarkerInterfaces"
     String JSON_PARENT_ATTR = " 'parent': ";
     String TEMPLATE = "Template";
     String GENERATING = "Generating ";
