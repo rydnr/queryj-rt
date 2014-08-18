@@ -416,7 +416,6 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
         throws DevelopmentModeException
     {
         final boolean result =
-
             (   (debuggingService != null)
              && (context.isDebugEnabled())
              && (isInDevMode(context.getFileName())));
