@@ -417,9 +417,9 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
     {
         final boolean result =
 
-            (debuggingService != null)
-                 && (context.isDebugEnabled())
-                 && (isInDevMode(context.getFileName()));
+            (   (debuggingService != null)
+             && (context.isDebugEnabled())
+             && (isInDevMode(context.getFileName())));
 
         if (result)
         {
