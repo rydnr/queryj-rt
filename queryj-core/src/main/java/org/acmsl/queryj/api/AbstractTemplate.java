@@ -798,9 +798,6 @@ public abstract class AbstractTemplate<C extends TemplateContext>
                     t_ExceptionToWrap = invalidTemplate;
                 }
 
-                if (t_ExceptionToWrap == null)
-                {
-                }
                 if (t_ExceptionToWrap != null)
                 {
                     throw buildInvalidTemplateException(context, result, t_ExceptionToWrap);
