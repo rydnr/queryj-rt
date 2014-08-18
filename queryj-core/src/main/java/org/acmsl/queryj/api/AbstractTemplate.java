@@ -239,7 +239,7 @@ public abstract class AbstractTemplate<C extends TemplateContext>
     }
 
     /**
-     * Builds a {@link AbstractTemplate} with given context.
+     * Builds a {@code AbstractTemplate} with given context.
      * @param context the context.
      * @param placeholderPackage the package of the placeholder classes.
      * @param debugEnabled whether to enable debugging or not.
