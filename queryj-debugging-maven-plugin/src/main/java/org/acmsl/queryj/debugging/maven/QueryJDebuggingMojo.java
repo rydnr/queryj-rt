@@ -64,7 +64,7 @@ import org.checkthread.annotations.ThreadSafe;
 @ThreadSafe
 @Mojo( name = "queryj-debugging", defaultPhase = LifecyclePhase.TEST, threadSafe = true, executionStrategy = "once-per-session")
 public class QueryJDebuggingMojo
-    extends AbstractMojo
+    extends QueryJMojo
 {
     /**
      * Runs QueryJ in debug mode.
