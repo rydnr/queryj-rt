@@ -153,7 +153,7 @@ public class QueryJChain<CH extends QueryJCommandHandler<QueryJCommand>>
         @NotNull final ServiceLoader<TemplateChainProvider> loader =
              ServiceLoader.load(TemplateChainProvider.class);
 
-        foif (loader.iterator().hasNext())
+        if (loader.iterator().hasNext())
         {
             // Don't know how to fix the generics warnings
             @NotNull final TemplateChainProvider provider = loader.iterator().next();
