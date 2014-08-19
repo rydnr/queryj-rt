@@ -38,6 +38,7 @@ package org.acmsl.queryj.debugging.maven;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.queryj.tools.maven.QueryJMojo;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
