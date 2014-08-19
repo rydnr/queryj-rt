@@ -477,7 +477,7 @@ public class TemplatePackagingMojo
      */
     protected String retrieveVersion(@Nullable final Properties properties)
     {
-        String result = Literals.UNKNOWNL;
+        String result = Literals.UNKNOWN;
 
         if (   (properties != null)
             && (properties.containsKey(QueryJMojo.VERSION_LITERAL)))
