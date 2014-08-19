@@ -48,7 +48,6 @@ import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.QueryJSettings;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.SerializablePropertiesConfiguration;
-import org.acmsl.queryj.tools.maven.QueryJMojo;
 
 /*
  * Importing some Maven classes.
