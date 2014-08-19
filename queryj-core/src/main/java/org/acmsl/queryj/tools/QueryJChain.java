@@ -156,13 +156,10 @@ public class QueryJChain<CH extends QueryJCommandHandler<QueryJCommand>>
         for (@NotNull final TemplateChainProvider provider : loader)
         {
             // Don't know how to fix the generics warnings
-            for (@Nullable final TemplateHandler<?> handler : (List<TemplateHandler<?>>) provider.getHandlers())
-            {
-                if (handler != null)
-                {
+            ((List<TemplateHandler<?>>) provider.getHandlers()).stream().filter(handler -> handler != null)
+                .forEach(handler -> {
                     chain.add((CH) handler);
-                }
-            }
+                });
         }
         else
         {
