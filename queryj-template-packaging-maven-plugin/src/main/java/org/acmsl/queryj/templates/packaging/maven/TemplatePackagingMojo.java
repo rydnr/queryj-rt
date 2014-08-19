@@ -35,6 +35,7 @@ package org.acmsl.queryj.templates.packaging.maven;
 /*
  * Importing QueryJ Template Packaging classes.
  */
+import org.acmsl.queryj.Literals;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingChain;
 import org.acmsl.queryj.templates.packaging.TemplatePackagingSettings;
 
@@ -462,7 +463,7 @@ public class TemplatePackagingMojo
         catch (@NotNull final Throwable throwable)
         {  
             log.warn(
-                QueryJMojo.CANNOT_READ_MY_OWN_POM + POM_PROPERTIES_LOCATION,
+                Literals.CANNOT_READ_MY_OWN_POM + POM_PROPERTIES_LOCATION,
                 throwable);
         }
 
