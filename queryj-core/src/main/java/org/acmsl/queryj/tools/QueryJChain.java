@@ -159,10 +159,6 @@ public class QueryJChain<CH extends QueryJCommandHandler<QueryJCommand>>
             ((List<TemplateHandler<?>>) provider.getHandlers()).stream().filter(handler -> handler != null)
                 .forEach(handler -> chain.add((CH) handler));
         }
-        else
-        {
-            throw new CannotFindTemplatesException(TemplateChainProvider.class);
-        }
     }
 
     /**
