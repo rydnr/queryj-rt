@@ -153,12 +153,19 @@ public class QueryJChain<CH extends QueryJCommandHandler<QueryJCommand>>
         @NotNull final ServiceLoader<TemplateChainProvider> loader =
              ServiceLoader.load(TemplateChainProvider.class);
 
-        if (loader.iterator())
-        for (@NotNull final TemplateChainProvider provider : loader)
+        foif (loader.iterator().hasNext())
         {
             // Don't know how to fix the generics warnings
-            ((List<TemplateHandler<?>>) provider.getHandlers()).stream().filter(handler -> handler != null)
-                .forEach(handler -> chain.add((CH) handler));
+            @NotNull final TemplateChainProvider provider = loader.iterator().next();
+
+            // Don't know how to fix the generics warnings
+            for (@Nullable final TemplateHandler<?> handler : (List<TemplateHandler<?>>) provider.getHandlers())
+            {
+                if (handler != null)
+                {
+                    chain.add((CH) handler);
+                }
+            }
         }
         else
         {
