@@ -481,7 +481,7 @@ public class TemplatePackagingMojo
         if (   (properties != null)
             && (properties.containsKey(QueryJSettings.VERSION)))
         {
-            result = properties.getProperty(Literals.VERSION);
+            result = properties.getProperty(QueryJSettings.VERSION);
         }
 
         return result;
