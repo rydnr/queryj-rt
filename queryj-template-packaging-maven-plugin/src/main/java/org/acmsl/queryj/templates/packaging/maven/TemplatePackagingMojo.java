@@ -479,7 +479,7 @@ public class TemplatePackagingMojo
         String result = Literals.UNKNOWN_REMARK;
 
         if (   (properties != null)
-            && (properties.containsKey(Literals.VERSION)))
+            && (properties.containsKey(QueryJSettings.VERSION)))
         {
             result = properties.getProperty(Literals.VERSION);
         }
