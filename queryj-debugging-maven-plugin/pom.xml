@@ -35,6 +35,10 @@
       <artifactId>queryj-debugging</artifactId>
     </dependency>
     <dependency>
+      <groupId>org.acmsl.queryj</groupId>
+      <artifactId>queryj-maven-plugin</artifactId>
+    </dependency>
+     <dependency>
       <groupId>org.acmsl</groupId>
       <artifactId>java-commons</artifactId>
     </dependency>
