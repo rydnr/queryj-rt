@@ -73,7 +73,6 @@ public class QueryJDebuggingMojo
     /**
      * Runs QueryJ in debug mode.
      * @throws MojoExecutionException if the execution fails.
-     * @throws MojoFailureException if QueryJ fails.
      */
     @Override
     public void execute()
