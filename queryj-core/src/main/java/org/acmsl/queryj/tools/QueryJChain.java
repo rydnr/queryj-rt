@@ -153,12 +153,16 @@ public class QueryJChain<CH extends QueryJCommandHandler<QueryJCommand>>
         @NotNull final ServiceLoader<TemplateChainProvider> loader =
              ServiceLoader.load(TemplateChainProvider.class);
 
+        if (loader.iterator())
         for (@NotNull final TemplateChainProvider provider : loader)
         {
             // Don't know how to fix the generics warnings
-            ((List<TemplateHandler<?>>) provider.getHandlers()).stream()
-                .filter(handler -> handler != null)
+            ((List<TemplateHandler<?>>) provider.getHandlers()).stream().filter(handler -> handler != null)
                 .forEach(handler -> chain.add((CH) handler));
+        }
+        else
+        {
+            throw new CannotFindTemplatesException(TemplateChainProvider.class);
         }
     }
 
