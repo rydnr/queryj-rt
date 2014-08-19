@@ -41,7 +41,7 @@ package org.acmsl.queryj.debugging.maven;
 import org.acmsl.queryj.tools.maven.QueryJMojo;
 
 /*
- * Importing Maven
+ * Importing Maven Plugin classes.
  */
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
