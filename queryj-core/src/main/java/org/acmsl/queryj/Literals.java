@@ -157,6 +157,6 @@ public interface Literals
     /**
      * String literal: "Strange... Cannot read my own "
      */
-    public static final String CANNOT_READ_MY_OWN_POM = "Strange... Cannot read my own ";
+    String CANNOT_READ_MY_OWN_POM = "Strange... Cannot read my own ";
 
 }
