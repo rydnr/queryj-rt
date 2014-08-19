@@ -150,9 +150,10 @@ public class QueryJChain<CH extends QueryJCommandHandler<QueryJCommand>>
         throws QueryJBuildException
     {
         // Don't know how to fix the generics warnings
-        @Nullable final ServiceLoader<TemplateChainProvider> loader =
+        @NotNull final ServiceLoader<TemplateChainProvider> loader =
              ServiceLoader.load(TemplateChainProvider.class);
 
+        if
         for (@NotNull final TemplateChainProvider provider : loader)
         {
             // Don't know how to fix the generics warnings
