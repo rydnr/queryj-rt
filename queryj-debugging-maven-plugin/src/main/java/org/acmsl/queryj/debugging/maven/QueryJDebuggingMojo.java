@@ -77,8 +77,7 @@ public class QueryJDebuggingMojo
      */
     @Override
     public void execute()
-        throws MojoExecutionException,
-               MojoFailureException
+        throws MojoExecutionException
     {
 
     }
