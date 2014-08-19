@@ -15,7 +15,6 @@
           <packageName>com.foo.bar</packageName>
           <jndiDataSource>java:comp/env/jdbc/default</jndiDataSource>
           <outputDir>${project.basedir}/target/generated-sources</outputDir>
-          <customSqlModel>xml</customSqlModel>
           <grammarbundle>${project.basedir}/src/main/assembly/queryj-grammar</grammarbundle>
           <sqlXmlFile>${project.basedir}/target/sql.xml</sqlXmlFile>
           <headerFile>${project.basedir}/src/main/assembly/header.txt</headerFile>
