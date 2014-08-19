@@ -157,7 +157,7 @@ public class QueryJChain<CH extends QueryJCommandHandler<QueryJCommand>>
         {
             // Don't know how to fix the generics warnings
             ((List<TemplateHandler<?>>) provider.getHandlers()).stream().filter(handler -> handler != null)
-                .forEach(handler -> chain.add((CH) handler));
+                .forEach(handler -> chain.add((handler));
         }
     }
 
