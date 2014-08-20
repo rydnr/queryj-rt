@@ -550,20 +550,6 @@ public abstract class DatabaseMetaDataRetrievalHandler
     }
 
     /**
-     * Retrieves the tables XML element stored in the
-     * attribute map.
-     * @param parameters the parameter map.
-     * @return the table information.
-     */
-    @Nullable
-    protected AntTablesElement retrieveTablesElement(@NotNull final QueryJCommand parameters)
-    {
-        return
-            new QueryJCommandWrapper<AntTablesElement>(parameters)
-                .getSetting(ParameterValidationHandler.EXPLICIT_TABLES);
-    }
-
-    /**
      * Annotates the database product name.
      * @param productName the product name.
      * @param parameters the parameters.
