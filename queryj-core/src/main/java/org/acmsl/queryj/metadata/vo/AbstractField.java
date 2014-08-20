@@ -71,7 +71,7 @@ public abstract class AbstractField
     /**
      * The field fk collection.
      */
-    private List<AntFieldFkElement> m__lFieldFks;
+    private List<FieldFk> m__lFieldFks;
 
     /**
      * Creates an {@link AbstractField} with given information.
