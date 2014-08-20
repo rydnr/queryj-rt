@@ -207,6 +207,10 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
         return result;
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
     @Override
     public String toString()
     {
