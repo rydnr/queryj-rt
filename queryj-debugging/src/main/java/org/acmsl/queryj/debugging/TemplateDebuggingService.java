@@ -41,12 +41,12 @@ package org.acmsl.queryj.debugging;
 import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.DevelopmentModeException;
 import org.acmsl.queryj.api.TemplateContext;
+import org.acmsl.queryj.api.exceptions.QueryJBuildException;
+import org.acmsl.queryj.tools.handlers.QueryJCommandHandler;
 
 /*
  * Importing StringTemplate classes.
  */
-import org.acmsl.queryj.api.exceptions.QueryJBuildException;
-import org.acmsl.queryj.tools.handlers.QueryJCommandHandler;
 import org.stringtemplate.v4.ST;
 
 /*
