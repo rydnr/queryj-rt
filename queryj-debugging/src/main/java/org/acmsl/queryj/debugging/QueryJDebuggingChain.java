@@ -187,7 +187,6 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
                             t_CurrentCommandHandler + "#handle(QueryJCommand) returned "
                             + result);
                     }
-                    }
                 }
                 while  (   (!result)
                         && (t_CurrentCommandHandler != null));
