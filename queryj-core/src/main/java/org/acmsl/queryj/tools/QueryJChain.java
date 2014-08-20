@@ -103,6 +103,7 @@ public class QueryJChain<CH extends QueryJCommandHandler<QueryJCommand>>
     /**
      * Adds the pre-processing handlers.
      */
+    @SuppressWarnings("unchecked")
     protected Chain<QueryJCommand, QueryJBuildException, CH> addPreProcessHandlers(
         @NotNull final Chain<QueryJCommand, QueryJBuildException, CH> chain)
         throws QueryJBuildException
