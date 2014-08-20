@@ -82,6 +82,6 @@ public class QueryJDebuggingMojoTest
 
         assertNotNull(mojo);
 
-        Assert.assertEquals("com.foo.bar.JdbcDriver", mojo.getJdbcDriver());
+        Assert.assertEquals("com.foo.bar.JdbcDriver", mojo.getDriver());
     }
 }
