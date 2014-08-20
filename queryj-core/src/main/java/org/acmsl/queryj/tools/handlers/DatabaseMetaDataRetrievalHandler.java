@@ -337,8 +337,8 @@ public abstract class DatabaseMetaDataRetrievalHandler
                             }
                         }
                     }
-                }
             */
+                }
             }
         }
 
