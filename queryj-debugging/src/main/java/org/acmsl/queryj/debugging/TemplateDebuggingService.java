@@ -83,7 +83,7 @@ public interface TemplateDebuggingService<C extends TemplateContext>
 
     /**
      * Process given handler while debugging.
-     * @param template the template to debug.
+     * @param handler the handler in the chain.
      * @param context the context.
      * @param output the current template output.
      * @return the {@link TemplateDebuggingCommand}.
