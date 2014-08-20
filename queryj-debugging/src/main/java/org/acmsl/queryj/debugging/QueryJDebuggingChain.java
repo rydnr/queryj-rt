@@ -171,7 +171,7 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
 
                 do
                 {
-                    if
+                    if ()
                     t_CurrentCommandHandler =
                         getNextChainLink(chain, t_CurrentCommandHandler);
 
