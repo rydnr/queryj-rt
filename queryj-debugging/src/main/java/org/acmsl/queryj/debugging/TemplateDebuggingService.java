@@ -44,6 +44,7 @@ import org.acmsl.queryj.api.TemplateContext;
 /*
  * Importing StringTemplate classes.
  */
+import org.acmsl.queryj.tools.handlers.QueryJCommandHandler;
 import org.stringtemplate.v4.ST;
 
 /*
@@ -88,7 +89,7 @@ public interface TemplateDebuggingService<C extends TemplateContext>
      * @throws DevelopmentModeException if the debug session must stop.
      */
     @NotNull
-    TemplateDebuggingCommand debug(
+    TemplateDebuggingCommand debug(QueryJCommandHandler
         @NotNull final ST template, @NotNull final C context, @NotNull final String output)
         throws DevelopmentModeException;
 }
