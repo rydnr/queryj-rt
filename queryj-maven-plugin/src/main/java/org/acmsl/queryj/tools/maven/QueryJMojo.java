@@ -1325,7 +1325,7 @@ public class QueryJMojo
     }
 
     @NotNull
-    protected
+    protected QueryJTask ins
     /**
      * Builds the QueryJ task.
      * @param version the version.
