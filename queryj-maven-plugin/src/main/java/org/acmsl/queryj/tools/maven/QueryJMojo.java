@@ -648,7 +648,7 @@ public class QueryJMojo
      * @return such directory.
      */
     @Nullable
-    protected File getOutputDir()
+    public File getOutputDir()
     {
         final File result;
 
