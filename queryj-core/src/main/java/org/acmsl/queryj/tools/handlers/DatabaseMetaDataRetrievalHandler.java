@@ -513,7 +513,7 @@ public abstract class DatabaseMetaDataRetrievalHandler
                 storeTables(result.getTableDAO().findAllTables(), parameters);
             }
         }
-        catch  (@NotNull final SQLException sqlException)
+        catch  (@NotNull final SQLException | QueryJException sqlException)
         {
             throw
                 new CannotRetrieveDatabaseMetadataException(sqlException);
