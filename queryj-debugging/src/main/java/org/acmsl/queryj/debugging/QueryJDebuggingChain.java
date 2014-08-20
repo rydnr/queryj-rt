@@ -216,7 +216,6 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
                 throw buildException;
             }
         }
-        while (restart);
 
         return result;
     }
