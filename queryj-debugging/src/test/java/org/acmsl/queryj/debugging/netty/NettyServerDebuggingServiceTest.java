@@ -142,7 +142,6 @@ public class NettyServerDebuggingServiceTest
                 /**
                  * {@inheritDoc}
                  */
-                @Override
                 protected boolean isInDevMode(@NotNull final String templateFileName)
                 {
                     return true;
