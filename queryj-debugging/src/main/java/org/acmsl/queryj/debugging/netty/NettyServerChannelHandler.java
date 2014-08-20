@@ -174,7 +174,7 @@ public class NettyServerChannelHandler
     public String toString()
     {
         return
-            "{ NettyServerChannelHandler{" +
+            "{ \"listener\": NettyServerChannelHandler{" +
                "m__Listener=" + m__Listener +
                '}';
     }
