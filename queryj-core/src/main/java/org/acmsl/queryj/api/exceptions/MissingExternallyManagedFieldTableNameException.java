@@ -62,6 +62,9 @@ import org.checkthread.annotations.ThreadSafe;
 public class MissingExternallyManagedFieldTableNameException
     extends QueryJBuildException
 {
+    /**
+     * The serial version id.
+     */
     private static final long serialVersionUID = -8551902929244410437L;
 
     /**
