@@ -1343,6 +1343,8 @@ public class QueryJMojo
 
         @NotNull final QueryJTask result = new QueryJTask(t_Log);
 
+        @NotNull final CommonsLoggingMavenLogAdapter t_Log = new CommonsLoggingMavenLogAdapter(log);
+
         initLogging(t_Log);
 
         @NotNull final Project project = new AntProjectAdapter(new Project(), log);
