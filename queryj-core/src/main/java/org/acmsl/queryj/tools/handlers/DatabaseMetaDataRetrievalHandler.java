@@ -339,10 +339,10 @@ public abstract class DatabaseMetaDataRetrievalHandler
                     }
                 }
             }
+            */
         }
 
         storeAlreadyDoneFlag(parameters);
-            */
 
         return result;
     }
