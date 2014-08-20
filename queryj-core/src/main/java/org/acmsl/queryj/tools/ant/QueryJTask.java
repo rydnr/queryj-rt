@@ -1025,8 +1025,7 @@ public class QueryJTask
         }
         catch  (@NotNull final QueryJBuildException buildException)
         {
-            throw
-                new BuildException(buildException.getMessage(), buildException);
+            throw new BuildException(buildException.getMessage(), buildException);
         }
     }
 
