@@ -101,7 +101,7 @@ public class QueryJChain<CH extends QueryJCommandHandler<QueryJCommand>>
     }
 
     /**
-     * Adds the pre-processing
+     * Adds the pre-processing handlers.
      */
     /**
      * Builds the chain.
