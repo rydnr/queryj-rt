@@ -201,7 +201,7 @@ public abstract class AbstractQueryJChain
                 if  (   (t_iCurrentIndex > 0)
                      && (t_iCurrentIndex <= chain.size() - 1))
                 {
-                    result = chain.get(t_iCurrentIndex + 1);
+                    result = chain.get(t_iCurrentIndex - 1);
                 }
             }
         }
