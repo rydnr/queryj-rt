@@ -71,7 +71,7 @@ public abstract class AbstractField
     /**
      * The field fk collection.
      */
-    private List<FieldFk> m__lFieldFks;
+    private List<Field> m__lFieldFks;
 
     /**
      * Creates an {@link AbstractField} with given information.
