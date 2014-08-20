@@ -54,9 +54,9 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
  */
 import org.acmsl.queryj.api.TemplateContext;
 import org.acmsl.queryj.api.exceptions.DevelopmentModeException;
-import org.acmsl.queryj.tools.debugging.TemplateDebuggingCommand;
-import org.acmsl.queryj.tools.debugging.TemplateDebuggingListener;
-import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
+import org.acmsl.queryj.debugging.TemplateDebuggingCommand;
+import org.acmsl.queryj.debugging.TemplateDebuggingListener;
+import org.acmsl.queryj.debugging.TemplateDebuggingService;
 
 /*
  * Importing Apache Commons Logging classes.
