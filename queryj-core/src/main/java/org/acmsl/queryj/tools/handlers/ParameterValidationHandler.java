@@ -217,6 +217,7 @@ public class ParameterValidationHandler
                     EXTERNALLY_MANAGED_FIELDS),
                 new QueryJCommandWrapper<Path>(command).getSetting(CLASSPATH));
         }
+        */
     }
 
     /**
