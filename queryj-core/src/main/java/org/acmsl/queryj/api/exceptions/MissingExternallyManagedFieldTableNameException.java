@@ -39,6 +39,7 @@ package org.acmsl.queryj.api.exceptions;
 /*
  * Importing project classes.
  */
+import org.acmsl.queryj.metadata.vo.Field;
 import org.acmsl.queryj.tools.ant.AntFieldElement;
 
 /*
