@@ -90,7 +90,7 @@ public class QueryJDebuggingMojoTest
         Assert.assertEquals("QUERYJUSER", mojo.getUsername());
         Assert.assertEquals("QUERYJPASSWORD", mojo.getPassword());
         Assert.assertNull("", mojo.getCatalog());
-        Assert.assertEquals("", mojo.getSchema());
+        Assert.asser("", mojo.getSchema());
         Assert.assertEquals("repos", mojo.getRepository());
         Assert.assertEquals("com.foo.bar", mojo.getPackageName());
         Assert.assertEquals("java:comp/env/jdbc/default", mojo.getJndiDataSource());
