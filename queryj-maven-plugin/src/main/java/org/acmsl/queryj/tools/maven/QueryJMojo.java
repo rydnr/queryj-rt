@@ -1341,7 +1341,7 @@ public class QueryJMojo
     {
         @NotNull final CommonsLoggingMavenLogAdapter t_Log = new CommonsLoggingMavenLogAdapter(log);
 
-        @NotNull final QueryJTask result = instantiateTask(version, log);
+        @NotNull final QueryJTask result = instantiateTask(version, t_Log);
 
         @NotNull final CommonsLoggingMavenLogAdapter t_Log = result.getLog();
 
