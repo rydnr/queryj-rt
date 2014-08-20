@@ -82,6 +82,10 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
     extends QueryJChain<CH>
 {
     /**
+     * The template debugging service.
+     */
+
+    /**
      * Creates a {@code QueryJDebuggingChain} with given information.
      */
     public QueryJDebuggingChain(@NotNull final TemplateDebuggingService service)
