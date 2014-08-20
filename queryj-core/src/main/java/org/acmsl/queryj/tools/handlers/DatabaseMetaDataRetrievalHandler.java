@@ -259,6 +259,8 @@ public abstract class DatabaseMetaDataRetrievalHandler
 
             storeMetadataManager(metadataManager, parameters);
 
+            @Nullable final MetadataTypeManager t_MetadataTypeManager;
+
             t_MetadataTypeManager =
                 metadataManager.getMetadataTypeManager();
 
