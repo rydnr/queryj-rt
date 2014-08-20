@@ -181,7 +181,7 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
                     {
                         if (t_CurrentCommandHandler instanceof TemplateHandler)
                         {
-                            service.((TemplateHandler<C>))
+                            service.eval((TemplateHandler<C>))
                         }
                         else
                         {
