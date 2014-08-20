@@ -232,7 +232,6 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
         @NotNull final File outputDir,
         @NotNull final File rootFolder,
         @NotNull final Charset charset,
-        @Nullable final TemplateDebuggingService<C> templateDebuggingService,
         @NotNull final FileUtils fileUtils,
         @Nullable final Log log)
       throws IOException,
