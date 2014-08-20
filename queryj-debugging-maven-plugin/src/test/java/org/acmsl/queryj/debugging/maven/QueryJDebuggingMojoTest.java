@@ -104,7 +104,8 @@ public class QueryJDebuggingMojoTest
             mojo.getGrammarFolder());
         Assert.assertEquals("Invalid grammarName", "queryj", mojo.getGrammarName());
         Assert.assertEquals("Invalid grammarSuffix", ".bundle", mojo.getGrammarSuffix());
-        Assert.assertEquals("Invalid sqlXmlFile", new File(getBasedir() + File.separator + "target", "sql.xml"), mojo.getSqlXmlFile());
+        Assert.assertEquals(
+            "Invalid sqlXmlFile", new File(getBasedir() + File.separator + "target", "sql.xml"), mojo.getSqlXmlFile());
         Assert.assertEquals(
             new File(
                 getBasedir() + File.separator + "src" + File.separator + "main" + File.separator + "assembly",
