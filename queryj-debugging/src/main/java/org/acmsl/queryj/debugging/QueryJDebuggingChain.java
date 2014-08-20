@@ -197,8 +197,7 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
                         + result);
                 }
             }
-            while  (   (!result)
-                    && (t_CurrentCommandHandler != null));
+            while  (t_CurrentCommandHandler != null));
         }
         catch  (@NotNull final QueryJBuildException buildException)
         {
