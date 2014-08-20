@@ -82,7 +82,7 @@ public class QueryJDebuggingMojoTest
     }
 
     /**
-     * Tests the configuration is read from
+     * Tests the configuration is read from "default-test.xml".
      * @throws Exception
      */
     public void testMojoGoal()
