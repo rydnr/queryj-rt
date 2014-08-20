@@ -149,6 +149,7 @@ public class QueryJTask
         return m__QueryJCommand;
     }
 
+    @NotNull
 
     /**
      * Specifies the driver.
