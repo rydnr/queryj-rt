@@ -127,7 +127,6 @@ public class QueryJChain<CH extends QueryJCommandHandler<QueryJCommand>>
         chain.add((CH) new DatabaseMetaDataCacheWritingHandler());
 
         chain.add((CH) new DatabaseMetaDataLoggingHandler());
-
     }
 
     /**
