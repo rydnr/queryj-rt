@@ -1324,7 +1324,7 @@ public class QueryJMojo
         UniqueLogFactory.initializeInstance(commonsLoggingLog);
     }
 
-
+    @NotNull
     /**
      * Builds the QueryJ task.
      * @param version the version.
