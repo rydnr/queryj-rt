@@ -44,10 +44,6 @@ import org.acmsl.queryj.api.exceptions.CannotRetrieveDatabaseInformationExceptio
 import org.acmsl.queryj.metadata.engines.Engine;
 import org.acmsl.queryj.metadata.engines.UndefinedJdbcEngine;
 import org.acmsl.queryj.metadata.engines.oracle.OracleEngine;
-import org.acmsl.queryj.tools.ant.AntFieldElement;
-import org.acmsl.queryj.tools.ant.AntFieldFkElement;
-import org.acmsl.queryj.tools.ant.AntTableElement;
-import org.acmsl.queryj.tools.ant.AntTablesElement;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.metadata.MetadataExtractionLogger;
 import org.acmsl.queryj.metadata.MetadataManager;
