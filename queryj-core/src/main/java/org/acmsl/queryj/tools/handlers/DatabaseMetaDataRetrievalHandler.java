@@ -372,7 +372,7 @@ public abstract class DatabaseMetaDataRetrievalHandler
             extractTables(parameters, t_TablesElement);
 
         storeTables(t_lTables, parameters);
-
+        */
         @Nullable final MetadataManager t_MetadataManager =
             buildMetadataManager(parameters, metaData);
 
