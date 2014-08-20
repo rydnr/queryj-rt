@@ -70,6 +70,7 @@ import org.acmsl.queryj.debugging.TemplateDebuggingService;
  */
 import org.acmsl.queryj.debugging.AbstractTemplateTest;
 import org.acmsl.queryj.debugging.AbstractTemplateTest.MyTestableAbstractTemplate;
+import org.acmsl.queryj.debugging.TemplateDebuggingService;
 
 /*
  * Importing Apache Commons Logging annotations.
