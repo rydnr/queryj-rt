@@ -171,9 +171,12 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
 
                 do
                 {
-                    if ()
-                    t_CurrentCommandHandler =
-                        getNextChainLink(chain, t_CurrentCommandHandler);
+                    if (t_DebugCommand.equals(TemplateDebuggingCommand.NEXT))
+                    {
+                        t_CurrentCommandHandler =
+                            getNextChainLink(chain, t_CurrentCommandHandler);
+                    }
+                    else if (t_DebugCommand.equals(TemplateDebuggingCommand.PREVIOUS))
 
                     if (t_bLoggingEnabled)
                     {
