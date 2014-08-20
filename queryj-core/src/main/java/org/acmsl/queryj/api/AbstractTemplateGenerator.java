@@ -219,7 +219,6 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
      * @param outputDir the output folder.
      * @param rootFolder the root folder.
      * @param charset the {@link Charset} to use.
-     * @param templateDebuggingService the {@link TemplateDebuggingService} instance.
      * @param fileUtils the {@link FileUtils} instance.
      * @param log the {@link Log} instance.
      * @return whether it gets written to disk.
