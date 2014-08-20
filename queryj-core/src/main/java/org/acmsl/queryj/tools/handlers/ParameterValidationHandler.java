@@ -462,40 +462,6 @@ public class ParameterValidationHandler
     }
 
     /**
-     * Validates the parameters explicitly coming from Ant.
-     * @param tables the table information.
-     * @param externallyManagedFields the externally-managed fields
-     * information.
-     * @param classpath the classpath.
-     * such as the header contents.
-     * @throws QueryJBuildException if any parameter fails to validate.
-     */
-    protected void validateAntParameters(
-        @Nullable final AntTablesElement tables,
-        @Nullable final AntExternallyManagedFieldsElement externallyManagedFields,
-        @Nullable final Path classpath)
-      throws  QueryJBuildException
-    {
-        if  (classpath == null) 
-        {
-            throw new MissingClasspathException();
-        }
-
-        if  (   (tables != null)
-             && (   (tables.getTables() == null)
-                 || (tables.getTables().size() == 0)))
-        {
-            throw new MissingTablesException();
-        }
-
-        if  (   (externallyManagedFields != null)
-             && (externallyManagedFields.getFields().size() == 0))
-        {
-            throw new MissingExternallyManagedFieldsException();
-        }
-    }
-
-    /**
      * Reads the contents of given file.
      * @param file the file.
      * @param charset the charset.
