@@ -56,7 +56,8 @@ import org.checkthread.annotations.ThreadSafe;
  * Represents the error when a externally-manage field in a pom.xml or
  * Ant build lacks the "table name" attribute.
  * @author <a href="mailto:chous@acm-sl.org">Jose San Leandro</a>
- * @since 2013/06/14
+ * @since 3.0
+ * Created: 2013/06/14
  */
 @ThreadSafe
 public class MissingExternallyManagedFieldTableNameException
