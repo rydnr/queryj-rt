@@ -27,7 +27,7 @@
  *
  * Author: Jose San Leandro Armendariz
  *
- * Description: 
+ * Description: {@link io.netty.channel.ChannelHandlerAdapter} implementation to accept debug commands.
  *
  * Date: 2014/06/28
  * Time: 20:47
