@@ -847,7 +847,7 @@ public class QueryJMojo
      * @return such resource.
      */
     @Nullable
-    protected File getGrammarFolder()
+    public File getGrammarFolder()
     {
         final File result;
 
