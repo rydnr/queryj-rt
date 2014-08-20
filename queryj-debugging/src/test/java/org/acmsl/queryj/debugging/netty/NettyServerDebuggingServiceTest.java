@@ -151,7 +151,6 @@ public class NettyServerDebuggingServiceTest
                  * {@inheritDoc}
                  */
                 @Nullable
-                @Override
                 public TemplateDebuggingService resolveTemplateDebuggingService()
                 {
                     return instance;
