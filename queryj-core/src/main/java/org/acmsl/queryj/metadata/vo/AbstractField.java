@@ -180,7 +180,7 @@ public abstract class AbstractField
      * Specifies the field fk collection.
      * @param fieldFks the collection
      */
-    protected void setFieldFks(@NotNull final List<AntFieldFkElement> fieldFks)
+    protected void setFieldFks(@NotNull final List<Field> fieldFks)
     {
         immutableSetFieldFks(fieldFks);
     }
