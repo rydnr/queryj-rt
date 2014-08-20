@@ -99,6 +99,7 @@ public class QueryJDebuggingMojoTest
             new File(getBasedir() + File.separator + "target" + File.separator + "generated-sources"),
             mojo.getOutputDir());
         Assert.assertEquals(
+            "Invalid grammarFolder"
             new File(getBasedir() + File.separator + "src" + File.separator + "main" + File.separator + "assembly"),
             mojo.getGrammarFolder());
         Assert.assertEquals("queryj", mojo.getGrammarName());
