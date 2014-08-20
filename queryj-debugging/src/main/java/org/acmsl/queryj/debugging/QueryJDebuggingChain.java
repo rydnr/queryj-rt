@@ -216,7 +216,7 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
     {
         return
             "{ \"service\": " + this.m__Service
-            +
+            + "\""
                '}';
     }
 }
