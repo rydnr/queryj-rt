@@ -84,5 +84,12 @@ public class QueryJDebuggingMojoTest
 
         Assert.assertEquals("com.foo.bar.JdbcDriver", mojo.getDriver());
         Assert.assertEquals("com.foo.bar.JdbcDriver", mojo.getDriver());
+        Assert.assertEquals("com.foo.bar.JdbcDriver", mojo.getDriver());
+        Assert.assertEquals("com.foo.bar.JdbcDriver", mojo.getDriver());
+        Assert.assertEquals("com.foo.bar.JdbcDriver", mojo.getDriver());
+        Assert.assertEquals("com.foo.bar.JdbcDriver", mojo.getDriver());
+        Assert.assertEquals("com.foo.bar.JdbcDriver", mojo.getDriver());
+        Assert.assertEquals("com.foo.bar.JdbcDriver", mojo.getDriver());
+        Assert.assertEquals("com.foo.bar.JdbcDriver", mojo.getDriver());
     }
 }
