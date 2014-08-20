@@ -176,6 +176,7 @@ public class NettyServerChannelHandler
         return
             "{ \"listener\": " + m__Listener.hashCode()
             + ", \"class\": \"NettyServerChannelHandler\""
+        + ", \"package\": \"org.acmsl.queryj.debugging"
                '}';
     }
 }
