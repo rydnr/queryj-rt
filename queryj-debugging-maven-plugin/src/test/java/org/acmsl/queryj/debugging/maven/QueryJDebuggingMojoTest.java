@@ -92,7 +92,7 @@ public class QueryJDebuggingMojoTest
         Assert.assertNull("Invalid catalog", mojo.getCatalog());
         Assert.assertNull("Invalid schema", mojo.getSchema());
         Assert.assertEquals("Invalid repository", "repos", mojo.getRepository());
-        Assert.assertEquals("Invalid package", "com.foo.bar", mojo.getPackageName());
+        Assert.assertEquals("Invalid packageName", "com.foo.bar", mojo.getPackageName());
         Assert.assertEquals("Invalid JNDI data source path", "java:comp/env/jdbc/default", mojo.getJndiDataSource());
         Assert.assertEquals(
             "Invalid outputDir",
