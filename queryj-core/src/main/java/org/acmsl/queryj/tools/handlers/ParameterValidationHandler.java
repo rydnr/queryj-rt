@@ -32,7 +32,6 @@ package org.acmsl.queryj.tools.handlers;
  * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.QueryJCommand;
-import org.acmsl.queryj.QueryJCommandWrapper;
 import org.acmsl.queryj.QueryJSettings;
 import org.acmsl.queryj.api.exceptions.CannotReadCustomSqlXmlFileException;
 import org.acmsl.queryj.api.exceptions.NullCharsetException;
@@ -43,9 +42,7 @@ import org.acmsl.queryj.api.exceptions.GrammarBundleDoesNotExistException;
 import org.acmsl.queryj.api.exceptions.GrammarFolderDoesNotExistException;
 import org.acmsl.queryj.api.exceptions.IllegalThreadCountException;
 import org.acmsl.queryj.api.exceptions.InvalidJndiLocationException;
-import org.acmsl.queryj.api.exceptions.MissingClasspathException;
 import org.acmsl.queryj.api.exceptions.MissingCustomSqlXmlFileException;
-import org.acmsl.queryj.api.exceptions.MissingExternallyManagedFieldsException;
 import org.acmsl.queryj.api.exceptions.MissingJdbcDriverException;
 import org.acmsl.queryj.api.exceptions.MissingJdbcSchemaException;
 import org.acmsl.queryj.api.exceptions.MissingJdbcUrlException;
