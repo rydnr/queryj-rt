@@ -103,6 +103,7 @@ public class QueryJChain<CH extends QueryJCommandHandler<QueryJCommand>>
     /**
      * Adds the pre-processing handlers.
      * @param chain the chain to build.
+     * @throws org.acmsl.queryj.api.exceptions.QueryJBuildException if the
      */
     @SuppressWarnings("unchecked")
     protected void addPreProcessHandlers(
