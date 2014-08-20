@@ -77,7 +77,8 @@ import java.util.ServiceLoader;
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/08/20 10:48
- * @parma <CH> the QueryJCommandHandler.
+ * @param <CH> the QueryJCommandHandler.
+ *
  */
 @ThreadSafe
 public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>, C extends TemplateContext>
