@@ -191,6 +191,7 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
                     {
                          service.debug(t_CurrentCommandHandler)
                     }
+
                     if (t_bLoggingEnabled)
                     {
                         t_Log.debug(
