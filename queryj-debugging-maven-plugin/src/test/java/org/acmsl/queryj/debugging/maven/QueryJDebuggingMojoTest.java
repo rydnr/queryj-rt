@@ -89,8 +89,8 @@ public class QueryJDebuggingMojoTest
         Assert.assertEquals("Invalid url", "queryj:jdbc:url", mojo.getUrl());
         Assert.assertEquals("Invalid username", "QUERYJUSER", mojo.getUsername());
         Assert.assertEquals("Invalid password", "QUERYJPASSWORD", mojo.getPassword());
-        Assert.assertNull("Not-null catalog", mojo.getCatalog());
-        Assert.assertNull("Not-null schema", mojo.getSchema());
+        Assert.assertNull("Invalid catalog", mojo.getCatalog());
+        Assert.assertNull("Invalid schema", mojo.getSchema());
         Assert.assertEquals("Invalid repository", "repos", mojo.getRepository());
         Assert.assertEquals("Invalid package", "com.foo.bar", mojo.getPackageName());
         Assert.assertEquals("Invalid JNDI data source path", "java:comp/env/jdbc/default", mojo.getJndiDataSource());
