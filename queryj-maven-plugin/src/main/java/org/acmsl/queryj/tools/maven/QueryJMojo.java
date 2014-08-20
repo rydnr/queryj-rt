@@ -1325,7 +1325,8 @@ public class QueryJMojo
     }
 
     @NotNull
-    protected QueryJTask instantiateTask(@NotNull final String version, @NotNull final org.apache.commons.logging.Log log)
+    protected QueryJTask instantiateTask(
+        @NotNull final String version, @NotNull final org.apache.commons.logging.Log log)
     {
         return new QueryJTask(log);
     }
