@@ -78,7 +78,7 @@ import java.util.ServiceLoader;
  * @since 3.0
  * Created: 2014/08/20 10:48
  * @param <CH> the QueryJCommandHandler.
- *
+ * @param <C> the template context.
  */
 @ThreadSafe
 public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>, C extends TemplateContext>
