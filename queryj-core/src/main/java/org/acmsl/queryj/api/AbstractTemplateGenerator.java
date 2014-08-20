@@ -35,7 +35,7 @@
 package org.acmsl.queryj.api;
 
 /*
- * Importing some project-specific classes.
+ * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.api.exceptions.Sha256NotSupportedException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
