@@ -458,7 +458,7 @@ public class QueryJMojo
      * @return such value.
      */
     @Nullable
-    protected String getCatalog()
+    public String getCatalog()
     {
         String result = System.getProperty(JDBC_CATALOG);
 
