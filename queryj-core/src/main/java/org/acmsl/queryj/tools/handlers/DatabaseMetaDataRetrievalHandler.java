@@ -51,7 +51,6 @@ import org.acmsl.queryj.metadata.MetadataTypeManager;
 import org.acmsl.queryj.metadata.engines.JdbcMetadataManager;
 import org.acmsl.queryj.metadata.vo.Attribute;
 import org.acmsl.queryj.metadata.vo.Table;
-import org.acmsl.queryj.metadata.vo.TableIncompleteValueObject;
 
 /*
  * Importing some ACM-SL Commons classes.
