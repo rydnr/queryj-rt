@@ -149,6 +149,10 @@ public class QueryJTask
         return m__QueryJCommand;
     }
 
+    /**
+     * Retrieves the {@link Log} instance.
+     * @return such instance.
+     */
     @NotNull
     public Log getLog()
     {
