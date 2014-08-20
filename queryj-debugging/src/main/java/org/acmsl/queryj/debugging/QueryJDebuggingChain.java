@@ -202,10 +202,6 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
                 while  (   (!result)
                         && (t_CurrentCommandHandler != null));
             }
-            catch  (@NotNull final DevelopmentModeException devMode)
-            {
-                restart = true;
-            }
             catch  (@NotNull final QueryJBuildException buildException)
             {
                 cleanUpOnError(buildException, command);
