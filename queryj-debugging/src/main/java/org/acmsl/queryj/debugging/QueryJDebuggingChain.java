@@ -149,7 +149,9 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
      * @throws QueryJBuildException if the process fails.
      */
     protected boolean process(
-        @NotNull final Chain<QueryJCommand, QueryJBuildException, CH> chain, @NotNull final QueryJCommand command)
+        @NotNull final Chain<QueryJCommand, QueryJBuildException, CH> chain,
+        @NotNull final QueryJCommand command,
+        @NotNull final )
         throws QueryJBuildException
     {
         boolean result = false;
