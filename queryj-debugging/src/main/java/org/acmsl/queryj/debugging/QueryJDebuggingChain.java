@@ -206,4 +206,12 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
 
         return result;
     }
+
+    @Override
+    public String toString()
+    {
+        return "QueryJDebuggingChain{" +
+               "m__Service=" + m__Service +
+               '}';
+    }
 }
