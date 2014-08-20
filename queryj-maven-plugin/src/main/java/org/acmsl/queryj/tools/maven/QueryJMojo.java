@@ -795,7 +795,7 @@ public class QueryJMojo
      * @return such file.
      */
     @Nullable
-    protected File getHeaderFile()
+    public File getHeaderFile()
     {
         final File result;
 
