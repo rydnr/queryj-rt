@@ -94,7 +94,7 @@ public class AbstractTemplateGeneratorTest
                 }
             };
 
-        @Nullable final TemplateDebuggingService<?> service = instance.resolveTemplateDebuggingService();
+        @Nullable final TemplateDebuggingService<?> service = DebuggingUtils.getInstance().resolveTemplateDebuggingService();
 
         Assert.assertNotNull(service);
     }
