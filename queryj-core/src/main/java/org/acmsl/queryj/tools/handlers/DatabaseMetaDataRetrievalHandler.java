@@ -363,6 +363,7 @@ public abstract class DatabaseMetaDataRetrievalHandler
 
         storeMetadata(metaData, parameters);
 
+        /*
         @Nullable final AntTablesElement t_TablesElement;
 
         t_TablesElement = retrieveTablesElement(parameters);
