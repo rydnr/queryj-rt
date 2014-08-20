@@ -90,6 +90,6 @@ public class QueryJDebuggingMojoTest
         Assert.assertEquals("", mojo.getSchema());
         Assert.assertEquals("repos", mojo.getRepository());
         Assert.assertEquals("com.foo.bar", mojo.getPackageName());
-        Assert.assertEquals("com.foo.bar.JdbcDriver", mojo.getDriver());
+        Assert.assertEquals("", mojo.getDriver());
     }
 }
