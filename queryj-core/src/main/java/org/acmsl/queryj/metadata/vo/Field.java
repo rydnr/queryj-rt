@@ -60,5 +60,5 @@ public interface Field
      * Retrieves the field fk collection.
      * @return such collection.
      */
-    public Collection<AntFieldFkElement> getFieldFks();
+    public Collection<Field> getFieldFks();
 }
