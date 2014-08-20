@@ -138,7 +138,7 @@ public class QueryJChain<CH extends QueryJCommandHandler<QueryJCommand>>
      * @throws QueryJBuildException if building the chain fails.
      */
     @SuppressWarnings("unchecked")
-    protected void addPreProcessHandlers(
+    protected void addPostProcessHandlers(
         @NotNull final Chain<QueryJCommand, QueryJBuildException, CH> chain)
         throws QueryJBuildException
     {
