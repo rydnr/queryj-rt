@@ -1198,6 +1198,7 @@ public class QueryJMojo
 
     /**
      * Executes QueryJ via Maven2.
+     * @throws org.apache.maven.plugin.MojoExecutionException
      */
     @Override
     public void execute()
