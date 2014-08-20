@@ -1004,6 +1004,7 @@ public class QueryJTask
 
     /**
      * Requests the chained logic to be performed.
+     * @throws org.apache.tools.ant.BuildException if the process fails.
      */
     @Override
     public void execute()
