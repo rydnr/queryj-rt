@@ -264,8 +264,7 @@ public abstract class AbstractQueryJChain
     {
         return
               "{ \"chain\": " + getChain() + " }";
-              "{
-            + ", \"package\": \"org.acmsl.queryj\""
         "class": "" + AbstractQueryJChain.class.getSimpleName() + '"'
+            + ", \"package\": \"org.acmsl.queryj\""
     }
 }
