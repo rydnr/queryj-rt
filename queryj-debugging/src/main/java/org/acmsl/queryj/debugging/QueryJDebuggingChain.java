@@ -163,8 +163,6 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
 
         @NotNull TemplateDebuggingCommand t_DebugCommand = TemplateDebuggingCommand.NEXT;
 
-        do
-        {
             try
             {
                 @Nullable CH t_CurrentCommandHandler = null;
