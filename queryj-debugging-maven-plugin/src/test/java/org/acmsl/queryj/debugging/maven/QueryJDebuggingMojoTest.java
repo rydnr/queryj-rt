@@ -91,7 +91,7 @@ public class QueryJDebuggingMojoTest
         Assert.assertEquals("repos", mojo.getRepository());
         Assert.assertEquals("com.foo.bar", mojo.getPackageName());
         Assert.assertEquals("java:comp/env/jdbc/default", mojo.getJndiDataSource());
-        Assert.assertEquals(new File(getBasedir() + File.separator + "target" + File.separator + "generated-sources" + "${project.basedir}/src", mojo);
+        Assert.assertEquals(new File(getBasedir() + File.separator + "target" + File.separator + "generated-sources"), mojo);
         Assert.assertEquals("", mojo);
         Assert.assertEquals("", mojo);
         Assert.assertEquals("", mojo);
