@@ -553,7 +553,7 @@ public class QueryJMojo
      * @return such value, or an empty string if not initialized.
      */
     @NotNull
-    protected String getRepository()
+    public String getRepository()
     {
         String result = System.getProperty(REPOSITORY);
 
