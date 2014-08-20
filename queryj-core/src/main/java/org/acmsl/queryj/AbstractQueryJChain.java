@@ -177,7 +177,7 @@ public abstract class AbstractQueryJChain
      * handler takes.
      * @param chain the concrete chain.
      * @param commandHandler the handler just after the desired link.
-     * @return the next handler in the chain.
+     * @return the previous handler in the chain.
      */
     @Nullable
     public CH getPreviousChainLink(
