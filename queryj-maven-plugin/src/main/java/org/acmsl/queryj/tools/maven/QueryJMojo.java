@@ -1328,7 +1328,7 @@ public class QueryJMojo
      * Instantiates the task.
      * @param version the version.
      * @param log the log.
-     * @return a new ${}
+     * @return a new {@link org.acmsl.queryj.tools.ant.QueryJTask}.
      */
     @NotNull
     protected QueryJTask instantiateTask(
