@@ -610,37 +610,6 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
 
 
     /**
-     * Resolves the {@link TemplateDebuggingService} at runtime.
-     * @return such instance, or {@code null} if none is found.
-     */
-    @Nullable
-    @SuppressWarnings("unchecked")
-    public TemplateDebuggingService<C> resolveTemplateDebuggingService()
-    {
-        @Nullable TemplateDebuggingService<C> result = null;
-
-        @Nullable final Class<TemplateDebuggingService> serviceClass =
-            TemplateDebuggingService.class;
-
-        if (serviceClass != null)
-        {
-            @Nullable final ServiceLoader<TemplateDebuggingService> loader =
-                ServiceLoader.load(serviceClass);
-
-            if (loader != null)
-            {
-                for (@NotNull final TemplateDebuggingService<C> service : loader)
-                {
-                    result = service;
-                    break;
-                }
-            }
-        }
-
-        return result;
-    }
-
-    /**
      * {@inheritDoc}
      */
     @NotNull
