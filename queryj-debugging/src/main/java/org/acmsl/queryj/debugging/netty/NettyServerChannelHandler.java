@@ -165,4 +165,12 @@ public class NettyServerChannelHandler
             listener.reloadRequested();
         }
     }
+
+    @Override
+    public String toString()
+    {
+        return "NettyServerChannelHandler{" +
+               "m__Listener=" + m__Listener +
+               '}';
+    }
 }
