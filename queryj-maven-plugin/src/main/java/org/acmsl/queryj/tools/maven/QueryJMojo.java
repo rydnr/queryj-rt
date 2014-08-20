@@ -990,7 +990,7 @@ public class QueryJMojo
      * @return such information.
      */
     @NotNull
-    protected Table[] getTables()
+    public Table[] getTables()
     {
         return immutableGetTables();
     }
