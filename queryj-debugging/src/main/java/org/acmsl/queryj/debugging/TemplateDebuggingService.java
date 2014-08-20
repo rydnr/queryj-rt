@@ -82,7 +82,7 @@ public interface TemplateDebuggingService<C extends TemplateContext>
         throws DevelopmentModeException;
 
     /**
-     * Debugs given template.
+     * Process given handler while debugging.
      * @param template the template to debug.
      * @param context the context.
      * @param output the current template output.
