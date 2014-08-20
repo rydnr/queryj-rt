@@ -67,7 +67,7 @@ public class MissingExternallyManagedFieldTableNameException
      * Creates an instance with given {@link AntFieldElement}.
      * @param field the field.
      */
-    public MissingExternallyManagedFieldTableNameException(@NotNull final AntFieldElement field)
+    public MissingExternallyManagedFieldTableNameException(@NotNull final Field field)
     {
         super("missing.externally-managed.field.table-name", new Object[] { field.toString() });
     }
