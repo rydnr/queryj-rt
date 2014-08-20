@@ -958,19 +958,6 @@ public abstract class DatabaseMetaDataRetrievalHandler
     }
 
     /**
-     * Builds a pk key using given object.
-     * @param firstKey the first object key.
-     * @param secondKey the second object key.
-     * @return the map key.
-     */
-    @NotNull
-    protected String buildPkKey(
-        @NotNull final String firstKey, @NotNull final String secondKey)
-    {
-        return buildPkKey(firstKey) + "-.,.,-" + secondKey;
-    }
-
-    /**
      * Retrieves the product name.
      * @param metaData the database metadata.
      * @return the product name.
