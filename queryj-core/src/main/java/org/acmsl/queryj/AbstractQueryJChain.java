@@ -190,7 +190,7 @@ public abstract class AbstractQueryJChain
               && (!chain.isEmpty()))
         {
             if  (   (commandHandler == null)
-                    || (!chain.contains(commandHandler)))
+                 || (!chain.contains(commandHandler)))
             {
                 result = chain.get(0);
             }
