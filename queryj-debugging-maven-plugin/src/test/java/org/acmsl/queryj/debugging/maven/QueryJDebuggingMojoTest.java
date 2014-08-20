@@ -96,7 +96,7 @@ public class QueryJDebuggingMojoTest
         Assert.assertEquals("Invalid jndiDataSource", "java:comp/env/jdbc/default", mojo.getJndiDataSource());
         Assert.assertEquals(
             "Invalid outputDir",
-            new File("${" + File.separator + "target" + File.separator + "generated-sources"),
+            new File("${project.basedir}" + File.separator + "target" + File.separator + "generated-sources"),
             mojo.getOutputDir());
         Assert.assertEquals(
             "Invalid grammarFolder",
