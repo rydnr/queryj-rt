@@ -744,7 +744,7 @@ public class QueryJMojo
      * @return such file.
      */
     @Nullable
-    protected File getSqlXmlFile()
+    public File getSqlXmlFile()
     {
         final File result;
 
