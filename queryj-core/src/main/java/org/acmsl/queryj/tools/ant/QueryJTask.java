@@ -150,7 +150,7 @@ public class QueryJTask
     }
 
     @NotNull
-
+    public
     /**
      * Specifies the driver.
      * @param driver the new driver.
