@@ -899,7 +899,7 @@ public class QueryJMojo
      * @return such resource.
      */
     @Nullable
-    protected String getGrammarName()
+    public String getGrammarName()
     {
         String result = System.getProperty(GRAMMAR_NAME);
 
