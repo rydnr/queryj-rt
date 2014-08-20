@@ -88,5 +88,4 @@ public class STInspectorDebuggingService<C extends TemplateContext>
     {
         return TemplateDebuggingCommand.NEXT;
     }
-
 }
