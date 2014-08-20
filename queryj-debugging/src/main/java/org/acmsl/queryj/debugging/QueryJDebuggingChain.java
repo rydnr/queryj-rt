@@ -161,7 +161,8 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
 
         final boolean t_bLoggingEnabled = (t_Log != null);
 
-        @NotNull
+        @NotNull TemplateDebuggingCommand t_DebugCommand = TemplateDebuggingCommand.NEXT;
+
         do
         {
             try
