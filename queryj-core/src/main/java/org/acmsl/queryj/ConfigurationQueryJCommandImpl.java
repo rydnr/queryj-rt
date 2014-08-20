@@ -347,7 +347,6 @@ public class ConfigurationQueryJCommandImpl
         {
             /**
              * {@inheritDoc}
-             * @return
              */
             @Override
             public Iterator<String> iterator()
