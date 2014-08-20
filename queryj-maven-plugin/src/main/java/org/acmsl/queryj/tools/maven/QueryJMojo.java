@@ -1325,7 +1325,10 @@ public class QueryJMojo
     }
 
     @NotNull
-    protected QueryJTask instantiateTask()
+    protected QueryJTask instantiateTask(@NotNull final String version, @NotNull final Log log)
+    {
+        return new QueryJTask()
+    }
     /**
      * Builds the QueryJ task.
      * @param version the version.
