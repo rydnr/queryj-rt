@@ -151,7 +151,7 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
     protected boolean process(
         @NotNull final Chain<QueryJCommand, QueryJBuildException, CH> chain,
         @NotNull final QueryJCommand command,
-        @NotNull final )
+        @NotNull final TemplateDebuggingService<C> service)
         throws QueryJBuildException
     {
         boolean result = false;
