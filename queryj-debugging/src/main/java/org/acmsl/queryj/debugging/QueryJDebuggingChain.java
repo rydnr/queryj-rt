@@ -214,7 +214,8 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
     @Override
     public String toString()
     {
-        return "QueryJDebuggingChain{" +
+        return
+            "{ \"service\": QueryJDebuggingChain{" +
                "m__Service=" + m__Service +
                '}';
     }
