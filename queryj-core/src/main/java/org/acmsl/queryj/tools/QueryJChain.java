@@ -101,6 +101,9 @@ public class QueryJChain<CH extends QueryJCommandHandler<QueryJCommand>>
     }
 
     /**
+     * Adds the pre
+     */
+    /**
      * Builds the chain.
      * @param chain the chain to be configured.
      * @return the updated chain.
