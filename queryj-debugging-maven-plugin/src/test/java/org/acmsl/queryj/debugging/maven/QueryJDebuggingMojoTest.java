@@ -88,7 +88,7 @@ public class QueryJDebuggingMojoTest
         Assert.assertEquals("QUERYJPASSWORD", mojo.getPassword());
         Assert.assertEquals("", mojo.getCatalog());
         Assert.assertEquals("", mojo.getSchema());
-        Assert.assertEquals("com.foo.bar.JdbcDriver", mojo.getDriver());
+        Assert.assertEquals("repos", mojo.getRepository());
         Assert.assertEquals("com.foo.bar.JdbcDriver", mojo.getDriver());
         Assert.assertEquals("com.foo.bar.JdbcDriver", mojo.getDriver());
     }
