@@ -51,10 +51,7 @@ import org.acmsl.queryj.api.exceptions.MissingJndiLocationException;
 import org.acmsl.queryj.api.exceptions.MissingOutputFolderException;
 import org.acmsl.queryj.api.exceptions.MissingPackageException;
 import org.acmsl.queryj.api.exceptions.MissingRepositoryException;
-import org.acmsl.queryj.api.exceptions.MissingTablesException;
 import org.acmsl.queryj.api.exceptions.OutputDirIsNotAFolderException;
-import org.acmsl.queryj.tools.ant.AntExternallyManagedFieldsElement;
-import org.acmsl.queryj.tools.ant.AntTablesElement;
 import org.acmsl.queryj.tools.logging.QueryJAntLog;
 
 /*
