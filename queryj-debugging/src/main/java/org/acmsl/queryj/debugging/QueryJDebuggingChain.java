@@ -119,7 +119,7 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
      * @param service such {@link TemplateDebuggingService service}.
      */
     @SuppressWarnings("unused")
-    public void setService(@NotNull final TemplateDebuggingService<C> service)
+    public TemplateDebuggingService<C>void setService(@NotNull final  service)
     {
         immutableSetService(service);
     }
