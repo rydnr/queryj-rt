@@ -103,7 +103,7 @@ public class QueryJChain<CH extends QueryJCommandHandler<QueryJCommand>>
     /**
      * Adds the pre-processing handlers.
      */
-    protected Chain<QueryJCommand, QueryJBuildException, CH> buildChain(
+    protected Chain<QueryJCommand, QueryJBuildException, CH> buildPreProcess(
         @NotNull final Chain<QueryJCommand, QueryJBuildException, CH> chain)
         throws QueryJBuildException
     {
