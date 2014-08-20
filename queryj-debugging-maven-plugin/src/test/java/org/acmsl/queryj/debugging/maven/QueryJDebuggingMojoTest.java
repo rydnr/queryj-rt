@@ -95,8 +95,6 @@ public class QueryJDebuggingMojoTest
         Assert.assertEquals(new File(getBasedir() + File.separator + "src" + File.separator + "main" + File.separator + "assembly"), mojo.getGrammarFolder());
         Assert.assertEquals("queryj", mojo.getGrammarName());
         Assert.assertEquals(".bundle", mojo.getGrammarSuffix());
-        Assert.assertEquals("", mojo);
-        Assert.assertEquals("", mojo);
-        Assert.assertEquals("", mojo);
+        Assert.assertEquals(new File(getBasedir() + File.separator + "src" + File.separator + "main" + File.separator + "assembly"), mojo.getGrammarFolder());
     }
 }
