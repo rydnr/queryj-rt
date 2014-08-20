@@ -969,31 +969,6 @@ public abstract class DatabaseMetaDataRetrievalHandler
     {
         return buildPkKey(firstKey) + "-.,.,-" + secondKey;
     }
-
-    /**
-     * Builds a fk key using given object.
-     * @param firstKey the first object key.
-     * @return the map key.
-     */
-    @NotNull
-    protected String buildFkKey(@NotNull final String firstKey)
-    {
-        return "==fk''" + firstKey;
-    }
-
-    /**
-     * Builds a fk key using given object.
-     * @param firstKey the first object key.
-     * @param secondKey the second object key.
-     * @return the map key.
-     */
-    @NotNull
-    protected String buildFkKey(
-        @NotNull final String firstKey, @NotNull final String secondKey)
-    {
-        return buildFkKey(firstKey) + ".,.," + secondKey;
-    }
-
     /**
      * Retrieves the product name.
      * @param metaData the database metadata.
