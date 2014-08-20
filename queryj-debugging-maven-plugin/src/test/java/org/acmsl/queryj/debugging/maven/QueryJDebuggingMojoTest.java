@@ -111,6 +111,6 @@ public class QueryJDebuggingMojoTest
             new File(
                 getBasedir() + File.separator + "src" + File.separator + "main" + File.separator + "assembly",
                 "header.txt"),
-            mojo.getGrammarFolder());
+            mojo.getHeaderFile()q);
     }
 }
