@@ -97,11 +97,6 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
     protected static final String CANNOT_SERIALIZE_TEMPLATE_LITERAL = "Cannot serialize template ";
 
     /**
-     * String literal: "-Xrunjdwp:transport".
-     */
-    public static final String XRUNJDWP_TRANSPORT = "-Xrunjdwp:transport";
-
-    /**
      * Whether to enable template caching.
      */
     private boolean m__bCaching = true;
