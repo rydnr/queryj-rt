@@ -364,34 +364,6 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
     }
 
     /**
-     * Checks whether we're in dev mode.
-     * @param templateFileName the template file name.
-     * @return {@code true} in such case.
-     */
-    protected boolean isInDevMode(@NotNull final String templateFileName)
-    {
-        final boolean result;
-
-        final boolean devModeDisabled = System.getProperty("queryj.devMode.disabled") != null;
-
-        if (devModeDisabled)
-        {
-            result = false;
-        }
-        else
-        {
-            final boolean debug =
-                ManagementFactory.getRuntimeMXBean(). getInputArguments().toString().contains(XRUNJDWP_TRANSPORT);
-
-            result =
-                (   (debug)
-                    && (!templateFileName.startsWith("org/acmsl/queryj/templates/packaging")));
-        }
-
-        return result;
-    }
-
-    /**
      * Tries to read the hash from disk.
      * @param fileName  the file name.
      * @param outputDir the output folder.
