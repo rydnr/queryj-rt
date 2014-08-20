@@ -61,11 +61,6 @@ import org.acmsl.commons.logging.UniqueLogFactory;
 import org.acmsl.commons.utils.io.FileUtils;
 
 /*
- * Importing some Ant classes.
- */
-import org.apache.tools.ant.types.Path;
-
-/*
  * Importing Commons-Logging classes.
  */
 import org.apache.commons.logging.Log;
