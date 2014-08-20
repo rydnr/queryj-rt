@@ -76,7 +76,9 @@ public class QueryJDebuggingMojoTest
     public void testMojoGoal()
         throws Exception
     {
-        @NotNull final File testPom = new File(getBasedir() + File.separator + "src" + File.separator + "test" + File.separator + "resources", "default-test.xml" );
+        @NotNull final File testPom =
+            new File(
+                getBasedir() + File.separator + "src" + File.separator + "test" + File.separator + "resources", "default-test.xml" );
 
         @NotNull final QueryJDebuggingMojo mojo = (QueryJDebuggingMojo) lookupMojo("queryj-debugging", testPom);
 
