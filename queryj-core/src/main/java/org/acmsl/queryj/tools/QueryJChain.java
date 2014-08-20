@@ -142,6 +142,8 @@ public class QueryJChain<CH extends QueryJCommandHandler<QueryJCommand>>
         @NotNull final Chain<QueryJCommand, QueryJBuildException, CH> chain)
        throws QueryJBuildException
     {
+        addPreProcessHandlers(chain);
+
         fillTemplateHandlers(chain);
 
         chain.add((CH) new JdbcConnectionClosingHandler());
