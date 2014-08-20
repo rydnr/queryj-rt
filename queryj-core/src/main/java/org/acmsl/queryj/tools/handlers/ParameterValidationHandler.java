@@ -208,6 +208,7 @@ public class ParameterValidationHandler
             command.getIntSetting(THREAD_COUNT, Runtime.getRuntime().availableProcessors()),
             command);
 
+        /*
         if  (usingAnt)
         {
             validateAntParameters(
