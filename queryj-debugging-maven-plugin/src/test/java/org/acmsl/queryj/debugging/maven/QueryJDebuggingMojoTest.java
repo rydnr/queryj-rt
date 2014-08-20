@@ -36,7 +36,7 @@
 package org.acmsl.queryj.debugging.maven;
 
 /*
- * Importing JetBrains annotations.
+ * Importing Apache Maven Plugin Harness classes.
  */
 import org.apache.maven.plugin.testing.AbstractMojoTestCase;
 
