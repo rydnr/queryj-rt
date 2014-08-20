@@ -138,7 +138,9 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
         @NotNull final Chain<QueryJCommand, QueryJBuildException, CH> chain, @NotNull final QueryJCommand command)
         throws QueryJBuildException
     {
+        return process(chain, command, getService());
     }
+
     /**
      * Sends given command to a concrete chain.
      * @param chain the concrete chain.
