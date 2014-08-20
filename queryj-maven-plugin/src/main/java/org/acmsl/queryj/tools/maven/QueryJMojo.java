@@ -413,7 +413,7 @@ public class QueryJMojo
      * @return such value.
      */
     @Nullable
-    protected String getPassword()
+    public String getPassword()
     {
         String result = System.getProperty(JDBC_PASSWORD);
 
