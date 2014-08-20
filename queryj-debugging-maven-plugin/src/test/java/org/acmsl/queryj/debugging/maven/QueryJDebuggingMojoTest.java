@@ -100,7 +100,7 @@ public class QueryJDebuggingMojoTest
             mojo.getOutputDir());
         Assert.assertEquals(
             "Invalid grammarFolder",
-            new File(getBasedir() + File.separator + "src" + File.separator + "main" + File.separator + "assembly"),
+            new File("${project." + File.separator + "src" + File.separator + "main" + File.separator + "assembly"),
             mojo.getGrammarFolder());
         Assert.assertEquals("Invalid grammarName", "queryj", mojo.getGrammarName());
         Assert.assertEquals("Invalid grammarSuffix", ".bundle", mojo.getGrammarSuffix());
