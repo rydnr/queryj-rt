@@ -323,7 +323,7 @@ public class QueryJMojo
      * @return such value.
      */
     @Nullable
-    protected String getUrl()
+    public String getUrl()
     {
         String result = System.getProperty(JDBC_URL);
 
