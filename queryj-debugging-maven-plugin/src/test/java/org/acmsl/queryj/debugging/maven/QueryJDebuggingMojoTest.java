@@ -89,7 +89,7 @@ public class QueryJDebuggingMojoTest
         Assert.assertEquals("queryj:jdbc:url", mojo.getUrl());
         Assert.assertEquals("QUERYJUSER", mojo.getUsername());
         Assert.assertEquals("QUERYJPASSWORD", mojo.getPassword());
-        Assert.assertEquals("", mojo.getCatalog());
+        Assert.assertNull("", mojo.getCatalog());
         Assert.assertEquals("", mojo.getSchema());
         Assert.assertEquals("repos", mojo.getRepository());
         Assert.assertEquals("com.foo.bar", mojo.getPackageName());
