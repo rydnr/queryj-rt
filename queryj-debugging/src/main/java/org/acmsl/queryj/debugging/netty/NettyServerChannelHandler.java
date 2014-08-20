@@ -47,7 +47,7 @@ import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.util.CharsetUtil;
 import io.netty.util.ReferenceCountUtil;
-import org.acmsl.queryj.tools.debugging.TemplateDebuggingListener;
+import org.acmsl.queryj.debugging.TemplateDebuggingListener;
 import org.jetbrains.annotations.NotNull;
 
 /*
