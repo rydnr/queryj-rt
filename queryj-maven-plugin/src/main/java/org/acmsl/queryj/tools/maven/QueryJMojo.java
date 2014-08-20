@@ -1344,8 +1344,6 @@ public class QueryJMojo
 
         @NotNull final QueryJTask result = instantiateTask(version, t_Log);
 
-        @NotNull final CommonsLoggingMavenLogAdapter t_Log = result.getLog();
-
         initLogging(t_Log);
 
         @NotNull final Project project = new AntProjectAdapter(new Project(), log);
