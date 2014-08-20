@@ -80,5 +80,7 @@ public class QueryJDebuggingMojoTest
         @NotNull final QueryJDebuggingMojo mojo = (QueryJDebuggingMojo) lookupMojo("queryj-debugging", testPom);
 
         assertNotNull(mojo);
+
+
     }
 }
