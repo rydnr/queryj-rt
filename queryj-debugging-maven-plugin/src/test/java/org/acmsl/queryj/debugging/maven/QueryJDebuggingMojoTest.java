@@ -81,6 +81,6 @@ public class QueryJDebuggingMojoTest
 
         assertNotNull(mojo);
 
-        Assert.
+        Assert.assertTrue()
     }
 }
