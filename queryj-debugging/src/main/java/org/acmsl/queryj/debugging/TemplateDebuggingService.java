@@ -86,8 +86,7 @@ public interface TemplateDebuggingService<C extends TemplateContext>
      * Process given handler while debugging.
      * @param handler the current handler in the chain.
      * @return the {@link TemplateDebuggingCommand}.
-     * @throws QueryJBul
-     *
+     * @throws org.acmsl.queryj.api.exceptions.QueryJBuildException if the debug process fails.
      */
     @NotNull
     TemplateDebuggingCommand debug(@NotNull final QueryJCommandHandler<QueryJCommand> handler)
