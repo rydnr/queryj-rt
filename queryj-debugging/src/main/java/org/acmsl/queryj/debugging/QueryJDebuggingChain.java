@@ -85,12 +85,14 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
     /**
      * The template debugging service.
      */
-    private TemplateDebuggingService<C>
+    private TemplateDebuggingService<C> m__Service;
+
     /**
      * Creates a {@code QueryJDebuggingChain} with given information.
      */
     public QueryJDebuggingChain(@NotNull final TemplateDebuggingService service)
     {
+        immutableSetService(service);
     }
 
     /**
