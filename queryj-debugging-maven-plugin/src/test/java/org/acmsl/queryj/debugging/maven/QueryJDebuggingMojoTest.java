@@ -107,7 +107,7 @@ public class QueryJDebuggingMojoTest
         Assert.assertEquals(
             "Invalid sqlXmlFile", new File(getBasedir() + File.separator + "target", "sql.xml"), mojo.getSqlXmlFile());
         Assert.assertEquals(
-            "Invalid "
+            "Invalid headerFile",
             new File(
                 getBasedir() + File.separator + "src" + File.separator + "main" + File.separator + "assembly",
                 "header.txt"),
