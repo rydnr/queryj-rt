@@ -173,7 +173,7 @@ public abstract class AbstractQueryJChain
     }
 
     /**
-     * Retrieves the link of the chain just after the one given command
+     * Retrieves the link of the chain just before the one given command
      * handler takes.
      * @param chain the concrete chain.
      * @param commandHandler the handler just before the desired link.
