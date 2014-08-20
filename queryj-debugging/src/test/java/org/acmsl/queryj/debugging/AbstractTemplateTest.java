@@ -46,7 +46,6 @@ import org.acmsl.queryj.api.exceptions.InvalidPerTableTemplateException;
 import org.acmsl.queryj.api.exceptions.InvalidTemplateException;
 import org.acmsl.queryj.api.handlers.fillhandlers.FillHandler;
 import org.acmsl.queryj.metadata.DecoratorFactory;
-import org.acmsl.queryj.debugging.TemplateDebuggingService;
 
 /*
  * Importing QueryJ Debugging classes.
