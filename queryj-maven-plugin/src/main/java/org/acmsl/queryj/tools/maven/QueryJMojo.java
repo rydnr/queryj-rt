@@ -1324,6 +1324,12 @@ public class QueryJMojo
         UniqueLogFactory.initializeInstance(commonsLoggingLog);
     }
 
+    /**
+     * Instantiates the task.
+     * @param version the version.
+     * @param log
+     * @return
+     */
     @NotNull
     protected QueryJTask instantiateTask(
         @NotNull final String version, @NotNull final org.apache.commons.logging.Log log)
