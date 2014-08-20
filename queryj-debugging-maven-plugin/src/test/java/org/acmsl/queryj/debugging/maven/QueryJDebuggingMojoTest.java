@@ -56,7 +56,7 @@ import org.checkthread.annotations.ThreadSafe;
 import org.junit.Assert;
 
 /*
- * Importing JetBrains annotations.
+ * Importing JDK classes.
  */
 import java.io.File;
 
