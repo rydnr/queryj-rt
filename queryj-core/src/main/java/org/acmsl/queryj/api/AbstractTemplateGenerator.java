@@ -469,7 +469,7 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
 
             t_osCache.writeObject(template);
         }
-        catch (@NotNull IOException cannotSerialize)
+        catch (@NotNull final IOException cannotSerialize)
         {
             @Nullable final Log t_Log =
                 UniqueLogFactory.getLog(AbstractQueryJTemplateGenerator.class);
