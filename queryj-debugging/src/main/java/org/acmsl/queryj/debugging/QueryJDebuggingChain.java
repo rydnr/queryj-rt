@@ -144,6 +144,7 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
 
         final boolean t_bLoggingEnabled = (t_Log != null);
 
+
         boolean restart = false;
 
         do
