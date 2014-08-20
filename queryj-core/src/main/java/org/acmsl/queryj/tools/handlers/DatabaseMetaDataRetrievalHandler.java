@@ -255,9 +255,9 @@ public abstract class DatabaseMetaDataRetrievalHandler
 
         if  (metadataManager != null)
         {
-            @NotNull final Map<String, ?> t_mKeys = new HashMap<String, Object>();
-
             storeMetadataManager(metadataManager, parameters);
+
+            @NotNull final Map<String, ?> t_mKeys = new HashMap<String, Object>();
 
             @Nullable final MetadataTypeManager t_MetadataTypeManager;
 
