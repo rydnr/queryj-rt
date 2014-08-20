@@ -187,7 +187,7 @@ public abstract class AbstractQueryJChain
         @Nullable CH result = null;
 
         if  (   (chain != null)
-                && (!chain.isEmpty()))
+              && (!chain.isEmpty()))
         {
             if  (   (commandHandler == null)
                     || (!chain.contains(commandHandler)))
