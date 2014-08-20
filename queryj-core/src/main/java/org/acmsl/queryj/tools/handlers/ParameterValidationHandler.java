@@ -176,7 +176,7 @@ public class ParameterValidationHandler
      * @throws QueryJBuildException if any parameter fails to validate.
      */
     public void validateParameters(
-        @NotNull final QueryJCommand command, final boolean usingAnt)
+        @NotNull final QueryJCommand command, @SuppressWarnings("unused") final boolean usingAnt)
       throws  QueryJBuildException
     {
         validateParameters(
