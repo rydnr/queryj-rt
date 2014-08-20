@@ -82,7 +82,7 @@
     <dependency>
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
-      <scope>optional</scope>
+      <scope>runtime</scope>
     </dependency>
 
     <dependency>
