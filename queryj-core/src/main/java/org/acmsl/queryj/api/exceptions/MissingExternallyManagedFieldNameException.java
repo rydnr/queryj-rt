@@ -39,6 +39,7 @@ package org.acmsl.queryj.api.exceptions;
 /*
  * Importing project classes.
  */
+import org.acmsl.queryj.metadata.vo.Field;
 import org.acmsl.queryj.tools.ant.AntFieldElement;
 
 /*
@@ -67,7 +68,7 @@ public class MissingExternallyManagedFieldNameException
     private static final long serialVersionUID = 7436823944816029299L;
 
     /**
-     * Creates an instance with given {@link AntFieldElement}.
+     * Creates an instance with given {@link Field}.
      * @param field the field.
      */
     public MissingExternallyManagedFieldNameException(@NotNull final Field field)
