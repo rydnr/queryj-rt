@@ -368,7 +368,7 @@ public class QueryJMojo
      * @return such value.
      */
     @Nullable
-    protected String getUsername()
+    public String getUsername()
     {
         String result = System.getProperty(JDBC_USERNAME);
 
