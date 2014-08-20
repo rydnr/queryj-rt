@@ -1015,7 +1015,7 @@ public class QueryJTask
     /**
      * Requests the chained logic to be performed.
      * @param command the command.
-     * @throws org.apache.tools.ant.BuildException
+     * @throws org.apache.tools.ant.BuildException if the
      */
     protected void execute(@NotNull final QueryJCommand command)
         throws  BuildException
