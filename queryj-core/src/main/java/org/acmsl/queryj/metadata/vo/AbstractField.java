@@ -210,7 +210,7 @@ public abstract class AbstractField
                 .appendSuper(super.toString())
                 .append("type", getType())
                 .append("pk", isPk())
-                .append(AntFieldElement.KEYWORD_LITERAL, getKeyword())
+                .append("keyword", getKeyword())
                 .append("retrievalQuery", getRetrievalQuery())
                 .append("fieldFks", getFieldFks())
                 .toString();
