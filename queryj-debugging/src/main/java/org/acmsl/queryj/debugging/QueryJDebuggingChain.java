@@ -40,6 +40,7 @@ package org.acmsl.queryj.debugging;
  */
 import org.acmsl.commons.patterns.Chain;
 import org.acmsl.queryj.QueryJCommand;
+import org.acmsl.queryj.api.TemplateContext;
 import org.acmsl.queryj.api.exceptions.CannotFindTemplatesException;
 import org.acmsl.queryj.api.exceptions.DevelopmentModeException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
@@ -84,7 +85,7 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
     /**
      * The template debugging service.
      */
-    private TemplateDebuggingService<>
+    private TemplateDebuggingService<TemplateContext>
     /**
      * Creates a {@code QueryJDebuggingChain} with given information.
      */
