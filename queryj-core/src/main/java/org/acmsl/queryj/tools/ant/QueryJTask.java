@@ -150,7 +150,10 @@ public class QueryJTask
     }
 
     @NotNull
-    public
+    public Log getLog()
+    {
+
+    }
     /**
      * Specifies the driver.
      * @param driver the new driver.
