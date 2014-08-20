@@ -109,7 +109,7 @@ public class QueryJDebuggingMojoTest
         Assert.assertEquals(
             "Invalid headerFile",
             new File(
-                getBasedir() + File.separator + "src" + File.separator + "main" + File.separator + "assembly",
+                "${project.basedir}" + File.separator + "src" + File.separator + "main" + File.separator + "assembly",
                 "header.txt"),
             mojo.getHeaderFile());
     }
