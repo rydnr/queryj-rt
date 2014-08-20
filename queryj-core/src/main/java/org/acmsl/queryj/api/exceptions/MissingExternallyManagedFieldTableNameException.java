@@ -40,7 +40,6 @@ package org.acmsl.queryj.api.exceptions;
  * Importing QueryJ Core classes.
  */
 import org.acmsl.queryj.metadata.vo.Field;
-import org.acmsl.queryj.tools.ant.AntFieldElement;
 
 /*
  *Importing JetBrains annotations.
