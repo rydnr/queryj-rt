@@ -38,6 +38,7 @@ package org.acmsl.queryj.debugging.netty;
 /*
  * Importing QueryJ Debugging classes.
  */
+import org.acmsl.queryj.debugging.TemplateDebuggingCommand;
 import org.acmsl.queryj.debugging.TemplateDebuggingListener;
 
 /*
@@ -160,7 +161,7 @@ public class NettyServerChannelHandler
      */
     public void processCommand(@NotNull final String command, @NotNull final TemplateDebuggingListener listener)
     {
-        if (command.equals("reload"))
+        if (command.equals(TemplateDebuggingCommand.RELOAD))
         {
             listener.reloadRequested();
         }
