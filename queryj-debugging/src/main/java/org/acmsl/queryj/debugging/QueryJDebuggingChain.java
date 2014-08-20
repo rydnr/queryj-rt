@@ -163,56 +163,55 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
 
         @NotNull TemplateDebuggingCommand t_DebugCommand = TemplateDebuggingCommand.NEXT;
 
-            try
-            {
-                @Nullable CH t_CurrentCommandHandler = null;
+        try
+        {
+            @Nullable CH t_CurrentCommandHandler = null;
 
-                do
+            do
+            {
+                if (t_DebugCommand.equals(TemplateDebuggingCommand.NEXT))
                 {
-                    if (t_DebugCommand.equals(TemplateDebuggingCommand.NEXT))
-                    {
-                        t_CurrentCommandHandler =
-                            getNextChainLink(chain, t_CurrentCommandHandler);
-                    }
-                    else if (t_DebugCommand.equals(TemplateDebuggingCommand.PREVIOUS))
-                    {
-                        t_CurrentCommandHandler =
-                            getPreviousChainLink(chain, t_CurrentCommandHandler);
-                    }
-
-                    if (t_bLoggingEnabled)
-                    {
-                        t_Log.debug("Next handler: " + t_CurrentCommandHandler);
-                    }
-
-                    if  (t_CurrentCommandHandler != null)
-                    {
-                         service.debug(t_CurrentCommandHandler)
-                    }
-
-                    if (t_bLoggingEnabled)
-                    {
-                        t_Log.debug(
-                            t_CurrentCommandHandler + "#handle(QueryJCommand) returned "
-                            + result);
-                    }
+                    t_CurrentCommandHandler =
+                        getNextChainLink(chain, t_CurrentCommandHandler);
                 }
-                while  (   (!result)
-                        && (t_CurrentCommandHandler != null));
-            }
-            catch  (@NotNull final QueryJBuildException buildException)
-            {
-                cleanUpOnError(buildException, command);
+                else if (t_DebugCommand.equals(TemplateDebuggingCommand.PREVIOUS))
+                {
+                    t_CurrentCommandHandler =
+                        getPreviousChainLink(chain, t_CurrentCommandHandler);
+                }
 
                 if (t_bLoggingEnabled)
                 {
-                    t_Log.error(
-                        "QueryJ could not generate sources correctly.",
-                        buildException);
+                    t_Log.debug("Next handler: " + t_CurrentCommandHandler);
                 }
 
-                throw buildException;
+                if  (t_CurrentCommandHandler != null)
+                {
+                     service.debug(t_CurrentCommandHandler)
+                }
+
+                if (t_bLoggingEnabled)
+                {
+                    t_Log.debug(
+                        t_CurrentCommandHandler + "#handle(QueryJCommand) returned "
+                        + result);
+                }
             }
+            while  (   (!result)
+                    && (t_CurrentCommandHandler != null));
+        }
+        catch  (@NotNull final QueryJBuildException buildException)
+        {
+            cleanUpOnError(buildException, command);
+
+            if (t_bLoggingEnabled)
+            {
+                t_Log.error(
+                    "QueryJ could not generate sources correctly.",
+                    buildException);
+            }
+
+            throw buildException;
         }
 
         return result;
