@@ -503,7 +503,7 @@ public class QueryJMojo
      * @return such value, or an empty string if not initialized.
      */
     @NotNull
-    protected String getSchema()
+    public String getSchema()
     {
         String result = System.getProperty(JDBC_SCHEMA);
 
