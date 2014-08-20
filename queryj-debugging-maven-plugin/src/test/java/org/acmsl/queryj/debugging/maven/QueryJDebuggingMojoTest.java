@@ -82,6 +82,7 @@ public class QueryJDebuggingMojoTest
     }
 
     /**
+     * Tests the configuration is read from
      * @throws Exception
      */
     public void testMojoGoal()
