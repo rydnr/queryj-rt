@@ -166,6 +166,10 @@ public class NettyServerChannelHandler
         }
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
     @Override
     public String toString()
     {
