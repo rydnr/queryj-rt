@@ -63,7 +63,7 @@ import org.acmsl.commons.logging.UniqueLogFactory;
 import org.apache.commons.logging.Log;
 
 /*
- * Importing jetbrains annotations.
+ * Importing NotNull annotations.
  */
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
