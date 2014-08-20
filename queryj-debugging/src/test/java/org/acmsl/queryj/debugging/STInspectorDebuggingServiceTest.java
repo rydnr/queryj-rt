@@ -115,25 +115,6 @@ public class STInspectorDebuggingServiceTest
                 /**
                  * {@inheritDoc}
                  */
-                @Override
-                protected boolean isInDevMode(@NotNull final String templateFileName)
-                {
-                    return true;
-                }
-
-                /**
-                 * {@inheritDoc}
-                 */
-                @Nullable
-                @Override
-                public TemplateDebuggingService resolveTemplateDebuggingService()
-                {
-                    return service;
-                }
-
-                /**
-                 * {@inheritDoc}
-                 */
                 @Nullable
                 @Override
                 protected String retrieveHash(
