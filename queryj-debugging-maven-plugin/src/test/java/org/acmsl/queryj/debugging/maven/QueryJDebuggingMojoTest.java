@@ -100,6 +100,7 @@ public class QueryJDebuggingMojoTest
         Assert.assertEquals(".bundle", mojo.getGrammarSuffix());
         Assert.assertEquals(new File(getBasedir() + File.separator + "target", "sql.xml"), mojo.getGrammarFolder());
         Assert.assertEquals(
-            new File(getBasedir() + File.separator + "src" + File.separator + "main" + File.separator + "assembly", "header.txt"), mojo.getGrammarFolder());
+            new File(getBasedir() + File.separator + "src" + File.separator + "main" + File.separator + "assembly", "header.txt"),
+            mojo.getGrammarFolder());
     }
 }
