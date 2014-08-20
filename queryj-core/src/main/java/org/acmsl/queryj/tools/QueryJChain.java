@@ -160,8 +160,6 @@ public class QueryJChain<CH extends QueryJCommandHandler<QueryJCommand>>
 
         fillTemplateHandlers(chain);
 
-        chain.add((CH) new JdbcConnectionClosingHandler());
-
         return chain;
     }
 
