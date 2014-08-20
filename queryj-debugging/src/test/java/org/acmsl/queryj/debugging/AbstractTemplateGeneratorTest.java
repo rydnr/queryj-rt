@@ -41,8 +41,6 @@ package org.acmsl.queryj.debugging;
 import org.acmsl.queryj.api.AbstractTemplateGenerator;
 import org.acmsl.queryj.api.TemplateContext;
 import org.acmsl.queryj.metadata.DecoratorFactory;
-import org.acmsl.queryj.debugging.TemplateDebuggingCommand;
-import org.acmsl.queryj.debugging.TemplateDebuggingService;
 
 /*
  * Importing StringTemplate classes.
