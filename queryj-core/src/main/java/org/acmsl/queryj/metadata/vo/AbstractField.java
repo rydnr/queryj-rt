@@ -185,7 +185,7 @@ public abstract class AbstractField
      */
     @Nullable
     @Override
-    public List<Field> getFieldFks()
+    public List<AntField> getFieldFks()
     {
         return m__lFieldFks;
     }
