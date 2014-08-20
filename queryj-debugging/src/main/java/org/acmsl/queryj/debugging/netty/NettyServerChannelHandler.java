@@ -41,7 +41,7 @@ package org.acmsl.queryj.debugging.netty;
 import org.acmsl.queryj.debugging.TemplateDebuggingListener;
 
 /*
- * Importing JetBrains annotations.
+ * Importing Netty classes.
  */
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
