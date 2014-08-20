@@ -174,8 +174,7 @@ public class NettyServerChannelHandler
     public String toString()
     {
         return
-            "{ \"listener\": NettyServerChannelHandler{" +
-               "m__Listener=" + m__Listener +
+            "{ \"listener\": m__Listener.hashCo
                '}';
     }
 }
