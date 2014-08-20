@@ -945,7 +945,7 @@ public class QueryJMojo
      * @return such resource.
      */
     @Nullable
-    protected String getGrammarSuffix()
+    public String getGrammarSuffix()
     {
         String result = System.getProperty(GRAMMAR_SUFFIX);
 
