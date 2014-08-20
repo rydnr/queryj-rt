@@ -59,6 +59,7 @@ import org.checkthread.annotations.ThreadSafe;
  * @since 3.0
  * Created: 2013/06/14
  */
+@SuppressWarnings("unused")
 @ThreadSafe
 public class MissingExternallyManagedFieldTableNameException
     extends QueryJBuildException
