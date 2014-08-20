@@ -146,12 +146,6 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
 
         do
         {
-
-        }
-        boolean restart = false;
-
-        do
-        {
             try
             {
                 @Nullable CH t_CurrentCommandHandler = null;
