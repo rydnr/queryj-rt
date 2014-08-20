@@ -121,7 +121,7 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
     @NotNull
     public TemplateDebuggingService<C> getService()
     {
-        immutableSetService(service);
+        return this.m__Service;
     }
 
     /**
