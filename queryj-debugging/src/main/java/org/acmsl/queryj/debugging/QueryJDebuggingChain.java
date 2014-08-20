@@ -110,7 +110,7 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
      */
     protected void setService(@NotNull final TemplateDebuggingService<C> service)
     {
-        this.m__Service = service;
+        immutableSetService().m__Service = service;
     }
 
     /**
