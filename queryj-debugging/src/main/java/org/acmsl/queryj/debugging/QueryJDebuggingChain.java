@@ -217,6 +217,6 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
         return
             "{ \"service\": " + this.m__Service
             + ", \"class\": \"QueryJDebuggingChain\""
-            + ", \"package\": \"org.acmsl.queryj.debugging\" }"'}';
+            + ", \"package\": \"org.acmsl.queryj.debugging\" }";
     }
 }
