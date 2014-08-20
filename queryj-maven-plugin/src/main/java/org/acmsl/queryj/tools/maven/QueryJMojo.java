@@ -1343,7 +1343,7 @@ public class QueryJMojo
 
         @NotNull final QueryJTask result = new QueryJTask(t_Log);
 
-        @NotNull final CommonsLoggingMavenLogAdapter t_Log = new CommonsLoggingMavenLogAdapter(log);
+        @NotNull final CommonsLoggingMavenLogAdapter t_Log = result.getLog;
 
         initLogging(t_Log);
 
