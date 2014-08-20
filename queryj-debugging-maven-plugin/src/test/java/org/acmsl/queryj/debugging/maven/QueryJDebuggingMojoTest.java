@@ -78,7 +78,8 @@ public class QueryJDebuggingMojoTest
     {
         @NotNull final File testPom =
             new File(
-                getBasedir() + File.separator + "src" + File.separator + "test" + File.separator + "resources", "default-test.xml" );
+                getBasedir() + File.separator + "src" + File.separator + "test" + File.separator + "resources",
+                "default-test.xml" );
 
         @NotNull final QueryJDebuggingMojo mojo = (QueryJDebuggingMojo) lookupMojo("queryj-debugging", testPom);
 
