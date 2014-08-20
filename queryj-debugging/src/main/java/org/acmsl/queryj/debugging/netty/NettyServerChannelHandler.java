@@ -173,7 +173,8 @@ public class NettyServerChannelHandler
     @Override
     public String toString()
     {
-        return "NettyServerChannelHandler{" +
+        return
+            "{ NettyServerChannelHandler{" +
                "m__Listener=" + m__Listener +
                '}';
     }
