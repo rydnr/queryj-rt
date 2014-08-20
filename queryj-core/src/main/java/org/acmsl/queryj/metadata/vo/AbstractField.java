@@ -65,7 +65,7 @@ public abstract class AbstractField
     /**
      * The field fk collection.
      */
-    private List<Field> m__lFieldFks;
+    private List<AntFieldFk> m__lFieldFks;
 
     /**
      * Creates an {@link AbstractField} with given information.
@@ -185,7 +185,7 @@ public abstract class AbstractField
      */
     @Nullable
     @Override
-    public List<AntField> getFieldFks()
+    public List<AntFieldFk> getFieldFks()
     {
         return m__lFieldFks;
     }
