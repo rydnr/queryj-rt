@@ -90,7 +90,7 @@ public class QueryJDebuggingMojoTest
         Assert.assertEquals("", mojo.getSchema());
         Assert.assertEquals("repos", mojo.getRepository());
         Assert.assertEquals("com.foo.bar", mojo.getPackageName());
-        Assert.assertEquals("", mojo);
+        Assert.assertEquals("java:comp/env/", mojo);
         Assert.assertEquals("", mojo);
         Assert.assertEquals("", mojo);
         Assert.assertEquals("", mojo);
