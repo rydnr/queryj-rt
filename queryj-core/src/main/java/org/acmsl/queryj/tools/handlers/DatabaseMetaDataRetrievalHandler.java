@@ -926,38 +926,6 @@ public abstract class DatabaseMetaDataRetrievalHandler
     }
 
     /**
-     * Builds the table key.
-     * @return the map key.
-     */
-    @NotNull
-    protected String buildTableKey()
-    {
-        return "'@'@'table";
-    }
-
-    /**
-     * Builds the table fields key.
-     * @param key the key.
-     * @return the map key.
-     */
-    @NotNull
-    protected String buildTableFieldsKey(@NotNull final Object key)
-    {
-        return ".98.table'@'@'fields`p" + key;
-    }
-
-    /**
-     * Builds a pk key using given object.
-     * @param firstKey the first object key.
-     * @return the map key.
-     */
-    @NotNull
-    protected String buildPkKey(@NotNull final Object firstKey)
-    {
-        return ".|\\|.pk" + firstKey;
-    }
-
-    /**
      * Retrieves the product name.
      * @param metaData the database metadata.
      * @return the product name.
