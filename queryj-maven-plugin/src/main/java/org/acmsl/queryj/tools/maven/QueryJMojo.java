@@ -1327,8 +1327,8 @@ public class QueryJMojo
     /**
      * Instantiates the task.
      * @param version the version.
-     * @param log
-     * @return
+     * @param log the log.
+     * @return a new
      */
     @NotNull
     protected QueryJTask instantiateTask(
