@@ -65,7 +65,7 @@ public class MissingExternallyManagedFieldTableNameException
     private static final long serialVersionUID = -8551902929244410437L;
 
     /**
-     * Creates an instance with given {@link AntFieldElement}.
+     * Creates an instance with given {@link Field}.
      * @param field the field.
      */
     public MissingExternallyManagedFieldTableNameException(@NotNull final Field field)
