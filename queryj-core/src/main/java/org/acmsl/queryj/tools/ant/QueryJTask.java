@@ -152,8 +152,9 @@ public class QueryJTask
     @NotNull
     public Log getLog()
     {
-
+        return getQueryJCommand().getLog();
     }
+
     /**
      * Specifies the driver.
      * @param driver the new driver.
