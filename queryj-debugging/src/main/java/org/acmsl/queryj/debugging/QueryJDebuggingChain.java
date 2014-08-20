@@ -180,7 +180,7 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
                     if  (t_CurrentCommandHandler != null)
                     {
                          service.debug(t_CurrentCommandHandler)
-                        }
+                    }
                         else
                         {
                             result = t_CurrentCommandHandler.handle(command);
