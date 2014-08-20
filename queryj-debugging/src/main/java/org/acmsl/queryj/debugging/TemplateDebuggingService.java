@@ -90,7 +90,8 @@ public interface TemplateDebuggingService<C extends TemplateContext>
      * @throws DevelopmentModeException if the debug session must stop.
      */
     @NotNull
-    TemplateDebuggingCommand debug(QueryJCommandHandler<QueryJCommand>
+    TemplateDebuggingCommand debug(@NotNull final QueryJCommandHandler<QueryJCommand> handler)
+    {}
         @NotNull final ST template, @NotNull final C context, @NotNull final String output)
         throws DevelopmentModeException;
 }
