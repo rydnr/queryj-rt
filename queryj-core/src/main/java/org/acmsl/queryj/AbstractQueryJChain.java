@@ -198,7 +198,7 @@ public abstract class AbstractQueryJChain
             {
                 final int t_iCurrentIndex = chain.indexOf(commandHandler);
 
-                if  (   (t_iCurrentIndex >= 0)
+                if  (   (t_iCurrentIndex > 0)
                      && (t_iCurrentIndex < chain.size() - 1))
                 {
                     result = chain.get(t_iCurrentIndex + 1);
