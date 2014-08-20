@@ -699,7 +699,7 @@ public class QueryJMojo
      * @return such value.
      */
     @Nullable
-    protected String getJndiDataSource()
+    public String getJndiDataSource()
     {
         String result = System.getProperty(JNDI_DATASOURCE);
 
