@@ -161,7 +161,7 @@ public class NettyServerChannelHandler
      */
     public void processCommand(@NotNull final String command, @NotNull final TemplateDebuggingListener listener)
     {
-        if (command.equals(TemplateDebuggingCommand.RELOAD))
+        if (command.equals(TemplateDebuggingCommand.RELOAD.getName()))
         {
             listener.reloadRequested();
         }
