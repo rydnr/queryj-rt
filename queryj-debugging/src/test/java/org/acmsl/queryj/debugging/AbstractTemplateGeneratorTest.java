@@ -136,7 +136,7 @@ public class AbstractTemplateGeneratorTest
         @Override
         public TemplateDebuggingCommand debug(@NotNull final QueryJCommandHandler<QueryJCommand> handler)
         {
-            return null;
+            return TemplateDebuggingCommand.NEXT;
         }
 
         /**
