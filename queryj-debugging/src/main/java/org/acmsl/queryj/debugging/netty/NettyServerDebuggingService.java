@@ -234,10 +234,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
     }
 
     /**
-     * Process given handler while debugging.
-     *
-     * @param handler the current handler in the chain.
-     * @return the {@link org.acmsl.queryj.debugging.TemplateDebuggingCommand}.
+     * {@inheritDoc}
      */
     @NotNull
     @Override
