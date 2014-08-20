@@ -79,7 +79,7 @@ import java.util.ServiceLoader;
  * Created: 2014/08/20 10:48
  */
 @ThreadSafe
-public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>>
+public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>, C extends TemplateContext>
     extends QueryJChain<CH>
 {
     /**
