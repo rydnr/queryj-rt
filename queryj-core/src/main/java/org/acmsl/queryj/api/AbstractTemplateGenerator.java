@@ -78,7 +78,6 @@ import java.lang.management.ManagementFactory;
 import java.nio.charset.Charset;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.ServiceLoader;
 
 /**
  * Common logic for template generators.
