@@ -121,27 +121,6 @@ public class QueryJChain<CH extends QueryJCommandHandler<QueryJCommand>>
         @NotNull final Chain<QueryJCommand, QueryJBuildException, CH> chain)
        throws QueryJBuildException
     {
-        chain.add((CH) new Log4JInitializerHandler());
-
-        chain.add((CH) new ParameterValidationHandler());
-
-        chain.add((CH) new JdbcConnectionOpeningHandler());
-        chain.add((CH) new CustomSqlProviderRetrievalHandler());
-
-//        chain.add(new DatabaseMetaDataCacheReadingHandler());
-//        chain.add((CH) new CustomSqlValidationCacheReadingHandler());
-
-        chain.add((CH) new MySQL4xMetaDataRetrievalHandler());
-        chain.add((CH) new OracleMetaDataRetrievalHandler());
-        chain.add((CH) new JdbcMetaDataRetrievalHandler());
-
-        chain.add((CH) new CustomSqlValidationHandler());
-        chain.add((CH) new CustomSqlCacheWritingHandler());
-
-        chain.add((CH) new DatabaseMetaDataCacheWritingHandler());
-
-        chain.add((CH) new DatabaseMetaDataLoggingHandler());
-
         fillTemplateHandlers(chain);
 
         chain.add((CH) new JdbcConnectionClosingHandler());
