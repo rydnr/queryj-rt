@@ -395,54 +395,6 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
     }
 
     /**
-     * Manages the debugging session.
-     * @param output the current output from the template.
-     * @param template the {@link ST template}.
-     * @param context the context.
-     * @param debuggingService the {@link TemplateDebuggingService} instance.
-     * @return {@code true} if the debug takes place.
-     * @throws DevelopmentModeException in case of debugging.
-     */
-    protected boolean debugging(
-        @NotNull final String output,
-        @NotNull final ST template,
-        @NotNull final C context,
-        @Nullable final TemplateDebuggingService<C> debuggingService)
-        throws DevelopmentModeException
-    {
-        final boolean result =
-            (   (debuggingService != null)
-             && (context.isDebugEnabled())
-             && (isInDevMode(context.getFileName())));
-
-        if (result)
-        {
-            synchronized (AbstractTemplateGenerator.class)
-            {
-                debuggingService.debugTemplate(template, context, output);
-                //t_Template.inspect().waitForClose();
-            }
-    /*                    @Nullable final STTreeView debugTool =
-                            new StringTemplateTreeView("Debugging " + getTemplateName(), t_Template);
-
-                        debugTool.setVisible(true);
-
-                        while (debugTool.isVisible())
-                        {
-                            try
-                            {
-                                Thread.sleep(1000);
-                            }
-                            catch (InterruptedException e)
-                            {
-                                e.printStackTrace();
-                            }
-                        }*/
-        }
-
-        return result;
-    }
-    /**
      * Tries to read the hash from disk.
      * @param fileName  the file name.
      * @param outputDir the output folder.
