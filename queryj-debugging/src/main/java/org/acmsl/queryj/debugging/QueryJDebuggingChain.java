@@ -84,7 +84,7 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
     /**
      * Creates a {@code QueryJDebuggingChain} with given information.
      */
-    public QueryJDebuggingChain()
+    public QueryJDebuggingChain(@NotNull final )
     {
     }
 
