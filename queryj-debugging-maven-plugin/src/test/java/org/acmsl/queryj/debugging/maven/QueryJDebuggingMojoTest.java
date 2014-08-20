@@ -95,6 +95,7 @@ public class QueryJDebuggingMojoTest
         Assert.assertEquals("Invalid package", "com.foo.bar", mojo.getPackageName());
         Assert.assertEquals("Invalid JNDI data source path", "java:comp/env/jdbc/default", mojo.getJndiDataSource());
         Assert.assertEquals(
+            "Invalid outputDir"
             new File(getBasedir() + File.separator + "target" + File.separator + "generated-sources"),
             mojo.getOutputDir());
         Assert.assertEquals(
