@@ -264,7 +264,6 @@ public abstract class DatabaseMetaDataRetrievalHandler
             t_MetadataTypeManager =
                 metadataManager.getMetadataTypeManager();
 
-            /*
             processExplicitSchema(
                 parameters,
                 metadataManager,
