@@ -516,7 +516,7 @@ public abstract class DatabaseMetaDataRetrievalHandler
         catch  (@NotNull final SQLException | QueryJException sqlException)
         {
             throw
-                new CannotRetrieveDatabaseMetadataException(queryjException);
+                new CannotRetrieveDatabaseMetadataException(sqlException);
         }
 
         return result;
