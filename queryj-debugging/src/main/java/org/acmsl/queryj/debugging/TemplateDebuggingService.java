@@ -91,7 +91,4 @@ public interface TemplateDebuggingService<C extends TemplateContext>
      */
     @NotNull
     TemplateDebuggingCommand debug(@NotNull final QueryJCommandHandler<QueryJCommand> handler)
-    {}
-        @NotNull final ST template, @NotNull final C context, @NotNull final String output)
-        throws DevelopmentModeException;
 }
