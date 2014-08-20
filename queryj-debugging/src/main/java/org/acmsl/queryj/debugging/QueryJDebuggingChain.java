@@ -138,6 +138,19 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
         @NotNull final Chain<QueryJCommand, QueryJBuildException, CH> chain, @NotNull final QueryJCommand command)
         throws QueryJBuildException
     {
+    }
+    /**
+     * Sends given command to a concrete chain.
+     * @param chain the concrete chain.
+     * @param command the command that represents which actions should be done.
+     * @return <code>true</code> if the command is processed by the chain.
+     * @throws QueryJBuildException if the process fails.
+     */
+    @Override
+    protected boolean process(
+        @NotNull final Chain<QueryJCommand, QueryJBuildException, CH> chain, @NotNull final QueryJCommand command)
+        throws QueryJBuildException
+    {
         boolean result = false;
 
         @Nullable final Log t_Log = command.getLog();
