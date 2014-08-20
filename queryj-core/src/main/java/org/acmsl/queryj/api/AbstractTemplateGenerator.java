@@ -37,10 +37,8 @@ package org.acmsl.queryj.api;
 /*
  * Importing some project-specific classes.
  */
-import org.acmsl.queryj.api.exceptions.DevelopmentModeException;
 import org.acmsl.queryj.api.exceptions.Sha256NotSupportedException;
 import org.acmsl.queryj.api.exceptions.QueryJBuildException;
-import org.acmsl.queryj.tools.debugging.TemplateDebuggingService;
 
 /*
  * Importing some ACM-SL classes.
