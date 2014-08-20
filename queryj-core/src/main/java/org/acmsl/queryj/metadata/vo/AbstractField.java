@@ -171,7 +171,7 @@ public abstract class AbstractField
      * Specifies the field fk collection.
      * @param fieldFks the collection
      */
-    private void immutableSetFieldFks(@NotNull final List<FieldFkE> fieldFks)
+    private void immutableSetFieldFks(@NotNull final List<Field> fieldFks)
     {
         m__lFieldFks = fieldFks;
     }
