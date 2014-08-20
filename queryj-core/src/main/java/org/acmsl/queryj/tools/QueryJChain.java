@@ -133,7 +133,7 @@ public class QueryJChain<CH extends QueryJCommandHandler<QueryJCommand>>
     }
 
     /**
-     * Adds the pre-processing handlers.
+     * Adds the post-processing handlers.
      * @param chain the chain to build.
      * @throws QueryJBuildException if building the chain fails.
      */
