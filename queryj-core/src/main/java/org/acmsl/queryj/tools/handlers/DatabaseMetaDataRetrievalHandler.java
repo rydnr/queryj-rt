@@ -969,6 +969,7 @@ public abstract class DatabaseMetaDataRetrievalHandler
     {
         return buildPkKey(firstKey) + "-.,.,-" + secondKey;
     }
+
     /**
      * Retrieves the product name.
      * @param metaData the database metadata.
