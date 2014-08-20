@@ -95,7 +95,8 @@ public class QueryJDebuggingMojoTest
         Assert.assertEquals("com.foo.bar", mojo.getPackageName());
         Assert.assertEquals("java:comp/env/jdbc/default", mojo.getJndiDataSource());
         Assert.assertEquals(new File(getBasedir() + File.separator + "target" + File.separator + "generated-sources"), mojo.getOutputDir());
-        Assert.assertEquals(new File(getBasedir() + File.separator + "src" + File.separator + "main" + File.separator + "assembly"), mojo.getGrammarFolder());
+        Assert.assertEquals(
+            new File(getBasedir() + File.separator + "src" + File.separator + "main" + File.separator + "assembly"), mojo.getGrammarFolder());
         Assert.assertEquals("queryj", mojo.getGrammarName());
         Assert.assertEquals(".bundle", mojo.getGrammarSuffix());
         Assert.assertEquals(new File(getBasedir() + File.separator + "target", "sql.xml"), mojo.getGrammarFolder());
