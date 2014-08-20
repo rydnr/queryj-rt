@@ -223,7 +223,7 @@ public class NettyServerDebuggingService<C extends TemplateContext>
 
             future.sync();
         }
-        catch (@NotNull final InterruptedException interruption)
+        catch (@NotNull final InterruptedException | IOException interruption)
         {
             throw new DevelopmentModeException(template.groupThatCreatedThisInstance);
         }
