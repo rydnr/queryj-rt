@@ -278,7 +278,7 @@ public class QueryJMojo
      * @return such value.
      */
     @Nullable
-    protected String getDriver()
+    public String getDriver()
     {
         String result = System.getProperty(JDBC_DRIVER);
 
