@@ -161,6 +161,8 @@ public class QueryJChain<CH extends QueryJCommandHandler<QueryJCommand>>
 
         fillTemplateHandlers(chain);
 
+        addPostProcessHandlers(chain);
+
         return chain;
     }
 
