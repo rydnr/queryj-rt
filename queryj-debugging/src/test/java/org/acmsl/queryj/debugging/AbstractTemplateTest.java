@@ -138,25 +138,6 @@ public class AbstractTemplateTest
                 /**
                  * {@inheritDoc}
                  */
-                @Override
-                protected boolean isInDevMode(@NotNull final String templateFileName)
-                {
-                    return true;
-                }
-
-                /**
-                 * {@inheritDoc}
-                 */
-                @Nullable
-                @Override
-                public TemplateDebuggingService resolveTemplateDebuggingService()
-                {
-                    return templateDebuggingService;
-                }
-
-                /**
-                 * {@inheritDoc}
-                 */
                 @Nullable
                 @Override
                 protected String retrieveHash(
