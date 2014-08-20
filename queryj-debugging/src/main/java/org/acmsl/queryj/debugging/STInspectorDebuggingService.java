@@ -47,7 +47,7 @@ import org.stringtemplate.v4.ST;
 
 /*
  * Importing JetBrains annotations.
- */                                            A
+ */
 import org.jetbrains.annotations.NotNull;
 
 /*
