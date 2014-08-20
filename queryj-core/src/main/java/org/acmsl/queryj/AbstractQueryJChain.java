@@ -180,7 +180,7 @@ public abstract class AbstractQueryJChain
      * @return the next handler in the chain.
      */
     @Nullable
-    public CH getNextChainLink(
+    public CH getPreviousChainLink(
         @Nullable final Chain<C, QueryJBuildException, CH> chain,
         @Nullable final CH commandHandler)
     {
