@@ -64,7 +64,7 @@ import org.jetbrains.annotations.NotNull;
 import org.checkthread.annotations.ThreadSafe;
 
 /**
- * {@link io.netty.channel.ChannelHandlerAdapter}
+ * {@link io.netty.channel.ChannelHandlerAdapter} implementation to accept debug commands.
  * @author <a href="mailto:queryj@acm-sl.org">Jose San Leandro</a>
  * @since 3.0
  * Created: 2014/06/28 20:47
