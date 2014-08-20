@@ -38,6 +38,7 @@ package org.acmsl.queryj.debugging;
 /*
  * Importing QueryJ Core classes.
  */
+import org.acmsl.queryj.QueryJCommand;
 import org.acmsl.queryj.api.exceptions.DevelopmentModeException;
 import org.acmsl.queryj.api.TemplateContext;
 
@@ -89,7 +90,7 @@ public interface TemplateDebuggingService<C extends TemplateContext>
      * @throws DevelopmentModeException if the debug session must stop.
      */
     @NotNull
-    TemplateDebuggingCommand debug(QueryJCommandHandler
+    TemplateDebuggingCommand debug(QueryJCommandHandler<QueryJCommand>
         @NotNull final ST template, @NotNull final C context, @NotNull final String output)
         throws DevelopmentModeException;
 }
