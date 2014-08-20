@@ -347,8 +347,6 @@ public abstract class AbstractTemplateGenerator<N extends Template<C>, C extends
                             t_strOutputFile,
                             t_strFileContents,
                             charset);
-
-                        debugging(t_strFileContents, stTemplate, template.getTemplateContext(), templateDebuggingService);
                     }
 
                     writeHash(newHash, fileName, outputDir, rootFolder, charset, fileUtils);
