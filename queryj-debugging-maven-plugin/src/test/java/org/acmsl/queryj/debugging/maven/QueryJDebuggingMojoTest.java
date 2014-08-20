@@ -92,7 +92,7 @@ public class QueryJDebuggingMojoTest
         Assert.assertEquals("com.foo.bar", mojo.getPackageName());
         Assert.assertEquals("java:comp/env/jdbc/default", mojo.getJndiDataSource());
         Assert.assertEquals(new File(getBasedir() + File.separator + "target" + File.separator + "generated-sources"), mojo.getOutputDir());
-        Assert.assertEquals(new File(getBasedir() + File.separator + "target" + File.separator + "generated-sources"), mojo.getOutputDir());
+        Assert.assertEquals(new File(getBasedir() + File.separator + "target" + File.separator + "assembly"), mojo.getOutputDir());
         Assert.assertEquals("queryj", mojo.getGrammarName());
         Assert.assertEquals(".bundle", mojo.getGrammarSuffix());
         Assert.assertEquals("", mojo);
