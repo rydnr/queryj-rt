@@ -174,9 +174,8 @@ public class NettyServerChannelHandler
     public String toString()
     {
         return
-            "{ \"listener\": " + m__Listener.hashCode()
+              "{ \"listener\": " + m__Listener.hashCode()
             + ", \"class\": \"NettyServerChannelHandler\""
-        + ", \"package\": \"org.acmsl.queryj.debugging"
-               '}';
+            + ", \"package\": \"org.acmsl.queryj.debugging.netty\" }";
     }
 }
