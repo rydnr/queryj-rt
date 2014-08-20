@@ -86,8 +86,8 @@ public class QueryJDebuggingMojoTest
         assertNotNull(mojo);
 
         Assert.assertEquals("Invalid driver", "com.foo.bar.JdbcDriver", mojo.getDriver());
-        Assert.assertEquals("Invalid URL", "queryj:jdbc:url", mojo.getUrl());
-        Assert.assertEquals("Invalid user", "QUERYJUSER", mojo.getUsername());
+        Assert.assertEquals("Invalid url", "queryj:jdbc:url", mojo.getUrl());
+        Assert.assertEquals("Invalid username", "QUERYJUSER", mojo.getUsername());
         Assert.assertEquals("Invalid password", "QUERYJPASSWORD", mojo.getPassword());
         Assert.assertNull("Not-null catalog", mojo.getCatalog());
         Assert.assertNull("Not-null schema", mojo.getSchema());
