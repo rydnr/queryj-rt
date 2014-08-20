@@ -45,6 +45,7 @@ import org.acmsl.queryj.api.TemplateContext;
 /*
  * Importing StringTemplate classes.
  */
+import org.acmsl.queryj.api.exceptions.QueryJBuildException;
 import org.acmsl.queryj.tools.handlers.QueryJCommandHandler;
 import org.stringtemplate.v4.ST;
 
@@ -87,5 +88,6 @@ public interface TemplateDebuggingService<C extends TemplateContext>
      * @return the {@link TemplateDebuggingCommand}.
      */
     @NotNull
-    TemplateDebuggingCommand debug(@NotNull final QueryJCommandHandler<QueryJCommand> handler);
+    TemplateDebuggingCommand debug(@NotNull final QueryJCommandHandler<QueryJCommand> handler)
+        throws QueryJBuildException;
 }
