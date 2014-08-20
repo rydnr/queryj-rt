@@ -145,7 +145,7 @@ public class QueryJDebuggingChain<CH extends QueryJCommandHandler<QueryJCommand>
      * Sends given command to a concrete chain.
      * @param chain the concrete chain.
      * @param command the command that represents which actions should be done.
-     * @param service the {@link org.acmsl.queryj.debugging.TemplateDebuggingService}
+     * @param service the {@link org.acmsl.queryj.debugging.TemplateDebuggingService service}.
      * @return <code>true</code> if the command is processed by the chain.
      * @throws QueryJBuildException if the process fails.
      */
