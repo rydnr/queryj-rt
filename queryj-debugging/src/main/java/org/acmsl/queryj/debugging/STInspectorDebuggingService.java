@@ -88,7 +88,7 @@ public class STInspectorDebuggingService<C extends TemplateContext>
         @NotNull final QueryJCommandHandler<QueryJCommand> handler,
         @NotNull final QueryJCommand command)
     {
-        if
+        if (handler instanceof )
         return TemplateDebuggingCommand.NEXT;
     }
 }
