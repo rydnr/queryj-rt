@@ -44,6 +44,7 @@ import org.acmsl.queryj.api.TemplateContext;
 /*
  * Importing StringTemplate classes.
  */
+import org.acmsl.queryj.api.handlers.TemplateHandler;
 import org.acmsl.queryj.tools.handlers.QueryJCommandHandler;
 import org.stringtemplate.v4.ST;
 
@@ -88,7 +89,7 @@ public class STInspectorDebuggingService<C extends TemplateContext>
         @NotNull final QueryJCommandHandler<QueryJCommand> handler,
         @NotNull final QueryJCommand command)
     {
-        if (handler instanceof )
+        if (handler instanceof TemplateHandler)
         return TemplateDebuggingCommand.NEXT;
     }
 }
