@@ -89,6 +89,6 @@ public interface TemplateDebuggingService<C extends TemplateContext>
      * @throws QueryJBuildException if the debug process fails.
      */
     @NotNull
-    TemplateDebuggingCommand debug(@NotNull final QueryJCommandHandler<QueryJCommand> handler)
+    TemplateDebuggingCommand debug(@NotNull final QueryJCommandHandler<QueryJCommand> handler, @NotNull final QueryJCommand command)
         throws QueryJBuildException;
 }
