@@ -127,10 +127,7 @@ public class AbstractTemplateGeneratorTest
         }
 
         /**
-         * Process given handler while debugging.
-         *
-         * @param handler the current handler in the chain.
-         * @return the {@link TemplateDebuggingCommand}.
+         * {@inheritDoc}
          */
         @NotNull
         @Override
