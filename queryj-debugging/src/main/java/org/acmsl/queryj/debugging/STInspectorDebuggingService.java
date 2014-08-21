@@ -84,7 +84,9 @@ public class STInspectorDebuggingService<C extends TemplateContext>
      */
     @NotNull
     @Override
-    public TemplateDebuggingCommand debug(@NotNull final QueryJCommandHandler<QueryJCommand> handler)
+    public TemplateDebuggingCommand debug(
+        @NotNull final QueryJCommandHandler<QueryJCommand> handler,
+        @NotNull final QueryJCommand command)
     {
         return TemplateDebuggingCommand.NEXT;
     }
