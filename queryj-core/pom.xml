@@ -140,19 +140,6 @@
 
   </dependencies>
 
-  <distributionManagement>
-    <repository>
-      <id>acmsl-libs-releases</id>
-      <name>acmsl-libs-releases</name>
-      <url>http://maven.acm-sl.org/artifactory/libs-release-local</url>
-    </repository>
-    <snapshotRepository>
-      <id>acmsl-libs-snapshots</id>
-      <name>acmsl-libs-snapshots</name>
-      <url>http://maven.acm-sl.org/artifactory/libs-snapshot-local</url>
-    </snapshotRepository>
-  </distributionManagement>
-
   <build>
     <plugins>
       <plugin>
@@ -199,4 +186,82 @@
       </plugin>
     </plugins>
   </reporting>
+
+  <profiles>
+    <profile>
+      <id>forJava7</id>
+      <activation>
+        <jdk>1.7</jdk>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-patch-plugin</artifactId>
+            <configuration>
+              <targetDirectory>${moduleDirectory}</targetDirectory>
+              <skipApplication>false</skipApplication>
+            </configuration>
+            <executions>
+              <execution>
+                <id>java7-main-patches</id>
+                <configuration>
+                  <patchDirectory>${project.basedir}/src/main/patches/java7/java</patchDirectory>
+                  <patchTrackingFile>${project.build.directory}/optimization-files/patches-applied.txt</patchTrackingFile>
+                  <naturalOrderProcessing>true</naturalOrderProcessing>
+                  <optimizations>false</optimizations>
+                </configuration>
+                <phase>process-sources</phase>
+                <goals>
+                  <goal>apply</goal>
+                </goals>
+              </execution>
+              <execution>
+                <id>java7-test-patches</id>
+                <configuration>
+                  <targetDirectory>${project.basedir}/src/test/java</targetDirectory>
+                  <patchDirectory>${project.basedir}/src/test/patches/java7/java</patchDirectory>
+                  <patchTrackingFile>${project.build.directory}/optimization-files/patches-applied-test.txt</patchTrackingFile>
+                  <naturalOrderProcessing>true</naturalOrderProcessing>
+                  <optimizations>false</optimizations>
+                </configuration>
+                <phase>process-test-sources</phase>
+                <goals>
+                  <goal>apply</goal>
+                </goals>
+              </execution>
+              <execution>
+                <id>java7-aspectj-patches</id>
+                <configuration>
+                  <targetDirectory>${project.basedir}/src/main/aspect</targetDirectory>
+                  <patchDirectory>${project.basedir}/src/main/patches/java7/aspect</patchDirectory>
+                  <patchTrackingFile>${project.build.directory}/optimization-files/patches-applied-aspectj.txt</patchTrackingFile>
+                  <naturalOrderProcessing>true</naturalOrderProcessing>
+                  <optimizations>false</optimizations>
+                </configuration>
+                <phase>process-sources</phase>
+                <goals>
+                  <goal>apply</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <profile>
+      <id>release</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-deploy-plugin</artifactId>
+            <configuration>
+              <skip>false</skip>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>
